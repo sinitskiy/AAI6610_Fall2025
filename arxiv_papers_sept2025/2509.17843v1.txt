@@ -1,5 +1,0 @@
-Title: Machine Learning Approach to Predict Curie Temperature in Binary Alloys
-Published: 2025-09-22T14:32:17Z
-DOI/ID: http://arxiv.org/abs/2509.17843v1
-Abstract:
-This study presents a machine learning approach to predict the Curie temperature in binary alloys, specifically focusing on the Fe-Pt, Fe-Ni, Fe-Pd, and Co-Pt compounds within a concentration range of 10 to 90 atomic percent. The optimal mathematical algorithm for this task is the Voting Ensemble algorithm, which combines the predictions from multiple individual models to produce a final prediction. The results are validated against classical methods for calculating Curie temperatures. The experimental findings indicate that factors such as external pressure, atomic ordering, and alloy composition have a significant influence on the Curie temperatures in all examined binary systems. These factors can be leveraged to design alloys with specific Curie temperatures. Moreover, the proposed features, feature analysis algorithms, and computational methods pave the way for advancements across various materials, including ternary alloys, bulk materials, and nanomaterials, inspiring innovation in the field.

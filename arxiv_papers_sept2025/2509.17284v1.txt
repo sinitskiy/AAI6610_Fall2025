@@ -1,5 +1,0 @@
-Title: On the Quantization of the Electromagnetic Field with Magnetic Monopoles
-Published: 2025-09-21T23:43:46Z
-DOI/ID: http://arxiv.org/abs/2509.17284v1
-Abstract:
-We present a covariant framework for the quantization of the electromagnetic field in the presence of magnetic monopoles. Building on the two-potential formalism of Cabibbo and Ferrari, which treats electric and magnetic sources on equal footing and reveals a $U(1) \times U(1)$ gauge symmetry, we extend the theory into the quantum domain. Using the Gupta-Bleuler procedure in the Feynman-'t Hooft gauge, we construct the physical Hilbert space and eliminate negative-norm states. The resulting theory predicts, in addition to conventional photons, the existence of dual photons associated with magnetic charges. We discuss the role of these dual excitations and their possible relevance in the broader context of electromagnetic duality and gauge theories.

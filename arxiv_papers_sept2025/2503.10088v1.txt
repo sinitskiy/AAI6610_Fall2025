@@ -1,0 +1,6 @@
+Title: Enhanced Route Planning with Calibrated Uncertainty Set
+Published: 2025-03-13T06:31:42Z
+DOI/ID: http://arxiv.org/abs/2503.10088v1
+Categories: cs.LG, stat.ML
+Abstract:
+This paper investigates the application of probabilistic prediction methodologies in route planning within a road network context. Specifically, we introduce the Conformalized Quantile Regression for Graph Autoencoders (CQR-GAE), which leverages the conformal prediction technique to offer a coverage guarantee, thus improving the reliability and robustness of our predictions. By incorporating uncertainty sets derived from CQR-GAE, we substantially improve the decision-making process in route planning under a robust optimization framework. We demonstrate the effectiveness of our approach by applying the CQR-GAE model to a real-world traffic scenario. The results indicate that our model significantly outperforms baseline methods, offering a promising avenue for advancing intelligent transportation systems.

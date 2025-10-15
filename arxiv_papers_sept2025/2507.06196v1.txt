@@ -1,0 +1,6 @@
+Title: UQLM: A Python Package for Uncertainty Quantification in Large Language   Models
+Published: 2025-07-08T17:22:32Z
+DOI/ID: http://arxiv.org/abs/2507.06196v1
+Categories: cs.CL, cs.AI, cs.LG
+Abstract:
+Hallucinations, defined as instances where Large Language Models (LLMs) generate false or misleading content, pose a significant challenge that impacts the safety and trust of downstream applications. We introduce UQLM, a Python package for LLM hallucination detection using state-of-the-art uncertainty quantification (UQ) techniques. This toolkit offers a suite of UQ-based scorers that compute response-level confidence scores ranging from 0 to 1. This library provides an off-the-shelf solution for UQ-based hallucination detection that can be easily integrated to enhance the reliability of LLM outputs.

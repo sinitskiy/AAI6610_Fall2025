@@ -1,0 +1,6 @@
+Title: OrthoGrad Improves Neural Calibration
+Published: 2025-06-04T22:12:46Z
+DOI/ID: http://arxiv.org/abs/2506.04487v3
+Categories: cs.LG, stat.ML
+Abstract:
+We study $\perp$Grad, a geometry-aware modification to gradient-based optimization that constrains descent directions to address overconfidence, a key limitation of standard optimizers in uncertainty-critical applications. By enforcing orthogonality between gradient updates and weight vectors, $\perp$Grad alters optimization trajectories without architectural changes. On CIFAR-10 with 10% labeled data, $\perp$Grad matches SGD in accuracy while achieving statistically significant improvements in test loss ($p=0.05$), predictive entropy ($p=0.001$), and confidence measures. These effects show consistent trends across corruption levels and architectures. $\perp$Grad is optimizer-agnostic, incurs minimal overhead, and remains compatible with post-hoc calibration techniques.   Theoretically, we characterize convergence and stationary points for a simplified $\perp$Grad variant, revealing that orthogonalization constrains loss reduction pathways to avoid confidence inflation and encourage decision-boundary improvements. Our findings suggest that geometric interventions in optimization can improve predictive uncertainty estimates at low computational cost.

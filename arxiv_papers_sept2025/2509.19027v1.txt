@@ -1,5 +1,0 @@
-Title: Glass-Box Analysis for Computer Systems: Transparency Index, Shapley   Attribution, and Markov Models of Branch Prediction
-Published: 2025-09-23T14:01:20Z
-DOI/ID: http://arxiv.org/abs/2509.19027v1
-Abstract:
-We formalize glass-box analysis for computer systems and introduce three principled tools. First, the Glass-Box Transparency Index (GTI) quantifies the fraction of performance variance explainable by internal features and comes equipped with bounds, invariances, cross-validated estimation, and bootstrap confidence intervals. Second, Explainable Throughput Decomposition (ETD) uses Shapley values to provide an efficiency-preserving attribution of throughput, together with non-asymptotic Monte Carlo error guarantees and convexity (Jensen) gap bounds. Third, we develop an exact Markov analytic framework for branch predictors, including a closed-form misprediction rate for a two-bit saturating counter under a two-state Markov branch process and its i.i.d. corollary. Additionally, we establish an identifiability theorem for recovering event rates from aggregated hardware counters and provide stability bounds under noise.

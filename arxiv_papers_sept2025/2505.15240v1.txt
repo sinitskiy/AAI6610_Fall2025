@@ -1,0 +1,6 @@
+Title: Generalised Probabilistic Modelling and Improved Uncertainty Estimation   in Comparative LLM-as-a-judge
+Published: 2025-05-21T08:16:18Z
+DOI/ID: http://arxiv.org/abs/2505.15240v1
+Categories: cs.AI, cs.LG, stat.ML
+Abstract:
+This paper explores generalised probabilistic modelling and uncertainty estimation in comparative LLM-as-a-judge frameworks. We show that existing Product-of-Experts methods are specific cases of a broader framework, enabling diverse modelling options. Furthermore, we propose improved uncertainty estimates for individual comparisons, enabling more efficient selection and achieving strong performance with fewer evaluations. We also introduce a method for estimating overall ranking uncertainty. Finally, we demonstrate that combining absolute and comparative scoring improves performance. Experiments show that the specific expert model has a limited impact on final rankings but our proposed uncertainty estimates, especially the probability of reordering, significantly improve the efficiency of systems reducing the number of needed comparisons by ~50%. Furthermore, ranking-level uncertainty metrics can be used to identify low-performing predictions, where the nature of the probabilistic model has a notable impact on the quality of the overall uncertainty.

@@ -1,0 +1,6 @@
+Title: Conformal Uncertainty Quantification of Electricity Price Predictions   for Risk-Averse Storage Arbitrage
+Published: 2024-12-10T00:31:15Z
+DOI/ID: http://arxiv.org/abs/2412.07075v1
+Categories: math.OC, stat.ML
+Abstract:
+This paper proposes a risk-averse approach to energy storage price arbitrage, leveraging conformal uncertainty quantification for electricity price predictions. The method addresses the significant challenges posed by the inherent volatility and uncertainty of real-time electricity prices, which create substantial risks of financial losses for energy storage participants relying on future price forecasts to plan their operations. The framework comprises a two-layer prediction model to quantify real-time price uncertainty confidence intervals with high coverage. The framework is distribution-free and can work with any underlying point prediction model. We evaluate the quantification effectiveness through storage price arbitrage application by managing the risk of participating in the real-time market. We design a risk-averse policy for profit-maximization of energy storage arbitrage to find the safest storage schedule with very minimal losses. Using historical data from New York State and synthetic price predictions, our evaluations demonstrate that this framework can achieve good profit margins with less than $35\%$ purchases.

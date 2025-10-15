@@ -1,0 +1,6 @@
+Title: Uncertainty Quantification With Noise Injection in Neural Networks: A   Bayesian Perspective
+Published: 2025-01-21T17:28:52Z
+DOI/ID: http://arxiv.org/abs/2501.12314v2
+Categories: stat.ML, cs.LG
+Abstract:
+Model uncertainty quantification involves measuring and evaluating the uncertainty linked to a model's predictions, helping assess their reliability and confidence. Noise injection is a technique used to enhance the robustness of neural networks by introducing randomness. In this paper, we establish a connection between noise injection and uncertainty quantification from a Bayesian standpoint. We theoretically demonstrate that injecting noise into the weights of a neural network is equivalent to Bayesian inference on a deep Gaussian process. Consequently, we introduce a Monte Carlo Noise Injection (MCNI) method, which involves injecting noise into the parameters during training and performing multiple forward propagations during inference to estimate the uncertainty of the prediction. Through simulation and experiments on regression and classification tasks, our method demonstrates superior performance compared to the baseline model.

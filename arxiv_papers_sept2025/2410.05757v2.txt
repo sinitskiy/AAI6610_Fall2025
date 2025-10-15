@@ -1,0 +1,6 @@
+Title: Temperature Optimization for Bayesian Deep Learning
+Published: 2024-10-08T07:32:22Z
+DOI/ID: http://arxiv.org/abs/2410.05757v2
+Categories: stat.ML, cs.LG, stat.CO, stat.ME
+Abstract:
+The Cold Posterior Effect (CPE) is a phenomenon in Bayesian Deep Learning (BDL), where tempering the posterior to a cold temperature often improves the predictive performance of the posterior predictive distribution (PPD). Although the term `CPE' suggests colder temperatures are inherently better, the BDL community increasingly recognizes that this is not always the case. Despite this, there remains no systematic method for finding the optimal temperature beyond grid search. In this work, we propose a data-driven approach to select the temperature that maximizes test log-predictive density, treating the temperature as a model parameter and estimating it directly from the data. We empirically demonstrate that our method performs comparably to grid search, at a fraction of the cost, across both regression and classification tasks. Finally, we highlight the differing perspectives on CPE between the BDL and Generalized Bayes communities: while the former primarily emphasizes the predictive performance of the PPD, the latter prioritizes the utility of the posterior under model misspecification; these distinct objectives lead to different temperature preferences.

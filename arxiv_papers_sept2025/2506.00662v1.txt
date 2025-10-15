@@ -1,0 +1,6 @@
+Title: Uncertainty-Aware Genomic Classification of Alzheimer's Disease: A   Transformer-Based Ensemble Approach with Monte Carlo Dropout
+Published: 2025-05-31T18:20:49Z
+DOI/ID: http://arxiv.org/abs/2506.00662v1
+Categories: q-bio.GN, cs.LG
+Abstract:
+INTRODUCTION: Alzheimer's disease (AD) is genetically complex, complicating robust classification from genomic data. METHODS: We developed a transformer-based ensemble model (TrUE-Net) using Monte Carlo Dropout for uncertainty estimation in AD classification from whole-genome sequencing (WGS). We combined a transformer that preserves single-nucleotide polymorphism (SNP) sequence structure with a concurrent random forest using flattened genotypes. An uncertainty threshold separated samples into an uncertain (high-variance) group and a more certain (low-variance) group. RESULTS: We analyzed 1050 individuals, holding out half for testing. Overall accuracy and area under the receiver operating characteristic (ROC) curve (AUC) were 0.6514 and 0.6636, respectively. Excluding the uncertain group improved accuracy from 0.6263 to 0.7287 (10.24% increase) and F1 from 0.5843 to 0.8205 (23.62% increase). DISCUSSION: Monte Carlo Dropout-driven uncertainty helps identify ambiguous cases that may require further clinical evaluation, thus improving reliability in AD genomic classification.

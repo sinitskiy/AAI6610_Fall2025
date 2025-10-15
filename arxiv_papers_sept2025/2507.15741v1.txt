@@ -1,0 +1,6 @@
+Title: Conformal and kNN Predictive Uncertainty Quantification Algorithms in   Metric Spaces
+Published: 2025-07-21T15:54:13Z
+DOI/ID: http://arxiv.org/abs/2507.15741v1
+Categories: stat.ML, cs.LG, math.ST, stat.ME, stat.TH
+Abstract:
+This paper introduces a framework for uncertainty quantification in regression models defined in metric spaces. Leveraging a newly defined notion of homoscedasticity, we develop a conformal prediction algorithm that offers finite-sample coverage guarantees and fast convergence rates of the oracle estimator. In heteroscedastic settings, we forgo these non-asymptotic guarantees to gain statistical efficiency, proposing a local $k$--nearest--neighbor method without conformal calibration that is adaptive to the geometry of each particular nonlinear space. Both procedures work with any regression algorithm and are scalable to large data sets, allowing practitioners to plug in their preferred models and incorporate domain expertise. We prove consistency for the proposed estimators under minimal conditions. Finally, we demonstrate the practical utility of our approach in personalized--medicine applications involving random response objects such as probability distributions and graph Laplacians.

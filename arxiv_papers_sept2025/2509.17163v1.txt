@@ -1,5 +1,0 @@
-Title: Quantum Late-Time Decay and Channel Dependence
-Published: 2025-09-21T17:13:12Z
-DOI/ID: http://arxiv.org/abs/2509.17163v1
-Abstract:
-Quantum mechanics predicts deviations from exponential decay at short and long times, yet experimental evidence is limited. We report a power-law tail after $\sim$10 lifetimes in erythrosine~B fluorescence, confirmed by two detectors probing distinct bands but yielding different power coefficients. The data match a divergent but normalizable spectral density, and theory predicts oscillations as a future test. A novel and general result is that in multichannel QM (and QFT) decay the lifetime is universal, but the late-time deviations exhibit a sizeable time window in which they are channel (or band) dependent, a feature consistent with our data.

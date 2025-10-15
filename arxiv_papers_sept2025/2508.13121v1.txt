@@ -1,0 +1,6 @@
+Title: Bayesian Optimization-based Search for Agent Control in Automated Game   Testing
+Published: 2025-08-18T17:24:46Z
+DOI/ID: http://dx.doi.org/10.1109/CoG60054.2024.10645653
+Categories: cs.AI
+Abstract:
+This work introduces an automated testing approach that employs agents controlling game characters to detect potential bugs within a game level. Harnessing the power of Bayesian Optimization (BO) to execute sample-efficient search, the method determines the next sampling point by analyzing the data collected so far and calculates the data point that will maximize information acquisition. To support the BO process, we introduce a game testing-specific model built on top of a grid map, that features the smoothness and uncertainty estimation required by BO, however and most importantly, it does not suffer the scalability issues that traditional models carry. The experiments demonstrate that the approach significantly improves map coverage capabilities in both time efficiency and exploration distribution.

@@ -1,0 +1,6 @@
+Title: Improving Deep Tabular Learning
+Published: 2025-09-19T18:51:14Z
+DOI/ID: http://arxiv.org/abs/2509.16354v1
+Categories: cs.LG
+Abstract:
+Tabular data remain a dominant form of real-world information but pose persistent challenges for deep learning due to heterogeneous feature types, lack of natural structure, and limited label-preserving augmentations. As a result, ensemble models based on decision trees continue to dominate benchmark leaderboards. In this work, we introduce RuleNet, a transformer-based architecture specifically designed for deep tabular learning. RuleNet incorporates learnable rule embeddings in a decoder, a piecewise linear quantile projection for numerical features, and feature masking ensembles for robustness and uncertainty estimation. Evaluated on eight benchmark datasets, RuleNet matches or surpasses state-of-the-art tree-based methods in most cases, while remaining computationally efficient, offering a practical neural alternative for tabular prediction tasks.

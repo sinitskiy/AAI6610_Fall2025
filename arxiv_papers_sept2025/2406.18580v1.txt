@@ -1,0 +1,6 @@
+Title: Shedding Light on Large Generative Networks: Estimating Epistemic   Uncertainty in Diffusion Models
+Published: 2024-06-05T14:03:21Z
+DOI/ID: http://arxiv.org/abs/2406.18580v1
+Categories: cs.CV, cs.AI, cs.LG
+Abstract:
+Generative diffusion models, notable for their large parameter count (exceeding 100 million) and operation within high-dimensional image spaces, pose significant challenges for traditional uncertainty estimation methods due to computational demands. In this work, we introduce an innovative framework, Diffusion Ensembles for Capturing Uncertainty (DECU), designed for estimating epistemic uncertainty for diffusion models. The DECU framework introduces a novel method that efficiently trains ensembles of conditional diffusion models by incorporating a static set of pre-trained parameters, drastically reducing the computational burden and the number of parameters that require training. Additionally, DECU employs Pairwise-Distance Estimators (PaiDEs) to accurately measure epistemic uncertainty by evaluating the mutual information between model outputs and weights in high-dimensional spaces. The effectiveness of this framework is demonstrated through experiments on the ImageNet dataset, highlighting its capability to capture epistemic uncertainty, specifically in under-sampled image classes.

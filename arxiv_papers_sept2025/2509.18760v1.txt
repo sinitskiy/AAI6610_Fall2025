@@ -1,5 +1,0 @@
-Title: Guaranteed Robust Nonlinear MPC via Disturbance Feedback
-Published: 2025-09-23T07:54:20Z
-DOI/ID: http://arxiv.org/abs/2509.18760v1
-Abstract:
-Robots must satisfy safety-critical state and input constraints despite disturbances and model mismatch. We introduce a robust model predictive control (RMPC) formulation that is fast, scalable, and compatible with real-time implementation. Our formulation guarantees robust constraint satisfaction, input-to-state stability (ISS) and recursive feasibility. The key idea is to decompose the uncertain nonlinear system into (i) a nominal nonlinear dynamic model, (ii) disturbance-feedback controllers, and (iii) bounds on the model error. These components are optimized jointly using sequential convex programming. The resulting convex subproblems are solved efficiently using a recent disturbance-feedback MPC solver. The approach is validated across multiple dynamics, including a rocket-landing problem with steerable thrust. An open-source implementation is available at https://github.com/antoineleeman/robust-nonlinear-mpc.

@@ -1,0 +1,6 @@
+Title: OT Score: An OT based Confidence Score for Source Free Unsupervised   Domain Adaptation
+Published: 2025-05-16T20:09:05Z
+DOI/ID: http://arxiv.org/abs/2505.11669v2
+Categories: cs.LG, cs.AI
+Abstract:
+We address the computational and theoretical limitations of current distributional alignment methods for source-free unsupervised domain adaptation (SFUDA). In particular, we focus on estimating classification performance and confidence in the absence of target labels. Current theoretical frameworks for these methods often yield computationally intractable quantities and fail to adequately reflect the properties of the alignment algorithms employed. To overcome these challenges, we introduce the Optimal Transport (OT) score, a confidence metric derived from a novel theoretical analysis that exploits the flexibility of decision boundaries induced by Semi-Discrete Optimal Transport alignment. The proposed OT score is intuitively interpretable and theoretically rigorous. It provides principled uncertainty estimates for any given set of target pseudo-labels. Experimental results demonstrate that OT score outperforms existing confidence scores. Moreover, it improves SFUDA performance through training-time reweighting and provides a reliable, label-free proxy for model performance.

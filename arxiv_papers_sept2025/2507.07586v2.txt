@@ -1,0 +1,6 @@
+Title: Your Absorbing Discrete Diffusion Secretly Models the Bayesian Posterior
+Published: 2025-07-10T09:42:47Z
+DOI/ID: http://arxiv.org/abs/2507.07586v2
+Categories: cs.CL, cs.AI, cs.LG
+Abstract:
+Discrete diffusion language models learn to reconstruct text from randomly masked inputs, yet under mild assumptions their denoiser already implements the exact Bayesian posterior over the original tokens. We prove that the expected denoiser output under the forward corruption distribution recovers the true posterior, and that a simple Monte Carlo estimator converges to this posterior at rate O(1/sqrt(K)) with finite-sample concentration bounds. Building on this insight, we introduce an inference-time ensemble that runs K independent denoising passes and aggregates both posterior means and variances without any extra training. On WikiText-2, our MC-marginal sampler recovers the analytic lambda-DCE zero-shot perplexity (approximately 39) to within a few points at K=128, and its per-token variance shows a strong rank correlation with reconstruction error (Spearman rho = 0.996). This cost-proportional procedure yields calibrated uncertainty estimates and a direct trade-off between compute and posterior fidelity in discrete diffusion LMs.

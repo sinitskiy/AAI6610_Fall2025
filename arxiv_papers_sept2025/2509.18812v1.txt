@@ -1,5 +1,0 @@
-Title: On Massive Neutrinos and Coherence in Neutrino Oscillations
-Published: 2025-09-23T09:00:28Z
-DOI/ID: http://arxiv.org/abs/2509.18812v1
-Abstract:
-We examine the central tenet of the current standard theory of neutrino oscillations, namely the assumption that neutrinos are emitted and detected as flavour neutrino states, which are coherent superpositions of massive neutrino states of different masses. We prove that all the quantum mechanical and quantum field theoretical arguments, including the invocation of the uncertainty principle and the wave packet description of massive neutrinos, entail the production of neutrinos as statistical ensembles of massive neutrino states. As the states in a statistical ensemble do not interfere, neutrino oscillations cannot be explained by the superposition of massive states. We point out that neutrino oscillations in vacuum can be consistently formulated in theories which include, among other assumptions, the premise that the asymptotic states are massless flavour neutrinos.

@@ -1,0 +1,6 @@
+Title: Conformal Semantic Image Segmentation: Post-hoc Quantification of   Predictive Uncertainty
+Published: 2024-04-16T15:51:39Z
+DOI/ID: http://arxiv.org/abs/2405.05145v1
+Categories: cs.CV, cs.LG
+Abstract:
+We propose a post-hoc, computationally lightweight method to quantify predictive uncertainty in semantic image segmentation. Our approach uses conformal prediction to generate statistically valid prediction sets that are guaranteed to include the ground-truth segmentation mask at a predefined confidence level. We introduce a novel visualization technique of conformalized predictions based on heatmaps, and provide metrics to assess their empirical validity. We demonstrate the effectiveness of our approach on well-known benchmark datasets and image segmentation prediction models, and conclude with practical insights.

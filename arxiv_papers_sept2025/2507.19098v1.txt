@@ -1,0 +1,6 @@
+Title: MedSymmFlow: Bridging Generative Modeling and Classification in Medical   Imaging through Symmetrical Flow Matching
+Published: 2025-07-25T09:30:40Z
+DOI/ID: http://arxiv.org/abs/2507.19098v1
+Categories: cs.CV, cs.AI
+Abstract:
+Reliable medical image classification requires accurate predictions and well-calibrated uncertainty estimates, especially in high-stakes clinical settings. This work presents MedSymmFlow, a generative-discriminative hybrid model built on Symmetrical Flow Matching, designed to unify classification, generation, and uncertainty quantification in medical imaging. MedSymmFlow leverages a latent-space formulation that scales to high-resolution inputs and introduces a semantic mask conditioning mechanism to enhance diagnostic relevance. Unlike standard discriminative models, it naturally estimates uncertainty through its generative sampling process. The model is evaluated on four MedMNIST datasets, covering a range of modalities and pathologies. The results show that MedSymmFlow matches or exceeds the performance of established baselines in classification accuracy and AUC, while also delivering reliable uncertainty estimates validated by performance improvements under selective prediction.

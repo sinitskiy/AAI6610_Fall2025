@@ -1,0 +1,6 @@
+Title: Generalising realisability in statistical learning theory under   epistemic uncertainty
+Published: 2024-02-22T18:20:25Z
+DOI/ID: http://arxiv.org/abs/2402.14759v1
+Categories: cs.LG, cs.AI, math.ST, stat.TH
+Abstract:
+The purpose of this paper is to look into how central notions in statistical learning theory, such as realisability, generalise under the assumption that train and test distribution are issued from the same credal set, i.e., a convex set of probability distributions. This can be considered as a first step towards a more general treatment of statistical learning under epistemic uncertainty.

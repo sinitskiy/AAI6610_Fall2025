@@ -1,0 +1,6 @@
+Title: Scalable Gaussian Processes with Low-Rank Deep Kernel Decomposition
+Published: 2025-05-24T05:42:11Z
+DOI/ID: http://arxiv.org/abs/2505.18526v1
+Categories: stat.ML, cs.LG
+Abstract:
+Kernels are key to encoding prior beliefs and data structures in Gaussian process (GP) models. The design of expressive and scalable kernels has garnered significant research attention. Deep kernel learning enhances kernel flexibility by feeding inputs through a neural network before applying a standard parametric form. However, this approach remains limited by the choice of base kernels, inherits high inference costs, and often demands sparse approximations. Drawing on Mercer's theorem, we introduce a fully data-driven, scalable deep kernel representation where a neural network directly represents a low-rank kernel through a small set of basis functions. This construction enables highly efficient exact GP inference in linear time and memory without invoking inducing points. It also supports scalable mini-batch training based on a principled variational inference framework. We further propose a simple variance correction procedure to guard against overconfidence in uncertainty estimates. Experiments on synthetic and real-world data demonstrate the advantages of our deep kernel GP in terms of predictive accuracy, uncertainty quantification, and computational efficiency.

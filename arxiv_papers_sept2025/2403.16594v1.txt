@@ -1,0 +1,6 @@
+Title: EDUE: Expert Disagreement-Guided One-Pass Uncertainty Estimation for   Medical Image Segmentation
+Published: 2024-03-25T10:13:52Z
+DOI/ID: http://arxiv.org/abs/2403.16594v1
+Categories: eess.IV, cs.CV, cs.LG
+Abstract:
+Deploying deep learning (DL) models in medical applications relies on predictive performance and other critical factors, such as conveying trustworthy predictive uncertainty. Uncertainty estimation (UE) methods provide potential solutions for evaluating prediction reliability and improving the model confidence calibration. Despite increasing interest in UE, challenges persist, such as the need for explicit methods to capture aleatoric uncertainty and align uncertainty estimates with real-life disagreements among domain experts. This paper proposes an Expert Disagreement-Guided Uncertainty Estimation (EDUE) for medical image segmentation. By leveraging variability in ground-truth annotations from multiple raters, we guide the model during training and incorporate random sampling-based strategies to enhance calibration confidence. Our method achieves 55% and 23% improvement in correlation on average with expert disagreements at the image and pixel levels, respectively, better calibration, and competitive segmentation performance compared to the state-of-the-art deep ensembles, requiring only a single forward pass.

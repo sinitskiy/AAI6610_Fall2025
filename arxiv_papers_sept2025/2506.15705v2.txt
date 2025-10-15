@@ -1,0 +1,6 @@
+Title: Generalisation Bounds of Zero-Shot Economic Forecasting using Time   Series Foundation Models
+Published: 2025-05-30T03:10:46Z
+DOI/ID: http://arxiv.org/abs/2506.15705v2
+Categories: cs.LG, cs.AI
+Abstract:
+This study investigates zero-shot forecasting capabilities of Time Series Foundation Models (TSFMs) for macroeconomic indicators. We apply TSFMs to forecasting economic indicators under univariate conditions, bypassing the need for train bespoke econometric models using and extensive training datasets. Our experiments were conducted on a case study dataset, without additional customisation. We rigorously back-tested three state-of-the-art TSFMs (Chronos, TimeGPT and Moirai) under data-scarce conditions and structural breaks. Our results demonstrate that appropriately engineered TSFMs can internalise rich economic dynamics, accommodate regime shifts, and deliver well-behaved uncertainty estimates out of the box, while matching state-of-the-art multivariate models on this domain. Our findings suggest that, without any fine-tuning, TSFMs can match or exceed classical models during stable economic conditions. However, they are vulnerable to degradation in performances during periods of rapid shocks. The findings offer guidance to practitioners on when zero-shot deployments are viable for macroeconomic monitoring and strategic planning.

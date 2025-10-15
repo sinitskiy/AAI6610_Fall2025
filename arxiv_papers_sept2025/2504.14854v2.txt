@@ -1,0 +1,6 @@
+Title: Uncertainty quantification of neural network models of evolving   processes via Langevin sampling
+Published: 2025-04-21T04:45:40Z
+DOI/ID: http://arxiv.org/abs/2504.14854v2
+Categories: cs.LG, stat.ML
+Abstract:
+We propose a scalable, approximate inference hypernetwork framework for a general model of history-dependent processes. The flexible data model is based on a neural ordinary differential equation (NODE) representing the evolution of internal states together with a trainable observation model subcomponent. The posterior distribution corresponding to the data model parameters (weights and biases) follows a stochastic differential equation with a drift term related to the score of the posterior that is learned jointly with the data model parameters. This Langevin sampling approach offers flexibility in balancing the computational budget between the evaluation cost of the data model and the approximation of the posterior density of its parameters. We demonstrate performance of the ensemble sampling hypernetwork on chemical reaction and material physics data and compare it to standard variational inference.

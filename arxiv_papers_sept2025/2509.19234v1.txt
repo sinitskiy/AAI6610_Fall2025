@@ -1,5 +1,0 @@
-Title: Stability and Generalization of Adversarial Diffusion Training
-Published: 2025-09-23T16:55:30Z
-DOI/ID: http://arxiv.org/abs/2509.19234v1
-Abstract:
-Algorithmic stability is an established tool for analyzing generalization. While adversarial training enhances model robustness, it often suffers from robust overfitting and an enlarged generalization gap. Although recent work has established the convergence of adversarial training in decentralized networks, its generalization properties remain unexplored. This work presents a stability-based generalization analysis of adversarial training under the diffusion strategy for convex losses. We derive a bound showing that the generalization error grows with both the adversarial perturbation strength and the number of training steps, a finding consistent with single-agent case but novel for decentralized settings. Numerical experiments on logistic regression validate these theoretical predictions.

@@ -1,5 +1,0 @@
-Title: From Prediction to Understanding: Will AI Foundation Models Transform   Brain Science?
-Published: 2025-09-21T23:39:04Z
-DOI/ID: http://arxiv.org/abs/2509.17280v1
-Abstract:
-Generative pretraining (the "GPT" in ChatGPT) enables language models to learn from vast amounts of internet text without human supervision. This approach has driven breakthroughs across AI by allowing deep neural networks to learn from massive, unstructured datasets. We use the term foundation models to refer to large pretrained systems that can be adapted to a wide range of tasks within and across domains, and these models are increasingly applied beyond language to the brain sciences. These models achieve strong predictive accuracy, raising hopes that they might illuminate computational principles. But predictive success alone does not guarantee scientific understanding. Here, we outline how foundation models can be productively integrated into the brain sciences, highlighting both their promise and their limitations. The central challenge is to move from prediction to explanation: linking model computations to mechanisms underlying neural activity and cognition.

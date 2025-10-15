@@ -1,0 +1,6 @@
+Title: Conformal Prediction for Uncertainty Estimation in Drug-Target   Interaction Prediction
+Published: 2025-05-24T22:31:49Z
+DOI/ID: http://arxiv.org/abs/2505.18890v1
+Categories: cs.LG
+Abstract:
+Accurate drug-target interaction (DTI) prediction with machine learning models is essential for drug discovery. Such models should also provide a credible representation of their uncertainty, but applying classical marginal conformal prediction (CP) in DTI prediction often overlooks variability across drug and protein subgroups. In this work, we analyze three cluster-conditioned CP methods for DTI prediction, and compare them with marginal and group-conditioned CP. Clusterings are obtained via nonconformity scores, feature similarity, and nearest neighbors, respectively. Experiments on the KIBA dataset using four data-splitting strategies show that nonconformity-based clustering yields the tightest intervals and most reliable subgroup coverage, especially in random and fully unseen drug-protein splits. Group-conditioned CP works well when one entity is familiar, but residual-driven clustering provides robust uncertainty estimates even in sparse or novel scenarios. These results highlight the potential of cluster-based CP for improving DTI prediction under uncertainty.

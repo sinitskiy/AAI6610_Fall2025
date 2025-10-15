@@ -1,5 +1,0 @@
-Title: AI-based Methods for Simulating, Sampling, and Predicting Protein   Ensembles
-Published: 2025-09-21T20:14:45Z
-DOI/ID: http://arxiv.org/abs/2509.17224v1
-Abstract:
-Advances in deep learning have opened an era of abundant and accurate predicted protein structures; however, similar progress in protein ensembles has remained elusive. This review highlights several recent research directions towards AI-based predictions of protein ensembles, including coarse-grained force fields, generative models, multiple sequence alignment perturbation methods, and modeling of ensemble descriptors. An emphasis is placed on realistic assessments of the technological maturity of current methods, the strengths and weaknesses of broad families of techniques, and promising machine learning frameworks at an early stage of development. We advocate for "closing the loop" between model training, simulation, and inference to overcome challenges in training data availability and to enable the next generation of models.

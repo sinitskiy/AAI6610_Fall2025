@@ -1,0 +1,6 @@
+Title: Robust Taxi Fare Prediction Under Noisy Conditions: A Comparative Study   of GAT, TimesNet, and XGBoost
+Published: 2025-07-26T16:55:16Z
+DOI/ID: http://arxiv.org/abs/2507.20008v1
+Categories: cs.LG, cs.AI, 62M10 (Primary), 62H30 (Secondary), I.2.6; I.5.1; I.2.10
+Abstract:
+Precise fare prediction is crucial in ride-hailing platforms and urban mobility systems. This study examines three machine learning models-Graph Attention Networks (GAT), XGBoost, and TimesNet to evaluate their predictive capabilities for taxi fares using a real-world dataset comprising over 55 million records. Both raw (noisy) and denoised versions of the dataset are analyzed to assess the impact of data quality on model performance. The study evaluated the models along multiple axes, including predictive accuracy, calibration, uncertainty estimation, out-of-distribution (OOD) robustness, and feature sensitivity. We also explore pre-processing strategies, including KNN imputation, Gaussian noise injection, and autoencoder-based denoising. The study reveals critical differences between classical and deep learning models under realistic conditions, offering practical guidelines for building robust and scalable models in urban fare prediction systems.

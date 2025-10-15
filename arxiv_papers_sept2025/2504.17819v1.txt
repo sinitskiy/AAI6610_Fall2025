@@ -1,0 +1,6 @@
+Title: A Deep Bayesian Convolutional Spiking Neural Network-based CAD system   with Uncertainty Quantification for Medical Images Classification
+Published: 2025-04-23T07:42:05Z
+DOI/ID: http://arxiv.org/abs/2504.17819v1
+Categories: eess.IV, cs.CV, cs.LG
+Abstract:
+The Computer_Aided Diagnosis (CAD) systems facilitate accurate diagnosis of diseases. The development of CADs by leveraging third generation neural network, namely, Spiking Neural Network (SNN), is essential to utilize of the benefits of SNNs, such as their event_driven processing, parallelism, low power consumption, and the ability to process sparse temporal_spatial information. However, Deep SNN as a deep learning model faces challenges with unreliability. To deal with unreliability challenges due to inability to quantify the uncertainty of the predictions, we proposed a deep Bayesian Convolutional Spiking Neural Network based_CADs with uncertainty_aware module. In this study, the Monte Carlo Dropout method as Bayesian approximation is used as an uncertainty quantification method. This method was applied to several medical image classification tasks. Our experimental results demonstrate that our proposed model is accurate and reliable and will be a proper alternative to conventional deep learning for medical image classification.

@@ -1,0 +1,6 @@
+Title: ReModels: Quantile Regression Averaging models
+Published: 2024-05-18T19:13:49Z
+DOI/ID: http://dx.doi.org/10.1016/j.softx.2024.101905
+Categories: cs.LG
+Abstract:
+Electricity price forecasts play a crucial role in making key business decisions within the electricity markets. A focal point in this domain are probabilistic predictions, which delineate future price values in a more comprehensive manner than simple point forecasts. The golden standard in probabilistic approaches to predict energy prices is the Quantile Regression Averaging (QRA) method. In this paper, we present a Python package that encompasses the implementation of QRA, along with modifications of this approach that have appeared in the literature over the past few years. The proposed package also facilitates the acquisition and preparation of data related to electricity markets, as well as the evaluation of model predictions.

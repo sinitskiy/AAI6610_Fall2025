@@ -1,0 +1,6 @@
+Title: NeuralSurv: Deep Survival Analysis with Bayesian Uncertainty   Quantification
+Published: 2025-05-16T09:53:21Z
+DOI/ID: http://arxiv.org/abs/2505.11054v1
+Categories: cs.LG, stat.ML
+Abstract:
+We introduce NeuralSurv, the first deep survival model to incorporate Bayesian uncertainty quantification. Our non-parametric, architecture-agnostic framework flexibly captures time-varying covariate-risk relationships in continuous time via a novel two-stage data-augmentation scheme, for which we establish theoretical guarantees. For efficient posterior inference, we introduce a mean-field variational algorithm with coordinate-ascent updates that scale linearly in model size. By locally linearizing the Bayesian neural network, we obtain full conjugacy and derive all coordinate updates in closed form. In experiments, NeuralSurv delivers superior calibration compared to state-of-the-art deep survival models, while matching or exceeding their discriminative performance across both synthetic benchmarks and real-world datasets. Our results demonstrate the value of Bayesian principles in data-scarce regimes by enhancing model calibration and providing robust, well-calibrated uncertainty estimates for the survival function.

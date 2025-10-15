@@ -1,5 +1,0 @@
-Title: Remaining Time Prediction in Outbound Warehouse Processes: A Case Study   (Short Paper)
-Published: 2025-09-23T13:37:09Z
-DOI/ID: http://arxiv.org/abs/2509.18986v1
-Abstract:
-Predictive process monitoring is a sub-domain of process mining which aims to forecast the future of ongoing process executions. One common prediction target is the remaining time, meaning the time that will elapse until a process execution is completed. In this paper, we compare four different remaining time prediction approaches in a real-life outbound warehouse process of a logistics company in the aviation business. For this process, the company provided us with a novel and original event log with 169,523 traces, which we can make publicly available. Unsurprisingly, we find that deep learning models achieve the highest accuracy, but shallow methods like conventional boosting techniques achieve competitive accuracy and require significantly fewer computational resources.

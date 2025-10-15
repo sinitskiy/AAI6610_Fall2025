@@ -1,0 +1,6 @@
+Title: TRUST: Test-time Resource Utilization for Superior Trustworthiness
+Published: 2025-06-06T12:52:32Z
+DOI/ID: http://arxiv.org/abs/2506.06048v1
+Categories: cs.LG, cs.AI, cs.CV
+Abstract:
+Standard uncertainty estimation techniques, such as dropout, often struggle to clearly distinguish reliable predictions from unreliable ones. We attribute this limitation to noisy classifier weights, which, while not impairing overall class-level predictions, render finer-level statistics less informative. To address this, we propose a novel test-time optimization method that accounts for the impact of such noise to produce more reliable confidence estimates. This score defines a monotonic subset-selection function, where population accuracy consistently increases as samples with lower scores are removed, and it demonstrates superior performance in standard risk-based metrics such as AUSE and AURC. Additionally, our method effectively identifies discrepancies between training and test distributions, reliably differentiates in-distribution from out-of-distribution samples, and elucidates key differences between CNN and ViT classifiers across various vision datasets.

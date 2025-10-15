@@ -1,0 +1,6 @@
+Title: Label-wise Aleatoric and Epistemic Uncertainty Quantification
+Published: 2024-06-04T14:33:23Z
+DOI/ID: http://arxiv.org/abs/2406.02354v1
+Categories: cs.LG, stat.ML
+Abstract:
+We present a novel approach to uncertainty quantification in classification tasks based on label-wise decomposition of uncertainty measures. This label-wise perspective allows uncertainty to be quantified at the individual class level, thereby improving cost-sensitive decision-making and helping understand the sources of uncertainty. Furthermore, it allows to define total, aleatoric, and epistemic uncertainty on the basis of non-categorical measures such as variance, going beyond common entropy-based measures. In particular, variance-based measures address some of the limitations associated with established methods that have recently been discussed in the literature. We show that our proposed measures adhere to a number of desirable properties. Through empirical evaluation on a variety of benchmark data sets -- including applications in the medical domain where accurate uncertainty quantification is crucial -- we establish the effectiveness of label-wise uncertainty quantification.

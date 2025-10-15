@@ -1,5 +1,0 @@
-Title: System Relaxation for Interpretable and Adaptive Network Control
-Published: 2025-09-21T08:55:47Z
-DOI/ID: http://arxiv.org/abs/2509.16984v1
-Abstract:
-Prevailing network control strategies, which rely on static shortest-path logic, suffer from catastrophic "stress concentration" on critical nodes. This paper introduces the System Relaxation Algorithm (SRA), a new control paradigm inspired by physical relaxation that guides a network toward an emergent equilibrium of load balance. SRA is an interpretable, 'white-box' dynamical system whose behavior is profoundly topology-dependent: in heterogeneous networks, it acts as a proactive performance optimizer, reducing peak centrality by over 80\% and increasing high-load throughput by more than 45\%; in homogeneous topologies, its objective intelligently shifts to resilience enhancement. We rigorously prove its global convergence and practical stability using the theory of non-smooth dynamical systems, establishing a predictable paradigm for network governance that intelligently trades off performance and resilience.

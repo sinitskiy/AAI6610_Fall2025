@@ -1,5 +1,0 @@
-Title: Statistics and morphologies of stable droplets in scalar active fluids
-Published: 2025-09-23T15:32:17Z
-DOI/ID: http://arxiv.org/abs/2509.19154v1
-Abstract:
-Conventional phase segregation is controlled by a positive interfacial tension, which implies that the system relaxes towards a state in which the interfacial area (or length) is minimized, typically manifesting as a single droplet that grows with the system size. Intriguingly, the extension of the underlying Model B paradigm by two non-potential terms (Active Model B+) is able to describe the stable coexistence of many finite droplets. Here we numerical study Active Model B+ in the vicinity of the transition between a single droplet (macrophase segregation) and multiple droplets (microphase segregation). Our results show that, although noise shifts transitions, the overall agreement with the mean-field theoretical predictions is very good. We find a strong correlation of droplet properties with a single parameter that determines the number, density, and the fractal dimension of droplets. Deeper inside the droplet phase we observe another transition to a hexagonal lattice of regular droplets.

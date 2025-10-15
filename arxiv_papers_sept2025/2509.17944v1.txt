@@ -1,5 +1,0 @@
-Title: Local Characterization of Noise in Iterative Reconstruction of the   Generalized Radon Transform
-Published: 2025-09-22T16:06:11Z
-DOI/ID: http://arxiv.org/abs/2509.17944v1
-Abstract:
-We study noise in iterative reconstruction from discrete noisy data of a generalized Radon transform in the plane. Our approach builds on Local Reconstruction Analysis (LRA), a framework for analyzing reconstructions at the native scale. We establish that the rescaled reconstruction error converges in distribution to a zero-mean Gaussian random field with explicitly computable covariance, providing a complete local characterization of noise in iterative reconstruction. Numerical experiments show strong agreement with the theoretical predictions. Combined with earlier deterministic results, our findings complete the analysis of iterative reconstruction at the native scale with respect to the two most fundamental limitations: the discreteness of the data and the presence of noise.

@@ -1,5 +1,0 @@
-Title: Eigenstate thermalization hypothesis versus Bohigas-Giannoni-Schmit   conjecture: a comparison
-Published: 2025-09-22T11:42:29Z
-DOI/ID: http://arxiv.org/abs/2509.17634v1
-Abstract:
-Thermalization of a closed chaotic quantum system is commonly addressed in terms of the eigenstate ther- malization hypothesis (ETH). An alternative approach uses the Bohigas-Giannoni-Schmit (BGS) conjecture. The comparison shows that the two approaches differ significantly. In contrast to ETH, BGS fully uses the statistical properies of the chaotic Hamiltonian. In both approaches, the criterion for thermalization is similar. BGS goes beyond ETH in predicting quantitatively the time dependence of thermalization.

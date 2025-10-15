@@ -1,0 +1,6 @@
+Title: Variational Deep Learning via Implicit Regularization
+Published: 2025-05-26T17:15:57Z
+DOI/ID: http://arxiv.org/abs/2505.20235v2
+Categories: cs.LG, cs.AI, stat.ML
+Abstract:
+Modern deep learning models generalize remarkably well in-distribution, despite being overparametrized and trained with little to no explicit regularization. Instead, current theory credits implicit regularization imposed by the choice of architecture, hyperparameters and optimization procedure. However, deep neural networks can be surprisingly non-robust, resulting in overconfident predictions and poor out-of-distribution generalization. Bayesian deep learning addresses this via model averaging, but typically requires significant computational resources as well as carefully elicited priors to avoid overriding the benefits of implicit regularization. Instead, in this work, we propose to regularize variational neural networks solely by relying on the implicit bias of (stochastic) gradient descent. We theoretically characterize this inductive bias in overparametrized linear models as generalized variational inference and demonstrate the importance of the choice of parametrization. Empirically, our approach demonstrates strong in- and out-of-distribution performance without additional hyperparameter tuning and with minimal computational overhead.

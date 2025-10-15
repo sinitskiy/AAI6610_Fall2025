@@ -1,0 +1,6 @@
+Title: Adaptive Conformal Prediction Intervals Over Trajectory Ensembles
+Published: 2025-08-18T21:14:07Z
+DOI/ID: http://arxiv.org/abs/2508.13362v1
+Categories: cs.LG
+Abstract:
+Future trajectories play an important role across domains such as autonomous driving, hurricane forecasting, and epidemic modeling, where practitioners commonly generate ensemble paths by sampling probabilistic models or leveraging multiple autoregressive predictors. While these trajectories reflect inherent uncertainty, they are typically uncalibrated. We propose a unified framework based on conformal prediction that transforms sampled trajectories into calibrated prediction intervals with theoretical coverage guarantees. By introducing a novel online update step and an optimization step that captures inter-step dependencies, our method can produce discontinuous prediction intervals around each trajectory, naturally capture temporal dependencies, and yield sharper, more adaptive uncertainty estimates.

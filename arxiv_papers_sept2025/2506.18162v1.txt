@@ -1,0 +1,6 @@
+Title: Pitfalls of Conformal Predictions for Medical Image Classification
+Published: 2025-06-22T20:33:38Z
+DOI/ID: http://dx.doi.org/10.1007/978-3-031-44336-7_20
+Categories: cs.LG, cs.CV
+Abstract:
+Reliable uncertainty estimation is one of the major challenges for medical classification tasks. While many approaches have been proposed, recently the statistical framework of conformal predictions has gained a lot of attention, due to its ability to provide provable calibration guarantees. Nonetheless, the application of conformal predictions in safety-critical areas such as medicine comes with pitfalls, limitations and assumptions that practitioners need to be aware of. We demonstrate through examples from dermatology and histopathology that conformal predictions are unreliable under distributional shifts in input and label variables. Additionally, conformal predictions should not be used for selecting predictions to improve accuracy and are not reliable for subsets of the data, such as individual classes or patient attributes. Moreover, in classification settings with a small number of classes, which are common in medical image classification tasks, conformal predictions have limited practical value.

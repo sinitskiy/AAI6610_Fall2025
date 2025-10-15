@@ -1,0 +1,6 @@
+Title: Localized Uncertainty Quantification in Random Forests via Proximities
+Published: 2025-09-26T20:53:28Z
+DOI/ID: http://arxiv.org/abs/2509.22928v1
+Categories: stat.ML, cs.LG
+Abstract:
+In machine learning, uncertainty quantification helps assess the reliability of model predictions, which is important in high-stakes scenarios. Traditional approaches often emphasize predictive accuracy, but there is a growing focus on incorporating uncertainty measures. This paper addresses localized uncertainty quantification in random forests. While current methods often rely on quantile regression or Monte Carlo techniques, we propose a new approach using naturally occurring test sets and similarity measures (proximities) typically viewed as byproducts of random forests. Specifically, we form localized distributions of OOB errors around nearby points, defined using the proximities, to create prediction intervals for regression and trust scores for classification. By varying the number of nearby points, our intervals can be adjusted to achieve the desired coverage while retaining the flexibility that reflects the certainty of individual predictions. For classification, excluding points identified as unclassifiable by our method generally enhances the accuracy of the model and provides higher accuracy-rejection AUC scores than competing methods.

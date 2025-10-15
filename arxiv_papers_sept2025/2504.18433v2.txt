@@ -1,0 +1,6 @@
+Title: An Axiomatic Assessment of Entropy- and Variance-based Uncertainty   Quantification in Regression
+Published: 2025-04-25T15:44:46Z
+DOI/ID: http://arxiv.org/abs/2504.18433v2
+Categories: cs.LG, stat.ML
+Abstract:
+Uncertainty quantification (UQ) is crucial in machine learning, yet most (axiomatic) studies of uncertainty measures focus on classification, leaving a gap in regression settings with limited formal justification and evaluations. In this work, we introduce a set of axioms to rigorously assess measures of aleatoric, epistemic, and total uncertainty in supervised regression. By utilizing a predictive exponential family, we can generalize commonly used approaches for uncertainty representation and corresponding uncertainty measures. More specifically, we analyze the widely used entropy- and variance-based measures regarding limitations and challenges. Our findings provide a principled foundation for uncertainty quantification in regression, offering theoretical insights and practical guidelines for reliable uncertainty assessment.

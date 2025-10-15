@@ -1,0 +1,6 @@
+Title: Bregman-Hausdorff divergence: strengthening the connections between   computational geometry and machine learning
+Published: 2025-04-09T22:42:29Z
+DOI/ID: http://arxiv.org/abs/2504.07322v1
+Categories: cs.LG, cs.CG, cs.IT, math.IT
+Abstract:
+The purpose of this paper is twofold. On a technical side, we propose an extension of the Hausdorff distance from metric spaces to spaces equipped with asymmetric distance measures. Specifically, we focus on the family of Bregman divergences, which includes the popular Kullback--Leibler divergence (also known as relative entropy).   As a proof of concept, we use the resulting Bregman--Hausdorff divergence to compare two collections of probabilistic predictions produced by different machine learning models trained using the relative entropy loss. The algorithms we propose are surprisingly efficient even for large inputs with hundreds of dimensions.   In addition to the introduction of this technical concept, we provide a survey. It outlines the basics of Bregman geometry, as well as computational geometry algorithms. We focus on algorithms that are compatible with this geometry and are relevant for machine learning.

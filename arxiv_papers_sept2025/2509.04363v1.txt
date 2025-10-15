@@ -1,0 +1,6 @@
+Title: When three experiments are better than two: Avoiding intractable   correlated aleatoric uncertainty by leveraging a novel bias--variance   tradeoff
+Published: 2025-09-04T16:23:54Z
+DOI/ID: http://arxiv.org/abs/2509.04363v1
+Categories: cs.LG
+Abstract:
+Real-world experimental scenarios are characterized by the presence of heteroskedastic aleatoric uncertainty, and this uncertainty can be correlated in batched settings. The bias--variance tradeoff can be used to write the expected mean squared error between a model distribution and a ground-truth random variable as the sum of an epistemic uncertainty term, the bias squared, and an aleatoric uncertainty term. We leverage this relationship to propose novel active learning strategies that directly reduce the bias between experimental rounds, considering model systems both with and without noise. Finally, we investigate methods to leverage historical data in a quadratic manner through the use of a novel cobias--covariance relationship, which naturally proposes a mechanism for batching through an eigendecomposition strategy. When our difference-based method leveraging the cobias--covariance relationship is utilized in a batched setting (with a quadratic estimator), we outperform a number of canonical methods including BALD and Least Confidence.

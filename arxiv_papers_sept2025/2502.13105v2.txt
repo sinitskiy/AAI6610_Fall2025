@@ -1,0 +1,6 @@
+Title: Enhanced uncertainty quantification variational autoencoders for the   solution of Bayesian inverse problems
+Published: 2025-02-18T18:17:49Z
+DOI/ID: http://arxiv.org/abs/2502.13105v2
+Categories: cs.LG, cs.NA, math.NA, 68T07, 62C10, 35R30
+Abstract:
+Among other uses, neural networks are a powerful tool for solving deterministic and Bayesian inverse problems in real-time, where variational autoencoders, a specialized type of neural network, enable the Bayesian estimation of model parameters and their distribution from observational data allowing real-time inverse uncertainty quantification. In this work, we build upon existing research [Goh, H. et al., Proceedings of Machine Learning Research, 2022] by proposing a novel loss function to train variational autoencoders for Bayesian inverse problems. When the forward map is affine, we provide a theoretical proof of the convergence of the latent states of variational autoencoders to the posterior distribution of the model parameters. We validate this theoretical result through numerical tests and we compare the proposed variational autoencoder with the existing one in the literature both in terms of accuracy and generalization properties. Finally, we test the proposed variational autoencoder on a Laplace equation, with comparison to the original one and Markov Chains Monte Carlo.

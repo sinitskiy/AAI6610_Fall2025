@@ -1,5 +1,0 @@
-Title: Improving Active Learning for Melody Estimation by Disentangling   Uncertainties
-Published: 2025-09-22T06:34:07Z
-DOI/ID: http://arxiv.org/abs/2509.17375v1
-Abstract:
-Estimating the fundamental frequency, or melody, is a core task in Music Information Retrieval (MIR). Various studies have explored signal processing, machine learning, and deep-learning-based approaches, with a very recent focus on utilizing uncertainty in active learning settings for melody estimation. However, these approaches do not investigate the relative effectiveness of different uncertainties. In this work, we follow a framework that disentangles aleatoric and epistemic uncertainties to guide active learning for melody estimation. Trained on a source dataset, our model adapts to new domains using only a small number of labeled samples. Experimental results demonstrate that epistemic uncertainty is more reliable for domain adaptation with reduced labeling effort as compared to aleatoric uncertainty.

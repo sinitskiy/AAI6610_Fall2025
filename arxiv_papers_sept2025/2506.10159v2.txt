@@ -1,0 +1,6 @@
+Title: Probabilistic Variational Contrastive Learning
+Published: 2025-06-11T20:26:07Z
+DOI/ID: http://arxiv.org/abs/2506.10159v2
+Categories: cs.LG, stat.ML
+Abstract:
+Deterministic embeddings learned by contrastive learning (CL) methods such as SimCLR and SupCon achieve state-of-the-art performance but lack a principled mechanism for uncertainty quantification. We propose Variational Contrastive Learning (VCL), a decoder-free framework that maximizes the evidence lower bound (ELBO) by interpreting the InfoNCE loss as a surrogate reconstruction term and adding a KL divergence regularizer to a uniform prior on the unit hypersphere. We model the approximate posterior $q_\theta(z|x)$ as a projected normal distribution, enabling the sampling of probabilistic embeddings. Our two instantiation--VSimCLR and VSupCon--replace deterministic embeddings with samples from $q_\theta(z|x)$ and incorporate a normalized KL term into the loss. Experiments on multiple benchmarks demonstrate that VCL mitigates dimensional collapse, enhances mutual information with class labels, and matches or outperforms deterministic baselines in classification accuracy, all the while providing meaningful uncertainty estimates through the posterior model. VCL thus equips contrastive learning with a probabilistic foundation, serving as a new basis for contrastive approaches.

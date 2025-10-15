@@ -1,0 +1,6 @@
+Title: Streamlining Prediction in Bayesian Deep Learning
+Published: 2024-11-27T15:07:44Z
+DOI/ID: http://arxiv.org/abs/2411.18425v4
+Categories: cs.LG
+Abstract:
+The rising interest in Bayesian deep learning (BDL) has led to a plethora of methods for estimating the posterior distribution. However, efficient computation of inferences, such as predictions, has been largely overlooked with Monte Carlo integration remaining the standard. In this work we examine streamlining prediction in BDL through a single forward pass without sampling. For this we use local linearisation on activation functions and local Gaussian approximations at linear layers. Thus allowing us to analytically compute an approximation to the posterior predictive distribution. We showcase our approach for both MLP and transformers, such as ViT and GPT-2, and assess its performance on regression and classification tasks.   Open-source library: https://github.com/AaltoML/SUQ

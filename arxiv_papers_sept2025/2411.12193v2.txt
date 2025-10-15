@@ -1,0 +1,6 @@
+Title: Hierarchical Spatio-Temporal Uncertainty Quantification for Distributed   Energy Adoption
+Published: 2024-11-19T03:18:31Z
+DOI/ID: http://arxiv.org/abs/2411.12193v2
+Categories: stat.AP, cs.LG, stat.ML
+Abstract:
+The rapid deployment of distributed energy resources (DER) has introduced significant spatio-temporal uncertainties in power grid management, necessitating accurate multilevel forecasting methods. However, existing approaches often produce overly conservative uncertainty intervals at individual spatial units and fail to properly capture uncertainties when aggregating predictions across different spatial scales. This paper presents a novel hierarchical spatio-temporal model based on the conformal prediction framework to address these challenges. Our approach generates circuit-level DER growth predictions and efficiently aggregates them to the substation level while maintaining statistical validity through a tailored non-conformity score. Applied to a decade of DER installation data from a local utility network, our method demonstrates superior performance over existing approaches, particularly in reducing prediction interval widths while maintaining coverage.

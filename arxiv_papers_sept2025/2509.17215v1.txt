@@ -1,5 +1,0 @@
-Title: Optimized adaptive MPC for lateral control of autonomous vehicles
-Published: 2025-09-21T19:43:31Z
-DOI/ID: http://dx.doi.org/10.23919/ICAC50006.2021.9594131
-Abstract:
-Autonomous vehicles are the upcoming solution to most transportation problems such as safety, comfort and efficiency. The steering control is one of the main important tasks in achieving autonomous driving. Model predictive control (MPC) is among the fittest controllers for this task due to its optimal performance and ability to handle constraints. This paper proposes an adaptive MPC controller (AMPC) for the path tracking task, and an improved PSO algorithm for optimising the AMPC parameters. Parameter adaption is realised online using a lookup table approach. The propose AMPC performance is assessed and compared with the classic MPC and the Pure Pursuit controller through simulations. Code can be found here: https://github.com/yassinekebbati/Optimized_adaptive_MPC

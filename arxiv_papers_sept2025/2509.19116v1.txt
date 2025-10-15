@@ -1,5 +1,0 @@
-Title: Dijet Photoproduction in POWHEG BOX
-Published: 2025-09-23T15:00:53Z
-DOI/ID: http://arxiv.org/abs/2509.19116v1
-Abstract:
-Photoproduction processes have gained a renewed interest following the approval of the EIC, making their implementation in Monte Carlo event generators highly desirable. We present recent efforts to develop a POWHEG BOX extension simulating dijet production from direct and resolved photons at next-to-leading order in QCD merged to parton showers, employing the Weizs\"acker-Williams Approximation. It will facilitate event generation for collisions involving leptons, protons and heavy ions. Thus, it will be particularly useful for the study of ultra-peripheral collisions at CERN's LHC and for making predictions relevant to BNL's EIC.

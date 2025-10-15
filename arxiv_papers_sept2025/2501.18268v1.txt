@@ -1,0 +1,6 @@
+Title: Reducing Aleatoric and Epistemic Uncertainty through Multi-modal Data   Acquisition
+Published: 2025-01-30T11:05:59Z
+DOI/ID: http://arxiv.org/abs/2501.18268v1
+Categories: cs.LG
+Abstract:
+To generate accurate and reliable predictions, modern AI systems need to combine data from multiple modalities, such as text, images, audio, spreadsheets, and time series. Multi-modal data introduces new opportunities and challenges for disentangling uncertainty: it is commonly assumed in the machine learning community that epistemic uncertainty can be reduced by collecting more data, while aleatoric uncertainty is irreducible. However, this assumption is challenged in modern AI systems when information is obtained from different modalities. This paper introduces an innovative data acquisition framework where uncertainty disentanglement leads to actionable decisions, allowing sampling in two directions: sample size and data modality. The main hypothesis is that aleatoric uncertainty decreases as the number of modalities increases, while epistemic uncertainty decreases by collecting more observations. We provide proof-of-concept implementations on two multi-modal datasets to showcase our data acquisition framework, which combines ideas from active learning, active feature acquisition and uncertainty quantification.

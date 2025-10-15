@@ -1,5 +1,0 @@
-Title: Metastability for telegraph processes in a double-well potential
-Published: 2025-09-22T06:47:50Z
-DOI/ID: http://dx.doi.org/10.1017/jpr.2025.10027
-Abstract:
-In this paper, we study equations with nonlinearity in the form of a double-well potential, randomised by a velocity-switching (telegraph) stochastic process. If the speed parameters of the randomisation are small, then this dynamics has one metastable uncertainty interval and two invariant attractors. The probabilities of leaving the metastable interval through the upper boundary are determined, as well as characteristics of the first crossing times. Invariant measures are also found. When and if the direction of the telegraph process velocity coincides with the direction of the periodic change in potential, the system can go into a metastable state, having received a time window for the interwell transition. The obtained results can be used as an alternative to stochastic resonance models.

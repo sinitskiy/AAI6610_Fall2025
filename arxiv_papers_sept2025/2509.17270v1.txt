@@ -1,5 +1,0 @@
-Title: Reference-aware SFM layers for intrusive intelligibility prediction
-Published: 2025-09-21T23:06:31Z
-DOI/ID: http://arxiv.org/abs/2509.17270v1
-Abstract:
-Intrusive speech-intelligibility predictors that exploit explicit reference signals are now widespread, yet they have not consistently surpassed non-intrusive systems. We argue that a primary cause is the limited exploitation of speech foundation models (SFMs). This work revisits intrusive prediction by combining reference conditioning with multi-layer SFM representations. Our final system achieves RMSE 22.36 on the development set and 24.98 on the evaluation set, ranking 1st on CPC3. These findings provide practical guidance for constructing SFM-based intrusive intelligibility predictors.

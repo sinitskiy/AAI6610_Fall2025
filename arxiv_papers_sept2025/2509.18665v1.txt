@@ -1,5 +1,0 @@
-Title: Listening to the long ringdown: A novel way to pinpoint the EOS in   neutron-star cores
-Published: 2025-09-23T05:33:38Z
-DOI/ID: http://arxiv.org/abs/2509.18665v1
-Abstract:
-Gravitational waves (GWs) from binary neutron star (BNS) merger remnants complement constraints from the inspiral phase, mass-radius measurements, and microscopic theory by providing information about the neutron-star equation of state (EOS) at extreme densities. We perform general-relativistic simulations of BNS mergers using EOS models that span the uncertain high-density regime. We find a robust correlation between the ratio of energy and angular momentum lost during the late-time post-merger GW signal - the long ringdown - and the EOS at the highest densities in neutron star cores. Applying this correlation to post-merger GW signals reduces EOS uncertainty at several times saturation density, where no direct constraints currently exist.

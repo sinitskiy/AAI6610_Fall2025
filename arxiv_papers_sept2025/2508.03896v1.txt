@@ -1,0 +1,6 @@
+Title: Reliable Programmatic Weak Supervision with Confidence Intervals for   Label Probabilities
+Published: 2025-08-05T20:34:04Z
+DOI/ID: http://arxiv.org/abs/2508.03896v1
+Categories: stat.ML, cs.LG
+Abstract:
+The accurate labeling of datasets is often both costly and time-consuming. Given an unlabeled dataset, programmatic weak supervision obtains probabilistic predictions for the labels by leveraging multiple weak labeling functions (LFs) that provide rough guesses for labels. Weak LFs commonly provide guesses with assorted types and unknown interdependences that can result in unreliable predictions. Furthermore, existing techniques for programmatic weak supervision cannot provide assessments for the reliability of the probabilistic predictions for labels. This paper presents a methodology for programmatic weak supervision that can provide confidence intervals for label probabilities and obtain more reliable predictions. In particular, the methods proposed use uncertainty sets of distributions that encapsulate the information provided by LFs with unrestricted behavior and typology. Experiments on multiple benchmark datasets show the improvement of the presented methods over the state-of-the-art and the practicality of the confidence intervals presented.

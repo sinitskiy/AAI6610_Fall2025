@@ -1,0 +1,6 @@
+Title: Improved probabilistic regression using diffusion models
+Published: 2025-10-06T08:36:05Z
+DOI/ID: http://arxiv.org/abs/2510.04583v1
+Categories: cs.LG
+Abstract:
+Probabilistic regression models the entire predictive distribution of a response variable, offering richer insights than classical point estimates and directly allowing for uncertainty quantification. While diffusion-based generative models have shown remarkable success in generating complex, high-dimensional data, their usage in general regression tasks often lacks uncertainty-related evaluation and remains limited to domain-specific applications. We propose a novel diffusion-based framework for probabilistic regression that learns predictive distributions in a nonparametric way. More specifically, we propose to model the full distribution of the diffusion noise, enabling adaptation to diverse tasks and enhanced uncertainty quantification. We investigate different noise parameterizations, analyze their trade-offs, and evaluate our framework across a broad range of regression tasks, covering low- and high-dimensional settings. For several experiments, our approach shows superior performance against existing baselines, while delivering calibrated uncertainty estimates, demonstrating its versatility as a tool for probabilistic prediction.

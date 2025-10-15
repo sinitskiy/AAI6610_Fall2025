@@ -1,0 +1,6 @@
+Title: Uncertainty in Machine Learning
+Published: 2025-10-07T15:07:27Z
+DOI/ID: http://arxiv.org/abs/2510.06007v1
+Categories: cs.LG
+Abstract:
+This book chapter introduces the principles and practical applications of uncertainty quantification in machine learning. It explains how to identify and distinguish between different types of uncertainty and presents methods for quantifying uncertainty in predictive models, including linear regression, random forests, and neural networks. The chapter also covers conformal prediction as a framework for generating predictions with predefined confidence intervals. Finally, it explores how uncertainty estimation can be leveraged to improve business decision-making, enhance model reliability, and support risk-aware strategies.

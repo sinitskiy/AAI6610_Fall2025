@@ -1,5 +1,0 @@
-Title: Dummy Atom Based Thermodynamic Integration Accurately Predicts Disulfide   Redox Free Energies in Proteins
-Published: 2025-09-23T16:17:06Z
-DOI/ID: http://arxiv.org/abs/2509.19200v1
-Abstract:
-A thermodynamic integration (TI) protocol incorporating dummy atoms is introduced to calculate free energy differences for disulfide bond formation in proteins. This method successfully reproduces experimental redox potentials for multiple proteins, providing improved insights into the redox regulation of various proteins.

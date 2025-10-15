@@ -1,0 +1,42 @@
+[
+  {
+    "cluster_id": 0,
+    "size": 83,
+    "representative": "2403.16594v1.txt"
+  },
+  {
+    "cluster_id": 1,
+    "size": 58,
+    "representative": "2401.12418v1.txt"
+  },
+  {
+    "cluster_id": 2,
+    "size": 103,
+    "representative": "2505.07309v1.txt"
+  },
+  {
+    "cluster_id": 3,
+    "size": 109,
+    "representative": "2502.02870v1.txt"
+  },
+  {
+    "cluster_id": 4,
+    "size": 121,
+    "representative": "2504.18433v2.txt"
+  },
+  {
+    "cluster_id": 5,
+    "size": 26,
+    "representative": "2406.04043v3.txt"
+  },
+  {
+    "cluster_id": 6,
+    "size": 67,
+    "representative": "2505.12457v1.txt"
+  },
+  {
+    "cluster_id": 7,
+    "size": 56,
+    "representative": "2409.05975v4.txt"
+  }
+]

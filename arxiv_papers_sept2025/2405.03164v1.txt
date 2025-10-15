@@ -1,0 +1,6 @@
+Title: The Role of Predictive Uncertainty and Diversity in Embodied AI and   Robot Learning
+Published: 2024-05-06T05:04:59Z
+DOI/ID: http://arxiv.org/abs/2405.03164v1
+Categories: cs.RO, cs.AI, cs.CV
+Abstract:
+Uncertainty has long been a critical area of study in robotics, particularly when robots are equipped with analytical models. As we move towards the widespread use of deep neural networks in robots, which have demonstrated remarkable performance in research settings, understanding the nuances of uncertainty becomes crucial for their real-world deployment. This guide offers an overview of the importance of uncertainty and provides methods to quantify and evaluate it from an applications perspective.

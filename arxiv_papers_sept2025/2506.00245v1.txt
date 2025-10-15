@@ -1,0 +1,6 @@
+Title: Beyond Semantic Entropy: Boosting LLM Uncertainty Quantification with   Pairwise Semantic Similarity
+Published: 2025-05-30T21:21:05Z
+DOI/ID: http://arxiv.org/abs/2506.00245v1
+Categories: cs.LG, cs.CL
+Abstract:
+Hallucination in large language models (LLMs) can be detected by assessing the uncertainty of model outputs, typically measured using entropy. Semantic entropy (SE) enhances traditional entropy estimation by quantifying uncertainty at the semantic cluster level. However, as modern LLMs generate longer one-sentence responses, SE becomes less effective because it overlooks two crucial factors: intra-cluster similarity (the spread within a cluster) and inter-cluster similarity (the distance between clusters). To address these limitations, we propose a simple black-box uncertainty quantification method inspired by nearest neighbor estimates of entropy. Our approach can also be easily extended to white-box settings by incorporating token probabilities. Additionally, we provide theoretical results showing that our method generalizes semantic entropy. Extensive empirical results demonstrate its effectiveness compared to semantic entropy across two recent LLMs (Phi3 and Llama3) and three common text generation tasks: question answering, text summarization, and machine translation. Our code is available at https://github.com/BigML-CS-UCLA/SNNE.

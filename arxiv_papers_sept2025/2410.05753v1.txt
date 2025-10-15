@@ -1,0 +1,6 @@
+Title: Pathwise Gradient Variance Reduction with Control Variates in   Variational Inference
+Published: 2024-10-08T07:28:46Z
+DOI/ID: http://arxiv.org/abs/2410.05753v1
+Categories: stat.ML, cs.LG, stat.CO, stat.ME
+Abstract:
+Variational inference in Bayesian deep learning often involves computing the gradient of an expectation that lacks a closed-form solution. In these cases, pathwise and score-function gradient estimators are the most common approaches. The pathwise estimator is often favoured for its substantially lower variance compared to the score-function estimator, which typically requires variance reduction techniques. However, recent research suggests that even pathwise gradient estimators could benefit from variance reduction. In this work, we review existing control-variates-based variance reduction methods for pathwise gradient estimators to assess their effectiveness. Notably, these methods often rely on integrand approximations and are applicable only to simple variational families. To address this limitation, we propose applying zero-variance control variates to pathwise gradient estimators. This approach offers the advantage of requiring minimal assumptions about the variational distribution, other than being able to sample from it.

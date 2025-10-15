@@ -1,0 +1,6 @@
+Title: Uncertainty Estimation on Graphs with Structure Informed Stochastic   Partial Differential Equations
+Published: 2025-06-07T19:58:38Z
+DOI/ID: http://arxiv.org/abs/2506.06907v2
+Categories: cs.LG, cs.AI
+Abstract:
+Graph Neural Networks have achieved impressive results across diverse network modeling tasks, but accurately estimating uncertainty on graphs remains difficult, especially under distributional shifts. Unlike traditional uncertainty estimation, graph-based uncertainty must account for randomness arising from both the graph's structure and its label distribution, which adds complexity. In this paper, making an analogy between the evolution of a stochastic partial differential equation (SPDE) driven by Matern Gaussian Process and message passing using GNN layers, we present a principled way to design a novel message passing scheme that incorporates spatial-temporal noises motivated by the Gaussian Process approach to SPDE. Our method simultaneously captures uncertainty across space and time and allows explicit control over the covariance kernel smoothness, thereby enhancing uncertainty estimates on graphs with both low and high label informativeness. Our extensive experiments on Out-of-Distribution (OOD) detection on graph datasets with varying label informativeness demonstrate the soundness and superiority of our model to existing approaches.

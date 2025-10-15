@@ -1,0 +1,6 @@
+Title: Uncertainty Estimation by Human Perception versus Neural Models
+Published: 2025-06-18T20:00:20Z
+DOI/ID: http://arxiv.org/abs/2506.15850v2
+Categories: cs.LG, cs.AI
+Abstract:
+Modern neural networks (NNs) often achieve high predictive accuracy but are poorly calibrated, producing overconfident predictions even when wrong. This miscalibration poses serious challenges in applications where reliable uncertainty estimates are critical. In this work, we investigate how human perceptual uncertainty compares to uncertainty estimated by NNs. Using three vision benchmarks annotated with both human disagreement and crowdsourced confidence, we assess the correlation between model-predicted uncertainty and human-perceived uncertainty. Our results show that current methods only weakly align with human intuition, with correlations varying significantly across tasks and uncertainty metrics. Notably, we find that incorporating human-derived soft labels into the training process can improve calibration without compromising accuracy. These findings reveal a persistent gap between model and human uncertainty and highlight the potential of leveraging human insights to guide the development of more trustworthy AI systems.

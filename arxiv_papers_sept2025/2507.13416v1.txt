@@ -1,0 +1,6 @@
+Title: Single- to multi-fidelity history-dependent learning with uncertainty   quantification and disentanglement: application to data-driven constitutive   modeling
+Published: 2025-07-17T12:45:10Z
+DOI/ID: http://arxiv.org/abs/2507.13416v1
+Categories: cs.LG, cs.AI
+Abstract:
+Data-driven learning is generalized to consider history-dependent multi-fidelity data, while quantifying epistemic uncertainty and disentangling it from data noise (aleatoric uncertainty). This generalization is hierarchical and adapts to different learning scenarios: from training the simplest single-fidelity deterministic neural networks up to the proposed multi-fidelity variance estimation Bayesian recurrent neural networks. The versatility and generality of the proposed methodology are demonstrated by applying it to different data-driven constitutive modeling scenarios that include multiple fidelities with and without aleatoric uncertainty (noise). The method accurately predicts the response and quantifies model error while also discovering the noise distribution (when present). This opens opportunities for future real-world applications in diverse scientific and engineering domains; especially, the most challenging cases involving design and analysis under uncertainty.

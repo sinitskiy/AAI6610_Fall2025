@@ -1,0 +1,6 @@
+Title: SurvSurf: a partially monotonic neural network for first-hitting time   prediction of intermittently observed discrete and continuous sequential   events
+Published: 2025-04-07T12:24:59Z
+DOI/ID: http://arxiv.org/abs/2504.04997v1
+Categories: stat.ML, cs.AI, cs.LG, math.ST, stat.AP, stat.TH, 62N01
+Abstract:
+We propose a neural-network based survival model (SurvSurf) specifically designed for direct and simultaneous probabilistic prediction of the first hitting time of sequential events from baseline. Unlike existing models, SurvSurf is theoretically guaranteed to never violate the monotonic relationship between the cumulative incidence functions of sequential events, while allowing nonlinear influence from predictors. It also incorporates implicit truths for unobserved intermediate events in model fitting, and supports both discrete and continuous time and events. We also identified a variant of the Integrated Brier Score (IBS) that showed robust correlation with the mean squared error (MSE) between the true and predicted probabilities by accounting for implied truths about the missing intermediate events. We demonstrated the superiority of SurvSurf compared to modern and traditional predictive survival models in two simulated datasets and two real-world datasets, using MSE, the more robust IBS and by measuring the extent of monotonicity violation.

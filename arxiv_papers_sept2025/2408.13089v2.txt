@@ -1,0 +1,6 @@
+Title: On the good reliability of an interval-based metric to validate   prediction uncertainty for machine learning regression tasks
+Published: 2024-08-23T14:16:10Z
+DOI/ID: http://arxiv.org/abs/2408.13089v2
+Categories: stat.ML, cs.LG
+Abstract:
+This short study presents an opportunistic approach to a (more) reliable validation method for prediction uncertainty average calibration. Considering that variance-based calibration metrics (ZMS, NLL, RCE...) are quite sensitive to the presence of heavy tails in the uncertainty and error distributions, a shift is proposed to an interval-based metric, the Prediction Interval Coverage Probability (PICP). It is shown on a large ensemble of molecular properties datasets that (1) sets of z-scores are well represented by Student's-$t(\nu)$ distributions, $\nu$ being the number of degrees of freedom; (2) accurate estimation of 95 $\%$ prediction intervals can be obtained by the simple $2\sigma$ rule for $\nu>3$; and (3) the resulting PICPs are more quickly and reliably tested than variance-based calibration metrics. Overall, this method enables to test 20 $\%$ more datasets than ZMS testing. Conditional calibration is also assessed using the PICP approach.

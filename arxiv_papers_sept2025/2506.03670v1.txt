@@ -1,0 +1,6 @@
+Title: Position: There Is No Free Bayesian Uncertainty Quantification
+Published: 2025-06-04T08:01:06Z
+DOI/ID: http://arxiv.org/abs/2506.03670v1
+Categories: stat.ML, cs.LG
+Abstract:
+Due to their intuitive appeal, Bayesian methods of modeling and uncertainty quantification have become popular in modern machine and deep learning. When providing a prior distribution over the parameter space, it is straightforward to obtain a distribution over the parameters that is conventionally interpreted as uncertainty quantification of the model. We challenge the validity of such Bayesian uncertainty quantification by discussing the equivalent optimization-based representation of Bayesian updating, provide an alternative interpretation that is coherent with the optimization-based perspective, propose measures of the quality of the Bayesian inferential stage, and suggest directions for future work.

@@ -1,0 +1,6 @@
+Title: Forest tree species classification and entropy-derived uncertainty   mapping using extreme gradient boosting and Sentinel-1/2 data
+Published: 2025-09-22T12:01:49Z
+DOI/ID: http://arxiv.org/abs/2509.18228v1
+Categories: q-bio.QM, stat.ML
+Abstract:
+We present a new 10-meter map of dominant tree species in Swedish forests accompanied by pixel-level uncertainty estimates. The tree species classification is based on spatiotemporal metrics derived from Sentinel-1 and Sentinel-2 satellite data, combined with field observations from the Swedish National Forest Inventory. We apply an extreme gradient boosting model with Bayesian optimization to relate field observations to satellite-derived features and generate the final species map. Classification uncertainty is quantified using Shannon's entropy of the predicted class probabilities, which provide a spatially explicit measure of model confidence. The final model achieved an overall accuracy of 85% (F1 score = 0.82, Matthews correlation coefficient = 0.81), and mapped species distributions showed strong agreement with official forest statistics (r = 0.96).

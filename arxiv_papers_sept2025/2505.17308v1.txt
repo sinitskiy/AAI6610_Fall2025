@@ -1,0 +1,6 @@
+Title: Repulsive Ensembles for Bayesian Inference in Physics-informed Neural   Networks
+Published: 2025-05-22T21:58:40Z
+DOI/ID: http://arxiv.org/abs/2505.17308v1
+Categories: stat.ML, cs.LG
+Abstract:
+Physics-informed neural networks (PINNs) have proven an effective tool for solving differential equations, in particular when considering non-standard or ill-posed settings. When inferring solutions and parameters of the differential equation from data, uncertainty estimates are preferable to point estimates, as they give an idea about the accuracy of the solution. In this work, we consider the inverse problem and employ repulsive ensembles of PINNs (RE-PINN) for obtaining such estimates. The repulsion is implemented by adding a particular repulsive term to the loss function, which has the property that the ensemble predictions correspond to the true Bayesian posterior in the limit of infinite ensemble members. Where possible, we compare the ensemble predictions to Monte Carlo baselines. Whereas the standard ensemble tends to collapse to maximum-a-posteriori solutions, the repulsive ensemble produces significantly more accurate uncertainty estimates and exhibits higher sample diversity.

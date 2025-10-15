@@ -1,0 +1,6 @@
+Title: All Models Are Miscalibrated, But Some Less So: Comparing Calibration   with Conditional Mean Operators
+Published: 2025-02-17T05:52:09Z
+DOI/ID: http://arxiv.org/abs/2502.11465v1
+Categories: stat.ML, cs.LG
+Abstract:
+When working in a high-risk setting, having well calibrated probabilistic predictive models is a crucial requirement. However, estimators for calibration error are not always able to correctly distinguish which model is better calibrated. We propose the \emph{conditional kernel calibration error} (CKCE) which is based on the Hilbert-Schmidt norm of the difference between conditional mean operators. By working directly with the definition of strong calibration as the distance between conditional distributions, which we represent by their embeddings in reproducing kernel Hilbert spaces, the CKCE is less sensitive to the marginal distribution of predictive models. This makes it more effective for relative comparisons than previously proposed calibration metrics. Our experiments, using both synthetic and real data, show that CKCE provides a more consistent ranking of models by their calibration error and is more robust against distribution shift.

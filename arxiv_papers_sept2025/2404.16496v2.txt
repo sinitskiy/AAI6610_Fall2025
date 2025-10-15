@@ -1,0 +1,6 @@
+Title: Probabilistic Multi-Layer Perceptrons for Wind Farm Condition Monitoring
+Published: 2024-04-25T10:41:12Z
+DOI/ID: http://dx.doi.org/10.1002/we.70012
+Categories: cs.LG, stat.AP
+Abstract:
+We provide a condition monitoring system for wind farms, based on normal behaviour modelling using a probabilistic multi-layer perceptron with transfer learning via fine-tuning. The model predicts the output power of the wind turbine under normal behaviour based on features retrieved from supervisory control and data acquisition (SCADA) systems. Its advantages are that (i) it can be trained with SCADA data of at least a few years, (ii) it can incorporate all SCADA data of all wind turbines in a wind farm as features, (iii) it assumes that the output power follows a normal density with heteroscedastic variance and (iv) it can predict the output of one wind turbine by borrowing strength from the data of all other wind turbines in a farm. Probabilistic guidelines for condition monitoring are given via a cumulative sum (CUSUM) control chart, which is specifically designed based on a real-data classification exercise and, hence, is adapted to the needs of a wind farm. We illustrate the performance of our model in a real SCADA data example which provides evidence that it outperforms other probabilistic prediction models.

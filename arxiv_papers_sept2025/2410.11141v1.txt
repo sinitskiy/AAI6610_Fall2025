@@ -1,0 +1,6 @@
+Title: Can Structured Data Reduce Epistemic Uncertainty?
+Published: 2024-10-14T23:38:51Z
+DOI/ID: http://arxiv.org/abs/2410.11141v1
+Categories: cs.AI
+Abstract:
+In this work, we present a framework that utilizes ontology alignment to improve the learning process of deep learning models. With this approach we show that models fine-tuned using ontologies learn a downstream task at a higher rate with better performance on a sequential classification task compared to the native version of the model. Additionally, we extend our work to showcase how subsumption mappings retrieved during the process of ontology alignment can help enhance Retrieval-Augmented Generation in Large Language Models. The results show that the responses obtained by using subsumption mappings show an increase of 8.97% in contextual similarity and a 1% increase in factual accuracy. We also use these scores to define our Hallucination Index and show that this approach reduces hallucination in LLMs by 4.847%.

@@ -1,5 +1,0 @@
-Title: Fréchet Geodesic Boosting
-Published: 2025-09-22T16:53:27Z
-DOI/ID: http://arxiv.org/abs/2509.18013v1
-Abstract:
-Gradient boosting has become a cornerstone of machine learning, enabling base learners such as decision trees to achieve exceptional predictive performance. While existing algorithms primarily handle scalar or Euclidean outputs, increasingly prevalent complex-structured data, such as distributions, networks, and manifold-valued outputs, present challenges for traditional methods. Such non-Euclidean data lack algebraic structures such as addition, subtraction, or scalar multiplication required by standard gradient boosting frameworks. To address these challenges, we introduce Fr\'echet geodesic boosting (FGBoost), a novel approach tailored for outputs residing in geodesic metric spaces. FGBoost leverages geodesics as proxies for residuals and constructs ensembles in a way that respects the intrinsic geometry of the output space. Through theoretical analysis, extensive simulations, and real-world applications, we demonstrate the strong performance and adaptability of FGBoost, showcasing its potential for modeling complex data.

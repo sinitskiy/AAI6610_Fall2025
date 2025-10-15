@@ -1,0 +1,6 @@
+Title: Epistemic Uncertainty and Observation Noise with the Neural Tangent   Kernel
+Published: 2024-09-06T00:34:44Z
+DOI/ID: http://arxiv.org/abs/2409.03953v2
+Categories: cs.LG, stat.ML
+Abstract:
+Recent work has shown that training wide neural networks with gradient descent is formally equivalent to computing the mean of the posterior distribution in a Gaussian Process (GP) with the Neural Tangent Kernel (NTK) as the prior covariance and zero aleatoric noise \parencite{jacot2018neural}. In this paper, we extend this framework in two ways. First, we show how to deal with non-zero aleatoric noise. Second, we derive an estimator for the posterior covariance, giving us a handle on epistemic uncertainty. Our proposed approach integrates seamlessly with standard training pipelines, as it involves training a small number of additional predictors using gradient descent on a mean squared error loss. We demonstrate the proof-of-concept of our method through empirical evaluation on synthetic regression.

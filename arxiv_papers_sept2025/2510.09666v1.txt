@@ -1,0 +1,6 @@
+Title: Spatial Uncertainty Quantification in Wildfire Forecasting for   Climate-Resilient Emergency Planning
+Published: 2025-10-08T03:47:14Z
+DOI/ID: http://arxiv.org/abs/2510.09666v1
+Categories: cs.LG
+Abstract:
+Climate change is intensifying wildfire risks globally, making reliable forecasting critical for adaptation strategies. While machine learning shows promise for wildfire prediction from Earth observation data, current approaches lack uncertainty quantification essential for risk-aware decision making. We present the first systematic analysis of spatial uncertainty in wildfire spread forecasting using multimodal Earth observation inputs. We demonstrate that predictive uncertainty exhibits coherent spatial structure concentrated near fire perimeters. Our novel distance metric reveals high-uncertainty regions form consistent 20-60 meter buffer zones around predicted firelines - directly applicable for emergency planning. Feature attribution identifies vegetation health and fire activity as primary uncertainty drivers. This work enables more robust wildfire management systems supporting communities adapting to increasing fire risk under climate change.

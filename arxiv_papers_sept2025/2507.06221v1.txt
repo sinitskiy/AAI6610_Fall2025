@@ -1,0 +1,6 @@
+Title: Aligned Textual Scoring Rules
+Published: 2025-07-08T17:53:22Z
+DOI/ID: http://arxiv.org/abs/2507.06221v1
+Categories: cs.AI, cs.GT
+Abstract:
+Scoring rules elicit probabilistic predictions from a strategic agent by scoring the prediction against a ground truth state. A scoring rule is proper if, from the agent's perspective, reporting the true belief maximizes the expected score. With the development of language models, Wu and Hartline (2024) proposes a reduction from textual information elicitation to the numerical (i.e. probabilistic) information elicitation problem, which achieves provable properness for textual elicitation. However, not all proper scoring rules are well aligned with human preference over text. Our paper designs the Aligned Scoring rule (ASR) for text by optimizing and minimizing the mean squared error between a proper scoring rule and a reference score (e.g. human score). Our experiments show that our ASR outperforms previous methods in aligning with human preference while maintaining properness.

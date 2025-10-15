@@ -1,0 +1,6 @@
+Title: ConfEviSurrogate: A Conformalized Evidential Surrogate Model for   Uncertainty Quantification
+Published: 2025-04-03T15:44:14Z
+DOI/ID: http://arxiv.org/abs/2504.02919v1
+Categories: stat.ML, cs.GR, cs.LG
+Abstract:
+Surrogate models, crucial for approximating complex simulation data across sciences, inherently carry uncertainties that range from simulation noise to model prediction errors. Without rigorous uncertainty quantification, predictions become unreliable and hence hinder analysis. While methods like Monte Carlo dropout and ensemble models exist, they are often costly, fail to isolate uncertainty types, and lack guaranteed coverage in prediction intervals. To address this, we introduce ConfEviSurrogate, a novel Conformalized Evidential Surrogate Model that can efficiently learn high-order evidential distributions, directly predict simulation outcomes, separate uncertainty sources, and provide prediction intervals. A conformal prediction-based calibration step further enhances interval reliability to ensure coverage and improve efficiency. Our ConfEviSurrogate demonstrates accurate predictions and robust uncertainty estimates in diverse simulations, including cosmology, ocean dynamics, and fluid dynamics.

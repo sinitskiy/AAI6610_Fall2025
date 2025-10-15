@@ -1,0 +1,6 @@
+Title: Data-driven Kinematic Modeling in Soft Robots: System Identification and   Uncertainty Quantification
+Published: 2025-07-10T01:49:23Z
+DOI/ID: http://arxiv.org/abs/2507.07370v1
+Categories: cs.RO, cs.LG, cs.SY, eess.SY
+Abstract:
+Precise kinematic modeling is critical in calibration and controller design for soft robots, yet remains a challenging issue due to their highly nonlinear and complex behaviors. To tackle the issue, numerous data-driven machine learning approaches have been proposed for modeling nonlinear dynamics. However, these models suffer from prediction uncertainty that can negatively affect modeling accuracy, and uncertainty quantification for kinematic modeling in soft robots is underexplored. In this work, using limited simulation and real-world data, we first investigate multiple linear and nonlinear machine learning models commonly used for kinematic modeling of soft robots. The results reveal that nonlinear ensemble methods exhibit the most robust generalization performance. We then develop a conformal kinematic modeling framework for soft robots by utilizing split conformal prediction to quantify predictive position uncertainty, ensuring distribution-free prediction intervals with a theoretical guarantee.

@@ -1,0 +1,6 @@
+Title: NeuroSep-CP-LCB: A Deep Learning-based Contextual Multi-armed Bandit   Algorithm with Uncertainty Quantification for Early Sepsis Prediction
+Published: 2025-03-20T21:02:49Z
+DOI/ID: http://arxiv.org/abs/2503.16708v1
+Categories: cs.LG
+Abstract:
+In critical care settings, timely and accurate predictions can significantly impact patient outcomes, especially for conditions like sepsis, where early intervention is crucial. We aim to model patient-specific reward functions in a contextual multi-armed bandit setting. The goal is to leverage patient-specific clinical features to optimize decision-making under uncertainty. This paper proposes NeuroSep-CP-LCB, a novel integration of neural networks with contextual bandits and conformal prediction tailored for early sepsis detection. Unlike the algorithm pool selection problem in the previous paper, where the primary focus was identifying the most suitable pre-trained model for prediction tasks, this work directly models the reward function using a neural network, allowing for personalized and adaptive decision-making. Combining the representational power of neural networks with the robustness of conformal prediction intervals, this framework explicitly accounts for uncertainty in offline data distributions and provides actionable confidence bounds on predictions.

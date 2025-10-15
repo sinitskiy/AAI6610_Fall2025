@@ -1,0 +1,6 @@
+Title: Decoding Uncertainty: The Impact of Decoding Strategies for Uncertainty   Estimation in Large Language Models
+Published: 2025-09-20T13:48:13Z
+DOI/ID: http://arxiv.org/abs/2509.16696v1
+Categories: cs.CL, cs.LG
+Abstract:
+Decoding strategies manipulate the probability distribution underlying the output of a language model and can therefore affect both generation quality and its uncertainty. In this study, we investigate the impact of decoding strategies on uncertainty estimation in Large Language Models (LLMs). Our experiments show that Contrastive Search, which mitigates repetition, yields better uncertainty estimates on average across a range of preference-aligned LLMs. In contrast, the benefits of these strategies sometimes diverge when the model is only post-trained with supervised fine-tuning, i.e. without explicit alignment.

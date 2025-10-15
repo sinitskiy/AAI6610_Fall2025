@@ -1,0 +1,6 @@
+Title: Stratospheric aerosol source inversion: Noise, variability, and   uncertainty quantification
+Published: 2024-09-10T20:12:36Z
+DOI/ID: http://arxiv.org/abs/2409.06846v1
+Categories: cs.LG, physics.ao-ph, stat.AP
+Abstract:
+Stratospheric aerosols play an important role in the earth system and can affect the climate on timescales of months to years. However, estimating the characteristics of partially observed aerosol injections, such as those from volcanic eruptions, is fraught with uncertainties. This article presents a framework for stratospheric aerosol source inversion which accounts for background aerosol noise and earth system internal variability via a Bayesian approximation error approach. We leverage specially designed earth system model simulations using the Energy Exascale Earth System Model (E3SM). A comprehensive framework for data generation, data processing, dimension reduction, operator learning, and Bayesian inversion is presented where each component of the framework is designed to address particular challenges in stratospheric modeling on the global scale. We present numerical results using synthesized observational data to rigorously assess the ability of our approach to estimate aerosol sources and associate uncertainty with those estimates.

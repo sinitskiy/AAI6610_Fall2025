@@ -1,0 +1,6 @@
+Title: Diffusion Model Guided Sampling with Pixel-Wise Aleatoric Uncertainty   Estimation
+Published: 2024-11-29T19:02:08Z
+DOI/ID: http://arxiv.org/abs/2412.00205v1
+Categories: cs.CV, cs.LG, stat.ML
+Abstract:
+Despite the remarkable progress in generative modelling, current diffusion models lack a quantitative approach to assess image quality. To address this limitation, we propose to estimate the pixel-wise aleatoric uncertainty during the sampling phase of diffusion models and utilise the uncertainty to improve the sample generation quality. The uncertainty is computed as the variance of the denoising scores with a perturbation scheme that is specifically designed for diffusion models. We then show that the aleatoric uncertainty estimates are related to the second-order derivative of the diffusion noise distribution. We evaluate our uncertainty estimation algorithm and the uncertainty-guided sampling on the ImageNet and CIFAR-10 datasets. In our comparisons with the related work, we demonstrate promising results in filtering out low quality samples. Furthermore, we show that our guided approach leads to better sample generation in terms of FID scores.

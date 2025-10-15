@@ -1,0 +1,6 @@
+Title: System-Level Uncertainty Quantification with Multiple Machine Learning   Models: A Theoretical Framework
+Published: 2025-09-20T12:34:05Z
+DOI/ID: http://arxiv.org/abs/2509.16663v1
+Categories: stat.ML, cs.LG
+Abstract:
+ML models have errors when used for predictions. The errors are unknown but can be quantified by model uncertainty. When multiple ML models are trained using the same training points, their model uncertainties may be statistically dependent. In reality, model inputs are also random with input uncertainty. The effects of these types of uncertainty must be considered in decision-making and design. This study develops a theoretical framework that generates the joint distribution of multiple ML predictions given the joint distribution of model uncertainties and the joint distribution of model inputs. The strategy is to decouple the coupling between the two types of uncertainty and transform them as independent random variables. The framework lays a foundation for numerical algorithm development for various specific applications.

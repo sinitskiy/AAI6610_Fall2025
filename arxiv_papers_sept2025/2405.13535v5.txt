@@ -1,0 +1,6 @@
+Title: Addressing the Inconsistency in Bayesian Deep Learning via Generalized   Laplace Approximation
+Published: 2024-05-22T11:11:42Z
+DOI/ID: http://arxiv.org/abs/2405.13535v5
+Categories: cs.LG, stat.ML
+Abstract:
+In recent years, inconsistency in Bayesian deep learning has attracted significant attention. Tempered or generalized posterior distributions are frequently employed as direct and effective solutions. Nonetheless, the underlying mechanisms and the effectiveness of generalized posteriors remain active research topics. In this work, we interpret posterior tempering as a correction for model misspecification via adjustments to the joint probability, and as a recalibration of priors by reducing aleatoric uncertainty. We also introduce the generalized Laplace approximation, which requires only a simple modification to the Hessian calculation of the regularized loss and provides a flexible and scalable framework for high-quality posterior inference. We evaluate the proposed method on state-of-the-art neural networks and real-world datasets, demonstrating that the generalized Laplace approximation enhances predictive performance.

@@ -1,0 +1,6 @@
+Title: Understanding the Effects of Miscalibrated AI Confidence on User Trust,   Reliance, and Decision Efficacy
+Published: 2024-02-12T13:16:30Z
+DOI/ID: http://arxiv.org/abs/2402.07632v4
+Categories: cs.AI, cs.HC
+Abstract:
+Providing well-calibrated AI confidence can help promote users' appropriate trust in and reliance on AI, which are essential for AI-assisted decision-making. However, calibrating AI confidence -- providing confidence score that accurately reflects the true likelihood of AI being correct -- is known to be challenging. To understand the effects of AI confidence miscalibration, we conducted our first experiment. The results indicate that miscalibrated AI confidence impairs users' appropriate reliance and reduces AI-assisted decision-making efficacy, and AI miscalibration is difficult for users to detect. Then, in our second experiment, we examined whether communicating AI confidence calibration levels could mitigate the above issues. We find that it helps users to detect AI miscalibration. Nevertheless, since such communication decreases users' trust in uncalibrated AI, leading to high under-reliance, it does not improve the decision efficacy. We discuss design implications based on these findings and future directions to address risks and ethical concerns associated with AI miscalibration.

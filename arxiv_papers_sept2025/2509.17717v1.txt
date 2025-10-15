@@ -1,5 +1,0 @@
-Title: Quasibound states of massless spin particles in Schwarzschild equivalent   mediums
-Published: 2025-09-22T12:53:43Z
-DOI/ID: http://arxiv.org/abs/2509.17717v1
-Abstract:
-We show that, in Schwarzschild equivalent mediums, the massless spin particles obey the same dynamical equation, from which we obtain remarkably simple formulae for the frequencies of the quasibound states. We find that the quasibound frequencies of different bosons can be identical at the same quantum number $l$, and the same is true of different fermions, but a quasibound frequency for bosons can never equal a quasibound frequency for fermions. These results mean that, in Schwarzschild equivalent mediums with the quasibound-state boundary conditions, characteristics of electromagnetic waves are the same as those for all the massless bosonic waves, thereby allowing electromagnetic waves to simulate gravitational waves. Our predictions can be tested in future experiments, building upon the successful preparation of Schwarzschild equivalent mediums.

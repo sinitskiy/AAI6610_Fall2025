@@ -1,0 +1,6 @@
+Title: Extending Epistemic Uncertainty Beyond Parameters Would Assist in   Designing Reliable LLMs
+Published: 2025-06-09T05:52:03Z
+DOI/ID: http://arxiv.org/abs/2506.07448v1
+Categories: cs.LG, cs.AI
+Abstract:
+Although large language models (LLMs) are highly interactive and extendable, current approaches to ensure reliability in deployments remain mostly limited to rejecting outputs with high uncertainty in order to avoid misinformation. This conservative strategy reflects the current lack of tools to systematically distinguish and respond to different sources of uncertainty. In this paper, we advocate for the adoption of Bayesian Modeling of Experiments -- a framework that provides a coherent foundation to reason about uncertainty and clarify the reducibility of uncertainty -- for managing and proactively addressing uncertainty that arises in LLM deployments. This framework enables LLMs and their users to take contextually appropriate steps, such as requesting clarification, retrieving external information, or refining inputs. By supporting active resolution rather than passive avoidance, it opens the door to more reliable, transparent, and broadly applicable LLM systems, particularly in high-stakes, real-world settings.

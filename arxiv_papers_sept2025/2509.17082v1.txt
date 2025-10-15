@@ -1,5 +1,0 @@
-Title: Gyromagnetic ratio and Pauli form factor in anisotropic QED$_{2 + 1}$ at   one-loop
-Published: 2025-09-21T13:57:27Z
-DOI/ID: http://dx.doi.org/10.1140/epjp/s13360-025-06731-0
-Abstract:
-The gyromagnetic ratio and Pauli form factor are important quantities that characterize the electric and magnetic moment distribution of a particle. The experimentally measured value for the gyromagnetic ratio or the spin g-factor of an electron in a vacuum agrees remarkably well with theoretical predictions, making it one of the biggest successes of quantum field theory. However, these factors may get modified compared to their vacuum counterparts due to the interaction present in the system. Motivating from that, in this article, we investigate the effects of interactions within the framework of $2+1$ dimensional Proca quantum electrodynamics. We demonstrate how the g-factor and Pauli form factors change with the electron's Fermi velocity and the mass of the vector fields within Proca quantum electrodynamics.

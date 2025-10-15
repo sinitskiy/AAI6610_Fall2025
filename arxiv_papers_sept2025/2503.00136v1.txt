@@ -1,0 +1,6 @@
+Title: Conformal Risk Control for Semantic Uncertainty Quantification in   Computed Tomography
+Published: 2025-02-28T19:27:07Z
+DOI/ID: http://arxiv.org/abs/2503.00136v1
+Categories: cs.CV, stat.ML
+Abstract:
+Uncertainty quantification is necessary for developers, physicians, and regulatory agencies to build trust in machine learning predictors and improve patient care. Beyond measuring uncertainty, it is crucial to express it in clinically meaningful terms that provide actionable insights. This work introduces a conformal risk control (CRC) procedure for organ-dependent uncertainty estimation, ensuring high-probability coverage of the ground-truth image. We first present a high-dimensional CRC procedure that leverages recent ideas of length minimization. We make this procedure semantically adaptive to each patient's anatomy and positioning of organs. Our method, sem-CRC, provides tighter uncertainty intervals with valid coverage on real-world computed tomography (CT) data while communicating uncertainty with clinically relevant features.

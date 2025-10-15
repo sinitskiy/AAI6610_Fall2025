@@ -1,0 +1,6 @@
+Title: Quantifying Aleatoric and Epistemic Uncertainty with Proper Scoring   Rules
+Published: 2024-04-18T14:20:19Z
+DOI/ID: http://arxiv.org/abs/2404.12215v2
+Categories: cs.LG, stat.ML
+Abstract:
+Uncertainty representation and quantification are paramount in machine learning and constitute an important prerequisite for safety-critical applications. In this paper, we propose novel measures for the quantification of aleatoric and epistemic uncertainty based on proper scoring rules, which are loss functions with the meaningful property that they incentivize the learner to predict ground-truth (conditional) probabilities. We assume two common representations of (epistemic) uncertainty, namely, in terms of a credal set, i.e. a set of probability distributions, or a second-order distribution, i.e., a distribution over probability distributions. Our framework establishes a natural bridge between these representations. We provide a formal justification of our approach and introduce new measures of epistemic and aleatoric uncertainty as concrete instantiations.

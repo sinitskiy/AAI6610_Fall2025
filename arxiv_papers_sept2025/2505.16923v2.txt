@@ -1,0 +1,6 @@
+Title: TULiP: Test-time Uncertainty Estimation via Linearization and Weight   Perturbation
+Published: 2025-05-22T17:16:41Z
+DOI/ID: http://arxiv.org/abs/2505.16923v2
+Categories: stat.ML, cs.LG
+Abstract:
+A reliable uncertainty estimation method is the foundation of many modern out-of-distribution (OOD) detectors, which are critical for safe deployments of deep learning models in the open world. In this work, we propose TULiP, a theoretically-driven post-hoc uncertainty estimator for OOD detection. Our approach considers a hypothetical perturbation applied to the network before convergence. Based on linearized training dynamics, we bound the effect of such perturbation, resulting in an uncertainty score computable by perturbing model parameters. Ultimately, our approach computes uncertainty from a set of sampled predictions. We visualize our bound on synthetic regression and classification datasets. Furthermore, we demonstrate the effectiveness of TULiP using large-scale OOD detection benchmarks for image classification. Our method exhibits state-of-the-art performance, particularly for near-distribution samples.

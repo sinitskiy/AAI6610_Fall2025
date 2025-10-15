@@ -1,0 +1,6 @@
+Title: Efficient Bayesian Inference from Noisy Pairwise Comparisons
+Published: 2025-10-10T12:37:20Z
+DOI/ID: http://arxiv.org/abs/2510.09333v1
+Categories: cs.LG, cs.CV
+Abstract:
+Evaluating generative models is challenging because standard metrics often fail to reflect human preferences. Human evaluations are more reliable but costly and noisy, as participants vary in expertise, attention, and diligence. Pairwise comparisons improve consistency, yet aggregating them into overall quality scores requires careful modeling. Bradley-Terry-based methods update item scores from comparisons, but existing approaches either ignore rater variability or lack convergence guarantees, limiting robustness and interpretability. We introduce BBQ, a Bayesian Bradley-Terry variant that explicitly models rater quality, downweighting or removing unreliable participants, and provides guaranteed monotonic likelihood convergence through an Expectation-Maximization algorithm. Empirical results show that BBQ achieves faster convergence, well-calibrated uncertainty estimates, and more robust, interpretable rankings compared to baseline Bradley-Terry models, even with noisy or crowdsourced raters. This framework enables more reliable and cost-effective human evaluation of generative models.

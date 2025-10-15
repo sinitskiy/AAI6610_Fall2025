@@ -1,0 +1,6 @@
+Title: Uncertainty Quantification with Proper Scoring Rules: Adjusting Measures   to Prediction Tasks
+Published: 2025-05-28T16:22:53Z
+DOI/ID: http://arxiv.org/abs/2505.22538v1
+Categories: cs.LG, stat.ML
+Abstract:
+We address the problem of uncertainty quantification and propose measures of total, aleatoric, and epistemic uncertainty based on a known decomposition of (strictly) proper scoring rules, a specific type of loss function, into a divergence and an entropy component. This leads to a flexible framework for uncertainty quantification that can be instantiated with different losses (scoring rules), which makes it possible to tailor uncertainty quantification to the use case at hand. We show that this flexibility is indeed advantageous. In particular, we analyze the task of selective prediction and show that the scoring rule should ideally match the task loss. In addition, we perform experiments on two other common tasks. For out-of-distribution detection, our results confirm that a widely used measure of epistemic uncertainty, mutual information, performs best. Moreover, in the setting of active learning, our measure of epistemic uncertainty based on the zero-one-loss consistently outperforms other uncertainty measures.

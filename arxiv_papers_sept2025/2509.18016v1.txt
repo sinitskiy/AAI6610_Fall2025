@@ -1,5 +1,0 @@
-Title: Analysis of polymerized superconducting circuits
-Published: 2025-09-22T16:56:00Z
-DOI/ID: http://arxiv.org/abs/2509.18016v1
-Abstract:
-We apply polymer quantization, a quantization technique sometimes used in high energy physics, to several superconducting circuits including: transmons, transmission line resonators, and LC circuits. In the case of transmon qubits and transmission line resonators, experimental predictions are very close to what is found with canonical quantization, though in this approach constant charge offsets can be interpreted as quantization ambiguities. In the case of LC circuits, polymer quantization predicts nonlinearities which are not present in the canonical approach. Based on this analysis we design and analyze a qubit which uses a meander inductor instead of a Josephson junction. Implications for qubit performance and fabrication are discussed. Given a choice for an effective phase operator, relevant parameters such as anharmonicity, frequency, and dispersive shifts are calculated for this meander inductor based qubit.

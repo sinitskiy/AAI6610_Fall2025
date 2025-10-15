@@ -1,5 +1,0 @@
-Title: Statistical Insight into Meta-Learning via Predictor Subspace   Characterization and Quantification of Task Diversity
-Published: 2025-09-22T19:16:59Z
-DOI/ID: http://arxiv.org/abs/2509.18349v1
-Abstract:
-Meta-learning has emerged as a powerful paradigm for leveraging information across related tasks to improve predictive performance on new tasks. In this paper, we propose a statistical framework for analyzing meta-learning through the lens of predictor subspace characterization and quantification of task diversity. Specifically, we model the shared structure across tasks using a latent subspace and introduce a measure of diversity that captures heterogeneity across task-specific predictors. We provide both simulation-based and theoretical evidence indicating that achieving the desired prediction accuracy in meta-learning depends on the proportion of predictor variance aligned with the shared subspace, as well as on the accuracy of subspace estimation.

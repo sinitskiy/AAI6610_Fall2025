@@ -1,0 +1,6 @@
+Title: Benchmarking Uncertainty and its Disentanglement in multi-label Chest   X-Ray Classification
+Published: 2025-08-06T13:58:17Z
+DOI/ID: http://arxiv.org/abs/2508.04457v1
+Categories: stat.ML, cs.LG
+Abstract:
+Reliable uncertainty quantification is crucial for trustworthy decision-making and the deployment of AI models in medical imaging. While prior work has explored the ability of neural networks to quantify predictive, epistemic, and aleatoric uncertainties using an information-theoretical approach in synthetic or well defined data settings like natural image classification, its applicability to real life medical diagnosis tasks remains underexplored. In this study, we provide an extensive uncertainty quantification benchmark for multi-label chest X-ray classification using the MIMIC-CXR-JPG dataset. We evaluate 13 uncertainty quantification methods for convolutional (ResNet) and transformer-based (Vision Transformer) architectures across a wide range of tasks. Additionally, we extend Evidential Deep Learning, HetClass NNs, and Deep Deterministic Uncertainty to the multi-label setting. Our analysis provides insights into uncertainty estimation effectiveness and the ability to disentangle epistemic and aleatoric uncertainties, revealing method- and architecture-specific strengths and limitations.

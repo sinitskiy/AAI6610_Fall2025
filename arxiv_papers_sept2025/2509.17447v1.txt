@@ -1,5 +1,0 @@
-Title: Expect the unexpected: augmented mixture models for black hole   population studies
-Published: 2025-09-22T07:39:56Z
-DOI/ID: http://arxiv.org/abs/2509.17447v1
-Abstract:
-Black hole population studies are currently performed either using astrophysically motivated models (informed but rigid in their functional forms) or via non-parametric methods (flexible but not directly interpretable). In this paper, we present a statistical framework to complement the predictive power of astrophysically motivated models with the flexibility of non-parametric methods. Our method makes use of the Dirichlet distribution to robustly infer the relative weights of different models as well as of the Gibbs sampling approach to efficiently explore the parameter space. After having validated our approach using simulated data, we apply this method to the BBH mergers observed during the first three Observing Runs of the LIGO-Virgo-KAGRA collaboration using both phenomenological and astrophysical models as parametric models, finding results in agreement with the currently available literature.

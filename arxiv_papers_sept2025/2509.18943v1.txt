@@ -1,5 +1,0 @@
-Title: Size-dependent critical localization
-Published: 2025-09-23T12:56:26Z
-DOI/ID: http://arxiv.org/abs/2509.18943v1
-Abstract:
-Studying critical states in quasiperiodic systems is of great importance in localization physics. Previously identified critical states share a common characteristic: they exhibit persistent critical features in the thermodynamic limit. In this Letter, we predict an exotic type of critical state, termed size-dependent critical states, which exhibit a fundamentally distinct behavior. Specifically, they display critical localization signatures only at finite sizes, but transition to Anderson localization in the thermodynamic limit. We establish that the physical origin of size-dependent critical states lies in the synergistic interplay between local non-reciprocal domain wall and NHSE. By revealing a critical phase that challenges the established paradigm of critical localization, our work opens new avenues for exploring localization phenomena in quasiperiodic systems.

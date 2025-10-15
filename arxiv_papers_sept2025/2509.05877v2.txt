@@ -1,0 +1,6 @@
+Title: Uncertainty Quantification in Probabilistic Machine Learning Models:   Theory, Methods, and Insights
+Published: 2025-09-07T00:38:33Z
+DOI/ID: http://arxiv.org/abs/2509.05877v2
+Categories: stat.ML, cs.AI, cs.LG
+Abstract:
+Uncertainty Quantification (UQ) is essential in probabilistic machine learning models, particularly for assessing the reliability of predictions. In this paper, we present a systematic framework for estimating both epistemic and aleatoric uncertainty in probabilistic models. We focus on Gaussian Process Latent Variable Models and employ scalable Random Fourier Features-based Gaussian Processes to approximate predictive distributions efficiently. We derive a theoretical formulation for UQ, propose a Monte Carlo sampling-based estimation method, and conduct experiments to evaluate the impact of uncertainty estimation. Our results provide insights into the sources of predictive uncertainty and illustrate the effectiveness of our approach in quantifying the confidence in the predictions.

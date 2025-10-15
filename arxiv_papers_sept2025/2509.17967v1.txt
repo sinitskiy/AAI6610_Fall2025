@@ -1,5 +1,0 @@
-Title: The incompleteness of relativistic Spekkens' contextuality
-Published: 2025-09-22T16:18:26Z
-DOI/ID: http://arxiv.org/abs/2509.17967v1
-Abstract:
-We show that the operational definition of contextuality introduced by Spekkens is, in general, not Lorentz invariant. Specifically, we consider particle states with both spin and momentum, apply a Lorentz transformation to obtain the states in a new inertial frame, and then trace out the momentum degrees of freedom in both frames. We find that spin states that are contextual in one frame can become non-contextual in the other. Hence, the Spekkens' notion of contextuality, when restricted to spin states only, is a frame-dependent concept. We apply our results to predict a novel relativistic effect concerning the task of discriminating between two quantum states. We show that the probability of success for a moving observer exceeds that of an observer at rest.

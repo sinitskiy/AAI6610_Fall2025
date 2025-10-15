@@ -1,0 +1,6 @@
+Title: Entropy Reweighted Conformal Classification
+Published: 2024-07-24T15:57:55Z
+DOI/ID: http://arxiv.org/abs/2407.17377v1
+Categories: cs.LG
+Abstract:
+Conformal Prediction (CP) is a powerful framework for constructing prediction sets with guaranteed coverage. However, recent studies have shown that integrating confidence calibration with CP can lead to a degradation in efficiency. In this paper, We propose an adaptive approach that considers the classifier's uncertainty and employs entropy-based reweighting to enhance the efficiency of prediction sets for conformal classification. Our experimental results demonstrate that this method significantly improves efficiency.

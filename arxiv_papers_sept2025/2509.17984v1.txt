@@ -1,5 +1,0 @@
-Title: Rational methods for abstract semilinear problems without order   reduction
-Published: 2025-09-22T16:28:33Z
-DOI/ID: http://arxiv.org/abs/2509.17984v1
-Abstract:
-Rational methods are intended to time integrate linear homogeneous problems. However, their scope can be extended so as to cover linear nonhomogeneous problems. In this paper the integration of semilinear problems is considered. The resulting procedure requires the same computational cost than the one of a linked Runge--Kutta method, with the advantage that the order reduction phenomenon is avoided. Some numerical illustrations are included showing the predicted behaviour of the proposed methods.

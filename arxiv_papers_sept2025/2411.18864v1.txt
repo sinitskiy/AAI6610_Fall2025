@@ -1,0 +1,6 @@
+Title: Redesigning the ensemble Kalman filter with a dedicated model of   epistemic uncertainty
+Published: 2024-11-28T02:11:23Z
+DOI/ID: http://arxiv.org/abs/2411.18864v1
+Categories: stat.ME, cs.AI, 62F15, 65C35
+Abstract:
+The problem of incorporating information from observations received serially in time is widespread in the field of uncertainty quantification. Within a probabilistic framework, such problems can be addressed using standard filtering techniques. However, in many real-world problems, some (or all) of the uncertainty is epistemic, arising from a lack of knowledge, and is difficult to model probabilistically. This paper introduces a possibilistic ensemble Kalman filter designed for this setting and characterizes some of its properties. Using possibility theory to describe epistemic uncertainty is appealing from a philosophical perspective, and it is easy to justify certain heuristics often employed in standard ensemble Kalman filters as principled approaches to capturing uncertainty within it. The possibilistic approach motivates a robust mechanism for characterizing uncertainty which shows good performance with small sample sizes, and can outperform standard ensemble Kalman filters at given sample size, even when dealing with genuinely aleatoric uncertainty.

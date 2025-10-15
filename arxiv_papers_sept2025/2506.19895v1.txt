@@ -1,0 +1,6 @@
+Title: A Framework for Uncertainty Quantification Based on Nearest Neighbors   Across Layers
+Published: 2025-06-24T11:10:41Z
+DOI/ID: http://arxiv.org/abs/2506.19895v1
+Categories: cs.LG, cs.AI
+Abstract:
+Neural Networks have high accuracy in solving problems where it is difficult to detect patterns or create a logical model. However, these algorithms sometimes return wrong solutions, which become problematic in high-risk domains like medical diagnosis or autonomous driving. One strategy to detect and mitigate these errors is the measurement of the uncertainty over neural network decisions. In this paper, we present a novel post-hoc framework for measuring the uncertainty of a decision based on retrieved training cases that have a similar activation vector to the query for each layer. Based on these retrieved cases, we propose two new metrics: Decision Change and Layer Uncertainty, which capture changes in nearest-neighbor class distributions across layers. We evaluated our approach in a classification model for two datasets: CIFAR-10 and MNIST. The results show that these metrics enhance uncertainty estimation, especially in challenging classification tasks, outperforming softmax-based confidence.

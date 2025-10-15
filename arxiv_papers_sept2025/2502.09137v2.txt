@@ -1,0 +1,6 @@
+Title: Trust Me, I Know the Way: Predictive Uncertainty in the Presence of   Shortcut Learning
+Published: 2025-02-13T10:13:20Z
+DOI/ID: http://arxiv.org/abs/2502.09137v2
+Categories: cs.LG
+Abstract:
+The correct way to quantify predictive uncertainty in neural networks remains a topic of active discussion. In particular, it is unclear whether the state-of-the art entropy decomposition leads to a meaningful representation of model, or epistemic, uncertainty (EU) in the light of a debate that pits ignorance against disagreement perspectives. We aim to reconcile the conflicting viewpoints by arguing that both are valid but arise from different learning situations. Notably, we show that the presence of shortcuts is decisive for EU manifesting as disagreement.

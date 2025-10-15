@@ -1,0 +1,6 @@
+Title: Improving Cancer Imaging Diagnosis with Bayesian Networks and Deep   Learning: A Bayesian Deep Learning Approach
+Published: 2024-03-28T01:27:10Z
+DOI/ID: http://arxiv.org/abs/2403.19083v1
+Categories: cs.LG, cs.AI, eess.IV
+Abstract:
+With recent advancements in the development of artificial intelligence applications using theories and algorithms in machine learning, many accurate models can be created to train and predict on given datasets. With the realization of the importance of imaging interpretation in cancer diagnosis, this article aims to investigate the theory behind Deep Learning and Bayesian Network prediction models. Based on the advantages and drawbacks of each model, different approaches will be used to construct a Bayesian Deep Learning Model, combining the strengths while minimizing the weaknesses. Finally, the applications and accuracy of the resulting Bayesian Deep Learning approach in the health industry in classifying images will be analyzed.

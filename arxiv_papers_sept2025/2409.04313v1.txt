@@ -1,0 +1,6 @@
+Title: Enhancing Uncertainty Quantification in Drug Discovery with Censored   Regression Labels
+Published: 2024-09-06T14:38:47Z
+DOI/ID: http://arxiv.org/abs/2409.04313v1
+Categories: cs.LG
+Abstract:
+In the early stages of drug discovery, decisions regarding which experiments to pursue can be influenced by computational models. These decisions are critical due to the time-consuming and expensive nature of the experiments. Therefore, it is becoming essential to accurately quantify the uncertainty in machine learning predictions, such that resources can be used optimally and trust in the models improves. While computational methods for drug discovery often suffer from limited data and sparse experimental observations, additional information can exist in the form of censored labels that provide thresholds rather than precise values of observations. However, the standard approaches that quantify uncertainty in machine learning cannot fully utilize censored labels. In this work, we adapt ensemble-based, Bayesian, and Gaussian models with tools to learn from censored labels by using the Tobit model from survival analysis. Our results demonstrate that despite the partial information available in censored labels, they are essential to accurately and reliably model the real pharmaceutical setting.

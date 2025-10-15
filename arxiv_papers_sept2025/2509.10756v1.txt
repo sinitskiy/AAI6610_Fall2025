@@ -1,0 +1,6 @@
+Title: Parameter estimation with uncertainty quantification from continuous   measurement data using neural network ensembles
+Published: 2025-09-12T23:58:44Z
+DOI/ID: http://arxiv.org/abs/2509.10756v1
+Categories: quant-ph, cs.LG
+Abstract:
+We show that ensembles of deep neural networks, called deep ensembles, can be used to perform quantum parameter estimation while also providing a means for quantifying uncertainty in parameter estimates, which is a key advantage of using Bayesian inference for parameter estimation. These models are shown to be more robust to noise in the measurement results used to perform the parameter estimation as well as noise in the data used to train them. We also show that much less data is needed to achieve comparable performance to Bayesian inference based estimation, which is known to reach the ultimate precision limit as more data is collected, than was used in previous proposals.

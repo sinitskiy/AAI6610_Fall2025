@@ -1,0 +1,6 @@
+Title: Learning-based GNSS Uncertainty Quantification using Continuous-Time   Factor Graph Optimization
+Published: 2025-03-06T20:04:36Z
+DOI/ID: http://arxiv.org/abs/2503.04933v1
+Categories: cs.RO, cs.AI
+Abstract:
+This short paper presents research findings on two learning-based methods for quantifying measurement uncertainties in global navigation satellite systems (GNSS). We investigate two learning strategies: offline learning for outlier prediction and online learning for noise distribution approximation, specifically applied to GNSS pseudorange observations. To develop and evaluate these learning methods, we introduce a novel multisensor state estimator that accurately and robustly estimates trajectory from multiple sensor inputs, critical for deriving GNSS measurement residuals used to train the uncertainty models. We validate the proposed learning-based models using real-world sensor data collected in diverse urban environments. Experimental results demonstrate that both models effectively handle GNSS outliers and improve state estimation performance. Furthermore, we provide insightful discussions to motivate future research toward developing a federated framework for robust vehicle localization in challenging environments.

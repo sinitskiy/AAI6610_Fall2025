@@ -1,0 +1,6 @@
+Title: Do you understand epistemic uncertainty? Think again! Rigorous   frequentist epistemic uncertainty estimation in regression
+Published: 2025-03-17T15:54:57Z
+DOI/ID: http://arxiv.org/abs/2503.13317v1
+Categories: stat.ML, cs.LG
+Abstract:
+Quantifying model uncertainty is critical for understanding prediction reliability, yet distinguishing between aleatoric and epistemic uncertainty remains challenging. We extend recent work from classification to regression to provide a novel frequentist approach to epistemic and aleatoric uncertainty estimation. We train models to generate conditional predictions by feeding their initial output back as an additional input. This method allows for a rigorous measurement of model uncertainty by observing how prediction responses change when conditioned on the model's previous answer. We provide a complete theoretical framework to analyze epistemic uncertainty in regression in a frequentist way, and explain how it can be exploited in practice to gauge a model's uncertainty, with minimal changes to the original architecture.

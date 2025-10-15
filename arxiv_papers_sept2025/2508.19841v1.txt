@@ -1,0 +1,6 @@
+Title: Conditional Normalizing Flow Surrogate for Monte Carlo Prediction of   Radiative Properties in Nanoparticle-Embedded Layers
+Published: 2025-08-27T12:54:06Z
+DOI/ID: http://arxiv.org/abs/2508.19841v1
+Categories: stat.ML, cs.LG, physics.optics
+Abstract:
+We present a probabilistic, data-driven surrogate model for predicting the radiative properties of nanoparticle embedded scattering media. The model uses conditional normalizing flows, which learn the conditional distribution of optical outputs, including reflectance, absorbance, and transmittance, given input parameters such as the absorption coefficient, scattering coefficient, anisotropy factor, and particle size distribution. We generate training data using Monte Carlo radiative transfer simulations, with optical properties derived from Mie theory. Unlike conventional neural networks, the conditional normalizing flow model yields full posterior predictive distributions, enabling both accurate forecasts and principled uncertainty quantification. Our results demonstrate that this model achieves high predictive accuracy and reliable uncertainty estimates, establishing it as a powerful and efficient surrogate for radiative transfer simulations.

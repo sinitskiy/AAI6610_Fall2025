@@ -1,5 +1,0 @@
-Title: Correlation decay for U(1) lattice Higgs theory: the case of small mass
-Published: 2025-09-23T15:48:48Z
-DOI/ID: http://arxiv.org/abs/2509.19176v1
-Abstract:
-We study the lattice Yang-Mills-Higgs model with inverse gauge coupling $\beta>0$ and Higgs length $\alpha>0$, in the ``complete breakdown of symmetry" regime. For lattice dimension $d\ge 2$ and (abelian) gauge group U(1), we prove that for any $m>0$, if $\alpha= m\beta$ and $\beta$ is large enough, the model exhibits exponential decay of correlations. This extends the classical result of Osterwalder and Seiler (1978), who required in addition that $m$ be sufficiently large. Our result also verifies a phase diagram from the physics literature, predicted by Fradkin and Shenker (1979). The proof is based on the Glimm-Jaffe-Spencer cluster expansion around a massive Gaussian field, following the approach of Balaban et al. (1984).

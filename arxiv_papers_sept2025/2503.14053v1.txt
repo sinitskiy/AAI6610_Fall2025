@@ -1,0 +1,6 @@
+Title: ON-Traffic: An Operator Learning Framework for Online Traffic Flow   Estimation and Uncertainty Quantification from Lagrangian Sensors
+Published: 2025-03-18T09:13:24Z
+DOI/ID: http://arxiv.org/abs/2503.14053v1
+Categories: cs.LG, cs.AI, cs.SY, eess.SY
+Abstract:
+Accurate traffic flow estimation and prediction are critical for the efficient management of transportation systems, particularly under increasing urbanization. Traditional methods relying on static sensors often suffer from limited spatial coverage, while probe vehicles provide richer, albeit sparse and irregular data. This work introduces ON-Traffic, a novel deep operator Network and a receding horizon learning-based framework tailored for online estimation of spatio-temporal traffic state along with quantified uncertainty by using measurements from moving probe vehicles and downstream boundary inputs. Our framework is evaluated in both numerical and simulation datasets, showcasing its ability to handle irregular, sparse input data, adapt to time-shifted scenarios, and provide well-calibrated uncertainty estimates. The results demonstrate that the model captures complex traffic phenomena, including shockwaves and congestion propagation, while maintaining robustness to noise and sensor dropout. These advancements present a significant step toward online, adaptive traffic management systems.

@@ -1,5 +1,0 @@
-Title: Semantic Reformulation Entropy for Robust Hallucination Detection in QA   Tasks
-Published: 2025-09-22T07:38:45Z
-DOI/ID: http://arxiv.org/abs/2509.17445v1
-Abstract:
-Reliable question answering with large language models (LLMs) is challenged by hallucinations, fluent but factually incorrect outputs arising from epistemic uncertainty. Existing entropy-based semantic-level uncertainty estimation methods are limited by sampling noise and unstable clustering of variable-length answers. We propose Semantic Reformulation Entropy (SRE), which improves uncertainty estimation in two ways. First, input-side semantic reformulations produce faithful paraphrases, expand the estimation space, and reduce biases from superficial decoder tendencies. Second, progressive, energy-based hybrid clustering stabilizes semantic grouping. Experiments on SQuAD and TriviaQA show that SRE outperforms strong baselines, providing more robust and generalizable hallucination detection. These results demonstrate that combining input diversification with multi-signal clustering substantially enhances semantic-level uncertainty estimation.

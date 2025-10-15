@@ -1,0 +1,6 @@
+Title: The Epistemic Uncertainty Hole: an issue of Bayesian Neural Networks
+Published: 2024-07-02T06:54:46Z
+DOI/ID: http://arxiv.org/abs/2407.01985v1
+Categories: stat.ML, cs.LG
+Abstract:
+Bayesian Deep Learning (BDL) gives access not only to aleatoric uncertainty, as standard neural networks already do, but also to epistemic uncertainty, a measure of confidence a model has in its own predictions. In this article, we show through experiments that the evolution of epistemic uncertainty metrics regarding the model size and the size of the training set, goes against theoretical expectations. More precisely, we observe that the epistemic uncertainty collapses literally in the presence of large models and sometimes also of little training data, while we expect the exact opposite behaviour. This phenomenon, which we call "epistemic uncertainty hole", is all the more problematic as it undermines the entire applicative potential of BDL, which is based precisely on the use of epistemic uncertainty. As an example, we evaluate the practical consequences of this uncertainty hole on one of the main applications of BDL, namely the detection of out-of-distribution samples

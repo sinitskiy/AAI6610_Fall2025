@@ -1,0 +1,6 @@
+Title: Comparison of parallel SMC and MCMC for Bayesian deep learning
+Published: 2024-02-09T04:13:38Z
+DOI/ID: http://arxiv.org/abs/2402.06173v3
+Categories: stat.ML, cs.LG, stat.CO
+Abstract:
+This work systematically compares parallel implementations of consistent (asymptotically unbiased) Bayesian deep learning algorithms: sequential Monte Carlo sampler (SMC$_\parallel$) or Markov chain Monte Carlo (MCMC$_\parallel$). We provide a proof of convergence for SMC$_\parallel$ showing that it theoretically achieves the same level of convergence as a single monolithic SMC sampler, while the reduced communication lowers wall-clock time. It is well-known that the first samples from MCMC need to be discarded to eliminate initialization bias, and that the number of discarded samples must grow like the logarithm of the number of parallel chains to control that bias for MCMC$_\parallel$. A systematic empirical numerical study on MNIST, CIFAR, and IMDb, reveals that parallel implementations of both methods perform comparably to non-parallel implementations in terms of performance and total cost, and also comparably to each other. However, both methods still require a large wall-clock time, and suffer from catastrophic non-convergence if they aren't run for long enough.

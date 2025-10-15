@@ -1,0 +1,6 @@
+Title: Confidence Calibration in Large Language Model-Based Entity Matching
+Published: 2025-09-23T20:29:10Z
+DOI/ID: http://arxiv.org/abs/2509.19557v1
+Categories: cs.CL, cs.LG
+Abstract:
+This research aims to explore the intersection of Large Language Models and confidence calibration in Entity Matching. To this end, we perform an empirical study to compare baseline RoBERTa confidences for an Entity Matching task against confidences that are calibrated using Temperature Scaling, Monte Carlo Dropout and Ensembles. We use the Abt-Buy, DBLP-ACM, iTunes-Amazon and Company datasets. The findings indicate that the proposed modified RoBERTa model exhibits a slight overconfidence, with Expected Calibration Error scores ranging from 0.0043 to 0.0552 across datasets. We find that this overconfidence can be mitigated using Temperature Scaling, reducing Expected Calibration Error scores by up to 23.83%.

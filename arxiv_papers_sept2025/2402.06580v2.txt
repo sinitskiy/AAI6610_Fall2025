@@ -1,0 +1,6 @@
+Title: SAE: Single Architecture Ensemble Neural Networks
+Published: 2024-02-09T17:55:01Z
+DOI/ID: http://arxiv.org/abs/2402.06580v2
+Categories: cs.LG
+Abstract:
+Ensembles of separate neural networks (NNs) have shown superior accuracy and confidence calibration over single NN across tasks. To improve the hardware efficiency of ensembles of separate NNs, recent methods create ensembles within a single network via adding early exits or considering multi input multi output approaches. However, it is unclear which of these methods is the most effective for a given task, needing a manual and separate search through each method. Our novel Single Architecture Ensemble (SAE) framework enables an automatic and joint search through the early exit and multi input multi output configurations and their previously unobserved in-between combinations. SAE consists of two parts: a scalable search space that generalises the previous methods and their in-between configurations, and an optimisation objective that allows learning the optimal configuration for a given task. Our image classification and regression experiments show that with SAE we can automatically find diverse configurations that fit the task, achieving competitive accuracy or confidence calibration to baselines while reducing the compute operations or parameter count by up to $1.5{\sim}3.7\times$.

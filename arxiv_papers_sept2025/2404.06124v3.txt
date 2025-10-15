@@ -1,0 +1,6 @@
+Title: Hierarchical Insights: Exploiting Structural Similarities for Reliable   3D Semantic Segmentation
+Published: 2024-04-09T08:49:01Z
+DOI/ID: http://arxiv.org/abs/2404.06124v3
+Categories: cs.CV, cs.AI, cs.RO
+Abstract:
+Safety-critical applications such as autonomous driving require robust 3D environment perception algorithms capable of handling diverse and ambiguous surroundings. The predictive performance of classification models is heavily influenced by the dataset and the prior knowledge provided by the annotated labels. While labels guide the learning process, they often fail to capture the inherent relationships between classes that are naturally understood by humans. We propose a training strategy for a 3D LiDAR semantic segmentation model that learns structural relationships between classes through abstraction. This is achieved by implicitly modeling these relationships using a learning rule for hierarchical multi-label classification (HMC). Our detailed analysis demonstrates that this training strategy not only improves the model's confidence calibration but also retains additional information useful for downstream tasks such as fusion, prediction, and planning.

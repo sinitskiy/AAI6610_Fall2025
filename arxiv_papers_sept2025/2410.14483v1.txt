@@ -1,0 +1,6 @@
+Title: Spectral Representations for Accurate Causal Uncertainty Quantification   with Gaussian Processes
+Published: 2024-10-18T14:06:49Z
+DOI/ID: http://arxiv.org/abs/2410.14483v1
+Categories: stat.ML, cs.LG, stat.ME
+Abstract:
+Accurate uncertainty quantification for causal effects is essential for robust decision making in complex systems, but remains challenging in non-parametric settings. One promising framework represents conditional distributions in a reproducing kernel Hilbert space and places Gaussian process priors on them to infer posteriors on causal effects, but requires restrictive nuclear dominant kernels and approximations that lead to unreliable uncertainty estimates. In this work, we introduce a method, IMPspec, that addresses these limitations via a spectral representation of the Hilbert space. We show that posteriors in this model can be obtained explicitly, by extending a result in Hilbert space regression theory. We also learn the spectral representation to optimise posterior calibration. Our method achieves state-of-the-art performance in uncertainty quantification and causal Bayesian optimisation across simulations and a healthcare application.

@@ -1,5 +1,0 @@
-Title: Graph Signal Generative Diffusion Models
-Published: 2025-09-21T21:57:27Z
-DOI/ID: http://arxiv.org/abs/2509.17250v1
-Abstract:
-We introduce U-shaped encoder-decoder graph neural networks (U-GNNs) for stochastic graph signal generation using denoising diffusion processes. The architecture learns node features at different resolutions with skip connections between the encoder and decoder paths, analogous to the convolutional U-Net for image generation. The U-GNN is prominent for a pooling operation that leverages zero-padding and avoids arbitrary graph coarsening, with graph convolutions layered on top to capture local dependencies. This technique permits learning feature embeddings for sampled nodes at deeper levels of the architecture that remain convolutional with respect to the original graph. Applied to stock price prediction -- where deterministic forecasts struggle to capture uncertainties and tail events that are paramount -- we demonstrate the effectiveness of the diffusion model in probabilistic forecasting of stock prices.

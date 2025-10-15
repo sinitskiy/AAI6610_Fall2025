@@ -1,5 +1,0 @@
-Title: Neural Network and ANFIS based auto-adaptive MPC for path tracking in   autonomous vehicles
-Published: 2025-09-21T19:42:10Z
-DOI/ID: http://dx.doi.org/10.1109/ICNSC52481.2021.9702227
-Abstract:
-Self-driving cars operate in constantly changing environments and are exposed to a variety of uncertainties and disturbances. These factors render classical controllers ineffective, especially for lateral control. Therefore, an adaptive MPC controller is designed in this paper for the path tracking task, tuned by an improved particle swarm optimization algorithm. Online parameter adaptation is performed using Neural Networks and ANFIS. The designed controller showed promising results compared to standard MPC in triple lane change and trajectory tracking scenarios. Code can be found here: https://github.com/yassinekebbati/NN_MPC-vs-ANFIS_MPC

@@ -1,0 +1,6 @@
+Title: (Implicit) Ensembles of Ensembles: Epistemic Uncertainty Collapse in   Large Models
+Published: 2024-09-04T11:45:55Z
+DOI/ID: http://arxiv.org/abs/2409.02628v2
+Categories: cs.LG, stat.ML
+Abstract:
+Epistemic uncertainty is crucial for safety-critical applications and data acquisition tasks. Yet, we find an important phenomenon in deep learning models: an epistemic uncertainty collapse as model complexity increases, challenging the assumption that larger models invariably offer better uncertainty quantification. We introduce implicit ensembling as a possible explanation for this phenomenon. To investigate this hypothesis, we provide theoretical analysis and experiments that demonstrate uncertainty collapse in explicit ensembles of ensembles and show experimental evidence of similar collapse in wider models across various architectures, from simple MLPs to state-of-the-art vision models including ResNets and Vision Transformers. We further develop implicit ensemble extraction techniques to decompose larger models into diverse sub-models, showing we can thus recover epistemic uncertainty. We explore the implications of these findings for uncertainty estimation.

@@ -1,0 +1,6 @@
+Title: Recursive KalmanNet: Deep Learning-Augmented Kalman Filtering for State   Estimation with Consistent Uncertainty Quantification
+Published: 2025-06-13T10:11:32Z
+DOI/ID: http://arxiv.org/abs/2506.11639v1
+Categories: eess.SP, cs.LG, stat.ML
+Abstract:
+State estimation in stochastic dynamical systems with noisy measurements is a challenge. While the Kalman filter is optimal for linear systems with independent Gaussian white noise, real-world conditions often deviate from these assumptions, prompting the rise of data-driven filtering techniques. This paper introduces Recursive KalmanNet, a Kalman-filter-informed recurrent neural network designed for accurate state estimation with consistent error covariance quantification. Our approach propagates error covariance using the recursive Joseph's formula and optimizes the Gaussian negative log-likelihood. Experiments with non-Gaussian measurement white noise demonstrate that our model outperforms both the conventional Kalman filter and an existing state-of-the-art deep learning based estimator.

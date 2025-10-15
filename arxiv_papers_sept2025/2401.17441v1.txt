@@ -1,0 +1,6 @@
+Title: Explaining Predictive Uncertainty by Exposing Second-Order Effects
+Published: 2024-01-30T21:02:21Z
+DOI/ID: http://dx.doi.org/10.1016/j.patcog.2024.111171
+Categories: cs.LG, cs.AI, stat.ML
+Abstract:
+Explainable AI has brought transparency into complex ML blackboxes, enabling, in particular, to identify which features these models use for their predictions. So far, the question of explaining predictive uncertainty, i.e. why a model 'doubts', has been scarcely studied. Our investigation reveals that predictive uncertainty is dominated by second-order effects, involving single features or product interactions between them. We contribute a new method for explaining predictive uncertainty based on these second-order effects. Computationally, our method reduces to a simple covariance computation over a collection of first-order explanations. Our method is generally applicable, allowing for turning common attribution techniques (LRP, Gradient x Input, etc.) into powerful second-order uncertainty explainers, which we call CovLRP, CovGI, etc. The accuracy of the explanations our method produces is demonstrated through systematic quantitative evaluations, and the overall usefulness of our method is demonstrated via two practical showcases.

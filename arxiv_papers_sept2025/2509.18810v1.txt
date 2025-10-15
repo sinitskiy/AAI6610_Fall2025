@@ -1,5 +1,0 @@
-Title: Probabilistic Machine Learning for Uncertainty-Aware Diagnosis of   Industrial Systems
-Published: 2025-09-23T08:59:20Z
-DOI/ID: http://arxiv.org/abs/2509.18810v1
-Abstract:
-Deep neural networks has been increasingly applied in fault diagnostics, where it uses historical data   to capture systems behavior, bypassing the need for high-fidelity physical models.   However, despite their competence in prediction tasks, these models often struggle with   the evaluation of their confidence. This matter is particularly   important in consistency-based diagnosis where decision logic is highly sensitive to false alarms.   To address this challenge, this work presents a diagnostic framework that uses   ensemble probabilistic machine learning to   improve diagnostic characteristics of data driven consistency based diagnosis   by quantifying and automating the prediction uncertainty.   The proposed method is evaluated across several case studies using both ablation   and comparative analyses, showing consistent improvements across a range of diagnostic metrics.

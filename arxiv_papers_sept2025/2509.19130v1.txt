@@ -1,5 +1,0 @@
-Title: Deep Reinforcement Learning for Dynamic Sensing and Communications
-Published: 2025-09-23T15:15:42Z
-DOI/ID: http://arxiv.org/abs/2509.19130v1
-Abstract:
-Environmental sensing can significantly enhance mmWave communications by assisting beam training, yet its benefits must be balanced against the associated sensing costs. To this end, we propose a unified machine learning framework that dynamically determines when to sense and leverages sensory data for beam prediction. Specifically, we formulate a joint sensing and beamforming problem that maximizes the av- erage signal-to-noise ratio under an average sensing budget. Lyapunov optimization is employed to enforce the sensing constraint, while a deep Q-Network determines the sensing slots. A pretrained deep neural network then maps the sens- ing data to optimal beams in the codebook. Simulations based on the real-world DeepSense dataset demonstrate that the pro- posed approach substantially reduces sensing overhead while maintaining satisfactory communications performance.

@@ -1,0 +1,6 @@
+Title: Improving Active Learning with a Bayesian Representation of Epistemic   Uncertainty
+Published: 2024-12-11T09:19:20Z
+DOI/ID: http://arxiv.org/abs/2412.08225v1
+Categories: stat.ME, cs.LG
+Abstract:
+A popular strategy for active learning is to specifically target a reduction in epistemic uncertainty, since aleatoric uncertainty is often considered as being intrinsic to the system of interest and therefore not reducible. Yet, distinguishing these two types of uncertainty remains challenging and there is no single strategy that consistently outperforms the others. We propose to use a particular combination of probability and possibility theories, with the aim of using the latter to specifically represent epistemic uncertainty, and we show how this combination leads to new active learning strategies that have desirable properties. In order to demonstrate the efficiency of these strategies in non-trivial settings, we introduce the notion of a possibilistic Gaussian process (GP) and consider GP-based multiclass and binary classification problems, for which the proposed methods display a strong performance for both simulated and real datasets.

@@ -1,0 +1,6 @@
+Title: TCUQ: Single-Pass Uncertainty Quantification from Temporal Consistency   with Streaming Conformal Calibration for TinyML
+Published: 2025-08-18T13:12:14Z
+DOI/ID: http://arxiv.org/abs/2508.12905v1
+Categories: cs.LG, cs.CL
+Abstract:
+We introduce TCUQ, a single pass, label free uncertainty monitor for streaming TinyML that converts short horizon temporal consistency captured via lightweight signals on posteriors and features into a calibrated risk score with an O(W ) ring buffer and O(1) per step updates. A streaming conformal layer turns this score into a budgeted accept/abstain rule, yielding calibrated behavior without online labels or extra forward passes. On microcontrollers, TCUQ fits comfortably on kilobyte scale devices and reduces footprint and latency versus early exit and deep ensembles (typically about 50 to 60% smaller and about 30 to 45% faster), while methods of similar accuracy often run out of memory. Under corrupted in distribution streams, TCUQ improves accuracy drop detection by 3 to 7 AUPRC points and reaches up to 0.86 AUPRC at high severities; for failure detection it attains up to 0.92 AUROC. These results show that temporal consistency, coupled with streaming conformal calibration, provides a practical and resource efficient foundation for on device monitoring in TinyML.

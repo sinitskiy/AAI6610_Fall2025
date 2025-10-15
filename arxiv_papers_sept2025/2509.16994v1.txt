@@ -1,5 +1,0 @@
-Title: Attentive AV-FusionNet: Audio-Visual Quality Prediction with Hybrid   Attention
-Published: 2025-09-21T09:25:09Z
-DOI/ID: http://arxiv.org/abs/2509.16994v1
-Abstract:
-We introduce a novel deep learning-based audio-visual quality (AVQ) prediction model that leverages internal features from state-of-the-art unimodal predictors. Unlike prior approaches that rely on simple fusion strategies, our model employs a hybrid representation that combines learned Generative Machine Listener (GML) audio features with hand-crafted Video Multimethod Assessment Fusion (VMAF) video features. Attention mechanisms capture cross-modal interactions and intra-modal relationships, yielding context-aware quality representations. A modality relevance estimator quantifies each modality's contribution per content, potentially enabling adaptive bitrate allocation. Experiments demonstrate improved AVQ prediction accuracy and robustness across diverse content types.

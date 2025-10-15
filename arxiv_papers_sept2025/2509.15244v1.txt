@@ -1,0 +1,6 @@
+Title: Kernel Model Validation: How To Do It, And Why You Should Care
+Published: 2025-09-17T18:35:00Z
+DOI/ID: http://dx.doi.org/10.61278/itea.46.3.1004
+Categories: stat.ME, cs.LG, stat.ML
+Abstract:
+Gaussian Process (GP) models are popular tools in uncertainty quantification (UQ) because they purport to furnish functional uncertainty estimates that can be used to represent model uncertainty. It is often difficult to state with precision what probabilistic interpretation attaches to such an uncertainty, and in what way is it calibrated. Without such a calibration statement, the value of such uncertainty estimates is quite limited and qualitative. We motivate the importance of proper probabilistic calibration of GP predictions by describing how GP predictive calibration failures can cause degraded convergence properties in a target optimization algorithm called Targeted Adaptive Design (TAD). We discuss the interpretation of GP-generated uncertainty intervals in UQ, and how one may learn to trust them, through a formal procedure for covariance kernel validation that exploits the multivariate normal nature of GP predictions. We give simple examples of GP regression misspecified 1-dimensional models, and discuss the situation with respect to higher-dimensional models.

@@ -1,0 +1,6 @@
+Title: Uncertainty Quantification for Prior-Data Fitted Networks using   Martingale Posteriors
+Published: 2025-05-16T14:47:43Z
+DOI/ID: http://arxiv.org/abs/2505.11325v1
+Categories: stat.ME, cs.AI, cs.LG, stat.CO, stat.ML
+Abstract:
+Prior-data fitted networks (PFNs) have emerged as promising foundation models for prediction from tabular data sets, achieving state-of-the-art performance on small to moderate data sizes without tuning. While PFNs are motivated by Bayesian ideas, they do not provide any uncertainty quantification for predictive means, quantiles, or similar quantities. We propose a principled and efficient sampling procedure to construct Bayesian posteriors for such estimates based on Martingale posteriors, and prove its convergence. Several simulated and real-world data examples showcase the uncertainty quantification of our method in inference applications.

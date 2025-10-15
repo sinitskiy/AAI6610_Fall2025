@@ -1,0 +1,6 @@
+Title: Quantifying the Prediction Uncertainty of Machine Learning Models for   Individual Data
+Published: 2024-12-10T13:58:19Z
+DOI/ID: http://arxiv.org/abs/2412.07520v1
+Categories: cs.LG, cs.IT, math.IT
+Abstract:
+Machine learning models have exhibited exceptional results in various domains. The most prevalent approach for learning is the empirical risk minimizer (ERM), which adapts the model's weights to reduce the loss on a training set and subsequently leverages these weights to predict the label for new test data. Nonetheless, ERM makes the assumption that the test distribution is similar to the training distribution, which may not always hold in real-world situations. In contrast, the predictive normalized maximum likelihood (pNML) was proposed as a min-max solution for the individual setting where no assumptions are made on the distribution of the tested input. This study investigates pNML's learnability for linear regression and neural networks, and demonstrates that pNML can improve the performance and robustness of these models on various tasks. Moreover, the pNML provides an accurate confidence measure for its output, showcasing state-of-the-art results for out-of-distribution detection, resistance to adversarial attacks, and active learning.

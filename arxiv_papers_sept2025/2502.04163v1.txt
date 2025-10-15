@@ -1,0 +1,6 @@
+Title: Multi-task Online Learning for Probabilistic Load Forecasting
+Published: 2025-02-06T15:47:02Z
+DOI/ID: http://arxiv.org/abs/2502.04163v1
+Categories: stat.ML, cs.LG
+Abstract:
+Load forecasting is essential for the efficient, reliable, and cost-effective management of power systems. Load forecasting performance can be improved by learning the similarities among multiple entities (e.g., regions, buildings). Techniques based on multi-task learning obtain predictions by leveraging consumption patterns from the historical load demand of multiple entities and their relationships. However, existing techniques cannot effectively assess inherent uncertainties in load demand or account for dynamic changes in consumption patterns. This paper proposes a multi-task learning technique for online and probabilistic load forecasting. This technique provides accurate probabilistic predictions for the loads of multiple entities by leveraging their dynamic similarities. The method's performance is evaluated using datasets that register the load demand of multiple entities and contain diverse and dynamic consumption patterns. The experimental results show that the proposed method can significantly enhance the effectiveness of current multi-task learning approaches across a wide variety of load consumption scenarios.

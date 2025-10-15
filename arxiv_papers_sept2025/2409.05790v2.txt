@@ -1,0 +1,6 @@
+Title: Predicting Critical Heat Flux with Uncertainty Quantification and Domain   Generalization Using Conditional Variational Autoencoders and Deep Neural   Networks
+Published: 2024-09-09T16:50:41Z
+DOI/ID: http://arxiv.org/abs/2409.05790v2
+Categories: cs.LG
+Abstract:
+Deep generative models (DGMs) can generate synthetic data samples that closely resemble the original dataset, addressing data scarcity. In this work, we developed a conditional variational autoencoder (CVAE) to augment critical heat flux (CHF) data used for the 2006 Groeneveld lookup table. To compare with traditional methods, a fine-tuned deep neural network (DNN) regression model was evaluated on the same dataset. Both models achieved small mean absolute relative errors, with the CVAE showing more favorable results. Uncertainty quantification (UQ) was performed using repeated CVAE sampling and DNN ensembling. The DNN ensemble improved performance over the baseline, while the CVAE maintained consistent results with less variability and higher confidence. Both models achieved small errors inside and outside the training domain, with slightly larger errors outside. Overall, the CVAE performed better than the DNN in predicting CHF and exhibited better uncertainty behavior.

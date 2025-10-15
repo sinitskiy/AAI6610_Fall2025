@@ -1,0 +1,6 @@
+Title: FOReCAst: The Future Outcome Reasoning and Confidence Assessment   Benchmark
+Published: 2025-02-27T01:36:00Z
+DOI/ID: http://arxiv.org/abs/2502.19676v4
+Categories: cs.LG, cs.CL
+Abstract:
+Forecasting is an important task in many domains, such as technology and economics. However existing forecasting benchmarks largely lack comprehensive confidence assessment, focus on limited question types, and often consist of artificial questions that do not align with real-world human forecasting needs. To address these gaps, we introduce FOReCAst (Future Outcome Reasoning and Confidence Assessment), a benchmark that evaluates models' ability to make predictions and their confidence in them. FOReCAst spans diverse forecasting scenarios involving Boolean questions, timeframe prediction, and quantity estimation, enabling a comprehensive evaluation of both prediction accuracy and confidence calibration for real-world applications.

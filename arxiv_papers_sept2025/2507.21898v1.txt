@@ -1,0 +1,6 @@
+Title: Cardiovascular Disease Prediction using Machine Learning: A Comparative   Analysis
+Published: 2025-07-29T15:07:32Z
+DOI/ID: http://arxiv.org/abs/2507.21898v1
+Categories: cs.LG
+Abstract:
+Cardiovascular diseases (CVDs) are a main cause of mortality globally, accounting for 31% of all deaths. This study involves a cardiovascular disease (CVD) dataset comprising 68,119 records to explore the influence of numerical (age, height, weight, blood pressure, BMI) and categorical gender, cholesterol, glucose, smoking, alcohol, activity) factors on CVD occurrence. We have performed statistical analyses, including t-tests, Chi-square tests, and ANOVA, to identify strong associations between CVD and elderly people, hypertension, higher weight, and abnormal cholesterol levels, while physical activity (a protective factor). A logistic regression model highlights age, blood pressure, and cholesterol as primary risk factors, with unexpected negative associations for smoking and alcohol, suggesting potential data issues. Model performance comparisons reveal CatBoost as the top performer with an accuracy of 0.734 and an ECE of 0.0064 and excels in probabilistic prediction (Brier score = 0.1824). Data challenges, including outliers and skewed distributions, indicate a need for improved preprocessing to enhance predictive reliability.

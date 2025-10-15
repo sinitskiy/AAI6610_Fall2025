@@ -1,5 +1,0 @@
-Title: THz electrodynamics and superconducting energy scales of ZrN thin films
-Published: 2025-09-21T23:09:07Z
-DOI/ID: http://arxiv.org/abs/2509.17272v1
-Abstract:
-The terahertz (THz) properties of ZrN thin films grown with CMOS-techniques on industry-standard 300 mm silicon wafers are investigated in order to explore their superconducting behavior. The films have thicknesses ranging from 18 to 48 nm, and their critical temperatures Tc are between 5 and 7.3 K. We probe the real and imaginary parts of the complex dynamical conductivity sigma in the frequency range from 100 - 540 GHz (0.4 - 2.2 meV) and as a function of temperature. The experiments provide direct access to the low-energy electrodynamics and key materials parameters such as superconducting energy gap and superfluid density. Our findings indicate that ZrN is a weakly coupled BCS-type superconductor with a gap-to-Tc ratio of approximately 3.4 in the thick film limit. For thinner films, this coupling ratio increases up to 4.0, departing from the BCS prediction. The results establish large-scale ZrN thin films as promising material for high-frequency superconducting applications.

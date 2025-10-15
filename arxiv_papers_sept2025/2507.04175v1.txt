@@ -1,0 +1,6 @@
+Title: Uncertainty Quantification in the Tsetlin Machine
+Published: 2025-07-05T22:06:46Z
+DOI/ID: http://arxiv.org/abs/2507.04175v1
+Categories: cs.LG, cs.AI
+Abstract:
+Data modeling using Tsetlin machines (TMs) is all about building logical rules from the data features. The decisions of the model are based on a combination of these logical rules. Hence, the model is fully transparent and it is possible to get explanations of its predictions. In this paper, we present a probability score for TM predictions and develop new techniques for uncertainty quantification to increase the explainability further. The probability score is an inherent property of any TM variant and is derived through an analysis of the TM learning dynamics. Simulated data is used to show a clear connection between the learned TM probability scores and the underlying probabilities of the data. A visualization of the probability scores also reveals that the TM is less confident in its predictions outside the training data domain, which contrasts the typical extrapolation phenomenon found in Artificial Neural Networks. The paper concludes with an application of the uncertainty quantification techniques on an image classification task using the CIFAR-10 dataset, where they provide new insights and suggest possible improvements to current TM image classification models.

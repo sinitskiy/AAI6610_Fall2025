@@ -1,0 +1,6 @@
+Title: Bayesian-Driven Graph Reasoning for Active Radio Map Construction
+Published: 2025-07-29T03:32:01Z
+DOI/ID: http://arxiv.org/abs/2508.09142v2
+Categories: eess.SP, cs.AI
+Abstract:
+With the emergence of the low-altitude economy, radio maps have become essential for ensuring reliable wireless connectivity to aerial platforms. Autonomous aerial agents are commonly deployed for data collection using waypoint-based navigation; however, their limited battery capacity significantly constrains coverage and efficiency. To address this, we propose an uncertainty-aware radio map (URAM) reconstruction framework that explicitly leverages graph-based reasoning tailored for waypoint navigation. Our approach integrates two key deep learning components: (1) a Bayesian neural network that estimates spatial uncertainty in real time, and (2) an attention-based reinforcement learning policy that performs global reasoning over a probabilistic roadmap, using uncertainty estimates to plan informative and energy-efficient trajectories. This graph-based reasoning enables intelligent, non-myopic trajectory planning, guiding agents toward the most informative regions while satisfying safety constraints. Experimental results show that URAM improves reconstruction accuracy by up to 34% over existing baselines.

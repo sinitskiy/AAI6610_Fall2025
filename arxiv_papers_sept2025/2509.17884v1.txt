@@ -1,5 +1,0 @@
-Title: The Surprising Effectiveness of Linear Models for Whole-Body   Model-Predictive Control
-Published: 2025-09-22T15:17:45Z
-DOI/ID: http://arxiv.org/abs/2509.17884v1
-Abstract:
-When do locomotion controllers require reasoning about nonlinearities? In this work, we show that a whole-body model-predictive controller using a simple linear time-invariant approximation of the whole-body dynamics is able to execute basic locomotion tasks on complex legged robots. The formulation requires no online nonlinear dynamics evaluations or matrix inversions. We demonstrate walking, disturbance rejection, and even navigation to a goal position without a separate footstep planner on a quadrupedal robot. In addition, we demonstrate dynamic walking on a hydraulic humanoid, a robot with significant limb inertia, complex actuator dynamics, and large sim-to-real gap.

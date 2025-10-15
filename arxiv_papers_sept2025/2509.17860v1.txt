@@ -1,5 +1,0 @@
-Title: Modeling Scintillation Photon Transport and Reconstruction Algorithms   for the Time-of-Flight Detector in the T2K Neutrino Experiment
-Published: 2025-09-22T14:55:04Z
-DOI/ID: http://arxiv.org/abs/2509.17860v1
-Abstract:
-The T2K ND280 upgrade aims to reduce the systematic uncertainty of the CP-violating phase, $\delta_{CP}$, to reject non-CP violation hypothesis at $3\sigma$ confidence level. A crucial component of the ND280 upgrade, alongside the Super Fine Grained Detector (SuperFGD) and two High-Angle Time Projection Chambers (TPCs), is the Time-of-Flight (ToF) detector, which significantly enhances background rejection and particle identification capabilities. The ToF detector features six modules in a cube configuration, each with 20 plastic scintillator bars measuring $\text{220}\times\text{12}\times\text{1}\,\text{cm}^3$ and is equipped with Silicon Photomultiplier (SiPM) arrays at both ends to capture scintillation light. This letter outlines the modelling of the detector response and the signal reconstruction process.

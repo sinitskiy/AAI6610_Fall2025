@@ -1,0 +1,6 @@
+Title: Posterior and variational inference for deep neural networks with   heavy-tailed weights
+Published: 2024-06-05T15:24:20Z
+DOI/ID: http://arxiv.org/abs/2406.03369v2
+Categories: stat.ML, cs.LG, math.ST, stat.TH
+Abstract:
+We consider deep neural networks in a Bayesian framework with a prior distribution sampling the network weights at random. Following a recent idea of Agapiou and Castillo (2023), who show that heavy-tailed prior distributions achieve automatic adaptation to smoothness, we introduce a simple Bayesian deep learning prior based on heavy-tailed weights and ReLU activation. We show that the corresponding posterior distribution achieves near-optimal minimax contraction rates, simultaneously adaptive to both intrinsic dimension and smoothness of the underlying function, in a variety of contexts including nonparametric regression, geometric data and Besov spaces. While most works so far need a form of model selection built-in within the prior distribution, a key aspect of our approach is that it does not require to sample hyperparameters to learn the architecture of the network. We also provide variational Bayes counterparts of the results, that show that mean-field variational approximations still benefit from near-optimal theoretical support.

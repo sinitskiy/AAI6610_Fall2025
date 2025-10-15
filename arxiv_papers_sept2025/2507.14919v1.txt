@@ -1,0 +1,6 @@
+Title: Old Rules in a New Game: Mapping Uncertainty Quantification to Quantum   Machine Learning
+Published: 2025-07-20T11:16:56Z
+DOI/ID: http://arxiv.org/abs/2507.14919v1
+Categories: cs.LG, quant-ph
+Abstract:
+One of the key obstacles in traditional deep learning is the reduction in model transparency caused by increasingly intricate model functions, which can lead to problems such as overfitting and excessive confidence in predictions. With the advent of quantum machine learning offering possible advances in computational power and latent space complexity, we notice the same opaque behavior. Despite significant research in classical contexts, there has been little advancement in addressing the black-box nature of quantum machine learning. Consequently, we approach this gap by building upon existing work in classical uncertainty quantification and initial explorations in quantum Bayesian modeling to theoretically develop and empirically evaluate techniques to map classical uncertainty quantification methods to the quantum machine learning domain. Our findings emphasize the necessity of leveraging classical insights into uncertainty quantification to include uncertainty awareness in the process of designing new quantum machine learning models.

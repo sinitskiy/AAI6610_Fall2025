@@ -1,0 +1,6 @@
+Title: All You Need for Counterfactual Explainability Is Principled and   Reliable Estimate of Aleatoric and Epistemic Uncertainty
+Published: 2025-02-24T09:38:31Z
+DOI/ID: http://arxiv.org/abs/2502.17007v1
+Categories: cs.LG, cs.AI, stat.ML
+Abstract:
+This position paper argues that, to its detriment, transparency research overlooks many foundational concepts of artificial intelligence. Here, we focus on uncertainty quantification -- in the context of ante-hoc interpretability and counterfactual explainability -- showing how its adoption could address key challenges in the field. First, we posit that uncertainty and ante-hoc interpretability offer complementary views of the same underlying idea; second, we assert that uncertainty provides a principled unifying framework for counterfactual explainability. Consequently, inherently transparent models can benefit from human-centred explanatory insights -- like counterfactuals -- which are otherwise missing. At a higher level, integrating artificial intelligence fundamentals into transparency research promises to yield more reliable, robust and understandable predictive models.

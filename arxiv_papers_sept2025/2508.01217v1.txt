@@ -1,0 +1,6 @@
+Title: Uncertainty Quantification for Large-Scale Deep Networks via Post-StoNet   Modeling
+Published: 2025-08-02T06:19:23Z
+DOI/ID: http://arxiv.org/abs/2508.01217v1
+Categories: stat.ML, cs.LG
+Abstract:
+Deep learning has revolutionized modern data science. However, how to accurately quantify the uncertainty of predictions from large-scale deep neural networks (DNNs) remains an unresolved issue. To address this issue, we introduce a novel post-processing approach. This approach feeds the output from the last hidden layer of a pre-trained large-scale DNN model into a stochastic neural network (StoNet), then trains the StoNet with a sparse penalty on a validation dataset and constructs prediction intervals for future observations. We establish a theoretical guarantee for the validity of this approach; in particular, the parameter estimation consistency for the sparse StoNet is essential for the success of this approach. Comprehensive experiments demonstrate that the proposed approach can construct honest confidence intervals with shorter interval lengths compared to conformal methods and achieves better calibration compared to other post-hoc calibration techniques. Additionally, we show that the StoNet formulation provides us with a platform to adapt sparse learning theory and methods from linear models to DNNs.

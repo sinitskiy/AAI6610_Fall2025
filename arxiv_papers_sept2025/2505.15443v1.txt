@@ -1,0 +1,6 @@
+Title: AdUE: Improving uncertainty estimation head for LoRA adapters in LLMs
+Published: 2025-05-21T12:23:40Z
+DOI/ID: http://arxiv.org/abs/2505.15443v1
+Categories: cs.CL, stat.ML
+Abstract:
+Uncertainty estimation remains a critical challenge in adapting pre-trained language models to classification tasks, particularly under parameter-efficient fine-tuning approaches such as adapters. We introduce AdUE1, an efficient post-hoc uncertainty estimation (UE) method, to enhance softmax-based estimates. Our approach (1) uses a differentiable approximation of the maximum function and (2) applies additional regularization through L2-SP, anchoring the fine-tuned head weights and regularizing the model. Evaluations on five NLP classification datasets across four language models (RoBERTa, ELECTRA, LLaMA-2, Qwen) demonstrate that our method consistently outperforms established baselines such as Mahalanobis distance and softmax response. Our approach is lightweight (no base-model changes) and produces better-calibrated confidence.

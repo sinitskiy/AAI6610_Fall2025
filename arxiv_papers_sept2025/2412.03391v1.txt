@@ -1,0 +1,6 @@
+Title: Risk-aware Classification via Uncertainty Quantification
+Published: 2024-12-04T15:20:12Z
+DOI/ID: http://arxiv.org/abs/2412.03391v1
+Categories: cs.LG
+Abstract:
+Autonomous and semi-autonomous systems are using deep learning models to improve decision-making. However, deep classifiers can be overly confident in their incorrect predictions, a major issue especially in safety-critical domains. The present study introduces three foundational desiderata for developing real-world risk-aware classification systems. Expanding upon the previously proposed Evidential Deep Learning (EDL), we demonstrate the unity between these principles and EDL's operational attributes. We then augment EDL empowering autonomous agents to exercise discretion during structured decision-making when uncertainty and risks are inherent. We rigorously examine empirical scenarios to substantiate these theoretical innovations. In contrast to existing risk-aware classifiers, our proposed methodologies consistently exhibit superior performance, underscoring their transformative potential in risk-conscious classification strategies.

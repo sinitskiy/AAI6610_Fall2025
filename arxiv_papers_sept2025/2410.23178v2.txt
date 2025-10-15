@@ -1,0 +1,6 @@
+Title: Uncertainty quantification for fast reconstruction methods using   augmented equivariant bootstrap: Application to radio interferometry
+Published: 2024-10-30T16:36:55Z
+DOI/ID: http://arxiv.org/abs/2410.23178v2
+Categories: astro-ph.IM, cs.LG
+Abstract:
+The advent of next-generation radio interferometers like the Square Kilometer Array promises to revolutionise our radio astronomy observational capabilities. The unprecedented volume of data these devices generate requires fast and accurate image reconstruction algorithms to solve the ill-posed radio interferometric imaging problem. Most state-of-the-art reconstruction methods lack trustworthy and scalable uncertainty quantification, which is critical for the rigorous scientific interpretation of radio observations. We propose an unsupervised technique based on a conformalized version of a radio-augmented equivariant bootstrapping method, which allows us to quantify uncertainties for fast reconstruction methods. Noticeably, we rely on reconstructions from ultra-fast unrolled algorithms. The proposed method brings more reliable uncertainty estimations to our problem than existing alternatives.

@@ -1,25 +1,56 @@
 ================================================================================
-Cluster 0 Representative File: 2509.17125v1.txt
-Abstract:
-Relational object rearrangement (ROR) tasks (e.g., insert flower to vase) require a robot to manipulate objects with precise semantic and geometric reasoning. Existing approaches either rely on pre-collected demonstrations that struggle to capture complex geometric constraints or generate goal-state observations to capture semantic and geometric knowledge, but fail to explicitly couple object transformation with action prediction, resulting in errors due to generative noise. To address these limitations, we propose Imagine2Act, a 3D imitation-learning framework that incorporates semantic and geometric constraints of objects into policy learning to tackle high-precision manipulation tasks. We first generate imagined goal images conditioned on language instructions and reconstruct corresponding 3D point clouds to provide robust semantic and geometric priors. These imagined goal point clouds serve as additional inputs to the policy model, while an object-action consistency strategy with soft pose supervision explicitly aligns predicted end-effector motion with generated object transformation. This design enables Imagine2Act to reason about semantic and geometric relationships between objects and predict accurate actions across diverse tasks. Experiments in both simulation and the real world demonstrate that Imagine2Act outperforms previous state-of-the-art policies. More visualizations can be found at https://sites.google.com/view/imagine2act.
+Cluster 0 (Size: 83 papers)
+Representative File: 2403.16594v1.txt
+Title: EDUE: Expert Disagreement-Guided One-Pass Uncertainty Estimation for   Medical Image Segmentation
+Abstract Preview:
+EDUE: Expert Disagreement-Guided One-Pass Uncertainty Estimation for   Medical Image Segmentation. Deploying deep learning (DL) models in medical applications relies on predictive performance and other critical factors, such as conveying trustworthy predictive uncertainty. Uncertainty estimation (UE) methods provide potential solutions for evaluating prediction reliability and improving the model confidence calibration. Despite increasing interest in UE, challenges persist, such as the need for ...
 
 ================================================================================
-Cluster 1 Representative File: 2509.17794v1.txt
-Abstract:
-Natural language generation (NLG) tasks are often subject to inherent variability; \emph{e.g.} predicting the next word given a context has multiple valid responses, evident when asking multiple humans to complete the task. While having language models (LMs) that are aligned pluralistically, so that they are able to reproduce well the inherent diversity in perspectives of an entire population of interest is clearly beneficial, \citet{ilia2024predict} show that LMs do not reproduce this type of linguistic variability well. They speculate this inability might stem from the lack of consistent training of LMs with data reflecting this type of inherent variability. As such, we investigate whether training LMs on multiple plausible word continuations per context can improve their ability to reproduce human linguistic variability for next-word prediction. We employ fine-tuning techniques for pre-trained and instruction-tuned models; and demonstrate their potential when fine-tuning GPT-2 and Mistral-7B-IT, using Provo Corpus. Our evaluation, which measures divergence among empirically estimated human and model next-word distributions across contexts before and after fine-tuning, shows that our multi-label fine-tuning improves the LMs' ability to reproduce linguistic variability; both for contexts that admit higher and lower variability.
+Cluster 1 (Size: 58 papers)
+Representative File: 2401.12418v1.txt
+Title: Towards Improved Variational Inference for Deep Bayesian Models
+Abstract Preview:
+Towards Improved Variational Inference for Deep Bayesian Models. Deep learning has revolutionized the last decade, being at the forefront of extraordinary advances in a wide range of tasks including computer vision, natural language processing, and reinforcement learning, to name but a few. However, it is well-known that deep models trained via maximum likelihood estimation tend to be overconfident and give poorly-calibrated predictions. Bayesian deep learning attempts to address this by placing...
 
 ================================================================================
-Cluster 2 Representative File: 2509.17243v1.txt
-Abstract:
-Strong light-matter coupling in Fabry-Perot cavities can modify ground-state molecular reactivity, charge and energy transport, while modifications to single-molecule properties have not been observed experimentally. The mechanisms and reproducibility of such effects remain contested, with conflicting theoretical predictions driven by differences in Hamiltonian choice and quantum state representation. Here, we resolve these ambiguities with numerically exact quantum simulations of cavity-coupled molecular ensembles based on the ab initio light-matter Hamiltonian, treating electrons, nuclei, and cavity photons on equal footing. We investigate ensembles of the rotational-vibrational-electronic Shin-Metiu model using variational tree-tensor-network quantum dynamics, capturing rovibronic couplings and anharmonicity. Embedding ensembles in a cavity induces local modifications of rotational, nuclear, and --more weakly-- electronic observables in individual molecules. The extent of these modifications depends only on the per-molecule coupling strength up until each molecule reaches the ultrastrong coupling regime, which remains unattainable in practical Fabry-Perot setups. Increasing ensemble size toward the thermodynamic limit causes these local modifications to vanish regardless of dipole self-energy inclusion. Nonetheless, global ground-state observables, such as light-matter coupling energy contributions (affecting overall polarizability) and cavity field displacement fluctuations, depend crucially on proper treatment of intermolecular and light-matter correlations, whereas intramolecular observables remain largely insensitive. These insights are crucial for guiding future investigations using approximate quantum treatments, and for the interpretation of experimental results in polaritonic chemistry.
+Cluster 2 (Size: 103 papers)
+Representative File: 2505.07309v1.txt
+Title: Uncertainty Profiles for LLMs: Uncertainty Source Decomposition and   Adaptive Model-Metric Selection
+Abstract Preview:
+Uncertainty Profiles for LLMs: Uncertainty Source Decomposition and   Adaptive Model-Metric Selection. Large language models (LLMs) often generate fluent but factually incorrect outputs, known as hallucinations, which undermine their reliability in real-world applications. While uncertainty estimation has emerged as a promising strategy for detecting such errors, current metrics offer limited interpretability and lack clarity about the types of uncertainty they capture. In this paper, we present...
 
 ================================================================================
-Cluster 3 Representative File: 2509.18850v1.txt
-Abstract:
-Astrophysical jets from powerful active galactic nuclei (AGN) have recently been proposed as promising probes of dark matter (DM) in the sub-GeV mass range. AGN launch relativistic jets that accelerate cosmic rays (CRs) to very high energies, which can then interact with their surroundings and produce multiwavelength (MW) emission spanning from radio frequencies to TeV $\gamma$ rays. If DM consists of light particles, their interactions with CRs could lead to an additional cooling mechanism that modifies the expected MW emission. In this work, we analyse the MW spectrum of Markarian 421, a well-studied AGN, using a multizone leptonic jet model that includes the interactions between CR electrons and DM particles. For the first time, we account for the uncertainties in the astrophysical jet dynamics, which have been previously neglected when constraining the CR-DM interactions. By fitting simultaneously jet parameters and DM-electrons interactions, we use the MW data from Markarian 421 to set constraints on the DM-induced CR cooling. We obtain 5$\sigma$ upper limit $\sigma_\text{DM-e} \lesssim 1 \times 10^{-34}~\text{cm}^2$ for a DM mass of $1~{\rm MeV}$. We demonstrate that this is about a factor of five weaker than traditional approaches, implying that properly accounting for degeneracies between jet dynamics and DM interactions is key to derive robust constraints on DM interactions.
+Cluster 3 (Size: 109 papers)
+Representative File: 2502.02870v1.txt
+Title: Uncertainty Quantification with the Empirical Neural Tangent Kernel
+Abstract Preview:
+Uncertainty Quantification with the Empirical Neural Tangent Kernel. While neural networks have demonstrated impressive performance across various tasks, accurately quantifying uncertainty in their predictions is essential to ensure their trustworthiness and enable widespread adoption in critical systems. Several Bayesian uncertainty quantification (UQ) methods exist that are either cheap or reliable, but not both. We propose a post-hoc, sampling-based UQ method for over-parameterized networks a...
 
 ================================================================================
-Cluster 4 Representative File: 2509.18990v1.txt
-Abstract:
-Simulation-Grounded Neural Networks (SGNNs) are predictive models trained entirely on synthetic data from mechanistic simulations. They have achieved state-of-the-art performance in domains where real-world labels are limited or unobserved, but lack a formal underpinning.   We present the foundational theory of simulation-grounded learning. We show that SGNNs implement amortized Bayesian inference under a simulation prior and converge to the Bayes-optimal predictor. We derive generalization bounds under model misspecification and prove that SGNNs can learn unobservable scientific quantities that empirical methods provably cannot. We also formalize a novel form of mechanistic interpretability uniquely enabled by SGNNs: by attributing predictions to the simulated mechanisms that generated them, SGNNs yield posterior-consistent, scientifically grounded explanations.   We provide numerical experiments to validate all theoretical predictions. SGNNs recover latent parameters, remain robust under mismatch, and outperform classical tools: in a model selection task, SGNNs achieve half the error of AIC in distinguishing mechanistic dynamics. These results establish SGNNs as a principled and practical framework for scientific prediction in data-limited regimes.
+Cluster 4 (Size: 121 papers)
+Representative File: 2504.18433v2.txt
+Title: An Axiomatic Assessment of Entropy- and Variance-based Uncertainty   Quantification in Regression
+Abstract Preview:
+An Axiomatic Assessment of Entropy- and Variance-based Uncertainty   Quantification in Regression. Uncertainty quantification (UQ) is crucial in machine learning, yet most (axiomatic) studies of uncertainty measures focus on classification, leaving a gap in regression settings with limited formal justification and evaluations. In this work, we introduce a set of axioms to rigorously assess measures of aleatoric, epistemic, and total uncertainty in supervised regression. By utilizing a predictive...
+
+================================================================================
+Cluster 5 (Size: 26 papers)
+Representative File: 2406.04043v3.txt
+Title: Energy-based Epistemic Uncertainty for Graph Neural Networks
+Abstract Preview:
+Energy-based Epistemic Uncertainty for Graph Neural Networks. In domains with interdependent data, such as graphs, quantifying the epistemic uncertainty of a Graph Neural Network (GNN) is challenging as uncertainty can arise at different structural scales. Existing techniques neglect this issue or only distinguish between structure-aware and structure-agnostic uncertainty without combining them into a single measure. We propose GEBM, an energy-based model (EBM) that provides high-quality uncerta...
+
+================================================================================
+Cluster 6 (Size: 67 papers)
+Representative File: 2505.12457v1.txt
+Title: UFO-RL: Uncertainty-Focused Optimization for Efficient Reinforcement   Learning Data Selection
+Abstract Preview:
+UFO-RL: Uncertainty-Focused Optimization for Efficient Reinforcement   Learning Data Selection. Scaling RL for LLMs is computationally expensive, largely due to multi-sampling for policy optimization and evaluation, making efficient data selection crucial. Inspired by the Zone of Proximal Development (ZPD) theory, we hypothesize LLMs learn best from data within their potential comprehension zone. Addressing the limitation of conventional, computationally intensive multi-sampling methods for data...
+
+================================================================================
+Cluster 7 (Size: 56 papers)
+Representative File: 2409.05975v4.txt
+Title: CoDiCast: Conditional Diffusion Model for Global Weather Prediction with   Uncertainty Quantification
+Abstract Preview:
+CoDiCast: Conditional Diffusion Model for Global Weather Prediction with   Uncertainty Quantification. Accurate weather forecasting is critical for science and society. Yet, existing methods have not managed to simultaneously have the properties of high accuracy, low uncertainty, and high computational efficiency. On one hand, to quantify the uncertainty in weather predictions, the strategy of ensemble forecast (i.e., generating a set of diverse predictions) is often employed. However, tradition...
 

@@ -1,0 +1,6 @@
+Title: A Simple and Effective Method for Uncertainty Quantification and OOD   Detection
+Published: 2025-08-01T16:31:23Z
+DOI/ID: http://arxiv.org/abs/2508.00754v1
+Categories: cs.LG, cs.AI
+Abstract:
+Bayesian neural networks and deep ensemble methods have been proposed for uncertainty quantification; however, they are computationally intensive and require large storage. By utilizing a single deterministic model, we can solve the above issue. We propose an effective method based on feature space density to quantify uncertainty for distributional shifts and out-of-distribution (OOD) detection. Specifically, we leverage the information potential field derived from kernel density estimation to approximate the feature space density of the training set. By comparing this density with the feature space representation of test samples, we can effectively determine whether a distributional shift has occurred. Experiments were conducted on a 2D synthetic dataset (Two Moons and Three Spirals) as well as an OOD detection task (CIFAR-10 vs. SVHN). The results demonstrate that our method outperforms baseline models.

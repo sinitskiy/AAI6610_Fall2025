@@ -1,0 +1,6 @@
+Title: Uniform convergence of the smooth calibration error and its relationship   with functional gradient
+Published: 2025-05-26T01:23:56Z
+DOI/ID: http://arxiv.org/abs/2505.19396v4
+Categories: stat.ML, cs.LG
+Abstract:
+Calibration is a critical requirement for reliable probabilistic prediction, especially in high-risk applications. However, the theoretical understanding of which learning algorithms can simultaneously achieve high accuracy and good calibration remains limited, and many existing studies provide empirical validation or a theoretical guarantee in restrictive settings. To address this issue, in this work, we focus on the smooth calibration error (CE) and provide a uniform convergence bound, showing that the smooth CE is bounded by the sum of the smooth CE over the training dataset and a generalization gap. We further prove that the functional gradient of the loss function can effectively control the training smooth CE. Based on this framework, we analyze three representative algorithms: gradient boosting trees, kernel boosting, and two-layer neural networks. For each, we derive conditions under which both classification and calibration performances are simultaneously guaranteed. Our results offer new theoretical insights and practical guidance for designing reliable probabilistic models with provable calibration guarantees.

@@ -1,0 +1,6 @@
+Title: Deep Modeling of Non-Gaussian Aleatoric Uncertainty
+Published: 2024-05-30T22:13:17Z
+DOI/ID: http://dx.doi.org/10.1109/LRA.2024.3511376
+Categories: cs.LG, cs.AI, cs.CV, cs.RO
+Abstract:
+Deep learning offers promising new ways to accurately model aleatoric uncertainty in robotic state estimation systems, particularly when the uncertainty distributions do not conform to traditional assumptions of being fixed and Gaussian. In this study, we formulate and evaluate three fundamental deep learning approaches for conditional probability density modeling to quantify non-Gaussian aleatoric uncertainty: parametric, discretized, and generative modeling. We systematically compare the respective strengths and weaknesses of these three methods on simulated non-Gaussian densities as well as on real-world terrain-relative navigation data. Our results show that these deep learning methods can accurately capture complex uncertainty patterns, highlighting their potential for improving the reliability and robustness of estimation systems.

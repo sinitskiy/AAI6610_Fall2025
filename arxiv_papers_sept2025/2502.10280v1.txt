@@ -1,0 +1,6 @@
+Title: Probabilistic Super-Resolution for High-Fidelity Physical System   Simulations with Uncertainty Quantification
+Published: 2025-02-14T16:37:21Z
+DOI/ID: http://arxiv.org/abs/2502.10280v1
+Categories: cs.LG, stat.ML
+Abstract:
+Super-resolution (SR) is a promising tool for generating high-fidelity simulations of physical systems from low-resolution data, enabling fast and accurate predictions in engineering applications. However, existing deep-learning based SR methods, require large labeled datasets and lack reliable uncertainty quantification (UQ), limiting their applicability in real-world scenarios. To overcome these challenges, we propose a probabilistic SR framework that leverages the Statistical Finite Element Method and energy-based generative modeling. Our method enables efficient high-resolution predictions with inherent UQ, while eliminating the need for extensive labeled datasets. The method is validated on a 2D Poisson example and compared with bicubic interpolation upscaling. Results demonstrate a computational speed-up over high-resolution numerical solvers while providing reliable uncertainty estimates.
