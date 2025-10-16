@@ -1,0 +1,22 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/w5x8vq/research_career_in_origin_of_life_theories/
+Title: research career in origin of life theories
+
+Content:
+I am new here. I have a bachelor's in general engineering ( mechatronics) , I have worked as a developer for a couple of years. I have some experience with machine learning and deep learning. I have heard about theoretical computer science playing a role in origin of life research ( like chemical evolution, assembly theory etc, ), where they try to find out what led simple chemicals and structures to form complicated molecules and eventually life. How do I go become a researcher in this field with my background. Should I do a master's in computer science and then a phd in computational biology or something. Or should I do a PhD in theoretical computer science, like algorithmic complexity. Or should I do a PhD in computational biology or just normal biology and learn the required computational tools on the side. I am completely new to this field and would appreciate it if someone could let me know what the latest research is and how do I become a part of that.
+
+Thanks.
+
+Comments:
+- As a general advice, you should choose your next step based on whether it'll truly fulfill you and not because of some prospects it may offer. The most rewarding collaborations almost always happen between persons with variegated backgrounds.
+
+Re: origin of life research, I'd suggest checking out the background of researchers in some respective labs / institutes and contact them directly, you won't regret it! E.g.:
+
+* UCL: [Centre for Life's Origins and Evolution (CLOE)](https://www.ucl.ac.uk/biosciences/gee/ucl-centre-lifes-origins-and-evolution)
+* McMaster U: [Origin of Life Laboratory](https://origins.mcmaster.ca/research/origins-of-life-laboratory/)
+
+Enjoy what lies ahead!
+- Go learn about what is going on.
+
+Then you can decide how you might want to fit in.
+- Mcmasters origins of life lab is great!! The prof that heads it taught me first year physics and he was a gem

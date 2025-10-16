@@ -1,0 +1,115 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c79bse/how_big_of_a_jump_is_it_from_data_scientist_to_ml/
+Title: How big of a jump is it from Data Scientist to ML Engineer?
+
+Content:
+I'm considering applying for a Machine Learning Engineer position with my company. I already work as a Data Scientist. I've developed a great reputation and most of the executives know who I am and frequently ask for my input on things. I'm happy with my job, but unfortunately, it feels a bit dead-end'ish. It's a great job, don't get me wrong, but I don't see any obvious path to promotion, short of waiting it out 10 years and that frustrates me a lot. 
+
+There are more long-term opportunities in ML Engineering in my company. Salary should be a bit higher as well; I'm estimating I'd make at least $25k more. 
+
+As a DS, I mostly work with Python, SQL, and Tableau. I'd say only about 20% of my time is spent coding, however. I've built a few machine learning models (mostly time-series and collaborative filtering), but it's not the main crux of what I do. Still, I'm pretty universally regarded as the expert on ML as well as tech on the team. Moreover, I've automated a lot of our analysis. I'd be considered an expert on SQL and data analysis, as well. 
+
+If I switch to MLE, I'd also need to become proficient in Databricks, Azure, and React. I don't work with any of those on a regular basis (I've used Azure and Databricks before, but not a lot). I'm guessing I'd probably go from coding maybe 20% of the time to coding 70%+ of the time, as well. React is probably the toughest one there, but I do have front-end experience from working as a full-stack developer at a start-up a few years back; albeit, I'd consider myself very far from an expert on front-end. 
+
+I'd be very good at it, but I admit it might take me 1-2 months to "get into a groove" and get comfortable with some of the technologies I'm less familiar with, particularly React. I learn quickly, but I often feel like people want take a chance on anyone who doesn't already know every skill in the job requirement. 
+
+My questions:
+
+**How big of a jump is this?** I don't use Databricks on a regular basis, but given my proficiency in Python and SQL, is that going to be something that would take a long time to get familiar with? Is my relative inexperience in React a big issue or is it just so difficult to find an ML Engineer with React experience to begin with, that I might get a pass on that? 
+
+**Is it worthwhile?** Anyone who has worked on both the business-facing DS side and the more tech-oriented ML side, did you enjoy one more than the other? 
+
+**Am I likely to get serious consideration?** I have a very good reputation within the company, but often feels like some of the more pure tech people look down on someone more business-facing like myself. I'm not sure how I'll be perceived, since my background was business before I got into tech. 
+
+&#x200B;
+
+Comments:
+- In my experience, the definition of MLE changes from company to company.  Sometimes the MLE is more on the "data science" side and sometimes more on the "data engineering" side.  The end-goal is typically the same: help models get to production and monitor them.
+
+Also, you've noted you're in DS but your job is only 20% modeling?  What is the other 80%?
+
+---
+
+For the specific technologies:
+
+**Databricks as a user of the product is easy to learn** (maybe \~1 week?), **but it would be different if you were going to** ***maintain*** **it or monitor it** or, you know, things along that line.  That's more on the ops / data engineering side and might be difficult if you're going in with zero experience on this side. 
+
+**React is also not bad to learn, but jumping right into a role where it's going to be used heavily might be... a bit much.  Especially if you're learning other things at the same time.**  It's all in how you're going to be using it (working in legacy code, writing new code, how is react being used, etc.).  You can learn to write a little webapp in React (or any of the other similar frameworks) in a weekend, but to contribute to a codebase might take significantly longer to figure out if you're going from zero knowledge of this landscape.
+
+My biggest concern would be **Azure**.  That's an entire cloud platform with a ton of things in it.  Again, and I know you're tired of hearing this, but: it depends on how your company is using it.  If you're going in with zero or near-zero understanding of how cloud platforms work, how to architecture things, how to create, maintain, monitor, and debug these services, that could be a lot to put on someone to learn as they go.  
+
+(Parenthetically, my favorite resource for learning Azure/GCP/AWS is [acloudguru](https://www.pluralsight.com/cloud-guru) (now owned by pluralsight), and I always recommend taking a few classes in one of the cloud providers regardless if you're doing something cloud-adjacent --- if only to learn the lingo.)
+
+---
+
+All that to say:  **Tl;dr: depends on the job description and what they use this stuff for.**  Moreover, it's usually significantly different work from DS.  It may be the case that you don't even *like* this work.
+
+**If this were me, my next steps would be: asking my manager if it's possible to do a part-time rotation with some of the DE/MLE people and see what their day-to-day is, see what kinds of problems they work with, and see how much of each service they use and how much they need to know about it.  This also gets you networking with people in that area.**
+- Your skills translate to being a MLE. I don’t know of any MLE using React for a front end but every company has nuances
+- I'm a machine learning engineer, though I have had the titles software engineer, machine learning engineer, and applied scientists through my 10 year career. I have also done a lot of things that could be characterized as data engineer, too. I think titles don't matter so much, since it's so company specific. 
+
+MLE roles will be very focused on delivering an ML-enabled product and not just a 'business insight'. Many scientists focus on Tableau presentations and in depth bayesian analysis on A/B testing results. But as an MLE, I get to focus on playing around with incorporating Transformers or building a GNN-based recommender system and very software focused. I am involved in the entire lifecycle from feature engineering, to model training, to deployment and integration with the product. So it's not only just 'deploy and monitor' that many people think MLE's only do. 
+
+Recommendations for building out your skills. Get good at various cloud services, for instance if using AWS- know Glue, Athena, Redshift, Kinesis, S3, Sagemaker, etc. Know how data lakes work like Snowflake, Hive, etc. Know how to build lean Docker images and also how to write Kubernetes YAML files. Know some Terraform so you know how to spin up some services if needed. 
+
+Your interviews will be the typical ML concepts (e.x. what is the difference between bias-and variance, how does an autoregressive decoder work) and you will need to know how to pass a Leetcode-style Python data structures and algorithms problem (e.x. maximum subarray with sliding windows, dynamic programming, etc). You might also get an SQL problems (e.x. RANK (PARTITION BY)) etc.
+- Perhaps it'd be better if you focus on two areas: software engineering skills (System Design and Algorithms) and large data distribution (AWS, Azure, whatever flavor you want). 
+
+I suggest those two primarily because you can open doors to other companies if things don't pan out within your company - while being prescriptive is helpful for the job you're currently aiming for, strategically it's best to utilize your time to develop core skills that are universally sought after for MLE roles.
+
+You're already a step closer given your experience, so develop those areas that you're already familiar and position yourself as someone who can view problems end-to-end: You've seen what Data Scientists need and what stakeholders look for, so as an MLE, you'll be a valuable addition by providing that perspective. You can always learn React on the job and pick up Databricks eventually as you work. But nothing beats solid SWE skills and data scaling solutions.
+
+All the best!
+- > given my proficiency in Python and SQL, is that going to be something that would take a long time to get familiar with?
+
+Depends on what you regard as a Python proficiency. I am not sure whether you'd need to go through the interviewing process since this is an internal transfer, but if you would and this is a legitimate MLE role, your python/coding proficiency should cover knowledge of algorithms, correct use of data structures, expertise in object-oriented programming, and ability to correctly estimate and improve time & memory complexity of your code. A lot of DS consider themselves proficient in python (or whatever language they use), when they aren't and engineers vomit at the sight of their codes. However, if you indeed are proficient, then the transition will be a lot easier, and practicing react won't be much of an issue.
+
+> did you enjoy one more than the other?
+
+DS is always more enjoyable and less stressful, but MLE is more employable, impactful, and less replaceable. Furthermore, a lot of the traditional DS tasks are now outsourced to tools that any MLE or Analyst can use. Creating dashboards is typically an analyst's profession and doesn't justify the title or pay of a DS. So yeah, the transition is at least worth serious consideration.
+
+> some of the more pure tech people look down on someone more business-facing like myself
+
+Not true. It is different from person to person. It just happens that a lot of business-facing techies have no idea how things run or work under the hood, hence they are being disdained, albeit being preferred by business folks because of the common spoken language. But very few actually have both skills and they are rather idolized by engineers, because engineers tend to have serious communication issues.
+- Why react for ml
+- one day they decided to update my title from data scientist to machine learning engineer and i didn't question it
+- Why not reach out to an MLE at your company and ask them about their job and the skills and experience they prefer in new hires?
+- How big is your company?  
+Here's why I ask:
+
+1. If you are indeed someone who is greatly valued at their current role, there is no reason why they wouldn't want you to grow in that role - i.e., bring in elements of ML Engineering + bigger scope to justify giving you a bigger title and more money. Now, the ones reason that may not happen is if this is a giant mega-corp where doing anything new is difficult and HR has their grubby little hands in every major title/salary decision. But if it's a small company? That is easy peasy.
+
+2. Will it be easy for you to just bail to another internal team *especially* if you're valued in your current role? At a big company that part tends to be easier, because it's just silly to block internal transfers (although not always the case). At smaller companies tho it can be harder because the executives are close enough to you to understand that moving you means losing a bunch of experience in one role (which again, could lead to point #1).
+
+Now, as for your actual questions - I don't see it as a huge jump depending on the level of MLOps maturity that your company is in. I've worked at companies where MLOps = figure out how to run this on Azure. At my current company, MLOps is way more than that - because our infrastructure is so much more complex (see: mega-corp). 
+
+So I think rather than talking about MLOps, the question would be "what exactly does this team need their ML Engineers to do?"
+- One approach could be to apply as data scientist to companies who have a focus in AI/ML, get in that way and tell them you want to work towards an ML Engineer position.
+
+I'm not sure about your credentials, but data scientist does transfer well into certain ML positions at certain companies - might as well give it a shot!
+- I’m in basically the same position rn except I’m trying to leave the company Im at and transition from DS to MLE. I haven’t gotten any interviews yet for jobs with an MLE title, but I have gotten a decent number of interviews for DS jobs with more of an ML focus than my current job which still seems like a step in the right direction 🤷🏻‍♂️
+- My hubby was a senior data scientist. He got so bored and asked for more at work. His workplace then was a very established corporate and they didn't have much for him to do. So he jumped into a start up where he could work more on the Eng side (DevOps, MLops). I saw him work really hard (6:00AM to sometime mid night) for a year. Then he got an offer for a senior MLE role.
+
+He earned good money (top of the range). But eventually he got bored, so he explored the contract path now. The pay is double, and he got calls from recruiters every day. The demand for MLE is always there, so the recruiters do know who they can call when contract available. 
+
+I believe DS will be less in demand in the close future (too many of them), and modelling becomes easier and easier. I am trying to improve my coding skills to transition into MLE now.
+- Data Scientist roles differ from company to company, as so MLE roles. The most common overlapping area will obviously be ML. Some DS roles build and deploy models, some just build. Some MLE roles build and deploy models, some just handle the deployment and MLOps.
+
+So the gaps between the two roles are going to be very company-specific. If that main gap for you is getting up to speed with Azure and ML infrastructure on Azure then I think it's similar to a lot of these skills - getting a handle on the basics shouldn't be too difficult, especially with example work to look at and colleagues who know this stuff and are willing to help. Becoming independently proficient and then going on to become an expert will be more difficult and take time. That's why we're (generally) paid very well. But any reasonable employer will recognise that you're not going to become some Azure master within a few weeks or even months.
+- I have a title of MLE. I probably wrote around 1000 lines of code in a quarter. I consider this number to be pretty low. 
+My daily job is reading GPU profiler traces and finding the bottle necks of models and resolving them. 
+
+The code I need to write can be as simple as reordering two lines of code and seeing GPU utilization go up. 
+
+What I'm trying to say is that MLE is probably going through the same process of DS did a few years ago. Everyone thinks this is a sexy position and tries to be one. 
+But the definition and job scope can vary largely based on company size and sectors. 
+
+Better to reach out to people who already have the title in your company and figure out their job. 
+
+But this may not guarantee employment at another company if you possess the skills mentioned in the post.
+- $50000 at-least
+- MLE has less contact with executives, try to learn their skill, they are very valuable.
+- I wouldn't say it's a big jump but as long as you understand the basic concepts behind which ML is based on then it would be an easy transition, you will also find that having been a data scientist saves you so much time because half of an ML engineer's time is spent on data science.
+- seeing the comments makes me anxious of my capabilities
+- Following
+- MLE has less contact with executives, try to learn their skill, they are very valuable.

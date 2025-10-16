@@ -1,0 +1,19 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mujvd2/camera_recommendations_for_high_visibility_vest/
+Title: Camera recommendations for High Visibility Vest detection
+
+Content:
+What camera would you guys recommend for a project that will detect a person with or without vest? I used YOLOv8 for this and honestly, this is my first machine learning project so please help me out.
+
+Also,,, what is the recommended recall percentage for this model for it to be perfect for deployment.
+
+Thanks. 
+
+Comments:
+- What's the end goal here? A proof of concept? You can use a logitech C920 USB camera and it will be fine, that's what I used in my post.
+- Easy, grab an active IR camera. Flooding the scene with IR light will make the retroreflectors in the high viz vest light up as xmas lights. It will then be super easy to find those white strips in the image.
+- For high-visibility vest detection you’re absolutely on the right path considering GigE machine-vision cameras. They offer data-rich frames, GPIO trigger support, and rugged network setups—ideal for real-world deployment.
+
+At e-con Systems, our **GigE camera series(https://www.e-consystems.com/gige-cameras.asp)** is engineered exactly for such scenarios—offering **4K HDR, low-light imaging, synchronized multi-camera streaming, and edge-based processing readiness**. These features ensure clear visibility of retro-reflective vests even under tough lighting or motion.
+
+The framework is ready if your pipeline handles the model. If you also need help with SDKs or capturing synchronized footage for training, happy to point you in the right direction.

@@ -1,0 +1,23 @@
+URL: https://www.linkedin.com/posts/aparajeetaguha_an-explainable-machine-learning-approach-activity-7289096211515510784-hBUD
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Aparajeeta Guha的动态
+Aparajeeta Guha
+
+Physicist turned Computational Biologist & Biomedical Data Scientist | Passionate about Image Analysis & Neural Dynamics |Promoting accessible science | Bridging science with society | Driven by humility and curiosity💛
+
+8 个月  已编辑
+
+💫 As promised here is the first paper that I found interesting: "An explainable machine learning approach for Alzheimer’s disease classification" 📑 
+This study, drawing on more than 169,000 records from the National Alzheimer’s Coordinating Center, used advanced techniques like #SupportVectorMachines (SVM) supervised learning models that find optimal decision boundaries alongside explainable AI tools (#SHAP and #LIME) which highlight the most influential features in a model’s decision making to classify and predict the progression of AD, even up to four years ahead. By focusing on critical cognitive features such as MEMORY (ability to recall information), COMMUN (communication skills), JUDGMENT (decision-making capacity), and ORIENT (awareness of surroundings), the researchers not only achieved an F1 score over 90% for binary classification but also made the models more transparent for clinicians. This is a major step forward in early detection, because the earlier we can identify subtle cognitive changes, the more time we have for targeted interventions. What’s especially exciting is their use of dimensionality reduction (#Boruta) and rule extraction algorithms (#SIRUS and #ClassAssociationRules), which helped filter out noise and highlight the most important predictors. In short, this paper demonstrates how machine learning (ML) models can effectively classify different stages of #Alzheimer's Disease (AD) using various features from patient data, achieving high accuracy rates in distinguishing between normal cognition (NC), mild cognitive impairment (MCI), and AD. It also emphasizes the importance of making these #MLmodels explainable, allowing healthcare pro

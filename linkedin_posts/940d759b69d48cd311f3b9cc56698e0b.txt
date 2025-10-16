@@ -1,0 +1,18 @@
+URL: https://www.linkedin.com/posts/leochlon_the-best-part-of-apple-letting-me-go-over-activity-7351653502332411904-L5cy
+Date: 2025-09-24
+Author: Unknown
+
+The best part of Apple letting me go over a door I left open (seriously lol) was the freedom to publish anything I want. 
+
+Imagine proving that LLM hallucinations can be detected before the LLM even hallucinated. Imagine solving this problem via prompt-based efficient decompression. Imagine discovering prompt restructuring was all you needed to one shot efficient code development on basic foundation models.
+
+Now imagine not being able to release that for free.
+
+Imagine some product manager chugging matcha while taking credit for the findings in front of a board whilst they decide how much to charge people for it.
+
+6 months later as I’m publishing these methods and tools all I can say is alhamdulilah. Don’t be sad if you ever got let go from somewhere. There’s way better potentially waiting on the other side. 
+
+📄Paper: https://lnkd.in/e6ie5ZNz
+😴Post on Hallucination detection and mitigation: https://lnkd.in/e59DRWUm
+✍️Post on prompt optimization:
+https://lnkd.in/eppNeZXd

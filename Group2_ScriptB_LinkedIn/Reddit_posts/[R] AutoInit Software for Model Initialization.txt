@@ -1,0 +1,20 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/s7zlj5/r_autoinit_software_for_model_initialization/
+Title: [R] AutoInit Software for Model Initialization
+
+Content:
+ AutoInit is a weight initialization method that automatically adapts to different neural network architectures. It tracks the mean and variance of signals as they propagate through the network and initializes the weights at each layer to avoid exploding or vanishing signals. AutoInit can be used to improve performance of feedforward, convolutional, and residual networks; configured with different activation function, dropout, weight decay, learning rate, and normalizer settings; and applied to vision, language, tabular, multi-task, and transfer learning domains. The software package provides a simple wrapper that makes it possible to apply AutoInit to existing TensorFlow models as-is. We invite you to try it out and see if it can improve the performance of your neural network models!
+
+For further details, see
+
+\- GitHub repo: [https://github.com/cognizant-ai-labs/autoinit](https://github.com/cognizant-ai-labs/autoinit)
+
+\- arXiv paper: [https://arxiv.org/abs/2109.08958](https://arxiv.org/abs/2109.08958)
+
+AutoInit is also available through the Cognizant AI Labs Software page, together with related software on estimating model uncertainty, multitasking, loss-function metalearning, decision making, and model management, at
+
+\- [https://evolution.ml/software](https://evolution.ml/software)
+
+\-- Garrett Bingham & Risto Miikkulainen
+
+Comments:

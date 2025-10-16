@@ -1,0 +1,29 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1aj1tki/how_to_find_cortical_layers_in_twodimensional_data/
+Title: How to find cortical layers in two-dimensional data
+
+Content:
+Medical student here who is despairing at what should be a relatively simple task - I have been working on this for way longer than I care to admit and finally admitted to myself that I need help :P
+
+I have performed immunofluorescence multiplex stains of various types of neurons on frontal cortex, imaged the whole slides (we're talking 100kx100k pixels and tens of thousands of cells) and detected and classified the various cell types via machine learning/object recognition. I then read the data into Python and now have a dataframe containing each cell with associated data (coordinates of centroid, measurements, area, cell type, local density, distance to pia, distance to white matter boundary).
+
+I am now trying to assign each neuron (all NeuN positive cells) to its cortical layer (I to VI). Because the thickness of cortex and even of the invididual layers (as determined visually) varies across the slide I cannot just use absolute or relative distances from pia. To have some level of uniformity each dataset is is one roughly rectangular section of cortex (not all neurons of the entire slide) with a couple thousand cells.
+
+Intuitively the characteristics I have (distance from pia/white matter, area, local density) should be enough for a reasonable assignment, but none of the clustering algorithms I have tried gets me anywhere close.
+
+So far I have tried *KMeans*, *Gaussian* (gives me stripes perpendicular to the actual layers), *Agglomerative Clustering* (rectangular clusters looking like a mosaic) and *HDBSCAN* (gets the orientation and rough number of clusters right, at least, but always has one cluster that's all over the place).
+
+I'm kind of at my wit's end here. Surprisingly the literature is not at all helpful - almost exclusively done on 3D MRI data, and the authors of the one useful paper I found on histological data ([Stajduhar et al., 2023](https://www.nature.com/articles/s41598-023-32154-x#Sec7)) have somehow not made their model available to anyone. I could contact them, but thought I'd rather ask for helpful pointers on here first.
+
+Anyone worked on something similar before and could point me in the right direction?
+
+Comments:
+- I wrote a package for multiplex IF spatial clustering in R but don't have local methods in it.. damn.
+
+Check out the spatstat package in R and specifically local K if you're interested in local density. A radius is provided but if you know a distance to explore can run from r = 0:200 or whatever and then just subset after. 
+
+Let me know if you'd like more help. Do a lot of spatial work.
+- Cheers for the comment! Local density I've got via sklearn BallTree, it's really just the assigning cells to cortical layers that's the trouble :)
+- I think with just mIF you're going to struggle to do a *great* job. Even with spatial transcriptomics there's a struggle. A lot of deconvolution methods use the cortex and it's layers as a benchmark to see how good at identifying cells a method is. Could *really* get into it by doing iterative grouping based on nearest neighbors - if this cell type is L5 and a cell right next to it has a low probability of whatever, theres an increased probability it also belongs to L5.
+
+Perhaps I misunderstand but I think the best method is going to involve some things that don't look at each cell as an isolated cell but rather a region/neighborhood.

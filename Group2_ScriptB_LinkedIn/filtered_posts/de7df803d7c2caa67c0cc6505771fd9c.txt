@@ -1,0 +1,31 @@
+URL: https://www.linkedin.com/posts/department-of-mathematical-and-statistical-sciences-cu-denver_publication-alert-dr-troy-butler-activity-7290922955880964098-iN9x
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Department of Mathematical and Statistical Sciences, CU Denver的动态
+Department of Mathematical and Statistical Sciences, CU Denver
+
+672 位关注者
+
+8 个月
+
+⚠️ Publication Alert ⚠️
+
+Dr. Troy Butler and co-authors publish
+
+A machine-learning enabled framework for quantifying uncertainties in parameters of computational models
+Taylor Roper, Harri Hakula and Troy Butler
+Computers & Mathematics with Applications, Volume 182, 15 March 2025, Pages 184-212
+https://lnkd.in/g4cXSs6t
+
+Abstract: This work presents novel extensions for combining two frameworks for quantifying both aleatoric (i.e., irreducible) and epistemic (i.e., reducible) sources of uncertainties in the modeling of engineered systems. The data-consistent (DC) framework poses an inverse problem and solution for quantifying aleatoric uncertainties in terms of pullback and push-forward measures for a given Quantity of Interest (QoI) map. Unfortunately, a pre-specified QoI map is not always available a priori to the collection of data associated with system outputs. The data themselves are often polluted with measurement errors (i.e., epistemic uncertainties), which complicates the process of specifying a useful QoI. The Learning Uncertain Quantities (LUQ) framework defines a formal three-step machine-learning enabled process for transforming noisy datasets into samples of a learned QoI map to enable DC-based inversion. We develop a robust filtering step in LUQ that can learn the most useful quantitative information present in spatio-temporal datasets. The learned QoI map transforms simulated and observed datasets into distributions to perform DC-based inversion. We also develop a DC-based inversion scheme that iterates over time as new spatial datasets are obtained and utilizes quantitative diagnostics to identify both the quality and impact of inversion at each iteration. Reproducing Kernel Hilbert Space theory is leveraged to mathematically analyze the learned QoI map and deve

@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/maxim-ziatdinov-651aab250_how-to-choose-a-surrogate-model-for-active-activity-7261044826459054080-4kcJ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maxim Ziatdinov的动态
+Maxim Ziatdinov
+
+Building AI tools for experimental materials discovery
+
+11 个月
+
+How to choose a surrogate model for active learning?
+
+Active learning optimizes exploration of large parameter spaces by strategically selecting which experiments to conduct, reducing resource consumption and potentially accelerating scientific discovery. A key component of this approach is a probabilistic surrogate model, which approximates an unknown functional relationship between control parameters and a target property. At each step, the model uses the information gathered from previous measurements to update its ‘understanding’ of the relationship between control parameters and the target property and identify the next combinations of parameters likely to yield valuable information.
+
+When choosing a surrogate model, one should consider the following factors: i) Total number of control parameters, ii) Operational latency requirements, iii) Potential presence of discontinuities or non-stationary behaviors.
+
+Based on my experience, I find the following surrogate models to be particularly effective options to consider:
+
+Gaussian Process (GP) is the most popular surrogate model that provides mathematically-grounded uncertainty estimates. Its main limitation is that it works directly in input space without learning representations, making it struggle with complex high-D data. It also has difficulty modeling non-stationary phenomena and discontinuities due to its typical use of stationary kernels. These limitations suit them best for low-dimensional problems with relatively small datasets and predominantly smooth functions.
+
+Deep kernel learning (DKL) extends GP by adding feature representation learning via a neural network, enabling better handling of high-D data and non-stationary patterns, while still providing meaningful uncertainty estimates. However, it's still limited by GP's scaling in the learned feature space, can su

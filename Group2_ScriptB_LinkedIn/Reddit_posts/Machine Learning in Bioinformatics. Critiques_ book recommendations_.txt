@@ -1,0 +1,66 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1hrd7yo/machine_learning_in_bioinformatics_critiques_book/
+Title: Machine Learning in Bioinformatics. Critiques? book recommendations?
+
+Content:
+So, I am reading Machine Learning in Bioinformatics by Prof Dr. Dileep Kumar M., Prof Dr Sohit Agarwal, and S. R. Jena. While I am inclined to believe that this is a good book, I am not entirely sure I can continue with the work due to what I think is a poor effort of distilling information in an "Easy to follow" manner. Mainly, I am just through the first 15 pages of the book, where basic concepts of machine learning and its benefits and use cases in bioinformatics are discussed. While I am familiar with these discussed concepts, I still cannot follow along with the material.
+
+I want to believe that I am probably not the target audience for this work and lack the sophistication to follow along. However, no matter the sophistication of the subject, one's ideas and writings should be clear enough for people in the field to work with and outsiders to understand decently. So, I'm confused.   
+  
+I am willing to take responsibility for my understanding as long as I can appropriately attribute these misunderstandings, hence my question.
+
+Has anyone been able to read this book, and if so, what are your critiques of the work?? Also, I would like recommendations for bioinformatics texts that have been helpful to you, whether as a course recommendation or as a personal study text.
+
+Comments:
+- Never heard of this book. Looked it up. The authors are illustrious unknowns. This is a vanity publication. I'm not surprised it's of low quality.
+Is there some reason that you are looking for a book that crosses ML  with bioinformatics specifically? There are plenty of very good ML (and stats) books (Tibshirani, Gelman, McElreath) , some good books on fundamentals of bioinformatics (the classics on sequence analysis). For the latest work that crosses these disciplines and on application specifics, I'd suggest the research literature for a specific domain of bioinformatics. 
+That's my 2c, after 20+ years in the field.  Bioinformatics textbooks are generally not great. It's still a rapidly moving field in terms of application, but the fundamentals don't change much.
+- I just googled the book and from what I saw it's actually terribly written.  It's not your fault.  Probably the most poorly written scientific book I've ever seen.  Kind of remarkable.
+- Published by Xoffencer International Publication. Never heard of that either. 
+
+Agree with @[FLHPI](https://www.reddit.com/user/FLHPI/). There are good bioinformatics book and good machine learning books. Read those two, and you'll have a better idea how to feed bioinformatics data to machine learning techniques.
+- If you use R, I would start with computational genomics with R [https://compgenomr.github.io/book/](https://compgenomr.github.io/book/) it covers machine learning in later chapters.
+- Almost certain that the entire book, as well as significant chunks (probably all) of the publication records of the three authors were fabricated by AI or paper mills.
+- Check out Biological Sequence Analysis (Durbin and Eddy), pick the biomolecule that you like, and go to town.
+- I would read a review paper. And dig deeper based on what problem interests me.
+- A very good book. I've both first and second editions. The example codes are in R:  
+"Data Science and Predictive Analytics: Biomedical and Health Applications using R (The Springer Series in Applied Machine Learning)"  
+ 2nd ed. 2023 Edition by [Ivo D. Dinov](https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Ivo+D.+Dinov&text=Ivo+D.+Dinov&sort=relevancerank&search-alias=books)  
+[https://www.amazon.com/Data-Science-Predictive-Analytics-Applications/dp/3031174828](https://www.amazon.com/Data-Science-Predictive-Analytics-Applications/dp/3031174828)  
+
+
+# Data Science and Predictive Analytics: Biomedical and Health Applications using R (The Springer Series in Applied Machine Learning) 2nd ed. 2023 Edition
+- Thank you for your response and recommendations. I genuinely appreciate them. I couldn't follow along with the book, and I wanted to clarify whether that was my problem. I will read the research publications and the recommended books.   
+  
+My primary goals are to satisfy my research interests and prepare for graduate school this fall. I am very interested in the domain, so I searched Google Bookstore for materials that stimulated my interest.
+- Thank you for clarifying. The writing was so unclear that I thought I was at fault for not understanding it haha.
+- ## Amazon Price History:
+
+**Data Science and Predictive Analytics: Biomedical and Health Applications using R (The Springer Series in Applied Machine Learning)**
+* Rating: ★★★★★ 5.0
+
+* Current price: **$76.26** 👍
+* Lowest price: $76.26
+* Highest price: $119.99
+* Average price: $96.81
+
+| Month  | Low  | High | Chart             |
+|--------|------------|------------|------------------|
+| 01-2025 | $76.26      | $77.76      | █████████       |
+| 12-2024 | $76.27      | $81.58      | █████████▒      |
+| 11-2024 | $78.25      | $83.67      | █████████▒      |
+| 10-2024 | $92.06      | $112.79     | ███████████▒▒▒  |
+| 09-2024 | $95.99      | $119.99     | ███████████▒▒▒▒ |
+| 08-2024 | $112.79     | $119.99     | ██████████████▒ |
+| 07-2024 | $96.00      | $107.99     | ████████████▒   |
+| 06-2024 | $103.19     | $119.99     | ████████████▒▒▒ |
+| 05-2024 | $119.99     | $119.99     | ███████████████ |
+| 04-2024 | $77.53      | $119.99     | █████████▒▒▒▒▒▒ |
+| 03-2024 | $84.62      | $119.99     | ██████████▒▒▒▒▒ |
+| 02-2024 | $102.00     | $102.00     | ████████████    |
+
+Source: [GOSH Price Tracker](https://gosh.app/?utm_source=redditbot&utm_medium=bioinformatics&utm_campaign=2025-01-04)
+
+
+^(Bleep bleep boop. I am a bot here to serve by providing helpful price history data on products. I am not affiliated with Amazon. Upvote if this was helpful. PM to report issues or to opt-out.)
+- With AI tools like chatGPT and Claude you can turn a bad book to a good book. Copy paste part of the book and ask for refining the theory , create code for relevant  biological examples etc. Thats why I do now-a-days. Creating biological example is important because I've seen a lots of baseball statistics and image analysis codes in books, meant for biological data analysis

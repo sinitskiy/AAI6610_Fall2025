@@ -1,0 +1,60 @@
+URL: https://www.linkedin.com/posts/lahiru-nagasingha-0a7614145_a-generative-neural-network-approach-to-uncertainty-activity-7366102591878885376-kf5u
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Lahiru Nagasingha的动态
+Lahiru Nagasingha
+
+Ph.D Candidate in Mineral Engineering
+
+1 个月  已编辑
+
+📢 I am delighted to share that the second publication from my PhD research has been published in Ore Geology Reviews:
+“A generative neural network approach to uncertainty and risk-return analysis in mineral prospectivity modelling.” 🎉
+
+In our first study, we tackled data imbalance in mineral prospectivity modelling using a conditional variational autoencoder (CVAE). While this improved predictive accuracy, it didn’t address a key challenge: understanding the uncertainty and risk behind predictions.
+
+This new paper builds on that foundation by introducing a CVAE-based framework that captures both epistemic and aleatoric uncertainties and integrates them into a novel risk-return framework that uses uncertainty measures with Getis-Ord G* spatial clustering approach to categorize targets into four risk-return groups. Our results show that high-return zones occupy just 4% of the Canadian land area yet contain nearly 95% of known deposits, while also highlighting how newly identified prospective zones align within the four risk-return categories.
+
+A huge thank you to my Prof. Charles L. Bérubé and Dr. Reza Ghanati for their invaluable guidance and support throughout this research.
+
+📝 Read the full paper: https://lnkd.in/emKBKzZj
+
+I’m excited to continue pushing how AI can improve mineral exploration by delivering predictions that are accurate, transparent, and truly useful for decision-making.
+
+A generative neural network approach to uncertainty and risk-return analysis in mineral prospectivity modelling
+sciencedirect.com
+58
+16 条评论
+赞
+评论
+分享
+Arosh Perera
+
+Business & Manufacturing Excellence Specialist | LSSBB | MSc (AIT) | MBA (PIM) | Manager Manufacturing Excellence at CBL Foods International (Pvt) Ltd.
+
+1 个月
+
+Congratulations bro. 🍾🎉
+
+赞
+回复
+1 次回应
+Prabhani Ranaweera
+
+Project Engineer at TfNSW (PhD, CPEng, NER, MIEAust)
+
+1 个月
+
+Congrats Lahiru
+

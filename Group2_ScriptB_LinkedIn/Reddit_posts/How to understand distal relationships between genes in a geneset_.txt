@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/u1x62k/how_to_understand_distal_relationships_between/
+Title: How to understand distal relationships between genes in a geneset?
+
+Content:
+I have a geneset I use as training data in machine learning (rows of genes by columns of their annotations). The genes have been curated as they're disease-causing genes.
+
+However, I want to understand the genomic relationships between my training genes, to see if there's any underlying bias in my training data before I show my trained model new data. Particularly I'm looking to check if my training genes are close to each other in the genome. (If I have a lot of training genes in close genomic distance to each other, they're more likely to have similar annotations and therefore the model will be biased to a particular trend for predicting a gene group, if that makes sense).
+
+So far I've been seeing how many genes are on each chromosome, just simply counting the number of genes per chromosome. However, I know some chromosomes are bigger than others or have more genes and I want to account for that in my analysis.
+
+I'm not sure how/which statistical test I can use to check this - I have a biology background, and minimal stats knowledge. I've been looking into using a likelihood ratio test, but I can't see how I would apply it in R to my data.  
+
+
+My data looks like:
+
+|Chromosome|Total protein-coding genes (in ensembl)|Protein-coding genes training group 1|Protein-coding genes training group 2|
+|:-|:-|:-|:-|
+|1|2063|5|15|
+|2|1292|4|4|
+|3|1076|6|3|
+|...|...|...|...|
+
+On googling I can't find any previous research looking to test if a dataset is biased towards having genes on certain chromosomes, or a test indicating whether genes have a distal relationship to each other - does something like this exist? Sorry if maybe this is more of a stats than a bioinformatics question and thank you for any help!
+
+Comments:
+- How exactly did you get this list? That can change a lot of the context to the question.
+  
+You could try http://3dgenome.fsm.northwestern.edu/view.php which is a database showing linked expression between inquiry genes and other regions of the chromosome it is thought to interact with.
+  
+I would also challenge you to consider what ways that information can help; it is certainly interesting, however, if you change your gene list too much then you might be biasing the model on selective input.
+- couldnt you just do a histogram/KDE curve of start loci and a histogram/KDE curve of end loci (or just middle loci if you dont care about potential length biases) for the gene set and see if any bins are over represented

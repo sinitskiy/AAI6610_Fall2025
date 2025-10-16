@@ -1,0 +1,27 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nwwsk7/p_i_am_building_a_ml_job_board/
+Title: [P] I am building a ML job board
+
+Content:
+Hey fellow ML people!
+
+Last year, I shared with you a job board for [FAANG positions](https://www.reddit.com/r/MachineLearning/comments/1ia7feh/p_made_a_faang_job_postings_aggregator_for_ai/) and due to the positive feedback I received, I had been working on expanded version called [hire.watch](https://hire.watch/?categories=AI+_+Machine+Learning)
+
+The goal is provide a unified search experience - it crawls, cleans and extracts data, allowing filtering by:
+
+1. Full-text search
+2. Location - on-site
+3. Remote - from a given city, US state, EU, etc.
+4. Category - you can check out the machine learning category here: [https://hire.watch/?categories=AI+\_+Machine+Learning](https://hire.watch/?categories=AI+_+Machine+Learning)
+5. Years of experience and seniority
+6. Target gross salary
+7. Date posted and date modified
+
+I used the normal ML ecosystem (scikit learn, huggingface transformers, LLMs, etc.) to build it, and Plotly Dash for the UI.
+
+Let me know what you think - feel free to ask questions and request features :)
+
+Comments:
+- I checked the website and it functions well so good job!
+Maybe in the future you can add a AI resume checker (could be a gpt wrapper or a fine-tuned one) that recommends jobs based upon your resume content.
+- It's a good idea - probably will do it in the future :)

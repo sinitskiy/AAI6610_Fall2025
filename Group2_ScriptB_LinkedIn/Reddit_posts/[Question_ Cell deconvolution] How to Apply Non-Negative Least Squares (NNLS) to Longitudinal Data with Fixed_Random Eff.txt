@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1kzv1ga/question_cell_deconvolution_how_to_apply/
+Title: [Question/ Cell deconvolution] How to Apply Non-Negative Least Squares (NNLS) to Longitudinal Data with Fixed/Random Effects?
+
+Content:
+I have a single cell dataset with repeated measurements (longitudinal) where observations are influenced by covariates like `age`, `time point`, `sex`, etc. I need to perform regression with **non-negative coefficients** (i.e., no negative parameter estimates), but standard mixed-effects models (e.g., `lme4` in R) are too slow for my use case.
+
+I’m using a fast NNLS implementation (`nnls` in R) due to its speed and constraint on coefficients. However, I have not accounted for the metadata above.
+
+My questions are:
+
+1. Can I split the dataset into groups (e.g., by `sex` or `time point`) and run NNLS separately for each subset? Would this be statistically sound, or is there a better way?
+2. Is there a way to incorporate **fixed and random effects** into NNLS (similar to `lmer` but with non-negativity constraints)? Are there existing implementations (R/Python) for this?
+3. Are there adaptations of NNLS for longitudinal/hierarchical data? Any published work on NNLS with mixed models?
+
+  
+I am working on cell deconvolution. Cell deconvolution with a signature matrix works by solving a linear system where bulk gene expression (Y) is approximated as a weighted sum of cell-type-specific expression profiles (signature matrix S). The model is Y = S\*β + ε, where β contains the cell-type proportions (constrained to be non-negative because proportions can't be negative). So, through regression I try to estimate the coefficients β (cell proportions). I have metadata from the single cell data, where I know how old the patients were when the samples were taken. The study is also longitudinal, so I have cells taken at different time points. These two factors influence the cell-type-specific expression profiles.
+
+I want also to apply bootstrapping of the single cell data before building the Signature Matrix S, and I don´t know if bootstrapping data that is used in baysian model makes sence, since baysian model already show the uncertainty in the results. Baysian Models are also too slow and take a lot fo memory to estimate all parameters. Thats why baysian models and deep learning is something I want to avoid for now. The question is how to get estimates withou bias results.
+
+I thought of taking the matrix S where I have genes in rows and unique cell types in columns and their expression in the cells and just split the columns into celltype + the factrs I care for. So the columns would be for example "tcell\_1day","tcell\_3day","tcell\_20day","bcell\_1day","bcell\_3day","bcell\_20day" and so on instead of tcell","bcell" ... as columns and then I would run the regression nnls against that, where the single cell columns and their gene expression are the independent variables and the vector representing the bulk sample Y represents the dependent variable. But I am afrad I would bias my results that way, because one of the problems with deconvolution is multicolinearity (related single cells have similar expression), and splitting a cell type into multiple columns seems to worsen the problem. Doesnt it?
+
+Comments:
+- Stratification on gender is pretty common in other types of analyses (at least those where gender is a known confounding factor), so I don't see why that would be a problem here.
+- deconvolution has a multicolinearity problem because similar cell types have a similar expression in the single cell dataset (think of cd4+ or cd8). I am wondering if I would make that multicolinearity even worse if I split a cell type into different time points (instead of cd4+ I would decided it into cd4+\_1day,cd4+\_3day, and cd4+\_20day).

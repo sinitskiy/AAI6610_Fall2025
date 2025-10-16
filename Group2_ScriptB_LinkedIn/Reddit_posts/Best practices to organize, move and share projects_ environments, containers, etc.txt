@@ -1,0 +1,116 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/xf8eny/best_practices_to_organize_move_and_share/
+Title: Best practices to organize, move and share projects: environments, containers, etc
+
+Content:
+I have recently transitioned into the field from a hybrid wet/dry lab PhD experience to full bioinformatics and also I am the only bioinformatician in a wet lab group, so please excuse my naivety as I am still learning.
+
+I have some pipelines going on and working that I have started from conda using environments for each main analysis I do (so one environment for RNAseq, one for ChIPseq, etc), and from a testing phase on my laptop, I kept using them with not many problems. With one bigger dataset, I tried to move my environment to our server for the heavy lifting, but I discovered that conda is not able to reproduce the environment, basically forcing me to re-install everything manually. 
+
+This led me to think of which way could be best to organize my work also for long-term, reproducibility, and generally for maintaining best practices. I was thinking about creating docker images from my conda environment, but I am not very knowledgeable and still studying containers and related topics to understand if this could be a solution and how to best perform it.
+
+Do you have any insight or suggestions on how you organize your work? Maybe an environment for each project, or other ideas? Any general recommendation about how you organize your work, projects, and how you move analyses/environments between machines or share with colleagues, is more than welcome!
+
+Comments:
+- From my experience there's really no good answer to this, which is why tools keep popping up to try and solve the same problem.
+
+For personal use, conda is the most straight-forward and comfortable to use. It simply helps you set up an environment where you can work and iteratively update your workflow within the language of your choice.
+
+Workflow managers like NextFlow or snakemake add overhead, making simple tasks and alterations take longer, adding another layer of complexity when it comes to debugging. I would use them if I have a compute-intensive workflow that might need to resume after fail or be submitted to batch job systems.
+
+Docker is the most comprehensive solution, but also annoying in many academic contexts because often institutional devices don't allow the user privileges to install Docker. I think it's best used for archival purposes such as for publication, where you can generally reproduce your results perfectly. Not as good if you have a workflow that evolves iteratively every time you do it, or for sharing in my opinion. It's great for sharing thing as is, not as good for someone else to pick up and tweak or incorporate into their own workflow.
+- Use Nextflow or Snakemake. You should create environments not for the whole pipeline, but for each individual step.
+
+What problems are you having with Conda, exactly?
+- Not sure but developers use this python tool. https://python-poetry.org
+
+Environment module is also useful.
+
+https://modules.readthedocs.io/en/latest/
+
+I’d also recommend snakemake or nextflow.
+- Organization strategies will vary widely based on your workload. Some people run the same pipeline for hundreds of samples a week and others have three very different projects in a span of a whole year.
+
+As the only bioinformatician, you should really focus on the actual analysis rather than setting up environments. As you've seen from the other answers, this is a difficult problem. Use one machine. Do your best to document all the steps so everyone can see exactly what happened. The main point of reproducibility is for someone to see which specific settings you used or notice that you used a particular version of package X that has a bug in function Y.
+- SiB hosts a ton of valuable learning resources on their GH site: https://github.com/sib-swiss/training-collection
+
+Carpentries incubator has this beta lesson too: https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/ 
+
+I use rstudio projects to keep things reproducible. I like rstudio because I can do things easily in phyton bash and R.
+
+I'd like to hear more about how you would think to containerize things. 
+
+What level of reproducibility are you after?
+
+Best wishes.
+
+Edit: another one from code club https://youtu.be/olu821RTQA8
+- I did my day to day analysis on my own workstation.
+
+When I wanted other informaticians to use the tools I made, I made a Docker image. I don’t like Conda, never understood it, I always found it fucked things up more than it helped. I prefer just building from source for the dependencies I need in my containers—less obfuscation.
+
+When I wanted experimentalists and informaticians to use the tools I made (or to make it literally zero effort for the informaticians), this Docker container would run on AWS Batch and can be triggered through hitting an endpoint that would launch the job (ie run the containerized script using passed parameters).
+
+When I wanted others to have a workstation they could use that was “batteries-included”, I made an AMI/collaborated with our DevOps team to make an Ansible playbook and a LaunchTemplate that would instantiate an EC2 with all the basic tools + certs.
+
+You can tell I started to really stray off the path of biology at that point. tldr it’s fucked depending on how deep you go into it and how generalizable you want your stuff to be.
+
+I would focus on what makes your work easier for you. Which means optimize your own ability to deliver by having a solid workstation that avoids the infinite levels of fuckery everything else requires until you’re forced to do it.
+- For now, my typical workflow is launching a dedicated environment for analysis (eg, RNAseq), and launching nf-core for obtaining all the needed files. Then, I download the files and move them to my local machine, where I have another conda environment dedicated for downstream analysis (mainly DEseq2 and related libraries).   
+
+
+With Conda, I had a problem when I wanted to move my single-cell RNAseq environment, built locally on a MacBook, to a RedHat Linux server. Using the environment.yml file led to an error that I do not recall, but it was unable to recreate an environment from that. I do not know if it will also import tools obtained with pip, in case it worked.  
+
+
+Since my single cell environment is getting complicated, with tools that incorporate both python and R simultaneously (and in present days this leads to conflicts if I try to recreate this with the most updated versions), I was really looking forward to moving that environment to the server or being ready to share it with colleagues and containers seemed like an ideal solution.
+- Thanks for mentioning this tool, I was not aware of this and will look more into it - but at a glance, it is only for python and I need to work with python and R at least.
+
+Environment module is also something I was unaware of and seems interesting.   
+
+
+Nextflow and snakemake, I am studying them both to understand which one I want to proceed with for my future needs.
+- Those are some really interesting points and insights, to me. I assumed it was me struggling with this and that there should be an easy and correct solution, but it seems a common problem that still causes issues for everyone.
+
+Definitely, instead of taking this problem head-on just for the sake of solving it, implementing alternative solutions such as using one machine as you suggest, seems the best course of action.
+
+I guess I was testing and exploring the limits and possibilities of this world, and I found some limits. Lesson learned!
+- Thanks, I was not aware of the resources of SIB, particularly those related to data management seem useful.
+
+I use jupyter for python and R using the R kernel when needed. 
+
+For what I would like to containerize things, I would like something that is ideally portable to every machine (my personal one is a windows machine, my work laptop a mac, and the server is linux) and works directly out of the box or with as fewer troubles as possible. From my recent understanding, trying to build a docker image that has everything it needs, ideally easily built based on a working conda environment, seemed like an ideal solution. Other comments here mentioned that there will be often problems anyway so I think I will move towards an approach of "do everything on one machine" and make the server my main machine and just optimize and get used to connecting to it as needed and stream whatever graphics I need on local machines (the need of opening and having a stable jupyter notebook from the server was troublesome in the past, but I will invest more time and energy in solving this). 
+
+I am watching the video from code club and it is very useful, showing some tips and tricks that I will use to implement all the suggestions given in the previous comments. Particularly how to create quickly an environment with the most important tools to speed up the process of recreating it on another machine. Could be the best solution so far, and after the transfer, I will stick to that one machine
+- >When I wanted others to have a workstation they could use that was “batteries-included”, I made an AMI/collaborated with our DevOps team to make an Ansible playbook and a LaunchTemplate that would instantiate an EC2 with all the basic tools + certs.
+
+This part is very obscure to me, yet. I cannot get a sense of what is happening here.
+
+For now, conda is still indispensable to me to avoid very bloated environments and avoid conflicts as much as possible. It gives problems in some cases, but I see it solves more problems than those created. 
+
+But your suggestion is precious and much in line with previous comments, I get the general sense. I will do a compromise of making my analyses work as best suits my needs and on one machine, avoiding overcomplicating things and searching for an ideal solution that could be non-existent, just for the sake of solving a problem. Definitely avoiding those levels of fuckery given the idea that I get from opinions here, there is no easy way to solve it as I would have thought, ideally.
+- Sounds good. However:
+
+>	Since my single cell environment is getting complicated, with tools that incorporate both python and R simultaneously (and in present days this leads to conflicts if I try to recreate this with the most updated versions),
+
+This is what I mean. You should avoid a huge, bloated environment with all of your dependencies. Ideally you should have one conda environment for each step of your workflow. This makes it much easier to avoid conflicts.
+
+How did you create your environment.yaml? How does it look like? Did you export the list of packages in your environment to a file, or did you create it from scratch? In my experience, the former almost always leads to problems, as the exported file contains the exact build versions and makes solving the environment much harder.
+- I would avoid modules they don’t solve the portability problem and are pretty HPC specific. Containers are superior for bioinformatics and provide that portability to cloud, HPC, or running locally. Modules are useful for low barrier to entry for researchers on a shared HPC system, or for things that are specifically built for a given system. For example, HPC codes built for the specific networking on the system.
+- I hope that part will remain obscure for you :,) if it doesn’t, then something has gone terribly wrong and your job has ceased to be computational biology.
+
+The comment was in order of “normal” to “wtf pls no” haha, to give a kind of sense of how deep the rabbit holes can start to go.
+- The only steps that I see I can break down are alignment (done with nf-core pipelines) and my downstream analysis. Once I load the environment for analysis, should I break down even more? It is one Jupyter notebook that I also need to adapt on the fly the test different ideas, thus the bloated environment from my understanding is unavoidable. Of course, I would separate environments if I knew I only need python or R, but in this case, tools such as Palantir for single cell, they are in python but invoke packages that use R, thus R is needed there along with python. But the scRNAseq environments contains strictly what it is needed for that analysis.
+
+I think I created it by using something like `conda env export environment.yml` and then tried to `conda env create -f environment.yml` on the other machine - so yes, exporting. Creating it from scratch is something I would like to avoid, as I could have to move this to other machines in the future. I now reading about conda-pack, but did not tried it yet. Could also be used to directly make a docker image from a conda environment.  
+
+
+https://conda.github.io/conda-pack/
+- Directly exporting whole environments in conda usually has a high chance of failure when going between platforms. If possible, try to figure out the packages you need and put only those in the environment file, and let conda figure out the rest for the appropriate platforms.
+
+Moving between platforms tends to fail because library dependencies on one platform differs from another, and certain libraries may not be available on other platforms.
+- Second just exporting what you need directly.  If I recall correctly there's a "--from-history" flag you can use when exporting that will only export the packages you directly installed as the environment spec.
+- So if I understand correctly, to avoid also the troubles that TonySu mentions in the comment below, I could export only the selected and needed packages and import them to the new environment.  
+
+
+The "--from-history" flag would export only the packages that I have installed manually, I would have to create an environment on the new machine that is adapt to that machine and add those extra packages later. Seems fair enough, I will probably test this.
+- There's also a `--no-builds` flag that drops the exact build versions during the export, and makes it much easier to re-build/solve the environment from the yml later

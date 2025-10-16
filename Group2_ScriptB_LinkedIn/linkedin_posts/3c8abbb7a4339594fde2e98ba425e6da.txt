@@ -1,0 +1,84 @@
+URL: https://www.linkedin.com/posts/maryammiradi_model-uncertainty-in-deep-learning-reasons-activity-7198636711571062785-S2yc
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maryam Miradi, PhD的动态
+Maryam Miradi, PhD
+
+VP & Chief AI Scientist | 20+ Years in AI | AI Agents Training (LLM + Vision) | Data Science Training (ML + DL) | AI Newsletter (32k+ members)
+
+1 年  已编辑
+
+Model Uncertainty in Deep Learning: Reasons, Types, Solutions and 20 Top Python Libraries 📚
+
+Model uncertainty presents a significant challenge in deploying reliable deep learning systems.
+
+—————————-
+
+Model Uncertainty
+
+It refers to the inability to predict model performance under different scenarios.
+
+—————————-
+
+Reason and Impact
+
+Uncertain model predictions can lead to unreliable or unsafe application outcomes.
+
+—————————-
+
+Types of Model Uncertainty
+
+✸ Epistemic Uncertainty: Due to limited data or knowledge.
+
+✸ Aleatory Uncertainty: Inherent randomness in the data.
+
+✸ Distributional Uncertainty: Changes in data distribution over time.
+
+✸ Model Discrepancy: Mismatch between model assumptions and real-world dynamics.
+
+✸ Structural Uncertainty: Inaccuracies in model structure affecting predictions.
+
+—————————-
+
+Solutions to Model Uncertainty
+
+✺ Conformal Prediction: Provide valid prediction intervals under assumptions.
+
+✺ Bayesian Neural Networks: Incorporate uncertainty in network weights.
+
+✺ Ensemble Methods: Combine multiple models to reduce errors.
+
+✺ Dropout as Bayesian Approximation: Use dropout to estimate uncertainty.
+
+✺ Monte Carlo Methods: Sample predictions to gauge variability.
+
+✺ Bootstrapping: Resample data to enhance model robustness.
+
+✺ Adversarial Training: Train with perturbed inputs to improve resilience.
+
+✺ Uncertainty Quantification: Measure and interpret model confidence.
+
+✺ Out-of-Distribution Detection: Identify and handle novel data inputs.
+
+—————————-
+
+Python Libraries for Model Uncertainty Solutions
+
+📚 ConformalPy: Simplifies implementing conformal prediction in Python.
+
+📚 PyMC3: Bayesian modeling and probabilistic ML.
+
+📚 TensorFlow Probability: for probabilistic reasoning and statistical analysis.
+
+📚 

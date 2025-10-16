@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hg1k3v/how_do_you_stay_up_to_date_with_new_trends_and/
+Title: How do you stay up to date with new trends and advancements?
+
+Content:
+Hi everyone! I'm getting my first big boy job soon (read: non internship) and one of my job duties is to stay updated in trends in data science and ML, especially with NLP and sentiment analysis in the social sciences
+
+I'd like to do a good job with this and was wondering if anyone has recommendations for *how* to stay up to date. I will basically be the only technical person on my team so I'll need to be able to keep up with industry by myself without hand holding
+
+Does anyone have any suggestions for keeping up to date with this sort of stuff? Besides following this sub and /r/MachineLearning ofc :p
+
+Would love either blogs or journals with creative methodologies or usage of technology, both general DS stuff and places more focused on NLP. Thanks!
+
+Comments:
+- Reddit, lol
+
+In all seriousness this sub is one of the main reasons I keep Reddit.  Theres a lot of crap on here (as with any subreddit) but it definitely pays off when you see a post about something cutting edge that you never heard of.  I’ve also found unique solutions to problems that I was having with work, probably saved my ass at least 3 or 4 times I can think of.
+- I'm often asked to babysit new hires and teach them the ropes.
+
+Most might not know much about business, but know a lot more DS than me.
+- Twitter, reddit, conferences and Linked In follows.
+- Medium articles, podcasts, and doing courses.
+- You may naturally do this but try to influence the recommendation algos on X, reddit, etc. to show mostly ML/AI focused through your interactions so you see less brain rot and more useful stuff. Maybe even make entirely separate accounts if you still want to see memes. 
+
+On top of that read blogs, research, etc. Think of a recent advancement, search for the first article you can find about it and follow whoever posted it. If you’re LLM or AI focused then I really like AI Explained on YouTube. They’re one of the only people who will actually discuss research and avoid unnecessary hype out of all the AI focused youtubers.
+- I'll be honest: I don't actively seek out new trends. The reason is because a lot of new trends, whether in tooling or research, are just noise that can be ignored. For example, in my career, there have been several programming languages that hype guys said were going to be the next big language for data science, and they've all fizzled out. Julia and Scala were the big ones. Mojo is the one I'm currently ignoring, and I'm certain I won't regret it. 
+
+Most of the research papers you'll read are junk, too, with results that don't generalize beyond whichever academic dataset that domain's researchers are busy aggressively overfitting to. And that's only if they even implemented their algorithms correctly to begin with (seriously, go look at the quality of the code released with the average paper, it's embarrassing)
+
+I prefer to pay attention to the stuff that's been around for a little while, that has appeared in front of me a few times without my explicitly seeking it out, and seems to have staying power. Research papers that are a few years old but still being referenced today, tools that are a few years old but have seen steady growth, just had a stable 1.0 release, etc.
+- When you say it’s one of your job duties, what do you mean? Is it in your job description, or is it something you’re expected to report back to your stakeholders on? Or is it something you feel passionately about separate from those things?If the other folks on your team are not technical, how will they know you are/are not doing it?
+
+Of course I do think it is useful to keep an eye on the tech and practices—especially early in your career—and the tips here are all good ideas. But I think staying informed is more about learning how to find appropriate tools and techniques when a new-to-you problem arises.
+
+IMO it’s at least as (and possibly more) important to become familiar with your team and organization: how they work, what their problems are, the broader domain they functions within. Having a deeper understanding of that will also help you focus on the ways data science can help solve the problems most relevant to your stakeholders, which not always (or even often) about using the newest thing. 
+
+This is something I got wrong a lot early in my DS career, so I wanted to offer that alongside others’ recommendations that more directly answer your question.
+- Here’s a hint for you as someone that also recently started in data science: when that’s written into your expectations, that means you can use it as leverage for expensive things that teach you a lot. Conferences, grad degrees, premium versions of software, subscriptions to professional journals and magazines, new hardware, etc. Make sure to regularly go to your supervisor with ideas about things that would help keep you up to date, and a compelling argument for each, and you can have some great opportunities.
+
+Otherwise Reddit is actually a great resource, as is keeping up to date on CRAN and peer-reviewed research in your field.
+- YouTube and curiosity
+- [deleted]
+- DataCamp 
+
+My employer pays for it so my team can stay on top of new developments. See if your company will pay for it. Since my company pays for it I can’t tell you how much a subscription costs, sorry, so I don’t know if it’s reasonable to pay for it on your own, but there are a variety of learning options.
+- Reddit, LinkedIn, meetups
+- What happens if your company thinks your falling behind? Do they just fire you? Or is there a support system?
+- Reddit😭
+- Following
+- Give more time in learning
+- I'd say that if you want anything very fast. then [X.com](http://X.com) is the place to go. Just mamke a new ID and follow all the big tech comanies and people. Algo will do the rest and you have to check regularly for updates. I,ve dine this for GEOPOLITICS as it is my hobby but yeah X is good
+- Oddly enough, if you wanna stay up to date with trends and advancements, you may need time offscreen, or even off Internet. That's the moment you have space to think.
+- Trade/knowledge based journals, websites. Ieee is the pinnacle
+- Following

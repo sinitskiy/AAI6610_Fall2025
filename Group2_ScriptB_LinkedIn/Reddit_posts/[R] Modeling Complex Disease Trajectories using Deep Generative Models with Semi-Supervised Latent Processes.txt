@@ -1,0 +1,27 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/17w61xb/r_modeling_complex_disease_trajectories_using/
+Title: [R] Modeling Complex Disease Trajectories using Deep Generative Models with Semi-Supervised Latent Processes
+
+Content:
+Many complex diseases like autoimmune disorders have highly variable progression between patients, making them difficult to understand and predict. A new paper shows that visualizing health data in the latent space helps find hidden patterns in clinical data that can be useful in predicting disease progression.
+
+**The key finding is they could forecast personalized progression patterns by modeling clinical data in a latent space.** This conceptual space uses variables to represent hidden disease factors inferred from measurements.
+
+Researchers designed a generative model using variational autoencoders to map connections between raw patient data, expert labels, and these latent variables.
+
+When tested on thousands of real patients, the model showed promising ability to:
+
+* Predict individualized future disease patterns and uncertainty
+* Reveal interpretable trajectories showing progression
+* Cluster patients into phenotypes with unique evolution
+* Align predictions with biological knowledge
+
+While further validation is needed, this demonstrates a generalizable framework for gaining new understanding of multifaceted disease evolution, not just for one specific condition.
+
+The potential is to enable better monitoring, risk stratification, and treatment personalization for enigmatic diseases using AI to decode their complexity.
+
+**TLDR: Researchers show AI modeling of clinical data in a tailored latent space could reveal new personalized insights into complex disease progression.**
+
+[Full summary here](https://notes.aimodels.fyi/using-ai-to-study-systemic-sclerosis/). Paper is [here](https://arxiv.org/pdf/2311.08149.pdf).
+
+Comments:

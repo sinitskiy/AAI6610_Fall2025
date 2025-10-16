@@ -1,0 +1,10 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1lprhx0/need_suggestions_on_strategy_for_a_multicohort/
+Title: Need suggestions on strategy for a multicohort dataset
+
+Content:
+Hi, so im working on a 18 cohort metaphlan4 profiles and metadata for all cohorts. Looking to create a statistical machine learning model for CLR normalised data. Long term plan was to use either lasso or random forest but before i get to that point what else should i look at or get done.
+
+Any suggestions and advice is much appreciated
+
+Comments:

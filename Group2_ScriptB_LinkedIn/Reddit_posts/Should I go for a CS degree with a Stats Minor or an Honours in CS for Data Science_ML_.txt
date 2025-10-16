@@ -1,0 +1,82 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gp8x38/should_i_go_for_a_cs_degree_with_a_stats_minor_or/
+Title: Should I go for a CS degree with a Stats Minor or an Honours in CS for Data Science/ML?
+
+Content:
+Hey everyone,
+
+I'm a CS student trying to figure out the best route for a career in data science and machine learning, and I could really use some advice.
+
+I’m debating between two options:
+
+1. **CS with a Minor in Statistics** – This would let me dive deep into the stats side of things, covering areas like probability, regression, and advanced statistical analysis. I feel like this could be super useful for data science, especially when it comes to understanding the math behind the models.
+2. **Honours in CS** – This option would allow me to take a few extra advanced CS courses and do a research project with a professor. I think the hands-on research experience might be really valuable, especially if I ever want to go more into the theoretical side of ML.
+
+If my main goal is to get into data science and machine learning, which route do you think would give me a better foundation? Is it more beneficial to have that solid stats background, or would the extra CS courses and research experience give me an edge?
+
+Comments:
+- I'm likely biased as someone with a degree in math but I think the stats minor is the better call. Really knowing your stats will help you no matter where your career takes you (assuming it's a somewhat quantitative field). However, the specific area of research you do for the CS honors will likely be obsolete midway through your career. 
+
+
+The caveat being unless you want to get a PhD and so need publications under your belt.
+- Honors is a better signal because (a) less graduates were in the Honors program (b) you'll do a thesis/project and that will be your project to showcase in interviews.
+
+If you are looking for something to set you apart, being in the honors' program + experience with a professor in research + having final project that was mentored and not some kaggle crap >>> other option
+- I double majored in CS and stats and I think it was a great decision. I worked at a FANG for 6 years as a data scientist, startup founder now.
+
+The tradeoff is that you won't get real depth and you'll have to teach yourself a lot. YOu'll have a broad foundation but it'll take a while to get good. If you're an autodidact this is the right path. If not, go pure CS.
+- In the US, the most important thing for getting a full-time job is internship experience. If you're able to snag an internship during the summer, you will be more likely to get a job after graduation. 
+
+In order to get an internship, you need to know how to program very well, and you need to have a cool project or impressive educational background.
+
+For the aforementioned reason, I think you should do whichever option will allow you to get the most programming skills and a unique portfolio. You'll want to be able to talk about how you've applied your classes to "real world" problems. 
+
+I'd personally go for CS honors as it leaves the door open if you want to do research and grad school. Also, it is a more unique and "standout" experience if you're able to actually get on a paper or make something interesting.
+- Maybe I'm misunderstanding (and I don't know where you're based) but why is it either or?
+
+I did a CS major with a minor in maths and a CS honours year.
+
+If I could go back to uni the only thing I'd change would be to double major in CS and stats rather than the maths minor.
+- Both are great Glad you have a chance like this. Nobody knows what tomorrow may bring. You seem to be very well positioned. either way Good luck
+- I am an engineer, and I hire scientists, engineers, and analysts in the government space. 
+
+My first question is, what school?  
+Is it known for either program?  
+Do you have alumni available, both to contact for a role and/or to speak to for advice?
+
+All that said, even with a fresh college grad, my first search in the resume is the tech stack you work with. Next, what projects have you done (previous work or school). And school is generally my 3rd item.
+- If your goal is data science and machine learning, the CS with a minor in statistics could be particularly valuable. A strong foundation in statistics will help you understand the math behind many ML algorithms, making it easier to interpret models and apply them effectively.
+
+On the other hand, the Honours in CS with research experience could be beneficial if you're considering more theoretical or research-focused ML roles, as it would help you build skills in designing experiments and tackling open-ended problems.
+
+If you’re leaning towards industry roles, the stats minor might give you an edge; for more research-oriented or academic paths, the Honours track could be the way to go.
+- You are overthinking it. It honestly doesn't matter that much between the two. They are too similar to have a meaningful difference. If you are interested in research in the future, choose the research option. Otherwise, it's not a meaningful difference.
+- Do you wanna do analytics DS or ML DS?
+
+If analytics, take the stats classes. Most teams won't care about your research, fundamentals in running experiments matter more. There may still probably be a research related question in interviews, but it's more to check a box.
+
+If ML, do the research project. The research project will make all the difference for getting you an interview in the first place. Fundamentals still matter, but there's generally not nearly as much focus on stats specifically. Instead expect topics to be scattered all over.
+- yes
+- 1. CS guys make more money. On an average. 
+2. Research projects are really good exposure. You work on hard problems and if you succeed then you get a great paper which makes you stand out. If you don't succeed still you learn a lot. 
+3. Don't do research if it's anything less than 6 months. 1 year recommended 
+4. Learning stats on your own is difficult but most university courses are also shit. So not sure. 
+5. You would have to learn a bit of it anyways
+- Can you do the latter and pick and choose important math/stats classes without qualifying for a minor? This is the optimal option imho
+- You want a lot of math for DS. Arguably going the other way with a math heavy major and CS minor might be better for specifically data science. But a major in CS is a great starting point and helps open more doors as a developer. Your option #1, CS Major with Stats Minor, is probably the best of the three in terms of future opportunities. But you wouldn't be going wrong with any of them.
+
+A lot of schools have joint/double-major programs in Math+CS. Those would be good too.
+- I personally think more stats the better. I’d rather be math heavy and learn programming than vice versa. 
+
+Machine learning IS statistics. Computer science just applies/implements it.
+- A bachelors isnt much either-way, i have a stats minor and it helped a  bit on the fundamentals, id instead recommend an advanced degree in the field if possible. A bachelors in cs and a masters in statistics & have a good thesis will give you the best chance in this job market.
+
+I have seen a DS who worked in FAANG got 9 months on their CV as SWE and 1 years experience in big bank and they couldn’t write 3 lines of code in the span of 30 mins (they cant write a .loc and a value counts in pandas), i have seen Ph.Ds that have an understanding of analytics as basic as a new grad with a masters. Most likely the degree part wont mean shit to be honest. The PhDs are rockstars in this very niche thing but are absolutely useless anywhere else. So to conclude education isnt going to be the deciding factor but perhaps something with practical experience might be helpful.
+- I strongly recommend that stats minor
+- Do the Honours and pull in as much stats as possible. This should not be an either or case.
+- Do you know the math?
+
+Minor in stats is pretty useless. It focuses on ancient things that aren't really used anymore outside of academia (think psychology grad students analyzing the data from their first experiment in SPSS).
+
+Learning modern stats pretty much assumes you dual major in math and you do the math courses first. If you want to learn the math behind data science then go take some math courses instead.
+- The stats minor is the way to go. And take functional programming classes at your CS program.

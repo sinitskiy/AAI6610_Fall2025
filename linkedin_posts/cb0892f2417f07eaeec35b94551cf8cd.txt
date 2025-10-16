@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/leochlon_ai-machinelearning-informationtheory-activity-7351636693596139521-RSuy
+Date: 2025-09-24
+Author: Unknown
+
+We detect hallucinations before the LLM knows its hallucinating. 
+
+Rooted in our new paper on how LLMs achieve Bayesian learning in expectation https://lnkd.in/e6ie5ZNz, 
+
+The Discovery: Using Minimum Description Length (MDL) analysis on OpenAI's davinci-002, we found that hallucinations occur when models encounter "incompressible" prompts - text that's too complex or volatile to efficiently encode.
+
+Key Findings:
+📊 The Compensation Effect: When prompt complexity (MDL) is high, models generate simpler outputs to compensate. Think of it like a pressure release valve.
+
+📈 Volatility Triggers Hallucinations: Alternating between simple/complex tokens confuses models more than consistent complexity.
+
+🛠️ We Can Prevent It: By "pre-decompressing" complex prompts with context or gradual introduction, we improved success rates from 40% to 80%!
+
+Pre-decompression works by:
+ - Contextualizing - Give the model a framework to understand nonsense
+ - Gradualizing - Don't hit the model with full complexity at once
+ - Meta-acknowledging - Let the model know it's okay to struggle
+ - Pattern-building - Create low-MDL anchors before high-MDL content
+
+Real Impact:
+Prompt engineering: Add context before complexity
+AI Safety: Predict hallucinations before they happen
+Model training: Design better data curation strategies
+The most surprising finding? Being honest with AI about difficulty ("this looks like gibberish") works better than trying to hide complexity.
+
+This opens new doors for making AI more reliable through information theory rather than just scaling up.
+
+Big thanks to Mark Antonio Moustapha Awada Ph.D. for the theoretical work.
+Thank you to Zein Khamis and Sarah Rashidi for their hard work on the code and empirical findings.
+
+
+话题标签
+#AI 
+话题标签
+#MachineLearning 
+话题标签
+#InformationTheory 
+话题标签
+#AIResearch 
+话题标签
+#LLMs 
+话题标签
+#Hallucination

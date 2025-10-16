@@ -1,0 +1,38 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/5ebmdr/discussion_uncertainty_propagation_in_lstmbased/
+Title: [Discussion] Uncertainty propagation in LSTM-based RNNs
+
+Content:
+In several applications using LSTMs/RNNs (such as char-rnn or Alex Graves handwriting generation), given the input at current time-step we output (or predict) the parameters governing the distribution of the output. At training time, at each time-step, we train the model to maximize the likelihood of the true output w.r.t the predicted distribution. 
+
+But at prediction time, at the last observed time-step we predict the output distribution and sample from it to get the input at next time-step. Given this predicted input, we again obtain an output distribution from the LSTM. But this output distribution is not truly indicative of the variability in the prediction because the uncertainty from previous time-step is not propagated correctly (only a single sample is taken). This discrepancy keeps increasing as we do multi-step prediction. 
+
+Is there any work in the past that dealt with this problem? This problem is not just restricted to LSTMs (or RNNs) but any predictive model which doesn't propagate uncertainty through non-linear functions. 
+
+Comments:
+- I am currently experimenting with an idea similar to this. In particular making the output of a decoder lstm use some function of the negative moving average of all of its previous probability distributions in order to make prediction at time step t. One thing I have found is that it doesn't help that much to just concatenate this onto the input of the decoder - but use it explicitly when computing the probability distribution
+- Yes, the fact that the training time behaviour does not match the way we use the RNN at test time is a known problem. An example of a paper trying to address this would be scheduled sampling: https://arxiv.org/abs/1506.03099
+
+Hugo's thoughts on the paper are also very informative: https://www.evernote.com/shard/s189/sh/c9ac2e3f-a150-4d0c-9a44-16657e5d42cd/5eb49d50695c903ca1b4a04934e63363
+
+A more recent example would be 'professor forcing': https://arxiv.org/abs/1610.09038
+- I've seen methods described where multiple samples are taken at each step, creating a tree of possible output sequences, which is repeatedly pruned to keep only highly likely sequences, but the professor talking about this mentioned that in practice often you just take a single sample because of the vastly increased runtime and only slight hit to accuracy you incur. 
+
+In the field, I think "often" became "always".
+- Maybe there's a Bayesian solution? Use the models output as the new prior over words/symbols for the next prediction.
+- Special decoder cell that takes the entire output projection of the previous timestep as input?
+- Interesting. But shouldn't the moving average affect your prediction at subsequent time-steps? (I can't see how it will affect the predictions if you don't send it as an input to the LSTM)
+
+Also, any reason why you just chose to store the negative moving average of all of the previous distributions and not anything more?
+- Maybe, I didn't phrase my question right. I wasn't talking about the problem of training time and inference time behavior being different (which the scheduled sampling and professor forcing approaches address). 
+
+My question was concerning the problem of getting accurate uncertainty estimates for multi-step prediction. Consider, the first time-step during inference, we give the model an input for which it predicts an output distribution. We then proceed to sample a single point from this distribution and send it as input for the next time-step. What would be more accurate would be to send the distribution as an input to the next time-step and get the predictive distribution for the second time-step as a function of the previous distribution (and not as a function of just a single sample). Hope that makes it clear.
+- > What would be more accurate would be to send the distribution as an input to the next time-step and get the predictive distribution for the second time-step as a function of the previous distribution (and not as a function of just a single sample).
+
+Then you just converge toward the general frequency of each output token in the corpus -- you don't get a single coherent sequence. If I ask you what the next letter in the sequence "hello my frie" is, you have a good idea from the context that it's 'n'. If I ask you what the 40th letter after that sequence is likely to be, all you can really do is shrug and guess the letters that tend to be most common in the language, because the context that you have is going to be stale by then.
+- Ah I see sorry. I'm not aware or any work that addresses that directly. You could maybe look at the entropy of the probabilities while you are decoding? High entropy would suggest high uncertainty. If you wanted something a bit more concrete then you could convert these numbers in to perplexity, which basically tells you how many options it was uncertain about.
+- As far as I understand, you're worried that you're not getting a proper estimate of P(2nd prediction | input data) - but do note that the n'th and n+1'st predictions are and should be correlated; after sampling a single point and sending it as input for the next timestep you *should* be interested in P(2nd prediction | input data + 1st prediction) since it amounts to a correct common probability P(sequence of both predictions | input data).
+
+The distribution of the second next letter in the sequence "I saw th" has a high probability of being a space (after an 'e') but if we've chosen to continue the sequence as "I saw thi" then choosing a space for the second letter would be horribly wrong and make our predictions inconsistent.
+
+If you're interested in a total probability of a particular n-th prediction then I'm afraid that in the general case you cannot get it by a single run through a RNN but you just have to either bruteforce all possibilities up to n-1 or do some MC sampling, as in the general case there can be very interesting path dependence affecting that probability.

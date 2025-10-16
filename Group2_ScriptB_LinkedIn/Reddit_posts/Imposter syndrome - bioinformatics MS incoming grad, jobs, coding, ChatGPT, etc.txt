@@ -1,0 +1,102 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1i8huye/imposter_syndrome_bioinformatics_ms_incoming_grad/
+Title: Imposter syndrome - bioinformatics MS incoming grad, jobs, coding, ChatGPT, etc
+
+Content:
+Hi everyone! I’m about to complete my master’s in bioinformatics and am looking to transition into industry roles (primarily biotech or pharma). I come from a life-sciences background (bachelor’s in biotechnology), which focused heavily on biology, genetics, and genomics but offered very little formal training in coding beyond a couple of courses.
+
+Naturally, when I started my bioinformatics program, I was thrust into learning R, Python, and machine learning—pretty much from scratch. To bridge my knowledge gap, I turned to ChatGPT as a sort of “tutor.” I don’t just copy-paste solutions; I ask ChatGPT to explain each part of the code so I fully understand it. Over time, I’ve definitely improved my coding abilities, and I can now handle most tasks thrown at me (especially in R) by carefully researching online or using AI tools. But if I’m being honest, I’m still not at the level where I can confidently write complex scripts entirely from scratch without occasional guidance.
+
+Here are a few things on my mind:
+
+1. **Can I say I have coding experience?** I do have hands-on practice with R, Python, and HPC environments through coursework and lab work. However, I rely on ChatGPT and online resources to make sure I’m structuring my code efficiently. Does this count as “experience,” or am I overselling myself by saying so on my résumé?
+2. **Nervous about coding rounds in interviews** Many job postings mention coding challenges or technical interviews. I’m worried about getting stuck if I don’t have AI tools or immediate documentation at my disposal. Has anyone else dealt with this? How can I best prepare?
+3. **Imposter syndrome** I feel like a fraud calling myself a programmer when I consistently turn to AI for guidance. Don’t get me wrong—I understand the logic behind each script, and I learn something new every time. But I’m not sure if companies will see it that way.
+4. **Does the biotech/pharma industry rely on AI tools like ChatGPT?** If I do land a role, I’m wondering how common it is for teams to use ChatGPT or similar assistants in their day-to-day tasks. Is it accepted practice to use these tools, or do people mostly code entirely on their own?
+
+I’d love to hear any advice or personal experiences from others in bioinformatics, biotech, or pharma. How can I navigate interviews, represent my skill set honestly, and continue leveling up my coding ability? Also, if you have insights on how hiring managers view the use of AI tools (especially in these industries), I would really appreciate it.
+
+Thanks in advance for any thoughts and guidance!
+
+Comments:
+- Imo, a tool should be a tool, not a clutch. Do coding exercises (like https://rosalind.info/, as u/Wilneva mentioned) without chatGPT, until you feel confident enough in your ability to code. Just take your time, start with exercises as easy as they need to be, and build your confidence. This will also help with coding interviews.
+
+It seems to me you turn to AI to help you troubleshoot your code. Debugging is a coding skill, and one that you may have not developed nearly as much as others, because of that. It does not make you a fraud, it's just an area you need to work on. Everybody has weak areas, nothing to be ashamed of! Good luck
+- you need a chatgpt detox
+- As a bioinformatician, programming will be your primary skill and what employers will mostly be paying you to do. While you will be expected to have familiarity with biology and in some cases statistics, you will be coding all day every day in many/most roles.
+
+Companies do not allow ChatGPT for several reasons, including HIPAA compliance, unwillingness to pay a license fee, skepticism about the quality of the code, and reluctance to hand over internal company data to Microsoft/OpenAI servers.
+
+Since ChatGPT is a tool, attitudes may change over time about whether you are allowed to use it, although I don't expect that to happen soon. Most coding challenges do not allow you to use Google or StackOverflow so I would not expect to be able to use AI, unless the technical assessment is a take-home assignment and the instructions permit AI use.
+
+AI still makes mistakes in the form of technical inaccuracies and hallucinations. When ChatGPT can't solve a problem, you will be expected to do so yourself, which means having a strong foundation in coding is essential. If you are coding often enough to be a bioinformatician, you should be able to do quite a bit off the top of your head without relying on ChatGPT. If you feel your skills aren't up to par, now would be a good time to start deliberately learning how to code from scratch rather than leaning too heavily on GPT.
+
+The technical interviews will be a measure of whether you have the skills they want or not. I'd recommend applying and trying the technical interviews even if you are feeling nervous, because you can learn a lot even if you don't get an offer. I try to have a light-hearted take on this and say if I learn from every job interview mistake, eventually I will run out of mistakes.
+
+All that said, veterans still use Google/StackOverflow/ChatGPT to help them throughout the day. There's no expectation that you can complete the whole job without outside assistance -- it's more a matter of whether you meet whatever the criteria the prospective hirer has in mind, and that's hard to answer from a reddit post or for all employers.
+- I have a similar background as you and learned most of coding from online resources pre-LLM era which gave me a basic understanding of comp. science. Do not have any answers to your questions, however dropping a couple of resources that may be helpful for preping for interviews:  
+[https://leetcode.com/problemset/](https://leetcode.com/problemset/)  
+[https://rosalind.info/problems/locations/](https://rosalind.info/problems/locations/)
+- I think a lot of people in the coding world, have this issue now.
+
+Basically I would say at this point carry on using chatGPT untill you have the qualification and don't risk that.
+
+Then after, get a normal job, that doesn't involve so much coding for 6 months and then use all your downtime, to do code problems and don't use chatGPT.
+
+Cause in the real job world, if you can't code without the help of a bot you will be very quickly exposed.
+- Start a project, publish it in your GitHub, that should give you what you need to get started: 
+
+You will get experience, it doesn't matter if you turn to ai for help if the final product works
+
+
+You will have something to show to interviewers instead of having to sell your skills
+
+As in every field, getting the job done is first priority and then comes how you did it (but you shouldn't worry about that right now)
+- **Fake it until you make it. Bragging is a skill. You need to believe** ***in*** **yourself and convince others you can do the job well. Coding rounds without LLM help may be inevitable, but working on a project is a different story. People don’t care** ***how*** **you did your job—they only care whether you did it** ***well*** **or not.**
+- Yo I need this badly as well...I keep second-guessing myself and just turn to ChatGPT to understand pretty much everything...I need to build up the confidence. It's just so much faster with ChatGPT when your PI is constantly wanting super fast results...
+- I understand you mean well with a comment like this but it's a vicious cycle at this point. I'm in a degree where all my peers are either extremely skilled programmers or use AI and online forums to help them fill the gaps. I might be able to complete an assignment without GPT but when I'm competing with other who most definitely use it, I would be falling behind in terms of grades and elegance of solution. So when things like that are on the line, I am at a fix. It's tough out here :/
+- > Companies do not allow ChatGPT for several reasons, including HIPAA compliance, unwillingness to pay a license fee, skepticism about the quality of the code, and reluctance to hand over internal company data to Microsoft/OpenAI servers.
+
+Also a copyright landmine.
+- IDK, I previously worked in academia and now work in industry. In both cases they had their own LLM that complies with whatever regulations there are. You can’t purely rely on them but LLMs can be a great tool. You can’t use them for your interviews tho.
+- Many companies allow ChatGPT or others like copilot. However, in programming tests they are often not allowed.
+
+I think it is reasonable to use them, but it is important to not just blindly copy the results and hope it works. This is also true for Stackoverflow. I often review scripts from biologists and you see sometimes actual stack overflow blocks just pasted into it. I do not think this is better than using ChatGPT and co, since both cases the answers were not understood or challenged.
+
+About the copyright and so, this totally depends on your companies product.
+
+And finally, I think there is mindset problem, especially in veterans that assume LLM are the enemy and everyone who is using it, is a traitor or something like that. I hope this will change and they will accept LLMs as a tool. I do not think it will replace programmers for now.
+
+To some up, use LLMs if they help you, just don't use them blindly without challenging or thinking about the result.
+- Second that. The only way to find out is applying… will be a fun(hopefully not too stressful) process. But industry isn’t that intellectually stimulating unless you are lucky to get into some research labs.
+- Thank you so much for these resources, I will check them out!
+- Yeah this is the way.
+
+
+While you're working on this project don't use chatgpt.
+Then use chatgpt, compare the code it makes for you to your own code.
+Don't copy and paste, Google/look up anything you don't understand chat gpt has done and then try to write it yourself, but better.
+
+
+Ideally, once you're done, ask someone you think has more experience than you to look over your code and give you feedback. 
+
+
+Repeat.
+
+
+You now not only have something to show to employers, you've got a library of stuff you've written yourself you can then use in future work (guilt free), you've become better at coding, and you've hopefully made a connection (i.e networking) with one or more people.
+- Daily reminder that ChatGPT doesn’t think. It’s producing a likely string of text based on training data. I wouldn’t say ChatGPT is faster at all, because its results are not trustworthy.
+- just hold on...registring an LLC and getting a cabin in the woods rn
+- This is going to sound mean, but it’s a hard truth you need to hear if you want to be a competitive candidate in this field. You are not experiencing imposter *syndrome*. You did not allow yourself to develop necessary independent problem solving skills and tried to justify that you had to do it to get your degree. 
+
+Refer to all the posts of people who got a masters degree in bioinformatics and never found a job in the field if you think obtaining the degree is the hard part and the competition ends once you get it. 
+
+Too much is on the line now for you *not* to learn how to solve problems without chatGPT. You can do it, I believe in you! Maybe take some community college level programming classes so you don’t feel pressured to get good grades and can learn and build these skills.
+- This is unnecessarily mean and deviates from the point. I had imposter syndrome before, during and after my masters, so chatgpt is not the cause of it. And they never said that the competition ends after their degree.
+- OP came here looking for reassurance that it’s normal and fine that they can’t even complete the problems in their coursework without ChatGPT. Someone told them to stop using ChatGPT for a while and they responded with excuses for why they can’t do that and called it a vicious cycle. At some point, they’ll need to break that cycle and put in the effort without being spoonfed by a “magic answer machine.” The purpose of a masters program is to take the time to learn, not to simply receive the degree. If someone isn’t knowledgeable enough to critically evaluate and iterate upon what ChatGPT tells them to do, they are doing themselves a disservice relying upon it. The longer they wait to turn ChatGPT off for a few weeks, the deeper they are digging themselves into this hole. It’s a problem they still have time to do something about, but they need to recognize that it *is* a problem in order to fix it. 
+
+Imposter syndrome implies a reasonably competent person feeling they are incompetent. It’s normal. But someone will never be able to put in the work and effort to become competent *in the first place* if they wave away their valid insecurities about their insufficient skills as “imposter syndrome.”
+
+I don’t know a kinder or gentler way to say it, someone that can’t finish their work if ChatGPT goes down for the day is not someone who will be effective in industry. This is not a criticism of OPs potential or character in any way, but they aren’t going to magically one day be able to problem solve without ChatGPT if they don’t practice doing things without ChatGPT. 
+
+This is not a new problem, for the previous generation it was stackoverflow abuse. There were the people who used stackoverflow as a resource to guide their problem solving and then there were the people who could not produce anything but stackoverflow spaghetti nightmare code. ChatGPT is just really good at making the spaghetti for you now.

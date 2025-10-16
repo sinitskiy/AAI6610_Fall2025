@@ -1,0 +1,21 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/16m03qn/research_detecting_errors_in_numerical_data_via/
+Title: [Research] Detecting Errors in Numerical Data via any Regression Model
+
+Content:
+Years ago, we showed the world it was possible to automatically detect label errors in classification datasets via machine learning. Since that moment, folks have asked whether the same is possible for regression datasets?
+
+Figuring out this question required extensive research since properly accounting for uncertainty (critical to decide when to trust machine learning predictions over the data itself) poses unique challenges in the regression setting.
+
+Today I have published a new [paper](https://arxiv.org/abs/2305.16583) introducing an effective method for “**Detecting Errors in Numerical Data via any Regression Model”.**  Our method can find likely incorrect values in any numerical column of a dataset by utilizing a regression model trained to predict this column based on the other data features.
+
+We’ve added our new algorithm to our open-source cleanlab library for you to algorithmically audit your own datasets for errors.  Use this code for applications like detecting: data entry errors, sensor noise, incorrect invoices/prices in your company’s / client’s records, mis-estimated counts (eg. of cells in biological experiments).
+
+[Find errors in regression data in just a few lines of code.](https://preview.redd.it/bdmxt6jri1pb1.png?width=1170&format=png&auto=webp&s=93f498a4dcc27a2b018d02e5b513707bb9eb860b)
+
+Extensive benchmarks reveal cleanlab’s algorithm detects erroneous values in real numeric datasets better than alternative methods like RANSAC and conformal inference.
+
+If you'd like to learn more, you can check out the [blogpost](https://cleanlab.ai/blog/regression/), [research paper](https://arxiv.org/abs/2305.16583), [code](https://github.com/cleanlab/cleanlab), and [tutorial](https://docs.cleanlab.ai/stable/tutorials/regression.html) to run this on your data.
+
+Comments:
+- Based on your description it sounds like regression imputation, just not used to fill in missing data but check for potentially erroneous data points.

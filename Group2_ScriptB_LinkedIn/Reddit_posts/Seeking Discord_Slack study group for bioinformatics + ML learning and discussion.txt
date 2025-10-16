@@ -1,0 +1,38 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1m8ti3e/seeking_discordslack_study_group_for/
+Title: Seeking Discord/Slack study group for bioinformatics + ML learning and discussion
+
+Content:
+Hi everyone,
+
+I am a final-year CS student transitioning into **bioinformatics and AI/ML for genomics**. I am seeking **active Discord or Slack communities** where learners and practitioners discuss:
+
+* Genomic data analysis workflows
+* Machine learning applications in bioinformatics
+* Career pathways and practical project ideas
+* Study accountability and collaborative learning
+
+I find learning with a community keeps me motivated, especially while exploring **practical bioinformatics pipelines and ML integration with genomic data**.
+
+If you know any **open, active communities** or if you have one you recommend, I would be grateful if you could share the invite link or name.
+
+Thank you in advance for your help!
+
+Warm regards,  
+Gayathri
+
+Comments:
+- The subreddit already has a slack group, and has channels for many of those topics. 
+
+See the “before you post” post for more information
+- Thank you for reading and any guidance you can share!  
+I am especially looking for **active, beginner-friendly communities** where I can learn and contribute gradually while building solid skills in **bioinformatics pipelines and ML for genomics.**
+
+If you have any advice on **getting started practically** in this area, or communities you found helpful during your learning journey, I would love to hear.
+
+Thanks again for your time!
+
+– Gayathri
+- https://discord.gg/VhUyj6tp
+- I think reading different papers and work notes available in internet will help you. Next take help from ChatGPT and the like to build up a preliminary understanding. I am also not aware of any such group so can't help you in this regard, sorry!!
+- Try searching the other umpteenhundred posts regarding same.

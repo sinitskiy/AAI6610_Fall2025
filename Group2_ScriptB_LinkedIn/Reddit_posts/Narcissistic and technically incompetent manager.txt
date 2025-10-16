@@ -1,0 +1,63 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18uijqx/narcissistic_and_technically_incompetent_manager/
+Title: Narcissistic and technically incompetent manager
+
+Content:
+   
+I finally understand why my manager was acting the way he does. He has all the symptoms of someone with narcissistic personality disorder. I've been observing it for a while but wasn't sure what to call it. He also has one enabler in the team. He only knows surface-level stuff about data science and machine learning. I don't even think he reads beyond the headlines. He makes crazy statements like, "Save me $250 million dollars by using machine learning for problem X." He and his narcissistic enabler coworker, who may be slightly more competent than the manager, don't want to hear about ML feasibility studies, working with stakeholders to refine requirements, and establishing whether ML is the right solution, data quality checks... They just want to plow through code because "we are agile." You can't have detailed technical discussions because they don't know enough about data science. All they have been doing was front-end dashboarding. They don't like a step-by-step process because if they do that, they can scapegoat you. Is there anything I can do till I find another job? 
+
+Comments:
+- I was in this position and the lesson I learned was that I should have left as soon as I saw the problems with my manager. I tried to change the environment/ how people treated me and that was a mistake. I ended up bashing my head against the wall and got punished for it and nothing happened to management. Managers have a huge impact on your mental health. My new life policy is that I will change jobs the second I don’t like my manager. You deserve to work for someone you respect that also respects you!
+- This is what happens when idiots get into middle management. I don't think there is anything for you to do other than looking for something else; as that would be the smart reaction to this problem
+- While I understand that management really only needs to know the surface level information, they also need to know they only know the surface level. I couldn’t dream of putting a demand like that on my team. In part, I rely on my experts to help me understand what is possible. I might challenge them to go a little further, but that’s from a place of encouragement. If something really isn’t possible, then it’s the job of the manager to communicate that up to whomever has the unrealistic dream. If this upward communication isn’t happening, it’s likely there is an insecure “yes-person” in the chain who can’t speak truth.  
+
+Get out if you can.
+- Lol I literally just left an environment like this
+- Do you have skip-level meetings with your manager's supervisor? Before leaving this toxic environment see if you can find an ally higher up. If you can't, it's time to leave.
+- I had a similar experience in the past. What I did was to bluntly confront the manager, let him know that what he demands is imprudent while explaining the reasons on a whiteboard as if I am teaching a junior year student who knows nothing. Every time he presented a demand without any details, I'd challenge him with the basic "why", "how", "when", "who" questions, which of course, an idiot like him was unable to answer. Whenever he brought a dumb ask in the middle of a project, I asked him to redifine the priorities then. And when he said something is a high priority, I asked to explain the reason for making it so.
+
+It honestly started motivating everyone else to challenge him instead of keeping it to themselves. Lost all respect. Leaders noticed of course. He became manager no more.
+- I used to have a manager like this but he got fired
+- In India this problem is rampant- very few can and want to be on the technical side. Everyone wants to do MBA and become a manager/people manager (easiest route doing simple admin excel work ) - as a result you become people manager after 3-4  years with very less or negligible technical expertise and start building team of people with same expectations.
+You have to be extremely lucky to have a manager that you can have technical discussions with or one who can roll up his sleeves and write some code or even guide.
+All you can do is fight, ask for a project transfer ,keep your head high, ignore the managers and keep on doing what you want because you have decided to see things differently.
+- I noticed in your post they dismiss any concerns by claiming "we are agile".
+
+This is yet another example to showcase that Agile is only good for two things:
+
+1) Convincing idiots that the only reason something is not working is because we are not managing our resources well.
+
+2) Masking micromanagement as "effective strategy".
+
+Agile is the astrology of software development. It's proponents are delusional.
+- Leave.
+
+The manager and you being under them is likely by design.
+
+It's cheaper to send you to purgatory than hell. Data science specifically tackles large problems and being able to navigate expectations is like any relationship. The problems are likely like the Kobayashi Maru and that is beyond your scope.
+- Find a new position.  However, keep in mind that you will find idiot narcissists in every line of work and company.  Hopefully you can determine this during the interview process with questions like "Describe the manager's style." or "What are your biggest challenges in this position and how does team navigate around them.", etc.  
+
+Good luck.
+- Document everything.   Never be alone with this boss. anything out of the ordinary should be memorialized
+- Oh gosh, I've definitely met this person and they were a nightmare to work with. 
+
+Do anything you can to move to another team. Look up the "gray rock" approach to dealing with narcissists. Stay cordial and non-confrontational until you can get out.
+
+Be sure to make your inquiries into other teams/jobs being about the "exciting new opportunity" in front of you and not about ditching your boss (unless you are best friends with the hiring manager).
+- fwiw that sounds like incompetence, but it could be NPD (narcissistic personality disorder) so I'd be cautious.  For anyone curious, the key characteristic is NPDs are manipulative.  If there is no manipulation it's not NPD.  The most common form of NPD is the fake lover sometimes called a gold digger, a wife or husband that fake loves another to use that relationship as a way to live off of their partner for free and to manipulate and take advantage in any other way they want to.  In the business world the most common NPD is someone who makes their work look like something it isn't, taking credit for others work and making their faults look like someone else's throwing them under the bus.  In DS circles the NPD often is a snake oil salesman, making up fake DS terminology to management that doesn't know the difference.  When someone honest comes along what management believes conflicts with reality.
+
+I would find another company.  Even the "we are agile" bit is a yellow flag.  Some forms of DS work, like data analysis, can be done agile, but traditional DS work is research based which is incompatible with most agile.
+- I work in a specific field of research management governed by Federal statutes and regulations. There are procedures. My supervisor came in swinging at me when he arrived in 2022. He was determined to neutralize me from the get-go. He is there to gain qualifications and experience and then get out in as short of a time as possible. Others don't seem to see it. Managing this specific resource shouldn't be something that slows down project completion, but the way management approaches it usually leaves me playing catch-up by the time they hand the project to me. Instead of address the planning side of it, my supervisor has decided to completely side-step and subvert the regulatory process. It makes me look bad, while he gets to claim success and glory. I let him know that I can't pass the red face test with the state regulators who check our work. His response: "I'm willing to take risks." They seek immediate rewards with little thought given to the consequences. When the chickens finally come home to roost, he claims that those aren't his chickens. His supervisor believes him and supports passing the blame to others. He is going to make sure that his supervisor is the very last person to catch on to his depravity. Meanwhile, I am presently on FMLA leave so I can receive mental health treatment.
+- I used to work as a full-time IT engineer for a govt body, and knowing that I was a part-time phd student, the dept director asked me if I could take up an AI research and development project on a volunteer basis since the innovation team that was responsible for it had been dissolved due to the covid lockdown. Naturally, I agreed wholeheartedly and would take up the challenge on grounds that I could publish my works. So fast forward 9 months later, my prototype worked and it showed high level of accuracy, so I published my works with my university with tier 1-2 journals. But then, the contractors in the dept wanted to muscle into my project as it gained over $750k of research funding, in which I relented, resigned and moved to a new job. All in all, I worked under a team leader, my manager, a project manager and director.  
+  
+1 year later, they issued me a legal letter of demand, telling me that I published the papers without their consent and required me to take actions to withdraw the papers. I don't have the stomach to fight with them but I did filed a complaint with the government check body which is of little use. I did take down the published paper after contacting the publishers.  
+  
+I was foolish to trust their words and didn't get their consent written down on a paper when they asked me for the favour. I hope that future working data scientists could learn from my mistakes and avoid this pitfall.
+- You work for Musk, don't you?
+- Have him sign off on the requirements & if possible insert something they would not catch in the code. It should buy you some time to look for a better org/role. And when you leave enable the loophole 😉 to create some type of crazy lookback period (for example). So that manager will struggle to make necessary modifications😆At some point someone will realize he authorized this redic request!
+- trees mindless attractive threatening puzzled grandiose humorous swim school crush
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- Please do not be cross but the higher management, the decision makers are like this very often and they are under pressure. What about going through hr and reverse mentor them: an hour a week or every two weeks to exchange and educate one another according to set rules?
+
+Edid: I humbly accept your minuses, but please verbalize your critical thoughts. I would like to learn from them and modify my behavior. So far I think that my sentence is right and I learned it the hard way, from my own experience and my colleagues working in banking, telecom, medical etc. The problem is often with communication and implementation.

@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m51kwv/d_is_transfer_learning_and_finetuning_still/
+Title: [D] Is transfer learning and fine-tuning still necessary with modern zero-shot models?
+
+Content:
+Hello. I am a machine learning student, I have been doing this for a while, and I found a concept called "transfer learning" and topics like "fine tuning". In short, my dream is to be an ML or AI engineer. Lately I hear that all the models that are arriving, such as Sam Anything (Meta), Whisper (Open AI), etc., are zero-shot models that do not require tuning no matter how specific the problem is. The truth is, I ask this because right now at university we are studying PyTorch and transfer learning. and If in reality it is no longer necessary to tune models because they are zero-shot, then it does not make sense to learn architectures and know which optimizer or activation function to choose to find an accurate model. Could you please advise me and tell me what companies are actually doing? To be honest, I feel bad. I put a lot of effort into learning optimization techniques, evaluation, and model training with PyTorch.
+
+Comments:
+- Of course they are still very useful. These zero-shot models are really great, but require much larger models. If you want a classifier and care about compute, it makes much more sense to fine-tune an existing classifier than to use a much larger (jack of all trades) model.
+- The answer is gonna depend heavily. Zero-shot models can't zero shot everything, or ML would be solved, and hell, I'd bet the vast majority of people building products take existing models and fine tune them anyways.
+
+But either way, I think your mentality is a bit wrong. 
+
+The field will change, maybe even by the time you graduate. Don't focus on learning one cool cutting edge technique, it might not be relevant by the time you need it. Focus on becoming someone who can understand and implement whatever you need to implement. 
+
+Learning how to fine a tune a model was not wasted effort, it was practice implementing something. It was practice reading a paper, modifying code, running cross validation, whatever...
+- They’re not actually zero shot, they’ve just been trained on so many things that it’s unlikely they haven’t already seen something close to your domain.
+- Depends on the problem that you're working on.  
+OpenAI offers finetuning on their models: [https://platform.openai.com/docs/guides/supervised-fine-tuning](https://platform.openai.com/docs/guides/supervised-fine-tuning)  
+Either way, good to know finetuning if you are serious about learning PyTorch and building your own model at some point
+- Keep this in mind, fine tuning and transfer learning are taking advantage of an existing model and training it for your specific use case. That’s assuming the model is appropriate for the context. If you try to use these models out of the box for your use case it might do well, or it might not. Many reasons for this, namely the data type, how it was collected and so forth. This is where transfer learning and fine tuning become your friend if you have a dataset or datasets that contain the information you want the model to learn.
+
+Transfer learning is used a lot in computer vision, for example. I’m sure others can expound.
+- I think whether zero shot models work depends on whether it can successfully determine the relevant problem type based on the context information provided. It has seen a mix of very diverse problem types, and not all are relevant for your task, and it needs to correctly identify the problem to produce a relevant solution. There is always a risk the model still misidentify the problem (e.g. believing a temperature trace is a sales record), and the risk might even go up with increasing model size. On the other hand, if you have a specialised model, it avoids the need to identify a problem class, and even when it fails, it often fails in more predictable and identifiable ways.
+- Zero-shot models are impressive, but transfer learning and fine-tuning are still very relevant—especially in cases where:  
+  
+\- You need domain-specific accuracy  
+\- Compute costs matter (smaller fine-tuned models are often cheaper to run)  
+\- The task isn’t well-covered in the model’s pretraining
+
+Most production use cases still rely on transfer learning or lightweight fine-tuning to get solid, reliable performance. So learning those fundamentals (optimizers, loss functions, PyTorch workflows) is time well spent—modern models are built on top of those foundations anyway. You're not learning obsolete skills—you’re building the context to make smart decisions about *when* zero-shot is actually good enough.
+- It's crazy that ML students now find actually training the model obsolete. It is not. All papers claim they have zero shots models, but almost all of them are "zero shot" in a very narrow way. Not only, e.g., whisper won't solve all problems for audio. It's often worse than smaller finetunned models, and in the end, it's like travelling by airbus to a local grocery store. Same goes for all the other models
+- yes of course, we’ve just rebranded the problem a bit
+- if u want to build a real, sustainable, maintainable product, yes. u know, how it's always meant to be.
+
+zero shot is the dream, but we all agree that token driven development (tDD) just sucks ass. it s handy at first, nightmare to maintain over time
+- \>To be honest, I feel bad. I put a lot of effort into learning optimization techniques, evaluation, and model training with PyTorch.
+
+these models are huge. they can't be used for real time purposes. can't be served on smaller devices. they're great for general purpose q and a, but still lacks when it comes to in domain problems.
+- For some tasks, maybe we are approaching the point of doing things purely in a zero-shot manner. Mostly language tasks come to mind. For other areas and emerging fields, like protein engineering, fine-tuning and transfer learning is critical and used all the time due to the nature of the data. 
+
+If you want to work as an ML or AI engineer, model selection will always be important. Even if some architectures become obsolete in the future, understanding them will build a strong foundation toward becoming an MLE. What I am trying to say is, master the fundamentals and don't chase trends.
+- First, these large generalised models rarely do well enough on most common testing datasets to be relied on in any business application. Fine-tuning often improves that significantly, but has downsides like loss of generalisation and plasticity.
+
+Secondly, understanding fine-tuning and its effects on a model is a great way to understand machine learning fundamentals in general. Exploring how an embedding space or model activations change from a base model to a fine-tuned model is much easier on small models, but crucial to modern ML research and development.
+
+Lastly, you are barely scratching the surface of ML at this stage. These bigs models are only a few years old and majority of the techniques used to make them are either not new or inspired by older ideas. Learn all you can, it won’t be a waste.
+- Even with the large models, fine-tuning them still makes them perform much better on specific datasets. Very apt to use the “jack of all trades” reference, as they are generally strongly masters of none.
+- Also a lot of "zero-shot" models aren't necessarily zero-shot. They are just trained on a fairly large corpus of training data and your data probably appeared during training.

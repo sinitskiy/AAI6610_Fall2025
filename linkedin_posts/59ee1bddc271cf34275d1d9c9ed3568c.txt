@@ -1,0 +1,5 @@
+URL: https://www.linkedin.com/posts/tomchatfield80_mitigating-llm-hallucinations-in-text-summarisation-activity-7206713137763368960-CGiL
+Date: 2025-09-24
+Author: Unknown
+
+Some really interesting, practical points on mitigating hallucination here. Break things up, keep prompts pithy, put key text at the top of prompts and then explain what's do be done with it... and many more useful, testable suggestions.

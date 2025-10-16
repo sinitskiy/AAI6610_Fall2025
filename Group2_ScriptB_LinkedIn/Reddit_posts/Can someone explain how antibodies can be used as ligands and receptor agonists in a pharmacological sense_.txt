@@ -1,0 +1,16 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/u47xir/can_someone_explain_how_antibodies_can_be_used_as/
+Title: Can someone explain how antibodies can be used as ligands and receptor agonists in a pharmacological sense?
+
+Content:
+I'm familiar with how small molecules/peptides can be used to activate or antagonize receptors to affect cell function or protein synthesis as it's the foundation of pharmacology. But I've read papers that mention how synthesized antibodies can do the same. Antibodies are much larger than small molecules so how does this work and also what advantage is there? I feel like nobody really talks about this? How does an antibody act as a ligand in the context of acting like a drug to affect downstream cell function as a therapy? Are there cells that have receptors that antibodies can bind to affect transcription? Antibodies that be agonists/ antagonists? I've seen papers that mention it but no good review paper that actually explains this concept (never heard or learned about it in grad school)
+
+Comments:
+- Antibodies can be very specific (if made right) and in some scenarios can also be cheaper. They do have issues with repeat administration but for say antivenom (hopefully a one-time thing) they are fairly common.
+
+How it works is that an antibody is made to target a receptor. A simple version of this the receptor is injected into an animal(like a horse or rabbit) and done repeatedly. This leads to the adaptive immune response generating an antibody response to the receptor. Blood from the animal can then be collected and the desired antibodies separated out. 
+
+Now, antibodies generally can activate immune cells to kill or eat whatever they bind to and drive an immune response(normal signaling) or simply coat something like a virus so that it can't infect another cell. However, some antibodies due to being specific to a receptor will instead bind a receptor and through binding act like a receptors ligand or simply block that receptor from binding a normal ligand thus activating downstream signaling.
+
+Advantages are relative cheapness to make and produce. Disadvantages are that most antibodies generated this way are not human based and repeat administration can have a response to the antibody's origin. This is generally controllable in a clinical setting though. There's obviously a lot more to the process, I skipped several other options like hybridomas, types of antibody selection, and didn't go super in-depth. You might try rephrasing your pubmed search to find a review I'm fairly sure they exist but I'm on mobile and lazy.
+- antibodies ARE receptor ligands. the Fc domain is the effector region of the antibody, the stem of the Y if you prefer. the Fc region binds to receptors on immune cells to iniate a response.

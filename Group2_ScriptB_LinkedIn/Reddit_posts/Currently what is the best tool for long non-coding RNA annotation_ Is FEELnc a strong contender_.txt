@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/9dccqr/currently_what_is_the_best_tool_for_long/
+Title: Currently what is the best tool for long non-coding RNA annotation? Is FEELnc a strong contender?
+
+Content:
+Would love to have your view on the question. Especially would be interesting to know if machine learning has helped improve performance recently for long non-coding RNA annotation, and if so using which algorithms.
+
+Comments:

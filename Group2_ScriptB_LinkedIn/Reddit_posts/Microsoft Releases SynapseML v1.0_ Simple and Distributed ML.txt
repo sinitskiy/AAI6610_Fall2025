@@ -1,0 +1,23 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17wun58/microsoft_releases_synapseml_v10_simple_and/
+Title: Microsoft Releases SynapseML v1.0: Simple and Distributed ML
+
+Content:
+Today Microsoft announced the release and general availability of SynapseML v1.0 following seven years of continuous development. SynapseML is an open-source library that aims to streamline the development of massively scalable machine learning pipelines. It unifies several existing ML Frameworks and new Microsoft algorithms in a single, scalable API that is usable across Python, R, Scala, and Java. SynapseML is usable from any Apache Spark platform (or even your laptop) and is now generally available with enterprise support on Microsoft Fabric.
+
+To learn more:
+
+Release Notes: [https://github.com/microsoft/SynapseML/releases/tag/v1.0.0](https://github.com/microsoft/SynapseML/releases/tag/v1.0.0)
+
+Website: [https://aka.ms/spark](https://aka.ms/spark)
+
+Thank you to all the contributors in the community who made the release possible!
+
+&#x200B;
+
+[SynapseML v1.0: Simple and Distributed ML](https://preview.redd.it/vmvqgixmcr0c1.jpg?width=4125&format=pjpg&auto=webp&s=89f89d9b92cbb6ae604504b80522274fb4b8b93d)
+
+Comments:
+- Your post has been removed because you need at least 10 comment karma in this subreddit to make a submission. Please participate in the comments before submitting a post.  Note that any Entering and Transitioning questions should always be made within the Weekly Sticky thread.
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/datascience) if you have any questions or concerns.*

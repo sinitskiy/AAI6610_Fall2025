@@ -1,0 +1,47 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/11stv9f/d_comparison_of_the_model_prediction_uncertainty/
+Title: [D] Comparison of the Model prediction uncertainty of two different models
+
+Content:
+In your career as data scientists have you ever faced the situation where you have to compare the quality of the predictive uncertainty estimation of a machine learning model with an old statistical model that was already in use? if so, how did you do it?
+
+i have a bnn trained on some experimental data and a statistical models developed by my department that depends on some parameters estimated through the classic mcmc methods. Both seems to agree well with the experimental data but i wanted to compare the quality of the model predictive uncertainty
+
+&#x200B;
+
+i thought about comparing the level of calibration of the uncertainty but  i am not sure if i have to do it on the test dataset (due to the bnn) or the entire dataset ( due to the fact that for the old statistical model they use mcmc methods on the entire dataset)
+
+Comments:
+- I assume by bnn you mean a Bayesian neural network. It is designed specifically to estimate uncertainty by parametrization of weights with distributions. You can do inference several times and you will get slightly different results each run. This is because in order to do forward pass the network samples its weights from the learned distributions. Then by measuring std of the predictions (or doing something more statistically clever) you can estimate the model uncertainty.
+
+There are other ways of uncertainty estimation, like Monte Carlo dropout. These methods work on arbitrary networks, but personally I don't really trust them.
+- check conformal prediction for this. It’s for uncertainty quantification for deep neural networks
+- Hi, I am doing something similar. Have you figured this out?
+- Log-likelihood
+- i know, the bnn works well and the rmse on the test set is almost equal to the one i get if i employ the old model, but rmse is ameasure of the accuracy alone. i wanted to check which one of the two gives the better uncertainty estimates
+- Ah but I have quantified the uncertainty for the neural network. What I don't know is how to compare the UQ of the neural network with the old statistical model
+- can't use it, i think. the bayesian neural network  assume that the data points are  independent so  the likelihood is a product of normal distribution, but the  old mathematical model developed by   our department  does not make this assumption and  uses the full covariance matrix (which is very close to a  diagonal matrix anyway), so it's an old multivariate normal statistical model vs an univariate normal bnn
+- Why not just compare the distribution of the residuals for both methods? That should get to the point.
+- I see your point. Then what about looking at the average  of the marginal likelihoods?
+
+We need to find a way of modelling the joint covariance for BNN...
+- In a paper by Kwon, (https://www.sciencedirect.com/science/article/abs/pii/S016794731930163X) he/they break down uncertainty into aleatoric and epistemic components. That may or may not be relevant, but they do so with a full matrix approach. Which means the aleatoric/epistemic uncertainty contains the full covariance matrix per sample, not just a single data point. Maybe that would help?
+
+And/or you could try taking the determinant of the covariance matrix to compare to your mcmc results
+- It does not tell me if the uncertainty is calibrated: a prediction with an 80% of uncertainty must be right in 80% of the cases on average (according to the weak notion of average calibration)
+- >average  of the marginal likelihoods
+
+how do i find it?
+- uhm i have split aleatoric and epistemic uncertainty but it's a regression problem. i will update the Opening post.
+- my idea was to compare the level of calibration of the uncertainty  but  since the mcmc model does not require splitting the dataset  i find myself in a position where :
+
+&#x200B;
+
+the bnn require that i split the dataset in : training set, calibration set and test dataset
+
+the old mcmc model instead use the entire dataset.
+
+&#x200B;
+
+so if i want to compare the level of calibration what do i use? the test set or the entire dataset?....
+- You compute the likelihood for each datapoint and then average the results. That will be a measure of the likelihood for each point without considering the dependencies.

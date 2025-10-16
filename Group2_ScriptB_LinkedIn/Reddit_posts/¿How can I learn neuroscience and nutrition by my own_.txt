@@ -1,0 +1,44 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/bq3lpg/how_can_i_learn_neuroscience_and_nutrition_by_my/
+Title: ¿How can I learn neuroscience and nutrition by my own?
+
+Content:
+Hello! Im a 21 male from spain, I m finishing my web development course and Im starting a big data and machine learning bootcamp very soon. And since I like programming, I was always interested in nutrition and the brain too, so I want to learn things in order to be able to work in or create a company related to nootropics, superfoods, and brain or health related technologies even internet-brain human interfaces like neuralink. Some "futuristic" stuff like that. Im sure here on reddit many people will understand me haha. So if you could tell me how can i start to get knowledge for that  I would appreciate it. Consider that my level of biology and science is like high school but i dont find it really difficult either and i have a lot of time, so dont worry about that. Thank you very much!
+
+Comments:
+- >I have no experience in a field, but an convinced it is probably easy. I'm spending a week learning tensorflow and want to work in a made up field doing things that the best and brightest in the field aren't capable of. 
+
+You're going to have to temper your expectations a little bit
+- Whether or not you found high school biology and chemistry difficult, neuroscience is an interdisciplinary field that spans biology, psychology, chemistry, physics, and even sociology. It’s incredibly complicated and, at a level that becomes relevant to reach the goals you have in mind, it will take a significant amount of time (like years, it tends to be longer when self studied as well).
+- Read the Bible: [Principles of Neural Science](https://www.amazon.com/Principles-Neural-Science-Fifth-Kandel/dp/0071390111/ref=nodl_)
+- You have to find collaborators, interdisciplinarity requires team work. Focus on what you do well, get a decent understanding of neurology and nutrition through text books then peer reviewed research (start with reviews and meta-analyses). But to make a difference, reach out to neurologists and nutritionists and pitch your ideas.
+- Find textbooks, don't trust the internet and work hard. The reason I say 'don't trust the internet' is because half of the things you mentioned (nootropics and superfoods) are dominated by junk pseudoscience. The reason I say work hard is because programming is easy - I don't say that lightly, I've got a decade academic biological research experience and teaching myself tensorflow was one of the easier things I've done in the last three years. Finally, don't underestimate the complexity of the natural world. For any topic which is under active research, the answers just aren't known. A professional scientist will work their entire life on a single topic (like some single aspect aspect of neurobiology) and likely die still not knowing the answers to many of the fundamental questions in their field. Having said all that, motivated young minds are the future.
+- Honestly, I would start with textbooks. You can usually find them quite a bit cheaper if they are an older edition (say buying edition 7 of “Neuroscience” when edition 8 is currently being used in school). 
+
+Textbooks really are an amazing resource where all the relevant information to a subject is collected in one place for you and it will help you get a broad background of the concepts and terminology.
+- Check courses for available courses in the subject. I’m currently enrolled in a free neurobiology class
+- Off topic, but I found it incredibly cute that you included the inverted question mark in English from your native language :D
+- [deleted]
+- Hi I dedicated about 10 years to this topic, so far. Always learning more but I did my PhD in Nutrition focused on fetal brain development. I agree you need to learn the fundamentals from a good text. 
+
+My recommendation for a nutrition textbook is: Biochemical and Physiological Aspects of Human Nutrition by Marie A. Caudill and Martha H. Stipanuk
+
+Open Stax Bio2e is a free resource to help learn basic Biology they also have Chemistry, Physics, Anatomy and Physiology 
+
+Neuroscience text: 
+Principles of Neural Science
+by Eric Kandel, James H. Schwartz, and Thomas Jessell
+
+or
+
+Fundamental Neuroscience by Larry Squire, Darwin Berg, and Floyd Bloom
+- Well, there's the internet...
+- They're expensive, but I'd recommend getting textbooks that university students would typically use.
+- [deleted]
+- Okey I understant you and is a great reminder to meet people and all of that. I dont pretend to know everything but I want to be able to keep conversation with my team in a possible future. and i dont mind if it takes years really haha
+- So confident about it haha, i ll check it out. thank you!
+- Okey sounds good, what reviews or metaanalyses would you recommend? Is like i can start reading analysis with no prior knowledge or how should i embrace it?
+- It made me think some things your question, firstly, i find really interesting you found easy to programm, but yes i can imagine after a few time the only difficultie is to debugging more than figuring out the solutions. At least in web design. I dont know if it will be the same in AI.. haha and about working in a field all my life, well it may be true that the latest answers about the topic wont be reached in a soon future since everything is evolving so quickly and will continue evolving but there are many things that can be already applied from all the knowledge we have. We just need investment and great teams. And for me, the goal is a better world so its not so unreachable. but still we need appasionate people who focus on one field and is crazy focused on it haha. And thank you for the answer btw!
+- totally agree, as many people here. Thank you!
+- what class is it??
+- hahahah i didnt realize!

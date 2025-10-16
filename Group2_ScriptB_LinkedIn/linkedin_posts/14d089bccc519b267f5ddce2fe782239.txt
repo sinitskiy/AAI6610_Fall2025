@@ -1,0 +1,56 @@
+URL: https://www.linkedin.com/posts/warrenbpowell_teaching-sequential-decision-analytics-ix-activity-7314679061232967680-j9OP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Warren Powell的动态
+Warren Powell 
+Warren Powell是领英影响力人物
+
+Professor Emeritus, Princeton University/ Co-Founder, Optimal Dynamics/ Executive-in-Residence Rutgers Business School
+
+6 个月
+
+Teaching sequential decision analytics IX – Sources of uncertainty 
+
+If we are going to model uncertainty, we have to start by identifying the different forms of uncertainty. One way to do this is to grab some six-packs of beer and sit around a white board.
+ 
+To give this process a some structure, I recommend Chapter 10 of my book, “Reinforcement Learning and Stochastic Optimization,” which lists 12 classes of uncertainty from the perspective of models (I list these below, with examples from supply chain management). These are written purely from the perspective of a modeler. The idea is to use the list and then think about your problem domain to identify any that seem to belong in each class (note that there is some overlap).
+ 
+Not every problem area will have uncertainties in each of the classes, but complex problems such as health, energy and supply chain management will. And once you list all the forms of uncertainty relative to your application, it doesn’t mean that you are going to incorporate them all in your model.  But I think it helps to work from a complete list.
+ 
+Chapter 10 provides more detail, and illustrates their use in the context of the COVID pandemic. Take a look at
+ 
+https://lnkd.in/eRxYQy8q (“tinyurl.com/” with “RLSOchapter10”)
+
+101
+2 条评论
+赞
+评论
+分享
+Juan Pablo Fernández-Gutiérrez
+
+Doctor en Modelación y Computación Científica.
+
+6 个月
+
+Warren Powell, why do you put algorithm instability as an uncertainty source?
+
+赞
+回复
+Kevin Corella Nieto
+
+Strategic Systems Architect | Decision Frameworks for AI & Quantum Projects | Portfolio & Project Management (PfMP®, PMP®)
+
+6 个月
+
+Hi Prof. Warren Powell !.....  I’ve been reflecting on the 12 sources of uncertainty you outlined in Chapter 10 of Reinforcement Learning and Stochastic Optimization

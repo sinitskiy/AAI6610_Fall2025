@@ -1,0 +1,12 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1nwyp45/microscopy_data_analysis_machine_learning_and_the/
+Title: Microscopy data analysis: machine learning and the BioImage Archive virtual training course
+
+Content:
+Join EMBL's European Bioinformatics Institute for the 2026 edition of Microscopy data analysis: machine learning and the BioImage Archive. 
+
+This virtual course will demonstrate how public bioimaging data resources, centred around the BioImage Archive, enable and enhance machine learning based image analysis. The content will explore a variety of data types, including electron and light microscopy and miscellaneous or multi-modal imaging data at the cell and tissue scale. Participants will cover contemporary biological image analysis with an emphasis on machine learning methods, as well as how to access and use images from databases.
+
+Full programme, course fee, and registration information on the [course website.](https://www.ebi.ac.uk/training/events/microscopy-data-analysis-2026/?utm_source=reddit&utm_medium=event+listing&utm_campaign=MIC26)
+
+Comments:

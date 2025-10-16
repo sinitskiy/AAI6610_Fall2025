@@ -1,0 +1,58 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/177ifms/how_to_handle_incompetent_manager_while_looking/
+Title: How to handle incompetent manager while looking for another job
+
+Content:
+ 
+
+I work in a large federal government agency, and regrettably, I have an extremely incompetent manager who spent many years working on dashboarding before being promoted to lead our team. My manager lacks any prior experience as a data scientist, data engineer, or machine learning engineer and is unwilling to learn in these areas. Given the nature of government employment, the likelihood of termination or layoffs is exceedingly low. The organization comprises both employees and contractors with the title of "data scientists," but there's no clear plan on how to utilize their skills effectively. Additionally, our data governance and data quality processes are almost nonexistent.
+
+There is a  significant fraud problem resulting in multimillion-dollar losses. One of the major challenges is that there are multiple definitions of fraud within the organization, making it nearly impossible to get straight answers when seeking guidance from supposed subject matter experts. Furthermore, various teams within the agency have different agendas when trying to address the fraud problem.
+
+The CIO has recently directed us, likely influenced by management consultants, to use machine learning to solve the fraud problem. Nevertheless, it's apparent that there are many low-hanging fruit solutions, like process changes, that don't require machine learning and could significantly alleviate the issue.
+
+Now, our manager is pressuring our team to build a machine learning model to supposedly save X millions of dollars. It appears that many people here are more interested in showcasing flashy tools and ideas to the directors and CIO, rather than delving into the details of the problem. Some of the other data scientists are demonstrating the use of complex machine learning techniques without truly understanding the problem statement or the models they are building. To make matters worse, we don't even have a clear, agreed-upon estimate of how much money we are losing.
+
+In this chaotic environment, the manager wants us to build a model simply because someone in another team has done something similar. Our manager is focused on marketing and doesn't seem to care about the necessary details. I've suggested that we should invest time in understanding the data and conduct a feasibility study to determine if machine learning is an appropriate solution before committing to creating elaborate models. However, my manager either doesn't grasp the importance of understanding the data or simply doesn't care. Today he said I want each of you to build a model and compare results.
+
+I know that the right thing to do is to leave the company or the team, and I am actively working on it. In the meantime, how can I handle this situation in the best possible way?
+
+Comments:
+- Dealing with the same issue (department of defense). Can’t fix stupid unfortunately, best to start looking elsewhere
+- Keep challenging respectfully and flagging the risks of doing it this way. Don’t forget about your own development - focus on the skills you’d like / need to develop for your next move. Keep looking outside. I had similar experience with everything data-related at a big defence contractor.
+- dinner impossible tease full edge cause murky instinctive plough brave
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- Have you tried educating up? I’ve had my shares of difficult leaders. You don’t get to win all arguments but I find that my next steps when wanting to argue a point is to use my own acquired skills. Make a readout/presentation showing how there is really little ROI running this project and how there would be more value running another project. 
+
+In the private sector, once a manager or director burns through time and money without providing any proof of ROI. His days are numbered. 
+
+Assuming you have personal 1 on 1 time with your leader. Could you not prepare data examples of whatever challenge your facing and ask how he would handle this situation?
+- Use machine learning and try to detect fraud obviously. Maybe you can target a more specific or better defined type of fraud so you can hopefully demonstrate their approach is inefficient or inaccurate.
+- Can you tackle the problem the way it needs to be addressed and then throw a vestigial regression or something in there?
+- Hey OP, I had a similar problem in my previous org, but with a different usecase.
+
+Easiest way to get out of it this without hurting your rep is maybe make the model, but do as much exploratory stuff you can given the time constraints and make the best possible one. Might have to slog a bit for this though. Its hard to deal with fickle egos, and opposing their views multiple times will only impact you negatively.
+
+On a side note, I am looking for DS/DA openings after being laid off, would appreciate in case theres any leads. Market is very tough right now, so would not suggest that you quit without an offer in hand :)
+- Your issue is you work for the government. It is not government job is bad, it is the unions that is the problem. 
+
+Here is how my buddy put it as a federal employee, if you work hard, you make yourself a lot of enemies.
+- Sounds like they need to modernize their data relevant to fraud, step 1.  I assume all your data is on prem?
+- >Nevertheless, it's apparent that there are many low-hanging fruit solutions, like process changes
+
+Load a local LLM like Llama-2 , feed it the qualitative observations you've made here, and have it conclude that process changes (like firing your manager) will solve your problem. There, you've used "machine learning" to solve the problem.
+- Thanks. Yes, moving out is the ultimate solution, but in the meantime, I need to strategize how to manage the situation until I can successfully make the move without stressing myself. what did you do
+- Sorry I edited it. There is a revenue fraud in a major product sold by the agency.
+- There are several layers between me and the CIO, and I don't have direct access. The CIO is known for being quite persistent and rarely accepts 'no' as an answer. I've been informed that she is determined to incorporate machine learning for fraud. The project involves a significant number of individuals, including contractors, each with their own motivations. Contractors are primarily focused on maximizing their billing, and they can't afford to upset the CIO in any way, as it could jeopardize their contracts.  
+  
+I've repeatedly raised concerns about the quality of the data, but it seems my input has fallen on deaf ears. While I've highlighted the limited return on investment in our projects, the prevailing attitude appears to be taking things week by week. The challenge lies in impressing our director and executives. The manager seems to believe that building a model will instantly lead to substantial cost savings, without delving into how the operational teams will effectively utilize the model's outputs. The manager prefers not to get bogged down with details or take ownership of these aspects.
+- A tip: Try to identify the different types of fraud and prioritize based on volumes. Maybe get together with the team and split handling different frauds among yourselves (rather than work independently on the same thing). Happy to speak with you over a call, I have worked with fraud use-cases worth $100M+ in fintech and would be glad to help, free of charge.
+- You've been brainwashed if you think unions are bad.
+- Yes it is on prem. We have databricks enviroment also. We ask data engineers to load data there.
+- Funny saying this in terms of fraud, but fake it till you make it. Can you write some very simple procedural script that will detect the low hanging fruit/process issues? If so, black box it and describe how you’re using decision trees, etc in the model. It’s not a lie, accomplishes the job. The more you succeed, the more autonomy and voice you’ll get.
+- ML doesn’t necessarily imply some absurd multi-layer CNN. Use the right tool for the right job, but you don’t need to sound like you’re saying “no”, because that’s all your boss will hear, and sounds like that’s all he can understand.
+- Unions are bad. 
+
+Please list one entity after a unions is attached to it get better.
+- This. You can run some simple regression and it still is ML . Also it can be trivial to run a more complex arch to see if there are any improvements to be easily gained relative from to your baseline

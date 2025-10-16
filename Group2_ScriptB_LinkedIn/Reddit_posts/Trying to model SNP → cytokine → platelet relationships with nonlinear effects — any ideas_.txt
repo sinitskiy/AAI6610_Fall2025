@@ -1,0 +1,67 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1jv60f6/trying_to_model_snp_cytokine_platelet/
+Title: Trying to model SNP → cytokine → platelet relationships with nonlinear effects — any ideas?
+
+Content:
+Hey everyone,
+
+I'm still quite new to research, especially in bioinformatics and statistics, so I’d really appreciate any help or guidance with this
+
+I'm analyzing cytokine profiles for two SNPs that are thought to influence platelet count in opposite directions(I also confirmed in my analysis that there's a statistically significant difference in platelet counts between the wildtype and both SNP genotypes as assumed). One is assumed to increase platelet count, while the other is believed to reduce it. I have genotype information for all participants, where individuals are categorized as wildtype, heterozygous, or homozygous for each SNP.
+
+I started by analyzing the cytokine levels(I generally calculated the median) across genotypes for each SNP separately, but the patterns I observed didn’t really make perfect biological sense. The differences between genotype groups were inconsistent and hard to interpret. Hoping for more clarity, I then looked at combinations of both SNPs, analyzing cytokine profiles for each genotype pair. Interestingly, certain combinations — like double heterozygotes — showed cytokine patterns that seemed more biologically plausible, but other combinations didn’t fit at all.
+
+I also tried using dimensionality reduction (UMAP) and applied some basic machine learning methods like Random Forest to see if I could detect patterns or predict genotypes based on cytokine levels. Unfortunately, the results were messy and didn’t reveal any clear structure. Statistical tests, including Kruskal-Wallis and Mann-Whitney U-tests, didn’t show any significant differences in cytokine concentrations between genotype groups either.
+
+What I’m really trying to do is express the biological relationships more formally: I think that in my case my cytokines (IL1B, IL18, and CASP1) relate non-linearly to platelet count, and I suspect the SNPs affect these cytokines. So essentially I want to model something like:
+
+SNPs → Cytokines (non-linear) → Platelet count
+
+Is there a way to bring this all together in a model? Or is there another approach that would allow me to include the non-linear relationships and explore how the SNPs shape the cytokine environment that in turn influences platelet levels?
+
+Thanks in advance!
+
+Comments:
+- > The differences between genotype groups were inconsistent and hard to interpret.  
+> ...  
+> certain combinations — like double heterozygotes — showed cytokine patterns that seemed more biologically plausible, but other combinations didn’t fit at all.  
+> ...  
+> Mann-Whitney U-tests, didn’t show any significant differences in cytokine concentrations between genotype groups either.
+
+Sounds like you're searching for a story that isn't there. I'd simply report back (as you have here) that there is no consistent relationship between the selected SNPs and the cytokine profiles.
+
+If a relationship exists, it should be well-supported when looking at it from multiple different angles. What it looks like you have here is a relationship that only exists when looked at from a single specific angle.
+- Interesting problem... just wondering, did you also check for any significant effects on platelet counts in your analysis? Especially for the heterozygotes, was there any noticeable difference? And what's the allele frequency of the SNPs you looked at? How many individuals were included in your dataset—do you think there's enough statistical power to detect a meaningful effect? If not, then maybe that's why you are getting different results for different genotypes, I simply assume that you don't have enough individuals with homozygot mutations...
+- It sounds like you have done about everything you can do. If the data doesn't support it then it doesn't support it. At some point further work with the dataset becomes p-hacking or otherwise not useful (you may have already passed that point to be blunt).
+
+Exploration to discover new hypothesis' to test isn't bad especially in a failed experiment, but you do need to realize it can't be directly test the hypothesis, just guide further experiments. Ideally those hypothesis' discovered in exploration are tested on a separate dataset either as a holdout from the original one or a completely different set of experiments so they are independent.
+
+Unfortunately science isn't really setup to reward experiments that fail even though they are just as important as experiments that succeed.
+
+As for why you aren't seeing what you expect... it could be many things ranging from sample variability is too high to get a statistically significant signal, it could be something in the wetlab failed, it could be some subtle flaw with how the experiment was designed, it could be samples were swapped (seeing Y chromosome NGS reads in a sample labeled Female is always depressing), it could be the expected relationship is not actually what is going on. I've seen all of these as reasons an experiment failed to show the expected result.
+- Are these cytokines measured in the plasma? Keep in mind that free plasma cytokine levels are associated not only with cytokine production but also with binding to receptors. You might not be seeing any association because higher levels in one group could be canceled out by more binding to receptors, resulting in less availability in the end.
+- That's actually the core of the problem. I *do* see a significant effect of the SNPs on platelet counts, and I know exactly where the mutation is and which pathway it's affecting—so it makes biological sense that cytokines would also be involved.
+
+I suspect the cytokine changes are just complex: some may be upregulated while others are downregulated, possibly as a downstream or compensatory effect of altered platelet biology. What makes it even more confusing is that all of these cytokines are biologically **correlated**—for example, **CASP1 is responsible for processing both IL-1β and IL-18**. So logically, you'd expect **CASP1 levels to be high** when **IL-1β and IL-18 are high**. But in some cases, like when both alles are mutated for example, I’m seeing the opposite: **CASP1 levels drop**, while **IL-1β and IL-18 shoot up -** and the effect of the SNP on platelet counts is still significant! That’s the paradox I’m struggling with. It just doesn’t fit the expected pattern, which makes me think there's either **feedback regulation**, **compensatory pathways**, or something else I'm not accounting for.
+
+That’s why I’m trying to use mathematical models or bioinformatic tools to define the relationships better and uncover the structure behind the complexity. Hope that explains my question a bit better, and I really appreciate your time and input. I’d love to hear your further thoughts if you have any!
+- Yes, I did check for **significant effects on platelet counts**, and the results are clear: the **association is statistically significant**, especially for the SNPs I'm focusing on. I also ran a **power analysis**, and based on my sample size and effect size, the **power is sufficient** to detect meaningful differences—even when stratifying by genotype, including **homozygotes and heterozygotes**.
+
+So the differences I’m seeing across genotypes aren't likely due to a lack of statistical power. That’s why it’s so puzzling—biologically, things should line up, especially since I know the pathway these SNPs are affecting. But when it comes to the **cytokine profiles**, it seems there's a more complex regulatory mechanism at play, and I’m trying to figure out how to model that properly.
+
+Would love to hear your thoughts if you’ve dealt with similar situation, appreciate your time and answer:)
+- Thanks a lot for your thoughtful comment—I really appreciate it.
+
+Just to clarify: I actually **did find a significant effect** of my SNPs on **platelet counts**. These are **missense mutations**, and I know exactly which **pathway** they influence. So from a biological standpoint, it makes sense to assume that if **platelet counts are significantly altered**, then **cytokines within that same pathway** should also show some kind of pattern.
+
+And I do feel like *something* is there—maybe not straightforward or easily statistically significant, but there's a pattern that doesn’t seem random. That’s the part I’m struggling with: I **don’t yet know how to show it properly**, which is why I’m considering using **clustering**, **ML approaches**, or **non-linear models**. For me, at this point, it’s **less about proving statistical significance** and more about **developing a new hypothesis** for follow-up experiments.
+
+So I completely agree—this current dataset might not be the place to “prove” anything new, but I’m hoping to **extract insight** that can help me design the next round of experiments more intelligently.
+
+It’s definitely hard to know when to stop digging and move on, so I really appreciate that reminder. If you have any further thoughts or ideas, I’d love to hear them. Cheers!
+- Ahh, you’re right. I have the data directly from UK Biobank, so I assume those are from blood samples. That could explain a lot—since we don’t have the transcriptomes, it’s really hard to say whether these levels aren’t influenced by receptors or other factors. I’ll definitely think about that. Thanks a lot!
+- Be interesting to see if methylation levels for IL1B, IL-18, and CASP1 were affected. Any chance you’ve got proteomics or transcriptomics to dive into it as well?
+- Have you tried GSEA on related pathways? That would be a better way to model complex pathway-based changes, rather than scratching around for inconsistent differential expression.
+- I only have some protein data—it's from blood samples of patients. Unfortunately, I don’t have the transcriptomics, which is actually a big limitation. In the next step of the project, we're planning to work with mouse models, and then we'll be able to include transcriptomic data as well. I’ll definitely consider looking at methylation then. Is there a specific reason you’re asking about methylation? I know it can indicate gene silencing or inactivity, but I’d be curious to hear your thinking behind that:)
+- I only have a limited number of proteins(actually for my pathway only those 3), so I’m not sure if GSEA would really work in this case. From what I understand, GSEA is typically used with larger gene expression datasets—like transcriptomics or RNA-seq—so I’m not sure how meaningful it would be with just a few proteins. Or is there a version of pathway enrichment that works well with small proteomic datasets? I’d be interested to hear your thoughts:)
+- Okay, sorry, in that case I can't really help out. It's too far away from what I'm familiar with.

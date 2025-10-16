@@ -1,0 +1,78 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ap3tes/can_machine_learning_give_us_faster_and_cheaper/
+Title: Can Machine Learning Give Us Faster and Cheaper Clinical Trials? (On Trial Design, Historical Controls, and Clinical Prediction Models)
+
+Content:
+Since you guys seemed to enjoy my [last post](https://www.reddit.com/r/datascience/comments/197dkkz/the_hard_truth_about_artificial_intelligence_in/), I thought I'd share my latest blog post. [Check it out here.](https://www.reddit.com/r/datascience/comments/197dkkz/the_hard_truth_about_artificial_intelligence_in/) Below is a quick brief about the article:
+
+In drug development, where the median clinical trial costs about $48 million, biotech companies face the major challenge of balancing expenses with the need for robust, well-designed, and sufficiently large clinical trials. This reality has motivated software companies like Unlearn.AI to pioneer machine learning (ML) applications to boost clinical trial efficiency. Yet, implementing such cutting-edge methodology is not without significant practical challenges.
+
+Today's post delves into the merits and limitations of Unlearn's ML-based Prognostic Covariate Adjustment (PROCOVA). I argue that the theoretical cost-savings of PROCOVA are unlikely to be realized in practice. Given the often high stakes of clinical trials, the risk of adopting innovative ML-based methodologies may not be worth the purported benefits.
+
+Where do you see ML and clinical trials going? Let me know in the comments below!
+
+Comments:
+- [deleted]
+- PROCOVA works, but AI / ML has very little to do with it.
+- [https://www.fharrell.com/talk/stratos19/](https://www.fharrell.com/talk/stratos19/)
+
+Frank Harrel is an extremely accomplished statistician, and we can all learn a lot from him.  He's also pretty down to earth and spends a lot of time on free resources and education despite having more than  earned his retirement a decade ago.  He has a fantastic free textbook and regularly posts to his blog.
+
+This talk among others demonstrates some fair criticism into why it's harder said then done to embrace things like say-nn's, or 'modern' tenchniques in modern clinical research that go under the radar.  Perhaps the biggest issues are that clinical trials place a LOT of emphasis on calibration, interpretation, etc etc.
+
+(i'm not saying statisticians do not use modern methods.  they created \*the modern methods\* that you usually here about in hype cycles, some decades ago-but some of the more 'modern' methods don't have established theoretical results that make them attractive in certain domains.)
+- In a different context to drug development, AI tools on trial design or clinical prediction models are in a state still low explored, most of cases due to a chaotic data structure and with the clear knowledge that it is difficult to exploit information for this type of development, as well as the difficulty of the nature of this context. It has to show the real point in which we are at a technological level and all the necessary data architecture development, in my case working in a major hospital in Spain I am at a point where I spend a lot of time to refute the expectation of what is going to be possible with AI, in relation to the "incredible" results of AI that the medical staff, together with the rest of the team members without a technical profile in this field, read in the news about LLMs make them think that the application in a medical context is going to be quick and easy. There is still a big job of technical awareness, and for data scientists to focus on doing a great job on explainability of results, robustness of what is developed (in my case I am focusing lately on the use of Conformal Prediction, I highly recommend it to link the predictions to a level of significance given the distribution of the data, without assuming any deviating distribution), traceability and continuous communication with the medical team and post-training modifications of the models.
+- Short answer no. They already is randomized control trials which is a common type of validation. And it’s a lot more complex given the human aspect to it. The only way AI could potentially help is if we have a better computer model for the body.
+- Lol
+
+No, most biotech and pharma companies have exaggerated applications of AI. They all want to cut down the cost of clinical trials which is almost impossible because it is human cost (+ the drug of course). 
+
+Machine learning could help in better rational drug design. There are many ways to do this from a scientific standpoint. Everyday new articles about novel methods and reviews are published. However, this requires significant knowledge of core biology and chemistry related fields.
+- There are some exceptional answers here. 
+
+One additional point I'd like to make is that most of what are referred to as AI approaches, require very high sample sizes to shine, and in a lot of clinical trial settings, sample sizes are small. For instance:
+
+* In a [recent paper](https://onlinelibrary.wiley.com/doi/10.1002/sim.9931?af=R) Infante et al. (2023) confirm (again) that for survival outcomes, the sample size necessary for ML models is significantly higher than traditional models: "*random forests requires at least 150% more than the minimum sample size suggested for traditional regression models, while neural networks requires about 200% the minimum sample size*". Other papers had shown that in most scenarios it's difficult to beat the workhorse model (Cox PH).
+
+* In a [recent paper](https://med.stanford.edu/content/dam/sm/dbds/documents/biostats-workshop/paper-1-.pdf), Efron writes: "*Evidently there are a great many genes weakly correlated with prostate cancer, which can be combined in different combinations to give near-perfect predictions. This is an advantage if prediction is the only goal, but a disadvantage as far as attribution is concerned. Traditional methods of attribution operate differently, striving as in Table 1 to identify a small set of causal covariates (even if strict causality cannot be inferred)*". Which translated means it would be more difficult to explain to regulators why they should trust results from these models, since they care more about attribution than prediction (see hero_pup and relevantmeemayhere answers).
+
+* Significant skepticism among scientists exists on personalized medicine. Not an expert on this, but the experts whose judgment I value, have spoken less than positively about it. 
+
+With that being said, we are seeing areas where AI approaches seem to bring some value such as diagnostic imaging, even though there are still significant challenges ahead. Patient recruitment could be another area. And who knows, LLMs may help in expediting some of the more regulatory work, kinda like we use LLM as personal assistant today.
+- Yes.
+- https://www.amgen.com/stories/2022/10/follow-the-data
+- Well said. Certainly I personally wouldn't grow a company around that.
+- Last I checked, PROCOVA has pre-qualification from the EMA. Unlearn.AI was smart about doing that.
+- Very well articulated.
+- Can you explain how it works, if it’s not the ML?
+- The question are moreso
+
+
+1. How much better is it than covariate adjustment in realistic condition?
+2. How can it be effectively used in power calculations?
+
+
+I have no problem with it being used as "the cherry on top" for extra efficiency.
+- For a computer model of the body, we are absolutely deluding ourselves if someone claims to have a functional computer model for the body. 
+
+Anyone who says this is 100% over confident and 100% wrong and looking for thalidomide 2.0. 
+
+We know so little about the inner molecular workings that its straight up dangerous to claim otherwise at this point. 
+
+I’m a doctor, I’m also a data scientist/researcher.
+- Thanks for your comment. I was unaware of the Infante paper. There are some great papers related to the minimum sample sizes in the binary setting:
+
+* https://onlinelibrary.wiley.com/doi/full/10.1002/sim.9025
+* https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/1471-2288-14-137
+
+On the diagnostic imaging point, you may be interested in my previous substack post about AI-driven CAD diagnosis.
+- Sure. Go look at the papers detailing the PROCOVA design. Basically what is required are prognostic covariates, these prognostic covariates get used to construct regression models that also include treatment effect. If the prognostic model is good, the power of detecting an effect in the regression model is greater than the power in an analogous two sample test. (Depending on the particulars of the trial the situation can be more complicated, but that about sums it up.)
+
+Deep and complicated AI / ML is not required to build the prognostic covariate. In fact, a ‘digital twin’ is an inefficient way of getting such a thing. 
+
+PROCOVA is a great idea. The AI / ML stuff is mostly just marketing.
+- I guess for (2), the calculations are done for you in the related papers. 
+
+For (1), I’ve seen anecdotal work showing that there is no gain from broad scope digital twins vs say typical regression technologies in terms of prognostic model construction related to specific endpoints of interest. 
+
+That said, I’d judge PROCOVA as probably the best hope for using external data to build more efficient clinical trials.

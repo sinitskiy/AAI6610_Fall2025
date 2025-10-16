@@ -1,0 +1,24 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nsnbep/p_built_a_differentiable_parametric_curves/
+Title: [P] Built a differentiable parametric curves library for PyTorch
+
+Content:
+I’ve released a small library for parametric curves for PyTorch that are differentiable: you can backprop to the curve’s inputs and to its parameters. At this stage, I have B-Spline curves (efficiently, exploiting sparsity!) and Legendre Polynomials. Everything is vectorized - over the mini-batch, and over several curves at once.
+
+Applications include:
+
+* Continuous embeddings for embedding-based models (i.e. factorization machines, transformers, etc)
+* KANs. You don’t have to use B-Splines. You can, in fact, use any well-approximating basis for the learned activations.
+* Shape-restricted models, i.e. modeling the probability of winning an auction given auction features x and a bid b - predict increasing B-Spline coefficients c(x) using a neural network, apply to a B-Spline basis of b.
+
+Link: [https://github.com/alexshtf/torchcurves](https://github.com/alexshtf/torchcurves)
+
+I wrote ad-hoc implementations for past projects, so I decided to write a proper library, that may be useful to others. And I hope i will!
+
+Comments:
+- Good stuff! Maybe interesting if youre looking for more splines, https://github.com/bayesiains/nflows also implements cubic and rational quadratic splines from [Neural spline flows](https://arxiv.org/pdf/1906.04032)
+- This sounds super helpful for nonlinear regression in Pyro as well.
+- Didn't know its used there as well!
+
+But I think it reinforces my motivation. The reason I wrote it because everybody re-implements their own parametric curves.
+KANs, nflows, and me myself 3 years ago for another research project.

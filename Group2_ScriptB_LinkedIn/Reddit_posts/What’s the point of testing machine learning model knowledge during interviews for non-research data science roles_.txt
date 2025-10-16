@@ -1,0 +1,106 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hewiu9/whats_the_point_of_testing_machine_learning_model/
+Title: What’s the point of testing machine learning model knowledge during interviews for non-research data science roles?
+
+Content:
+I always make an effort to learn how a model works and how it differs from other similar models whenever I encounter a new model. So it felt natural to me that these topics were brought up in interviews.
+
+However, someone recently asked me a question that I hadn’t given much thought to before: what’s the point of testing machine learning model knowledge during interviews for non-research data science roles?
+
+Interview questions about model knowledge often include the following, especially if a candidate claims to have experience with these models:-
+
+* what's the difference between bagging and boosting? 
+* whether LightGBM uses leaf-wise splitting or level-wise splitting?
+* what's the underlying assumptions of linear regression?
+
+I learned these concepts because I’m genuinely interested in understanding how models work. But, coming back to the question: How important is it to have deep technical knowledge of machine learning models for someone who isn’t in a research position and primarily uses these tools to solve business problems?
+
+From my experience, knowing how models learn from data has occasionally helped me identify issues during the model training process more quickly. But I couldn’t come up with a convincing argument to justify why it is fair to test this knowledge, other than “the candidate should know it if they are using it.”
+
+What’s your experience with this topic? Do you think understanding the inner workings of machine learning models is critical enough to be tested during interviews?
+
+Comments:
+- > How important is it to have deep technical knowledge of machine learning models for someone who isn’t in a research position and primarily uses these tools to solve business problems?
+
+Are they supposed to make their own decisions about which model to use in what cases and explain the tradeoffs, esp. if they had to take a possibly worse looking result to avoid a footgun? Or are they just supposed to move JIRA tickets to `Done`?
+
+Re interview questions, there is going to be a useful way to ask about this, and a less useful way. Less useful is asking out of nowhere "what's the difference between bagging and boosting?". The useful way is asking a candidate to propose a solution and then asking for questions that reveal if they understand the point of what they're doing or if they just view a test/model/whatever as a hammer with which to smash nails.
+- > whether LightGBM uses leaf-wise splitting or level-wise splitting?
+
+Specifically on this one, I expect this is only asked by hiring managers who don't know what they are doing and found some list of questions to ask. Knowing the answer to this has zero practical effect on how the applicant uses ML models in practice and how that translates to business value.
+
+However, knowing the differences between Linear Regression and Gradient Boosting does because it impacts how you perform feature engineering. (similarly when using neural networks vs Gradient Boosting).
+- Deep knowledge? I guess we differ on that definition because those examples you gave are just standard things anyone using those models should know. So that's one thing, I don't think people need to be experts on every model and they don't need to understand all the complex math or algorithms behind them, but if you claim to have used some model I expect you can answer questions like these about it. 
+
+Think about your last example, which is one I think anyone claiming to know machine learning should definitely have a grasp of since it's the gold standard and easy to understand. How in the world are you going to use linear regression if you don't know the underlying assumptions? If you apply it to a problem that violates the assumptions you're going to waste everyone's time. Now extend that to any model you otherwise decide to use. If you use it you better know the basics of what's going on and the assumptions otherwise how can you evaluate when it behaves in unexpected ways? When I interview people I only question them about things they've worked with and if I get answers like oh I just tried a lot and this one seemed the best, you're not going to move forward.
+- Having better understanding of how the models work leads to better intuition on how to treat your data, how you might deal with unexpected results, and tradeoffs for using different methods to solving problems. I get why it seems like gatekeeping but someone that has a deeper understanding of what happens under the hood is going to have a more thoughtful approach than someone that doesn’t and in my experience is a stronger hire.
+- Its not gatekeeping, in many cases its in job you need to be able to interpret and explain your model. If a person for example can’t interpret a model and just goes through the motions. Then how can they explain said model to a validator?
+
+Little is taken into account in bias and what a model actually implies. Its so bad in fact that there are ds with 2-3 years experience who claim they know causal inference but then say its just feature importance of a predictive xgboost model. 
+
+You absolutely need to drill the candidates because there is a dime a dozen who just takes orders and does exactly what their boss says. But any semblance of independent thought or actual understanding is nonexistent. At the end of the day this person is going to build the model not their manager. So they need to know how to make calls on their data and then ask their manager for the remaining 10-20%.
+
+Your comment about just models learning from underlying problem highlights what I notice with many DS. They just fit a model and call it a day, when in truth there is a lot more work left to be done. Just fitting a RF model and getting predictions is not the only way. If anything deep knowledge helps a lot in actually engineering features in a way that can help a model perform better.
+
+
+For example i had a coworker who i told him they should benchmark the logistic model properly and they said its garbage as it produces 40 auc. Little did they know, they needed to engineer features and do more work. In truth the logistic model actually outperformed the xgboost and had better convergence between test and train auc. This for example is a strong case of why understanding how a model works is critical. Its not just .fit, .predict, go brrrr
+
+Another example is how someone can interpret the probabilities and logs of predictions. You have people who claim
+They know shap but cant even explain what the shap value actually represents.
+
+
+Edit: one thing id like to add is that the understanding of a model is critical so one can converge the model at hand with the business. Our job is to build models that actually make sense not just maximize auc. Every single piece from business, explanation to validators, and getting good performance all banks on knowing how the model works. You dont need to be an expert on all algorithms but knowing 2-3 algorithms pretty in-depth is good for me personally and when I interview i make sure to see how well you know something and can actually apply it.
+- Those are pretty basic examples. Nothing deep about them. 
+
+Personally, I want to know that a candidate knows why they're using a method and not another method, and that they understand how the tools they're using work. And more importantly when they don't work well. Knowing how different tree variants work makes you think harder about your results. Example of a good general gotcha for tree classifiers is calibrated probabilities VS just getting the 1/0 output. 
+
+Minimally, I want to know that they're curious about how and why the tools they use work. Someone who's willing to blindly press the "make model" button and use the results isn't going to be a good data scientist regardless of technical knowledge.
+- What's the point of hiring a data scientist for ML over a regular software developer if you don't actually understand how the models work? The whole point of hiring a data scientist specifically is because you should have a deep grasp of data science fundamentals and can identify and use the most appropriate models for a given domain problem.
+
+Granted, ideally, you should be able to trust that a candidate knows these things based on their degree and coursework. But I understand we don't live in an ideal world.
+- To me it reveals the interest you have in the field. 
+It’s a good bonus if someone finds these things interesting enough to enjoy digging into the details. 
+
+I have worked with data scientists that wouldn’t even read up on material relating to a problem/project, e.g. how has it been solved before etc, and just expected to learn everything from seniors.
+A person who has read up on the inner workings of models is most likely not this type of person. 
+
+Of course, it must be balanced with other traits, as a too detail oriented perfectionist will not meet important deadlines.
+- I think that the more you know the better off you are.
+- The point of this question, if asked correctly, is to ascertain whether the interviewee is bothered to look under the hood of the tools they use to a degree that might allow them to tweak/troubleshoot things when on the job, or they are the type of data scientist who just throws things at models and runs model.fit() blindly. When I say asked correctly, it should be about a type of model they say they used either on their cv or in conversation, where they should know something since they used the model previously. This should not be asked about a random model because who cares if they know or not if it's not something they have had to use in anger
+- Redpill is, interviews are generally 10x harder than what you actually do in the job.
+- Gatekeeping.
+- You are certainly right that some interview questions are more appropriate for research-heavy roles than traditional data science roles (deep learning/NNs, mathematical derivations).
+
+The questions you listed are not part of this category. Every data scientist should conceptually know how the basic ML models work.
+- You've just described almost exactly what I'd ask in an interview.
+
+"We are a supermarket that uses models to help make our marketing more relevant to our customers.  We are building a model to work out which of our customers have a baby.  We are getting similar performance metrics between random forests and xgboost.
+
+Briefly describe what those algorithms do and the key differences.
+
+You decide to proceed with XGBoost.  While it's average performance is the same as RF for this problem, which sort of customer would you guess it performs better on? What would it perform worse on?
+
+We go live with XGBoost and it performs adequately.  What changes in the business would you expect to cause it to struggle with and what proactive actions would you take?"
+
+There's no need for esoteric knowledge.  The stuff about how the model works has real business consequences and I would expect you to be able to anticipate and explain them.
+- Dude I overemploy and am constantly interviewing, I never fucking understood that too, I do a/b testing, backend de, and reporting ETL shit, and I answered some conditional choice probability interview Qs Friday about second price auctions bro, you fucking tell ME why they asked that shit. Guy was the most technical person I’ve ever had interview me, he said we’d skip the technical round because I knew my shit. Ty chatgpt and playing RuneScape as a kid because I can type what someone says live and get answers to all his fucking regardedly impossible Qs for someone who’ll do glorified a/b testing.
+
+And if I dropped the company name you’d laugh, it’s not even FAANG. My current FAANG job asked me a hypothetical about something I’d be doing in marketing ads so at least that shit was relevant.
+- While a deep understanding of machine learning models is crucial for research roles, it's equally important for non-research data scientists to have a solid grasp of the fundamentals. This knowledge enables them to:
+
+* **Choose the right tools:** Understand the strengths and weaknesses of different algorithms to select the best fit for the problem.
+* **Interpret results:** Analyze model outputs critically, identify potential biases, and explain findings to non-technical stakeholders.
+* **Debug and improve models:** Troubleshoot issues, optimize hyperparameters, and refine models for better performance.
+* **Collaborate effectively:** Communicate technical concepts clearly with engineers, product managers, and other team members.
+
+While a deep understanding of mathematical foundations is not always necessary, a practical knowledge of how models work is essential for success in non-research data science roles.
+- basically problem-solving questions, rather than tool-based questions
+- Agreed. OPs first and third questions are good but this question is totally useless. A slightly better question is asking about the difference between leaf wise and level wise splitting but even then, I struggle to understand why I would care. To my knowledge (and maybe I’m wrong), there’s no clear reason why one strategy is better than the other. So even knowing the difference between the two feels closer to machine learning trivia versus fundamental knowledge.
+- >When I interview people I only question them about things they’ve worked with and if I get answers like oh I just tried a lot and this one seemed the best, you’re not going to move forward.
+
+This is fair and makes a lot of sense. 
+
+I think OP is talking about pop quiz style questions anything considered “data science” is game and may not be something the candidate has used before.
+- yeah instead of tabular data = xgboost. Trying to come up with reasons.
+
+Otherwise we end up situation where people use random boost, xgbag, catboost or dogbark .....

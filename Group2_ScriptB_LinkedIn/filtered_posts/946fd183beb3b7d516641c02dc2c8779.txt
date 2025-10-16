@@ -1,0 +1,92 @@
+URL: https://www.linkedin.com/posts/winstonchen2017_just-published-a-new-preprint-on-arxiv-activity-7261868455560122368-jYOB
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Winston Chen的动态
+Winston Chen
+
+ML 研究员和工程师 | 深度学习、医学成像、联邦学习 | 计算机视觉 | 不确定性估计
+
+11 个月
+
+🚀 Just published a new preprint on arXiv (2411.05324)! 🚀
+
+📄 SASWISE-UE: Segmentation and Synthesis with Interpretable Scalable Ensembles for Uncertainty Estimation
+
+What’s the goal? 🌟 Making deep learning models in medical imaging more interpretable and reliable for clinical use. Here’s how we’re doing it:
+
+Blockwise Dropout: Typical dropout introduces randomness for uncertainty but can weaken performance by disrupting the coordination of layers. In SASWISE-UE, we use blockwise dropout by grouping layers with similar functions into distinct blocks, then assembling the model from various candidate blocks. This design preserves model stability while enhancing uncertainty estimation—and even boosts performance!
+
+For those passionate about AI in healthcare, here’s a framework designed to ensure models not only perform well but also communicate their confidence—making a real difference in patient care. 💡
+
+Check out the full paper here: arXiv:2411.05324
+Curious to learn more? 🧠 Let’s chat!
+
+22
+4 条评论
+赞
+评论
+分享
+Winston Chen
+
+ML 研究员和工程师 | 深度学习、医学成像、联邦学习 | 计算机视觉 | 不确定性估计
+
+11 个月
+
+Couldn’t have done this without Alan McMillan! Thanks so much for your guidance and all the late nights helping make this research a reality 🙏
+
+赞
+回复
+Brayden Schott
+
+ML in medical imaging researcher with a special interest in uncertainty quantification and AI safety
+
+10 个月
+
+Very cool paper! Congrats Winston! 
+
+赞
+回复
+1 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+523 位关注者
+
+28 则动态
+查看档案  关注
+探索相关领域
+Addressing Reliability Challenges in Medical AI
+Deep Learning Applications in MRI Imaging
+How Machine Learning is Applied in Cardiology
+How to Ensure Trust in AI Medical Outputs
+Emerging Innovations in Imaging AI
+AI in Radiology: Improving Imaging Analysis
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cooki

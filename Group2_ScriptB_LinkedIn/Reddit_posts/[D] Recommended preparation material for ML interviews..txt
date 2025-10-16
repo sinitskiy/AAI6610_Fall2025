@@ -1,0 +1,40 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lp6n1r/d_recommended_preparation_material_for_ml/
+Title: [D] Recommended preparation material for ML interviews.
+
+Content:
+Hi everyone,
+
+Below I am gathering some interview preparation tools for ML research positions. People who had been in the job market recently, which one would you recommend/ find more relevant? Any other resources that I might be missing?
+
+(1) InterviewQuery:
+
+[https://www.interviewquery.com/questions?searchQuery=&searchQuestionTag=&searchCompany=&completed=&saved=&ordering=relevancy&orderingDirection=asc&pageSize=20&page=0](https://www.interviewquery.com/questions?searchQuery=&searchQuestionTag=&searchCompany=&completed=&saved=&ordering=relevancy&orderingDirection=asc&pageSize=20&page=0)
+
+(2) DevInterview:
+
+[https://devinterview.io/questions/machine-learning-and-data-science](https://devinterview.io/questions/machine-learning-and-data-science)
+
+(3) aiofferly:
+
+[https://www.aiofferly.com/problems?page=5](https://www.aiofferly.com/problems?page=5)
+
+(4) MAD:
+
+[https://www.madinterview.com/ml?utm\_source=google&utm\_medium=cpc&utm\_campaign=22464693824&utm\_term=machine%20learning%20coding%20interview%20questions&utm\_content=178169327653&gclid=CjwKCAjw3f\_BBhAPEiwAaA3K5A0Rrw-8xhTQqlzVnBhrcCyyHXSwzgGvAzmJYvVye63uIOqQ7XBWhRoC6L0QAvD\_BwE&gad\_source=1&gad\_campaignid=22464693824&gbraid=0AAAAA\_Y9DohjdsVwcsLkazvDd4iJ64Tv5](https://www.madinterview.com/ml?utm_source=google&utm_medium=cpc&utm_campaign=22464693824&utm_term=machine%20learning%20coding%20interview%20questions&utm_content=178169327653&gclid=CjwKCAjw3f_BBhAPEiwAaA3K5A0Rrw-8xhTQqlzVnBhrcCyyHXSwzgGvAzmJYvVye63uIOqQ7XBWhRoC6L0QAvD_BwE&gad_source=1&gad_campaignid=22464693824&gbraid=0AAAAA_Y9DohjdsVwcsLkazvDd4iJ64Tv5)
+
+Comments:
+- Thank you for sharing! I interviewed last year and felt very underprepared, this will definitely help for my next round!
+- That stuff all looks good, last time I was applying there were a bunch of great resources on YouTube for practice interviews and such. The questions change so often a lot of it is probably out dated, but definitely worth looking into.
+- [Deep Learning Interviews](https://arxiv.org/abs/2201.00650v2) ([previously posted](https://www.reddit.com/r/learnmachinelearning/comments/qbwgvy/the_pdf_version_of_my_book_deep_learning/)) is free on ArXiv, but the current iteration is aimed more at optimization and network design, rather than specific applications - are you aiming at any specific subfields (e.g. computer vision, LLMs etc.)?
+- Thanks for your reply! As far as you remember, which one do you think is closest to the real thing?
+- thanks! so you think all of them are on par in terms of relevance (as far as you remember)?
+- I interviewed for 2 FAANG research science internships, and imo (at first glance) the AIOfferly questions seem most relevant! Might be different for different roles/levels though.
+- The ones you listed? First glance yes, I’ll probably have to look again in more detail if you want rankings, I’ll respond again later
+- I see. AIOfferly seems more focused on NLP questions perhaps this is why.
+
+ thanks a lot!
+- yeap for the ones I listed!
+
+"First glance yes, I’ll probably have to look again in more detail if you want rankings, I’ll respond again later"  
+wow I think this would help a lot!

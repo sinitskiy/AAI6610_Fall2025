@@ -1,0 +1,28 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1hjmmj8/looking_for_research_opensource_code/
+Title: Looking for: research / open-source code collaborations in computer vision and machine learning! DM now.
+
+Content:
+Hello Deep Learning and Computer Vision Enthusiasts!   
+  
+I am looking for research collaborations and/or open-source code contributions in computer vision and deep learning that can lead to publishing papers / code. 
+
+Areas of interest (not limited):  
+\- Computational photography  
+\- Iage enhancement  
+\- Depth estimation, shallow depth of field,   
+\- Optimizing genai image inference  
+\- Weak / self-supervision   
+  
+Please DM me if interested, Discord: Humanonearth23
+
+Happy Holidays!! Stay Warm! :)
+
+
+
+Comments:
+- Our open source library FiftyOne would love contributions along these lines to the ml library FiftyOne Brain.  See https://github.com/fiftyone-brain
+- Please feel free to reach out, all are welcome. Voluntary opportunity for mutual benefit.
+- Oops https://github.com/voxel51/fiftyone-brain
+- Send a dm.
+- Hello Prof Corso, I am a UM SIPML alum, would you consider me as a collaborator with your student researchers? DMs open, thanks.

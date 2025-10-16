@@ -1,0 +1,19 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/t5u3bz/help_this_cs_undergrad_get_involved/
+Title: Help this CS undergrad get involved!
+
+Content:
+Hi, I am a computer science undergraduate student. I like doing work with machine learning systems for image classification, topic modeling, etc. Recently, I have stumbled across bioinformatics (or computational biology, I still don't know the precise difference) and want to get started. I have no biology experience beyond high school. Is there a good way for me to get started? Should I use textbooks, videos, problems, something else? And what resources and pathways are the most helpful? Thanks very much in advance for helping me.
+
+Comments:
+- Labs on campus. Biology labs are HUNGRY for people that can code solid algorithms and understand how to use the Unix terminal. Your enthusiasm would surely get you a spot in a lab.
+
+Also, internships. Start applying for summer internships now. The NIH has an extremely competitive summer program. I've seen a very comprehensive list floating around but I didn't save it. Hopefully someone can link it to you.
+
+Finally, classes. Look for graduate level classes or upper level comp bio.
+
+Doing stuff on your own is fun and cool but at the end of the day doesn't give you much quantitative substance to present to someone. I'd highly recommend getting into formal guidance via *all* of the points above. Good luck!
+- Where are you located? NSF and individual school SURF programs have very nice mechanisms to place you into research labs. I just went into it in my first year of undergrad and stuck through in the last decade. If you are willing to do your own research to get information as needed, the best way to start is to work on trying to "solve" a problem.
+- There is a great list of resources in the side bar. Here's a link https://www.reddit.com/r/bioinformatics/comments/191ykr/resources_for_learning_bioinformatics
+
+Other than that I recommend reaching out to bio or bioinformatics professors and ask about getting involved in research projects.

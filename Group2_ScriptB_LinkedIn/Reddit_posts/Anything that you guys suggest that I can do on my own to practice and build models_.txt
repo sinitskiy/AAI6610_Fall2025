@@ -1,0 +1,75 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b9nh50/anything_that_you_guys_suggest_that_i_can_do_on/
+Title: Anything that you guys suggest that I can do on my own to practice and build models?
+
+Content:
+I’m not great at coding despite knowledge in them. But I recently found out that you can use Azure machine learning service to train models.
+
+
+I’m wondering if there’s anything that you guys can suggest I do on my own for fun to practice. 
+
+Anything in your own daily lives that you’ve gathered data on and was able to get some insights on through data science tools? 
+
+Comments:
+- Like another commenter said, you should find a subject you’re interested in and commit to making a model to solve some problem in that domain. 
+
+Like music? Use Spotify’s API to make a music recommendation system. Hate taking notes about how a bunch of sources relate to each other? Maybe you could use a clustering algorithm to try and identify latent similarities between them. The possibilities are endless.
+
+If you get stuck, and I may catch some flak for this, but I’ve personally found ChatGPT to be an incredibly powerful learning tool. If you get stuck on something, use it to teach you. Don’t just ask it to write all the code, but ask it questions about the approach. For example, if you’re trying to reduce the dimensionality of data and decide to use PCA, ask it about why and how PCA works. 
+
+Try to build up an understanding with basics like linear regression, logistic regression, etc. and then you can build your way up to neural nets.
+
+It may seem like neural nets are all the rage right now (which is true) but data science in a business context will be the simpler models 90% of the time and the big fancy things will be reserved for only the remaining 10%.
+
+Just be curious. Brush up on math, learn the basics of Python, Pandas, etc. and find something to build that you’re passionate about.
+
+Very best of luck!
+- Enterprise AI Engineer here, 15 years experience.
+
+If you're not great at coding, and that's what you want to work on, don't waste your time on the modeling phase of projects. Such is (in my experience) 5% of the coding that's involved in a project's entirety, with the other 95% being cleaning/prepping the data. 
+
+Instead, look for data cleaning exercises were you take multiple sources clean them and prepare them for a model.
+
+As for ideas, as others mentioned, find something fun and run with it!
+- Visit Kaggle, there you can find many datasets with real world problems.
+
+Once you are more prepared you can even join the competition and win some cash.
+- Started learning 3 months ago, couple of years Comp Sci in college a decade ago. 
+
+I scraped 3.5k fishing blog posts that report salmon catches on the lake I live near. I used Gemini API for NLP and created 13 years of catch data. I then sourced the local weather data from our national forecaster and started trying to predict if it's a good day to go fishing.
+
+Tried LSTM and logistic regression, discovered multi-collinearity and seasonality. I'm side tracked with researching Fourier analysis right now. I'm at .82 right now but I'm hoping to get more accuracy if I get better at understanding time series data.
+
+I'm honestly hoping to build a portfolio and get a job. Maybe catch some fish.
+- Avoid kaggle. It's curated data sets with narrowly focused objectives already defined for you and you'll just be discouraged by the performance of everyone else's submissions. If finding a job is your goal here no hiring manager wants to hear about a kaggle submission. They want to see real world professional experience. 
+
+Data science in practice is about having a business problem and finding a data driven solution you need to cobble together maybe from scratch. It doesn't even have to be machine learning and you don't even need to be the Greatest ML engineer. What you do need to be is a creative problem solver. So think of a data product you want to build or maybe just a question you want to answer with data, has to be something You're interested in, and dive in with gathering, cleaning, analyzing the data. Then ask yourself is there an easy MVP "model" here that gives me an initial answer? If so great you have a baseline and maybe a working product. Next figure out if ML will make it better. 
+
+Take that journey and summarize the interesting bits into a keynote that tells a complete story and you're ready to be a viable DS candidate.
+- My recommendation would be to start easy and build up.  Start following few communities to follow their examples. 
+
+Once you got the hang of it, start practicing on your own on public data sets. Formulate a business problem or hypothesis. You may skip that by heading to Kaggle or similar DS competitions. You don’t need to participate but you can leverage the data and problem.  
+
+I highly recommend learning few frameworks and cloud technologies (ie sklearn, tf, databricks and local). Strat your own git repo as well to show your work for future employers.
+- Make a bot that does predictions on esports match winners!
+- HMU if you're looking for a teammate to work with, I'm looking to do more projects as well!
+- Same way you’d learn to ride a bike. Start peddling.
+- Let me know if you find some really interesting stuff apart from Kaggle, would love to collaborate !
+- kaggle really helped me and like most people suggested find something you're already interested and make it a data science problem
+- If you're struggling to find something based on your own interests, which is usually the best way. Think about a business in your local area and try to come up with a DS solution that could actually benefit them. 
+
+This is a great way to learn DS, but also the other most important part, how to use it in the real world. 
+
+Heck, you might even be able to sell it to that business 😜
+- Play with aws sagemaker!
+- Original work
+- Kaggle
+- You definitely shouldn’t get flak for recommending chatgpt as a learning aid. Although I understand why you mentioned it. 
+
+I have found LLMs to be incredibly helpful for project development
+- Baseball statistics made me into a data scientist
+- I don't understand the backlash against using LLMs as a tool. Granted this backlash is mostly online and mostly for factually learning,but my company encourages us to use LLMs as a tool within reason. 
+
+Honestly they're just like calculators. In 15 years the market will have adjusted, people will have grown used to it and adapted to using GPTs as a tool. Case in point, it wrote a python code for me to automate pdf creation using fpdf library. Not only did it make me more productive since i didn't have experience with the library, but i also learned the basics of the library and how it's used just by correcting chatgpts errors. In future projects I'll be even faster because i got the basics down and can write my own code with fpdf, maybe use gpt to add new features. It's a fantastic tool to learn and integrate into your workflow.
+- I’m a noob. Does this include heavy GPU usage? I have been having a trouble getting started on a project and this seems to be the right place to start. Please roast me if needed🐒
+- Any course, book, or web can you suggest I get the exercise from?

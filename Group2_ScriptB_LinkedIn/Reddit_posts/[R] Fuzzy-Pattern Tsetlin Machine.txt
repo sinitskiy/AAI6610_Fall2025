@@ -1,0 +1,55 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mp2dcp/r_fuzzypattern_tsetlin_machine/
+Title: [R] Fuzzy-Pattern Tsetlin Machine
+
+Content:
+I’m excited to announce the paper: **Fuzzy-Pattern Tsetlin Machine** (FPTM) — a paradigm shift in the Tsetlin Machine family of algorithms.
+
+Unlike traditional Tsetlin Machines, which rely on strict clause evaluation, FPTM introduces fuzzy clause evaluation: if some literals in a clause fail, the remaining literals can still contribute to the vote with a proportionally reduced score. This allows each clause to act as a collection of adaptive sub-patterns, enabling more flexible, efficient, and robust pattern matching.
+
+Thanks to this fuzzy mechanism, FPTM dramatically reduces the number of required clauses, memory usage, and training time — all while improving accuracy.
+
+**Results:**
+
+**IMDb** dataset:
+
+• 90.15% accuracy with just **1 clause** per class
+
+• 50× reduction in clauses and memory vs. Coalesced TM
+
+• 36× to 316× faster training (**45 seconds vs. 4 hours**) compared to TMU Coalesced TM
+
+• Fits in **50 KB**, enabling online learning on microcontrollers
+
+• Inference throughput: **34.5 million** predictions per second (51.4 GB/s)
+
+**Fashion-MNIST** dataset:
+
+• 92.18% accuracy (2 clauses per class)
+
+• 93.19% accuracy (20 clauses), \~400× clause reduction vs. Composite TM (93.00% with 8000 clauses)
+
+• **94.68%** accuracy (8000 clauses), establishing a new *state-of-the-art* among all TM variants and outperforming complex neural net architectures like *Inception-v3*
+
+**Amazon Sales** dataset (20% noise):
+
+• **85.22%** accuracy — outperforming Graph TM (78.17%) and GCN (66.23%)
+
+📄 Read the paper: [https://arxiv.org/pdf/2508.08350](https://arxiv.org/pdf/2508.08350)
+
+💻 Source code: [https://github.com/BooBSD/FuzzyPatternTM](https://github.com/BooBSD/FuzzyPatternTM)
+
+Comments:
+- This sounds incredibly interesting, congrats on the great results! However, I think you would 100x your impact by porting the Julia code to C++ (or perhaps Rust.)
+- It looks like I misunderstood at first. Julia is a very useful language for research. You can write code almost as fast as Python, but its performance is close to Rust or C++. This makes it very handy for quickly evaluating new ideas.
+- Thank you!
+Julia is really close to Rust and C++ in performance. Christof from AstraZeneca ported my library, Tsetlin.jl, to Rust and got approximately the same performance.
+
+https://github.com/Christof23/tsetlin-mnist-rs
+- My concern is not about performance, but ease of use and integration with existing code bases. Nobody wants to have to install and maintain another toolchain or learn another language, especially companies looking to add AI magic to their existing products (whether in microcontrollers or embedded into apps). C++ and Python currently rule the AI world, and Rust has is starting to grow a following but is still niche. The Rust port you link to looks a little old, is is as feature-complete as your Julia code?
+- Support for microcontrollers I don't expect to see soon in Julia, that's why a C implementation would be useful. Rust would also be nice, since it has a growing presence on microcontrollers. 
+
+Regarding Python - to begin with it might not be that hard to code Python bindings for the Julia TM libs.
+- The Rust port was just a proof of concept.
+- Of course, for microcontrollers, FPTM should be implemented in Zig, for example.  
+I use Julia because it’s very handy for research, and its performance is similar to Rust/C++.

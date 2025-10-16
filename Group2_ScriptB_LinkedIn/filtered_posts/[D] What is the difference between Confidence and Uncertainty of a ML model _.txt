@@ -1,0 +1,40 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/81wrgi/d_what_is_the_difference_between_confidence_and/
+Title: [D] What is the difference between Confidence and Uncertainty of a ML model ?
+
+Content:
+I love this thesis of YARIN GAL about [Uncertainty in Deep Learning](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) . And I also liked this paper of Chuan Guo et. al. called [On Calibration of Modern Neural Networks](https://arxiv.org/pdf/1706.04599.pdf)  where they talk about <<**Confidence** Calibration>>.
+
+What do you guys think the difference between confidence and uncertainty, or are they simply antonyms ? 
+
+Comments:
+- A classification model produces "confidences", which are the probability that the model assigns to the data belonging to a given class. These confidences are typically given as point estimates. By using Bayesian methods, you can measure the model uncertainty in a given confidence (for example, the variance of this estimate). This is the uncertainty.
+- TLDR: Confidence and uncertainty can mean the same thing (...well opposite). The important distinction is confidence/uncertainty vs. calibration.
+
+
+Without getting technical, I like to think of it in a more intuitive manner. If you take weather forecasting for example. If I say there is a 40% chance of it raining tomorrow. I'm expressing a prediction about the world (it will rain tomorrow) with my confidence (40%). 
+
+What we can do next is determine the reliability of my prediction alongside its confidence. One could ask how certain I am that that prediction-confidence combination is actually reflective of reality. This is where calibration comes in, which asks: "out of the past times I gave predictions with 40% confidence, how many times did the prediction occur?". Ideally, if I had a well calibrated ("good") model of the world, the actual event (raining) would have occurred 40% of the time. 
+
+I think the confusing here arises from uncertainty and confidence basically meaning the same thing, but then others then conflate one of them with the concept of calibration.
+- /r/statistics could probably give a better discussion.
+- A [recent reddit](https://www.reddit.com/r/MachineLearning/comments/7bm4b2/d_what_is_the_current_state_of_dropout_as/) also discussed this topic and you might like to check it out.
+
+For me, I distinguish these three concepts: uncertainty, risk and calibration. The first two are defined in the following story. We go to the casino with a coin. I tell you that I am very sure the coin comes up heads 95% of the time. That's a conclusion with low uncertainty (I am very sure of this number) and low risk (there's is no ambiguity on the outcome, it will almost always be heads)
+Another time we go the casino. This time, the coin comes with the comment "I am not sure what is the bias of the coin, it is probably 51%" That is a conclusion with high uncertainty (we do not know the bias very sure) and also high risks are involved (outcomes could well be heads or tails. 
+
+By the same reasoning, we could be very certain about a coin with high risk (bias = 0.50%) or very uncertain about a coin with low risk (bias = 95%)
+
+Now here is the point, gathering more data, one can reduce the uncertainty, but one can never reduce the risk.
+- I think it like
+
+1/confidence = uncertainty
+
+but that is just intuitive.
+- "Confidence" is almost never "the probability", which is what the calibration paper is about. I use air quotes because I don't like how we use "confidence" for this very reason. I like to say "the model score", because it is pretty arbitrary what the actual number is.
+
+The confidence of a system trained on cross-entropy loss usually has a sigmoid relationship to class probability (like the orange line in [this picture](http://scikit-learn.org/stable/_images/sphx_glr_plot_calibration_curve_002.png)) - the model is trying to push all examples to either 0 or 1. Many other losses and models (not just deep learning) do not produce calibrated probabilities.
+
+You can model uncertainty without bayesian methods too - frequentist confidence intervals are a thing.
+- I am the real Carl
+- Yeah, you're right that there are some confusing terms (and the guo paper is about making the sigmoid flatten out to be an actual probability).

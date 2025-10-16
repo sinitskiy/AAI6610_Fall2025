@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/leochlon_ai-machinelearning-responsibleai-activity-7368294551867858947-cUgm
+Date: 2025-09-24
+Author: Unknown
+
+LLM hallucinations aren't bugs, they're compression artefacts. And we just figured out how to predict them before they happen.
+
+When your LLM confidently states that "Napoleon won the Battle of Waterloo," it's not broken. It's doing exactly what it was trained to do: compress the entire internet into model weights, then decompress on demand. Sometimes, there isn't enough information to perfectly reconstruct rare facts, so it fills gaps with statistically plausible but wrong content.
+
+Think of it like a ZIP file corrupted during compression. The decompression algorithm still runs, but outputs garbage where data was lost.
+
+The breakthrough: We proved hallucinations occur when information budgets fall below mathematical thresholds. Using our Expectation-level Decompression Law (EDFL), we can calculate exactly how many bits of information are needed to prevent any specific hallucination, before generation even starts.
+
+This resolves a fundamental paradox: LLMs achieve near-perfect Bayesian performance on average, yet systematically fail on specific inputs. We proved they're "Bayesian in expectation, not in realisation", optimising average-case compression rather than worst-case reliability.
+
+Why this changes everything?
+
+Instead of treating hallucinations as inevitable, we can now:
+
+Calculate risk scores before generating any text
+Set guaranteed error bounds (e.g., <5% hallucination rate)
+Know precisely when to gather more context vs. abstain
+
+We're open-sourcing our Hallucination Risk Calculator today.
+Works with any OpenAI-compatible API. Zero retraining required. Provides mathematical SLA guarantees for compliance. Perfect for healthcare, finance, legal, anywhere errors aren't acceptable. The full preprint is being released on arXiv this week.
+
+The era of "trust me, bro" AI is ending. Welcome to bounded, predictable AI reliability.
+
+Big thanks to Ahmed K. Maggie C. and Mark Antonio Moustapha Awada Ph.D. for all the help putting this + the repo together! 
+
+
+话题标签
+#AI 
+话题标签
+#MachineLearning 
+话题标签
+#ResponsibleAI 
+话题标签
+#OpenSource 
+
+话题标签
+#LLM 
+话题标签
+#Innovation
+
+[Toolkit (Mac DMG, Web App and Cli)] https://lnkd.in/e4s3X8GK
+[ReadMe] hassana.io/readme.html
+[Paper] This week.

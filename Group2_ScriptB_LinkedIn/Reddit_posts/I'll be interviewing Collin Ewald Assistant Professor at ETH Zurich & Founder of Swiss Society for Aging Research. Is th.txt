@@ -1,0 +1,48 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/13810mb/ill_be_interviewing_collin_ewald_assistant/
+Title: I'll be interviewing Collin Ewald Assistant Professor at ETH Zurich & Founder of Swiss Society for Aging Research. Is there anything related to their research or work that y'all would appreciate learning about?
+
+Content:
+This is a part of an ongoing series in biotechnology and longevity featuring many experts and leaders in the space - Aubrey De Grey, George Church,  Lisa Fabiny-Kiser, and about 20-30 others. I'll tag you if I ask your question. Please see previous interviews to see this in action!.
+
+Collin Ewald
+
+* [ewaldlab.com ](http://www.ewaldlab.com/)(Ewald Lab)
+* [ssmb.ch ](http://www.ssmb.ch/)(Swiss Soc. Matrix Biology)
+* [ssfar.ch ](http://www.ssfar.ch/)(Swiss Soc. Aging Research)
+
+"Research
+
+Currently, the lab focuses on exploring a novel and exciting mechanism that promotes healthy aging.
+
+Our recent work has shown that many health- and longevity-promoting interventions re-activate the expression of extracellular matrix (ECM) genes during aging (Ewald et al., Nature 2015, PMID:25517099). This ECM enhancement is required and sufficient for extending the lifespan of C. elegans. Our research efforts are focusing on exploring the mechanism(s) of how prolonged ECM homeostasis promotes healthy aging. \[read more\] \[pdf\]
+
+**Our core competencies are:** 
+
+Aging research
+
+Extracellular matrix biology, matrisome, and matreotype
+
+Drug discovery, molecular biology, genetics, systems biology, and neuroscience
+
+**Our technical expertise with using the model organism C. elegans are:**
+
+Automated lifespan assessment using the lifespan machine.
+
+High-throughput screening with genetic manipulations and chemical compounds for aging research.
+
+Neuronal plasticity (learning) assays.
+
+**Experimental advantage for using C. elegans**
+
+No animal safety or ethical issues: For FSVO, C. elegans not defined as an animal
+
+60-80% of genes conserved with humans
+
+multicellular and eukaryotic
+
+C. elegans ages similar to humans, but faster (lifespan of 3 weeks)
+
+scalable for high-throughput genetic and drug screens"
+
+Comments:

@@ -1,0 +1,44 @@
+URL: https://www.linkedin.com/posts/anshumanlall_llm-llm-trust-activity-7101272694444236800-RWp_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anshuman Lall, PhD的动态
+Anshuman Lall, PhD
+2 年
+
+A good example of the #LLM value chain in the enterprise setting.
+
+IMHO, #LLM by itself may not be able to deliver the ROI that a typical enterprise buyer is looking for. The business context needs to be brought in and a lot of clean-up needs to happen before it can earn the #trust of the users/ #decisionmakers. 
+
+My opinion is based on the learning in the early days of #ML - Questions from the enterprise buyers on #LLM are almost Déjà vu (I am preparing a list of questions that I will post separately - the biggest one is comfort level with #probabilistic outcomes). 
+
+It takes a lot of #trust in the models for #decisionmaking. Consequently, a lot of companies have started around model explainability(Fiddler AI, for example).
+
+I am expecting a similar trajectory for #LLM in enterprise adoption. Just a private LLM implementation in a docker is not going to be sufficient for adoption.
+
+
+Prabhu Raghav
+
+Founder & CEO - Deeplore | Driving Innovation in Autonomous AGI & ASI for the Future | Startups | Cloud, Data Science, IoT, Big Data ML | Author
+
+2 年  已编辑
+
+The #llm model produces more hallucination that is not factually correct for the enterprise domain knowledge base data.  At DecisionFacts, this is how we are solving the Large Language Model integrations for enterprise companies! 
+
+Training huge datasets into #llm to provide factual specific domain information  
+is a time and effort activity.  A lot of iterations and patience are required in order to bring factual responses and accuracy from #llm. The easiest way we chose to use #vectordatabase to index millions of documents (Ongoing process still..)
+
+Indexing Content Process (At initial version)
+-------------------------------------------
+   🔹 Our Connector SDKs connects data source ( In this use case - Sharepoint) and pull documents to our indexer module.
+   🔹 Extractor model to extract content from various documents such as MS 

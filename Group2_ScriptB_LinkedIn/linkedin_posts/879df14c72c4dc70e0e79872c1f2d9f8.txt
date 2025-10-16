@@ -1,0 +1,57 @@
+URL: https://www.linkedin.com/posts/izamryan_attended-fdd-in-the-age-of-ai-and-big-data-activity-7254521893213368320-7cqv
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Izam Ryan的动态
+Izam Ryan
+
+Associate Director @ K3 Advantage | Driving value creation with strategic, data-driven insights
+
+11 个月
+
+Attended FDD in the age of AI and Big Data at the ICAEW today. Sharing a few thoughts here on:
+
+So where are we with GenAI?
+Speakers talked a bit of the progression from foundational uses of GenAI (search, summarise, create)
+to narrow uses of GenAI (automation through agents and workflows)
+to autonomous uses of GenAI (using agents to deliver fully autonomous).
+
+I also see this same trend - even in my personal use of GenAI, "Google, help me build a meal plan for 2 adults and 2 kids for a week." "OK, now convert that meal plan to a grocery list." 
+Wouldn't it be great to be able to then "OK, now go online and order the groceries through the Morrisons chatbot, let's prefer to go with the value budget options where available".
+
+As accountants and deal advisors how can we best prepare for greater adoption of GenAI?
+In the main you'd be happy to know the guidelines are "use your common sense" and be careful with drawing inferences from the results of a probabilistic model.
+
+My personal 2 cents is that the status of LLM's and GenAI in general as probabilistic models isn't as strongly emphasised as it should be. I also expect that in the next couple of years that standard T&Cs and the ways of working will have greater adoption of AI / GenAI. Perhaps we'll see "typical" disclaimers of "this document contains portions produced by in-house generative AI models and none of your confidential proprietary data has been to used to train foundational models".
+
+I think I spotted across the room 👋
+James Simmons / Jon Stubbings / Patrick O'Brien
+
+17
+2 条评论
+赞
+评论
+分享
+Michael Pihosh
+
+CSO at Crunch | Leveraging AI, ML & Agentic AI Initiatives | Scalable Software Development
+
+11 个月
+
+Insightful reflections, Izam. Implications for auditing standards?
+
+赞
+回复
+Jon Stubbings
+
+Transaction Advisory Services Partner at Grant Thornton

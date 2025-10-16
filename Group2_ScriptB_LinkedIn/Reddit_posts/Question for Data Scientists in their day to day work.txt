@@ -1,0 +1,30 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17aveed/question_for_data_scientists_in_their_day_to_day/
+Title: Question for Data Scientists in their day to day work
+
+Content:
+How often do you guys use calculus and linear algebra for your work? I've heard that for data science, especially machine learning, that it's important to understand linear algebra and calculus, but how true is this statement? I've taken some stats and probability courses in college for my minor, but haven't taken anything past calc 1 or linear algebra. Are these must-haves for your day to day work?
+
+Comments:
+- I use it to understand how an algorithm works. Most useful models are abstracted away using code, but if you really want to understand how the model works and why it works they way it does, you need some understanding of calculus and linear algebra to read the papers and get what they're doing.
+- This question again. Study your maths and stats. Data scientists who only know how to import libraries without knowing how the algorithms work underneath are as good as any automl, and much more expensive than any automl.
+- If I’m researching new models to use for a project, then every day during that process. If I’m building the model, zero days.
+- Realistically not much on a day to day basis. But we definitely use Linear Algebra in our validation stage when we review the model’s mathematical assumptions and just do a quick check if it makes sense or needs improvement. We primarily do optimization and quite frankly Linear Algebra is the golden standard for calculating optimization problems with a lot of parameters.
+
+If you don’t want the technical path, just drop data science and focus on Business Intelligence roles or at most Analytics.
+- I dont “Do” math, I have a computer for that. But I need to “understand” math.
+- In practice you’re not actually doing math at work, but it’s definitely required to understand some of the underlying concepts being applied at work, especially when learning ML algorithm. 
+
+Anything past basic stats requires knowing basic multivariable calculus. Linear algebra is definitely needed for data science in general.
+- The library I used does it, not me directly.
+- Not really, helps when deciding what to use I think, but you don’t have to know it THAT well. Like if you really struggle but pass a class because you understand most of the concepts etc I think you are fine.
+- What about Math topics like Functional Analysis, Differential Geometry, Topology, Manifold Learning etc? Im fascinated by those Math topics and im actually looking for ways where i can apply these Math topics in my day to day Data Science/ML work.
+- What about Math topics like Functional Analysis, Differential Geometry, Topology, Manifold Learning etc? Im fascinated by those Math topics and im actually looking for ways where i can apply these Math topics in my day to day Data Science/ML work.
+- I think this is the key. It’s the unsexy EDA and model research phase where you use all the maths, so if you skip all that it’s very easy to just start coding and build something.
+
+The problem is that it probably won’t work (or even if it does, it will work really poorly)
+- What about Math topics like Functional Analysis, Differential Geometry, Topology, Manifold Learning etc? Im fascinated by those Math topics and im actually looking for ways where i can apply these Math topics in my day to day Data Science/ML work.
+- Manifold learning and topology are relatively common in ML. But the more niche you go in maths, the fewer the ML applications, so I wouldn't worry too much. Just have the fundamentals covered.
+- I’m not familiar with these mathematical topics as my highest level of math is Diff Eq and Linear Algebra. But there’s never a time where knowing more math is bad - I think it’ll give you the tools to solve more complex problems.
+- Im not worried about the Math itself, in fact i enjoyed the Math and wanted to find DS/ML jobs that uses such Math topics. Issue being that im unable to find such a role.
+- If you want to work with maths and stats directly on a daily basis it's probably best to look into research roles. Any applied ML roles will be necessarily more far removed from the maths. You could look for what industries use ML methods that you're interested in and target those.

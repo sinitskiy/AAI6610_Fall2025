@@ -1,0 +1,30 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ajq65n/first_job_transitioning_into_machinelearning/
+Title: First job transitioning into Machine-learning
+
+Content:
+I am a bioinformatic scientist with a Msc and about 3 years professional experience.   
+
+
+Currently, my job includes software development, NGS data analysis, and I spend about 1/4 of my time developing ML algorithms.  I have been passionate about ML since grad school, but have only recently decided i want to transition into a job where it is my primary tasking. My first 2 jobs i was just happy to have good work in my field. Now, i am feeling more confident and I want to specialize in something I am passionate about.   
+
+
+I was wondering if anyone had any advice on landing my first job in a primarily ML/DL role. I would like to stay in chemistry/biology if possible.   
+
+
+I plan on putting my ML algo experiences as the top bullet of each job/degree on my resume. I also have a pretty impressive personal project to showcase. What else can I do to help me transition into this new specialty role?  
+
+
+Should I concentrate on landing my first position based off of my current qualification? Should I buff up my github with multiple ML/DL projects? Should I seek a particular ML certification? 
+
+&#x200B;
+
+**What is most likely to contribute to landing a competitive ML/DL position from more generalized past experiences?**
+
+Comments:
+- Bioinformatics is the data engineering of biological data, so just as data engineering is a big part of any generic machine learning position, as will bioinformatics be a big part of any ML position within biotech.
+
+With that said, if you are unsatisfied with the amount or type of ML you are doing in your current role, then I would suggest you start looking around for biotech companies and open positions where ML is a core component of the product or team.
+
+As for what you can do to bolster your candidacy – I wouldn't spend a bunch of time working on additional projects for your GitHub, especially if you already have some existing ones to showcase, and I wouldn't bother with certificates. What is most important to understand is that your resume gets you the interview, from then on the success of your candidacy depends on how well you impress your interviewers. So, provided you can get the initial interview, then I would focus on interviewing well, and a key component of that will be *learning machine learning and applied math*. There is no shortage of dilettantes in this field, and any company worth its salt will put you through your paces, so excelling in these technical rounds will be essential to getting the offer, and will be the point at which many of the other candidates wash out.
+- I’m totally in disagreement with your whole first paragraph. Would you mind expanding? I agree that in some cases data needs to be processed bioinformatically before use in ML, but Bioinfo and ML remain two different sectors and, in the great majority of cases, different positions and roles.

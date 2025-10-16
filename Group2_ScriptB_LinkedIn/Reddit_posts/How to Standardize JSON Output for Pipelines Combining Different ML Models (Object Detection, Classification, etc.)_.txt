@@ -1,0 +1,89 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1it9t7i/how_to_standardize_json_output_for_pipelines/
+Title: How to Standardize JSON Output for Pipelines Combining Different ML Models (Object Detection, Classification, etc.)?
+
+Content:
+I'm working on a system that processes output from multiple machine learning models, and I need a standardized way of structuring the JSON results, particularly when combining different models in a pipeline. For example, I currently have a pipeline that combines a YOLO model for vehicle and license plate detection with an OCR model to read the detected license plates. But I want to standardize the output across different types of pipelines, even if the models in the pipeline vary.
+
+Here’s an example of my current output format:
+
+    {
+        "pipeline_version": "0",
+        "task": "vehicle detection",
+        "detections": [
+            {
+                "vehicle_id": "0",
+                "vehicle_bbox_xyxy": [
+                    139.51025390625,
+                    67.108642578125,
+                    733.4363403320312,
+                    629.744140625
+                ],
+                "vehicle_bbox_confidence": 0.9199453592300415,
+                "plate_id": "0",
+                "plate_bbox_xyxy": [
+                    514.7559814453125,
+                    504.94091796875,
+                    585.7711181640625,
+                    545.134033203125
+                ],
+                "plate_bbox_confidence": 0.8605142831802368,
+                "plate_text": "OKE046",
+                "plate_confidence": 0.4684657156467438
+            }
+        ]
+    }
+
+While this format is easy to read and understand, it's not generalizable for other pipelines. Additionally, it's not explicit that some detections belong inside other detections. For example, the plate text is "inside" (i.e., it's done after) the plate detection, which in turn is done after the vehicle detection. This hierarchical relationship between detections isn't clear in the current format.
+
+I’ve thought about using a more general format like this:
+
+    {
+        "pipeline_version": "0",
+        "task": "vehicle detection",
+        "detections": [
+            {
+                "id": 0,
+                "type": "object",
+                "label": "vehicle",
+                "confidence": 0.9199453592300415,
+                "bbox": [
+                    139.51025390625,
+                    67.108642578125,
+                    733.4363403320312,
+                    629.744140625
+                ],
+                "detections": [
+                    {
+                        "id": 0,
+                        "type": "object",
+                        "label": "plate",
+                        "confidence": 0.8605142831802368,
+                        "bbox": [
+                            514.7559814453125,
+                            504.94091796875,
+                            585.7711181640625,
+                            545.134033203125
+                        ],
+                        "detections": [
+                            {
+                                "type": "class",
+                                "label": "OKE046",
+                                "confidence": 0.4684657156467438
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+    
+
+In this format, "detections" are nested, indicating that a detection (e.g., a license plate) is part of another detection (e.g., a vehicle). While this format is more general and can be used for any pipeline, it’s harder to consume.
+
+I’m looking for feedback on how to handle this situation. Is there a better approach to standardizing the output format for different pipelines while still maintaining clarity? Any suggestions on how to make this structure easier to consume, or whether this nested structure approach could work in the long run?
+
+Thanks in advance for any insights or best practices!
+
+Comments:
+- How about having separate detections as in the second example, but a flat layout which uses parent child references to indicate nesting?

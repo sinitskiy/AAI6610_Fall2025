@@ -1,0 +1,53 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vy2q4q/rbioinformatics_journal_club_first_session/
+Title: r/bioinformatics Journal Club: First Session
+
+Content:
+Hello Everyone! Thank you so much for your responses! I am yet to go through them and will reach out to the people who would like to host a session to take up a slot in the future (Probably from End of August to give them time to prepare their sessions and host them?).   
+
+
+In the meantime, I thought I could host a session at the end of this month as a way to start this group and possibly work out kinks before others can host.   
+
+
+I wanted to host a session discussing two papers that discuss a tool that play a very crucial role in assessing the quality of Metagenome Assembled Genome and its latest iteration whose preprint came out two days back:  
+
+
+1) **CheckM: assessing the quality of microbial genomes recovered from isolates, single cells, and metagenomes** Donovan H. Parks, Michael Imelfort, Connor T. Skennerton, Philip Hugenholtz, Gene W. Tyson Genome Res. July 2015 25: 1043-1055; Published in Advance May 14, 2015, doi: 10.1101/gr.186072.114  
+
+
+2) **CheckM2: a rapid, scalable and accurate tool for assessing microbial genome quality using machine learning** Alex Chklovski, Donovan H Parks, Ben J Woodcroft, Gene W Tyson bioRxiv 2022.07.11.499243; doi: [https://doi.org/10.1101/2022.07.11.499243](https://doi.org/10.1101/2022.07.11.499243)  
+
+
+**Why did I choose these papers?**  
+
+
+As someone who has worked with metagenomics data, CheckM is a very crucial tool that can be used to assess the quality of your genomes and ultimately what can be done further with these results.  
+
+
+Currently single copy gene numbers play a vital role in deciding how complete and contaminated a genome is and these are some of the minimum amount of information that one has to supply for metagenomics data to understand its quality.  
+
+
+CheckM2 claims to be an improvement on the original CheckM and if so could be very good discussion to have as it would play an important role to assess metagenomes in the future.  
+
+
+  
+**When do we meet?**  
+
+
+I have currently selected a week from July 28 - Aug 3. Please indicate your preferred times using this link below so that I can announce the time and date for the session as soon as possible. **It would be a short half an hour session.**   
+
+
+[https://www.when2meet.com/?16130801-dyRq7](https://www.when2meet.com/?16130801-dyRq7)  
+
+
+  
+Also, do feel free to discuss the papers in this thread as this would ensure that we have a more fruitful discussion during our short session.  
+
+
+Do fill in your slots as this would give me an idea as to how many people would be participating in the session. I will post the zoom link in this thread at a date closer to the actual session. Probably about a week in advanced.
+
+Comments:
+- Are these still happening?
+
+I'd love to join in!!
+- CheckM2 ?! Awesome.

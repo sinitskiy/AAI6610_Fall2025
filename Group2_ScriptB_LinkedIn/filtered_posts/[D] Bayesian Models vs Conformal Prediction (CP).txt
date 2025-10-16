@@ -1,0 +1,48 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1fac5u5/d_bayesian_models_vs_conformal_prediction_cp/
+Title: [D] Bayesian Models vs Conformal Prediction (CP)
+
+Content:
+Hi all,
+
+I am creating this post to get your opinion on two main uncertainty quantification paradigms. I have seen a great rivalry between researchers representing them. I have done research on approximate reference (and Bayesian Deep Learning) but beyond a basic tutorial on CP,  I am not very familiar with CP. My personal opinion is that both of them are useful tools and could perhaps be employed complementary:
+
+CP can provide guarantees but are poshoc methods, while BDLs can use prior regularization to actually \*improve\* model's generalization during training. Moreover, CP is based on the IID assumption (sorry if this is not universally true, at least that was the assumption in the tutorial), while in BDL inputs are IID only when conditioned on an observation of the parameter: in general p(yi,yj|xi,xj)!=p(yi|xi)p(yj|xj) but   p(yi,yj|xi,xj,theta)=p(yi|xi, theta)xp(yj|xj, theta). So BDLs or Gaussian Processes might be more realistic in that regard.
+
+  
+Finally, couldn't one derived CP for Bayesian Models? How much the set of predictions provided by CP and those by the Bayesian Model agree in this case? Is there a research paper bridging these approaches and testing this?
+
+  
+Apologies in advance if my questions are too basic. I just want to keep an unbiased perspective between the two paradigms.
+
+  
+
+
+  
+
+
+
+
+Comments:
+- There is no rivalry. They are radically different frameworks achieving very different things. CP is about calibrating predictions, while the Bayesian framework is about quantifying uncertainty of various things from the model, parameters, and consequently, the predictions. The typical guarantee you get from the Bayesian framework is that your estimates/predictions achieve the smallest average loss over the prior. That means Bayesian estimators are optimal estimators in terms of average performance, meaning they will be accurate, but do not guarantee coverage. CP does nothing about the accuracy of your estimator, but gives you coverage. You can [combine both](https://proceedings.neurips.cc/paper/2021/hash/97785e0500ad16c18574c64189ccf4b4-Abstract.html) and have the best of both worlds. No rivalry here.
+- I think you can understand this from a PAC-Bayesian perspective: CP is related to the empirical risk, while BDL is related to the KL divergence between the posterior and prior.
+- CP provides guarantees, BDL improves generalization. Can we combine them?
+- There is a specific researcher on CP who becomes very offensive and scornful about Bayesianism
+- probably need to refresh my stats :) so, do you think one could get guarantees from Bayesian credible intervals too? the credible intervals pertain to the parameter or the very final prediction?
+
+found this post for explaining the difference between credible and confidence interval: [https://easystats.github.io/bayestestR/articles/credible\_interval.html](https://easystats.github.io/bayestestR/articles/credible_interval.html)
+- Exactly I found a recent paper on conformalized GPs
+- I think I know who you're talking about. I would say that fellow is more of an influencer than a "researcher." But he is indeed oddly obsessed about calibration.
+- Your questions are excellent! In my opinion, if one performs Bayesian inference only in the weight space, e.g., using Bayes by backprop or dropout, then one can still obtain some kind of credible intervals. But I would say this kind of intervals is not so reliable because they cannot guarantee the sampling diversity of  the final predictions. On the other hand,  if Bayesian inference is performed in the function space, e.g., using Gaussian Processes or Stein's method, then the intervals obtained is more reliable.  You also need to be careful about the difference between aleatoric uncertainty/data uncertainty/risk and epistemic/model uncertainty.
+- Can you  please share the link ?
+- I think that guy is one of the creators of CP but yeah I think we are talking about the same person
+- here you are :-) [**https://arxiv.org/abs/2401.07733**](https://arxiv.org/abs/2401.07733)
+- Creators of CP? Absolutely not.
+- Thanks 😊
+- If not creator very prominent in the area. Are his initials V.M?
+- Yeah his largest contribution to the field is the Awesome CP github list. That's pretty much it.
+- Lol, yeah
+- + I agree that these paradigms are complementary
+- got it. I thought he was in terms of research more influential
+- another question: with CP can you decompose aleatoric and epistemic uncertainty?
+- No. And I personally don't buy the motivation for decomposing aleatoric and epistemic, whatever they mean. These are not even well defined concepts.

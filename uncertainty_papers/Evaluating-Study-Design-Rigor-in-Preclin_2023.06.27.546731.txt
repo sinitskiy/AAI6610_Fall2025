@@ -1,0 +1,13 @@
+Title: Evaluating Study Design Rigor in Preclinical Cardiovascular Research: A Replication Study
+
+Abstract: BackgroundMethodological rigor remains a priority in preclinical cardiovascular research to ensure experimental reproducibility and high-quality research. Limited reproducibility diminishes the translation of preclinical discoveries into medical practice. In addition, lack of reproducibility fosters uncertainty in the publics acceptance of reported research results.
+
+MethodsWe evaluated the reporting of methodological practices in preclinical cardiovascular research studies published in leading scientific journals by screening articles for the inclusion of the following study design elements (SDEs): considering sex as a biological variable, randomization, blinding, and sample size power estimation. We screened for these SDEs across articles regarding preclinical cardiovascular research studies published between 2011 and 2021. We replicated and extended a study published in 2017 by Ramirez et al. We hypothesized a higher SDE inclusion across preclinical studies over time, that preclinical studies that include human and animal substudies within the same study will exhibit greater SDE inclusion than animal-only preclinical studies, and that a difference exists in SDE usage between large and small animal models.
+
+ResultsSDE inclusion was low; with 15.2% of animal-only studies including both sexes as a biological variable, 30.4% including randomization, 32.1% including blinding, and 8.2% including sample size estimation. The incorporation of SDEs did not significantly increase over the ten-year timeframe in the screened articles. Randomization and sample size estimation differed significantly between animal and human substudies (corrected p=1.85e-05 and corrected p=3.81e-07, respectively.)
+
+ConclusionsEvidence of methodological rigor varies depending on the study type and model organisms used. From 2011-2021, SDE reporting within preclinical studies has not increased, suggesting more work is needed to foster the inclusion of rigorous study design elements in cardiovascular research.
+
+Date: 2024-11-23
+
+DOI: 10.1101/2023.06.27.546731

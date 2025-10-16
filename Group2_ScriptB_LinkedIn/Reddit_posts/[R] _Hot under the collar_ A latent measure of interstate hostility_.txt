@@ -1,0 +1,19 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/s1cxel/r_hot_under_the_collar_a_latent_measure_of/
+Title: [R] "Hot under the collar: A latent measure of interstate hostility"
+
+Content:
+Tl; dr: A Bayesian ideal-point model for modeling crises in international relations.
+
+Abstract: "The majority of studies on international conflict escalation use a variety of measures of hostility including the use of force, reciprocity, and the number of fatalities. The use of different measures, however, leads to different empirical results and creates difficulties when testing existing theories of interstate conflict. Furthermore, hostility measures currently used in the conflict literature are ill suited to the task of identifying consistent predictors of international conflict escalation. This article presents a new dyadic latent measure of interstate hostility, created using a Bayesian item-response theory model and conflict data from the Militarized Interstate Dispute (MID) and Phoenix political event datasets. This model (1) provides a more granular, conceptually precise, and validated measure of hostility, which incorporates the uncertainty inherent in the latent variable; and (2) solves the problem of temporal variation in event data using a varying-intercept structure and human-coded data as a benchmark against which biases in machine-coded data are corrected. In addition, this measurement model allows for the systematic evaluation of how existing measures relate to the construct of hostility. The presented model will therefore enhance the ability of researchers to understand factors affecting conflict dynamics, including escalation and de-escalation processes."
+
+Paper: https://journals.sagepub.com/doi/pdf/10.1177/0022343320962546
+
+Non-paywalled: http://zterechshenko.com/assets/ZTerechshenko_MA.pdf
+
+Comments:
+- From the title, I thought you were going to model the number of middle fingers one receives while driving on the NJ Turnpike.
+- Dang I know the people who run that journal. Always cool to see my pre-data science career (poli sci academia) bleed over.
+- Is the New Jersey turnpike some kind of hell on Earth, this is the fourth time I’ve heard about it this week.
+- I frequently throw the bird on the turnpike but only to those that deserve it.
+- As a fellow poli sci person, I agree. This paper just struck me as very cool and unique for IR

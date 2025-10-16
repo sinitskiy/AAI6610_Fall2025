@@ -1,0 +1,78 @@
+URL: https://www.linkedin.com/posts/andriyburkov_ok-lets-clarify-this-once-and-for-all-activity-7210120210303852544-IY0C
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Andriy Burkov的动态
+Andriy Burkov 
+Andriy Burkov是领英影响力人物
+
+PhD in AI, author of 📖 The Hundred-Page Language Models Book and 📖 The Hundred-Page Machine Learning Book
+
+1 年
+
+Ok, let's clarify this once and for all. LLMs are neither stochastic nor probabilistic. An LLM is a mathematical formula that is perfectly deterministic. You send the same value to the input, and you get the same list of scores at the output. Just because you decide to toss a coin based on these scores doesn't make the LLM stochastic. A coin is not stochastic; you just decide to make a decision by tossing it. Don’t toss, and nothing will change.
+
+431
+150 条评论
+赞
+评论
+分享
+Abhinav Kimothi
+
+1 年
+
+Andriy, interesting perspective. I may have misunderstood but isn't that true for any model? Once the training is complete, the trained model is deterministic. 
+
+赞
+回复
+8 次回应
+Mazhar Ali
+
+Assistant Manager Operatios at LESCO
+
+1 年
+
+Interesting view point. 
+
+赞
+回复
+1 次回应
+Chirag Jain
+
+CEO @ Textify Analytics | Ex-Hyundai Motors | Ex-NetMarbles | Seoul National University | K-Startup Grand Challenge 22 | GKS 2014
+
+1 年
+
+Wait.. hmm, what happened to temperature and top P values..? I thought that made the LLMs produce random values
+
+赞
+回复
+Alon Bochman
+
+1 年
+
+Respectfully disagree Andriy Burkov. If you "don't toss" you will not get intelligence. It's a rich irony IMO.
+
+There are lots of "formulas" to build LLMs, and none of the ones I know are deterministic. Transformers typically start with random weights, and have a temperature setting to pick stochastically/probabilistically among a token distribution. They *evolved* from deterministic to stochastic because deterministic LLMs wrote boring, repetitive, unintelligent and often unintelligible text. 
+
+
+赞
+回复
+14 次回应
+Adam Lawrence
+
+GenAI & Data Science Leader | Build High-Impact Teams | FinTech | Advisory & Consulting Roles
+
+1 年
+
+Agreed. It’s interesting to note though that the temperature parameter, which is user defined and determines the lev

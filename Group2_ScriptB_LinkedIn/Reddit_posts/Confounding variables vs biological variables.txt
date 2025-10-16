@@ -1,0 +1,69 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/18gjfhi/confounding_variables_vs_biological_variables/
+Title: Confounding variables vs biological variables
+
+Content:
+I am a little confused about controlling confounding variables and their comparison to biological variables. I came across this opinion piece today:
+
+[https://gh.bmj.com/content/bmjgh/6/4/e005714.full.pdf](https://gh.bmj.com/content/bmjgh/6/4/e005714.full.pdf) : Stop ‘controlling’ for sex and gender in global health research
+
+Now, assuming that *y* represents the gene expression in a study of samples which is our outcome/independent variable with a dependent variable of diseased and healthy, we can represent it as:
+
+>*y = intercept + B1\*dependent\_variable*
+
+Now, since the sample is heterogeneous with respect to sex, age, BMI and everything else, usually linear models control for these factors.
+
+>*y = intercept + B1\*dependent\_variable + B2\*sex + B3\*age and so on*
+
+The above paper reproaches this methodology and talks about studying sex as a biological variable instead of a confounder but I am confused about what it suggests to do instead.
+
+Quoting from the paper:
+
+>A first, and necessary step is to dis-aggregate data to interrogate how sex and gender intersect with each other or with the predictors and outcomes under investigation. Dis-aggregation of data is a trigger for sex-responsive and gender- responsive research that allows for understanding how the true relationship between a predictor and outcome differs between males and females or among men, women and gender minorities.
+
+I searched for dis-aggregation and it pointed me to an article which advocated that we shouldn't be taking an average of the time-series datasets.
+
+**My question:**
+
+1. How can we study sex or even age as a biological variable instead of a confounder? I have looked at some studies by John Quackenbush who has a lot of articles about sex-differences in various diseases but in all these studies, they usually do account for sex in the same way, it seems? For instance, this is what they used for a general study of all the tissues for a normal population:
+
+>We used the following linear regression model to detect sex-biased gene expression in each tissue:  
+>  
+>Y  = b0 + b1\*Batch + b2\*Race + b3\*Age + b4\*BMI + b5\*RIN + b6\*Sex + epsilon
+
+Another paper based on finding sex-biased genes in colon cancer:
+
+>We used voom available in the R package limma 3.26.9 (25)  to compare gene expression between colon tumor samples from males and  females after adjusting for the covariates age, race, and disease stage.
+
+So my conclusion is that if I want to study sex as a biological variable for a particular disease, I need to use sex as my independent variable and account for disease stages, age, etc. But anyways, all of them are being "corrected" at the same time, right? It's just a linear equation with different x corresponding to the different categorical variables. 
+
+2. We anyways get a log(fold-change) and uncertainty values for the estimate of each of the weights for different covariates after performing a differential expression analysis. Can't we just find important genes that are being changed due to sex or age by looking at genes which have a high Z-statistic for that covariate?  
+
+
+Comments:
+- Regression modeling needs a lot of background knowledge. You can include anything in the model but there needs to be background information to know which of the variables to control for. If you are using any differential expression analysis tools, you can carry out differential expression analysis for all the covariates of interest in your model and see how much the differences in gene expression are due to that variation in that variable. The key thing is though you need solid rationale to include a variable in that model. You also probably need to do sensitivity analyses to see how much your results vary by including other covariates in the model.
+
+"So my conclusion is that if I want to study sex as a biological variable for a particular disease, I need to use sex as my dependent variable and account for disease stages, age, etc. But anyways, all of them are being "corrected" at the same time, right? " - You are only correcting for the independent variables. Basically, correcting means your dependent variable of interest (eg: gene expression) is possibly confounded by certain variables you are not interested in along with the variable you are interested in. So by including those confounders in the model, you subtract away their effect and then ask if the effect of my variable of interest is still significant.
+- They basically seem to argue that confounders shouldn't just be main effects, but also should be included in interaction terms with the independent variable of interest. 
+
+My response is that this should be data-driven, and not just the default behavior. Look at your data. Do they look like fig 1a? Main effect confounder is good. Do they look like 1b? Interaction term.
+- The reason you found that article confusing is that it's just not very well written. They don't define what they mean statistically and then jump straight into their ideas of the social/political implications. There's also no reason why one person's confounder couldn't be another person's variable of interest. 
+
+When thinking about the effect of sex it's good to separate what are usually called main effects or interaction effects. When modelling sex as a main effect (for example on the level of a protein, or a particular gene in RNA-seq) you are looking for a constant difference based on the sex category, for example being male might consistently be associated with a 25% higher level of protein x. This is the kind of effect you might be interested in controlling for in your rna-seq analysis and what you are doing is appropriate. If you extract the genes with highly significant p.values for the sex coefficient you will see XIST, UTY and so on which are exclusively expressed in only one sex. 
+
+What people are usually more interested in is looking for a different direction of effect (of a drug, usually) depending on sex - for example the drug might improve the level of protein A by 20% in males, but do nothing, or even the opposite, in females. This is an interaction effect, where the effect of one variable (drug treatment) varies depending on the value of another (sex). 
+
+The reason this approach is often not taken is not usually sexism or lack of interest, as that article suggests, but because you need a huge amount more power to detect an interaction effect than you do a main effect of the same effect size - Andrew Gelman's rule of thumb is you need 16 times the power (!!!) - see https://statmodeling.stat.columbia.edu/2018/03/15/need16/ So unless your study is powered to detect an interaction effect (which is very unlikely, as most biomedical studies are barely powered to detect a main effect), then you shouldn't really go looking for an interaction effect because even if you ‘find’ one it is very unlikely to be reproducible. 
+
+This is commonly misunderstood by almost everyone in biomedicine - I'd have a look through Andrew Gelman's blog where this comes up in the comments a lot, and also this article by Stephen Senn who has written quite a bit on this as well - https://www.linkedin.com/pulse/invisible-statistics-stephen-senn/
+
+Their other suggestion of disaggregation is also statistically dubious… repeating the analysis in males and in females usually just gives the researcher two shots at the p.value roulette machine. If there was a true interaction effect in the dataset it would be detected by doing an interaction test.
+- Ah sorry, that was a typo. I will correct it. My point was that the model won't differentiate between a confounder and any of the independent variables, right? Since it's just a linear equation. Like what is the fundamental difference between an independent variable and a confounder other than the fact that the independent variable is what we want to associate with the dependent variable? Can't we just have each confounder as an independent variable since anyways we are also measuring it for each sample?
+
+Only thing that I find faulty with this thought is that for a hypothesis, you probably need to provide a biological reason to include an independent variable.
+- Contact the mods next time a post like this gets removed (by automoderator, sorry), we'll reinstate it.
+- Yes, confounder is expected to affect your dependent variable independent of your predictors/independent variable. Hence you include it and substract its effect.
+
+So you should include all known confounders of your dependent variable in the model.
+- No worries, didn’t notice! Does it auto delete posts with links or something?
+- Often, yes.

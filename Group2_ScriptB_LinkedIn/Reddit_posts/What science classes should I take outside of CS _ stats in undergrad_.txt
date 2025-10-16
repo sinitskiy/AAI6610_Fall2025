@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/13wsjd6/what_science_classes_should_i_take_outside_of_cs/
+Title: What science classes should I take outside of CS / stats in undergrad?
+
+Content:
+Hi all. 
+
+Currently an HS senior who will be attending UVA in the fall. My plan is to double major in biostatistics and biochemistry, but it's looking like that may not be a possibility. Instead of completely majoring in biochemistry, im considering taking a select few of science classes related to the subject. Here's the ones I'm considering:
+
+-	accelerated general chemistry + lab
+-	accelerated organic chemistry + lab 
+-	biochemistry + lab 
+-	gen bio (took AP bio in HS)
+-	genetics & molecular bio 
+-	microbiology 
+
+Here's the ones from a complete biochem major that I won't take: 
+
+-	physics 1 & 2 + lab 
+-	physical chemistry + lab
+-	analytic chemistry 
+-	inorganic chemistry 
+
+As much as I enjoy software engineering, I'd prefer to be a computational biologist who handles more theoretical work dealing with proteomics / biology. Additionally, I'd possibly like to do some work involving biophysics. Would not taking a physical chemistry class hinder me in this possible pursuit? 
+
+I'd appreciate any insight. In addition to taking these classes and majoring in biostatistics (which composes of statistic classes that deal with coding), I plan on coding everyday to fill in the gaps and eventually learn machine learning. Of course, my goal is to do research as soon as my freshman year. 
+
+Side note: I appreciate this subreddit so much! You are all so awesome and I feel so grateful to have this subreddit as a resource for my pursuits.
+
+Edit: figured I should clarify, I fully intend to go to grad school, and I am 99% sure that this is the career path I wanna go down.
+
+Comments:
+- My two-cents and I highly recommend taking Genetics and Molecular Biology. A lot of the stuff you'll learn in this class will basically be your foundation for bioinformatics for knowing stuff on the biology side.   
+
+
+Not familiar with biophysics or what classes would be useful there but hopefully some others would be able to contribute here!
+- Thank you for the advice. I will for sure take that class!
+
+Has there been any notable classes you've taken during undergrad that you're thankful you did?
+- Hmm personally I’m still having a troubling time understanding why I needed Chemistry and Ochem for a lot of the stuff I’m doing, but recently in work my boss did propose an interesting thought related to biochem. 
+
+Personally I thought a lot of the CS courses I took for my minor taught me lot about programmming and thinking through a lot of problems. Statistics is also useful for being able to interpret your data and understand what it’s trying to convey.

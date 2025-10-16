@@ -1,0 +1,47 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vp1y6p/predicting_amino_acid_sequence_from_protein/
+Title: Predicting amino acid sequence from protein structure
+
+Content:
+I’m aware of models that can predict protein structure based on amino acid sequences (eg. AlphaFold2), but I was wondering if there were any machine learning models that can do the opposite - i.e. predict amino acids sequences from a given protein structure?
+
+Comments:
+- If this is for design, you might want to look into the inverse protein folding problem. This paper by Ingraham et al. uses a graph neural network to design sequences conditioned on a protein backbone https://www.mit.edu/~vgarg/GenerativeModelsForProteinDesign.pdf  
+
+There are other papers trying to solve this problem, like ESM-IF1 from FAIR by Hsu et al.
+- There are several. You can look up ProteinSolver, Spin2, ProDCONN and DenseCPD. There are many others. I even made one myself but I'm still trying to get it published
+- Nope.  Structures are worked out using crystallography (or a few other methods), but those are generally done when you already know the sequence because getting the crystal structure almost always required enriching and gathering enough protein to make the crystal.  
+
+If you’re putting that much effort into it, you probably already know what the protein you’re harvesting is - and at this point, that means you probably know the whole sequence..
+
+Not to mention that crystallography goes much much faster if you know the sequence of the protein you’re trying to solve.
+- [removed]
+- That’s fair, but that’s also an unsolved problem, so there also aren’t really any tools that can do that reliably.
+
+Edit:  Since you're down voting me, I figure I may as well add a note.  If you think somoene has solved it, please post the paper.  There are many many papers going back about 40 years where people have made incremental progress, but no one has actually solved the problem.  Even the paper you've linked doesn't come close to "solving the problem".
+
+For instance, I don't consider calling 30% of disulphide bonds correctly as "solved".
+
+There is clearly a nobel prize waiting for anyone who does solve this, which is why the forward problem is also known as the "Holy Grail" of biology, and the reverse problem will likely require the same amount of effort.  So, no, it's still an unsolved problem and none of the tools are really solving it.
+
+40 years of incremental improvements doesn't mean we know nothing, but it's not solved.
+- [removed]
+- I didn't say there aren't lots of tools.  I just said none of them solve the problem.
+
+Though, suggesting I'm not familiar with the field is an interesting take.   You're welcome to find another subreddit if you don't think this one is a fit for you.
+- [removed]
+- I see the source of the confusion.
+
+Consider that I made a mistake in my answer because "Nope" was meant to mean "there aren't any tools that actually solve the problem", which is true.  Partial solutions aren't "solving the problem".  There are simply tools that solve subsets of the problem.
+
+However, telling me that I'm not familiar with the field is your mistake -so, it would be nice to have an apology from you as well.  It's generally not considered to be polite to tell the moderator of the forum - and a 20+ year practitioner of bioinformatics - that they aren't familiar with the field.  
+
+Disagreeing with me isn't a reason for anyone to be banned, but I do expect people to act with professional courtesy towards everyone here - including the moderators.
+- [removed]
+- As I said, disagreeing with me isn't a ban-able offence.  
+
+However, I just don't see how you can claim to be an authority in this *specific* topic, when you seem to be claiming it's a solved problem.
+
+Rosetta didn't claim to have solved protein folding when they were able to partially solve the problem in the early 2000's, but you now appear to be claiming that a paper with no better results than Rosetta is the solution for the inverse problem.
+
+Show me something in the ballpark of alphafold, and I'll concede the point - but I don't think you can.

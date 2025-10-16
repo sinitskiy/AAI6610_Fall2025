@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/mfarmanbar_pdamsterdam2024-trustworthyai-uncertaintyquantification-activity-7234992861132263424-gjJ_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Mojtaba Farmanbar, PhD的动态
+Mojtaba Farmanbar, PhD
+
+Head of AI & Data | Research Scientist
+
+1 年
+
+Looking forward to presenting at #PDAmsterdam2024 on uncertainty quantification and trustworthy AI. Excited to dive into discussions with peers. 
+
+Big shout out to the organizers for making it happen!
+
+#trustworthyai #uncertaintyquantification #conformalprediction
+
+PyData Amsterdam
+
+5,372 位关注者
+
+1 年
+
+In a world where AI and machine learning are increasingly used to make critical decisions, understanding and quantifying uncertainty is key to building more reliable and trustworthy models. Join Mojtaba Farmanbar, PhD at #PDAmsterdam2024 for his talk, "Uncertainty Quantification: How Much Can You Trust Your Machine Learning Model?" 
+
+Imagine a machine learning model that predicts whether an image contains a cat or not. Traditional models give a simple yes or no, but how confident is the model in its prediction? This is where uncertainty quantification comes into play, and Mojtaba will introduce you to a powerful framework called Conformal Prediction (CP).
+
+Conformal Prediction adds a layer of confidence to model predictions, providing a range of possible outcomes along with a measure of certainty. This model-agnostic and distribution-free approach ensures that stakeholders can make more informed decisions, especially in high-stakes areas like healthcare, finance, and autonomous systems.
+
+In this talk, Mojtaba will guide you through the fundamentals of conformal prediction, its practical applications in both regression and classification problems, and why it’s a game-changer for uncertainty quantification. By the end, you’ll have a clear understanding of how to apply this framework to enhance decision-making in your own projects.
+
+Don’t miss this opportunity to learn how to trust your models more and make better, more informed decisions! 🎟️ https://lnkd.in/e7wGpnUs
+
+93
+2 条评论
+赞
+评论
+分享
+Daria Lazko
+
+Antwerp Portrait, Personal Branding & He

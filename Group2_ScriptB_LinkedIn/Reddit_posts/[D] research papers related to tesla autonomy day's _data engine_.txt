@@ -1,0 +1,31 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/bziw0x/d_research_papers_related_to_tesla_autonomy_days/
+Title: [D] research papers related to tesla autonomy day's "data engine"
+
+Content:
+I'm a grad student interested in the process described by Andrej at tesla's autonomy day. Below I've put together some of my brief notes with links. So far the published research I could find that seemed to be related to their work was the NeurIPS 2017 paper [Decoupling “when to update” from “how to update”](https://papers.nips.cc/paper/6697-decoupling-when-to-update-from-how-to-update.pdf) and the [Active Learning Survey](http://burrsettles.com/pub/settles.activelearning.pdf)
+
+&#x200B;
+
+Does anyone else have other related papers to suggest? For example, I'm guessing measuring distance via the L2 is a bad idea.
+
+&#x200B;
+
+[Generic Object Detection improvement](https://youtu.be/Ucp0TTmvqOE?t=7549)
+
+If you know a specific problem you have: take that specific problem and use it to find similar examples to pull into a training set
+
+I'm guessing they embed every image with a generic imagenet model and then find similar images based on L2 distance between embedded vectors
+
+[training pipeline](https://youtu.be/Ucp0TTmvqOE?t=7716)
+
+start training with a uniformly sampled dataset and select new images for training if:
+
+1. detect uncertainties in the network predictions
+   1. I'm guessing 2 networks disagreeing with each other(similar to: [decoupling what to update from how to update](https://papers.nips.cc/paper/6697-decoupling-when-to-update-from-how-to-update.pdf))
+2. driver intervention
+
+Too fix either of (1) or (2) use the process described in generic object detection
+
+Comments:
+- /r/learnmachinelearning

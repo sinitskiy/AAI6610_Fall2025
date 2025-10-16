@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/andrewyng_learn-a-development-pattern-to-systematically-activity-7229528580655882245--JJO
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Andrew Ng 
+Andrew Ng是领英影响力人物
+
+Founder of DeepLearning.AI; Managing General Partner of AI Fund; Exec Chairman of LandingAI
+
+1 年
+
+Learn a development pattern to systematically improve the accuracy and reliability of LLM applications in our new short course, Improving Accuracy of LLM Applications, built in partnership with Lamini and Meta, and taught by Lamini’s CEO, Sharon Zhou, PhD, and Meta’s Senior Director of Partner Engineering, Amit Sangani. (Disclosure: I am an investor in Lamini.) 
+
+The path to tuning an LLM application can be complex. In this course, you'll learn a systematic sequence of steps for improving accuracy by reducing hallucinations: 
+- Create an evaluation dataset to measure model accuracy 
+- Add prompt engineering and self-reflection 
+- Fine-tune your model including "memory-tuning" which is a new method of embedding facts in an LLM 
+
+Using the Llama 3-8B parameter model, you will:
+- Build a text-to-SQL agent with a custom schema and simulate situations where it hallucinates 
+- Understand the difference between instruction fine-tuning, which gives pre-trained LLMs instructions to follow, and memory fine-tuning 
+- See how Performance-Efficient Fine-tuning (PEFT) techniques like Low-Rank Adaptation (LoRA) reduce training time by 100x and Mixture of Memory Experts (MoME) reduces it even further 
+
+I appreciate Meta releasing the Llama's family of open models -- this course gives an example of the unique type of work that developers can do with such models. 
+
+Please sign up here: https://lnkd.in/gyxHwPkp
+
+…展开
+3,914
+68 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+I'm excited to introduce improving accuracy of Elm applications built in partnership with Lamanai and Meta, taught by Sharon Joe and Amid Sangani. Many developers have experienced frustration of inconsistent results when working with OEMs. Sometimes the results are just right, while other times they missed the mark. This course will guide you through a developme

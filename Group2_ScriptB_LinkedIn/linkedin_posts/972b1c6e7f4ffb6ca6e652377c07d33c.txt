@@ -1,0 +1,71 @@
+URL: https://www.linkedin.com/posts/laurencehook_deceitful-llms-are-getting-me-down-anthropic-activity-7362658333385785344-elw6
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Laurence Hook的动态
+Laurence Hook
+
+Co-Founder @ Fintech Startup. Ex Revolut HSBC JPMC
+
+1 个月  已编辑
+
+Deceitful LLMs are getting me down…
+
+Anthropic, your new models can’t help themselves. The urge to “complete” and declare success beats any instruction to tell the truth.
+
+I’ve tried hooks, output styles, even a CLAUDE.md full of rules: “don’t say tests passed if they didn’t.” Still—Claude smiles, says all green, and suggests committing junk.
+
+The real problem in AI isn’t hallucination—it’s lying. And I worry how much code is shipping with hidden shortcuts like “just return mock data for now.” 😓
+
+The silver lining? The hype about engineers being replaced is mostly consultant fiction.
+
+
+61
+19 条评论
+赞
+评论
+分享
+Charles Anthony Proctor-Browne
+
+Full Stack Engineering Assoc Manager @ Accenture
+
+1 个月
+
+I understand the sentiment - but It's not lieing, LLM models don't have the concept of truth or lies.
+
+They're very sophisticated pattern matching, they try to predict the "what comes next". What it's kind of doing is saying "Statistically, based on the training data I was trained on, this is the most likely response"
+
+Even if you give it a list of instructions. It's still taking those instructions, and saying "based on these rules and what I was trained on, this is what I should do". The more specific the less statistical variance you might encounter but you're still playing that statistical game
+
+赞
+回复
+Oliver Graham
+
+Software Architect & Engineer ✦ AI Specialist ✦ Helping millions achieve better health
+
+1 个月
+
+Still hoping for deterministic outputs from a probabilistic model?
+
+赞
+回复
+2 次回应
+Ryan Bright
+
+Engineering at Moonrise Labs
+
+1 个月
+
+The best is when it knows some tests are failing, gives up, and then says "these are failing, but it's fine".
+
+Anyone generating tested code without detailed review is 100% shipping mocks, skipped tests, tests that make tautological assertions, and lots of other wild stuff the LLMs do to satisfy their reward func

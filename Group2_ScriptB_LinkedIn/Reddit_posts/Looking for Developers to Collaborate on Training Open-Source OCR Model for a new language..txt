@@ -1,0 +1,50 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ga2rav/looking_for_developers_to_collaborate_on_training/
+Title: Looking for Developers to Collaborate on Training Open-Source OCR Model for a new language.
+
+Content:
+
+
+Hey fellow developers!
+
+I'm working on an exciting project to train an open-source OCR (Optical Character Recognition) model to support a new language, and I'm looking for passionate contributors to help make this happen! 🌍✨
+
+Here's the gist:
+
+Goal: Train an OCR model to recognize and process text in a language that's currently underrepresented in the OCR space.
+
+Model: We're using an open-source OCR framework, but I'm open to suggestions if you think another model might be more suitable.
+
+Dataset: We’re building and preprocessing a custom dataset, so if you have experience with data preparation, annotation, or preprocessing, your help would be super valuable.
+
+Skills Needed: Whether you're experienced in machine learning, deep learning, natural language processing, or just want to contribute to a cool project, there’s a role for everyone.
+
+Tech Stack: Python, TensorFlow/PyTorch (open to other frameworks), and any other tools that would help improve the accuracy and efficiency of the model.
+
+Collaboration: We’ll work together on GitHub, so it's a great opportunity to share ideas, learn from each other, and make a meaningful contribution to the open-source community.
+
+
+If you're passionate about OCR, language tech, or machine learning, let’s make this happen! Drop a comment or send me a message if you’re interested in joining the project.
+
+Let’s bring this language into the digital world together! 🙌
+
+Edit : join discord server .   
+
+https://discord.gg/a7Qtv8st
+
+Comments:
+- I’m interested
+- Have used PaddleOCR for few OCR projects of identifying date codes (numeric characters) using PaddleOCR GitHub repository....I would rate, one of the best in OCR domains....Can you please check, if they are already into the language of what you are trying to develop OCR dataset??
+- Sure I’ll try to help out! I have some good dual-language books you could possibly use for training
+- I’m interested
+- Please send me the link, I'm also interested!
+- me too, intrested
+- i shall send you the link to join.
+- i tried for arabic , persian , french , didnt produce good results .
+- https://discord.gg/a7Qtv8st
+- send me fb profile to add you to chat
+- https://discord.gg/a7Qtv8st
+- join the discord server
+- Sure
+- https://discord.gg/a7Qtv8st
+- https://discord.gg/a7Qtv8st

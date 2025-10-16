@@ -1,0 +1,60 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/170hvjs/d_how_to_test_if_regression_model_is/
+Title: [D] How to test if regression model is statistically significantly better, including its test error?
+
+Content:
+I have a regression model, predicting a popularity of a text. I have its performance metrics on test set, e.g. RMSE and MAE. This gives me an uncertainty estimate about its predictions.
+
+Now I want to transform the text in some way, e.g. give it to human experts or another model to "upgrade" (in terms of getting better popularity). So I have the original and transformed text.
+
+Now I have 3 popularity scores:
+
+* true popularity for original text
+* predicted popularity for original text
+* predicted popularity for transformed text
+
+Obviously, if model MAE is for example around 5, and predicted popularity for transformed text is higher than for the original by 1.5, this can be totally random, due to errors in the model prediction.
+
+How can I measure if text transformation is beneficial, i.e. statistically significantly better than the original text, incorporating information about model quality? Requiring that the improvement has to be higher than model error would be incredibly strict.
+
+ 
+
+Comments:
+- There are basically two different likely sources of error:
+
+1. Intrinsic error, i.e. there isn't a totally causal relationship between input and output in the data. 
+
+2. finite data size error, i.e. maybe things would get a lot better if you had 10x the data
+
+The first kind of error is what MAE is measuring. You can also get a variance for this by calculating the variance of the absolute error, thus getting an approximate gaussian distribution for the intrinsic error.
+
+The other can be estimated with ensembling. You can examine finite sample size error by using an ensemble of models made with bootstrapped data. Bootstrapping is where you fit your model many different times with different uniformly sampled subsamples of your data.
+
+"Statistical significance" is arbitrary. What combining the above will allow you to do is answer the question "what is the probability that the popularity of the transformed text is greater than the popularity of the original text?". How big that probability should be for you to feel good is a subjective decision that you have to make based on your goals.
+- This is a little bit of a sidebar, but you should be careful with the text transformations.
+
+It sounds like you trained your data on observational data and now you are treating it as a causal model.
+
+For example, let's say your text transformation is to make all the letters in the post uppercase all caps.
+
+You might find that your model suddenly says every post will do +10 better than the original text.
+
+However, your model may have never seen a post with all-caps text because the text transformation wasn't randomly applied in the observational dataset.
+
+So you end up trying to use a correlative model and treat it like a causal model and could lead to huge issues. Just thought I'd mention this because it's often overlooked in projects.
+
+For your original question, I would say the best way is to validate & test it yourself if you can. You should be able to try out different thresholds for "statistical significance" and then you can simply validate and test them to see what percentage actually turn out better.
+- The model error is per example. The improvement would be averaged over all examples. If you have enough examples, you can measure small effects. The error will run as sqrt(N), assuming Gaussian.
+- Thank you, that's the answer I was looking for. However, I don't quite get how would I get the probability you're talking about. I can easily calculate absolute error mean and variance for the original texts. I obviously can't do this for augmented texts, since I dont't know ground truth for them. So how exactly  should I combine this with bootstrap-estimated finite data size error?
+- Fair point! My text transformation is kind of like text generation via augmentation (similar to paraphrasing models), and model has seen similar texts. So that should be reasonably taken care of.
+- I'm sorry, I don't quite get it. Model error is for example, sure, to calculate between original popularity and predicted for original texts. For predictions between original and transformed texts I can calculate improvement. But what to do next? Which error will run as sqrt(N), you mean MAE?
+- You basically have to assume that your model is fitted well in the sense that it’s capable of generalizing from original data to the transformed data. Obviously that’s not totally true and is potentially a very risky assumption, but that’s actually what bootstrapping will help with. 
+
+If your model doesn’t generalize well to the transformed data then the bootstrapped estimates of any quantity - including error - will have a large variance, because the predictions will change a lot depending on the subset of data that you’re using for training and testing. This is basically the same idea as looking at the variance of k-fold cross validation for a large value of k, but with bootstrapping you sample with replacement and the subsample sets are not disjoint.
+
+What you’re going to get from doing this is two Gaussian distributions that you compare: a Gaussian for the popularity of the original data, and a Gaussian for the popularity of the transformed data. Comparing the mean values will tell you which one is better overall, and the variance will tell you how sure you are about that. If your model isn’t generalizing well then you can expect the two Gaussians to overlap a lot, resulting in an estimated probability of one being better than the other of about 50%, ie it’s a coin flip and you basically know nothing.
+
+Another good thing to do is “permutation testing”, where you train an ensemble of models but this time you randomly permute your data labels. This will tell you how much of your model performance is due to random chance.
+- What I am saying in that small systematic effects (like your model improvement) can be established with sufficient statistics. The statistical error goes as 1/sqrt(N).
+- Ah, I see. Do you have some references / links that I could read to learn more?
+- https://en.wikipedia.org/wiki/Standard\_error

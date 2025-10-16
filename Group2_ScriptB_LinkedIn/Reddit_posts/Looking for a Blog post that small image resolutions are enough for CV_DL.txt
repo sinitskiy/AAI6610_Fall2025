@@ -1,0 +1,16 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ltincy/looking_for_a_blog_post_that_small_image/
+Title: Looking for a Blog post that small image resolutions are enough for CV/DL
+
+Content:
+\[Cross-posted from r/MachineLearning\] Looking for a blog post by someone pretty well-known (student-era researcher) in CV/DL on 224x224 or 336x512 resolutions being enough for computer vision. They had some neat interactive visualizations, where you could try different resolution, augmentations, etc. The argument (quite convincing too) being that if a human can solve the task fairly reasonably looking at the image, then neural networks for sure can. TIA -- it's been bugging me since I was looking to share it with a few juniors.
+
+Comments:
+- Probably this? https://lucasb.eyer.be/articles/vit_cnn_speed.html
+- Yes -- thanks a bunch!
+- Nice, I missed this one.
+- Thanks for the share!
+
+I think it’s quite good information and ultimately not terribly surprising? Humans can correctly recognize specific faces with a shockingly low number of total bits of information across the image.
+
+If anything, I’d expect that with dedicated effort you could definitely get ML systems to work quite well with much smaller images. (Not necessarily more efficiently though!)

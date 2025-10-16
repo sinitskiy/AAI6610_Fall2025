@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/omarsar_comprehensive-taxonomy-of-llm-hallucinations-activity-7358496781329960962-yQeU
+Date: 2025-09-24
+Author: Unknown
+
+Comprehensive Taxonomy of LLM Hallucinations
+
+Nice report covering common hallucinations, root causes, and mitigation strategies.

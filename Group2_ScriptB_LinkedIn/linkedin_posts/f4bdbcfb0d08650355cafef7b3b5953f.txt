@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/pedro-sequeira-martins_artificialintelligence-aiagents-llm-activity-7333111270805491713-qTn3
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Pedro Martins的动态
+Pedro Martins
+
+Partner and EMEA Technology & AI Lead @ IAC | Founder of Soludity | Ex-Nokia | MBA | Lean Six Sigma & ML Certified
+
+4 个月
+
+🧠 The Art of Probability in the Age of Agents and AGI
+As conversations around AGI, Singularity, and autonomous agents accelerate, it’s easy to forget a fundamental truth: Today’s most powerful AI systems are still just probabilistic models.
+
+Despite their remarkable capabilities, large language models (LLMs) like GPT don’t understand, reason, or think...They Predict.
+
+At their core, LLMs generate each word by calculating what’s statistically most likely to come next, based on everything that came before.
+
+This process, trained on massive datasets, is what powers their fluency. But it’s still a highly advanced form of pattern matching. No cognition. No awareness. Just the art of probability.
+
+
+🔍 What "Chain of Thought" Really Means
+
+When people refer to Chain of Thought reasoning in LLMs, it may look like step-by-step logic.
+But in practice, it’s just a longer sequence of statistically likely steps, modeled after reasoning patterns found in training data.
+
+LLMs don’t “solve problems” in the human sense. They simulate how a 
+solution might be expressed, based on patterns they’ve seen before.
+That distinction is critical when deploying them in enterprise, safety-critical, or decision-making environments.
+
+
+⚠️ The Probabilistic Nature Brings Real Limitations
+
+1. Local, not global optimization: LLMs predict one word at a time. They don’t plan ahead unless explicitly engineered to do so.
+2. No grounded understanding: There’s no internal model of the world. Just associations between words.
+3. Limited memory: Even with long contexts, they forget unless given explicit memory support.
+4. Overconfidence and hallucinations: Confident-sounding output isn’t always correct.
+5. No post-training learning: Without retraining, they can’t adapt to new realities or feedback.
+
+
+🤖 What This Mea

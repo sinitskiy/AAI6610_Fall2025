@@ -1,0 +1,25 @@
+URL: https://www.linkedin.com/posts/markrhinkle_how-to-stop-llm-hallucinations-activity-7163532391393783808-nDGD
+Date: 2025-09-24
+Author: Unknown
+
+LLMs are the rockstars of AI, generating creative content and tackling complex tasks. But like any rockstar, they can sometimes go "off-script" with factual inconsistencies, known as hallucinations. 
+
+I am in the middle of a technical project and wanted to share my notes on what I am learning about reducing hallucinations when querying an LLM. 
+
+Here are some ways to keep LLMs from hallucinating:
+
+1. 𝗥𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹-𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗲𝗱 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 (𝗥𝗔𝗚): This method uses a vector database to retrieve similar documents based on a query, which the LLM then uses to summarize a response. It allows the model to access external data, reducing reliance on internal knowledge.
+
+2. 𝗥𝗲𝗮𝘀𝗼𝗻𝗶𝗻𝗴: LLMs can use reasoning to produce answers in a more human-like fashion, helping them avoid hallucinations. For instance, "chain-of-thought prompting" can break down multistep problems into intermediate steps, enabling the model to solve complex reasoning problems.
+
+3. 𝗜𝘁𝗲𝗿𝗮𝘁𝗶𝘃𝗲 𝗤𝘂𝗲𝗿𝘆𝗶𝗻𝗴: This involves multiple back-and-forth calls between the LLM and a vector database to arrive at the best answer. Methods like forward-looking active retrieval generation and least to most can be used to iteratively query the model and improve the accuracy of its responses[1].
+
+4. 𝗖𝗼𝗻𝘁𝗲𝘅𝘁 𝗜𝗻𝗷𝗲𝗰𝘁𝗶𝗼𝗻 & 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗣𝗿𝗼𝗺𝗽𝘁 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴: By supplementing the prompt with additional information, context injection can boost the efficiency of LLMs. Advanced prompt engineering, such as fine-tuning and few-shot prompting, can also help reduce hallucinations.
+
+5. 𝗗𝗮𝘁𝗮 𝗔𝘂𝗴𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻: Providing additional context not fitting the model's context window can help reduce hallucinations. However, the quality of the additional examples is crucial for the effectiveness of this method.
+
+6. 𝗙𝗶𝗻𝗲-𝗧𝘂𝗻𝗶𝗻𝗴: This method involves collecting high-quality prompt/completion pairs and experimenting with different foundation models and hyper-parameters to reduce hallucinations[3].
+
+7. 𝗖𝗼𝗻𝘁𝗶𝗻𝘂𝗼𝘂𝘀 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻: It's important to evaluate LLMs to identify and address hallucinations continuously. This can be done by developing a workflow to evaluate the methods used to minimize hallucinations.
+
+It's important to note that LLMs are designed to hallucinate, and preventing them from doing so would be counterproductive. However, by implementing these methods, it's possible to reduce the frequency of hallucinations and improve the accuracy of LLMs' responses. Read the attachment if you want to get geeky.

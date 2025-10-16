@@ -1,0 +1,23 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gpong0/need_advice_and_resources_for_interview/
+Title: Need Advice and Resources for Interview Preparation: Research Position in Machine Learning and Deep Learning
+
+Content:
+Hi everyone!
+
+I’m a sophomore in college preparing for an interview for a research position in **machine learning** and **deep learning** with a focus on **artificial societies**. I’ll be working with a team mostly composed of PhD and Master’s students in computer science, so I’d love to come as prepared as possible.
+
+**A bit about my background:**
+
+* **Project experience**: Voice gender classification, UNET-based image segmentation for lunar crater detection, and Traveling Salesman Problem (using Simulated Annealing).
+* **Research interests**: Primarily in deep learning and computer vision applications.
+
+I’d appreciate any advice or resources! Specifically, I’m looking for:
+
+1. **Interview tips**: What should I focus on for research-oriented ML roles, especially when working with advanced researchers?
+2. **Key concepts**: Are there technical/theoretical ML or deep learning topics that are especially important for a research setting?
+3. **Recommended resources**: Any must-read papers, books, or courses to help me prepare?
+
+Thanks so much for any advice or insights you can share!
+
+Comments:

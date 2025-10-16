@@ -1,0 +1,64 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11gow3j/singlecell_spacial_omics_postdoc_in_the_us_after/
+Title: Single-cell spacial -omics postdoc in the US after 2 years in industry in Europe
+
+Content:
+Hello bioinfo community,
+
+I need some opinions on my life dilemma about my professional career. I come with a strong computational background (PhD in Computer Science, MSc in Bioinformatics) from Europe. My PhD is not in Bioinformatics though, it is applied machine learning and data visualisation for temporal data.
+
+After I finished my PhD more than 2 years ago, I didn’t want to continue with academia. I faced some struggle to find an industry job due to covid, but at the end I was able to find one after six months. I had to move to another European country as well for that job. I am working as a data scientist in an IT-services company that serves pharma clients. I wouldn’t say that my company is a good company, but I gained two valuable years of industry experience in the R&D pharma working in projects both in the clinical and preclinical domain (not -omics though, we apply AI on data from water purification systems and other equipment in the lab for prediction purposes and causal inference, molecular data etc.).
+
+My ultimate goal is to work at a more specialised biotech or big pharma company in the R&D department as a bioinformatics scientist or data scientist. While I am strong with AI and math, I lack -omics data analysis expertise, so I think I am automatically excluded from all the traditional bioinformatics jobs that entail -omics and gene expression analytics, because those jobs require PhD in bioinformatics with relevant publications.
+
+For that reason I thought to go back to school for a postdoc in Bioinformatics, but I couldn’t find anything interesting in Europe (and those I found require PhD in bioinformatics) + in Europe there are not so many bioinformatics jobs. I got accepted in a very good applied and not theoretical Bioinformatics postdoc in Houston in the area of the medical center with a Professor of Genetics, who is open to train me in biology.
+
+Do you think it is a good idea to go for the postdoc in order to gain bioinformatics research experience ? Ultimately I want to end up in the industry again, but in a more specialised life sciences company or in an academic or research institute setting as a bioinformatician and not as a professor. On the other hand, if I stay in my current company, I am in danger of working for data science or ML engineering projects with banks, if we run out of pharma projects. Last but not least, if I don’t do the particular postdoc, I don’t think I will have again the chance to work with -omics data. 
+
+Need your help and open to listen to your opinions.
+
+EDIT: I am more worried about my career prospects after the postdoc. I am afraid that I will lose valuable years of industry experience again and I don’t know how good it is to go back and forth between academia and industry. Ultimately, I would like to come back to Europe, where undoubtedly bioinformatics jobs are scarce. The best place for bioinformatics is the US. I am also fed up with moving, I don’t know why I push myself through this process. I want to settle down in one county.
+
+Comments:
+- I don’t know anything about the European job market, but if you were in the US, doing this postdoc would get you where you want to go. 
+
+You don’t say that the lab has bioinformatics expertise though. I suggest prioritizing a postdoc with someone with that expertise or with a clear strategy for getting you access to that expertise. A lot of biologists just want someone to “push buttons” for them, and value you for being able to run programs. It’s crucial to have access to an expert in your area of study. 
+
+Also, a lot of people have shitty postdoc experiences, so really vet any mentor you consider. Try to talk with former mentees. It sounds like you’ve got reservations about this path, and it would suck if you followed it and regretted it. 
+
+Another option would be to contribute to omics projects on your off-work time at your current job. That might get you a European postdoc or job. 
+
+In the US, your pre-postdoctoral industry experience would be taken into consideration in industry hiring after your postdoc.
+- > I think I am automatically excluded from all the traditional bioinformatics jobs that entail -omics and gene expression analytics
+
+do you say this from experience (as in, you applied), or because you _think_ this is what will happen?
+
+from my experience in doing a postdoc and knowing a ton of people doing sc-omics in industry in Europe, the postdoc will not set you back, it will be seen as important experience in the field. 
+
+but it also doesn't sound to me your odds are that bad at the moment. I guess it will depend on the company and team you end up in (will you have space to learn? are they more biologically or computationally inclined?), but if you know R and/or Python and have solid AI/ML/Stats knowledge that's at least 80% of the skill set required. just review some single-cell analysis tutorials before the interviews and I think you should be good
+- Hello there, any GitHub page or CV I could look at?
+We might be interested in your profile.
+- I did my PhD in biomedical science at MD Anderson Cancer Center then followed up with a masters later in bioinformatics at John’s Hopkins. First Houston is for me one of the worst places to live. It’s polluted, extremely hot and humid from April to October, Texas is very politically conservative (although not so much Houston) religiously conservative, with bad oak tree allergies in the spring and ozone allergies late summer and fall. That being said the Texas medical center is a great place for medical science and almost every specialty is covered. I would make sure your boss knows bioinformatics and that there are plenty of “people” resources to interact with and learn from. I have had many students and professors ask me to teach them bioinformatics thinking it’s just a few hours tutorial on which buttons to push. I would send them the easy short intro to Unix book and tell them to find me when they are ready and I never hear from them. 🙄 or they ask if I can just give them a script they can push run on. I think with your computer science background though you should be well set up to learn bioinformatics that will be easy for you but coming from a biology background it will be important to understand the biology too! Often I see biologists and computer scientists talking through each other because they don’t know the same language. And the biology is important for the experimental design and being able to tell if the results make sense. It’s really important to be in on the experimental design as well, otherwise a scientist will try to do the experiment with the n=1 and get mad when you hand them crappy results.  Good luck making a decision.
+- Thank you very much for your reply. I checked the lab regarding both their bioinformatics expertise and the working environment. I talked multiple times with other postdocs of the dry lab (the professor runs both a dry and a wet lab) and asked them about their projects and their working conditions, if there is collaboration between them, if the professor is available, and I got very positive feedback. The professor also talked to me about my possible future project, which requires more machine learning than anything else. I think I don’t worry whether the working environment sucks. In addition, the professor knows that I want to work in the area, but I have no plans of chasing an academic career.
+
+I am more worried about :
+
+1) How industry will see my postdoc if I end up to the industry again in 2 or 3 years or sooner? I got mixed replies from people I asked. People outside bioinformatics, they do not see it as positive.
+
+2) In addition, I may run the risk if I come back to Europe of working on general data science or anything else other than bioinformatics, because I don’t see many bioinformatics jobs in Europe. In that case, I think I would have done that for nothing.
+
+3) How easy is to find a bioinformatics job in the US that is willing to sponsor you a visa as a European ? I am going with a J1 visa to Houston.
+
+Thank you in advance
+- General Kenobi
+- Hello, I tried to reach out by message or chat, but it is not possible, you don’t allow it. Could you please let me send you a message or give me your email address?
+- Thank you very much for your reply, I am also worried about the city. I am going to leave Amsterdam to go to Houston and I am afraid that I will regret it. My MSc is in Bioinformatics, but my PhD not (my PhD was on time series analytics with research on data visualisation and applied ML). I have a very good understanding of biology, and I think I speak better the language of biologists, but all my publications are on computer science journals and conferences. What do you suggest in order to gain experience in bioinformatics research? To go for the postdoc or to apply directly to bioinformatics industry R&D jobs? I would appreciate your opinion.
+- Should work now, I've added you as a friend.
+- I applied to a couple of bioinformatics postdocs in Amsterdam, but no one invited me for an interview, because they ask for a PhD in bioinformatics. In the US, professors are more relaxed and also value a PhD in Computer Science.
+- No, it doesn’t work. Could you please send me your email address by a direct message in order to send you my CV? I would appreciate your opinion.
+- With a MS already in bioinformatics you could probably get an entry level position in the US. I don’t know a lot about visas but many companies and academic places do sponsor visas. Check cost of living in the city you are applying in as it could be prohibitive. Housing cost here have gone insane!
+- Did you get my message with my email?
+- This is the reason that I applied only in Houston. With postdoc money, I couldn’t afford living anywhere else (e.g., Boston). Houston’s cost of life is still reasonable I think. Would you advise me to go to Houston? As I understand, you don’t like it.
+- Yes, I got it. I emailed you my CV. Thanks a lot!
+- do you have a multi-omics research group ?
+- I lived in Houston 8 years and hated it. But it is cheaper and I got my Ph.D. 🤷🏻‍♀️

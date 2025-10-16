@@ -1,0 +1,44 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/161royk/d_whats_the_best_model_for_iterative_ranking/
+Title: [D] What's the best model for iterative ranking determination from pairwise comparisons?
+
+Content:
+There are many entities: A, B, C, D... (< 10,000 entities)
+
+There can be a comparison of a pair with two entities resulting in a winner and a loser: A > B; C > A; D > C; ...
+
+A comparison is expensive.
+
+Objective: to approximate the absolute order of entities (best entities at the top of the list, worst at the bottom), minimize the number of comparisons
+
+The worst solution would be just applying a sorting algorithm, which would require *n log n* comparisons.
+
+I believe an active sampling technique would be required, i.e. select a number of entities with the highest uncertainty, and do comparisons with them, adjust the model, repeat.
+
+ChatGPT suggests a Bradley-Terry model and even gives an implementation example. I wonder if there is anything better?
+
+Comments:
+- In terms of machine learning, I see two approaches to this problem:
+
+1. Ordinal regression
+2. Learning to rank
+
+Both require no comparison at all, just knowing the features of the entities. Of course, alla approaches require training datasets.
+
+Bradley-Terry model seems to be pretty simple, basically a modification of logistic regression, so in terms of data needed it will probably go like this:
+
+Bradley-Terry < ordinal regression (e.g. linear models, or ordinal SVM, or ordinal RF) < learning to rank (e.g. LightGBM with proper loss function)
+- [deleted]
+- You can look a literature of entity resolution or deduplication and methods from there migth fit the problem well, as they try to i essence get the most out of data doing the lesats amount of comparison between entities. God example would be blocking, so you know A is the biggest, so you dont compare with A anymore, and other tricks like that. Also you could Look for ml model to reduce the cost of comparison, something like decision tree would be good.
+- optimise comparisons
+- Would learning to rank really be suitable, if in my case, entities are completely unique and different for each query? I don't have a pool of entities (e.g. documents) from which a model should pick based on the query. The entities would be auto-generated and novel on each query.
+- For each ranking query, the considered entities are auto-generated text paragraphs. They are unique for each query and don't overlap across multiple queries.
+- Well, are they completely unique? In a way that you cannot do any feature engineering at all in order for them to have same features? After all, in all ML we deal with different entities, but all algorithms learn to represent them in some way. If you have NLP, you can also train a neural network for learning to rank, similarly to LightGBM, or like recommendation models.
+- Sounds like you're trying to do something similar to RLHF. Is that true?
+- For each ranking query, the considered entities are auto-generated text paragraphs. They are unique for each query and don't overlap across multiple queries.  
+The problem is that I also don't know the true rankings of entities for a query, without first doing a bunch of pairwise comparisons between them, which is expensive. So if any training was required, it would seem that obtaining the training data could be problematic.
+
+And the number of different queries would also be very large, I can't even have foresight on the queries.
+- Well, this sounds like a learning to rank on text. I don't see any way of doing this other than compiling a training dataset and training a model on this. However, you don't necessarity need all pairwise comparisons. [Pairwise learning to rank](https://en.wikipedia.org/wiki/Learning_to_rank#Pairwise_approach) means basically training a classifier that will predict the probability that for pair (A, B) the A is better than B (ranks higher).
+
+Overlapping or not doesn't matter - just pick a BERT-like pretrained transformer. Typical finetuning probably won't work, since you will have limited data. This means that you should take a pretrained model, vectorize texts to embeddings, and then you have a regular tabular binary classification. But probably something with 512 or 768 dimensions will work better here, to avoid curse of dimensionality with small data. Try ALBERT, RoBERTa, DeBERTa, or something from Sentence Transformers (especially for multilingual data). You can use logistic regression on that, or Random Forest, or strongly regularized kernel SVM (this should work very well).

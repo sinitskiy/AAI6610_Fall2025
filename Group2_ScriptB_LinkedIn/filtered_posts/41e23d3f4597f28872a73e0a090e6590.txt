@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/prekshak_citizendatascientist-ai-datascience-activity-7285905417686130688-f-JT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Preksha Kaparwan
+
+Building Private AI with Pharma, Cloud-Based Agentic AI Platforms | 2-Min Data Story | Linkedin Top Voice | Simplifying AI for Non-Tech
+
+8 个月
+
+9/100 Probabilistic vs Deterministic AI
+What's the Difference? 🤖✨
+
+Probabilistic AI thrives on uncertainty and possibilities—it calculates likelihoods to make decisions. Think of it as making a well-informed guess. (GPT models, Llama etc)
+
+Deterministic AI, on the other hand, operates on strict rules and logic, producing the same result every single time when given the same input. 🚦(Super AI)
+
+Let me know in the comments if you wanna see a demo. 
+
+Understanding the difference is key to choosing the right AI model for your business needs. Probabilistic AI suits scenarios where uncertainty is natural (e.g., weather predictions), while deterministic AI excels in rule-based systems (e.g., automated checkouts).
+-------------------------------
+I’m creating a series of 100 data concepts, from basic definitions to advanced topics like Agentic AI and SLMs, to help businesses and data teams make informed decisions.
+We share even more content on Instagram at #CitizenDataScientist—perfect for young professionals and those transitioning into data science. Check it out here. https://lnkd.in/gFf8tvpt
+
+Got a specific topic in mind? Let me know, and I’ll cover it! 👇
+
+#ai #datascience #enterprise #learning #100
+
+…展开
+142
+16 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+Genot Thai prive propublica was plek van Beaufort. Data analytics, Yes, even it's API based platforms or AI wrappers. Here are three reasons. One, it's a probabilistic model. That means it lacks accuracy, which is very important for businesses. He cannot make decisions worth millions based on approximate answers. 2 Threat to data privacy. Yes, every data is training data if you catch my drift. 3 hallucinations. You must be seeing some of those because ChatGPT is very good at completing a story or imagination and businesses cannot 

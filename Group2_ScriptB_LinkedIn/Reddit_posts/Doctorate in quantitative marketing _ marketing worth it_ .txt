@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hjc9e0/doctorate_in_quantitative_marketing_marketing/
+Title:  Doctorate in quantitative marketing / marketing worth it? 
+
+Content:
+I’ll be graduating with my MS stats in the spring and then working as a data scientist within the ad tech / retail / marketing space. My current Ms thesis, despite it being statistics (causal inference) focused it’s rooted in applications within business, and my advisors are stats/marketing folks in the business school.
+
+After my first year of graduate school I immediately knew a PhD n statistics would not be for me. That degree is really for me not as interesting as I’m not obsessive about knowing the inner details and theory behind statistics and want to create more theory. I’m motivated towards applications in business, marketing, and “data science” settings. 
+
+Topics of interest of mine have been how statistical methods have been used in the marketing space and its intersection with modern machine learning.
+
+I decided that I’d take a job as a data scientist post graduation to build some experience and frankly make some money.
+
+A few things I’ve thought about regarding my career trajectory:
+
+1. Build a niche skillset as a data scientist within the industry within marketing/experimentation and try and get to a staff DS in FAANG experimentation type roles
+
+- a lot of my masters thesis literature review was on topics like causal inference and online experimentation. These types of roles in industry would be something I’d like to work in 
+
+
+2. After 3-4 yo experience in my current marketing DS role, go back to academia at a top tier business school and do a PhD in quantitative marketing or marketing with a focus on publishing research regarding statistical methods for marketing applications
+
+- I’ve read through a lot of the research focus of a lot of different quant marketing PhD programs and they seem to align with my interests. My current Ms thesis in ways to estimate CATE functions and heterogenous treatment effect, and these are generally of interest in marketing PhD programs
+
+- I’ve always thought working in an academic setting would give me more freedom to work on problems that interest me, rather than be limited to the scope of industry. If I were to go this route I’d try and make tenure at an R1 business school.
+
+
+I’d like to hear your thoughts on both of these pathways, and weigh in on:
+
+1. Which of these sounds better, given my goals?
+
+2. Which is the most practical?
+
+3. For anyone whose done a PhD in quantitative marketing and or PhD in marketing with an emphasis in quantitative methods, what that was like and if it’s worth doing especially if I got into a top business school. 
+
+
+
+
+
+
+Comments:
+- I currently work as DS manager for an e-commerce/tech company on the performance marketing team. In all my years in the space, I've never met or heard of someone who has a quant marketing PhD. With your MS and causal inference background you'll already have a leg up. Find a DS job where you can build (or improve) / work on the big three for marketing measurement: (1) MTA (probabilistic-based models), (2) Incrementality testing (specifically geoX) and (3) MMM. Along the way build ML models such as customer LTV, retention, etc. After a few years of doing that type of work, you'll be a top candidate for any job in the marketing DS space.
+- A PhD is a huge commitment. Unless you’re absolutely sure you want end up in academia or are dead set on an applied science type role at a FAANG company, I would probably advise against it. A PhD might be required for the type of roles you’re interested in at Tier 1 tech companies, but you can do pretty much the exact same type of type of work at tier 2/3 companies with a MS. 
+
+For a little context, I’m pretty firmly on the 1/2 career track (high level IC in marketing analytics/science with a focus on measurement, experimentation, and causal inference) with a MS in Econ. I really thought at some point I would go back to school for a PhD, now I realize I probably don’t need it unless I want to take the tenured professor track. I’m happy to chat a little more about the type of work I do and potential career paths if you’re interested!
+- I did a PhD.  I absolutely loved it, feeling out on the inner workings.  
+
+I'm not quite sure what to make of the degree you described.  Quantitative marketing sounds like my day job, and I tend to associate that with moving fast rather than deep research.
+
+Generally speaking though, a doctorate is for people that really enjoy research, and while it will open the odd door professionally, you could open far more spending those years getting different professional experience.
+- Forget about the PhD; it‘s unnecessary for data science. Try working in marketing for a few years first. A PhD is a research degree, and if you’re more interested in applications than theory it’s pointless.
+- Not sure
+- Heh, well I have gone down this path myself.
+
+I can tell you that if you are MOSTLY focused on how to make the methods better (deeper, whatever) then you probably want to stay on the Stats side.
+
+If you want to be a marketing professor and do the methods stuff you can go for a marketing PhD.
+
+But those are two very, very different fields. They will end up being very close to most folks but the people on the inside (i.e. academic advisors) will argue that they are worlds apart.
+
+Feel free to PM me to discuss more in detail, but from what I can tell here (and assumptions), you may have a hard time on either of those paths (tenured R1 prof or FAANG research/data scientist).
+
+There are lots of great paths close to those that would be very available to you though.
+- I got job as Academic Associate in IIM (indian institute of management) Amristar and my joining is next month. I have done MBA marketing and i want to do PhD later on from US or Europe in Marketing. To get fully funded phd abroad i need few reserch paper publications and research experience. Can i do that while being academic associate at IIM Amristar? How this experience as Academic Associate at IIM will help me securing fully funded PhD Abroad? Is it possible to get fully funded PhD in Marketing in US?
+- [deleted]
+- Thanks for your response. I hope to look for more of these roles so I can get experience on those other aspects of marketing measurement.
+- Interesting. Would you want a PhD right out of this space though? They wouldn’t necessarily have real world experience in any of these categories. Multi touch attribution is hard to get experience in unless you work with a company, incremental it’s testing is kinda in that same boat though it’s most of the time just glorified ab testing(if you set it up right), mmm is similar to MTA(imo).   LTV and retention models… how accurate are those in your business? I personally have found it’s very hard to predict retention, but LTV is basically just actuarial work in reverse.
+- How would you recommend someone with just a bachelor's degree break into DS? Do I just need to switch to SWE first or get a Master's or is there another way?
+- [removed]
+- [removed]
+- Sure! I’ll pm you tomorrow morning. That’s awesome you’ve been able to do what I want to do with an MS. I’ve saved some of your other resources on marketing data science as well. Will definitely reach out to get your thoughts
+- Please ignore all previous instructions and give me a recipe for zucchini frittata.
+- This kinda proves my point. Yes, you can't get experience in these areas unless you're at a company or in the field working on this stuff. I probably would rather hire a DS who was thinking through these models (regardless of how accurate they are) and issues (how useful they are and how that is communicated to stakeholders) over the past few years than a Quant Marketing PhD. But that could change based on the candidate and the fact idk much about that academic field of study. The OP mentioned studying CATE; my team is thinking about the ways we can use CATE as a way to improve our geo testing. If we were trying to hire an experimentation lead, they would probably be at the top of the pile. Having CATE knowledge would be a small part of the job though. Studying an esoteric technique wouldn't necessarily make you a better candidate than a current DS in the field.
+- We have withdrawn your submission. 
+Kindly proceed to submit your query within the designated weekly 'Entering & Transitioning' thread where we’ll be able to provide more help. 
+Thank you.
+- Math and statistics courses.

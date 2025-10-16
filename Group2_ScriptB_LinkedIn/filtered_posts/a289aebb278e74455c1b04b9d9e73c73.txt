@@ -1,0 +1,94 @@
+URL: https://www.linkedin.com/posts/christoph-molnar_machine-learning-sucks-at-uncertainty-quantification-activity-6978291736238288896-0Ywr
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christoph Molnar的动态
+Christoph Molnar
+
+Author of Interpretable Machine Learning, Modeling Mindsets, and more | christophmolnar.com
+
+3 年
+
+Machine learning sucks at uncertainty quantification.
+
+But there is a solution that almost sounds too good to be true: 
+
+conformal prediction
+
+• works for any black box model
+• requires few lines of code
+• is fast
+• comes with statistical guarantees
+
+A thread 🧵
+
+
+Conformal prediction is a method for uncertainty quantification of machine learning models.
+
+The method takes a heuristic uncertainty score and turns it into a rigorous one.
+
+
+
+What confused me first about conformal prediction: It's not 1 algorithm, but a general recipe:
+
+• Split data: training and calibration
+• Train model
+• Calculate "heuristic" scores on calibration data
+• Calibrate score
+• Use calibrated scoring rule on new data
+
+
+The recipe enables many use cases:
+
+• Prediction sets in multi-class problems
+• Calibrate classification scores so they can be interpreted as probabilities
+• Fix coverage of quantile regression
+• Conformal predictive distributions for regression
+• ...
+
+
+How to get started with conformal prediction:
+
+• Tutorial paper: https://lnkd.in/dY9-gJtx
+• Awesome list of conformal prediction approaches: https://lnkd.in/egZ3SVUb
+• scikit-ready Python package: https://lnkd.in/eXx-a-aK
+• R package: https://lnkd.in/eF7puN2D
+
+
+
+Subscribe to my newsletter Mindful Modeler to learn more about conformal prediction and other techniques to make machine learning better.
+
+https://lnkd.in/ezu2HAai
+
+398
+47 条评论
+赞
+评论
+分享
+Nguyen Hai Chau
+
+Associate Professor in Computer Science at UET, VNUH
+
+2 年
+
+Great!
+
+赞
+回复
+Vijay Nair
+
+Managing Director and Head of Advanced Technologies for Modeling at Wells Fargo
+
+3 年
+
+A fundamental problem with conformal prediction is that it is a marginal interval -- the confidence is an average across all X's. In practice, one needs conditional prediction intervals, valid for a given x. That's what practitio

@@ -1,0 +1,42 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jwdn91/why_does_4fold_cv_give_worse_results_than/
+Title: Why does 4-fold CV give worse results than training without it?
+
+Content:
+Hi everyone,
+I’m a medical student currently interning at a medical imaging & AI research lab. I’m pretty new to computer vision and machine learning, so please excuse any naive questions.
+
+I’m working on a regression task — predicting a biological score (can’t share the exact name due to privacy issues) from chest X-rays. I trained on a dataset of 7 million images using 4-fold cross-validation, but the test results were surprisingly bad. Then I tried training without cross-validation (just using a fixed train/val/test split), and the performance actually improved a lot.
+
+Is it possible that CV is messing things up somehow? What might be going wrong here? Any thoughts would be really appreciated!
+
+Comments:
+- Is there data leakage in your fixed split? The leakage doesn't have to be same image being split into different sets, but it could also be images from the same patient bring splits into different sets.
+- Have you tried different seeds for your train test val split? It could be that your fixed split is just lucky.
+- Like someone else said, it’s likely that your train / valid / test split had a randomly easy valid and test composition. Try again 3 or 4 times with different random seeds for splitting the data and see what happens. Chances are it’ll average to something more similar to what you see in cross validation.
+- Gonna need a lot more information.
+
+How much worse? What metric?
+
+Is there a lot of class bias in the types of chest x-rays? Did you account for bias in how you did your folds?
+
+What model did you use?
+
+How did the validation set do compared to the kfolds?
+7 million images is enough to not need to do k-folds imo
+
+Edit: if there isn't a huge difference, variance just be like that sometimes.
+- Other than something going on with the data (helps to visualize this too), only thing I can think of is maybe in your k-fold implementation you somehow accidentally split your data in a way that reduced your training data.  
+
+Curious what it is though so update us when you find out!
+- Not really the right subreddit, even though both are CV 😅
+
+Anyway, some factors to consider:
+
+1. What’s your dataset size? If it’s small (like low hundreds), or the data is imbalanced, there’s a chance certain folds will hit poor splits.
+
+2. Check for leakages. Perhaps in your 4-fold loop some variables aren’t reset properly? Or your splits aren’t segregating the labels and images by the right pairing?
+- Yeah, often people forget connection between samples, so you get one huge data leak. OP, you should be splitting on patient level, not single sample level if some samples come from the same subject.
+
+On the other hand, CV would have the same problem. So not sure if that's main cause. OP needs to provide more info
+- I am thinking of they use a pre defined CV published with the dataset, there might not be this problem.

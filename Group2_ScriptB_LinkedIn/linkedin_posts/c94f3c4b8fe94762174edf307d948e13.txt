@@ -1,0 +1,41 @@
+URL: https://www.linkedin.com/posts/piotrorzechowski1_heres-a-quick-demo-of-our-llm-powered-patient-activity-7335999681962950657-G_e1
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Piotr Orzechowski
+
+CEO @ Infermedica | Trusted AI in Healthcare, Clinically Validated AI, Patient Triage & Navigation
+
+4 个月
+
+Here’s a quick demo of our LLM-powered patient triage chatbot. It’s a strong example of our Neuro-Symbolic approach to building AI. The chatbot uses LLMs to deliver a natural, conversational experience, while relying on probabilistic knowledge graphs for symbolic reasoning that is transparent, deterministic, and validated by clinicians.
+
+Nearly 30,000 users have tested it so far as part of our Usability Study, and we're receiving excellent feedback as we continue to iterate on new versions.
+
+For healthcare organizations exploring this technology, here’s what you get:
+ ✔️ 140,000+ hours of doctors’ time behind its development and validation
+ ✔️ Transparent, explainable reasoning (not a black box)
+ ✔️ A user interface optimized for clinical data collection
+
+We're currently engaging partners for pilots in select geographies. While the EU is not yet supported, we’d be happy to showcase the tool and share more as we progress toward regulatory approval for this LLM-enabled solution.
+
+✉️ DM me if you'd like to schedule a demo.
+
+115
+4 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+So how does our conversational triage work? Let's say I've got fever and cough. So what's going to happen? We'll ask for some follow up information about the patient. 38 years old and male. All right. And what you see here, the model is processing what I'm saying, pulling the information from our knowledge graph here. We want to learn a bit more about when fever and cough started this time my symptoms started I think yesterday. I use dictation to make this demo easier for myself, so we want to learn a bit more. Do we have like severity? Can we add some more details? My fever is high grade, outside it's 39��C. And what you gonna see now is in the background, our model maps all of this information to clinical concepts that we can embed into our k

@@ -1,0 +1,91 @@
+URL: https://www.linkedin.com/posts/arrigonialberto_fmue-foundation-model-with-uncertainty-estimation-activity-7357006857091092480-Bdxd
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Alberto Arrigoni的动态
+Alberto Arrigoni
+
+Global Lead Data Scientist @ EssilorLuxottica | PhD, Machine Learning
+
+2 个月
+
+Curious how AI models can know when they don’t know—especially in critical fields like ophthalmology?
+I just published a technical breakdown of FMUE, a new transformer-based foundation model for OCT diagnosis that doesn’t just output predictions, but also quantifies its own uncertainty. With an evidential deep learning head, FMUE can flag unfamiliar or ambiguous cases for expert review—making it a step closer to trustworthy, risk-aware clinical AI.
+In the article, I explore:
+- Why uncertainty quantification is essential for safe medical AI
+- How the model uses Dirichlet-based outputs for interpretable confidence
+- The underlying architecture (ViT-Large + LoRA fine-tuning)
+- How it compares to clinicians and previous models
+- What this means for real-world deployment in healthcare
+Check out the deep-dive here below: https://lnkd.in/eWEkA3pr #AI #medtech #foundationalmodel 
+
+FMUE: Foundation Model with Uncertainty Estimation for OCT Diagnosis (paper review)
+medium.com
+40
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+4,479 位关注者
+
+110 则动态
+ 2 篇文章
+查看档案  关注
+更多文章
+Latent semantic analysis (LSA) and US job market (a toy app)
+Alberto Arrigoni  9 年
+Toy of the day
+Alberto Arrigoni  9 年
+探索相关领域
+Collaborative AI Models for Medical Diagnosis
+Evaluating AI Models for Medical Applications
+Understanding Foundation Models and Their Potential
+Foundation Model Transparency in AI
+How to Ensure Trust in AI Medical Outputs
+How AI Models can Ensure Trustworthiness and Transparency
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

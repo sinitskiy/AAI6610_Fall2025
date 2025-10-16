@@ -1,0 +1,44 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ev9hzd/apple_is_really_pushing_into_ai_employment/
+Title: Apple is really pushing into AI. Employment Analysis.
+
+Content:
+I have prepared an analysis of job offers in high-tech companies from the USA (data from [https://jobs-in-data.com/](https://jobs-in-data.com/)). As you can see, Apple has recently announced the most offers related to Machine Learning.
+
+What could this be related to? Any huge project incoming?
+
+https://preview.redd.it/irsivadeefjd1.png?width=1920&format=png&auto=webp&s=cd5d9444855981d3016b24bfaab9e0ec228ca8b9
+
+
+
+Comments:
+- Makes sense, with their push towards Apple Intelligence. 
+
+What stands out to me here though is Dell hiring tons of Data Scientists. What could they be doing over there?
+- You could not choose worse colors? Why give them all similar colors and not distinct ones?
+- I mean, without analysis of previous years or even months, it could also mean that they just got late.
+- It wouldn’t harm you to use Red, blue, green, yellow and white bars instead of this.
+- As a data scientist/ml engineer, I’ll look for some Apple referrals lol
+- I think this is pretty meaningless data without raw numbers. How many people are these companies hiring? For all we know Apple is just trying to replace people leaving and they have most leavers from ML positions.
+- We are all data people and yet OP still somehow manages to not understand how to use a categorical colour palette for categorical data and instead chooses to stick with a single hue.
+- This is a little misleading since i'm assuming these positions don't make up 100% of what these companies are hiring for... raw numbers or a relative comparison to non-tech hiring numbers would probably help paint a better picture. 
+
+Regardless, thanks for sharing.
+- Chart should show total numbers too. You can’t tell the sample sizes from this visual.
+- Anyone have any priors regarding this? Without a temporal component, for all we know, these ditributions were not significantly different compared to the past.
+- It makes sense given their recent push into integrating more advanced machine learning into their products. Could be a sign of big upcoming projects or new features that leverage AI in more impactful ways. I’d be curious to see if they’re also ramping up their investments in AI research or if they have any major product launches on the horizon that require this kind of talent.
+- It seems they hire data scientists to perform data analyst tasks.
+- Wow
+- Interesting observation! I believe AI really is the future
+- I'm trying to gain comment karma , could you please like my comment
+- Can't a student get an internship though??
+- It’s exciting to see Apple ramping up their Machine Learning (ML) recruitment! Given Apple's track record of innovation, this surge likely signals some ambitious upcoming projects in areas like augmented reality, AI-driven services, or even advancements in personal devices.
+
+As someone who has worked as a Data Scientist at Google and as a Machine Learning Engineer at Uber, I’ve seen firsthand how rapidly the demand for ML expertise is growing. If you're looking to capitalize on these opportunities, whether at Apple or other leading tech firms, it's crucial to be at the top of your game.
+
+I’m launching **The Top Data Scientist™ BootCamp**, designed to equip you with the skills and insights needed to excel in this competitive field. The course covers everything from foundational ML concepts to advanced techniques used in top companies.
+
+Check it out here: [The Top Data Scientist™ BootCamp](https://www.udemy.com/course/top-data-scientist). It could be the step you need to land your next big role!
+- Hardware fault prediction?
+- Probably they hire data scientists and have them do data analyst work? Seemed like they weren’t hiring many data analysts compared to the other companies here.
+- Brutal... but true. I did a 2nd take since I glossed over it but your so right.

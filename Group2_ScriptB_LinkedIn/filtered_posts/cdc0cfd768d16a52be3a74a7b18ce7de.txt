@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/ido-galil_iclr2023-uncertaintyestimation-selectiveprediction-activity-7054812679651115009-AJsy
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ido Galil的动态
+Ido Galil
+
+Deep Learning Researcher at NVIDIA & PhD Student in Computer Science at the Technion
+
+2 年  已编辑
+
+I’m excited to share another of my papers, to be published in ICLR 2023, made in collaboration with my friend Mohammed Dabbah and my supervisor Ran El-Yaniv:
+
+𝘞𝘩𝘢𝘵 𝘊𝘢𝘯 𝘸𝘦 𝘓𝘦𝘢𝘳𝘯 𝘍𝘳𝘰𝘮 𝘛𝘩𝘦 𝘚𝘦𝘭𝘦𝘤𝘵𝘪𝘷𝘦 𝘗𝘳𝘦𝘥𝘪𝘤𝘵𝘪𝘰𝘯 𝘈𝘯𝘥 𝘜𝘯𝘤𝘦𝘳𝘵𝘢𝘪𝘯𝘵𝘺 𝘌𝘴𝘵𝘪𝘮𝘢𝘵𝘪𝘰𝘯 𝘗𝘦𝘳𝘧𝘰𝘳𝘮𝘢𝘯𝘤𝘦 𝘖𝘧 523 𝘐𝘮𝘢𝘨𝘦𝘯𝘦𝘵 𝘊𝘭𝘢𝘴𝘴𝘪𝘧𝘪𝘦𝘳𝘴?
+https://lnkd.in/d9BZgdSx
+
+𝐕𝐢𝐝𝐞𝐨 𝐭𝐚𝐥𝐤:
+ https://lnkd.in/djpgA6Af
+
+𝐓𝐋𝐃𝐑: 
+We present a novel and comprehensive study of selective prediction and the uncertainty estimation performance of 523 existing pretrained deep ImageNet classifiers that are available in popular repositories. We identify numerous and previously unknown factors that affect uncertainty estimation and examine the relationships between the different metrics. To name a few, we find that distillation-based training regimes consistently yield better uncertainty estimations than other training schemes such as vanilla training, pretraining on a larger dataset and adversarial training. Moreover, we find a subset of ViT models that outperform any other models in terms of uncertainty estimation performance.
+
+𝐒𝐮𝐦𝐦𝐚𝐫𝐲:
+We evaluate 500+ ImageNet-1k classifiers for their uncertainty estimation performance, i.e., ranking (AUROC), calibration (ECE) and selective performance (selective risk & SAC). We make numerous novel observations. To name a few:
+
+1. Knowledge distillation is the training regime that consistently improves uncertainty estimation performance the most. This remains true even when the teacher itself is much worse at uncertainty estimation.
+
+2. Several training regimes result in a subset of ViTs that outperforms all other architectures and training regimes. 
+
+3. Contrary to previous work, the correlations between AUROC, ECE, accuracy and the number of parameters of the model are dependent on the architecture analyzed. We observe that while there is a strong correlation b

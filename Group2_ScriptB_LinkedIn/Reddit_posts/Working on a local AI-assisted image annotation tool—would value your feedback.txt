@@ -1,0 +1,25 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kbi3f8/working_on_a_local_aiassisted_image_annotation/
+Title: Working on a local AI-assisted image annotation tool—would value your feedback
+
+Content:
+Hello everyone,
+
+I’ve developed a desktop application called Snowball Annotator to streamline bounding-box labeling with an integrated active-learning loop. It runs entirely on your machine—no data leaves your computer—and as you approve or adjust the AI’s suggestions, the model retrains on GPU so its accuracy improves over time.
+
+You can learn more at www.snowballannotation.com
+
+I’m gathering input to ensure its workflow and interface meet real-world computer-vision needs. If you have a moment, I’d appreciate your thoughts on:
+
+1. Your current approach to manual vs. AI-assisted labeling  
+2. Whether an automatic “approve → retrain” cycle feels helpful or if you’d prefer manual control  
+3. Any missing features in the UI or export process
+
+Please feel free to ask questions or request a demo. Thank you for your feedback!
+
+
+Comments:
+- Welcome to the club 😅
+https://www.reddit.com/r/computervision/s/Sce28AbKsT
+- Let me know if you’d be interested in me working on this alongside you
+- That's really cool!

@@ -1,0 +1,26 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/ugacdm/asking_for_advice_for_bioinformatics_program/
+Title: Asking for Advice for Bioinformatics program.
+
+Content:
+Hi I am currently at UCSD as a Biology specialization Bioinformatics major and was accepted to transfer to UCLA as a Computational and Systems biology major. I was wondering in the workforce and your own personal opinions is it worth it for me to transfer to UCLA? In terms of ability to find a job, prestige, preparedness, anything academic related. I am mainly inclined towards UCLAs option for specialization in Biological Data Science in which is a composition of AI and Machine learning courses. Thank you
+
+Comments:
+- UCSD is amazing for bioinformatics. There’s so many opportunities there it’s insane with it being a biotech hub and world class professors. Honestly though it seems pretty tough regardless if you only have a bachelors and a PhD or masters graduate seems to have a much more edge than a bachelors in this field
+- The UC system are all going to be roughly equivalent in terms of prestige (roughly!  Sorry Riverside).  The one they will help you ace an interview for the job you want is the better call.
+- What year are you in? I graduated from that exact major at UCSD a few years ago and am currently halfway through my PhD (in the same field). The coursework was pretty rigorous, and you'll get good foundational knowledge in all the major aspects (but you'll get that at pretty much any UC). Not to mention the world-class faculty, research, and UCSD being in the middle of one of the largest biotech hubs in the US, so the opportunities are definitely there.
+- Lab rotations in world class research groups are more useful than courses if you want a career in research
+- Does this specific program require extensive knowledge and experience with programming and advanced math? Or, can you get by with limited experience in both fields?
+- I am currently a second year going into third
+- Funny you asked cuz I emailed them and did further research. Its recommended that bare minimum you have some introduction go programming class, data structures, discrete math, and linear algebra. 
+
+
+
+It’s just UCSD though it varies across many programs. Bioinformatics is really broad and you have programs that are more computational while others are more biological. What other programs you looking at ?
+- I'm looking at programs that can teach me some foundations and are okay with minimal programming and higher math experience.
+- Hmm UCSDs program might not be the best then. If you have limited experience then honestly an umbrella program might be best tbh.
+- What is an umbrella program?
+- It’s a program that contains many other program. It contains research labs in many departments. A good example is the one at boulder. You can take courses from various departments and you don’t have to have a super strong quantitative background as you can take more basic courses
+- So you can do this while you're doing your masters program in bioinformatics?
+- I don’t know about masters. The ones I know are PhDs. There are bioinformatics masters programs though that accomodate more. I don’t know too many but the one I can think of is Oregon.
+- Alright thank you! Do you know of any bioinformatics programs in Europe that are also accommodating?

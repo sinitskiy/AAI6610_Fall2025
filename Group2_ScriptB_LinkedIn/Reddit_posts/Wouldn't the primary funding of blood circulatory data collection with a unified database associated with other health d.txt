@@ -1,0 +1,11 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/u47owq/wouldnt_the_primary_funding_of_blood_circulatory/
+Title: Wouldn't the primary funding of blood circulatory data collection with a unified database associated with other health data for machine learning accelerate the understanding of dietetics for provide personalized nutrition? Rather than random research on random foods and diets with random persons?
+
+Content:
+Assuming given the ability of machine learning to capture and correlate patterns in vast data, what are the obstacles that prevent this new approach from helping or surpassing the classical research schedule in the field? (Assuming it is ensured that the research will be done by independent organizations)
+
+Comments:
+- So assuming by “blood circulatory data collection” you mean the results of blood work taken for blood chemistry at labs, the answer is probably no. Most bloodwork looks for specific things unrelated to “nutrition”, and the generic things they look for (eg blood cell counts, basic blood chemistry) are not really impacted by nutrition.
+
+The other major issue would be the reliability of individuals to self report their diet makeup, as well.

@@ -1,0 +1,82 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e5l347/how_does_your_company_provide_training_for/
+Title: How Does Your Company Provide Training for Existing Data Analysts/Data Scientists? 
+
+Content:
+The question is pretty much the title. I'd like to offer more training for my team on data-specific subjects. My company doesn't offer anything internally aimed at data folks, although we have lots of training on industry knowledge, how the company makes money, general executive training, etc. 
+
+I'd like to tailor some resources for my team and others like it on things like:
+
+* Specific technologies (Power BI, Tableau, Python, Machine Learning, etc.) 
+* Building Effective Dashboards/Reports
+* Working with Stakeholders
+* How to Present/Communicate with Data
+
+Plus other topics. 
+
+Does your company have a formal (or informal) process for training analysts with some experience (i.e. not onboarding or basic stuff, but skills to stretch them)? 
+
+Comments:
+- We don't. We hire data scientist with all our big ML/ai dreams, realize we have zero clients asking for real use cases, then realize that the DS is basically doing DA/BA/etc work, and then lay me off at the next convenient time
+
+Edit: seriousness, we're getting linkedin learning, but everyone knows certificates are worth anything
+- I work for one of the biggest tech companies in US. Our manager despises training and just throws new hires at data/tasks. Several times when we’ve tried to create onboarding documents he had explicitly prohibited it. Actually he prohibits anything other than sql monkey coding as “it won’t be beneficial for business”. 
+
+While I was working as a DS Manager for an EU company I set up an initial onboarding document with every data source, code examples and typical first tasks listed. Usually after a week people were up to date and able to start bringing the value. Other than that we had bi-weekly (edit: as in every two weeks) seminars by team members on any topics they deemed interesting:
+- statistics
+- ml
+- business
+- product. 
+
+As these seminars were about practical knowledge they were much more useful than databricks/coursera courses we had access to.
+- We do weekly white paper talks and roughly monthly lunch and learn discussions about different technologies/resources. Lastly, we do debriefs after we interact with customers to talk about what went well and what we could do better.
+- Got told to "look at the code" when I asked for more details about the db.
+- We have a Udemy Business account. Company also pays for university classes, up to $10,000 per year as long as it is business/role-relevant. 
+
+
+Nothing internal really.
+- In my experience, there's been a third-party licensing/contract agreement with something like Skillsoft that is meant to be used as on-demand training and upskilling, but good luck finding the time to actually participate unless you want to do it after typical business hours. There's usually more managerial/exec buy-in if there's some overarching initiative, like moving from one tool to another.
+- Yes there’s a data science program at my company (within the Fortune 100) that trains wannabe data scientists (though there’s a whole company-wide application process).  It mainly teaches on the different platforms that the company utilizes as well as the basic data science knowledge that you need to work effectively in the program.  For specific reasons, I didn’t want to join it and be tied down to the company in that regard so I just decided to start my Master’s in the Fall.  
+
+But, as long as I’m with the company, they have a 75% reimbursement policy after earning at least a C in the class, not perfect (even my mother’s employer, a medium sized hospital system, pays for full reimbursement) but it’s better than nothing.
+- Just on-the-job mentorship by more senior DS
+- For basic skills, go to a learning platform like datacamp or udemy or simplilearn
+
+For contextual knowledge, having something with case studies is good 
+
+For deep knowledge you have to build that out and invest in people. Some ways to do this:
+
+Saving projects, ie find ways to document how you solve new problems or when someone does something like this. Store code snippets and try to standardize processes and if you have a senior person, let them add to the compendium of knowledge regularly and methodically. Someone's role should be to organize and clean the new knowledge while everyone participates in adding to it. Incentive people to add to this (spark interests - give time or monetary reward)
+
+Pretty much build systems to learn. my first data job was really good at documenting processes do they could get most new people up to speed quick , to teach new things you have to bring in or develop the talent and store it
+
+I am working on building a library of culturally contextually relevant data science learning tools that is useful for orgs and selling it as a training tool the goal will be to train people in set skills and teach people to think like a scientist /practitioner. It will be geared towards grassroots organizations, non-profits, and farmers but since those are more complex use cases (impact versus profit) it will useful for profit driven as well (squeeze theorem).
+
+ If there is anything you think should specifically be in a library like that or something the general market is missing, please share and I will add you can post or dm
+- I work for a company in my country that is outsourcing to different company in different country. My company gives us availability to get Microsoft power certificates, and the company I'm being outsourced to is giving me access to paid udemy courses. And free time between tasks I use for studying... Excellent condition for me
+- We use those 3 1/2 inch floppies
+- We don’t. 
+
+You either know already or learn on the job.
+Yes turnover is high, code review barely exists, and the database infrastructure is a joke.
+
+Also we push things to prod on GitHub with barely any reviews (for data analysts/data scientists only).
+
+Big company btw ;)
+
+They however have a program for free online classes so there’s that…
+- I am currently trying to hire people that have the skills they need to do the job, but it seems in every interview, I always get the question around "opportunities to upskill",... and I'm like- yeah, well you need the basic skills for this job first, and if you want me to invest time training you for "your next role" then you better understand that it will only come after you show your competence. Too many folks are submitting bullshit resumes. I had a "Data scientist" apply last week - he had never deployed a model, never developed a model, has Python and R on his resume, and- when pressed, has never coded before- - thought they "can read code"... He asked me: "what would my career path include?" and "what is your sign on bonus look like..."... fudge..
+- My company only gives me the benefits of paying my salary (not a ds role)...
+- For me, no. Ask or learn it your own. Get the problem solved!
+
+Ermmm that's the harsh reality that not everyone is lucky. Self funded to buy books and courses to upgrade myself.
+- We have a lot of freedom to learn while doing. I have an opportunity to dabble around with stuff I find interesting and might be able to apply for something valuable later.  
+We also have a PowerBI Team of 30 people that meet up every 3 months, but I usually dont attend it physical.
+- My organisation don't provide any training, they just share 1 or 2 YouTube tutorial links.
+- The training in most companies is superficial and not tailored to fit and organization or person.  By the time we find a use case for data science, we end up seeking an alternative route because we haven't hired what we need in house.
+
+On the flip side, if you hire before the use case then your DS gets frustrated doing data cleansing and analyst work so they don't stick around.
+
+Very few companies have the skill to need full time DS so there's not of applied training.
+- They dont, if I need something I dont know I read about it and apply it.
+- We get a certain amount of money for professional development, so I take courses online and get certifications in areas that I would like to learn more about.

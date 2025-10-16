@@ -1,0 +1,9 @@
+URL: https://www.linkedin.com/posts/ofermend_vectara-minimizes-llm-hallucinations-for-activity-7289688870680412161-DxC2
+Date: 2025-09-24
+Author: Unknown
+
+We had a great webinar with @intel discussing how @vectara HHEM helps detect hallucinations in RAG.
+
+Webinar blog: https://intel.ly/40NcjoV
+HHEM: https://bit.ly/3vejcTw
+HHEM leaderboard: https://bit.ly/4dVBUQw

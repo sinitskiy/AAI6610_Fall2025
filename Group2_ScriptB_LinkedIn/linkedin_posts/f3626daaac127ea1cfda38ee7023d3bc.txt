@@ -1,0 +1,68 @@
+URL: https://www.linkedin.com/posts/rohitpagariya_llms-are-probabilistic-modelsthey-predict-activity-7304196793506877440-iWgD
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Rohit Pagariya的动态
+Rohit Pagariya
+
+Principal Engineering Manager
+
+7 个月
+
+LLMs are probabilistic models—they predict the most likely response based on patterns, not absolute correctness. This makes them great for reasoning and structuring work but unreliable for precise tasks like math or exhaustive code refactoring.
+A colleague recently ran into this. They used Copilot to search for a specific code pattern for refactoring, but it missed some instances. My suggestion? Write a script to systematically search and replace the code. That worked exactly as expected.
+
+Try:
+ ✅ "Generate a script to search for this pattern across the codebase."
+ ✅ "Suggest a structured search-and-replace approach."
+
+Instead of asking:
+ ❌ "Find and refactor all instances of this code pattern." (LLMs may miss cases)
+
+38
+4 条评论
+赞
+评论
+分享
+Saurabh Srivastava
+
+AI Consultant
+
+7 个月
+
+Would combining LLM-generated suggestions with static code analysis tools improve accuracy in refactoring? Like utilizing Tools such as SonarQube, ESLint, PMD, Checkstyle to analyze code
+
+赞
+回复
+Jarad DeLorenzo
+
+Co-founder @ IntelliForia | Agentic Solutions Architect
+
+6 个月
+
+1. "they used Copilot"...Well that's one problem
+2. LLMs are not very useful on their own. They kind of remind me of that brave night in Monty Python and the holy Grail with no arms and legs. It's really amusing and it talks a lot but that's it. LLM's need to be applied in patterns and hierarchies and chains. They need agency, and a creative push from a manager. 
+3. Judging somethings usefulness by measuring where it sits on a scale of determinism is completely flawed. Humans operate this way. That's why we're good at reasoning. That's why we're fallible when it comes to complex math. Yet we have spaceships that land magically like a sci-fi movie. Not to mention our entire universe is a big probabilistic wave function so stop with the determinism scale
+
+赞
+回复
+1 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+1,104 位关注者
+
+47 则动态
+查看档案  关注
+浏

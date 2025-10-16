@@ -1,0 +1,38 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nqtiad/p_give_me_your_one_line_of_advice_of_machine/
+Title: [P] Give me your one line of advice of machine learning code, that you have learned over years of hands on experience.
+
+Content:
+Mine is "always balance the dataset using SMOTE, that will drastically increase the precision, recall, f1 etc"
+
+Comments:
+- Pay extra attention to dataset curation, much more than model selection.
+
+Edit : literally in a messed up situation cause i didn't consider lighting, image resolution during training
+- Spend >=50% of your time understanding/owning/cleaning the data
+- Log and print everything. Run on vastly reduced data first. Overfit your model first to see it can fit the data. And never start a full training until all the above seems good
+- Mine is "never use SMOTE"
+- First sloppy approach will probably give 80% accuracy(/any metric) of the best-effort job
+- if you're researching a new idea, always overfit a single batch before going to bigger tests
+- Clean freakin data. Clean it again.
+- Look at your predictions, not only metrics, predictions, you will discover new ways to solve a problem.
+- Regularisation, and then more Regularisation
+- Take care of your test/validation dataset.
+
+If you sample that stuff randomly from your training data which often originates from lab or artificial environments, it's highly likely, that you will effectively have duplicates from training data in there. And when taken from the same environment, you can't really proof generalization capabilities of your model.
+
+A better attempt is, to take a smart look at the domain you are working with. Take something that the model should be able to generalize to and that represents a realistic difference that could happen in the real world. Then remove all related samples from training data. This desperate dataset now gets stored somewhere else. Break it down again and mix some part of it with randomly removed training data and use that for testing only while training. The last part of the removed data stays effectively locked up, until the model is ready. Only then you use it to proof or disproof the ability of your model to generalize on specifically those never seen samples. Only after that the model can be tested in a real world scenario.
+
+I wrote my masters thesis about this, because the whole project got derailed after a previous work was disproved when the model hit the real world. And I frequently apply this idea when I see new projects, just to make this clear from the start. Even if the project fails, you still proof something.
+- your data is more important than anything else
+- Don't forget cross validation, with appropriate grouping
+- Your first priority will Always be: 1. Get input and output data: samples or a prior dataset and 2. Analyze them Extremely carefully as if you're the model producing the output.  Whatever you do, 3. compare your model always against a really simple baseline. 
+
+Everything else is wishful thinking and unproven assumptions.
+- Look at the data. Actually look at it. Understand it. You'd be surprised at how many people just never look at their data and then surprised Pikachu face when it does something they don't expect.
+- All effort will have diminishing returns (especially for things like hyperparameter tuning). The tricky part is learning how to know when the results are good enough to stop trying and ship it.
+- Log predictions & targets not metrics, or failing that log every metric any reviewer could conceivably ever ask for.
+- If it's too good to be true, it probably is (or you have imbalanced data)
+- Do backups. Be sure they work.
+- Add complexity slowly
+- fail fast

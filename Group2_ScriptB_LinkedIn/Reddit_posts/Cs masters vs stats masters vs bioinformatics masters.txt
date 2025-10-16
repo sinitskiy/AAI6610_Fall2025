@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/yllpux/cs_masters_vs_stats_masters_vs_bioinformatics/
+Title: Cs masters vs stats masters vs bioinformatics masters
+
+Content:
+Hi y’all. I’m at a bit of a dilemma here. I am a current undergraduate biochem major with minors in stats and cs. I am currently doing research with graph theory and using knowledge graphs to store genetic information. I really like the stuff I’m doing and eventually I think I want to do a PhD in developing new algorithms and maybe do stuff with probabilistic modeling. 
+
+
+Im also reading PRML and really enjoying it too so doing an applied machine learning PhD also might be an attractive option later. If I want to do either options would a cs masters, stats masters, or a bioinformatics masters be a great stepping stone? Ideally would be a PhD but my stats are pretty bad and I don’t have too much extensive research experience.
+
+Comments:
+- Stats wouldn't work. Sounds heavily algorithms based, which is a very specific sector of CS. If you can access that through a Bioinformatics program, that would be great. Algorithms is hard though, the domain knowledge required to write a competitive algorithm, the thickness of just genetic processing algo books. Going to take a lot of personal focus, regardless of what masters you take. 
+
+Also there are more than a few people who are natural talents at bio, who really wouldn't need to go through the masters and should just be learning cs.
+- Hey op. I’m kinda in the similar postion as you applying to grad schools right now. I would honestly reach out to advisors you like and ask directly. 
+
+
+
+
+However I do find that many advisors in the fields you’re interested in, do prefer people with more quantitative backgrounds although it might not be impossible for you given your background.
+- Thank you. Do you just suggest I do a pure cs masters then?
+- Since you're going for a Phd I would reach out and ask directly what they would accept as credentials. But yes, that's what I would personally aim for. There's like 4-5 cs specific courses I have in mind. Deep learning, machine learning, algos, algos advanced, machine vision. All very time consuming and demancing courses.

@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/hanshallez_h2020fetopen-pathfinder-uncertainty-activity-7274363867118333952-WV-t
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Hans Hallez的动态
+Hans Hallez
+
+Associate Professor at KU Leuven - Bruges Campus
+
+9 个月
+
+Past week was conference week some KU Leuven M-Group PhD students. One of them, Kaizheng Wang (You did it! You got accepted to NeurIPS!) presented his work at NeurIPS 2024 in Vancouver, Canada.  There he presented his work on Credal Deep Ensembles for Uncertainty Quantification.  
+
+What is his work about?
+💡 Standard Neural Networks result in a single probability distribution among the available classes. However, due to differences in operating conditions and environments, a mismatch can happen between the data used to train the model and the data used during operation.  This results in uncertainties about the model which in its turn results in uncertainties of the resulting probability distribution.  This is a so-called epistemic uncertainty, which can be difficult to quantify.  Common Bayesian Neural Networks can be used but suffer from a high computational load and may be difficult to implement for low-latency high-reliability applications.
+
+🔎 In his work, Kaizheng Wang, used Credal-Set Neural Networks as a basis for an improved, yet computationally feasibale, uncertainty estimation and applied this measure to Out-of-Distribution detection.  Credal-Set Neural Networks use Interval Arithmetic to calculate class probability intervals (instead of a single probabilty for each class).  Hence, a datapoint belongs to a class with a probability depicted as an interval rather than a single probability.  And it doesn't stop there, to improve his uncertainty estimation, he used several of these Credal-Set Neural Networks in a Deep Ensemble and aggregates the result.  
+
+🥇 His results show that he is able to obtain a better uncertainty measure within a reasonable amount of time as opposed to other methods.  He is also able to detect Out-of-Distribution samples in a reliable way.  Through this approach, models can integrate uncertainty in their results

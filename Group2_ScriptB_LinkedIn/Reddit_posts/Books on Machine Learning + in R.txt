@@ -1,0 +1,55 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1i2qj4j/books_on_machine_learning_in_r/
+Title: Books on Machine Learning + in R
+
+Content:
+I'm interested in everyone's experience of books based specifically in R on machine learning, deep learning, and more recently LLM modelling, etc.  If you have particular experience to share it would really useful to hear about it.
+
+As a sub-question it would be great to hear about books intended for relative beginners, by which I mean those familiar with R and statistical analysis but with no formal training in AI. There is obviously the well-known *"Introduction to Machine Learning with R"* by Scott V Burger, available as a [free pdf](https://edisciplinas.usp.br/pluginfile.php/8527271/mod_resource/content/0/Burger%2C%20Scott%20V%20-%20Introduction%20to%20machine%20learning%20with%20R_%20rigorous%20mathematical%20analysis-OReilly%20%282018%29.pdf).  But it hasn't been updated in nearly 7 years now, and a quick [scan of Google](https://www.google.co.uk/search?tbm=shop&hl=en-GB&psb=1&ved=2ahUKEwi6jeS9vPqKAxXdQ0ECHRvSDwAQu-kFegQIABAK&q=Machine+Learning+in+R&oq=Machine+Learning+in+R&gs_lp=Egtwcm9kdWN0cy1jYyIVTWFjaGluZSBMZWFybmluZyBpbiBSSABQAFgAcAB4AJABAJgBAKABAKoBALgBA8gBAJgCAKACAJgDAJIHAKAHAA&sclient=products-cc) shows quite a number of others.  Suggestions much appreciated.
+
+Comments:
+- Introduction to statistical learning in R is quite good.
+
+https://www.statlearning.com/
+- [R For Data Science](https://r4ds.hadley.nz/) is great. Gets you started in the tidyverse packages.
+- This is the latest and greatest resource https://www.tmwr.org/
+
+Also recommend following Julia Silge’s blog
+
+Edit: if you’re into Bayesian methods, https://bookdown.org/ajkurz/Statistical_Rethinking_recoded/
+- I really liked "Machine Learning with R" by Brett Lantz.  I have the 3rd edition, but see now there is a 4th edition available for free here on GitHub:  [https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition](https://github.com/PacktPublishing/Machine-Learning-with-R-Fourth-Edition)
+- Take a look on [libgen.is](http://libgen.is), from behind a VPN.  You might just find something a good deal more recent that will meet your needs.
+- https://www.bigbookofr.com is a great resource for dozens of books maintained online.
+- Introduction to Statistical learning. It has R programs. Another good one is R for Everyone which has tons of research grade programs . Best of luck to you
+- https://www.bigbookofr.com/chapters/machine%20learning
+- Get an O’Reilly membership and go wild.
+- Why r in particular?
+- Very interesting
+- Just finished https://www.amazon.com/Machine-Learning-cleansing-modeling-tidyverse/dp/1801071322 ne of the best books i read in last few years
+- Why use r on machine learning not Python? The resource difference from open source codes, books, tutorials to communities is tremendous.
+- There's a Python version also, for anyone who's looking at this book but don't want to deal with R
+- This has been a major source for the first ML course on my master's programme. Great book!
+- I really like the oriley books. I have statistics for data science for python. After a full read, I like to find something from it once a week and apply it to my current work if I can.
+- ## Amazon Price History:
+
+**Machine Learning with R - Fourth Edition: Learn techniques for building and improving machine learning models, from data preparation to model tuning, evaluation, and working with big data**
+* Rating: ★★★★☆ 4.4
+
+* Current price: **$35.56** 👍
+* Lowest price: $31.50
+* Highest price: $49.99
+* Average price: $41.72
+
+| Month  | Low  | High | Chart             |
+|--------|------------|------------|------------------|
+| 11-2024 | $35.56      | $35.56      | ██████████      |
+| 05-2024 | $47.42      | $49.99      | ██████████████▒ |
+| 12-2023 | $31.50      | $32.60      | █████████       |
+| 06-2023 | $44.99      | $44.99      | █████████████   |
+| 09-2022 | $49.99      | $49.99      | ███████████████ |
+
+Source: [GOSH Price Tracker](https://gosh.app/?utm_source=redditbot&utm_medium=datascience&utm_campaign=2025-01-17)
+
+
+^(Bleep bleep boop. I am a bot here to serve by providing helpful price history data on products. I am not affiliated with Amazon. Upvote if this was helpful. PM to report issues or to opt-out.)
+- I had a membership with association for computer machinery and it was great because you could get the whole O’Reilly books from it. The membership was worth that alone. Sadly it is gone.

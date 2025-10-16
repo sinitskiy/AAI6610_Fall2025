@@ -1,0 +1,38 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/xsh57j/switch_from_computer_science_to_computational/
+Title: Switch from computer science to computational biology
+
+Content:
+Hi, I have a MS in CS with a focus on machine learning. Have been working as computer vision r&d engineer for a startup in the bay area. But I dont find my work particularly appealing anymore, and am hoping to move into computational biology for medical research type stuff.
+
+Can I apply for MS (or maybe PhD) courses in compbio without any background? Applications wouldn't be difficult but I don't have any letters of recommendation specific to biotechnology, only machine learning. 
+
+What are my options here? Any help is greatly appreciated. Thanks
+
+Comments:
+- Yes you absolutely can make the switch!!!! You have the exact same educational background as me (MS in CS with emphasis on ML, Big Data)! I ended up working in industry for 3 years before returning to PhD for Neuroscience. I plan on using my computational skills to accelerate my research interests (memory + disorders)!
+
+That being said, however, I also had research experience in a Bioinformatics lab and internship with a Biopharma company. 
+
+So, as you lack any kind of experience in a lab, definitely get some. Not saying that you have to, but that will improve your resume 10x. Your computational skills alone makes you stand out tremendously already (trust me, I get offers every which way because of my experience with big data). I was accepted to a number of Bioinformatics / Comp Bio PhD programs in the USA but I didn't want to focus on computation as my research. I just wanted to use my skills on top of all the massive datasets that exist out there! 
+
+Your options are certainly there! You just have to prove it to the admissions people that you have the chops! So when you start your applications, make sure you talk about the biology sufficiently and how your pure computational background will be a solid foundation for this field.
+
+I feel like applying to MS programs will be a lot easier to get in than PhD, but that is not to deter you. Just to let you know what effort to put forth as you approach application season.
+- Our computational biology lab hired a fresh CS graduate (AI, ML) with no bio background to work as an AI-engineer to assist us in that area. He learnt all bio he needs on the job. However keep in mind he does not do independent research and mainly assists postdocs/PhD student with their AI applications. So if this is your goal you might be better off getting some education in the field first. Though I know our PI will let him do his own research soon, because he’s been here for 2 years now and has learnt enough.
+- Another option could be industry.  I'm in Toronto and not the bay area, but several of my coworkers have a pure CS background doing compbio.  Just look into the pharma space for these opportunities.  A degree in bio will definitely help break into more jobs here though
+- People from background like yours are much needed and appreciated in Biology. There is huge opportunity to use CS, especially ML as well as demand in bio academia/industry. The best part is that since multiomics data keeps on increasing, the demand is on rise. Ample opportunitiesb in ever growing multiomics (genomics, transcriptomics, proteomics, metagenomics, etc), disease diagnosis and therapy, neurobio etc. 
+
+Although it might be more rewarding to work in computational biology, you will limit yourself in terms of job opportunities (depending on Country and City). Also, since Biotech/Biopharma mostly are not that well funded so salaries tends to be lower than what Tech companies pays (but higher than experimentalist).
+
+If you decide to switch, be sure to understand Biology part very well. This will help you and others. This sounds obvious but one of the major complaints you will hear from experimentalists working with computational biologists.
+- Wow, to be perfectly honest I was planning to use a MS in compbio as a stepping stone for a PhD in neuroscience. What are the odds! Guess my next step is a job at a bio lab then. What kind of roles do you suggest? something like a machine learning engineer/data scientist at a lab? Also, a university lab or in the industry (places like genentech etc)?
+- Welcome to the field! Your comp skills is highly desired here! 
+The questions youre asking now definitely depend on your future desires! For some context from me though, I want to identify and extract biomarkers from massive datasets using data driven methods. So this takes knowing data engineering, machine learning, distributed systems, and software engineering. Putting this altogether will allow me to sift through the data soooo much more efficiently than a group of people, as i will develop code to uncover hidden variables in datasets that are terabytes in size.
+
+I say all that to say, dig deep into your research interests in comp bio and neuro. What are you trying to study and investigate for years on end? And how would you go about doing so from a computational perspective?
+
+Being a data scientist will help a ton! Knowing how to manipulate, clean, transform, and analyze data is highly essential in general. As long as you are working hands on with data and constantly questioning whats in there and how can i get it out, you will in a solid position. The lab vs industry is up to you! Just make sure you come out of those experiences with good skills and knowledge to put on your resume and CV
+- How'd it go ?
+- Do you have any advice for going into stem cell research?
+- I don’t know anything about stem cell research unfortunately. But my main recommendation for you to figure out the current scene for this research is, look for review papers that gives an overview of the research happening now. And try to figure out something more specific you are interested in. Like stem cell and brain development or stem cell and embryonic development. Any tangent

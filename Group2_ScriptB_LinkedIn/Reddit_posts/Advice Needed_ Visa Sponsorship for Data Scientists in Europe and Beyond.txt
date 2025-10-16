@@ -1,0 +1,39 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19f8ish/advice_needed_visa_sponsorship_for_data/
+Title: Advice Needed: Visa Sponsorship for Data Scientists in Europe and Beyond
+
+Content:
+Hi everyone! 👋
+
+I’m in a tricky situation and could really use your advice. I’ve been working in data science for over two years, specializing in machine learning, statistical analysis, and data visualization. Unfortunately, I recently lost my job due to my company’s failure to provide promised visa sponsorship, and I’ve been jobless for five months now.
+
+I’m considering relocating and am looking into countries that are more open to providing visa sponsorships for data science professionals. Specifically, I’m exploring:
+
+	•	European Countries:
+	•	Denmark
+	•	Luxembourg
+	•	Norway
+	•	Switzerland
+	•	Finland
+	•	France
+	•	Other Countries:
+	•	Australia
+	•	New Zealand
+
+If anyone has insights, experiences, or could recommend job portals and resources for securing visa sponsorships in these countries (or any others that might be good options), I’d be incredibly grateful for your help.
+
+Thank you so much in advance! 🙏
+
+Comments:
+- Where are you currently based?
+- I think finland is an awesome place
+- Hey, I am currently in the same situation as you. Did you manage to land a job with sponsorship? If yes, could you guide me? Thanks!
+- Have you tried reaching out to any specialty folks who provide services specifixally related to finding clients jobs with potential visa sponsorship? I know it's hard to cipher through the scams or the blatant rip offs, but aside from that you may be limited to just using the standard majoe job boards for the countries you are interested and doing a manual search for jobs offering sponsorship..
+
+
+unfortunately (as you probably know better than I) this is arguably the hardest macroeconomic climate in a long time to secure visa sponsorship *anywhere*, and DS is a particularly bad subset of that trend due to extreme oversaturation. The other piece is that there's no guarantee you won't end up having the same thing happen if you do get an offer (reneging on sponsorship). 
+
+
+If it were me, I would: 1) use standard job boards filtered to those countries; 2) reach out directly to hiring managers or recruiters for said companies and inquire point blank about sponsorship *even if the job listing says they are open to it*. I'd be polite but blunt in that regard; 3) sacrifice 3 pygmy goats. Best of luck
+- i’m currently based in uk 🇬🇧
+- solid advice

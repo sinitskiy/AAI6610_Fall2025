@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/xyfa19/taking_a_shot_anybody_need_help_coding/
+Title: Taking a shot, anybody need help coding?
+
+Content:
+I found a post on the subreddit about a grad student struggling with their code and worried about its quality while publishing. I'm a MS CS graduate with a focus on machine learning and excel at coding. Anybody need a hand with the coding part of things while they focus on the research part? I don't need a salary or anything, just looking to work part time to gain some experience as im hoping to pivot to the field in the future.
+
+Comments:
+- i hope you find someone that would like to barcode Trichocereus cacti
+- [deleted]
+- Hey, we can probably help each other - im a phd student looking to apply some ML to some bacterial genomics data that is super cumbersome to calculate and don't know where to start. It's probably not really going to stretch your capabilities but we can zoom and chat about some things that might if you're interested (dm me - may take a few days to reply!)
+- Never work for free.
+- Hey! I’d love to chat, working on a ML model for my thesis and really learning as I go, so I’d love some input. I’ll send a message. Thanks so much, this is awesome!
+- Good luck! I did chuckle while reading the partial sentence "I'm a MS CS graduate with a focus on machine learning and excel" as that struck me as an unlikely combination!
+- What part of bioinformatics are you interested in learning? Mostly ML or anything else as well?
+- Yes! I’m currently working on whole genome assembly and variant calling using a half written pipeline and no experience in bioinformatics. DM me I would love to chat!
+- Looks like we are both searching for the same person!
+- Not OP, but this seems like what I wanna do! If you don’t mind me asking, what’s your relation to the field?
+- Thanks for the links! Right now I'm looking for part time unpaid roles due to work visa restrictions. But these will definitely prove helpful in the future.
+- I can't work two jobs on a work visa unfortunately. So looking to volunteer in this way in addition to my full time job.
+- If I may ask why?
+- >and excel
+
+I briefly interpreted it that way as well :'D
+- Anything really. I want to basically dip my toes in. And the more ML the better really, since I can use what I already know and not have to start completely from scratch. Though, I'm pretty flexible. Just looking to learn at this point.
+- [deleted]
+- Okay, my lab is doing both more simple bioinformatics and bio-statistics as well as ML and image processing. If you want to hear how it is and how we produce code for wet-lab results, I would be happy to let you "peak behind the curtains" so to speak. You can DM me if you are interested.
+- Well first off, thanks for such a thorough reply and for inviting me to ask more questions!
+
+I have a bachelor’s in biology and have been studying programming for 6 months or so. I really like the idea of combining the two fields, but most of the positions I see are for those with masters or a lot more experience. 
+
+Since you do training and mentoring, what would you say is the best way to get started in the field? Are there any search terms you’d recommend when searching for entry level positions?

@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/12b10kl/consultant_to_researcher/
+Title: Consultant to Researcher
+
+Content:
+So I’m a hardcore AI guy. BS in Applied Math, MS in Computer Science with a focus on Machine Learning. I took a role at a consulting firm as the 2nd job(first was at an IOT company) for a change of pace. I’ve been supporting large pharma companies(read: Pfizer, Merck, Moderna, etc.) for 4 years tangentially(predicting demand, finding business efficiencies, etc) Learning subject matter: Car-T, SMDD for example got me really excited about bioinformatics(bio-informatics, cheminformatics, pharmacokinetic)
+I’m wondering how I can work on going from a technical resource with ML & technical knowledge to working in a wetlab/research-esque role.
+
+Comments:
+- Get into a grad program that exposes you to enough biology to help you identify problems that interest you and that represent a knowledge gap. You'll probably blaze through a PhD if that's what you want to do. You can certainly be useful and productive without a PhD, but you'd be in a subordinate, less independent position.
+- I mean going full wet lab you are probably asking the wrong people… your best option career-wise is to stay in computational role, there is a super high demand for AI and machine learning in bioinformatics in both academic and industry research. To your second question, My suggestion would be apply for bioinformatician roles in academia (high tier) and clarify during the hiring process your interests in doing bench work.

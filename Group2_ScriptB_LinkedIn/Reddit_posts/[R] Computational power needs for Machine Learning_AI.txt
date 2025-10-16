@@ -1,0 +1,59 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n1ebmk/r_computational_power_needs_for_machine_learningai/
+Title: [R] Computational power needs for Machine Learning/AI
+
+Content:
+Hi everyone!
+
+As part of my internship, I am conducting research to understand the computational power needs of professionals who work with machine learning and AI. The goal is to learn how different practitioners approach their requirements for GPU and computational resources, and whether they prefer cloud platforms (with inbuilt ML tools) or value flexible, agile access to raw computational power.
+
+If you work with machine learning (in industry, research, or as a student), I’d greatly appreciate your participation in the following survey. Your insights will help inform future solutions for ML infrastructure.
+
+The survey will take about two to three minutes. Here´s the link: [https://survey.sogolytics.com/r/vTe8Sr](https://survey.sogolytics.com/r/vTe8Sr)
+
+Thank you for your time! Your feedback is invaluable for understanding and improving ML infrastructure for professionals.
+
+Comments:
+- Hi!
+I work with machine learning and here’s my view:
+
+Most of us need GPUs/TPUs because normal CPUs are too slow for training models.
+
+For small experiments, cloud platforms with built-in ML tools (like Colab, SageMaker, Vertex AI) are very handy.
+
+For bigger/long projects, many prefer raw GPU servers or on-premise clusters since they give more control and can be cheaper long term.
+
+Flexibility and cost usually decide which option we pick.
+
+
+Hope this helps with your research. Good luck with your internship!
+- > whether they prefer cloud platforms or value flexible, agile access to raw computational power
+
+these are the same thing
+- Bro, why is their a 100 character limit per text input in survey? 🥀
+- We used R and AMD thread rippers to process data.  It sometimes took days but that was OK.  We were processing data from scanners/viewers to look for defects.  The processing time was small relative to the time it took to acquire the data.
+
+The video shows how potato strips are scanned and have defects removed.  The machine can detect rot, skins, sugar content and chlorophyl.  Turn down the volume before viewing.  
+
+[peter.deltamotion.com/Videos/Delta Fry Cutting Machine Demo.mp4](https://peter.deltamotion.com/Videos/Delta%20Fry%20Cutting%20Machine%20Demo.mp4)
+
+The data was acquired by running real potato strips through a test machine.  A human would then evaluate the data.  This data was used to train the viewers.  The part of AI we used is called classification like being able to tell the difference between numbers or animals.
+
+There are other machines that simply look for defects and reject the potato strips.  The rejected strips then come to the machine in the video to get the defects removed.
+
+We have been doing this for over 40 years.  Originally we did all the data gathering and coming up with algorithms manually and using experience.  As technology advanced, we improved out techniques too.  40 years ago there weren't any motors that could cut as fast as required and still last for a while and we didn't have AMD thread rippers with 64 or more cores.
+- Thank you for your feedback! If you have not taken the survey yet could you find some time to do so? It would be of great help. 
+
+Can´t wait to have enough sample size to do some ML on the data :)
+- "and whether they prefer cloud platforms (with inbuilt ML tools) or value flexible, agile access to raw computational power" 
+
+What I meant here is whether the preference would be for inbuilt tools and libraries or agile raw computational power without caring about the extra tools. Of course, having both would be ideal, but the scope of the survey is to find out preferences in priorities. English is not my first language, so I probably didn´t express myself that clearly. Thanks for pointing out that mistake. I appreciate your feedback. 
+
+If you have time, can you also check the survey? Thanks a lot
+- fixed, thanks again bro
+- Because I´m a little silly and didn´t check properly the character limt. Thank you so much brother. Fixing now
+- Will do that 👌🏻
+- Happy to fill out the survey :) I understand now you wanted to know what is more appealing about cloud systems, which come with both tools and flexibility, and are not contrasting cloud solutions with on-prem compute, which comes with no built-in tools and is also not flexible.
+- 🫂
+- Thank you! :D
+- Thank you! :)

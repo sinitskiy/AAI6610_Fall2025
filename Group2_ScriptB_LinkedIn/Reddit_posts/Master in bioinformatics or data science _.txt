@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/16teivj/master_in_bioinformatics_or_data_science/
+Title: Master in bioinformatics or data science ?
+
+Content:
+Dear community, 
+I am working with python the last 1 year and I am currently learning keras and tensor flow. I would like to find a job that combines machine learning and biology. One of the main reasons is my expertise, I have a PhD in biotechnology and experience in fields like immunology,  genetics, molecular biology. I was thinking that for computational biology jobs you need at least a masters degree.  However I see in LinkedIn jobs more positions for data science. I was wondering whether it is better to do a master in bioinformatics or data science? Can a master in data science  help you to pursue a career in computational biology? Thank you.
+
+Comments:
+- With a PhD you have proven to be more than efficient in self-learning. So another master title would be useless. Just try to find a position where you can learn computational methods and spend a lot of time learning by yourself.
+- I know someone who got a well-paying data science job in health care with just a natural science ph.d. and practical knowledge of the basic data science languages... That's what you should do rather than take on more debt and waste time.

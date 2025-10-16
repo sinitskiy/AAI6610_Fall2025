@@ -1,0 +1,46 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ki7dvt/looking_for_advice_on_how_to_learn_robot/
+Title: Looking for advice on how to learn robot perception
+
+Content:
+Hi all,
+
+I'm a recent college graduate with a background in computer science and some coursework in computer vision and machine learning. Most of my internship experience so far has been in software engineering (backend/data-focused), but over the past few months, I've gotten really interested in robotics, especially the perception side of things.
+
+Since I already have some familiarity with vision concepts, I figured perception would be the most natural place to start. But honestly, I'm a bit overwhelmed by the breadth of the field and not sure how to structure my learning.
+
+Recently, I've been experimenting with visual-language-action (VLA) models, specifically NVIDIA’s VILA models, and have been trying to replicate the ReMEmbR project (really cool stuff). It’s been a fun challenge, but I'm unsure what the best next steps are to build real intuition and practical skills in robotic perception.
+
+For those of you in the field:
+
+* What foundational concepts or projects should I focus on next?
+* Are there any open-source robotics platforms or kits you’d recommend for beginners?
+* How important is it to get hands-on with hardware vs staying in simulation for now?
+* If I eventually want to pivot my career into robotics professionally, what key skills should I focus on building? What would be a realistic timeline or path for that transition?
+
+I also came across a few posts saying that the current market is looking for software engineers specializing in AI. I have been playing around with generative ai projects for a while now, but was curious if anyone had any suggestions or opinions in that aspect as well
+
+Would really appreciate any guidance, course recommendations, or personal experiences on how you got started.
+
+Thanks!
+
+Comments:
+- You’re right, Robotics perception is a deep niche. Some of the most important topics are linear algebra (matrices, vectors), 2D/3D Geometry (rigid body transformations, planes, spheres, lines), state estimation (Bayes rule, probabilistic filters, Kalman), basics of deep learning, camera and sensor calibration. ROS (the most popular robotics middleware). Not to mention serious proficiency in C++, along with some ability in Python/Matlab. 
+
+My suggestion would be to either 1) Figure out how to get accepted into a robotics masters program, or 2) Find some professional experience. Even if they pay you $0. 
+
+Personal projects are a tool you can use to gain entry into one of those two paths. But I’ve never seen a person break into robotics, particularly perception without having done one of those two paths.
+
+For context, I did #2 and now work as a senior perception engineer. 
+
+Also you’ll never learn robotics purely from courses. You need to get comfortable diving into books and papers. That’s where the true meat of this field is.
+
+It took me around a year of learning (2-3 hours a day after work), while working an entry level job in robotics, to really become proficient at all the things I mentioned. 
+
+Good luck! It’s probably the coolest job on earth and pays well. So personally, I think it’s worth the effort.
+- Do you have any go-to resources (books, papers, courses) that really helped you? Also, any tips on where to look for those early gigs or projects? Or personal project ideas you think are worth tackling?
+- Once you have some small projects under your belt, hit up small companies and see if they’ll take you on as an intern. I know a guy who did a Udacity Robotics Nanodegree. He was like 40 years old, with a full time job and family already. But after work, he interned alongside me at this small company. I’ve also had to relocate for jobs before. The moral of the story being, you’ve gotta really hustle and network for the first opportunity.
+
+In terms of books and resources, there are too many of them to list. Just search online for the best book covering whichever topic you’re looking for. The most important is knowing how to find books/paper online cheaply or even free…..I’m sure you can figure that one out.
+
+In terms of personal projects, create something you have a natural interest in. Perhaps using a public dataset, or on your own robot. It’s a bit more impressive if it’s genuinely something you or other people can use. Contributions to open source projects are also a good option - showing you can contribute to a large perception codebase.

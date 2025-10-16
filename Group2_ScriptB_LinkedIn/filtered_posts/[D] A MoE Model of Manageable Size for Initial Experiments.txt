@@ -1,0 +1,50 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ki2tcs/d_a_moe_model_of_manageable_size_for_initial/
+Title: [D] A MoE Model of Manageable Size for Initial Experiments
+
+Content:
+My research is focussed on the uncertainty of the routing mechanism on Mixture of Experts strcuture in LLM. Right now I find myself in a tough spot because all the pre-trained models available are too huge. The smallest MoE language model I can find is [OLMoE](https://arxiv.org/abs/2409.02060), which still has around 7B parameters.
+
+Ideally, I'm looking for a model that is small enough to experiment with but still large enough to exhibit interesting behavior. Since my research is centered on the uncertainty of the routing mechanism, the model doesn’t necessarily need to be an LLM — MoE models designed for other downstream tasks would work just as well.
+
+Any suggestions for a more manageable MoE model? Thanks in advance for any input :\]
+
+Comments:
+- IBM has a 1B 400M active and a 3B 800M active MoE models. I’m also doing work w MoEs and the granite MoEs are not bad
+- You can make an arbitrarily small MoE yourself at very low compute cost using mergekit and Goddard's "clown car MoE" recipe:
+
+https://goddard.blog/posts/clown-moe/
+
+**Edited to clarify (since it doesn't make sense to downvote unless you misunderstood, and that's on me for not being clear):** In the "clown car" MoE, you choose an existing base model of whatever size you like, optionally make fine-tunes of it, and then put them all in your MoE container model with mergekit.  Goddard also describes a clever hack for programming the gate parameters.  ***The overall compute cost is near zero*** (except for the fine-tune, which is optional, and it sounds like you wouldn't be needing that anyway).
+
+If the tiny MoE suggested by the other user suits you, that's great, use that, but if you wanted one *one or two orders of magnitude smaller*, the "clown car" MoE is a good way to go.
+- I was in a similar situation, during my PhD. Assuming you are aiming for top venues, scaling your experiments is unavoidable if you want a high quality pub. I’d recommend having your initial tests be on small models so your cost of debugging the code is low, but once you have everything working, you’re gonna have to dish out some $$$ for those A/H100  compute hours. You want to have atleast some results with a ~10B parameter model, and even that is considered small (but will suffice for research).
+- do you need pretraining or just already trained models?
+- What are your main compute constraints?
+
+Are you doing pure inference and large scale evaluation?
+
+Are you doing fine tuning experiments?
+
+What does your current training setup look like if so? Does it need to be full parameter fine tuning, or is modern LoRA acceptable? I can train Olmoe on a 20GB GPU which isn't excessive, and even with FFT if I \*really\* have to push it.
+
+If you're doing standard AdamW it can be a touch expensive, but things like TorchAO CPU optimizers or low rank gradient approximation methods also work.
+
+There's free GPUs on Kaggle and Colab which can be used for this purpose, too.
+
+It depends on the extent of your training, though. If you have any questions on the deployment of or training of MoE models feel free to ask; it's an area I focus on specifically.
+- Cheers!
+- Very helpful, I’ll definitely check it out. Thanks!
+- Yeah, that’s what I was thinking too. My vision for this project is to run the final experiments on a model on a similar scale to DeepSeekMoE 3B/16B.  
+Do you have a proper GPU cloud rental service platform to recommend? There is this platform called [runpod](https://www.runpod.io/) I just discovered, and the pricing seems reasonable.
+- Already trained model. Don’t wanna do large scale training myself.
+- Hey thanks for replying.
+Right now it’s pure inference, as my approach at first involves some changes on the original routing mechanism (simple strategy like random selection). And yes, to quantitatively analyse routing mechanism’s effect on final results, we do need large scale evaluation.
+Fine-tuning will be conducted, but only on part of the parameters.
+Right now one of the problems I encountered is that even a simple round of inference takes a such a long time. DeepSeekMoE 16B on colab A100 via transformers api, beam search with beam num 5, generating len 50 response takes around 1.5 minutes. (Might not be exactly accurate, did this experiment a long time ago, but you get the idea) Is there anything wrong I did that makes it computationally inefficient?
+- I just used [Lambda](https://lambda.ai/). At the time, the pricing seemed reasonable, and it was easy to use.
+- If you're open to one more suggestion, you should check out Shadeform.
+
+It's a marketplace of popular GPU cloud rental providers like Lambda, Paperspace, etc. that lets you compare everybody's pricing and deploy from one console/account.
+
+Really easy way to get the best rental deals across GPU types.

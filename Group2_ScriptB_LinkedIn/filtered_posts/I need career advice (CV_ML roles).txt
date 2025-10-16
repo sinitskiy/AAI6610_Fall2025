@@ -1,0 +1,58 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1lnq17y/i_need_career_advice_cvml_roles/
+Title: I need career advice (CV/ML roles)
+
+Content:
+Hi everyone,
+
+I'm currently working in the autonomous driving domain as a perception and mapping software engineer. While I work at a well-known large company, my current team is not involved in production-level development, which limits my growth and hands-on learning opportunities.
+
+My long-term goal is to transition into a computer vision or machine learning role at a Big Tech company, ideally in applied CV/ML areas like 3D scene understanding and general perception. However, I’ve noticed that Big Tech firms seem to have fewer applied CV/ML positions compared to startups, especially for those focused on deployment rather than model architecture.
+
+Most of my experience is in deploying and optimizing perception models, improving inference speed, handling integration with robotics stacks, and implementing existing models. However, I haven’t spent much time designing or modifying model architectures, and my understanding of deep learning fundamentals is relatively shallow.
+
+I'm planning to start some personal projects this summer to bridge the gap, but I’d like to get some feedback from professionals:
+
+* Is it realistic to aim for applied CV/ML roles in Big Tech with my background?
+* Would you recommend focusing on open-source contributions, personal research, or something else?
+* Is there a better path, such as joining a strong startup team, before applying to Big Tech?
+
+Thanks in advance for your advice!
+
+Comments:
+- I feel like this normally requires a PhD, especially if you want to work at big tech companies. The fact you’re doing a masters is good and gives you a chance but I feel like it’s still insanely competitive/difficult. And yeah, many positions now ask for publications at top conferences/journals. Best of luck to you!
+- Startups and mid-size companies will care less, if at all, about the lack of a PhD and papers and will value your experience with deployment, integration, and performance optimization (things researchers are usually pretty awful at).
+
+Big (FAANG) companies are overrated. 
+
+Working on applied perception, you’ve already got what many people would consider a dream job. If you feel your growth needs aren’t being met, by all means job hop. It might be your org is the problem, not you or your skill set / publications.
+
+If you want more experience with customizing models and DL fundamentals you can do that on your own time and your own pace (IMHO). A Big Tech job by no means will give you that opportunity.
+- Do you have any CVPR/ICCV/ECCV  publications?
+- I work in multiple ML areas and do things from deployments, backend, frontend, and spend the majority of my time developing models and training tools for other developers.
+
+I like doing a lot of things and knowing the whole pipeline. With that being said I would caution you working at big tech. You won't be working in multiple areas and doing many different things. I don't even know if you will develop or research novel models and algorithms and put them into production. You may get stuck doing a small part of the pipeline you don't enjoy. It all depends on the team of course. 
+
+I really enjoy mid and small size companies. I feel I grow more and solve more problems. The base salary is comparable but obviously the stock options at big tech are insane. 
+
+With all this said if you just really want to live the big tech or large company life just for the money or the fading reputation of being a big tech nerd then go for it. I've worked with ex big tech devs and many are average. It can be fun to work on large scale projects so there is that. 
+
+You can have a very fulfilling career outside of big tech and many times you learn more and can do more. You may also find it easier to get into CV positions at small or mid size companies. 
+
+Again you do you and getting into big tech just takes a bit of luck (good interview skills, good interviewer) and leetcode grinding
+- Yeah, I think strengthening skills is the thing I have to focus on most, but what is the generally used method to do so? I'm graduating from OMSCS this semester, so I have enough time to work on my personal projects.
+- And to answer your three questions:
+
+. You are probably already qualified to join an “applied CV/ML perception team” at a FAANG. If that’s what you want just start interviewing.
+
+. Don’t waste any time on someone else’s open source project. Unless you’re passionate about it and would do it anyway. It will do nothing for your clout that a personal project wouldn’t also do - and on a personal project you get to make all the decisions and move as fast as you like.
+
+. If you want to apply to Big Tech just do it. The barrier to entry is not high. If you’re applying to a RESEARCH team they may rank you against PhDs with publication records. But if you’re applying to PRODUCT teams they won’t care; a Master’s plus your work experience is ample.
+- Your comments really helped me to organize my future plan. I will consider the personal project more than others and do it in parallel with interviewing! Thank you so much.
+- Unfortunately no. I graduated in mechanical engineering in BS and am currently taking OMSCS from Georgia Tech.
+- Well, I’ve never been successful at getting one so I’m afraid I can’t give any good advice. Almost anyone I knew who managed to get into those companies have insane resumes, but I don’t know if this is necessarily needed to get accepted. I also did my masters at a pretty well regarded school (Carnegie Mellon) so I was just simply more likely to run into such individuals.
+- Damn same as me, BS in mech but a Masters in Robotics trying to focus on CV.
+
+How did u land in the role u have now?
+- I see, that makes sense. I will try to make an insane resume and see if I'm lucky enough to get into :)
+- I did self-study on Robotics topics and was able to pass a project-based coding interview.

@@ -1,0 +1,36 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mbz5fk/p_keyword_and_phrase_embedding_for_query_expansion/
+Title: [P] Keyword and Phrase Embedding for Query Expansion
+
+Content:
+Hey folks, I am workig on a database search system. The language of text data is Korean. Currently, the system does BM25 search which is limited to keyword search. There could be three scenarios:
+
+1. User enters a single keyword such as "coronavirus"
+2. User enters a phrase such as "machine learning", "heart disease"
+3. User enters a whole sentence such as "What are the symptoms of Covid19?"
+
+To increase the quality and the number of retireved results, I am planning to employ query expansion through embedding models. I know there are context-insensitive static embedding models such as Wor2Vec or GloVe and context-sensitive models such as BERT, SBERT, ELMO, etc.
+
+For a single word query expansion, static models like Word2Vec works fine, but it cannot handle out-of-vocabulary issue. FastText addresses this issue by n-gram method. But when I tried both, FastText put more focus on the morphologic form of words rather than semantic. BERT would be a better option with its WordPiece tokenizer, but when there is no context in a single-word query, I am afraid it will not help much.
+
+For sentence query cases, SBERT works much better than BERT according to the SBERT paper. For Phrases, I am not sure what method to use although I know that I can extract single vector for the phrase through averaging the vectors for individual word (in case of static methods) or word-pieces in case of BERT model application.
+
+What is the right way to proceed these scenarios and how to measure which model is performing better. I have a lot of domain text unlabeled. Also If I decide to use BERT or SBERT, how should I design the system? Should I train the model on unlabeled data using Masked Language Modeling method and will it be enough?
+
+Any ideas are welcome.
+
+Comments:
+- Your approach is on the right track but you're overcomplicating the model selection. For Korean text search with query expansion, you need to think about this more systematically.
+
+Working at an AI consulting firm, I've seen similar multilingual search implementations and honestly the biggest wins come from proper preprocessing and hybrid approaches rather than picking the "perfect" embedding model.
+
+For Korean specifically, you should look at multilingual models like mBERT or XLM-R that have good Korean representations, or Korean-specific models like KoBERT. The WordPiece tokenization handles Korean morphology better than trying to adapt Word2Vec approaches.
+
+Here's what actually works for your three scenarios. For single keywords, use a hybrid approach - combine BM25 with semantic expansion using pre-trained embeddings. Don't try to retrain from scratch on your domain data unless you have millions of documents. For phrases, sentence transformers like SBERT work well but you can also just use mean pooling of BERT embeddings. For full sentences, definitely go with sentence transformers.
+
+The key insight is that you don't need different models for different query types. A good sentence transformer can handle all three scenarios by encoding queries and documents into the same semantic space, then using cosine similarity for retrieval.
+
+For evaluation, create test queries with known relevant documents and measure recall@k and precision@k. Manual evaluation with domain experts beats automated metrics for search quality.
+
+Skip the custom MLM training unless your domain is highly specialized. Fine-tuning a pre-trained model on your document corpus using contrastive learning will give you better results with less effort.
+- Thank you. I will consider your ideas.

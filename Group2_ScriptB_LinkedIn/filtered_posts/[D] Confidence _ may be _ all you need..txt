@@ -1,0 +1,55 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/198y67i/d_confidence_may_be_all_you_need/
+Title: [D] Confidence * may be * all you need.
+
+Content:
+&#x200B;
+
+[edit: https:\/\/aclanthology.org\/2023.eacl-main.75\/](https://preview.redd.it/xrx0acvqi0dc1.png?width=800&format=png&auto=webp&s=da756c351b898ae93725ca563066328b48a59003)
+
+&#x200B;
+
+I'm curious to know if anyone here has tried this in practice.
+
+A simple average of the log probabilities of the output tokens from an LLM might be all it takes to tell if the model is hallucinating. The idea is that if a model is not confident (low output token probabilities), the model may be inventing random stuff. The authors claim that this simple method is the best heuristic for detecting hallucinations. The beauty is that it only uses the generated token probabilities, so it can be implemented at inference time.
+
+Comments:
+- Okay let’s say you run this and compute confidence. How do you get ground truth that it hallucinated to know how well this metric and method would predict a hallucination?
+
+Also wouldn’t the loss of extrapolation capabilities be an overall negative for LLMs in general?
+- The theoretical issue with this is that it's possible for the model to have high confidence *because* of incorrect past tokens. Plus there's both syntactic and semantic uncertainty in language and these approaches don't distinguish, which manifests as a lot of noise. So it's very difficult to distinguish between a case where the model initially was uncertain and then 'talked itself in' to being confidently wrong, and a case that has low confidence because there's a lot of different ways to say the same thing. 
+
+
+A somewhat better metric would be to have the model generate a bunch of answers at higher temperature and use a filter model to check if they contradict each other. That does a better job of detecting semantic uncertainty specifically.
+- I thought this general ideas was well known/obvious for a major subset of hallucinations.
+- The issue with this is that a model might just genuinely have bad information, or it might produce one token that throws the rest of the output off. It’s a good starting metric, but it doesn’t seem to be perfect in practice.
+
+Edit: I think this metric is called perplexity.
+- This is called “perplexity,” and one of the most basic metrics for LLM generation quality. Are people really publishing a repacked version of perplexity?
+- People have used this metric for a long time. It shows how probable the sequence is. When doing beam search for the next token prediction you are essentially optimizing this metric.
+- To the people in the comments saying this is perplexity.
+
+Perplexity is calculated on test data. It shows how well your model predicts the tokens from the test distribution. The proposed "confidence" metric does not use test dataset.
+- yeah on principle I'm just gonna ignore anything coming out with the "____ is all you need" format
+- It would be interesting if the average (and other properties) of the log probabilities could determine font color of the output text giving some signal if you'd need to "google it"
+- Where do I find this paper? The arxiv ID does not give a match.
+- >How do you get ground truth that it hallucinated to know how well this metric and method would predict a hallucination?
+
+expensively with human raters, presumably
+- >Okay let’s say you run this and compute confidence. How do you get ground truth that it hallucinated to know how well this metric and method would predict a hallucination?
+
+Indeed, you need ground truth to evaluate that the method works. Let's say you evaluate it on a sample of your data, and it shows a decent correlation with whatever performance metric you are using.
+
+Then, you can use this simple method at inference time and monitor its outputs. This gives you a proxy to the performance metric, which you can't compute at inference time because there is no ground truth there.
+- Isn't this averaging across tokens within a single position rather than averaging across positions as is used in perplexity?
+- Perplexity is a metric, regardless of being calculated on a test, train or whatever split.
+- ~~https://arxiv.org/abs/2303.08896~~
+
+~~Either reddit being reddit or OP can't link~~
+
+Edit: OP edited link
+- Sorry, my bad. It was this one: https://aclanthology.org/2023.eacl-main.75/
+- Very expensively. Getting human raters to reliably detect hallucinations is hard because they look plausible. The raters may need to be domain experts and/or spend a lot of time looking up the details.
+- Depends who you are. OpenAI must have a gigantic database of labelled hallucinations by now.
+- You should try it! Let us know how it goes
+- make Posts in relevant subreddits as statements. for the hallucinations you will get a lot of angry replies correcting you.

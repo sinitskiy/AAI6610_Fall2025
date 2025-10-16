@@ -1,0 +1,74 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ny6ol1/d_experiences_with_active_learning_for_real/
+Title: [D] Experiences with active learning for real applications?
+
+Content:
+I'm tinkering with an application of human pose estimation which [fails miserably](https://i.imgur.com/S0kVyPg.mp4) using off-the-shelf models/tools, as the domain is especially niche and complex compared to their training distribution. It seems there's no way around fine-tuning on in-domain images with manually-labeled keypoints (thankfully, I have thousands of hours of unlabelled footage to start from).
+
+I've always been intrigued by active learning, so I'm looking forward to applying it here to efficiently sample frames for manual labeling. But I've never witnessed it in industry, and have only ever encountered [pessimistic takes on active learning in general](https://www.reddit.com/r/MachineLearning/comments/13elpm1/d_is_active_learning_a_hoax_or_the_future/) (not the concept ofc, but the degree to which it outperforms random sampling).
+
+As an extra layer of complexity - it seems like a manual labeler (likely myself) would have to enter labels through a browser GUI. Ideally, the labeler should produce labels concurrently as the model trains on its labels-thus-far and considers unlabeled frames to send to the labeler. Suddenly my training pipeline gets complicated!
+
+My current plan:
+* Sample training frames for labeling according to variance in predictions between adjacent frames, or perhaps dropout uncertainty. Higher uncertainty should --> worse predictions
+* For the holdout val+test sets (split by video), sample frames truly at random
+* In the labeling GUI, display the model's initial prediction, and just drag the skeleton around
+* Don't bother with concurrent labeling+training, way too much work. I care more about hours spent labeling than calendar time at this point.
+
+I'd love to know whether it's worth all the fuss. I'm curious to hear about any cases where active learning succeeded or flopped in an industry/applied setting.
+
+* In practice, when does active learning give a clear win over random? When will it probably be murkier?
+* Recommended batch sizes/cadence and stopping criteria?
+* Common pitfalls (uncertainty miscalibration, sampling bias, annotator fatigue)?
+
+Comments:
+- The most important thing to know about active learning is that it really shines when your domain shift is massive, which sounds exactly like your situation. I've seen this work well in practice when the off-the-shelf models are completely lost, like what you're showing in that video.
+
+Your plan is actually pretty solid. The variance between adjacent frames is a clever approach for pose estimation since temporal consistency is huge for this task. At Anthromind we've used similar uncertainty-based sampling for computer vision tasks and it definitely beats random when you have that kind of domain gap. The key is that your base model needs to be somewhat calibrated in its uncertainty estimates, even if its predictions suck.
+
+Few things that worked for me: start with really small batches like 50-100 samples, retrain, then sample again. The iterative feedback loop is where active learning actually pays off. Also your idea about not doing concurrent training is smart - that complexity usually isn't worth it unless you're at massive scale. For stopping criteria, I usually just track when the uncertainty scores start plateauing or when manual review shows diminishing returns.
+
+One gotcha though - make sure your uncertainty method actually correlates with labeling difficulty. Sometimes models are confidently wrong in systematic ways. I'd validate this on a small random sample first before going all-in on the active learning pipeline. The drag-and-adjust GUI sounds perfect for pose estimation, way better than clicking individual keypoints from scratch.
+- Active learning is best used when data collection / labelling is very expensive. 
+
+The pharmaceutical sector is a great example of this since "collecting  a datapoint" requires all the expertise and infrastructure needed to synthesise the compound in the first place and THEN run the test on it which will then provide the "label" for the datapoint. It can easily end up costing \~$1000 (US) per compound easily taking weeks / months so anything which helps more efficient data curation to improve model performance is a hot topic.
+
+Numerous papers are published every year on "the hotest architecture" to squeeze out an extra 0.5 % increase in performance for pharmaceutical applications but the dirty secret is that there's always limited data so off the shelf approaches (think random forest / XGBoost) tend to dominate since data scarcity is such a problem.
+
+Other scenarios like protein folding (i.e alphafold / openfold etc) are in a similar situation since the cost of getting an new protein strucutre to work with which is relevant to a pharma company's interests is very expensive and time consuming, hence they need to be very careful in selecting data points to puruse to increase training data.
+
+  
+On the topic of data labellers, if you have some kind of automated way of assigning labels (i.e. an "oracle") then that can be used as a way to remove the "human-in-the-loop" aspect of Active Learning. Again in the phrama / chemical space the oracle here might be a molecular simulation of some kind which calculates a value that correlates v strongly with the target of interest. As an example, for my PhD I used active learning loops to identify top performers from large material databases by sampling and then feeding materials into a molecular simulation to label the data points. After sampling \~ 1% of the database I had identified \~40-70% of the top 100 performing materials whereas random sampling had only sampled (you guessed it) 1% of the top performing materials.
+- >But I've never witnessed it in industry
+
+This I cannot believe. I use it so often I don’t even give it a name anymore. It just something we automatically do for every single model we develop.
+- Active learning for pose estimation is solid use case is way better than random when your domain is this niche. done similar work with specialized video datasets and the efficiency gains are real.
+
+I would list down what worked 
+
+\- Uncertainty sampling (dropout or ensemble variance) beats random pretty consistently when off-the-shelf models are struggling. You are on the right track there
+
+\- Temporal uncertainty (frame-to-frame variance) is smart for video. Catches edge cases and transitions better than pure random
+
+\- Starting with your GUI showing model predictions is clutch. Speeds up labeling massively vs from-scratch annotation
+
+Practical stuff:
+
+\- Batch sizes: 50-200 frames per iteration worked well for us. Too small and you are retraining constantly, too large and you lose the active learning benefit
+
+\- Stopping criteria: When validation performance plateaus for 2-3 iterations, or when uncertainty scores stop dropping meaningfully
+
+\- Big one: Validate on truly random holdout like you planned. Active learning can create sampling bias where your model gets weirdly good at the distribution you are sampling from but misses other stuff
+
+Pitfalls I have hit 
+
+\- Annotator fatigue is real when you are labeling all the hardest examples back-to-back. Consider mixing in some easier frames to maintain sanity
+
+\- Uncertainty can be miscalibrated early on when model is trash. First batch might need more random sampling
+
+\- Concurrent labeling+training sounds cool but yeah, not worth the engineering overhead unless you are scaling to multiple labelers
+
+\- When it flops: If your unlabeled pool is already pretty representative and model is not terrible, random does fine. Active learning shines when domain gap is huge (like your case).
+- >The most important thing to know about active learning is that it really shines when your domain shift is massive, which sounds exactly like your situation. I've seen this work well in practice when the off-the-shelf models are completely lost, like what you're showing in that video.
+
+I have never heard of this.

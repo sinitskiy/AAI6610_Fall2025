@@ -1,0 +1,56 @@
+URL: https://www.linkedin.com/posts/sebastianraschka_machinelearning-datascience-deeplearning-activity-7034988048794755072-tF1Q
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sebastian Raschka, PhD的动态
+Sebastian Raschka, PhD 
+Sebastian Raschka, PhD是领英影响力人物
+
+ML/AI research engineer. Author of Build a Large Language Model From Scratch (amzn.to/4fqvn0D) and Ahead of AI (magazine.sebastianraschka.com), on how LLMs work and the latest developments in the field.
+
+2 年
+
+Two important concepts for quantifying the uncertainty in machine learning predictions: confidence intervals and conformal predictions. I
+n my experience, they are often mixed up (for instance, when I share results or resources including confidence intervals, I get recommendations to use conformal predictions). 
+
+Confidence intervals are for quantifying the certainty of an estimate. Conformal predictions are for point estimates, to create prediction intervals -- the confidence around a given prediction.
+
+In papers, we typically report confidence intervals around the prediction accuracy. And in praxis, we may use conformal predictions to capture the uncertainty of the model prediction. For classifiers, this is a set of labels such that the set contains labels with a given confidence.
+
+Both approaches are useful, but they address different use cases.
+
+#machinelearning #datascience #deeplearning 
+
+451
+41 条评论
+赞
+评论
+分享
+Sebastian Raschka, PhD
+
+ML/AI research engineer. Author of Build a Large Language Model From Scratch (amzn.to/4fqvn0D) and Ahead of AI (magazine.sebastianraschka.com), on how LLMs work and the latest developments in the field.
+
+2 年
+
+In case you are curious about creating confidence intervals for ML models, I have an article describing the 4 different approaches here: https://sebastianraschka.com/blog/2022/confidence-intervals-for-ml.html 
+
+For conformal predictions, Christoph Molnar has a nice series of posts here: https://mindfulmodeler.substack.com/p/e-mail-course-on-conformal-prediction
+
+赞
+回复
+42 次回应
+Achint Chaudhary
+
+AI/ML, Operations Research and Evolutionary Computing Enthusiast | 2x GATE Topper | CS AIR 22 | DA AIR 24
+
+2 年

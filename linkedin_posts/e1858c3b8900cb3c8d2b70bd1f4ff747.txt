@@ -1,0 +1,11 @@
+URL: https://www.linkedin.com/posts/forrestbao_naacl-activity-7323221306932371456-oDEy
+Date: 2025-09-24
+Author: Unknown
+
+Is catching LLM hallucinations a solved problem?
+Not yet! 
+Meet FaithBench at 
+话题标签
+#NAACL tomorrow/Wednesday, 11-12:30, at Hall 3. The benchmark collects challenging hallucinations made by 8 modern LLMs. SOTA hallucination detectors have a below 60% accuracy on them.
+
+https://lnkd.in/gsq2D9jj

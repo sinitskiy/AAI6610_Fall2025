@@ -1,0 +1,37 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/464nfp/are_there_areas_of_computational_biology_where_i/
+Title: Are there areas of computational biology where I can contribute as a software engineer rather than a mathematician?
+
+Content:
+I'm a computer science graduate who likes biology. I have an opportunity to go for a PhD in computational biology, and as much as I like the field on paper and love research, I have misgivings. Namely, the field - and all the related fields (systems biology, bioinformatics, computational synthetic biology, computational neuroscience ...) - seem to be primarily about conducting mathematical analyses, but I'm much better at programming and classic CS/engineering topics (algorithms, systems architecture, logic design ...) than I am at math and physics. While I'm not bad at math *compared to an average student* and have even managed to publish some papers about biomodeling as an undergrad, I don't envision myself competing with super-talented math people at the graduate level who are ultimately expected to produce new knowledge primarily through mathematical tools (nor is mathematics something I draw my motivation from). Hence, I wonder:
+
+
+1. **are there areas of comp.bio. (and related fields) where I can realistically contribute something to the field primarily as a software engineer** who also knows quite a bit about biology, but that can't be reduced to something that any programmer who knows nothing whatsoever about biology can do as well (i.e. technical work that doesn't get one listed as an author of papers)?
+2. **would it be a mistake to pursue a PhD in the field if I'm not ready to transform myself into an applied mathematician** first who also happens to know some programming to solve problems, i.e. would it pretty much prevent me from getting research positions after graduation?   
+
+
+&nbsp;
+
+
+*Additional background*  
+
+
+My (perhaps incorrect) observation is that software engineers - even if they may be useful to a particular research group - don't seem to land tenure-track positions, or any kind of long-term research positions. From my observations based on papers from e.g. PLOS CompBiol, and investigation of research groups, as well as the job market, computational biology in practice seems to be mostly about:
+
+
+- data analysis (bioinformatics) aka applied statistics and AI (machine learning);
+- modeling of biological systems, which comes down to mathematical biology and biophysics.  
+  
+As a strong software engineer, I'd at best be an implementer which is not something that appears particularly valued in academic settings. Even seemingly interdisciplinary fields like synthetic biology (genetic circuit design etc.) are, upon investigation, really about the usual bioengineering (genetic engineering, biochemistry and other wet lab stuff) or about mathematics. One field I discovered that appears the closest to my strengths is bio-design automation, but there appear to be only a handful of groups doing it, and career prospects seem pretty bad. The viability/practical potential of many fields is also hard to estimate for me, especially since some (many?) topics appear to be over-hyped with an intention of getting grant money, and computation and biology are really not nearly as close as some would like us to believe (or so I've been told by some more cynical biologists).
+
+This decision is further complicated for me because I'm getting software development job offers from top companies - but I've grown rather disillusioned with the corporate culture of software/IT industry, and the impact and intellectual stimulation are just not just quite the same - a field like comp.biol. is much more meaningful for me due to potential impact to solve actual problems of humanity. But if I can't be good at it, I'd rather seek something else.
+
+
+
+Comments:
+- Yes, there are some opportunities within computational biology that are more computer science based than statistical based. I know someone who works primarily with software as a consultant/database manager. He doesn't do a whole lot of math, but there is still a math component behind what he does at times, since he gets asked to sometimes translate/find statistical trends in the queries he is asked to find. This is the only person I know who works almost solely with software though, and I'm not sure about the general availability of such positions. From what I've heard and seen, software jobs in computational biology are likely to be based in database management, which I'm not sure is something you'd be interested in doing.
+
+By and large, the majority of biostatistical work is in data analysis and modeling. Finding a purely software based job would be difficult, but not impossible. I've heard of some people who did their PhD dissertation involving generating some sort of algorithm or useful code, but those generally have an applied side to it as well (e.g. they used such algorithm/code to better refine a pre-existing statistical model).
+- The general rule is if you want to be a head researcher then you need a PhD. That doesn't mean there is no place for you in academia, but if your goal is a tenure-track position, then yeah, software engineers don't get that and you need a PhD.
+
+That said, there are other long-term employment options. Any place that ships software as a product will want/need software engineers. I used to work as one on IGV. Projects like CellProfiler and the GATK employ software engineers, because they produce software that people actually use. I don't know if this will satisfy your thirst for something bio-related (people in these roles are often straightup software devs, having domain-specific knowledge is very helpful but not necessarily something used day-to-day)

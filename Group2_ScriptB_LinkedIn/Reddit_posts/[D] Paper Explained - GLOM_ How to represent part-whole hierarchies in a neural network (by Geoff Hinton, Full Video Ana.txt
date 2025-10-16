@@ -1,0 +1,79 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ltro4y/d_paper_explained_glom_how_to_represent_partwhole/
+Title: [D] Paper Explained - GLOM: How to represent part-whole hierarchies in a neural network (by Geoff Hinton, Full Video Analysis)
+
+Content:
+[https://youtu.be/cllFzkvrYmE](https://youtu.be/cllFzkvrYmE)
+
+Geoffrey Hinton describes GLOM, a Computer Vision model that combines transformers, neural fields, contrastive learning, capsule networks, denoising autoencoders and RNNs. GLOM decomposes an image into a parse tree of objects and their parts. However, unlike previous systems, the parse tree is constructed dynamically and differently for each input, without changing the underlying neural network. This is done by a multi-step consensus algorithm that runs over different levels of abstraction at each location of an image simultaneously. GLOM is just an idea for now but suggests a radically new approach to AI visual scene understanding.
+
+&#x200B;
+
+OUTLINE:
+
+0:00 - Intro & Overview
+
+3:10 - Object Recognition as Parse Trees
+
+5:40 - Capsule Networks
+
+8:00 - GLOM Architecture Overview
+
+13:10 - Top-Down and Bottom-Up communication
+
+18:30 - Emergence of Islands
+
+22:00 - Cross-Column Attention Mechanism
+
+27:10 - My Improvements for the Attention Mechanism
+
+35:25 - Some Design Decisions
+
+43:25 - Training GLOM as a Denoising Autoencoder & Contrastive Learning
+
+52:20 - Coordinate Transformations & Representing Uncertainty
+
+57:05 - How GLOM handles Video
+
+1:01:10 - Conclusion & Comments
+
+&#x200B;
+
+Paper: [https://arxiv.org/abs/2102.12627](https://arxiv.org/abs/2102.12627)
+
+Comments:
+- A few thoughts on the merits of this paper.
+
+Iterative consensus (at least under currently proposed frameworks) generally doesn't converge in ways that we want. Hinton makes the assumption that these representations will just naturally converge to detect objects but it's important to remember that NNs have no encoded prior for "objectness". For example, architectures like Slot Attention ( [https://github.com/google-research/google-research/tree/master/slot\_attention](https://github.com/google-research/google-research/tree/master/slot_attention) ) already explore this concept of iterative convergence and show good results for object detection in the toy examples used in the paper but if you try to apply that architecture to more complex real-world images you quickly find that it mostly focuses on things like edges and other non-object image features. So the core assumption that this sort of iterative convergence will naturally extract objects is mostly just wishful thinking. Perhaps in the future someone will figure out a way to encode an objectness prior into an architecture and/or loss function but this isn't achieved by any current research for any non-trivial dataset.
+
+Experiments in contrastive learning show that introducing a small NN (usually about 3 dense layers) between the encoder and the contrastive loss significantly improves the quality of the learned embeddings. This is because there's a lot of noise between the matched pairs so they in fact shouldn't perfectly align as the contrastive loss encourages them to. The addition of the extra NN allows the embeddings to sit naturally within the correct data distribution and then mutually predict their cluster mean for purposes of alignment. This is all just to say that the idea that doing attention based purely off of embeddings (rather than via an intermediate projection) is almost certainly a bad idea.
+
+Hinton rightfully calls out the significant deficiencies of using disparate image crops to generate matched pairs for contrastive learning but he fails to realize that there are plenty of other ways this can be done. For example, I've found a far better approach is to use nested crops (take a random image crop, then from that crop take another random crop, etc). This helps ensure that matched pairs actually contain similar information and also helps the network to learn scale invariance and part/whole invariance which is exactly what Hinton is trying to achieve.
+
+I would also add that the architecture makes no accommodation for composite objects which are extremely common. Take for example a human wearing a shirt. That location represents both a human and a shirt simultaneously. Under this framework, each of those objects would have a separate embedding but the only way to capture the composite object would be to have a completely separate third embedding (Hinton himself describes this in the paper although doesn't seem to realize the exponential implications). When you actually start breaking out all the possible composite combinations, even for very simple datasets this immediately becomes impossible.
+- Thanks Yannic, this was very helpful.
+
+I'm not convinced that your proposed improvements would actually help.  It seems that if the consensus algorithm works, then system-wide dynamics will eventually settle into a stable state regardless of the additional heuristics one might introduce -- just like in a 2D Ising model.  It's quite a nice visual to imagine all those embedding vectors spinning until they come to rest.
+
+In fact, the more I think of it, the more I like this dynamical systems representation of visual parsing, because it is essentially descending a loss landscape -- during inference!  And if there are, say, two attractors in this space, then this would correspond to two parses for a single image.  We know this is true of human vision: consider bistable illusions like the [Necker cube](https://en.wikipedia.org/wiki/Necker_cube).
+
+GLOM definitely seems like a step in the right direction.
+- I saw Hinton's presentation of GLOM yesterday after seeing the paper: [https://www.youtube.com/watch?v=eEXnJOHQ\_Xw](https://www.youtube.com/watch?v=eEXnJOHQ_Xw&t=3437s)
+
+Yannic, your explanation of the Parts-Of-Whole Hierarchy is brilliant!. I was a little confused when Hinton presented it in that video. The Parts-Of-Whole Hierarchy paradigm is soooo cool. I had never thought of framing the problem of vision in this way. It's also such a fascinating reason for wanting approaches over pure contrastive learning(SimCLR) which cannot encapsulate this part of the whole hierarchy. Such exciting times!
+- What kinda applications GLOM is used for?
+- I once tried to use capsule network to solve image classification problem, but the network didn't converge, neither the EM capsule nor the dynamic routing method. I think the assumption that diffierent feature can converge together has some problems. I think after iterative training, all the featrues will tend to become same. Maybe contrastive learning can solve this. I don't know whether someone has worked on this?
+- > So the core assumption that this sort of iterative convergence will naturally extract objects is mostly just wishful thinking. 
+
+To clarify (as one of the authors of one of these "iterative convergence" papers: https://proceedings.neurips.cc/paper/2020/hash/09ccf3183d9e90e5ae1f425d5f9b2c00-Abstract.html), the core piece for extracting objects isn't the iterative convergence, it's the fact that you decompose your latent space and operate upon it as a set (instead of a vector). 
+
+So the "wishful" thinking here is that if you treat the latent space as a set, the most natural representation does involve "decomposition" into objects, which I think is reasonable.
+
+The reason why iterative convergence is done is the belief that mapping from image to set without doing so has some kind of theoretical limitation, the so-called "responsibility problem".
+- Yeah I think both Yannic's and Hinton's attention concepts would both completely fail to properly converge in many common situations. For example, partitioning multiple objects that may be of the same type but have no pixel separation. Separating people in a crowd is a very challenging yet common task. Similarly, if a single object is partitioned into two separate image regions by an occlusion. These are just a couple examples of unsolved challenges in CV and the concepts in the paper provide nothing beyond wishful thinking that such simple iterative convergence would be sufficient to solve them (other research in the past couple years shows that it is definitely not sufficient).
+- For sure. I completely understand the reasoning behind converting from a vector to a set and then applying some sort of iterative process to assign responsibility. It's a very natural and grounded approach to take. The issue is simply the assumption that it will just naturally converge to some neat human concept of objectness. In practice, for any non-trivial dataset, I haven't come across a framework that reliably does this. Not to say the entire concept is flawed, just to say a lot more research will be needed for the concept to actually work reliably.
+- You make good points.  I am also skeptical of the contrastive learning objective.
+
+Nevertheless the bedrock idea of implementing scene parsing through iterative convergence is biologically plausible and extremely attractive.  Recursive cortical networks (Dileep George, et al) do this with handcrafted features and PGMs and have some very nice properties.  But the top-down / bottom-up convergence can't be accomplished in a single forward pass.
+
+Hinton's formulation using top-down / bottom-up convergence over successive frames solves that problem.  IMO it's a critical piece of the puzzle.  It feels like we are very close to a revolution in CV.

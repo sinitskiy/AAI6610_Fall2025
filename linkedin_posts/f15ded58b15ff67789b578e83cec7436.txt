@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/wesleylhandy_some-thoughts-on-llms-and-software-development-activity-7366842876502110209-yW4q
+Date: 2025-09-24
+Author: Unknown
+
+Helpful insight here. This helps to know how better to test and prompt models to get desired results. 
+
+"My former colleague Rebecca Parsons, has been saying for a long time that hallucinations aren’t a bug of LLMs, they are a feature. Indeed they are the feature. All an LLM does is produce hallucinations, it’s just that we find some of them useful."

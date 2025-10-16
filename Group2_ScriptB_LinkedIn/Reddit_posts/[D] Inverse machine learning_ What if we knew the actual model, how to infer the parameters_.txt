@@ -1,0 +1,91 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/95ubhg/d_inverse_machine_learning_what_if_we_knew_the/
+Title: [D] Inverse machine learning: What if we knew the actual model, how to infer the parameters?
+
+Content:
+Say a domain expert comes up to us and ask to infer the parameters of his model. He actually knows the model and needs uncertainty bounds on his parameters. How would we do that?
+
+More explanation:
+For many of our problems, we get to choose our model. In classifying cats from dogs, we get to choose between neural nets and SVMs. In finding clusters, we get to choose between K-means or PCA. Now what if a domain expert has an actual model, but needs to find the parameters.
+
+Example:
+Let's say the known model is 
+
+`y(x) = exp(-a*x) + b*x + sin(c*x) + d` 
+
+
+
+  * where sample points  `x_i ~ Uniform(0, 1)` and 
+  * observations `y_{i} ~ y(x_i) + Normal(0, variance)`
+
+Here are some images:
+[examples](https://github.com/RobRomijnders/known_model/blob/master/known_model/im/example.png)
+
+and [here](https://github.com/RobRomijnders/known_model) is the code for generating these images
+
+
+TL;DR How to find confidence bounds on `a`, `b`, `c`, and `d`?
+
+Comments:
+- If you are a Bayesian, you compute the posterior.
+
+Lets lump all of {a, b, c, d, variance} into a single vector theta. You have already given us the likelihood for a single datum  
+  p(y\_i | x\_i, theta) = N(y(x\_i), variance)  
+where the likelihood for our entire dataset is just the product of these  
+  p(Y | X, theta) = \\prod\_{i=1 to n} p(y\_i | x\_i, theta)
+
+If we're talking about some real physical system, the expert should have some prior p(theta). We can then compute our posterior  
+  p(theta | X, Y) = p(Y | X, theta) \* p(theta) / p(Y | X)  
+where p(Y | X) = ∫ p(Y | X, theta) \* p(theta) d(theta).
+
+This is almost never available in closed form, but can often be sampled from using MCMC. Once we collect enough samples then simply histogramming the samples gives us an approximation to this distribution.
+
+All our knowledge of theta given our data X, Y and our prior p(theta) is contained in the posterior. It is a probability density, so if look at just a small area, we can compute the probability that the true theta lies within that area.
+
+You asked for a point estimate with confidence bounds on the elements of theta. This tells us nothing about the covariance between elements. Also, in general, it may be possible to explain our data with either a high or a low value of , say, the parameter b, but not with a moderate value. In this case our posterior would be multi-modal, which we cannot show with a point estimate plus confidence intervals. If our posterior is a multivariate Gaussian with diagonal covariance matrix, it is fully described by the mean and variances, so is the same as giving a point estimate plus confidence intervals.
+
+If we are only interested in the parameters, we can be happy with our posterior as the final answer. If we are given a new point x\* and want to predict what y\* is, then we compute out posterior predictive distribution  
+   =  ∫ p(y\* | x\*, theta) p(theta | X, Y) d(theta)  
+here we have integrated the likelihood of our new data p(y\* | x\*, theta) over our posterior p(theta | X, Y). This gives us a distribution of y\* given a new x\*. It does not use a single fixed theta which would imply we had 100% confidence over the value of theta. This takes into account our uncertainty over theta. If our posterior is a very sharp spike at a single value, p(y\* | x\*, X, Y) would be approximately p(y\* | x\*, theta). Note that this is what we do in much of ML, which assumed we have high certainty over our parameter estimate.
+
+I hope this made sense :) this stuff took me ages to wrap my head around. I see that this community has some pretty nasty people in it. Ignore them, you're obviously working hard to understand this stuff & that is all anybody can ask.
+- This is a non-linear regression (because y is a non-linear function of parameters) problem then, and there are some methods to solve such problems. 
+
+Non-linearity makes it difficult, one thing you could do is use a descent method to find the parameters, because all the terms are differentiable, so you would probably converge to some local optima. 
+
+I believe the easiest way to proceed would be to use a non-linear regression library, there are some available in Python, MATLAB and R too.
+- You would need to have some observations of x\_i to pair with each y\_i, right?
+
+Once you have that you could do MLE, or MCMC sampling.
+- [deleted]
+- There is a field of statistics devoted to finding parameters of a mathematical model describing a (physical) phenomenon. From some measurements of the phenomenon, they infer the most probable parameters. I think your problem exactly fits this. It may even be a simple case of this theory.
+
+It is called model calibration.
+
+Most of the techniques are Bayesian. See works by Kennedy & O'Hagan for example.
+
+
+PS: Anyway, others are right, you could simply use MLE and optimize it using a global optimization algorithm or gradient descent
+- Can't tell if this is a serious question, but the problem of "how do I infer model parameters and quantify my uncertainty?" is what the field of statistics has studied for the last 100+ years.
+
+Here are some textbooks that should be good primers:
+
+[Statistical Inference by Casella & Berger](https://mybiostats.files.wordpress.com/2015/03/casella-berger.pdf)
+
+[All of Statistics by Wasserman](https://www.ic.unicamp.br/~wainer/cursos/1s2013/ml/livro.pdf)
+- MLE?
+- As /u/boomkin94 mentioned, the non-linearity makes this very difficult. You might have success with bootstrap, see [these slides](https://www.ethz.ch/content/dam/ethz/special-interest/math/statistics/sfs/Education/Advanced%20Studies%20in%20Applied%20Statistics/course-material/robust-nonlinear/06_nlregFolien16-HT3_Druck.pdf) for more.
+
+You should also take a look at empirical likelihood approaches for nonlinear regression.
+- Please read [this ](https://arxiv.org/abs/1607.00133)and [this](https://arxiv.org/abs/1610.05755) by Martin Abadi, etc from Google brain. Two papers that actually got me into machine learning.
+- did you skip statistics entirely?
+- Isn't this just what i.e. grid search is
+- Not OP but I really appreciated this post and your willingness to be helpful.
+- Thanks for your answer. I'm reading more on this stuff now
+- Is it bad that I don't even understand the question? Why doesn't OP just train a new model using his given X and Y?
+- Or that classic [bevington](http://hosting.astro.cornell.edu/academics/courses/astro3310/Books/Bevington_opt.pdf).
+
+I do like u/JimboSkinbo 's answer though - it's nice to see the same things written in Bayesian.
+- That's not very friendly :)
+- agree
+- If we're going to go Bayes, I like [BDA](http://www.stat.columbia.edu/~gelman/book/)

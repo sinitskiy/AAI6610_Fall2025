@@ -1,0 +1,15 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17f7jo6/machine_learning_for_asset_allocation_and/
+Title: Machine learning for Asset Allocation and long/short decisions in a Tactical Asset Allocation Strategy
+
+Content:
+&#x200B;
+
+I'd love to hear your guys thoughts on next steps to improve this, maybe deeper layers and more nodes, maybe a random forest is more appropriate? I'd love to hear any thoughts on Machine Learning directly applicable to time-series data specifically here I am applying machine learning to drive asset allocation in an investmen portfolio
+
+[https://www.quantitativefinancialadvisory.com/post/asset-allocation-in-a-post-modern-portfolio-theory-world-part-1-the-single-layer-taarp-ml-model](https://www.quantitativefinancialadvisory.com/post/asset-allocation-in-a-post-modern-portfolio-theory-world-part-1-the-single-layer-taarp-ml-model)
+
+&#x200B;
+
+Comments:
+- .

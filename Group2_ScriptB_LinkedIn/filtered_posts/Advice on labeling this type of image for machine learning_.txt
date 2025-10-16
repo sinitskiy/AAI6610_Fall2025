@@ -1,0 +1,82 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mtk9ml/advice_on_labeling_this_type_of_image_for_machine/
+Title: Advice on labeling this type of image for machine learning?
+
+Content:
+https://preview.redd.it/5l9o6mgtrrjf1.jpg?width=640&format=pjpg&auto=webp&s=87fffbdff5103f383e15ae400727a0aa3d418143
+
+Hey again r/computervision. Thank you for all the people who gave me advice on the post I made here a while back. I worked out a good way to find the RoI from the all the suggestions I got.
+
+The next step is now to make a machine learning model. To simply put it, its been decided to make a ML to binarise the images. Otsu is found to be unreliable for threshold these type of images at different 'lightning conditions' since some of the noise causes the threshold to mess up data by misplacing pixels all the place.
+
+We have to label each the white pixels of the bands (the stripes essentially and what ever is between the bands is to bet to false) as the ground truth. And for a large amount of images.
+
+Any suggestion on making this process less painful is appreciated (and thank you :P) . We consulted some uni supervisors about how to approach this, and all of them seem to suggest to sit there, zoom in and label. We do not want to do that. We had some ideas to do it but we would like to hear some different approaches you guys can suggest.
+
+Comments:
+- If there's uneven  lighting then you can try moving averages
+- how about you detect the edges and then label space between the edges depending on logic?
+
+You could remove some of the noise with median filter that should keep the edges alive, use a kernel that triggers horizontal lines and of you go?
+- Hi u/SpamPham,
+
+I just downloaded the picture you posted and tried something out with my Halcon installation.
+
+Using variable threshold (var\_threshold) with some pre- and post-processing could solve the issue.
+
+Please find below the code to segment the dark stripes. To segment the bright parts, you can use the ‘light’ parameter. Maybe you must change some parameters. I have not tried the bright parts. 
+
+    dev_close_window ()
+    dev_update_off ()
+    
+    *
+    * Read the input image
+    *
+    read_image (Tolabel, '... /sample.png')
+    
+    *
+    * Convert color to Gray
+    *
+    rgb1_to_gray (Tolabel, Image)
+    
+    
+    *
+    * Open a window to display the results.
+    *
+    get_image_size (Image, Width, Height)
+    dev_open_window_fit_size (0, 0, Width, Height, -1, -1, WindowHandle)
+    set_display_font (WindowHandle, 16, 'mono', 'true', 'false')
+    dev_display (Image)
+    stop()
+    
+    *
+    * Segement background mask
+    *
+    threshold (Image, RegionBackground, 50, 255)
+    closing_circle (RegionBackground, RegionBackground, 3.5)
+    dev_display (RegionBackground)
+    stop()
+    
+    *
+    * Threshold the image using variable threshold
+    *
+    var_threshold (Image, Region, 15, 15, 0.5, 10, 'dark')
+    intersection (Region, RegionBackground, RegionIntersection)
+    dev_display (Image)
+    dev_display (RegionIntersection)
+    stop()
+    
+    *
+    * Select regions of particular height and size.
+    *
+    connection (RegionIntersection, ConnectedRegions)
+    closing_circle (ConnectedRegions, ConnectedRegions, 3.5)
+    select_shape (ConnectedRegions, SelectedRegions, ['area'], 'and', [15], [4000])
+    
+    * Display the results
+    dev_display (Image)
+    dev_display (SelectedRegions)
+    disp_continue_message (WindowHandle, 'black', 'true')
+    stop ()
+    
+    disp_end_of_program_message (WindowHandle, 'black', 'true')

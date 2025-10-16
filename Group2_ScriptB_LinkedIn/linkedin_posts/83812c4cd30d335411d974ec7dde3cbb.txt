@@ -1,0 +1,85 @@
+URL: https://www.linkedin.com/posts/rafaelizbicki_machinelearning-uncertaintyquantification-activity-7287088982813724672-Pygr
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Rafael Izbicki的动态
+Rafael Izbicki
+
+Associate Professor of Statistics at UFSCar | PhD Carnegie Mellon University | Data Science | Statistics | Machine Learning | CNPq Research Fellow
+
+8 个月
+
+📚 Book Announcement! 😊 ⁣
+⁣
+I'm excited to share my new book: ⁣
+𝐌𝐚𝐜𝐡𝐢𝐧𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐁𝐞𝐲𝐨𝐧𝐝 𝐏𝐨𝐢𝐧𝐭 𝐏𝐫𝐞𝐝𝐢𝐜𝐭𝐢𝐨𝐧𝐬: 𝐔𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 𝐐𝐮𝐚𝐧𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧.⁣
+⁣
+Targeted at practitioners and researchers with a good mathematical background, this book provides tools to make predictions more reliable by addressing aleatoric and epistemic uncertainties. It explores essential topics such as conditional density estimation, Gaussian processes, BART, conformal prediction, and calibration techniques. ⁣
+⁣
+Featuring real-world applications from cosmology to disease surveillance, it equips readers to move beyond point predictions in artificial intelligence and better communicate uncertainty. ⁣
+⁣
+You'll find hands-on examples and code in an accompanying GitHub repo. ⁣
+⁣
+📥 Download it for free or get a printed copy at: ⁣
+👉 rafaelizbicki.com/UQ4ML (for access outside Brazil) ⁣
+👉 rafaelizbicki.com/UQ4MLpt (for Brazil) ⁣
+⁣
+Hope you find it useful!
+⁣
+#MachineLearning #UncertaintyQuantification #DataScience #PredictiveAnalytics #Statistics #Book #ArtificialInteligence #AI
+
+708
+30 条评论
+赞
+评论
+分享
+Vinicius Albani
+
+Applied Math, Math Modeling, and Inverse Problems.
+
+8 个月
+
+Prezado Rafael Izbicki, esse é um tema de grande importância! Tenho muito interesse no assunto. Muito obrigado por compartilhar!
+
+赞
+回复
+1 次回应
+Juvêncio Santos Nobre
+
+Professor Titular na Universidade Federal do Ceará, Estatístico
+
+8 个月
+
+Parabéns pelo livro e muito obrigado por disponibilizá-lo! Ontem já adquiri o meu! :-) 
+
+赞
+回复
+1 次回应
+Thyago Rezende
+
+Inteligência de Negócios | Inteligência Competitiva | Business Intelligence | Cultura de Dados
+
+8 个月
+
+Sensacional Rafael Izbicki!!! Parabéns!!!
+
+赞
+回复
+1 次回应
+Ivan Vitor Medeiros
+
+Head LATAM para IA e Arquitetura | TCS
+
+8 个月
+
+Parabéns, já vou pedir minha cópia! Importante que te

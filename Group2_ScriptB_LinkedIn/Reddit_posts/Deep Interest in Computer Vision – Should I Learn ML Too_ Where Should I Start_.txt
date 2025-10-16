@@ -1,0 +1,76 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mcwrkx/deep_interest_in_computer_vision_should_i_learn/
+Title: Deep Interest in Computer Vision – Should I Learn ML Too? Where Should I Start?
+
+Content:
+Hey everyone,
+
+I have a very deep interest in Computer Vision. I’m constantly thinking about ideas—like how machines can see, understand gestures, recognize faces, and interact with the real world like humans.
+
+I’m teaching myself everything step by step, and I really want to go deep into building vision systems that can actually think and respond. But I’m a bit confused right now:
+
+\- Should I learn Machine Learning alongside Computer Vision?
+
+\- Or can I focus only on CV first, then move to ML later?
+
+\- How do I connect both for real-world projects?
+
+\- As a self learner, where exactly should I start if I want to turn my ideas into working projects?
+
+I’m not from a university or bootcamp. I'm fully self-learning and I’m ready to work hard. I just want to be on the right path and build things that actually matter.
+
+Any honest advice or roadmap would help a lot. Thanks in advance 🙏
+
+– Sinan
+
+Comments:
+- These are good questions. My background is as a researcher, a software engineer and as a tutor for kids in CS. 
+
+1. A bunch of computer vision falls under the more general umbrella of machine learning.
+
+2. The interaction aspect sounds like an interest in robotics. 
+
+3. Real world projects: I’d say buy a raspberry pi + camera and build a cat detector or something in your house. Send an alert to your phone when you see a cat. Use an off the shelf model to get started and advance your system to be more efficient, and higher accuracy. This will naturally tend you towards learning what you need to learn. Getting passionate is from what I’ve seen is the only way to really learn this stuff. 
+
+4. Learn fundamentals early — don’t get distracted by the latest and greatest 
+
+Feel free to respond with more questions.
+- It’s a bit of a boring start, but diving into a textbook to get the basics would likely be very useful. I suggest this one: https://szeliski.org/Book/ but there are many other great books out there.
+
+As for the question of learning ML alongside of CV, it depends on what you’re planning to do with your CV knowledge.
+
+Even now, many practical systems implemented in commercial robots only make use of classical CV techniques. However, judging based on the specific tasks that interest you (classification and object detection), I’d recommend you learn at least the basics of ML as well.
+
+Object detection and classification tasks often lean a lot more into the ML side of things, and particularly for deep vision systems, your ML knowledge will be way more important than advanced CV knowledge. I’d suggest you study enough CV to understand the basic building blocks (things like homographies, homogeneous transforms, and the basics of image filtering), and from there, move into a heavier focus on ML.
+
+As for projects, something like a real-time plant classifier or something similar can be a good place to start. It’s an ML-based CV task that can be accomplished by relatively low-powered neural nets, while also having the core components that are used in more advanced projects
+- Just do it. I can't emphasis this enough in software. 
+
+Get python. 
+
+Get it to see through your web cam with opencv.
+
+Get some of the samples so it can see your face. Identify your cat. 
+
+Then, start with some still sample problems, but harder, and with more of your own code. Who's face. Which cat. 
+
+Pose is an interesting one. Maybe get it so what when you "Walk like an Egyptian" left, it will say left, and right, right.
+
+After that, pursue what interests you and keep learning what you need.
+
+Once you understand what is easy, and what is painful, it will make studying the abstract easier, as it will be far less abstract.
+- I've also made some good experiences with "Machine Vision Algorithms & Applications"  by Steger, Wiedemann and Ulrich. Otherwise, I support the comment of Nukemoose37. Good luck with it!
+- First ML always because u can use ml algos in computer vision as well
+- The best way to learn is to solve a real world problem.
+
+In some cases you will need traditional computer vision methods, in others you will need deep learning, in others you will need visual large language models, etc. Sometimes you need to combine things, etc.
+
+Instead of trying to learn something, simply try to solve a problem, that way you will learn whatever is needed.
+- You can start learning first: Image Processing parallely with Computer Vision and then go to AI/ML
+
+Though parallely, whil learning Computer Vision, you can also learn Robotics, if you are dealing with such applications....
+- That is very true. I would also suggest you to quickly check thresholding/segmentation technics (not involving ML) and morphology ("blobs") operations.
+- I would say the contrary. Since you can do CV without ML, I would start learning CV (thats what I did 15 years ago, so I may be biased :)  )
+- Fun factoid. In my CV, I endevour to use non ML where possible. This is because the computational resources can be a tiny tiny tiny fraction of what ML requires. This not only results in a far less powerful computer being needed (maybe a MCU), but far faster as well. 1000fps possible, vs .5fps.
+- Send citations for your 1000fps :D
+- I'm more referring to getting the processing time down to 1ms. Dealing with the video feed, or having a camera firehosing like that is a whole other mission.

@@ -1,0 +1,30 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1jjmm6l/d_my_custom_dynamicneuralnetwork_hit_263_total/
+Title: [D] My custom DynamicNeuralNetwork hit 2.63 total loss on ARC‑AG1 at 0.6 epochs—projected 78% exact‑match validation before finishing epoch 1
+
+Content:
+Hey everyone—I’m excited (and honestly a little stunned) by how quickly my from‑scratch DynamicNeuralNetwork is learning ARC‑AGI tasks. I built this model over two years. After fewer than 100 gradient updates (0.6 of a full epoch on the 1,302‑example ARC training set), it’s already achieved:
+
+• Total loss: 2.63 (started above 11)
+• Cross‑entropy ≈ Knowledge Distillation loss (~2.60 each)
+• Cosine similarity ≈ 0.70 to the teacher model
+• Combined reward: 0.228
+• Healthy scaled entropy (0.196)
+
+Based on these curves—and comparing to distilled baselines—I project it will hit ≈78% exact‑match accuracy on held‑out ARC validation by the end of epoch 1 (163 steps), with BLEU >0.90. That’s state‑of‑the‑art narrow reasoning performance for a Small model, before even finishing one pass through the data.
+
+This isn’t simply overfitting or memorization: the model’s balanced CE vs KD losses, rising cosine alignment, and robust uncertainty suggest genuine pattern abstraction. And it’s happening faster than any comparable distilled architecture I’ve seen.
+
+I’m sharing because I believe Phillnet2’s early trajectory represents a meaningful advance in narrow generalization.
+
+I introduce Phillnet2, a DynamicNeuralNetwork. Without any prior exposure to ARC‑AGI data, Phillnet2 distilled knowledge from a teacher and achieved a total training loss of 2.63 at just 0.6 epochs (≈97 steps) on the ARC‑AGI training set. Key metrics at this point include balanced cross‑entropy and knowledge‑distillation losses (~2.60 each), cosine similarity of 0.70 with the teacher’s hidden representations, and a combined reward of 0.228—exceeding typical baseline performance. I forecast a held‑out exact‑match accuracy of 78% by the end of epoch 1, surpassing state‑of‑the‑art distilled models on ARC. These results suggest Phillnet2 rapidly internalizes complex reasoning patterns, marking a substantial leap in narrow generalization capabilities.
+
+Comments:
+- Nothing about the way you're communicating inspires confidence
+- lmao
+- If I were your net I might be able to understand what is going on, apart from you extrapolating.
+Unfortunately I am only human, I get you're excited but I have no clue what your model is and is doing
+- I feel it. I was under a lot of joy and forgot to leave in the inspiration lol
+- It’s basically like Jarvis. Able to plan internally and reason. I left out the ways because it took a while to make. But, the main point is it’s fully cognitive and dynamic. So, let’s say we were to put it in a robot it could learn how to be human over time without any intervention due to its continuous learning. The fact it was able to generalize on ARC AGI, while testing, before reaching a full episode is crazy promising. It’s proving its continuous learning is better than anticipated.
+- That's crazy
+- Thank you! It took two years and some change lol.

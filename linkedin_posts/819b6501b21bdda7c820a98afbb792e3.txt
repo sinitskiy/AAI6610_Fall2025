@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/ravid-shwartz-ziv-8bb18761_the-new-openai-paper-why-language-models-activity-7370150106924486656-OOl4
+Date: 2025-09-24
+Author: Unknown
+
+The new OpenAI paper “Why Language Models Hallucinate” is more like PR than research.
+The claim that hallucinations arise because training/evaluation reward guessing over abstaining is decades-old (reject option classifiers, selective prediction). Recent LLM work already trains models to abstain (R-Tuning, RLKF). 
+Useful framing, but not novel 😬

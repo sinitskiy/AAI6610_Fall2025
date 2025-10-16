@@ -1,0 +1,43 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1btkw62/catboost_and_hyperparameterisation/
+Title: CatBoost and hyperparameterisation
+
+Content:
+I'm an ecologist starting my first forays into machine learning. Specifically, I'm using CatBoost to predict presence/absence of a threatened species at discrete wetlands. You guys are the experts in this space, so I'm hoping you can help. Firstly, is hyperparameterisation conserved? So for example, if I'm using a grid search for tree depth using low iterations and higher learning rate, will the best tree depth also hold true at higher iterations and smaller learning rates in all cases?  Secondly, when seeking a binary output from the testing set, is there anything that I should be cautious of? It feels more intuitive to use categories to validate the model then to predict probability when applying the model.
+
+Comments:
+- Hyper parameters are not conserved as you put it. The optimal tree depth may change depending on other parameters, etc.
+
+For number of iterations, I always use more than necessary and apply over fitting detection.
+
+Whether you use the label or probability for predictions is up to you, but should be guided by the problem you are trying to solve. The default threshold for classifying as a positive class is >= 50%. Generally one would use a cost matrix to calculate the gain/loss of true positives, false positives, true negatives and false negatives. 
+
+So for example, if a false positive ends up wasting a lot of time/resources, you may want to have a stricter threshold for classifying as positive, e.g. 80%. 
+
+Look up classification ROC curves for more information.
+- I experimented with XGBoost, LightGBM and CatBoost (a.k.a. the trio from Kaggle) and my conclusion is Catboost pretty much doesn't require any HP optimization\* to perform. The difference between default parameters and best parameters (for catboost) is so small it's not worth the human attention and time.  
+That is, I give it test set for automatic overfitting detection, set ROC AUC as control metrics and choose iterations as high as time/memory allows. Learning rate either default or a bit smaller than default. Number of iterations is the number of trees in your model. If learning process is too slow on CPU I move to GPU, it looses precision a bit but runs significantly faster. The only downside of CatBoost is lack of documentation. Technically they do have a website with a documentation but the only info there that makes sense is cookbook recipes page and old youtube video of girl giving a presentation at some conference.
+
+Nowadays CatBoost is my goto algorithm for approaching new problems. Allows to focus on features engineering instead of HP optimization. If I ever have extra free time I would rather try to discover a new data augmentation method rather than do HP with catboost.
+
+(\*) by HP i mean algorithm related HP. Not features related HP.
+- Two major overall thoughts before answering the Qs asked:
+
+1. Hyperparam optimisation is rarely a huge performance change.  It can fix overfitting, or squeeze an extra percent or three out of a decent model, but it never takes a model from mediocre to fantastic.  I wouldn't worry too much about it; your time is better spend on data prep and model selection
+2. While it is good to understand how hyperparam tuning conceptually works, your question suggests you are doing it by hand and that is rarely a good use of time.  Use a wrapper package like [Optuna](https://optuna.org/) to automate the search space hunt.  
+
+Qs asked
+
+>Firstly, is hyperparameterisation conserved?
+
+No.  The best tree depth will change dependent on other params.
+
+However, often those changes are small.  Which is to say that many hyperparameters can be optimised semi-independently without major performance loss.   But again, you should automate the hyperparam fitting and let a tree parzen estimator handle this for you
+
+>Secondly, when seeking a binary output from the testing set, is there anything that I should be cautious of?
+
+Strictly speaking, it is helpful for the tuning to see something more continuous like prediction probabilty (logloss) because itgives us better ability to know if the model is getting closer to the right answer or not.  You may want to use focal loss if trying to classify a rare event.  
+  
+A metric based on literally "did you pick the correct class" has a discontinuous reward at a particular certainty and no reward for changes elsewhere on the certainty, so you can't optimise from it very well.
+
+But a binary metric can be useful for a human sense check of the model results.  Pick what makes sense for your use case.

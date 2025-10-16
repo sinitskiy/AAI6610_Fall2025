@@ -1,0 +1,37 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1nm586z/molecular_docking_using_machine_learning/
+Title: Molecular docking using machine learning!
+
+Content:
+I have tried multiple ligand docking for small scale of 5.5k compounds on my laptop and it took 3 days to complete!! I’m just wondering what if I have a library of 300k compounds, it’s just not possible to screen entire library on my laptop, ofc I could run on a super computer if I’ve access to. But I’m wondering if someone with a basic computer could accomplish this? I’ve tried free trail version of Google cloud to get access to a decent VM. Do you know of any other alternatives that you would recommend? FYI I use MacBook Air M1.  
+
+Comments:
+- Yeah, people generally wouldn’t do this on a laptop.  
+
+For the most part, the speed of the docking is inversely proportional to the quality of the docking.   Yes, I’m sure you can find a program that will be fast, but is it worth it?
+- I once came across a paper in which the authors divided more than 200k ligands into separate folders and performed docking for each folder. Perhaps a similar strategy could be useful in your case. For example, with 300k ligands, one could organize them into 30 folders of 10k ligands each, or even 60 folders of 5k ligands each, depending on the computational resources and the workflow structure.
+- How do you do docking? If it's in python, could you parallelize the docking across multiple processes? If it is not doin it already
+- I'm not sure what you mean by molecular docking using machine learning. Two separate things. Even if you were using a ml model to predict binding affinities, that should still be very fast, unless you're trying to generatively figure out ligand structures that have higher affinity to certain targets.
+
+You don't really need a super computer, any pc should be fine if you're worried about thermals. If I'm not mistaken, autodock has the option to use multiple cpu cores. 
+
+I'm not sure if your device has GPU, maybe try autodock-gpu if it does? If your device supports MPI, check this: [https://github.com/mokarrom/mpi-vina](https://github.com/mokarrom/mpi-vina)
+
+You could use Colab for GPU access if your project needs that, I'd set up checkpoints and set it to autosave to drive so you don't lose work in the process.
+- Yeah, do not do ml docking for HTVS. Cost/quality of hits found is far superior employing multicpu versions of vina/glide if you have licenses.
+- This? https://www.nature.com/articles/s41467-024-52061-7
+- how do you guys eveb run a mol dock, many engines won't even run ( or needs domain expert for prep workflow) then comes stringdock but won't run on windows or wsl ( from my experience) 
+plz don't mention online servers/ services
+- Hey buddies, thanks for answering and I genuinely appreciate your support. I’ve figured out there’s a sped up version of auto dock vina which is QVINA2 with similar accuracy but 80% faster than a regular VINA. You should def try it out.
+- How does this change the fact that its still 300k modeling simulations? Or are you referring to batching the inference? If you have the VRAM (or whatever the architecture of the M1s are) then many models let you stack your tensors so one inference processes multiple models
+- Yea sure I’ve  tried auto dock gpu but it’s a complicated workflow compared to a regular vina. I’ve discovered qvina2 which has improved speed performance of 15% compared to regular vina. I’ve come across QVINA2 published by researchers from NTU
+- Wdym? Like you wanna perform molecular docking on a mac machine?
+- That’s what I was concerned as well :)
+- I'm not really sure, but I was using autodock-gpu with an alias and thought it worked with basically the same commands as autodock vina. Will look into it. Thanks!
+- No I'm using win/wsl, 
+I tried to different programs/ engines, while some seemed working, it either needs expert to prepare the input or parameterized argument that won't generalize/ work on every cases..so I tried to find blind docking but there's only available as servers or needs additional preparation e.g cavity detection.
+
+the only program that seems good enough ti generlize and easy to run is stringdock , but won't run on windows / wal due to a wheel image or something like that ( dependency hell) 
+Something should work out of the box , requires minimum input e.g protein sequence and a smile for ligand . I am experimenting with dynamic dock not sure how it will be but it seems close enough to what I want.
+- Yes, it requires same commands as autodock vina but you need map files for both ligand and protein.
+- you can just clone the **AutoDock Vina** repo from GitHub, make a directory with your ligand and protein `.pdbqt` files plus the config file, and then run it with a bash command. That’s what I usually do on my Mac.

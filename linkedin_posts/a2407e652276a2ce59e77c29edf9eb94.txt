@@ -1,0 +1,8 @@
+URL: https://www.linkedin.com/posts/geoffhollingworth_question-of-the-weekend-this-is-a-great-activity-7354775707442397184-2MDu
+Date: 2025-09-24
+Author: Unknown
+
+QUESTION OF THE WEEKEND:
+This is a great explanation of hallucinations. Because we understand the logical premise of how LLMs work because we designed then then we understand why they do what they do. We don't understand why they create exactly what they create because that is lost in a millions dimension model space we cannot contextualize. 
+So how about human hallucination equivalent? Dreaming. Here we don't understand the why because we didn't design the system. But humans do very little that does not have purpose, we are highly optimized and highly efficient. 
+So why do we dream?

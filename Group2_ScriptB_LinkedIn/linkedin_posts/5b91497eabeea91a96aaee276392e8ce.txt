@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/thetechgirl_generativeai-aiinnovation-learningjourney-activity-7187267922128437248-XSD2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abhilasha Jain的动态
+Abhilasha Jain
+
+2xTimes Square Featured | Data Scientist | Healthcare AI | Medical Imaging | Signal Processing | Computer Vision | Generative AI | NLP | LLM
+
+1 年
+
+Let's Learn Generative AI Together!
+
+Thank you to everyone who participated in the recent poll about your interest in my posts' content. The results are in, and a whopping 70% of you would like to read more about Generative AI topics! Your enthusiasm and engagement inspire me to dive deeper into this fascinating field.
+
+To kickstart our journey into Generative AI, I've created a roadmap that outlines how we'll explore various aspects of this innovative technology. Here's what you can expect:
+
+1. Introduction to Generative AI:
+  - Overview of Generative AI and its significance.
+  - Key concepts: generative models, latent space, sampling, and reconstruction.
+
+2. Generative Models:
+  - Probabilistic models: Gaussian mixture models, variational autoencoders (VAEs).
+  - Neural network-based models: Autoencoders, generative adversarial networks (GANs).
+
+3. GANs (Generative Adversarial Networks):
+  - Architecture and components of GANs.
+  - Training GANs: adversarial loss, generator, discriminator.
+  - Applications: image generation, style transfer, data augmentation.
+
+4. Autoencoders:
+  - Encoder-decoder architecture.
+  - Variants: denoising autoencoders, variational autoencoders (VAEs).
+  - Applications: image reconstruction, anomaly detection.
+
+5. Language Models and Text Generation:
+  - Sequence modeling: recurrent neural networks (RNNs), long short-term memory (LSTM) networks.
+  - Transformers and attention mechanisms.
+  - Text generation techniques: word-based models, character-based models.
+  - Introduction to Large Language Models (LLMs) like GPT-3.
+
+6. Image Generation and Style Transfer:
+  - Conditional GANs (cGANs) for controlled image generation.
+  - StyleGAN and its applications in photorealistic image synthesis.
+  - Neural style transfer:

@@ -1,0 +1,51 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c75ysa/new_job_opportunities_is_sports_analytics/
+Title: New job opportunities is sports analytics! Including Junior positions
+
+Content:
+ 
+
+Hey guys,
+
+I'm constantly checking for jobs in the sports and gaming analytics industry. I've [posted recently in this community](https://www.reddit.com/r/datascience/comments/1b8xr3y/zelus_analytics_and_tennessee_titans_are_hiring/) and had some good comments.
+
+The job board updates daily and as we know, the market is not as dynamic as before so I wanted to share several data science positions that appeared recently.
+
+ [HOCKEY DATA SCIENTIST @ The Florida Panthers](https://www.sportsjobs.online/job-details/3179HOCKEY%20DATA%20SCIENTIST/r/reczbLsGBZUjo64EW)
+
+* [Machine Learning Engineer @ Second Spectrum](https://www.sportsjobs.online/job-details/3182Machine%20Learning%20Engineer/r/recm3c8fo9YpyC0GG)
+* [NFL Data Scientist @ Swish Analytics](https://www.sportsjobs.online/job-details/3169NFL%20Data%20Scientist%20/r/recxMn6TcoAkfyQvn)  (also tennis and MLB)
+* [Data Scientist (all levels) @ Kaizen Gaming](https://www.sportsjobs.online/job-details/3175Data%20Scientist%20%28all%20levels%29/r/recJBCAtwPWUkVano)
+* [Senior Data Engineer - Sportsbook @ Underdog Fantasy](https://www.sportsjobs.online/job-details/3163Senior%20Data%20Engineer%20-%20Sportsbook/r/recjPQEiCye2DNLHw)
+* [Recruitment Data Analyst - Global Remote](https://www.sportsjobs.online/job-details/3185data%2520analyst%2520and%2520programs%2520office%2520associate/r/recNnk5upeK3pI5GS)
+* [Junior Data Scientist / Intern @ Huddlevision](https://www.sportsjobs.online/job-details/3143junior%2520data%2520scientist%2520%252f%2520intern/r/receAIZ7k1ncXKB6N)
+
+There are multiple more jobs related to data science, engineering and analytics in the job board.
+
+I've created also a [reddit community](https://www.reddit.com/r/sports_jobs/) where I post recurrently the openings if that's easier to check for you.
+
+Disclaimer: I run the job board.
+
+I hope this helps someone!
+
+Comments:
+- Good for you man it’s very hard to figure out what jobs aren’t spam anymore
+- Joined the community!
+- Nice! Thanks!
+- Just joined the community, thank you sir
+- that’s funny one of my friends is a cofounder of huddlevision
+- Thank you for the information
+- Really cool! Thanks for sharing.
+- Any remote opportunity?
+- Thank you!
+- It's really cool! Instantly joined
+- Panthers looking for "Extensive hockey knowledge and experience, playing or otherwise".  Do you think I can win the panthers over with my Beer league playing experience playing on the Horniest Cats?
+- Awesome! Sent ya PM!
+- Welcome!
+- Great. I hope you find something useful. In the job board you can select email alerts too!
+- You're welcome! You can create alerts in the job board for free and get news in your inbox automatically!
+- Yes, there are a few! For instance: [https://www.sportsjobs.online/job-details/3186recruitment%2520data%2520analyst/r/recSjsU9SPhXGhvTz](https://www.sportsjobs.online/job-details/3186recruitment%2520data%2520analyst/r/recSjsU9SPhXGhvTz)
+
+But in the job board at [www.sportsjobs.online](http://www.sportsjobs.online) you can use the filters and select only "Remote" and "Global Remote" to check all opportunities.
+- Thanks! Glad you liked it!
+- Replied!

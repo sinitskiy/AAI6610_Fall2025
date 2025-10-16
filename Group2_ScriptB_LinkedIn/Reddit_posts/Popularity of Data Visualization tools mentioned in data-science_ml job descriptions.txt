@@ -1,0 +1,14 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1792wrc/popularity_of_data_visualization_tools_mentioned/
+Title: Popularity of Data Visualization tools mentioned in data-science/ml job descriptions
+
+Content:
+ Source: [https://jobs-in-data.com/blog/machine-learning-vs-data-scientist](https://jobs-in-data.com/blog/machine-learning-vs-data-scientist)
+
+About the dataset: 9,261 jobs crawled from 1605 companies worldwide in June-Sep 2023
+
+https://preview.redd.it/dympbqa3ljub1.png?width=2560&format=png&auto=webp&s=e5db457072a89a08528d73fe0c064adc45372dea
+
+Comments:
+- Just read an interesting researched the star growth (some measure of popularity) about main python data visualization libraries: [https://open-data-analytics.medium.com/top-10-growing-data-visualization-libraries-in-python-in-2023-813d1aefedcc](https://open-data-analytics.medium.com/top-10-growing-data-visualization-libraries-in-python-in-2023-813d1aefedcc)
+- Thanks! I did not know about PyGWalker - it looks interesting.

@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/giovanni-dantonio_%F0%9D%90%8B%F0%9D%90%8B%F0%9D%90%8C-%F0%9D%90%87%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%A5%F0%9D%90%AE%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%A7%F0%9D%90%AC-%F0%9D%90%86%F0%9D%90%A8-activity-7371576784859066368-h_zB
+Date: 2025-09-24
+Author: Unknown
+
+𝐋𝐋𝐌 𝐇𝐚𝐥𝐥𝐮𝐜𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬? 𝐆𝐨𝐨𝐠𝐥𝐞 𝐃𝐞𝐞𝐩𝐌𝐢𝐧𝐝 𝐢𝐬 𝐡𝐞𝐫𝐞 𝐭𝐨 𝐬𝐨𝐥𝐯𝐞 𝐭𝐡𝐞 𝐩𝐫𝐨𝐛𝐥𝐞𝐦.
+
+I'm happy to share that one of the benchmarks I worked on this summer is now publicly available!
+
+SimpleQA Verified: a new gold standard for LLM factuality! 
+
+A paper by OpenAI made waves by analyzing the reasons behind LLM hallucinations. Our work aims to contribute to the solution.
+
+Existing benchmarks can be noisy, making it difficult to track true modeling progress.
+
+Building on the work on SimpleQA by Jason Wei, Karina Nguyen, and OpenAI at large, we built a more reliable and robust version of it at Google DeepMind.
+
+Some highlights:
+
+🔢 Revamping how numeric questions are graded
+🤯 Making the benchmark more challenging
+👥 De-duplicating semantically similar questions
+⚖️ Balancing topics and answer types to remove bias
+✅ Reconciling sources to ensure ground truths are correct
+… and more
+
+On both the old and verified SimpleQA benchmark, Gemini 2.5 Pro sets SOTA factuality scores. I guess it is a good model for enterprises :)
+
+We're open-sourcing our work to help the community build more trustworthy AI. Feel free to explore the leaderboard, download the dataset, and read our technical report in the comments below! 👇
+
+I'm excited to publicly share a small piece of my work from this summer. Thanks, Lukas, for believing in me!
+
+Lukas Haas, Gal Yona, Sasha Goldshtein, Dipanjan Das | Google DeepMind, 谷歌 Research

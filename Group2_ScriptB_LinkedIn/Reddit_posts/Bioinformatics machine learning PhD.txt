@@ -1,0 +1,49 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vtboi9/bioinformatics_machine_learning_phd/
+Title: Bioinformatics machine learning PhD
+
+Content:
+Hi I am applying to PhD programs this coming cycle and I am interested in  labs that are developing new machine learning methods for bioinformatics. However, I looked at some of the labs that are in this field and it seems as if some of these labs favor applicants with a more computational background .Labs like the AIMS in university of washington have almost all PhD students with a computational or a math background. 
+
+&#x200B;
+
+I am a bio major but I have some research on machine learning relating to QSAR and I ultimately want to do more developing in machine learning but with large scale genomics data. I also have other experience with using graph for machine learning with genomic data. My math background actually isn't terrible as I have up to calc III but no multivariable calculus. I will have linear algebra and discrete math and I am hoping to get probability theory and algorithms but it might be a bit hard because I don't have the prereqs.
+
+&#x200B;
+
+Are getting into these labs reasonable  for me and does anyone have any general advice on getting into these labs? I also have looked at post bac programs like Nih postbac, Orise fellowship, and CDC fellowship and I was wondering how much they would help. I know a common advice is to email PIs but honestly it's kind of intimating because of people with all cs background. Any advice would be greatly appreciated!!
+
+Comments:
+- [deleted]
+- why dont you ask the PIs if you would be competitive, and if not how can you get more competitive.  That way you get a better answer than you get here and look like youre taking ownership of your development, which is a good thing from a PI perspective most likely
+- I'm a bit older so my experience may be out of date (started PhD in 2009), but I did a molecular biology PhD where I ended up developing some basic machine learning methods that expanded into full blown algorithmic development during my postdoc. I was learning more overall genomic techniques primarily and my interests took me to machine learning naturally. 
+
+&#x200B;
+
+It is absolutely possible to get into the bioinformatics field from a primarily biology background, although the other poster is right that some groups that are more math focused may be biased against you. If you're interested in a specific group reach out to the PI as suggested. In addition, it is also worth investigating what biological questions you would be interested in studying in such detail. QSAR is very different than my field of evolutionary biology/comparative genomics, but both use machine learning methods. By looking into PIs who focus on specific biological questions and use machine learning as a method to answer those questions, you may find people who are more patient with you learning the coding/statistics at the beginning of your PhD. For that you will really need to be able to show you are interested in the biological question, and want to learn the methodology.
+- Hey thanks for the honest response. I think probability and statistics is a must. What other courses would you recommend for being more competitive? Real analysis perhaps? I’m a little unsure what I can do after college to prepare myself for such positions so any advice will be appreciated
+- Completely second this.
+- Hey thanks for your response on your experience. How mathematically heavy was algorithmic development for your post doc? How did you learn the math/stats along the way also? Was it just pure self study the entire time ? That’s cool you moved on to machine learning development from a pure bio background
+
+I think you’re right with others in that reaching out will probably be the best and ask how competitive I will be.
+- [removed]
+- [deleted]
+- In terms of tools from others, I've done work with network analysis through WGCNA. Developed some custom scripts for Random Forest Walk based on a variety of input data, as well as developing custom tools that utilize ANOVA/Tukey and Hidden Markov Modeling. My undergrad background was behavioral genetics so limited coding background but decent stats background for basic group comparisons. All of the advanced linear algebra/stats I use was self taught.
+- Hey man I really appreciate your response. I was considering an ms in stats a while ago but not sure anymore tbh cuz I don’t how much I like proofs and ms in stats seems much theoretical based. Do you think an ms in stats is better than let’s say an ms in ai or machine learning ? What do you think about doing a postbac program like nih or Orise instead ? I’m honestly trying to avoid an ms if possible cuz of the money cost but obviously I will try to do it if it’s the best option
+- The thing is I don’t mind that the equation stuff at all. The thing that’s worrying is that the classes that he stated are a lot of proofs. I don’t really have experience with proofs besides discrete math but the problem is that if I want to do all the classes he states I’ll have to stay for another year in college on top of masters which is a lot financially tbh. 
+
+
+
+That’s why I’m wondering if proofs matter that much for machine learning. I know real analysis is pretty important for a stats ms but stats is not machine learning. Machine learning ms seems to be in cs departments more and many students that are in those programs do not have that heavy of a math background. I think perhaps I will also ask others and maybe the machine learning subreddit to learn more
+- [removed]
+- The issue is you thinking “stats is not ML”. ML is essentially a deep dive into nonlinear statistics. A deep neural network is just a series of layered GLMs, but do you even know how GLMs work first and how they are optimized. Or what a convex function and the guarantees for gradient descent are, etc. ML can have proofs too. If anything, you don’t need much general CS (non ML) algo or discrete math knowledge for it.
+
+Real research level ML isn’t just taking a scikit learn library and doing model.fit(). That’s just applied ML, which may be what you do if you are focusing on a more biological applied problem but certainly not methods development. Use your strengths in scientific problem formulation too—a lot of stats & ML or CS people just know how tools but its often harder to come up with a relevant biological question and they don’t have domain knowledge. You can try to go somewhere that focuses more on this.
+- Hey thanks again for your response. I was wondering so then are all the classes that you listed really essential? I looked at my labs that do method development and there are people that come from cs background and I saw one with bio background too. I don’t think a cs degree comes with a lot of math besides calc,lin algebra. It might be the case though that it’s more hybrid than actual pure method development. 
+
+
+
+
+Another concern I have is that I’m afraid that jumping straight into an ms might be too big of a jump tbh especially in stats. I’ll be the one of the few non quantitative backgrounds and I’ve heard classes like undergrad probability theory, real analysis are kinda assumed. Would you suggest staying in undergrad longer to get those classes or how do people from a non quantitative background catch up?
+- [removed]
+- Thanks for all your help!! Really appreciate it

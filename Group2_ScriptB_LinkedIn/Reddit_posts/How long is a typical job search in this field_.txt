@@ -1,0 +1,56 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/12ydd1b/how_long_is_a_typical_job_search_in_this_field/
+Title: How long is a typical job search in this field?
+
+Content:
+I have been looking for work for 7 months now. Before that I had a 3 month internship that got extended to 6 months doing single cell analysis after 9 months looking. I went to UCSC as an undergrad and Boston University as a Master’s student and a lot of my more socially apt or previously experienced classmates have had jobs for at least a year now. There weren’t a lot of them however. I’ve been working on demonstrable projects in machine learning and I have code from my previous work in single cell analysis on my GitHub. Is my situation uniquely bad? Any suggestions for what I can do to improve my standing? I’m in the United States.
+
+Comments:
+- I'm in a similar situation.
+
+I think it comes down to the statistic that something like 50-80% of jobs are obtained via networking. There's arguments for and against this order of things, but it's the reality we have to contend with.
+
+Hard skills are nice to have and can make you valuable to your coworkers, but soft skills are foremost; jobs go to people that the recruiters/hiring managers like.
+
+Edit: Suggestions......Well, clearly I don't have the answers, but it's been recommended to me that I contact people from my school (including ones that I don't know) currently working in industry, set up informational interviews, etc. Get my name in front of people. I haven't done so, and maybe that's my problem.
+
+The people I know who are working either got hired out of internships, benefitted from family pulling favors for them.....and I don't know about some of the others, actually.
+- What I had done while looking for jobs after my MS after eventually getting fed up applying online is to directly email the hiring person or lab if you can find their information on the job description. This is the only strategy that worked for me. But again this mostly works for academic jobs.
+- No it sucks unless you have a PhD or a lot of experience.
+
+I have a MSc in Bioinformatics and struggled to get a job right after I graduated. I applied to a fellowship and someone that was working on their PhD was picked over me with hardly and skills, whereas I had at least basic knowledge in everything they were looking for. This person lasted like 3 months and quit and then they asked me if I was still interested and I took it.
+
+I enjoyed the position a lot but ultimately I left Bioinformatics altogether (tho I still dabble in things in case I ever change my mind). I got tired of all of the PhDs wanting to push a paper all of the time and then rip apart everything I did even though they had no idea what any of it meant..
+- In every field its depending on how good you are.
+- [removed]
+- Every job I’ve ever gotten out of college what from asking people about open positions. Bioinfo conferences would be a great opportunity to make some connections and ask about jobs. There are probably several In the Bay Area. I’d start there?
+- I sent you a tip
+- Many biotechs are cutting staff right now.  Fed interest rate hikes have increased the cost of capital and venture capital has really dried up.  So don’t be hard on yourself.  Corporate earnings declined modestly in Q1, and it is expected will be down again a little more Q2.  Monetary policy operates with a lag.
+- I got both of my major job switches by knowing someone at the company. The first because I had interned there, the second because an old classmate worked there. 
+
+I also do hiring and I tell people that your first job out of school is the hardest. Once you have some experience under your belt, you become much more employable and the doors start to open, even applying off the street.
+- Well… I’m somehow getting regular interviews and short listed for jobs. Anyone know any networking opportunities in the Bay Area? I should probably ask that separately. This seems like a field that’s preety hard to network in just due to the small amount of people actually in it.
+- How hard is it to move out of the field? I’m considering my options and trying to find a position in data science or something if things don’t work out soon, which a friend said may be easier to get into. But I feel like without an existing past career or a willingness to pay for a second masters to learn skills I allready mostly know, it’ll be even harder. Even with all the issuesX finding a job in this field seems easier than my experience before my Master’s applying to jobs with a BA in Computer Science and a BS in Bioinformatics - though mostly here in Silicon Valley- and getting basically no response.
+- Well, there’s a definite preference for hiring students who did a Bio Bachelor’s and then went on to do a Bioinformatics Master’s. Doesn’t matter if you have demonstrable work if your competitors have several years of relevant experience with lab work. I went for a Bioinformatics Bachelor’s straight off the bat and didn’t luck out in job placement. That, and I was a bit more of an introvert than most Biology students so far as finding lab work opportunities. I had a part time position doing web programming, for a few months, but not much beyond that. About as much as some of my fellow Computer Science graduates.
+- I’ve been getting callbacks and direct interviews no problem, for the past few months. I just haven’t gotten past that yet.
+- That sounds like a good idea. Conferences are preety rare, but it looks like there’s a big one ran by UCSF coming up. Thanks.
+- Thanks. I’d apply, but how much of a problem would not having lab experience beyond some basic classwork be? I’d love to learn at some point but tend to not apply if “one year of lab experience” is specified as in my experience that takes me out of consideration before even the interview stage. You’ll find somebody good, even for the below average salary, in no time though. Thanks for the tip
+- Do you mind if I ask a question, then?
+
+I recently got a job as a research assistant in an academic lab. Would that qualify as a "first job" in the eyes of someone hiring for an analyst position?
+
+The work is mostly wet lab protocols with a bit of analysis (i.e. sequence alignment) so far. I'm learning a lot, but I've got a nagging feeling I'm wasting time.
+- One guy I knew, one of those extremely charismatic types, recommended going to local programming-focused meetup groups and participating there.
+
+If you're in the Bay Area, I have to imagine there's some kind of Python or R meetup there. If you get any leads, they may not necessarily be bioinformatics-focused, but it's better than unemployment (or underemployment, for that matter).
+
+You might also try approaching people on LinkedIn.
+- Well the economy sucks at the moment and the first to go are usually R&D positions (like bioinformatics/data science). You're in a huge job market where I believe a lot of lay offs have happened so that could be your issue. Don't focus on remote or hybrid jobs and that may help.
+
+Data science has moved more and more towards people with a PhD imo.
+
+With a comp sci degree, just apply to anything you find interesting. Bioinformatics is moving more towards handling big data similar to data engineering imo. There is so much data out there now that data archival/storage is becoming a big problem.
+
+I became a software engineer but I still dabble in bioinformatics for fun in case I ever transition back.
+- It’s not entirely true that a bio bs student will always be preferred over a bioinformatics bsc. What you say it’s not true. You definitely will have a leg up over your bio peers if you have had demonstrated work. It’s the opposite in fact, if you had demonstrated work from a bioinformatics bsc you’ll certainly be considered over bio bsc. It’s just hard rn to get a job rn in this field due to job market
+- Sounds about right. At least it’s something. I’ve been stuck at a stage where I consistently get through HR and then get rejected after talking to hiring managers for months.

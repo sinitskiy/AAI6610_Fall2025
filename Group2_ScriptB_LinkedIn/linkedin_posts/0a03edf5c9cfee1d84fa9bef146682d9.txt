@@ -1,0 +1,100 @@
+URL: https://www.linkedin.com/posts/jjayaram7_neurips2022-airesearch-deeplearning-activity-6976598465007034368-bH7r?trk=public_profile
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jayaraman Thiagarajan的动态
+Jayaraman Thiagarajan
+
+Generative AI Researcher
+
+3 年  已编辑
+
+Two papers that I have been personally excited about for sometime are finally accepted to #Neurips2022. Thanks to all my collaborators for persisting and bringing these exciting works to light. #AIresearch #deeplearning #contrastivelearning #UQ #MLsafety #graphs
+
+1. Delta-UQ: A new principle for uncertainty estimation that exploits the lack of shift-invariance in NTKs. Delta-UQ is effective at OOD generalization, anomaly rejection and sequential optimization. Paper: https://lnkd.in/giSkGBz5. Rushil Anirudh Vivek Sivaraman Narayanaswamy Peer-Timo Bremer
+2. We take a deep look into graph contrastive learning and find that data-centric properties known to be crucial to the success of visual CL can fail to hold for graph CL. Paper: https://lnkd.in/gFaSqkDa Puja Trivedi Mark Heimann Danai Koutra Ekdeep Lubana
+
+88
+13 条评论
+赞
+评论
+分享
+Joshua Feinglass, Ph.D.
+
+AI Researcher
+
+3 年
+
+Congrats again! Lots of exciting works and insights coming from your collaborations.
+
+赞
+回复
+Nirmalkumar Seshachalam
+
+Digital Solution Architect - AI, Data, Cloud, Digital Experience, MarTech [Certified: Google GenAI Leader]
+
+3 年
+
+We want a talk on this JT. It would be nice to hear from you the principles.
+
+赞
+回复
+Subramanian KL
+
+Application Development Manager- UPS India Technology Center| Driving Strategic Technical Delivery & Program Execution
+
+3 年
+
+Congratulations 🎉🎉👏👏
+
+赞
+回复
+1 次回应
+Saravana Kumar
+
+3 年
+
+Congrats guru
+
+赞
+回复
+1 次回应
+Madhusudan Shekar
+
+AI, CTO, Speaker
+
+3 年
+
+Congrats !
+
+赞
+回复
+1 次回应
+Angela Sheffield
+
+Transforming our Industry and the Government Agencies we Serve | Defense, Artificial Intelligence, and Nuclear Matters Expert | Former Super Model(er)
+
+3 年
+
+Congratulations, Jayaraman! Can’t wait to read. Thanks for sharing and keep up the awesome work!
+
+赞
+回复
+1 次回应
+Sandeep Madireddy
+
+Computer Scientist and AI Researcher at Argonne National Laboratory
+
+3 年
+
+Nice Work. Congra

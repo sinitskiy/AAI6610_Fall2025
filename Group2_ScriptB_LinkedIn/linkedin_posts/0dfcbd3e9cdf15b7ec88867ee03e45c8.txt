@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/ido-galil_neurips-neurips2024-deeplearning-activity-7271831912384499712-fc1Y
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ido Galil的动态
+Ido Galil
+
+Deep Learning Researcher at NVIDIA & PhD Student in Computer Science at the Technion
+
+10 个月
+
+I’m happy to share my latest paper, to be published in #NeurIPS 2024, written in collaboration with my friend and colleague, Shani Goren, and my supervisor, Ran El-Yaniv:
+
+𝗛𝗶𝗲𝗿𝗮𝗿𝗰𝗵𝗶𝗰𝗮𝗹 𝗦𝗲𝗹𝗲𝗰𝘁𝗶𝘃𝗲 𝗖𝗹𝗮𝘀𝘀𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻
+
+https://lnkd.in/eJjBfn-8
+
+
+𝐓𝐋𝐃𝐑: We introduce hierarchical selective classification (HSC), an extension of selective classification that leverages class hierarchies to enable models to reduce the specificity of their predictions when uncertain. We develop novel inference rules that hierarchically adjust predictions based on uncertainty estimates, and propose an algorithm that guarantees a user-defined target accuracy with high probability. HSC improves both selective performance and confidence calibration.
+
+𝐕𝐢𝐝𝐞𝐨 𝐭𝐚𝐥𝐤:
+https://lnkd.in/e5DK4t5s
+
+𝐒𝐮𝐦𝐦𝐚𝐫𝐲:
+
+Deploying deep neural networks in risk-sensitive tasks requires reliable uncertainty estimation mechanisms. Traditional selective classification allows models to abstain from making a prediction when uncertain but has an inherent limitation: it can only choose between making a full prediction or rejecting the sample, potentially discarding valuable partial information.
+
+To address this limitation, we propose hierarchical selective classification (HSC), which leverages the hierarchical structure of class relationships to provide less specific predictions when the model is uncertain. For example, in medical diagnosis, if a model cannot confidently classify a specific type of malignant tumor, it can still inform that the tumor is malignant, which is critical information.
+
+In this paper, we formalize hierarchical risk and coverage, and introduce hierarchical risk-coverage curves. We develop algorithms for HSC, referred to as "inference rules," which hierarchically reduce the specificity of predictions based on uncertainty estimates. We also propose an eff

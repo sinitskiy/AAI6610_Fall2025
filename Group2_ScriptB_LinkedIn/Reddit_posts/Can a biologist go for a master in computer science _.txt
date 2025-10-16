@@ -1,0 +1,13 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/ju944r/can_a_biologist_go_for_a_master_in_computer/
+Title: Can a biologist go for a master in computer science ?
+
+Content:
+ Hello everyone, I am a biologist that founds himself in a very hard dilemma. I have studied a BSc (Completed in 2017) in Biology and after that I found myself trapped in a loop of jobs related with pharmacovigilance that I found totally annoying and boring with no future for building something. This is why in the last 2 years ago I have been looking for doing a master that can open for me more opportunities in industry, I have a big interest in Bioinformatics, data science and machine learning and I have done some courses in programming languages like SQL or Python which I found interesting. So, because of this I have decided to do a master related with Bioinformatics. However, because not all universities offer this I also have come out with the idea of a master in computer science. 
+
+**I know that as a biologist this option will mean some kind of hard time at the beginning but I would like to have advice from people who have found themselves in the same situation** 
+
+Comments:
+- The great thing about coding is that a degree is less important than your coding skills.  Find a good application of coding to biology problems, lab testing, statistical analysis, SAS programming, clinical trials, environmental mapping, gPS mapping, drone flying, drone tree planting, etc etc etc
+- Employers don't care if you have a masters versus a bachelors. A PhD though is a different story.
+- I’m interested in doing something similar after working in a lab for a year. Have you considered a masters in data science and you could do more programming classes too?

@@ -1,0 +1,70 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1k76c0v/step_in_the_right_or_wrong_direction_long_term/
+Title: Step in the right or wrong direction long term?
+
+Content:
+I’m a sophomore double majoring in Data Analytics and Data Engineering with a minor in Computer Science. (It sounds like a lot, but I came in with an associate’s degree from high school, so it’s honestly not a ton)
+
+My end goal is to become a Data Scientist, ideally specializing in time-series forecasting or recommendation systems. I plan to go straight into a Master’s in Data Science after undergrad.
+
+Today, I just got an offer for a Business Analyst Internship. The role focuses heavily on SQL and Power BI, but doesn’t involve any Python, machine learning, or advanced statistics. It’s a great opportunity and I’d be working with a Business Analytics team at a credit union, but I’m a bit torn.
+
+Will having “Business Analyst Intern” on my resume make me look less competitive for future data science internships or full-time roles—especially compared to students who land internships with “Data Scientist” or “Data Science Intern” in the title?
+
+I know I’m only a sophomore, and I don’t want to overthink it, but I also don’t want to unintentionally steer myself toward an analyst-only path.
+
+Any advice or insight would be appreciated!
+
+Comments:
+- I would recommend taking the internship, it will certainly be a positive (or at worst, neutral) on your resume.
+
+It takes 3 things to be a data scientist: (1) *data science* skills - modeling, statistics, ML, all that jazz (2) coding / software dev and data engineering skills (3) soft skills - getting along with your coworkers, working with non-technical stakeholders, etc. An internship that speaks to 3 and some of 2, especially this early on in college, is great.
+- Well, an internship in the current market is worth quite a bit and will put you far ahead of not having one. I'd definitely take it if it is for a moderately competitive company unless you think you can get a better internship with ease. Almost no one is going to be hiring a sophomore for a machine learning internship. That's usually at least junior summer or masters summer at a minimum.
+- Do everything you can to get your hands on live data. I hire DS and I do not care ..like at ALL about some university or pet project...I care a BUNCH about what you were able to do or learn from real business data.
+- Sure a Data Science intern title would sound better, but unless you have an offer lined up a business analyst experience is better than no experience at all. Most DS intern roles are for grad school students anyway.
+- To be honest, as someone who completed a major in Data Theory yearning to be a Data Scientist, I also felt this way when I got my first position as a Data Specialist.
+
+My daily routine then consisted of doing queries and defining code terms. But as I grew, I asked my boss more and more to give me opportunities to do Data Science and Engineering tasks, and eventually I either got him to provide me the objectives, or I pitched him an idea that he said “sure why not”
+
+TLDR:
+Ask your supervisor for the opportunity. If there isn’t, make one and pitch it.
+
+All else fails and you’re bombarded with non data science work, I’d try to apply the experience you got into creating solo projects to showcase in a portfolio.
+
+Good luck!
+- For your masters you really want to focus on getting into the best school possible. Also data science is a relatively new academic field. Meaning there isn't a universal accepted curriculum. This is good and bad.
+
+As for what you want to do with time series. Well you have two traditional options to study either the applied side or the theory side. Do your best to take both but IMHO it should be 70/30 theory/applied. Reason being it's much easier to self learn the applied. While the theory is a lot more difficult for someone to do on their own.
+- Everyone has their own plan and their own takes on how to navigate. My personal take: get any experience you can. First and foremost, you have an idea of what you might like but you don't actually know. You need to gain real world experience to see what the working world is like in all aspects before you have any idea what you might like working on. 
+
+
+An extra piece of advice that you didn't ask for: I would also recommend not going directly to grad school without having a job first. People who go directly to grad school from undergrad tend not to have any grasp about how things actually happen in the work force. They don't understand having a boss, or stake holders who may have different opinions and interests.
+- In this market I would probably jump on it. It's an internship, not a long term commitment, and data-anything is a good foot in the door compared to the struggle of finding a job in the field at all, right now.
+- Bro absolutely get work experience, I would even say delay the masters a few years. Employers care far more that you have data-related experience rather than some specific academic training.
+- Data Scientist here. Eyes on the prize.Though the internship sounds fine, I'd hold out for an internship more centered on data analytics or data science that will move you in the direction of your goal, instead of taking you off-course in another direction.
+- Undergrad and MS data scientists don’t really specialize. If you want to specialize on a single focus then go the PhD route. Most companies don’t want a one trick pony and forecasting/recommendation engines are commodity these days.
+
+The offer sounds good take it. Change your resume to whatever no one is doing background checks for an inter role.
+- As someone who went from data analyst to data scientist to machine learning engineer— take whatever work experience you can get (especially as rising junior) and ask to take on work that interests you in addition to what you’re already doing. When you’re looking for your next job, you’ll likely have 1. A coding assessment and 2. A walkthrough of your technical experiences/projects. Assuming you have the skills to get through the coding assessment, talking about your hands on experiences will really set you apart from the rest of the pool.
+- Definitely masters. And good grades. I don’t agree with this but given the hiring managers usually are highly academic or come from competitive schools they care about grades. Then get an internship. Big 4 was my entry point but and internship during masters doing ML/AI will be sufficient. Good luck!
+- You need professional experience. Turning down the offer because of a job title is reckless. I started out as a business analyst and became a data scientist six years later. You gotta start somewhere and this internship will open up more doors in the future.
+- I’ve definitely been in this situation before, where I had to make a choice and wasn’t sure if it was the "right" one. A couple of years ago, I was offered a role in a data science team at a company I really admired, but it was a huge risk for me. The role was a step down from what I was doing at the time, but I saw the potential to grow and learn a lot more about machine learning, which had been a passion of mine for years. The decision felt like a big gamble, and I really struggled with the idea that I might be making a mistake by taking a step back. But in the long run, it turned out to be one of the best moves I ever made. I ended up gaining skills and connections that have really pushed my career forward, even if the short-term pay wasn’t as good.
+
+It reminded me that sometimes the “right” decision isn’t always the one that looks good at first. I think in data science, it’s especially true because the field evolves so quickly, and a decision that seems risky might actually be the one that pays off in the future. I guess what I’ve learned is that the direction you take might not always be clear at the moment, but if you trust yourself and focus on growth, things usually fall into place. I’ve had to remind myself of that plenty of times in my career, especially when I’m questioning whether I’m heading in the right direction.
+- In a similar boat but I am a senior graduating this year. I majored in Math but took Stats and CS classes along the side. I got into one of the top DS/MSBA programs in the US but debating if I should go. Ultimately unsure if I am a good fit for the role — not the best at coding and struggles to self-learn and self-tackle issues and bugs sometimes.
+- A lot of DS jobs have “building dashboards” as a regular task. I haven’t seen a role where you’ll only be doing TSA or recommendation systems out there yet. Some roles are titled Data Scientist but you’re a dashboard developer, others are titled Data Scientist and you’re performing data engineering tasks, etc. Take the role, gain the experience. What you’ve learned in school doesn’t seem to accurately reflect the role and field as a whole.
+- I work in Supply chain Data science for a tech company -  here are my two cents
+
+Definitely take the internship. One important aspect of data science apart from coding/ storytelling/ stats etc is also Domain knowledge and knowing how to deal with messy real world data.
+
+In your university, you’ll get clean, formatted data sets. It’s not going to be that way in the real world. You’ll have messy incomplete data, people working off excel sheets,  unnecessary processes which they do because they were trained so.  Having the ability to deeply understand a process, make it better and use domain knowledge to derive insights is something no university can teach you.
+
+As a director I work with says - Data is useless. Information/ insight is king.
+
+This internship will definitely help you in that sense.
+
+Also - I am an aerospace engineering major - worked in inventory management and got into the data science team in my company based on my work with them. If I can do it - you definitely can!
+- Absolutely absolutely absolutely. I think an analyst internship is arguably better than a “data science” internship at the undergrad level. Not to mention that you are very fortunate to get an internship in this market.
+- Being a business analyst as an intern isn't going to "type-cast" you. Data science requires analysis so if you are not able to secure a more technical internship, it's still relevant with regards to your goals.
+
+Given you're so early in creating your career, I'd take it and have fun with the extra income you'll have. For someone more experienced, then self-studying may be a more fruitful option. But you're only a sophomore. You have plenty time and another summer for something different.

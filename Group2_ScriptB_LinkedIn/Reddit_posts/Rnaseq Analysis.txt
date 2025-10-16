@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/w9ycrv/rnaseq_analysis/
+Title: Rnaseq Analysis
+
+Content:
+Has anyone done cluster analysis or machine learning on rna-sea from multiple cell lines to identify potentially important genes?
+
+Comments:
+- I've done this in bulk rna seq for cell types and developmental stages. WGCNA does network analysis to call clusters and plot eigengenes. I'd plan some positive controls to make sure your clusters are good though.
+- This one is pretty extensive with multiple different knockouts and growth conditions: [https://www.nature.com/articles/s41467-019-13483-w](https://www.nature.com/articles/s41467-019-13483-w)
+
+All datasets are available for download, too.
+
+&#x200B;
+
+I guess ICA can be considered machine learning, so there we go.
+- Oh I also have knockout data. Would that be helpful  or too much noise?

@@ -1,0 +1,19 @@
+URL: https://www.linkedin.com/posts/heikohotz_llm-hallucinations-are-inevitable-but-manageable-activity-7371468739977879553-E1XP
+Date: 2025-09-24
+Author: Unknown
+
+LLM hallucinations are inevitable - but manageable!
+
+I loved the “Why Language Models Hallucinate” paper. It showed that hallucinations in LLMs (at leeast in the way they are trained nowadays) are inevitable. But it also offers a way to manage them.
+
+It makes a strong case for “answer only when confident,” but didn’t show how to run that in practice. 
+
+So I started a new project that does exactly that: you can set a confidence dial, the model answers only above that bar and says “IDK” otherwise, and you get a clear picture of the trade-off between answering more vs. being right.
+
+Why should you care? Because this turns AI safety into a business dial! 
+
+The chart below (Gemini 2.5 Flash on the full MMLU) shows what happens as you raise the confidence threshold from 0.5 to 0.95: the model answers a bit less often, and when it does answer it’s more reliable. 
+
+This lets teams pick a policy that fits the product: stricter for customer-facing or regulated flows; looser for low-stakes automation. It’s a simple way to cut confident mistakes without flying blind.
+
+Repo link in the comments. Would love feedback and real-world results.

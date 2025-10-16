@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/thom-wolf_what-interesting-benchmarks-on-llm-hallucinations-activity-7102188970062540802-hTKB
+Date: 2025-09-24
+Author: Unknown
+
+What interesting benchmarks on LLM hallucinations exist currently?
+
+I’ll gather the comments in a later post 👇

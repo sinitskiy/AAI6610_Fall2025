@@ -1,0 +1,39 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1j3etuj/favorite_data_science_books_and_authors/
+Title: Favorite Data Science Books and Authors?
+
+Content:
+I enjoy O’Reilly books for data science. I like how they build a topic progressively throughout the chapters. I’m looking for recommendations on great books or authors you’ve found particularly helpful in learning data science, analytics, or machine learning.
+
+What do you like about your recommendation? Do they have a unique way of explaining concepts, great real-world examples, or a hands-on approach?
+
+Comments:
+- Statistical Rethinking by Richard McElreath, always and forever
+- More of a stats guy than an ML guy:
+
+[Simon Wood's GAMs book](https://www.taylorfrancis.com/books/mono/10.1201/9781315370279/generalized-additive-models-simon-wood)
+
+[Gelman & Hill (2007)](https://www.cambridge.org/highereducation/books/data-analysis-using-regression-and-multilevel-hierarchical-models/32A29531C7FD730C3A68951A17C9D983#overview)
+- I feel like anyone who works in Data Science must read Thinking Fast and Slow by Daniel Kahneman, at least to understand how framing data points, analysis' and inferences in different ways can drive different decisions, plus learning the basics of utility theory, where probabilities alone don't necessarily capture people's perceived notions of risk/rewards.
+
+For instance, paraphrasing, telling someone that a surgery has a 95% survival rate results in more people agreeing to the surgery than saying the surgery has a 5% death rate.
+- I think the best book on Machine Learning is ISL: Python. I found O'Reilly books to be more inclined towards the usage of certain concepts while ISL lays the foundation of Statistical Learning. I'll start reading the DL book by Francois Chollet this week. I have the one by Ian Goodfellow on my list too.
+- Introduction to Statistical Learning
+- Murphy's PML. The book really hard for beginners but if you are a mature reader you will understand how much effort he has put in that book.
+- https://www.amazon.de/Designing-Data-Intensive-Applications-Reliable-Maintainable-ebook/dp/B06XPJML5D/
+Second edition is planned for end of the year.
+- Hands-On Machine Learning by Aurelien Geron was one of my favorites so far. It gives a really practical approach and it's quite easy to read imo. Definitely worth a try.
+- RemindMe! 1 day
+- Disenorth: Mathematics for Machine Learning. Really gives you the base to build upon.
+- https://www.manning.com/books/machine-learning-engineering-in-action
+- If you're looking for something lighter, [Data Points](https://search.worldcat.org/title/871319880) by Nathan Yau is a fun exploration of visualization concepts. It's got loads of cool visuals, which makes it more of a coffee table book. But it's worth reading front-to-back. Visualization is one of those invisible media to which we rarely give a second thought. I found it enlightening.
+- Casella & Berger - Statistical Inference
+- ISL,
+Grokking Machine Learning
+- Are there any beginner level books for learning python while also being introduced to data analysis/science? Like super beginner level though I have some experience with General Compsci 101 class ? Do you know of any
+- Not enough love for PRML from Bishop over here.
+I also enjoy Bayesian Data Analysis from Gelman et al.
+- [removed]
+- Data science is not only about stats or machine learning, but data manipulation. I recommend Effective Pandas 2 by Matt Harrison.
+- Can you explain why?
+- I think even non-data people can greatly benefit from reading the first chapter or watching the corresponding lecture. Everyone needs to hear about the "superior geocentric model" discussions to better appreciate what modelling can and cannot do.

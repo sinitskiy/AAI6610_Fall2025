@@ -1,0 +1,110 @@
+URL: https://www.linkedin.com/posts/george-karniadakis-9b499853_neuralnetworks-machinelearning-pinns-activity-7132873613476524032-ZAU2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+George Karniadakis的动态
+George Karniadakis
+
+Charles Pitts Robinson and John Palmer Barstow Professor of Applied Mathematics, Brown University
+
+1 年  已编辑
+
+UQ in PINNS and Neural Operators: This is a critical topic for trustworthy AI in Scientific Machine Learning, but very few works have focused on this, especially for noisy inputs, not just noisy outputs to the network. In this new study https://lnkd.in/esNBZPkD, Zongren Zou and Xuhui Meng develop a new Bayesian framework for UQ for noisy inputs-outputs, and aply it to PINNS, DeepOnet and FNO.
+
+#neuralnetworks #machinelearning #pinns #uncertainty #trustworthyai #operators #pde 
+
+418
+9 条评论
+赞
+评论
+分享
+joseph morlier
+
+Professor in Multidisciplinary Design Optimization, Group leader of Sustainable Aerostructures & Interactions
+
+1 年
+
+Pramudita Satria Palar
+
+赞
+回复
+Geetha Gopakumar Nair
+
+Head , AI / ML Computational Science and Engineering for Energy (CSEE) at Halliburton
+
+1 年
+
+👋 Pradyumna Singh Rathore
+
+赞
+回复
+Nicolas Spogis
+
+🎙️ Founder & CEO @ AI4Tech | 💡 Turning Simulation into Intelligence | 🚀 Driving AI in Engineering
+
+1 年
+
+João Lucas de Sousa Almeida / Alberto Costa Nogueira Junior
+
+赞
+回复
+1 次回应
+Katayoun Eshkofti
+
+Postdoctoral fellow, Physics-Informed Neural Network (PINN) Researcher
+
+1 年
+
+Wow! Another great paper. Thank you for sharing with us. 🙏 
+
+赞
+回复
+2 次回应
+Florian De Vuyst
+
+Professeur des Universités, labo Biomécanique et Bioingénierie. Resp. Mention de Master “Ingénierie des Systèmes Complexes” (ISC). Ancien membre de comité ANR. Expertise de candidatures IUF, expert Hcéres
+
+1 年
+
+Lucas Wicher 
+
+赞
+回复
+1 次回应
+José Morales Escalante, PhD
+
+Assistant Professor, Departments of Mathematics and Physics & Astronomy at The University of Texas at San Antonio
+
+1 年
+
+Isaul Garcia FYI
+
+赞
+回复
+Anirudh Deodhar
+
+Principal Architect R&D, Quantiphi | Digital Twins, Physical AI, OR | Ex - TCS Research
+
+1 年
+
+Rishi Parekh Milad Ramezankhani 
+
+赞
+回复
+Rohan Dekate
+
+PhD Student @Purdue
+
+1 年
+
+Christian Moya Amir

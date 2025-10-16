@@ -1,0 +1,35 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jv5xti/hypersynthetic_data_is_there_a_point_in/
+Title: Hypersynthetic data - is there a point in introducing a new category of synthetic data for vision AI?
+
+Content:
+Hi all!
+
+I recently came across an intriguing article about a new category of synthetic data - hypersynthetic data. I must admit I quite like that idea, but would like to discuss it more within the computer vision community. Are you on board with the idea of hypersynthetic data? Do you resonate with it or is that just a gimmick in your opinion?
+
+Link to the article: [https://www.skyengine.ai/blog/why-hypersynthetic-data-is-the-future-of-vision-ai-and-machine-learning](https://www.skyengine.ai/blog/why-hypersynthetic-data-is-the-future-of-vision-ai-and-machine-learning)
+
+Comments:
+- Sounds like a marketing account. Newly created, first and only post. Anyway this is just a fancy word for anything “generative AI”, sampling new data from a hypersphere latent distribution is probably close to a decade old or more at this point (popularized “recently” with VAEs, GANs etc)
+- The concepts and techniques described as Hypersynthetic Data largely represent what I would consider to be the defining characteristics of a well-constructed synthetic dataset. While there isn’t a universally accepted definition of synthetic data, the methods outlined in the article align closely with the standard practices employed by most reputable vendors in this space.
+
+"Traditional synthetic datasets often struggle to accurately simulate edge cases, rare events, or multimodal sensor inputs...":
+
+If you look at academic literature or the offerings from established vendors, you’ll find that these capabilities are often highlighted as core advantages of synthetic data. Suggesting that "traditional" synthetic data lacks these features implies a definition that may not align with how the term is commonly used in the industry.
+
+Structured Feature-Space Exploration:
+
+This approach is also not new (to their credit, the article doesn’t claim it is). They may have implemented it in a novel or more effective way, but it’s hard to assess that based on the information provided.
+
+Scalable and Adaptive Simulation Workflows:
+
+This is another foundational aspect of synthetic data generation. Most vendors in the space aim for iterative, feedback-driven dataset generation, especially in response to model performance.
+
+Bias Mitigation and Regulatory Compliance:
+
+This part gave me the impression that their interpretation of "traditional" synthetic data might include image compositing or diffusion based approaches, which can indeed carry over biases from training data. However, mnost of the vendors I am aware of uses computer graphics based approach (some of which are augmented with diffusion based methods).
+
+Sky Engine is a reputable company and has been active in the field for quite some time. My impression is that they're trying to coin a new term as a way to distinguish and brand their methodology (which is a reasonable marketing move). The term might resonate with potential customers.
+
+If I were in their shoes, I'd have chosen a term that resembles realness rather than accentuating syntheticness (yes I made it up) as that is often a sticking point when trying to convince potential customers.
+- I wouldn't even call that an article. It's a blog post written by a marketing department.

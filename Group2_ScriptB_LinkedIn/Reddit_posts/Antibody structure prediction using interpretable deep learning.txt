@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/10tx3tj/antibody_structure_prediction_using_interpretable/
+Title: Antibody structure prediction using interpretable deep learning
+
+Content:
+
+
+Comments:
+- **Highlights**
+
+* DeepAb, a deep learning method for antibody structure, is presented
+* Structures from DeepAb are more accurate than alternatives
+* Outputs of DeepAb provide interpretable insights into structure predictions
+* DeepAb predictions should facilitate design of novel antibody therapeutics
+
+**In brief**
+
+Accurate models of antibody structures are critical for the design of novel antibody therapeutics. We present DeepAb, a deep learning method for predicting antibody structure directly from amino acid sequence. When evaluated on benchmarks balanced for structural diversity and therapeutical relevance, DeepAb outperforms alternative methods. Finally, we dissect the interpretable elements of DeepAb to better understand the features contributing to its predictions and demonstrate how DeepAb could be applied to antibody design.

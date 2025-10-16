@@ -1,0 +1,24 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wl6o84/building_a_career_as_an_undergrad_having_a_phd_is/
+Title: Building a career as an undergrad (having a PhD is long ahead)
+
+Content:
+Hey, there!
+
+Look, I am an undergraduate in Biotech Engineering in Mexico, and a couple of years ago I found a passion in programming, especially in genomics and computational biology. And well, I started studying on my own in R (Bioconductor), Python (machine learning) and JavaScript (data visualization).
+
+I have been looking for remote jobs (mainly because I haven't finished my degree here, and I can't postpone it) to start building a career in bioinformatics/computational biology from zero, but all the job positions require a PhD/MSc and it really bumbs me out that I can't find any positions, not even as an intern, to start learning about this field and see if I want to continue with a MSc (maybe even a PhD) later in life.
+
+So, do you guys/girls see possible finding experience this young? Why is that? Have you heard of anyone who "made it"? What is your experience?
+
+Love to hear from you.
+
+Comments:
+- I have seen a couple of remote internships early this year both in Glassdoor and LinkedIn some even at Mexican startups. However, as you say, to find a full job most likely you will require a PhD or a ton of experience (papers, projects, GitHub, etc.).
+
+However, if you want to learn and find if this is a career that fits you and if you are still in your undergrad you can apply to summer stays or as social service at different labs (for example the Centro de Ciencias Genomicas or the Instituto Nacional de Medicina Genómica) probably they will be happy to receive you (even remotely) no matter what you previous experience is. That will give you some experience and that could be a starting point in case you want to push for a Msc. or a PhD.
+- I myself do not know anyone in the field in industry without atleast an MSc. Most people have a PhD but I see more and more job applications that put MSc with 3-4 years of experience on the same level as someone with a PhD. The simple fact is that they can choose from so many people with MSc or PhD that they simply have no reason to take someone with a BSc. Not that the degree necessarily says anything about your degree, but life sciences is unfortunately a field where degrees ofteb reign supreme over actual skills (unlike for example in pure software engineering where degrees do not matter as much).
+- That actually helps a lot, thanks!
+
+Yeah, I actually still have some credits left in curriculum that I can apply social service or thesis, so I guess it should be better to start there and start looking for intern jobs in diferent fields. Kind of like the idea to be honest, its like receiving double experience for the same "time" I have left in college.
+- Didn't heard of those institutes before, though. They'll be added to my list for my social service postulations :D

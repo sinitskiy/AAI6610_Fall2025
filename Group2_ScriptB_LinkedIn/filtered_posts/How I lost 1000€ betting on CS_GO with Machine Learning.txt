@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e2fjrk/how_i_lost_1000_betting_on_csgo_with_machine/
+Title: How I lost 1000€ betting on CS:GO with Machine Learning
+
+Content:
+I wrote two blog posts based on my experience betting on CS:GO in 2019.
+
+The first [post](https://tabacof.github.io/posts/csgo_betting_with_ml_part_1/csgo_betting_with_ml_part_1.html) covers the following topics:
+
+* What is your edge?
+* Financial decision-making with ML
+* One bet: Expected profits and decision rule
+* Multiple bets: The Kelly criterion
+* Probability calibration
+* Winner’s curse
+
+The second [post](https://tabacof.github.io/posts/csgo_betting_with_ml_part_2/csgo_betting_with_ml_part_2.html) covers the following topics:
+
+* CS:GO basics
+* Data scraping
+* Feature engineering
+* TrueSkill
+   * Side note on inferential vs predictive models
+* Dataset
+* Modelling
+* Evaluation
+* Backtesting
+* Why I lost 1000 euros
+
+I hope they can be useful. All the code and dataset are freely available on [Github](https://github.com/tabacof/tabacof.github.io/tree/master/posts). Let me know if you have any feedback!
+
+Comments:
+- Did you have one where you made random predictions, as a control?
+- Machine losing
+- Maybe you should look into arbitrage betting instead...
+- rush B site
+- Great write up. Thanks for sharing.
+
+Why do you think the model accuracy significantly dropped off in the last three weeks? Was there a major change in the game around that time?
+- That’s a pretty impressive project! 
+
+Few years ago (2014 to 2018) I did almost the exactly same thing as you (trueskill, data augumentation, backtesting, machine learning models, Kelly criterion…) and even the result was almost the same (0.7ish auc) but for ATP/WTA Tennis matches.
+
+The final conclusion was that statistics can only do so much to a point where there is no performance increase no matter what you do. 
+
+The natural randomness from the human sports, the fact the the betting platform can do almost the same or even better with live data and that they controls the monetary return, the platform will always have an advantage and the math guarantee that you will loose money in the long run. 
+
+But it was a fun project and taught me a lot and I’m sure that even though you had no monetary return I’m sure you gained a fairly amount of usable knowledge.
+- How good quality was the odds-data? Are you sure everything was mapped correctly? Did you look through the entire odds-dataset to verify it's correctness?
+- Very cool, are you thinking in implementing some of the take aways at the end?
+- I learned enough machine learning to know I have no idea how tf to make stock/gambling predictions with it. Only lost 1,000 dollars and didn't double down.
+- I was at your talk on Thursday, was great fun thanks for attending pydata!
+- I love this
+- [deleted]
+- Also should have other models for debugging like a model of just take the bigger true skill it would help with figuring out the degradation they saw
+- Could easily be done after the fact and be just as valid. Randomly choose a winner with 50/50 odds. Kind of pointless though, we know it’s going to be right 50% of the time without even running it.
+- I didn't simulate that originally, but per your comment I actually modified the code now to do just that. Now, the bets are random and proportional to P\_Odds (implied probably given by the betting odds). Here are the results:
+
+Backtest ROI: -7%  
+Annualized ROI: -29%
+
+Here is the new cumulative profits plot: [https://imgur.com/a/AHfyGHY](https://imgur.com/a/AHfyGHY)
+
+Those results makes sense: The betting odds contain margins which form the bookies' profits. If you bet just based on the odds, you will lose money over time.
+- [removed]
+- "I made a bot to spend money on chasing this lazer pointer."
+
+"How does it make money?"
+
+"Oh. Am I doing this wrong?"
+
+Bot: "Hello!" *crash, bang, glass shattering*
+- There’s a real pathway there but the sports betting apps limit how much you can bet practically to zero if you start winning more than the deemed odds consistently.
+- head pathetic disagreeable oil badge whistle ad hoc smell stocking agonizing
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- The bomb has been planted

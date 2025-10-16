@@ -1,0 +1,43 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1auh3n1/tech_skill_insights/
+Title: Tech Skill Insights
+
+Content:
+This sub has been nice to me so I am back and bring gifts to you. I created an automated tech skills report that updates several times a day. This is a deep yet manageable dive into the U.S. tech job market; the report currently has no analog that I know of.
+
+The nutshell: tech jobs are scraped from Indeed, a transformer-based pipeline extracts skills and classifies the jobs, and Power BI presents the visualizations. 
+
+Notable changes from the report I shared a few months back are:
+
+* Skills have a custom fuzzy match to resolve their canonical form
+* Years of experience is pulled from each span the skill is found within the posting and calculated
+* Pay is extracted and calculated for multiple frequencies (annual, monthly, weekly, etc.)
+* Job titles and skills are embedded using the latest OpenAI model (Large) and then clustered
+* Skill count and pay percentile (what are the top skills for the job and which skills pay the most)
+   * Ordered by highest to lowest in the table
+* Apple is hiring a shit ton of AI/ML (translation: the singularity is *nearer*)
+
+The full report is available at my website [hazon.fyi](https://hazon.fyi)
+
+Some things I want to do next:
+
+* NER: Education and certifications
+   * Easy to do but boring
+* Subcategories: Add subcats to large categories (i.e. Software Engineering > DevOps)
+* Assistant API: Build a resume builder that leverages the OpenAI Assistant API
+* Observable Framework: Build some decent visuals now that I have a website
+
+Please let me know what you think, critique first.
+
+Thanks!  
+
+
+https://preview.redd.it/juvh4x4thhjc1.jpg?width=2270&format=pjpg&auto=webp&s=cb44af7712030b52694c279ccdd87db6d7c9b239
+
+Comments:
+- super cool!
+- Commenting to keep track..
+- Cool but I dunno about some of those compensation numbers. RPA dev is $575k mid?! Nah, we ain’t even paying $120k for someone who kinda does that once in a while. Our vendors definitely aren’t paying that for our contract RPA devs and if they are, they’ll be out of business in a year.
+- Yea some of the postings on indeed are way off. I applied some filtering by setting mid to <800K  to remove one outlier I saw which I assume to be a typo since they removed it entirely. I think I did this for the web report however which is a different report than the mobile version. However, if Netflix starts postings on indeed in the header I’ll need to change this since some of their mid points are close to that number.
+
+Edit: including salary in the header. They include it in the body but I’m not pulling it there since I’d need a new NER model. Regex would work technically but people asked for other currencies and I don’t want to manually match them so transformers for all.

@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/tanmoy-chakraborty-89553324_hallucinationdetection-responsibleai-opensourceai-activity-7344260078973161476-1gUt
+Date: 2025-09-24
+Author: Unknown
+
+🔍 Hallucination hunters, meet 𝐇𝐈𝐃𝐄 — our new method to 𝑺𝒆𝒆𝒌 hallucinations in LLM outputs!
+
+❌ No separate training, no extra model runs, no LLM-as-judge! 
+✅ Just plug-and-play with any open-source LLM.
+
+𝐇𝐈𝐃𝐄 is training-free, single-pass approach measures statistical disconnects in the model’s own representations, 𝘤𝘶𝘵𝘵𝘪𝘯𝘨 𝘥𝘰𝘸𝘯 𝘥𝘦𝘵𝘦𝘤𝘵𝘪𝘰𝘯 𝘭𝘢𝘵𝘦𝘯𝘤𝘺 𝘣𝘺 𝘰𝘷𝘦𝘳 50% 𝘷𝘦𝘳𝘴𝘶𝘴 𝘱𝘰𝘱𝘶𝘭𝘢𝘳 𝘮𝘶𝘭𝘵𝘪-𝘴𝘵𝘦𝘱 𝘮𝘦𝘵𝘩𝘰𝘥𝘴, while maintaining or exceeding their accuracy, especially on long-form responses.
+
+👉 Don’t let the hallucinations HIDE! Check out the preprint: 
+https://lnkd.in/gmyUy35s
+
+Coauthored with Anwoy Chatterjee and Yash Goel.
+
+Laboratory for Computational Social Systems (LCS2)
+Indian Institute of Technology, Delhi
+EE IITD
+
+
+话题标签
+#HallucinationDetection 
+话题标签
+#ResponsibleAI 
+话题标签
+#OpenSourceAI 
+话题标签
+#TrustworthyAI

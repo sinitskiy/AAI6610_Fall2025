@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/yof778/researchers_developed_machine_learningbased/
+Title: Researchers Developed Machine Learning-Based Enzyme Engineering Approach by Integrating a Logistic Regression Model
+
+Content:
+
+
+Comments:

@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/rgrchvs_how-can-you-change-your-llm-model-or-prompt-activity-7191431930465169408-dl04
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Rogério Chaves
+
+Co-Founder @ LangWatch - Agent Simulation Testing and LLMOps
+
+1 年  已编辑
+
+🤔 How can you change your LLM model or prompt if causes such big changes in behaviour? Should you iterate on your LLM app?
+
+Improving LLM apps and adding new features is more challenging than with traditional software due to its probabilistic nature, but it needs to be done, we have to find a way to enable continuous improvements for LLMs.
+
+I shared some thoughts on the AI Chronicles podcast on what I believe that can be done:
+
+…展开
+24
+4 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+I'd say you need to iterate all the time, like that's with all software. Software is not never done right. Never was. And that's why we change it to agile. We're always iterating. But that's the thing, that's the challenge now, because you cannot just change, add a feature or. You know, change something and you run the unit tests and things are still working. You you actually, you cannot even pass manually. Because like you can talk to the bot and then you say something and it works for you, but people will use it in very slightly different ways or in major different ways and it will be completely different. So the challenge now is to iterate. So assuming that you build a proof of concept, you put it out there, you tested with some friends, it's working, then you put it out there in production, you start advertising people like the bot. It is very easy to change something and then it is not good anymore. And then people don't like that this happens even with Open AI, right? They every new version they launch, people start moaning. Oh no, GPT 4 is super lazy. It's not printing or code things that they didn't predict. So there is no way that you can do that with simple manual or unit test. Since it's probabilistic. Then the only solution that we have is also played this game of numbers and having a **** ton of examples. That's what you can do. So if you have if you're tryi

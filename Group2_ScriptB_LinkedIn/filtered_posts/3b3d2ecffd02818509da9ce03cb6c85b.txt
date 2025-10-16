@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/kishan-panaganti-795a6046_orm-aps-informs2024-activity-7253523966693163009-sxW2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Kishan Panaganti的动态
+Kishan Panaganti
+
+AGI (NLP) Senior Researcher at Tencent
+
+11 个月
+
+I am excited to co-chair an insightful session at the 2024 INFORMS Annual Meeting! 
+
+If you are attending on Sunday, consider joining us for 'Strategic and Distributionally Robust Sequential Decision Making' on Oct 20, 2:15 PM - 3:30 PM in Summit 435.
+
+Session Highlights:
+
+This session delves into the sequential decision-making tasks that are robust in the face of environmental uncertainty and the strategic behaviors of agents. The motivation stems from the increasing prevalence of dynamic environments where traditional decision-making models could fail due to their inability to adapt to changing environments or anticipate the strategic actions of other agents. 
+
+Model-Free Robust $\Phi$-Divergence Reinforcement Learning Using Both Offline and Online Data. Kishan Panaganti (Postdoc at Caltech)
+
+Minimax Optimal and Computationally Efficient Algorithms for Distributionally Robust Offline Reinforcement Learning. Prof. Pan Xu (Assistant Professor at Duke)
+
+Wasserstein Distributionally Robust Policy Learning with Continuous Context. Wenhao Yang (Postdoc at Stanford)
+
+Sample-Efficient Robust Multi-Agent Reinforcement Learning in the Face of Environmental Uncertainty. Laixi Shi (Postdoc at Caltech and Co-chair for this session)
+
+Networking Opportunity:
+
+I'm eager to connect with attendees interested in the broad field of decision-making research under the #ORM and #APS umbrella. I am on the job market applying for:
+Tenure-track faculty positions in computer science, electrical and computer engineering, industrial engineering and operations research, and similar engineering and business school departments.
+Research Scientist roles in industrial research groups in the field of general machine learning, focusing on decision-making under uncertainty, game theoretic decision-making, and learning under epistemic and aleatoric uncertainties.
+
+ 
+
+#INFORM

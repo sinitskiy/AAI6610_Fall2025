@@ -1,0 +1,13 @@
+Title: A mechanistic spatiotemporal model for drug resistant infections
+
+Abstract: Effective public health strategies for preventing infectious diseases require a deep understanding of transmission dynamics. However, epidemiological data alone is often insufficient for guiding public health action, as transmission patterns emerge from complex human-environment interactions. Additionally, collecting empirical data is frequently limited by cost and logistical challenges, especially in low-resource settings. Consequently, health policy increasingly relies on inference models that account for spatial and temporal dimensions, confounding factors, and uncertainty.
+
+In this work, we introduce a novel hierarchical mechanistic Bayesian model based on ecological diffusion to improve epidemiological inference for spreading pathogens. This model is specifically designed to reveal underlying spatiotemporal dynamics from empirical data, explicitly accounting for sampling bias and uncertainty. To demonstrate its effectiveness, we apply the model to simulated data of a drug-resistant pathogen and formally compare its performance to state-of-the-art epidemiological regression models.
+
+Our findings show that the model accurately identifies transmission patterns and is particularly effective at pinpointing transmission hotspots and predicting spread pathways--critical capabilities for controlling drug-resistant pathogens. While reliable monitoring remains challenging in low-resource environments, this model addresses demographic sampling bias and spatiotemporal complexities, though concentrated sampling in presumed high-risk areas can sometimes distort transmission insights.
+
+The proposed framework can inform targeted public health interventions in the early stages of resistance emergence, offering valuable guidance for resource-constrained settings.
+
+Date: 2024-11-13
+
+DOI: 10.1101/2022.03.03.482844

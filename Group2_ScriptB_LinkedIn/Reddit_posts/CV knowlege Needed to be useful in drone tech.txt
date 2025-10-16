@@ -1,0 +1,71 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ney4f9/cv_knowlege_needed_to_be_useful_in_drone_tech/
+Title: CV knowlege Needed to be useful in drone tech
+
+Content:
+A friend and I are planning on starting a drone technology company that will use various algorithms mostly for defense purposes and any other applications TBD.   
+I'm gathering a knowledge base of CV algorithms that would be used defense drone tech.   
+Some of the algorithms I'm looking into learning based on Gemini 2.5 recommendation are:  
+**Phase 1: Foundations of Computer Vision & Machine Learning**
+
+* **Module 1: Image Processing Fundamentals**
+   * Image Representation and Manipulation
+   * Filters, Edges, and Gradients
+   * Image Augmentation Techniques
+* **Module 2: Introduction to Neural Networks**
+   * Perceptrons, Backpropagation, and Gradient Descent
+   * Introduction to CNNs
+   * Training and Evaluation Metrics
+* **Module 3: Object Detection I: Classic Methods**
+   * Sliding Window and Integral Images
+   * HOG and SVM
+   * Introduction to R-CNN and its variants
+
+# Phase 2: Advanced Object Detection & Tracking
+
+* **Module 4: Real-Time Object Detection with YOLO**
+   * YOLO Architecture (v3, v4, v5, etc.)
+   * Training Custom YOLO Models
+   * Non-Maximum Suppression and its variants
+* **Module 5: Object Tracking Algorithms**
+   * Simple Online and Realtime Tracking (SORT)
+   * Deep SORT and its enhancements
+   * Kalman Filters for state estimation
+* **Module 6: Multi-Object Tracking (MOT)**
+   * Data Association and Re-Identification
+   * Track Management and Identity Switching
+   * MOT Evaluation Metrics
+
+
+
+# Phase 3: Drone-Specific Applications
+
+
+
+* **Module 7: Drone Detection & Classification**
+   * Training Models on Drone Datasets
+   * Handling Small and Fast-Moving Objects
+   * Challenges with varying altitudes and camera angles
+* **Module 8: Anomaly Detection**
+   * Using Autoencoders and GANs
+   * Statistical Anomaly Detection
+   * Identifying unusual flight paths or behaviors
+* **Module 9: Counter-Drone Technology Integration**
+   * Integrating detection models with a counter-drone system
+   * Real-time system latency and throughput optimization
+   * Edge AI deployment for autonomous systems
+
+What do you think of this? Do I really need to learn all this? Is it worth learning what's under the hood? Or do most CV folks use the python packages and keep the algorithm info as a black box?
+
+
+
+Comments:
+- Opening a drone company with 0 knowledge of the domain smh
+- I mean this in the best way possible, but you shouldn't invest any money into starting a drone-based CV tech company if you had to ask Gemini what the drone-based CV algorithms are, especially if that includes "Foundations of Computer Vision and Machine Learning". Also, you'll need to substantially narrow down the intended application in order to focus on learning the bits that matter.
+- Computer vision engineers develop the algorithm. If you want to be a user, you don't need to know the details under the hood. 
+
+If you want to develop a product with rock solid performance in the real world ; you will have to look at all the details and eventually come up with new ideas.
+- If you're processing the images on the drone, you're going to be constrained on compute resources and on energy usage.  You don't want to use Python.  Maybe if you're using some variant of Python that gets compiled to machine code at build time you could get away with something very simple, but you'll likely have to hire an engineer that can optimize code in a language like C++ or C.
+- What kind of expertise are you and your friend bringing to this venture?  You'll probably want co-founders who have expertise in things like control theory, software engineering, AI, and computer vision.
+- lol Nice chatGPT text you got there bud
+- If they use opencv and numpy they can probably get away with python, it'll be nearly as performant as c++. It also depends on what they slap in the drone. But overall yeah, all roads eventually lead to c++, especially when you start optimizing models.

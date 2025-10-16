@@ -1,0 +1,35 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/11wqh9u/p_make_ai_robust_and_trustworthy_with_capsa/
+Title: [P] Make AI Robust and Trustworthy with CAPSA!
+
+Content:
+Modern AI models show great potential across various applications, but their deployment in everyday life is limited due to a lack of trustworthiness. While accuracy is crucial, AI models must also recognize when they can and cannot be trusted to make decisions, especially in safety-critical systems. To bridge this gap, it’s essential to develop AI models with built-in trust mechanisms for reliable decision-making in real-world scenarios.
+
+Trustworthiness in AI models can be improved by addressing three risk sources: Representation Bias, Epistemic Uncertainty, and Aleatoric Uncertainty.
+
+&#x200B;
+
+* Representation Bias refers to the potential for the model to favor certain groups or types of data over others, leading to inaccuracies in its predictions with under-represented data.
+* Epistemic Uncertainty, also known as Model Uncertainty, describes the uncertainty associated with the model’s ability to make accurate predictions based on the data it has been trained on. Epistemic uncertainty can be improved by training the model longer, or picking a model architecture with higher predictive capacity.
+* Aleatoric Uncertainty, also known as Data Uncertainty, refers to the inherent noise or unpredictability in the data itself. This type of uncertainty can arise due to factors such as measurement errors, labeling errors, or natural variations in the data. This can only be improved by improving the data source, or manually fixing the inherent issues that lie within the dataset.
+
+&#x200B;
+
+To address this issue of AI trust and gain knowledge of the risk metrics mentioned above, we are open-sourcing CAPSA -- a tool that automates the creation of robust and trustworthy neural networks! It is a Python library that utilizes wrappers to make tensorflow/keras models risk-aware. These wrappers work by augmenting a given model to support the risk metric the wrapper provides. The wrapped model gains risk awareness capabilities, outputting risk metrics mentioned above alongside its predictions. Since these wrapped models are simply augmented models, they can be further trained with Keras API.
+
+[How Representation Bias, Epistemic Uncertainty, and Aleatoric Uncertainty looks in regression and classification tasks with 2d and 1d datasets. CAPSA wraps your Keras models to output these risk metrics alongside of your model's prediction.](https://preview.redd.it/qi94awk1qxoa1.png?width=2756&format=png&auto=webp&s=e281df111b41685d0f8d1dad355c282e0f870e0d)
+
+Checkout [CAPSA on Github](https://github.com/themis-ai/capsa) and STAR our repo if you find it cool or helpful for your projects!
+
+We also have a [paper published](https://themisai.io/papers/capsa.pdf) if you'd like to learn more about the details of how some of our wrappers work.
+
+Let us know what other features you would like CAPSA to support and we'll work on adding them as well!
+
+Comments:
+- There's much more to AI safety/trustworthy AI than representation bias and uncertainty.
+
+There's adversarial robustness, trojans, transparency, anomaly detection and calibration (uncertainty), machine ethics, and so on.
+
+Paper on this issues: [Unsolved Problems in ML Safety](https://arxiv.org/abs/2109.13916)
+
+Course about safety: https://course.mlsafety.org

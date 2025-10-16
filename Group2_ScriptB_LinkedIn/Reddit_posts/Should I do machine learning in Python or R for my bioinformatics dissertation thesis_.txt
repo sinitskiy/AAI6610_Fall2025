@@ -1,0 +1,56 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/152edwn/should_i_do_machine_learning_in_python_or_r_for/
+Title: Should I do machine learning in Python or R for my bioinformatics dissertation thesis?
+
+Content:
+It's not a question of what language i feel more confident with, because it's neither. There is more documentation in R about ML for the specific analysis (for gene expression data) but I feel like Python knowledge is a must in the industry.  
+
+Comments:
+- I imagine it would depend on your thesis. Your number 1 priority should be around bioinformatics and whatever makes that easiest to accomplish should be what you choose. Is there a good R library for your topic? Use that. Does your supervisor have Python code ready that you can use? Use that.
+
+All else equal it doesn't really matter, both are capable languages and both have use cases where they are better or worse than the other (also within a field as broad as bioinformatics).
+- Python hands down. Faster, better for deep learning. Sklearn and PyTorch are great
+- If you want to make ML models yourself use python. If you just want to apply something off the shelf made ready for R use that. However imo R is not for ML, and nobody serious uses it for that.
+- Use python with pytorch, you’ll thank yourself later
+- Python in general has better support and is more intuitive to learn. R is more of a language for the statistics niche. If you need to use a package in R, you can always follow the detailed documentations to get what you need as an output, which you can then input into python for ML stuff. Basically you will need to know both.
+- Other than Deep Learning, R and python can do the same things - sklearn -> tidymodels etc (in fact there are more Bayesian libraries in R). But anything image analysis with lots of data is Deep Learning, and python is unmatched. Even a lot of the LLM work will have application in multi modal data soon. 
+
+R does have a "native" implementation of torch now (r code wrapper to the C++ library) and keras ports a lot of Python tensorflow code over nicely..... but you see where I'm going with this. I'd choose python and this comes from someone who much prefers scripting in R and doesn't buy into this "python is so much simpler than R" when in fact you can write the same workflow in R with almost 10% of the lines of code you would in python.
+- I would prefer probably R for end to end GE analysis in an academic setting, there are a lot of very nice established packages out there for all types of expression data (DeSeq2, limma, edgeR, Seurat come to mind) and downstream analysis like enrichment, pathways and general statistics as well as plotting and especially pdf rendering using rmarkdown, is way easier to do in R imo .  Performance-wise it’s not making a huge difference because both R and Python just warp C++ to do any heavy lifting.
+- Are you already familiar with coding?
+
+IMO Python is a great starter language for learning to code. But if you already can code in Java or JavaScript or basically any other language, you can pick up Python. 
+
+R is really useful for data science jobs. You’ll be expected to know both, but I see R specifically called out on jobs that don’t require any other coding.
+
+Honestly, I would look up the kind of jobs you’re hoping to do when you graduate, and see what it says in the listing. Those are the skills that you’ll want to demonstrate.
+- python for ML
+
+R for processing some of your bioinformatics
+- There is a third option: Julia. Give it a try and decide later. I believe it will motivate you to focus on it as it resolves the two languages problem: prototyping and deployment.
+- R has more stats-focused packages and models, also more bio focused tools. Python has great end-to-end machine learning capabilities, including deep learning. Both software ecosystems are huge. You'll likely be able to choose one as your daily driver, but will need familiarity with the other for edge cases.
+
+Personally, I think Python feels more like a programming language, while R is very focused on data analysis. Python has better object oriented programming, for example, while R has niche data types that are useful for statistics (factors...)
+
+Anyways, you should learn whichever language your lab-mates or friends are using.
+- I had 9 months for my dissertation and i switched from python to R (no dl needed, and better libraries for what i needed). I think R is easier for data visualization and retains 90% of the published ibraries in bio. If your works is clean data -> train a model -> validate a model you can choose whatever you want, if your works relies on some specific pipelines you must choose accordingly. 100% python is a cleaner and less esoteric programming language.
+- This is the best answer in the thread. Both are extremely capable. Some have their fortes, but each is very powerful and very widely used. 
+
+If your entire lab's code is in R, don't make it hard for yourself by using Python. If there is a tailor-made package for what you want to do in Python, go with that over building something in R.
+- What’s wrong with R for ML? It has everything and Python is really no better for it outside of DL, which is itself so niche most people will never need it or get to use it.
+
+Hardly anybody is really making their own ML models in applied fields
+- Yeah, I'm doing an internship at a uni lab at the moment, and knowing both in-depth just makes life so much easier.
+- Warp C++ Sulu!
+- There are so many more tools for ML in Python: Pytorch, Keras, Jax, Optuna for hyperparameter tuning, sklearn, etc. Not to mention that it’s better for distributed learning.
+
+Lots of people are making their own models. Especially in bio and especially if you have multimodal data. Check out OpenBioML and you’ll see nothing but new models!
+- People in Pharma are absolutely making their own models
+- The first 3 are all DL. Optuna and distributed learning ok but this is more engineering and scaling really than "pure ML". Distributed learning I believe can be done in SparkR though but its been a while for me. 
+
+OpenBioML looked cool though. The current projects again seem to be more DL. R is fine for everything that isn't DL
+- Most work in pharma in my experience is just doing boring omics differential expression. Who are these people doing cutting edge modeling? Are there few positions for this type of stuff? I see it usually requires PhD these roles and there aren’t many.
+
+I want to get out of the p value crap but that seems to be most of the work.
+
+I myself wanna use more Python, but never get to do an actual use case where its better (like DL custom models).

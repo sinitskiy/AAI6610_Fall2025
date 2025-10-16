@@ -1,0 +1,81 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/s7755/just_got_a_position_working_in_a_lab_as_an/
+Title: Just got a position working in a lab as an undergrad. I sort of need a quick run down on basics need-to-know things. 
+
+Content:
+I'm excited but I feel really intimidated and scared that I'll make a fuck up and ruin someone's work that has cost a lot of time and money. I went in today and met with the lab tech/lab manager and he gave me a run down of what they do and what I will be doing. I was given a stack of papers and told to read them over (if I wanted to) to get a better feel for what they're aiming for (I'm not sure if I can even understand the first page to most of these papers). I feel like all of the chemistry and biology that I've learned (I'm about to finish my freshman year in college) has not done anything to help me be prepared at all. 
+
+I'm wondering if others here can give me a some run downs on basic stuff.
+
+1. If I'm being asked to make a mixture that is 0.5% NaCl in a 100 mM sucrose and 1% agar, what exactly should I be weighing out? Would I first make a 1% agar mixture (1 gram agar + 100 mL water) and then add in the necessary amount of sucrose to make it into 100 mM (3.4 g sucrose + 100 mL of 1% agar) and then weigh out 0.5 g NaCl and add in whatever amount of sucrose/agar to bring it up to 100 mL? All correct?
+
+2. Using pipets. When the pipet tip goes into a solution, it should always be held straight upwards, right? Do you push down on the thing (for lack of a better word; the thing is the suction thingy) and then insert into the solution or do you put your pipet tip into the solution and then push down on the thing? And you should wipe the tip of the pipet on the side of the container containing the solution as you bring it up, right?
+
+3. When one uses an autoclave, how much does time matter? I mean to say, if I accidently autoclave something for 30 minutes when it only needs to be autoclaved for 15, will that do anything necessarily bad? The machine has two different settings, roughly: one for liquids and one that is gravity. The gravity one is usually for solid stuff, right? Like pipet tips? 
+
+Any help would be super appreciated. Anyone have any other advice for a first time undergrad labber?
+
+Comments:
+- If you touch something, put it back where it was.  Also, if the people in your lab have their own benches, please do not take things off of them.  It annoys me to no end when the pipettes I use (they are calibrated VERY well) disappear to the other side of the lab when I need to use them.
+
+If you use the last bit of a solution make sure you either tell someone to order more, or make more yourself (and correctly!).  
+
+Make sure you show up when you say you will.
+
+If you do not understand something, ask a question.  I would rather spend 20 seconds of my time answering your question, than an hour of my time re-making the 10 gels I would use that week because one of the solutions you attempted to make was not correct.
+
+If you make a mistake, tell someone.  More often than not a mistake, if quickly identified, can be corrected.  This is not the case if you finish the experiment, or making the solution, while pretending like it never happened.
+
+With the papers that he gave you, you probably don't know how to read them correctly yet.  Just quickly look over the figures, don't really bother yourself with the words.  Then just jot down some of the names of the proteins or whatever you're working with and maybe research them a bit more.  Also, make sure you check out the "Methods" sections on all of the papers.  This will explain to you all of the protocols the lab does, in moderate detail, and you can look up further protocols online.
+
+You'll want to buy a lab notebook, this can just be one of the <1 dollar ones you get at your bookstore.  In this, just write down everything you've done for the day.  Such as, say you've made a solution, write down the math you've done to calculate the masses and volumes of stuff you've added.  That way, if there is an error, you can go back and see if you did indeed make an issue.
+
+Always try to look for something before you ask someone.
+- your calculation/solution making seems correct.  Just add 0.5g NaCl to 100mL of the 100mM sucrose / 1% agar solution. 
+
+If you ever feel less-than-confident about something, just double check with the tech or grad student near by.  If you're a freshman they won't expect you to know everything, and it's better to ask and get confirmation than screw something up.
+- [deleted]
+- 2. push the plunger down, insert tip of tip into liquid, lift. DO NOT wipe the tip of the pipet on the side.
+3. time matters in the autoclave. longer won't matter, too much longer will break down the plastics over time. So any tubs, reusable plastics, will become brittle over time.  liquids are for liquids, no dry cycle. Gravity is for dry, w/ dry cycle.
+
+A. Don't tick off the Tech!
+B. Don't tick off the Grad Students!
+C. Don't wear shorts, or open sandels in the lab!
+- 2. It makes no real difference if you hold the tip straight up or at an angle unless you are using a pipette aid in which reading the meniscus requires it to be vertical. 
+
+3. Time matters. Use whatever program your lab has used for whatever you are autoclaving. They will recommend which one to use.
+- eat elsewhere
+- 1. To answer question 1, your final solution needs to be 0.5% NaCl, 1% agar and 100mM of sucrose at the same time. So I would make it like this - 3.4g sucrose + 1g agar + 0.5g NaCl + 100ml water. 
+
+
+2. To learn how to use a pipette - http://www.youtube.com/watch?v=uEy_NGDfo_8
+
+3. Time does matter, but most protocols have been modified to use the minimum amount of time. An example I always use is washes for things like antibodies. You can wash slides/blots for as long as you like, but most protocols will give you a set time. Find out from whoever wrote the protocol if time matters. 
+
+Also make sure you know how to balance a centrifuge. So many people make this basic mistake and break centrifuges, wasting time and money.
+
+Write and read everything and anything. 
+
+Don't be afraid to ask anyone a question, no matter how basic you think it is.
+- >Also, make sure you check out the "Methods" sections on all of the papers. This will explain to you all of the protocols the lab does, in moderate detail, and you can look up further protocols online.
+
+I really don't like reading methods sections unless I have specific questions. (And then the Methods section is usually poorly written and unclear).  
+
+As far as reading papers, at your level I mostly stuck to Abstract + Intro + Discussion.  You should try your hardest to understand these sections.  Sit next to a computer and look up definitions of terms you don't understand.  
+
+Once you feel comfortable with those sections, go back and try to read the results section.  When the results reference a Figure, flip to that figure.  Read the figure legends and labels on the figure.  Try to figure out what the data shows.  If you don't understand the technique used to produce the figure, look it up online. (Wikipedia does a great job explaining a lot of common techniques). 
+
+Understanding the results will be the hardest thing for you when starting out.  Figures are crammed full of information, and you probably won't understand the jargon.  It started that way for us all, so don't let it dissuade you.  Keep working hard at reading papers, and eventually it will all fall into place.  Also, if you have a lab mentor (lab manager or grad student you work with most), they might be willing to explain what the figures mean.
+- >you're going to be doing simple stuff like PCR
+
+OP, just because PCR is simple doesn't mean it will always work.  So don't get discouraged by a bad reaction.  Learn to problem solve the reaction conditions with your mentor.
+- You should wipe the tip on the side if you are using a viscous solution. If you are dispensing just a few microliters, the drops stuck to the side of the tip could be a significant percentage of your desired volume leading to significantly inaccurate dispensing.
+- >C. Don't wear shorts, or open sandels in the lab!
+
+Even if you see grad students breaking these rules, don't assume that it is okay for you to do so.  Sandals are a bad idea--if you drop glass, you don't want to get nasty gashes on your feet.  Some labs are more laid back than others and might look the other way if you wear shorts on summer days.  Ask your mentor what the dresscode is before you make the switch.
+- When I pipet I just insert the very tip of the tip, up slowly. there is nothing on the outside to wipe off.  When I put it into the solution, I go up and down a couple times to rinse it out.
+- I'd not be worried about the dress code, I'd be worried about the phenol. We had a student break a 1L bottle of phenol, all over the bench, drawers, her pants, and lab coat. Shoes. Good think she had on lab coat and long pants. It ate the paint off the drawers and etched into the metal. I had a Plastic bottle of Etbr crumble in my hands, 500ml in cesium, all over my coat pants, shoes. 
+It's not the dress code, it's what do you mind getting painted with some nasty stuff.
+- I am able to work and dispense much faster if I stick the tip into the tube, suck up, and then just dab the tip on the side of the tube. Holding each tube so that I can see the level of the liquid and making sure the tip is just in the liquid seems very time consuming and cumbersome.
+- If it's something like 5M NaCl, ok. If it's glycerol? Good luck with that!
+- True, if I am dispensing glycerol I typically use a pipette aid or a 1mL pipette with the tip cut off.

@@ -1,0 +1,29 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1mwchp8/hiring_mle_position_enterprisegrade_llm_solutions/
+Title: [Hiring] MLE Position - Enterprise-Grade LLM Solutions
+
+Content:
+Hey all,  
+  
+I'm the founder of Analytics Depot, and we're looking for a talented Machine Learning Engineer to join our team. We have a premium brand name and are positioned to deliver a product to match. The Home depot of Analytics if you will.  
+  
+We've built a solid platform that combines LLMs, LangChain, and custom ML pipelines to help enterprises actually understand their data. Our stack is modern (FastAPI, Next.js), our approach is practical, and we're focused on delivering real value, not chasing buzzwords.   
+  
+We need someone who knows their way around production ML systems and can help us push our current LLM capabilities further. You'll be working directly with me and our core team on everything from prompt engineering to scaling our document processing pipeline. If you have experience with Python, LangChain, and NLP, and want to build something that actually matters in the enterprise space, let's talk.   
+  
+We offer competitive compensation, equity, and a remote-first environment. DM me if you're interested in learning more about what we're building.  
+
+
+Comments:
+- cool to see a role that’s not just “make chatgpt app #543” but actual production ml with pipelines and scaling  
+anyone jumping in should grill you on how you handle evals guardrails and cost control though that’s where most llm projects bleed out  
+sounds like a solid gig for someone who wants real enterprise exposure
+- Put the TC in the post
+- TC or gtfo
+- This sounds really exciting! 🚀 I’ve been working with Python, NLP, and LangChain recently, and I’d love to learn more about the role and how I could contribute to Analytics Depot. DMing you!
+- Where should i send u my Resume ?
+- Sounds like a great team building a practical and valuable analytics platform, love to see their focus on delivering real value!
+- Hey please check DM.
+- $75k
+- blind is leaking (but i agree w u)
+- DM me.

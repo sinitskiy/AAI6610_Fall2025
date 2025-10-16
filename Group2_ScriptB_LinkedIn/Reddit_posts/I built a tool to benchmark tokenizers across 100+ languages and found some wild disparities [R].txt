@@ -1,0 +1,114 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n0r8b7/i_built_a_tool_to_benchmark_tokenizers_across_100/
+Title: I built a tool to benchmark tokenizers across 100+ languages and found some wild disparities [R]
+
+Content:
+**TL;DR:** Created [tokka-bench](https://tokka-bench.streamlit.app/) to compare tokenizers across languages. Turns out your fine-tune's multilingual performance might suck because of tokenization, not architecture. Also explains why proprietary models (Claude, GPT, Gemini) are so much better at non-English tasks.
+
+**Links:**
+
+* [Live dashboard](https://tokka-bench.streamlit.app/)
+* [Full blog post](https://www.bengubler.com/posts/2025-08-25-tokka-bench-evaluate-tokenizers-multilingual)
+* [GitHub repo](https://github.com/bgub/tokka-bench)
+
+https://preview.redd.it/7i03jela9elf1.png?width=1724&format=png&auto=webp&s=95378457970e6337b147e71d7a8f0ab2dd67cb91
+
+# The Problem Nobody Talks About
+
+I started this as a side quest while pretraining a multilingual model, but tokenization turned out to be way more important than expected. There are two hidden layers creating massive efficiency gaps:
+
+**UTF-8 encoding differences:**
+
+* English: \~1 byte per character
+* Arabic: 2+ bytes per character
+* Chinese: 3+ bytes per character
+
+**Tokenization bias:** Most tokenizers are trained on English-heavy data, so they allocate way more vocabulary to English patterns. These compound into serious problems.
+
+# Why This Affects Performance
+
+**During training:** If you allocate tokens proportionally (10M English, 1M Khmer), the Khmer text has WAY less semantic content because it needs more tokens per word. Plus Khmer tokens end up being character-level instead of semantic units, making concept storage much harder.
+
+**During inference:** Low-resource languages need 2-3x more tokens per sentence:
+
+* Slower throughput (costs more to serve)
+* Context windows fill up faster
+* More chances to mess up during generation
+
+# What I Built
+
+tokka-bench measures four key things:
+
+1. **Efficiency** \- bytes per token (compression quality)
+2. **Coverage** \- unique tokens used (script representation)
+3. **Word splitting** \- how often semantic units get fragmented
+4. **Subword fertility** \- average tokens per semantic unit
+
+# Interesting Findings
+
+You can actually reverse-engineer training data from tokenizer performance:
+
+* Kimi K2: Exceptional Mandarin coverage (obviously Chinese-trained)
+* Gemma 3: Strong Urdu/Hindi performance
+* gpt-oss: Good Arabic/Gujarati coverage
+
+Weirdest finding: Programming languages show almost identical efficiency across all tokenizers. Probably because everyone trains on GitHub with similar language distributions.
+
+# Technical Details
+
+Built on high-quality datasets (FineWeb, FineWeb-2, StarCoder). Samples 2MB per language and calculates per-language metrics. Has some limitations around cross-linguistic comparison due to UTF-8 differences, but great for comparing tokenizers on the same language.
+
+Shoutout to Judit Ács for the original subword fertility metrics and Rust et al's ACL paper that laid the groundwork.
+
+**PS:** if you're from an AI lab and want to contribute your tokenizer's metrics (even if proprietary), please reach out! The community would benefit a lot from understanding how SOTA systems handle this stuff.
+
+*Posted this on LinkedIn/Twitter already but figured* r/MachineLearning *would appreciate the technical details. Happy to answer questions about methodology or findings!*
+
+Comments:
+- Very interesting. Beyond the training population bias this also helps to show how UTF-8 itself is biased toward English.
+
+I've always wanted to build a tokenizer that works on phonemes which are the basic building blocks of language and there is a finite set that covers all spoken languages. Combine it with an encoder that is trained to convert text to phonemic tokens. Very curious how an LLM trained with that would differ to a standard token approach.
+- This is the furthest thing in the world from being a "problem nobody talks about". This is covered in detail in probably nearly a hundred different papers, and anyone training multilingual models is acutely aware of the trade-offs.
+- This is realy interesting... kind strange to see (especially the one for Thai where there is such a immense discrepancy)
+- This is so cool. Tokenization has been on my mind recently. I need to come back and look deeper.
+- Check out byte-based models like:
+
+https://huggingface.co/Aleph-Alpha/tfree-hat-pretrained-7b-base
+
+https://arxiv.org/abs/2412.09871
+
+https://arxiv.org/abs/2506.14761
+- It's cool
+- I don't see sentencepiece tokenizer, do I miss something?  
+https://github.com/google/sentencepiece
+- The problem is that the conversion would be lossy in both directions: a written word doesn't, in general, convert to a unique set of phonemes, nor do a set of phonemes convert to a unique word.
+
+Also, saying there is a finite set of phonemes is actually misleading. Sure, you can *choose* a finite set of discrete phonemes (like IPA does) and map what you hear to them, but it's not going to be clean. In the real world, things are a lot more fluid, with actual phonemes always being relatively analog things, where you can draw a spectrum between any two "canonical" forms, and speakers might produce sounds anywhere between the two (as well as outside those straight lines!), and certainly there are languages/dialects/etc where nuances beyond what the IPA can capture end up mattering in one way or another.
+
+And this isn't a clean one-dimensional spectrum, either. Phonemes have "secondary" properties like length, tone, stress or intonation, each of them very analog in nature, each of them potentially changing arbitrarily over time, possibly at the same time, possibly in time units that are highly non-trivial to quantize, without any regard for making things clean and simple.
+
+I'm not saying an approach in that direction might not possibly lead to better multilingual performance, even with "shoddy" treatment of phonemes. It very well might! All I'm saying is you might be underestimatting the actual complexity of phonemes, in the same way that early (mostly English-speaking) developers underestimated the actual complexity of multilingual text, which led to a series of "universal standards" that turned out to whoops, not be so universal after all. In other words, just a warning to watch out for the potential to pull off a "UTF-8 is so biased, I'll just use phonemes instead, that'll be perfectly unbiased" only to end up with something somehow even *more* biased.
+- You should give it a shot!
+- If you need such an encoder [here is one](https://github.com/bauwenst/TkTkT/blob/d0c0249758061ddb4c9e88116aa6c74fb755dba1/src/tktkt/preparation/mappers.py#L169).
+- What do you think of the blog post and/or toolkit though? I think it's a cool tool for visualization and my blog post goes into much more detail.
+- Fair. Ngl, I had Claude write the first draft of the Reddit post because I was tired after writing the code + blog post. I wouldn't have chosen that phrasing either 😜
+- Glad you like it!
+- Thanks! Let me know if you have any feedback!
+- These are fascinating!
+- Glad you like it!
+- That's a library for training tokenizers, not a specific tokenizer/vocabulary itself.
+
+Unfortunately the word "tokenizer" can sometimes be used to refer to a model's vocabulary, to the algorithm used to split words into the tokens in a given vocabulary, or to the algorithm used for selecting that vocabulary in the first place.
+
+In this post, it means the combination of the first and second in that list.
+- I had similar thoughts. Writing systems differ in information density per unit symbol, which emerges as differing human reading and writing speeds across languages. Further dimensions, as u/nonotan points out, emerge when speaking: length, tone, stress, etc.  
+  
+Correspondingly, the speech rates differ: e.g. Basque is spoken faster at around 8 syllables per second, whereas Vietnamese is spoken slower at about 5 syllables per second. The combined effect results in similar overall information transmission rates per second (roughly 39 bits per second) despite these differences in unit density and speed.
+
+The picture is complicated further by the extent to which different languages rely on context when conveying meaning.
+
+Therefore, comparing phonemes, characters or their tokens is at best an inexact science. Tokens, in their current form are unable to capture all the meaning (information) of a language, and this is a fundamental limitation. That is not to say that there isn't any inherent bias in the current implementations through choice of format and training data.
+
+Thanks for posting this interesting comparison, it's definitely food for thought and it will be interesting so see what comes next.
+- The reason why phonemes would provide a better default alphabet than UTF-8 bytes is that we know there is at least some vague connection between meaning and sound (cfr. kiki/bouba) whereas there is none with bytes. If you have a large byte-based model trained on all languages in the world except one with a separate alphabet, it cannot infer anything about this language. Meanwhile, you at least have a shot at getting lucky with phonemes.
+- I've just looked at the benchmark link so far, and thought it was quite interesting to click around with, although the display of sub-unicode-point bytes could probably have some creative improvement

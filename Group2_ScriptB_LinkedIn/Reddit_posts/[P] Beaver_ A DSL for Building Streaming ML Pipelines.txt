@@ -1,0 +1,29 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n5kl6k/p_beaver_a_dsl_for_building_streaming_ml_pipelines/
+Title: [P] Beaver: A DSL for Building Streaming ML Pipelines
+
+Content:
+Hi guys!
+
+My name is Jason I am an Electrical and Computer Engineering student and for the last year I have been working on my thesis, in which I have developed Beaver – a domain-specific language (DSL) designed to make building machine learning pipelines for streaming data (e.g., Kafka) much simpler and more accessible.
+
+What is Beaver?
+
+* A DSL that lets you define ML pipelines using a clear, declarative syntax (instead of complex Python code)
+* Generates Python code that integrates with the [River](http://riverml.xyz/latest/) library for online ML and supports real-time data streams
+* Includes built-in validation, analysis, and automatic dashboard generation
+
+  
+I'm making this post to ask for some feedback. I’ve prepared a user testing experience with 3 tasks (from basic to advanced) that should take about 30-45 minutes. I’d love to hear your thoughts on usability, clarity, and the overall concept.
+
+* 📖 [Concept overview & docs](http://deepblue597.github.io/beaver-doc/)
+* 📝 [User testing instructions](https://github.com/deepblue597/beaver/blob/user_testing/user_testing.md)
+* 🦫 [Example pipeline file](https://github.com/deepblue597/beaver/blob/user_testing/examples/linear.bvr)
+* 💬 [Feedback form](https://forms.gle/ioLVyvruJ2KCs6wd8)
+
+Repo : [https://github.com/deepblue597/beaver](https://github.com/deepblue597/beaver)  
+It is recommended to use the user\_testing branch for the feedback.   
+  
+Thank you so much for your time <3 
+
+Comments:

@@ -1,0 +1,36 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/171h5c3/internship_in_a_company_halfway_of_phd_program/
+Title: Internship in a company halfway of PhD program
+
+Content:
+I am a PhD student in computational biology in Europe and, while I still have 2 years to go, anxiety about "what to do next" is kicking in.  I honestly cannot complain about how my PhD is going, both in terms of lab/institute environment and publication output (except for the usual cyclic burnouts every 5/6 months before I take some holidays). I do enjoy doing research, maybe I have become a bit more disillusioned than when I started but I still like the job (and I think I am decently good at it). 
+
+Nevertheless, I am starting to hate all the academic machinery that is around it: the insane pressure to publish in fancy journals, the constant competition with your peers, low salaries, and the idea of maybe hitting a tenure position and settling in your forties (if you are lucky).   
+
+
+I have 0 experience in industry but now I am definitely curious about how would it be to do R&D in a company. I saw that many big firms have 3-6 months PhD research internships. Would you think that could give me a reasonable idea of how it would be to work there? How would you approach the topic with your academic advisor (at the end of the day those are 3 months taken from his project)?   
+
+
+Additionally, my master's degree (and my background) is in Computer Science and Machine Learning  
+and I am currently doing some deep learning and a lot of Bayesian inference but of course, all applied to biology, and we do not publish at the usual famous conferences like NIPS or ICML. I thought it would be cool to do the internship in a tech company and learn something cutting edge in the machine learning side, but I do not have my super strong pure machine learning paper. Do you think it is still worth applying? Can I compensate in some way on my CV (maybe with open source contributions)? Otherwise, pharma sounds like a good option, as they do tons of AI/ML projects, or am I just deluded?  
+
+
+Sorry if it sounds super confusing, but I guess I am.
+
+Comments:
+- Honestly, with a masters in CS/ML, you should be able to land a job in the industry even with no prior industry experience. I'm thinking something like a computational biologist or a data scientist role at a pharma? Get your foot in the door and after a couple of years of experience you should be able to find something in tech. Publications don't matter in my experience, but having an active GitHub with one or two passion projects definitely help.
+
+I left academia after my masters because I just didn't enjoy it. I don't regret it at all and I don't think I'm missing out by not having a PhD. (I'm a data scientist in tech, but started as a data scientist at a pharma straight out of a masters).
+- Depending on your institution, applying for PhD internships and long-co-ops should be something that you discuss with your advisor, to check in that: (1) you are still on track to graduate, (2) potential opportunities to weave this into your PhD thesis.
+
+Even if you don't have the background, it may still be worth trying. My impression and experience is that many PhD internships recruit based on "need / fit". E.g. - If your internship project is working on representation learning in single-cell and spatial transcriptomics, where most papers are not necessarily published in NeurIPS, then having those conference papers may not matter. On the other hand, if your internship project is working on causal inference methods for drug discovery, then having causal inference papers within ML conferences would help (but still - having bioinformatics exp is still valuable; these are highly interdisciplinary problems).
+
+Academia can be tough, but so can industry. In many ways, depending on the group you apply for in industry, you may end up on a stellar group with a great manager, or a terribly-organized group with a manager that won't be the best advocate for you (in many ways like choosing your PI in PhD).
+- I am a postdoc and took on a part-time contracting role with a pharma company in the US earlier this year while simultaneously working on my postdoc. It was very hard and I won’t do it again, but i am very glad i did it once. I recommend looking for internship options but just know that in the corporate science world, people do not have time or patience to help you if you can’t figure something out or dont know what you’re talking about. Especially in biotech where companies lose tons of money every hour
+- Why salaries are low in that field? it seems very niche so I guess not a lot of people have the skills - no demand?
+- Would I be able to dm you to chat about this? I’m trying to go down a similar path and am about half way done with my masters any advice would be excellent
+- European academic salaries are lower across the board, there's also a lot less "named professorships" and other incentives, and less of a culture of tech transfer in the EU compared to the more funding/profit driven university models in the USA.
+
+OP, I would consider public sector work as well, as there are a lot of really interesting niches in medical informatics and large scale bioinformatics that are very ML friendly. 
+
+I am concerned that if they are expressing frustration with pressure and competition that they would find a pharmaceutical or other high stakes private sector gig to be worse, since you are trading possibly unreasonable publication demands for possibly unreasonable project deadlines and/or office politicking. If the pay and more rigidly defined work structure cancels that out, then definitely go for it though!

@@ -1,0 +1,51 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1bs43mc/books_on_bioinformatics_with_python/
+Title: Books on bioinformatics with python 
+
+Content:
+I'm looking for a book on applications of machine learning on bioinformatics using python. I found one by it was all math. 
+
+Then there's one called 'deep learning for genomics " but that's for genomics
+
+Are there any books that are on machine learning with python on bioinformatics?
+
+
+
+Comments:
+- So genomics is quite a big chunk of bioinformatics and knowledge you find there can be transfered one way or another to other sequence based problems and probably beyond. 
+
+Are you looking for something specific? Just using machine learning without understanding math or how the methods work is basically using a blackbox. At that point you can just use a generic tool - which is totally fine btw.
+- I'm actually really new to the field. What i eventually need is to be able to figure out a way by which i can detect if there's a propensity for disease by looking at the genome. 
+
+I'm not sure if that's already been done or if there's a better way to do it
+
+Thanks
+- Generally, that's not an application for which you need AI.   There are thousands of genetic tests in use, and there are many ways of identifying de-novo mutations in the genome, and as far as I'm aware, AI would just be adding an unnecessary layer.
+- Then what would be the potential applications of ai in genomics?
+- Dunno.  
+
+Why do you think there is one?
+- Well i don't know enough about genomics to tell if there can be an application but based on the articles and books i can say there definitely is an application
+- Sure - but I’ve been in the field long enough to remember the crapload of articles telling us about how blockchain will revolutionize genomics. I’m still waiting for a real application there too. 
+
+AI is just a statistics model, and the flavour of the day.  People have been using complex statistics in sciences for a while, but there’s no reason to think LLMs will be a useful addition to that.
+- Well, if I understand OP correctly he is not explicitly focusing on LLM's. As someone working primarily in AI+bioinformatics I would definitely argue that there are a lot use cases. Just think about basecallers, variant effect predictors... The list is quite endless. HyenaDNA is quite  impressive. 
+
+ Nevertheless, i personally agree that the focus on AI in the last years was just adding unnecessary complexity to problems which could be/ are solved by classical ML/Stats methods.  DL makes only sense for complex problems and to tackle such, one needs a solid understanding of biology and DL. Applying model x to problem y is not going to bring you anywhere, because it was already done a thousand times. 
+
+
+ And what is your background? Also just having 'great ideas' without the means to realize them is just dreaming - which also is fine by itself, but won't bring you far in research.
+
+Edit: did not see that you defined your goals already
+- Alright
+Can you tell me where can I focus on if not here?
+I'm trying to work in the health space.a startup idea if you will
+
+Drug discovery?
+- Sorry, were you asking me or OP about our background?   I know very well that great ideas are useless without great execution - I am currently on my second biotech startup.  Execution is everything!
+- Bioinformatics is a huge field.  I can’t tell you where you should work, or what areas you’ll enjoy. That ball is in your court. 
+
+Drug discovery + AI is oversaturated, and there’s a lot of indications that it doesn’t work. Given that that’s currently my field - I switched from genomics about 4 years ago - I can tell you that most pharma are really disappointed with AI’s lack of success in drug design.
+- What about pharmacogenomics?
+Can I use AI for precision medicine?
+Does that work?

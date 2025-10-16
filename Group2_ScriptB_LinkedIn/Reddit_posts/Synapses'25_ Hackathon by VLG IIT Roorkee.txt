@@ -1,0 +1,19 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1juklvx/synapses25_hackathon_by_vlg_iit_roorkee/
+Title: Synapses'25: Hackathon by VLG IIT Roorkee
+
+Content:
+Hey everyone, Greetings from the Vision and Language Group, IIT Roorkee! We are excited to announce Synapses, our flagship AI/ML hackathon, organized by VLG IIT Roorkee. This 48-hour hackathon will be held from April 11th to 13th, 2025, and aims to bring together some of the most innovative and enthusiastic minds in Artificial Intelligence and Machine Learning.
+
+Synapses provides a platform for participants to tackle real-world challenges using cutting-edge technologies in computer vision, natural language processing, and deep learning. It is an excellent opportunity to showcase your problem-solving skills, collaborate with like-minded individuals, and build impactful solutions. To make it even more exciting, Synapses features a prize pool worth INR 30,000, making it a rewarding experience in more ways than one.
+
+Event Details:
+
+* Dates: April 11–13, 2025
+* Eligibility: Open to all college students (undergraduate and postgraduate); individual and team (up to 3 members) registrations are allowed.
+* Registration Deadline: 23:59 IST, April 10, 2025
+* Registration Link: [Synapses '25 | Devfolio](https://synapses.devfolio.co/)
+
+We invite you to participate and request that you share this opportunity with peers who may be interested. We are looking forward to enthusiastic participation at Synapses!
+
+Comments:

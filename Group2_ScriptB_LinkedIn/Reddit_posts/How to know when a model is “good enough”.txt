@@ -1,0 +1,67 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1g81alv/how_to_know_when_a_model_is_good_enough/
+Title: How to know when a model is “good enough”
+
+Content:
+I understand how to check against certain metrics in other forms of machine learning like accuracy or how a model predicts something in linear regression. However, for a video analytics/CV project, how would you know when something is good enough? What is a high enough % for mAP50, precision, recall before you stop training a model and develop other areas?
+
+Also, if the object you are trying to detect does not have substantial research done on it, how can I go about doing a “benchmark”?
+
+Comments:
+- Nobody can tell you that.
+
+For me, good enough is when I can convince my management to put it into production. When it no longe makes any embarrassing mistakes.
+- Good enough = meets business expectations versus business prepared benchmark data
+- What about metrics? Put it in your application, get data and measure how is it performing. If it's well enough, keep it
+- When it starts doing indented task.
+- Good enough is when you made a model, ran it against unseen data and you get no errors .
+Sometimes that's 2 or 3 models later or even 7 models .
+But it's not normally the 1st model .
+Right now I'm training a model to learn the age of a person just from their hairline.
+I have 250,000 images, and I'm planning on having 2 million for the final version of the model.
+Models used for production take a long time, it's not some random python tutorial.
+Those are so misleading and make people think training models is easy .
+You'll get there, just take a measured scientific approach for each iteration.
+Always getting better.
+- ”Good enough” depends completely on the use case etc. In the industry you have to define some requirements for your system, or let stakeholders set them. 
+If it’s a school project, is there really a ”good enough” threshold? Isn’t the end product rather some report or similar stating the performance of your model/system together with some discussion of why/how it could be better etc? 
+
+If you have problems finding a benchmark for your specific problem try find some similar that could act as a proxy for your task, or benchmark it against doing the same task manually or with some industry tool. You probably have to get access to or gather some test data anyway.
+- You generally could save the model as you go and then when you get like 3 epochs in a row with no improvement on validation then you would take that best earlier model. 
+
+Alternatively, the upper limit on model performance is 100%, so you could probably safely stop at 100% accuracy on validation data.
+- In a research setting “good enough” is usually better than whatever the previous “best” was.
+
+In a business setting, you need to come up with some metrics that business stakeholders can understand (probably not mAP) and agree upon a minimum viable performance on those metrics.
+
+For personal projects it really depends on the project and what you want to achieve.
+
+To get a benchmark performance, you can train a very common model like FasterRCNN on your dataset.
+- When the next team in the chain accepts it
+- It's more of a "common sense" thing when interpreting your metrics.
+mAP is ok-ish when comparing many models on the same dataset with a single metric, but it doesn't tell you too much about usability, as it's hard to interpret in general and depending on IOU thresholds, "ignoring" false positives etc. There are many issues that arise from that on custom datasets.
+When working on detection, it is a nice thing to report, especially in your school project. But to gauge the performance of your model for your use case it might not be enough.
+I'm working in a company that actually ships detection models on many different custom datasets and more often than not, we have a "custom" metric for each project.
+Usually you want to know about precision and recall at a given confidence threshold (and maybe a fixed IOU threshold for the NMS). But what counts as a TP (true positive), FP (false positive, detection without an object), FN (false negative, missed detections) is the custom part and e.g. the coco metrics reflect that with their ap50/ap75/ap95 metrics using different IOU thresholds.
+But you don't have to use IOU as your matching criteria. Often it's rather important, that the model detects "something" even if it has zero IOU with the object, i.e. for small objects. So you could use GIoU or just the squared distance between the centers to match your results.
+Having evaluated your metrics in this way is the first step. Now you have to interpret the result depending on your use case. Note down what the consequences are for the model to miss an object and vice versa when the model detects objects that are not present. So you know what your minimal requirements for precision and recall should look like. Sometimes it's only important that correct number of objects are detected and you can use an image level metric. 
+Once you're satisfied with the selected metrics it's time for the first live evaluation. It might be rather disappointing to see your model, that performs so well on the test set, miserably fail in a live scenario, but it's a good reminder, that you probably do not have enough data to train AND evaluate your model. 
+Now you enter the "data collection -> annotation -> training -> evaluation -> testing" cycle until your test set metrics reflect the live performance. 
+
+All of the steps above have a lot of nuances and sometimes there are shortcuts, but proper dataset creation and evaluation are the most important areas in your experiment design. 
+If you can control lighting conditions, remove color without losing information etc. -> do it. Make the task as easy as possible before throwing the next SotA model on it. 
+
+There is a lot more to consider when deploying models, but that's another topic.
+- The "good enough" question for computer vision is tricky because it depends so much on your specific use case and deployment context. Unlike accuracy in classification where 95% has clear meaning, mAP scores need context. From what i've been reading about object detection, mAP50 of 0.5-0.7 is often considered decent for many applications, but it really depends on your tolerance for false positives and missed detections. If you're detecting safety violations, you might need much higher recall even if precision suffers. For benchmarking novel objects without existing research, consider creating your own validation approach. manually annotate a diverse test set that represents conditions your model will face. Then establish baseline performance using simpler methods and even basic template matching or traditional CV approaches can give you something to compare against. The business requirements often matter more than the raw metrics. what happens when your model misses an object vs when it flags something incorrectly? That cost analysis can help determine your threshold better than any universal benchmark.
+
+One approach that makes sense is progressive evaluation, start with a minimum viable performance level, deploy in a controlled setting, then iterate based on feedback rather than trying to optimize metrics in isolation.
+- You just have to build/define your metrics and run it against your prod data - see a quick example at the end of this notebook: [https://github.com/pixeltable/pixeltable/blob/main/docs/notebooks/use-cases/object-detection-in-videos.ipynb](https://github.com/pixeltable/pixeltable/blob/main/docs/notebooks/use-cases/object-detection-in-videos.ipynb)
+- I see, that follow up answer makes perfect sense as well.
+- Gotcha on that.
+- Yea I read the metrics after training, just curious if anyone had a good way of determining “good enough”
+- I might have gotten misled by “some python tutorial” so completely agree on that. I’m currently doing this as part of my final year project at a university but I do not have any CV background so this is my first project on CV with a limited timeline, probably cant produce a fully fledged model but I can give them a proof of concept.
+- Interesting model. Curious how well
+It works.
+- I see, thank you for putting it this way. Will look into finding other tools as well.
+- Gotcha on that.
+- Thank you for the suggestion, one of the previous replies was also about benchmarking it against other industry standards. Will look into finding a tool or a few like that.

@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/ivan-d-marroquin_practical-guide-to-applied-conformal-prediction-activity-7155002008935002113-aHPy
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ivan Marroquin, Ph.D.的动态
+Ivan Marroquin, Ph.D.
+
+Professional with experience in machine learning technologies ✨ Regression ✨ Classification ✨ Clustering/Community Detection ✨ Data Mining✨
+
+1 年
+
+Packt invited me to review Valery Manokhin's book on Conformal Prediction. This book is entertaining and gives a helpful introduction to the subject for anyone new to this statistical framework to quantify uncertainty or a reference for more experienced data scientists. 
+
+One of the things that quickly caught my attention in the first chapters was how the author—in a user-friendly manner—introduces and describes the theoretical concepts behind Conformal Prediction. His explanations were simple to follow, allowing newcomers to understand the workflow of the framework quickly. As for those interested in diving deeper into the mathematical concepts, they will find several links to peer-reviewed publications in the book. I appreciate how the author can appeal to diverse audiences by giving readers options on how much detail they can learn about the Conformal Prediction.
+
+Throughout the chapters where the author demonstrates the usability of Conformal Prediction in various Machine Learning scenarios, you will be gladly surprised to see how the author brings forward its advantages compared to other Machine Learning techniques in an understandable way. So you can judge the applicability of Conformal Prediction on your own.
+
+If you are interested in this book, please follow this link: 
+https://lnkd.in/gMtFF24s
+
+
+Practical Guide to Applied Conformal Prediction in Python: Learn and apply the best uncertainty frameworks to your industry applications
+amazon.com
+25
+2 条评论
+赞
+评论
+分享
+Vinishka Kalra
+
+Growth Lead (Software Engineering and Programming)@ Packt | Product Growth Marketing
+
+1 年
+
+Thank you for sharing your insights and helping others discover this book! Ivan Marroquin, Ph.D.
+
+赞
+回复
+2 次回应
+Vinishka Kalra
+
+Growth Lead (Software Engineering and P

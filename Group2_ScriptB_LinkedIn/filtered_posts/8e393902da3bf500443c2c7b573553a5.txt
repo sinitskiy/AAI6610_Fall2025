@@ -1,0 +1,76 @@
+URL: https://www.linkedin.com/posts/tom-narock-70a66b94_building-occupancy-type-classification-and-activity-7295808738148470784-nIgA
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Tom Narock的动态
+Tom Narock
+
+Associate Professor at Goucher College
+
+7 个月
+
+Our work in machine learning for disaster preparedness has been accepted for publication! We are interested in how machine learning can be applied to publicly available datasets to identify critical infrastructure and residential buildings to aid decision-making processes and subsequent recovery efforts.
+
+Environmental Data Science
+
+2,534 位关注者
+
+7 个月
+
+New article!
+
+Building occupancy type classification and uncertainty estimation using machine learning and open data
+
+👉 https://bit.ly/3Qldbek
+
+This research demonstrates the application of machine learning (ML) in predicting a building's occupancy type. By selecting relevant features from open datasets, we can effectively predict building occupancy type and assess various ML techniques. Residential buildings are more prevalent than commercial buildings, which are in turn more common than other building types. The study explore different methods to address this imbalance in classes and illustrates how Bayesian neural networks can aid in quantifying uncertainty. The findings offer insights into leveraging ML methods for building occupancy prediction nationwide in the United States.
+
+By Tom Narock, J. Michael Johnson (Lynker), Justin Singh-Mohudpur & Arash Modaresi Rad 
+
+#MachineLearning #opendata
+
+Building occupancy type classification and uncertainty estimation using machine learning and open data | Environmental Data Science | Cambridge Core
+cambridge.org
+20
+1 条评论
+赞
+评论
+分享
+David Grossman
+
+7 个月
+
+Congratulations!
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+418 位关注者
+
+60 则动态
+查看档案  关注
+探索相关领域
+How Automation Improves Disaster Recovery Strategies
+The Importance of Data in Disaster Risk Management
+How Advanced Models Improve Disaster Preparedness
+How Remote Sensing Improves Disaster Management
+The Role of Machine Learning in Wildfire Prevention
+Recent Developments in Applied AI and Machine Learning
+展开 
+浏览内容分类
+Career
+Productivity
+Fi

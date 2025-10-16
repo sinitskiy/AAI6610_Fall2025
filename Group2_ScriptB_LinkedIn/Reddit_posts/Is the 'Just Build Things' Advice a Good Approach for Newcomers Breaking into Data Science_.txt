@@ -1,0 +1,100 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18fcuqf/is_the_just_build_things_advice_a_good_approach/
+Title: Is the 'Just Build Things' Advice a Good Approach for Newcomers Breaking into Data Science?
+
+Content:
+ 
+
+Many folks in the data science and machine learning world often hear the advice to stop doing endless tutorials and instead, "Build something people actually want to use." While it sounds great in theory, let's get real for a moment. Real-world systems aren't just about DS/ML; they come with a bunch of other stuff like frontend design, backend development, security, privacy, infrastructure, and deployment. Trying to master all of these by yourself is like chasing a unicorn.
+
+So, is this advice setting us up to be jacks of all trades but masters of none? It's a legit concern, especially for newcomers. While it's awesome to build cool things, maybe the advice needs a little tweaking.
+
+Comments:
+- It all depends on what you want to do.  Some Data Scientists are expected to work on an island and be a full stack software engineer.  Some Data Scientists spend their entire career doing pivot tables.  What do you want to do?  Get good at it, and find that job.
+- This advice comes down to these main points in my opinion:
+
+
+- Building things is really the only way to learn. Theory only goes so far and you aren't going to run into realistic issues until you try to solve a real world problem.
+
+
+- it is the easiest way to market yourself, projects go further then any course, of course real work is always on top.
+
+
+- it is also a self filter in my opinion. If you don't have an interest in building and solving problems, why are you pursuing this work? That's kind of the harsh reality. If you don't WANT to "just build things" do you really want to do this work?
+
+
+- Side note building things doesn't necessarily have to be a personal project, you can 1) find a open source project and help on it 2) volunteer to do some work for a non-profit.
+- Just build things, with weird datasets.
+- You can learn about boxing from outside the ring.
+
+But at some point, you gotta get in the ring.
+- This is my interpretation of 'Just Build Things ': 
+
+1. instead of reading/going through tutorials, you should apply your knowledge gain from the tutorial on a different dataset, preferably leading to a workable solution. As a DS, the solution doesn't have to be an app, a simple API, a chart or an output to an Excel spreadsheet will do. 
+
+2. Instead of saying you learn from the so-and-so tutorial, you should show your GitHub.
+- >Real-world systems aren't just about DS/ML; they come with a bunch of other stuff like frontend design, backend development, security, privacy, infrastructure, and deployment.
+
+It seems like you are being dishonest about the work involved and you are trying to make every sound harder than it is.
+
+Front-end design? Security? Privacy? What are you talking about lol, why do you care about security when it comes to building your own projects or working on new problems?
+
+You threw a bunch of buzzwords in to make it sound super complicated and difficult but you're just trying to trick yourself into feeling like it's too hard. Let's break down some of those terms you threw out:
+
+Deployment? That literally just means getting something to run regularly while you can use it. So if you run a batch CRON job that runs a model every day at 2am on your laptop, then boom you have now 'deployed' your project and completed your 'deployment.'
+
+Privacy and security? Stick it in an S3 bucket with a good password and don't share it. Boom, Security and Privacy is covered
+
+Infrastructure? Schedule a web scraping script to run every day at 12AM and your model runs with new data every day at 2AM. You have now completed your end-to-end "infrastructure" for your data pipeline.
+
+Front-end design? Make a spreadsheet format that contains all the predictions needed for your problem, or you can even use matplotlib to produce some graphs and save them if its useful for your usecase. Boom, now your front-end design is good to go!
+
+Back-end development? Trick question because everything we discussed above for your data pipeline & infrastructure was the back-end development! So we are already done and have developed the "back end"
+
+What I'm trying to tell you is that you are focused on buzz words and trying to over complicate the work. THIS is exactly why people recommend that you should just build things and solve problems you care about.
+
+If you had actually tried building things before, you wouldn't be so worried about these buzz words and get caught up in this analysis by paralysis. Just go build some things and try to solve some problems that you have.
+- I think the "just build" sentiment is a bit over-done online. Of course, it's the best way, but you're going to come up against brick walls pretty soon, and I don't mean something like a traceback that can be solved with ChatGPT or StackOverflow.
+
+When you come up against the brick walls, then it's probably a good idea to step back and go through a tutorial, in which sometimes you'll learn things you never would, just building.
+
+Also a good idea is, to keep your learnings, as in things you figured out while building, in something like logseq or Notion, first going into detail, then abstracting. So you can look back in it.
+
+I'm a noob though, with 3 years under my belt as a data analyst but only one year of python and SQL experience. I do the above three things but I don't do it in a smooth workflow. Speed is everything in this business.
+- A new comer here, a problem I have with this kind of advice is that it is hard judge if what you have built is good or enough. I wish I knew some people or github profiles that just built things and got jobs. I come from biology and currently studying a DS masters but i feel like at least need a data science internship to get a good idea. Even that is hard to find without having “built things”. All I know what to do now is to find a data set and go through the steps in the ISL book lol but no idea if that is anywhere near enough. Or how far things go cuz that’s really all my course have gone through so far, apart from some math,stats and sql classes
+- There is the classic example of the photography class offering two grade structures. Volume. Spend the class producing volume in exercise and be graded on your best ten photos. Quality. Spend the class focused on making the best photo possible and be graded on the best one. Run over time what happens is the students who produce volume, also produce the best quality photos by the end of the class. The reason is increase the rate of making mistakes and the lessons learned along the way. The case gets referenced in books like the First 20 Hours: How to Learn Anything, Fast.
+
+Learn a thing and build a practice project with it is a good system for learning. Link it to your professional bios and you have proof-of-skill. You've spent some time practicing xyz you can point to when a job description includes that skill in the duties and responsibilities section.
+
+Can you improve in a sport without practicing?
+- I don't think the right idea for building any skill is "just do things."
+
+I think it's more complete to say "Just do things and then try to learn how to do it better next time." Just like anything, you can develop bad habits and false conclusions when you're teaching yourself DS. You absolutely need to remain aware and educated on how data science works and the methods and models that are best for your use case. This is especially true, I think, for DS because statistics and data analysis is not really intuitive for most people. Our brains really suck at thinking that way for the most part.
+
+I'll draw an analogy to singing. When learning to sing, it's all about practice. Sing for hours and hours and hours. But, you can't "just sing" and get better. You might develop a habit of straining your voice which can lead to nodules in your throat that require surgery to deal with, less you risk never singing again. You have to sing with the intent of singing correctly and diligently monitor yourself for signs of tension and improper technique at the same time.
+
+Most people find this self monitoring difficult and/or uncomfortable to do consistently and accurately. That's why it's typically recommended that they have, at minimum, a mentor to guide their hand and help them see what they need to work on.
+- I don’t think “build something people actually want to use” means what you described in terms of learning. No one has to actually use it so at first there’s no need to worry about security, privacy, infrastructure, and deployment from a learning perspective. If the project turns out really cool / useful, then you could worry about adding those things. 
+
+You’ll have to either find a dataset or build your own of course. And you MIGHT want to build some kind of database to plop that into depending on what you’re going to do with it. For example, it might be helpful to have separate tables for different data sources and then use sql to join/filter them. Or it might be better to do the work upfront and build a single static flat file to work from. 
+
+You’ll probably want some sort of front end type thing to present your results (even if it’s just to yourself). Don’t just focus on the modeling side. Think about how you’d present your results to a stakeholder or the public even if you aren’t going to. In the real world this may be someone else’s job, but I’ve often found holes in my projects getting ready to present results that I may not have found if I just got a cool model and didn’t think about telling someone else about it.
+- Oh this is a great question. I’m in the same boat. I have a masters degree in applied Econ, I’ve taken several Python and data science courses and I’m in the middle of the Andrew Ng’s ML specialization and I can’t find a data science job
+- Trying solve a real problem is the only way find out what you know and don’t know. Start simple, take a small dataset, load it, clean it, do analytics on it, try writing code for different kinds of models. Then branch out, figure how to turn the model into an app, then how to create a data pipeline to feed the models. Do more courses to fill in gaps in your knowledge, rinse and repeat.
+- Since when data scientists are expected to build frontend?
+- yes
+- Yes
+- Was this is question or a rant?
+- There is a middle ground, because building something as close as possible to a real world tool is still a learning project unless you actually want to start a viable business, which is a different game of ball altogether. 
+
+For the purpose of learning you can take shortcuts where you are not expected to bring value.  For instance you can learn to build streamlit data apps.
+- The problem currently in industry is that people are just being trained to use algorithms, if the goal is to solve real problems, understanding maths and research in AI is super important. Otherwise, you will be easily replaceable as the most basic stuff gets automated. Here's an article summarising the things and resources you need to learn to be good in AI: [https://medium.com/aiguys/getting-into-ml-ai-path-to-follow-4f24db594230](https://medium.com/aiguys/getting-into-ml-ai-path-to-follow-4f24db594230)
+- No.
+
+Don't do tutorial either.
+
+Know the basics, finish ESL/ISL. 
+
+Honestly get any data job where you will get real world data. And build few small interesting stuffs around that, eg dashboard which track something or small linear model which shows why variable 1 is more important than variable 2.
+
+I think this is what will set you apart from useless stuff builder and marathon tutorial watchers.

@@ -1,0 +1,67 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/87s7fo/d_building_a_dl_machine_question_about_ram_speed/
+Title: [D] Building a DL machine: question about RAM speed
+
+Content:
+I am building a deep learning machine. I plan to run 4 GTX 1080 TI at max performance (i did research enough to find what is required to make it run at max performance and dissipate the heat, so that's alright).
+
+But now I am wondering if the speed 2400 MHz memory and CL17 makes a noticeable difference instead of using 2667 MHz and CL 16.
+
+I am imagining to store as much data as I can on memory for quick read from the GPUs and restock the memory once its available (like most people do with their DL machine).
+
+-Memory: 128 GB (ECC) CPU: 1900x threadripper
+-Data will be stored in an HDD 7200 rpm. Perhaps this is slow enough that the reduced speed of the ram is negligible.
+
+4 GTXs are expensive and if this makes some noticeable difference, I won't hesitate to pay the extra price for it, but I am just wondering if it really makes a difference or am I just throwing money away for "good specs" that in reality doesn't make a real difference.
+
+The main reason is that I was looking at a RAM with 2667 MHz and had a good price, but it didn't have ECC. I then opted for an ECC RAM, but the price was quite more expensive. However, I managed to find one for a very similar price, just at a slower speed.
+
+If this affects different types of models differently, I am mostly interested in the effects for: CNN and RNN/LSTM.
+
+Expected learning time of the model: 1 day to 1 week (huge uncertainty here, I know, though I appreciate a good oversight over this range).
+
+Thank you very much for the assistance.
+
+
+Haribol!
+
+Comments:
+- Threadripper likes fast RAM because the interconnect between the two CPUs on the die runs at RAM speed. The cost/perf sweet spot is somewhere around 3200MHz. Threadripper can be sensitive when it comes to RAM compatibility, especially when pushing the clock speed up (which you should, because it's so easy to do, even with simple cooling). Samsung B-die is generally considered the most foolproof, esp the CL14 incarnation. Not sure why you would consider ECC for this kind of machine. Wrong tradeoff.
+
+If I were you, I'd trade half of that RAM for the price diff between 4x 1080Tis and 2x Titan V. It will be quieter, cooler, nicer to live with, and more reliable. Also, more RAM modules = slower attainable clock speed, so you are taking a perf hit going from 64->128. You can always add more RAM later if you need it. 
+
+> Data will be stored in an HDD 7200 rpm. Perhaps this is slow enough that the reduced speed of the ram is negligible.
+
+Your mental model is too simple here. Gotta think through the bottlenecks of the actual software systems that you are using and building, and how they are going to hit the various parts of your hardware.
+
+Since you've chosen a fast CPU and are so concerned about RAM volume and speed, I assume that you have some heavy CPU/memory-bound preprocessing steps or something like that to do (I have a workload like that, which is why I've recently gone through the exercise of building a similar machine).
+
+Your deep learning stuff will be GPU-bound. Simple processing of large flat files can bottleneck on a spinning drive, but more complex processing generally hangs up somewhere else, like on the CPU.
+
+I like a 3-tier storage solution for storage:
+
+- Fast NVMe flash for home directories, source code, docker, builds, etc. Basically--stuff that has me literally wasting time sitting waiting for it many times per day. 
+- Large (2-4TB) endurance-optimized SSD for data that I'm working on at the moment + stuff that benefits from random access like running SQL databases. 
+- Spinning drive for "cold" storage of large data sets that I'm not dealing with right now. Possibly off-board on a NAS, or something like that.
+- From my experience (ImageNet-class problems, 4 GPUs):
+
+* RAM speed isn't too important. I've never knowingly had RAM as the bottleneck - it's been GPUs (compute), CPUs (pre-processing), PCIe or disk.
+* Spinning disk drives have a huge negative impact if your dataset doesn't fit into RAM.
+- I have almost the exact same setup, Threadripper 1900x but with half the RAM and 2 1080 tis. Now is not a very good time to buy hardware. If you are not planning on immediately beginning training it will definitely be worth waiting for the generation of hardware to come out. Additionally if you aren't going to be making money immediately off this machine then definitely wait.
+
+That being said if you are still going to go ahead with purchasing ram speed will not have a large effect. It might be worth purchasing nvme storage however.
+- With that rig your bottleneck will probably be the 1080TI's.
+
+I have never heard of any use case where memory speed would matter at all.
+- I have a similar set up. I have a 1TB NVMe for hot working datasets. I use a 256GB NVMe as a caching layer in front of a 3TB spinning drive. I have it caching reads and writes using bcache to the spinning drive. If my working dataset is less than 256gb then I can forget that my data is on a spinning disk and get a big performance boost. Takes a bit to set it up properly though.
+- If I were to use 4x 1080TIs instead of 2x Titan V, as originally planned, I would not have enough PCIe slots for NVMe. Is there something I am missing to understand the dynamics of the PCIe usage, or were your recommendations of using an NVMe based off on if I used Titan V?
+
+Edit: talking about CPU PCIe lane support
+- I agree. Never had an issue with memory speed. I have had issues with amount of memory though. When you run out of RAM bad things happen. That model that you’ve been training just crashes. If prioritise the amount of RAM over speed of RAM. Depending on your dataset it may end up being cached in your file buffers if you have a lot of RAM. And you can often precompute things like image features and even have your decompressed images in RAM depending on dataset size. Amount of free RAM is one of the main things I monitor.
+- I'm not contesting your claim but I find it rather strange that cpus are a bottleneck while ram isn't inspite of being the slowest of the above mentioned hardware components. Any clue why?
+- I was just explaining my preference for handling storage in general. SATA SSDs are fine too.
+- CPU does a lot of computation for that particular piece of data that fits in the cache so RAM speed increase does not increase performance by any noticeable result. Most of the time the money is better spent elsewhere.
+
+It does make a difference in other use cases, especially it can bottleneck your gaming rig since cache utilization is very low.
+- At least for large image tasks the cpus are often used for decompressing images from disk and resizing which are CPU bound.
+- Ah I seem. That makes sense!

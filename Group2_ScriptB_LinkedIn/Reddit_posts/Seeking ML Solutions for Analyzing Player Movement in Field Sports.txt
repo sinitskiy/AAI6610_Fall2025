@@ -1,0 +1,50 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ec880t/seeking_ml_solutions_for_analyzing_player/
+Title: Seeking ML Solutions for Analyzing Player Movement in Field Sports
+
+Content:
+Hi everyone!
+
+I'm working on a project where I have detailed information on player movements in field sports such as Soccer, Rugby, and Field Hockey. The dataset includes second-by-second data on player positions (latitude and longitude), speed, and heart rate.
+
+I’m looking for help with two specific objectives using machine learning:
+
+1. Detecting and Classifying Game Phases: I want to develop a system that can identify and classify different game phases like attacking, defending, counter-attacks, rest periods, etc.
+
+2. Automatically Splitting the Game into Quarters or Halves: Additionally, I need to automatically segment the game into quarters or halves, and determine the exact times these segments occur.
+
+I’d appreciate any suggestions on how to approach these problems. What algorithms or models would be best suited for these tasks? Are there any existing frameworks or tools that could be particularly useful?Thanks for your help!!
+
+Comments:
+- Do you have the position and speed data for the ball/pluck as well?
+- Talked to a phd researcher about this briefly when they were presenting. Seemed a very very cool subset of ml.
+
+Good luck
+- https://www.softwaremusings.dev/Kaggle-Competitions/
+
+The page above hosts some previous kaggle solutions that might have similarities to your problem. Just dropping it here in case that helps.
+- Very interested.  I've played with this before too (Ultimate Frisbee).  
+
+I didn't manage to get anything particularly interesting, but would be up for collaboration on your dataset.
+- Interesting problem. You could try to track players on the field and try figuring out their relative positions. You could annotate different play phases according to the players' positions on the field and then try to train a classifier. The hypothesis would be that according to their position on the field you could classify the game in phases. For example, during defense they are all pretty close to their own goal, whereas during attack they are much closer to the opponents' goal. In a counter-attack phase, both teams are very close to each other in one side of the field, and so on.
+
+No idea whether this works, but that would be my intuitive approach.
+
+I guess you probably can find a lot of material on how to track mice in videos.
+- I'm curious do you need to automatically split the game into Quarters or Halves based on player position? You should be able to just leverage a game clock and do this without any ML, or am I missing something? 
+
+For question 1 I would think of each player as like a piece on a game board. Let's say your data refreshes every second, you could break the data up into 5 second intervals and have the location and directional vector representing each player in that 5 second interval and do a Classification off that
+- wow
+- Interesting
+- Keep trying
+- Hi mate I’m currently trying to get data on rugby matches and would love to know where you got your data from. I’m working on a project to use computer vision to generate this data myself if you’re interested in being involved in anyway.
+- No, just for the individual player and sometimes more team members.
+- It is, the usage of sports data is growing at a huge pace. I'm building a Sports Analytics Platform as a weekend(s) project and I ran into this issue, it's really no option to classify by hand each moment of the game and different people have way too much of a difference in the way they move to hardcode rules, so ML is kind of my only option left. 
+
+I'd be glad to hear what you and the researcher spoke about!
+- I'll definitely check that out, thanks!
+- the reason why I need this to be a ML system is that I'm building a sport analytics app, meaning I expect hundreds (or hopefully more) of activities per day to be uploaded. By having splits by default I give the user what they want with a lot less friction. 
+
+Thanks for your suggestion, I've done something similar to that but I'm still working on it. I've done a series of different splits (5 seconds, 10 seconds, 15 seconds) to the whole match and then I'm applying a clustering algorithm with variables that are the speed, heartrate and how they're moving away or towards the sideline and baseline of the pitch. With that information I'm grouping different types of movements, be them wherever in the pitch. 
+
+I'm still having issues on verifying the results, but they look promising as of now.

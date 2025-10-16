@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/proceedings-mdpi_bayesianoptimization-datacomplexity-activity-7328060224773193729-wIdI
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Proceedings MDPI的动态
+Proceedings MDPI
+
+421 位关注者
+
+4 个月
+
+Vibration Analysis for Wind Turbine Prognosis with an Uncertainty Bayesian-Optimized Lightweight Neural Network 
+
+Full access: https://lnkd.in/gq3q3V_W
+By Tarek Berghout and Mohamed Benbouzid
+From the 11th International Electronic Conference on Sensors and Applications
+Check more Proceedings: https://lnkd.in/dN95sBUn
+
+Data-driven methods have emerged as indispensable tools for wind turbine prognosis, offering unparalleled insights into system health and performance monitoring. However, harnessing the full potential of these methods poses significant challenges, specifically when it comes to data complexity due to harsh conditions. This absolutely necessitates innovative approaches and less computationally intensive methods to simply and effectively navigate the inherent complexities in wind turbine data analysis. Accordingly, this study presents a novel approach to wind turbine state-of-health prognosis for maintenance purposes using a realistic high-speed shaft wind turbine dataset capturing vibration run-to-failure data. Leveraging this dataset, we employ an Uncertainty Bayesian-Optimized Extreme Learning Machine (UBO-ELM) as a lightweight neural network algorithm for predictive modeling. The optimization process focuses on identifying optimal hyperparameters, including neurons, activation functions, and regularization parameters, aiming to minimize uncertainty in predictions and enhance generalization performance. To quantify uncertainty, we employ a confidence interval-based approach, computing multiple confidence interval features to provide a comprehensive numerical evaluation of uncertainty. The neural network’s performance is further evaluated using a diverse set of error metrics, including the coefficient of determination. Despite the massive scale of the dataset, our proposed methodology proves to be simple and computationally efficient, yielding impressive ap

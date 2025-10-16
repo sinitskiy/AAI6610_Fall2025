@@ -1,0 +1,85 @@
+URL: https://www.linkedin.com/posts/selina-la-barbera-91874b56_probabilistic-photonic-computing-with-chaotic-activity-7269257205013528576-JgaK
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Selina La Barbera的动态
+Selina La Barbera
+
+Publishing Director, Journals at EDP Sciences| Ph.D in Electronics and Neuromorphic engineering | #WomenInSTEM
+
+10 个月
+
+#Biological #neuralnetworks excel at solving complex problems and #predicting from noisy data. Similarly, #artificial #neuralnetworks (#ANNs) are powerful tools for pattern recognition but act as "point estimates," lacking the ability to capture uncertainty in #probabilistic #predictions. Modeling ANNs probabilistically via Bayesian inference poses challenges for traditional deterministic computing.
+
+#Chaotic #light combined with #incoherent #photonic #processing enables high-speed probabilistic computation and uncertainty quantification.
+
+Frank Brückerhoff-Plückelmann, Wolfram Pernice, and colleagues utilize a #photonic #probabilistic #architecture to perform image classification and uncertainty prediction through a #Bayesian #neuralnetworks. Their prototype integrates a physical entropy source with a computational architecture, achieving #ultrafast #probabilistic #computation via parallel sampling.
+
+This work was done in collaboration with the University of Münster, Heidelberg University, University of Oxford, and University of Exeter.
+
+Now out 👉 #naturecommunications Nature Portfolio https://lnkd.in/e3vguvWx
+
+Probabilistic photonic computing with chaotic light - Nature Communications
+nature.com
+28
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+5,338 位关注者
+
+242 则动态
+查看档案  关注
+探索相关领域
+How to Integrate Biology and Computational Knowledge
+How to Understand Neural Networks
+Innovations Driving Optical Neural Networks
+How AI Impacts Biological Research
+How to Understand Neural Networks and Llms
+Benefits of Photonics in Artificial Intelligence
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，

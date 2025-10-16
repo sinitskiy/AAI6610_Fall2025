@@ -1,0 +1,109 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fhxr6h/am_i_doing_something_terribly_wrong/
+Title: Am i doing something terribly wrong?
+
+Content:
+Good Morning/Afternoon Everyone,
+
+I have been trying to get a job almost an year in the UK. My resume is shown here and i agree that this was not the first resume of mine, this one is the one i made 2 weeks ago. But i have been struggling to get interviews. I have gotten like 3 interviews in the entire 10 months of applying. Truly now i am starting to question that am i truly doing something wrong ?? I have tried to quantify as much as i can. Trying to show business impact and how profitable they can be. Trying to create relevant projects and even deploying them on cloud. Any sort of responses or tips would be highly appreciated.
+
+Thank you so much for reading this.
+
+[Apologies for the terrible screenshot quality.](https://preview.redd.it/lrhvvxorh4pd1.png?width=585&format=png&auto=webp&s=7c28a8a9df26be1e977ca12e5f50048018cb67db)
+
+
+
+Comments:
+- Im not from the uk, but I do hire for DS roles a lot in my home country (Western Europe). Some things that come to mind:
+
+* these are a LOT of skills. I think it is better to focus on the skills required for a specific job and what you really know. 
+* equipped to lead technical strategies sounds a bit much for 2 YOE
+* achieving 99.9% uptime because you deployed to aws is a bit odd thing to say. 
+
+Overall I think your resume is quite good but I think you could improve by focusing on skills required for a job. And, the market is saturated af right now.
+- I'm a hiring manager in the UK, and reading your CV, I don't believe it. It sounds like someone who has pursued a few projects in order to put some fancy keywords on their CV, but I don't have any faith that you have the expertise that you're claiming. There's no reason you'd be a Gen AI expert etc etc etc. A lot of ML tasks are also solveable with simpler methods, and I don't see any indication from your CV that you have the judgment to develop projects from simple to complex, reaching only for complex methodologies only when you've exhausted simple ones.
+
+You can't get out from under your lack of experience by chasing fads in your CV. Even if it got you to interview, that's where we would drill down to figure out if you actually understood stuff well enough to debug - not just whack a model .fit at some data and see that it runs clean. Anybody can do that, and it's not the skill we are looking for.
+
+Also if you've just been doing random jobs on Fiverr that's probably not that relevant. You're trying too hard to inflate your CV.
+- Off the top of my head:
+1. Did you make money off LSTM models on the SP500? If you didn't, then there's no end product. What exactly is "profit potential"? Is it profit or is it not? This to me shows a lack of understanding on what companies are looking out for. I would also be skeptical about people trying claim the above, because if you are making money... why interview? Could work if you interviewed at a quant fund, but if you could do that on fiverr...
+2. What is "user satisfaction by 30%"? What is the measureable metric here, because user satisfaction is not a measureable metric. If you cannot define the metric, you're no good as a DS
+3. You have projects stating that you reduced costs by X%. What was the initial reference point... Your previous deployment? It sounds really sketchy without context.
+
+And that's just from the first few lines of your CV. You're throwing numbers around and not understanding that those numbers don't really make sense. It shows me you have no product sense.
+
+As for how you can improve, I think you need to figure out what you are applying for, and understand what are the deliverables for that role. Then figure out how your projects showcase the skills required for that. Tailor your CV. Also you need to make use of your college's career services
+- please never post your actual name on reddit etc.
+
+i would advise to delete and resubmit with anonymised cv
+- LSTM for SnP500 "30% profit potential increase" just sounds like you have no idea what you are doing assuming you are applying to quant roles.
+- Unless it’s specifically called bachlores, I’d say you have a “Bachelors degree” or BSc
+- Are you work at Fiverr or doing jobs there.
+- It's not a job so don't list it. Also make your CV 1 or 2 page max. What countries are you applying to
+- Data Scientist jobs typically require at least 3-5 years experience with junior or entry level positions few and between. Even if you spruced up your resume you would find a market that is saturated with eager job seekers and companies with positions filled ffom the initial AI wave that hit years ago. You might have a better shot of taken a "data analyst" position with a company that has data scientist roles and try a vertical move internally as I am trying. Good luck!
+- Honest answer you don't want to hear:
+
+
+It looks like you've been unemployed since November last year, that's a bit of a warning sign.
+
+
+The "skills" looks like a printout from your MSc, these are tools you've seen and are probably not sufficiently advanced in to list as a key skill.
+
+
+Finally DS is seriously crowded, there's nothing there that particularly stands out as "wow I need this person on my team".
+
+
+You may have more luck applying to work in local government doing some kind of analysis work that isn't titled as a Data Scientist.
+- I'm going to real with you. Y You have little experience, which is fine, but you make it worse by overcompensating and overstating. You should remove Fiver because you haven't worked there. Change it to independent consulting. The reality is you are not going to be at the top of anyone list of applicants. Clean up your CV and focus on the business value you delivered in your projects
+- Whole post is wierd. Response is wierd. Are you feeding your response to chatgpt.
+
+I thinj theres too many CVs out there. The fivver is a huge red sign when i first read it. Like someone said, put the company names and with less bs jargon
+- Just want to take a moment to say it's brave to put your CV on here and ask for help. The hiring world is brutal out there but I gotta believe if you want to make it happen you can. I agree with a lot of the advice already said and want to add that you might have some success with grad programs or junior roles aimed for entry level. Worst case, try for some analyst roles to just get you employed and maybe you'll find a place with some mentors or upward mobility towards DS projects. Look for companies with DA and DS positions. Consider industries outside your current scope, maybe you'll be surprised with what you find you enjoy.
+
+And I hate to make any assumptions but I worked in the UK on a visa in a DS role and had similar problems getting responses to my CV because needing a visa just tossed my application into the bin 99.5% of the time. If you're looking for a company that will now or in the future sponsor, look up the csv of companies that can presently sponsor on the ukvi website and cross search job openings with those that can sponsor. 
+
+It's hard out there but you're clearly determined and that's step one. Also reach out to your uni, see if they can help somehow. Best of luck out there!
+
+Edit: Oh! Also, I don't know if others mentioned it or how people generally feel about it but if you haven't worked much, put your education higher up on the resume and explain which skills you learned there. A master's degree is nothing to sniff at!
+- Remove numbers from all the experience and projects instead add words like optimized , reduced load time and so on.
+
+Add the company name if possible instead of Fiverr if possible.
+
+Limit the skills to basic like AWS packages s3 , lambda 
+Add database , limit languages too python , sql and so on 
+
+
+Order should be 
+
+Summary 
+Skills 
+Experience 
+Projects 
+Education 
+
+
+Also try applying without the Fiver experience as well and see how it goes.
+
+Also I would suggest you to get some internship or some work in UK based companies that will boost your profile
+- Most ppl have already noted this: Your CV is extremely overloaded with stuff that I would mostly presume in applicants at my company. Additionally, you do not feature any "real" work experience. Unfortunately, the Fiverr thing is sort of a red flag, particularly the way you frame it. I was confused as well if you were on the company or doing gigs with them. This confusion leaves the interview partner to assume the worst.
+
+I did not really get which roles you are applying to, but it sounds like you are looking for something senior.  
+Your CV isn't bad, but you recently graduated from a non-top-tier university and have no institutionalized work experience. You are only fit for entry-level jobs. Your CV is not designed for these opportunities.   
+I mostly hire ppl straight out of Grad School. While they are typically from Tier 1 schools in the UK and Europe, most also do not have a wracking track record of work experience. I do not expect that from them. But I want to see that they excelled in what they did. While you put on your CV a lot of things, the quality of the projects is at least questionable as we all know what fiverr is.
+
+  
+I think you'd be better of framing your work experience more modestly and emphasizing your academic profile.
+- [deleted]
+- First point: pioneeres lstm architecture for predicting sp500. Already a big red flag
+- Data Scientist here, maybe I can give my perspective.  
+  
+That is a lot of stuff on your CV. That's great, however, some people looking at your CV might get quickly fatigued.   
+  
+I'd keep it simple and focus on the skills that you really shine at (or want to head towards that direction).
+
+Also, try and look at your CV as a recruiter/hiring manager who has a few seconds to make a decision.
+
+Try this and let us know how it goes.
+- Forget about “agentic systems” and focus on the fundamentals. Your transformers GitHub is a start but it’s very basic and shows you lack maturity in software development - the project folder structure is off (you don’t want to import src. - add another folder level src/your_project). You should add tests, add type hints, make the papckage pip installable, add a training script, show how you’d deploy to aws, show in code how you’d load test the model, build an API around it etc.
+- Why don't you look for an internship? It has become kind of a standard in tech nowadays.

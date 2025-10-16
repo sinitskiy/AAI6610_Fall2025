@@ -1,0 +1,45 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1l7ep84/hiring_huntsville_al_hiring_interns_contractors/
+Title: [Hiring] [Huntsville, AL] Hiring interns, contractors, and full-time staff for several roles in machine learning, computer vision, and software engineering
+
+Content:
+* Location: Huntsville, AL
+* Salary: Above median, exceptional benefits
+* Relocation: 50%+ in office
+* Roles: Several roles in machine learning, computer vision, and software engineering
+* Hiring interns, contractors, and permanent full-time staff
+
+I'm an engineer, not a recruiter, but I am hiring for a small engineering firm of 25 people in Huntsville, AL, which is one of the [best places to live and work in the US](https://www.huntsvilleal.gov/huntsville-earns-top-ranking-in-u-s-news-world-report-best-places-to-live/). **We can only hire US citizens**, but do not require a security clearance.
+
+We're an established company (22 years old) that hires conservatively on a "quality over quantity" basis with a long-term outlook. However, there's been an acute increase in intense interest for our work, so we're looking to hire for several roles immediately.
+
+As a research engineering firm, we're often the first to realize emerging technologies. We work on a large, diverse set of very interesting projects, most of which I sadly can't talk about. Our specialty is in optics, especially multispectral polarimetry (cameras capable of measuring polarization of light at many wavelengths), often targeting extreme operating environments. We do not expect you to have optics experience.
+
+It's a fantastic group of really smart people: about half the company has a PhD in physics, though we have no explicit education requirements. We have an excellent benefits package, including very generous paid time off, and the most beautiful corporate campus in the city.
+
+We're looking to broadly expand our capabilities in machine learning and computer vision. We're also looking to hire more conventional software engineers, and other engineering roles still. We have openings available for interns, contractors, and permanent staff.
+
+Because of this, it is difficult for me to specify *exactly* what we're looking for (recall I'm an engineer, not a recruiter!), so I will instead say we put a premium on personality fit and general engineering capability over the minutia of your prior experience.
+
+Strike up a conversation, ask any questions, and send your resume over if you're interested. **I'll be at CVPR in Nashville this week**, so please reach out if you'd like to chat in person.
+
+Comments:
+- Hey, seems pretty cool. I've taken a pause on my master's in EE degree to look for work in the ML/AI space. I first fell in love with ML through computer vision honestly and that's what really got me to pivot from hardware. Could you share more about about the environments you're operating in? My guess is aerospace or mining. Also, given that you're in extreme environments, are you guys doing edge inference?
+- Are you open to hiring full remote people from EU?
+- Apologies for the informal, chaotic nature of this posting, we have recruiters that I'm sure communicate much more effectively, but I thought I'd take initiative to reach out on my own as well. I've met some incredible people on reddit over the years and wanted to open myself to providence, especially as many of us are gathering together in Nashville this week.
+
+We primarily do bespoke contract work for customers in a lot of different domains. We're primarily hiring in hypersonic and aero-optics (again, you're not expected to have any prior knowledge about the application domain), but we've also have sensors hanging off of oil platforms at sea and worse. Not a lot of people do multispectral polarimetry so there are a good few capabilities that we're world-class in. I don't think we have anything in a mine just yet :) but I wouldn't be surprised if it happened.
+
+When you ask if we do edge compute, the answer is "yes" as a lot of projects are embedded one way or another, but also even if the answer was no that could change tomorrow. We have another contract requiring us to design an algorithm for a specific task and design a ridiculous computer cluster to run it at the desired rate. I had to teach myself some differential geometry a couple months ago, then I needed to learn R-INLA (but first I had to figure out what I needed and if it existed at all), and now I'm hacking on a transpiler.
+
+This is why I can't say something like "we need someone with 5 years experience in object detection with tensorflow and a masters degree": we need people who can solve more or less whatever tasks appear using whatever tools they want in a mostly self-supervised way. If you have a pet niche that you're really attached to and don't want to work outside of that... this might not be the best place. But it is a fantastic growth environment, because we understand what it's like to actually work outside your comfort zone but still deliver quality engineering: humbling.
+
+We're still definitely very collaborative, but with the number of projects and the number of people, most people are owning a large percentage of whatever they're working on. Most people work on one or two projects with a percentage of their time, so we can cross pollinate a bit better. I do maybe one hour a week in a formal meeting? But office chats and hallway meetings are very frequent.
+
+Obviously for contractor roles we can be much more specific on scope of work: you'd be hired for a specific time for a specific project. On the ML / CV side of things I'm probably the best person on staff but it's a little outside my specialty and I'm already oversubscribed, so we need to hire someone to do the simplest regression task you've ever seen... which doesn't mean I can tell you much about it, unfortunately. Discretion is often the tradeoff you make with having interesting things to work on.
+
+The work environment is actually chill, about a third of the company are people I know well from my undergrad, I'm just a confirmed workaholic in an environment where work will always exceed available hours. :)
+
+I'm about to leave to travel for CVPR and won't be online for a while. Anyone who is interested should send me a chat, and their resume. I've already arranged to meet up with a couple people there and would love to meet more people to chat.
+- I’m sure they put “relocation” and “We can only hire US citizens” in bold on accident.
+- Are you open to not being a dick?

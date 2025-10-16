@@ -1,0 +1,145 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1jv4xqf/hi_im_a_junior_in_high_school_and_i_am_interested/
+Title: Hi, I’m a junior in high school and I am interested in Data Science. What’s steps should I take to get there (from now to the end of high school)?
+
+Content:
+Picture will be referenced later
+
+For some background all I’ve done related to data science is a harvard edx python course which I took twice (first time I got all the way to the final project then quit, the second time I wasn’t able to finish all the lectures). Though I know I have the skills, I really need a refresher on the language.
+
+Some questions I have are:
+1. Is it good to take certifications in this field. For example, in the computer networking role, the CCNA is an extremely important certification and can easily get you hired for an entry level position. Is there anything similar in data science?
+
+2. Any way to find data science internships? Idk why but it’s kinda hard to find data science internships. I did manage to find a few, but idk which ones the best use of my time. Any help here?
+
+3. In the picture I put a roadmap that i found online. The words are kinda small; to clarify, first they say to learn python, then R, then GIT, then data structures and algorithms, after that they recommend learning SQL, then math/statistics, then data processing and visualization, machine learning, deep learning, and finally big data. Is this a good path to follow? If so how should I approach going down this route? Any resources I can use to start learning?
+
+Any other tips would be greatly appreciated, thank you all for reading I really appreciate it.
+
+Comments:
+- Become comfortable with mathematics and statistics. Most of the math you’ll need for this field is college-level, so develop a deep understanding of what you’re learning today. 
+
+Then, take some business classes in college. Sprinkle in some liberal arts as well. Use your general education classes to broaden your understanding. The best data scientists on my team are good problem-solvers with strong technical skills. Strong technical skills are necessary, but not sufficient.
+- In my personal opinion, data science is a bit of a broad classification. ML & AI, but i operate in a space where i use data to support my main role. 
+
+I personally feel that being a subject matter expert on a topic is better than being good at data. Fortunately, the two go hand in hand as data is an amazing way (the best) to dive into a concept and become an expert,, especially in comparison to other people. On the other hand, i know too many Data scientists who either produce non-relevant output or are poorly utilised because the business has no clue how to use them. 
+
+My advice would be to use your passion for data to learn more about things that fascinate you. At this stage in your life, there is no real point in looking too far ahead. The path will reveal itself.
+- Learn statistics as well as you can in high school. Take some AP science courses to become exposed to scientific methods. Learn and use python in your leisure, eventually evolving into data science projects in the long run.  
+  
+Pursue a statistics-adjacent degree after that. Certifications don't carry any weight unless extremely relevant to a specific job you're pursuing in a data-unrelated capacity (such as software competency certifications, industry-required certs/licensure, etc).  
+  
+Work entry level jobs related to the industry that you'd like to do data science in while you're doing all this. Subject matter knowledge isn't easy to teach, so that's desired.
+- If you're in high school, you want to focus on the fundamentals.
+
+First, and most importantly, math. You want to complete the highest level of calculus your school offers and have a deep understanding of the material. If you have additional bandwidth you can also consider statistics and linear algebra, but not at the expense of calculus.
+
+Second is English. You will need to be able to articulate complex technical topics clearly and succinctly. That comes from strong writing skills and communication in general i.e. public speaking and presenting.
+
+A distant third is programming and software engineering skills. Honestly, I wouldn't focus on this at all until you've mastered the fundamentals.
+
+My 2 cents, good luck.
+- High school is a great time to learn the skills that will make you a good DS. Empathy, listening, how to communicate politely when someone makes a claim not backed by empirical evidence, that sort of thing.
+
+Try reading some classics, get plenty of sleep, make friends, pick out a good school. That sort of thing will get you a lot further. Data scientists need good critical thinking and problem solving skills WAY more than they need specific technical skills. The latter are easy to learn.
+- Data Scientist here with a statistics and economics degree. I took a bunch of AP courses in high school and entered college with 27 hours of credit. I don't recommend working on certifications at this point in your life. That's for people looking for a career switch.
+
+I recommend the following courses in high school:
+
+* Calculus III (you might have to take it from a university. I took a course from my Alma mater in high school)
+* AP Macroeconomics
+* AP Microeconomics
+* AP Statistics
+* AP Computer Science
+
+College:
+
+* Enroll in statistics and computer science dual degree or even statistics and economics with a focus in data science
+* Courses
+   * Discrete Mathematics
+   * Linear Algebra
+   * Statistics courses should focus on data science, programming in Python and Machine Learning
+   * Econometrics (make sure there is some programming)
+   * Computer Science (focus in data science)
+
+Internships
+
+* Apply to internships as early as you can
+* Work on personal projects or even volunteer doing data analysis for non-profit or business
+* Get a part time job in college to earn extra money and work experience
+* Work as a research assistant doing data science work.
+   * In my senior year, I was helping a PhD student with statistical analysis. I got course credit and experience to land my first job after graduation.
+
+Networking
+
+* Network with data science professionals as early as you can to understand the industry
+* Join local data science meetup groups in your area to learn new technologies
+- You're a junior in high school. Enjoy high school, study hard, get into college and choose the cheapest option that is still pretty good (CC for 1-2 years, then transfer in-state is probably the smartest way to go about it). Do computer science, statistics, mathematics, or something along those lines. Try to get an undergrad internship if you can, a good GPA and networking is what you need the most for this.
+
+I have never seen a data science position that was open to a high school grad, and I would say most of the good ones are looking for a Master's or PhD. So grad school is going to be the real thing that matters, and you'll want to make sure you aren't in debt after undergrad, and that you have good grades to get into a good program. GT and UT have great, cheap online MS programs, obviously Berkeley, MIT, Stanford are kind of a level above but much more expensive. If you did the right things in undergrad, you can get grants that will pay for a whole PhD at a lot of these schools (but it is highly competitive, so 3.8+ GPA, 170 quant GRE, and undergrad internships or research is a must). 
+
+For now, like I said, just have fun and focus on learning, not trying to build your resume. And FWIW, specifically regarding that path, learning the math early is gonna be essential for understanding the logic behind coding and data structures, so I wouldn't think too much about that path and just focus on the curriculum offered by your high school and then college.
+- Most data scientists I know have engineering or statistics heavy degrees (STEM, some econ, social science, and similar). Datascience as a field is extremely broad. Figure out what general area you'd want to be in (finance is always training juniors and profitable, but has lower salary caps than tech, tech isn't always profitable and experiences layoffs, but hashigher income usually, healthcare is really stable and sometimes pays well, but you might be working for an insurance company screwing people out of healthcare, and adtech is just kind of soulless, but has lots of exit opportunities).
+
+Once you generally have an idea for which section you want, try to find what degrees will get you there:
+Engineering (ChE and EE have a lot of transferable analytics and modeling in my experience) will open doors in most roles except for a handful of healthcare jobs while various degrees tend to be a bit more field specific. Remember that field specific knowledge is extremely valuable as a datascientist.
+
+You'll probably want at least a masters (eventually). Some roles generally need a PhD, but I really wouldn't say to do one unless you won't hate the 5-7+ years of grinding for it. You can usually start as an analyst and get valuable experience with a BS though. 
+
+For skills, try to take some programming classes along the way and do programming related projects/research/internships. The more you can show competency the easier the search will be. I never formally learned SQL but it was fairly easy to figure out on my own. Make sure you learn a bit about cloud computing (I use Spark a lot which let's Python and SQL kind of blend together).
+
+It'll be a lot of work. Make sure it's really what you want. I'd say a lot of us kind of end up here unintentionally, but we also ended up on this track before DataScience(tm) really was a thing.
+- You're already on a great path just by being interested in data science this early and having taken a Python course—even if you didn’t finish it, that still counts as valuable exposure. IMHO the best thing you can do is focus on building a solid foundation: Python, basic stats. and data visualization with libraries like pandas, matplotlib, and seaborn.... You don't need to rush into R unless you're particularly curious—Python is already widely used in data science. SQL is also super important, so learning how to query databases should be high on your list too.
+
+Internships are harder to come by at the high school level, but try local universities, startups, or even volunteering for research projects.
+
+Btw if I were you I would also be a little cautious about using AI to learn all of this. With that I mean use chatgpt and all of that to ensure you dive deep into topics you're interested but don't make it replace your thinking ability on these topics because that's precisely what you're aiming for here
+
+Keep your curiosity alive and don’t worry if it all feels overwhelming at times—it’s normal. Go one step at a time.
+- Data science has three core components:
+1. You need math and statistics to tell you what’s possible
+2. You need coding, programming or other computing tools to help you implement the vision
+3. You need life experience / subject matter expertise to know what to value, who would care and how to best communicate it to other people.
+
+You’re in school, the first two are readily available (I hope).
+The third comes with time, say yes to everything and then ask what would graphing/predicting this thing look like, what info would I need, what would a regular person be interested in knowing about this and how would it change behaviour.
+- statistics
+- I would advise you to focus on math and stats. You cannot be a good data scientist without this foundation. As far as technology goes, Python and SQL are super important.  Git is a good thing to know, and it's not that hard to learn the basics. I might also advise that you learn to use a command line. Preferably something Unix-based (MacOS, Linux, one of the BSDs if you're adventurous). Bash and ZSH are the two most prevalent shells. Sometimes a 6-line shell script can save you from a 100 lines of Python and do a great job of doing out-of-memory data transformations.
+- It's very common for data science jobs to require a master's and entry level positions are few and far between. I think you're probably best served by learning the fundamentals (math, statistics, computer science, and maybe just enough devops to deploy a small project for free), and letting it simmer for a couple years and try to decide on a short list of fields you want to aim for. 
+
+I can definitely understand the temptation to be a generalist, but aiming to work for state conversation efforts is going to look really different from aiming to work for a retailer which could easily look really different from aiming to work in healthcare or aiming to work in digital forensics, etc.
+
+If your portfolio shows you're really interested in the specific field, it's way more likely to get you short listed than the guy who has  some interesting but unrelated projects.
+- Lots and lots of probability.
+- Imho, first you need to decide if you're ready to study your whole life. Not just sporadically, but every month, even with deep senior knowledge. It's like Alice who needs to run very fast just to stay in place.
+If you're not ready for such sacrifice then just focus on something else. Otherwise you'd end up as another data analyst who couldn't cope with permanent learning after 5 years of struggling.
+- To answer your questions:
+
+1. Typically no. But for a highschooler it could be beneficial for trying to find an internship. A lot of people think they can get "certified" in data science or data analytics and you can't. Its like saying you can get "certified" to be a mathematician, you can. You have to get a college degree or have many years of work experience/published research.
+
+2. Normally getting an internship as a highschooler is rare, at least I don't remember anyone getting on when I was in highschool 15 years ago. I've also never seen a highschool intern anywhere I've worked. Best place to look are the companies career page/indeed/LinkedIn. Most internship postings get published at the start of fall semester so the companies can find who they want for summer. So look around mid August and apply regardless of lack of experience or what year you are in college.
+
+3. I personally believe most online "road to data scientist" programs are scams, even if they are free. They act like this path is linear. It is not. You will learn all these tools (sql, python, math) at the same time. They also act like you can learn everything in a year. You cannot. Think about everything you had to learn to get to doing basic calculus. Now you are stepping into a field where calculus is one of the basic concept you must apply. College will teach you everything you need to know to get started. If you want to get started now learn python and use the open source libraries like scikit-learn as a black box to make ML models.
+- There are many paths to data science because there is a lot of variability in what a data science role looks like... However I would say the bar for becoming a data scientist is getting higher as the field becomes more mature.
+
+Full-stop, I would not waste your money on certifications or boot-camps. There was a time when the data scientist field was first beginning where that was a viable path, but I don't think it is any longer. Industry is typically looking for people with a high degree of expertise and experience for data science roles.
+
+A bachelor's degree in a related field like statistics, data science, or computer science is not even sufficient in many cases. If you're lucky and/or really stand-out from the crowd with published research as well as internships then you may be able to land a data scientist job with a bachelor's alone. I've known one person personally who was able to land a DS job through an internship he did during undergrad.
+
+A master's degree and PhD is a better bet these days. That was the entry-level threshold at both places I've been hired (the only exceptions were very exceptional BS holders but they were very rare).
+
+Undergrad majors you should choose from are statistics, data science (if available), and computer science. Bonus points if you double-major. Ensure you're taking the necessary math and probability/statistics courses that you'd need to prep you for a solid graduate program (linear algebra, Multivariate Calculus, Probability, Statistics, Experimental Design, Regression).
+
+Pick your undergrad program wisely. You want to find a program that has a track record of empowering the undergrad students to complete substantial research projects that lead to conference presentations and journal publications. The program should also have a track record of its students finding relevant internships (the program will often help match students with local internship opportunities).
+- Build something that creates data you are interested in then analyze it and write about it. Any LLM can walk you through those steps.
+- Getting ground in math and data analysis or key. Really help understanding the relations of categories of value types. There are some great resources only as a aspiring data scientist to spark ideas on how to transform some datasets and get insights. Good luck on your journey!
+- I appreciate you planning ahead. 
+Data science is still a new field and it's a very broad one so I would suggest you look at studying computer science, software engineering or statistics over an actual data science program for your primary study, but pick the areas that interest you most in data science (ie, deep learning, forecasting, NLP) for additional courses and training. 
+
+Do not get a BS in Data Science. You'll be competing with the CS majors for some roles and with stats majors for other roles.
+
+There is no certification in data science that is an industry standard, and for that matter there's no standard analyst cert that has the same weight as a CCNA. Your portfolio of projects you've done and how you can speak to it will matter most. I've been in the field a decade, have management experience but I haven't gotten past a phone screen because I don't have that specific experience the company is looking for, ie they want five years of time series or three years of GenAI application development, etc. 
+
+As for internships, most internships I've seen are for grad students or PhD candidates. I've offered one for a high school student when I was at a prior company but that was an example of nepotism (CDO's nephew wanted a job) rather than anything that aligned with company goals. So don't expect an internship before you're two years into college.
+
+If you really want to get experience, volunteer for an agency or small company that has data but no idea what to do with it and start applying what you know with a very specific outcome intended.

@@ -1,0 +1,58 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/lcyckq/p_discussion_about_an_open_source_project_finrl_a/
+Title: [P] Discussion about an Open Source Project: FinRL A Deep Reinforcement Learning Library for Quantitative Finance
+
+Content:
+\[Repost, expecting serious and scientific discussions here, criticism welcome.\]
+
+FinRL is the open source library with a unified framework for pipeline strategy development. In reinforcement learning (or deep RL), an agent learns by continuously interacting with an environment, in a trial-and-error manner, making sequential decisions under uncertainty and achieving a balance between exploration and exploitation. There are several Jupyter notebooks to walk through the steps.
+
+YouTube [**video**](https://www.youtube.com/watch?v=ZSGJjtM-5jA)**.**  Github [**Codes**](https://github.com/AI4Finance-LLC/FinRL-Library). 
+
+&#x200B;
+
+https://preview.redd.it/4saz4ik2vkf61.png?width=7087&format=png&auto=webp&s=e40d6594f3a212f315a3c14d4952515b335b043c
+
+Some good questions to start with:
+
+1. Do they have any metrics of success using this? Seems like a way to get some light gains then lose all your money if you’re not careful.  u/Daking410
+2. Wondering such an open source project may grow into a giant "monster", e.g. many people contribute many functionalties and then become hard to use at all. What would be the lifecycle? u/Capital-Style-6613
+3. A thought here: don't you guys think the profitability (or potential of profitability) of quant trading goes against the idea of open-source? How would you justify the rationale behind making a profitable project public (thereby making it less profitable)? @[Capital-Style-6613](https://www.reddit.com/user/Capital-Style-6613/)
+
+By [Nater5000](https://www.reddit.com/user/Nater5000/):  I think, in a vacuum, you make a good point. But I also think you're oversimplifying the purpose of open-source software such as the one OP posted. Specifically, the software here is backed by research, and for the creators of this research, the visibility and adoption of this software is far more valuable than the potential profit it can make.
+
+On top of this, it should be pointed out that FinRL doesn't offer anything that'd give traders an "edge" in itself. It's a general framework that is pretty standard as far as trading frameworks go. That's not to say that it isn't valuable, but if you're someone looking to incorporate RL into trading, you'd basically end up having to setup something that's going to closely resemble this. Naturally, this "common" thought process among various developers and researchers is bound to emerge as an open-source library.
+
+Basically, this project isn't profitable in itself, and isn't very unique or "interesting" in the sense that other's wouldn't have contemplated building something similar on their own. Now, if these people started releasing specific strategies or trained models, I think your thought would be much more significant.
+
+Comments:
+- 1) Don't actually try to trade any academic paper in the marketplace..... there is a reason trading houses still exist even though anyone can trade via robinhood. 
+
+2) 0 Strategies provided. This is a platform at best (shovels, not digging for gold).
+
+Think of the framework like pandas (which was incubated at AQR). Best case scenario these guys use the traction from the launch to raise a funding round.
+
+All said though, great effort to pull things together for a more academic research env (b/c most quantfin papers have near irreproducible results).
+- The machine learning community favors the open source culture. The Finance fields publish Journal papers (each may take years). Would it have a chance to do open source projects in finance?   Considering the market is believed to be highly unpredictable, even more the blackbox approach fall short in explanations…
+- Haha! This was my first reaction. Imagine if someone did develop an algorithm that could actively trade and earn a positive return/ risk ratio, and they made it open source and everyone started using it! The market would basically go through 1 turn of anarchy lol
+- As long as you don't report hyperparameters and/or training/test windows for instance, knowing that one of those algorithm can trade profitable will mean nothing I guess
+- Absolutely right, even more, the agent is trained very well and performs great in the backtesting, it may lose money in the real trading environment.
+- Efficient market hypothesis definitely says it shouldn't be possible. Only by using insider information from the exchange would you really be able to get truly free money imo. Doesn't mean a bot can't get lucky though.
+- EMH has proven to be not real from empirical evidence. Think about the dimension of the hedge fund industry. Would it be possible if EMH were totally true?
+- Well I’m definitely not an insider at Goldman Sachs or Berkshire Hathways, so I can’t speak for how exactly the steady funds keep winning but it all probably comes down to information, which they have the capital to pursue to its fullest extent. That’s the core of EMH, which is why we also fundamentally rely on profit incentive to reward surplus creation for people (IE capitalism). So.. capitalism as a general paradigm kind of rests on efficient markets existing. 
+
+People trading after hedge fund market movers have already adjusted their positions are just getting their scraps imo. That’s the answer to the rebuttal that “EMH believers don’t pick up $20 laying on the floor, because they believe if it were real someone would have picked it up already”. 
+
+In your paradigm, how does EMH fit within the general theory of capitalism and within macro (market moving)/ micro(theory for independent trading)finance?
+- Sorry for late replying. I don’t completely agree with you view of EMH and capitalism. As far as I understand, EMH at its strong formalization assumes that prices fully reflect available information, which I don’t think is true at all. This because there are asymmetries of information among market participants (as you stated, hedge funds have more money to collect relevant info that a retail investor doesn’t have commonly). Market is therefore permeated by irrational behaviors that smart people are trying to exploit. If instead all info would be available to everyone through prices, this would not be possible. That’s what I meant before, but it is possible that we are talking about different interpretation of the same concept (availability of information).
+- Yeah I think we both agree on the facts here, the way we convey effects is a bit different though. 
+
+We agree-
+
+1- some people have better information than others
+
+2- irrational behaviors happen
+
+I think it’s also worth noting sometimes the market is just truly unpredictable and enters pure chaos. This idea is explored in more depth in the book “A random walk down Wall Street”. 
+
+Prices can be irrational and sometimes even rationally chaotic, but efficient markets will *trend* towards prices reflecting value as perceived by society. If anyone disagrees with this, they’re simply not a capitalist in general, forget EMH.

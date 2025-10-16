@@ -1,0 +1,20 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/15rnnt5/d_is_it_possible_to_also_quantify_epistemic/
+Title: [D] Is it possible to also quantify "epistemic uncertainty" for denoising diffusion probabilistic models?
+
+Content:
+I'm currently applying DDPM/score-based generative model to my dataset, one problem I'm trying to solve is the very limited training size, so I wonder if there's any work that could also quantify the epistemic uncertainty for these kinds of generative models.
+
+For example, if the data come from a mixture of Gaussian, but I only get one sample from the distribution, then after DDPM training, the sample generated from the model would be exactly the same as the training point.
+
+Is it possible to assign a 'prior distribution' like a Gaussian distribution for the underlying distribution, so that if the training set is small, then the trained DDPM would produce samples from the prior, but with more training data seen by the DDPM, the model could produce samples from the true underlying distribution?
+
+Comments:
+- Sounds a lot like Variational Diffusion Models: [https://github.com/google-research/vdm](https://github.com/google-research/vdm)
+
+Variational inference as-is doesn't discern between epistemic and aleatory uncertainty though. You could try fiddling with the gaussian kernels of a variational model, but since diffusion models are usually deep models, doing so in a meaningful way would be highly non-trivial. Maybe there's more hope in using domain-tailored parametric models (or at least not DNNs).
+- Denoising functions a little differently from the scientific method. Denoising edits many variables whereas the scientific method isolates one variable. The scientific method tests the accuracy of a world model, whereas probabilistic diffusion treats the inputs as the ground truth. Intuitively, I would check whether the inputs match fittings in the latent space, and select the closest or those fittings which pass Top P (good luck finding a tokenizer for hulls in the latent space), and then denoise separately with respect to each variable, to isolate each variable of the denoising isomorphism from Top P fittings (again, no tokenizer for this) to the inputs, and interpolate the probability of each variable-specific isomorphism to evaluate whether the prompt matches the fittings. Then repeat for the isomorphism from the priors to the best matched fitting, to check whether the best interpretation matches the ground truths. Seems like a difficult task, when you could just outsource epistemics to government-owned alignment teams.
+- I don't think that is true for VI. The posterior over the parameters is exactly what describes epistemic uncertainty --- as you see more data, in principle your uncertainty over the parameters should decrease under the assumption that there is one true set of parameters that describe the data-generating process.
+
+Aleatoric uncertainty can come from the likelihood model itself `p(x | \theta)`, or `p(y | x, \theta)` depending on context.
+- Nah, parameter posteriors are just posteriors. Your interpretation assumes VI is using those for regularization only, but in generative inference they are often used for sampling different and equally valid outcomes for the same latents.

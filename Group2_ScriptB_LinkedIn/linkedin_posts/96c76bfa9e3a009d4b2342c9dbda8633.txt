@@ -1,0 +1,70 @@
+URL: https://www.linkedin.com/posts/alejandro-frangi_personalized-uncertainty-quantification-in-activity-7320886325920894976-L33v
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Prof Alejandro Frangi FREng的动态
+Prof Alejandro Frangi FREng
+
+Bicentenary Turing Chair in Computational Medicine | UK CEiRSI Executive Director @ The University of Manchester
+
+5 个月  已编辑
+
+🔍 Exploring the Future of AI with Personalised Uncertainty Quantification! 🔍
+
+🌟 Machine Intelligence has published a groundbreaking paper on Personalised Uncertainty Quantification (PUQ) in artificial intelligence. This paper tackles the crucial need for AI models to make individualised assessments of uncertainty, especially in high-stakes fields like healthcare, defence, and finance. 🏥🔍💼
+
+📈 Key Insights:
+👉 Aleatoric vs. Epistemic Uncertainty: Understanding the difference between randomness and knowledge gaps in AI predictions.
+👉 Conformal Prediction (CP): A promising methodology that provides robust prediction sets with minimal assumptions. 📊
+👉 Grand Challenges: The paper identifies eight major challenges in PUQ, including multimodal AI, explainable AI, and equitable decisions. 🤖
+🔗 Read the full paper to delve into these transformative insights and discover how PUQ can enhance AI's reliability and fairness across diverse applications. 🌐 https://lnkd.in/e3diajzn
+
+☕ Great collaboration with The Alan Turing Institute led by Tapabrata Rohan Chakraborty, PhD
+
+#ArtificialIntelligence #MachineLearning #HealthcareAI #Innovation #Research #NatureMachineIntelligence 🌟
+
+
+Personalized uncertainty quantification in artificial intelligence - Nature Machine Intelligence
+nature.com
+40
+3 条评论
+赞
+评论
+分享
+Alireza Hayati
+
+Remidio / NASA Citizen Science AWG
+
+5 个月
+
+This is high demand , thanks for making this happened !
+
+赞
+回复
+Cengizhan Ozturk
+
+Professor, Bogazici University BME & LifeSci & CT3 (HTTM); Founding Chairman, Istanbul Health Industry Cluster (ISEK) Association
+
+5 个月
+
+👏🧿
+
+赞
+回复
+Tapabrata Rohan Chakraborty, PhD
+
+Group Lead, Transparent & Reliable AI Lab (TRAIL)
+
+5 个月
+
+thanks Alejandro, it was a delight to lead this work as first/corresponding author, and you

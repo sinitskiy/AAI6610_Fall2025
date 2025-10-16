@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/w1fo7n/database_selection_help/
+Title: Database Selection Help
+
+Content:
+Hello! I am a beginner in bioinformatics and I was wondering if I could get some advice as to where I can find data about antimicrobial strains of a certain bacteria. I am trying to use a machine learning model to classify whether or not a bacteria is antimicrobial resistant based on its genome. I tried used NCBI assemblies however they just showed the strains and I could not figure out which strains were resistant or not. Thank you so much!
+
+Comments:
+- Honestly, I don't think this is going to work.  I  mean, it wouldn't be too hard to check if a particular mutation is on a curated whitelist of mutations known to cause resistance, but predicting how a mutation will affect protein function... People have been working on that for a long time, I don't think throwing machine learning at the problem is going to magically solve it.
+- I am sorry I think I wasn’t clear in stating my problem. I wanted to build a model that can identify wether a bacterial strain is resistant to antibiotics or not based on its whole genome sequence. It has been done before as described in this paper- https://www.frontiersin.org/articles/10.3389/fmicb.2020.00048/full. I do have experience with machine learning, this is simply my first time applying it to biology thus I am having some difficulty with preprocessing my data.
+- everything you’re asking for is in the methods of the paper. I’m just copying the first part relevant to your question. There are numerous preprocessing steps before applying ML including assembly which is a beast of its own.
+
+“The WGS reads and binary resistance phenotypes of 5 antimicrobial agents (tetracycline, ampicillin, sulfisoxazole, trimethoprim, and enrofloxacin) of 96 isolated strains of A. pleuropneumoniae data were obtained from Bossé et al. (2017). The WGS reads were downloaded from the European Nucleotide Archive (Study: PRJEB23431) and the phenotypes of the isolates against the antimicrobial agents were downloaded from the Supplementary Material of the same study2. Acquired resistance genes of the antimicrobial agents were downloaded from ResFinder Database as reference genes3.”

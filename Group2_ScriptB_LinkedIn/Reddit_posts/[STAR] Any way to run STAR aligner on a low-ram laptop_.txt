@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/ti3n1h/star_any_way_to_run_star_aligner_on_a_lowram/
+Title: [STAR] Any way to run STAR aligner on a low-ram laptop?
+
+Content:
+Edit 3: Interjecting but would anyone know if cufflinks 2.2.1 (available on bioconda) is compatible with recent python releases? I'm getting incompatibility errors when installing.
+
+Short question and hoping there is a solution. I'm trying to self-learn bioinformatics, but I only have an 8GB RAM potato and STAR aligner needs 32GB according to lots. I've seen some suggestions of running it sparse to reduce the requirement to 16GB, because running it using 8GB resulted in runthreadn getting killed.
+
+For the record, my potato has 2 cores and I'm trying to align the human genome.
+
+Thank you.
+
+Edit: Ok I'm just going to download an indexed genome and hope the next rna-seq steps don't kill my machine
+
+Edit 2: yeah nope. Didn't work so I'll be trying salmon next.
+
+Comments:
+- Try one of the pseudoaligners, salmon or kallisto. They are very fast and efficient and have precompiled genome indexes.
+
+For learning you could also start from raw counts, downstream of read alignment things tend to get less resource heavy
+- You can use Galaxy if your machine can't handle it
+- Yeeeaah if you only have 2 cores I think I would pass. I mean I'm all in for learning hands on, but I did a quick test with star on my laptop time ago (16gb, 4 core) and even aligning some seqs took a, relatively, long time.
+
+Colleague of mine had to index a genome the other day and the lab provided him with a 128 GB ram machine, maybe a little overkill, but if you ever get to work in this field you'll realise hardware is provided and not a concern ahahah.
+
+Good learning and good luck!
+- If you're doing it to learn then use a different genome. Smaller genomes require less RAM. Yeast - S. cerevisiae - is a good compromise.
+- As others have pointed out — this is simply not feasible if you hope to work with human data and align against the genome.  The uncompressed suffix array itself for the human genome will take ~20G — so even if you have the pre-computed index, you won’t be able to align against it.  STAR offers the ability to use a sparse suffix array, trading speed for memory, but even then you’ll be in the range of 12-16G.  If you’re just trying to get a feel for the tools, how to run them, etc., then, as others said, you might give a try with another organism with a smaller genome.  However, in general, 8G of RAM is going to be a stretch for many/most bioinformatics analyses.
+- Maybe see if STARsolo fits your use case?
+In any case, if it is just for self-learning you could try to only use a subset of the reads as input.
+- Download more RAM. Use a different aligner. All jokes aside, I'd look into ssh and your institution's compute cluster.
+- Thanks for the suggestions, I'll give salmon a go since it looks pretty well-documented.
+- If I'm reading right, galaxy a web tool for various bioinformatic analyses, which means the computing is done online right? As I'm trying to get comfortable with the software for bioinformatics, I'm not certain how helpful working with that would be, but I'll give it a look. Thanks!
+- Wow, 128GB sounds monstrous. I'll see if I can get access to AWS servers at a lab I previously worked at. Thanks!
+- Wonder how feasible it would be in ops case to attempt to align per chromosome then merge the resulting bam files
+- Fair, I'll give other tools a go first. Thanks!
+- Oh this sounds good. I'll give it a try with some scRNA data. Though, wouldn't STARsolo still require genome indexing?
+- Yes, Galaxy computes everything you upload on their servers. It takes out the command line coding if that is all that you cared about but you can still learn that side of things on your own, with your machine it is unlikely you can complete this. At least this way you can complete the analysis and still get a feel for the output, etc.
+- It might work, but what's the point. Just use a smaller genome.
+- Sounds good. I'll check it out. Thanks!
+- Hmm as another user pointed out, even with smaller genomes it'll probably take some time to compute. I'll probably give a pseudoaligner like salmon a go and work with that until I can get more RAM. Thanks.

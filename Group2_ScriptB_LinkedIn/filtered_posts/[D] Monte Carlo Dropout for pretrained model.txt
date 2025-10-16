@@ -1,0 +1,35 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/kvtcdh/d_monte_carlo_dropout_for_pretrained_model/
+Title: [D] Monte Carlo Dropout for pretrained model
+
+Content:
+ I know that I should apply Dropout on training and testing, get  several results for prediction and so on. But, considering a pretrained  model, how should I add Dropout layers?
+
+* on the fully-connected layers;
+* after every convolutional layer.
+
+I’ve read some papers and implementations where one applies Dropout  at fully-connected layers only, using a pretrained model; however, when  using a custom model, usually one adds Dropout after every conv layer.
+
+Using Dropout on the fully-connected layers only can be considered an actual uncertainty estimation of the model?
+
+Comments:
+- You simply cannot add dropout to pretrained models without at least fine-tuning. Trchnically speaking you should add dropout after every layer in your model. Those papers you are mentioning are wrong. 
+
+Also dropout is quite a crappy uncertainty estimation mechanism. Use ensembles or variance networks for much better results. 
+
+
+Source: my PhD thesis topic is uncertainty estimation in deep neural networks.
+- I see. Oh, I am going to fine-tune the model, it was implicit in my mind, sorry. Could you point some papers to support the usage of ensemble and variance networks over MCDropout approaches?
+Also, your thesis is available or your PhD is still ongoing?
+Thanks in advance :)
+- Score is not everything. The cool thing about MC-dropout is that it is easy to adapt a vanilla deep-net to perform probabilistic predictions. Also, in most circumstances, "okay" is as good as "best". In my opinion MC-dropout fills these two criterions fairly well. I do agree that there are still better methods to be discovered and I do know that MC-dropout is not so Bayesian.
+- [https://papers.nips.cc/paper/2019/file/07211688a0869d995947a8fb11b215d6-Paper.pdf](https://papers.nips.cc/paper/2019/file/07211688a0869d995947a8fb11b215d6-Paper.pdf) for a good comparison of various regression uncertainty estimation approaches. MC-dropout scores worst.
+
+[https://arxiv.org/abs/1906.02530](https://arxiv.org/abs/1906.02530) for a good comparison of various classification uncertainty estimation approaches. MC-dropout again scores the worst.
+
+Currently writing my thesis, graduating may-june this year.
+- The main reason I picked MCDropout was that "easy to adapt" factor. Right now an "okay" estimation is enough for me. Do you also believe that one should apply dropout after every layer on backbone for a "true MC Dropout" estimation?
+This paper (https://openreview.net/forum?id=rJevPsX854) uses dropout on the fc layers only for uncertainty estimation.
+- Thank you very much. Good luck on your thesis. My PhD thesis topic is unsupervised classification on a medical imaging application, and I am studying uncertainty estimation these days.
+- Funny that I was downvoted. Anyways, dropout doesn't play well with convolutional layers. It is this more common to only consider dropout in the dense layer. But you should definitely play around and see what works better for you.
+- It wasn't me lol. Anyways, thank you very much. I'm running some baseline models and then I'm gonna try some MC Dropout approach.

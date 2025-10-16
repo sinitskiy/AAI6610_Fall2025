@@ -1,0 +1,44 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/sd1wqz/advice_on_computational_biology_ms/
+Title: Advice on Computational Biology MS
+
+Content:
+I was just accepted to Carnegie Mellons MS in computational biology (and I’m over the moon about it) but I have a few questions regarding whether computational biology engulfs my career goals or not.
+
+For background, I was an Applied Math (stats concentration) major at a Tier 2 university. In my last year, I discovered Machine Learning and Data Science and completely fell in love with it. I’ve done several ML projects and know for sure that I want to work with data!
+
+I looove coding even though I have a beginner/intermediate background (have taken data structures and advanced ML). 
+
+Since I was young, I’ve always been very interested in biology, particularly medicine/neuroscience. I really would like to work with data in a medical field (the more ML the better!). I did not get the chance to take biology in my undergrad, but I tend to read a lot of research papers and random biology books to have some sort of idea of what I like. 
+
+My first question is: as an applied math major with limited bio experience, will I be ok in a computational biology MS? I can’t imagine them accepting me if they didn’t think I could succeed but I want to be prepared for the Fall semester if I need to take some courses.
+
+Secondly, can I achieve my goals of wanting to work with ML in medicine with computational biology? I am open to expanding past ML but there seems to be so much potential within this area of comsci! 
+
+I would love to hear what sort of careers y’all hold with an MS in this space. 
+
+Any advice is welcome! Thx.
+
+Comments:
+- Congrats! I'm going to literally quote from [their website](https://www.cmu.edu/ms-compbio/prospective-students/faq.html):
+
+> We admit students with a wide range of backgrounds. An undergraduate degree in any life science or quantitative field is desirable. The specific knowledge areas that are most valuable to our program are:
+
+> 1) Cell & Molecular Biology
+
+> 2) Computer programming
+
+> 3) Linear algebra
+
+> 4) Probability theory
+
+>Other technical skills are also highly valuable. A typical student we admit will demonstrate strength in 2-3 of those 4 areas, we almost never get applicants with significant strength in all 4 and we have built our curriculum to provide students with background in whatever of those topics they don't already have.
+
+---
+
+> Secondly, can I achieve my goals of wanting to work with ML in medicine with computational biology?
+
+Yeah, it's probably reasonable given your background and the fact that that's the whole point of the training provided in this MS. You should read up on the core and elective courses and talk with your advisor/DGS to can craft a course schedule that'll expand on what you're interested in and cover any potential deficiencies.
+
+Sorry if I sound snarky lol.
+- There are countless extremely successful bioinformaticians that started with a pure mathematics/computer/data science background. Good luck.

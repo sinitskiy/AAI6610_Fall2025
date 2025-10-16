@@ -1,0 +1,66 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/okvabz/wouldnt_vaccinating_people_en_mass_against/
+Title: Wouldn't vaccinating people en mass against sars-cov-2 during a pandemic inevitably result in vaccine-resistant strains?
+
+Content:
+When infecting vaccinated people, the virus finds itself in an immensely hostile environment, so wouldn't this necessitate it to adapt itself even more than if it were to find itself in an unvaccinated person with no antibodies (a milder, less threatening environment)?
+
+I can understand vaccinating AFTER the pandemic is over, but not WHILE the virus is very actively spreading all over the world. The growing number of vaccinated people allows the virus more exposure to vaccine-induced antibodies, which it is compelled to overcome, and presents it an opportunity to learn how it can bypass them. And since we can't get everyone vaccinated right away, the virus also has the time to figure out the vaccine immunity, doesn't it?
+
+Comments:
+- To the contrary, the virus has no ability to adapt (let alone "learn") except for random mutations which happen to work more successfully, most mutations are unsuccessful though. But those mutations occur in infected people. The more you vaccinate and the earlier, the less opportunities for more mutations exist.
+- There is a very small change that vaccine resistant strains are due to the vaccine Due to the reasons others have mentioned. Any vaccine resistance was already evolving we just didn't detect it until vaccine was already underway. 
+
+Regardless, if we just decided to not vaccinate for the non resistant strain we are just going to have both strains killing and infecting. Better to vaccinate against what we can.
+
+I'd like to add that your thinking is pretty common because of the way we teach evolution. The way I've heard it taught by many teachers makes it sound like evolution is a sentient being countering an opponent. In reality, evolution occurs by accident. The fact that a new trait is advantageous is pure luck and most of the time new traits or variants are disadvantageous and deleterious. Just think of how many disadvantageous traits we are trying to treat and cure, but how there is almost no visible advantageous traits (there are but they are hidden and very small compared to the massive effects of the disadvantageous ones)
+- That didn’t happen with smallpox, or polio, or mumps, or rubella, why would it happen with COVID?  Oh, … let’s see … because some guy on Fox News said so!
+- It still has a 99% recovery rate?
+- Yes, and no. Yes, on a very large scale, over a long amount of time, all things being equal, vaccinating a population against a virus would lead to a more vaccine resistant strain becoming the dominant strain rather than a less resistant strain. Keep in mind all those caveats though, large population, long period of time, and all things being equal. It is possible (probable) that random mutations which cause vaccine resistance also cause some other deleterious effect, causing the virus to spread less readily. 
+
+Keep in mind, the virus doesn’t “adapt itself” when it finds a new environment, it reproduces only inside a host cell, so it’s not adapting itself to conditions it finds in people. Mutations are random. There is no intelligence directing it. It’s not learning anything. It can’t figure anything out. If a viron encounters an antibody it gets agglutinated and opsonized. This is exactly the time to vaccinate people, to lower the variable of population size and make it take more time for possible vaccine resistant variants to evolve.
+- Its not much different than the natural immunity people are getting on their own. Its not getting resistant to a vaccine, as its not really a vaccine thats affecting it. Its its own shape that triggers the immune response. 
+
+So any sort of selective pressure that maay exist will be no different (or at least very marginal) from the vaccinated people than unvaccinated people getting it. So if minor selection exists either way, why not reduce death and illness yknow
+- It actually doesn’t matter.  The choice is between natural infection and vaccination.  We’ve already seen variants easily escape natural immunity: see Manaus.  To what degree vaccines set up selective advantage for escape variants is trivial because of the main effect of vaccines saving lives in the first place.
+- What do you mean the virus has "no ability to adapt"? Don't viruses inherently adapt based on evolutionary pressures, and not just random mutations?
+
+And vaccinated people also get infected. And we have more vaccinated people every day, which increases the possibility for the virus to mutate successfully against the vaccine immunity.
+- Long covid may exist in up to 30% of YOUNG people .
+If you don’t die or kill someone else, long covid is a serious condition.
+
+Btw, vaccination has helped with some LC victims.
+But not all
+- No, it's random mutations, some of which are advantages, most of which aren't. There's no intelligence driving the mutations. They're random.
+- Vaccinated people normally have an immune response killing the virus and stopping any spread. They're the dead end where no more working or even more resistant mutations can develop. 
+
+The "evolutionary pressure" if you want to call it that way happens between different variants, e.g. when one of them transmits easier somehow.
+- May exist? They are saying the same about vaccines 💉 
+
+Again, does COVID-19 have a 99% recover rate?
+- So you're saying that there is no evolutionary compulsion/pressure that results in mutation -- no need for adaptation based on environmental factors?
+- What do you mean by “recover rate?”
+- No, there's no directing pressure or element or intelligence or whatever name you could give a directing mechanism. There's nothing that realizes a need for mutation, it just happens. The more you allow a virus to spread, the more chances it has to find a successful mutation.
+- There is but it works the other way around. Mutations are random and the “beneficial” ones became more common, but what is beneficial is determined by the environment. 
+
+To answer you original thought. The virus will mutate whatever the conditions. The more infected people the more mutations leading to a greater chance for the virus to get a “beneficial” mutation.
+- I think evolution often *looks* like things change as a response to pressure.  But it’s actually a lot more neutral than that!
+
+The only mechanism for change is actually random mutation - there’s **no** ability in species or viruses to say, “Oh no, it’s getting hotter here, I’d better evolve some heat-tolerance genes,” or “Oh no, there’s an antibody that sticks to segment X on me, I’d better evolve segment X to be different.”
+
+But we always see species and viruses evolving and becoming more fit for their environment - if they’re not responding to it, how can that be?  We talk about “evolutionary pressure” all the time - what is that, then, if circumstances don’t drive mutation and evolution?
+
+The answer turns out to be that the source of evolution *is indeed* totally random - in fact, in the absence of any pressure, random mutations are happening all the time!  The thing is, the mutations just happen to be useless in context most of the time, so only a small handful of members of the species ever get any given mutation since they’re so rare.  A bird in Texas might be born with a random mutation that makes it tolerate cold better.  Another one becomes a little browner.  Another becomes a little louder with its tweeting.  So what?  None of these are better than any other bird out there, so now 1 out of 100,000 birds has each of these random mutations.
+
+But here’s where evolutionary “pressure” comes in!  Suppose you have all of these randomly mutated birds, but then the climate in one part of Texas gets colder.  All of a sudden, birds without the random cold mutation are a little more likely to die of cold before they hatch eggs, while those with the mutation are basically guaranteed to hatch eggs.  So in the next generation, since lots of the normal birds died, now the cold-resistant birds make up 1 in 10,000 - and they keep getting more prevalent, simply because they always survive the weather while others die maybe 10% of the time to cold.  Evolutionary pressure leading, without intent, to a change in the birds!
+
+But obviously, the other mutant birds - the browner and louder birds - don’t live or die at any different rate.  They’re still at 1 in 100,000 birds.
+
+But in another part of Texas, heat has led to trees drying up faster and turning brown.  Browner birds here are now better camouflaged against predators.  So now, 10% of normal birds get eaten by predators while the browner birds always survive, and browner birds start dominating the environment.  The population has evolved without intent, but it still ends up with a change in it!
+
+See how these two circumstances actually start with the same basic random mutations, but the *context* leads to animals with one particular mutation surviving better, and it ends up propagating more just naturally.  That’s evolution and evolutionary pressure - no birds ever tried to get browner, it’s just that the ones that happened to be browner by luck and by random chance ended up best suited to survive and have more kids than their less-brown buddies.
+
+The same general principle applies to viruses - try out the analogy yourself!
+- A virus isn't a living thing. It's a strand of RNA or DNA that infects host cells. The host cell replicates the strand, causing it to spread. It isn't alive, so it can't evolve. But during the replication it can mutate randomly.
+- Not dying..
+- Well that’s a pretty narrow definition. If you’re asking what is the result of the equation: rate=cases/deaths, the real answer is we don’t know. Lots of people had it and don’t know it. Some died from it without a test, so nobody really knows the numerator or the denominator in that equation. We likely will not know for a while until we have better data on excess deaths and such. But best estimates for mortality are between 1 and 3 percent. However about 5 percent of people who had symptoms and tested positive still have symptoms at 8 weeks. Obviously there is no data as yet how many might have permanent morbidity.

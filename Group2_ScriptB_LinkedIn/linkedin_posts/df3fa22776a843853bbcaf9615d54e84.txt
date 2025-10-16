@@ -1,0 +1,62 @@
+URL: https://www.linkedin.com/posts/fabio-cuzzolin_kuleuven-epistemicai-ai-activity-7288522183415377921-_-Qz
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Fabio Cuzzolin的动态
+Fabio Cuzzolin
+
+Director of the AIDAS Institute @ Oxford Brookes University - President and Founder of UDrive
+
+8 个月
+
+Epistemic AI is getting traction!!
+All the papers we submitted to ICLR'25 and AISTATS'25 got in (100%)! With this, all 5 papers originally submitted to NeurIPS in 2024 have been published in top venues. 
+Congratulations to my fantastic team for the amazing result!
+
+"Random-Set Neural Networks", led by Shireen Kudukkil Manchingal and Muhammad Mubashar, is a foundational paper proving that network which predict random sets, rather than probability vectors, are more accurate, robust, have better OOD detection and calibration rates than all competitors: Bayesian, Evidential, Ensembles, etc.
+
+https://lnkd.in/egWwhPF4 
+
+"Credal Wrapper of Model Averaging for Uncertainty Estimation In Classification", led by Kaizheng Wang with Keivan Shariatmadar PhD MSc BSc at #KULeuven, supervised by Hans Hallez and David Moens shows that wrapping up Bayesian and ensemble predictions in the form of a credal set (convex set of probabilities) improved uncertainty estimation and out-of-distribution detection.
+
+https://lnkd.in/e5SPYTtg
+
+Last but not least, "A Unified Evaluation Framework for Epistemic Predictions", also led by Shireen Kudukkil Manchingal fills a huge gap in the field, by proposing a single coherent way of assessing and comparing predictions with attached level of uncertainty.
+
+#epistemicai #ai #artificialintelligence #machinelearning #ml #aistats #iclr #thisisbrookes #horizon2020 #deeplearning
+
+More to come in 2025!
+Check our website for updates here:
+
+https://lnkd.in/grbkStWQ
+
+
+95
+7 条评论
+赞
+评论
+分享
+Alessio Del Bue
+
+Head of PAVIS research unit at Istituto Italiano di Tecnologia, Honorary Professor in the Department of Computer Science at Durham University
+
+8 个月
+
+Impressive!
+
+赞
+回复
+1 次回应
+Dr. Maryam Sultana
+
+Research Fellow/Associate Lecturer @Oxford Brookes,UK, Research Associate @MBZUAI, UAE, PhD. @Kyung

@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/x1nofm/remarkable_examples_of_mldl_methodologies_applied/
+Title: Remarkable examples of ML/DL methodologies applied to transcriptomics
+
+Content:
+Hi all,
+
+I am looking for interesting works where people applied machine learning/deep learning models to uncover interesting facts about a biological system. Especially if they mix this kind of data with other collateral information, like regulatory networks, transcription factors, pathways... or any inductive bias embedded in their architectures.
+
+I know this is a vague request, but I need some  inspiration on how transcriptomics data and DL models are used in "success stories" for my own work.
+
+It seems to me that all I am able to find is "just" gene expression classifiers that predict some representation of the phenotypes trained off TCGA or CMAP.
+
+While writing this post I stumbled upon [this](https://www.reddit.com/r/bioinformatics/comments/x1loef/designing_dna_sequences_that_control_gene/) one. I am still skimming through it, but it looks like an example of what I am looking for.
+
+Comments:
+- There's a lot ...
+
+scVI is one that comes to mind : [https://www.nature.com/articles/s41592-018-0229-2](https://www.nature.com/articles/s41592-018-0229-2)
+
+There's also DeepSea : [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4768299/)
+
+Google "spatial transcriptomics" there's going to be a lot of hits for VAEs.
+- I had some collaborators who did a version of this, incorporating information about gene expression, gene mutation rates, flanking sequence mutations rates, and different epigenetic marks to predict differential expression using a Random Forest Walk (see extended data figure 8i) : [https://www.nature.com/articles/nature19840](https://www.nature.com/articles/nature19840) . That being said, studying polyploids gives a unique opportunity to study the evolution of expression differences. Simon van Heeringen led that analysis and has his own research group now and is still working on similar questions: https://academic.oup.com/nar/article/49/14/7966/6318498
+- Yep, I came across these topics frequently and I'm reading a lot of interesting ideas!

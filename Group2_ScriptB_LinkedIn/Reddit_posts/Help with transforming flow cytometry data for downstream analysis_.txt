@@ -1,0 +1,27 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1kutphs/help_with_transforming_flow_cytometry_data_for/
+Title: Help with transforming flow cytometry data for downstream analysis?
+
+Content:
+Hi everyone,
+
+I'm working with flow cytometry data where many of the values are in **"frequency of parent (%)"** format. Some markers show a **strongly skewed distribution**, and I'm planning to use this data for downstream bioinformatics/statistical analyses (e.g., clustering, differential abundance, correlation with clinical traits, etc.).
+
+I have a few questions:
+
+* Should I **transform the data** (e.g., log, arcsine square root, etc.) before analysis to deal with the skewness?
+* **Is it appropriate to remove outliers in flow cytometry frequency data?** I’m concerned about removing biologically meaningful extreme values, but I also want to avoid including values that might be due to machine errors or technical artifacts. How do you typically **distinguish true biological outliers from technical or machine-generated errors** in flow cytometry data? Are there any recommended quality control steps or criteria to flag and exclude problematic data points without losing important biological signals?
+* What's the **best practice** to prepare frequency of parent data for analyses like PCA, clustering, or regression, while preserving biological signal?
+* Any common **pitfalls** or things to avoid when working with flow cytometry frequency data?
+
+Would love to hear how others handle this, especially when preparing data for multivariate or machine learning workflows.
+
+Thanks!
+
+Comments:
+- What do you mean by skewed? Is this a compensation issue?
+- If the acquisitions seem stable (check a channel or two against time), and you did not alter instrument settings (voltages, compensation/unmixing, etc) between runs I would generally consider any variability to be biological. You can run the samples through something like flowClean to remove outlier events but even these shouldn't greatly impact outcome unless it's a fully bad acquisition. 
+
+You will also want to compare to expected biological norms. Healthy donor blood for example would not have more macrophages than monocytes, so always check against reasonable ranges for your sample if those are known.
+
+With that in mind, yes it is reasonable to normalize any data to reduce skewness if downstream analysis is sensitive to skewed data. It would be better to use analysis not so sensitive to this, but I understand that isn't always an option.

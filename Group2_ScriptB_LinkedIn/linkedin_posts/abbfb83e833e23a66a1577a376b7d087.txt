@@ -1,0 +1,62 @@
+URL: https://www.linkedin.com/posts/quentin-gallea-phd_i-used-to-think-that-causal-inference-was-activity-7293179445136257024-qzi9
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Quentin Gallea, PhD的动态
+Quentin Gallea, PhD
+
+Causal AI & AI ROI Measurement | Helping Scale What Works & Stop What Doesn’t | Keynotes, Advisory and Workshops
+
+8 个月
+
+I used to think that causal inference was necessarily better than anything correlational, including predictive inference (e.g. traditional Machine/Deep learning).
+
+This might have been shaped by my environment: economics. Economists value a lot causal analysis and for good reasons.
+ 
+You want to understand the cause of a problem? causal inference.
+
+You want to measure the impact of a policy? causal inference.
+
+However, the other day while exchanging with Pr. Hannes Mueller Co creator of conflict forecast (a conflict prediction tool), I realized that my perspective has changed.
+
+As I learned more and more about predictive inference (traditional AI) and discovered causal ML/AI, I now see both set of tools as valuable toolboxes.
+
+These toolboxes can solves different problems, can also be used together or even unified (Causal ML).
+
+I am not sure If this is a general shift in economics but I hope so. There s a lot of useful tools in predictive inference for policy making and recommendations.
+
+
+
+88
+18 条评论
+赞
+评论
+分享
+Jared Greathouse
+
+Synthetic Control Methods | Geo-Experimentation | Marketing Measurement | Causal Inference Consultant
+
+8 个月
+
+Yep both can be done! And we're seeing this in econ too. For example, we can use l2 relaxation to predict and do optimization over portfolio investments, or we can use it to so counterfactual prediction, as argued for here: https://www.researchgate.net/publication/386176990_L2-relaxation_for_Economic_Prediction (my mlsynth Python code does this, should it interest you). But yeah either way, these approaches may be integrated, that's certainly where lots of the direction seems to be headed in
+
+赞
+回复
+1 次回应
+Anindo Chakraborty
+
+Analytics & Data Science Leader
+
+8 个月
+
+Great perspective Quentin Gallea, PhD… increasingly the amalgamation of ca

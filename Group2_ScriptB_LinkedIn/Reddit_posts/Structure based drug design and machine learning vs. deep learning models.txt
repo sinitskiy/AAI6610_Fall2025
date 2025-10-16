@@ -1,0 +1,38 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11jdyt3/structure_based_drug_design_and_machine_learning/
+Title: Structure based drug design and machine learning vs. deep learning models
+
+Content:
+Hello there fellow bioinformaticians,
+
+I have recently generated ML models (scikit-learn) for a drug design project and got reasonable r-squared values of up to 0.67. Now, I was wondering if someone has experience with ML for drug design and has attempted DL for model improvements. I would like to improve my predictions but feel like I have reached the limit of ML.
+
+Some background: The enzyme target is Matrix Metalloproteinase 9, which is involved in extracellular matrix remodelling pathways. Overexpression has been linked to physiological diseases, i.e. cancer, fibrosis. There are a few drugs in clinical trials but these most likely also interact with other matrix metalloproteinases which makes this a pretty difficult active site to target. There are some other difficulties for the effective drug design against MMP9 but I won't go into these. Anyway, this issue with drug specificity warrants more structure based drug design to improve target specificity. So, since this is an interesting target from a biological basis and the ChEMBL database ([https://www.ebi.ac.uk/chembl/](https://www.ebi.ac.uk/chembl/)) has a dataset on bioactive molecules, I thought I would attempt to build some ML models.
+
+The original models were built using PaDEL descriptors which yielded r-squared values of around 0.55. I wanted to improve this and supplemented the PaDEL feature list with AutoDock Vina affinity parameters and some Lipinski properties. These models got r-squared values of up to 0.67. I was honestly pretty surprised that these would improve the model scores like they did but I am now looking to push these a bit more. So here are my questions, has anybody approached initial drug design like this and ended up using deep learning models? And, what kind of model improvements could I expect? Is it worth it to learn deep learning libraries (TensorFlow) to improve on ML scores?
+
+PS.: I do this in my free time so, feel free to dm me. I am happy to share the code and answer any questions. Also, I'm very open to suggestions.
+
+Comments:
+- I've used QSAR on a large number of industry projects and your R2 would be more than enough to be useful assuming your model performance measurement was correctly done.
+
+Your model performance estimation is likely biased and overestimate your model quality on OOS compounds. Also keep in mind that drug design is a MPO problem. You need to optimize your potency, efficacy, solubility, clearance and so forth. It's easy to get more potent compound by adding grease for example.
+
+When working with chembl data you also often merge multiple different assay protocols (that often measure very different things, nuances) which can be problematic.
+
+Physchem property predictions will frequently improve your models as tasks are correlated. 
+
+Deep learning models are most of the time not practical in lead opt.
+
+Hope this helps.
+- Following, since I am interested in doing a side project on a similar topic.
+- This actually helps, thanks. There were a few general assumptions that I made for the bioactive molecules but the dataset came from a single study so I wasn't worried about experimental differences.
+
+Have you seen successful lead molecules come out of simple machine learning models?
+- I'm guessing you are looking into drug design as well. Can I ask what protein target you are interested in?
+- There are numerous people involved that apply 3D/physics/QSAR/cheminformatics methods, models and medchem/compchem/formulation expertise to optimize molecules. 
+
+I'd say any molecule that goes into clinic has been touched by QSAR one way or another. If someone tells you that all of this can be done using ML alone they are full of shit (and there certainly is no shortage of people/companies out there that claim that).
+
+Cheers
+- SNC1A

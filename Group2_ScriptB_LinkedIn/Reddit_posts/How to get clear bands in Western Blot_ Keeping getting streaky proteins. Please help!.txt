@@ -1,0 +1,80 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/2sote9/how_to_get_clear_bands_in_western_blot_keeping/
+Title: How to get clear bands in Western Blot? Keeping getting streaky proteins. Please help!
+
+Content:
+http://imgur.com/a/VIBXK
+
+Hey all, I am learning how to do western blots right now and I am trying to troubleshoot because I keep getting blots that appear like the one I've linked above. The proteins doesn't seem to be migrating into clear bands. I think maybe I am loading in too much protein? Below I've listed some steps/more info so maybe someone could help me:
+
+I make my own 10% acrylamide SDS-PAGE gel, which I follow the recipe very closely for the stacking and separating gels. The separating gel begins 1cm below the bottom of each well.
+
+When I mix protein samples with protein dye, I incubate them at 95 degrees C for 5 minutes in a dry bath.
+
+I loaded 120 micrograms of protein into each well. Each sample also contains 5 microliters of protein dye.
+
+I run the electrophoresis for 2 hours at a constant 100 Volts.
+
+During transfer, I place my nitrocellulose membrane directly onto the gel without moving it, since I know proteins begin blotting immediately when the membrane and gel make contact.
+
+I block the membrane with 1 g of milk powder in 20mL(5% blocking solution) of TBS for 1 hour.
+
+I know I properly dilute my primary antibody and secondary antibody.
+
+Also, I know my washes have been done properly.
+
+
+
+I appreciate any help.
+
+
+Comments:
+- Those blots definitely have too much ladder. I also suspect that this is too much protein if you're really loading 120 ug (I typically load 20 ug).
+
+What is the source of your proteins and how are they handled prior to running them on a gel? You mention a protein dye, is that a laemmli buffer with SDS and DTT (or BME)? You could extend it to 10 minutes, especially if what you are seeing is higher in the blot than you expect.
+- Streaking like that could be caused by:
+-loading too much protein (and ladder apparently).
+-your gel overheating while running the gel (is your electrophoresis buffer correct?)
+-problems with your transfer - how do you have that set up? You may not think you moved it, but it could still be moving. 
+
+
+The way a scientist goes about troubleshooting these things is trying and changing one thing at a time (just use ladder until you have your problem fixed). Run a gel with different dilutions of your ladder and maybe one lane of sample. Move through all the possible hypotheses until you have it figured out.
+- 120 micrograms is a lot of protein; I usually load a max of fifty. I've heard higher salt content in lysates can make them streak as well. How are you preparing your samples with the loading dye? Are you using a reducing buffer and boiling your samples?  When you pour your gels do they leak at all or have irregularities?
+
+There are lots of steps you can take to try to fix the steaks but I'd start with cutting back on the protein and the amount of ladder; the fact that your ladder looks funky makes me think it's not specific to your sample prep.
+
+*Edit: Noticed you said you are using a dry bath, and heating for 5 minutes. I know a lot of people use dry baths but I think it leads to uneven heat distribution in your sample, so you might be getting gooey lysates. You could try boiling, and you only need 2-3 minutes.
+- Check out [this video](http://www.reddit.com/r/labrats/comments/2sk2ks/can_we_trust_western_blots_most_of_us_are_doing/) posted in /r/labrats recently. It has some good tips for Western.
+
+My guess is you are loading too much protein. You should run an test gel with different protein amounts and see if the bands get bad at some higher amounts. If they are all bad it's probably problem with the gel and you migt want to change your reagents.
+- Could be a few things.  It most likely is not transfer, as it looks as if it is a clear migration problem.  I also agree that you should reduce protein amount; max of 50ug is more than enough for most proteins. You have the presence of bands, so it most likely is not washing or primary/secondary incubation, as you mentioned. No smiling of bands, so the proteins are migrating at an OK rate.  Do you use a stacking gel as well?  If you don't use a stacking gel, this could happen.  You also could be running the electrophoresis for too long (you don't want the bottom blue line to run off the gel, stop a few millimeters before the bottom).
+- Check: current in electrophoresis aparatus. Overcurrent will overheat. 
+Check: age of reagents. Acrylamide is good for 6-12 months. APS stock less than a week. Temed also goes bad. 
+Check: protein load. Overloading can cause distortion.
+- This is going to sound really weird, but try not boiling the sample. There is already 1% SDS in the sample buffer, which is absurdly high and has unfolded  pretty much everything in there. I have personally gotten cleaner looking gels from lysate without boiling because if you boil them, they get real gooey and smear like your gel. I think  something like a Millard reaction or something happens when you boil complex samples with lots of sugars or lipids that makes them even more gooey, or maybe something polymerizes.
+- I use this ladder called Rainbow Recombinant Protein marker that has a concentration of 1ug/1uL. I load 6 uL of the marker in my first lane. Is that too much? How much do you normally load and of what marker?
+- Yea, I had one good western from a while ago where I loaded only 70ug. I think I'm definitely first going to try reducing the amount of protein I load.
+
+For the ladder, I use rainbow recombinant marker which has a concentration of 1ug/uL. I load 6uL of this into my first well. Is that too much? How much of your ladder do you load and what ladder do you use?
+
+For loading dye, I first pipette 6uL of loading dye into empty tubes. Then I add the amounts of lysate I calculated for loading equal amounts of protein into each tube. Then I close the tubes and put them in the dry bath at 95 degrees C for 5 minutes. Then I proceed to load samples into gel wells.
+- Great video! I watched the whole thing. 
+
+I run my gels at 100V for 2 hours. Do you think it would be okay if I ran it at 180V for 30 minutes, because near the end of the video, the speaker shows that he runs his at 180V for 30 minutes. However, I do not use a "V3 Workflow" like what is mentioned in the video, so I don't know if I could do the same as him. I read that I could get streaky bands if the gel is run faster. Also, I keep reading that the gel could overheat and melt or create a "smiling" effect if I run at high voltage. In short, what voltage and for how do you run your gels?
+- > You also could be running the electrophoresis for too long (you don't want the bottom blue line to run off the gel, stop a few millimeters before the bottom).
+
+I've ran it off before, never gotten results even close to this. Just generally means anything low weight is lost. And I don't think that at 100 V that there should be significant heat concerns.
+- thank you! I'll definitely try all those. I have been using APS that was made back in August. I did not know it goes bad. I'm going to try to decrease the amount of protein I load first though.
+- Previously, I was not boiling the samples. However, when I did those blots, I ended up not getting any protein signal at all. After I started boiling samples, I got protein, like in my linked picture, but the protein has not formed linear bands, just smears and streaks. 
+
+I think I'm going to try and load less protein first. If that does not work then I think I'll comeback to your suggestion and try that again.
+
+Thank you for the reply. Hopefully I  can get some good westerns  because right now I've invested so much time only to get shitty westerns!
+- I can't recall the name of the ladder I used, but I load 5 ul of it. Sorry, can't recall the concentration either. That said, I use a different detection method than you for my secondaries (I use IR). My labmates use chemiluminescence and load 3.5 ul of ladder. You may have to experiment a little bit to determine the best amount to load.
+- I might not be the best one to answer your questions. I really rarely need to run Westerns so I tend to use pre-cast gels and run the transfer with iBlot.
+- Yea, I agree. Typically running too long wouldn't produce these results, but you never know.  I think the main thing would be to make sure gel preparation (stacking gel and separating gel), and that the buffers are correct.
+- I would also suggest staining your gels with coomassie instead of going through the whole western process. You have a migration issue that has to be resolved, and you can visualize the bands with coomassie until you figure out what is wrong.
+- I use a stacking gel. The stacking gel ends about 1cm below the bottom of the wells. 
+
+I will try reducing protein amount that I load into wells and comeback and tell you my results. Hopefully it works! And we can all know what is going wrong. Thanks for for the reply and help.
+- oh yea, good point. I never thought of that! I'd save so much time

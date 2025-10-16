@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wpo55y/are_there_free_alternatives_to_cmviewpymol_to/
+Title: Are there free alternatives to CMView/PyMol to 3D-visualize CASP .rr files?
+
+Content:
+Hi experts,
+
+I'm tinkering around with the original AlphaFold machine learning architecture, because AlphaFold 2 had me curious (unfortunately, AlphaFold 2 is too far out for me as a layman in both biology and machine learning). 
+
+All is well, except for the fact that I'm unable to generate these nice-looking 3D plots of the proteins. Google tells me that CMView is the tool to go and that I'd need PyMol for the 3D-part of it. Unfortunately, I can't get them to work on my machine. The CMView version that's available for the unwashed masses is too old to work with PyMol and everything just crashes upon opening a .rr file.
+
+Hence my question: Is there something else out there to produce these nice, juicy 3D models which I can show off to my colleagues? They weren't impressed with my distograms, they wanted 3D. 3D they shall have.
+
+(Or may I'm overly stupid and there are up-to-date free CMView and PyMol versions out there - that'd work just as fine.)
+
+Thanks!
+
+Comments:

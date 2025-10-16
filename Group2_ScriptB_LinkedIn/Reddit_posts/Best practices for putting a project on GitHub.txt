@@ -1,0 +1,78 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/18alwyn/best_practices_for_putting_a_project_on_github/
+Title: Best practices for putting a project on GitHub
+
+Content:
+Hello all,
+
+I was wondering how to best set up my projects in GitHub. Most of my projects are pretty basic RNASeq analyses so I'll often have a counts folder, a few basic bash/R scripts, and then results (DEG dataframes, GSEA data frames, and figures.)
+
+I've slowly been finding a common folder structure that works for me on my local machine for all of my projects, but if there is something out there that is conventional, I'd like to learn it!
+
+For example, Ill often have all my raw data in one folder, then all the code files structured like 00\_process\_reads\_<date>.sh, 01\_DESeq2\_<date>.R, 02\_GSEA\_<date>.R. With each R code, I always save the file outputs as well as .Rds files for any data objects I generate. I store the data structures in their own folder and the outputs to a folder called "Exploratory\_Analysis".
+
+If I take a deeper dive into the data after the exploratory stuff, I save that to its own folder.
+
+Ideally, I want to include my GitHub on my resume so hiring managers can look at the projects I have done. How do you all structure your repositories?
+
+&#x200B;
+
+Comments:
+- My two cents:  
+
+A repo with a **very good** README and clear documentation, frequent high-quality issues/PRs, and clear concern for best practices (like, not committing secrets or large files, CI/CD if necessary, unit tests) is way more important than a specific folder structure.
+
+Bioinformatics (and academia more broadly) suffers greatly from software that is pure dog water. I think a hiring manager would be more interested in your ability to produce maintainable, robust, high-quality software and write strong, technical documentation and result reporting that describes how you did your analysis over the nuances of how you name your folders.
+- Don't put data or output in your repo, just scripts. Have your Readme summarize each script, and the order they should be run if applicable. 
+
+If you really want to show output, have an html from an rmd output.
+- As a beginner, what setup currently works for me is:
+
+1. Initialize a Git repository
+
+2. Create folders data, results, scripts and notebooks (nowadays I also create a reports folder to store RMarkdown reports, but that may be a subject of taste). Put the contents of data and results folders into .gitignore. Thus, only the code and documentation are versioned (however, the structure inside the data folders also matters for code readability)
+
+3. I start the analysis in notebooks. Once a chunk of workflow (e.g., sample QC) is completed, I refactor the code, test it again and separate the logical parts into individual scripts. Then I test that sequence of scripts. If everything works fine, I delete the notebook (I personally do not like how notebooks interact with Git. If I want to showcase the code together with the results, I prefer RMarkdown)
+
+4. Right now I'm working on improving my documentation practices. I think going with a README with a general description of the project, outline of main steps in your scripts and their order (e.g., PROJECT.md) and DATA.md which summarizes where you got the data you use
+
+
+Of course, there are many improvements that can be made, but I hope this might be of some use
+- I hadn’t thought of using my GitHub like that. I’m also not sure my PI would let me post our data before it’s published, but that’s another story.
+- [deleted]
+- Others have mentioned that if you use a private repo, you should avoid uploading actual data files to the github. This is the .gitignore file I use to ensure that:
+
+    # Ignore everything
+    *
+    AWS/*
+    *.pem
+    
+    # But not these files...
+    !.gitignore
+    !*.ipynb
+    *-checkpoint.ipynb
+    !*.sh
+    !*.yml
+    !*.R
+    !*.r
+    !*.py
+    !todo.txt
+    
+    # ...even if they are in subdirectories
+    !*/
+    
+    # But ignore the numbat output (auto-generated sh files from a program I use)
+    *run_phasing.sh
+    *run_pileup.sh
+
+Using this scheme, you ignore everything by default and hand-pick the files/extensions you want to keep tracking
+- In terms of file structuring, my lab goes by the conventions in [this paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424).  
+In terms of file naming, it sounds like you have a good setup. Seems concise and descriptive.
+- How do you go about unit testing a simple RNA-Seq analysis workflow?
+- Spot on - the reaction I get from a candidate when I bring up CI/CD, unit testing, or even git flow is very telling of their background.
+- I agree, a good readme is critical and often a good indicator of a well-tracked repo. You will thank yourself later in the future as well for having well-documented, reproducible code.
+- Agree, put the sequencing data on SRA or ENA and then provide script in the repo to fetch the data. If there’s other intermediate data you want to make available use services like FigShare or Zenodo.
+- Sorry, should have specified, the repos are private. They're mostly just a back up for me right now in case something happens to my computer.
+
+The only one I have this IS public, the paper is out for review.
+- Aaron it’s Rebecca message me right now

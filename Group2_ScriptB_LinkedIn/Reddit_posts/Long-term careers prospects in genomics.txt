@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/qmldvy/longterm_careers_prospects_in_genomics/
+Title: Long-term careers prospects in genomics
+
+Content:
+I would appreciate some advice from bioinformaticians on the long-term job demand (and security) for machine learning experts in genomics. Particularly in London and in the UK.
+
+I am completing an applied machine learning  PhD in a non-bioinformatics field and am considering whether to now specialize in the field of genomics. For me, the research field seems very interesting and poised to grow very rapidly with the improvements in genome sequencing (e.g. Illumina). But I sometimes worry that the field is very niche and may look down on people transitioning from non-bioinfo backgrounds and that I could be pigeon-holing myself very early in my career.
+
+So my question would be whether as insiders in the field, you believe that there will be a strong industrial demand in the coming years for people with backgrounds in machine learning applied to genomics and whether not having a PhD in bioinformatics would be a hindrance.
+
+Comments:
+- Disclaimer: I am US based, non-bioinformatician with experience in academia and industry in DNA and RNA sequencing.
+
+&#x200B;
+
+IMO, industry jobs such as these will exist for the foreseeable future. This is the beginning of the biotechnology + AI/ML revolution. Machine learning techniques will be applied to diagnostics, biomarker discovery, and drug development for decades. Every major biotech and pharma company has job openings like these, simply because computational biology and bioinformatics graduates vastly under number the amount of graduates with degrees like BS in CS, for example. 
+
+Many BS in CS holders go into non biological fields, and many MS/PhD scientists aren't qualified in data analysis as their degrees exposed them to moderate or none amount of R programming, statistical analysis, python, etc. Certainly few or none get experience with machine learning and if they do it is adapting an existing model to work on some task they dream up, not building the software from scratch. 
+
+Whatever you do, a PhD in applied machine learning you'll be set for life. You can transition from biotech to non biotech, and academia to industry. My former coworker, a physics PhD, did all of our computational work (biotech industry) and then left industry to work at Harvard/MGH in academia in research. It's really up to you what you want to focus on, and I would suggest finding problems that you want to solve and following that passion.
+
+The field is not niche. Every major pharma and biotech needs qualified computational people. Look into PacBio (US, California) and Oxford Nanopore (UK). My LinkedIn feed is curated for industry jobs all across biotech, and most of the open positions I see are in the computational space. You also don't have to focus purely on genomics, for example transcriptomics is the study of the part of the genome which is expressed, and the forms of RNA molecules that come to be, among other things. Alternative splicing and splice isoforms are very interesting and you may find that work exciting, challenging and rewarding.
+- This is an incredibly helpful answer that I am still digesting. Thank you for taking the time to answer!!!
+- no problem.

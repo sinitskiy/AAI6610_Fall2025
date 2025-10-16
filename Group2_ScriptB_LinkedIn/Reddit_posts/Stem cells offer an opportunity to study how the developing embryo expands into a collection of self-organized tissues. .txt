@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/suqfzs/stem_cells_offer_an_opportunity_to_study_how_the/
+Title: Stem cells offer an opportunity to study how the developing embryo expands into a collection of self-organized tissues. Using machine learning and micropatterning we demonstrate the importance of cell density and cytoskeletal tension in vascular differentiation.
+
+Content:
+
+
+Comments:

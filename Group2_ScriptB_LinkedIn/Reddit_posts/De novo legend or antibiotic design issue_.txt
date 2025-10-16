@@ -1,0 +1,23 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/12jrvvo/de_novo_legend_or_antibiotic_design_issue/
+Title: De novo legend or antibiotic design issue:
+
+Content:
+Hope you all doing good. Recently, I have started working with Antimicrobial Resistance Genes (ARGs). I'm almost at the end of my work. Now I'm planning to design an antimicrobial peptide or peptide antibiotic  computationally against a specific gene (based on its protein structure, and screening with other antibiotics pattern). Is there any way or you have ever designed any de novo ligand or peptide antibiotic or antimicrobial peptide using computational biology?
+
+&#x200B;
+
+&#x200B;
+
+&#x200B;
+
+&#x200B;
+
+I have studied a little about it, and figured out some approaches can be using such as deep machine learning, neutral network machine learning, and de novo ligand design etc. But don't know how to start and from where to start. If you can help me a little, I can finish my project soon.
+
+&#x200B;
+
+Fully stuck now...!!!
+
+Comments:
+- Check out RosettaCommons on GitHub. Their newest work is called RFdiffusion. Their legacy software is Rosetta. There is a large body of literature on the latter. I would also suggest checking out ColabDesign on GitHub as well.

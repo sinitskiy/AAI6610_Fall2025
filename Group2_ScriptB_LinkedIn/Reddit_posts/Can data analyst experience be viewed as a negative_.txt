@@ -1,0 +1,46 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1agq28z/can_data_analyst_experience_be_viewed_as_a/
+Title: Can data analyst experience be viewed as a negative?
+
+Content:
+My question is - can my BI data analyst experience stand as a negative thing in my CV when I go looking for a machine learning related data science job?
+
+I studied physics, did physics in Research and development of a tech/med company (2 years), switched to being a data analyst in BI (6 months) as I could not find a data scientist job in my city. When I got to BI data analyst role, I tried to find interesting work as some of my colleagues only work on "ad-hoc" tasks (I think they are quite repetitive, like repeatedly evaluating AB tests). Luckily I got tasks related to interesting things - development of our A/B testing framework which is statistics, sequential tests etc. I asked for statistical tasks to take on a challenge that would move me forward.
+
+My goal is to find a data scientist role related to machine learning after my DA experience. I did a couple home hobby projects too - the biggest are a game recommendation system from Steam games that I scraped, and a yeast object detector that I trained and integrated into a desktop app (just a prototype though). I realize there is a lot I don't know, but I think I learn rather quickly, math is no problem after I refresh it and I am constantly working on some DS home projects.
+
+Will having a BI data analyst experience make people fit me in the "DA" box even though I would like to jump to the "DS" box? Because I find people often look down at BI people.
+
+Comments:
+- I wouldn’t want to work for anyone who would view that as a negative
+- Analysts generally have better business acumen.  Data Scientists often time are too into research and forget/oblivious about the business needs.  I say if someone has experience as both analyst and DS, it's actually a plus compared to the person that only been one or another.
+- I see data analyst as a good foundation for DS and ML. Obviously the job scope is different. But if a candidate started out as a data analyst, then went on to do DS, and picked up ML skills along the way, I see that as a natural career progression.
+- Not at all. I prefer hiring DA/BIAs since they have the business and communication skills critical to DS.
+- Not really. when I post jobs for Data Analysts and Data Scientists I get hundreds if not over a thousand applications. The market is so saturated that finding people with the right skill set is a non issue for most employers. What will set you apart and get an interview is your domain expertise. Make your resume about that and don’t worry too much about titles, tools and skills.
+- [deleted]
+- I’m not sure what shitty ass manager would think that’s a bad thing but you don’t want to work for them anyways
+- Not even slightly. 
+
+The perspective you have is honestly an unfortunate effect of the elitism and and gatekeeping you've probably seen online. BI is the foundation of "data science" as it's understood colloquially. 
+
+As a BI analyst you're developing your analytical skills \*and\* your business acumen, which are both invaluable for being a data scientist. The recent trend of people coming out of undergrad programs and landing DS positions is not the norm. Most people either spent time building up their skills as analysts and/or went to grad school to take that next step. 
+
+Don't get too much in your own head. You're on the right path if DS is your goal!
+- If you are strong at coding, excel in stat/prob, can solve problems without much hand holding, and can communicate effectively, then it shouldn't matter what your current role is.   
+
+However, you will be competing against very well qualified people, many with PhDs in CS and ML who are published and have significant experience in a production environment and many of whom also have an MBA and years of experience in tech.
+
+If you don't like "repetitive tasks", why not write code to automate it?
+- No, not at all.
+- Absolutely not! Imagine how impossible it would be to do data science if you have no knowledge on how to wrangle, clean, and aggregate data... being a bit of a data engineer is even more valuable. In my org there’s plenty of fluidity between all data roles.
+- Not by any reasonable person. There is a lot of overlap between the roles and lots of value that DA experience brings to a DS role.
+
+In the world of "scoring" professional experience, DA experience probably isn't trumping DS or MLE experience, but I'd put it in that second group (probably with SWE) where people with that experience who've done some learning/training in DS/ML are strong candidates for DS roles.
+- are you trolling. almost half data scientist in the market come from a data analyst. there are skills that data scientist lack such as business acumen and communication. surely it will help
+- I don’t think so as long as it was a real data analyst job that’s not data entry and you applied ds skills be it just etl or building visualizations using BI tools or R/Python libraries
+- You can’t be serious
+- Nope i don't think so, data analysis also closely work with the data science team so these are not something which is oug of subject
+- I think the only negative I can see is if you can't show growth in your responsibilities over X period.
+- I guess it could be viewed as a negative but it doesn’t make much sense to me tbh
+- I don’t think so
+- No

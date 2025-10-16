@@ -1,0 +1,89 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tkqk3k/goals_for_bioinformatics_phd/
+Title: Goals for bioinformatics PhD
+
+Content:
+I have heard that a difference in a successful PhD and a PhD that is just a piece of paper is essentially what you put in it. Talked to some older grad students and one of them recommended that I come in with a list of goals that I want to accomplish at the end of the PhD. What does that entail exactly and do you guys agree with this statement? 
+
+
+Idk exactly what I want to but I have a somewhat of a vague idea. 
+I think what I want to do with bioinformatics in the future is be a bioinformatics scientist in industry that’s relating to immunology and I want to apply statistical methods and machine learning methods to find biological insights. 
+
+
+What kind of goals did people set before a PhD and should my goal for my PhD be towards algorithmic development based on my description?
+
+Comments:
+- I'm just at the end of my Bioinformatics PhD right now and I can attest that it is absolutely the case. There are some who do the bare minimum and come out with a piece of paper, and others who essentially have their entire lives consumed by it. I don't think there's necessarily a right and wrong way but I do think it's important to decide in advance what exactly you want to get out of it.
+
+So if it's just a matter of getting the piece of paper, maybe to open certain doors in the future, that's fine. Otherwise, perhaps it's more about developing certain skills and having the publications to support that? For example you could aim to understand the mechanisms behind certain machine learning techniques that are already used in regard to immunology, then try to implement them yourself.
+
+One suggestion: not many people find them particularly exciting, but you could consider writing a benchmark comparison of different methods for example, as it is a very good way to develop an understanding of how they work. As a bonus it could also result in a publication, and perhaps act as a very tangible "goal" in this case?
+- >I have heard that a difference in a successful PhD and a PhD that is just a piece of paper is essentially what you put in it.
+
+I think it's the other way around. The PhD is a bit of paper. It's what you do during that time that makes all the difference. You'll start doing your PhD with a few skills and no papers. You should end up with more skills, some papers, and a good idea about where you want to take your career.
+
+Emphasis on the skills part. I find it tragic when people finish their PhD and they can't even write Python code.
+- Following this post because I am also considering a bioinformatics PhD!
+
+My goals are to become very good at applying deep learning to multi omics data and become as good in Python as I am in R
+- Correct. There are PhDs I would hire and PhDs I would not hire, even if they came from the same lab. I would focus on building scientific independence and building competence in some core skills. Whether a project ultimately works or not can depend on many factors and some luck. However you can still learn how to design good experiments and how to present your results in a compelling manner. 
+
+The big difference between those who are good and those who merely made it to the end is their breadth and depth of understanding of the field. All of this to say, take full ownership of your projects and don't be afraid to explore your own ideas even if they seem silly. Failing again and again will teach you the importance of being methodical and spending your time wisely. It's very common and dare I say critical to flounder around in the beginning. That's how you learn to be independent.
+- Besides building and **demonstrating** useful/in-demand skills, don't underestimate the value of becoming a good communicator and collaborator. As a hiring manager, I care little about whether you have your degree from Harvard or MIT, compared to a ho-hum academic institute. I care much more that you have strong communication, demonstrated success in accomplishing tangible goals and good letters of rec attesting to your ability to work together on things in a collaborative way. A solid solo performer with stellar collaborative attitude and ability will far outperform even the smartest and most talented individual who is toxic in the workplace. It's always a gamble when you hire, and I'll always bet on a decent collaborator over a "star" individual.
+- Absolutely true.  I had very clear goals for my phd, and it helped keep me focused and on target.  Not that they didn’t change over time, but that I knew why I was doing what I was doing - and it helped me say no to projects that didn’t fit with what I wanted to do. 
+
+For instance, I very much wanted to learn a higher level programming language that was more useful in industry, so I picked Java.  I wanted to work on “big data” so I undertook a massive database project.  I also wanted to learn project management, so I signed up for courses on the subject offered through the university.  
+
+I also knew I wasn’t interested in topics that were unrelated to human health, so I gave up a project on tree genomics that didn’t fit my plan, and I avoided projects that had limited scope when possible, as I didn’t want to be pigeon holed into things I thought wouldn’t be useful - Eg, a post doc had a project where I thought his statistics were utterly wrong, and he wouldn’t listen to constructive criticism.
+
+It’s just a matter of ensuring the things you want to work on are skills that you think will help advance your career.   I used to read job postings periodically, to see what skills were useful in industry. It motivated me to get my degree faster, and ensure that my goals were aligned with what was in demand.
+- I think it is a very good and healthy approach to a ph.D and agree with other comments.
+
+I am going to assume you are still at an early stage of your ph.D; though.
+
+I wanted to present a slightly different perspective as I didn't set myself any goals like that to begin with. It is totally fine if you use your ph.D or at least some time during it to figure out those goals. Don't necessarily focus on too specific goals and broaden your horizon first before narrowing it towards what really attract you.
+
+Who knows ? You may discover new things you enjoy !
+- At the end of the day, a PhD does two things for you:
+
+1) Trains you on how to be a good, independent scientist (or researcher, generally) who can read the literature, identify gaps in knowledge, formulate a research plan to address those gaps & answer those outstanding questions, carry out that research plan, and write up & share your findings. 
+
+2) Gets you a good job you couldn’t have gotten without a PhD
+
+Those things are both important. You can set goals for either or both, and know that at some points #1 will take precedent (earlier on, for example) and at other times, #2 will be important or easier to act on. 
+
+Keep those in mind — becoming a good scientist & preparing for your next job — and you’ll be on track.
+- I am going to disagree with the basic premise of the question. I don't think you should label a PhD as "successful" or not. It assumes that it's like a test with right and wrong answers where you can assign some sort of a grade. You should evaluate it based on what you personally can get out of it.
+
+I agree it's helpful to have a list of goals. However, not everyone can come up with one. For example, some people know exactly what they want to do in life before college, but others don't even know after grad school. It does not mean that one group is better or worse than the other, but it will be much easier to come up with steps when you have a clear final goal.
+
+You should first figure out exactly where you want to be after your PhD and then trace your way backwards. Maybe you don't know what that is and maybe you need to "waste" time during your PhD to find that out.
+- If your goal is to be an industry bioinformatics scientist, look up job listings for those kinds of positions, and make their job requirements (e.g., experience in R, Python, HTC, AWS) your PhD goals. 
+
+Now, those shouldn't be your *only* goals. A PhD is so much more than a list of technical skills, and will include a lot of "soft" skills like experimental design, data presentation, troubleshooting, literature criticism, etc. And they'll be different for different positions and especially if you choose to stay in academia (e.g., more teaching). But at minimum you should come out of your PhD equipped with the skills you need to be qualified for the job you want.
+- How old are u? It's different when u pursue a PhD at 20' than at 30'
+- I approached it by separating them into skill/learning based goals (e.g. which methods do I want to work with, how much background info do I need about math and my area of biology), experience based goals (e.g. teaching experience, scicomm experience, conference experience) and tangible goals (e.g. # of papers, posters, etc.). 
+
+Also expect your goals to change a lot. You're going to learn way more about the field and it's going to change quite a bit during your PhD. Having goals set early on helps you narrow down your research direction and plan your PhD experience, but they will definitely be super malleable.
+- The PhD will always just be a piece of paper, if you have a good amount of knowledge beforehand you can coast through your PhD and not let it consume your life and come out on top of people who don’t. I always recommend getting industry experience first, at least do some internships! it’s not what it is or where it comes from, it’s how you use it and what skills you learn along the way.
+- I came into my PhD completely agnostic about goals, and I'm really glad I did that. There are pros and cons of coming into a PhD with a strict set of criteria. The pros are that you're focused and able to develop the skills you believe are important. The drawback is, your PhD experience may fight you every step of the way. The important part of a PhD is to realise what you enjoy and what you contribute. Its just a fact that some people will not be very good at building useful software, and if you try to force yourself to become that kind of person, it probably won't work and you won't enjoy it. Similarly, if you're someone who loves building tools and you're forced to do a lot of biology, you're not going to successful. Personally, I view myself as the latter and I've given up on developing tools because I find it tedious. It's useful to recognise your core competencies and know how to draw them out and make yourself useful to people. Anyway, long rant, but the point I'm trying to make is be comfortable in accepting your shortcomings and emphasize what you can do really well.
+- Thanks for your insight! Yea I think the benchmark for different methods sounds interesting! For those methods would you also need a deep understanding of the biology behind the methods ?
+- Second this. It's relatively easy to get away with being a poor communicator in academia. So long as you can communicate in the language of your sub-sub-speciality, it doesn't matter if you can't communicate with a broader audience. But that kind of broader communication is much more critical in industry.
+- Good for you for coming into a PhD knowing exactly what you want to get out of it. I have somewhat of a idea but not exactly. I love the job postings though I think I will try to make that a habit in grad school to ensure that my skills are up to date and in demand.
+- Yep I’m still only 20 so while I have somewhat of a idea and some vague list of goals, I think I still don’t know for sure hahah. Yea the challenge of an independent project excites me while also I’m prepared for the grind of a PhD.
+- I second this approach. It is nice to have things on paper that you can spend time to achieve, but grad school is about investment in yourself. 
+
+Your advisor will probably set you on something, you will run into problems, and then get waaaaaaay deep into some esoteric wikipedia entry or journal article that has incomplete data or criticisms and debate - and it will totally grab your attention! You could fill that gap - become the expert of that domain! 
+
+You have a significant amount of time ahead of you in which you can just look for *really cool* things to investigate. You will probably have to help get funding, learn to communicate your achievements, and collaborate with people that are experts in that thing - and that is just how the sausage gets made in R&D.
+- You're not wrong, but you're also not right.
+
+I knew several people who wandered into their PhD without goals, and wandered out of it with 5 years of experience in a set of skills that were only useful within the academic lab that they worked in.  That puts them in a tough position for getting a job either in academia or in industry,  because no one needs a PhD graduate without skill that are relevant.  
+
+It's not that that's the measure of "success" per se, but the point of a PhD is to put you ahead of other candidates for the positions you want. If it doesn't do that, what was the point?
+
+It's fine if you don't know your goals when you start, but you had better figure them out before you leave.   The issue with that is, of course, that you may find yourself in a lab, working on something that truly doesn't have a way for you to achieve the goals you do develop.
+
+If you get nothing out of your PhD, you can certainly say it wasn't a successful experience.  
+
+Source: did a very unsuccessful masters degree, before doing a successful PhD.

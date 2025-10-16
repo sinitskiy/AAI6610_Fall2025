@@ -1,0 +1,30 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18aq8w1/good_example_of_model_deployed_in_flask_server_api/
+Title: Good example of model deployed in flask server API?
+
+Content:
+I'm looking for some good GitHub example repos of a machine learning model deployed in a flask server API. Preferably something deployed in a customer-facing production environment, and preferably **not** a simple toy server example.
+
+My team has been deploying some of our models, mostly following documentation and tutorials. But I'd love some "in the wild" examples to see what other people do differently.
+
+Any recommendations?
+
+Comments:
+- You'll need flask to send the job to a queuing service. Otherwise your workers (if using gunicorn etc) will OOM and die. Look at celery + flask. You can also use aws services to do similar things without a persistent server.
+
+Flask for kicking things off and sending back results, then queuing and job orchestration for compute bound stuff
+- Do yourself a favor and Dockerize it in a FastAPI app. From there, you have a lot of options (k8s, Fargate, etc.). When you need to improve your application down the line, you'll be glad to have FastAPI instead of Flask.
+- You’re asking for someone to post a genuine GitHub of their production?
+
+Not to be rude but what dumb idiot would answer that seriously
+- Something like this: [https://www.projectpro.io/project-use-case/flask-big-data-project-with-source-code-using-databricks-and-unity-catalog](https://www.projectpro.io/project-use-case/flask-big-data-project-with-source-code-using-databricks-and-unity-catalog) might help?
+- Winner
+- "I don't want to be rude but let me be really rude right now"
+
+All assholishness aside, you realize there's open source, hobby projects, and a bunch of stuff in between that might be of help to OP? Not everything in this world is a confidential commercial project
+- Yeah but op specifically said he doesn’t want tinkering projects. Did you miss reading that bit?
+- I did not. Are you implying that absolutely all open source and hobby projects are "tinkering"?
+- OP said no toy projects mate, not me... that's disqualifying all hobby projects. I have some fucking awesome hobby projects that would teach noobs a LOT---probably the same for you. OP is being a dolt by disqualifying hobby projects and that's just stupid... you seem to agree with that idea.   
+
+
+Stop trying to read my comment as if I'm the asshole, OP is trying to tell people he doesn't want toy projects and wants production code. The hubris OP has is extraordinary

@@ -1,0 +1,33 @@
+URL: https://www.linkedin.com/posts/terry-bollinger-8a976_using-physics-lingo-to-cover-deception-activity-7375356343018213376-RjlK
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Terry Bollinger的动态
+Terry Bollinger
+2 周
+
+Using Physics Lingo to Cover Deception 
+
+Permit me to let folks in on a little secret: The concept of an “LLM temperature setting" is nothing more than a deceptive marketing gimmick.
+
+At some point in LLM history, someone decided to use an impressive-sounding physics word to cover the fact that LLM researchers had been intentionally adding noise to keep LLM responses to keep them from sounding repetitive. They did not want that because repetition is a giveaway that LLMs are nothing more than mindless databases.
+
+I have no idea who chose to dissert this word into the AI literature and, frankly, I do not want to know. Whoever did it most likely thought it was another fun dress-up word game, one much like many other dress-up word games that AI researchers have used for many decades in academic papers.
+
+Unfortunately, the explosion of interest in selling LLMs as AI mimics meant this dress-up word game ended up causing real harm. That is because any “temperature” setting other than zero means the vendors are inserting intentional random damage into queries to make their LLM databases look smarter than they are. Examples of this harm include tragic losses of life when LLMs advise troubled teenagers.
+
+Adding noise can be legitimate if the user is aware of it and their objective is to create intentionally randomized results, such as landscapes or clouds. However, vendors should always label such additions should always be labeled as “adding noise” or “adding chaos.”
+
+In contrast, if you give an unaware user a “temperature” setting that produces more interesting and exotic responses when set higher, the temptation will always be to set it higher, not lower.
+
+The worst-case scenario is when a user cranks up the “temperature” as high as possible in the dangerously false belief that this is how they can access the “hidden” superintelligence in the LLM database. Everything goes rotten at that poi

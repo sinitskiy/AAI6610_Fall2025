@@ -1,0 +1,10 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/w2awxm/ressources_for_bayesian_time_series/
+Title: Ressources for Bayesian time series?
+
+Content:
+I am working on a time series problem where I have a hierarchical structure (like the one presented in the M5 competition). For instance, the target variable is the sales volume within the company. The sales are divided across countries, departments, product types and product numbers. I am also strongly interested in the uncertainty of my forecast. Let's say I have a lot of data.  
+
+I thought about using a Bayesian hierarchical approach. However, I think empirical results have shown that Neural networks outperform simple bayesian models? Can I get feedback and resources that could help me direct my work most efficiently? I would also love your insights if you have worked on this project. Thanks
+
+Comments:

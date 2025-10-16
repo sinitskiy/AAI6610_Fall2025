@@ -1,0 +1,38 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/t52892/how_do_you_pick_external_reviews_for_dissertation/
+Title: How do you pick external reviews for dissertation?
+
+Content:
+My advisors request that I provide list of unbiased reviewers for my dissertation but I'm not entirely sure how this process works since most of the professors I would recommend I've worked with in the past. 
+
+My topics cover:
+* Metagenomics (Human gut and oral)
+* Antibiotic mechanism of action
+* Machine learning (Classification, clustering, feature engineering, and feature selection)
+* Network analysis (Proportionality networks)
+
+Here's my GitHub for the packages I've made: 
+github.com/jolespin
+
+Here's the papers discussed in the dissertation:
+* Paper I - [Applications of weighted association networks applied to compositional data in biology](https://pubmed.ncbi.nlm.nih.gov/32436334/)
+* Paper II - [Predicting antimicrobial mechanism-of-action from transcriptomes: A generalizable explainable artificial intelligence approach](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008857)
+* Paper III - [Interactions between fecal gut microbiome, enteric pathogens, and energy regulating hormones among acutely malnourished rural Gambian children](https://www.sciencedirect.com/science/article/pii/S2352396421004370?via%3Dihub)
+* Paper IV - Differential network analysis of oral microbiome metatranscriptomes identifies community scale metabolic restructuring in dental caries (Not yet published)
+
+I guess if anyone is interested in being an external reviewer contact me? Though, that's not the purpose of this post. I'm mostly asking how people typically find external reviewers.
+
+Comments:
+- Congrats on nearing the end! Its exciting times.
+
+For my defense was to pick four reviewers, two had to be internal (meaning from within the country I did my phd) and two could be external (foreign). They ended up choosing one of each. In a fanboy fashion, I contacted the researchers who I thought were excellent in my topic. Basically the people I cited the most throughout my thesis. I chose one person who was really a leading figure in the topic (I studied fig pollination so the universe is quite small) and the second one was an expert in pollination in general. For the internal reviewers it was a bit more difficult since I didn't know very many researchers but I asked around to friends who knew people from other universities and just suggested a researcher closest to my field without there being conflict of interest. Turned out to be a not great reviewer, but in the end it all worked out!
+- I guess many times external reviewers can be by referrals or known names in the field.
+
+I believe I can help you, I have a PhD and currently working on metagenomics, but I have experience in antibiotic and some ML. PM your email please
+- Thank you! Yes, it feels good to finally be nearing the end. A lot of stress finishing up a PhD during 1/100 year pandemic and planning a wedding so it will feel good once it's all completed. 
+
+I appreciate your response, this is really helpful. Can you elaborate a bit on what you mean by "a not great reviewer"? Were they overly critical? Unreliable?
+- Well, it was weird. The guy is a bee taxonomist, my thesis was more population genomics of figs and fig-wasps so our fields did not quite overlap, but in the need to give a review of the thesis, it feels like he had to dig deep to find some criticisms and in turn that was a bit hard for me to defend, since things were really fine details - things like if i did the proper taxonomical descriptions of what I called new species based only on molecular data, things like that.   
+Not that it was unreliable, it feels that in the need to find something to criticize, he kind of burst an otherwise pretty good defense bubble!    
+Also, hi picked up a very annoying mistake which follows me to this day and its that word somehow reformatted the figure numbers of all my chapters and so the legends made absolutely no sense!  
+My supervisor, the thesis committee and the other reviewer didn't pick up on it until this reviewer did!!

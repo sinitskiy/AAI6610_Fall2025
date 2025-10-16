@@ -1,0 +1,22 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1lv68b7/why_did_early_behaviorists_love_shocking_their/
+Title: Why did early behaviorists love shocking their subjects so much?
+
+Content:
+In most animal behavior studies of the 20th century, electric shocks were very often used to punish or train test animals. Most of the literature mentions electric shocks very often. The test environment was typically very sterile and with very controlled stimuli, the antithesis of what we considered good animal husbandry today. More often than not, the traditional methods were not always working for non-model animals. For example, I was searching papers on reptile and amphibian cognition, and a common complaint was that earlier researchers did not take into account the unique biology of those animals. For example, many of those animals will stay still to conserve energy if they are shocked. then the verdict of those researchers was that they are unintelligent and cannot learn.
+
+So my question is, why didn’t they use more naturalistic training environments for their test animals? Even with humans, humans will learn better if the environment suits their interests. Was it ideological? Were they hardened from the second world war? Does their stamps trace back to des Cartes or before?
+
+Also somewhat related to the above, but it seems that in the same time, it was much more acceptable to make the same adversive tests to children, and sometimes scientists did them to their own children. Is there any connection? Did they treat children more or less like animals at this time?
+
+Nowadays, it is quite different. Most researchers use more naturalistic environments, give social enrichment if applicable, particularly for non-model subjects. They are trying to “converse” with the animals and what they really find important. Also, it seems that they had put a ghost in the machine. In the past, terms were purely technical and mechanistic. Nowadays animals have cognition, emotions, intentions, agency and things that they value. When did the change take place?
+
+Comments:
+- Shocks and sterile, simple environments were used because they offered greater control and repeatability.  A shock can be calibrated so every animal gets exactly the same voltage and duration, reducing the possibility that a difference in response is due to an accidental difference in stimulus.  Shocks also produce pain without actual damage, which reduces the chance that injury, rather than learning, would change an animal's behavior.   
+
+Sterile artificial environments were similarly used in an attempt to reduce any extra components which might influence behavior differently between different trial runs.  The mpre complex the setup, the harder it is to ensure it is  identical each time, except for the thing being tested.
+- In addition to reproduceability, the fewer additions to the system means fewer additional confounds to the research.  Behavior is difficult as it is when you can't say for sure if some minute aspect of the experiment biased the whole data set.
+
+Also, not using more technical and sterile language in modern ethology is not to its benefit.  You risk anthropomorphizing too much and biasing the key take aways from your work.  It's especially bad with pop science in the mix these days.
+
+Animals are not people.  They may have some of the same experiences we do if there is some evolutionary conservation of that behavior, but more often than not they experience the world in wildly different ways than we do and even wildly different ways from each other.

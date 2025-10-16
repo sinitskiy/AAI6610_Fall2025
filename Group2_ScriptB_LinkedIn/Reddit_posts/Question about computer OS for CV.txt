@@ -1,0 +1,22 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1longzo/question_about_computer_os_for_cv/
+Title: Question about computer OS for CV
+
+Content:
+I mainly just lurk here to learn some things. I'm curious if you are running Windows for real time processing needs or a different OS. I use CAD on a laptop with specifications recommended by the software manufacturer, and it will still lag occasionally. A long time ago, I controlled a machine via printer port outputs using C and Unix. It's been so long, but I remember being able to dedicate almost all the Unix resources to the program. I also work with PLCs where the processing is 100% committed to the program.
+
+I've done Cognex vision projects where the processing is on the camera and completely dedicated to the task. Cognex also has pc software, but I've never used it. I'm curious how a fast and complex vision program runs without the OS doing some sort of system task or whatever that causes lag. 
+
+I know most everyone here is programming rather using an off the shelf solution. Are custom programmed vision projects being used much in automation settings? 
+
+Comments:
+- I assume you mean real time in the colloquial, non technical sense?
+
+I pretty much exclusively use Linux and Mac
+- I have co-workers that build their "edge" systems on windows. I find they have a lot more headaches getting stuff to work than I do on linux
+- Sorry, I don't know the correct term. Basically, when a fast output from the vision is required, that can't be delayed. Linux and Mac make sense.
+- Thanks!
+- As an FYI, there is such a thing as a real time OS, which is why I think there was a question of clarification. Beyond that, you can make it work on Windows, but in my experience Python on Linux is generally faster. It's been a while, but I also vaguely recall trying WSL2 on Windows and found that Python was snappier there too.  
+
+
+Running on a CAD laptop should be fine, you just need to ensure you have your GPU drivers installed and if you're using anything with CUDA acceleration, that you're using the proper build of the libraries. I have a Windows desktop as well and using TensorRT exported PyTorch models, I can get inference times that are \~1.5 ms ([see here](https://docs.ultralytics.com/integrations/tensorrt/#__tabbed_5_1) for the performance results for a RTX 3080 12GB). If you run into lagging issues, first step should always be to reboot your computer. It will clear up \~95% of problems.

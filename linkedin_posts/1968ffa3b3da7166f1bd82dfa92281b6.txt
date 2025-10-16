@@ -1,0 +1,5 @@
+URL: https://www.linkedin.com/posts/bfeld_llms-just-lie-activity-7341882205377318912-gGUD
+Date: 2025-09-24
+Author: Unknown
+
+A detailed example of LLM hallucination from an experience I had earlier this week. https://lnkd.in/gbAS-cDd

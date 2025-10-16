@@ -1,0 +1,17 @@
+標題: Perceptual clustering in auditory streaming
+
+摘要: Perception is dependent on the ability to separate stimuli from different objects and causes in order to perform inference and further processing. We have models of how the human brain can perform such causal inference for simple binary stimuli (e.g., auditory and visual), but the complexity of the models increases dramatically with more than two stimuli. To characterize human perception with more complex stimuli, we developed a Bayesian inference model that takes into account a potentially unlimited number of stimulus sources: it is general enough to factor in any discrete sequential cues from any modality. Because the model employs a non-parametric prior, increased signal complexity does not necessitate the addition of more parameters. The model not only predicts the number of possible sources, but also specifies the source with which each signal is associated. As a test case, we demonstrate that such a model can explain several phenomena in the auditory stream perception literature, that it provides an excellent fit to experimental data, and that it makes novel predictions that we experimentally confirm. These findings have implications not just for human auditory temporal perception, but for a wide range of perceptual phenomena across unisensory and multisensory stimuli.
+
+Author summaryPerceiving the world requires humans to organize perceptual stimuli according to the likely sources that generated them, requiring inference about these sources and their relationship with the generated stimuli. As an example, the sound of two different species of song birds should be segregated in order to better identify them. In this paper we utilize ideas from statistics to propose a way for the mind to do the allocation of stimuli to sources, that is not restricted by the number of stimuli, and that instead combines information dynamically as the complexity grows. We show that this not only qualitatively explains known phenomena in auditory perception, but can also quantitatively explain behavior, and leads to an experimental prediction that we confirm.
+
+發布日期: 2025-06-20
+
+DOI: 10.1101/2021.05.27.446050
+
+作者: L, a, r, i, g, a, l, d, i, e, ,,  , N, ., ;,  , Y, a, t, e, s, ,,  , T, ., ;,  , B, e, i, e, r, h, o, l, m, ,,  , U, .,  , R, .
+
+類別: neuroscience
+
+PDF路徑: downloaded
+
+下載時間: 2025-09-24 13:23:26

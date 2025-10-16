@@ -1,0 +1,78 @@
+URL: https://www.linkedin.com/posts/samwise_very-pungent-cant-help-it-too-easy-activity-7276352228913770496-KTNd
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sam Lee的动态
+Sam Lee
+
+Strategy and operations leader focusing on monetizing innovations
+
+9 个月  已编辑
+
+Very “pungent” (can’t help it too easy 🤣) but oh-so accurate. Back at Snowflake, we used to say you couldn't have an AI strategy without a data strategy. An LLM is essentially a probabilistic model of very large, unstructured data. If your AI learn from bad information, it'll repeat bad information.
+
+Stakes are just that much higher with Agents; bad conversation becomes bad actions.
+
+Eduardo Ordax
+
+🤖 Generative AI Lead @ AWS ☁️ (150k+) | Startup Advisor | Public Speaker | AI Outsider | Founder Thinkfluencer AI
+
+9 个月  已编辑
+
+It’s all about data….
+
+AI is cool but still one of the biggest challenges for customers today it’s on the data part. And this is super important because it’s something you just cannot skip.
+
+You can create a cool chatbot, virtual assistant or even re use some ML models to cluster your customers, but if the quality of your data “sucks”, the output you’ll get will suck too. Regardless if it’s ML, AI, GenAI or Agents. The output will still be the same 💩 💩💩
+
+#ai #data #genai #agenticai
+
+Kudos to Dr. Christian Krug for his previous post on this topic 🙌
+
+19
+1 条评论
+赞
+评论
+分享
+Godwin Josh
+
+Co-Founder of Altrosyn and Director at CDTECH | Inventor | Manufacturer
+
+9 个月
+
+It's fascinating how the stakes rise with Agents, pushing us to scrutinize data quality even more rigorously. The ethical implications of LLMs learning from biased information are a constant concern for researchers like myself. How do you envision mitigating these risks in practical applications?
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+4,095 位关注者
+
+621 则动态
+查看档案  关注
+探索相关领域
+How Llms Process Language
+How to Understand LLM Evaluation Methods
+How to Understand Neural Networks and Llms
+Understanding the Limitations of LLMs
+How Poor Data Affects AI Results
+How to Improve Agent Performance With Llms
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Proje

@@ -1,0 +1,35 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1kydj2t/i_turned_a_real_machine_learning_project_into_a/
+Title: I turned a real machine learning project into a children's book
+
+Content:
+
+
+Comments:
+- Maybe I'm way off base here and people like this, but to me there is something extremely off about this, maybe in a "late-stage capitalism"-ish or even propaganda-ish kind of way. What age is this targeted at? Why should kids care about or be exposed to computer vision / machine learning in cutesy stories? What is the actual moral of the book for a kid to learn or objective with this? I really don't get it and it makes me feel weird in a way that's hard to put my finger on. 
+
+My 5 year old reads books that are either pure entertainment that he picks (dumb marvel stuff, Munsch, etc) or morality plays where they're supposed to learn some virtue like sharing, respecting boundaries, trying new things, etc. I don't understand why I would read him a book about CV object detection / localization any more than I would read him a book about being an accountant or hardware engineering, or any other occupation or technology.
+
+Again nothing personal against whoever made this book. I've just been seeing it getting promoted repeatedly on Reddit and wondering if anyone feels the way I do about it or if maybe I'm wrong and need to reevaluate why I feel this way about it.
+- Amazing ! Love the illustration.
+- 👍🏾
+- I'm into image processing type work ... This cover looks cute but with strong dystopian undercurrents that overwhelm and make me sad.    I'm sure there are plenty of teachable moments within it, but I'm not liking the cover one bit.
+- That is great
+- Eh, I dunno. I read plenty of children's books about cars or planes etc. as a kid. This doesn't feel any different than more traditional "education-as-entertainment" children's books to me, except that it's focus is on a more modern technology (CV).
+- I have books for my 3 yo called computer engineering for babies, and a set of "baby university" books that explain things like quantum physics in simple concepts for toddlers, and the kid loves them as much as silly stories and heartwarming stories. Because kids are people, and they like to be exposed to a variety of ideas and experiences, and they have their own interests and like to learn. Sometimes I read a just for fun scifi novel, sometimes I read a book about how to code quantum computers. It's not surprising my kid might have similarly diverse interests.
+We live in a world with technology, it's good to expose kids to how technology works just as much as it is to expose them to fairytales and fantasy and superheroes. Because it is a part of their world. Doe every kid need to read these types of books? No. Do i force my kid to a certain amount per day/week? No, they are just available. Science books are important for babies just as they are for kids and adults.
+
+I personally might not choose this particular book, and I am not speaking to this book specifically, but there is absolutely virtue in exposing kids to tech concepts in a world governed by tech.
+- I guess if you do ML as a career then it could help explain to your children what you do. There are plenty of books featuring people with common careers like teacher, store clerk, firefighter, etc. But I agree this one feels like a stretch…
+- I like it and would potentially read it to my 3 yeat old.
+
+We've read a series of books about people's jobs (i want to be a firefighter, i want to be a scientist, i want to be a veterinarian, etc) and each one talks about the many types of jobs within each field and what they all do. Not to mention tons of books about construction.
+
+It's hard to explain what working on a computer really means. My kid just thinks we type all day but i don't see anything wrong with shedding some light on this world
+- You certainly don’t have to read  STEM books to your kids if you don’t want to.  The book is for elementary aged kids, 7-12.  By the time you’re 7, you’re already learning coding concepts in public schools.  I buy any data books that come out to get my kids understanding what is possible, demystifying the world around them, and learning how things are done…. The Data Detective at the Carnival is another data book that I recommend to people. We’re also in love with Mark Rober’s YouTube channel.
+- Yes, this.  I want to be able to explain to my kids what I do..  and I’ve always done it in a poor and unorganized way, then I end up losing them. I also think about how they’re already seeing AI all around them, and I want them to understand how it’s built so they don’t think magical robots are going to take over.
+- Do you have a list of other data books that you're a fan of? The only one I've read is Drawing Data with Kids:
+https://www.amazon.com/Drawing-Data-Kids-Data-Literacy-Visualization/dp/B0C63M3SN6
+- My 7yr son loves the bayesian probability for babies book (we have the rest of the "for babies" books, but they don't resonate the same), and I've always been obsessed with "Rosie Revere, Engineer"..  it's not data, but it is about a girl that loves to build and is also written in rhyme.  I wish I had a list, if I think  of another recommendation I'll let you know :)
+- Cool, I will check out the bayesian probability one! I have the Rosie Revere and other career-rhyming books and think they're all high quality as well. Got your book too!
+- Thanks! I appreciate it.  Let me know your thoughts when you get it :)

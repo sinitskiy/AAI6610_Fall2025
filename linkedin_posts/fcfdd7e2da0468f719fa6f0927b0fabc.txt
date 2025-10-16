@@ -1,0 +1,16 @@
+URL: https://www.linkedin.com/posts/talsraviv_i-noticed-i-deal-with-llm-hallucinations-activity-7351339855592747010-_TA3
+Date: 2025-09-24
+Author: Unknown
+
+I noticed I deal with LLM hallucinations with a few subconscious habits as a product manager:
+
+1️⃣ If it's an objective fact I want to look up, I reach for Perplexity. It first loads the context window with a ton of credible web content before proceeding, which focuses that information as top of mind for the LLM.
+
+2️⃣ If the stakes are high and I need precision, I'll add things like:
+"Don't make up anything I didn't explicitly say above."
+"If you don't know the answer, don't make something up."
+"Check your work for mistakes." 
+
+3️⃣ I'm also more forgiving. I'm self-aware that I celebrate AI's creativity when it's what i want, and call it a hallucination when it's not what I want. 
+
+I often think "how is this not built-in yet?" But then I realize that given how often "hallucinations" are exactly what we want, it's probably not an easy problem.

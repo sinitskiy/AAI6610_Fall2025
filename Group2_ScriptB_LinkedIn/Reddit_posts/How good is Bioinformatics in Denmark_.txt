@@ -1,0 +1,85 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/rtlqh7/how_good_is_bioinformatics_in_denmark/
+Title: How good is Bioinformatics in Denmark?
+
+Content:
+Hello,
+
+I am from the USA and have a bachelor's degree in mathematics from a good university and two years work experience in financial services as a software developer building Rest APIs, Microservices, Websites, and working with Databases. My experiences have been across the full stack.
+
+Of note, during my undergrad I took numerous biology courses: Plant Genetics at a graduate level, Biochemistry, Bioinformatics at a graduate level, Molecular Genetics, Modeling Mathematical Biology, population dynamics, etc. Great GPA.
+
+Though I've forgotten a lot of it.
+
+I read that Denmark has a large portion of bioinformatics jobs in the world. The company I'm specifically looking at currently is Novo Nordisk. They focus on Chronic diseases that I'm personally susceptible to, so it would be a good experience to work there for myself and others. I think it would be great to get out of the country for an international Master's degree in Bioinformatics and Systems Biology and get at least a few years work experience in Denmark. However, I hear that it's hard to stay as an American and easy to have your residence permit revoked or not renewed every 2 years.
+
+Danish Culture is significantly different from the USA, and I'm researching it carefully. I plan to learn the language before I apply too.
+
+If I had to return to the US, how good would a Danish education allow me to find PhD programs back in the states in a field outside Bioinformatics ( like Statistics, Machine Learning, Computer Science )? They're ranked among the top 400 universities in the world.
+
+What do you think of this idea in general?
+
+Comments:
+- **How good is Bioinformatics in Denmark?**
+
+Very good, plenty happening in the academy and also in industry. Good salaries and hard to beat quality of life.
+
+**If I had to return to the US, how good would a Danish education allow me to find PhD programs back in the states?**
+
+Pick any country that you think will allow you to get into a PhD in US later, Denmark will not fall behind. It has an excellent education system and ranks 7th in Nobel laureates per capita.
+
+**What do you think of this idea in general?**
+
+It's a very good idea! You don't need to learn the language ( of course it's always a good idea), but as long as you live and work in the greater Copenhagen area, everyone will speak English.
+
+As a cosmopolitan city, your interaction with actual Danes will be less than you imagine.
+- Be aware of what you’re getting into.  I spent a year in Denmark after my PhD, and it was terrible. I’ve ranted about it many times, so I’ll keep it brief: things like drivers licences are very difficult.  You must do the test with an extremely expensive translator, or learn to speak Danish.  You won’t make Danish friends because Danes don’t believe in accepting people into their close friend network unless they went to high school with you, or you’re dating a Dane.  The cost of living is very high (and I was already living in VHCOL regions in Canada and the states to compare with.)
+
+A lot of people go over and say it was miserable - but if you’re not a visible minority, and can put up with things, it can be bearable. Especially if you star in Copenhagen.  Outside of Copenhagen, you’ll discover that Denmark is much less friendly to foreigners.
+- Yes it will be fine. If you're interested in ancient DNA, the Lundbeck Geogenetics centre in Copenhagen is world class.
+- There are heaps of research centers and big bioinformatics departments in Novo Nordisk, Lundbeck, LEO Pharma, Chr Hansen and all the other big pharma companies. I work in bioinformatics in Copenhagen, let me know if you have any more specific questions or the like!
+- I would do it. Go for it
+- Please try to learn the language.
+- Thank you Commonsnook.
+- Thank you for your insight. I've already found out about a lot of this in my readings, both books, reddit, and Google. Personally, I don't like driving. It's super stressful to me. I know you make Danish friends at Clubs involving activities like Tennis or Music or School and that there's multiple stages of Danish friendship each with its own social norm over months if not years. You gotta follow the no small talk culture but also work for relationships at activities.
+
+My mother was born in Germany (not longer a citizen), so I have European features. The only issue is that I'm a short male. About 5'6".
+
+I'm going to spend a year learning Danish before I even apply to the universities.
+
+Thank you though.
+- I appreciate your answer!
+- I have one specific question: in Master's programs, how important is in depth and useful project work vs coursework. I'm looking at the University of Copenhagen Bioinformatics curriculum and see 9 week independent Bioinformatics projects with a supervisor as an restricted elective.
+
+If you really studied your stuff well, you should be able to make something really decent in 9 weeks of effort. How will companies view a good elective project in addition to a thesis versus only coursework + thesis?
+
+I imagine doing a 9 week project could also improve the quality of your Master's thesis. Do you agree? How many of those projects should I do in lieu of coursework?
+
+If I go that route, I'd likely have to teach the course elective I wanted to take in its place to myself.
+- Hello! 
+
+Sorry in advance for the big text and questions. Given the main post being related to denmark and given you saying you work in bioinformatics in copenhagen, i thought it could make sense to make this comment here. I can make an actual post if you think it makes more sense. I've never posted on Reddit, sorry.
+
+I'm a 1st-year Bioinformatics Master's student, and I need to decide by mid-February whether to pursue a Thesis or an Internship in Erasmus. The internship doesn't have to be research-focused, as long as it involves biological data. I’ve heard of someone interning at Deloitte with biological data but don’t know of other companies offering similar opportunities. I went into Bioinformatics (after a Biochemistry bachelor's) to transition into the informatics field because research in my country is underpaid, and I don’t have the “spark” for it that professors say is necessary.
+
+ Given this, my questions are:
+
+1. What does (or can) a bioinformatician’s daily work in research look like? Personal experiences are welcome!
+2. I feel like I might not enjoy research. What alternative internships/companies/jobs are there for a bioinformatician? Is there a way to work with biological data, such as in a data analyst role, without being in the research world (i.e., without needing to constantly read/write papers and articles)? 
+3. Even though I might not want research, I’m not 100% sure. I have the option to do my master’s thesis at Novo Nordisk in Copenhagen. Would that be a good place to start a career, even if I decide not to pursue research? Specifically, could being associated with a big pharma company like Novo Nordisk make it easier to find a job in Denmark?
+
+4. I’m considering an Erasmus program in Denmark because it seems like a great place to build a life. But with high housing and living costs, i feel like i need to be sure ( so i can see this as a monetary investment that can pay off in the future, given that salaries in denmark are much higher than in my country). Are there other countries just as good for starting a bioinformatics career but more affordable? 
+
+Thanks so much for your help!
+- Good luck!  Sounds like you know what you're getting into.
+- [deleted]
+- Companies often hire by giving you a case to solve before the interview, so having some experience with projects is a good idea. Depending on what you are interested in, having done projects in that field is a nice bonus. But it’s part of most courses in DK to do projects - and yes, it will improve your thesis considerably. I personally learn more from projects than coursework. 
+
+Taking your master thesis at UCPH will automatically put you through several projects, I wouldn’t worry too much about that. If you like projects (like me), consider the bioinformatics program at Technological University of Denmark (DTU), it has bigger emphasis on projects than coursework.
+- I hope I wasn't dismissive. I simply think that friendship in other countries with a different culture isn't that great either. It's a bit superficial, usually breaks easily unless the people are mature, and leads to the potential of being used. Plus being Autistic, I don't really have any friends except for family and I'll be alone soon anyway because my parents are almost 90. I figure I might actually like Denmark once I get used to the culture shock after say 6 to 9 months. Trying to have realistic expectations. I'll be 30 in a couple years. Time to get doused in pepper hahaha
+- Thank You!
+- I was looking into that University as well! It was the first I looked at. I think it would be a nice fit since it has a 10 year requirement on Bachelor's instead of a 5 year requirement like the University of Copenhagen.  My B.S. is 4 years old, and I don't want to rush moving to Denmark before I'm ready mentally and financially. How does DTU view Bachelor's degrees over 5 years old? If you don't know easily, don't worry. I can email the University.
+- No Worries. I thought I’d done my homework before going to Denmark, but the reality was nothing like I expected.  
+
+I just warn people to be prepared. Culture shock is one part of it, but Denmark is an unforgiving place to try to establish yourself.
+- I’m not sure about that, but for sure email them! And hit me up if you have any other questions about DK or bioinformatics here :)

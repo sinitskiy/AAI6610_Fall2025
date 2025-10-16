@@ -1,0 +1,8 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17us7y6/how_to_estimate_how_many_rare_autosomal_dominant/
+Title: how to estimate how many rare autosomal dominant diseases are gain-of-function?
+
+Content:
+For a school project, we are attempting to build a sort of knowledge graph and then machine learning model to analyze rare autosomal dominant diseases. How can I best find an estimate of the title query? I am searching literature, but even still having a difficult time finding any conclusive results. Thank you for any suggestions.
+
+Comments:

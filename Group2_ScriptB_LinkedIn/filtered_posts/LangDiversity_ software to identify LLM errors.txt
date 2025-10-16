@@ -1,0 +1,18 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16x84o1/langdiversity_software_to_identify_llm_errors/
+Title: LangDiversity: software to identify LLM errors
+
+Content:
+Due to challenges such as hallucination, detecting errors in the output of a given prompt becomes an important challenge.  LangDiversity is an implementation of "diversity measures" that are domain independent and can be used to measure the uncertainty in the result of a language model.   
+
+Type pip install langdiversity   
+Video: [https://www.youtube.com/watch?v=86J\_K9mR7lw](https://www.youtube.com/watch?v=86J_K9mR7lw)  
+Web: [https://neurosymbolic.asu.edu/llm-correction/](https://neurosymbolic.asu.edu/llm-correction/)  
+Visit [https://github.com/lab-v2/langdiversity](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnRVeHZVSm9sazhvU2VtaDRaQ0w0aFdUSnhnQXxBQ3Jtc0trbUJPSnlwUTZIUzVwY3B2ZWtiNFpwLS1vTC0tYmdRa3ZuNjJiblBfY2I4X0EtX3c0cmNhWkFvTmdXWndxeEc4b0h6OEZaLVc2OTVRZVF1cUhLZEVmUHZyZzA3bklrRTZCWnpwTFFNVEZ6SHJPYm84dw&q=https%3A%2F%2Fgithub.com%2Flab-v2%2Flangdiversity&v=86J_K9mR7lw)   
+Read the paper: [https://arxiv.org/abs/2308.11189](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnd1ZnBPSVBMdjJBYXFxbWdXa2tfYzIweGtzZ3xBQ3Jtc0trc1lqYXhEVlF3cVRCcGxqbV80M0xHS2VaTGEwR3o2VmlJeFVHdFc1X1VDdlRGcTdwSUpjZXV6QnNLTUdyOGhoMEpEQjVBSEl4VDQ2TjBhVU0xbjBZa1VGODRLWmVseDRSaDhUNGRnbHVPVnQ2cWpNcw&q=https%3A%2F%2Farxiv.org%2Fabs%2F2308.11189&v=86J_K9mR7lw) 
+
+&#x200B;
+
+https://preview.redd.it/p4w9ou5msmrb1.png?width=1021&format=png&auto=webp&s=8a138d0569bfac27763145ad1f4ad7d05a5fce15
+
+Comments:

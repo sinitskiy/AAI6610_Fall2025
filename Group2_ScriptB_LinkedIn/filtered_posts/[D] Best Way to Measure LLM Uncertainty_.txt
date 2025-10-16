@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/11aq4qo/d_best_way_to_measure_llm_uncertainty/
+Title: [D] Best Way to Measure LLM Uncertainty?
+
+Content:
+What's the best way to quantify the uncertainty of a trained LLM? I assume the entropy of the model's final probability distribution is a decent measure. Just wanted to know if the NLP community sticks to this measure, or if there's something more specific to language?
+
+
+Would really appreciate recent references that may have popped up over the past few months (if any). Also if there are any cool & easy to integrate implementations. Thanks!
+
+Comments:
+- In all honesty, at some point, any type of evaluation that is not qualitative is simply a joke. I have observed it a long time ago while working on NMT and trying to base the results on BLEU score - it literally meant nothing.
+Trying to force new metrics based on simple rules or computation will probably fail - I believe we need humans or stronger LLMs in the loop. E.g., humans should rank the output of multiple LLMs and the same humans should do so for multiple different language models, not just for the new one.
+Otherwise, I view it as a meaningless self-promoting paper (LLMs are not interesting enough to read about if there are no new ideas and no better performance).
+Entropy is good for language models that are like "me language model me no understand world difficult hard", not GPT-3 like.
+
+Edit: this semantic uncertainty looks interesting but I would still rather let humans rank the results.
+- Came across this recently - [Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation](https://arxiv.org/abs/2302.09664)
+- along with each prompt, just put: "And at the end of your response, state on a scale from one to ten how confident you are in you answer"
+
+This works amazingly and is very accurate. [source](https://www.urbandictionary.com/define.php?term=trust%20me%20bro)
+
+It has the added bonus where you can get confidence intervals on your confidence intervals just by asking how confident it is in it's estimation of its confidence.
+- I've published a LLM uncertainty-estimation method ('BSDetector') that can outperform just using the entropy/perplexity of the LLM, by simultaneously accounting for the epistemic, aleatoric, and semantic uncertainty:  
+[https://arxiv.org/abs/2308.16175](https://arxiv.org/abs/2308.16175)  
+
+
+If you're looking for a quick solution that already implements this, my company offers one:   
+[https://help.cleanlab.ai/tutorials/tlm/](https://help.cleanlab.ai/tutorials/tlm/)
+- I am not in the language community, but in general, I dont think there is the 'best' way for uncertainty measure. In my opinion, the research on uncertainty and out-of-distribution (detection) is still very primitive and without a solid theoretical ground. For a general reference, please have a look at a [recent ICLR paper](https://openreview.net/forum?id=YnkGMIh0gvX).
+- [https://nanonets.com/blog/how-to-tell-if-your-llm-is-hallucinating/](https://nanonets.com/blog/how-to-tell-if-your-llm-is-hallucinating/)
+- Uncertainty is different from quality. BLEU doesn't attempt to measure the certainty a model has in its predictions. A model could be highly certain and be wrong or be uncertain, but correct. The two measures are independent.
+- That's a good point
+
+What sounds like an open problem statement is how to get these LLMs to "quantify" that themselves the same way humans do. It's also interesting how that relates to the broader question of sentience and consciousness.
+- Very cool, thanks!
+- I’ve heard you can even ask the LLM:  what fraction of your uncertainty is aleatoric vs epistemic, and how would the uncertainty estimates changed if you used bootstrap vs MC dropout :)
+- weather coherent gray soft chase aback frame zephyr paint grab
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- it's very overconfident
+- agree. anything else other than gaussian processes (which do not scale or require strong regularization to work well with deep nets) is not principled and is only empirically demonstrated (augmentation methods, ensembles etc)
+- my post was a joke. I linked urban dictionary's entry for "trust me bro" as my source

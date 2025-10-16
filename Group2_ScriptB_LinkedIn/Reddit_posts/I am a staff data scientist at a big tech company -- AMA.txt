@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1kjjb32/i_am_a_staff_data_scientist_at_a_big_tech_company/
+Title: I am a staff data scientist at a big tech company -- AMA
+
+Content:
+**Why I’m doing this**
+
+I am low on karma. Plus, it just feels good to help.
+
+**About me**
+
+I’m currently a staff data scientist at a big tech company in Silicon Valley. I’ve been in the field for about 10 years since earning my PhD in Statistics. I’ve worked at companies of various sizes — from seed-stage startups to pre-IPO unicorns to some of the largest tech companies.
+
+**A few caveats**
+
+* Anything I share reflects my personal experience and may carry some bias.
+* My experience is based in the US, particularly in Silicon Valley.
+* I have some people management experience but have mostly worked as an IC
+* Data science is a broad term. I’m most familiar with machine learning scientist, experimentation/causal inference, and data analyst roles.
+* I may not be able to respond immediately, but I’ll aim to reply within 24 hours.
+
+**Update:**
+
+Wow, I didn’t expect this to get so much attention. I’m a bit overwhelmed by the number of comments and DMs, so I may not be able to reply to everyone. That said, I’ll do my best to respond to as many as I can over the next week. Really appreciate all the thoughtful questions and discussions!
+
+Comments:
+- How do I make it as a data analyst at a start up where you’re the only person who cares about causal inference instead of millions of dashboard?
+- PhD worth it or not?
+- Favorite models, is sticking to the basic ones more interesting since data quality matters most ?
+
+Do you see the field being replaced by AI like it's been claimed so many times, in 5 to 10 years or even ever ?
+
+Thank you  for the AMA !
+- how do you approach continuous learning as data science continues to evolve and add new frameworks, books? papers? youtube?
+- What are the tell tale signs of a pre IPO startup failing i.e. when should I leave this god forsaken place
+- What do you do if your manager is blatantly wrong and ignoring a serious problem you bring up? I've been in this situation and their response is either ignore, say "I hear you" and do nothing, put themselves in a defensive position like "I know about statistics too", etc. I've tried to relay the information and argument in so many different ways ...
+
+This is not a small issue either like an argument of what is the best method or something of the sort. It's more about my manager not caring about quality of data or results we are passing to an engineering team. I think it's partly because they don't want to acknowledge that they have made bad decisions and don't want to deal it each. And partly, because my manager doesn't understand that training models with low quality data can create massive problems (I just don't understand how you can't realize that?). I've one point they said "it's not our problem, they should check the data themselves". How are they going to do that exactly???
+
+Anyway, the lack of transparency puts me in a very uncomfortable situation.
+- Thanks for the AMA - 2 questions:
+
+1. How important do you think is learning causal inference (obviously experimentation, but also observational causal inference) for career progression in data science (in the product DS track)? More specifically, how many strategic questions / deep analyses that you might tackle for a product DS role involve causality beyond a simple automated AB test via the experimentation platform that the company is using?
+
+2. Do you think there is a future for Product DS? Or do you think it would be more strategic to move away into other DS tracks (or away from DS entirely?) - I know a lot of people have different opinions about this, and so I was just curious on getting more opinions.
+- If we consider your role and work as a black box, what are your inputs (data sources, is it pre-processed or not, does it come from another team, etc), what are your outputs (what do you produce, who do you submit that work to, who uses your work, what part of the stack are they at?). Within the black box (you), what do you do, how do you test it?
+- How do you explain your more complex models and analysis to non-technical/functional roles such as HR or even just a mid to upper level management role that does not have a background in advanced analytics?
+
+My company is about 5.5k employees (500 or so are Corporate)  so we do not have many people who have been exposed enough to anything more complex than maybe Linear Regression at most. 
+
+Thanks!!
+- Do you think you're doing good, bad, or neutral for the world in your capacity as a data scientist at a big tech company?
+- What’s the future of data science with growing AI? Organizations are now mostly focusing on Generative AI. How do you think it is going to expand from here?
+- for a data analyst, which set of skills is more important to recruiters - technical skills (data cleaning, data manipulation, dashboarding) or business skills (understanding of industry/domain, ability to conduct business research, presentation skills)?
+- Netflix posts the high range on their DS salaries at $750k on LinkedIn. Real or bullshit?
+- Doing a PhD in Stats too (focused on non-param stats + GLM), planning on going to industry after. 
+
+Did PhD widen or narrow the set of companies that wanted to hire you?
+
+Is it still the same repetitive work as in data analyst roles (I have 3 yoe in it), where you mainly explain things to execs, or does DS have more “research”?
+
+Did you have experience in R&D departments in the industry and what was it like?
+- I’m a Ph.D candidate in a STEM field set to finish in about 1.5 years. I got wrapped up in this administrations funding cuts and lost my RA funding for next academic year. While TA’ing is my backup, I’ve been applying to remote DS jobs for the last month. 7+ years of numerical modeling, Bayesian and frequentist statistics, pipelines from big data sets to interactive 2d and 3d data visualizations - primarily in Python and IDL. BUT… no direct AI / ML experience, which I’m finding a lot of jobs are asking for.
+
+I’m essentially looking for a full time remote DS role while I finish my Ph.D. on the side on my own time. I address this as well in my cover letters along with my gap in AI / ML along with eagerness to learn. It’s hard for me to put a finger on what hiring managers and recruiters might think of this idea of finishing my Ph.D. unpaid on the side while I onboard and work in industry as a data scientist. Part of me think it’s seen as a huge risk on the company’s side of things. Thoughts? I haven’t heard anything back from any of my apps.
+- What does progression look like for ICs above Senior? What did you do to get promoted?
+- which tools do you use on a regular basis, and what does your role mostly entail. 
+
+Reason for asking, which skills are required to do what you are doing now.
+- What projects would you want to see in my resume to hire me ?
+- How did you come up with your thesis topic?
+What aspect of data science interests you the most?
+What is your job day to day? Is it a lot of experimentation or fitting models or data pipelines etc?
+For a new aspiring data scientists, what are some really important topics that we need to learn?
+- I was recently promoted to staff data scientist at a mid-size space tech company.
+
+What advice to you have for me transitioning into such a role for the first time.

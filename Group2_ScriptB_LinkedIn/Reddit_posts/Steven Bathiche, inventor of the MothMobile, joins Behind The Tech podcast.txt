@@ -1,0 +1,12 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/oo5wgb/steven_bathiche_inventor_of_the_mothmobile_joins/
+Title: Steven Bathiche, inventor of the MothMobile, joins Behind The Tech podcast
+
+Content:
+Microsoft's CTO Kevin Scott recently had Microsoft Technical Fellow Steven Bathiche guest on his Behind The Tech podcast. Steven leads the Applied Science group at Microsoft, where the team uses disciplines like machine learning, artificial intelligence, physics, biology, engineering and more to develop and improve products and services at Microsoft. 
+
+In this episode Steven discusses how he invented the Mothmobile by using the control system from an insect to power his robot with the entomology department at Virginia Tech.
+
+Link to the podcast page: [https://www.microsoft.com/en-us/behind-the-tech?SilentAuth=1](https://www.microsoft.com/en-us/behind-the-tech?SilentAuth=1)
+
+Comments:

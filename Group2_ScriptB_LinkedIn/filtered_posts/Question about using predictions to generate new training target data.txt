@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/4b1cmp/question_about_using_predictions_to_generate_new/
+Title: Question about using predictions to generate new training target data
+
+Content:
+Hi, I'm analysing text data into a simple yes/no category. My training set is around 3k and produces some reasonable F1scores/accuracy (F1 ~70%). The model appears to produce a probability from 0-1. I am thinking about manually tagging some more data for use in another round of training, if the probability of predictions is around 0.45-0.55. My intuition tells me this is the area where the model has the most uncertainty in allocating to a category (being close 0 or 1).
+
+Is this unwise? Am I potentially causing some bias I am not aware of? Will doing this have any noticeable impact on improving model performance?
+
+Comments:
+- This is an example of
+[active learning](https://en.m.wikipedia.org/wiki/Active_learning_(machine_learning\)) and is a well-studied area. Your idea for identifying new items to annotate is called *uncertainty sampling* and is one of a number of such heuristics. There is a danger of bias, in my experience there's a bit of a black art to designing an active learning setup that works well.
+- Thanks John this sounds like exactly what I am after!

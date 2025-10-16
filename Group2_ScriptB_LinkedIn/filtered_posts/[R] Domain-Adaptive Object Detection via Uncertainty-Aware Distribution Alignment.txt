@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/l5yeex/r_domainadaptive_object_detection_via/
+Title: [R] Domain-Adaptive Object Detection via Uncertainty-Aware Distribution Alignment
+
+Content:
+[https://dl.acm.org/doi/10.1145/3394171.3413553](https://dl.acm.org/doi/10.1145/3394171.3413553)
+
+>**Abstract** Domain adaptation aims to transfer knowledge from the source data with annotations to scarcely-labeled data in the target domain, which has attracted a lot of attention in recent years and facilitated many multimedia applications. Recent approaches have shown the effectiveness of using adversarial learning to reduce the distribution discrepancy between the source and target images by aligning distribution between source and target images at both image and instance levels. However, this remains challenging since two domains may have distinct background scenes and different objects. Moreover, complex combinations of objects and a variety of image styles deteriorate the unsupervised cross-domain distribution alignment. To address these challenges, in this paper, we design an end-to-end approach for unsupervised domain adaptation of object detector. Specifically, we propose a Multi-level Entropy Attention Alignment (MEAA) method that consists of two main components:   
+>  
+>(1) Local Uncertainty Attentional Alignment (LUAA) module to accelerate the model better perceiving structure-invariant objects of interest by utilizing information theory to measure the uncertainty of each local region via the entropy of the pixel-wise domain classifier  
+>  
+>(2) Multi-level Uncertainty-Aware Context Alignment (MUCA) module to enrich domain-invariant information of relevant objects based on the entropy of multi-level domain classifiers. The proposed MEAA is evaluated in four domain-shift object detection scenarios. Experiment results demonstrate state-of-the-art performance on three challenging scenarios and competitive performance on one benchmark dataset.
+
+Comments:
+- The code for MEAA can also be found here : [https://github.com/basiclab/DA-OD-MEAA-PyTorch](https://github.com/basiclab/DA-OD-MEAA-PyTorch)
+- So on Cityscapes vs Foggy you got better than the oracle? How is this possible?
+- this means the learned domain invariant features is more expressive than simply train on Cityscapes Foggy datasets ( due to extra noise caused by fog ). Since MEAA share the same backbone as the oracle version, we believe the results should still be comparable to each other.

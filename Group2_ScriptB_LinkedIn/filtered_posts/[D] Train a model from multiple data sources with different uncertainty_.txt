@@ -1,0 +1,26 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/oxebny/d_train_a_model_from_multiple_data_sources_with/
+Title: [D] Train a model from multiple data sources with different uncertainty?
+
+Content:
+I have two datasets A and B:  
+A contains 5k high quality data (say confidence > 0.9)  
+B contains 500k low-medium quality data (confidence \~ 0.6/0.7)
+
+Features/data formats are aligned in data pre-processing step.
+
+My question here is: After trained the model with synthetic data, is there a way to get an "uncertainty score" when I use the model to predict?  
+I know ensemble models can do this but the concern here is dataset A's data is not enough to train individually...  
+Any advices to help me train a better model in this scenario are welcome! Thank you in advance.
+
+Comments:
+- Union the two data sets and use a library that allows for row based weighting / record weighting. Weight the high confidence stuff highly and the low confidence stuff poorly.
+- Gaussian multi fidelity process?
+- 1. I haven't tried this. But there is pypi statsmodel to give you  statistical estimate of models
+2. If you wish to use ensemble models itself, who don't give both A and B, but with appropriate sample weight? 
+In your case set weight for A say 10x to 100x higher so that large volume low confidence training set B doesn't drown out A.
+
+This way you can prioritize learning from data points A while using training set B as well.
+- If you have a really high confidence in your samples from the dataset A, you could use biquality learning algorithms : https://arxiv.org/pdf/2012.09632.pdf. Famous algorithms are learning to reweight (L2RW), gold loss correction (GLC) for example.
+- Thank you, I found [https://arxiv.org/abs/1903.07320](https://arxiv.org/abs/1903.07320). Will take a look.
+- Thank you for your answer. I'll take a look.

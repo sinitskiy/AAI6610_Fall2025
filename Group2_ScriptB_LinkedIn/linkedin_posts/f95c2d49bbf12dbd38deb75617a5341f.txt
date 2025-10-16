@@ -1,0 +1,58 @@
+URL: https://www.linkedin.com/posts/tuvelofstrom_uncertainty-in-explainable-ai-activity-7277729112536891392-Y-GU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Tuwe Löfström-Cavallin的动态
+Tuwe Löfström-Cavallin
+
+Assistant Professor in Computer Science at Jönköping University and Senior Software Engineer at Saab Training and Simulation
+
+9 个月
+
+Uncertainty in Explainable AI - Special track in World conference on XAI
+
+Authors: Tuwe Löfström, Helena Löfström, Fatima Rabia Yapicioglu, Alessandra Stramiglio, Francesco Sovrano, Fabio Vitali, Henrik Boström
+
+Read more: https://lnkd.in/d7vRYGXe
+
+Understanding and managing uncertainty in AI models is increasingly important to ensure transparency, appropriate trust, and reliability. This track explores diverse approaches to integrating uncertainty quantification into explainable AI (XAI) frameworks, emphasizing how explanations can communicate both model confidence and prediction reliability. Topics of interest include methods for representing and interpreting aleatoric and epistemic uncertainties, as well as techniques that use these insights to guide decision-making processes in high-stakes environments. Submissions addressing uncertainty-aware explanations in areas such as reject/defer options, time series, and human-centric systems are particularly welcome. The track also seeks novel evaluation metrics and domain-specific applications of uncertainty-aware explanations, with the goal of advancing actionable and interpretable AI systems.
+
+Uncertainty in Explainable AI
+https://xaiworldconference.com/2025
+37
+1 条评论
+赞
+评论
+分享
+Tuwe Löfström-Cavallin
+
+Assistant Professor in Computer Science at Jönköping University and Senior Software Engineer at Saab Training and Simulation
+
+9 个月
+
+https://www.linkedin.com/posts/world-conference-on-explainable-artificial-intelligence_machinelearning-uncertainty-trust-activity-7278336405481701376-g_Bi?utm_source=share&utm_medium=member_android
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+893 位关注者
+
+58 则动态
+查看档案  关注
+探索相关领域
+How AI Models can Ensure Trustworthiness and Transparency
+Understanding AI Model Reliability
+Understanding Diagnosis 

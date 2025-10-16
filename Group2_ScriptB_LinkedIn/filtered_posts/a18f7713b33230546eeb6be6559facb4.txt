@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/thierry-peynot_ausros-ausros25-ariam-activity-7345720835615113216-pyXy
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Thierry Peynot的动态
+Thierry Peynot
+
+Associate Professor of Robotics and AI at QUT
+
+3 个月
+
+Fantastic Day 1 at AuSRoS 2025 (Australian School of Robotic Systems), hosted at QUT (Queensland University of Technology) in Brisbane this year!
+
+The first lecture by Donald Dansereau (ACFR, Uni of Sydney) covered the fundamentals of Sensing for Robotics, including: types of sensors, "non-idealities" (e.g. noise, model errors, aleatoric/epistemic uncertainty), even re-thinking the sense-think-act cycle. 
+
+The second lecture by Feras Dayoub (AIML, Uni of Adelaide) covered essentials of modern Robot Learning, including deep learning using CNNs, RNNs and Transformers, as well as the fundamentals of reinforcement learning (RL). 
+
+The third lecture by Jen Jen Chung (Uni of Queensland) covered essentials of Motion Planning, including representations, graph-search methods (Dijkstra, A*), sampling-based methods (PRM, RRT) and planning hierarchies. 
+
+Next, the attendees were given a tour of QUT Centre for Robotics at the Gardens Point campus, ran by Krishna Manaswi Digumarti and myself.
+
+We then had very special guests representing the ELO2 consortium: Ben Sorensen, Sami Raines and Sam Cleary, discussing the latest of the Roo-ver mission, working on the first Australian rover to go to the moon! An inspiring talk for a whole generation of current and future roboticists! (pictured below)
+
+Finally the (work) day concluded with the first part of a hands-on workshop for the students: programming a turtlebot robot with ROS2 to navigate around a maze autonomously, run by Jen Jen Chung, Dr. John Vial and Krishna Manaswi Digumarti
+
+An incredibly insightful and inspiring first day for AuSRoS 2025!
+
+https://lnkd.in/gwCkYb-c 
+#AUSROS #AUSROS25 #ARIAM #robotics #robots #qcr 
+
+88
+3 条评论
+赞
+评论
+分享
+Ben Sorensen
+
+Leading Australia’s Roo-ver Mission | Driving Australia’s future with strategic innovation, space exploration, and transformative projects. Helping people

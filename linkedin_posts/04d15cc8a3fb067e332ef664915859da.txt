@@ -1,0 +1,39 @@
+URL: https://www.linkedin.com/posts/davidsauerwein_ai-genai-llm-activity-7370684522318819328-xebW
+Date: 2025-09-24
+Author: Unknown
+
+Two new results on LLM hallucinations have dominated feeds over the past few days - one by OpenAI, the other by Hassana Labs. But how do they compare and what are their practical implications?
+
+Let's briefly discuss both papers and see how they fit together (links in comments).
+
+1) OpenAI
+
+They focus on how hallucinations originate from LLM training in the two major phases: pre-training and post-training.
+
+During pre-training, LLMs are trained to predict next tokens in the training dataset. How well the model performs is measured by a function called cross-entropy.
+
+The authors demonstrate that using this function facilitates hallucinations. They do this by creating a connection to binary classification: effectively, every language model creating valid outputs must inherently solve a binary classification problem asking "Is this output valid: YES or NO?" This results in bounds on the minimal error rate of models based on how facts are represented in the training data.
+
+Post-training could be an opportunity to (partially) correct this pre-training problem because it doesn't rely on the cross-entropy objective mentioned above. It could teach models to say "I don't know" when uncertain. However, the authors argue this isn't even an option in most current benchmarks, which leads LLMs to "bluff" (i.e., hallucinate) their way through. The authors propose introducing benchmarks that allow saying "I don't know" and penalize incorrect answers more heavily.
+
+2) Hassana Labs
+
+We have limited details on the theory behind these results because the paper isn't yet published (see comments). But it's promising work with direct implications for AI practitioners on suppressing hallucinations in a controlled way without changing the model.
+
+Effectively, LLMs are sophisticated algorithms that compress vast amounts of information (the internet) and recreate it on-demand. This compression is necessarily lossy, meaning rare facts cannot be correctly retrieved. The authors provide concrete tools based on information geometry to detect when this might occur.
+
+3) How they compare
+
+OpenAI provides insights on improving LLM training. Given OpenAI's leading position, this might offer foundation model providers a route to address part of the "LLM evaluation crisis" we're seeing. However, I wouldn't call their insights game-changing, and there are no direct applications for foundation model consumers.
+
+The Hassana Lab result has immediate implications for every LLM user, with code available to implement it starting now. This practical application and the elegant information-theoretic derivation make it very exciting. However, the authors still need to provide the detailed theory paper.
+
+In summary, these results are complementary, but the Hassana Lab work is more exciting and shows how even small labs can create impactful results.
+
+
+话题标签
+#ai 
+话题标签
+#genai 
+话题标签
+#llm

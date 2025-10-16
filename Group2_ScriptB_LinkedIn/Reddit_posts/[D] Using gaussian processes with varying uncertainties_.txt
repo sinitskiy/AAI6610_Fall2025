@@ -1,0 +1,19 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/5qpepn/d_using_gaussian_processes_with_varying/
+Title: [D] Using gaussian processes with varying uncertainties?
+
+Content:
+I try to use gaussian processes for modeling (mostly smoothing and interpolation) data from measurements, which can have very different uncertainties. These uncertainties are known, but can vary a lot: e.g. some points have error +-1, some others +-20. In cases with all measurements having about the same error gaussian processes perform well, but when not - they either give too high noise estimates or give too much weight to bad points.
+
+What are, if any, the options to take these errors into account? I read some material about modeling errors as a "nested" gaussian process, but this doesn't fit my case: errors for all (including nearby) points are unrelated.
+
+Comments:
+- When you calculate the training covariance, you add the uncertainty to the diagonal. If you want a different uncertainty for each training example, just add different (known or estimated) values instead of estimating a global noise variance and adding that to every term on the diagonal.
+- You could try searching for research on "heteroskedastic kriging"
+- But how do I get reasonable uncertainty estimates for test datapoints then? We can't just add the same noise term to all covariance matrices, in particular cov(X_test, X_test).
+- Do you want uncertainty about the true function value at test points, or uncertainty about a noisy measurement at those points?
+
+If the former, just don't add any noise terms for test points. If the latter, you'll need some way of estimating the noisyness of your measurements. A [typical approach](http://people.csail.mit.edu/kersting/papers/kersting07icml_mlHetGP.pdf) is to use another GP to model the noise variance as a function of the input location.
+- I need the former (variance for the true function values), as the latter is obviously impossible - errors for different points are totally unrelated in my case.
+Thanks, not adding any noise terms for test points seems to work! For some reason I thought that doing this will result in zero variance estimate.
+- The two sources of uncertainty are really something like model uncertainty and measurement uncertainty. It is wonderful how GPs make this explicit, and imho one of the main reasons why there is so much beauty in them.

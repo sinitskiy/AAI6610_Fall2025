@@ -1,0 +1,313 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mbpab3/updated_2025_review_my_notes_on_the_best_ocr_for/
+Title: Updated 2025 Review: My notes on the best OCR for handwriting recognition and text extraction
+
+Content:
+Hi everyone,
+
+Some of you might remember my detailed [handwriting OCR comparison from last year](https://www.reddit.com/r/computervision/comments/1ctf0jh/2024_review_of_ocr_tools_extracting_text_from/) that tested everything from Transkribus to ChatGPT for handwritten OCR. Based on that research, my company chose HandwritingOCR, and we've now been using it in production for 12 months, processing over 150,000 handwritten pages.
+
+Since then, our use case has evolved from simple timesheets to complex multi-page inspection reports requiring precise structured data extraction. The OCR landscape has also changed, with better AI models, bigger context windows, so we decided to run another evaluation.
+
+My previous post generated a lot of comments and was apparently quite useful, and I'm sharing my detailed findings again, hoping to save others the days of testing this required.
+
+**Quick Summary (TL;DR)**
+
+After extensive testing, we're sticking with [Handwriting OCR](https://www.handwritingocr.com) for handwritten documents. We found that new AI models are impressive for single-page demos but fail at production reliability. For printed documents, Azure Document AI continues to offer the best price to performance ratio, although it struggles with handwritten content and requires significant development resources.
+
+**Real-World Business Requirements**
+
+I used a batch of 75 inspection reports (3 pages each, 225 pages total) with messy handwriting from different field technicians.
+
+Each document included structured fields (inspector name, site ID, equipment type) plus a substantial "Additional Comments" section with 4-5 sentences of narrative handwriting mixing cursive, print, technical terminology, and corrections - the kind of real-world writing you'd actually need to transcribe.
+
+The evaluation focused on:
+
+1. **Pure Handwriting Transcription Accuracy**: How accurately does each service convert handwritten text to digital text?
+2. **Multi-page Consistency**: Does accuracy degrade across pages and different writing styles?
+3. **Structured Data Extraction**: Can it reliably extract specific fields and tables into usable formats?
+4. **Production Workflow**: How easy is it to process batches and get clean, structured output?
+5. **Implementation Complexity**: What's required to get from demo to production use?
+
+## My Notes
+
+**New Generation AI Models**
+
+*OpenAI GPT-4.1*
+
+Tested at: chat.openai.com and via API
+
+GPT-4.1's single-page handwriting recognition is quite good, achieving ~85% accuracy on clean handwriting but dropping to ~75% on messier narrative sections. Multi-page documents revealed significant limitations; transcription quality degraded to ~65% by page 3, with the model losing context and making errors. For structured data extraction, it frequently hallucinated information for pages 2-3 based on page 1 content rather than admitting uncertainty.
+
+Strengths:
+- Good single-page handwriting transcription on clean text (~85%)
+- Excellent at understanding context and answering questions about document content
+- Conversational interface great for one-off document queries
+- Good at reading technical terminology when context is clear
+
+Weaknesses:
+- Multi-page accuracy degradation (85% → 65% by page 3)
+- Inconsistent structured data extraction - asking for specific JSON schemas is unpredictable
+- Hallucinates data when uncertain rather than indicating low confidence
+
+*Claude Sonnet 4*
+
+Tested at: claude.ai
+
+Claude's large context window made it better than GPT-4.1 at maintaining consistency across multi-page documents, achieving ~83% transcription accuracy across all pages. It handled the narrative comments sections with good consistency and performed well on most handwriting samples. However, it struggled most with rigid structured data extraction. When asked for specific JSON output, Claude often returned beautifully written summaries instead of the raw data I needed.
+
+Strengths:
+- Best multi-page handwriting consistency among AI models (~83% across all pages)
+- Good at narrative understanding and preserving context in longer handwritten sections
+- Solid performance across different handwriting styles
+- Good comprehension of technical terminology and abbreviations
+
+Weaknesses:
+- Still behind specialised tools for handwriting accuracy
+- Least reliable for structured data extraction (~65% field accuracy)
+- Tends to summarise and editorialise rather than extract verbatim data
+- Sometimes too "creative" when strict data extraction is needed
+- Expensive
+
+*Google Gemini 2.5*
+
+Tested at: gemini.google.com
+
+Google's AI offering showed solid improvement from last year and performs reasonably well on handwriting. Gemini achieved ~84% handwriting accuracy on clean sections but dropped to ~70% on messier handwritten comments. It handled multi-page context better than GPT-4.1 but not as well as Claude. For structured output, the results were inconsistent - sometimes providing good JSON, other times giving invalid formatting.
+
+Strengths:
+- Good improvement in handwriting recognition over previous versions (~84% on clean text)
+- Reasonable multi-page document handling for shorter documents
+- Fast processing for individual documents
+- Strong performance on printed text mixed with handwriting
+
+Weaknesses:
+- Some accuracy degradation on messy sections (84% → 70%)
+- Unreliable structured data extraction in the consumer interface
+- No batch processing capabilities
+- Results quality varies significantly between sessions
+- Thinking mode means this gets expensive on longer documents
+
+**Traditional Enterprise OCR Platforms**
+
+*Microsoft Azure AI Document Intelligence*
+
+Tested at: Azure Portal and API
+
+Azure represents the pinnacle of traditional OCR technology, excelling at printed text and clear block handwriting (~95% accuracy on neat printing). However, it struggled significantly with cursive writing and messy handwriting samples from my field technicians, achieving only ~45% accuracy on the narrative comments sections. While it correctly identified document structure and tables, the actual handwriting transcription had numerous errors on anything beyond neat block letters.
+
+Strengths:
+- Excellent accuracy for printed text and clear block letters (~95%)
+- Sophisticated structured data extraction for printed forms
+- Robust handling of complex layouts and tables
+- Proven enterprise scalability
+- Good form field recognition
+
+Weaknesses:
+- Poor handwriting transcription accuracy (~45% on cursive/messy writing)
+- API-only - requires months of development to build usable interface
+- No pre-built workflow for business users
+- Complex JSON responses need custom parsing logic
+- Optimised for printed documents, not handwritten forms
+
+*Google Document AI*
+
+Tested at: Google Cloud Console
+
+Google's enterprise OCR platform delivers accuracy comparable to Azure for printed text (~94% on clean printing) but shares similar limitations with handwritten content. It achieved ~50% accuracy on the handwritten comments sections, performing slightly better than Azure on cursive but still struggling with messy field writing. The platform excelled at document structure recognition and table extraction, but consistent handwriting transcription remained problematic.
+
+Strengths:
+- Strong accuracy for printed text and neat block letters (~94%)
+- Sophisticated entity and table extraction for structured documents
+- Strong integration with Google Cloud ecosystem
+- Better cursive handling than Azure (marginally)
+
+Weaknesses:
+- Poor handwriting transcription accuracy (~50% on cursive/messy writing)
+- Developer console interface, not business-user friendly
+- Requires technical expertise to configure custom extraction schemas
+- Significant implementation timeline for production deployment
+- Optimised for printed documents rather than handwritten forms
+
+*AWS Textract*
+
+Tested at: AWS Console
+
+Amazon's OCR offering performed similarly to Azure and Google - excellent for printed text (~93% accuracy) but struggling with handwritten content (~48% on narrative sections). Like the other traditional OCR platforms, it's optimised for forms with printed text and clear block letters. The standout feature is its table extraction capability, which correctly identified document structures, but the handwriting transcription was consistently poor on cursive and messy writing.
+
+Strengths:
+- Strong table and form extraction capabilities for printed documents (~93% accuracy)
+- Good integration with AWS ecosystem
+- Reliable performance on clear, printed text
+- Comprehensive API documentation
+- Competitive with Azure/Google on printed content
+
+Weaknesses:
+- Poor handwriting transcription accuracy (~48% on cursive/messy writing)
+- Pure API requiring custom application development
+- Limited pre-built extraction templates
+- Complex setup for custom document types
+- Optimised for printed forms, not handwritten documents
+
+**Specialised Handwriting OCR Solutions**
+
+*HandwritingOCR*
+
+Tested at: handwritingocr.com
+
+As our current solution, the bar was high for this re-evaluation. HandwritingOCR achieved ~95% accuracy on both structured fields and narrative handwritten comments, maintaining consistency across all 225 pages with zero context degradation.
+
+The Custom Extractor feature is a significant time-saver for us. I took one sample inspection report and used their visual interface to define the fields I needed to extract. This created a reusable template that I could then apply to the entire batch, giving me an Excel file containing exactly the data I needed from all 75 reports.
+
+Strengths:
+- Exceptional handwriting transcription accuracy (~95% across all writing styles)
+- Perfect multi-page consistency across large batches
+- Custom Extractor UI for non-developers
+- Complete end-to-end workflow: upload → process → download structured data
+- Variety of export options include Excel, CSV, Docx, txt, and JSON
+
+Weaknesses:
+- Specialised for handwriting rather than general document processing
+- Less flexibility than enterprise APIs for highly custom workflows
+- For printed documents, traditional OCR like Azure is cheaper.
+- No export to PDF
+
+*Transkribus*
+
+Tested at: transkribus.org
+
+Re-testing confirmed my previous assessment. Transkribus remains powerful for its specific niche - historical documents where you can invest time training models for particular handwriting styles. For modern business documents with varied handwriting from multiple people, the out-of-box accuracy was poor and the academic-focused workflow felt cumbersome.
+
+Strengths:
+- Potentially excellent accuracy for specific handwriting styles with training
+- Strong for historical document preservation projects
+- Active research community
+
+Weaknesses:
+- Poor accuracy without extensive training
+- Complex, academic-oriented interface
+- Not designed for varied business handwriting
+- Requires significant time investment per handwriting style
+
+**Open Source and Open Weights Models**
+
+*Qwen2.5-VL and Mistral OCR Models*
+
+Tested via: Local deployment and API endpoints
+
+The open weights vision models represent an exciting development in democratizing OCR technology. I tested several including Qwen2.5-VL (72B) and Mistral's latest OCR model. These models show impressive capabilities for basic handwriting recognition and can be deployed locally for privacy-sensitive applications.
+
+However, their performance on real-world handwritten documents still lags significantly behind commercial solutions. Qwen2.5-VL achieved ~75% accuracy on clear handwriting but dropped to ~55% on messier samples. Mistral OCR was slightly worse on clear handwriting but unusable with messier handwriting. The models also struggle with consistent structured data extraction and require significant technical expertise to deploy and fine-tune effectively.
+
+Strengths:
+- Can be deployed locally for data privacy requirements
+- No per-page costs once deployed
+- Rapidly improving capabilities
+- Full control over model customization
+- Promising foundation for future development
+
+Weaknesses:
+- Lower accuracy than commercial solutions (~55-75% vs 85-97%)
+- Requires significant technical expertise for deployment
+- Inconsistent structured data extraction
+- High computational requirements for local deployment
+- Still in early development for production workflows
+
+**Legacy and Consumer Tools**
+
+*Pen to Print*
+
+Tested at: pen-to-print.com
+
+This consumer app continues to do exactly what it's designed for: converting simple handwritten notes to text. It's fast and reasonably accurate for clean handwriting, but offers no structured data extraction or business workflow features.
+
+Strengths:
+- Simple, intuitive interface
+- Fast processing for personal notes
+- Good accuracy on clear handwriting
+
+Weaknesses:
+- Performance with real-life (i.e. messier) handwriting much less accurate.
+- No structured data extraction capabilities
+- Not designed for business document processing
+- No batch processing options
+
+**Key Insights from 12 Months of Production Use**
+
+After processing over 150,000 pages with HandwritingOCR, several patterns emerged:
+
+1. **Handwriting-Specific Optimization Matters**: Traditional OCR platforms excel at printed text and clear block letters but struggle significantly with cursive and messy handwriting. Specialised handwriting OCR solutions consistently outperform general-purpose OCR on real-world handwritten documents.
+
+2. **The Demo vs. Production Gap**: AI models create impressive demos but struggle with the consistency and reliability needed for automated business workflows. Hallucination is still a problem for general models like Gemini and Claude when faced with handwritten text.
+
+3. **Developer Resources are the Hidden Cost**: While enterprise APIs may have lower per-page pricing, the months of development work to create usable interfaces often exceeds the total processing costs.
+
+4. **Traditional OCR can be a false economy**: Traditional OCR platforms appear cost-effective (~$0.001-0.005 per page) but their poor handwriting accuracy (~45-50%) makes them unusable for business workflows with significant handwritten content. The time spent manually correcting errors, re-processing failed extractions, and validating unreliable results makes the true cost far higher than specialised solutions with higher per-page rates but dramatically better accuracy.
+
+5. **Visual Customization is Revolutionary**: The ability for business users to create custom extraction templates without coding has transformed our document processing workflow.
+
+**Final Thoughts**
+
+The 2025 landscape shows that different solutions work better for different use cases:
+
+- **For developers building custom applications with printed documents**: Azure Document AI and Google Document AI offer powerful engines
+- **For AI experimentation and single documents**: GPT-4 and Claude show promise but with significant limitations around consistency and multi-age performance
+- **For production handwritten document processing**: Specialised solutions significantly outperform general-purpose tools
+
+The new AI models are impressive technology, but their handwriting accuracy (~65-85%) still lags behind specialised solutions for business-critical workflows involving cursive or messy handwriting. Traditional OCR platforms excel at their intended use case (printed text) but struggle with real-world handwritten content.
+
+After 12 months of production use, we've found that specialised handwriting OCR tools consistently deliver the accuracy and workflow integration needed for business automation involving handwritten documents.
+
+Hope this update helps guide your own evaluations and I'm happy to keep it updated with other suggestions from the comments.
+
+Comments:
+- what exactly does your company do? it seems like you have tons of data,  have you considered developing your own ocr model?
+- This is great. Thanks for sharing your notes!
+- Why don’t you try opensource ocr also the best ocr I found was on paddle paddle ocr those models are still amazing compared to the closed and multi langular models like gpt Claude
+- Thanks for putting these together.
+After seeing your success with it, I’m trying HandwritingOCR but not having much luck.
+
+I have what I assume to be a pretty simple and easy to parse form but it still seems to move columns around without much logic.
+
+Is there a trick you’re doing to get better results?
+I’ve just been trying the table and custom uploaders from the low tier plan - I take it you guys are using the enterprise/business plan?
+- Check out llmwhisperer - pretty good for this specific use-case
+- Just wanted to drop a quick note of thanks for that amazing breakdown of handwriting OCR tools—
+
+- So, my story : a maths trying to make marking student practice exam papers disappear. I dream of a world where I could just feed in their work, feed in a mark scheme, and voilà—magic feedback would appear. Reality is it’s not that simple! 
+
+- The struggle? Finding a tool that can read the delightful hieroglyphs known as kids’ maths handwriting with any decent accuracy
+
+- Problem: I’m at the point where I have a workflow that sort of works, however the transcriptions arnt picking up correctly written work and marking either correctly or incorrectly with major inconsistencies. 
+
+ALSO, questions with diagrams and drawing graphs is becoming a challenge for Ai to pick up on. 
+
+
+- Long story short: if anyone’s got an ideas on how I can get to around 90% accuracy that would be amazing. I’d love to hear it!
+
+Appreciate all the help and thanks again.
+- Do you have any insight for which of these can handle mathematical notations within notes? I am wondering if any of them are at the point where they could be used to convert our older physical laboratory notebooks to digital backups.
+- Thanks for your sharing. 
+On my side, need for handwriting OCR on french medical documents. We are using Gemini 2.0 flash that is very good except handwriting part
+- Someone recommended google vision and it is really amazing! It is the best one I've tried
+- Traditional OCR systems like Tesseract struggle with varied and complex documents, making them hard to scale. While LLMs are excellent at understanding context and extracting data, they often hallucinate and produce errors, which is a major problem for enterprise use.  
+  
+A middle-ground solution is pre-processing tools like [LLMwhisperer](https://pg.llmwhisperer.unstract.com/). They prepare documents so that LLMs can understand them better, reducing both costs and hallucinations.
+- Thank you. This was really timely and your experience helped to temper expectations regarding the promise of OCR/AI and inject reality back into discussions at work. I truly appreciate your efforts and generosity.
+- Did you try DocStrange it's an opensource tool which converts documents (PDFs, images, scans) to Markdown and supports cloud or local processing. Its good for structured text extraction (tables, sections, key fields), and it offers a 10k docs/month free for cloud version if you don't want to run it locally.
+
+**Live demo :** [**https://docstrange.nanonets.com**](https://docstrange.nanonets.com) 
+
+**Github:** [**https://github.com/NanoNets/docstrange**](https://github.com/NanoNets/docstrange)
+- Have you thought about using a dedicated tuned model for this task? olmOCR is very good.. open weights and training data from Ai2!
+
+https://huggingface.co/allenai/olmOCR-7B-0725
+
+https://olmocr.allenai.org/
+- We tried open source OCR - Qwen 2.5 and Mistral OCR. Both good, but still some way to go for handwritten text, which was the focus of our evaluation.
+- I am hoping you get some good feedback/leads because I am looking for something similar to convert old physical laboratory notebooks to digital backups.
+- mathpix, simpletex, pix2text.
+- Is this good for Handwriting Recognition ?
+- Did you tried paddle paddle
+- Yes!
+- How can I make this work in other languages than English?

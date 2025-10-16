@@ -1,0 +1,72 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1g90bx6/confessions_of_an_r_engineer/
+Title: Confessions of an R engineer
+
+Content:
+I left my first corporate home of seven years just over three months ago and so far, this job market has been less than ideal. My experience is something of a quagmire. I had been working in fintech for seven years within the realm of data science. I cut my teeth on R. I managed a decision engine in R and refactored it in an OOP style. It was a thing of beauty (still runs today, but they're finally refactoring it to Python). I've managed small data teams of analysts, engineers, and scientists. I, along with said teams, have built bespoke ETL pipelines and data models without any enterprise tooling. Took it one step away from making a deployable package with configurations.
+
+Despite all of that, I cannot find a company willing to take me in. I admit that part of it is lack of the enterprise tooling. I recently became intermediate with Python, Databricks, Pyspark, dbt, and Airflow. Another area I lack in (and in my eyes it's critical) is machine learning. I know how to use and integrate models, but not build them. I'm going back to school for stats and calc to shore that up.
+
+I've applied to over 500 positions up and down the ladder and across industries with no luck. I'm just not sure what to do. I hear some folks tell me it'll get better after the new year. I'm not so sure. I didn't want to put this out on my LinkedIn as it wouldn't look good to prospective new corporate homes in my mind. Any advice or shared experiences would be appreciated.
+
+Comments:
+- You should just make a post on LinkedIn and see who will respond. It doesn't hurt to ask your network for open positions.
+- Spell it engineeR and the offers will start coming
+- R in production is a thing. Since your solution was utilized for business operations, you could try to fluff it up that it was enterprise-grade, as business decisions were made on the outputs, and years in operations is quite a feat!
+- Honestly, we would hire an analyst that is very R savvy (our data scientists would require Python, non negotiable), nothing against R at all. But If I saw “R engineer” on the resume without the statistical or analytical context, I would question why R was used at all. It sounds like you were using R for generalized purposes, so I’d question why you didn’t use a general purpose programming language like Python. Those questions would definitely linger, and in pretty short order we’d probably move onto the next resume. 
+
+As an R programmer, an analyst position would definitely be feasible with us, and a data scientist job many places, totally possible. But you say you’re less than proficient in ML, stats and the like, and our analysts would need the stats skills. It sounds like you’re not a complete statistical programmer (using a statistical programming language but without stats expertise), and not a complete general programmer (not using a general purpose language for general purpose things) either, so that puts you in a really weird place hiring-wise.
+- I’m also a mid-career data scientist (10-15 years experience) whose primary language is R. I’ve found it helpful in my CV and in interviews to emphasize that I’ve been around long enough to see languages/frameworks come and go, and that I am able to learn whatever tooling the job requires. I also try to emphasize that I’m strong in the underlying concepts of statistical analysis, modeling, data hygiene, visualization, and software engineering — which are universal and language-agnostic. 
+
+It sounds like you’ve also been around the block a few times, and that you’d have no problem getting up to speed with Python or whatever tooling a potential employer offers. But you have to sell yourself that way. Languages are merely tools in our toolbelts for getting a job done. 
+Good luck, I hope you find a good fit soon!
+- I think there's three things going on right now:
+
+1. The market absolutely sucks,
+2. A lot of DS/DE were laid off in the last 2 years while waves of new grads are coming, and
+3. The field continues to seek ways to get more productivity out of expensive DS/DE's.
+
+(1) and (2) combined mean there's a lot of people applying for relatively few positions (which means companies can be as picky as they want) and, (3) means that companies (and the industry as a whole) are continuing to consolidate on Python.
+
+I think this is a great time to basically relearn what you know in Python, while also learning how to build models, CI/CD pipelines, basic web apps for dashboarding and data products (Streamlit), some dev ops (Docker, the basics of k8s) and the coding/productivity tools that are built around Python (VS Code, with Copilot).
+
+It's really difficult for me to offer suggestions on what, exactly, particular roles in industry will look for, because every company I know hires "data scientists" and then has them do a million other things besides building models. Of course, that won't keep them from asking questions about it in the interview. (Hah, I even know people hiring for "generative AI" at a very well-known company that you've heard of that builds physical products that have absolutely no reason to have generative AI applied to them.)
+
+I think you will be able to highlight your management/leadership experience to your benefit, though. Also, if you can take some time to learn how to reimplement the work you did in Python (so that you can talk about it), you could reasonably update your resume to basically say that the work you did was in Python (and not R). Network, network, network. On LinkedIn, in person. Ask to meet hiring managers over lunch to find out what their pain points are.
+
+TBH, I still have my R experience on my resume, but I've never felt like it was to my advantage. I've even been told to remove all references to R because -- for better and for worse -- there are hiring managers that will simply use it as a heuristic to toss the resume.
+
+Good luck!
+- Tldr: switch to Python ASAP and narrow down you skills in one area on resume. 
+
+Been through similar experiences with lesser experience than you. Was working for 4 years and crushing projects with R's arsenal: dpyr, ggplot, plumber, shiny, markdown the whole shebang. Was so excited that my experience of building data pipeline, ML models, apps, api would make any new employer sweep me off my feet. And oh boy, as I started applying, I was in for a rude awakening. Noone gives a shit about R and jack of all. Took a while to accept the bitter pill but I eventually did. 
+
+Switched to solely Python for all projects, narrowed my skills on one area on my resume. It produced much better results in generating calls and ended in a role in 6 ish months.
+- I process lots of professional resumes and onboard new hires for a huge consulting firm. I seriously doubt your problem is your skillset. The way people hire has changed a lot from 7 years ago. Your resume probably doesn't do your skillset justice, try adding your accomplishments in a similarly worded fashion as your post. A good cover letter specific to the position goes a long ways and a CV with a list of what you brought to different projects. Rather than apply to 500 jobs apply to 10 really good ones with a targeted resume/cv and cover letter for each one. 1-2 weeks After you apply, email or even call the hiring manager or someone close to the position to suck up a little, tell them briefly why you like that company and why you think you could be an asset to their team, be personable and never say why it would be a great job for you. Get the difference? Folks suggesting linked in are giving good advice too. People take it seriously. It sounds like you have some strong people managing skills. Tout your strong leadership and communications skills on your resume too. It is not the place to be modest. 
+Lastly, really good jobs can sometines take several months even up to a year to finally hire you. It doesn't hurt to follow up with an email inquiry and an updated resume after a month or so, especially if they never thanked you for applying. Your email may have just gotten buried. Good luck.
+- I don't think R engineer is a thing to be honest. I've worked in FAANG and while there are a few pipelines that ran in R, they were very much at the benevolent tolerance of the engineers, and most things get re-implemented in python. You have to be solving an incredibly hard core statistical problem for it to be worth the trade off of R, and most places aren't in that position.
+
+Basic python (scripting, not necessarily full OOP) is not difficult to learn if you're already good with R, and it will help your profile a fair bit.
+- Check out Bell Helicopter. They have had R postings before.
+- You don’t have to communicate your lack of Python work experience. It gives a slightly negative impression even though it doesn’t matter that much.
+If you are comfortable with tools you mentioned, consider bending the truth about having used them in past work experience. Everyone already doing so is my guess.
+7years are lots of years. You are a strong candidate, you just have to sell it better. Of course the economy and the seasonal factors play a huge role here but those you can do nothing about. Stay positive.
+- It doesn't matter if you know python back to front and all of the underlying maths also. The job market simply sucks and I doubt it's going to improve when millions of data science masters are graduating every year. All the "learn to code" people were lying.
+- First off I wanna say I’m sorry you had to go through this! Job searching is pretty soul draining so I know the pain you went through.
+
+I’m assuming you’ve already done this, but I wanted ask you question on how much you prioritize on networking and referrals vs cold applying alone. 
+
+I wanted to ask because:
+
+1. I used to cold apply hundreds of applications for a year before I found my first job, and I was only able to get it because of a referral.
+
+2. A former friend who is a manager at this one company told me how important a referral is. He described to me how on this one role they would receive thousands and thousands of applications so they’re forced to be super picky on who they choose for the next round (ex. If the GPA is lower than a 4.0 you’re eliminated. If you didn’t go to the top 10 universities you’re eliminated, etc). However whenever he gets a referral from a colleague of his, he would look at those referrals first and prioritize that application over others. Their standards are lower with the application that is referred, as long as they have the necessary skills there’s a high high chance they’ll move on to the next round.
+
+Personally when I saw your post I think you have enough credibility to get yourself another role. I think if you’re focused more on getting referrals from your network you’ll be able to land interviews a lot sooner. The job market is brutal for everyone, so try not feel beat yourself down on it cause it would’ve happened to anyone else. Good luck and you got this!
+- OP: if you *are* an “R engineer” (my definition would be someone involved in the development of R packages 📦) and are familiar with concepts like clean code, design patterns, documentation and testing then you already have so many transferable skills - just be careful about using the word “R” basically because (rightly or wrongly) others will judge you a certain way.
+- In my experience, R is useful in biotech, fintech, and insurance. These companies use real statisticians and most of them love R. If you don’t have at least a masters in Statistics, it is going to be challenging for you. But I think there is room to demonstrate that you “bring AI/ML to life”. One challenge I constantly witness is for the traditional engineers to bring R models into production. If you can sell that as your core competency, there is room for that “collaborative” partner to engage with multiple teams in companies with statisticians. I think of myself as a full stack R engineer, and I do everything in that space… plumber APIs, shiny UIs, training models, production models, ETL pipelines to push deliverables… I know that everyone is obsessed with Python, but I’ve had the luck of finding R-heavy small businesses and cutting my teeth on production solutions that worked across the business.
+- What I read is that you have a solid coding experience in general, R teaches good things you can apply elsewhere. Just sharpen your profile in one area which is trendy at the moment and don't apply to every position. Learn to utilize AI decisions which HR uses. For example, I put several keywords which the AI scans for in my lower page of my resume in colour white so that it is invisible. This way, it is still in the metadata of the PDF the AI scans and the HR person gets my resume on the table. These tricks helped a lot. Another tip would be to learn Cython but that be may one step too wide. Good luck.
+- [deleted]
+- Change the title to Machine Learning or Data Scientist. Our job market also has fakes of these 2 fields but my point is that people only search for these fields. Consider the job titles with the key phrase "Big Data," f.e., meaning "Machine Learning With Big Data Technlogy."
+- Some of the jobs (very rare) requires R expertise - creating shiny dashboards, etc. But I would suggest you to go thru quick tutorials for ml, cloud deployment and ETL tools so that you can talk about them in the interviews. Keep faking till you make it - simple. There are so many tools out there. If you study each of them, then it will be a lifetime
+- There is a GitHub somewhere that posts all the R jobs that are hiring! Will have to look it up and reply if I find it

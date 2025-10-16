@@ -1,0 +1,20 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1i6bqqc/click_detection_based_off_video_frame/
+Title: Click Detection based off video frame
+
+Content:
+Hi, I am a student of Machine Learning trying to make a project where I can classify a video of myself using a computer into 4 distinct user actions: navigate, scroll, type, and click. A decent VLM can classify navigate, scroll, and type effectively, however, a click action is very tough. I have tried feeding the VLM context frames, tried optical flow estimation methods to detect click actions. 
+
+What are some of the best ways to detect a user click action in a frame without fine-tuning a model? I believe the first step is to try and detect cursor movement, but VLMs aren't able to detect cursors in frames as its pretty small.
+
+Comments:
+- First you have to exactly define each action. What is a "click"? Does a click always lead to some change in the screen (e.g. new window popping up)? What if your click doesn't lead to any change? What if you click and not release (i.e. drawing a selection box)?
+- Talk about a sledgehammer to crack a peanut. Why don't you log all these actions directly on the device, i.e. With a keylogger or mouse input logger?
+- A click is the one-off action of pressing the button on your computer. It does not have to lead to a change (eg. clicking the comment button on this post). Click and not release is a drag action, hence the "one-off" definition is important.
+- I am not trying to log my own actions. I am trying to log actions of a youtube video of someone using a desktop.
+- "where I can classify a video of ***myself*** using a computer" - this is a lesson in writing clear requirements.
+- Does it really matter whose video it is? Basic comprehension details that we are trying to classify actions in a **video**
+- Yes it's very important - it's the difference between being results or solution driven.  
+You're trying to solve for a specific problem - picking the right approach to get the result is what matters.
+
+Source: 20 years in the working world. The last 5 being in FAANG-adjacent company.

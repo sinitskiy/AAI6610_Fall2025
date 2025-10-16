@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/94wen7/discussion_bayesian_regression_with_noise/
+Title: [Discussion] Bayesian regression with noise injection?
+
+Content:
+So I have a bit of experience with Bayesian regression using PyMC3. I've also heard of people using noise injection as a better regularizer than dropout (e.g. add in some small amount of gaussian noise to each of the outputs of the layers of a neural network). So I tried doing this with a simple linear regression in PyTorch, trying to model it as if I were setting up a Bayesian linear model in pymc3.
+
+E.g. in PyMC3 I would model the data as `y ~ Normal(mu, sigma)`
+
+where `mu = beta * X + alpha` and `sigma ~ HalfNormal(0,1)`
+
+and `beta ~ Normal(2,1)`, `alpha ~ Normal(0.1,1)`
+
+    def model(x):
+         beta = torch.abs(b_sd) * torch.randn(x.shape) + b_mu
+         alpha = torch.abs(a_sd) * torch.randn(x.shape) + a_mu
+        mu = beta * x + alpha
+        sigma = torch.abs(sig) * torch.abs(torch.randn(x.shape)) + sig_mean#
+        y = torch.abs(sigma) * torch.randn(x.shape) + mu
+        return y
+    b_mu = Variable(torch.Tensor([2.0]), requires_grad=True)
+    b_sd = Variable(torch.Tensor([1.0]), requires_grad=True)
+    a_mu = Variable(torch.Tensor([0.1]), requires_grad=True)
+    a_sd = Variable(torch.Tensor([1.0]), requires_grad=True)
+    sig = Variable(torch.Tensor([1.0]), requires_grad=True)
+    sig_mean = Variable(torch.Tensor([1.0]), requires_grad=True)
+    loss_fn = torch.nn.MSELoss(size_average=True)
+    lr = 0.0001
+    optimizer = torch.optim.SGD(params=[b_mu, b_sd, a_mu, a_sd, sig, sig_mean], lr=lr)
+
+And then I train it like an ordinary linear regression using SGD and mini-batches on some synthetic noisy linear data. After training, the standard deviation variables actually do reflect the amount variance in the training data and in particular, the \`b\_sd\` variable actually ends up very close to what pymc3 gives me using "exact" bayesian inference from MCMC. 
+
+My question is, what exactly am I doing with this method? This noise injection technique w/ SGD seems to be a way of doing something like variational inference on a model with conjugate priors (the prior and posteriors for all variables are all gaussians), but I'm still learning the mechanics of variational inference so I'm not sure.
+
+In any case, from a practical standpoint,  even if its not giving me exact variance/standard deviation values, it does seem to quantify uncertainty which is useful and is probably regularizing as well.
+
+Comments:
+- First question, why sample `beta` from a Normal with non-zero mean?
+
+For the noise injection:
+
+  * In [Stochastic VI](https://papers.nips.cc/paper/4329-practical-variational-inference-for-neural-networks.pdf), there is noise being injected on the weights. This follows from variational inference principles.
+  * In [Stochastic Gradient Langevin Dynamics](https://www.ics.uci.edu/~welling/publications/papers/stoclangevin_v6.pdf), there is noise being injected on the gradient updates. This follows from Hamiltonian principles.

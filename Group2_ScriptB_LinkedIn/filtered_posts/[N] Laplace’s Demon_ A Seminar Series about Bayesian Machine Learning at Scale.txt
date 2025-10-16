@@ -1,0 +1,29 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/h9mhsv/n_laplaces_demon_a_seminar_series_about_bayesian/
+Title: [N] Laplace’s Demon: A Seminar Series about Bayesian Machine Learning at Scale
+
+Content:
+We have recently launched an ongoing online seminar series about Bayesian machine learning at scale.  The intended audience includes machine learning practitioners and statisticians from academia and industry.
+
+Registration is now open for Jake Hofman’s 17 June talk: "How visualizing inferential uncertainty can mislead readers about treatment effects in scientific results".  Jake is a Senior Principal Researcher at Microsoft Research, New York.  We very much look forward to his insights on visualizing uncertainty.  The talk is at 15.00 UTC this Wednesday, June 17; to see it in your local time zone please go to the registration page.  Please register at: [https://ailab.criteo.com/laplaces-demon-bayesian-machine-learning-at-scale/](https://ailab.criteo.com/laplaces-demon-bayesian-machine-learning-at-scale/)
+
+Secondly, Christian Robert's talk on approximate Bayesian computation is now online.  Christian not only presents state-of-the-art results showing ABC using Gibbs-like steps, but also takes time to give the basis of ABC methods and takes many questions.  [https://www.youtube.com/watch?v=Aq4juvSsz9Y](https://www.youtube.com/watch?v=Aq4juvSsz9Y)
+
+Finally we have a new website, giving details of upcoming talks including A/Prof Aki Vehatari's 24 June talk on "Use of reference models in variable selection".  [https://ailab.criteo.com/laplaces-demon-bayesian-machine-learning-at-scale/](https://ailab.criteo.com/laplaces-demon-bayesian-machine-learning-at-scale/)
+
+Also upcoming:
+
+* 17 Jun, Jake Hofman, "How visualizing inferential uncertainty can mislead readers about treatment effects in scientific results"
+* 24 Jun, Aki Vehtari, "Use of reference models in variable selection"
+* 1 Jul, John Ormerod
+* 8 Jul, Victor Elvira 
+* 29 Jul, Cheng Zhang 
+* 26 Aug, Andrew Gelman
+
+Comments:
+- Could you explain how LaPlace’s Demon is related to this topic? I am well versed in philosophy and am transitioning to statistics/comp sci, and this topic is most interesting to me.
+- X'ian is one of my favorite [blog](https://xianblog.wordpress.com) authors as well.
+- Will the talks be recorded?
+- If anything, I'd say that Laplace's Demon is the opposite scenario of imperfect inference on limited data.
+- I thought it might be a reference to laplacian approximation for bayesian inference? Otherwise seems pretty out of place.
+- This is my understanding as well... I’m confused as to why this thought experiment was deemed appropriate for this field haha

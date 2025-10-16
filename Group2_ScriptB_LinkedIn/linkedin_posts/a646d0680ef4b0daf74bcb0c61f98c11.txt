@@ -1,0 +1,53 @@
+URL: https://www.linkedin.com/posts/hanshallez_creinns-credal-set-interval-neural-networks-activity-7296562223240364032-sPc2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Hans Hallez的动态
+Hans Hallez
+
+Associate Professor at KU Leuven - Bruges Campus
+
+7 个月
+
+Congratulation to Phd student Kaizheng Wang at KU Leuven M-Group for his publishing his work in the journal Neural Networks.  
+
+🔎  We all know that data contains uncertainties, but also models can be uncertain.  This is due to the fact that models are not trained with the complete training set.  So how can we be certain if the outcome of neural networks is correct or not correct?
+
+ 💡 We can use uncertainty measures along the output of the neural network. In Kaizheng's work, he developed and explored Credal-set Interval Neural Networks (CreINNs) that are able to measure the uncertainty of the model's parameters. Furthermore, CreINNs provide a computational efficient way of determining this uncertainty as opposed to the commonly used Bayesian Neural Networks.
+
+🏁  Using Kaizheng's work we are able to assess the certainty of the output of a Neural Network and determine whether we can trust the result of not.  In certain applications involving classification tasks, we can discard the output, if the uncertainty is too high. This leaves the user with no result, but rather a no result than a wrong result.  
+
+📣 We are looking for collaborators for future projects to further develop this method.
+
+This work is in the context of  Epistemic AI within the FET-OPEN call of the  Horizon 2020 program.  Many thanks to our collaborators at Oxford Brookes University  and Delft University of Technology (Fabio Cuzzolin, Shireen Kudukkil Manchingal, Keivan Shariatmadar PhD MSc BSc, David Moens)
+
+CreINNs: Credal-Set Interval Neural Networks for Uncertainty Estimation in Classification Tasks
+sciencedirect.com
+33
+2 条评论
+赞
+评论
+分享
+Danny Hughes
+
+Professor of Computer Science at KU Leuven
+
+7 个月
+
+Great job
+
+赞
+回复
+Keivan Shariatmadar PhD MSc BSc
+
+Sr Research Scientist • Imprecise Uncertainty • Robust AI • Epistemic Reasoning & Optimization | Senior Lecturer @ htw Saar | AI R

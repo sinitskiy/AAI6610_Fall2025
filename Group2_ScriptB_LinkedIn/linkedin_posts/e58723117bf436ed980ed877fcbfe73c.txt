@@ -1,0 +1,64 @@
+URL: https://www.linkedin.com/posts/jmbrinkman1980_ai-deeplearning-riemannhypothesis-activity-7371861806300176384-xyZH
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michiel Brinkman的动态
+Michiel Brinkman
+
+Cloud Technologist | Certification Collector | Flying Circus
+
+3 周
+
+Discover how mathematical engineering inspired by the Riemann Hypothesis could revolutionize AI, potentially accelerating the convergence of slow algorithms in deep neural networks and transformer models. Vincent Granville's research introduces a novel approach to data synthetization and a universal function rivaling those in modern DNNs, offering a new path to solve a 150-year-old problem.
+
+#AI #DeepLearning #RiemannHypothesis #Mathematics #QuantumComputing #DataSynthetization #NeuralNetworks #this_post_was_generated_with_ai_assistance #responsibleai
+
+https://lnkd.in/evmgVksU
+
+
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Ashish anand
+
+Aspiring AI and Robotics Engineer | Machine Learning | Python & C++ | MERN Stack Developer
+
+4 周
+
+Day 2/30 of Deep Learning
+
+🚀 From Brain to Machines: The History of CNNs 🧠➡️💻
+
+Today, I explored how Convolutional Neural Networks (CNNs) were inspired by our own brains and the fascinating journey behind them.
+
+🔹 In the 1960s, neuroscientists Hubel & Wiesel discovered that neurons in the visual cortex react to edges, lines, and simple shapes, and as signals go deeper, they respond to more complex patterns.
+ This hierarchical processing in the brain became the foundation for CNNs.
+
+🔹 In the 1980s, Kunihiko Fukushima developed the Neocognitron, an early version of CNNs with convolution and pooling layers.
+
+🔹 In the 1990s, Yann LeCun built LeNet-5, one of the first successful CNNs, used for handwritten digit recognition (like reading bank checks).
+
+✨ Key insight: Vision works hierarchically —
+
+Early layers detect edges/textures
+Middle layers detect patterns/shapes
+Deeper layers detect objects
+
+That’s why CNNs power modern applications like object detection, facial recognition, and self-driving cars.
+It’s fascinating how ideas from neuroscience evolved into technology that drives today’s AI world. 🌍🤖
+
+#Machine

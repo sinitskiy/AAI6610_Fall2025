@@ -1,0 +1,29 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/t5omor/designing_protein_blind_for_machine_learning/
+Title: Designing protein blind for Machine Learning
+
+Content:
+Hi everyone,
+
+I'm working on a Machine Learning project for the prediction of DTI, and I'm trying to evaluate my model on a double-blind setup. I'm using data from several organisms.
+
+The problem is that the two blinding strategies I designed (blind based on families, and blind based on a compositional clustering) didn't work.
+
+\- The blind based on families was too strict and led to low performance.
+
+\- For the clustering-based blind, I counted all the amino acids in the sequence, I defined a dynamic threshold based on the protein length, and I clustered around 30% of the proteins in clusters of different sizes. This was not strict enough and had no effect on the model's performance.
+
+&#x200B;
+
+Could you think of any ways of clustering sequences? Doing pairwise alignment would be extremely expensive (around 500k proteins)
+
+Comments:
+- Not my area at all, but I get the impression you want groups of similar proteins?  If yes then it could be worth looking at OrthoMCL, it assigns proteins into orthologous/recently paralogous groups and is suitable for large datasets
+- Yeah, I think this is a good option. I've also used SiLiX, and found that it's clustering tends to make more sense when following up with inspecting the MSA from mafft. Sometimes things will be grouped together just because of a couple of shared domains and the resulting MSA looks gross and gappy, silix tends to reduce this type of domain chaining.
+
+
+Both OrthoMCL and Silix require all versus all blast. For a dataset of 500k that may be too much computation. Diamond can be used instead, though in my experience the default settings of diamond makes the  inferred clusters a bit more conservative.
+
+OP can also consider some alignment-free alternatives, such as fixed vector embeddings. I think the bio-embeddings is the shiny fun new way of doing this. Those can be pretty computationally intense too though, so not sure if it's better.
+- hmm are you sure its too much?  Ive seen orthomcl applied to 300-400K proteins for a dataset im working with (edit - again very much not my area, i didnt use orthomcl myself, so i'm asking you out of interest haha)
+- Oh it very well may not be too much! If you've seen groups use that size then I'd say it's probably fine. I just haven't, and don't really know how well it scales.

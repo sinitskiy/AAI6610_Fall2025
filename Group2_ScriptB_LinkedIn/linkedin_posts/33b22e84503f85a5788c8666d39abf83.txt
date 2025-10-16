@@ -1,0 +1,73 @@
+URL: https://www.linkedin.com/posts/lawtongeorge_andreas-horn-provides-an-interesting-overview-activity-7327547921376100352-xA-B
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+George Lawton的动态
+George Lawton
+
+Technology News Writer
+
+4 个月
+
+Andreas Horn provides an interesting overview of the various mathmetical primatives underpinning AI systems. He maps an interesting overview from Domain of Science to different aspects of AI, machine learning and data prep. I wished we had maps like this growing up to help contextualize all these different aspects.  
+
+Andreas Horn
+
+Head of AIOps @ IBM || Speaker | Lecturer | Advisor
+
+5 个月
+
+𝗠𝗼𝗱𝗲𝗿𝗻 𝗔𝗜 𝗶𝘀𝗻’𝘁 𝗠𝗔𝗚𝗜𝗖! 𝗜𝘁’𝘀 𝗷𝘂𝘀𝘁 𝗰𝗲𝗻𝘁𝘂𝗿𝗶𝗲𝘀 𝗼𝗳 𝗺𝗮𝘁𝗵𝗲𝗺𝗮𝘁𝗶𝗰𝘀 𝘀𝗰𝗮𝗹𝗲𝗱 𝗯𝘆 𝗰𝗼𝗺𝗽𝘂𝘁𝗲 𝗮𝗻𝗱 𝗱𝗮𝘁𝗮.
+
+Here’s the proof: ⬇️
+
+𝗖𝗮𝗹𝗰𝘂𝗹𝘂𝘀 & 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻 (1600𝘀–1900𝘀):
+From Newton to backpropagation. 
+→ Without it? No training. No gradient descent. No learning at all.
+
+𝗣𝗿𝗼𝗯𝗮𝗯𝗶𝗹𝗶𝘁𝘆 & 𝗦𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝘀 (1700𝘀–1900𝘀):
+Bayes, Gauss, Fisher — the gods of uncertainty. 
+→ Without it? No Generative AI. No classifiers. No decision-making.
+
+𝗟𝗶𝗻𝗲𝗮𝗿 𝗔𝗹𝗴𝗲𝗯𝗿𝗮 (1800𝘀):
+The language of vectors, matrices, and tensors. 
+→ Without it? No GPT. No DALL·E. No embeddings. No deep learning.
+
+𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗧𝗵𝗲𝗼𝗿𝘆 (1948): 
+Shannon’s entropy. Signal. Compression. Loss. 
+→ Without it? No LLM tuning. No transformers. No stable outputs.
+
+𝗟𝗼𝗴𝗶𝗰 & 𝗗𝗶𝘀𝗰𝗿𝗲𝘁𝗲 𝗠𝗮𝘁𝗵 (𝗔𝗻𝗰𝗶𝗲𝗻𝘁 → 1800𝘀):
+The roots of reasoning. The structure behind algorithms. 
+→ Without it? No symbolic AI. No decision trees. No code generation. No logic in prompts.
+
+𝗦𝗲𝘁 𝗧𝗵𝗲𝗼𝗿𝘆 (1900𝘀): 
+The math of grouping, labeling, and combining things. 
+→ Without it? No understanding of datasets. No logic. No data modeling.
+
+And yes — there’s even more: topology, numerical methods, chaos theory, geometry...Modern AI is built on centuries of mathematical breakthroughs and scientific innovation. No, AI isn’t magic. It’s just math — finally running at scale. And honestly?
+I think that’s beautiful!
+
+---
+
+Kudos to Domain of Science for this map below. There is also a video explaining it in more detail (I highly recommend to watch): https://lnkd.in/dHD5vgCf
+
+8
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+7,930 位关注者
+

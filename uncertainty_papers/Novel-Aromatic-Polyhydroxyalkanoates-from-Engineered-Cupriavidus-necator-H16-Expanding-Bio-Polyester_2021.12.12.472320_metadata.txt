@@ -1,0 +1,36 @@
+標題: Novel Aromatic Polyhydroxyalkanoates from Engineered Cupriavidus necator H16: Expanding Bio-Polyester Synthesis from Renewable Feedstocks
+
+摘要: Synthetic materials are integral components of consumable and durable goods and are indispensable in the modern world. Polyesters are the most versatile bulk- and specialty-polymers but their production is not sustainable and their fate at end-of-life is of great concern. Bioplastics, though highly regarded, often lag behind conventional plastics due to poor material properties and a competitive market. This has limited the success of sustainable replacements at scale. Enabling the production of bioplastics with superior properties from waste-derived feedstocks could change that.
+
+To this end, we created a synthetic entry into the metabolic pathway of bio-polyester synthesis of Cupriavidus necator H16 employing heterologous hydroxyacyl-CoA transferase and mutant PHA synthase. The resulting microbial cell factories enabled the co-polymerization of a range of aliphatic and aromatic hydroxy carboxylates, including a hydroxyphenylic and a hydroxyfuranoic acid, for the first time incorporating aromatic rings in the backbone of biological polyesters. The latter were structurally analogous to synthetic polyesters like PET and PEF, as well as PBST and PBAT. The obtained bio-polyesters underwent characterization for specific physicochemical properties, complemented by the prediction of uncharacterized physicochemical and mechanical properties. In a further advance, the transgenic strain was cultivated in a bio-electrochemical system under autotrophic conditions, enabling synthesis of aromatic bio-polyesters with in situ generated H2+O2, while assimilating CO2. Employing elementary flux-mode analysis, metabolic modeling confirmed the feasibility of producing an extended range of aliphatic, arylatic, and aromatic PHAs de novo from various feedstocks. This comprehensive study paves the way toward sustainable bio-production of advanced high-performance thermoplastics and thermosets.
+
+Significance StatementBiomaterials can help the chemical industry transition to a carbon-neutral and circular economy, reducing the accumulation of greenhouse gases and plastic waste by developing biological replacements for fossil carbon-based plastics and implementing end-of-life strategies.
+
+Accomplished via the genetic engineering of a microbe that can assimilate carbon dioxide, this work demonstrates the first biocatalytic polymerization and incorporation of aromatic building blocks into the backbone of polyhydroxyalkanoates (PHAs). Employing a bio-electrochemical system for cultivation of the microbes, oxyhydrogen is formed and consumed in situ, thus avoiding explosive gas mixtures.
+
+The obtained aromatic PHAs are structurally similar and functionally analogs to synthetic bulk- and high-performance polymers such as PET (polyethylene terephthalate) and PEF (polyethylene furanoate) as well as PBST (polybutylene succinate-co-terephthalate) and PBAT (polybutylene adipate-co-terephthalate).
+
+Graphical AbstractThe biosynthesized novel aromatic polyhydroxyalkanoates described in this study are structurally similar to incumbent synthetic polyesters such as poly(ethylene terephthalate) (PET, orange box) and poly(ethylene furan-dicarboxylate) (PEF, yellow box). While PET and PEF may be bio-based to varying degrees, they are always synthesized chemically. In contrast, not only the monomers of poly(hydroxybutyrate-co-phloretate) and poly(hydroxybutyrate-co-hydroxymethylfuranoate) (green box) are fully bio-derived, but also the entire polymers are synthesized biologically. This was demonstrated by employing the autotrophic bacterium Cupriavidus necator H16.
+
+
+
+O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=112 SRC="FIGDIR/small/472320v3_ufig1.gif" ALT="Figure 1">
+View larger version (23K):
+org.highwire.dtl.DTLVardef@20714borg.highwire.dtl.DTLVardef@1ee1c06org.highwire.dtl.DTLVardef@171cee7org.highwire.dtl.DTLVardef@c6bc21_HPS_FORMAT_FIGEXP  M_FIG C_FIG HighlightsO_LIFirst-ever biocatalytic formation of polyesters with aromatic rings in the backbone
+C_LIO_LIMicrobial production of aromatic PHAs in a bio-electrochemical system on CO2 and H2+O2
+C_LIO_LIExpression-level of PHA synthase and molecular weight of polyesters are inversely correlated
+C_LIO_LIIn silico design and pathway analysis of bio-polyesters from low-cost carbon-feedstocks
+C_LIO_LIPrediction of material properties for novel aromatic co-polyesters and structural analogs
+C_LI
+
+發布日期: 2025-04-08
+
+DOI: 10.1101/2021.12.12.472320
+
+作者: A, v, e, r, e, s, c, h, ,,  , N, .,  , J, .,  , H, ., ;,  , P, a, n, e, ,,  , V, .,  , E, ., ;,  , K, r, a, c, k, e, ,,  , F, ., ;,  , C, h, a, t, t, e, r, j, e, e, ,,  , S, ., ;,  , B, e, r, l, i, n, e, r, ,,  , A, .,  , J, ., ;,  , Z, i, e, s, a, c, k, ,,  , M, ., ;,  , N, a, n, g, l, e, ,,  , S, .,  , N, ., ;,  , W, a, y, m, o, u, t, h, ,,  , R, .,  , M, ., ;,  , C, r, i, d, d, l, e, ,,  , C, .,  , S, .
+
+類別: synthetic biology
+
+PDF路徑: downloaded
+
+下載時間: 2025-09-24 13:24:35

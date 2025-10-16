@@ -1,0 +1,90 @@
+URL: https://www.linkedin.com/posts/dtu-mathematics_bayesian-neural-networks-for-molecular-discovery-activity-7166035074105257985-Zm0B
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+DTU Compute的动态
+DTU Compute
+
+8,652 位关注者
+
+1 年
+
+DTU Compute is happy to welcome another PhD student, Laurits Fredsgaard Larsen, from our section of Cognitive Systems!
+
+His project titled "Bayesian neural networks for molecular discovery" is about developing new methods for uncertainty-aware GNNs that don't compromise on performance or feasibility.
+
+"These models can serve as 'oracles' for scientists, guiding them towards promising molecules for drug discovery. Moreover, they can flag areas where their predictions are uncertain, inviting further experimental verification. In essence, these new models create a feedback loop: research informs the model, and the model, in turn, informs research - making the whole process of drug discovery more efficient and reliable."
+
+More info is in the link!
+
+#PhD #DTUCompute #research #cogsys #Bayesian #neuralnetworks
+
+https://lnkd.in/dEiZp9xZ
+
+Bayesian neural networks for molecular discovery
+orbit.dtu.dk
+34
+1 条评论
+赞
+评论
+分享
+David Ribberholt Ipsen
+
+Machine Learning Engineer 🌱 Algorithmic Energy Trading ⚡️
+
+1 年
+
+Fedt Laurits Fredsgaard Larsen 😄 
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+8,652 位关注者
+
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

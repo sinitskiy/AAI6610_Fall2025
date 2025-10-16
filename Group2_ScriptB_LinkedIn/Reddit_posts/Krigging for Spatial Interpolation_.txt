@@ -1,0 +1,11 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/y7hwfm/krigging_for_spatial_interpolation/
+Title: Krigging for Spatial Interpolation?
+
+Content:
+I have weather data from stations across the US but of course this data corresponds to single lat/lon coordinates whereas I'd like data at every coordinate across the entire US. Thus, I'm going to need to do some sort of spatial interpolation (or similar).
+
+I've read that krigging (Gaussian Process Regression) is often used for spatial interpolation though I can't see the benefit over something like KNN if I'm not going to be using the uncertainty estimate it comes with. Krigging is very computationally expensive and explaining the theory behind it is difficult at best. Neglecting uncertainty quantification since it won't be used, is the main advantage  properly designed mean and covariance functions in which the model reverts back to in the areas far from data points?
+
+Comments:
+- You want your model to approximate reality. Use the model which comes closest to approximating how weather behaves. Kriging is what I would use, and what I have used for similar spatial applications. I certainly like it the most, but I don't know if it's the best

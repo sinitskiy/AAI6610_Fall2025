@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/vera-damerjian-pieters-phd_nsclc-trustworthyai-deeplearning-activity-7336668718371921921-F-7n
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vera Damerjian Pieters, PhD的动态
+Vera Damerjian Pieters, PhD
+
+Founder @ VeraDP | PhD in Computer Vision | AI Consulting for MedTech | Technical Management | AI Education & Mentorship
+
+4 个月  已编辑
+
+I am delighted to share our latest article on automatic segmentation of stage IV non-small cell lung cancer (NSCLC). A confidence score using deep ensembles is also proposed to quantify prediction uncertainty in order to automate the identification of complex cases that require further review. 
+
+The results demonstrate the potential of attention-based architectures and specific preprocessing strategies to improve segmentation quality in such a challenging clinical scenario, while emphasizing the importance of uncertainty estimation to build trustworthy AI systems in medical imaging.
+
+Kudos to our PhD candidate Sacha Dedeken for the exceptional work!
+
+The full paper can be read here: https://lnkd.in/e-fhjqgt
+
+Jérôme Faure Olivier Gallinato Pierre-Henri Conze Thierry Colin @Dimitris Visvikis 
+
+#NSCLC #TrustworthyAI #DeepLearning #Oncology #StageIVNSCLC #Segmentation #UncertaintyEstimation #ConfidenceScore #MedicalImaging
+
+SOPHiA GENETICS
+
+128,999 位关注者
+
+4 个月
+
+📣 We are excited to share our recent publication in Computerized Medical Imaging and Graphics, highlighting the groundbreaking work by LaTIM (Laboratory of Medical Information Processing) in collaboration with SOPHiA GENETICS to tackle the complexities of advanced lung cancer imaging.
+
+Medical imaging is critical across the lung cancer patients’ journey, underscoring the need for robust, reliable, and automated radiomics segmentation tools to support clinical decision-making and improve patient care in advanced NSCLC.
+
+🚀 In this study, the teams developed a high-performance, AI-driven tumor segmentation model, using a diverse, real-world imaging dataset, to advance both accuracy and trust in imaging analysis.
+
+📑 Read the full article spotlight to learn how this work brings us close

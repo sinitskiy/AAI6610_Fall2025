@@ -1,0 +1,53 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1h7dopb/first_release_anylearning_a_privacyfirst/
+Title: 🚀 [First Release] AnyLearning - A Privacy-First Alternative to Cloud AI Training -  Want to Train Your Computer Vision Models With NO Code?
+
+Content:
+After months of development, I'm thrilled to announce the first release of AnyLearning - a desktop app that lets you train AI models and label images completely offline.
+
+https://preview.redd.it/4r8ivq5y825e1.png?width=3500&format=png&auto=webp&s=e526e3db7a54721da4744143bd9d410fb821a1e6
+
+https://preview.redd.it/f8kr7qcz825e1.png?width=2964&format=png&auto=webp&s=f21edb4e12dec3e82f2ac7531b9d6b4113e78217
+
+https://preview.redd.it/4ad45oy3925e1.png?width=2722&format=png&auto=webp&s=ffe784482e83fb1862f18d7c4eef25ca6fa70a4a
+
+**Why AnyLearning?**
+
+* 100% offline - your data stays on your machine
+* No cloud dependencies, no tracking
+* No monthly subscriptions, just a one-time purchase
+* Perfect for sensitive data (HIPAA & GDPR friendly)
+
+**Links:**  
+🌐 [Website](https://anylearning.nrl.ai)  
+📚 [Documentation](https://anylearning.nrl.ai/docs)  
+💻 [Download](https://anylearning.nrl.ai/download)  
+🛠️ [Image Labeling Tool](https://anylabeling.nrl.ai)
+
+**Current Features:**
+
+* Image classification
+* Object detection
+* Handpose classification
+* Auto-labeling with MobileSAM + SAM2
+* CPU/Apple Silicon support
+* MacOS & Windows support
+
+**Coming Soon:**
+
+* Linux support
+* GPU training
+* Image segmentation
+* More auto-labeling models
+
+This is just the beginning - we have lots of exciting features planned! Would love to hear your feedback and feature requests.
+
+**Links:**  
+🌐 [Website](https://anylearning.nrl.ai)  
+📚 [Documentation](https://anylearning.nrl.ai/docs)  
+💻 [Download](https://anylearning.nrl.ai/download)  
+🛠️ [Image Labeling Tool](https://anylabeling.nrl.ai)
+
+\#MachineLearning #AI #ComputerVision #Privacy
+
+Comments:

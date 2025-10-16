@@ -1,0 +1,64 @@
+URL: https://www.linkedin.com/posts/kleinlab-mbd_methods-for-big-data-activity-7353089206576898049-QIsa
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+KleinLab的动态
+KleinLab
+
+114 位关注者
+
+2 个月
+
+📢 New Blog Post Alert
+We are excited to share our latest blog post: "Uncertainty-Aware Trajectory Prediction via Rule-Regularized Heteroscedastic Deep Classification" based on the corresponding paper (https://lnkd.in/eaSyxx-b) by Kumar Manas, Christian Schlauch, Prof. Dr. Adrian Paschke, Dr. Christian Wirth, and Prof. Dr. Nadja Klein, published at Robotics: Science and Systems (RSS) 2025.
+
+Introducing SHIFT, a novel training framework that tackles one of autonomous driving's biggest challenges: reliable motion prediction with well-calibrated uncertainty estimates.
+
+🔍 Key innovations include:
+- Automatic rule extraction using Large Language Models with RAG for scalable prior knowledge integration
+- Heteroscedastic Gaussian processes for better aleatoric and epistemic uncertainty modeling
+- Two-stage training where "today's posterior becomes tomorrow's prior"
+- Spectral-normalized ResNet-50 backbone for distance-sensitive representations
+
+Our experiments demonstrate that SHIFT consistently outperforms baselines across standard training, low-data regimes, and out-of-distribution scenarios. The latter is especially crucial for safety-critical applications like autonomous driving.
+
+Our framework shows how combining domain expertise (drivability rules, traffic regulations) with principled uncertainty quantification can achieve higher performance with less data.
+
+Read the full blog post here: 🔗 https://lnkd.in/ej4u2Dxz
+#AutonomousDriving #BayesianDeepLearning #UncertaintyQuantification #MotionPrediction #SafetyAI #RSS2025
+
+- Methods for Big Data
+kleinlab-statml.github.io
+6
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+114 位关注者
+
+查看档案  关注
+探索相关领域
+Deep Learning Breakthroughs and Trends
+Daily AI Breakthrough Summaries
+Future Trends in Reinforcement Learning
+Challenges and Benefits of Deep Learning in AI
+How to Ensure AI Accuracy
+How to Improve Data Practices for AI
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Em

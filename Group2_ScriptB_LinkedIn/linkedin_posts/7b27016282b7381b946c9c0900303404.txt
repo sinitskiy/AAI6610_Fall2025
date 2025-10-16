@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/shashidhar-soppin-8264282_%3F%3F%3F%3F%3F%3F-%3F%3F%3F-%3F%3F%3F-activity-7063210475769004032-eW6t
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Shashidhar Soppin的动态
+Shashidhar Soppin
+2 年
+
+🐞 ⋆ 🐾 🎀 {𝑩𝒂𝒔𝒊𝒄𝒔 𝒇𝒐𝒓 𝑳𝑳𝑴-- 𝑳𝒂𝒓𝒈𝒆 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 𝑴𝒐𝒅𝒆𝒍𝒔} 🐞 ⋆ 🐾 🎀
+"𝐑𝐮𝐥𝐞-𝐛𝐚𝐬𝐞𝐝 𝐬𝐲𝐬𝐭𝐞𝐦𝐬" 𝐚𝐧𝐝 "𝐩𝐫𝐨𝐛𝐚𝐛𝐢𝐥𝐢𝐬𝐭𝐢𝐜 𝐦𝐨𝐝𝐞𝐥𝐬" 𝐚𝐫𝐞 𝐭𝐰𝐨 𝐝𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭 𝐚𝐩𝐩𝐫𝐨𝐚𝐜𝐡𝐞𝐬 𝐮𝐬𝐞𝐝 𝐢𝐧 𝐚𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐢𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 𝐚𝐧𝐝 𝐦𝐚𝐜𝐡𝐢𝐧𝐞 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠. 
+🌞👉𝓡𝓾𝓵𝓮-𝓑𝓪𝓼𝓮𝓭 𝓢𝔂𝓼𝓽𝓮𝓶𝓼: Definition: Rule-based systems utilize a set of predefined rules to make decisions or perform tasks. These rules are typically based on expert knowledge or predefined logical statements.
+Rule Representation: Rules are typically expressed in the form of "if-then" statements. For example, "if condition A is met, then perform action B."
+Decision Making: Rule-based systems follow a deterministic approach, where decisions are made based on the rules & the current state of the system.
+Transparency: Rule-based systems provide high transparency and interpretability since the decision-making process is explicitly defined by the rules.
+Scalability: Adding new rules to a rule-based system can become complex & time-consuming, especially when dealing with large rule sets.
+Handling Uncertainty: Rule-based systems struggle to handle uncertainty and incomplete information effectively. 
+🌞👉𝐏𝐫𝐨𝐛𝐚𝐛𝐢𝐥𝐢𝐬𝐭𝐢𝐜 𝐌𝐨𝐝𝐞𝐥𝐬: Definition: Probabilistic models utilize statistical inference & probability theory to make decisions or predictions based on available data.
+Model Representation: Probabilistic models represent uncertainties & relationships using probability distributions and mathematical functions.
+Decision Making: Probabilistic models consider probabilities and make decisions based on the likelihood of different outcomes.
+Transparency: Probabilistic models can be less transparent compared to rule-based systems because the decision-making process is based on complex mathematical calculations and statistical methods.
+Scalability: Probabilistic models are flexible & scalable.
+Handling Uncertainty: Probabilistic models naturally handle uncertainty by assigning probabilities to different outcomes & can

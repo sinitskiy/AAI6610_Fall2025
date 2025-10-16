@@ -1,0 +1,41 @@
+URL: https://www.linkedin.com/posts/giuseppe-serra-a70261120_how-to-leverage-predictive-uncertainty-estimates-activity-7303507970644963328-Yv-d
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Giuseppe Serra的动态
+Giuseppe Serra
+
+Machine Learning Postdoctoral Researcher @ MLO Lab
+
+7 个月
+
+In many real-world applications, we would like our model to continuously learn new information. But how can we prevent it from forgetting what it has previously learned?
+
+In our #TMLR paper, we investigate which measures of uncertainty are most effective in mitigating catastrophic forgetting in the context of memory-based online continual learning. Curious to know more?
+Check the link in the post for further details!
+
+Florian Büttner
+
+Professor at Frankfurt University and the German Cancer Research Center (DKFZ/DKTK)
+
+7 个月
+
+Our work on how to mitigate catastrophic forgetting by leveraging predictive uncertainty has been accepted at Transactions on Machine Learning Research (TMLR)! 🎉
+
+
+🔍 In memory-based online continual learning, memory management plays a crucial role in mitigating catastrophic forgetting (CF) — but what is the best strategy for selecting samples to store in the memory? Should we store the easiest-to-forget or the easiest-to-remember samples?
+
+
+💡Under an uncertainty lens, we investigate what characteristics make samples effective in alleviating CF. Starting from the examination of the properties and behaviors of popular uncertainty estimates, we identify that they mostly capture the irreducible aleatoric uncertainty and hypothesize that a better strategy should focus on the epistemic uncertainty instead. For this, we propose to use an uncertainty estimate based on the Bregman Information (BI) which, via a general bias-variance decomposition for strictly proper scores, identifies the variance term as an estimate for the epistemic uncertainty.
+
+📊 Our results, tested across various realistic scenarios, suggest that a) storing samples with with low epistemic uncertainty is the most effective strategy to combat CF while maintaining competitive classification performance, and b) focusing on epistemic uncertainty estimates 

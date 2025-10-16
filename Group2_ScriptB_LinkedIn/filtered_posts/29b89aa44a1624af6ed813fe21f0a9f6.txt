@@ -1,0 +1,104 @@
+URL: https://www.linkedin.com/posts/carl-mcbride-ellis_sources-of-uncertainty-in-machine-learning-activity-7274007983775232000--fcU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Carl McBride Ellis, PhD的动态
+Carl McBride Ellis, PhD
+
+Predictive analytics (tabular data) | Author of "The Orange Book of Machine Learning"
+
+9 个月
+
+Ones machine learning predictions always come with uncertainty, which can hypothetically be decomposed into aleatoric and epistemic uncertainty, which can be subdivided into estimation and model uncertainty. This review paper takes a closer look at the nature of these components.
+#machinelearning #datascience
+
+Sources of Uncertainty in Machine Learning -- A Statisticians' View
+arxiv.org
+64
+2 条评论
+赞
+评论
+分享
+Mohamed I.
+
+Doctoral student @ The University of Bonn | Uncertainty Quantification and Explainable Machine Learning for Crop Monitoring
+
+9 个月
+
+One of the best!
+
+赞
+回复
+Lee Slutes
+
+Statistician, Econometrician and Complexity Scientist
+
+8 个月
+
+Very interesting. Should be read and understood by anyone building statistical models
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+14,058 位关注者
+
+502 则动态
+ 1 篇文章
+查看档案  关注
+更多文章
+"Has Barbie gone to Los Alamos?"
+Carl McBride Ellis, PhD  10 个月
+探索相关领域
+Understanding the End-to-End Machine Learning Process
+How Machine Learning Transforms Chemistry
+Latest Trends in Machine Learning
+Tips for Machine Learning Success
+How Ensemble Learning Improves Predictions
+Importance of Clean Data for AI Predictions
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

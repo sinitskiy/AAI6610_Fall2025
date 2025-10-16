@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/zlky7l/ten_hacks_for_predicting_protein_properties_from/
+Title: Ten Hacks for Predicting Protein Properties from Sequences using Machine Learning
+
+Content:
+
+
+Comments:

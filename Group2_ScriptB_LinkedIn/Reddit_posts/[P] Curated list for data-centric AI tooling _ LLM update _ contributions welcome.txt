@@ -1,0 +1,20 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/17vrk82/p_curated_list_for_datacentric_ai_tooling_llm/
+Title: [P] Curated list for data-centric AI tooling / LLM update / contributions welcome
+
+Content:
+The tooling space for LLMs and RAG is evolving fast. We updated our “Awesome Open Data Centric AI" list to reflect that: [https://github.com/Renumics/awesome-open-data-centric-ai](https://github.com/Renumics/awesome-open-data-centric-ai)
+
+Unsurprisingly, the biggest changes are in the "Security" and the "Observability" category.
+
+Also, it is great to see that an increasing amount of tools revolve around qualitative data understanding (instead of quantiative metrics) and data curation. 
+
+https://preview.redd.it/ejqfdxfdxh0c1.png?width=1200&format=png&auto=webp&s=fb73e360df8e7ee5b6a33004e987dfe665000995
+
+Do you think there is a tool missing? Feel free to create a pull request on Github!
+
+&#x200B;
+
+&#x200B;
+
+Comments:

@@ -1,0 +1,128 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/4x10mg/the_mathematics_of_machine_learning/
+Title: The Mathematics of Machine Learning
+
+Content:
+By AKINFADERIN ADEWALE
+
+In the last few months, I have had several people contact me about their enthusiasm for venturing into the world of data science and using Machine Learning (ML) techniques to probe statistical regularities and build impeccable data-driven products. However, I’ve observed that some actually lack the necessary mathematical intuition and framework to get useful results. This is the main reason I decided to write this blog post. Recently, there has been an upsurge in the availability of many easy-to-use machines and deep learning packages such as sick it-learn, Weka, Tensorflow etc. Machine Learning theory is a field that intersects statistical, probabilistic, computer science and algorithmic aspects arising from learning iteratively from data and finding hidden insights which can be used to build intelligent applications. Despite the immense possibilities of Machine and Deep Learning, a thorough mathematical understanding of many of these techniques is necessary for a good grasp of the inner workings of the algorithms and getting good results.
+
+Why Worry About The Maths?
+
+There are many reasons why the mathematics of Machine Learning is important and I’ll highlight some of them below:
+
+1. Selecting the right algorithm which includes giving  considerations to accuracy, training time, model complexity, the number of parameters and number of features.
+
+2. Choosing parameter settings and validation strategies.
+
+3. Identifying underfitting and overfitting by understanding the Bias-Variance tradeoff.
+
+4. Estimating the right confidence interval and uncertainty.
+
+What Level of Maths Do You Need?
+
+The main question when trying to understand an interdisciplinary field such as Machine Learning is the amount of maths necessary and the level of maths needed to understand these techniques. The answer to this question is multidimensional and depends on the level and interest of the individual. Research in mathematical formulations and theoretical advancement of Machine Learning is ongoing and some researchers are working on more advanced techniques. I’ll state what I believe to be the minimum level of mathematics needed to be a Machine Learning Scientist/Engineer and the importance of each mathematical concept.
+
+
+1. Linear Algebra: Someone recently said that “Linear Algebra is the mathematics of the 21st century” and I totally agree with the statement. In ML, Linear Algebra comes up everywhere. Topics such as Principal Component Analysis (PCA), Singular Value Decomposition (SVD), Eigendecomposition of a matrix, LU Decomposition, QR Decomposition/Factorization, Symmetric Matrices, Orthogonalization & Orthonormalization, Matrix Operations, Projections, Eigenvalues & Eigenvectors, Vector Spaces and Norms are needed for understanding the optimization methods used for machine learning. The amazing thing about Linear Algebra is that there are so many online resources. I have always said that the traditional classroom is dying because of the vast amount of resources available on the internet. My favorite Linear Algebra course is the one offered by MIT Courseware (Prof. Gilbert Strang).
+
+2. Probability Theory and Statistics: Machine Learning and Statistics aren’t very different fields. Actually, someone recently defined Machine Learning as ‘doing statistics on a Mac’. Some of the fundamental Statistical and Probability Theory needed for ML are Combinatorics, Probability Rules & Axioms, Bayes’ Theorem, Random Variables, Variance and Expectation, Conditional and Joint Distributions, Standard Distributions (Bernoulli, Binomial, Multinomial, Uniform and Gaussian), Moment Generating Functions, Maximum Likelihood Estimation (MLE), Prior and Posterior, Maximum a Posteriori Estimation (MAP) and Sampling Methods.
+
+3. Multivariate Calculus: Some of the necessary topics include Differential and Integral Calculus, Partial Derivatives, Vector-Values Functions, Directional Gradient, Hessian, Jacobian, Laplacian and Lagragian Distribution.
+
+4. Algorithms and Complex Optimizations: This is important for understanding the computational efficiency and scalability of our Machine Learning Algorithm and for exploiting sparsity in our datasets. Knowledge of data structures (Binary Trees, Hashing, Heap, Stack etc), Dynamic Programming, Randomized & Sublinear Algorithm, Graphs, Gradient/Stochastic Descents and Primal-Dual methods are needed.
+
+5. Others: This comprises of other Math topics not covered in the four major areas described above. They include Real and Complex Analysis (Sets and Sequences, Topology, Metric Spaces, Single-Valued and Continuous Functions, Limits), Information Theory (Entropy, Information Gain), Function Spaces and Manifolds.
+
+Some online MOOCs and materials for studying some of the Mathematics topics needed for Machine Learning are:
+
+Khan Academy’s Linear Algebra, Probability & Statistics, Multivariable Calculus, and Optimization.
+Coding the Matrix: Linear Algebra through Computer Science Applications by Philip Klein, Brown University.
+Linear Algebra – Foundations to Frontiers by Robert van de Geijn, University of Texas.
+Applications of Linear Algebra, Part 1 and Part 2. A newer course by Tim Chartier, Davidson College.
+Joseph Blitzstein – Harvard Stat 110 lectures
+Larry Wasserman’s book – All of the statistics: A Concise Course in Statistical Inference .
+Boyd and Vandenberghe’s course on Convex optimization from Stanford.
+Linear Algebra – Foundations to Frontiers on edX.
+Udacity’s Introduction to Statistics.
+Finally, the main aim of this blog post is to give a well-intentioned advice about the importance of Mathematics in Machine Learning and the necessary topics and useful resources for a mastery of these topics. However, some Machine Learning enthusiasts are the novice in Maths and will probably find this post disheartening (seriously, this is not my aim). For beginners, you don’t need a lot of Mathematics to start doing Machine Learning. The fundamental prerequisite is data analysis as described in this blog post and you can learn maths on the go as you master more techniques and algorithms.
+
+To know more about machine learning please subscribe our newsletter www.muoro.io
+
+Comments:
+- I have a mathematical background and while that has clearly been helpful I disagree with most of your statements why you need math. To understand how machine learning algorithms work and why an algorithm scales quadratically you need mathematics, but in practice with all these packages available a lot can be done just by experiments. Three out of your four examples are not, as you say necessary:
+
+1. **Selecting the right algorithm which includes giving considerations to accuracy, training time, model complexity, the number of parameters and number of features.** Even with a solid math background most of this comes down to crossvalidation and intuition, which are only helped a little bit by mathematics. Which algorithm usually works better can be found in a lot of articles.
+
+1. **Choosing parameter settings and validation strategies.** This is not more than some theory on validation strategies, logic, understanding what a mean is and if you know what an exponent is that will help a bit too.
+
+1. **Identifying underfitting and overfitting by understanding the Bias-Variance tradeoff.** Compare train and validation scores and read an article about bias-variance tradeoff.
+
+1. **Estimating the right confidence interval and uncertainty.** I concede that having some proper statistical background will help with this.
+
+All in all I think mathematics helps a lot with the intuition behind these things and will get you there faster but it is far from necessary for these topics.
+
+EDIT: I realized that this is a bit more negative than I meant, it's a nice write up what parts of mathematics will help but the necessity is a bit exaggerated in my opinion.
+- Good coverage of the fundamentals. But lol, 
+
+ > sick it-learn
+
+scikit learn
+- You should add Gilbert Strang's Linear Algebra course on MIT Opencourseware. That's the best lin alg course I've seen. My apologies if you already have it listed, I didn't see it there when I looked through the list.
+- I realize that it sounds like I'm trying to have it both ways, but if you're looking to get into ML and want to know what math you'll need (a quite understandable question), the best answer I can think of is that (a) the math is both more important than you think [directed to those who think it isn't very important], and (b) less important than you think [directed to those who think that a tremendous amount of math is needed just to get started].
+
+Apropos (a): In my experience it's true (as many people have said in this thread and similar ones) that a lot of one's time in ML is taken up by obviously non-math activities.  Maybe even 90% of the time.  You could look at this fact and say that, well, there you go -- the math isn't needed after all.  But I think this is premature conclusion.  Doing data munging, or setting up analysis pipelines, parameter tuning, etc., looks like gruntwork that has nothing to do with math, but I'm doing these activities in a certain way because I know the underlying model/algorithm that I'm working with.  In other words, all this rote work is being done in the service of delivering high-quality results using an algorithm (or ensemble of algorithms/methods) that I understand.  I understand how the data is being transformed, and why it makes sense to push it through a certain pipeline.  The justification for that boils down to a good understanding of the methods involved, and that rests, among other things, on mathematical knowledge (in other words: a knowledge of the theoretical basis for the algorithms).  Being able to explain (or at least have a chance of being able to explain) why a method yields certain results also rests largely on knowing the math that underlies the methods.
+
+Aprorpos (b): as others have commented, a lot of ML involves not so much "math" as it does engineering and being able to deliver quality results quickly.  As a mathematician, there's a part of me that would love to say that math is super important and you have just *got* to know it all, but I think that statement is not really justified.  There's not much "guidance" on how to implement ML algorithms, and if you implement them naively, the algorithm will probably be terribly slow (maybe even unusable).  Math alone doesn't take you very far; it's just one piece of the puzzle.  Knowledge and skills in other parts of computer science play arguably a bigger role than the pure math of it all.  If you are focused largely on pure math/algorithms, then you might not appreciate the need to adapt the methods so that they have even a chance of working on real-world data.  Being able to program things effectively, and in a well-structured way, in a team, is likely to take you much further than a deep knowledge of the math behind what you're programming.
+
+We can resolve the conflict between (a) and (b) by keeping in mind that it really depends on what you want to do in ML.  If you're looking to get into the research side of things, then you certainly need a broad base of mathematical knowledge.  If you are looking to tweak existing algorithms or combine them in new ways, then, again, knowledge of the mathematical basis of the methods works in your favor.  If you're mostly interested in building things using standard ML algorithms, then you probably don't need that much math (the basics will take you far).  There's nothing wrong with either approach.  We need both kinds of people.
+- Honestly, if one were to become talented in the following
+
+- Functional Analysis
+- Advanced Probability and Statistics
+- Non-Linear Optimization
+- Graph Theory
+- Information Theory
+- Complexity Analysis
+
+Then understanding a large portion machine learning will be a breeze.
+- Thank you for putting this together.  I'm someone who has an interest in machine learning, and I'm already applying it in discrete settings at my job.  However, the lack of math background has me really stuck, particularly in the specific domains you outlined.  I didn't approach math seriously enough in my university courses, and my university (JMU) at the time made a weird decision to neglect rigorous math courses for computer science degrees.  Plus, it has been 16 years since I graduated, and what skills I did pick up have largely atrophied.  While I can spend a few hours or a couple of days to pick up the basics of some of the toolkits, I'm a bit intimidated by the fact that I'd likely have to study full-time for a full year or so to pick up all of the lacking math skills you've correctly outlined.  It's great that you've outlined some good free resources, but that's an enormous time commitment.
+
+I definitely acknowledge the points made by u/dzyl.  I'm at least somewhat functional in my work despite my limitations.  I've found that some models like random forest classifiers tend to work reasonably well for most of my work out of the box.  However, when stuff doesn't work well, I'm at a loss to troubleshoot or change my approach.  I can't characterize my underlying data very well.  I don't understand how a PCA really works.  I can't do hyperparameter tuning or model selection without applying a caveman approach of trying everything and hoping it works (and hoping that the job completes in some reasonable timeframe).
+
+Are there others that have been in my situation?  How did you pick up all of these skills and manage the time commitment required?
+- I would subscribe to your newsletter but your link seems to be broken.
+- I would like to point out an upcoming probability course. "Computational Probability and Inference"
+According to the information given on the course website, it will cover some advanced concepts in probability and machine learning such as probabilistic graphical models.
+
+https://www.edx.org/course/computational-probability-inference-mitx-6-008-1x
+- Thanks for the article. As a novice I appreciate a dump of all the maths topics I should become comfortable with. 
+
+Coursera's ML course had a good balance I thought. The algorithms were almost always presented in reasonable detail, but Andrew Ng never really let it slow down or intimidate newbies. After finishing the course I know I want to delve further into the maths and master it, but I am at the same time pulled in the other direction towards actually implementing things with scikit-learn and nltk.
+
+Finally, I reckon your final paragraph should be reformatted into a list. It's not very readable.
+
+Edit: It's unrelated and a little trivial, but I think your bison.io logo could use some work. It's trying to do too much.
+- What are the most relevant and practical sources you've found for linear algebra online? I'll check out the MIT one, but I like to have multiple perspectives. Took applied linear algebra in uni, but the prof told me if I wanted anything besides reciting proofs then I should have taken applied linear algebra instead of applied linear algebra. When I reminded him the class and sylabus we all signed off on was actually applied linear algebra he said "Oh, well that's not how I'm teaching it." Looking forward to trying something constructive with it.
+- [deleted]
+- I don't understand why in this area is ok to  try every possibe algorithm without understand it with a trillion differents parameters and when I generate  two random strings:  one to diagnose a disease and another to prescribe a drug  until the patient is cured,  everyone says that I'm a terrible doctor. The other day a patient came whit a terrible "ah#&479fgf" disease and my algorithm prescribed "flU mEddicine" and he was cured. I burned all my chemistry and medicine books.
+
+I  completely agree. It is essential to understand those concepts.
+- So what ***is*** necessary to get into machine learning?
+- I agree. In the end it all depends on whether you want to do research in ML and on what kind of research you want to do.
+- I think what you are disregarding is that oftentimes a particular algorithm doesn't fit your needs exactly, and understanding the underlying math gives you the flexibility to tweak and tune your algorithm/methodology to fit the problem.
+- So much this. You can achieve a ton without intricate understanding of the underlying math. You most definitely need *some* math. You need to be able to understand the logic behind MLE, for example or the logic behind shrinkage. But you don't need to go over all the math every time you create a model. Digging deep into the math is for research people. 
+
+Something about mechanics and engineers. Although not quite accurate in this case, it sums up the general notion.
+- Doing machine learning without math is like doing physics without calculus. It is possible - and it you've probably taken a class in high school or in first year which tried to do that, and it is painful (remember trying to understand the "centrifugal force"?). Mathematics isn't necessary, strictly speaking, but it is the most pain-free route to the goal.
+- I think the thing that's actually important about mathematical expertise in ML isn't any kind of formal correctness or decision process, its just the ability to consider a suite of mathematical objects and methods as comfortable tools to achieve one's goal.
+
+That is to say, in an environment where you're making new things, every tool you have is a way of thinking you can turn towards what you're trying to do. For example, its very useful to be able to think 'I need to understand how these variables influence eachother? Okay, I can do that with the gradient' or 'okay, something is blowing up here, so lets just normalize' or 'I need to have this network decide the parameters of an image transform... lets try having the transform be a 2x2 matrix, so I just need a layer with 4 outputs'.
+
+Correctness can be verified after the fact for the most part, so I'd be less concerned there. But being comfortable with using available tools is going to determine how creative and flexible you can be to changing needs and circumstances.
+- probably autocorrect
+- >  Gilbert Strang's Linear Algebra course on MIT Opencourseware
+
+Link for the lazy:
+
+http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/

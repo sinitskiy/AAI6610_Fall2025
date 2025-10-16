@@ -1,0 +1,34 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mu2a8x/d_beyond_the_cloud_slms_local_ai_agentic/
+Title: [D] Beyond the cloud: SLMs, local AI, agentic constellations, biology and a high value direction for AI progress
+
+Content:
+Dear r/MachineLearning friends,
+
+I’m here today to share a thought on a different direction for AI development. While the field chases multi-trillion parameter models, I believe an extremely valuable endeavour lies in the power of constraints: pushing ourselves to get models under 1 billion parameters to excel.
+
+In my new blog post, I argue that this constraint is a feature, not a bug. It removes the "scale-up cheat code" and forces us to innovate on fundamental algorithms and architectures. This path allows for faster experimentation, where architectural changes are no longer a risk but a necessity for improvement.
+
+The fear that 'scale will wash away any and all gains' is real, but let's remember: an MLP could never compete with a Transformer, no matter how much it was scaled up. My post explores the question: **what if our current Transformer is the MLP of something better that is within grasp but ignored because of our obsession with scale?**
+
+🧠🔍 **Read the full article here:**[https://pieces.app/blog/direction-of-ai-progress](https://pieces.app/blog/direction-of-ai-progress)
+
+Your feedback and thoughts would be greatly appreciated.
+
+Regards,
+
+Antreas
+
+Comments:
+- Agreed on the overall point you're making but just two cents on a side note, I'd say MLP could actually be better than transformer given *unlimited* compute. Its the limitation that led us to think what other way we can model similarities that led to transformers.
+- I opened "the full article". I see a lot of words. I don't see any results. Words are cheap. Show us some results, or don't waste our time.
+- I have to disagree with you here. 
+
+An MLP with infinite weights and infinite data would only be able to potentially match a transformer trained on the same amount of resources. 
+
+This is not feasible as you understand. In the real world the data and compute efficiencies of associative inductive biases as well as scale and translation equivariance and invariance are staggeringly clear as soon as you start doing serious comparisons between these. 
+
+Now that I say that, it would be really fun to have a paper use the best modern recipes on MLPs, convnets, RNNs and transformers just to see how they compare in low-data, medium data and high data regimes with the same amount of parameters/activation FLOPs.
+- My intuition for mlp 》transformer came from a paper titled Convnext (2022 ig), it showed some older convnets' weakness that are tackled better in transformers, then they tried to specifically tackle those aspects in convnets. That made me think if a supermlp may exist that can potentially be a super generalized learner across domains and tasks, that by going through such diverse data it also learns to identify nuances better.
+
+ I'll leave it up to that paper you hoped for in the last para 😄

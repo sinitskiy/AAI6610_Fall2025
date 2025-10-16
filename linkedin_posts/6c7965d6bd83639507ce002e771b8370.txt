@@ -1,0 +1,25 @@
+URL: https://www.linkedin.com/posts/marin-smiljanic_aitalk-llm-llmhallucinations-activity-7335311770284089344--o5k
+Date: 2025-09-24
+Author: Unknown
+
+A few words on LLM hallucinations 
+
+After last week’s AI-generated book list (with several non-existent titles), I figured it’s worth digging in a bit more.
+
+It’s not that LLMs randomly mess up. It’s that they’re built to sound right, not be right. They generate what looks plausible based on the patterns they’ve seen, without fact-checking. 
+
+That’s fine for brainstorming. Dangerous when you hit publish without looking twice.
+
+So if you’re using LLMs to write, especially anything public, don’t just copy-paste and hope for the best.
+
+Seen any great (or terrible) hallucinations lately? Drop them below.
+
+
+话题标签
+#aitalk 
+话题标签
+#llm 
+话题标签
+#llmhallucinations 
+话题标签
+#realtalk

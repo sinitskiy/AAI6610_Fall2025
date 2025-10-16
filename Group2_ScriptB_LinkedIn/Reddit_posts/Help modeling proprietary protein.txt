@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1c0e5be/help_modeling_proprietary_protein/
+Title: Help modeling proprietary protein
+
+Content:
+I work for a small biotech startup that has designed a new antibody in house, and as I continue to learn about protein modeling and AI predictions I wanted to set myself a challenge and figure out how to model it. My problem lies in the fact that I'm not sure where to start. I tried the AlphaFold collab and that didn't work, though I'm not sure why. I don't have access to PyMol and LiteMol doesn't let you enter your own sequence, at least as far as I know. I haven't tried GROMACS yet, but would that be an option? Due to the novel structure of our antibody, I'm not sure how effective any of the modeling software will be since there isn't an existing crystal structure that's close to what we have.
+ 
+
+
+I'd love to hear everyone suggestions on possible options or if this is a fool's errand.
+
+Comments:
+- I pmed you

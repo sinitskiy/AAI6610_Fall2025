@@ -1,0 +1,43 @@
+URL: https://www.linkedin.com/posts/biohack-yourself-media_biohackyourself-healthnews-sciencenews-activity-7371512890421587968-QmG0
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Biohack Yourself Media的动态
+Biohack Yourself Media
+
+1,391 位关注者
+
+4 周
+
+Can AI earn clinicians’ trust? A new study says yes — if we rethink how uncertainty is measured.
+
+A peer-reviewed Research Article in PLOS Digital Health (July 29, 2025) tested several Bayesian approaches to predicting prostate cancer–specific mortality using large-scale PLCO data. All models reached strong performance (AUROC = 0.86 in-distribution), but their ability to communicate when predictions should or should not be trusted varied widely.
+
+The standout method was spectral-normalized neural Gaussian processes (SNGP), which use explicit, distance-aware Bayesian priors. This approach provided more reliable estimates of epistemic uncertainty than ensembles or variational Bayesian neural networks. By signaling uncertainty more faithfully, SNGP offers a safeguard against overconfidence in clinical decision support systems.
+
+Why it matters: Personalized medicine depends on knowing not just what a model predicts, but how confident it is. This research points toward AI tools that can be both powerful and trustworthy in practice.
+
+Source: https://lnkd.in/e69nXpfC  
+Published Date: July 29, 2025
+
+👉 Comment BIOHACK if you want more science and health news like this!
+
+#BiohackYourself #HealthNews #ScienceNews #ResearchUpdates #Biohack
+
+Disclaimer:  
+This content is for educational and entertainment purposes only and is not a substitute for medical advice. Always consult a healthcare professional. Full disclaimer: https://lnkd.in/eJE9Rsty
+
+🧠 We explore all angles — ancient wisdom, modern science, and everything in between. No allegiance to Big Pharma or Big Natural.  
+🔍 We cite studies, but encourage you to read them, question funding, and review the methods. Stay curious.  
+📚 Not all journals are equal. Peer-reviewed ≠ perfect. Check the source, think critically, and decide for yourself.  
+⚠️ One study isn’t the full story. Science evolves. We’re here to inform, 

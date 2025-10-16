@@ -1,0 +1,16 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1mr5yvo/the_current_state_of_aideep_learningmachine/
+Title: The current state of AI/deep learning/machine learning in scRNA-seq
+
+Content:
+Hi all, just wondering what peoples experience has been using packages that incorporate any of the above technologies into their scRNA-seq workflows. I've been looking at C2S-Scale and Scaden but not sure what other tools would be useful in this space. Working on writing a grant and they want a heavy focus on NAMs (new approach methods) and these are what I've come up with so far.
+
+Comments:
+- I use scVI very often for dimensionality reduction and to control for unwanted covariates.    As for the more recent foundation-model style methods, I don't think they've really demonstrated they're superior to previous methods outside of niche use-cases (like in 'zero-shot' predictions).
+- Lots happening in this space! scVI/scANVI and totalVI are great for integration + annotation, Scaden works well for deconvolution, and tools like scNym or scDeepCluster use deep learning for labeling/clustering. For a quick setup, Scanpy + scvi-tools covers a lot. Some groups even explore custom ML workflows (like what Excelra builds) for more tailored scRNA-seq analysis.
+- Grnboost2
+- This is actually super exciting curious to here more answers
+- Does anybody know how scgen holds up? I've been out of the single-cell area for some years now.
+- Its another fad that will dominate the space for a few years unless an alphafold moment happens with the massive amount of single cell data we have generated, currently that “alphafold” target seems to be gearing towards building a virtual cell
+- Historically I used scVI to integrate between datasets, and to call cell types. We seldom use it these days, though, since Seurat (which is not AI-based in any sense, unless you use their scVI frontend) usually works as well, without the need for large computational power.
+- depends how large your integrated datasets get. anything above 1 million cells then R starts to really lag behind in speed compared to python

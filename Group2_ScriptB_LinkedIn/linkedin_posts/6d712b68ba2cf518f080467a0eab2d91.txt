@@ -1,0 +1,74 @@
+URL: https://www.linkedin.com/posts/matteo-ravasi-54b00638_annealed-stein-variational-gradient-descent-activity-7254460984059219968-jhnG
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Matteo Ravasi的动态
+Matteo Ravasi
+
+Senior Research Advisor - AI/MLops Engineer @ Shearwater | PyLops core developer
+
+11 个月  已编辑
+
+🚀🚀 Pre-print alert 🚀🚀
+
+❓Uncertainty quantification is undoubtedly one of the hottest topics in Geophysics nowadays. But how do we ensure that the uncertainty that we estimate is really meaningful and it is not just the by-product of the many hyper-parameters that enter an inversion process?
+
+🛠 My Phd student Miguel Angel Corrales (during his internship in TotalEnergies) and our visiting student Sean Berti (from the University of Pisa) spent a considerable amount of time investigating the behavior of SVDG in the context of FWI… and the results that we obtained tell us that the SVGD’s hyper-parameters can significantly impact our final estimate of uncertainty, much more than what previously reported in the literature. 
+
+💡 The good news is that we have been able to identify a number adjustments that can make this effect less severe alongside two strategies to obtain a more meaningful statistical analysis of the final particles.
+
+Link to arxiv: https://lnkd.in/eTmXxfUw
+
+#kaust #pse #deepwave #research #uq #fwi
+
+Annealed Stein Variational Gradient Descent for Improved Uncertainty Estimation in Full-Waveform Inversion
+arxiv.org
+83
+1 条评论
+赞
+评论
+分享
+Dr. Izzatullah Mustafa
+
+Carbon Markets | Sustainable Finance
+
+10 个月
+
+Indeed a great work. Congratulations! 👏🏼
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+4,105 位关注者
+
+157 则动态
+ 3 篇文章
+查看档案  关注
+更多文章
+Open data and open software: how to hit the sweet spot?
+Matteo Ravasi  6 年
+EAGE YP Thirsty Thursday - Interview with Wouter Kimman
+Matteo Ravasi  8 年
+EAGE YP Thirsty Thursday - Interview with Paolo Dell'Aversana
+Matteo Ravasi  8 年
+探索相关领域
+The Impact of Uncertainty on Innovation
+New Techniques in Geophysical Exploration
+How to Include Uncertainty in Optimization
+How Economic Uncertainty Affects Hiring
+How to Improve Data Visualization Techniques
+How to Reduce False Positives in Scanning
+展开 
+浏览内容分类

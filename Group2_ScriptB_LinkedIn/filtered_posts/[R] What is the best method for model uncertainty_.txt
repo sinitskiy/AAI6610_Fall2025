@@ -1,0 +1,56 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/jzb2ds/r_what_is_the_best_method_for_model_uncertainty/
+Title: [R] What is the best method for model uncertainty?
+
+Content:
+Hi,
+
+I've experimented with model uncertainty that one of my interesting topic.
+
+[https://github.com/HotaekHan/classification\_uncertainty](https://github.com/HotaekHan/classification_uncertainty)
+
+Compared the four methods. (softmax, temperature scaling, mc dropout, deep ensemble)
+
+I'm glad to check out my result if you interest :)
+
+&#x200B;
+
+And, what is the best method model uncertainty in recent?
+
+Please give me any information :)
+
+Comments:
+- I gave a [talk on the topic](https://www2.slideshare.net/perone/uncertainty-estimation-in-deep-learning) sometime ago if you are interested. To be honest, if I want to estimate model uncertainty today in DL I would go with ensembling, it is simple and can capture multiple modes (not true on many other methods, as it is very difficult to achieve the same results of independent random initializations).
+- You should also compare with MultiSWAG ([https://arxiv.org/pdf/2002.08791.pdf](https://arxiv.org/pdf/2002.08791.pdf)).
+- This paper might be helpful: [https://arxiv.org/abs/1906.02530](https://arxiv.org/abs/1906.02530)
+- Based on the ECE everything is worse then just keeping a softmax?  
+
+
+This would be going heavily against what is published.  
+Also note, none of these papers assume that you use a Cosine Schedule for the learning rate.  
+This would induce some specific properties on the learning process that might not follow the theory of these methods.  
+
+
+Think of the learning in these models like a Markov chain sampling the loss landscape,   
+you see changing the step size in a pattern like fashion means your parameter space also takes on a specific range of values.   
+
+
+I would suggest the SWAG paper as it actually does use a learning rate schedule based on the idea of sampling as a Markov process rather than a pure optimization point of view.
+- What is unknown classes and known classes ? Are these test and train sets ? 
+
+If yes, then I think you might be using ECE incorrectly. You are introducing an extra problem of Out of distribution detection into the mix. ECE only indicates calibration of the predictions. So a model's calibration on an iid split of train-test is what we can conclude from using this metric. Moreover, recently it has been shown to have many issues. Check for recent paper "Verified uncertainty estimation" by kumar et al at Neurips.
+- Thank you for sharing this.  Why do you think all the models have a pretty high confidence on the unknown classes?  I can see the large changes when you rotate, but it seems like nearly all methods on all data sets had high confidence on the unknown set, with a couple exceptions.
+- Is there video of your talk?
+- thanks for your work :)
+- No, check out table 2, 3, 4.
+
+based on ECE the softmax, mc dropout and ensemble show similar performance. but i figure out that temperature scaling is not best option for ECE.
+
+yes, this is heavily against the result from paper. but i used the same common tricks for all methods.
+
+i'll check out your suggestion :)
+- I split the half of target classes as unknown dataset. and test set comes from known dataset. check out the figures.
+- Unfortunately the session wasn't recorded =(
+- Got it, thanks.
+- Oh well the slides are still great!
+- Thanks !

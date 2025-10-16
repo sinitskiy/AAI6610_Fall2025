@@ -1,0 +1,12 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/8tad98/d_by_how_much_does_beam_search_diminish_the/
+Title: [D] By how much does beam search diminish the perplexity of a model?
+
+Content:
+Let us define the perplexity of generated sequences to be the natural logarithm of cross-entropy between the test dataset and the generated sequences. This quantity is not equal to the perplexity of the language model, which uses its predictions instead of the generated sequences (they are slightly different). The former is probably smaller, but I'm not sure about how much the difference would be. If we know the amount of difference, then we can conclude the reduction of perplexity due to beam search. Unfortunately, calculating the former perplexity is intractable, so is there any way to approximate the difference between the former and the latter? One naive approach is to train a LM on generated sequences, but I doubt the result's numerical accuracy. Any thought?
+
+For example, I have an autoencoder with discrete latent variable (of length slightly shorter than the input texts) that models the test dataset with log-ppl being 0.3. Then, on average the model assigns e^(-0.3) = 75% to the correct next token on test dataset. Doesn't this mean that beam search (or even greedy decoding) would bring the likelihood to nearly 100% (i.e. the net perplexity being 0), since the probability mass in this case is pretty much concentrated on the correct next tokens? Is such a drastic improvement in terms of perplexity limited to models with log-ppl near 0?
+
+[1] Analyzing Uncertainty in Neural Machine Translation by Ott et. al.
+
+Comments:

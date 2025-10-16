@@ -1,0 +1,36 @@
+URL: https://www.linkedin.com/posts/michael-the-data-guy-kaminsky_appropriate-handling-of-multicollinearity-activity-7104433814306779137-uGNt
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Kaminsky的动态
+Michael Kaminsky
+
+Recast Co-Founder | Writes about marketing science, incrementality, and rigorous statistical methods
+
+2 年
+
+Appropriate handling of multicollinearity is one reason why the Bayesian framework is more powerful than traditional ones. 
+
+One of the biggest MMM challenges is that a lot of variables are correlated because marketers tend to move spend in concert. 
+
+When things go well, we increase spend on all our channels simultaneously. And when things don’t go well, we pull back on all of them too.
+
+That creates multicollinearity - especially on channels that are very tightly coupled like Facebook prospecting and Facebook retargeting.
+
+When you have this type of correlation structure, you're violating the assumptions that are required to get unbiased inferences out of an ordinary least squares regression. If you drop those variables into a standard regression equation, you will get back bad and biased results.
+
+In the example of two highly correlated variables in an OLS regression, the results often show that one of those variables will be very positive and very effective, and one of them will be negative. It would be like saying that, if you spent a dollar on this channel, you will get back a negative return for that – that's a really big problem. 
+
+At Recast we have a fully generative Bayesian model, and when it sees multicollinearity, it will show uncertainty about the trade-off in performance between those two different channels. We think this is RIGHT because, in the case of multicollinearity, there’s truly less signal in the data for those channels. We want the model to correctly reflect that uncertainty. 
+
+If Facebook prospecting and Facebook retargeting are highly correlated, the Recast model will not tell us that one is positive and one is not. Instead, what the model says is, “We're uncertain about which of these two is driving the effect. If you care about being able to differenti

@@ -1,0 +1,62 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1jlnhg1/good_at_practical_ml_weak_on_theory_getting_the/
+Title: “Good at practical ML, weak on theory” — getting the same feedback everywhere. How do I fix this?
+
+Content:
+Recently got this feedback after a machine learning engineer interview:
+
+“You clearly understand how to make ML algorithms work in practice and have solid experience with real-world projects. But your explanations of the theoretical concepts behind the algorithms were vague or imprecise. We recommend taking a few months to review the fundamentals before reapplying.”
+
+This isn’t the first time I’ve heard this — in fact, it’s a pattern I’m seeing across multiple interviews with tech-focused companies. And it’s getting in the way of landing the kinds of roles I’m really interested in.
+
+Some context:
+I’ve been working for 2–3 years as an ML engineer at a large non-tech company. My experience is pretty diverse — from traditional supervised learning to computer vision, with a recent shift toward GenAI (LLMs, embeddings, prompting, RAG, etc.). I’ve built end-to-end pipelines, deployed models, and shipped ML to production. But because the work is so applied — and lately very GenAI-oriented — I’ve honestly drifted away from the theoretical side of ML.
+
+Now I’m trying to move into roles at more ML-mature companies, and I’m getting stuck at the theory part of the interviews.
+
+My question is: how would you recommend brushing up on ML theory in a structured, deep way — after being in the field for a while?
+I’m not starting from zero, but I clearly need to tighten up my understanding and explanations.
+
+Would love any advice, resources, or even personal stories from others who made the leap from applied/practical ML to more theory-heavy roles.
+
+Thanks in advance!
+
+
+Comments:
+- For deep learning the book "Understanding Deep Learning" by Prince is excellent. 
+
+For classic machine learning the book "Introduction to Statistical Learning" is good as well.
+- Can you provide examples of the theoretical questions that you were asked to explain?
+- Other people are giving good practical advice. I wanted to give you some encouragement.
+
+A *lot* of people are really bad at conducting interviews. I remember one company gave me feedback that I had a "surprising lack of basic statistics knowledge". I have a PhD in statistics and was working as a statistician at the Census Bureau at the time.
+
+Follow people's advice on how to improve your interview answers, but don't let these interviews hurt your self confidence. We're normalized to tech interviews, but they're actually a bizarre, unnatural experience. It's unusual to be able to be recite random theory off the top of your head; it's normal to not be able to do that.
+- What questions are being asked? Or are you being judged not qualified just by your resume experience?
+- Just read Introduction to Statistical Learning.
+- I've been working through Bishop & Bishop's recent Deep Learning book and it's been a nice run through of a lot of concepts I was kind of aware of before, but hadn't truly absorbed. It's a nice complement to something like ISLR that will walk you through your ridge regressions and your gradient boosted trees, but only has a perfunctory 30 pages on neural nets. (Unlike ISLR it does assume a solid background in undergrad level calculus/linear algebra.)
+- Why is everyone recommending courses when bro needs to grab some real math/stats books.
+- It's easy to forget the theory if you're not teaching, a researcher or doing something where you are in constant contact with the theory. I would get some O'reilly text-books perhaps.
+- Hi there, 
+It depends on the specific subdomain but in general I would recommend:
+- Coursera Machine Learning MOOC by Andrew Ng. It is the base and very interesting to learn how the prof explain those concept. 
+- to go deeper on pre-deep learning I recomment the book Elements of Statistical Learning, friedman, Hastie & Tibshirani.
+- deep learning book by goodfellow, bengio and courtville
+- there are also a lot of course on standford online Youtube Channel, you can choose the specific topics to dive in
+- after that, study the founding papers of the current llm wave
+- try to prepare the question you failed with an LLM to see how they explain it, even if you understands sometimes it’s difficult to find the right words.
+- It won't take much time to brush up the theory. I come from a completely different background and started by learning theory, now learning DSA. Slowly want to get more problem solving experience, in my current job we don't get to deploy our solution. It doesn't reach that stage. Hoping someday I will clear an interview and land a job where I can get plenty of development experience rather than analytics.
+- 🤍
+- Here is a useful resource to practice this kind of [theoretical ML interview questions](https://devinterview.io/questions/machine-learning-and-data-science)
+- Hey, can I dm you? I really want to know about your projects and learn from your practical and applied knowledge as a data scientist.
+- Hey OP,
+can you please share your resume. I am hoping to apply to some MLE position. Your resume might help. TIA
+- some ideas:  
+\- give a lecture or teach a class to beginners. That will force you to improve your understanding and communication.   
+\- do some mock interivews with friends or on an interview platform.  
+\- use a LLM to do a mock interview for you where it asks questions, you provide the answers and it verifies the answers
+- You fix it by learning the theory. But in my opinion you are fine. Just keep applying. The practical stuff is actually important for 99% of time.
+- Give up on data science, embrace ML engineering. I have no regrets.
+- Same with me so I have to read books to learn the technical terms for the interview or presentation
+- Bro to what I can see , you've lost fluency once you might've had . Solve 1 ML problem per day at least and track your experience after a week and so on .I'm sure you'll get it back . This is something I did when I felt the same . A lot of times our computational thinking might be accurate but might lack interpretation which , is due to the loss in fluency . Try this and let us know if it worked for you .
+- Look, I think what they mean is that you know how to do the job, your models work, but what they want is someone who can explain the mathematical foundations behind it. This is the kind of thing that no tutorials or videos will teach. It's really about going over the technical books. I suggest you take two or three models that you master best and go after the mathematical basis behind them, then you try to explain to yourself what you did but from a mathematical perspective.

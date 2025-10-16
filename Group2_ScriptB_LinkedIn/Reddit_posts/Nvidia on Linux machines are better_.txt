@@ -1,0 +1,54 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/183gm2b/nvidia_on_linux_machines_are_better/
+Title: Nvidia on Linux machines are better?
+
+Content:
+Hey
+
+Been holding off on posting here. Im a computer science student who was put in charge of processing some mRNA reads. I dont really understand the biology going on here but its been really fun to learn. 
+
+The people on the project before me were more biologist and they set up a computer and something that has me scratching my head is that they set up a Linux machine with an Nvidia card. Claiming that its not only better but required. 
+
+Now I doubt its a requirement. But its possible that it is better i suppose.. so I was hoping someone might be able to explain to me why Nvidia comes out on top even when AMD is usually favored for Linux enviorments. 
+
+In a less project related thing im currently building a PC and I want to do more graphics and computational work. So I'm curious what finicky nonsense I might find myself avoiding with some explanation found here.
+
+Comments:
+- My guess is they were using something that uses CUDA, which is specific to Nvidia I think?
+- It's almost certainly for using CUDA. The GPU is not important for visualizing things or using it to drive the display, but for running research software that is GPU-accelerated. Anything ML/deep learning is going to be much faster on a CUDA-enabled GPU. Many other algorithms are also CUDA-capable which can cut the run time by 10x.
+- [deleted]
+- Unless they are specifically using tensorflow/ anything that requires CUDA cores, AMD comes out on top here. Ive had way too many issues with NVIDIA’s proprietary drivers on linux in the past, AMDs open source drivers are much more compatible with Linux’s large assortment of software in this scenario.
+- I'll be honest with you. And the unpleasing answer is: it depends. While a lot of people here in the sub seem to discuss I actually think that it's pretty clear:
+
+The Deep learning market is just completely dominated by Nvidia, because everything is built by default for Nvidia. Therefore, if your requirement is GPU compute and especially if you use third party code go with Nvidia. It will save you a lot of pain. AMDs Rocm is great but not everyone uses it. Pytorch works like a Charm, but tensorflow feels like a bad hack, nvidia docker did not run at all when i tried it last time. And I am talkimg out of experience. I work in a computational lab which has multiple GPU Servers - all Nvidia. I do not even know whether AMD offers prof3ssional solutions. 
+
+For private use, I only use AMD GPUs, especially due to the good compatibility with wayland. And let's be honest - bang for the buck. Ig your doing a lot of DL, Pytorch is your best friend. Otherwise both have their pros and cons, but tbh i would always recommend AMD on Linux for private use. 
+
+TLDR:
+- professional -> Nvidia
+- Private -> AMD
+- In the specific department I was in (de novo assembly) my postdoc lab bought a machine with a Titan back in the day for Megahit, until Megahit code was updated such that the cpu version outperformed it. Not generally true across the board though.
+- Easy. AMD is better and the opensource software stack is way better for 3D acceleration and such, required for gaming.
+
+On the other hand, when it comes to GPGPU, Nvidia has been the more-or-less monopoly since the beginning and this market is what mainly drives Nvidia GPU driver on Linux.
+
+For most, Cuda is not the best way, it is the only implemented. As for Linux, well, in most professionals setups, yes, it is the best despite what Windows sysadmins would like to believe.
+- Yeah. In other use cases I don't think you can use the full power of an Nvidia card on Linux without a proper environment which a bunch of less techy people probably won't know how to setup.
+- Now that's the key im missing.
+- How did you get acssess to my search history?
+- Might be wrong here but also the structure prediction steps of AlphaFold that uses CUDA (iirc) are super slow when run on a CPU-only partition.
+- [deleted]
+- Trying to get RDMc running messed up my friends computer pretty well.
+- Not sure any sysadmins actually belive that in the first place tbh.. like idk how you get that deep into comp sci without table flipping on the windows cmd. Unusable without cygwin and mingw. And even then..  idk. But I digress.
+
+Well I hope amd figures its shit out. Idk. Its possible I guess. Just not for a while. At least thats what I think im picking up on.
+- Yeah, AMD is a bit of a joke when it comes to computation.
+
+Clearly a mistake, seeing how well NVIDIA’s pivot to B2B is going. But there’s a ton of CUDA specific accelerated algorithms out there that you just can’t run on AMD.
+- Neural networks generally are abysmally slow on CPU (both training and prediction). And transformers are a particularly slow architecture.
+- Depending on the version of your linux kernel, you can only install certain versions of NVIDIA’s drivers. Once i was forced to upgrade from 510 to 515 due to an update and it made some of my more sensitive software packages go haywire. There was no way to fix it because those drivers are closed black boxes. With AMD drivers, they have an open source version, so the community can make fixes themselves if there are problems. In NVIDIA’s case you just have to wait for them to “get around to it”….
+
+Overall NVIDIA is just not friendly to versioning and scientific research. Im not saying to not use it if you need it, but use at your own risk and maintain your package ecosystem carefully
+- Makes me really sad tbh. I like amd way.. way more. Any day. But.. I guess its not much of a choice now. Oh well.
+- [deleted]
+- Depends. Are you a masochist?

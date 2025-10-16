@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/c-mcmahon_capsa-themis-ai-activity-7335680181325504512-1hYT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christopher McMahon的动态
+Christopher McMahon
+
+Director, AI & Emerging Technologies Research | GoodLabs Studio
+
+4 个月
+
+AI models tend to present their outputs with persuasive confidence–even when they're completely wrong! Quantifying a model's uncertainty and clarifying that to the user is hugely important, especially for high-stakes applications.
+
+So I’m making a shoutout to the MIT team behind Themis AI for developing Capsa, an open-source Python library that provides a model-agnostic wrapper that allows a model to quantify and communicate its own uncertainty.
+
+Their tools differentiate between the two distinct sources of uncertainty in ML and AI: aleatoric and epistemic. (Note: these are very expensive words for very intuitive concepts.) Aleatoric uncertainty comes from noise in the input data, like blurry images or ambiguous language. Epistemic uncertainty comes from gaps in the model's knowledge from limited or biased training data. Knowing to which category your uncertainty belongs means you know how to reduce it (better data vs. better training) and/or live with it (expect results to have some ambiguity vs. naivety).
+
+This capability is especially valuable in applications like healthcare or finance (2 fields GoodLabs is intimately familiar) where an AI's advice can lead to serious impacts in people's lives. By understanding and properly handling the uncertainty in that advice, AI systems become more transparent, more trustworthy, and ultimately more human.
+
+Capsa’s development reflects a broader shift in AI research towards creating systems that are not only intelligent but also self-aware of their limitations. By incorporating mechanisms to assess and communicate uncertainty, AI can better support human users, leading to safer and more effective outcomes across industries.
+
+#Capsa #Themis #AI
+
+查看 C2PA 信息
+8
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+407 位关注者
+
+50 则动态
+查看档案  关注
+探索相关领域
+How AI Models can Ensure Trustworthiness and Transparency

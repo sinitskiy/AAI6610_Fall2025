@@ -1,0 +1,58 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/p1enmw/whats_the_term_for_bacteria_multiplying_after/
+Title: What's the term for bacteria multiplying after infection but before an immune response has fully mounted against it?
+
+Content:
+So I learned something in biology years ago and I can't remember what it's called. It's the stage where you get infected with a bunch of germs, then they double every X minutes or hours before your immune system creates appropriate antibodies. During this time the germs go from, say, half a million, to billions of cells. Afterwards your body finally has good antibodies in bulk and truly starts is war against the pathogen.
+
+Does anyone know what this stage of infection is called? The part where the germs are multiplying without an immune response killing them yet.
+
+Comments:
+- It’s called the incubation period.
+- Calling it incubation period is questionable, but sometimes terms get used variously and loosely. Incubation period is commonly the time to symptoms.
+
+
+If someone has a suggestion here, they should provide some documentation.
+
+Look up incubation period, and it fails that test.
+- The symptoms are the result of the immune response to the infection, not the infection itself. 
+
+Ergo, the incubation period is the time from initial infection to manifestation of symptoms.
+
+What makes an organism pathogenic is its ability to trigger the immune system. 
+
+You’re trying argue against the literal term for what OP is asking. 
+
+They *literally* asked “What is the stage of infection…when germs are multiplying without an immune response?” 
+
+That is the incubation period.
+- > What makes an organism pathogenic is its ability to trigger the immune system. 
+
+You raise a useful point.
+
+But that claim is "sometimes". 
+
+Botulism bacteria make a toxin that gives the symptoms. For example. (Polio virus causes its major symptoms by cell death, I think ?? Not immuno.)
+
+
+If you want to make your point, include the elaboration of why. But that should also make clear it is not universal.
+
+The simple claim is not very good, but it leads to good discussion of real issues. Always better than focusing on words.
+
+
+Not sure I know a better term, but incubation period doesn't work without some qualification.
+- I’m going to be completely honest, I think you’re trying to make something really simple sound really complex and getting lost in the weeds. 
+
+The term OP is looking for is the incubation period. 
+
+The period from initial infection to manifestation of symptoms (whether caused by immune or not) is called the incubation period.
+- > The period from initial infection to manifestation of symptoms (whether caused by immune or not) is called the incubation period.
+
+Remove the () part, and that is correct.
+
+But it not what was asked. That is my point.
+
+
+I thought our initial exchanges were collectively useful, in elaborating/clarifying. Each added something. Biology is often not simple. Words are not used consistently.
+
+The OP can decide whether the term incubation period is appropriate  here. But it would be good if they understood the subtleties. Then they can think for themselves. Educators goal! Enable. Telling people what to think is bad.

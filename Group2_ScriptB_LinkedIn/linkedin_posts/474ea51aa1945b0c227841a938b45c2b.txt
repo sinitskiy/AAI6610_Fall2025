@@ -1,0 +1,80 @@
+URL: https://www.linkedin.com/posts/tobias-rebert_semanticweb-knowledgegraphs-graphdatabases-activity-7366730927823093760-24yL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Tobias Rebert的动态
+Tobias Rebert
+
+Co-founder Tentris | query more, wait less | A high-performance, disk-based RDF graph database enabling graph analytics that were deemed computationally infeasible.
+
+1 个月
+
+What if RDF could say “maybe”?
+
+I stumbled on this topic a while ago, and it stuck with me. Traditional RDF assumes binary truth as we all know: a triple is either true or false. But real-world data is rarely so clear-cut.
+Let me tell you something about Probabilistic RDF: It allows attaching probabilities to triples, enabling reasoning under uncertainty. This is especially useful in domains like biomedical data, sensor networks, or NLP, where facts are inferred, incomplete, or noisy.
+
+📌 Example:
+Instead of asserting:
+<PersonX> <hasDisease> <Malaria>
+we can express:
+<PersonX> <hasDisease> <Malaria> [confidence = 0.7]
+
+This opens the door to probabilistic inference, ranking query answers, and integrating Bayesian or Markov logic approaches with RDF and SPARQL.
+It could be a key step toward scalable, uncertainty-aware reasoning on the Semantic Web.
+
+🤔 What do you think, is the #SemanticWeb ready to embrace uncertainty?
+Do some of you have practical experiences with Probabilistic RDF? Would love to hear about it 😊
+
+#KnowledgeGraphs #GraphDatabases #GraphDB #Data
+
+66
+58 条评论
+赞
+评论
+分享
+Jamie McCusker
+
+The Opinionated Ontologist
+
+1 个月
+
+I was able to do this in a nuanced way in my 2017 paper using nanopublications. It's a powerful approach and capability: http://peerj.com/articles/cs-106/
+
+赞
+回复
+3 次回应
+Eugene Agbor EGBE
+
+Senior Backend & NLP Engineer | Mentor | Wikimedian
+
+1 个月
+
+Thinking of RDF statements as “claims”, this would give a clear sense to what extent the claim is close to a fact.
+
+赞
+回复
+1 次回应
+Nick Nisbet
+
+Built Environment Information Consultant
+
+1 个月
+
+All information is a claim, uncertainty is needed. But what about definitions? And we need normative knowledge too. Is RDF distinctly underpowered?
+
+赞
+回复
+Keith Corbett
+
+I tra

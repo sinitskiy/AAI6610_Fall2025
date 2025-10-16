@@ -1,0 +1,61 @@
+URL: https://www.linkedin.com/posts/aminrigi_github-amazon-sciencechronos-forecasting-activity-7376891366334738432-tpBk
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Amin Rigi的动态
+Amin Rigi
+
+AI & ML | PhD | Gen AI | Solutions with Impact | Multi-Industry Experience
+
+1 周  已编辑
+
+Tried LLM-based models (Chronos) for Time Series Forecasting -- Here's My Take
+
+A while back, I needed to forecast more than a thousand univariate time series with a couple of covariates (exogenous variables). Since LLMs were trending, I decided to try Chronos by aws science.
+
+- Chronos zero-shot forecasts outperformed sktime’s naive forecasters
+- Tested it with various model sizes. Interestingly enough, the small model (ranked 3 out of 5) gave the best results
+- Fine-tuning with AutoGluon → negligible improvement
+- Adding covariates → negligible improvement
+- Overall, significantly worse than Prophet or SARIMAX
+
+Verdict:
+- Great for quick zero-shot forecasts with minimal effort (no training)
+- Not worth fine-tuning or adding covariates
+- Will I use it in future? Yes, as a quick baseline
+
+
+Chronos: https://lnkd.in/gNMEP4dK
+#LLM #Forecasting #Chronos
+
+GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models for Probabilistic Time Series Forecasting
+github.com
+19
+5 条评论
+赞
+评论
+分享
+Fatemeh Jalali
+
+Distinguished Technologist passionate about Emerging Tech, People & Purpose🔸AI & GenAI🔸IoT & Edge computing🔸Inventor (10+ Patents)🔸Veski VIC Fellow 2021🔸Australia’s Most Innovative Engineer 2018
+
+1 周
+
+Well done trying llm based time series forecasting :)  your 1000 univariate time serises sounds like a good use case to be tested by chronos (if the series behave similarly somehow). Based on my experince simple classical time series work better when trends and calendar effects dominate compared to a transfomer based model which is more suitable for complex series and patterns. One more thing is  forecasting horizon,  chronous doesn't do a good job for short term forecasting. check out this paper: https://arxiv.org/pdf/2501.10216
+
+赞
+回复
+3 次回应
+Fouad Bahrpeyma
+
+Postdoctoral Researcher at HTW Dresden, Head of the Industr

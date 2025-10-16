@@ -1,0 +1,37 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n3gfpt/p_opensource_protocol_designed_for_multiagent/
+Title: [P] Open-Source Protocol designed for Multi-Agent Communication
+
+Content:
+[Project](https://www.reddit.com/r/MachineLearning/?f=flair_name%3A%22Project%22)
+
+OSS Released **MAPLE – a Multi Agent Protocol Language Engine** designed for fast, secure, and reliable agent communication.
+
+— a new **open-source protocol** designed for **multi-agent communication** at **production scale**.
+
+**MAPLE** offers features we haven't seen in other protocols:
+
+🔧 **Integrated Resource Management:** The **ONLY** protocol with built-in resource specification, negotiation, and optimization
+
+🛡️ **Link Identification Mechanism (LIM):** Revolutionary security through verified communication channels
+
+⚡ **Result<T,E> Type System:** ELIMINATES all silent failures and communication errors
+
+🌐 **Distributed State Synchronization:** Sophisticated **state management** across agent networks
+
+🏭 **Production-Grade Performance:** **Very high** **performance** for a **feature-rich** protocol with **sub-millisecond** latency
+
+💻 **pip install maple-oss**
+
+PyPI here: [https://pypi.org/project/maple-oss/](https://pypi.org/project/maple-oss/)
+
+If you’re building with agents or need robust, real-world communication between systems,  
+check out **MAPLE GitHub** repo: [https://github.com/maheshvaikri-code/maple-oss](https://github.com/maheshvaikri-code/maple-oss)
+
+Please try and test it with your projects.
+
+[MAPLE Multi Agent Communication Protocol](https://preview.redd.it/bovnmzoqc0mf1.png?width=256&format=png&auto=webp&s=6563e85b9f830d36a244cbf9783bc05ba45ed8c3)
+
+
+
+Comments:

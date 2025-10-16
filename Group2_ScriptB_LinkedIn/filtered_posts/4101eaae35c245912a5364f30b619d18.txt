@@ -1,0 +1,86 @@
+URL: https://www.linkedin.com/posts/aaron-pickering_a-gentle-introduction-to-conformal-prediction-activity-6976468511011287040-ozGB?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Aaron Pickering的动态
+Aaron Pickering
+
+Applied Science (Data Science) Lead
+
+3 年  已编辑
+
+I am big believer in trying to understand the uncertainty of machine learning models before you roll them out. 
+
+It just makes using the model in a decision process so much easier. All models are wrong sometimes and understanding uncertainty will let you value, control and mitigate those instances in advance.
+
+"Conformal Prediction" is a technique making the rounds for estimating uncertainty intervals in black box models. I'm betting that its going to be very popular!
+
+If you can stomach a bit of math, check out this paper giving an introduction to the topic. Highly recommended.
+
+A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification
+53
+5 条评论
+赞
+评论
+分享
+Rod Rivera
+
+Empowering the Next Billion AI Automators
+
+3 年
+
+It is interesting how specific ideas gain popularity all of a sudden. Conformal prediction has been around for decades but, for the most part, has been relatively obscure and limited to a small subset of students of Vovk. We can thank Valeriy Manokhin, PhD, MBA, CQF, for his intensive efforts in popularising the subject and making it approachable to non-academics.
+
+赞
+回复
+2 次回应
+
+要查看或添加评论，请登录
+
+3,487 位关注者
+
+71 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

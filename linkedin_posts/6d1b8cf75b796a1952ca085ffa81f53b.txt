@@ -1,0 +1,11 @@
+URL: https://www.linkedin.com/posts/steviechambers_watching-people-post-about-llm-hallucinations-activity-7371040646582702080-r6hS
+Date: 2025-09-24
+Author: Unknown
+
+Watching people post about LLM hallucinations after they read someone read that OpenAI paper is peak LLM.If
+
+It’s “suddenly dawned on you” how LLMs work then I wouldn’t be posting that.
+
+The next group I’m going after are the ones that wax lyrical about agents and LLMs and never mention security.
+
+I can’t wait to introduce them to Prompt Injectionator. Genuinely. It’s why I’m doing it. Education.

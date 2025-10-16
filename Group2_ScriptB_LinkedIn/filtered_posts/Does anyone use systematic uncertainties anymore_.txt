@@ -1,0 +1,63 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/tf0j7y/does_anyone_use_systematic_uncertainties_anymore/
+Title: Does anyone use systematic uncertainties anymore?
+
+Content:
+So, I come from a research background, PhD in physics. I know that when it comes to answering research questions with data the thing scientists spend the most time on is estimating systematic uncertainties. 
+
+I’ve transitioned to private sector data science and the scientific rigor I am used to is completely non-existent from what I have seen. I have mentioned propagating uncertainties on a number of different occasions and I get the most blank stares from DS team as well as business stakeholders, I can tell no one has ever uttered these words to them. These things are never taught in online courses or bootcamps, and the countless DS blogs never touch on this concept. 
+
+To give an idea of what I am talking about consider the following scenario. We have a dataset where the quality of the data is such that 2% of the training labels in a classification problem are possibly wrong. Models are trained and confusion metrics are compiled. I finally got people on board with listing the statistical error on things like the false positive rate, but I can’t seem to convince people that the false positive rate can never be measured to a precision less than about 1% (half the time the wrong labels might be right) because the systematic uncertainty on the labels. 
+
+There are other instances I have seen where people use a model’s output to report a confidence score, but the input data has a large uncertainty in how it was reported which can effect the output of the model greatly,  and thus this confidence score. Undoubtedly the right thing to do is to propagate this uncertainty on the input data to the output score and recalibrate that confidence score, but people just punt to the stakeholders and tell them the data is bad , or we just need more data. 
+
+Has anyone else experienced this? Am I just a crazy old man yelling at cars? Does anyone else think that the flooding of data science degrees are completely ignoring this and other “research-based” skill sets that used to be pertinent to DS?
+
+Edit: because I know some one will mention it, in the cases I have seen, the magnitude of the impact of the cases I mentioned can have serious business impact.
+
+Comments:
+- Same here, I agree with you and also feel like a crazy person yelling at cars.
+
+I have no idea how to deal with that.
+- You can’t really propagate the uncertainty easily, also regression and ML models are mostly discriminative and so they are modeling Y|X, that means it is inherently conditional on the input data features X and thus the uncertainty in X does not need to be propagated even from a statistical point of view. Its already by definition conditional on assuming that X takes that value. Only a generative model (which models the joint P(X,Y)) would need to consider X uncertainty. 
+
+If the output labels are wrong and you know how much % of time they are wrong then label smoothing can be done which accounts for it during training. But beyond that there just isn’t much. ML models don’t have analytical expressions for CIs even when everything is perfect, you would have to use bootstrap or cross validation or Bayesian ML and other special methods like conformal prediction.
+- I agree that there is definitely not as much rigour compared to research (in my current project, at least). The attitude is very much ‘build it first’… mainly because we need to show demonstrable output to secure ongoing funding. The academic part of me really hates it, but I keep reminding myself that it’s not for a research paper…it’s to provide marginal gains for business operations, and ‘good enough’ is sufficient.
+- I also come from a PhD in Physics. Yes, no one really gets it so unfortunately we need to live with it. In the business world though, generally those errors aren't going to amount to a hill of beans as the errors in everything else is so much bigger. 
+
+However, show in the data engineering and data cleaning that it might play a role and how, some people will listen, especially if you have a plan to mitigate it. 
+
+Otherwise - you are shouting into the wind my friend :-)
+- With a PhD in Statistics and having spent about 5 years in the National Labs, I will say that we (i.e. statisticians) don't really talk about "propagating uncertainties", even though we take uncertainties very seriously.
+
+We generally don't trust our models as much as physicists (meaning model checking is more about measuring how wrong it is rather than if it is wrong), and errors in inputs are \*expected\* and our approach to modeling quietly incorporates them.
+
+So it's not just folks with limited background that aren't sure what you're talking about, but also folks with a lot of background.
+- The last time this was mentioned to me was in a psych research methods class. Only reason why I know that there are ways of dealing with it. It didn’t even come up when I went to grad school for statistics.
+- What is the benefit of estimating systematic uncertainty in the context of your work? And who benefits from, e.g., the reduced confidence score? Limitations can be tiring and business leaders will rarely pat you on the back "for pointing out our analysis is crap." I think these skills are ignored because they are not incentivized.
+
+At what stage of research/academia are these skills typically developed? This sounds very much like something learned through research experience, which is not often represented in the DS masters or bootcamp setting through which many of us are "qualified."
+- Seems like quality thinking. I haven't done that since I was an undergrad and I will think of how to implement it in my scenarios. Thanks!
+- I work in a group which uses Data Science tools for biotech applications and we usually care a lot about uncertainties. I also visit the labs, discuss the experiments etc. A lot of the data is very unreliable, but not all, so uncertainty propagation with e.g. bayesian statistics or similar is important.
+Other fields don't use these concepts at all, I agree with your experiences.
+- Used to say this stuff all the time. PhD in astrophysics. Fundamentally got fed up with the job having science in the title. Doing an online course in scikitlearn isn’t science.
+
+No longer a data scientist.
+- IMHO, people do take it seriously. It honestly depends on the field and domain. Few years back, I worked in an E-commerce/ marketing firm where we built models to target customers such sending the emails or send the coupons. Even if our output is bit off we were okay with that, stakeholders were okay with that. Now if you're in a medical field it's a completely different story.
+- [removed]
+- There's a loophole where I work to this, and maybe others. It's called an industry degree. It's possible for an employee to seek out an academic sponsor at a local university, then work with real data for an academic project along with their academic sponsor and a colleague with that degree already. It brings in outside funding and a little academic rigor.
+
+I don't know how common this system is, but it's interesting. I haven't mentored anyone yet, but since I'm the only PhD at my company, I'd anyone wants an industry PhD, they'll have to use me.
+- I just can’t imagine people putting as much trust in these models as they do sometimes without evaluating that they very well might be crap. They just say, “it did well on the test set, must be good”. With no thought to “how good does the test set represent reality?”.
+- What do you do now?
+- Sounds like you weren’t a good fit for the job.
+- Ok hear this scenario. I measure some data X with a ruler that has some systematic bias, the bias is unknown but we have its magnitude’s upper limit. I train a model on Y|X. But now I deploy that model but the X data is measured with a different ruler, so the systematic bias might be off. If you don’t do something to account for the error in the initial training set you are going to have to answer to why you deployed model sucks. 
+
+OR you can just use separate systematically shifted samples to give a up and lower bound on Y due to the expected systematic uncertainty in gathering the initial training set. The argument from the text is too theoretical, it assumes the training distributions are a good representation of reality and never changing and you have good data- rarely the case. If anything I think I am being MORE practical.
+- Which sector are you in? Does any of this even matter? There’s so much other arbitrary nonsense that goes in business decisions it’s probably not worth fixating on things like this.
+- [removed]
+- That’s basically data drift in production. Its one of the weaknesses with discriminative Y|X models, and the iid assumptions which is independent & *identically* distributed. If your production data is shifted then its from a different distribution. Theoretical models are less sensitive to this problem of data drift.These models are empirical models and not physical causal models say derived from diff eqs as in physics. 
+
+The way to account for this during training is pretty much to feed data from a variety of distributions which is the simplest, or more complicated is to use a hierarchical model/fully generative where you model the joint. Otherwise your model is not guaranteed to be generalizable to a different population. 
+
+Measurement errors in X itself already gets complicated even for the simplest model linear reg: https://en.m.wikipedia.org/wiki/Errors-in-variables_models. For GLMs/nonlinear parametric models its already no general solution and ML models don’t even have analytical forms on top of that.

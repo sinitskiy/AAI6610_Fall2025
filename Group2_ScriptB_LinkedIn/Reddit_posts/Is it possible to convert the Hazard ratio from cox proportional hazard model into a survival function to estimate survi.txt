@@ -1,0 +1,15 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1gq1bo8/is_it_possible_to_convert_the_hazard_ratio_from/
+Title: Is it possible to convert the Hazard ratio from cox proportional hazard model into a survival function to estimate survival probability?
+
+Content:
+Hello, I'm Interested in making a ensemble machine learning model for survival analysis using Random forest, Gradient boosting and Cox proportional hazard model by averaging the survival curve to obtain the survival probability. But while modelling i encountered the issue where the cox model's output is different from the other two models. I want suggestion regarding **how can i transform the hazard ratio output from a cox model into a survival function** if possible. Any suggestions regarding alternative models and the exclusion of the cox model would also be appreciated. I'm new to this field please feel free to point out if there any mistakes in my approach, Thankyou.
+
+Additional context: I used **CoxPHFitter** from **lifelines** to fit the model
+
+Comments:
+- Maybe have a look at scikit-survival
+https://scikit-survival.readthedocs.io/en/stable/
+- I haven't worked on things like that for years. I'd suggest that you start with a good survival analysis text and see if you can get an idea. A good Biostatistician may be of some help
+- Thanks, I would refer to that and update the progress
+- thanks for the suggestion, I would look into that

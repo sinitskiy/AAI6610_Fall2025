@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/morris-lee-phd_ainewsclips-ai-ml-activity-7375560795167936512-67Kc
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Morris Lee的动态
+Morris Lee
+
+Computer Vision Consultant - available to help your R&D! Have 70+ patents. 40+ years experience in artificial intelligence and hitech technologies. Passionate about using the latest advancements to improve your business.
+
+2 周
+
+MEGAN: Mixture of Experts for Robust Uncertainty Estimation in Endoscopy Videos
+https://lnkd.in/eSriJnHp
+
+Reliable uncertainty quantification (UQ) is essential in medical AI.
+
+Evidential Deep Learning (EDL) offers a computationally efficient way to quantify model uncertainty alongside predictions, unlike traditional methods such as Monte Carlo (MC) Dropout and Deep Ensembles (DE).
+
+However, all these methods often rely on a single expert's annotations as ground truth for model training, overlooking the inter-rater variability in healthcare.
+
+To address this issue, we propose MEGAN, a Multi-Expert Gating Network that aggregates uncertainty estimates and predictions from multiple AI experts via EDL models trained with diverse ground truths and modeling strategies.
+
+MEGAN's gating network optimally combines predictions and uncertainties from each EDL model, enhancing overall prediction confidence and calibration.
+
+We extensively benchmark MEGAN on endoscopy videos for Ulcerative colitis (UC) disease severity estimation, assessed by visual labeling of Mayo Endoscopic Subscore (MES), where inter-rater variability is prevalent.
+
+In large-scale prospective UC clinical trial, MEGAN achieved a 3.5% improvement in F1-score and a 30.5% reduction in Expected Calibration Error (ECE) compared to existing methods.
+
+Furthermore, MEGAN facilitated uncertainty-guided sample stratification, reducing the annotation burden and potentially increasing efficiency and consistency in UC trials.
+
+---
+Newsletter https://lnkd.in/emCkRuA
+More story https://lnkd.in/enY7VpM
+LinkedIn https://lnkd.in/ehrfPYQ6
+#AINewsClips #AI #ML #ArtificialIntelligence #MachineLearning #ComputerVision
+
+赞
+评论
+分享
+
+要查看或添加评论，请登录

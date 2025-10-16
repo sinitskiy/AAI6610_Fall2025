@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/thomasjubault_deep-learning-data-ramping-and-uncertainty-activity-7108407452055793664-jaUQ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Thomas Jubault, PhD, MBA的动态
+Thomas Jubault, PhD, MBA
+
+Advisor - Private Markets @ PSP Investments | Machine Learning and Data Analysis lecturer @ HEC Montréal
+
+2 年
+
+I'm thrilled to announce the publication of a scientific article that I had the privilege of co-authoring when I was working at NeuroRx. 
+
+The title:
+"Deep learning, data ramping, and uncertainty estimation for detecting artifacts in large, imbalanced databases of MRI images"
+
+The goal:
+Using AI (deep learning) to assist with automatic Quality Control (QC) of incoming MRI data, ensuring accuracy, consistency, and reliability of analyses performed down the line.
+
+It is a typical challenge for companies to effectively leverage the immense amount of data they have accumulated for training.  We were able to circumvent this obstacle via a fine understanding of how data was stored, and how this could be translated to tagging "de-facto".
+
+The article covers many others aspects of the development and real life implementation of this type of solution in a highly complex environment. 
+
+This achievement would not have been possible without the relentless efforts and collaboration of a brilliant team and I would like to extend my gratitude to Haz-Edine Assemlal and Ricardo Pizarro.
+
+https://lnkd.in/eGx3KRRg
+
+Deep learning, data ramping, and uncertainty estimation for detecting artifacts in large, imbalanced databases of MRI images
+sciencedirect.com
+71
+3 条评论
+赞
+评论
+分享
+Lucie Lauzon
+
+Spécialiste d'applications en IRM
+
+2 年
+
+Félicitations Thomas!
+
+赞
+回复
+Adam Schwarz
+
+Global Head of Imaging & Digital, Pharmaceutical Diagnostics, GE HealthCare
+
+2 年
+
+Excellent, Thomas! This is a really important topic. 
+Some of the most important potential impacts of new AI/ML approaches are in these more "nuts and bolts" areas of imaging, which in turn will be key enablers for downstream analyses/reads (whether AI-based or not). 
+
+p.s., 26 Figures... is that some kind of record? ;-)
+
+赞
+回复
+3 次回应
+Dani

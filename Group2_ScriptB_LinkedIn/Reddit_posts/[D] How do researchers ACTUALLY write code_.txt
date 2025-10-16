@@ -1,0 +1,140 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mln24c/d_how_do_researchers_actually_write_code/
+Title: [D] How do researchers ACTUALLY write code?
+
+Content:
+Hello. I'm trying to advance my machine learning knowledge and do some experiments on my own.  
+Now, this is pretty difficult, and it's not because of lack of datasets or base models or GPUs.  
+It's mostly because I haven't got a clue how to write structured pytorch code and debug/test it while doing it. From what I've seen online from others, a lot of pytorch "debugging" is good old python print statements.  
+My workflow is the following: have an idea -> check if there is simple hugging face workflow -> docs have changed and/or are incomprehensible how to alter it to my needs -> write simple pytorch model -> get simple data from a dataset -> tokenization fails, let's try again -> size mismatch somewhere, wonder why -> nan values everywhere in training, hmm -> I know, let's ask chatgpt if it can find any obvious mistake -> chatgpt tells me I will revolutionize ai, writes code that doesn't run -> let's ask claude -> claude rewrites the whole thing to do something else, 500 lines of code, they don't run obviously -> ok, print statements it is -> cuda out of memory -> have a drink.  
+Honestly, I would love to see some good resources on how to actually write good pytorch code and get somewhere with it, or some good debugging tools for the process. I'm not talking about tensorboard and w&b panels, there are for finetuning your training, and that requires training to actually work.
+
+  
+Edit:  
+There are some great tool recommendations in the comments. I hope people comment even more tools that already exist but also tools they wished to exist. I'm sure there are people willing to build the shovels instead of the gold...
+
+Comments:
+- If it makes you feel better most research repos are terrible and have zero design or in many cases just don't work as advertised
+- Your experience is quite literally everyday experience in research. We just finished a large-scale reproduction paper, which took A FULL YEAR of work. I would rate average research code quality as 3/10. Reasonable variable and function names, using a formatter+linter (e.g. ruff), and a dependency manager (e.g. uv) already bring the code to the top contenders in terms of quality.
+- THEY SUCK
+
+BRO, THEY SUCK
+- There is a reason why research repos are such dumpsters. Smaller research teams usually don't have time to write pretty code and rush it before the conference deadline, while larger teams like Meta tend to have an incomprehensible pile of everything which nobody ever bothered to document (yes, fairseq, I'm talking about you).
+
+>let's ask claude -> claude rewrites the whole thing to do something else, 500 lines of code, they don't run obviously
+
+I'm pretty sure that if you do research on neural networks that'd be the last thing you even bother trying.
+- There are a few tricks that can slightly relieve the pain of the process. 
+
+1. Use einops and avoid context dependent reshapes so that the expected shape is always readable
+2. Switch model to CPU (to avoid cryptic cuda error messages) and run debugger is much easier than print statements. You can let the code fail naturally and trace back the function calls to find most nan or shape mismatch errors.
+3. AI debugging works better if you use a step by step tool like cline and force it to write a test case to check at every step
+4. Sometimes we just have to accept there is no good middle ground between spaghetti code and convoluted abstraction mess for things that are experimental and subject to change all the time, so don't worry too much about writing good code until you can get something working. AI can't help you do actual research, but it is really good at extracting the same code you repeated 10 times and put it into a neat reusable function once you get things working.
+- Yeah, most code released by researchers is prototype junk in 90% of situations. Whatever is needed to *just* get it to run on their machine.
+
+Whenever I sit down with a paper and its code to try to run it, I brace myself for a debugging session and dependency hell since they very rarely check their work on a second machine after they finish.
+
+That said, the pytorch docs are an amazing resource. They have a ton of tutorials and guides available about how to effectively use PyTorch for a variety of tasks.
+- still love a notebook to prototype.
+
+marimo > jupyter
+
+* builtin testing
+* python fileformat for version control
+* native caching so I can go back to previous iterations easily
+- As a fullstack dev who looks at research alot, I can tell you researchers suck at writing code. Or running them. Or organizing things. Most of them anyway.
+
+I think you've got a gap in what you can actually implement. You've probably read lots of papers on cutting-edge work, but haven't really sat down with a barebones model on your own. Pick a simple dataset, think of a  simple model.
+
+    model = nn.Sequential(
+        # input layer
+        nn.Linear(3, 8),
+        nn.BatchNorm1d(8),
+        nn.GELU(),
+    
+        # 3 hidden layers
+        nn.Linear(8, 8),
+        nn.BatchNorm1d(8),
+        nn.GELU(),
+        nn.Dropout(p=0.5),
+    
+        nn.Linear(8, 4),
+        nn.BatchNorm1d(4),
+        nn.GELU(),
+        nn.Dropout(p=0.5),
+    
+        nn.Linear(4, 1),
+    
+        # output layer
+        nn.Sigmoid(),
+    )
+
+Think of the folder structure, where you'll keep your processed data, constants, configs, tests. Look into test-driven development. If you write tests before writing your code, you won't run into issues with shapes and stuff. When you do, you'll know exactly what went wrong.
+
+I think Claude and LLMs are amazing, but I make a conscious decision to write my own code. It's easy to fall into the trap of copy-pasting Claude's code, then having to debug something for hours. I've realised it's faster for me to just write it and have it run and maintain in the end (unless it's something basic).
+- I have strong opinions on this topic. A short list of tools that I regard as non-negotiable:
+
+- [pre-commit](https://pre-commit.com/) for code quality, hooked up to run:
+    - [ruff](https://docs.astral.sh/ruff/) and
+    - [pyright](https://github.com/microsoft/pyright/)
+- [jaxtyping](https://github.com/patrick-kidger/jaxtyping) for shape/dtype annotations of tensors.
+- [uv](https://github.com/astral-sh/uv/) for dependency management. Your repo should have a `uv.lock` file. (This replaces conda and poetry which are similar older tools, though `uv` is better.)
+
+Debugging is best using the stdlib `pdb`.  
+Don't use Jupyter.
+- Appreciate you sharing! I was starting to think my development process was a bit of an oddball. Nice to know I'm in good company! 😄
+- https://github.com/lucidrains
+- In defense of researchers… 
+
+The currency of researchers is publications, not repos. To me, a repo, it’s just code that re-creates the experiments and figures that I discussed in my paper. 
+
+If the idea is important enough, somebody else will put it into production. I don’t even have enough SWE skills to do that competently.
+- I just use pdb to debut every step of the way, try to have a reasonable repo structure like cookie-cutter-data-science, use uv for dependencies. Do some minimal type annotation, have variable names that make sense and are not just one letter. Another thing i personally think is best is not to over abstract your code immediately, just wait for repeated function to show up. 
+
+Also try to find some good repos and see how they code, some people that e.g. like to replicate ML papers in high quality code. I remember looking at some YOLO implementations that were pretty nice.
+
+They say also it's good to overfit a single batch ,to see that your training code works.
+- Poorly. Myself included.
+- Research repos are awful!!! Researchers are usually not good coders unfortunatel. They don't build for scale, resilience, etc. Rarely do i see unit tests. I've even seen some repos with mistakes in them and these are repos backing published and peer reviewed papers.
+- It depends. But here's my approach for ML research. First, I setup a directory structure that makes sense:
+
+* `/data`: The processed data is saved here.
+* `/dataset_generation`: Code to process raw datasets for use by experiments.
+* `/experiments`: Contains the implementation code for my experiments. 
+* `/figure-makers`: Code for making figures used in a publication. Use one file for each figure! This is super helpful for reproducability.
+* `/images`: Figure makers and experiments output graphs images here.
+* `/library`: The source code for tools, utilities, used by experiments.
+* `/models`: Fully trained models used during experiments.
+* `/train_model`: Code to train my models (Note: when training larger, more complex models I relegated to their own repository)
+
+The bulk of my research occurs in the experiments folder. Each experiment is self-contained in its own folder (for larger experiments) or file (for small experiments that can fit into, say, a jupyter notebook). Use comments at the folder/file level to indicate the question/purpose and outcome of each experiment.
+
+When coding, I typically work in a raw python file (\*.py), utilizing the `#%%` to define "code cells"... This functionality is often referred to as "cell mode" and mimics the behavior found in interactive environments like Jupyter notebooks. However, I prefer these because they allow me to debug more easily and because raw python files play nicer with git version control. When developing my code, I typically execute the \*.py in debug mode, allowing the IDE (VS Code in my case) to break on errors. That way I can easily see the full state of the script at the point of failure.
+
+There's also a few great tools out there that I highly recommend:  
+1. Git (for version control)  
+2. Conda (for environment management)  
+3. Hydra (for configuration management)  
+4. Docker/Apptainer (Helpful for cross-platform compatibility, especially when working with HPC clusters)  
+5. Weights & Biases or Tensorboard (for experiment tracking)
+
+**Final notes:**  
+In research settings, you goal is to produce a result, not to have robust code. So, be careful how you integrate conventional wisdom from software engineers (SE). For instance, SE might tell you that your code in one experiment should be written to be reusable by another experiment; instead, I suggest you make each experiment an atomic unit, and don't be afraid to just copy+paste code from other experiments in... what will a few extra lines cost you? Nothing! But if you follow the SE approach and extract the code into a common library, you're marrying your experiments one to another; if you change the library, you may break earlier experiments and destroy your ability to reproduce your results.
+- You can check out lucidrains. While he's not the one who writes the papers, he implements them as a hobby. I mean if he joins pytorch team...
+- I first design with UML class diagrams, then I write the code. We have an internal designing framework to do so
+- There is no royal road.  Lots of checks:
+
+ assert torch.isfinite().all()
+
+Initialize with nans if you expect to fully overwrite in correct use.  Check for nan in many stages.
+
+Write classes.  there’s typically a preprocessor stage, then a dataset and then a dataloader and then a model.  Getting the first three right is usually harder.  Small test datasets with a simple low parameter model.  Always test these with every change.
+
+Efficient cuda code is yet another problem as you need to have mental model of what is happening outside of the literal text.
+
+In some cases I may use explicit del on objects which may be large and on the GPU,as soon as conceptually I think they should no longer be in use.  Releasing the python object should release the CUDA refcount.
+
+and for code AI Gemini Code Assist is one of the better ones now, but you need to be willing to bail on it and spend human neurons after it doesn’t get it working quickly.  It feels seductively easy and low effort to keep on asking it to try but it rarely works.
+- A lack of tools isn’t really a problem… it’s that the goal for research is to produce knowledge, not to fit into any production system. A lot of research code is sloppy (and a scary amount isn’t reproducible), but the main criterion for success is whether you understand the fundamental knowledge that’s being produced/tested. 
+
+I have also noticed students and junior researchers are massively decelerated by using LLMs to write or rewrite chunks of code (or all code as you mentioned). Lines of code or lack of errors has always been a bad measure of control over your experiments and implementations, but these models jump you straight to the end without developing the understanding along the way. Without having that understanding, your work is slowed down dramatically because you don’t know what to try next. If you’ve already implemented and debugged hundreds of methods manually, sure it can start to be helpful.

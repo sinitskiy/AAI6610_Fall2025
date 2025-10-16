@@ -1,0 +1,51 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/187fnbf/us_data_science_skill_report_11221129/
+Title: US Data Science Skill Report 11/22-11/29
+
+Content:
+I have made a few small changes to a report I developed from my tech job pipeline. I also added some new queries for jobs such as MLOps engineer and AI engineer. 
+
+Background: I built a transformer based pipeline that predicts several attributes from job postings. The scope spans automated data collection, cleaning, database, annotation, training/evaluation to visualization, scheduling, and monitoring.
+
+This report is barely scratching the insights surface from the 230k+ dataset I have gathered over just a few months in 2023. But this could be a North Star or w/e they call it. 
+
+Let me know if you have any questions! I’m also looking for volunteers. Message me if you’re a student/recent grad or experienced pro and would like to work with me on this. I usually do incremental work on the weekends.
+
+Comments:
+- Your data needs to be cleaned. I see a point for AI/ML, a point for AI, a point for ML, a point for Machine Learning, all in very different parts of the chart.
+- I am sorry and maybe I am the only one who thinks this, but it is very cluttered, and not organized well. :(
+- This all US based data?
+
+Super interesting, thanks for sharing.
+- Does this make anyone else feel underpaid?
+- The salary being on x axis on top and y axis on the below one wonked my tonk
+- This is really cool, seems to check out with what I’ve seen. DE skills = more $$ unless you’re using advanced ML skills.
+- This is pretty cool thanks for sharing! I think you did a great job and it shows that you’ve put in a lot of work! I’m curious what you mean about transformer pipeline, can you elaborate with some examples? It would be great to have more context on how the data is being collected and preprocessed. 
+I also agree with what the others have mentioned about the data needing to be cleaned up and grouped. For example on the word cloud chart I think it could be helpful if you separated soft skills vs tech skills and filtered out stuff that’s not relevant. As of now it’s ok, but it’s not very meaningful to someone who maybe doesn’t know what skills you need to have to be a data scientist because it looks like all skills are thrown together on one chart. 
+Maybe filter by top 10 skills? Sometimes less is more especially when you’re trying to visualize and tell a story with words. For example if I’m looking as a data scientist I don’t think it’s relevant to have excel, verbal communication, lambda and so on. 
+I have more thoughts on this and am happy to share more if you find this helpful! great start and interesting work!
+- Pretty cool, maybe remove the "Posted" column from the table so the values aren't cut-off and we all know the date-range already. The top chart could be a bar chart as it seems perhaps the values are all 1 for those companies, consider even updating that so it is more representative of the average salary at a company for an entry, mid, and executive level position at each company as right now it feels a bit misleading
+- A lot of these job titles seem very loosely related to DS/DE/ML/AI/analytics. I'm seeing jobs with "Embedded", "Front End", "Marketing" which probably overlap with like 1 DS skill max.
+- lol, when the salary chart starts 120k
+- Is there any way to run a live version of this?
+- Is the salary just base?
+- Cool and valuable report, with some good visualizations. Keep up the good work!
+
+A couple pieces of feedback/questions:
+
+What do you want viewers/consumers of this to take away? What are your insights and recommendations? Are there any actions we can take or decisions we can make as a result of your work?
+
+Why is there a transformer involved here, and what does it do? This looks like it should just be keyword extraction and plotting, could be done with regex.
+
+As another commenter mentioned, if there’s any NLP aspect to this, like similarities of semantic embeddings, AI/ML/Machine Learning should all be pretty close together.
+
+It also looks like you only use salary from the posted ranges? In tech, salary can often be less than half of the total comp. It’d be useful to do some cross referencing with other databases/sites like levels.FYI for validation.
+- So sad to see Tableau up here.. such a pile of sh\*t
+- I think using count of skill is a little confusing, it should be number of job postings, employees, job seekers, data scientists etc.
+- Can I get 10 upvotes to be able to post please? I wish you the best data cleaning process ever
+- Wow
+- Out of curiosity, why can you only adjust the minimum salary and not the maximum salary?
+- For those interested in the PBI link:
+
+https://app.powerbi.com/view?r=eyJrIjoiYzRlNmU5MGEtNThlYy00OTc5LTgzZmYtN2Q2ZTlhZTA5ZGZjIiwidCI6IjczMGY1M2RmLWI3MmQtNGJjYS1iZjYzLTRmMWRiMTI5YjliOSJ9
+- Hey there. Nice work. Do you have notebook posted somewhere?

@@ -1,0 +1,34 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lw8lvh/p_printguard_sota_opensource_3d_print_failure/
+Title: [P] PrintGuard - SOTA Open-Source 3D print failure detection model
+
+Content:
+Hi everyone,
+
+As part of my dissertation for my Computer Science degree at Newcastle University, I investigated how to enhance the current state of 3D print failure detection.
+
+Current approaches such as Obico’s “Spaghetti Detective” utilise a vision based machine learning model, trained to only detect spaghetti related defects with a slow throughput on edge devices (<1fps on 2Gb Raspberry Pi 4b), making it not edge deployable, real-time or able to capture a wide plethora of defects. Whilst their model can be inferred locally, it’s expensive to run, using a lot of compute, typically inferred over their paid cloud service which introduces potential privacy concerns. 
+
+My research led to the creation of a new vision-based ML model, focusing on edge deployability so that it could be deployed for free on cheap, local hardware. I used a modified architecture of ShuffleNetv2 backbone encoding images for a Prototypical Network to ensure it can run in real-time with minimal hardware requirements (averaging 15FPS on the same 2Gb Raspberry Pi, a >40x improvement over Obico’s model). My benchmarks also indicate enhanced precision with an averaged 2x improvement in precision and recall over Spaghetti Detective.
+
+My model is completely free to use, open-source, private, deployable anywhere and outperforms current approaches. To utilise it I have created PrintGuard, an easily installable PyPi Python package providing a web interface for monitoring multiple different printers, receiving real-time defect notifications on mobile and desktop through web push notifications, and the ability to link printers through services like Octoprint for optional automatic print pausing or cancellation, requiring <1Gb of RAM to operate. A simple setup process also guides you through how to setup the application for local or external access, utilising free technologies like Cloudflare Tunnels and Ngrok reverse proxies for secure remote access for long prints you may not be at home for. 
+
+Whilst feature rich, the package is currently in beta and any feedback would be greatly appreciated. Please use the below links to find out more. Let's keep failure detection open-source, local and accessible for all!
+
+📦 PrintGuard Python Package - https://pypi.org/project/printguard/
+
+🎓 Model Research Paper - https://github.com/oliverbravery/Edge-FDM-Fault-Detection
+
+🛠️ PrintGuard Repository - https://github.com/oliverbravery/PrintGuard
+
+Comments:
+- This sounds really cool! I've used spaghetti detective for years. Have you got some example images of what it can detect vs what spaghetti detective misses?
+- Cool, why did you pick shufflenet over mobilenetv4? 
+
+Also I know you're just writing this because projects need to sound impressive, but 1 fps (or even 0.1 fps) is fine for a spaghetti detector, because it takes time for the spaghetti to be produced anyways. An extra second delay is perfectly adequate, as it takes humans much longer to fix the issue.
+- Looks good from reading, I am curious when you sourced training data for it?
+- Spaghetti detective was only trained to identify “spaghetti” related defects in prints in comparison to my model which is also trained to identify layer separation and warping whilst ignoring non-destructive issues like stringing. My released technical paper covers this in a lot more detail with images, found [here](https://github.com/oliverbravery/Edge-FDM-Fault-Detection).
+- Hi, my research focused on making a model deployable on extreme-resource constrained devices. Whilst MobileNetv4 can outperform ShuffleNetv2 on many ImageNet datasets, its complexity is still typically greater than my ShuffleNetv2 variant as ShuffleNetv2 is optimised for low MAC (memory access costs), a requirement for ARM based CPU bound processes. I do fully understand MobileNetv4 is also a suitable model and it may be useful to investigate the models use case further. It’s also worth noting that the model is only used as a image encoder in my scenario, where predictions are made through measuring the Euclidean distance of the embedding to mean class prototypes, so the choice of embedding model, whilst still important, plays less of a role in prediction accuracy.
+
+An increased image throughput allows for more consistent results and less chance of false positives, when a majority voting system is employed, as it is in PrintGuard. Where my model can predict ~15 img/sec, majority voting ensures false positives wouldn’t trigger an alert or potentially pause/ cancel the print, which I found to be the case with the Spaghetti Detective model when using it in my prior project, [3D-Print-Sentinel.](https://github.com/oliverbravery/3D-Print-Sentinel)
+- Never mind I read the second link

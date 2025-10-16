@@ -1,0 +1,63 @@
+URL: https://www.linkedin.com/posts/ivanblancosanchez_new-beta-estimation-method-can-machine-activity-7240728542701879296-vZGE
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ivan Blanco的动态
+Ivan Blanco
+
+Associate Professor of Finance | Director Master in Finance CUNEF |💡Asset Pricing & Quant Investment
+
+1 年
+
+📢 New Beta Estimation Method! "Can Machine Learning Methods Predict Beta?" How ML can help in beta estimation for non-traded assets. Keep reading! 🔻
+
+This paper presents a new approach to beta estimation, using ML to vastly improve accuracy for private and non-traded firms.
+
+The main contributions and findings are as follows:
+
+👉 Machine Learning Beta Estimation: The paper compares traditional Comparable Company Analysis (CCA) with five machine learning (ML) algorithms for estimating beta, including decision tree ensembles and neural networks.
+
+👉 Dramatic Error Reduction: The ML models significantly reduce mean absolute error (MAE) by up to 42% compared to CCA, with particularly strong performance for smaller, younger firms—those that typically differ most from their peer groups.
+
+👉 Outperformance in Non-Traded Asset Valuation: ML methods outperform traditional accounting betas and provide better estimates for firms with unconventional capital structures, making them ideal for private firm valuations.
+
+👉 Robustness Across Models: The study proves the robustness of ML results even with fewer predictors and demonstrates that the Light GBM method performs best, consistently improving forecast accuracy across different firm sizes and ages.
+
+-----------------------
+→ Join 3000+ Asset Pricing & Quant Finance enthusiasts who receive top new research ideas weekly in their email: bit.ly/3suSS6e
+-----------------------
+Link to the paper: https://lnkd.in/dBknjQW2
+
+52
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+22,421 位关注者
+
+434 则动态
+查看档案  关注
+探索相关领域
+How Ensemble Learning Improves Predictions
+How to Use Accurate Forecasting Techniques
+Latest Trends in Machine Learning
+How to Improve Predictive Accuracy
+Best Practices for Financial Forecasting Accuracy
+Valuation and Forecasting Best Practices
+展开 
+浏览内容分类
+Career
+Productivity
+Fina

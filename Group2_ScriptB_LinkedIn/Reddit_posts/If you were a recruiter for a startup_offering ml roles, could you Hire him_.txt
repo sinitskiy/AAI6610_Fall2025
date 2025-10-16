@@ -1,0 +1,37 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kxpsgz/if_you_were_a_recruiter_for_a_startupoffering_ml/
+Title: If you were a recruiter for a startup/offering ml roles, could you Hire him?
+
+Content:
+Here is the portfolio be the judge then I will tell you what you are missing.  
+[https://samkaranja.vercel.app/](https://samkaranja.vercel.app/)
+
+Gpt thinks I could thrive more as a machine learning engineer in:
+
+* Startups and social impact orgs
+* Remote/contract ML roles
+* AI-driven SaaS companies
+* Roles that blend ML + Product or ML + Deployment
+
+Comments:
+- Your projects section just contains some descriptions without very much depth at all. 
+
+I checked out your GitHub and looked through one project, the geospatial one, as I have expertise in that area. 
+
+It looks like it's an API call potentially? For an "IBM" intelligence something AI? On a cursory of a glance, I didn't even see the call for that, just mentions of it, I do see the calls to get the sentinel data as well as the raster data, and I do see the near infrared being used, but are you not just using that directly? Like that specifically showcases moisture content well when sampled well.
+
+So, I'm not seeing like custom CNN usage, any refinement, any training loops, the projects just stay things like "Led a team to build X" which gives me very little substance to go off of. Also, when mentioning AI, I 'd recommend detailing what models, what were they refined to do, if they were already trained, what techniques were used for the refinement, like freezing particular layers. Why they were chosen for this task, how they are the best solution versus other techniques, etc.
+- I gave you 30 seconds, which is the upper end of what a recruiter will give you. I learned you're based out of Africa, twice. I'd hire you for webdev since the website was pretty. I didn't even get to anything you actually achieved, so hard pass on ML roles.
+- Good for you. I hope you find a job you like
+- Chat isn't designed to be a judge on profiles, especially for its audience it's trying to get subscribers from.
+
+I took a look at your projects and they're very straight forward. Many I can see as part of a course or a beginner's entrance to a new project.
+
+The goals for the roles you listed above is to show that you have more knowledge about these systems than others. 
+
+You can show this through doing deep exploration of a dataset, doing model analysis, and cross referencing a paper in order to yield better results.
+- Okay, thank you for this. I really appreciate and will add details to the projects.
+- OK, am not a web dev though. Did you get to the project section?
+- Thank you, currently am dealing with automation systems.
+- Thank you for this. Am grateful will work on that
+- Let's cross reading comprehension off the skills list as well lol

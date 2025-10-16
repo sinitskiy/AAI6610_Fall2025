@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/l6x8jq/dactive_learningconfused_about_retrieving/
+Title: [D](Active Learning)Confused about retrieving uncertainty scores from an object detection model
+
+Content:
+Hello, I have been trying to figure out how to retrieve informativeness or uncertainty scores from images in an object detection model.
+
+Getting a uncertainty score from an image in classification model is relatively straight forward, but i'm confused about getting the score from an object detection model.
+
+The most straightforward way seems to be training a separate classification model on cropped images of objects from a object detection model and average the uncertainty scores in an image depending on the number of object in the picture.
+
+But this seems like a lot of work and I was wondering if I could somehow derive these scores within the object detection model without training a separate classification model.
+
+thanks in advance.
+
+Comments:
+- What model are you using? What are you going to use the uncertainty score for?
+- SDD models and Faster RCNN Models. 
+
+I am using uncertainty scores in to pick out the most informative pictures for active learning where I use the least images to bring up performance of the model as fast as possible.
+- What is the problem with your classifier, misclassifies objects or doesn't find the objects?  
+If you're not finding objects, and you're looking to sort by objectness score ascending to find the hardest images, you're going to be wading through a lot of images per datapoint you get.
+- I think we are speaking about different things. 
+
+It's not that the models have problems, but I want to be able to derive informativeness of a picture directly from the object detection model without having to use a separate image classifier.
+- I don't think we are. So how would you do this in a classification model?
+- in a classification task, the image only has one object or task. 
+
+For example, 
+
+When classifying a picture in a 3 class dataset(cat, dog, rabbit),
+each prediction on picture will have a softmax or confidence score for each category. 
+
+picture 1: 
+cat: 90% dog: 5% rabbit 5%
+
+picture 2:
+cat 45%  dog:35%  rabbit:25% 
+
+I would use some sort of uncertainty score and most likely pick the second picture as the more uncertain or more 'informative' picture. 
+
+But in an object detection model, there is only an one score for each of the the object detected which makes it hard to calculate uncertainty scores. 
+
+Basically I want to get the softmax score for the each bounding box. 
+
+Does this mean I have to go diggin within the model architecture?
+- > Does this mean I have to go diggin within the model architecture?
+
+Yes, that's exactly what you need to be doing. It shouldn't be that hard though. Each bounding box will usually have some sort of objectness score and a class score. The only difference from a classifier is that you need to choose a way to aggregate the score you've chosen per image.

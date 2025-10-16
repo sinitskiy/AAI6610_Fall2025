@@ -1,0 +1,96 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1nnfcwc/is_it_due_to_the_tech_recession/
+Title: Is it due to the tech recession?
+
+Content:
+We know that in many companies Data Scientists are Product Analytics / Data Analysts. I thought it was because MLEs had absorbed the duties of DSs, but i have noticed that this may not be exactly the case.
+
+There are basically three distinct roles:
+	
+1.	Data Analyst / Product Analytics: dashboards, data analysis, A/B testing.
+	
+2.	MLE: build machine learning systems for user-facing products (e.g., Stripe’s fraud detection or YouTube’s recommendation algorithm).
+	
+3.	DS: use ML and advanced techniques to solve business problems and make forecasts (e.g., sales, growth, churn).
+
+This last job is not done by MLEs, it has simply been eliminated by some companies in the last few years (but a lot of tech companies still have it).
+
+For example Stripe used to hire DSs specifically for this function and LinkedIn profiles confirm that those people are still there doing it, but now the new hires consist only of Data Analysts.
+
+It’s hard to believe that in a world increasingly driven by data, a role focused on predictive decision making would be seen as completely useless.
+
+So my question is: is this mostly the result of the tech recession? Companies may now prioritize “essential” roles that can be filled at lower costs (Data Analysts) while removing, in this difficult economy, the “luxury” roles (Data Scientists).
+
+
+Comments:
+- There is no standard industry definition for these roles (they are company specific). If you’re separating these roles by their titles, your analysis will mostly be incorrect. In some companies, data scientists deploy recommendation engines, while in some companies, MLEs perform those tasks.
+
+Also, I’m tired of seeing people classify A/B testing as the job of a Data Analyst. MLEs run A/B tests to compare the performance of different model versions. Software Engineers run A/B tests to measure latency etc.
+
+The right way to classify these roles is by looking at their functions.
+
+- Dashboarding and reporting 
+- Development and deployment ML/DL/CausalML models for various business goals (recommendations, fraud)
+- Supporting business strategic decisions using science (causal inference analysis to explain the impact of X on Y)
+
+- Etc
+
+Choose a path that interests you and follow. You’ll have different titles based on how your companies define these roles (DS/MLE etc)
+- DS roles are still available, but I would say that the standard has been raised considerably. I work as a data scientist, mostly using optimisation and machine learning (ML) techniques for classification. That doesn't mean that I dont "analyse data", though — I spend 80% of my time doing data cleaning and manipulation in SQL, than using causal inference to be sure of my assumptions and the stakeholders lol. In my experience, people talk a lot about modelling, but not enough about preparing for data cleaning and feature selection, or about the communication skills necessary to convince management that your work is relevant.
+- 1. You should stop believing any such "specializations" in role exist; the best / valued MLE's/ DS's are those that can do (or atleast understand) data engineering, data science, AI, DevOps (see data mesh as concept). We used to laugh that companies want unicorns, well now they really do and honestly they do have a fair chance at getting one.
+2. What I think is happening, is that salaries for Senior - Principal have really compressed and gone down. Companies know that, several companies including my own just choose to bump up the salary of  a L2 to get a senior role. Don't get me wrong we are still hiring, we are just only hiring experienced folks (and by experienced I really mean people that have that end-to-end experience; what i mentioned above (i am at big tech)). And honestly even if we get applicants that are super experienced but don't know how to deploy a basic model; they usually don't even make it to the interview stage.
+
+The market is really saturated with new grads but also a fair number of experienced folks are available
+
+3. Companies really got bloated during 2021-2022; i think most are interested in keeping the companies lean, focused and experienced (until they forget about it again and start spending like crazy; tech has a short memory span which is when the new grads will start earning 300-350k starting salaries again lol)
+- There are multiple factors at play, but traditionally the last role you describe is often the one with the less return, as forecasting/modelling does not always yield expected/useful/actionable results. Many companies do struggle with realising the promises of predictive analytics (because it’s not trivial). And when it works, it quickly becomes another task for MLE to deploy and maintain, so you do not need that many pure data scientists/modellers. So there was a massive glut on hiring because everybody wanted a slice of the promise land, then reality started to settle in. If you look at other industries where modellers/statisticians have had a role for decades, it still typically remains a niche activity in terms of FTE, because a single person, if competent, does have massive leverage already.
+- Nah in Denmark, I see data scientists doing everything. Like I graduated last year; and most companies look for skills in AI, data science, data Engineering, frontend-backend and shit and giggles. I cannot even learn proper data science because every Company requires me to have everything
+- My job title is Data Scientist and my workload fits your definition of MLE. Though in part that's because I'm at a small company where nobody's title is MLE, so I'm more of a "full-stack" data scientist. My team covers all 3 roles plus some data engineering (maybe that falls under MLE, gotta get that product data somehow) but we're all titled as DS.
+- 1 and 3 are usually done by the same person/DS, but titles are nebulous and the nature of work is along a spectrum of tasks, and not so split clearly
+- It just depends on the needs of the organization. 
+
+I’m happy just doing something that lets me do both applied statistics and software development. I’m in healthcare where there’s probably a lower ceiling in pay, but pretty chill atmosphere and contributing to actual science is always fun
+- Long time ago, we need data scientist since we need someone can read and implement some idea from academic paper. It requires some maths, a little bit programming skills. But these days all of these idea has been packaged in tool that an eingineer can quickly use and integrate in their work.
+- I think your definition of 3. And the approaches that DS took to solve these challenges didn't deliver any business value.
+
+The main reason being that most orgs don't/can't manage their data well enough to power the models that DS would bring.
+- Titles don’t really mean much anymore, whoever creates value/impact to the business will get rewarded.  I see some data analyst makes $500k and reports directly to a VP.
+- Can anyone explain to me what Causual Inference (or formal Causual Inference) is? 
+
+I have been a Data Analyst for some years reading AB tests (only on new users). What I normally do is check the metrics for difference between Control vs Variant, then do t test, if p value is < 0.05 then say it’s significant.
+
+Is that considered Causual Inference?
+- Can you help me with Karma, so I can post in here? Please 🤲
+- It’s less about the tech recession and more about how companies define roles. Some folded DS work into analyst or MLE positions to cut costs, but the actual functions, like causal inference, forecasting, and business problem-solving, are still needed. Titles just shift depending on the org, so it looks like DS roles are shrinking when in reality the scope is just being renamed or split up.
+- The border between 1 and 3 was always blurry, and probably has become even more so recently, for the reason you specified among others (+ e.g. commoditisation maybe).
+- I’d argue it depends on the size of the company.  if it is small, medium or large, as a ds you might take on the roles of the de , or the ml or vice versa. For example: a larger company often have more hierarchical structures with defined roles ( de - ds -ml). For people outside our area of expertise it is all the same to them, if we are hired say specifically DS in a smaller company we will most likely do DE as well.
+- Specializations
+Levels like this is a level four ds task 
+Alot of job titles
+
+Made up by companies to fulfill a need or meet a trend
+
+Or
+
+Made up by startups to sell a product for a vague "problem" or "need"
+
+Or 
+
+Made up by data influencers to sell ebooks, courses, and further their side hustle
+- My company sells data capture software, which is a required component of ML/AI projects. I had someone build a sales forecasting app. My CFO isn't the least bit interested because he and his team are furiously recording every thought, ever interaction with every customer, so they know in their gut whether the customers will renew. This is a classic case of humans upping their game so they increase their value in the face of AI's bloated promises.
+
+With all the over-hype by AI vendors, it should not be surprising that humans are fighting for their jobs. The promise to corporate America is to be able to fire and replace humans with bots. We used to worry about SkyNet, having AI's fight wars against humans. Now it's worrying about taking their jobs. And forming emotional relationships with people who aren't skilled in making them with real humans. Next thing, they'll be "eating the cats. They'll be eating the dogs." Whatever. 
+
+The AI bubble is upon us, people.
+- No since 2018 it’s the same , they want people with same salary do all even wash dishes 😅 sad truth
+- Many of the traditional tasks of a Data Scientist have been 'software engineered' and commoditized. Meaning, much of what you used to spend months building can now be solved with a single API call, LLM call, or is entirely encapsulated in a py library.
+
+For example, back in the day to do a NLP task you needed complex text cleaning, regex patterns, a domain specific ontology/vocab and pile of conditional logic. Often you had to literally create these tools for your tasks. Then came spacy/nltk and made the text cleaning process much faster. Then came domain embeddings and they really took the place of ontologies and vocabs. Now you can accomplish everything in a single LLM call with a good prompt.
+
+There's no need to understand ngrams, TF-IDF, BERT architecture, or even clean your text most of the time. You also need a fraction of the domain knowledge because LLMs have so much general knowledge encoded in them. So why not just hire a SWE to implement that OpenAI call? They can go back to doing SWE stuff when it's done, they don't need to understand how things actually work just like you don't need to understand how an internal combustion engine works to get to work.
+
+A shorter example would be ML/classification tasks. We used to have tiny datasets, really susceptible to outliers, typically used some form of regression, limited compute etc. You had to really know your stats and modeling to squeeze wine from rocks. Then we started to get much bigger data, better ML libs and models like scikit and xgboost, and again alot of the fundamental knowledge has been abstracted away. Today my company doesn't even call me when a client has a ML project, our engineers just throw whatever dataset at Databricks' AutoML product and call it a day. The result is 'good enough' unless you're at big tech and getting that extra 0.1% can be millions.
+
+Unfortunately part of being a 'data scientist' is simply be up on the latest tech craze and being down to ride the wave. Anything difficult will be commoditized into a py lib a SWE can implement in 1 line with zero understanding.
+
+My advice? Change your resume titles to 'AI Engineer' and reapply to the same DS roles lol

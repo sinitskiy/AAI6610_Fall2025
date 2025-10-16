@@ -1,0 +1,23 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/of4jq2/n_a_gentle_introduction_to_conformal_prediction/
+Title: [N] A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification
+
+Content:
+Check out our new Gentle Intro to Conformal Prediction and distribution-free UQ tutorial + video. 
+
+[http://people.eecs.berkeley.edu/\~angelopoulos/blog/posts/gentle-intro/](http://people.eecs.berkeley.edu/~angelopoulos/blog/posts/gentle-intro/)
+
+This tutorial will give you instructions for quantifying the uncertainty of any machine learning algorithm, accompanied by Python/PyTorch code, lots of explanatory illustrations, and worked examples.  It is meant to be a hands-on introduction for a reader interested in the practical implementation of distribution-free UQ, who is not necessarily a statistician.  At the end, you will be able to generate valid confidence intervals/sets for any model for any (unknown) distribution, without ever retraining the model. 
+
+Please let me know if you have any thoughts, questions, or feedback, and I hope you enjoy watching and reading. If you want to learn more about this research area, come to the [ICML Workshop on Distribution-Free Uncertainty Quantification](https://sites.google.com/berkeley.edu/dfuq21/)!
+
+https://preview.redd.it/n4j8ip6dtn971.jpg?width=1756&format=pjpg&auto=webp&s=348ef451307158a6396ba2cf5941b4b9f670e292
+
+Comments:
+- Love the pdf name: *gentle_intro_conformal_dfuq.pdf*
+- All one needs on Conformal Prediction -> [https://github.com/valeman/awesome-conformal-prediction](https://github.com/valeman/awesome-conformal-prediction)
+- Wow! Having confidence intervals or confidence sets is mission critical in many applications. Not only theory but practical implementation... [GitHub repo](https://github.com/aangelopoulos/conformal_classification)
+
+My practitioner's caveat is the compatibility with only PyTorch classifiers. Academic is starting to show its true colors. Anyway, that's not a big deal.
+- I’ve been thinking about making a raw numpy version.  Would that be more helpful?
+- Very nice of you, but that can wait after your ICML presentation! Great work, congrats!

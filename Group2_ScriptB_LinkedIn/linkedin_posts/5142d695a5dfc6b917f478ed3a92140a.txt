@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/suesarfarazi_harnessing-the-power-of-bayesian-neural-networks-activity-7338271409812512770-xhkC
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sue Sarafrazi, PhD的动态
+Sue Sarafrazi, PhD
+
+Principal Data Scientist at Genentech, Adjunct Faculty at University of San Francisco
+
+3 个月
+
+“Your uncertainty comes from your longing for certainty.
+Fall in love with uncertainty — and certainty will come to you.”
+— Rumi
+In medical imaging and other high-stakes domains, expert opinions often diverge — not because of error, but because ambiguity is inherent to the task. Traditional models typically treat uncertainty as noise, forcing a single "truth" where none may exist.
+In our latest work, we take a fundamentally different approach.
+Rather than suppressing uncertainty, we embrace it.
+We present a Bayesian modeling framework that explicitly accounts for disagreement among annotators. By modeling both epistemic and aleatoric uncertainty, our system iteratively refines noisy labels and improves performance — converging toward consensus without assuming perfect agreement.
+This principled, probabilistic approach not only boosts predictive accuracy by 11%, but also aligns with the realities of clinical data and human disagreement. This enables AI systems that know when they don't know — crucial for clinical deployment. 
+Proud to collaborate with Shiva Fayaz and Sven Reisdorf on pushing the boundaries of trustworthy AI. 🙏
+Link to the full paper: https://lnkd.in/gZFJcxAv
+
+#BayesianLearning #MedicalImaging #UncertaintyQuantification #MachineLearning #AIforHealth #LabelRefinement #TrustworthyAI
+
+Harnessing the Power of Bayesian Neural Networks for Annotator Consensus Refinement to Enhance Meibomian Gland Dysfunction Classification
+ieeexplore.ieee.org
+21
+5 条评论
+赞
+评论
+分享
+Rohini C.
+
+Healthcare Data Analyst | Medical Informaticist | Bridging Clinical Expertise with Health Tech
+
+3 个月
+
+Thanks for sharing, Sue
+
+赞
+回复
+1 次回应
+Ayushi Gupta
+
+Data Analyst | Strategy and Insights| Pharma Analytics | Digital Health Informatics | Clinical Data Analysis | KOL/HCP/Thought leader analytics| Medical affairs | H1

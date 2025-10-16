@@ -1,0 +1,56 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/necuzi/p_d_how_are_you_approaching_prediction/
+Title: [P] [D] How are you approaching prediction uncertainty in ML systems?
+
+Content:
+Most models return a point estimate of some sort, regardless of the task. In some situations (e.g. finance and risk management), the uncertainty in the prediction is just as important as the prediction itself. How are people dealing with these scenarios?
+
+I usually turn to generative models - e.g. probabilistic programs and Bayesian inference. I’ve written-up [my thoughts](https://www.bodyworkml.com/posts/serving-uncertainty) on how to engineer these into a ‘production system’ deployed to Kubernetes, using PyMC and [Bodywork](https://github.com/bodywork-ml/bodywork-core) (an open-source ML deployment tool that I contribute to).
+
+Given the simulation-based nature of generative models, perhaps it’s unsurprising that the resulting system is a little slow. I’d be really interested to get some feedback on the approach or hear about alternatives!
+
+Comments:
+- In general, you should try ensembles and leveraging invariances such as with data augmentation or function priors. You might be interested in the [NeurIPS 2020 tutorial on uncertainty estimation and robustness](https://slideslive.com/38935801). It covers modern recommendations, where in current settings, traditional beliefs don't really work like bootstrap or taking the confidences of a MLE-trained model + L1/L2 penalty. 
+
+_Caveat:_ I'm one of the presenters.
+
+Other relevant tutorials:
+
++ ICML 2020 tutorial: Bayesian Deep Learning and a Probabilistic Perspective of Model Construction
++ NeurIPS 2019 tutorial: Deep Learning with Bayesian Principles
+- A couple of months ago I play with a neural network that learns distribution parameters.  
+I mean, suppose yo are trying to predict demand. The input of the model are features, the output of the model is a pair (n,p) that are parameters of a negative binomial distribution.
+- Bootstrap?
+- After we build a model, we use the calibration library from sklearn for this purpose.  
+
+https://scikit-learn.org/stable/modules/calibration.html
+
+We use this in production and are pretty happy with it.
+- Approximative(the poor) Bayesian?
+- Deepmind recently produced a nice solution to this called 'Distributional RL' - the agents represent a probability distribution rather than average value for each state. Very impressive and likely to big in the future
+- I'm not sure about generative models in particular, but in forecasting models uncertainty is often modelled using what is known as conformal prediction, coupled with probabilistic forecasts. You could try and have a look at those and hopefully you can find something that helps or possibly gives you an idea.
+- Another simple approach you can go for is quantile regression.
+- One area that makes me concerned, is that often my uncertainty comes from situations where the data point being evaluated is not well represented by my training data. These types of approaches where we fit variance like terms won’t work in that situation, the learned variances can be quite wrong when we’re outside the areas that are well covered by the training data.
+
+I haven’t found a systematic way to deal with this yet.
+- If your model uses dropout as a regularization technique, concrete dropout is useful for measuring uncertainty.
+
+https://arxiv.org/abs/1705.07832
+- My 2-cents...
+
+If you used kfold cross validation to train a classifier or a regressor, the per-model output can be used to get both mean and variance of the class probability or the regressed variable. 
+
+Also, introducing some noise in the input at inference time or perturbe it a little bit (where it makes sense, such as salary if it was used as a feature) might be used to estimate confidence of the model. I think this is used in some explainable-AI tools. 
+
+Or more generally, explainable-AI approaches should provide such confidence insights using different techniques, though might not be adequate for transactional use in a production environment
+- In finance I use real-time prediction and monitor how well the models are doing in real-time.
+
+All the models die, some faster than others.
+- Thanks - I’ll dig into that in a bit more depth. My only exposure to Bayesian DL, thus far, is via Thomas Wiecki’s introductory examples in PyMC3 (I discuss them in passing in the post). That you can infer parameters for a network in this way, struck me as profound (albeit obvious after you think about it).
+- Wow, I wish I watched this when I started my masters.
+- Are you able to share any more - that sounds really interesting? I’ve done a bit of demand prediction work in the past, but it never crossed my mind to try that approach. Were the labels in your task, were a set of price-volume pairs (or something similar)?
+- Bootstrapping over the entire set of samples in a training set, will result in an average error metric for the model, not one that is specific to the data instance that you need to score. It’s a bit like adding the standard deviation to the output of a regression model (assuming I’ve understood you correctly).
+- Bootstrap only uses 63% of the data. So bootstrap actually performs really poorly if your performance depends on fitting most of the dataset. In fact, bootstrap's randomization often doesn't provide uncertainty outside of the random initialization of parameters. This brings into question the whole idea behind resampling data (http://www.gatsby.ucl.ac.uk/~balaji/why_arent_bootstrapped_neural_networks_better.pdf)
+- The thing ML people think is used to ensemble decision trees.
+- My understanding, is that these methods solve a different problem - how to back-out the probability of a class label, given a model that has no internal concept of probability (e.g. Support Vector Machine). But there is still uncertainty in this estimate of the probability.
+- Thanks for the recommendation - first time I’ve heard of those methods. This thread is turning into a gold-mine for references in this area.

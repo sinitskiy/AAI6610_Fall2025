@@ -1,0 +1,36 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/n241hz/r_work_in_progress_a_drop_in_replacement_for/
+Title: [R] Work In Progress: A Drop In Replacement For Softmax With Uncertainty Calibrated Scores
+
+Content:
+So, I've been working on an activation function that could work as a drop in replacement for softmax, with the main original intention to be to apply the Principle of Maximum Entropy as a prior that would allow the activation function to output better calibrated confidence scores or probabilities in terms of uncertainty.  It uses some formulas I came up with to convert between correlation scores (-1 to 1) and probabilities (0 to 1).  The idea is that certainty can be measured such that 1 = certain, 0 = fully unknown, and -1 = certainly not, and that there is a way to convert between this and 0 to 1 probabilities by setting 0 on the correlation scale to 1/N on the probability scale.  How this is relevant to a neural net is that in some sense, a pre-activation signal of 0 from a given node basically means that everything cancelled out, and that this maps to maximum uncertainty.  Anyways, I don't want to give away too many details given that it's unpublished.
+
+After a lot of time and effort theorizing and then experimenting with many variants of the formula, I think I have something that works.  When I train a network with this new activation function in the output layer on for instance, MNIST, and then test it on notMNIST, the resulting outputs seem much less overconfident than an equivalent network trained with softmax or sigmoid.  However, the accuracy on MNIST itself doesn't change much.
+
+In fact, on most tasks the new activation function gets very similar results to softmax when used in just the output layer.  So, I'm not sure how useful it actually is.
+
+There is one other place where it might affect performance, though at this point I haven't tested this against the larger SOTA models.  I tried using it in place of softmax in the attention heads of a transformer network for language modelling.  The results seem promising, but I don't know if it'll scale or work across more tasks than the toy problem I was able to run on a single GPU.
+
+What I'd like to know from the experienced researchers here is whether or not this project is worth trying to make into a paper and publishing.  While I think I may have something here, I'm not sure if that's my own bias of wanting all the time and effort spent to not be wasted.
+
+Another problem I'm finding is that over the course of the time that I've worked on this project, I've accumulated many variants of the activation function, and determining which one is actually the best on all tasks and scales is proving tricky.  For a while I was concerned that I had several versions that each work situationally, but don't perform better reliably.  So in some sense I have a family of activation functions, some simpler and more elegant than others.
+
+How does one deal with this kind of uncertainty?
+
+Comments:
+- From what I understood you have a replacement for softmax which increases entropy of the output(?). 
+
+Some easy to try experiments to further verify your approach.
+1. Try on cifar-100 using different models such as resnet, vgg and densenet measure calibration error for in-distribution test samples. I'm sure if you are inducing entropy you'll get a better performance than uncalibrated baseline. Perhaps you can also compare your results to Entropy Regularisation(Pererya et al.)
+2. Evaluation on out-of-distribution and under distribution shift(natural, synthetic)
+3. I'd avoid transformer evaluation(for vision) as this side is quite fresh and existing methods might not use them. 
+4. Ideally if you have a a formal definition of your activation and it only differs in some hyperparam you can select this hyperparam using validation set. Else, if possible learn it as well. But, heuristically choosing one is a red flag in my eyes unless you can support it good reasoning. 
+
+Feel free to dm me, I have some experience with the problem of calibrating neural network predictions.
+- What kind of uncertainty are you trying to measure? Out of distribution?
+- This looks cool
+- So, the train on MNIST and test on notMNIST as a task is meant to show the out of distribution uncertainty in a sense.  However, the activation function concept itself is not about measuring uncertainty separately like in a Bayesian Neural Net.  Rather it's about using prior information about the expected uncertainty given the number of classes as a way to align the output probabilities so that they make more sense.
+- I'm afraid I'm having trouble following the work you have done. You might write a short paper or blog post to document your idea, because that would help open up a dialog if you want community feedback.
+- This sounds like a Bayesian posterior a bit.  The observables being the preactivations (or softmax probabilities) coming in, and you want calibrated probability estimates on the output, softened by priors and external parameters.  Could you formulate it like  that?   What concerns me is that whatever is included in a loss function to be optimized will always lead to overconfident prediction.  Unclear to me how to correct for that without out of sample data, but maybe that is your goal?
+
+Trained in sample implied probabilities are too confident, as there is always a train test gap.  As an empirical procedure I would measure distributions on the out of sample data, and then fit a linear-in-logodds model (possibly with non uniform sample weighting) between inputs (predicted scores) and outputs (out of sample labels)

@@ -1,0 +1,75 @@
+URL: https://www.linkedin.com/posts/sanbao-su_icra2023-activity-7022394658039164928-AAkI
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sanbao Su的动态
+Sanbao Su
+
+SDE @Google | Pre SDE @ Huawei | Pre Intern @Amazon, Google, Bosch, Cadence
+
+2 年
+
+We are thrilled to announce that our paper "Uncertainty Quantification of Collaborative Detection for Self-Driving" has been accepted by the International Conference on Robotics and Automation (ICRA) 2023! This is a huge achievement for our team, and we are excited to share our research with the community. Thanks to the ICRA review committee for recognizing the importance of our work. Looking forward to presenting it at #ICRA2023 in London.
+
+Multi-agent collaborative object detection has been proposed to leverage the viewpoints of other agents to improve the detection accuracy compared with the individual viewpoint. However, connected and autonomous vehicles (CAVs) may still have uncertainties on object detection due to out-of-distribution objects, sensor measurement noise, or poor weather. In this work, we propose a novel uncertainty quantification method, called Double-M Quantification, to estimate the uncertainty of collaborative object detection. Our method captures both the epistemic uncertainty and aleatoric uncertainty with one inference based on the offline Double-M training process. And it can be used with different collaborative object detectors. The experiments on V2X-Sim data set show that our method can achieve great improvement in uncertainty score and accuracy score, compared with the state-of-the-art uncertainty quantification.
+
+Website: https://lnkd.in/emEdquwK
+Paper: https://lnkd.in/eDg6ikjt
+Github: https://lnkd.in/erAQkirT
+V2X-Sim: https://lnkd.in/ePaq26CG
+
+16
+1 条评论
+赞
+评论
+分享
+Yao Duan
+
+Ph.D. | Application Scientist | Semiconductors | Nanophotonics
+
+2 年
+
+Congratulations!
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+575 位关注者
+
+10 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+

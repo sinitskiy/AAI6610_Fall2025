@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11mmyw3/machine_learning_on_omics_data_online_course/
+Title: Machine learning on omics data online course
+
+Content:
+I would like to find an online course that covers machine learning approaches (random forest, NLP, MLP, deep learning etc.), and best practices on biological (preferably omics) data. I searched through Coursera, but I just couldn’t find the right one for me. Do you have any suggestions?
+
+Comments:
+- [Omicslogic](https://learn.omicslogic.com/) has a bunch of very nice courses on analyizing biological omics data
+- Manolis Kellis has some course lectures on YouTube that look good.
+- Thanks everyone!
+- Theres one by yash gupta on udemy you can try. Also the AWS machine learning courses and subsequent certification cover many aspects with the majority focused on modelling/explanation of various algorithms and use cases for them (which surprised me since i assumed it would all be focused on AWS services).
+- How much are you willing to pay for such a course?
+- There are many institutes that provide really good courses. So, I think it will be better if you look for options too. I’ll share the list of other institutes with you,  
+1. NIIT  
+2. COURSERA  
+3. UpGrad  
+4. EdX  
+5. Udemy
+- they have a bundle of great courses!, but do you know free courses?
+- $3.50
+- Well, the company I work for covers it, so up to 50-100$ per month

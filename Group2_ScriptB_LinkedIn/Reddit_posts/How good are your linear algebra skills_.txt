@@ -1,0 +1,47 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hxt0wl/how_good_are_your_linear_algebra_skills/
+Title: How good are your linear algebra skills?
+
+Content:
+Started my masters in computer science in August. Bachelors was in chemistry so I took up to diff eq but never a full linear algebra class. I’m still familiar with a lot of the concepts as they are used in higher level science classes, but in my machine learning class I’m kind of having to teach myself a decent bit as I go. Maybe it’s me over analyzing and wanting to know the deep concepts behind everything I learn, and I’m sure in the real world these pure mathematical ideas are rarely talked about, but I know having a strong understanding of core concepts of a field help you succeed in that field more naturally as it begins becoming second nature.
+
+Should I lighten my course load to take a linear algebra class or do you think my basic understanding (although not knowing how basic that is) will likely be good enough?
+
+Comments:
+- Linear algebra is the basis of ML. Your data tables are matrices. The math you do with them (scalars, transpose, etc) is the type of math under the hood in ML. You don’t need to be a master of lin alg but you need to understand the concepts. I had a terrible Lin alg prof when I did my MS in Data Science but once I got to my ML classes, it clicked for why we had to learn it. And I was glad I did. That being said we probably spent about 15 hours of class time (3 hours per class 1 time per week for 5 weeks) on Lin alg to give you an idea of how deep to go. (The other 5 weeks of the class was spent reviewing calculus.)
+- As a mathematician, I have to apologize for our pedagogy; we definitely should have taught you linear algebra before differential equations. There are stupid and historical reasons this isn't the case. 
+
+There are free courses out there that cover a good amount. I think MIT has an open course, probably out of Gilbert Strang's book. This likely has good treatment of stuff like abstract vector spaces, linear transformations, and singular value decomposition, which are most of what you need to know for ML.
+- [deleted]
+- Definitely take linear algebra. It's a major cornerstone of data science because it provides the mathematical foundation for most data manipulation, analysis, and machine learning algorithms.
+
+Also, I agree with previous poster that LA makes more advanced econometric and statistics courses easier. 
+
+Honestly, I've forgotten most of the more technical aspects of the linear algebra that I once knew. But I still have the intuition that I apply to basic problem solving every day. Linear algebra opens the door to tools that allow you to model relationships, reduce computational complexity, and facilitate the interpretation of large, complex datasets.
+- Being able to read linear algebra like your native language, and to use high level matrix packages like CVXPY & NumPy.MatLib is critical.
+
+Knowing how to write an algorithm to compute the SVD or QR decomposition is not as important & not where I would spend my time.
+
+My advice for really learning linear algebra: understand the notation extremely well (especially matrix vector, matrix matrix, vector products), watch 3 Blue 1 Brown's video series on linear algebra, read relevant software docs.
+- Tip top, my background is in pure math but my advisor was an applied guy so I can compute a JCF *and* an SVD. I'll be signing autographs from 3-4 on Saturday.
+
+It doesn't always help *directly*, but when it does it really does. We worked on a hybrid computer vision/robotics project a while ago... knowing my linear algebra helped a little with the former, but a ton with the latter. There weren't any libraries to do specifically what we wanted, unlike with the vision part of it. Computing poses for the robot/camera was all just linear algebra, and doing this as efficiently as possible wasn't the bottleneck, so hand-coding them naively using Numpy matrix operations on the robot's joint angle readings worked great.
+
+Edit: I still have to take 2 minutes to work out which way a change of basis matrix should go every time it comes up though, lol. Otherwise it's a coin flip whether I'll get it right or backwards.
+- You don’t need a deep understanding of vector spaces the way a mathematician does. Simply understanding matrix multiplication, factorization, inverses, and eigenvalues / eigenvectors would go a long way. The reason is that many statistics and machine learning books use linear algebra to concisely represent transformations on a data matrix X.
+- I’m terrible at statistics but so are my stakeholders. It has never held me back in my career
+- I'd suggest taking a pragmatic approach by first considering what you want to do with ML. If you want to go the academic route and really contribute to the field or write optimal software packages, advanced linear algebra knowledge is a must as all your data are essentially matrices. If you want to make cool pipelines in practice, coasting on the current academic meta so to speak, just stick to the absolute essentials (perhaps a couple of lectures online) and focus on accumulating a good working knowledge of current algorithms, their applicability and how to create scalable software with it. Good luck!
+- OP, which masters degree are you doing? I’m between OMSCS or data science masters from Berkeley. Curious to hear your thoughts and your experience
+- Pretty good! You should take some undergrad and grad level classes, LA is very useful, but it’s also a very fun subject! My favorite in undergrad and grad! I wish if I ever get a PhD it’s in a topic in LA!
+- Not as good as I'd hope. I've learned and forgotten the stuff many times. I think in reality, i don't think most people use it in their DS work. Yes I know that's the language of many models, but you don't really need to understand quantum mechanics to use a computer either, although it's relevant for a computer to work.
+- Linear algebra is literally the cornerstone of all math involving datasets
+- You should take a linalg course
+- Look if it’s tripping you up it’s very fucking simple but the thing is is you haven’t practiced it enough just commit even after the class if you’re like oh I passed it. It’s not enough master it. The great thing about math is it’s black and white.
+- Take linear algebra, it’s very very important for ML
+- I’ve been in a field/discipline that relies heavily on linear algebra for over a decade. I took linear algebra 30 years ago and learned nothing because I didn’t apply it for 20 years. I could really use refresher course. You should definitely take the courses and make LA part of your dna.
+- Very. I was a pure math major in undergrad though before my MS. It’s very important and useful!
+- Enough to read matrix notation
+- You should definitely spare the time and effort to take LA before digging deeper into ML concepts. It's bread and butter, and it will allow you to focus on the concepts behind the algorithms, otherwise, it will distract you, as you'll keep chasing the LA understanding.
+
+
+You can do it without, but it's far from ideal.

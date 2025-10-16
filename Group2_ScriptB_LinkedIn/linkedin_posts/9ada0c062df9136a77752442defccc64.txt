@@ -1,0 +1,38 @@
+URL: https://www.linkedin.com/posts/vit-d_llm-agents-are-undoubtedly-one-of-the-activity-7230299614485114880-ght_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vitalii Duk的动态
+Vitalii Duk
+
+Founder & CEO @ Dynamiq - Building AI Agents
+
+1 年
+
+🤖 LLM agents are undoubtedly one of the most exciting innovations in AI today. The potential they hold is immense, but bringing them into production environments is not without its challenges.
+
+One of the most significant drawbacks is their lack of predictability and determinism in handling inputs and outputs. For businesses, this unpredictability is a red flag. Imagine entrusting your most critical tasks to a tool that might change its actions with just a slight variation in task definition. That’s a risk most businesses can't afford to take.
+
+This unpredictability is precisely why industries like aviation avoid relying on neural networks or similar ML approaches. Safety-critical systems require absolute reliability, something that probabilistic models struggle to guarantee. 
+
+LLMs, by design, are probabilistic - they predict the next token based on learned probabilities from their training data. While this approach works well in many scenarios, it poses a problem for tasks that demand consistency and reliability.
+
+So, how do we address this? 🤔
+
+One promising approach is incorporating structured text generation into key components of LLM agents, such as action planning. OpenAI's recent advancements in structured JSON generation are a step in the right direction, making LLM agents more predictable and reliable.
+
+This should be combined with the development of comprehensive self-correcting loops within agents. It could include an agent-critic mechanism, where one agent's actions are scrutinized by another, helping to ensure more accurate and consistent outputs.
+
+While LLM agents have come a long way, there’s still much work to be done to make them reliable tools for business-critical applications. By focusing on these areas, we can move closer to creating AI agents that businesses can trust. 
+
+That's exactly the problem we spend countless days an

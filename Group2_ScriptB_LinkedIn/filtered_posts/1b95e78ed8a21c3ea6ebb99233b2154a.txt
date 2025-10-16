@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/anthony-alcaraz-b80763155_understanding-the-bi-face-nature-of-agentic-activity-7284515056950652929-8hSY
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anthony Alcaraz的动态
+Anthony Alcaraz
+
+Senior AI/ML Strategist @AWS | Business Angel | Enterprise AI Partnerships
+
+8 个月  已编辑
+
+Understanding the Bi-Face Nature of Agentic Reasoning Under Uncertainty in Modern AI Systems 🌓 
+
+In AI systems, uncertainty manifests in multiple distinct forms that can trigger different types of reasoning responses. Primary among these is epistemic uncertainty - gaps in knowledge or understanding that arise when a system encounters situations where its existing knowledge base is insufficient or incomplete. 
+
+The second major category is aleatoric uncertainty, which stems from the inherent randomness or variability in the phenomena being analyzed, such as fluctuations in experimental conditions or natural variations in biological systems.
+
+A third, more subtle form of uncertainty emerges from the integration process itself - what we might call compositional uncertainty. 
+
+The Search-o1 framework reveals how these different types of uncertainty can trigger specific cognitive responses in AI systems. 
+
+First, symbolic reasoning actually becomes more crucial, not less, when dealing with epistemic uncertainty. The Search-o1 framework demonstrates that structured knowledge representations, particularly through knowledge graphs, provide essential scaffolding for navigating uncertain situations. 
+Rather than abandoning structure in the face of ambiguity, the system uses symbolic frameworks to systematically explore and resolve uncertainties through directed queries and information integration.
+
+Second, dynamic interaction between knowledge retrieval and reasoning processes are crucial. The framework's agentic search mechanism shows how uncertainty triggers can be systematically addressed through structured knowledge acquisition. This process isn't simply reactive; it maintains coherent reasoning chains while incorporating new information, demonstrating how structured approaches can facilitate rather than hin

@@ -1,0 +1,10 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/jg1hc3/r_neurosymbolic_neurodegenerative_disease/
+Title: [R] Neuro-symbolic Neurodegenerative Disease Modeling as Probabilistic Programmed Deep Kernels
+
+Content:
+**Abstract:** We present a probabilistic programmed deep kernel learning approach to personalized, predictive modeling of neurodegenerative diseases. Our analysis considers a spectrum of neural and symbolic machine learning approaches, which we assess for predictive performance and important medical AI properties such as interpretability, uncertainty reasoning, data-efficiency, and leveraging domain knowledge. Our Bayesian approach combines the flexibility of Gaussian processes with the structural power of neural networks to model biomarker progressions, without needing clinical labels for training. We run evaluations on the problem of Alzheimer's disease prediction, yielding results surpassing deep learning and with the practical advantages of Bayesian non-parametrics and probabilistic programming.
+
+Paper link: [https://arxiv.org/abs/2009.07738](https://arxiv.org/abs/2009.07738)
+
+Comments:

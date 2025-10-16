@@ -1,0 +1,11 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1botuqa/exploring_thecvf_papers_with_abstract/
+Title: Exploring thecvf papers with abstract
+
+Content:
+When I was exploring the papers on the openaccess.thecvf.com website, I was confused with that I can’t read abstract text without leaving the current page.
+So, I developed a Chrome/Edge extension for showing the abstract text in the paper list page.
+
+Extension link: [https://github.com/dw-dengwei/thecvf-abstract-viewer](https://github.com/dw-dengwei/thecvf-abstract-viewer)
+
+Comments:

@@ -1,0 +1,58 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1hyxp5v/how_are_you_using_ai_for_your_research/
+Title: How are you using AI for your research?
+
+Content:
+This question is intended to be broad because I hope to gain a variety of perspectives on the potential for AI to enhance and accelerate research in the field. Whether it's generating code for analysis or summarizing articles with LLMs, exploring literature more efficiently, using tools like AlphaFold or genomic LLMs for specific problems, or applying traditional machine learning techniques to make discoveries. Whatever way you use AI, feel free to share it.
+
+Comments:
+- I'm using both Perplexity and Claude or ChatGPT for code. I am already a capable coder and I try to proof I can still code by myself from time to time. That being said, Claude and ChatGPT are faster than me, and when it comes to work, what matters is the result. So I prefer for the AI to do my workflows when required. Sometimes they are messy and not exactly what I want so I edit the code by myself and troubleshoot the thing as well as I can. And, well, Perplexity is for bibliography research. It has helped me quite a lot these days.
+- I upload all the PDFs of articles I plan to cite and ask where whatever piece of evidence I'm referring to came from. I do have to check afterwards bc it doesn't always work
+- I use its mention to figure out what talks to walk out of.
+- Not research, but development:
+
+For coding I use it to explain error messages for me. Or to do things I know how to do, bit am too lazy, like cleaning up my code and removing redundancy in the code. 
+
+For me, in the end, reading the docs is faster than letting it generate code.
+- GitHub CoPilot is always open in my vscode, I use it constantly for coding
+- i use cursor ai you still have to baby sit LMs when they write code. wouldn’t treat it any different from a highly advanced autocomplete. I find perplexity is quite helpful for literature search
+- Perplexity for debugging error messages for running new tools that are giving me trouble. I've also used it to discover new packages/tools to use for specific tasks. Kinda just as a more polite stack overflow.
+- [removed]
+- I'll use it when it can at minimum summarise one of my journal articles correctly. until then, I don't trust it to be anywhere near my data.  
+  
+I might consider using it for tedious things like matching rsid to genes, changing genomic build, identifying variant proxies, etc. But then I'll need to code some validation tools to make sure it is accurate.. which doesn't save me any time.
+- Do any of you ever think of the energy consumption?
+
+Do you consider that a chatgpt query needs 10x the energy of a simple Google search?
+- Are people really heavily relying on LLMs to do extremely basic tasks like parse error messages? I feel like half of what I know about the tools I use comes from figuring out the error messages.
+- Hey everyone!
+
+AI's transforming research, and I'm seeing that firsthand. I use LLMs extensively for literature reviews (great for summarizing papers and generating research questions!), code, and data analysis – it's a huge efficiency boost. But managing the actual research process itself can still feel clunky.
+
+I've personally struggled to keep everything organized – papers, notes, writing – across different tools. That's why I'm exploring options like Paper Pilot (xyz), which looks promising with its integrated research engine, collaborative boards, and AI writing assistance. The centralized research, AI-powered summaries, and LaTeX support are particularly attractive.
+
+That said, the perfect tool doesn't exist! Other options like Consensus AI (for evidence synthesis) and SciSpace (for writing) might be better fits depending on your workflow. I'd recommend checking out some free trials to see what works best for you.
+
+Good luck with your research!
+- For similar reasons, I've created [Zotai.app](http://Zotai.app) \- a tool that lets you create tables similar to excel sheets for your paper list, write personal notes, talk to them through AI, and even communicate with your PDF annotations and personalized notes. The best part is that it seamlessly integrates with Zotero. 
+
+Disclaimer: I am the developer. (Discounts available for students/PhD candidates - email me if interested)
+- Honestly? I’ve been using a mix of stuff depending on how close I am to a deadline 😅
+
+For coding, ChatGPT or Claude when I hit a wall or just wanna sanity-check my logic. Works fine for small scripts but yeah, it definitely spits out weird stuff sometimes.
+
+For lit review, I’ve been using SciSpace lately. It’s pretty handy when I need a quick summary of a paper or wanna check if I even understood the main point before I dive deep. Won’t replace reading but helps avoid that 'I read this whole thing and still don’t get it' vibe.
+
+Tried Perplexity too… hit or miss tbh. Good for random searches, but I wouldn’t trust it blindly for citations.
+
+Not gonna lie, AI’s saved me in some crunch moments, but I still double-check everything, the hallucinations are real 
+
+Curious, anyone else here using AI for stuff other than coding and summarising?
+- I use AI in my research mostly to save time on reading and organizing papers. on my mac, I rely on elephas because it makes all my PDFs and notes searchable and lets me highlight and get quick summaries with citations easily. I also turn to Perplexity for fast fact checks, Zotero for managing references, and Connected Papers when I want to map out related work. Together these tools help me get through literature reviews faster and keep everything more organized.
+- Do you find perplexity works well for you for the bibliography? I was super excited when I found out about it, but every time I've tried it for any kind of literature search it's been terrible
+- Same here. I on the contrary am a less experienced coder, so before ChatGPT most times I had to write something I would look an example on stack overflow or similar, then read the documentation to understand the code and adapt it to my needs. I can do the equivalent with ChatGPT in minutes. It rarely gets it right on the 1st try, but for me fixing AI generated code is a lot faster than writing it from scratch. 
+
+I've found Perplexity to be hit or miss. Lately I've been tryin Elicit and it's been really useful to find relevant papers.
+- srsly, it's such a red flag, especially for anything quantitative
+- True. Not sure how it would help research. If it does, they’d be on the soon to be replaced by AI list.
+- do you find it worth the price?

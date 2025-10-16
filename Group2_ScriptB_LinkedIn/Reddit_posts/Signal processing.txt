@@ -1,0 +1,10 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wxilt2/signal_processing/
+Title: Signal processing
+
+Content:
+Can somebody maybe tell me what the most classical signal processing algorithms are to filter noisy data.I was also wondering how difficult it is to master machine learning in Python and if somebody knows a course that's free but recognized by institutions.
+.
+
+Comments:
+- Fourier transform followed by filtering frequencies you know are noise? Idk I've never done actual signal processing but i remember this form a course I took long ago.

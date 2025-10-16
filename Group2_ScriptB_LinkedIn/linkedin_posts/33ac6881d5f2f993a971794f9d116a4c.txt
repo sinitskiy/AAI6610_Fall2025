@@ -1,0 +1,78 @@
+URL: https://www.linkedin.com/posts/xinyue-ye-225406151_data-quality-and-uncertainty-issues-in-flood-activity-7365006962536714240-seMW
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Xinyue Ye的动态
+Xinyue Ye
+
+Endowed Shelby Distinguished Professor in GeoAI, University of Alabama; Fellow and Distinguished Scholar, American Association of Geographers; Fellow, Royal Geographical Society
+
+1 个月  已编辑
+
+🌊 New Publication: Improving Flood Prediction in a Geospatial Uncertain World 🌊
+
+Floods are becoming more frequent and severe, and predicting them accurately is a huge challenge. Our new paper takes a closer look at one important question: How reliable is the data we use to forecast floods? Xiao Huang
+
+Yu, J., Li, Y., Huang, X., & Ye, X. (2025). Data quality and uncertainty issues in flood prediction: a systematic review. International Journal of Digital Earth, 18(1), 2495738.
+
+We found that:
+ ✔️ Flood prediction depends on many data sources—rainfall, river flows, infrastructure, and land features.
+ ✔️ These datasets often have gaps, inconsistencies, or uncertainties, especially in complex environments.
+💡 Looking ahead, we see big opportunities in:
+ ✔️ Using AI and new technologies to improve accuracy.
+ ✔️ Building real-time and integrated datasets.
+ ✔️ Paying more attention to regions that remain understudied.
+Our review not only maps the challenges but also points toward more reliable flood forecasting for the future.
+
+📖 Read the full study here: https://lnkd.in/g3gEJfUp
+
+Data quality and uncertainty issues in flood prediction: a systematic review
+tandfonline.com
+74
+3 条评论
+赞
+评论
+分享
+ABIMBOLA ADESOJI-ABE
+
+FNAEGE, MIAEG, MNMGS Lecturer & Researcher |Engineering Geologist | Advancing GIS/RS Solutions for Flood, Erosion & Climate Risk
+
+2 周
+
+Congratulations to the team
+
+赞
+回复
+1 次回应
+Er. Aditya Singh
+
+Independent Researcher, Editorial Review Board(IJSSMET, IJSDS, IJPAE, IJESGT, IJDSST, IJRLEDM)Reviewer(Journals)
+
+1 个月
+
+Congratulations, Prof. Xinyue and team! 👏 
+
+赞
+回复
+1 次回应
+Z. George Xue
+
+Professor @ Louisiana State University | Coastal Expertise
+
+1 个月
+
+Data quality is most important for forecasts and mitigation!
+
+赞
+回复
+1 次

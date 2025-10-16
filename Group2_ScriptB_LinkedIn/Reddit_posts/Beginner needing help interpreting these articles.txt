@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wxqg24/beginner_needing_help_interpreting_these_articles/
+Title: Beginner needing help interpreting these articles
+
+Content:
+TD/LR: I need help understanding what these projects are doing/mean? 
+
+&#x200B;
+
+My assignment was to see if I can incorporate any of the methods used in [this article](https://academic.oup.com/bib/article-abstract/22/5/bbab054/6184410?redirectedFrom=fulltext), into [this project](https://pubs.acs.org/doi/10.1021/acs.jcim.9b00457?cookieSet=1). 
+
+The first article: resulted that using a Gradient boosting decision tree algorithm in conjunction with the MIN + GB simulation protocol achieved the best performance. 
+
+What does a MIN + GB simulation protocol mean? 
+
+Second article: Uses a gradient boosting machine learning model with this explicit feature attribution can predict binding affinity with high accuracy. 
+
+What does explicit feature attribution mean? 
+
+Thank you if you can help me, anything information would be great.
+
+Comments:

@@ -1,0 +1,38 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c1v5vc/career_roadmap_and_advice_please_transitioning/
+Title: Career roadmap and advice please. Transitioning from Academia to DS.
+
+Content:
+Hello!
+
+I'm 46, Masters in Operations Research,  BS in Pure and Applied Math. I have been focusing on an academic career for a while, but lost my full-time professorship because I had problems with grading and meeting deadlines (I suffer from clinical depression). I am currently an adjunct math professor and cannot pay my bills. I love Applied Mathematics:, MDP, Game Theory, Simulation and I want to transition into some kind of Data Science field where I can learn more and utilize knowledge I have from grad school and more. I am not particularly interested in Finance or Medicine, and would find it much more interesting to work for physicists, chemists, biologists, economists, or other scientists. I am also very concerned about being able to acquire a career of this sort (and keeping it considering my depression). 
+
+My current plan is to finish 4 Coursera specializations: Python, Data Science, Data Science with R, Intermediate Data Science; 3 textbooks: Probability and Statistics for Engineers (mostly a review, but my education heavily learns toward Modeling and Probability Theory rather than Statistics), Linear Models with R, and Acing the Data Science Interview. After doing a few projects and developing a portfolio, I hope that I can find an entry level position. Then, over the next 2-3 years I would like to study Machine Learning and finding the intersection with that and my OR background --Hopefully such a field exists. At this time I may get a second masters or maybe finish my PhD. Finally, I would hope to have a career when I turn 50.
+
+I understand my depression is a big problem, but I am not going to just go on welfare and eek out an existence for the rest of my life. If you will, please look past this issue for the moment.
+
+My current questions are: 
+1) What is your opinion of my plan? Is it viable? What roadblocks might I encounter?
+2) What job titles should I apply for as an entry-level data scientist? Data Analyst, Data Scientist, Data Engineer, MLOps, MLE.... I really don't know where I would fit.
+3) Although I want to work for scientists, is this domain viable? Should I apply for my common domains like FAANG, Finance, or Medicine?
+4) Ultimately, what job title should I be aiming for considering my interests.
+
+Lastly, any other advice would be greatly appreciated!
+
+Thank you!
+
+Comments:
+- I am not too knowledgeable about transitioning from academia to industry but I can probably comment on the intersection between operations research and ML. Its a very sought after field in supply chain planning companies. Its quite exciting to work in the field if you can solve problems that keep arising there. 
+
+The major roadblock I see is the transition from academia to industry and the fact that you will have a gap of a few months/years before you intend to pick your career up again. 
+
+Good luck!
+- In very brief, I would first suggest applying to IT/ ML/ AI consulting firms. Your skills will be useful on many projects, you can learn in a more structured way from those many projects. In consulting I met several consultants with a background similar to yours, and they were doing well.
+- Is his plan ok?
+- Best wishes with your career journey
+- I am not intending a gap, but I figure it might take that about of time to develop my knowledge and skills to that level. Furthermore, as of now, I have 0 experience working in DS/DA. I figure that I probably need some experience before going for my career-level job.
+
+Supply chain problems would certainly be fun for me. I enjoyed Network Flows and it would be very interesting to see how I could apply Machine Learning to that. I have also used simulation for inventory control problems, but not Network Flows yet.
+- If you need referrals, I work for a supply chain consulting company in a role that combines data science and operations research.
+- That would be awesome! I don't know if I am prepared yet for the role as I am still early on my educational path. I should be closer to that goal near the end of the summer. It would be great to have the contact whenever possible,  however.
+- DM me.

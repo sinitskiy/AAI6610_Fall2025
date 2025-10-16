@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/pendo-manjele-65478a140_day-1-of-the-dli-indaba-included-a-series-activity-7236341998624882689-dPaZ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Pendo Manjele的动态
+Pendo Manjele
+
+Data Scientist | Financial Services | AI Community Builder | TEDx Speaker
+
+1 年
+
+Day 1 of the DLI Indaba included a series of rich and insightful sessions. I attended three key discussions:
+
+Session 1: Globalizing Algorithmic Fairness and Why It Matters - Hosted by Awa Dieng Google DeepMind
+
+Awa highlighted the importance of placing AI fairness in the context of Africa and considering its unique colonial history. The session discussed major challenges, including infrastructure limitations and socio-economic disparities.
+
+Key recommendations included:
+- Tailoring fairness criteria to the local context
+- Awareness of historical biases towards western technology
+- Exercising caution with pre-trained models
+
+Key takeaways were:
+- Emphasizing the collection of representative data
+- Clearly defining fairness outcomes
+- Developing algorithms with a thorough understanding of African contexts
+- Involving local communities in the process
+- Addressing deep-rooted structural and social challenges impacting AI fairness
+
+Session 2: Probabilistic Thinking and Programming  Hosted by Kira Düsterwald & James Allingham
+
+This session provided a comprehensive overview of probabilistic distributions, which are powerful tools for Machine Learning using Jax functions. It laid a solid foundation for reasoning about probabilistic models and events, covering probability distributions, random variables, and Bayesian reasoning.
+
+Session 3: Limitations of Large Language Models Hosted by Flora Tasse NVIDIA
+This session delved into the capabilities and limitations of Large Language Models (LLMs) and introduced the augmentation of Foundation LLMs with RAG. It discussed the benefits and limitations of this approach and included a basic implementation of RAG to LLM.
+
+32
+1 条评论
+赞
+评论
+分享
+Patricia Sheehan Global Director, AstraZeneca
+
+Founder, Principal Consultant MARKETLINK
+
+1 年
+
+Thank you for sharing!
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+5,850 位

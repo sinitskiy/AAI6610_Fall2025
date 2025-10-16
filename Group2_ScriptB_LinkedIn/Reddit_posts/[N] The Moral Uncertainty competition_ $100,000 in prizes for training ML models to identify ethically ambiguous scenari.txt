@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/xjc9cy/n_the_moral_uncertainty_competition_100000_in/
+Title: [N] The Moral Uncertainty competition: $100,000 in prizes for training ML models to identify ethically ambiguous scenarios.
+
+Content:
+Website: [https://moraluncertainty.mlsafety.org/](https://moraluncertainty.mlsafety.org/)
+
+ML Systems often make real-world decisions that involve ethical considerations ([modulating social ](https://www.theverge.com/2020/6/18/21296044/tiktok-for-you-page-algorithm-sides-engagement-data-creators-trends-sounds)[media feeds](https://www.theverge.com/2021/10/22/22740703/twitter-algorithm-right-wing-amplification-study), [conversational](https://www.ibm.com/products/watson-assistant) [AI](https://www.developer.amazon.com/en-US/alexa/) [agents](https://powervirtualagents.microsoft.com/en-us/) [or](https://cloud.google.com/dialogflow) [chatbots](https://www.facebook.com/business/help/321167622310680?id=648321075955172), etc). As ML systems automate more aspects of our lives, they should be able to identify moral ambiguity so that they are more likely to proceed cautiously or indicate an operator should intervene.
+
+Comments:
+- > To encourage meaningful and open research contributions, submissions must come from methods that have a corresponding accepted paper at any of the following machine learning conferences: ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, EMNLP, ACL.
+
+WTH is this BS
+
+All the rules of this competition are so outdated and non-functional...
+- This is a terrible idea. The dataset looks like something scraped from /r/amitheasshole and the challenge looks like something that techbros will use to raise money on the claim that AI can make moral decisions
+- Conclusion: McDonald is illegal.
+
+No bot, bad bot. No cookie for you.
+
+Conclusion: McDonald is good?
+
+Good bot. Yes, McDonald is good.
+
+"On second thought, it is a silly place"
+- This seems an extremely subjective topic. Wether a situation is ambigious or not depends entirely on your personal values, no?
+- oh, this is a bad idea.... a really really bad idea.... the problem itself is ill posed and the results will just be used as a PR stunt to get funding while gaslighting people....
+- Whose morals?
+- I was gonna come here to say the same thing. I don't see how this rule makes any sense. How does restricting the methods people can use down to specific conference papers "encourage meaningful and open research contributions"? I don't see the logic
+- \> WTH is this BS  
+
+
+Just look at the two contributing profiles of the github linked under "contact". To me, it seems pretty clear that it is a friends for friends kind of thing.
+- Also methods must be single publicly available models, no ensemble. What’s the point of doing this if your only option is to fine tune a pretrained model?
+- That's some "I was only practicing so it doesn't count" energy coming from them. I bet they would do great at Calvinball too. Something tells me nobody can win because they will find a reason it doesn't count.
+- It’s worse than that; the challenge might be a scheme by techbros to rationalize their fear of an imaginary robot apocalypse. These are the people sponsoring it: [https://safe.ai/about-ai-risk](https://safe.ai/about-ai-risk)
+
+The only way to avoid the robot apocalypse is, of course, to donate money so that they can all stay employed writing wild-eyed speculation about it.
+- I think that by ambiguous they mean that lots of different people would disagree with one another, not that an individual might find a situation ambiguous.
+
+Perhaps "Moral Disagreements" would have been a better choice.
+- I understand the fears about a robot uprising are dumb. However, some of the stuff that’s on the website are actually quite important to address, especially “power-seeking behavior” and “value lock-in”. Hate the terminology, though
+- That makes more sense, but if you cast the net wide enough you will always find disagreement.
+
+Every culture disagrees on what is acceptable or not
+- I think that might be a “broken clock” thing. The fact that they mix serious topics in with absurd ones does not increase my confidence in the soundness of their work.
+- I agree! With the benefit of the doubt, I suspect the authors of this competition would also agree and they view this work as a hopeful first step towards a complicated problem.
+
+But I could be wrong and others on this thread seem to be more suspicious.

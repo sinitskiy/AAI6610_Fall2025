@@ -1,0 +1,15 @@
+標題: Causal evidence for a domain-specific role of left superior frontal sulcus in human perceptual decision-making
+
+摘要: Humans and animals can flexibly choose their actions based on different information, ranging from objective states of the environment (e.g., apples are bigger than cherries) to subjective preferences (e.g., cherries are tastier than apples). Whether the brain instantiates these different choices by recruiting either specialised or shared neural circuitry remains debated. Specifically, domain-general accounts of prefrontal cortex (PFC) function propose that prefrontal areas flexibly process either perceptual or value-based evidence depending on what is required for the present choice, whereas domain-specific theories posit that PFC sub-areas, such as the left superior frontal sulcus (SFS), selectively integrate evidence relevant for perceptual decisions. Here we comprehensively test the functional role of the left SFS for choices based on perceptual and value-based evidence, by combining fMRI with a behavioural paradigm, computational modelling, and transcranial magnetic stimulation. Confirming predictions by a sequential sampling model, we show that TMS-induced excitability reduction of the left SFS selectively changes the processing of decision-relevant perceptual information and associated neural processes. In contrast, value-based decision making and associated neural processes remain unaffected. This specificity of SFS function is evident at all levels of analysis (behavioural, computational, and neural, including functional connectivity), demonstrating that the left SFS causally contributes to evidence integration for perceptual but not value-based decisions.
+
+發布日期: 2025-09-04
+
+DOI: 10.1101/2021.10.04.462977
+
+作者: B, a, r, r, e, t, t, o,  , G, a, r, c, i, a, ,,  , M, ., ;,  , G, r, u, e, s, c, h, o, w, ,,  , M, ., ;,  , M, o, i, s, a, ,,  , M, ., ;,  , P, o, l, a, n, i, a, ,,  , R, ., ;,  , R, u, f, f, ,,  , C, .,  , C, .
+
+類別: neuroscience
+
+PDF路徑: downloaded
+
+下載時間: 2025-09-24 13:24:04

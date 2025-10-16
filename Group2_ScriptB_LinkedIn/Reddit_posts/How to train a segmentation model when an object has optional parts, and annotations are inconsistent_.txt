@@ -1,0 +1,50 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1lyhr92/how_to_train_a_segmentation_model_when_an_object/
+Title: How to train a segmentation model when an object has optional parts, and annotations are inconsistent?
+
+Content:
+**Problem  -** I'm working on a segmentation task involving mini excavator-type machines indoor. These typically have two main parts:
+
+a main body (base + cabin), and
+
+a detachable arm.\[has a specific strip like shape\] 
+
+The problem arises due to inconsistent annotations across datasets:
+
+In my small custom dataset, some images contain only the main body, while others include both the body and arm. Regardless, the full visible machine - whether with or without the arm it is labeled as a single class: "excavator." This is how I want the segmentation to behave.
+
+But in a large standard dataset, only the main body is annotated as "excavator." If the arm appears in an image, it’s labeled as background, since that dataset treats the arm as a separate or irrelevant structure.
+
+So in summary - in that large dataset, some images are correctly labeled (if only main body is present). But in others, where both body and arm are visible, the arm is labelled as background by the annotation, even though I want it included as excavator.
+
+**Goal:**  I want to train a model that consistently segments the full excavator - whether or not the arm is visible. When both the body and the arm are present, the model should learn to treat them as a single class.
+
+**Help/Advice Needed :** Has anyone dealt with this kind of challenge before? Where part of the object is: optional / detachable, inconsistently annotated across datasets, and sometimes labeled as background when it should be foreground?
+
+I’d appreciate suggestions on - how to handle this label noise / inconsistency, or what kind of deep learning segmentation models deal with such problems (eg - semi-supervised learning, weak supervision), or relevant papers/tools you’ve found useful. I'm not sure how to frame this problem conceptually, which is making it hard to search for relevant papers or prior work.
+
+Thanks in advance!
+
+
+
+Comments:
+- Garbage in = garbage out.
+
+No way around it. That’s a big reason why AI is expensive for companies to develop.
+
+My best advice is to train a base foundation model on your small dataset, then use it to auto-label the larger dataset. Include some custom code to do this more cleanly by taking advantage of the existing labels in the larger dataset….basically you should only be extending existing masks (adding the arm) and not creating entirely new objects which may be errors from the model.
+
+When I say base foundation model I mean one that already knows the concepts of your objects. Not a requirement but it will help the model generalize
+- Sounds like you simply need to fix your other dataset and add the arm annotation. How can a model autonomously deal with incorrect annotation, if it doesn't know which part is incorrect?
+
+You can alway try training the model only on the correct dataset and then use that to auto-label the incorrect part. Then fix glaring errors by hand and retrain. But that's basically relabeling with extra flavour.
+- This is a classic challenge when integrating datasets with varying annotation schemas! The inconsistency where the arm is sometimes foreground and sometimes background for the same "excavator" class is a direct data quality and annotation pipeline problem. Many teams face this, especially with large, externally sourced datasets. You're trying to achieve consistent segmentation, which means you need consistent ground truth. While methods like weak supervision or semi-supervised learning can help a model learn from noisy labels, a more direct approach might be addressing the \*source\* of the inconsistency in your data. Tools and platforms designed for data annotation and quality control often have features to: 1. \*\*Standardize Labels:\*\* Reconcile conflicting labels across datasets (e.g., re-labeling the arm in the large dataset to be part of the excavator). 2. \*\*Automated Pre-annotation:\*\* Use an initial model to pre-annotate the "missing" parts (like the arm) and then have human annotators quickly review and correct them. This significantly speeds up the process of achieving consistent labels. 3. \*\*Advanced QA/QC Workflows:\*\* Implement robust review processes to ensure new annotations (or re-annotations) align with your desired schema. This kind of problem is exactly what platforms focused on efficient, high-quality data preparation for ML are built to solve, allowing you to quickly harmonize your datasets without manual re-annotation for every single image.
+- Right, makes sense. Extending the masks seems like a possibility. I also need to collect more custom data in that case to be able to train the model..especially to handle the variations in viewpoint and appearance. Thanks!
+- Actually the larger dataset is huge , I cannot afford to annotate it unfortunately,  probably use the larger dataset to learn what the main body is and then fine tune it to the custom data? But I don't think it will be able to adapt well ..
+- Thanks! I’ve useD CVAT and Roboflow but mostly for basic annotation but haven’t explored their full QA/review workflows yet. By any chace do you have any tool suggestions that work well for dealing with such label inconsistencies (especially with model-in-the-loop annotation or label merging).
+- The fact you can't afford to annotate the larger dataset is irrelevant to the problem. If you don't have the data, you won't be able to train a model. There is no free lunch. Take a smaller part you CAN annotate and work with that, idk.
+
+Finetuning using smaller dataset will likely be the same as just training on that dataset. The model will need to relearn that "excavator" is not just a body, but also an arm.
+
+Maybe you can train a body-only model and then subtract to get arm-only dataset and train on that. If arm is much easier to segment, then there is a chance the combination will be decent. Although most likely it will be crap.
+- check dm

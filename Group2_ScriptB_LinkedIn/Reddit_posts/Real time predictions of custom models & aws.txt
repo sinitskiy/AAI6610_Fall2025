@@ -1,0 +1,18 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hankc7/real_time_predictions_of_custom_models_aws/
+Title: Real time predictions of custom models & aws
+
+Content:
+I am someone who is trying to learn how to deploy machine learning models in real time. As of now the current pain points is that my team uses pmmls and java code to deploy models in production. The problem is that the team develops the code in python then rewrites it in java. I think its a lot of extra work and can get out of hand very quickly. 
+
+
+My proposal is to try to make a docker container and then try to figure out how to deploy the scoring model with the python code for feature engineering.
+
+We do have a java application that actually decisions on the models and want our solutions to be fast.
+
+Where can i learn more about how to deploy this and what type of format do i need to deploy my models? I heard that json is better for security reasons but i am not sure how flexible it is as pmmls are pretty hard to work with when it comes to running the transformation from python pickle to pmmls for very niche modules/custom transformers. 
+
+If someone can help explain exactly the workflow that would be very helpful. This is all going to use aws at the end to decision on it.
+
+Comments:
+- Okay wait  so 1. isn’t the whole point of pmml that you don’t have to reinterpret different languages. Why is anything getting rewritten, isnt all you need jpmml to interpret the models output(as a pmml) 2. Can you expand on architecture that is already set up, def some gaps. 3. Aws making the decision? Assume u mean u need to make a decision on what to use, which is fine. Assume this is running serverless and then want to deploy on aws amplify? If so ur already using JSON to connect with api gateway and ur aws lambda functions, decently easy set ups. More info would be great. Plenty of YouTube tutorials, and also I like CHAT to talk with me while I am describing my architectures to give me different alternatives to what I say and weigh the pros and cons of each( always double check ofc but great way to talk through it instead of typing) fyi don’t need docker for amplify

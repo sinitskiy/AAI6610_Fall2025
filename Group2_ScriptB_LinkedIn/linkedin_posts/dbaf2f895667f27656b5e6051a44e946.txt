@@ -1,0 +1,53 @@
+URL: https://www.linkedin.com/posts/orraca_super-weird-times-to-be-alive-and-be-a-practitioner-activity-7354329797168152576-Ob1K
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Javier Orraca-Deatcu的动态
+Javier Orraca-Deatcu
+
+Data Science | MLOps | Open Source
+
+2 个月
+
+Super weird times to be alive and be a practitioner in the ML/AI space... I feel like I'm preaching to the choir but GenAI vendors are not going to tell you this:
+
+"You don't need an LLM for this, you need [well-written SQL, or a logistic regression, or a Bayesian model, etc.] to solve your business problem." So much money and brain power are being thrown at the GenAI / LLM space but for data analysis and data science, core fundamentals w.r.t. munging data and developing end-to-end ML workflows still reigns supreme.
+
+So how can we (analysts, data scientists, MLEs... not necessarily software engineers despite us engineering a lot a software 🤷♂️) make the most of the current state of agentic workflows and GenAI for a lot of the core work we do day to day?
+
+I've read Simon P. Couch's recent blog post on this topic several times and can't recommend it enough 🤌! It highlights so many of the "lessons learned" that I've experienced using LLMs / vector DBs + RAGs / GenAI to augment my work as an R programmer (or Python when the occasion necessitates it!) who really fancies agentic coding tools like Claude Code, Cline, etc.
+
+Great tips here! source: https://lnkd.in/gPECYsnx
+
+281
+18 条评论
+赞
+评论
+分享
+Robert Nyquist
+
+Machine Learning Engineer & Head of Sustainability at Smartr
+
+2 个月
+
+I am trying to be as loud as possible when talking to companies and organizations that there is so much you can do with "regular" machine learning and show companies that do great things.
+
+I think we need to continue to be loud because when companies see that their Agentic flows don't give the results they want they might become sceptical about everything that goes under AI.
+But as always, easier said than done to get companies to understand the importance of having the basics on point :)
+
+赞
+回复
+9 次回应
+Lou Bajuk
+
+Fractional Product Leader and Advisor | Product Strategy and GT

@@ -1,0 +1,62 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/d3iec/best_way_to_strengthen_my_biology_background_for/
+Title: Best way to strengthen my biology background for grad school?
+
+Content:
+Hi Biology Reddit, and apologies for the wall-of-text question below,
+
+I'm an electrical engineer who did some biomedical stuff as an undergrad. I've taken courses in biomedical instrumentation design, and my senior project was on processing EMG signals for use in prosthetics and gait rehabilitation in stroke victims. For the past few years though, I've been working in an almost entirely unrelated field. I've always had a huge interest in how the brain and nervous system works. Projects like [Braingate](http://www.braingate2.org/), and the [MIT retinal implant](http://web.mit.edu/press/2009/microchip-blind-092309.html) as well as all of the advances in prosthetics lately are hugely exciting to me, and I'd love to do any kind of work like this where I could make a difference in people lives. I've also been more and more intrigued by Machine Learning / AI type stuff. 
+
+I've been thinking about going back to school for a graduate program in biomedical engineering or something similar where I can focus on combining my engineering background with my bio-tech interests (some sort of neuroscience program maybe?) 
+
+My problem is, I don't have much of a general biology / neurology background beyond the instrumentation courses and my senior project. Definitely not enough for a graduate program in my opinion. I'm wondering:
+
+* What do you consider necessary background for a graduate program in biotech / biomedical engineering focusing on the brain / nervous system?
+
+* How can someone from a different background (Electrical Engineering) best gain these skills?
+
+* Any good books or online resources you recommend?
+
+**TLDR: Electrical Engineer wants to apply background to studying the brain in grad school? What do I need to know?**
+
+Comments:
+- I'd recommend starting by reading a molecular/cell biology textbook, to learn the language of biology and the basic structure and function of mammalian cells. Molecular Biology of the Cell by Bruce Alberts is a huge book, but it'll give you a really excellent foundation. Honestly, I think anything an undergrad biologist would learn is probably somewhere in that book. 
+
+I can't suggest a good neuroscience textbook, but someone else should suggest one so I can read it. :)
+- MIT has some neat [online](http://ocw.mit.edu/courses/#biological-engineering) [resources](http://ocw.mit.edu/courses/#biology).
+
+bonniemuffin is correct, you need to haul ass to a library and just pick up any interesting books. I know you can pick up entire textbooks on Ophthalmology and Neurology. Just dive in and look up any fuzzy topics online. Biochemistry is your friend. Learn it, love it.
+- [deleted]
+- NIH Pre-Doctoral IRTA.  Look it up.
+- [deleted]
+- Physiology course. Our BME department had a baller one, I know about every body system.
+- If you want to learn about the nervous system, definitely read a general physiology textbook to start. You should be well-versed in the basic stuff like axon conduction, action potential propagation, neuromuscular junctions, synapses, etc.  Most physiological and neural functions rely on ionic flow/depolarization of membranes, so be comfortable with concepts relating to this.  I'm not an expert on the brain, but I imagine you can find a good textbook at your local university library.
+Choose biology books with good detailed images.  It really makes it a lot easier to visualize and remember things.  Good luck!
+- What I would do is spend time reading research articles and see which ones really interest you. Then start zeroing in on the details of the research you enjoy. That's something that will give you a leg up when you start grad school since you'll have to do that sooner or later. Biology in general is so broad, however fun it may be, it's hard to just start learning general biology to prepare for grad school beyond what you learned in your undergrad.
+- I'm a drop out but for some reason I've always remembered: Kingdom, phylum, class, order, family, genus, species; and that The Greg Man Mendell is the modern father of genetics. Oh, and Punnet squares. You can't forget Punnet squares! Let me know if there's anything else you need.
+- Alberts is definitely a good resource.  In fact, my first year of grad school they flat out told us that it was assumed we knew everything in there, so they weren't going to bother going over it again.
+- http://www.amazon.com/Principles-Neural-Science-Eric-Kandel/dp/0838577016
+
+Excellent introductory neurobiology textbook. Highly recommended.
+- Thanks for the recommendation! You seem to be getting a lot of up-votes for it, so I'm guessing your not the only one who thinks it's a good book. I'll check it out at my old college library, and maybe pick up my own copy if I get into it!
+
+I was hoping to find a book like this to pick up the basics. Once I feel comfortable with that, I'll probably take an undergrad neuroscience course at a local school so I have something in my transcripts when I start looking at graduate programs.
+
+Thanks!
+- I've been considering this too. I'm lucky to have a fairly flexible schedule, and to work in a city with a lot of decent schools so I might just have to do this. I was hoping to get things done quickly, but this might be the best way of learning the basics that will also show up on paper (transcripts) when I start looking at grad programs.
+
+At least the school I went to for undergrad has 7-week courses available.
+- Just checked it out. Looks awesome! I'd love to be paid to go to school, but I worry with my background in an unrelated field, I might not be a very competitive candidate. I imagine a lot of students are competing for this kind of opportunity.
+
+Thanks!
+- Haha, I hope so. A lot of people have told me that Electrical Engineering is a hard program, but I worry because the types of things we learn seem so different from what you learn in a biology / general sciences program.
+
+I'll probably take your recommendation on the night courses. The school I went to for undergrad has 7-week quarters / courses, so I can probably pick up a few without taking too much time.
+
+Thanks!
+- Haha, well I'm glad to hear that now then. I'd probably shit myself if I jumped into a grad program now and heard that without warning.
+
+Out of curiosity, what did you study in grad school?
+- Hi there, I just started reading a super-easy neuroscience book so I came back to find this thread and mention it: http://www.amazon.com/Elseviers-Integrated-Neuroscience-STUDENT-CONSULT/dp/0323034098
+
+It's easier and less detailed than a real neuroscience textbook, which means it's great for getting an introduction to the field without committing to reading a 1000-page text. Plus you can get it for <$30.

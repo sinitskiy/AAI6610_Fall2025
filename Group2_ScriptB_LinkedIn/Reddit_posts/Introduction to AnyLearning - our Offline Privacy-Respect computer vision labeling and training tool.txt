@@ -1,0 +1,48 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1honz55/introduction_to_anylearning_our_offline/
+Title: Introduction to AnyLearning - our Offline Privacy-Respect computer vision labeling and training tool
+
+Content:
+After months of development, we've thrilled to introduce **AnyLearning - a desktop app that let you label images and train AI models completely offline.**  
+With AI-assisted labeling, no-code AI model training, and detailed documentation, we want to bring you a no-code, all-in-one tool for developing a computer vision model for your project. After this release, the development of the tool will depend on the valuable feedback from customers. We are selling it with a price of $69 lifetime, and $39 for the first 10 customers (it is a limited offer).  
+  
+**You can try it now here:** [https://anylearning.nrl.ai/](https://anylearning.nrl.ai/) .
+
+**🔒 There are some reasons which push our development of AnyLearning**:
+
+* 100% offline - your data stays on your machine
+* No cloud dependencies, no tracking
+* No monthly subscriptions, just a one-time purchase
+* Perfect for sensitive data (HIPAA & GDPR friendly)
+
+**✨ Current Features:**
+
+* Image classification
+* Object detection
+* Image segmentation
+* Handpose classification
+* Auto-labeling with Segment Anything (MobileSAM + SAM2)
+* CPU/Apple Silicon support
+* MacOS & Windows support
+
+**💡 We are looking to your comments and ideas to develop this software better and better**!
+
+**Some screenshots:**
+
+https://preview.redd.it/1vol5an3sp9e1.png?width=2718&format=png&auto=webp&s=9f668ee06009dd6fb00a39f8decef452b1fd18ac
+
+[Project setup](https://preview.redd.it/9no6ltg4sp9e1.png?width=2830&format=png&auto=webp&s=1ff2f5c3940f6f1e55b5d56ac7e47c96ea7dbf4a)
+
+[Data view](https://preview.redd.it/a0tad4v4sp9e1.png?width=2830&format=png&auto=webp&s=a951b687f472240b999e6232661053fac100b278)
+
+[Labeling view](https://preview.redd.it/5m844ke5sp9e1.png?width=2830&format=png&auto=webp&s=c6469adc69a2c370bdebd4bfdca9bf693ad916f4)
+
+[Training](https://preview.redd.it/su4i0iw5sp9e1.png?width=2830&format=png&auto=webp&s=8709a8f36d790530c560dc1ab591316076d6baf4)
+
+
+
+Comments:
+- oooof, a desktop app.  
+
+ooooof.
+- Yay! I might be able to get my IT department to allow a desktop app since they won’t have to support a server app!

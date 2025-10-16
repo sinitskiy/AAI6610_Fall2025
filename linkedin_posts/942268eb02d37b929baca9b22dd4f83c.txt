@@ -1,0 +1,21 @@
+URL: https://www.linkedin.com/posts/bhaskarjitsarmah_sharing-a-recent-paper-on-ai-hallucinations-activity-7336727768706998272-eq9m
+Date: 2025-09-24
+Author: Unknown
+
+Sharing a recent paper on AI hallucinations titled "𝐇𝐀𝐋𝐨𝐆𝐄𝐍: 𝐅𝐚𝐧𝐭𝐚𝐬𝐭𝐢𝐜 𝐋𝐋𝐌 𝐇𝐚𝐥𝐥𝐮𝐜𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬 𝐚𝐧𝐝 𝐖𝐡𝐞𝐫𝐞 𝐭𝐨 𝐅𝐢𝐧𝐝 𝐓𝐡𝐞𝐦" introduces HALoGEN, a comprehensive benchmark designed to evaluate and categorize hallucinations in large language models (LLMs). 
+
+Key Insights from this paper - 
+𝐃𝐢𝐯𝐞𝐫𝐬𝐞 𝐁𝐞𝐧𝐜𝐡𝐦𝐚𝐫𝐤𝐢𝐧𝐠: HALoGEN comprises 10,923 prompts across nine domains, including programming, scientific attribution, and summarization. This diversity ensures a broad assessment of LLM performance. 
+
+𝐀𝐮𝐭𝐨𝐦𝐚𝐭𝐞𝐝 𝐕𝐞𝐫𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧: The framework decomposes LLM outputs into atomic units—individual factual statements—and verifies each against reliable knowledge sources using automated tools.
+
+𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐯𝐞 𝐄𝐯𝐚𝐥𝐮𝐚𝐭𝐢𝐨𝐧: The study evaluated approximately 150,000 responses from 14 state-of-the-art LLMs, such as GPT-4 and LLaMA. Findings revealed that even top-performing models exhibited hallucination rates up to 86% in certain domains.
+
+𝐄𝐫𝐫𝐨𝐫 𝐂𝐥𝐚𝐬𝐬𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧:
+Type A: Errors stemming from incorrect recollection of training data.
+Type B: Errors due to inaccuracies within the training data itself.
+Type C: Fabricated information not present in the training data.
+
+𝐂𝐚𝐥𝐢𝐛𝐫𝐚𝐭𝐢𝐨𝐧 𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬: LLMs often respond to prompts where they should abstain, indicating a need for better calibration mechanisms.
+
+Link is in the first comment

@@ -1,0 +1,121 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/8ihjub/d_talking_about_ml_to_nonml_folks_in_business_or/
+Title: [D] Talking about ML to non-ML folks in business or project scoping meetings
+
+Content:
+TLDR: Read the Goal section and see Specific questions
+
+
+## Goal
+I'm putting together a loose set of guidelines on how ML-engineers should talk about their craft to non-technical people. Specifically, I want to focus on setting realistic goals/expectations in a business or project planning setting (with clients or a non-technical academic advisor). What are some strategies to best accomplish this?
+
+## Why?
+I just switched from academia to business several months ago and realized I was pretty ill-prepared for the first couple of these conversations. I stupidly smiled and nodded at a client client who literally told me that ML is capable of magical things :| That didn't exactly set me up for success when closing out the project -- I'm not a wizard. I couldn't find a whole lot of guidance on the topic (though post more links if I'm wrong!) — hence my plan to post a loose set of best practices. I'm just hoping to get more feedback/anecdotes/expertise to actually make this useful :)
+
+## Specific questions:
+1. Thinking about keeping the client/advisor happy throughout the process (including at delivery time),  what are high priority items to convey by the end of your initial project planning meeting(s)?
+2. Progress is usually not linear (due to data munging, debugging, hyperparam searching). How do you balance properly explaining this nuance without going into to much technical detail? How do you talk about concrete goals in the face of this uncertainty?
+3. How do you explain the process of going from prototype model to a production system? If you show some prototype results that look decent, what's the response to, "Looks like the model works! Can we get that model into production by next week?"
+4. Any other common pitfalls when scoping projects with non-ML folks?
+
+## Best resources so far:
+* Soundcloud's data science [blog post](https://developers.soundcloud.com/blog/soundclouds-data-science-process)
+* Monica Rogati's [blog post](https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007)
+* Tangentially related: paper on [technical debt in ML](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
+* Previous reddit post about this [here](https://www.reddit.com/r/MachineLearning/comments/39t0kp/askml_how_do_you_manage_expectations_in_applied/), but it's 2 years old.
+* Mike Del Balso [talking on TWiML](https://twimlai.com/twiml-talk-115-scaling-machine-learning-uber-mike-del-balso/) about common pitfalls in building a production system @ Uber
+
+Comments:
+- I basically do this for a living, but within a (highly technical) organization and not as a consultant. Most folks here are programmers (thankfully), but don't have a sense of what ML is or what it entails.
+
+This tends to give me a lot of leeway since they recognize it's complicated and that software development is hard, and that ML development isn't like, easier.
+
+I try to make clear a few things:
+
+1) ML and other statistical methods, unlike traditional software, can't provide contracts and guarantees. In production, 90% accuracy means 10% of the time it's going to fail.
+
+
+2) I always emphasize when there are simpler solutions that those should be tried first, and ML should be brought in if the cases they can't handle are worth handling.
+
+3) There's 5 main components I identify for an ML project
+1: Getting the data
+2: Preparing the data
+3: Creating the solution 
+4: Evaluating the solution off-line
+5: Evaluating the solution on-line
+
+Generally the whole process is iterative, and I try to set expectations only for completion time on the first iteration of something. I also find it important when possible to set up a baseline. It's always valuable when justifying your work to a skeptical client/stakeholder -- and if the baseline does really well, then on to the next project!
+
+
+4) I never set expectations for performance of the actual model unless I know there's prior art that I can work off of (e.g. detecting NSFW photos), but I know that's sort of an idealistic scenario. If the project/product owner isn't willing to take the risk that you can't figure out a solution in a certain amount of time, then you're taking a risk by promising them something that will work. So I always try to work with the stakeholders to make sure that's the case, which I'm able to do because they keep paying me anyways to do other stuff.
+
+
+5) I tend to be up front about what can be done with existing infrastructure. Luckily I have backend engineers I can pull to work on stuff when it comes to deployment infrastructure, but I always consider how hard a model would be to deploy when I'm iterating on that third step.
+
+6) I work for a company that emphasizes stuff like a/b testing, so evaluations are important. However you're likely going to be working with real world data that's not what the dataset you got in the first step looks like (e.g., you may be undersampling a negative class or restricting certain cases out of the dataset because you can't get a good label for them). It's important to model (for me) not only how well the model does on the dataset, but in a real-world scenario (if possible). It's also helpful to have an a/b experimentation setup so that you can try new models out in the wild as if it were a new piece of copy or UX flow. This is how you'll actually select the better model for the *business*, not just that does better on your dataset.
+
+
+7) Interpretable models are cool, and a lot of stakeholders are going to really want to see _why_ your model did something. Obviously full interpretability is hard if not impossible (if you want good performance), but you should strive for it. Stuff like LIME or Anchors are great to show, and make a lot of sense to layfolk, and showing individual cases that your model has started solving are a great way to show progress.
+
+8) This is the most fundamental: ML projects are R&D. Building software is, generally, not R&D. In software engineering, you get or come up with a spec, and if it's scoped properly you'll do it, and it will work. You're building solutions. When you're building ML models, you're trying stuff out. You're doing research. Sometimes it might be a matter of applying an existing model to your client/stakeholder's domain, which is more of a sure thing, but even that can go haywire. Either way, make sure your client/stakeholders *understand* that, and are willing to fund/back an R&D project, not a software project.
+
+
+So I think to bring it back to your specific questions:
+
+1) Ensure they know to the best of your knowledge the engineering investment it will take to bring this to production, and inquire about their existing infrastructure.
+
+2) Convey that this is an R&D project. Hopefully they know what that means :)
+
+3) I'm not sure how to quite explain it, but be up front that it requires engineering effort.
+
+4) Getting the data might take a while, and it's going to be very frustrating for them to find out that you're stuck on that after a month despite the fact that they had their "DBA" hand you a bunch of printed PDFs or something.
+- > How do you explain the process of going from prototype model to a production system? If you show some prototype results that look decent, what's the response to, "Looks like the model works! Can we get that model into production by next week?" 
+
+Interestingly \(ironically?\) enough, I have found that specifics are better at finding you the time you need not when you are accurate with them but when you have a LOT of them. Basically, you want to induce glazed eyes.
+
+At first I tried to stick with the biggest challenges and this came with several problematic but common suggestions:
+
+* drop everything else you're doing and focus only on this \(a decision which will invariably be reversed the next day\)
+* get \[person\] to help you out \(\[person\] is usually either someone well\-meaning but not exactly useful to you or someone on the shitlist whose punishment is being offered up to you\)
+* what if we just get something that works out there?/cant we use what we already have and update it later?/are there features \(note: not model features\) we can cut to get the core functionality out there
+* what if you came in on the weekends \(does that mean I can skip weekends when we have to report to the holding company? btw my answer is the same as yours\)
+* this would be a really strong point on your review \(so you're threatening me? \[btw, this has actually happened to me before, and as a result I took my laptop with me on vacation, finished the project and found a new boss\]\)
+
+In the end the most effective serious tool I had was offering a timeline, something with a realistic amount of padding for when things go wrong and to bargain with but not so much as to be offensive, and framing it as "the date I can have this up and give you an assurance it will work as well as we need it to is \[date\]. that will give me the time to address \[biggest project specific time sinks\]. If you guys want, I'll go ahead and get this moving so we can hit that \[reiterate date\] date, and if anyone wants a status update let me know and I'll be sending it out every Friday afternoon with the prior week's progress." 
+
+As an aside, timelines in any sort of software dev, ML included, seem like they were made to be exploded and yet it seems beyond people's ability to accept that. What worked for me was intentionally building up social capital with anyone I thought had the ability to positively/negatively impact me and to get myself the most advantageous timelines possible so that I could come in early or on time at least occasionally, which would always pay back more than well enough to make up for the times I slipped past it. 
+
+Sorry, I know that's more corporate philosophy than a best practice but it's what works for me.
+- Instead of jumping straight into this, you might want to read up about how to go about building and developing customer relationships as a consultant. It's likely that you'll find that the ML-specific parts form a fairly small corner of that more general picture.
+
+The fundamental key to success in this area is developing your own capability to see the world through the eyes of others, and thus understanding which aspects of a whole they consider as significant, what kind of fundamental expectations they might have, and how they hear the words you speak.
+- In terms of non-linear progress due to hyperparameter searching, it should be possible to report on accuracy levels as the project progresses. That turns the project update meetings into something more like reviewing a Kaggle scoreboard
+- [deleted]
+- One thing that is useful to say is: if people are having difficulty making a decision on these cases, machines will too. They have fewer inputs and no ability to synthesize context.
+- This is an excellent idea. I've struggled a lot with setting and meeting expectations of non-ML project stakeholders.
+
+Thank you for creating this post.
+- For me it seemed one of the most important things you have to do as a ml engineer is tell management what CANT be done.
+- Thanks for the thoroughness -- this is very helpful.
+
+3) I like the idea of framing the work as a set of iterative steps, which is how Soundcloud talked about it too in their data science blog post. That description seems like it would work well as a diagram showing several components of "work->evaluate->repeat" cycles that must be traversed and half-jokingly mention that there may be a few hidden "go back two steps" traps á la shoots and ladders.
+
+Can you give an example of a baseline? Are you basically talking about setting up logistic regression as a first pass at the problem or something else?
+
+7) Hadn't heard of Anchors before, thanks for the reference. Using that with both positive and negative examples would probably help get at my original question #3.
+
+8) 100%. Framing these problems solidly as R&D would help me a lot here. I definitely see ML work in that light but (as a former academic) probably assume too readily that the business-minded folks share the same viewpoint -- need to communicate that better. The magic sauce seems to be knowing how to take all the factors/components into account and judge what percentage will be risky R&D vs. what's forecastable/linear work.
+- Best thing I saw on this subreddit ever! Thank you for explaining all small details.
+- That's good advice, especially about learning to walk in the shoes of your clients. I do still think that because of the hype around ML, there are a lot of inflated expectations specific to this field. Some people see big successes in the media (e.g., Alpha Go or autonomous cars) and expect they can get in on the action with a few ML engineers. Is there any subset of consultant guidelines or historical anecdotes dealing with that problem? Maybe the energy was similar before the dot-com bust?
+- Hey, PapaCreameritus, just a quick heads-up:  
+**buisness** is actually spelled **business**. You can remember it by **begins with busi-**.  
+Have a nice day!
+
+^^^^The ^^^^parent ^^^^commenter ^^^^can ^^^^reply ^^^^with ^^^^'delete' ^^^^to ^^^^delete ^^^^this ^^^^comment.
+- Glad you liked my rant!
+
+I generally go for baselines that are easily done and also the first thing that might come to someone's mind as a solution (if possible). For example, if you're trying to block sexual messages, you'd want to demonstrate (and investigate for yourself) how well a simple word filter performs on your data.
+- My personal experience of the dot-com bust was as an employee of a mobile startup. It was a combination of a more fundamental adjustment in technology investment capability, a generational shift, and a larger economic downturn. Since then, I've had to introduce quite a number of new concepts and technologies to my customers, colleagues and investors. My experience in communicating ML/DL-related matters has been much closer to, say, communicating about cloud and agile, than about communicating about the Internet and technology in the 90s. 
+
+People see ML/DL as something they can control and exploit, rather than as a force of nature, as the Internet shift, open source, and mobile taken together were. YMMV. Specific industries, such as customer service and security, are exceptions.
+- delete

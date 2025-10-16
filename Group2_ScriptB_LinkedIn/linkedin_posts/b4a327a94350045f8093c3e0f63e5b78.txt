@@ -1,0 +1,45 @@
+URL: https://www.linkedin.com/posts/george-karniadakis-9b499853_ai-diffusionmodels-genai-activity-7242328828298104833-1ieA
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+George Karniadakis的动态
+George Karniadakis
+
+Charles Pitts Robinson and John Palmer Barstow Professor of Applied Mathematics, Brown University
+
+1 年  已编辑
+
+THE LOG-TRANSFORM (AKA SCORE-FUNCTION) IS MAGIC! In this new paper 
+https://lnkd.in/eP3ZSEzg, Tingwei Meng and Zongren Zou, supervised by my colleagure Jerome Darbon, use the log-transform creatively to provide a new understanding and produce new algorithms for sampling and uncertainty quantification. Specifically, they establish connections between certain Bayesian inference problems, stochastic optimal control, and diffusion models. Building on this connection, they propose the HJ-sampler, an algorithm designed to sample from the posterior distribution of inverse problems involving SDE processes. On the practical side, they have developed three specific HJ-samplers: the analytic-HJ-sampler, Riccati-HJ-sampler, and SGM-HJ-sampler, applying them to various SDEs and different prior distributions of the initial condition. In summary, they have demonstrated the potential of these algorithms in addressing: (1) uncertainty induced by model misspecification in nonlinear ODEs; (2) mixtures of certainty and uncertainty in ODE systems; and (3) high dimensionality. The results showcase the accuracy, flexibility, and generalizability of this novel approach, highlighting new avenues for solving such inverse problems by utilizing techniques originally developed for control problems and diffusion models. It's a long paper (46 pages) but it unifies several concepts not beeing connected before.
+ 
+#ai #diffusionmodels #genai #stochasticodes #control #bayesian #sampling #hamiltonjacobi #machinelearning #uncertaintyquantification
+
+195
+3 条评论
+赞
+评论
+分享
+Justin Hodges, Ph.D
+
+Senior AI/ML Technical Specialist • Author: Approaching ML in CFD/CAE applications • Servant leader
+
+1 年
+
+I’ve always been a fan of this transform!
+
+赞
+回复
+3 次回应
+José Hugo Elsas
+
+Research Scientist at LNCC | AI | Simulation | Data

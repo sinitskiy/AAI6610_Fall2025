@@ -1,0 +1,57 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kfo048/switch_from_pm_to_computer_vision_engineer_role/
+Title: Switch from PM to Computer Vision Engineer role
+
+Content:
+Hi everyone,
+I'm looking for some advice and project ideas as I work on transitioning back into a hands-on Computer Vision Engineer role after several years in Product Management.
+
+My Background:
+1.  Education: Master's in AI.
+ 2. Early Career (approx. 2015-2020): Worked as a Computer Vision / Machine Learning Engineer at a few companies, including a startup. 
+
+ Recent Career (approx. 2020-Present): Shifted into Product Management, most recently as a Senior PM. While my PM roles have involved AI/ML products, they haven't been primarily hands-on coding/development roles.
+
+My Goal & Ask:
+I'm passionate about CV and want to return to a dedicated engineering role. I know the field has advanced significantly since 2020, I need to refresh and demonstrate current hands-on skills.
+
+ 1. What are the key areas/skills within modern Computer Vision you'd recommend focusing on to bridge the gap from 2020 experience?
+
+ 2.What kind of portfolio projects would be most impactful for someone with my background trying to re-enter the field? (Looking for ideas beyond standard tutorials).
+
+ 3. Any general advice for making this transition, especially regarding how to frame my recent PM experience?
+
+Thanks in advance for any insights or suggestions!
+
+
+Comments:
+- Was PM significantly more money?
+- In general a lot more is being done using foundation models and multimodal LLMs. Gone are the days when most models are trained entirely from scratch using manually annotated images. Now you at least will use a foundation model to assist with annotation, if not solve the entire problem directly. 
+
+It’s hard to be more specific. Ideally you can target a specific industry and focus on their problems. Just being a general purpose computer vision engineer is really broad, that’s like being “an athlete” instead of a “soccer player”. Companies want soccer players not athletes.
+- Do you want projects you think will impress others, or do you want projects that will get you jazzed? Go for the latter. 
+
+Pick a problem meaningful to you. Start chipping away on that problem. 
+
+I’m not sure you’ve missed all that much, frankly. You could catch up quickly. You could spend some time reading papers, new textbooks, watching videos, etc., to learn more from the bottom up, but also identify some problems meaningful to you, have an idea how to solve them, get something working, and then see what could make your life easier.
+
+Project manage your own re-introduction to the field.
+
+And don’t overlook that possibility of being a working manager who learns recent CV from your direct reports.
+- It is a great field to be in. I have role as a hands on PM working with computer vision. There is a lot of new stuff comming all the time, great stuff even, but I often return to fundementals after trying out new things. 
+
+I disagree that VLM removes the need for annotations work etc, especially if you need production level performance for anything non-trivial. They can help, but you will need to set up pipelines for manual annotations.
+
+Learning how to iterate models fast is important. This includes training, deployment and annotations/data selection. Torch.amp and .compile() are god-sends. 
+
+Know enough about deep learning to be able to edit existing architectures to for your needs opens up possibilities. This can be adding a regression head to an object detection model to train models to do additional tasks or similar.
+
+Use LLMs to get up to date on knowledge, in addition to following people on X/linkedin. Ive found having conversations with them have inspired several solutions. Be wary of using them when implementing non-standard stuff. They are good at coding, but I don’t feel they are quite there yet in terms of architecture. 
+
+Avoid Ultralytics. Just use other alternatives such as D-FINE, RT-DETR or RB-DETR.
+
+Someone said to find a problem that is important for you and solve it. I couldn’t agree more.
+- Pay was definitely higher. 350k tc in bayarea
+
+While I was part of the founding team and initially intrigued by the PM role, deep down I always intended to go back to being engineer. It just took me longer to act on that, especially with the difficult family losses I experienced.
+- Hello, sorry I can't be much help but I was wondering if you could comment how you feel your engineering background has helped you working as a PM. Thanks!

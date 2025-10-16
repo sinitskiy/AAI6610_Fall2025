@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/martineftimoski_ai-hallucinations-reinforcementlearning-activity-7370229432898428929-et2o
+Date: 2025-09-24
+Author: Unknown
+
+I don’t communicate about AI to raise investment capital or generate excitement. I try to communicate about AI because I believe it is my responsibility. 
+
+OpenAI just released a paper diagnosing some of the key drivers of hallucinations in LLMs. 
+
+The first driver was that it is just a feature of minimising cross-entropy loss. Sure thing, no one would argue this. 
+
+The second is more interesting, and if you go back through my posts for a long time, it is also something I have been advocating:
+
+“we argue that the majority of mainstream evaluations reward hallucinatory behavior.
+Simple modifications of mainstream evaluations can realign incentives, rewarding appropriate expressions of uncertainty rather than penalizing them.”
+
+Reinforcement learning in post-training is an essential, and highly non-trivial (contrary to what this paper may suggest), cause of hallucinations. Where I would disagree with this paper, is that I believe this problem is going to be something dealt with at the “last mile” of AI. The point where AI products meet customers inside specific verticals. The alignment problem is non-trivial with the complexity likely increasing exponentially with uses cases. Leaving foundational model companies ill-suited to industrial grade resolution.
+
+I am very happy with my recent presentation to the Mortgage & Finance Association of Australia (MFAA) Sydney Forum as a vehicle to increase public awareness of AI. The presentation focused on Reinforcement Learning in post-training as a driver of hallucinations. Which it seems is correct, in light of this paper, and I think will soon become the consensus. 
+
+My commentary in a recent News.com.au article is also aligned with this. In general there is now a large body of public record making my thoughts on this clear. And as time has gone by making me increasingly confident, these have been a valid and useful contribution. So I hope my posts and commentary are helpful. 
+
+Because i am very passionate about educating the general public on AI. I hope people can continue to educate themselves and hold the folks in Silicon Valley accountable. 
+
+AI might always be getting smarter, but guess what? We can too. In fact, we have been doing it for 10s of thousands of years.
+
+
+话题标签
+#AI 
+话题标签
+#Hallucinations 
+话题标签
+#ReinforcementLearning

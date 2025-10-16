@@ -1,0 +1,70 @@
+URL: https://www.linkedin.com/posts/agus-sudjianto-76519619_model-diagnostics-prediction-uncertainty-activity-7126549617046929409-qyZY
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Agus Sudjianto的动态
+Agus Sudjianto
+
+A geek who can speak: Co-creator of PiML and MoDeVa, SVP Risk & Technology H2O.ai, Retired EVP-Head of Wells Fargo MRM
+
+1 年
+
+Understanding model prediction uncertainty is critical in model validation prior to model deployment. PiML uses conformal prediction and uncertainty slicing to identify weak regions in the model.
+
+Aijun Zhang
+
+Head of Machine Learning and Validation Engineering at Wells Fargo
+
+1 年
+
+Here's a new PiML tutorial about quantification of prediction uncertainty for a pre-trained machine learning model. We take a deep dive into conformal prediction for regression models, introduce several ways of running split conformal prediction, and demonstrate how to detect unreliable regions via PiML reliability testing.
+
+Agus Sudjianto Valeriy Manokhin, PhD, MBA, CQF Patrick Hall Parul Pandey
+#ConformalPrediction #ReliabilityTest #ModelDiagnostics #machinelearning #PiML
+https://lnkd.in/gaWhjcRu
+
+Model Diagnostics: Prediction Uncertainty
+piml.medium.com
+138
+8 条评论
+赞
+评论
+分享
+Eduardo Canabarro
+
+Engineer, Financial Economist
+
+1 年
+
+Agus Sudjianto The future is unpredictable, especially the extreme events. Any model that uses past data implicitly assumes that the future will be like the past. And we know it will not !
+In Physics, the laws of nature are permanent. In Economics, the context is ALWAYS changing. And it especially affects the probabilities and nature of the extreme events.
+So … be careful with models … they may look neat and intuitive, but they are mostly wrong for extreme risks and capital estimation.
+After so much experience since 1980s we see it very clearly today.
+
+赞
+回复
+4 次回应
+Patrick Hall
+
+Machine Learning, AI & Risk Management
+
+1 年
+
+Variance is real. A model with 0.8888 AUC isn’t “better” than a model with 0.8887 AUC. (And not just because of variance, but we could start there …). Thanks Agus and team for making tools that help with real-world problems.
+
+赞
+回复
+8 次回应
+Jack Xu
+
+Mod

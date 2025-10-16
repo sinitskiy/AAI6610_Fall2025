@@ -1,0 +1,35 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tkrcco/bioinformatics_opportunity_in_the_netherlands_den/
+Title: Bioinformatics Opportunity in the Netherlands (Den Bosch)
+
+Content:
+**TLDR**; My team is looking for a full-time bioinformatics developer. We are located in Den Bosch, The Netherlands, and operate in the immunogenomics field.
+
+**More info and application here:** [https://enpicom.com/vacancies/bioinformatics-developer/](https://enpicom.com/vacancies/bioinformatics-developer/)
+
+**Full Description:**
+
+We are looking for a Bioinformatics Developer who loves combining cutting-edge software engineering with an understanding of biology and immunology to solve concrete challenges in the immunogenomics field. You will play an important role in the development of our health-tech software platform and in other critical scientific projects. You’ll be taking ideas and put them into applications while maintaining high scientific and software engineering standards.
+
+The opening is for a long-term position with a contract of either 32 or 40 working hours per week. We’re looking for someone who believes in our mission, enjoys being part of our young and dynamic team, and can grow with us in the years to come.
+
+**Requirements:**
+
+* Relevant Master’s degree or PhD (e.g. Computer Science, Bioinformatics)
+* Strong critical thinking skills, and a problem-solving attitude
+* Good communication skills
+* Knowledge of biology
+* Excellent Python and JavaScript knowledge
+* Experience working with (next-generation) sequencing data
+* Experience working in a Linux environment
+* Experience working with version control systems
+* Experience using docker
+
+**Nice-to-haves**
+
+* Experience with TypeScript and React
+* Experience with immunological data
+* Experience with machine / deep learning
+* Experience using Kubernetes cluster
+
+Comments:

@@ -1,0 +1,65 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/175caah/how_important_is_being_appreciated_and_team_fit/
+Title: How important is being appreciated and team fit as a factor to stay in a role with average salary given slow adoption of data science solutions?
+
+Content:
+My team and managers are so easy to be with. Very grateful for that. The pay is okay. 150k/yr TC in Midwest. Hard for me to make a switch given how much I am appreciated. I almost feel spoiled when it comes to flexibility. I have overachiever tendency and the pace is so slow in adopting my ML models.
+
+I am the “lead”/senior data scientist in an R&D supporting scientists decision making with machine learning. Importantly, I am in a huge multinational consumer product company and I am not in the Data science organization, I bridge between the two and the data science expert on the team.
+
+  I have developed the domain expertise and I have  a PhD in  an applied computational field with 5 years experience . I am not as challenged with getting deeper into complex stats, I have been really honing the soft skills of communication, influencing etc so getting comfortable in a senior role. Also I have been growing as a ML engineer building my own pipelines and deploying my models on prem server that they bought for me.
+
+I am not sure how greener it is on the other side, how do senior folks approach deciding when to move on? Any input is much appreciated.
+
+Comments:
+- I’m in the same boat. Decent pay, lower stress, they appreciate me. But little learning. I have 2 young kids so I’m enjoying the time with them when I can. I really don’t NEED more money. I have all that I want.
+- If you have achieved the professional goals that you set out to when taking the job and you don’t feel like you can meet your new set of goals with the current org., it’s probably time to start exploring options. Job market is rough rn so I’d proceed with caution, but you’ll still be in high demand elsewhere
+- $150K in the Midwest goes a long way and is better than "okay" - look up the Burtch Works salary reports. That can buy you a decent-sized house and pay for some luxuries.This is especially the case if you're outside of Chicago or Minneapolis metros.
+- I would honestly say team fit may be more important than the work itself. Below are my experiences:
+1. Great team & manager, non-data related job
+2. Poor manager, decent teammates, good work
+3. Great team, decent manager, good work
+4. Great manager, poor team, good work
+
+I would give a higher importance to the team and manager before the work itself as long as it's still in a related field.
+
+Obviously if I could go back to experience #3, I would do it in a heartbeat but no one is leaving that team and there are no openings. But would I go back to experience 1? No, I loved the team but it does not align with my career goals.
+
+TLDR: Good team/manager > Good Work > Good Pay
+- Are you my coworker lol. You have decide what’s most important to you. I went from a high stress and toxic environment to a nice but not challenging place. I’m enjoying it for now, but I may leave eventually.
+- Where are you in your career journey? If you're a few years in and really hustling to establish yourself, prioritize growth. When you're thinking about having a family, or just enjoying your hobbies and passions outside of work, prioritize fit and stability.
+- Sounds like you’re in an AI-naive organization. This could be a great opportunity for you to mature the data science capabilities of your organization, while also building out the infrastructure and governance to deploy AI/ML solutions at enterprise scale. I’m in the same situation, and slowly building complete AI/ML systems, while helping the organization mature with my data and AI strategy. At a more mature organization, you may not get this same opportunity to lead and build.
+- It depends what you want in life etc. No one can answer this question. The role you are in now sounds like one where you will be stagnant, but if you like it and gives you freedom to do other things you enjoy then it may be worth staying. No one can answer it for you.   
+
+
+the industry is like academia where only a few places do cutting edge work world and the rest of the jobs are essentially like yours. That being said if you ahve a Ph.D in an advanced computational field you should be able to earn about 25 percent more than you do in a low cost of living or mid cost of living area and at least 250k in a hcol. Your not being valued that much.
+- You should always be interviewing.
+- "pay is okay" --> 150k
+
+Bro you are earning 2.x my salary as an Western European. How is thay considered "okay" in the US??
+- Everyone is different, so I would spend a lot of time reflecting on what is it important to you right now, as well as what you want to achieve in the next 5-10 years and what will help you get there. If things like work/life balance and family are more important, then maybe stay put. If you want to develop specific skills, think about what will be best for that. 
+
+Also… no harm in starting to apply and see what happens. Even applying and not finding anything better can confirm you’re in a good place right now.
+- From the description of your work, the big red flag I see is you lacking expertise in on-demand tools. In an org with good DS/ML setup messing with on-prem servers isn't necessary rather they would appreciate more someone with cloud tools that they use.
+- > 150k/yr TC 
+
+
+cries in 85k/yr in california
+- I think you have to build rapport with the business in any role. I think you can make your job excellent by simply focusing more effort on getting business buy-in. Whenever we expand DS capabilities to a new product, we always work the stakeholders to do experiments that they want first. We take an idea of theirs, implement the experiment, and communicate results. This has been really helpful in getting us more connected with the business. We are now suggesting massive changes to the business and we are getting no pushback from business leaders.
+- Got to weigh what you value.  I tried to pursue the money was getting paid real well and then got laid off, hopefully I was able to find a good job less pay than before but enough to live comfortably. The grass is definitely not always greener.
+- Have you asked for a raise? I think before you make any decisions, see if you can get a pay bump if that’s the only major factor. 
+
+In my experience, it is HARD to come by a good team. Maybe I’m biased/jaded, but it’s just hard in my experience. Especially with tech personalities, we’re not always the most socially aware, warm, or friendliest people in the room. So if you have a team that makes you feel appreciated, that alone pays dividends. The stress from a toxic environment is not usually worth the extra pay.
+- You can also explore the option of moving deeper into the data science part of the organization a slow or partial transition would give you the opportunity to assess if you like the other team or not, and allow you to do different work
+- For me personally it is as very important factor as soon as you earn enough to make a living. I would 100% turn down an offer double my pay if I'd know that it would be an horrible struggle on a personal level. I could fight through that for a while but I'd be tired of it very soon and leave
+- It all depends on where you want to be in the next 2 to 5 years. Do you want to be a technical IC or do you want to go manager/VP route? 
+
+\- If you want to stay in the IC route, just pick a topic and read some books, follow company blogs, and you can actively network. 
+
+\- You are getting ML skills so that's good. Though you are working with a prem server, so maybe you can do one of the free courses on AWS, GCP, etc. 
+
+\- If you want to go the manager/VP route, you are doing well by with the communication, influencing, etc. You could check if your job has professionalization $$ for leadership courses or stuff like that. 
+
+Being in DS has many dimensions so as long as you are growing somewhere, it's fine. It's not all about what's the most complex model you have done.
+- * Opportunity driven : It never hurts to interview if you have time - or just chat with recruiters who reach out. A positive shift in industry is hearing salary bands up front in the conversation with recruiters, so you'll get quick signal there. From an initial convo and research into the company you can get a feel if the role is exciting/interesting/engaging/etc.
+* Future proofing : Is there a certain sector/skill-set that is prime for growth, or if your sector/skill-set is in the decline. Tech roles that are at risk to automation by GenAI should keep a look out for what skills to develop and/or deeply integrate the tools into your daily work.

@@ -1,0 +1,73 @@
+URL: https://www.linkedin.com/posts/alex-james-7438a8303_keras-documentation-probabilistic-bayesian-activity-7193632870769270784-H-eZ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Alex James的动态
+Alex James
+
+Algorithmic Trader
+
+1 年
+
+Bayesian Neural Networks (BNN) have the potential to handle uncertainty in the model and uncertainty in the data. And there is potential to expand the BNN with an LSTM. Oh the possibilities!
+
+A neural network can be incredibly powerful... but framing your data is still incredibly important. Is the data framed in a way that aligns with the questions you're asking and the answers you're seeking?
+
+https://lnkd.in/egZi7A2j
+
+Keras documentation: Probabilistic Bayesian Neural Networks
+keras.io
+8
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+3 位关注者
+
+9 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

@@ -1,0 +1,14 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/psovit/which_is_the_better_of_the_two_modules_for/
+Title: Which is the better of the two modules for Bioinformatics?
+
+Content:
+I’m currently an undergraduate mathematics student gearing towards bioinformatics through my module selections. I have a choice between ‘Research Software Engineering with Python’ and ‘Foundations of Machine Learning’, and was wondering which of the two would be most beneficial for going into bioinformatics at the postgraduate level (Masters then into industry or a PhD). The former focuses more on good software engineering practices, clean code, version control, etc (mainly taught through the vehicle of classical computer science problems). The latter focuses on theory and application of machine learning algorithms (KNN, Decision Trees, PCA, Bayesian graphical models, and evaluation techniques). I’m a self taught programmer that has decent Python skills, including in the area of data science and ML (Pandas, Scikit-Learn, Matplotlib, Tensorflow, all those). Do you think there’s a significant difference between the utility of these modules with regards to bioinformatics? If so, which would you lean towards? Any advice would be greatly appreciated!! Thanks in advance :)
+
+Comments:
+- > Research Software Engineering with Python
+
+No question here. Theory and application of ML methods is going to vary greatly depending on where in bioinformatics you end up, and you'll likely be exposed to most of that in your grad level courses or your own research. Good coding practice on the other hand is sorely lacking in the field, and being a more efficient programmer is going to make you a better bioinformatician.
+- Either is fine , depending on how well the module will be taught.  On the one hand, I doubt you can learn much about machine learning in a single module. On the other hand, good software engineering practices 🤷‍♂️ . Just pick whatever fits your schedule.
+- Somewhat depends on exactly what you want to do, but honestly both should probably be required.
+- I really appreciate the insight. Definitely leaning towards Research Software Engineering with Python now. Thanks for the help!

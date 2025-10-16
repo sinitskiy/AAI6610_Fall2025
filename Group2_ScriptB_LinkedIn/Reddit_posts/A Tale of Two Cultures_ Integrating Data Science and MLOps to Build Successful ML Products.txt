@@ -1,0 +1,19 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c0rhdm/a_tale_of_two_cultures_integrating_data_science/
+Title: A Tale of Two Cultures: Integrating Data Science and MLOps to Build Successful ML Products
+
+Content:
+ When the excitement about data science became widespread about 10 years ago, this spurred a lot of proof-of-concept ideas. However, most of these stayed confined in Jupyter notebooks and never made it into production. There are multiple reasons why it has been a lot harder than initially expected to productionize ML models, but the one I want to focus on in this blog post is one that has not been explored in as much depth. In order to create business value, we have to marry two very different approaches: The ML lifecycle starts out on the exploratory data science side, but we eventually have to transition towards an engineering-driven approach in order to achieve the quality attributes such as availability, reliability, scalability, and security typically expected of production systems. Thus, what it takes to do good work in data science is fundamentally opposed to what it takes to do good work in MLOps, giving rise to different best practices, skill sets, and even mentalities (ways of thinking about problems) on each side. As a result, a central challenge for creating successful ML products is to find a good process for making these two different cultures work well together. 
+
+This is very detailed article by  *Thomas Loeber, Senior Machine Learning Engineer at*  Logic20/20, Inc. 
+
+Source here: [https://opendatascience.com/a-tale-of-two-cultures-integrating-data-science-and-mlops-to-build-successful-ml-products/](https://opendatascience.com/a-tale-of-two-cultures-integrating-data-science-and-mlops-to-build-successful-ml-products/)
+
+Comments:
+- What is this, a commercial? It feels like someone wrote a poorly done Python script: "This is very detailed article by *Thomas Loeber, Senior Machine Learning Engineer at* Logic20/20, Inc."
+
+In case it is not a bot: I don't think I agree with the message of the article. You did not ask for feedback so let me know if you are, because I do think it is a very interesting discussion.
+- various factors
+- wow
+- WOW
+- I am not a bot, and this is not a commercial. Just sharing here this article that I think could be beneficial to some of the members here.

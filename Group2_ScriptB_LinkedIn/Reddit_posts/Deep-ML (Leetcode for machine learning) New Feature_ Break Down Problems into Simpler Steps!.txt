@@ -1,0 +1,33 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1jgjuhz/deepml_leetcode_for_machine_learning_new_feature/
+Title: Deep-ML (Leetcode for machine learning) New Feature: Break Down Problems into Simpler Steps!
+
+Content:
+**New Feature: Break Down Problems into Simpler Steps!**
+
+We've just rolled out a new feature to help you tackle challenging problems more effectively!
+
+If you're ever stuck on a tough problem, you can now break it down into smaller, simpler sub-questions. These bite-sized steps guide you progressively toward the main solution, making even the most intimidating problems manageable.
+
+Give it a try and let us know how it helps you solve those tricky challenges!  
+its free for everyone on the daily question
+
+[https://www.deep-ml.com/problems/39](https://www.deep-ml.com/problems/39)
+
+https://preview.redd.it/00sa8vhoc2qe1.png?width=733&format=png&auto=webp&s=549d8786cfc4961c8f777968401e966331fe16ed
+
+
+
+Comments:
+- This feature is a game-changer for problem-solving, makes complex issues more digestible and achievable!
+- Is Deep-ML suitable for beginner?
+- How common are these of questions on interviews?
+- Looks cool. I’ll check it out
+- The most important skill for data science is understanding which data and corresponding inferences based on the data have potential to be useful to business. Not any of this crap.
+- i was actually looking for leetcode style for ML. How's this site? and How's te community?
+- Am I expected to know this for interviews?
+- dumb q but how can i print to the console when debugging??? it isn't showing the things i print which makes debugging much harder
+- I’d say beginners could solve easy questions with help from the learn section
+- not super common currently, but I am hearing more and more places are starting to ask these types of questions
+- Try this one, [https://www.aiofferly.com/](https://www.aiofferly.com/). I'm using it and I think it has more real interview questions.
+- Great, the shitty interview practice of doing lazy and irrelevant school tests and forcing candidates to grind this crap has spread from SWE to DS market

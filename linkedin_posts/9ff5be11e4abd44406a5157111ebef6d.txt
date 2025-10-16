@@ -1,0 +1,17 @@
+URL: https://www.linkedin.com/posts/heikohotz_dont-chase-the-perfect-llm-instead-learn-activity-7373622742564216833-LXD-
+Date: 2025-09-24
+Author: Unknown
+
+Don't chase the perfect LLM! Instead learn how to build great products with the ones we have.
+
+Lots of buzz lately around LLM hallucinations and reproducibility. And I really enjoy reading papers like the one from OpenAI (Why LLMs hallucinate) and Mira Murati's post on how to make LLMs more reliable.
+
+But soon I will have to teach a class at 英国伦敦商学院 about how to build GenAI products in the real world - and that means building products with a technology that is potentially unreliable.
+
+The good news is that this unreliability can be measured and managed. And that it is still valuable and advisable to build products with this technology - when appropriate.
+
+One such way to measure and manage LLM hallucinations is Google Cloud's recent work won Gemhall - a framework that lets developers evaluate a model's hallucinations by instructing it to abstain from answering unless its confidence is above a given threshold.
+
+Link to the new tool in the comments below.
+
+Picture below 100% related (taken 20 minutes ago) - greetings from gorgeous LBS 🥰

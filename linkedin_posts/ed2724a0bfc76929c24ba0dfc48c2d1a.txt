@@ -1,0 +1,13 @@
+URL: https://www.linkedin.com/posts/dpoccia_prevent-factual-errors-from-llm-hallucinations-activity-7269765323426344962-8tbY
+Date: 2025-09-24
+Author: Unknown
+
+This is really cool 👉 Prevent factual errors from LLM hallucinations with mathematically sound Automated Reasoning checks (preview) https://lnkd.in/eRhx_teG 
+话题标签
+#AWS 
+话题标签
+#AI 
+话题标签
+#GenAI 
+话题标签
+#ML

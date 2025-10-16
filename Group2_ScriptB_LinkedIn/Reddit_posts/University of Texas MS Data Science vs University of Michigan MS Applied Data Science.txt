@@ -1,0 +1,84 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/15m0la5/university_of_texas_ms_data_science_vs_university/
+Title: University of Texas MS Data Science vs University of Michigan MS Applied Data Science
+
+Content:
+Hey everyone!
+
+I know this sub gets quite a few queries about online MSDS programs, but alas, I find myself trying to sort through the abundance of programs.
+
+For some background, I am currently a marketer that has found myself more and more involved in the technical / data side of things, and at this point, I am looking to make a more formal pivot.
+
+I’m 29 and I have BS in Business Administration and an MBA in Entrepreneurial Strategy for reference. Some Python skills and advanced math under my belt.
+
+As the title insinuates, I’m comparing these two programs. There are some trade offs. UT Austin’s program seems to dive deep into a lot of the foundational math and theory, while UMich seems to be more “applied”, as the name suggests.
+
+Michigan has greater brand recognition where I live (Chicago), but both schools are nationally recognized as being top universities. UT Austin is significantly cheaper ($10k) and UMich will be around $35k.
+
+The courses for UT Austin:
+
+- Probability and Simulation Based Inference for Data Science
+- Foundations of Regression and Predictive Modeling
+- Data Structures & Algorithms
+- Advanced Predictive Models for Complex Data
+- Design Principles and Causal Inference for Data-Based Decision Making
+- Data Exploration, Visualization, and Foundations of Unsupervised Learning
+- Principles of Machine Learning
+- Natural Language Processing
+- Optimization
+- Deep Learning
+
+UMich’s courses;
+
+- Being a Data Scientist
+- Math Methods I (linear algebra, probability, NumPy).
+- Data Science Ethics
+- Data Manipulation (Pandas)
+- SQL and Databases
+- Efficient Data Processing
+- Big Data: Scalable Data Processing
+- Visual Exploration of Data
+- Information Visualization I
+- Communicating Data Science Results
+- Presenting Uncertainty
+- Data Mining I
+- Supervised Learning
+- Unsupervised Learning
+- Business SQL
+- Qualitative Inquiry for Data Scientist
+- Math Methods II (elaboration)
+- Database Architecture and Technology
+- Information Visualization II
+- Causal Inference
+- Experiment Design and Analysis
+- Data Mining II
+- Deep Learning I
+- Machine Learning Pipelines
+- Reinforcement Learning Algorithms
+- Network Analysis
+- Applied Natural Language Processing
+- Cloud Computing
+- Learning Analytics and Educational Data Science
+- Health Analytics
+- Social Media Analytics
+- Search and Recommender Systems
+- Data Science for Social Good
+
+Whew…obvious Michigan does not intend for someone to take all of those.
+
+A little odd that Texas doesn’t include databases in their program IMO, as they’re crucial for most data scientists to understand. Texas seems much more visceral in the topics they do teach. They’re also a bit more hardcore as far as prerequisites (luckily I have the required math: multivariate calculus, linear algebra, statistics). UMich just requires stats and Python.
+
+Anybody have any insights? I want a program that will have some longevity in its relevance and allow me to advance in this space more readily.
+
+Comments:
+- I don't have any personal experience with either program but I can give you my view if you would like them.
+
+
+The two courses look like how my school structures the MS in DS and the ML programs. The UT Austin program seems a lot more general and there is more focus on the business whereas UMich program allows you to be specialized and choose your focus in ML, Network Analysis or Big Data
+- Does anyone know if MSDS at UT Austin is good?
+- If I’m not mistaken, UMich’s program is based on 4 week courses at one credit a piece so you end up taking more courses that cover greater breadth than depth you would get at UT’s program.
+- Thanks for your input! What school are you currently at?
+- This is correct, at least for many of that classes. Some are 3 credits. It does seem to cover a lot of ground.
+
+My main concern is, which one will actually prepare me for data science jobs. I’m a bit perplexed how UMich can fit so much in whereas Texas seems to cover a fraction of it. It has to be depth I’m assuming? But the question is, does the depth matter or is it about breadth in todays world?
+- Liverpool John Moores University.

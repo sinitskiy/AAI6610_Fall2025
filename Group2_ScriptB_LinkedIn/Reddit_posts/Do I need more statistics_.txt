@@ -1,0 +1,40 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/177q65k/do_i_need_more_statistics/
+Title: Do I need more statistics?
+
+Content:
+Hello everyone,
+
+&#x200B;
+
+I'm relatively new to the field of Data Science, with approximately 6 months of experience. Prior to this role, I worked as a Machine Learning Engineer for a year and a half.
+
+In my current position, I spend a significant portion of my time conducting data analysis, applying basic statistical techniques (hypothesis testing, regression analysis, etc), and developing standard banking models (so far, I've worked in churn rate prediction, client clustering, and currently studying to help building a recommendation system)
+
+I'm currently pursuing a Master's degree in Computer Science, with a research focus on weather forecasting. This research involves the use of time series analysis and machine learning. As we progress in our research, we are also delving into deep learning models, the goal is to build state of art models.
+
+My academic background is in computer science. In both bachelor's and master's I've completed classes in basic linear algebra, three levels of calculus (up to Multivariate Calculus and First Order Differential Equations), discrete mathematics, two statistics courses, one time series analysis course, and several classes focused on machine learning algorithms and artificial intelligence.
+
+While I generally have a good understanding of the mathematical principles behind machine learning models, there are certain areas where I struggle. For instance, I've never fully comprehended why the kernel trick is effective in SVMs (got the intuition, but not the maths)
+
+When it comes to statistics, I feel that my knowledge is lacking. I can effectively work with machine learning frameworks, but there are specific statistical topics where my knowledge is either superficial or non-existent. These include:
+
+&#x200B;
+
+* Post hoc analysis
+* Survival analysis
+* Multivariate statistics, such as PCA, MANOVA, and Factor analysis
+* Markov Processes
+
+Given my current role and academic pursuits, I'm wondering if it's essential to address these knowledge gaps immediately or if it would be more practical to focus on completing my Master's degree first.
+
+I would greatly appreciate any guidance on how to begin studying these statistical concepts effectively.
+
+Comments:
+- so survival analysis is a standard way of doing churn prediction (how long does the person 'survive' as a customer)... so I would suggest it might be  useful for your current job. forget perhaps continuous time models, and focus instead on discrete time models: you just predict whether customer survives for each period.  and so can just use any classification model, logistic regression or xgboost. \[minimum learning\]  
+
+
+  
+I would suggest you should know PCA, but more perhaps to better understand ML models. it ties in with regularisation/weight decay/gradient descent error surfaces.
+- hey man halfway through your post and couldn't agree more. Survival Analysis is indeed underrated. It gives tons of info about customers' behaviour concise and straight to the point. Forget about Markov Process yeah, PCA should be well understood. It doesn't just help with ML models but in understanding your data dimensions well
+- Thanks so much for the response!

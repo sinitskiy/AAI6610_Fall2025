@@ -1,0 +1,33 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ph7foh/d_any_good_works_on_uncertainty_estimation_in/
+Title: [D] Any good works on uncertainty estimation in imaging tasks (e.g. segmentation)?
+
+Content:
+I'm quite bored of the hundreds of annual papers just providing a slightly different architecture to segment their specific dataset. Uncertainty estimation in segmenting medical images seems to me like it will be hugely useful.
+
+I imagine a great use of ML is asking a model to segment an image, while also outputting a map of the places it was unsure of, where the radiologist can manually correct.
+
+However, I haven't seen that many novel papers on this area. Most simply use monte-carlo dropout, Bayesian NN, or ensemble networks to measure uncertainty. These basically boil down to multiple passthroughs of the image, and looking at the variance in the predictions. The higher the variance, the higher the uncertainty.
+
+Does anyone know of any cool or interesting papers that tackle this topic in a different way? Or any works that are related to this area?
+
+Comments:
+- There was this paper in the WAYR two weeks ago, about uncertainty in vision tasks. It's not about instance segmentation specifically though. Still a good read.
+
+[What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?](https://arxiv.org/abs/1703.04977v1)
+- Monteiro et al, Stochastic Segmentation Networks: Modelling Spatially Correlated Aleatoric Uncertainty, NeurIPS 2020.  
+https://arxiv.org/abs/2006.06015  
+
+
+It looks specifically to the case of segmentation, and how to get "structured" uncertainty (modelling corellations between pixels explicitly).  
+
+
+I may be biased as I am one of the authors, but I think it is interesting addition to the literature, as it looks at a different aspect (structure), rather than how to get better aleatoric/epistemic estimates (dropout, ensembles, etc) as most previous works.
+- I’m pretty curious about this as well. What interesting papers have you seen so far?
+- You specifically mention radiology. You could check out STAPLE and its derivative works to see if the original or any of the more recent stuff is the kind of thing you're looking for. At the very least I'd expect anyone claiming to improve on this methodology to cite the original, since it's pretty well known.
+
+Original: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1283110/
+
+Others: https://scholar.google.com/scholar?hl=en&as_sdt=0%2C22&q=author%3AWarfield+staple&btnG=
+- Uncertainty is a large area if study in general in AI, Google will return many papers in this area. I would day though, you should not disparage any contribution because it's a "slightly different architecture". Even small bumps in performance could save thousands of lives when scaled up to the population for critical applications such as healthcare. Also, when you add up all these incremental progressions you get a larger aggregate improvement to the quality of models and people's lives.
+- Thanks for posting this! I've long been a fan of the paper from Kendall and Gal on uncertainty in deep networks and I can see how yours adds something qualitatively different to previous approaches (and is very readable too)

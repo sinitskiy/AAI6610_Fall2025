@@ -1,0 +1,48 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11kv2n4/microarray_normalization_preprocessing/
+Title: Microarray Normalization & Preprocessing
+
+Content:
+Hi,
+
+I have background in neuroscience, and I am fairly new when it comes to problems in the spectrum of bioinformatics. My general goal is to build a multimodal machine learning model which includes the use of microarrays. However, finding best practices on the normalization and preprocessing of microarrays is quite difficult. I know its not one size fits all approach, but I am really uncertain if my aproach is reasonable. My question is, is my preprocessing pipeline reasonable, and is there something I can add in terms of QC to improve it. 
+
+Thanks in advance!
+
+My approach:
+
+Coded in R:
+
+1. Use lumiR and perform background correction
+2. Filter by relevant variables (for example age)
+3. log2 transformation using lumiT
+4. Quantile normalization using lumiN
+5. Remove outliers
+6. Look at MA-plot, PCA-Plot, Correlation between PC and covariates
+7. Control for covariates by regressing them out, including 5 SVA's
+8. Look at MA-plot, PCA-Plot, Correlation between PC and covariates
+
+In step 6 and 8, I basically investigate if I improved the quality or worsened it and based on that make some adjustements. 
+
+I appreciate any sources, tips, or advices
+
+Comments:
+- Its reasonable and well-thought out.... To improve qc measures you can
+1. Visualize distribution of intensities across arrays ro identify any arrays that may have quality issues... Use boxplots/density plots to assess intensity distributions across arrays
+2. Check distn of log2 intensity values before n after normalization... Can ensure normalization process did not introduce any biases
+3. Can use hierarchical clustering to assess clustering of samples based on exp profiles... Identifying outliers/poor quality samples
+4. Plot pca plots to assess relationship b/w samples based on exp profiles.... Identifying batch effects or technical artifacts
+5. Evaluate performance of normalization n preprocessing pipeline using cross validation/independent test datasets... Assessing accuracy n generalizability of model
+6. Incorporating other qc metrics like signal-to-noise ratio
+- You can consider using Robust Multi-array average expression measure (rma, see rma function in affy package). It will do the background correction, quantile normalization and log2 transform for you. Note that in general you want to do log2 transformation AFTER background correction and normalizing, not before.
+- There are at least a couple of prior efforts at this where the results are offered for anyone who wants them online. They generally report their methodology and perhaps you might find their approach(es) informative. Specifically examples:  [refine.bio](https://refine.bio) , [https://seek.princeton.edu/seek/index.jsp](https://seek.princeton.edu/seek/index.jsp) [http://dataome.mensxmachina.org/](http://dataome.mensxmachina.org/)
+- Thank you for your great suggestions, it made me realize that I was focusing to strong on QC before and after regressing out covariates, instead of QC before and after normalization! 
+
+However, I would have a follow up question to point 5, when assessing accuracy what would be the assumed ground truth?
+- Thanks for your reply! I based the preprocessing steps on this documentation: [https://www.bioconductor.org/packages//2.7/bioc/vignettes/lumi/inst/doc/lumi.pdf](https://www.bioconductor.org/packages//2.7/bioc/vignettes/lumi/inst/doc/lumi.pdf)
+
+But I will look more into it! 
+
+In general yes, I also came across the RMA-function, however, the data are a collection of differen idat files, so I thought the lumi-package would be preferable. 
+
+But I found atleast the lumiExpresso function, which also combines the different preprocessing steps, and shortens my code! Thanks.

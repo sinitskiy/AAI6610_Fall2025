@@ -1,0 +1,26 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1i1nfg8/meshes_for_differentiable_ml_pipeline/
+Title: Meshes for Differentiable ML Pipeline
+
+Content:
+I'm working on a project that involves constructing a watertight triangle mesh from a point cloud (potentially using alpha shapes), optimizing point positions (with minimal recomputation of the mesh), projecting the mesh to 2D and finding boundary points, preventing self-intersections, calculating mesh volume, and integrating all this into a differentiable machine learning pipeline. I am looking to find a mesh library which will assist me. I'm choosing between Open3D and PyTorch3D currently, but am open to using both or using any other libraries which I have not yet come across.
+
+I have looked at the documentation for both and my observations are as follows.
+
+#### Open3D vs PyTorch3D: Pros and Cons  
+
+**Open3D** provides functionality to create a mesh from a point cloud using alpha shapes (`create_from_point_cloud_alpha_shape`), check if a mesh is watertight (`is_watertight`), and calculate its volume (`get_volume`). It also includes an ML add-on, though this seems focused on batch processing and dataset handling rather than enabling backpropagation, and so to perform backpropagation, I would need to backpropagate through the point cloud to get new points, and then compute a new mesh based on these updated points.
+
+On the other hand, **PyTorch3D** integrates well with PyTorch, making it fully compatible with a differentiable pipeline. However, it lacks built-in support for alpha shape-based mesh construction, watertightness checks, and direct volume calculation (though volume could be implemented manually using a 3D shoelace formula).  
+
+#### Key Questions  
+- Open3D seems feature-complete for geometry processing but lacks differentiability. How hard would it be to integrate Open3D into a differentiable pipeline?  
+- PyTorch3D handles differentiability but lacks essential geometry processing tools. Are there workarounds or plugins to address this?  
+- Are there better libraries that combine the strengths of these two, or am I underestimating the effort required to extend one of them?  
+
+I’d appreciate any advice, alternative suggestions, or insights on whether these concerns are over- or under-emphasized.  
+
+Comments:
+- I don't know either of these libraries but I'd assume it's much much easier to use the differentiable library for training and then extract relevant information to feed to the no differentiable tools for checking, compared to the other way around.
+- That's fair, so do you mean initialising with Open3D and then convert it into the format for PyTorch3D (differentiable library), and then convert back, and then repeat going back and forth?
+- Well, not really knowing these libraries I cannot say for sure, but yes I would hazard a guess that what you're suggesting here would be annoying but way easier than basically reimplementing Open3D in pytorch.

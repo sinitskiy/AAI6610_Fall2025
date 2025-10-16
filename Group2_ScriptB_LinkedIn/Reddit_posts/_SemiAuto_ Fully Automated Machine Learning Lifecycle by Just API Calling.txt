@@ -1,0 +1,72 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1mkov0u/semiauto_fully_automated_machine_learning/
+Title: "SemiAuto" Fully Automated Machine Learning Lifecycle by Just API Calling
+
+Content:
+So for the last 4 months I have been working on this project which was first supposed to be a upgrade of AutoML, but I later recognised it's potential.
+
+This project could be one of the best things in ML reasearch, This project is just that good.
+
+For context, I have the knowledge around ML for about 1.5 years now and thanks to the tools available, I have been able to build a grand project like this,
+
+The Project's or you can say the Tool name is 'SemiAuto', A full fledged ML lifecycle Automation tool. It has 3 microservice, Regression, Classification, and Clustering.
+
+I have completely build the Version 1 of this project.
+
+
+It has 6 parts, First ingest the Data.csv file and the target column.
+
+Second choose whatever preprocessing you want to and apply them.
+
+Third use feature tools to build new features and then SHAP to select the amount of features you want.
+
+Fourth choose any algorithm you want with the hyper params and build the model.
+
+Fifth choose the optimization technique and get an optimised model.
+
+At last, get the report, model.pkl, and processor.pkl and use them wherever you want.
+
+
+As of why this project would be extremely good in research as researchers needs to test with different techniques and different models to get the best thing out and this tool provides that,
+
+This tool will in a semiautomatic way can fully do each and everything by itself, no coding required.
+
+The version 2 of this project is in production and I are introducing much more than the previous version,
+For example, Parallel model building, Simple Ensemble design and Staged Ensemble design.
+
+And also the thing that no one as of today has ever implemented in their ML automation tool, Meta-Heuristics Algorithms for feature selection.
+
+
+Version 2 will be one of the most mind blowingly incredible release of the SemiAuto
+
+Comments:
+- Don't really want to dehype you on your project which you're passionate about, but a slight reality check.
+
+First, this likely won't be used for research. Research needs a high degree of customization, while this looks like a low-code (i.e. functionally limiting) wrapper aimed for non-ML product people or juniors.
+
+Second, you should clearly document what exactly your tool is/will be capable of. Which input formats it can work with, what preprocessing steps and models are available, what kind of model optimization can be done, etc.
+
+Third, you didn't mention how do you interact with it. Is it a pypi package, or a web app, or do you run it in CLI, or something else? Open sourcing it would be a plus too.
+
+Lastly, you say it's mind blowing and the best thing ever. That's a bold claim without solid evidence behind it, this might hurt your credibility. Also such hype combined with little technical detail suggests you maybe still be early in your ML career. Maybe try to gain more work experience first to better understand which parts of ML pipelines are the most problematic. Irl projects differ significantly from uni/online course practice projects.
+
+Anyway, don't be discouraged, this looks like a solid project, likely will attract attention of many hiring managers.
+- Hi, congratulations on this project. Please provide the link to try out.
+- Well, if you already have a data.csv with tabular data and a target you have done 99% of the work of a professional data scientist :D 
+
+So nice work, it's good you have learned a few things but I don't really see a useful application for this.
+- The webapp is of FastAPI and one can either visit the app directly, or can install and import my pypi package semiauto.
+
+I didn't mention much because it is not completed yet, hence I still want this to be a little hidden, the entire codebase is on my GitHub profile, This project is meant to be an automation tool for MLOps, as it requires training multiple models with multiple parameters. I am also collaborating with multiple university's professors and adding a lot more in version 2. Completely new algorithms like Meta-Heuristics and some of my own personal algorithms that helped me. This will be an open source.
+
+I appreciate your points too, I did build some industry grade projects and understand multiple aspects of it. MLOps is my main field and I always procrastinate while experimenting part so I just chose to automate it fully.
+
+I do have some technical details around ML too, my newest version is solving a lot of problem with those.
+
+Yeah, I sure do lack the work experience as I am still in college and don't have much time but I surely know what most data scientist look for. Something that automates their data validation process.
+
+Side note:- I was trying some Kaggle competition data in it too and I was actually winning in most of them. So it could be good in that too.
+
+The thing is that, Yeah, I do lack knowledge. But I just poured every bit of my current knowledge in this project. And also more thanks to the Professors. And there are multiple things I need to put it in too, like time series, NLP and all that. But as of now This project is going really good and results are getting better. When It will be launched it will be much better
+- Wait, I need to configure the network and cloudflare tunnel for the newest version. It will be available shortly
+- It is meant to automate the MLOps experimentation process, it is not just for Data scientists.

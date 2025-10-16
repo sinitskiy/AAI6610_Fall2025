@@ -1,0 +1,43 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cmgzbx/better_gpu_for_ml/
+Title: Better GPU for ML?
+
+Content:
+Right now I'm choosing between RTX 4060 Ti 16GB and RTX 4070 Ghost 12GB (cost is exactly the same). What's better for machine learning and LLMs (and possibly physics simulations)? More VRAM sounds better as I would be able to host 7B LLM models without quantization, but with RTX 4070 I will have better performance (but on quantized models).
+
+My additional reason for buying GPU is gaming, and that's where RTX 4070 shines. 
+
+I am also open to other options - I have heard that 30xx series are performing well too, but I didn't get deep into them.
+
+Comments:
+- I bought a 4070 “for ML”, its great
+- Anything worth doing in the ML space that benefits the use of a GPU is better served with cloud instances. 
+
+If you want a good gaming GPU for gaming, don’t try to write it off as an expense for ML training.
+- Go to r/localllama for advices. They have a lot of similar posts every day that should be able to help you.
+- The biggest limiter is generally vram. So the most cost effective gpu right now that can host the biggest models is undoubtedly the 3090
+- I bought RTX3090 for ML. Yet to do any ML, but the games run great
+- Don’t gaslight yourself into thinking you need a fancy GPU for ML. Everything is pre trained or can be done on cloud. 
+
+If you want to get a nicer GPU for gaming just do it.
+- More memory.
+- More system vram is best. Everything else is trivial. I wish I had gone bigger than my 3070ti which is for gaming, but a 3090 I could host bigger models
+- [https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
+
+Both have Compute Capability 8.9 so I would go for whichever has the highest VRAM if not needing to chunk things matters to you (IMO this shouldnt be a factor as there is always going to be a situation where you need to work with larger datasets than GPU memory) - I would go for the 4070 as it has the better processing power.
+- 7..mmy5yyn
+- nvidia uwu
+- I would go for RTX 4070. I am using it, and it runs well enough
+- 4070ti is the most Cost/profit option
+- Do people here actually do ml stuff outside of work? I would get kinda burned out from that tbh
+- I bought a 7900 XTX because was mandatory for my masters in AI... also great!
+- Recently I also got a 4070, and I'm starting with LLM. Do you think there's a better quantization method to use with a 4070? With faster and better responses?
+- Yep, I bought a used one 'for that reason'. Works great. And also runs cyberpunk really great.
+
+... totally unrelated, of course.
+
+But seriously, training neural networks with keras or training a lora for stable diffusion are also much more fun now.
+- What if I get one thats good for both because I like both?
+- The most useful answer here, thank you
+- Short answer: yes. Long answer: also yes.
+Some people LIKE their job and the work

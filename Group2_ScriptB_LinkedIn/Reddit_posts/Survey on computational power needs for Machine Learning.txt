@@ -1,0 +1,16 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1n1g4jp/survey_on_computational_power_needs_for_machine/
+Title: Survey on computational power needs for Machine Learning
+
+Content:
+As part of my internship, I am conducting research to understand the computational power needs of professionals who work with machine learning and AI. The goal is to learn how different practitioners approach their requirements for GPU and computational resources, and whether they prefer cloud platforms (with inbuilt ML tools) or value flexible, agile access to raw computational power.
+
+If you work with machine learning (in industry, research, or as a student), I’d greatly appreciate your participation in the following survey. Your insights will help inform future solutions for ML infrastructure.
+
+The survey will take about two to three minutes. Here´s the link: [https://survey.sogolytics.com/r/vTe8Sr](https://survey.sogolytics.com/r/vTe8Sr)
+
+Thank you for your time! Your feedback is invaluable for understanding and improving ML infrastructure for professionals.
+
+
+
+Comments:

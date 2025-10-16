@@ -1,0 +1,22 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jivm2w/should_i_do_a_phd/
+Title: Should I do a PhD?
+
+Content:
+So I am finishing up my masters in a biology field, where a big part of my research ended up being me teaching myself about different machine learning models, feature selection/creation, data augmentation, model stacking, etc.... I really learned a lot by teaching myself and the results really impressed some members of my committee who work in that area.
+
+I really see a lot of industry applications for computer vision (CV) though, and I have business/product ideas that I want to develop and explore that will heavily use computer vision. I however, have no CV experience or knowledge.
+
+**My question is, do you think getting a PhD with one of these committee members who like me and are doing CV projects is worth it just to learn CV?** I know I can teach myself, but I also know when I have an actual job, I am not going to want to take the time to teach myself and to be thorough like I would if my whole working day was devoted to learning/applying CV like it would be with a PhD. The only reason I learned the ML stuff as well as I did is because I had to for my project. Also, I know the CV job market is saturated, and I have no formal training on any form of technology, so I know I would not get an industry job if I wanted to learn that way.
+
+Also, right now I know my ideas are protected because they have nothing to do with my research or current work, and I have not been spending university time or resources on them. How/Would this change if I decided to do a PhD in the area I my business ideas are centered on? Am I safe as long as I keep a good separation of time and resources? None of these ideas are patentable, so I am not worried about that, but I don't want to get into a legal bind if the university decides they want a certain percent of profits or something. I don't know what they are allowed to lay claim to.
+
+Comments:
+- If you have an idea that you want to take to market and you are passionate about it, I wouldn’t try to work through the path of a PhD to pursue it. By the time you are able to develop it while juggling school the market for whatever it is you’re interested in will have likely shifted substantially. I’ll never recommend against school, but the cogs of university life move slowly and slow you down with them
+- It’s either you do PhD or PhD will do you. Hope you make a good decision.
+- Whatever business idea you have, implement it now or concurrently with your phd. Market changes every quarter. The focus shifts due to technological advancements. Make a place in market and keep adapting to changes. 
+
+As for your phd, you can surely do that for the sake of learning and improve whatever business idea you have thought of through that research.
+- PHD is for deep research and free time to think without bothering about profits.
+Startup is again deep research and thinking but without free time or option to ignore profits.
+- can't figure out whether to laugh or cry :/

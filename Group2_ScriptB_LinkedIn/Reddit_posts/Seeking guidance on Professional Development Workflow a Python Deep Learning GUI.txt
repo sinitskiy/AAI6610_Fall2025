@@ -1,0 +1,27 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1g6fz1k/seeking_guidance_on_professional_development/
+Title: Seeking guidance on Professional Development Workflow a Python Deep Learning GUI
+
+Content:
+Hi everyone, I am a working student in Germany and I've been assigned a solo project by my company, but I haven't received much guidance from my supervisor or a clear professional workflow to follow. I'm currently a second-year student in an AI Bachelor program.
+
+Project Overview: The project involves developing a Python GUI that enables users to perform an end-to-end deep learning workflow. The functionality includes: Annotating, augmenting, and preprocessing images; Creating deep learning models using custom configurations. The goal is to make this process code-free for the users. From the beginning, I was tasked with building both the backend (handling images and training DL models) and the frontend (user interface).
+
+Project Nature: I believe my project lies at the intersection of software engineering (70%) and deep learning (30%). My supervisor, a data scientist focused on deep learning research, doesn't provide much guidance on coding workflows. I also asked my colleagues, but they are developing C++ machine vision applications or researching machine algorithms. So they aren't familiar with this project. There's no pressing deadline, but I feel somewhat lost and need a professional roadmap.
+
+My Approach and Challenges: I've been working on this for a few months and faced several challenges:
++ Research Phase: I started by researching how to apply augmentations, use deep learning frameworks for different use cases, and build user interfaces.
++ Technology Choices: I chose PyQt for the frontend and PyTorch for the backend.
++ Initial Development: I initially tried to develop the frontend and backend simultaneously. This approach led to unstructured code management, and I ended up just fixing errors.
+
+Inspiration and New Direction: Recently, I discovered that the Halcon deep learning tools have a similar application, but they use C++ and it's not open-source. Observing their data structure and interface gave me some insights. I realized that I should focus on building a robust backend first and then design the frontend based on that.
+
+Current Status and Concerns: I am currently in the phase of trial and error, often unsure if I'm on the right path. I constantly think about the overall architecture and workflow. I just realized that if I am given a task in a company, so it's straightforward. But if am given a solo project, it's kind of hard to define everything. 
+
+I am seeking advice from professionals and senior engineers with experience in this field. Could you recommend a suitable workflow for developing this GUI, considering both software engineering and deep learning aspects?
+
+Anyways, I still want to do my best to complete this project.
+
+Thank you all for your help!
+
+Comments:

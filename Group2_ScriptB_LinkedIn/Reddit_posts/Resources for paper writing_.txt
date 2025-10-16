@@ -1,0 +1,9 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1n01lkk/resources_for_paper_writing/
+Title: Resources for paper writing?
+
+Content:
+Guys, I recently published a machine learning in drug discovery research paper and although I am proud of that, I feel there’s a need to improve my scientific writing skills especially literature review, and the sound I use to convey the message. Does anyone know of any online FREE resources I can get help from? They can be anything (YouTube videos, books, courses). I will be thankful!
+
+Comments:
+- IMO the best way is to just read papers in your field and emulate the style of authors you enjoy reading. It’s all about finding the writing style that is easiest for you to read, as that is typically the style that is easiest for you to write.

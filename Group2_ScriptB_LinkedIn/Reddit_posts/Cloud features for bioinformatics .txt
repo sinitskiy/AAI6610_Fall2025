@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1c0skiv/cloud_features_for_bioinformatics/
+Title: Cloud features for bioinformatics 
+
+Content:
+Often times in university infrastructure I faced storage and memory issues on the machines I was working on.
+
+Storage was still okay if I managed files well (removing .bams when not needed, compressing etc), but memory for high performance jobs such as alignment or data wrangling on large files was more of a challenge. Submitting jobs on a cluster was what I had learned, but I remember I never quite liked it. I remember always wondering, “I wish I could just duplicate my machine with 4x the RAM”. Although I know the ideal protocol is to work on a smaller subset of your data and then submit to a cluster, I found it annoying and often slowed me down.
+
+Now I’ve got some experience knowing how to use AWS instances and can rent machines (with specs and storage as required) quite easily, and with Docker I can turn any machine to have all the tools I use ready at my fingertips (big up bedtools).
+
+I am wondering if people also faced similar issues, and if they still do, what are their solutions?
+
+Comments:
+- The best thing about cloud computing is resources on demand. The worst thing is lack of transparency in costs up front. It's pretty damn difficult to figure out ahead of time how much money you're going to spend. Storage is also expensive and people typically forget about that. 
+
+It's not a perfect fit for all cases based on that. I say this as someone who worked for a company that built and sold a bioinformatics cloud computing platform (fancy GUI, CLI tools, and libraries for interacting with AWS infrastructure to abstract away that stuff). I have serious doubts about the bioinformatics platform space. It's full of companies that provide little of value, and those that do only make sense for huge compute jobs, huge numbers of compute jobs, or doing the absolute most basic things with no customization. These situations are served in academia or large companies by HPCs most of the time just fine, but it can be annoying to submit jobs and wait for them to run. In grad school I preferred to run jobs on a local server that was basically e-waste because it was faster than submitting jobs and waiting for them to run most of the time.
+
+However, depending on your work and any privacy considerations, you can absolutely upload to AWS, Azure, GCP, Linode, Digital Ocean and run things there. 
+
+Since you're in academia may I suggest another alternative? Look into Cyverse (Cyverse.org). I worked with them quite a bit in grad school since it's based out of U Arizona. You may be able to do many cloud computing tasks for $0. Depending on how they're running it these days.
+
+I have gone full-circle at my midsize biotech where there is one bioinformatics person (me). I run 90% of jobs on a single Linux server that I also sysadmin on prem.
+- > I am wondering if people also faced similar issues, and if they still do, what are their solutions?
+
+We simply sat in front of the PIs and said we needed our own infrastructure (1 computing server + 1 storage server with room for more in the rack). We provided pros and cons and discussed how it would improve our lives and most importantly how it would improve the research output. Plus we had fun building it.
+- Nextflow Tower/Seqera platform is pretty great for running large jobs in the Cloud. If you go the AWS route you can have seqera platform create an AWS batch cluster and all you’ll need to do is upload and download files from S3 to run pipelines.
+- This is a fantastic response! I'm not in academia anymore but thanks a lot for Cyverse, I'm checking that out now.
+
+I really couldn't agree more. Bioinformatics is a junkyard and will always remain so. All of the platform companies claim to be guardians of this junkyard by 'streamlining' set pipelines but they honestly provide little value unless yes you're processing thousands of samples with roughly identical parameters everyday, which, I don't see a huge use case of (just my opinion, I may be wrong). You HAVE to get your hands dirty doing bioinformatics and the more you shy away from a terminal and click buttons, in my experience the worse it gets. 
+
+Yes, figuring out cloud costs (especially AWS) is indeed tedious. Ideally, having servers is great but that comes with up front setting up costs, time, space, and perhaps a system admin. I imagine this could get costly as well...
+- Nice, that's ideal! How did that sustain over time? I always thought setting up serves meaning having a rep sys-admin or an experienced student/post-doc being the point person for all things technical. Was that an issue?
+- In my experience Tower has not been great. Very often s3 to s3 data transfers for a single run fails due to unknown reasons and they've not been able to properly address that yet.
+- Gotcha. I'm not sure where I saw you say something about academia. Maybe I'm an AI and it was a hallucination 🙃.
+
+Yes, there is definitely a cost in terms of sys admin for having a local server, but cloud computing also requires some annoying management just of different types.
+
+I'm 100% with you on the platforms. Some people spend a lot of time, effort, and money avoiding learning how to do things.
+- We just kept the machine up to date and followed the instructions/policy from the university's IT team regarding security. For storage, we went for raidz3 to have some time to replace faulty drives in case of problems, works like a charm. 
+
+For the rest, if you don't give everyone superuser rights and have proper file access/permissions, they hardly can fuck up the machine. We just learned along the way, made some mistakes and that's it.

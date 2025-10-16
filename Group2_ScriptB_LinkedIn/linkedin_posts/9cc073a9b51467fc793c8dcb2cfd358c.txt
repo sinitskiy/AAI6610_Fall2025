@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/swayam-singhal_completion-certificate-for-natural-language-activity-7274136265338302465-tRWV
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Swayam Singhal的动态
+Swayam Singhal
+
+Python Programmer | AI ML | NLP CV | Generative AI | Student at Netaji Subhas Institute of Technology
+
+9 个月
+
+🎉 Excited to share that I’ve completed the Natural Language Processing with Probabilistic Models course from deeplearning.ai! This is the second course in the NLP specialization, and it’s been an incredible learning experience.
+
+Here's a quick breakdown of what I learned:
+📌 Week 1: Built autocorrect models using a dynamic programming algorithm which calculated word distances.
+📌 Week 2: Explored part-of-speech tagging using concepts from Markov chains implemented via the Viterbi algorithm, which uses dynamic programming.
+📌 Week 3: Created autocomplete models using n-gram probabilities (ever wondered how mobile phone word suggestions work; spoiler: this is the answer).
+📌 Week 4: This week for me was a great refresher on core neural network concepts where we learned to train a CBOW(Continuous Bag-of-Word) model from scratch, generating dense word embeddings that store semantic meaning far better than one-hot encodings.
+
+Thanks to the course instructors for making such informational and hands-on content! I highly recommend this course to anyone looking to build a strong foundation in NLP. Understanding these concepts is key to advancing modern NLP systems and would provide you more ideas and perspectives when working on real-world NLP problems. 
+
+Next up: Sequential Models – can’t wait to dive in! 🚀
+
+#NLP #MachineLearning #DeepLearning #AI #NaturalLanguageProcessing #deeplearningai #WordEmbeddings #cbow
+
+Completion Certificate for Natural Language Processing with Probabilistic Models
+coursera.org
+4
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,120 位关注者
+
+64 则动态
+查看档案  关注
+探索相关领域
+Challenges and Benefits of Deep Learning in AI
+How to Improve AI Assistant Natural Language Processing
+How to Build AI Literacy for Continuous Learning
+How AI Models Are Trained for Reasoning Tasks
+AI Learning Roadmap for Newcomers
+How

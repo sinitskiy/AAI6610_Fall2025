@@ -1,0 +1,21 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/rh2yzo/tcell_immunity/
+Title: T-cell immunity
+
+Content:
+I have a general understanding of how the body generates antibodies in response to mRNA vaccines but I don't understand the T-cell / Killer T-cell / Helper T-cell side at all.
+
+I have looked online and the information I can find falls into two categories:
+
+1. You get a vaccine and magic happens. They do go into some more detail about how vaccines activate the immune system to build antibodies.
+2. Papers that require a Phd to understand
+
+I thought I read somewhere that T-cells learn how to hunt down infected cells by hoovering up the cell and virus debris from dead cells that were infected. But that can't be right or at least not complete, because mRNA vaccines do not kill the host cells (as far as I understand) but they do induce T-cell immunity.
+
+Can someone help me understand how mRNA vaccines induce T-cell immunity?  Thanks!
+
+Comments:
+- In short: the mRNA vaccine is internalized by various cell types. Many of these cell types, especially dendritic cells, efficiently present endogenously produced protein (directly translated from the mRNA delivered by the vaccine) on MHC class I molecules. MHC class I presentation is how T-cells first get shown/signaled to begin recognition of the protein target and their subsequent T-cell evolution. Hope this helps!
+- Look up the MHC complexes. It might help your understanding. Also, I think antibodies finding their target triggers macrophages and killer cells. Which would lead to destruction of the spike protein leaving viral peptides in the area. But I'm not an expert, I took a class 5 years ago and probably need to read more about it.
+- Thank you! That helps a lot.
+- Thank you! I'll give it a read.

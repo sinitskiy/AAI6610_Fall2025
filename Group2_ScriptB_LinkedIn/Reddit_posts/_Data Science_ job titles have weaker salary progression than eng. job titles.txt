@@ -1,0 +1,59 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1dprzcb/data_science_job_titles_have_weaker_salary/
+Title: "Data Science" job titles have weaker salary progression than eng. job titles
+
+Content:
+From this analysis of \~750k jobs in Data Science/ML it seems that engineering jobs offer better salaries than those related to data science. Does it really mean it's better to focus on engineering/software dev. skills?
+
+  
+IMO it's high time to take a new path and focus on mastering engineering/software dev/ML ops instead of just analyzing the data.
+
+
+
+Source: [https://jobs-in-data.com/salary/data-scientist-salary](https://jobs-in-data.com/salary/data-scientist-salary)
+
+https://preview.redd.it/ravz54z7d49d1.png?width=1920&format=png&auto=webp&s=f2af1acb10b9eb47cb9e632d572f24f17b97be05
+
+
+
+Comments:
+- Plastic surgeons make even more money - it's high time to take a new path and learn how to cut people up.
+
+Being a partner at a law firm makes more money - it's high time to start learning about tort law. 
+
+If you enjoy software engineering work you should absolutely work in software engineering. If you enjoy data science more, you should work in data science.
+
+Here's the thing no one talks about: if you actually like what you do, you're much more likely to move up that ladder. Being an excellent data scientist is way more lucrative than being a mid developer.
+- I like doing data work - I don’t like doing software engineering work.
+
+Imagine that!
+- [deleted]
+- One thing to point is that MLops is likely a very specialized field where there are fewer entry roles and more senior IC positions.
+- I don't think you can pull that conclusion out of the data. Ask yourself why they are paying better, what experience they require, which technologies and expertise. Is it as easy to become a mlops engineer without experience vs a ds?
+- It's been this way since 2022 if not earlier. People care about putting things in production
+
+Only thing that doesnt match observation is research scientist, esp in ml, are usually the top paid ic roles, also the rarest, so weird that number of responses is so high and salary is so low
+- Me earning 40k/yr as a senior ML Engineer:
+
+😎
+- Not useful without further segmentation. Regional pay scales and company pay grade bands will have an outsized effect. Furthermore, if you consider DS and SWE only, they are blanket terms that don't describe the roles. You'll need a way higher sample size if you want to ignore all of these.
+- They all get over 100k your not gonna starve if you get a job in any of those fields lol
+- You need to add another dimension to this, company type, big tech blows past these figures. Also I'd expect statisticians in pharma for instance are better paid than their software engineering peers.
+- Before everyone tries to pivot to MLE / MLOps Eng: they're paid well for a reason as they require you to know junior-level stats theory, be versed in DS concepts though not the expert, be able to understand high performance infra, decent software engineering principles, and know the specific MLOps theory/concepts.
+
+by all means folks go for it but you need to know a lot.
+
+And that's not getting into the subset of MLE who then need to know nitty gritty ML inference optimisations, CUDA kernels and the like.
+- Whats the huge amplitude with staticians?
+- People only focus too much on income and not so much on what you enjoy doing. Ive only seen this on reddit though or in USA.
+- I'm going to need to know whether there's actually a statistically significant difference between DS and SWE salaries - from the range chart provided I would guess probably not. 
+
+And where are you getting that ~750K number from? Your samples are nowhere near that.
+- For what it's worth the difference in pay becomes increasingly insignificant the more you make
+- Well - yeah. Engineers are deploying stuff to prod.
+- huh, didnt know some stats jobs paid that good.
+- I see 'data science' in industry as a spectrum between on one end analysts who can do statistical testing and whose output is powerpoint decks and on the other data scientists who are basically engineers building customer facing production ML apps. There's going to be a pretty hard ceiling on the earnings of the former unless they move into more general management tracks (in ops, marketing, etc.). For that latter you can follow an engineering job track and rise up the L levels but it will come to resemble SWE roles more and more. Generally speaking building apps is higher value to companies than just doing analysis and as such those roles will pay more and have more opportunity for growth as an IC.
+
+This is not to say you have to become a SWE if you don't like that kind of work, just that it's an easier path to making more $$$.
+- Disappointing
+- ML/MLOps engineer jobs are absurdly competitive. MLOps is also a lot of DevOps-y work. If you like that, then yeah MLOps could be good,  but if you don't like DevOps, then it doesn't really make sense to do MLOps just because of "ML" in the title.

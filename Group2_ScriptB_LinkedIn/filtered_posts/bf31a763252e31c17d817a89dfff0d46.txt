@@ -1,0 +1,103 @@
+URL: https://www.linkedin.com/posts/archit-datar_ml-uncertainty-activity-7285657127224827904-1P3E
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Archit Datar的动态
+Archit Datar
+
+Senior Scientist, Data Science | PhD, Computational Materials Discovery | Graduate Minor in Statistical Machine Learning | ex-DuPont | ex-Dow
+
+8 个月
+
+🚀 Introducing ML-Uncertainty 1.0.0 🚀 
+
+ML uncertainty is a Python package that provides a scikit-learn-like interface to enable users quantify uncertainty in machine learning models and generate prediction intervals for predictions in less than 4 lines of code.
+
+This package is designed to add interpretability and robustness to your ML workflows by make uncertainty estimation more accessible and seamless.
+
+🌟 Key Features:
+✅ Works for linear and non-linear regression models as well as random forest models
+✅ Works with multivariate input data
+✅ Model training can be performed with scikit-learn as usual; ML-uncertainty works on top of scikit-learn.
+✅ Provides uncertainties in parameter estimates in regression tasks
+
+🔗 Get Started:
+👉 Install with: pip install ml-uncertainty
+👉 PyPI: https://lnkd.in/d-JxXXg9
+👉 GitHub repo: https://lnkd.in/dMpb4XDZ
+👉 Examples:  https://lnkd.in/dsxzUMGA
+
+Please give it a try. Looking forward to your thoughts.
+
+#machinelearning #scikitlearn #statisticalML
+
+ml-uncertainty
+pypi.org
+72
+8 条评论
+赞
+评论
+分享
+Vishwanath Dalvi
+
+R. A. Mashelkar Assistant Professor at the Institute of Chemical Technology, Mumbai
+
+8 个月
+
+Great contribution Archit!
+
+赞
+回复
+Niranjan Sitapure, PhD
+
+Building AI Agents for Engineering | Ex-Bain | PhD in AI/ML | CSM | Texas A&M
+
+8 个月
+
+Excellent work Archit
+
+赞
+回复
+1 次回应
+Michael Heiber
+
+Materials Informatics Leader at Enthought | Transforming specialty chemical R&D through applied digital innovation.
+
+8 个月
+
+How do the methods in this package compare to those available in the MAPIE library? https://mapie.readthedocs.io/en/stable/
+
+赞
+回复
+1 次回应
+Sunil Thosar
+
+8 个月
+
+Insightful!
+
+赞
+回复
+1 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+1,424 位关注者
+
+38 则动态
+查看档案  关注
+探索相关领域
+Latest Trends in Machine Learning
+How to Include Uncertainty in Optimization
+Ti

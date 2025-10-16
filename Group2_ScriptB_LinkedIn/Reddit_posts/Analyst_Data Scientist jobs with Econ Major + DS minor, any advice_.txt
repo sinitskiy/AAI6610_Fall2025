@@ -1,0 +1,137 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1g1m0gn/analystdata_scientist_jobs_with_econ_major_ds/
+Title: Analyst/Data Scientist jobs with Econ Major + DS minor, any advice?
+
+Content:
+Hello, I'm currently pursuing an undergraduate Economics degree with a minor in Data Science (76 and 40 credits respectively) in Israel. I'd like to know if this is a viable path for analyst/data science type jobs. is there anything important I’m missing or should consider adding?
+
+***Courses I already did:***
+
+*(All taught in the Statistics department)*
+
+* Calculus 1 and 2
+* Probability 1 and 2
+* Linear Algebra
+* Python Programming
+* R Programming
+
+***Economics Major (76 credits):***
+
+* Introduction to Economics A & B
+* Mathematics for Economists
+* Introduction to Probability
+* Introduction to Statistics
+* Scientific Writing
+* Introduction to Programming
+* Microeconomics A & B
+* Macroeconomics A & B
+* Introduction to Econometrics A & B
+* Fundamentals of Finance
+* Linear Algebra (taught in Information Systems Department)
+* Fundamentals of Accounting
+* Israeli Economy
+* Annual Seminar
+* Data Science Methods for Economists
+* ***ELECTIVES***(Only 3):
+
+*Note:  I think picking the first 3 is best for my goals, given they're more math heavy*
+
+1. Mathematical Methods
+2. Game Theory
+3. Model-Based Thinking
+4. Behavioral Economics
+5. Labor Economics
+6. economic Growth and Inequality
+
+***Data Science Minor (40 credits)***
+
+*Taught by Information Systems department (much more applied focus, I think)*
+
+* Introduction to Computers and Programming
+* Object-Oriented Programming
+* Discrete Mathematics and Logic
+* Design and Development of Information Systems
+* Database Systems
+* Data Structures and Algorithms
+* Machine Learning
+* Big Data
+* Business Intelligence and Data Warehousing
+
+Thanks for any advice!
+
+Comments:
+- You literally have data science as a minor. Ofc. It’s a viable path and you’re employable.
+
+You can probably benefit from practical experience with internships. There you will also see if you have deep holes somewhere.
+
+To a lot of Data scientists basics of SWE are also helpful. 
+
+
+My personal hot take is that being a good coder (and many ds people aren’t) is a huge advantage in data work. 
+
+Learn to use an ide, and when to quit notebooks. Learn tools tools like linters, git, data versioning, docker, and some package management system like pip or poetry if you use python.  (or nix, if you want the cool stuff). 
+
+Check out the library ecosystem. I know python best, so look into matplotlib, seaborn , pandas (polars if you’re fancy), numpy, scikit learn, scipy and the python standard lib. Sktime if you’re into time series.
+
+Pytorch, jax/flax if you’re into deep learning too.
+
+The libraries are hopefully covered to a large part in your minor. Taking oop, reading about design patterns will also be helpful.
+- I’d honestly look into financial data science applications. They’d love the Econ ds intersection
+- Just add statistics and econometrics and you’ll understand 70% of all Data Science
+- Target fintech, banks and nbfc institutes. I am also from economics background and it really gives me an upper hand when it comes to explaining to stakeholders about impact to the project we are doing.
+- I currently work at a bank as a data scientist. A master's was required for my position tho.
+- I would do more upper division math. Lots of people don’t understand math and while I wasn’t the best at those upper division courses I think it’s helped me interpret concepts for business cases really well in healthcare. Also most economics courses teach lay math while actual economic models require a ton of math. It also helps you call people out on stupid stuff they propose.
+- This likely won't surprise you, but my main piece of advice is: network, network, network.
+
+Expand your connections on LinkedIn to all the people you know.
+
+Then find 1st or 2nd degree connections who represent career paths you think you might like to have; people whose jobs you might want to be in, in 2, 5, 10, or 20 years.
+
+Ask for introductions from mutual connections, and then ask the professionals if you can take them out for coffee, to understand how they see the landscape. You'll be amazed how many say yes.
+
+What they'll likely tell you is that this level of detail on your coursework doesn't matter in the hiring space, relative to the skills and experience any one organization is seeking for a given role you want. 
+
+For example, I know someone in quantitative trading who does several 3rd round interviews with Ivy League graduates every week. They know she's going to ask them about probability, and yet she routinely finds them unskilled in that area.
+
+You can help break through the uncertainty that firms have about you by building portfolio projects, getting any kind of professional experience, and/or developing references.
+- What methods does the course  “data science methods for economists” cover?
+- I am majoring in Data Science and still thinking if I should minor in finance or economics. What do you guys suggest?
+- that's a lot
+- Fintech would be good
+- You're in good shape. Maybe take an experimental design course if you have room for it. 
+
+For econ electives pick one where you will play with some data using a programing language. Whatever topic you are interested in works. 
+
+Internship would also be hugely helpful.
+- Thanks for the answer!
+
+I wasn't sure because, well, it's only a minor. I wasn't sure if there were enough courses, and If they were about the right topics. I was concerned that it's just not enough
+
+ Also, it's taught in the information systems department, which I think is better?
+
+Thanks for the library recommendations, so far I know only matplotlib, pandas and numpy.
+- Thats a god tier build for Finance DS, also they earn a lot.
+- Thanks, I'm going to look into it. 
+
+But in case I don't go into financial DS, is it good for other options? Or mainly for financial DS?
+- second that
+- Thank you for answering. 
+
+Not sure what you mean. There is econometrics 1 and 2. I already took probability 1 and 2, and there are a few more courses that have a lot of stats in them. 
+
+Do you mean to take higher level stats and econometrics or did you not read the post lol?
+- Thanks for the answer. 
+
+
+I could potentially do a master's in statistics. If I do, probably after I have a year or two of experience. 
+
+Other than that, what do you think about the courses?
+
+Edit: Totally unrelated, but I have noticed that you have exactly 666 comment karma as of this moment.
+- Thank you for the advice.
+
+What upper division courses would you recommend?
+- Thanks a lot for the answer!
+
+
+In regards to projects, which ones would you recommend to do?

@@ -1,0 +1,108 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n71dzv/a_friendly_starter_paper_entropyguided_loop/
+Title: A friendly starter paper - Entropy-Guided Loop: Achieving Reasoning through Uncertainty-Aware Generation [R]
+
+Content:
+Hey r/MachineLearning 
+
+I had this idea and wanted to put it in a very simple and straightforward way, tried to make the paper easy to read and starter friendly! Also it shows my research partner focus on uncertainty measurement from metrology, which I think it’s not very widely addressed in ML and NLP! 
+
+The motivation here came while doing exploration at the Weights & Biases Sunday cafe event in SF, where we were exploring their observability Weave Product. I think running loops and adding more complex tools that I did for the paper, should be production valuable and help in a bunch of ways, but most importantly, help with making small models
+More useful and a kind of reasoning process of sorts. In the future it might be useful to make this loop inside the model before output layers, anybody think of any cools applications for such methods ? 
+
+
+[Title]: Entropy-Guided Loop: Achieving Reasoning through Uncertainty-Aware Generation
+
+[Abstract]: Reasoning models often outperform smaller models but at 3--5× higher cost and added latency. We present entropy-guided refinement: a lightweight, test-time loop that uses token-level uncertainty to trigger a single, targeted refinement pass. We extract logprobs, compute Shannon entropy on top-k alternatives, and apply a simple OR-logic trigger over perplexity, maximum token entropy, and low-confidence-token count. Unlike approaches that use entropy only for measurement or decoding, we pass a compact uncertainty report (tokens, confidences, alternatives, context) back to the model to guide corrective edits. On representative technical queries across reasoning, mathematics, and code generation tasks, a small model with our loop approaches 95\% of a reference reasoning model's quality at approximately one-third of the cost. The method achieves selective refinement on ~31\% of responses while improving accuracy by 16 percentage points over single-pass inference. We demonstrate that this uncertainty-aware loop provides an effective middle ground between single-pass inference and expensive reasoning chains, making it practical for production deployments where both quality and cost matter.
+
+https://arxiv.org/abs/2509.00079
+
+If you don’t like it, let me know! Am open to critique and learning! 
+
+Comments:
+- Seems similar to this: https://arxiv.org/html/2508.15260v1
+- Really cool, sounds like it could be useful for model routers and hybrid reasoning models to determine when to reason more.
+
+But i dont understand why the reasoning model wasnt specified in the results table, from the earlier reference it sounds like deepseek was used. Why not compare gpt 4o mini with o4-mini, or deepseek v3 with r1, model pairs that have the same “base” model? Would also be interesting to compare results to routers/hybrid models that exist right now like gpt-5 or deepseek v3.1
+- Nice find. The uncertainty quantification for CoT is clever. Have you tested if it generalizes beyond math problems?
+- I was aware of some of these statistical tools but this implementation is really nice and efficient
+- I like the efficient implementation. There are some older papers on robust neural networks you should check out.
+
+
+But there have been related methods that basically perform perturbations in latent space that this reminds me of. 
+
+
+I do have a related book with a published pdf that I like, which I can share with you. 
+
+
+Also, I am curious if this can be used to help simplify some agent designs. I also would love to use some of the encoding importance to improve design.
+- Interesting approach to balancing cost and quality. The concept of using an uncertainty report as a feedback loop is clever. We're focused on higher-level process loops, but this token-level refinement is neat.
+- first
+- Thanks for pointing this out! i just read it(Deep Think with Confidence). at the surface it does feel related because both works turn token-level uncertainty into test-time behaviour, but I think shape is sufficiently different:
+
+DeepConf is a multi-sample “parallel thinking” method: spin up many traces, compute local confidence metrics (groups/tails), early-stop weak traces, filter/weight the rest, then vote. It should be good / relevant when you can afford non-trivial sampling budgets; the gains come from selecting better traces and not wasting tokens on obvious low-confidence.
+
+Now EGL (Entropy guided Loop) is a single-path with one targeted refinement. I run the model once, compute a few simple signals (per-token entropy, perplexity, low-confidence spans), and only if those trip a threshold, I create a compact uncertainty report (what looked bad, alternatives, brief context) and ask the model to rewrite that answer once conditioned on the report. no n-way sampling, no voting, no engine mods—just a drop-in inference layer you can put in front of an API model. The focus is predictable latency/cost, engineering implementation and observability, not leaderboard SOTA.
+
+So, same theme (use uncertainty at inference), different action:
+	• DeepConf: rank/stop/filter across many candidates, then self-consistency.
+	• EGL: feed uncertainty back to the model to repair a single candidate.
+
+Also a different deployment recipe:
+	• DeepConf is strongest when you can budget lots of parallel samples and tweak decoding internals (they patch the decode loop / confidence plumbing).
+
+	• EGL is meant for production paths and small models, most requests don’t refine; the ones that do get exactly one extra pass guided by the uncertainty report.
+
+Evaluation posture differs as well: DeepConf focus on math/logic leaderboards with bigger sample counts; I prioritised cost/latency trade-offs and human-rated correctness on more mixed tasks. that’s not a value judgment - just two targets.
+
+I actually think they’re complementary. a practical hybrid would be: run a small number of traces with their local-confidence early-stop to avoid junk, pick the best, then run one uncertainty-guided rewrite like mine on that survivor. You’d keep most of the accuracy gains while keeping costs closer to single-pass+ε.
+
+Am open to a point-by-point if you (or anyone) spot a specific section that looks similar in mechanism. Send me to the page/figure and i’ll address it directly. But as said: related idea space, different computation, different action taken, and different constraints.
+- Yes it seems like it, I will do a thorough review
+- Hey
+Didn’t feel right to specify models in the paper, the idea was to make it a broad enough concept and let people experiment with the ideas! 
+
+We do have a notebook that you can run with OpenAI non reasoning models that expose logprobs, to make it really easy to test! 
+
+https://github.com/monostate/weave-logprobs-reasoning-loop
+
+And also a quick blog post 
+
+https://monostate.ai/blog/entropy-refinement-blog
+- Yes it does! It’s a very basic tool for added reason, of any kind for that matter! I’m doing extensive tests on how it makes small models improve their outputs, specifically for failed tool calls. But it should be useful for any task, as uncertainty is inherent of model forward pass and always there! The idea is simply to start checking it and tap into it from time to time. So simple it is almost elegant, don’t you think?
+- Yes please do share what you have, it will help! 
+
+Yes I think so, any sort of techniques that are so simple yet improves outputs can and should be applied to agentic systems, but most importantly, to make small models useful! 
+
+And yes please share your thoughts on encoding importance, you can also make a PR on GitHub if you’d like to create a new script for that and add info on the readme page. 
+
+Here’s the link https://github.com/monostate/weave-logprobs-reasoning-loop
+- yeah, please give it a try and let me know! [https://github.com/monostate/weave-logprobs-reasoning-loop](https://github.com/monostate/weave-logprobs-reasoning-loop)
+
+  
+It also came out around the same time I published this other paper that I'd recommend for entropy related improvements: [https://arxiv.org/html/2508.15260v1](https://arxiv.org/html/2508.15260v1) 
+
+And also Entropix that goes into sampler: [https://github.com/xjdr-alt/entropix](https://github.com/xjdr-alt/entropix)
+- Yeah deep thinking to answer a multiple choice question that can be voted on is kind of a silly case, but it is easy to show performance that way. I was trying to go back and see what the performance improvement was in your paper but a thorough skim didn't reveal it. 
+
+I will say I've found that if a model gives me a poor answer and I follow up pointing out what's wrong about it, the result is usually still poor. I almost always go back and just regenerate the first response to get one that doesn't make that mistake and keep poor content out of my content.
+
+The first paper makes me think of doing something like beam search where you generate 512 tokens of 512 different responses, then cull the 256 worst performers and so on until you choose the most confident response at the end.
+
+Did you run your method on any objective benchmarks? I'd be curious to see your method vs a non-voting version of the confident thinking paper where you just choose the result with the most confident thinking. Something like the HumanEval coding benchmark would be cool.
+
+I could see using your method of determining key decision points and branching the responses at those points so it can explore them in parallel and then having an LLM choose the best response at the end. Or return them all and let a user decide. That could lead to a more interesting RLHF process too.
+- Hm, i see, but to me it invalidates the performance comparison to reasoning models if theyre not even from the same base model, still very interesting from a cost perspective though.
+- I don’t think that “invalidate”. the claim that matters is within the same small model:
+single-pass vs single-pass + my entropy/refine loop. that’s the whole point. the “reasoning model” row is just a yardstick for cost/quality, not the basis of the improvement.
+
+why i didn’t lock it to a named pair:
+	- i want the method to be portable (api-level, vendor-agnostic).
+	- reasoning models don’t expose logprobs on cloud APIs, you’d have to run your own reasoning model to reproduce in almost all cases 
+	- vendors shuffle versions weekly
+
+if you need a exact control, it’s easy with the notebook available: pick your base, toggle the loop, pick whatever “reasoning” anchor you like and compare.
+
+repo (notebook): https://github.com/monostate/weave-logprobs-reasoning-loop
+
+run 4o-mini vs 4o-mini+loop (or v3 vs v3+loop), then put o4-mini / r1 as your reference line if you want. You can PR on GitHub  the logs and i’ll add a “matched pair” section to the README and credit you. the pattern holds: selective refine buys back a big chunk of quality for cheap.

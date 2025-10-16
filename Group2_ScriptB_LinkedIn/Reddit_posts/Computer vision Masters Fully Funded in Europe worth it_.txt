@@ -1,0 +1,52 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jkh3ji/computer_vision_masters_fully_funded_in_europe/
+Title: Computer vision Masters Fully Funded in Europe worth it?
+
+Content:
+Hello!
+
+I got selected for Fully funded Masters in IPCV ai erasmus mundus scholarship in Hungary, France and Spain. (Each sem each country)
+
+I am currently working as Analyst(Data Science) in a MNC product based company, and I am satisfied with work ( South Asia).
+
+My goal is to get a job after Masters, and after staying(getting a job) few years in Europe, would like to return to my Home country.
+
+I would like to know, whether pursuing this Masters in Image Processing and Computer Vision (IPCV) is worth it or not for getting a good job in Europe and Other countries?
+
+Will I be able to get a good professional opportunity after this masters and preferably in Data Science or Machine Learning(something similar/ better than my current work). 
+
+Please guide me and help me to make an informed decision.
+
+Comments:
+- Yes why not?
+- Which country and how long would the course be(two year/one year) ? 
+
+How much would the overall cost for tuition and anything related to university would approximately round up to be ?
+- Can you please elaborate?
+
+My reason for this was, I could continue in my current role, and not take the risk.
+
+I categorised it as risk because, I will have to find a job in a bad and saturated job market, and if I return to my home country, I will have to compete with people with experience, and recruiters might not care about masters degree, making it more difficult for me to get a job after masters.
+- It will be in 3 countries, France, Spain, Hungary. 1 semester in each country.
+
+total 2 years course.
+
+NO TUTION Fee.
+
+I will get a monthly stipend for the entire duration of 2 years while completing this masters from EU.
+
+
+Why I am asking, whether it is worth it?
+Because, I am currently in Analytics Data Science role. Person with 4 years of experience might be more preferred for a Data Scientist job than someone with less than 2 years with Masters.
+
+And I will have to look for a job after Masters in Europe.( which might be tough).
+
+My concern is I don't want to land in a position worse than I am currently in, after my masters.
+
+
+Please share your thoughts and suggestions.
+- Maybe in your country but a Masters is valuable in many countries. It's always a risk. There's a risk in not going for a master and staying at your current job. Why do you say it's a bad job market?
+- I am not aware of the course curriculum in offer nor do I have any clue on what kind of work that you are currently involved in at your current role as a DS. So, if I were to advice you purely on the basis of the merit of the degree then I would say it depends on your end goal with the kind of roles within DS that you are specifically targetting post your Masters or if you just want to access the job market available in EU. But if you want to keep on working on the same sub field within DS as you are doing now then I don't know how much additional value a degreed course would bring to your existing skillset. In this case it might just end up being an additional tick on your resume than something that actually adds more value to your current professional skill sets.
+
+Also, if it's just to get access to the EU job market then I would say there are better ways of doing it. By directly applying to startups that are based out of tech hotspots like France, Germany, Poland, etc. Shoot your shot perhaps you may end up landing a remote role.
+- If it is fine, can I DM?

@@ -1,0 +1,16 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tl98sm/hi_everyone_do_you_guys_recommend_any_course_from/
+Title: Hi everyone! Do you guys recommend any course from coursera?
+
+Content:
+Hi everyone! Do you guys recommend any course from coursera? I have my degree on biology and I am finishing my masters degree in bioinformatics. Any usefull and popular courses that companies value? I want to improve my cv and my knowledge in order to get a good job. I want to focus mainly in deep lesrning, machine learning, AI…
+
+Comments:
+- Andrew Ng's Machine Learning Course on Coursera is a classic. Basically the course that started Coursera.
+- Since you have a masters already I would try to do small projects or recreate results of published papers and put up the code on GitHub. This way you can put it in your CV and also talk about your explorations during interviews. Coursera courses might be too basic for you.
+- You have your undergrad degree and are about to finish your Masters in bioinformatics. Aside from a PhD, I don't know how much more education an employer would need. Focus on curating the skills you've already learned, the research you've contributed to, the robust code you've written. All of that is more valuable than more classes.
+- I did the bioinformatics specialisation. It is more general stuff and not really ML, AI, but It was good. Be careful though, it may say beginner friendly with no programming experience needed, but that is not the case. You should have completed at least a "From Zero to Hero" programming course on your desired language and another one for programming algorithms. Without  those, the course will be almost impossible to complete.
+- That was going to be my suggestion as well! When I started my PhD program in sys bio my mentor immediately suggested I do this one.
+- Could you please elaborate more on this? As in what and how to do this? Thankyou
+- This is helpful.
+- I really didn't understand why they said "no programming experience needed". It mostly felt like "no biology knowledge needed".

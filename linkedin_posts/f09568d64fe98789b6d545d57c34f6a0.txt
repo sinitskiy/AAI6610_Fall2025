@@ -1,0 +1,11 @@
+URL: https://www.linkedin.com/posts/josh-tobin-4b3b10a9_simple-idea-to-reduce-llm-hallucinations-activity-7031442669964816384-syEY
+Date: 2025-09-24
+Author: Unknown
+
+Simple idea to reduce LLM hallucinations:
+1. Retrieval-augmented model
+2. Annotate examples of hallucinations
+3. Prompt/train a model that maps (context, answer) -> p_halucinate
+4. At test time, filter responses using that model
+
+Anyone tried this?

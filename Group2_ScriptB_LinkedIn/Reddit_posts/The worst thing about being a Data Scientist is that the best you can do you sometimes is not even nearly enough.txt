@@ -1,0 +1,80 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1khic8u/the_worst_thing_about_being_a_data_scientist_is/
+Title: The worst thing about being a Data Scientist is that the best you can do you sometimes is not even nearly enough
+
+Content:
+This specially sucks as a consultant. You get hired because some guy from Sales department of the consulting company convinced the client that they would give them a Data Scientist consultant that would solve all their problems and build perfect Machine Learning models. 
+
+
+Then you join the client and quickly realize that is literary impossible to do any meaningful work with the poor data and the unjustified expectations they have. 
+
+As an ethical worker, you work hard and to everything that is possible with the data at hand (and maybe some external data you magically gathered). You use everything that you know and don't know, take some time to study the state of the art, chat with some LLMs on their ideas for the project, run hundreds of different experiments (should I use different sets of features? Should I log transform some numerical features? Should I apply PCA? How many ML algorithms should I try?) 
+
+And at the end of day... The model still sucks. You overfit the hell of the model, makes a gigantic boosting model with max_depth  set as 1000, and you still don't match the dumb manager expectations. 
+
+I don't know how common that it is in other professions, but an intrinsic thing of working in Data Science is that you are never sure that your work will eventually turn out to be something good, no matter how hard you try. 
+
+Comments:
+- I'll raise you with this: The worst is that sometimes you can prove that you increase profits, but because of politics, your solution is not implemented. That sucks even more because you'd think that once you've shown value that's enough. But that's not always the case. 
+
+Working with unreasonable expectations set by sales is common in a lot of fields. Not only to DS.
+- I do start all my discussions with internal customers with the following quote from Tukey: “The data may not contain the answer. The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.”
+
+
+This is to say, that as a data scientist (well, technically a statistician), it would be dishonest for me to commit to find things than cannot be found. But what I promise is also to explain them why we can’t find an answer and what could be done to be in a better position to find answers if they do exist. Of course, you are going to lose some people over that, but you’ll build stronger relationships with those who stick because they know you won’t bullshit them. Of course, it helps when you work in a regulated field where they can’t do easily without a statistician/data scientist.
+- What's worse is when clients expect your models and analysis to simply confirm their intuition—regardless of what the data says.
+- Bonuspoints: Sales will get rewarded for *getting* the customer and you will be *punished* for disappointing them.
+- I've never worked as a consultant, but my team often acts as internal consultants for a variety of machine learning projects.  When collaborating and establishing work with others, much of it is about setting up expectations.  I normally frame it in terms of phases, but it's essentially a model life-cycle
+
+* Phase 1 - Exploration.  Understand the requirements, assemble data sets, build initial proof of concepts, establish evaluation and determine if a solution is feasible
+* Phase 2 - Prototype.  Build a usable solution.  Get validation either by piloting with customers/users and collecting additional data.  Identify limitations of approach.  Assess level of effort to operationalize and deploy.
+* Phase 3 - Operationalize.  Make solution scalable and robust for volume and scrutiny of production, real-world needs.  Establish guard rails, operating procedures, monitoring
+* Phase 4 - Iteration and refinement.  In many scenarios the data and expectations change over time.  Models need to be re-evaluated against new data, and updated as new data and new techniques emerge.
+
+If you can help stakeholders understand where they are in the process and what is needed to make it successful, you can tamp down unrealistic expectations, and also make clear that success does not hinge solely on your ability to train a good model.  This also establishes natural checkpoints where you can decide if any additional effort is worth the return on investment, if this can work in practice and if it can be handed off to others.
+- You should probably tell the manager at the very beginning when you know the data is garbage. Garbage in garbage out doesn’t change when you use magic. And start with the goal. *Why* are they asking you to do this? What’s the desired end state? Build requirements that would get you to that state, and if they can’t deliver on their side the project doesn’t happen. Don’t waste time trying to fix something that was broken from the start. And maybe have words with the sales team too if you’re at a consulting firm they should be vetting projects before committing.
+- Throughout my career, I realized the corporate game is all about: “getting something else to do shit for you” 
+
+You start wanting make things work yourself, six years later, you relax a little, let go of your ego, and you’re not bothered with trying to make things work yourself. 
+
+You could be amazing and spin gold from shit, but it’s often just easier showing them quartz you found on the street: ooooo shiny thing! 
+
+It sucks. It really does. You feel let down. You feel “I’ve studied seven years to manage expectations?!” Yeah… that’s what happens. 
+
+I’ve personally accepted I won’t be anything amazing, I will not retain my math or programming skills. It was hard letting go: I worked hard to become proficient in ML. But, trust me: businesses do not care, and i found it’s much more difficult convincing them what a star you are than just playing the game.
+- Recently a client approached me to generate an API for a solution using Microsoft azure and he wanted it to be a free task. I’m out of my words for this client. I took two days for exploration phase to understand his requirements but he wanted prototype to be done for free.
+- I had a project which I worked for 1 month, 10 hrs daily. Resulted in no meaningful solution. My manager even refused to show it higher management coz results are what they wanna look. Basically looks like I didn't do anything
+- Then you should explain in laymen terms ‘why the model don’t work’ and what else you need to make a good model
+- Well I think it’s important to decide if the business problem is even an ML problem before diving into model building. Most of the time it isn’t.
+- This problem is true internally as well - you have no idea how many projects at companies right now are starting with "so we want to use AI to make our thing better", and I have to start off the conversation with "well, why is what you have right now bad? What about it could be improved?".
+
+And the answer is often "I don't know, but you're the techinical team and you know AI, so use AI to make my thing better because it doesn't currently have AI".
+- I say remember the word Scientist exists in the title. You are largely there to research and inform; don't take it personally if business moves on without your creation and know it's okay of the results are the null because that's still science.
+- Been there, please get out of consulting if you want to succeed in data science or grow any tech skills for the matter. Join a good product company where you get ample time and leadership buy in to build and deploy ML models.
+- >And at the end of day... The model still sucks. You overfit the hell of the model, makes a gigantic boosting model with max\_depth set as 1000, and you still don't match the dumb manager expectations.
+
+After everything you mentioned prior, this was definitely going to be the outcome. There is no surprise there. If you are dealt garbage, then no matter what you fit or train, you will yield garbage. I am actually surprised that you still went through with it.
+
+I am in the same domain as yours, and this had only happened like a couple of times when I was still novice. I was relying too much on the ML and blindly applying fool-proof solutions like gradient boosting or random forests, rather than relying on the data engineering, 
+
+But as you gain experience and move up in this field, you'd learn when and how to create ML that is actually worthwhile and beneficial to the business. You would learn that 90% of the value is in the data engineering, and you would learn when not to waste your time on dead problems, and instead just solve it with a query without any modeling, which would much more likely match that "dumb manager" expectations than your scrappy, chatgpt-copied, ML approach.
+
+End of the day, there are a lot of pseudo ML Data Scientists out there. Try not to be one of them; Start thinking more business, more scientific-method, more about engineering and production-ability, and far less on just dumping data on some ML, training, and boosting,
+- I feel this coming from the UXR/market research/design research side.
+- I do data science consulting (among other data related consulting) and focus on the fictional/strategy/sales side. I agree that what you have expressed is a huge risk. 
+
+Before signing us up for this type work I try to establish:
+a) what is current practice and challenges
+
+b) that we’ve been able to address this or a similar challenge in the past or that one of our technical leaders has confidence to take on the work
+
+c) what types of data will be available and how does this compare to the types of data we have used for this type work in the past / what the technical leaders believes is needed
+
+d) agreement that we’ll follow a similar approach that u/hapagolucky laid out (Link: https://www.reddit.com/r/datascience/s/ZAVOL3EA87), specifically that we’ll prototype before committing to operationalizing - it’s good to set the expectation up front that we will bring a solid team and will time box the prototyping so that we’re not wasting their money if we can’t get to an answer in a reasonable time. This is generally appreciated because they then have things to work on and we’ve taught their people how to better qualify data science work.  
+
+Suggestion: proactively partner with the folks doing sales on to discuss things you can do together to increase the likelihood of positive client outcomes. This could come as a postmortem or early in a new pursuit
+- One of the most important things as a consultant is the consulting contract. Get together with the stakeholders and talk about what they want and what they can expect. I think the main issue here is that you try to fulfil their expectations. But at first you all need to be on the same page.
+This contract is a written and living document. As you collect more information about the data they have and what you can do with it, get together again and openly talk about it.
+Otherwise you run exactly in the issues you describe und no one wants that. Not you, not the customer.
+- We're fancy, overpaid service departments. At the end of the day, important people can just, "nah"
+- As the only ML specialist at my company, the amount of non-ML in my code is staggering. Most times I'm just using regular expressions lol

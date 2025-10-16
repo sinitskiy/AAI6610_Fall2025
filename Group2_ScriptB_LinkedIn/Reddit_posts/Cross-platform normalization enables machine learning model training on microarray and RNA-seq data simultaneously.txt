@@ -1,0 +1,30 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11p151e/crossplatform_normalization_enables_machine/
+Title: Cross-platform normalization enables machine learning model training on microarray and RNA-seq data simultaneously
+
+Content:
+
+
+Comments:
+- How is this a Nature paper in 2023? "Do quantile normalization" seems relatively straight forward, and combining data modalities is often done, especially in the single-cell world.
+- because nobody ran it on those methods and published it?
+- The journal is communications biology which is in the nature publishing group.
+
+This is not the same as the nature journal
+- That's not true. Quantile normalization has been the norm in microarray processing for a while now, and was a common approach in RNA-seq workflows prior to things like DeSeq2
+- but between both of them?
+- There are numerous papers establishing the concordance between RNA-seq and microarrays dating back a decade:
+
+- https://www.nature.com/articles/nbt.3001
+- https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-13-629
+- https://www.sciencedirect.com/science/article/abs/pii/S0378111917305796
+
+At the point where you have comparable measures with shared information, saying you can standardize scales across variables to find that shared information isn't particularly novel.
+
+I'm not saying the paper doesn't have merit, just that it's weird it ended up in Nature, when novelty is suppose to be Nature's entire thing.
+- Thanks for the info... Nature and other top journals have had much less of a barrier to entry over the past decade or so... it happens.
+- This isn’t Nature though.
+
+Look closer Lenny
+- This is not a Nature article. It’s a Communications Biology article.
+- yeah true, I didn't notice in light of the upset guy's comments

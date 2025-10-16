@@ -1,0 +1,145 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1bh63c1/p_paperlib_an_opensource_and_moderndesigned/
+Title: [P] Paperlib: An open-source and modern-designed academic paper management tool.
+
+Content:
+&#x200B;
+
+https://preview.redd.it/2bxexhz6u3pc1.png?width=3104&format=png&auto=webp&s=7212ce1aa58a2a5d750f4c491086fa83cda068e4
+
+Github: [https://github.com/Future-Scholars/paperlib](https://github.com/Future-Scholars/paperlib)
+
+Website: [https://paperlib.app/en/](https://paperlib.app/en/)
+
+If you have any questions: [https://discord.com/invite/4unrSRjcM9](https://discord.com/invite/4unrSRjcM9)
+
+\-------------------------------------------------------------------------------------------------------------------------
+
+# Install
+
+**Windows**
+
+* [download](https://paperlib.app/en/download.html) or
+* Winget: `winget install Paperlib`
+
+>**I hate Windows Defender. It sometimes treats my App as a virus! All my source code is open-sourced on GitHub. I just have no funding to buy a code sign! If you have a downloading issue of \`virus detect\`, please go to your Windows Defender - Virus & threat protection - Allowed threats - Protection History - Allow that threat - redownload! Or you can use Winget to install it to bypass this detection.**
+
+**macOS**
+
+* [download](https://paperlib.app/en/download.html) or
+* brew: `brew tap Future-Scholars/homebrew-cask-tap & brew install --cask paperlib`
+
+>On macOS, you may see something like this: *can’t be opened because Apple cannot check it for malicious software* The reason is that I have no funding to buy a code sign. Once I have enough donations, this can be solved.  
+>  
+>To solve it, Go to the macOS preference - Security & Privacy - run anyway.
+
+**Linux**
+
+* [guide](https://paperlib.app/en/download-linux.html)
+
+\-------------------------------------------------------------------------------------------------------------------------
+
+## Introduction
+
+Hi guys, I'm a computer vision PhD student. Conference papers are in major in my research community, which is different from other disciplines. Without DOI, ISBN, metadata of a lot of conference papers are hard to look up (e.g., NIPS, ICLR, ICML etc.). When I cite a publication in a draft paper, I need to manually check the publication information of it in Google Scholar or DBLP over and over again.
+
+**Why not Zotero, Mendely?**
+
+* A good metadata scraping capability is one of the core functions of a paper management tool. Unfortunately, no software in this world does this well for conference papers, not even commercial software.
+* A modern UI/UX.
+
+In Paperlib 3.0, I bring the **Extension System.** It allows you to use extensions from official and community, and publish your own extensions. I have provided some official extensions, such as connecting Paprlib with LLM!
+
+Paperlib provides:
+
+* OPEN SOURCE
+* Scrape paper’s metadata and even source code links with many scrapers. Tailored especially for machine learning. If you cannot successfully scrape the metadata for some papers, there could be several possibilities:
+   * PDF information extraction failed, such as extracting the wrong title. You can manually enter the correct title and then right-click to re-scrape.
+   * You triggered the per-minute limit of the retrieval API by importing too many papers at once.
+* Fulltext and advanced search.
+* Smart filter.
+* Rating, flag, tag, folder and markdown/plain text note.
+* RSS feed subscription to follow the newest publications on your research topic.
+* Locate and download PDF files from the web.
+* macOS spotlight-like plugin to copy-paste references easily when writing a draft paper. Also supports MS Word.
+* Cloud sync (self managed), supports macOS, Linux, and Windows.
+* Beautiful and clean UI.
+* Extensible. You can publish your own extensions.
+* Import from Zotero.
+
+&#x200B;
+
+\-----------------------------------------------------------------------------------------------------------------------------
+
+&#x200B;
+
+## Usage Demos
+
+Here are some GIFs introducing the main features of Paperlib.
+
+* Scrape metadata for conference papers. You can also get the source code link!
+
+https://i.redd.it/e9xtwkw2t3pc1.gif
+
+&#x200B;
+
+* Organize your library with tags, folders and smart filters!
+
+https://i.redd.it/2wrgdn11t3pc1.gif
+
+&#x200B;
+
+* Three view mode.
+
+https://i.redd.it/75skkdu1t3pc1.gif
+
+&#x200B;
+
+* Summarize your papers by LLM. Tag your papers by LLM.
+
+https://i.redd.it/jolf1ewzs3pc1.gif
+
+&#x200B;
+
+* Smooth paper writing integration with any editors.
+
+https://i.redd.it/euh1f2gys3pc1.gif
+
+&#x200B;
+
+* Extensions
+
+https://preview.redd.it/qisbydl5t3pc1.png?width=1418&format=png&auto=webp&s=7dc264fc79e1d292c2a20ef6256a02aadae3197a
+
+Comments:
+- Okay i am gonna try this. Let us see if it beats Zotero
+- The headline sounds to good to be true - as I am desperately waiting for something like this with added AI features.
+- All I want from Zotero is the ability to hold shared libraries on a remote server so my colleagues can share papers and notes. Will libraries (files and database) be able to be shared between multiple users on a shared server? 
+
+The developers of Zotero have known this is a hotly requested feature for a decade but refused to implement it because of issues with SQLite and data corruption. I never understood why they didn’t play for multiple users accessing the database. I’m not big in that space but it seems like something where they just had too much investment of tech into an inferior architecture. They say to just use groups and subscribe to the cloud, but that is impossible in my line of work. We have to self-host our data.
+- Looks good. As a researcher thank you for this.
+- Since you demonstrate it on a Mac: Any plans to release it for iOS as well? I am reading almost all of my papers on my iPads. 😊 Maybe you do it as well?
+- How does this compare with Paperpile?
+- I'll definitely try it. I was looking for Zotero alternatives this week. Thanks for sharing :)
+- Thank you for this!
+However for macOS I get a “can’t be opened because Apple cannot check it for malicious software” 🤔
+- I love it!
+- I tried many other tools. This one looks the best the most promising. Thanks a lot.
+- How does it compare to Jabref?
+- I was thinking of building a tool to aggregate papers on a topic and ingest them into LLM/RAG tools. The idea would be to quickly scan links from google scholar or pubmed and identify papers that have something new to say about predefined topics of interest. Would this be a good framework for that? 
+
+Are you able to effectively segment HTML versions of papers to avoid indexing irrelevant content from sidebar links?
+- Thanks for your hard work on this. It might be just what I need, eventually. Still, I want to try it out and see how well it works for the kinds of papers I tend to use.
+- I can't download it on windows. It says "Virus detected"
+- for fulltext search, what are you using to convert the text content of the PDFs for import?
+- honestly, I'd happily pay $20 for this if you add a feature where hovering/clicking over citations directly brings us to the PDF
+- Hi, how’s the PDFs organized? I know you don’t want to support an iOS version and I totally understand it, at least I could save all the papers in iCloud and read them if they are saved nicely.
+- Ollama integration?
+- The UI and everything looks really cool. I wonder if you have any way to link this to Zotero, currently reliant on Zotero for the iOS app and the link of Zotero to overleaf. 
+
+But being a PhD student and this is a pretty good achievement 👏
+- Finally a reference management tool that doesn't feel like written in the 90's!  
+  
+It just seems to be pretty unstable, at least for me. I enabled all recommended extensions, but it often fails to import papers (tried from IEEEXplore, semanticscholar). It doesn't load the preview for the one paper I managed to import although the pdf is located in \`\~/Documents/paperlib\`. For another paper, it initially got the author names wrong and after scraping from IEEEXplore, the metadata was completely gone. I'm running it on Ubuntu 22.04.4 if that makes a difference.
+
+Also, are there any plans for integrations/plugins with logseq?

@@ -1,0 +1,49 @@
+URL: https://www.linkedin.com/posts/vikram-chatterji_generativeai-llm-llmops-activity-7130627496512811008-VQ09?trk=public_profile_like_view
+Date: 2025-09-24
+Author: Unknown
+
+We are thrilled to announce the Hallucination Index, a benchmark that truly evaluates LLM output quality across real-world tasks!
+
+“Can I trust this LLM in production for my unique task?” 
+We consistently hear this question from builders and CIOs. 
+The answer is nuanced and depends on the task, the LLM, whether there was additional context provided, and more. LLMs are not one-size-fits-all, and have variable output quality depending on these factors.
+
+The Galileo team took 11 of today’s most popular LLMs from OpenAI, Meta Hugging Face, Databricks Mosaic Research and more, tested them for hallucinations in real world scenarios to launch the Hallucination Index. Dig in to the results and methodology here: 
+https://lnkd.in/gFsBtCPc
+
+Since there is nuance to detecting hallucinations, we anchored ourselves in a few core principles:
+1️⃣ Be Task-Centric
+While LLM-based applications can take many shapes and sizes, in conversations with enterprise teams, we noticed a generative AI applications typically fall into one of three tasks types: Question & Answer without RAG, Question & Answer with RAG, and Long-form Text Generation.
+
+2️⃣ Context Matters
+Retrieval Augmented Generation (RAG) is wildly popular as an effective way to ground your model. However, each LLM responds differently when provided with context due to a variety of reasons, such as context limits and variability in the context window. To evaluate the impact of context on an LLM’s performance, the Index measured each LLM’s propensity to hallucinate when provided with context. To do this, we used datasets that come with verified context. 
+
+3️⃣ Measure Output Quality
+While existing benchmarks stick to traditional statistical metrics, detecting hallucinations reliably has more to do with detecting qualitative nuances in the model’s output that are specific to the task types. While asking GPT-4 to detect hallucinations is a popular (albeit expensive) method to rely on, ChainPoll has emerged as a superior method to detect hallucinations from your model’s outputs, with a high correlation against human benchmarking.
+
+4️⃣ Backed by Human Validation
+Reliably detecting hallucinations is hard and nuanced, this is not something you can just ask another GPT to do for you (...yet!).
+Today, the most trusted approach for detecting hallucinations remains human evaluation. 
+To validate the efficacy of the Correctness and Context Adherence metrics, we invested in thousands of human evaluations across each of the datasets listed above across task types.
+
+The goal here is to provide a framework for genAI builders to work with the right LLMs for their unique tasks, and mitigate the risk of hallucinations.
+
+Join us on the journey to build more trustworthy AI applications by addressing the challenge of hallucinations.
+
+
+话题标签
+#generativeai 
+话题标签
+#LLM 
+话题标签
+#LLMOps 
+话题标签
+#AI 
+话题标签
+#hallucinations 
+话题标签
+#datascience 
+话题标签
+#PromptEngineering 
+话题标签
+#hallucinationIndex

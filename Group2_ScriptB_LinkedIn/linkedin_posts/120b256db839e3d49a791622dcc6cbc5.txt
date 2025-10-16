@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/analyticsnerd_no-llm-model-is-going-to-disagree-because-activity-7299928526470668288-IKRV
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Himanshu Sharma的动态
+Himanshu Sharma
+
+GA4, BigQuery, AI Agents, Digital Analytics.
+
+7 个月
+
+No LLM model is going to disagree because I have already validated my theory. The whole idea of "AI rankings" is a marketing gimmick, not an actual measurable or controllable system. Before you sign up for an AI rank tracking tool and pay $$$ >> AI generated responses are based on probabilistic models, not deterministic rankings. 
+
+AI "predict" responses based on training data, prompt context, user specific personalization, reinforcement learning.... All of these factors are outside of your control. You can not optimize for these factors. 
+
+Trying to "optimize" for AI mentions is like trying to control what an AI chatbot randomly says. It’s unreliable, non-repeatable, and changes with every model update. There is no such thing as "AI rankings". 
+
+AI does not rank mentions or links like search engines. There is no fixed and reliable pattern recognition of recurring mentions in AI-generated responses. 
+
+Trying to rank in AI responses is like trying to rank in someone’s random thoughts. If you are still in doubt, ask your favourite AI chatbot or do a 'DEEP RESEARCH' and confirm what I said. No LLM model is going to disagree because I have already validated my theory.
+
+21
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+47,660 位关注者
+
+3000+ 则动态
+ 300 篇文章
+查看档案  关注
+更多文章
+Learn the 80/20 of Webhooks for Workflow Automation within 3 Minutes.
+Himanshu Sharma  21 小时前
+Learn the 80/20 of APIs for Workflow Automation within 5 Minutes.
+Himanshu Sharma  1 天前
+Know this before you trust Opal, Base44, or Lovable with your workflows.
+Himanshu Sharma  3 天前
+探索相关领域
+How to Understand LLM Evaluation Methods
+Understanding Why AI Models Generate False Information
+Factors That Influence AI Search Visibility
+How to Measure LLM Intelligence
+AI Security Guidance for LLMs
+How Llms Process Language
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Educa

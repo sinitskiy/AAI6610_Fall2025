@@ -1,0 +1,47 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nkn6dw/p_looking_for_people_to_learn_and_build_projects/
+Title: [P] Looking for people to learn and build projects with !
+
+Content:
+Hey guys I’m a master student in USA. I am looking for people interested to learn machine and deep learning and also possibly looking for people who want to research together. Do dm me if you’re interested! I would love to network with a lot of you too!
+
+If you’re interested in hackathons apart from this feel free to ping regarding that aswell.
+
+Comments:
+- Hey, yeah, master's in USA seeking ML/DL collab for learning/projects/research, networking gold!
+
+Quick tips: Dive into Kaggle comps together (builds skills fast, trade-off: steep curve); use GitHub for shared repos. For hacks, join MLH or ones including [Sensay Hackathon](https://dorahacks.io/hackathon/sensay-connect/detail)'s hackathon alongside others.
+- hey there buddy I am taking part in a Neurips hack. Would like to join? And yes we can work together on some ML DL projects too
+- https://github.com/vishnusainzb97/AI_Powered_ECG_Interpreter-      
+
+I’m working on developing an AI-powered ECG interpreter. If you’re interested in collaborating with me, I’m seeking someone proficient in machine learning and artificial intelligence. I’ve conducted market research and validated this product idea. This technology has the potential to assist small to medium-sized hospitals in India, where cardiologists are scarce. The goal is to interpret ECG signals without the need for a cardiologist. Please let me know if you’re interested in the idea.
+- The homeassistant team prob could do some help with wakeword training as... Take a look at the results they get...  
+[https://github.com/kahrendt/microWakeWord](https://github.com/kahrendt/microWakeWord)
+- I am trying to learn how to build a Machine Learning tool that is build from Visual Studio and C #.  I could create some parts in C++ for speed, but first I need to get my initial algorithms and vector database design in place.  I want it to be hostable on a website.  And to contain a small dataset.  Maybe only tens of thousands of parameters.
+- Do u have discord?
+- Interested
+- Sure thanks!
+- Oh yes i would love to ! Do hmu and we’ll talk
+- Hi, can I join too?
+- Oh yes seems interesting would love to work on it! Do check the DM
+- I’ll take a look !
+- Oh nice, how can i help?
+- Yes Srikarmk is the name
+- Of course !
+- I downloaded the Cornell movie dialogs corpus and the multiWOZ set as I am working toward creating   the internal structure of a conversational chatbot.  I also found the Cyc dataset that I loaded into SQL Server for analysis.  That one has way more tags and identifiers for each term in the corpus. I went to GitHub and found different code to do Word2Vec, Client/Server using WebSockets.  I didn't have much luck using the augumenttoolkit to create question/answer pairs from documents.  Either I need to build a Linux VM or recreate their code using Visual Studio. So I am ready to piece together a tool, I am working toward identifying the internal structure of a conversational chat bot.  I always work from both directions.  What my output looks like and how I need to structure the training datasets.
+
+I am working toward creating a training dataset to feed my model.
+
+Corpus of Words: Using a Word 2 Vectored of the set.  This identifies each word, and it’s root, the type (noun, verb, adjective).  Goal to use to break each input into sentences to feed into the preprocessor module.
+
+Dataset of Pairs.  This would contain columns for lowercase of the utterance, the utterance domain, intent, etc  These sentences are lower cased and vectored.
+
+When the conversation happens the user utterance is preprocessed through the Corpus of words to help derive it’s meaning intent and domain.  Then the preprocessed sentence is run against into the dataset of sentence pairs for the similarity search.  Then the corresponding sentence pair is returned and sent through a final module to prepare the sentence as a reply for the user. To add punctuations, uppercase first word in the sentence, etc. The response is displayed to the user via the chat interface.
+
+I am working toward having the internal structure defined by this weekend so I can start to assemble to application.  I am to create an [ASP.NET](http://ASP.NET) MVC web application that I can deploy to my website.
+
+I will share my initial design with you when I get it figured out.
+
+Cheers!
+- Would be interesting to have a discord room
+- Sure just text me there

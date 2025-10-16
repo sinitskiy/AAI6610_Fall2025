@@ -1,0 +1,25 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kmdyqx/need_help_with_predicting_radiation_dose_in_3d/
+Title: Need Help with Predicting Radiation Dose in 3D Space (Machine Learning Project)
+
+Content:
+Hey everyone! I’m working on a project where I want to predict how radiation energy spreads inside a 3D volume (like a human body) for therapy purposes, and I could really use some help or tips.
+
+What I Have:
+	1.	3D Target Matrix (64x64x64 grid)
+	•	Each voxel (like a 3D pixel) has a value showing how dense the material is — like air, tissue, or bone.
+	2.	Beam Shape Matrix (same size)
+	•	Shows where the radiation beam is active (1 = beam on, 0 = off).
+	3.	Optional Info:
+	•	I might also include the beam’s angle (from 0 to 360 degrees) later on.
+
+Goal:
+
+I want to predict how much radiation (dose) is deposited in each voxel — basically a value that shows how much energy ends up at each (x, y) coordinate. Output example: 
+
+[x=12, y=24, dose=0.85]
+
+I’m using deep learning (thinking of a ResNet or 3D U-Net setup
+
+Comments:
+- This is a case of computational bio-electromagnetics where you want to calculate how the time-dependent radiation waves travel in 3D space in inside human tissues and bones. You will be solving Maxwell's equations. During my PhD I developed an algorithm for computational electromagnetics and benchmarked it for the use-case in 1D and 2D space for calculating SAR in human tissues and bones. You may DM me to discuss it further.

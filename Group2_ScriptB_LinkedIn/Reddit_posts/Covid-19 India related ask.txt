@@ -1,0 +1,55 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/n3ba0g/covid19_india_related_ask/
+Title: Covid-19 India related ask
+
+Content:
+Hello everyone,A number of volunteers (product, software, management backgrounds) are trying to build a model to predict how Oxygen demand will shape. When supplies improve, they wish to be able to help agencies distribute to the correct places, logistics issue as you might imagine. There is a model they are trying to build but too many unknown variables/uncertainties.
+
+Do we have folks in **data science** who can help? Even if you can add a little it helps a lot. If you know folks with relevant **forecasting/demand prediction** experience it could be immensely valuable. We can share whatever data points we have. But most people in this sub probably already know what this entails.
+
+Thank you so much,
+
+
+**Update**:
+
+I am so sorry that I am adding this  late. Here is what I can say the intro document: https://docs.google.com/document/d/1HQDeIlTzl3UrtntNncQVunZNQRU6DXLV4T2UA76Np_w/edit#
+
+Here are the issues on GH for what is becoming the large volunteer alliance, one DB: https://github.com/gantir/covid19alliance-masterdata/issues
+
+All volunteer discussions take place in Slack: https://slack.raksha.life, main channel for this is #coronasafe-demand-prediction
+
+I will respond to each of you through DM.
+
+Comments:
+- Share the data on the github and make it open source project. I know many would like to contribute. You can post it here  and people can volunteer to work on the predictions
+- Post your data on GitHub and the issues/problems as well and people can fork and assist as able? Sort of like an open source project?
+
+And reach out to DataKind/Data4Good and AI for Good. If you have data and a project in mind DM me, I lead a chapter of Data for Good though not in India.
+- I would love to contribute. Let me know how I can help. As other ppl have said, putting it on GitHub is a good option
+- I would like to contribute. Please dm me
+- Currently a master’s student, but would love to help out with the limited experience I have.
+- I would like to contribute!
+- I would like to contribute. Lately I have some additional bandwidth. LMK your next step on this or point us to the repo. Open source would be a great idea
+- Domain expertise here is manufacturing engineering/logistics. Oxygen should be in kanban type system with build cycle related order signal threshold + safety factor. If capital is at maximum capacity then that would require expansion (based on your model?)
+- I'm relatively new to this field, but I would like to help.
+- I would love to help. Add the link for the GitHub repo to this post, I’ll check back periodically over the next few days.
+- I’d like to contribute too. Please direct message me.
+- I’ll try to pitch in. Lmk what you need and also +1 on GitHub
+- Count me in… please share where data is available
+- I would like to contribute. Let's get in touch.
+I foresee trouble with this kind of model, but it'll be helpful
+- I would love to contribute, even though I'm not very knowledgeable in this space
+- [deleted]
+- @moderators can someone please tell me which rule(s) this post actually violates. I did read them while posting and I am trying to understand what I can do better.
+- Hello everyone,  
+
+I am so sorry that I am replying so late. Here is what I can say the intro document: [https://docs.google.com/document/d/1HQDeIlTzl3UrtntNncQVunZNQRU6DXLV4T2UA76Np\_w/edit#](https://docs.google.com/document/d/1HQDeIlTzl3UrtntNncQVunZNQRU6DXLV4T2UA76Np_w/edit#)  
+
+Here are the issues on GH for what is becoming the large volunteer alliance, one DB: [https://github.com/gantir/covid19alliance-masterdata/issues](https://github.com/gantir/covid19alliance-masterdata/issues)  
+
+All volunteer discussions take place in Slack: [https://slack.raksha.life](https://slack.raksha.life), main channel for this is #coronasafe-demand-prediction  
+
+
+I will respond to each of you through DM.
+- I’m a college student but I do data science projects I could contribute too if the data is online
+- Hi, I would like to contribute as well. Please let me know how I can help

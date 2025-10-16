@@ -1,0 +1,28 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ntrpnp/n_call_for_papers_icml_2021_workshop_on/
+Title: [N] Call for papers: ICML 2021 Workshop on Distribution-Free Uncertainty Quantification
+
+Content:
+**ICML 2021 Workshop: Distribution-Free Uncertainty Quantification**
+
+This will be a virtual event (see website [here](https://sites.google.com/berkeley.edu/dfuq21)).
+
+No reformatting of papers required, no page limit, rolling deadlines with 1wk casual review.
+
+Workshop will be beginner-friendly, and all are encouraged to submit.
+
+Speakers include Michael I. Jordan, Emmanuel Candes, Rina Barber, Vladimir Vovk, Leying Guan, Jing Lei, Larry Wasserman, and Kilian Q. Weinberger. 
+
+Submission deadline: up to **June 14** for spotlights and **July 1** for posters.
+
+Topics include conformal prediction, risk-controlling sets, calibration, tolerance regions, and heuristic notions of uncertainty like Platt scaling.
+
+[https://sites.google.com/berkeley.edu/dfuq21](https://sites.google.com/berkeley.edu/dfuq21)
+
+Organized by myself, Stephen Bates, Aaditya Ramdas, Sharon Yixuan Li, and Ryan Tibshirani.
+
+Comments:
+- Can we attend without submitting papers? I don't see any registration page.
+- Epic
+- I think you are just supposed to register for ICML 2021, and I'm not sure if there is a way to attend otherwise, such as a Zoom link on our workshop website on the day it happens.
+- Update: If registration is prohibitive, some content (including keynote lectures) will be available on the website for all to access on the day of the workshop.

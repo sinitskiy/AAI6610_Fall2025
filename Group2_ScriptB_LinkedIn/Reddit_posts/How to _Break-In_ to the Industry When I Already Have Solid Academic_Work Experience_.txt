@@ -1,0 +1,68 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17w4u6r/how_to_breakin_to_the_industry_when_i_already/
+Title: How to "Break-In" to the Industry When I Already Have Solid Academic/Work Experience?
+
+Content:
+Hello all,
+
+Preface:
+
+* Bachelors double major in Data Analytics & Finance, minor in I.T (2019 grad)
+* Master of Science in Data Science (Machine Learning) (2023 grad)
+* 3 Years of relevant experience doing data migrations (lots of SQL, Excel, VBA, Azure/AWS, Shell scripting)
+
+I know I have a lot of the credentials to get into the industry - but I'm still having a hard time landing a role. Whether that role is analytics, BI, DS, DE or anything in that vein. I'm not necessarily discouraged since I love what I do currently - I just miss the exploration aspect of the analytics/ds world. 
+
+Are projects still relevant to someone like me given my background? I have a small portfolio with 3 projects on it, but I don't know what else I can do to stand out and get one of those roles. 
+
+Is it possible that my home country (Canada) doesn't have enough opportunities? Is my resume not strong enough to even get an entry-level role based on everything I've already laid out? 
+
+Comments:
+- Generally there are 3 reasons for why people are not getting entry level interviews and with out looking at your resume/portfolio its hard to tell what the reason for you is. but here are the reasons,    
+
+
+1) You are not shooting enough shots, especially for entry level roles, job postings are low and applicants are high. My first role i sent out 250+ applications, to be fair the market was better, but part of this is a game of luck. Through networking you can stack the odds more in your favor by getting your application in the hands of the right people but it is still a numbers game.    
+
+
+2) You are not doing a good job of highlighting your skills and your work. If your resume isn't well written and put together correctly, no matter the skills you have you'll never make it pasted the ATS software or past the hiring managers desk. Part of this is tailoring resumes to the job/job function you are applying to. Analytics, BI, DS, or DE jobs are all looking for different skills and one standard resume for all won't cut it. Using the XYZ format for your bullet points is generally a good rule to follow and make sure to highlight the technologies you use in each project. Also need to make sure your portfolio or git page is easy to get to, use, and understand. Otherwise people wont look at it.    
+
+
+3) You just don't have the skills right now. Sometimes entry level candidates think that their projects and resume is better then it actually is and that is a hard pill to swallow. For projects ask are they cookie cutter/generic, are they more then just an online tutorial, are the relevant to the job and show proficiency is the skills needed for the role, are they creative and interesting? Ask does your experience make sense for the role, do I show that know a portion of the tools and software mentioned in the job posting?
+- You have a somewhat similar background as me except I only have 1 BA and a MS in stats. You'll break in time no doubt in time, but you just have to make sure you are applying to a large volume of jobs. Strive for at least about a 4-5% interview rate. That is about what I've seen from personal experience. 
+
+  
+Having a portfolio is always good at any point of your career. What helped me I think get into my new role that I set up a git hub and had 5 solid projects on there. Not only did I include the code, but I included a formal write-up on my findings. Since it was all done in r, I utilized rmarkdown to report on my results into a nice digestible pdf. 
+
+What could help too if you can take on a data science related project or find a way to integrate data science into your current role and put a line or two about that on your resume. Even if it's something beyond the scope of your role,  do it if you can. Based off your bullet on relevant experience, I see all good skills to have in DS land but I don't see any mention of modeling which is quite essential to have in a professional setting. Your future employer will want to know how do you model real world data. The master's is great, but largely lots of those projects done in a classroom setting can be considered largely toy sets and not representative of the real world most of the time. Not saying that this is your complete downfall here, but based off you selling me yourself, I would have a hard time hiring you for a DS anything role with no mention of modeling in your relevant experience.
+
+You have a master's of some sort which is already a huge plus over may candidates that will not. On top of that, you are no stranger to data. Like I said earlier, you just gotta keep applying. Good luck my friend!
+- From the sound of it, I think what you lack is proper marketing. You may not be approaching the right companies or may not be presenting facts about your skillset and experience that the companies might be interested in.  With your current level of expertise and skillset, all you may need is a proper mentor to break into the job market.
+
+I think you should find someone who is currently working in a role that you are targeting and ask them for guidance. You can ask them to go over your resume and discuss what companies look for during interviews, etc. If the said person is not your friend or acquaintance, offer to pay him or her for this help. 
+
+You may also approach an agency that provides these services. I am sure there are plenty of career service agencies in your country. If not in your town or locality, you may find one online that caters to companies in large parts of your country.
+
+Wishing you all the best and success in your career!
+- Think about job searching like top/middle/bottom of funnel. Are you having a hard time finding open roles (top)? Are you able to get interviews (middle)? Or are you getting interviews but not getting the job (bottom)?
+
+Also, what networking are you doing? The job market is blah, how are you outreaching?
+- wow
+- Are you (a) not getting calls when you send your resume, or (b) getting turned down at some point in the interview process? 
+
+If a: 
+
+1. Apply to more jobs. My first job offer in the field was after 200 applications. 
+2. Make sure your resume is neat, highlights your achievements, and is **customized to the job/company**. Using same resume for every job will not work. 
+
+If b: 
+
+1. Practice your interview skills by researching common interview questions and answering them out loud, with your voice. Just because you have a good answer doesn't mean you're articulating it well. 
+2. Be a student of your interviews. When you flub an interview question, write it down afterwards and make sure you have a good answer the next time someone asks.
+- Are you getting interviews or not getting offers?
+
+Maybe you should link to an anonymized resume. 
+
+Are you applying for new grad roles and trying to get referrals/networking?
+- Thank you my friend! I’ll give that a try.
+- I’m having a tough time my friend!
+- me2

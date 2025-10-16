@@ -1,0 +1,13 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jtwa8m/cv_for_survey_work/
+Title: CV for survey work
+
+Content:
+Hey yall I’ve been familiarizing myself with machine learning and such recently. Image segmentation caught my eyes as a lot of survey work I do are based on a drone aerial image I fly or a LIDAR pointcloud from the same drone/scanner. 
+
+I have been researching a proper way to extract linework from our 2d images ( some with spatial resolution up to 15-30cm). Primarily building footprint/curbing and maybe treeline eventually. 
+
+If anyone has useful insight or reading materials I’d appreciate it much. Thank you. 
+
+
+Comments:

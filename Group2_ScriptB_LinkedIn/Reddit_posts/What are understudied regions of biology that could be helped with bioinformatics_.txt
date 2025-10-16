@@ -1,0 +1,21 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1gayjbk/what_are_understudied_regions_of_biology_that/
+Title: What are understudied regions of biology that could be helped with bioinformatics?
+
+Content:
+Hello there Reddit,
+
+I wanted to ask for help in identifying areas and topics within Biology that may be understudied and less well-understood that could be helped with Bioinformatics.
+
+So I am a biology post-grad that has shifted away from animal & plant studies toward the work and research of human health and medicine, and I would like to contribute back to those topics in my own free-time, primarily with my bioinformatic skills as my work involves frequent travel.
+
+As I am unfamiliar with the vast fields, I am asking the more knowledgeble in that as there are many ways that digital biology and machine learning (image identification to apply to species identification for example). It would be an interesting way to contribute to Biology and explore and learn new things in my free-time. 
+
+What do you think are less studied and understood areas that could contribute from it, as I would love to contribute and explore more niche and less understood areas.
+
+  
+Thank you for your help and have a cracker day
+
+Comments:
+- Single cell Sequencing, especially spatial and multimodal, analysis is a wild west of ideas right now so have fun!
+- I work with rare diseases and it's a shit ton of work left. There's a lot of rare diseases and 99% of them are barely studied. Bioinformatics is helping a lot for things like genotype-phenotype correlation, functional enrichment analysis...

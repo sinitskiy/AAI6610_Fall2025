@@ -1,0 +1,72 @@
+URL: https://www.linkedin.com/posts/dario-coscia_blips-bayesian-learned-interatomic-potentials-activity-7363836963193344001-NZQX
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dario Coscia的动态
+Dario Coscia
+
+PhD candidate at SISSA in collaboration with University of Amsterdam on Deep Learning
+
+1 个月  已编辑
+
+🚀 Going from Machine Learning Interatomic Potentials (MLIPs) to Bayesian Learned Interatomic Potentials (BLIPs)!
+
+MLIPs are transforming chemistry simulations, but they often break down when data is scarce or when facing out-of-distribution data. Furthermore, they rarely tell us how confident they are in their predictions!
+
+In our latest work, we introduce BLIPs, which add a Bayesian layer around of MLIPs to deliver:
+
+✅ More reliable predictions in challenging regimes (data-scarce or out-of-distribution)
+✅ Trustworthy, well-calibrated uncertainty estimates
+✅ A plug-and-play boost to predictive accuracy with minimal overhead
+
+💡 In our experiments, BLIPs outperform Deep Ensembles (and other baselines) for MLIPs, both in accuracy (forces & energies) and in uncertainty estimation. And the best part: you only need one BLIP model, not an ensemble!
+Even more, fine-tuning existing Universal Interatomic Potentials with BLIP yields substantial gains compared to standard or ensemble fine-tuning.
+
+This was an amazing collaboration with Pim de Haan and Max Welling from CuspAI!
+
+💻 Code: https://lnkd.in/dnQjPm8h
+📄 Paper: https://lnkd.in/dCazc8bj
+
+Extra: BLIPs are not limited to MLIP; they can be applied to any Message Passing Neural Network. We look forward to seeing more applications of this!
+
+BLIPs: Bayesian Learned Interatomic Potentials
+arxiv.org
+176
+1 条评论
+赞
+评论
+分享
+Keqiang Yan
+
+Postdoc Researcher - Princeton University
+
+1 个月
+
+Congratulations!
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+最相关的动态
+Bruno Neri
+
+Technical Leader - Artificial Intelligence and Deep Learning Enthusiast - Senior Software Engineer at ALTEN Italia
+
+1 个月
+
+"BLIPs: Bayesian Learned Interatomic Potentials" by Dario Coscia, Pim de Haan, Max Welling
+
+"Machine Learning Interatomic Potentials (MLIPs) are becoming a central tool in simulation-based chemistry. Howev

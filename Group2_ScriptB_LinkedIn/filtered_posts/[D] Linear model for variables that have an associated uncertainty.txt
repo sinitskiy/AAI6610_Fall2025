@@ -1,0 +1,41 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/b1zka8/d_linear_model_for_variables_that_have_an/
+Title: [D] Linear model for variables that have an associated uncertainty
+
+Content:
+Consider a standard linear regression
+
+y = wx + b
+
+This is my problem, but every x has an associated uncertainty, i.e. it comes from a normal distribution, and has an associated mu and sigma, corresponding to my best guess at the true mean (mu), and how certain I am of this guess (sigma).
+
+I could just use the mu and ignore the sigma, but it seems like there should be a more principled way of dealing with this. For example, I could imagine something like optimizing this with gradient descent, and scaling the learning rate down when sigma is high. What's a good way to deal with this?
+
+Comments:
+- This is known as “measurement error” or “error in variables” so I recommend using one of the well established existing methods for this task.
+- I think this is a typical bayesian inference problem. Your prior knowledge of x ~ N(mu, sigma) would form the prior distribution. You simply have to run MAP estimation or MCMC.
+- I'm familiar with this kind of model under the name "error in variables" regression (but it might have other names in specific fields I'm not familiar with). It's basically a very simple kind of latent variable model. When I run such models, I always just infer the (assumed unknown) mu directly in my models because it's easy to code, but I expect there are probably ways to marginalize it out or something.
+- If you know the sigmas then you can always just use a weighted linear regression model. The idea is basically to let the observations you have more confidence in to be more influential than those you have less confidence in. This is done by specifying the a positive diagonal (assuming no iteration, you can of course generalize this) matrix of weights and using those weights to transform your X matrix in the linear regression.
+
+This comes up, for example, when your data are means from different sized populations. You can weigh your means by the number of samples used to calculate them n (because it's  1/variance, by the central limit theorem).
+
+
+R lets you do this by specifying weights in the `lm` function.
+- It's called orthogonal regression or total least squares. Most mainstream scientific computational software has something that solves your problem. I know scipy has it.
+- Does the sampling distribution of each X also have a corresponding Y? If so, hierarchical models would solve this. If you’re sampling each X with a single Y, then that’s another issue. You can look into modeling uncertainty in the predictors. Stochastic methods like Gibbs or MCMC will easily handle that (might be overkill). In the end, though, are you looking for a point estimate or an interval in the prediction/solution?
+
+Edit: As mentioned in another comment, total least squares is the way to go if you don’t know the uncertainty in X and each X has the same level of uncertainty. Otherwise, a bespoke model is necessary.
+- Here is the wikipedia page for this: [https://en.wikipedia.org/wiki/Errors-in-variables\_models](https://en.wikipedia.org/wiki/Errors-in-variables_models)
+- Isn't MAP for when you have a prior over the parameters? I have known uncertainty in my observations, but no prior on the parameters. Is it still applicable?
+- I have multiple Xs for each y, ie it's `y = w_1*x_1 + w_2*x_2 * ... + b`. I don't really need to model uncertainty in the y (but it would be nice to have). A point estimate is fine. I might have misunderstood you, did this answer your question?
+
+> total least squares is the way to go if you don’t know the uncertainty in X and each X has the same level of uncertainty.
+
+I know the uncertainty in X, but have different uncertainty for every X (different uncertainty for every training example). Would total least squares not be applicable in this case?
+- Total least squares is a least squares technique for when you have uncertainties in x and y; ordinary least squares assumes that you know x with absolute accuracy or some variation thereof. The theoretical requirements for TLS are the same as for standard least squares (linear regression), i.e., that the uncertainties for x & y come from a normal distribution.
+- It is applicable.
+
+&#x200B;
+
+At the same time, it is worthy to mention that TLS does not always perform better than your run-of-the-mill linear regression, so you should first try and fit the data assuming X have no uncertainty and then apply TLS so that you can compare the methods.
+- I’d also go with the TLL approach-it’s parsimonious and pragmatic (with many training samples). For point estimates, the difference in estimates won’t differ by much anyways. As pointed in another reply, OLS might be of better use, depending on the overall purpose and (mathematically) the size of the error term for the predictors. Good luck, sounds like you’re working on something interesting.

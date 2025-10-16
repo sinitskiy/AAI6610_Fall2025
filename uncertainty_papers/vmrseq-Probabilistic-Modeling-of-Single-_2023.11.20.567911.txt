@@ -1,0 +1,7 @@
+Title: vmrseq: Probabilistic Modeling of Single-cell Methylation Heterogeneity
+
+Abstract: Single-cell DNA methylation measurements reveal genome-scale inter-cellular epigenetic heterogeneity, but extreme sparsity and noise challenges rigorous analysis. Previous methods to detect variably methylated regions (VMRs) have relied on predefined regions or sliding windows, and report regions insensitive to heterogeneity level present in input. We present vmrseq, a statistical method that overcomes these challenges to detect VMRs with increased accuracy in synthetic benchmarks and improved feature selection in case studies. vmrseq also highlights context-dependent correlations between methylation and gene expression, supporting previous findings and facilitating novel hypotheses on epigenetic regulation. vmrseq is available at https://github.com/nshen7/vmrseq.
+
+Date: 2024-12-12
+
+DOI: 10.1101/2023.11.20.567911

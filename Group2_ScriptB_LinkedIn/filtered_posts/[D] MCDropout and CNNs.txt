@@ -1,0 +1,67 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/t54ij6/d_mcdropout_and_cnns/
+Title: [D] MCDropout and CNNs
+
+Content:
+ 
+
+Hello, I'm working on implementing MCDropout on a model of mine, in order to obtain an estimation of uncertainty on the predictions. This is particularly important, as I'm dealing with a regression problem.
+
+I'm referring to the method proposed by Gal Y. & Ghahramani Z., 2016, Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning.
+
+If I understand correctly, it is basically necessary to include a dropout layer after every layer, and then leave it active also during inferece. So far so good, easy to implement.
+
+My doubts arise from the fact that I'm working with a CNN (in particular a ResNet). As far as I know, dropout is not used in convolution layers, and if required something like SpatialDropout2D (tensorflow) or Dropout2D (pytorch) is usually employed. 
+
+I wonder if for the convolutional part of the neural network it would be better to do. Should I use a regular dropout layer, as the paper proves that the regular dropout leads to a network equivalent to a Bayesian Neural Netowork in a Variational Inference approach? Or does the proof work also for a 2D dropout, and in that case should I use such a dropout for the convolutional part of the NN?
+
+Another question. How do I evaluate the performance of the neural network as a function of the dropout rate? If I were to use a regular neural network, I would be able to test the NN on a validation dataset and find an optimal dropout rate by minimizing whichever criterion I choose. In this case, since the prediction of the neural network has an uncertainty estimation, how do you estimate which is the best model? I would imagine the uncertainty should play a role too. 
+
+I found a piece of code by Gal, who defines a log likelihood, and they use that to determine the best model: [https://github.com/yaringal/DropoutUncertaintyExps/blob/master/net/net.py](https://github.com/yaringal/DropoutUncertaintyExps/blob/master/net/net.py). Is that somewhat the standard approach?
+
+Thank you very much for your help!
+
+Comments:
+- The agreed upon way for implementing MCdropout for CNNs is to add dropout2D layers after the pooling layer (max pool, avg pool whatever).
+
+How do you evaluate depends on what you want to measure? You could try and show segmentation/classification performance changes with dropout rate. Measuring uncertainty estimation itself is tricky, because what do we mean by that? You could show that the network is better calibrated in confidence by using the log likelihood (or even better the expected calibration error or brier score). Lastly you can evaluate whether measure uncertainty through something like the standard deviation or entropy of the prediction helps you predict the performance of the network on future images. In my experiments I did not find dropout to be very good at these tasks. Ensembling or test time augmentation do better. Your choice of loss function is important too.
+- For your 2nd question, you might be interested in this followup paper also by Gal et al: https://arxiv.org/abs/1705.07832. Concrete Dropout treats the dropout rate as a variational parameter. There should be sample code on Gal's github.
+- You got some good answers on your direct questions already. You may also be interested in our [AAAI paper](https://arxiv.org/abs/2202.08985) - there are some easy steps to improving the reliability / usefulness of the uncertainty estimates for. use in a down-stream task (not sure what your final task is - but may be of value) .
+- One thing that has worked well for me in the past was using "stochastic depth" during inference time. I think this may be an overloaded term but in the context I'm talking about it means during training/inference you randomly drop entire feature maps instead of just neurons, i.e. if one conv layer has 100 feature map outputs and your probability of drop is 1/10 then, on average, 10 features maps are outright zeroed out.
+
+When I used this technique, which was to get uncertainty for active learning, it seemed to perform better then using dropout on the fully connected layers at the end.
+
+I used this with the popular pytorch implementation of EfficientNet. You can see what I'm talking about here [https://github.com/lukemelas/EfficientNet-PyTorch/blob/master/efficientnet\_pytorch/model.py](https://github.com/lukemelas/EfficientNet-PyTorch/blob/master/efficientnet_pytorch/model.py) on line 127. Once you understand this code it is pretty straightforward to modify your forward pass to allow "stochastic depth" during inference. You may also want to modify the network to include more/less stochastic depth.
+
+In terms of if this corresponds to a Bayesian Neural Network in some way I don't want to say for sure, although off the bat I would say almost definitely based on intuition as dropout is killing neurons with some probability, whereas "stochastic depth" is killing sets of neurons (i.e. a 20x20 feature map is 400 neurons) with some probability. I would say if it works better for your application, go with it :) !
+
+EDIT: From /u/sugar_scoot 's comment it looks like what I'm referring too is just the Dropout2D function in pytorch. Best to go with that.
+- I’m doing almost exactly the same thing for a project. I am just adding dropout before each dense layers.
+- Have you considered using bootstrapping instead to estimate the uncertainty...( at least as 'ground truth')
+- Be carefull with MCD, it does not really give you model uncertainty! There is even a paper using MINIST/not-MNIST (same but letters instead of numbers) and the model was unable to distinguish between them, at least if you look at the model uncertainty. (I.e. ot was equally uncertain on both) 
+
+This also matches with my personal experience in other domains like reinforcement learning. 
+I plotted the overall uncertainty of my model on it's own memory and found it to have a gaussian distribution, with nearly the same mean and std as for an entire randomly generated set.
+
+You also need to be careful wit bootstrapping networks with a common core, in essence it has the same issue as MCD. The only thing I have found so far that can give you true model uncertainty is a real ensemble trained on folds or bootstrap samples of the dataset. The other two are too highly correlated for that.
+
+If you still want to use it for whatever reason, at least evaluate on your data, that it gives you anything meaningful!
+- Thank you very much for your help. Could you please point me to a paper where they talk about mc dropout in cnns? I need to justify my choices with my supervisor XD
+
+PS: in my case, we are dealing with a regression task, where the output of the NN is the generating function (or better, the parameters of the distribution) used to sample the input of the neural network, if that makes sense.
+- Ensembling or test-time augmentations aren't very feasible in scenarios with a time budget though, right? Isn't there any practical uncertainty method for these scenarios? What happened to Bayesian Neural Networks?
+- is concrete dropout still being used nowadays? I can't find recent implementations, which makes me thing that it didn't really catch up?
+- thank you very much, I'll take a look at it!
+- Thank you. Yes, it looks like Dropout2D indeed. IF you take a look at [https://pytorch.org/docs/stable/generated/torch.nn.Dropout2d.html](https://pytorch.org/docs/stable/generated/torch.nn.Dropout2d.html) you see that it's literally the dropout layer used in efficient net
+- I would love to use bootstrap, but generating a dataset is a really time consuming task, and training a model is too. So it is unfeasible to generate a number of datasets/models in the order of magnitude you would do with the regular bootstrap approach. We're trying to see if it's feasible to train on a smaller dataset, and give up a bit of predictive power for a better uncertainty estimation, as bootstrap looks like the best way to estimate uncertainty in our current setting (considering we have a deep NN).
+- Unfortunately, for my problem bootstrap is not an option, as it takes too long to generate a dataset and train a model. We are exploring several options to get an understanding of the error on our predictions. I'm not completely sold on MCDropout too. To me, it seems that it would give you a reasonable understanding of which is the confidence on a prediction of the NN. But if the prediction is completely wrong, I feel like there is no guarantee that the error bar will enclose the "correct" answer
+- You can also try channel-wise dropout, where entire channels are kept or dropped. This is called Dropout2d in pytorch.
+- [This paper is talking about this exact thing](https://arxiv.org/pdf/1906.09551.pdf)
+- Here you go: [https://arxiv.org/abs/1511.02680](https://arxiv.org/abs/1511.02680)
+
+There's also this one: [https://ieeexplore.ieee.org/abstract/document/9130729?casa\_token=TUN6NRhgNYkAAAAA:ss90katbg0pgUqWU4TLoaC3EyDZdqkLUq\_DKjF4SK5unzmMKjUSAyNQcQc5\_WCZzGqkWgtXKlg](https://ieeexplore.ieee.org/abstract/document/9130729?casa_token=TUN6NRhgNYkAAAAA:ss90katbg0pgUqWU4TLoaC3EyDZdqkLUq_DKjF4SK5unzmMKjUSAyNQcQc5_WCZzGqkWgtXKlg)
+- as far as I can undersand, bayesian NN are thriving. The problem is that to estimate the posterior of a really deep model is unfeasible/impossible. So either you have a model shallow enough for which you can train a BNN and get a reasonable result, or you will get a model with an uncorrect posterior (and thus an uncorrect error estimation). For example, as far as I can understand, you cannot train a Bayesian resnet50
+- Test time augmentation and ensembling are totally fine during test time. Inference time is still in the order of milliseconds or less. Of course, training time is impacted for ensembles, but training most CNNs is a long undertaking.
+- It does not even do the former in my experience. If you use a dataset which is entirely out of distribution it still produces the same margins of uncertainty on average. Also when used on the train dataset I would have had expected something like a gamma or beta distribution of uncertainty over the entire dataset, where it is certain about a large part of the data but with a long tail of lower certainty. Though, MCD produces a Gaussian. Unfortunately I dont remember the title of the paper, I might be able to find it later though.
+
+There is an approach I think is interesting but I never tried it. You use a cyclic learning rate and use the last n lr-minima as an ensemble. In this approach you dont need to train multiple models but just one, though they should be still highly correlated. Not sure if it works but it sounds interesting enough to try imo!

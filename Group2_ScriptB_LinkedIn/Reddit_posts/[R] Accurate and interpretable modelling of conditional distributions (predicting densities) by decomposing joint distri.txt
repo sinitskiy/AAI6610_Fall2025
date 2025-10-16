@@ -1,0 +1,59 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/dtsom2/r_accurate_and_interpretable_modelling_of/
+Title: [R] Accurate and interpretable modelling of conditional distributions (predicting densities) by decomposing joint distribution into mixed moments
+
+Content:
+I am developing methodology e.g. for very accurate modeling of joint distribution by decomposing in basis of orthonormal polynomials - where coefficients have similar interpretation as (mixed) moments (expected value, variance, skewness, kurtosis ...), e.g. to model their relations, time evolution for nonstationary time series.
+
+We can nicely see growing likelihood of such predictions as conditional distributions when adding information from succeeding variables.
+
+While people are used to predicting values, which can be put into excel table, we can get better predictions by modelling entire (conditional) probability distributions - starting with additionally getting variance evaluating uncertainty of such predicted value e.g. as expected value.
+
+Using such orthonormal basis to model density, we can predict its coefficients ("moments") independently - the difference from standard predicting value is just separately predicting (MSE) e.g. a few moments, here as just linear combination for interpretatbility (could use e.g. NN instead) finally combining them into predicted density.
+
+I have implementation and further develop it - what kind of data could you suggest to use it for? (preferably complex low dimensional statistical dependencies). ML methods to compare it with?
+
+[Slides](https://www.dropbox.com/s/7u6f2zpreph6j8o/rapid.pdf), [recent paper](https://arxiv.org/pdf/1911.02361), its overview: 
+
+https://i.imgur.com/2xNPCIm.png
+
+Comments:
+- If you are not familiar with it you may find this an interesting read:
+
+https://en.wikipedia.org/wiki/Method_of_moments_(statistics)
+- Is it related to variational inference?
+- I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:
+
+- [/r/on_trusting_ai_ml] [\[R\] Accurate and interpretable modelling of conditional distributions (predicting densities) by decomposing joint distribution into mixed moments](https://www.reddit.com/r/On_Trusting_AI_ML/comments/dvcfbj/r_accurate_and_interpretable_modelling_of/)
+
+&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*
+- Indeed, it kind of combines the method of moments with [moment problem](https://en.wikipedia.org/wiki/Moment_problem).
+
+Combining standard moments/cumulants into a density is generally a tough "moment problem".
+
+So instead, I model coefficients of basis of orthornormal polynomials - they have similar interpretation as moments, but are chosen such that the "moment problem" becomes trivial for them.
+
+Also, in MSE estimation we can predict such moments independently, just minimizing mean square error (by linear regression ... neural networks) - to **finally combine all such predicted moments (using method of moments) into predicted density.**
+- **Method of moments (statistics)**
+
+In statistics, the method of moments is a method of estimation of population parameters.
+
+It starts by expressing the population moments (i.e., the expected values of powers of the random variable under consideration) as functions of the parameters of interest. Those expressions are then set equal to the sample moments. The number of such equations is the same as the number of parameters to be estimated.
+
+***
+
+^[ [^PM](https://www.reddit.com/message/compose?to=kittens_from_space) ^| [^Exclude ^me](https://reddit.com/message/compose?to=WikiTextBot&message=Excludeme&subject=Excludeme) ^| [^Exclude ^from ^subreddit](https://np.reddit.com/r/MachineLearning/about/banned) ^| [^FAQ ^/ ^Information](https://np.reddit.com/r/WikiTextBot/wiki/index) ^| [^Source](https://github.com/kittenswolf/WikiTextBot)   ^]
+^Downvote ^to ^remove ^| ^v0.28
+- They concern similar problems, but this one is much simpler:
+
+- normalize all variables to ~uniform on [0,1] (e.g. sort and to each value assign position in this order),
+
+- uncorrelated they would be from [0,1]^d, so let's model distortion from this rho=1 as just polynomials - using orthonormal polynomial basis, coefficients have similar interpretation as mixed moments, can be independently calculated if optimizing MSE,
+
+- now e.g. to predict rho(X=x|Y=y), here each considered moment of X is separately modeled as linear combination of mixed moments of y (linear regression),
+
+- having all predicted moments, we get prediction as polynomial, which sometimes gets below zero, so there is used max(polynomial, 0.03) and then there is needed normalization for such density to integrate to 1.
+- Why not MLE?
+- I haven't went this way, but sure you can e.g. take the final MSE parameters and perform a few MLE gradient ascend steps - maybe squeezing a bit of additional likelihood, but loosing some nice properties like uniqueness, inexpensiveness, independence of coefficients.
+
+I prefer to focus on scaling it up: automatic basis selection, better understanding of generalization problem - which is simplified a bit here, handling higher dimensional data ... and finally maybe building neural networks with neurons having such model of joint distribution as polynomial - continuously updated and allowing for flexible change of inference direction (avoiding Bayes).

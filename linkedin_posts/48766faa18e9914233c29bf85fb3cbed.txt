@@ -1,0 +1,18 @@
+URL: https://www.linkedin.com/posts/leskovec_reduce-llm-hallucinations-with-rag-over-textual-activity-7190745116339302401-da4n
+Date: 2025-09-24
+Author: Unknown
+
+Reduce LLM hallucinations with RAG over textual as well as structured knowledge bases. Today we are releasing WSTaRK h, a large-scale LLM retrieval benchmark on semi-structured knowledge bases with dataset from e-commerce, biomedicine, and academic research.
+
+LLMs excel at reasoning and semantic retrieval, they struggle with more complex tasks. Especially when real-world user queries require a combination of unstructured (text) and structured (relational) knowledge. How do we track the capability of LLM-driven systems in handling such tasks?
+
+STaRK features large-scale knowledge bases with natural-sounding, diverse, and useful queries, which involves a blend unstructured and structured information. Moreover, we develop an automatic pipeline to generate the ground truth answers.
+
+STaRK presents significant opportunities by offering a comprehensive retrieval testbed on product recommendations, academic paper searches, and precision medicine inquiries. 
+
+With STaRK, we found that current LLM retrieval systems CANNOT accurately retrieve information. More powerful systems are needed!
+
+Preprint: https://lnkd.in/d7W6Cccn
+GitHub https://lnkd.in/dA-YxXW3
+
+Joint work with wonderful collaborators at 亚马逊.

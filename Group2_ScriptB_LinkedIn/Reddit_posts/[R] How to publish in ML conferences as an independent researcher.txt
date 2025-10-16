@@ -1,0 +1,39 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ly5ehr/r_how_to_publish_in_ml_conferences_as_an/
+Title: [R] How to publish in ML conferences as an independent researcher
+
+Content:
+I am not affiliated with any institution or company, but I am doing my own ML research. I have a background in conducting quantitative research and know how to write a paper. I am looking for a career with a research component in it. The jobs I am most interested in often require "strong publication record in top machine learning conferences (e.g., NeurIPS, CVPR, ICML, ICLR, ICCV, ECCV)". 
+
+Can anyone share if they have published in ML conferences as an independent researcher? For example, which conferences are friendly to researchers without an affiliation? Is there any way to minimize the cost or to get funding? Any other challenges I may encounter? TIA
+
+Comments:
+- All conferences are "independent researcher friendly " no conference will reject the paper because you don't have an affiliation. 
+
+
+Naturally, you won't get funding anywhere. If you don't want to front the $1k registration fee+ trip you can submit your paper to a journal, there are plenty of journals without a publication fee
+- Just submit, get accepted, pay the insane fees, travel there (pay more money), done.
+
+Nobody cares about the affiliation.
+- I was in similar position a few years ago, it's a lot easier now that I'm working with an established research group at a university. If that isn't an option, having collaborators who are experts in your field will help a lot. You can contact researchers in your field asking to meet online and discuss potential collaborations/questions, cold emails are often effective provided that you have insightful ideas.
+- Yes, I can relate to your situation as an independent researcher. I've found that some conferences, like ICML-R, are more welcoming to independent researchers. To minimize costs, consider applying for travel grants or collaborating with researchers from institutions that can cover the costs. However, be prepared for challenges  such as limited resources and lack of institutional support. Good luck with your research!
+- Just submit your work? Make sure you follow the guidelines of each individual conference. Even if you are not hundred percent sure about your chances, the reviews often contain quality feedback.
+- People who ask these questions know very little about research and typically never publish in the top conferences.
+
+I wish you the best OP but I don't think you realize how hard it is to publish in these venues especially if you don't have a SOLID research background
+- What will happen if I don't turn up at the conference? My paper is still my paper, right
+- Unfortunately, in the Applied ML research domain, they require conference publications, specifically from a few selection of conferences. No one cares if you have journal publications.
+- It may sound like I want to get spoonfed, but can you maybe tell a few journals I can publish without publication fee and no affiliation to get started with. Thanks in advance...
+- Great summary. It does sound a bit like scam when you put it like that lol.
+- I have been thinking about it too. One will get some experts' opinions and perhaps some resources (computing, labor). But professors are usually very busy. I am not sure if they respond to cold calls. I haven't tried yet.
+- Yeah tbh the gap between “conducting quantitative research” and producing and writing up cutting edge machine learning research is possibly very very large
+- Is it though? Neurips acceptance rate is \~25%. Its not \~2%. Also, even if you get rejected, just implement the reviewer's suggestions and improve, and try the next one
+- Depends... If you paid the registration fee and had some valid reason (visa issues, medical grounds) maybe they will look the other way. Some large conferences might not even have a mechanism to check if you attended.
+
+If you didn't pay registration there is no way it is "still a paper".
+- Haven’t checked the other conferences, but I know that ICML will desk-reject papers if none of the authors complete in-person registration/are unavailable to present in person (i.e. ICML requires at least one author to be present at the conference)
+- They will redact it
+- JMLR, TMLR are pretty good journals for ML space with rigorous review process, equivalent to ICML, NeurIPS, ICLR standards.
+- Pretty much any non-predatory ML journal. If you go through your references you will probably find at least some 10 different options
+- Professors are less likely to reply. Junior researchers (eg. PhDs, post-docs) are more likely to respond. Don't expect them to be very actively involved unless they are very interested, they're more likely to provide advice and guidance via online meetings.
+- Thanks for your reply. I had research experience on neural networks, applied math and applied ML. The hardest part for me is to keep up-to-date of the research trend. Writing a paper also seems to be a challenge.

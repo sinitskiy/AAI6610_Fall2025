@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ieg6ge/flu_deep_learning_help_xpost_from_rmachinelearning/
+Title: Flu Deep Learning Help (X-post from r/MachineLearning)
+
+Content:
+Hi everyone, cross posting from r/MachineLearning in the event this is a better venue. I’ve been working a custom dataset that I’ve curated and I’m about worn out with it:
+
+I’m working on a hobby project in which I’ve collected complete proteome sequences for flu isolates collected around the world from about the year 2000 to the present. As you can imagine, this real world data is plagued with recency bias in the number of isolates recorded, and their are many small minor classes in the data as well (single instance clades for example).
+
+For context, there are many examples in the literature of modeling viral sequences with a variety of techniques, but these studies typically only focus on one or two of the 10 major protein products of the virus (Hemagglutinin (HA) and Neuraminidase (NA)). My goal was to model all 10 of these proteins at once in order to uncover both intra- and inter- protein interactions and relationships, and clearly identify the amino acid residues that are most important for making predictions. 
+
+I’ve extracted ESM embeddings for all of these protein sequences with the 150M param model and I initially trained a multi-layered perceptron classifier to do multi-task learning and classification of the isolates (sequence -> predict host, subtype, clade). That MLP achieved about 96% accuracy. 
+
+Encouraged by this, I then attempted to build predictive sequence models using transformer blocks, VAEs, and GANs. I also attempted a fine-tuning of TAPE with this data, all of which failed to converge. 
+
+My gut tells me that I should think more about feature engineering before attempting to train additional models, but I’d love to hear the communities thoughts on this project and any helpful insights that you might have. 
+
+
+Comments:
+- I'm not a machine learning person, what are you even trying to model with your flu proteomes (genome -> predicted proteins?) databases? 
+
+"clearly identify the amino acid residues that are most important for making predictions" You mean structural biology predictions? Are you linking back to real world data e.g. crystal structure, or are you doing more modelling built on top of alpha-fold modelling data? 
+
+"sequence -> predict host, subtype, clade" Isn't that a phylogenetics problem, how is it linked with protein structure modelling?
+
+I'm wondering if you're just building models on top of models with no way of verifying or interpreting your results, or I'm totally misunderstanding what your trying to do
+- I'm intrigued by getting your hands on proteome data as a hobby project! This sounds very cool! 
+
+Can you tell us more about it?
+- I think planning out your goasl (or at least expectations) from the experiments is quite important to analyse if your work is actually working or not. I have had my time, randomly performing experiments and realizing I don't know what it aims to get fine on
+- Btw the work is very exciting! I have previously worked with gromcs and other methods, left academia now looking back at all the things I did, I am planning to automate planning the research, data collection, preliminary analysis, conducting the research, and writing the paper.
+- I think you’re making a good point: I need to be more clear about my goals. First I’m not exactly interested in structure per se. This experiment would ideally result in a final figure depicting all 10 flu proteins as linear sequences, with specific amino acid residues highlighted in some way based on the features that would be extracted from a pretrained autoregressive transformer (forgive me for all the ML terms). My understanding is that attention weights can be analyzed after successfully training a model to visualize which parts of the amino acid sequence are important for making predictions (predict next token, or in this case predict next amino acid). End of the day I’d like an ML model that is explainable with biological relevance but all the ML techniques I’ve thrown at it have failed to converge.

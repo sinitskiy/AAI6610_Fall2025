@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ol7fgq/r_fast_universal_estimation_of_latent_variable/
+Title: [R] Fast, universal estimation of latent variable models using extended variational approximations
+
+Content:
+Tl;dr: An approach to supervised matrix factorization that 1) allows you to incorporate metadata, and 2) provides a way of identifying the latent factors, so the dimensions are meaningful. And because it's Bayesian, you can get uncertainty estimates.
+
+Abstract: "Generalized linear latent variable models (GLLVMs) are a class of methods for analyzing multi-response data which has garnered considerable popularity in recent years, for example, in the analysis of multivariate abundance data in ecology. One of the main features of GLLVMs is their capacity to handle a variety of responses types, such as (overdispersed) counts, binomial responses, (semi-)continuous, and proportions data. On the other hand, the introduction of underlying latent variables presents some major computational challenges, as the resulting marginal likelihood function involves an intractable integral for non-normally distributed responses. This has spurred research into approximation methods to overcome this integral, with a recent and particularly computationally scalable one being that of variational approximations (VA). However, research into the use of VA of GLLVMs and related models has been hampered by the fact that closed-form approximations have only been obtained for certain pairs of response distributions and link functions.
+    In this article, we propose an extended variational approximations (EVA) approach which widens the set of VA-applicable GLLVMs drastically. EVA draws inspiration from the underlying idea of Laplace approximations: by replacing the complete-data likelihood function with its second order Taylor approximation about the mean of the variational distribution, we can obtain a closed-form approximation to the marginal likelihood of the GLLVM for any response type and link function. Through simulation studies and an application to testate amoebae data set in ecology, we demonstrate how EVA results in a universal approach to fitting GLLVMs, which remains competitive in terms of estimation and inferential performance relative to both standard VA and a Laplace approximation approach, while being computationally more scalable than both in practice."
+
+Link: https://arxiv.org/abs/2107.02627
+
+R Package: https://github.com/JenniNiku/gllvm
+
+Comments:

@@ -1,0 +1,21 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jt79jt/resume_review/
+Title: Resume Review
+
+Content:
+https://preview.redd.it/62u5ofwzqate1.png?width=673&format=png&auto=webp&s=028de033a51dabd9b622121405dca0957a6edb0d
+
+I'm currently seeking internship opportunities in the field of Computer Vision and Robotics, and I’ll soon begin looking for full-time roles as well. I'm not sure why I don't get callbacks. I understand that Computer Vision is a highly competitive field, often leaning toward candidates with PhDs, but I want to make sure my resume isn't the issue or worse, total trash.
+
+I've looked through other resume review posts too, and now I’d really appreciate some honest feedback and suggestions on how I can improve mine.
+
+  
+Note : I'm an international student at US!
+
+Comments:
+- Not that I hire specifically for computer vision, but some general notes. 
+
+Lots of technical jargon with little metrics that are significant to a hiring/project manager. Metrics like accuracy are impressive to people like you and I, but how much time/money does that save the department? I know you are fresh out of school here but just try to keep that in mind. Seems like you have a good skill set, best of luck to you!
+- Thanks for the input.
+
+Would you suggest I rather remove those. Since I don’t have any work experience where I could improve monetarily, I wasn’t sure what I should put. Also these resume parsers told like we should have numbers quantified etc in resume.

@@ -1,0 +1,57 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/lob6ib/p_data_efficient_reinforcement_learning_with/
+Title: [P] Data Efficient Reinforcement Learning with Probabilistic Model Predictive Control: Opensource Implementation
+
+Content:
+ Hi everyone !
+
+I implemented the paper [Data Efficient Reinforcement Learning with Probabilistic Model Predictive Control](https://www.researchgate.net/publication/317711704_Data-Efficient_Reinforcement_Learning_with_Probabilistic_Model_Predictive_Control) and thought it might interest some people here.
+
+Abstract of the paper:
+
+"Trial-and-error based reinforcement learning (RL) has seen rapid advancements in recent times, especially with the advent of deep neural networks. However, the majority of autonomous RL algorithms either rely on engineered features or a large number of interactions with the environment. Such a large number of interactions may be impractical in many real-world applications. For example, robots are subject to wear and tear and, hence, millions of interactions may change or damage the system. Moreover, practical systems have limitations in the form of the maximum torque that can be safely applied. To reduce the number of system interactions while naturally handling constraints, we propose a model-based RL framework based on Model Predictive Control (MPC). In particular, we propose to learn a probabilistic transition model using Gaussian Processes (GPs) to incorporate model uncertainties into long-term predictions, thereby, reducing the impact of model errors. We then use MPC to find a control sequence that minimises the expected long-term cost. We provide theoretical guarantees for the first-order optimality in the GP-based transition models with deterministic approximate inference for long-term planning. The proposed framework demonstrates superior data efficiency and learning rates compared to the current state of the art."
+
+Here are the results I obtained on the Pendulum-v0 task from OpenAI gym, where you can see the learning happening in real time.
+
+[Past and predicted states, actions and losses](https://i.redd.it/gkh6qywxwni61.gif)
+
+[Learned gaussian process model and points in memory \(top=values, bottom=uncertainties\)](https://preview.redd.it/zs77r6lzwni61.png?width=1500&format=png&auto=webp&s=b07a5ad45bf4a1970f8a826b188663eae4e62389)
+
+[Resulting animation](https://i.redd.it/znsqj391xni61.gif)
+
+The code and documentation is on [github](https://github.com/SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control) if you want more information or run tests yourself.
+
+**Limitations of the method**
+
+* The controlled environment must have low dimension of the states and actions
+* The controlled environment must have continuous actions
+* The computation time at each iteration are important and depends on the length of the planning horizon.
+* The reward (loss function) must be defined as a function depending on states and actions
+
+**So why is this paper important?**
+
+Currently, real-world applications of model-free reinforcement learning algorithms are limited due to the number of interactions they require with the environment.
+
+There is a debate within the reinforcement learning community about the use of model-based reinforcement learning algorithms to improve sample efficiency, but the extent to which it can improve sample efficiency is unknown.
+
+With all the limitations that this method presents, it shows that for the applications on which it can be used, the same learning as for state-of-the-art model-free algorithms (to the extent of my knowledge) can be done with 10 to 20 times less interaction with the environment for the tests I used.
+
+This increased efficiency can be explained by different reasons, and open the search for algorithms with the same improvement in sample efficiency but without the limitations mentioned above.
+
+For example, the future predicted reward (or loss) is predicted as a distribution. By maximizing the upper confidence limit of rewards, future states with high reward uncertainty are encouraged, allowing for effective exploration.
+
+Maximizing future state uncertainty could also be used to explore environments without rewards.
+
+If future research removes the above limitations, this type of data efficiency could be used for real world applications where real-time learning is required and thus open many new application possibilities.
+
+Comments:
+- Really good job! 
+I’m wondering how this technique can be used for physical sciences. I mean for example it may be used for optimization problems, right?
+- Amazing. Great summary.
+- Thank you !
+
+If you have to do simple optimization, you can look at bayesian optimization. It is a method that uses the same gaussian process as the model, but possibly more advanced ways to select next points to try.
+
+One example of application can be optimizing materials properties by testing different material composition in as few trials as possible. You can also look at this video for a visual explanation, where it was used to optimize a drone controller parameters: [https://www.youtube.com/watch?v=GiqNQdzc5TI](https://www.youtube.com/watch?v=GiqNQdzc5TI)
+- Interesting.. Similar to your example, optimization (especially RL) can be used for finding process parameters I think. I  need to read more to understand the differences between these diferent methods..
+Thanks for sharing.

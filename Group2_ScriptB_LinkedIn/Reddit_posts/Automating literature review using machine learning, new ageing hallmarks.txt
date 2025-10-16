@@ -1,0 +1,35 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/z54yq3/automating_literature_review_using_machine/
+Title: Automating literature review using machine learning, new ageing hallmarks
+
+Content:
+Hi everyone,
+
+Background:
+
+As part of a review on the potential of cellular enlargement as a new ageing factor our group manually went through thousands of abstracts and then hundreds of papers to find papers that reported a correlation between cell size and some aspect of ageing (an actual causal relationship has only been shown in blood stem cells last year).
+
+So now I have a dataset of around 1300 papers that were hits, and another few thousand that appeared in our search on pubmed but did not report a correlation.
+
+What I would like to do is to use the dataset to train an AI to do the same thing we did 1. For new studies 2. For other aspects of ageing that we did not look out.
+
+The problem:
+Some search terms returned a lot more hits than others (makes sense since how much size matters likely varies between biological systems). However, because of this I'm not sure how useful the dataset is actually in recognising "things connected with ageing" (picking up in "cell size" is easy since it is mentioned in all the papers)
+
+I have limited experience with machine learning and none outside of some hobbyist fascination with natural language processing algorithms.
+
+Any suggestions on how to help an algorithm pick up on such a multifaceted thing such as ageing would be appreciated. Also I am unsure whether my dataset is large enough for such a project.
+
+Here is a link to our paper for those interested ([Cellular enlargement - a new hallmark of aging](https://www.frontiersin.org/articles/10.3389/fcell.2022.1036602/full)). The dataset was used to construct Figure 3. 
+
+Tl:dr: I have a dataset of 1300+ papers but it is a bit fragmented with how they relate to the topic of cell size and ageing. Can I still use it?
+
+Comments:
+- Worth having a look at this tool for your task https://elicit.org/search
+- Pretty cool paper... post to r/longevity
+- Thanks, looks interesting!
+
+Have you used it before? What does its output look like?
+- Thanks for this! Seems like a great tool, I look forward to using it!
+- Had the same idea as an after thought and was pleased to see some greater questions posted on r/longevity
+- Yes, I have used it for some literature reviews. The output can be exported as a CSV file. It's quite straightforward, but if you have any doubts I would recommend joining their slack channel, they can help you with your task!

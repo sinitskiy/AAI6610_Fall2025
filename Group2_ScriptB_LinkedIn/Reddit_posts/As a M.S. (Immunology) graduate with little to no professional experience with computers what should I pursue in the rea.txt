@@ -1,0 +1,44 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/194zilr/as_a_ms_immunology_graduate_with_little_to_no/
+Title: As a M.S. (Immunology) graduate with little to no professional experience with computers what should I pursue in the realm of Bioinformatics/Computational Biology (another M.S., Ph.D., industry experience, etc.)?
+
+Content:
+TLDR; what should I do to make myself more marketable as someone with little to no professional experience but want to make the transition away from wet lab work into more computational based work?
+
+I recently earned my M.S. while working full time at a small biotech startup and have just over half a decade of wet lab experience with a focus on antibody characterization and optimization prior to the IND-phase and 2-3 years of basic project management and facility management experience. 
+
+I am looking to expand my skills and focus on an area of science that interest me more as I'm not a fan of the Lab Manager lifestyle and feel like I have capped out. 
+
+I have been looking into computational biology and bioinformatics Ph.D. programs. What are some skills/areas that I can expand/focus on that would give me a slight advantage with my lack of background in computer-based work, i.e. what coding language should I focus on learning, should I look at taking a cut and try to focus on getting into an entry level bioinformatics position, etc.? 
+
+OR should I just take the shorter track and pursue another M.S. instead? 
+
+Comments:
+- Job experience is the best thing for marketability. The job market is crummy so be kind to yourself. Expect that it will take time to find a job. In the mean time, I recommend taking Harvard’s free course, cs50, to see if programming and computer science is really something you want to pursue.
+- I don't think it makes sense to get a 2nd masters. If you want to become a  PhD level researcher then getting a PhD makes sense. Otherwise, I'd focus on learning basic scripting, navigating around a terminal, coding in python
+- Tbh, the job market for this field is bad right now. You won't be able to secure anything but a technician position in academia (if you're lucky). I'm graduating with a PhD this year and I, like other graduates, will also be applying to masters positions along with doctorate positions just to have a job. It's going to be extremely competitive even with experience. I wouldn't recommend the switch honestly. But if you really feel passionate about it and want to get paid, either you need to do a PhD or get a technician position. A masters is a waste of money imho. Use rosalind to get familiar with bioinformatics algorithms and become proficient in Python. Then I would recommend trying to secure a position as a technician in an academic lab. You will be paid 30-40k a year, even in HCOL just as a warning. Then you will have experience to get a position in industry in a few years or experience to get into a PhD program. I wish you luck. It's tough out there.
+- I'm assuming that "no professional experience with computers" means that you don't really have any coding experience at all? Seems like a big jump into something you don't know much about, I'd make sure that you actually enjoy coding and data analysis before jumping into a bioinformatics program. My master's is in Biology, but I did a lot of bioinformatics in 2020 during the lockdown where I was not allowed to do any wet lab. Because I had that experience, I was offered a job as a bioinformatician and got my current job in R&D at a startup doing a mixture of wet lab and bioinformatics, despite not having a bioinformatics degree. I agree with others that getting another master's doesn't make too much sense.
+
+For me, it's mostly command line (Linux/Unix) and Python, sometimes R.
+- either get a PhD or just learn it on your own and start pushing to do these projects at woek
+- PhD is required for a livable wage in bioinformatics but I don’t recommend it. Still too much competition.
+- I'm afraid I will be wasting time trying to get the attention of a PhD program with my limited experience, when I should basically just reset get the second MS and then pursue the PhD.
+- Thank you for the insight I really appreciate it. I wish you the best of luck in your job search!
+
+And trust me it's not any better in the wet lab space, due to lack of job postings near me in the past year I completely switched to applying to project management and program management positions.  I even have applied to defense contractors for their project management positions and have got more responses from them than anything in the biomedical space. It's tough no matter what you're looking at right now.
+- I can see that everybody is trying to switch to dry lab :( unfortunately is getting saturated. But I've been talking to a few people in business to plan my next move, and aparentely data analysis, statistics and bioinformatics is still the area with more demand. Unfortunately, it is tough in every single field nowadays, but I think anything that envolves technology/data/computer sciences gives us more chances to thrive in the future.
+- We pay like 100k for bachelors/masters level analysts in a MCOL area in the US and I don’t think our wages are particularly impressive
+- If you plan to pursue a PhD then go straight in, dont get a 2nd masters. PhD students will come from a variety of backgrounds. Some will be like you and come from the bio side. Others will come from math/stats/compsci and not know much bio. This is absolutely expected in an interdisciplinary PhD program. You have tons of experience in industry and research it seems. Give PhD applications a shot... I think you'll be pleasantly surprised!
+- Yeah. There's nothing we can do honestly. I have a BS in bioinformatics as well and the field had really high demand when I decided to pursue this. Now that I'm finishing my PhD, that's not the case whatsoever. It gets frustrating at times and feels like I should've just done something else after spending so much time on my education. But you are right. We are in a better spot than someone with only wet lab skills. It just still sucks for the people like myself and others that decided 8-9 years ago to pursue this field when there were so many jobs and now we are just finally finishing up our education :/ Good luck to literally everyone.
+- Where at exactly?
+- I can totally understand your frustration. To be honest, my eyes roll everytime I hear someone else saying they're switching to bioinformatics lol. I hope they realize soon that there will be no job for everybody at some point.
+- I left the field in 2015 and I could see the writing on the wall as the training pipelines were starting to ramp up and the self-taught days were over. Articles like ["Data Scientist the sexiest job"](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century) definitely didn't help, nor did the tension in academia and the tendency for biologists to consider bioinformatics a "support" role not on par with wet lab biologists.  
+
+
+I started a little before you, it was a totally different field then. There were no undergrad degrees, and thousands of people weren't getting online masters programs looking for work. If you were working in bioinformatics, it meant you were probably doing something else before, you worked in a lab, and you were pretty eager to learn because teaching yourself was the only way you could figure out how to use this very new technology.  
+
+
+I definitely lament the massive education pipelines and total lack of jobs, and training standardization, but to some extent the jobs problem and field growing up was always going to happen. This whole thing started with one very exciting idea, next-gen sequencing, and it was definitely cool to be a part of that.  
+
+
+You know, you don't have to stay in bioinformatics. Almost everything you've learned can be used in industry if you substitute "biology" domain knowledge for "business". I switched, and I'm really glad I did, with a PhD you can work on some really interesting industry problems.

@@ -1,0 +1,88 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/uk2ifk/d_what_are_the_issues_with_using_tmleg_compdouble/
+Title: [D] What are the issues with using TMLE/G comp/Double Robust estimators to interpret ML models with marginal effects?
+
+Content:
+So TMLE is a way to do causal inference using ML models. It is described in this book https://tlverse.org/tlverse-handbook/tmle3.html
+
+Of course, the causality part comes from the domain assumptions and causal graph, without that its just regular statistical inference/estimation. 
+
+Kevin Murphy’s Prob ML 2 in Ch 35 also describes the G computation procedure as well as Double Robust estimation and obtaining uncertainty. Briefly, G comp involves perturbing the variable of interest by a small epsilon in both directions, making predictions on both datasets, averaging and dividing by 2eps. If the variable is categorical then you just do this for each category. 
+
+This amounts to Pearl’s backdoor adjustment formula. If the causal assumptions are satisfied, this estimate is causal, otherwise it is just some marginal effect.
+
+People say that ML models struggle with causality and interpretability and are black boxes, but what is the issue with the above approach? 
+
+Using G comp and enough data, in theory I could just throw a black box at the problem and *still* obtain an interpretable average effect size for an exposure (x variable) of interest, and if my variable selection was done right-it is also causal. 
+
+Furthermore, this approach avoids parametric assumptions that are there in traditional regression, which would invalidate the inference if not satisfied anyways.
+
+So why isn’t this new causal or marginal effect stuff used more? It seems too good to be true, its possible to obtain a CI and p value with these methods, yet they haven’t seemed to pick up much yet outside some academic papers. 
+
+Is the weakness that there is more to interpretability than just a CI/p value/effect size? What are you looking for with it?
+
+Comments:
+- I would also like to know the answer. This very much aligns with an idea I had for just such a thing
+- I think the real reason is not interpretability, but rather the bias-variance tradeoff.
+
+I know there is somewhat of a hype around right now around nonparametric causal inference. But there are also serious statisticians and econometricians who still use mostly relatively simple parametric models, whose assumptions are strictly speaking always violated. Are they simply stupid or backwards? Not necessarily. A highly flexible machine learning model may have nice asymptotic properties but will typically perform terribly in small samples. Getting low bias in exchange for massive variance in the estimates is not worth it.
+
+Double-robustness in particular I find not very impressive at all: in any realistic situation, both models are misspecified. And it is not at all obvious that two wrong models are better than one; in a [classic paper](https://projecteuclid.org/journals/statistical-science/volume-22/issue-4/Demystifying-Double-Robustness--A-Comparison-of-Alternative-Strategies-for/10.1214/07-STS227.full), Kang and Schafer showed the opposite to be the case.Even if we assume that one of the models is correct (unlikely) and thus the doubly robust estimator is consistent, we still have the usual critique of consistent estimators: consistency does not imply good finite-sample performance. There may be inconsistent estimators with much lower mean squared error in realistic sample sizes.
+- When you talk about ML methods, traditionally the focus has been on improving prediction accuracy. Neural networks, ensemble of trees, and kernel methods all aim at improving prediction accuracy.
+
+**ML methods struggle at identifying causality because they do not need to be causal for being the best at prediction.** In fact, quite likely causal models underperform non-causal models in iid train/test splits. The problem happens when there are distribution shifts from the training to the test split. The invariance property of causal models suggest that they should have a better out of domain generalization performance.
+
+There is a line of work on **using ML predictors to improve causal inference**. Techniques such as TMLE and DML (double/debiased ML) are some of the main algorithms in this topic, going beyond simple linear regression. You should not confuse this line of work with the core ML predictive modeling tasks.
+- It's the same reasons that robust statistics, Bayesian inference, nonparametric techniques in general, etc all have lagged behind in terms of adoption for their entire history. A mixture of perceived complexity, less "exciting" results (I don't think academia will ever get away from classical hypothesis testing and asymptotics for that reason alone), a lack of general knowledge, and simply not being interested in the goals of the methods. In lots of applications, people aren't motivated by the possibility of more robust inference, identifying causal structures and spurious relationships, or generalization ability. Not to be too glib, but ice cream sales are a great predictor of homicide rates..that the two are completely unrelated beyond being seasonal is irrelevant *if all you care about is predicting ice cream sales*.
+- !RemindMe 1 year
+- In small samples yea you wouldn’t use ML but this is where you could still use feature engineering penalized by ridge/lasso or going fully bayesian. It was always strange to me coming from an engineering background to biostats that people would separate inference vs prediction. That seems to have been true before but not with these methods now. 
+
+There is a difference in the sense that say colliders or mediators are OK for prediction but not causal inf, but outside of that, with enough data if you want to get the best causal effect the 2 are essentially the same outside of special designs. This intuitively makes sense to me. In biomedical datasets so many people adjust for the effect of BMI linearly, but even just with common sense, that has to be wrong because both very underweight and obesity are bad for so many things.
+
+Only people like Frank Harrell are really making the most out of small data with splines and all. From some things he has written, it also seems clear that even in RCTs he prefer to adjust for other causes of the outcome and account for as much heterogeneity.
+- Well the causality itself is never from the model, its from the DAG representation. If you were to model the target as a function of just the parents, and block the backdoor paths, avoid colliders/mediators or M bias while doing so then the model is a causal model. The distribution shift or non-iid problem is an important issue, usually when you yourself split the data it won’t be there but it will be there in practice. 
+
+So provided you do all that, my question though is more, can’t these TMLE/DML techniques be used to interpret the ML models and essentially bridge the gap between prediction and inference? If we have a method like TMLE/DML to help us infer the causal effect (or without a perfect causal graph, just a marginal effect) and get uncertainty on it, then is that enough for interpretability? What are these methods lacking vs. traditional coefficient based approaches? 
+
+With enough data why not just use TMLE+ML as a “universal” solution, and if there is more to interpretability than just an effect size/p value. Even without a fully accurate causal graph, these methods still result in interpretable marginal effect estimates (they just wont be causal)
+- I will be messaging you in 1 year on [**2023-06-02 20:07:14 UTC**](http://www.wolframalpha.com/input/?i=2023-06-02%2020:07:14%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/MachineLearning/comments/uk2ifk/d_what_are_the_issues_with_using_tmleg_compdouble/iayakkf/?context=3)
+
+[**CLICK THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2Fuk2ifk%2Fd_what_are_the_issues_with_using_tmleg_compdouble%2Fiayakkf%2F%5D%0A%0ARemindMe%21%202023-06-02%2020%3A07%3A14%20UTC) to send a PM to also be reminded and to reduce spam.
+
+^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%20uk2ifk)
+
+*****
+
+|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|
+|-|-|-|-|
+- I don't think many people still separate inference and prediction.
+
+I might agree with your points if we always had an arbitrarily large dataset available for every analysis. But we don't. Again, unbiasedness and/or uniform consistency do not imply good performance in realistic sample sizes. There usually are other inconsistent models with much smaller mean squared error and better predictive performance.
+
+Many frequentist authors say things like this:
+
+>Furthermore, this approach avoids parametric assumptions that are there in traditional regression, which would invalidate the inference if not satisfied anyways.
+
+As if asymptotic consistency was somehow a necessary criterion for valid inference. I simply don't think that's true. Asymptotic properties don't mean much if the estimates are so noisy that they are useless for decision-making. Consider for example Bayesian multilevel models, which are always biased and inconsistent (unless the model is correctly specified, which is never the case), but still perform very well especially in small samples.
+- Of course, if your goal is explanation of the data, you should use the causality techniques such as TMLE. Subject to the accuracy of the assumptions (often encoded in the DAG), these methods will achieve what you want.
+- You are right, these methods could be used for causal effect estimation and be interpretable at the same time. Libraries like econml and causalML implement these and provide shap or variable importances out of the box. The library DoWhy extends interpretability further with refutation methods to the causal graph.
+- Ive mostly seen Bayesian multilevel models on experimental data, where you could have used mixed models. I haven’t yet seen multilevel models being used for causal inference on observational data. There are some Epi papers that say mixed models are biased for causal effect estimates since you need to account for treatment confounder feedback. 
+
+I did see this paper recently though which seems to get at an issue with causal effect modeling in that a super accurate effect estimate adjusted for all confounding doesn’t necessarily lead to better decisions https://pubsonline.informs.org/doi/pdf/10.1287/ijds.2021.0006. But that is also because a threshold of 0 is being used so something that is way off but in the same direction is better than something that is closer but opposite direction.
+- Yea what I was referring to was the old way was “if you want an explanatory model use linear regression and if you want to do prediction use ML”. 
+
+TMLE seems like it can do explanatory modeling while also building a causal model that predicts well (and better out of distribution), particularly if you include other causes of the outcome and no colliders/mediators/M bias. This contradicts the traditional view that for “inferential models one should not use ML”.
+
+So I was wondering if there are any issues with just using ML+TMLE and you get the best of both.
+- Multilevel models are certainly used for causal inference. Andrew Gelman has written a lot on this.
+
+>There are some Epi papers that say mixed models are biased for causal effect estimates since you need to account for treatment confounder feedback.
+
+I am not familiar with these papers but once again... Bias is not everything. A biased but precise estimator can be much more useful for decision-making than an unbiased but noisy one.
+- This is an example of mixed models being an issue for longitudinal data https://www.bmj.com/content/bmj/359/bmj.j4587.full.pdf
+
+I guess if its not longitudinal like this but just different batches/clusters its fine though. For whatever reason, I never see multilevel models get much coverage in either the Biostat/Epi or CS (Pearl) causal inf viewpoints. 
+
+I’ve seen PGM representations of multilevel or mixed models and the plate notation, but PGM is much broader than causal inf. 
+
+But yea there has to be some real downsides with the causal modeling school. I wonder if an issue is that you could end up overfitting to the DAG itself. Traditional stats, bayesian, ML modeling frameworks the downsides are more clear. Im hoping this book covers the issues with causal modeling when its out https://book.modeling-mindsets.com. Its by the same guy that made the interpretable ML book.

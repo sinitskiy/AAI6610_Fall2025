@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/136ic80/r_ml_application_to_lowquality_brain_scans_for/
+Title: [R] ML Application to Low-Quality Brain Scans for Low-Income Countries
+
+Content:
+> Low-field (<1T) magnetic resonance imaging (MRI) scanners remain in widespread use in low- and middle-income countries (LMICs) and are commonly used for some applications in higher income countries e.g. for small child patients with obesity, claustrophobia, implants, or tattoos. However, low-field MR images commonly have lower resolution and poorer contrast than images from high field (1.5T, 3T, and above). Here, we present Image Quality Transfer (IQT) to enhance low-field structural MRI by estimating from a low-field image the image we would have obtained from the same subject at high field. Our approach uses (i) a stochastic low-field image simulator as the forward model to capture uncertainty and variation in the contrast of low-field images corresponding to a particular high-field image, and (ii) an anisotropic U-Net variant specifically designed for the IQT inverse problem. We evaluate the proposed algorithm both in simulation and using multi-contrast (T1-weighted, T2-weighted, and fluid attenuated inversion recovery (FLAIR)) clinical low-field MRI data from an LMIC hospital. We show the efficacy of IQT in improving contrast and resolution of low-field MR images. We demonstrate that IQT-enhanced images have potential for enhancing visualisation of anatomical structures and pathological lesions of clinical relevance from the perspective of radiologists. IQT is proved to have capability of boosting the diagnostic value of low-field MRI, especially in low-resource settings.
+
+[Arxiv version](https://arxiv.org/abs/2304.13385) [Official Version](https://www.sciencedirect.com/science/article/pii/S1361841523000683?dgcid=author)
+
+I am a co-author, PM for any questions.
+
+Comments:
+- This seems really interesting. How do you ensure the model is not hallucinating higher quality details that don’t truly exist? It seems that would be extremely important in a diagnostic setting

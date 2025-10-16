@@ -1,0 +1,26 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11k1f0i/classes_outside_the_curriculum/
+Title: Classes outside the curriculum
+
+Content:
+Hi everyone, 
+
+I am a bachelor's student in molecular biotechnology, set on a career path in bioinformatics (one of the 3 core subjects of the study program). Next semester my schedule will be rather free, thus I wanted to take on additional modules outside my curriculum, which could benefit me in the long run in the field. I was thinking of taking up a class from the mathematics faculty (either a maths or CS class) and wanted to know, what might be some useful modules I could look into. Particularly I'm interested in something rather theoretical (maybe continuing linear algebra?) than practical (e.g. a Linux course). 
+
+For background information: bioinformatics relevant courses I've had so far are linear algebra and analytical geometry, some mathematical analysis, statistics and introduction to data science and computer vision. I also know that next year bioinformatics-specific subjects, such as sequence analysis, hidden Markov models, machine learning, genomics, and more computer vision will be covered, so I would rather do something, that the usual curriculum doesn't offer, but I could still benefit from. 
+
+Thank you :)
+
+Edit: regarding programming, I've had a semester of R for data science and had my fair share of exposure to Python (did a computer vision project last year, now working on a ML project). Started learning Linux before the previous semester, but studies took over soon enough... probably should continue now.
++ Next year I'm going to have an advanced python class in my curriculum, so at least python syntax i will have covered by the end of my bachelors :)
+
+Comments:
+- As someone who did undergrad in molecular bio then got MS in bioinformatics, I wish I had taken more math and stats classes. Math is good for just about anything but the stats have been the one I've struggled (and still struggle) with daily. In my position (academia) I've been the bioinformatics guy and somewhat biostats guy and I've had to learn a lot on the fly. Having a solid stats foundation will definitely help in the future.
+- If you don’t have a class just on programming, I would say to do something in the CS dept. Sometimes specific courses like machine learning are heavily focused on either theory or specific invocations of a particular package and don’t cover some important fundamentals about writing software in a professional setting.
+- Go for the theoretical course. It's really helpful for you to  know the ins-and-hows of commonly used algorithms.
+
+Practical skills can be learned on the get-go while theoretical courses are pretty hard to tackle alone.
+- https://www.bioinformaticsalgorithms.org/ (also on coursera) or rosalind (https://rosalind.info/) will expose you to theoretical CS-style algorithmic concerns quite quickly
+- What kind of statistics did you take ? I think taking a statistical course on introduction to probability is very helpful. I also think taking up to multivariate calculus is helpful if you’re interested in ml. Also agree with comments that said taking a intro to programming course would be helpful and I would also add data structures if you haven’t already.
+- I had intro to statistics, which was mostly probability theory, as well as data sciene class which talked about clustering, hypothesis testing, regression analysis and similar topics. 
+Multivariate calculus is something I am considering, thank you for the other suggestions too!

@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/y-park_dynamic-ensemble-for-probabilistic-time-series-activity-7095467299901476865-smBr
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Youngsuk Park的动态
+Youngsuk Park
+
+(Hiring!) Senior Scientist & Team Lead @ AWS AI | Efficient Training & Inference of LLM | Stanford PhD
+
+2 年  已编辑
+
+We, scientists at AWS AI, shared two of our exciting efforts at #kdd2023 .
+
+1. We presented a tutorial: Training Large-scale Foundation Models on Emerging AI Chips, with Yida Wang Jun (Luke) Huan Rahul Solanki Christian Bock and Aashiq Muhamed.  We gave an overview of LLM models, system perspective, distributed training packages, followed by several case studies on how to train LLMs effectively, e.g., BERT, GPT, T5 using AWS Trainium. If you are interested in using this new AI accelerators with reduced cost, see our website https://lnkd.in/gZr9uUHw (slides are available soon) and please reach us out! 
+
+2. We gave an oral talk to Time Series workshop: Dynamic Ensemble for Probabilistic Time-series forecasting via Deep Reinforcement Learning, with Jun (Luke) Huan Yuyang (Bernie) Wang Karthick Gopalswamy Hilaf Hasson and our intern Yuhao Ding. In this work, we propose a RL ensemble policy that dynamically and adaptively forms ensemble weights over prediction horizon. This is especially effective for time series forecasting setting where the base forecaster performs differently depending on data and framework condition. You can find the paper https://lnkd.in/gyyz-B82  .
+
+#llms #machinelearnig #timeseries #reinforcementlearning #forecasting  #distributedcomputing #amazonscience #kdd2023 #gpu #trn 
+
+Dynamic ensemble for probabilistic time-series forecasting via deep reinforcement learning
+amazon.science
+129
+2 条评论
+赞
+评论
+分享
+Amazon Science
+
+2 年
+
+Great work, Youngsuk Park and team!
+
+赞
+回复
+1 次回应
+Curtis Raymond, MMA
+
+Enterprise Data, Analytics & AI @ Priceline | Master of Management Analytics
+
+2 年
+
+Youngsuk Park this is awesome!! Thanks for sharing 
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+3,780 位关注者
+
+32 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management

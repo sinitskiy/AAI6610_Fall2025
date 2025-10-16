@@ -1,0 +1,24 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/zxmrg4/seeking_postdoc_candidates_immunotherapy_lab_at/
+Title: Seeking Postdoc Candidates -- Immunotherapy Lab at Columbia
+
+Content:
+I'm a new PI at Columbia University Irving Medical Center, in the Department of Medicine, Division of Experimental Therapeutics-- seeking to recruit a Postdoctoral Research Scientist. 
+
+Looking for an enthusiastic individual experienced in RNA-Seq analysis (bulk and/or single-cell) and interested in cancer immunotherapy research. The candidate should have experience with at least one programming language for implementing computational models and algorithms (R and/or python preferred). Machine learning / algorithm development experience not required to start. Ideal position for applicants with a wet lab background recently transitioning into more of a computational role
+
+The lab’s over-arching research goal is to identify mechanisms of resistance to immunotherapy treatment and analytically prioritize combination-therapy approaches to overcome these mechanisms. This work builds on multiple in-house datasets of bulk and single-cell RNA-Sequencing as well as multi-omic studies across clinical trials of immunotherapy in kidney, prostate, head and neck, as well as other tumor types. Ongoing work is highly collaborative with senior faculty in the Department of Systems Biology as well as the Center for Translational Immunology, where I am an affiliate member. Lab website (under development): [http://obradoviclab.columbiamedicine.org](https://nam02.safelinks.protection.outlook.com/?url=http%3A%2F%2Fobradoviclab.columbiamedicine.org%2F&data=05%7C01%7Cazo2104%40cumc.columbia.edu%7Cb63ab1e148d54991dfa008dac399671e%7Cb0002a9b0017404d97dc3d3bab09be81%7C0%7C0%7C638037360917603543%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=5dV0HE%2FnPyHgyPKMhFPFkdjHBDTL5gGPMxFGaY%2BL%2BIo%3D&reserved=0) 
+
+This is a union position and has a starting salary of $65,000 plus benefits. Responsibilities will be primarily computational work with flexible hours, open to remote work with exception of in-person lab meetings every 2 weeks. If interested, please submit inquiries by e-mail to Dr. Aleksandar Obradovic (azo2104@cumc.columbia.edu). Please include a brief cover letter with a CV describing previous research, research interests, and future goals.
+
+Aleksandar Obradovic, PhD
+
+Associate Research Scientist, Department of Medicine, Division of Experimental Therapeutics, Columbia University Irving Medical Center
+
+Comments:
+- Wow, I wish this was available 1 year from now. I will keep an eye on your lab website for the future. I’ll pass this to my colleagues graduating soon.
+- Lovely. Do you have some graduate positions?
+Wish you luck for the project.
+- Great, Do you have any intern position for on-going PhD student having experience in algorithm development in single and spatial omics ?
+- Thank you very much for passing along, and hopefully our paths do cross in future!
+- Definitely open to rotating graduate students from any department -- with the caveat that I have no input on graduate program admissions.

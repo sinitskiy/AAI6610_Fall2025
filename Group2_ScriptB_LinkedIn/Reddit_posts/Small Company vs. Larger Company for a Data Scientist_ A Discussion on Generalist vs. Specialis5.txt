@@ -1,0 +1,56 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bvwatd/small_company_vs_larger_company_for_a_data/
+Title: Small Company vs. Larger Company for a Data Scientist: A Discussion on Generalist vs. Specialis5
+
+Content:
+I have experience in machine learning engineering, data science, data engineering, and MLOps, which aligns my profile more with that of a generalist. I'm uncertain if this is beneficial, but I believe being a generalist could offer more opportunities in the future. Am I mistaken? Additionally, due to my ADHD/Autism, I often find myself quickly bored with repetitive tasks.
+
+Recently, I've been participating in the hiring process for a data scientist position and am now a finalist at two companies: a small startup (which I'll refer to as "S company") and a large corporation ("B company").
+
+
+S company is just beginning to implement AI, and the vacancy is for a senior-level position. As a data scientist, I would need to identify opportunities to apply AI. They lack an MLOps platform but promise freedom to deploy and use technologies as needed, with minimal bureaucracy. This seems appealing for rapid growth within the company. However, the downside is the limited number of experienced data scientists in the team (only one, actually). S company, focusing on package delivery, has many opportunities to apply optimization algorithms for routing. Yet, I've noticed the company seems somewhat disorganized.
+
+B company, is a large bank known for being data-driven, frequently hosts insightful conferences on ML and DS on YouTube. The vacancy relates to credit limits, and I was told that specializing in credit and loans is crucial for advancement within this company. The position is mid-level and offers a higher salary than S company. This could be advantageous, as it allows for learning without excessive pressure. However, I wonder if becoming too specialized in this area might limit my future career options.
+
+What you would do in my position?
+
+Comments:
+- Here's my summary:
+
+There is no faster way to learn than a startup. However, there is zero guarantee that you're learning the right, let alone best, way of doing things. But you will learn how to get it (whatever "it" is) done, and you will also learn a lot more about everything else that the business does.
+
+>S company, focusing on package delivery, has many opportunities to apply optimization algorithms for routing. Yet, I've noticed the company seems somewhat disorganized.
+
+All of this checks out and is expected of a startup. Lots of opportunity, very little maturity.
+
+Large companies will make it much more likely that you will be exposed to the right way of doing things - although it may often be the case that you a) won't be the one who gets to do it, and b) even if you get to do it and you know the right way to do it, you'll end up doing it the "okay" way instead because it's faster and cheaper and no one wants to wait 6 months for that. 
+
+>However, I wonder if becoming too specialized in this area might limit my future career options.
+
+It does in the sense that it will pigeonhole you to that industry to some degree, but it won't in the sense that literally every company in the world has to deal with risk in some capacity, and banks are quite possibly the most experienced risk modelers in the world.
+
+So yes, once you have 3+ years in risk modeling you might find yourself having an easier time with risk modeling jobs vs. e.g. product analytics roles, but that shouldn't be *terribly* limiting because there will likely be a BUNCH of risk modeling jobs. 
+
+Now, is risk modeling the most lucrative sub-area of DS? Probably not. If you want to aim for profitability I think focusing on MLOps or Product Analytics or Causal Inference are probably a faster path to big bucks. But at the same time, sometimes the most growth doesn't come from picking the right area and more from climbing the fastest within an area.
+- [deleted]
+- I think it depends on what you want. Both places it seems like you will learn but at the big bank you will be around really smart people and in my experience you learn more from being around people smarter than you. Always nice to have a team and people who can assist you and the extra money won't hurt.
+- .
+- Much better work-life balance at a larger company but if you are earlier in your career, probably better off going with the start up and learning more and gaining more skills faster
+- Before joining, consider understanding the team’s work. Startups often lack work-life balance, and you may encounter frustration from colleagues who lack DS knowledge and ask repetitive questions. On the bright side, startups offer ample experimentation opportunities, enhancing your knowledge.
+
+In larger companies, the workload is lighter you’ll encounter many individuals knowledgeable about DS, which can ease your learning journey
+- Never join a big company like say for instance CVS, Amazon or Apple in Data Science. Firstly once you join you'll find that a lot of the leadership is themselves pretty out of touch and to compensate for their lack of knowledge will chase every new bubble like AI or Blockchain, and additionally, your promotions will often be stopped due to incredibly stupid reasons. Additionally they will not be knowledgable and the scale of the data is massive, so if you actually work with the data, you'll find that these companies are not really worth it to work for.
+
+
+
+While this might even happen in startups, in most startups leadership like that is fired instantly, which will give you satisfaction.
+- Great reply. The other thing I’ll add is the largest and best companies will have “the right thing” abstracted away within a ML framework. So most DS (actually at this scale SWEs do most of the serious ML) are just interfacing with configuration files and high level abstractions, including abstractions for feature engineering. That’s my experience at top 5 tech companies. 
+
+I feel like the sweet spot for learning are small to medium sized tech companies that have successfully poached talent for other top companies. They are typically large enough to require reasonably performant production systems but small enough for DS to get experience actually implementing and deploying ML systems. My first experience actually personally implementing, deploying, monitoring, and iterating over a production ML system that actually generated significant cash was at one of these companies.
+- Agree with this. I just left a smaller company with 500 employees for a large well known bank as well and I’m personally thrilled. Working by myself previously was tedious, having to teach myself everything and not knowing I was right or wrong, and the frustration of having to correct so much when I was wrong. I was looking for more guidance and moved to this large corporation a couple weeks ago with four other senior data scientists and I couldn’t be happier personally. I’m thriving a bit better with mentorship but I did learn a lot at my last job that landed me my current job.
+- I absolutely would not take it as given that big companies are full of smart people. People often fall into the trap of thinking big companies can have their pick of candidates, so they must only hire the best. It's why everyone thinks big companies "look good on the CV." The dumbest, most incomptent, infuriating people I've ever worked with were at big companies. 
+
+You get the full range of capabilities at big companies. But you'll easily find plenty of awful people there who've managed to hide or brown nose their way up.
+- Do you have experience in startup? How it was?
+- I definitely get where you coming from and you are right but surely in a big company with a data science team of 20 people atleast more then half are really bright people? You will always get those people who slack but I’d like to believe majority will be intelligent people
+- Not really a startup, but working at a small company in my early days. Can definitely wear a lot more hats and learn a lot more. I now work at a humongous company… which at times can be frustrating because things move slowly. But we have really good benefits and decently good culture here and there’s a lot of work life balance.

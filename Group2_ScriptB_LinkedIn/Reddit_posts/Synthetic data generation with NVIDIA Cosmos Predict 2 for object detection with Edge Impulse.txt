@@ -1,0 +1,9 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mfxlwm/synthetic_data_generation_with_nvidia_cosmos/
+Title: Synthetic data generation with NVIDIA Cosmos Predict 2 for object detection with Edge Impulse
+
+Content:
+I've been working on object detection projects on constrained devices for a few years and often faced challenges in manual image capture and labeling. In cases with reflective or transparent materials the sheer amount of images required has just been overwhelming for single-developer projects. In other cases, like fish farming, it's just impractical getting good balanced training data. This has led down the rabbit hole of synthetic data generation - first with 3D modeling in NVIDIA Omniverse with Replicator toolkit, and then recently using generative AI and AI labeling. I hope you find my video and article interesting, it's not as hard to get running as it may seem. I'm currently exploring Cosmos Transfer to combine both worlds. What are your experience with synthetic data for machine learning? Article: [https://github.com/eivholt/edgeai-synthetic-cosmos-predict](https://github.com/eivholt/edgeai-synthetic-cosmos-predict)
+
+Comments:
+- I’ve used roboglow for labeling and it trains an ai as you label making it really quick to label. After the first hundred images you can train an rfdetr or something to do 90% of the labeling

@@ -1,0 +1,64 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b7p1ff/internship_decision_advice/
+Title: Internship Decision Advice
+
+Content:
+Hi!  I am an Industrial Engineering major trying to get into data analytics  and data science. I have 3 internship offers and needed advice on to  which one would be most related to getting into data analytics and  science field.
+
+National Lab LLNL -  Here we are working on the nuclear fusion process and trying to improve  it through hands on work and from what I was told will also be using  deep learning. I got this internship from doing research already, so I  would kind of be doing the same work as I am doing in research.
+
+USAA  - Credit Risk Analyst Intern - Using people's credit and financial data  to figure out whether a person will default on their loan or not. Don't  know which tool but SQL for sure and maybe Python.
+
+[https://www.linkedin.com/jobs/view/credit-risk-analyst-intern-at-usaa-3808802631/](https://www.linkedin.com/jobs/view/credit-risk-analyst-intern-at-usaa-3808802631/)
+
+Lockheed  Martin - Operations Engineer Intern - Working on  production plans,  forecasting methods (Learning Curves, Parametric Estimates), statistical  analysis (Regression Analysis), database operations (Data Mining, SQL  Statements) .
+
+[https://www.lockheedmartinjobs.com/job/fort-worth/operations-engineer-intern/694/53765360624](https://www.lockheedmartinjobs.com/job/fort-worth/operations-engineer-intern/694/53765360624)
+
+Please let me know if I need to add any details or clarify!
+
+\*\*\*\*UPDATE: Contrary to popular opinions, I ended up choosing the USAA position for a number of reasons. 
+
+It's a new field, so I am trying to see something different. It's also a field that is used in healthcare, sports, and almost every field. I was going to be doing the same work at the the national lab that I am already doing in research, meaning my resume would have two experience sections with practically the same bullets. 
+
+USAA gives return offers to a high percentage of interns and pays for masters. They have much better facilities and much better benefits. It is also much closer to where I live so if I go there full time it isn't that far from family. Lockheed also gives return positions to a lot of people. The national lab, I'm not sure and I'm also not interested in living in California. 
+
+Not that I care too much about money, because a few thousand is not a lot in the long run, but USAA and Lockheed had higher salaries and gave money for housing while the national lab did not.
+
+There is a machine learning role in risk at USAA that is similar to the credit risk role and maybe something I could move to as a master's student or maybe a full time role. Lockheed operations and machine learning are completely 2 different things. National Lab has you work on different projects that probably have machine learning in each role, which is the best. 
+
+I mainly rejected the National Lab due to the fact that my work would be the same as my research, nothing new, kind of in the dark about return offers, don't want to live in a small city in California (not during the internship but if taken for full time), not as good benefits as the other two. The good is that it would probably have the most meaningful work and has machine learning in it. 
+
+I mainly rejected Lockheed since I've heard from some people that you don't really do much on the role, it's just excel and tableau and trying to improve some things with six sigma principles. Pay was the highest and had good benefits with high chance of full time offer, but wasn't interested in the work. 
+
+There are other factors that I can't remember off the top of my head, but these were the main ones. I may be wrong in my reasons but this is what I believed in. Thank you everyone for your input and good luck to everyone in their internship/internship search for the upcoming summer!
+
+Comments:
+- What are your goals? What interests you the most?
+- Interning at LLNL would be extremely impressive. It would also be a great networking opportunity if your goal is post grad research. Definitely talk to alumni if you can. I know LLNL hires data scientists, but I don’t know specifics. 
+
+However, if your only goal post grad is to land a data science job in tech, I would go with Lockheed.
+- Agree with the comment on asking “what are your goals?”. One thing I might add is asking each company if there’s an intern alumni network you can ask about their past experience (if the companies will share). Or reaching out directly to people on LinkedIn who’ve interned there in the past.
+- Considering your background in Industrial Engineering and interest in data analytics, the National Lab LLNL internship offers hands-on experience in nuclear fusion and potential exposure to deep learning, aligning closely with your career goals.
+- They all sound cool. Are you more interested in a future in banking, defense/tech, or cool egghead science? Do you want to work at any of those 3 companies after graduating, in which case the direct networking would be a bonus? I would lean towards the fusion lab personally, as it sounds the coolest, and has the hands-on DL potential (the others sound more analytics). Plus, it's harder and harder to do your own thing, so it's probably cooler to lean into the fusion stuff, rather than calculate credit scores or try to squeeze more out of the stealth plane production line working for someone else. (Though you might want to get into that production line too, probably some super cool industrial engineering going on there.)
+- It actually depends on what your goal maybe 5 years or 10 years from now. If you see yourself grow in the finance industries, then go for the USAA - Credit Risk Analyst Intern. There are a lot of opportunities in finance industries, and ML or AI in Finance has become the hottest trend globally.
+- [removed]
+- That would depend on your background. Consider the LLNL internship.
+- All of these jobs are very cool. I would have choose national lab one. Because it uses deep learning a lot. I love it
+- In my opinion: National Lab  
+You have to think about WHO your colleagues are.  
+Rubbing shoulders with researchers, you'll learn a LOT more than someone in operations or finance.   
+Especially if you interest is becoming more technical.  
+Plus, you won't be building bombs that kill children which I hope you'd consider as a plus... :)
+- How did u get all of these 😭😭😭
+- # What skills do a student in ds field need to know to be an internship ready person?
+
+Tell me some advice for the skills and related skills to be a job ready or at least an internship ready guy. It would be helpful if anyone responded. I cannot post it due to karma score or something
+- Trying to go data analytics data science route after graduation
+- True
+- Yeah I don’t care too much about post grad research, just a job. Also I already have undergrad research so trying to see if I should go experience something else.
+- That makes sense but I’ve already been doing that work at my university as a undergrad researcher, so should I still go for it even though I would practically be doing the same work
+- I see! Thank you for your detailed response! I talked to some Lockheed people who interned in similar roles last year and they mainly just worked with excel and tableau which is good but maybe not close to what I’m looking for. I’m leaning more towards the USAA position as that will open up a new point of view for me. It’s only 2 months so if I don’t like it I’ll go into another domain but at least I will know what it’s like. They also offer full time roles for basically everyone and they also have machine learning roles for credit risk. As for LLNL I don’t want my resume to have two similar positions with the same work even though LLNL might look the most prestigious.
+- Just cold applied honestly. Had 250 applications only like 5 interviews
+- I mainly had some side projects and some classes related to data science. My interviews were mainly behavioral question based and a little bit of easy technical. But I’m assuming real data analytics internships would have way more technical questions
+- but what interests you about data science or analytics? which of these different domains (nuclear fusion, finance, aerospace engineering operations) is the most interesting to you?

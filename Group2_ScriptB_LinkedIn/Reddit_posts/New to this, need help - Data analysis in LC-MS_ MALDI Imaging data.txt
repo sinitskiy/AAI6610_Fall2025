@@ -1,0 +1,20 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/q6t3ma/new_to_this_need_help_data_analysis_in_lcms_maldi/
+Title: New to this, need help - Data analysis in LC-MS/ MALDI Imaging data
+
+Content:
+I have started working on a problem statement of extracting meaningful biological information from noisy mass spectrometry signals and accurately annotating them with metabolites and am looking for a data science solution.  Going through some literature it looks like a computer vision problem. I don't have any previous experience in applying machine learning. I am familiar with proteomics and metabolomics and also have a theoretical understanding of basic ML algorithms, still have not worked on any specific problem statement like this before. 
+
+I would need help if anyone is familiar with some preliminary work or good articles around this? Also, any other kind of suggestions is welcome.
+
+Comments:
+- Noisy in what way? Artifacts? Is it a deconvolution issue? I won't be much help on the programmming side, but I am also not sure I completely understand the problem you are trying to solve. Good luck.
+- There are two technologies with work within the metabolomics field; 1) Liquid chromatography-mass spectrometry (LC-MS) and 2) Matrix-assisted laser desorption ionization mass spectrometry (MALDI). LC-MS is used for bulk analysis and MALDI can be used for spatial analysis of small molecules, metabolites, drugs, lipids as well as proteins.  
+A major challenge for both MS technologies is extracting meaningful biological information out of noisy MS signals (feature extraction) and accurately annotate them with specific molecules (metabolite identification).   
+We need a data science solution to address both of these challenges.  
+
+
+A professor under whom I am applying for internship sent this to me. I'm not aware of the artefact term, but I think deconvolution may be a good place to start as a solution.  Overlapping chromatograms and/or mass spectra will definitely be an issue I'll address.
+- I use xcms at Scripps for my lcms metabolomics work.
+- Wow! This looks really interesting, I'll explore it more and see what I can use.
+Thank you very much!

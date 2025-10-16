@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vdwdkp/help_with_ml_algorithm/
+Title: Help with ML Algorithm
+
+Content:
+I have a simulated dataset containing a distribution of variables with underlying number of clusters, means of each cluster and number of data points in each cluster known. I would like to train my algorithm on this simulated data and then run on real data. What kind of supervised machine learning approach should I use?
+
+Comments:
+- I mean, if you have the means of each cluster, aren't you just doing K means? 
+
+Otherwise, post a snippet of your data and it might be clearer what you want

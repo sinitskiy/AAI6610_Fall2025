@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/alexandre-wadoux-b5044a55_soilcarbon-mrv-spatialuncertainty-activity-7310583121110818817-FvQF
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Alexandre Wadoux的动态
+Alexandre Wadoux
+
+PhD, Habil. | Soil scientist & Marie Skłodowska-Curie fellow
+
+6 个月  已编辑
+
+✅ New message paper on spatial uncertainty aggregation, with Gerard. Heuvelink.
+
+High-resolution maps of climate and ecosystem variables are essential for estimating carbon stocks, tracking ecosystem changes, and supporting climate policies. These maps, often created using remote sensing and machine learning, include uncertainty estimates—but these are not always assessed correctly.
+
+A key issue is that spatial correlation in map errors is often ignored, leading to inaccurate uncertainty estimates when this uncertainty is aggregated at regional or national levels. This has real implications for applications like soil carbon MRV, where proper uncertainty assessment is crucial for carbon crediting and reporting.
+
+Our note in International Journal of Applied Earth Observation and Geoinformation highlights this issue and discusses statistical methods to improve uncertainty quantification in environmental mapping.
+
+🔗 Read more: https://lnkd.in/dcrsH5RT 
+
+#SoilCarbon #MRV #SpatialUncertainty #Geostatistics #Mapping #ClimateScience #RemoteSensing 
+INRAE ISRIC - World Soil Information Soil Science Cluster WUR
+
+143
+11 条评论
+赞
+评论
+分享
+Len Strnad
+
+Senior Machine Learning Engineer (Geospatial)
+
+6 个月
+
+Nice! I'm curious if deciding to simulate strong spatial correlation is representative of real life scenarios. Is there natural phenomena that exhibits this level of spatial correlation? Also, although there are many statistical methods to model spatial correlation of the residuals and methods have been around since the 1970s, it is still a high barrier of entry for most people because they may not have the statistical experience to justify that a particular method is fit well. Do you know of any research comparing the results of the uncertainty aggregation between well and poor fit variograms or kriging methods for example? These ar

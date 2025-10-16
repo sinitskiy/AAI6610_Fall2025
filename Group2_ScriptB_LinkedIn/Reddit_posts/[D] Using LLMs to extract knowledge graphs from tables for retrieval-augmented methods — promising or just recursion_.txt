@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mwxfxj/d_using_llms_to_extract_knowledge_graphs_from/
+Title: [D] Using LLMs to extract knowledge graphs from tables for retrieval-augmented methods — promising or just recursion?
+
+Content:
+I’ve been thinking about an approach where large language models are used to extract structured knowledge (e.g., from tables, spreadsheets, or databases), transform it into a knowledge graph (KG), and then use that KG within a Retrieval-Augmented Generation (RAG) setup to support reasoning and reduce hallucinations.
+
+But here’s the tricky part: this feels a bit like “LLMs generating data for themselves” — almost recursive. On one hand, structured knowledge could help LLMs reason better. On the other hand, if the extraction itself relies on an LLM, aren’t we just stacking uncertainties?
+
+I’d love to hear the community’s thoughts:
+
+* Do you see this as a viable research or application direction, or more like a dead end?
+* Are there promising frameworks or papers tackling this “self-extraction → RAG → LLM” pipeline?
+* What do you see as the biggest bottlenecks (scalability, accuracy of extraction, reasoning limits)?
+
+Curious to know if anyone here has tried something along these lines.
+
+Comments:
+- Google’s researching [Graph Foundation Models](https://research.google/blog/graph-foundation-models-for-relational-data/)
+- Just unwrapping the table rows to natural language would make it way more indexable in a vector database. KG might be overkill/adding extra latency to chatbots that need as low latency as possible to retain users.
+- Feels redundant, essentially the weighted parameters do this job, so I fail to see the purpose unless it is to find a different way of defining terms?
+- Quality, Quantity, and Processing.
+
+My team and I build tons of Graphs and Data processing pipelines, and they're "better bang for your buck" than any LLM out of the box.
+
+Why?
+
+Fundamentally speaking:
+
+- when you want graphs, you have to specify relationships and extract them appropriately. Best way to do it IMO is to chunk your data into 2k or 4k tokens with a 10% overlap between chunks, then define relations in normalized form. The idea is to split one full relationship extraction across multiple prompts, each containing a (PK, FK) relationship that you can join later to form the full set. The bonus here: **use a small, on chip model** that you can run for long periods of time with only compute costs as the inhibiting factor.
+
+- graphs are subpar for a lot of information because they're not always "complete" and have every relationship. So, you use graphs when you have a LOT of data to work with. Think hundreds of thousands of text samples, to start with. 
+
+- non LLM patterns and ideas. You've got a great set of relationships now. This is where graphs shine : you could enlist outputs from graph-oriented approaches to fill into your LLM system prompts. Remember: outputs from approaches or creating a query agent on the graph to do multi-hop multi-index queries. Great for breaking things down or making a "faux" think mode. Example: searching for documents about X should be a two pronged [query graph for nodes related to X with relation Y -> refine relationships -> pick document chunks/groups/patterns]. Graphs are highly underrated for query breakdown and think formulations which need to be very data oriented!
+
+- borrow ideas. Use LLMs to fit only what's required into your context. Ideas for how/why they get there can always be reworked or formed. Graphs work great for this too, especially statistical and spatial pattern finding ON YOUR DATA. Chain condensation, community detection, aspect grouping etc. are all ideas you can unlock/borrow or even give to a graph query agent and have it curate it FOR you from an existing graph.
+- Have you looked at what GraphRAG does with unstructured data sources?
+https://github.com/microsoft/graphrag
+- Thanks for the GFM pointer; I’ll check it.
+- Thanks for your ideas; I've thought about this as well. However, I believe that simply translating to NL might lose the schema. Of course, I haven't tried it yet, and the results should be based on experimentation.
+- Parameters indeed encode knowledge, but explicit KG can help reduce hallucinations (such as forcing retrieval of entity relationships in the KG), support structured reasoning (graph algorithms), and traceability (clear sources)
+- Thanks for sharing your experience—it’s very insightful. I agree that explicitly defining and extracting relationships is crucial, and your chunking + normalization approach makes sense for large-scale data. It also makes me reflect on how to balance the completeness of a graph with the contextual flexibility LLMs offer and whether a hybrid approach can effectively leverage both.
+- I understand GraphRAG, but it is mainly targeted at unstructured data; I am more focused on structured data (tables/databases), which has relatively less research but can provide cleaner schemas
+- I saw instant 5-10% RAG accuracy bump by doing just that.
+- Back in 2008 I worked with a team trying to build on a project called Nepomuk, a so-called Semantic Desktop (that was Web 3.0 at the time!) 
+
+Have a look at the literature related to that, you’ll find some interesting concepts. I haven’t given it much thought but you may be onto something in using LLMs to attribute semantic values to terms based on a managed RAG pipeline.
+- Impressive; it seems I should try it as soon as possible.
+- Thank you; I’ll definitely look into the Nepomuk literature and see what concepts could be relevant.

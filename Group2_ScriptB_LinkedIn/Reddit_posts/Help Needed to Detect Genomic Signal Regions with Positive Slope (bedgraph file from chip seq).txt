@@ -1,0 +1,43 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17mxaa3/help_needed_to_detect_genomic_signal_regions_with/
+Title: Help Needed to Detect Genomic Signal Regions with Positive Slope (bedgraph file from chip seq)
+
+Content:
+Hello everyone,
+
+I have a challenging task at hand and could use some guidance from experts in fields and maybe to point me to the methods from fields like time series analysis, signal processing, and machine learning. Your input would be greatly appreciated.
+
+**Overview**:
+
+I'm working with genomic data from the mouse genome( full genome) , where I have a signal that ranges from -1 to 1, binned into 1kb bins. Below is the example of the my data for approximately 6000kb region(so around 6000 datapoints present). IHere is the image  for reference:
+
+&#x200B;
+
+https://preview.redd.it/86rmzyu2f5yb1.png?width=3004&format=png&auto=webp&s=211b00c6a697539bf8beeeeb0c60f1315da269c3
+
+In the image, on the top panel is my raw signal and I've manually marked with red the regions I want to detect from my data. Basically the red tracks are the output I am willing to obtain. These are the areas where there's a significant switch with a positive slope. These regions can vary in size, but typically have a minimum size of around 10kb (equivalent to 10 data points), depending on the specific area and shape.
+
+**My Questions**:
+
+1. **Best Approach**: What is the best approach to identify these regions? I've considered multiple ideas, but I'm eager to hear independent opinions from experts who have experience working with this kind of data. I should note that some regions have low coverage, leading to minimal signal or patterns, which poses an additional challenge.
+2. **Smoothing Data**: Would it make sense to smooth the data (e.g., using Gaussian smoothing) before attempting to identify these regions?
+3. **Bin Size**: Should I consider increasing the bin size, or could this potentially complicate the algorithm's task?
+4. **Other Regions**: In the future, I'm also interested in defining other types of regions, such as those with a negative slope, regions with more or less constant signals (but not zero), and so on.
+
+**Request for Guidance**:
+
+I'm not entirely certain which domain I should refer to in order to address this question. Is it time series analysis, signal processing, machine learning, or perhaps a combination? Any advice on this would be greatly appreciated.
+
+I've also explored using the delta signal as a potential proxy, but, as shown in the plot below, it doesn't seem to be sufficiently explanatory.
+
+I would be extremely grateful for any insights, suggestions, or experiences you can share to help me tackle this challenge effectively. Your expertise will go a long way in advancing my research, and I'm eager to learn from the community's collective knowledge.
+
+Thank you for your time and consideration.
+
+Comments:
+- Why not do a simple moving average and track when the mean value changes from a negative to a positive value, and then do an additional lookup n mean values upstream whether the switch is there to stay?
+
+You could do a changepoint analysis, although its main goal is sequestering data into Q intervals with mean values.
+- would a cutoff the slope of a regressed line over a fixed width window be enough to I'd those regions?
+- I considered [cpop](https://cran.r-project.org/web/packages/cpop/cpop.pdf) for something similar a while back but never got around to trying it
+- thanks for the proposition, the description of the package seems very interesting and relevant, I'll take a deeper look into it!

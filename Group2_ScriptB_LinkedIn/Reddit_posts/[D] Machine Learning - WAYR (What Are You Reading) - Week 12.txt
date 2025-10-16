@@ -1,0 +1,113 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/5acb1t/d_machine_learning_wayr_what_are_you_reading_week/
+Title: [D] Machine Learning - WAYR (What Are You Reading) - Week 12
+
+Content:
+This is a place to share machine learning research papers, journals, and articles that you're reading this week. If it relates to what you're researching, by all means elaborate and give us your insight, otherwise it could just be an interesting paper you've read.
+
+Please try to provide some insight from your understanding and please don't post things which are present in wiki.
+
+Preferably you should link the arxiv page (not the PDF, you can easily access the PDF from the summary page but not the other way around) or any other pertinent links.
+
+|Previous weeks|
+|--------------|
+|[Week 1](https://www.reddit.com/r/MachineLearning/comments/4qyjiq/machine_learning_wayr_what_are_you_reading_week_1/)|
+|[Week 2](https://www.reddit.com/r/MachineLearning/comments/4s2xqm/machine_learning_wayr_what_are_you_reading_week_2/)|
+|[Week 3](https://www.reddit.com/r/MachineLearning/comments/4t7mqm/machine_learning_wayr_what_are_you_reading_week_3/)|
+|[Week 4](https://www.reddit.com/r/MachineLearning/comments/4ub2kw/machine_learning_wayr_what_are_you_reading_week_4/)|
+|[Week 5](https://www.reddit.com/r/MachineLearning/comments/4xomf7/machine_learning_wayr_what_are_you_reading_week_5/)|
+|[Week 6](https://www.reddit.com/r/MachineLearning/comments/4zcyvk/machine_learning_wayr_what_are_you_reading_week_6/)|
+|[Week 7](https://www.reddit.com/r/MachineLearning/comments/52t6mo/machine_learning_wayr_what_are_you_reading_week_7/)|
+|[Week 8](https://www.reddit.com/r/MachineLearning/comments/53heol/machine_learning_wayr_what_are_you_reading_week_8/)|
+|[Week 9](https://www.reddit.com/r/MachineLearning/comments/54kvsu/machine_learning_wayr_what_are_you_reading_week_9/)|
+|[Week 10](https://www.reddit.com/r/MachineLearning/comments/56s2oa/discussion_machine_learning_wayr_what_are_you/)|
+|[Week 11](https://www.reddit.com/r/MachineLearning/comments/57xw56/discussion_machine_learning_wayr_what_are_you/)|
+
+Most upvoted papers last week :
+
+[Chains of Reasoning over Entities, Relations, and Text using Recurrent Neural Networks](https://arxiv.org/abs/1607.01426)
+
+[Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning](https://arxiv.org/abs/1506.02142)
+
+[Conditional Image Generation with PixelCNN Decoders](https://arxiv.org/abs/1606.05328)
+
+Besides that, there are no rules, have fun.
+
+
+Comments:
+- https://arxiv.org/abs/1610.08936 - Learning Scalable Deep Kernels with Recurrent Structure. This paper introduces a recurrent model GP-LSTM which combines the best aspects of both the deep recurrent networks such as LSTMs and non-parametric probabilistic models such as GPs. Compared to a previous work by Neil Lawrence's group on Recurrent Gaussian processes(RGP), they take a different (I think simpler) approach to modeling recurrent structures using Gaussian processes. The RGP paper replaced layers of RNN with GP layers and came up with a approximate variational inference method to train it. This paper, on the other hand, comes up with a deep recurrent kernel by defining a base kernel on LSTM features, which can be intuitively thought of as adding a GP layer on top of an LSTM layer. Training is done by maximizing the negative log marginal likelihood using a semi-stochastic alternating gradient descent.
+
+The most awesome aspect of this paper is that the resulting model has the inductive biases of LSTMs (which lead them to have high accuracies) and the probabilistic advantages of GPs (leading them to have predictive and model uncertainty). It is one of very few deep recurrent models with predictive uncertainty as well.
+- [Stacked Convolutional Auto-Encoders for
+Hierarchical Feature Extraction](http://people.idsia.ch/~ciresan/data/icann2011.pdf)
+
+Summary: An unsupervised method for hierarchal feature extraction. Has a major advantage over conventional AE when used on images. Convolutional filters lead to weight sharing and max-pooling helps in generalised learning. Also, using the learned latent representation in initialising CNNs helps in improving the latter’s accuracy and yields best results on the CIFAR10 benchmark.
+
+Detailed Points:
+
+- Auto encoder:
+    - Maps input to latent representation by using deterministic func. h= sigma(Wx+b)
+    - This is then used to reconstruct the input by reverse mapping: sigma(W’h+b')
+    - Weights are same in encoding and decoding: W’ = WT
+
+- Denoising Auto encoder:
+    - Identity mapping gets learned with conventional AE.
+    - To prevent that, input is noised. Performs better than probabilistic RBM.
+    - AE tries to denoise the inputs.
+    - Binomial noise for MNIST. Uncorrelated Gaussian noise for CIFAR.
+
+- Convolutional Auto-Encoder:
+    - Problems with AEs and DAEs:
+        - Ignore 2D image structure.
+        - Parameters get redundant, forcing each feature to be global (span entire visual field)
+    - Advantage of CAEs: Weights are shared among all locations. Reconstruction happens through basic image patches.
+    - Encoding: h = tanh(x * W + b). Different bias for every latent map. * is the convolutional operator.
+    - Decoding: y = tanh(h * W’ +c).
+    - Cost function: MSE
+    - Gradient of the error function computed during back propagation: x * dh + h’ * dy
+        - Personal Note: d represents delta: the error margin computer during backprop. For a weight W, d in CAE would be sum of both deltas in encoder and decoder.
+    - Max-Pooling:
+        - Introduces sparsity.
+        - Thus, decrease in number of filters needed in decoding each pixel, forcing filters to be more general.
+    - Stacked CAE:
+        - Unsupervised pre-training can be done in greedy, layer-wise fashion.
+        - Top level activations can be used as feature vectors for initialisation of other classifiers.
+
+- Experiments:
+    - Models with max-pooling layers and noise (30% for MNIST, 50% for CIFAR) produces most visually appealing filters.
+    - The additional noise makes filters more localised.
+    - Max-pooling kernel size is the only parameters that needs to be decided via trial and error or cross-validation in this approach.
+    - Using pre-trained CAE weights to initialise CNN performs better than using randomly initialised weights.
+- [Smart Reply: Automated Response Suggestion for Email](https://arxiv.org/abs/1606.04870)
+
+Summary: Novel, end-to-end architecture for generating short email responses. The paper discusses the challenges that goes in developing and deploying such a system in a user-facing product and how these challenges were circumvented. The single most important benchmark of its success is that it is deployed in Inbox by Gmail and assists with around 10% of all mobile responses.
+
+[Detailed Summary](https://gist.github.com/shagunsodhani/da411f15b71ed6a664f9d5ac46409b42)
+- [Tracking the world state with recurrent entity networks](http://104.155.136.4:3000/pdf?id=rJTKKKqeg) - this paper proposes a way to model individual entityes  as RNNs. They update the internal state of each entity-RNN as new information is received.
+
+This is just an idea: I'm thinking that next step after image recognition is entity modeling - not just recognize entities, but model their state and evolution, how they react to various events. For example, taking humans as entities, we already do have a lot of state tracking papers - body position, gender and age, action identification, face recognition, emotion detection, even lip reading. 
+
+We need to extend that to all objects - model their evolution, interactions, relations and such. We also need to couple objects with an ontology describing its type and properties. So, instead of image recognition, it would be state tracking. Instead of simple text processing, tracking of each the evolution each character and object in a novel. It would be simple to answer questions about the state and do RL on top, to learn model based behavior. In text, it would lead to better chatbots that can model the conversation like humans.
+
+"Learning to Poke by Poking" paper shows the same approach applied to common objects. What happens when I push here? Such models need to be built about the objects we track. We would have much richer priors about the entities we deal with.
+
+So, what do you think? Do you think entity modeling would be the next phase from pattern recognition?
+- http://projecteuclid.org/euclid.ss/1009213726 - Statistical Modeling: The Two Cultures. This is a pretty old paper, but I think it's a good read. The paper talked about the "conflicts" between algorithmic modeling and traditional statistical modeling. It argues that the traditional statistical modeling is not efficient in solving some complex problems in the real world because the real model is not known. Breiman further suggests 3 important issues: 1. different models may produce similar error rate 2. the trade-off between accuracy and interpretability 3. dimensionality is sometimes a curse but sometimes a blessing that make the model work better. Then he talk about the random forest. If not for new knowledge, the paper is still a good read to understand the history of transition from statistical modeling to current ML.
+- Neural Machine Translation in Linear Time
+
+- [my summary](https://github.com/kevinzakka/research-paper-notes/blob/master/linear_time_nmt.md)
+- [arXiv](https://arxiv.org/abs/1610.10099)
+- [Neural Architecture Search with Reinforcement Learning(under review for ICLR 2017)](https://128.84.21.199/abs/1611.01578)
+
+* A simple idea to configure optimal CNN architecture / RNN cell design. 
+
+* They used RNN *controller* to recurrently configure layers, so there's no need for fixed number of layers. 
+
+* The RNN controller is trained with Policy Gradient, which is a famous Reinforcement approach, and the reward signal is given by the accuracy(error) after 50 epochs. 
+
+* Experiments done with CIFAR-10 and Penn Treebank language modeling task. The finally designed CNN is 0.1% worse than SOTA in CIFAR-10, and the newly designed RNN cell is SOTA perplexity in Penn Treebank task.
+
+* Hundreds of GPUs are used in parallel (max 800 GPUs).
+- [Visual Dynamics: Probabilistic Future Frame Synthesis
+via Cross Convolutional Networks](http://visualdynamics.csail.mit.edu)
+- Link to week 13 https://www.reddit.com/r/MachineLearning/comments/5cwfb6/d_machine_learning_wayr_what_are_you_reading_week/

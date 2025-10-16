@@ -1,0 +1,41 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1khugnz/how_to_get_a_simulation_of_chemical_reactions_or/
+Title: How to get a simulation of chemical reactions (or even a cell)?
+
+Content:
+I have studied some materials on biology, molecular dynamics, artificial intelligence using AlphaFold as an example, but I still have a hard time understanding how to do anything that can make progress in dynamic simulations that would reflect real processes. At the moment, I am trying to connect machine learning and molecular dynamics (Openmm). I am thinking of calculating the coordinates of atoms based on the coordinates that I got after MD simulation. I took a water molecule to start with. But this method does not inspire confidence in me. It seems that I am deeply mistaken. If so, then please explain to me how I could advance or at least somehow help others advance.
+
+Comments:
+- Generally you don't simulate every discrete molecule in a cell - some keywords you want to start reading up on  are 'multiscale modelling' and 'surrogate models'.
+- You are clearly out of your depth.
+
+
+Try writing a program that tracks all atoms molecules proteins and what not as a snapshot of a cell. Link these to an matrix with coordinates and then learn about (non) covalent interactions and see what happens.
+- I've also been fascinated by this topic and recently written a proposal. Its important to specify a specific cell state before attempting to build a model, and starting at the level of atoms doesn't make sense to me because for too many reasons to write here. I think you have to start with Omics data and take an approach like Recursion Pharmaceuticals is doing.
+- Honestly this is a huge topics and could use a little more specification. How many reactions are you trying to simulate? Most "simulations" work on the level of concentrations (indeed most of chemistry writ large) rather than individual molecules.
+
+Take a look at INDRA as an example of NLP->molecular dynamics, quite cool stuff:
+
+  
+[https://github.com/sorgerlab/indra](https://github.com/sorgerlab/indra)
+- This topic is way too dense and complex to summarize in a reddit post but maybe you could check out this very recent article (not reviewed) about the subject: https://www.biorxiv.org/content/10.1101/2024.04.25.591218v1
+- what is your formal training?
+- Picking one clear objective, say, “train an ML model to predict atomic forces on water clusters faster than my classical force field” or “use deep learning to identify hidden conformational states in a small peptide” tgis gives you a tangible target.
+- Generally speaking I feel like the model you want to build is a bit too computationally expensive/complex. I feel like you should instead try to think about which parts of the model are necessary and which are perhaps inconsequential to the final result and move from there. Generally speaking, even when doing an MD simulation, it is best to model the least amount of complexity possible to avoid high computational costs and to avoid having too much data to process.
+- I like this answer a lot.
+- I understand that it's impossible to make a cell simulation using atomic level. So now i'm trying to understand how to make at least simple chemical reactions using MD and ML. If it will be possible that means we can make protein reactions too.
+- Thanks for the reply, but i think it's pretty far from what we can call a simulation
+- Yeah, just like that. Go get 'em, Tiger.
+- To answer your question, no, cellular scale simulation is not possible. The best I can think of are the covid ones made (https://www.cell.com/biophysj/fulltext/S0006-3495(21)00088-6) and this was done on a supercomputer and it is at best at the microsecond level. 
+
+Molecular and Cellular processes range from micro seconds to hours. Whole cell simulation is not feasible currently. Partial molecular simulations are. For example helicase unwinding has been simulated but the whole of transcription has not.
+
+I understand the appeal of wanting to simulate from first physical principles. However, biology doesn’t work like that. First of all, fully deterministic systems can be unpredictable without infinite precision (think a simple double pendulum). Also, all MDs are based on FFs which serve as approximations, accurate ones, but not infinitely so. Thus, at larger scales the inaccuracy will compound. 
+
+Biology and Life cannot be studied as physics and chemistry are, there is a lot of interdependency and emergence that simply is impossible to trace and model from first physical principles. Reductionism in biology has gotten us amazing results, no doubt, however to answer the kinds of questions we hope to answer with full scale simulation, this is simply not enough.
+
+Not to discourage you, I think for example running MD simulations on the 1000s of microsecond level for different contexts and using some sort of statistical model to use the data to predict development at say a millisecond level could be a project. It would be fun, however do not underestimate the sheer amount of pain MD simulations are and how limited they are. 
+
+Life is more than the sum of it’s parts ;)
+
+Edit: I suggest looking into systems approaches to biology and looking into studying non-linear dynamics and chaos. That’s what I try to do, however I’m no expert.

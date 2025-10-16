@@ -1,0 +1,23 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gqj9rg/machine_recommendation/
+Title: Machine recommendation
+
+Content:
+I am confused between buying an M2 MacBook Air vs Mac mini M4 as one is portable and other is not. The external display would be needed wherever Mac mini goes.
+
+According to you, which will be beneficial in long-term, I have a Windows laptop that is 7 years old (it even froze when loading the python interpreter, and computer vision is kind of a long shot)
+
+I want to do computer vision, machine learning tasks, and software development. 
+
+Please write the reason the comments
+
+[View Poll](https://www.reddit.com/poll/1gqj9rg)
+
+Comments:
+- instinctive coordinated fuel abounding towering truck slap encouraging plants close
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- Why are you limited to those two options? Mac mini is supposed to be stationary - you don't carry it with you.
+- [deleted]
+- you're going to have to make your own decision about the external display. I would always go for the faster machine. be aware that for ml training you will probably want high amounts of ram (the 32 gb ram option is basically required for anything that isn't a toy dataset), so if you're trying to save money on the mac mini... I think the cost benefit goes away when you add ram.
+- Please provide a reason for that , that will very helpful

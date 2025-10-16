@@ -1,0 +1,36 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/129yiit/industry_career_path_clinical_research_or/
+Title: Industry career path: Clinical research or bioinformatics?
+
+Content:
+Hello fellow bioinformaticians, 
+
+I'd like to hear from your thoughts on which industry path should I move on.
+
+I have a very mixed and unfocused background (foreign clinical degree, pharmacology PhD) while I transitioned to do bioinformatics during my PhD level, focusing on applying different bioinformatics tools to understand drug exposure effects.
+
+When I was trying to find an industry job last year, I found myself in a harsh condition due to mixed background - industry preferred either people with more focused background (CS/Stats/bioinformatics) or my research didn't match (most of industry like to see either oncology/immunology/Machine learning where I didn't have research projects on these sub-areas).
+
+In the end, I accept a job more related to my clinical backgrounds to support regulatory and some epidemiology analysis - not related to bioinformatics at all. I have a hard time to survive and finally things seem to get better recently.
+
+My question is, which industry path would work better for me? The two area didn't overlap well and I think it will be too late to hump on another track once I work for 3 or more years
+
+1. Keep on clinical research track, I have an impression that people seem to stay on this field for long time (job security?) but it also means I got to forget about my interest
+2. Transition back to bioinformatics- this is where my interest falls, however job market seems to get more competitive these years and my research focus didn't fit well to general industry interests.
+3. Other potential clinical paths? Academic?
+
+I would appreciate any insights or experiences shared. Thanks ahead.
+
+Comments:
+- 2. Transition back into bioinformatics. You will just regret your decisions more and more otherwise. I also don’t recommend academia, at least not as a full time thing. Some people absolutely adore and excel in the academia environment, but most people I meet don’t. They do much more research and better in industry than they did in academia, and feel better too.
+
+Also, I work in oncology, and I have zero experience in that field. My experience was in microbiology. The majority (85%ish) of my colleagues do not have a background in oncology. Even now my firm continues to interview plenty of people without an oncology background. That is not to say every firm is like my firm, but just… don’t lose hope!
+- Thanks so much for response! I had a bad experience when applying bioinformaticians on these field. HM generally ask if I know anything on these and in the end they just turn to other candidates. Maybe I will try some more positions and see how it goes.
+- Were you wet lab microbiology?  How did you switch out of interest
+- Quick question - what exposure specifically to bioinformatics did you have during your PhD? And what did the HMs generally ask about? Bioinformatics is a very wide field, and some of it can be misalignment in what you are familiar with versus what is asked of. And a lot of bioinformatics work is more geared towards genomics or related fields. Given what you've described, it does seem like your work is a bit different, so I suppose that can also make it a bit harder. :/
+- Dry lab.
+
+So in a slightly better position than op, i.e. my exposure to bioinformatics was greater, but even so it was still pretty 'basic' bioinformatics in a sense.
+
+So I guess no, I did not really make a switch. Or rather, I did it very early on in my studies, but that's not really pertinent here I suppose.
+- What kind of dry lab?  I'm moist lab in micro so am asking out of interest, no need to answer if you don't like haha

@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/heroaisearch_vyas-raina-chief-science-officer-at-apta-activity-7229784738708807681-vS7A
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Hero.io
+
+947 位关注者
+
+1 年
+
+Vyas Raina, Chief Science Officer at Apta AI for Hero.io, sheds light on the limitations of probabilistic AI models like ChatGPT. These models generate the most probable answer based on patterns in the data, but the most probable answer isn't always the right one, especially when precision is key.
+
+This is where the Agentic Framework comes into play. Unlike traditional models, the Agentic Framework is designed to provide highly accurate and sophisticated answers by understanding the specific context of each query. 
+
+But how does it work, and why is it the best choice for delivering precise results?
+Find out more in our latest video! 
+
+…展开
+38
+赞
+评论
+分享
+Transcript
+Transcript
+Hello everyone. I am via Serena, the Chief Science Officer at APTA. Today I will be talking to you about large language models and their role in what is called an agentic framework. We are all familiar with large language models LMS such as CHPT by Open AI, Gemini by Google, and LAMA by Meta. But as a quick reminder, these alms have what is called an autoregressive decoder architecture where they are able to answer questions from humans by generating the most probable word 1 by 1. So for example, if you input your model the sequence of words where can I buy the cheapest apples or where can I buy cheap apples? The model outputs the word that it thinks is the most probable next based on all the training. Implicitly encoded in the billions of parameters of the model. Here, for example, the next most probable word may be at. Then this generated word is appended to the original sentence and the model generates the next most probable word fee in this case. And in this manner the model is run auto aggressively to generate the most probable answer at this store in this case. So when an alarm is used without any external influence in this way to answer a question, we say it uses parametric memory i.e. the final answer the user gets is based 

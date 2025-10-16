@@ -1,0 +1,76 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/dffouj/d_machine_learning_explaining_uncertainty_bias_in/
+Title: [D] Machine Learning : Explaining Uncertainty Bias in Machine Learning
+
+Content:
+I am interesting in this topic, where one can attempt to extract meaningful interpretation on Uncertainty Bias in Machine Learning. Does anyone knows any related papers in this topic? 
+
+I already read several papers such as
+
+ Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin. "Why should i trust you?: Explaining the predictions of any classifier." Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining. ACM, 2016. 
+
+ Lipton, Zachary C. "The mythos of model interpretability." arXiv preprint arXiv:1606.03490 (2016). 
+
+These papers try to interpret why certain models produce its prediction, while I am interesting to explain "Why this model uncertain of this data points". 
+
+Thank you very much for your help.
+
+Comments:
+- This paper [http://proceedings.mlr.press/v70/koh17a/koh17a.pdf](http://proceedings.mlr.press/v70/koh17a/koh17a.pdf) explains predictions by identifying training points most responsible for a given prediction. This is not directly explaining uncertainty estimates, but it's probably relevant. If there are few training points weakly influencing a prediction, it would explain why the model is uncertain.
+- A couple of suggestions:
+
+ [https://arxiv.org/pdf/1803.09546.pdf](https://arxiv.org/pdf/1803.09546.pdf) 
+
+ [https://arxiv.org/pdf/1706.04599.pdf](https://arxiv.org/pdf/1706.04599.pdf)
+- https://arxiv.org/pdf/1810.12278.pdf
+- I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:
+
+- [/r/on_trusting_ai_ml] [\[D\] Machine Learning : Explaining Uncertainty Bias in Machine Learning](https://www.reddit.com/r/On_Trusting_AI_ML/comments/dj4lhp/d_machine_learning_explaining_uncertainty_bias_in/)
+
+&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*
+- You looked into model explainability literature when really you should look into things like Platt scaling 
+
+Most ML models are terrible at modeling their own certainty. Neural nets might be slightly better than other methods for this, but only slightly without further tuning
+- Thank you for your suggestion
+- Thank you, do  you have any suggestion on model explainability of uncertainty estimation.
+- Thank you, do  you have any suggestion on model explainability of uncertainty estimation.
+- Thank you for your reply, Yes, I actually interested in bringing the explain ability in the uncertainty of the model prediction. That is why I searched on explainability literature. 
+
+I dont know about Platt scaling, the term is new to me. Do you have any suggestion where to start ?. (Of course wikipedia already been searched) Thank you
+- > Neural nets might be slightly better than other methods for this
+
+Hi, do you have any reference regarding this claim?
+- I’ll see what I have filled away
+- Hi rmfajri, Platt's scaling has been found to be a pretty good post-hoc method to calibrate probabilities of a classifier (Alexandru Niculescu-Mizil and Rich Caruana. [Predicting good probabilities with supervised learning](http://www.datascienceassn.org/sites/default/files/Predicting%20good%20probabilities%20with%20supervised%20learning.pdf), ICML 2005) .
+
+  
+Basically, calibration is a closed issue to uncertainty estimation as, quoting:  
+
+
+>Well calibrated classifiers are probabilistic classifiers for which the output of the predict\_proba method can be directly interpreted as a confidence level. For instance, a well calibrated (binary) classifier should classify the samples such that among the samples to which it gave a predict\_proba value close to 0.8, approximately 80% actually belong to the positive class.
+
+[https://scikit-learn.org/stable/modules/calibration.html](https://scikit-learn.org/stable/modules/calibration.html)  
+
+
+Recently, Guo et al. also address the problem of calibration in modern neural networks, which tend to be overconfidents in their prediction probabilities.  
+[https://arxiv.org/abs/1706.04599](https://arxiv.org/abs/1706.04599)
+- Hi arlinp, thank you for your reply and literature. 
+
+ "Basically, calibration is a closed issue to uncertainty estimation" That is mean that calibration already able solve the uncertainty estimation ?
+
+I am looking for a way to interpret the uncertainty of model prediction, i.e why does this model give uncertainty as 0.8 for this sample. 
+
+Thank you for your answers
+- If you're trying to understand why your model predicted a probability of 0.8 (and not 0.7 or 0.4) that your sample belongs to class c, then you're indeed more looking into **model explainability**.  
+
+
+Uncertainty estimation addresses the problem of evaluating the confidence you have in your prediction. As far as I know, this embraces several topics such as:  
+
+
+* failure prediction: assess whether your prediction might be correct or wrong (a classic baseline in neural network is to use the maximum class probability)
+* out-of-distribution detection: imagine given a model trained with several pictures of dog breeds, a user ask the model to decide on a dog breed using a photo of a cat. Your model may not be adequate to classify this sample and you'd prefer to discard it.
+* calibration: as I said, it answers to the question "does the output probability match my notion of confidence?", which refers to a frequentist point of view.
+* robustness to common or adversarial perturbations: if I slightly change my image, I'd like my model to be robust to this noise as long as a "human" can be still able to classify  
+
+
+As you can see, uncertainty estimation varies regarding the application you want to use it for.

@@ -1,0 +1,36 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1jjanev/feature_extraction_from_vcf_files/
+Title: Feature extraction from VCF Files
+
+Content:
+Hello! I've been trying to extract features from bacterial VCF files for machine learning, and I'm struggling. The packages I'm looking at are scikit-allel and pyVCF, and the tutorials they have aren't the best for a beginner like me to get the hang of it. Could anyone who has experience with this point me towards better resources? I'd really appreciate it, and I hope you have a nice day!
+
+Comments:
+- bcftools query
+- You probably want to convert your VCF file to a standard table format. There are many libraries for parsing VCF files. Then you need to figure out which features are relevant.
+- I have just worked on this, personally i love the cyvcf package in python, its so easy to parse the vcf with this. I wanted to perform clustering with the mutations in a vcf file based on all the columns in a raw vcf file. But after a few runs i realized it was not a good way to do it as many problems started arising, such as bias columns, the chromosome number, AF, etc serves as a bias, so in order to solve that i used one hot encoding for the bias columns, and swapped the local AF column with the gNOMAD AF column. Finally after a lot of runs, i figure out the only way to get a good viz will be to perform PCA or clustering with some of the pathogenic tools predictor values and the gNOMAD AF columns, it worked fine for me, i could finally generate a PCA plot that separated the variants based on the pathogenicity of the mutations and the rarity of it. I dont think an ML classification would be much fruitful to be honeslt, as most of the columns in a raw vcf file is technical values. Any specific tasks like the one i mentioned can be done, but others are just waste of time imo. I was also tasked on making a vcf2vec like word2vec model, that will reduced / summarize the whole vcf file into a mare vector in lower dimension which can be used for downstream purposes, still working on it though, little bit tough.
+- Used both cyvcf2 and bionumpy. The first is more robust for VCF manipulation, while the second is more useful for using the VCF as a guide for query other files (like fasta, alignment..)
+- [pysam](https://pysam.readthedocs.io/en/latest/usage.html#working-with-vcf-bcf-formatted-files)?
+- can you elaborate on what you mean by features?
+
+I've been doing alot of vcf manipulation, some of it for machine learning. I might be able to help
+- I will recommend cyvcf2. It is much faster than other libraries like pyvcf or pysam in my experience. The documentation is decent. Once you understand how to extract the INFO fields and the sample-wise information, you should be ready to incorporate everything into your code.
+- You can try this 🔨 [https://github.com/flalom/vcf-reformatter](https://github.com/flalom/vcf-reformatter)
+- Probably easier to use a linux tool like AWK for the initial dataframe/feature extraction . Which features are you trying to extract?
+- there are libraries for this?! 🤦‍♂️i code it by hand every time🤦‍♂️
+- I will try it out. Thanks!
+- I understand what you mean by introducing bias but I'm only going to be using features like number of indels, number of missense variants, etc, and I'll check for the presence of any correlation once I collate all of them. I also have the labels for the model and I'm not trying to perform clustering or any other form of unsupervised learning, so I'm not sure how that ties in here
+- Thanks! Will check it out.
+- Thanks for replying :) We're trying to extract anything that would be significant to the development of infection phenotype- think SNPs, indels, missense variants, and anything else that we can get our hands on. We plan on running it through a feature selection algorithm anyway, so we'd like to extract whatever we can.
+- Thank you. Will check it out!
+- Thanks for your repIy. I am trying to extract variant level features and annotation features.
+- If you are using a mainstream language like R or Python, there should be a library for parsing any major file type. It can seem relatively trivial to build your own parser, but there is no need to reinvent the wheel. Also, existing libraries are more likely to be aware of various edge-cases.
+- What would you gain from it though in the end? By correlating number of indels and snv's. I don't think it gives me useful info though.
+- the vcf itself holds this information. 
+I'm still not sure I understand the question. 
+but you'd need a reference of positive phenotypes. 
+then you'd identify positive (and vareints) and negative phenotypes within some "dataset" .You can pull out these motifs and create VCF files. 
+
+Then, vectorise the file for machine learning. 
+you'll need at least a thousand examples for a binary prediction
+- Try bcftools query as mentioned above. This can also extract VEP annotations, if you use those.

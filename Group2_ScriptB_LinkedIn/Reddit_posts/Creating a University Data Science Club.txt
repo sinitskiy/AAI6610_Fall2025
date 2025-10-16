@@ -1,0 +1,36 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18lx1y9/creating_a_university_data_science_club/
+Title: Creating a University Data Science Club
+
+Content:
+Hi everyone,
+
+I'm a 3rd year PhD student at a university and I'm thinking about starting a data science club here. I'm certainly no expert, but I have some decent python, Matlab, and SQL experience now and I'd love to find some like minded students. There currently are no active clubs in the data science and machine learning realm and I'd like to kcikstart it. 
+
+What do you all think would be some ideas for group meetings, workshops, or club activities? I'm thinking we do some work on conceptual ideas before coding, but I really haven't fleshed it out yet. I guess another question is, what would you have wished for from this kind of club at your college? Thanks for any advice or discussion!
+
+Comments:
+- When I was at university there was a tech society, they did coding courses and talks on stuff like neural networks.  They also had a external org come in to teach web dev which was pretty cool.
+
+I think the practical element is something people will enjoy, a lot of the time courses consist of theoretical content, not so much projects or practice.
+- Things like prof/alum/industry talks, project help/discussions, case competitions, exam review, reading groups, workshops, and other non academic events would be a great start. Over a period of 4 months, an activity every 2-4 weeks should be enough both for you and students.
+- host learning sessions and also group projects
+- Would love to be part of it !!
+- at the club in my university, there were semester-long data science projects groups could do
+- I helped lead the Data Science Club when I was getting my masters. Our workshops were either covering technical concepts that we didn’t learn in class (like how to use a GitHub) or career topics, like inviting alumni to talk about what they do on the job, what was interviewing like, etc.
+- Would love to be a part of it!
+- I find this idea awesome to be honest I'm also Uni student but a first year student.Am planning to learn sql and python and prolly excel..as I am an international student getting it tough to get a job but I think having some experience in this will help me get remote job or rather experience eventually so that i can focus more into data science specialization.Any idea or opinions on this will help alot from anyone.But i would say creating a community of like minded data science people will be a great thing as it will also help us beginners understand and learn from everyone around.Also discord channels will be nice because of mentorship as people could get one on one Help from fellow people in data science.But overall i like the idea!!Good work
+- Undergrad student here, I wish we something like that here. Even with a DS major we don't really have many students in the program :/
+
+Please upvote me so I can post
+- Can you do it online as well, my university doesn't have a data science club and i'd love to join one to learn more about the subject
+- I'm a data science sophomore at University of Arkansas. We have a data science club that has guest speakers come in once a month. It's a great experience and I highly recommend it.
+- The data science clubs at my school do semester-long projects, either an internal project to be posted on Medium or a consulting project for a local startup
+- Basic workshops or speaker events every few weeks would be a good idea too!
+- Look for the data talks club website, you can borrow inspiration of the courses, zoomcamps and other activities that they offer!
+- Damn
+- Would love to be part of it !!
+- This is such a great idea
+- Nice
+- Industry speaker series, so students can interact with future employers
+- I love that. Good luck

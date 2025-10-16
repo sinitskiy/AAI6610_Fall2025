@@ -1,0 +1,20 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/11zm2t7/computer_vision_pretrained_model_for_finding_how/
+Title: Computer Vision pre-trained model for finding how similar two photos of a room are
+
+Content:
+I'd like to compare two pictures of the same room that contains pretty much the same furniture like table, chairs etc... The picture might have a little different angle. Overall it's very easy for a human to say it's the same room, but doesn't seem to be the case with CV. I'm trying with VGG, Resnet etc... to calculate embeddings and do cosine similarity but even with a relatively small change in the angle, the similarity drops to like 0.6-0.7
+
+Trying to combine that with object detection but I couldn't find a great pre-trained model and/or dataset. COCO dataset kidna worked but I got too many false positives and uncertainties especially when there are many objects close to each other like many chairs, a table etc...
+
+Do you have any general advice on this and maybe some concrete tech to explore?
+
+Comments:
+- This is the first stage of photogrammetry, the image matching
+
+
+Essentially each image has features extracted using sift or whatevers sota, then matched to another image building a sequence of pairs.  If you just export the distances you can generated a mapping of room to room likeness
+- I'd suggest trying CLIP ([https://github.com/openai/CLIP](https://github.com/openai/CLIP)) if you're trying to run a production application that runs consistently.
+
+Another option could be fastdup ([https://github.com/visual-layer/fastdup](https://github.com/visual-layer/fastdup)) which is probably most helpful for analysis type objectives.
+- You could try training for detecting the ceiling, wall, floors, etc. as unique classes, then identifying rooms based on their combination of traits. "Green wallpaper + blue ceiling + no ceiling fan = Living room" and so on?

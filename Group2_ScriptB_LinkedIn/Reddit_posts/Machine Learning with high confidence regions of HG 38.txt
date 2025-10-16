@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vr6ghz/machine_learning_with_high_confidence_regions_of/
+Title: Machine Learning with high confidence regions of HG 38
+
+Content:
+Hello dear bioinformaticions! 
+
+I want to do some ML for a project of mine. The input for my model are one hot encoded DNA sequences which I will then use  to predict some stuff. 
+
+My problem is now, that Neural Networks can be quite quirky to train if the data is too noisy. I am not sure which parts of the HG38 Genome I should kick and which to keep. BTW I have to use HG38 since the data i want to predict is hg38 based. 
+
+I know that there should some tracks around to mask regions of low confidence but am not completely sure what to take. I was thinking to kick telomere and highly repetitive regions. But there are probably others too. Any recomendations on that? 
+
+Maybe there is some kind of high confididence annotation for the hg38? 
+
+Thanks in advance!!
+
+Comments:
+- Search for project encode black list, it has regions of high noise or repetitive elements.
+- Take a look at the Genome In A Bottle consortiums recent publications. They have a BED file of the high confidence regions they used for benchmarking variant calling tools.
+- Could you train on CHM13 v2.0, then use a liftover to convert coordinates to/from hg38 where necessary?
+
+https://github.com/marbl/CHM13#v20
+- Thanks, I'll have a look!
+- Thank you very much! That sounds really convenient!

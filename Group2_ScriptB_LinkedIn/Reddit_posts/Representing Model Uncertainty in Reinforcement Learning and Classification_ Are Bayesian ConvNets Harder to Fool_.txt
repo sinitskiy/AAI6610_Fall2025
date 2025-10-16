@@ -1,0 +1,8 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/3guio9/representing_model_uncertainty_in_reinforcement/
+Title: Representing Model Uncertainty in Reinforcement Learning and Classification: Are Bayesian ConvNets Harder to Fool?
+
+Content:
+
+
+Comments:

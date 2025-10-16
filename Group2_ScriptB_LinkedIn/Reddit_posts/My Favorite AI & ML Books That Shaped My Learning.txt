@@ -1,0 +1,148 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1k2riga/my_favorite_ai_ml_books_that_shaped_my_learning/
+Title: My Favorite AI & ML Books That Shaped My Learning
+
+Content:
+My Favorite AI & ML Books That Shaped My Learning 
+
+
+
+ Over the years, I’ve read tons of books in AI, ML, and LLMs — but these are the ones that stuck with me the most. Each book on this list taught me something new about building, scaling, and understanding intelligent systems.
+
+Here’s my curated list — with one-line summaries to help you pick your next read:
+
+
+
+ Machine Learning & Deep Learning
+
+
+
+1.Hands-On Machine Learning
+
+ ↳Beginner-friendly guide with real-world ML & DL projects using Scikit-learn, Keras, and TensorFlow.
+
+↳https://amzn.to/42jvdok
+
+
+
+2.Understanding Deep Learning
+
+ ↳A clean, intuitive intro to deep learning that balances math, code, and clarity.
+
+↳https://amzn.to/4lEvqd8
+
+
+
+3.Deep Learning
+
+ ↳A foundational deep dive into the theory and applications of DL, by Goodfellow et al.
+
+↳https://amzn.to/3GdhmqU
+
+
+
+ LLMs, NLP & Prompt Engineering
+
+
+
+4.Hands-On Large Language Models
+
+ ↳Build real-world LLM apps — from search to summarization — with pretrained models.
+
+↳https://amzn.to/4jENXV4
+
+
+
+5.LLM Engineer’s Handbook
+
+ ↳End-to-end guide to fine-tuning and scaling LLMs using MLOps best practices.
+
+ ↳https://amzn.to/4jDEfCn
+
+
+
+6.LLMs in Production
+
+ ↳Real-world playbook for deploying, scaling, and evaluating LLMs in production environments.
+
+ ↳https://amzn.to/42DiBHE
+
+
+
+7.Prompt Engineering for LLMs
+
+ ↳Master prompt crafting techniques to get precise, controllable outputs from LLMs.
+
+ ↳https://amzn.to/4cIrbcP
+
+
+
+8.Prompt Engineering for Generative AI
+
+ ↳Hands-on guide to prompting both LLMs and diffusion models effectively.
+
+ ↳https://amzn.to/4jDEjSD
+
+
+
+9.Natural Language Processing with Transformers
+
+ ↳Use Hugging Face transformers for NLP tasks — from fine-tuning to deployment.
+
+ ↳https://amzn.to/43VaQyZ
+
+
+
+ Generative AI
+
+
+
+10.Generative Deep Learning
+
+ ↳Train and understand models like GANs, VAEs, and Transformers to generate realistic content.
+
+ ↳https://amzn.to/4jKVulr
+
+
+
+11.Hands-On Generative AI with Transformers and Diffusion Models
+
+ ↳Create with AI across text, images, and audio using cutting-edge generative models.
+
+ ↳https://amzn.to/42tqVcE
+
+
+
+🛠️ ML Systems & AI Engineering
+
+
+
+12.Designing Machine Learning Systems
+
+ ↳Blueprint for building scalable, production-ready ML pipelines and architectures.
+
+ ↳https://amzn.to/4jGDQ25
+
+
+
+[13.AI](http://13.AI) Engineering
+
+ ↳Build real-world AI products using foundation models + MLOps with a product mindset.
+
+ ↳https://amzn.to/4lDQ5ya
+
+
+
+These books helped me evolve from writing models in notebooks to thinking end-to-end — from prototyping to production. Hope this helps you wherever you are in your journey.
+
+
+
+ Would love to hear what books shaped your AI path — drop your favorites below⬇
+
+Comments:
+- Thanks for sharing.
+
+Please add a note next time that all of them are affiliate links.
+- Disguised Affiliate links through an AI generated post
+- Following
+- Thanks for releasing this. I comment on this so that i can easily trace back when i need a material.

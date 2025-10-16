@@ -1,0 +1,58 @@
+URL: https://www.linkedin.com/posts/anujmubayi_bayesian-neural-networks-vs-mcmc-a-neural-activity-7376132446209290240-2RF0
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anuj Mubayi的动态
+Anuj Mubayi
+
+Distinguished IBA Fellow, PhD, Expertise in data-driven strategies utilizing mathematical and statistical modeling in HEOR
+
+2 周  已编辑
+
+Bayesian Neural Networks vs. MCMC
+
+A neural net is often used on historical data to predict outcomes. The purpose of these data-hungry models — different from dynamical systems models — is primarily to find patterns in past data and project them forward.
+
+•	Standard Neural Networks (NNs) are used in a “frequentist” way: training weights to minimize error.
+
+•	They consist of layers of neurons (nodes) connected by weights (dials).
+
+•	Each neuron does a small calculation and passes it on; stacking layers allows the network to learn very complex patterns.
+
+•	Learning process: start with random weights —> predict —> compare with true answer —> adjust weights slightly —> repeat many times —> weights settle. This is backpropagation + gradient descent.
+
+Analogy: Like teaching a child to recognize cats…. initial guesses are random, but repeated feedback improves recognition.
+
+
+Bayesian Neural Networks (BNNs) — extend neural nets by embedding Bayesian inference inside:
+
+•	Instead of treating weights as fixed, BNNs treat them as uncertain with prior + posterior distributions.
+
+•	Predictions become distributions (with credible intervals), not single numbers.
+
+•	Example: “Tomorrow’s admissions = 500, but 95% chance it lies between 300–700.”
+
+•	This is critical for policy: you don’t just prepare for the average, but for worst-case bounds.
+
+•	Benefits: prevents overfitting, quantifies uncertainty, combines AI flexibility with Bayesian rigor.
+
+How it works (simplified):
+
+1.	Start with priors on weights.
+2.	Train with data → update beliefs (posteriors) using Bayes’ theorem.
+3.	Predictions = averaging over many possible networks.
+
+
+MCMC — is not a model in itself, but a computational method for doing Bayesian inference when exact math is impossible.
+
+•	Instead of giving one neat an

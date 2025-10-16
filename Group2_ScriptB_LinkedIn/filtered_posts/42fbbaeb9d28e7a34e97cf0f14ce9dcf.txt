@@ -1,0 +1,53 @@
+URL: https://www.linkedin.com/posts/thomas-swinburne-ab4a01200_uncertainty-quantification-for-misspecified-activity-7364029715982032897-7DaP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Thomas Swinburne的动态
+Thomas Swinburne
+
+Faculty at University of Michigan and Visiting Researcher, CNRS Physique
+
+1 个月  已编辑
+
+New paper in NPJ Computational Materials! https://lnkd.in/eeSzixz7 
+
+We explore misspecification uncertainty for machine learning interatomic potentials (SNAP and MACE), showing how our misspecification-aware UQ scheme POPS (Swinburne & Perez ML:S&T 2025) allows us to *robustly bound* MD simulation outputs compared to DFT test data, efficiently propagating UQ from force-field level directly to relaxed simulation outputs via implicit differentiation (Maliyov et al. NPJ 2025, currently a featured article). We also show how this overcomes the many issues with ensemble UQ methods. 
+
+Misspecification is the mathematical definition of the famous aphorism "all models are wrong, but some are useful"- no matter what parameters we choose, models will always have an error. This is essentially always the case for surrogate models (replacing an expensive routine with a cheap one) but standard Bayesian schemes are provably blind to misspecification (see the above cited ML:S&T article and my post from earlier this year). Current treatment of misspecification uncertainty in scientific ML is far behind aleatoric and epistemic UQ, but must be treated if we want to propagate max/min bounds through complex simulation workflows for trustworthy results.
+
+A great pleasure to collaborate with Danny Perez and postdocs Aparna Subramanyam and Ivan Maliyov (now Microsoft Quantum), as always !
+
+Uncertainty quantification for misspecified machine learned interatomic potentials - npj Computational Materials
+nature.com
+131
+1 条评论
+赞
+评论
+分享
+Giuseppe Fisicaro
+
+Theoretical and computational materials scientist at CNR (Catania, Italy) Institute for Microelectronics and Microsystems
+
+2 周
+
+Congratulations Thomas Swinburne!!!
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+最相关的动态
+Jorge Bravo Abad
+
+AI/ML for Science & DeepTech | PI of the AI for Materials Lab | Prof. of 

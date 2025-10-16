@@ -1,0 +1,104 @@
+URL: https://www.linkedin.com/posts/cornellius-yudha-wijaya_language-models-probabilistic-model-activity-7275860989072289792-mXTe
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Cornellius Y.的动态
+Cornellius Y.
+
+Data Product Strategy | Chief Product Officer | Data Scientist & AI Engineer | Helping orgs scale with data products
+
+9 个月
+
+Language models predict the following sequence of words by assigning probabilities to potential word sequences.
+
+But do you know how it works?
+
+This process involves several steps rooted in probability theory and the use of the specific model.
+
+The lecture slide by Julia Hockenmaier contains all the foundation information you need to understand the probability models.
+
+Don't miss it!
+
+Want to learn more and get daily data science tips in your email inbox? Subscribe to my Newsletter>>> https://lnkd.in/g639tmpD
+
+———————
+You don't want to miss #python data tips + #datascience and #machinelearning knowledge + #python. Follow Cornellius Y. and press the bell 🔔 to learn together.
+———————
+
+218
+8 条评论
+赞
+评论
+分享
+Nazeeruddeen Shaik
+
+Data Scientist | Agentic workflow | LLMops | MLops | NLP
+
+9 个月
+
+Thanks for sharing
+
+赞
+回复
+2 次回应
+Gina Acosta Gutiérrez
+
+Daily Posts and Resources on Data Science, Data Engineering, and AI 📚 | Mentor | Google WTM Ambassador
+
+9 个月
+
+Thanks for sharing this guide, Cornellius Yudha W.!
+
+赞
+回复
+3 次回应
+Navya sri Kurapati🧑💻
+
+Data Analyst | Well-versed in Excel,SQL,Power BI &Python | Experienced in Data Preparation, Transformation, Insightful Visualization & Dashboarding | Foundational Knowledge in ML&Statistical Analysis
+
+9 个月
+
+Thanks for sharing
+
+赞
+回复
+1 次回应
+Abdullah Rizwan
+
+AI Engineer | Data Scientist | ML | LLM | LLMOps | Google certified data analyst | Fastapi | Python | API Architect | Backend Developer
+
+9 个月
+
+This is a great job, Thanks for sharing Cornellius Y.
+
+赞
+回复
+1 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+43,012 位关注者
+
+2,686 则动态
+ 3 篇文章
+查看档案  关注
+更多文章
+From Biology with Data Science
+Cornellius Y.  5 年
+Learning Time Series Stationary Properties
+Cornellius Y.  6 年
+Learning about the Time Series Building Block
+Cornellius Y.  6 年
+探索相关领域
+Understanding Foundation Models and Their 

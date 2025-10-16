@@ -1,0 +1,71 @@
+URL: https://www.linkedin.com/posts/jarne-verhaeghe-46ba95183_development-and-evaluation-of-uncertainty-activity-6968531394419425280-_q2O
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jarne Verhaeghe的动态
+Jarne Verhaeghe
+
+Data Scientist at Just Russel | PhD in Trustworthy and Causal AI | Storyteller
+
+3 年
+
+We are one step closer to enhancing antimicrobial treatment with artificial intelligence and machine learning! We published our paper where we developed a machine learning model to predict antibiotic plasma concentrations and compared it to a currently used method, called Population Pharmacokinetics. This model even provides uncertainty quantification to the predictions to offer even more interpretability and assistance for clinicians and is evaluated using a new uncertainty quantification metric. Go have a look if you are interested! #machinelearning 
+
+https://lnkd.in/eTP6PQ7Y
+
+Development and evaluation of uncertainty quantifying machine learning models to predict piperacillin plasma concentrations in critically ill patients - BMC Medical Informatics and Decision Making
+bmcmedinformdecismak.biomedcentral.com
+26
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+354 位关注者
+
+13 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

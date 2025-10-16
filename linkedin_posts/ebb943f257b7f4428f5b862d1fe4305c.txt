@@ -1,0 +1,9 @@
+URL: https://www.linkedin.com/posts/weiwei-feng-a2417795_everyones-obsessing-over-llm-hallucinations-activity-7348250429941547008-yfyg
+Date: 2025-09-24
+Author: Unknown
+
+Everyone’s obsessing over LLM hallucinations like it’s some mysterious AI fever dream, but plot twist: sometimes the problem isn’t that your model is creative, it’s that your data was garbage to begin with. 
+
+Training data full of contradictions? Check. Retrieval systems pulling from outdated docs? Check. APIs serving stale info? Check. Web scraping picking up AI-generated content that’s already wrong? Double check. Databases that haven’t been updated since 2000? Triple check.
+
+Maybe we should spend less time teaching AI to be less imaginative and more time teaching our entire data ecosystem to stop being a dumpster fire.

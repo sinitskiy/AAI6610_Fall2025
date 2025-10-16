@@ -1,0 +1,61 @@
+URL: https://www.linkedin.com/posts/maryammiradi_machinelearning-artificialintelligence-activity-7183047297641918464-yVpX
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maryam Miradi, PhD的动态
+Maryam Miradi, PhD
+
+VP & Chief AI Scientist | 20+ Years in AI | AI Agents Training (LLM + Vision) | Data Science Training (ML + DL) | AI Newsletter (32k+ members)
+
+1 年  已编辑
+
+𝐎𝐯𝐞𝐫𝐜𝐨𝐦𝐢𝐧𝐠 𝐌𝐨𝐝𝐞𝐥 𝐔𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 𝐢𝐧 𝐃𝐞𝐞𝐩 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠: 𝟏𝟎 𝐓𝐨𝐩 𝐏𝐲𝐭𝐡𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬 𝐚𝐧𝐝 𝐒𝐨𝐥𝐮𝐭𝐢𝐨𝐧𝐬
+
+Deep learning has revolutionized the field of AI but with one major challenge: Model uncertainty.
+
+𝕄𝕠𝕕𝕖𝕝 𝕌𝕟𝕔𝕖𝕣𝕥𝕒𝕚𝕟𝕥𝕪
+
+Model's prediction probability is often used as a measure of uncertainty in the context of classification and this is not always correct because the model's predicted probabilities can be overly confident even when the true probabilities are well-known.
+
+ℝ𝕖𝕒𝕤𝕠𝕟 𝕒𝕟𝕕 𝕀𝕞𝕡𝕒𝕔𝕥
+
+This can occur due to lack of data, noise, or the presence of conflicting information and leads to incorrect predictions.
+
+𝕋𝕪𝕡𝕖𝕤 𝕠𝕗 𝕄𝕠𝕕𝕖𝕝 𝕌𝕟𝕔𝕖𝕣𝕥𝕒𝕚𝕟𝕥𝕪
+
+➊ Aleatoric uncertainty: due to inherent randomness in the data
+
+➋ Epistemic uncertainty: due to the lack of knowledge or information about the model
+
+➌ Model discrepancy: when the model's predictions are inconsistent with reality, which is a form of systematic error.
+
+𝕊𝕠𝕝𝕦𝕥𝕚𝕠𝕟𝕤 𝕥𝕠 𝕄𝕠𝕕𝕖𝕝 𝕌𝕟𝕔𝕖𝕣𝕥𝕒𝕚𝕟𝕥𝕪
+
+O͜͡ 𝐂𝐚𝐥𝐢𝐛𝐫𝐚𝐭𝐢𝐨𝐧: adjusts the predicted probabilities. common techniques: Platt scaling and isotonic regression.
+
+O͜͡ 𝐂𝐨𝐧𝐟𝐨𝐫𝐦𝐚𝐥 𝐈𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞: Constructs prediction intervals to quantify and communicate uncertainty in individual predictions
+
+O͜͡ 𝐁𝐚𝐲𝐞𝐬𝐢𝐚𝐧 𝐧𝐞𝐮𝐫𝐚𝐥 𝐧𝐞𝐭𝐰𝐨𝐫𝐤𝐬: use probability distributions to model uncertainty in the weights of the neural network.
+
+O͜͡ 𝐃𝐫𝐨𝐩𝐨𝐮𝐭 𝐫𝐞𝐠𝐮𝐥𝐚𝐫𝐢𝐳𝐚𝐭𝐢𝐨𝐧: randomly drops out some neurons during training, which reduces overfitting and generalize better.
+
+O͜͡ 𝐌𝐨𝐧𝐭𝐞 𝐂𝐚𝐫𝐥𝐨 𝐝𝐫𝐨𝐩𝐨𝐮𝐭: uses dropout at inference time to obtain multiple predictions to estimate uncertainty.
+
+O͜͡ 𝐃𝐞𝐞𝐩 𝐞𝐧𝐬𝐞𝐦𝐛𝐥𝐞𝐬: similar to ensemble models, with different initializations and architectures to further reduce uncertainty.
+
+𝐏𝐲𝐭𝐡𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬:
+
+📚 MAPIE 
+Quantifying uncertainties and controlling the risks
+
+📚TensorFlow Probabilit

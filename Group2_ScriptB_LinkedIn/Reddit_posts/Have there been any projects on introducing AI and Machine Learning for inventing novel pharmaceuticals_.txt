@@ -1,0 +1,47 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/xgu73x/have_there_been_any_projects_on_introducing_ai/
+Title: Have there been any projects on introducing AI and Machine Learning for inventing novel pharmaceuticals?
+
+Content:
+Not sure if this is the right subreddit, but I’ve recently watched a documentary on AlphaGo, and I was curious if anything has been done similar for inventing new drugs?
+
+Comments:
+- There are a decent number of companies whose sole purpose is drug discovery through AI and machine learning
+- There is plenty of works around: people are using ML to predict whether a molecule can bind to a drug target, eg
+https://pubs.rsc.org/en/content/articlelanding/2018/sc/c8sc00148k, or use language models, GANs, VAEs, to generate molecules (https://www.sciencedirect.com/science/article/pii/S1359644617303598 ). One of the successful projects here: 
+https://www.nature.com/articles/s41587-019-0224-x .
+However, lots of people combine the generative models with the predictive ones, which leads to problems (but that's another story..).
+- The company Deepmind which is behind AlphaGo recently published 200 million folded protein predictions which were modelled using AlphaFold 2 and Deepmind founded a subsidiary company named IsomorphicLabs who plan to use AlphaFolds protein predictions for drug discovery.
+- Look into computer aided drug design and add machine learning or statistical models as a keyword. ML/AI are generally advanced statistical models used to isolate desirable traits in large data sets and correlate it with possible driving factors. Like we know certain molecules have better lipophilicity, some have better drug half-life, large data set models use these to isolate and identify which part of the molecules are responsible.
+
+ Like off the top of my head I could tell you that nitrogen based heterocycles are usually going to evoke some form of drug like behavior  in a molecule. Simply based off of how many N-heterocycles are present in the current commercial drugs. AI is just doing it with mathematical model. This very commonplace in the pharmaceutical industry.
+- Hey, I am working on exactly that on my masters. I'm using QSAR techniques, which uses machine learning, to try to find possible CB2 agonists. I'm still in the beginning of my project, I'm very far from an specialist, but I could try to help you out on how it works if you need c:
+- Yes. Check this company https://www.exscientia.ai/
+- Have there been any advancements? Is AI and Machine Learning only being used for drug discovery and not testing the likelihood of the drug candidate’s ability to enter the market?
+
+My understanding is that pharmaceuticals are notoriously expensive to discover, test, and produce. If these companies have access to machine learning and AI to dictate which drugs they should pursue how come there still seems to be a major gap between revenue and expenses?
+
+I acknowledge my question seems ignorant, I’m intentionally asking ignorant questions to gather a more comprehensive understanding of the situation.
+- Awesome, thanks for the info! I’ll be sure to read into it.
+- Interesting stuff! I’ll have to read more about this.
+- Very interesting stuff! I’m doing an undergrad in biotech, and see a lot of potential in the industry. What are QSAR techniques and CB2 agonists?
+- Will do!
+- >Is AI and Machine Learning only being used for drug discovery and not testing the likelihood of the drug candidate’s ability to enter the market?
+
+I don't think anyone is trying to design drugs that are not likely to work.
+- The purpose of using AI is to increase the likelihood of success. AI isn't a crystal ball, it's just sophisticated statistics. Its purpose in industry is to reduce wasted time and resources, not guarantee success since that's not possible. You still need phase trials and development and even then, the drug could have a cascade of unpredicted effects and die at trial, or sooner.
+
+If AI could guarantee each drug would work, we wouldn't even need phase trials. We'd just have a computer tell us which atom's to stick together and start taking them.
+- Check out the reports from DeepPharma
+- The CB2 receptor is the cannabinoid receptor 2. The endocannbinoid systema has two receptors, 1 and 2. THC interacts with both of them. The CB2 receptor is mainly located in the immune system and is associated with anti-inflamatory action. I am looking for a molecule that acts as an agonist in this receptor.
+
+QSAR means Quantitative Structure Activity Relationship. It's a technique that tries to find a relationship between the structure of a molecule and it's biological activity. Basically, ou gather several molecules with known activity in your target protein. With these molecules, you can use programs to calculate molecular descriptors. They are a way to express molecular features in a numerical way. With this, you have a dataset with several parameters (the molecular descriptors) and a response variable (the biological activity). You can use this dataset to train a machine learning model, and use it to predict the biological activity of different molecules.
+- That’s not what I asked. Of course no one is trying to design drugs that won’t work.
+
+After discovering a new drug candidate, is AI/machine learning used to deduce whether a drug candidate is worth pursuing further or do we still rely on drug testing and engineers for this?
+- I understand that. I was never under the impression that AI would be able to create a new drug that could enter the market 100% of the time. However, just like how AlphaGo improved as it continued playing games of Go. I’m curious if AI would improve at bringing drugs to market through the same process.
+
+As the AI increases it’s knowledge on which drugs do/don’t enter the market, the number of successful drug candidates should also increase. Obviously, there would be more variables to consider than there are in a game of Go, but the AI learning process is the same.
+- Will do, thanks!
+- That’s very interesting stuff! I’ll have to read more into QSAR to gain a better understanding.
+- You mean "scientists", not "engineers". And, yes, models have been used for decades to try to predict desirable traits in drug compounds. But a good new drug candidate is way too valuable to just toss away based on a computer model. Laboratory tests remain the gold standard.

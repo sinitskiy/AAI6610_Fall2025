@@ -1,0 +1,86 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1f28ett/complaints_about_bioinformatics_in_a_wetlab/
+Title: Complaints about bioinformatics in a wet-lab
+
+Content:
+Hi all,
+
+
+I've got a pretty common problem on my hands. In this thread, I'm going to complain about it.
+
+
+I work academia. Good lab, good people, supportive despite the forthcoming tirade. I'm the only bioinformatics person in the lab. I'm also the first, too; the PI is trying to branch out into bioinformatics and has never done any of this stuff before. For some reason, instead of choosing to hire someone with a PhD to get their computational operation up and running, they picked me.
+
+
+I have several projects on my plate. They are all very poorly designed. I do not 'own' any of these projects and for various reasons the people who do refuse to alter the design in any meaningful way. I have expressed that there are MAJOR FLAWS, but to no avail. At some level, I understand why I do not have a say in these things given that I am a mere technician, but it is frustrating nevertheless.
+
+
+The PI is under the mistaken impression that I am a complete novice. This was probably my fault; I've got mega impostor syndrome and undersell myself while simultaneously emphasizing that one of my reasons for choosing academia is the proximity to experts. This seems to be misconstrued as "I do not know the first thing about how to analyze biological data using a computer, but I am willing to learn." To their credit, the PI has helped me connect me with the local experts in bioinformatics. Only, the frustrating part is that the experts end up being just as clumsy and inexperienced as I am, and the help that they have to offer is seldom more than disorganized code copied from the internet.
+
+
+My job consists of the following: (1) magically pull together statistical analyses that are way above my pay-grade and that I am not given credit for knowing how to do, (2) use my NGS-savvy to unfuck experiments that should not have been fucked from the beginning, and (3) maintain a good rapport with our collaborators by continually deferring to the expertise of people who struggle to plug things into a command-line. When I succeed, the wet lab folks pat each other on the back because their experiment wasn't a complete disaster. When I fail, it's my fault because I can't machine-learn (or whatever) good enough to dig my way out of shit experimental design and the people who are supposed to be able to help me just flat out can't. Either way, this sucks and I hate it.
+
+
+At any rate, I just wanted to complain to folks who can sympathize. Please feel free to add your own rants in the comments.
+
+Comments:
+- The official bioinformatician in my group stores his scripts in Word documents with yellow higlights. He only uses R through command line to generate csv files of the results that he can filter, color code, etc... And plots that later are made publication ready in Illustrator. I do not have doubts about the quality of his research, I admire how smart he is on that regard... But man... It pains me so much the time I invest in learning git and then see this
+- Welcome to the world of bioinformatics, I would say. 
+Sounds pretty normal and you will get used to it.
+- [deleted]
+- Sounds like a typical academia lab. Good luck.
+
+I do recommend staying in touch with the bioinformatics PIs/postdocs if you can find them. 
+It always helps to have a group of experienced people you can bounce ideas off of or run some quick analysis by.
+- Remember, "garbage in - garbage out".
+People who design their experiments badly need someone to blame, they spent a lot of time/work/money for nothing and use bioinformaticians as their scape goats. 
+Make sure, that you're involved in an experimental design stage. 
+P.S. I don't know if you can tell people bluntly that their experiments are poorly planned and executed and that's the reason for the bad results. In my experience, it depends on the country. 
+You can always turn to passive-aggressive replies.
+Good luck!
+- This is normal. Biology is hard, samples are scarce, grants are limited. If you hate it that much, you will quit sooner or later. 
+
+Alternative to quitting: Get involved and identify with the research in your group. First problem: You see yourself as a mere technician. You are not if you are working at this level. Second problem, no credit: if you contribute to the analysis, you should be a co-author when it is published! 
+
+Talk to your boss about these problems.
+- Can you elaborate on how the experiments are being designed incorrectly for bioinfomatic analysis? Or are they flawed in every sense?
+- Do yourself a favor and start to improve the infrastructure. Give the people the ability to run their own analysis, and switch back to a role of a consultant. 
+
+How? Set up a labs own Galaxy server. Teach the people on how to make the analysis on their own. That way they are not that much depending on you (an argument that sold it here for me) and they will learn what is possible and not with bioinformatics.
+- Welcome to the shit.
+
+This is the job unless you're part of a large informatics team and that's the main focus on the lab/company.
+
+The paychecks all cash the same.
+- I used to dedicate 3 days of the 5 day week to my contract/grant that I was hired on. Then when people came to me I'd ask them to first run it by my supervisor and then I'd tell them that I can have a look at it X day because I've Y to do between then and now. At the end of X day I'd send them back what I thought and the pipeline I was going to use/the results I know I can generate and a rough timeline. Usually when someone heard it'd take 2 weeks and I'd have to postpone some other things they wanted then they'd back up a bit. By the end of my contract I had developed R pipelines for the usual analysis that they wanted and I'd require them to send me the data in a certain way. I'd send them back all the outputs in 3 different formats in a huge file with all the possible combinations so that they'd never need to ask me another thing. Worked a charm and I'm still getting citations.
+- Yeah this is pretty much my exact experience except im the only bioinformatician in an early stage start up. Also had  a very similar experience with my Master's dissertation where I had to analyse RNAseq data with an N of 1. Can confirm it sucks and is soul sucking.
+- I’m in a bio wet lab with a bioinformatics background for my masters, and I have incorporated it into my project. But my advisor doesn’t see bioinformatics as real work, and has convinced the entire lab this. So if I am on my computer for an entire day he tells people I’m lazy… he has convinced my lab members this as well😑. Bench work is the only way to be seen as a  real scientist to him. But he sure is quick to ask me about something bioinformatics related for stuff he works on. 
+
+He also complains if I’m writing all day on my computer. Then he wonders why his students are making it to 4th year without any publications out. I can ignore him and continue doing what I need. Because I have no desire to be liked by him. But.. other students just jump at all his whims and adopt his mindset to get by.
+- Sounds like you are irreplaceable. Job security can be a great thing.
+- Move labs. Start somewhere new. This is the only result that will benefit everyone.
+- Same situation here. We are a group of bioinformatics in academia. We collaborate with different groups and we feel like technicians even if we have the greates server (340 cpus, 1.5 Tb ram, 2 A100 GPUs, that at least here, is a big deal) and skills.
+
+These are my cinic suggestions: 
+
+- They have no idea of what are you doing. You can trick them if they bother you, in terms of time, experiments quality and what it is possible to do with that data, just to gain time.
+
+- Try to write scripts that you can use over and over again simply changing parameters and input files, this will reduce times. Don't tell them you can do this is less time, sometimes you say you have put a lot of effort to do it before the deadline because you are very interested in the project, sometimes you use the remaining time for you working things. 
+
+-  Dont try to adjust the wrong experiments, you have to show the results and say you can't retrieve better ones since the experiments are a mess, shows some data and results from quality check tools, dont waste your time. Bad experiments will never be used for publications, so don't deserve your time. They can't even imagine the effort and the hours needed. (Once obtained what you need you don't have to show it immediately, just take more time to do your things ) 
+
+- Thats the better part: all previous suggestions have the same main objective, gain time for your analysis. For instance you have a good idea? You discovered or learned a new tool? Just start you own research project, don't try to implement things in projects belonging to other ppl, just do what they ask as soon as possible. They are secondary. 
+
+- If you succeed in previous suggestions and once you published they will desire you to use the same analysis for their projects. The way they will start to look at you will change completely. 
+
+- If they ask you something not clear, or to think about how to demonstrate one of their hypothesis, or if they ask something not standard, just tell them this is very difficult and time consuming and you have you own project that absorb time dedicated to "think how to". In case you have to find a way to pretend a co-first name (just tell them you are bringing ideas and logical solutions to their problems) if you bring new ideas because you can't quit your project for helping others to publish as first author. If not, they have to tell you what and how to do. 
+
+For my point of view it is a fucking war, they behave with us as technicians. What happen if we ask experiments and results to them? Drama: we can't do this things because we do not have time, or they will tell you this is a stupid idea. In my experience they also pretended that I do sequencing experiments by myself (since I have a biology degree), think something to discover something (yes very generic) or think how demonstrate what they think. All these even if I'm not the first or co-first author. 
+You have the major power, you are the one that can do things that anybody in your group can do, so you have to weight your importance.
+Don't know the situation there, but where I am, bioinformatics are few, so even after a discussion, they usually come back.
+- There was this great classic blog post by Mick Watson but it seems to have disappeared :(  
+[https://www.reddit.com/r/bioinformatics/comments/1cxg9d/a\_guide\_for\_the\_lonely\_bioinformatician/?rdt=51579](https://www.reddit.com/r/bioinformatics/comments/1cxg9d/a_guide_for_the_lonely_bioinformatician/?rdt=51579)
+- I'm the only bioinformatician/comp bio person in my lab, too. The overall mindset of bioinformatics not being seen as real work is real. It's as if I'm playing games and idling around when in fact I'm trying to analyze/visualize data. Even if I try to teach people in my lab how to run certain tools and go through databases, it's not considered as important as benchwork. Not to mention the faulty experimental designs.
+- Oh I completely get you. I'm currently doing my PhD, don't have a masters degree just went directly from uni, and I'm also the only bioinformatician in the lab. The problem is that while I was an undergraduate, there used to be a phd student, bioinformatician, who's a complete genius and I worked with him. He learnt everything from 0 all on his own and people expect the same from me, I learnt quite a lot with him too but we are just not the same. And the lab expects me to solve all their shitty experiment data too, while I'm just struggling to run a pipeline (developed by the previous phd student), understand the algorithms behind deseq2 and trying to create my own gtf files. And yet, everyone thinks bioinformatics is just clicking buttons, running pipelines is just clicking "run" and data analysis is just telling chatgpt to write a script for you...
+- only one computationist in a wet lab, same here. 🤝
+- Well... Knowing it happens in big labs withs lots of skilled bio-informatician...

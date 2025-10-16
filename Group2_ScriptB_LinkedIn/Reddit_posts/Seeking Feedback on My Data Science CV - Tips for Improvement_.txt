@@ -1,0 +1,55 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gq6tum/seeking_feedback_on_my_data_science_cv_tips_for/
+Title: Seeking Feedback on My Data Science CV - Tips for Improvement?
+
+Content:
+https://preview.redd.it/9zj1pduy5m0e1.png?width=1086&format=png&auto=webp&s=35000491e4737703d5a976b17fb6a339ed4bcaf4
+
+
+
+Comments:
+- My tips:  
+\- Reduce the technical skills massively. List the top 5 and put them at the bottom
+
+\- No one cares about a microsoft office specialist, this is just assumed to be there.
+
+\- You can compress education as well
+
+\- No one cares about how good your algorithm/ analysis was, bur what the business impact is. I know this is hard isnce you have limited experience, but try and reformulate your experience in terms of business impact/ or what is the new business asset. Even a forecast (total guesstimate) is better.
+
+\- higlight any stakeholder experience you might have. When I hire junior/entry level people I mostly differentiate them by their soft skills rather than the technical. It is way easier for me and my team to upskill you in technical aspects than it is in stakeholder management, requirements management, and other soft skills.
+
+\- If you are to be hired as a DS/DA most of the time you will work with non technical stakeholders. I need to know that you will be able to operate in that environment. 
+
+Remember your CV is read by HR and HR knows very little about technical stuff. They are scanning for buzzwords, not R squared of accuracy.
+- I've been struggling to find an entry level data position job in the UK, especially in data science roles. Since I finished the course I have applied to more than 100 places and get lots of rejection and even no replies. Could it be due to my lack of experience in the field? I would greatly appreciate any feedback on how to improve my CV for better probability of getting a call back.
+- How can this guy post this whenever I try to post my resume it gets auto deleted?
+- Getting your foot in the door will go a lot further than anything on your CV at this stage. Try reach out to colleagues from uni and network that way (also things like Big Data London) to get face time in front of different companies.
+- Looks good.
+- Looks great especially the colour
+- I'm mostly a lurker here, but every time I've seen a resume it uses the exact same plain format. Is there a reason for that? I'd say beautifying the resume would work wonders
+- [removed]
+- Hey, your resume looks solid overall. Nice mix of technical skills and project work. A few folks already made great points, but I noticed a couple more things you might want to tweak:
+
+* You’ve done a good job listing tools and skills, but it might help to pull some of those into your project bullet points directly. That way, you’re not just saying you know, say, SHAP or PCA, you’re showing how you used them and why it mattered. You kind of do this already, but a few more specific outcomes (like how the dashboard informed decisions or what kind of "valuable insight" the TCR prediction gave) could strengthen that even more.
+* The education section is fine, but you might consider moving your Master’s degree summary up a bit higher, especially if that’s more aligned with the jobs you’re targeting now.
+* Your formatting is clean, but if you’re submitting this online, a couple tweaks can help with applicant tracking systems (ATS). Just little stuff like avoiding special characters (like ® symbols or vertical bars between skills) and making sure all keywords from job postings are phrased exactly as they appear.
+* There’s also a solid breakdown of resume tips here: [Crafting a Data Resume That Makes Recruiters Swipe Right](https://www.dataquest.io/blog/crafting-a-data-resume-that-makes-recruiters-swipe-right/). It has a couple great sections on how to get past ATS filters (which trip a lot of people up) and how to spot hidden requirements in job postings that aren’t always obvious at first glance. Worth a skim if you’re doing a round of resume cleanup.
+
+Hope this helps, and best of luck with the job hunt!
+- Get linkedin+ and network as much as you can. The market is generally f\*ked up these days.  
+Also it's better to up-skill yourself with LLM tools since the barrier to learn and apply is small
+- In which country are you trying to get a job?
+- The UK is a dead end for entry level jobs in general. There are at least 400 qualified candidates with well optimized CVs for each entry level position. I’d focus less on optimizing CV and more on networking.
+- I’d strongly suggest adding grades next to your qualifications. I’ve just finished going through a few hundred CVs and would’ve discounted this immediately for that reason. Thought process: no grades given, probably did badly
+- Thank you for your advice, I will sure make the CV less technical and omit the irrelavance in my skill sections
+- Just a comment on the advice of "reduce technical skills". At first a machine checks your CV. And that machine searches for keywords. Lack of some or which automatically rejects your application. I suggest keeping all of them. But, as suggested it's best it is positioned at the bottom.
+- Experience goes above projects.
+
+Also 100 applications is nothing, without referral expect to hit 1000+ easily.
+- >I've been struggling to find an entry level data position job in the UK
+
+I'm not surprised if they're shipping them in from Asia, *via* overpriced graduate school programmes.
+- Yes, recruiters are using ATS to kinda filter people and this template is being widely used afaik.
+- thank you, I am too afraid that this might be too congested with words, i will make a better version with are less cramped with words and only include the necessaty
+- I'm curious how network can help. I am in exact same situation os OP. Got myself a Linkedin account, and connecting to ppl. How would that help me to get a job?

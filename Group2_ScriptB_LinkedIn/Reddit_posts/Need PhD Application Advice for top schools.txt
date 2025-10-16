@@ -1,0 +1,77 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/ywy3pg/need_phd_application_advice_for_top_schools/
+Title: Need PhD Application Advice for top schools
+
+Content:
+Hey bioinformatics community!
+
+I am applying for CS / Computational Biology PhD programs in the US this year (mostly coming from the CS and Machine Learning side), and I have a few doubts/confusion about whether my profile is competitive enough:
+
+Strong points:
+
+1. I have a Master's degree from a prestigious and well-known university.
+2. I have published research papers, and more are on the way, although they won't be published before the admission process is over.
+3. I have worked under a professor who is well-known in the field, and he knows me well.
+
+Weak points:
+
+1. I don't have a research paper as a first author.
+2. I don't have a third LOR from a professor, only from a professional one. I tried to get some positions this year by emailing professors from other universities but did not get a response.
+3. I don't have a 4+ GPA (just slightly less).
+4. My major is in Computer Science, although I did take many computational biology courses, as well as CS courses like ML and NLP that are going to be relevant in Computational Biology
+
+LOR:
+
+1. From the professor who is well-known in the field
+2. From another professor with whom I published a paper - although he is pretty blunt as to who he will give his "top" referral letter every year, and I am sure it's not going to be me.
+3. From my manager at an internship as I mentioned before.
+
+I mostly only want to apply to the CS and CompBio programs at following universities:
+
+1. Harvard PhD CS / Harvard Biostatistics
+2. MIT CS / MIT Computational and Systems Biology
+3. Stanford PhD CS (with a focus on Comp Bio)
+4. Some other top CS programs which have Computational Biology as a subfocus.
+
+I haven't been very organized this year and have been financially troubled and hence I am a feeling a little bit of anxiety during this process - I am not sure if I can make the cut to these top programs (I have considered others but I will be mostly applying to these only).
+
+P.S.:  I can also share my application materials if you want to advice me on that. I would really appreciate it as well :)
+
+Comments:
+- I don’t know about the comp bio tracks specifically, but in general, if you are applying to a top 10 CS program, you need a very strong research pedigree. Lack of first author pubs will hurt you. I am a little concerned that you are unreasonably focusing on the most competitive programs - I would think more about fit and consider applying more broadly.
+- You are an amazing candidate for many top R1 CS/Comp Bio programs, but you are shooting yourself in the foot by only considering these 3. 
+
+Think about it as if you're trying to maximize the likelihood of getting into a great PhD program. At this point, the gradient wrt. improving your resume is small (it's already great!), but the gradient wrt. applying to more programs is large. Consider these schools to be your reaches, and add in some targets with programs/faculty that interest you.
+
+Alternatively, since it's already pretty late in the cycle, you could apply to just these reaches, with the expectation that you may have to apply again next year. That's what I did--I expanded my search my second time applying and ended up somewhere I get to do really cool research that I'm really happy with.
+
+Best of luck, and hope you get in this cycle!
+- To echo others, it seems like you're a strong candidate, but probably not strong enough to justifiably *only* consider this handful of programs. 
+
+FYI, for Harvard, you would probably be better suited for BIG than biostatistics based on your research interests.
+- How badly do you think it's going to hurt me?
+
+I have spent hours browsing the profiles of students already admitted into those programs, and I did not find many who had exceptional research background (like having first author pubs), but I could be wrong here.
+- >You are an amazing candidate for many top R1 CS/Comp Bio programs, but you are shooting yourself in the foot by only considering these 3.
+
+No, I am not considering only these 3, but yeah I am highly focused on the top universities and programs.
+
+>Think about it as if you're trying to maximize the likelihood of getting into a great PhD program. At this point, the gradient wrt. improving your resume is small (it's already great!), but the gradient wrt. applying to more programs is large. Consider these schools to be your reaches, and add in some targets with programs/faculty that interest you.
+
+Yup, I am planning to apply to many programs, with faculties with whom my interests align. I did email many professors over the summer as well, but sadly it seems like no professor even applies.
+
+>Best of luck, and hope you get in this cycle!
+
+Thank you so much!
+
+I have to ask, but since you already got in would you be willing to answer a few questions from me in DMs?
+- >To echo others, it seems like you're a strong candidate, but probably not strong enough
+
+Yes, that fact has been making me so stressed recently.
+
+>FYI, for Harvard, you would probably be better suited for BIG than biostatistics based on your research interests.
+
+Thanks, I will look into that program.
+- > I have to ask, but since you already got in would you be willing to answer a few questions from me in DMs?
+
+Yeah of course! I applied mainly to Comp Bio programs, so I might not be as much help if you're applying strictly to CS. Still happy to give insight tho

@@ -1,0 +1,12 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/uswbrq/advice_on_preparation_for_application_for/
+Title: Advice on preparation for application for Bioimaging & Biophysics program
+
+Content:
+Hello dear redditors,
+
+I'm planning to apply to integrated life science program in University of Erlangen-Nuremberg (Bioimaging and biophysics module). My undergrad major was Biochemistry and molecular biology with specialization in bioinformatics.
+
+Is there any advice you can give me regarding what thing I should learn to up my chances of admission? Right now I'm learning basics of analysis with ImageJ and taking the machine learning course by Andrew NG in coursera.
+
+Comments:

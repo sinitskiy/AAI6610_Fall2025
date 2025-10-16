@@ -1,0 +1,22 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/il0wpl/d_how_does_everybody_statistically_compare/
+Title: [D] How does everybody statistically compare different NN training methods over multiple test datasets with different numbers of test samples?
+
+Content:
+Say you have a method A and method B. For example, method A could be training a neural network with dropout, and method B is training the same neural net without dropout.
+
+You train a model with each of those methods, say, three times, so now you have 6 trained models.
+And you have 10 different test datasets, each with different number of samples, over which you care about the accuracy.
+
+Imagine that after training the models and testing them on all the test sets, you notice that there is a big difference on one of the test sets. How do you know whether that difference is statistically significant or not, i.e. what would be the probability to obtain such (or higher) difference on one of the datasets by chance?
+
+There are multiple sources of uncertainty here: uncertainty due to sampling the data, uncertainty due to sampling the models, and also the bias of multiple hypothesis testing. How do you combine them to come up with a single probability value?
+
+Uncertainty due to sampling the data: refers to the variability in accuracies for the bootstrap samples of the given dataset, and can be decreased by increasing the number of test samples in the datasets.
+
+Uncertainty due to sampling the models: refers to the variability in test accuracies for different models that you would obtain from training the models in the same way multiple times (due to initial weight initialization, etc.). Can be decreased by training more models.
+
+Comments:
+- Short answer: they don't.
+- One solution might be an unpaired t-test - there are probably more sophisticated measures out there though.
+- There is also random weight initialization which is required to break symmetry in various ways and sometimes can have major impact on performance.

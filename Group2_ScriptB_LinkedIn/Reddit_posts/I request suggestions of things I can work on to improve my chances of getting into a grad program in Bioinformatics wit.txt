@@ -1,0 +1,36 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tlv4ij/i_request_suggestions_of_things_i_can_work_on_to/
+Title: I request suggestions of things I can work on to improve my chances of getting into a grad program in Bioinformatics with an EE undergrad. Link to objective inside
+
+Content:
+Hello, I am an Electrical Engineering undergrad. I have some experience in Data Analysis, Data Science, Python, statistics, machine learning, but I am not a CS student. Unfortunately I know very little of biology.
+
+I'd like to get this kind of job at Sanofi: [mRNA Machine Learning Principal Scientist](https://www.pdfhost.net/index.php?Action=DownloadFile&id=592b311dd1f6ae6272adbdc23d180806) (if you don't want to click, I will post the important bits in a comment below).
+
+I will need a PhD. What can I do while I am still in undergrad university to increase my chances of getting there, with my not ideal background? If it's impossible, let me know. Thanks :)
+
+Comments:
+- If you don't want to download the PDF, here's what important on that page:
+
+...
+
+>S/he will have deep knowledge and experience in both RNA Biology/ Biophysics/ Biochemistry and bioinformatics/ data science/ machine learning. S/he will be responsible for designing, prototyping, and validating computational solutions to diverse scientific challenges in the fields of mRNA vaccines and therapeutics. S/he will have a high degree of proficiency in Python/R, machine learning and deep learning libraries, bioinformatics tools and cloud computing.
+
+...
+
+>Acts as a scientific expert and partner in the fields of RNA Biology/ biochemistry/ biophysics and AI/ML  
+>  
+>Design and assess studies to evaluate the performance of mRNA vaccines and therapeutics. Translate experimental learnings into the development and refinement of computational models for design, optimization, selection and formulation of mRNA vaccines.  
+>  
+>Employs machine learning methods such as deep learning, neural networks, reinforcement learning, graphical and generative models to deconvolve high dimensional experimental and in silico modeling results
+- Can you do a bioinformatics final year project, or an MSc?  I think you'd get into a PhD from EE anyway, computational skills are transferable
+- I have seen a few bioinformatics msc courses that assume no knowledge of biology. All they ask for is some mathematical/stats knowledge only. No chance of entry into a phd, but doing a msc first is definitely possible from a non-biology background
+- My idea is to go for grad school in Europe, and they mostly require a MSc before the PhD. My doubts is whether I can get into this MSc with the very poor biology knowledge that I have.
+
+Yeah I want to do a final year project in something Bioinformatics but I don't even know where to start honestly. What could I even do?
+
+By the way, do you know any EE in this field?
+- My idea is to do this in Europe, so a MSc will be required anyway. However I have heard that europeans tend to be less flexible with people of different backgrounds coming in.
+- Send some cold emails to the biology/CS department at your uni, an yea maybe robotic stuff but I'm not the best person to ask.  Engineers enjoy a lot of success in Synbio if that helps
+- Synbio is about 'automatizing' biologial experiments, right? I have heard of it
+- nah its about applying engineering principles to biology, it just happens to involve automatisation for some things a lot :P

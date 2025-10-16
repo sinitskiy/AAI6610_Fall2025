@@ -1,0 +1,26 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gwlzed/from_biomedical_undergrad_to_ds_msc/
+Title: From Biomedical Undergrad to DS MSc
+
+Content:
+Hello!
+I'm am currently doing an MSc in data science for politics and policy-making, my course covers Python, SQL, Machine learning, big data and using R for statistical methods like regression, hypothesis testing, and GLMs to analyze policy-relevant data. Along with 2 Politics module to complete the course, i shall have completed the course by the end of summer in 2025! 
+
+I just wanted to hear from the community for advice on what exactly is the type of field l'd  best be able to go into a year from now, whether I should keep my options UK based or explore elsewhere. And what else I should do besides my studies to put me in the best position for job prospects as soon as I'm done with my masters. I come from a Biomedical undergrad background so this whole field is very new to me!
+
+I've heard both positives and negatives about the data science job market, so any advice from experienced professionals would be greatly appreciated. 
+
+Comments:
+- Do you want to stay in biology? Plenty of data roles in biotech and pharma
+- I'm a junior data scientist based in London, the advice I can give for you:
+
+1. It's extremely difficult right now to land a junior data analyst/scientist in London job market unless you have past relevant experience in the field. A lot of people seem to have a misunderstanding that doing a Masters in DS will suddenly improve their job prospect. In reality, recruiters only care about what you do with that knowledge. So my advice for you is to either get an internship during your masters or at least build a solid portfolio with the help of Kaggle and Huggingface to showcase what you've learned.
+2. Also the chances of you getting a job are drastically different if you require a working visa. If you're the latter, then unfortunately it's going to get significantly more difficult for you as most companies in London now prefer local students instead of international ones for junior positions. The only few firms who are still actively hiring for international students are those big tech and finance firms who only wants the best and couldn't care less about the costs of the visa.
+- I'm Emaad working as a Data Engineer at Deloitte US Offices in India with 2.5 years experience . My work revolves around providing technological solutions and business products to clients and stakeholders using software development, pipeline automation and reporting tools and technologies like SQL, .Net, Tableau, Python, Azure etc. 
+I have got offers from UCL London, University of Edinburgh MSc Data Science/AI & ML programs for September 2025 intake. I'd like to ask everyone how to approach and apply for jobs to ensure I have chances at grabbing one after my degree completion.
+- Wouldn’t mind at all, I thoroughly enjoyed my Biomed course for the most part. Staying in biology, biotech, or pharma is definitely something I’d consider. Do you think my current master’s in data science for politics and policy-making will allow me to transition into these industries, or would I need to do additional certifications or gain specific experience?
+
+And my program includes modules like big data, machine learning, and R, have any opinions on whether I should broaden my focus to other industries, or does biotech offer strong long-term opportunities for someone like me? Any advice would be greatly appreciated!
+- Understood, is this only in London or would you say it’s for the entire country at the moment? And of course I completely understand, in order to get a job I need to demonstrate that I have comprehensive understanding of what I am trying to be hired for. 
+For that reason I do plan on building my portfolio, spending time on it as i progress through my studies. Was just unsure of what exactly is the type of data i would need to use as I have used kaggle for my assignments to showcase my python skills for my course, just don’t want it to seem immature or lackluster for a company! 
+I’m also not sure how I would even be acknowledged for an internship as I am only half way through my studies and don’t have the knowledge yet to make worthwhile contributions to their projects or goals. Or are you advising I look for an internship after I finish my masters and work like that for a while before jumping into the shark tank!

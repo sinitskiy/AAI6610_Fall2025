@@ -1,0 +1,55 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/18tzggo/r_new_release_practical_guide_to_applied/
+Title: [R] 📘 New Release: "Practical Guide to Applied Conformal Prediction in Python" - Master Uncertainty in ML!
+
+Content:
+Hello, Reddit community!
+
+I’m excited to share with you the release of a must-read book for machine learning enthusiasts: **“Practical Guide to Applied Conformal Prediction in Python.”** This book is a fantastic resource for anyone looking to deepen their understanding of uncertainty in machine learning, with a focus on the Conformal Prediction framework.
+
+**Key Features:**
+
+* **Expertise in Conformal Prediction:** Dive into this rapidly growing ML framework and apply it using Python.
+* **Innovative Techniques:** Explore state-of-the-art methods for uncertainty measurement and management in industry settings.
+* **Beyond Standard ML Approaches:** Discover how Conformal Prediction is different from and more effective than traditional machine learning techniques.
+
+**Book Overview:**
+
+“Practical Guide to Applied Conformal Prediction in Python” is a comprehensive exploration of the Conformal Prediction framework, which is reshaping how uncertainty is managed in machine learning applications. The book covers everything from the basics to practical applications in binary classification, regression, time series forecasting, imbalanced data, computer vision, and NLP.
+
+Each chapter offers detailed insights and best practices, backed by practical examples in Python using real-world datasets. This ensures a thorough understanding of this innovative framework for uncertainty quantification.
+
+**Learning Objectives:**
+
+* Understand the core concepts and principles of conformal prediction.
+* Learn the differences between conformal prediction and traditional ML methods.
+* Apply conformal prediction in real-world industry scenarios, including advanced topics like imbalanced data and multi-class CP.
+* Deep dive into the conformal prediction framework, including its applications in forecasting and NLP.
+
+**Intended Audience:**
+
+This book is ideal for those with a foundational knowledge of machine learning and Python programming, including data scientists, ML engineers, and academics looking to advance their skills in uncertainty quantification in ML.
+
+**Contents At A Glance:**
+
+Introducing Conformal Prediction  
+Overview of Conformal Prediction  
+Fundamentals of Conformal Prediction  
+Validity and Efficiency of Conformal Prediction  
+Types of Conformal Predictors  
+Conformal Prediction for Classification  
+Conformal Prediction for Regression  
+Conformal Prediction for Time Series and Forecasting  
+Conformal Prediction for Computer Vision  
+Conformal Prediction for Natural Language Processing  
+Handling Imbalanced Data  
+Multi-Class Conformal Prediction
+
+Whether you’re a budding data scientist, an experienced ML engineer, or an academic researcher, this book is an invaluable resource for enhancing your machine learning toolkit. Get your copy today and step into the world of advanced uncertainty quantification in ML!
+
+[https://github.com/valeman/awesome-conformal-prediction](https://github.com/valeman/awesome-conformal-prediction)
+
+*Feel free to discuss and ask questions about the book below. Let’s explore the fascinating world of Conformal Prediction together! 🚀*
+
+Comments:
+- There is also unofficial companion repo for R 'https://github.com/frankiethull/Practical-Guide-to-Applied-Conformal-Prediction-in-R'

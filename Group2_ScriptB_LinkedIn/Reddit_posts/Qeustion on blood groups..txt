@@ -1,0 +1,36 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/ayqm8y/qeustion_on_blood_groups/
+Title: Qeustion on blood groups.
+
+Content:
+How come a person with blood group O can donate to a person with blood group AB? Since there are A and B antibodies in the O blood group blood surely this would cause agglutination in the blood of the recipient?
+
+&#x200B;
+
+My first hypothesis was that the antibodies were removed through use of a centrifuge or something but blood transfusion has been used for hundreds of years before this machine was even invented? What is going on here?
+
+Comments:
+- I believe blood is processed to remove the plasma that contains these antibodies, so it's not going to cause agglutination
+- The antigen markers are directly on blood cells so they can’t be removed by centrifuge. 
+
+Type O doesn’t have A or B antigens. That would be type AB.
+- A and B (or AB) blood groups are genes that code for glycoproteins on the surface of the cell. They work kindve like markers to identify that the cell is friendly. So if an A type blood person receives B type blood, the immune system would immediately recognize that the cell is foreign and it would eliminate it as if it was dangerous. 
+
+In the case of o type blood, there are no glycoprotein markers, so its not exactly telling the immune system its friendly. But its not telling it that its hostile either, so it becomes ignored and can carry oxygen just like the rest
+
+Hope this helps
+- While today, the plasma is separated from the rbc's, before this tech, it was generally ok to transfer whole blood because the low amount of antibodies in the donor blood is diluted in the recip, so agglutination isn't a real problem if transfusing type o to other blood type recip.
+- This is correct.
+
+When units are collected they are processed to separate red cells from plasma. The plasma from O donors can only be transfused to O recipients and the red cells can be transfused into any recipient.
+- Looks like this is correct. 
+
+(Found on the Google machine: https://biology.stackexchange.com/questions/26374/why-can-blood-group-o-be-given-to-all-blood-groups)
+
+In terms of transfusions being used prior to this technology—I think since transfusions were only done in life-or-death situations, they probably sometimes did cause bad reactions and sometimes worked, and with this process we now have a higher success/survival rate than we used to
+- I corrected the post. I mixed up antibodies and antigens since I'm not a native speaker...
+- I mixed up antigens and antibodies and have corrected my question. My question is basically this: a donor with O blood type have A and B antibodies in their blood, how come these dont attach to the recipient's (AB) red blood cells?
+- >kindve 
+
+this is a new one on me.
+- The anti-A/B antibodies wouldn't be circulating in the absence of A/B +ve red blood cells. So under normal circumstances, when there are only O cells in the circulation there shouldn't be any antibodies in the blood. If a person with type Of blood we're to receive type A/B blood then an antibody response could develop, but only after exposure to the antigens.

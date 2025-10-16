@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/jasongorman_hypothesis-if-as-its-increasingly-looking-activity-7368967049471033346-LRHX
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jason Gorman的动态
+Jason Gorman
+1 个月
+
+Hypothesis: if - as it's increasingly looking like - Large Language Models aren't going to get significantly more reliable (unless Altman gets his Dyson Sphere, of course), then from this point on, any improvements in the foreseeable future will come not from the models themselves but from how we use the models.
+
+I've spent a couple of years now researching and experimenting and watching teams try a range of different strategies to improve the model's confidence in predicting next tokens (which, believe it or not, is essentially what this boils down to - statistical physics FTW!)
+
+I think we can group the strategies that do appear to move the needle on "hallucinations" and downstream costs into 2 broad areas:
+
+1. Reducing uncertainty (entropy) in model prediction (e.g., small steps, prompting with tests)
+
+2. Minimising downstream bottlenecks that get can overwhelmed by unleashing a code-generating firehose on your dev process (e.g., continuous testing, trunk-based development)
+
+So I'm calling it. The technology may get faster (probably) and cheaper (hmmm), but the compute requirements for the kind of reliability we need out of the box, so to speak, are literally astronomical. 
+
+I think the smart money's going to pivot towards the principles, practices and tools we build on top of LLMs as they pretty much are today.
+
+And, luckily for me, in software development those principles and practices just happen to be what I've been practicing and teaching for more than 25 years :-)
+
+If your team's overwhelmed by the code-generating firehose, drop me a line. It's time to go back to the foundations.
+
+103
+15 条评论
+赞
+评论
+分享
+Jason Gorman
+
+1 个月
+
+Here's what I think is really funny: for more than 2 years now, folks have been foretelling the commoditisation of software (e.g., SaaS) and the demise of the professional software developer.
+
+Now, though, it looks like what's actually going to get commoditised is 

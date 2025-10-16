@@ -1,0 +1,60 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16vajxx/lets_discuss_again_distance_learning_phds/
+Title: Let's discuss again distance learning PhDs
+
+Content:
+I have recently posted about not being able to find a new job. I do work as a senior analyst, and the job pays the bills, but it isn't very interesting. I am sincerely interested in statistics, predictive modeling, machine learning, and I want to keep pursuing that. I have been applying a lot, had my resume reviewed by several people, but I am just not getting any replies.
+
+I am now thinking about what else I can do with my life to make it more interesting. I have a masters degree in data science, and two published papers, so in theory I could apply for a PhD. I have a mortgage and small kids though, I really can't go for a full-time PhD because I wouldn't make enough. My salary is around $79K USD and PhD programs definitely don't pay that. I also can't move because of kids, mortgage, family, etc.
+
+I do really want to work on an interesting project though, are there any good remote part-time  PhD programs? I know this has been already discussed, and there aren't a lot of options, but I did see that the Open University in UK has such a program and the Coventry University, also in UK, has one. The programs are quite expensive though for non-UK residents. 
+Anyone aware of other DS part-time remote PhD programs? I could find a way to attend campus occasionally, but definitely not every week, if it's far away. And unfortunately there aren't any part-time DS PhD programs in my city.
+
+Comments:
+- A regular PhD can 4-5 years working full time. Some people are taking 6 years. A part-time PhD will take much longer than that. It might be easier to just climb the career ladder and do part time learning than get a PhD. 
+
+Most PhD’s want their students full time and a lot want their students entering academia. PhD’s are typically not done as a industry career milestone like a master’s. People do PhDs, decide academia is not for them and then end up in industry with their skill set.
+
+If you really want a PhD you might just have to find a part time PhD that costs you money. Maybe more money than you want to pay but you are paying for the convenience. Maybe take the program you mentioned that is expensive. 
+
+Or you can just keep applying for jobs. A DS job is not an entry job. It is a tough market now but you can find an senior analyst job or a junior DS job with time. There are less modeling jobs than analyst DS jobs so it might take time but if you find a Junior DS position you can work your way up.
+- Generally, no, there are not good, part-time, remote PhD programs.
+- I think you probably need a reality check about the amount of work required to progress a PhD vs the available time you have
+
+Even part-time I just don’t think a PhD is feasible for someone with a full-time job and family they are trying to care for. One or the other, maybe - but not both.
+- The only part-time PhDs I have worked with were those whose main job had something to do with their dissertation, they worked in industry or government and basically spent their time gathering all the data they analyzed for their PhD.
+
+I wouldn't do a PhD remotely. I can't imagine not having colleagues nearby to learn from and collaborate with, especially if you're not already an academic.
+- It's not totally uncommon for people with industry-funded PhDs in my field (engineering) to do it on the side and take 6-10 years to graduate.  It sounds like you'd have a hard time funding the tuition on that yourself, though.  If you're really just interested in the work and not the degree, you might be able to find a professor you can work part time for as a research assistant.  That may not require you to enroll at all.
+- Have you looked at Penn state’s online Engineering doctorate, in data analytics or AI. $45k for the whole thing.
+
+https://www.worldcampus.psu.edu/degrees-and-certificates/penn-state-online-doctor-of-engineering#courses
+- If you’re so capable, why are you still in a 79K job?
+- >A regular PhD can 4-5 years working full time.
+
+I'd go further and say it can even go 5-7 years, and you'll almost certainly be working more than full time.
+- I have time. I don't need to do much at work. Plus there are stat holidays, vacation days, weekends...
+I am specifically looking to do a PhD because there isn't much for me to do at work. I haven't been able to find a different job and I've asked for more projects at work many times, but haven't gotten any.
+- Capable of what? I never said I was. I said that I am bored at my job and haven't been able to get interviews, so I haven't been able to change jobs. Since I can't change jobs, I am thinking oof what else to do with my time.
+- Plus you do realize that salaries greatly vary by country :) Maybe you are in the US and your salaries are obviously different then.
+- You are not wrong. A lot of programs aim for 5 years with full-time activity but I know several people that spent 6-7 years and it’s becoming more common. I was trying to go with what used to be the expectation and is the best case.
+- "There isn't much to do" is so far away from being a sufficient reason to start a PhD I'm honestly surprised you're even considering all of this. You not only need lots of time for it and be very dedicated, but also have enormous interest in your field/application. Otherwise you'll last one, maybe two years.
+
+Either change the job, or find a good personal project to work on. PhD isn't something you do out of boredom.
+
+And if you think you'll be able to manage a family, full time job, and a PhD at the same time, be ready to be completely miserable every single day for 4+ years and half-assing absolutely everything.
+- A better use for your time would be to grind interview prep so you can get interviews and get a more interesting job. That’ll pay dividends in 3-6 months instead of 5-7 years.
+- I say it with hope to invigorate a response from you. If you’re so smart and capable (papers, Sr role is easy, etc), why are you still loafing about in a 79k job wondering if you should pursue a PhD?
+
+Your objectives are undefined. Get a higher paying job first man, you owe it to yourself. Loaf about at double that.
+- I don't see how a PhD is that different from a thesis masters. I have already done a thesis masters in DS while working full-time at a job that actually required doing work and being in the office (unlike my current job). My thesis ended up being a paper with my prof and getting published. So a PhD would be similar to that... just longer...
+- Because I haven't been able to get a different job.. As I mentioned in my post, I have been applying for several months now, on LinkedIn and Indeed, but only ended up with one interview. I'm not sure how to get interviews. I had several acquaintances in the field look over my resume and they don't see any issues with it.
+- As someone who did a thesis master's and is now wrapping up his PhD, there is a huge difference; difference in scope, rigor, expectation, and many more.
+- >I don’t see how a PhD is that different from a thesis masters
+
+Thesis masters is kindergarten compared to PhD research, and I say that as someone with a thesis masters
+- I know you don't see how it could possibly be different.
+
+We are telling you that's kind of the point. If you are gonna treat like a masters with more work you'd fail out.
+
+There is a reason there are few (if not zero) part time PhDs.

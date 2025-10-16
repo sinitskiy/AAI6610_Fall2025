@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/marco-huber-78a1a151_machinelearning-artificialintelligence-activity-7015987627027746816-mRdB
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Marco Huber的动态
+Marco Huber
+
+Full Professor @ University of Stuttgart | Head of Digitalization, AI, and Machine Vision @ Fraunhofer IPA
+
+2 年  已编辑
+
+Quantifying uncertainties in machine learning through conformal predictions has gained importance in recent years. 
+
+Conformal predictions are a frequentist approach to providing confidence sets for predictions of machine learning models. They have the pleasant property of being distribution-free. That is, there are no assumptions about the underlying data distribution or the model. Therefore, conformal predictions can be applied to almost any trained machine learning model and still provide mathematically rigorous guarantees.
+
+The book "Algorithmic Learning in a Random World" is THE book on conformal prediction theory. In December 2022, the 2nd edition of the book was published. This was my reading activity during the Christmas vacations. The first author of the book, Vladimir Vovk, is considered the inventor of conformal predictions dating back to the late 1990s.
+
+The book begins with the basic ideas behind conformal predictions and extends these ideas to more advanced topics such as probabilistic predictions for classification and regression. The emphasis is on proving properties of the various algorithms rather than on concrete examples. It is therefore aimed at readers who want to dive deep into the theory of conformal predictions.
+
+If you don't like reading theorems, lemmas, and corollaries, and instead prefer a more practical approach to the subject, the book is probably not the right choice. My recommendation would be to start with the tutorial "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification" instead: https://lnkd.in/erDJhkhT 
+
+In addition, I can also recommend taking Christoph Molnar's email course on conformal predictions: https://lnkd.in/evzKc9rD
+
+#machinelearning #artificialintelligence #uncertaintyquantification #confor

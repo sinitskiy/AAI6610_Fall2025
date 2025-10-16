@@ -1,0 +1,91 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/tfjdfp/d_what_is_the_current_consensus_on_the/
+Title: [D] What is the current consensus on the effectiveness of Active Learning?
+
+Content:
+There is a lot of research going on in Active Learning but I feel there is nothing conclusive coming out of this field. A lot of methods are struggling to beat the random sampling baseline.
+
+For example, they used to publish this promising paper of using drop out for uncertainty estimation:   
+[https://arxiv.org/pdf/1506.02142.pdf](https://arxiv.org/pdf/1506.02142.pdf)
+
+But people tried to use it and it was just not performing well. Since then, I am not sure if DL methods can properly bootstrap themselves and identify what they do not know.
+
+I feel people are just urged to publish papers and it is too easy to fake the numbers and reportedly beating baselines until the next guy tries to reproduce the results.
+
+Is my skepticism justified? Or are there some methods (links appreciated) that are productively used in the industry?
+
+Edit:   
+To narrow the discussion, i mean active learning in the sense of finding the next samples to label to maximize improvement of the current model performance.
+
+Comments:
+- Active learning is in general tricky to work well. It is really easy to not make the best effort in tuning parameters for the baseline method and get really bad results, even not outperforming the random baseline. 
+
+Furthermore, it has been shown that it's hard to predict which particular method performs the best ahead of the time, which means that if you collected a non-random sample for a couple methods before finding the best one, you may as well better spend your total budget on collecting truly random samples and use any normal ML ([https://arxiv.org/abs/1807.04801](https://arxiv.org/abs/1807.04801)). 
+
+I also had a study a year ago finding that there is a significant gap between the current SoTA and what you could potentially achieve ([https://arxiv.org/abs/2101.00977](https://arxiv.org/abs/2101.00977)). Among several findings, the most interesting one is that it seems that the best sample sequence that you can collect is quite homogeneous or uniform, which is a sharp departure from uncertainty-based sampling which most focuses on the decision boundary.
+- 1) Most active learning works try to choose say 20% of examples you have for labeling and get to performance as good as labeling, say, 70% of examples. But in practice we are short on examples to label, not labels.
+
+2) Active learning often assumes that all examples are valid for labeling. Say if you train an activity classifier, most active learning approaches require all your images to have a person or they won't work well.
+
+3) Active learning tend to work better for better model architectures. Like smart students ask more relevant questions. When we are stuck on nearest neighbors, we cant do much beyond sampling the space evenly.
+
+Personally I think active learning is an interesting area that might lead to big jumps in model architectures. There's not a lot of low hanging fruits.
+- Heyo I worked with active learning (had some papers that tangentially relate to it) a few years, and here's my 2cents on active learning vs random sampling. 
+
+Active learning is a bit like sensor placement. So imagine you have a 2D map of some building, and you want to out security cameras in strategic locations to cover all the areas.  Now randomly placing the camera will work with a lot of cameras, which invariably cover up everything. If you're extremely clever, you can perfectly place the sensors so you use the absolute minimum. Active learning is somewhat in between those two, it greedily pick, in an iterative fashion, the next best sensor to place conditioned on all the sensors placed thus far. For instance, place the sensor that covers the most uncovered area so far. 
+
+One really cool result is that, for certain regimes, doing the greedy strategy is only slightly worse than the absolute perfect strategy, which is why it is popular for data selections where each data point is expensive. But you can see why random sampling is such a strong baseline as well -- if I'm sampling 10 random sensor placements, it's probably really good if it requires 100 for perfect coverage. And by the time we're in the regime of 1000 sensors, doesn't matter if they're carefully placed. So in practice a lot of times random sampling works just as well, because it matches active learning on both very small amt of data(~10 sensors), and on very large amt of data(~1000 sensors). There's a sweet spot (~100) where active learning out competes random sampling, and often times you'd just do more random sampling until you're in the over sampled regime and forget about it. 
+
+
+Now, with that being said, active learning is very much used implicitly in practice, in industry. For instance, if you have a classifier that work not so well with cloudy images, you go get some of those labelled. It is active learning, just partly human driven. Companies such as scale.ai do a lot of active learning.
+- Active learning is often evaluated in simulation where all instances take equally long to label. This does not account for the fact that hard instances for the classifier are often hard for humans as well. There was a recent JAMIA paper that did an actual user study and a cost-aware selection strategy:
+
+[https://academic.oup.com/jamia/article/26/11/1314/5531148?login=true](https://academic.oup.com/jamia/article/26/11/1314/5531148?login=true)
+
+The other practical difficulty is that once you use active learning your data is kind of wedded to your classifier, and biased in some sense. Since features and classifiers might change in the future there is some reluctance to use active learning for "real" projects where it could jeopardize things. For small projects I think it's probably a good option but then the overhead in setting it up is probably what stops people.
+- Old post but I came across this organically so maybe this will be useful.
+
+We now have an Active Learning module we named ActiveLab in our open-source [cleanlab](https://github.com/cleanlab/cleanlab) package. The [research](https://arxiv.org/abs/2301.11856) behind it is here --- it's able to beat random sampling. 
+
+It uses additional novel algorithms from our CROWDLAB module that takes into account annotator consensus and other metrics. 
+
+Super easy to use, too.
+
+    from cleanlab.multiannotator import get_active_learning_scores
+
+scores_labeled, scores_unlabeled = get_active_learning_scores(
+    multiannotator_labels, pred_probs, pred_probs_unlabeled
+)
+- I just uploaded a paper that compares Deep Batch Active Learning methods for regression on 15 large tabular data sets, see [the corresponding Reddit post](https://www.reddit.com/r/MachineLearning/comments/th1ea5/r_deep_batch_active_learning_for_regression/). Regarding your question, we found that our studied active learning methods are very effective on some data sets (sometimes needing only 25% of the data for the same RMSE) and useless on some other data sets. We found that a good indicator for how well active learning will work is the ratio of RMSE to MAE on the initial training set - if the RMSE is much larger than the MAE, then we expect active learning to be very beneficial. This is, of course, regression specific. I don't know if a similar criterion for classification can be established. I would also expect active learning to be more useful if there isn't much label noise.
+- It’s great in the industry setting when number of labels = dollars spent. Fewer labels needed for a project = higher ROI. Honestly have no idea what the consensus is in the research world. Would love to hear.
+- I think active learning is trying to solve np-hard problems. Think of a simplified version of one of these hard problems: we have a a pool of data {(x\_i, y\_i)}, where x\_i is a sample of random variable from a multimodal probability distribution and y\_i is a boolean indicate whether x\_i falls into one of the distribution's mode or not. In a general setting, we start with so few samples that we can't hope to cover most of the modes in our data set. Ideally, we want active learning to help us find those data points that are in the modes or at least close to them but it's hard to imagine even theoretically how this can be achieved for any multidimensional multimodal distribution. It's almost fair to say that in we always start almost with zero data due to the curse of dimensionality, even though we may seem to have a ton of them. If any active learning method could solve this problem, it would probably solve any np-hard problem.
+- Great insights! Thanks especially for the linked papers!
+- Does uniform sampling mean, just get data as they natural occur. Or oversample data so every class has uniform distribution.
+- For that last point, I wonder if the variability/homogeneity within a given class leads to that result?
+
+For problems with highly homogenous classes, it makes sense to sample in high uncertainty regions. For example, in OCR, all threes pretty much look the same, so when data is limited (hence active learning) it makes sense that we want to limit the number of 'certain' threes.
+
+But if we're distinguishing cats and dogs, there are a wide variety of breeds, angles, actions, etc within each class, so it makes sense that diversity might be optimal. Focusing on highly uncertain images could give you a data set with a German shepherd, a black tabby, and a ton of cat/dog butts.
+- "But in practice we are short on examples to label, not labels." 
+
+This is really interesting for me to read, thank you. I have been researching active learning in the natural language processing domain, where it is not uncommon to have lots and lots of unlabeled examples, e.g., years of a company's emails or reports.
+
+Also, at least in my setting, labeling as much as 20% of a dataset is usually infeasible (unless you are a large company and money is not an issue). For example, image you had to label 20% of the documents in a dataset consisting of a million multi-page technical documents.
+- That is the promise, but is it fulfilled? In the worst scenario, you spend development time and choose suboptimal samples to label.
+- Uniform w.r.t. the original data distribution. In other words, for imbalanced data, the optimally collected data don't seem to need to over-sample the minority class.
+
+But it just *looks* uniform. It is distinctively non-random, as it performs significantly better than random sampling. We had several visualizations in the paper that show its homogeneity, but we couldn't find any characteristics in which the collected data are markedly non-uniform.
+- That could be one reason. We tested on Fashon-MNIST, which is much more diverse than MNIST. And for the NLP datasets it's hard to quantify the class homogeneity, but they are definitely not as "easy" as MNIST.
+- It's extremely hard to measure how well AL works in practice, because you have to do 2x the work find out if your strategy for doing less work works.
+
+  
+What we end up doing in practice instead is tightening the feedback-loop from production so you're able to react quickly when something goes wrong. When something goes wrong, using something like [SEALS](https://arxiv.org/pdf/2007.00077.pdf) can help you find similar samples to make a dataset to mitigate the risk of that thing happening in the future.   
+In my domain we have more or less unlimited data and mistakes aren't *that* costly, so this might not work for everyone.
+
+I have not yet been able to create a dataset that, when deployed to production, didn't turn out to have huge blind spots for rare events.
+- OP is right. Active learning works, it just depends on the field.
+
+If you believe the state of publications reflect the state of the research in the industry, you are mistaken. There are many niche fields that have top-tier researchers conducting cutting-edge research yet publish nothing due to secrecy. One such field where active learning shines is the semiconductors, due to labeling costs. Check out last year's CVPR and have a look at the number of papers that talk about semiconductors, there are none. Yet the whole semiconductor field only consists of large companies like KLA, TSMC, Samsung, and Hynix, all of which have very large computer vision research groups. They do research but publish nothing.
+- >That is the promise, but is it fulfilled?
+
+This is an extremely hard question to answer, because you'd have to try both and see which works best. But the reason you wanted to try AL in the first place was because you have a limited labeling budget. So you'll have to do 2x the work to out if AL works for you.

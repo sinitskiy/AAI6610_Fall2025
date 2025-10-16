@@ -1,0 +1,14 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1i4fofl/can_someone_please_review_my_cv_and_provide/
+Title: Can someone please review my CV and provide feedback? Looking to improve it before applying!
+
+Content:
+
+
+Comments:
+- I think you can cut it down to 1 page
+- Move technical skill up. Preferably just after work ex.
+- Thanks for your comment. Should I make it more concise, or re-structure the text to make it fit in one page?
+- Thanks! I thought soft skills were more valued than technical
+- Both. I'd remove soft skills and your professional summary since these should be implied with your experience bullets. Make your intern experience into bullet points. And most importantly, add some quantitative impact about the projects you worked on.
+- technical skill gets the interview, soft skills get the job

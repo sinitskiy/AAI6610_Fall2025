@@ -1,0 +1,72 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ennf5t/statistician_wanting_some_clarity_on_causal/
+Title: Statistician wanting some clarity on causal inference
+
+Content:
+
+
+Hello, I’m a statistician by background. For my MS thesis in my stats program, I decided to work with an econometrician in the business school working on causal inference and double machine learning. My readings consist of reading about causal inference, the basics through the mixtape book, some of Rubin’s literature, and then diving into Victor Chernozhoukovs work in double machine learning. 
+
+I want to get some clarity into the things I’m reading about. Econometrics and causal inference is easy for me to understand because I have a background in regression from my statistics training, but the thing is the way econometricians use it is just a bit different.
+
+
+
+
+For example, let me know if my understanding of causal inference makes sense. I’ve taken a traditional design of experiments class where randomization is always done. We learn different designs, but randomization is enforced always. But I’ve noticed in the econometrics literature and causal inference, the goal is to find these experiment like conditions in observational data, or “quasi” experiments. 
+
+I want to try and get some clarity / taxonomy / structure as to what the underlying theme of these different identification strategies are doing.  Please let me know. 
+
+My understanding is causal inference is effectively a missing data problem. We want to estimate an average treatment effect, but we do so by estimating a counter factual. We can do this several ways:
+
+- we can find units with similar covariates and compare their outcomes to find a treatment effect ( exact matching)
+
+- we can predict the probability of getting a treatment using covariates, through a logistic regression model, then compare the probabilities between units with similar covariates (propensity score matching)
+
+- we can define a hard cutoff point where the units with response value above are the treatment and below are the control, for a regression for both, then compare the units around the discontinuity to estimate the treatment effect (Regression discontinuity design)
+
+- we can find a different variable which is correlated to the response, but independent of the confounded, and define this instrumental variable to explain the part of the treatment effect which is not biased from the confounding variables (instrumental variables)
+
+ 
+
+Comments:
+- So what is your question? That would help. It right now looks like a monologue.
+- >but we do so by estimating a counter factual.
+
+I wouldn't phrase it this way; some estimators are 'imputation estimators' that construct counterfactual estimates as a step in estimating treatment effects, but many don't.
+
+>
+
+we can define a hard cutoff point
+
+Just to be clear-you, the modeler, are not defining a cutoff point; this is something you identify from understanding the data generating process.  The cutoff doesn't need to be hard, but 'fuzzy' discontinuity designs require different estimators (using distance from the discontinuity as an instrumental variable, for example).  I think you've generally understood the identification strategy well enough; cutoffs are often arbitrary and we hope units near the border are similar.  Be careful for signs of manipulation near the threshold, which often happens when the subjects of interest are aware of the threshold (for example, a firm knowing new regulations kick in when they have >=50 employees).  You should be careful extrapolating causal estimates far from the threshold.
+
+>we can find a different variable which is correlated to the response, but independent of the confounded, and define this instrumental variable to explain the part of the treatment effect which is not biased from the confounding variables (instrumental variables)
+
+I think you might be a little jumbled here; your instrument(s) Z should be unrelated to the outcome Y except through its effect on the treatment value T. Instrumental variable methods only estimate the treatment effect on *compliers*, whose treatment status changes in response to the instrument.
+
+The other main 'natural experiment' strategy comes from exploiting panel data, where you observe many units over numerous time periods and can consequently control for shared shocks and fixed latent characteristics of units; some estimators in this family are synthetic controls/differences-in-differences.
+
+Note that matching, propensity score matching, or just adding control variables to a regression are all ways of trying to do the same thing: disentangle the effect of the treatment from the effect of observable variables that are related to treatment status.  They all share a common problem:  they can't address omitted variable bias coming from variables you can't-or haven't-measured.  The other methods use varying assumptions to deal with latent confounders and have some limitations on their external validity.
+- The gold standard is a randomized controlled trial. These are used in testing medical treatments. In many other scenarios though, you can’t randomly assign the treatment and then you’re left with observational studies. Economics is such a field because things like inflation and interest rates aren’t assigned randomly.
+- Your understanding of causal inference seems solid, especially with your background in statistics and econometrics. Causal inference often deals with non-randomized observational data, and the strategies you mentioned, like matching, propensity scores, and regression discontinuity are all about estimating treatment effects as if you had randomization. The key theme across these strategies is to control for confounding variables to approximate the conditions of a randomized experiment. Diving deeper into the literature, like Rubin's or Chernozhukov's work, will definitely help clarify these concepts further.
+- There are two major ways of doing causal inference. 
+
+One has to do with measuring all confounders and assuming you have measured all of them. 
+
+The second one ignores confounders but relies on other unverifiable assumptions. I.e. IV, DiD, Front door criterion, Synthetic controls, Predicted Controls.
+
+All the methods can be made useless by selection bias. So it is important to draw DAGs to figure out what kind of bias you have. I recommend Hernan and Robins book - Causal Inference What if
+- Shut the fuck up
+- I have so Many questions about data science like how to get a job , is we have to do web dep ,and industrial requirements, important skills and also wanna make a good network anny suggestion? (I'm 18M) Soo I have 3 4 years
+- Is my understanding correct of the taxonomy
+- I see. That makes sense. So in general, are these different identification strategies all based off the same assumptions? Or are there different ones based on the strategy?
+- These tools aren’t really used to study the effects of inflation or interest rates. It’s usually used in applied micro.
+- There is also causal inference from observational data, DAG and shit (judia perl line of thought). I also hate the word double machine learning. It's called doubly robust estimators. There are others as well. 
+Overall taxonomy looks okay. You can also read a bit about counterfactual machine learning by Thorsten Joachim or application of these fields in machine learning. It's a seminar course. IPS estimators doubly robust estimators slates estimators etc. recommendation as treatment is a nice paper. 
+
+Overall I don't see a problem with taxonomy Rubin or winship whatever you use. Prediction may also be a DAG not just a number. Which DAG is causally compatible with data etc.
+- While there are some border cases (e.g. Fuzzy RD and instrumental variables), the data generating processes that make these different identification strategies plausible are different.  Within a general identification strategy, there are different estimators that require different assumptions (e.g. fuzzy RDD and strict RDD come from a very similar place identification-wise, but require different estimators and measure something slightly different).
+- So what’s the connection between double ML and causal inference? Is it just doubly robust estimators?
+- It kind of has randomisation effect hence overcoming data biases. From observational data ofcourse. And randomisation cut all non causal path. From DAG point of view.
+
+For double ml, To my limited knowledge yes. At best it's a collection of estimators.

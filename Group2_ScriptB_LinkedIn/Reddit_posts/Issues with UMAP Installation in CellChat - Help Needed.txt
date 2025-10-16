@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1jf0i10/issues_with_umap_installation_in_cellchat_help/
+Title: Issues with UMAP Installation in CellChat - Help Needed
+
+Content:
+Hello everyone,
+
+Has anyone here used CellChat to analyze data? I launched a comparison of two datasets and encountered an issue when trying to use the following function:
+
+`cellchat <- netEmbedding(cellchat, type = "functional")`
+
+The error message I am receiving is as follows:
+
+"Manifold learning of the signaling networks for datasets 1 2  
+Error in runUMAP(Similarity, min\_dist = min\_dist, n\_neighbors = n\_neighbors, :  
+Cannot find UMAP, please install through pip (e.g. pip install umap-learn or reticulate::py\_install(packages = 'umap-learn'))."
+
+I believe this might be related to the fact that I am working on a virtual machine, but I have tried several solutions without success. I attempted to install the UMAP package via Conda and pip, but I wasn’t able to get it to work (though it seems to install in the environment). I also checked the issues on GitHub ([https://github.com/sqjin/CellChat/issues/167](https://github.com/sqjin/CellChat/issues/167)) and several forums, but none of the proposed solutions seem to resolve my problem.
+
+Has anyone encountered this issue before and found a solution, or can anyone suggest how I can resolve this error?
+
+Thank you in advance for your help!
+
+Comments:
+- If you specify umap.method="uwot" then it doesn't need reticulate. Always check help(function) to see what's causing your error and potential workarounds.

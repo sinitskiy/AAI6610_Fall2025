@@ -1,0 +1,143 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1dcx4wg/study_advice_maths_vs_data_science/
+Title: Study Advice: Maths vs Data Science?
+
+Content:
+I like the areas of mathematics, artificial intelligence and data science . Since I would like to dedicate myself to this, I thought about studying mathematics or studying data science degree, I ruled out computer science because I like more math.
+
+I have two bachelor options:
+
+Mathematics (with an applied orientation but quite rigorous) or Data science. Both are Licenciatre Degree (5.5-6 years degree),
+
+I leave the curricula:
+
+  
+**Mathematics**:   
+Analysis I
+
+Algebra I
+
+Analysis II
+
+Linear Algebra
+
+Advanced Calculus Workshop
+
+Advanced Calculus
+
+Numerical Methods
+
+Complex Analysis
+
+Probability and Statistics
+
+Measure Theory and Probability
+
+Introduction to Computer Science
+
+Statistics
+
+Operations Research
+
+Physics Topics
+
+Optimization
+
+Differential Equations
+
+Numerical Analysis
+
+and electives & thesis.
+
+  
+**Data Science**:  
+Algebra I
+
+Algorithms and Data Structures I
+
+Analysis I
+
+Natural Sciences elective
+
+Analysis II
+
+Algorithms and Data Structures II
+
+Data Lab
+
+Advanced Calculus
+
+Computational Linear Algebra
+
+Probability
+
+Algorithms and Data Structures III
+
+Introduction to Statistics and Data Science
+
+Introduction to Operations Research and Optimization
+
+Introduction to Continuous Modeling
+
+and a year of specialization in a specific topic (ie: artificial intelligence, so you took machine learning courses for example, but there are more specializations like statistics, data, bioinformatics, social sciences, etc) & thesis
+
+  
+After reading all this, which is better in order to work in interesting projects and top companies? which one has more empleability?  I'm a beginner in this so there are many things I don't know about this field, your opinion is very important to me :)
+
+
+
+Comments:
+- Definitely math - more options that way. I also know a lot of folks who did a joint bachelors in math and computer science, and they’ve done quite well for themselves. It’s usually only a handful of extra classes since there’s so much overlap.
+- Do math. 
+But try to borrow some electives from DS or CS (if possible). Add the below classes as electives. 
+- Data Structures and Algorithms: helps you to pass most interviews. Can also help with low-level implementation of new models 
+- Database (SQL mostly): helps you manage data processing tasks
+- ML Class: one class in ML that covers the content of ISLR. With your math background, you should be okay 
+
+Also try to get internships along the way. Goodluck. You’re on the right track.
+- Maths. Can always take data science courses on the side/self teach
+- I have a math degree and now a data science master’s. I was much better prepared in my master’s program than many of my peers because of it.
+- I second u/fishnet222 's recommendation of math + core CS/DS classes. 
+
+It is also good to think about what kind of job you want to do. CS/DS is being increasingly specialized and there are several kinds of roles. There are different strategies to optimize for each position.  
+
+There is data engineering that focuses on frameworks/architectures for collecting and managing data; ML engineering is similar but focused on building scalable machine learning research, tools, and production-ready code. A data science or computer science degree may be optimal for these kinds of roles.  Then there are roles for bioinformatics/statisticians, which would be more suitable with a math degree. There are research roles that generally require a PhD (or equivalent work experience in research). Generally, research focuses less on hardcore programming/software engineering and more on experimentation (depending on where you go). Depending on the research, the math degree may be more beneficial here.
+
+There's "data scientist," which is a loose term that everyone defines differently. Could be any of the above. Often, I see positions looking for a "jack of all trades," usually in startups or smaller academic groups. 
+
+Then there's the domain you want to apply this to. Finance, biotech, etc. I know that there is a demand for highly skilled people who can understand both biology as well as math but can also program. If you meet that niche intersection, you should be well set up to either get into a PhD program or a research-related role in industry. 
+
+
+
+I would also highly recommend internships. Do one every summer and try to find a research lab to join during the school year. Biology labs love having CS people joining, but can be tricky because if the lab doesn't have strong expertise, you may not get the best mentorhsip.
+- That math program looks pretty applied, which is a good thing. 
+
+Data Science as an undergrad major is too new and heterogeneous to be worth as much as more established majors on the job market. Employers will know what they're getting if you're a Math major. 
+
+And if you master Math, you'll be in a position to learn the basics of data science pretty easily.
+- The best is both, but if both are not possible, then take data science. You can make more money from it.
+- The fakers and imitators will say DS, because they need a video to learn and don’t understand that math is creative and not following a recipe. Math increases your IQ. It is pure intelligence, and not everyone can do it. If you can’t see the numbers in your mind and prove theorems, then don’t force yourself to go up into the higher levels of number theory and complex analysis, etc, and just stay low level
+
+But if you DO love proofs and you see the beautiful creativity and elegance behind mathematical structures, and how creative use of symmetry makes solving hard problems seem like a hot knife slicing through butter, 100% study math. If you are great at math and great at at least 1 programming language (R Julia Python Matlab), you will soar.
+- Is Algebra I what they're calling Abstract Algebra these days?
+
+I found abstract useful for thinking about the structure of math. Made the textual/symbolic language much more natural to me.
+- [removed]
+- Maths would be a better choice, imho. In any case, you would still be able to learn data science with a foundation in Mathematics. You would understand the basics of AI in more depth. And you would have more job opportunities that way
+- Learn statistics. Understand correlations, probability distributions, variograms, make sure you can interpret scatter plots. Master multivariate probability and know learn how to calculate probability from tabular events. Understand matrix operations and master basic linear algebra concepts. Finally, learn Python and learn how to extract insights from data using the libs it offers. These are the basics before thinking about doing machine learning.Learn to calculate spreads (quartiles, variance, etc.) and data location (median, mean, mode). This will help you validate your results. 
+
+I worry about people in this area who do not master basic statist concepts.
+- i majored in math but work as a data scientist :) i like that it was broad but also gave me good foundation
+- Math will always be more important. It's been studied for over 2000 years, the rest is based on mathematics. For example you can spend a huge amount of time studying CS. But soon we'll have quantum computing. Your math foundations will still be very useful. The CS may not.
+- Math degree and later Data Science Masters/phd
+- that is a hard question!
+- You could do either one but choose electives in the other or computer science or econ.
+
+The math is missing more applied component. You won't be prepared for the most basic tasks like data wrangling and data cleaning, there's no machine learning (or regression) class there. 
+
+At least in the DS you can specialize for 1 year in statistics, for instance.
+
+Specialization in AI sounds very fancy but honestly, every interview is going to be on stats and that's what you are going to be using the most. A class in AI, yes, a whole year, not sure because if a company hires someone for AI they'll hire a PhD or someone with experience.
+- Definitely data science
+- I've got a friend who did math and regretted it. He thought it was too theoretical and his advice to everyone was to do something more application-based.
+- Totally I agree.

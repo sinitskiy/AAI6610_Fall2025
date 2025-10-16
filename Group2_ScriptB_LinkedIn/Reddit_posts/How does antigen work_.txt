@@ -1,0 +1,49 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/mm07x1/how_does_antigen_work/
+Title: How does antigen work?
+
+Content:
+Hi. I am a month away from my final exam and I was solving some past papers for biology, and I stumbled up this question: "Describe the role of antibodies in defence of the body"
+
+I got most of the points in the question, but in the mark scheme, there was "Destroy pathogens", which I am not sure if it is what antibodies do. When I learned about antibodies, I learned them as 'helpers', because they bind to the complimentary antigen and neutralise them until phagocytes come and carry out phagocytosis, instead of the antibodies destroying the antigen. Is the mark scheme wrong? Or is it something true, that I just don't know?
+
+&#x200B;
+
+PS: Sorry guys, I just realised that I posted this as how antigens work, but I meant to say how antibodies work. I apologize. 
+
+Comments:
+- You’re correct, antibodies can act as helpers for phagocytes. 
+
+Antibodies also activate compliment. 
+
+Activated compliment can also help phagocytes, it can induce inflammation, and it can directly lyse the antigenic cell. 
+
+Antibodies can activate compliment, which form the membrane attack complex that destroys the antigen.
+- As the others have said, that don't directly destroy pathogens they only neutralize/mark pathogens which initiates other mechanisms that do actually destroy pathogens
+- [deleted]
+- Antigens are sugars or proteins that are present on the surface of a cell. It helps our body to recognize the cells of the body. Antibodies are the proteins that act against the cells which do not have the particular antigen on them, i.e., pathogens. 
+
+The most common examples of antigens are a antigen and b antigen which are present on the red blood cells of the body. They are the ones that determine our blood group.
+
+a antigen : a
+
+b antigen: b
+
+both antigens : ab
+
+neither of them : o
+
+\+ve or -ve is determined by whether the Rh antigen is present.
+
+so, people with a blood group have b antibody and vice versa.
+
+So, o-ve is a universal donor as it doesnt have any antigens.
+
+and ab+ve is universal recipient as it doesnt have any anti-a or anti-b
+- Perhaps the mark was for saying that the cells the antibodies attract ‘destroy pathogens’. You are correct, they don’t directly destroy pathogens generally.
+- Perhaps it means ‘inactivate’ rather than destroy. When antibodies attach to viruses, they make them too big to invade cells effectively preventing them from infecting cells.
+- agreed. Antibody can trigger the complement system, which is a destructive beast to the pathogens. Ripping them to shred.
+
+Perhaps this is this sense of "destroy" the mark scheme was referring to.
+- I agree. Not sure why this comment got a downvote.The headline is asking what is the role of an antigen but then the first sentence asks what is the role of an antibody. Antibody and antigen can be easily mixed up. It's important to be specific. Antibodies mark a pathogen for destruction through compliment, phagocytosis, etc. Antigen is a foreign substance that elicits antibody response.
+- The question was about the role of antibodies, though, not antigens.

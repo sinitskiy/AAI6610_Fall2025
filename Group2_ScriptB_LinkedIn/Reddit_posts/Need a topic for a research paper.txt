@@ -1,0 +1,13 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/15qw27q/need_a_topic_for_a_research_paper/
+Title: Need a topic for a research paper
+
+Content:
+Hello, so I am a machine learning enthusiast and currently pursuing my undergrad in computer science with data science. I wanted to know if there is any problem in the field that you think can be solved using machine learning. It can be anything, detecting something using images or videos or audio, predicting something. I know machine learning has been used a ton in the medical field but just wanted to see if there are any problems, domains or fields within biology that have been untapped. 
+I personally have a huge passion for artificial intelligence and wish to apply it for the greater good and solve real world problems. 
+Any help would be appreciated, thank you!
+
+Comments:
+- Make something to fucking replace Jupyter or any of those guys where we have to load a small script of python for setting boundaries to videos, cropping, etc. 
+
+Extra points if you can have it look for X organism crossing a set boundary line too.

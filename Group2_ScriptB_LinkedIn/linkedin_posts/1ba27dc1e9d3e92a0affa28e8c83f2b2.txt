@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/jamesheywood_on-my-annual-trek-to-the-jpm-healthcare-conference-activity-7284423704590090240-3ReU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jamie Heywood的动态
+Jamie Heywood
+
+Founder, CEO & Chairman @ Alden Scientific | Exploring Health, Disease, and Aging with AI
+
+8 个月
+
+On my annual trek to the JPM Healthcare Conference, a critical question emerges about AI and healthcare investments: Are we investing in value or just digitizing inefficiency?
+
+1. Digital Biology vs. Analog Medicine
+   • Traditional medicine operates like analog TV: fuzzy, low resolution and with limited channels.  
+   • Digital Biology—through proteins, genetics, and multi-omics—offers HD-quality insights into human health
+   • Key stat: The vast majority of molecular disease drivers remain unmeasured in current practice [Nature Medicine, 2023]
+2. Data: Quality Over Quantity
+   • Public datasets are table stakes. What's your unfair advantage?
+   • Real-world validation beats simulation every time
+   • Fact: Only 8% of AI healthcare solutions demonstrate real-world clinical impact [JAMA, 2023]
+3. From Lab to Life
+   • Care delivery requires very different tools, data, quality control, and systems integration than discovery
+   • Clinical integration demands industrial-grade infrastructure and validation
+   • Reality check: Over 70% of AI healthcare solutions fail in real-world implementation [Gartner, 2023]
+4. Value Creation vs. Status Quo
+   • Optimize outcomes, not processes
+   • Warning sign: Most healthcare AI today reinforces existing biases
+   • Evidence: 67% of current AI healthcare applications focus on administrative tasks rather than clinical outcomes [McKinsey, 2023]
+5. Future-Proofing Healthcare
+   • Healthcare represents 20% of U.S. GDP, 60% of which is waste [JAMA, 2022]
+   • Digital transformation is inevitable—just ask Kodak or Blockbuster
+   • Critical question: Are you investing in healthcare's Netflix or Blockbuster?
+
+"The future is here, it's just not evenly distributed" - William Gibson (1993)
+
+Supporting Evidence:
+1. "The Economics of Healthcare Transformation" - McKinsey Glo

@@ -1,0 +1,25 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/8yknw0/how_to_do_mcmc_sampling_on_the_posterior/
+Title: How to do MCMC sampling on the posterior predictive distribution created by Prophet Library (python)
+
+Content:
+I'm using the Prophet package in Python 3.6 to evaluate the effects of a campaign on sales, product margin, and other ecommerce variables. I am training a model on daily data from the pre-period before the intervention (holding out a subset of the data at the end before the intervention and validating that it makes good predictions on that period and has reasonably calibrated uncertainty intervals), and then using it to forecast the counterfactual of how sales would have trended without the intervention accounting for trend/seasonality/holidays. 
+
+Someone has advised me to take MCMC draws from the posterior predictive distribution of the counterfactual sales trend and cumulate the actuals against those to get a distribution of lift attributable to the campaign. However, I am completely lost as to how to do this, and need some serious help. I tried looking at pyMc library, and it sorta went over my head.
+
+If using prophet to make a prediction, how would I then get MCMC samples from the predicted distribution?
+
+Comments:
+- The R interface to prophet offers a function predictive\_samples(), which looks to do what you want.  There is probably a python equivalent.
+- http://andrewgelman.com/2017/03/01/facebooks-prophet-uses-stan/
+
+prophet is built on top of stan, I haven't used prophet in python but surely there's a specification to the function to get mcmc samples within prophet
+
+Edit: https://github.com/facebook/prophet/blob/master/docs/_docs/non-daily_data.md
+ctrl f 'mcmc'
+- I don't know about Prophet at all, but if you want to use MCMC sampling, definitely use a library (and not implement yourself). Look again into PyMC3, or check out the alternatives i.e. PyStan or Edward.   
+  
+My recommendation would be PyStan, because Stan is the oldest/most stable/most battle-tested one among these.
+- I will look into prophet, i believe R has something similar called causal impact?
+
+If you want to get into pymc3, read cam davidson's bayesian methods for hackers, a "book" of jupyter notebooks on his github, it's brilliant.

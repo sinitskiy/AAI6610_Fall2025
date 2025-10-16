@@ -1,0 +1,73 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17qql6b/importance_of_cs_fundamentals_for_data_science/
+Title: Importance of CS fundamentals for data science roles in tech
+
+Content:
+How important are computer science (CS) fundamentals to data science roles   at tech companies? And how central are they to the application  process?
+
+Tech companies like  Google, Meta, and Amazon offer public resources to help  job candidates understand work life and required skills. These resources  often  describe cross-functional teams of engineers, data scientists,  etc.  Advertised roles like "machine learning engineer" also seem to  inhabit  the gray area between software development engineer (SDE) and  data  scientist. Of course, these companies offer tech products at huge scale, and at least for SDEs, CS knowledge is a focus.
+
+However,   many data science learning materials focus on the math and techniques for analyzing data and building models, with programming as essentially a  means to those ends.
+
+As  someone  interested in exploring tech, I am wondering if formal study of  data  structures, algorithms, computational complexity, etc., should be  a  bigger part of my diet.
+
+I appreciate your answers. It's helpful to know your connection to this topic too (e.g., recruiter, team member, fellow candidate).
+
+**EDIT:** I take it for granted that folks need to know how to write maintainable code and use programing tools like git, unit tests, etc. By CS fundamentals I am thinking of concepts or design patterns that enable software to scale efficiently. Thanks for clarifying questions.
+
+**UPDATE:** Thanks for all the input. To summarize several great comments drawing from individual professional experience:
+
+> Data Scientists (DS) and ML Engineers (MLE) need different skills; generally these roles are not interchangeable. Large companies may be able to specialize so that DS focus on models and collaborate with MLE for scaling. Smaller companies may have more generalists. CS knowledge requirements may also vary by different areas of a company (e.g., product vs engineering).
+>
+> A DS with CS knowledge may collaborate better and enjoy more career mobility. However, entry level DS can generally begin with rudimentary CS knowledge and grow on the job.
+
+Couple follow-ups for those who want more:
+
+- The hiring guides I mention focus more on SDE. Seen any good ones for DS?
+- I feel like I see more MLE than DS reqs. How does demand compare?
+
+Comments:
+- Depends on the company/role, but generally they’re considered pretty darn important. They’re particularly important if you’re working in a highly collaborative environment, building models to be put into production, or if you’re dealing with really large scale and response time is important.
+
+If you’re more on the experimentation/causal inference/product analytics side of things they’re less important, but still good to know.
+- In big tech there are often dedicated MLOps and engineers who handle scaling, deployments, etc. so actually these skills can become a little less important for data scientists. I think it is most important for data scientists building production code in startups or non-tech companies who can't be as specialized because they need to handle more parts of the process. Of course, with many exceptions.
+
+I am a DS lead who writes production code and have conducted maybe 150 DS interviews for candidates of different levels and backgrounds. I am also involved with talent evaluation, mentoring, and standards settings / job descriptions at enterprise level.
+
+Now, do you really need to know algorithms and data structures in an academic CS sense? No, but being able to write code effectively as part of a team (classes and functions that others can easily understand and use, proper testing, etc.) design solutions, spec an API, lay out and document schemas and data contracts, etc. can be very valuable.
+- What are you defining as “CS fundamentals”? A DS at a company like that needs be very good at SQL and scripting in Python or R, while not necessarily needing a full SWE skillset.
+
+As for MLE roles, at big tech companies like thenones you mentioned that’s often literally a SWE role, you’re just expected to also be exceptionally good at applied Machine Learning. Other companies might play it more loose with that title, just like they might be more loose with a DS title.
+
+Source: I’m a DS in tech who commits code for ML deployments but I don’t consider myself to have all the same skills as a SWE
+- Usually entry level DS roles do not require extensive swe knowledge. However it is a great way to distinguish yourself. And it becomes more and more relevant the more mature (w.r.t. data science and Ai applications) the company is. I.e once an organisation moves use cases to production. 
+
+It is (at least in Europe) a big problem for a lot of companies that have very data scientists who are very capable in modeling and statistics bit fail with the swe practices. 
+
+So if you don’t want to stay within a pure data analyst role where you answer business intelligence questions on static datasets in notebooks or scripts, swe skills are very relevant. They are however usually not required for entry level positions.
+- On a basic level, knowing how to use git commands and building classes in your code is a great way to get started. Data Structure and Algorithm is needed for some interviews, and for DS roles they're primarily 'easy' in terms of difficulty. MLE roles however are treated like Software Engineering roles, and they anticipate robustness in terms of development skills and experience in deploying production-level code/model.
+- tracking this for reference.
+- Depends. But I use that knowledge every day as principle
+- Fundamentals are always good but can be also learnt along the way. They weren't that important, however, in interviews either for my previous role(s) or even now.
+- Its more beneficial for OP to do a formal study of Mathematics, formal as in Proof Based kind of Math and OP should know how to Prove everything Mathematical Theorem as these are skills needed for DS roles.
+- I come from a more mathematical background as well (Stats) and I definitely feel the need to catch up with the SWE concepts. I don't even work in tech industry (finance) and they don't really ask me to do the MLOps/SWE tasks but I find myself very limited in understanding the whole cycle of production which I don't like
+- It really depends if your team is on the business side or engineering side of operations. 
+
+On the business side it won't matter as much but on the engineering side they're critical.
+- Your edit really changed things. The things you mentioned are required at larger scales (for DS) and for MLEs. Basically if you're dealing with something that starts to get slow, you need someone who can fix it, but it doesn't need to be everyone on the team.
+- Some are important, some are less important. If you work at the actual model implementation and tuning somewhere in Google it is EXTREMELY important. If you're doing simple machine learning models and dashboarding for mid size orgs it isn't all that important and knowledge of statistics, basic programming to clean / parse and SQL / databases and dashboards will get you very far.
+- Computer science (CS) fundamentals are increasingly important in data science roles, especially at large tech companies like Google, Meta, and Amazon. While the focus of data science is often on mathematics and data analysis techniques, the ability to understand and apply CS fundamentals like data structures, algorithms, and computational complexity is valuable. This is particularly true as the lines between software development engineer (SDE) and data scientist roles become more blurred, especially in roles like machine learning engineer (MLE) that require a blend of both skill sets.  
+  
+For job applications, having a strong foundation in CS can improve collaboration with engineering teams and enhance career mobility within tech companies. While entry-level data scientists can start with basic CS knowledge and learn more on the job, possessing these skills from the outset can be a significant advantage.  
+  
+In terms of hiring guides, many are more focused on SDE roles, and there is a noted increase in demand for MLE positions compared to traditional data scientist roles. This shift highlights the growing importance of CS knowledge in the field of data science.
+- The second one is way more fun, but that’s just my personal bias.
+- Noob question: What are the recommended knowledge, experience, and skillset for the experimentation/causal inference/product analytics side?
+- Nope, its more beneficial for OP to do a formal study of Mathematics, formal as in Proof Based kind of Math and OP should know how to Prove everything Mathematical Theorem as these are skills needed for DS roles.
+- Use subscribe option at the top
+- 100% agree. I find the SWE type work to be really boring. I could never be a DE and being a MLE isn’t incredibly appealing either.
+- In terms of hard skills - some basic statistics and hypothesis testing should get you relatively far with experimentation. For product analytics some way of getting and transforming the data (probably SQL), some way of visualising/dashboarding (Tableau/Power BI) are the main things. 
+
+Soft skills are more learned through experience - the main ones I can think of are understanding business needs, translating those needs into questions we can answer with data, and communicating effectively throughout the process, but especially with results. 
+
+I guess another thing is figuring out the right type of analysis/metric for a particular problem, again think that comes with experience, but for sure you can also have an intuition for it.

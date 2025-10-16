@@ -1,0 +1,70 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c6gdhi/you_know_gen_ai_you_know_deep_learning/
+Title: You know Gen AI != You know Deep Learning
+
+Content:
+Hi,
+
+I'm a student learning data science. 
+
+I see few of my mates, making project with generative AI tools like langchain or open AI API etc
+
+But this is what I think, and **I want to know if what I think is correct or not.**
+
+Knowing how to use generative AI frameworks does not validate that you know deep learning or even basic machine learning.
+
+I think building projects with generative AI frameworks only validate that you know how to code by reading some docs.  I think anyone who knows basic programming can make an "AI summarizer" or "AI Chatbot" using langchain.
+
+I don't feel that making such projects can make me standout in any way for machine learning jobs.
+
+I would rather make a basic data science project which at least tries to solve some real business problem.
+
+Comments:
+- that's correct, there really isn't much more to it. If people want those tools, they don't need someone who can work with custom layers in TF or Pytorch, but they may be prone to some pitfalls because they don't understand the technology beyond the surface.
+- 'validate that you know how to code by reading some doc' is a real skill though and you can defnitely provide value without knowing how the thing was made. I'm not invalidating your ideas, they are good ones but by the same token we don't understand a lot of things yet use them all the time.
+
+There is obviously value in deeply understanding things and there is also value in keeping up with trends, they're not disjoint activities.
+- I know how to drive a car very well. I know nothing about how to build a car.
+- I can’t build a transformer for fuckin shit but I can implement a rag that a company will pay for.
+- using and building applications are 2 different things.
+- I see three levels with AI:  
+1) You can apply pre-trained models use RAG etc., and build apps with those models.  
+2) You can train models from scratch, and fine-tune pre-existing models.  
+3) You are inventing new architectures, algorithms or improvements on pre-existing ones for deep learning.
+- Don't let the hype discourage you, it's a great time to be creative and build things with gen AI. Every enterprise is integrating chatbots with RAG into their infrastructure as we speak. Fewer people than you think are getting their hands dirty and actually contributing to the transformation.
+
+If you're a student, you should be automating everything under the sun for fun. Build a bot to check your homework. Build one to convert your written notes to latex. Build a bot that performs causal inference (hint: feed it the feature names and types, then have it write out the regression formula and interpret the results).
+
+TL;DR: Don't sit this one out. I've seen a few tech waves come and go and this one is by far the most fun
+- I have been calling it AI Engineering instead of Datascience. Since you are designing and building applications that use AI but aren't doing any research.
+Not sure if I'm correct either but that's what's on my resume.
+- you're a tool user, all you know is how to use an UI
+- Gen AI == API : True
+- You're mentioning something important. Just using tools like Langchain or OpenAI API doesn't mean you truly get machine learning. It's like following a recipe without knowing why the ingredients work. Real projects that solve problems show you understand what you're doing. in real life, It's about proving you can make a difference, not just follow instructions.
+- I say this in the most constructive way possible: no one cares. 
+
+Your opinion is valid, but that doesn’t mean it matters to anyone. In school you can be competitive to feel good about your class rank, but in the real world there’s isn’t a competition or any gates that need to be kept. 
+
+This kind of “gate keeping” thinking will only hurt you in your interviews, because you’re going to come off as a prick.
+- >Knowing how to use generative AI frameworks does not validate that you know deep learning or even basic machine learning. I think building projects with generative AI frameworks only validate that you know how to code by reading some docs
+
+True - however, right now the high demand is for people who can build projects with gen AI frameworks. And yes, it's 99% coding and 1% DS, but that is what is in his demand (and comparatively low supply) right now.
+
+>I think anyone who knows basic programming can make an "AI summarizer" or "AI Chatbot" using langchain.
+
+>I don't feel that making such projects can make me standout in any way for machine learning jobs.
+
+>I would rather make a basic data science project which at least tries to solve some real business problem.
+
+I think you're building a false dichotomy here, i.e., the options are not "AI Chatbot" and "basic data science project for real business problems". You can build a gen AI application that is actually interesting and solves a valid use case - that is not an issue with Gen AI and 100% an issue with people who pick bad projects. It's no different than the 100,000s of "Titanic Kaggle Dataset" projects  that we've been seeing fresh grads putting on their github repo.
+- i dont think deep learning has anything to do with langchain or ai frameworks??  
+ML/DL is totally different. For instance, You could even use basic python with standard libraries, make an API call and do whatever functionality with just GPT. for eg: OCR and content categorisation for a start.
+
+Whether this is basic/not is upto your discretion as it depends but its just different from ML/DL
+- wait, how do you learn to code w/o reading docs? 
+does the syntax just come to you?
+- Even knowing DL doesn’t mean you understand and know DL.
+- Gen ai is more like software engineering
+- Check out this article https://www.latent.space/p/ai-engineer
+- The data science (although TBH, a lot of this becomes MLOps and SWE) comes in managing the quality of said chatbot.
+- If you can’t backprop ReLU by hand you probably don’t know DL

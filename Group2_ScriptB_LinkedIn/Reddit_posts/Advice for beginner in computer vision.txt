@@ -1,0 +1,15 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mo4gcy/advice_for_beginner_in_computer_vision/
+Title: Advice for beginner in computer vision
+
+Content:
+Hey everyone, 
+
+I am a 3rd computer science student. I have completed learning basic ML concepts from the Machine learning specialization course on coursera  Andrew ng after which I practiced whatever I learned on couple of datasets on kaggle. Along with this I want to get into the field of computer vision. I would really appreciate it if someone could point me towards the right resources to learn stuff and also a proper roadmap to begin with.
+
+Thank you in advance.
+
+ 
+
+Comments:
+- Im in the same boat as you. I completed that courier course and am working on THE CS50 AI course from Harvard now.

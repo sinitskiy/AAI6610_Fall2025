@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/amirabbas-asadi_bayesian-neural-network-is-not-just-about-activity-7335616086488285185-n_JL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Amirabbas Asadi
+
+Mathematics Student | Probabilistic ML | RL | High-Performance Scientific Computing
+
+4 个月  已编辑
+
+Bayesian Neural Network is not just about uncertainty over weights. Not only weights, the type of activation functions, number of layers, their hidden dimension and other factors defining the architecture of network can also be treated as random variables. Yet the most famous variant captures only the uncertainty of weights to make inference easier.
+For larger neural networks, you don't have to take the uncertainty of all weights into account, you can perform inference over a subset of weights and train the rest of them as deterministic parameters using usual optimizers.
+
+In the video you can see trajectories of Hamiltonian Monte Carlo drawing samples from the posterior of a BNN for a classification problem. On the left you can see the neural network with current HMC position and on the right some of the posterior marginals.
+
+…展开
+119
+3 条评论
+赞
+评论
+分享
+Deep Dives with Iman
+
+4 个月
+
+When you are close to the data points the decisions are very stable despite all the fluctuations. When you are slightly off, the outcomes are all over the place at the edge but stable in between inner islands. As expected. It is very good for pedagogical purposes and maybe active sampling of new data points to minimize uncertainty. From a practical perspective, shouldn't we in principle be able to reconstruct such a predictable behaviour much cheaper to a good approximation and at much lower cost?
+
+赞
+回复
+1 次回应
+📊 Alastair Muir, PhD, BSc, BEd, MBB
+
+Data Science Consultant | @alastairmuir.bsky.social | Risk Analysis and Optimization | Causal Inference
+
+4 个月
+
+Thanks for sharing, Amirabbas. This is what I am planning to combine deterministic relationships with NN functions
+
+赞
+回复
+1 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+24,904 位关注者
+
+526 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 202

@@ -1,0 +1,19 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1g4tj7q/phd_opportunity_deep_learning_in_bioinformatics/
+Title: PhD Opportunity: Deep Learning in Bioinformatics (Mass Spectrometry & Enzyme Research)
+
+Content:
+Hi,
+
+We’re offering an exciting PhD position for someone passionate about deep learning, especially in its application to bioinformatics. Our research group focuses on mass spectrometry, metabolomics, and enzymes, and we’re looking for someone with strong machine learning skills. No worries if your chemistry or biology background isn’t strong; our team includes experts who can support you in these areas.
+
+The project is part of the European MSCA Doctoral Network ModBioTerp and involves designing deep learning models to predict enzyme activity. This has farreaching applications in drug development and industrial biochemistry. If you’re interested in applying your ML expertise to bioinformatics and mass spectrometry, this could be a great fit for you!
+
+PhD position details and application link:
+https://www.uochb.cz/en/open-positions/293/modeling-the-mechanisms-of-terpene-biosynthesis-using-deep-learning
+
+If you’re interested or have any questions, feel free to reach out. We believe this is a fantastic opportunity for anyone eager to apply their ML skills to an exciting, real world challenge in bioinformatics!
+
+Thanks for your time and consideration!
+
+Comments:

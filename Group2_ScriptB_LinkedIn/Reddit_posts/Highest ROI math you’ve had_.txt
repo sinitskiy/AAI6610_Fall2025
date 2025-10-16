@@ -1,0 +1,89 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1m8jaeh/highest_roi_math_youve_had/
+Title: Highest ROI math you’ve had?
+
+Content:
+Curious if there is a type of math / project that has saved or generated tons of money for your company. For example, I used Bayesian inference to figure out what insurance policy we should buy. I would consider this my highest ROI project. 
+
+Machine Learning so far seems to promise a lot but delivers quite little.
+
+Causal inference is starting to pick up the speed. 
+
+Comments:
+- I've spoken about it before, but i redid major parts of a monetization model on a mobile game making close to half a billion USD a year in revenue. My conservative guess on the impact would be 10s of millions over time.
+
+I did all of it with basic SQL and excel. Don't let people trick you into using fancy tools when what you really need to do is understand the problem.
+- Swarm optimization for routing
+- Made a market basket analysis tool in VBA and SQL at my first job that SAS was trying to sell them a worse version of for $500,000.
+
+
+Got a promotion and like a $10,000 raise out of it. It was early in my career though so you take what you get.
+- Bayesian multi-armed bandits for a geo-pricing strategy. Made a lot of money over the prior strategy and eliminated a lot of associated costs.
+- Learned basic OR on my own. Using LP for optimization after identify statistically significant variable using stand regression. It was simple enough but able to optimize some process once we identified what was really important.
+- Nothing beats linear/logistic regression. 
+
+The key is finding the right variables!
+- Top 3 brand in its industry. The company is incredibly political measning every VP has their own flag, zero collaboration even when they desperately need it. Their only competency is product. Everything else? Nah.
+
+Data maturity is low, but I built something that completely stands out and many have noticed.
+I focus on digital, but measuring incremental impact means I also need to track upper funnel stuff like TV. When I asked for that spend data, I literally got threatened but found the totals on a P&L. Turnes out they burn 9 figures yearly on unmeasured upper funnel media. So I said fuck it and encoded upper funnel channels as binary variables (on/off) the weeks they were on to estimate impact anyway. When I came back with results, they thought it was black magic that I could measure something they refused to share data on. Got threatened again (this never even reached that VP). Meanwhile other VPs are spouting bullshit like "data is in our DNA" which couldn't be further from reality. I was the first person to actually measure this stuff with a proper media mix model I built over years. Great impact for what we can measure, but the upper funnel situation is a ticking time bomb.
+
+But the next story is absolutely insane.
+
+Same company, I'm on the European team (brand is US-based). Few months ago I plotted return rates by size, compared US vs EU. Something was massively fucked up for one gender (their core audience). Did a deep dive comparing to other brands, ran tests but honestly just looking at that data alone should have triggered alarms for anyone. This could have been just an Excel pivot by size/gender/region.
+Long story short turns out they completely messed up the sizing translation, thus misleading customers. 
+Think about the impact on ecom how many ordered the wrong size...
+This bomb did explod last week. My incremental impact or ROI is high 8 figures annually. But the production changes and supply chain that that it impacts is 10 figures.
+
+My boss wants to promote me to a director in January but I am not sure if I should leave immediately after or stay and build a team that might change the brand in the long run.
+- most optimization or operation research related to logistics would save or generate lots of money. Or math in high frequency trading algo
+- I focus more on data infrastructure than data science. I save millions a year because at least twice a year I get approached with an ask from someone that thinks the feature they want will be cheap but they find it costs millions of dollars. So it never (….well rarely…) gets built.
+- *Slaps the hood of basic moving averages and seasonality* You can solve so many business problems with this bad boy.
+
+Had someone suggest we invest in a $4MM piece of software for forecasting.  I built a seasonal moving average model in Excel that hit our accuracy targets in a little over a week.    Moved it over to Python and been using it in production since the beginning of the year.  Needless to say, that person was let go from the company and I was promoted.  
+
+It’s been my experience that 90% of business problems can be solved with undergraduate level math and statistics.  The real value is understanding when and where to apply it.  Seen way too many people suggest over complicated solutions with a bunch of buzzwords that have marginally better ROI than some back of the napkin math.
+- Good ROI applying machine learning to estimate probability of health program enrollment, enabling targeted outreach to a small subset of patients most likely to enroll. Also good ROI applying quasi-experimental methods to create a well-matched comparison group for measuring program outcomes. Underlying math includes Mahalanobis distance (similarity scoring), propensity scoring (logistic regression), and a few different machine learning models to estimate risk scores (probabilities). Hope that helps
+- Operations Research/Mathematical Optimization.
+- I put a 3 standard deviation line on a candlestick chart and made $10k in like 1.5 hours. 
+
+
+Nothing sexy, all in my pocket. 
+
+
+Commercial data science is starting to become like software engineering in the sense of jira, standup, using standard processes and methodologies, lack of novelty, every stakeholder wants the data to support their perspecrive and not their perspecrive to follow the data, etc. 
+
+
+Even in very autonomous ML / AI engineer positions, I had thr ability to do what made sense but the problems I was asked to solve were not problems I wanted to spend the next 20 years solving. 
+
+
+
+
+
+
+Nothing is better than sitting in my boxers trading and bulding trading algos where I make $200 to $5k on any given day. 
+
+
+I've had weeks where I made more than my monthly salary and I work so much less now too.
+- Martingales and Stochastic Processes to understand Adversarial bandits for fraud detection
+- What was the ROI?
+- Had a ton of success with high impact projects using regression
+- High ROI as a metric of personal achievement isn’t my favorite because it’s mostly a function of firm revenue. Doubling revenue at a startup is harder and more meaningful for the business than increasing click through on Amazon by 0.1%, but guess which one has the higher $ figure attached?
+- Found out we could double our fee with only 2% fewer conversions
+- I would agree. Most of my high ROI projects have been lighter on ML or DL.
+
+Some of my higher impact projects:
+
+1, Helping translate stakeholders' complaints into quantifiable terms to help organize them (literally just defining a metric based on a mix of linear and nonlinear weights applied to different factors)
+
+2. Basic autoregressive time series (not even ARIMA) error model to augment a classifier with errors correlated in time
+
+3. Quantifying uncertainty and the range of outcomes equally well supported by a model a business team had been taking as gospel for years.
+
+4. Use of basic stats, just in sequence, to distinguish between stochastic noise and actual signs of model degredation. 
+
+5. One super big model that combined deep learning, ML, and traditional statistical modelling on a decomposed modeling problem that resisted just throwing a neural net at as a whole, we had strong priors for what certain aspects of the problem should look like, and explainability (actual explainability, not shap values) was key to getting buy-in from leadership as this was in a traditioal industry space.
+
+
+Only one of them really used a lot of ML. Half the time when I've been asked for a model it wouldn't solve the actual problem and is a complete pipedream anyway. Even as models have become more sophisticated, most of the areas where actual value could be drawn from throwing a scikit-learn or simple pyTorch solution at it were solved years ago.
+- Addition. We add up our expenses and compare them to the budget. Massive ROI!

@@ -1,0 +1,38 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gl1p1r/data_science_job_prep_doubt/
+Title: Data Science Job Prep Doubt
+
+Content:
+Hello,
+I am a data scientist at a mid size startup and have been working there since 2021. Currently I work predominantly in data and predective analytics. Mostly it is very niche. I want to switch jobs and move to machine learning engineer position in another company. As holiday slowdown is going to start soon, what should be my approach in the upcoming months to prepare me better when(& if) hiring starts say in Jan 2025. Any advice I recieve is appreciated. Also, how to get interview calls?
+PS:
+
+Education: BS in CS, MS in DS
+YoE: 4
+Visa: H1B
+Preferred Location: Remote(finacè has to go to office everyday, she is not in IT & has a great job).
+Thank You
+
+
+
+Comments:
+- Don’t have any advice, but good luck, esp given the H1B!
+- Don't think of ML engineering as almost DS.  Think of it as almost data engineering.  Or if there aren't any data engineers at your startup, think of it as software engineering.
+
+Docker, FastAPI, Spark, Kubernetes, Arrow... It's all about reliability at scale.  The fact the data it's processing is predictions is almost irrelevant.   
+
+Focusing on differences... The logic tends to be more complicated, with things like feature stores pretty rare outside ML.  You also need to move the compute to the data, which is one of those best practices a lot of software engineers skip.  
+
+Lastly it helps to know a little ML so you can interact better with the DS on what can go wrong.  The kind of guard rails you put into ML are quite different.
+- Is there a way you can start to reach out to the more ML heavy colleagues at your company and try to get on some projects with them? That could be a good start if you don't have any of that experience under your belt. 
+
+In terms of interview prep, try some things like r/MLQuestions or google search github repos with data science and ml questions. There are some github repos that have an organized structure of how to learn the core concepts for ML. Good luck!
+- Where do I start and how do I prepare for interviews?
+Any advice if I want to stay into DS but more geared towards algorithms?
+- My company is not ML heavy. Its basically predictive modeling based on data analytics which I am currently working on. That is why I am trying to branch out. Thank You for the advice. I will look for github repos.
+- The first thing an interview is going to ask for is experience.  So, you need to work out a way to get some.
+
+Staying in DS would be the same thing - what algorithm design experience have you had recently?  
+
+Basically you need to be doing a role to apply for it.
+- Gotcha. If I think of anything else I'll let you know

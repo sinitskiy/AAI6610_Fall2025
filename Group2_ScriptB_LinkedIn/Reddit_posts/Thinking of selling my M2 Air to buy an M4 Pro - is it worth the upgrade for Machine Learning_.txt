@@ -1,0 +1,41 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1j5hrrn/thinking_of_selling_my_m2_air_to_buy_an_m4_pro_is/
+Title: Thinking of selling my M2 Air to buy an M4 Pro - is it worth the upgrade for Machine Learning?
+
+Content:
+Hey everybody, I need some advice. I’m a 3rd year CS undergrad and currently have a MacBook M2 Air with 16GB RAM and 256GB storage. I bought it in 2022 for about $2000 CAD, but I’ve been running into issues. When I open multiple apps like Docker, Ollama, PyCharm, and run training models, the laptop quickly runs out of RAM and gets heat up and starts swapping, which isn’t great for the SSD.
+
+I’m leaning towards selling it to upgrade to an M4 Pro, especially for machine learning and data science tasks. However, Apple’s trade-in value is only around $585 CAD, and I just recently had the motherboard, chassis, and display replaced (everything except the battery), so my laptop is basically new in most parts. I was planning to sell it on Facebook Marketplace, but I’m not sure what price I should target now that the M4 has been released.
+
+On the flip side, I’ve also considered keeping the laptop and using a Google Colab subscription for ML work. But running many applications still leads to heavy swap usage, which could harm the SSD in the long run. Given that I just renewed some parts, it might be the best time to sell for a higher resale value.
+
+If I decide to upgrade to the M4, I’m thinking of getting a model with at least 24GB RAM and a 10-core CPU and GPU combination. Do you guys think that would be enough to future-proof it? What are your thoughts on selling now versus sticking with the current setup and using cloud resources?
+
+Comments:
+- Dedicated desktops are usually way better in regards to thermals and a lot better value for money. If thermals
+Are the biggest concern I’d look at desktop boxes and do a custom build for best bang for your buck.
+- If you like using a laptop, a M4 Max would be quite suited (higher memory bandwidth than the M4 Pro). Other solution would be to setup a home server, which would give more modularity. For 2500 CAD you will have a home server capable of running some decent models. However, using a subscription service such as Google Collab is probably less expensive, even in the long run compared to local solutions, but you'll depend on them.
+- You’re in school. You can most likely use university resources if you’re really running into computing issues. Your school probably has some VMs you can log into.
+- If you’re in school also check out the studient tier resources Azure provides
+- Use google colab or create new google accounts to use Google Cloud and the 300 credit they give you. You don't need a new computer for homeworks etc
+- [removed]
+- as in windows/linux desktop, or as in mac mini?
+- Seconding this. This is how I got through grad school with just a MacBook Air.
+- Thanks for the tip, I’ll reach out to the IT team at my Uni. But the reason that I am thinking to switch now is that, as I mentioned above, I just got almost all the parts of my mac replaced, so selling it rn, would likely give me more value, given that its M2 air and I bought it in 2022.
+- MacRumors keeps a buying guide based on historic product updates for this reason: https://buyersguide.macrumors.com/#mac
+- Mid tower or full tower case with good ventilation will have an easier time dissipating heat. I personally use a fractal torrent mid tower. The Mac mini is very small and compact so it runs into a lot of the same issues with a MacBook—small, compact, hardware trade offs to run into a small form factor and dissipate heat.
+
+It’s just physics basically when you’re dealing with bigger space. There’s a reason why lots of ml aficionados on a budget are grabbing 90 series nvidia cards every cycle (and yes these are budget compared to what a scientific or higher grade nvidia card runs)
+- Desktop.
+
+The newest Mac Studio with max RAM *might* get you in performance range of a single 3090. The Mac Studio would run you $9500 while the 3090 can be picked up for under $1000 on the secondary market.
+
+The Studio does have the advantage of being able to run larger, non-quantized models though.
+- I think that would be kill for what is my use right now. And also would be out of the budget. As a Undergrad student, I don’t run any big ml models or so, it just that I need a mac for projects and mid-level ml work, like training SAM2(Meta) for image segmentation and stuff. Also I want something that I could carry to work and Uni. Thus I am leaning towards Mac M4 Pro chip, 14 CPU, 20 GPU and 24 RAM.
+- I am looking for more flexible in able to carry it. As I would need it to carry to Uni and work. Thus any desktop setup would be out of the option.
+- > And also would be out of the budget
+
+How is a $2500 laptop cheaper than a desktop computer?
+- I'd just stick with your current laptop and use cloud resources, learn to spin up some AWS resources if Colab isn't enough. You're in university anyways so I doubt you really need that much power.
+
+I'm currently enrolled in a MSCS program specializing in ML. I'm using a Mac Mini from 2018 with an i3, I haven't had any issues.

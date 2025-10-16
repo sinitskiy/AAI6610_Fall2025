@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1jz0qlk/d_outlier_analysis_in_machine_learning/
+Title: [D] Outlier analysis in machine learning
+
+Content:
+I trained multiple ML models and noticed that certain samples consistently yield high prediction errors. I’d like to investigate why these samples are harder to predict - whether due to inherent noise, data quality issues, or model limitations.
+
+Does it make sense to focus on samples with high-error as outliers, or would other methods (e.g., uncertainty estimation with Gaussian Processes) be more appropriate?
+
+Comments:
+- Always consider KL Divergence and nothing will surprise you anymore.
+- What models have you considered? and what data?
+- I tried shallow ml models like ridge, lasso regression along with tree based models like random forest and xgboost. I used 2 small data sets, which have 150 and 350 samples with a bit vector lenght of 2048 as features.

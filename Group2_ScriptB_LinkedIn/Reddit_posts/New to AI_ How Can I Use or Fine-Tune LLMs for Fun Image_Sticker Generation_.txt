@@ -1,0 +1,24 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1hot5y4/new_to_ai_how_can_i_use_or_finetune_llms_for_fun/
+Title: New to AI: How Can I Use or Fine-Tune LLMs for Fun Image/Sticker Generation?
+
+Content:
+Hi everyone,
+
+I’m really curious about AI and machine learning and want to create a simple project where users can upload their images to generate fun vector stickers based on them.
+
+I’m unsure where to start and would appreciate some guidance. Specifically:
+
+1. Which AI models would be best suited for this task? I’ve heard of models like DALL·E, Stable Diffusion, Davinci, Flux, Dream, and Runway, but I’m unsure which would yield the best results while being cost-effective.
+2. Do I need to train or fine-tune these models for my project? If so, what cloud infrastructure would you recommend for a budget-friendly solution?
+
+If anyone has experience with similar projects, I’d love to hear your insights or suggestions!
+
+Thanks in advance!
+
+Comments:
+- r/learnmachinelearning is probably a better place to ask
+- It's like someone saying "I'm very interested in farming, let's open up a fresh vegetable supply factory". 
+
+Dude, you can't jump to the end. There is at least a 2 year way between you and the thing you want to do even with proper background.
+- okay

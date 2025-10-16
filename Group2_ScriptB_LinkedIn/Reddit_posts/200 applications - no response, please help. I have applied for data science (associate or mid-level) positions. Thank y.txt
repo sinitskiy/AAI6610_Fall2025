@@ -1,0 +1,93 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hyploh/200_applications_no_response_please_help_i_have/
+Title: 200 applications - no response, please help. I have applied for data science (associate or mid-level) positions. Thank you 
+
+Content:
+
+
+Comments:
+- I've recently applied for 4 companies, got interviewed for all 4 and cracked all of them. Here are a few pointers for you. 
+
+1. Mention your skill sets below your summary
+2. Make your metrics and achievements bold
+3. Try to put in more Data sciennce projects
+4. Make sure the specific keywords in the job description is present in your resume.
+5. Check your resume score. Your resume should have a parse rate of above 90% and and ATS score of at least 50%
+
+Hope that helps.
+- Well, to be honest this just isn't a strong resume.  I've hired many data scientists, analysts and engineers over the years.  The first thing that stands out to me is that you don't have formal education in stats or modeling. That's not necessarily a problem, but I'm not seeing any explanation for the transition from front end to ML.  This reads as very junior to me and likely someone that is going to need guidance on things like model selection, evaluation and interpretation.  
+
+Thats not to say any of that is true, but as a hiring manager you get 100s of these and you're really just glancing through looking for something to stand out.  
+
+The second thing that makes the resume weak is you arent focusing enough on impact. I'd rather see you detail one super high impact project and what skills that entailed than the generic stuff about your job role.  This is especially important to me in a data science role.  I expect you to understand metrics and how to communicate results. You do a little, but nothing that made me say "oooo", i want to hear about this problem and how it was solved.
+
+Edit- as an example the first bullet on developing a predictive model that improved predictions by 25%.  You have a metric but this reads like something anyone could look up.  I want to be able to ask you questions about this but it's too generic.  What type of predictive model did you develop?  25% improvement to what end?  Who needed this info and why?.   You could say something like evaluated several regression models against dataset on patient frailty.  Improved doctors ability to anticipate falls by 25% across xx patients and recieced blah blah award for the work.  I dont know the wording obviously, but something that is specific enough that I can ask questions about it.
+- “Post graduation…” 
+
+Just say you have a graduate certificate
+- Nuke the professional summary, it's useless, no one cares. Your last 2 experiences are not relevant, remove them and add more details into your DS projects. Also consider adding a section of any data science projects u have done. There's also no such thing as a "data scientist/analyst". Pick one title, preferably the one ur contract mentions
+- CV looks very generic, all over the place: data analyst, data scientist, machine learning engineer. And there is no way you can be great in all. Also leaves me confused what problem you can actually help me solve.
+
+So, try to match your cv to the role you are applying. For example if data analyst, then querying the data, visualization, and business acumen. Less is more. Build the case why you are good for the job, not why you are good in everything
+- Since you don’t have 10+ YOE, your resume should really only be one page. I’d consider cutting down the summary section or eliminating it entirely (since you’re not transitioning into a new type of role nor a new grad) and cut down on the skills section too, it really should only be about 4 bullets max. One possibility is keeping the skills section as is for a “master” resume and modifying it for each application to have the most relevant ones present
+- Some nitpicks:  
+
+When mentioning metrics, you need to put them into context (I.e. magnitude of impact) and choose the most appropriate ones. The reason being, the best people at hiding insignificant results and making them look good to non technical stakeholders by cherry picking metrics are ironically data scientists. Accuracy is not a great metric here. For example, readmission is a rare event and accuracy isn’t great for reporting performance in the setting of class imbalance. The way it’s written in your resume tells me that you still need to work on how to interpret and report your results. 
+
+Were the 70k records pulled from a DB? Did you need to do the data engineering with the initial number of records? (usually in the 100s of thousands for a decent health system to millions in the case of EHR providers) mention this number if you have it too, along with the DEng methods. It’s important to know if you had to join all of the tables and do the queries for the medical records. Anyone who’s done this knows its a huge and tedious task.
+
+I’m not sure what you mean by “positively impacting 95k records.” 
+
+The improving “operational efficiency” bullet sounds like fluff unless you say what it actually impacted and how.
+
+There are inconsistencies in your objective and what you’ve written in your bullets, that if I were reading this would give me pause.
+
+70k medical records is not a “large scale dataset.” Its on the smaller end of medical record datasets. “Deploying advanced ML models” is not helping either. The only ML models I see explicitly mentioned are SVM and logistic regression. These are fine to use, but I would be careful when combining this bit of information with “advanced.” I don’t see what you did to deploy models. Are you using a registry? Inference server? This needs to be mentioned too.
+- As I can see in the experience section you have mentioned the results but not the things you have used to achieve it.
+Have you scored your resume ? If yes what's the score
+- You have a misspelling in the first bullet point in your first experience section (accruacy).  When someone in a high-level technical position doesn't run their resume through at least a basic spell check, that's a red flag.
+
+Also, you're aiming for a senior role with less than three years of experience.  I have about a decade of experience in the data world and I see people with more experience than me applying for senior data roles.
+- As a DS who has been offered 20+ jobs over the last 3 years due to OE, my biggest takeaway is that how you find/pick the openings you apply to is the biggest difference maker. You’re going to have a bad time applying to listings on any sites like Indeed, LinkedIn, or any other aggregator. You will have much better luck finding companies that hire a lot of DS or similar type positions in your geographical area and then going to their careers page and finding the openings you want to apply to. Also, try to avoid jobs that are just “Remote”. Let’s say you live in Arizona…find jobs that are “Arizona Remote” or even better “Phoenix Remote”. To find companies to apply to, you can google or ChatGPT things like “Top Employers in Arizona” or “Top Tech Employers in Arizona”. I have also found resources online that provide me with businesses that have a big presence in my area. Usually your nearest metro city or state will have an Economic Partnership website or something similar that has this type of information/data. When you get interviews with a company, save the company name and any relevant notes in an excel doc so that you can reflect on companies that were previously responsive, making your job search much easier when you look for your next job.
+- Honestly you lost me in the first 4 words. You may be very competent but everyone claims to be and few are; better to show it than state it. I would lose the entire summary and bring your skills/tools to the top (grouped by area -programming, DS, PM, etc. )
+
+I also generally find the functional bullets you've listed to lack in sufficient scope or business relevance in the detail you've given. I need to know why these items were important and how quickly you executed on them.
+- Being a current data science student with literally nothing on my resume at the moment coding or data science related and seeing this, fills me with dread.
+
+If a resume like this can’t find a job idk how the hell i’m going to find one post graduation. 
+
+My curriculum is a really strong base for developing into a great data scientist, and I’m receiving a Bachelor’s IN data science but I’m still worried. 
+
+What country are you in OP? Do you speak the native language there? Have you followed up after applying?
+- Lose the professional summary and the buzzwords key skill section at the end. This should be one page.
+
+Your bullet points need more context - it’s all high level. And it’s not done in a way that translates to business value.
+
+ I have seen resumes like this and interviewed some and the prevailing takeaway is “probably would be fine with handholding because they’ve never been the one running the show”
+
+Also if you need a visa that’s probably not happening in the US right now
+- I hire healthcare data scientists and this type of resume is a dime a dozen. You need to differentiate in some way. Building a few xgboost models on structured ehr data is not gonna cut it. I promise chatgpt can do something similar. If you can, either show strategic promise by describing how you influenced change at a business and or have a killer GitHub project then show those 
+
+You appear to be trying to show off how much data science you know but instead you should show how valuable you are to a business. Completely rewrite with a different audience in mind.
+- “Highly skilled” and “3+ years of experience” don’t really work together. Let your project outcomes show your skill
+- I would get rid of the summary and maybe a cover letter explain how you went from front end to data science without going to school or what not... big leap tbh
+- Some really great advice here so far. I’ll add that you should think about your verb choice a bit more in some places. If you have a senior title, you should be leading, steering and managing. If you are an effective IC you should be delivering, launching, and owning. 
+
+Also make sure the key result and strongest verb is emphasized right up front. E.g. “Reduced code complexity 25% by redesigning a website” is much stronger than “Redesigned a website to reduce code complexity 25%”
+- I'll just say, if you're applying to remote jobs only 200 applications with no response wouldn't be surprising.
+
+You're competing with Data Scientists at FAANG and potentially the world.
+- Make sure you have an up to date, we'll documented github repo linked on the cv.
+- I had more luck getting interviews by taking initiatives to scale and improve processes.
+
+Basically saying you built a model isnt impressive especially with how easy it is to build a model. Whats harder is improving on a process and quantifying the lift. 
+
+For example in my case i showcased my workflows i incorporated raised our models by 1-3% auc across the board and were more robust. Not to mention I was able to introduce more analytics work that helps with model validation beyond test train splits. I also did open source work for personal projects for a portfolio that addresses gaps in industry. 
+
+Things like this help make you standout than the conventional ds who just spent their time without actually improving processes.
+
+Another example is mention how you lead projects and take ownership of ideas and the quantify how this idea added to the company bottom line. Even better is if you can modernize a team by introducing cloud and simplifying workflows. For example my team rewrites code in java to productionize a model, however i think we should move to docker and go to cloud to reduce code overhead and have more robust models. Stuff like this also enable you to get exposure to the full model life cycle which is something you completely lack in the resume.  You mentioned all the skills like GCP, AWS, but no where in your actual experience did you specify what you did. To me that looks like you basically heard about GCP and now its a skill in your resume when you might not even know what vertex ai or what bigquery even is.
+
+What you are trying to do is basically say, if my current employer didn’t hire me what significant difference would have been if they hired a basic data scientist and trained them instead of you. This showcases how you are more valuable than the competition and often not requires a lot of effort.
+
+Source: i was involved in the hiring process and went over many resumes for candidates before. ATS scores are great but the core idea is what matters not the score.

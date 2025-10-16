@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/vincenzoventriglia_datascience-machinelearning-python-activity-7127759036829097984-PQ1f?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vincenzo Ventriglia的动态
+Vincenzo Ventriglia
+
+Machine Learning Engineer, Data Scientist & Analyst | Organiser @ PyData Roma Capitale | Physicist by training, passionate about Personal Finance
+
+1 年  已编辑
+
+As a physicist by training and a data scientist developing 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝘃𝗲 𝗺𝗼𝗱𝗲𝗹𝘀, I believe it is crucial to avoid pretentious – and meaningless – statements like:
+✅ It’s a cat with a 95% probability!
+✅ The house has an estimated value of € 571,415.97!
+
+Even though models are trained to predict well and not to necessarily provide prediction intervals, it is crucial to have a correct 𝘂𝗻𝗰𝗲𝗿𝘁𝗮𝗶𝗻𝘁𝘆 𝗾𝘂𝗮𝗻𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻, especially in high-risk settings.
+
+Recently, I got interested in 𝗰𝗼𝗻𝗳𝗼𝗿𝗺𝗮𝗹 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻, a relatively new statistical framework for quantifying uncertainty of any predictive model.
+By calibrating a heuristic uncertainty score on a calibration set, this approach turns 𝗽𝗼𝗶𝗻𝘁 predictions into prediction 𝗿𝗲𝗴𝗶𝗼𝗻𝘀 (e.g. sets for classification, intervals for regression).
+
+This framework comes with desirable perks:
+✅ It's model-agnostic and retraining is not required
+✅ No distribution assumption is needed
+✅ In many cases, it requires just few lines of code
+✅ It comes with 𝘀𝘁𝗮𝘁𝗶𝘀𝘁𝗶𝗰𝗮𝗹 𝗴𝘂𝗮𝗿𝗮𝗻𝘁𝗲𝗲𝘀
+
+Conformal prediction is transcending its niche status. In the coming years, it could become a new standard and part of the stack of many data scientists.
+Have you already heard of it or have you already used these techniques? Let's talk about it!
+
+#datascience #machinelearning #python
+
+225
+15 条评论
+赞
+评论
+分享
+Vincenzo Ventriglia
+
+Machine Learning Engineer, Data Scientist & Analyst | Organiser @ PyData Roma Capitale | Physicist by training, passionate about Personal Finance
+
+1 年
+
+An extensive, professionally-curated collection on conformal prediction: https://github.com/valeman/awesome-conformal-prediction
+
+A sklearn-compatible Python package for quantifying uncertainties and controlling risk of ML models: https://github.com/scikit-learn-contrib/M

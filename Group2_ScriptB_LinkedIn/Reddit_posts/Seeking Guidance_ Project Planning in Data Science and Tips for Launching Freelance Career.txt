@@ -1,0 +1,22 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19f7vpy/seeking_guidance_project_planning_in_data_science/
+Title: Seeking Guidance: Project Planning in Data Science and Tips for Launching Freelance Career
+
+Content:
+Hello Data Science Community,
+
+I'm currently facing a challenge in developing a comprehensive plan for data science projects, especially those involving AI and machine learning. I understand the importance of a well-structured approach but often find it difficult to determine the necessary steps and their sequence.
+
+Has anyone experienced similar challenges? How do you approach project planning in this field? Are there specific methodologies, tools, or resources you would recommend for effective planning and execution?
+
+Also, I'd appreciate any suggestions on books, online courses, or community resources that could help in mastering project planning skills in data science.
+
+Additionally, I'm venturing into freelance work in data science and would appreciate any advice on securing projects, especially for someone who hasn't worked in this capacity before. How do you navigate project acquisition and management in a freelance context? Tips on building a strong profile and pitching to potential clients would also be incredibly helpful.
+
+Thanks in advance for your insights and advice!
+
+Comments:
+- There are some great DS/project planning courses on udemy featuring more holistic or focused thinking. I’d recommend looking around on there. You could pair that with a PMP
+- I found some good free courses online by Coursera and FutureLearn. Oh and also via the Open University free catalogue (I'm UK based for reference). Good luck!
+- I’ll check them out. Thanks  for the reply 🙏
+- Thanks a lot for the reply. Any chance you could link some of them of just the name pls ?

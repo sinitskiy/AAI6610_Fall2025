@@ -1,0 +1,7 @@
+Title: GPFN: Prior-Data Fitted Networks for Genomic Prediction
+
+Abstract: Genomic Prediction (GP) methods predict the breeding value of unphenotyped individuals in order to select parental candidates in breeding populations. Among models for GP, classical linear models have remained consistently popular, while more complex nonlinear methods such as deep neural networks have shown comparable accuracy at best. In this work, we propose the Genomic Prior-Data Fitted Network (GPFN) as a new paradigm for GP. GPFNs perform amortized Bayesian inference by simulating hundreds of thousands or millions of plant or animal populations. This allows GPFNs to be deployed without requiring any training or tuning, providing predictions in a single inference pass. On three populations of plants across two different crop species, GPFNs perform significantly better than the linear baseline on 13 out of 16 traits. On a challenging betweenfamilies structured prediction task on a third crop species, the GPFN matches the performance of the linear baseline while outperforming it in one location. GPFNs represent a completely new direction for the field of genomic prediction, and have the potential to unlock levels of selection accuracy not possible with existing methods, especially in diverse populations.
+
+Date: 2025-05-01
+
+DOI: 10.1101/2023.09.20.558648

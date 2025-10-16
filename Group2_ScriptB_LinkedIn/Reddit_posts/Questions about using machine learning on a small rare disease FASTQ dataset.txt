@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/160794z/questions_about_using_machine_learning_on_a_small/
+Title: Questions about using machine learning on a small rare disease FASTQ dataset
+
+Content:
+I just have a compsci bachelor's, but my supervisors assigned me to a passion project doing genotype-phenotype correlation with a rare disease using machine learning. It's a very small genomic dataset of around 200 patients in FASTQ. A scientist unrelated to the company has been working on standard GWAS-type techniques with the data, hence why my supervisors want to try something different with ML.
+
+The curse of dimensionality and small sample size seem like insurmountable issues here. My first thought is to try using transfer learning or zero-shot involving one of [these models](https://github.com/hussius/deeplearning-biology#genomics) like the [Nucleotide Transformer](https://www.biorxiv.org/content/10.1101/2023.01.11.523679v1) or with a self-trained smaller model on a different dataset. I know transfer learning has been proposed for [RNA-seq](https://www.cell.com/cell-systems/pdf/S2405-4712(19)30119-X.pdf) rare disease research and [rare ethnicity GWAS](https://link.springer.com/article/10.1007/s13571-022-00297-y), but I'm not sure how applicable any of these models or approaches would be to a DNA rare disease GWAS, and would appreciate any advice.
+
+Do I try to convince them to let me do it without ML? Is there a path forward for such a tiny dataset with ML? Should I try to do something a little different from a GWAS?
+
+Comments:
+- Are the FASTQ files for WGS? What exactly do they mean by ML?
+- GWAS is going to be difficult with such a tiny sample size, unless you limit the number of genes (targets). You'll have to contend with multiple testing/comparisons which will make it hard to get any significant results.
+
+If I were you, I'd look into feature selection methods to reduce dimensionality (LASSO, Elastic Net). You could also think about pathway enrichment analysis or another feature construction method.
+
+The problem with ML methods such as random forest/ensemble models is that you need to have a good training and test set and 200 is very small.
+
+You really need to have a question/hypothesis in mind before you decide on your methods. Everything will depend on that. You may have a gene of interest and then a simple linear model or even 2x2 table might be the way to go.
+- Sounds like the classic bs project a supervisor comes up with. I have strong doubt that data hungry, SUPERVISED algorithms can find the relevant genotype – if it even in your data. There are multiple causes for diseases and not everything is mutation. If it is related to the genotype a standard method should be able to detect it (GWAS). You can try unsupervised, but I have strong doubt that you will find something.
+- Yeah they have both WGS and WES. By ML they mean stuff like random forest, xgboost, neural networks, SVMs, etc.
+- Thanks! That's what I feared, in the previous attempt at this project they manually selected some genes to reduce dimensionality. Would you happen to know about any approaches that aren't GWAS, but work on the same type of data and could tell us something about the disease?
+- That's like every popular ML method. I think you should try to figure out what the biological question/hypothesis is first before picking a suitable computational approach.
+- You can do a small association study with the selected genes (it obviously won't be a GWAS). You're still going to want to account for multiple testing. You might detect a signal, but you'll want to look at alternative explanations (pleiotropy, linkage, population structure, etc.) If you find something, you could add in some functional studies. 
+
+A more local approach might be suitable where you look at certain individuals who have the disease of interest and the hypothesized associated gene. What is the VAF? Do you have demographic or exposure data on the individuals? If the individuals are older you might be able to see evidence of aging (CHIP, mutational signatures, if WGS - then telomere attrition). 
+
+Good luck - you have to be creative with rare diseases.
+- Well yes, you asked what they meant by ML so I listed every popular ML method. The biological question is whether we can find any variants associated with the disease by comparing to a control group.
+
+My initial take is that ML *isn't* a suitable approach for this sample size, but it's what my supervisors asked me to use, hence the quandary.
+- I feel like a more natural application of ML to this problem would be to use it to try to fine-map the GWAS/linkage study results.

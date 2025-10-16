@@ -1,0 +1,99 @@
+URL: https://www.linkedin.com/posts/es-iode_scientific-research-inferring-the-langevin-activity-7224784268676272128-PyK-
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+es/iode的动态
+es/iode
+
+1,355 位关注者
+
+1 年
+
+📃Scientific paper: Inferring the Langevin Equation with Uncertainty via Bayesian Neural
+  Networks
+
+Abstract:
+
+Pervasive across diverse domains, stochastic systems exhibit fluctuations in
+processes ranging from molecular dynamics to climate phenomena.
+
+The Langevin
+equation has served as a common mathematical model for studying such systems,
+enabling predictions of their temporal evolution and analyses of thermodynamic
+quantities, including absorbed heat, work done on the system, and entropy
+production.
+
+However, inferring the Langevin equation from observed trajectories
+remains challenging, particularly for nonlinear and high-dimensional systems.
+
+In this study, we present a comprehensive framework that employs Bayesian
+neural networks for inferring Langevin equations in both overdamped and
+underdamped regimes.
+
+Our framework first provides the drift force and diffusion
+matrix separately and then combines them to construct the Langevin equation.
+
+By
+providing a distribution of predictions instead of a single value, our approach
+allows us to assess prediction uncertainties, which can prevent potential
+misunderstandings and erroneous decisions about the system.
+
+We demonstrate the
+effectiveness of our framework in inferring Langevin equations for various
+scenarios including a neuron model and microscopic engine, highlighting its
+versatility and potential impact.
+
+;Comment: 30 pages, 17 figures
+
+
+
+
+Continued on ES/IODE ➡️ https://etcse.fr/xcba
+
+
+-------
+If you find this interesting, feel free to follow, comment and share.
+
+
+We need your help to enhance our visibility, so that our platform continues to serve you.
+ 
+
+
+ 
+
+Inferring the Langevin Equation with Uncertainty via Bayesian Neural Networks
+ethicseido.com
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,355 位关注者
+
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利

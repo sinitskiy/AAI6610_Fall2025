@@ -1,0 +1,97 @@
+URL: https://www.linkedin.com/posts/eddelan_yann-lecun-recommendations-if-you-are-interested-activity-7294243338965147649-cPtg
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Eduardo Ortiz de Lanzagorta González的动态
+Eduardo Ortiz de Lanzagorta González
+
+Stealth mode | Previously cofounder of Fuell (YC W22) (acquired by Factorial)
+
+8 个月
+
+Yann LeCun recommendations: 
+If you are interested in human-level AI, dont work on LLM. 
+
+	•	Abandon generative models
+in favor of joint-embedding architectures
+	•	Abandon probabilistic models
+in favor of energy-based models
+	•	Abandon contrastive methods
+in favor of regularized methods
+	•	Abandon Reinforcement Learning
+in favor of model-predictive control
+	•	Use RL only when planning doesn’t yield the predicted outcome, to adjust the world model or the critic.
+
+6
+3 条评论
+赞
+评论
+分享
+Godwin Josh
+
+Co-Founder of Altrosyn and Director at CDTECH | Inventor | Manufacturer
+
+8 个月
+
+Given your emphasis on energy-based models over probabilistic ones, how do you envision the integration of concepts like free energy minimization and variational autoencoders within a joint-embedding architecture for human-level AI? Would this approach leverage the representational power of VAEs while addressing the limitations of probabilistic inference in complex, dynamic environments?
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+9,291 位关注者
+
+205 则动态
+查看档案  关注
+探索相关领域
+How to Apply Reinforcement Learning in LLM Development
+AI Security Guidance for LLMs
+Tips to Avoid Overreliance on AI in Writing
+How to Improve LLM Accuracy
+How to Understand Neural Networks and Llms
+Best Practices for LLM Governance
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

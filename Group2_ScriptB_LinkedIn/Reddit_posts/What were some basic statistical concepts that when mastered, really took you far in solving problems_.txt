@@ -1,0 +1,68 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/odlf3k/what_were_some_basic_statistical_concepts_that/
+Title: What were some basic statistical concepts that when mastered, really took you far in solving problems?
+
+Content:
+I’ve heard of people taking ML courses and advanced courses like this, but what were some statistical concepts or even basic classes that you took, that may have seemed like something that was merely a prerequisite for another class, but was really something that helped you a lot in your work? And what basic statistical concepts/classes do you really recommend stats majors (like me) to really make sure we have a firm grasp of in order to do well in a job? Or what were some concepts that you got grilled in on interviews?
+
+
+
+
+
+
+
+
+Edit: Thanks for all of your responses guys! As a stats major in college I’m really seeing how my first and second year probability and statistical inference courses come into
+play in the real world problems you guys solve, and how the fundamentals like those mean so much more than just prerequisites for upper level courses. From what I’ve read, it seems like the most important topics i should be an expert on is:
+
+Probability theory (probability distributions, how they are used to model real life phenomena, and their relations to each other)
+
+Statistical Inference &amp; hypothesis testing (being able to quantify uncertainty and interpret results from tests, knowing about properties of estimators, p values and inference in the Bayesian context)
+
+Regression analysis 
+
+Presentation skills 
+
+
+Thanks!
+
+Comments:
+- GLM's (if these count as basic?) and experimental design.
+- One of the things people consistently seem to forget--at any level--are the basics of thinking statistically.  They get caught by things like survivorship bias, Simpson's Paradox, prosecutor's fallacy, verifying that their populations are comparable, etc.
+
+All of the technical means nothing if you don't understand the core concepts that underlie solid analytic thinking and have probably cost businesses billions.
+- Familiarity with types of distributions and sampling from an existing observed distribution to make predictions about the future. I find it's a really easy and quick way to build a baseline model (especially when predicting things happening over time).
+- Understanding what exactly probability distributions are intuitively and also concept of expectations etc. I remember learning them at university but I just remembered bunch of formulae. It's only when I really started using them at work on regular basis that I developed more intuition.
+- Monte Carlo Simulation.
+- bootstrapping or jackknife instead of t-tests 
+
+multilevel/hierarchical linear models (you may also know of them as mixed effects models), pretty great for panel or grouped data. also concise way to express many common experimental designs and extend them
+- I am surprised this hasn't been mentioned. The mean of a sample is the most widely useful statistical concept that I am aware of. It's value as a measure of central tendency and simplicity of calculation make it tremendously useful in any quantitative investigation.
+- I feel like the big perspective I see underutilized is learning how to model and interpret longitudinal data, which offers so much more than cross sectional data. And gets you several steps closer to causal modeling than cross sectional correlations ever could.
+
+Secondly, if working with big data where you have the power to detect even very small effects, distinguish between statistically significant and practically significant, before making decisions and recommendations.
+- Regression
+- This might seem very intuitive but really understanding summary statistics ( mean, sd, skewness, etc.) and what they really mean and represent - has been extremely helpful. 
+
+For example, when fitting distributions - knowing what your summary statistics tell you can help you detect and remove anomalies, etc. and helps you enormously the goodness of fit. Once you get used to it - analyzing models and data becomes a breeze
+- Understanding when to use which type of models. In particular, using one or two-way ANOVA models, linear vs logistic regression, multivariate models, or chi squared tests (like of independence vs goodness of fit).
+
+ANOVA compared to regression tell you different things that compliment each other about your underlying data. Understanding that the order you place variables in an ANOVA model is important but doesn't matter in a linear regression... so it is important to understand the question you are trying to answer and order the variables accordingly to help you answer your underlying question.
+
+Also... just because something is statistically significant doesn't mean it is actually significant to the problem you are trying to solve.
+
+People get caught up finding "significance" but fail to realize that they were handicapped from the start because they didn't formulate the correct research questions.
+
+*EDITED for spelling mistakes*
+- MLE (maximum likelihood estimator)
+- Learn regression and classification in their matrix forms. Most methods that you use can be adapted from the linear model. It also helps when you need to code something from scratch.
+- Central limit theorem and Brownian motion,
+Markov chains are a great tool too
+- Bootstrap. It feels like magic even though it’s obviously very easy to understand, and it comes in useful all the time
+- Random vectors, conditional random variables, bayesian inference
+- quantile
+- IMHO the top of the list should be bayes’ theorem, once you’ve got your head around probabilistic inference, everything else gets a lot easier.  If you start with classical (Student) statistics, it makes it harder to learn Bayes
+- I took a doctoral level class in data management and visualization after having taken many advanced stats classes (bayed, ML, hierarchical, mutivariate) and it really expanded what I could do by helping me think more outside the box about what data has to offer. Thinks like taking subsets of data and summarizing it in different ways to get new variables and datasets. Also, knowing what makes a good figure is possibly the most important thing for reporting your findings.
+- If one is trying to get insight from a mean, they should use a frequency distribution, instead.
+
+If one is trying to communicate insight with a pie chart, they should use a column or bar chart, instead. Lengths are quicker to compare than angles.

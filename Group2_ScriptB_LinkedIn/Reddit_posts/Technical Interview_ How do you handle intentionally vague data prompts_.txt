@@ -1,0 +1,53 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/188hl9r/technical_interview_how_do_you_handle/
+Title: Technical Interview: How do you handle intentionally vague data prompts?
+
+Content:
+I have a technical interview Monday with a large company, which I'm both excited for and extremely nervous. With that being said, I think I'll be able to handle questions about data storytelling, sql, and basic stats. The one question that I think I'll probably have trouble with is a question regarding your process as an analyst with a vague, unknown purpose (their wording). I drafted the following. Anything I'm missing?
+
+ex. define the problem by asking questions: who is the target audience? what type of data? what is the problem that needs addressing? Is the data clean? Are there outliers? EDA to get acclimated to the dataset.
+
+What I think they are really asking, while being vague, is how I approach a data problem. What should I add to the few questions above?
+
+&#x200B;
+
+Thinking something like this might help as a guide?
+
+https://preview.redd.it/a3scdt114q3c1.png?width=1015&format=png&auto=webp&s=d353e7e218adc88b0e853215075b5c0be049a9f4
+
+Comments:
+- Probably depends on the company, but here's what I would consider a great general approach to an analytics problem (as a hiring manager):
+
+1. Understand the business problem. How does this analysis fit into the strategic goals of the business?
+2. Understand what success would look like. What possible outcomes are we looking for from this analysis? How would it help us make better decisions? Do we need to scale the solution? Who is asking the questions?
+3. Understand timelines and priorities. How much of a rabbit hole does it make sense to go down here? Can we get away with taking some averages and moving on?
+4. Determine the limitations of the data for the questions you're asking. Stat summaries, missing values, etc. How was the data collected? Do you expect major biases (hint: there are almost always biases. Figure out what they are).
+5. Start answering questions. Check in early and often with your seniors. Ask questions when you hit something you don't fully understand. Work with them to craft a story and find new questions to answer. \[you can talk about specific techniques here if that's what the interviewer wants\]
+6. Distill the story you want to tell. Put it in the right context: What did you find? How does this answer the question? How does this help the business? What are the limitations? What other questions did it raise?
+7. Package and present. Summarize at the right level for the audience, but be ready to get into the weeds if needed.
+8. Document and reflect. Make sure this analysis is repeatable by someone who is not an expert. Follow any extablished best practices for source control and knowledge management. Talk to your teammates about anything interesting you found.
+- Can you give an answer using a past situation?
+
+Vague general steps are fine, but if you can think of a specific project you've done in the past and use that to outline your approach, it'll be much easier to get through.
+
+Also gives you an opportunity to show impact & reflection skills by sharing what kind of outcome you got, and what you might have done differently looking back.
+- Specifics vary from question to question, but there are a couple constants to live by in most kinds of DS interviews:
+
+1) Ask verifying questions. Interviewers often intentionally do not reveal all of or enough of the context.
+2) State your assumptions and limitations out loud.
+- I can’t answer your question but good luck for the interview!
+- Start every project with a clear understanding of the business reason. You should be working towards the business goal. It is the foundation that you build a project on. 
+
+Without that, you are wondering around in a forest looking for trees. 
+
+If the request is coming from a department that doesn’t know what they want, you need to make sure that you interview them to make sure you are on the same page. 
+
+Early on in my career, I would get half explained ideas and waste a lot of time trying to figure out what I could discover in the data, and many times that would not be helpful for the requester, or they didn’t know or wanted to hear what I told them. A number of times I would get this interesting insight from something, and the ultimate feedback I received was basically “…so?!?”
+
+I was doing an analysis on this company’s warranty data, and one of the things I found was failure rates for one plant were ~ 80% higher than the average and that information wasn’t what they wanted to hear. It was something that if I had interviewed the project manager more closely at the beginning I could have better explained that the answer they wanted wasn’t something that I could tell them until we knew that their assumptions were correct. 
+
+To use the 3 little pigs story, one built their house of straw, one of sticks, and one brick, I can’t tell you KPIs for making the house of straw so strong when a house of bricks exists. 
+
+I’ve been in many situations that people don’t want reality to challenge their assumptions.
+- Thanks for sharing
+- Great info. TY.

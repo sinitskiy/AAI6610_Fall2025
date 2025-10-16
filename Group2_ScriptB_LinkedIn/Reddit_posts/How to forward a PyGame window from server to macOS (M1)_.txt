@@ -1,0 +1,28 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ldj39i/how_to_forward_a_pygame_window_from_server_to/
+Title: How to forward a PyGame window from server to macOS (M1)?
+
+Content:
+I'm trying to run a reinforcement learning environment on a remote Ubuntu server, and I need to manually interact with the game window rendered via PyGame. The idea is to run the environment on the server and forward the display to my macOS machine using X11. I'm on an Apple Silicon (M1) Mac.
+
+I'm currently using **XQuartz** for X11 forwarding. I can connect via SSH with `-X` or `-Y` and basic X11 apps like `xeyes` display fine. However, when PyGame tries to open its window, I get the following OpenGL error when checking `glxinfo`:
+
+name of display: localhost:10.0
+
+libGL error: No matching fbConfigs or visuals found
+
+libGL error: failed to load driver: swrast
+
+display: localhost:10  screen: 0
+
+...
+
+  
+I've searched all over and tried various suggestions (installing `mesa-utils`, using different display configs, etc.) but nothing resolves this. It seems like **XQuartz has very poor support for OpenGL forwarding**, and I haven’t found any working solution\[\^1\].
+
+I also tried using **Xpra**, which forwards graphical apps via SSH, but it’s extremely finicky and hard to configure properly — especially with OpenGL apps like PyGame.
+
+  
+\[\^1\]: [https://github.com/XQuartz/XQuartz/issues/144#issuecomment-2481017077](https://github.com/XQuartz/XQuartz/issues/144#issuecomment-2481017077)
+
+Comments:

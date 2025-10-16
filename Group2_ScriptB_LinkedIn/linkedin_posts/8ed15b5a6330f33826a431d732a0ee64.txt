@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/addejans_a-lot-of-people-ask-me-why-im-so-passionate-activity-7365416351823265794-og4_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Adam DeJans Jr.的动态
+Adam DeJans Jr.
+
+Optimization @ Gurobi | Author | LeetCode Contributor
+
+1 个月
+
+A lot of people ask me why I’m so passionate about optimization and operations research instead of data science. On the surface the titles may sound similar, but the focus is very different.
+
+Data science is about learning from data: finding patterns, making predictions, clustering, regression, machine learning. Its job is to describe the past and forecast the future.
+
+Optimization and operations research are about making decisions: given all the possibilities and constraints, what’s the best decision we can make right now? Which trucks go where? How many units should we build? Which supplier should we use?
+
+Both are valuable. In fact, they often complement each other. Data science gives you the forecast, optimization tells you what to do about it.
+
+So why do I love optimization more? Because decisions are where the money is made. A perfect forecast that doesn’t change action is just trivia. But a good optimization model can save millions, unlock capacity, or reshape strategy. It directly moves the business forward.
+
+That’s why I’ve always gravitated to optimization… it’s the discipline of turning uncertainty and complexity into clear, actionable decisions.
+
+Curious… if you’ve worked with both, which one excites you more?
+
+559
+95 条评论
+赞
+评论
+分享
+Christian Setzkorn ML PhD
+
+Lead Data Scientist
+
+1 个月
+
+Sorry I would disagree. Data science comprises prescriptive analysis aka causal inference from observational data and (multi-objective) optimisation.
+
+赞
+回复
+1 次回应
+Anjali Joshi
+
+Salesforce Developer
+
+1 个月
+
+Great breakdown, Adam 👏. Data science gives the forecast, but optimization drives the action. Together they create a powerful loop, forecasts guide optimization, and optimization outcomes feedback into better models. That synergy is where real impact happens!
+
+赞
+回复
+2 次回应
+Shahrukh Irani
+
+I help any high-mix low-volume (HMLV) manufacturer 

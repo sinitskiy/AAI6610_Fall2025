@@ -1,0 +1,60 @@
+URL: https://www.linkedin.com/posts/anacostaesilva_ai-llm-responsibleai-activity-7368923675040927744-jDsX
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ana Costa e Silva, PhD in AI, MBA的动态
+Ana Costa e Silva, PhD in AI, MBA
+
+Global AI & Data Executive | Enterprise-Scale Transformation | Ex-Chief, Fortune 500
+
+1 个月  已编辑
+
+Large Language Models aren’t “general intelligence.” They’re probability engines.
+Here’s what actually happens:
+- Given a context, they predict the most likely next word.
+- Within the neural network, clusters of neurons specialize — some activate on medical text, others on finance, others still in romantic advise.
+- This gives the illusion of understanding, but in truth it’s pattern recognition, not reasoning.
+
+Researchers are trying to push beyond this:
+- Retrieval-augmented generation (RAG) to ground answers in external knowledge.
+- Multi-agent systems where LLMs talk to each other to solve complex problems.
+- Symbolic reasoning layers to add logic.
+- Some AGI attempts combine LLMs with montecarlo simulation or reinforcement learning among other fancy techniques.
+
+These are exciting directions. But the LLM itself is not “GI” — and if we confuse the two, we risk misleading policymakers and executives into overhyping (or overregulating) the wrong thing.
+
+How do you explain to leaders what these systems can — and cannot — really do?
+
+#AI #LLM #ResponsibleAI #Leadership
+@OECD.AI @The Alan Turing Institute European Commission @Stanford Institute for Human-Centered Artificial Intelligence (HAI) @MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)
+
+47
+8 条评论
+赞
+评论
+分享
+Ana Costa e Silva, PhD in AI, MBA
+
+Global AI & Data Executive | Enterprise-Scale Transformation | Ex-Chief, Fortune 500
+
+1 个月
+
+Yet another time that people seem surprised at what should have been obvious for the last three years already
+
+"LLMs struggle with clinical reasoning and are just matching patterns, study finds": https://the-decoder.com/llms-struggle-with-clinical-reasoning-and-are-just-matching-patterns-study-finds/
+
+赞
+回复
+Grant Oliff
+
+Digital Transformation Leader | Award-Winn

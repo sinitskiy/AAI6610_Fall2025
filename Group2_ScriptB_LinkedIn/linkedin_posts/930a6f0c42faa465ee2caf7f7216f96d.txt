@@ -1,0 +1,59 @@
+URL: https://www.linkedin.com/posts/harpercarroll_large-language-models-llms-struggle-with-activity-7374623279287939073-P0MV
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Harper Carroll的动态
+Harper Carroll
+
+AI Explained ⚡️| ~10 yrs building AI & ML at Stanford (computer science in AI), Facebook, & Meta | NVIDIA-acquired Co. Head of AI | Top 10 Global AI Pro on LinkedIn
+
+2 周
+
+Large Language Models (LLMs) struggle with math.
+
+Ok, yes, they've improved, but it's taken a concerted effort.
+
+Let me explain why your typical LLM struggles so much here - step by step.
+
+Large language models, or LLMs, are probability-based machines. They are **word-generators** - not calculators.
+
+Hence, they are trained to predict the next word (or token) in a sequence based on patterns they’ve seen in massive text datasets online.
+
+Language (text) is everywhere, and so are the patterns they learn from. Take a simple sentence: 
+
+“Hi, my name is Harper.” 
+
+From this one sentence, I could create multiple training examples by predicting each next word:
+
+➡ After “Hi,” predict “my.”
+➡ After “Hi my,” predict “name.”
+➡ After “Hi my name,” predict “is.”
+➡ After “Hi my name is,” predict “Harper.”
+
+From a single sentence, I’ve created several training examples. 
+
+Now multiply that across BILLIONS of sentences online, and you can see why these models get really good at understanding relationships between words!
+
+Math is different. 
+
+It is rule-based, not pattern-based. And LLMs do not inherently “understand” multiplication, division, or arbitrary numeric relationships. 
+
+A simple problem like 1 + 1 gives the right output because it’s extremely common online. But ask the model to compute 5252.3 × 63.98, and it will likely fail. 
+
+Why? Because it only predicts what is **probable**, not what is mathematically correct.
+
+You can also check this with structured numeric data, like case numbers in legal documents.
+
+The model can learn the **format** and **length** of a case number - it knows it should be, say, 10 digits. 
+
+But which exact digits? That’s effectively random from the model’s perspective, because every possible combination 

@@ -1,0 +1,23 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/bs49yt/complexities_of_eukaryotic_gene_expression/
+Title: Complexities of eukaryotic gene expression: following the message using Cryo-EM technologies
+
+Content:
+&#x200B;
+
+[Cryo-EM technologies provide amazing new insights in to the workings of molecular machines like the RNA plymerase II](https://reddit.com/link/bs49yt/video/fedv9gs3azz21/player)
+
+Full video with explanation by research Clemens Plaschka is here: [https://youtu.be/OwEqYyZCiGw](https://youtu.be/OwEqYyZCiGw)
+
+&#x200B;
+
+Borne out of a fruitful collaboration between scientists at the Research Institute of Molecular Pathology (IMP) and the visualization team at biolution, structural biologist Clemens Plaschka invites you on a journey into the nucleus of the eukaryotic cell to discover the secrets of regulated gene expression – drawing on some very recently published data. The video was produced using the visualization platform of biolution developed with advice by scientists of the IMP.The one-way street of genetic information flow has been dubbed by Francis Crick the “central dogma of biology”: DNA makes RNA and RNA makes protein. While this simplified view of gene expression is very instructive, the devil lies in the details. But these details lie hidden to molecular biologists in the nanoworld, stretching the imagination of even the most experienced specialists. The animation now released is borne by a partnership between structural biologist Clemens Plaschka (IMP) and the visualization team of biolution. It shows a recently published transcription initiation complex forming at the start of a gene to recruit the RNA polymerase and should provide an instructive overview of the complex interactions required to activate gene expression.
+
+How important insights into the spatial arrangement of molecular structures can be is illustrated by the discovery of the DNA double helix, which famously revealed many aspects of the DNA’s functionality starting from its semi-conservative replication to serving as a template for mRNA. In recent years, structural biology has been revolutionised by powerful computer technologies and the advent of cryo-electron microscopy, which now produces high resolution data of molecular machines. Aided by these advances, researchers are now able to observe their molecule of choice on an atomic scale and reveal the inner workings of biological processes. These complex data are deposited in dedicated data bases accessible for anyone, but handling these data is not a simple task. In recent months, biolution has collaborated with scientists of the IMP to develop a visualization pipeline to generate instructive animations meeting the highest standards of scientific accuracy.
+
+Inspired by the new advances in structural biology, biolution’s scientific visualization pipeline is designed to harness the capabilities of commercial software packages to animate scientific data deposited in public data bases. It provides an overview useful to anyone interested in molecular processes, from students to investors and from patients to medical doctors. biolution can only do this in a team of gifted media designers with high technical expertise and scientists rooted in the scientific community aware of the current thinking in the field.   
+
+
+What do you make of it, do you use these videos to learn about moldecular biology? Are they too complicated? Please let me kno what you take from them so we can improve our videos for an interested audience like you. Cheers!
+
+Comments:

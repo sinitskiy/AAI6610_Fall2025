@@ -1,0 +1,8 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11oemya/help_finding_similar_gene_family_dataset_from/
+Title: Help finding similar gene family dataset from this site
+
+Content:
+First of all, I am quite new to this. So I have a project that needs me to apply machine learning, even if I have some idea of what I want to do, I have a hard time finding the right data so I do reverse approach instead. [https://medium.com/mlearning-ai/apply-machine-learning-algorithms-for-genomics-data-classification-132972933723#0f4e](https://medium.com/mlearning-ai/apply-machine-learning-algorithms-for-genomics-data-classification-132972933723#0f4e) I stumbled upon this site and find that the data for the gene family is quite neat and wondering how I can get similar data from other organisms or something like that somehow
+
+Comments:

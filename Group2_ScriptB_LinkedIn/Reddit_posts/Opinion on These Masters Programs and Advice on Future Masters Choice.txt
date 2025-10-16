@@ -1,0 +1,125 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/13ytbji/opinion_on_these_masters_programs_and_advice_on/
+Title: Opinion on These Masters Programs and Advice on Future Masters Choice
+
+Content:
+Hello everyone, I would really appreciate your opinion on which masters program to choose out of these options. I was having issues formatting a pros and cons column so I will include that separately from the table.
+
+
+Some background about me is that I'm a Canadian with a molecular biology degree. I tried applying to programs that have internships because I think it's really important to get practical experience and it would be a big plus if I can land a paid internship.
+
+My main career goal is to get into the field of machine learning engineering preferably in the biology space but I'd be fine with that job in another space. I learned relatively recently that there are computer science masters that accept students who did not major in computer science. I have applied to these and my ideal plan is to get a masters in CS while self-studying the math needed for machine learning. The reason for this plan was because my math fundamentals are fairly weak and I'm not a fan of academic math courses. As a fallback, I could always go into software development after getting a CS degree. However, I haven't heard back from any of the CS programs I've applied to and there's a chance I could not be accepted into any. Meanwhile I've already been accepted to bioinformatics masters and the deadline to confirm enrollment is quickly approaching. So, I think the safe option would be to accept one of these bioinformatics programs instead of risking it and betting that I will get accepted into a CS masters.
+
+University | Costs | Curriculum | Internship | Program Length | Rankings (Average of QS and Times) |
+---|---|----|----|----|----|----|---
+Boston University | 61,050 USD | [link](https://www.bu.edu/bioinformatics/student-services/course-schedule/) | 2 weeks | 1 year | 90
+Northeastern University (Boston) | 55,400 USD | [link](https://catalog.northeastern.edu/graduate/science/biology/bioinformatics-ms/#programrequirementstext) | 3-6 months | 2 years | 278
+UvA/VU (Netherlands) | 31,160 (Euro) | [link (I would choose the bioinformatics concenctration)](https://studiegids.vu.nl/en/Master/2022-2023/bioinformatics-and-systems-biology-joint-degree#/tab=3&code=&panel=)| 10 months? | 2 years | 59 (Amsterdam) / 168 (Vrije)
+Wageningen (Netherlands) | 39,200 (Euro) | [link](https://studyhandbook.wur.nl/studies/MBF?tab=groups&year=2023) | 6 months | 2 years | 92
+
+
+***Boston University***
+
+**Pros**
+
+* 1 year program means quicker to graduate and enter the job market
+* Access to lucrative US market
+* One of America's biotech hubs
+* 15k scholarship
+
+
+**Cons**
+
+* Very expensive
+* Not as much depth as other programs
+
+***Northeastern University***
+
+**Pros**
+
+* Most of the pros from Boston University apply to Northeastern too
+* Nice choice in elective programs
+* No thesis
+
+**Cons**
+
+* Worst ranked
+* Don't provide much support in securing a sponsor
+
+***UvA/VU***
+
+**Pros**
+
+* Great selection of data science/machine learning courses
+* Opportunity for long internship
+
+**Cons**
+
+* Difficulty securing housing in Amsterdam (housing crisis)
+* Courses seem very demanding
+
+***Wageningen***
+
+**Pros**
+
+* University that specializes in the life sciences
+* Housing may not be as difficult to find/expensive as Amsterdam
+
+**Cons**
+
+* Courses don't look as appealing to me
+
+
+Right now I'm leaning on either Boston University or the University of Amsterdam (UvA/VU) but I'd love to hear your opinion!
+
+Thank you
+
+Comments:
+- Those grad programs are very expensive tbh. You’re essentially dropping almost 100k for a masters in a bad job market.To each to their own though, if you have the money then why not.
+
+
+
+Also what about academic math do you not like? If you don’t like math not sure why you are pursuing a computer science masters alone a machine learning career. Both options are really heavy in math and it’s basically an applied math field. 
+You’re not gonna get away with not doing math in many of these courses because math is so essential.
+- Doing MLE without an undergrad or graduate CS degree is making life harder than it needs to be.
+
+Also, if you're interested in ML, I would reconsider Northeastern.
+- Those are all really expensive. My recommendation would be to try the GA-Tech OMSCS, which is a rigorous and well-respected program, and has an ML specialization. It costs under $8k I believe. 
+
+UT-Austin also just launched an ML/AI masters that is \~$10k, but since it is brand new I don't know anything about its reputation.
+- Hopefully, by the time I graduate the job market will be better :) I'm really not sure what other option I have. Unfortunately, from what I've seen, most masters are quite expensive
+
+
+I used to really hate math in high school/university partially because it just felt so pointless. I don't think I actually used it at all in my degree. After graduating and outside of the academic environment I've come to the realization that math can be really interesting and I also have a motivating reason to learn it now. In my experience, learning math in an academic setting is just overly stressful and dry compared to learning it yourself. Academic math is also not very applied but I'm wanting to learn it for an applied use case. I've watched a few videos on MLE explaining their role and it's true that having a good understanding of the math is important but it's not as central to the job as it may seem unless you're working on novel algorithms (in which case I think that's more PhD territory).
+- Thanks for the insight. Could you please expand on why Northeastern isn't great for ML?
+
+I'd preferably like to get a graduate CS degree but it feels like such a gamble passing on the programs that I've been admitted to (as the deadline to accept admission is soon) for the chance to get into a CS program. I'm hoping that since bioinformatics can be pretty data science and CS adjacent it won't be that hard to get into MLE but I'm not sure how employers would see it to be honest.
+- Thanks for the recommendations! I have heard of these programs but I haven't applied to them because I don't meet the CS prerequisites for them yet. Most of the CS masters I have applied to are conversion masters in the UK. I'm also trying to get into the CS Masters at Colorado Boulder, which only requires you get a B in their graduate algorithms course, so I am trying to build my knowledge in that area as quickly as possible.
+- Would you need a strong CS background for these master's programs?
+- If you’re into MLE, I honestly think the best option is doing Georgia tech cs masters. It’s really cheap and you’ll probably have a better chance I think of making the transition. You’re right that the math isn’t super hard in the jobI’m talking more of the courses you’ll be taking in a ml heavy program. Academic ml has math all of the place from linear algebra, probability and statistics, and calculus.
+
+
+Also a caveat though to MLE is that you’re basically a software engineer first so having experience will probably make the jump easier.Best of luck though I’m trying to make a similar  transition and I don’t think it’s gonna be  easy.
+- Thank you, I hope the transition works out for you too!
+
+I'm aware that MLE is based on software engineering and I think that's good because it seems like traditional data science roles are getting very saturated (this could just be cognitive bias or just because people with more negative experiences in data science are going to talk about it though) and it's nice to have the flexibility to take traditional software engineering jobs as well.
+
+I've come across the georgia tech CS masters and it's great but unfortunately I don't have the background necessary for it. I know you can take a few of their MOOC courses to bolster your application but my family wants me to start a masters in September so I cannot go that route. Even if I take their MOOC courses, it's no guarantee that I will get accepted into the program.
+
+Like you acknowledged, the amount of math done in the actual job is nowhere near comparable to an academic ML program. As long as I get a degree in an adjacent field and demonstrate adequate knowledge through things like personal projects I think I have a chance. That's why I'm leaning towards the Boston University program because it will get me a degree and let me pivot more quickly to MLE.
+
+I'm hoping I'll hear back from some of the CS programs I've applied to before the deadline for these bioinformatics programs as that will make the decision much easier.
+- I don’t think your plan sounds too bad tbh but you should also post on other subreddits too. I have a feeling you’ll get better answers there especially since a haven’t seen a lot of people make that switch. I did see one person make the switch though I’ll try to link you page when I find it and he basically had to a PhD and even he had a rough time cuz you have to show you have the stats knowledge while also having the software engineering knowledge.
+
+
+
+
+Also my opinion is that you should do what you want to do and not what you’re family wants to do cuz at the end of the day it’s your money and you’ll be the one in debt. If it takes more time to make the switch yet much less money it might be very worth it in the long run
+- Do you have any suggestions on which other subreddits I should post to? I don't know where else I should ask.
+
+
+Through my time lurking here, I've seen a few cases where bioinformaticians have mentioned that they've moved over to data science or software engineering. That gives me the impression that it's somewhat common but again that could definitely just be bias and moving to MLE is more work than going to software engineering. I'd really appreciate it if you could link me the page if you end up finding it. Getting the perspective of someone that actually made the switch sounds very helpful.
+
+I'll try to talk with them and see if I can convince them. I have to admit that I'm getting nervous too and I'd like to start a proper career. I guess one possible albeit drawn out scenario is that I do the BU masters program, start a career in bioinformatics, and do the Georgia tech masters part time while working if I have a hard time breaking into the ML roles I'd like to get into
+- Probably r/datascience or r/OMSCS might be good. I found the post for you [https://www.reddit.com/r/bioinformatics/comments/10clzh9/transition\_from\_bioinformatics\_to\_data\_science/j4isozr/?context=3](https://www.reddit.com/r/bioinformatics/comments/10clzh9/transition_from_bioinformatics_to_data_science/j4isozr/?context=3) which might be a good read.
+- Thank you! My core take away is that you have to be mindful in how your market yourself to a non-biology audience. As that person noted there is overlap between bioinformatics and data science. It seems like once you get your first job in that area you should be fine in the future.

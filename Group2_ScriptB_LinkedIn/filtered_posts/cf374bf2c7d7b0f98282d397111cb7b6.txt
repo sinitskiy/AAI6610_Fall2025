@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/ilia-ekhlakov_machinelearning-datascience-modelvalidation-activity-7333113796716060672-tYB-
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ilia Ekhlakov的动态
+Ilia Ekhlakov
+
+Senior Data Scientist | Growth & Retention with Advanced Analytics | Predictive ML & Causal Inference | Google Cloud Platform (GCP) | 10 Years of Experience | Considering New Challenges
+
+4 个月
+
+𝐀𝐬𝐬𝐞𝐬𝐬𝐢𝐧𝐠 𝐦𝐨𝐝𝐞𝐥 𝐫𝐞𝐥𝐢𝐚𝐛𝐢𝐥𝐢𝐭𝐲 𝐯𝐢𝐚 𝐭𝐡𝐞 𝐝𝐢𝐬𝐭𝐫𝐢𝐛𝐮𝐭𝐢𝐨𝐧 𝐨𝐟 𝐪𝐮𝐚𝐥𝐢𝐭𝐲 𝐦𝐞𝐭𝐫𝐢𝐜𝐬
+
+When we train model ensembles, we often use bootstrapping or bagging - some people without even realizing it. Both methods help improve generalization by creating multiple different samples from our training data. The main difference is that bagging samples without replacement, while bootstrapping samples with replacement. But their goal is the same: they treat our single training dataset as just one possible realization of the true population (for example, all your company's clients or all leads over a period).
+
+During training, we might generate dozens or even hundreds of such samples to build a more robust model that handles the randomness in our data.
+In cross-validation, however, we normally use only 3–5 splits. This does reduce the effect of one particular validation split, but not as much as bootstrapping or bagging.
+
+And when it comes to the final hold-out test, we often use just one hold-out set. Yet the same logic applies: the hold-out set is only one possible future dataset. We often assume our hold-out data will closely resemble the data we see at inference time - but in reality, that similarity isn't guaranteed.
+
+It's important to remember that any performance metric is itself a random variable, not a fixed constant. Each new hold-out split or bootstrap sample can lead to different metric's value. So rather than relying on a single point estimate, we can choose:
+
+𝐁𝐚𝐬𝐢𝐜 𝐨𝐩𝐭𝐢𝐨𝐧𝐬:
+👉 Multiple hold-out splits (when data allows). For example it could be nested cross-validation (outer loop for evaluation, inner loop for hyperparameter tuning) to obtain a more honest estimate of both performance and its uncertainty
+👉 Bootstrappin

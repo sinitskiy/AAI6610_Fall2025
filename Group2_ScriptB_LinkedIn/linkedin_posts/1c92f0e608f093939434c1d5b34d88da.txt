@@ -1,0 +1,84 @@
+URL: https://www.linkedin.com/posts/pauliusztin_one-of-the-least-talked-about-yet-most-critical-activity-7320378636748922880-RsEk
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Paul Iusztin的动态
+Paul Iusztin
+
+Senior AI Engineer • Founder @ Decoding ML ~ Building an army of AI agents and teaching you about the process.
+
+5 个月
+
+One of the least talked about (yet most critical) parts of GenAI systems?
+
+Evaluating LLMs and RAG in production.
+
+And on May 15th, I'll dive deep into it during a live virtual workshop I'll be hosting at 𝗢𝗗𝗦𝗖 𝗕𝗼𝘀𝘁𝗼𝗻.
+
+If you've ever shipped an LLM-powered product, you already know:
+
+→ Retrieval fails silently
+→ LLM outputs can sound right but be totally wrong
+→ Traditional ML metrics like accuracy, BLEU, or ROGUE aren’t enough
+→ And user feedback? Rare, subjective, and hard to act on
+
+That’s why this session will focus on how to make evaluation systematic:
+
+→ When to use human vs. LLM judges
+→ How to evaluate agentic applications
+→ Designing test sets that reflect real-world workflows
+→ Building CI-like pipelines for eval that run before (and after) deploy
+→ Tools and templates you can steal for your own stack
+
+Whether you’re fine-tuning models or building end-to-end agentic apps—this is the foundation most teams are missing.
+
+If Agentic systems are part of your roadmap, this workshop will help you make sure they’re production-grade.
+
+📍 Open Data Science Conference (ODSC) Boston (Virtual)
+🗓 May 15
+💡 Link in the comments
+
+See you there.
+
+101
+21 条评论
+赞
+评论
+分享
+Paul Iusztin
+
+Senior AI Engineer • Founder @ Decoding ML ~ Building an army of AI agents and teaching you about the process.
+
+5 个月
+
+📌 Question:
+
+This is a shift in how to approach learning. Rather than counting “how much I’ve read or done” think in terms of “how many concepts can I actually remember and use”. 
+
+What do you think?
+
+赞
+回复
+6 次回应
+Weipeng Zhuo
+
+AI Visionary | Ex-Meta | Startup Founder: We build business software MVPs for 3k in 3days - love it or its free
+
+5 个月
+
+Yo this workshop sounds epic! Anyone else struggling with those sneaky LLM failures in prod? The eval game is seriously next level now 
+
+赞
+回复
+2 次回应
+Abi Arya

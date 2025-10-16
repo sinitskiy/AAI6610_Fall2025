@@ -1,0 +1,78 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1amuopi/data_science_interviews_are_giant_slogs_still_i/
+Title: Data science interviews are giant slogs still I see
+
+Content:
+My department is cutting spend, so I decided to venture out and do some DS interviews and man I forgot how much trivia there is.
+
+Like I have been doing this niche job within the DS world (causal inference in the financial space) for 5 years now, and quite successfully I might add. Why do I need to be able to identify a quadratic trend or explain the three gradient descent algorithims ad nauseum? Will I ever need to pull out probability and machine learning vocabulary to do my job? I’ve been doing this (Causal Inference) work for which I’m interviewing for years, and these questions are not exemplary of this kind of work.
+
+It’s just not reflective of the real world. We have copilot, ChatGPT, and google to work with everyday. Just man, not looking forward to re-reading all my grad school statistics and algerbra notes in prep for these over the top interviews.
+
+Comments:
+- The slog I found were the coding test, where a full day or twos worth of work was asked for. An instant no in response to that
+- All the gotcha questions to see if you also just read the same passage the interviewer did from "Hands-on Machine Learning with scikit-learn and Tensorflow" are a complete waste of time and indicate that at least the interviewer and probably the whole organization are immature in their approach to DS. 
+The only good way to conduct technical interviews that I have experienced is to present the interviewer with a dataset/problem-set and have them try to approach it in their own way. Then ask them why they did it the way they did it without looking for an exact vocab word.
+I don't have to remember the word "heteroskedacticity" to notice it and talk coherently about how to handle it.
+- [deleted]
+- What I hate the most are live coding tests of purely algorithm questions.
+
+Like, I am a data scientist, I don't really need to know to properly write a sorting algorithm from scratch.
+- I've been giving DS interviews that boil down to a discussion of how the candidate might approach a business problem, leading them to a machine learning model request.
+
+I try not to ask anything specifically about any particular library or ML implementation. It tends to be a good step by step walk through of the process from start to finish, and I sprinkle in a few "what if you see this or that..."
+
+Am I doing it wrong? Should I see if they can code gradient descent by hand, or recite the assumptions for using specific statistical tests?
+- [deleted]
+- Data Science interviews are probably the most difficult on the planet. Because depending on who is interviewing you, he can pull out very specialized and specific questions out of every sub-domain of the interdisciplinary data science field. Be it linear algebra, statistics or hard leetcode problems. 
+
+It is also a big reason why most data science teams fail, recruiters simply don't ask the right questions and end up hiring someone who just hapened to have read the correct material for the particular interview.
+- People who write SQL queries all day are just pissing their pants with excitement to ask you what the difference between UNION and UNION ALL is.
+- I think the right view of this is that the interviews are a time for you size up the company/team as well, so an interview that leaves a bad taste in your mouth is a good way for you to weed out a company you don't want to work for - the work and team will probably be as disjointed and misguided as the interview process.
+
+In the interview for my current role, I was impressed by the types of questions my now-manager asked (including a question I had more-or-less come up with myself when I was hiring people at my last company because I thought it was important, which told me that he values the same kind of thinking and processes I do!) The take-home was reasonable, and when it came to the final round (where I at that point had other offers I needed to respond to), they fast-tracked me past a python/SQL test. All in all, the process told me that a company I was already excited about was also a collegial place to work and a good fit for my skills and way of thinking.
+
+It took a lot of time, including dropping out from some interview processes I thought were bad or just a mutually poor fit and declining a couple offers before I even had any others in hand. But in the end I got to a sensible company, and it was worth it. Those bad interviews/bad companies weren't a waste of time, they were part of the sampling process that I needed to get through to more likely draw a winner.
+
+This is, of course, not very helpful advice when you're desperate for a position. I had the luxury of having a stable position during the interview process, so plenty of time to get through the slog without worrying about my next paycheck. But OP - it sounds like you've got at least a bit of time, too. It might be less frustrating to view this as bad companies weeding themselves out for you, so you can focus your energy on the handful that seem more sensible.
+- Bc there are probably 100+ ds job responsibility there, every team in every company can be different
+- I hear you, OP. I'm jealous of my non-technical friends when they interview. The process seems fast, less intense, and less laborious.
+
+It's a lot to brush up on stats, probability, ML, SQL, and programming. Not to mention the involved take-homes.
+
+The market also seems rough now for applicants, so there are plenty of takers
+- I’m shifting from senior scientist to data scientist (not a huge shift in practices but a huge shift in jargon in some places). My first technical interview was very pleasant. My second I haven’t had yet, but they want 90 minutes with their panel of mathematicians: 30 min behavioral, 30 min technical questions, 30 min coding while they watch. If I get an offer from the first place, I’m going with them and telling the second one thanks but no thanks. I have an obvious and prestigious track record in my field: there’s no freaking need to grill me then put me on a keyboard like a zoo animal. lol. Fuck that.
+- Well put. I forking hate all the irrelevant DS trivia questions. As you point out, they don’t measure anything meaningful. If anything the only folks who will do better on those kinds of questions are A) “cheating” by using tools to look up answers to questions they’re asked live, or B) have recently graduated from college, or C) have assembled a flashcard deck of hundreds of those questions and answers and studied their butts off. 
+
+The irony is that this kind of trivia is asked for SENIOR roles, of people who have years of experience (I have a decade in DS), yet more junior folks will do better on it. 
+
+And hiring managers love the ILLUSION of a senior/principal level DS just knowing all that shit off the top of their head.
+
+I think it’s ridiculous. Nobody in the real world needs to remember all that academic stuff off the top of their heads. We all have the experience and training to look things up if and when they’re relevant and do the work correctly. 
+
+Anyway, yes, I completely concur that it’s stupid. And utterly exhausting and frustrating. 
+
+And then there’s how it seems like there’s a lot less appreciation for “traditional” data science now. A significant percentage of DS job posts are looking for folks with extensive deep learning, AI, NLP, and LLM/genAI expertise. I think this is dumb because it’s just the same thing we’ve seen with every other overly hyped technology. Remember blockchain? It’s a good solution to a limited set of problems, but EVERYONE started trying to hire blockchain expertise and just shoehorn it in everywhere. Same thing is happening with AI these days. Companies are veering hard into AI, yet they have little to no strategy for what the heck they’re going to do with it. And we’ve all seen numerous examples already of costly AI initiatives which were complete duds. E.g., many of the AI-enabled website builders or Descript’s (if you’re familiar with that software) AI integrations. It’s like  world has momentarily lost their minds and thrown out the usual effective approaches: define strategy, design product using UI/UX good practices, etc. 
+
+ Anyway, I feel like hiring in DS is more broken than it’s ever been. Many roles require up to 10 rounds of interviews (I’ve started saying no to any with more than 6), there’s little in common from one company to the next (so study and prep requires an inefficient shotgun approach), and base pay is abysmal.
+
+I feel like whatever is going on out there has radically reduced our earning power. After being with an organization for almost seven years it’s quite likely I was under compensated, and should be able to expect a healthy pay bump in my next role, right? Nope! It’s looking like my real earning potential DECLINED. I WAS making $150K (with a decade of experience as a Senior DS for a tech company), and now many roles I’m seeing are offering $120-$150K, even for management roles (manager or DS) or principal/lead DS roles. It’s insane to me. I’ll probably take the first role I can get an offer for and then keep looking for a higher paying role.
+- It's an employers market at the moment. Interviews are tough in these markets as they can be very selective on their criteria which may often be arbitrary (e.g. experience with this specific tool etc..). 
+
+The positive news is that it is a numbers game and in general with enough effort you can land something where you learn and can pay the bills. Data is a strong industry and the skills are widely valuable in organizations.
+- [removed]
+- Causal inference in finance? I'm intrigued... what's the context you have used it? We'll have a very similar topic coming up soon! 😄
+
+Interviews are a shitshow. I'm still trying to figure out how to find a good data scientists without having an interviewing process with 14 interviews and entirely BS questions... but short concise and helpful for both sides
+- I’m so happy for this post. I thought I was the only one who was overwhelmed.
+- Just curious what your causal inference stack looks like? I learned it in an academic social science background and occasionally advocate for using a full blown DAG - propensity score - weighting setup. I didn’t think business minded stakeholders would be up to the task of a full blown causal inference FTE.
+- > Like I have been doing this niche job within the DS world (causal inference in the financial space) for 5 years now, and quite successfully I might add. Why do I need to be able to identify a quartic trend or explain the three gradient descent algorithims ad nauseum? Will I ever need to pull out probability and machine learning vocabulary to do my job? I’ve been doing this (Causal Inference) work for which I’m interviewing for years, and these questions are not exemplary of this kind of work.
+
+You are looknig at the job interview all wrong. Its not a "yes you are good enogh you get the job" vs "No you are good enough you don't get the job". In truth most interviews you'll go to you end up in the class "Yes you are good enough, but so is this other candidate that we had a better feeling about, so you don't get it". 
+
+We bring in maybe 10 candidates for some positions, and all or most are decent enough to get the job otherwise they wouldn't pass early screening. But we only have one position to fill. So which do we chose? Well, the one we have the best feeling about, which includes their ability to solve a broad range of problems, or just probing their attitudes and reactions about them. 
+
+We recently had a candidate come in for a position who answered to a question "I don't know that, but if a task required it, I would definately be able to learn that", and that was a **perfectly** good answer. Another candidate on a different question gave us an answer that amounts to "I should't have to know that, and you are stupid for asking me that, because I don't think the position should deal with that, and your organisation is propably set up all wrong". Guess which candicate we lean towards when both are techincally capable of doing the job?
+- The question you've to ask is, if someone else nails them and that's exactly the type of skills they want, why would they take you on instead, when all they can go on is trust that you're successful at your own niche? 
+
+They're just asking what's obvious to them, because that's the type of DS they're doing. I've had so many very successful looking DS candidates fail to tell me the difference between xgb and RF. I will never hire a person who can't answer that. Even though someone who only deals with NNs might never have contact with xgb it just screams red flag to me.

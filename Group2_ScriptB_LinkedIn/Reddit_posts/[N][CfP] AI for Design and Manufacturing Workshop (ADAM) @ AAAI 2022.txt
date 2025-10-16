@@ -1,0 +1,31 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/puxsbg/ncfp_ai_for_design_and_manufacturing_workshop/
+Title: [N][CfP] AI for Design and Manufacturing Workshop (ADAM) @ AAAI 2022
+
+Content:
+Hello [r/MachineLearning](https://www.reddit.com/r/MachineLearning/)!
+
+Advances in complex engineering systems such as manufacturing and materials synthesis increasingly seek artificial intelligence/machine learning (AI/ML) solutions to enhance their design, development, and production processes. However, despite increasing interest from various subfields, AI/ML techniques are yet to fulfill their full promise in achieving these advances. Key obstacles include lack of high-quality data, difficulty in embedding complex scientific and engineering knowledge in learning, and the need for high-dimensional design space exploration under constrained budgets.
+
+This workshop aims to bring together researchers from core AI/ML, design, manufacturing, scientific computing, and geometric modeling. Our intent is to facilitate new AI/ML advances for core engineering design, simulation, and manufacturing. Outcomes include outlining the main research challenges in this area, cross-pollinating collaborations between AI researchers and domain experts in engineering design and manufacturing, and sketching open problems of common interest.
+
+Paper submission begins on October 1st and we invite paper submissions on the following (and related) topics:
+
+* New theory and fundamentals of AI-aided design and manufacturing,
+* Novel AI-based techniques to improve modeling of engineering systems,
+* Integration of AI-based approaches with engineering prototyping and manufacturing,
+* Novel methods to learn from scarce/sparse, or heterogenous, or multimodal data,
+* Novel ML methods in the computational material and physical sciences,
+* Novel ML-accelerated optimization for conceptual/detailed system design,
+* Novel AI-enabled generative models for system design and manufacturing,
+* ML-guided rare event modeling and system uncertainty quantification,
+* Development of software, libraries, or benchmark datasets, and
+* Identification of key challenges and opportunities for future research.
+
+Workshop website: [https://adam-aaai2022.github.io/](https://adam-aaai2022.github.io/)
+
+Submission website: [https://openreview.net/group?id=AAAI.org/2022/Workshop/ADAM](https://openreview.net/group?id=AAAI.org/2022/Workshop/ADAM)
+
+Submission deadline: November 12, 2021
+
+Comments:

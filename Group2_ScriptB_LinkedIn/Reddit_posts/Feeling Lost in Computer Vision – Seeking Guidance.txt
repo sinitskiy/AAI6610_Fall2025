@@ -1,0 +1,122 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ksq1e4/feeling_lost_in_computer_vision_seeking_guidance/
+Title: Feeling Lost in Computer Vision – Seeking Guidance
+
+Content:
+Hi everyone,
+
+I'm a computer engineering student who has been exploring different areas in tech. I started with web and cloud development, but I didn't really feel connected to them. Then I took a machine learning course at university and was immediately fascinated by AI. After some digging, I found myself especially drawn to computer vision.
+
+The thing is, I think I may have approached learning computer vision the wrong way. I'm part of the robotics vision subteam at my university and have worked on many projects involving cameras and autonomous systems. On paper, it sounds great but in reality, I feel like I don’t understand what I’m doing.
+
+I can implement things, sure, but I don't have a solid grasp of the underlying concepts. I struggle to come up with creative ideas, and I feel like I’m relying on experience without real knowledge. I also don’t understand the math or physics behind vision like how images work, how light interacts with objects, or how camera lenses function. It’s been bothering me a lot recently.
+
+Every time I try to start a course, I end up feeling frustrated because it either doesn’t go deep enough or it jumps straight into advanced material without enough foundation.
+
+So I’m reaching out here: Can anyone recommend good learning resources for truly understanding computer vision from the ground up?
+
+Sorry for the long post, and thanks in advance!
+
+Comments:
+- honestly, chatgpt. ask it to explain everything you don’t understand in detail, until you do.
+- [https://szeliski.org/Book/](https://szeliski.org/Book/)
+
+can be downloaded at the link on the site
+- Here you go
+
+https://homepages.inf.ed.ac.uk/rbf/HIPR2/hipr_top.htm
+
+https://pyimagesearch.com/start-here/
+
+"If you want to make a pencil, you must first create the universe". If you are talking about physics and lenses, I suggest you define a scope, as you can keep drilling down on anything. 
+
+Cv is like any other subject in engineering, you can never know everything there is, but need to know how to look it up and learn when it is needed. 
+
+My approach to learning - make stuff until I reach a gap in knowledge, then look up/learn/drill down to the level that suites me.
+
+It's on you how much you want to drill, but rember that you can start at CNN and end at subatomic particles.
+
+Think what is the best way for you to understand a subject - reading a manual? Building an example? For me it's developing some formulas or building something from scratch. 
+
+Good luck
+- https://fpcv.cs.columbia.edu/
+- So what concepts do you not understand?
+- Udemy has some good courses on CV.   
+This one was great, but might be a bit out of date now - [https://www.udemy.com/course/modern-computer-vision/](https://www.udemy.com/course/modern-computer-vision/)
+- You don't really need to understand every detail of the full tech stack to work with it. Get comfortable learning just enough to complete each task (and get guidance from senior mentors regarding approach as they HAVE learned all this stuff over many years).
+
+Then break down all the things you want to learn and go one by one: Optics, CCD and CMOS sensors and photosites, traditional image processing, etc....
+
+Eventually you'll grok enough to be able to reason across the full stack and come up with effective solutions to various challenges.
+- You should honestly just browse YouTube tutorials for a technique that you think looks interesting (object detection) but then apply it to a domain that you personally find interesting (the number of books on a bookshelf at your local bookstore). Follow the tutorial as close as you can but apply it to your domain, then add flavor to it: instead of just detecting the books, crop the image from each detected book, and run OCR on it to get the title (find a tutorial on OCR). Store all that information in a database and then do something silly, like some spatial analysis based on the names of books, IDK.
+
+The best way to learn imo is to do it and get your hands dirty, and run into unexpected problems you have to solve yourself. And the only way to stay motivated is to apply it to something you find interesting.
+- I feel you. I dipped my toe into it. My brother works in CV writing algorithms. He's kind of at the level where he is casually aware of OpenCV and similar libraries but doesn't use it because he writes the implementation himself.
+
+I've been poking him here and there for information. But at the end of the day you kind of need all the math classes to really capture some of these concepts. So while I have a high level understanding, I don't know if I'd be able to come up with a custom implementation on my own yet.
+
+But that doesn't stop me from trying. I have a whole tangle of rust code I take a whack at whenever I work up the chutzpah. Every time I walk away a bit smarter haha.
+- You seem to be really interested in physics behind image formation, (or just image formation in general). 
+
+You don't necessarily need to know things that in depth depending on what you're doing, but if this is really what interests you:
+
+- [Physics based Methods in Vision @ CMU](https://www.cs.cmu.edu/~motoole2/16823-s20/)
+
+- Computer Graphics concerns itself with similar topics. There are many books/tutorials on this subject. I'm not really well versed in this, frankly (not much beyond a poor understanding of computer graphics so I could implement a NeRF). You could look into [Physically Based Rendering](https://pbr-book.org/) -- there's probably way better resources out there though, this is just something that came to mind. 
+
+- [Szelski's book](https://szeliski.org/Book/) briefly talks about this stuff in the beginning, though it's a bit surface level and doesn't do that much handholding, if I remember correctly.
+
+- Learn about projective geometry, camera calibration, that sort of thing
+
+- Image Processing texts, like the [one by Gonzalez and Woods](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728) touches upon this. You can probably find a free version floating around online somewhere.
+- it sure sounds like you just need to get good with the math. what's your math background so far?
+
+how well do you understand linear algebra? i mean: give some specific examples of something that's particularly neat to you in linear algebra / near the edge of your confidence, so i can judge your depth of understanding
+- You're suffering from imposter syndrome. Google it. It's real. 
+
+1st. You sound like a fantastic engineer. The fact you are frustrated you don't understand everything means you'll learn it, and be the best in your field. 
+
+Unfortunately it also means you're going to feel a bit crappy while you figure it out. 
+
+You may also miss dinner short term opportunity too. You went feel confident enough to do it/apply or you'll be doing a deep dive on some unnecessary thing when you should be completing an assignment. 
+
+All that being said, you'll end up with the best, most in depth understanding. 
+
+Stick with it.
+
+The advantage you have today that many of us with similar mindsets, you have chat gpt. Although I suggest you use Gemini and deep search too! So your potential is WWWAAAYYYY higher than the past generations of people. You can actually learn and read all you wish, faster than previously possible.
+- It doesn't solve my problem. i want to understand vision to be able to come up with creative approaches by using my mind. Not every time i have a problem converts to 2 hour chat with GPT
+- PyImageSearch is a good source
+- Math, i think i never tried to solve any problem using math. i always search for coding approaches , but in most cases, math is more accurate and eliminates any error.
+- > He's kind of at the level where he is casually aware of OpenCV and similar libraries but doesn't use it because he writes the implementation himself.
+
+
+What's his reason for this? Sounds like a former college of mine who refused to use libraries for no reason which made development and testing 5x longer than it should.
+- \- Hey chatgpt, i need to do this and that. any ideas?
+
+\- Here is a solution. It's based on X, Y, Z technologies and principles.
+
+\- Explain how X works
+
+\- It works by using algorithms A and B
+
+\- What is B and how does it work
+
+\- B is ... and what it does is ...
+
+So on and so forth. You learn by asking, over time you'll accumulate knowledge (and experience which will unlock your creativity). For deeper and more detailed math you'll be using books, but at that point you'll at least know what to look for. No idea why would this not solve your problem.
+
+>Every time I try to start a course, I end up feeling frustrated because it either doesn’t go deep enough or it jumps straight into advanced material without enough foundation.
+
+If a course is too easy, you either skip it or just cruise through. If a course becomes too hard suddenly, this means you've discovered a gap in your knowledge which you need to fill independently i.e. additional homework for you.
+- Use LLMs to learn concepts, not just to provide you solutions.  They are incredible tutors.  I find it helpful to start with an academic resource (textbook, papers, etc) and then use LLMs to probe my own understanding like it’s my personal PhD mentor.  It’s a very effective way to learn.
+- ???
+
+How do you avoid using mathematics?
+
+Do you mean you don't have a fundamental understanding of how the algorithms that you call from libraries work? Because it's all just maths.
+
+If you want to learn to solve problems using maths you should solve problems using maths and learn from the process. But using mathematical rigor isn't a silver bullet and won't "eliminate any error" in any real computer vision use case.
+
+How confident are you with linear algebra, statistical methods, ML, and numerical methods?
+- Do you have a concrete example? Optical flow?

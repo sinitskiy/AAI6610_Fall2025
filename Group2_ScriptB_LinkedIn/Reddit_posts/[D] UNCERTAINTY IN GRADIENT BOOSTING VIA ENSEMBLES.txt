@@ -1,0 +1,21 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/16oaco8/d_uncertainty_in_gradient_boosting_via_ensembles/
+Title: [D] UNCERTAINTY IN GRADIENT BOOSTING VIA ENSEMBLES
+
+Content:
+Paper: [https://doi.org/10.48550/arXiv.2006.10562](https://doi.org/10.48550/arXiv.2006.10562)
+
+Hi all, This paper explores the use of using a single model (meaning an ensemble of trees) to generate uncertainty.
+
+This technique has been implemented into catboost. My question is why hasn't this been implemented into xgboost? The technique looks easily applicable but I would have expected it to be implemented already as it is 2 years old.
+
+Is this for some reason not applicable to Xgboost?
+
+&#x200B;
+
+[Figure 1 from paper showing the 'virtual' ensemble](https://preview.redd.it/pfm4u3m5skpb1.png?width=486&format=png&auto=webp&s=32d215943afd6c4662222c5598c34b523dd0819c)
+
+Comments:
+- The answer is pretty simple, its made by Yandex. Yandex owns Catboost. Of course, they won't implement it in other frameworks.
+- Hmm, I suppose it's the authors' prerogative as to how to implement their research in order to achieve their goals of publishing a paper and making it reproducible. They're not software engineers or library writers.
+- If the research is good then ideally someone else could make a PR. This makes me question whether it's useful research. I don't have the necessary understanding on this topic to judge myself.

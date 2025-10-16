@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1m5laez/aptamer_folding_and_selection/
+Title: Aptamer folding and selection
+
+Content:
+**How can we automate the post-SELEX process for aptamer selection and folding?**  
+We currently have a set of 100s of sequences that have been narrowed down to 10-30 candidates after SELEX. The goal is to identify the sequence best suited for a specific antigen and optimize its folding. Currently, the workflow involves shortlisting a few candidates, followed by ELISA testing to determine binding affinity. What computational methods or algorithms can be employed to automate the evaluation of these sequences for binding affinity and predict optimal folding configurations, thereby streamlining the selection process post SELEX?
+
+u/bioinformative u/AI u/Machine-Learning u/aptamers u/Selex
+
+Comments:

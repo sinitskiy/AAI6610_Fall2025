@@ -1,0 +1,50 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/oarqka/d_research_on_predictive_uncertainty_confidence/
+Title: [D] Research on predictive uncertainty / confidence?
+
+Content:
+ I'm interested in learning about advances on modeling uncertainty in deep learning, particularly for classification. I know there are some papers from Google \[1,2\] and some work on Bayesian NNs but have there been any significant changes or improvements?
+
+Any code / implementations are also appreciated.
+
+\[1\] [https://arxiv.org/abs/1612.01474](https://arxiv.org/pdf/1612.01474.pdf)
+
+\[2\] [https://arxiv.org/abs/1906.02530](https://arxiv.org/abs/1906.02530)
+
+Comments:
+- It's not new (2016), but a quite simple way of estimating uncertainty is [Monte Carlo Dropout](https://arxiv.org/pdf/1506.02142.pdf).  It is mentioned in the paper you mention.  Basically you simply keep dropout enabled at inference time instead of disabling it like you would normally.  Then you make multiple predictions with dropout enabled which will give you a distribution of prediction.  You have to balance the amount of dropout in the NN to get a good uncertainty estimation though.
+- Hope those links help. Try search for varational inference.
+
+https://leimao.github.io/article/Introduction-to-Variational-Inference/
+http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf
+https://www.cs.uoi.gr/~arly/papers/SPM08.pdf
+http://www.cs.jhu.edu/~jason/tutorials/variational.html
+https://cse.buffalo.edu/faculty/mbeal/thesis/
+https://users.fmrib.ox.ac.uk/~chappell/papers/TR07MC1.pdf
+https://github.com/jluttine/variational-bayes-book
+https://people.eecs.berkeley.edu/~wainwrig/Papers/WaiJor08_FTML.pdf
+- There was a Neurips 2020 tutorial on **"Practical Uncertainty Estimation and Out of Distribution Robustness in Deep Learning"** by some Google people. So pretty recent.
+
+My takeaway from there was there are some simple baselines to get uncertainty, but in general do not work well when dataset shifts.
+
+* Monte-carlo dropout (do many dropouts of the model and average over predictions)
+* Recalibration with Temperature Scaling minimizing loss with respect to a recalibration dataset.
+* Running deep ensembles (restarting training of the network with different initializations) and also over hyperparameters.
+* Bootstrap by resampling the dataset with replacement and retrain (doesn’t work as well as ensembles)
+
+The authors recommend probabilistic ML (Bayesian NNs) and Ensembling many NNs (different from running deep ensembles).
+
+I (not affiliated w Google) summarised the tutorial in [this blog post](https://suzyahyah.github.io/review/2020/12/12/NEURIPS2020.html), and if it looks like what you're after, you can get the full [11 hours tutorial](https://nips.cc/virtual/2020/public/tutorial_0f190e6e164eafe66f011073b4486975.html) here.
+- Are there any good primers on this for non NN methods? (With classification, not regression). 
+
+The only "generic" approach I know for evaluating uncertainty at inference time, is having a calibrated model (and looking at it's predicted probability), +- using an ensemble of models, +- TTA (Test time augmentation \[[https://github.com/SeffiCohen/ICU-Survival-Prediction](https://github.com/SeffiCohen/ICU-Survival-Prediction)\] "ICU Survival Prediction Incorporating Test-Time Augmentation to Improve the Accuracy of Ensemble-Based Models" (publishing soon on IEEE) )
+- Maybe check out this "approximate Bayes" approach. Easy to use with Pytorch, however I am facing huge difficulties with finding the optimal hyperparameters for training. 
+
+https://github.com/team-approx-bayes/dl-with-bayes
+- checkout [https://arxiv.org/abs/1912.02757](https://arxiv.org/abs/1912.02757)  
+The principle of Deep Ensembles is quite easy and BNNs aren't always the best choise.
+- You might be interested in the concept of [distributional generation](https://arxiv.org/pdf/2009.08092.pdf), which doesn't focus on average train/test set *error* so much as the entire distribution of predictions (e.g., softmax-ed outputs). In other words, how do you make training and test set predictions have similar output distributions, rather than similar losses or accuracies? This work is related to the bias-variance tradeoff and how overparameterized models interpolate the training data, and applies to any model (not just neural nets). Another [recent paper](https://arxiv.org/pdf/2106.13799.pdf) builds on this and looks at model *calibration* and its connection to distributional generalization.
+- Look up evidential deep learning - you train the model to predict a higher order dirichlet distribution instead of direct labels, which is a beautiful way to capture uncertainty in NNs.
+- what's wrong with just using Quantile Regression?
+- It's binary classification, on a discrete target.
+- Ah sorry

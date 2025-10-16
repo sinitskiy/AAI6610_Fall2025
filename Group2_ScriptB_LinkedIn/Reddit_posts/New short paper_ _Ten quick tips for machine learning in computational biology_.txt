@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/7ihkj3/new_short_paper_ten_quick_tips_for_machine/
+Title: New short paper: "Ten quick tips for machine learning in computational biology"
+
+Content:
+
+
+Comments:

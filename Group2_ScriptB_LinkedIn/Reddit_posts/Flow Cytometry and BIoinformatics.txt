@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ksj647/flow_cytometry_and_bioinformatics/
+Title: Flow Cytometry and BIoinformatics
+
+Content:
+Hey there,  
+After doing the gating and preprocessing in FlowJo, we usually export a table of marker cell frequencies (e.g., % of CD4+CD45RA- cells) for each sample.
+
+My question is:  
+Once we have this full matrix of **samples × marker frequencies**, can we apply post hoc **bioinformatics or statistical analyses** to explore **overall patterns**, like correlations with clinical or categorical parameters (e.g., severity, treatment, outcomes)?
+
+For example:
+
+* PCA or clustering to see if samples group by clinical status
+* Differential abundance tests (e.g., Kruskal-Wallis, Wilcoxon, ANOVA)
+* Machine learning (e.g., random forest, logistic regression) to identify predictive cell populations
+* Correlation networks or heatmaps
+* Feature selection to identify key markers
+
+Basically: is this a valid and accepted way to do **post-hoc analysis** on flow data once it’s cleaned and exported? Or is there a better workflow?
+
+Would love to hear how others approach this, especially in clinical immunology or translational studies. Thanks!
+
+Comments:
+- ... this is what everyone has been doing? For example:
+
+[https://www.nature.com/articles/s41596-021-00550-0](https://www.nature.com/articles/s41596-021-00550-0)
+- of course, why wouldn't it be? you're just describing hypothesis-free approaches.
+- I'm interested in seeing the responses you will get. I have thought the same
+- I convert those table outputs to Prism format for statistics using this app I made. Just quickly visually scan through the plots that come out from this too to see if they're interesting.
+
+github.com/SameOldSamOld/flowjotter

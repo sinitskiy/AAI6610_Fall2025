@@ -1,0 +1,73 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cuwypm/top_paid_skills_in_data_science_in_2024/
+Title: Top paid skills in data science in 2024?
+
+Content:
+Howdy folks. Im looking for some feedback on the job market for data in 2024 and maybe some advice on where to align my direction. Im aware of the job market possibly being iffy, but that doesn't mean I can just stop searching or trying. I've been a Senior Data Analyst for the last two years, and have 7 years of analytics/marketing/project management experience before that. I'm fairly underpaid as of right now and trying to get out of my job asap as I feel like Ive never gotten the support I need and the role is consuming my life, Ive barely had any significant time off in the last two years outside of Christmas/Thanksgiving time. 
+
+Can anyone possibly speak to the top skills in data science they're seeing people are hiring for OR skills that typically garner the most money? In order of experience/work I've utilized:
+
+Excel (Advanced), Tableau (Advanced), ETL (Basic to Intermediate), Python (Basic to Intermediate), and Statistics (Basic to Intermediate).
+
+Ive started a course in Machine Learning but put it on the back burner due to job searching/trying to get out asap. 
+
+Im aware this will somewhat depend on where I'm orienting but just wondering anyone can advise on what skills are most in demand or keep getting hired for. The one Ive seen mentioned the most while researching is getting models into production.
+
+Can anyone possibly advise on what they're seeing/know?
+
+Comments:
+- How are your leadership and communication skills? IMO the most needed skills in data science right now are:
+
+* The ability to clearly communicate the impact of data projects to business leaders so they can see the value. 
+* The ability to take business requirements and clearly communicate them to the data team so they can develop something that supports the business. 
+* The ability to explain a dashboard and how to people who don't know (or care) where the data comes from, they just want to know what it's telling them. 
+
+Those skills pay in that few people have them and they're critical for leadership roles. They're also like a cheat code for interviews - if you can articulate the project from start to finish, including the business impact, you're going to put yourself ahead of 95% of the other candidates competing for a role. They're not a golden ticket, but they'll get you in the conversation. 
+
+You can go hard on the technical side, but most of the data roles don't require crazy technical skills, they need the RIGHT technical skills and a lot of context. Look for a variety of titles. We understand the difference between data scientist, data analyst, data engineer and ML engineer, but a HUGE number of recruiters and hiring managers don't have a clue.
+- There are a few things you can do to maximize salary: 
+
+- skills - obviously more advanced skills pay more. From what I’ve seen roles requiring ML and engineering (or both) skills will pay more. After that, stats and inference skills help. Also a role requiring Python or R will pay more than one using just SQL or Tableau/PowerBI which will pay more than one requiring just Excel. 
+
+- leadership - demonstrating that you can lead people or projects, from end to end, without hand holding. Also showing that you can scope out projects and also identify what will best support business goals and make the most impact or have the highest ROI. 
+
+- industry- typically tech and finance pay more than marketing and healthcare which pay more than government or nonprofits. Simply moving to a different industry even for the same or similar role can pay off. 
+
+- leveling - getting a higher level will pay more. But also demonstrating that you’re at the high end of the level you’re interviewing for can pay off with a higher offer or leverage to negotiate for more. Study and prep for interviews can literally pay off.
+
+I wrote a blog post about this if anyone is interested.
+- Upskilling in Python and ML is key. Try to get more hands-on experience with model deployment and cloud platforms like AWS or Azure. Data engineering skills are also in high demand. Good luck!
+- [removed]
+- When it comes to pay, the industry sector and the function matters.  Credit risk analytics in financial services pays much more than supply chain ML, which pays more than edtech, which pays more than gov’t sector.  Marketing typically pays less than product.  And managers are always paid more.
+- I think many people here will focus on soft skill like leadership, communication, business acumen, ect. While these are important recruiters and hiring managers are rarely putting these skills at the top of their list when looking to hire for a new role. There is an expectation that if you are at X level you will at least have a competency of Y in these soft skills. You will obviously need to demonstrate this in the interview but those skill aren't what is going to qualify you for that high paying data science job. However if you are looking for an internal promotion these are probably the skills to focus on. 
+
+  
+What really separates earning potential in my experience is how skilled you are on the engineering side of the work. Really any data scientist can make an ML model, run an ad hoc experiment, or build a dashboard. The difficult part tends to be is how do you deploy all this, how do you automate all this, can you build your own ELT or data pipeline to support this work if needed. Also ML data science work usually pays higher then product or experimentation DS
+- I’m learning about causal inference and some econometrics related stuff. It’s been incredibly useful, hasn’t lead to more pay yet but being effective at your job typically does over time.
+- I read a databricks (I think) article once that put data scientists in two groups. 
+
+Group 1 was PhD statisticians and academics who could build great models from the ground up. But they would get too caught up in details and make simple problems way more complex than they need to be. Teams of these are ineffective because they are simply too slow for any company to depend on. 
+
+Group 2 was boot camp type data scientists. I think this is probably where you fall. They throw models at problems until something sticks. But they tend to over simplify. The business can’t rely on these types because their models are prone to breaking. And they tend to overstate their abilities. 
+
+Good data science teams need the boot campers, the academics, good data engineers, and some ML engineers. And at least one person who knows enough about each role to manage it and sell the program. 
+
+Every one of those niches requires knowledge of python (spark especially), SQL, databases, at least some CI/CD (commits, branches, pulls, etc). They should know the basics of how ML models structure data, and subject matter knowledge is helpful. Network knowledge is helpful too! 
+
+Once you get that foundational knowledge, get good at the specific things that your niche role requires. But most importantly, sell yourself. Know your limitations, but know what you specifically bring to the organization. You can never know everything, but your specific combination of knowledge is rare. Make it sound extremely valuable.
+- [deleted]
+- If you don't want to compete with bunch of idiots, who excuse their inability to create decent model with their "ability to communicate" you have to hard learn a lot of math, different areas in ML, pyspark, airflow, kubernetes...  Also you have to win few competitions.
+
+It's easier to pretend that you have great soft skills whatever it means. But you can be fired at first crisis in company and after that it will be hard to find new job if you haven't any hard skills.
+- Machine learning details. And good grasp on pytorch. Ability to read research literature and digest it.
+- [removed]
+- Increase your Stats knowledge. Statistics leads into Regression and into more advanced ML models. Unless you have that good base, you’ll struggle forever. On top of that Anyone who’s hiring in Data (aside from governance) is going to want a candidate with high level stats knowledge. 
+
+It’s the difference between building cute dashboards that excite stakeholders for a quarter and being able to create actionable insights that drive revenue.
+- Apart from creating models: Strong software engineering skills, ML deployment, ELT pipeline creation (production worthy)
+- CUDA and GPU programming. It's really low-level stuff, so I doubt most people here (who come from stats/math/physics background) have the skillset to work on it.
+- Python/R, ML, and optimization if you can could be all you need to land a really nice job
+- What kind of salary are you targeting? Are you sure what you make is lower than the market for your current skill set? What kind of path are you aiming for, more data analysis or more DS/DE? Also what’s with the weird ages in the previous Reddit posts? From late 20s to 30s to exactly 36… someone has a lying issue?
+- Speak business value it has not changed, that and productionising models
+- Power point, Excel
+- I see a lot of higher paying DS/MLE jobs in NLP and LLM.

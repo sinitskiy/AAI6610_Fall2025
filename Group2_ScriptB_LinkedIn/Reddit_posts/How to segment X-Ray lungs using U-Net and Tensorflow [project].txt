@@ -1,0 +1,40 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1irlffj/how_to_segment_xray_lungs_using_unet_and/
+Title: How to segment X-Ray lungs using U-Net and Tensorflow [project]
+
+Content:
+https://preview.redd.it/v01u6mz5ppje1.png?width=1280&format=png&auto=webp&s=cd51a0223105af98e2c4eee3d064492d4a500bf3
+
+This tutorial provides a step-by-step guide on how to implement and train a U-Net model for X-Ray lungs segmentation using TensorFlow/Keras.
+
+ 🔍 What You’ll Learn 🔍: 
+
+ 
+
+**Building Unet model :** Learn how to construct the model using TensorFlow and Keras.
+
+**Model Training:** We'll guide you through the training process, optimizing your model to generate masks in the lungs position
+
+**Testing and Evaluation:** Run the pre-trained model on a new fresh images , and visual the test image next to the predicted mask .
+
+ 
+
+You can find link for the code in the blog : [https://eranfeit.net/how-to-segment-x-ray-lungs-using-u-net-and-tensorflow/](https://eranfeit.net/how-to-segment-x-ray-lungs-using-u-net-and-tensorflow/)
+
+Full code description for Medium users : [https://medium.com/@feitgemel/how-to-segment-x-ray-lungs-using-u-net-and-tensorflow-59b5a99a893f](https://medium.com/@feitgemel/how-to-segment-x-ray-lungs-using-u-net-and-tensorflow-59b5a99a893f)
+
+You can find more tutorials, and join my newsletter here : [https://eranfeit.net/](https://eranfeit.net/)
+
+**Check out our tutorial here :** [ https://youtu.be/-AejMcdeOOM&list=UULFTiWJJhaH6BviSWKLJUM9sg](%20https:/youtu.be/-AejMcdeOOM&list=UULFTiWJJhaH6BviSWKLJUM9sg)
+
+
+
+Enjoy
+
+Eran
+
+ 
+
+\#Python #openCV #TensorFlow #Deeplearning #ImageSegmentation #Unet #Resunet #MachineLearningProject #Segmentation
+
+Comments:

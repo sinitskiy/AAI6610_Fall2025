@@ -1,0 +1,97 @@
+URL: https://www.linkedin.com/posts/towards-data-science_uncertainty-quantification-in-machine-learning-activity-7349644304711118848-2Nhz
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Towards Data Science的动态
+Towards Data Science
+
+643,504 位关注者
+
+2 个月
+
+Enter ML Uncertainty: a Python package designed to address this problem. Requiring only about 4 lines of code to perform these estimations, the package leverages powerful and theoretically rigorous mathematical methods in the background. 
+
+Read the full article by Archit Datar, no paywall.
+
+Uncertainty Quantification in Machine Learning with an Easy Python Interface | Towards Data Science
+https://towardsdatascience.com
+14
+2 条评论
+赞
+评论
+分享
+Aspita Sunday
+
+Computer Scientist (First-Class) | Data Scientist & Researcher | Global AI Presenter (China, Hong Kong) | Zindi Country Ambassador | Mentor, Yale University Nigeria | Judge, Deep Learning Indaba
+
+2 个月
+
+Love posts such as this, short , concise and informative 👏  
+
+赞
+回复
+2 次回应
+
+要查看或添加评论，请登录
+
+643,504 位关注者
+
+查看档案  关注
+更多文章
+🔎 What's on our reading list this week?
+Towards Data Science  3 个月
+✨ What's on our reading list this week?
+Towards Data Science  4 个月
+✨ What's on our reading list this week?
+Towards Data Science  4 个月
+探索相关领域
+How to Manage Uncertainty in Supply Chains
+How to Include Uncertainty in Optimization
+How to Navigate Uncertainty with Proactive Strategies
+How to Navigate Uncertainty with Smart Choices
+The Impact of Uncertainty on Innovation
+How to Address Overfitting in Machine Learning
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

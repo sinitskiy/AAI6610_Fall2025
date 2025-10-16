@@ -1,0 +1,58 @@
+URL: https://www.linkedin.com/posts/csrc-tech_weatherai-probabilisticforecasting-ai4climate-activity-7344039249978998786-JZEX
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Center for Strategic Research in Critical Technologies (CSRCT)的动态
+Center for Strategic Research in Critical Technologies (CSRCT)
+
+2,994 位关注者
+
+3 个月
+
+What if a global weather ensemble could run in under a minute—and still beat the best physics and ML forecasters?
+
+Google DeepMind’s new FGN model shows it’s possible.
+
+Key take-aways we find strategic: 
+1. FGN improves marginal CRPS vs. the previous SOTA GenCast on 99.9 % of variables/levels, with gains up to 18 %. 
+2. Eight-times faster inference. A full 15-day, 6-hourly ensemble rolls out in ≈60 s on one TPU-v5p, thanks to a single forward pass instead of diffusion loops—despite the model being larger and higher-rate. 
+3. Joint structure, not just pixels. FGN cuts pooled-field CRPS by ≈8 – 9 % and slashes cyclone-track position error by ~24 h relative to GenCast—evidence it learns spatial and cross-variable correlations, not mere pointwise stats.
+4. Uncertainty modelled in the weights. Ensembling four independently-trained networks and injecting low-dimensional noise through every layer lets FGN capture both epistemic and aleatoric uncertainty without costly Monte-Carlo inputs. 
+
+For CSRCT, FGN shifts the policy focus from raw FLOP counts to training design: smarter noise-in-weights and ensemble tricks can outpace brute-force scaling. That opens space for governance levers around reward functions, calibration audits, and verifier access to ensemble telemetry—not just hardware quotas.
+
+Hats off to Ferran Alet Puig, Ilan Price, Andrew El-Kadi, Dominic Masters, Alvaro Sanchez Gonzalez, Peter Battaglia & the DeepMind WeatherLab team.
+
+Read the paper: https://lnkd.in/gtrpB3nA
+#WeatherAI #ProbabilisticForecasting #AI4Climate #TechPolicy #CSRCT
+
+106
+2 条评论
+赞
+评论
+分享
+Irvin Ramos
+
+IT Project / Program Manager & Professional Narrative Visual Photographer
+
+3 个月
+
+Thanks for sharing awesome infographics
+
+赞
+回复
+Center for Strategic Research in Critical Technologies (CSRCT)
+
+3 个月
+
+Read more he

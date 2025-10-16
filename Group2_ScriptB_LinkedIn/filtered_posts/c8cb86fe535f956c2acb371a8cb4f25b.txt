@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/urmishthakker_instruction-tuning-and-instruction-following-activity-7139677912970006528-0FIg?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Urmish Thakker的动态
+Urmish Thakker
+
+Head of Generative AI
+
+1 年  已编辑
+
+
+SambaNova Systems will be at #neurips2023 ! We are presenting 3 papers and helping organize the Instruction Tuning and Instruction Following Workshop (https://lnkd.in/gTdhEshG) 
+
+1. Etash Guha will be presenting "Conformal Prediction via regression-as-classification" at the Regulatable ML Workshop at NeurIPS. Conformal Prediction is a way of quantifying the uncertainty of ML model. There are many methods that work well for classification but the infinite output space of regression makes CP challenging. More details on how they approached this problem can be found here - https://t.co/09QWMXoXGE 
+
+2. Fenglu Hong Bo Li Changran Hu Edison (Zhengyu) Chen will be presenting their work around LLM Agents at the Foundation Models for Decision Making Workshop at NeurIPS. They will diving deeper into the capabilities of open source foundation models like LLAMA , StarCoder etc across various scales in enabling LLM Agent Workflows. 
+Blogpost: https://t.co/qxChPkxC7A 
+Paper: https://lnkd.in/grzUSQpN
+
+3. Zoltan Csaki Pian Pawakapan have a paper accepted at Efficient Natural Language and Speech Processing Workshop at NeurIPS. We dive deeper into how to adapt open source LLMs to low resource languages like Hungarian and Thai with using minimum data and not sacrificing inference efficiency. We dive deeper into tradeoffs associated with partially reinitializing vocabulary for the new languages, creating instruction tuning data via translation and its impact on quality, scaling studies showing the impact of data from low resource languages etc. We compare against open source variants in these languages and show how open source models like LLAMA can quickly adapt to these languages and the best methodology to do so.  
+Paper - https://lnkd.in/gpNYDfG7 
+
+
+Most of these works have been by-products of our tireless engagements in enabling our customers succeed in their LLM Journey.

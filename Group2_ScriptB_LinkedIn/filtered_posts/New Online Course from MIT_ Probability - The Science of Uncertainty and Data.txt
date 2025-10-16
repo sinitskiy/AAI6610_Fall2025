@@ -1,0 +1,14 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/brclyr/new_online_course_from_mit_probability_the/
+Title: New Online Course from MIT: Probability - The Science of Uncertainty and Data
+
+Content:
+The world is full of uncertainty: accidents, storms, unruly financial markets, noisy communications. The world is also full of data. Probabilistic modeling and the related field of statistical inference are the keys to analyzing data and making scientifically sound predictions. Build foundational knowledge of data science with this introduction to probabilistic models, including random processes and the basic elements of statistical inference. The course is free to try:
+
+[https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)
+
+Comments:
+- This is not new. There've been a couple instances of this course already. And in order to be able to experiment the full course, it's 300 dollars.
+- All of the course material is free to access. Learners can choose to upgrade to access graded assignments or obtain a certificate of completion.
+- Yeah, cool. Thank you very much "EdX Social". That's what I meant with "experiment the full course".
+Whay is it "new"? You mean that it's just a new instance? Has it new material, or is it the same as the previous instances?

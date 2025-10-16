@@ -1,0 +1,74 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vp7muz/do_entry_level_bioinformaticians_normally_get_a/
+Title: Do entry level bioinformaticians normally get a lot of training?
+
+Content:
+Hi, I’m about to get a masters degree in bioinformatics, I got my bachelors degree in physics. Unfortunately, I don’t feel prepared to start working. I have about two years of experience scripting with R and MATLAB, however when it comes bioinformatics workflows involving things like RNAseq or ChIPseq analysis, I have very surface level exposure. I worked with a professor for around 6 months performing disorder analysis on proteins, which only involved using web applications. This summer I’ve been working with another professor and was supposed to be creating machine learning models meant to predict drug activity based on gene expression, but I haven’t started building any models yet because he’s been really busy, so this internship has been moving at a very slow pace. I took a course called Applied Computational Genomics, and was able to get some exposure to bioinformatics workflows involving R programming, but the class was ridiculously easy. I got an A+ and barely feel like I learned anything. 
+
+I got my first call today from an HR rep for an employer and I’m waiting to see if they’d like to set up an interview with me. I’m just worried that my scripting skills alone won’t be good enough and that I might lose my job if I’m hired but then it turns out that I need a lot of training. 
+
+Do people normally feel this way? Do entry level hires normally require a lot of training? I feel like my program did not prepare me enough, we focused a lot on biology, types of databases out there, concepts involving sequence alignments, but barely focused on computational stuff. I’m so worried that I wasted all of this time and money 😔
+
+Thank you for your time
+
+Comments:
+- After a masters degree, I expect that a new hire will be able to learn new methods fairly quickly, and be able to ask the right questions to get up and running relatively quickly.  You should be reasonably competent at the core skill set for which you’ve been hired, which is either physics/bio/Chen, programming or a combination of science and programming together.  
+
+I don’t expect people to know the specific techniques, but if asked to learn, will be enthusiastic about getting down to details and will be able to grasp most concepts quickly.  
+
+Bioinformatics is too big of a field to expect anyone to really do much more than that at the start
+- The NGS -omics analysis I am doing it at my jobs barely existed when I was at school. Often time, I only had a half-finished GitHub repo ( how the paper got past reviewers is beyond me ) to follow through. But if you see enough "novel" methods in the same space (for me,  in NGS short-read), everything start looking very similar.
+
+When I have to learn something new ( mostly thorough publication), here is how various skills help me out
+
+* Programming knowledge help me get through the codes and maintain productivity.
+* Bioinformatics help me get through the method section .
+* The biology help me get through the figure panels
+
+I am now sure if you will be doing the work I do but you kinda need all three in various degree, so learning on the job is expected.
+- The reality is that if you don’t have real experience, you’re going to have to find a hiring manager that is willing to let (or help) you learn. 
+
+A degree, whether it is a masters or even some PhDs, doesn’t “give you experience” inherently, and most hiring managers recognize that. We’re looking for real experiences that demonstrate you’re equipped for the job, and if you don’t have them you’re going to have to convince someone you learn fast and are willing to do so on the job.
+- I think I may have some perspective granting experience to share so I will just share a bit about what I have been doing, hopefully you'll get something out of it OP. 
+
+A forewarning though: I am extremely green in this field of work, so take my experience for what it is.  
+
+I am currently in a senior undergrad Data science major  with concentration in Bioinformatics and Genomics. I have just started working on an actual bioinformatics-type project for the first time this summer after reaching out to a professor at my school, and I can say (with some confidence) that in just 3 weeks I have learned more about the tools and jobs which I imagine a bioinformatician would be tasked with then in any 16 week class, or even any set of 16 week classes. 
+
+Currently the project has consisted of consulting online databases in order to build up a pipeline which can assist in identifying alleles which may play a role in the development of diseases for individuals exposed to air pollution. The basic idea is that there exists a fair amount of public data between resources like the UCSC Genome Browser, GWAS Catalog which can be tapped into in order to connect enough dots to hopefully inform some kind of therapeutic development. 
+
+I understand this sort of process is normal in some fields and labs, though my experience is rather limited, and thus I honestly am developing my process as I go, and not following a formally defined structure. 
+
+That is to say that my work is fairly unguided, as the professor is essentially just touching base with me once a week to provide feedback and see how far along I have pushed things. The implication of such unguided work is twofold in my mind; 
+
+1. I have to be able to understand the big picture of the work well enough to make useful steps in the right direction.
+2. This work isn't so important to the professor, but is interesting enough for him to offer a bit of time each week towards it. 
+
+Having to choose what I do in order to make progress, and having to read many different sources of information to narrow down on what topics I need more understanding of and tools I need to learn how to use has been incredibly informative. Classes just don't teach you how to do this, nor does their structure really help develop the skill IMO. I think having this sort of project would be essential to anyone wanting to develop a real grown-up skill set like bioinformatics or data science analysis generally, as there are so few guideposts compared to normal skill level jobs. 
+
+Sorry if I overshared. Hopefully reading about my early experiences provide some insight for you!
+- DIYtranscriptomics.com is an excellent module video series on RNAseq and some downstream analyses you might want to carry out (gives you R code so you can get an idea of some of the packages and plots used). It even touches a little on scRNAseq at the end. 
+
+But also, where I'm at, there is so much on the job learning which I absolutely love!
+
+Being able to understand someone else's code will also help you a lot
+- [removed]
+- Zero training. On day 1, I was expected to read papers and/or Google my way through solutions to workflows. After two years into my job - still true to this day! 
+
+But don't be afraid to approach and talk through the problem with your supervisor to get a solid understanding of whatever you are working on. Definitely read, read, read!
+- I am about my complete my master's too in bioinformatics, and I am not even getting an interview call. :(
+- In most places you are the expert. Default is no training
+- This advice is kind of specific to US, but may be applicable outside as well - look for masters level bioinformatics analyst jobs in hospitals or similar sort of research institutes. Many hospitals pay pretty well, have a semi-academic environment and most are usually connected with local universities. This way you can learn on the job and possibly audit bioinformatics courses if offered in the university side. Heck, your potential employer may be one of the bioinformatics professors themselves. A lot of bioinformatics is running pipelines, but as you get more experiences, you learn to pick up the nuances of the data, and identify potential troublespots early.   
+Senior analyst/scientist positions usually are more about experimental design, i.e. advising biological scientists on what they need to generate and what data to give you, so that experience of picking up nuances of data is what becomes very helpful - a simple example is how many bio-replicates of rna-seq data you need for a good experiment.
+- Thank you so much, I trust your judgment on this. I now have more confidence about interviews. Before, I didn’t know if I should talk about how much of a quick learner I would be learning new things since that would essentially be hinting that I’d need training.
+- Thank you!!!
+- Thank you, this is great information
+- Thank you!!! I really appreciate your response
+- I think might have an idea why. After reading this post, I realized I was applying to jobs that no longer existed!!! I only apply to jobs that are less than a week old now, preferably less than 3 days old. Please read this post, it applies to other sites like LinkedIn and Glassdoor. These employers don’t always remove the job on these external websites once they are done reviewing applications. Always check the employers website directly to see if the job still exists. I realized that about 90% of the jobs I applied to within the past 3 weeks didn’t actually exist anymore https://www.reddit.com/r/recruitinghell/comments/r4e6rh/the_ugly_truth_of_indeed_an_hr_viewpoint/
+- Be patient and keep applying everywhere. It took me 2 years job searching to find a job in my field after graduating with my Master's in Bioinformatics. To be fair I was applying to go back home, but home is in an extremely competitive market (NY) so after not much luck, I finally looked here in the Midwest and found a great position. 
+
+I was sad to not be able to go home just yet, but sometimes you just have to suck it up and get that experience under your belt before moving on.
+- Btw, do you have a portfolio? If not, create a GitHub profile and add coding script you’ve ever created, even if it was just a class assignment (explain what it is in a ReadMe file)
+- Usually that means there’s something wrong with your resume then! Check out r/EngineeringResumes for advice or feedback
+- [deleted]
+- Even for entry level?

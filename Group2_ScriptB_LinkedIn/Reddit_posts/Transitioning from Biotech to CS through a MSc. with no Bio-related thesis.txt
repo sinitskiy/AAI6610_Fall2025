@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ak12nc/transitioning_from_biotech_to_cs_through_a_msc/
+Title: Transitioning from Biotech to CS through a MSc. with no Bio-related thesis
+
+Content:
+Hey everyone! Hope you're having a great day
+
+I'm in a bit of a crossroads and could use some advice. I have a **BSc. in Biotech Engineering** with a great background in genetic and metabolic engineering. Now, I'm considering  pursuing an **MSc. in Computer Science** at a *Research Center*.
+
+*Here's the catch:* The research conducted here *does not relate to bioinformatics* (great topics in IoT and Machine Learning, though), and I'm wondering if this might hinder my chances of entering the bioinformatics field.
+
+This might seem like a dumb question based on a lot of posts with similar questions. But, has anyone with a CS background successfully entered to a job position with no prior (heavy academic) experience in biology or genetics?
+
+Comments:
+- You will be fine. 
+There is no special curriculum for bioinformatics. While I have the feeling, and in my subjective opinion this is a good thing, people want someone with really solid biology fundamentals who can do some coding ( despite people expect to know docker, nectflow, pytorch, bioconductor and every other tool - you name it). 
+
+While I know quite a lot of CS Guys who think they are bioinformaticions, but in the end just write generic algorithms which they then apply to a predefined biological problem, most bioinformaticions are rather trying to solve biological problems with bioinformatics. You have to be in contact with the wet lab guys and try too cooperate ASAP. CS is important, but the key is domain knowledge in biology. You're not worth a penny without that (IMHO) otherwise i could just hire a software dev.

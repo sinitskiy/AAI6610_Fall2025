@@ -1,0 +1,79 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17h40ok/why_gradient_boosted_decision_trees_are_so/
+Title: Why Gradient Boosted Decision Trees are so underappreciated in the industry?
+
+Content:
+GBDT allow you to iterate very fast, they require no data preprocessing, enable you to incorporate business heuristics directly as features, and immediately show if there is explanatory power in features in relation to the target.
+
+On tabular data problems, they outperform Neural Networks, and many use cases in the industry have tabular datasets.
+
+Because of those characteristics, [they are winning solutions to all tabular competitions on Kaggle](https://jobs-in-data.com/blog/data-science-skills#sota-ml-models).
+
+And yet, somehow they are not very popular.
+
+On the chart below, I summarized learnings from 9,261 job descriptions crawled from 1605 companies in Jun-Sep 2023 (source: [https://jobs-in-data.com/blog/machine-learning-vs-data-scientist](https://jobs-in-data.com/blog/machine-learning-vs-data-scientist))
+
+LGBM, XGboost, Catboost (combined together) are the 19th mentioned skill, e.g. with Tensorflow being x10 more popular.
+
+It seems to me Neural Networks caught the attention of everyone, because of the deep-learning hype, which is justified for image, text, or speech data, but not justified for tabular data, which still represents many use - cases.
+
+https://preview.redd.it/zavuf0qnhlwb1.png?width=2560&format=png&auto=webp&s=b06cd263e22eb229a6be2df890faba7639d895d7
+
+EDIT \[Answering the main lines of critique\]:
+
+1/ "Job posting descriptions are written by random people and hence meaningless":
+
+Granted, there is for sure some noise in the data generation process of writing job descriptions.
+
+But why do those random people know so much more about deep learning, keras, tensorflow, pytorch than GBDT? In other words, why is there a systematic trend in the noise? When the noise has a trend, it ceases to be noise.
+
+Very few people actually did try to answer this, and I am grateful to them, but none of the explanations seem to be more credible than the statement that GBDTs are indeed underappreciated in the industry.
+
+2/ "I myself use GBDT all the time so the headline is wrong"This is availability bias. The single person's opinion (or 20 people opinion) vs 10.000 data points.
+
+3/ "This is more the bias of the Academia"
+
+The job postings are scraped from the industry.
+
+However, I personally think this is the root cause of the phenomenon. Academia shapes the minds of industry practitioners. GBDTs are not interesting enough for Academia because they do not lead to AGI. Doesn't matter if they are super efficient and create lots of value in real life.
+
+Comments:
+- They aren’t - LGBM and XGBoost are standard baseline models alongside linear regression in my experience.
+- Are we not skeptical enough as data scientists? The data used here is clearly not sufficient to answer your question. Job ads that list a bunch of random skills are probably written by HR (or an overworked DS) and not good to use for analysis. Good job ads care more about the person’s abilities overall, not how many algorithms they’ve collected like some sort of weird Pokémon. Thus, they probably aren’t listing many algorithms at all (including GBDT). 
+
+I would say that the first thing most data scientists do is use XGBoost or CatBoost.
+- I’m not sure job posting requirements are the best way to measure how prevalent something is or isn’t in the industry.
+- [removed]
+- I think you've proved that data is often much more important than the model you use.
+
+Your data is garbage -> your conclusions are garbage.
+- Interestingly, GBDT do nothing like 'allow one to incorporate business heuristics or provide explanatory power' for your problem statement.  If you are interested in explaining the data generating process and explaining it, and providing advisement to your team, boosting is the least informative/one of the more deceptive ways to go about it.
+
+However, this has not stopped them from becoming extremely popular (i've never taken a job that I didn't personally use them, and if you're in a purely predictive domain they're probably 90 percent of your toolbox).  Unless you are working in an industry and role where you are modeling causal effects/marginal effects, or your knowledge of the data generating process begits good prior specification for your models-tree based algorithms are your best friend most likely.  And to wrap around to the start of this post;  many practitioners without a stats background will also attribute their ability to estimate marginal/casual effects, leading to poor decision making that results in loss assets.
+
+I think this is perhaps some domain unfamiliarity on your part.  Job descriptions in general are written by people who have no idea what goes on in the actual day-today stuff unless you are in industries that are regulated.
+- 90% of our production models are lightGBM lol
+- Wait xgboost was like THE thing for years. How are they underappreciated?
+- One reason that some companies refrain from using trees is that they are not great at extrapolation when the dataset is not rich enough or has some censoring. Imagine you have a numerical feature that appears only within a certain range in your training data but you want to do predictions outside of that range. Tree based models won’t be able to differentiate different data points outside of training range. 
+
+Also explainabilility is a factor. Some business problems require global explanations on how inputs shape output. Not talking about causal inference here but more like accountability on decision making. 
+
+That being said, lgbm and xgboost are both used as go-to models for predictive modeling especially if you have a rich dataset. They are often much easier to fine tune than neural networks.
+- A vast majority of the models I’ve implemented in the real world have been GBDT. It’s never been mentioned on a job posting for a job I’ve gotten. You’re taking what a job posting written by HR says way too literally.
+- They’re pretty commonly used, but I don’t list it as a skill because it’s just one topic
+- I would say that GBDTs are underappreciated in Academia, not in the industry.
+
+In Academia most research is about NNs and when someone compares NNs to GBDTs in general the comparison is wrong, typical mistake is just using default hyperparameters for GBDTs.  
+
+In the Industry they are widely used but due to Academia's bias not often graduates have experience or even theoretical knowledge about GBDTs, but they usually learn along the way.
+- Who said they are underrated?
+- If you use Pytorch, Tensorflow, etc. and know about “model training”, guess which models you’ll be training most of the times… 
+That chart smells a bit.
+- I hire data scientists. I don’t hire anyone at all who can’t leverage tree-based models effectively and explain how they work, etc. I screen for NN design expertise only for select roles that need it. Tree-based models are part of the core expected skill set that you don’t need to list on a JD.
+- XGBoost is not a "skill". Only a data scientist™️ could be so deluded to think doing model.fit() is a skill worth mentioning
+- Under appreciated? I fuckin love em.
+- Everywhere I've been it's been the default workhorse model, including on an Applied Science team at a FAANG. 
+
+Recruiters may not know enough to give xgboost its fair due in job postings, but every team I've been on that works primarily with tabular data has used XGBoost for literally everything.
+- I’ve deployed thousands of LGBM models…?
+- Because a monkey can create and run an xgboost model. I'd much rather have someone who understands the more general aspects of model fitting, data cleaning, and other statistical methods.

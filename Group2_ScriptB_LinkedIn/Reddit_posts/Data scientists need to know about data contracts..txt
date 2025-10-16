@@ -1,0 +1,34 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1l8xqgf/data_scientists_need_to_know_about_data_contracts/
+Title: Data scientists need to know about data contracts.
+
+Content:
+Data contracts are these things that data engineers write to set up expectations of what the data looks like.
+
+And who understands the expectations better than a data engineer? A data scientist with context about how the business works.
+
+…But, most of us aren’t gonna write YAML files and glue contracts into pipelines.
+
+We don’t do that kind of dirty job…
+
+Still, if you want to stop data quality issues from showing up and impacting your machine learning models, contracts can still be the way to go.
+
+Why? Because a good data contract connects two worlds:
+
+• The business context you understand.
+
+• The technical realities your team builds on.
+
+That’s a perfect match for what great data scientists already do.
+
+Comments:
+- Is this an ad? I’m not quite understanding the point of this post
+- What tools are people using to create these contracts? Where should they be enforced in a good pipeline?
+- Good data scientists make explicit through test cases the implicit assumptions they are making of the data. 
+
+Bad  data scientists think that test cases and data quality assertions are not interesting and refuse to identify the data invariants and refuse to  define assertions on the expections they have on the input data to their models.     
+
+Unfortunately, that’s all too common.
+- This is a really underrated topic — data contracts often seem like “someone else’s problem” until bad data quietly breaks your model in production. I like the point about bridging business context with technical constraints. As a data scientist, even if we’re not writing YAML, we still need to be part of defining what good data actually means for our use case. Otherwise, we’re optimizing models on shaky ground. Thanks for bringing this up!
+- Great point
+- Same lol. Feels like a LinkedIn post but without any real nugget of wisdom at the end.

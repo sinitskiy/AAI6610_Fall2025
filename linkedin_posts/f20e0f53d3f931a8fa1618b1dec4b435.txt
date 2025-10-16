@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/gadievron_two-new-releases-this-week-on-llm-hallucinations-activity-7371368035636363264-mqh7
+Date: 2025-09-24
+Author: Unknown
+
+Two new releases this week on LLM hallucinations, one shared aim: Tackling hallucinations. And, some thoughts on how hallucinations actually affect enterprise security.
+This is some of what catches my attention when I take a break from actual work, which makes me optimistic about AI and the future, and I wanted to share it.
+
+From OpenAI, "Why Language Models Hallucinate" shows how training and evaluation push models toward being confident guessers, and the fix is to change the incentives and let models say “I don’t know”.
+
+It details how fine-tuning and benchmarks over-reward certainty while treating abstention as failure, with authors Adam Kalai, Ofir Nachum, Santosh Vempala, and Edwin Zhang
+
+Then, "Compression Failure in LLMs: Bayesian in Expectation, Not in Realization" proposes that hallucinations are compression artifacts. Meaning, LLMs "compress the internet" into weights, then decompress on demand, with sometimes iffy results, or as Leon Chlon describes it, a compression failure, inventing details, so the model fills gaps with plausible but wrong content. This trade-off can now potentially be managed.
+
+Chlon and team published the foundational theory in "LLMs are Bayesian in Expectation, not in Realization" in July, and are now releasing the follow-up, along with an open-source toolkit. Authors: Leon Chlon, PhD, Sarah Rashidi, Zein Khamis, and MarcAntonio M. Awada.
+
+In short, OpenAI frames hallucinations as an incentive problem, while Chlon’s group frames them as a compression problem. Research on hallucinations is rapidly expanding, and these two papers are just a snapshot.
+
+And in Enterprise Security?
+I hadn’t considered hallucinations as a direct security issue until yesterday, when one of our researchers at Knostic, Shayell A., dropped a demo in which Copilot leaked sensitive data, but - it was entirely fabricated.
+In security, by the time anyone finds out it's a lie, much of the damage is already done.
+
+Link to post and demo video: https://lnkd.in/dnHpzQeQ
+
+Bottom line:
+Hallucinations are complex and not something that any one fix will solve, but seeing so many approaches come together makes the future look bright. As we learned in security, if we change the incentives, we change the outcomes.
+And for security, we must ensure our guardrails and policies cover hallucinations as well.
+
+References in first comment.

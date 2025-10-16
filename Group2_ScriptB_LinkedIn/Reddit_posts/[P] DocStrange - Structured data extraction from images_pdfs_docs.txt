@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n0jwj7/p_docstrange_structured_data_extraction_from/
+Title: [P] DocStrange - Structured data extraction from images/pdfs/docs
+
+Content:
+I previously shared the open‑source library DocStrange. Now I have hosted it as a free to use web app to upload pdfs/images/docs to get clean structured data in Markdown/CSV/JSON/Specific-fields and other formats.
+
+**Live Demo:** [**https://docstrange.nanonets.com**](https://docstrange.nanonets.com/)
+
+**Github:** [**https://github.com/NanoNets/docstrange**](https://github.com/NanoNets/docstrange)
+
+Would love to hear feedbacks!
+
+https://i.redd.it/gl23k00osclf1.gif
+
+Original Post - [https://www.reddit.com/r/MachineLearning/comments/1mh9g3r/p\_docstrange\_open\_source\_document\_data\_extractor/](https://www.reddit.com/r/MachineLearning/comments/1mh9g3r/p_docstrange_open_source_document_data_extractor/)
+
+
+
+Comments:
+- BY THE EYE OF AGAMOTTO
+- Does it support any doc files? can we upload .tiff files?
+- Thanks for this
+- It crashed when I tried to upload a scientific paper. (I just used [this one](https://arxiv.org/pdf/2403.06321) ). Was just wondering if it handled latex type stuff though. Not sure if that's within the scope of your project as such papers get quite complex and many data extraction tools can't handle them.
+- What are the models used under the hood ? How is it different/better from docling ?
+- This is great. Will definitely give a try with my rubbish data to convert it into a good resource. Will let you know in 24 hours.
+- Yes it supports .tiff files
+- Can you one try changing the model from ui, the default model due to load might be taking long time causing timeout. You can select different model from the ui and see whichever model works best for your document.
+- OP is either a marketer, or they belong to the company that open sourced this.
+
+Company name is called “Nano Nets”
+
+They focus on document extraction, with special focus on invoice automation. 
+
+So pretty sure this is using an open source OCR engine (Paddle probably) and using VLMs for post processing like most others (Reducto is another really good one…albeit paid). 
+
+Highly doubt they’re doing anything special. 
+
+Personally, I’d prefer Docling over this any day.
+- We are using a newer version of \`Nanonets-OCR-s\`. The whole file is processed through a VLM. Our open source model is much better than Reducto's open-source model (or docking), you can check the benchmark done by allenai folks [https://github.com/allenai/olmocr/tree/main/olmocr/bench](https://github.com/allenai/olmocr/tree/main/olmocr/bench) Specially for table extraction. Although we don't extract bounding boxes. So if you are looking for that Docling should be your choice.
+
+Model: [https://huggingface.co/nanonets/Nanonets-OCR-s](https://huggingface.co/nanonets/Nanonets-OCR-s)  
+Blog: [https://nanonets.com/research/nanonets-ocr-s/](https://nanonets.com/research/nanonets-ocr-s/)

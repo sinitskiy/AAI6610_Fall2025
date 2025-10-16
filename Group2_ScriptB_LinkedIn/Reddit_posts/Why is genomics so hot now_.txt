@@ -1,0 +1,35 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/ctorui/why_is_genomics_so_hot_now/
+Title: Why is genomics so hot now?
+
+Content:
+Hi I am starting my PhD program at one of the top computational biology programs in the US. However, my concern is whether I should do computational neuroscience or genomics (in cancer/immunology/development) for my PhD.
+
+My primary interest has been neuroscience and I know enough about the field to know whats currently hot/exciting in the field. However, I have absolutely no background in genomics (I barely know what a single cell seq. is) so I think I do not have a capability to understand why genomics has recently become so popular. It seems it's as popular and fast-growing as machine learning.
+
+So I want to know what all the excitement surrounding genomics is about. How I know genomics is through a biochem course during my undergrad and it was just boring AF. I'm sure I'm missing something, so what is it?!
+
+People say do what I want for PhD. However, I only know what I want in a small bucket of what I've learned so far. Please enlighten me!
+
+Comments:
+- On [this page](https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data) you can see the trend of the cost of sequencing the entirety of a human gene. Note the the vertical axis is logarithmic. Short story, what not long ago costed many millions is now costing around $1000. That means it has very recently become possible to obtain a lot of genetic data. It has also been believed that once the cost gets down to $1000 or below, complete gene sequencing can become a routine part of diagnosis and treatment. You might have heard of personalized medicine. This is based on a realization that typically drugs work for only some people, but not for others. Therefore, a lot of treatment is wasted, something we only know after the treatment has been given. Some believe that by sequencing a specific patient, or even more specifically the DNA taken from a biopsy of their tumour, it would be possible to select more judiciously which treatment to give. Cost drops, patients are treated better, fewer side-effects... And of course, the elusive relation between the genotype and the phenotype (simply how some set of genes leads to certain phenomena in a human) might be made clearer with more data, both genetic from the cheaper sequencing technologies, and data from electronic health records and such. And this is just talking about humans, who knows what plant biological engineering may come about, especially if our tools to engineer the genetic code improves (e.g. CRISPR).
+
+At least in part for these reasons, being able to analyze the enormous amount of genetic data that has recently become available, and which will continue to grow massively, means there is great potential in genetic analysis. It is quite tricky to analyze all this data in a good way, even basic stuff like storing it has required innovation. And it is believed by some that this is a race, where whoever has the most data can accomplish the most with it (best signal-to-noise ratio), leading some to look to China for the cutting-edge of the genomics revolution.
+
+Of course, we've been here before, since it was believed once we had the first fully sequenced human gene it would lead to all kinds of breakthroughs, but it didn't for reasons people have all kinds of pet theories for. Also, the association of phenomena may prove harder since it isn't as clear-cut to quantify. Nonetheless, the potential in cheap and abundant genetic data is considerable, which is driving investments. If it will remain this way in the next ten years is a different story, though.
+- ultimately its sad as fuck that these folk think personalized medicine is even remotely possible,  the genome is just way to complex , too many polygenic traits to even count thesmartest of us can't even fathom the complexity.
+
+but hype draws in folk, 
+
+crispr isn't going to do what what the public hope,  i.e change  the DNA of every living cell in the human body, people don't care too much about their progeny, if they can better themselves first.
+
+imagine being able to mess around with your hormones increase your estrogen in females and target adipose tissue in the breasts  or buttocks  or adiopgenesis , shit would be a game changer, shit would be horrible too
+
+if interest is your goal, but not discovery i would suggest genomics  if  discovery is your goal computational neuroscience probably isn't a good choice either.
+
+ if making money and having a higher quality of life is your goal, then study it all and work in finance.
+- My outlook isn’t quite as bleak, though I share some of your skepticism. The reason I think there is some room for genomics to guide treatment is that sometimes there are polymorphism that are quite meaningful themselves. 
+
+For example, some FC-gamma receptors that are important to the mode of action of certain antibody drug have polymorphisms that make said drugs ineffective. Even though this doesn’t quite reach the level of personalization down to the individual, it can certainly guide treatment. I think it’s fair to say that the baseline of how we do things today is pretty low, so it doesn’t have to be too fancy. With respect to the FC-gamma polymorphism I understand we nowadays use, at most, the guideline that East Asians are more likely to have the deleterious mutation, so hey, let’s maybe look for some alternative if the patient is of said racial category... 
+
+Now of course, how many such simple pairings of mode of action and polymorphism are there? Anything too complex in the fine detail of the signalling network, and mining the genotype will prove tricky from observational data alone. That will be a hype killer.

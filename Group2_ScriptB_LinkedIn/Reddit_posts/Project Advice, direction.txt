@@ -1,0 +1,10 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/typoiy/project_advice_direction/
+Title: Project Advice, direction
+
+Content:
+I'm sorry that this is terribly vague, but I am looking to develop a project idea to improve understanding of aging, preferably involving machine learning (deep learning specifically). My own understanding of aging is not great (ive taken molecular bio and genetics, but no deeper domain knowledge). How should I go about quickly learning what I need to know to be able to develop a refined and actionable project idea, aside from just generally reading relevant literature?
+Thank you
+
+Comments:
+- There are still many mysteries to be understood when it comes to aging, so you would be plowing new ground quickly I think. Simplest way to start is type ‘aging’ into Google scholar and start reading. You can add words like ‘machine learning’ too but I’m not sure how much will come up.

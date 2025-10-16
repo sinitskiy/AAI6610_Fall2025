@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ltk9ch/d_new_episode_of_learning_from_machine_learning/
+Title: [D] New Episode of Learning from Machine Learning | Lukas Biewald | “You think you’re late, but you’re early” | #13
+
+Content:
+This episode of Learning from Machine Learning explores the journey of Lukas Biewald, co-founder and CEO of Weights & Biases. Having weathered the mid-2000s when investors demanded he remove "AI" from pitch decks, Lukas has built one of the most essential tools in modern AI development and helped shaped how teams approach machine learning experimentation.
+
+From taking an unpaid internship at OpenAI in his thirties to understanding why AI developers have become the most powerful people within organizations, Lukas reveals the recursive potential of machines improving machines—a force he believes represents "the most powerful technology you could possibly build." His philosophy that feedback loops are your units of work applies not just to machine learning, but to life itself. His uncompromising technical leadership approach cuts through industry noise: true leaders must master the individual contributor role.
+
+You think you're late, but you're early—conviction often matters more than consensus.
+
+
+Comments:

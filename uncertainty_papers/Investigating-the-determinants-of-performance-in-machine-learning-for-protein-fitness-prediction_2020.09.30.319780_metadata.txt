@@ -1,0 +1,15 @@
+標題: Investigating the determinants of performance in machine learning for protein fitness prediction
+
+摘要: Machine learning (ML) has revolutionized protein biology, solving long-standing problems in protein folding, scaffold generation and function design tasks. A range of architectures have shown success on supervised protein fitness prediction tasks. Nevertheless, in the absence of rational approaches for evaluating which architectures are optimal for specific datasets and engineering tasks, architecture choice remains challenging. Here, we propose a framework for investigating the determinants of success for a range of ML architectures. Using simulated (the NK model) and empirical fitness landscapes, we measure sequence-fitness prediction along six key performance metrics: interpolation within the training domain, extrapolation outside the training domain, robustness to increasing epistasis/ruggedness, ability to perform positional extrapolation, robustness to sparse training data, and sensitivity to sequence length. We show that architectural differences between algorithms consistently affect performance against these metrics across both experimental and theoretical landscapes. Moreover, landscape ruggedness emerges as a primary determinant of accuracy of sequence-fitness prediction. Our methodology and results provide a rational strategy for experimental data sampling, model selection and evaluation rooted in fitness landscape theory; one that we hope will advance sequence-fitness prediction accuracy, with implications for protein engineering and variant functional prediction.
+
+發布日期: 2025-04-18
+
+DOI: 10.1101/2020.09.30.319780
+
+作者: S, a, n, d, h, u, ,,  , M, ., ;,  , M, a, t, e, r, ,,  , A, .,  , C, ., ;,  , M, a, t, t, h, e, w, s, ,,  , D, .,  , S, ., ;,  , S, p, e, n, c, e, ,,  , M, .,  , A, ., ;,  , L, e, n, s, k, i, y, ,,  , A, .,  , A, ., ;,  , J, a, c, k, s, o, n, ,,  , C, .,  , J, .
+
+類別: synthetic biology
+
+PDF路徑: downloaded
+
+下載時間: 2025-09-24 13:23:13

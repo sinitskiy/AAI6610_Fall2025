@@ -1,0 +1,10 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/5v3f1c/how_difficult_is_it_for_a_graduate_student_in_ai/
+Title: How difficult is it for a graduate student in AI or machine learning with no experience in biology or chemistry to pivot into researching computational biology?
+
+Content:
+
+
+Comments:
+- Not that difficult. You would of course want to brush up on some basic biology and the 'wet work' in the research area you are planning to apply. Any type of mathematical skills can be translated easily in a bio lab. Look for neuroscience that do research in memory and learning, perhaps it can serve as a jumping point to other research. In any case, if your skills are good, it doesn't matter if you have no bio training, raw data can be provided to you and you can process it with your skills. Best wishes!
+- You could be put in a lab without no bio lab experience. You most likely would not be doing wet lab work just computational stuff.

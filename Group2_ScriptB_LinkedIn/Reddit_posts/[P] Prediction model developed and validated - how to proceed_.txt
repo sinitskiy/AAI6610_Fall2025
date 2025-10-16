@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1kz0oni/p_prediction_model_developed_and_validated_how_to/
+Title: [P] Prediction model developed and validated - how to proceed?
+
+Content:
+I Just finished my masters in a non-informatics but health related field. I developed a classifier model to predict probabilities of an adverse event during Ventilation in the intensive care unit. AUC at around 0.86 during Testing. External validation yielded worse results 0.77 but Data quality was very poor. Using higher quality dataset is already planned.
+ Professors want me to publish the paper. So far so good. I work as a product Manager for a clinical information system vendor - actually the place to live for such a model, embedded in a Workflow. The topic is pretty hot from a Domain perspective - both clinical and economical.
+
+However, Management shows interest but does not buy in, as they probably fear the risk and responsibility in clinical Environments and there is a lot of uncertainty as the all have Tech Backgrounds only. They are more into general purpose AI.
+
+Any recommendations or experiences with such a Situation? Appreciate your Input.
+
+Comments:
+- If you've got academic buy-in and there aren't IP issues with your employer, it's worth aiming at a publication or a patent- I'd try to get everyone in the room (i.e. industry boss + faculty mentor) to hash out the legal side of things. It may not become more than this/ make it into product, but it's worth trying to get it on your CV in some form if you can, and it typically looks good for all parties if you can get a pub out, especially if most of the work is done already.
+
+Your accuracy metrics do give me a bit of pause, though- without knowing your domain, 77% doesn't seem terribly high- how does it compare to other models?
+- Thanks for your Input! Sounds reasonable. Im gonna try that.  Out of the 8 related papers dealing with the issue, only one was validated externally (prospectively). AUC around 82. I retrospectively collected Data from one of our customers and it was real mess. My Training and Testing Data came out of a high quality Research Database for ICU cases.

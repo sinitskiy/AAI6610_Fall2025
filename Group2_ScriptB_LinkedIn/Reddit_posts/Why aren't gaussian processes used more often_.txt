@@ -1,0 +1,48 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/14bs273/why_arent_gaussian_processes_used_more_often/
+Title: Why aren't gaussian processes used more often?
+
+Content:
+I didn't learn GPs in school, rather I came across a Youtube video on it and found the concept interesting and dug deeper. I think I have a good intuition into GPs, and they seem incredibly good for modelling non linear data. I know  they have disadvantages as fitting a GP is O(n\^3) and tunning the hyperparameters is almost an art, but still... why aren't they used more often? the assumptions we make on other regression models don't come into play here, stuff like linear dependency, homoscedasticity, etc... and we get a free uncertainty estimation "custom" to each prediction
+
+Comments:
+- They are used, e.g., in active learning. There are ways to speed them up, e.g., by learning only with inducing points. Also, hyperparameter optimization is straight forward (maximizing marginal likelihood). You can learn more about those things in Carl Rasmussen‘s book.
+- The O(n^3) has been the killer for me, I’ve had a handful of times where they’d be good for the job but the size of the data just makes it untenable. GAMs/spline based models wind up accomplishing similar thing for way cheaper. 
+
+However the following can help make it a bit more tractable if you’re set on GPs - [SVGPs](https://gpflow.github.io/GPflow/2.4.0/notebooks/advanced/gps_for_big_data.html), [Hilbert space GPs](https://youtu.be/ri5sJAdcYHk), sparse approximations (brings it to O(nm^2) for m inducing points)
+- They're fairly common for some specific problems like hyperparameter tuning. O(N^3) is absolutely killer for many applications, however, especially because there's no online training algorithm as far as I am aware.
+- In general, most off-the-shelf approaches to modeling time series data are pretty primitive. Things like gaussian processes, information dynamics, etc. are (imo) too mathematically involved for the average bootcamp data scientist to feel comfortable (or interested in) wrangling. 
+
+That said, my understanding is that they are used in certain areas where advanced time series modeling *is* of key importance. For example, the Ornstein–Uhlenbeck process is often used in mathematical finance and physics.
+- To correct your assumptions: homoskedasticity is never assumed for linear regressions. Since White (1980), we have had heteroskedasticity-robust inference for more than 40 years. If a textbook claims that it is necessary for some arcane shit (like an estimator being BLUE or some oversimplified formula to be valid), it should be discarded immediately. Linearity is a property of the model imposed by the person creating the model. Non-linear terms (like splines) can be introduced to allow for arbitrary non-linearities in explanatory variables while still retaining linearity in parameters; semi-parametric methods like Robinson’s partially linear model still possess the desirable sqrt(n) convergence of the model parameters. Autocorrelation? Use HAC. Normality and Gaussianity is the *last* assumption that one would be willing to accept. It rules out many phenomena such as observations with unusually high error variance. Normality is usually quite a stretch. Gaussian copulæ do not perform well in risk modelling.
+
+As for gaussian processes – first of all, the kernel has infinite support, which requires some smart trimming to reduce computational time. On a more fundamental level, they are better suited to more predictable and homogeneous phenomena, like solving kinematics problems for a robot arm where the range of rotation is limited and the sensors return quite accurate measurements. In bioinformatics, economics, and other areas with worse data, there is too much uncertainty to impose general Gaussianity. Asymmetry and fat tails are not going anywhere, and most researchers will most likely choose a skew-Student distribution and some asymmetrical reaction to positive and negative past values, and that should be good enough for most applied research.
+- Because most Data Scientists barely know the Gauss diagram.
+- I saw this paper recently that uses GPs for time series forecasting with an interesting approach - https://kdd-milets.github.io/milets2022/papers/MILETS_2022_paper_9727.pdf. 
+
+It is built using gpytorch. Btw, gpytorch uses a blackbox matrix-matrix multiplication variation that reduces GPs complexity to n^2. Plus, as other shared you can use sparse methods to reduce complexity further, trading off with expressiveness.
+- One reason is they take a lot longer to train than linear / logistic regression / xgboost. 
+
+It's very uncommon for us to use something outside of xgboost and linear/logistic regression unless it's pca/kmeans or something of the like. 
+
+Most of the work with my employer is EDA, ETL, and Feature Engineering and I would guess that it's also the case for many others here too.
+
+It's worth noting too that I intentionally chose to work somewhere where we don't do much NLP. 
+
+Personally It's not a side of data science I want to spend my career in and with all of the LLMs now a DS working with NLP will likely recieve a rediculous amount of unrealistic requests from stakeholders relating to NLP.
+- Lack of clear interpretation, but definitely better than LOESS regression
+- They’re great for active learning scenarios. For my PhD I used them pretty much exclusively along with sparse gaussian processes.
+
+They’re definitely not the most… intuitive of ml models out there and I find myself repeatedly refreshing myself on how they work. Likely their lack of serious mainstream adoption is that combined with difficulties in looking at larger data with them compared to a random forest etc.
+- In my field of work Gaussian family distributions do not work well.  The data is right skewed, non-negative, and a mixture of linear and non-linear features.
+
+Finance
+- Conformal prediction is better
+- Depending on time series frequency, O(n³) is definitely a killer but as a technique that's robust to irregular sampling you have a lot of flexibility if you can get comfortable enough with their statistical underpinnings. For example, consider an ensemble of GP models with the same kernel but trained on sampled subsets of all your observations. For example fitting two GPs on 50% samples can reduce training time by factor of 4, sampling 33% will reduce training by factor of 9, etc. Combining the models is easy given the posterior predictive distributions are Gaussian.
+- Because not a lot people have learnt in school? Processes are too theoretical for sales/marketing team to understand. There are some methods to estimate the parameters which will run faster. In option pricing, processes are wildly used.
+- Used in your Bayesian hyper parameter tuning yo
+- They should be. Biggest downside is that they don’t necessarily scale well by default since they require an inversion of a matrix the size of the number of training points. So if you have thousands of training samples it could already be slow.
+- One of our models which uses gaussian processes burns £10k on cloud compute over 2 weeks for every experiment we do. Right now we are working on a nn to approximate the curve fits because the cost just cannot be justified.
+- What about regression and time series? Aren't they interesting as well because they can model almost anything you want and give you uncertainty estimates? I know they aren't as interpretable as other models but still...
+- If you’re using GAM’s from MGCV you can actually use a selection of gaussian process kernels as alternative bases for the smoother terms, they’re already built in. These use the ‘gp’ option for the basis. These by default use a sparse basis approximation in the same way as is used generally for the other basis options.
+- Yup. That’s why it seems like Bayesian methods, while extremely powerful, are usually best in small data situations.

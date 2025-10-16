@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wb30cn/neural_network_for_tabular_data/
+Title: Neural network for tabular data
+
+Content:
+Hello, I am a second-year university student, I am trying to do my outside of study project for my lab research. My instructor gave me a tabular dataset (mimic-iv dataset, about 65 Gb of csv files) and he asked me to build a neural network to predict the disease of the patient but i don't know the general idea of building it, i only did some small machine learning project tho. Any tips or idea for building a neural network for structured tabular data please?
+
+Comments:
+- Look at the fast.ai course, it has a lesson on tabular data. But, working with such a big dataset does not sound like a good beginners exercise into nn’s.
+- Uhhh is there a specific reason why he thinks a neural network is necessary?
+- Thanks a lot, I will look at it
+- Yes, LightGBM/XGboost would be a better place to start initally.
+- I guess he just wanted me to practice with it

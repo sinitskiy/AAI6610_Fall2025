@@ -1,0 +1,51 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cvu9gz/best_way_to_bridge_the_gap_between_cs_and/
+Title: Best way to bridge the gap between CS and bioinformatics?
+
+Content:
+I currently work as a machine learning engineer, and have a BS in computer science and math from UCSC, and an MS in statistics from Texas A&M university. My goal is to move more into biotech, and to work on things that I feel are actually helping people.
+
+I currently live in Santa Cruz, and have considered reaching out to some professors in the labs up at UCSC to volunteer my time to get in on some of the fun research they’re doing there. I’m not sure yet if my end goal is a PhD, but I definitely miss research from my time during my MS.
+
+Given that I have very little bio knowledge, is there a good way to bridge the gap between my CS/statistics knowledge and what I should have under my belt delving into bioinformatics?
+
+Comments:
+- Hi I did this same thing, came from math and computers to bioinfo, here’s some brief advice given my experience 
+
+Determine your preferred role. Bioinformatics is new enough to not have a set of rules for interacting with biologists. You can assist them by being basically a “pure tech” who listens to requirements and builds software accordingly. That’s the least involved process, but if you want to make your way to “bioinformatics scientist” you will need to get the fundamentals of genome biology down and focus on how to implement NGS to address a problem. You can probably get away with a masters for the first kind of role, but need a PhD for the second kind. If you want to lean the most heavily on your skills, you could likely finish a masters with ease if you’re a decent programmer.
+- Bioinformatics is pretty broad. Have you looked into computational biology? Role names may be different but you may be doing similar tasks as a bioinformatician (like working on pipelines and data analysis). 
+
+I would also suggest looking for bioinformatics/computational biology or data analyst positions at UCSC if you want to get back into research and really see what it’s like working at a university. It’s very different than working in industry (I assume you are in industry). 
+
+Professors typically don’t like having volunteers when they would rather have a person working for them full time. I have talked to professors about this before and that’s what they say because they can set expectations since the employee is getting paid to do work meanwhile it’s harder to do that with a volunteer when they can just up and leave if they don’t feel like working anymore.
+
+I think it’s great you have a CS/stats background. I’m sure there would be many professors who would want your machine learning expertise! It’s all about finding the right fit lab for you & whether they are hiring or can afford to hire someone.
+- If you're willing to take a non-research position, why not jump into biotech right now in an engineering role? My company doesn't require bio knowledge for such positions (though it is a plus) and regularly teaches it to people on the job. If you are willing to learn you can get really far while also working on real world problems.
+- [deleted]
+- I’m at current student at tamu wanting to get into bioinformatics from another degree. I have research plans using a lot of algorithmic basis. I need to learn a lot of the computer side but good luck man. Would you mind if I pm?
+- Drug hunting ML - you can teach yourself the bio knowledge online if you’re motivated. Many pharma have bioinformatics depts with researchers and coders/CS. Especially w a stats MS your background sounds solid. Caveat is the market
+- There are a lot of good bioinformatics courses online or even in universities. Can you take some of them by registering part-time?
+- I tried volunteering at an academic bio lab. They said they couldn't accept a volunteer who wasn't associated with the university (i.e. who wasn't a student).
+
+
+Feel free to try, but try to think of other options.
+- [deleted]
+- It's so much easier to teach cs to biologists than the other way around. Only way to be really able to work in biological science is to be a biologist. I have bs biology and in just two years in bioinformatics grad school, I was more proficient in cs than even some cs PhD students. In the end, they are just tools, not really something you study for. I am only talking in bioinformatics perspective of course.
+- i’m a biochemistry major planning to go into a bioinformatics masters. what would you recommend as a bridging flip side? i would also like to complete a phd in nanotechnology. the problem is that i am highly interested in computer science as well. essentially, i would be the bioinformatics scientist that you mentioned. however, i would also like to learn more of the tech side of biotech & more.
+
+ETA: I have taken optional java & html/css courses. i absolutely loved them & did well.
+- Hi, I'm not OP but wanted to ask an adjacent question. 
+
+I'm going into a Biostatistics and Bioinformatics MS degree with an undergrad in CS and a professional background as a data *analyst* that's happened to have some opportunities at work to do some production work with Python / SQL.
+
+The MS program is open to people that don't have a particularly strong background in life sciences, but it doesn't really set you up with much if you don't have it already. I know, given your advice, that a PhD might be the better route if you *really* want to get involved and not just be building to spec what people that know more than you tell you to, but I really want to have as much contextual knowledge as possible, but don't know the best resources to start learning Bio / Chem / Genetics from an early college level. I don't particularly want to do another undergrad, and was wondering if you had any resources to recommend that might help fill the knowledge gap.
+- This is great advice! I definitely want to lean more into the dry lab/computational side! My passion is in the math and computation side. The biology is absolutely fascinating, but I will likely always have my heart in the modeling side of things more than strictly the biological system. I’ve always wanted to apply my love for CS and math to problems in medicine, so this would be a great step I think
+- That would actually be a dream, that’s the end goal. I just want to be working on something that pushes me mentally that also is doing good. Mind if I DM you?
+- That was a fantastic read, your story. It answered a lot of questions that I have. Granted, after everything you wrote, do you feel like the work has been more meaningful in the lab vs at Meta?
+- That was a fantastic read, your story. It answered a lot of questions that I have. Granted, after everything you wrote, do you feel like the work has been more meaningful in the lab vs at Meta?
+- Of course not, fire away!
+- That would be awesome! Did you finish undergrad or a grade program? Either way, congrats!
+- [deleted]
+- > they are just tools, not really something you study for
+
+This attitude is why the field is plagued by crappy tools.

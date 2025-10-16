@@ -1,0 +1,44 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18bhvfd/how_alive_is_traditional_machine_learning_in/
+Title: How alive is traditional machine learning in academia?
+
+Content:
+ Is there still room for research on techniques and models that are commonly used in the industry? I currently work as a Data Scientist and am considering pursuing a Master's or Ph.D. in machine learning. However, it appears that most recent developments focus primarily on neural networks, especially Large Language Models (LLMs). Despite extensively searching through arXiv articles, I've had little success in finding research on areas like feature engineering, probability models, and tree-based algorithms. If anyone knows professors specializing in these more traditional machine learning aspects, please let me know. 
+
+Comments:
+- Maybe arXiv is not the best place to look for this? Statistics has things like what you are looking for, in their field journals.
+- Try looking at the statistics faculty pages of universities you like. Often a short list of their research interests is available there. You will find a lot of what you are looking for
+- [deleted]
+- I tried searching for ‘decision trees’ and ‘feature engineering’ in archive.org using Google and instantly founds dozens of recent papers (2020-2023 publication dates) so I’m not sure what you mean. 
+Probability is a separate field with multiple sub topics, so you’d need a more specific search than ‘probability’
+- IISc Bangalore CSA and CDS department have Labs which focuses on classical ML. Its in India and the best research our country can offer.
+- Here are some reasons I can quickly think of:
+
+1. More attention is devoted to explaining, inferring, finding causal mechanisms of what we observe. And this is hardly a strength of ML, but rather of traditional models whose structure we can understand. Pure prediction is of limited scientific value in many applications.
+2. ML shine with large amounts of data. However, many scientific tasks do not come with a large dataset. In an era where we're surrounded by data in our day to day life, not having enough data may sound like as a foreign idea. But it's quite common actually. ML models are the opposite of parsimonious (in fact, as I'm writing this, I'm reading a paper highlighting how much more data a ML model requires to achieve the same accuracy as a conventional survival model)
+3. More skepticism: scientists are rightfully skeptical. Some of the spectacular failures of LLMs certainly don't help (from hallucinations to how sensible current implementations of LLMs are to leading the witness). 
+4. With that being said, don't forget that the foundations of ML come almost exclusively from academia. There are many areas where you see the use of very sophisticated models. Some that are familiar to me are bioinformatics, biostatistics, econometrics.
+- Majority of the research done in engineering and life sciences are shifted to ML applications.
+- I mean, there was a new article on BART (a tree-based model) *this week* on arxiv stats. Suggests to me your search terms aren't very good, and/or you're not good at querying?
+- Feature engineering? Would the use of surogate black box models be something interesting for you? https://modeloriented.github.io/rSAFE/
+- Dont look at cs departments, look at departments like biology, psych, sociology etc.
+- All these things that you're citing are already well stablished. For example, it is common to study them as an undergrad student.
+
+Research in IA has the purpose to push the field boundaries. Hence, people researching IA will try to develop new things, push things ahead. Solve unsolved problems. For example, the development of LLMs was and still is a very active field of research. 
+
+Now, about using these methods, it is common to use them. I think calling the field Data Science made this problem, because there is no Data Science. What industry calls DS is just part of the toolkit of a lot of researchers, specially is statistics is involved. Just to give one example, using some search algorithm improved with reinforcement learning to solve PDEs. Or even to give a new answer to a NP-hard problem. 
+
+So, *grosso modo*, you would choose if you want to work with research in IA or using some methods into your research.
+- Thanks for sharing
+- Classical approaches are still very much used in classical sciences. I'm doing my MSc in  Engineering with a focus on ML, and my experience is that researchers in engineering don't understand deep learning at all. I honestly think my advisor believes that deep learning has barely surpassed simple concepts of multilayer perceptions. He believes deep learning is a gimmick and doesn't want to involve it in his lab because he feels it has no place in research.
+
+I think a lot of more traditional scientists feel this way about it. I have yet to meet one that seems to understand the state of modern deep learning and its importance. I don't know how much work is happening in CS fields to the end of advancing classical approaches, though.
+
+As others have said, you're probably looking in the wrong place. Arxiv is a place for discussing the cutting edge of modern computing. If you want to read about modern works in more classical approaches, check journals in mathematic, statistics, engineering, and maybe some other natural sciences.
+- It was a good tip. Found some promissing options. Thanks!
+- It seems I was looking in the wrong place. Do you have good journals to refer me?
+- That could be the reason, but finding *one* this week doesn't necessarily mean the research in the area is hot.
+- Explainable ML is a cool topic!
+- I understand your point but, as a few people mentioned here, there are still new branches of study, apart from the well stablished ones.
+- One of the problems with these methods in science science and not data science, is that the models largely just make predictions, they often can't tell you much to advance scientific understanding. AlphaFold2 hasn't really told us much about protein folding for example (but is obviously still useful to science).
+- Dude's never heard of AlphaFold?

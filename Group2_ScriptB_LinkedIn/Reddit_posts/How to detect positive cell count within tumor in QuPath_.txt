@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1bnoh0u/how_to_detect_positive_cell_count_within_tumor_in/
+Title: How to detect positive cell count within tumor in QuPath?
+
+Content:
+Not sure if this is the right place to post.
+
+ 
+
+I am trying to find the number of cell positive for a specific marker within a tumor. First, I tried to use the machine learning approach to identify tumor area within my annotation by using pixel classification tab. Second, I tried to create an annotation object of this resulting product. Third, I tried to use the positive cell detection tab to count the number of positive cells within the newly created annotation. However after the second step, instead of showing the beautiful, finite and accurate annotation of tumor it basically paints a large and general blob of yellow that does not tell me any useful information. I attached two pictures of the part of an annotation that is tumor.
+
+ 
+
+[Before](https://preview.redd.it/68zqwgp7ljqc1.png?width=589&format=png&auto=webp&s=8f568c6a29125fd8dcd3db6d636433e82d1d7bb6)
+
+&#x200B;
+
+[After](https://preview.redd.it/co3unvd9ljqc1.png?width=844&format=png&auto=webp&s=e479ffd12526ceae66963d5b9a1e1ac91411d833)
+
+Am I doing something wrong? What is the correct step to do this?
+
+Comments:
+- Have you run cell segmentation yet? You won't be able to calculate positive cells without it
+- I don't know if I can help because I usually let the digital path lab do it but am interested in learning. The data I get from HALO (different platform but would think QuPath can do it do) has the annotation in the table format which can easily be tallied. Cool if QuPath can do it internally.
+
+Just out of curiosity, is the first image with red some thresholded detection? Looks like there's a lot of noise all over outside of the mass in the center. Maybe just too noisy?
+
+Sorry not an expert.
+- Thank you very much for your response.
+
+The first picture in red in the center is the result of using machine learning approach on QuPath to detect an object, in this case tumor. That particular circular epicenter is just part of the overall annotation but is the biggest most concentrated tumor. What you are referecing as "noise" around it is the positive cell marker which is in faint pink. 
+
+The second picture in yellow is what happens when I saved the first image/result as an annotation object in order to try to find the aforementioned "noise" ONLY  within the tumor. And basically it resulted in yellow paint just throw in all over the place and is not as accurate as the first time when I marked the tumor in red. So I was puzzled as to how I should proceed next.
+- I'll pull out QuPath and play around with some multiplex images I have from my kidney mIF TMA. 
+
+What I was thinking as noise was all the random red (and some pink too) outside that main central mass. Do you have a marker that you're using for classification of the tumor like pancytokeratin or another epithelial marker? Or are you just using the DAPI channel?
+- Yes I am using a proliferation marker and that is labeled in pink. I would like to measure the number of this proliferation marker within the tumor area and not the whole slide.
+- So don't know how to do two at the same time, but I was able to use PCK as an object classifier with threshold and tweak it so only the tumor compartment lit up. Then could do the same for SMA (fibroblasts).
+
+After that could do cell detection with DAPI, followed by applying the classifier and getting the number positive. *However*, I can only get it to show one class at a time (either PCK+ *or* SMA+) but not both. Can try to play around with it more tomorrow. If you export both tables, then merge on the x-y locations, should be able to get the double positives (tissue plus marker).
+
+Not very user friendly and can't follow the documentation very well..

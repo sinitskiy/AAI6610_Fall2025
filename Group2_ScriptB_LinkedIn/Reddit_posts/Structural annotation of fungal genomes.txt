@@ -1,0 +1,35 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cd5xiy/structural_annotation_of_fungal_genomes/
+Title: Structural annotation of fungal genomes
+
+Content:
+Annotation of bacterial genomes appear to be fairly easy, as evident by prodigal - from 2010 - still being the main workhorse for finding bacterial CDS. Prokka, and more recently, Bacta, has made this very easy.
+
+Annotating fungi, on the other hand, is much more difficult. Usually, one must combine a related and properly annotated genome with a comprehensive transcriptome to properly annotate a novel genome. In other words, this is difficult and expensive.
+
+This, however, sounds to me like a very nice machine-learning problem, which makes me think that there should already be software to annotate fungi de novo. Is there?
+
+As for my actual question: Is there a generalized way to do fungal gene prediction? Just structurally, no annatation needed.
+
+Comments:
+- Check out funnanotate (https://github.com/nextgenusfs/funannotate), it's pretty much the state-of-the-art for fungal genomes these days.
+- BRAKER3 is a big one
+- you might want to try [https://github.com/JinyuanSun/AFIG/tree/main](https://github.com/JinyuanSun/AFIG/tree/main), a very simple pipeline.
+- I just finished making a pipeline from fastQ to annotated genome using funannotate, and a few other programs along the way..... And I'm a wet bench chemist, it was not easy.... But doable. 
+
+Pipeline was fastQC on raw fastQ, trimmomatic with correct adapter trimming, fastqc on trimmed output. Funannotate clean, sort, mask.... Interproscan, eggnog mapper, antismash  on the output from funannotate predict and then and finally funannotate annotate combining all that data ( I also chucked in ITSx extraction and a blast search because, well, computer gunna compute) willing to share all I know (tis not much).
+
+
+About to try the same by making a bacterial pipeline for what we need...... 
+
+
+S
+- Second this, just be aware that it has a lot of little bugs and issurs that you may have to resolve. I published a paper using it.
+
+It is very annoying to get all the dependencies.
+
+You will need to manually parse some cds to correct, the final output usually has issues.
+
+My organization has an automated pipeline i generated, and I think you should do something similar if you will be using it more than once.
+- Perfect, I actually used it a while back. A bit funky to install, but it's running now!
+- Hey, I'm trying to install the funannotate pipeline too but I'm having trouble in gmes_petal.pl dependency from genemark , is it because i downloaded the genemark es/et or we have to do the other version, i have the gmes_petal.pl script, done exporting the path too but it is still showing not installed, please help me

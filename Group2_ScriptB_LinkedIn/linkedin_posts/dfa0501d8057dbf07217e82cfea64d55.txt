@@ -1,0 +1,96 @@
+URL: https://www.linkedin.com/posts/jong-min-kim-00947519_my-paper-titled-llm-guided-ensemble-learning-activity-7358100495187496960-U5XN
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jong-Min Kim的动态
+Jong-Min Kim
+
+Professor of Statistics and Measurement Journal Editor in Chief
+
+2 个月  已编辑
+
+My paper titled “LLM-Guided Ensemble Learning for Contextual Bandits with Copula and Gaussian Process Models” has been officially accepted today! This work proposes a novel Contextual Bandits framework that combines copula modeling with Large Language Model. Enhancing the ensemble with copula features, GP models, and dynamic policy selection driven by a large language model yields superior adaptability and performance. Our results highlight the effectiveness of combining structured probabilistic models with LLM-based guidance for robust, adaptive decision-making in skewed, high-variance environments.
+
+📄 You can download the full paper here:
+https://lnkd.in/gg97Ngzj
+💻 The accompanying R code is available at:
+https://lnkd.in/gJA5bsdA
+
+EGADE Business School del Tecnológico de Monterrey Adjunct Professor
+University of Minnesota Data Science and AI Hub Core Member
+University of Minnesota Morris
+
+63
+2 条评论
+赞
+评论
+分享
+Ajay Verma
+
+Assistant Professor
+
+2 个月
+
+Many Congratulations sir!
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+26,358 位关注者
+
+216 则动态
+查看档案  关注
+探索相关领域
+How Llms Process Language
+How to Evaluate Language Model Performance
+How Ensemble Learning Improves Predictions
+Innovations in Context Length for Llms
+How to Train Custom Language Models
+How to Improve Agent Performance With Llms
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

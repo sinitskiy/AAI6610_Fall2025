@@ -1,0 +1,82 @@
+URL: https://www.linkedin.com/posts/mercedes-bertotto-41421019_datascience-chemometrics-spectroscopy-activity-7371101978136834048-Hrkj
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Mercedes Bertotto的动态
+Mercedes Bertotto
+
+Doctor of Engineering- NIR Specialist, Chemometrician
+
+4 周
+
+On our page, we share insights and reflections on the analyses we routinely perform at Vibralytics. We focus on delivering reliable, data-driven insights using advanced spectroscopic and chemometric techniques.
+
+Through our posts, you’ll find examples, tips, and learnings from our work that highlight the power of data in understanding and optimizing complex systems.
+
+This is our website: www.vibralytics.nl
+
+#DataScience #Chemometrics #Spectroscopy #Analytics #Vibralytics #MachineLearning #AI #FoodScience #Research #Innovation
+
+https://lnkd.in/euZN4guZ
+
+Vibralytics
+
+303 位关注者
+
+4 周  已编辑
+
+🔍 Understanding #CNN Decisions in #Spectroscopy with #Grad-CAM
+
+In deep learning, especially when working with spectral data, models like Convolutional Neural Networks  can achieve impressive predictions. But how do we know what the model is really looking at? 
+
+One powerful tool is Grad-CAM (Gradient-weighted Class Activation Mapping). Grad-CAM allows us to visualize which wavelengths contribute most to a prediction. 
+
+💡 In practice, we can:
+Generate Grad-CAM for each Conv1D layer to see how feature importance evolves.
+
+Average heatmaps across samples to get class-level insights.
+
+Compare early vs late layers to understand hierarchical feature extraction.
+
+Grad-CAM helps build trust in models and guides better model design and spectral interpretation.
+
+#MachineLearning #DeepLearning #AI #ExplainableAI #XAI #GradCAM #ModelInterpretability #DataScience #AIInsights #NeuralNetworks #AIExplainability #FeatureImportance #MLResearch #AITransparency
+
+14
+1 条评论
+赞
+评论
+分享
+Laura V. Domínguez
+
+Head of communication / Responsable del Depto de Comunicación.
+
+4 周
+
+Excelente!!!
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+最相关的动态
+Vibralytics
+
+303 位关注者
+
+4 周  已编辑
+
+🔍 Understanding #CNN Decisions in #Spectroscopy with #Grad-CAM
+
+In deep learning, especially when working with spectral data, 

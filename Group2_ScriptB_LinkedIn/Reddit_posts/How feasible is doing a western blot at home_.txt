@@ -1,0 +1,34 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/zg98gn/how_feasible_is_doing_a_western_blot_at_home/
+Title: How feasible is doing a western blot at home?
+
+Content:
+Hello,
+
+I'm trying to confirm if an ultra-rare missense variant predicted to be deleterious in a haploinsufficient gene is indeed disease-causing. I have no access to a lab and unfortunately I can't go through public health care or paying out of my pocket. The only remaining option is to do it myself at home. How feasible would that be difficulty and cost-wise? I have no practical lab knowledge. I also noticed that antibodies tend to cost around 300-400$. Out of curiosity, is that what universities tend to pay or do they usually get a significant discount?
+
+Thank you.
+
+Comments:
+- What exactly is a western blot going to show if you're concerned about a missense variant?
+- This is all around a bad idea. It's going to cost thousands of dollars to get everything you need. It's also calls for several less than safe chemicals that shouldn't be used in a home. You won't have the knowledge or experience to properly interpret let alone optimize your experiment. And finally and most importantly that's not the correct experiment for the question you are asking. 
+
+A genetic councilor can easily test you for that as well as many other conditions.
+- Western blots are famously painstaking to get working (check out r/biologymemes or r/labrats for a daily Western blot meme). Even in a fully supplied lab with experienced users, they can be very tricky to get working the first time. I can’t image trying to do it at home.  
+
+> Out of curiosity, is that what universities tend to pay  
+
+Yes and no. It’s common for labs or universities to have discounts from certain vendors. The vendor will basically give the entire institution discounts on their products, which encourages people to order through them most of the time. Also, especially with more expensive equipment (in the $10k+ range), it’s fairly common to negotiate with the sales reps to get discounts or extra products thrown in. Obviously, as long as they’re making a profit, they’d rather sell you the $100k centrifuge for $90k than for you to not buy it at all.  
+
+That being said, there’s many cases where you just can’t get discounts. Either the vendor doesn’t have a deal with your lab/university, they don’t discount that particular product, or it’s some specialty product that you have to order directly from the manufacturer. In those cases, yes, labs will easily spend hundreds or thousands of dollars on reagents. It’s crazy how expensive it can be, even *with* discounts.
+- If the missense variant disrupts the protein's structure, I should be able to see it with a western blot, shouldn't I? I just need to compare the western blot of someone who has two functional copies of the given gene with mine.
+- Thank you for the answer. What would be the correct experiment for that? You mention that a genetic counselor can test for that condition. In what way? I have a non-negligible amount of knowledge when it comes to the interpretation of genome variants, if that's what you are referring to. It's pretty much all I have been doing for the past year or so.
+- Thank you for your reply. It kinda sucks that biology is so expensive. There are cheaper hobbies out there haha. I will pass on then on this idea of doing a western blot at home. The difficulty is not a problem, since one eventually gets it right with enough practice, even if it takes a while, but the cost is. I'm not the son of a billionaire.
+- How are you planning on sampling, prepping, and isolating the proteins before running it? 
+
+To do this you basically need a full lab, knowledge to implement protocols, and practice. Lab work is a skill that can take years to learn to do right. The gel electrophoresis equipment is thousands of dollars. The reagents are expensive. And all the little extras you need to prep samples are probably tens of thousands of dollars. Just a set of adjustable pippetes is thousands...
+
+I would say it's not financially feasible to do safely at home for basically anyone. Definitely not for a non-biologist without extensive lab experience.
+- Running individual samples isn't particularly expensive, but start up costs for a lab make a high barrier to entry. It's a lot of specialized equipment that also requires skill and experience to use correctly and safely. It's not much different than having your car tires replaced. It's affordable to pay a shop to do it; but buying your own vehicle lift, tire changer, balancing machine, air compressor, tool set, etc (and having the space to put it all) is never going to be worth it just to do something once.
+- Thank you for the answer. It's good to know it's impractical from an economical point of view. I will look for alternatives.
+- Is a western blot, however, the right experiment in this case? Another comment said it wasn't. I'm just trying to see if a given mutation is reducing the expression of a specific (haploinsufficient) gene.

@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lytyd9/r_matrixtransformer_a_unified_framework_for/
+Title: [R] MatrixTransformer – A Unified Framework for Matrix Transformations (GitHub + Research Paper)
+
+Content:
+Hi everyone,
+
+Over the past few months, I’ve been working on a new library and research paper that unify structure-preserving matrix transformations within a high-dimensional framework (hypersphere and hypercubes).
+
+Today I’m excited to share: MatrixTransformer—a Python library and paper built around a 16-dimensional decision hypercube that enables smooth, interpretable transitions between matrix types like
+
+* Symmetric
+* Hermitian
+* Toeplitz
+* Positive Definite
+* Diagonal
+* Sparse
+* ...and many more
+
+It is a lightweight, structure-preserving transformer designed to operate directly in 2D and nD matrix space, focusing on:
+
+* Symbolic & geometric planning
+* Matrix-space transitions (like high-dimensional grid reasoning)
+* Reversible transformation logic
+* Compatible with standard Python + NumPy
+
+It simulates transformations without traditional training—more akin to procedural cognition than deep nets.
+
+# What’s Inside:
+
+* A unified interface for transforming matrices while preserving structure
+* Interpolation paths between matrix classes (balancing energy & structure)
+* Benchmark scripts from the paper
+* Extensible design—add your own matrix rules/types
+* Use cases in ML regularization and quantum-inspired computation
+
+# Links:
+
+**Paper**: [https://zenodo.org/records/15867279](https://zenodo.org/records/15867279)  
+**Code**: [https://github.com/fikayoAy/MatrixTransformer](https://github.com/fikayoAy/MatrixTransformer)  
+**Related**: \[quantum\_accel\]—a quantum-inspired framework evolved with the MatrixTransformer framework link: [fikayoAy/quantum\_accel](https://github.com/fikayoAy/quantum_accel)
+
+If you’re working in machine learning, numerical methods, symbolic AI, or quantum simulation, I’d love your feedback.  
+Feel free to open issues, contribute, or share ideas.
+
+Thanks for reading!
+
+Comments:
+- nice work!

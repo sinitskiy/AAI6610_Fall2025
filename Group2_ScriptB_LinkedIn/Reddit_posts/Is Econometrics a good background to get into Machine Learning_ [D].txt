@@ -1,0 +1,61 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1msrdfq/is_econometrics_a_good_background_to_get_into/
+Title: Is Econometrics a good background to get into Machine Learning? [D]
+
+Content:
+I have an econometrics and data analytics bachelors degree and im looking to get into a masters of artificial intelligence.
+
+I have also taken some introductory math courses and introductory programming/algorithms as well as deep learning.
+
+How relevant is my background if I wanna get into AI/ML research later on? (I am hoping to do a PhD afterwards in AI/ML)
+
+Comments:
+- eh, it's a neighboring field at best. You spend most of econometrics not caring about fit and stressing identification, parametric estimation, the underlying population, and causality. In ML, none of that matters (as much) and it's all about best fit in much higher dimensions.
+
+I imagine you spent many classes studying estimators and the analytic qualities of said estimators. In ML nothing is analytic, and practical considerations matter much more. Heteroskedasticity? Who is she? Just minimize that loss function faster. 
+
+That said you have the language of statistics to everything should be learnable without significant friction. I imagine you can get into a nice masters to transition.
+- Yes, econometrics is  a strong background for transitioning into machine learning. Many of the core ideas like working with data, statistical inference, regression, and causal reasoning overlap with what’s needed in ML. I think you’ll need to supplement is in areas like linear algebra, probability, optimization, and programming.
+
+If your goal is a PhD, I’d recommend focusing on building a strong foundation in math (especially linear algebra and probability) and getting more hands-on experience with implementing ML algorithms. Your econometrics background will give you an advantage in understanding how to handle real-world, messy data and think carefully about modeling assumptions, which is very valuable in AI research.
+
+Just keep strengthening your math and coding foundations, and try to publish or contribute to projects if you can before applying for a PhD.
+- I don't think so. Econometrics teaches you different things on the data science spectrum, but AI ml specialists live in deep learning architectures and comp sci technical concepts. 
+
+I've done a fair amount of AIML in my time across NLP and computer vision. The econometrics didn't help me much but I guess I was curious enough and not intimidated by the math to pick up deep learning concepts. 
+
+In some ways, econometrics can is just as complicated as deep learning, but it doesn't get the sexy label
+- Yes and no. It is good because you bring nuance interpretation that go beyond the forecasting approach most computer science trained data scientists rely on. At the same time, it can be very frustrating, because you recognize when methods used in industry are flawed. For example, suppose you want to estimate a treatment effect from observational data. A simple DiD or regression discontinuity design may provide a good enough answer. But many people with a CS background approach the problem as a forecasting exercise, applying machine learning methods with some form of explainable-AI layer instead. Or consider trying to explain to a room full of CS/DS why a model that explains little variance can still be a good approach for estimating causal effects.
+
+So it is awesome to have this background, but it can feel like a curse at the same time.
+- It’s a nuanced mix that’s definitely worthwhile if you can thread the needle when it comes to explaining your work to potential employers. I did health econ and eventually ended up in ML.
+- I recognize this name from anywhere, gaytwink. Go do research in econometrics with ML!
+- I will say what nobody wants to say:
+No.
+- Bro you are no where close. You basically have a background in statistics. Statistics is a very tiny part of deep learning and AI. And not to mention CS and SWE skills you need for a career in AI and DL. Getting a masters in AI would be a good idea to get you started with everything in this field if you are hellbent into going for a PhD in AI/ML. 
+
+Furthermore, I would say that forget about AI/ML for masters. Focus more on robotics and autonomous systems. AI/ML is pretty saturated right now and robotics will be a next big thing.
+- Could you tell me about your transition from health econ to ML? Did you take up a graduate degree to transition?
+
+How did you manage to convince employers to hire you for an ML role and how did you gain the necessary computer science skills for it?
+- Why not
+- I have a bachelors in math and a MPH in health policy and stats. No other certs or degrees. I come from a different time though, I think. 
+
+No real transition since I already worked in health economics / health insurance.
+
+I learned everything on the job excel, sql, python, r, Hadoop. Python machine learning by Sebastian raschka was my go to book to get me up to speed. 
+
+I think what convinced them is that I knew the datasets better than most. And made a commitment to that. Again on the job though, which is a catch 22. And knowing how to operationalize and explain the models was huge. Since I knew what everyone needed to do with the outputs and worked closely with them to help explain it. 
+
+I started off a health economics analyst in the policy arena, transitioned to health systems analytics, then insurance where I did ML.
+- Please, don’t take this as rude or discouraging, not my intention at all. I am just being honest.
+
+I think you can answer the question yourself. What does an econometrics background give you? For example, as far as I know, econometrics focuses on causal inference, hypothesis testing, and interpretable models. The question is usually “Does X cause Y, under assumptions A, B, C?”. ML/AI in contrast focuses on predictive performance, representation learning, optimization, and scaling laws. The question is often “how can we design models and algorithms that generalize, optimize efficiently, or align with human cognition/behavior?”. While econometrics is good for causal questions, it doesn’t usually provide the tools for pushing ML architectures or optimization forward. In fact, I don’t think it asks you to actually know that much about the math behind the models, which is definitely a drawback.
+
+GMM, Linear models, mixed effects models, etc won’t be relevant enough for an ML PhD position. You will really have to show good skills through papers, projects, or related experience. So even if you have some deep learning experience, that is definitely not enough nowadays. Everyone is trying to get into the field, which makes it more competitive and less accessible. 
+
+Now let’s talk about basic courses. It is well known that intro math in college is basically AP high school math. As for coding, it sounds like you have limited experience. Ask yourself “do I know how a transformer works? Would I be able to replicate technical deep learning papers? Do I actually know how to use pytorch, use tensors, and perform operations with them?”. This will tell you pretty accurately how unique or relevant your experience is.
+
+Again, I am just saying this to be honest. I am not saying it is impossible or that you are a bad candidate. I am just trying to imply that your background may not be the most attractive for a faculty committee.
+
+Best of luck though! I am also happy to chat if you want any advice to take a better track (I myself took a non-conventional track to a deep learning related PhD)

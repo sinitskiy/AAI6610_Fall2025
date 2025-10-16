@@ -1,0 +1,45 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1me6psn/seeking_publicly_available_paired_mri/
+Title: Seeking Publicly Available Paired MRI + Genomic/Structured Data for Multimodal ML (Human/Animal/Plant)
+
+Content:
+I'm working on a multimodal machine learning pipeline that combines image data with structured/genomic-like data for prediction task. I'm looking for publicly available datasets where MRI/Image data and Genomic/Structured data are explicitly paired for the same individual/subject. My ideal scenario would be human cancer (like Glioblastoma Multiforme, where I know TCGA exists), but given recent data access changes (e.g., TCIA policies), I'm open to other domains that fit this multimodal structure:
+
+What I'm looking for (prioritized):
+
+Human Medical Data (e.g., Cancer): MRI/Image: Brain MRI (T1, T1Gd, T2, FLAIR). Genomic: Gene expression, mutations, methylation. Crucial: Data must be for the same patients, linked by ID (like TCGA IDs).
+
+I'm aware of TCGA-GBM via TCIA/GDC, but access to the BraTS-TCGA-GBM imaging seems to be undergoing changes as of July 2025. Any direct links or advice on navigating the updated TCIA/NIH Data Commons policies for this specific type of paired data would be incredibly helpful.
+
+Animal Data:
+
+Image: Animal MRI, X-rays, photos/video frames of animals (e.g., for health monitoring, behavior).
+
+Genomic/Structured: Genetic markers, physiological sensor data (temp, heart rate), behavioral data (activity), environmental data (pen conditions), individual animal ID/metadata.
+
+Crucial: Paired for the same individual animal.
+
+I understand animal MRI+genomics is rare publicly, so I'm also open to other imaging (e.g., photos) combined with structured data.
+
+Plant Data:
+
+Image: Photos of plant leaves/stems/fruits (e.g., disease symptoms, growth).
+
+Structured: Environmental sensor data (temp, humidity, soil pH), plant species/cultivar genetics, agronomic metadata. Crucial: Paired for the same plant specimen/plot.
+
+I'm aware of PlantVillage for images, but seeking datasets that explicitly combine images with structured non-image data per plant.
+
+What I'm NOT looking for:
+
+Datasets with only images or only genomic/structured data.
+
+Datasets where pairing would require significant, unreliable manual matching.
+
+Data that requires extremely complex or exclusive access permissions (unless it's the only viable option and the process is clearly outlined).
+
+Any pointers to specific datasets, data repositories, research groups known for sharing such data, or advice on current access methods for TCGA-linked imaging would be immensely appreciated!
+
+Thank you!
+
+Comments:
+- Check out the Genomic Data Commons (GDC).  Good luck.

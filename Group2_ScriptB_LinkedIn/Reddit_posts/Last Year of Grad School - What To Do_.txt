@@ -1,0 +1,49 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fdsl63/last_year_of_grad_school_what_to_do/
+Title: Last Year of Grad School - What To Do?
+
+Content:
+Hey all,
+
+I'm in my last year of grad school, getting a MS in Statistics, and I'm hoping to graduate in May of 2025. To put it briefly, what should I be doing to put myself in the best position to land a job after graduating? I am taking a class in Statistical Machine Learning where we are working through Elements of Statistical Learning. I am planning on entering Kaggle competitions throughout the year, I have a Github page up and running, and I have some industry experience doing Data Analyst/light Data Engineering work. 
+
+So, what should I be doing to become a better candidate? Something like Docker or AWS seems like it might be beneficial, along with Leetcode, expanding into Deep Learning, and perhaps contributing to open source and/or personal projects. 
+
+As far as my experience, I have worked primarily with linear methods for classification and regression, and am currently working on branching out into decision trees, random forests, bagging and boosting. 
+
+Any other questions I can answer please just let me know. Thanks!
+
+Comments:
+- As someone who just graduated with an MS Statistics and also holds a MS in Mathematics and is struggling to get any responses, get a god damn internship or master's co op type thing  , like your life depends on it.
+- “As far as my experience, I have worked primarily with linear methods for classification and regression, and am currently working on branching out into decision trees, random forests, bagging and boosting.”
+
+Oh sweet summer child. Apply for data analyst jobs.
+- Learn SQL. Too many candidates do not know basic SQL, but they think they do.
+- marvelous innocent engine wakeful steer different saw busy stupendous stocking
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- Network.
+- Job hunt like mad while you can. Internship, co ops, part time jobs. GitHub is fine but at this. Point you just need some kind of job experience ASAP.
+- 1. Get an internship. This is the most important step to finding an entry-level job
+
+2. Decide what type of data science job you want to do and focus on it in recruiting. Ignore others 
+
+3. Focus on the fundamentals for interview prep based on your preferred type of data science job. The fundamentals could include coding (sql and python), basic ml and stats. Ignore other things that are good but are not relevant for entry-level roles like docker, AWS, cloud certificates etc. Your goal is to prioritize what is most important and be damn good at it
+- Time to become a "Statistical Machine Learning Ninja"! 🥷 Just remember, the only thing scarier than job hunting is your thesis defense!
+- Don’t be afraid for something entry level/ jr. look at the details instead of title. Data analyst, business analyst, program analyst, etc have similar job descriptions with overlap. I started as a program analyst. Also, look for recent grad programs.
+- I would recommend having a solid understanding of the PMP, Project Management Professional, certification. I feel that this is over looked in the Data Science community and can be beneficial to interviewing, as well as connecting with other departments that will depend on your expertise. SQL and the other technical aspects are immensely helpful and will be acquired on the job based on the many different possible systems and platforms available but being able ot speak the same Project Management language will open doors for certain. 
+
+  
+An example, for any new data science project, the first stage is the Scope and conceptually framing the Project. Many Organizations struggle with data because they rush to the "How" before truly understanding the Whats and the Whos. Getting everyone to the table and being able to frame concepts will always yeild efficient, consistent and reliable data sets.
+- Adding Docker/K8S, ML infrastructure on cloud would be nice. Join different communities/clubs IRL to network, it’s easier to land a job that way.
+- What kind of job do you want after graduating?
+- networking to get referrals from people who know you personally.
+- I’ve never been asked deep learning questions in interviews. I think what you’re expanding into is a good start. Make sure to know classical machine learning algorithms and when to use each as well as their pros/cons.
+- What type of DS role do you want? For example, analytics vs. ML. I think the recommendation for each type of role is very different. For analytics roles, you'll need AB testing, product sense, and causal inference. The only coding you'll need to know is SQL and intermediate Python/R. If you want ML roles, the requirements are very different
+- Right now it’s all about who you know. Everyone has some combination of the words you mentioned on your resume: the challenge is to get your resume in front of someone that knows what they are doing. Go to stuff, introduce yourself (if it’s not a little uncomfortable you are not taking enough opportunities), and let them know you are about to graduate. It only takes one person that finds you likable and smart to make the connection you need.
+
+I’ve been finding jobs for 25 years in good markets and bad and people are where you need to spend your time. You are already competent; forget the little skill additions.
+- Heavy networking can help
+- You should have been doing internships the whole time. We are drastically shrinking our data analytics team sizes and I happen to know this is true at quite a few places.
+- Learn SQL and be comfortable using SQL to query databases
+- hmm

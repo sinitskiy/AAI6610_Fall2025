@@ -1,0 +1,30 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1jjo5xb/d_p_variational_inference_for_neural_network/
+Title: [D] [P] Variational Inference for Neural Network Weights in High-Dimensional Spatio-Temporal Models?
+
+Content:
+Hey everyone !
+
+I'm currently working on a spatio-temporal prediction project for my Bayesian ML class using a combination of GNN (message-passing style) and LSTM. The goal is to recursively predict the mean and standard deviation of a target variable over multiple future steps.
+
+Right now, I'm optimizing the Negative Log Likelihood of a predicted Gaussian to capture aleatoric uncertainty. So far, I'm only feeding in the past values of the target input, though I plan to bring in auxiliary variables (physical features, etc.) later.
+
+I've seen some skepticism in this subreddit around using **variational inference (VI)** for uncertainty quantification, particularly about its expressiveness and scalability. Still, I'm curious: What are some viable approaches for capturing **epistemic uncertainty** via **VI over neural network weights**, especially in high-dimensional settings?
+
+But I'm wondering what the best way is to model epistemic uncertainty, ideally through variational inference over the network weights.  My data is pretty high-dimensional (3D structure: time × space × features), so any method would need to scale reasonably.
+
+A few techniques that come to my mind:
+
+\- Bayes by Backprop
+
+\- MCMC Dropout?
+
+\- Maybe even low-rank approximations?
+
+Has anyone had success applying VI to large models (like GNN + LSTM hybrids) in a way that’s not intractable?
+
+Would love to hear what others have tried or if there are any recent papers worth looking into. Thanks in advance!
+
+Comments:
+- It does not involve VI, but the library pyTAGI (https://github.com/lhnguyen102/cuTAGI) does closed-form Bayesian inference in NN at scale. It will allow you to quantify both the epistemic & aleatory uncertainties and the LSTM architecture is already implemented into it.
+- I actually used [https://pyro.ai/](https://pyro.ai/) a lot. You have a lot of VI including ADVI available. In terms of scalability I was able to fit models with milions of parameters, that was not the issue. You can model what ever you track as a latent variable with some priors and just throw ADVI at it and you will get some distribution estimates. If you do that just remember that ADVI models the variables with an isotropic gaussian. But again it is VI, you would probably be better of if you can get an full MCMC estimate of those parameters what you need. In theory you can get it done with Pyro and a custom guide, however not sure if it is worth the effort.

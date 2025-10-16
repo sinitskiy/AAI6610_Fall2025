@@ -1,0 +1,22 @@
+URL: https://www.linkedin.com/posts/william-marcellino-ph-d-41982a19_ai-activity-7370965554943377408-MYeA
+Date: 2025-09-24
+Author: Unknown
+
+OpenAI recently released a paper on why large language models (LLMs) hallucinate, to sometimes produce plausible but false answers. It’s an important contribution to the growing literature on LLM information constraints.
+LLMs are compression engines: they take enormous amounts of data and squeeze it into a fixed number of parameters. But compression under constraint always means loss. Just as a zip file discards (deemed) redundancy, LLMs discard nuance, especially rare or “long-tail” information. This is not a bug but an inevitable byproduct of the math.
+
+The OpenAI paper reflects the fact that hallucinations are best understood as the residue of this process. Like students facing tough exam questions, LLMs are rewarded for guessing when uncertain. Benchmarks penalize “I don’t know,” but reward plausible attempts. So under both training and evaluation conditions, models learn to bluff. The reason they must bluff however is because of how aggressively they compress knowledge.
+
+Transformer-based models have a hard ceiling of about 3.6 bits of information per parameter. Past that limit, they move from storing knowledge to compressing approximations. This contrast with how humans handle information: we retain inefficient but meaningful details—rare words, exceptions, nuances (think of Zipf’s law for all the rarely used words we know). Models on the other hand prune those away to stay efficient.
+
+More broadly, deep learning research shows that these systems don’t build authentic representations of the world. They learn approximations that minimize loss. That’s why LLMs can be fluent yet unfaithful, persuasive but sometimes wrong. They don’t model actual reasoning processes, physics, etc., only the compressed semantic patterns of language, sound, and visuals.
+
+The implication is that hallucinations are not bugs we can patch out—they are the predictable result of compression under constraint. If we want more trustworthy 
+话题标签
+#AI systems, the fix won’t be just larger/better models. It’s also new incentives, evaluation frameworks that reward uncertainty, and most importantly hybrid designs that incorporate genuine world models alongside statistical compression.
+
+Further reading:
+https://lnkd.in/e7cN6eAV
+https://lnkd.in/eJMgnRJ2
+https://lnkd.in/eVbDpAEU
+https://lnkd.in/ez2ii-cJ

@@ -1,0 +1,20 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bz20r9/three_practical_use_cases_of_machine_learning_and/
+Title: Three Practical Use Cases of Machine Learning and Digital Twins in Clinical Research and Care
+
+Content:
+Hi all, thought my most recent Substack post would be of interest to those working in the healthcare/life sciences space. I talk about how we can use big data and machine learning to bring more personalized care through what’s called “digital twins.” Essentially, it uses historical data to look at the outcomes of people who share similar characteristics to you. Using Alzheimer’s Disease as a motivating example, there’s three use-cases for digital twins I discuss in my post:
+
+1. Reducing the size of randomized trial control arms through the prediction of treatment arm outcomes via their digital twins. The company with the most work on this space that I know of is [Unlearn.ai](https://www.unlearn.ai/). This would ideally save recruitment time and costs that scale per patient and per site.
+2. Using digital twins to calculate a prognostic score of disease progression and, in a trial, recruiting only those who are more likely to rapidly progress. In the literature, this is often called “enrichment.” When people progress at a faster rate, we can run the trial for less time while still having a good chance to observe a treatment effect if it’s there. 
+3. Using digital twins to help inform the delivery of precision medicine in routine care (e.g. at the doctor’s office). Crucially, this system should be tested in randomized trials versus standard of care.
+
+If any of these topics interest you, [check out the post here](https://open.substack.com/pub/mlinhealthcare/p/leveraging-machine-learning-using?r=7bxky&utm_campaign=post&utm_medium=web)! 
+
+What promising use cases for digital twins and precision medicine have you found in your work? What other technology should we be using to improve clinical research and care? Would love to know in the comments below!
+
+Comments:
+- Following
+- Wow cool!
+- Following
+- Thanks!

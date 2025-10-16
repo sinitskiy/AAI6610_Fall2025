@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/bvdmitri_machinelearning-bayesianinference-neuralnetworks-activity-7310953971848757249-1xNH
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dmitry Bagaev的动态
+Dmitry Bagaev
+
+co-founder and CTO of Lazy Dynamics | Ph.D. & PostDoc TU/e | Skydiver & Drummer
+
+6 个月
+
+When dealing with real-world signals, hidden dynamics can be unknown, non-linear, and difficult to model with equations. Neural networks are great at approximating complex patterns, but without proper guidance, they can overfit to observations and capture the wrong dynamics.
+
+That’s why we explored a different approach: combining neural network learning from Flux with Bayesian inference in RxInfer. This method doesn’t just learn from data—it also accounts for uncertainty, ensuring more reliable and robust predictions.
+
+The result? The best of both worlds - the adaptability of neural networks and the rigor of probabilistic estimation
+
+We’ve put together an example demonstrating this in action—check it out and let us know what you think!   https://lnkd.in/e5KBaTiN
+
+#MachineLearning #BayesianInference #NeuralNetworks #UncertaintyQuantification #RxInfer #AI #Julia
+
+127
+5 条评论
+赞
+评论
+分享
+Daniel Friedman
+
+Researcher, Educator, Artist, Organizer
+
+6 个月
+
+It is awesome work.
+Here today I modified the notebook example into a script:  https://github.com/docxology/RxInferExamples.jl/tree/main/scripts/Advanced%20Examples/Integrating%20Neural%20Networks%20with%20Flux.jl , made animations https://github.com/docxology/RxInferExamples.jl/blob/main/scripts/Advanced%20Examples/Integrating%20Neural%20Networks%20with%20Flux.jl/Balance/output_images/animations/01_3d_postural_trajectory.gif and applied in, in the Textbook Group meeting https://youtu.be/P0uVOg81qE8, to postural dynamics: https://github.com/docxology/RxInferExamples.jl/blob/main/scripts/Advanced%20Examples/Integrating%20Neural%20Networks%20with%20Flux.jl/Balance/output_images/biomechanical/biomechanical_postural_sway.gif 
+
+赞
+回复
+3 次回应
+Victor F.
+
+Data Scientist | Applied AI | Business Driven Solutions | PhD
+
+6 个月
+
+I've been hoping for a Flux/Lux integration for a while. 

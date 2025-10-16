@@ -1,0 +1,40 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/13jb9wd/postdoc_in_bioinformatics_at_institute_for/
+Title: PostDoc in Bioinformatics at Institute for Environmental Medicine
+
+Content:
+The junior research group Computational Phenomics led by Prof. Sahm at  the[Leibniz Research Institute for Environmental Medicine](https://iuf-duesseldorf.de/en/)  (Düsseldorf, Germany) is hiring a **Bioinformatician / Computational  Biologist (m/w/d)**.
+
+**Activities and Responsibilities**
+
+The Computational Phenomics group investigates how environmental toxins  (e.g. particles, radiation or chemicals) accelerate the aging process at  the molecular level and promote the development of associated diseases.  To this end, we evaluate multi-omics data from cell cultures, animal  models and human subjects. Complementary, we identify evolutionary  adaptations that cause certain animal models, such as the naked mole  rat, to be long-lived, age healthily, and have high resistance to  environmental toxins. Therefore, we compare the genomes and epigenomes  of such species with those of shorter-lived and more disease-prone  relatives.
+
+**Qualification profile**
+
+* PhD in life sciences, informatics or mathematics
+* Experience with evaluation of omics data, e.g., next-generation sequencing
+* Experience in the implementation of research projects
+* Programming skills
+
+Without requiring it, we would especially appreciate it if you would  bring knowledge in one or more of the following areas: multi-omics  integration, machine learning, phylogenetics, genome assembly,  epigenetic clocks.
+
+**We offer**
+
+* Access to state-of-the-art facilities and unique sample material from  animal models and human subjects
+* Opportunity to develop your own research profile and to make a  decisive contribution to a newly established research group
+* Possibility for habilitation
+* Modern and family-friendly working conditions
+* Future-proof workplace
+* Flexible working hours and the possibility of mobile work
+* Supplementary company pension scheme in accordance with collective  bargaining law (RZVK)
+* A low-cost job ticket for the Rhein Ruhr public transport system
+* 30 days of vacation according to the collective agreement
+
+The position starts as soon as possible and is initially limited to 2  years, with the option of continued and possibly permanent employment.  Remuneration is based on pay group 13 TV-L, i.e., currently 4,088 € to  6,037 € depending on experience.
+
+We promote equal opportunities and diversity. Women are particularly  invited to apply and will be given preferential consideration in  accordance with the LGG NRW. Applications from people with severe  disabilities and their peers are also expressly encouraged.
+
+Please address your application (short letter of motivation, CV,  qualification certificates) with the reference "Computational Phenomics"  in the subject line as one summarized document in PDF format by email:  [Bewerbung@IUF-Duesseldorf.de](mailto:Bewerbung@IUF-Duesseldorf.de).
+
+Comments:
+- I live in Ireland. Can the role be fully remote?

@@ -1,0 +1,31 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jbqzwt/guide_how_to_run_ollamaocr_on_google_colab_free/
+Title: [Guide] How to Run Ollama-OCR on Google Colab (Free Tier!) 🚀
+
+Content:
+Hey everyone, I recently built **Ollama-OCR**, an AI-powered OCR tool that extracts text from **PDFs, charts, and images** using advanced **vision-language models**. Now, I’ve written a step-by-step guide on how you can run it on **Google Colab Free Tier!**
+
+# What’s in the guide?
+
+✔️ **Installing Ollama on Google Colab** (No GPU required!)  
+✔️ Running models like **Granite3.2-Vision, LLaVA 7B** & more  
+✔️ Extracting text in **Markdown, JSON, structured formats**  
+✔️ Using **custom prompts for better accuracy**
+
+Hey everyone, Detailed Guide **Ollama-OCR**, an AI-powered OCR tool that extracts text from PDFs, charts, and images using advanced vision-language models. It works great for structured and unstructured data extraction!
+
+Here's what you can do with it:  
+✔️ Install & run **Ollama** on Google Colab (Free Tier)  
+✔️ Use models like **Granite3.2-Vision** & **llama-vision3.2** for better accuracy  
+✔️ Extract text in **Markdown, JSON, structured data, or key-value formats**  
+✔️ Customize prompts for better results
+
+🔗 Check out [Guide](https://medium.com/@mauryaanoop3/how-to-run-ollama-ocr-on-google-colab-free-tier-9bd3aa86dfe2)
+
+Check it out & contribute! 🔗 [GitHub: Ollama-OCR](https://github.com/imanoop7/Ollama-OCR)
+
+Would love to hear if anyone else is using **Ollama-OCR** for document processing! Let’s discuss. 👇
+
+\#OCR #MachineLearning #AI #DeepLearning #GoogleColab #OllamaOCR #opensource
+
+Comments:

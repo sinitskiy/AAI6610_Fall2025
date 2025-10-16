@@ -1,0 +1,31 @@
+URL: https://www.linkedin.com/posts/janne-merilinna_towards-higher-epistemic-uncertainty-today-activity-7193131583120293888-_TuN
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Janne Merilinna的动态
+Janne Merilinna
+1 年
+
+Towards higher epistemic uncertainty!
+
+Today marks my last official day at VTT. If my math serves me right, it's been a total of 20 years and three months.
+
+I joined VTT to conduct my master's thesis in February 2004. Back then, quality-driven software architecture development was a focus, accompanied by Model Driven Architecture (MDA), where we believed you could model your software system and generate the code with the press of a button. How amazing would that have been? I attempted to generate code for my thesis too, but it didn't go as planned, and I ended up writing the implementation in C++, like a caveman. Later, I was introduced to Domain-Specific Modelling Languages (DSML), which delivered. Through coffee break encounters at work, I found myself drawn towards robots, distributed systems, and production rule systems, which ultimately led me to my true passion: machine learning.
+
+Since 2016, I've been involved with machine learning at work on diverse projects, while privately exploring quantitative finance, my second long-term passion. To deepen my understanding in machine learning, I participated in quantitative finance competitions such as Quantopian and Numerai, which raised questions about the robustness of my models.
+
+In Numerai, I attempted to understand why my models didn't work consistently. The root cause might have been aleatoric uncertainty and perhaps epistemic uncertainty, concepts I wasn't aware of back then. Similar issues began to emerge at work, driving my desire to understand the underlying factors.
+
+I spent considerable time exploring uncertainty modelling, focusing on random forest and eventually developing my own method called MACAU. With MACAU, one can assess model uncertainty, discern the type of uncertainty, and explain why some samples are novel. This work has now concluded, and the original question raised in Numerai has been answered.
+
+I've now left 

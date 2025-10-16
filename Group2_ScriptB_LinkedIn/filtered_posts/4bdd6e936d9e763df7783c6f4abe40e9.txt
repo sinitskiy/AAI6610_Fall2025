@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/anthony-alcaraz-b80763155_deceptively-confident-tackling-hallucinations-activity-7204409101009784832-ERHB
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anthony Alcaraz的动态
+Anthony Alcaraz
+
+Senior AI/ML Strategist @AWS | Business Angel | Enterprise AI Partnerships
+
+1 年
+
+Deceptively Confident: Tackling Hallucinations in LLM Applications 🔺 
+
+
+Imagine seeking medical advice from an AI chatbot that assures you with uncanny articulation that your stomach pain is probably cancer and you have mere months to live. 
+Or picture an AI financial advisor confidently instructing you to move your life savings into a volatile memecoin that promises 10x returns. 
+
+Would you trust these AI recommendations? How can you be sure that the AI isn’t just making things up — or “hallucinating” in machine learning parlance?
+
+As large language models (LLMs) demonstrate increasingly fluent and human-like outputs, they are being rapidly integrated into real-world applications ranging from search engines to tutoring to therapy. 
+
+However, LLMs are prone to generating outputs that seem plausible but are actually inconsistent, factually wrong, or even outright nonsensical — a phenomenon known as hallucination. When LLMs are applied in high-stakes domains like health, finance, and law, these hallucinations can lead to catastrophically bad decisions and erode trust in AI technologies as a whole.
+
+Detecting and mitigating hallucinations is thus an urgent challenge that LLM application developers must grapple with.
+
+Encouragingly, recent research by Google DeepMind has yielded techniques for quantifying the uncertainty of LLM outputs and screening out unreliable ones.
+
+By incorporating these uncertainty-aware methods, developers can make their applications more transparent, robust, and ultimately worthy of human trust.
+
+In this article, we’ll look into the primary types of uncertainty that plague LLMs, analyze tools for assessing and reducing this uncertainty, and examine how they can be integrated into a hallucination detection pipeline for LLM apps.
+
+Aleatoric uncertainty arises from ambiguity or randomness 

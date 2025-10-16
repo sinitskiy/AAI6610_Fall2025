@@ -1,0 +1,17 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/uesqim/what_role_does_quantum_mechanics_play_in_biology/
+Title: What role does quantum mechanics play in biology?
+
+Content:
+I'm learning about biological molecular mechanisms in depth for the first time. It's a harrowing experience to begin to observe the complexity of the human body, and inspiring to feel things beginning to come together. I'm deeply interested in how many enzymes work as catalysts in a molecular machine. When we see machines at this scale, my (poor) understanding of quantum physics nags me telling me that there should be some weirder stuff going on in terms of the classic quantum shenanigans.   
+
+
+If I'm interested in designing machines like evolution has made into me, is quantum physics an important field to educate myself in. Or should I focus all my energy on biophysics and chemistry
+
+Comments:
+- Quantum biology is the study of applications of quantum mechanics and theoretical chemistry to biological objects and problems. Many biological processes involve the conversion of energy into forms that are usable for chemical transformations, and are quantum mechanical in nature.
+- There is a subspecialty that's concerned with that: quantum biology. Though it mainly focuses on photosystems, or keto-enol tautomerism of nucleobases, as they are plausibly, the most sensitive to quantum mechanics. At body temperatures,  classical mechanics dominates.
+- Yeah I have the same intuitions about this, nature wouldn't draw a line of distinction between quantum effects and others just because we don't have a great understanding of them yet. There are relevant talks at the royal institution by Phillip Ball and Jim Al-Khalili. And if you're willing to depart from the mainstream, Roger Penrose has some interesting views on a specific structure called a 'microtubule' and how that could potentially house quantum effects and be involved in the phenomenon of consciousness.
+- Quantum immortality!
+- There were some articles in /r/science recently about quantum tunnelling, somehow related to potassium iirc, may be involved in Tinnitus.
+- "Life on the edge" written by Jim Al-Khalili and Jonjoe McFadden is a great book on this topic

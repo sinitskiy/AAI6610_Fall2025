@@ -1,0 +1,16 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1n1v6ts/integrating_16s_and_host_transcriptomics/
+Title: Integrating 16S and host transcriptomics
+
+Content:
+Hi all! I'm working with paired 16S rRNA sequencing and host transcriptomic (RNA-seq) datasets, and I'm interested in integrating the two to explore host–microbiome interactions. I want to apply AI/ML approaches to this integration, but I’m still navigating the best strategies and tools for doing so.
+
+I know there are some existing studies in the human microbiome space that tackle this kind of multi-omics integration, but they either don’t quite align with my setup or are difficult to replicate from a methods standpoint.
+
+If anyone has recommendations for tools, packages, or papers they’ve found helpful for microbiome–host transcriptome integration, especially those incorporating machine learning, I’d really appreciate it!
+
+TIA! :)
+
+Comments:
+- Hmm I feel like the request is a lil broad here. Could you please clarify the biological question? sample type?
+- Want to integrate AI? Plop this bad boy into chatgpt and it’ll tell you exactly what you want to hear.

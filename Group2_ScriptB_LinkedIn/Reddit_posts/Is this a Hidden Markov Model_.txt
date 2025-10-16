@@ -1,0 +1,104 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/2zvisv/is_this_a_hidden_markov_model/
+Title: Is this a Hidden Markov Model?
+
+Content:
+Hi guys and gals. This post is long, so scroll downwards for a tl;dr :)
+
+I posted not too long ago a link to my project titled: [autocomplete](https://github.com/rodricios/autocomplete). What resulted from that post was a correction to my labeling of the project. I initially thought it was a HMM, where in reality it was a Markov chain. 
+
+The thread of conversation that pointed out my mistake can be read [here.](https://www.reddit.com/r/programming/comments/2xwi3g/textbooks_dont_explain_the_practicality_of_hidden/cp41osh)
+
+The thread is too long to post here, but here's a quote from a /u/pretz that detailed some of what was lacking my project: 
+
+> [..] You could use the forward algorithm to determine the probability of an entire sequence, but with words in a string [autocomplete] is just a standard markov model, not a hidden markov model (because you know the words, there is no hidden state to estimate for the sequence)
+
+/u/pretz goes on to give a quick synopsis of the HMM he implemented for speech recognition, and then he ends the comment with: 
+
+> In your code you see the previous words (your states are your observations), there is no uncertainty about which observations map to which state. Hopefully that helps.
+
+In response to this comment, and I'll be frank and say that much of the terminology went way above my head, I say:
+
+> Oh, so in essence, there's a lot more uncertainty being dealt with in HMM's?
+
+I continue the above remark by giving what I think is a possible implementation for iPhone's autocomplete & correction functionality, which I've been told IS a HMM (I'll refrain from naming names, but he's academic who's friends with someone who worked with the team at Apple that implemented its phone's autocomplete & correct - yes, I do believe him). 
+
+Now in the context of that comment, I get upvoted - hopefully a sign that my hunch was correct - and then /u/romanows responded with: 
+
+> More uncertainty because you can't observe the thing that is "causing" (or "generating") the only things you can observe. And the things you can observe are noisy. [..]
+
+So with all that said, let me describe the latest implementation of the autocomplete module (the version in which I'm confused about):
+
+Using a basic "fat-finger" model like so: 
+
+    NEARBY_KEYS = {
+        'a': 'qwsz',
+        'b': 'vghn',
+        'c': 'xdfv',
+        'd': 'erfcxs',
+        'e': 'rdsw',
+        'f': 'rtgvcd',
+        ... }
+
+and assuming that you're attempting to write say... *body*:
+
+    autocomplete.predict('the','bo')
+    
+    [('bone', 175),
+     ('body', 149),
+     ('bones', 122),
+     ('boy', 46),
+     ('bottom', 32),
+     ('box', 24),
+     ...]
+
+and then you make the error of typing an "f" instead of a "d", the current implementation will 
+recognize the "f" in "bof", and it will also use the fat-finger model to produce: 
+
+    ["bor", "bot", "bog", "bov", "boc", "bod", "bof"]
+
+Conditioned on "the", the implementation will then query for the top N frequent words prefixed by 
+any one of the above "bo[rtgvcdf]" strings, resulting in:
+
+    autocomplete.predict('the','bof')
+
+    [('body', 149),
+     ('bottom', 32),
+     ('borzois', 16),
+     ('bottle', 13),
+     ('bodies', 13),
+     ('border', 12)
+     ...]
+
+You can find the code where this occurs [here](https://github.com/rodricios/autocomplete/blob/master/autocomplete/autocomplete.py#L52)
+
+Finally to my question: does the "hidden" step of generating potential fat-finger candidates constitute the "hidden" step in HMM's? Or is what I did just a clever hack?
+
+Any insight is welcomed and appreciated! 
+
+I guess I should also note that I do have an agenda with this post. An objective of mine is to come up with simple explanations and applications to some of the "introductory" machine learning material; basically approaching some of these concepts with intuition rather than theoretical foundation. I'm really not trying to enter a debate about which approach to learning is "better," I'm just trying to lower the barrier to entry and get more young'ins and practically anyone into this awesome field of study!
+
+tl;dr: 
+
+I'm out to get your kids! Jk (read the last paragraph if you were creeped out). I originally built an autocomplete module via a Markov chain. I recently added a "fat-finger" error model to take into account the possibility that the user mistyped a letter, and provide the suggestions based off those extra considerations. Now I'm trying to see if the implementation is actually a HMM. But I'm insecure about my own understanding of what is "required" for such an implementation.
+
+Edit: clarified that the current version of [autocomplete](https://github.com/rodricios/autocomplete) is the implementation I'm having questions about.
+
+Comments:
+- A hidden Markov model is one where you have a bunch of different possible states that your Markov chain could be in (just like your initial thing) but each state has, inside it, a *probability distribution* over which word it produces. Your initial Markov chain was a special case of an HMM where you have one state per word and the distribution places probability 1 on a particular word and 0 on everything else. 
+
+So by "hidden" we mean that the observed output (word) is a stochastic function of the actual state the chain is in. While it's still only first-order Markov, with enough states and enough data, you can fit an HMM that encodes a fair bit about the history of where the Markov chain has been based on what state it is currently in. Figuring out what the most likely  state the chain is in at the end of a given sentence can be done using the Viterbi algorithm; you can also get the *probability* that the chain is in each end-state, given the sentence you've seen, with roughly the same algorithm, the "forward algorithm" part of the forward-backward algorithm. The difference between Viterbi and "forward" is whether you do a max or a sum inside the loop.
+
+[This](http://www.cs.ubc.ca/~murphyk/Bayes/rabiner.pdf) is what I studied when I was trying to figure out HMMs first. Section II goes over your special case "observable" Markov model, and section III goes over the departures from it to get you to HMMs. [This](http://www.cs.columbia.edu/~mcollins/fb.pdf) is a fairly terse but concise description of the forward-backward algorithm, kept general enough that it also applies to chain CRFs (you can ignore those bits if all you're interested in is HMMs). Essentially what you're after is the alpha(T, s) for each state s, which is the probability of being in that state s after generating precisely the T characters the user typed in. I suggest you read the Rabiner tutorial first.
+- No. A Markov chain is a simple probabilistic model where state x(k+1) depends only on state x(k). For example, if you know a car's speed is 60 at time t, and in a given time step the probability distribution of the change in speed is N(a,b), then the car's speed is 60+N(a,b) at time t+1. You can then make a prediction of the probability distro at any time in the future.  
+  
+In a hidden markov model, the state isn't directly known, but estimated from a noisy observation. For the car example, we never know the car's "actual" speed, but at time t+1 a sensor (with some probability distro for accuracy) is read at 61. We also know that time t, the speed estimate was 58. Based on these two values (and prior probability distro), we can estimate speed at time t+1 at some value in the range [58,61].
+- Thanks for the references! So I take it that the "fat-finger" model estimations do not account for filtering against the "noise", which in this case I'm defining to be the user's input in general (I'm assuming that any key pressed may be a mistype)?
+- Thanks for the response :) 
+
+> In a hidden markov model, the state isn't directly known, but estimated from a noisy observation.
+
+Would it be fair to say that any key press is a "noisy" observation, in that it may have been a mistype. And if that's alright to assume, then when I take into account the surrounding key's probability as the intended key, would that not constitute as a set of "estimated" output values?
+- So what I was describing was a word-level HMM. Running the forward algorithm would give you a distribution over the terminal state given the words up until now. In order to actually auto-complete with such a model you'd need to look at the most probable next states and *for each state* s{T+1}, look at their emission probability table p(w|s{T+1}), and filter for words w that start with the letters the user has actually typed, and finally sort them in descending order by p(s_i|previous words) * p(w|s_i). The "fat finger" model could be bolted in as part of this filtration and sorting step.
+
+In the example I gave, there are multiple states your chain could be in for the last full emitted word (you can calculate the probability that it landed in each), and each of these states has it's own idea of which *next* state is likely (of course, it can stay in the same state with non-zero probability in general, but generate a different word). And each of those *next* states has an opinion about which words it thinks are likely. It's a subtle thing to wrap one's head around at first, but the decoupling of states from the observed symbols opens up a lot of possibilities.

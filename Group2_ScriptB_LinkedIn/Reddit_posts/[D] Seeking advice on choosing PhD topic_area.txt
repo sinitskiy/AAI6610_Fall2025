@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mi0wz8/d_seeking_advice_on_choosing_phd_topicarea/
+Title: [D] Seeking advice on choosing PhD topic/area
+
+Content:
+Hello everyone,
+
+I'm currently enrolled in a master's program in statistics, and I want to pursue a PhD focusing on the theoretical foundations of machine learning/deep neural networks.
+
+I'm considering statistical learning theory (primary option) or optimization as my PhD research area, but I'm unsure whether statistical learning theory/optimization is the most appropriate area for my doctoral research given my goal.
+
+Further context: I hope to do theoretical/foundational work on neural networks as a researcher at an AI research lab in the future. 
+
+Question:
+
+1)What area(s) of research would you recommend for someone interested in doing fundamental research in machine learning/DNNs?
+
+2)What are the popular/promising techniques and mathematical frameworks used by researchers working on the theoretical foundations of deep learning?
+
+Thanks a lot for your help.
+
+Comments:
+- These are very broad questions, and the field is just too big to give a concise answer. 
+
+(1) There are several open problems / topics in ML theory:
+- Generalization, distribution shifts
+- Uncertainty, quantifying aleatoric and epistemic sources
+- Limited data, limited annotations, domain adaptation with self-supervision
+- Inverse problems, causal modeling, time dependency in language / video modeling
+- Reliability, XAI, alignment, epistemological and ethical dimensions
+- On-line continual self learning and domain adaptation
+- Functional spaces, NTKs, INRs, PINNs, etc.
+- Optimization, regularization, double descent and grokking
+- Disentanglement, concept learning, hierarchical learning
+- Sparsity, quantization, gradients in discrete spaces
+
+Note that the above list has topics grouped in a manner some may disagree with, and some may claim certain topics are tangentially related to ML theory. Moreover, it is by no means exhaustive, and could grow arbitrarily large. Several relevant open questions in mathematics and statistics could / should also apply, as well as several in computer science, philosophy and ethics. 
+
+(2) Again, due to the extent of 1), it is difficult to provide a satisfying answer. But some interesting theoretical frameworks show up in several domains; I'd highlight **information theory and classic theory on kernel methods** as being broadly applicable. Differential geometry is a field that I find often has interesting applications, but in much more niche cases. 
+
+[Also worth noting that this has been discussed in previous posts](https://www.reddit.com/r/MachineLearning/comments/1dmak2a/d_what_are_open_unsolved_interesting_problems_in/).
+- Algorithmic information theory for ML. Differentiable approximations of algorithmic structures (e.g. Difflogic). Links between statistical optimization procedures and algorithmic structures. Can a transformer learn an algorithm to compute digits of pi from an arbitrarily large training data set? Why or why not?
+- Start with questions that you understand and that really interest you. Then see if those have been solved or not. Look for a good well-connected advisor. They will tell you where to look for problems.

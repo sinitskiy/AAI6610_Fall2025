@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/brunoneri_machinelearning-activity-7364974288044457984-BWsq
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Bruno Neri的动态
+Bruno Neri
+
+Technical Leader - Artificial Intelligence and Deep Learning Enthusiast - Senior Software Engineer at ALTEN Italia
+
+1 个月
+
+"BLIPs: Bayesian Learned Interatomic Potentials" by Dario Coscia, Pim de Haan, Max Welling
+
+"Machine Learning Interatomic Potentials (MLIPs) are becoming a central tool in simulation-based chemistry. However, like most deep learning models, MLIPs struggle to make accurate predictions on out-of-distribution data or when trained in a data-scarce regime, both common scenarios in simulation-based chemistry. Moreover, MLIPs do not provide uncertainty estimates by construction, which are fundamental to guide active learning pipelines and to ensure the accuracy of simulation results compared to quantum calculations. To address this shortcoming, we propose BLIPs: Bayesian Learned Interatomic Potentials. BLIP is a scalable, architecture-agnostic variational Bayesian framework for training or fine-tuning MLIPs, built on an adaptive version of Variational Dropout. BLIP delivers well-calibrated uncertainty estimates and minimal computational overhead for energy and forces prediction at inference time, while integrating seamlessly with (equivariant) message-passing architectures. Empirical results on simulation-based computational chemistry tasks demonstrate improved predictive accuracy with respect to standard MLIPs, and trustworthy uncertainty estimates, especially in data-scarse or heavy out-of-distribution regimes. Moreover, fine-tuning pretrained MLIPs with BLIP yields consistent performance gains and calibrated uncertainties."
+
+Paper: https://lnkd.in/dYBUkFbu
+
+#machinelearning
+
+206
+4 条评论
+赞
+评论
+分享
+Francesco Cannarile
+
+Chapter Lead Data Science & AI @Eni | Executive Ph.D.| SPE member
+
+1 个月
+
+Roberto Simone Pinna, PhD Bernardino Tirri Giacomo Melani
+
+赞
+回复
+2 次回应
+Kaushik Gandhi
+
+Sales Account Manager @ AI CERTs™ | Driving Strategic Partnerships | Business Development | B2B | B2C | Sales | Te

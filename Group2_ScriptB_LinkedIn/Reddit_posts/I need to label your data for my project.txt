@@ -1,0 +1,52 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1icco3l/i_need_to_label_your_data_for_my_project/
+Title: I need to label your data for my project
+
+Content:
+Hello!
+
+I'm working on a private project involving machine learning, specifically in the area of data labeling.
+
+Currently, my team is undergoing training in labeling and needs exposure to real datasets to understand the challenges and nuances of labeling real-world data.
+
+We are looking for people or projects with datasets that need labeling, so we can collaborate. We'll label your data, and the only thing we ask in return is for you to complete a simple feedback form after we finish the labeling process.
+
+You could be part of a company, working on a personal project, or involved in any initiative—really, anything goes. All we need is data that requires labeling.
+
+If you have a dataset (text, images, audio, video, or any other type of data) or know someone who does, please feel free to send me a DM so we can discuss the details
+
+Comments:
+- let's discuss the details here unless you have something to hide?
+
+i need segmentation masks for 20k images
+- there are so many datasets available for free that you could start with. It’s weird and fishy that you’re trying to get data from others first, instead of going for the vast wealth of datasets available online you could search for.
+- [removed]
+- Thank you for reaching out! 
+
+The DM details I mentioned were primarily to understand your project better, as having the right context is essential for accurate data labeling. However, if you're comfortable sharing the details here, we're happy to discuss publicly.
+
+To proceed, we'd need to understand more about your project. What objects are we labeling? Is there any domain-specific knowledge required? Are there guidelines or standards you’d like us to follow?
+
+This information will help us determine the best approach and ensure the labeling meets your expectations. Let us know how you'd prefer to continue!
+- We’ve already used public datasets in our tests, but our main goal now is to gather feedback on the quality of our labeling process. That's why we're seeking collaborations, it's a win-win: you get free labeling, and we get valuable feedback to improve our service.
+
+Rest assured, we’re not interested in your data. We value confidentiality and would be happy to sign an NDA whenever necessary.
+
+Thanks for sharing your thoughts, and we hope this clears things up!
+- We primarily use Label Studio, but in some specific cases, we use other tools.
+- objects are metallic cylinders, annotations are various components / visual attributes
+
+no domain-specific knowledge required
+
+i will provide a few examples of correct annotations
+
+what is in your feedback form and what will you do with the responses
+- In the feedback, we're basically asking you to review our work — whether you think the labeling has been done well, with consistency, and delivered on time.
+
+We're collecting these responses as part of our market research to improve our labeling process.
+
+If you like to collaborate, please send a sample dataset with some good and bad examples on my [email](mailto:rafacvs.dev@hotmail.com).
+- Thx. That’s a hotmail - do you have a company email?
+- Sure!  
+  
+[Here it goes](mailto:contato@fexdata.com).

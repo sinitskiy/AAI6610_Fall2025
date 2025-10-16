@@ -1,0 +1,19 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1128c5c/switching_from_molecular_biology_to_computational/
+Title: Switching from molecular biology to computational biology for PhD
+
+Content:
+Hi everybody. I did my masters in molecular biology but started really enjoying machine learning/data science. I started taking Bioinformatics courses and now want to get my PhD in the field of computational biology.
+
+The thing is, I would love to ideally work on a project that is a mix of wet-lab and computational work. I got a a PhD offer in a great lab with a very interesting project, but there won't be any wet-lab work. It will be 100% computational.
+
+Will it be possible in the future to do my ideal wet-lab/computational split, or by having a 100% computational PhD I cut-off any prospects for it and would have to stick to bioinformatics forever?
+
+Comments:
+- You have a master's mol bio.  You aren't slamming any doors.  This is a retraining session.
+I think it is a path to being very strong in both fields.  There are a lot of bioinformatics folks who are essentially big data specialists with limited practical genetics backgrounds.  This sounds like a good journey to bet on.
+- Hi! Similar situation here. I'm an undergrad in cell/molecular biology.  I'm interested in bioinformatics and I've taken some Python/R/C++ intro lessons and gained some research experiences in sequecing data analysis (NGS/LRS/scRNAseq/RNAseq). Until now, most of my bioinformatics work was basically utilizing and connecting available analysis tools to understand the biological data, instead of developing my own algorithm.
+
+However, I'm actually more interested in the algorithm portion of bioinformatics than the wet lab portion, so if you don't mind me asking, I'm wondering how was your experience of applying for & getting into a computational biology PhD program as a molecular biology major? How did you address the discrepancy between your major and your PhD focus? Cuz I'm a bit worried that molecular biology is not exactly the right track for me since I want to do my PhD in bioinformatics/computational biology. Thanks!
+- Thanks! Some people advised me that it would end up being a 'jack of all trades, master of none' thing.
+- Cross-disciplinary training and experience can uncover new connections and are fertile ground for developing new approaches to problems.  During doctoral training in particular, you are forced away from generalist approaches and into a narrow research niche in depth.  However, once that program is finished you are again free to chart your course.  Many Ph.D.s never pull their heads out of that deep narrow niche (I remember that condition...).  There can be value in that, but there is also value in straddling different approaches and looking farther.  I am an industry guy, which allows me to consider any potentially useful approach to my latest problem without having to respect the boundaries of hyperspecialized colleagues.  Just enjoy the learning.

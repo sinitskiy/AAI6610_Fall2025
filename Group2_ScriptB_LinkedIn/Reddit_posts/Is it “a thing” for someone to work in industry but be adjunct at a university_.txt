@@ -1,0 +1,28 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/u313o5/is_it_a_thing_for_someone_to_work_in_industry_but/
+Title: Is it “a thing” for someone to work in industry but be adjunct at a university?
+
+Content:
+I’ve been thinking about what I want to do after I finish my PhD. My current institute is going through a lot of changes so I’m considering my options. Right now I’m a Staff Scientist/PhD candidate and should be finishing soon.
+
+I feel torn between tying to make decent money for once and working on projects I’m passionate on. Since I’m bioinformatics and machine learning I dabble in quite a bit.
+
+Is it a thing for people to be in industry but then be adjunct at a university for passion projects? Would that be spreading yourself too thin in most cases? Would that be conflict of interest if there’s no overlap in research? Basically, I work in microbiome work and most of the jobs I found are for human microbiome which I understand pretty well but honestly I am
+Much more passionate about environment and ecology. 
+
+Is it uncommon for people to have their cake and eat it at the same time? That is; work in industry but also do projects on occasion at a university or institute?
+
+Comments:
+- If you were to do this you would need to understand who owns the product of your work, usually it’s your employer. You would want to make sure you keep your jobs separate too. Don’t work on one job with any resources (including electricity) from the other job as it would create a conflict of interest and of ownership.
+- Not sure about projects, but there are industry professionals who lecture at universities.
+- I've seen it go both ways, an academic consulting on private industry projects and private industry people teaching a passion course or being an "on call" guest lecturer at a university. As others have said, be careful of conflicts of interest. If you are US based I would read through the ORI's section of COI carefully, and be aware that you are going to have to spend extra time on any organization's "declare conflicts of interest" paperwork.
+- Both exist. Reverse is more common because many Universities like spin-outs and partnerships with private sector etc. 
+
+You do need to avoid conflicts of interest tho...
+- Not at all. Just if it's a 'stupid' company. You will be a highly valuable asset if you keep doing academic work (probably) for free. My last company asked me to keep publishing in my field.
+What might happens is you get some bad acceptance from academics side since you did not follow the painful pathway (and sold your soul , etc). 
+In rare cases, you might be asked about conflict of interests depending on your projects. And always be transperant in both sides about what is going on, don't keep this a secret.
+- Yea that would make sense. Using compute time or company servers would definitely be a conflict of interest. 
+
+Is this type of split work uncommon?
+- I don’t know anybody who does it but I know people who work on their own stuff on free time.

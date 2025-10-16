@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/elvis-madavane-ondego-b6986128a_next-publication-in-works-title-the-heisenberg-activity-7278310550143483906-8pas
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Elvis Madavane Ondego的动态
+Elvis Madavane Ondego
+
+Senior Health Information Specialist | Research & Data Analytics | 16+ Years in Healthcare Innovation | Cancer Registry & Medical Coding | Digital Health & Client Experience Leader
+
+9 个月
+
+Next publication in works
+Title: The Heisenberg Uncertainty Principle and Its Implications for Health Data Analytics
+Introduction
+The Heisenberg Uncertainty Principle, fundamental to quantum mechanics, posits that certain pairs of properties, such as position and momentum, cannot be measured with absolute precision simultaneously (Heisenberg, 1927). This principle, though rooted in physics, provides a useful framework for understanding uncertainties in fields such as health data analytics. Health data, often characterized by incomplete records, variability in patient conditions, and measurement errors, faces challenges that echo the uncertainty principle. This article explores how the concept of uncertainty in quantum mechanics can be applied to health data analytics, especially in predictive modeling and patient outcomes.
+Theoretical Background
+In quantum mechanics, Heisenberg's Uncertainty Principle suggests that measuring one variable precisely inherently introduces uncertainty in the measurement of its complement (Heisenberg, 1927). In health data analytics, similar issues arise when collecting and analyzing patient data. Variables like disease progression, patient responses to treatment, and environmental factors introduce significant uncertainty in healthcare datasets (Aikins et al., 2019). This uncertainty complicates predictive analytics, which rely on models that attempt to forecast patient outcomes. By understanding these parallels, it becomes clear that uncertainty in health data is an inherent and unavoidable factor that must be accounted for in research and clinical applications (Sweeney et al., 2020).
+Materials and Methods
+A review of recent literature on health data analytics 

@@ -1,0 +1,78 @@
+URL: https://www.linkedin.com/posts/patricknicolas_topological-lifting-of-graph-neural-networks-activity-7373787777332809728-cmAl
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Patrick Nicolas的动态
+Patrick Nicolas
+
+Geometric Deep Learning – Topology/Graph/Differential Geometry | Principal Engineer, Ex Director Data Engineering
+
+3 周
+
+How do we turn a graph into a simplicial complex? 
+This article walks through building one from an existing graph using the Hodge Laplacian, with examples in PyTorch Geometric and TopoNetX.
+
+https://lnkd.in/gAj8WwGe
+
+#GraphNeuralNetwork #SimplicialComplex #GeometricDeepLearning
+
+Topological Lifting of Graph Neural Networks
+patricknicolas.substack.com
+134
+10 条评论
+赞
+评论
+分享
+Mustafa Hajij
+
+Assistant Professor of Artificial Intelligence
+
+3 周
+
+And the code is here : https://github.com/geometric-intelligence/TopoBench
+
+赞
+回复
+3 次回应
+Chris Long
+
+Applied Mathematician at United States Department of Defense
+
+2 周
+
+There is no need to explicitly form the Hodge Laplacians if just computing eigenvectors or solving linear systems with a Krylov solver that supports an ARPACK-style matrix-free interface, as you can compute the matrix-vector products in sparse factored form by iteratively applying the boundary/coboundary operators and so avoid the potentially painful SpGEMM operations needed to form the Laplacians explicitly.
+
+赞
+回复
+2 次回应
+Mustafa Hajij
+
+Assistant Professor of Artificial Intelligence
+
+3 周
+
+Patrick Nicolas we make graph lifting to various topological spaces more systematic in our recent package : https://arxiv.org/abs/2406.06642 we define what lifting means in theory and explore practical liftings from graph to simplicial/cell and combinatorial complexes. Liftings were classified as static and learnable and all results on these liftings were reported as a part of our benchmark on many recent topological nueral networks. Code is also available and tested heavily, work lead by  Lev Telyatnikov and Theodore Papamarkou
+
+赞
+回复
+10 次回应
+Tran Tien Van
+
+Freelancer Specializing in Data Engineering and Data Science at Upwork
+
+2 周
+
+Very interesting perspective... really makes you think
+
+赞
+回复

@@ -1,0 +1,56 @@
+URL: https://www.linkedin.com/posts/quantbeckman_pnl-ruin-and-the-urgency-of-a-robust-risk-activity-7293170914261655552-C2k_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Quant Beckman的动态
+Quant Beckman
+
+Quantitative Researcher and Dev | Financial Data Scientist | Machine Learning Engineer | Mathematical Research | Algorithmic Trading Systems | Systematic Investing
+
+8 个月
+
+Hi traders! 👋
+
+In data-driven methods, uncertainty arises from:
+-The intrinsic ambiguity in the data
+-Variations in sampling
+-Flawed models
+-Errors in model approximations
+
+Even in rule-based or symbolic ML systems, the complexity of the market introduces uncertainty, affecting any conclusions drawn.
+
+Addressing uncertainty is crucial not as a theoretical idea but as a practical requirement, as #trading systems must generate profit despite working with imperfect information. For now, the most effective way I have found to use total uncertainty is by:
+-Modeling it to switch-off the system
+-Iniciating a process of optimization
+-Metric of quality performance
+-Filtering and assets selection
+
+To understand it, a quick reminder of some concepts:
+-Aleatoric-statistical uncertainty: What will a random sample drawn from a probability distribution be?
+-Epistemic-systematic uncertainty: What is the relevant probability distribution?
+-Total uncertainty: The sum of aleatoric and epistemic when both of them are independent
+
+The basic protocol is based on:
+PnL → Conformal prediction → Switch-off (or optimization)
+
+Some considerations:
+-Although robust and stochastic optimization methods are often used to handle optimization under Bayesian uncertainty, they don’t effectively predict epistemic uncertainty with sufficient accuracy
+-By integrating models that account for epistemic uncertainty, we can improve the optimization process by considering the gaps in information or data
+-It is necessary to change the typical CP method to fit into this phase of the system development
+-The rule is simple: If PnL < Lower interval: Switch-off, else: continue
+
+https://lnkd.in/dXybAW_8
+
+
+[WITH CODE] RiskOps: Basics of Conformal Prediction applied to risk
+q

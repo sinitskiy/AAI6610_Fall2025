@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/marc-bierkens-918ba6b_exploring-global-water-scarcity-dynamics-activity-7373438900280909824-3dPL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Marc Bierkens的动态
+Marc Bierkens
+
+Professor of Hydrology at Utrecht University
+
+3 周
+
+Paper alert: Myrthe Leijnse identified the dynamics of water scarcity in major hotspots using causal inference and structural causal modelling. This work is related to Universiteit Utrecht’s work on the #WorldWaterMap with National Geographic Society.
+
+Myrthe Leijnse
+
+PhD Candidate Water Scarcity at Utrecht University
+
+3 周
+
+Ever wondered what a Structural Causal Model (SCM) is - and how it can be applied to real-world water scarcity data? 🧐 
+ 
+🗺️💧In our new publication, we built a causal model of water scarcity drivers across 21 global hotspots. Our findings confirm that population growth often has a stronger impact on water scarcity than climate factors, but also highlight challenges of causal modelling with limited data availability. 
+ 
+Curious to dive deeper into the insights - and the struggles - of applying causality in practice?
+Read more here:  https://lnkd.in/eWA9e9eZ 
+
+Niko Wanders Marc Bierkens
+
+Exploring Global Water Scarcity Dynamics Through Causal Discovery and Structural Causal Modelling
+agupubs.onlinelibrary.wiley.com
+19
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Myrthe Leijnse
+
+PhD Candidate Water Scarcity at Utrecht University
+
+3 周
+
+Ever wondered what a Structural Causal Model (SCM) is - and how it can be applied to real-world water scarcity data? 🧐 
+ 
+🗺️💧In our new publication, we built a causal model of water scarcity drivers across 21 global hotspots. Our findings confirm that population growth often has a stronger impact on water scarcity than climate factors, but also highlight challenges of causal modelling with limited data availability. 
+ 
+Curious to dive deeper into the insights - and the struggles - of applying causality in practice?
+Read more here:  https://lnkd.in/eWA9e9eZ 
+
+Niko Wanders Marc Bierkens
+
+Exploring Global Water Scarcity Dynamics Through Causal Discovery and Structural Causal Modelling
+agupubs.onlinelibrary.wiley

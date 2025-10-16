@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/keith-mcnulty_peopleanalytics-analytics-peopleanalytics-activity-7246504084004904960-NWL6
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Keith McNulty的动态
+Keith McNulty 
+Keith McNulty是领英影响力人物
+
+Mathematician, Statistician and Psychometrician | Leader in Analytics, Organizational Sciences and Technology | Author and Teacher | Evangelist for Mathematical Methods
+
+1 年
+
+Here is a common problem I see in #peopleanalytics teams.  The client comes to the team with a question as follows:  'I want to know what predicts something' (eg promotion, retention, high performance, etc).  The analysts/data scientists grab some data, do some cleaning, engineer some features, split the data, train a model, test the model, create some predictive performance metrics and select the best performing model (often an XGBoost or a lightGBM or some other ensemble method).
+
+When the team shares results with the client, they are frustrated because the client doesn't seem interested in how well their model performed, and keeps asking:  'what factors are affecting promotion/retention/performance and to what degree?'.  The team pull together some SHAP or LIME analysis to try to help answer the clients questions, but the client finds them difficult to translate and none of them give quite the sharpness and clarity that the client needs.
+
+The issue here was that when the client said 'I want to know what predicts....' they did not mean 'I want to make predictions'. They meant that they wanted a clearer statistical explanation of the factors affecting their outcome.  They wanted an explanatory model, not a predictive model.  The team did not need to split the data and try a bunch of black box models.  They just needed to use a regression model and know how to interpret it.  
+
+This is such a common situation that I have seen many times, and is one of the key reasons why I wrote my book.  #analytics #peopleanalytics #statistics #rstats #python #datascience #technology
+
+655
+52 条评论
+赞
+评论
+分享
+Marrein Agwaro, MS. MBA.
+
+Workforce Analytics/People Analytics Practitioner. Predictive Analytics
+
+11 个月
+
+Very w

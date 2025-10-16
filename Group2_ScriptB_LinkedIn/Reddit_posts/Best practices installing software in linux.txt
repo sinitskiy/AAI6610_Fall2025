@@ -1,0 +1,131 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1it9veu/best_practices_installing_software_in_linux/
+Title: Best practices installing software in linux
+
+Content:
+Hi everybody,
+
+TLDR; Where can I learn best practices for installing bioinformatics software on a linux machine?
+
+My friends started working at an IT help desk recently and is able to take home old computers that would usually just get recycled. He's got 6-7 different linux distros on a bootable flash drive. I'm considering taking him up on an offer to bring home one for me.
+
+I've been using WSL2 for a few years now. I've tried a lot of different bioinformatics softwares, mostly for sequence analysis (e.g. genome mining, motif discovery, alignments, phylogeny), though I've also dabbled in running some chemoinformatics analyses (e.g. molecular networking of LC-MS/MS data).
+
+I often run into one of two problems: I can't get the software installed properly or I start running out of space on my C drive. I've moved a lot over to my D drive, but it seems I have a tendency to still install stuff on the C drive, because I don't really understand how it all works under the hood when I type a few simple commands to install stuff. I usually try to first follow any instructions if they're available, but even then sometimes it doesn't work. Often times it's dependency issues (e.g., not being installed in the right place, not being added to the path, not even sure what directory to add to the path, multiple version in different places. I've played around with creating environments. I used Docker a bit. I saw a tweet once that said "95% of bioinformatics is just installing software" and I feel that. There's a lot of great software out there and I just want to be able to use it.
+
+I've been getting by the last few years during my PhD, but it's frustrating because I've put a lot of effort into all this and still feel completely incompetent. I end up spending way too much time on something that doesn't push my research forward because I can't get it to work. **Are there any resources that can help teach me some best practices for what feels like the unspoken basics?** Where should I install, how should I install, how should I manage space, how should I document any of this? My hope is that with a fresh setup and some proper reading material, I'll learn to have a functioning bioinformatics workstation that doesn't cause me headaches every time I want to run a routine analysis.
+
+Any thoughts? Suggestions? Random tips? Thanks
+
+Comments:
+- Lots of good advice here - just adding that a lot of people are saying to use conda - **use mamba instead**. It’s an updated version that eschews a lot of the environment resolving bugs I get with conda. The operation of them is almost identical so you’re not losing anything.
+- There are a number of ways to get started. I use Ubuntu on a laptop and servers. You can carve out a dual boot partition on Windows if you want but would recommend a dedicated Linux / Ubuntu setup. Learn the package management system. Ubuntu has many pre-built bioinformatics tools but you will eventually need to install or build updated versions.
+
+  
+Keep in mind that a big part of bioinformatics is reproducibility which is a big deal. You will always need to be documenting what version of a tool you used because you will likely need to work through an analysis pipeline in the future which might fail if you are using an updated (or older version).
+
+  
+Environment management helps. To "warm up" so to speak you can use something like conda to manage python versions and packages. You can start practicing with conda on a Windows or Apple machine just by installing it and experimenting with it. 
+
+If you are serious about bioinformatics you really need to become comfortable with Linux command line. It gives you a lot of flexibility and employability. Knowing how to work with shell scripts is useful and eventually you might wind up doing some level of system administration so you can run docker containers. 
+
+Docker is a good move because it allows you to work with full on installation environments without the headache of building them yourself. Docker itself is not hard but it's a bit tedious at first though for reproducibility of results it's a good tool.
+
+There is a lot more to consider. For laptops I use Apple not because I'm an "Apple fanboy" but because it has UNIX under the hood and I can effectively manage all the bioinformatics packages I need used the "brew" system. 
+
+Whatever you use make sure to document your steps. Once you get good at creating analysis pipelines you can use tools like snakemake or NextFlow. Obviously there is a lot you can do online with something like Galaxy but to become independent you want to try out stuff locally.
+- Some random best practices
+
+ \- Never use the Linux versions of things like R or Python. Those can be updated or altered at any time by a system update or security patch.  Since reproducibility is a key goal in scientific computing you want to avoid having your core tools randomly changing outside of your control
+
+ \- This means you build your own versions of R, Python and other tools and store them in a different path. If you need multiple versions of R or Python (super common) then look at tools like 'lmod' or 'environment modules' which are purpose built for managing many different versions of the same software in a sensible way
+
+\- You asked about "where to install" -- the core answer here is that it sorta does not matter but you want to store your stuff in a path that is not normally used for OS level stuff. The default location is often starting at the "/opt" filesystem but this could be anything -- you can make "/data" or "/tools" or "/software" or whatever and all of those root level folders or filesystems would be outside the realm of the Linux OS files
+
+
+
+That said, however I would say that "conda" ".Renv" and "containers" are likely your solution.
+
+Many people use containers to isolate software and dependencies in a very reproducible and version controlled way.  Just watch out for container image storage space as storing lots of docker images locally can consume insane space in the default /var filesytem
+
+conda or venv is how Python people isolate and control their python environments and dependencies
+
+Renv is a way for R programmers to define and manage their version and library requirements
+- Sorry, I can't help ranting:
+
+> There's a lot of great software out there and I just want to be able to use it.
+
+Software you are unable to use is not great software. There's a lot of crappy software in this field. Often it is not your problem. Blame those developers.
+- I can only reiterate what other have written.
+
+1. Learn Linux, use an easy and widely used distro eg ubuntu
+2. Reproducibility is key, use conda environments to manage versions and dependencies. Or use docker/containerization methods
+3. Workflow management will get you a long way, learn snakemake or nextflow. Both will work with containers or conda environments. And make things easier in high performance computing environments.
+4. Get to know a high performance computing environment, learn kubernetes, slurm or what ever the aws equivalent is.
+- Specifically, I recommend conda for installing bioinformatic software for those just learning how to run things.
+
+Best practices: [https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html)
+
+Bioconda is a very popular packaging system for bioinformatic software. Create a conda environment for everything you use, it helps keep things separate. You can set your conda install to anywhere that would be useful to you (including an external harddrive).
+
+It's something like
+
+    conda create -n multiqc -c bioconda multiqc
+
+  
+And then activate that conda environment 
+
+    conda activate multiqc
+
+Every bioconda package has a corresponding biocontainers container on quay - which mostly works. These can be used with most container managers. Containers can be a little harder to understand how to use, but there are a lot of tutorials on how to use them, and most of the problems come with getting your containers to see your files.
+
+Good luck!
+- \- I'd recommend a nice terminal like guake for ubuntu or tabby for mac. I just find them to be more ergonomic.
+
+\- I'd also recommend bash and vim. You don't necessarily need to know how to write bash scripts but you need to be able to navigate the command line like its second nature.   
+  
+\-On top of that become familiar with your .bashrc (if using bash), this is where you can set alias shortcuts to help navigate around your machine better. You should also get familiar with PATHS, you can add files to this path and they'll be loaded in your terminals environment.  
+
+\-Also for your space issue, you can experiment with symbolic linking. However; generally you should find a big enough partition to install your code on. Depending on how many assets or how big your database is your could possibly link that out to the cloud, it honestly just depends on that kind of stuff you're doing. 
+
+\- git command line is also great. Learn clone, pull, push, rebase, merge, diff... Setting up keys takes a little bit to get use to but its good practice. It's not hard once you have done it a couple times. 
+
+\- for more complex processes it is a good idea to take notes and keep documentation. I host a website on digital ocean and I have deployment notes. Even though no one else is looking at it, it helps tremendously get back where I left off.
+
+\- Go slow when installing things, Try your best not to utilize sudo (for some things you have to) and install everything, imo for the user. Environments can help here a lot (look up conda). If you're in a troubleshooting hole and something isn't working then its a good idea to reset and retrace your steps.
+
+\- Lastly, I think it just takes practice. Its a good idea to read through documentation and other people's code.
+
+I do want to say that a lot of tech is very contextual. You'll have to set things up one way depending on how many users are using the system, how sensitive is the data you're working with, what is the size of your data...etc. So, you'll set things up differently depending on what your goals are.
+
+There are also concepts like setting up a webserver via nginx or utilizing services such as crontab. Hope this helps.
+- First of all, I strongly suggest learning Linux. Not WSL, the real thing. Moment you hit industry with some cloud exposure, you'll have to use it. Find a beater laptop, install Linux and use that for a bit. For example, there's no "C drive" in Linux, it works a bit differently.
+
+Second, learn docker. It may be intimidating, but it's probably highest bank for a buck where it comes to bioinformatics. It'll save your sanity in longer term.
+- I use conda to install and test software locally on my laptop (I have  a Mac, but it runs 100% of bioinformatics software). 
+
+However for real production deployment everything is done on cluster or cloud servers with docker containers. We use nextflow to run workflows and send jobs to containers. This is OS independent.
+- Sorry to hijack the thread, but how are people incorporating docker into their workflows? Are you building pipelines in containers, or building pipelines using multiple containers, or something else?
+- I can tell you my experience if it is of any help: With time I've evolved into a conda junkie, and pretty much all of my installations are from there. Even more, these days I've been into the publishing spree and I have uploaded nice repos with a .yaml for an easier import of the softwares we used in our pipelines. I think conda is great as long as you have a notion on versions and conflicts. It can get pretty messy installing stuff in the same environment and I have re-installed conda countless times because of my fuck-ups. 
+
+Docker is also nice, I would say, although I haven't got as much experience with it. Last but not least, if I have to compile stuff, I prefer to have it neatly stored in a place I can return just to see my installations. I haven't used this for a while, but I do remmember doing this in my early days. Last but not least, this is stuff that should be well documented  but it is not as if bioinformatics has the best documentation practices.
+
+I would suggest checking out environment managers and reading through them if you want to get into the stuff. Also, there's no better practice than just installing and having a risk of fucking up your system (better do it in a personal one).
+- I'm grateful this post has gotten so many responses. I think I'm going to accept one of the beater laptops with just Ubuntu booted onto it from my friend and try to set up my workstation on a clean slate. I'm hoping that the combination of experience I've gained using wls2 while cluttering up my windows machine, combined with reading up on the topics mentioned in the responses to this post will allow me to run into less problems moving forward. Though I'm already mentally preparing myself to be unable to connect my keyboard/mouse when I can't find the appropriate drivers.
+
+Does anyone have any tips more specific to note taking? I've been using MS OneNote pretty heavily to document stuff like: how I installed things, file I used for analysis, results/interpretations. I'm gonna guess that's not what most bioinformaticians are using...
+- If you can, use a dedicated Linux machine or virtual machine. WSL2 has a lot of quirks.
+- Use NixOs and you can pick the version of whatever software you want to use from the nixpkgs repository and then pin the git commit from the repository. This lets you use old software while updating the rest of the system with no conflicts.  NIxOs has superior handling of environmental variables and conflicts compared to other operating systems.  This lets you easily roll back problematic updates or run multiple versions of the same software without conflict.
+
+It also has the most software packages to choose from of any linux distribution since at least 2020. So software is usually extremely easy to install.
+- I believe modern versions of conda use mamba's solver in the backend by default
+- Good advice, just want to add/correct:
+
+Conda is not limited to python dependencies — it is language-agnostic, and can therefore install tools that are e.g. invoked from a bash shell
+- This is so true. The thing about bioinformatics is that it is a field of scientists wanting to discover something, not really about the software itself. So there is not much of an emphasis. All my good software writing practices were learnt while working as a web dev, not as a bioinformatician.
+- It's the same thing in my experience. Both the top devs at my company use wsl on their work laptops. 100% of real usage is through AWS or a hpc server anyway. 
+
+
+Is there any actual reason to use a "real install" of Linux instead of wsl in 2025?
+- I use snakmake to manage pipelines, and I've used containers to build software, but I'm interested to understand how you combine a workflow manager (snakmake/nextflow) with containers? I gather it gives you the best of both worlds, but I'm just unsure how it's implemented in practice?
+- For me each project has a Dockerfile and image which contains all the required software and packages.

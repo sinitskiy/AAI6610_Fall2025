@@ -1,0 +1,95 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/s36dqk/d_solo_machine_learning_engineer_woes/
+Title: [D] Solo machine learning engineer woes
+
+Content:
+I work at a start-up as the sole machine learning engineer, and I have been tasked to develop a state-of-the-art model on a domain specific problem.
+
+Some information on the task:
+
+* Computer vision problem - complex keypoint localisation / 3D mesh prediction
+* No training data - I'm proposing that I build a synthetic data pipeline supplemented with real-world data.
+
+I feel like there is too much for me to be doing at once: reading papers, writing plans and documentation, implementing code and training models, reporting to management, etc.
+
+My boss understands that research takes a long time. Nevertheless, I feel like management does not fully grasp that results on this are not certain or even likely.
+
+Even though the work environment is good, I am not handling the uncertainty around results well mentally.
+
+I wanted to ask, in your experience, what is a typical team size for this kind of job? And do you have any advice?
+
+Thanks
+
+Comments:
+- It sounds like they want you to be a data scientist or ML researcher not an engineer. This is the problem with small companies/startups not understanding what they really need. They probably hired you too early bro.
+- Don’t read papers unless you really have to. Find implementations on GitHub and use those even if they’re not state of the art. Figure out how to deliver solutions quickly even if they’re not perfect. If that’s not possible then push back at management and re-scope until you can deliver business value quickly. 
+
+Or GTFO and go somewhere with more structure. 
+
+Startups are amazing and you’ll learn a lot but they’re not for everyone.
+- If you are a solo ML person, it’s absolutely crucial that you are blunt about what you can do with limited resources. 
+
+Managers tend to read things and assume that just because Google/Apple/whoever can do something, you should be able to as well. Unless you are up front with them, they won’t know that those achievements are only possible with:
+
+- huge raw datasets and budget/resources for data cleaning 
+
+- large compute clusters
+
+- multiple researchers/engineers who have zero other responsibilities and are given the freedom to focus exclusively on a single problem
+
+- the freedom to “fail” (meaning its no big deal if research goes nowhere)
+
+You, as a solo engineer, need to tell them “if you want X then I need resources Y. If that’s not available, then we need figure out a more realistic target that’s achievable with the resources we actually have”.
+
+You are the best person to figure out what can actually be delivered, not them. Don’t let yourself get railroaded into an impossible objective because you don’t want to “disappoint” them or you’re not confident enough to stand your ground and insist that lofty ambitions be scaled back.
+
+Edit - want to echo someone else’s point that if you start thinking early on that it’s not possible (or it’s too ambitious), flag it as soon as possible. Product goals can always be revised if they’re flagged early enough.
+- Hi, dude, you are not alone. I am solo AI engineer and till one year of my joining neither me nor the organization know the purpose of me. Then they have to find a problem so that they can justify my salary. The problem is related to contactless vitals, which is pretty tough . In 3 months I came up with a solution. It's all solo, there is not a single coworker or manager involved in any sort of guidance. Btw I joined as a fresher in startup.
+- It's always difficult to tell the boss that what they have proposed is not possible.   
+
+
+I would try to take the approach of doing the research and laying out everything that needs to be done and coming to them with a realistic estimate and the pitfalls as well. 
+
+Then you can have that conversation, from a better more informed point of view.
+- If you need help with key point detection, the SOTA paper/repo that was recently developed was this one.
+
+https://github.com/magicleap/SuperGluePretrainedNetwork
+- This will be multiple teams at FAANG. They should calibrate their expectations.
+- Hey man I understand the feeling. I work in a biotech startup as the sole computational ML researcher. My first year was really tough… the project they hired me for was poorly thought out. They were always happy with the work I was doing though. I was able to show what they wanted was possible computationally but that experimental confirmation was just never worth it.
+
+Eventually I figured out a project that was doable and has serious potential value. This is now in full swing.
+
+As someone else mentioned, they probably hired you too soon. Now is a great time to learn. Don’t blow it on Reddit, because I regret how much time I wasted
+- This was my exact situation a couple of years ago. My boss expected big things but didn't want to admit that they were completely unaccomplishable unless they went way bigger on hiring more engineers. I learned a lot about ML, computer vision, and cloud computing developing a solution for an unsolved problem on edge devices. If you can get in and out unscathed like I did then you can come away with lots of good experience, try to focus on that. Good luck!
+- Research labs spend years and tons of money developing state of the arts models that perform well on some poor benchmarks compared to real life data.
+
+If you're alone, that you don't know much about what you're doing, that you have no data and that you're supposed to find a new SOTA method in a field where SOTA sucks at the moment, you should leave, it's not going to happen.
+
+First, your managers will have to understand that companies aren't based on SOTA models, they're based on models that work well enough on real data.
+
+Talk to your bosses, make them understand they'll need to buy some data from providers because using synthetic data won't ever compare to the real thing. Next they'll have to understand that you won't be able to find such a new model by yourself. Don't take it the wrong way, but many many people with years of research experience work on such fields and they don't come up with working ideas all the time.
+
+Personally, I would either stay in that startup until it fails, but hey you'll learn tons of things for your next job, or leave asap.
+- You could start by doing some data collection and exploration. Create a roadmap of the work needed to go further in the project, the kind of return they could expect and how it would cost them.   
+
+
+This will give them a clear idea of the workforce they would need to hire to obtain what result.
+- read enough papers to get a decent estimate of the amount and type of data required to achieve the desired results. come up with a concrete plan to acquire that data and implement that plan.
+
+do your best to ensure that management truly understands how much everything else is dependent on the data so that you can treat that part as a separate project that must be completed first before moving on to anything else.
+
+as a one person team you need to break things down into manageable and achievable pieces, not just for the productivity hit a scattered focus will cause, but also the psychological effect of trying to achieve a large intimidating goal without measurable progress that you can see getting you closer to the final goal.
+
+your brain needs those incremental wins and the dopamine/seratonin/endorphins or whatever that comes with them to stay confident and motivated instead of ending up feeling overwhelmed or even depressed.
+- Tell your boss. Patience is all you need.
+- Why do they need SOTA for small company?
+- I am not senior and management doesn't know anything about ML so that's absolutely true. I did make a mistake with going into a project solo - but hey, live and learn
+- The problem is, it's not a well developed area. There are open source implementations, I have tried them and even build a working POC but it's not good enough — hence the research into building my own model. Unless I can think of shortcuts or solutions like, as you say, deliver business value even if they're not perfect — or think of an entirely different problem to work on.
+
+What kind of people / characteristics do you think start ups are suited to?
+- You were there a year before they gave you a problem? Either way, seems like you did well if you solved it in 3 months.
+- I think this is good advice.
+
+I have already given some plans and timelines, and never said what we are doing might be unrealistic (oops). But saying, "the previous plan was optimistic, it's harder than we thought", would be fine.
+- Also, you may find that a lot of papers that are circling your problem come from a few sources. Depending on security issues, you may be able to convince your bosses to partner with a school to help with the research phase. A realistic estimate and a few different plans of attack will be well received.
+- Will take a look, thanks

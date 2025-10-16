@@ -1,0 +1,55 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mpcu1l/do_i_really_need_to_learn_gans_if_i_want_to/
+Title: 📣 Do I really need to learn GANs if I want to specialize in Computer Vision?
+
+Content:
+Hey everyone,
+
+I'm progressing through my machine learning journey with a strong focus on **Computer Vision**. I’ve already worked with CNNs, image classification, object detection, and have studied data augmentation techniques quite a bit.
+
+Now I’m wondering:
+
+>
+
+I know GANs are powerful for things like:
+
+* Synthetic image generation
+* Super-resolution
+* Image-to-image translation (e.g., Pix2Pix, CycleGAN)
+* Artistic style transfer (e.g., StyleGAN)
+* Inpainting and data augmentation
+
+But I also hear they’re hard to train, unstable, and not that widely used in real-world production environments.
+
+# So what do you think?
+
+* Are GANs commonly used in professional CV roles?
+* Are they worth the effort if I’m aiming more at practical applications than academic research?
+* Any real-world examples (besides generating faces) where GANs are a must-have?
+
+Would love to hear your thoughts or experiences. Thanks in advance! 🙌.
+
+Comments:
+- I would avoid GANs and go straight to diffusion models, they solved a lot of the instability problems seen in GANs and now are used in every SOTA model for generating images
+- What do you mean by "learn GANs"? The concept is extremely simple, and you should definitely understand it. But no, I don't think it's really worth it spending hours understanding all the latest and greatest tricks and architectures, since they're not used a lot.
+- No. You can do multiview geometry for example. I.e., determine where objects/pixels are with respect to the camera, and vice versa… 3D reconstruction and so on which generalises well beyond where any ML method would be feasible.
+- Just read the a couple of papers. If you have to train one you can cross that bridge when you come to it.
+- In the course I'm teaching we go over the history of it - there's a really great medium article.
+
+Basically, diffusion models are so much better, that it doesn't make a lot of sense to be using GANs for image generation comparatively. Maybe they have some niche applications, but I'm not aware of them.
+- No.
+
+Learn projective geometry.
+
+If you DO want to go into image generation, you should probably take a grad level stats courses containing topics like Markov chains, KL Divergence etc. Maybe a topology class too. Otherwise you're not going to understand any research papers in the space. I know I don't. At least not in-depth.
+- I think the main problem is that even a simple diffusion model is significantly harder to code from scratch than a simple GAN model. If someone doesn’t has lots of experience with generative models, definitely GANs first provides a smoother learning experience. But certainly I agree that diffusion models are more important currently since they are SOTA.
+- I’ve heard of people distilling diffusion models into GANs, like shown [here](https://arxiv.org/abs/2405.05967)
+- This is a very good caveat to my comment, OP if you are not super comfortable with maths, diffusion models are significantly more difficult to understand
+- I don't think this is true. A simple diffusion model can be trained very easily by taking a dataset, adding random noise and training a unet model to predict the noise added (see https://keras.io/examples/generative/ddpm/ for a tutorial). Generating samples is somewhat trickier (since you have to figure out the noise schedules), but not too hard.
+
+
+I think GANs are much trickier personally - you have to train at least 2 models and in my experience the training dynamics are trickier to get right (the models might not converge if the learning rates aren't tuned).
+- The skills required to troubleshoot through those stability issues, and understand hyperparameter sensitivity are invaluable though. GANs are a great way to learn them, especially if it's on a small dataset that can train in an hour. 
+
+Meanwhile, some of the techniques show up in other areas - adversarial distillation is a common method to reduce diffusion sampling time (e.g., DMD).
+- But you can write a gan model from scratch in 50-100 lines of PyTorch. To write even a simple DDPM from scratch, you need quite a bit of code to set up the U-Net, plus you have to learn about noise schedulers, a substantial bit of math to understand what is even happening with diffusion models, plus the fact that the training is with one-step noise prediction while the inference uses many steps (meaning training and inference is asymmetric while for gans it is exactly the same usage of the generator for both).

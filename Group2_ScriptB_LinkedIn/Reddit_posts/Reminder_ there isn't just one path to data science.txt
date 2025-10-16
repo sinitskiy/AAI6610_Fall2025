@@ -1,0 +1,67 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1eghr90/reminder_there_isnt_just_one_path_to_data_science/
+Title: Reminder: there isn't just one path to data science
+
+Content:
+I wanted to share some advice for those of you just starting your career: Don't limit yourselves to only accepting a "Data Scientist" title straight out of university (or BootCamp).
+
+I can agree that the "ideal" path to becoming a data scientist is to land DS entry-level role or internship right after graduation. However, the reality is that this is much more difficult than you might think, especially now.
+
+I didn’t take the most direct path to my first job as a Data Scientist.
+
+I graduated from university with a B.S. in Computer Science and a specialization in Machine Learning and landed my first full-time job as a Data Analyst shortly after graduation. About a year later, I started a new role as a Business Analyst (aka Business Intelligent Analyst). And after working for about 2 years as a Business Analyst, I went on to land my first role as a Data Scientist.
+
+All and all, I’ve been working in Data & Analytics for almost 7 years now. I genuinely believe that working as a Data Analyst and Business Analyst helped me become a much more well-rounded Data Scientist, so I don't regret following the longer path.
+
+Just keep an open mind and consider other data titles along your journey. I wrote an entire [article](https://tobeadatascientist.substack.com/p/making-the-right-career-moves-your) on this topic in case any of you are interested.
+
+Best of luck out there!
+
+Comments:
+- I came from an aeronautical engineering degree and got my first job as a data analyst, second job was advertised as data scientist but was a data engineer. In the meantime I did Coursera deep learning courses and a masters in deep learning, which landed me at my first true data science role and it was a good job too. Patience and perseverance pay out, but if you take other data roles you should do DS projects on the side (personal projects or education)
+- Yes, this is normal. Data Scientist isn't typically an entry-level position. 
+
+One typically starts out in actual entry-level positions (Data Analyst, Business Analyst, Jr. Data Engineer, etc) and move up to becoming a data scientist. 
+
+There are some exceptions, PhD's probably can go straight to Data Scientist positions, for example, because they essentially performed that role in their domain field as a researcher. But those exceptions are rare.
+- Nowadays, the easiest path to becoming at data scientist is to be a Senior data scientist with a PhD and 15yoe.
+- Great advice for those aspiring DS career seekers. The career is a sum total of experiences in careers that incrementally add to your skills to becoming a well rounded professional. We need more people offering real world advice on careers in DS.
+- I got an MSDS in December 2022. After looking for a relevant job for two years, I finally landed a job in HR not directly related to DS, but for which my MSDS was seen as a bonus and will be used for ad hoc projects. This could be an approach for others too.
+- Continuous learning, networking, and **leveraging personal projects** to showcase skills are essential for career growth.
+- Got a masters degree in politics and economics, worked business for 4 years then transitioned to Data Analyst 2 years ago once I learned SQL/Python well enough.
+Luckily the position is a mix between DA/DE so tons of learning. 
+
+Working up my statistics with classes and side projects to build a portfolio.
+
+Target is DS in about 3 years.
+- I’ll add another data point 
+Business Analytics degree 2017
+BI Role
+Analyst role 2 years
+Data engineer role 1 year
+Data scientist Role current
+- My boss (!!!) studied political science and then in his phd thesis did some data science. Afterwards he transitioned into DS and has a great career :)
+- I have an undergrad in kinesiology, which led me to a 5 year career in health research before going back to school for an MSDS. I was better equipped through my master's compared to some of my classmates because I had real-world experience with data to contextualize what we were learning, despite most having a CS background. I've been a DS for three years now and am still constantly learning, but I've been somewhat effective form day 1. 
+
+
+There are certainly more direct routes, as you've said, but as long as you're picking up skills along the way, there's no "wrong" path to it.
+- Bachelor's ChemE. 10 years spread across R&D, process engineering, and operations/quality roles. Unexpectedly fell in love with statistics and data visualization. Took some coursera courses on data science and did a bunch of side project d3.js stuff. Got an internal data engineering role, then data science, then data architect. 
+
+Long story short, if you're passionate about something and are able to deliver results, people notice and opportunities arise. I'm obviously biased, but to this day I still prefer hiring people with industry experience that are interested in data science than the other way around. 
+
+My unpopular opinion is that in 10 years most exclusively data science roles will be similar to most senior statistician roles today. And that most people doing data science it will be the secondary part of their job. Similar to Six Sigma roles, when it was new, a lot of people specialized, but then it became a skill that most engineers learned on the side or on the job. Pure Six Sigma jobs were left to internal or external trainers.
+- Thanks for this, I was really confused on approaching my career goal to become a data scientist. But this assurance that there wasn't just one path to it really lightens my mind.
+- As long as the responsibilities are to work with data, you should be very happy about the role in the beginning.
+- I think I need to see this today. I'm a Sr. analyst on an OR team, coming from being a product owner and I want to be a data scientist. My team has brilliant people and this week I've been an interviewer on a panel for two sr data scientists roles we are hiring for and the amount of masters and PhD applicant has me feeling so much imposter syndrome, It's insane. Lol
+- As someone with a Business / Data Analyst background currently pursuing a Masters degree in CS and AI this post was a great pick me up. It has been really difficult applying to DS roles as I keep getting pigeonholed into BA roles by recruiters or stuck doing operational tasks at work.
+- I have the same path as you except im 4 years in and about to be promoted to BI Analyst. DS with an ML focus or ML engineering role is the goal. I feel like this is a pretty typical and good path, understanding business needs and how a business operates is extremely important ive realized.
+- It sounds like I should focus on becoming a SWE to hone skills before transferring to the DS route. I’m so lost but i feel like thats common in this trade
+- For me: econ degree>MS Business Analytics> business analyst> business intelligence engineer> business intelligence engineer. 
+
+Throughout my entire career I’ve been referred to by my direct report and coworkers as a “data scientist.”
+- But but, I've shed all those tears learning and understanding those Data Science and NLP topics (Algos). Is it worth working as an analyst after that? What if we forget everything we learnt and are never able to switch
+- Great post! 
+
+I've been a business intelligence analyst for around 2 years now, and considering maybe going towards data science. How did you bridge the gap of technical skills between the two roles? Did you go straight into a DS role without having any ML work experience or did you learn by yourself while at your business intelligence analyst role? 
+
+For instance, i'm considering taking some DS courses and apply what i learn at my current work - so that I have some real world experience with ML models. But Im wondering if I should look into online masters programs, purchase certain books, or what else I can do while at my current job.

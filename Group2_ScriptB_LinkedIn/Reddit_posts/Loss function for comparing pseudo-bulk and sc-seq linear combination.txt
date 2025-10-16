@@ -1,0 +1,26 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1bh8ekn/loss_function_for_comparing_pseudobulk_and_scseq/
+Title: Loss function for comparing pseudo-bulk and sc-seq linear combination
+
+Content:
+Hi, everyone.  I have expression matrices for different cell types, representing the expression of individual cells of that type. They were learned through a generative model, so I am confident they represent the approximate expression patterns of specific cell types. Now, I want to implement a bulk sequencing deconvolution using the aforementioned expression patterns. The pseudo-bulk I used is the summation of a large number of single-cell sequencing data (sc-seq). That's the background. 
+
+My first approach is to design an optimization process to optimize a series of weights, so that the product of the weights and the cell type expression approximates the pseudo-bulk. I was advised to use Poisson loss as the loss function because it aligns with the biological characteristics of RNA-seq. However, I couldn't add non-negativity constraints to the weights during optimization, resulting in negative values in the optimization results, which is meaningless. Then I found the optimiza.nnls method in the scipy package, which implements non-negativity constraints, but it uses Euclidean distance to compare the pseudo-bulk and the sc-seq combination. I obtained some good results using this method, but I have the following questions. 
+
+1. Can I use Euclidean distance to compare the differences between two sequencing methods? To me, this problem seems to become a linear regression problem, i.e., combining sc-seq to approximate pseudo-bulk. At this stage, there don't seem to be any biological distribution assumptions, so I guess it's feasible. 
+
+2. If the answer to the previous question is no, what biological assumptions does using Poisson loss follow, and what am I ignoring when using Euclidean distance for comparison? 
+
+3. If I want to continue using Poisson loss to optimize weights, how should I set the non-negativity constraints on the weights? I have tried methods such as ReLU and softmax in machine learning, but the results are not good. 
+
+Comments:
+- I can’t speak to exactly why a Poisson loss would be theoretically optimal. But there are plenty of bulk deconvolution methods that use linear regression to calculate weights. Usually after some sqrt or log transformation. Not to say that “plenty of people have done that” means it’s correct. But it’s certainly not unusual.
+
+Edit: it makes sense to use a counts based function for counts data like RNA-seq produces. And RNA-seq distributions are frequently modeled using gamma poisson or neg binomial distributions.
+
+Note: I’ve used a lot of deconvolution techniques and they truly suck with un-transformed counts data. And after transformation a lot of the assumptions around distributions like poisson may no longer apply. Ymmv
+- Thanks for your reply :). To be more specific, I haven't decide what normalization(sqrt/log) should be done so now i'm merely working with count matrix. I've learned that non-neg binomial distribution and poisson are most frequently used assumption in RNA-comparison, but in my case I suppose the question has turned to a linear regression, and as far as I know poisson and non-neg binomial are used in one-on-one RNA-seq comparion. So is it safe to conclude that using Euclidean distance is acceptable? I really wish i can figure out a non-negative constrain Poisson-loss optimization :(
+- I know there are some non negative constaint implementions in R.  https://www.rdocumentation.org/packages/addreg/versions/3.0/topics/nnpois
+
+Dunno if that helps you but if you’re not wedded to a specific language it could be a workaround
+- Thank you!

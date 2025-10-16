@@ -1,0 +1,27 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/hckqwr/research_depth_uncertainty_in_neural_networks/
+Title: [Research] Depth Uncertainty in Neural Networks
+
+Content:
+Paper: [https://arxiv.org/abs/2006.08437](https://arxiv.org/abs/2006.08437)
+
+Code: [https://github.com/cambridge-mlg/DUN](https://github.com/cambridge-mlg/DUN)
+
+**TL;DR:** One way to get uncertainty estimates in ML is to have multiple models, like a NN ensemble, and use the disagreement between their predictions as an estimate of uncertainty. This is computationally expensive, as it requires training and evaluating multiple models. Because NNs tend to be heavily overparametrized, we hypothesize that a single network’s excess capacity can be used to make diverse predictions. Specifically, we perform probabilistic reasoning over the depth of neural networks. Different depths correspond to subnetworks that share weights. Disagreement among their predictions yields model uncertainty. By exploiting the sequential structure of feed-forward networks, we are able to both evaluate our training objective and make predictions with a *single forward pass.*
+
+Here is a cool gif of a Depth Uncertainty Network training:
+
+https://i.redd.it/d4pisj64s1651.gif
+
+Comments:
+- Can you elaborate on how this is significantly different from dropout?
+- Sure!
+
+Dropout randomly sets activations to 0. The same network makes predictions with different subsets of activations dropped, leading to model uncertainty. Performing more random forward passes leads to more diverse predictions, and thus more robust uncertainty estimates. 
+
+DUNs (this paper) keep all weights fixed. Instead network architecture (depth) is treated as a random variable. This means we are uncertain about how deep our network should be.  A single forward pass through a neural network yields activations at every layer. We use these to obtain predictive functions of increasing complexity.
+
+In summary:
+
+* Computing uncertainty estimates in DUNs requires a single forward pass, as opposed to multiple passes in Dropout.
+* In DUNs, the predictive posterior is obtained by averaging over diverse functions.  Empirically, we find this makes DUNs’ uncertainty estimates more expressive than Dropout’s, which tend to suffer due to the Mean Field assumption (see [https://arxiv.org/pdf/1909.00719.pdf](https://arxiv.org/pdf/1909.00719.pdf)).

@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/patricknicolas_aleatoricuncertainty-activity-7379309875140415489-_m-M
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Patrick Nicolas的动态
+Patrick Nicolas
+
+Geometric Deep Learning – Topology/Graph/Differential Geometry | Principal Engineer, Ex Director Data Engineering
+
+6 天前
+
+Great point with precise terminology.
+Aleatoric uncertainty measures the noise associated with measurement that cannot be removed by collecting more data of same quality.
+
+#AleatoricUncertainty
+
+Sreenivas B.
+
+Director / Head of Digital Solutions at Zeiss
+
+6 天前  已编辑
+
+Your deep learning model says it's 99% confident. Should you trust it?
+
+Not always. High confidence doesn't mean reliable prediction. In production systems, we need to quantify two types of uncertainty:
+
+Aleatoric uncertainty - measures noise and ambiguity in the input data. Epistemic uncertainty - measures whether the input is outside the model's training distribution
+
+The plot shows aleatoric uncertainty distributions for clean versus noisy data. Notice the clear separation that standard accuracy metrics completely miss.
+
+In real deployments, knowing when to trust your model is just as critical as knowing what it predicts. These uncertainty estimates drive decision rules: auto-accept, flag for human review, or reject outright.
+
+Detailed tutorial with implementation coming soon.
+
+#MachineLearning #DeepLearning #AI #UncertaintyQuantification
+
+7
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Sreenivas B.
+
+Director / Head of Digital Solutions at Zeiss
+
+6 天前  已编辑
+
+Your deep learning model says it's 99% confident. Should you trust it?
+
+Not always. High confidence doesn't mean reliable prediction. In production systems, we need to quantify two types of uncertainty:
+
+Aleatoric uncertainty - measures noise and ambiguity in the input data. Epistemic uncertainty - measures whether the input is outside the model's training distribution
+
+The plot shows aleatoric uncertainty distributions for clean versus noisy data. Notice the clear separation that standard accuracy metrics completely miss.
+
+In real deployments, knowing when to trust 

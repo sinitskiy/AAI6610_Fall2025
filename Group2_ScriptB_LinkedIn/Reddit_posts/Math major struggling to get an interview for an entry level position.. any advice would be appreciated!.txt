@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18pmbih/math_major_struggling_to_get_an_interview_for_an/
+Title: Math major struggling to get an interview for an entry level position.. any advice would be appreciated!
+
+Content:
+I've been trying very hard recently to learn some practical stuff and put it on my resume, but I still don't get any call-back from companies. I've been applying for a role as data scientist, data analyst, financial analyst, business analyst, quant trader, quant researcher, etc. Can you give me any constructive feedback for me based on my resume?
+
+https://preview.redd.it/qjk5q1fnv58c1.png?width=612&format=png&auto=webp&s=97cf4f58d4bac3f4bb3f8b5a0f24f9d20b0d335e
+
+Comments:
+- Its probably a combination of zero DS work experience, down tech market, and it being December. The main things causing you to not get hits are out of your control, so you just need to keep firing until you land something. 
+
+First one’s always the hardest.
+- Lots of things but:
+1. Your experience is backwards. Start with your most recent (and in this case, also your most relevant)
+2. Your resume is too technical. You're mentioning niche mathematical techniques many data scientists won't know (or care) about.
+3. Focus on how your work led to quantifiable results.
+4. You never demonstrated how you used those tools in your work. Where did you use PyTorch, Tensorflow, Scikit-Learn, SQL?
+5. Too much listed coursework under education. If you want, summarize what kind of courses you were taking, but don't list all of them out like that. It's hard to read and forgettable. (And employers also were students once and knew you most likely forgot most of the material once you finished the course.)
+- [I gave someone in a related subreddit some advice as they seem to be in the same position as you and have minimal relevant work experience. This is the advice I gave them and hopefully the overall comments will be helpful to you.](https://www.reddit.com/r/learnmachinelearning/comments/18ktun9/comment/kdv9f9z/?utm_source=share&utm_medium=web2x&context=3)
+- [removed]
+- I see a lot of technical projects, but nothing that tells me you know how to analyze data. It's a very common mistake I see from people newer to the field and people on this sub. Nowadays anyone can put together models with a few lines of code, unless you're a researcher actually developing new, groundbreaking research, looking for a MLE position, regular modeling work is not going to set you apart. 
+
+For the positions you're listing, especially for DA and DS, companies want to know what you can tell them from data, can you give recommendations quickly? Can you design metrics and explain their pros and cons? Can you design insightful A/B tests? If I give you a case study, can you tell me how you get the data, generate an analysis, and give me a conclusion?
+
+If you're looking to build portfolio projects, I'd recommend picking a publicly available dataset. Analyze the data, generate insightful visualizations, tell me why they're important, what you learn from the data, and what you recommend. Yes, you can also include some modeling component to your analysis, doesn't have to be fancy, 9/10 a regression is all you need. Remember, if I'm 99% of businesses, I want to make money as fast as possible with the help of your work, I'm not interested in creating the next AI breakthrough.
+- I feel like you should probably apply for internships first. You didn’t complete any internships in undergrad?
+- you need to network more. go to meet ups and/or alumni networking events. talk to classmates and professors and seek out advice. message people in your field and ask genuine questions about the work they do and how they got into it without any expectation or getting a job from them. honestly your resume technically is great but the experience is sorely lacking and your best chance at getting an offer is if someone refers you for a role.
+
+On the resume, it should be in chronological order. Too much emphasis on education; you need more emphasis on experience and projects and the tangible results from the work you did. 
+
+good luck!
+- Bro I have a PhD, 5 years of experience as an army officer, and 2.5 years of experience as a professor and out of over 60 applications I heard back from four, had two technical interviews, and only one offer. It's just rough out there right now.
+- Firstly, I think it's probably due to it being December, hiring will pick up in the new year so keep going!
+
+In terms of resume, I often find a brief bullet point skills section useful,  so I can see what languages and tech stack you know or have experience / interest in. 
+
+Your projects are the most important part, what did you enjoy? What did they achieve? What skills and importantly tools did you use to achieve it? (Excel, python specific packages etc). Did you work alone or in a team? 
+
+I think the resume could be a little more personal to you and what you are interested in rather than list of tech skills. Emphasise the bits you liked doing and we're satisfied with on each project. 
+
+I usually have 1 resume and 1 cover letter per application, , as in I read the job description and think what of my skills and experience is most relevant here to this role. Cover letters are so important to show you have interest in the company. 
+
+Good luck.
+- I think the problem might be that recruiters have no idea what your coursework means. I was also in the same situation, sadly.
+- without knowing more about your actual experience, I'd take the relevant coursework out from your bachelors and masters entirely and expand more on your work experience and projects. I've taken and gotten D+ in plenty of relevant courses on my way to my degree, so that's neither here nor there. Right now your resume is about 33% "I went to college for ~6 years", when it should really read more about how you used those skills to excel in the workplace.  
+
+You were in Kora for two years for example. You only did one thing related to Data Science there? And the project you did from April to June - there's nothing else you could put there as valuable experience?
+
+Overall there aren't enough numbers or impact here. When you "Developed core components of an Operating System" in the Pintos Project, what was the result? 
+
+Similar to what others have commented, internships are the best way to go here.
+- Have you run your resume through an ATS testing tool? Your resume has most of the keywords for a data science(ML) position. And it's kinda hard to land one of those as ur first gig.
+
+You're missing a lot of the keywords a recruiter is looking for on data analyst/business analyst roles so ur gonna get screened out of those.
+- I use this strategy. I run my resume through Chatgpt and also the job description. I then tell it to rewrite my resume to suit the job description. I noticed it makes my employment summaries relevant to what the job wants me to do. I've been getting interviews left and right.
+
+&#x200B;
+
+My point is make your employment history relevant to DS. So, if you managed the PLL in the ROK, make it show how you used DS to do so.
+
+&#x200B;
+
+While yes, your education and qualifications matter, they want to see someone who actually put them to use. That's what I think is missing on your resume.
+- Apply for quant finance where your math skills will be more appreciated
+- If you make it to an interview keep things only as technical as necessary.  A lot of non-technical people like to diminish the value of technical skills by emphasizing the “business knowledge”.
+
+Tomfoolery if you ask me.  But regardless, that’s the environment you’re participating in.  So keep things as low level as necessary and tie the technical to the value it will add.  Quantify the value in terms of dollars or time and viola. Offer letter.
+- I think you have some options: 
+Apply for an internship like someone said, doesn’t have to be unpaid 
+Find a recruiter, my bf got his current job by a recruiter finding his resume and contacting him 
+Network with other professionals in your field
+- You have an amazing resume (in terms of what you did) , honestly the job market is so horrible you just gotta keep hunting (expect 100s of rejections and 5 interviews). It might take a few months but you will get there!
+- Just keep applying
+- Did you participate in any clubs or activities in college? The resume is entirely technical. I know it isn't finance, but I'd suggest look at insurance companies they do plenty of data science eg: 
+https://careers.travelers.com/job/19421078/data-science-leadership-development-program-dsldp-intern-us-nationwide/
+- Any updates bro?

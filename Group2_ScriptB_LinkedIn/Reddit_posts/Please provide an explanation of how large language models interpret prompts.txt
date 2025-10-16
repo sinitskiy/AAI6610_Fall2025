@@ -1,0 +1,89 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/190ww63/please_provide_an_explanation_of_how_large/
+Title: Please provide an explanation of how large language models interpret prompts
+
+Content:
+ 
+
+I've got a pretty good handle on machine learning and how those LLMs are trained. People often say LLMs predict the next word based on what came before, using a transformer network. But I'm wondering, how can a model that predicts the next word also understand requests like 'fix the spelling in this essay,' 'debug my code,' or 'tell me the sentiment of this comment'? It seems like they're doing more than just guessing the next word.
+
+I also know that big LLMs like GPT can't do these things right out of the box – they need some fine-tuning. Can someone break this down in a way that's easier for me to wrap my head around? I've tried reading a bunch of articles, but I'm still a bit puzzled
+
+Comments:
+- I get what you’re saying, and it doesn’t look like anyone has answered you.
+
+The base model is the pure next token predictor. It actually does not respond particularly well to questions. Like, if you wanted a list of US state capital cities in alphabetical order you would want to prompt it “The capital cities of the US in alphabetical order are: Annapolis, Atlanta, Austin,” and then let it run from there. 
+
+The fine tuning and RLHF comes from doing additional training in the form of question answer pairs where human feedback is used to reward good replies. 
+
+This works because the next word predictor of the base model contains some representation of the world as presented through its training corpus.
+- All of your examples are not one-sentence prompts. They are long prompts involving an essay, code, or a comment, that end with a one-sentence question.
+
+To say that the model "understands requests" is completely incorrect. I think we would need a much more robust definition of "understand" that we would go into in a Reddit thread to talk about that properly, but suffice it to say that the model does not understand concepts like essays, code, sentiment, bugs, or spelling.
+- forgot to mention, try this llm visualizer: https://bbycroft.net/llm
+- LLMs use embeddings (dense and high dimensional vectors) to translate words into a numerical format. EDIT: While positional encoding of elements is obtained from these embeddings, syntax and semantic relationships are not encoded in these embeddings directly. Instead, the training process arrives at weights that collectively represent syntax rules and semantic relationships. Transformers are used to understand context and focus on relevant parts of the text. It’s not exactly predicting the “next word” which a simple NLP method would. Instead, it first identifies the semantic space that a topical response would belong to and then assembles a grammatically correct logical response.
+
+I’d think of it as high dimensional search for relevant context and then assembling a logical response from there as two discrete high level steps.
+- just for fun I asked Mistral 7B this exact question feeding it with your post :
+
+> Sure! I'd be happy to help clarify the relationship between language models like GPT and tasks such as  
+text editing, code debugging, or sentiment analysis.  
+First, let me start by explaining that while large language models can generate human-like text based   
+on given context, they don't truly "understand" the meaning of the text in the same way humans do.   
+Instead, they make predictions based on patterns and statistical relationships learned during training.  
+When it comes to tasks like text editing or code debugging, the model is not directly predicting the   
+next word, but rather generating a response that fulfills the given request. This requires some   
+additional capabilities beyond next-word prediction.  
+One common approach for enabling models to perform these tasks is through \*\*prompt engineering\*\* and   
+\*\*fine-tuning\*\*. In this context, a prompt is the instruction or input provided to the model. By   
+carefully designing the prompt, we can guide the model to focus on specific aspects of its knowledge or  
+abilities. For example, to perform text editing, we might provide a prompt like "Fix the spelling   
+errors in this essay," which encourages the model to make corrections based on context and grammar   
+rules.  
+Fine-tuning refers to the process of training a pre-existing language model on a new, domain-specific   
+dataset to adapt its knowledge and improve performance on that particular task. For instance, we might   
+fine-tune a large language model on a collection of bug reports or code snippets for debugging,   
+providing it with additional context and examples specific to this domain.  
+Similarly, for sentiment analysis, which involves determining the emotional tone of a given text, we   
+might provide prompts like "What emotion is conveyed in this comment?" or "Determine the attitude   
+towards this product mentioned in the text." The model would be fine-tuned on a large dataset of   
+labeled text examples to help it learn and recognize the patterns associated with different emotional   
+tones.  
+So, while a language model may not inherently "understand" the meaning of text or code like humans do,   
+we can effectively use prompts and fine-tuning techniques to guide the model towards performing   
+specific tasks, such as text editing, debugging, or sentiment analysis.
+- I can't speak to the model architecture but LLMs like ChatGPT have been fine-tuned on instruction-following datasets rather than raw text. Basically, after training the model on masses of raw text, you then fune it to understand how instructions and conversations work by training it on structured text in that format.
+
+There are also tuning methods for teaching the model what kind of responses humans like through methods like Reinforced Learning with Human Feedback (RLHF) and Direct-Preference Optimization (DPO).
+- [deleted]
+- [Here](https://arstechnica.com/science/2023/07/a-jargon-free-explanation-of-how-ai-large-language-models-work/) is the best (IMHO) explanation intended for laypeople of how language models work technically.
+- I think you are getting hung up on the output side and missing something important about the input side: LLMs "remember" an entire sequence of words (really their embeddings, but lets not get too technical) when they predict the next word. Then they take all of those remembered tokens and the last word the LLM generated as input to generate the next token.
+
+It's maybe roughly analogous to what we do when writing. We have some previous knowledge about the world, then we might see something written as a prompt and try to respond. We type out one word at a time, and are therefore in a sense we are "predicting" the next word we type. The important thing, though, is that we hold all of the context - the prompt along with everything else we say - in mind. Our ability to hold the context in mind is what allows us (and by analogy the LLM) to write in a way that appears to make sense given the context.
+
+That's the intuition anyway, but don't forget that there is a lot of important technical nuance I'm leaving out. LLM's don't have prior knowledge in the way you or I might think of prior knowledge, they actually relate (mathematically, through matrix operations) words in high dimensional vector space, as /u/StackOwOFlow says in their post, and as I'm sure others will elsewhere in this thread. This is a bit philosophical, but I would argue that LLMs don't understand a sentence like "fix the spelling in this essay" the way you or I do, and that's important to keep in mind.
+
+Edit: grammar and a bit more clarifying language.
+- up
+- Watch the Karpathy video, yes all three hours of it
+- I mean…. Did you try asking chatGPT?
+- Google exists for a reason
+- Statquest has a great video about this https://youtu.be/bQ5BoolX9Ag?si=h0uI_wEnSRsPbSF0
+- You need to understand training to understand how inference works. 
+
+Broadly most LLMs are trained for next word prediction using Multi head attention. So for a sequence of say 500 tokens the model learns to predict next token from looking at all tokens in the sequence.  Typically a model is trained on trillions of tokens during training to create a 7/13/50/70 billion parameter model.  English language has ~170k words or ~600k tokens.  
+
+Now these “next token” models are further trained to create instruct models with high quality question and answer data sets. Most of these datasets are human curated.  The model then adapts the next word prediction to an instruct mode. The training data has special tokens to highlight the question, answer and also a stop sequence when to stop generating token.  
+
+During inference the instruct model is still using Multi head attention approach and the instruct token and stop tokens are added to my question.  So now model can technically do next word prediction but using the q&a structure. 
+
+OpenAI is not open about its architecture but as people have suggested it could be a mixture of experts or even combination of individual fine tuned models with some layer on top.  
+
+I have fined tuned oss models and the approach is to pre-train on a general corpus of text (not q&a) and then fine tune layers on instruct data.  
+
+So in this approach the pre-training is to learn specific vocabulary and fine tune is learn specific Q&A syntax, context, content and format.
+- Can't believe the top voted answer is hot garbage when this one is as old as that one. This is the rough but correct explanation.
+- Dominik Lukes, an expert from the Centre for Teaching and Learning at the University of Oxford, shares his experience on how to make prompts in more productive way here: [https://youtu.be/7b4v6xnRDLI?si=N5VC4Xg7Q0baXpKs](https://youtu.be/7b4v6xnRDLI?si=N5VC4Xg7Q0baXpKs)
+- Thank you. Do you believe it is  individually trained for tasks such as code, sentiment analysis, summarization, etc., and in ChatGPT for example, different services are invoked based on the prompt? So, if it's a code debugging task, the fine-tuned code debugging model is invoked..
+- How can we claim it doesn't comprehend my request when it precisely accomplishes what I asked it to do? For instance, I requested it to correct a typo in my essay, and it successfully did so.
+- That’s awesome! Thank you very much

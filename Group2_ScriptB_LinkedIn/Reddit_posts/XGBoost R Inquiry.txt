@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17v4ema/xgboost_r_inquiry/
+Title: XGBoost R Inquiry
+
+Content:
+Hello all,
+
+I work in a research lab doing all of our sequencing and bioinformatics-type analysis. I was at a conference this past weekend and saw a medical doctor there that I connected with who had performed some pretty nice and neat machine learning to predict disease susceptibility from proteomics data using XGBoost. I am now going to give XGBoost a shot and learn it and see if I can add anything of value to our research using it. 
+
+My question to you all is: has anyone done any cool bioinformatics work with XGBoost? Or have you used XGBoost in general?
+
+Thank you!
+
+Comments:
+- I've used XGBoost to predict transcription factor binding in a cell type specific manner. Although I find CNNs perform better in that domain, XGBoost still performed well and is super fast. I'd recommend the scikit-learn API in Python to run XGBoost, even if you prefer to work in R, it is only a few lines in Python to initialize and fit the model. This way you can train other types of models, such as a random forest, using the same syntax, to easily compare methods. This is also important as XGBoost is prone to overfitting, especially on small datasets. You may also want to check out LightGBM, which is another gradient boosted decision tree method that is even faster but more prone to overfitting.
+- Tried using xgboost with bayesian optimization as a partial feature selection tool and a tool to predict anatomical differences in structure using gene expression data. Didn't quite work though 😅.
+- Thank you for your insight and advice! I appreciate the assistance.

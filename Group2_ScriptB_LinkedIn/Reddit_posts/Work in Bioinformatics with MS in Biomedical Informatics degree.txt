@@ -1,0 +1,20 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17kqnw6/work_in_bioinformatics_with_ms_in_biomedical/
+Title: Work in Bioinformatics with MS in Biomedical Informatics degree
+
+Content:
+Hello,
+
+I am new to this community, and it seems like this is the right place to get some info about bioinformatics.
+
+I am currently studying MS in Biomedical Informatics. The program offers Bioinformatics concentration path(2 semesters worth), so I thought it would be the way I had expected like DNA sequencing data analysis or hands-on experience in tools that are used industry.
+
+However, what I am learning now is very heavily leaning towards EHR(electronic health records), Biomedical Informatics. I did not realize that there is that much big difference between Bioinformatics and Biomedical Informatics.
+
+I am pretty disappointed and sad about the fact that just because the program is designed to take all core courses(6 classes, 2 semesters) for Biomedical Informatics which you just deal with EHR related topics, I would have only 2 semesters to touch actual Bioinformatics related courses such as Introduction to Bioinformatics, Statistics, Machine Learning or Deep Learning.
+
+I know people out there saying 'It all depends on your skills,' but I have not actually seen someone who studied in Biomedical Informatics and works as a Bioinformatician/Bioinformatics engineer etc.
+
+Would you mind sharing any experience you had or heard about whoever works as a Bioinformatician with MS in Biomedical Informatics degree?
+
+Comments:

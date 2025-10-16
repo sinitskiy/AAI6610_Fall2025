@@ -1,0 +1,60 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/189z4hr/trying_to_understand_which_protein_folder_should/
+Title: Trying to understand which protein folder should I use
+
+Content:
+Hi everyone, i am trying to build (as a side project) an antibody simulator that is going to simulate VDJ recombination (inspiration from this [work](https://github.com/GreiffLab/immuneSIM)) and create a 3D representation of it. I managed to generate the aminoacid sequence (primary structure) and now i would like to get the tertiary strucure in order to render the protein.
+
+As of now I know about alphafold "local" and "colab", pyRosetta and [this site](https://www.tamarind.bio/app) and I am **trying to understand which service is better**.
+
+Some indication:
+
+\- I would like to have everything local or with a good api system (as an example, right now I am using [swiss model](https://swissmodel.expasy.org/) modelling API which is super good but not really what I need).
+
+\- I am aware of the computational demand that these algorithms ask. As far as AlphaFold goes, for example, I can stay within the demand for the reduced version
+
+\- I do not need extreme speed for running the prediction. As of now with SWISS MODEL it takes about 15 minutes to give me back a structure of 150AA. As long as I do not exceed this limit, i am ok with it
+
+\- my pc sucks because it is not meant for this type of workload (as i said, it is a side project) and I am NOT intending on upgrading it unless I hit a "you can't make any progress" wall
+
+Thanks in advance, if you need more information I will surely respond :)
+
+(sorry for the bad english and also for any evantual big whoopsy regargind bioinformatics and/or informatics in general. Kind of a noob especially when it comes to explaining myself. Not related at all, but if you want to check out this very early stage [work](https://github.com/lorenzopol/SimBCR-v2))
+
+&#x200B;
+
+Comments:
+- I would assume that none of those services will give you the right answer.   At best, you’ll get an answer that resembles the truth, and at worst will be completely wrong. You’ll just never know which is which.  Protein fielding is an unsolved problem, and none of these tools is perfect.
+- [deleted]
+- Have a look at [ImmuneBuilder](https://github.com/oxpig/ImmuneBuilder). Similar prediction accuracy to AlphaFold2/Alphafold-Multimer on antibodies but can be run on a local PC, and is built specifically for antibodies so is generally better at handling antibody-specific features like CDR loop orientations and heavy/light chain placement. Keep in mind however that CDR loop structures (especially in the absence of an epitope structure) are notoriously difficult to model accurately.
+- Why local? Colabfold does 1000 amino acids in about an hour, for free
+- [List of Protein Folding Tools](https://github.com/biolists/folding_tools/tree/main)  
+
+
+This list might be helpful. You could try IgFold, that's designed for Antibodies. ESMFold Colab is the easiest though.
+- Yes, I am aware of this and thanks for pointing it out. Despite this, I would still try to know which is better given those "constraints"
+- Thank you so much. I will check it out. As you saw stage 1 of this project (simulating VDJ recombination) is a "wrapper" around immuneSIM work. Stage 2 "folding" will be just a call to some API to retrieve a pdb file and then (for stage 3) I need to choose whether it is worth the time to create a custom renderer with OpenGL or try to squeeze in py3dmol with Jupiter notebook. The 3rd step seems overkill but this project is thought to be a "proof of capability" for what's coming next
+- Thanks a lot! I will surely check it out.
+- Yeah, colab is super cool and has no downsides. I would only discard it because I do not know how to automatically send it a sequence since I would like to have a program that you launch from the terminal and it automatically generates a sequence, folds it and renders it. If you know how this can be achieved with colab it would be a game changer to me
+- Wow, such a good resource. Thanks a lot!
+- Depends where you can accept error. All of them are doing different things. 
+
+Alphafold is least likely to have backbone issues for most proteins, but no idea about antibodies.  You’d have to read up. 
+
+Rosetta would require a scaffold, iirc.  
+
+
+The other approaches will depend on what your input is and what mechanism you’re using. 
+
+None of them will get side chain placement right.
+- Thanks for this, even tho I am not really understanding what you mean by input and mechanism
+- Mostly that these algorithms aren’t working from first principles. They are identifying similar structures and then trying to fit your input to the model.  If the model isn’t the right one, you’ll get the wrong answer.  If the model diverges, you get the wrong answer. For a host of other reasons, you can get the wrong answer out.  
+
+If you don’t know what these algorithms are doing, you should take the time to learn before you go much further.
+- Oh I see, thank you. To be honest, I tried with alphafold colab and it has given some good results. (Which has actually answered my question, super glad). Now the real question becomes "can I install the downscaled version of alpha fold on my windows11 laptop with garbage specs". If you have any ideas I would love to hear, otherwise I guess I will keep you updated ✌🏻
+- I think alphafold is not installable, let alone on your laptop.   
+
+Not my area of specialty, though.
+- Gotcha, thanks for the conversation
+- Good luck with your project!
+- Thanks!

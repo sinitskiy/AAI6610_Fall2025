@@ -1,0 +1,67 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1beeohn/r_vs_c/
+Title: R vs. C++
+
+Content:
+Which combination would you say is best to (1) explore unknown healthcare/biochemical data and then (2) to build machine learning models for product creation using those newly found insights?
+
+* Combination 1: Python, R, SQL
+* Combination 2: Python, C++
+
+Comments:
+- You're asking about the language, but the real point is which packages/libraries you're going to use. R is great for data analysis. Python is leader in machine learning applications. You could advocate for C++ if you wanted to build new software, but... you're interested in answering healthcare-related questions. My opinion is that there are good algorithms for that, that are already implemented and ready to use in Python or R.
+- Combination 1) is more useful but honestly, you could ditch the SQL and focus more on python and R.
+
+R is good for data processing, Python is good for Machine Learning - there are lots of powerful python based ML libraries (eg, SciKit-Learn which is widely used for regression and classification modelling, and there are also things like Tensorflow and PyTorch for deep learning/neural network based approaches). Python is also good for just general scripting and processing. SQL is mostly for databases.
+
+C++ is powerful and fast, but isn’t really used in bioinformatics (other than for occasionally writing some high power applications for bioinformatics research). It’s mostly used for making powerful applications because of its speed and control over system resources.
+
+Most bioinformatics research is done using R and Python. I’ve not come across much using C++ or SQL. When looking for jobs, I’ve occasionally seen that some organisations that operate large databases sometimes want SQL experience, but SQL doesn’t seem to be hugely common in bioinformatics. R and Python covers almost everything you’d do in bioinformatics.
+- I'm not too sure what kind of data you are referring to. Do you mean sifting through journal articles and the experimental results? What kind of products do you want to make? The end goal here is kind of vague.
+
+There's probably no "best" combination or best type of coding language, just language that you feel most comfortable with. Generally speaking python + R has the most bio-related packages and will give you most mileage and maximize interoperability
+- From what I have seen, R or Python has what you need for applied ML analysis. Python has a more robust framework for NN/DL, but in my experience most healthcare data (not bioinformatics specifically) is generally tabular, so NN/DL is not really often used (tree based algorithms are still the winner). In the biostatistics space, I see R as the primary language. If you want to develop new ML algorithms then C++ is typically used in combination with R wrappers.
+- Heng Li is a well known scientist whose interests include the analysis of new sequencing data, population genetics and phylogenetics...  His projects include SAMTools, and BWA...  His latest blog post discusses this question... .. and he says..
+
+"...if you hold a gun to head and force me to recommend a single high-performance language, I will probably say Rust.."
+
+https://lh3.github.io/2024/03/05/what-high-performance-language-to-learn
+- I work with biological, experimental and environmental data, chiefly high throughput DNA sequences, physiological experiments and GIS layers. All I ever use is R, as Python has a poor interface for plotting and the machine learning libraries in R are as good or even better for the user than the Python ones (check TidyModels).
+
+So, R with Tidyverse, particularly dplyr (who needs SQL when dplyr has full integration even with spatial analysis packages like sf and stars), and Tidymodels for ML.
+
+As others have said, C++ is for software engineering, building of packages (many packages on R are written on C++ and nowadays Rust), but never for data analysis (unless you are crazy). Data analysis requieres higher level programming, so you are more free to think on your data and not the architecture of the software.
+
+Finally, SQL is just for your resume (and sometimes interviews, so be prepared), but is not really an advanced language for biostatistics. In the same manner, Python is more for web and apps designers, with some capabilities for data analysis mainly in areas with lower levels of theory (I'm thinking economics). In Python you can pretty much implement any Machine Learning algorithm and some basic statistics, but definitely R is the language for heavily theoretical fields and complex statistical problems, with the addition of many great packages for biological computing, spatial analysis, and some other stuff. In short, everything bio = R, though some Python does no harm, particularly for Big Data (which is not the specialty of R).
+- C++ is generally considered more powerful but it is not widely used in bioinformatics. I have probably seen more than a hundred bioinformatics pipelines in R and Python, but I'm not sure if I have ever seen any pipelines in C++.
+
+Python would be very useful for heavy ML projects. I mainly use Python. R would be very useful for data analysis projects. I also use R whenever the pipeline I need is in R. C++ would be useful for software development I presume.
+- Unless you wanna generate knowledge graphs and do machine learning on it or build a database, ignore SQL. The available libraries in R to process medical data (specifically sequence data) and visualize are better than Python. Python is better for machine learning. I do not like switching between languages in a project. Unless the project requires a specific project available in another language, I go with Python. However, I use only patient level data.
+
+Edit: If you want to develop tools, then C++ is a better alternative.
+- I think combination 1 is going to suit your needs better than combination 2. Unless you specifically want to build/develop new software, combination 1 covers just about every need in bioinformatics that I'm aware of.
+- This - I just don't see the ROI for OP on the effort it would take to actually be a competent C++ dev
+- In bioinformatics is there ever a computational element where c++ would be beneficial?
+- I mean, if you want to make Machine Learning models Python is clearly in a better position.
+- BLAST is written in C++, as are read mappers and a lot of other computationally intensive software.  Not sure where you got the idea it was not used in bioinformatics.
+- All I can think of is when writing/maintaining high performance bioinformatics applications and tools - As someone else mentioned here, BLAST is coded in C++. 
+
+But if you’re building tools like BLAST, then I’d say you’re beginning to cross the line from bioinformatics into software engineering.
+- Many core Bioinformatics and statistic packages in R are written in C..
+- My group used to write our tools in C++ (e.g. [salmon](https://github.com/COMBINE-lab/salmon/)), and it is a very common language for a lot of core bioinformatics tools (e.g. [Bowtie2](https://github.com/BenLangmead/bowtie2), [STAR](https://github.com/alexdobin/STAR) etc.).  In fact, for "high-performance" tools — a lot of tools that deal with raw sequencing data and producing summarized output for downstream analysis — I think C and C++ are among the most common languages.
+
+I will mention that my lab has now since moved to Rust for all of our new projects (e.g. our single-cell tool [alevin-fry](https://github.com/COMBINE-lab/alevin-fry)), and I don't anticipate continuing to develop new C++ software in the future, other than to continue to support our existing tools, unless and until we can migrate them over to Rust.  That said, depending on what area of bioinformatics you're working in, these "lower-level"/"systems" languages can be very common. However, the tasks are generally quite different than the ones for which you'd use R/Python.
+- Interesting, well I'm trying to find where that line is. If I'm majoring in CS should I just get a minor in biotech so that I can be useful in a research lab ?
+- I am aware of BLAST being written in C++, I already said that it is used for software development. It is indeed much more powerful and efficient than many other languages, and that makes it ideal for computationally intensive software. But you usually don't need to know much C++ to use these software, am I wrong? I'm sure you can think of many pipelines that you run using R markdown or Jupyter notebook, but are there as many widely used pipelines that require coding with C++?
+- That is not what you said in the original post:
+
+> C++ is generally considered more powerful but it is not widely used in bioinformatics. I have probably seen more than a hundred bioinformatics pipelines in R and Python, but I'm not sure if I have ever seen any pipelines in C++.
+
+Pretty much every pipeline uses bioinformatics tools in C++ or alike. It saddens me that researchers now think bioinformatics is only about pipelines. No wonder we have more and more crappy tools these days.
+- I am not sure which part of what I said was different between the first comment and the next, but sorry if I was initially unclear. Perhaps I should have elaborated more.
+
+You certainly have a point, many tools in C++ are essential and they are a major part of bioinformatics. But developing these tools shifts towards software engineering, as someone else said in another comment. Since OP is interested in bioinformatics and data analysis, but not software engineering, he might not find as many uses of knowing C++. 
+
+Indeed bioinformatics is not all about pipelines but I think pipelines make up the majority of the work we do. Please correct me if I'm wrong. It is possible that you also consider software engineering as bioinformatics if the software is a bioinformatics tool, and I don't have any objections to that. I agree with the things you said for the most part, but I think we just see bioinformatics differently.
+
+Anyway, apologies if my approach irritated you in any way. Have a great day!

@@ -1,0 +1,87 @@
+URL: https://www.linkedin.com/posts/quantumzeitgeist_bayesian-neural-networks-enable-probabilistic-activity-7379908123194470400-0T39
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Quantum Zeitgeist的动态
+Quantum Zeitgeist
+
+15,013 位关注者
+
+4 天前
+
+Bayesian Neural Networks Enable Probabilistic Graybox Characterization of Quantum Devices with Uncertainty Quantification 
+
+Researchers have enhanced a device characterization technique, called Graybox modelling, by incorporating probabilistic methods that accurately estimate prediction uncertainties and improve data capture by up to 1. 
+
+#quantum #quantumcomputing #technology 
+
+https://lnkd.in/dDSATaM4
+
+Bayesian Neural Networks Enable Probabilistic Graybox Characterization of Quantum Devices with Uncertainty Quantification
+http://quantumzeitgeist.com
+1
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Quantum Zeitgeist
+
+15,013 位关注者
+
+3 周
+
+Neural Networks Learn Entanglement Witnesses with over 99% Accuracy for Quantum States 
+
+Researchers demonstrate that artificial intelligence, specifically continuous-variable quantum neural networks, accurately identifies complex quantum entanglement in photonic systems, exceeding the performance of conventional methods and offering a pathway for improved quantum state characterisation 
+
+#quantum #quantumcomputing #technology 
+
+https://lnkd.in/eab-T2Ti
+
+Neural Networks Learn Entanglement Witnesses with over 99% Accuracy for Quantum States
+http://quantumzeitgeist.com
+2
+1 条评论
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+Quantum Zeitgeist
+
+15,013 位关注者
+
+2 周
+
+Quantum Neural Networks Demonstrate Impact of Rotation Layers and Four Entanglement Topologies 
+
+Researchers systematically investigate how the arrangement of quantum operations and connections within neural network circuits impacts their ability to generate complex data and accurately classify images, revealing crucial insights for designing more effective quantum machine learning systems. 
+
+#quantum #quantumcomputing #technology 
+
+https://lnkd.in/e773w3mS
+
+Quantum Neural Networks Demonstrate Impact of Rotation Layers and Four Entanglement Topologies
+http://quantumzeitgeist.com
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+Quantum Zeitgeist
+

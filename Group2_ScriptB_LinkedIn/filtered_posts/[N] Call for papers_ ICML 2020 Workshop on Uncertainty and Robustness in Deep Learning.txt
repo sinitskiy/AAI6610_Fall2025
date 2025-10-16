@@ -1,0 +1,36 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/frss74/n_call_for_papers_icml_2020_workshop_on/
+Title: [N] Call for papers: ICML 2020 Workshop on Uncertainty and Robustness in Deep Learning
+
+Content:
+**ICML 2020 Workshop: Uncertainty and Robustness in Deep Learning**
+
+Virtual event (see [here](https://icml.cc/Conferences/2020/VirtualICML) for more information)
+
+Submission deadline: **May 22, 2020**
+
+[https://sites.google.com/view/udlworkshop2020](https://sites.google.com/view/udlworkshop2020)
+
+&#x200B;
+
+**Topics of interest include but not limited to:**
+
+• Model uncertainty estimation and calibration
+
+• Robustness to distribution shift and out-of-distribution generalization
+
+• Anomaly detection and out-of-distribution detection
+
+• Probabilistic (Bayesian and non-Bayesian) neural networks
+
+• Model misspecification
+
+• Quantifying different types of uncertainty (known unknowns, unknown unknowns, contextual anomalies, ambiguities)
+
+• Open world recognition and open set learning
+
+• Connections between out-of-distribution generalization and adversarial robustness
+
+• New datasets and protocols for evaluating uncertainty and robustness
+
+Comments:

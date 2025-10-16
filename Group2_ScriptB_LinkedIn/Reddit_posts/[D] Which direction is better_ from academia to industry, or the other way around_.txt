@@ -1,0 +1,69 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mn1tx2/d_which_direction_is_better_from_academia_to/
+Title: [D] Which direction is better: from academia to industry, or the other way around?
+
+Content:
+Hi all, given the current state of machine learning, I have two questions:
+
+1. At what point in their career can a university lecturer/professor take on a joint position in industry?
+2. Alternatively, can a R&D researcher in industry go back to academia without having to restart at the bottom of the ladder?
+
+**Some context:** I am a PhD student on track to graduate in two months. I have several offers for applied/research scientist roles in industry, and interesting postdocs that could lead to a fulfilling academic career. I am not motivated by high salaries, and I know I want to do machine learning research forever! But the early-career academic job insecurity and the constant competitive grant writing I hear about are seriously concerning. At the same time, I know I can make a stronger/quicker practical impact in industry, despite the corporate constraints (work hours, less freedom, etc.). This is why I'm wondering if, in order to get the best of both worlds, one could start in academia and then transition into industry over time (or vice versa).
+
+My question is more related to early-career researchers; I am aware that once tenure is achieved, pretty much anything is doable (e.g., Hinton, LeCun).
+
+Thank you for sharing any insights, examples, or experiences on this :)
+
+Comments:
+- This is the type of question that doesn't have a right or wrong answer and will be very individual.
+
+Academia to industry is pretty common as many academic labs collaborate with industry and potentially even start their own startups with their PhD students. (This is easier if you're at a top university or you've made some previous connections at events or internships).
+
+Industry to academia is also a fine route as the industry connections you make can be valuable once you become a professor and industry research is often very cited. However the most important part in academia is funding and going into industry will not secure you any for starting your own lab.
+
+I think the more important question is what you want to do. If you like the idea of having your own lab and being able to research whatever you like I'd go for the post doc as it will likely help you more in becoming a professor. If you like industry research with higher salaries but more engineering work opposed to pure research then go into industry.
+- I think university lecturer usually tend to make their own start-ups levraging their students rather than transitioning to industry as an "employee."
+
+I think getting some experience in industry is very beneficial for any future path; academia has very bad development practice, which becomes a huge drawback when trying to transition to industry later.
+- It is generally easier to go from academia to industry. In academia, all your work will be public and published, which you can leverage for industry research jobs. The other way around is not true -- at a tech company you may not be able to publish your work if you cannot release your source code to reviewers. My understanding so far is that while a job at DeepMind or FAIR is "nice to have", it does not replace publications in the eyes of hiring committees.
+- Both directions are equally difficult. Academia -> Industry - little experience with working under pressure, hard to get rid of overthinking, academic integrity is also a burden; Industry -> Academia - Hard to get back to publishing results on academic datasets, avoiding all the real world engineering problems that are hard to stop seeing, somehow feeling like most academic papers are useless
+- You like students or no?
+- For ML, big tech seems like the undeniably best option, huge salaries, shit-ton of resources, you don't have to grant chase, and I don't even think you'll be constrained to "applied research" as it is industry labs like deepmind who are doing lots of foundational work as they chase AGI. Google brain (before it got merged) even had a theoretical machine learning team I believe. 
+
+I think it would be difficult to do industry -> academia, I think the politics could screw you over. Unless you're really a big shot, why would academia give you tenure straight-up over someone who has been in the system, on tenure-track, grinding for years? They'd probably let you start at the bottom of the track, maybe shave off a year or two, but at this stage, you've probably done at least a couple of years in industry. You'll be probably in your late thirties, the opportunity cost here really hits, you're not a young-in anymore with little responsibilities outside of work (probably).
+
+But this is all on the assumption that industry = big tech. There's more than just them, the type of work will vary from cutting edge start-ups, impactful non-for profits to boring corporate shite. But industry -> academia, the opportunity cost still applies.
+
+I think if you want to go into academia, you commit to it straight-up. You'll get paid less, work more hours than industry, constantly chase grants, publish-or-perish but get some of the best job security + freedom once you hit tenure. Else wise there's industry, your work may be more constrained, you'll work less hours, make much more money but be more at the whims of layoffs. 
+
+A third option is to do industry, make heaps of money, then go off and make a start-up, or do consultancy + your own research on the side.
+- I think the options are unlimited.  I've seen university professors doing research consulting, university professors working in industrial research labs over the summer, researchers in industrial labs moving directly to tenured faculty positions at prestigious universities, and researchers in industrial labs moving to academia and starting at the bottom of the latter.  From what I've seen personally, moving between industry and academia is easier for early-career researchers.
+
+But really, I think the main enabler is doing excellent work!
+
+BTW, I think that generally academia is more strenuous than industry.   When I worked in an industrial research lab, I noticed that a collaborator in academia seemed to always be working late into the night.  When I moved to academia in a tenure-line role, I understood.
+- Thanks for the post. Couldn’t have been phrased better.Also interested in the replies!
+- Academic route seems restrictive, you need to be liked by colleagues, there is lot pf politics and on top of that it's very difficult to move to a different place. Hence, for those reasons, academia is not a good option for me. Not saying industry does not have politics but the job mobility that industry offers is pretty great.
+
+u/PrimeMaester what was your research in?
+- Academia to industry is more difficult since you'll be paid to deliver results, not research. 
+
+This can be quite a shock to some seeing that the practice doesn't always follow the happy-path from theory.
+- Thank you very much. Sounds like trying to combine both could harm everything
+- Thank you very much. The start up idea is indeed something I've also noticed a lot. Please, can you elaborate on the bad development practices in academia?
+- "NO!" "Perfect, happy to welcome you to the [Name a University] community!"
+- Thanks for offering your insights on this. My research is on model adaptation: meta-learning, parameter efficient fine-tuning, and in-context learning. The industry offers I received were not to do research on those though. 
+
+I should update this post by saying that I ultimately chose a one-year postdoc. My hope is that if I don't like it or academia as a whole, I can always return to industry, maybe this time doing something I'm really passionate about.
+- I don't know what it means to deliver research without delivering results.  It seems that by "results" you mean something like "a functioning system with business value".
+- [deleted]
+- Okay, got you. Are these research in the LLM space or are they more general?  
+Also, how did you apply for positions in the industry?
+
+You can't go wrong with PostDoc as well. The cool thing about ML is that even after PostDoc you can return to industry, if you wish to, pretty easily. Best wishes for that
+- This is such a bad take. Many researchers aren't great at coding since they often follow the "if it works it's good" practice, but that doesn't mean this is the case for all PhDs, Postdocs and professors.
+
+Some of the most important research and well written code have been written by PhD students without industry experience. In fact many top startups come from academia because academics know more advanced topics than software engineers.
+
+There's a reason every research company (openAI, Google Deepmind, etc) hires PhDs exclusively and not software engineers. Academics are the people who push and shape the AI field not software engineers.
+- Both can be true. They shape the ai field by writing novel algorithms and developing new architectures. And then ML engineers and software engineers spend months untangling the spaghetti code and turning it into an actual product.

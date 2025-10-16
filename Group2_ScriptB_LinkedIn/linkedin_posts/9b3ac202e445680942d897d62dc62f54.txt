@@ -1,0 +1,26 @@
+URL: https://www.linkedin.com/posts/department-of-mathematical-and-statistical-sciences-cu-denver_join-us-for-taylor-ropers-phd-in-applied-activity-7206330889281171456-2hlQ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Department of Mathematical and Statistical Sciences, CU Denver的动态
+Department of Mathematical and Statistical Sciences, CU Denver
+
+672 位关注者
+
+1 年
+
+Join us for Taylor Roper's PhD in Applied Mathematics Thesis Defense “A Machine-Learning Enabled Framework for Quantifying Uncertainties in Parameters of Computational Models and a Data Sufficiency Procedure” on Wednesday June 26th at 8:00 am in Student Commons 4125 or on Zoom. Email mathstats-staff@ucdenver.edu for the link.
+
+Title: A Machine-Learning Enabled Framework for Quantifying Uncertainties in Parameters of Computational Models and a Data Sufficiency Procedure
+
+Abstract: This work presents novel extensions for combining two frameworks for quantifying both aleatoric (i.e., irreducible) and epistemic (i.e., reducible) sources of uncertainties in the modeling of engineered systems and further utilizing these extensions to develop a procedure for determining data sufficiency. The data-consistent (DC) framework poses an inverse problem and solution for quantifying aleatoric uncertainties in terms of pullback and push-forward measures for a given Quantity of Interest (QoI) map. A pre-specified QoI map is not always available a priori to the collection of data associated with system outputs. The data themselves are often polluted with measurement errors (i.e., epistemic uncertainties), which complicates the process of specifying a useful QoI. The Learning Uncertain Quantities (LUQ) framework defines a formal three-step machine-learning enabled process for transforming noisy datasets into samples of a learned QoI map to enable DC-based inversion. We develop a robust filtering step in LUQ that can learn the most useful quantitative information present in spatio-temporal datasets. The learned QoI map transforms simulated and observed datasets into distributions to perform DC-based inversion. We also develop a DC-based inversion scheme that iterates over time as new spatial datasets

@@ -1,0 +1,20 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/4dd5gq/what_questions_do_dataliterate_professionals_ask/
+Title: What questions do data-literate professionals ask?
+
+Content:
+e.g. 
+
+- Where does the data come from and how was it collected? How reliable or "noisy" is the data (e.g. measurement error, missingness, etc.)?
+- What is the larger population we are inferring from the sample?
+
+- What are the inherent trade-offs (e.g. bias vs. variance) to the methods used to interpret this data?
+
+- What's the level of uncertainty with a given model's predictions (e.g. standard errors, confidence intervals, etc.? How do I know when my inference is wrong?
+
+- Have your findings been replicated? If not, do you have the data and programming scripts so that another data scientist could attempt to replicate your results?
+
+Comments:
+- I agree with /u/Divisible-by-zero
+
+For me, everything is domain knowledge, then process knowledge, then exceptions with the process, THEN I myself can infer the uncertainty etc.

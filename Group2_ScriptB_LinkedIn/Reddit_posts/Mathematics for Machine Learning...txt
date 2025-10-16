@@ -1,0 +1,59 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1bi4028/mathematics_for_machine_learning/
+Title: Mathematics for Machine Learning..
+
+Content:
+Hey y'all!
+
+So I've been out of the maths game for too long and I wanna prep myself for a bioinformatics master's and improve my skills. Really interested in Machine Learning and was wondering if anyone knows any course or resources that I could use to help me, a mathematical douce, grasp the basics of the mathematical content involved in ML.
+
+ If I am not mistaken, ML involves statistics, linear algebra, and calculus based on what I read online (please correct me if I'm wrong). Found some courses on Udemy that are labeled as "Mathematics for ML". Do you think such courses would be a good way to get a grasp? Any other suggestions would be great and if you think that there are some parts that are more imp than others, I'd appreciate it! 
+
+Thank you all in advance🫂
+
+Comments:
+- What kind of machine learning? Calculus and linear algebra are useful for understanding the mathematical underpinnings of machine learning and statistics and developing new methods. But for bioinformatics, I don't think you'd spend much time developing new methods. 
+
+
+Statistics is near mandatory. One, it's useful for understanding what predictive methods are useful for which types of data. Two, relatively simple descriptive statistics are used to understand model efficacy. Three, for certain problems, just using plain old boring statistics is the best approach. 
+
+
+ However, predictive statistics often approaches data by making assumptions. These statistics break down when dealing with large quantities of data. Machine learning tends to be more empirical, so trying to approach machine learning like a proper statistician confuses things (and vice versa). It's important to understand when one approach is more appropriate than the other.
+- To contextualize my personal opinion, I'm currently doing a PhD thesis involving the fields of Population Genomics and Seascape Genomics. I've also worked a lot with Machine Learning for environmental problems, and consider myself relatively skilled in bioinformatics in general.
+
+Machine Learning is defined more precisely by its approach to data analysis and predictive modeling, that by its relation to mathematics and statistics. There are modelings approach that have little relation to proper maths and are closer to logics, heuristics and algorithms, like Random Forests. Neural Networks, though with dense mathematics in their core, also have a flow of work closer to heuristics. This is to say that I consider that courses with a strong focus on Mathematics and Statistics are a potential waste of time, and you should focus more on the core aspects of Machine Learning and hopefully with a focus on your field of application.
+
+Another aspect that I heavily recommend is taking courses in person, as learning directly with a dedicated teacher will help you grasp the core concepts faster and will allow you to directly apply them to your interests. I indeed benefited from some courses at my university, named as example "Machine Learning for Environmental Sciences applied in R", or "Data Analysis and Visualization in R". I'm really not into online courses, as they are long, unpersonalized, to filled with irrelevant topics, unfocused, etc. In person with a specialized teacher you can learn in one week what would take you a semester online. Moreso, when you learn the fundamentals, you will most certainly go on your own cracking your analysis with tutorials and papers.
+
+Shortly, define some problems to solve, check some papers that implement ML, and follow their methods, helping yourself with google, stack overflow, the documentation of the programs. One example of a search would be "ecological niche modelling with machine learning", or "streamflow prediction with random forest" and so on.
+- Well, if you're interested in machine learning then why not begin learning some math. You may want to keep in mind however that it is a difficult subject, and learning it is a long-term journey sort of thing. If I were you, I would probably just take core math classes in calculus, linear algebra, probability, statistics and optimization. A survey "math for ML" course is unlikely to give you more than a useless, superficial understanding of the requisites.
+- According to this [Warwick course](https://warwick.ac.uk/fac/sci/maths/currentstudents/ughandbook/year3/ma3k1/), you should know Linear Algebra, Multivariable Calculus, Differential Equations, High-Dimensional Statistics, Optimisation, and basic Topology.
+- I applaude your ambition here, but to be perfectly honest: 1) the models are now so advanced that your are unlikely to grasp their detail and 2) the libraries and framewores are also so advanced that you don't have to. I find it very unlikely that you will ever implement any ML model yourself. In fact, ML models are likely to implement themselves by the time you graduate.
+
+But you are correct, ML is based on linear algebra and calculus, and you might as well get a hold of the basics. I think I would focus more on statistics, mainly  probability theory and distributions, to help you interpret ML models in the future.
+- Sounds like really good advice! So you recommend I pour more efforts into a statistics course? If so, anything specific you'd recommend?
+- Jeez you made my day! Such a detailed response. Thanks so much! Really interested in knowing where you're doing your program and what you did before the PhD. Population Genomics/Genetics is something I will consider for when I apply to PhD programs. Would appreciate what are the qualifications that would make someone a worthy candidate!
+- Thats what the post is about. I am literally asking which maths to start with and how!
+- Thank you so much for the lovely response! So I guess, as a bioinformatician, it won't be necessary to know the mathematics behind ML, rather than just how to interpret its results, correct?
+- I can't make any recommendations. I learned in school and googling whatever problems came up.
+- Thank you, I'm doing my PhD in Chile, with a national scholarship grant. Funds are scarce in Chile so the scholarship is really competitive. Before earning my current grant, I only had my bachelor's degree and one year of subsequent experience as a research assistant on a state funded research project. Moreso, I didn't have at that time any published paper. What I did have, though, was a somewhat clear research interest that I previously discussed with my current PhD supervisor, which is something that matters a great deal when getting into a program, and also aids a lot in the acquisition of a scholarship. My proposal for the scholarship call was clear and well written, thanks to having it revised by colleagues and professors of trust. Lastly, I had relatively good grades for my bachelor's courses (approximately 4.4 out of 5), which of course helped a great deal.
+
+I skipped doing a Masters degree for three reasons:  1) I was advised to do so by many of my former professors as they considered it a waste of time and youth (by the way, they are Europeans, so it may have something to do with how they do things back there), 2) PhD scholarships have way better stipends than Masters, and 3) in Chile PhD programs have a first year of intensive courses, so a Masters seems redundant to me.
+- Well start with some basic calculus and linear algebra I guess, they will be prerequisites more or less for probability, stats and optimization. Eventually, you will want to learn calculus up through vector calc, and you will need to know quite a bit about numerical linear algebra. Like I said, I would advise you take courses at a university.
+- In general, you would always want to know as much of the technicalities as possible, or at the very least, the basics. My point is that the cutting edge models are being being blasted forward at an inhuman pace, driving by nerds so good at math that you I and might as well be neanderthals. I find little meaning in trying to keep up, apart from retaining a basic understanding of the algorithms.
+
+My role in science is to use my superficial understanding of the newest method in data science to further my deep understanding of biology. I am way better with data science than the pure biologists and way better with biology than the data scientists, although an expert at none of it. This approach has served me well.
+- Alright. Thanks a lot! So the overall consensus is, for ML in Bioinformatics, not much calculus/linear algebra emphasis is needed to get the job done, right?
+- Noted, thanks a lot!🫂
+- Makes a lot of sense. So as a bioinformatician, you're not really expected to be dealing with things a data scientist would be dealing with
+- Pretty much. 
+
+
+Calculus and linear algebra would help you understand some specific, fundamental aspects of statistics and machine learning. With some ingenuity, these insights can be used to innovate on the state of the art, even.
+
+
+But 99% of people in bioinformatics have no reason to go digging that deep.
+- Depends on your definition of a bioinformaticion. The version I happen to be, and the one I try to train my students to be, is a biologist with a strong enough command of data science to allow me to analyze my data and interpret it correctly.
+
+Plenty of room for people with other priorities, and certainly also the folks focusing on data science rather than biology. We all need each other.
+- So I shouldn't be required to get a grasp of them both to start/excel in a bioinformatics career. *thanks for the reassurance hahaha* I found statistics to be easy during college so should be a piece of cake hopefully! Thanks so much

@@ -1,0 +1,19 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/7pekoe/bioinformatics_contest_2018/
+Title: Bioinformatics Contest 2018
+
+Content:
+Bioinformatics Institute, ITMO University, Rosalind and Stepik are glad to announce the second online programming competition – Bioinformatics Contest 2018.
+
+Bioinformatics Contest is an intensive programming competition among individuals held entirely online. It consists of two steps - the qualification round (February 3 — 11) and the final round (February 24). 
+
+Your task will be to solve bioinformatics problems using any programming language you know. During the qualification round you will have to earn score points to get access to the final round. The final round will last for 24 hours.
+
+If you’re interested in Bioinformatics, have some background in Computer Science, Molecular Biology, Genomics and Machine Learning, and enjoy dealing with complex problems, don’t hesitate to sign up on https://stepik.org/course/4377!
+Details and subscription to the news are available on http://bioinf.me/contest.
+
+Good luck!
+
+
+Comments:
+- I'm going to enter, but if last year's results are anything to go by I'll get totally trounced by Russians.

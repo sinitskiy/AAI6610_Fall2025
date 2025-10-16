@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/ceposta_mcp-a2a-versioning-activity-7375899589301886976-3W5O
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christian Posta的动态
+Christian Posta
+
+Field CTO @ Solo.io | AI Agent IAM, MCP, A2A | Cloud Networking | Author | International Speaker
+
+2 周
+
+🔄 Versioning in AI agent + MCP architectures is a whole new beast. It’s nothing like what we did with APIs.
+
+If we think of an AI agent as a “smart state manager that feeds an LLM to work toward a goal”, then versioning gets messy fast because everything depends on a probabilistic LLM and how state is gathered, trimmed, and filtered.
+
+Now consider what happens when you change:
+▪️ The LLM itself (upgrade to different model)
+▪️ The system prompt of the agent
+▪️ The MCP servers (behavior, tool descriptions, resources, new tools, etc.)
+▪️ The behavior or description of a dependent agent (A2A)
+
+Each of these changes can drastically alter behavior. In other words versioning isn’t just hard, 𝐢𝐭’𝐬 𝐰𝐢𝐥𝐝.
+
+Agent eval can help. Change detection can help. 
+
+🙏 But I am very curious what others are exploring in this space? Or maybe the way we've handled this in the past (explicitly codified, versioned contracts) gets flipped entirely on its head?
+
+#mcp #a2a #versioning #changemanagement #ai #agents
+
+45
+20 条评论
+赞
+评论
+分享
+Chris Gaun
+
+If you don't cannibalize yourself, AI will
+
+2 周
+
+Gonna have to tie the agent version number to the LLM. Only way. Maybe we will come up with some semver for agents where like first number is new model, second number is changes in model or features and third number is changes in prompts / bugs. 
+
+赞
+回复
+2 次回应
+Yacine Souam
+
+AI & Security Engineer | OWASP AI Exchange Co-Author
+
+2 周
+
+If we treat agent versioning as something rigid, it’ll be hell. I think we need to allow some delta, for example if the system prompt shifts slightly but still serves the same role, it should count as the same agent. And since behavior can vary even with identical parameters...
+
+赞
+回复
+1 次回应
+Muktesh Mishra
+
+A curious engineer | Learner | Speaker | Author | Open Source Advocate and Contributor| CD.Foundat

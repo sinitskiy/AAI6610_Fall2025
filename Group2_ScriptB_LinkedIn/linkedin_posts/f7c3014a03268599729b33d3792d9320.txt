@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/pierre-carl-langlais-b0105b10_i-presented-yesterday-the-new-wave-of-llm-activity-7260649276769255424-pY1o
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Pierre-Carl Langlais的动态
+Pierre-Carl Langlais
+
+Co-founder Pleias
+
+11 个月  已编辑
+
+I presented yesterday the new wave of LLM sampling like Entropix during the CERN data science seminar.
+
+All LLMs a generating the most probable words. Yet the most probable word is not always the most suitable. Even the most powerful models like o1 (that claims to attain the level of Phds in STEM) or Sonnet 3.5 are currently unable to solve a simple problem such as "what is the larger number between 9.9 and 9.11" due to confusing different level of token signification: is it 9.11 the decimal number, 9/11 the date or 9.11 the section number in a book?
+
+Entropix (xjdr, doomslide et al.), the adaptive temperature sampling methods of Petar Veličković or the Min-P sampling by Minh Nhat Nguyen et al. are all showing promising improvement on this front even with very small models like llama 1b or Smollm the enw Hugging Face SLM. Rather than relying on fixed parameters, they change the overall condition of text generation depending on the degree of confidence the model has on the token it is generating, it has generated in the past or sometimes it may in the future (the "middle-out" approach). In short, this is a better management of the model internal probabilities that makes it possible to change the overall token selection strategy, give more space to think (with a "pause token") and branch out to a different narrative.
+
+This topic is especially relevant to present in the CERN given the large reliance of theses methods on physics math, such as softmax optimization or entropy analysis. Also they do open up the possibility to one day "automate math" that seems right now to be beyond the current LLM designs. 
+
+As we are currently training specialized SLMs at pleias we obviously are following all theses developments very closely. Our initial focus was on document processing SLMs — but math may be the next natural step.
+
+I'm releasing the complete slides he

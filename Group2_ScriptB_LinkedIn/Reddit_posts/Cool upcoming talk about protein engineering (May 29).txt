@@ -1,0 +1,16 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cw9la0/cool_upcoming_talk_about_protein_engineering_may/
+Title: Cool upcoming talk about protein engineering (May 29)
+
+Content:
+It streams on YouTube Live on May 29, at 9am JST: [https://www.youtube.com/watch?v=SQiQBD8a0U0](https://www.youtube.com/watch?v=SQiQBD8a0U0) 
+
+The speaker is Sam Gelman, who is a recent PhD grad.
+
+"Just as words combine to form sentences that convey meaning in human languages, the specific arrangement of amino acids in proteins can be viewed as an information-rich language describing molecular structure and behavior. 
+
+Protein language models harness advances in natural language processing to decode intricate patterns and relationships within protein sequences. These models learn meaningful, low-dimensional representations that capture the semantic organization of protein space and have broad utility in protein engineering. However, while protein language models are powerful, they do not take advantage of the extensive knowledge of protein biophysics and molecular mechanisms acquired over the last century. Thus, they are largely unaware of the underlying physical principles governing protein function. 
+
+We introduce Mutational Effect Transfer Learning (METL), a specialized protein language model that bridges the gap between traditional biophysics-based and machine learning approaches by incorporating synthetic data from molecular simulations. We pretrain a transformer on millions of molecular simulations to capture the relationship between protein sequence, structure, energetics, and stability. We then finetune the neural network to harness these fundamental biophysical signals and apply them when predicting protein functional scores from experimental assays. METL excels in protein engineering tasks like generalizing from small training sets and extrapolating to new sequence positions. We demonstrate METL's ability to design functional green fluorescent protein variants when trained on only 64 experimental examples."
+
+Comments:

@@ -1,0 +1,45 @@
+URL: https://www.linkedin.com/posts/maxim-ziatdinov-651aab250_heteroskedastic-bayesian-neural-networks-activity-7267229192092606465-kUWq
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maxim Ziatdinov的动态
+Maxim Ziatdinov
+
+Building AI tools for experimental materials discovery
+
+10 个月  已编辑
+
+Heteroskedastic Bayesian Neural Networks: What Are They and When Should You Use Them?
+
+In standard Bayesian Neural Networks (BNNs), we replace point estimates of weights with probability distributions to capture model uncertainty. These networks typically assume homoskedastic noise - meaning the observation/measurement noise is constant across all inputs. However, real-world data and scientific measurements frequently exhibit input-dependent noise levels. Failing to account for this in Bayesian neural networks can lead to unreliable uncertainty estimates.
+
+NeuroBayes, a package I am developing, addresses this challenge by offering two types of Heteroskedastic BNNs:
+
+1) Noise Model-Based Heteroskedastic BNN
+In many scientific and engineering applications, domain experts may have prior knowledge about how noise levels vary with inputs. NeuroBayes allows you to incorporate this knowledge through a noise model-based heteroskedastic BNN. This approach is particularly valuable in small data regimes, where leveraging domain expertise can significantly improve model performance.
+
+2)Two-Head Heteroskedastic BNN
+This more or less standard architecture infers noise levels alongside function values without relying on prior knowledge. It is a flexible option suitable for scenarios where domain-specific noise information is unavailable or difficult to model. However, care should be taken as this approach may require larger datasets to reliably learn both the function and noise, and can be prone to overfitting in small data regimes.
+
+Explore the examples and try these methods for yourself:
+- Noise Model-Based Heteroskedastic BNN: https://lnkd.in/g4mfepxf
+- Two-Head Heteroskedastic BNN: https://lnkd.in/gfp7uiTk
+
+56
+8 条评论
+赞
+评论
+分享
+Utkarsh Pratiush
+
+Graduate Research Assistant | Machine learning | Quantum Physics of materials || ex-mindtre

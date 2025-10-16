@@ -1,0 +1,36 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1lp79vw/feeling_stuck_how_do_we_start_a_project_on/
+Title: Feeling stuck — how do we start a project on protein-ligand binding affinity?
+
+Content:
+Hi everyone,
+
+I'm an undergrad student working on a research paper about **protein-ligand binding affinity**, but my team and I are feeling a bit lost. We already have the topic and we're really interested in bioinformatics, but we’re unsure how to actually begin analyzing a dataset or building a study around it.
+
+We initially looked at the **PDBbind** dataset, but we’re having trouble understanding what exactly is in the files and how to extract features for machine learning or analysis. We’re not sure:
+
+* What inputs are typically used in models predicting binding affinity?
+* How to process structure files like `.pdb` or `.mol2`?
+* Whether we should instead choose a dataset in a simpler format (like tabular CSV from BindingDB or similar)?
+
+We want to keep the project achievable with our current skill set (Python, pandas, scikit-learn, basic ML). Our main goal is to **analyze data or build a simple predictive model** and write a clear research paper around it.
+
+If anyone has suggestions on:
+
+* What dataset is best suited for a beginner-level research paper?
+* How to go from raw files → features → prediction?
+* Any beginner-friendly workflows or tools (e.g., RDKit, DeepChem)?
+
+I’d be incredibly grateful. Even a link to a similar paper, GitHub repo, or notebook would help a lot.
+
+Thank you so much in advance!
+
+Comments:
+- The most common inputs include representations of the ligand, such as SMILES strings or .mol2 files or SDF. Pay attention if they are in 3D or 2D format. These can be transformed into molecular descriptors like molecular weight, logP, and hydrogen bond donors/acceptors using RDKit. 
+
+For the protein, inputs can include just the amino acid sequence, typically in FASTA format. More complex models might use 3D structures from .pdb files. Pymol, Chimera, ChimeraX can help you transform pdb into MOL2, or other outputs.
+
+As for processing structure files like .pdb or .mol2, .mol2 files are used mostly for ligands and can be handled easily with RDKit or Open Babel to extract 3D coordinates, atomic information, calculate partial charges, add hydrogens and more. .pdb files, which describe protein structures, are much more complex. You can process them using Biopython’s.
+
+There are tons of docking tools and platforms out there...GOLD, PlayMolecule, Webina, DockThor, Glide, PyRx, and more. Just make sure to include redocking in your workflow if the crystallized structure already has a ligand bound. It's a good practice!
+- Okay thankyou so much

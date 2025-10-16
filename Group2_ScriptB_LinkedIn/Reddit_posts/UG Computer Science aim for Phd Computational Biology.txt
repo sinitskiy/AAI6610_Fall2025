@@ -1,0 +1,21 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/w92fwg/ug_computer_science_aim_for_phd_computational/
+Title: UG Computer Science aim for Phd Computational Biology
+
+Content:
+Hi,
+
+I am currently an undergrad CS student in Canada. My degree concentration is in Machine Learning/ AI. I took a lot of my classes in ML,Reinforcement Learning I-II,  Numerical analysis and the two classes in the math of ML. For Stats, I took Stochastic Processes and probability. For Math, I did Cal 1-3, Linear algebra I-II and also Real Analysis.
+
+I want to transition to Computational Biology but my knowledge is quite limited to just basic cell biology and biological diversity. I was wondering how deep should I go into biology to be a stronger applicant?
+
+My uni have a biology program devoted to cellular biology, should I do that degree? Money is not an issues.
+
+Comments:
+- Comp bio is pretty diverse. What do you want to do exactly? I think if you’re doing really theoretical work and want to do machine learning development your backgrounds looks great for it. 
+
+
+Applied ml research might be another option but you might want to strengthen your biology. I honestly think though this isn’t a deal breaker for PhD application and most PhD programs would love someone like you. Do you have any research experience because that would also be very helpful for SOP,CV and LOR.
+- UoG had a graduate bioinformatics program that’s got quite a few options, I’d say your best bet is to reach out to one of the graduate coordinators and ask them your questions. They’ll be able to tell you what prerequisite knowledge you need!
+- I think an extra degree is not worth it. Not because of money but because of the time. 
+You'll probably can pick things up at the start of the degree or, in addition, try to attend some of the courses of the biology degree in your free time (not sure how possible that is in Canada).

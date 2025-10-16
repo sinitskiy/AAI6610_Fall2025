@@ -1,0 +1,18 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/9yeh2s/d_can_logistic_regression_model_an_evolving_value/
+Title: [D] Can logistic regression model an evolving value?
+
+Content:
+http://mbmlbook.com/TrueSkill_Allowing_the_skills_to_vary.html
+
+> You may think that our online learning process updates our skill distribution for a player over time and so would allow the skill to change. This is a common misconception about online learning, but it is not true. Our current model assumes that the skill of a player is a fixed, but unknown, quantity. Online learning does not represent the modelling of an evolving skill value, but rather an updating of the uncertainty in this unknown fixed-across-time skill.
+
+In the next chapter, they do something similar to a spam-classification related model. This made me wonder whether the same would apply to a logistic regression model.
+
+Comments:
+- Naively? Of course. The point they are making is that the model is not given a time parameter, and therefore cannot take time into account. It treats all data points as equivalent, and therefore cannot tell the difference between someone who started strong but got worse for lack of practice, or someone who started weak but got better as time went on. Similarly, an ordinary logistic regression treats all its input data the same, and therefore does not model a change.
+
+However, you can imagine ways to change this, for example by putting higher weight on more recent samples, or even (... but watch out for weird results here ...) including time as a parameter in your logistic regression.
+- I see. Does that mean that regularization either L1 or L2 can be seen as a way of weighting recent samples more?
+- No. L1 or L2 regularization have no relationship with the data.
+- If you read my answer carefully, and understand it, in particular the third sentence, the answer to this question should appear to you.

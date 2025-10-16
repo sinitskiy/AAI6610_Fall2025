@@ -1,0 +1,39 @@
+URL: https://www.linkedin.com/posts/diogoalvesderesende_i-will-make-your-llm-hallucinate-results-activity-7292472376041103361-E81b
+Date: 2025-09-24
+Author: Unknown
+
+🔥 I will make your LLM hallucinate. Results guaranteed! 🔥
+
+Here’s a fun fact: Large Language Models love to invent answers when they get confused (we call that “hallucination”).
+
+Sometimes they boldly cite articles that don’t exist.
+
+Other times they spin tall tales about historical events that never happened.
+
+But why do LLMs fake answers in the first place?
+
+Because these fancy neural networks guess and predict the next word based on patterns they saw during training.
+
+If they get stuck or have a “memory gap,” they might confidently fill it in with made-up info.
+
+In other words, they hallucinate.
+
+Now, imagine you could prompt your LLM so it knows it should make stuff up—or, better yet, so it harnesses its pre-training “memories” in a more grounded, verifiable way.
+
+The paper “According to . . . : Prompting Language Models Improves Quoting from Pre-Training Data” shows we can push LLMs to either spit out real quotes or conjure more illusions, just by tweaking the prompt.
+Link to paper: https://lnkd.in/dhUtg4i2
+
+Sound wild?
+
+It is.
+
+And it’s awesome.
+
+Today, I’m releasing a fresh new section in my 6 Days of Prompt Engineering, Generative AI and Data Science course on Udemy: Reasoning and Hallucinations for LLMs.
+
+You’ll see:
+1) How to command your model to reference real documents (“According to Wikipedia…”).
+2) How to coax it into hallucinations to test reliability.
+3) Techniques to control and measure its factual grounding.
+
+So if you want your LLM to hallucinate on demand—or if you want it to stop—this new course section is for you.

@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1785em4/company_building_an_llm_app_need_some/
+Title: Company building an LLM App. Need some understanding if my opinions are reasonable.
+
+Content:
+I'm your generic mid-career data scientist who sometimes functions as an ML engineer. I've been tasked with advising a team building an LLM application to automate 'data analysis' for non-technical customers. My role is to bring some wisdom and system design expertise to the team. The team is compromised of two people: a young, eager software engineer who calls themselves a "Langchain Developer" and a senior technical director who believes in the macro trends around Generative AI and wants to learn more about applying the techonology.
+
+The idea is a customer types a vague question in to a field  *e.g.* "Is my business meeting my customer retention goals" and the output would be a visualization of some descriptive metrics and an interpretation of the data.
+
+The design presented to me by the Langchain developer sounds overly complex and a bit unhinged to me. I'm looking for an external opinion to make sure my opinions are well grounded or make sense.
+
+1. This project is my first time using LangChain. From reading through the LangChain code,  and building some basic examples, the library feels over abstracted.  You have to navigate a tangled mess of private variables to even find the prompt the tool is using. I am *really* concerned about putting Langchain code in production since it seems difficult to debug and modify. Why can't we use a DAG or state machine instead?
+2. The langchain developer doesn't present any systematic way to deal with hallucination. Generally, the strategy verbalized is too play "wack a mole" every time they see or measure a hallucination. If hallucinations are rare, then sure, and I'd be a bit more comfortable with this approach. But I've see no evidence that's the case.
+3. The scalable ways to measure hallucination often use an LLM to judge it's own output. Generally, I try to avoid feedback loops between models. Is that too strong of an opinion to have when working with LLMs?
+
+Appreciate the responses!
+
+Comments:
+- Langchain is great if you're exploring LLMs for the first time, but *at best* totally unnecessary for anything that could see production.
+
+It's a mile wide and an inch deep - maybe 3 inches, but as you recognised 2 of the 3 are useless abstractions. For any given use case, you can replicate Langchain's functionality from scratch, with more reliability, in < 100 lines of code. You're much better off writing something fit for purpose instead of shoe-horning in Langchain.
+- Be careful using langchain.
+I have some similar use cases, and last week, langchain has presented irregular results after a month of impeccable tests in development. 
+We're currently replacing it with a bunch of agents to interpret the queries in each use case. I don't like the "black box" approach. I want to have full control and know exactly what is being sent to the LLM.
+- 1. Langchain is somewhere between painful to bad for prod
+
+2. 80:20 heuristic would be rag gets you 80% of the way there, the rest you need to encode knowledge into the model which is more involved and probably cant rely on 3rd party api (openais fine-tuning api probably wont cut it)
+Either way can never eliminate 100% of hallucinations but thats the best you can do
+
+3. Self reflection is a thing
+- Langchain is the worst. I’m totally regretting using it in one of apps and currently in the painful process of stripping out everything related to it and replacing with just native python code
+- You are talking about gpt4 level stuff, like uploading your documents and asking questions about it. Trust me once it works they will ask why it’s not getting the answers right 100%
+- Best way probably would be to use function calls/api calls using an llm, ie train the llm on your proprietary codebase, this is the best approach for your use case, if you want to reduce hallucinations
+- What LLM is he using? Do they have a prototype? 
+
+I don't see why even get into LangChain without having a working prototype.
+- Yup, that's LangChain alright. I would argue for building your own production code as much as possible. 
+
+Measuring, flagging, and correcting hallucinations are tough problems to deal with, and I agree with you that using an(other) LLM to judge the output feels way too circular. Someone on my team wants do to this and I will only give my support if they can provide strong evidence that it works for our use case and models, not just quoting a paper and generalizing those results. Of course, if you have somewhat specific data, you will have to create your own labels.
+- When they first released ChatGPT in OpenAI api I started building my own library to do all the calls and string parsing and prompting and deployed that to production with satisfying results 
+
+Last month I started looking into langchain just because of fomo and because most of the times I’m sure someone wrote something better than me. I’ve been doing a small project to try and learn langchain and meeeen it’s over abstracted and even the documentation seems like a lot when in reality it’s just a overly complicated string parsing black box library
+- I was also tasked to build a “generative ai chat bot”. I have incorporated looker SDK for the graph generation part but majority of the chat bot uses the Lang chain framework. It’s taking a while for me to get past first round of internal UAT. 
+
+I wonder if there are examples of generative ai chat bots that doesn’t rely on Lang chain at all? Interested to using them as reference
+- So are you talking about writing your llm from scratch for production or there are easier alternative?
+- What's Kunal python code?
+- Can you elaborate more on the "doesn't rely on lang chain at all" part? A few colleges and I actually built a LLM platform from the ground up - we built our own vector store, our own connectors and ingestion infra without lang chain. I'd love to hear about your use case and get some feedback on what we're building :)
+- Not the LLM, the framework for calling it. Langchain, not ChatGPT. And yes, writing a Langchain equivalent from scratch is probably the sensible thing to do right now.
+- Typo. Corrected
+- Got it! Thx!
+- Curious, what was your use case and what solution did you end up with? A few colleges and i actually faced the same issue with langchain as you. It's good (?) for prototyping, but you might as well write something new for production. 
+
+Full disclosure - said colleges and I actually ended up co-founding a company that tries to solve the issues with langchain, but would like to hear if our ideas resonate with the broader community.

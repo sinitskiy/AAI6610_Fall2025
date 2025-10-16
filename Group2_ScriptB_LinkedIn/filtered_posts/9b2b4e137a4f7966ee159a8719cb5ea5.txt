@@ -1,0 +1,45 @@
+URL: https://www.linkedin.com/posts/orest-yatskuliak-b765461b0_ai-machinelearning-probabilisticreasoning-activity-7254419660660457472-7xG8
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Orest Yatskuliak的动态
+Orest Yatskuliak
+
+Executive Partner | Security Intelligence | Human & AI Systems Research | Data Insights | Advisor | Systems Generalist
+
+11 个月
+
+What Are the Odds? Language Models and Probabilistic Reasoning 📊
+Google’s latest research paper, "What Are the Odds? Language Models Are Capable of Probabilistic Reasoning," has been accepted at EMNLP 2024! 
+The study explores whether large language models (LLMs) can engage in probabilistic reasoning—whether they can understand a dataset as a whole, with its rules and parameters, and draw conclusions about individual cases based on this understanding. In simpler terms, can LLMs perform mathematical deduction?
+To test this, researchers challenged the models with three types of tasks:
+Standard probability calculations,
+Sampling,
+Percentile calculations.
+They also used different kinds of contexts: ideal distributions (e.g., normal or power-law), real-world distributions (like climate data), and approximated real-world distributions.
+The results? LLMs performed best in percentile calculations on ideal distributions, while sampling and real-world data presented more challenges. But the key takeaway is this: LLMs do have probabilistic reasoning capabilities—it's just a matter of unlocking and refining them. 🔍
+This research opens up exciting new opportunities for the future of AI in data-driven decision-making. 🚀
+#AI #MachineLearning #ProbabilisticReasoning #EMNLP2024 #LLM #AIResearch #GoogleAI
+
+10
+2 条评论
+赞
+评论
+分享
+Godwin Josh
+
+Co-Founder of Altrosyn and Director at CDTECH | Inventor | Manufacturer
+
+11 个月
+
+This research suggests LLMs could one day analyze complex real-world datasets like climate models with nuanced probabilistic understanding. Imagine LLMs predicting not just the probability of an event, but also its cascading effects across interconnected systems. Could we see LLMs used to forecast and mitigate global risks based on probabilistic simulations of future s

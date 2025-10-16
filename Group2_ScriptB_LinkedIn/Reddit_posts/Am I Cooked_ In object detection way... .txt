@@ -1,0 +1,44 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gvf8he/am_i_cooked_in_object_detection_way/
+Title: Am I Cooked? In object detection way... 
+
+Content:
+(brief introduction included :) )
+
+I am currently a masters student of DS and through my college days I had a lot of ups and downs, mostly about thinking if CS is the right option for me. Even though I am kind of passionate about coding and CS I still had a dilemma. Finally after a lot of thinking, I decided this is my thing. I dedicated myself on learning what studies had to give, but along the way another problem came up...
+
+Rapid expand of the "most notorious enemy of humanity": **AI...**
+
+Listening about and exploring "new" technologies made me rethink my CS career. Again.
+
+Eventually I concluded: "If I can't beat the enemy, I will join him", and that is where my DS specialization had started to take most of my free time (and academic time too).
+
+Since I actually "learned-to-know" some stuff in college and not only to pass exams I had a good foundation in mathematics, probability, statistics and machine learning which helped me a lot in start of my short (for now)  journey.
+
+I liked (won't say fell in love with haha) computer vision and decided to niche myself here. Learning neural nets and stuff was going great, first projects too (image classification and stuff). I loved creating models and testing their performance on datasets from real world, until I came to **object detection**.
+
+I started a project of detecting people wearing masks, and if they are wearing it properly or not. I gathered the dataset, preprocessed data and when I went for creating a model I felt like a fish on the land. "I don't know anything", I thought. I didn't know where to start. All the others pretrained models appeared. I searched a bit on the internet and I only found people using them while creating OR apps, but that seemed to me like a cheating without purpose.
+
+**So I got a few questions for you more experienced folks over there.**
+
+Q1: Is using pretrained models considered cheating or is it just the way things are and creating my own model is only loss of time to create less efficient one?
+
+Q2: What is some path to follow in order to become good/excellent computer vision engineer?
+
+I am more than willing to hear any other insightful advice about CV.
+
+Thanks for reading it to the end. ;)
+
+Comments:
+- Yeah no one would expect you to reinvent yolo. Knowing how things work can unlock some possibilities though!
+- In practice now many people use existing models and focus on training to get their own weights. Only in specific applications would they make their own model. Just depends on if you end up doing more research or application
+- 1. Using a model someone else developed is absolutely NOT cheating! For an analogy, think of a delivery company - they’re not going to build their own trucks, that wood be crazy! Instead they’ll buy one from a dealership and customize it a little bit. Maybe they’ll take it to a shop that customizes trucks, or maybe they just do the work themselves. Note that this doesn’t imply they don’t need to know how trucks work in order to make those customizations. 
+
+2. I’m still figuring that out too lol. My job isn’t primarily CV or even data science, but I take on those projects as often as I can whenever I know there’s a high chance of success. People keep coming to me with more projects and I keep coming up with more ideas and improvements, so I guess I could say I’m a successful CV engineer in that way. I absolutely am not ready to do it full time though…
+
+I think a lot of people in this sub are in that same category where CV is just another tool they use at work but maybe calling themselves CV engineers is a stretch. Also I think most of us are not developing our own models from scratch, but many of us are assembling premade components of models, like taking a feature extraction backbone and adding OD heads onto it…that kind of blurs the line I guess but I still would not call it developing a model from scratch.
+- These models are so big and complex that you'd have to be a crazy genius with too much time on your hands to develop something super custom (IMO). I'm running a CV startup, and most of my time is spent labeling and training.
+
+To be a good CV engineer (and I do not admit to being a "good" one by any means) practice with opencv, play around with different open source models, observe the difference in the training times and accuracy between them. 
+
+Lots of cool projects you can do and present. There is still A LOT of unlabeled data and stuff to do in the computer vision world. Go on a walk in your neighborhood and take pictures of specific things you find interesting (cool rocks vs not cool rocks or something... Idk how useful/accurate that would be but might be fun) and just play around with it. Do data augmentation to synthetically enlarge your dataset

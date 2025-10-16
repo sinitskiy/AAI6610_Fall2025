@@ -1,0 +1,116 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1k804yc/thought_i_was_prepping_for_mlds_internships_turns/
+Title: Thought I was prepping for ML/DS internships... turns out I need full-stack, backend, cloud, AND dark magic to qualify
+
+Content:
+I'm currently doing my undergrad and have built up a decent foundation in machine learning and data science. I figured I was on track, until I actually started looking for internships.
+
+Now every ML/DS internship description looks like:  
+"Must know full-stack development, backend, frontend, cloud engineering, DevOps, machine learning, deep learning, computer vision, and also invent a new programming language while you're at it."
+
+Bro I just wanted to do some modeling, not rebuild Twitter from scratch..
+
+I know basic stuff like SDLC, Git, and cloud fundamentals, but I honestly have no clue about real frontend/backend development. Now I’m thinking I need to buckle down and properly learn SWE if I ever want to land an ML/DS internship.
+
+First, am I wrong for thinking this way? Is full-stack knowledge pretty much required now for ML/DS intern roles, or am I just applying to cracked job posts?  
+Second, if I do need to learn SWE properly, where should I start?
+
+I don't want to sit through super basic "hello world" courses (no offense to IBM/Meta Coursera certs, but I need something a little more serious). I heard the Amazon Junior Developer program on Coursera might be good? Anyone tried it?
+
+Not trying to waste time spinning in circles. Just wanna know how people here approached it if you were in a similar spot. Appreciate any advice.
+
+Comments:
+- I think they are trying to ward off candidates who think they will be of value to companies because they have built MNIST / Iris / Boston taxi / Titanic survivor etc. predictive models in notebooks but have zero idea how to deploy those models to the real world. Simply knowing "data science" but having no idea how to deploy it to use has been a major problem for DS grads in the past 10 years.
+
+My advice: Identify a few of the most mentioned skillsets across job postings and do a few portfolio projects that utilize those in some way, and be able to talk about them in interviews. If you are hit with a question around a stack you don't know, be ready to talk about how you would learn it, drawing on examples of previous stacks you have learned.
+- Most MLE roles don't really involve modeling. If you want to do modeling you need significant experience or a graduate degree at least. I can't speak for DS roles, but for MLE you should have an understanding of backend, cloud, and data engineering. You will be building and deploying production systems so you need these skills.
+
+Full stack isn't really necessary unless it's like "good at backend and passing knowledge of frontend/can do it in a pinch". I've gotten away with avoiding significant frontend work so far in my career but I can understand a code base and do minor fixes if needed.
+- They probably have no idea who they want either
+- 1. You are applying to places that are not the right fit for entry-level talent. Focus on larger companies with more established data science teams where you can learn from experienced people. Most of these places have structured requirements for recruitment. Eg., most of these places (like Meta), only require you to know basic ml, Leetcode and some ml design. You don’t need developer certifications to get an entry-level job. Don’t waste your time on those
+
+2. Don’t boil the ocean by trying to learn everything because you will not be great at anything. Focus on your strengths and use that to get hired. E.g., People with Econ backgrounds focus on causal inference DS roles because it places them in the top 10% of applicants. Same applies to folks with econometrics (time-series roles), statistics (credit risk roles) etc. You have no business applying to (or looking at) deep learning jobs if you dont know deep learning
+
+3. Doing a side project helps, but 1 good project is better than 5 mediocre projects. A good project is a project where you source the data through difficult means, cleaned the data, build the model, deploy it through a service, publish the end-to-end code to reproduce your work on GitHub and provide a short summary (via blog or readme) of your work in STAR format. If you complete this, you have a top 10 percentile project
+- These job descriptions are lies, and I have no idea why HR insists on this.
+
+I have gotten into fights (which is rare for me, I promise) at two different companies when I found out that JDs I had helped write had been thrown the garbage bin by HR, who replaced them with what I can only imagine was an attempt to not actually hired the promised headcount. I learned after the first one to ALWAYS check what actually gets posted.
+
+>Now I’m thinking I need to buckle down and properly learn SWE if I ever want to land an ML/DS internship.
+
+None of my DS interns or fresh grads could engineer properly. Hell my fresh SWEs cant engineer properly. I suggest you learn Python, and I suggest you learn it well. Look at some good open source projects to get a sense of what "good" python looks like. If you really want, you can pick up a compiled language, Rust is my personal favorite but C and C++ are good too. I think this is less critical, it's just nice. Also I personally like them better but I also became an MLE then I became an SWE from a data science start.
+
+> Second, if I do need to learn SWE properly, where should I start?
+
+There are two titles I can recommend for someone who has never programmed before, **C programming book by Brian Kernighan and Dennis Ritchie** if you want to learn C, or **The Rust Programming Language** if you want to go Rust. Unfortunately I don't have a great C++ rec, maybe someone else does, I learned from a book targeted at people who already knew how to program. The C book is easier, fwiw. The Rust book expects you to know the very basics, but it sounds like you might.
+
+> Is full-stack knowledge pretty much required now for ML/DS intern roles
+
+Full stack is not required for staff level data scientist roles. Front end is an irrelevant skill to a data scientist, frankly, unless you specifically want to specialize in visualization, which it doesn't sound like you want to do.
+
+> First, am I wrong for thinking this way?
+
+Yes but it's not your fault. Trust me there is no one who has real theoretical bonefides AND can do proper SWE that is going to apply to an internship. If you really can do both, you're already past recent graduate level. In fact many places will hire PhDs straight into Senior roles if there is any real unpaid experience or pre-graduate school experience. Though that was more common during ZIRP
+- Is it me? Or jobs are asking for less of a data scientist and more of a app programmer or a more general programmer?
+
+To me a data scientist programmes either on python or R, performs analysis, creates plots and applies mathematical models on the data to extract meaningful insights or generate predictions.
+- You should look more broadly. Any "ML" is going to require masters level or maybe computer science undergrad from Stanford doing RA work at a professor's lab.
+
+I would target data analytics, consulting type places (big 4), technical product manager, data engineering, data science, etc. Even look at smaller companies doing cool work and see what they have (e.g. Notion has an internship for market research).
+
+>Now I’m thinking I need to buckle down and properly learn SWE i
+
+If you are still in school I'd say yes. You'll be able to apply for jobs more broadly if you do. Also, writing better code in general is a good skill.
+- It's what happens when a field becomes more concerned with tools than solving business problems. I can guarantee you knowing how to design a proper A/B test is more valuable than learning a bunch of full-stack development concepts. Data science should be far closer to statistics than computer science, but because so many computer scientists have gotten into machine learning, the culture has consistently shifted more in that direction: an obsession with complex predictive models at the expense of simple and interpretable models with quantification of uncertainty. 
+
+My advice would be to apply for roles with less fancy titles, e.g. Data Analyst Intern, Marketing Analyst Intern. You need a good grounding in the basics of working with data.
+- sink jar fear rustic future snails bow divide pet file
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- [deleted]
+- See you have to understand what work goes into ML/DS roles.
+
+1. Model building —> this is what a DS usually does. this involves 
+
+1a. getting the data,
+1b. EDA, identifying if the data is right, any biases etc data cleaning, any pitfalls or any negative consequences on the model.
+1c. Feature building (also called Feature engineering), 
+1d. model training, 
+1e. model scoring and validation 
+1f. Model monitoring
+
+2. Putting the models into production —> this involves making pipelines to be able to fetch the data, run the model and then share the output to the relevant app/ utility and continuous monitoring.
+
+The production grade codes are always written by DS for implementation. This usually requires you to be good at python modelling or the language being used.
+
+Other stuff such as building utilities for production such as feature store, code scheduling utility, UAT environments, utilities to share the outputs (many times APIs are sent) are done by DE. This often requires knowledge of Backend and devops and a bit of frontend if you have to build the dashboards as well.
+
+Usually DS & DE report to the same vertical head.
+
+Hence people often put all requirement’s in one single JD.
+
+Typically in smaller organisations the boundaries are often blurred.
+
+So if you are interested in coding, you should get some idea about backend and frontend as well.
+
+It will serve you well. I can definitely assure you is that amongst all the above least time is taken by model training and validation.
+- I’m also a student and was shocked when I saw how many “ML internships” basically expect you to be a full-stack engineer too. I think having some backend/cloud basics definitely helps, but I’m trying not to panic，still believe solid ML skills should matter if you apply to the right places.
+- Well, since AI makes you stronger, you can handle more or so they think. Learn
+- Most companies have no clue what a data scientist does! so they would put keywords mostly to appear like a company that do data science seriously.   
+Data Science is a field and none of us master all aspect, some are more technical some more business focus! 
+
+My advice just apply! be mindful of autoCV readers by putting some of the keyword in it and show your value in interview. dont try to shine with your tech knowledge a real mentor won't care, you can learn them on the job. Focus rather on your problem solving skills and propose relevant plan. 
+
+Listen carefully to what problem they currently have and show how you can contribute! If they discuss issue with making decision talk analytics, AB testing etc. if they are trying to develop a product based on where they are talk about ML algorithm or MLOPS etc. Do not hesitate to say you dont know much about it but you can learn. when recruiting (especially interns) I always prefer the one who can identify what is needed and are ready to learn it rather than someone who "knows" everything yet hasn't explain how he will use his "knowledge" to solve the problem at hand.
+- Try to balance both skill sets, my friend. Beacuse tech companies expect employees to have strong SWE skills while placing importance on ML/DS knowledge.
+- They are looking for you to be able to define contracts with a lot of technical stakeholders, define their work and your work, monitor your model post deployment… this pretty much is described by hr in the fashion you are seeing
+- Just sharing some insight from the other side of this scenario:
+
+I'm actually going through the process of interviewing ML interns right now and our job post reads pretty intense. Reading a lot of comments about how 'hiring managers don't know what they want (they're idiots eyc.)' But the thing is we know exactly what we want and are spelling it out in the description. In our case, we want a PhD student with applied experience with EHR data and using LLMs
+ Preferably with a strong list of publications.
+
+We got 1000+ applicants, the recruiter screens down to about 30, and I'll probably only get a chance to talk to 3 of them. You'd be amazed at how many people applied with absolutely zero boxes checked.
+- Typically each companies version of MLE differs. Few asks these mentioned by you, few w.r.t to ops and sw engineering and mostly deployments and ds kinda stuff. But the market is crazy so I would assume they will get everything from one person.
+- Bro are you me? Like actually are you me? I'm in the exact same position not realising that the job market actually requires. Not scrambling my head to figure out learning frontend backend fastapi containerisation deployment cloud inference etc.. I think it would be really awesome if we can work/study together, since we're in similar situations
+- You are not wrong a lot of internshps expect too much now. For ML/DS roles you mainly need strong Python, ML skills, and basic backend/cloud knowledge (APIs, SQL , AWS basics).Learning full-stack is not a must, just knowing how to handle data and simple backend is enough.  
+Building small projects would help more than taking long courses.

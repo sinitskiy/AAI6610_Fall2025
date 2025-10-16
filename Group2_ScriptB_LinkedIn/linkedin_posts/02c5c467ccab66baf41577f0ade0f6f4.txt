@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/tuvelofstrom_github-moffrancalibratedexplanations-activity-7252773393672916993-faPW
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Tuwe Löfström-Cavallin的动态
+Tuwe Löfström-Cavallin
+
+Assistant Professor in Computer Science at Jönköping University and Senior Software Engineer at Saab Training and Simulation
+
+11 个月
+
+I am pleased to share that our (Helena Löfström, Ulf Johansson, Cecilia Sönströd, and Rudy Matela) paper, Calibrated Explanations for Regression, has been accepted for publication in the Machine Learning Journal as part of the special issue on Conformal Prediction and Distribution-Free Uncertainty Quantification. A link to the preprint is given in the comments. 
+
+This work introduces both a solution for regression in general but more specifically a novel approach for generating probabilistic predictions and explanations regarding the likelihood of a target being below any user-specified threshold. The distinguishing aspect of our contribution lies in providing epistemic uncertainty not only for predictions but also for feature weight explanations, enabling a deeper understanding of model behavior. 
+
+Key features of the proposed method include: 
+* Dual Uncertainty Quantification: Calibrates both aleatoric and epistemic uncertainties, providing insights into data-related noise and the model’s confidence across familiar and unfamiliar scenarios. 
+* Versatile Explanations for Predictions and Features: Supports a range of tasks, from classification to regression, with uncertainty-aware probabilistic and alternative explanations that adjust based on data complexity. 
+* Reliable and Interpretable Outputs: Ensures well-calibrated predictions and robust feature importance explanations, incorporating theoretical methods from conformal and Venn prediction for enhanced interpretability and trustworthiness. 
+
+The implementation details and additional features can be found in the project’s README: https://lnkd.in/dKi67pJg 
+
+We extend our gratitude to the editors of the special issue and to all who contributed to this work. 
+
+#ExplainableAI #XAI #MachineLear

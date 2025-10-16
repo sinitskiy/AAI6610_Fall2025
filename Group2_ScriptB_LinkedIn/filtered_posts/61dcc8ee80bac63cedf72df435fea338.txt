@@ -1,0 +1,70 @@
+URL: https://www.linkedin.com/posts/bertjanbroeksema_datascience-uncertainty-decisionmaking-activity-7247514373227737089-i_lI
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Bertjan Broeksema的动态
+Bertjan Broeksema
+
+Technical Leadership | Craftsman | Problem solver
+
+1 年
+
+Data-driven decision-making is not new, although the market might have felt that way in the past 10 years. Prediction uncertainty is neither a new concept, though new techniques rise at a similar pace as new modeling techniques arise. My colleague Robbert van Kortenhof did a great writeup on different kinds of uncertainty and how to deal with them in conformal predictions.
+
+#datascience #uncertainty #decisionmaking
+
+Robbert van Kortenhof
+
+Machine Learning Engineer at BigData Republic
+
+1 年
+
+In data science, uncertainty is not a limitation—it’s a path to more reliable and fair predictions. In my latest blog post for BigData Republic, I dive into how conformal prediction helps quantify this uncertainty to improve decision-making. Find the link in the comments. 
+
+In the blog, we will cover:
+🧠 Epistemic vs. Aleatoric Uncertainty, the distinction between knowledge gaps and inherent randomness, and why both are key for robust models
+
+📊 Better decision making, how incorporating uncertainty leads to more fair and transparent outcomes in applications such as credit scoring and  investment
+
+📐 Conformal Prediction, a model-agnostic framework that generates statistically valid prediction intervals or sets of classes
+
+🐍 Going through a step-by-step example of conformal prediction in Python using libraries like crepes
+
+#DataScience #AI #ConformalPrediction #UncertaintyQuantification
+
+4
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,775 位关注者
+
+348 则动态
+ 6 篇文章
+查看档案  关注
+更多文章
+Reflecting on the Dutch Data Summit
+Bertjan Broeksema  3 年
+The five principles of effectuation
+Bertjan Broeksema  4 年
+To be capable or to mature
+Bertjan Broeksema  4 年
+探索相关领域
+The Future of Data-Driven Decision Making
+How Data Modeling Influences Decision Making
+How Data-Driven Decisions can Mislead
+How to Make Data-Driven Design Decisions
+Questions to Ask for Data-Driven Decisions
+The Importance of 

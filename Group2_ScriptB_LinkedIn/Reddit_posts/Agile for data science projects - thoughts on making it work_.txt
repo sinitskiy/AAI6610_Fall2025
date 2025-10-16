@@ -1,0 +1,43 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/8t310n/agile_for_data_science_projects_thoughts_on/
+Title: Agile for data science projects - thoughts on making it work?
+
+Content:
+Working in tech at an e-commerce site. My team is tasked with ranking search results and recommendations module results. 
+
+All of our partner teams (frontend, infrastructure, syseng.) are using agile/scrum. Our manager is looking for us to adopt this style of working as well.
+
+How do you all make this work with such high level of uncertainty in what the output of a project will be? (Ie: researching the latest on positional bias and proposenity scores with uncertainty about what the final model will be) 
+
+Comments:
+- The good thing about agile is that it forces to you time / effort box tasks. Yes the outcome is uncertain, but you can still break it down into smaller tasks and adjust on the next planning (since a Data Scientist could work 3 years on a model). There may be follow ups and deep dives that arise from the tasks in current spring that can either continue in the next one, or be left in backlog to pick up in the future. Another important point about uncertainty is that you probably should have 2 kinds of Epics - research and implementation. Research ones should answer whether something is even feasible, implementation is for small clear improvements or taking research and making a component out of it.
+- There is a book on that topic which I found enlightening:  http://shop.oreilly.com/product/0636920051619.do
+- # [Data Science Podcast] Data Futurology | Ep. #8 - Agile Data Science by Felipe Flores
+
+SFW
+
+[**Apple Podcasts**](https://itunes.apple.com/us/podcast/data-futurology/id1385051346?mt=2) **//** [**Google Podcasts**](https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8zZmFiMDYwL3BvZGNhc3QvcnNz) **//** [**Android**](https://subscribeonandroid.com/anchor.fm/s/3fab060/podcast/rss) **//** [**Anchor**](https://anchor.fm/datafuturology) **//** [**Breaker**](https://www.breaker.audio/data-futurology) **//** [**Castbox**](https://castbox.fm/channel/id1287121) **//** [**Overcast**](https://overcast.fm/itunes1385051346/data-futurology) **//** [**Pocket Casts**](https://pca.st/lloi) **//**[**PodBean**](https://www.podbean.com/podcast-detail/zifvj-6c219/Data-Futurology-Podcast) **//** [**RadioPublic**](https://play.radiopublic.com/data-futurology-WDRrnA) **//** [**RSS Link**](https://anchor.fm/s/3fab060/podcast/rss)
+
+This is a different type episode! This is a recording of a presentation I did to about 300 data scientists in Melbourne, Australia. The theme of the night was Agile Data Science, a passion of mine. In this episode I cover:
+
+\- the productivity gains an individual and a team can gain using agile methods
+
+\- how agile is imperfect but very helpful
+
+\- how I've tweaked agile to fit data science and deliver value with my teams
+
+\- bust some of the main myths around agile, and much, much more!
+
+The show notes and presentation slides are in [**www.datafuturology.com/podcast/8**](https://www.datafuturology.com/podcast/8)
+
+As always, we appreciate your **Reviews**, **Follows**, **Likes** and **Ratings**. It really helps new data scientists find us.
+
+Thank you so much, and enjoy the show!
+
+[**LinkedIn**](https://www.linkedin.com/in/felipefloresanalytics/) **//** [**Twitter**](https://twitter.com/datafuturology) **//** [**Facebook**](https://www.facebook.com/datafuturology/) **//** [**Instagram**](https://www.instagram.com/datafuturology/?hl=en) **//** [**Official Site**](https://www.datafuturology.com/)
+- I’ll second all of this. One thing we do when dealing with uncertain tasks is that we focus on the task itself and not the outcome. For example we might look to train X different models and evaluate performance rather than tie ourselves to hitting a particular performance goal (that may or may not even be possible given the data/task at hand).
+- > 2 kinds of Epics - research and implementation. Research ones should answer whether something is even feasible
+
+When would you suggest deeming research feasible? Currently, we use offline evaluations to do so.
+- That's completely OK, research may be checking whether we could come up with a good enough model for facebook comments sentiment analysis (which might be a few jupyter notebooks trying out different approaches / libraries as well as pulling a data sample in via FB API). The implementation Epic would be creating jobs to store the comments periodically to a database (might be done by an engineer), implementing a retraining pipeline and a scoring API.
+- great example, thank you!

@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/13mykun/suggestions_for_protein_structure_prediction/
+Title: Suggestions for protein structure prediction using machine learning research
+
+Content:
+Hi!
+
+I have been thinking of doing some research on protein structure prediction using ML for a long time. I got the gist of how it's done (though I don't know much of the details.) I was wondering what type of project can be done on a personal computer and basic knowledge of ML. I could predict some structures using say Alphafold but I wanted to do something  a bit more advanced.
+
+I am not from biology/chemistry/biochemistry but know the basics of proteins.
+
+Comments:
+- Well Alphafold is about as advanced as it gets...
+- Maybe you can do something with the predicted structures? Like some molecular dynamics, small molecule docking, stucture analysis through alignment, analyzing the effects of mutations, etc...
+
+Or if you want to do something on the ML side, well... that's a tougher one, since you can't really download the weights of AF2, as far as I know. Maybe you could deep dive into the concepts of the EvoFormer model, build some small models on your own and then train them, but this sounds cumbersome.. and honestly, really hard, since it requires a lot of ML domain knowledge.
+- Rossetta and protein mpnn .
+- technically there's Alphafold2 ;) but yeah...not sure what OP is after here

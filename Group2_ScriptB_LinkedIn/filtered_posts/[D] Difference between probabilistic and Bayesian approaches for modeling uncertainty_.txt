@@ -1,0 +1,33 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/hdvvza/d_difference_between_probabilistic_and_bayesian/
+Title: [D] Difference between probabilistic and Bayesian approaches for modeling uncertainty?
+
+Content:
+I notice there are approaches (such as HPU U-Net  [https://arxiv.org/pdf/1905.13077.pdf](https://arxiv.org/pdf/1905.13077.pdf) ) which use the generated samples to imply uncertainty and there are Bayesian models (such as Bayesian segNet  [https://arxiv.org/pdf/1511.02680.pdf](https://arxiv.org/pdf/1511.02680.pdf) ) for directly modeling epistemic/aleatoric uncertainty.
+
+Slightly confused but are the 2 approaches essentially modeling the same uncertainty? How can we differentiate between the 2? As far as I understand, the probabilistic generative approach cannot directly represent model uncertainty but basically implies it based on the generated samples - is that a correct interpretation? Thanks
+
+Comments:
+- Let's take a step back. These are two classes of models. The first is a latent variable model (LVM), which includes VAEs, Kalman filters, Gaussian mixture models, etc. These are Bayesian in the latent states but have deterministic model parameters. These are generative models / joint distributions.
+
+The second class I would call Bayesian models (e.g. Gaussian processes, Bayesian neural networks). They are typical conditional distributions (for regression and classification) but are Bayesian in their parameters so you have epistemic and aleatoric uncertainty.
+
+Both are probabilistic graphical models, but the first is p(y,x) and the second is p(y|x).
+It doesn't stop there though. You can have Bayesian generative models (like Beal's Variational Kalman smoother, or Gaussian process latent variable models) but performing inference for these models is much harder so they're less common.
+- Thank you for your comment! For the first category, do you refer to them as latent variable models because of the encoder/decoder architecture? Or due to the latent variables representing a prior probability distribution?
+
+Also, quick, but maybe dumb, clarifying question: I notice that you said the latent states in the latent variable models are Bayesian - which you also use to categorize the second group of models. Is the part that makes them "bayesian" the fact that they represent probability distributions as opposed to scalar values? For instance, I know that in this paper ( [https://arxiv.org/pdf/1703.04977.pdf](https://arxiv.org/pdf/1703.04977.pdf) ) the author seems to say it's Bayesian because they are finding the distribution of the weights conditioned on the data.
+
+Lastly, thanks for your last paragraph. So that's essentially saying the outputs from the 2 models can't be compared? So, if we were to take the variance V of multiple forward passes from the latent variable model - and thus getting multiple possible interpretations of the output - that would NOT be equivalent to both aleatoric and epistemic uncertainty right? It's definitely not epistemic since there's no distribution over the weights, and it shouldn't be aleatoric since that variance V would represent the ambiguities in the input-label pairs as opposed to just the inputs? Sorry for the multiple questions
+- How is the Kalman filter p(y,x)? Isn't it estimating the posterior distribution?
+- A latent variable model is just a class of probabilistic graphical model, where there are random variables you can't observe directly. You can view autoencoders as LVMs (PCA, VAEs, etc) but there are many others. As they are random variables they have prior and posterior distributions. 
+
+'Bayesian' is a subjective term but I use it to for using probability to describe uncertainty. For example in PCA you model the PCs as deterministic quantities, but in probabilistic PCA you view it as a linear Gaussian LVM, and so have a Gaussian distribution for the PCs. Similarly for regression and classification you have uncertainty over your model's parameters. This is also Bayesian.
+However, just using Bayes rule or having a probabilistic model does not automatically make you Bayesian.
+
+
+I'm not sure I understand your last question. Basically for an LVM you have p(y,x) = p(y|x)p(x), where x is unobserved. For regression you have p(y|x) where x is observed. You can have Bayesian models for LVMs (see variational EM, etc) but it's hard to do and not always so useful since you don't know x to start with.
+If in you question you are talking tasking about VAEs, if the model (network) has fixed parameters there is no epistemic uncertainty. Sampling x just gives you samples of y so you can estimate p(y). All the uncertainty here is statistical (aleatoric).
+- Kalman filter was perhaps imprecise, I was referring to inference of a linear Gaussian dynamical systems, where the KF is the forward pass of the latent variables (and smoothing is the backward pass + posterior). See [here](https://pdfs.semanticscholar.org/2e31/70f91e1d8037f8ba03286fa5ddd347a0b88e.pdf) for more detail.
+- Thank you very much! Sorry, just a couple questions regarding your last paragraph if you don't mind: "Basically for a LVM you have p(y,x) = p(y|x)p(x), where x is unobserved" - is x representing the input data here? Or the weights? I'm kind of confused on how x is unobserved, since wouldn't we be aware of the state of the input data and weights?
+- x is the latent variable of the latent variable model (LVM). I would recommend reading one of the ML texts (Bishop, Murphy, Barber, etc) to learn more about these models.

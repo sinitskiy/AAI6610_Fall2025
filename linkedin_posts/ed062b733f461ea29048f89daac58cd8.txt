@@ -1,0 +1,33 @@
+URL: https://www.linkedin.com/posts/stefanharrer_llm-hallucinations-openai-2025-activity-7371728152118763520-mXUM
+Date: 2025-09-24
+Author: Unknown
+
+Interesting paper alert, by OpenAI - the topic: large language model 
+话题标签
+#hallucinations. Or in other words: why do 
+话题标签
+#LLMs make stuff up that is incorrect and what can you do to counteract that? 
+
+If you think: old news I've heard every answer to that question already, then think again.
+
+Since the advent of 
+话题标签
+#genAI the immediate standard answer to this question is: LLMs are learning probability distributions for certain words/phrases being followed by other words/phrases using all sorts of training data, high-quality correct as much as garbage false. Then, when prompted, LLMs use what they've learned from the training data to predict the most likely next word/sentence/phrase following that prompt. That fancy autocomplete process can lead the LLM to produce incorrect predictions. The LLM hallucinates. Obviously a way to reduce - never eliminate, because LLMs are probabilistic models - hallucinations is to weed out bad training data as much as possible. So far so good. 
+
+This paper shines a new light onto another way to reduce LLM hallucinations: change the way you evaluate the performance of LLMs. Currently many valuation metrics reward a model for giving correct answers but do not punish it for giving wrong answers. Remember that multiple-choice test you took where you didn't know the correct answer but checked one of those three boxes anyways? Because you knew: your chances of answering the question correctly and getting 1 point added to your final score was 33% if you took a chance and guessed. And they were 0% if you admitted that you didn't know the answer and skipped the question. So nothing to lose by guessing without knowing - only a 33% chance to win. That is how most LLM evaluation metrics are working. And that is one reason that makes them hallucinate. As a matter of fact: OpenAI researchers observed that many models hallucinated *less* before they were optimised using accuracy benchmarks and validations. 
+
+The takeaway: Apply more balanced eval metrics that not only reward LLMs for giving correct answers but also penalise LLMs for giving incorrect ones. Everyone who had a brush with statistics will immediately relate this to the good old confusion matrix... 
+
+Surprisingly intuitive. Quite obvious in retrospect. But I haven't thought about this so clearly before reading this paper. 
+
+Creating benchmarking and evaluation metrics and frameworks for LLMs is a frontier research theme in genAI. Reducing hallucinations is another one. This paper does a terrific job in connecting the two. Watch that space.
+
+
+话题标签
+#genAI 
+话题标签
+#hallucinations 
+话题标签
+#LLM 
+话题标签
+#LLMvalidation

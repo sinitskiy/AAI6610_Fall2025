@@ -1,0 +1,72 @@
+URL: https://www.linkedin.com/posts/vizuara_scientific-ml-for-everyone-most-people-do-activity-7338513166458359808-Qx5W
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vizuara的动态
+Vizuara
+
+21,912 位关注者
+
+3 个月
+
+Scientific ML for Everyone
+
+Most people do this when trying to learn machine learning:
+
+Step 1 - Watch a few tutorials
+Step 2 - Build a Titanic survivor predictor
+Step 3 - Add “ML Expert” to their LinkedIn bio
+
+Here’s the uncomfortable truth:
+Toy Kaggle projects will not take you far. Especially if you're an engineer, scientist, or economist trying to apply ML to your actual field.
+
+How does MNIST digit recognition help a mechanical engineer working on heat transfer?
+How does movie recommendation connect to a structural engineer designing buildings?
+
+It doesn’t.
+
+The gap is clear - there are ML experts and there are domain experts.
+But very few people live at the intersection.
+
+That’s where Scientific Machine Learning (SciML) comes in.
+
+SciML is not about throwing data at black-box models.
+It’s about blending mathematical models with learning algorithms.
+It’s about making AI work in the real world of physics, finance, biology, climate, and more.
+
+Here’s what makes SciML powerful:
+
+👉 Uses your existing knowledge (ODEs, PDEs, control systems)
+
+👉 Leverages neural networks as universal function approximators
+
+👉 Keeps models interpretable, efficient, and domain-relevant
+
+You don’t need a CS degree to do this.
+I was a core mechanical engineer. I didn’t take any formal CS courses. And yet, I work on SciML every day.
+
+Why? Because ML is being democratized. And SciML is the proof.
+
+If you want to stop playing with toy problems and start working on impactful ML research rooted in your domain, this is your path.
+
+Let’s stop pretending Titanic prediction is enough.
+Let’s build ML that actually matters. 
+
+_____
+
+👉  If you are interested in SciML research, check out our SciML Bootcamp - designed for students, engineers, and researchers who want to publish serious, high-quality work:
+https://lnkd.in/dGw53AHY 
+
+👉 Share with others if you think this will be useful
+
+👉 Follow me for daily AI/ML updates 

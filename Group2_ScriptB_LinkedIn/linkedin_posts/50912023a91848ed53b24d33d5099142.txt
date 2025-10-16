@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/sandeep-sharma-00389755_math-maths-nlp-activity-7250495149217046529-ziMS
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sandeep Sharma的动态
+Sandeep Sharma
+
+Lead Data Scientist @ Sun Life
+
+12 个月
+
+LLMs and Generative AI: Where to Start
+
+Large Language Models (LLMs) like GPT are changing the way we interact with technology, whether it’s through chatbots, translation tools, or content creation. But behind these models is something fundamental: math. Without it, LLMs wouldn’t exist.
+
+
+Why Math is Important for Learning LLMs
+
+To truly understand how LLMs work, you need a strong foundation in #math. It’s the backbone of everything from data representation to model optimization. Think of #maths as the set of rules that keeps these models functioning smoothly.
+
+LLMs are based on #NLP, which combines linguistics (understanding language structure) and machine learning (neural networks and probabilistic models) to process and generate text. These processes rely heavily on math, which is why understanding mathematical concepts is crucial.
+
+Prerequisites for Learning LLMs
+
+- Linear #Algebra: Understanding #matrices and #vectors is key. LLMs represent words as vectors, and #LinearAlgebra helps them learn relationships between those words.
+
+- Calculus: Calculus, especially differentiation, is used for model training. When an #LLM adjusts its weights during learning, #calculus is in action.
+
+- Probability and #Statistics: LLMs predict words based on #probabilities. For e.g., when translating a sentence, the model uses #probability to choose the next word.
+
+- Optimization Techniques: Techniques like gradient descent help LLMs minimize errors. It’s how models get better with training.
+
+- Neural Networks: LLMs are built on #NeuralNetworks. Understanding how these layers work gives insight into how models learn and process language.
+
+- Transformers: #Transformers are what make #LargeLanguageModel so powerful. They use #AttentionMechanisms to focus on important parts of the input text, which improves the model’s output.
+
+- #VectorSpaces and Embeddings: #Embeddings

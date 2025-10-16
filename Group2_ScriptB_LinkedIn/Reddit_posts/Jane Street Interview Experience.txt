@@ -1,0 +1,36 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1h69y9e/jane_street_interview_experience/
+Title: Jane Street Interview Experience
+
+Content:
+I'm a senior Data Scientist/Machine Learning Engineer with 7 years of experience and a Kaggle Grandmaster. I just finished the first round of interviews at Jane Street. I think I did okay—I managed to come up with a somewhat decent solution, although I got stuck a few times.
+
+I don’t really understand the rationale behind asking LeetCode-style questions for MLE positions. The interviewer was nice, but when I asked about the responsibilities of MLEs at Jane Street, he had no idea. I’m not sure how to feel about this process, but it doesn’t make much sense to me.
+
+Comments:
+- [deleted]
+- [deleted]
+- Man I dread the day I have to practice/learn leetcode for a ML/DS Interview. Best of luck
+- Yeah this is standard, expect to get more leetcode questions if you stay in the HFT/big tech space. Most companies view ML engineering as a subset of software engineering, so MLE interviews are mostly SWE-based with a few ML-specific rounds thrown in.
+
+I agree with you that it doesn't make much sense, but these are the games we need to play if we want that big tech/HFT TC.
+- Because those who did technical interviews probably don't really care much about strategy, responsibilities, ... because it's boring for them. All is just coding.
+- wishing you luck!
+- I'd be curious if they give you any autonomy in your role? Also have you interviewed with other hedge funds? I've heard from friends that some of them can be really intense about work culture (like security checks, not allowing phones in the building, etc.)
+- What is your tech stack and experience?
+- can I get some advice from you on the best approach to advance on kaggle and improve as an ml engineer ? Achieving the grandmaster title is one of my most ambitious goals, so I would really appreciate your advice .I wish you the best of luck .
+- isn’t this the same place SBF went and later went on commit billions of dollars worth of Fraud?
+- Already making it at the interview stage with Jane Street is an achievement. Good luck!
+- Good Luck ! I think there is a similar website to LeetCode for DS/ML (stratascratch or something like this). What area of ML are you in ?
+- Since you are a Data Scientist with 7 years of experience, you can help me I guess.
+
+What should we do first? 
+Null imputation or data visualization?
+Null imputation or correlation check?
+- I’m surprised that LeetCode is used for MLE or data science roles. Not really applicable at all.
+- 1,1000
+- I think the thing is MLE positions in general typically include Leetcode as part of their process, which I just hate :/ you need to be a good DS, but you also need to be a good SWE
+- .
+- so did you make it?
+- Tough
+- Did you have any finance experience.

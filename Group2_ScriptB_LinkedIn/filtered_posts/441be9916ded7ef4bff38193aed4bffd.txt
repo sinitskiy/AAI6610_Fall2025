@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/siyavash-filom-40b991a6_a-learning-based-robust-optimization-framework-activity-7287131041012559872-yMWb
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Siyavash Filom的动态
+Siyavash Filom
+
+PhD | Data-driven Decision Making in Transportation and Supply Chain Management | Data Enthusiast | Machine Learning | Agentic AI
+
+8 个月  已编辑
+
+Excited to announce that our research, "A Learning-Based Robust Optimization Framework for Synchromodal Freight Transportation under Uncertainty," has been published in Transportation Research Part E: Logistics and Transportation Review.
+
+Our study addresses the critical challenges of uncertainty in synchromodal freight transportation by integrating machine learning with robust optimization to deliver more explainable and flexible solutions.
+
+Key findings:
+✅ Road travel time uncertainties significantly impact transshipment operations, storage, and delay costs, highlighting the need for data-driven decisions.
+✅ The upstream prediction module, leveraging a Bayesian Neural Network, improves operational performance in synchromodal networks.
+✅ Scenario-based adjustable uncertainty sets provide decision-makers with dynamic and flexible operational strategies.
+✅ Experiments with up to 700 shipment requests demonstrate the scalability and robustness of the proposed framework.
+✅ Carbon tax sensitivity analysis reveals its influence on modal share and transportation costs, offering actionable insights for policymakers.
+
+Contributions:
+✨ Introduced a novel integration of machine learning-based prediction with robust optimization for synchromodal freight transportation.
+✨ Developed a Bayesian Neural Network with Monte Carlo Dropout for uncertainty quantification in road travel times.
+✨ Proposed scenario-based adjustable uncertainty sets to bridge prediction and optimization seamlessly.
+✨ Designed a preprocessing heuristic for scalable path generation, reducing computational complexity.
+✨ Delivered actionable policy insights for enhancing sustainability and operational efficiency.
+
+A heartfelt thank you to Dr. Saiedeh Razavi for her steadfast guidance and support

@@ -1,0 +1,66 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17fzyy7/the_biometricblender_taming_hyperparameters_for/
+Title: The BiometricBlender – Taming hyperparameters for better feature screening
+
+Content:
+# Data Cleaning
+
+**Every motion pattern can be described as a group of time series.** For example, as you move a computer mouse, its position, i.e., its on-screen x and y coordinates, can be recorded regularly, say, 60 times every second. This gives us two 60 Hz series: one for the x and one for the y coordinate. Additional events, such as mouse clicks and wheel scrolls, can be recorded in separate channels.
+
+Depending on how long the recording lasts, **these series can be short or long**. However, there will be natural stops and breaks, for example when you let go of your mouse, so the entire length of the series can be chopped up into smaller, manageable samples.
+
+**Someone has to do all this** (sometimes considerable amounts of) **data cleaning because** no matter what capturing device and digitization tool you use, **there will always be some noise and distortion** in the recorded signals.
+
+Then we can compute various combinations of the time series, such as v(t), the velocity of the cursor as a function of time, from x(t) and y(t).
+
+[The velocity of the cursor as a function of time, from x\(t\) and y\(t\).](https://preview.redd.it/4nnnkw5r5bwb1.png?width=920&format=png&auto=webp&s=78846dfb76c39093110cde100cfbac1d41a62cc7)
+
+# Feature Extraction
+
+The next step is feature extraction, as we call it in the machine learning (ML) community.
+
+**The information** encoded in all the time series of various lengths **needs to be distilled into a fixed size, predefined set of scalar values, or features**. Some features can be described in easy-to-understand physical terms, such as “maximum speed along the x-axis”, “smallest time delay between two mouse clicks”, or “average number of stops per minute”. Others, such as specific statistical metrics, are more difficult to explain.
+
+Once we get rolling, we can systematically **generate tens of thousands of** such **features**, all **originating from** just a handful of **time series**. But contrary to the time series, **the feature set always consists of the same number of values for every input sample**.
+
+## Identifying the Samples and Finding the Right Feature Combinations
+
+Once we have computed every feature, we can identify the samples we want to train our models with, and fire up the engines. Whether our machine learning approach uses neural networks, clustering algorithms, decision trees, or regression models, they all work with **accurately labeled vectors of features**.
+
+But which features prove to be useful for our original classification problem? That heavily depends on the situation itself. Some, you can figure out on your own. For instance, if you want to separate adults from children under ten based on their handwriting, the average speed of the pen’s tip will probably be a perfect candidate. But more often than not, the only way to find the good features is to try them one by one and see how well they perform. And to make things more complicated, **a single feature is often not helpful in itself, but only in combination with another one** (or several others).
+
+Take a look at the following diagram, for example: assume that every point has two features, i.e., their x and y coordinates, and within the boundaries, every point is either blue or red. But neither the x nor the y coordinate in itself, i.e., no single vertical or horizontal line can be used to separate the blue and the red points. The two coordinates together, however, can do the job perfectly.
+
+[Points separated by a combination of their x and y coordinates](https://preview.redd.it/ebzq4imx5bwb1.png?width=722&format=png&auto=webp&s=0028c8eeedb28f7eac96e57ba79ed01a6e2df527)
+
+ **Finding the right feature combinations is an inherent** part of the chosen machine learning algorithm, but certain aspects can make this tricky.
+
+For example, when only relatively few features are helpful in a sea of useless features, or when the total number of features is significantly larger than the number of samples we have, the algorithms may struggle with finding the right ones.
+
+Sometimes, all the counts are okay, except that they are so large that the algorithm takes forever to finish or runs out of memory while trying. When that happens, we need some sort of screening to significantly reduce the number of features, but in such a way that preserves most of the information encoded in them. This usually involves a lot of machine learning trickery, building many simpler models in particular, and combining their results smartly. The number of hyperparameters that encode how to execute all this quickly grows beyond what is manageable by hand and gut feeling.
+
+And this is where we go meta. To find an optimal machine learning model on a screened feature set, first, **we need to have an optimal feature screener**, so we attempt to find this by methodically exploring its hyperparameter space, performing screening with lots of possible combinations, and **then finding the optimal machine learning model that achieves the highest possible classification accuracy** given that particular screened feature set.
+
+All this is not only computationally intensive and time-consuming but **also needs a significant amount of sample data**.
+
+# Developing a Feature Value Generating Tool
+
+For reasons beyond the scope of this blog post, **it is best not to use the same samples for feature screening and the classifier machine learning models**. So we at Cursor Insight thought it would be great if we had **a tool to artificially generate feature values for us**, as many as we need, in a way that they resemble true feature sets closely enough to make our algorithms work on the former, just like they work on the latter. That way, we could refine our methods and drastically reduce the number of exciting hyperparameters using artificial data only, and then the iterations on the actual samples could be much quicker, simpler, and, not the least, more robust.
+
+# The Result: BiometricBlender
+
+And thus, \`BiometricBlender\` was born. We have created **a python library under that name** to do what we have described and craved and released it **as an open-source utility on our** [**GitHub**](https://github.com/cursorinsight/biometricblender).
+
+**We have also written a paper on the subject** in cooperation with the [**Wigner Research Centre**](https://wigner.hu/en), about to be published in Elsevier’s open-access [**SoftwareX**](https://www.elsevier.com/journals/softwarex/2352-7110/open-access-journal) journal and there is another one published [**on arXiw**](https://arxiv.org/abs/2206.10747).
+
+So in case you are interested in the more technical details, you can read about them over there.
+
+And if you ever need an ample feature space that looks a lot like real-life biometric data, do not hesitate to give our library a spin!
+
+[r/IAMA](https://www.reddit.com/r/IAMA/) **- Oct 26** with the founders of Cursor Insight.
+
+[https://bit.ly/AMAwithCursorInsight-GoogleCalendar](https://bit.ly/AMAwithCursorInsight-GoogleCalendar)
+
+https://preview.redd.it/jcxfyb656bwb1.png?width=1600&format=png&auto=webp&s=6f9b107686928e17833a044e9303f32392095f22
+
+Comments:

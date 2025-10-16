@@ -1,0 +1,59 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1hsy9fy/object_detection_for_cracks_in_facades/
+Title: Object detection for cracks in facades
+
+Content:
+My companies looking to use image detection to locate defects, namely cracks, in brick and masonry facades. While some images may be close to the defect, others would be general images, that may have multiple cracks in a single frame. (Edit: we would need the location of the cracks within an image, but I was thinking simply bounding boxes around them would suffice). I'm curious about the feasibility of this, and what avenues to explore for the model and datasets.
+
+Edit: I'm not allowed to post actual images from projects, but I found this image online which is similar to the sort of images we would like to use:
+
+https://preview.redd.it/nvdcfotnf1be1.jpg?width=225&format=pjpg&auto=webp&s=83162e400a036bdf03c4f444cac577d701086b04
+
+  
+
+
+While we have some coding experience, we are not programmers by profession, so we're looking for well-documented, easy to use models, preferably in Python. So far we've tried YOLOv8. Since we're not concerned with real-time processing, might a different model (R-CNN) be preferable though by trading off longer inference time for greater accuracy?
+
+On the data side, we've found a few datasets with hundreds to thousands of images of cracks in concrete or brick (e.g. [crack Instance Segmentation Dataset and Pre-Trained Model by University](https://universe.roboflow.com/university-bswxt/crack-bphdr?ref=ultralytics), ["SDNET2018: A concrete crack image dataset for machine learning applica" by Marc Maguire, Sattar Dorafshan et al](https://digitalcommons.usu.edu/all_datasets/48/)). Some give bounding boxes with crack locations while others simply bucket them into with or without crack. Would the latter still be suitable for models like YOLO? I'm also concerned that variations in lighting and surfaces could still be an issue, and features like the normal space between bricks could create lots of false positives. Do you think crack detection using open source data and general purpose models like YOLO would be feasible? Might it be better to label our own datasets so they're more tailored to our specific conditions?
+
+If there's any relevant info I'm missing, let me know!
+
+Comments:
+- If you’re not “programmers” (you don’t need programers per se for this problem, you need specialists), what conviction do you have that you will be able to solve this problem?   I’d highly recommend talking to a computer vision expert before opening this Pandora’s box.   Eg.   This is not really an object detection problem but a segmentation problem.  It’s unlikely there are extant models that solve this out of the box.  What are the deployment considerations (impacts methodological choice)? And so on.
+- You should hire a ml/cv consultant. It's a specialization so even if you were professional generalist SWE's you would most likely encounter a lot of issues even if you were handed ready-made models. 
+
+You're going to need at least tens of thousands of samples but 100 000+ would be preferred. As a rule of thumb, 1e5 samples can do a job reasonably well, 1e7 does it better than humans. You can fudge these numbers with augmentations. 
+
+For combining different datasets, you can use detection data for classification but not the other way around. So if you want to know where the crack is, you can't use all the data you have.
+
+And lastly, by having some of the input be general images and some be close-up's of cracks you're limiting yourself to deep learning methods if you want a single model when otherwise you could get away with traditional cv methods which don't need training data. An expert system is something that might be a good fit for your application.
+
+tldr: Hire someone who knows what they are doing. You're trying to solve a very hard problem with no previous experience or domain knowledge. Expect to stumble on every step if you're going to do it yourself.
+- We're using deep learning in our company to detect lines on tiled floor so it might be very similar. What is the purpose of the model? Is it to detect if image contains a crack or do you need precise position of the crack in the image? YOLO is fine for detection, for precise position you would need some segmentation model.
+
+You'll have to create your own dataset. At least for evaluation. Depending on how similar are your data to the dataset you found online, you might also need own training data. Choosing specific model and hyperparameters might improve performance by few percent but how good your data is will determine whether the model will be useful at all.
+- computer vision engineer here, image processing techniques (whether classical or deep learning based) although quite accurate, will not give you the best accuracy for your particular use case. and training image based models will require hopping sophisticated technical hops as other have pointed out. So if  possible use a good quality RGBD camera like Basler RGBD to capture images with depth info. this will simplify downstream model development and give guaranteed higher accuracy than just rgb images.
+- Totally agree. Solving a Computer Vision problem involves building multiple models in a pipeline to achieve accuracy. You should definitely get an expert.
+
+Anyways, answering your question, yes while YOLO might help detect crack, try training a UNET model which is more appropriate for this kind of segmentation task.
+- To answer your semi-rhetorical question, we were hoping it would be a matter of simply providing images to a general model like YOLO. Based on everyone's responses, I realize it would be far more difficult.
+
+
+To clarify though -- we are concerned with the cracks' locations (i.e. bounding boxes around them), but not their specific positions (i.e. all pixels with a crack). Is the point that the problem of detecting cracks would still lend itself to segmentation not object detection?
+- Got it, it sounds like the required dataset is well past what we could reasonably collect, especially with your point that classification data can't be used for detection.
+
+
+To your point on traditional cv methods, I was vaguely thinking that for cracks in bricks, you could detect edges and find ones whose orientations don't match the overall brick layout. Is this the kind of thing you were thinking of? While making a simple demo for a particular photo might not be too difficult, to your point, making this generally useful could prove challenging.
+- We need the location of the cracks, but bounding boxes around each of them (or simply one coordinate for a crack) would suffice. Do you think YOLO would be suitable in this case?
+
+
+I understand if you can't reveal this, but is your company using a general model like YOLO, or is it requiring developing a bespoke model specifically for detecting lines on tiles floors?
+- CV is rarely that straightforward.
+
+Whether it is better suited to detection or segmentation depends on many factors, including operating environment cost factors. I’d need to see examples to say any more.
+- That's an option. Check out Hough transform if you haven't already. It will naturally allow you to calculate the dot product of detected lines and therefore figure out which of them are parallel and orthogonal to each other. You will have to deal with double edges from edge detection and find good hyperparameters for both methods for your images, Hough especially can be a bit tricky.
+
+If you have exposed mortar in all the images (or bricks are otherwise visually separate), I'd personally probably do grid detection and check the "integrity" of each cell with a full blown classifier, a perceptron or just some thresholding etc. depending on the actual data. That way there is less hyperparameters to tune and you can  get away with using a less data hungry classifier compared to a cnn. That way you could actually get away with using all the data.
+- YOLO bounding boxes are aligned with xy axis. If your cracks are always approximately vertical and horizontal then it's ok. Problems arise with cracks that would go diagonally across bigger part of the image. In that case you would get one big bounding box.
+
+We use something like UNet but much smaller because we run it on an embedded device. And we train it from scratch on our data.

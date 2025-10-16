@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1munwmw/r_azzurravoice_a_new_stateoftheart_italian/
+Title: [R] azzurra-voice, a new State-of-the-Art Italian Text-to-Speech model
+
+Content:
+Hey [r/MachineLearning](https://www.reddit.com/r/MachineLearning/)
+
+We're Cartesia, a small AI research lab based in Italy. We believe the future of AI shouldn't just be about processing commands, but about creating genuine connection. Our vision is to build agents that are private, personal, and feel culturally present.
+
+Today, we're excited to share the first step with the open-source community: `azzurra-voice`.
+
+`azzurra-voice` is a highly expressive and natural-sounding Text-to-Speech (TTS) model for the Italian language, trained on thousands of hours of high-quality, diverse Italian speech. We worked hard to capture the accents, intonations, and real-life conversational patterns from across Italy to avoid that robotic, monotone sound.
+
+**You can listen to audio samples comparing** `azzurra-voice` **to other open models on our** [**blog post**](https://blog.cartesia.one/posts/introducing-azzurra-voice/)
+
+Comments:
+- Congrats guys, this model looks amazing. Thank you for sharing it and opening to the community.

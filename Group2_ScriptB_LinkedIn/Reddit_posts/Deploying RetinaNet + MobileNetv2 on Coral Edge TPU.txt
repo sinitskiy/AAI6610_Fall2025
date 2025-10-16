@@ -1,0 +1,16 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1m3uelr/deploying_retinanet_mobilenetv2_on_coral_edge_tpu/
+Title: Deploying RetinaNet + MobileNetv2 on Coral Edge TPU
+
+Content:
+Hey everyone! I’m currently working on a machine learning project and wanted to get some insights from the community.
+
+I’m building a seed classification and detection system using RetinaNet. While its default backbone is ResNet50, I plan to deploy the model on a Raspberry Pi 5 with a USB Coral Edge TPU. Due to hardware limitations, I’m looking into switching the backbone to MobileNetV2, which is more lightweight and compatible with Edge TPU deployment.
+
+I’ve found that RetinaNet does allow custom backbones, and MobileNetV2 is supported (according to Keras), but I haven’t come across any pretrained RetinaNet + MobileNetV2 models or solid implementation references so far.
+
+The project doesn’t require real-time detection—just image-by-image inference—so I’m hoping this setup will work well. Has anyone tried this approach? Are there any tips or resources you can recommend?
+
+Comments:
+- Put that Coral Edge TPU in the trash and get yourself the Pi AI Hat with Hailo-8 accelerator.   You will save yourself all the hassle you propose.
+- Never heard of the Hailo-8 accelerator before but I will definitely try it out. You just saved me the hassle. Thank you so much!

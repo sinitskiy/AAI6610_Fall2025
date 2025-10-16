@@ -1,0 +1,75 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1loo8yl/d_how_far_are_we_from_llm_pattern_recognition/
+Title: [D] How far are we from LLM pattern recognition being as good as designed ML models
+
+Content:
+LLMs are getting better quickly. It seems like every time a new release comes out, they have moved faster than I anticipated. 
+
+Are they great at abstract code, integrating systems, etc? Not yet. But I do find that they are excellent at data processing tasks and machine learning code, especially for someone who knows and understands those concepts and is able to understand when the LLM has given a wrong or inefficient answer.
+
+I think that one day, LLMs will be good enough to perform as well as a ML model that was designed using traditional processes. For example, I had to create a model that predicted call outcomes in a call center. It took me months to get the data exactly like I needed it from the system and identify the best transformation, combinations of features, and model architecture to optimize the performance.
+
+I wonder how soon I'll be able to feed 50k records to an LLM, and tell it look at these records and teach yourself how to predict X. Then I'll give you 10k records and I want to see how accurate your predictions are and it will perform as well or better than the model I spent months working on. 
+
+Again I have no doubt that we'll get to this point some day, I'm just wondering if you all think that's gonna happen in 2 years or 20. Or 50? 
+
+Comments:
+- I work at a large tech company. 
+
+In a way, we're already there and its already way superior to where you're hoping it will be. For years, we've had large teams set up classifiers that take tons of training data and try to label "this <X> happening in <this digital media>". 
+
+Turns out can just *ask* some of the frontier LLMs that exact question with no training data whatsoever and it out performs these classic ML classifiers we've invested so much in. Completely changes the game, at least for that type of work. In that area, the workflow now is 
+
+1.) Get a labelled data set of \~1k samples   
+2.) Iterate on prompts for the LLM to classify the 1k samples until you get acceptable P/R  
+3.) If serving LLM as classifier is too expensive (i.e. need >10M classifications a day or something), "distill" the LLM by generating silver labels on \~1M samples from LLM and train deep learning model on silver labels
+
+So really you don't need training data anymore for **a lot** of traditional tasks, you just need evaluation data which is much smaller.
+- For a certain parameter count/computational level an ML model trained for a specific task will perform better than the LLM.  What you’re describing seems against the principle of the No Free Lunch Theorem.  But it’s perhaps possible a very large language model could replace the job of a data scientist and train another model on its own.
+- Wait, I’m confused, most LLM struggle with simple maths to the point that it’s more efficient to detect that a calculator is needed and then run a calculator subroutine.
+
+You’re all claiming that one just feed them a matrix of 1000 instances of N features (numerical and categorical) and boom! it just works better than actually training a supervised ML model to do this specific task with millions of training instances?
+
+That would be a very surprising result if it was true, mostly because LLM are not at all trained to perform similar tasks (as someone else mentioned, they would be good at generating the code to train a ML model)
+
+Can you provide research papers that have demonstrated this behavior?
+
+Also, I don’t think training a ML model is complex at all. It’s basically just model.fit(X, y) and it will be good enough for most applications. The complexity is in preparing the data, building features and analyzing results.
+- Is tgere a way to explain why an LLM gave a particular answer or how it came to that answer?
+- [removed]
+- I feel like we're seeing this in basically every area in NLP -- very specialized methods only provide very incremental gains over the flagship LLM models, to the point where its not worth the increased effort, or often just underperform LLMs entirely. 
+
+And I think people who have invested a ton of time learning how to fine-tune and train their own ML models are *not* happy about it. You can see it a lot on any ML-related subreddit like this one, there will be a contingent poo-pooing the efficacy of LLMs and insisting you need to fine-tune your own model still. 
+
+Sort of similar to the shift between previous "classical ML" methods and deep learning that happened several years ago.
+- Is this numerical data, or textual, or both? If it’s purely numerical data then I don’t understand how llm could be better except in simple tasks that don’t require complex model. But in tasks such as signal processing, computer vision, etc. i dont get it.
+
+
+It would make much more sense to tell the llm to write the code for the ml model and data transformation etc. Llm doesn’t understand numerical data and can mess up on simple calculations because it’s mechanism is not suited for that so… For any NLP task and maybe mixed data classification it perfectly makes sense though that it can outperform
+- This makes a lot of sense. In these cases would you still apply data splitting and tune the prompt on only the train set and evaluate on the held out set to avoid overfitting during prompt finetuning?
+- Totally insane. I was trying it with a model I'm working on, feeding it a couple hundred records at a time trying to get it to predict a target. I eventually gave up but it was getting better every time I fed it more records
+- >2.) Iterate on prompts for the LLM to classify the 1k samples until you get acceptable P/R
+
+Is the iteration automated or manual?
+- I’m particularly interested in complex classification examples, and reasoning LLMs give new meaning to interpretability. They’re both much easier to interpret (you can pull the reasoning trace, or prompt for reasoning, or just ask why an example is a certain classification if you’re running a chat) and much, much harder (Neural networks are hard enough when it’s just a few layers!)
+
+But they’re also prone to making up plausible sounding explanations that have no bearing on reality.
+
+Interestingly: classifying using an encoder model like BERT and then explaining the resulting classification with a reasoning model gives really solid results and plausible explanations. Trying to do the same with other ML methods as the first step gets slightly better results but much larger likelihood of hallucinations in the reasoning.
+- Out of curiosity. How do scientists measure the performance of GenAI? I know for traditional ML model there are training sets and test sets, and the score on test sets is an indicator of the performance of the model. But how is this transferred to GenAI if the objective is to see how well it generates something that does not exhibit in the data?
+- Adding on to this, you really need the "ability" to think through how you design a system like this. You can still generate extremely high quality training data at scale via the LLM, and then train/infer on traditional models
+
+The complexity which went into sourcing/finding and getting the right data tagged has now been converted to effectively write good prompts and identify what models to use.
+
+If you can think out loud and find the right problems to solve --> design simple processes and systems, your capability to deliver goes up massively. Focus on system level thinking and communication and stakeholder management. The actual complexity of the traditional model building and experimentation can take a back seat.
+- I kind of see that as what is happening behind the scenes, but the llm will just become really good at making the correct decisions very quickly. I have been working on agentic application with mcp architecture where the llm has tools at its disposal and reasons on how to use those tools, so I am imagining a future where the "tools" it understands how to use are feature engineering, data processing, model architecture design, and model training processes
+- 1) I'm asking if this will be possible soon, not saying it is now 
+
+2) trying to create a model with real world data, deploy to production, and satisfy a business requirement is a hell of a lot more complex than fitting a model. I've worked on a bunch of production level models and 95% of my time is spent on doing other stuff. The model fitting part happens in an hour or two after months of iterative work
+- "How many R's in Strawberry?"
+- I believe OP is just asking "When is an LLM going to be better on average at some arbitrary task than a painstakingly designed custom model someone made just for that task." No "rewriting weights" required.
+- You mean re-write the weights of the internal model it is using to make the predictions right? Not it's own architecture
+- The only drawback I see is of course traceability/auditability. For internal projects that might not matter but if I have to explain to a stakeholder why I'm denying someone a loan I don't know if "our little AI friend said they might default" is gonna fly lol
+- I can't saw I've yet to see LLMs being applied to data like tabular data. 
+
+My company works with digital media so it's like a 2020 lead's wet dream that we can just ask something about this digital media and immediately get a somewhat reliable answer about it without having all the eggheads (i.e. me) come in and mess it all up, tell them why this is really hard, whatever else we usually say.

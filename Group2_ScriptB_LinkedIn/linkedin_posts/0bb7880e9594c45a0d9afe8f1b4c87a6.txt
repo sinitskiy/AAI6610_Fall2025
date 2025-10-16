@@ -1,0 +1,77 @@
+URL: https://www.linkedin.com/posts/amirabbas-asadi_imagine-you-want-to-model-a-dynamical-system-activity-7378149262775386112-Zt4k
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Amirabbas Asadi的动态
+Amirabbas Asadi
+
+Mathematics Student | Probabilistic ML | RL | High-Performance Scientific Computing
+
+1 周  已编辑
+
+Imagine you want to model a dynamical system and wish to take into account the uncertainty. Two approaches come to my mind. We can use stochastic differential equations or we can stick to ODEs but assume the uncertainty over coefficients and boundary values. 
+
+I was thinking about this for a bit and so far I think the motivation behind Bayesian ODEs is modeling epistemic uncertainty while SDEs are better in representing aleatoric uncertainty. However, beside this difference, Bayesian ODEs seem more flexible.
+
+What do you think?
+
+135
+13 条评论
+赞
+评论
+分享
+hari kishan prakash
+
+Machine Learning,AI Roswell Biotechnologies, Co-founder HeyDaw Technologies
+
+1 周
+
+this is a very interesting thought
+
+赞
+回复
+1 次回应
+Mohammad Hossein Rohban
+
+Associate Professor in Computer Engineering at Sharif University of Technology
+
+1 周
+
+Interesting! In terms of generative models, flow matching corresponds to the ODE with stochastic initial condition, while SDEs match with denoising diffusion models. In both cases, the main aim is to model aleatoric uncertainty.
+
+赞
+回复
+13 次回应
+Albert Podusenko
+
+CEO of Lazy Dynamics | Fast, reliable Bayesian inference for real-time decisions
+
+1 周
+
+Few relevant examples on Bayesian ODEs/SDEs:
+•https://examples.rxinfer.com/categories/problem_specific/ode_parameter_estimation/#ODE-Parameter-Estimation
+•https://examples.rxinfer.com/categories/advanced_examples/gp_regression_by_ssm/#Solve-GP-regression-by-SDE
+
+
+赞
+回复
+5 次回应
+Mahya Mohammadi Kashani
+
+Roboticist and AI specialist | PhD in Computer Science | more than four years of experience in robotics (Vision and Planning)
+
+1 周
+
+Interesting topic! My opinion: it depends on what system you want to model and what resources you have. 
+
+For modeling uncertainty where stochastic noise or random fluctuations are critical to system behavior, Bayesian SDEs are bett

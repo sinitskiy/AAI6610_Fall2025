@@ -1,0 +1,30 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1jj1249/d_what_exactly_counts_as_uncertainty/
+Title: [D] What exactly counts as “uncertainty quantification”?
+
+Content:
+I’m trying to wrap my head around what’s exactly meant by “uncertainty quantification” (UQ) in the context of Bayesian ML and sequential decision-making.
+
+Is UQ specifically about estimating things like confidence intervals or posterior variance? Or is it more general — like estimating the full predictive distribution, since we "quantify" its parameters? For example, if I fit a mixture model to approximate a distribution, is that already considered UQ, since I’m essentially quantifying uncertainty?
+
+And what about methods like Expected Improvement or Value at Risk? They integrate over a distribution to give you a single number that reflects something about uncertainty — but are those considered UQ methods? Or are they acquisition/utility functions that *use* uncertainty estimates rather than quantify them?
+
+This came up as I am currently writing a section on a related topic and trying to draw a clear line between UQ and acquisition functions. But the more I think about it, the blurrier it gets. Especially in the context of single-line acquisition functions, like EI. EI clearly fits in UQ field, and uses the full distribution, often a Gaussian, but it's unclear which part can be referred to as UQ there if we had a non-Gaussian process.
+
+I understand this might be an open-ended question, but I would love to hear different opinions people might have on this topic.
+
+Comments:
+- Acquisition functions is a function to measure the utility to acquire new data...hence the name.
+
+Uncertainty quantification means putting a number to uncertainty....and this can mean many different things, depending on your field and approach. The simplest is the variance of a prediction. This is making a gaussian assumption, if you know the mean and variance you can fully characterize the gaussian distribution. But uncertainty is not always gaussian distributed.
+
+They are related because typical acquisition functions want some measure of uncertainty.
+- I like to think uncertainty quantification as a process to describe how information (or lack of) is transferred from data and model to the output. You have data uncertainty, which might be coming from measurement imprecision or a naturally stochastic data generation process, and model (parameter) uncertainty, which comes from not being sure which model best describes the data. You want to work out how much uncertainty is transferred to the model output given your data and model uncertainty. In a sense it is just the application of Bayes theorem, but you don't necessarily have to explicitly use it. 
+
+As for the mixture model question, all probabilistic generative models try to capture data uncertainty, so in this sense it is indeed quantifying uncertainty. However doing mixture modelling alone does not take into account uncertainty within model parameters themselves (e.g. which of the many equally accurate mixture models is more likely to be the model closest to the true generation process). So, it only does uncertainty quantification on half of uncertainty sources, unless you do a full Bayesian mixture model with parameter priors. This can still be plenty effective if your main source of uncertainty is the data (e.g. overlapping classes)
+- This question is far from trivial imo, and for our research I had to spend a suprising amount of time to come to a satisfying conclusion.
+
+Anyway, the research in question is "how to evaluate the uncertainty predicted by regression models". At the moment, my personal conclusion is that anything that RMSE (or other point prediction metrics like MAE) can't measure should be considered uncertainty quantification in this context. So if you predict thresholds, those are obviously uncertainty quantification, as RMSE doesn't say anything about those. Same goes for predicting the full uncertainty distribution, etc.
+
+I guess the generalization to classification would be "anything beyond things that can be calculated based on the predicted class label" (i.e., even things using the probabilities themselves such as AUC). But classification does predict a kind of uncertainty by default so I'm not sure, I have not spent much time thinking about that one.
+- UQ is the evaluation step of the regression models. When you talk about EI, VAR or cVAR, this is the step where you use the quantified uncertainty in the active learning paradigm to decide your next move (either to decide the next probing points in the uncertainty space or adjust parameters in a control problem). There are a lot of models for uncertainty quantification, e.g. Gaussian Process, Polynomial Chaos Expansion, and of course the NN-related methods like MC dropout. I found that the work of the [Karniadakis](https://scholar.google.com/citations?user=yZ0-ywkAAAAJ&hl=en) group gives a nice high-level point of view of UQ, although their research focused more on scientific machine learning.

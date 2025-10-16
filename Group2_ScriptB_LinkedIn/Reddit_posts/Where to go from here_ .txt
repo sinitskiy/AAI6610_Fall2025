@@ -1,0 +1,59 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1efo0jq/where_to_go_from_here/
+Title: Where to go from here? 
+
+Content:
+So... I was laid off from My dream job last Month. I started there as an intern, nine years ago, when the Company was an start-up of six people, playing with microbes in a container. 
+
+Now the company has more than 100 employes. In the meantime I transitioned from wetlab to Bioinformatics helping with simple analysis of read trimmimg, assambly, and annotation. Then the analysis became more and more complex as more and more tools where integranted into the analysis of the sequenced viruses and bacterias. 
+
+Then, as new investors arrived, they brought the who person who became My boss, 2 years ago. 
+
+He planned to automatize everything, from QC, to Analysis, to Visualization and Even the Reports, so we could have more time to "Research". And he did, and when we finished all the Pipelines he fired me. 
+
+And now I don't know what to do, the job market state seems miserable in My country and in the US, the roles seems very complex and mostly needs a Lot of Machine Learning experience. 
+
+There was a Machine Learning Team on My old Job and we were the ones that prepared the data for them and explained what the DNA and proteíns sequences meant given that they were Mathematicians. I know the basics about supervised and unsupervised models. 
+
+I can train a Random Forest Classifier so it can use genomic data to perform a prediction. 
+I can defend myself with Python and SQL. I know about Docker and Nextflow, I was Learning about Streamlit and AWS when I was fired. 
+
+What should I learn next so I can land a good remote job in the US? Tenserflow? Pytorch? Keras? 
+
+I feel that even if I have worked a lot in the field, My toolkit is very basic because mostly I take the tools that others people develops and publish. 
+
+
+Comments:
+- Note to self: never automate anything for my new boss
+- Lots of companies put AI/ML in the job requirement when the reality is they really just need someone competent at analyzing data and making high quality pipelines. They are pressured from their investors etc. to do the hot new thing which is AI, but that doesn’t mean their actual need requires it.
+
+Your experience sounds quite good. You built a capability from scratch. You automated it.
+
+I’m having a bit of difficulty explaining, but your experience sounds good for many NGS roles and unless the job is explicitly to do novel AI/ML work from what you have posted you would be a reasonable contender for many types of jobs.
+
+My suggestion would be to be aware of research to use AI/ML in your area and be able to do a brief talk about it. Maybe look at the tools you use and see if there are any that newer ones that may make use of AI/ML to be able to talk about it. Basically let them check the AI box while hiring you for what they actually need.
+- Depends a bit on where you want to go (e.g.: tool dev, pipeline dev, analysis,  interpretation.  Answer can of course be more than one) Something to consider is the genomics world beyond microbiology where single-cell and more recently spatial transcriptomics are in high demand.
+- Your USP as a bioinformatician should be that you are comfortable working in both biology and data science contexts. Biologists can't do the data part and data scientists can't do the biology part. In my experience the value of ML/AI in biology is (often) extremely limited unless you have the biological background to interrogate the input / output / assumptions / questions.
+
+That's where you should position yourself - as the person who can do both (but not necessarily either as well as the wetlab biologists or the ML engineers).
+- streamlit / rshiny to produce EDA dashboard, pipeline launchers, everything that helps colleagues to make sense of their data and present them. it's extremely valuable and you'll always be needed to design them, since you are at the interface. 
+
+building pipeline and launching them to analyse reads and output csv, bam, vcf, counts tables. etc..  is not gonna be much in demand anymore now that robust containers are flooding github
+- RemindMe! 7 days
+- Or just poorly document everything.
+- Thank you very much for your comment. You are very kind.
+- I think pipeline dev, analysis and Interpretation is what I want to do. 
+
+But the point You make is valid, maybe I i'll try to add RNA-SEQ and DEG Analysis to My tools so I can start Learning Single Cell Transcriptomics.
+- I will be messaging you in 7 days on [**2024-08-06 08:46:47 UTC**](http://www.wolframalpha.com/input/?i=2024-08-06%2008:46:47%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/bioinformatics/comments/1efo0jq/where_to_go_from_here/lfmddw1/?context=3)
+
+[**6 OTHERS CLICKED THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Fbioinformatics%2Fcomments%2F1efo0jq%2Fwhere_to_go_from_here%2Flfmddw1%2F%5D%0A%0ARemindMe%21%202024-08-06%2008%3A46%3A47%20UTC) to send a PM to also be reminded and to reduce spam.
+
+^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201efo0jq)
+
+*****
+
+|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|
+|-|-|-|-|
+- Thats what My boss Did so HE cannot be fired.
+- That explains a lot in my old job!

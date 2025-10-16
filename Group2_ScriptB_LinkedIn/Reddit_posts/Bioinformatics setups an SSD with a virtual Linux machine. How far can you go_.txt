@@ -1,0 +1,61 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1aejkoj/bioinformatics_setups_an_ssd_with_a_virtual_linux/
+Title: Bioinformatics setups an SSD with a virtual Linux machine. How far can you go?
+
+Content:
+I have been working in the lab a while now am setting up my second 1TB Samsung SSD with a virtual Linux machine. When I need them I just plug them into my laptop and run what ever code I need (some custom programs, RNA-seq and metabolomics pipelines).
+
+I have access to the university's super computer, however they do not allow setting up of your own conda environments, I would need to learn how use docker properly...
+
+So. How far can I go with this setup? (When will it start to becoming inefficient?)
+
+What kind of setups / investments should I ask for from our group leader? We have only the occasional sc-RNA-seq and RNA-seq datasets to analyse and like I said we have a super computer available. 
+
+&#x200B;
+
+Comments:
+- >I have access to the university's super computer, however they do not allow setting up of your own conda environments, I would need to learn how use docker properly...
+
+This is **very** strange. First, you don't need any special permissions to download and install conda and create your own conda environments. I don't really see how they could even stop you from using conda. Second, shared environments like university HPCs generally avoid using Docker for security reasons. So allowing Docker but not conda is very very strange.  
+
+
+More to the point, 1TB of disk space should be enough for most applications if you are not planning on long term storage of results from multiple tools just on one of those disks, but another bottleneck is RAM (and to a lesser extent CPU cores) - it really depends on what applications you are running but I would look at the documentation of tools you regularly use to try and find resource requirement estimates. Our nodes have 256GB RAM and we have one 1.5TB RAM node. the 256GB is almost always enough.  
+
+
+Admittedly I may have misunderstood you because I'm not sure if you are running a VM from a personal PC, using your uni's computer or a combination, so if I said something irrelevant feel free to elaborate
+- The SSD determines only how much data you can store (and how fast you can read/write said data) Are you asking about that, or about how much compute power you will need? If the latter, your current limits are determined entirely by the specs of whatever computer you're plugging the ssds into, which you haven't provided any info on.
+- Can you install nextflow? It can use docker images to run code and its super portable. You can use all kinds of pipelines from nf-core.
+
+Why not create a bash pipeline that pulls and runs docker images? You can throw it on github and download it whenever you need. You could also setup a cloud compute with google/AWS and ssh into it. It's easy and quick to transfer files from local to cloud.
+
+I wouldn't use an external SSD. It shouldn't happen but you increase your risk of sharing malware/viruses to your personal pc or work pc. Also, I would view this as a "backup" and the saying with those is that 2 is 1 and 1 is 0. So with just 1 SSD, if it fails, you'll lose everything. If you have it on an SSD and cloud you'd be good.
+- Yes, you should be able to install conda locally as well. Docker almost certainly will not be allowed on the HPC.
+- To be honest, they can't stop me but they can boot my projects from the que.
+
+Here is the reasoning for the limits on conda environments: Do not install Conda environments directly on the parallel file system of CSC supercomputers!CSC has deprecated the use of Conda environments that are installed directly on the parallel file system of CSC supercomputers (e.g. /scratch, /projappl, $HOME). This is due to performance issues of Conda-based environments on shared file systems, causing long start-up delays and system-wide slowdowns when running Python scripts.
+- I find it quite odd that a shared cluster would support docker and not conda considering Docker requires permissions not usually given to users.
+- Just a general question about demands of usual bioinformatics jobs. Currently I have not had any requirements that go over what I have.
+
+The question is more to do with what everyday setups are sufficient for a bioinformatician. If we need to invest more in the future this will delay things, ordering computers via the university takes a while...
+- Interviewed for an Admin position with Mass General. They used Docker/Singularity on HPC. YMMV.
+- They prefer the overhead of Docker to that? Okay then, I guess you should learn how to use it. Don't worry though, you can learn all you would need to create simple containers in about a day and it's not a wasted skill especially if you ever work in the industry.
+- Sounds like you can use conda on compute nodes just fine...
+
+HPC/cloud and docker are pretty much mandatory skills in the industry nowadays. If you plan on landing a job after your degree, you should start using them
+- Why use both then? If they use both, it might be because they don't let a typical non-admin user use Docker.
+- Mass General, or UMass?
+- My guess would be it’s not conda vs docker, but how people use conda/docker.
+
+From my experience, I think it’s common for a lot of bioinformatician-lite users create super conda environments that have 100s of packages installed in them that end up having a lot of conflicts and thus take a long time to start or will hang when loading packages.
+
+Docker is more of a hassle to create, and so also from my experience the “lite” users would rather just ask someone else, the more experienced user, to create the environment for them, or give instructions how to run in nextflow etc.
+
+So it could be that it’s a case of IT running into an issue often of an inexperienced user(s) slowing the server and the solution was to make it too difficult for them/ force then to learn it by making it more difficult for everyone.
+
+But I’m just guessing.
+- Scientists/teams picked the tool, they supported the infrastructure, answered tickets, etc.
+- Mass General, brainfart there.
+- >From my experience, I think it’s common for a lot of bioinformatician-lite users create super conda environments that have 100s of packages installed in them that end up having a lot of conflicts and thus take a long time to start or will hang when loading packages.
+
+It's probably this.
+- Definitely this. Might be part of the problem xD

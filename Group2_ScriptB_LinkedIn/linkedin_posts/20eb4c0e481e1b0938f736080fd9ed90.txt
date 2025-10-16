@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/lioneljouffe_risk-modeling-with-bayesian-networks-beyond-activity-7369733044527579137-x2rL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Lionel Jouffe的动态
+Lionel Jouffe
+
+President/CEO at BAYESIA
+
+1 个月  已编辑
+
+Webinar Announcement – September 25
+Risk Modeling with Bayesian Networks – Beyond BowTie: A Cybersecurity Case Study
+
+For decades, the BowTie method has helped risk professionals visualize threats, barriers, and consequences. But today’s risks demand more than static diagrams.
+
+What if your model could simulate scenarios, quantify uncertainty, and adapt to new information?
+
+In this webinar, we’ll introduce Risk-Centric Causal Networks (RCCNs) — an evolution of BowTie models powered by Bayesian Networks and enhanced by Generative AI.
+
+On the agenda:
+- How to move from static visuals to living, probabilistic models
+- How RCCNs integrate both qualitative and quantitative risk perspectives
+- Live case study: Cyberattacks on critical infrastructure, built using:
+• Hellixia – GenAI for rapid domain discovery and model building
+• BayesiaLab – Probabilistic reasoning, simulation, and sensitivity analysis
+• HellixMap – Qualitative sharing of the causal structure
+• WebSimulator – Interactive tool for probabilistic inference and risk assessment
+
+Bonus: We’ll publish the final model both on HellixMap (for qualitative sharing) and on the WebSimulator (for stakeholder-facing inference and scenario analysis).
+
+This event also marks the commercial launch of HellixMap and WebSimulator v3.0.
+
+🔗 Register here: https://lnkd.in/dYvfmYVT
+
+Let’s move beyond BowTie. Join us to explore a new generation of risk modeling — smarter, faster, and more collaborative.
+
+Lionel d'Harcourt Ghislain de Kerviler Jean LABOURDETTE Mathieu Pailler Mathieu CHASTRE Alex Cosmas Pierre Capelle Thierry Boisnon Alexandre Cros Thomas NICOLAS Steven Frazier Greg Smith Marcus Beard Jean-François COLLIN Pekka Kekolahti
+
+#BayesianNetworks #RiskAnalysis #Cybersecurity #AI #GenAI #BayesiaLab #HellixMap #WebSimulator #BowTie #RiskModeling
+
+Risk Modeling with Bayesian Networks – Beyond Bowtie: A Cybersecurity

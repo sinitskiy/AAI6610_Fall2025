@@ -1,0 +1,42 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/8hvv45/d_does_prediction_uncertainty_of_prediction/
+Title: [D] Does prediction uncertainty of prediction depend on the choice of model? (for example, a Random Forest, Gaussian Process or neural network)
+
+Content:
+It seems that interest rises to know the uncertainty in our predictions. For example [this](https://arxiv.org/abs/1309.1906) finds the uncertainty of a prediction by a random forest. Or [this](https://arxiv.org/abs/1703.04977) paper finds the uncertainties of a neural network used in computer vision. In general, [Gaussian processes](http://gpss.cc/gpss13/assets/Sheffield-GPSS2013-Wilkinson.pdf) are famous for getting the uncertainty in case of non parametric regression.
+
+
+
+My question about all these uncertainties is:
+
+__Is uncertainty a property of these methods and these models or does uncertainty depend on the model choice?__
+
+  
+It follows from this thought experiment:
+
+Let's say we have a data set. A fixed data set. We fit a) a Bayesian random forest b) a neural network c) a Gaussian Process to this data. Now I get a new input, x. I wonder if all three models would give the same uncertainty about the prediction on data point x. 
+
+Comments:
+- As the authors say in [https://arxiv.org/pdf/1703.04977.pdf] there are 2 types of uncertainties. I assume you are interested in the _epistemic_ uncertainty which definitely does depend on the model choice, as it represents how much this particular model is certain about its predictions. This depends on the choice of the model as well as its hyperparameters. 
+
+Another way to approach this, to have a more objective estimate of uncertainty, is to create an ensemble of models, which consists of multiple models (or same model with different hyperparameters) and then extract the uncertainty as the variance between their predictions. 
+This is the idea behind Bayesian NN and the approach presented in [http://proceedings.mlr.press/v48/gal16.pdf] where they sample multiple instances of the same model and interpret the variance of the outputs as the model uncertainty.
+
+Hope this helped!
+- I think it is worthwhile to go over the source of uncertainty. Where does it come from?
+
++ If you have a model parameterized by W, given a dataset, you are typically interested in identifying the single best parameter w* in the space of W that explains your data.
++ Now, from a Bayesian point of view, unless you have enough data to find the exact w*, you should not settle for a single parameter configuration. You can put a distribution over the space W to maintain the degree of plausability of each possible parameter w_i.
++ When you need to make a prediction, you merely average the predictions of each possible w_i and weight it according to your belief. If you have enough data to find w* , the entire mass of your belief will essentially be on the w* and everything else would be 0.
++ One way to characterize the uncertainty is to measure the agreement in-between your w_i's after having observed the dataset. If all the likely w's think of a single prediction, you are certain about the prediction. If they don't agree, you are uncertain.
++ You can further break the uncertainty to aleatoric and epistemic uncertainty, but I don't think that is what you are asking.
+
+The only difference between a, b, and c is the assumptions behind the underlying models. For instance, Gaussian processes, in the simplest form, are basically linear regression; but, instead of finding a single w, they maintain a distribution over W. They make assumptions about the magnitude of noise in the observations and the maximum rate of change in prediction in the neighbourhood of observations. As far as I know, they can only work well for interpolation and cannot extrapolate well. A Bayesian neural network, similar to the Gaussian process, maintains a distribution over the parameters. The uncertainty, again, comes from the rate of agreement between the possible parameter configurations. We don't fully understand the biases in a neural network, so there's no clear "linear regression"-type intuition on what is happening. A Bayesian random forest is, again, the same story.
+
+At the end of the day, the uncertainty is a product of your own assumptions. It would be unlikely for a, b, and c to give the same uncertainty, because each class of function makes a different assumption about your problem.
+- They definitely will not be the same. You would want to investigate how well calibrated uncertainty estimates are, eg: https://arxiv.org/abs/1706.04599.
+- The uncertainty in predictions basically depend on the model’s extrapolation property. If the model can extrapolate well, you will get a more realistic uncertainty measure about the predictions. If the model is a poor in extrapolating, it will predict wrongly with high confidence. Random forests are poor in extrapolation. I guess Gaussian Processes can give you a better uncertainty estimate out of the 3 models. You can try this yourself by predicting the function value at a data point which is far from from the training data and comparing the predictions.
+- Of course they'll be different. Also, they'll differ within each model class based on choices you make. Gaussian processes are a very large class of models. Your uncertainty about predictions (and other quantities) can vary drastically based on your choice of mean and covariance functions. The same could be said about random forests or neural networks; in both of these classes of models, there are many choices to be made (e.g. how many layers in your neural network), and these can have a huge impact on your resulting inferences/predictions.
+- When you say "sample multiple instances" what is the difference in each instance? Have they been re trained? Otherwise the same trained model will give the same output.
+- You use Dropout during inference. By dropping out neurons you are evaluating different networks with the multiple forward passes you are doing.
+- exactly

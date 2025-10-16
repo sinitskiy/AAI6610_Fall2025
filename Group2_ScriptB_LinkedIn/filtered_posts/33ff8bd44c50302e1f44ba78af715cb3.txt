@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/divyanshu04_household-level-occupancy-profiles-generated-activity-7225063087211474945-7pnb
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Divyanshu Sood, PhD的动态
+Divyanshu Sood, PhD
+
+Senior Energy Systems Researcher | Part-time Lecturer @ University College Dublin | Energy, Sustainability, AI/ML
+
+1 年  已编辑
+
+🚀 Excited to share our latest dataset: "Household-level #occupancy profiles generated using Bayesian Neural Networks (#BNNs) for occupancy #prediction under #uncertainty in residential buildings."
+
+This dataset is a comprehensive resource for researchers and professionals, containing time-series data of #occupancy #availability and #metabolic #rates for house-type and apartment-type dwellings, recorded at 10-minute intervals. We developed this dataset using BNN based on the Time Use Survey (TUS) data to enhance accuracy in predicting occupancy patterns and understanding energy consumption in residential settings.
+
+🏠 Dataset Highlights:
+1500 CSV Files: 1000 files for house-type and 500 files for apartment-type dwellings.
+Detailed Records: Time-series data captured every 10 minutes.
+Research Applications: Ideal for building energy modelling, multi-scale energy analysis, and occupancy prediction.
+
+🌍 Impact and Usefulness:
+Energy Efficiency: Helps optimise energy use in residential buildings by accurately predicting occupancy patterns.
+Indoor Environmental Quality (IEQ): Supports research on improving air quality, thermal comfort, and overall living conditions.
+Smart Homes: Enables the development of intelligent systems that adapt to residents' behaviour for better comfort and energy savings.
+
+🔍 Explore and download the dataset here: https://lnkd.in/gqMj2PER
+
+For more research on energy efficient and healthy buildings, follow Building Energy Informatics group (https://lnkd.in/dpGpxJDQ) at University College Dublin lead by James O'Donnell
+
+#DataScience #MachineLearning #BayesianNeuralNetworks #TimeUseSurvey #SmartHomes #Research #EnergyEfficiency #OccupancyPrediction #UBEM #occupancy
+
+Household-level occupancy profiles generated using Bayesian Neural Networks fo

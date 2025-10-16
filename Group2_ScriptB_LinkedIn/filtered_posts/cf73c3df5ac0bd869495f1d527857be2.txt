@@ -1,0 +1,84 @@
+URL: https://www.linkedin.com/posts/ghifariadamf_most-likely-heteroscedastic-gaussian-process-activity-7361361288377114625-qwQp
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ghifari Adam Faza的动态
+Ghifari Adam Faza
+
+PhD researcher at KU Leuven
+
+1 个月
+
+I’m pleased to share our latest work, now published in Knowledge-Based Systems:
+
+"Most likely heteroscedastic Gaussian process via kernel smoothing"
+🔗 https://lnkd.in/eQv2ZwxV
+
+In this paper, we present a method for heteroscedastic Gaussian process regression that reduces computational cost by requiring only one GP model instead of two. By estimating noise levels through kernel smoothing, our approach lowers complexity from O(2N³) to O(N³ + N²), resulting in roughly 2× faster training in our experiments. We also observe improved or more stable performance in several test cases, including Bayesian optimisation tasks.
+
+Many thanks to my co-authors Nasrulloh Loka, Hans Hallez, Keivan Shariatmadar PhD MSc BSc, and David Moens for their contributions and collaboration!
+
+Most likely heteroscedastic Gaussian process via kernel smoothing
+sciencedirect.com
+75
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,205 位关注者
+
+41 则动态
+查看档案  关注
+探索相关领域
+Optimization Techniques for Artificial Intelligence
+Strategies for Optimizing Models
+Best Techniques for High-Performance Computing
+How to Optimize Machine Learning Performance
+Multi-GPU Parallelism Techniques
+How to Improve AI Performance With New Techniques
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

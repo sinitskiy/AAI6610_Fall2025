@@ -1,0 +1,56 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1i7b8id/graduated_september_2024_and_i_am_now_looking_for/
+Title: Graduated september 2024 and i am now looking for an entry level data engineering position , what do you think about my cv ?
+
+Content:
+
+
+Comments:
+- I think it's really very good for an entry-level position, my subjective suggestions would be:
+
+1. Add something on testing, so that it's clear that you not only write data pipelines but know how to ensure they are reliable
+
+2. I would honestly exclude the certificates, there's enough interesting stuff here that I wouldn't really care about your certificates, and including them makes the CV seem more junior than it is imo
+- I like the structure. Everything is where it needs to be.
+
+I can tell that ChatGPT gave you the structure for your metrics. I would interview you, but I would ask you to validate what your metrics mean in terms of performance or money saved/made since you mentioned it.
+- Man! Not a comment on the CV but just come here to say it look amazing! Toute les bonnes chances!
+
+J’espère que tu a le visa ou tu es éligibles a un Visa!
+If that us the case don’t lowball yourself by going to entry level roles! You have experience for a junior to mid-level position!
+
+From a fellow francophone
+- 3 jobs in 3 cities in one year? What gives?
+- For a entry level job is an amazing CV.
+Just be honest.
+Say Data Scientist Intern.
+If you keep your about section, write in your own words, you can easily see that is AI generated.
+Be confident on the interviews that you can do the work and adapt and learn to their tools and technology. I think you will easily get interviews.
+With nothing else to mention, good luck my man, you got this!
+- Bro, there is nothing called „bachelor of enginnering“ in Morocco, stop lying about u re CV!
+- I’m not sure when the resume/CV summary became the norm, but general consensus from my university days is to let your resume/experience do the talking. 
+
+Your “Profile” is just regurgitating information below.
+- I would keep that and also make a less busy one. Employers don't necessarily want to see all your skills, mostly the ones that pertain to their position. The cover letter is a place to really show yourself. With resumes, I recommend making a generic one that can be tweeked depending on positions. These companies filter quickly. It's like having a 2nd job when job hunting cause you need to constantly update per position.
+- I would assume the first 2 jobs are internships. In which you need you put it or else people would think you’re a jumper
+- Very good, but profile is too long. Make it short and striking
+- I used to have the same format, but ever since I moved the skills section under the profile section, I've received many responses from the recuiters. Make it easier for the recruiter to see your skills as an ATS can scan for keywords in the whole document, but a human cannot.
+- Do you have any cool project to share? Not only something like GitHub repo, but something that is more like "fully-fledged DS product". I think that one solid entry like this might be a good idea.
+
+Also, it should be easy to understand, because those resumes rarely go to technical people at the first touch.
+- You are amazing. You are one year older than me, but your experience is incredible. I’m really impressed by how you migrated over 1TB of data—very cool, brother. Wishing you success with your company
+- Everyone is highly motivated, curiosity, hardworking, eager, etc etc. no one cares about the summary
+- My only advice would be to get rid of the "profile" title, and just leave the summary as a freestanding paragraph at the top. I would also shorten it to two lines max. No one is going to read 4 lines.
+- It's really good. I am envious. I know I am supposed to give advice but I need advice. What do I do, when I have no internships or significant projects? What can I do to upgrade my resume/skills?
+- Rak khdam a sat lay sehel elik
+- Remove certificates. Remove spoken languages and soft skills. Split technologies up by Languages, Libraries, Cloud, and Dev Tools. Remove the summary at the top.
+
+Do you have any personal projects or Git repositories to share? If so, add a new section for projects.
+- Your resume is fine overall, but it is somewhat generic and you don't really stick out that much. No interesting side projects, everything is described pretty vaguely with emphasis on tools and business slop buzzwords, you moved some data around and added features to a data science model as an intern (all of this described as generically as possible) and you have the same keywords as literally everyone else (e.g. I interview candidates who have Python on their resume who can barely do Python). I'm not saying it's bad, it's fine, but I think the people saying it's amazing don't look at lot of resumes. I see resumes like this all the time.
+
+The biggest issue is you need to clarify those roles are internships. "3-4 months as a data scientist" is a huge red flag. Are you trying to be sneaky by not saying they're internships or what? (If so that's going to massively backfire.) Or did you just forget / not know to mention that? Just say it's an internship (or contract role if that was the case) and then all of a sudden it's no longer a red flag.
+
+You will probably get your foot in the door at a few places as long as you win the recruiter lottery. Your resume is the type recruiters will tend to thumbs up. But I want to again emphasize, there are lots of resumes like this. So while they think your resume is good, there are a lot of other similar resumes they'll also think are good, and you might just get unlucky. So you need to apply to a lot of places pretty aggressively.
+
+Note: I lead a data practice and I actually look at resumes for data engineering candidates.
+- The random bolding is obnoxious

@@ -1,0 +1,28 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1kwzshj/data_learning_model_interesting_find_cancer/
+Title: Data Learning Model Interesting Find [Cancer Reference]
+
+Content:
+I will start by saying that I know very little about biology, but I am a kick-ass, multi-award-winning data scientist thingy(I think 'data scientist' and other terms are not the best to describe model DL developers).
+
+If it's bullshit, let me know so I can better train my model.
+
+If it's good, let me know so I can better train my model.
+
+I read an article about a gentleman who uses logic analysis via a LargeSet Data Model (by technicality, a ML model, but the way it's referenced in the article is just that everyone wanted to use the word AI). This individual utilized known chemical compositions and biological effects to develop a model that, in principle, could create any "drug". I wanted to give it a try and add my touch to make my own model. It has approximately 99.73% accuracy (not particularly impressive for testing known to known). I wanted to share something really cool that was provided last night during my beautiful burning of money on my H200s. This supposedly has an 89.6 expected composition removal weighting as it relates to what appears to be cancer!! See at the bottom.
+
+**Article Ref in Post:** \[https://www.theverge.com/2022/3/17/22983197/ai-new-possible-chemical-weapons-generative-models-vx\]
+
+**Disclaimer:** I'm not a doctor or a biologist; I enjoy creating data models and conducting data-driven learning and machine learning projects. I have never made this chemical, and I'm not smart enough to make it. If you use this chemical, it's your fault. *I* *have only validated known to known chemical compositions, this one is not known to known.*  IDGAF if it works and you want to sell/use it...I was just bored, but I also won't ever turn down money....
+
+**\*\*No exact match in PubChem, ChEMBL, SciFinder as of current design**
+
+**\*\*This specific hybrid of benzimidazole + phenazine + glucose-mimic tail is not doc**
+
+***\[COMPOSITION FOUND BY DL MODEL\] (spoiler blocked to make sure you want to see it??? idk just click each black box)***
+
+* >!C1=CC=C(C=C1)N2C=NC3=CC=CC=C3N2C4=CC(=C(C(=C4)CO)OCCO)C(=O)O!<
+* >!2-((4-(1H-benzo\[d\]imidazol-2-yl)phenyl)amino)-3-(2-hydroxyethyl)-5-(hydroxymethyl)phenazine-1-carboxylic acid!<
+* >!C₂₅H₂₃N₅O₄!<
+
+Comments:

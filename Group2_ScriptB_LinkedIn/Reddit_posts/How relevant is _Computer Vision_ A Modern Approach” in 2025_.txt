@@ -1,0 +1,81 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jwk7m6/how_relevant_is_computer_vision_a_modern_approach/
+Title: How relevant is "Computer Vision: A Modern Approach” in 2025?
+
+Content:
+https://preview.redd.it/9uvcd2uur5ue1.jpg?width=3024&format=pjpg&auto=webp&s=148c8f1abdcbdec30c49c16596756ebee98567b0
+
+  
+I'm thinking about investing some time understanding the fundamentals of computer vision (geometry-based). In this process, I found out this "Computer Vision: A Modern Approach" by David Forsyth and Jean Ponce, which is a famous and well-respected book. Although I'm having some questions about its relevance in the modern neural net world (industry, not research). And if I should invest my time learning from it (considering I'm applying for interviews soon).   
+  
+  
+PS: I'm not a total beginner for neural net-based computer vision, but I lack geometry-based machine vision concepts (which I hardly ever have to look into), that's why this book gets my attention (and I find it interesting) even though I'm questioning its importance for my work. 
+
+Comments:
+- Could be a good move. A lot of people know how to train a model now but that's only one arrow in the quiver, especially for industrial applications.
+
+Along with geometrical approaches train yourself on optics (especially lenses), cameras and the associated hardware (frame grabbers, the various data busses etc.) and you'll start to stand out from the crowd.
+- This is a nice book that I think covers both areas (geometry and deep learning), albeit with a higher focus on the latter. 
+
+https://visionbook.mit.edu/
+- It's a good book, and one worth having on your shelf. Over time you'll have several more books, many of which can be bought as used copies that cost only a few dollars.
+
+if you think of the work more broadly as a kind of image processing, you'll find that studying several subfields will be relevant and helpful to your work.
+
+  
+EDIT: bad link removed, late night incoherent thinking mostly corrected
+- the dl stuff hardly covers 10% of actual cv problems, and a large portion of that 10% doesnt even work in practice (constraints).  not to mention i could teach my grandma how to train an nn with todays libraries.  so if youre serious about cv,  i'd heavily invest in learning non dl solutions.
+- It is an excellent source for classical CV stuff, sure. I'd say go for it.
+- Many applications of cv don’t need deep learning. The classic stuff is very powerful and low compute cost.
+- The 2014-15 cv conference published a bunch of great arxiv research articles:
+
+https://ieeexplore.ieee.org/xpl/conhome/6909102/proceeding
+
+(Lots of great foundational research can be found here too:
+
+http://olivalab.mit.edu/publications-computer-vision.html
+- I've been working in computer vision for 20 years:
+
+It is necesary to understand why AI models work... this book will help you undestand the undelying principles of vision (both the biology and the math).  
+
+Many times doing some pre-processing will make your AI processing simpler.
+
+Classic computer vision will also help understa d how to.generate.synthetic data... something very useful when your initial dataset is small.
+
+What is more, classic CV can also be used to.test the robustness of your AI models as inputs vary.
+- Hi u/caleyjag, could you please share references that you have used to learn the topics in the latter paragraph ☺️ ?
+- I have a question. "geometrical approaches train yourself on optics (especially lenses), cameras and the associated hardware (frame grabbers, the various data busses etc.) and you'll start to stand out from the crowd." - I am pretty good at all those. Which positions should I try to apply with the above expertise with 6 y.o.e.
+- Thanks for the link!
+- Hi u/Rethunker, unfortunately the reference link you have shared seems to be unavailable 😕. If possible, we would really appreciate if you can share the list pr esent in it as a reply back to this comment ?
+- In practical terms, it’s important for people (students) to remember you exist within a labor market and you’re subject to market dynamics. Things with a barrier to entry, say a bunch of tricky math in an esoteric field, constrain the supply of labor, increasing the price of that labor; your labor, how much you get paid. (All this assuming constant demand, etc.)
+
+The value of your labor will greatly, greatly impact how easy your career is. And I don’t want to say that getting paid a lot means you’ll have an easy life but your career is a big part of your overall life… it’ll help.
+
+You really undercut how valuable you are in that labor market if you just do the easy thing, and have the same skills as everyone else. It’s worth taking the time and trouble to retread the old ground instead of just using the deep learning black box.
+- Honestly I learnt it all on the job.
+
+So rather than a book, I would task yourself with some metrology/measurrment projects where AI is not a fit.
+- To get to the point, not FAANG or Bay Area startups.
+
+Generally, you can look for internal positions directly at big manufacturers (doesn't really matter on the industry, the tricks are all the same) or the ecosystem of smaller integrators that serve those manufacturers' main production hubs (each ecosystem is usually industry and region specific).
+
+For example, the auto industry ecosystem around Munich. Loads of robotics and precision manufacturing integrators in that environment. 
+
+I personally work in pharmaceuticals, which also has a lot of the smaller specialist companies based in that area.
+- Oops! You're quite right, that page isn't visible yet. 
+
+I copied & pasted the current text into a Markdown document in a Github repo:
+
+[https://github.com/Accessibilly/machine\_vision\_references/blob/main/references.md](https://github.com/Accessibilly/machine_vision_references/blob/main/references.md)
+
+There are no changes to the document yet, so it refers to the as yet hidden wiki. Some of the links will take you back to Reddit, I think. And there may be some other broken stuff, but I'm headed out the door shortly, and can fix later.
+- Also, if you find a good book that isn't there, you can post here in r/computervision  or over in r/MachineVisionSystems and I'll check out the book and maybe even buy a copy.
+
+Here's the post I wrote to help gather info, and which one whole response from someone who isn't me:
+
+[https://www.reddit.com/r/MachineVisionSystems/comments/1jhfv9o/machine\_vision\_reference\_books\_familiar/](https://www.reddit.com/r/MachineVisionSystems/comments/1jhfv9o/machine_vision_reference_books_familiar/)
+- liquid nose safe hospital melodic terrific seed cats tub racial
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- Hey thanks for the suggestion u/caleyjag, would it be fine with you if we connected over DMs 😃 ?
+- thank you. That helps.

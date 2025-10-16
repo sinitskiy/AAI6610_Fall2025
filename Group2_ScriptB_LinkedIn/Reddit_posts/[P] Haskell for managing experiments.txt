@@ -1,0 +1,22 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/emexpn/p_haskell_for_managing_experiments/
+Title: [P] Haskell for managing experiments
+
+Content:
+While doing some experiments with machine learning, I have grown more and more tired of the prevalent ad hoc way of managing code. Always thousands of files containing parameters for trained models and predictions from different models and uncertainty of what code even generated them. A disaster for reproducibility. I have tried workflow managers like [luigi](https://github.com/spotify/luigi), but they don't precisely track which source code was used for generating a model. I also generally have an issue with how traditional git version control does not properly handle the machine learning workflow.
+
+
+Proposed solutions to these kinds of problems seem to often lack a lot of flexibility and force you into ways of doing things with which you don't necessarily agree with. The worst offenders are companies selling you their amazing cloud platform subscriptions that will do everything for you.
+
+
+Frustrated with the current state of things, I have decided to take matters into my own hands. Building a deeply customizable tool that lets developers define how they want to do things appears to be a perfect job for Haskell, so I have started writing **[iterbuild](https://gitlab.com/adrianmarti/iterbuild)**. The idea is that you to write your python models and data manipulation functions like you always do in python(R could be implemented in the future) and then you reference and compose them inside Haskell. The Haskell program will then generate python glue code that composes the pieces as specified. It turns out that adding this new layer gives you the possibility to precisely control how you want to handle things like version control, model management, intermediate data caching, etc. inside Haskell and hiding the implementation details(Haskell excels at that). Don't expect the project to be actually usable for real ml experiments right now, it is still more of an idea than a reality. I have written about my ideas concerning iterbuild in the readme of the project and I look forward to seeing whether anyone has his own thoughts on the matter.
+
+Comments:
+- Interesting stuff! I can understand your frustration with existing systems. I've recently came across a Python package called machinable which follows some similar principle that you describe: write your python functions like you do in Python (in so called components) and let an engine stitch them together to avoid glue code (see [https://machinable.org/](https://machinable.org/)). Your idea to generate code is very neat and seems like a logical step; the machine learning frameworks are already code generators in some sense (for auto-diff etc) so applying the same principle on a project level might be fruitful.
+- What you need is just some glue. Why Haskell but not python itself? 
+
+[mlflow.org](https://mlflow.org) or [dvc.org](https://dvc.org) also provide some tools to manage ML workflows.
+- While everything could certainly be implemented in python, I just want to use Haskell to keep the tool nice and customizable to the deepest level. I think python is excellent for quickly writing scripts, but I don't think it does a very good job for complex projects like a build system.
+
+I have actually used both mlflow and dvc in the past.
+- Not many people know Haskell and having to learn it for the sake of a new pipeline tool will just simply make them look for another solution.

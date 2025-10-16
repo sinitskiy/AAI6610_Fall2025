@@ -1,0 +1,67 @@
+URL: https://www.linkedin.com/posts/soumya-dutta-cse_deeplearning-vectorfield-deeplearninguncertainty-activity-7239179849087516674-3Sjn
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Soumya Dutta, Ph.D.的动态
+Soumya Dutta, Ph.D.
+
+CSE Professor at IIT Kanpur | Past: LANL Scientist | Ohio State PhD
+
+1 年
+
+I’m excited to share that our new research paper titled 'Uncertainty-Aware Deep Neural Representations for Visual Analysis of Vector Field Data' has been accepted for presentation in the main track of IEEE Visualization Conference 2024, Florida, USA! The paper will be published in a special issue of the top visualization journal IEEE Transactions on Visualization and Computer Graphics (IEEE TVCG). 
+
+This work delves into uncertainty quantification and its visual interpretation for vector field data when compressive deep learning models are used to reconstruct vector datasets. We study different methods of uncertainty estimation techniques for deep neural networks and how such prediction (epistemic) uncertainty helps in better interpreting the vector field features such as streamlines, critical points, extracted from model predicted vector fields, making the results more explainable, reliable, and trustworthy.
+
+Special thanks to my students Atul Kumar and Siddharth Garg for their dedication and hard work.
+
+A preprint is available at: https://lnkd.in/dXDAgfbx
+Early access of the paper at IEEExplore: https://lnkd.in/dGeQCsJH
+
+#DeepLearning #VectorField #DeepLearningUncertainty #Visualization #MonteCarloDropout #DeepEnsemble #UncertaintyVisualization
+
+120
+4 条评论
+赞
+评论
+分享
+Ayan Biswas
+
+Staff Research Scientist 3 at Los Alamos National Laboratory
+
+1 年
+
+Congratulations!!
+
+
+赞
+回复
+1 次回应
+Pranjal Srivastava
+
+Machine Learning @ Google | CSE @ IITK | Ex-ISRO
+
+1 年
+
+Amazing. Congratulations Atul Kumar and Soumya Sir!
+
+赞
+回复
+2 次回应
+Komal Yadav
+
+Sr. SDE–Full-stack, GenAI & Automation Engr | Sol. Architect & Team Lead | GenAI Sols: RAG, Prompt Eng., QA Automation Apps | M.Tech, IIT Kanpur (CSE) | Lecturer | Full Scholarship(UG/PG) | Acad. Excellence, B.Tech’16–17
+
+1 年
+
+Congrats on the IEEE Visualization Conference acceptance, Soum

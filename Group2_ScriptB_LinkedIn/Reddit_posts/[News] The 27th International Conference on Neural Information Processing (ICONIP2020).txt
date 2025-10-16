@@ -1,0 +1,131 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/fthipy/news_the_27th_international_conference_on_neural/
+Title: [News] The 27th International Conference on Neural Information Processing (ICONIP2020)
+
+Content:
+ ICONIP'20 Full Call  
+
+
+\# Content  
+The 27th International Conference on Neural Information Processing (ICONIP2020) aims to provide a leading international forum for researchers, scientists, and industry professionals who are working in neuroscience, neural networks, deep learning, and related fields to share their new ideas, progresses and achievements.  
+
+
+ICONIP2020 will be held in Bangkok, Thailand, during November 18 - November 22, 2020 and will be collocated with several events, including ACML, iSAI-NLP, JIST-KG, and AIoT.  
+
+
+\# Topics  
+ICONIP2020 will deliver keynote speeches, invited talks, full paper presentations, posters, tutorials, workshops, social events, etc. Topics include but are not limited to:  
+A. Theory and Algorithms  
+A1. Causality and explainable AI  
+A2. Computational intelligence  
+A3. Control and decision theory  
+A4. Constraint and uncertainty theory  
+A5. Machine learning  
+A6. Neurodynamics  
+A7. Neural network models  
+A8. Optimization  
+A9. Pattern recognition  
+A10. Time series analysis  
+B. Computational and Cognitive Neurosciences  
+B1. Affective and cognitive learning  
+B2. Biometric systems/interfaces  
+B3. Brain-machine interface  
+B4. Computational psychiatry  
+B5. Decision making and control  
+B6. Neuroeconomics  
+B7. Neural data analysis  
+B8. Reasoning and consciousness  
+B9. Sensory perception  
+B10. Social cognition  
+C. Human Centered Computing  
+C1. Bioinformatics  
+C2. Biomedical information  
+C3. Healthcare  
+C4. Human activity recognition  
+C5. Human-centred design  
+C6. Human–computer interaction  
+C7. Neuromorphic hardware  
+C8. Recommender systems  
+C9. Social networks  
+C10. Sports and rehabilitation  
+D. Applications  
+D1. Big data analysis  
+D2. Computational finance  
+D3. Image processing and computer vision  
+D4. Data mining  
+D5. Information security  
+D6. Information retrieval  
+D7. Multimedia information processing  
+D8. Natural language processing  
+D9. Robotics and control  
+D10. Web search and mining  
+
+
+\# Important Dates  
+\## Conference Track  
+\* Paper Submission Deadline: May 1, 2020  
+\* Paper Notification Date: August 15, 2020  
+\* Paper Camera-Ready Deadline: September 15, 2020  
+
+
+\## Tutorials  
+\* Tutorial Proposal Deadline: May 1, 2020  
+\* Tutorial Proposal Notification Date: May 8, 2020  
+\* Tutorial Material/Website Deadline: September 15, 2020  
+\* Tutorials Date: Nov. 18, 2020  
+
+
+\## Workshops/Special Sessions  
+\* Workshops/Special Sessions Proposal Deadline: May 1, 2020  
+\* Workshops/Special Sessions Proposal Notification Date: May 8, 2020  
+\* Workshops/Special Sessions Material/Website Deadline: September 15, 2020  
+\* Workshops/Special Sessions Date: Nov. 18, 2020  
+
+
+\# Paper Information  
+Papers should be written in English and follow the Springer LNCS format. Paper submissions are single-blind review, so author names can be shown in the submission. The submission of a paper implies that the paper is original and has not been submitted under review or is not copyright-protected elsewhere and will be presented by an author if accepted. All submitted papers will be refereed by experts in the field based on the criteria of originality, significance, quality, and clarity.  
+
+
+The Proceedings will be published in the Springer’s series of Lecture Notes in Computer Science. Selected papers will be reviewed and published in some special issues of SCI journals.  
+
+
+Final papers after acceptance will normally be 10 pages with a maximum of 12 pages in length. The page count includes everything, including references and appendices. Please follow Springer’s proceedings LaTeX templates provided in Overleaf (https://www.overleaf.com/latex/templates/springer-lecture-notes-in-computer-science/kzwwpvhwnvfj#.WuA4JS5uZpi).  
+
+
+\# Submission site  
+\* https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2Ficonip2020  
+
+
+\# Conference site  
+\* http://iconip2020.apnns.org/  
+
+
+\# Organizing Committee  
+\* Honorary Co-Chairs  
+\* Jonathan Chan, King Mongkut’s University of Technology Thonburi, Thailand  
+\* Irwin King, The Chinese University of Hong Kong, Hong Kong  
+\* General Co-Chairs  
+\* Andrew Leung, City University of Hong Kong, Hong Kong  
+\* James Kwok, The Hong Kong University of Science and Technology, Hong Kong  
+\* Program Co-Chairs  
+\* Haiqin Yang, Ping An Life, China  
+\* Kitsuchart Pasupa, King Mongkut's Institute of Technology Ladkrabang, Thailand  
+\* Local Arrangements Co-Chairs  
+\* Vithida Chongsuphajaisiddhi, King Mongkut University of Technology Thonburi, Thailand  
+\* Finance Co-Chairs  
+\* Vajirasak Vanijja, King Mongkut's University of Technology Thonburi, Thailand  
+\* Seiichi Ozawa, Kobe University, Japan  
+\* Special Sessions Co-Chairs  
+\* Kaizhu Huang, Xi'an Jiaotong Liverpool University, China  
+\* Raymond Chi-Wing Wong, The Hong Kong University of Science and Technology, Hong Kong  
+\* Tutorial Co-Chairs  
+\* Zenglin Xu, Harbin Institute of Technology, Shenzhen, China  
+\* Jing Li, The Hong Kong Polytech University, Hong Kong  
+\* Proceedings Co-Chairs  
+\* Xinyi Le, Shanghai Jiao Tong University, China  
+\* Jinchang Ren, University of Strathclyde, United Kingdom  
+\* Publicity Co-Chairs  
+\* Zeng-Guang Hou, Institute of Automation, Chinese Academy of Sciences, China  
+\* Ka-Chun Wong, City University of Hong Kong, Hong Kong
+
+Comments:

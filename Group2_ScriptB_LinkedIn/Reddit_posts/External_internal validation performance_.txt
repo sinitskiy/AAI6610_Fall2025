@@ -1,0 +1,76 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b00egf/externalinternal_validation_performance/
+Title: External>internal validation performance?
+
+Content:
+Reading a paper on applied machine learning (CNN/DNN for disease classification in healthcare). The authors developed/trained/validated a model on splits of dataset a, and then performed further validation of the model in an external dataset b.
+
+They report a significantly higher performance (AUROC) in the external dataset, which intuitively seems impossible to me. But, before I call BS, I’m curious if this is actually possible under the right circumstances?
+
+(Obviously, other classification performance metrics can be skewed if the external dataset is more imbalanced than the internal dataset (which is the case in the paper), but this shouldn’t affect AUROC, right?)
+
+edit: link to paper by request (see table 2): [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9894867/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9894867/)
+
+  
+edit 2: while the paper refers to AUROC, it’s actually sensitivity vs specificity, not TPR vs. FPR, as some/most (?) people might have expected. So it should be stable across class imbalances.
+
+Comments:
+- The main reason this can happen is due to variance.
+
+Suppose you sample two datasets of size N that you evaluate your model on. It makes sense that the AUCROC computed on both datasets may differ due to the random sampling and finite datasets.
+
+So the question is, how large is the discrepancy? If it's relatively small then I wouldn't consider it very strange.
+
+If it's a large difference, that seems more fishy (unless the datasets are small or prone to distribution shifts).
+- Ofc this can happen when you're not overfitting to your validation data
+- First thought is what are the sample sizes? Weird shit can happen in small samples .
+
+Alternative possibilities include:
+
+1. Data Splitting: The validation dataset might be more representative of the overall population than the training dataset. If the validation data happens to have clearer patterns or less noise, the model could perform better on it.
+
+2. Model Overfitting: It's possible that the model is overfitting to the training data, capturing noise or specific patterns that are not generalizable. This can lead to lower performance on unseen data, such as the validation set. Regularization techniques like dropout, weight decay, or early stopping could help mitigate overfitting.
+
+3. Imbalanced Classes: Class imbalances between the training and validation datasets could affect AUROC scores. If the validation set has a more balanced distribution of classes, the AUROC might appear higher compared to the training set.
+
+4. Data Leakage: Leakage of information from the validation set into the training process can inflate performance metrics on the validation set. Ensure that data preprocessing steps, such as normalization or feature scaling, are performed separately for the training and validation datasets to prevent leakage.
+- Link to the paper?
+- Surely if the model has correct independent/dependent variables and the data while external maps correctly, it should work?
+
+
+Different domains may work differently but in our field we can use calibration models on different things because they obey the same rules in physics/chemistry and map...
+- In this case, the difference is extremely unlikely to be due to randomness (e.g. in the order of 0.75 on internal set increasing to 0.85 in the external set - with non-overlapping 95% CIs, I’m eyeballing something in the p<0.001 ball park). I can see how distribution shifts might change the performance, but that should decrease the performance of the model fitted to the previous distribution, unless something exceptional happens, right?
+
+Edit: both datasets are thousands of rows. The internal set is balanced 50/50 while the external is 5/95 imbalanced.
+- ai generated shit. OP could have asked chatgpt himself if he wanted to
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9894867/
+
+Edit: see table 2. Lots of different models, some improve vastly between internal and external dataset.
+- >Edit: both datasets are thousands of rows. The internal set is balanced 50/50 while the external is 5/95 imbalanced.
+
+The internal set is balanced???? Well that answers all your questions right there lol.
+
+The test set should NEVER be upsampled or downsampled in any way.
+
+The fact that they are evaluating on an artificially balanced test set tells me that all of the results are entirely meaningless and useless in my opinion.
+
+That is just a large and glaring error that I wouldn't trust much of anything else in the study.
+
+EDIT: One last addition, but you mention there are thousands of rows with a 95/5 balance. That would imply that there are potentially less than a hundred positive samples.
+
+Don't forget that AUCROC is essentially the probability of properly ranking one randomly selected positive sample and one randomly selected negative sample.
+
+So if your dataset has less than 100 positive samples, you will see higher variance in your estimate intuitively. 
+
+But even with that being said, the fact that authors evaluated on an artificially balanced test set tells me that there are likely a lot more glaring errors and issues in the entire paper to render it useless.
+- Nope.
+- I would guess that heart disease just presents differently between East Asians and other groups. The first set is from Samsung Medical Center so I assume is mostly Korean, the second dataset is from the Uk so I assume mostly Anglo-European. 
+
+I don’t know about heart disease but I know that for East Asians obesity biomarkers often present signs at lower BMI and weight than other races:  
+
+“The results show that to predict development of diabetes, the cutoff BMI of 30 kg/m2 (obesity) for the White population was at par with 28.1 kg/m2 for Black population, 26.9 kg/m2 for the Chinese, 26.6 kg/m2 for Arab and 23.9 kg/m2 for South Asian adults.
+
+A lower cutoff BMI of 25 kg/m2 (overweight) in White adults, translated to a BMI of 23.4 kg/m2 for Black, 22.2 kg/m2 for Chinese, 22.1 kg/m2 for Arab, and a much lower BMI of 19.2 kg/m2 for South Asian adults is noted.”
+
+https://www.acc.org/Latest-in-Cardiology/Articles/2021/10/18/15/35/More-Than-Skin-Color#:~:text=The%20results%20show%20that%20to,2%20for%20South%20Asian%20adults.
+- Absolutely, but a model trained on one distribution should perform worse when applied to a population with a different distribution.

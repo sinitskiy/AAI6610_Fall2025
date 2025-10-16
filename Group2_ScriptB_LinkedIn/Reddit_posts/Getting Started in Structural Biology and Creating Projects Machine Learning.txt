@@ -1,0 +1,14 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1l9zavn/getting_started_in_structural_biology_and/
+Title: Getting Started in Structural Biology and Creating Projects Machine Learning
+
+Content:
+Hello!
+
+I've began my Master's a while back for biochemical machine learning. I've been conceptualizing a project and I wanted to know what the best practices are for managing/manipulating PDB data and ligand data. Does the file type matter (e.g. .mmCIF, .pdb for proteins; .xyz for small molecules)? What would you (or industry) use to parse these file types into usable data for sequence or graph representations? Are there important libraries I should know when working with this (python preferably)? I've also seen Boltz-2 come out recently and I've been digging into how they set up their repositories and how I should set up my own for experimentation. I've gathered that I would ideally have src, data, model, notebooks (for quick experimentation), [README.md](http://README.md), and dependency manager like pyproject.toml (I've been reading uv docs all day to learn how to use it effectively). I've been on the fence about the best way to log training experiments. I think it would be less than ideal to have tons of notebooks for each variation of an experiment. I've seen that other groups seem to use YAML or other config files to configure a script to experiment a training run and use weights and biases to log these runs. Is this best or are there other/better ways of doing this? 
+
+I'm really curious to learn in this space, so any advice is welcome. Please redirect me if this is the wrong subreddit to be asking. Thanks in advanced for any help!
+
+Comments:
+- It depends on what your goal is, but both pdb and mmcif are very standard so shouldn't change much after you parse them. I usually use gemmi to do that and if I want to extract features and create a ML ready dataset I would generally store it with h5py. Another interesting tool is biotite which I like to use too.   
+Usually if I start a new project, I would start with a pyproject.toml for sure. For logging training I use Tensorboard but recently switcced to wandb, both of them are great options in my opinion. It all really depends on what kind of project and what kind of model you would be developing.

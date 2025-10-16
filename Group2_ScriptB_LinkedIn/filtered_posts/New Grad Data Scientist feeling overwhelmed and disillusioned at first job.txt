@@ -1,0 +1,64 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1mb49xm/new_grad_data_scientist_feeling_overwhelmed_and/
+Title: New Grad Data Scientist feeling overwhelmed and disillusioned at first job
+
+Content:
+Hi all,
+
+I recently graduated with a degree in Data Science and just started my first job as a data scientist. The company is very focused on staying ahead/keeping up with the AI hype train and wants my team (which has no other data scientists except myself) to explore deploying AI agents for specific use cases. 
+
+The issue is, my background, both academic and through internships, has been in more traditional machine learning (regression, classification, basic NLP, etc.), not agentic AI or LLM-based systems. The projects I’ve been briefed on, have nothing to do with my past experiences and are solely concerned with how we can infuse AI into our workflows and within our products. I’m feeling out of my depth and worried about the expectations being placed on me so early in my career. I was wondering if anyone had advice on how to quickly get up to speed with newer techniques like agentic AI, or how I should approach this situation overall. Any learning resources, mindset tips, or career advice would be greatly appreciated.
+
+Comments:
+- I’ve read from a recruiter that you should take a job where you’re 60% qualified. If you are 100% you will be bored and learn nothing. 
+
+I don’t know your situation, but a lot of times people get in their head that the job expects perfection when doing 50% would suffice. The problem we run into is “we know what’s possible” so we always try to meet that thinking everyone else knows that, but they don’t. In other words, give it time and take the opportunity to get paid to learn something new instead of having to pay to take a course on it.
+- Lol a company hiring a new grad as the only data scientist and then going "we need agentic AI do some agentic AI" is so funny. God I want this shit to burst so bad even if it's bad for my career.
+- To be honest 
+
+I’d schedule a “discovery” meeting or smth that sounds super vague 
+
+And drill into EXACTLY what they want
+
+Do they just want to use the buzz words
+
+Or do they ACTUALLY want to build smth of value
+- Fake it till you make it bud. Listen carefully, learn a lot, and do your best. Before you know it you'll be able to walk the walk.
+- its just an API call buddy. you got this. long term your company’s strategy is dumb af but thats a conversation for another day
+- I wouldn't worry about feeling out of your depth, as long as projects are relatively reasonably-scoped. With agentic AI, I think the big thing is trying to push back against the hammer-looking-for-a-nail mentality and to focus projects on those that are truly highest impact/value-add with agentic AI, and also reasonably feasible with the data you have.
+
+Re: resources, here are a few articles/newsletters that I thought were really interesting on the current state of agentic AI workflows. Once you find a few good Mediums, substacks, etc., it's relatively easy to keep your finger on the pulse.
+
+* [Context Engineering primer](https://decodingml.substack.com/p/context-engineering-2025s-1-skill)
+* [RAG in 2025](https://www.turingpost.com/p/amr?_bhlid=52f8a2c31a28c93e4ed9e7758d8065f01d60c7b6&utm_campaign=the-truth-about-rag&utm_medium=newsletter&utm_source=www.turingpost.com)
+* [TLDR AI](https://tldr.tech/ai/archives) (TLDR Data is also really good for more general data science/engineering articles)
+- This is the problem for most of us rn. 
+
+The only constant in technology is the need to upskill on continually changing tools / methods.
+- Don't rely on past knowledge, build and rely on your ability to learn!
+- It's actually a good thing that you are working on things that haven't been solved yet. 
+
+
+You are ahead of the crowd doing same things that they studied. 
+Give your best
+- At least you have a job
+
+A lot of us are out here just slowly spiraling into an existential crisis as our savings dwindles to dust wondering why we got this degree in the first place
+- One thing to realize is everything is just a tool. You don't necessarily need machine learning to solve a problem for the company or do a project. Most of the work is data prep and analysis, and then the ML / whatever just follows after. Figure out the problems with the workflows / products and what can be optimized first and then apply whatever solution works best. If it's LLM, great! If not, and you know how to solve it, also great! If not and you don't know how to solve it, great time to learn what's possible!
+- Try this: [https://github.com/ProjectProRepo/Agentic-AI/blob/main/README.md](https://github.com/ProjectProRepo/Agentic-AI/blob/main/README.md) It is not as difficult as you may think.
+- Tech evolves constantly, so learning on the job is just part of it. As a new grad, no one expects you to know everything.
+
+I usually start with YouTube to get the basics, then dive into the task and learn as I go. It can feel overwhelming at first, but starting anywhere is better than overthinking. Things will start to click along the way.
+
+Good luck!
+- That is all normal. Happens to most people as they enter this field, so welcome to the club. The two skills they don't teach in DS school programs are 1-Adabtability/flexibility and 2-Deliverabilty (i.e. being able to deliver solutions regardless of the challenges), with emphasis on software engineering, yet those are the main skill industry looks for. 
+
+Do not worry, you should be able to learn and practice, there is a vast amount of learning material out there, and allocate the time from work for it.
+- Use chatgpt
+- The purpose of your degree is to give you tools and methods, and to set you up to be able yo learn the new and emerging techniques as they are foundations
+- AI is not going anywhere, ignore all the "bubble burst" nonsense on Reddit. This job seems to teach you highly valuable skills, go for it. Hate to say it, but GPT 4o is probably better at running models than a new grad. Your job going forward will be integrating AI into workflows and managing those integrations. 2017-like data science is dead.
+- Yeah literally nobody has experience using AI and LLMs right now. Welcome to the cutting edge.
+- Dude this sounds fun as hell! Most DS work is just AB testing, measurement, reporting etc. 
+
+Have fun learning the awesome and empowering skill set of Agentic AI.
+- We are all pioneers out here :)

@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/jqv6rw/d_segmentation_networks_for_biomedical/
+Title: [D] Segmentation networks for biomedical applications?
+
+Content:
+Hello everyone,
+
+We are working with biomedical applications in our lab, and we have been using the Tiramisu architecture [1] for some time. We would like to update to a better architecture now. We have specific requirements (listed below) which makes the transition hard, since most newer architectures use a pretrained backbone [2].
+
+The requirements are:
+
+* The number of input channels varies wildly (1-4 channels mostly, e.g. when we have multiple fluorescent channels from a microscope)
+* The output layer can be used for segmentation or pixel regression, and sometimes accommodate an extra layer for aleatoric uncertainty [3].
+* Must converge quickly, as we often don't have access to million of images since the clinical/lab experiments are costly. We do use a lot of synthetic augmentation schemes.
+
+Should I use a pretrained backbone and feed my e.g. 1-channel image in grayscale (this paper had good success with pretrained arch. [4])? Or could I train a model with modified backbone from scratch? Has anyone tried something like this?
+
+Is there any architecture you can recommend for this type of usage?
+
+[1] https://ieeexplore.ieee.org/document/8014890
+
+[2] https://paperswithcode.com/sota/semantic-segmentation-on-cityscapes
+
+[3] https://papers.nips.cc/paper/7141-what-uncertainties-do-we-need-in-bayesian-deep-learning-for-computer-vision.pdf
+
+[4] https://papers.nips.cc/paper/8596-transfusion-understanding-transfer-learning-for-medical-imaging.pdf
+
+Comments:
+- How did Tiramisu perform against UNet which I assume you already tried?
+- Do you think voxelmorph can be of some help?
+- Have you tried feature-pyramid with an Efficientnet backbone?
+- So much better! It was such an improvement. With very few weights compared to U-Net, and since the layers are interconnected, you can a really quick convergence and high accuracy. I don't think I would ever go back.
+- We looked into that, but they seem to use an architecture in the family of U-Net, whereas the newer types with backbones (e.g. DeepLabV3) are different, with atrous convolutions.
+- I don't know much about your problem but I used to work on a segmentation problem using MRI data, so maybe some of this will help:
+
+It was crucial for me to have an architecture that's small and efficient. Vanilla UNet was essentially useless and often wouldn't converge because it was so massive. While trying to scale it down, I noticed that the classic "double the channels when maxpooling" isn't really needed for my use case. I found other sources reporting the same thing on satellite data. I hypothesised that when working with 2D images that represent 2D things in the real world (opposed to 3D things as in most segmentation cases) like MRI slices, satellite data or possibly your data, you can get away by not increasing the number of channels down the network at all. In the end I used a UNet with a constant 32 channels that performed just as good as much bigger variants. It had 200k parameters and trained very quickly.
+
+So, I suspect that even your Tiramisu network might be a slight overkill. It was invented for a pretty complex segmentation task of 3D objects that look very different from different angles. If you haven't already, you could to scale it down along some of the stuff I already mentioned.
+
+An architecture that has been working brilliantly for me over the past months is [U2Net](https://github.com/NathanUA/U-2-Net). Especially the small variant. If you look at the configuration you'll notice the same thing about the channels that I already told you about. You can also use their pretrained model to make comparisons that relate to transfer learning.
+
+If you have a different number of color channels, modify the weights in the first conv layer to match your case. Or only replace the first layer and use the rest pretrained as it is. It usually works better. In their github issues I also described a way of fine tuning the network that is different from the normal procedure. Maybe this can also help your use case.
+
+Hope this helps
+- Great! Thanks for your answer! It contains exactly the type of information I need.
+
+That's definitely my experience as well that smaller models performed just as well, in my last paper we had 165k weights and it worked like a charm.
+
+I didn't know about U2Net, I will look into it!

@@ -1,0 +1,10 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/6fvn7u/d_best_way_of_testing_statistical_significant/
+Title: [D] Best way of testing statistical significant difference on benchmark datasets
+
+Content:
+Some benchmark datasets are quite small (particularly within NLP), making it important to test whether the difference between the new approach's results and the existing approach's results is statistically significant. There seems to be a lot of different ways to test the statistical significance and report the performance of the models, each one getting at a different aspect of uncertainty. Interestingly, this also seems to differ between communities. What method do you prefer to see papers use and why?
+
+I think it's safe to assume that the benchmark datasets have already been split into a training set and test set as is often the case.
+
+Comments:

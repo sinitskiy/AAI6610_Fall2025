@@ -1,0 +1,71 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1jgafsb/is_deep_learning_where_bioinformatics_will_be_all/
+Title: Is Deep Learning where Bioinformatics will be all about?
+
+Content:
+Hi, I come from a microbiology background and completed an MSc in Bioinformatics. Most of my work has focused on bacteria and viruses, but I find running tools to analyze data a bit boring. That’s why I’m looking to shift things up, though I feel a bit lost.
+
+I’ve noticed that many major projects using deep learning have been released in recent years—like AlphaFold, DeepTMHMM, and BioEmu-1. I understand these kinds of projects are incredibly complex, especially for someone without a computer science background. However, I’m surrounded by friends who are currently working in machine learning.
+
+I’m still in the very early stages of my career. If you were in my shoes, would you consider shifting your career toward ML?
+
+Comments:
+- To the question in the title: No. The majority of bioinformatics involves no deep learning and has no reason to involve deep learning. There are many problems solved by algorithmic approaches, useful visualisations, statistical modelling and more.
+
+To the question in the post: Maybe. Only if you’re willing to dedicate a great amount of effort learning the intricacies of machine learning properly. Deep learning solves a specific class of issues well, when the problem is too complex for algorithmic approaches and statistical models, but for which a large amount of well labelled data exists.
+
+There is no shortage of people applying deep learning to random problems in bioinformatics, offering only some promise of higher F1 score with zero justification for how they chose their model architecture, no interpretation of what their model has learned, and no evidence that their model is robust for other datasets.
+
+So the question is whether you believe you can work yourself into a position where you can have access to large, well labelled datasets, the compute resources to train deep learning models on such a dataset, and the expertise to set up an interpretable machine learning model.
+- Bioinformatics demand lot of explainability. One reason why ML is not widely accepted. Random forests and boosting models are hence popular. 
+
+If i ask 10 people. At least 7-8 people would say random forest is their favourite.
+- My masters thesis was using machine learning un protein structures, that was 14 yeara ago. As a bioinformatician, it's important to know machine learning fundamentals. However, I haven't used ML since my MS project. Biological data is so heterogenous, it's one of the hardest to apply ML to. This is the reason most deep learning projects tend to be complex.
+- It is really difficult to tell where the field will go as a whole. Additionally you'll have to carve out your own niche in academia or industry.
+
+In my opinion, the expertise that enhances all other bioinformatics skills best is still solid Bayesian statistics. With that in your back pocket: ML and deep learning are much more approachable if not trivial. You will also have a massive advantage when evaluating tools, checking intuition and communicating results. 
+
+So if you have extra capacity I would invest into enhancing Bayesian statistics, it is the foundation to solving most bioinformatics problems .
+- Just look what kind of PhD and postdoc positions are getting funded. That's where the science is going to be in the next 5-10 years. Spoiler: there's so much more than ML.
+- Unpopular opinion:  the number of things that can be solved by ML in biology is limited, and we’re already trying to use it to solve things that can’t be solved with It.
+
+It is inherently a platform for finding approximate relationships between things, but science is about finding exact answers.  Ultimately, even if we find the rough answers using ML, we are still going to want to understand the why and how things work and aren’t going to be satisfied with “almost right” solutions. 
+
+Art and science have very different end goals.
+- there are limits to what we can understand about how organisms live and die using molecular data. This is one of the biggest issues in the field now. Statistical methods do not address it in the slightest, they just shift the complexity away from sight
+- Depends on the problem.  We have a lot of problems with very small numbers of samples where deep learning will never help.  On the other hand we also have a lot of problems with a lot of training data, especially in industry, where deep learning can be very valuable.  There are also image recognition problems.  I wish I knew more just so I had a stronger personal toolkit. But a strong working knowledge of statistics will already get you pretty far.  Just today I had to explain something very basic about sources of statistical noise to my manager.
+- I'm a clinical person but do a lot of bioinformatics. So just from my perspective...Deep learning requires a lot of data and overfit/black box approaches are not applicable to many important clinical questions (where you have small n large p data). We already have a replication crisis and no one trusts anyone else's data. 
+
+Learn how to do L1/L2 regression and random forest and you will be able to do a lot of the deep learning type things but with more interpretability and less over fitting. 
+
+Deconvolution is a great example - read this paper and pay attention to the methodology used. 
+https://www.nature.com/articles/s41467-024-50618-0
+
+If you look at some of the top performers across cell types (besides cibersortx) - they're often exceedingly simplistic approaches (not that the research isn't impressive, but sometimes straightforward is better). 
+
+I'm sure others can find similar examples, but just because you have the compute doesn't mean it's always better to use.
+- Most of the questions we are currently interested in like the medically relevant ones (is gene x related to disease y) even if multifactorial are single instance questions should be obvious with enough data.
+
+Language and media have the advantage of being essentially a composite of simple preanswered questions with tons of preexisting easy to format training data available. Biology doesn't have this and the technology that would give it to us would mostly obviate the need for deep learning at least for much of the immediate questions we have.
+
+I've seen papers where they produced beautiful expression maps with fancy algorithms but the obvious way forward is to wait for the actual sequencing tech price to drop like a rock for the gobs of training data it needs but at that point you already can just do the sequencing.
+
+Not saying deep learning doesn't have a place. But maybe in less low hanging fruit than magically making our RNAseq 100x better. Like maybe understanding the underlying grammar of genes, synthetic bio etc.
+- No. But having said that, I’m taking a learning deep learning course right now because i think it’s fun and useful for my project. I’m not developing new methods, just using methods others have developed , but I want to understand it better. It’s definitely one avenue of research and specialization.
+- Tbh im seeing a ton of positions where AI is mentioned so focussing on AI seems like a good idea
+- Hey! I feel I'm kinda naive to answer the question here but here is my take on this: I have worked on some really interesting projects on computational Biology. After learning a few models of Deep Learning, I started working on "Cataract Detection using CNN" as a practice model to hone my deep learning skills, and I got so interested that now I have taken a major Computational Biological project based on MRIs and detection. 
+
+A few things I'd like to mention: I had to use only 5% of Biological knowledge, the rest 95% was entirely math. You need to understand that Deep Learning is more math and hence, using Biological data doesnt necessarily mean youre dealing with Biology.
+
+If you want a hybrid which has applications of Biology as well, then maybe you can work on deterministic data analytics projects which are based on Biology, a common interest amongst both, CS and Biology majors is gene sequencing.
+
+P.S.: Although I am a CS major, I have a Biotech major friend and her take is that bioinformatics is not all about deep learning, computational Biology and Bioinformatics are very different fundamentally. Hope this helps!
+- Clean data, Random forest, get important features, use them to biologically explain the phenomenon, design next lab experiment. Repeat.
+- bagging and boosting are popular, because they deliver decent performance on tabular data with very basic fucking around. They are not explainable in the slightest, shap values and such are trash. The only (and very poor) way to actually achieve that is to either build single trees or look at the first stump in boosting methods.
+- Yep in my experience XGBoost is great for single cell data.
+- hello, as someone with cs background and wanting to get into bio informatics, can you please tell me what other things that i should learn especially in masters
+- solid advice.
+- I feel like this newer field of mathematics known as "chaos theory" could potentially help too, which iirc won a Nobel Prize a few years back due to its foreseen applications in a lot of fields, as hence the name, it essentially allows a degree of predictability in randomness. Foreseen uses of it include meteorological breakthroughs but also biology ones like predicting how animal populations will flux over time, or the intricacies of how a cancer grows.
+
+I'm still pretty new to this, so I could very much be wrong though
+- [deleted]

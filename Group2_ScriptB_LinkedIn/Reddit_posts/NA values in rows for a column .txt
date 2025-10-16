@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1d8ufl8/na_values_in_rows_for_a_column/
+Title: NA values in rows for a column 
+
+Content:
+Hi, for NA values apart from the normal imputation, is it also ok to just keep it as NA values when building a machine learning model? cause even though that one column might have an NA, the other columns of that particular row have values that can be helpful. Can machine learning models use this information from the other columns even though one column has an NA value for that row? 
+
+  
+If so, do all machine learning models allow this or is it specific to some models? 
+
+  
+The issue is that my data set is very small and having the mean,mode etc (imputation) would be incorrect here and I don't want to remove these rows 
+
+Comments:
+- This depends on your model selection. For instance, if you want to use XGB, LGBM, or CATBOOST you don't need to fill the NaNs. These have some handling approaches for NaNs values. You can leave them as NaN.  
+  
+But algorithms like LogisticReg, SVM, NN etc. need to see these NaNs as filled. You can fill NaNs with basic imputation methods like mean, median, mode or you can use more complex imputation methods like LGBM Imputation.   
+  
+However, you should be aware that if you fill NaNs with some values, you may lose information or affect your model in a bad way.
+- Imputation in practice is very dirty if you just do simple imputation.  It can sometimes help if you only care about prediction-but that's being generious
+
+  
+Flexible Imputation, Van burren is a great resource.
+- I see that your NaN values are categorical. Keep in mind that missing categorical data may be inherently meaningful. A patient not answering an intake question on race/ethnicity shouldn’t be imputed to ‘White’ (or any other modal value), for example, but rather modeled as its own ‘not provided’ category.
+- I'd say it would depend on the amount of NA values you have in the column. If you are arguing that the column's data is valuable however, it does not positively contribute to the accuracy of the model with it's overwhelming amount of NA, then there's no reason to keep it. If you keep NA in your model. Let's say you are doing a one-hot-encoding method. The method will treat the NA as its own separate value.....which no one wants.   
+  
+Imputing the data will eliminate this. The general rule of thumb though is to impute when you have at least 95% non null in column.
+- It all depends on your problem. numerical model can't deal with NA. You must choose between a predefined value or an interpolation.
+- You can keep the row and remove the NA
+- Bqqbwwnrjq
+- Yes, you can keep NA values when building a machine learning model, and the information from other columns can still be useful. However, not all models can handle NA values directly. Algorithms like decision trees and their ensemble methods (e.g., Random Forest) can manage NA values better, as they can treat them as a separate category.
+
+For other models like, you might need to encode NA values differently, such as using a specific value like -1 or creating an additional binary indicator column to denote the presence of NA values. Sometimes, NA values themselves can carry important information and can be beneficial for the model.
+- [deleted]
+- Ah ok, also do machine learning models find it useful when for example there is this one row of data and in that row, there is one column that has an NA while all the other columns have a value, would the machine learning models still be able to capture the data from rest of the columns even with that one NA column?
+
+Thats what I'm kinda thinking about, like I have 250 NAs for this one column out of 2500 rows so I don't want to impute. But was wondering if keeping it would help the model capture the values stored in the other columns of the corresponding row where these 250 NAs are present for one column. And  this seems to be an important column so I would like it to learn from the remaining values that are not NA, that's why i don't want to remove this column.
+- Not sure what impute mean here: (1) Replace NA with some value or (2) Remove NA row/column
+
+If it is (2) then I dont agree with this view. There is no reason to remove data/information. If the NA is not missing at random and the NA/target is correlated then any imputing will reduce the model performance. If NA is missing at random then include that feature does not increase nor decrease model performance hence no drawback
+
+For example: A person with missing credit rating may have higher default rate than an average person
+
+There are some machine learning models already have NA treatment built-in (Such as Catboost which treats NA as either Max or Min value) which retain those information
+- wdym?
+- Ah makes sense, will try this
+- As said in other comments, it truly depends on the model you select. If your data set is 2500 then 250 NA's seem within reason to impute in my opinion.
+
+There are plenty of methodologies to replace your nulls whether it be use df.mean() or df.median() or even instill another linear regression within each row to predict for that particular value.
+- Impute definitively means to replace null values with estimations based on already known data. I am confused how that would be ambiguous.
+- Replace that NA value with a zero or something that won’t affect the prediction extremely (an average)
+- so the column is a categorical variable, maybe then have that NA value as a separate level ?
+- Some algorithms can automatically handle missing values as their own category.
+- Or the most recurrent yes

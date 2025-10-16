@@ -1,0 +1,48 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1csh3tv/discussion_what_are_sota_uncertainty/
+Title: [Discussion] What are SOTA Uncertainty Quantification Methods for Neural Networks?
+
+Content:
+I recently started to look into this topic and I am curious which methods are SOTA and used in production?  To be more specific, I am interested in modeling aleatoric and epistemic uncertainty for a neural network. In an ideal setting my model tells me when it encounters inputs that are out-of-distribution and expresses it's uncertainty for a given input in respect to the systems noise.
+
+EDIT: I am mainly working with regression problems.
+
+Thanks in advance! :)
+
+Comments:
+- The easiest method is multiple sampling at inference with drop out enabled
+- You should look at this recent (2024) paper where we benchmark various Bayesian neural network methods specifically for uncertainty quantification in regression tasks:  
+Paper: [https://doi.org/10.1016/j.neucom.2023.127183](https://doi.org/10.1016/j.neucom.2023.127183)  
+Preprint: [http://profs.polymtl.ca/jagoulet/Site/Papers/Deka\_TAGIV\_2024\_preprint.pdf](http://profs.polymtl.ca/jagoulet/Site/Papers/Deka_TAGIV_2024_preprint.pdf)
+- I liked [https://arxiv.org/abs/2402.19460](https://arxiv.org/abs/2402.19460)
+- Look into conformal prediction. There's a variety of methods under this umbrella, including density-based.
+- If memory usage is not a problem Deep Ensembles are hard to beat. 
+Otherwise, you can simply regularize the NN with spectral normalization and train a density estimator on the latent space (e.g. GMM).
+The likelihood of the embedding then serves as an uncertainty estimate.
+See for example https://openaccess.thecvf.com/content/CVPR2023/papers/Mukhoti_Deep_Deterministic_Uncertainty_A_New_Simple_Baseline_CVPR_2023_paper.pdf
+- I would say deep ensembles most likely, especially if you factor in implementation complexity. This has driven the Bayesian neural network community a bit mad. 
+
+I would also recommend https://arxiv.org/abs/2110.13572 as a possible fancier alternative
+- [removed]
+- There just was an ICLR oral that might be interesting for you https://arxiv.org/abs/2401.08501
+- I think feature based methos are more popular. People try to make modifications to model during training like including stuff like spectral normalisation and stuff but at the end its just using some feature based method. Take up any feature based method and you myt get good estimates. Like Virtual logit matching, gaussian modelling etc
+- We’re experimenting with this technique in a physics code: https://arxiv.org/pdf/2207.07235
+- !remindme 2 hour
+- Yes but I've stumbled upon concerns about the quality of uncertainty estimates with Monte Carlo Dropout. Do you know if this concerns are of relevance in practice?
+- Thank you, I will have a look at this. Do you plan to share a corresponding git repo with the publication?
+- I was gonna post this one too
+- Conformal prediction has some nice properties but assumes training and test data are exchangeable, which will not be true in a situation where we have distribution shift, i.e. the new data is not from the same distribution as the training data, which it sounds like is one thing that OP would like to detect. There have been a number of papers that have tried to develop methods to overcome this limitation but to my knowledge they have only been able to do so for certain cases or given certain assumptions, for example if we know how the distribution of the data has changed or if the shift in distribution meets certain criteria. I am not sure how well these kinds of assumptions fare on real-world data, it probably depends...
+- But ensemble models perform very bad at OOD predictions, right? It is weired that I can see ensemble models predict very bad at OOD regions but I do not understand why the authors do not emphasize it. you can see figure 1 in [https://arxiv.org/abs/2302.06495](https://arxiv.org/abs/2302.06495) also it was shown clearly in SNGP.
+- Why spectral normalization specifically?
+- Might be but i guess that there are methods out there that work model-agnostic / orthogonal to the neural network architecture you choose.
+- Do you have a specific feature-based method in mind that works well?
+- I will be messaging you in 2 hours on [**2024-05-15 13:54:46 UTC**](http://www.wolframalpha.com/input/?i=2024-05-15%2013:54:46%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/MachineLearning/comments/1csh3tv/discussion_what_are_sota_uncertainty/l456km3/?context=3)
+
+[**CLICK THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2FMachineLearning%2Fcomments%2F1csh3tv%2Fdiscussion_what_are_sota_uncertainty%2Fl456km3%2F%5D%0A%0ARemindMe%21%202024-05-15%2013%3A54%3A46%20UTC) to send a PM to also be reminded and to reduce spam.
+
+^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201csh3tv)
+
+*****
+
+|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|
+|-|-|-|-|

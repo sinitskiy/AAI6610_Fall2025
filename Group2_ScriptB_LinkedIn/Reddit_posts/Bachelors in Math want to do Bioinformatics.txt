@@ -1,0 +1,9 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/unlc5s/bachelors_in_math_want_to_do_bioinformatics/
+Title: Bachelors in Math want to do Bioinformatics
+
+Content:
+Hello I just graduated with a Bachelors in math i did research in machine learning in bio during my undergrad and recently got a job as a clinical data analyst which has sparked my interest in bioinformatics. I want to do a masters but I am not sure if its better to do a masters in Bioinfirmatics or general Data Science with some specialization, either way I would pursue an internship or research in some bioinformatics position while doing my masters. What would you reccomend ? thank you
+
+Comments:
+- For bioinformatics you need a fair bit of domain knowledge in biology and a master of bioinformatics can get you started on that. data science degrees on the other hand are more versatile and can open you to other career paths, but probably wont expose you to specific knowledge and algorithms in bioinformatics.

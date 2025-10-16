@@ -1,0 +1,8 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1dubxgc/r_what_is_the_best_way_to_quantify_the_trade_off/
+Title: [R] What is the best way to quantify the trade off between model evidence and parameter uncertainty in the dynamic casual modelling ?
+
+Content:
+For example in a MRI scan
+
+Comments:

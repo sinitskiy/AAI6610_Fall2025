@@ -1,0 +1,57 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1gwomft/d_research_topics_in_conformal_prediction/
+Title: [D] Research Topics in Conformal Prediction
+
+Content:
+My background is in econometrics and soon I'll start to work in my master's thesis (already have a supervisor but would like to come up with some ideas that I could integrate in my research). One thing that recently got my attention were uncertainty quantification methods, specifically Conformal Prediction.
+
+One thing that seems particularly cool is that it can be adapted to ensure coverage across specific groups in the covariates or even the labels. Additionally, 'recently', the research community was able to tackle the most limiting assumption, that of exchangeability, meaning it can be applied, for example, to time-series data.
+
+My questions are two-fold (one out of curiosity and the other for personal interest):
+
+1. What are some real-world scenarios that you've seen Conformal Prediction shine? And if there is some scenario that you'd think it would work but didn't.
+2. And what do you think are some interesting questions yet to be addressed?
+
+Any thoughts or general feedback very welcome! Thanks in advance!
+
+Comments:
+- For time series I use a variant of a block bootstrap and cross validation. This is a way to provide better confidence intervals without having to have many more backtest (cross validation) windows. 
+
+I practice I find them to be slow to compute, but still faster than using some distribution based DL models. I also find that unless you have a lot of data to cross validate against, they don’t inspire confidence.
+
+The no free lunch applies to conformal predictions, there are some definite trade off you have to make based on the availability of data and train time of your models. 
+
+I came up with the hybrid approach above but the trade off was that it tended to underestimate the true interval.
+- I’m fascinated by quantile regression. When I dug into it deeply found some interesting things. The so-called quantiles are not guaranteed to be ordered. This can create odd stuff if comparing them. Due to this, some methods sort results internally so they are “intuitive”. This all implies the statistical guarantees might be lacking!
+
+I attacked this using random forest regression by computing quantiles having various amounts of dropped estimators and/or dropped predictors. You could also use permutations or other approaches. Turns out the ordering problem persists. 
+
+So any method using loss functions generating quantities, including the ubiquitous pinball loss, is subject to the issue. As well as other randomized methods. 
+
+I use currently my own estimator dropout method and feature dropout method as I at least understand what they do, but feel there are open questions in quantile methods.
+- I see, pretty cool. What CP frameworks do you use to overcome the non-exchangeability? EnbPI, SPCI?
+- >The no free lunch applies to conformal predictions, there are some definite trade off you have to make based on the availability of data and train time of your models. 
+
+Hi, could you possibly elaborate? Imo it seems pretty good from a cursory glance but ofc im not sure what people really think of it in practice
+- The approach you described won't have coverage and won't provide correct prediction intervals.
+- Conformalized Quantile Regression does seem useful, but could you pls clarify what you mean by the “quantiles are not guaranteed to be ordered”? Does it mean that there can exist crossovers between quantile values?
+- this method won't have coverage guarantees and won't produce correct prediction intervals.
+- The one I posed above is a variant on split conformal. It doesn’t have a non-exchangeability issue if you adjust or penalize the conformity score. 
+
+You can find the recent paper but those other two frameworks are kind of overkill and haven’t be adopted by any of the major forecasting frameworks. All that I have seen use variants on split CP.
+- Some how you read an old post that was only a few sentences and still completely missed the part where I proactively acknowledge that it underestimates the true interval?
+- Yes, exactly that.
+- I agree. Conformal prediction is probably the most promising approach.
+- it  isn't a variant of split conformal.
+- A few sentences was enough to see you don’t understand the basics of probabilistic prediction. I recommend Gneiting paper as starters.
+- First of all, you should cite which paper by Gneiting. Even a cursory search shows that most of their work is not in relation to conformal prediction. The only close example is a paper critiquing quantile loss, which I fundamentally agree with and do not use in any of my work. 
+
+Also, if you want people to read your book or look at your repo (which you have posted here and other subreddits I frequent), you should engage in a more positive manner. 
+
+The fact that you needed to make a redundant reply to my disclaimer (which already said exactly what you wrote) and then try to insult me means that you lack both reading comprehension and class.
+- If you were familiar with the subject, you would realize that the way probabilistic predictors are evaluated has nothing to do with conformal prediction. These evaluation methods are established within probabilistic prediction itself, and anyone familiar with the field knows exactly which paper defines them. Pointing out that someone is unfamiliar with a subject they are making claims about is simply stating a fact. Personally, I couldn't care less whether you read the book or used the repository — I'm just correcting your false claims about conformal prediction.
+- What are the false claims? The method I mentioned is an adaptation of conformal prediction for time series (aka rolling CV splits for multi-step forecasting) which is implemented in Nixtla, which references your repo. I just do block bootstrapping and train models off it when my forecast horizon and training length don’t allow for multiple CV windows. Which I transparently mention the drawbacks of this implementation. 
+
+Could have been avoided if you asked me to expand on the method instead of posting redundant to my disclaimer, then trying to accuse me of lacking the basics of probabilistic prediction. 
+
+Ready to read that specific Gneiting paper you think is important to this conversation.

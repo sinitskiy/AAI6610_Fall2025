@@ -1,0 +1,64 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/jsvnvs/p_humanloop_annotate_data_train_and_deploy_nlp/
+Title: [P] Humanloop -- Annotate data, train and deploy NLP models. Fast.
+
+Content:
+Hi all,
+
+
+We’re Peter, Raza and Jordan of [Humanloop](https://www.producthunt.com/posts/humanloop) and we’re building a low code platform to annotate data, rapidly train and then deploy Natural Language Processing (NLP) models. We use active learning research to make this possible with 5-10x less labelled data.
+
+
+
+
+We’ve worked on large machine learning products in industry (Alexa, text-to-speech systems at Google and in insurance modelling) and seen first-hand the huge efforts required to get these systems trained, deployed and working well in production. Despite huge progress in pretrained models (BERT, GPT-3), one of the biggest bottlenecks remains getting enough _good quality_ labelled data.
+
+
+
+
+Unlike annotations for driverless cars, the data that’s being annotated for NLP often requires domain expertise that’s hard to outsource. We’ve spoken to teams using NLP for medical chat bots, legal contract analysis, cyber security monitoring and customer service, and it’s not uncommon to find teams of lawyers or doctors doing text labelling tasks. This is an expensive barrier to building and deploying NLP.
+
+
+
+
+We aim to solve this problem by providing a text annotation platform that trains a model as your team annotates. Coupling data annotation and model training has a number of benefits:
+
+1. we can use the model to select the most valuable data to annotate next – this “active learning” loop can often reduce data requirements by 10x
+
+2.  a tight iteration cycle between annotation and training lets you pick up on errors much sooner and correct annotation guidelines
+
+3. as soon as you’ve finished the annotation cycle you have a trained model ready to be deployed.
+
+
+
+
+Active learning is far from a new idea, but getting it to work well in practice is surprisingly challenging, especially for deep learning. Simple approaches use the ML models’ predictive uncertainty (the entropy of the softmax) to select what data to label... but in practice this often selects genuinely ambiguous or “noisy” data that both annotators and models have a hard time handling. From a usability perspective, the process needs to be cognizant of the annotation effort, and the models need to quickly update with new labelled data, otherwise it’s too frustrating to have a human-in-the-loop training session.
+
+
+
+
+Our approach uses Bayesian deep learning to tackle these issues. Raza and Peter have worked on this in their PhDs at University College London alongside fellow cofounders David and Emine [1, 2]. With Bayesian deep learning, we’re incorporating uncertainty in the parameters of the models themselves, rather than just finding the best model. This can be used to find the data where the model is uncertain, not just where the data is noisy. And we use a rapid approximate Bayesian update to give quick feedback from small amounts of data [3]. An upside of this is that the models have well-calibrated uncertainty estimates -- to know when they don’t know -- and we’re exploring how this could be used in production settings for a human-in-the-loop fallback.
+
+
+
+
+Since starting we’ve been working with data science teams at two large law firms to help build out an internal platform for cyber threat monitoring and data extraction. We’re now opening up the platform to train text classifiers and span-tagging models quickly and deploy them to the cloud. A common use case is for classifying support tickets or chatbot intents.
+
+
+
+We came together to work on this because we kept seeing data as the bottleneck for the deployment of ML and were inspired by ideas like Andrej Karpathy’s software 2.0 [4]. We anticipate a future in which the barriers to ML deployment become sufficiently lowered that domain experts are able to automate tasks for themselves through machine teaching and we view data annotation tools as a first step along this path.
+
+
+
+Thanks for reading and come check us out on Product Hunt https://www.producthunt.com/posts/humanloop! 
+
+
+[1] https://openreview.net/forum?id=Skdvd2xAZ – a scalable approach to estimates uncertainty in deep learning models
+
+[2] https://dl.acm.org/doi/10.1145/2766462.2767753 work to combine uncertainty together with representativeness when selecting examples for active learning.
+
+[3] https://arxiv.org/abs/1707.05562 – a simple Bayesian approach to learn from few data
+
+[4] https://medium.com/@karpathy/software-2-0-a64152b37c35
+
+Comments:

@@ -1,0 +1,41 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1aq3q1h/essential_math_for_data_science_vs_math_for/
+Title: Essential Math for Data Science VS Math for machine learning, which is a better book?
+
+Content:
+Which of these is a better book for someone who knows almost nothing about linear algebra and friends... I am doing machine learning with scikit learn rn as well as a machine learning track on datacamp
+
+Comments:
+- Maybe it might help if you dropped a link to both so we can at least peruse the contents. Without being familiar with either of those books I'd say math for data science is probably much more fundamental than math for ML. DS is of course broader than training ML models and while you can still successfully train an ML model in sklearn without knowing the math, you can't do statistics without knowing the statistics. 
+
+When I interview I ask fundamental stats questions and not knowing them would be an instant no-hire. If you knew some of the math in your ML models that's a cool plus but it wouldn't be a deal-breaker if you didn't.
+
+That said, try to familiarize yourself with ML math also at some point. Especially like gradient descent and related optimizers. It's still important, just not as pressing
+- MML is great as a refresher if you are already somewhat familiar with the concepts. it's too terse for a first go
+- Can someone please upvote my comment? I need 10 karma points to ask a question in this sub
+- If you're good with Math the less mathsy book would be better and if you're not so good the more mathsy book would better
+- May I suggest: The Statistics and Calculus with Python Workshop: A comprehensive introduction to mathematics in Python for artificial intelligence applications by Peter Farrell?
+
+It has 4.7 rating on Amazon and does really well explaining stats and calculus. And since it is a workshop book, it has lots of exercises (and solutions) for you to practice on. Easy to read and well written with Python focused!
+- I would start with Essential math and then continue with Math for machine learning
+- Read both. Though the best is honestly to watch linear algebra videos/read a textbook since both books go through them pretty fast. Those books are excellent as refreshers, but not as great if you’re new to the area
+- Out of curiosity what types of stats questions would you ask in an interview?
+- I was recently reading it myself and was going to say the same exact thing. It's a very nice book if you're just looking to refresh and fill a few holes. For example, I hadn't thought about matrix decompositions in years, and I never knew what was going on with calculus involving matrix functions. It scratched those itches for me.
+
+But you're in for a bumpy ride if you try to teach yourself a whole field like linear algebra or probability with it. (Particularly given the level of mathematical maturity it seems to expect.)
+- selective like slim sparkle sink ink history vanish scarce sense
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- Should I accompany it with something else for linear algebra?
+- Like a basic question would be if you take N (N biggish) samples from a population and tried to use the sample mean to estimate the pop mean what is the confidence interval? Follow ups are what theorem are you using and what assumptions are you making to justify that theorem. 
+
+A basic Bayes question might be if a rare disease affects x% of the population and the test for it is y% accurate then what is the probability you have the disease if you tested positive for it.
+- You work on what you need to learn the most
+- It has a chapter or two on linear algebra and vectors
+- Thanks for this! 
+
+I came to the subreddit today trying to figure out what math-related DS questions I could be asked at interview for a math heavy DS role (trying to figure out what that entails. This is useful, thanks.
+- follow imagine absurd repeat homeless chop illegal money stupendous wine
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- How did your search go? I'm interested to find out more about this

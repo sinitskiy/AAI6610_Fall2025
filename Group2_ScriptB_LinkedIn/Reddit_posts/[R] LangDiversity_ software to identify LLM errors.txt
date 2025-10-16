@@ -1,0 +1,21 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/16xakha/r_langdiversity_software_to_identify_llm_errors/
+Title: [R] LangDiversity: software to identify LLM errors
+
+Content:
+Due to challenges such as hallucination, detecting errors in the output of a given prompt becomes an important challenge. LangDiversity is an implementation of "diversity measures" that are domain independent and can be used to measure the uncertainty in the result of a language model.
+
+Type pip install langdiversity
+
+Video: [https://www.youtube.com/watch?v=86J\_K9mR7lw](https://www.youtube.com/watch?v=86J_K9mR7lw)
+
+Web: [https://neurosymbolic.asu.edu/llm-correction/](https://neurosymbolic.asu.edu/llm-correction/)
+
+Visit [https://github.com/lab-v2/langdiversity](https://github.com/lab-v2/langdiversity)
+
+Read the paper: [https://arxiv.org/abs/2308.11189](https://arxiv.org/abs/2308.11189)
+
+https://preview.redd.it/rb0xg1ly8nrb1.png?width=1021&format=png&auto=webp&s=8e57056d24327ca2987abea12a7a9066a825738b
+
+Comments:
+- interesting idea. thanks for sharing.

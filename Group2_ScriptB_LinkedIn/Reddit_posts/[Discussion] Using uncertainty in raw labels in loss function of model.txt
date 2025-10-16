@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ilz5vs/discussion_using_uncertainty_in_raw_labels_in/
+Title: [Discussion] Using uncertainty in raw labels in loss function of model
+
+Content:
+We have generated a dataset where there are multiple numeric scores (prevalence of phenomena on range 0-1) for each image. The dataset is about 100k images,  where each image has been labeled at least twice by separate users. In my data exploration I found that some users consistently rate images 20-30% higher than all other users. We also did a little bit of user consistency testing by mixing in the same set of image into the rest of their work (same images 35 times by a domain expert over course of 3 months). We found that user ratings are always within +/- 15% of their average score (ie: if the ground truth is 0.3, the resulting labels are always between 0.15-0.45). Because I have some of these underlying stats about how the labels change person to person and over time, is there a way to incorporate this knowledge into my model or loss function?
+
+One idea I had was to set the target for each image by sampling from N(score\_mean, score\_std) and re-sampling every time the image is used. My gut feeling is that this will help the model generalize as the labels are not fixed, but are always within what a domain expert has labeled the image.
+
+Another idea I had was to have a per sample weight to the loss for each image where the weight is a function of the standard deviation of the scores (assigning more weight to score where all the labels tend to agree with each other).
+
+I know this is starting to get into the realm of Bayesian/probabilistic neural nets, wondering if anyone has taken a kind of half step on this.
+
+Comments:
+- I did something like this in a recent, yet unpublished paper. We've used fuzzy sets to express uncertainty in our class labels. As loss, we applied the so-called optimistic superset loss (you should find papers by Hüllermeier et al.). If you want, we can chat about it more in depth. I would like to share our thoughts on this. :)
+- I finally got around to reading some of Hüllermeier's papers, I think the concept of the optimistic superset loss is exactly what I was thinking about. In my case I would be parameterizing the OSL by the observed deviation in my labels. I'm getting to the point in my current project where I might be implementing it, so we will see how it goes. Thanks!
+- Glad to help. :)

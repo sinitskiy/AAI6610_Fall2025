@@ -1,0 +1,46 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1kl2fq2/8_yoe_7_years_software_engineer_trying_to_pivot/
+Title: [8 YoE] 7 Years Software Engineer Trying to Pivot to Data Analytics/Science/Machine Learning
+
+Content:
+
+
+Comments:
+- FYI your attempt to anonymize the company names doesn't quite work because of the reference to the acquisition of SanDisk
+- I would switch education to the top and the skills where education is. Your profile makes sense once we realize that you basically took time off to do a Masters in Statistics.
+
+I would add one line at the top of your resume like "Data Scientist with +6 years of SWE experience and Masters in Statistics from UC..."
+
+You also need to identify your strengths. For technical skills you are basically listing what everyone lists without visible hands-on experience in most of them besides HW.
+
+What type of DS jobs are you targeting? From the resume, I don't get where you fit in the long list of DS jobs.
+
+Jobs you could target:
+
+\- DS in the Infra area. I don't know much about this other than a friend who was in EE does this, and it's very technical, kind of a mix between DS and SWE. So I think you could sell yourself well there.
+
+\- Do DS in one of those start-ups (with good funding) that are looking for DS but also someone with strong SWE experience. There are many right now.
+
+\- Apply for MLE roles but be ready to do leet code medium/hard
+
+What you shouldn't waste your time on:
+
+\- DA, you don't have a profile for DA and you mentioned that in the other post
+
+\- Many DS roles wouldn't be a good fit for you, so you really need to find your niche there. For instance I don't see you doing DS Product type of work. I mean, if you wanted to do that, you'd need to change your resume. DS roles that are basically dashboarding wouldn't be a good fit either.
+- You'll have a better time going via the MLE / MLOps route. You'd probably also get paid more overall. It's a weakness of a lot of DS/DA folks, but often models are no longer useful if you can't get them to run automatically in prod.
+- MLOPs or DS Is the best way, DA is too saturated
+- [removed]
+- Oops forgot to remove that this time around. Thanks.
+- Thanks so much for your detailed response! Do you know where I might go to find those specific types of start-ups you mentioned?
+
+Also what is meant by "infra"?
+- Thanks, I assumed the level of easiness to get a job went DA -> DS -> MLE in general. Unfortunately, despite my background as an SWE my knowledge lies much more in the DA/DS realm.
+- Lol sarcasm?
+- Here are some that I found:
+
+[https://www.linkedin.com/jobs/view/senior-data-scientist-infrastructure-at-linkedin-4138839170/](https://www.linkedin.com/jobs/view/senior-data-scientist-infrastructure-at-linkedin-4138839170/)
+
+[https://www.linkedin.com/posts/christopher-xu\_staff-data-scientist-infrastructure-activity-7212548783908208640-LR73/](https://www.linkedin.com/posts/christopher-xu_staff-data-scientist-infrastructure-activity-7212548783908208640-LR73/)
+- I would have expected that as an SWE you would know more about MLE than DA or DS. DA/DS are alot about analysing data and building models which is at heart about looking at data and applying statistics etc. MLEs come in with knowledge about infra and MLOps (which is ML-flavoured DevOps). MLOps is very important but DA/DS hate thinking about them (broad brush)
+- To be completely honest, during my time as an SWE I was very complacent and did little to expand my knowledge. It wasn't until I went back for my MS Statistics and the two years since then that I've really been trying to apply myself and forge a specialization in the data world. The only thing I can really take from my SWE experience is my coding abilities.

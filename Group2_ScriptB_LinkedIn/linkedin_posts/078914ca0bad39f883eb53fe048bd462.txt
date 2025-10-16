@@ -1,0 +1,90 @@
+URL: https://www.linkedin.com/posts/wpwalters_ordinal-confidence-level-assignments-for-activity-7272224560773533697-0Gf2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Pat Walters的动态
+Pat Walters
+10 个月
+
+As we deploy machine learning models in drug discovery, it's essential to provide intuitive confidence estimates for the predictions. A new paper from my former colleagues Steven Kearnes and Patrick Riley, describes a method for calibrating the uncertainty of regression models.  The authors also provide a GitHub repository with code and example data.  Kudos (other) Pat and Steve.
+
+https://lnkd.in/eUWWF9Ym
+
+Ordinal Confidence Level Assignments for Regression Model Predictions
+pubs.acs.org
+243
+3 条评论
+赞
+评论
+分享
+Derek Debe
+
+10 个月
+
+Our ALOHA paper from 2012 puts everything in probability space from 0 to 1, which is essentially a smoothing of ordinal space (achieved by binning and spline fitting). Further advantage is then it’s very easy to combine scores by addition and you get nice Poisson Binomial distribution function behavior upon the combination of many terms.
+
+赞
+回复
+7 次回应
+
+要查看或添加评论，请登录
+
+10,597 位关注者
+
+157 则动态
+ 1 篇文章
+查看档案  关注
+更多文章
+My Response to the Response
+Pat Walters  10 个月
+探索相关领域
+How Machine Learning Improves Molecular Predictions
+The Impact of Large Language Models on Drug Discovery
+Understanding Diagnosis Prediction Reliability in AI
+How Data Improves Drug Development
+Tips for Machine Learning Success
+Predictive Modeling Applications in Medicine
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

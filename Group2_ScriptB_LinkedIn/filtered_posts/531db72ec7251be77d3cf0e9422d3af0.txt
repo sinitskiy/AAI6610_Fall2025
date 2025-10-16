@@ -1,0 +1,59 @@
+URL: https://www.linkedin.com/posts/julian-kooij-9a52596_ai-epistemic-uncertainty-activity-7070367379578314752-Xnv5
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Julian Kooij的动态
+Julian Kooij
+
+Associate Professor at TU Delft
+
+2 年  已编辑
+
+Call for papers for the upcoming workshop on Epistemic Uncertainty in AI, which will be held during UAI on August 4, 2023 in Pittsburgh, USA!
+
+We welcome your research on:
+- Model uncertainty estimation,
+- Robustness to distribution shift, 
+- Out-of-distribution generalisation, 
+- Model adaptation, 
+- Datasets and protocols for evaluating uncertainty and robustness, 
+- Conformal prediction, 
+- Distribution-free uncertainty quantification, 
+- Optimisation under uncertainty, 
+- Uncertainty estimation using deep ensembles, 
+- Bayesian deep learning (approximate inference, Bayesian deep RL), 
+- Deep recognition models for variational inference, 
+- Epistemic learning, 
+- Uncertainty in real-world applications (e.g. autonomous driving, healthcare, language models). 
+
+We encourage you to submit!
+Submission Deadline: June 10, 2023, 23:59 anywhere on earth
+
+The workshop is organized by my colleagues in the Epistemic AI (E-Pi) project from Oxford Brookes University, KU Leuven, and TU Delft.
+More info on the workshop website: https://lnkd.in/egrfd8Rx
+
+#ai #epistemic #uncertainty #machinelearning #UAI #obu #kuleuven #tudelft #robustness #bayesian #selfdrivingcars #reinforcementlearning
+
+Epistemic AI
+
+A research FET-Open project funded by the H2020. This is a 4-year project which started on 1 March 2021 with three international universities
+
+2 年
+
+We are excited to announce that we are organizing an E-pi UAI 2023 workshop, focusing on epistemic uncertainty in artificial intelligence. The workshop is scheduled to take place on August 4, 2023, in Pittsburgh, USA. 
+
+Title: Epistemic Uncertainty in Artificial Intelligence
+
+Organizers:  Prof. Fabio Cuzzolin (Oxford Brookes, Institute for Ethical AI),  Prof. Matthijs Spaan (TU Delft), Dr. Keivan (K1) Shariatmadar (KU Leuven), 
+Dr. Maryam Sultana (Oxford Brookes), Kaizheng Wang (KU Leuven), 
+and Shireen Kudukkil Manchinga

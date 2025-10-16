@@ -1,0 +1,129 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/13ib7wj/p_deterministic_objective_bayesian_analysis_for/
+Title: [P] Deterministic Objective Bayesian Analysis for Spatial Models
+
+Content:
+I'm working on a project to provide deterministic inference and prediction algorithms for Gaussian processes using the noninformative reference priors developed in [\[1\]](https://www.tandfonline.com/doi/abs/10.1198/016214501753382282) and [\[2\]](https://citeseerx.ist.psu.edu/doc/10.1.1.211.2452).
+
+Paper: [https://buildingblock.ai/bayesian-gaussian-process.pdf](https://buildingblock.ai/bayesian-gaussian-process.pdf)
+
+Code:  [https://github.com/rnburn/bbai](https://github.com/rnburn/bbai)
+
+# Overview
+
+Methods such as maximum likelihood estimation can give poor results for Gaussian processes if likelihood is not strongly peaked about a point ([\[3\]](https://projecteuclid.org/journals/statistical-science/volume-14/issue-1/Integrated-likelihood-methods-for-eliminating-nuisance-parameters/10.1214/ss/1009211804.full)). In contrast, Bayesian methods fully account for parameter uncertainty but require a prior distribution to be specified.
+
+Due to lack of information, it can be difficult to specify a subjective prior for Gaussian processes and ad-hoc approaches such as using a constant prior can lead to an improper posterior. In such a situation, truncating the parameter space is not good solution as it produces results that are highly dependent on the bounds chosen. Quoting from [\[4\]](https://projecteuclid.org/journals/bayesian-analysis/volume-1/issue-3/The-case-for-objective-Bayesian-analysis/10.1214/06-BA115.full):
+
+>It is a related common misconception that, to avoid difficulties with improper priors, one need only choose (extreme) bounds on the parameter space and confine analysis to this bounded space (in which the posterior will presumably be proper). For instance, a common attempt to avoid possible posterior impropriety when using the constant prior is to choose the prior to be constant over some (large) bounded region of Θ. This will not solve the problem, however, in that if the posterior resulting from the constant prior were improper then the ensuing inferences will often be highly dependent on the actual bounds that were used. (The answers obtained by truncating at ±K could then be very different than the answers obtained by truncating at ±2K.).
+
+The reference prior approach ([\[5\]](https://arxiv.org/pdf/0904.0156.pdf) and [\[6\]](https://www.uv.es/~bernardo/OBayes.pdf#page=20)) develops a prior that naturally adapts to the spatial design points to give more weight to regions of parameter values that are influential and leads to priors that perform well on frequentist coverage simulations ([\[2\]](https://citeseerx.ist.psu.edu/doc/10.1.1.211.2452#page=20)).
+
+[\[1\]](https://www.tandfonline.com/doi/abs/10.1198/016214501753382282) was the first to develop a reference prior for Gaussian processes; and the approach was extended by [\[2\]](https://citeseerx.ist.psu.edu/doc/10.1.1.211.2452) to handle Gaussian processes with noise (or nugget effects). Briefly, suppose a Gaussian process Z(**s**) is specified by
+
+https://preview.redd.it/sh3fq3dw900b1.png?width=335&format=png&auto=webp&s=20d0227ee39dad1734be66fcf6100e826a58877a
+
+where **x**(**s**) represents a known regressor function; ψ represents a known correlation function;  and **β**, σ\^2, ℓ, and η are the unknown parameters. Then its likelihood function is given by
+
+https://preview.redd.it/1vysznsx900b1.png?width=637&format=png&auto=webp&s=6f13ef3c8bfd5e8c2748ca4c4608004cbf9adfe5
+
+where
+
+https://preview.redd.it/97odsxt3a00b1.png?width=263&format=png&auto=webp&s=948d3aefeb85451e74a0876df2b6fcb294976403
+
+In the reference prior approach, we first integrate out **β** and σ\^2 using the conditional prior
+
+https://preview.redd.it/vl2rfz06a00b1.png?width=167&format=png&auto=webp&s=07eb08e500f3ddb9f1a97e2c831313814178b1f3
+
+deriving
+
+https://preview.redd.it/iouwvlc7a00b1.png?width=588&format=png&auto=webp&s=5ff751881713ece2a20dfadc7ff9bddec28f9e54
+
+where
+
+https://preview.redd.it/3xlq43d8a00b1.png?width=337&format=png&auto=webp&s=c689c3bf7b75d62df3ffecd93cc1a7c1e4db7be9
+
+We then compute the Fisher information matrix for L\^I and its associated Jeffrey prior. Combining with the conditional prior gives the full reference prior
+
+https://preview.redd.it/5mpjhx1ea00b1.png?width=283&format=png&auto=webp&s=80ceadd5769a5c7641e23f80d36b9d2f89ae83b9
+
+where
+
+https://preview.redd.it/7u1ajz4fa00b1.png?width=472&format=png&auto=webp&s=47dca103f0d421d23aa263cf99c6a7b05dd2b010
+
+(See Equation 24 of [\[2\]](https://citeseerx.ist.psu.edu/doc/10.1.1.211.2452#page=10))
+
+# Sketch of Deterministic Algorithm
+
+For deterministic inference and prediction, we need an efficient way to integrate with the posterior. The [algorithm](https://buildingblock.ai/bayesian-gaussian-process.pdf#page=16) in my project adaptively constructs a sparse grid at Chebyshev nodes to interpolate a reparameterized form of the integrated posterior
+
+https://preview.redd.it/hilcdvija00b1.png?width=279&format=png&auto=webp&s=956dde5b4237a34784a8c1235d6b639f600a4d2a
+
+in four steps. The sparse grid provides an efficient way to approximate the posterior at arbitrary parameter values; from there, it's relatively straightforward to get to marginalization distributions and prediction distributions.
+
+1. Using a trust-region optimizer together with exact equations for the [gradient](https://buildingblock.ai/bayesian-gaussian-process.pdf#page=32) and [hessian](https://buildingblock.ai/bayesian-gaussian-process.pdf#page=34) of the reparameterized posterior, the algorithm finds parameters that maximize the posterior.
+2. Starting from the optimum, the algorithm constructs a rectangular region oriented along the eigenvectors of the optimum's eigenvectors to bracket the probability mass of the posterior up to some small threshold.
+3. The algorithm reparameterizes the rectangular region so that the center corresponds to a region of high probability.
+4. Following algorithms from [\[7\]](https://www.researchgate.net/publication/242393556_Uncertainty_Modeling_using_Fuzzy_Arithmetic_and_Sparse_Grids) and [\[8\]](https://arxiv.org/pdf/1110.0010.pdf), the algorithm adaptively builds a sparse grid at Chebyshev nodes in the rectangular region to approximate the posterior until some error tolerance is met.
+
+# Example
+
+Here's how the algorithm works on a data set of zinc concentration measurements along a flood plain of the Meuse River ([\[9\]](https://cran.r-project.org/web/packages/sp/vignettes/intro_sp.pdf)) where the goal is to predict the log zinc concentration.
+
+Notebook:  [https://github.com/rnburn/bbai/blob/master/example/11-meuse-zinc.ipynb](https://github.com/rnburn/bbai/blob/master/example/11-meuse-zinc.ipynb)
+
+Steps 1 - 4 of the algorithm result in this sparse grid to approximate the integrated posterior of the data set.
+
+[Sparse grid used to interpolate the posterior for the Meuse River data set](https://preview.redd.it/3sz5gsgua00b1.png?width=1001&format=png&auto=webp&s=b0ae928712fa7d86ae6dc58b4707af9d816c857d)
+
+And the sparse grid results in these predicts for log zinc values.
+
+[Predicted log zinc concentration and associated credible set lengths for the Meuse River data set](https://preview.redd.it/rqjqnlvva00b1.png?width=1000&format=png&auto=webp&s=ef1049078eaa0afb39017277fe8c2bdd0618ab66)
+
+&#x200B;
+
+# References
+
+\[1\]: Berger James O, Oliveira Victor De, Sans´o Bruno. Objective Bayesian Analysis of Spatially Correlated Data // Journal of the American Statistical Association. 2001. 96, 456. 1361–1374.
+
+\[2\]: Ren Cuirong, Sun Dongchu, He Chong. Objective Bayesian analysis for a spatial model with nugget effects // Journal of Statistical Planning and Inference. 2012. 142, 7. 1933–1946.
+
+\[3\]: Berger James O., Liseo Brunero, Wolpert Robert L. Integrated likelihood methods for eliminating nuisance parameters // Statistical Science. 1999. 14, 1. 1 – 28.
+
+\[4\]:  James Berger. "The case for objective Bayesian analysis." Bayesian Anal. 1 (3) 385 - 402, September 2006. [https://doi.org/10.1214/06-BA115](https://doi.org/10.1214/06-BA115)
+
+\[5\]:  James O. Berger. José M. Bernardo. Dongchu Sun. "The formal definition of reference priors." Ann. Statist. 37 (2) 905 - 938, April 2009. [https://doi.org/10.1214/07-AOS587](https://doi.org/10.1214/07-AOS587)
+
+\[6\]:  James O. Berger. José M. Bernardo. Dongchu Sun. "Objective Bayesian Analysis and its Relationship to Frequentism".
+
+\[7\]: Klimke Andreas. Uncertainty Modeling using Fuzzy Arithmetic and Sparse Grids. 01 2006. 40–41.
+
+\[8\]: Jakeman John D., Roberts Stephen G. Local and Dimension Adaptive Sparse Grid Interpolation and Quadrature. 2011.
+
+\[9\]: Pebesma Edzer J., Bivand Roger S. Classes and methods for spatial data in R // R News. November 2005. 5, 2. 9–13.
+
+Comments:
+- I see you've posted a GitHub link to a Jupyter Notebook! GitHub doesn't 
+render large Jupyter Notebooks, so just in case, here is an 
+[nbviewer](https://nbviewer.jupyter.org/) link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/rnburn/bbai/blob/master/example/11-meuse-zinc.ipynb
+
+Want to run the code yourself? Here is a [binder](https://mybinder.org/) 
+link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/rnburn/bbai/master?filepath=example%2F11-meuse-zinc.ipynb
+
+
+
+------
+
+^(I am a bot.) 
+[^(Feedback)](https://www.reddit.com/message/compose/?to=jd_paton) ^(|) 
+[^(GitHub)](https://github.com/JohnPaton/nbviewerbot) ^(|) 
+[^(Author)](https://johnpaton.net/)
+- I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:
+
+- [/r/datascienceproject] [Deterministic Objective Bayesian Analysis for Spatial Models (r\/MachineLearning)](https://www.reddit.com/r/datascienceproject/comments/13iqh81/deterministic_objective_bayesian_analysis_for/)
+
+&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*

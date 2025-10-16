@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/kushvarshney_i-made-another-video-i-talk-about-defining-activity-7071614948665085952-9RUl
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Kush Varshney
+
+IBM Fellow
+
+2 年
+
+I made another video. I talk about defining safety in machine learning from the perspective of safety engineering. Deeper dive: https://lnkd.in/eg5PirSR.
+
+171
+2 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+In late 2015, my wife and I were expecting our twins, and I had safety on my mind. Baby CPR class? Check. Car seats? Check. Outlet covers? Check. Cabinet locks? Check. Safety toys without lead paint or small pieces? Check. Around that same time, I flew to Frigid Montreal for the Neural Information Processing Systems conference. Imagine me sitting in a huge room at the symposium entitled Algorithms Among Us, The Societal Impacts of Machine Learning Completely baffled. A lot of the speakers were bringing up the safety of machine learning, but no one was defining what they meant. When I came home, I figured out how safety engineering can help us define safety in machine learning. The safety of engineered systems is usually defined in very specific ways, like in terms of the curvature of a road or the size of those children's toys. But about 15 years ago, Nicholas Mueller from KTH in Stockholm defined safety much more generally in terms of three concepts. Harms aleatoric uncertainty and epistemic uncertainty. In the next two minutes, I'm going to explain how those 3 concepts come together to define safety. Every output from a machine learning model can be desired or undesired. An undesired outcome with a large enough cost is a harm. Costs are in terms of lives, livelihoods and liberties. We don't like to think of it this way, but yes, human lives can be reduced down to a numerical cost. There's a lot of debate these days around harms. Whose life, whose livelihood and whose liberty are we talking about? Only people alive now, 7 generations into the future, 7000 generations into the future. Different strokes for different folks. Outputs from machine learning have uncertainty. Aleatoric uncertainty is inher

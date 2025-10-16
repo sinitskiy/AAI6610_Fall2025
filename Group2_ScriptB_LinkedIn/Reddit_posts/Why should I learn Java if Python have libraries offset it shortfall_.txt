@@ -1,0 +1,62 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17cv8nq/why_should_i_learn_java_if_python_have_libraries/
+Title: Why should I learn Java if Python have libraries offset it shortfall?
+
+Content:
+I am studying Python and R to work in Data, and my mentor said that I should learn Java. I think it is regards to Machine Learning, but Python has an extensive libraries that helps offset it short fall. The problem that I can never finish a crash course book on Python is it's speed, but I read that NumPy and Pandas help make it faster. So my question is, what benefits are there to learn Java for Data Science if I see majority of people learn Python and most certification for data professions used Python and/or R?
+
+Comments:
+- I’m going to go against the grain here. Was your mentor talking in term of just data science? If so yeah, he may have mislead you on the Java. If it was in regards to extending beyond building models but also getting into MLops and development, learning Java would be good for you.
+
+But do that after you’ve gotten grasp of Python. Learning another language after knowing one already is not that difficult
+- I would just ask your Prof to explain their rationale behind that statement.
+- You may not use Java for DS, but depending on the company, you could use Java or C++ or Rust or Go to implement ML algorithms as an ML engineer. For example take a look at Tesla or Zoosk. Their computers are on board their cars, must know C++ to work as an MLE there. The problem is this sub is full if data analysts parading as programmers.
+- I am a Data Scientist and I only use Python at work.
+
+That said I relearned Java because of the sake of learning it.
+
+I won't hurt you but it's not widely used.
+
+I have heard that some companies use Java to build pipelines but that's more DE work.
+Scala is a requirement for some DE jobs and it's basically Java without semicolons.
+
+If you are new stick to Python it's the language for DS.
+If you have time and find it fun/interesting learn Java it won't hurt and I can help you to learn other languages so that you become "language agnostic".
+- [removed]
+- You basically answered your own question. I see no practical reason why you should learn Java when Python already has extensive libraries.
+- Whoever your mentor is, kindly thank him for his advice, and then never listen to him again.
+
+I suspect you probably misheard what he was saying, or he’s lied to you about his credentials and understanding.
+- It's not the worst thing in the world to be familiar with java just because it's so prevalent in the corporate world, but Java is a pretty terrible choice for DS work. Focus on getting better at python and learning to leverage libraries like Numpy and to a lesser extent Pandas.
+
+Most of DS is using python as glue code between packages like numpy and scipy and scikit-learn that are written in C/C++.
+
+In general if you're having serious speed concerns for a script, you should consider just cythonizing it. You can usually get a significant speed boost even if you do literally nothing to the code to help cython, and more if you add in variable types.
+
+IF you want to learn a lower level language, learn C or C++, or even Rust (though that's probably less useful at the current moment than C++, it has some traction in the DS world). Java performance will be more along the lines of well used cython, so I think it's a bad choice.
+- Clarifying question: did your mentor say Java or Java*script*?
+- Listen, if you want to be an effective programmer and not an ad hoc analyst parading as a data scientist, do what CS kids do and be language agnostic. Python is the language of today, but it may not always be like that. Most python libraries for ML are wrappers over C. So the more C you know, the more python you know.
+- No one uses Java for DS.
+- If you are running into speed issues in a crash course, your code likely has some issues.
+
+The starter exercises don't require intensive calculation where you would even notice a difference in execution time between different languages
+- Java is the defacto language used by major corporate America.  If you want to get a Dev job at say Disney for example Java is what most of them use.   You can learn anything you want and Python is awesome.  Just know when you go looking for a paycheck and want to get your foot in the door you better have a Java portfolio for most shops.  Once you get in the door and work your way into a position you can choose your own language.
+- Most of the commenters here, I feel like, are very young. For a strong DS position, the response should be "yeah sure why not". Use Copilot and learn to use whatever you need in order to be productive within the already established framework. Then pivot whenever you see \_and understand\_ the shortfalls.
+
+However, since you are still studying Python and R, this may be counterproductive, since it's likely that you are still a junior. Then, the learning curve is a bit steeper which makes you lose even more momentum in a productional environment.
+
+In my opinion, politely discuss this with your mentor, evaluate honestly your ability to learn and adapt in \_both\_ languages, and find the most productive route that would benefit \_both\_ parties. Also, in my opinion, you should ignore all the comments that use words "stupid", "useless", "mentor has faked credentials" and so on.
+- For DS Python & C++ are enough (I started C++ long ago, gave up for some time, now restarting again - very important for low level and when speed is important)
+- A bit off topic, but can you do data science in Python without pulling in a C library? I mean calculations in pure Python?
+
+Another thought. If you do the DS in each language without external libraries, which one would be easier, faster? 
+
+Also, how about the new Java Vector APIs, Foreign function APIs, ability to use SIMD instructions and GPU seamlessly? All that in the base language and JVM without the need for libraries?
+- I work as an MLE and I only use python day in and day out. I have experimented  with GO for CLI and backend applications. The only other languages I would consider using are C++ and Rust. 
+
+Java on the other hand Is a head scratcher. 
+
+The only reason I could see Java being important is working to implement models into a Java backend. But if you have made it that far you would have likely already learned python along the way to get into a position of being responsible to deploy a model in a Java backend. With that being said starting with Java or prioritizing it during your learning journey does not make sense. No one writes actual ML code and especially analysis and data science in Java.
+- Your mentor isn't great sadly.
+- If you want faster Python, use Julia.
+- I’d bet money your mentor said/meant JavaScript for front end deployment of your models

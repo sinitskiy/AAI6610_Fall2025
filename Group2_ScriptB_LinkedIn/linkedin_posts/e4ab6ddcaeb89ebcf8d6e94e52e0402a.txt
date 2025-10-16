@@ -1,0 +1,44 @@
+URL: https://www.linkedin.com/posts/ericmjl_stop-guessing-at-priors-r2d2s-automated-activity-7363887814117060609-FZE-
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+马靖龙的动态
+马靖龙
+
+我使用Python编程语言，贝叶斯统计方法，以及深度学习这三大工具来解决生物问题。
+
+1 个月
+
+Ever wish prior specification felt more intuitive?
+R2D2 reframed how I approach Bayesian regularization.
+Curious how one framework unifies priors for linear, GLM, and multilevel models? Read on.
+
+I first saw R2D2 in action in a colleague’s model, and it immediately piqued my curiosity. I’d written about R2D2 before, but this time I wanted to really understand how it works—especially its extensions for GLMs and multilevel models.
+
+After seeing R2D2 used in a lab project, I decided to do a deep dive into its mathematical structure and practical benefits.
+
+R2D2 lets you specify a prior directly on R², the variance explained by your model, instead of guessing at priors for each coefficient. This makes model fit control much more interpretable.
+
+The Dirichlet decomposition in R2D2 automatically allocates explained variance across predictors, creating natural sparsity and interpretability—no more manual tuning for each variable.
+
+What really impressed me is how the framework extends: for GLMs, it adapts to non-Gaussian outcomes with a clever approximation; for multilevel models (R2D2M2), it allocates variance across all effect types, making it ideal for complex lab designs.
+
+Each extension builds on the last, preserving intuitive control and mathematical elegance. For my own research, R2D2M2 finally made it possible to quantify how much variance each experimental factor explains, which is invaluable for experimental design.
+
+If you’re interested in a practical, unified approach to Bayesian priors, I invite you to read my deep dive into R2D2 and its extensions. Would love to hear your thoughts or experiences! Full post here: https://lnkd.in/e4SrQZEr
+
+How do you currently specify priors in your models? Have you tried frameworks like R2D2 or its extensions?
+
+#bayesianstatistics #datascience #statisticalmodeling #priors #researchmethods
+
+Stop guessing at priors: R2D2's aut

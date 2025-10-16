@@ -1,0 +1,73 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jkv37v/shape_the_future_of_3d_data_seeking_contributors/
+Title: Shape the Future of 3D Data: Seeking Contributors for Automated Point Cloud Analysis Project!
+
+Content:
+Are you passionate about 3D data, artificial intelligence, and building tools that can fundamentally change how industries work? I'm reaching out today to invite you to contribute to a groundbreaking project focused on automating the understanding of complex 3D point cloud environments.
+
+**The Challenge & The Opportunity:**
+
+3D point clouds captured by laser scanners provide incredibly rich data about the real world. However, extracting meaningful information – identifying specific objects like walls, pipes, or structural elements – is often a painstaking, manual, and expensive process. This bottleneck limits the speed and scale at which industries like construction, facility management, heritage preservation, and robotics can leverage this valuable data.
+
+We envision a future where raw 3D scans can be automatically transformed into intelligent, object-aware digital models, unlocking unprecedented efficiency, accuracy, and insight. Imagine generating accurate as-built models, performing automated inspections, or enabling robots to navigate complex spaces – all significantly faster and more consistently than possible today.
+
+**Our Mission:**
+
+We are building a system to automatically identify and segment key elements within 3D point clouds. Our core goals include:
+
+1.  Developing a robust pipeline to process and intelligently label large-scale 3D point cloud data, using existing design geometry as a reference.
+2.  Training sophisticated machine learning models on this high-quality labeled data.
+3.  Applying these trained models to automatically detect and segment objects in new, unseen point cloud scans.
+
+**Who We Are Looking For:**
+
+We're seeking motivated individuals eager to contribute to a project with real-world impact. We welcome contributors with interests or experience in areas such as:
+
+*   3D Geometry and Data Processing
+*   Computer Vision, particularly with 3D data
+*   Machine Learning and Deep Learning
+*   Python Programming and Software Development
+*   Problem-solving and collaborative development
+
+Whether you're an experienced developer, a researcher, a student looking to gain practical experience, or simply someone fascinated by the potential of 3D AI, your contribution can make a difference.
+
+**Why Join Us?**
+
+*   **Make a Tangible Impact:** Contribute to a project poised to significantly improve workflows in major industries.
+*   **Work with Cutting-Edge Technology:** Gain hands-on experience with large-scale 3D point clouds and advanced AI techniques.
+*   **Learn and Grow:** Collaborate with others, tackle challenging problems, and expand your skillset.
+*   **Build Your Portfolio:** Showcase your ability to contribute to a complex, impactful software project.
+*   **Be Part of a Community:** Join a team passionate about pushing the boundaries of 3D data analysis.
+
+**Get Involved!**
+
+If you're excited by this vision and want to help shape the future of 3D data understanding, we'd love to hear from you!
+
+Don't hesitate to reach out if you have questions or want to discuss how you can contribute.
+
+Let's build something truly transformative together!
+
+Comments:
+- I am interested
+- Interested
+- Interested :)
+- Interested to learn and contribute
+- Interested! How can we connect?
+- Interested. I have worked with 2D point cloud earlier and currently working on computer vision. Haven't worked with 3D data yet but would love to.
+- I am interested
+- I am interested
+- I'm interested :)
+- I'm interested on this
+- Founder here, building a Scale Al style pipeline for spatial 3D data. Early stage, so I'm hands on and obsessed with quality.
+ I'm just trying to earn trust and prove can deliver and get my hands on data pipeline What are you labeling, and what's the goal?
+
+Sibi
+- interested. though a bit late i just saw this post. have been working with point clouds since a couple of months.
+- send me a DM ^^
+- send me a DM ^^
+- send me a DM ^^
+- send me a DM ^^
+- send me a DM ^^
+- send me a DM ^^
+- send me a DM ^^
+- send me a DM ^^

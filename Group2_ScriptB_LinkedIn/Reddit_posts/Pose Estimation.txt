@@ -1,0 +1,13 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1h22wxo/pose_estimation/
+Title: Pose Estimation
+
+Content:
+Hello, everyone! I need a help. I want to make a pose recognition app with opencv. Im trying to get pretrained model from OpenPose framework repository [openpose/models at master · CMU-Perceptual-Computing-Lab/openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose/tree/master/models) by the script getModel.bat and getting an error. The link doesn't work. This problem has been mentioned by others in issues. Some people suggest to download models from another place, but im not sure its a good idea to download files from unknown google drive. Do you know another way how to get this model? Maybe do you  know other libs or frameworks doing the same job?  
+Im also thinking about my own model. I had learnt machine learning before, but tasks weren't so difficult. Ive found a website with a dataset contained different poses [https://openposes.com/](https://openposes.com/). Is it good enough for training a model?  
+Could you share some articles and ways how to do it? Using opencv is desirable. Tnx)
+
+Comments:
+- I downloaded the models from an external link on some forum thread (can't remember if it was Google drive) and they were fine.
+
+I think openpose isn't developed/maintained anymore. Have a look at RTMpose / MMpose.

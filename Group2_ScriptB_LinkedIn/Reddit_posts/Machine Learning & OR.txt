@@ -1,0 +1,37 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b69l9d/machine_learning_or/
+Title: Machine Learning & OR
+
+Content:
+Any good resource to learn OR  and combine it with ML ?
+
+
+Comments:
+- Convex Optimization by Boyd and Vandenberghe is a good place to start
+- Excuse me, but what is OR?
+- As mentioned, the optimization/solver stuff is great to dive into for OR. Think, Gurobi, for example. 
+
+A big part of optimizing the supply chain is anticipating demand. And a great way to do that is to use time series methods. So, specific to your question, I’d look into the big body of literature that touches on time series forecasting.
+- Any suggestions for someone who is starting from ground zero and wants to get into ML?
+- Wow, holy cow!
+- What is OR ?
+- I am currently learning OR in my undergrad and i seriously love the subject i enjoy it very much.. probably because it is basic or beginner things but anyways how can i made it OR my strong forte in data science.. I plan on doing data science for postgrad
+- Some very good suggestions here ty
+- ML is mid, DS in too
+- to start ? It's one of the most advanced OR courses I've seen so far, there's definitely some friendlier options to get into OR (Discrete Optimization courses by University of Melbourne on Coursera, for example). It's a great course though. I'm curious, if you recommend starting with this one, what would you recommend next ?
+- i second this
+- Operations Research
+- I think they mean operational research
+- An honest and innocent question that's not being downvoted? There is hope for humanity after all!
+- Thanks man, i'll do that
+- Machine learning course by Andrew Ng on Coursera is a great start point.
+- Operations research
+- I do agree the book is advanced, but I think for OR and ML overlap, it might be the easiest entrance. Lots of other OR topics to look at, but after discrete optimization I'd look into linear programming (the other workhorse of OR). If you're looking for YT lectures, Henry Adams of CSU has a truly amazing lecture series on LP. I think his website has the notes too, so I'd recommend that next.
+- Just to add my experience: I also started with this Boyd's book and liked it a lot.
+
+
+After that, you can just read the papers in the relevant areas. If you want books, maybe Bazaraa, Jarvis, Sherali for LP; Nemiroski's lecture notes are somewhat up to date with the literature for nonlinear programming.
+
+
+For stochastic processes, you may start with Pinsky and Karlin [very easy even if you don't have a good probability background] but Cinlar's books are probaby better. Next, we have Oksendal, Shiryaev etc. to go deeper. I think baby Rudin + Billingsley + Munkres + CLRS are also must reads.  Then there is the dynamic stuff; I like Kamien & Schwartz but most people probably start with Bertsekas, especially for the discrete time.
+- What is OR? sorry if it is a silly one

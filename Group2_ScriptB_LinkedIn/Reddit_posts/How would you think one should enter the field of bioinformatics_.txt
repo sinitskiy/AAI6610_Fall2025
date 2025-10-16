@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/rhlrf5/how_would_you_think_one_should_enter_the_field_of/
+Title: How would you think one should enter the field of bioinformatics?
+
+Content:
+I have been working in Bioinformatics for a year and a half now. I completed my master's thesis (applying machine learning to a specific genetic disease related data). My degree was in Physics. So, I did not have any formal training in computational biology/ bioinformatics. I presented a poster in an international conference and soon going to publish a preprint. I often get the feeling that I lack the basic foundation upon which one builds his/her expertise. Given the fact that Bioinformatics is still considered a fairly multidisciplinary field and not many places offer undergraduate programs in bioinformatics, would you advice someone who wants to break into bioinformatics to begin with an undergrad degree in bioinformatics or a master's degree? Or being self-taught is enough to pursue a career in bioinformatics either in academia or in industry?
+
+Comments:
+- I might be biased, but I generally believe it's easier to teach a biologist coding than it is to teach a computer scientist biology. So I would start with building a solid  biology oriented foundation, and then learning coding simultaneously or afterwards. 
+
+I've seen a lot of instances where people pivot into bioinformatics without a specific bioinformatics degree, this is both in industry or academia. Like you said, the field is very multidisciplinary so it attracts people from many backgrounds. There is no one clear path.
+- I don't agree with the other person. I would focus on programming first and biology can be easily assimilated wherever you work. At the end of the day the info is on the internet and you will need a specific subset of that info to be successful at your workplace. Programming is something that you can't assimilate so fast.
+- Thanks for answering. If I have understood correctly, you would suggest a first degree in biology with a focus on computing. Please correct me if I am wrong.
+- Would it be a good idea to major in either computer science or biology and then just minor in the other? I'm planning on majoring in computer science and minoring in chemistry or biology and was wondering if that's a good plan.
+- Thank you very much! Would you advice something in particular to someone coming from Physics, Math, or Statistics background?
+- Yup that would be my take. But I do want to emphasize that there is no correct path. Depending on what your goal in Bioinformatics, other routes might be better suited.
+- I think that's a good plan. Why would you do a minor in chemistry instead of biology?
+
+Major in CS + minor in bio is a really good plan imo.
+- Alright, Thank you very much :)
+- Well I'm really indecisive and I'm on a premed track. In order to do that I basically have to minor in chemistry. Basically I'm doing the chemistry minor because I'm having a hard time choosing between this and medicine. I could minor in both though.
+- I think you need to be 1000% sure before going into medicine. If you are not that sure, have a b plan. Which you do I as far as I see.

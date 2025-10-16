@@ -1,0 +1,17 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jdiuh5/how_does_a_model_detect_objects_in_images_of/
+Title: How Does a Model Detect Objects in Images of Different Sizes?
+
+Content:
+I am new to machine learning and my question is -
+
+When working with image recognition models, a common challenge that I am dealing with - is the images of varying sizes. Suppose we have a trained model that detects dogs. If we provide it with a dataset containing both small images of dogs and large images with bigger dogs, how does the model recognize them correctly, despite differences in size?
+
+Comments:
+- The size of the images don't really matter as much as the size of objects.
+
+Object detector are usually made of 3 parts: the backbone, some big CNN, the FPN which gathers the outputs of the backbone at different scales, and finally a classification head, that'll tell you for each pixel of the FPN output, if it's a dog, a cat or something else (with some useful extras). The important info is that the FPN gathers info at different scales: Roughly speaking the FPN pixels at coarse scales correspond to large objects on the original image, and the finest scales correspond to smaller objects on the final image.
+- Go to paperwithcode. Search SPP (spatial pyramid pooling)
+- They scale pixel-wise to whatever you want and use nearest neighbors to do it, up or down to a constant.
+- Hi! I've recently published an article on this topic, maybe you'll find it useful too - [https://labelyourdata.com/articles/object-detection-metrics](https://labelyourdata.com/articles/object-detection-metrics)
+- Scale invariance. Almost all architectures have a mechanism to learn features invariant of scale, lighting, position etc. There are many ways to achieve this too. If there's no such mechanism in the model architecture, augmentations can help.

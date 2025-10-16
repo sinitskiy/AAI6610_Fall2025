@@ -1,0 +1,24 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/13cz6x/learning_flow_cytometry/
+Title: Learning Flow Cytometry
+
+Content:
+Next semester I will be working in a diabetes research lab here at the University of Florida.  My PA's best advice is to start off getting really good with one machine.  No one there is an expert on flow cytometry, so I figured this would be perfect before taking on my own projects.  Any suggestions on where to learn everything there is to know as far as operation goes? I've taken Biochem and got a brief explanation of the machine, so that's as far as my knowledge goes. Any help is appreciated!
+
+Comments:
+- [BD website](http://www.bdbiosciences.com/research/multicolor/tools/index.jsp)
+
+Some basics and some more advanced information on choosing reagents and colors. Towards the bottom are a few online courses. Two of them are about using BD software, so they won't be helpful if you are going to run, for example, a Beckman Coulter machine.
+However, there is the "Intro to Flow eLearning Course". I scanned through it and it seems very nice and complete.
+
+For specific machines, you will have to google and see what you can find. You might have a hard time finding anything if you are running an older machine.
+- Rule 1 is never let the instrument run dry, ever, it will cost you days and thousands of dollars in maintenance. 
+
+There are two main types of staining, surface and intracellular. Common immunology staining involves surface staining cellular markers to isolate populations then staining for cytokines intracellularly to gauge a response. This involves blocking cellular pores with something like brefeldin to keep in chemicals that are normally secreted by cells.  
+
+A big part of flow cytometry is proper compensation. Many dyes have overlapping emission spectra, as such you need to run compensation samples with only one stain at a time to set a positive response to each dye. Some people compensate with cells, some people use beads that will absorb the dye. 
+
+Easiest way to learn is hands on, every machine has its quirks and differences in how you set up an experiment. If you have old dyes lying around that are near the end of their life i recommend some simple PMBC experiments stimulated with PMA and Ionomycin. This drives a crazy high cell response that lets you see how your dyes work.
+- Thanks a lot! That site looks great. I'll see what kind of machine I'm running
+- I'll definitely refer back to this! Like you said I'll probably do multiple runs with old dyes to start
+- If you find out what instrument(s) you might be using we might also be able to give some more specific advice. The Flow community has a strong online presence although admittedly not always easy to find. If you get more into it the [Flow Lab at Purdue](http://www.cyto.purdue.edu/) has a lot of resources from the community including the online help forum.

@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1gj5uk7/reduced_amino_acid_alphabets/
+Title: Reduced amino acid alphabets?
+
+Content:
+Hi all! I'm curious if anyone here has worked with or done research on reduced amino acid alphabets. To my understanding, we group amino acids into smaller sets based on shared properties.
+
+If you've used reduced alphabets in your work, I'd love to hear about your experience. Do you think there’s much scope for new discoveries or applications in this area, particularly in bioinformatics or machine learning?
+
+Thanks in advance for sharing your thoughts!
+
+Comments:
+- the 3di alphabet from foldseek/foldmason is cool. it just happens to have 20 letters like the "normal" amino acid alphabet https://www.nature.com/articles/s41587-023-01773-0
+
+
+"The 20 states of the 3D interaction (3Di) alphabet describe for each residue i the geometric conformation with its spatially closest residue j. 3Di has three key advantages over traditional backbone structural alphabets. (1) Weaker dependency between consecutive letters and (2) more evenly distributed state frequencies, both enhancing information density and reducing false positives (FPs) (Supplementary Table 1). (3) The highest information density is encoded in conserved protein cores and the lowest in non-conserved coil/loop regions, whereas the opposite is true for backbone structural alphabets."
+- I think there is some potential for new discoveries, though people have explored reduced alphabets quite a bit so it is really a case where there might be new discoveries, depending on what you want to do with the reduced alphabet. The foldseek alphabet mentioned in an earlier reply is definitely interesting, though it is not really reduced. 
+
+There is a recent review of reduced alphabets here https://doi.org/10.1016/j.csbj.2022.07.001 - it has been on my “to read” list but I haven’t read it yet. There is some older work that you might want to read from Nick Goldman’s group:
+
+Kosiol, C., Goldman, N., & Buttimore, N. H. (2004). A new criterion and method for amino acid classification. Journal of Theoretical biology, 228(1), 97-106.
+- I've used Murphys reduced alphabets (8,10,12 and 15) when comparing distantly related microbial species, they work well enough
+- [removed]
+- There is an old shakhnovich paper where he calculates sequence entropy of alignments and for very remote sequences, advocates a 5 letter alphabet.  
+The entire literature on early lattice models for proteins is based on the HP model (two amino acids). This was expanded to HPE to reduce problems with ground-stage degeneracy.
+- > Do you think there’s much scope for new discoveries or applications in this area
+
+I would say "no". There have been quite a few papers on this topic, e.g. Edgar (2004) and Leremie et al (2024), and there is not much to explore.
+- Thank you for replying. I will look into this.
+- I will check out that review. Thanks for your help!
+- Oh sounds interesting. Could you please share more about that?
+- I honestly don't know. My supervisor just told me to look up papers regarding reduced amino alphabets and familiarize myself with the research on that topic.
+- Thanks for replying. I will check out those papers!

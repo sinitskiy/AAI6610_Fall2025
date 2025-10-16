@@ -1,0 +1,39 @@
+URL: https://www.linkedin.com/posts/zhousharon_we-at-meta-lamini-deeplearningai-have-activity-7229544702709014532-olzv
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sharon Zhou, PhD
+
+Building & teaching AI. VP of AI, AMD. Founder & CEO, Lamini. CS Faculty at Stanford. MIT Technology Review’s 35 Under 35. (Speaker).
+
+1 年
+
+We at Meta & Lamini & DeepLearning.AI have built a course for you!
+
+🚀 Improving Accuracy of LLM Applications:
+https://lnkd.in/g835eFrV
+
+◽️ Reliable agents & apps are here - it's just a matter of effort.
+◽️ The effort is now a ton lower because of... LLMs themselves!
+◽️ Evals shouldn't *just* evaluate your LLM, but actually be used to actively improve it (as a north star)
+◽️ This course walks through Meta's llama recipe w/ Lamini on building a text-to-SQL agent with a custom schema that removes hallucinations
+
+…展开
+522
+10 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+I'm excited to introduce improving accuracy of Elm applications built in partnership with Lamanai and Meta, taught by Sharon Joe and Amid Sangani. Many developers have experienced frustration of inconsistent results when working with OEMs. Sometimes the results are just right, while other times they missed the mark. This course will guide you through a development pattern that systematically improves the accuracy and reliability of LM applications. I'm still using instructors. Sharon Jo, who is CEO of Lamanai, which provides integrated inference and tuning for enterprises and developers. And there's actually a company I've made. Seen investment in. As well as Ami Sanghani who is Director of partner engineering for the Llama team and neither both are returning instructors who bring a wealth of experience in optimizing along applications and using specifically Metas Llama family of models. Sharon, you work with many customers on building production ready applications. Can you say a bit more about what you are seeing? Absolutely, thank you, Andrew. The approach that we found to be most effective starts with creating. The initial application stringing together all the different steps. Then we add in evaluation metrics or w

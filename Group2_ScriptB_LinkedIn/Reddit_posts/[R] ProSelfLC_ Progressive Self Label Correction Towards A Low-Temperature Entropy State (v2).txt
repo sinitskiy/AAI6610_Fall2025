@@ -1,0 +1,26 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/x88lan/r_proselflc_progressive_self_label_correction/
+Title: [R] ProSelfLC: Progressive Self Label Correction Towards A Low-Temperature Entropy State (v2)
+
+Content:
+TLDR: Two takeaways are below.
+
+>1st takeaway: There exist three well-accepted findings: (a) deep models easily fit random noise; (b) deep networks learn simple semantic patterns before fitting noise; (c) modern deep neural works tend to be over-confident. In this paper, we disclose a new insightful one, which complements them: *Deep neural networks become less confident of learning semantic patterns before fitting noise when the label noise rises*.  
+>  
+>2nd takeaway: *A new technical proposal*, inspired by the new finding and miscalibration analysis, is introduced to decrease the entropy of self knowledge. Concretely, we propose to use an Annealed Temperature and learn towards a revised low-temperature entropy state.
+
+&#x200B;
+
+Though [this research](https://arxiv.org/abs/2207.00118) studies deep machine learning, its findings are quite consistent with deep human learning: *people start to learn the truth out of noise with a low confidence, and gradually compress the truth pieces out of a noisy world, with an increasing confidence by gradually and more comprehensively understanding the noisy world surrounding us*.
+
+Read more if your are interested: [https://arxiv.org/abs/2207.00118](https://arxiv.org/abs/2207.00118), and the highly related work on modern model miscalibration analysis:
+
+>\- On Calibration of Modern Neural Networks [https://arxiv.org/abs/1706.04599](https://arxiv.org/abs/1706.04599)  
+>  
+>\- Revisiting the Calibration of Modern Neural Networks [https://arxiv.org/abs/2106.07998](https://arxiv.org/abs/2106.07998)
+
+\#KnowledgeDistillation #LabelCorrection #ModelCalibration #ConfidenceCalibration #PredictiveUncertainty #LabelEfficiency #TransparentML #InterpretableML #RobustML #NoisyLables #MissingLabels #SemisupervisedML #SequenceTransformers #ProteinClassification #ProteinEngineering  #HumanLearning #Bias #Noise #Supervision
+
+https://preview.redd.it/0jbw9j45kgm91.png?width=1239&format=png&auto=webp&s=0feff4788cd351b970511e7cf7e1048be721e034
+
+Comments:

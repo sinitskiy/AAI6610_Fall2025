@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m6o4l2/d_working_on_a_ml_in_quant_finance_conf_need_your/
+Title: [D] Working on a ML in Quant Finance Conf - Need your guidance
+
+Content:
+Hellow ML/Al folks,
+
+I'm working on an upcoming Machine Learning in Quantitative Finance conference, my role is to outreach and engage relevant professionals.
+
+While I've handled other events before, this field is new to me. I'd appreciate any quick tips, resources, or key concepts to get up to speed.
+
+Also, if you have advice on how to approach senior roles (MDs, Heads of Departments, Chiefs, Presidents) effectively in this space.
+
+Thanks
+
+Comments:
+- here's some code : https://huggingface.co/spaces/Tonic/stock-predictions/blob/main/app.py

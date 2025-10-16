@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/vo38mp/scientists_develop_a_novel_gpubased_machine/
+Title: Scientists Develop a Novel GPU-based Machine Learning Model to Discover Human Brain Connectivity
+
+Content:
+
+
+Comments:

@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1az716f/applying_to_jobs_before_defending_a_phd/
+Title: Applying to jobs before defending a PhD?
+
+Content:
+Hey y'all! I'm a biochem PhD candidate at the University of Toronto, planning to defend my thesis in April. I have a lot of experience in protein bioinformatics, sequence analysis, and peptide-protein interaction prediction with machine learning. Admittedly my work is not yet published, but very close to it - we're submitting the papers to journals for peer review right now. 
+
+I know there are quite a few people who get jobs right out of grad school by applying before they defend. But all of the bioinformatics and computational biology jobs I've applied to have wanted people that could start immediately. I've had quite a few otherwise-very-positive first-stage interviews where they've said they need someone who can start within a couple of weeks, which is obviously not possible yet. 
+
+I'd love to get some tips on where/how to apply for jobs that hire right out of grad school. I have a preference for hybrid/remote jobs, but would also consider on-site if it was commutable. Moving is unfortunately not an option because of family obligations and the current real estate market here. I live near Hamilton, Ontario, Canada. 
+
+Where should I be looking? 
+
+Comments:
+- Apply anyway. I put in my cover letter my defense date and when I could start, and I signed this last week. Let them decide!
+- I did this and had a worse case scenario, got hit with 6 months worth of corrections in the defence, had to redo an entire chapter, then I ended up taking a year to do it because I was working and couldn’t focus on both. 
+I did end up telling my boss, and they were fine with it. It’s not like it really changes your resume or why they hired you. I’m still glad I took the job tho even tho it prolonged my PhD.
+- If you’ve already set the date with your advisor and dissertation advisory committee (or equivalent), then you’re good to go!
+
+Put it in your cover letter that you’re nearing completion of your PhD, which you will defend in April. You’re two months out, that’s exactly the right amount of time for hiring managers to receive applications, screen applicants, interview candidates, select the employee, send an offer, negotiate, and setup onboarding with HR.
+
+Tips for applying to jobs: I’ve gotten all my post PhD jobs through my friends/colleagues/network. Create a LinkedIn if you haven’t already. Add everyone from your graduate program, important connections/friends from undergrad, advisors and committee members and collaborators. And anyone from your undergrad and grad programs that work in places you want to work. Then send messages indicating you’re approaching your defense with XYZ skills and would love to talk to them about their current job.
+- Most companies should be willing to wait a month for filling the position with the right person that has the right skills. If you don’t have an offer from them because you cannot start in 2 weeks, believe me you dodged a bullet.
+So go for it and stand by your terms of when you can start.
+- I applied in the last semester of my PhD and had a job lined up a few months before my defense. I'd definitely encourage you to apply now.

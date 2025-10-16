@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/vladi-katz_i-may-be-late-to-the-coding-with-llms-game-activity-7358224235242147840-2EB_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vladi Katz的动态
+Vladi Katz
+
+Head of Engineering at Eviation Aircraft
+
+2 个月  已编辑
+
+I may be late to the coding-with-LLMs game, but I thought it would be helpful to share my recent experience. First, a disclaimer - I’ve never been much of a code rat, but I’ve always written code. I like to say I code like an engineer: it may not be pretty, but it gets the job done. As I moved into leadership roles, I’ve written less code, and when I do, I usually stick to tools I’m intimately familiar with.
+
+Recently, I had to put together a technical presentation for my Executive MBA at The Wharton School. For some crazy reason, I decided to use good old Beamer for the job. For those unfamiliar, Beamer uses LaTeX code to create slides, which means you spend more time thinking about the flow and structure of your content than tweaking fonts and layouts. That is, if you’re familiar with the tool, of course.
+
+With a few minor exceptions, I hadn’t touched LaTeX or Beamer since writing my theses at Technion - Israel Institute of Technology. Back in the day, one had to consult colleagues, forums, and user manuals to piece together a workflow and learn the syntax. I spent days debugging code, suffering nobly for the greater cause of writing documents free from the burden of formatting.
+
+While my favorite AI tool can’t design and execute a full workflow for me (yet…), it proved invaluable for getting back up to speed and expanding my productivity frontier. Need to import a large Excel table? Easy - the LLM uses OCR to convert a table image into LaTeX, and Beamer takes care of the formatting. Compiler throws an error? No problem - just paste it into the LLM, and it’ll point directly to the issue and even suggest how to fix it.
+
+I have limited trust in probabilistic models (as one should..) and always sanity check their outputs (like the numbers in the OCR tables code). That’s why I deeply value deterministic tools like LaTeX: you get what you put in. I

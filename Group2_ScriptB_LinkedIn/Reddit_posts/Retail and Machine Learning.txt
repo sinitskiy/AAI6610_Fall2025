@@ -1,0 +1,88 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1h7cj7p/retail_and_machine_learning/
+Title: Retail and Machine Learning
+
+Content:
+Currently working in the retail industry that has quite a lot of transactional data. 
+
+Apart from the traditional product recommendation /propensity / basket analysis / classification models used in client targeting, what other types of models are commonly being built in the retail scene? 
+
+I’d love to hear about your use cases to get some new inspirations!
+
+
+
+Comments:
+- Worked in retail for couple of years plus currently work for a supply chain company.
+
+* Predicting spend potential
+* Predicting churn
+* Forecasting sales
+* Fraud detection
+* Pricing optimization (huge topic)
+* LLMs to reduce manual recommendations
+* Warehouse space optimization
+- Demand forecasting, media mix modeling, fraud detection, labor optimization, price optimization, and many more. Depending on the kind of retail, there can be a good amount of LLM usage in embedding creation, internal chatbots, customer facing chatbots, etc.
+- I worked in retail consulting at the very early stages of my career. 
+
+The project that got me into data science, and also a huge raise, was customer segmentation.
+
+For anyone in retail, understanding who their customer is, is a huge factor. Is this shopper a paycheck to paycheck person, small family, large family, premium single shopper and so on. 
+
+I used a clustering algorithm based on purchase history and pattern to help identify these groups, and the groupings were used in a ton of subsequent analyses.
+
+I left the company shortly after for my first official data science role so I never found out how it ended but last I heard they are still using it to this day.
+- Watching thread. Most of my uses cases are MMM, loyalty and retention, demand planning and forecasting.
+- Things not mentioned yet:
+
+Fraud and adversarial reseller suppression 
+
+Fulfillment models of all sorts:
+Predicting package delivery dates to customers 
+Predicting DC replenishment dates 
+Other models to optimize supply chain
+Carrier selection models
+- Another big area is channel sales analysis. Are the sales coming from stores or e-commerce channels. And also thinking about delivery cost optimization.
+- Any good books with code for learning how to deploy this stuff?
+- LTV modeling (e.g. buy-till-you-die models) is getting some traction for identifying the most lucrative consumers. 
+
+[https://en.wikipedia.org/wiki/Buy\_Till\_you\_Die](https://en.wikipedia.org/wiki/Buy_Till_you_Die)
+- Everything In here:
+
+ https://web.stanford.edu/~swager/causal_inf_book.pdf
+- Bookmarked for reference.
+- We did most of what is written here but one more thing was hugely interesting to me that nobody mentioned.
+
+Website alterations in real time. Contextual bandits are a godsend for this. You can have multiple versions of banners, basket designs, etc. and have a contextual bandit that chooses the right version for the right person. It is complex to initially set up but later on the marketing team can use it in a similar fashion to AB tests.
+- you might want to look at non subscription customer lifetime models
+
+eg in this notebook [https://www.databricks.com/notebooks/CLV\_Part\_1\_Customer\_Lifetimes.html](https://www.databricks.com/notebooks/CLV_Part_1_Customer_Lifetimes.html)
+
+the standard ones don't take covariates into account, but already provide considerable insights,
+
+bruce fader has popularised these models
+- I work in marketing and AB Testing (CRO) and it's the funnest in online retail. Feels like a fun behavioural game. 
+
+Then you can go off and do cool stuff around the following:
+
+- Propensity to buy
+- Lifetime value modelling
+- Price elasticity
+- Churn prediction
+- Segmentation
+- Marketing mix
+
+And a load more based on what you sell...
+- A lot of Causal Inference...
+- Forecasting profit
+- Can you elaborate more on warehouse space optimization?
+- How are LLMs reducing manual recos? Are they summarising based on a number of KPIs? Is this much different than say creating a weighted index combining the same metrics? Genuinely asking as I've seen LLMs used to summarise once you've made recos but not to make them because they're so bad at tabular data
+- Speaking of warehouse, could also be crew and order shipping optimization (products coming in, orders going out, restriction of loading bays, etc.
+
+There are also store-level analytics like sales potential, consumer segmentation, etc.
+- Hi, could you give an advice on which offer to accept:  
+1. LLMs in retail
+
+2. Demand forecasting in retail (classic ML mostly)
+
+Salary is the same. I like both. Which is better for the career?
+- Question: is there a way to find all common use cases for data science in business settings? Like some more-or-less authoritative list of projects and initiatives that data teams could take?

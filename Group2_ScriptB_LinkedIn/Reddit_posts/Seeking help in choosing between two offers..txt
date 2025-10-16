@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ky9jlz/seeking_help_in_choosing_between_two_offers/
+Title: Seeking help in choosing between two offers.
+
+Content:
+Hey Y'all,
+
+Needed some inputs in choosing between two offers. I have tried to read similar thread before. 
+
+**Company 1**: Some Fintech
+
+**Position**: Senior Data Scientist
+
+**Role**: Taking care of their models on databricks. Models like ARR modelling. Churn modelling etc.
+
+**Other Important Factors**: Company 1 has 5 days in office. This is a new mandate to prevent previous misuse. You also have to be very social person. They have had rounds of layoffs and had hiring freeze and have started to hiring again. My interview experience was great and I can see myself being successful in this role. However, I havent practiced classic machine learning for a while. I surely can pick it up. I am only worried that this role will have no engineering work at all. No productionsining of models. I am not sure how this will be for my future roles.
+
+
+
+**Company 2**: Some company which is actively using LLMs and Agentic approaches
+
+**Position**: Senior Machine Learning Engineer
+
+**Role**: Work with agentic AI and productionise and update LLMs
+
+**My Preference** \- Work with a company with stability and in a position where I can grow long term.
+
+
+**Other Important Factors**: This role is in line with my last role, my PhD and LLM experience. I have read tonnes of literature so I sort of feel prepared for this role but I feel worthless when I have to spend weeks to improve latency without touching LLMs. My technical round was also okayish in this company. They are doubling the team. They are a well established company too. 
+
+
+-------------------------------
+
+My last position was of a ML engineer and I think what I disliked is -- the position slowly slipping into too much backend work. I am a stronger data scientist by training but have a PhD in NLP application so know the other bit too. I do struggle a bit when it comes to productinising things but I have improved a lot and in a better place.
+
+I guess what I want to ask is for folks who work at companies that have not yet implemented AI -- do you feel behind the industry or you have satisfied with the current trajectory ?
+
+I honestly don't care about whether I work in NLP / AI or not, All I want is a peaceful job where I can do my best and grow. On one hand the ML engineer position seems to be very on the cutting edge of technology but I know at the end its going to be API call to some LLM with much boiler plate code and many tools. The data scientist position looks like something I have done in the past and now should leave and do progress to ML engineering. 
+
+Advice ?
+
+Comments:
+- How exposed do you think company 1 would be in an economic downturn? What industry is company 2? 
+
+My outsider's, gut-feel opinion would be that role 1 sounds a little more robust to the hype-cycle. Who knows what will happen with LLMs and agentic AI in a year or two.
+- I'm of the same mindset as you, and personally I am somewhat concerned about the sustainability of AI. I don't think it's returning the value in needs to return, so I think there's a point in the future - not too distant future - where execs are going to realize that they've spent 3-5 years and millions of dollars and their fancy AI projects are nothing more than masturbatory exploration.
+
+Meanwhile, the same problems that were there 10 years ago are still there - the data is shitty, and there's still a bunch of people doing a bunch of work poorly in random excel workbooks. And there's millions of dollars in benefits from just not doing that.
+- I’ve been in a similar spot before, choosing between a well-known company with a solid brand and a smaller startup with more freedom. What really helped me was thinking about what I wanted to learn and how much risk I was willing to take. At the big place, I got great structure and mentorship, but it felt a bit like being a cog in a machine. At the startup, I learned a ton fast but had to deal with more uncertainty. If you want stability and a clear path, go big; if you want to build skills quickly and don’t mind some chaos, the startup might be the way to go.
+- I’m in an agentic AI/LLM role and I don’t like it. It requires different skills than most data science roles. I’m looking for a new job and the only jobs I get considered for are other agentic AI/LLM roles. I’m so over being an API data scientist. I’m bored, but I’m stuck. Prior to this I did more traditional NLP. I miss it. So almost all my data science experience is with words (also have statistics experience). I told my boss at my current job that I want other kinds of projects, but I don’t think it is going to happen.
+
+I would go with 1 unless you want to stick to agentic AI/LLM’s long term.
+- Hey, I really appreciate how honestly you’ve laid this out — I’ve been in a similar fork-in-the-road situation, so I’ll share my thoughts.
+
+If stability, growth, and peace of mind are your top priorities, I’d lean toward Company 2 (ML Engineer working with LLMs). But if familiarity, strong alignment with your core skills, and a great interview experience matter more, then Company 1 (Data Scientist in Fintech) might be the better fit.
+
+For Company 1, the pros are clear: you felt good about the interview process and can see yourself succeeding — that’s a huge green flag in terms of team and culture fit. Plus, working on churn and ARR models means staying grounded in classic data science problems that are always in demand. But the cons are hard to ignore. A strict 5-day in-office policy can be draining, especially long-term. Also, the fact that this role won’t involve any engineering or productionizing work could limit your growth if you want to stay technical. And while they’re hiring again, a history of layoffs still signals some instability.
+
+Company 2, on the other hand, seems better aligned with your PhD, past role, and technical skillset. Working with agentic AI and LLMs is definitely more on the cutting edge, and the fact that the team is growing is a positive sign. That said, I totally understand the frustration of spending weeks on latency or infra work — it’s not always glamorous, and it’s easy to feel disconnected from the “AI magic.” But that’s part of the reality of shipping production AI. Your “okayish” interview experience might be worth unpacking too — was it nerves, or does it point to a culture mismatch?
+
+If I were you, I’d ask:
+	1.	In 2–3 years, what kind of role do I want?
+	2.	Which team excites me more when I imagine starting on a Monday morning?
+	3.	Am I more interested in leveling up my engineering chops, or going deeper in data/business impact?
+
+For what it’s worth — I work at a company that hasn’t fully implemented AI, and yes, there’s some FOMO. But there’s also opportunity. You see the gaps, and if you can bring in AI thoughtfully, you become a multiplier. I’ve seen folks succeed not by chasing hype, but by solving real problems extremely well — and introducing AI when the org is ready.
+
+You don’t always need to be on the bleeding edge. Sometimes, you just need to be needed.
+
+Hope that helps a bit. Whichever direction you go, your self-awareness and clarity really stand out — I’m sure you’ll thrive. Keep us updated!
+- Based on this info I would take company 1 for sure. Fintechs are usually run by those who come from banking or other fintech environments and in general have much more mature and stable problems to solve. It won't seem cutting edge or interesting maybe but in terms of stability I would take this role in a heartbeat over something with LLMs right now. Since you wouldn't be modeling new LLMs just piping into existing ones using APIs it essentially has to be like a backend engineer right?
+
+EDIT: Ok it seems like you see the tradeoffs. Company 2 gives you more room to grow and do something different maybe, but I think the chance of that role being downsized in a year is way bigger than job 1.
+- They had 2 rounds of redundancies in the 2023 and had a hiring freeze and now have re-opened hiring.  My interview performance and experience was better with company 1. Company 2 is a travel services company.
+- >masturbatory exploration
+
+LOL

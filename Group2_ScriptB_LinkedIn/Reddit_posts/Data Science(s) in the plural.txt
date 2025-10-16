@@ -1,0 +1,49 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16zw1dz/data_sciences_in_the_plural/
+Title: Data Science(s) in the plural
+
+Content:
+I am lead of a new Data Science Division. The management team at our company is insistent that Data Sciences in the plural is a better fit. On my team we have statisticians, database managers, geospatial geographers, programmers, and data scientists. We are also incorporating machine learning as well. Google searches almost exclusively mention Data Science in the singular. Does anyone have any opinions or suggestions? Should I bow down and embrace the plural or should I be adamant about the norm of the singular?
+
+Comments:
+- Pick your battles
+- Doesn’t matter
+- As long as the checks don't start bouncing, you can call me "Data Clown" if you want.
+- I encountered this for the first time this week on LinkedIn and now am seeing this post. Evidently, University of Southern California decided to call it the Data Sciences and I suspect there are some other universities doing the same thing. I'm not sure it matters materially for you. I wouldn't fight it.   
+
+
+https://www.marshall.usc.edu/departments/data-sciences-and-operations/faculty
+- I would say “data science” is more appropriate since it refers to a specific field. Just like you say “biology” and not “biologies”, you’re talking about a singular field comprised of multiple subfields.
+
+But this is a pretty trivial issue. If management insists on “sciences” I wouldn’t go to war over it.
+- Concede at work and use the correct term outside. Inside work, it could hardly matter less.
+- I really wish managers would spend their day doing something productive instead of sitting around having mental jerk off sessions about shit like this
+- I mean it seems like a distinction without a difference to me so I’d just leave it, no use in picking a fight over something meaningless
+- I'd argue it matters very little. Similar to how mathematics is a count noun or a  mass noun depending on where in the world you ask. Humanities, social studies, natural sciences all arbitrarily sound plural despite describing a singular collective.
+- For what purpose?
+
+I mean, the answer is almost surely "it doesn't matter", but where/why are they intending to use Data Sciences vs. Data Science?
+
+If it's literally to just name a division, then I am offended that you even wasted the time to write a post about it. It has literally no practical implication.
+
+If it's for writing job postings, then I can kinda see an argument - the argument would basically be "candidates may feel like a company that is hiriing for their Data Sciences department is either clueless or pretentious - and neither are good", but the reality is that I don't think anyone will care.
+
+Now, if we're talking purely about which one makes more sense, the reality is that Data Sciences makes more sense to me than Data Science because Data Science itself includes several well-established science fields - Operations Research, Statistics, Machine Learning at the very least. So it is the collection of all the sciences that deal with data. Therefore, data sciences makes a lot of sense.
+
+I think the term data science singular made more sense when it was in its infancy and it was basically 1:1 with statistics + machine learning. At that point what was considered data science wasn't this huge, sprawling area, but it was the more narrow definition of the person that derives deep insights from data via modeling. 
+
+That doesn't apply anymore - anyone can call themselves a data scientist if they try hard and believe in themselves.
+- When management is concerned, it is often best to pick your fights carefully.
+- So, you get to have more breadth than data science singular? Sounds like a win.
+- … huh?
+
+You’re asking strangers on Reddit about your coworkers adding the letter s to a word in your specific workplace? 
+
+What kind of advice are you expecting? “Report this asinine behavior to the CTO and demand the phrase sciences never be spoken again in the workplace”?
+- So what do your data scientists do vs your Machine Learning folks? Also, statisticians? Give me two bullet point per those three jobs
+- Data Science is the field of study. Just like Physics or Mathematics. A team can have multiple data scientists, but all work in the field of Data Science. The only similar example that comes to mine mind  with plural is Social Sciences. But in that case it does makes because is a bunch of multiple (singular) fields, like for example  sociology and political science.
+- It depends on the company culture, but in my experience this means being thrown into more meetings.
+- Data Sciences doesn’t exist. Either you are using data for prediction or you’re not.
+- I am a very stubborn person and even I think this is *extremely* petty.
+- Have you considered "datum sciences"?
+- Well, since you're doing the AIs, anyhow...

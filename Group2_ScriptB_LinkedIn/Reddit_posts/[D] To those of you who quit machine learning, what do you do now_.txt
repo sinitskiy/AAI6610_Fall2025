@@ -1,0 +1,59 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/11ryvao/d_to_those_of_you_who_quit_machine_learning_what/
+Title: [D] To those of you who quit machine learning, what do you do now?
+
+Content:
+I'm currently doing my master's degree and have been set on a DL-related career for a while. But recently I noticed it doesn't bring me joy.
+
+Coming up with architectures that randomly work/don't work, tuning parameters, waiting for days till the model is trained... the level of uncertainty is just too high for me. Because of that, I don't feel productive working on it and I'm slowly considering switching to another IT field.
+
+For those of you who quit machine learning (especially deep learning):
+
+1. What did you switch to?
+2. Are you satisfied with your new job? (Is it stressful/intellectually challenging? Is it possible to keep it 9-5?)
+3. How to ensure a smooth transition to that field?
+
+Thanks in advance!
+
+\_\_\_  
+PS I know machine learning isn't all about deep learning, but in my current subfield (computer vision), mostly deep learning is used.
+
+Comments:
+- Try more applied fields!
+
+Not in industry (PhD student), but used to do deep learning type research with a computer vision background. I'm now working on applying ML for computer systems. At least 90% of my actual research work is building the system, collecting the data, and deciding how to frame the problem; for that last 10%, essentially anything reasonable will do. The catch is that if you don't have a solid ML background, you might completely miss that last 10% and never realize!
+
+It's much more satisfying since if you're working on applications, you likely have potential downstream use cases lined up (that's what collaborators are for!). You're also probably the only person working on this specific problem formulation, so you don't need to worry about beating SOTA and squeezing out that last 5% -- your data-driven algorithm is 2x better than a traditional approach, so does it really matter?
+- [deleted]
+- \> Coming up with architectures that randomly work/don't work, tuningparameters, waiting for days till the model is trained... the level ofuncertainty is just too high for me.
+
+Good news! You say you work in computer vision. There's a high chance that in practice you'll mostly use off-the-shelf solutions and most of your actual time will be spent gathering data:)
+- [removed]
+- You can pivot to an adjacent role within ML like MLOps or Data Engineering. That’s what I did. I didn’t like waiting an entire day for a model to run and then having to fix it late at night so I can do another iteration throughout the night. So now I build machine learning platforms which is more traditional software engineering and comes with predictable outcomes. Your knowledge about ML is still valuable.
+- I actually went the *other* way. My background is FEDGOV hurricane scientist who now works at a popular weather app after teaching myself the ML part. We do a lot of statistical modeling in meteorology already (mainly bias correction and downscaling), and I made the decision to move away from dynamics-based research to statistics-based applications since it's about to take over our field as well. I'd argue meteorology is one of the original big data problems, but I guess that's a topic for a different day.  
+
+
+Anyway, there are a bunch of meteorology companies that are using AI/ML for a variety of things. Since you said you were doing computer vision, identifying things in satellite imagery (Sentinel-2, LandSat, maybe even GOES) is very popular right now. It doesn't get you away from the core issues of tuning models, but maybe a different focus might work for you...?  
+
+
+I would just warn you that the pay in the field of meteorology sucks relative to BIG TECH.
+- 1 - Data engineering and DevOps  
+2 - It's way less stressful than ML because you have really clear requirements ( I need to get data from a source in a certain target with those constraints ). This sometimes can be challenging due to business requirements (Time, consistency, and monitoring those pipelines) but I find it better than go into a project where I don't even know if it will be feasible or no.   
+3 - I was a good programmer before I got to ML, so for me it was like I switched back to what I used to do, so it was not a big deal. ( My curriculum was a lot of software engineering / managing networks and pure dev)
+- You can do a lot in other subfields. Even basic churn predictions are something valuable for a lot of firms. Are you sure you’re not swept by the DL hype yourself?
+- I've had jobs that were similar to what you describe. My current job contains less by way of tiny tweaks to massive DL models and more feature engineering and engineering in general which suits me better.
+
+My slightly warm take is that DL at the coal face in industry feels very random, very time consuming, and as a result a bit demoralising. More power to you if you have the knack for it, and enjoy it, it's just not super my bag.
+- Manage people who still do machine learning. Motivating scientists isn't unlike the constant iterative grind of matching the right reward function to the right model.
+- I jumped from ML ( 2 years) to MLoPs ( 1 year)  then to backend engineering (1 year) . Now I am planning to come back to ML. Mostly worked with CV was bit bored since we mostly used off the shelf models, but other endeavours turned out to be more boring for me . It's my personal opinion, there's nothing wrong with the fields. I don't find it intellectually challenging. For me it was bit stressful because it seems there were lot of systems in place which created complexities. Coming back to ML, because I feel it satisfying ( although it has its cons) but I do enjoy it more than the other fields that I have tried.
+- I went into a quant research position at a prop trading firm and am very happy about that decision. While unfortunately I have not been using any deep learning so far, it is a lot of stats and machine learning. Also there are some interesting applications of physics informed neural networks, which I want to look into at some point. It is definitely fun to work on problems now that just need to be solved in a creative way instead of continuously having to come up with new research ideas.
+- A lot of NLP specialists are having an existential crisis since chatgpt and now gpt4 have shown to solve pretty much any problem you throw at it. Some of us have used our knowledge of productising large language models to move into MLOps and data engineering where the outcome is more deterministic
+- Would you say “coming up with architectures that randomly work / don’t work” is a shortcoming of your understanding or of the field in general? 
+
+I’m asking because I’m thinking about doing the opposite switch right now - ML interests me deeply and I’m currently in standard cloud development.
+- I dislike Computer Vision. It just annoys me somehow.
+- Never quite made it to working on ML professionally. This week I'm a 'Data Engineer'.
+- In case I'd like to dive into something along these lines, how such positions tend to be called?
+- High chance you're right
+- Haha not sure if this is that comforting
+- The model is ready, I'm here to collect data ;)

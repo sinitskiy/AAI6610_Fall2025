@@ -1,0 +1,23 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17399pd/major_in_data_science_or_cs/
+Title: Major in Data Science or CS?
+
+Content:
+Hey y'all,
+
+I'll keep this straightforward: after undergrad I'd like to head to grad school to do some work involving bioinformatics or computational biology – or if I get a job in industry that instead. Right now, I'm in a lab that deals with machine learning to segment images of bacteria, and I love it – both the wet lab and computational parts. 
+
+I've been advised by my Pi that it would be wiser to not minor in CS (no longer considering minoring but majoring) and to instead take DS classes, as some CS classes deal with more architecture stuff. 
+
+Now, I am considering doing a full on major in data science, CS, or maybe even statistics, with a minor in biology or just extra science classes (more on that later). Which major would be better? I'd really like to focus more on designing machine learning stuff (maybe even algorithms) or simulation based work. 
+
+\---
+
+side note: is having the "minor in biology" line on your resume worth it? Could I instead take some biology and science classes that interest me (chem, orgo, labs, biochem, cell bio, molecular bio, synthetic bio)? Or should I try taking some extra classes to get that line?
+
+I recognize that this post covers a lot. Please feel free to only respond to certain parts of it. Any insight would be appreciated!
+
+Comments:
+- As long as you have the classes on your CV, I don't think that the major will be that much of an influence.
+- Wdym? Are you referring to a data science / CS major or biology major / minor?
+- I didn't state that clearly.  I meant to imply that the major or minor won't matter all that much as long as there is significant coursework in the area whether it is data science or biology.  For example, my major/degree was in computer science, but I had as many math credits as computer science.  My university didn't recognize minors officially, but anyone reading my CV would instantly see I was a CS/math guy in equal portions.

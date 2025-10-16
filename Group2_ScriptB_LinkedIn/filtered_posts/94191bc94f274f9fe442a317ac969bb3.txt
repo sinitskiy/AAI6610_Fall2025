@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/tom-whitehead-33a319131_materials-chemicals-machinelearning-activity-7351179674833547265-rUV4
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Tom Whitehead的动态
+Tom Whitehead
+
+Head of Machine Learning | Intellegens
+
+2 个月
+
+Gaussian processes are often taken as the gold-standard for uncertainty quantification.
+
+But did you ever wonder where the training data went? GP uncertainty estimates don’t directly depend on the training outputs 🤔 
+
+(y appears in the GP mean prediction, but not in the uncertainty)
+
+For data with different noise levels in different places this means Gaussian processes suffer - predicting similar uncertainty everywhere unless you explicitly tell them the local noise level. 
+
+Compare to the simple random forest in the picture; it naturally has higher uncertainty where the data is noisier, without being told the local noise level.
+
+In real #materials and #chemicals projects understanding uncertainty is key. And often we don't know the noise levels in advance - we need #MachineLearning tools that handle real experimental data as it comes.
+
+317
+47 条评论
+赞
+评论
+分享
+Victor GUILLER
+
+Design of Experiments (DoE) Expert @L’Oréal | 💪 Empowering R&I Formulation labs with Data Science & Smart Experimentation | ⚫ Black Belt Lean Six Sigma | 🇫🇷 🇬🇧 🇩🇪
+
+2 个月
+
+Tom Whitehead I agree, Gaussian Process is not the only model available for uncertainty quantification (many models provide metrics for this), and there are as well many methods/frameworks that enable to have model-agnostic calibrated uncertainty estimations and uncertainty quantifications.
+
+🤔 I have mixed feeling about this direct comparison: The nature of the computed standard deviation is quite different, as the Random Forest relies on bootstrap samples to get this uncertainty assessment.
+So here the comparison of standard deviations (and intervals displayed here) involves those obtained from confidence intervals from Gaussian Process with the ones obtained from bootstrap intervals from Random Forests, these last ones being known for being a lot tighter than traditional confidence intervals and could lead to o

@@ -1,0 +1,19 @@
+URL: https://www.linkedin.com/posts/floris-den-hengst-06ab7534_llm-rag-conformalprediction-activity-7206593368091410433-i5GU
+Date: 2025-09-24
+Author: Unknown
+
+How can you avoid 
+话题标签
+#LLM hallucinations for question answering? With 
+话题标签
+#RAG and end-to-end 
+话题标签
+#conformalprediction(CP)! https://lnkd.in/engV7Dp3
+
+First, CP is applied to the retriever to generate sets of answers that contain the true answer at a high level of confidence. The LLM then generates multiple responses based on this answer set. These are clustered into semantically equivalent subsets, each of which represent a single possible answer. These are again calibrated using conformal prediction to form sets of LLM outputs that are highly likely to contain the true answer. These are deduplicated to create a final output set with a low probability of hallucinations.
+
+Bayesian optimization is performed on the hyperparameters of the approach to strike a balance between allowed retriever and LLM error rates, and so that the final answer set is minimized.
+
+By Shuo Li, Sangdon Park, Insup Lee and Osbert Bastani
+
+I wonder whether the clustering and deduplication steps can be merged or otherwise simplified, and whether better nonconformity scores for these steps can be formulated based on e.g. LLM confidence measures.

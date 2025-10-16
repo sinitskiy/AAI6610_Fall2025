@@ -1,0 +1,63 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ci5eau/what_do_you_think_of_graduate_student_applicants/
+Title: What do you think of graduate student applicants?
+
+Content:
+
+I am a graduate student working on Data Science. The weird thing I notice recently is that graduate schools don't teach SQL or BI tools(which makes sense because those are areas you can pretry much self learn), so a lot of graduate students are lack of those skills (me included) when applying DS or DA jobs.
+
+But they have all the machine learning related cool-looking projects on their portfolios. So their resumes might more fit to DS roles maybe, but their lack of experiences and way less number of DS jobs stop them. Then when applying DA roles, their inadequate SQL or Bi skills stop them.
+
+I noticed this weirdness because my friend who has several cool ML projects just failed SQL interview for DA role. I know there are many data professionals here, so wanted to ask if you have notice this where there are more graduate students applicants recently but bootcamp self learners are more fit? Now I think 6 months of bootcamp heavy focused on SQL with relavent projects could have given me more higher chances to get me DA role.
+
+Comments:
+- Man..
+
+sqlbolt.com
+
+~2h hands on online tutorial. I can't recommend it enough.
+- No, bootcamp is like bottom of the barrel when in comes to candidates. If your graduate program didn’t cover SQL you can learn it on the weekends. It’s much easier than learning python. 
+
+If your friend have “cool ML projects” but can’t pass a SQL interview he probably just imported libraries and copied from a repo and can’t actually code. 
+
+Some of the recent comments I’ve been seeing on this sub excusing superficial technical skills really shows why entry level is so saturated with unqualified candidates.
+- I've regretted hiring boot campers every single time for DS. They know how to do an analysis as long it is planned out. Researching and coming up with strategies, aka problem solving, is always an issue.
+- I don’t care if an applicant doesn’t know SQL or BI. SQL is pretty easy to pick up on your own if you’re already proficient with Python/Pandas. And I never used BI tools in data science before my current job. My previous company hired analysts to do all the dashboards, etc. so the data scientists could focus on modeling. And in my current group, it seems like the data scientists only learned the bare minimum they needed to use PowerBI for a very small subset of our work.
+- Boot camp instead of grad school? Hell no. You can learn SQL on your own in a weekend.
+- The way I look at it is that grad school is loosely equivalent to the same number of years of work experience, assuming the hypothetical work experience is relevant.  If you go get a masters, I put that on par with a Data Scientist with 2-3 yoe and no masters.  It’s all about the experience gained via any of the avenues of learning- be that work or school.  
+
+As for SQL, that’ll always be highly important and the kind of thing higher ed teaches fairly poorly.  I’d prefer good sql skills over expert BI skills any day - don’t get yourself hung up on becoming a BI tool expert.  If you can write decent sql and R/python, any employer worth their salt will overlook not being a Tableau expert even if it’s something you’ll use regularly in your role.
+- I tell people all the time they shouldn’t get a graduate degree before they have work experience, and this is why. Your graduate program definitely aligns more to a DS position, but DS is not generally treated as an entry level role. I would definitely recommend getting skilled in SQL either way, as you’ll certainly need it as a DS
+- Computer Science isn't any better. It's nothing but math, math and more math. You can learn all of the computer stuff on your own.
+- As others said, bootcamps are not well-regarded anymore (thank god), and they shouldn’t be as you definitely can pick up SQL  with an online course, even get a little certification for it if that matters.
+
+What I don’t understand is this notion of grads not having any experience before their first full time job out of Uni. At least in Europe, it’s vital to get at least some internship experience under your belt before finishing your degree(s), so you don’t end up in this exact situation (this doesn’t apply to phds, of course). It’s extremely competitive for sure, but still better than the shitshow that grad job search is at the moment, especially with no relevant experience. My advice is always to fight your battles early on, cause it’ll give a competitive advantage (and no way you don’t pick up SQL and BI stuff if you do at least one 3-month internship). This helped me and many others I know, early in my career.
+- You can learn this on your own. You will find some tools they call data warehouses. Those use SQL. That includes Snowflake, Tableau, etc. You could install Apache Spark too, since it's free, and use the SQL interface to their dataframes and it has ML and stats libraries
+- Like it or not, higher education is not designed to prepare you for the job market. I'm aware that this won't be a popular statement, but it's the truth. Professors may strive to do so, but most of them have zero industry experience.
+
+Likewise, I don't assign the same weight to a masters that I would to the same amount of work experience in-industry for hiring purposes. It is extremely unlikely, based on the interviews and hires I've had/made, that a Master's student will have even anywhere close to the same chops as a practicitioner in industry with a lesser (or no) degree.
+
+Learning SQL isn't optional for Data Scientists. I would expect for any DS to understand at least a good portion of analytics roles, since I expect you to sell your projects the same as any other engineer would.
+- Dont get me wrong, theres a theory and an art about data visualization, but if you can solve ML problems at a grad level, you would be fine learning the viz stuff quickly. Same with SQL. You can learn basics in as little as a few days, and build your expertise from there.
+
+
+For reference I learned enough SQL during the first few weeks of a coop (aid internship) to produce value. I read "the big book of a dashboard" for another coop in a couple days or weeks, and that was enough to get started. 
+
+
+On the other hand, bootcamps doers often lack the "mind" to wrap their head around moderate to complex data. And often wont progress much past sql beginner level, especially if theyre the sort thats afraid of math etc.
+- This guy described me , 🥲
+- DS is all about creating value for the company, and the fancy academic ML projects rarely create any value. 
+
+I have an MSc in ML and submitted my research to a journal, but still had a very very hard time getting my first job.
+
+I work as a DE now and dabble in some DS projects every now and then, but proper DS is like 1% of what I do. Sadly most of our jobs are simply project and stakeholder management, trying to work with other teams and trying to create a single source of truth for all data in the business.
+- Skills based assessments are so dumb. Smart people can learn anything. Hire smart people and train them. Hired someone about 1 years ago and taught them basic SQL and Python. Now they’re taking classes in their own free time. Can’t teach that.
+- I would argue that to get really good at Pandas you will be better off to first get really good at SQL. Unless you are working with a relational database typical to a mid to large sized organization it will be hard to really know what you need to do with joins, cte's and other operators. Pandas gives one more flexibility, but to really understand working with flat data tables people with no experience should use online resources to start working with simulated relational databases with SQL.
+- Was in this boat. Learned enough of  the “extra stuff “ on a 2 month internship to land my first full time. I think you can learn the SQL and some extra  viz tool pretty easily. I would say that the python is a bit more involved. Good luck !
+- I'm in the same boat OP! Since I did not get a job, I have a sneaky plan consisting of doing some unpaid work, beefing up a portfolio to put on github, and picking up Power BI, Azure, and SQL on the side. I'm not sure why none of us are getting love but there are things you can do to put some meat on your resume come fall!
+
+Basically I think it boils down to the fact there have been an influx of analytics/data science degrees in the past few years, we are all competing for the same type of roles, hiring is slow because its an election year and the interest is high, and we all have no/little experience + no sql/power bi/excel + a lot of cool CS projects.
+- I'm finishing up my MSc and shortly after starting got super lucky and got a Jr BI role. I find that something LARGELY overlooked is Excel. We don't touch BI tools, but a lot of our end users want automated reports, and it often requires Excel because are main reporting platform has some limitations, and most users use Excel. 
+
+While I could manipulate data all day with pandas and numpy, I didn't realize just how ignorant I was to Excel. I have a good feel for it now though and think it could be useful to at least have part of a class focus on it.
+- I'm currently in a Master's of Data Science program (Eastern University) and we had a SQL course. I ALSO had a SQL course in my IT Master's degree AND in my Library Science Master's degree program. So I don't think it's universal that SQL isn't being taught. I got it 3 times in 3 different programs!

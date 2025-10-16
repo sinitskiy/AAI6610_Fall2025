@@ -1,0 +1,124 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1mhikh4/how_can_i_give_a_good_data_sciencemachine/
+Title: How can I *give* a good data science/machine learning interview?
+
+Content:
+I'm around 6 months into my first non intern job and am the only data scientist/MLE in my company. My company has decided they want to bring on some much needed help (thank god) and want me to do "the more technical side" of the interview (with others taking care of the behavioral etc)
+
+I do have some questions in mind specific to my job for what I want in a colleague but I still feel a bit underprepared. My plan is to ask the 'basic' questions that I got asked in every interview (classification vs clustering, what is r^2, etc) before asking them how they would solve some of the problems I'm actually working on
+
+But like that's all I have in the pipeline at the moment, and I'd really like to avoid this becoming the blind interviewing the blind moment.  
+
+Does anyone have any good tips on how to do the interviews, what to look for or what to include? Thank you!!!!
+
+EDIT: In reply to the DMs, we are not accepting any new applicants at this time 😅
+
+Comments:
+- When you’re checking someone’s technical aptitude for Data Science/ML roles, you have to be able to tie the questions you ask to the actual work you do, rather than just asking for definitions.
+
+For example, if my team is building classifiers, I’d ask things like “How does changing the threshold affect Precision and Recall” rather than just asking for definitions of Precision and Recall. But to answer that question, they’d have to know what those definitions are. 
+
+So tie your questions to the job description. This is how you would keep it fair. There’s so much theory that’s asked in these interviews that’s honestly quite meaningless because you’re never going to be using it.
+- Asking trivia (what is r-squared, defined classification v clustering) are rarely good interview questions. Good performance on them does not usually correlate well to strong candidates.
+
+Generally, the best way to design an interview is to create an open-ended question in a specifically scoped technical domain that you know well. For example, if you work on fraud detection systems, you might ask "Tell me how you would design a fraud detection system" - and that's it, that's the whole interview. You could talk about this for an hour at least.
+
+If you are looking for more insight into the candidate as an engineer, you could clarify that you want a systems view, so how the feature store works, where model artifacts are stored and how they are served, how data for observability gets emitted etc.
+
+If you want a more modeling focused view, then ask the candidate to think through data collection, featurization, choice of model, how to evaluate the model, etc. Prepare follow-up questions for each stage depending on what the candidate might say, but also use your judgement - remember this should be in a domain you know well.
+- amusing brave piquant existence dinner innate longing grandfather nail practice
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- As a general rule, I think you, as a junior yourself, should be careful about asking questions that are too open-ended. There are three reasons for this:
+
+1. You may not yet be experienced enough to recognize the differences between actually smart answers and answers that just sound smart
+
+2. You will be inclined to hire someone that thinks the same way you do. This can be dangerous since the way you think about DS/ML right now may not be the way a more experienced person would think about it (or the way you will think about it in ten years)
+
+3. You will be letting your personal biases have a large degree of control over the interview process
+
+Instead, I would split apart the traits you want your ideal candidate to have and test them separately.
+
+Want domain knowledge? Come up with 2/3 multiple-choice questions about your domain. Want SWE skills? Have them do a straightfoward coding problem with a clear correct solution. Want DS skills? Ask those basic stats/ML questions you were discussing earlier. 
+
+The absolute worst thing you can do is to recommend a candidate that isn't right for the job and so you should do everything to focus on weeding out people who are bad with simpler questions instead of separating the good from the great with more complex questions.
+- I usually ask:
+
+What’s your favorite project you’ve worked on?
+    How does _______work?
+    Where _______ is whatever they just talked about
+
+What was the business/broader impact of _____project?
+
+Do you lean more towards speed or accuracy if you had to pick one?
+
+Have you ever used ————?
+    Where ———— are the things they’ll use in the job
+
+I also tell them what the job entails, what success looks like, what we are looking for.
+
+Ask them what questions they have for me.
+- I was not senior either, and I never quizzed people like that. All interviews go two ways imo. A technical interview doesn’t mean it’s not still a behavioral evaluation from their end, and I wouldn’t appreciate being “quizzed” if I was in their shoes.
+
+I’d introduce myself and my role so they knew how technical I was. Then I’d ask them to explain a project from their resume/of their choice. It’s conversational, it’s a low pressure way to fish out how competent they are. This worked at all experience levels, in my experience. 
+
+I asked follow ups that peaked my interest, relative to the needs of the role. Then asked more direct questions on if they had experience with certain things - just to get a feel for how far along they are. “I haven’t used that before” was a perfectly valid answer and did not immediately kill anyone’s chances. Purely diagnostic.
+
+I didn’t ask much about general programming experience tbh. I mean, if they can explain in depth a statistical model that they built, then they presumably had the programming ability to actually build it. 
+
+If you’re looking for an MLE maybe this is a different story. but that’s how I approached DS/DA interviews.
+- Instead of just focusing on recall-based questions, try to pose open-ended problems similar to what you tackle daily. For instance, present a messy dataset (sanitized, of course!) and ask them to walk through your approach to cleaning, feature engineering, and model selection. This will give the you a much better sense of their problem-solving skills and practical experience.
+
+I've found [Interview Query](https://www.interviewquery.com/) (I'm a user) to be helpful for seeing a range of questions and ways to answer them. It could give you some inspiration for structuring your problem-solving scenarios.
+- [removed]
+- First, imo, you're not set up to succeed in this. Those of us with 5+ years still barely know better than a coin flip who will work out or not. There's no real way for it to not be the blind leading the blind. You don't have the experience at this time to effectively interview someone, be it for technical or soft skills, so just do your best and make sure you set up a comfortable environment to bring out the best in the interviewees. 
+
+Better advice could be given with a bit of background on the role, types of problems you do, etc. I work in recommender systems, so I tend to ask a question like (in more words) "Given this set up, design a recommender system for it" and along the way we problem technical breadth. 
+
+There's just kind of a checklist I run through - problem set up, what metrics, what objective functions, how would you structure a training set, what should the train/val split be, what model are you using, what features would you want, how would you measure if this model is better than a baseline, how would you handle XYZ, etc.
+- Focus on how the candidate thinks, not just what they know. Start with core concepts like model evaluation metrics or overfitting to test foundational fluency. Then have them walk through a past project to understand how they approach problems, make decisions, and communicate. Finally, present a simplified version of a real problem you're working on and ask how they'd tackle it. You're looking for structured reasoning and sound judgment, not perfect answers. Platforms like StrataScratch and InterviewQuery are great resources to build question sets grounded in real-world data science interviews.
+- Ask them to bring in an ML project that they worked on which reflects their understanding/ experience with the Data Science projects. For example, you will see whether they understand how to preprocess the data (e.g., data cleaning, imputations, one-hot encoding), what ML model they used and why and what are its limitations, how they did the split, what the training and testing errors show, and how they evaluated the model.
+- I mostly take up a case study. Give a very ill-defined data science problem like "i have to predict a continuous variable which is highly skewed but I dont want to remove outliers as they are important data points. I have 150 features and my features include some variables which are continuous, categorical and some are very high cardinality cateogires. How do we go about this from data processing to model evaluation"  
+This way even if they have some AI tools, they still need to use their knowledge to answer and its easier to test and ask more follow up questions to dig deeper.
+- Take home project and discuss how they did the analysis/model selection and why.
+
+I’m talking as a job seeker because this is the only kind of interview I think I’d be able to pass, I’m a terrible test taker.
+- I mostly structure my interviews in three ways.
+
+1. checking if this person will get along with the team/company.
+
+This is kind of subjective, but I try to find out what motivates them. Is it only money or do they enjoy what they would be doing at work.
+Personally I hire less skilled people if they have high motivation and drive since I believe they will learn on the job, but if a high skilled person does the bare minimum it can ruin team dynamics.
+
+2. I test for critical skills that the candidate should have.
+
+This for me is for example if they can use Git.
+Can they write python functions and classes or only work in notebooks?
+Can they explain solutions in simple terms?
+
+3. I ask about their previous experience to check their technical skills.
+
+Do they actually know what is claimed in the CV?
+For example it someone writes that they have used Xgboost to create a fraud detection classifier.
+Then I would ask about what gradient boosting does. Why did they use boosting and not bagging.
+Are there any issues treating the negative class as true negative?
+- what are your responsibilities at work?
+- as an interviewer for a data scinece/analyst role, how much of a importance do u put to having a github portfolio especially when hiring a fresh grad with no working exp, only school projects?
+- If you’re hiring a fresh grad, ask a few questions they’re unlikely to fully know the answer to. However, be prepared to coach them through it.
+
+Asses their reasoning and problem solving capabilities based on how they approach an unknown and how they use the information you give them.
+
+Even if their answer is ultimately incorrect, them taking a logically sound (and potentially creative) approach can yield some good insight.
+- I’ve interviewed many Data Scientists and Machine Learning Engineers for a variety of positions. 
+
+Please watch out for people using LLMs to provide text book responses during online interviews.
+
+Your best bet is to ask them about projects they have completed and go into as much detail as possible. Ask lots of questions and this will at least give you a measure of how good they will be at upskilling you as a junior. You definitely need to find someone that you are able to work with.
+- My go to question that cascades out is to ask the candidate about a DS project that they enjoyed. Not only does this put them in their best setting to answer questions but you get a feel for what passion looks like to this person in this domain. 
+
+From there, ask them questions about how they approached it, what challenges did they face and how did they overcome them. This gives you a sense of how adaptable they are to expanding their skillset. 
+
+Then you ask about the environment surrounding the project. What was it for? Who was it for? What were the results? This gives you a sense of their business acumen - do they recognise what a good outcome looks like? What about a bad one? What problem were they trying to solve for and how did they approach it with that in mind? What were the metrics that they chose to use and how were they translated/ presented to the stakeholders?
+
+You can even get a lot from listening to lessons learned and how they handled a flop.
+- remember why you thought you were a good fit

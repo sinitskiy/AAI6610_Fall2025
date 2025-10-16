@@ -1,0 +1,96 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/vvk77/phd_going_horribly_wrong_but_i_still_want_to_stay/
+Title: PhD going horribly wrong - but I still want to stay in science. Help?
+
+Content:
+I'm doing a PhD in molecular biology. I love science, I love what I do and masochistically enough I want nothing but to stay in science. But my PhD is going straight to hell because I don't get the support most other PhD students get and I don't even get a project to work on.
+
+When I started, my PI (physisit doing mostly computational biology) and another PI (biochemist/molecular biologist) had a living collaboration going on and I was to take on a project they had together. It was a really cool subject and I was enthusiastic on working on it. Everything looked really good on paper. 
+
+However, after about one year I realized that I wasn't getting much if any supervision at all (2-3 meetings a year with no post doc or other student to turn to for help). During this year one of the PIs got another position and changed her field pretty much completely. My PI on the other hand grew tired of the project because the results were not coming in fast enough mostly due to limited access to a mass spectrometer. And I was asked to move on to another project. Sure. That was fine for me and I started on a project of a PhD student in the group who was about to defend his thesis.
+
+All good, I thought. Now I had a method that was working, there was a clear theme and all. But after half a year it became obvious that I would not be allowed to carry on with this topic because it was actually reserved for a PhD student from another group to finish (a collaboration project). This was something I had no idea of. So one and a half year in, I'm again forced to change subject.
+
+I came up with some ideas of my own which I'm now following. But I get essentially no supervision. All help that I do get comes from random professors or post docs I manage to make to look my data/experimental design. So everything goes very slowly and I am forced to learn by trail and error. There is no one I can talk to where I wouldn't need to start by introducing them to the topic and explaining why I do what I do.
+
+Meanwhile, all random side projects are dumped on me. Check the expression for protein A for group Z. Run western blots for group Y:s project. These projects have essentially nothing in common and while I will graduate with about  2 third/fourth author papers and 2 first names the thesis itself will be a mismatch about 4 entirely different projects. It sucks and this is not how I wanted to do science. I'm essentially a machine for western blot - an easy method ANYONE could do. Again, I'm left pretty much alone because the collaborators only want the results - they are not interested in discussing them with me. My supervisor? He knows just about what an antibody is.
+
+The worst part: I'm afraid I won't stand a chance in finding a post doc position in a decent to good group. How could I possibly convince them to take me when I have no Nature/Science/Cell papers (I guess the best I can do is something along the lines of JMB) and/or no expertise in any relevant method. I know I'm smart and capable but I'm afraid I won't be able to show it when sending in an application.
+
+So far I'm trying to network the best I can as well as learn new skills that I can do by myself without any access to expensive equipment (try assays that require only the simple pipette-centrifuge-thermoblock set up) and programming. But I seriously doubt it will make a big difference.
+
+I have frequently talked to my supervisor but he does his best to avoid the subject and if he agrees to talk about it he tells me that "that's life." and "it's not hard to find a post doc." etc. I get the feeling though that he does not want to deal with it. He doesn't seem to want me to work in another group either and because of that the dean of the department wasn't positive about my plans to apply for transfer. Despite which, I think it might be too late now anyway.
+
+Any personal experience, advice or suggestions are more than welcome!
+
+EDIT: I forgot to add, that after the collaboration with the biochemist and after having a post doc who refused to share his research with anyone (even the PI) he decided to quit the lab. The other graduate student who had been there slightly longer than me quit and I think she went on to marketing or something. So now I'm the only one left which is why my PI is totally unmotivated when it comes to anything that has to do with lab.
+
+Comments:
+- Biochemistry Molecular Biology Professor here. I don't need to tell you that your adviser sounds like somebody who does not know how to mentor a student. Or does not care enough to do so. This is a problem that could drag on forever and end badly. Do you have a dissertation committee? I have seen students in similar situations resolve them by using the committee. Essentially by calling for a committee  meeting and discussing the issues openly with them. This can help, but only if the committee is sympathetic towards the student. Otherwise it can backfire. A change of labs is always a possibility. I have seen this kind of resolution also. It will take some resolve on your part because people will resist it, including other advisers who might even want you. Students in my program come to me with such stories. Depending on the details, I either advise them to stick it out and finish or I advise them to start talking to professors to find another lab. Basically if it looks like they can successfully get a PhD (no matter what the quality of the papers, etc) I advise them to stay. If it looks like a PhD is doubtful, I advise them to find a lab that will take them (first) and then switch labs (second).
+- [deleted]
+- I can't really give comments, but I can offer moral support.
+
+I've seen and lived through many similar things you're talking about and my opinion is that yeah, it's probably not that hard to find a post doc and you can still make good then. Make sure you have those 1st author papers (I still don't have even one) and you will graduate and it might get better.
+
+Though you'll be more careful in choosing a lab next time I guess. We're thrown into PhDs so fast with no idea of the issues that will happen, and unfortunately many many PIs only care about publishing their own name and don't give a shit about students. We're only tools to be used and if we can't be 100% independent sometimes they just toss us aside, give us whatever they think we can handle and do it so things go as fast as possible regardless of what we learn.
+
+I personally want out.
+- You need to switch labs.  Go talk to the department head or the graduate program supervisor.  Don't resort to name calling or complaining about how terrible your PI is, just talk about how you're not interested in your research anymore.
+
+I switched labs (and fields) after being in my program for a year and a half.  I went all the way from very molecular/computational stuff to more ecological/physiological research and couldn't be happier.
+- Switch labs. Find if there are any labs around with topics you are interest in and are willing to take you in.
+
+Finding a post-doc is not easy but doesn't require a nature/science/cell paper. It's extremely hard to publish in those journal without the right political pull. That's the reality of academic publishing these days.
+
+Making connections by going to conferences/presenting/posters will at least get your name out there. If you are in a niche field, then that's even more important.
+- I'll join the chorus: switch labs. There is nothing wrong with switching a PI during your PhD. We had a student leave his lab after three years in the program and she's much happier now. Talk to your program, check what's the procedure for this and get their backup. Then have a nice, calm conversation with your PI. Maybe he can recommend another PI for you; if not, ask other students in your program for recommendations. Don't stay with a PI that treats you like that.
+- What to do depends on the particularities of course, but keep in mind that a PhD project is only a small part of a scientific career. So, as long as you get a halfway decent output (and I agree with others here that Science/Nature is *not* mandatory) it might be not so bad to just get through it as quickly as possible.
+On the other hand two years in is really not too late to start over if there is a good alternative available. In the end a PhD project is mostly a test of your ability to overcome frustration which is a lot easier if you like what you are doing and if conditions are good, of course.
+Without disclosing identities - someone I know started over after two years, finished the new project in five years with only second/third grade publications, then switched topic for the postdoc and is now (after one postdoc) applying for tenure track positions while at the same time having two externally funded positions lined up as plans B and C...
+- I switched labs at the start of my fourth year and it worked out really well for me. I started off in a lab that did mouse colonizations, but I ended up being very allergic to the bedding they kept the mice in. So for the first year, I basically did bacterial growth curves. For a whole year. Not enjoyable. The professor eventually came up with a project that complemented the mice colonizations, but it was very theoretical and, after a year and a half of fighting with the technical challenges of the project, I realized I needed to move on. 
+
+I talked with a brand new professor during the summer between my 3rd and 4th year and joined her lab. My first PI was happy that I switched because it meant I would get my degree, since the project in his lab was blowing up.
+
+I switched from a more classical microbiology focus to marine microbiology and enjoyed the change immensely. It did add some time in getting my degree (took 7.5yrs), but it worked out in the end. I basically got my PhD in 4.5 years with my second PI, but unfortunately had wasted my first three years on a project that went nowhere. 
+
+Also, I only have 2 first author papers from my dissertation (our lab didn't work together on projects, so I had no opportunity to have second author papers) and 1 middle author paper from the first lab I was in. I landed a great postdoc in Boston and have changed my focus (again) to synthetic biology. Things have never been better.
+
+TL,DR; I switched labs in my 4th year and things worked out. Since you're in your 2nd year, I think a change now would be fine. Despite a bumpy beginning, things ended smoothly for me and I'm sure the same will happen to you. Good luck.
+- I recently graduated with a Master's.  There are so many post-doc positions out there that I have seen while searching for an appropriate job for me.  Certainly there is no shortage.
+- I think I can be helpful to you, but I think I lost some of the important details in the length and details of your story.  What year are you in your degree?  How many papers do you have how and how many in the pipeline?  When does your funding run out?  How much of your work is experimental, theoretical, and/or computational?  How is your relationship with your committee-members?
+
+Even without that info, I can tell you this.  I had a pretty good PhD, even though my advisor never spoke to me for more that 45 minutes the entire time, except to eviscerate me in front of the entire lab during lab meetings AND no one did what I did in the entire school I was at.  I don't mean this to shame you or anything like, just to let you know it's possible, and I don't even feel like it was too hard for me.  There were a lot of students in my program with similar problems to yours (and I guess, mine, but I suppose I thought of it as more of a "situation").  I think the big difference between me and them, was that I was a lot older when I started my PhD and didn't have a particularly good college experience.  I think a lot of these students were pretty accustomed to the kind of guidance you get as an undergrad.  Many students burned out of the program, ones whom I think would have done well otherwise.  You are right that you deserve to stay in science and these bad circumstances should not make the decision for you.
+- One of the PhD students in a lab I rotated in was in a *very* similar situation to you, but was 3 years into the PhD. I'd recommend switching labs. It sounds like it just isn't worth the trouble anymore. As someone with experience and the core classes completed, you can jump right into a new field and finish in 4 years. Make sure to join a lab with a great PI who trains his students very hands-on, has great funding, and is in a promising field.
+- If I understand correctly, you are doing a biology program with a physics professor?  Awkward.
+
+At any rate, this doesn't sound all that different than the programs a lot of my friends experienced.  Progress may be slow, but if you are good and hard-working you'll figure it out.  My major advisor spoke to his advisor two times total during the first two years of his Ph.D.  some profs/programs just expect you to be able to figure out something brilliant in between doing all the other stuff they want you to do.  Others expect you to be so focused on classroom the first two years that they ignore you for that time.  Really hard to understand whether this is the case for you or not without any more details.  Have you spoken to other students of this prof?  In the department?  If not, you should to see what their experience is like.
+
+The alternative is that you feel you simply can't handle the pace and or the hands-off approach.  I certainly couldn't.  I transferred out of a similar situation after less than a year in grad school.  You are the one who has to make that decision though.
+
+As for post docs, you are way to early to even worry about it.  It will amaze you how many opportunities will pop up as you approach the end of your phd.  The name of the journal is less important than the quality of the science.  Everyone knows that science and nature don't publish all the good stuff.
+- There are plenty of respectable scientists/post docs, that don't have Nature/Cell/Science papers, and getting into these papers is not always indicative of the quality of science you have done.  So in that respect,  don't use that a measuring stick.  (Certainly, shoot for what ever journals you want, just remember there are plenty of very good journals out there).    
+
+As for the PI stuff,  if you are 18 months in you can do as others suggest and look for a new lab.  I have known people who have been in similar situations though, and they had to take control of their work, projects and build a coherent thesis themselves.  This is OK for some and not for others.  I know personally I need to be able to talk to my advisor every week or two, and other postdocs daily to keep myself on track, not pigeon hole myself, and develop my ideas in ways my brain doesn't work yet.  If you find you need that help, then you need to get into a situation where you will get that support.  
+
+Good luck figuring this out.  I know I go through cycles of love/hate for my science.  Don't despair.
+- >I'm afraid I won't stand a chance in finding a post doc position in a decent to good group. How could I possibly convince them to take me when I have no Nature/Science/Cell papers
+
+I got an excellent post-doc at a great place and with a PI that is mentioned in intro text books and I had 2 1st authors and 2 middle author papers out of my PhD.  And trust me, none of them were in Nature/Science/Cell/etc.  The post-docs I worked with were all similar.
+
+>and/or no expertise in any relevant method.
+
+I will say that having expertise in a certain method is why I was hired by that particular group.  They did not have anyone that did anything close to what I did, and I brought it to the lab.  That being said, I was basically replaced by a lab tech when I left (since I had everything working smoothly by then).
+
+I switched labs during my PhD because my mentor got a grant that took his lab in a very applied direction while I wanted to stay in basic research.  Stuff happens, especially when PI's change directions or collaborations change.  I know my PhD project changed several times and I was quite late in the process before my project was finalized.  
+
+If you were in year 5 or 6, I would say stick it out however you can, but it looks like you are around year 2.  Start shopping around.  Go to your graduate coordinator/director/chair/whoever is in charge of the PhD program, and find out what the process is.
+- Might I recommend picking up this book. [\[LINK\]](http://www.amazon.com/Surviving-Your-Stupid-Decision-School/dp/0307589447/ref=wl_it_dp_o_pC_nS_nC?ie=UTF8&colid=391QWJ3QC1ZAK&coliid=I198EXJSH4L52P)
+- Always be ready to bail out from a Phd. Always. Things can always go wrong and that is several years of your life down the drain. 
+
+I started doing a lot of behavioral research, but quickly realized this could get me in trouble, so I directed my project towards molecular and computatiinal work. Even through bumps in my Phd, I can still pull through stress free since I know I can land a job somewhere.
+- I feel that my PhD is becoming increasingly incoherent, much like yours. i guess what i focus on is that i'm working without someone holding my hand. which makes it really my thesis, which i feel is becoming rarer and rarer in biological sciences. additionally i have been forced to adapt and learn different things, which makes me more capable. I guess what i am saying is that chin up dude, somehow you have to just mount your position and defend it one way or another.
+- [deleted]
+- Owch.....I'm sorry to hear all this, dude...
+- >I have seen students in similar situations resolve them by using the committee. Essentially by calling for a committee meeting and discussing the issues openly with them. This can help, but only if the committee is sympathetic towards the student. Otherwise it can backfire.
+
+My gf was in this exact situation.  Project going nowhere, PI didn't have a plan or seem to care, and her advisory committee consisted of her PI, her PI's best friend, and the PI's best friend's wife.  They were just "yes men" for her PI.  Fortunately she was able to get an entirely new committee which now includes professors who will recognize bs when they see it, and she might be able to make some progress now.  Took almost 2 years though.

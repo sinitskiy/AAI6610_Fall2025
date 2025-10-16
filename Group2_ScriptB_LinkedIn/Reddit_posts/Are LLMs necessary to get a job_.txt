@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1nwh00i/are_llms_necessary_to_get_a_job/
+Title: Are LLMs necessary to get a job?
+
+Content:
+For someone laid off in 2023 before the LLM/Agent craze went mainstream, do you think I need to learn LLM architecture? Are certs or github projects worth anything as far as getting through the filters and/or landing a job?  
+
+I have 10 YOE. I specialized in machine learning at the start, but the last 5 years of employment, I was at a FAANG company and didnt directly own any ML stuff. It seems "traditional" ML demand, especially without LLM knowledge, is almost zero. I've had some interviews for roles focused on experimentation, but no offers.    
+I can't tell whether my previous experience is irrelevant now. I deployed "deep" learning pipelines with basic MLOps. I did a lot of predictive analytics, segmentation, and data exploration with ML.  
+
+I understand the landscape and tech OK, but it seems like every job description now says you need direct experience with agentic frameworks, developing/optimizing/tuning LLMs, and using orchestration frameworks or advanced MLOps. I don't see how DS could have changed enough in two years that every candidate has on-the-job experience with this now.  
+
+It seems like actually getting confident with the full stack/architecture would take a 6 month course or cert. Ive tried shorter trainings and free content... and it seems like everyone is just learning "prompt engineering," basic RAG with agents, and building chatbots without investigating the underlying architecture at all.  
+
+Are the job descriptions misrepresenting the level of skill needed or am I just out of the loop?
+
+Comments:
+- There are just way more roles with LLM stuff. Not sure at that YOE, maybe easier? I have 2 years experience with LLM stuff and get a decent number of interviews for LLM specific roles and very few for traditional DS. More than likely that is biased though. You’ll be good!!
+- Without a specific job post as an example no one is going to be able to help you. If the job was literally training and building LLMs from the ground up, yeah I can see a need for understanding the architecture. I feel like most work is deploying the models as part of a larger service or workflow to do something rather than building LLMs from the ground up unless you’re working directly for one of the model providers. Maybe if you’re doing DS work in the realm of NLP you should have an understanding but if that were the case you probably already have that from all the work that preceded LLMs.
+
+What specifically within DS or what fields are you looking at?
+- There’s more work calling LLMs via API to accomplish something than training from scratch or fine tuning. 
+
+That said, you can just build something. I fine tuned tiny llama in about a day locally. I personally don’t study for interviews. I build stuff that demonstrates capability.
+
+https://github.com/OlivierNDO/docstring_fine_tuning
+- Bro what tf jobs are you looking at. If you’re looking for research roles then yea it’s going to be fuck ton of LLM focus. Vast majority of jobs in this field still realistically requiring statistics and traditional ML
+- Not at all, most of the work is still classic methods.
+- Yeah, most job posts are just buzzword dumps. Almost nobody has real LLM training experience. Your ML background still counts, just hack together a couple of small LLM projects to show you can work with the tools.
+- There is just a lot of LLM hype with buzzwords and techbro VC sales talk, when really only a few people actually knows anything . 
+
+You just need to get the basics down on setting up a custom LLM running on an open source model, which isn't to difficult. Getting it run at scale becomes chellenging. 
+
+It's all going to be about how to translate your experience into Ai copeium. Because very very few people actually have have true LLM experience. Chatgpt become popular three years ago. Up till then it was novel niche research area. I was just reading the "Attention is all you need" paper on transformers and for professional development, haven't started looking at the code to see what's going on. But it's really deep math and computational theory and application so it will take some time to truly understand what's under the hood.
+- Your 10 YOE + FAANG experience isn’t irrelevant—it’s a bedrock. Many job postings inflate requirements, so LLM expertise isn’t *always* mandatory. Practical demo projects (e.g., fine-tuning an open-source LLM or building a RAG pipeline) can help, especially if shared on GitHub or via blogs. Focus on tools like LangChain or Flowise for hands-on learning. Certs? They help you get past ATS filters but aim for ones with solid applications (e.g., AWS or Azure AI stacks). Think strategic: highlight how your traditional ML + experimentation blend aligns with real-world applications. You've got this!
+- Imagine it's 2002 and you're asking if the Internet is necessary for a job.  The general answer is yes, but it depends on what you want to do.  Anything involving NLP - hard yes on LLMs.  If you're more into numbers then LLMs aren't as necessary.  
+
+Honestly it's not that complicated, you're just calling a model in your workflow instead of building it with ML.  Its mostly API stuff.  I'd just get on board the train, it doesn't have to be your specialization or anything.
+- It really totally depends. My opinion is that data scientists should understand llm architecture to some extent… but it’s highly unlikely you’ll need to build an llm from scratch or be an expert on the architecture.
+- There is clearly a lot of demand for LLMs and most of it is driven by the hype and fomo generated in the overall landscape. Most biggies like FAANGs and NVIDIA/OpenAI are all playing the LLM tune to the point that the general belief in the leadership is that LLMs/Agentic is all that matters, naturally everyone is looking for just these roles. Corporate as I understood, now works in sync across firms, with a temporal lag on how fast moving the industry is! 
+
+I'm in your place and starting to pick up the LLM stuff and getting to understand, what is what, constraints/challenges and how to solve specific problems. A decent foundation combined with past DS experience is a solid combo in my opinion. Understand the architectures, constraints of problems and how to deploy end to end. You should be good
+- Not necessary, but very very useful.
+
+
+You don't need to know about fine-tuning, training models, self hosting - that's all a waste of time for most usecases. System design is far more important.
+
+
+What you need to know about is what every DS has always needed to know about - how to implement, govern, and monitor *nondeterministic* components in business processes.
+
+You need to understand LLMs insofar as they're another tool in the belt, the same as any other model algorithm, but don't treat them like a separate thing entirely. They're just models, like any other, they just happen to be very very good at NLP. The challenges of problem definition, evaluation, and all the normal techniques still apply.
+- You don’t need deep LLM architecture knowledge to get hired.  
+Most roles want people who can *use* LLMs, not train them.  
+Your classic ML, data, and MLOps experience still hold strong value.  
+Add small RAG or agent projects to show modern familiarity.  
+Treat LLM exposure as an enhancer, not a replacement for your expertise.
+- Most job posts exaggerate. Companies slap “LLM” everywhere but half the teams just need someone who can wrangle data, ship models, and glue APIs together. With 10 YOE your leverage isn’t chasing every buzzword it’s showing you can learn fast and already solved harder problems before. Get hands-on with one LLM stack (fine-tuning, RAG, orchestration) and ship a visible project on GitHub. That’s enough to check the “knows LLMs” box. Skip 6-month certs. No one cares about the paper. They care if you can demo something that works and talk tradeoffs.
+
+Your old experience isn’t irrelevant it’s the foundation. You just need a thin layer of new skin on top. Build a small project, polish the repo, and start pitching yourself as “ML engineer who’s adapted to the LLM wave.” That positioning alone beats 90% of applicants still stuck in buzzword soup.
+
+[The NoFluffWisdom Newsletter](https://NoFluffWisdom.com/Subscribe) has blunt takes on career pivots and staying sharp in shifting tech worth a peek!
+- The problem is that you have 10 years of experience with no depth in any area. You need depth to crack interviews at senior+ levels in today’s market. Eg., if you have depth in a specific ML domain (like rec sys), you have no business interviewing for an experimentation role, and you’ll be an extremely strong candidate for rec sys roles. I’ll advise you pick a domain and go deep into it for the next 5 years of your career if you want to stay on the IC path. It doesn’t have to be an LLM engineering role.
+- If you could forgive me for being selfish and asking you an unrelated question in response to your question, have you worked in the field since 2023 or no? I ask because I also haven't worked full time since then, just a part time data engineering gig and some ongoing contract work for my old full time company. I keep wavering on how much it'll hurt me. Appreciate your opinion.
+- LLMS are really cool to learn about even if it doesnt help much in the job market.
+- [https://work.mercor.com/?referralCode=ad1b9e7a-b8b1-4e00-8c93-f7472566860c](https://work.mercor.com/?referralCode=ad1b9e7a-b8b1-4e00-8c93-f7472566860c)
+- I’m kinda surprised by this. I’m early into my career, but see myself as more of a mid SWE that’s statistically literate (MS in Biostatistics). I can’t even use LLMs outside of very specific in scope tasks because of sensitive data 
+
+I’m probably in a completely different realm in healthcare vs big tech/FAANG. I make low six figures in a low cost of living area and am happy helping advance science with a flexible schedule. I could be wrong, but it feels fairly stable marketing traditional SWE and/or applied statistician skill sets. However, my perspective on salary range might be laughable for someone with FAANG experience
+- There's a difference between prompt engineering, optimizing, and developing.
+
+If you're going for a role where you'll only need create LLMs (some companies like Fractal Analytics are creating their own LLMs), you need to learn development.
+
+If you're going to use LLMs to work on use cases (eg - chatbot, recommendation), knowing optimization is enough.
+
+Learning prompt engineering is as vital as knowing how to search Google correctly - you can manage qitjout it, but it will take you much longer.
+
+So coming back to your original question, yes LLMs are necessary. I would suggest you do some research about the roles you're interested in and see which skills are most listed there.

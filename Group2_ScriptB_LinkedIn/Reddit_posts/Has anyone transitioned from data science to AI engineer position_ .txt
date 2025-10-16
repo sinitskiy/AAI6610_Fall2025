@@ -1,0 +1,44 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e6u6tw/has_anyone_transitioned_from_data_science_to_ai/
+Title: Has anyone transitioned from data science to AI engineer position? 
+
+Content:
+Basically the title. I am considering it since I do enjoy applying machine learning models at scale and can deal with the maths like linear algebra and calculus.. I am not super keen on statistics or causality and such aspects of analysis so hence, I am thinking of transitioning. 
+Any input would be greatly appreciated! 
+
+
+Comments:
+- This closed minded thinking will do you no good. AI engineer is just a marketing name. Be curious. Keep learning. If you like the profile definitely join.
+
+People working on worlds best recommendation system know about causality. There is something called counterfactual machine learning. Maybe it's helpful maybe it's not. But you can never say it's not my job.
+- I don’t think it’s worth the rebrand. People shit on the data scientist name but it’s literally flexible enough to encompass a wide variety of responsibilities, not limited to AI engineer.
+
+For instance, my team does ML / AI development but is not limited to that. In fact, we do more analyses than anything despite our entire company being supported by those ML stacks.
+- Data science/modeling gravitates towards AI/ML engineering. This is the way world turns anyways independent of the job titles. Most data science projects will have stronger emphasis on data engineering with platforms like Databricks and Azure OpenAI.
+- I always think it is kind of funny when someone doing DS says that they know linear algebra and calculus like it was sheaf cohomology it is.
+
+If you’re not “keen on statistics”, how you’ll be able to evaluate your models? Just to give one example.
+- Not voluntarily, but I guess all Data Scientist consultants had been more or less "transitioning". Because that's what clients are asking for, at the moment, let's see for how long.
+- AI engineer I guess will be better at a small company but working at a large company with lots of data scientists and data engineers. There’s actually very little need for an AI engineer. only 10% of the work is implementing models
+- AI engineer is such a vague job title. But DS/ ML can be considered a subset of AI, so why not!
+- I report my experience in Italy: Data Scientist, ML Engineer and AI Engineer are the same role and they have the same  duties.  
+Often also Data Analyst and Data Engineer are included in the same pack...
+- Can a data scientist switch to machine learning engineer
+- I aleays found weird people creating job positions that have the engineer in it and being covered by people that didnt study any engineer
+- imho depends on your opinion. I'd simply join, if you like the position and prospective of career! We are in a very dynamic area
+- This is a very interesting read which I am saving for later.
+- That's my goal in coming months! :)
+- Yea idk good question. On the topic on good questions has anyone moved from North America to Asia? What’s it like?
+- Ah fair enough. I am cognizant about requiring to do the work if needed by properly learning and researching. I guess it's more of my preference to do the engineering side of the job that baited me by this marketed title.
+Thanks for your input!
+- I like this answer! Thank you for saying that. I do consider myself a somewhat full stack data scientist and I guess I liked more of the development side of things than analysis and reporting. Hence I got baited by the catchy title.
+- Agreed! There's no clear line where it stops for data scientist and starts for the engineer. Even in day to day job it's unlikely to have the opportunity to do *everything* like apply causal inference, do a/b testing, do predictive modelling, run complex sql, build a deep learning model for some image classification, apply LLMs for building a chatbot, develop architecture for producing some insight and so on.. I guess I just developed a preference given my experiences and thought to just chase a title instead of focusing on the requirement.
+Thanks for your input!
+- Hmmn I guess my wording was not the best. When I said that I wasn't keen on statistics, I didn't mean that I will never touch it going forward. Ofcourse I will apply where it is warranted. It's just not as easily grasped by me as linear algebra (basics).
+I guess I assumed this as a career pivot that would have me encounter less of it.. My bad.
+- Become MLE and/or data engineer, If you really want to do work of an engineer in ML system. For example top product companies don't have a job title called AI engineer. Most MLEs working on highly impactful products are AI engineers by definition. Now it's obviously very team specific if both of them are the same. Applied Scientist is another role where it might be synonymous to AI engineer.
+
+If someone pays me 10 lacs per annum to be a CTO I will not accept it because maybe I can get 5x or 10x of that as senior engineer. There is nothing in the title. There are bank VPs(engineering profile) earning half of what a senior engineer at FANG makes.
+- For sure, I would always argue that you should do what you enjoy. I think in this case you can have your cake and eat it too :)
+
+My team is overindexed on analytical DS. My next hire will be on the more development side.

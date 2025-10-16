@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_architectural-and-inferential-inductive-biases-activity-7302802564754882560-Fx74
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+7 个月
+
+📊 Exploring Architectural and Inferential Inductive Biases in Exchangeable Sequence Modeling 📊
+
+Recent advancements in autoregressive models have highlighted their efficacy in modeling exchangeable sequences, particularly when addressing i.i.d. observations conditioned on latent factors. This approach offers a robust framework for quantifying uncertainty arising from missing data, rather than relying solely on latent variables.
+
+The critical role of posterior inference in decision-making processes—such as active learning and bandit problems—has prompted an investigation into the most effective inductive biases for exchangeable sequence modeling. A significant limitation of the conventional single-step generation method is its inability to differentiate between epistemic and aleatoric uncertainty.
+
+In contrast, a multi-step autoregressive generation approach has been advocated within Bayesian statistics, demonstrating enhanced uncertainty quantification that translates into improved performance on downstream decision-making tasks.
+
+Furthermore, an analysis of recent Transformer architectures reveals a notable gap; these models may fail to guarantee exchangeability while incurring substantial computational costs. Controlled synthetic experiments illustrate that custom architectures can significantly underperform standard causal masks, emphasizing the urgent need for innovative architectural solutions.
+
+#AI #Algorithms #ArtificialIntelligence #AutoregressiveModels #BayesianStatistics #DL #DS #DataScience #DeepLearning #ML #MachineLearning #Tech #Technology #Transformers #UncertaintyQuantification
+
+Architectural and Inferential Inductive Biases For Exchangeable Sequence Modeling
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,134 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+Trends in AI Model Architectures
+Understanding Transformers in Artificial Intelligence
+Identifying Sources of Bias in AI
+How Quantization is Transfo

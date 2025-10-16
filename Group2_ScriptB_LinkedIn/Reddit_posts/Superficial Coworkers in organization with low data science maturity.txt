@@ -1,0 +1,53 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1aj5ufe/superficial_coworkers_in_organization_with_low/
+Title: Superficial Coworkers in organization with low data science maturity
+
+Content:
+ Do any of you work in organizations with limited data science maturity? Are there colleagues who prioritize visibility and praise, quickly delving into creating notebooks ,visualizations ,spewing fancy algorithms without even taking enough time to understand data or justifying a machine learning use case? Do you have managers and higher-ups, who might not fully grasp the field, commend these actions as exemplary work? But anyone with data science experience can see it is nonsense 
+
+Comments:
+- > Do you have managers and higher-ups, who might not fully grasp the field, commend these actions as exemplary work?
+
+Non-technical managers respond to the quality of the deliverable and generally couldn't care less about how the sausage was made. That's going to be true in most organizations. Your job is to deliver answers to their questions to inform future decision-making and be able to make an explanation of it accessible to a non-technical audience. If they're not understanding pertinent issues that you feel is necessary to bring to their attention, then the shortcoming lies in the messenger.  
+
+Honestly, there's some stuff that seem to really matters to our data engineer that I don't always fully understand. But I trust his judgment and will back him up on whatever if he says something is necessary. And my superiors trust my judgment even though they don't have a full understanding of my models. 
+
+Part of being a "mature" data scientist is realizing that the expertise of others is valuable even if they don't possess your level of knowledge about data science. Everyone has a comparative advantage in something and mastery of data science only takes contributions to future decision-making so far.
+- Sounds to me that this is the kind of company that will suddenly lay off the entire ds team to cut cost and increase profits. I mean that kind of work for sure is not providing any value more than bragging about BI, ML and AI being part of the business model or whatever
+- It’s a sad fact of life that when data science maturity is low, or data is not a core competency, that creates a wide open opportunity for DS con artists to try to talk their way to the top. Even more unfortunately, they all too often succeed.
+- Yes. I have a coworker who rums a lot of superficial, unsupervised text algorithms. Cant be bothered to assess model validity, just spews out results and even makes wordclouds. About to get a major payraise.
+- Most consulting firms fall in that category, big 4 I mean! It’s about volume not quality.
+- This is a judgmental way to approach this.
+
+What you'll find is that people who take a lot of swings might have a small number of hits, but they rack up more hits than you do laboring over the ideal analysis. Likewise, they're churning out deliverables. They get known for delivering, and people will gravitate to them over you. Once that happens, you're in trouble. No one wants a brooding, pretentious artiste, they want a team player. This happens in any expert field, particularly when software is involved.
+
+Worse would be, you dig in and do a bunch of work, complaining about their hacky crap and...... improve results by 3% over what they achieved with some out of the box ensemble a month ago. Please be careful not to complain about them at work and promise you'll do a "real analysis" because of this risk.
+
+You just gotta get in there and throw some elbows, OP. Time to shine, if you've got the chops. Hold your nose, fire up jupyter, and make some magic happen.
+- A lot of people now think youre not an expert unless youve published in top tier ml journals
+- I am a jobless ds so even enthusiastic newbies sound like doing more than me cant really judge.
+- My organization is currently in the process of implementing data science (PAT) in its workflow. So basically anything flies. As long as you have a relatively predictive model that can improve efficiency and possibly decrease the timeline of development literally anything is good in R&D.  
+Now when these models are deployed on a larger scale, for products that will get into customers hands, they need to be validated for production series that will be another story and I am sure outside experts will be called.
+
+My experience is that higher-ups generally don't understand the nuances of data science applications, but care about their feasibility and will call on experts to confirm it.
+- Not in my current organization. Our CIO cares about whether we are using machine learning or not and demands it for every application modernization. She says, 'we have to use the latest and greatest technologies.' Last month, she asked, 'are we using unsupervised machine learning?
+- You are in a good hands.
+- Yeah I have mostly our team filled with such data scientists!
+
+I think it’s time to start licensing data science work just like actuaries!
+- [removed]
+- I'd bet my paycheck your CIO cares more about whether she can truthfully tell shareholders and the media you're using those techs than the specifics.
+
+Single linear regression is supervised machine learning.
+
+Simple KNN is unsupervised learning.
+
+Cluster your data and then fit lines. Boom, both in the same project. Go wild, do some PCA and fit lines in PC space. Cutting edge algorithms buzzwords galore.
+- Im surprised she didn't say are you using generative Ai and llms
+- >She says, 'we have to use the latest and greatest technologies.' Last month, she asked, 'are we using unsupervised machine learning?
+
+Lol, must be hard to deal with her. What would happen if you teach her a little and show her that unsupervised machine learning aka clustering is indeed old?
+- The funny thing is that actually using the latest and greatest technologies would mean working with concepts and buzzwords that haven't hit the popular lexicon yet.
+- ICML or NeurIps ?
+- I try to but I'm in competition with the mentioned coworkers, along with consultants aiming for billable hours and vendors selling their products with flashy ideas.
+- There's more at stake than you realize. The CIO is not naive and you are just being played.

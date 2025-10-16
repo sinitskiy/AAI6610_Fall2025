@@ -1,0 +1,124 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nsvdqk/d_machine_learning_research_no_longer_feels/
+Title: [D] Machine learning research no longer feels possible for any ordinary individual. It is amazing that this field hasn't collapsed yet.
+
+Content:
+Imagine you're someone who is attempting to dip a toe into ML research in 2025. Say, a new graduate student.
+
+You say to yourself "I want to do some research today". Very quickly you realize the following:
+
+**Who's my competition?**
+
+Just a handful of billion-dollar tech giants, backed by some of the world's most powerful governments, with entire armies of highly paid researchers whose only job is to discover interesting research questions. These researchers have access to massive, secret knowledge graphs that tell them exactly where the next big question will pop up before anyone else even has a chance to realize it exists. Once LLMs mature even more, they'll probably just automate the process of generating and solving research problems. What's better than pumping out a shiny new paper every day?
+
+**Where would I start?**
+
+Both the Attention and the ADAM paper has 200k citation. That basically guarantees there’s no point in even trying to research these topics. Ask yourself what more could you possibly contribute to something that’s been cited 200,000 times. But this is not the only possible topic. Pull out any topic in ML, say image style transfer, there are already thousands of follow-up papers on that. Aha, maybe you could just read the most recent ones from this year. Except, you quickly realize that most of those so-called “papers” are from shady publish-or-perish paper-mills (which are called "universities" nowadays, am I being too sarcastic?) or just the result of massive GPU clusters funded by millions of dollars instant-access revenue that you don’t have access to.
+
+**I’ll just do theory!**
+
+Maybe let's just forget the real world and dive into theory instead. But to do theory, you’ll need a ton of math. What’s typically used in ML theory? Well, one typically starts with optimization, linear algebra and probability. But wait, you quickly realize that’s not enough. So you go on to master more topics in applied math: ODEs, PDEs, SDEs, and don’t forget game theory, graph theory and convex optimization. But it doesn’t stop there. You’ll need to dive into Bayesian statistics, information theory. Still isn’t enough. Turns out, you will need pure math as well: measure theory, topology, homology, group, field, and rings. At some point, you realize this is still not enough and now you need to think more like Andrew Wiles. So you go on to tackle some seriously hard topics such as combinatorics and computational complexity theory. What is all good for in the end? Oh right, to prove some regret bound that absolutely no one cares about. What was the regret bound for ADAM again? It's right in the paper, Theorem 1, cited 200k times, and nobody as far as I'm aware of even knows what it is.
+
+Comments:
+- This post comes across as very juvenile. There are obviously interesting problems to explore. You're just not looking at existing literature critically enough. Is it hard to get published in top-tier ML venues? Yes. But anything worthwhile is hard. I'm not going to give to topics to explore in this comment but I have friends (graduate students) you found interesting angles to explore, yielding successful papers at the kind of ML venues you're aspiring for.
+
+The goal is to critically engage with what's out there and advocate for something you find exciting. Not to publish for the sake of it.
+- Nuclear Fusion research no longer feels possible for any ordinary individual. It is amazing that this field hasn't collapsed yet.
+
+\>the ADAM paper has 200k citation. That basically guarantees there’s no point in even trying to research these topics.
+
+Yes. We also don't research trebuchet designs anymore, and it's going to be a struggle to invent a better candle wax. Bro's mad that history has solved past problems and he instead has to solve today & tomorrow's problems.
+- You can  always go back to the fundamental, rather than trying to incrementally improve models and architectures.
+- Maybe see a therapist before starting ;)
+
+Now the field is really crowded but it was not easy 20/15/10/5 years ago either. 
+
+Ask yourself WHY you are doing it. Maybe that's not what you are looking for.
+- As a research field matures, you have to be very specialized to do something new and push the boundary further. You have to be really good and in a good group or environment to know which direction is most promising and get access to research. I come from astrophysics. Without access to data and expensive telescope time, and a group of people to exchange ideas with you won't get far. I'm not gonna comment on the industry part, but yeah, cool stuff is expensive.
+- (1) you need to pick a lane and just keep focused on that, (2) you need to join a productive team with a decent mentor where you can learn HOW to do research.
+
+
+The barrier to entry is much much higher and there isn't room for a broad focus. But, once you're into research it's not impossible.
+- What do you want? A million-dollar job? To be "famous and impactful"? To be a domain expert? Are you driven by genuine curiosity or the fact that this is the most hype technology of our era?
+- There are so many people working on ML research that all the conferences are completely overloaded. 
+
+It is possibly *the* most competitive research field anywhere right now. Good luck.
+- There's a difference between conducing scientific work - theoretically and/or empirical, and publishing articles.
+
+Once some people update their beliefs, and start tracking the work performed by the "top labs", it'll become evident that, doing Machine Learning **research** is not only, doable, but lacking. 
+
+I will start again, with the very simple question I always do: Yes, we complain about Neurips/ICML reviewers. That is easy. Question: How many of the 30k submission actually performed a proper Literature Review? How many provided, easy, reproducible code so our experiments can be checked. 
+
+I guarantee 90% don't, and I know many will take issue with it. Ranting something about "competition", or my "code is proprietary". Basically the field became a battleground for a. Labs advertise their work so they can suck on public funds. b. Undergrads/MSc./PhDs advertise their work, so they can show "they do AI" and apply for a job at Big Techs. 
+
+There are though, quite a number of labs doing honest work, so yes, we can't complain. But from my perspective there's a lot of space if you got the message I'm trying to convey.
+- I guess you don't even hold a research position, and this truly makes your post useless for anyone but your own ego.
+
+
+The fact there are positions means that someone is still paying because they think it may be worth it overall. 
+If you think that doing research means having ADAM or Transformer level citations, you are so off it's embarassing. 
+If you think that an overcrowded field means you cannot research/discover/invent something valuable, you are so off it's embarassing. 
+
+
+The reality is, most research is for researchers, and the overcrowding does affect whether you take or not payed positions. 
+
+
+The fact that tech giants have compute doesn't mean you can't develop a new algorithm, it means you should not go into a small lab to develop and test a new LLM architecture that may work better than transformers only if you train a trillion parameter model on the whole internet.
+Machine learning is not just transformers, it's not just deep learning.
+
+
+If you have the chance, do an internship in a technicians company, not a tech company that works with software and data tables, an electronics company, something like that.
+You'll discover there are many real world problems you can't chatgpt away, and that you can still automate with an intelligent or learning machine. 
+Ask a physician what data they have and what they would like to do. 
+Ask a car maker. 
+Look at the world and what a problem climate change is, what a problem urban planning is. 
+You can't chatgpt everything away. There's plenty ideas to have amd try to make work.
+There's plenty old ideas forgotten because they went in and out of fashion before hardware was able to test them. 
+
+
+Get a bit over yourself and don't let immense ambitions and immense fear of failure make you avoid the small failures that will bring you eventually to reasonable success
+- The KAN guy ran his code on CPU. Super simple code too.
+- Yeah. It sounds like someone told OP "go find a novel research idea" and let him loose with zero training or guidance whatsoever. Mate, it's alright to be frustrated, and there are issues with the field, but whining like you are doing right now is just silly.
+
+Like, you're whining about the ADAM paper having 200k citations. Except probably 180k of those citations are from junk papers only published in unknown, random low-quality journals or conferences that are borderline predatory. Every time some undergrad writes a project report on their "I used X model on Y dataset", they cite the ADAM paper. It's like the ResNet paper in the sense that citations past the first 5-10k are basically meaningless. Did people stop working on basically all deep learning model architectures as soon as the ResNet reached 200k citations, throwing up their hands and saying "well there's no point in even trying to research this topic. What could I possibly contribute when there are 200k people citing this paper?
+
+>That basically guarantees there’s no point in even trying to research these topics. Ask yourself what more could you possibly contribute to something that’s been cited 200,000 times.
+
+And yet, there is an entire world of second-order and higher-order optimizers that solidly beat out Adam on problems like PDEs and physics-inspired models. Even for standard deep learning, Adam is a general purpose optimizer. For any serious large-scale model training people use newer, more specialized optimizers. Muon, Gluon, Lion, Sophia, Signum, MuonClip, etc. Why did anyone ever even bother do
+
+Honestly, OP, if you're already losing your head without actually even looking at anything, then this might not be the field of research for you. It will eat you alive.
+- Sounds like a rant. Anyway, there's plenty of other fields with plenty of problems.
+
+Undergrads chasing ML research now are just participating in FOMO.
+- Plenty of untouched applications out there.
+- I can see your concerns, but there's SO much you can do.
+
+What you mean is research that uses higher-end scale can't be done. You can still conduct a lot of other research if you truly wish to.
+
+Some open ended examples:
+
+- comparative edge model usage and deployment performance
+- data selection/ curation strategy methodology wrt model sizes for training vs fine tuning
+- computer use/operator use with SLMs
+- functional multi-task learners in the <=8B param range
+- survey heuristics for best supported training/inference implementation across major frameworks 
+
+... etc.
+Chin up!
+
+I still conduct a lot of graduate level research either by myself or with students/colleagues. It is not nearly as shiny as the big lab stuff, but there's certainly enough room to pursue things.
+
+Not everything is worth bigtech time - and you can often validate the harder theoretical parts because they would have done the groundwork for you. Focus on application, survey, comparison etc on the small language/vision model scale and you should be okay
+
+For reference, I can run 8-12B param models on my macbook (16GB RAM) fairly well, with 6-10 TPS or more. It's not glorious, but I'm just giving you ideas about how much compute you'll likely be able to make do with.
+- I think there is a LOT to be done in explainability, verification strategies and especially in applied research (using AI on meaningful problems). In the latter, most of the research must be done by multidisciplinary teams.
+- You're forgetting applications and applied research.
+- >Both the Attention and the ADAM paper has 200k citation. That basically guarantees there’s no point in even trying to research these topics. Ask yourself what more could you possibly contribute to something that’s been cited 200,000 times.
+
+Not to throw cheap jabs, but both the original Attention and Adam have seen significant updates no? We’ve since moved to decoder-only, MQA, then GQA, and now MLA, plus all kinds of partial RoPE tweaks like GLA/GTA are gaining traction; hybrid models are also being scaled much larger. On the optimizer side, the changes sure have been less radical — since training dynamics are more of an industry-level thing — but we still got AdamW and now the latest Muon wave.
+
+I don’t discount that contributing to a 200k-citation work is hard — you need extraordinary evidence to convince people to move away from something commonly appreciated. But this is nowhere near as extreme as your claim.
+
+You come across as someone who truly wants to do meaningful work, which is worth applauding. Just don’t be so hard on yourself about getting there immediately. It takes time, skill, resources, and often quite a bit of luck. So GL out there!
+- All that math you just listed can actually be reasonably learned at least to an applied, if not mathematician level, just from 4 years of undergrad lol. Most optimization and differential equations overlap in many concepts, pure math like rings and fields are hard, but very much doable in a math oriented degree. Heck, an average applied maths engineering student has probably at least touched on all that math you mentioned, and more. Past these basic math concepts, it's really just very small tweaks and new interesting ways of putting the same building block neural network / attention mechanisms together. Will it take years to get to the point where you can do something new? Yes, but that's also how long any undergrad degree takes. I'd argue, fields like pure math and physics are much harder to start doing research in than machine learning lol, with pure math you actually need much more graduate level mathematics to get started on research, but the underlying mathematics of machine learning honestly just hasn't gotten that overwhelmingly hard yet
+- You made interesting points in your rant, but it seems like you don't know what you want.

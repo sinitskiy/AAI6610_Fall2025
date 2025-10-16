@@ -1,0 +1,37 @@
+URL: https://www.linkedin.com/posts/barnabas-agbodekhe-207a8394_materialdiscovery-moleculardesign-propertyprediction-activity-7352441108250980352-EyWd
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Barnabas Agbodekhe的动态
+Barnabas Agbodekhe
+
+Graduate Research Assistant and Doctoral Student in Chemical Engineering
+
+2 个月  已编辑
+
+🚨 𝗡𝗲𝘄 𝗣𝗿𝗲𝗽𝗿𝗶𝗻𝘁 𝗔𝗹𝗲𝗿𝘁!
+
+You do not need tens to hundreds (or even thousands) of input features to ML models for accurate thermophysical property predictions. 𝗝𝘂𝘀𝘁 𝘁𝘄𝗼 𝗶𝘀 𝗲𝗻𝗼𝘂𝗴𝗵!
+
+You do not have to spend several weeks (or even months) in “feature engineering” to determine the ‘chosen set’ of input features for a given target property … only to repeat the whole process again once the target property changes. You can use the same type of model with only two input features for diverse property targets!
+
+Our proposed method provides competitive predictive performance and sometimes outperforms more complex and expensive ML methods for various thermophysical property targets.
+
+Using the proposed method, you can efficiently obtain reliable prediction uncertainty estimates even for unseen data.
+
+The proposed method is highly parsimonious and allows for physical interpretability.
+
+𝗧𝗵𝗲 𝗜𝗱𝗲𝗮? Leverage and integrate the many years of scholarly human intelligence invested in developing useful (but often biased) group contribution (GC) models, with the artificial intelligence of Gaussian process regression models. In this work, for any target property 𝘗, we obtained fast and easy-to-compute GC predictions using the Joback and Reid method (𝘗𝘨𝘤) and combined this with molecular weight as the only two inputs to a GP, which also uses 𝘗𝘨𝘤 as its mean function.
+
+𝗧𝗵𝗲 𝗿𝗲𝘀𝘂𝗹𝘁𝘀? The severe systematic bias in the GC models is significantly remedied, leading to accurate property predictions coupled with reliable uncertainty quantification. 
+We applied this method to six different thermophysical properties with remarkable results. Furthermore, we used the same (simple) GP kernel architecture for all properties. The proposed method is tunable for even better predictive accuracy and scope by leveraging the numerous GC models th

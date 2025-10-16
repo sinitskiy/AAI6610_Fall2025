@@ -1,0 +1,26 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jezlr1/how_do_convolutional_neural_networks_cnns_detect/
+Title: How do Convolutional Neural Networks (CNNs) detect features in images? 🧐
+
+Content:
+Ever wondered **how CNNs extract patterns from images?** 🤔
+
+CNNs **don't "see" images like humans do**, but instead, they **analyze pixels using filters** to detect **edges, textures, and shapes**.
+
+🔍 In my latest article, I break down:  
+✅ The **math** behind convolution operations  
+✅ The role of **filters, stride, and padding**  
+✅ **Feature maps** and their impact on AI models  
+✅ **Python & TensorFlow code** for hands-on experiments
+
+If you're into **Machine Learning, AI, or Computer Vision**, check it out here:  
+🔗 [Understanding Convolutional Layers in CNNs](https://medium.com/p/18dcbcf3bc6e)
+
+Let's discuss! What’s your favorite CNN application? 🚀
+
+\#AI #DeepLearning #MachineLearning #ComputerVision #NeuralNetworks
+
+Comments:
+- Yet another CNN article?
+- Rather basic image processing to cnn..should be explained in detail.
+- But this one’s AI generated!

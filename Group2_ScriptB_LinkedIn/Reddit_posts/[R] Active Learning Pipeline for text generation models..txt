@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/18su3p3/r_active_learning_pipeline_for_text_generation/
+Title: [R] Active Learning Pipeline for text generation models.
+
+Content:
+I have previously used small-text to build active-learning pipelines for classification models. Now small-text uses algorithms that are bound on the model's uncertainty (low confidence) to cherry pick the best examples out of a dataset for training which in the case of text generation does not work as you would need a large chunk of potential next word candidates to diversify the generation. So an uncertain score does not necessarily mean an exampe that needs to be labeled.  
+
+
+So I am currently lost in the shuffle not really knowing how to proceed. I am targetting Active Learning using "rouge-score" for T5 or Flan-T5 models. Is there any libraries or blogs that would help out in building such a pipeline as small-text did or no?
+
+Comments:
+- active learning in classification allows you to choose samples to be labeled. it means you have all the ```x```'s available, but you choose which ```x``` gets labeled with a ```y```. 
+
+For text generation, you train on a corpus of paragraphs ( for example), i.e. only ```x```'s are required. can you elaborate what active learning would give here.
+
+in case you are looking to find which samples to feed for training, practically running this inner loop of finding the most useful sample is more time consuming than feeding samples in at random.  so can you give an example how it can help.
+- Ideally what I am aiming to do is to pass a big chunk of data to a base model and cherry pick the examples that would give me the best performance on the evaluation set that I have. The results would not be excellent of course, I am aiming at Data Augmention to reach the desired output, but I was hoping that Active Learning would help me gain some time when it comes to data augmentation as it would pick the data samples that would help me with my task.

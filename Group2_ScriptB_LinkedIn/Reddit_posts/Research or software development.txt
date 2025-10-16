@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b84uff/research_or_software_development/
+Title: Research or software development
+
+Content:
+Dear hive mind, I'm in the fortunate position to have offers for two positions. They pay both basically the same however
+1. Position 1 is in a large, multinational company which is currently modernizing it's product portfolio and invests heavily in research and development, where I would work on ML models for all sorts of products. I would be required to be at the office about 50% of the time and attendance is tracked using some app. The tech stack is somewhat out of date but modernizing it would be part of my tasks. Here I could learn a lot about several different domains of machine learning and data science. 
+2. Position 2 is at a former startup which was recently bought by a larger company. I would have 100% wfh and a very modern tech stack, however my work would focus strongly on a very narrow range of models which are interesting to one single industry. However, this company is basically a software company so that I could learn a lot about software development and ML engineering. 
+
+So what position would you take? I tend towards position 1 because I liked doing research at university (did my PhD in math) but position 2 seems to have better benefits and engineering is interesting as well? Also I think the skills I learn at position 1 are more valuable when switching jobs again, but I'm not sure about that. 
+
+What would be the key factors you are looking for when considering a new position? 
+
+Thank you all in advance. 
+
+Edit: for reference, I'm living in Europe and have worked as a data scientist for four years, currently being a senior DS. 
+
+Comments:
+- I would go with position 2:
+
+1. Tracking attendance with some app is completely crazy in my eyes. 
+2. Research positions are more economically driven and thus more susceptible to losing. 
+3. Personally I think engineering skills are more transferable than research
+- [deleted]
+- Bro, trust me getting tracked with attendance is one line of straight up micromanagement and it will make ur life hell.
+- I wouldn’t work anywhere that tracked my attendance via an app
+
+Things like this indicate a company’s values and I’d expect them to be doing other bullshit as well.
+- 2 sounds better. tracking your office attendance with an app sounds like a nightmare. having to "modernise" a tech stack will also be a painful job, especially in a large company - you will not just be able to install packages and do things as you want, everything will have to be approved, there will be a shit tonne of red tape to getting what you want, etc. also like someone else said consider your direct manager, a good or bad one will have a large influence on whether you want to neck yourself every day or not.
+- What about your manager and team? In my experience, the manager and team have a much larger impact on your success and happiness than than the company or even your exact role.
+
+If possible, pick that manager that's been there a while, has been promoted and helped others get promoted on their team, has a great relationship with their own manager, and knows how to navigate and shield their team from company bureaucracy, and fosters an environment of cultivation and growth. 
+
+Congratulations and good luck!
+- Position 2. The job responsibilities would be more focused and you will be focused on one domain and developing certain skill sets. I vote for specialization when choosing career path. Be the expert.
+- 2
+- Being actively tracked at #1 sounds horrible. Like are their employees children? An organization doing that probably has a ton of other 'old' attitudes in their culture, which means frustrations and possible economic problems when their oldness catches up with them. The main benefit at #1 is the breadth of domains and opportunity to work with more different stakeholders to figure out their needs and translate that into projects, IMO. Whereas #2 sounds much more narrow and probably more about pushing the performance of the model/deployment.
+
+TLDR: I see a lot more downsides with #1, so lean towards #2.
+
+Some other things to consider are the team and your boss (who do you want to work with the most, this is probably the most important factor day-to-day); longevity (where would you rather stay for several years); which set of skills do you prefer developing (stakeholder management/interpersonal/project skills vs pure SWE)
+- 2
+- 2 sounds better!
+- research
+- I feel like #1 gives you more opportunities in the future, and you seem to prefer the work. Assuming not full time remote isn't a dealbreaker for you? Although the tracking attendance with an app thing is sus, I would take that as a red flag.
+- I have a PhD in computer science and 20 years of professional experience. I would go for position 1. Much better carcere perspectives or, anyway, you will be able to resell your experience much better in future.
+
+Time tracking is not an issue if you are not willing to cheat somehow.
+- 2 but boils down to $$$ as a tie breaker and perceived prestige in industry of choice 1
+- Option 1 doesn't sound so right to me. I'd stick with research.
+- 2! Run from anywhere that tracks attendence
+- 2
+- Thanks a lot!
+- True

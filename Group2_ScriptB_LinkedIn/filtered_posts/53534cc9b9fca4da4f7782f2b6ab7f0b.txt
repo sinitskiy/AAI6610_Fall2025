@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/gurkan-sin-a081006_uncertaintyquantification-sensitivityanalysis-activity-7368946792857575424-UW5k
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Gurkan Sin的动态
+Gurkan Sin
+
+Professor at DTU Chemical Engineering - Technical University of Denmark
+
+1 个月  已编辑
+
+Just wrapped up my summer school on uncertainty and sensitivity analysis (August 18-22, 2025), which was our 16th edition in a row -a journey we started back then in 2009. 
+
+We had 27 researchers, mostly from academia with some from industry, come together to explore contemporary methods for analyzing numerical model outputs, especially with Monte Carlo methods. 
+My mission here is simple: to build intuition—to get a feel for the theory and then immediately apply it in hands-on practice.
+
+The key message to our participants:  randomize and shake the foundations of their models. After all there is nothing really pre-ordained when it comes to choice of models and how one builds them. There is a good deal of heuristics. Well call this my theory of modeling.  
+Whether it's a first-principles based model or machine learning, I ask them to challenge their inputs, their parameters, their assumptions, their model structure, and see if their models could still stand on their feet.
+
+And then came the part that, for me, is always very exciting—it’s a privilege, really. The participants presented their own research. The sheer variety of topics was incredible and showed just how numerical methods/models are part of modern research. We saw models for:
+
+Chemical and Process Engineering: Everything from photocatalysis, N2O models for wastewater treatment, and green ammonia production to complex separation processes like membrane systems for carbon capture and DAC.
+Energy & Sustainability: Models for salt-based energy storage, sustainable aviation fuels, and CO2 electrolysis.
+Data Science & Reliability: Tackling uncertainty in ML for biomass property predictions, creating surrogate models for complex distillation system or ML for control (Health-Aware MPCs), and predicting time-to-failure for components where parametric uncertainty

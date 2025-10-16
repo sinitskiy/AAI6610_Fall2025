@@ -1,0 +1,53 @@
+URL: https://www.linkedin.com/posts/keith-mcnulty_analytics-datascience-peopleanalytics-activity-7297615876411830273-4U0V
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Keith McNulty的动态
+Keith McNulty 
+Keith McNulty是领英影响力人物
+
+Mathematician, Statistician and Psychometrician | Leader in Analytics, Organizational Sciences and Technology | Author and Teacher | Evangelist for Mathematical Methods
+
+7 个月
+
+Sir David Cox, who sadly passed away a couple of years ago, gave one of the greatest gifts to the medical and social sciences communities with his proportional hazards model.  It is an excellent tool for explaining the impact of certain factors on events that occur over time, like disease incidents in medicine or attrition or promotion in the workplace.  
+
+In this example, I use a data set containing the responses of 3,800 employees in various organizations to a survey about their work, and those employees are subsequently tracked for a year to see if they remain in the same job during that period.  Using Cox's proportional hazards model, we see that people employed in Finance or Health professions have a significantly greater likelihood of attrition, and, unsurprisingly, the higher their sentiment about their job, the less likely they are to leave.  
+
+For the full example, and more information on model variants such as frailty models, see Chapter 9 of my regression textbook here -> https://lnkd.in/eA8eR9NV
+
+#analytics #datascience #peopleanalytics #rstats #python #technology 
+
+384
+11 条评论
+赞
+评论
+分享
+Douglas McLean
+
+Ph.D. in Applied Mathematics with expertise in predictive analytics and data science
+
+7 个月
+
+The beautiful thing about Cox PH modelling is that you don’t have to figure out the baseline hazard function. So you can present the regression coefficients as the failure rate increase relative to your baseline without having to have estimated the baseline. Mind you, you need to check the PH assumption…
+
+赞
+回复
+4 次回应
+Garick Rye
+
+Organizational Development Consultant | Executive Coach | Change Management Leader
+
+7 个月
+
+Keith McNulty, what’s your favorite way of presenting this to a senior leader in a 

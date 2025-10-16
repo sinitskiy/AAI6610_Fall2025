@@ -1,0 +1,26 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1koel8a/how_can_i_learn_to_classify_diabetic_retinopathy/
+Title: How can I learn to classify diabetic retinopathy from fundus images?
+
+Content:
+Hi everyone,
+
+I'm a web developer with experience in building applications using JavaScript frameworks and automations using Python. I’m currently working at a hospital and my goal is to build a system that can classify the levels or type of diabetic retinopathy using eye fundus images.
+
+I’m new to the world of machine learning and computer vision, so I’d love some advice on how to get started and how to structure my learning path.
+
+Thanks in advance!
+
+Comments:
+- That’s like the lowest effort post we have in this sub. „Hey people, I have not done the barest minimum of research and I want to do this super cool thing. How do I do that?“. Honestly, go read some fundamentals, do some tutorials and come back with specific questions.
+- You need a labeled dataset with enough samples( maybe thousands)
+
+You can either train from scratch or try to finetune another pretrainet network, it’s not an easy task and there is no single way to approach it
+- Have you checked the messidor dataset? I have done some work in this direction and published a paper on diabetic retinopathy detection using deep learning as well.
+- There was kaggle challenge on this task, I remember participating in it like 7 years ago. Go find it
+- Use any classification.
+- Also, is OP hoping to release a medical product? Or to have a bit of fun?
+
+Medical ML is hard to do for a good set of reasons, data privacy, and proving the effictiveness of the results are two key issues.
+
+I worked for a company making novel key hole camera systems, and they were trying to AVOID using ML/AI to make it easier to get the product through regulators.

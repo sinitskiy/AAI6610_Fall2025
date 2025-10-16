@@ -1,0 +1,15 @@
+標題: Post-learning replay of hippocampal-striatal activity is biased by reward-prediction signals
+
+摘要: Neural activity encoding recent experiences is replayed during sleep and rest to promote consolidation of memories. However, precisely which features of experience influence replay prioritisation to optimise adaptive behaviour remains unclear. Here, we trained adult male rats on a novel maze-based reinforcement learning task designed to dissociate reward outcomes from reward-prediction errors. Four variations of a reinforcement learning model were fitted to the rats behaviour over multiple days. Behaviour was best predicted by a model incorporating replay biased by reward-prediction error, compared to the same model with no replay, random replay or reward-biased replay. Neural population recordings from the hippocampus and ventral striatum of rats trained in the task evidenced preferential reactivation of reward-prediction and reward-prediction error signals during post-task rest. These insights disentangle the influences of salience on replay, suggesting that reinforcement learning is tuned by post-learning replay biased by reward-prediction error, not by reward per se. This work therefore provides a behavioural and theoretical toolkit with which to measure and interpret the neural mechanisms linking replay and reinforcement learning.
+
+發布日期: 2025-07-11
+
+DOI: 10.1101/716290
+
+作者: R, o, s, c, o, w, ,,  , E, .,  , L, ., ;,  , H, o, w, e, ,,  , T, ., ;,  , L, e, p, o, r, a, ,,  , N, .,  , F, ., ;,  , J, o, n, e, s, ,,  , M, .,  , W, .
+
+類別: neuroscience
+
+PDF路徑: downloaded
+
+下載時間: 2025-09-24 13:23:00

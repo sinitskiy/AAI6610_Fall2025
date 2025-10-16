@@ -1,0 +1,48 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1h110v6/realistic_model_development_timelines_and_costs/
+Title: Realistic model development timelines and costs - AWS vs local RTX 4090 machines
+
+Content:
+**Background** \- I have been working on a multi-label segmentation task for some "special image data" that has around 15channels and is very unlike natural images. The dataset has its challenges - it is in-house, it is unbalanced, smallish (\~5000 512x512 images with sparse annotations i.e mostly background class), the expert who created it has missed some annotations in some output labels every now and then. With standard CNN architectures - UNet++ and DeepLabv3 we are able to get good initial results. We still have false negatives in some specific cases and so I have been trying to improve this playing with loss functions and other modalities.  Hivemind, I have a couple of questions, since this is my first *big professional deep learning* project, only having done fine-tuning on more well defined datasets and courses earlier:
+
+1. What is a realistic timeline for such a project, if we want the product to be robust? How long have similar projects taken for you from ideation to deployment to production. It has been a series of lets try this model with that loss or combination of losses, with this data-sampling strategy. With hyper-parameter tuning, this has lasted for about 4 months (single developer, also constrained by waiting for new annotations etc).
+2. We have a RTX4090 machine that gives us a roughly 6min/epoch yield. I considered doing hyper-parameter sweeps on AWS EC2 instances to run things parallel. The G5 instances are not comparable in terms of speed. I find that p3.8xlarge is comparable w.r.t speed (I use lightning for training, so I am not optimizing anything for multi GPU training). But this instance costs 12USD per hour. At that price, it would seem like a few hyper-parameter sweeps will make getting another 4090 to amortize.  We are a small team and we dont mind having a noisy workstation in our office. The question is in CV applications, with not too much data/ relatively small models when does it make sense to have a local machine vs doing this on AWS or other providers? Loaded question, others have asked similar questions here and there is [this](https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/#When_is_it_better_to_use_the_cloud_vs_a_dedicated_GPU_desktopserver).
+3. Any general advice? Is this how the deep learning side of computer vision goes? I have years of experience with traditional vision pipelines.
+
+Thanks!
+
+Comments:
+- I've had very poor experience trying to get affordable cloud instances that beat our 4090s. On both Azure and AWS, I found the T4s we were able to rent had less memory and were slower.  Unless you pay for H100s, I suggest sticking with local.
+- You have 5000 images, that's not many.  You're not going to get much more out of this dataset than you probably are already getting.  You want to even check if the diminishing returns are even worth it, because 99% of the time they're not.
+- If you're got an image set of 15 channels and its very unlike rgb, have you looked into using self supervised pretraining on unlabelled data?
+
+I ask as imagenet weights will be built very differently from your problem, you could probably try ssl for your encoder, then do a frozen finetune of the deeplabv3 head and see where you get. This is assuming you can access many more unlabeled images.
+- > is very unlike natural images. 
+
+Do yourself and your employer the massive benefit of tracking down one of the far-too-many unemployed 3D graphics and animation professionals from the VFX (visual effects) film and TV industry. Have them take a look at your synthetic data and create a photorealistic version that cause your your false negative situation to disappear, and your true positives to grow in fidelity. Seriously. 
+
+I'm a 3D graphics guy, with 40+ years working in it, covering scientific visualizations, 3D games, major release VFX heavy feature films, 3D reconstruction of people and facial recognition. When doing facial recognition the team I worked with created a gargantuan synthetic dataset using photorealistic rendering of the same quality used in feature films, and that model is now in the top 5 globally, year after year, going on 9 years now.
+- The waiting for annotations issue is why synthetic data usage is growing. The turn around time, lack of diversity and labelling is usually performed by somebody not doing the actual work which introduces issues in the workflow. In our hosting costs we ended up wasting so much on cloud as things are never right the first time and require regular iteration. In the end we reverted back to on prem machines to save money
+
+Full disclosure, I worked at a synthetic company and I have my own synthetic data project so Im a bit biased (link below). 
+www.theperceptioncompany.com
+- Does it have to be the same speed or just cheaper per epoch? If you are doing a grid search then time of one training could be slower, if you run 2+ in parallel.
+- Just to add to what has been said, be sure to properly characterize your training speed. 
+Sometimes the bottleneck is not the GPU.
+- You haven't mentioned what kind of metrics you're planning to achieve. If your precision \*and\* recall have to be in the high 90s, you are looking at 9 to 12 months before it can stabilize. In my experience, if you have a mixture of 30% synthetic and 70% natural, it seems to help. Any higher percentage of synthetic data seems to worsen the numbers. Most of the 9 to 12 months will be fine tuning the dataset, fine tuning the augmentation pipeline, hard negative mining etc., and not on tweaking the model itself.
+- Thanks for the insight!
+- T4s are literally the free kaggle tier gpus. They are exceptionally slow and imo only useful for smaller tasks or debugging. 
+
+A100s are usually my goto they are a good balance of price to performance. A5000s are just V100s with slightly more tensor cores iirc.
+- Thanks, this in fact has been our biggest pain point. We have been adding a lot of realistic data augmentations to the preprocessing which has helped, but looks like we might be close to "diminishing returns"
+- True. I just started experimenting with simsiam recently, although this has been something I am trying on the side,  with the main focus still being on simply finding better hyperparameters and augmentations. Given I have already started with simsiam, perhaps we will pursue this before trying to generate synthetic data because we do have access to orders of magnitude more unlabeled data. Thanks!
+- This makes sense. Thanks, synthetic data is certainly something we will have to explore.
+- Thanks for the insight, synthetic data is certainly something that we will have to explore.
+- Interesting. Which trade shows , get togethers, conferences would you recommend to bump into companies like yours?
+- Thanks! That's true, this could infact be a temporary solution for us!
+- Thanks, did this as a first step.
+- I see that's encouraging to know about the timelines. Those are the kind of metrics we are going after as well. Thanks for the hint about the synthetic to real data ratios well
+- You may have trouble adjusting augmentations for your un-rgb like images for the case of simsiam (I know I have when working with multispectral images). But it can still work just have to experiment with things like random contrast brightness etc but channelwise.
+
+Also if you're open to using vision transformers simMIM or some other masked image modelling pretraining technique can resolve ay augmentations issue.
+- Any CES style conference will be the best shot. Pretty much every  synthetic company is B2B at the moment. If you have something in mind you can send me a DM and I create something for you. My workflow is up and running, it's just the self service web app that's in progress

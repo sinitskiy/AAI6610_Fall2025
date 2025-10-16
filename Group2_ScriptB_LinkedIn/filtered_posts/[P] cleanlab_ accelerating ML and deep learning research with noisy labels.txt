@@ -1,0 +1,56 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/e03m49/p_cleanlab_accelerating_ml_and_deep_learning/
+Title: [P] cleanlab: accelerating ML and deep learning research with noisy labels
+
+Content:
+&#x200B;
+
+Hey folks. Today I've officially released the [cleanlab](https://github.com/cgnorthcutt/cleanlab/) Python package, after working out the kinks for three years or so. It's the first standard framework for accelerating ML and deep learning research and software for datasets with label errors. `cleanlab` has some neat features:
+
+1. If you have model outputs already (predicted probabilities for your dataset), you can find label errors in one line of code. If you don't have model outputs, its two lines of code.
+2. If you're a researcher dealing with datasets with label errors, `cleanlab` will compute the uncertainty estimation statistics for you (noisy channel, latent prior of true labels, joint distribution of noisy and true labels, etc.)
+3. Training a model (learning with noisy labels) is 3 lines of code.
+4. `cleanlab` is [full of examples](https://github.com/cgnorthcutt/cleanlab/tree/master/examples) \-- how to find label errors in ImageNet, MNIST, learning with noisy labels, etc.
+
+&#x200B;
+
+Full `cleanlab` announcement and documentation here: \[[LINK](https://l7.curtisnorthcutt.com/cleanlab-python-package)\]
+
+&#x200B;
+
+GitHub: [https://github.com/cgnorthcutt/cleanlab/](https://github.com/cgnorthcutt/cleanlab/)
+PyPI: [https://pypi.org/project/cleanlab/](https://pypi.org/project/cleanlab/)
+
+As an example, here is how you can find label errors in a dataset with PyTorch, TensorFlow, scikit-learn, MXNet, FastText, or other framework in 1 line of code.
+
+`# Compute psx (n x m matrix of predicted probabilities)# in your favorite framework on your own first, with any classifier.# Be sure to compute psx in an out-of-sample way (e.g. cross-validation)# Label errors are ordered by likelihood of being an error.# First index in the output list is the most likely error.`
+
+`from cleanlab.pruning import get_noise_indices`
+
+`ordered_label_errors = get_noise_indices(s=numpy_array_of_noisy_labels,psx=numpy_array_of_predicted_probabilities,sorted_index_method='normalized_margin', # Orders label errors)`
+
+&#x200B;
+
+[cleanlab logo and my cheesy attempt at a slogan.](https://preview.redd.it/8ugyiuaku9041.png?width=1080&format=png&auto=webp&s=47036cd65856d721f5915b10518465467867380b)
+
+P.S. If you happen to work at Google, `cleanlab` is incorporated in the internal code base (as of July 2019).P.P.S. I don't work there, so you're on your own if Google's version strays from the open-source version.
+
+Comments:
+- Awesome!
+- Awesome work. Any chance of extensions in regression?
+- ML coding assistant vaporware website: tons of upvotes
+
+Functional tool thematically relevant to most ML practitioners: piddly upvotes
+
+Never change, subreddit.
+
+I can only hope that the former is mostly driven by bot activity.
+- Hi thanks for your question. Cleanlab works reasonably well right now for regression by discretizing your targets into 100 - 1000 classes. The more data you have, the finer the granularity you can support. The downside is you lose the explicit information that classes 0.12 and 0.13 are highly correlated, however some of this modeled implicitly by the estimate of the joint distribution of label noise.
+- That's really kind. I'm not sure why this didn't get picked up on Reddit, but it's okay.
+- Our noisy labels in regression come in discrete counts of objects. So instead of 11 we have 10 or 12 in object counts. We never had any lack discretizing and treating this as a classification problem.
+- If the deviation is on the order of +/- 1, that's probably fine, right? Some people add tiny perturbations like that on purpose and call it 'soft targets,' which acts as a form of regularization for complexity reduction -- i.e. can improve generalization on test set accuracy.
+
+If the deviation is on the order of +/- 10, can you create bucks of 10 counts from 0 to max? If the scale is exponential, can you create exponentially scaling buckets? No promises, but there are lots of options.
+- Indeed if deviation is +/- 1 is fine. Problems arise due to the annotators who some under count more than 1 or 2, some over count and only few are right (ie within 1). And this behavior is data dependent.
+
+If you are interested I can fwd you a paper where we analyze all this behavior.

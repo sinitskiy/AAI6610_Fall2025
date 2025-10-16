@@ -1,0 +1,163 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mnvy6z/need_a_capstone_project_thesis_topic_or_product/
+Title: Need a capstone project, thesis topic, or product idea? Maybe I can give you one.
+
+Content:
+After three decades in vision I've got too many projects in my backlog--more than I could finish in my lifetime, even if I worked with a team. I work in vision for industrial automation, lab automation, and assistive technology. I get requests for certain capabilities, and I keep lists of projects that have potential to become products and/or useful technology.
+
+Sure, I'm some random semi-anonymous vision person on the internet. Maybe you're one of the 10% of people looking at this sub who have read this far. You could reject this out of hand and go about your day and that's fine.
+
+People who know me also know that I don't like promoting what I (or my colleagues) do unless the purpose is to promote a team, a company, or an organization. But to offer a sort of credibility, I'll claim this: it's a near certainty that you've owned or used a product (and likely multiple products) that at some point was inspected or built thanks in part to a vision system I architected, helped develop, and/or supported for years. And though I'm just one of many career vision engineers or R&D people who can say that, I'm the Redditor here, creating this goofy post.
+
+Maybe I can give you one of my projects.
+
+For each project I have short descriptions for the following:
+
+* the problem to solve
+* who has this problem (and sometimes the potential market size and/or impact)
+* the kernel of a solution, and maybe even the chain of algorithms likely to form the core of the solution
+* obstacles to creating a proof of concept (POC)
+* workarounds for the obstacles to a proof of concept or prototype
+* "Wizard of Oz" prototypes to demonstrate before a line of code is written
+* some other notes
+
+I'm looking to pass most of these projects off. Some projects I'll be writing up in social media elsewhere. That's worked for me before.
+
+But if you need a project, maybe I can just hand one to you. I would just need to be reasonably confident that you have or will have the ability to finish the project; that you'll take the project seriously; that you'll deliver / announce the product; and that you'll learn something useful from it.
+
+Or maybe I could help you think through your own project that mixes your skills and interests. But for me to agree to that, you'd have to take one of my projects off my hands! I can't have my project count go back up.
+
+If this makes sense, please reply or send me a message, and include the following:
+
+* your experience (w/o exaggeration)
+* what you consider your best skill, perhaps unrelated to vision
+* what you are most passionate about, whether it's related to vision or not
+
+Understand that the focus will be on the problem first, and **not** on the method to solve it. Find out first if a problem needs to be solved, for whom, and whether they'll actually care if it's solved.
+
+EDIT: If you have an interest in industrial automation, lab automation, guidance of industrial arm robots, and/or topics related to production,  please see this related post:
+
+[https://www.reddit.com/r/MachineVisionSystems/comments/1mofuvq/need\_a\_project\_to\_learn\_more\_about\_machine\_vision/](https://www.reddit.com/r/MachineVisionSystems/comments/1mofuvq/need_a_project_to_learn_more_about_machine_vision/) 
+
+Thanks for reading. Please return to your previously planned Redditing.
+
+Comments:
+- Interested!
+
+Got 8 years of experience building computer vision systems incl founding a YC backed startup in the industrial inspection space. I’ve also won a lot of hackathons. 
+
+My best skill is figuring out how to hack any kind of solution to a problem and usually it works well. 
+
+Looking for new startup ideas and problems are a great place to start :)
+- this is pretty cool. hope you get some takers!
+- I'm Interested  
+i'm recent graduate so don't have much experice in Computer Vision but have interest in learning and using CV techniques.
+- Interested.
+
+I have 2 years of experience in CV and in the middle of a job hunt. I have experience in building solutions to a problem right from the first step. I have worked with the popular deep learning models (yolos, transformers, yada yada), generating synthetic data, domain randomization and adaptation. I am skilled in Python and intermediate in C++.
+- Interested
+
+\- I am based in the UK, studying Computing for business whilst the degree does not have anything to do with CV, I have a interest. I have made programs using opencv a bit of python and pytorch to do with tracking faces, Medical segmentation and currently working on research because I have a grant from Google.
+
+I have a interest in the medical field, how CV can be used for civillian related things such as safety or crime prevention.
+
+I have dabbled in ML/Deep Learning and also have a interest in it especially in TinyML and more models which are lighter on the system.
+
+
+
+I regularly read latest research publications from IBM, Google and Intel.
+- I am interested.
+
+My experience in vision is limited but I have a good understanding of the models. I have worked with YOLO and other similar models for tracking basketball players. 
+
+I have been working as a data scientist for last 8 years. I understand machine learning and I even taught it at a grad level in a university.  
+
+I have a masters in Statistics and im currently pursuing my phd in Data science.  
+
+I work with python.
+- I am getting started with learning CV. Can you give me project ideas to scale and be job-ready?
+- A YC-backed startup for industrial applications is unusual. For many people working in manufacturing, that a vision vendor would have outside funding, a valuation, and win awards, doesn’t mean much. Either you have a system that works or you don’t. And if you don’t have a salesperson who already has many contacts, it’ll be very tough to get started.
+
+That aside, is there a particular manufactured product that interests you? It helps to think in terms of revenue per day (or per minutes) earned by the manufacturer. If the number is too low, it gets hard for the customer to justify the expense of a visit system, and it gets hard for the vision developer to justify the time spent.
+
+One thing to be aware of: failure modes mustn’t be inexplicable. That can be a problem with “AI”: the reason a particular inspection failed may be hard to figure out precisely.
+- Thanks!
+
+And that’s a good user name you’ve got there. :)
+- Hi!
+
+What do you enjoy doing?
+
+What degree do you have, and did you enjoy your studies?
+
+And what would you consider you’re best at? Is there something people tell you or remind you that you do well?
+
+With answers to those questions, we can narrow down to a problem domain.
+- (Bear with me; the following are relevant.)
+
+What kind of work have you done for money? (Or what was your favorite project? What went right / wrong?)
+
+Outside of academic studies, what are you good or best at?
+
+Generally speaking, what would you like to be doing five years from now?
+- Very interesting!
+
+Could you send me a chat request? I’m away from my desk at the moment, but I have a few ideas.
+- Do you know any vision outside of ML models? They're an aspect of computer vision, but just a slice of the broader parent subject (or encompassing field) of image processing. 
+
+Over in r/MachineVisionSystems I provide a definition for the difference between two sibling disciplines: computer vision and machine vision.   
+  
+(The boundaries aren't clear cut, but unfortunately Wikipedia and some textbooks are misleading on this point.)  
+  
+Since you have a master's in statistics--nice!--you may well step right into a few projects with comparative ease. I'll send you a DM with a few comments and ideas.  
+  
+Thanks!
+- Please let me know the following:
+
+* Your experience in vision.
+* What problem domain interests/excites you, even if there's no obvious connection to vision. Please pick something as narrowly defined as you can. If you don't know, we'll come back to it.
+* What programming language(s) you know.
+* What coding projects you've finished to completion.
+* What you think you're good at, outside of programming or work. What do people tell you that you do well?
+* Whether you have an engineering / science background, and if so, what kind.
+
+If you'd like, you can send me a message to let me know (roughly) where you are in the world. That can help, too -- some projects are better suited for certain regions.
+- I wasn’t suggesting any of those things mattered, was just answering your question about experience. 
+
+I wouldn’t say there’s a particular manufactured product that interests me. I’m very much open to suggestions! I have some patents for an approach I came up with that is good at inspecting things for which there is little data i.e. scenarios in which customized widgets are being made 
+
+To be honest I just want to build something useful and love computer vision. I’ve been involved with a few inspection projects directly and indirectly and they always seem to take unnecessarily long and it strikes me that with the right software and process architecture it must be possible to build a solution that can deliver results much faster. 
+
+I’m totally open to solving other problems too
+
+I’d love to get your advice and thoughts on a call if you’re open to it - my email: alex @@@ numberboost.com
+
+:)
+- I've worked in an R&D department of a big company for 2 years. My work involved 3D human pose estimation, tool tracking with DL and classical methods, generating synthetic data with high fidelity, training models for neuro and ophthalmic surgery applications, exploring genAI for texture synthesis for creating an accurate digital twin of a human eye, etc. 
+
+The 3D pose estimation was my favourite one because I was involved in it from day 1. I made foundational decisions about architecture, implementation, etc. I worked with digital human models to generate and improve the synthetic dataset and trained the models. We were uplifting 2D poses to 3D using triangulation. There I faced the biggest problem that the 3D predictions were not matching up. They had a constant offset along an axis and we spent a lot of time figuring out why. We found a problem in the message timestamps of the robot after a deep dive. 
+
+I'm kind of a geek outside of academics and work too. I am good at planning things and seeing in advance what can go wrong in the future. I have a strong self-discipline. Other than that, I'm a good (amateur) badminton player lol.
+
+In 5 years time, I imagine myself either completing a PhD in this field and working in research at a deeper level, or getting enough industrial research experience in a niche area to have seniority and freedom to work independently. And eventually, I want to start something of my own that can ideally utilise my education and experience well.
+- Hi. Sorry, I went off on a tangent about your business and such. Your experience is unusual, and I think that’s a good thing. Please don’t mind my grumping.
+
+I’ll send you an email, and I’ll also send a DM here to let you know what that email address is, just in case the email goes to your spam folder.
+- Thank you so much for your reply! You have a great mix of experience, focus, and motivation (from what I can tell). Would you mind sending me a private message? Perhaps we should talk.
+
+Just to pick something for starters, would you consider a project combining badminton and vision, even if it were just a hobby project? The work would be relevant to other projects, and I wouldn't dissuade you from other projects, but it's something I can write about.  
+  
+A badminton project (or other project related to the human body) could involve...
+
+* 3D human pose detection, which could balloon out to a preposterously (and maybe hilariously) hyper-dimensional pose estimation problem given the degrees of freedom per joint, and the non-rigidity of the human body, and the varieties of swing (to the limited extent I know badminton), and so on
+* alternate methods for handling high dimensionality
+* 3D sensing -- a better place to start if you want true 3D data (with a different sensor technology for different distance ranges, from microscopic to super macroscopic)
+* 3D pose-to-pose analysis, etc., including prediction (fancier than some Kalman-like thing)
+* physical modeling of squishy human bits
+* UI / UX design (maybe?) of a mobile app, wearable interface, or desktop interface
+
+I certainly have projects that are relevant, and which may be of interest, or would make you say "No, not that" and then lead to a discussion of a project of greater interest to you.
+- Sent you a pm!
+- Thanks! The ideas seem cool. I kind of messed around with the hyper-dimensional pose estimation when I was trying to basically motion capture the hands and transfer it to a synthetic human. I didn't work on it extensively but in my opinion, it blows up quite quickly haha.
+
+3D sensing also is quite interesting as I don't have much experience in it and would like to explore that.

@@ -1,0 +1,57 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nxy1z3/internship_at_big_tech_phd_student_d/
+Title: Internship at 'Big Tech' — PhD Student [D]
+
+Content:
+I'm sorry for this post on this sub. I know it's a wrong place but couldn't find a better one.
+
+I'm a PhD Student in ML at a decently reputed research team but in a niche field. But most of my work is machine-learning and stats heavy. (Btw Europe Location)
+
+I really want to get a good internship at a big tech to get into high-profilic research network and also for my CV. I feel like I have above-average profile and will make to sure to make it better before I apply. I also have my PI's backing and internal recommendation if I find one position.
+
+1. Is competition huge for getting into Google (Research, DeepMind), MSFT, Amazon, Meta Research, etc,. How can I make best out of my application? What do they generally look for?
+
+2. Does cold-emailing work in this case? 
+
+3. I see that some PhD intern roles (like for Google) specifically asks for students in their final year. Is it a hard requirement? Or do they also interview students in their 1/2nd year.
+
+4. In case if I don't get a chance at mentioned places, should I still go for other reputed companies or target top universities (for visiting researcher) instead?
+
+5. I would like to connect to people who have some experience going through this :)
+
+Thanks!
+
+Comments:
+- 1. Competition seems bigger than ever as entry-level positions are getting harder to secure
+2. For big tech, you will want to apply through the normal application process.  If you know someone internally, it is a good idea to ping them to let them know you applied.  They may be able to secure you an interview, i.e., get you past initial resume screening
+3. It’s not a hard requirement to be in the final year, but if you’re not stellar it will be harder to get an intern position.  This is especially the case if you don’t have someone inside to get you through resume screening.
+4. If you are going for an industry position, it is advantageous to have experience with groups outside of your home university for sure.
+- I’ve done internships at multiple frontier Labs and in my final year of PhD. I’ll most likely join one as well after PhD if things don’t fall apart. 
+
+Also what’s the niche field you work on?
+
+As for your questions:
+1. Competition is fierce. Do the application portal thingy, but look out for people posting that they’re hiring interns on LinkedIn and X. These are more likely to be converted. They look for research alignment, your skills and may be the school you go to too. The first internship is the hardest.
+
+2. Cold emailing can work, but knowing who is hiring interns increases your probability of getting a response. These days headcounts are few and far between.
+
+3. Google also has a student researcher-ship program for students early in their programs. If you get through, you get through. I interned on my second year of my PhD and every year since. But I had a nice MS thesis, so technically that was my 3rd year of grad school.
+
+4. Well, you try to land the best opportunity you can get and try your best to excel there. That’s just life??
+
+5. Happy to connect here, AMA.
+- 1. Last year our posting got 800+ applicants for what ended up being 6 or 7 hires
+2. Depends how good your email is. I've hired people both with and without a cold email.
+3. Can't speak for Google, but I've interviewed and hired 1st year PhD students before. If they're good they're good.
+- Uhh, you'll want to ping them *before* you apply. For example, at one of the ones listed where I work if you apply without telling me first there's literally nothing I can do to help you anymore. I have to enter them into an internal tool *before* they apply.
+- Thanks, really helpful
+- i’m a student researcher at deepmind right now. can i ask — what was the conversion process like? they mention it is “non converting”, but like surely the point of having interns is to hire them in the future
+- Thanks for your reply. Very helpful.
+
+I will sure DM you soon to know more :)
+- could you please talk a bit about what stood out in those 1st year hires for you?
+- As far as I know, it is non converting. But if your manager really likes you they can make things easy for you (such as 2-3 interviews instead of 6-8, etc, but I don’t know for sure). And also if you have time left you can definitely get called back for more SRP roles. I think they are conservative about offering Research Internship roles (the conversion pipeline one) esp at DeepMind
+- Student researchers are not interns and do not have a conversion mechanism. You’d have to apply like anyone else for full time. It’s not intended for conversion so there’s no alignment between teams’ head count and student researcher opportunities. 
+
+That being said, make the most out of connections while on the job because that’s your best opportunity.
+- There’s many more student researcher roles than FT headcount at GDM. As others have mentioned your manager can make it easier to get in the pipeline but that’s about it unless they have headcount themselves.

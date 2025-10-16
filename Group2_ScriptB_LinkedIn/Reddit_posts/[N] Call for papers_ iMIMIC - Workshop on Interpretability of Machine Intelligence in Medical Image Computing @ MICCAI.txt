@@ -1,0 +1,48 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/8kec06/n_call_for_papers_imimic_workshop_on/
+Title: [N] Call for papers: iMIMIC - Workshop on Interpretability of Machine Intelligence in Medical Image Computing @ MICCAI
+
+Content:
+We would like to invite you to submit your contributions to the Workshop on Interpretability of Machine Intelligence in Medical Image  Computing ([iMIMIC](https://imimic.bitbucket.io/)) at the 2018 [MICCAI](https://www.miccai2018.org) conference in Granada.
+
+iMIMIC is a half-day workshop to be held on September 16th, 2018. The program features two excellent keynote speakers as well as oral presentations from selected paper contributions.
+
+This workshop aims at introducing the challenges and opportunities related to the topic of interpretability of ML systems in the context of Medical Image Computing and Computer Assisted Intervention.
+
+Call for papers
+----------------------
+There will be a regular paper track (8 pages LNCS format). We intend to join the MICCAI Satellite Events joint proceedings published in LNCS. We encourage participants to submit their exploratory research work. Covered topics include but are not limited to:
+
+- Definition of interpretability in context of medical image analysis.
+- Visualization techniques useful for model interpretation in medical image analysis.
+- Local explanations for model interpretability in medical image analysis.
+- Methods to improve transparency of machine learning models commonly used in medical image analysis
+- Textual explanations of model decisions in medical image analysis.
+- Uncertainty quantification in context of model interpretability.
+- Quantification and measurement of interpretability.
+- Legal and regulatory aspects of model interpretability in medicine.
+
+Please, submit your paper [here](https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FIMIMIC2018).
+
+Important dates
+----------------------
+- **Submission deadline (11th June)**
+- Reviews due (9th July)
+- Notification of acceptance (13th July)
+- Camera-ready papers (20th July)
+- Half- day workshop (16th September, afternoon)
+
+Invited speakers
+----------------------
+- Been Kim (Google Brain)
+- Scott Lundberg (University of Washington)
+
+More information
+----------------------
+For more information, please, visit the workshop's website, or, feel free to contact the organization.
+
+Website: https://imimic.bitbucket.io/
+
+Comments:
+- I can't find a list of workshops at MICCAI this year. Can you please provide a link?
+- Hey! You can find the workshops on September 16th [here](https://www.miccai2018.org/en/16-SEPTEMBER-SATELLITE-EVENTS.html), and on September 20th [here](https://www.miccai2018.org/en/20-SEPTEMBER-SATELLITE-EVENTS.html). iMIMIC is on September 16th, btw :)

@@ -1,0 +1,28 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/14r81xz/why_isnt_the_use_for_monoclonal_antibodies_more/
+Title: Why isn't the use for monoclonal antibodies more common for cancer treatment?
+
+Content:
+I learned about a technique in which you can use monoclonal antibodies to target and harm cancer cells specifically as opposed to the more common chemotherapy treatments that harm both the non cancer and the cancer cells. 
+It sounds to me way more affective than the usual treatment so why isn't it used more often? Is it just way too expensive? Does it have a low success rate? Or some other reason? Is there something that I misunderstood?
+
+Comments:
+- It’s very expensive and it doesn’t work for every cancer
+- Part of the challenge is that every form of cancer needs unique antibodies. And there are typically multiple forms of the same 'type' of cancer. Breat cancer for instance - multiple things get lumped together and called breast cancer, but they aren't all the same. Depending on which cancer type, a different antibody might be needed.
+
+Discovering a new treatment, getting it through clinical trials, and bringing it to market costs on average $1.5B, and takes 12-15 years. And only 4% that even get to clinical trials end up passing.  
+
+So: hugely expensive to find them, and each type of cancer needs unique ones. And many cancer types we just haven't found something effective yet.
+- Scientist here. I work in the discovery and development of antibody therapeutics. The use of antibodies is very common in cancer treatment, but for some cancers chemotherapy works better. Sometimes the prognosis is best with a combination of antibody and chemotherapy, and other times the antibody on it's own is best. These last two cases can be illustrated by my parents treatment regime, as both have had cancer in the last two years. My mother had a specific breast cancer that overexpressed a receptor (HER2), so she was given trastuzumab on top of chemo, as this is an antibody that targets HER2. My father has a specific bowel cancer that has a high mutational load, which would normally be detected by the immune system and cleared, except that his cancer variant suppresses immune cells near the cancer. His treatment consists of pembrolizumab, an antibody which reactivates his immune response. As chemo can damage the immune system, it is not recommended that he have chemo alongside this treatment. For other bowel cancers that don't have this mutational load, chemo would be the first treatment used.
+- This approach has been attempted, with varying degrees of success, for decades, and will continue to be investigated as potential therapeutics. However, some of the challenges include:
+
+1. The antibody needs to be combined with some sort of toxic agent that will kill the target cell, not just bind to it. Early attempts failed because after the conjugate molecule was internalized, it didn't release and was therefore ineffective.
+2. Cancer cells, although transformed, still contain most of the cellular components that normal cells do, so a successful therapeutic needs to bind to an antigen that's unique to the cancer cell, be internalized by the cell, and deliver a cytotoxic agent to the cell.
+3. The cytotoxic agent employed needs to be directed towards a "targetable" mechanism within the cancer cell. There are only a finite number of such possible targets.
+4. A useful MAb-based therapeutic needs to be devoid of toxicity to the patient, both in terms of the primary pharmacologic activity, and in the possibility of it eliciting hypersensitivity and allergic reactions.
+
+However, the basic idea is still useful, but perhaps somewhat modified from using the entire antibody. If the Fc fragment if the antibody (only) is linked to the a cytotoxic entity (or an RNA silencing sequence), the targeting ability of the therapeutic agent is retained and some of the problems seen with using the entire antibody are avoided. Lots of companies are looking at this and related possibilities.
+- Alright, thank you!
+- Very interesting, sincerely thank you for the information!
+I am wondering though, was the treatment successful for the parents and have they recovered?
+- My mother has successfully completed the treatment, alongside surgery and radiotherapy, and my father is still undergoing treatment.

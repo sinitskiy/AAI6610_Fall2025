@@ -1,0 +1,82 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c40xcl/if_you_mainly_want_to_do_machine_learning_dont/
+Title: If you mainly want to do Machine Learning, don't become a Data Scientist
+
+Content:
+I've been in this career for 6+ years and I can count on one hand the number of times that I have seriously considered building a machine learning model as a potential solution. And I'm far from the only one with a similar experience.
+
+Most "data science" problems don't require machine learning.
+
+Yet, there is SO MUCH content out there making students believe that they need to focus heavily on building their Machine Learning skills.
+
+When instead, they should focus more on building a strong foundation in statistics and probability (making inferences, designing experiments, etc..)
+
+If you are passionate about building and tuning machine learning models and want to do that for a living, then become a Machine Learning Engineer (or AI Engineer)
+
+Otherwise, make sure the Data Science jobs you are applying for explicitly state their need for building predictive models or similar, that way you avoid going in with unrealistic expectations.
+
+Comments:
+- The problem is that "machine learning" is the vaguest term in the world that encompasses everything from linear regression to ChatGPT.
+- My title is data scientist and honestly about 50-80% of my day is spent either using pytorch and prototyping, doing more large scale jobs on aws or preparing data so that I can then prototype on pytorch and then move toward a large scale job on hpc… however after joining this sub and reading the posts, i feel like im in a unique position.
+- Linear regressions are my bread and butter no matter how much I try to do something better. Interpretability and consistency are more important than accuracy in my field.
+- 89% of my “data scientist” role is making pretty charts to put in PowerPoint products. I don’t have enough professional ML experience to get paid as much as I currently do anywhere else. Someone save me.
+- What's the difference between a senior and junior data scientist? Knowing when to not use machine learning 😆
+- I’m sure it’s like this with most jobs but I think the data space has been seriously subject to a massive amount of hype and marketing. Everything has to be ML or Ai and 90% of companies are just suckered into buying services and platforms that just don’t need. Our jobs also get hyper competitive. Need to know snowflake, docker, spark, Kafka, airflow, databricks, sql, nosql, and 10 billion other things that just don’t make sense. It’s getting tiring.
+- There is a lot of confusion at the hiring managers and HR at all. It's not only about the tech. They do not understand the difference between analytics, inference, doe, production systems, prototypes, maintenance and observation. It doesn't even make sense to point to this at job interviews as the only know blahbla and don't understand anything.
+- I don’t agree with this. At least in my company, most of the data scientists are doing highly variable ML work, some projects with classical techniques, others with stats, others with deep learning, and few projects don’t involve ML in some way. We do have MLEs who are basically task rabbits tbh.
+- Shit now I want to be data scientist
+- My understanding is that it's difficult to get a position as a ML engineer without years of experience as a data analyst or data scientist. It would be great to jump right in to a ML engineer career, but otherwise, I think data science can help me get there.
+- Wait, I've seen AI engineers are just LLM engineers, only training fine-tuning and deploying LLM models.
+
+
+And MLE is mostly Software engineering of ML models...
+
+
+So, neither is for building ML models, it looks to me the only jobs remaining are Research Engineer and Scientist, which both require PhD...
+- Meh, I know there's lots of jobs called DS that don't involve ML models, but everyone, including the people in those jobs, knows it's not really DS.
+
+
+DS is much more than just modelling. But if there isn't at least the possibility of you using an ML model for analysis or to put something in production, then you're probably an analyst. 
+
+
+That said, I'm in the opposite world. Where I am everyone wants models and no one wants to do the analysis or actually think about the meaning of the data. It's sad.
+- Can you cross over between careers easily? For example, 6 years into your DS career become an AI engineer and vice versa
+- what is the diff between machine learning and data science?
+- Hard indeed.
+
+The biggest example is Devin.
+
+The Devin presentation, which was presented with a big noise saying "Artificial intelligence will take away the jobs of software developers", was just a fraud! If you, like me, were harassed by the Devin video sent by people who do not understand artificial intelligence and what software developers do, here are the details.
+
+Youtuber user named Internet of Bugs shared a very detailed analysis video on the subject.
+
+-A job was found on Upwork that was suitable for Devin to solve and searched as seen in the video. In other words, Devin can't solve all kinds of software problems and it seems that he can't solve the Upwork job that he allegedly solved at the end of the video.
+
+- In Devin's presentation, it is said that he debugged the code and solved the problems. But in the detailed analysis video, it is seen that the bugs Devin solved are his own creations. He cannot see a real error in the code.
+
+-The work that took half an hour for the software developer who took the analysis video took 6 hours to 1 day for Devin. Devin's work lists and completed tasks, which look very impressive in his presentation, are completely irrelevant to what the customer wants.
+
+-Devin produces an answer to the problem by creating too much code and inefficiently written code. He makes mistakes that even a junior developer wouldn't make, and he can't produce any answers about the AWS part that the customer wants.
+
+-He doesn't understand the execution steps, which are already in the code repository, in the README and very clearly explained.
+
+What bothers me and the analyser here is that Devin is presented as an "AI Software Developer" with more skills than he has, with Upwork jobs, making money and negative language. I think the exaggerations about AI have raised expectations too high and created a bubble in the industry.
+
+YT Video: [https://youtu.be/tNmgmwEtoWE?si=u7EUM7fz-YMeq6Mk](https://youtu.be/tNmgmwEtoWE?si=u7EUM7fz-YMeq6Mk)
+- What skills would someone need to be a machine learning engineer? I heard someone say that math is more important than programming and programming changes all the time while math is the core and should be prioritized
+- when I started in DS I had to explicitly shape my role to be actual modeling. Ultimately got myself moved to a team that’s essentially the “advanced AI” section of my org. We (10 people) are the only ones that actually make models inside a DS org of ~100 people. So for every 1 DS making models, the other 9 are doing adhoc/ rules-based / reporting. 
+
+The roles are there but you gotta show you’re better and hungrier than the other 9.
+- It seems to vary by team. In some places, the Data Scientist (DS) title is basically another name for a data analyst, involving skills like SQL and R or Python. In other places, it refers to a more specialized role focused on modeling. Data Scientists with stronger engineering skills, often from a software engineering background, might transition into roles like Data Engineer or Machine Learning Engineer. Additionally, new titles such as Analytics Engineer and AI Engineer are emerging.
+
+Recruiters told me that in Australia employers pay more for MLE/MLOps Eng, due to supply and demand.
+
+Some data scientists can only write notebooks good for exploration and useless to production. Once the data source and sets are recognised, data scientist value to the team is limited, and thus we might see some politics in place. 
+
+I am working at DS atm, but I clearly see that most of my work can be automated soon (SQL scripting, dashboard building, and fitting model). I tried ChatGPT for writing SQL and report, and most of the time it works with supervision.
+- If so..why company demands even MLOPS for Data Scientist role ? 🤔🤔
+- I posted a brief history of the data science title. Once upon a time, data science was synonymous with ML, and then Lyft rebranded their business analysts to data scientists in the mid 2010’s and that’s when data scientist became so general that anyone could call themselves that. 
+
+When they rebranded, all data scientists working on ML rebranded to ML engineer.
+
+Nowadays there is no role doing the original concept of Data Science other than Machine Learning Scientist -m mostly PhDs. MLEs (which I am) are mainly software engineers.

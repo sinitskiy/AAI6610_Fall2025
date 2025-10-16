@@ -1,0 +1,27 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1d4jhgz/does_anybody_use_redun_as_a_pipeline_manager/
+Title: Does anybody use redun as a pipeline manager?
+
+Content:
+I work at a mostly machine learning company that uses redun as the pipeline manager. I like it because it's based in python so it's easier to build things in redun without learning new languages. I'm just worried that when I move on to the next job that my lack of experience with nextflow or snakemake will make it harder to get hired. Does anybody in bioinformatics use redun at the moment?
+
+Comments:
+- Yes, it's excellent. I've used WDL before and it's a massive upgrade.
+- I haven't heard of anyone using that in bioinformatics, but if you're looking for a python-based workflow manager Snakemake is great.
+- We're a small shop with a decent amount of AWS expertise but it's been great for running our pipelines on AWS Batch. I've never used it anywhere else though but it's young.
+
+I hope I get to keep using it. I keep meaning to implement a pipeline or two on my GitHub to spread the love.
+- Except snakemake really isn't python, it is "python based". YMMV, but I have found that to be a really big caveat. It looks like python and you can use python in some ways, but the rules are really not python.
+
+I really prefer tools that are more python compatible. Luigi, flyte and redun are all better options if you want to stick with python.
+
+YMMV, getting started is easier with snakemake or nextflow for bioinformatics tasks given the massive amounts of existing code out there for them, but when you need to extend them or work with more software engineering centric folks I find them much harder to work with than other tools that are more generic workflow managers with communities that aren't bioinformatics centric.
+
+A long time ago I was choosing between snakemake, nextflow and luigi to migrate a pipeline off a custom workflow manager that was obsolete and a pain to work with I tried to make a novel pipeline in each of them to test and luigi was much easier for me to understand. I wouldn't pick luigi today given it is a dead project, but I still don't think I would pick snakemake or nextflow if going from scratch. The prebuilt stuff on snakemake/nextflow especially if you don't need to do novel development may change that calculus and make them make more sense. 
+
+I suspect an expert with snakemake and/or nextflow can be as efficient with them as other workflow managers, but getting to that expert level level is harder given their quirks.
+- If you want to really go nuts, I know people (okay, a person) who writes Bioinformatics workflows with Make 🙃
+- Adding to this, it's true you can't write just any arbitrary Python in Snakemake. But you can do some things in there with standard python, and there is Snakemake-specific syntax for most workflow tasks. 
+
+I prefer Snakemake over Nextflow, but in industry people love to pay for things. There are paid products from Seqera and others that use Nextflow so I end up writing Nextflow because we could "theoretically" use one of those paid products.
+- The potential for biologists in the lab to fire off Tower runs (instead of waiting for us to do it, lol) is the main draw that I've seen for Nextflow in Industry.

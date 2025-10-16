@@ -1,0 +1,20 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1n2s1v1/shopify_applied_machine_learning_engineer_pair/
+Title: Shopify Applied Machine Learning Engineer Pair Programming Interview
+
+Content:
+Has anyone done the pair programming interview with Shopify? 
+
+Currently interviewing for a Machine Learning Engineer position and the description is really vague.  
+All I know is that I can use AI tools and that they don't like Leetcode.  
+It will be pair programming and bring your own IDE, but beyond this I really have no idea what to expect and how to prepare.
+
+  
+My interview is in a week - I'd really appreciate any guidance and help, thank you!
+
+(also based in Canada, flair says US only for some reason)
+
+Comments:
+- Commenting to come back here
+- Bumping this, would appreciate if you can share what your experience was like if you had your interview already. Thanks!
+- How did it go?

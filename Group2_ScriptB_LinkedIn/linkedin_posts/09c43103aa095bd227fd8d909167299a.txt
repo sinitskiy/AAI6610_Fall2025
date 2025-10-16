@@ -1,0 +1,76 @@
+URL: https://www.linkedin.com/posts/juri-marcucci-159a2028_economic-data-llms-activity-7265119777239539712-ZHPR
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Juri Marcucci的动态
+Juri Marcucci
+
+Economist at Banca d'Italia
+
+10 个月  已编辑
+
+🌟 Unlock the Power of #Economic #Data with #LLMs! 🌟
+
+Join us on Friday, November 22 at 11 AM ET / 5 PM CET for an exciting #AMLEDS #Webinar with Sergio Correia from the Federal Reserve Board, who will present "Unlocking Economic Data with Large Language Models: An Update."
+
+Moderated by Sophia Kazinnik from the Federal Reserve Bank of Richmond, this session will explore how Large Language Models (LLMs) are revolutionizing the way we unlock and analyze economic data.
+
+🔑 What you’ll learn:
+
+How using LLMs is accessible to everyone—just a few lines of Python code required.
+Practical applications, such as summarizing text, extracting historical data, merging datasets, and leveraging embeddings for tasks like text classification and regression.
+A deep dive into Retrieval-Augmented Generation (#RAG) pipelines for generating data with LLMs.
+
+If you’re curious about how LLMs can unlock new possibilities in economic data analysis, don’t miss this webinar!
+
+🔗 Register now at our AMLEDS website: https://lnkd.in/egTakd2
+
+#EconLinkedin #EconTwitter #ArtificialIntelligence #BigData #LLM #LargeLanguageModels #MachineLearning #Econometrics #TextMining #TextualData #Economics #Webinar
+
+👥 Organizers:
+Ricardo Correa (Federal Reserve Board)
+Xin Zhang, PhD (Sveriges riksbank)
+Stephen Hansen (UCL)
+Jesús Fernández-Villaverde (University of Pennsylvania)
+Juri Marcucci (Banca d'Italia)
+
+Join us for a deep dive into the future of economic data analysis with LLMs! 🚀
+
+99
+1 条评论
+赞
+评论
+分享
+Carlo Lazzaro
+
+Health Economist - Economic Evaluation of Health Care Programmes, Pharmacoeconomics and Health Economics - (Bio)statistics - Health econometrics
+
+10 个月
+
+I am very grateful to Sergio Correia for his -reghdfe. Stata module!
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+4,003 位关注者
+
+165 则动态
+查看档案  关注
+探索相关领域
+How Llms Process Language
+Practical Uses of Language Models
+How to Optimize Large Language Models
+Tre

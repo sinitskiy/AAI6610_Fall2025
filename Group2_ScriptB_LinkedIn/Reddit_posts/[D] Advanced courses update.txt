@@ -1,0 +1,161 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_update/
+Title: [D] Advanced courses update
+
+Content:
+EDIT Jan 2021 : I am still updating the list as of Jan, 2021 and will most probably continue to do so for foreseeable future. So, please feel free to message me any courses you find interesting that fit here.
+
+- - -
+
+We have a [PhD level or Advanced courses](https://www.reddit.com/r/MachineLearning/comments/51qhc8/phdlevel_courses/) thread in the sidebar but it's three year old now. There were two other 7-8 month old threads ([1](https://www.reddit.com/r/MachineLearning/comments/cae59l/d_advanced_courses_update/), [2](https://www.reddit.com/r/MachineLearning/comments/cjnund/d_what_are_your_favorite_videos_lectures_on/)) but they don't have many quality responses either. 
+
+So, can we have a new one here?
+
+To reiterate - CS231n, CS229, ones from Udemy etc are not advanced. 
+
+Advanced ML/DL/RL, attempts at building theory of DL, optimization theory, advanced applications etc are some examples of what I believe should belong here, much like the original sidebar post.
+
+You can also suggest (new) categories for the courses you share. :)
+
+- - -
+
+Here are some courses we've found so far. 
+
+ML >> 
+
+* [Learning Discrete Latent Structure - sta4273/csc2547 Spring'18](https://duvenaud.github.io/learn-discrete/)
+* [Learning to Search - csc2547 Fall'19](https://duvenaud.github.io/learning-to-search/)
+* [Scalable and Flexible Models of Uncertainty - csc2541](https://csc2541-f17.github.io/)
+* [Fundamentals of Machine Learning Over Networks - ep3260](https://sites.google.com/view/mlons/home)
+* [Machine Learning on Graphs - cs224w](http://web.stanford.edu/class/cs224w/), [videos](https://www.youtube.com/playlist?list=PL-Y8zK4dwCrQyASidb2mjj_itW2-YYx6-)
+* [Mining Massive Data Sets - cs246](http://web.stanford.edu/class/cs246/index.html)
+* [Interactive Learning - cse599](https://courses.cs.washington.edu/courses/cse599i/20wi/)
+* [Machine Learning for Sequential Decision Making Under Uncertainty - ee290s/cs194](https://inst.eecs.berkeley.edu/%7Eee290s/fa18/resources.html)
+* [Probabilistic Graphical Methods - 10-708](https://www.cs.cmu.edu/~epxing/Class/10708-20/)
+* [Introduction to Causal Inference](https://www.bradyneal.com/causal-inference-course)
+
+ML >> Theory
+
+* [Statistical Machine Learning - 10-702/36-702 with videos](https://www.stat.cmu.edu/~ryantibs/statml/), [2016 videos](https://www.youtube.com/playlist?list=PLTB9VQq8WiaCBK2XrtYn5t9uuPdsNm7YE)
+* [Statistical Learning Theory - cs229T/stats231 Stanford Autumn'18-19](http://web.stanford.edu/class/cs229t/)
+* [Statistical Learning Theory - cs281b /stat241b UC Berkeley, Spring'14 ](https://www.stat.berkeley.edu/%7Ebartlett/courses/2014spring-cs281bstat241b/)
+* [Statistical Learning Theory - csc2532 Uni of Toronto, Spring'20](https://erdogdu.github.io/csc2532/)
+
+ML >> Bayesian
+
+* [Bayesian Data Analysis](https://github.com/avehtari/BDA_course_Aalto)
+* [Bayesian Methods Research Group, Moscow](https://bayesgroup.ru/), Bayesian Methods in ML - [spring2020](https://www.youtube.com/playlist?list=PLe5rNUydzV9TjW6dol0gVdWpr02hBicS0), [fall2020](https://www.youtube.com/playlist?list=PLe5rNUydzV9THZg7-QnaLhcccIbQ5eQm8)
+* [Deep Learning and Bayesian Methods - summer school](http://deepbayes.ru), videos available for 2019 version
+
+ML >> Systems and Operations
+
+* [Stanford MLSys Seminar Series](https://mlsys.stanford.edu/)
+* [Visual Computing Systems- cs348v](http://graphics.stanford.edu/courses/cs348v-18-winter/) - Another systems course that discusses hardware from a persepective of visual computing but is relevant to ML as well 
+* [Advanced Machine Learning Systems - cs6787](https://www.cs.cornell.edu/courses/cs6787/2019fa/) - lecture 9 and onwards discuss hardware side of things
+* [Machine Learning Systems Design - cs329S](https://stanford-cs329s.github.io/)
+* [Topics in Deployable ML - 6.S979](https://people.csail.mit.edu/madry/6.S979/)
+* [Machine Learning in Production / AI Engineering (17-445/17-645/17-745/11-695)](https://ckaestne.github.io/seai/)
+* [AutoML - Automated Machine Learning](https://ki-campus.org/courses/automl-luh2021)
+
+DL >>
+
+* [Deep Unsupervised Learning - cs294](https://sites.google.com/view/berkeley-cs294-158-sp20/home)
+* [Deep Multi-task and Meta learning - cs330](https://cs330.stanford.edu/)
+* [Topics in Deep Learning - stat991 UPenn/Wharton](https://github.com/dobriban/Topics-in-deep-learning) *most chapters start with introductory topics and dig into advanced ones towards the end. 
+* [Deep Generative Models - cs236](https://deepgenerativemodels.github.io/)
+* [Deep Geometric Learning of Big Data and Applications](https://www.ipam.ucla.edu/programs/workshops/workshop-iv-deep-geometric-learning-of-big-data-and-applications/?tab=overview)
+* [Deep Implicit Layers - NeurIPS 2020 tutorial](http://implicit-layers-tutorial.org/)
+
+DL >> Theory
+
+* [Topics course on Mathematics of Deep Learning - CSCI-GA 3033](https://joanbruna.github.io/MathsDL-spring19/)
+* [Topics Course on Deep Learning - stat212b](http://joanbruna.github.io/stat212b/)
+* [Analyses of Deep Learning - stats385](https://stats385.github.io/), [videos from 2017 version](https://www.researchgate.net/project/Theories-of-Deep-Learning)
+* [Mathematics of Deep Learning](http://www.vision.jhu.edu/teaching/learning/deeplearning19/)
+* [Geometry of Deep Learning](https://www.microsoft.com/en-us/research/event/ai-institute-2019/)
+
+RL >>
+
+* [Meta-Learning - ICML 2019 Tutorial](https://sites.google.com/view/icml19metalearning) , [Metalearning: Applications to Data Mining - google books link](https://books.google.com/books?id=DfZDAAAAQBAJ&printsec=copyright&redir_esc=y#v=onepage&q&f=false)
+* [Deep Multi-Task and Meta Learning - cs330](http://cs330.stanford.edu/), [videos](https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5)
+* [Deep Reinforcement Learning - cs285](http://rail.eecs.berkeley.edu/deeprlcourse/)
+* [Advanced robotics - cs287](https://people.eecs.berkeley.edu/%7Epabbeel/cs287-fa19/)
+* [Reinforcement Learning - cs234](https://web.stanford.edu/class/cs234/), [videos for 2019 run](https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u)
+* [Reinforcement Learning Summer School 2019: Bandits, RL & Deep RL](https://rlss.inria.fr/program/)
+
+Optimization >> 
+
+* [Convex Optimization I - ee364a](http://stanford.edu/class/ee364a/), has quite recent [videos](https://www.youtube.com/playlist?list=PLdrixi40lpQm5ksInXlRon1eRwq_gzIcw) too. 
+[Convex Optimization II - ee364b](http://web.stanford.edu/class/ee364b/), [2008 videos](https://www.youtube.com/watch?v=U3lJAObbMFI&list=PL3940DD956CDF0622&index=20)
+* [Convex Optimization and Approximation - ee227c](https://ee227c.github.io/)
+* [Convex Optimization - ee227bt](https://people.eecs.berkeley.edu/%7Eelghaoui/Teaching/EE227BT/index.html)
+* [Variational Methods for Computer Vision](https://vision.in.tum.de/teaching/ws2013/vmcv2013)
+* [Advanced Optimization and Randomized Algorithms - 10-801](http://www.cs.cmu.edu/%7Esuvrit/teach/index.html), [videos](https://www.youtube.com/playlist?list=PLjTcdlvIS6cjdA8WVXNIk56X_SjICxt0d)
+* [Optimization Methods for Machine Learning and Engineering - Karlsruhe Institute of Technology](https://www.youtube.com/playlist?list=PLdkTDauaUnQpzuOCZyUUZc0lxf4-PXNR5)
+
+Applications >> Computer Vision
+
+* [Computational Video Manipulation - cs448v](https://magrawala.github.io/cs448v-sp19/)
+* [Advanced Topics in ML: Modeling and Segmentation of Multivariate Mixed Data](http://www.vision.jhu.edu/teaching/learning/learning10/)
+* [TUM AI Guest lecture series](https://www.youtube.com/playlist?list=PLQ8Y4kIIbzy8kMlz7cRqz-BjbdyWsfLXt) - many influential researchers in DL, vision, graphics talk about latest advances and their latest works.
+* [Advanced Deep Learning for Computer Vision - TUM ADL4CV](https://www.youtube.com/playlist?list=PLog3nOPCjKBkngkkF552-Hiwa5t_ZeDnh)
+* [Detection, Segmentation and Tracking - TUM CV3DST](https://www.youtube.com/playlist?list=PLog3nOPCjKBneGyffEktlXXMfv1OtKmCs)
+* [Guest lectures at TUM Dynamic Vision and Learning group](https://www.youtube.com/playlist?list=PLog3nOPCjKBnAuymJ7uTysuG357zVn7et)
+* [Vision Seminar at MIT](https://www.youtube.com/channel/UCLMiFkFyfcNnZs6iwYLPI9g/videos)
+* [Autonomous Vision Group, Talk@Tübingen Seminar](https://www.youtube.com/playlist?list=PLeCNfJWZKqxu-BwwcR4tDBOFNkJEOPWb_)
+
+Applications >> Natural Language Processing
+
+* [Natural Language Processing with Deep Learning - cs224n](http://web.stanford.edu/class/cs224n/) (* not sure if it belongs here, people working in NLP can help me out)
+* [Neural networks for NLP - cs11-747](http://www.phontron.com/class/nn4nlp2020/schedule.html)
+* [Natural Language Understanding - cs224u](https://web.stanford.edu/class/cs224u/), [video](https://www.youtube.com/playlist?list=PLoROMvodv4rObpMCir6rNNUlFAn56Js20)
+
+Applications >> 3D Graphics 
+
+* [Non-Euclidean Methods in Machine Learning - cs468, 2020](http://graphics.stanford.edu/courses/cs468-20-fall/schedule.html)
+* [Machine Learning for 3D Data - cs468, spring 2017](http://graphics.stanford.edu/courses/cs468-17-spring/schedule.html)
+* [Data-Driven Shape Analysis - cs468, 2014](http://graphics.stanford.edu/courses/cs468-14-spring/)
+* [Geometric Deep Learning](http://geometricdeeplearning.com/) - Not a course but the website links a few tutorials on Geometric DL
+* [Deep Learning for Computer Graphics - SIGGRAPH 2019](https://geometry.cs.ucl.ac.uk/creativeai/)
+* [Machine Learning for Machine Vision as Inverse Graphics - csc2547 Winter'20](http://www.cs.utoronto.ca/~bonner/courses/2020s/csc2547/) 
+* [Machine Learning Meets Geometry, winter 2020](https://geoml.github.io/schedule.html); [Machine Learning for 3D Data, winter 2018](https://cse291-i.github.io/WI18/schedule.html)
+
+---
+
+Edit: Upon suggestion, categorized the courses. There might be some misclassifications as I'm not trained on this task ;). Added some good ones from older (linked above) discussions.
+
+Comments:
+- [Learning Discrete Latent Structure](https://duvenaud.github.io/learn-discrete/)
+- PhD-level course  [EP3260: Fundamentals of Machine Learning Over Networks](https://sites.google.com/view/mlons/home)
+- [CS 287: Advanced Robotics, Fall 2019](https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/) with Pieter Abbeel is great! It covers a lot of stuff: basic RL, control theory, motion planning, particle filtering, all the way up to state-of-the-art RL algorithms for robotics.
+- CMU 11-747 (Neural Networks for Natural Language Processing) should definitely go in as it's more advanced than CS224n and is also a high-quality course.
+http://phontron.com/class/nn4nlp2020
+- CMU's [Probablistic Graphical Models](https://m.youtube.com/channel/UCim-E6bNz7lUyKZwhgN6S1A/featured) by Professor Eric Xing.
+- [CS 330: Deep Multi-Task and Meta Learning](https://cs330.stanford.edu/)
+- https://sites.google.com/view/berkeley-cs294-158-sp20/home
+- I am taking an Advanced NLP course 6.864 
+at MIT right now.  We don’t have videos yet, but I’ll post here when/if we do,
+- Could anyone recommend a good course on Speech processing?
+- Yes. That makes sense. If there a thread for intermediate level courses, it should be added there. I think [CMU 36-702](https://www.youtube.com/playlist?list=PLTB9VQq8WiaCBK2XrtYn5t9uuPdsNm7YE) is advanced enough for this list though
+- Deep RL:
+
+[https://www.youtube.com/playlist?list=PLkFD6\_40KJIwhWJpGazJ9VSj9CFMkb79A](https://www.youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A)
+- [CS224W](http://web.stanford.edu/class/cs224w/) is a good one for ML on graphs.
+- Another statistical learning theory (taught by PhD from Stanford, now prof at U of T):
+
+[Statistical Learning Theory] (https://erdogdu.github.io/csc2532/)
+- How about this?
+
+[https://github.com/avehtari/BDA\_course\_Aalto](https://github.com/avehtari/BDA_course_Aalto)
+
+For me, it's like a hidden gem :-)
+- Topics in Robust and Deployable ML (6.S979) has a variety of slides and notes but no assignments.
+
+https://people.csail.mit.edu/madry/6.S979/
+- Would you consider [CS224n](http://web.stanford.edu/class/cs224n/)  an advanced course?
+- Anybody have any suggestions for courses on theory or application of recommendation systems?
+- Perhaps Emma Brunskill's [CS 234](https://web.stanford.edu/class/cs234).
+- Advanced PhD-level topics course, notes (180pg), + presentations:  [https://github.com/dobriban/Topics-in-deep-learning](https://github.com/dobriban/Topics-in-deep-learning) 
+
+Covers advanced topics such as adversarial examples, fairness, graph NNs, modern theory (e.g., neural tangent kernels), applications to chemistry, visual Q+A, etc.
+- Anyone knows about any courses on time series forecasting using ML or DL?

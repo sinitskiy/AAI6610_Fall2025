@@ -1,0 +1,8 @@
+URL: https://www.linkedin.com/posts/tkgil_minimize-llm-hallucinations-with-pydantic-activity-7153908890974265344-aLCg
+Date: 2025-09-24
+Author: Unknown
+
+I've been experimenting and playing around with Pydantic for some time. 
+I think it's a great validation library in Python and the core validation logic implemented in Rust certainly addresses some of the concerns with memory safety for implementations in C/C++. 
+
+The blog below certainly highlights the benefits of using Pydantic for prompt validation. This is certainly a direction towards type safety in AI systems.

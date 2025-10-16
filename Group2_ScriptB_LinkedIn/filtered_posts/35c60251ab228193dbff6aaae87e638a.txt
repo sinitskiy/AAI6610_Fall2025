@@ -1,0 +1,39 @@
+URL: https://www.linkedin.com/posts/warrenbpowell_there-is-a-long-history-of-people-promoting-activity-7334974103214284800-8omk
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Warren Powell的动态
+Warren Powell 
+Warren Powell是领英影响力人物
+
+Professor Emeritus, Princeton University/ Co-Founder, Optimal Dynamics/ Executive-in-Residence Rutgers Business School
+
+4 个月
+
+There is a long history of people promoting either Bayesian or frequentist statistical learning. I have had people hiss at me if I mentioned the “wrong” perspective.
+ 
+I have never figured this out. I use both, sometimes at the same time. Bayesian learning is a powerful method when I am working on problems where I have to make decisions with no data, or very limited data. Frequentist statistics is the go-to methodology when data is readily available.
+ 
+Chapter 3 of my RLSO book is called “Online Learning” and covers both Bayesian and frequentist statistics, without a hint of discussion of which his “better.”
+ 
+https://lnkd.in/dB99tHtM (“tinyurl.com/” with “RlandSO”)
+ 
+Chapter 3 can be downloaded from
+ 
+https://lnkd.in/e2dSXV7R 
+ 
+I am confused by the existence of entire books focusing purely on one style or the other. Physicians are going to use their experience (aka “Bayesian prior”) when making decisions about the best course of treatment. Forecasters are going to use time-series modeling to perform demand forecasts (“frequentist statistics”). 
+ 
+In a paper modeling wind energy, where we had to capture “crossing times” (how long the actual was above or below the forecast), we used a hidden Markov model which used an unobservable state variable to describe whether we were in a short, medium or long crossing time (this would be a Bayesian belief model), combined with the frequentist updating of a time series model. 
+
+ Statistical learning arises throughout sequential decision problems. Whether we are forecasting, optimizing a parameter, estimating the value of being in a state, or approximating a policy… sometimes a Bayesian belief model is appropriate, more often I am using frequentist modeling. If you want to have a complete analytics toolbox,

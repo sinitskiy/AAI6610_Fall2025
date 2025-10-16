@@ -1,0 +1,120 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1lgfmli/toolkit_to_move_from_junior_to_senior_data/
+Title: Toolkit to move from junior to senior data analyst (data science track)
+
+Content:
+I would like to move from data analyst to senior data analyst (SDA) in the next year or so. I have a background in marketing, but pivoted to data science four years ago, and have been learning python since then. Most of my work nowadays is either data wrangling or dashboards, with more senior people doing advanced data science thingies like PCA.
+
+This is a list of tools I think I would need to move from junior data analyst to senior data analyst. Any feedback on if SDA is the right person for these tools is much appreciated.
+
+Extraction
+- general pandas read (csv, parquet, json)
+- gzip
+- iterating through directories
+- hosting on AWS / Google Cloud
+- various other python packages like sqlite
+
+Wrangling
+- cleaning
+- merging
+- regex / search
+- masking
+- dtype conversion
+- bucketing
+- ML preprocessing (hash encoding, standardizing, feature selection)
+
+Segmentation
+- PCA / SVD / ICA
+- k-means / DBSCAN
+- itertools segmentation
+
+Statistics
+- descriptive statistics
+- AB testing: t tests, ANOVAs, chi squared
+- confidence intervals
+
+Machine learning
+- model selection
+- hyperparameter tuning
+- scoring
+- inference
+
+Visualization
+- EDA visualizations in Jupyter Lab / Colab
+- final visualizations in dashboards
+
+Deployment
+- deploy and host on AWS / Google Cloud
+
+———
+
+Things I think are simply out of the realm of any DA, senior or not:
+- recommendation systems
+- neural networks
+- setting up an AB test on the back end
+
+Curious what the community would bucket into data analyst, senior data analyst, or data scientist responsibilities.
+
+Comments:
+- My suggestion is to focus less on the technical skills and more on communication and domain knowledge. When I evaluate candidates, I'm looking for someone who is strong in both with foundational technical skills.
+
+If properly identified at hire, the technical skills you need for a specific job are easy to integrate into an onboarding plan conditional on having a solid background in the fundamentals. Most of what you listed won't be used in a specific job. And depth is preferable to breadth in this context. I think you'll also find that technical skills rapidly atrophy if you're not using them every day.
+- Moving up in a company has nothing to do with the toolkits you know but how to make an impact on a company, have a vision, lead people toward it, and make impact they believe in. If you’re thinking a bigger tech stack is going to get you there, you’re the prime candidate to get replaced by AI in the next couple years anyway.
+- It’s not about the technical skills, because you can pick those up whatever stage you are. What’s key is that people can trust you to carry out a project and to learn whatever tools you need to learn. 
+
+My clients don’t really care what tools I use, as long as I build them what they need. Sure, that means sometimes you are not perfectly implementing something or you don’t have full knowledge of the tool’s documentation, but this is where you lean on your ability to learn things and to talk to others that have expertise peripheral to you.
+- I think it’s less about how many techniques you know and more about the depth in which you understand the techniques you do “know” and your ability to apply them correctly.
+
+That in my mind separates SR from JR
+- Sounds more like you're trying to go from analyst to data scientist
+- Others have covered most of it - adding bits that might help.
+
+At any stage of experience, I'd focus on impact - your tools are only a means for creating impact. 
+
+Atrophy is real, and the best ROI on learning new concepts is to first choose to learn what you think might have the best application in your line of work - no easy path here, gotta iterate. 
+
+Once you find you can exploit a concept to solve a biz problem, start building - you will identify all the gaps you thought didn't exist about whatever you learned, but the journey is fun and since you have direction, there's your motivation.
+
+From a junior analyst's perspective, communication and ultimately adoption of your solution becomes esp tricky when stakeholder maturity hasn't evolved to digest DS solutions. Run an ELI5 of your solution to yourself and technical colleagues, use AI to fine-tune.
+- The statistical methods you listed here are foundational to the work. This is like your hammer and screwdriver. But having these in your toolbelt doesn't automatically make you useful.
+
+Whats impressive to employers or clients is how you use your knowledge in a certain domain to drive progress. You having a background in marketing makes you much more attractive as a marketing DS then anything you listed here. Although, if you're not familiar with these methods you are obviously useless as a DS. I would recommend you learn the basics of DS which should be enough for a junior-mid level job and you'll learn the rest to on the job. The most important skill for me has been knowing the foundations of stats and being able to use that to understand what my current team does.
+
+It also depends what companies you're targeting. In my company all the DS have at least a master's in stats/comp sci and you won't be considered for the role if you don't. But we regularly have to read and implement/explain academic papers we publish.
+- To me, DS means being almost competent as a SWE, knowing the data part, and most importantly knowing the science part, i.e. the scientific framework.
+- Switch companies. Internal mobility is the worst way to do it, esp if you're a junior analyst. Switch to a company where the DS role is closer to analytics, and then find ways to incorporate more technical skills into your workload while already having the DS title.
+
+I started in marketing as an analyst at a fortune 500 company. Left to join a product analytics org in FAANG, and then left again and am now a DS at a big tech company. I have around \~5 YoE, quadrupled my salary in that time. Don't stay in the same place, unless you know hard work is rewarded generously. Now that I have experience at different places, I know what I want and am in a role that I like a lot. Also helps that my manager is fantastic so I feel like this will be a long term home for me. My advice is to interview every year and a half to see what's out there and learn how much you're worth.
+
+Also don't over index on technical skills unless you know you want to become an ML engineer. No point in wasting time getting surface level knowledge on a broad spectrum of technical skills when there are people in specialized roles that fulfill those gaps. You need to spend more time on business communication, product sense, driving business impact, etc. The more senior you get, the more important those things are. The technical stuff will usually be handled by MLEs or you can 80/20 it with ChatGPT.
+- Your skillset is solid for a junior data analyst, but to reach SDA, focus on developing expertise in machine learning, data storytelling, and complex problem-solving.
+- Solid list !
+
+In my experience, the jump from DA to Senior DA is less about knowing “fancier” tools and more about owning problems end-to-end. That means being trusted to choose the right method, clean messy data, explain tradeoffs to stakeholders, and deliver something actionable- whether that’s a dashboard, model insight, or a “we shouldn’t do this” recommendation.
+
+Tool-wise, your list is great. A few thoughts:
+
+\- Cloud familiarity is a huge plus (even just basic S3, Lambda, BigQuery, etc.). Not deep infra, just enough to not be blocked.
+
+\- ML-lite like clustering, PCA, and feature selection is right in the sweet spot for senior analysts, especially if you can explain it well to non-technical folks.
+
+\- AB testing + communication is where you can shine-being the person who can confidently say “this worked” (or didn’t), why, and what to do next.
+
+You’re also totally right to draw the line at deep ML/rec systems/backend, those are more DS/Eng land.
+
+Side note: if you’re doing a lot in Jupyter, check out Datalayer - it makes building and iterating in notebooks smoother, especially if you're collaborating or want to try AI-assisted workflows.
+
+P.S Have some github links around Jupyter (MCP and AI Agents) use cases. Would love to share if you're interested in leveling it up later with AI-assisted workflows (like having an agent write/run cells with context)
+- Great breakdown—this is more comprehensive than many SDA roles I’ve seen. One thing that helps with the transition is improving how you *communicate* insights, not just produce them. Tools like [kivo.dev](https://kivo.dev) can offload the manual work of turning cleaned data into client-ready reports, freeing you up to focus on deeper analysis (like segmentation or test design). It’s not about doing everything a data scientist does, but owning the pipeline from extraction to decision-ready output.
+- They do atrophy; I’m in the midst of re-upping on my PCA.
+
+This is good feedback - thank you
+- This is a good point 🧐
+- I feel like "trust" is an important word here. The more expertise you have in a tool, the more trust you can doll out.
+- I am familiar with both high and low context environments, I’m assuming you’re implying to move communication towards more high context communication?
+- yes, but also no. I don't have a masters and don't plan on getting on in statistics/data science/related field.
+- You’d have to get specific about how you define expertise. Ultimately, it still comes down to what you build. Expertise is used as a proxy for trust, a prediction. what you actually build is a direct connection to trust and accrues as work is completed.
+
+Someone could have a phd in computer vision, but if they can’t apply that (assumed) expertise to a simple logistic regression problem all the way up to the topic of their dissertation they’re useless. Even more if they can’t be bothered to work with others.
+- Yeah, I mean like you know DBSCAN, but why do you use that over hierarchical clustering? Then once you choose how can you effectively communicate the outcome/insights from your modeling or analytics process, and how does it impact them.
+- A masters helps but experience trumps all, the term data scientist is really broad but to me is at the minimum someone who uses probably a higher degree of python than sql

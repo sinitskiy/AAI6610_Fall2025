@@ -1,0 +1,53 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gl3sn0/what_do_you_think_of_building_ai_with_ai/
+Title: What do you think of Building AI with AI ?
+
+Content:
+Hey everyone! 👋
+
+I’m curious about your thoughts on the concept of building AI with AI. With the rapid evolution of machine learning and more particularly LLMs , there’s been a lot of talk about leveraging AI to handle the more complex and repetitive tasks involved in developing, deploying, and maintaining AI applications.
+
+I've been playing around with the idea where AI could help streamline the development of AI\\ML applications with everything from data cleaning, model training, and evaluation to deployment and even maintenance. This kind of approach could potentially streamline the entire AI development lifecycle, allowing us to go from idea to production much faster then today.
+
+I'd love to hear your thoughts on this and open a discussion on how you think we could better utilize AI to help with the iterative and often challenging parts of building AI from idea to production.
+
+Comments:
+- > often challenging parts of building AI from idea to production.
+
+oh yeah I can't imagine anything will go wrong if you use code you don't understand in production.
+- > AI\ML applications with everything from data cleaning
+
+
+Jesus, no.
+- Building experiment structures to test new models is something that is still readily solvable with humans.  AI is most useful when sifting through large amounts of data.  So yeah, maybe with data curation.  Also one area I could see it being a big help with is just helping researchers sift through and distill the massive amount of papers being published
+- I recently built a classification model to be used in our search application
+
+The guys I was working with wanted to use chat gpt to help build the classification training data so they got it to classify 10k searches
+
+I then went through that data. It was really painful, chat gpt got the classification I wanted right about 40% of the time
+
+Realistically it didn't save me any time. Because of how often it was wrong I still had to check every single result by hand
+- Building AI with AI can revolutionize ML development, automating tedious tasks and accelerating the entire lifecycle from idea to production.
+- Meh
+- A lot will definitely go wrong 😅, but the idea is not for the AI to do everything, instead think of them as your co-pilot team, that you supervise with human in the loop interventions and code along to go from idea to production.
+- Haha, I hear you 😅, well with your supervision of course and human in the loop interventions. Essentially a team of co-pilots with different personas e.g Data Engineer, Data Scientist and an ML Engineer assisting you from idea to production
+- I see, well here’s what I’ve been exploring. The idea of having a co-pilot team of agents that represent different personas such as a Data Engineer, Data Scientist and ML engineer, that you supervise with human in the loop interventions in order to assist you to go from idea to production end-to-end. Check it out here then keen to hear your thoughts (https://envole.ai)
+- I see, and that sounds like a recipe for disaster 😅. The  stance I was coming from was more so from a supervised approach, where the practitioner is still in control i.e builds the relevant say SVM model, but with the assistance of a co-Pilot team to speed up manual components of the workflow. Check it out at (https://envole.ai) and let me know what you think, thanks for the interaction.
+- hey when this goes horribly, horribly wrong make sure you keep me in mind. I can fix it for you for a good price. 
+
+and by good price, I mean good for me.
+- This sounds like having a 5 year old in the kitchen "helping" me cook. I'd just be wasting so much time teaching them how things work and cleaning up their messes.
+
+This wouldn't even hypothetically help, and that's not even getting into the issues of compounding error/bias by having them help "evaluate" or "clean data"
+- I use AI for coding all the time and I can imagine it filling some of these gaps
+
+Would you have something that did AI generated queries on the data? I've heard of that in azure data bricks but I'm not sure realistically on the quality
+- Yeah that’s a challenge but things so far don’t look too bad so that’s positive, you can get a better idea by checking it out here (https://envole.ai) still early but looks promising!
+- Maybe we speaking over each other because I’m on the same page with you that of course if I wanted one of these things to just code up a model without my supervision that would just be plain stupid and it would be so hard for that model to generalize. Check it out over here (https://envole.ai) to get a better idea, would love to hear your thoughts and continue the discussion afterwards. Love the critic.
+- That would be the idea as the project evolves especially if you connect to a SQL data source, but moreover once your data is indexed that would also be possible
+- That looks like wrapping up ChatGPT into a clean "data science" product. I would in no way want that, no, and am not using LLMs for any of this, nor do I have any desire to do so.
+- It'd definitely be an interesting problem to solve to provide schemas to AI for query generation when all your customers data could vary in structure by quite a long way
+
+I like the idea of it but I'm not sure how reliable it is in reality if I ask a question and then the ai builds its own query from my language input and the schema
+- Alright cool, thanks for the interaction.
+- Yeah sometimes mapping the natural language to say SQL can result in buggy SQL code which can be tricky to work with, but if this interests you stay tuned by joining our waitlist then you can try it for yourself and see if it stands the test 😅

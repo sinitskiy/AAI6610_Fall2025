@@ -1,0 +1,21 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1j42m3i/open_source_emotiefflib_library_for_efficient/
+Title: [Open Source] EmotiEffLib: Library for Efficient Emotion Analysis and Facial Expression Recognition
+
+Content:
+Hello everyone!
+
+We’re excited to announce the release of EmotiEffLib 1.0! 🎉
+
+EmotiEffLib is an open-source, cross-platform library for learning reliable emotional facial descriptors that work across various scenarios without fine-tuning. Optimized for real-time applications, it is well-suited for affective computing, human-computer interaction, and behavioral analysis.
+
+Our lightweight, real-time models can be used directly for facial expression recognition or to extract emotional facial descriptors. These models have demonstrated strong performance in key benchmarks, reaching top rankings in affective computing competitions and receiving recognition at leading machine learning conferences.
+
+EmotiEffLib provides interfaces for Python and C++ languages and supports inference using ONNX Runtime and PyTorch, but its modular and extensible architecture allows seamless integration of additional backends.
+
+The project is available on GitHub: [https://github.com/av-savchenko/EmotiEffLib/](https://github.com/av-savchenko/EmotiEffLib/)
+
+We invite you to explore EmotiEffLib and use it in your research or facial expression analysis tasks! 🚀
+
+Comments:
+- Thanks for this!

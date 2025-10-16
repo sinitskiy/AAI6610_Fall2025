@@ -1,0 +1,19 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/5okg1m/bioinformatics_contest_2017/
+Title: Bioinformatics Contest 2017
+
+Content:
+Bioinformatics Institute, Rosalind and Stepik are organising a Bioinformatics Contest 2017!
+
+Bioinformatics Contest is an intensive programming competition among individuals held entirely online. It consists of qualification round (January 23 — 29) and final round (February 18).
+
+During qualification round you will have a week to solve problems online and earn score points. If you get enough points you will have access to the final round, where you will face more challenging problems to solve within 24 hours. 
+
+If you are interested in Bioinformatics, enjoy solving challenging problems and have some background in Computer Science, Molecular Biology, Genomics and Machine Learning, do not hesitate to join the contest!
+
+Registration for qualification round is now open on Stepik!
+https://stepik.org/course/Bioinformatics-Contest-2017-945/
+
+Details are available at contest.bioinf.me
+
+Comments:

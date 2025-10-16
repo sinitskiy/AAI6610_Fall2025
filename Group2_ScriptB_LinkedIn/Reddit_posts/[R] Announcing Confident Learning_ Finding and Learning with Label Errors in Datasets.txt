@@ -1,0 +1,49 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/drhtkl/r_announcing_confident_learning_finding_and/
+Title: [R] Announcing Confident Learning: Finding and Learning with Label Errors in Datasets
+
+Content:
+Hi, Reddit. I'm excited to share confident learning for characterizing, finding, and learning with label errors in datasets. This is joint work with co-authors Lu Jiang (Google Reserach) and Isaac Chuang (MIT). To promote and standardize future research in learning with noisy labels and weak supervision, I've also open-sourced the cleanlab Python package: [https://pypi.org/project/cleanlab/](https://pypi.org/project/cleanlab/)
+
+**Post**: [https://l7.curtisnorthcutt.com/confident-learning](https://l7.curtisnorthcutt.com/confident-learning)
+
+**Title**: Confident Learning: Uncertainty Estimation for Dataset Labels
+
+**Abstract**: Learning exists in the context of data, yet notions of confidence typically focus on model predictions, not label quality. Confident learning (CL) has emerged as an approach for characterizing, identifying, and learning with noisy labels in datasets, based on the principles of pruning noisy data, counting to estimate noise, and ranking examples to train with confidence. Here, we generalize CL, building on the assumption of a classification noise process, to directly estimate the joint distribution between noisy (given) labels and uncorrupted (unknown) labels. This generalized CL, open-sourced as cleanlab, is provably consistent under reasonable conditions, and experimentally performant on ImageNet and CIFAR, outperforming recent approaches, e.g. MentorNet, by 30% or more, when label noise is non-uniform. cleanlab also quantifies ontological class overlap, and can increase model accuracy (e.g. ResNet) by providing clean data for training.
+
+**Paper**: [https://arxiv.org/abs/1911.00068](https://arxiv.org/abs/1911.00068)
+
+**Code**: [https://github.com/cgnorthcutt/cleanlab/](https://github.com/cgnorthcutt/cleanlab/)
+
+[Top 32 label issues in the 2012 ILSVRC ImageNet train set identified using confident learning. Label Errors are boxed in red. Ontological issues in green. Multi-label images in blue.](https://preview.redd.it/c1l2tu875rw31.jpg?width=4000&format=pjpg&auto=webp&s=bcb6f5d9528e92501278aefa843093880f2ef024)
+
+Comments:
+- How would this work in case of imbalanced datasets where a over/under sampling is applied ? 
+It would affect the joint probability, right ?
+- Mirror: https://web.archive.org/web/20191104143423/https://l7.curtisnorthcutt.com/confident-learning
+- Does it work for regression problems as well?
+- Would this work for multi-label setup ? In that case would the analysis be similar to binary one-vs-all classifier for all the labels ?
+- Isaac Chuang is doing ML now?
+- Nice work. Would be interesting how this compares to more recent works like o2u-net:
+
+http://openaccess.thecvf.com/content_ICCV_2019/html/Huang_O2U-Net_A_Simple_Noisy_Label_Detection_Approach_for_Deep_Neural_ICCV_2019_paper.html
+- I wonder what happens when you apply this to random data, or regular data with random labels. Deep learning has been shown to fit the training set rather robustly even in these nonsense cases (of course, not generalizing to any test set). Would CL be able to notice when it is set to train on a random dataset?
+- Looks like a good read! Definitely will add it to my to-read list.
+- Thanks for your question! The short answer is CL is unaffected by class imbalance except for discretization error. By discretization error, i mean that if you only have 3 examples in a class 'A', and the true probability class 'B' was flipped to 'C' is 0.7... the best you could do with 3 examples is 2/3 = 0.67.
+
+The long answer is: CL takes predicted probabilities and noisy labels as inputs. If you're predicted probabilities are random, then CL can't work. In the theory section of the paper, we prove realistic conditions when CL will exactly find label errors even when there is error in predicted probabilities for every example and class.
+
+If you use tricks to deal with class imbalance when you compute your predicted probabilities (loss weighting, bagging, data augmentation, etc.)... then in practice you should be fine. Similarly, if you have some class imbalance, but it's not so extreme as to produce wonky predicted probabilities, then again in practice you should be fine. For example, some of the classes in ImageNet **training** set have fewer examples, but using CL, we did not observe less accurate label error detection in these classes (verified by humans).
+
+Note predicted probabilities should be computed out of sample. We use four-fold cross-validation in the paper. If you have the computation, you can increase the folds for better results.
+- Thanks for your question. CL works for classification only. However, depending on the granularity you need, you can discretize your targets into m labels. For example, confident Learning works well on imagenet which has 1000 labels. That's fairly granular. If your regression targets were probabilities (bounded between 0 and 1) then it's possible CL could handle up to 3 decimals of target granularity for regression. This is reasonable theoretical conjecture: I have not run these experiments
+
+Throughout our work, we use the term "label"  to refer to a "class label", reserving "targets" for regression target values. And we only deal with noisy "labels".
+- Hi, thanks for the question. While we do not address multi-label in the paper, the [cleanlab python package](https://github.com/cgnorthcutt/cleanlab/) **fully supports multi-label**. In terms of how it works, its more simple than binary one-vs-all because confident learning intrinsically works with multiple labels. The only change needed is a few lines like this `s_filter = np.array([k in l for l in s]) if multi_label else s == k`  where you instead of considering examples with given label k, you instead consider any example that has label k in its set of labels. You can ctrl+f \`multi\_label\` in the codebase for further inspection. In the paper, we presume single-class datasets where multiple labels are handled with the notion of *collisions*.
+- Thanks for the question. With completely random labels, predicted probabilities (assuming some regularization) tend to be more uniform. For most applications of confident learning, empirically (checked on MNIST, CIFAR, and Imagnet) the result is random performance or the prediction all one label. This often also results in edge conditions during pruning like removing all of one class if examples or removing no examples as errors because there is no signal.
+- I see, thanks for your answer and congratulations for the very nice project. I will for sure deep dive more on it when I have more time.
+As you use only per-class probabilities to define the thresholds, I understand that indeed it should not be affected by class imbalance.
+However it is still important to have calibrated predicted probabilities as output, because if not we will not be able to correctly distinguish between noisy and not-noisy examples. Am I right ?
+- Think of it this way. If your predicted probabilities are bad (due to whatever: class imbalance, bad model choice, etc), then even if you have ZERO label errors and don't use CL at all, you'll still have bad predictions.
+- Yep, makes sense for me 😅
+Thanks again for your answer and for opening up this project :)

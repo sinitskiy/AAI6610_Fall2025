@@ -1,0 +1,68 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/196v8lp/data_scientist_ml_engineer_interview_expectation/
+Title: Data Scientist / ML Engineer Interview Expectation 2024
+
+Content:
+How does the interview process for new graduate data scientists compare to that of experienced data scientists (with 2 to 3 years of experience) in well-known, established companies in 2024? Since this field is continuously evolving, I've noticed that some job postings require experience with large language models (LLMs) and hands-on projects.
+
+How much emphasis should I place on various areas such as statistics and probability, data structures and algorithms, machine learning algorithms, deep learning algorithms, concepts related to natural language processing, vision, time series, recommendation systems, and clustering?
+
+Given the challenges of securing interview calls, especially with the need for sponsorship, how should I prepare for these interviews? Any tips and tricks would be greatly appreciated.
+
+Comments:
+- Without knowing the company in particular, here's some general interview advice for DS in 2024:
+
+Yes, LLMs are amazing, yes LLMs are hot right now, and YES they do show up in job descriptions. But in 2024 many jobs aren't actually needing in-depth experience with LLMs. They add LLM to the job description to seem sexy, because every exec is asking their team "what's our AI strategy" and every competitor claims to infuse AI into their products. Also, adding genAI/LLM keywords into a job description is a great way to get people to apply to the job, especially at more boring/traditional/older companies that want to seem hip and cutting edge.
+
+Now, when it comes to the interviews, I've seen that **IF** they ask about LLMs, they'll ask more project-based questions and start casually like "oh you fine-tuned an LLM for fun or in your last work project, that's awesome, how was it?"
+
+Then they'll strategically ask follow-up questions to gauge your depth:
+
+* What challenges did you face with fine-tuning your LLM?
+* How did you evaluate the effectiveness of the LLM?
+* Oh have you heard of RAG? Oh awesome did you try it? Did it help?
+
+Caveat: they won't be asking these casual questions at OpenAI or Anthropic or Google Brain... but 99% of us aren't interviewing at those companies.
+
+For most companies, even in 2024, their DS interviews resort to basics like:
+
+* tell me about regression
+* tell me about L1 vs L2 penalty
+* tell me a bit about the bias-variance tradeoff
+* let's do some Python Data Structures questions or Pandas data cleaning or some SQL window functions depending on the role
+
+And then, they'll ask some more questions based on what you have on your resume:
+
+* Talk to me about the last ML model you deployed...how did you clean the data? why did you choose Neural Networks? how did you handle re-training and model drift?  did your PMs/customers care about explainability of the model, and how did you handle that?
+* Oh did you use Spark.. tell me 2 annoying things about Spark?
+* Oh I see you listed both PyTorch and Tensorflow.. which do you like better and why? How did you get your team to transition?
+
+Shameless plug: for more thoughts on interviews, wrote 301 pages about this exact topic in the book [Ace the Data Science Interview](https://www.acethedatascienceinterview.com/) and made DataLemur to practice [SQL interview questions](https://datalemur.com/questions) for free
+- just know everything about everything and you're good to go
+- Get a good grip on the concepts you have mentioned in the CV and be as authentic as possible.
+- In your interviews, focus on your practical experience with machine learning and any projects you've worked on. Understand the basics well, like statistics and algorithms. Show them how you think through problems and apply your knowledge. For companies needing sponsorship, make sure to highlight what makes you unique. Stay current with trends and maybe try some mock interviews for practice. Keep it real and be yourself!
+- Different companies/sectors/roles can emphasize different things... Just look at jobs you want and see what they ask for?
+- I’ve been giving data science interviews since the last 6 months and haven’t gotten any offers yet. I have 2 years of work experience and grad school. 
+<mini - rant> 
+Given multiple on-site rounds, every employer looks for different DS strong points, I just feel exhausted preparing and going into these interviews.
+There have been times when I have felt my interviews were really good but these companies always find “some candidate better suited”. I don’t understand what exactly are you looking for!!!!
+ I graduate in 2 months and the stress is getting to me. Today I had the first round for an on site interview which was statistics and probability and I feel like I bombed the applied statistics part. 😭😭 the interviewer asked me to derive an estimator for estimating population size and I completely froze and was blank.  there are 3 more rounds for the on site interview, given the competition these days for a single role I just feel so down that I have already lost this opportunity :(((
+- Be absolutely mother-bleeping flexible. Oh a weirdo language like PTX? At least know what that is. Know the company from whence the interview came from. Like everything. Be ultra polite & say "I don't know" early on verbal questions. 
+Yeah, if you haven't just "played" with a local LLM, you haven't kept up. At least in the minds of hiring people. I'm slammed with offers, because anyone knows what I did and also failed on. Also I'm pending on a mega grant for dev work. 
+Yes hiring people see it all, or er their "tools".
+- Karma
+- Best of luck
+- I interview software engineers, applied scientists, data scientists, etc at a FAANG company, upto senior level. At least for my interviews this is fairly accurate. Interviews will typically start with asking you to describe a project and then depending on if I need to check your ML breadth, vs depth, vs a specific subject, I'll ask probing questions.  
+
+Most of the interviews I do end up being pretty conversational where I just ask questions about what you did lol.
+- [deleted]
+- I got your book! It is really nice 👍🏻
+- Your book looks very interesting. Gonna give that a read.
+- Oh wow just literally bought your book Friday and it should be coming in today 😂😂
+- How much do places care about deep knowledge of design of experiments? Is it valued?
+- Hi mate. I am beginner and my main goal is to learn machine learning techniques to build models for sales forecasting. As you are an experienced DS, could you maybe recommend me coursera/udemy courses that will help achieve my goal?
+- 😏
+- Amazing to hear ❤️
+- Love to hear it 🫡
+Lmk if u got any questions
+- For Product Data Science, or roles that mention A/B testing it’s important. Also important for some pharma/med/aerospace jobs where it’s super statistically rigorous and high bar to ship changes

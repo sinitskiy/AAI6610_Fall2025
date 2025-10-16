@@ -1,0 +1,31 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nidsep/r_evaluating_deepfake_detectors_in_the_wild/
+Title: [R] “Evaluating Deepfake Detectors in the Wild”: Fraudster Attacks (ICML 2025 Workshop paper)
+
+Content:
+Hi Reddit! 
+
+Have you ever thought how difficult it is to determine whether a photo is *genuine* or a **deepfake**? You might think discriminative tasks are easier than generative ones, so detection should be straightforward. Or, on the contrary, diffusion models are now so good that detection is impossible. In our work, we reveal the current state of the war on deepfakes. In short, SOTA open-source detectors fail under real-world conditions.
+
+I work as an ML engineer at a leading platform for KYC and liveness detection. In our setting, you must decide from a short verification video whether the person is who they claim to be. Deepfakes are one of the biggest and most challenging problems here. We are known for our robust anti-deepfake solutions, and I’m not trying to flex, I just want to say that we work on this problem daily and see what fraudsters actually try in order to bypass verification. For years we kept trying to apply research models to our data, and nothing really worked. For example, all research solutions were less robust than a simple zero-shot CLIP baseline. We kept wondering whether the issue lay with our data, our setup, or the research itself. It seems that a lot of deepfake research overlooks key *wild* conditions.
+
+**Core issue: robustness to OOD data.**
+
+Even a small amount of data from the test distribution leaking into the training set (say 1k images out of a 1M-image test pool) makes it trivial to achieve great metrics, and experienced computer vision experts can push  AUC to \~99.99. Without peeking, however, the task becomes i*ncredibly hard*. Our paper demonstrates this with a simple, reproducible pipeline:
+
+1. **Deepfakes**. If you don’t already have them, we built a large image-level dataset using two SOTA face-swapping methods: Inswapper and Simswap.
+2. **Real world conditions.** We use small transformations that are imperceptible to humans and that we constantly see in the real world: downscaling (resize), upscaling (with some AI), and compression (JPEG). These are indistinguishable for humans, so detectors must be robust to them.
+3. **Evaluation.** Test model under different setups, e.g.: 1) only real. model have to predict only real labels 2) real vs fake 3) real vs compressed fake ... and others. It sounds easy, but every model we tested had at least one setting where performance drops to near-random.
+
+So we’re not just releasing another benchmark or yet another deepfake dataset. We present a pipeline that *mirrors what fraudsters do*, what we actually observe in production. We’re releasing all code, our dataset (>500k fake images), and even a small deepfake game where you can test yourself as a detector.
+
+For more details, please see the full paper. Is there a silver-bullet solution to deepfake detection? We don’t claim one here, but we do share a teaser result: a promising setup using zero-shot VLMs for detection. I’ll post about that (our second ICML workshop paper) separately.
+
+If you’re interested in deepfake research and would like to chat, or even collaborate – don’t hesitate to reach out. Cheers!
+
+https://preview.redd.it/vi3qxnp38ipf1.jpg?width=6099&format=pjpg&auto=webp&s=55fe99a72bb0614bc560e5553c2eaf20cbd3132c
+
+Comments:
+- Because you use jpeg and downscale attacks, Does that mean resolution offers security, when it comes to the forensic verification of a source? For example, my 4 year old phone camera is 50MP, but there are no generative models that can coherently generate an image that large in the first pass. So I would think if you were evaluating an image that large, it would be able to detect discrepancies between a real and fake image, does that make sense?
+- Great piece! Love how this work bridges the gap between benchmarks and reality. Proud to have you onboard.
+- Error generating reply.

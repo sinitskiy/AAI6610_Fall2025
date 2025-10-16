@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/markrussinovich_the-price-of-intelligence-activity-7363766244971343873-sbSU
+Date: 2025-09-24
+Author: Unknown
+
+Communications of the ACM (CACM) published our article, "The Price of Intelligence", which describes three key risks inherent in LLMs that enterprises must consider when designing and operating AI systems: hallucinations, jail breaks, and indirect prompt injection. The article defines each, explains why they have no 'fix', and gives examples of current tools and techniques that mitigate them: 
+
+https://lnkd.in/gNEE9CKK

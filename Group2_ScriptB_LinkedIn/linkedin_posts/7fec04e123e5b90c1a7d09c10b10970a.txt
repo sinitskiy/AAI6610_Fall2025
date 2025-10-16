@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/vincentpavero_do-you-really-understand-the-probabilistic-activity-7361007311525429249-q4wG
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vincent Pavero的动态
+Vincent Pavero
+
+Co-Founder, CEO @ Homeric | AI-enabled Product & Agile Excellence
+
+1 个月
+
+Do you really understand the probabilistic nature of AI/LLMs?
+
+Yesterday, I posted an image of ChatGPT 5 not being able to assess the number of Bs in "Blueberry". I was surprised to see people reacting that basically said "but for me it works". 
+
+There is no "it works" or "it's bugged" with LLMs. To make it simplistic, an LLM is just a prediction machine that guesses what is the next best character to output. And the context defines the weight or each option. So when the LLM outputs "the sky is []" the character "b" may have 99% chance of being picked. But you could have "g" at 0.5% and "y" at 0.5%. And once in while, someone will be "lucky" enough to get the "y". Once the LLMs is at "the sky is y[]", it may be with yellow because it knows it should be a color. And this how it hallucinates. 
+
+Hallucinations are not bugs, they are the direct consequence of their probabilistic nature. With regular code, one input = one output, with LLMs, one input = infinite number of outputs, but with different odds. 
+
+And there is nothing secret about it, ChatGPT can be very transparent about it. And it can keep digging in what will look like uncomparable BS (pun intended, after the Bs in Blueberry 😅 )
+
+So now you may ask, how is that possible to get the same responses over and over again thousands of time? It's because ChatGPT is not just a LLM anymore, or a "model". It's became a system with myriad of tools and multiple models that try to combine the best of generative content with the consistency of algorithms. When asking some math questions for example, ChatGPT doesn't predict anymore, it detects you expect a calculation and will feed a calculator tool to get the same result all the time. 
+
+I believe it's important to understand the different between model and system. It will be helpful to maximise benefits from Claude, ChatGPT, 

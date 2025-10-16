@@ -1,0 +1,31 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1799otn/r_decoding_llm_uncertainties_for_better/
+Title: [R] Decoding LLM Uncertainties for Better Predictability
+
+Content:
+Hi all,
+
+Building off our last research post, we wanted to figure out ways to quantify "ambiguity" and "uncertainty" in prompts/responses to LLMs. We ended up discovering two useful forms of uncertainty: "Structural" and "Conceptual" uncertainty.
+
+In a nutshell: Conceptual uncertainty is when the model isn't sure what to say, and Structural uncertainty is when the model isn't sure how to say it.
+
+You can play around with this yourself in the [demo](https://uncertainty.demos.watchful.io/) or read about it in more detail in the [blog post](https://www.watchful.io/blog/decoding-llm-uncertainties-for-better-predictability)
+
+Comments:
+- Cool work.
+
+Minor nit: Please be consistent about the ordering of "Conceptual uncertainty" and "structural uncertainty." And perhaps consider a new name for "structural uncertainty". "Communicative uncertainty?"
+- Love this investigation. This gave me a new perspective on something I just couldn't quite put my finger on.
+- This is a good/standard trick in ML! One can even use this to detect potential hallucinations within LLMs. I'm surprised that no one has tried this before.
+- The repo link is dead.
+
+[https://github.com/Watchfulio/uncertainty-demo](https://github.com/Watchfulio/uncertainty-demo)
+
+Also: when I use your demo link, what actual LLM am I using?
+- Good note! We had the same thought re: structural uncertainty and weren't really able to come up with something that we felt "fit well". We'll continue to noodle on it.
+- Yeah, we've seen vanilla entropy/perplexity measures used - but we found that they only tell part of the story. E.g: the LLM might spread its logprobs evenly across a set of tokens that don't really impact the underlying meaning of the response. Entropy is high, which you'd imagine implies core uncertainty at that position - but splitting the uncertainty between "structural" and "conceptual" ended up aligning a lot better to human intuition.
+- Ah, sorry -- just realized the repo was private. Just made it public.  
+
+
+The demo is wired up to gpt-3.5-turbo-instruct. You can directly apply the approach to any LLM so long as it offers logprobs of top\_n sampled tokens.
+- Quick question, any relation to aleatoric and epistemic uncertainty?

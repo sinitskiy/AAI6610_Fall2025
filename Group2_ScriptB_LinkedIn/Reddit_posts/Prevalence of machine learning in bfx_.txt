@@ -1,0 +1,35 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cgw2wp/prevalence_of_machine_learning_in_bfx/
+Title: Prevalence of machine learning in bfx?
+
+Content:
+I’m seeing mixed results online. I think with the recent surge of NLP and DL we will see more of a mixture happening. Thoughts?
+
+Comments:
+- Lower than what you’d expect. Buzzwords all over the place, in academia and pharma alike, usually they just don’t have enough data, or (worse) zero data management in place so it’s a jungle. Very common that data scientist and machine learning engineers are hired and end up doing data engineering.
+- Machine learning has already been used in bioinformatics for years…
+- I'm unsure what your question is about.  
+  
+Machine learning isn't new in bioinformatics. My first machine learning class was in ... 2018? 2017? Meaning, it was common enough then that there were classes outside of academia on it. Machine learning is being used for lots of things from gene annotation to identification of targets for cancer therapeutics. A lot of python packages have tensorflow as a dependency.
+
+chatgpt (and the like) can be helpful with troubleshooting many of the bioconductor packages, although it appears to struggle a bit with nextflow and some newer versions of these bioconductor packages. Still, I think most bioinformatics classes (and computer science classes) are introducing tools like chatgpt to students. (Still hasn't replaced reddit it seems.)
+
+AI is being used to generate text for papers  
+  
+Here's a preprint about chatgpt language in papers: [https://arxiv.org/abs/2403.16887](https://arxiv.org/abs/2403.16887)  
+  
+The AI generated summaries on bioriv are very popular: [https://connect.biorxiv.org/news/2023/11/08/summaries](https://connect.biorxiv.org/news/2023/11/08/summaries)
+
+AI peer review is on the rise: [https://www.nature.com/articles/d41586-024-01051-2](https://www.nature.com/articles/d41586-024-01051-2)
+
+That being said, writing papers isn't my main responsibility, but I'd probably publish more if I could find some tool that would write some introductions and other sections in a worthwhile manner.
+- This is the best example I’ve seen of true DL in BFX. The authors made an LLM trained on genome sequences. They used it to identify variants with deleterious effects, since those ones are very unlikely to be predicted by the LLM (assessed by masking each position in turn and predicting using the surrounding sequences). 
+
+Practically speaking, it performs highly accurate variant effect prediction due to the power of LLM. 
+
+https://www.biorxiv.org/content/10.1101/2023.10.10.561776v2
+- Biological data is multimodal, large, complicated, and often poorly curated, so a large portion of bioinformatics is just data wrangling. Most of this doesn't benefit from machine learning. That being said, ML-based methods are pretty widespread. Some of the biggest examples off the top of my head are DeepVariant, Nanopore base callers, and AlphaFold. Some more niche/domain specific methods (very strong personal bias here) include Neural ADMIXTURE, BPNet (and relatives), Basenji/Enformer/Borzoi, and DeepSEA.
+- When I was applying for jobs last year, the in-demand skills mostly related to analysis for various -omics types. My ML-centered background was next to useless.
+
+
+There might be some scientist roles focused on ML, but those are relatively rare and tend to have high requirements.

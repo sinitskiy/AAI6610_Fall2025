@@ -1,0 +1,61 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18yf801/applying_for_data_analyst_roles_as_data_scientist/
+Title: Applying for Data Analyst Roles as Data Scientist: A Wise Career Move?
+
+Content:
+I am presently employed as a Data Scientist at my current company, and I find that certain aspects of the job are less than ideal. With over 3 years of experience in this role, I haven't identified clear career advancement opportunities, and my learning curve has slowed. Consequently, I've been exploring more promising positions with the Data Scientist title elsewhere. However, the job market is currently sluggish, and the requirements are particularly high, especially in terms of education. Recognizing the need to enhance my qualifications, I've decided to pursue a Master of Science degree in Data Science, given my background in economics.
+
+In my quest for a better work-life balance while obtaining my master's degree, I've considered exploring roles as a data analyst. Some of these roles seem appealing due to their lower workload expectations (although I'm uncertain about this aspect) and aligning with my skill set. However, I have a strong affinity for the machine learning component of my current role. I'm pretty up to date with recent advancements like training my own LLMs  and diffusion models, and I've achieved commendable results in  international machine learning competitions etc. 
+
+The dilemma I face is whether it would be a wise decision to step back from my current Data Scientist title and venture into analytics roles for a while. These roles resonate with me, particularly because I enjoy working with tools like matplotlib, seaborn, and plotly etc., although I lack experience with Business Intelligence tools. This shift would provide me with a more manageable workload for pursuing my master's degree. But, I'm uncertain whether it's advisable to persist in seeking an appropriate Data Scientist role in the market. Any guidance on this decision would be greatly appreciated.
+
+Comments:
+- If you want to do DS then moving out of DS is a bad idea. Working and doing school full time is also a bad idea. Can you do part-time? Unless you go to a top school I don’t think they’re going to teach you what you’re seeing online. They’re going to teach you what people were doing 5 years ago which is quickly becoming irrelevant.
+
+DS as we know it is going away and shifting towards DE and MLE. Data analytics will always be there. I think you have to choose if you want to stay in an analytical role or go all in on tech.
+- I am curious OP, did you use ChatGPT to write the question? 
+
+No judgement, English is not everyone's first language and using a tool to get your point across is completely fine. I am just curious and trying to understand how ubiquitous it's usage is.
+- Does it pay more?
+
+Does it offer better WLB? 
+
+Is it in a better location with fewer career dis utilities, better environment, and more opportunities for growth beyond the current level?
+
+Are the coworkers smarter than you?
+
+Is the company more stable and able to offer higher career growth potential?
+
+Is their dev support better making for a better work experience (I.e. not waiting on IT to drag ass on everything, complain, and generally stonewall requests for data and tooling)? 
+
+Is the broader domain more interesting and provide better fulfillment (like helping human society improve vs tricking addicted preteens into clicking more ads targeting their insecurities about their appearance and socioeconomic status)? 
+
+Better trajectory for retirement?
+- It will hurt your DS career but help your data career.
+
+It depends on which career is more important to you. No real right or wrong answers.
+- Nah fam. Grass is not always greener. Get the work experience on your resume as a "Data Scientist" because HR representatives may not know the difference and only look for "years of experience".
+- I wonder often whether Data Scientist is the right or Data Analyst. I enjoy exploring data and answering questions but predictive analysis and forecasting seems interesting.
+- You could not put the DA role on your CV and just list the masters for the time period.
+- Are we just using chatgpt for things like reddit posts now ? 
+
+OPs response to top comments vs other comments are also so weirdly different in terms of format , punctuation and syntax
+
+Wtf person, just talk normally. This isn't an sop review site.
+- Its a bad idea unless you plan to merge into product management later.
+- All The visual, áudio and textual industry, considering data, All Will be replaced by AI
+- i am also new as a self learner, i am looking answer that people wrote it.
+- What’s DE and MLE? Sorry I’m new
+- Not a good idea according to me
+- Thank you for your response. It's an interesting perspective, I must say. However, I admit my ignorance when it comes to higher-level data science programs. Wouldn't they typically involve exams covering subjects such as algebra and differential equations—more theoretical aspects—before delving into algorithms? I understand the basic principles of how they operate, but do you think I would need to study concurrently while working in such programs?  
+
+
+Anyways is leaving DS to get back stronger such a bad idea?
+- Wait why is DS moving away? It’s my interest right now as a freshman in college
+
+How similar are data analytics and science also? If I go into data science, is the transition to analytics easier than the other way around? As for machine learning, can you explain in simple terms what that is? I know it’s in the field of data science, and I like statistics and I’m decent at math, so if DS isn’t an option given the industry, MLE or DE might also be an option
+- Yes and no. I didn't use it to create the questions, I just wrote down my thoughts randomly and fast. Then I asked llm to covert it to a readable format. It seems that it changed the phrasing a lot to it's standards :)
+- Some of them unknown to me but I think it's closer to yes for many for your questions...
+- I mean AI is helpful assistant for these tasks but I don't think they're going to replace professionals in short-mid term...
+- So what you’re saying is the future is just a bunch of overpaid weebos jacking off to AI generate waifu porn in their moms basement and everyone else just serving as medical test subjects and space test monkeys for Musk and friends mars mission and immortality projects?
+- Entire industries (whatever you mean by that) replaced? In 200 years, maybe

@@ -1,0 +1,73 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/thmfgd/nondiscrete_sample_classification/
+Title: Non-discrete sample "classification"
+
+Content:
+*(I wrote this post initially for* /r/machinelearning *but it got removed. I would have written it differently for* r/bioinformatics *since I figure most of you know what flow cytometry is, but it took a while to write and I don't want to re-write it, but distilling it down to the principles was a fun exercise)*
+
+&#x200B;
+
+I'm  a biologist, and I have a problem with a very common analysis done in  my field. We often classify cells by unique profile proteins they  express. Cells that are high in protein A but low in B may be called  "Type 1", cells low in protein A but high in protein B may be called  "Type 2", cells high in both A and B "Type 3", and cells low in both "Type 4".
+
+Sometimes this works  well and cells are clearly one type or the other. But unfortunately nature doesn't care about our desire to neatly classify things, and I believe that cell identity exists on a spectrum. Protein expression  isn't all or nothing, it's effectively a continuous variable. There are  cases where some cells are probably actually "Type 1", some are actually "Type 2", but some meaningfully exist as "somewhere between Type 1 and Type 2". And they can slowly shift from one type to another.
+
+Here's an example where this sort classification works well. CD3 and NKG2s are proteins. Each point represents a unique cell. The X and Y coordinates of each point are the amount of those two proteins measured in that cell.
+
+&#x200B;
+
+https://preview.redd.it/socidcjfd9o81.png?width=288&format=png&auto=webp&s=f4946bdef3f1424f13da8d89c947fcaeaa382ffb
+
+But what about in scenarios like this?
+
+&#x200B;
+
+https://preview.redd.it/9wszszcgd9o81.png?width=207&format=png&auto=webp&s=1b7aa8dea683f85e6b3026b96ea660c24fcced72
+
+Note  the log scale. The protein being measured on the Y axis varies by over 4  orders of magnitude. Cells toward the top are clearly different than the cells on the bottom. But what about the cells in the middle?
+
+(Worth  noting this is a simplified example and the data can be n-dimensional. The tool I show here can measure over a dozen proteins at once in a  cell, and other tools can measure the level of virtually every protein in each individual cell)
+
+In the typical analysis you would use a population of control cells that are negative/low for the X and Y axis proteins to set the threshold for what  is "negative" for the those proteins, and anything above that is  considered "positive", giving a clean classification into 4 different  types of cells. This is called "gating".
+
+But I don't buy this.
+
+Should we really accept that a cell making 0.1% more of the Y axis protein is categorically different than one making 0.1% less just because "we have to draw the line somewhere"?
+
+I'm curious if there are any tools/analyses that can help address this problem. I'm not even sure if machine learning is even the most appropriate tool to use to address this. My initial interest was using clustering algorithms to identify cell populations rather than drawing boxes by  hand, but the discrete categorization it produces is still not a satisfying solution for my second example.
+
+Worse I can't even tell you what I would like my desired output to look like, but generally you want to know the what unique populations are present and in what proportion. For example:
+
+1)A viral infection may be indicated by a higher proportion of cell Type 2 than normal
+
+2)  In manufacturing cells for use in T cell therapies, you may have a  release criteria saying that "the product must be at least 95% T cells".
+
+3) You may analyze cells biopsied from a tumor and measure the amount of a  protein that confers resistance to chemotherapy. Not all cancer cells,  even from the same tumor, are the same. The 5% of cells that express a  protein that confers resistance to chemotherapy may survive treatment and be  responsible for relapse.
+
+In the  case of example 3, this could drive a treatment decision. A clinical  protocol may call for Chemotherapy A for tumors that are <5% positive  for the resistance gene, and Chemotherapy B for tumors that are >5%  positive for the resistance gene. This is where shifting that line can  really matter!
+
+One idea would be  to assign a weight/probability to each cell to belonging to a particular  category rather assigning it to a single class, and then summing those  weights across the 4 populations. We may not care about what any  individual cell is, but rather use it as a tool to define the disease  state we are seeing.
+
+**I  suppose the useful outcome would be a measure that tells you "There is  an 80% probability that >5% of cells belong to the class positive the  resistance gene".**
+
+Are there any approaches tailored to this sort of output?
+
+Sorry  for the rambling question. I'm no expert in this, but if nothing else I  enjoy the process of thinking about the problem and learning the tools  available to address it.
+
+Thank you!
+
+Comments:
+- Okay, non-exhaustive answer but it's a start.
+
+For unsupervised machine learning [UMAP+HDBSCAN](https://umap-learn.readthedocs.io/en/latest/clustering.html) is pretty sick and can give you confidence in its clustering i.e. you can specify how conservative you want it to be in refusing to classify points. 
+
+Alternatively, Gaussian Mixture models are cool and also not that difficult to interpret. They are nice if you know how many clusters you expect and also give you soft classification i.e. probabilities. Sklearn has a good implementation. 
+
+I think it's actually a really nice problem to start with some pretty cool machine learning.
+- Yes this is called unsupervised machine learning, where you employ an algorithm to categorise data without a ground truth (if you had ground truth it would be supervised machine learning, a simpler task). 
+
+Your unsupervised machine learning classifier can report the confidence value for each cell, so you can only take cells which are confidently type 1 or 2 and reject others. That said, if your data is one dimensional (say just the Y axis) then this process is effectively just rejecting cells that are between the two clusters. You don't need a classifier algorithm for that; you could simply draw two lines instead of one, and reject any cell between the lines. 
+
+The benefit of a machine learning classifier is that it can take into account multiple variables, as many as you want really.
+- Well, this is why classification error is a thing.  How do you improve classification error?  Either use better markers or more markers or better methods (which can really only be applied if there are more markers).
+- You can absolutely do a 1-D Gaussian Mixture Model instead of drawing lines in this case too.
+- Yes exactly, the gaussian mixture model will place the lines (so to speak) for you.

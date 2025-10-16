@@ -1,0 +1,50 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/185kaq/trying_to_teach_myself_immunology_as_it_relates/
+Title: Trying to teach myself immunology as it relates to cancer research- halp?
+
+Content:
+*background that you don't have to read if you get bored easily*
+
+I'm an undergrad premed student, and through various machinations I managed to get an interview to be an undergrad research assistant at a highly-regarded cancer research and treatment institution. I thought the initial interview went horribly, because I am currently in Bio II- Biological Diversity, and got a serviceable but very general overview of cellular processes in Bio I. This made for a rather unpleasant series of "Well, ok, so you know cytokines?" "Ummm... sort of? They... signal for stuff?" "What about what B cells do?" Errmm." "HER2?" "Umm." and so forth.
+
+Nonetheless, for some reason I got a followup interview, so maybe they're willing to ignore my current all-encompassing ignorance, or they just didn't notice. I'd like to make a marginally better impression this time around (I had 12 hours warning for the first interview, and two tests the next days, which is why I went in not having read anything much), and also knowing at least enough of a framework to be able to understand what it is they're researching.
+
+*end background*
+
+
+I've got five days to read books and articles about the immune system and how it relates to anticancer research. I don't expect to learn the immune system in, you know, less than several months (mother of god it's complicated, and I have a full class load), but I would like to have a basic starting point, geared more towards as it relates towards cancer research. Or at least know some of the words they are using, whatever I can manage. I'm smart, I'm just fairly ignorant on this particular subject at this particular instant, and I would like to get started on fixing that.
+
+So, the point of all this- keeping in mind that I don't have much of a background in... anything, really, and might require a fair amount of background research just to understand some of the more advanced texts out there, does anyone have any suggestions for books or online resources I could check out? I searched and found suggestions for a book called "How the Immune System Works," by Sompayrac. I also found a number of lectures on YouTube geared towards generalities about the immune system. Any other suggestions, or ideas about what specific parts I might want to focus on (given that I would like to know it as it relates to cancer research)? Suggestions for making a good impression for the interview? Really, anything would be greatly appreciated.
+
+Thanks!
+
+
+**tl;dr- Undergrad research assistant opportunity. Five days to get started on learning how cancer relates to the immune system. Don't need to be PhD level, but probably should at least know what the words they use, mean. Reading material suggestions?**
+
+Comments:
+- Read the last couple of papers put out by the laboratory and try to understand them. If you have questions about them then bring them up in your interview. Make a suitable effort, you won't learn immunology in 5 days, but you can at least begin to appreciate what they are focusing on.
+- I have the Sompayrac book and it's very good for beginners. It explains the broad scope of the immune system without containing a whole lot of detail. No comprehensive diagrams with dozens of arrows. It had to be really difficult to write something that looks like a textbook but contains so few details.
+
+It contains one chapter about cancer, toward the end.
+
+Cancer immunology is even less intuitive than regular immunology, because in addition to all the different subtypes of lymphocyte and myeloid cell, the cells change once they enter the tumor microenvironment. And different types of tumors have different pro-inflammatory or anti-inflammatory effects on, for example, a macrophage.
+
+A lot of cancer immunology is geared about generating CD8 T cells that target a particular tumor antigen, so in the limited time available you might focus on learning about the different stages in the life of a CD8 T cell.
+- It seems obvious, but just read the first few chapters of an immune system book. They should cover: an overview, cytokines, innate immunity, adaptive immunity. Then read the chapter on cancer immunology. Kuby and Janeway both have great textbooks out there.  
+  
+When I took an immunology course, we used Peter & Parham's "The Immune System," which was a great book. The first three chapters are introductory, and the last chapter is a fairly simple cancer immunology overview.  
+  
+I think you'd be better off with a broad understanding of several key terms/concepts (e.g. ssbugle mentions the Rous Sarcoma Virus, which is very important) rather than excruciating detail on a few topics (e.g. the EGF-Ras-Raf pathway).
+- Well, I may be completely off base here, but I figure I might as well throw out some ideas and you can decide if they can help you learn some information. Let me also preface this by saying that I am also an undergrad student and these are a few things we have discussed in my Biology of Cancer class.
+
+First, I would try to learn about oncoviruses. Some of the biggest ones we talked about were the Rous Sarcoma Virus (RSV) in chickens and how it descended from ASLV and also HPV because after prolonged and persistent exposure can cause cervical cancers. 
+
+I would also say that learning a bit about some pathways would be beneficial. Basically what you have to understand, in most cases, a receptor (many times a receptor tyrosine kinase) will be activated by the binding of a ligand. This also causes the receptor to recruit other protein domains that will either function as transcription factors, growth factors, or they will recruit other proteins that activate even more proteins in a pathway - basically a cascade of activation. 
+
+You mentioned cytokines in your post, well one pathway that deals with cytokine receptors is the Jak-Stat pathway. It might be worth looking over to see how the cytokine receptors function. 
+
+One last bit of input I can offer is the idea of how some individuals can become immune to various cancer treatments. If you consider breast cancer, for instance, one of the drugs prescribed to many individuals is Tamoxifen. Tamoxifen works to block estrogen receptors so estrogen cannot bind and express transcription factors. Some people form an immunity to this drug and they still develop breast cancer. This might be due to another pathway stepping up to cause the same effect when estrogen is present or there may be other explanations, like maybe Tamoxifen causes the activation of another protein pathway. 
+
+Again, I do not know how helpful all this was, but I sure hope it helped a little bit. Good luck with the interview and studying!
+- And if you can't understand the details of those papers (it can be near-impossible if you've never encountered the experimental techniques before), search Pubmed for a review article about the topic and understand that. Or a book chapter reviewing the topic (Google Scholar might be a better bet than Pubmed for finding book chapters).
+- That was what I was running into- what is this thing, and what did they do to it, and why did it do the thing that they say it did rather than whatever else it was supposed to do (and I don't know what that was, either). Looking up the words and ideas I didn't know turned into adventures down the rabbit hole of having to look things from *those* up, and so on. So I think my goal is going to be to get an overview of how things work, on a broad level, and then try and apply that to understanding what they're doing in particular at their lab.

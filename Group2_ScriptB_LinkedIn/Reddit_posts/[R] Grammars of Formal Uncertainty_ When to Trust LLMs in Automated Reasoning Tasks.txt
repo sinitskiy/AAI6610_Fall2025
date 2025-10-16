@@ -1,0 +1,11 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1kwk6zg/r_grammars_of_formal_uncertainty_when_to_trust/
+Title: [R] Grammars of Formal Uncertainty: When to Trust LLMs in Automated Reasoning Tasks
+
+Content:
+Large language models (LLMs) show remarkable promise for democratizing automated reasoning by generating formal specifications. However, a fundamental tension exists: LLMs are probabilistic, while formal verification demands deterministic guarantees. This paper addresses this epistemological gap by comprehensively investigating failure modes and uncertainty quantification (UQ) in LLM-generated formal artifacts. Our systematic evaluation of five frontier LLMs reveals Satisfiability Modulo Theories (SMT) based autoformalization's domain-specific impact on accuracy (from +34.8% on logical tasks to -44.5% on factual ones), with known UQ techniques like the entropy of token probabilities failing to identify these errors. We introduce a probabilistic context-free grammar (PCFG) framework to model LLM outputs, yielding a refined uncertainty taxonomy. We find uncertainty signals are task-dependent (e.g., grammar entropy for logic, AUROC>0.93). Finally, a lightweight fusion of these signals enables selective verification, drastically reducing errors (14-100%) with minimal abstention, transforming LLM-driven formalization into a reliable engineering discipline.
+
+Comments:
+- This paper bridges the gap between probabilistic LLMs and deterministic formal verification by quantifying uncertainty in generated formal artifacts.
+- Could I get an ELI5?
+- Wow Amazing work. A nice bridge of probabilistic grammar and LLMs . Didn’t see this coming. We should have this for computer vision stuffs too.

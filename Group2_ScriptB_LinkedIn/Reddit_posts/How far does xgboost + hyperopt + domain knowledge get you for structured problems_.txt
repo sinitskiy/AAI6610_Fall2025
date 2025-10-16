@@ -1,0 +1,26 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/bqml0x/how_far_does_xgboost_hyperopt_domain_knowledge/
+Title: How far does xgboost + hyperopt + domain knowledge get you for structured problems?
+
+Content:
+I feel like solid domain knowledge + plug-and-chug with xgboost + hyperopt, along with maybe looking through SHAP dependency plots to build an intuition for the model and engineer features might be a very reasonable baseline for churning out reasonably good models. What might you add to this standard toolkit? Bootstapping for model uncertainty? Where is it really lacking? What are your bread and butter ML tools?
+
+Comments:
+- [deleted]
+- * Standardized preprocessing functions/techniques (if applicable)  
+* Standardized templates for preprocess, model build, model validation, putting model into production.  
+* Standardizing figure to be output for presentation  
+* Ensuring everything is reproducible and easy for another analyst to run  
+  
+All of that is the easy part. Hard part is ensuring that once it's production, the data you are applying the model too is the exact same as the data the model was built on. Then making sure the model is easy to use in production if I have to pass it off to other teams. Then just knowing when you need to rebuild the model and measuring model efficiency.
+- I recently made an xgboost model based on a kernal I found on kaggle.  It's interesting to iterate and add/take out features to see how the accuracy rate and confidence tables pan out but I have no idea really how to interpret the model.  Does anyone have advice - resources to look at that help with this?
+
+That's what I feel is lacking with xgboost but maybe just ML in general (also not an expert).
+- Your submission looks like a question. Does your post belong in the stickied "Entering & Transitioning" thread?
+
+We're working on [our wiki](https://www.reddit.com/r/datascience/wiki/index) where we've curated answers to commonly asked questions. Give it a look!  
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/datascience) if you have any questions or concerns.*
+- What would you do instead? Just xgboost + cross validated parameter guessing?
+- What toolkits do you recommend for this? What do you use the matrix library for? I always felt that was a more under the hood, implementation kinda deal.

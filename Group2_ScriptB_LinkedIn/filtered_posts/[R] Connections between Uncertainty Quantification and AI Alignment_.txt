@@ -1,0 +1,24 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1aib9rw/r_connections_between_uncertainty_quantification/
+Title: [R] Connections between Uncertainty Quantification and AI Alignment?
+
+Content:
+Hi folks,
+
+&#x200B;
+
+as the title suggests, I am looking for pointers (research papers  or brainstorming ideas) that connect these two areas of ML.
+
+for those not familiar with alignment, here's the most distinctive paper:
+
+[https://arxiv.org/pdf/2203.02155.pdf](https://arxiv.org/pdf/2203.02155.pdf)
+
+&#x200B;
+
+thanks!
+
+&#x200B;
+
+&#x200B;
+
+Comments:

@@ -1,0 +1,57 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1namvsk/why_language_models_hallucinate_openai_pseudo/
+Title: Why Language Models Hallucinate - OpenAi pseudo paper - [D]
+
+Content:
+Hey
+Anybody read this ? It seems rather obvious and low quality, or am I missing something ? 
+
+https://openai.com/index/why-language-models-hallucinate/
+
+“At OpenAI, we’re working hard to make AI systems more useful and reliable. Even as language models become more capable, one challenge remains stubbornly hard to fully solve: hallucinations. By this we mean instances where a model confidently generates an answer that isn’t true. Our new research paper⁠(opens in a new window) argues that language models hallucinate because standard training and evaluation procedures reward guessing over acknowledging uncertainty.
+ChatGPT also hallucinates. GPT‑5 has significantly fewer hallucinations especially when reasoning⁠, but they still occur. Hallucinations remain a fundamental challenge for all large language models, but we are working hard to further reduce them.”
+
+Comments:
+- Actually, it’s a million dollar optimization problem. The model is being pressured to answer everything. If we introduce idk token then it might circumvent the reward model, become lazy and don’t answer most queries that it should. I know a bunch of models that try to solve this issue. Latest one was gpt-5 but most people felt itself lazy. It abstained much more and answered way shorter than predecessor which created a lot of backslash. But they are others who performed better.
+- TLDR: 
+
+> hallucination-like guessing is rewarded by most primary evaluations. We discuss statistically rigorous modifications to
+existing evaluations that pave the way to effective mitigation.
+- I've mentioned this before, but I wish there was more research on bitemporal probabilistic knowledge graphs (for RAG). I toyed for a few hours with structured output to see if I could get an LLM to convert arbitrary information into such a format, but it seems to require a lot of work. Getting all the entities and relationship perfect probably requires a whole team. (I keep thinking one should be able to feed in a time travel novel and build a flawless KG with all the temporal entities and relationships, but actually doing that in practice seems very difficult). This KG would contain all of Wikipedia, books, scientific papers, etc preprocessed into optimal relationships. Obviously this pushes the data out of the model, but it would also be used during training as a reinforcement system to detect possible hallucinations.
+
+Personally I just want such KG stuff as I think it's required for future embodied/continual learning stuff where KGs act as short-term memory. (Obviously not new ideas as there are tons of derived papers from MemGPT and such which cover a lot of memory ideas). Having one of the larger companies invest the resources to build "complete" KGs and test retrieval would be really beneficial. It's one of those data structures where as the LLM improves it can be used to reprocess information and attempt to find errors in the KG. Granted utilizing this for actual queries, even optionally, would have a cost. I think people would pay the extra tokens though if they can source facts. (Imagine hovering or clicking a fact-specific information and rapidly getting all the backing references in the KG. "Did Luke in Star Wars ever go to Y planet?" and getting back "Yes, X book, page 211.").
+- I tend to see OpenAI now as just a BS factory as that article is just a response to much of the papers Anthropic and others published. The compute needed to stop hallucinations is even bigger than current scaling problems, supposedly...
+- Many great comments here, but I thought of asking the author and OpenAI what the deal is. If anybody wants to see if they reply:
+
+https://x.com/andrewgabriel27/status/1964786485439455499?s=46
+- I had the same reaction. The “new finding” reads like a restatement of what a lot of people have been pointing out for years. The problem isn’t just that models guess, it’s that their training incentives reward coherence over fidelity. If saying “I don’t know” were valued as highly as producing a fluent yes/no, you’d see fewer hallucinations.
+
+That’s what some of us have started calling fidelity drift: the system drifts from truth-preserving behavior toward output that looks convincing. Unless the evaluation protocols change, we’ll keep seeing papers that sound like breakthroughs but don’t touch the deeper issue.
+- The abstract blaming the state of hallucinations on improperly designed benchmarks rather than anything internal is very “hey look over here”
+- The timing makes me think OpenAI was trying to get ahead of the trending paper out of Hassana Labs: "Compression Failure in LLMs: Bayesian In Expectation, Not in Realization"
+
+[https://www.linkedin.com/posts/leochlon\_paper-preprint-activity-7369652583902265344-tm88?utm\_source=share&utm\_medium=member\_desktop&rcm=ACoAABfybmUBtcCeCh71G2PYshjNzpnJp0uiayk](https://www.linkedin.com/posts/leochlon_paper-preprint-activity-7369652583902265344-tm88?utm_source=share&utm_medium=member_desktop&rcm=ACoAABfybmUBtcCeCh71G2PYshjNzpnJp0uiayk)
+- Yeah, it’s not really new, but they’re framing it around how training rewards guessing instead of admitting uncertainty. Feels more like a way to explain why hallucinations persist than a big breakthrough.
+- Hallucinations are just failed generalization.
+
+The irony is that generalization, which is good for inference, can improve with *less* training rather than more depending on the context. Overtraining can make a neural network rigid and brittle, so reducing nodes can sometimes help in that situation.
+
+But if you're dealing with the rarity of an out-of-distribution situation, there is little you can do with generalization to help.
+- no matter how much work they do, I don't believe it's possible to not hallucinate a model. It could be more precise, but it's impossible without hallucinations.
+- Not sure what value this paper adds
+- Error generating reply.
+- LLM hallucination is something you have to counter whenever you are engineering AI products. One quick and straightforward way to reduce hallunications are with RAG. Provide necessary context to the LLM and ask it to generate content based on the context. We can also add citations in responses - citing which part of context/source was responsible for the generation. This improves the credibility of responses. Recently, we implemented the Hybrid RAG approach to reduce AI hallucination in an AI twin platform we helped build at KeyValue.  
+If you are curious to know more, please head over to the [blog](https://www.keyvalue.systems/blog/hybrid-rag-architecture/) I have written.
+- much of it feels more like hype than real progress. The recent response to Anthropic's papers on addressing AI hallucinations makes me wonder if the focus has shifted towards handling potential issues rather than pushing new developments forward.
+- The issue is that it’s hard to say if the model even knows it’s wrong. And if it does have an inkling it’s wrong, how does it know this factual statement is more correct than a naturally entropic sentence such as “Einstein is a …” where there are more than one “correct” continuation?
+- Hallucinations are a pretty straight forward result of the generative nature when doing supervised training. You just generate likely samples wether or not this sample is true or false is never explicitly considered in the optimization. In many cases during training questions aren't even answerable at all with a high certainly, due to missing context that the original author might have used. So guessing e.g. paper titles that fit a certain structure, real or not is an obvious consequence.
+
+Rlhf in theory has a lot more potential to fact check and reward/punish the model. But this has a few issues as well. First of all the model can get lazy, as saying idk without being punished. Using task dependent rejection budgets to limit the rejection rate to one being close to the one expected given the task and context might be possible (rejection budget can be lowered if too many answers are hallucinations and increased if too much is rejected). 
+But often times rlhf is not directly applied, instead a reward model is used. And here we need to be careful again to not train our reward model to accept plausible sounding answers (aka hallucinations), but instead mimic the fact check process done by the humans, which is really really hard. Because if we don't give the reward model the ability to e.g. search for a paper title and it just accept ones that sound plausible we have hallucinations again.
+- The popular conceptualization of what's happening as "hallucination" has, IMO, been extremely harmful on many fronts. It's just a poor conceptualization that strongly pulls one towards lines of thought and understanding that are fundamentally misaligned with the way these models actually behave. The outputs are *all* "hallucinations", sometimes they just happen to be right, or to translate to text that refuses to answer a query that would have otherwise resulted in a non-factual answer.
+
+And while you can certainly train a model to output confidence estimates alongside its normal output, and you can carefully calibrate these estimates so that "in expectation" they more or less align with the probability that a given output will be labeled as accurate, first of all, all you've done is double the spots where "hallucinations" *will* occur (guess what, it still is just "hallucinating" all regular outputs *alongside* all confidence estimates). Plus, for an agent as general as something like ChatGPT, it is evidently just a straight up impossible problem to eliminate (as opposed to merely "somewhat reduce") non-trivial errors in judgement (hint: anytime somebody claims something is impossible in CS, the halting problem is probably right around the corner)
+
+And even if we assume you've magically got a 100% accurate confidence estimate, it's still a bog-standard ROC curve situation you're faced with: whatever confidence threshold you arbitrarily pick as a cutoff, you will be getting significant amounts of both false positives ("hallucinations") *and* false negatives (refusals to answer even though the answer would not have been a "hallucination"). You can trade off between these as you see fit, but there is no magic way to eliminate false positives and false negatives by "just doing this one smart trick". Again, this conceptualization of something basic and entirely well-understood as "hallucinations" is leading too many people to think you can bypass the limitations of statistics with "the magic of LLMs". No you can't. Unless you've got a literal magic oracle (good luck with that halting problem) false positives and false negatives are just a fact of life when trying to model anything non-trivial.
+- What is the research angle ? Or is there only a commercial one to make idk answers acceptable?
+- I really don't think this is solvable in principle w/o token entropy signal being fed into the model and/or multisample inference with majority voting.

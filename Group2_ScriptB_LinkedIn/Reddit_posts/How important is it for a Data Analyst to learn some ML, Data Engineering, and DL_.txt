@@ -1,0 +1,75 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1nrtluz/how_important_is_it_for_a_data_analyst_to_learn/
+Title: How important is it for a Data Analyst to learn some ML, Data Engineering, and DL?
+
+Content:
+Hey everyone!
+
+I'm a Data Analyst, but I'm really interested in the whole data science world. For my current job, I don't need to be an expert in machine learning, deep learning, or data engineering, but I've been trying to learn the basics anyway.
+
+I feel like even a basic understanding helps me out in a few ways:
+
+* Better Problem-Solving: It helps me choose the right tool for the job and come up with better solutions.
+* Deeper Analysis: I can push my analyses further and ask more interesting questions.
+* Smoother Communication: It makes talking to data scientists and engineers on my team way easier because I kinda "get" what they're doing.
+
+Plus, I've noticed that just learning one new library or concept makes picking up the next one a lot less intimidating.
+
+What do you all think? Should Data Analysts just stick to getting really good at core analytics (SQL, stats, viz), or is there a real advantage to becoming more of a "T-shaped" person with a broad base of knowledge?
+
+Curious to hear your experiences.
+
+Comments:
+- You can always get better outcome if you have the knowledge of intermediate level ml/dl in my opinion. But I’d say attaining strong stats will help you learn dl algorithms quicker.
+- You are spot on with the "T-shaped" approach! As a person heavily focused on analytics but a solid base in DS, I see this shift happening in real-time. Sticking only to core analytics is limiting; when I look at what companies are hiring for, they don't want a "SQL-only" person anymore. They want someone who can also think in terms of models and pipelines. From experience I noticed these:  
+
+Analytics Hits a Ceiling Without ML/DE Context
+Your core skills (SQL, stats, viz) are your power tools but they can only solve diagnostic problems ("What happened?"). To solve predictive or prescriptive problems ("What will happen?" or "What should we do?"), you need the concepts you're learning.
+A basic understanding of, say, clustering (K-Means) might make you realize your simple A/B test analysis could be 10x more impactful if you first segment your users dynamically. You don't have to code the complex model, but you can propose the strategy. That's a huge shift from an analyst to a true strategic partner.
+
+The Tech Snowball Effect is Real
+You nailed it: "just learning one new library or concept makes picking up the next one a lot less intimidating." Every basic concept you learn like version control with Git, or the difference between supervised and unsupervised learning is a cheat code for the next one. It's like unlocking skills in a video game.
+
+Honestly, keep pushing that horizontal bar of knowledge. It doesn't mean you have to be a Deep Learning expert but knowing the vocabulary and the workflow of Data Science and Data Engineering is what turns a great analyst into an indispensable data leader.
+- This is exactly the learning approach you should adopt! A lot of my own learning has had to happen outside work hours but it has made me a better employee.
+
+I also think expanding horizons helps you figure out where you want to focus your career. I have a marketing degree - I did not want to do marketing. I leveraged my SQL/excel/digital analytics classes into a digital analyst role where I picked up more skills which landed me a more technical data analyst role.
+
+Without doing the above, I don't think I would have found a company that helped me get more exposure to data engineering - which is something that I have found that I really enjoy.
+
+Now I am coding in python in my free time - something I definitely didn't expect when I first started my career.
+- You should learn and capture the basic. Linear regression would prolly solve most of business cases.
+
+Also, at its core, business doesn’t run in silos. Every decision has to balance product, finance, and engineering perspectives, and if one of those is missing, things fall apart. Every decision needs those all combined contexts to make. 
+
+Hyper-specialization might get you started in your career, but over time it becomes a trap, you just become a tool. Once you’ve mastered your niche, the diminishing returns start. Businesses are naturally cost-sensitive and risk-averse when if something works, they won’t reinvent it just to accommodate a specialist’s new idea. 
+
+That’s where the [Curse of knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge) in specialists exists: experts tend to default to familiar approaches, and when a whole team reinforces each other’s narrow perspectives rather than challenging them ... Some studies actually mention this: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8763848/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8763848/)
+
+Also, a specialist is likely working on silos, invisible to everyone, and perceived as a non-performer and hard to justify your TC. 
+
+The downside is that  right now hyper-specialization is still preferred in hiring in tech and software, because these fields are tool-driven. So the preference makes sense from a short-term, executional perspective.
+- ML is pretty easy to pick up and start tinkering with. You don't even need to install anything. Just code in a Google colab notebook or follow kaggle tutorials or something. There's probably some merit to at least building a couple of models and getting some rough idea of what kind of models exist and how to tell if a model is good or not, and I think you can honestly get to that level in a few hours of fiddling with kaggle.
+
+Obviously there's a lot more to ML than you'd cover in those few hours, I just think you'd hit a point of diminishing returns fairly quickly if you won't be the one actually cleaning the data or building the models.
+
+Data engineering is probably more useful, so you can tell the DE team what you need, unfortunately it's more annoying to learn.
+- You can’t properly analyze some types of data without those tools, so I would definitely recommend learning it. 
+
+For example let’s say you’re asked to analyze customer satisfaction and the best feature is the text and pictures of their reviews and support call transcripts. Perfect case for ML, and you kit it need some DE to manage the couple hundred gigabytes of data (pictures in the reviews).
+- I wanna follow this mindset too. What don’t understand is the T Pose aspect? Do you reference that funny way of standing?
+- Mastering core analytics (SQL, stats, viz) is non-negotiable, but even a little ML/DE knowledge makes you a 10x better analyst. It sharpens problem-solving, improves cross-team communication, and future-proofs your career. Think of it as becoming T-shaped  depth in analytics, breadth in data science.
+- Same thought
+- Not getting a single interview response without these 😭
+- I would focus on what your immediate needs are to bring value to your employer first, then start branching out.  You are going to get more recognition, raises and promotions when you align your skillset to what your employer needs in the short term.  But otherwise, yeah always be learning in this field.
+- in todays world with AI you should def become a T-shaped. All these roles are merging into one. DS is 40% data analytics.
+- If you’re not learning, you’re dying. Keep pushing my friend!
+- I'd say 
+Same thought
+- Its important cause it is different kind of work. Almost completely different.
+- If you understand linear algebra and 
+calculus and can efficiently code you are in good shape. You can write your own machine learning algorithms and then tune them
+- I'd say, learn the basics of APIs, ml, dl, and get familiar with hugging face models and the updates. If it's interesting enough, you'll stick to it.
+- You need to at least have an understanding, if not for your own work then because you'll likely be working in interdisciplinary environments
+- But why not Focus on one specialization?
+- A standard data analyst mostly has to just know sql and in SOME companies a big of pandas would help too. Though the term is used differently in different places so in that sense it could be the other stuff you mentioned but that's not a typical data analyst job.

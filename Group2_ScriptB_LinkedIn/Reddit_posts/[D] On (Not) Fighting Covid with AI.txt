@@ -1,0 +1,138 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/kf86zh/d_on_not_fighting_covid_with_ai/
+Title: [D] On (Not) Fighting Covid with AI
+
+Content:
+*Edit Dec 18: I misinterpreted one section of the original paper and have updated my third point under "problem 1" to remove inaccurate claims. I've also removed the term "overfit" from the tl;dr since I don't actually think that's the problem.*
+
+***TL;DR: You can fit a model on 96 examples unrelated to Covid, publish the results in PNAS, and get Wall Street Journal Coverage about using AI to fight Covid.***
+
+*Earlier this year, I saw a couple articles in the press with titles like "Northwestern University Team Develops Tool to Rate Covid-19 Research" (in the Wall Street Journal) and "How A.I. may help solve science’s ‘reproducibility’ crisis" (Fortune). I tracked down the original paper and found that despite being published in PNAS, it didn't hold up to scrutiny. (I know you're all shocked.) Inspired by* [*the post*](https://www.reddit.com/r/MachineLearning/comments/c4ylga/d_misuse_of_deep_learning_in_nature_journals/) *to this sub on the questionable Nature paper that used* *~~data leakage~~* *deep learning to predict earthquakes, I've written up my analysis below. I'd like the community's perspective on the paper, particularly if I got anything wrong. As I wrote up my analysis, a few questions were on my mind:*
+
+* *What's the clearest way to explain to a layman that a model trained on 96 examples is unlikely to generalize well?*
+* *When does exaggerating the promise of AI cross the line from annoying marketing hype to being an ethical issue?*
+* *If general journals can't effectively review papers about machine learning applications and ML conferences aren't interested in that subject... where should those papers be published?*
+
+*Full text below.*
+
+*----*
+
+This week’s US rollout of the first COVID-19 vaccine is a major milestone, a true triumph for scientists, and a massive relief for the rest of us. But it’s also an excuse to revisit my least favorite paper published this year.
+
+That paper, “[Estimating the deep replicability of scientific findings using human and artificial intelligence](https://www.kellogg.northwestern.edu/faculty/uzzi/htm/papers/Replicability-PNAS-2020.pdf),” was written by a team of researchers at Northwestern led by Brian Uzzi. It was published in PNAS on May 4, and its publication was accompanied by a glowing press release (“[AI speeds up search for COVID-19 treatments and vaccines](https://news.northwestern.edu/stories/2020/05/ai-tool-speeds-up-search-for-covid-19-treatments-and-vaccines/?fj=1)”) and received credulous coverage in outlets like [Fortune](https://fortune.com/2020/05/04/artificial-intelligence-reproducibility-crisis-kellogg/) and [The Wall Street Journal](https://www.wsj.com/articles/northwestern-university-team-develops-tool-to-rate-covid-19-research-11589275800).
+
+One of my primary professional interests is using data analysis to systematically identify good science, so I was eager to dig into the paper. Unfortunately, I found that the paper is flawed and doesn’t support the Covid-related story that the authors and Northwestern shared with the media. My initial skepticism has proved out; vaccines are now being distributed with (as far as I can tell) no help whatsoever from this particular bit of AI. Closer analysis will show that the paper isn’t convincing, that it had nothing to do with Covid, and that the author was reckless in how he promoted it.
+
+**Problem #1: The machine learning in the academic paper is flawed**
+
+The core of the paper is a machine learning model built by the authors that predicts whether or not a paper will replicate. To be technical about it, the model is trained on a dataset of 96 social science papers, 59 of which (61.4%) failed to replicate. The model takes the full text of the paper as an input, uses word embeddings and TF-IDF to convert each text to a 400-dimensional vector, and then feeds those vectors into an ensemble logistic regression/random forest model. The cross-validated results show an average accuracy of 0.69 across runs compared to the baseline accuracy of 0.614. These are all standard techniques, but skilled machine learning practitioners are already raising their eyebrows about three points:
+
+* **The authors don’t have enough data to build a reliable model**. The authors have used just 96 examples to build a model with 400 input variables. As mentioned above, the model has two components: a logistic regressor and a random forest. A conventional rule of thumb is that logistic regression requires a minimum of 10 examples per variable, which would suggest that the authors need 40x more data. “Underdetermined” doesn’t even begin to describe the situation.The data needs of random forests are harder to characterize. While geneticists [routinely use random forests](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3154091/) in settings with more variables than examples, their use case is typically more focused on determining variable importance than actually making predictions. And indeed, [some research suggests](https://pubmed.ncbi.nlm.nih.gov/25532820/) that random forests need more than 200 examples per variable, or almost 1000x more data than the authors have.**The bottom line is that you can’t build a reliable machine learning model on just 96 papers.**
+* **The model structure is too complicated**. Model structure is the garden of forking paths for machine learning. Adjustments to a model can improve its performance on available data while reducing performance on unseen data. (And no, cross-validation alone doesn’t fix this!) The model structure the authors describe is reasonable enough, but it also includes some clearly arbitrary choices like using both logistic regression and random forests (rather than just picking one) or aggregating word vectors using both simple averaging and TF-IDF (again rather than just picking one.) With just 96 examples in the dataset, each version of model that the authors tried had a real chance to show a cross-validation accuracy that looked like success despite arising from chance. In context, **trying multiple model architectures is the the equivalent of performing subgroup analyses.**
+* **The effect size is too small.** Increasing accuracy from the baseline of 0.614 to 0.69 is too small an effect to achieve statistical significance particularly in light of the small sample size. The large number of degrees of freedom in model design. The paper’s statistical analyses generate pleasing p-values (*p<0.001*) demonstrating that the model is effective *on this particular set of papers.* But what we’re actually interested in is whether the model outperforms the baseline on unseen data (i.e. whether it has better generalization error.) Performing [inference about generalization error](https://link.springer.com/article/10.1023/A:1024068626366) is a [challenging task](https://ieeexplore.ieee.org/document/6790639) (and there isn’t a single agreed upon methodology). But as a sanity check, consider the t-test we would use to e.g. determine if one diagnostic test were more accurate than another when given to patients. The cynical baseline (predicting that nothing ever replicates) gives an accuracy of 0.614 on these 96 papers. The authors’ model achieves an accuracy of 0.69 on those same papers. That gives a one-tailed p-value of 0.134 — a delightful value for a paper that is itself about replicability. And this point isn't just pedantry; I'm genuinely unsure if the model will actually outperform the cynical baseline on unseen data. I don't know what the base rate for replication is in the test sets. I did track down the replication status for one set (Row 2 in the paper) and saw  7 out of the 8 results in that set failed to replicate, so our cynical baseline achieves an accuracy of 0.875 — outperforming the “AI” model significantly on this admittedly small set.
+
+Let me be very clear: These are very fundamental problems. After reviewing the paper, I’m not confident that their machine learning model adds any value at all. It reflects poorly on PNAS that this paper made it through peer review. Unfortunately, general scientific journals - no matter how prestigious - don’t seem equipped to effectively review papers involving machine learning; Nature’s infamous paper on predicting earthquakes with deep learning was [widely criticized](https://www.reddit.com/r/MachineLearning/comments/c4ylga/d_misuse_of_deep_learning_in_nature_journals/) in the machine learning community.
+
+**Problem #2: The paper has nothing to do with Covid**
+
+Let’s set aside every issue I’ve raised to this point and accept that the authors really can identify social science papers that are less likely to replicate. That still doesn’t make it relevant to Covid.
+
+Their entire system is premised on picking up subtle linguistic markers that supposedly indicate when a researcher (perhaps subconsciously) believes she’s performing sub-par science. Uzzi compares the approach to reading body language.
+
+But there’s no reason to believe that the linguistic “body language” of psychologists tells us anything about the body language of Covid-19 researchers. Psychology and virology are very different fields with different conventions even in normal times. The pandemic itself has undoubtedly impacted word choices, as papers written under extreme time pressure by researchers from around the world get shared to pre-print servers rather than being polished and published in journals. At a minimum, the model would have to be significantly adjusted to be applied to Covid research.
+
+**Problem #3: Northwestern and Brian Uzzi crossed the line promoting this paper**
+
+Self-promotion is a natural and even important part of science; good research doesn’t always get the attention is deserves. And certainly the decade-long AI boom has been driven forward by rosy projections about what AI can accomplish. But the paper’s lead author, Brian Uzzi, went too far in his efforts to promote it.
+
+The paper was published just two months into the pandemic at a time when the trauma felt more acute than chronic. The uncertainty and fear fueled a desperation for anything that might end the ordeal. In that environment, putting out a press release entitled “AI speeds up search for COVID-19 treatments and vaccines” takes on a moral dimension.
+
+The scientists and trial participants who brought us a vaccine in record time are heroes. Meanwhile, the Wall Street Journal coverage of this paper now has a correction appended:
+
+>Northwestern University researchers will make an artificial-intelligence tool designed to rate the promise of scientific papers on Covid-19 vaccines and treatments available when testing is completed. An earlier version of this article incorrectly said the tool would be available later this year.
+
+Indeed.
+
+\---
+
+*Originally published on* [*Substack*](https://divergentdata.substack.com/p/on-not-fighting-covid-with-ai)
+
+Comments:
+- [deleted]
+- They claimed to be able to detect whether papers are non-replicable, eh? I wonder if they ran the algorithm on their own paper?
+- One difference between my analysis and the criticism of the Nature paper: I didn't engage with the author of the study. (The data scientist behind the other post had extensive correspondence and basically got a nasty email for his troubles.) The flaws with the paper were so fundamental and the self-promotion from the team so blatant that I didn't think there was a productive conversation to be had.
+- Accepting a paper that revolves around training ML with 96 examples is incompetence. Submitting a paper like that is fraud.
+- [deleted]
+- How do you pronounce PNAS?
+- I said it before and I will say it again — most “AI” research can be replaced with a SQL query.
+- [deleted]
+- I won't argue about the random forest point but you need to understand that linear regression + high dimensional data + small sample size is extremely ubiquitous in various branches of science. That's all one can really do most of the time for various reasons. You can't help that your data is high dimensional, you can't just grab new data (generative models aren't really quite there in many cases), and you have to do something for reasons XYZ. 
+
+It's not desirable but you really have no choice. If this was such a forbidden thing then so many branches of science might as well shut down.
+- I had a similar issue at the start of the year. Some of my team were jumping at how they could help solve COVID through data science. Also some senior execs approaching our team with similar claims. 
+
+I knew enough to know that even if you have enough data, it’s a whole separate field of data science that many DS just don’t know. 
+
+I recommended reading “The rules of Contagion” by Adam Kucharski. He explains quite well the complexity and existing solutions used in predicting epidemics. 
+
+
+... But personally what I saw is not about negligence. Everyone is under a lot of stress as their day-to-day changes. People either go the disbelief route, or the “I can help” route. No one wants to feel useless, and everyone wants to feel they are part of the solution. So objectivity takes a back seat. Thankfully most get peer reviewed. 
+
+As for the press misreporting, that has always been the way for as long as I remember.
+- The single most important take away from this entire situation is that the basic premise of the model is to determine false positives in published research.
+
+Understanding the rates of false positives in ML/AI are quite extensively measured and understood within nearly every framework that is implemented.
+
+If you want to explain this situation to a layperson, ask them if they would like a second opinion from a trained doctor looking at the scans of their *confirmed* cancer or an algorithm that only looked at 96 scans and was accurate 65% of the time when **7/8 were actually false positives.**
+
+Now, be sure you reiterate that doctors also have a potential to misdiagnose (publishing research that fails reproducibility) and that they are the ones who would be supplying the data for the algorithm to surpass their own abilities.
+
+Algorithms work, when implemented properly, as you rightly seem to be alluding to.
+
+However, trying to push for funding to clean up the mess that academia has become using ML/AI pipelines is something the entire world should be clamoring for.
+
+You are right to be skeptical and question the methods because that is exactly what they are aiming to do for the rest of the entire scientific community.
+- I have been working on doing cv on covid ultrasound images since September, but I don’t think the research is going anywhere. Models barely learn any related features without overfitting and we don’t have access to enough data to go any further
+- >vaccines are now being distributed with (as far as I can tell) no help whatsoever from this particular bit of AI
+
+Off-topic:
+
+And you are right. In fact no AI was used at all. The Pfizer/Biontech vaccine was basically made 2 days after the viral genome was available last january. All it then takes is to download it and make an mRNA of the desired Protein (ok, which protein to target was know due to SARS1). The rest was just testing and clinical trials. 
+
+let that sink. theoretically that vaccine could have been mass produced already in march-april and applied from May with relaxed testing. Wonder why China got it under control so easily? I have a good guess...But back on topic
+
+
+On-topic:
+
+>If general journals can't effectively review papers about machine learning applications and ML conferences aren't interested in that subject... where should those papers be published?
+
+No idea where but I fully agree that ML publication in "non-tech sciences" area are to be taken with a huge grain of salt. So much bullshit also in my specific area of work. A common approach is to have thousands (about 3-5k) of generated features and often much fewer observations. Then the apply "feature selection" on it. Common themes are forward-selection, backwards-elimination or genetic algorithms. I wonder what you think about these? I absolutely detest them. They are hugely compute intense and ultimately you are just testing thousands or even millions of random feature combinations until you find a good one. That's basically the definition of "phacking".
+
+And this is just the algorithm. Just as problematic is the data used. Often it's too simple or limited. If I'm trying to identify cats and all my non-cat pictures are random noise then the model is uselss regardless of the algorithms used. (this example is of course highly simplified and exaggerated but helps to get the point across)
+
+it's often "easy" to make a good looking model with cross-validation metrics and a "seemingly" reasonable data set. But in my field one often works project based and so anything you feed the model for inference comes from a different distribution than the training set. different as limited to a very narrowly defined area of the training distribution. Hence any metrics gathered from CV are irrelevant.
+
+Now ML/AI is becoming more important here. Until now this wasn't a big issue but I fear in the coming years a large part of my job will become explaining management that most publications are crap and no peer-review doesn't mean much at all in this area.
+
+**Only thing you can do, is to become a peer-reviewer for these journals and hard reject this stuff until fixed.** But it's probably not easy or possible at all to get there. I'm also not sure if a single reviewer can hard reject or if the others can outvote him. Maybe also a good change to promote is that if one reviewer has made a hard rejection but is outvoted that the rejection must be included in the publication with all the comments why.
+- I feel like a more fundamental issue is with the actual idea of predicting replicability of a paper with machine learning. It's essentially the same sort of idea as predicting criminality from faces - you end up learning spurious correlations that are not actually causally related to what you want to predict. Predicting if a paper will be published or not is more sensible since there are presumably patterns in the text that determine if a paper is well-written or not, which is in turn predictive of acceptance. But there is no plausible correlation between the statistical patterns picked up from language models in a dataset of accepted papers and whether or not the text actually represents good science.
+
+It wouldn't matter if this dataset was 100x larger, the model output would be just as dubious, and I think the authors don't understand that.
+- I don't want to defend this paper without reading it more carefully, but your section on problem 1 seems to be seriously flawed. Unless I'm mistaken you owe the authors an apology for misrepresentation. Especially given that you didn't even take the time to contact the authors and check for possible misunderstandings.
+
+Firstly, there are lots of techniques to deal with there being more features than observations, and they claim to detail their approach in the appendix. I haven't read the appendix, so I dont know if their approach is sound, but from reading your criticism, it seems like you haven't read it either.
+
+Secondly, your discussion of generalization focuses just on their training set and ignores the fact that they claim to have used several test datasets precisely to address this concern. Additionally, if I'm reading their paper right, your criticism regarding test dataset 1 is completely off base too. Youre talking about 8 studies, 7 of which failed to replicate, whereas it seems like they're claiming that there were a total of 117 papers covered in 8 separate replication studies. I've only skimmed the paper so I might be wrong, but if not, you've seriously misrepresented what they're writing.
+- I feel that the 96 samples criticism is unfair. In CV/NLP there is so much data that datasets like CIFAR are beginning to be considered toy datasets. There has become an expectation that if you do ML you have to have a large dataset otherwise you're a joke. I'm surprised this hasn't been brought up, but pretty sure 90% of the groups at the medical institutions I've worked at have active projects with <100 samples and 400k+ dimensions where ML is being actively applied. Its a bit of stretch to say they're all frauds...
+- Machine learning is learning from other science fields:
+
+Reviewers that DO NOT replicate papers.
+
+Experiments made in statistically insignificant cases.
+
+Products accepted to production as far as they work on white people.
+
+Any voice complaining is silenced.
+- I guess the authors have friends or relatives at PNAS :)
+- You should Steve Jobs was a great salesman too life is about what u can sell
+- Yes, but something useful could have been done, had the millions of data points that exist been made public.

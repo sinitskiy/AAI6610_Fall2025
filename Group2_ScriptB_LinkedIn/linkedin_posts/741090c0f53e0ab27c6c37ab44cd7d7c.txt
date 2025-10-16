@@ -1,0 +1,89 @@
+URL: https://www.linkedin.com/posts/todd-constable-69a305145_simpler-models-can-outperform-deep-learning-activity-7366430537957253120-1-RL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Todd Constable的动态
+Todd Constable
+
+Professor at Yale University
+
+1 个月
+
+Idk how many times reviewers have complained that we should use something other than a simple linear model (even though the linear model works great). In physics you’re taught to use the simplest model that works…
+
+Björn Lütjens
+
+Research Scientist, IBM Research
+
+1 个月
+
+MIT News writes today about our new paper: We show that a simple linear model can outperform a large-scale AI foundation model, in particular for creating fast approximations to climate models. In the paper we offer an explanation with lessons on benchmarking, bias-variance tradeoff, and natural climate variability. 
+
+See the article and full paper at: 
+https://lnkd.in/eqkFdh-P
+
+Simpler models can outperform deep learning at climate prediction
+news.mit.edu
+72
+1 条评论
+赞
+评论
+分享
+Steve Conolly
+
+1 个月
+
+Yup, this is a genuine challenge.   Do students learn enough about the perils of over-fitting in their classes?  Do they learn about the perils of high condition number?  
+
+赞
+回复
+2 次回应
+
+要查看或添加评论，请登录
+
+最相关的动态
+Zhachory Volker
+
+Ex-Googler
+
+1 个月
+
+Always start ML project with this simple models as baselines. Sometimes, you can save a lot of time and money proving that these deep and complicated architectures aren't worth it!
+
+Björn Lütjens
+
+Research Scientist, IBM Research
+
+1 个月
+
+MIT News writes today about our new paper: We show that a simple linear model can outperform a large-scale AI foundation model, in particular for creating fast approximations to climate models. In the paper we offer an explanation with lessons on benchmarking, bias-variance tradeoff, and natural climate variability. 
+
+See the article and full paper at: 
+https://lnkd.in/eqkFdh-P
+
+Simpler models can outperform deep learning at climate prediction
+news.mit.edu
+1
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+Chris Hemphill
+
+AI Strategy in Digital Mental Health | NYU McSilver Institute Fellow-in-Residence: AI & Health Equity
+
+1 个月
+
+A simple reminder that bigge

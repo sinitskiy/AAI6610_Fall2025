@@ -1,0 +1,50 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_probabilistic-neural-networks-pnns-with-activity-7307923808219201536-qvXc
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+6 个月
+
+🔍 Exploring Advanced Uncertainty Quantification in Neural Networks 🔍
+
+Traditional neural network regression models often provide only point estimates, neglecting the critical aspect of predictive uncertainty. 
+
+Probabilistic Neural Networks (PNNs) have emerged as a solution, generating output distributions that facilitate the construction of prediction intervals. However, the prevalent assumption of Gaussian output distributions can lead to excessively wide intervals, particularly when faced with outliers or non-normal data.
+
+To address this limitation, a novel approach known as t-Distributed Neural Networks (TDistNNs) has been proposed. TDistNNs produce t-distributed outputs characterized by location, scale, and degrees of freedom parameters. This flexibility allows for modeling heavy-tailed predictive distributions and enhances robustness against non-Gaussian data.
+
+A tailored loss function for the t-distribution has been developed alongside efficient gradient computations to ensure seamless integration into existing deep learning frameworks.
+
+Empirical evaluations reveal that TDistNNs achieve a superior balance between coverage and interval width compared to traditional Gaussian-based PNNs—consistently yielding narrower prediction intervals while maintaining appropriate coverage levels.
+
+This advancement represents a significant contribution to uncertainty estimation in neural networks for regression tasks—particularly beneficial in scenarios involving complex output distributions. 
+
+     📊✨
+
+#AI #Algorithms #ArtificialIntelligence #DL #DS #DataScience #DeepLearning #ML #MachineLearning #NeuralNetworks #ProbabilisticModels #Tech #Technology #UncertaintyQuantification
+
+Probabilistic Neural Networks (PNNs) with t-Distributed Outputs: Adaptive Prediction Intervals Beyond Gaussian Assumptions
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,134 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+How to Understand Neural Netw

@@ -1,0 +1,45 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m7mixn/r_phd_scholarship_at_victoria_university_of/
+Title: [R] PhD scholarship at Victoria University of Wellington in machine learning for Volcano forecasting
+
+Content:
+We are seeking a highly motivated PhD student to join our multidisciplinary volcanic hazards research team at Victoria University of Wellington, New Zealand. This exciting project focuses on developing cutting-edge diffusion-based machine learning models to forecast volcanic activities, significantly enhancing our ability to predict eruption dynamics.
+
+🔹 Scholarship details:
+
+Generous stipend: NZ$35,000/year for 3 years (possible extension).
+
+Full tuition fees covered.
+
+Funding for international conferences and collaboration visits in Europe.
+
+Fieldwork opportunities.
+
+🔹 Ideal candidates:
+
+Background in Machine Learning, Data Science, Computer Science, or related fields.
+
+Strong Python skills.
+
+Excellent communication in English.
+
+Previous publications in top-tier AI conferences/journals.
+
+🔹 Supervisors: Prof. Bastiaan Kleijn, Dr. Felix Yan, Dr. Finnigan Illsley-Kemp
+
+📅 Applications reviewed from: September 1st, 2025 (Flexible start date from October 2025 onwards).
+
+For inquiries and applications, please contact me directly at 📧 [felix.yan@vuw.ac.nz](mailto:felix.yan@vuw.ac.nz). Application documents include your CV, transcript, Master's thesis, and publications.
+
+Feel free to share this fantastic opportunity with your network!
+
+Comments:
+- Calling that a generous stipend is criminal. PhD students are aware that stipends are usually quite low, and are often willing to accommodate regardless. There's no need to gaslight people like this.
+- Very less pay
+- [deleted]
+- Thank you for your comment. Our use of the term "generous" reflects a direct comparison with typical PhD scholarships offered by public institutions, such as Victoria University of Wellington and the Australian National University. Our scholarship indeed provides a higher stipend than many university-funded programs, includes coverage for travel expenses—which are typically not included—and offers an option for extension, a benefit rarely available in standard university scholarships.
+
+Additionally, our stipend is tax-free and imposes no mandatory work obligations, unlike certain scholarships from other countries or institutions that require recipients to engage in teaching or tutoring responsibilities. We acknowledge that stipends in academia generally cannot compete financially with industry positions, especially in high-cost regions such as Silicon Valley. However, within the context of academic research scholarships, our offering is comparatively generous.
+
+We appreciate your perspective and feedback and are certainly not attempting to diminish the experiences or expectations of PhD students. If the wording has caused offense, that was not our intention, and we will carefully consider how best to communicate our scholarship's benefits clearly and respectfully in the future.
+- We are honest about what we can give.  If the wording has caused offense, that was not our intention, and we will carefully consider how best to communicate our scholarship's benefits clearly and respectfully in the future.

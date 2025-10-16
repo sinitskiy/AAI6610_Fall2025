@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/86sbxz/preferred_protein_structure_prediction_tools_and/
+Title: Preferred protein structure prediction tools and protein-protein docking prediction tools?
+
+Content:
+Hi everyone,
+I am currently working on my bachelor thesis and would be garetful for some recommendations regarding prediction tools. 
+My project involves analyzing the potential binding sites of nanobodies (or modified single-domain camelid antibodies) on a specific protein. I already figured out that due to the relatively new subject of nanobodies it is very hard to find web services for predicting the epitopes of them on antigens (most require a defined Heavy and light chain which nanobodies dont have). Therefor I am using general protein-protein docking approaches for docking prediction. 
+Now, first are there online prediction services for general protein folding you can recommend (I am currently working with i-tasser and raptorX) and also for protein-protein docking?
+Bonus points if you know actual tools for nanobody specific antigen binding.
+Thanks in advance!
+(Note: I am from germany so it might take some time for me to answer due to different time zones).
+
+Comments:
+- Rosetta has very good structure prediction tools and has been a top performer in CASP. I’ve used it extensively for loop modeling. They have antibody loop modeling specific applications and small molecule docking for sure. I am fairly certain there are protein protein docking applications in Rosetta as well.
+- Here is a list of tools you might find useful :
+http://www.click2drug.org/
+
+Also have a look at this software, there may be a way to do what you want, but i'm not sure : 
+https://samson-connect.net/app/main?execution=e1s3
+- Yeah heard only good things about it. Gonna look into it, thanks :)
+- Thanks a lot I will check it out!

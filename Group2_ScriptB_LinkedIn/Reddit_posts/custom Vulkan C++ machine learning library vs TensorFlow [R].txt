@@ -1,0 +1,68 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mqgyfe/custom_vulkan_c_machine_learning_library_vs/
+Title: custom Vulkan C++ machine learning library vs TensorFlow [R]
+
+Content:
+guys I need your opinion: I made a machine learning library using Vulkan (with compute shaders to preform the forward and backward passes) and I found that base tensorflow (on CPU) is faster than my custom model that uses GPUs. I had the simplest test where I used a very large kernel on a singe dense (ffn) layer and tensorflow is much faster. The only operation that is done in this model is a forward and backward matmul which the GPU should be much faster at. what do you guys think is the reason? -ps I asked chatgpt and I literally what to k\*ll it cause it repeats the same wrong things
+
+Comments:
+- The first thing with compiled languages is to ensure you are using the correct build/optimization flags. Next is to benchmark/profile with various input sizes.
+
+Then, lookup your devices theoretical throughput and calculate what % of threshold you are hitting. For instance, I wrote a tensor library in C++ with cuda support. On my 3090, the naive matmul was 2283 GFLOPs, 3046 GFLOPSs when using shared memory, 9522 GFLOPs using a 1D tiling, and 16840 GFLOPs using a 2d block tiling (this is still 50% off of the theoretical of 35000 GFLOPs for FP32 on the 3090, but you can at least see the order of magnitude in speed increase).
+- Have you done any sort of profiling at all? That should be your first step. There’s overhead to communicating with the GPU, it’ll probably be better to do apples to apples comparison running the same kind of code with tensorflow on a GPU too.
+- I work/do research with GPGPU.  
+  
+1) You need to profile for what is taking the time. In this field, you should not touch the code before you profile what should be touched. There is a lot of theory, but there is also a lot of various GPUs, architectures, quirks, bugs, languages, intermediate representations, that all interact in different ways, its a wild west with no unified solution.
+
+
+
+2) Vulkan was made for Graphics, not ML. When you have code in GLSL and compile it to SPIR-V, you are creating a long list of instructions similar to ASM. You can explore this in RenderDoc for example. This long list of instructions is then translated/lowered down to GPU-specific instructions by a proprietary software that a handful of engineers at each company have developed. The kicker here is that these SPIR-V instructions are GENERAL, they are meant to do any workload, from calculating trajectories of objects in space to coloring pixels to doing statistics. The proprietary GPU people then essentially have to build patterns-recognizers on top of single-element instructions and loops to figure out if these can be mapped to accelerators of if they should just go to the ALU.   
+
+
+Only this year, on the [Vulkanized 2025 conference](https://www.youtube.com/watch?v=fF2HfxkpSog) was the "[cooperative vector](https://registry.khronos.org/vulkan/specs/latest/man/html/VK_NV_cooperative_vector.html)" extension presented, which gives you an extension in GLSL to specify workloads for GEMM, which hints to the future compilers that "this is in fact a GEMM that can be mapped to tensor cores, matrix cores, and whatever intel uses" by adding a load of constraints and signatures.
+
+  
+New machine learning backends, such as XLA or Triton specifically made for ML have the opportunity to skip the whole command pools/buffers, queue types, pipeline layouts, descriptor pools/sets, etc. And design their workloads to be mapped in a way that utilizes the hardware perfectly in an easy way. So you will have to do a really, really, really good job to compete with them.
+- Okay. I am guessing most of your operations are matrix multiplication, addition, etc right ? 
+Things to look into :
+- are you using an efficient algorithm (Like strassen’s) for matmul ? 
+- are you optimizing cache ? This one can be tricky, may depend on specific CPUs/GPU/
+- what dtype are you using ? Be sure to compare on the same dtype 
+- look for operations adding overhead on your code, and possibly things that may force a thread synchronization. These may eliminate your GPU speed up 
+- do you compile your shaders offline ? Or are they compiled at runtime ? This is yet another thing to consider in your profiling
+- finally, what hardware are you comparing in GPU and on CPU ? This may account for part of what you see
+- You're saying the smartest experts working for decades came up with more optimized methods than you? I dunno, hard to believe. It's probably a compiler issue
+- thank you. thats a good point. regarding overheads, I dont use any fences or VK waits in my Vulkan calls, I use barriers to make sure the buffer is uploaded to the device and downloaded safely and I recycle the same memory for my buffers so I am not allocating new cpu memory for every layer call. I have not tested tensorflow on GPU but I am assuming it would be even faster correct me if I am wrong. I am also doubtful that it's something related to precision (I use f32) do you think  changing to f16 would make a meaningful difference?  I have been reluctant to switch cause I would have to change my entire codebase.
+- u/acmiya Great point, profiling is indeed a crucial first step, allowing us to benchmark and optimize performance before diving into GPU-specific comparisons.
+- Thank you so much! Remember watching NVIDIA pitch the cooperative vector presentation and never followed up with it because I was making convolution and pooling shaders at the time.
+
+Given my gpu utilization is \~80%, I guess at the heart of my question is if the slowdown is likely due to my suboptimal Vulkan boilerplate. 
+
+Thank you for you response and I think the next step for me is to do a sanity check using CUDA given theres no boilerplate with it.
+
+I am however, very interested in your work/research and would love to chat more!
+- Thank you, thats a great point! I am calculating each element in the output tensor in one GPU kernel invocation so I am stuck with the n\^3 for now (put part of the shader code below), and I am looking at how to adopt other matmul strategies, I think some have it down to n\^2.4 nowadays. And dtype is float32 for now, do you think changing to float16 would make a noticeable difference?   
+also using precompiled shaders btw
+
+    void main()
+    {
+        uint ci = gl_GlobalInvocationID.x;
+        uint ri = gl_GlobalInvocationID.y;
+        uint bi = gl_GlobalInvocationID.z;
+    
+        if (ri >= m1_r || ci >= m2_c || bi >= batch) return;
+    
+        uint m1_i = bi * m1_stride + ri * m1_c;
+        uint m2_i = bi * m2_stride + ci;
+        uint m_i = bi * m_stride + ri * m2_c + ci;
+    
+        float sum = 0.0;
+        for (uint j = 0; j < m1_c; j++)
+            sum += m1[m1_i + j] * m2[m2_i + j * m2_c];
+    
+        m[m_i] = sum;
+    }
+- For a single forward/backward operation, the computation time might be limited by upload (host to Gpu) and download time (GPU to host).
+- Depends on the hardware, but float16 is faster. Sometimes it’s ~4x faster, but regardless FP32 on GPU should be faster than FP32 on CPU
+- Don't waste time on non-naive matrix multiplication algorithms, unless your matrices are very large, the naive algorithm is the fastest due to large overhead. Stuff like Strassen's is not often used in practice, especially in ML.
+- thank you @[CireNeikual](/user/CireNeikual/). I realized that Strassen's is only effective if we do recursion, which beats the whole point of preforming the individual matrix element operations on separate gpu kernels. If we go recursive then one kernel has to wait for the kernel in the graph level below. (anyone correct me if Im wrong)

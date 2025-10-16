@@ -1,0 +1,55 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17e01li/do_you_remember_the_syntax_of_the_tools_you_use/
+Title: Do you remember the syntax of the tools you use?
+
+Content:
+To all the data science professionals, enthusiasts and learners, do y'all remember the syntax of the libraries, languages and other tools most of the time? Or do you always have a reference resource that you use to code up the problems? 
+
+I have just begun with data science through courses in mathematics, stochastics and machine learning at the uni. The basic Python syntax is fine. But using libraries like pandas, scikit learn and tensorflow, all vary in their syntax. Furthermore, there's also R, C++ and other languages that sometimes come into the picture. 
+
+This made me think about this question whether the professionals remember the syntax or they just keep the key steps in their mind. Later, when they need, they use resources to use the syntax. 
+
+Also, if you use any resources which are popular, please share in the comments.
+
+Comments:
+- bike elastic hat price violet library employ spark frame theory
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- It’s more important to know how to solve problems and how to structure your code than it is to commit syntax to memory. If you know how to solve the problem, then you can just use documentation or Google or Stackoverflow or Geeks for Geeks, etc, to get the syntax if you’re stuck. 
+
+You’ll also likely reuse a lot of your own code snippets after you’ve been working for a bit.
+- Senior data engineer with 6+ yoe using python.
+
+I don’t remember syntax which I don’t use day-to-day. But I do know where to find stuff and what to look for when I am solving problems.
+
+Few months ago I almost failed an interview because I didn’t know from top of my head how to reverse a list in python using slicing.
+- Over time I look up things I've done before less and less often. Except for strftime. I Google that every single time.
+- I google basic python stuff I used yesterday. You think I remember everything else?
+- No shame in looking things up. A benefit is these languages are also constantly evolving so, by looking it up, you're more likely to stay current than doing things the same way you did 5 years ago (note: all things being equal given your environment versioning).
+
+In my education I found it broke out as
+- bachelers: learn alot about everything
+- masters: learn alot about one thing
+- phd: know how to research it and apply it (i.e. looking things up constantly)
+- I really recommend all cheat sheets from datacamp they are awesome, free to download as a PDF and I personally have sorted them in my logic. Printed them out and created „viewing folders“ for each topic!
+- Yes, I remember the majority of the syntax details and decent chunks of API’s because I’ve used the same tools every day for the past five years. I still check documentation fairly often because it’s good for finding ways to hook things together, and because there’s always that one silly little thing I’ve forgotten like “does this function expect me to call f(a, b) or f(b, a)” or “is this the weird string slicer that’s 1-indexed” or “did they name this argument std or scale?”
+- I can also do most common pandas operations on the fly, without looking at any documentation (like creating, sorting, querying, filtering, aggregating, pivoting, melting, merging, concatenating etc.); together with using apply, map etc. and different types of comprehensions etc. of Python. I train myself to these by frequently sharing my screen and live coding in front of my colleagues and sometimes even in front of clients, in which situations I cannot afford not to know these by heart (and of course sometimes I get into trouble when I cannot recall how to do this or that and I have to quickly look up on the web... but it doesn't occur frequently).
+- I look stuff up from time to time but generally I have no need. Also been doing this for 15 years
+- [removed]
+- I remember the syntax I use regularly, for the rest I just remember broad strokes (a method exists, or this pattern is better than that pattern) and look it up
+
+e.g. it doesn't matter if you remember how to do a vector operation in pandas, as long as you remember that it's possible and that it's way more efficient than using 'apply'
+- >This made me think about this question whether the professionals remember the syntax or they just keep the key steps in their mind. Later, when they need, they use resources to use the syntax. 
+
+I keep a list of utility codes. I remember libraries name so that I can google them when I need them. 
+
+Sometimes I wrote pseudo code or python code with misspelled syntax, and ask chatGPT to translate it to proper Python.
+- Comments and good coding practices are worth more than a good memory.
+- no
+- Did you ever have to get through a code interview?
+- This. 
+
+Most of the time, I’ll have an idea in my head of how I want to solve a problem, but won’t always remember the full syntax for coding the approach. I’ll just look up what I need to fill in the blanks. ChatGPT has become really useful for those simple searches. What’s most important is your ability to critically think through a problem.
+- I agree with you, but don't you also need to be able to pass code interviews for DS jobs?
+- This makes me feel a little better about my interviewing experience. Thank you.
+- I'm sure the interview for a Senior role was delving in some parts but strange how they still ask these questions that don't really test understanding

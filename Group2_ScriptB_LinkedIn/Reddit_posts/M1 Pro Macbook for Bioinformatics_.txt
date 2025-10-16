@@ -1,0 +1,37 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/qfn023/m1_pro_macbook_for_bioinformatics/
+Title: M1 Pro Macbook for Bioinformatics?
+
+Content:
+I am a grad student in Bioinformatics PhD, working mainly with Multiomics data with some Machine learning tools as well. I have tried the M1 last year and despite being super smooth, I had some problems some software weren't compatible yet, so I returned it then and kept using my intel i5 2018 macbook pro. 
+
+I was anticipating the 14 and 16 inch models for so long and had a purchase decision since I heard all the leaks about improved hardware design, but after they were announced I had two thoughts. First they are quite expensive for a graduate student, haha. Second, since I have an access to a high performance cluster, I am not sure if I really need this much performance on my personal laptop? 
+
+I mean .. I am changing the laptop anyway since the intel i5 8 gb RAM machine doesn't handle my everyday work anymore, but is it worth getting the new model or do I save money and get last year's model? What do you guys think ? 🤔
+
+Comments:
+- my 2 cents: get a machine with as much RAM as possible and install Linux.
+- \> I had some problems some software weren't compatible yet,
+
+That will be still the same
+
+\> do I save money and get last year's model? 
+
+I would prefer to save my money, use the old one or a better Linux laptop, do all analysis in the cluster
+- My computer is 5 year old pc with 8gb of ram.  I do almost everything in linux on my school’s cluster, I really only work locally at the very end of my analyses making all my pretty graphics and shit in R studio and it handles that fine.
+
+Maxed out Macbooks (or surfacebooks or whatever) with 128gb of ram are nice for a lot of reasons but I definitely wouldn’t say they are necessary for bioinformatics work.  Parallelizing a big job across a couple nodes on a server is still almost always way more efficient than running it locally.  
+
+Also as others have mentioned most bioinformatics tools still either don’t run or run poorly on M1 macbooks so while you’d have a shitload of memory available you’re still pretty limited in the ways you can use it.
+- Go for the pro! None of the bioinformatics applications are optimized for apple silicon - but many are open source so you can recompile yourself if you’re willing to fight with it for a few days . You’ll need lots of RAM regardless of what you buy. But this is all not a problem if you have access to a cluster - save your money and go for an M1 MacBook Pro or air from last year, you’ll be still impressed by the performance it offers for every day tasks.
+- [removed]
+- My work laptop is macbook pro. I barely use it.. it's a powerful beast but doesn't run autodock. Autodock didn't release a version that's compatible with Catalina.
+- MacBooks are a prettty common sight at a conference and most people do their analysis on their laptop.
+
+I would bet money bioinformatics tool developers most commonly use a Mac locally, Linux on the server.
+- [removed]
+- **[Bundling of Microsoft Windows](https://en.wikipedia.org/wiki/Bundling_of_Microsoft_Windows)** 
+ 
+ >Bundling of Microsoft Windows is the installation of Microsoft Windows in computers before their purchase. Microsoft encourages original equipment manufacturers (OEMs) of personal computers to include Windows licenses with their products, and agreements between Microsoft and OEMs have undergone antitrust scrutiny. Users opposed to the bundling of Microsoft Windows, including Linux users, have sought refunds for Windows licenses, arguing that the Windows end-user license agreement entitles them to return unused Windows licenses for a cash refund.
+ 
+^([ )[^(F.A.Q)](https://www.reddit.com/r/WikiSummarizer/wiki/index#wiki_f.a.q)^( | )[^(Opt Out)](https://reddit.com/message/compose?to=WikiSummarizerBot&message=OptOut&subject=OptOut)^( | )[^(Opt Out Of Subreddit)](https://np.reddit.com/r/bioinformatics/about/banned)^( | )[^(GitHub)](https://github.com/Sujal-7/WikiSummarizerBot)^( ] Downvote to remove | v1.5)

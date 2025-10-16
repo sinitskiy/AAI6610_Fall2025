@@ -1,0 +1,67 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bi0sxx/am_i_cheating_myself/
+Title: Am I cheating myself?
+
+Content:
+Currently a data science undergrad doing lots of machine learning projects with Chatgpt. I understand how these models work but I make chatgpt type out most the code to save time. I can usually debug on my own and adjust parameters by myself but without chatgpt I haven't memorized sklearn or seaborn libraries enough on my own to lets say create a random forest model on my own. Am I cheating myself? Should i type out every line of code or keep saving time with Chatgpt? For those of you in the industry, how often do you look stuff up? Can you do most model building and data analysis on our own with no outside help or stackoverflow?
+
+&#x200B;
+
+EDIT: My professor  allows us to do this so calm down in the comments. Thank you all for your feedback and as a personal challenge I'm not going to copy paste any chatgpt code in my classes next quarter.
+
+Comments:
+- As long as you know what to look up and as long as you know what your code does, it’s all good (in general). Won’t work when applying for jobs though as interviews can be rigorous and you can be asked to psuedocode or explain how certain functions work.
+- I, and I think people generally, look stuff up on Stack Overflow and get help from AI all the time. Totally normal and encouraged - if used appropriately. 🙂
+
+I'd still suggest that at your stage putting in the manual repetition when coding to build a strong sense of what you are doing and why is also very valuable.
+- Use it for repetitive stuff for which you need to look up things - plots or so. Let it draw-up a basic model and tune it to your needs. This is about the same as Googling, but faster.
+
+No sense in typing every line.
+- Go find out if you can do it without ChatGPT. If you can you aren't cheating yourself otherwise you are.
+- You should at the least know what's going on with the generated code. If you are tweaking/debugging the generated code then most likely you know what's going on, but just make sure you're in the habit of actually understanding the code, and also doubt the code if that's actually correct or not. 
+
+  
+Once you get in the work environment people will look up online all the time. There's no real cheating here unless there's some copyright or licensing issue. 
+
+  
+If you still feel like you're cheating, here's a way to justify. Estimate how much time you saved by generating code online. Use that same time to study some related field and so you can do something more advanced.
+- Yes, you’re cheating yourself. At your stage you should be begging to type as much code as you can. 
+
+I tell my intro python students to avoid using ChatGPT and similar while in my course. You need to build good habits. Having an LLM spit out code for you won’t help you build good habits.
+- I have been asked to write straight-up code in front of people in an interview, so programming skills are a plus on that situation. On the actual job, though, I think it is fine to use whatever tools are available to increase your productivity. That being said, you should be able to double-check that the code you are getting is correct, and you never know when you will need to branch out in terms of libraries. I'm honestly not sure how good chatGPT would be at making a custom pipeline or unconventional architecture in pytorch for example. There is also the concern of keeping style uniform across projects.
+- Almost every line of code I write has *some* chat gpt in there. Usually docstrings, type hints, inline comments, renaming variables for clarity. 
+
+It also provides a lot of the algorithmic stuff you occasionally need. For instance if I need to do something recursive with dictionaries, an LLM can usually lay it out and only need a bit of tweaking to fix.
+
+
+But for client libraries like ml packages or cloud sdks, or pandas, I'd recommend getting familiar with the documentation and writing it yourself. Code assistants get this stuff really wrong with great frequency. For instance, you'll often get itterrows implementations for Pandas where a backend method exists that's way faster. They also change frequently enough that LLMs often don't have the latest changes.
+- Besides the interview related facts already stated; I’ve seen patterns on my job, where you g developers who rely on ChatGPT are usually “reactive”, as in they need clear requirements before coding. They usually don’t propose different ways to do things; which for me is a key factor on hiring/promoting.
+- There's definitely a minimum level of competency people are going to expect unaided. That level differs from place to place. I think at the very minimum, given a CSV file, I'd expect someone claiming to have DS knowledge ready enough to work as a DS to be able to import the file, explore the data, produce some basic vis using the library defaults and create a simple decision tree without needing assistance. 
+
+I think you also give yourself almost a cap on how far you can get based on relying on fully external written code. Almost if programming had levels and you were a level 1 at writing, you can utilize a level 2 snippet, but level 3 you'd not be able to work with, but then if you were level 2, you could work with level 3 type thing. Obviously there's no easily defined levels, but if does feel like without reaching certain levels of understanding, it's limits what you can implement in a robust way (without blindly following). 
+
+A lot of questions you'll be asked in data science is the "why"... You've got to be able to justify your choices. So as long as you have a good answer and understanding of exactly why each step, stage, and decision is how it is then it seems fine.
+- You think you know how it works. But until you actually do it you'll never know.
+- Yes 100%. You're watching someone else solve it (chat gpt) and while you understand what's going on, it's not the same as doing it yourself. Unless you have photographic memory, it is probably not very efficient learning for you. In my opinion a professional should have the ability to do this themselves. Looking up documentation is OK as long as you write the code.
+- To be frank, I used chat gpt tons in my masters and once finished it felt like a slap in the face.
+- IMO, what matters is the end result.
+
+Did you make that credit card fraud detector? Or could you predict the unhappy customers before they give that review?
+
+But this won't matter in interviews. You will still be expected to know all coding.
+- During interviews, you need to be able to answer questions like “why did you choose that model” or “why didn’t you normalize your data” or whatever. One criticism in the past of just following tutorials - and now the same could be said for ChatGPT - is that you’re not learning how to make those decisions and tradeoffs yourself.
+- Yes you are hurting yourself in the long run. Getting the reps in and practicing writing code is an important step to being a good coder. 
+
+There is a reason we teach people algebra despite calculators existing. You have to understand fundamentals so deeply and being able to debug code is great but its not the same as knowing quickly without assistance what to reach for. It will also help you adapt to new libraries and technologies in the future. There is no guarantee that the things you ask chat gpt will be relevant forever and its not always even going to give you correct answers anyway and without your practice, it might not be intuitive why a provided solution is wrong
+- Lol there are so many libraries that the only things I have memorized are the ones I type out a lot. Otherwise, I pretty much live in the package documentation. The only spots (in my opinion) where I'd say you might be cheating yourself are:
+
+1. Because you're not typing them out and looking things up, you might be missing out on what I would say is a critical skill for anyone mid- level and up which is "the ability to rapidly read and understand documentation" (rapid used loosely, but basically you can look at the docs and understand within a couple of minutes if you've found something relevant to the problem you're working on)
+
+2. Having some familiarity off the top of your head of what packages are good for/better for solving specific types of problems (things like: oh, seaborn is great for producing high level, detailed visualizations, for tuning, most of that goes down to that matplotlib API; if you need interactive visualizations that aren't TOO advanced in the data you're trying to represent, maybe check out plotly; etc.).. this will mainly hurt in interviews, imo because you can look these things up for the most part if you need to.
+
+3. Being able to realize when Chat GPT is wrong/has done something inefficient. Sometimes, it confidently responds to a problem, gives you a solution, and tells you the output that you're expecting. The output turns out to not be the actual output of the code, and you could be left frustrated and trying to debug a lot of small mistakes that have compounded into something large later. For example, I let it write a semi complex regex for me to extract tags for usernames and groups from raw text. I assumed that it got things right since the output matched what I expected. Then, after generating a visualization at the end of my pipeline, I realized the regex failed for a certain set of edge cases, reducing the usefulness of the word cloud I was making. This is another reason I suggest always unit testing, just like with any other software engineering once you move on from prototyping.
+
+There are a lot of advantages to using ChatGPT. Just be sure you give it the same scrutiny you'd give work submitted/turned in by anyone else. Does it pass tests? Is the work documented sufficiently where appropriate? Does it pass any other code requirements created by your org (variable names, docstrings, cyclomatic complexity, brevity/legibility tradeoffs, etc.)?
+- Definitely not cheating yourself. The real world is all about leveraging resources to your advantage.
+- You should do a few projects from scratch. Do the whole thing with just the documentation so you really learn how these packages work. Once you have built some understanding it's fine to use shortcuts.
+- I’d say since you’re in school you should make every effort to drill the concepts and code in your brain as much as possible. Come interview time you will not be allowed to use chat gpt. You’re in school anyway so I’d say use chat got when you have a job but not when you’re in school.

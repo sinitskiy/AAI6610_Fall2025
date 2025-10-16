@@ -1,0 +1,159 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1anywl7/what_tools_do_you_use_for_ds_and_analytics_what/
+Title: What tools do you use for DS and Analytics? What issues do you have with them?
+
+Content:
+**Here's my stack:** I typically do business analyses rather than deep Machine Learning projects. 
+
+1. SQL (always and everywhere) (frequency = very high)
+
+2. Internal dashboarding tool in my company (point it at the SQL output) (frequency = very high)
+
+3. Spreadsheet (frequency = medium)
+
+4. Colab (frequency = low)
+
+&#x200B;
+
+**My Issues:** overarching one is the time to get what I need meaning I do less analysis. 
+
+1. Overriding issue is that I'm not that quick in Colab and it's a bit clunky to manage so I end up using it less even though it is super powerful. 
+
+2. SQL is so nice. But also takes time for relatively simple queries. And using someone else's dashboard isn't always my desired approach because I want my metrics and analysis. 
+
+Comments:
+- Databricks: Pyspark, Pandas, Sedona, SQL (high).  
+VSCode:  Pandas (medium).  
+RStudio  R + Tidyverse (medium).  
+with GitHub and venv/renv.
+- * pyspark for data wrangling, pointing at various SQL databases and an S3-compatible lake (high)
+  * Python analytics and ML stack (high)
+  * Jupyter notebooks for analyses, VS code as IDE for development (high)
+  * Kubernetes for orchestration (high)
+  * Airflow for batch scheduling (high)
+  * Flask on apache as API backend (low)
+  * Kafka for stream processing (low)
+  * MLflow for experiments and model storage (medium)
+  * Gitlab (obsessively high)
+  * Various Enterprise tools for integration (splunk, argocd, Prometheus, grafana, artifactory, as required)
+
+No major issues with tooling. Sucks working only on prem and would be nice to have the flexibility that cloud provides. Not in this job though, maybe the next one.
+
+MLflow is great for experiments, but I'm not a fan of it as a model storage backend. Spark is starting to show its age but it is so capable that any tool trying to dethrone it is going to have an uphill battle.
+- I use Dataiku since 2016. Both the community and enterprise version. I am not convinced it is the best for a scalable solution if you want to go public with your models, but for EDA and experimentation it is beyond amazing. 
+
+I do all my EDA there. Data engineering. Dashboarding. ML modelling. Automation. Monitoring. Everything in one place. 
+
+When I mention “scalable”, it is possible to do it, but I think it’s far more work compared to a aws solution.
+- I do almost everything in R while ssh'ed into a Linux box.
+- Python: ML stack, polars, internal packages for querying data from AWS (very high)
+
+GitKraken: excellent for visualizing commits, handling merge conflicts, but can be clunky at times (very high)
+
+Spreadsheets: mainly for quick ad hoc tasks (med)
+
+Jupyter Notebooks/ quarto docs: used mainly for POC projects (low)
+
+Use VSCode as my IDE. Like it because it’s lightweight out of the box but have many extensions installed.
+- I have a Data analytics position.
+I use SQL very often
+I use PowerBI to build dashboards and we used Tableau before
+I use python for some data visualization
+And I use alteryx for some extracts
+Actually not many issues 
+Alteryx is pretty badass, although it's kinda expensive
+- if you know/don't mind learning R, I find their sql wrappers to be way more efficient than writing straight sql (which I'm assuming is what you meant)
+
+https://dbplyr.tidyverse.org/articles/dbplyr.html
+- Jupyterlab local and Sagemaker VM (high)
+
+SQL in MSSQL, MySQL, and Athena (high)
+
+Databricks (medium)
+
+Rstudio (medium)
+
+VSCode (low)
+
+Tableau (low)
+
+Sagemaker instances are very convenient to just spin up and go on a project, but it is difficult to keep a consistent work environment there so I find that I have an ever growing list of terminal commands to execute every time I start them up.
+
+SQL is as SQL does.
+
+Databricks/Spark is quite slow for anything that isn't performed on a massive, efficiently stored dataset. I think the reliance on it is a little bit lazy in most cases because you can usually get  the same answers by intelligently sampling via a SQL query and perform the analysis 10x faster on a single machine.  Of course it isn't always obvious how to intelligently sample a dataset so it certainly has its uses.
+
+R is only limited for analysis in that not everyone in my org really knows it so if it is anything going into a repo it has to be python. I mostly use it for ggplot when I need to make a good looking presentation.
+
+I honestly only use VSCode because it is good for formatting and viewing large data files. I find it's forest of plugins intimidating so I have never really gotten it set up well for coding. That said I understand that it works great for many.
+
+I hate Tableau. It's incredibly limited in much the same way as any GUI based dashboarding software but I seem to remember the Power BI of 4-5 years ago being more flexible than the current Tableau. If it was up to me, every DS team would have sufficient frontend support to use something like flask or shiny if they are building dashboards.
+- Super interesting everyone! Large variety of tools used across the board! Here's a summary of the results from everyone in table format with a roughly estimated importance score. Hope it's useful! 
+
+| Use Case                        | Sub-Use Case                | Tools                                         | Description                                                                | Importance Score |
+|---------------------------------|-----------------------------|-----------------------------------------------|----------------------------------------------------------------------------|------------------|
+| Data Processing and Transformation | Data Manipulation & Querying | SQL                                           | Writing and executing queries to manipulate and retrieve data             | 5                |
+|                                 | Complex Data Processing     | Databricks (Pyspark, Pandas, Sedona), Pyspark, Python | Handling large datasets, complex transformations, and analytics            | 4                |
+|                                 | Workflow Automation         | Airflow                                       | Automating and scheduling complex data pipelines                           | 4                |
+| Development and Version Control | Code Repository             | GitHub/GitLab                                 | Storing, tracking, and collaborating on code development                   | 5                |
+|                                 | Integrated Development Environment | VSCode, Jupyter Notebooks/Quarto, RStudio    | Environments for coding, debugging, and executing code                     | 4                |
+| Orchestration and Deployment    | Container Orchestration     | Kubernetes, Docker/K8                        | Managing containerized applications for deployment and scaling             | 3                |
+| Data Visualization and Dashboarding | Interactive Dashboards      | Tableau/Power BI, Internal dashboarding tool  | Creating interactive visualizations and dashboards for data analysis       | 4                |
+|                                 | Ad Hoc Analysis             | Spreadsheets                                  | Quick and flexible data analysis and visualization                         | 3                |
+| Experimental and Model Management | Experiment Tracking         | MLflow                                        | Tracking experiments, managing models, and storing artifacts               | 3                |
+| Stream Processing              | Real-Time Data Processing   | Kafka                                         | Processing and analyzing data streams in real time                         | 2                |
+| Cloud and Infrastructure       | Cloud Services              | AWS, Azure Services                           | Utilizing cloud platforms for computing, storage, and various services     | 4                |
+- 1. Google sheet 
+
+2. Colab
+
+3. PowerBI
+
+I run a DS / AI company so I don’t really need to do the actual analytics. 
+
+Most of my time spent on evaluating tools and frameworks when my team propose one, understand why they choose one over another.
+
+Then I try to run some quick mini analysis over client datasets or open data before delivering a keynote or meeting a new client from another industry.
+- 1. Elasticsearch (high)
+2. Neo4j (high)
+3. AWS (high)
+4. GitHub/gitlab (high)
+5. Unix/Linux (high)
+6. VS Code (high)
+7. Airflow (medium)
+8. Docker/K8 (medium)
+9. Jupyter Notebooks (low)
+- Spark has a lot of functionality missing. If you've worked with python pandas and then use spark for big data, you are in for a lot of headache
+- SQL: Amazon Redshift (high)
+
+Tableau/Power BI (high)
+
+GitHub (low)
+
+Excel (low)
+
+Jupyter/pandas (low)
+- RemindMe! 2 days
+- Mostly SQL and R at work, with occasional PowerBI (although usually other team members do dashboards). I also Stata for personal projects (fantasy baseball) since I developed my code for projections and valuations when I still used that a lot and haven't bothered to switch it over to R. Also use Excel for certain deliverables where leadership is most comfortable having it in a spreadsheet that they're comfortable interacting with. 
+
+FWIW, I actually prefer Python to R (less cumbersome syntax), but my organization uses R for whatever historical reasons.
+
+EDIT: We also use Azure DevOps for project management and repositories for version control.
+- 1. SQL and various modelling and other tools (Sometimes even MS-Access if that is convenient or sqlite on linux)
+2. R-Studio
+3. python
+- Vscode for general python coding,  
+Git  
+Azure Synapse for monthly updating our database and other pipelines  
+SQL  
+QGIS/ FME for geographic data  
+Azure DevOPs for git pipelines  
+NVIM for text finding and replacing
+- Would add JupyterLab for fast experimentation and visualization
+- - Azure Data Explorer, which is a distributed, append-only, column-oriented database for logs that has its own query language
+- An internal workflow scheduler GUI tool
+- Jupyter and Quarto for one-time deep dive analysis projects
+- Power BI for dashboards
+
+Biggest issue is lack of a data modeling layer between the raw log event data in the database and Power BI. No data warehouse, no fact/dimension tables, no metrics. You either model in Power BI or reimplement everything from scratch in your query on raw logs. So there's no "self service" below the dashboard layer and different people will always get different answers to the same question. This makes it hard for PMs and managers to use data, they usually have to ask a data scientist.
+- I use BlocksDS SDK

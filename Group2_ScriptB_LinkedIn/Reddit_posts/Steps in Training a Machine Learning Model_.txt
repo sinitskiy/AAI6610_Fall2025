@@ -1,0 +1,32 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jf0dc6/steps_in_training_a_machine_learning_model/
+Title: Steps in Training a Machine Learning Model?
+
+Content:
+Hey everyone,
+
+I understand the basics of **data collection and preprocessing**, but I’m struggling to find good tutorials on how to actually **train a model**. Some guides suggest using **libraries like PyTorch**, while others recommend doing it **from scratch with NumPy**.
+
+Can someone break down the **steps involved in training a model**? Also, if possible, could you share a **beginner-friendly resource**—maybe something simple like classifying whether a number is **1 or 0**?
+
+I’d really appreciate any guidance! Thanks in advance.
+
+Comments:
+- Please share links of pages suggesting to train models from scratch with numpy, if you're not a bot
+- >maybe something simple like classifying whether a number is **1 or 0**?
+
+Start with the XOR problem. Make a logic table for XOR. Your input is X1, X2 and output Y for the two perceptron. Best to do this on pen and paper. I am usually very against this, but chatgpt came up with a decent exercise after prompting "Make an exercise to update the weights on the XOR problem".
+- I'd suggest using a dataset and dataloader from pytorch to organize and load the data in batches, enable gradients in the model, define a loss function and an optimizer, make a loop, inside it you apply the model, calculate and store the loss with the loss function, upgrade the model with the optimizer, view the losses song the loop steps
+- hello - I am currently looking at two sources suggestion to train models from scratch   
+[https://www.youtube.com/watch?v=ilp3ZHTKPNg](https://www.youtube.com/watch?v=ilp3ZHTKPNg)  
+
+
+As for the second link - I have not read it yet :>
+
+[https://www.geeksforgeeks.org/implementation-of-neural-network-from-scratch-using-numpy/](https://www.geeksforgeeks.org/implementation-of-neural-network-from-scratch-using-numpy/)
+- By the way: this question would be suited very well for a bot (like ChatGPT).
+- A toy model for learning purposes is the only reason
+- will take note of this. Thankyouuu :>
+- oh, I actually ask chatGPT to help me construct my question. Sorry
+- This is an exercise the first year CS students have to do at my university. It's good exercise. Make sure you understand it completely before even attempting anything with neural networks in Python. After this XOR problem, a good exercise would be to extent the network into having 2 hidden layers and calculating the weight updates using the chain rule for derivatives. Good luck!
+- What does it say if you ask it the question you asked it to construct?

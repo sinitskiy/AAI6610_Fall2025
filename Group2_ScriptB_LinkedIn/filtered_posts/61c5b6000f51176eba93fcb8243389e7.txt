@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/gus-lott-25780518_why-language-models-hallucinate-activity-7370063463383212032-M0j8
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Gus Lott的动态
+Gus Lott
+
+Educator, Writer, & AI Specialist | Physicist & Neuroscientist | Engineer & Robotics Expert | Pastor & EMT
+
+1 个月
+
+When a child gets a 90% on their exam, we don't say, "Peter hallucinated 10% of the time."  When attempting to "compress" the entire internet into a model, many of the facts can be lost like the details in hair in a JPEG compressed image.  The trick is getting a model to also predict its uncertainty.
+
+This was always the hard and expensive part when I did this work in industry, but it was the special sauce that was the key to my success.  Propagating uncertainty through high dimensional models was magic that I defended to the National Geospatial Intelligence Agency (NGA) and it was the key to effectively integrating visual data into the Prime Air fleet navigation algorithm (an Extended Kalman Filter) at Amazon.
+
+Many engineers who built Visual SLAM systems would happily deliver the pose data of cameras, but understanding the uncertainty of those poses was relegated to chapter 5 in Hartley & Zisserman and most people skipped right over that.  But understanding degeneracies and critical configurations was absolutely required for mission critical applications involving safety.  I spent a long time training our Austrian team at prime air in the appropriate error propagation techniques.
+
+A language model has uncertainty in the same way.  The simplest solution to estimating uncertainty is through Monte Carlo Analysis.  I asked claude an esoteric question about the name of an episode of a rare TV show, and I asked it this question 100 times.  30% of the time it got it right while the rest of the time the answers varied... often with the same first word.  Kind of like saying "I know it starts with 'The Future...' but what is the full name? it's just on the tip of my tongue!"  And hidden in those 100 answers was both the correct answer and the uncertainty.  This was a brute force way of exploring m

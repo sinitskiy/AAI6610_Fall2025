@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1nlvqls/methodsalgorithms_to_measure_similarity_between/
+Title: Methods/Algorithms to Measure similarity between two expression vectors
+
+Content:
+Hello everyone, 
+
+I am trying to validate some drug-target pair that were top ranked by a machine learning workflow candidate using SigCom LINCS dataset for transcriptomics profile of perturbation across different cell lines by CRISPR KO or drugs. our hypothesis is that pairs with high selectivity score from the machine learning workflow should have a similar transcriptomic profile, however the correlation between the drug perturbation and crispr knockout of the gene target have inconsitant correlation across **known drug-target pairs.** 
+
+my main question are there other measure of similarity that i can use in my situation, i came across cosine similarity in a [paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC6454499/) with same dataset, and checked with ChatGPT, however i am not sure if they are suitable for my case due to my poor mathematical background. 
+
+Comments:
+- What you're looking for is called a distance metric (or a similarity metric). Cosine (uncentered correlation) is popular because it allows the two vectors to be on different scales but with the same zero point, which makes sense for some of the ways gene expression is commonly measured. Pearson correlation (centered) also allows a shift in the means of the two vectors, which isn't always what you want. Euclidean distance works well only if you're very sure you've normalized everything to the same scale correctly. Rank (Spearman) correlation is the safest fallback for when you have no confidence in your normalization.
+- Cosine is good but two things to note:
+
+
+1. It works best if your vectors are difference vectors.  E.g. your gene expression vector is (perturbed expression) - (control expression).  Things should be in a log scale before you subtract.
+
+
+2. Cosine similarity is just concerned with direction and not distance.  So if two perturbations have the same effect direction but one is 3x as strong, they'll still have a low distance.  For your application this is probably a desired property but good to be aware of it either way.
+- Yes you can go for cosine similarity, which basically measures the distances or the similarity between two vectors. Mainly used in NLP but in this case you can make use of it too.
+- Thank you for the reply, that was helpful. I read the paper for the dataset, and they stated that they accounted for batch effects and normalized the gene expression. Do you have any resources where i could delve deeper into the subject?
+- Hi Deto, thank you for the reply. 
+
+\>It works best if your vectors are difference vectors.  E.g. your gene expression vector is (perturbed expression) - (control expression).  Things should be in a log scale before you subtract.
+
+so they are two dataset, the original one from cmap use a Moderate Z Score to quantify how much the gene changed compared to a set of controls. and the CD method that finds the single vector in gene-expression space which best separates control and perturbed samples, with each gene’s signed weight showing how strongly and in which direction it contributes to the difference. which do you recommend to use in your opinion ?
+
+\>Cosine similarity is just concerned with direction and not distance.  So if two perturbations have the same effect direction but one is 3x as strong, they'll still have a low distance.  For your application this is probably a desired property but good to be aware of it either way.
+
+  
+that a good point.
+- Sounds like probably cosine similarity would work well in that case.  Try it and see if the results look reasonable

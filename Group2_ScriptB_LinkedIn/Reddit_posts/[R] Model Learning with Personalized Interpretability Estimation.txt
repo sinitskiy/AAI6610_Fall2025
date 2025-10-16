@@ -1,0 +1,20 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/mzjefr/r_model_learning_with_personalized/
+Title: [R] Model Learning with Personalized Interpretability Estimation
+
+Content:
+For high-stakes applications (e.g., cancer treatment), AI cannot be used lightly and recklessly. We need models we can trust and, to achieve trust, interpretability is a key factor.
+
+The field of eXplainable AI (XAI) concerns *both* methods to explain the behavior of black-boxes such as deep neural networks, and methods to generate white-boxes, i.e., models that are interpretable (think of, e.g., sparse linear models, small decision trees, symbolic expressions).
+There are very good reasons why the latter are more desirable than the former, see e.g., the famous paper by Cynthia Rudin: https://arxiv.org/abs/1811.10154
+
+We proposed a new proof-of-concept work that looks at whether XAI for interpretable model generation can and should be *personalized*. (What follows is essentially taken from the abstract.)
+In fact, current algorithms for the synthesis of *potentially* interpretable models rely on objectives or regularization terms that represent interpretability only coarsely (e.g., model size) and are not designed for a specific user. 
+Yet, interpretability is intrinsically subjective. 
+We propose an approach for the synthesis of models that are tailored to the user by enabling the user to steer the model synthesis process according to her or his preferences. 
+We use a bi-objective evolutionary algorithm to synthesize models with trade-offs between accuracy and a user-specific notion of interpretability. The latter is estimated by a neural network that is trained concurrently to the evolution using the feedback of the user, which is collected using uncertainty-based active learning. To maximize usability, the user is only asked to tell, given two models at the time, which one is less complex. With experiments on two real-world datasets involving 61 participants, we find that our approach is capable of learning estimations of interpretability that can be very different for different users. Moreover, the users tend to prefer models found using the proposed approach over models found using non-personalized interpretability indices.
+
+Preprint: https://arxiv.org/abs/2104.06060 
+(Accepted to appear at the EC+DM workshop at GECCO 2021)
+
+Comments:

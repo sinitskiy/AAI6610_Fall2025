@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/kerimgenc_yale-activity-7284948146755923968-0z3R
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Kerim Genc
+
+Sr. Staff Product Manager | PhD in Biomedical Engineering | Build Relationships and Enable Real World Deployment of Image-Based AI
+
+8 个月  已编辑
+
+There is so much useful information, we have to keep sharing it!
+
+We recently had a webinar with Yale University School of Medicine about their journey towards developing a clinically relevant AI tool for brain tumor segmentation.  Since there was so much good information that I think will be useful to the community, I will be sharing bite sized clips from the webinar over the coming weeks.
+
+Clip 1: Daniel Wiznia telling us about the exciting #Yale University MS program in personalized Medicine and Applied Engineering.  If you are interested in joining the field of personalized medicine, I highly recommend this program!
+
+
+Link to the original webinar:
+https://lnkd.in/g_XTqyxY
+
+Synopsys Simpleware Software
+
+…展开
+26
+赞
+评论
+分享
+Transcript
+Transcript
+We have also. Uh, started at Yale and new masters program that's now in its third year and the program, it's called a personalized medicine and applied engineering masters program. So Doctor Tomasini and I were the Co directors of this program and it's a one year masters degree and the students learn how to take high resolution imaging, MRI, CT, ultrasound and then translate. That into 3D models and then take those 3D models and either 3D print them, put them into a robotics XR computer navigated environment, conduct research, computer simulations, finite element analysis. They also spend a full semester in the hospital shadowing clinicians learning how at Yale we take personalized medicine. From a research environment and translated into the clinical environment and then they also in that year. It's a busy year complete a masters thesis project. If you're interested in learning more about it, here's a QR code just to our website about the masters program. And if you have any questions, always feel free to e-mail me about it.
+
+要查看或添

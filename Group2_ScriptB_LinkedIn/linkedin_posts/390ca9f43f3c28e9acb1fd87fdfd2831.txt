@@ -1,0 +1,81 @@
+URL: https://www.linkedin.com/posts/jerryworkman_smarter-spectroscopy-with-a-new-machine-learning-activity-7366886109106098176-4vir
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jerome Workman的动态
+Jerome Workman
+
+Executive Editor at MJH Life Sciences and Analytically Speaking Podcast Host
+
+1 个月
+
+Smarter Spectroscopy With a New Machine Learning Approach to Estimate Prediction Uncertainty
+A new study demonstrates how a machine learning technique, quantile regression forest, can provide both accurate predictions and sample-specific uncertainty estimates from infrared spectroscopic data. The work was applied to soil and agricultural samples, highlighting its value for chemometric modeling.
+https://lnkd.in/gd249p3r
+
+16
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Harrison Katz
+
+Tech Lead Manager - Forecasting Data Science @ Airbnb
+
+1 个月
+
+Excited to share that my paper with Rob Weiss, titled “Bayesian Shrinkage in High-Dimensional VAR Models: A Comparative Study,” has been published in the International Journal of Statistics and Probability. The study offers a systematic comparison of shrinkage methods in high-dimensional vector autoregressive (VAR) models, addressing over-parameterization and lag order uncertainty.
+
+Check out the full article here: https://lnkd.in/gwj7XDMQ
+
+Bayesian Shrinkage in High-Dimensional VAR Models: A Comparative Study
+ccsenet.org
+33
+1 条评论
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+Tibor Szilvási
+
+Assistant Professor at The University of Alabama
+
+2 周
+
+The cover is out for our paper "Modeling the Behavior of Complex Aqueous Electrolytes" where we show how machine learning interatomic potentials can provide insights into the structure of electrolytes.
+
+Paper: https://lnkd.in/gegspy2K
+
+131
+2 条评论
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+Laurent Duval
+3 周
+
+#OpenData publication for reservoir modelling, compression algorithms and machine learning worflows, a graphical abstract Christophe Preux Frederic Payan Lauriane Mathon - Bouard
+
+LUNDIsim: Model Meshes for Flow Simulation and Scientific Data Compression Benchmarks
+
+https://lnkd.in/eBaygDWU
+
+Increasing scientific data sizes impact computability, interpretability, and sustainability. 

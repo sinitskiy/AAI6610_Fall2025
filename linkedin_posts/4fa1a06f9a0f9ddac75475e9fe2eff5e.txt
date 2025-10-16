@@ -1,0 +1,9 @@
+URL: https://www.linkedin.com/posts/adamfarquhar_detecting-hallucinations-in-large-language-activity-7209254878559227904-lnLZ
+Date: 2025-09-24
+Author: Unknown
+
+It's been a while since I've posted anything on LinkedIn! Today, I'd like to share some work by my son, Sebastian Farquhar, a research scientist at Google DeepMind. His recent paper describes a new algorithm to determine if an LLM is hallucinating (under certain conditions) has just come out in Nature. You can find it here: https://lnkd.in/ekYuibv2
+
+Additionally, there's a very accessible article on Sebastian's work in Time Magazine. Check it out here: https://lnkd.in/ehrBkru9 
+
+I'm excited about this work because it could make a practical difference in an area that has been vexing hundreds of millions of people, it has a solid formal foundation, and it is also easy to understand.

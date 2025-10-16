@@ -1,0 +1,53 @@
+URL: https://www.linkedin.com/posts/ehdecker_maybe-were-a-lot-more-like-ai-than-ai-is-activity-7255219580350914560-PPGq
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ethan Decker的动态
+Ethan Decker
+
+Founder @ Applied Brand Science. Helping marketing teams raise their game with brand science.
+
+11 个月
+
+Maybe we're a lot more like AI than AI is like us.
+
+Hear me out. 
+
+So the latest large language models (LLMs, like GPT4.o, Claude 3.5, Grok-1, etc.) sound a LOT like smart humans. They ace SATs & write code & compose songs & invent cocktail recipes (thank you CocktailGPT).
+
+What's crazy is, LLMS are essentially machines that "predict the next word in the sentence." They get good at it by practicing a billion times, using trillions of data points, and getting corrected on their answers. 
+
+And it doesn't know itself how it does it, or how it knows what it knows.
+
+But here's the thing: I MYSELF don't even know the next word in MY OWN SENTENCE. 
+
+In the sense that 
+🤖  I can't even predict WHAT I'm about to say, and
+🤖  I can't say HOW I string together a sentence.
+
+Where do these strings of words come from? How do you know what word to even start with? How do you know what word comes next? 
+
+Our brains know. But it's not available to us. 
+
+A more contained example of how our 'thinking' is mostly (maybe entirely) unconscious: word scrambles. Like this big African animal:
+FEFIRGA
+
+If you figure it out, how does your brain do it? It's not brute force. It's not logic. It's 99.999% unconscious. We have no clue how our brain does it! It just does.
+
+Now, you might think, "Well, we have physical experiences with the world and computers don't. They don't 'understand' what they speak of. They're just lines of code and servers and bits and bytes and microchips and electricity."
+
+But here's the deal: a neuron doesn't "know" what a fried egg "tastes" like. Does it? It's just a bunch of goo with electricity going through it.
+
+Sound familiar? 
+
+So in a weird way, maybe our own thinking is a probabilistic model that predicts the best "next word in the sentence," based on practicing a billion times, on trillions of

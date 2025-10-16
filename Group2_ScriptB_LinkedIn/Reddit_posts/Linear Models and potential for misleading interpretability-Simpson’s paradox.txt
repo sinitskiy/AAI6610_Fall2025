@@ -1,0 +1,69 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/wcp9fj/linear_models_and_potential_for_misleading/
+Title: Linear Models and potential for misleading interpretability-Simpson’s paradox
+
+Content:
+Been seeing posts on “why not always use boosting/RFs” etc and one of the things that always comes up is “interpretability” and “inference”.
+
+However one of the basic assumptions of stat inference is that the model is specified correctly, that it captures the data generating process. If the DGP is nonlinear (and it could be if there is no theory supporting the linearity) then the inference would be off.
+
+This example shows a case where using a black box model outperformed a simple linear model *even* for inference: https://multithreaded.stitchfix.com/blog/2021/07/23/double-robust-estimator/
+
+There was a missed interaction term and then despite including the relevant variables, confounding bias still occured to the point of opposite signs and all causal interpretation (even in this perfect simulated scenario) is invalidated. In real life you never know if you missed it. 
+
+Of course you can use GAMs, splines, transformations too but say we are comparing to naive linear models which I think is what most people do. (When you use GAM/splines you have to resort to techniques like this anyways)
+
+So in some sense, with a lot of data and lack of knowledge about the DGP functional form, but with knowledge of the problem structure and a DAG it really does seem like “why not throw ML at it”. These new tools like TMLE can still give you a CI/p value so even that isn’t an issue.
+
+An even simpler approach is to just treat the model as a black box:
+
+1) perturb the treatment variable in the whole dataset by +- eps if continuous . If its binary then set it to 0/1
+
+2) make predictions
+
+3) take the difference (divide by 2eps if continuous)
+
+4) Average it
+
+This will give you the ATE despite your model being some super complex black box. (For uncertainty, you would need to use the full TMLE approach).
+
+Thoughts? It seems like these approaches contradict the traditional stats inference and prediction divide.
+
+The only thing is the estimate is not a model parameter, but who cares? You are still getting everything like a CI/p value with TMLE and with a “simple” model you risk Simpson’s paradox. It seems like if you want the “perfect” estimate even for inference, then ML is the way to go with big data.
+
+Comments:
+- Just like your last sentence, if you have big data, it is likely that a more modern approach would yield better inference and estimate. But I still think linear models still have their usefulness in the below areas
+
+* Limited data. Think about macroeconomic data and clinical trials. The observation points are limited and there's almost no way you can permutate inputs (impossible for econ and very strict in trials)
+* Stability in inference. Overall, if specified appropriately, linear models estimate the mean effects, which should come as more stable. Intuitively it could be like linear model: var(mean(individual effect)) < black box model: mean(var(individual effect))
+* Extrapolability: the extrapolation and differentiability of a linear model are easy to predict and control. Less can be said about a black box model. For instance, a tree-based model will have f\`(x) == 0 when x is at either end of the bins that are confined by the training data. Therefore, this may not be a desirable property if we want to study price elasticity
+- Nothing surprising to me. If you get a better estimator that generalises, then use that one.
+- What if the treatment effect (TE) depends also on other covariates? I understand that most often than not, researches are interested in the ATE because is just a number and easy to interpret, but also, most often than not the treatment effect interacts with other covariates, or in layman terms, the treatment effect depends on patient/subject characteristics. The way those interactions can be specified opens a really complex set of possibilities. In practical terms, at least for me, I prefer to found meaningful interactions with the treatment effect which brings new insights to the possible causal relations between different variables and the treatment effect. For the researcher this means to understand where and when the treatment is most or less effective, giving him valuable information to take decisions accordingly. For this I try to use as much as I can the [Generalized Linear Mixed-Effects Model Trees](https://link.springer.com/article/10.3758/s13428-017-0971-x)   
+I wonder if the methods presented by OP can handle also scenarios such as this, at least if ATE can be recovered when the TE also depends on other covariates.
+- Well in CTs presumably you are randomizing, so in that case even a t test should work (no confounders). Unless you are after subgroup effects and stuff then you could use ML (but that isn’t often the primary analysis which is to get the ATE only). I guess to lower variance is the only other place, but then model specification does come into play—and lets be realistic how often is BMI “linearly related” to a disease (assume we didn’t restrict to high or low)—it is absurd even from common sense perspective as most of the time under and overweight have health issues. 
+
+Yet in so many health studies you see naive linear additive adjustment. There is no way it describes the data generation process. 
+
+At the very least even with small datasets, you can use splines/GAMs and do creative feature engineering and use some regularized regression and use methods like TMLE. Id consider that becomes more “ML ish” even though it is still classic stats. 
+
+With GAMs also you do ensure f(x) is continuous/smooth. For small datasets they would be the “go to”.
+
+And if your dataset is too small even for that, then I doubt you can extract much accurate causal inferences to begin with (outside an RCT, or even in an RCT but at a subgroup level). 
+
+The biggest thing with number 2 is how do you ensure outside of a designed study that your linear additive model is correctly specified? Where is the physics proof that your variables additively affect the outcome?
+
+If you take a strict DGP view and want as close to a 100% exact causal answer on observational data even the traditional stat approaches have weaknesses. You get simplicity at the cost of unknown confounding bias.
+- The surprising thing is that estimator doesn’t even need to be “interpretable”. Many people think that for inference the model needs to be a GLM and that you can’t/shouldnt use ML.
+
+The above contradicts that, you can build a better estimator and get more accurate inference despite throwing it into a complete black box model. No coefficients required for it
+
+And the other surprising thing is in striving for interpretable models, one can actually get confounding bias that makes the effect size the opposite direction—thus misleading the interpretability and you wouldn’t even know. I think its better to have 0 interpretability than misleading interpretability.
+- I think that’s just a CATE (conditional ATE). I think causal forests (which are also ML) were also invented for this purpose, and are also tree based but not mixed effects. 
+
+In longitudinal observational setting, mixed models can be biased (as opposed to experimental) because of treatment to confounder feedback (the treatment at the previous time point affecting the confounder at the current is not accounted for with LMMs)
+
+When ATE depends on covariates if the interest is in the ATE only then the above methods like TMLE simply average over the covariates empirical distribution in the data (not the same as the effect at the average of the covariates except in linear additive settings, due to Jensen’s inequality). This is actually the big plus of ML causal methods in that you don’t need to specify how the covariates interact, which is almost never known.
+- Yeah I should have said nothing surprising as in this is known, Microsoft even put out DoWhy to wrap all of this into a neat package for causal inference from observational data. It's just known it let's you do causal inference where you can't say anything about your data generating function. 
+
+But you're addressing something you've seen on this sub. It definitely doesn't need to be a glm.
+- Yea, I just feel its not well known though. Most people think “use interpretable models for inference”, but as the methods in that package shows its not necessary and you can estimate and quantify uncertainty in causal effects even with uninterpretable black box models and use that essentially as the interpretation

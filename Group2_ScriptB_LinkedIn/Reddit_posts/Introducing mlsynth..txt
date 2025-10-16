@@ -1,0 +1,36 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1i2vmuv/introducing_mlsynth/
+Title: Introducing mlsynth.
+
+Content:
+Hi DS Reddit. For those of who you work in causal inference, you may be interested in a Python library I developed called "machine learning synthetic control", or "mlsynth" for short.
+
+As I write in its [documentation](https://mlsynth.readthedocs.io), mlsynth is a one-stop shop of sorts for implementing some of the most recent synthetic control based estimators, many of which use machine learning methodologies. Currently, the software is hosted from my GitHub, and it is still undergoing developments (i.e., for computing inference for point-estinates/user friendliness).
+
+mlsynth implements the following methods: [Augmented Difference-in-Differences](https://doi.org/10.1287/mksc.2022.1406), CLUSTERSCM, [Debiased Convex Regression](https://doi.org/10.1287/inte.2023.0028)  (undocumented at present), the [Factor Model Approach](https://doi.org/10.1177/00222437221137533), [Forward Difference-in-Differences](https://doi.org/10.1287/mksc.2022.1406), [Forward Selected Panel Data Approach](https://doi.org/10.1016/j.jeconom.2021.04.009), the [L1PDA](https://doi.org/10.1002/jae.1230), the [L2-relaxation PDA](https://doi.org/10.13140/RG.2.2.11670.97609), [Principal Component Regression](https://doi.org/10.1080/01621459.2021.1928513), [Robust PCA Synthetic Control](https://academicworks.cuny.edu/gc_etds/4984), [Synthetic Control Method (Vanilla SCM)](https://doi.org/10.1198/jasa.2009.ap08746), [Two Step Synthetic Control](https://doi.org/10.1287/mnsc.2023.4878)  and finally the two newest methods which are not yet fully documented, [Proximal Inference-SCM](https://arxiv.org/abs/2108.13935) and [Proximal Inference with Surrogates-SCM](https://arxiv.org/abs/2308.09527)  
+
+While each method has their own options (e.g., Bayesian or not, l2 relaxer versus L1), all methods have a common syntax which allows us to switch seamlessly between methods without needing to switch softwares or learn a new syntax for a different library/command. It also brings forth methods which either had no public documentation yet, or were written mostly for/in MATLAB.
+
+The documentation that currently exists explains installation as well as the basic methodology of each method. I also provide worked examples from the academic literature to serve as a reference point for how one may use the code to estimate causal effects.
+
+So, to anybody who uses Python and causal methods on a regular basis, this is an option that may suit your needs better than standard techniques.
+
+Comments:
+- Very cool, thanks for sharing! I'll definitely be taking a look at this, we use synthetic control estimators all the time in my current role.
+- Sweet! I use generalized synthetic control a lot in my current job- it's our go-to program evaluation tool. I've only used the R package gsynth, so I'll take a look at this. Nice work!
+- Sounds like fun! In tech, presumably?
+- Thank you! Yeah gsynth is everybody's go to seems, that, and augmented SCM.
+
+Actually, the Proximal Inference method that I just finished this morning sort of extends that model, as the authors note in their [paper](https://arxiv.org/abs/2308.09527). [Another one](https://github.com/CongWang141/JMP) does too, but I've not compared these two methods just yet.
+
+One day, someone (maybe me) should write like a mini-handbook on all these, since there are so many SCMS/panel data methods out there that it's hard to know, sometimes, which one you would prefer and when.
+- Yep! Marketing/ecommerce domain.
+- Some folks wrote a little whitepaper about it, check out [https://as.nyu.edu/content/dam/nyu-as/cashtransferlab/documents/RPJHSC\_SyntheticControl\_041122.pdf](https://as.nyu.edu/content/dam/nyu-as/cashtransferlab/documents/RPJHSC_SyntheticControl_041122.pdf)
+- Yes, right. And also in pharma and gaming companies use it predominantly.
+- Yeah I've seen this. I think they miss A LOT of the recent advances (which I talk about in a review paper, and will expound upon in my dissertation), especially the ones that have greater use of machine learning methods. One of the authors frankly didn't know about all these advances, so I'm not blaming them or have anything against them at all, but I think the point about covariates for example is just plain WRONG, we can easily develop synthetic control estimators which do not rely on covariates, and the Robust Synthetic Control estimator is a good example of this, in my opinion.
+
+I also think that we could literally write a small handbook on these, like this is a good start, but what I really meant was like a graduate level mini-textbook!
+- \> which I talk about in a review paper
+
+link?
+- Oh, it's my major area paper for my PHD. Haven't really prepared it for publication just yet, but I'm more than happy to send it to you. It's written mainly for the applied research crowd

@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_epistemic-uncertainty-aware-recommendation-activity-7318604181668302849-rzsJ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+5 个月
+
+🚀 Exploring Epistemic Uncertainty in Recommendation Systems 📊
+
+The task of recommending items to users has been a cornerstone of data science, yet traditional models face significant challenges, particularly in handling explicit feedback and sparse data. 
+
+Recent advancements highlight the limitations of conventional approaches, notably their susceptibility to overfitting and their inability to incorporate epistemic uncertainty in predictions. 
+
+In response, a novel method known as Bayesian Deep Ensemble Collaborative Filtering (BDECF) has been proposed. This innovative framework leverages Bayesian Neural Networks to integrate uncertainty into weight parameters, enhancing model generalization and prediction quality.
+
+Key features of BDECF include:
+
+1. Interpretable Non-linear Matching: Utilizing the attention mechanism for improved user-item embedding interactions.
+  
+2. Ensemble-based Supermodel: This approach fosters robustness and reliability in predictions.
+
+Extensive empirical evaluations across diverse real-world datasets underscore the effectiveness of BDECF and its critical components.
+
+This research signifies a substantial step forward in developing more reliable recommendation systems that can better serve users' needs while addressing inherent uncertainties.
+
+     📈✨
+
+#AI #Algorithms #ArtificialIntelligence #BayesianLearning #DL #DS #DataScience #DeepLearning #ML #MachineLearning #RecommendationSystems #Tech #Technology
+
+Epistemic Uncertainty-aware Recommendation Systems via Bayesian Deep Ensemble Learning
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,134 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+Future Trends in Recommendation Algorithms
+How Ensemble Learning Improves Predictions
+How to Include Uncertainty in Optimization
+Understanding Diagnosis Prediction Reliability in AI
+How to Improve Predictive Accuracy
+How Data Improves Hurricane Predictions
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills &

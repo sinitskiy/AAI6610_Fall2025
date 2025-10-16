@@ -1,0 +1,83 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mixss3/5_essential_survey_papers_on_diffusion_models_for/
+Title: 5 Essential Survey Papers on Diffusion Models for Medical Applications 🧠🩺🦷
+
+Content:
+# Top Review Papers on Diffusion Models for Medical Applications 🧠🩺🦷
+
+In the last few years, diffusion models have evolved from a promising alternative to GANs into the backbone of state-of-the-art generative modeling. Their realism, training stability, and theoretical elegance have made them a staple in natural image generation. But a more specialized transformation is underway, one that is reshaping how we think about medical imaging.
+
+From MRI reconstruction to dental segmentation, diffusion models are being adopted not only for their generative capacity but for their ability to integrate noise, uncertainty, and prior knowledge into the imaging pipeline. If you are just entering this space or want to deepen your understanding of where it is headed, the following five review papers offer a comprehensive, structured overview of the field.
+
+These papers do not just summarize prior work, they provide frameworks, challenges, and perspectives that will shape the next phase of research.
+
+1. Diffusion Models in Medical Imaging, A Comprehensive Survey Published in Medical Image Analysis, 2023
+
+This paper marks the starting point for many in the field. It provides a thorough taxonomy of diffusion-based methods, including denoising diffusion probabilistic models, score-based generative models, and stochastic differential equation frameworks. It organizes medical applications into four core tasks, segmentation, reconstruction, generation, and enhancement.
+
+Why it is important,  
+It surveys over 70 published papers, covering a wide spectrum of imaging modalities such as MRI, CT, PET, and ultrasound  
+It introduces the first structured benchmarking proposal for evaluating diffusion models in clinical settings  
+It clarifies methodological distinctions while connecting them to real-world medical applications
+
+If you want a solid foundational overview, this is the paper to begin with.
+
+2. Computationally Efficient Diffusion Models in Medical Imaging  
+Published on arXiv, 2025  
+arXiv:2505.07866
+
+Diffusion models offer impressive generative capabilities but are often slow and computationally expensive. This review addresses that tradeoff directly, surveying architectures designed for faster inference and lower resource consumption. It covers latent diffusion models, wavelet-based representations, and transformer-diffusion hybrids, all geared toward enabling practical deployment.
+
+Why it is important,  
+It reviews approximately 40 models that explicitly address efficiency, either in model design or inference scheduling  
+It includes a focused discussion on real-time use cases and clinical hardware constraints  
+It is highly relevant for applications in mobile diagnostics, emergency response, and global health systems with limited compute infrastructure
+
+This paper reframes the conversation around what it means to be state-of-the-art, focusing not only on accuracy but on feasibility.
+
+3. Exploring Diffusion Models for Oral Health Applications, A Conceptual Review  
+Published in IEEE Access, 2025  
+DOI:10.1109/ACCESS.2025.3593933
+
+Most reviews treat medical imaging as a general category, but this paper zooms in on oral health, one of the most underserved domains in medical AI. It is the first review to explore how diffusion models are being adapted to dental imaging tasks such as tumor segmentation, orthodontic planning, and artifact reduction.
+
+Why it is important,  
+It focuses on domain-specific applications in panoramic X-rays, CBCT, and 3D intraoral scans  
+It discusses how diffusion is being combined with semantic priors and U-Net backbones for small-data environments  
+It highlights both technical advances and clinical challenges unique to oral diagnostics
+
+For anyone working in dental AI or small-field clinical research, this review is indispensable.
+
+4. Score-Based Generative Models in Medical Imaging  
+Published on arXiv, 2024  
+arXiv:2403.06522
+
+Score-based models are closely related to diffusion models but differ in their training objectives and noise handling. This review provides a technical deep dive into the use of score functions in medical imaging, focusing on tasks such as anomaly detection, modality translation, and synthetic lesion simulation.
+
+Why it is important,  
+It gives a theoretical treatment of score-matching objectives and their implications for medical data  
+It contrasts training-time and inference-time noise schedules and their interpretability  
+It is especially useful for researchers aiming to modify or innovate on the standard diffusion pipeline
+
+This paper connects mathematical rigor with practical insights, making it ideal for advanced research and model development.
+
+5. Physics-Informed Diffusion Models in Biomedical Imaging  
+Published on arXiv, 2024  
+arXiv:2407.10856
+
+This review focuses on an emerging subfield, physics-informed diffusion, where domain knowledge is embedded directly into the generative process. Whether through Fourier priors, inverse problem constraints, or modality-specific physical models, these approaches offer a new level of fidelity and trustworthiness in medical imaging.
+
+Why it is important,  
+It covers techniques for embedding physical constraints into both DDPM and score-based models  
+It addresses applications in MRI, PET, and photoacoustic imaging, where signal modeling is critical  
+It is particularly relevant for high-stakes tasks such as radiotherapy planning or quantitative imaging
+
+This paper bridges the gap between deep learning and traditional signal processing, offering new directions for hybrid approaches.
+
+r/BiomedicalEngineers
+
+r/MachineLearning
+
+r/computervision
+
+Comments:

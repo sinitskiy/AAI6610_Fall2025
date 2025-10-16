@@ -1,0 +1,29 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gpd8in/does_overfitting_matter_if_irl_examples_can_only/
+Title: Does Overfitting Matter If "IRL" Examples Can Only Exactly Match Training Data? 
+
+Content:
+I'm working on a solo project where I have a bot that automatically revives fossil Pokemon from Pokemon Sword & Shield, and I want to whip up a Computer Vision program that automatically stops the program if it detects that the Pokemon is shiny. With how the bot is set up, there's not going to be a lot of variation between what the visuals will be, mostly just the Pokemon showing up, shiny or otherwise, and the area in the map that lets me revive the fossils. 
+
+As I work on getting training data for this, it made me wonder, given the minimal scope of visuals that could show up in the game, if overfitting would be a concern I'd have at all. Or to speak more broadly, in a computer vision program, if the target we're looking for can only exist in a limited fashion, does overfitting matter at all (if that question makes sense)? 
+
+(As an aside, I'm doing this program because I'm still inexperienced to machine learning and want to buff up my resume. Would this be a good project to list, or is it perhaps too small to be worth it, even if I don't have much else on there?)
+
+Comments:
+- How I might think of 'overfitting' in your circumstance is more like this:
+
+* You have a finite list of pokemon. Let's even assume that each pokemon is just a sprite without any animation, so just one fixed image per pokemon.
+* However, the pokemon can be displayed on various backgrounds etc.
+
+So to me, a relevant example of overfitting might be a scenario where your model is trained on images of a type of pokemon only over a desert background. And so when your model sees that same pokemon over the ocean, it fails to recognize the pokemon correctly. This is because it used the background image as a helpful cue to infer the 'correct' answer.
+- Then it's not really overfitting since you'll have 100% metrics (or at least very high scores) on your train, validation AND test sets.
+- Overfitting isn't always the issues it's made out to be, like you say, if the problem domain is very limited it can be perfectly acceptable to overfit to that use case. This can be particularly useful in manufacturing - I might not need a model that can detection object X in all colors, lighting conditions, orientations, etc. It's not person detection for an autonomous car. The conditions of operation are totally different in each use case.
+- [deleted]
+- I don't think the background would be a factor in this case, at least not notably. For the fossil Pokemon, they're all given to you, showing up first on this screen: [https://imgur.com/a/0zCl24P](https://imgur.com/a/0zCl24P)
+
+In this case, it'd just be identifying whether the Pokemon on this background is A) one of the four Pokemon that's available from fossils, and B) whether it has the proper shiny colors. I do recognize though that this would probably want to have some extra negative pictures when I'm going in and out of menus, but at least for the target data I'm looking for, overfitting doesn't seem like it'd be a concern since it'd just have to match an image like this anyway?
+- Right? If your goal is to fit a model very closely to your dataset, and don't want it to cover novel cases, then it's not overfit. It's good-fit.
+- You referring to seeing if the colors on the screen at certain pixels would match?
+- If all you need to do is figure out which one of four known images a new image is identical to, why not just select a patch of pixels in the middle and make an if-else statement?
+- [deleted]
+- Perhaps that could work. (Although I feel like if part of the intent of this is to build up my resume, this would be less useful)

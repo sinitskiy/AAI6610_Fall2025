@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/souvik-chakraborty-998851173_distribution-free-uncertainty-quantification-activity-7273178890406109184-Bg2h
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Souvik Chakraborty的动态
+Souvik Chakraborty
+
+Associate Professor at Indian Institute of Technology, Delhi
+
+9 个月
+
+Updates from the Center of Scientific Computing and Computational Mechanics (#CSCCM) at #IITDelhi
+
+The past week has been highly productive, with exciting milestones and new contributions to the field of computational mechanics, machine learning, and operator learning. Here’s a quick roundup:
+
+A. Publication Alerts 🎉
+1️⃣ Sp²GNO Accepted in CMAME
+Our work on Sp²GNO, an integral kernel-based neural operator, has been accepted in Computer Methods in Applied Mechanics and Engineering (CMAME)! Sp²GNO excels in handling unstructured grids, irregular domains, and boasts zero-shot super-resolution capabilities. It further benefits from integrating spatial and spectral GNNs, accelerating training and enhancing performance in super-resolution scenarios.
+Kudos to Subhankar Sarkar, our PhD scholar at #CSCCM #IITDelhi, for leading this work. Stay tuned for the paper link!
+
+2️⃣ Gaussian Process Operator Accepted in CMAME
+This innovative framework projects inputs into a latent space using a neural operator and trains a Gaussian Process (GP) within that space (end to end). By leveraging Stochastic Dual Descent (SDD), we address GP’s computational challenges, delivering an uncertainty-aware, input-resolution-independent operator learning framework.
+Congratulations to Sawan Kumar, PhD scholar at #CSCCM #IITDelhi, for this impactful contribution. The paper link will be shared soon!
+
+3️⃣ Graph-Based Nonlinear Solver
+Our lightweight graph-based architecture (387 parameters for 1D cases) efficiently solves nonlinear PDEs, offering a scalable solution for challenging computations. Originally initiated by YASH KUMAR (UG intern in 2021) and later advanced by Subhankar Sarkar, this work will appear in the Machine Learning for Computational Science and Engineering.
+We’ll share the link as soon as it’s live.
+
+B. New Preprints 🚀
+1️⃣ UQ in Neur

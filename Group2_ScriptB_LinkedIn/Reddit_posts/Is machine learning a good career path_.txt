@@ -1,0 +1,72 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/191n58i/is_machine_learning_a_good_career_path/
+Title: Is machine learning a good career path?
+
+Content:
+I'm finishing a master's in bioinformatics. Should I choose machine learning (applied to omic analysis) as the topic for my thesis? This would decide my career path. Everyone I know tells me it's a great idea. For those of you with actual experience in the field, are jobs really that good?
+
+EDIT: I have a background in biology.
+
+Comments:
+- Here are my pea-brained thoughts about this as a doctoral student who dove headfirst into the ML/AI rabbit hole and now works at a large pharma doing this.
+
+Pros:
+
+* You will probably never be unemployed for long if you are an actually capable ML/AI engineer. (albeit you may not stay in biopharma)
+* You will probably make more than your standard bioinformatician. (at least at my current employer you do)
+* This field is growing and there will likely be a lot of Director roles available in the next 10-20 years and/or grant monies if you're aiming to be in academia.
+* You'll eventually learn how to do really awesome things. 
+
+Cons:
+
+* The field moves really fast. It can be difficult to keep up with new models/breakthroughs. If you want to be a strong contributor, expect to do reading and coding nearly every day.
+* The money is in the business side. Even if you work in R&D you will likely get roped into helping with ML/AI pipelines for the business side. Also computational R&D groups are often on the chopping block during layoffs. 
+* This field is very competitive and you will be competing with people who actually have no life and love coding non-stop. Be honest with yourself about what work-life balance you find acceptable.
+* You probably need a PhD if you want to be more than an engineer and/or work on the drug development side. 
+
+TLDR: It's a lot of work going down this path. If you don't love it, you'll probably hate your life.
+- I focused on ML for my thesis, and no one I interviewed with seemed interested in it.
+
+This was just prior to the elevation of AI in the public consciousness, so things may be different now.
+
+That aside, my opinion is that things may change in ML in the coming years. Speculatively, I think it'll less about knowing how to set up a model from scratch and more about knowing how to leverage existing models creatively.
+- As someone who pivoted in to ML/AI starting out focusing on it in grad school would have absolutely been easier, I would totally do it.
+- I took this path and got a PhD in bioinformatics ml and can’t find a job right now. The field is not in a good state for jobs. Companies I’ve worked with seem to primarily hire non-bioinfo ML specialists, have them do the work and get the results without knowing any biological relevance and then give the results to research biologists… it’s frustrating. I was really hoping this would be the path to a higher than avg bioinformatics salary after experiencing a stagnant low salary after my undergrad. 
+
+Also I often feel like I studied ML models ABC and companies now want experience with ML models DEF. 
+
+The last job I had they said the company does ML work so I applied and when I was interviewed they said “that’s neat that you have ML experience but we are hiring you to do wetlab QC and you won’t get a chance to use your ML here.”
+- I'm also interested 🤔
+- > This would decide my career path.
+
+&#x200B;
+
+Would, but probably will not. Most of the bioinformaticians I know are working in topics unrelated to their master's thesis.
+
+&#x200B;
+
+In my own case, my master's thesis was the design of a web tool made with Shiny that performed simple text mining on a database of biomedical abstracts looking for genes that may be related with a medical condition of your choosing.
+
+&#x200B;
+
+In my real jobs after that, I have never had to touch Shiny nor perform text mining. Instead, I have done a lot of statistical analysis on clinical data and microbiome datasets.
+
+&#x200B;
+
+That said, my advice is that you choose whatever project and technology scratches an itch in your brain. I chose those tools for my master's thesis, in part, because they were not included in my master's syllabus and I was very curious about them.
+- The thing is, I'm not even an engineer, I'm a biologist. I know how to code but I didn't study software engineering.
+- Nowadays companies will be very excited to advertise a job using ML, talk to you about ML (especially all of their unrealized ambitions), and then pigeon-hole you into writing SQL or creating dashboards all day. That's been my experience, at least.
+- Thanks, I agree as soon as I dive in, the better.
+- Wait, what is your bachelor degree?
+- Why don’t you try applying to some other companies, I have seen lot of companies posting jobs that require knowledge of ML even in bio pharma or computational biology sector, you will probably thrive in it. I would say if you already have a PhD in bioinformatics then you should not really take up jobs that are involved in wet lab because that will really effect you in the long run since the post PhD work experience is very important, after few year they won’t even consider your PhD in bioinformatics if you keep working for a web lab company. That’s what I understood based on my research
+- Also if the salary is low I’d probably advise you to really look for jobs towards bioinformatics side, trust me there are whole lot of jobs out there that pays really well and the requirement is PhD in bioinformatics. So don’t work for wet lab companies!! If you still couldn’t find any jobs then, I advise you to take up a post doc role for a year or so in a complete ML related computational biology lab. Then you’ll definitely be able to step into these role
+- what country are u located in? this is the path i was also going to take, but now i’m worried..
+- That sucks, I think doing plain omic analysis can be a better alternative. Any recomendation?
+- How hard was it working on a subject for masters thesis that you were unfamiliar with?
+- Thanks, yes, I think if I don't delve into machine learning, I will regret it. I can always perform other analyses.
+- Then you need to go get formal education in heavy math and computer experience.
+
+Machine learning is NOT software engineering. It is math and statistics. Very very heavy math.
+- Well that's not very enticing, I guess there is not easy answer
+- To be fair, that’s also true for related roles like bioinformatician, data manager, data science, etc
+- Psychology and Chemistry with a minor in Bio followed by a PhD in Systems Biology

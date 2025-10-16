@@ -1,0 +1,29 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/11gb5aq/research_activelab_active_learning_with_data/
+Title: [Research] ActiveLab: Active Learning with Data Re-Labeling
+
+Content:
+I’m excited to share **ActiveLab**, a better algorithm for practical active learning.
+
+https://preview.redd.it/g4yvrdyrkdla1.png?width=1544&format=png&auto=webp&s=9da4806cfb95297bceb677745831eaa8700ae80f
+
+I recently published a [paper](https://arxiv.org/abs/2301.11856) introducing this novel method and an [open-source](https://github.com/cleanlab/cleanlab) Python implementation that is easy-to-use for all data types (image, text, tabular, audio, etc). For data scientists, I’ve made a quick [Jupyter tutorial](https://github.com/cleanlab/examples/blob/master/active_learning_multiannotator/active_learning.ipynb) to run ActiveLab on your own data. For ML researchers, I’ve made all of our [benchmarking code](https://github.com/cleanlab/multiannotator-benchmarks/tree/main/active_learning_benchmarks) available for reproducibility so you can see for yourself how effective ActiveLab is in practice.
+
+Labeled data is key to train models, but data annotators often make mistakes. One can collect multiple annotations per datapoint to get a more reliable consensus label, but this is expensive! To train the best ML model with the least data labeling, a key question is: **which new data should I label, or which of my current labels should be checked again?**
+
+https://preview.redd.it/wvm5sskokdla1.png?width=960&format=png&auto=webp&s=66412f538e18cb18a4e7e78974da906e53bb5048
+
+ActiveLab automatically answers this question for you, allowing you to train the most accurate ML model via a smaller number of total annotations than required to reach similar accuracy with popular active learning methods.  ActiveLab is highly practical — it runs quickly and works with: any type of ML model, batch settings where many examples are (re)labeled before model retraining, and settings where multiple annotators can label an example (or just one annotator).
+
+If you're interested in reading more, check out my blogpost: [https://cleanlab.ai/blog/active-learning/](https://cleanlab.ai/blog/active-learning/)
+
+Comments:
+- I'm into Active Learning and so hyped to see this. One of the main concerns on the way I understood AL until now is how "restricted" it was and I'm happy that someone is advancing towards this direction
+- This is so cool, exactly what I was looking for. Thanks for making AL more available !
+- I have a dataset that contains 170K images and all images are extracted from videos and each frame represent similar classes just little change in angle of the camera. I believe its not worthy to use all images for training and same for test set.
+
+I used active learning approach for select best images but it did not work maybe lack of understanding.
+
+FYI, I have images with labels how i can make automated way to select the best training images.
+- could this be used to train an improved version of stable diffusion? i don't know much about how it works, but i understand stable diffusion has an encoder (CLIP) that allows to generate the images, could this be trained?
+- Thanks!  I was motivated by the fact that a lot of Active Learning papers seem to be disconnected from practical use-cases and propose overly-complex methodologies that don't generalize across real applications.

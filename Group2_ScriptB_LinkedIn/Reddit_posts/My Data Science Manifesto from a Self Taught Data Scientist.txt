@@ -1,0 +1,181 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hp7pim/my_data_science_manifesto_from_a_self_taught_data/
+Title: My Data Science Manifesto from a Self Taught Data Scientist
+
+Content:
+**Background**
+
+I’m a self-taught data scientist, with about 5 years of data analyst experience and now about 5 years as a Data Scientist. I’m more math minded than the average person, but I’m not special. I have a bachelor’s degree in mechanical engineering, and have worked alongside 6 data scientists, 4 of which have PHDs and the other 2 have a masters. Despite being probably, the 6th out of 7 in natural ability, I have been the 2nd most productive data scientist out of the group.
+
+
+**Gatekeeping**
+
+Every day someone on this subreddit asks some derivative of “what do I need to know to get started in ML/DS?” The answers are always smug and give some insane list of courses and topics one must master. As someone who’s been on both sides, this is attitude extremely annoying and rampart in the industry. I don’t think you can be bad at math and have no pre-requisite knowledge, and be successful, but the levels needed are greatly exaggerated. Most of the people telling you these things are just posturing due to insecurity.
+
+
+
+As a mechanical engineering student, I had at least 3 calculus courses, a linear algebra course, and a probability course, but it was 10+ years before I attempted to become a DS, and I didn’t remember much at all. This sub, and others like it, made me think I had to be an expert in all these topics and many more to even think about trying to become a data scientist. 
+
+
+
+When I started my journey, I would take coding, calculus, stats, linear algebra, etc. courses. I’d take a course, do OK in it, and move onto the next thing. However, eventually I’d get defeated because I realized I couldn’t remember much from the courses I took 3 months prior. It just felt like too much information for me to hold at a single time while working a full-time job. I never got started on actually solving problems because the internet and industry told me I needed to be an expert in all these things.
+
+
+**What you actually need**
+
+The reality is, 95% of the time you only need a basic understanding of these topics. Projects often require a deeper dive into something else, but that's a case by case basis, and you figure that out as you go.
+
+
+For calculus, you don't need to know how to integrate multivariable functions by hand. You need to know that derivatives create a function that represents the slope of the original function, and that where the derivative = 0 is a local min/max. You need to know integrals are area under the curve.
+
+
+
+For stats, you need to understand what a p value represents. You don't need to know all the different tests, and when to use them. You need to know that they exist and why you need them. When it's time to use one, just google it, and figure out which one best suits your use case.
+
+
+
+For linear algebra, you don't need to know how to solve for eigenvectors by hand, or whatever other specific things you do in that class. You need to know how to ‘read’ it. It is also helpful to know properties of linear algebra. Like the cross product of 2 vectors yields a vector perpendicular to both.
+
+
+
+For probability, you need to understand basic things, but again, just google your specific problem.
+
+
+
+You don't need to be an expert software dev. You need to write ok code, and be able to use chatGPT to help you improve it little by little.
+
+
+
+You don't need to know how to build all the algorithms by hand. A general understanding of how they work is enough in 95% of cases.
+
+
+
+Of all of those things, the only thing you absolutely NEED to get started is basic coding ability. 
+
+
+
+By far the number one technical ability needed to 'master' is understanding how to "frame" your problem, and how to test and evaluate and interpret performance. If you can ensure that you're accurately framing the problem and evaluating the model or alogithm, with metrics that correctly align with the use case, that's enough to start providing some real value. I often see people asking things like "should I do this feature engineering technique for this problem?" or “which of these algorithms will perform best?”. The answer should usually be, "I don't know, try it, measure it, and see". Understanding how the algorithms work can give you clues into what you should try, but at the end of the day, you should just try it and see.   
+
+
+
+Despite the posturing in the industry, very few people are actually experts in all these domains. Some people are better at talking the talk than others, but at the end of the day, you WILL have to constantly research and learn on a project by project basis. That’s what makes it fun and interesting. As you gain PRACTICAL experience, you will grow, you will learn, you will improve beyond what you could've ever imagined. Just get the basics down and get started, don't spin your wheels trying and failing to nail all these disciplines before ever applying anything.
+
+
+
+The reason I’m near the top in productivity while being near the bottom in natural and technical ability is my 5 years of experience as a data analyst at my company. During this time, I got really good at exploring my companies’ data. When you are stumped on problem, intelligently visualizing the data often reveals the solution. I’ve also had the luxury of analyzing our data from all different perspectives. I’d have assignments from marketing, product, tech support, customer service, software, firmware, and other technical teams. I understand the complete company better than the other data scientists. I’m also just aware of more ‘tips and tricks’ than anyone else.  
+
+
+
+Good domain knowledge and data exploration skills with average technical skills will outperform good technical skills with average domain knowledge and data exploration almost every time. 
+
+
+**Advice for those self taught**
+
+
+I’ve been on the hiring side of things a few times now, and the market is certainly difficult. I think it would be very difficult for someone to online course and side project themselves directly into a DS job. The side project would have to be EXTREMELY impressive to be considered. However, I think my path is repeatable.
+
+
+
+I taught myself basic SQL and Tableau and completed a few side projects. I accepted a job as a data analyst, in a medium sized (100-200 total employees) on a team where DS and DA shared the same boss. The barrier to DA is likely higher than it was ~10 years ago, but it's definitely something achievable. My advice would be to find roles that you have some sort of unique experience with, and tailor your resume to that connection. No connection is too small. For example, my DA role required working with a lot of accelerometer data. In my previous job as a test engineer, I sometimes helped set up accelerometers to record data from the tests. This experience barely helped me at all when actually on the job, but it helped my resume actually get looked at. For entry level jobs employers are looking for ANY connection, because most entry level resumes all look the same.
+
+
+The first year or two I excelled at my role as a DA. I made my boss aware that I wanted to become a DS eventually. He started to make me a small part of some DS projects, running queries, building dashboards to track performance and things like that. I was also a part of some of the meetings, so I got some insight into how certain problems were approached. 
+
+
+
+My boss made me aware that I would need to teach myself to code and machine learning. My role in the data science projects grew over time, but I was ultimately blocked from becoming a DS because I kept trying and failing to learn to code and the 25 areas of expertise reddit tells you that you need by taking MOOCs. 
+
+  
+
+Eventually, I paid up for DataQuest. I naively thought the course would teach me everything I needed to know. While you will not be proficient in anything DS upon completing, the interactive format made it easy to jump into 30-60 minutes of structured coding every day. Like a real language consistency is vital. 
+
+
+
+Once I got to the point where I could do some basic coding, I began my own side project. THIS IS THE MOST IMPORTANT THING. ONCE YOU GET THE BASELINE KNOWLEDGE, JUST GET STARTED WORKING ON THINGS. This is where the real learning began. You'll screw things up, and that's ok. Titanic problem is fine for day 1, but you really need a project of your own. I picked a project that I was interested in and had a function that I would personally use (I'm on V3 of this project and it's grown to a level that I never could've dreamed of at the time). This was crucial in ensuring that I stuck with the project, and had real investment in doing it correctly. When I didn’t know how to do something in the project, I would research it and figure it out. This is how it works in the real world.
+
+
+
+After 3 months of Dataquest and another 3 of a project (along with 4 years of being a data analyst) I convinced my boss to assign me DS project. I worked alongside another data scientist, but I owned the project, and they were mostly there for guidance, and coded some of the more complex things. I excelled at that project, and was promoted to data scientist, and began getting projects of my own, with less and less oversight. We have a very collaborative work environment, and the data scientists are truly out to help each other. We present our progress to each other often which allows us all to learn and improve. I have been promoted twice since I began DS work.
+
+
+
+I'd like to add that you can almost certainly do all this in less time than it took me. I wasted a lot of time spinning my wheels. ChatGPT is also a great resource that could also increase your learning speed. Don't blindly use it, but it's a great resource.
+
+
+**Tldr:** Sir this is Wendy’s.
+
+**Edit:** I’m not saying to never go deeper into things, I’m literally always learning. I go deeper into things all the time. Often in very niche domains, but you don't need to be a master in all things get started or even excel. Be able to understand generalities of those domains, and dig deeper when the problem calls for it. Learning a concept when you have a direct application is much more likely to stick.
+
+
+I thought it went without saying, but I’m not saying those things I listed are literally the only things you need to know about those topics, I was just giving examples of where relatively simple concepts were way more important than specifics.
+
+**Edit #2:** I'm not saying schooling is bad. Yes obviously having a masters and/or PhD is better than not. I'm directing this to those who are working a full time job who want to break into the field, but taking years getting a masters while working full time and going another 50K into debt is unrealistic
+
+Comments:
+- As a stats professor who teaches DS, your point about evaluation is especially important with the rise in generative models. It was already a challenge getting DS students to think critically about the *practical* performance of their models before LLMs, and now model evaluation more important than ever.
+
+While I agree that you don’t need to memorize all the statistical models and tests as long as you’re aware of where to find them and how to use them, I’ll add that it’s equally important to know *when* to reach for them. Too many students struggle with recognizing when a problem calls for statistical testing rather than classification. When all you know is ML, everything looks like a prediction problem.
+
+And communication!!! If you can’t explain the relevance of your results to laypeople, you’re not going to be an effective data scientist.
+- The other big thing you didn't mention is recognizing the importance and different ways to clean and prepare data. Honestly, it shouldn't need to be said, but I just worked under a senior data scientist on a consulting gig that didn't think that step was important at all. I literally facepalmed watching them train a model on a dataset with over 50% null values and duplicates. Understanding the actual meaning and importance behind "garbage in, garbage out" should be the absolute bare minimum for any DS
+- Honestly, this is so refreshing to read and I appreciate you taking the time to write it. Motivating.
+- Cool story but I’m not sure what to make of it.
+
+Your manifesto’s thesis hints at something among the lines of “technical/academic knowledge is not a prerequisite for professional success”, which is of course true but it’s kind of a mute point in terms of actionable recommendations since P(being a good DS | having technical skills) >>> P(being a good DS| not having technical skills). Context and domain knowledge are *much* easier and cheaper to obtain than specialized knowledge in advanced statistics, machine learning or programming. What you’re saying is not false or wrong (local to your experience) but I find it hard to generalize or extrapolate practical advice based off them.
+
+I am a lead DS in big tech, I’ve interviewed hundreds of people, and have worked and interacted directly with hundreds of others (so there’s a large selection bias in my sample towards heavily credentialed individuals) but in my experience, the most truly outstanding individuals are those that have a really large toolkit (solid technical skills), are rigorous thinkers (can handle ambiguous situations and frame them appropriately while recognizing caveats and trade offs), AND have solid domain context or experience that allows them to use the above in an *efficient* way to solve problems.
+
+Yeah, to get a DS gig you don’t _need_ a PhD and you can  eventually be pretty decent at your job. I know plenty of DS generalists that add a ton of value to their teams. But 1) it is much harder to put your foot on the door if you don’t have a credible skill set and 2) your ceiling is much lower as there’s only so much you can do with wits and SQL. I don’t think asking for technical proficiency is just about “gatekeeping” or a conspiracy from data scientists to appear collectively smart, it is just a good predictor of success.
+
+That said, I agree that you don’t need to be an expert on every particular tool and technique. If I had to focus on something in particular, it is important to be a SQL wizard and to have solid foundations and a working intuition of statistical inference, probability, research design and statistical learning. Adding hands on knowledge of *any* modern programming language, then you’d be in the top 10% of data scientists anywhere.
+
+(PS. I LOLed hard to the advice of knowing what a p-value is being the only important stats skill. That is just absurd. You cannot possibly understand what a p-value represents without a much deeper understanding of frequentist statistics. Trying to just memorize and blindly apply the text book definition of it has led to disastrous consequences in our profession and science at large.)
+- As someone who is partially self taught, partially formally educated, has data science projects under my belt, and currently manages a mixed team of data scientists, data engineers, and analytical consultants - 100% back all of this.
+- The amount of effort put into this is greatly appreciated!
+- Worked at a Fortune 100 FAANG-ish tech company and all 20 of their production models built by the “AI” team were XGBoost evaluated using the same confusion matrix. 
+
+IMO the most underrated skill set in DS not talked about enough in this sub is writing production Python code. Being able to build your own data pipelines and resolve APIs, automate data ingestion, create alerts and observability for what you’re doing is more important than an academic understanding of the topics you mentioned.
+- Dude has 10 years of experience and got into the industry when barrier to entry weren’t so high. Then says lol u dont need much to get in. My guy u got in during the boom of data science then learned how to do the job by doing it.
+
+
+If you take a guy with 0 experience then put them into today’s job market they wont make it. I agree you dont need advanced math, but you for sure need to know something about how the models work. Else you become a .fit .predicts monkey. 
+
+As for statistics, no it definitely is critical. A lot of advanced data science role requires a strong understanding of statistics. Saying advanced statistics is a very subjective statement. When people say “do i need to know statistics” they usually mean do i need to know how to calculate the probability of an event, do i need to bother understanding what bayes theorem means. Do i need to bother with how actual optimization is done.
+
+This isnt to gate-keep, i will be the first person to hate on these people. But dont expect the judgement of a guy who worked 10 years ago, and got promoted through an internal promotion during the peak era of data science to be your expectation of how you enter this field or you’re gonna be disappointed. You can be amazing and very talented and still not get a job.
+- Thank you for taking the time to write this great post. I have a very similar background to yours, starting out in mechanical engineering, going into a sales engineering role, and then the nature of the work my team started doing got more and more technical until we suddently ended up doing data science focused work. 
+
+When I look back over the last 3 years, I am astounded at the amount I have learned (although I still suck at git lol). I would never have dreamed this would be how I learned a living if you asked me in college. But I am learnind and trying to apply every day. 
+
+One of my main goals for 2025 is to focus on trying to be more organized and intentional with my work. Prioritization and single-tasking is often hard in our ultra-connected world, so I'm hoping to get very very good at this by setting up systems to allow for it. 
+
+A happy 2025 to all of you! Good luck!
+- I think you make some valid points but they are greatly overstated. The amount on data scientist that just apply model without understanding what it does and if it make sense in that particular context. Honestly not a knock on the self-taught point but more about the amount of statistical knowledge required to no just do bullshit models.
+- Many of the PhD students are also sometimes self-taught. I did most of the learning all by myself. Thanks to all the amazing textbooks and YouTube videos. But I do agree it will take time and multiple exposures to these concepts multiple times in different project’s context before things start making intuitive sense. If anyone is saying you can learn all in 10 weeks, they are selling you snake oil.
+- Is it worth getting a masters in data science? I got accepted and currently work as a financial analyst. I use SAS to code and statistics daily. There’s a big overlap and I’d like to be a quantitative analyst.
+- Really appreciate you sharing your journey here. As a CTO building solutions for data scientists, I find your story particularly resonating. I started in mechanical engineering myself, made my way through software development over the past 25 years, and now lead a product team building tools for DS.
+
+Your emphasis on practice over endless preparation resonates with patterns I've seen across my previous jobs. That "try it, measure it, see what works" approach, combined with your deep domain knowledge, explains your success. Though I've noticed that solving DS problems effectively isn't just about hands-on experience – it's finding the right balance between practice, theoretical understanding, and peer collaboration. Theory and experienced colleagues help guide us toward recommended practices and help spot pitfalls that might take years to discover through practice alone.
+
+The data scientist role is incredibly demanding, requiring expertise across statistics, coding, domain knowledge, and communication. The field is still evolving, and like software development, new tools and platforms will continue emerging to make DS work more accessible, safer, and more robust.
+- Haven’t read a more accurate post about the DS carrier in years.  
+
+I’m a Data Scientist with 6 years of experience (give or take) and I’ve had at least 10 rejected positions because of forgetting some mathematical or statistical theorems, and not knowing some stuff by heart and this happens to me as someone that has a bachelor degree on applied mathematics and my thesis is on a specific statistic subject. 
+
+My hypothesis is that some times people that are already working for the companies and been part of the selection process doesn’t have the skills to do this task as they just think in the technical way. 
+
+Unfortunately nowadays you have to learn everything faster and almost by heart as LLMs theory is moving really quick. 
+
+PS. This is just my experience and pov
+- Honestly at this point the crazy skills requirements are less relevant for the job itself than to standing out among all the other candidates. It’s an employer’s market so they can arbitrarily move the bar higher and higher.
+- This is one of the reasons, why so many data science projects fail. There are just too many Bootcamp data scientists around. It's not about gatekeeping, it's about experience and fundamentals. The point is that a lot of the "basic" boring stuff is enforced by academia and skipped by a lot of self taught data scientists because that's the hardest part. And yes it makes a difference. 
+
+I don't claim self-taught data scientists are all bad, but I worked with quite some and on average they are pretty bad. Often they don't understand statistics and basic computer science stuff. 
+
+But I agree with one thing: Most companies aren't ready for data science and therefore it does often not make any difference in practice.
+- > I'd like to add that you can almost certainly do all this in 2-3 years vs the 5 it took me. I wasted a lot of time spinning my wheels. ChatGPT is also a great resource that could also increase your learning speed.
+
+This is interesting because in my experience dealing with early career data workers the real reason why they’re spinning their wheels is BECAUSE they rely far too heavily on chatGPT. Instead of learning the tools they need they’re spending all their time learning how to use chatGPT to solve their problems and can’t really do anything creative or off-the-cuff.
+- It sounds like you got lucky that your company promoted you internally. I don't think you would have been competitive against other candidates, and it sounds like you didn't have a real interview that would have tested your knowledge on the stuff you've forgotten
+- Im kind of skeptical about how little you seem to claim we can know and yet be employed over other people who may know way more rhan us
+- Very solid points here – thanks for sharing

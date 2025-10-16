@@ -1,0 +1,41 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11u05kf/what_skills_should_i_know_in_order_to_become_a/
+Title: What skills should I know in order to become a Bioinformatics Software Engineer?
+
+Content:
+Hi everyone, 
+
+I'm currently in a Bioinformatics/BME master's program, and I'm wondering what skills in CS/Stats/Bioinformatics would be useful. I'm thinking of bioinformatics software engineering as a career choice in the future. 
+
+My current background is that I have an undergrad degree in biophysics and molecular biology. I'm also taking a few courses right now in machine learning and neural networks. 
+
+Any advice is appreciated. Thanks.
+
+Comments:
+- If you want to be (bioinformatics) software engineer then you will need some software engineering courses. Imo relevant courses could be cloud computing and architecture, front end dev (maybe backend too), parallel computing, high performance programming languages e.g. C++ or Rust, operating systems and computer architecture.
+- The number one skill that bioinformatics programmers lack is empathy. You're generally writing code for somebody else and they don't know what you know. If you can write readable, well documented code that others can run, you'll be successful. If you develop in a silo, use single letter variables, no comments and output files with no headers, you'll be less successful. When you're talking with wetlab scientists and MDs, you gotta explain it terms that they will understand. If you don't their eyes will glaze over and your will miss opportunities to improve your code.
+- I would recommend:
+
+* Proficiency in a language commonly used in bioinformatics. I would recommend Python or R.
+* As much statistics and other math as you can cram in your head.
+* Basic understanding of both functional and object oriented programming.
+* Proficiency in one or more common dialects of SQL.
+* Understanding of common machine learning approaches.
+
+I came to bioinformatics by way of software engineering rather than the biology side of things. But the above are skills I employ every day.
+- Likely: a general purpose programming language, ideally Python (with a focus on numeric computing (e.g., numpy, pandas), unix-like systems, and bash
+- - bash and python or R
+- nextflow
+- git
+- >What skills should I know in order to become a Bioinformatics Software Engineer?
+
+Thanks for response!! Do you have a background in software engineering? 
+
+Overall, this is a lot of stuff to learn. What's the best way to start?
+- You've probably done both development and analysis, which did you prefer?
+- Hey I’m late to the post but wanted to ask how much statistics plays a role in your everyday work?I’m currently getting a degree in CS and am interested in the field but fear I won’t have the statistical skills or toolkit fit for bioinformatics.
+- I do, in fact I come from CS side to bioinformatics. The best way would be to take courses in those that you think is most beneficial. Some of those skillsets can be self taught with hobby projects, but I definitely recommend to take advanced topics such as parallel computing and cloud computing as a course.
+- I prefer development
+- anything on the biology side of things ? biochem, molecular structures dynamics ?
+- Fucking awesome, me too! Sorry for the late reply.
+- Not a bioinformatics engineer but I would imagine cs courses would be better since you’re a software engineering and while bio background would be useful, I think in this case the cs background is more needed

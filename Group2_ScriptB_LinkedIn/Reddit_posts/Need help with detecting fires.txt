@@ -1,0 +1,44 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kbcrxm/need_help_with_detecting_fires/
+Title: Need help with detecting fires
+
+Content:
+I’ve been given this project where I have to put a camera on a drone and somehow make it detect fires. The thing is, I have no idea how to approach the AI part. I’ve never done anything with computer vision, image processing, or machine learning before.
+
+I’ve got like 7–8 weeks to figure this out. If anyone could point me in the right direction — maybe recommend a good tool or platform to use, some beginner-friendly tutorials or videos, or even just explain how the whole process works — I’d really appreciate it.
+
+I’m not asking for someone to do it for me, I just want to understand what I’m supposed to be learning and using here.
+
+Thanks in advance.
+
+Comments:
+- On colored images only? Or can you swap to infrared cameras?
+- you have major two approches, one computer vision, and second is training a model.  
+you also need help in motion detection as fire mostly does not stay in consistant shape
+- Use ir and just count white pixels after tresholding
+- A good start would be to check out datasets like the FLAME3 dataset for handling computer vision model training on RGB and thermal data. Then understand other computer vision methods using IR sensors and thresholding. Some literature review will be required. For streaming the imagery from a camera sensor on the drone Mavlink video streaming is probably your best bet.
+
+FLAME3 dataset:
+https://arxiv.org/abs/2412.02831
+
+Mavlink video streaming: https://docs.px4.io/main/en/camera/mavlink_v2_camera.html
+- I recommend Darknet/YOLO.
+
+See this example:  https://www.youtube.com/watch?v=69u0sZpzvyA
+
+Tutorials here:  https://www.ccoderun.ca/programming/yolo_faq/#how_to_get_started
+
+Repo is here:  https://github.com/hank-ai/darknet#table-of-contents
+- You can take a look at the open-source project HUB - [https://github.com/securade/hub](https://github.com/securade/hub) it has a couple of yolov7 fine-tuned models for smoke and fire detection you can try.
+- Do a literature review
+- There are existing commercial flame sensing products. You could also do an IR camera, or pair a visual light camera with a flame sensor.
+- The easiest way is to just use thermal cameras. But if you want higher resolution or color, you can use the [Planckian Locus](https://en.m.wikipedia.org/wiki/Planckian_locus) with the [CIE 1960 color space](https://en.m.wikipedia.org/wiki/CIE_1960_color_space). Limit your search space based on the estimated temperature ranges of fires you’ll be looking for, and then filter the image based on that, looking for blobs that are within a certain range of the locus and moving a lot.
+- Great recommendation. Darknet YOLO is the way.
+
+That said I agree with others saying to use thermal. My suggestion would be to use multimodal inputs if possible and combine thermal data with color.
+
+If I had to pick a single channel of input data it would actually be thermal — thermal/YOLO (specifically darknet, fuck YOLOv8/10/11) would be the direction I take.
+- Pure Darknet YOLO is an old way to do this kind of thing. Mediapipe and other edge focused libraries are better at this point.
+- You should look at the *new* Darknet/YOLO codebase.
+- I have, nice work by the way, it's a good refactor of the original codebase. But it's not what I would immediately recommend to someone who hasn't worked on computer vision or AI/ML before, especially if they're working on a class project with such a compressed timeline.
+- *Personally* I think that Darknet YOLO is set up adequately for a novice to execute a simple fine tuning project in a 7-8 week timeline, but that’s not for me to say; it’s up to OP in the end.

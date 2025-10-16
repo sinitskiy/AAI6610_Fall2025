@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/17ofere/r_diffusion_might_be_a_better_way_to_model/
+Title: [R] Diffusion might be a better way to model randomness in PPLs than Markov chain Monte Carlo or VI
+
+Content:
+Probabilistic programming languages (PPLs) like Stan simplify modeling uncertainty but inference is still slow and inaccurate. Markov chain Monte Carlo is precise but sometimes slow. Variational inference is faster but has other drawbacks.
+
+Is **diffusion a better way to model probability**? 
+
+A new technique called diffusion model variational inference (DMVI) uses diffusion models to approximate the probability distributions for faster, more accurate automated inference. 
+
+*(BTW: This is part of a trend I've noticed lately, where researchers are increasingly applying diffusion to diverse problems like* [mapping heat flow to robot obstacle avoidance](https://notes.aimodels.fyi/denoising-diffusion-with-for-collision-free-robot-motion-planning/) *and* [anomaly detection](https://notes.aimodels.fyi/anomaly-detection-in-multivariate-time-series-with-diffusion-models/)*.)*
+
+DMVI sets up the guess distribution using a diffusion model run in reverse. It introduces a new way to calculate the marginal likelihood for better data fitting. It also adjusts parameters for an even better fit.
+
+Early tests show DMVI makes inferences generally more accurately than other PPL methods, with similar compute costs and limited tuning needed.
+
+**TLDR: Framing inference as a diffusion problem can potentially overcome limitations of current methods. DMVI might become a core part of the PPL toolkit.**
+
+[Full summary is here](https://notes.aimodels.fyi/diffusion-dmvi-probabilistic-programming-ppl-random/). Paper is [here](https://arxiv.org/pdf/2311.00474.pdf).
+
+Comments:
+- My two cents without being up-to-date on diffusion models: one of the problems with vanilla VI was that you had to choose an approximating distribution with downstream consequences on the quality of your results.
+
+The denoising diffusion model literature I've seen so far works well for very high dimensional multivariate Gaussians, which is an approximating model class already well described by ~~mean-field~~ variational inference. It's not clear to me if distributions with long tails and/or exotic shapes (think banana or horseshoe distributions) are better addressed with a diffusion model.  
+
+
+Edit: brain fart, commenter below is right. I meant VI with full-rank Gaussian approximating family. Something like [this](https://www.pymc.io/projects/docs/en/latest/api/generated/pymc.FullRankADVI.html) is what I had in mind.
+- I notice diffusion has been getting tested in more and more domains. Makes sense since image generation itself is already a very complex task. 
+
+Only issues with diffusion is this.
+
+1. Not best way to get direct translation where variation is not needed in fact the opposite being a requirement 
+2. O(n) inference time and computationally heavy. Becoming less of an issue as time goes on. With Nvidia Arm chips the VRAM may no longer be an issue after seeing how how the ram was Mac chips were offering.
+
+There is more but I think diffusion is the best where you want easy step by step denoising. Which is applicable beyond images.
+- Has anyone applied diffusion to text generation? Surely it could bring novel advantages such as bidirectional generation and in-painting ?
+- It is not the first time that diffusion model-based score function estimation have been used for general Bayesian inference. In fact, Arnaud Doucet has several papers that do that already.
+- Fairly major error in just equation (1), anyone else spot it?
+- To be clear, the mean field assumption does very poorly (in describing posterior variance) for multivariate normals with correlated parameters, because the mean field assumption is that all parameters are independent wrt the posterior. I’m not sure if you’re talking about variational inference algorithms that assume fully structured MVN (which is an option in Stan’s ADVI) or MVN with constrained covariance matrices (which does not currently have any popular PPL implementation as far as I’m aware), but if you’re actually comparing DMVI to MFVI then DMVI would be much more accurate than MFVI for non diagonal covariance MVN distributions. Although I agree that, if diffusion models only work well for MVN, there is probably another VI algorithm that is more efficient and that is designed to learn that normal distribution. I think the papers examples are trying to show that DMVI would do much better than this though.
+- Yes, a fair number of times. Here's [some of the ones](https://gwern.net/doc/ai/nn/diffusion/discrete/index) I've read.
+- Hi u/gwern you have had great wonderful Special articles for GPT-3 and Scales and GANs, but it seems like you did not have Special articles for ChatGPT/GPT4 and Diffusion/StableDiffusion, these should be as powerful and important as GPT-3, so why don't you write about them? We are Looking forward to your articles about them very much.
+- So much has been written about them, and they do so many things, it would be hard for me to write the article I'd want to write about them. For GPT-3 and StyleGAN, I got there early enough (in the case of the GPT-3 Playground, while you could still count the number of serious users on your appendages) that I could write an interestingly comprehensive article; but GPT-4 & SD outran my ability to cover them within days. So, I focus on other things where I can still make a difference. (For example, dropcap typography using diffusion models - no one is doing that!)

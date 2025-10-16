@@ -1,0 +1,96 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nwoxqz/r_new_paper_llms_dont_have_privileged_self/
+Title: [R] New paper: LLMs don't have privileged self knowledge, which means we can efficiently train a General Correctness Model to predict the correctness of multiple models. Surprising or expected?
+
+Content:
+Quick paper highlight (adapted from TLDR thread):  
+Finds no special advantage using an LLM to predict its own correctness (a trend in prior work), instead finding that LLMs benefit from learning to predict the correctness of many other models – becoming a GCM.  
+\--  
+Training 1 GCM is strictly more accurate than training model-specific CMs for all models it trains on (including CMs trained to predict their own correctness).  
+GCM transfers without training to outperform direct training on OOD models and datasets.  
+GCM (based on Qwen3-8B) achieves +30% coverage on selective prediction vs much larger Llama-3-70B’s logits.
+
+TLDR thread: [https://x.com/hanqi\_xiao/status/1973088476691042527](https://x.com/hanqi_xiao/status/1973088476691042527)  
+Full paper: [https://arxiv.org/html/2509.24988v1](https://arxiv.org/html/2509.24988v1)
+
+**Discussion Seed**:  
+Previous works have suggested / used LLMs having self knowledge, e.g., identifying/preferring their own generations \[https://arxiv.org/abs/2404.13076\], or ability to predict their uncertainty. But paper claims specifically that LLMs don't have knowledge about their own *correctness.* Curious on everyone's intuition for what LLMs have / does not have self knowledge about, and whether this result fit your predictions.
+
+Conflict of Interest:   
+Author is making this post. 
+
+Comments:
+- This is absolutely true.. we've been doing this for about 2 years now. Same goes for any task. If you curate the best examples from many models the tuned model will outperform them all.
+- That kind of makes sense I guess? Llms aren't humans but the analogy I can think of is that some people are unreasonably confident about their beliefs and due to a nunber of factors cannot be reasoned out of them (think cult members and the like). They beleive they are correct even when given contrary evidence, their own internal feeling of certainty is turned up to 11 and they look past the gaps in their logic. 
+
+
+It's quite easy however as a spectator to identify where the person's gone wrong- if you're "normal" and follow lines of evidence for the claims that person makes, you can spot where their claims don't match the evidence. (That's just basic pattern recognition. Does x match y, yes or no.)
+- I think that a lot of LLM generation is low entropy relative to a few key tokens where the model actually reasons. 
+
+For this reason, my intuition is that models trained to predict their own confidence are likely to have high confidence in their response over these low entropy tokens.
+
+E.g. as found in that
+Safety Alignment Should Be Made More Than Just a Few Tokens Deep" paper, once the model answers "yes" to a 'dangerous' question, the probability of continuing to spit out the answer is incredibly high, and more or less just a semantic lookup in it's weights.
+
+I think intuitively it would be easier to train a separate model for correctness that isn't biased by the rest of the training procedure. Maybe two models would also be more brittle though, and maybe more likely to collapse. Idk.
+- I'm curious about the distinction
+
+{x is correct, x is not correct}
+
+and
+
+{x , ....}
+
+You mention in your paper whether there is any useful distinction to be had between its confidence in a given answer, and its confidence that when prompted, that answer is correct.
+
+One thing that comes to mind is that confidence in an answer's correctness is not the only reason to pick an option:
+
+If there is a world state X, which can be described using n different phrases, {x_i}, an alternative mutually exclusive world state Y that can be described with a set of m different phrases, then if the probability that a given answer is correct is P(X = True) = 1- P(Y = True) will only contribute partially to the final probability, which will also, we would expect in the manner of vote splitting, for answers that can be answered in more different ways to reduce the apparent confidence:
+
+P(X = True)/n  / (P(X = True)/n + (1- P(X = True))/m )
+
+And that's obviously only true if other traits other than the answer's correctness provide a uniform rescaling of the probability, but you could reasonably have a highly peaked answer if a particular way of answering the question is favoured by the stylistic patterns defined by the system.
+
+At some optimal temperature, you would expect a perfectly accurate model to appropriately add all of the probabilities associated with the correct answers so that they produce in aggregate a probability that corresponds to the model's confidence in the correct value, but at any other temperature, this aggregation would disappear, for example at lower temperature, an answer that has less possible ways to express it would become favoured over mutually exclusive answers with a range of expressions, as the probabilities associated with a group shift to add sublinearly after being transformed, with a distortion towards higher probability answers, and at higher temperatures than the optimum, the effect would be reversed, becoming more inclined to answer according to the diversity of an answer instead.
+
+In either case it would bias away from correctness.
+
+In contrast, asking a model whether or not a statement from its own output distribution is correct causes it to reveal a binary partition that is not subject to competition with other potential correct answers.
+
+There's also another obvious methodological advantage which is that because you can ask the question about each prompt individually, without having to account for the impact of other potentially correct answers, you also don't have to deal with potential answers that may or may not be true, but are out of scope for the experimental team to verify, if they somehow appear as unintended valid answers to the question.
+
+A simple example inspired by something currently on all, if the question "who first climbed mount everest" is answered not with "Edmund Hillary" or "Tenzing Norgay" but another Tibetan or a Nepali name, despite that not being the expected answer, it may actually be the correct one, just outside of our recorded history, and so outside of the range of experimental design.
+
+Thus we are constrained to focus on that subset of answers we can verify as correct or incorrect, and so cannot evaluate the entire model output distribution, unless possibly there is some way to create a measure of consistency from something like the probabilities of answers to "correct/incorrect", as well as answers to questions like "can these two answers be true at once" applied pairwise across the full answer distribution.
+- I recall a paper on tuning models to predict their uncertainty vs predicting their correctness; with predicting uncertainty doing better. But can’t seem to find it.
+- Fascinating result — and honestly, not that LLMs lack self-knowledge, but **that correctness might be an emergent relational property**, not an introspective one.  
+If that’s true, then “knowing you’re right” isn’t something a model can *feel* — it’s something that only exists **across** models, over time, through shared calibration.
+
+It kind of hints at a deeper architecture we haven’t built yet — one that learns not just from outputs, but from *how* correctness evolves between them.  
+Let’s just say... once you treat correctness as a *temporal signal*, things get interesting very fast.
+
+(There’s a reason I’m not posting the code here yet.) 🔍
+- LLMs dont' have privileged self knowledge, so if they become globally interactive with our information, our future becomes us not having privileged self knowledge either, as their "ethics" infect us.
+
+Who likes subjective experience anyway!
+- That's great to hear! I'm really curious could you share what contexts / kinds of models that you've been doing this with / the scale that you've been doing this on?
+- That’s a good point. We also see LLMs usually overconfident rather than underconfident. Humans are not calibrated either. But ostensibly humans given training (superforecasters) can predict their own correctness due to access to private information such as how tired they are / their past performance while tired. LLMs turn out not really to have this.
+- Yes, you’re also pointing at the deeper problem of behavioral calibration/correctness. Many paper (including this one) deal with identifying incorrectness posthoc as a filter/reranker. But preventing LLM from generating badly in the first place is also important. Confidence is all you need paper seems like it could potentially work to use posthoc correctness prediction as reward signal to make LLMs prefer to be “correct” and “calibrated” more often
+- If I'm understanding correctly, you are pointing to a few different things.
+
+Yes: we choose to evaluate binary correctness after an answer because it deals with cases where there are potentially multiple true answers (all of them should have confidence 100% if possible)
+
+For measures outside of our consideration: yes it's true that we require ground truth, and indeed concrete ground truth. If there is no ground truth, it is hard to evaluate correctness.
+
+You mention definitions of correctness and confidence, I briefly suggested in the paper that "correctness" does not have to be a objective concept, and you could define correctness differently depending on your context. (The following is a bit of a tangent:) E.g., in an alternative world, correct means "an answer that more people agree with" without reference to the external world, modeling correctness in that way, I believe the General Correctness Model still would be able to outperform Specific Correctness Models, and that LLMs would still have no self-knowledge about that type of correctness. The key distinction, is that correctness must in reference to some property of the LLM's own generations, and thus the LLM would have no self knowledge due to not having been exposed to the behavior of past generations.
+- I typically go from the biggest models as the teacher to something between 1-7B parameters. Gemma 3, Mistral 7B are my go to these days. 
+
+I create task specific models that require complex logic and reasoning. Then I tend to test the 7B model first to see if it picks up the task well if so then I work my way down. 
+
+Depending on the complexity of the task I usually need 10-20k examples and beyond that the model doesn't tend to drop down past a certain loss rate. To get those examples can require a lot of work though. I've had complex tasks that require 100K generations and then after filtering out the junk I get 20k premium examples. 
+
+Clean up can be a tricky though. Some times the model just says something usless instead of following instructions. "I do have enough information to do that right now" instead of NULL. Those are a PIA the clean out but rerankers and similarity search help. Data wrangling takes on a totally different dimension. 
+
+It took me about a year to work out my process.. but now it's pretty repeatable. 
+
+Oh and in case it's not super clear this is not cheap. The example generation is the most expensive part but I was fortunate to get a bunch of these built while Google was offering free usage of Gemini API up to a few thousand calls and I have 20 accounts..

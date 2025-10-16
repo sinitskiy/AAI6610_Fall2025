@@ -1,0 +1,66 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ku31vc/is_studying_data_science_still_worth_it/
+Title: Is studying Data Science still worth it?
+
+Content:
+Hi everyone, I’m currently studying data science, but I’ve been hearing that the demand for data scientists is decreasing significantly. I’ve also been told that many data scientists are essentially becoming analysts, while the machine learning side of things is increasingly being handled by engineers.
+
+- Does it still make sense to pursue a career in data science or should i switch to computer science? I mean i dont think i want to do just AB tests for a living
+
+- Also, are machine learning engineers still building models or are they mostly focused on deploying them?
+
+
+Comments:
+- deploying models into production is definitly being taken over by engineers but I've seen several data scientists transition to that side of the house.
+
+data science, comp science, stats, engineering, it really doesn't matter that much. Your first job matters waaay more
+- I don’t think demand has decreased significantly, although competitive, the mid level market is decent. Entry level is just saturated because people were made to believe they can get into the industry with a boot camp or some self-studying. In reality, every single DS coworker I’ve had pretty much have at least a masters in a quantitative field, many PhD’s. It’s still a lucrative industry if you have the proper education to get in. 
+
+As for the analytics vs ML. It’s company and team dependent and really up on the individual to navigate this nuance. Some DS do end up becoming MLE’s. I used to imagine my DS career will be just training fancy models everyday but at this point I’ve done a bit of everything and I’m open to learning whatever to drive impact for the business. Can’t optimize you job for everything and all else considered, DS is a pretty great industry to be in. Even among DS, only a small percentage of us get to work on the latest fancy AI models, and that’s ok.
+- Since the field is very wide and different things might be expected from a "data scientist" to do, I think you should get exposure to various experiences. I don't think the degree itself matters much. On the contrary, having a job experience is more important to employers.
+
+Learning to deploy products is definitely important. Presenting ideas and results to your audience is important, too.
+
+My advice for students is to do an internship. It is your best chance to get an industry experience, and your best chance to start your career strong.
+- Well yes it is. Just like all other jobs the minimum requirements though are going up year on year. DS today is more like what an ML engineer would be 5 years back.
+
+I am shifting out of pure DS however into a more produc focused role because sadly leadership is focused more on AI drivel which involves getting foundational LLMs and setting up summarisation projects across different use cases. That's just mind numbingly boring now. Especially since if you are working in a company where the main business isn't related to good software products (FMCG,Pharma ,banking etc) then MVPS with standarun of the mill soumtions are good enough. Senior leadership has no apetite for improving the solutions where actual DS knowledge can help. 
+
+But honestly this was always true . 90% of most DS projects never went to production. Don't think that ratio is going to change soon.
+- Solving problems with data is still a very important and well paid activity. Just don’t assume the answer is an LGBM model, or indeed any model, and you’ll be grand.
+
+Focus on the problem
+- The data scientists I encountered who stay relevant are the ones who have domain knowledge on a specific area like biochemistry or materials science. They have strong expertise in these domains and know the nuances in picking features and interpretations of data in these domains. I think in the age of AI, a specific domain knowledge is probably more relevant than general training of data science.
+- I work at a manufacturing company and we have a lot of data scientists. That said, we don’t differentiate between data analyst, data scientist, data engineer, ML engineer, ML devops, ML ops, data architect, and whatever other titles there are. 
+
+I code and maintain ETL pipelines, do various ad hoc data analyses covering a range of data size and complexity, and I build and deploy ML models. I wear a lot of “hats” because we have a small data team.
+- It is, the issue simply is the economic/market overall is bad. Most fields are having issues.
+- From my point of view, it’s still worth it but the bar is much higher than before. The traditional data scientists doing the feature engineering, EDA, conduct the A/B test, doing dashboard stuff are not enough. You must be able to do the AI engineer as well. Deploying the cutting-edge technology is always challenging for almost all of the company.
+- Another issue for people in the U.S. is that a lot of the low level jobs that newbies would use to get their foot in the door are now offshored.
+- Former DS, now working as MLE.
+
+The point is that there's little to no need to hire fresh grad. Why would one hire fresh grad when the current AI has level of junior engineer?
+
+I feel like the right question is "How to get a job in the current market situation".
+- \>  I mean i dont think i want to do just AB tests for a living
+
+You just answered your own question.
+
+If you don't geek out on understanding what's going on with the data, then this is unlikely to be a good career option.
+
+  
+And yes, I expect a DS to write relatively robust modular code.  They might not be a ML engineer but the days where you could do just do prototyping are long gone.
+- It was always a niche industry. I really think it got flooded by international talent and demand dropped. 
+
+I believe it’ll be less technical overtime with AI, but still important
+- Study hard what you enjoy most and get good at it. I dislike computer science, so I sure as hell wouldn't major in it. Both data science and software development are highly saturated, competitive fields.
+- My sense is that a degree in comp-sci or stats has more credibility.
+- Not  worth it
+
+Straight ans.
+
+( working as data engineering lead in a public sector bank)
+- It's over, just as software engineering was over when I was in undergrad in the early 2000s. Go be a plumber. Fixing leaky pipes in tight spaces is where the money will be in the future.
+- If you can switch to computer science. Then you can always do data science at some point, but you also have the option to do other careers in tech and aren’t as pigeonholed
+- Depends what you mean by Data Science. Should you do a 1-2 year DS masters? IMO, no. I typically filter these candidates out because they tend to be too wide and not deep enough in any one thing. Also the market is flooded so if I need to hire an analyst, I’ll usually choose someone with some pre existing industry experience. Should you do something like a stats masters? This could be a reasonable thing to do. There are jobs for these candidates, even though it’s harder to break into industry for new grads these days. Should you do a PhD in something quantitative? Maybe. There are jobs for these folks, though it’s a long road to get there - only do it if you love the research because it’ll be 4-6 years of your life and the job market could be totally different by the time you finish.
+- I'm happy to be wrong, but I'm convinced it's an industry designed to replace itself over time. As AI gets better and better, there will be no need for data science.

@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/christiangustavsson_journal-of-applied-clinical-medical-physics-activity-7365437503589277697-mEXD
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christian Jamtheim Gustafsson, PhD的动态
+Christian Jamtheim Gustafsson, PhD
+
+Associate Professor (Docent) | Senior Medical Physicist | AI Researcher/Data Scientist| Team Leader | Consultant
+
+1 个月
+
+Today we recieved the spectacular news regarding publication of our paper "Impact of deep learning model uncertainty on manual corrections to MRI-based auto-segmentation in prostate cancer radiotherapy"
+
+Deep learning based auto segmentation of organs for radiotherapy planning is becoming the standard way to do it in the clinical setting, however the Deep Learning/AI model uncertainty is not assessed or used in the workflow. 
+
+I am proud to have led this great team which included multiple internationelly recognized radiotherapy researchers as we are the first to assess the impact of segmentation AI model uncertainty in a clinical setting. 
+
+In this work we conclude that when deep learning model uncertainty information is presented to experienced radiation oncologists, it can influence their decision-making, quality perception, and confidence in the DL segmentations. 
+When the uncertainty map was presented, regions with low uncertainty were less likely to be edited, indicating increased reliance on the model's predictions. Additionally, uncertainty maps can improve efficiency by reducing segmentation time. DL-based segmentation uncertainty can be a valuable tool in clinical practice, enhancing the efficiency of radiotherapy planning.
+
+The whole paper in open-access format can be found here: 
+https://lnkd.in/dfzjSQ_K
+
+#radiotherapy #planning #segmentation #deeplearning #uncertainty
+
+Journal of Applied Clinical Medical Physics | AAPM Journal | Wiley Online Library
+aapm.onlinelibrary.wiley.com
+56
+5 条评论
+赞
+评论
+分享
+Christian Jamtheim Gustafsson, PhD
+
+Associate Professor (Docent) | Senior Medical Physicist | AI Researcher/Data Scientist| Team Leader | Consultant
+
+1 个月
+
+Viktor Rogowski
+
+赞
+回复
+Christian Jamtheim Gustafsson, PhD
+
+Associate Profes

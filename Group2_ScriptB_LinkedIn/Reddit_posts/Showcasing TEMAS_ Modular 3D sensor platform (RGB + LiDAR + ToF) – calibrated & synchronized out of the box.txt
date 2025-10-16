@@ -1,0 +1,25 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1nwwb86/showcasing_temas_modular_3d_sensor_platform_rgb/
+Title: Showcasing TEMAS: Modular 3D sensor platform (RGB + LiDAR + ToF) – calibrated & synchronized out of the box
+
+Content:
+Hey everyone,
+we’re on our Road to Kickstarter and recently showcased TEMAS at KI Palooza (AI conference in Germany).
+
+What TEMAS is:
+
+Modular 3D sensor platform combining RGB camera + LiDAR + ToF
+
+All sensors are pre-calibrated and synchronized, so you get reliable data right away
+
+Powered by Raspberry Pi 5 and scalable with AI accelerators like Jetson or Hailo for advanced machine learning tasks.
+
+Delivers colorized 3D point clouds
+
+Accessible via PyPi Lib(pip install rubu)
+
+We’d love your thoughts:
+
+Which computer vision use cases would benefit most from an all-in-one, pre-calibrated sensor platform like this?
+
+Comments:

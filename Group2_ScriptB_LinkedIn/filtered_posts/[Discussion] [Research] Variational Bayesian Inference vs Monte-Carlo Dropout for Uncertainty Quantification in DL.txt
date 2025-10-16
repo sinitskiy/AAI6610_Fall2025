@@ -1,0 +1,65 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/emt4ke/discussion_research_variational_bayesian/
+Title: [Discussion] [Research] Variational Bayesian Inference vs Monte-Carlo Dropout for Uncertainty Quantification in DL
+
+Content:
+I'm  reaching out to the ML community to see if any of you have some  experience implementing / have some exposure to uncertainty  quantification methods for in Deep Learning (CNNs specifically). I'm  working towards implementing Variational Bayesian Inference for a  Medical Imaging task and I'm interested in knowing at what point  Variational Methods become too coarse and MC-Dropout is the superior  method to implement.
+
+If I  understand the theory correctly, with enough samples, the posterior  distribution of the Deep network can converge to the true posterior in  MC-Dropout thus providing exact uncertainty metrics. On the other hand,  Variational Methods will always be an approximation but will produce a  result more efficiently than MD-Dropout which will probably be more  suitable for my situation.
+
+If anyone has any thoughts, I would love to hear them!
+
+**Great references for this:**
+
+Really anything from Felix Laumann: [https://medium.com/@laumannfelix](https://medium.com/@laumannfelix)
+
+Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning: [https://arxiv.org/abs/1506.02142](https://arxiv.org/abs/1506.02142) (Gal is the man!)
+
+A Comprehensive guide to Bayesian Convolutional Neural Network with Variational Inference :[https://arxiv.org/abs/1901.02731](https://arxiv.org/abs/1901.02731)
+
+Bayesian Convolutional Neural Networks with Variational Inference [https://arxiv.org/abs/1806.05978v5?utm\_campaign=%23NLMLfr&utm\_medium=email&utm\_source=Revue%20newsletter](https://arxiv.org/abs/1806.05978v5?utm_campaign=%23NLMLfr&utm_medium=email&utm_source=Revue%20newsletter)
+
+Comments:
+- I am no authoritative voice on the topic, but in my experience, neither are actually well suited to practical application. 
+
+Regarding MC-dropout it doesn't really give you a posterior. It assumes what the posterior looks like (a bunch of delta functions basically), and so, in all likelihood that is not very close to the actual posterior. It also doesn't concentrate with data, which to me is a bad sign (the converse implication being most concerning - it doesn't widen with little data). I'm on mobile so excuse some bad link formatting 
+
+https://arxiv.org/abs/1806.03335 is relevant here.
+
+And some pretty good points accompanied by some pretty poor behaviour imo https://mobile.twitter.com/ianosband/status/1014466510885216256?lang=en
+
+https://scholar.google.com/scholar?cluster=8227196711108175595&hl=en&as_sdt=0,5&sciodt=0,5#d=gs_qabs&u=%23p%3D62bdttHfLHIJ
+
+
+Regarding variational methods, I'm not really sure these are a panacea either. Bayes by backdrop etc normally make heavy independence assumptions to make things tractable. 
+Me riffing with no sources to back me up: 
+
+Work like the lottery ticket hypothesis seems to suggest that these correlations are potentially even crucial to performance. An independence assumtion would therefore be absolutely awful in terms of an accurate posterior estimation. 
+
+Having lots of experience building Bayesian models more traditionally (in the Gelman, mceldrith school) shows you how hard things can be. An even moderately high d posterior is quite an unintuitive thing. One over a few million parameters that is certainly multimodal would be a beast both to make good inferences and also computationally. 
+
+Edit to add: Also be wary of proofs in infinite data limits etc. They may provide a motivation, but you need more than that to have a working method. As a stupid example, look at the convergence of the Taylor series of exp vs sin. Both converge at infinite limit, but have very different properties when truncated. I have personally derived mcmc sampling schemes that have theoretical infinite convergence to the target distribution, but do terribly in practice or have other problems (such as computational issues) that make effective implementation nearly impossible. 
+
+To me, uncertainty estimates in deep learning are still really open problems.
+- First let me clear up several points.
+
+>with enough samples, the posterior  distribution of the Deep network can converge to the true posterior in  MC-Dropout
+
+This is not true. You could say that enough samples would cover your estimated approximate posterior, but this is certainly not the 'true' posterior. MC-Dropout makes strong assumptions on the distributional form of this approximation, and the objective it minimises is only questionably Bayesian ([https://arxiv.org/abs/1807.01969](https://arxiv.org/abs/1807.01969)).
+
+>Variational Methods will always be an approximation but will produce a  result more efficiently than MD-Dropout
+
+MC-Dropout is at best a variational method (with weaknesses as above). So these aren't really two different methods. Variational methods with approximating Gaussian distributions, I'd argue, are more suitable to capture posterior distributions than the Bernoulli-style posterior in MC-Dropout.
+
+Currently there's push back into how well suited (mean field) variational methods are (including MC-Dropout) to neural networks ([https://arxiv.org/abs/1909.00719](https://arxiv.org/abs/1909.00719)).
+
+I'd float an alternative method you didn't mention: ensembles ([https://arxiv.org/abs/1612.01474](https://arxiv.org/abs/1612.01474)). These often outperform variational methods and are arguably simpler and more scalable, e.g. ([https://arxiv.org/abs/1906.01620](https://arxiv.org/abs/1906.01620)). Finally some work explores the connection between ensembles and Bayesian posteriors ([https://arxiv.org/abs/1810.05546](https://arxiv.org/abs/1810.05546)).
+- Maybe you should also add ensemble-based methods and MCMC to the comparison list?
+- Thanks for your thoughts on this. Coming at this type of content as a beginner (1st year Electrical Engineering Master's, Engineering Physics undergrad), I think it's easy to get caught up in the theory when you have a lack of implementation experience. I was fortunate enough to talk to a few ML Scientists from Deepmind who were working on similar content and even they said implementing these Bayesian networks becomes a hassle. 
+
+Also, I didn't know about the Gal/Osband back-and-forth. Interesting to hear what Ian has to say about Dropout. 
+
+I appreciate the links/ thoughts!
+- Thanks a ton for your thoughts, this is really insightful! I haven't  stumbled across these papers talking about the issues with predicting the posterior. The issues coupled with it difficult optimization/ implementation might make this more prohibitive than I initially expected. 
+
+I have a lot to churn through, but I think ensemble methods might be an interesting path to look into. Thanks again!

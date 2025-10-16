@@ -1,0 +1,37 @@
+URL: https://www.linkedin.com/posts/david-tolpin-1a45736_one-should-never-never-use-llm-chatgpt-activity-7057274722983514112-ksbU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+David Tolpin的动态
+David Tolpin
+
+Computer Scientist
+
+2 年  已编辑
+
+One should never, never use LLM (ChatGPT and similar) for anything fact-based. Here is why:
+
+-------
+Me: Was there previous research on concept drift detection and handling in the context of probabilistic programming?
+
+ChatGPT: Concept drift detection and handling in the context of probabilistic programming is an active area of research, and there have been several papers published on this topic.
+For example, the paper "Bayesian Online Change Point Detection in Probabilistic Programs" by Yang et al. (2018) proposed an online change point detection algorithm for probabilistic programs. This algorithm uses Bayesian inference to detect changes in the underlying probability distributions of the program's variables.
+Another paper, "Adapting Probabilistic Programs for Concept Drift" by Liu et al. (2019), proposed an approach to adapt probabilistic programs for handling concept drift. This approach involves learning the distribution over program parameters and adjusting them when concept drift is detected.
+There have also been several papers that propose using Bayesian inference to update models in the presence of concept drift, such as "Bayesian Nonparametric Learning for Online Change-Point Detection in Probabilistic Programs" by Bai et al. (2020) and "Probabilistic Programming for Non-Stationary Data Streams" by Minka et al. (2019).
+--------
+
+This is a very convincing answer. There is just one small problem with this answer. NONE OF THE PAPERS mentioned were ever written. The titles look very relevant, the authors' names are of real people working in the field, but THE PAPERS SIMPLY DO NOT EXIST.
+
+LLM are parrots. They are not trained to tell the truth. They are trained to be convincing. Like politicians. Politicans and LLMs are of little use where facts are important.
+
+Do you want a health-related consultation or an advice on your bank account to be very convincing b

@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ay29yi/criteria_to_pick_a_specie/
+Title: Criteria to pick a specie
+
+Content:
+I have been thinking about this for a while, specifically for bacteria.
+
+Consider you're working on developing a pipeline of machine learning model and the project is purely computational, what are the criteria that make you pick a specie over the other to gather data around it? It is easier when there is a biological question in mind targetting a specie.
+
+Model organisms do have plenty of data however tons of works aim for them as well, whereas other species might not have been worked on but data is not sufficient. It feels like a dilemma
+
+Comments:
+- Do you think 'specie' is the singular of species, because it isn't the singular of species. The singular of species is species.
+- It depends what really hides behind « a pipeline of ML models ». More and more people search for problems to solve with ML and AI, and I’m convinced it’s the wrong approach, running around with a big hammer and looking for nails..
+- It has a fully closed genome would be one preference, if we kind of just talk very very very very very very very very broadly.
+
+But there are so many other factors.
+- What are you developing the pipeline to do? 
+
+I like working on obscure species but it's generally much more difficult. As a beginner I'd pick something which is moderately well studied but not a model organism.
+- We cannot answer your question without any idea of the aim or objective of your ML pipeline. However, model species like E.coli, you will have tons of data and well annotated. While more rare species will be more interesting but you will have less data.
+- Omg same! I work in marine viral ecology and there are simply not enough representative genomes to make good models to detect and describe most communities

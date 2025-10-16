@@ -1,0 +1,34 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/10aiexg/what_skills_should_i_prioritize_improving_as_i/
+Title: What skills should I prioritize improving as I finish my PhD?
+
+Content:
+Hi all, I'm in the last leg of my PhD and was hoping for some thoughts and opinions as I transition into industry. My PhD is in agricultural science and the main focus of it involves running ML models on agricultural and geospatial datasets and then interpreting the results for agricultural decision making. I've been applying to DS positions in AgTech and would ideally get a position where I use ML with big ag/geospatial datasets to develop new tools, similar to my current work.
+
+&#x200B;
+
+I'm very happy with what I've learned during my degree, especially with my soft skills and domain knowledge. The being said, I have a few months before I graduate and have been spending about an hour a day trying to beef up my technical skills. I'm good at learning new things and have been productive so far, but there's so just many ways that I could be spending my time here. I'd hugely appreciate some advice on how I should spend it.
+
+&#x200B;
+
+Here's where I'm at:
+
+* My Python is just decent overall. I'm fairly strong with general DS work in Python (NumPy, pandas, matplot, etc.) and with working with sklearn models, and am a little weaker with general programming. I can easily do DS work when it's using datasets that I'm comfortable with, and can hold my own on out-of-domain practice datasets from Kaggle, although there's room for improvement. For more general programming, I'd say I can only do about half of the 'easy' ranked Leetcode problems.
+* I have basic GIS/Geo-Python skills.
+* I have basic MySQL programming skills from self-teaching, but have never actually used them in academia.
+* My statistics knowledge is moderately strong, particularly in my domain (biostats). Similarly, I have decently strong fundamental ML knowledge. I wouldn't say I'm an 'expert' in either of these categories.
+
+&#x200B;
+
+How would someone in my position prioritize their time? Grind DS on Kaggle? Focus on Leetcode-style programming? Get better at SQL? Improve my conceptual fundamentals in stats/ML/math? What about spending time learning more ancillary programs like AWS, Azure, Git, or Flask? Maybe learn something like TensorFlow or PyTorch? Something entirely different? One uncertainty I have is whether I would get more out of improving my existing skills or spending time adding new skills to my CV. 
+
+&#x200B;
+
+Hope it's alright that I rambled a bit here. Overall, I feel fortunate that I have time to improve my skills but am a little unsure of what skills to prioritize. Discussion is open to anyone in a similar situation as well. Thanks in advance for any advice.
+
+Comments:
+- ecosystem knowledge (AWS/Azure/GCP/Snowflake) is generally helpful in most roles you’ll find, but you don’t need to be an expert, just read up on storage and access services and methods.
+
+I grind kaggle regularly as ongoing development, and weigh it’s value more than leetcode exercises, though I still do those now and again. Lastly, I vote some tensorflow time simply because it is fun and potentially applicable to the space you’re going into.
+- I’m doing the same in supply chain. Mostly spending my time networking and finding a company to make up a job for myself with.
+- Try to connect with people from your field working in AgTech, maybe an old student from your group that made the move you are preparing to do. They will be better equipped to give you a good advice on the specific technologies.

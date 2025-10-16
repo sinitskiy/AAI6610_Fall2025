@@ -1,0 +1,10 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1kpy5l3/p_uqlm_uncertainty_quantification_for_language/
+Title: [P] UQLM: Uncertainty Quantification for Language Models
+
+Content:
+Sharing a new open source Python package for generation time, zero-resource hallucination detection called UQLM. It leverages state-of-the-art uncertainty quantification techniques from the academic literature to compute response-level confidence scores based on response consistency (in multiple responses to the same prompt), token probabilities, LLM-as-a-Judge, or ensembles of these. Check it out, share feedback if you have any, and reach out if you want to contribute!
+
+https://github.com/cvs-health/uqlm
+
+Comments:

@@ -1,0 +1,78 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1iiv14n/activevision_active_learning_framework_for/
+Title: active-vision: Active Learning Framework for Computer Vision
+
+Content:
+I have wanted to apply active learning to computer vision for some time but could not find many resources. So, I spent the last month fleshing out a framework anyone can use.
+
+* Repo - [https://github.com/dnth/active-vision](https://github.com/dnth/active-vision)
+* Docs - [https://dicksonneoh.com/active-vision/active\_learning](https://dicksonneoh.com/active-vision/active_learning)
+* Quickstart notebook - [https://colab.research.google.com/github/dnth/active-vision/blob/main/nbs/imagenette/quickstart.ipynb](https://colab.research.google.com/github/dnth/active-vision/blob/main/nbs/imagenette/quickstart.ipynb)
+
+  
+This project aims to create a modular framework for the active learning loop for computer vision. The diagram below shows a general workflow of how the active learning loop works.
+
+[The active learning data flywheel.](https://preview.redd.it/8byevszkaghe1.png?width=1080&format=png&auto=webp&s=c14b1e4381f0406334da46b85d37af7d711faefc)
+
+Some initial results I got by running the flywheel on several toy datasets:
+
+* Imagenette - Got to 99.3% test set accuracy by training on 275 out of 9469 images.
+* Dog Food - Got to 100% test set accuracy by training on 160 out of 2100 images.
+* Eurosat - Got to 96.57% test set accuracy by training on 1188 out of 16100 images.
+
+  
+Active Learning sampling methods available:
+
+Uncertainty Sampling:
+
+* Least confidence
+* Margin of confidence
+* Ratio of confidence
+* Entropy 
+
+Diversity Sampling:
+
+* Random sampling
+* Model-based outlier
+
+I'm working to add more sampling methods. Feedbacks welcome! Please drop me a star if you find this helpful 🙏
+
+  
+Repo - [https://github.com/dnth/active-vision](https://github.com/dnth/active-vision)
+
+Comments:
+- I have some time to test this so might give it a shot on 2 or 3 nontrivial datasets. I'm always a bit biased against active learning when it's fully automated because it's the best way to end up with a large accumulation of errors, but human-in-the-loop frameworks are nice.
+- I like it, but I'm confused. How do you evaluate your model without labels? And if you do have labels, why do you need to label sampled images?
+- Cool stuff! Looking forward to try it out, however it seems like links are down?
+- GitHub link doesn’t work
+- Thanks! Please let me know if you find any room for improvement!
+- If you are at the beginning of the active learning cycle, you need 3 sets of data to start:
+
+1. A labeled evaluation set. This is used to evaluate the model.
+
+2. An unlabeled pool of data to sample from.
+
+3. A labeled initial training set. This set will be small at first but will grow as we incrementally sample from 2. through the active learning cycle.
+
+In a conventional approach, you might want to label ALL data in 2. However, this may not be feasible due to labeling costs, data availability, time, etc.
+
+Active learning solves the problem of "which data should you label" which will improve the performance of your model the most. Basically, choosing the "best bang for the buck" data and label them.
+
+  
+In the benchmark section, I show that in some datasets labeling only 3% of the data results in similar performance as labeling all of the data.
+
+  
+[https://github.com/dnth/active-vision?tab=readme-ov-file#imagenette](https://github.com/dnth/active-vision?tab=readme-ov-file#imagenette)
+- So it uses a confidence score to slowly assume what prediction is the most likely in the unlabled set, and hopefully converges to the correct labeling of all images?
+
+Edit: I noticed that object detection isnt supported yet, looking forward to testing it for this.
+- The confidence score is one of the metrics that determines whether an image gets selected to be labeled. 
+
+A low confidence score indicates the model is not confident in the prediction of the image and thus would benefit from getting a human label.
+
+If you do this repetitively, the model gets better at predicting images it's not sure about. Over time, your model gets better.
+- This seemes really interesting,  have you thought about how you would do this for object detection? Would assume having multiple potential objects might make it more tricky?
+Looking forward to testing it out and maybe contributing for object detection.
+- Thank you! More testing will surely help!
+
+Yes it's a little different for object detection but possible. If you'd like to know how it's implemented, I plan to adapt it from Robert Munro's book - Human in the Loop ML.

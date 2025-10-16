@@ -1,0 +1,78 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16urri3/machine_learning_pays_1540_more_than_data_science/
+Title: Machine Learning pays 15-40% more than Data Science - why?
+
+Content:
+
+
+Comments:
+- At least in the Bay Area, MLE can be shorthand for a DS that can code as well as a SWE. And sometimes esp at non-tech firms DS jobs are really analyst jobs. I don’t think MLE positions suffer from this issue.
+- MLE primarily work for tech companies in SF. DS work in many industries in many states.
+- Because data science is a catch all term that means f*ck all these days. A "data scientist" can be a simple data analyst using SQL to extract data, loosely use Python, make a power bi or tableau dashboard. It can also be someone who does actual statistics, NLP, regression, neural networks, etc. Data scientist is too vague. But y'know what machine learning engineers do? Machine learning. You won't see an ML engineer making pivot tables in Excel, or using SQL to create menial crap
+- [Recently I studied 9261 job listings in Data Science, Machine Learning and ML OPS](https://jobs-in-data.com/blog/machine-learning-jobs-pay-better-than-data-science-jobs-but-why) and found that job listings for Machine Learning Engineers quote 15%-40% higher salaries than for Data Scientists at an equivalent comparable seniority level (data from the United States - ranges quoted in job listings were converted into mid-points: avg(min, max) ).
+
+I checked further - other studies found the same conclusions:
+
+\- A 17% - 20 % salary premium for ML Engineers / ML OPS over Data Scientists across different seniority levels - based on [https://www.kaggle.com/kaggle-survey-2022](https://www.kaggle.com/kaggle-survey-2022) .
+
+\- This study based on Indeed data found a 30% premium: [https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F7fo62gavi5bb1.png](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F7fo62gavi5bb1.png)
+
+With Data Science and Machine Learning often used interchangeably in the industry - I further analyzed job descriptions to find the differences in requirements driving the differences in salary.
+
+These are my conclusions:
+
+1. **Education Requirements:** ML Engineer positions require a Ph.D. in 27% of job listings, showing a \~20% increase compared to the 23% requirement in Data Scientist listings.
+2. **Programming Language Proficiency:** Python is a must for everyone. ML Engineers are more often required to know lower-level languages like C, C++, and Java. Data Scientists more often utilize SQL and R.
+3. **Core ML Skills:** There is a significant overlap - though there are differences too. ML Engineers primarily focus on deep learning technologies and mastery of frameworks like PyTorch and TensorFlow. In contrast, Data Scientists need to be adept in statistics and data visualization.
+4. **Data Processing and Database Technologies:** The MLOps roles distinctly stand out when it comes to experience with various data processing and database technologies.
+5. **Cloud Skills:** There is a discernable demand for cloud skills among ML Engineers, which is significantly higher compared to the Data Scientists.
+6. **Visualization Tools Proficiency:** Data Scientists have a higher demand for proficiency in visualization tools, a requirement that is not as prevalent among ML Engineers.
+7. **IDE Usage:** Interestingly, across all three roles - ML Engineers, MLOps, and Data Scientists - Microsoft Excel is a frequently listed requirement.
+
+Note:
+
+The plot was made with plotly
+- A lot of the data science roles in the sample probably are doing more like data analysis, business analysis, business intelligence, etc,. and it is easier to get qualified talent for those kinds of tasks -- despite whatever the job postings say the requirements are.
+
+A lot of companies hire data scientists but don't realize they need more data engineers or ML engineers, actually. And these companies typically pay less than the ones that know they need ML engineers and MLOps engineers.
+
+Even for data science roles heavy in ML or other modeling, the talent pool includes people with a relatively wider range of backgrounds: CS, math, econ, engineering, etc. which could push down salaries a bit. Generally MLE roles need more software skills. For a lot of applied math grads, for example, DS is the obvious path to go to make money. But CS grads can just do regular software engineering.
+- Most DS can’t code well
+- Most data scientists can’t write production-quality code, which is what you need to scale most products into a profitable platform.  
+
+MLEs may not understand the nuances of regression or statistics, but they can build data pipelines, train models, and deploy them at scale.
+- ML salaries are in the range of other engineering salaries. DS  is related to engineering but isn't engineering itself.
+- People with the ML title can usually build software as well
+- Many data scientists don't touch ML nor software engineering and are more like glorified statisticians or data analysts.
+- More PHD’s in MLE and the work is more technical in nature. Data Science has a heavier soft skills focus, which are easier to develop than MLE level engineering and CS skills.
+- MLE is sort of DS+SWE, at least skills wise.
+- Because they can write non shitty code
+- MLE are seen as having a deep understanding of how to produce a ML algorithm from start to finish. DS is seen as individuals who can prototype but not necessarily turn production.
+- ML engineers can actually code
+- Because most Data Science jobs are Data Analyst jobs
+
+There are a few reasons for that:
+
+1.) Thats a common tactic for companies to get more skilled people into their companies because these people are more interested in Data Science compared to Data Analytics ("Data Science is the sexiest job of this century")
+
+2.) The companies dont know what they are actually searching for (something with data). They are just saying data science because they dont actually care about the job Title
+
+The more challenging data science jobs (and higher paid aswell) are usually not called Data Science. Rather something like "Research Scientist/Engineer, Computer Vision Researcher, NLP Engineer, ...". Based on these job descriptions, the companies exactly know which skills they need in their employees and therefore can pay you better because you can bring constant value to them.
+
+TLDR: The skills required for ML Engineering jobs go beyond what a normal Data Scientist would do
+- Because MLEs know how to ship code and DSs often do not.
+- I literally took a leave of absence from school, mid DS degree. Why? Classes changing & F'd up financial aid, aka what does it cost "now"? I literally needed lawyers. 
+
+Ok so now DS "requires ML", and I opted for AI as well. It's not too much additional work. And I can guarantee "required classes" will change again over the next 6 months.
+
+In otherwords DS jobs are now ML/AI jobs.
+
+Don't panic, It's literally a side step from the same thing. Old was make a filter/algorithym for data. Now it's train a "model" on this data. Which is just teaching an AI the exact same filter/algorithym.
+- Interviewed quite a few in Europe at the moment
+
+From what I see is not good enough software engineer to be an engineer and know very little about data or maths
+
+But also look for newly 2x the salary of both 
+
+Why not just hire a good SWE to work with a good DS ?
+- I would say because MLE are SWE that can do DS work.

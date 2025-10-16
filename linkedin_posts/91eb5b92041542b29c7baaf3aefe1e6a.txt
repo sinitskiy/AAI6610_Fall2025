@@ -1,0 +1,24 @@
+URL: https://www.linkedin.com/posts/bhavsarpratik_llm-hallucinations-langchain-activity-7088065447777988608-qLx9
+Date: 2025-09-24
+Author: Unknown
+
+Deep Dive Into LLM Hallucinations Across Generative Tasks
+
+Its easy to build LLM applications with LangChain. But making them hallucination proof is not a piece of cake.
+
+Do you want to build LLM application which are robust to hallucinations? I have compiled a post which discusses different scenarios of hallucinations.
+
+𝐈𝐧𝐭𝐫𝐢𝐧𝐬𝐢𝐜 𝐇𝐚𝐥𝐥𝐮𝐜𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬: These are made-up details that directly conflict with the original information. For example, if the original content says "The first Ebola vaccine was approved by the FDA in 2019," but the summarized version says "The first Ebola vaccine was approved in 2021," then that's an intrinsic hallucination.
+
+𝐄𝐱𝐭𝐫𝐢𝐧𝐬𝐢𝐜 𝐇𝐚𝐥𝐥𝐮𝐜𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬: These are details added to the summarized version that can't be confirmed or denied by the original content. For instance, if the summary includes "China has already started clinical trials of the COVID-19 vaccine," but the original content doesn't mention this, it's an extrinsic hallucination. Even though it may be true and add useful context, it's seen as risky as it's not verifiable from the original information.
+
+Read the full post here where I touch upon different scenarios.
+https://lnkd.in/d62e4kjh
+
+
+话题标签
+#llm 
+话题标签
+#hallucinations 
+话题标签
+#langchain

@@ -1,0 +1,107 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1m6z69z/human_image_classification_algorithm/
+Title: Human Image Classification Algorithm
+
+Content:
+**Background/Motivation**
+
+I've been getting my feet wet in computer vision, and even managed to get onto a research project from outside. I've learned more about how cnns and transformers work, and also llms etc. I'm going for a phd in machine learning and also focusing heavily on mathematics in the future. 
+
+Anyways, the more I learn, the more I appreciate the beauty of math. It's a tool by which we can analyze patterns in the world, and each area of math examines a different pattern. I also graduated with a BS in Computer Science a while back and have been working, and it's only recently that all my knowledge started to crystallize.
+
+I realize that everything is basically an algorithm. When I write code, I'm writing an algorithm to solve a problem. The machines I'm working with are basically algorithms implemented in the physical world using physics and material sciences. Even my body is an algorithm - genetics, and flesh and bones is just biological machinery. The stars, sun, moon everything follows laws and moves, and can be represented by an algorithm.
+
+And thus, even my thoughts follow an algorithm and implementing a rigorous structure for logical thinking improves this algorithm. **And even moreso, I feel my limitations.**
+
+When we do computer vision, we are just optimizing an algorithm for classification and the generation of images is just creating something from noise. We basically are building parts/processes of a being, but not the being itself.
+
+I tried searching online, but results were swamped by tons of irrelevant results.
+
+**The question**
+
+Then, has anyone ever tried to mathematically represent human thinking as an algorithm? I know that gpt etc are just randomly generating what looks to be reasonable output. That's not the path to AGI. I'm wondering if someone has knowledge on this aspect?
+
+While tangentially related to computer vision, I also think it's important because the classifier step is important, and when we humans look at things, our brain basically runs a classifier algorithm. So I'm very curious about human algorithms as they are more energy efficient too. 
+
+
+
+Comments:
+- Of course people have tried representing human thought as an algorithm
+
+There’s a reason machine learning is so popular instead
+- >I know that gpt etc are just randomly generating what looks to be reasonable output.
+
+The irony...
+- Can you link to some studies or areas of knowledge/ history involving this?
+
+Current machine learning is basically building faculties. For example, all this generative stuff is basically the faculty of imagination. Computer vision is vision. Why aren't we building a faculty for reasoning?
+
+Also it wasn't as popular until recently.
+- What's the irony?
+- Start with Russell and Norvig. 
+
+https://en.m.wikipedia.org/wiki/Artificial_Intelligence:_A_Modern_Approach
+
+> wasn’t as popular until recently
+
+Exactly my point
+- What you said could be one-two sentences, but your brain compells you to write more without adding any meaning.
+
+You also don't preceive the glaring contradiction between your stated love for math and anti-scientific ideas of capturing "human thinking" in an algorithm.
+
+You write words to write words, this is the irony.
+- Thanks, finally an answer.
+- >anti-scientific ideas of capturing "human thinking" in an algorithm
+
+Why would this be anti-scientific? We do try to study how the mind works and have even explored it's machinery? If anything the exploration and summarization of things is scientific.
+
+Are we talking about the same things here? If we can summarize universal laws as an equation, why can't we summarize human thinking as an equation? If we view a mind as a black box with an input and output, there certainly is some function that makes this possible.
+
+Even all our models are just based on equations.
+
+Plus, what's wrong with your attitude? Many questions I want to find the answer to.
+- No, I'm writing words to ask a question and for a direction. Something you failed to parse and would rather say "irony".
+- Well to start you don't even know how humans think, so making algorithm out of that is just an alchemy. Science works with clear definitions and repeatable patterns, witchcraft works with mumbo-jumbo and hand waving. You are of the latter bunch.
+
+Do you think people do humongous matrix multiplication instead of "capturing the soul" for fun? It's the only clear idea that (somehow) worked, that's why. Everything else is a dud.
+
+You remind me of all the psychos who surface here from time to time with their "Thinking machine" architectures. Like [this](https://www.reddit.com/r/computervision/comments/1koihm9/comment/msqnhxc/?context=3) or [this guy](https://www.reddit.com/r/deeplearning/comments/1kef9w0/what_happens_when_ais_start_catching_everyone/). It's a schizo thinking pattern, so I would get a check.
+- And you could have done it in two sentences
+
+Also “has anyone ever tried to make a machine in the likeness of a human mind” is simply an absurd question for someone doing / soon to start a ML PhD
+- >Well to start you don't even know how humans think, so making algorithm out of that is just an alchemy.
+
+And from ignorance one seeks knowledge through... gasp experiments and deduction. It's almost like there's a word for it. Oh right. Science.
+
+Well, it turns out that there are cognitive science models on how people think as well as some studies. It seems that seem people thought the same as me and began an effort of sorts.
+
+And obviously we didn't arrive at transistors and computers in a day. One has to seek a direction. I was looking for people who had knowledge and could point down other directions.
+
+Instead, I got someone that has extreme bias, reduces problems, and perhaps doesn't like to think about the motivation of things. Maybe you should retune your mind and remove all that overfitting. And also fix that small mindedness and attitude too. Could work wonders in your life.
+
+So you started with irony, and let me end with irony. When asking about direction towards scientific knowledge on the subject, I get someone that handwaves the things I want to ask about as mumbo jumbo and alchemy. You seem no better than the people you deride. You share a common trait of small mindedness.
+- Yeah, but isn't that our goal?
+
+And technically from a material perspective our mind is a machine just built out of biological cells.
+
+And I was more asking for what people have done so far and asking more experienced people on what they know. I'm well aware of the limitations.
+
+Also an interesting question is why you think it's absurd?
+- No, it’s not my goal. I’m a research engineer and a “bread scholar” (I study so I can put bread on the table).
+
+> absurd
+
+Because it betrays an extreme naïveté of the field and near total ignorance its history, which tells me you haven’t done your due diligence before deciding on something as significant as a PhD, which makes me think you’re some sort of idealist or romantic, which is a trait I find very tedious.
+- Thank you for your input :). I dont mind remarks like this if theyre helpful. Ill be sure to pursue a better understanding of the things you mentioned.
+
+
+It's good to have extreme idealism and its opposite in the same person imo.
+
+
+Yeah, I dont need to worry about money, my goal is to pursue interesting things.
+
+
+I know bits and pieces of background from my undergrad, but probably not as much as you.
+
+
+I just had a thought while at work, humans are theoretically the product of evolution. If we could find the simplest life capable of thought, understand be able to represent the simplest unit of consciousness in a machine, could we then simulate evolution and see if we create something matching human ability? Random mutation+ selection.

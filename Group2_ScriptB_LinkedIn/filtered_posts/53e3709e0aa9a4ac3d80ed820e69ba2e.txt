@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/sergei-kalinin-5bb44b18_materialsscience-machinelearning-researchinnovation-activity-7162839598904135680-uAha
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sergei Kalinin的动态
+Sergei Kalinin
+
+Weston Fulton chair professor, University of Tennessee, Knoxville
+
+1 年
+
+📯 (More) Uncertainties in ML-driven Material Science
+
+In the fascinating intersection of machine learning (ML), theory, and experimental science, we're continually pushing the boundaries of what's possible in materials discovery and analysis. However, this journey is not without its challenges, particularly when it comes to understanding and mitigating uncertainties.
+
+🔔 Aleatoric and Epistemic Uncertainties: The Known Challenges
+
+In ML, we're familiar with the concept of aleatoric uncertainty, which essentially refers to the noise inherent in our data. This is a well-documented challenge that we navigate by refining our data collection and processing methods. Adding to this, we encounter epistemic uncertainty when our models may not fully capture the underlying truth of the data generation process. Both types of uncertainty require rigorous attention to ensure the reliability of our ML applications.
+
+🔎 The Third Uncertainty: Theory vs. Experiment in Material Science
+
+However, a third, less discussed challenge emerges when applying ML and theoretical frameworks to experimental science, especially in the realm of materials science. The crux of the issue lies in the disparity between our theoretical models and the real-world entities they aim to represent. For instance, while chemical formulas provide a neat theoretical representation of molecules, the reality of these molecules interacting within a solution or the complexities of solid materials with dopants and impurities introduces a significant gap between theory and experiment.
+
+This gap poses a unique challenge for materials scientists. For decades, condensed matter physicists have strived to create materials as close to their ideal theoretical models as possible. Yet, in materials science, reconciling the microstructure of real materials with their theoretical depi

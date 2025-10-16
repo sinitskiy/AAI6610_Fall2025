@@ -1,0 +1,51 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/10rx795/from_bioinformatics_to_tool_dev/
+Title: From bioinformatics to tool dev
+
+Content:
+I am a PhD grad student in bioinformatics with experience in development and maintenance of databases and genome browsers. I also have experience in pipeline dev, genome assembly, annotation and other downstream steps. I’ve also used machine learning for genomic feature extraction. 
+I really enjoy(ed) working on the various projects I am/was involved in, but I like building products (databases, web apps and such) the most. What I really want to work on in the future is bioinformatics tool development, but that might be a bit of a hurdle for me since I’m not from a computer science background. 
+I would really appreciate any advice on how to make this transition.
+
+Comments:
+- Looked at your post history to get a little more context.
+
+You're going to learn a lot in the next several years of your PhD but something that your program and PI probably won't teach you is best development practices.
+
+Don't go overboard and become dogmatic but get used to writing unit tests and being able to setup basic CI/CD pipelines that are appropriate for your work.
+
+Try to open source what you can and strive to make everything a 'one click install' for someone who would be familiar with the format you're shipping.
+
+I've done the above myself for my niche and it's really helped my career.
+
+What's the first tool you'd want to build?
+- I think it's cool you identify an interest in tool dev. Its a totally different experience building tools compared to say, writing just enough code to make the next figure for a paper
+- CS background is irrelevant. I have a PhD in microbiology and I have developed a tool.
+- Thanks for your advice! 
+
+Right now I will work on the development of a genome browser tool to view annotated genomes, compare genomes and do other sorts of analysis. 
+On this same project I would also incorporate a query functionality to search for specific sequences and features in genomic databases, and do set operations on the data (union, intersection and such).
+
+Gradually I would want to move on to other stuff like sequence alignment, gene expression analysis and sequence assembly tools, which would be a totally new domain for me.
+- What's the main programming language you use for developing tools?
+- Yes I know, tool dev is like proper SD! Also, what do you do?
+- Would you mind telling me about the tool you developed?
+- Would also love to hear your new tool if you don’t mind me asking
+- Personally I think any language is fine as long as there are unit tests and one line installs. Makes it really easy to port functions between languages.
+
+I mainly use Go. Go has a releaser tool called go releaser that makes it really easy to ship binaries for every architecture/OS combo.
+
+It also has example tests via the std library which make it really easy to write docs that never rot.
+
+The only big drawback I've had is that people keep asking me why my work isn't written in python or R but that usually becomes clear after they see how easy it is to get setup with compared the virtual env thing python has going on.
+
+Oh and generics are not too good in Go yet.
+
+tldr programming style is more important than language imo and Go lets me write in a style I like.
+- I actually work on a genome browser (jbrowse) and previously worked on model organism databases. It's an interesting niche...i could definitely ramble about it for awhile. My first entry into the field was a undergrad thesis with a lot of R plots and it was a very different experience
+- I'm sorry but I can't disclose that without jeopardizing my anonymity.
+- You’re part of the team who maintains jbrowse?? No way I used jbrowse to build a web-app to visualize certain genomes and their annotated products; genomes  which were either scraped from NCBI or assembled in-house !  This was the first publication of my life and it was related to analysis of SSRs and other domains and motifs in these genomes.
+- Of course I understand..I was not asking for the exact tool just a general idea of what it does ..no issues my man!
+- love that :) I have been tangentially involved with jbrowse as an open source project since \~2013 and got actually hired to help make jbrowse 2 more recently
+- Keep up the great work ! Also, if you don’t mind me asking, what is your career trajectory? Like how did you start and all…
+- sent ya a DM :)

@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/jdromerom_bayesian-seismic-inversion-with-implicit-activity-7361004991966306305-MKjk
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Juan Daniel Romero的动态
+Juan Daniel Romero
+
+Ph.D. Student in Earth Science and Engineering
+
+1 个月
+
+How reliable are your seismic inversion results? 🤔 
+
+We tackle this question in our recent paper. Here, with the help of Deep learning, specifically implicit neural representations and normalizing flows, we introduce a framework for efficient and scalable uncertainty quantification for seismic inversion (under certain assumptions).
+
+We did our best to fairly benchmark uncertainty results on synthetic data and demonstrate the framework's performance in 2D and 3D field data. The best part? The code is open source, so you can adapt it to your own problem—and I’ll be happy to help you get started 👾 
+
+Special thanks to my Ph.D. advisors, Matteo Ravasi and Wolfgang Heidrich.
+
+https://lnkd.in/dKJabBFy
+
+Bayesian seismic inversion with implicit neural representations
+academic.oup.com
+178
+6 条评论
+赞
+评论
+分享
+Jian Sun
+
+Associate Professor at Ocean University of China
+
+1 个月
+
+I believe I am the first one to introduce INR to seismic inversion including FWI (I prefer to call it implicit FWI or implicit seismic inversion). Beyond that, we have proved that such "implicit strategy" can also be extended to eletromagnetic and GPR inversion. There are several benefits of performing inversion with INR, the convenient and no-extra-time-cost uncertainty analysis is one of them.
+
+Same idea can also be done in the uncertainty analysis of FWI's results,  see our work in 2023 (Multilayer Perceptron and Bayesian Neural Network-Based Elastic Implicit Full Waveform Inversion, https://ieeexplore.ieee.org/abstract/document/10097732). 
+
+赞
+回复
+5 次回应
+Luis Carlos Escobar Arenas
+
+Subsurface & Marine Geoscientist | MSc. in Geosciences
+
+1 个月
+
+Awesome, Juan Daniel!
+
+赞
+回复
+1 次回应
+Matteo Ravasi
+
+Senior Research Advisor - AI/MLops Engineer @ Shearwater | PyLops core developer
+
+1 个月
+
+Congratulations Juan! This is a great piece of work with not only a new idea but also a very precis

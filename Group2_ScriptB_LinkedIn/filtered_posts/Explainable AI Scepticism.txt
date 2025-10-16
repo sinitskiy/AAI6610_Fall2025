@@ -1,0 +1,62 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/176drw8/explainable_ai_scepticism/
+Title: Explainable AI Scepticism
+
+Content:
+For context, I work in a regulated industry where model interpretability has a large emphasis, from both the business and regulators. We use a lot linear models, like OLS, logistic regression, and GAMs to account for non-linear relationships. Recently, some of the data science leadership has been pushing us to explore machine learning models to see if and how large the predictive gains are. 
+
+Not surprisingly, XGBoosts, Random Forests, among others, show a small increase in predictive accuracy compared to the linear models, as we spend a fair amount of time fine tuning the linear models. 
+
+However, we still need to show that we understand how these models are making their predictions and I have come to the opinion that most of the explainable AI techniques out there do a poor job of explaining anything meaningful about the model or the data. 
+
+Things like SHAP values of LIME are okay in some instances with a stable model, but we've seen that they often show bizarre relationships. For instance two observations that are theoretically close to each other in the data generating process, are close to each other in data itself, are very different from each other in the model space. In addition, these local interpretation techniques really fail to show anything about the model globally. 
+
+This blog post summarizes most of my thoughts clearly: https://randomeffect.net/post/2020/08/07/is-explainable-ai-anything-at-all/
+
+Anyways, I guess what I'm asking is are there practicioners out there that hold a different view? Are there advancements in this space that I'm unaware of? I know there's a lot of effort going into the explainable AI space right now, but I'm pessimistic that it's even possible for us to have a good explaination for many models. Thoughts?
+
+Comments:
+- I am an “AI” skeptic (aka black box skeptic) because I’ve seen too many people make fundamental mistakes using explainable methods so how do I know the unexplained methods aren’t making the same mistakes. The biggest is data leakage. The only way I would trust a black box method is through experimentation. How does it actually perform in the real world? If it performs better I’m comfortable assuming it’s works.
+- Have you looked at something like [interpretML](https://github.com/interpretml/interpret/)? Their explainable boosting models seem to address some of the weirdness you can see with applying local SHAP values to global data.
+- > However, we still need to show that we understand how these models are making their predictions and I have come to the opinion that most of the explainable AI techniques out there do a poor job of explaining anything meaningful about the model or the data. 
+
+Linear model are not inherently explainable, it can be a factor.
+
+
+> Things like SHAP values of LIME are okay in some instances with a stable model, but we've seen that they often show bizarre relationships. For instance two observations that are theoretically close to each other in the data generating process, are close to each other in data itself, are very different from each other in the model space.
+
+I am sorry if I misunderstood your point here, but I feel like this is enforcing a relationship before you figure out what the relationship is. The #1 thing that I often see misunderstood in the process of explaining models is an implicit presumption of simple relationships and/or confusing explainable with linear (if A increase then B increases).
+
+There is another aspect here, is to differentiate asking "why" versus "how", the "why" question could technically be unanswerable, or at least it can be unsatisfactory. "How" can have an end to it that can be satisfactory. Either way, the process of using the result of these techniques can't be divorced from a deeper understanding of the features themselves (kinda vague here, I know).
+
+> In addition, these local interpretation techniques really fail to show anything about the model globally. 
+
+yes, that is an issue, there is a random aspect to SHAP for example, and you could already be unable to run SHAP on your entire data anyway if you start venturing into semi-large datasets and/or large number of features.
+- If it has more than ten or so features, interpretability is a joke. For the most part, NONE of our models are even marginally interpretable. The interpretability thing is the set of techniques you use to trick your clients into thinking that YOU understand the model when you know full well that you don’t have the faintest fucking clue.
+
+None of us have any idea what these things are really doing. We understand *tiny components*, but we don’t really “understand” any of the models we train as a whole.
+
+My advice: make your life a lot easier and pretend to buy into the interpretability thing.
+- Just wanna point out a beef a lot of people have with “explainable” ai. Which is more of a beef with an abuse of terminology in the context where the people ingesting the results of interpretable ai do not tend to technical. 
+
+Across industries for practitioners and non practitioners who find themselves working/reading/interpreting output there is often a conflation of “why did my model make this prediction” with “how  did my model make this prediction” with why and how do these values I see come about.  So anywhere where we care about the notion of causality. Or more broadly if you care about multiple marginal effects(assuming your design even allows you to do that which is hard in practice). So like for drug development (especially at stage 3 and 4 you really want these things so you can minimize patient risk). 
+
+These approaches don’t address those questions. They are fantastic for ease of use and prediction sometimes-and this package among others uses some cool theory to explain how the model comes to predictions-but a good predictive model is not one that is more or less likely to be the one that generates the data. You need more than that. 
+
+Causal M (“double ml” although that term seems to be abused now) is currently a hot topic of research, and there are some situations where you can use them in the context of things like…TMLE (but the use case is narrow, and you could just use versions of lasso, also statisticians have been looking at that for a few decades now, and there are much smarter people than me talking about the pros and cons and how practical these things are).
+
+Linear models, even when the treatment effects are not strictly linear can still be very useful and interpretable. And to be fair;  we really don’t just throw ols at the problem and find ourselves with any empty toolbox. Glms are super flexible and easy to implement  now, and you can model all sorts of nonlinearity in your data.  They are still very natural for humans to understand and motivate from a causal standpoint when we apply them with domain knowledge.
+- Thanks for the thoughtful response. 
+
+> Linear model are not inherently explainable, it can be a factor.
+
+Can you expand on what you mean here? I think I get what you are saying but I'm not entirely sure. I guess "explainable" is a somewhat fuzzy term.
+
+> I am sorry if I misunderstood your point here, but I feel like this is enforcing a relationship before you figure out what the relationship is. The #1 thing that I often see misunderstood in the process of explaining models is an implicit presumption of simple relationships and/or confusing explainable with linear (if A increase then B increases).
+
+I don't think you're wrong here. In most of our models, we have some preconceived notion about the relationships, either through prior model building, what theory suggests, or how we understand the business. We might not know exactly what they are, but we usually have some idea about them. For example, if you were to build an electricity demand forecasting model that finds a negative relationship between demand and temperature in the summer months, I'm not sure that it's "wrong" to be suspect of the model's findings. But I can see your point in cases where you might not have any idea about what the relationships are. 
+
+
+> There is another aspect here, is to differentiate asking "why" versus "how", the "why" question could technically be unanswerable, or at least it can be unsatisfactory. "How" can have an end to it that can be satisfactory. Either way, the process of using the result of these techniques can't be divorced from a deeper understanding of the features themselves (kinda vague here, I know).
+
+I'm fully agreed here. I think from the explainable AI standpoint, the "how" is much less interesting and important than the "why." Explaining the "how" of OLS is just as easy as explaining the "how" of a decision tree and not terribly interesting. The "why" is much more important and I think should map back to your understanding of the features.

@@ -1,0 +1,20 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kmabh1/project_idea_is_this_feasible_need_feedbacks/
+Title: project idea : is this feasible ? Need feedbacks !
+
+Content:
+i have a project idea which is the following; in a manufacturing context , some characteriztion measures are made on the material recipee, then based on these measures a corrective action is done by technicians. 
+
+Corrective action generally consists of adding X quantity of ingredient A to the recipee. All the process is manual: data collection (measures + correction : quantity of added ingredient are manually noted on paper), correction is totally based on operator experience. So the idea is to create an assistance system to help new operators decide about the quantity of ingredient to add . Something like a chatbot or similar that gives recommendation based on previously collected data.
+
+Do you think that this idea is feasible from Machine learning perspective ? How to approach the topic ?  
+available data: historic data (measures and correction) in image format for multiple recipees references. To deal with such data , as far as i know i need OCR system so for now i'm starting to get familiar with this. One diffiuclty is that all data is handwritten so that's something i need to solve.
+
+If you have any feedbacks , advice that will help me !
+
+thanks
+
+Comments:
+- Just digitize recipee -> corrective action pairs by hand. OCR is likely going to create more trouble than good in your niche case. Then either use some rule-based system if data is scares, or if you have 1000s rows of data you can probably train some kind of regression model.
+
+Also, what's up with people inserting spaces everywhere and not using capitalization. You realize the purpose of writing is to be understood, right? I almost gave up while reading the first sentence.

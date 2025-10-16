@@ -1,0 +1,54 @@
+URL: https://www.linkedin.com/posts/rohinibanerjee_enhanced-uncertainty-estimation-in-ultrasound-activity-7224926160994848769-qY81
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Rohini Banerjee的动态
+Rohini Banerjee
+
+Computer Science + Machine Learning @ CMU | Machine Learning Researcher @ Auton Lab
+
+1 年
+
+I'm excited to announce that our paper "Enhanced Uncertainty Estimation in Ultrasound Image Segmentation with MSU-Net" has been accepted to the 5th International Workshop of Advances in Simplifying Medical UltraSound (ASMUS) at the #MICCAI2024 conference MICCAI Society! 🩺🌍
+
+We propose MSU-Net, a multistage deep ensemble framework, designed to enhance femoral vessel segmentation in ultrasound images and quantify uncertainty, with the goal of providing autonomous guidance for phlebotomy tasks. 💉
+
+Our recent study demonstrates that MSU-Net significantly outperforms traditional Monte Carlo U-Net approaches, offering:
+✅ A parallelized deep learning framework for image segmentation
+✅ 27.7% Improvement in the mean Dice Score Coefficient
+✅ Statistically significant enhancement in sensitivity & false negative reduction
+✅ Superior discrimination between correct and incorrect segmentations
+
+All these advancements come with minimal additional training, highlighting MSU-Net's efficiency and effectiveness. 🚀 This has been the culmination of my research at the Auton Lab over the past several months and I am grateful for the opportunity to make an impact in this dynamic field! I am excited to begin my M.S. in Computer Science, continuing my research with the CMU Auton Lab @ Carnegie Mellon University School of Computer Science starting Fall 2024, advised by Professor Artur Dubrawski.
+
+📝 Pre-print: arxiv.org/abs/2407.21273
+
+AutonLab
+Robotics Institute
+Carnegie Mellon University
+
+Authors: Rohini Banerjee*, Cecilia Morales*, Artur Dubrawski
+(* denotes equal contribution) 
+
+#MedicalImaging #Ultrasound #MachineLearning #AI #ComputerVision #MedicalResearch #VesselSegmentation #MICCAI2024 #ASMUS2024
+
+Enhanced Uncertainty Estimation in Ultrasound Image Segmentation with MSU-Net
+arxiv.org
+96
+8 条评论
+赞
+评论
+分享
+Eshna Parth
+
+Priva

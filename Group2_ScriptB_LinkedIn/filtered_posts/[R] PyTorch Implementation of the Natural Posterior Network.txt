@@ -1,0 +1,22 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/sfgynz/r_pytorch_implementation_of_the_natural_posterior/
+Title: [R] PyTorch Implementation of the Natural Posterior Network
+
+Content:
+While I am sure that you will find our spotlight paper "[Natural Posterior Network: Deep Bayesian Uncertainty for Exponential Family Distributions](https://openreview.net/forum?id=tV3N0DWMxCg)" at ICLR 2022, I want to take this opportunity to highlight our publicly available PyTorch implementation.
+
+Natural Posterior Network (NatPN) provides fast and high-quality uncertainty estimates and can be used for any problem where the target distribution belongs to the exponential family. Most notably, this includes classification, regression, and count prediction tasks. Importantly, NatPN requires little changes to existing architectures and produces uncertainty estimates without the need for out-of-distribution data. Thus, chances are good that you can easily extend your standard deep learning models with the NatPN architecture.
+
+Therefore, we put serious effort in the publicly available implementation to facilitate usage of NatPN: we (1) provide an intuitive interface that enables using the model as easily as Scikit-learn estimators and (2) follow a modular design that allows you to customize and build upon the model at different levels of abstraction. Check it out [on GitHub](https://github.com/borchero/natural-posterior-network)!
+
+Comments:
+- [removed]
+- How does this compare with full batch hmc? Nothing useful in this paper if you only consider other low quality approximations to the true posterior.
+- Posterior lol
+- Works with sequence classification?
+- A simple setting might be: you train a model for reading speed limits from street signs using images taken during the day. When testing your model in the real world, it gives perfectly accurate answers.
+
+As it turns dark though, your algorithm's performance deteriorates -- but it continues to provide you with numbers that you would expect to be correct (as the model worked well during the day). Since the model was trained on images taken during the day, however, it lacks knowledge about inferring speed limits from images taken in the dark. Therefore, it would be desirable to have an algorithm which can reason about its uncertainty. Whenever it makes a prediction, it also provides you with a measure of uncertainty about this prediction.
+
+In general, you can construct many such examples: whenever your training set does not fully cover the domain that the model is used in (this might be impossible if the domain is huge), it is useful to have an uncertainty estimate of the prediction.
+- Yes, it certainly does! As long as you can map the input to a fixed-size latent space (e.g. by using the last hidden state of an LSTM), NatPN can be used.

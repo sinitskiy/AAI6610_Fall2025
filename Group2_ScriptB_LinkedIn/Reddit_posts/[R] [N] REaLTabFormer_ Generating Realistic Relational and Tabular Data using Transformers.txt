@@ -1,0 +1,26 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/112gpf1/r_n_realtabformer_generating_realistic_relational/
+Title: [R] [N] REaLTabFormer: Generating Realistic Relational and Tabular Data using Transformers
+
+Content:
+Paper: [https://arxiv.org/abs/2302.02041](https://arxiv.org/abs/2302.02041)
+
+Generate synthetic data from single tabular data using GPT. It also works on relational datasets! No fine-tuning and works out-of-the-box.
+
+We also removed the guesswork on how long (epochs) the generative model for a single tabular data is trained. We propose the Qδ statistic and apply statistical bootstrapping to define a threshold to robustly detect overfitting.  Perk: no need for a hold-out data!
+
+Data copying is also a problem in generative models. This means that training data may be learned and copied by the model during sampling. We attempt to mitigate data copying.
+
+We implement target masking to deliberately create missing values in each observation in the data. The mask is a special token that is ignored during sampling. This forces the model to probabilistically impute the token, adding uncertainty to the generated data.
+
+REaLTabFormer is open-sourced and available on PyPi → pip install realtabformer
+
+&#x200B;
+
+https://preview.redd.it/vhf1st2g28ia1.png?width=1998&format=png&auto=webp&s=8cbc4f74bc04e2b6da16acf88f347fb1995bd5cf
+
+Comments:
+- GitHub: [https://github.com/avsolatorio/REaLTabFormer](https://github.com/avsolatorio/REaLTabFormer)
+
+PyPi: pip install realtabformer
+- Thanks for the paper! I actually might use it.

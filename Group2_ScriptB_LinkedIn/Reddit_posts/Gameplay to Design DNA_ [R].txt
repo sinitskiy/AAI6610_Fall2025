@@ -1,0 +1,18 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lnllcs/gameplay_to_design_dna_r/
+Title: Gameplay to Design DNA? [R]
+
+Content:
+We are developing a new machine learning algorithm that can design DNA by watching gameplay. The way humans play is different from computers, and that signal might be useful for searching DNA subspaces.
+
+We will be writing a research paper on this new technique, and are shooting for Nature Biotechnology! DM if you’d like to see the preprint.
+
+We have a Tetris clone that runs a lightweight ML model on device, and actually designs DNA as you play. Here we are looking for DNA that activates PPARG::RXRA, involved in metabolism, and deactivates NFKB1, a key regulator of inflammation and immune. These DNA may promise to advance diabetes research.
+
+Long term, we would like to have a library of games, even first person shooters, that design DNA in the background. Sound crazy? Maybe. But we think it might work.
+
+Help us advance this research by collecting your anonymous play data!
+
+https://exonic.ai/games/tilestack
+
+Comments:

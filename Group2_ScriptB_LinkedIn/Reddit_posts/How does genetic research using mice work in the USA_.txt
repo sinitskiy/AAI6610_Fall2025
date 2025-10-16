@@ -1,0 +1,12 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/18rqldu/how_does_genetic_research_using_mice_work_in_the/
+Title: How does genetic research using mice work in the USA?
+
+Content:
+I read about the cre/lox system, and gene knockout, where we can get mice with or without specific genes. What are some interesting parts of the process, or the most important?
+
+For context, I’m an undergrad helping in a research lab where we use mice to study how certain genes could cause a specific birth defect. I can do the lab techniques such as extract DNA, put it in a machine with some buffer (I don’t even know what it’s called, my grad student just tells me to run the DNA lol. It’s the machine where you select file 94, I think for 94 degrees. I think it’s DNA extraction and neutralization buffer), also PCR machine, then eventually use gel electrophoresis to image it etc. But I am definitely not an expert on what I’m actually doing and would love to learn more. Are there any parts of genetic research you think are the coolest? Cheers!
+
+Comments:
+- The techniques have allowed us to answer so many questions.  it's like finding a car and wondering what makes it work. You could take out a seat and ask if it still runs. Or the paint and ask if it is still comfortable to ride in.  Likewise, we can delete specific genes and ask questions like, does the mouse still get sick with sars2? Or does it get more sick. Is the mouse protected from cancer or obesity?  By asking these questions, we can identify the molecular pathways that drive health or sickness. It is a really powerful tool to uncover the mechanisms that makes us what we are.
+- You either create and breed your own strain or  buy them from a vendor. We sometimes get embryos from other researchers. We rederive them in a surrogate and breed more.

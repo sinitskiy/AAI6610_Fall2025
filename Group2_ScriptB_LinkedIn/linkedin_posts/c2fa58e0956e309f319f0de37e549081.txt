@@ -1,0 +1,111 @@
+URL: https://www.linkedin.com/posts/christoph-molnar_uncertainty-quantification-methods-in-ml-activity-7292161276519051266-bfbr
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christoph Molnar的动态
+Christoph Molnar
+
+Author of Interpretable Machine Learning, Modeling Mindsets, and more | christophmolnar.com
+
+8 个月
+
+Uncertainty quantification methods in ML usually attach an uncertainty score to a prediction.
+
+Conformal prediction turns this upside down: You "fix" the uncertainty level and then get a matching set/interval of predictions.
+
+To learn more about CP, I can recommend my book 😉
+
+204
+3 条评论
+赞
+评论
+分享
+Christoph Molnar
+
+Author of Interpretable Machine Learning, Modeling Mindsets, and more | christophmolnar.com
+
+8 个月
+
+Link to the book: https://christophmolnar.com/books/conformal-prediction/
+
+赞
+回复
+1 次回应
+Pablo Conte
+
+Merging Data with Intuition 📊 🎯 | AI & Quantum Engineer | Data Scientist | Qiskit Advocate | PhD Candidate
+
+8 个月
+
+Valeriy Manokhin, PhD, MBA, CQF
+
+赞
+回复
+1 次回应
+Abdul Jalil Shreim
+
+8 个月
+
+Baha AbuSalem check this
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+28,982 位关注者
+
+491 则动态
+查看档案  关注
+探索相关领域
+How to Include Uncertainty in Optimization
+How to Improve Predictive Accuracy
+How Quantization is Transforming Model Performance
+How to Use Accurate Forecasting Techniques
+How Ensemble Learning Improves Predictions
+How Machine Learning Transforms Chemistry
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

@@ -1,0 +1,19 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/28j90d/algorithms_games_and_evolution_computer/
+Title: Algorithms, games, and evolution: "computer scientists report that an algorithm discovered more than 50 years ago in game theory and now widely used in machine learning is mathematically identical to the equations used to describe the distribution of genes within a population of organisms"
+
+Content:
+
+
+Comments:
+- Hey, Vazirani also taught the [Quantum Mechanics and Quantum Computation](https://www.edx.org/course/uc-berkeleyx/uc-berkeleyx-cs-191x-quantum-mechanics-1033#.U6MOdC83dr0) class on edX.  I totally recommend it for people wanting to learn about the crazy new world of quantum computers.
+
+It's good to see some more crosstalk between Computer Science and Biology.  Looks like an interesting paper.  I look forward to reading it.
+- Interesting
+
+Here is a lecture on genetic algorithms from MIT.
+
+https://www.youtube.com/watch?v=kHyNqSnzP8Y
+- Agreed. I think this will be a nice field in the future. By nice field, I don't mean the current state of bioinformatics, but something more akin to mathematical biology.
+- Lots of interesting stuff happens in that crossover between computer science and biology. I'm only an undergraduate who likes to read research papers in his free time, but even with the limited education I've been able to get on that crossover, there's a ton of interesting things happening. One field in particular I've enjoyed reading up on is ecological modeling - most of the papers I find on it are from within the last decade, and there's lots of interesting stuff happening with the amount of computer power cheaply available for research now.
+- Multiplicative weight updates (the algorithm in the OP) isn't a genetic algorithm, but genetic algorithms are still super cool.

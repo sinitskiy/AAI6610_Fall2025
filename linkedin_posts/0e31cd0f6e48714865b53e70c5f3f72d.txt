@@ -1,0 +1,15 @@
+URL: https://www.linkedin.com/posts/igor-halperin-092175a_ai-llms-agi-activity-7205556298447212545-_ZaG
+Date: 2025-09-24
+Author: Unknown
+
+Iconophysics, Elephantenlehre, and LLM Hallucinations.
+
+When taking Andrew Ng's short course on prompt engineering, I followed his suggestion to get a taste of LLM hallucinations, and asked ChatGPT-4o about my work in 'iconophysics' (a non-existing discipline) and 'Elephantenlehre' (which stands for "Theory of Elephants" in German). The results were very impressive - while ChatGPT rarely produced a working code for me, it absolutely excels as a BS generator!
+
+
+话题标签
+#ai 
+话题标签
+#LLMs 
+话题标签
+#AGI

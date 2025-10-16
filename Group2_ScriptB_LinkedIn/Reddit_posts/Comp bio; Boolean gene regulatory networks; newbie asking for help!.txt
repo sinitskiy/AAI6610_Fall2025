@@ -1,0 +1,22 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/8jya9s/comp_bio_boolean_gene_regulatory_networks_newbie/
+Title: Comp bio; Boolean gene regulatory networks; newbie asking for help!
+
+Content:
+Edited for clarity: I'm looking to learn what the current state of automated protein\-protein interaction \(PPI\)/regulation data mining is, and whether there are any packaged programs out there \(which require little more than basic fluency in Python or R\) which assist in mining for PPI and PP\-regulation data from literature?\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+
+Hey all. I'm a senior undergrad with a few years of molecular genetics research on my belt. I've recently landed, somehow, a position on a computational bio project mapping human macrophage gene regulatory networks in response to HIV infection with a Boolean logic based program. I feel majorly unqualified for the job, primarily because the PI can't seem to stir up enough interest in the relevant departments \(and I guess I'm fairly autodidactic and understand bimolecular interactions fairly well\). I've spent the last few months essentially in a self\-guided crash course for systems and computational biology \(textbooks, beginning Python, figuring out how to use databases, MIT OpenCourseWare, etc.\) and have some questions pertaining to machine learning that I'm hoping to get answered. A huge issue the project is facing is that our 700\+ node model has been manually annotated by dozens of volunteer students over the course of 5\+ years, and much of it is utterly fucked. Beyond that, we're finding lots of important regulatory events that were not annotated at all. Beyond that still, our team is lacking the skillset to pull and interpret emergent properties from the model beyond statistical analyses that will tell us whether our model can simulate regulatory events for a list of 70ish proteins we've assayed in the lab in two conditions \(control & HIV\) to some degree of accuracy. So, mainly, I'm looking to learn what the current state of automated protein\-protein interaction \(PPI\)/regulation data mining by syntax is, and whether there are any packaged programs out there \(which require little more than basic fluency in Python or R\) which can assist in our mining for PPI data from literature? I ask about machine learning and automation here, because as far as I understand, databases for PPI data consist primarily of high throughput assays that determine protein complexing or co\-occurance in a sample, and that pulling out the higher\-level regulatory events requires parsing through experiments designed specifically to investigate them, which requires either a manual lit review as we have been doing, or an algorithmic approach to parse through syntax. As I said, total newb here, so my understanding could be fundamentally flawed, but I'm hoping someone out there gets what I'm saying, would be willing to discuss these concepts with me and point me in the right direction, and isn't just here to laugh.
+
+Comments:
+- Maybe try PubMed, such as
+
+protein\-protein interaction prediction
+
+I would also encourage you to write a clear concise question. Stae what your question is, near the top. The purpose seems to change every sentence or so, and the title is unhelpful. Foucs on what it is you want.
+
+Yes, it is good to give some context, but by the time we get to your Q, we're confused. Many of your target audience have probably left.
+
+Remember, people often read posts rather quickly at first, trying to get the gist. Focus first, elaborate later. Or people won't get to the question.
+
+For much of your post, it sounded like you needed comp help.
+- Thanks for the advice.

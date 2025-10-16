@@ -1,0 +1,76 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hba8s2/best_crossvalidation_for_imbalanced_data/
+Title: Best cross-validation for imbalanced data?
+
+Content:
+I'm working on a predictive model in the healthcare field for a relatively rare medical condition, about 5,000 cases in a dataset of 750,000 records, with 660 predictive features.
+
+Given how imbalanced the outcome is, and the large number of variables, I was planning on doing a simple 50/50 train/test data split instead of 5 or 10-fold CV in order to compare the performance of different machine learning models.
+
+Is that the best plan or are there better approaches? Thanks
+
+Comments:
+- I would personally try a Stratified K Fold cross validation and use a scoring metric like the brier score or log-loss that should be well calibrated, regardless of sample imbalance. 
+
+If the training isn’t too computationally intensive, I’d also maybe perform a nested CV (essentially 3 different stratified 5 fold CV) so that you’re mixing up the limited samples grouped together.
+- How have you selected the variables (features), and are they all contributing on a univariate and a multivariate basis without correlation or interaction, and all with p<0.05? 660 seems a LOT of variables 
+
+I’ve got a model I’m working on at the moment with 110,000 records, it’s got 31 variables and even then I think it’s too many.
+- Protip: you actually don’t have to resample or balance the dataset. If your features are predictive, then there won’t be any problems. If your features are NOT predictive, focus your time on hunting for good features, don’t spend time on tweaking the balance.
+- i would just simulate and see the difference
+
+
+i eould have guessed that a regular 9/10 is actually better (havent worked out a reasoning)
+
+
+are you using log loss or other summable metric?
+- Just an idea but wouldn’t a leave one out validation make sense? Your practical application will have as goal to classify a new measurement based on the feature, so you can  train with all the others? 
+This is of course very time-consuming. If necessary, the negative data set can be reduced - i.e. analogously to 5000 positive cases?
+- One question to address is, do you plan on oversampling / undersampling the training set to address the imbalance, and if so then how? Also 660 seems like a lot of predictive features, have you considered any methods for reducing dimensions?
+- I have limited experience with healthcare data, but I've a fair amount of experience with unbalanced classification in banking and insurance industries.
+
+My two cents
+- be carefoul with over/undersampling, it rarely helps and often stabs you back (and NEVER use it on validation data)
+- don't be deceived by your amount of data, overfitting (even using CV) is far easier that many think, especially for an unbalanced problem, and even more if you care about the accuracy of your metrics estimates
+- you need a CV+test setup minimum, a nested CV schema is the natural evolution if you care about estimating the true performance of your model
+- choose you metric carefoully, use precision and recall and the area under the precision-recall curve to start
+- understanding the tradeoffs of your model in terma of precion and recall is critically important, especially in the healthcare field. Try to understand the cost of each kind of error in real terms
+- You want to look the imbalance-learn library, there's a lot of good stuff for imbalanced data. If CV isn't a option, you could try OOB score from random forests.
+- There is a Kaggle contest also on health data
+
+  
+A very good solver has been published that scores 0.681 on the leaderboard  
+[https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions/discussion/550684](https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions/discussion/550684)
+
+That may be a source of inspiration.
+- Yuuup stratified k fold
+- I dont recommend using PCA it adds an extra layer of complexity. There is a lot I would personally do but unfortunately i cant talk exactly as my work is not in healthcare. However what I can say is that maybe you need to think about the direction of inputs in regard to your output. For example if you are trying to predict risk of complications then perhaps age should be positively monotonic as people might be more susceptible to complications if they get older. Or for example if you mention a binary variable of historical complications then maybe that could be a predictor of likelihood of new complications.
+
+Thus a monotonically constraints can help your models capture relationships that make more sense than the original 660. That way whatever data you choose makes more sense.
+
+More things i disagree about given my experience but idk about healthcare. For example you didn’t specify how you will ensure whatever sample you have is actually consistent with the whole population. What will be the PSI of our variables in those cases? Would your model fail in production just by sampling?
+
+Also why not use class weights instead? I think this works pretty well.
+- If the cases are over time, then you can try sampling previous dates.
+- You should focus first on reducing the number of features in the dataset. I have a hard time believing that you have 660 features that actually serve towards better predictions.
+
+Maybe do recursive feature elimination using xgboost feature importances. Try halving the number of features each time (660 -> 330 -> 165, etc.) and seeing where that takes you.
+
+As far as cross-validation, just stratify the target variable when you do a train/test split and shuffle the data. The whole reason we use K-fold cross-validation is the understanding that different splits generate different results, and accounting for that phenomenon.
+
+Instead of over sampling, under sampling, or SMOTE, try models that let you use sample weights to give more importance to your positive class samples. Sklearn has a few models that can do this, like logistic regression and random forest. Xgboost offers it as well, and you can also implement in Pytorch or Tensorflow.
+
+And pro tip: when developing the code for all this and you aren't training real models yet, do it on a small random sample of the starting dataframe. A few percent of the records is all that's needed to get the code itself up and running before training models for real.
+- Sample weighting is simple and effective. Most models or loss functions have it
+- # Will there be very less DS jobs due to cloudification of all major corporate DS usecases? How to modify career for such future?
+
+can anyone post this on this sub for discussion? I dont have comment karma for this.
+- In this case, Stratified KFold would be the best approach, to have a similar proportion in the train and test sets.
+- Try PerpetualBooster since you have a very large number of features: https://github.com/perpetual-ml/perpetual
+- My data set was only about 5000 individuals and we wished to determine disease risk factors. If you would like to see how we handled it Google boosting LASSOING new prostate cancer risk factors selenium. Best of luck to you 🍀
+- I recently solved a similar problem. I used SMOTENC with an XGBoost model. 
+
+I then did CV with a custom scorer (which was revel-ant for my usecase).
+
+I would definitely try SMOTE, but this depends on the dataset.
+- Lead ML Scientist here. This is what I’d do. Aside from this, if you are using tree-based models like LGBM, do explore the ‘class weights’ parameter.

@@ -1,0 +1,24 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1afsejq/confusing_shap_feature_importance_patterns_from/
+Title: confusing SHAP feature importance patterns from my ANN
+
+Content:
+I have developed an ANN model to predict protein post-translational modification patterns from Elisa data. For simplicities sake, the how, feasibility and parameters aren't important for my question and some details were omitted.
+
+For a given protein, I will call it protein X, it has ubiquitin as a modification but no phosphorylation patterns.
+
+I trained the ANN with a variety of post-translational modification patterns but a KEY PIECE OF INFO: my training data did not contain any ubiquitin patterns (just assume there's a reason)
+
+So when I performed an ELISA with a set of antibodies and antibody a is specific for ubiquitin patterns and antibody b is specific for phosphorylated patterns. When I ran the prediction of protein x modification patterns using antibody a, antibody b (and others) we got pretty good accuracy.
+
+To explain how the model worked, I ran a SHAP analysis and a bipartite graph to show the feature importances (antibodies) and the modifications but got confounding results
+
+For antibody a, there were positive and some negative SHAP values to other modification patterns except for ubiquitin, which it is specific for For antibody b, we also found positive and negative SHAP values to modification patterns except phosphorylation, which protein x doesn't really have. So how do I explain why SHAP produced this pattern: 1)antibody a did not have any SHAP correlation to its target, ubiquitin but it did to others, 2) antibody b also did not have SHAP correlations to its target but to others instead.
+
+Again this is confounding because I expected it antibody a to have SHAP correlations to ubiquitin but not the others, and then antibody b should not have any SHAP correlations since it targets phosphorylation but protein x has no phosphorylation.
+
+Im not too convinced or can't relate some of the limitations with SHAP that it shows the hidden patterns/relationships for the model, not what we expect in "real life"
+
+Can someone provide a more nuanced insight to this observed SHAP analysis?
+
+Comments:

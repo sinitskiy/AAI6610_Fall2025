@@ -1,0 +1,28 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16v8kwk/quadra_is_out_opensource_library_to_train_and/
+Title: QUADRA is out!! - Opensource library to train and deploy DL models
+
+Content:
+**QUADRA is out!! 🎉🎉🎉** 
+
+QUADRA is an **opensource library to train and deploy DL models** in a very simple and flexible way and to compare, monitor, and share experiments quickly!
+
+🌐 Website: [https://orobix.github.io/quadra/](https://orobix.github.io/quadra/) 📁 GitHub: [https://github.com/orobix/quadra](https://github.com/orobix/quadra) 
+
+QUADRA development started to answer the necessity to **perform machine learning experiments for multiple customers and projects**, without the need of a large copy-pasted codebase over multiple repository.
+
+**Are you a data scientist or an AI researcher?** 
+
+With QUADRA you can: → simplify your deep learning experimenting process; → train and deploy deep learning models in a simple and flexible way, using YAML configuration files and open-source tools such as Hydra, Lightning framework, and Pytorch; → compose your experiment configurations from single command line interface, so you can conduct multiple experiments with different settings and hyperparameters; → compare, monitor, and share your experiments quickly!
+
+\---  
+
+❌ Are you interested in joining the project community? Get in touch! ❌
+
+Feel free to use QUADRA for your Artificial Intelligence projects, and if you want to contribute, we are more than happy to accept your pull requests! ❤️
+
+&#x200B;
+
+https://preview.redd.it/kxvdi76ff6rb1.png?width=8012&format=png&auto=webp&s=e451177e0f7f660be46cc8a947e88ba0071527db
+
+Comments:

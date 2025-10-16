@@ -1,0 +1,54 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n4nm4h/d_what_is_up_with_tensorflow_and_jax/
+Title: [D] What is up with Tensorflow and JAX?
+
+Content:
+Hi all,
+
+  
+been in the Machine Learning world till 2021, I still mostly used the old TF 1.x interface and just used TF2.x for a short time. Last work I did was with CUDA 9.
+
+  
+It seems like quite a bit shifted with Tensorflow, I looked at the architecture again to see how much changed. To me, it's incomprehensible. Has Google shifted all efforts towards JAX, a framework with fewer layers than TF?
+
+Comments:
+- Learn PyTorch and get familiar with JAX. Do yourself a favor and just forget TensorFlow even exists, like most of us and Google.
+- It's all a bit weird right now, but it looks like they're moving to JAX.
+
+Keras was integrated into TF with the TF2 release, and now it's split back out again and supporting multiple backends. Currently JAX, TF, and PyTorch.
+
+TFLite, their mobile runtime, is also being split out of TensorFlow into something called LiteRT, but that's a pain to build with anything other than Bazel right now.
+
+
+So basically they seem to be preparing to deprecate TensorFlow, but it's going to take a long time. Keras is fine right now. If you aren't doing anything too fancy, you can write mostly backend agnostic code and switch between TF, JAX, and PyTorch easily
+- Most people saying move away from tensorflow, of course that is a good decision.
+
+Jax really is amazing though, sharding is such a game changer and just makes things so much easier. I much prefer it over pytorch, having used flax much though myself so can’t compare exactly.
+- a 'Pytorch and jax' world is more correct than a 'pytorch and tensorflow' world. We are healing
+- A lot of researchers started preferring PyTorch around ~2017 or so. Going to prod with a autograd language became a lot easier over the next few years due to developments in cloud computing and the torch ecosystem so Developer Experience really became more of a deciding factor than “what is google doing?”. I had a strong JAX phase and knew of a lot of TF rewrites happening as early as 2021 at google, but it’s still easier to find implementations for new papers or architectures in PyTorch. (My personal preference is Flux > JAX > PyTorch but network effects have really won the game)
+- Tensorflow has been obsolete since 2017.
+- tensorflow isn't used anymore, even google sticks to jax now. jax is pretty useful for accelerated scientific computing and sharding, but no one is using it nowadays
+- Do you mean to say that you have been in this world "since" 2021?  
+  
+That is what I think you meant, and it is surprising that you have been using TF1.x since 2021, since everyone has been shifting to tf2.x since 2019. So it would have made more sense for you to start with the latest.
+
+Even google engineers speak of using Jax and google researchers appear to be using pytorch.
+
+  
+Anyhow, form experience: Your first priority should be PyTorch, second is Jax, Third is Tensorflow 2.0, and you should just abandon any thought of TF1.0. If you find yourself working with legacy software that is written in TF1.0, then it is time to consider refactoring away from TF1.0 and into Pytorch. If you are working with TF2.0 however, you can still keep using it.
+- Google hasn’t killed TensorFlow, but momentum and research energy have clearly shifted toward **JAX** via OpenXLA and PJRT, while Keras aims to stay backend-agnostic. For greenfield work, JAX’s jit/vmap/pmap and scaling story are compelling; TF still anchors many production stacks inside Google.
+- haha, gotcha. So Tensorflow has been put in second place?
+- Does it even make sense to bother with JAX given that Google seems to always abandon their software? Who's to say that there won't be some new "JAX" in two years after today's JAX gets Tensorflowed?
+- Why?
+- Gotcha, yeah I remember some "import" peculiarities when using Keras, i.e. to not import Keras directly, but rather tf.keras. I saw LiteRT, I still know it as TFLite, it's super complex for what its intention is no? It's supposed to be a small, lightweight solution for embedded. Anything using Bazel isn't that for me. Also embedding it into an existing toolchain seems to be just pure pain.
+- What I like about JAX is actually less as a pure ML framework and as a better drop in replacement for the numpy/scipy ecosystem. Being able to do operations efficiently using arbitrary accelerators is a huge win thanks to the XLA backend. Flax is really the “PyTorch” of the JAX ecosystem and used to be kind of awful (IMO) but since the introduction of NNX ( with optax) is a really convenient interface for basically anything I’d normally do in PyTorch - hell, I find it WAY faster for prototyping since the training code is so trivial. I rewrote a bunch of image processing stuff into JAX and it’s so much faster than it was in pure numpy + cv2 - and there are *so* many things you can just treat as vector operations which otherwise would be an inefficient python for loop.
+
+I just wish that scikit learn and opencv2 had native tie-ins with it so I didn’t have to rewrite stuff for it. I’d love if I could have all the scikit estimators with JAX performance.
+- Nope I meant till. Been doing something else since.
+- Even googlers have stopped using TF.
+- Second place makes it sound better than it is.
+If you check huggingface models you'll see 10k TF models (that are mostly older google BERTs or models that are available for TF as well through the HF Transformers lib - which btw is dropping TF support rn) vs 200k Pytorch models.
+I haven't used/seen a TF SotA model in about ... I'd say 4-5 years.
+- I think maybe only TFlite remains somewhat relevant.
+- Be fair! When Tensorflow came out in 2015, the Machine Learning field was very different and Tensorflow was better than anything else. Tensorflow 2.0 was a big upgrade with a lot of care to help developers switch between versions. Things have changed so much that a total replacement is now needed; if anything Google waited too long to drop Tensorflow.
+- As a long-time TF "loyalist" -- it's dead. The last few releases have been pitiful and barely deserve a new version number. `tf.keras` is a mess now and literally unusable in some cases if you don't know what you're doing, so you may as well switch to `keras` (multi-backend) anyway even if you wanted to continue using TF. Some of the official tutorials don't work anymore. Documentation is a mess. Also nobody is using it.

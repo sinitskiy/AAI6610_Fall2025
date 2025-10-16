@@ -1,0 +1,52 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e995dw/perpetual_a_gradient_boosting_machine_which/
+Title: Perpetual: a gradient boosting machine which doesn't need hyperparameter tuning
+
+Content:
+Repo: https://github.com/perpetual-ml/perpetual
+
+PerpetualBooster is a gradient boosting machine (GBM) algorithm that doesn't need hyperparameter tuning so that you can use it without hyperparameter optimization libraries unlike other GBM algorithms. Similar to AutoML libraries, it has a `budget` parameter. Increasing the `budget` parameter increases the predictive power of the algorithm and gives better results on unseen data.
+
+The following table summarizes the results for the [California Housing](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html) dataset (regression):
+
+| Perpetual budget | LightGBM n_estimators | Perpetual mse | LightGBM mse | Perpetual cpu time | LightGBM cpu time | Speed-up |
+| ---------------- | --------------------- | ------------- | ------------ | ------------------ | ----------------- | -------- |
+| 1.0              | 100                   | 0.192         | 0.192        | 7.6                | 978               | 129x     |
+| 1.5              | 300                   | 0.188         | 0.188        | 21.8               | 3066              | 141x     |
+| 2.1              | 1000                  | 0.185         | 0.186        | 86.0               | 8720              | 101x     |
+
+
+PerpetualBooster prevents overfitting with a generalization algorithm. The paper is work-in-progress to explain how the algorithm works. Check our [blog post](https://perpetual-ml.com/blog/how-perpetual-works) for a high level introduction to the algorithm. 
+
+Comments:
+- First claims that the method is free of hyperparameters, then proceeds to introduce the “budget” hyperparameter.
+- In the example, is worth the extra CPU time to gain 0,004-0,007 mse?
+
+
+I always use the default parameters. Usually time expending tuning parameters gives me a marginal gain compared to bringing additional features to the train set.
+
+
+I'll try this algorithm to see if fits my use cases. Maybe in other industries those gains are amazing.
+- Very cool stuff! I think the use of algorithms that don't waste your time with hyperparameter tuning are great. Keep it up!
+- Have you evaluated this beyond the california housing dataset? I would love to believe that this works, but evaluation on a single (rather small) dataset seems to be too limited to be really convincing.
+- I took a quick read of the blog post. I have a doubt regarding how you use the validation set. My understanding is that when you use the validation set to calculate the "generalization term," you essentially transform it into part of the training set. In simple terms, you are leaking information from the validation set into the training process.
+
+If I can make a suggestion, try to use better datasets to test the method. These classical datasets, e.g., Boston houses, are really, really easy. It is the equivalent of using the MNIST dataset to show the performance of a classifier. The issue is that almost everything performs well on MNIST.
+- nice
+- Interested to see how well this performs against CatBoost and XGBoost in addition to LightGBM. Have you performed any benchmarks against CatBoost or XGBoost?
+- So the "buster" parameter is increasing accuracy ad infinitum? 
+
+  
+This is incredibly interesting stuff, thanks for sharing.
+- "free" removed. Where do you see it? Readme at [crates.io](http://crates.io) will be updated.
+- the optimal parameters, particularly maxdepth, can give insights into what kind of interactions are in the data, and hint at the scale of complexity required to find signal. HP shows you that if a depth-2 tree is out-performing a depth 6 tree, you can probably just plot the response by variable and see the trends you're looking for, and a glm might do as good a job.
+- You are right. If you constantly carry out HP optimization, this algorithm is great. Otherwise default HP might be enough.
+- There's pretty much no reason not to use early stopping and increase the number of trees
+- Thanks for the support.
+- It is tested on classification datasets also. The results are similar. I will publish the results. I will also test the algorithm with [AMLB: an AutoML Benchmark (openml.github.io)](https://openml.github.io/automlbenchmark/). It is expected to get similar results because the approach is independent of dataset / loss function / data imbalance.
+- I will add benchmark results for more datasets. Validation is built-in. The results are reported for test data, which is never seen during training.
+- I didn't benchmark against them, since they are pretty same algorithms especially xgboost and lightgbm. I chose lightgbm because it might be the fastest among three. I might add benchmark against all three. The results shouldn't differ too much.
+- There will be no benefit after some point due to diminishing returns. You can go up to 2.0 as benchmark shows. Thanks for the support.
+- [removed]
+- Yes, the test data is never seen during training. However, when you use the validation set to train, you are using more data for the training process compared to other methods. A fair comparison would be to use the best hyperparameters found for the older methods and then train them with these parameters using both the training set and the validation set. Otherwise, you will never know if the differences you found are due to the data or the method itself.
+- These algorithms are not as similar as they appear on the surface. Moreover, several papers reveal different levels of performance depending on the dataset and task; see, for instance, references [1](https://link.springer.com/article/10.1007/S10462-020-09896-5), [2](https://www.tandfonline.com/doi/abs/10.1080/03461238.2024.2365390) and [3](https://ieeexplore.ieee.org/abstract/document/10569430). Similar performance between these algorithms cannot be taken for granted.

@@ -1,0 +1,54 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jnrgk1/how_to_find_the_object_3d_coordinates_include/
+Title: How to find the object 3d coordinates, include position and orientation, with respect to my camera coordinate?
+
+Content:
+Hi guys, me and my friends are doing some project in university and we are building a mobile manipulator robot. The task is:
+
+\- Detect the object and create the bounding box around it.  
+\- Calculate its coordinate, with respect to my camera (attached with my mobile robot moving freely).
+
+\+ Can you guys suggest me some method or topic (even machine learning method), and in that method which camera should I use?  
+\+ Is there any difference if I know the object size or not?
+
+Comments:
+- I know nothing about 3d object detection, so this might just be nonsense.
+
+Using 2d object detection you could do something using polar coordinates. Angles would be defined by position on screen, and distance would be defined by relative size on screen.
+
+But for distance to be deduced by the size&orientation of the box it requires a very particular object, for example a sphere of fixed radius would be ideal. But in general there is not enough info.
+
+A second camera would let you triangulate the position.
+- Here are a few ideas:
+
+\- If the robot is moving on the floor (2d plane) and the object is also on that plane you could compute the objects position by mapping the floor coordinates with a homography
+
+\- to estimate unconstrained 3d position you are obviously missing the depth, but you could use a depth camera or a monocular depth estimation method to get the depth (https://github.com/mrharicot/monodepth)
+
+\- if you know the object size you can compute the distance to the object. (slide 10 https://www.cse.psu.edu/\~rtc12/CSE486/lecture12.pdf) compute Z
+- Use foundationpose
+- Using aruco markers you could achieve this
+- This is where traditional cv will fail. You have to go with deep learning methods.
+
+Look up 3d object detection. You can also look up the works that has been done on the following dataset: nuscense, KITTI, view of delft. Ignore the ones that use BEV, also ignore the multi modal models if you don't have any complementary sensors.
+
+
+This should be enough to get you started.
+- Thank you for your advice, I'll check it!
+- Thanks for the the link and paper, I really appreciate it!
+- Thanks man, will check it!
+- Hi, thank you for your advice, appreciate it. Even sound like I was thinking so much without starting doing, I wonder how can I get its coordinate (in the corner or center of the bounding box)?
+- Or just use a stereo camera.
+- Look up pinhole camera model, chessboard calibration, PnP. Practice the concepts with an ArUco marker.
+
+The other guy is right. If you have an arbitrary object that you’re trying to find the pose of you’ll likely need some recent-ish deep learning methods.
+
+But given your experience, I think it’s prudent for you to simplify the problem. Paste a marker or two on the object, and focus on building up the theory and pipeline for relative pose estimation/transformations.
+
+Once that’s fleshed out, then if required you can think about how to remove the markers (e.g. can you get other key points to replace them? How about methods like FoundationPose?). But that comes later.
+- Isn't that an expensive approach?
+- Define expensive. You can use two regular cameras and calibrate them yourself or buy a purpose built stereo camera for under $100.
+- I guess since the OP didn't mention any camera specification, they will be using a single camera.
+- Sometimes you need to update the design to meet project goals.
+
+Absent additional information such as known world object size you can only determine distance up to a scale.  Using AI is essentially guessing at the object distance.

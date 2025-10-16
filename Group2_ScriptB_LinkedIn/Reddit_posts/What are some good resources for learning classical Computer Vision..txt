@@ -1,0 +1,31 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1lensd1/what_are_some_good_resources_for_learning/
+Title: What are some good resources for learning classical Computer Vision.
+
+Content:
+Ok so I have experience working with deep learning side of computer vision made some projects & also working on a video segmentation project right now.
+The one thing that I noticed after asking for review for my resume is that I lack classical Computer vision knowledge which is quite evident in my resume.
+So I wanted to know what are some good resources for learning classical Computer Vision.
+Like I found a playlist from Tubingen University:
+https://youtube.com/playlist?list=PL05umP7R6ij35L2MHGzis8AEHz7mg381_&si=YykHRoJS81ONRSM9
+Also, I would love if I can get some feedbacks from my resume because I am trying to find internships right now so any advice would be really helpful!!
+
+
+Comments:
+- Pattern recognition, Theodoridis. CV a modern approach, Forsyth Ponce.
+
+CV is too much "NN user/tuner", lacks wider and more fondamental points in maths/physics/CS/ML IMHO. But maybe education is what is missing.
+
+Eg., wavelets/Fourier/patches, algorithmes, complexity, etc and classical CV/ML methods, kernels, optimisation, SVM, modern OOP, DI etc
+- What is “from this research paper”? Does your PDF link to said paper? Maybe mention the model name or paper name instead.
+- Try here :
+
+https://youtube.com/@eranfeit?si=nYijRFC9JBar6XvB
+- Pro tip: when you send people an image containing text, it makes you seem like a newb doofus. You probably don't want that.
+- If I imagine someone who has already read Szeliski and Prince asked me if they should read Ponce, my first kneejerk reaction is that they might get more out of rereading either Szeliski or Prince. But its been so long since I opened Ponce maybe I am hyperbolizing.
+
+Still, I really like Prince, and Szeliski gets recommended all the time for a reason, and both are mostly classic CV. Prince is a very Bayesian take on it, but ya know.
+
+I would say the geometry stuff (camera models etc) is the more "fundamental points" you're missing there, but it's hard to argue against your point: the field is a lot more diffuse than other STEM classics.
+- A good base in mathematics is helping with anything, same with CS.
+- Couldn’t agree more!

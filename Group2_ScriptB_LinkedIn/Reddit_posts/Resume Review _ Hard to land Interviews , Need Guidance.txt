@@ -1,0 +1,30 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1llp6ti/resume_review_hard_to_land_interviews_need/
+Title: Resume Review : Hard to land Interviews , Need Guidance
+
+Content:
+I am new to job search and interviews, I didnt go for a job after my bachelors in India, Now doing my MS in US.
+
+My eperience is in labs, I have not published any papers so far. I am not sure where to improve, I so far tried reimplementation existing works.
+
+I would love to hear all your opinions, feedback. I was aiming for roles like CV/DL Engineer, Robotics Perception roles, Sensor Calibration and Integration roles.
+
+https://preview.redd.it/1xy89lxyqf9f1.png?width=999&format=png&auto=webp&s=b02f5ccff5c6f5caab60f6d076d1a6b4ce4ff917
+
+  
+
+
+Comments:
+- I think you are selling yourself short on a lot of this by leaving out the “so what”. Like this one:
+
+“Validated sensors with Raspberry Pi for autonomous underwater glider during initial development phase with the Professor.” 
+
+That could be a very cool thing, but the limited details provided leave me wondering what exactly you did. Validated doesn’t really tell me much. Sensors, what sensors? Underwater glider? You mean like a submarine? 
+
+Consider something like this instead:
+
+“Integrated pressure, velocity, orientation and acceleration sensors into PID controller utilizing Kalman filtering for error-correction while staying within strict memory and CPU budget to create autonomous submarine with Professor X’s Nautical Nonsense Research Group. Achieved sub-centimeter positional accuracy in GPS-denied environment with self-correcting inertial navigation with automatic reorientation based on external data fusion while accounting for underwater drift due to tidal forces.”
+
+I think we are both saying the same thing - but adding the details makes your prior work not only look more impressive but more closely aligns to business needs. It takes your work beyond a simple cut and paste from a GitHub repository to demonstrating your ability to then utilize that information in a way that solves a meaningful problem.
+- I love this “so what?” Question, its the best way to improve the resume.
+- Thank you, will work on it for sure .

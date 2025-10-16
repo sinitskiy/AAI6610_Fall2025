@@ -1,0 +1,100 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/183p9u1/worst_jd_of_the_year/
+Title: Worst JD of the year
+
+Content:
+REMOTE Data Scientist Requirements/Responsibilities 
+
+*MUST be a USC or Green Card Holder. NO C2C* 
+
+- Exploring new analytical technologies and evaluate their technical and commercial viability. 
+
+- Working across entire pipeline: data ingestion, feature engineering, ML model development, visualization of results, and packaging solutions into applications/production ready tools. 
+
+- Working across various data mediums: text, audio, imagery, sensory, and structured data. 
+
+- Working in (6) 2-week sprint cycles to develop proof-of-concepts and prototype models that can be demoed and explained to data scientists, internal stakeholders, and clients. 
+
+- Testing and rejecting hypotheses around data processing and ML model building. 
+
+- Experimenting, fail quickly, and recognize when you need assistance vs. concluding a technology is not suitable for the task. 
+
+- Building ML pipelines that ingest, clean data, and make predictions. 
+
+- Focusing on AI and ML techniques that are broadly applicable across all industries. 
+
+- Staying abreast of new AI research from leading labs by reading papers and experimenting with code. 
+
+- Developing innovative solutions and perspectives on AI that can be published in academic journals/arXiv and shared with clients. 
+
+- Applying ML techniques to address a variety of problems (e.g. consumer segmentation, revenue forecasting, image classification, etc.). 
+
+- Understanding ML algorithms (e.g. k-nearest neighbors, random forests, ensemble methods, deep neural networks, etc.) and when it is appropriate to use each technique. 
+
+- Understanding open-source deep learning frameworks (PyTorch, Keras, Tensorflow). 
+
+- Understanding text pre-processing and normalization techniques, such as tokenization, POS tagging and knowledge of Named Entity Extraction, Document Classification, Topic Modeling, Text summarization and concepts behind application. 
+
+- Building ML models and systems, interpreting their output, and communicating the results. 
+
+- Moving models from development to production; conducting lab research and publishing work. 
+
+- Demonstrates thorough abilities and/or a proven record of success in the Essential 8: AI, Blockchain, Augmented Reality, Drones, IoT, Robotics, Virtual Reality and 3D printing in addition to:
+
+- Demonstrating knowledge in Programming languages: Python, R, Java, JavaScript, C++, Unix. 
+
+- Demonstrating knowledge in Data Storage Technologies: SQL, NoSQL, Postgres, Neo4j, Hadoop, cloud-based databases such as GCP BigQuery, and different storage formats (e.g. Parquet, etc.). 
+
+- Demonstrating knowledge in Data Processing Tools: Python (Numpy, Pandas, etc.), Spark, cloud-based solutions such as GCP DataFlow. 
+
+- Demonstrating knowledge in Machine Learning Libraries: Python (scikit-learn, genism, etc.), TensorFlow, Keras, PyTorch, Spark MLlib, NLTK, spaCy. 
+
+- Demonstrating knowledge in NLU/NLP domain: Sentiment Analysis, Chatbots & Virtual Assistants, Text Classification, Text Extraction, Machine Translation, Text Summarization, Intent Classification, Speech Recognition, STT, TTS. 
+
+- Demonstrating knowledge in Visualization tools: Python (Matplotlib, Seaborn, bokeh, etc.), JavaScript (d3), third party libraries (Power BI, Tableau, Data Studio). 
+
+- Demonstrating knowledge in productionization and containerization technologies: GitHub, Flask, Docker, Kubernetes, Azure DevOps, GCP, Azure, AWS. 
+
+- Minimum Degree Required: Bachelor Degree. 
+
+- Additional Educational Requirements: Bachelor's degree or in lieu of a degree, demonstrating, in addition to the minimum years of experience required for the role, three years of specialized training and/or progressively responsible work experience in technology for each missing year of college. 
+
+- Degree Preferred: Master Degree. 
+
+- Preferred Fields of Study: Computer and Information Science, Mathematics, Computer Engineering, Artificial Intelligence and Robotics, Mathematical Statistics, Statistics, Economics, Operations Management/Research. 
+
+- Additional Educational Preferences: PhD highly preferred.
+
+&nbsp;
+
+I found this on Linkedin, I don't understand how something like this is even remotely okay
+
+Comments:
+- > Demonstrates thorough abilities and/or a proven record of success in the Essential 8: AI, Blockchain, Augmented Reality, Drones, IoT, Robotics, Virtual Reality and 3D printing.
+
+More like the essential 8 buzzwords of people who have absolutely no clue what they’re talking about.
+- At some point they don't want a Data Scientist, they want a Data Messiah.
+- $500k annual, I’d take a shot at it and get ghosted. 
+
+More likely offering $70k these days though.
+- This sounds like the job description for someone who wants to hire a conman.
+- Don't worry, it's listed as entry level though
+- Must have used Bard instead of GPT to generate it.
+- This is likely for a consulting firm of some sort. They want a generalist who knows the basics of a lot of things so they can sell the hire's skills to all sorts of different clients, and they want someone who can speak to all the fancy buzzwords even if what they end up delivering doesn't actually have anything to do with those. I doubt they expect any candidate to be a master of all or, frankly, any of these skills. They're casting a wide net because that's what consulting firms need - all sorts of generalists.
+
+Given that, I really don't think this is unreasonable. Most of the skills mentioned (except for those eye-roll inducing "essential 8") are at least useful for a data scientist to know.
+
+That said, like pretty much all consulting jobs, it sounds like this work would be miserably superficial and at some points downright dishonest. Wouldn't want to work here, but it wouldn't be a terrible starting point for a scrappy generalist getting their foot in the door, maybe after a PhD program (I say this as a PhD who took a job at a weird boutique consulting company to break into the field who's now at a much more sensible company)
+- It's been written by Chat GPT. No way anyone with any experience within the field would write this.
+- More simple put: "Be the company" work 24-7 and do everybodys job 😀
+- Lmao I satisfy almost all of their bullets, but they’re not worth bothering with because they clearly don’t know what they want to get out of the position. Whoever gets the job is gonna be expected to single-handedly compete with Meta in every fad sector, given only the resources of a public school.
+- This is a hilarious JD xD
+- It makes you wonder if these job descriptions were created on purpose so either nobody applies or the people who do apply would never qualify (and then the company can "justify a lack of local talent" so they can go hire someone abroad for way less).
+- I'm surprised they don't expect a TikTok channel with 20m followers
+- I stopped at “Working across entire pipeline”
+- At least they didn't put great work life balance as this will probably take about 120   hours per week to accomplish half of this
+- Thats too many bullet points for one department let alone one position.
+- Salary: $20/hr
+- I recently interviewed for an entry level role for a low tier consulting firm, they told me I needed software engineering skills and to prepare for leetcode medium. The day of the assessment I was given a hard problem instead.
+- Sorry, my eyes glazed over and I didn’t even bother reading the whole thing. The funny thing is that at the end of the day all they will be doing is writing SQL queries to get the data that doesn’t exist.
+- It's ok because it's probably a fake ad for some job where they have an internal promotion but need to post something due to some silly policy.

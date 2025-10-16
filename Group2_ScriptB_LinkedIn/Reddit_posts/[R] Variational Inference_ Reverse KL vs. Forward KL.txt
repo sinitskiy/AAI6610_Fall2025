@@ -1,0 +1,122 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1cyubdt/r_variational_inference_reverse_kl_vs_forward_kl/
+Title: [R] Variational Inference: Reverse KL vs. Forward KL
+
+Content:
+Hi all,
+
+I'm working on variational inference methods, mainly in the context of BNNs. Using the reverse (exclusive) KL as the variational objective is the common approach, though lately I stumbled upon some interesting works that use the forward (inclusive) KL as an objective instead, e.g \[1\]\[2\]\[3\]. Also in the context of VI for GPs both divergence measures have been used, see e.g \[4\].
+
+While I'm familiar with the well-known difference between the objectives that the reverse KL is 'mode-seeking' and the forward KL is 'mode covering', I see some of these works making claims about downstream differences of these VI objectives such as (paraphrasing here) *"the reverse KL underestimates predictive variance" \[4\]* and *"the forward KL is useful for applications benefiting from conservative uncertainty quantification" \[3\]*.
+
+I'm interested in understanding these downstream differences in the context of VI, but haven't found any works that explain these claims theoretically instead of empirically. Anyone who can point me in the right direction or have a go at explaining this?
+
+Cheers
+
+\[1\] Naesseth, Christian, Fredrik Lindsten, and David Blei. "Markovian score climbing: Variational inference with KL (p|| q)." *Advances in Neural Information Processing Systems* 33 (2020): 15499-15510.
+
+\[2\] Zhang, L., Blei, D. M., & Naesseth, C. A. (2022). Transport score climbing: Variational inference using forward KL and adaptive neural transport. *arXiv preprint arXiv:2202.01841*.
+
+\[3\] McNamara, D., Loper, J., & Regier, J. (2024, April). Sequential Monte Carlo for Inclusive KL Minimization in Amortized Variational Inference. In *International Conference on Artificial Intelligence and Statistics* (pp. 4312-4320). PMLR.
+
+\[4\] Bauer, M., Van der Wilk, M., & Rasmussen, C. E. (2016). Understanding probabilistic sparse Gaussian process approximations. *Advances in neural information processing systems*, *29*.
+
+Comments:
+- I am not sure if there is a formal way to prove it. You can probably come up with contrived examples where the predictive has lower entropy for the inclusive KL minimizer. But in general, we do observe the inclusive KL to have higher predictive uncertainty. There are pros and cos though.
+
+Also MSC is not very stable. There are some follow up works that make it stable with experiments on BNNs, but none of these scale to larger datasets.
+- > I'm interested in understanding these downstream differences in the context of VI, but haven't found any works that explain these claims theoretically instead of empirically.
+
+Researchers like to ask for "theory", but if you're not specific, it's really hard to know what you want or if it's even possible.
+
+Imagine a complex posterior that's approximated by a Gaussian. 
+The M-projection (forward KL) will match the mean and variance. The I-projection (reverse KL) will fit a mode of the posterior. If your true posterior is also Gaussian (i.e., in sparse GPs), the KL you use is much-of-a-muchness. However, if your true posterior looks like a set of delta functions that are sufficiently "far apart," the M-projection would give you a pretty bad fit that assigns probability mass where there shouldn't be anything. Conversely, fitting a mode is the best thing you can do with a Gaussian.
+- >*the reverse KL underestimates predictive variance*
+
+the reverse KL is 'mode-seeking'
+
+>*the forward KL is useful for applications benefiting from conservative uncertainty quantification*
+
+the forward KL is 'mode covering'
+
+  
+Why do you think there's more to it than that?
+- Isn’t the major problem that to estimate the forward KL you need samples from the true posterior which you don’t have?
+- Thanks for your comment. Any interesting thoughts on what the pros and cons are for both objectives?
+
+Also, if you have any references to point me to as a starting point, would appreciate it.
+- I understand the intuition about the I-projection and M-projection approximating the posterior over latents differently and how that would be desirable/non-desirable for different models. My question is about the consequences of the different objectives on the predictive distribution of the data.
+
+Ok, so being more specific. Model is given as p(x,z) = p(z)p(x|z) where x is 'data' and z is 'latent' variable. Given x, I approximate the intractable posterior p(z|x) with q(z) by either minimizing KL(q(z)||p(z|x)) or KL(p(z|x)||q(z)) wrt q. My predictive distribution over x is then given as p(x) = ∫q(z)p(x|z)dz. 
+
+Question: what is the difference in p(x) when approximating q(z) w/ either rKL or fKL? Anything we can say about the variance of p(x) that generally holds for certain models? Any works that study this question? For example for sparse GP models, where z is a latent function, \[4\] finds that the rKL overestimates the variance of p(x).
+- Stating "underestimating predictive variance" is different from mode-seeking/covering behaviour. The former is about the spread of probability mass **on the data space** induced by marginalizing over the latent variable posterior, the latter is about the spread of probability mass **on the latent variable space** by the approximate posterior. 
+
+Two different things right?
+- Does it matter where you sample from ? You can sample from approximate posterior and still calculate either of the projections ? -- Not saying that it does not matter, it is really a question.
+- Frankly speaking, the inclusive KL will eventually [fail](https://arxiv.org/abs/2103.01085) in high dimensions due to mode mismatch. In low dimensions, it could get you better calibration, but often at the cost of accuracy. A weird exception is BNNs. There, the exclusive KL is known to be [bad](https://arxiv.org/abs/2202.11670), but the inclusive KL appears to be [less](https://arxiv.org/abs/2206.06295) pathologic. But again, the problem is that MSC-type methods don't work with minibatching. There are alternatives that do work with minibatching such as alpha divergence minimization, but these were recently [shown](https://arxiv.org/abs/2010.09541) not to work. So there are some interesting questions left open.
+- Yes, but they come out to the same thing in the predictive posterior (where you, as you say, marginalize over the posterior)
+
+p\_klqp(x\_test | X\_train) = int p(x\_test | z)q\_klqp(z | X\_train) dz
+
+would underestimate predictive variance, while
+
+p\_klpq(x\_test | X\_train) = int p(x\_test | z)q\_klpq(z | X\_train) dz
+
+could overestimate it.
+- Yes it absolutely matters, particularly when taking gradients through the expectation
+- This is great, thanks a lot!
+- So, I used to have the same understanding as you wrote above.
+
+Though, doesn't this paper \[1\] show the opposite? That for Sparse GP models, FITC (minimizes fKL) UNDERESTIMATES the predictive variance and VFE (minimizes rKL) OVERESTIMATES it (see section 3.1). This result is what started to confuse me really and what made me interested in the question. Might just be something specific to sparse GPs though...
+
+  
+\[1\] Bauer, M., Van der Wilk, M., & Rasmussen, C. E. (2016). Understanding probabilistic sparse Gaussian process approximations. *Advances in neural information processing systems*, *29*
+- oh yeah, that make sense. And to clarify: the gradient part you refer to is when you need to approximate the ELBO by sampling? 
+
+I get this... but there seems to be a lot of dission in this thread that probably assumes sampling is possible.. not sure if that changes anything.? I guess if you can sample from the true distribution (P) you do not need to do all this can can just take the expectation... 
+
+But again, it might be possible to sample but for a general distribution like in VAEs you also want to update the parameters of P, and that is only possible if you know at least the parametric form of the distribution.
+
+
+
+So my overall understanding is:
+
+
+
+1. If you cannot sample from P --> you have to go for forward KL, no other way
+
+2. If you can sample (idk how, maybe a simulation gives you some samples), but if you cannot back prop from P, that again you have to do forward KL.
+
+3. You need samples in first place to approximate the integeral to calculate KL, that is done via samples + ELBO in VAEs.
+
+So sampling is not the problem but the gradient update is?
+
+
+
+
+
+
+
+It is annoying that these things a left without a footnote; [https://www.cs.cmu.edu/\~epxing/Class/10708-15/notes/10708\_scribe\_lecture13.pdf](https://www.cs.cmu.edu/~epxing/Class/10708-15/notes/10708_scribe_lecture13.pdf)
+
+It just says "However, we do not do this for computational reasons." ... 
+
+
+
+Whatever I said is possible not correct.
+- As far as I understand, what's claimed in the section is that the variance that's left \*after accounting for posterior variance\* is underestimated by FITC. Apparently it has a degree of freedom in estimating the variance that the other method doesn't have (namely the heteroscedastic noise term), which it uses instead:
+
+>By placing the inducing inputs near training data that happen to lie near the mean, the heteroscedastic noise term is locally shrunk, resulting in a reduced complexity penalty. Data points both far from the mean and far from inducing inputs do not incur a data fit penalty, as the heteroscedastic noise term has increased around these points. This mechanism removes the need for the homoscedastic noise to explain deviations from the mean, such that σ2 n can be turned down to reduce the complexity penalty further.
+- Forward KL\[p(θ) || q(θ | ϕ) \] = E\_p \[ log p(θ) - log q(θ | ϕ) \]  
+Reverse KL\[q(θ | ϕ) || p(θ)\] = E\_q \[ log q(θ | ϕ) - log p(θ) \]
+
+Where p(θ) is target distribution which we have access to pointwise evaluations but cannot sample from easily, q(θ | ϕ) is a simple tractable variational distribution which we can sample from and evaluate.
+
+For VI, you want the gradient with respect to ϕ.  Reverse KL is standard, you can take one or more samples from q (which has a nice tractable form) and then gradients using reparam trick.
+
+Forward KL actually has a simpler form since we only care about ϕ: E\_p \[- log q(θ | ϕ) \] + const. But the problem is you cannot get unbiased approximations via sampling. Perhaps you can use tricks like importance sampling but this will quickly run into problems with dimensionality, unknown normalising constant and gradients.
+- I see. Thanks for noting that.
+
+I wonder this behaviour is fully explained by the structure of a sparse GP model or whether it is a result of the choie of vi objective and thus could be observed in other models as well...
+- My reading is that it has little to do with mode-seeking vs mode-covering, since there is no uncertainty about the mean function in that example anyway. The heteroskedastic noise term seems to appear due to doing EP, but I'd guess that's due to the combination of EP and sparse GPs. Maybe a good question to ask the authors?

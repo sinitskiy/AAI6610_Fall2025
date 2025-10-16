@@ -1,0 +1,32 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lqedrt/d_paper_with_code_is_completely_down/
+Title: [D] Paper with code is completely down
+
+Content:
+Paper with Code was being spammed (https://www.reddit.com/r/MachineLearning/comments/1lkedb8/d\_paperswithcode\_has\_been\_compromised/) before, and now it is compoletely down. It was also down a coupld times before, but seems like this time it has lasted for days. (https://github.com/paperswithcode/paperswithcode-data/issues)
+
+
+
+Comments:
+- Is there anything we can do to help these people?
+- Who owns paperswithcode? Both of the major contributors I could find appear to be very inactive
+- ugh it is still down -- it's been really unstable lately. What have you all been using as resources instead?
+- [deleted]
+- its down today
+- It's fluctuating between Up and down.
+
+I am facing the same issue
+- Even if it is up, I still can't log in to my account, and I need to log in to modify the relevant information of the article.
+- [https://web.archive.org/web/20240513185716/https://paperswithcode.com/task/semantic-segmentation/](https://web.archive.org/web/20240513185716/https://paperswithcode.com/task/semantic-segmentation/)  
+now we can use this!
+- I think restoring a clone? Their data is open I think, so making a mirror website might be possible
+- I think meta
+- [deleted]
+- It seems that it has completely terminated its service. Currently, only its Git repo can be found. 
+
+RIP.
+- is there any morror for paperswithcode ?
+- Its down again
+- And down again
+- yes, [https://web.archive.org/web/20250427202902/https://paperswithcode.com/task/panoptic-segmentation](https://web.archive.org/web/20250427202902/https://paperswithcode.com/task/panoptic-segmentation)
+- They're now redirecting to github :(, seems like they're gone for good

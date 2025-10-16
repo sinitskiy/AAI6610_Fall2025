@@ -1,0 +1,37 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/gxq77m/where_is_the_memory_of_antibody_recipe/
+Title: where is the "memory" of antibody "recipe"
+
+Content:
+Okay English isn't my first language, and not the one I learned biology in either, so my apologies for that.
+
+1st question
+
+Where does your body keep the memory of how to build certain antibodies for certain viruses?
+
+2nd question
+
+Would it be possible
+To extract blood from someone who hasn't had corona, inject their blood with corona, wait for that blood to have fought corona and made the antibodies , then reinject that same blood back into the person, and thus making them immune to corona? 
+
+If not, please explain.
+
+Thanks for your time :)!
+
+Comments:
+- 1. After a B lymphocyte with the complementary antibody on its surface collides with the corona antigen, it binds to it and engulfs it. The antigen is the ‘recipe’ for the antibodies. Then it displays the antigen on its surface to become an APC (Antigen Presenting Cell), this then collides with a T helper cell that takes the detected antigen and divides rapidly, producing plasma cells, which can produce the corona antibodies, and memory cells that stay present in the lymph until the same corona antigen is detected again, where it rapidly produces antibodies, eliminating the virus before it can reproduce and cause damage. Making you immune. This is the same for any other pathogen.
+
+2. I don’t think so, because viruses destroy body cells as part of their reproductive cycle, which need to be replaced and can only be produced in the bone marrow. Plus important cells are higher in concentration at certain regions of the body, like t helper cells in the spleen.
+- You are talking about the adaptive immune response which does not happen in blood. The adaptive immune response happens in the lymph nodes within the lymphatic system. Remember when you’re sick and your lymph nodes get swollen and nodular? So in short taking someone’s blood and mixing covid wont do anything. The blood network of the body is a place to transport many immune cells more so than where they live/reside.
+- To add on the the others answer to the second question, that is the basic idea behind a passive vaccine. Instead of making you're body produce antibodies against the virus, you just inject the antibodies directly.
+- To your second question: Yes, but...
+
+- You would have to extract cells from the bone marrow and that is a medical process that has included risks, it's not like getting a blood sample.
+
+- Growing and/or maintaining cells in a lab is expensive and time consuming. You would need to use growth factors that are very, very expensive and that does not include the plates for the cells to grow.
+
+- There is no way to ensure these cells will produce an effective antibody. When you make an antibody you mix pieces of proteins that you have. You can try as many combinations as you can imagine, but if you don't have the right pieces to start then there is no way you will get the right answer. Even if you manage to make an antibody there is no certainty that it will work in vivo.
+
+The idea that you are proposing in your second question is the basis of how we make vaccines. It is not practical to make a vaccine for every single patient (at least with the technology we currently have), but scientist around the world are doing what you describe although with cells obtained from labs to make the process more efficient. This is why it takes so long to make vaccines.
+- Thanks for your response, means a lot to me :)!
+- Thanks for your elaborate and fast response! :)

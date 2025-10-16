@@ -1,0 +1,13 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/jt7dr/map2_and_synaptophysin_as_markers_in_learning_and/
+Title: MAP2 and Synaptophysin as markers in learning and memory
+
+Content:
+Hi--my lab does a lot of westerns looking at MAP2 and synaptophysin in terms of markers for LTP and neuronal plasticity associated with learning and memory--but the more I read, I see that there are major disagreements over MAP2. Coupled with the issue of different phosphorylation states (too many to count) being implicated in different processes/functions, I'm a little lost.
+
+Does anyone know a good antibody or two to get started--I'm interested in doing some immunoprecipitations. 
+
+Comments:
+- Usually authors will state where they got their antibodies in the materials and methods section
+- The main issue is that there doesn't seem to be a consensus in the literature--I'm reading and trying to get a good idea of where to go--I wanted to see if anyone had any personal experience in their research.
+- I mean--I need something that can help me determine the phosphorylation state of MAP2, not just the expression of it.

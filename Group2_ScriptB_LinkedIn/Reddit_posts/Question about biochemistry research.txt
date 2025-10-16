@@ -1,0 +1,28 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/v0yxrx/question_about_biochemistry_research/
+Title: Question about biochemistry research
+
+Content:
+Question for a biologist. Ive never really worked in a lab but i do have a lot of experience reading biology. I always find it really interesting to read or listen about (a lot of youtube) new drugs, molecular or genetic or epigenetic targets that are discovered but i always wonder to myself how are these discovered in the first place? What is the practical process? What machines are used? How could i learn more about this? 
+
+If i dont know that a specific molecule exists within the human cell, which i cant see with a microscope, how the hell do i go about learning that it even exists? 
+
+For example recently i learnt about histones which was really interesting and i always wondered how cell specialisation worked.
+
+Comments:
+- Read books. 
+
+For beginners I would suggest Campell. If you want to learn about embryogenesis and cell specialisation start at Drosophila embryogenesis. It's the most common used model animal species in science.
+- I don't know about all biochemical, but proteins usually involve x-ray crystallography.  Knowing the DNA sequence for the gene helps, mRNA helps more and obviously the amino acid sequence is the greatest help. There are a lot of sequencing techniques out there, and it seems more are added every day.
+- The first sequence was of one individual,  subsequently we have sequenced many, many others.
+- Huh i see.. makes me thing of a different question.. so when i read that “the human genome has been sequenced” what does that mean? Does that mean we have a record of all of the base pairs of one human’s genome or does that mean we have an idea of the location of all of the genes within that genome or that we know what the protein products created by all of those genes look like? Or all of those things?
+- The human genome is a book with 3 billion letters (base pairs) that form words (genes).
+
+We know all of the letters, but we can't read all of the words yet.
+- The human genome is a book with 3 billion letters (base pairs) that form words (genes).
+
+We know all of the letters, but we can't read all of the words yet.
+- Is that because we dont know when one gene starts and another begins within the string of base pairs? Or because we dont know how the genes transcribe into proteins? Or because we dont understand the epigenetic implications (functions) those transcribed genes have?
+- It's because we have 30,000 genes in our genome that transcribe for between 80,000 and 400,000 proteins in our body.
+
+And we've only sequenced our own genome for about 20 years. So it's simply just a numbers game.

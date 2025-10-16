@@ -1,0 +1,62 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/61847g/practical_bayesian_methods_mooc/
+Title: Practical bayesian methods MOOC
+
+Content:
+Hi everyone. 
+We’re continuing to develop a Coursera MOOC about practical Bayesian methods. We came up with a prototype schedule and wanted to discuss it with the community -- what do you think of the contents and order, what is missing etc.
+
+See the detailed plan here: https://docs.google.com/document/d/1AHLKVQntgcRYhoNPL09NerAscbpzPneHrJWAH-B5yRs/edit?usp=sharing
+
+This course is going to be a part of the Advanced Machine Learning specialization and will take 6 weeks. The short version of the schedule:
+
+1) Intro, Statistics review, example models, Conjugate distributions 
+
+2) EM (Latent variable models), GMM, probabilistic PCA 
+
+3) MCMC 
+
+4) Variational inference, LDA 
+
+5) Stochastic variational inference, VAE, Bayesian Neural Networks 
+
+6) Gaussian processes, Hyperparameter optimization, summary 
+
+One of the homework we are not sure about is the paper reading assignment. Since one of the course goals is to train listeners well enough so that they can read papers about Bayesian models, we may make a homework along the lines “read one of these papers, summarize it, and get the feedback from peer-review”.
+
+Another important decision is the final project. One of the ideas is to build a self-driving car by training a CNN to map image from a “camera” (simulated in a game) to the signals for the wheel. This part is simple and non-probabilistic :)
+The probabilistic part is to combine signals from different sources that work in different conditions (e.g. usual camera works poorly at night, infrared camera works poorly when raining), and to estimate the uncertainty in the prediction, so the car can pass the controls to the human driver if it is not sure what to do.
+
+What do you guys think? We are especially concerned about the homework (see details in the GDoc).
+
+
+Comments:
+- First of all really thanks for doing this, you already have one person signed up for the course :)
+
+Will I be able follow this individual course without going through all the other courses of the specialization? I already have a background as an ML practicioner but bayesian methods have been outside of my reach so far. 
+
+Your content is exactly what I've been looking for. If I had to ask for one thing is that you search for the right balance between a breadth of subjects and depth of material taught. For example, do you really need to talk about Stochastic computational graphs? Maybe it would make more sense to go deeper (pun intended) with probabilistic PCA and VAE. Apart from that, weeks 1-3 look great to me
+- Something that might be interesting to have (either as an exercise or some small topic) is Bayesian matrix factorization for recommendations. It is a very popular application area and it is a very nice exercise to derive the math and implement the results. 
+
+1) "Bayesian Probabilistic Matrix Factorization
+using Markov Chain Monte Carlo", Salakhutdinov and Mnih. ICML 2008 
+https://www.cs.toronto.edu/~amnih/papers/bpmf.pdf 
+
+2) "Scalable Recommendation with Hierarchical Poisson Factorization". Gopalan, Hoffman and Blei. UAI 2015. (they are using variational inference here)
+http://auai.org/uai2015/proceedings/papers/208.pdf
+- Thanks a lot for the feedback!
+
+Yes, you should be able to follow just one course from a specialization (or at least we were told so)).
+
+We were actually thinking to mention stochastic comp graphs in a short 5 minutes video to just say that all the tricks we've shown (REINFORCE, reparametrization trick, etc.) can be put in a kind of general framework which can handle lots of practical situations.
+
+But yes, breadth/depth tradeoff is something we would really like to get right, thanks again for the feedback.
+- Do you have an ETA for this course?
+
+From past experience with MOOCs in ML I have noticed that I really admired when the programming assignments actually made me implement and debug the algorithms themselves. Take for example Andrew Ng's course in ML. It hits a sweet spot with getting your hands dirty and actually making something works. I personally wouldn't see the value if during the course you told us: 'Here's the algorithm and here's the data, run it and report the results'.
+- Sorry, we were asked not to promise any dates publicly, so I answered this in a private message.
+
+And what would do you think about programming with a template provided? This way you have to implement only the most relevant lines of an algorithm.
+- You better be doing this in Python :)
+
+I think templates are great for educational reasons. They take away the extra complexity that comes with real programming while allowing you to write code and actually see it work without many frustrations. In my honest opinion, the best implementation of such a framework I have seen is in Andrew Ng's ML course. There, we had to fill in the lines of code that actually did the calculations. Loading data and plotting results was already taken care of. I also found very important the existence of some sort of 'unit tests'. He basically provided us with test cases for which the correct result was given to debug if your algorithm is actually working as intended or not

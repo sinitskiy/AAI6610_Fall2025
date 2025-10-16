@@ -1,0 +1,81 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ju9v9x/miseqminiseq_and_minionprometion_costs_per_run/
+Title: MiSeq/MiniSeq and MinION/PrometION costs per run
+
+Content:
+Good day to you all!
+
+The company I work for considers buying a sequencer. We are planning to use it for WGS of bacterial genomes. However, the management wants to know whether it makes sense for us financially.
+
+Currently we outsource sequencing for about 100$ per sample. As far as I can tell (I was basically tasked with researching options and prices as I deal with analyzing the data), things like NextSeq or HiSeq don't make sense for us as we don't need to sequence a large amount of samples and we don't plan to work with eukaryotes. But so far it seems that reagent price for small scale sequencers (such as MiSeq or even MinION) is exorbitant and thus running a sequencer would be a complete waste of funds compared to outsourcing.
+
+Overall it's hard to judge exactly whether or not it's suitable for our applications. The company doesn't mind if it will be somewhat pricier to run our own machine (they really want to do it "at home" for security and due to long waiting time in outsourcing company), but definitely would object to a cost much higher than what we are currently spending  
+  
+As I have no personal experience with sequencers (haven't even seen one in reality!) and my knowledge on them is purely theoretical, I could really use some help with determining a number of things.
+
+In particular, I'd be thankful to learn:
+
+What's the actual cost per run of Illumina MiSeq, Illumina MiniSeq, MinION and PromethION (If I'm correct it includes the price of a flowcell, reagents for sequencer and library preparation kits)?
+
+What's the cost per sample (assuming an average bacterial genome of 6MB and coverage of at least 50) and how to correctly calculate it?
+
+What's the difference between all the Illumina kits and which is the most appropriate for bacterial WGS?
+
+Is it sufficient to have just ONT or just Illumina for bacterial WGS (many papers cite using both long reads and short reads, but to be clear we are mainly interested in genome annotation and strain typing) and which is preferable (so far I gravitate towards Illumina as that's what we've been already using and it seems to be more precise)?
+
+I would also be very thankful if you could confirm or correct some things I deduced in my research on this topic so far:
+
+It's possible to use one flow cell for multiple samples at once
+
+All steps of sequencing use proprietary stuff (so for example you can't prepare Illumina library without Illumina library preparation kit)
+
+50X coverage is sufficient for bacterial WGS (the samples I previously worked with had 350X but from what I read 30 is the minimum and 50 is considered good)
+
+Thank you in advance for your help! Cheers!
+
+Comments:
+- You want to look at a few things in particular:
+
+\- Cost of the actual instrument
+
+\- Price per GB of sequencing (including reagents)
+
+\- Ease of batching samples or running small samples depending on workload.
+
+I imagine your setup would heavily favour nanopore - the machines are cheap, and it's easy to run a flow cell for only a small amount of time, then storing + reusing it. Price per Gb is still (I think?) a bit cheaper with Illumina, but afaik flowcells are single use, so you might have to multilpex 100s of genomes to actually make use of all the reads. It would be helpful to know what sort of scale (ie genomes per week) you're working at, that might affect your choices, if it's just 1 sample a month it might be easier to carry on outsourcing.
+
+Some other points about nanopore:
+
+\- I wouldn't worry at all about accuracy with 50X depth, and long reads might make assembly easier.
+
+\- You will need a decent computing set up (like a gaming PC) to run basecalling and generate fastq files, nanopore raw data is very large which is a poor fit for cloud computing.
+
+I'm not going to run the numbers for you (I have my own job lol) but happy to answer questions if you want to hear more about our experience with a single-lab nanopore setup.
+- Sit down with an Illumina and/or ONT rep.  They'll be more than happy to speak with you about this.
+- You can find nanopore pricing on their website. You will need a sequencer, [MinION](https://store.nanoporetech.com/us/minion.html) or [P2 solo](https://store.nanoporetech.com/us/p2-solo.html); flowcells [for MinION](https://store.nanoporetech.com/us/flow-cell-r10-4-1-2025.html) or [for P2](https://store.nanoporetech.com/us/promethion-flow-cell-packs-r10-4-1-m-version-2025.html); and [sample prep kits](https://store.nanoporetech.com/us/sample-prep.html) which can be used for a few times. P2 might be too much for bacterial sequencing even at 96-plex.
+- If you do go with ONT, there is a service contract that is required. Last I checked, it was $12.5 k per year.
+- Consider Element Biosciences Aviti Sequencer. Very high data quality with a price per Gigabase around $5.60 for their most cost efficient Flowcell. Completely outperforms the NextSeq instruments
+- Hey, I ran across this-- where do you outsource your sequencing? I have a small seqeuncing reaction and a single miseq run at my place is quoted as $650, which is crazy.
+- Came here to amplify the vote of confidence for ONT. You *will* need to invest heavily on storage, possibly split the compute to a gaming PC to handle the basecalling and a multicore Xeon or EPYC for fastq analyses. Not sure how many runs a month you do, but the setup that may work is : get a minion to test ideas and run the production on P2Solo with batching
+- Huge thanks for reply! I'll try to reply to it in a more constructive manner later, but for now I'd like to ask one thing only - is cost per sample calculation is as simple as max output of a cell divided by genome size×coverage? If so, I can probably do all the calculations myself
+- Alright, once again thank you for your insight! I've spent some time browsing ONT website and so far it seems that it's indeed a superior choice for our purpouses - the devices are cheap and small batching is way easier than with Illumina
+
+Our sample throughput is… variable. Right now we want to sequence about 400 bacterial strains but after that it might be just a few per month. The company also considers resequencing older samples to check if they have accumulated mutations, but I'm fairly certain that if bacteria are stored correctly they shouldn't have any, at least in any significant amount.
+
+We might consider using GridION if it means simplified workflow - the initial cost of the device is small compared to some of our other equipment and it's the ongoing cost that worries the company the most. But I'll have to discuss it further with higher-ups
+
+By the way, is there a need for a separate lab space for sequencers? I worked with amplifiers (PCR) at the university and per the protocol, they should be placed separately from DNA prep lab to avoid DNase contamination. I assume that’s the case for sequencing set-up as well?
+- I really wish I could, buy they don't officially work in my country(
+- Oh, that's an important detail, thanks!
+- Hi! We outsource it to various research institutes in my country. I don't think it'll be of any use to you — unless you have a way to send a sample to Russia 😅
+- What sort of storage requirements do you have? We've been managing fine with a 2TB SSD, but that does involve clearing up raw data efficiently, and we're not exactly running at a high volume anyway.
+
+  
+PS: Buying your own hardware is probably cheaper than going down GridION / PromethION route (as per [this post](https://rrwick.github.io/2023/12/09/ont-desktop.html)), but of course cost isn't the only concern, especially in a commercial setting.
+- No worries! Yeah pretty much, providing you can fill the cell with multiplexed libraries.
+- That will be a strong selling point. Before deciding, check what tech support and reagent import processes are available in your country. I have some colleagues in Mexico who cannot simply use ONT because imports are impossible and elevation messes with the equipment.
+- at this point it'd probably be cheaper! cheers.
+- I do transcriptomic sequencing of human data and retain everything (+ 2 copies). I mostly use external Green Barracuda HDD for archiving that I clone for copies. I own about 50TB of storage for this purpose. 
+For *data analyses, you need to work the storage hierarchy: invest on a 2 to 4 TB NVME (which you will use to store the reference genomes) and use an intermediate storage (2 to 4 TB SSD) to move things from your archival store into the server for analysis. 
+For the server that does the fastq there is absolute zero need to buy something new: I hit ebay for old HP840 : assuming you don't run them at load all the time, the electricity cost will not be a concern.
+- I agree Re: gridion. We bought 2 or 3 MinionB and flongles and the P2Solo (without the compute) would be my next instrument if there was more clarity about the NIH. As data centers are flipping equipment you can find powerful computers and GPU for cheap

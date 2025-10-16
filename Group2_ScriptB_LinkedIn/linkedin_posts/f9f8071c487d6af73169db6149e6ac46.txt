@@ -1,0 +1,81 @@
+URL: https://www.linkedin.com/posts/judd-devermont-24296611a_intelligence-reform-should-include-an-updated-activity-7364682952326160387-29l2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Judd Devermont的动态
+Judd Devermont
+
+Operating Partner (Innovation), Kupanda Capital
+
+1 个月
+
+This is a fantastic piece. Jerry offers a sensible approach to simplify what has become such a confusing and contentious issue: probabilistic language in the intelligence community.
+
+Jerry Laurienti, Ph.D.
+
+Leidos | Former CIA | Texas A&M Bush School DC Adjunct Professor | Korbel School of International Studies Alumni Council Member
+
+1 个月
+
+Thanks to the #TheCipherBrief for publishing my thoughts about restarting a conversation around how the IC gauges and expresses probability. You may disagree with my suggestion, but perhaps a debate can help us get it right.
+
+Intelligence Reform Should Include an Updated Probability Yardstick
+thecipherbrief.com
+14
+2 条评论
+赞
+评论
+分享
+Blair Sondker
+
+Intelligence Analyst | Political Risk Manager | Strategic Advisor
+
+1 个月
+
+This is a blisteringly important topic/consideration, particularly when briefing customers outside of traditional national security roles. Terms of art within analytic, probability, absolutely fluster scientific or engineering audiences
+
+赞
+回复
+1 次回应
+Christopher Hoffman
+
+National security professional with over 20 years of service. Cyber policy, translation, intelligence production, covering South America, Sub-Saharan Africa, and the Middle East. Conversation: serious or light.
+
+1 个月
+
+it's certainly more realistic.
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+最相关的动态
+MD. REAZ UDDIN
+
+CSE Student | Reverse-engineering AGI, Embedded Systems | Building Scalable Tools & Open Source Projects
+
+3 周  已编辑
+
+🔥Map top to bottom, how LLMs actually work
+
+Stop 1: Text → Tokens → Embeddings
+Stop 2: Positional Embeddings (absolute, RoPE, Alibi)
+Stop 3: Attention (QKV, multihead)
+Stop 4: Transformers (normalize, repeat, logits)
+Stop 5: Sampling tricks (temperature, top-k, top-p)
+Stop 6: KV cache + long context hacks
+Stop 7: MoE & GQA
+Stop 8: Normalizations & activations (Pokémon icons?)
+Stop 9: Training objectives (causal LM, ma

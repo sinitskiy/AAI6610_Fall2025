@@ -1,0 +1,81 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/haw4qa/p_icml2020_ngboost_natural_gradient_boosting_for/
+Title: [P] ICML2020, NGBoost: Natural Gradient Boosting for Probabilistic Predictions
+
+Content:
+Hi everyone,
+
+NGBoost: [https://stanfordmlgroup.github.io/projects/ngboost/](https://stanfordmlgroup.github.io/projects/ngboost/)
+
+Many of us are interested in models that output predictive uncertainty (typically in the form of probabilistic predictions). Many of us are also fans of Gradient Boosting for its ability to produce high accuracy models, especially over tabular input data. So far there hasn't been a simple way to get both at the same time.
+
+NGBoost brings probabilistic prediction capability to gradient boosting in a generic and modular way. The Y|X can be any parametrized probability distribution with differentiable parameters (including, importantly, multi-parameter distributions such as Normal, Weibull, etc.). It also supports multiple scoring rules (MLE, CRPS) by supporting Generalized Natural Gradients. It is also possible to do survival prediction with NGBoost (my personal use-case for the project).
+
+The key conceptual difference between GBM and NGBoost is that, GBM performs functional gradient descent (on the space of functions), whereas NGBoost performs natural gradient descent on the space of statistical manifolds (where the Riemannian metric of the statistical manifold is implied by the choice of scoring rule such as MLE or CRPS).
+
+We hope you find the project useful for some of your projects!
+
+Comments:
+- comes with a dope user guide: [https://stanfordmlgroup.github.io/ngboost/1-useage.html](https://stanfordmlgroup.github.io/ngboost/1-useage.html) ;)
+- Some time ago I worked on a model which was essentially what you named a "2nd-Order" boosting, with MLE/Weibull as the target. It was good enough for my practical purposes, and it was cheap to implement with XGBoost. I remember that I had to make eta very small to make it converge—this is probably something that the application of natural gradients help a lot with. I never put enough care to do more experiments than this though. Happy to see this kind of solid development!
+- Is there any comparisons between this and other non probabilistic prediction methods?
+- What is the difference between functional gradient descent and natural gradient descent?
+- Thank you for sharing this promising algorithm. I already tried the Regressor and the predictions and probability distributions look very good. However I am having problems with the NGBSurvival implementation and don't really understand the output. Here is my example:
+
+    from ngboost import NGBSurvival
+    from ngboost.distns import LogNormal
+    from lifelines.datasets import load_rossi
+    
+    rossi = load_rossi()
+    train_rossi = rossi.iloc[:400]
+    test_rossi = rossi.iloc[400:]
+    
+    y_train, y_test = train_rossi['week'], test_rossi['week']
+    e_train, e_test = train_rossi['arrest'], test_rossi['arrest']
+    x_train, x_test = train_rossi.drop(['week', 'arrest'], axis=1), test_rossi.drop(['week', 'arrest'], axis=1)
+    
+    ngb = NGBSurvival(Dist=LogNormal).fit(x_train, y_train, e_train)
+    y_preds = ngb.predict(x_test)
+    y_dists = ngb.pred_dist(x_test)
+    
+    fig, ax = plt.subplots(1, 1)
+    
+    s = y_dists[0].params['s']
+    scale = y_dists[0].params['scale']
+    
+    mean, var, skew, kurt = lognorm.stats(s, moments='mvsk')
+    x = np.linspace(lognorm.ppf(0.01, s), lognorm.ppf(0.99, s), 100)
+    
+    ax.plot(x, lognorm.pdf(x=x, s=s), 'r-', lw=5, alpha=0.6, label='lognorm pdf')
+    ax.plot(x, lognorm.cdf(x=x, s=s), 'b-', lw=5, alpha=0.6, label='lognorm cdf');
+
+The prediction values are higher than even the max values in the test set and the values in the plot (which I probably did wrong) do not align. Also if I try to add the scale to the plot it looks quite terrible
+
+Is there some transformation needed for the output? How can I plot the predictions and distribution correctly?
+
+Maybe you can shed some light here and extend the documentation regarding the Survival Implementation. Thank you so much ;)
+- what's the important module or to interface with the project?
+- This is not the first time we have come across a story like this -- someone trying to come up with a way to do something like probabilistic predictions with boosting :) Thank you for your note!
+- Hi u/vmgustavo, thank you for your interest!
+
+Our comparisons of uncertainty estimates have been limited to likelihood based metrics (NGBoost only supports parametrized probabilistic predictions). We do compare point estimates with non-probabilistic prediction methods in the paper.
+- Here are two blog posts I found that give a good introduction to both those topics:
+
+&#x200B;
+
+[https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html](https://simple-complexities.github.io/optimization/functional/gradient/descent/2020/03/04/functional-gradient-descent.html)
+
+&#x200B;
+
+[https://towardsdatascience.com/its-only-natural-an-excessively-deep-dive-into-natural-gradient-optimization-75d464b89dbb](https://towardsdatascience.com/its-only-natural-an-excessively-deep-dive-into-natural-gradient-optimization-75d464b89dbb)
+- For e.g., see the example code in README that works with NGBRegressor: 
+
+[https://github.com/stanfordmlgroup/ngboost](https://github.com/stanfordmlgroup/ngboost)
+- Sorry I didn't get to that section of the paper before asking. This looks very promissing, I will definitelly try it. May I ask you how did you calculate the intervals for the point estimate methods?
+- Wow?! That's my blog! Thank you!
+- For the point-estimate methods, we only compared NGBoost's point estimates (the mean of the predicted distribution). Obviously we could not compare the interval/uncertainty with point estimate methods.
+- Cool, thank \_you\_!
+- Yes, but in the paper there is a table with a random forests column and a 2.97±0.30 for the boston dataset. Where did this 0.30 come from? Just multiple executions of the same model with different seeds?
+- Ah, thanks for clarifying. Those are error bars around the RMSE, based on different folds of the data during cross validation. That is different from the prediction for each example in the form of an interval.
+- got it, thanks!
+- I just tried it with a kinda complex data and it wasn't so good using decision trees as the regressor but whan I changed it to a random forests regressor it worked really nice actually. I'll have to dive deeper into that. That is a great work right there.

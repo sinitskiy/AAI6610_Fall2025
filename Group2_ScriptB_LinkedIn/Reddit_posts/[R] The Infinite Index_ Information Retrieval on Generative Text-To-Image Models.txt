@@ -1,0 +1,35 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/zp4jv8/r_the_infinite_index_information_retrieval_on/
+Title: [R] The Infinite Index: Information Retrieval on Generative Text-To-Image Models
+
+Content:
+Hi all, 
+
+in our recent paper we cast text-to-image generation as a retrieval task, thereby connecting text-to-image models to information retrieval. An essential part of our paper is a case study on game artwork search using Stable Diffusion in which we demonstrate the challenges of prompt engineering. We are curious to hear your feedback!
+
+arXiv: https://arxiv.org/pdf/2212.07476.pdf
+Twitter thread: https://twitter.com/webis_de/status/1604469981043134465
+
+Abstract:
+> The text-to-image model Stable Diffusion has recently become very popular. Only weeks after its open source release, millions are experimenting with image generation. This is due to its ease of use, since all it takes is a brief description of the desired image to “prompt” the generative model. Rarely do the images generated for a new prompt immediately meet the user’s expectations. Usually, an iterative refinement of the prompt (“prompt engineering”) is necessary for satisfying images. As a new perspective, we recast image prompt engineering as interactive image retrieval—on an “infinite index”. Thereby, a prompt corresponds to a query and prompt engineering to query refinement. Selected image–prompt pairs allow direct relevance feedback, as the model can modify an image for the refined prompt. This is a form of one-sided interactive retrieval, where the initiative is on the user side, whereas the server side remains stateless. In light of an extensive literature review, we develop these parallels in detail and apply the findings to a case study of a creative search task on such a model. We note that the uncertainty in searching an infinite index is virtually never-ending. We also discuss future research opportunities related to retrieval models specialized for generative models and interactive generative image retrieval. The application of IR technology, such as query reformulation and relevance feedback, will contribute to improved workflows when using generative models, while the notion of an infinite index raises new challenges in IR research.
+
+Comments:
+- If I had a data center full of h100s I would be truly happy.
+
+We could simply brute force the retrieval process across the index.
+
+We can easily reduce the sets needed by focusing on 1 language and using the model's native settings for resolution, others.
+
+We could filter by similarity dynamically thru embeddings, so we wouldn't have to generate all possible images.
+
+Same by aesthetic, safety.
+
+In the 512x512 space, there's also a top limit for possible outputs due to pixel density, so it is not infinite anyway.
+
+Imagine a visual of all possible filtered gens across the entire index. We would need a giant IMAX to see a little piece.
+
+Every possible significantly different piece of art, scene, face, animal, sentence, formula, wave, map, drawn. 
+
+Even indexing only a few hundred thousandth images and searching w embeddings shows you how strong this framework is at relating concepts.
+
+Vector magic is changing the world so fast.

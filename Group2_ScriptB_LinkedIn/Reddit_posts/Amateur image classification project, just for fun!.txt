@@ -1,0 +1,48 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gz5nyi/amateur_image_classification_project_just_for_fun/
+Title: Amateur image classification project, just for fun!
+
+Content:
+Hello! New here and relatively new to CV / ML in general... throwing out a little personal project from the last two days and thought it might open an interesting discussion. The GitHub page with all my code, a slightly more detailed, slightly more psychotic description of my work, and data from the [MNIST dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset/data) can all be found [here](https://github.com/bopjones/eyeball).
+
+# Premise
+
+I had an idea for a project a few days ago to make an image classifier based verrrry loosely (pls do not fact check anything I am about to say) on the idea that we have clusters of cells in our visual cortices that are activated by very specific stimuli (e.g. a dark vertical bar oriented at 45 degrees). My goal was to make a machine that takes in a kxk image and - following minimal calculation - returns some predefined set of binary signals, these signals get amplified by some learnable amplification vector (this part needs to be way fleshed out), and then we classify this output signal however we want. I designed it this way because I like the idea of a machine that doesn't do all that much calculation and holds all of its complexity in the design of the sensors themselves. Kinda reminds me of the human brain! (Again, I know that I don't know anything about neuroscience, this project is solely because I thought it would be fun waste of like two days off.)
+
+While this is likely a super inefficient learning method, I kind of like the idea of having the machine return some high-dimensional vector as it's output, and having some other mechanism decode that output by segmenting or clustering the output space itself. This feels a little more like human learning to me, since the same output could be determined to mean something totally different based on how the observer segments the output space (take different languages, for example). Not claiming this is a unique idea -- I just think it's neat. I currently use kmeans clustering to segment the output space but also made a class to do this using hyperplanes (in feedback.py).
+
+# Application
+
+So far, I made sensors that respond to 14 different orientations of dark or light cells (based on greyscale value) in a given 3x3 region of pixels (in classifiers3x3.py) or, more generally, for a given kxk region of pixels (in classifierskxk.py). Here's how the training works (see train\_5x5.ipynb):
+
+A training image and its corresponding label are selected.
+
+Each distinct kxk region of pixels (where k is a parameter) is analyzed, each returning a length 14 boolean vector (1 for each sensor type), with True meaning that sensor type was "activated"
+
+Right now I have similar sensor types being aggregated by row of the image (i.e. if 3 "dark vertical bar" sensors get activated in the first row of kxk squares of pixels, the aggregation vector will have a 3 in the corresponding position). This is one of many completely arbitrary decisions I have made that are definitely unnecessarily limiting but 🤷‍♂️
+
+An "amplification vector" the same size as the aggregation vector is then added to aggregation vector (see step 6)
+
+The resulting vector falls into some region of the output vector space (output space is split into r arbitrary regions upon initialization. For digit classification r = 11 makes sense to me but r could potentially be ginormo if you wanted to classify more stuff), and the regions can be pre-associated with different kinds of outputs (digits 0-9, in this case)
+
+If correctly classified, the amplification vector updates in some super clever and amazing way that everybody loves (tbd) that makes similar aggregation vectors more likely to fall into that region. Right now I have this move the amplification vector closer to the center of the correct region of output space, and nothing happens if incorrectly classified. I also have the option of the amplification vector decaying over time (to represent something like memory loss, idk)
+
+# Results
+
+It's really bad! (but better than random sometimes which is cool)
+
+Well first of all this whole thing is very sloppy and not very well thought through so there are a bajillion improvements to be made everywhere. Second, I'm doing this all on my macbook and the cpu gets just so hot when I train for more than like 5 minutes so I don't actually know what it's capable of as is.
+
+# What do I want from you
+
+Mostly for you to tell me that I am brilliant and amazing and that you want to hire me at your very lucrative company. Otherwise, literally anything! This project has no purpose or consequences and was literally just a fun way to spend a couple days off. I think there are a bunch of interesting concepts that I am by no means claiming are unique, but which I haven't explicitly come across in my short time exploring ML. If you, like me, find any part of this interesting please drop a comment, pull down the repo, and let's colab!
+
+Love,
+
+\- Bop Jones
+
+
+
+Comments:
+- This is really cool
+- Thanks! I think so too

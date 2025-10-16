@@ -1,0 +1,20 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/10mhggd/evaluating_bayesian_optimisation_search/
+Title: Evaluating Bayesian Optimisation search efficiency and uncertainty
+
+Content:
+Hi all, 
+
+I am trying to find the best multidimensional combination of parameters for an application based on a given metric by using bayesian optimisation to search the parameter space and efficiently find the most optimal parameters with the fewest number of evaluations. The model gives some sets of parameters, some that it has a high prediction of the metric, and others it has high uncertainty about. 
+
+These 2-300 outputs per cycle are then experimentally validated, and the accumulated results fed back into the model to get a better set of parameters for the next iterations for a total of about 6 iterations (12-1500 data points total) . The search space is large, and there are a limited amount of iterations that can be performed. 
+
+Because of this, I need to evaluate several surrogate models on their performance within this search space. I need to evaluate the search efficiency (how quickly can each one find the most optimal candidates e.g one will take 3 cycles, the other 8, other 20 etc) and the theoretical proportion of the search space that each model can search given the same data e.g 20% of the search space given 3% experimentally validated data from the search space.
+
+I am using the BoTorch library to build the bayesian optimisation model. I also already have a set of real world experimental data from different cycles from the first model I tried. 
+
+I would like to know how to go about evaluating these models for the search efficiency and design space uncertainty, any thoughts are welcome. 
+
+Thanks.
+
+Comments:

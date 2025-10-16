@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/q8bp15/d_current_ml_engineer_searching_for_career_advice/
+Title: [D] Current ML Engineer Searching for Career Advice
+
+Content:
+Hi all, recent grad here with 1.5 years of experience as a "Machine Learning Engineer", except the actual duties of the role aren't even close to that of an ML Engineer.
+
+The role I've found myself in doesn't involve much machine learning even though the job description and the manager's description implied that it did. I've also been placed in a position where it's become my job to perform physics simulations due to the experience I gained through my physics master's degree. Further, the small amount of machine learning I've been a part of doesn't involve training or deploying models. Instead, the usual practice my company has adopted is that we build a pip installable Python package with a command line interface and "deploy" the code by installing this on our customer's computers.
+
+Being my first job out of grad school, I jumped on the opportunity with no initial regrets and I'm treating this as a learning experience. I was definitely aware that this position wasn't what it was advertised to be within a few weeks of starting the position, but with it being my first job and the uncertainty that the pandemic brought, I decided to ride it out until now.
+
+Recently, I've decided it's time to move on to another position that actually offers career development for future Machine Learning Engineer roles, except I've had quite a bit of difficulty in finding another position. Over the past year, I have been working weekends to update my portfolio that displays my current coding and machine learning capabilities, which definitely go beyond what's expected of me at my job.
+
+I've had quite a few interviews, including a technical interview with Amazon, so I don't think my resume is lacking. I feel I've been able to put a positive spin on the small amount of machine learning that I've done at work while also trying to highlight the extra time I put in to make myself a more desirable candidate. However, I feel like I keep falling short when interviewers ask me about how we deploy models at my current position. I've done a small amount of work on my portfolio using restful APIs to show that I have the ability to do more than my job currently asks, but I feel like I'm hitting a wall and I'm not sure where to focus my efforts to help my situation. I would appreciate any advice that could be considered useful, or even just a sanity check to know that others have been in this position and moved to a role with more applicable responsibilities.
+
+TL;DR:
+
+First job after grad school shouldn't actually be considered an ML Engineer role. Struggling with interviews because the experience I've gained isn't applicable to positions that fit my current job title. Seeking advice to become a real ML Engineer.
+
+Comments:
+- At this point you won't get the experience of deploying production ready models until you find a job that actually does it.
+
+If you are not set on a FAANG job, you can interview for interesting startups as a data scientist rather than an engineer.  You get valuable experience, you can learn things about the deployment pipeline on the job as long as you contribute in other ways, the work is often more interesting, obviously pay will be less and you resume won't have the FAANG tag. But the skills you gain will more than make up for it.
+
+Also, make sure to get as much details as you can about the role and what the company does and how the role ties into it. You don't want to end up in another stop gap role with limited chances for growth.
+
+You can still take a look at some of the links the other users have provided and gain at least the theoretical systems knowledge needed.
+- What you need is to learn data engineering. For ML folks theres a spectrum between analysis and design. People straight from academia are more often than not 100% analysis. They can't really design reusable infraestructure. You need to even it out to a 50/50; standalone ML knowledge is useless unless you are targeting niche positions where you'll need a PhD anyway. Learn a data engineering stack. My recommendation: Docker, Kubernetes, SQL, Big query, Apache Airflow, FastAPI, Pandas, Databricks, Apache Beam and Apache Pulsar.
+- It sounds like more of a technical skills gap issue. Or interview tactics. So, your office is using ancient dark ages methods. I feel you. Truly. Show some initiative and build something modern. A little micro-service, some lambda functions or a docker service. **Or whatever matches what your desired job requirements are**. Build it any way you like. Even partially. 
+
+And if they ask you about what their process is, you can say well <this> is the nature of the business problem we are trying to solve and while I would LOVE to build this using (stuff they want you do know), because I can do that and I think it makes sense - I could even put a front end on it using R if you could imagine, but management hasn’t moved forward on that yet, so we deploy using a simple download service. It’s basic, but it works.  
+
+And then follow up with a series of technical questions about how they deploy their models. How do you deploy? Is it monolithic or micro services …or maybe Excel or something else? Do you use lambdas or something like docker? What kind of data store? How do you do your reports? How are you cleaning your data? Etc. Your questions educate the interviewer about how much you know about building things that solve business problems. And the more you know about their model will educate YOU about what you need to polish up on if you don’t get that job. Eventually you will. 
+
+It’s probably true of most jobs - that the AI/machine learning is a tool in the toolbox to get the job done, but not the whole job. Companies want the whole package if they can.
+
+Don’t get discouraged! You can do this. Good luck!
+- Honestly, that's not the worst deployment scheme I've ever heard of. Actually, for some use cases, I can definitely see that it has some advantages.
+
+I think what you need to do is be prepared to talk about what trade-offs your company's current approach is, why those decisions do or don't work well, and what things you might do differently. It should be understood by most people that someone with < 2 years of experience isn't necessarily in a position to radically change their company's practices.
+
+Similarly, you should be able to tie the physics simulations you're doing to what the business needs are and hopefully how that connects to the ML stuff you did do (assuming there is an actual connection). In most MLE jobs, you're going to be doing stuff other than training and deploying models, so you should be able to talk about why those things are important and how they enable either the ML directly or the same business goals as the ML.
+- I have experience in Docker and FastAPI through personal projects and plenty of Pandas experience through my work, but in my most recent interviews, there was a much stronger emphasis on work experience rather than personal projects. Should I be trying to show a breadth of knowledge in data engineering through my portfolio, or focus on developing a stronger grasp on a few of these skills?

@@ -1,0 +1,23 @@
+URL: https://www.linkedin.com/posts/lloyd-watts-5523374_ai-llm-activity-7322329140110467072-pMUV
+Date: 2025-09-24
+Author: Unknown
+
+I've been working on the Trillion-Dollar LLM Hallucination Problem for about a year and a half. I've noticed that the Big Tech companies (OpenAI, Google, Anthropic, Meta, Apple) have not solved the problem; in fact, they are recently reporting that the hallucination problem is getting worse as they try to advance into reasoning and planning, and both OpenAI and Anthropic are saying that they need to do further research in this area.
+
+There are many vocal critics of LLMs (Gary Marcus, Yann LeCun, Dr. Jeffrey Funk, Denis O., Richard Self.) The common refrain is that present-day LLMs are a dead end on the path to human-like intelligence, and that some kind of new architecture is needed. I agree with that. 
+
+I have a dozen friends on LinkedIn who have alternative architectures that could be candidates. (Kyrtin Atreides, Vincent Granville, John Ball, Srini Pagidyala, Peter Voss, Walter C., Luciano Zorzin, Hristo Georgiev, etc.), and I am following them and cheering for them to succeed. And of course there is Yann LeCun's JEPA architecture and Fei-Fei Li's World Model, and whatever mysterious ideas are being developed by Ilya Sutskever and Mira Murati at their new Billion-Dollar startups.
+
+For me, the Trillion-Dollar Question is: Can we find a new architecture, that can build on the remarkable successes of LLMs, while overcoming their serious problems?
+
+I have found it productive to focus on the Hallucination Problem. LLMs hallucinate because they are sampled auto-regressive next-word predictors, trained on internet-scale text data. Once they are trained to predict next words very well, they do not use their training data at inference time. They are able to predict next words very well, to make syntactically correct language, but they do not explicitly remember any statements from their training data. They discard any memory of statements which could be considered true. They predict likely next words. They are not constrained to make true statements, and they have no way of reliably doing so.
+
+To remedy the problem, I have had to develop Hallucination Detector and Deep Attribution Networks, to allow an LLM to natively remember and refer to its training data. This is a separate, integrated subsystem that functions as a compressed memory of factual statements. And finally, an Executive Selector can override the LLM when it is veering into a hallucination, and substitute a key next word that is directly derived from the relevant true statements in the training data.
+
+The language part of the human brain (Broca's Area) is NOT the memory controller (Hippocampus), and it is not the Executive Selector (Frontal Networks). This new architecture uses an LLM for what it is good for: producing syntactically correct language. It augments the LLM with memory to get the facts right, and a Hallucination Detector and Executive Selector to satisfy the joint objectives of producing valid language and factual statements.
+
+
+话题标签
+#ai 
+话题标签
+#llm

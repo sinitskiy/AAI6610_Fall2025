@@ -1,0 +1,78 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1iid6zv/data_science_skills_help_me_fill_the_gaps/
+Title: Data Science Skills, Help Me Fill the Gaps!
+
+Content:
+I’m putting together a Data Science Knowledge Map to track key skills across different areas like Machine Learning, Deep Learning, Statistics, Cloud Computing, and Autonomy/RL. The goal is to make a structured roadmap for learning and improvement.
+
+You can check it out here: https://docs.google.com/spreadsheets/d/1laRz9aftuN-kTjUZNHBbr6-igrDCAP1wFQxdw6fX7vY/edit
+
+My goal is to make it general purpose so you can focus on skillset categories that are most useful to you. 
+
+Would love your feedback. Are there any skills or topics you think should be added? Also, if you have great resources for any of these areas, feel free to share!
+
+Comments:
+- * **Core Skills**: Consider adding Git/GitHub (for version control), SQL (for database queries), and Bash scripting (for automation).
+* **Machine Learning**: Add feature selection techniques (e.g., Recursive Feature Elimination, PCA), Model Interpretability (e.g., SHAP, LIME), and Hyperparameter Tuning (e.g., GridSearch, Bayesian Optimization).
+* **Deep Learning**: Expand with Transformers (BERT, GPT), Graph Neural Networks (GNNs), and Attention Mechanisms.
+* **Statistics**: Include Hypothesis Testing (t-test, chi-square), Bayesian Inference, and Resampling Methods (Bootstrapping).
+* **Cloud Computing**: Add Model Deployment tools (e.g., TensorFlow Serving, FastAPI, MLflow) and Streaming Data Processing (Kafka, Spark Streaming).
+* **MLOps**: Consider adding Experiment Tracking (e.g., Weights & Biases, MLflow), Model Monitoring, and Explainability.
+* **Autonomy/RL**: Expand with Multi-Agent Reinforcement Learning and Simulation Environments (Gym, CARLA).
+* **Big Data**: Add Stream Processing (Flink, Spark Streaming) and Data Warehousing (BigQuery, Snowflake).
+
+I also see a gap in PySpark-related skills. Its applications span cloud computing, big data, and machine learning, though that breadth might be overly specific.
+
+Now as structural Improvements, I would suggest:
+
+* **Resources**: Add curated learning paths, like online courses, books, and research papers.
+* **Subcategories**: Some areas, like Deep Learning, could be further split into NLP, Computer Vision, and Generative AI.
+- You left off being able to read your bosses mind
+- check out [https://roadmap.sh/ai-data-scientist](https://roadmap.sh/ai-data-scientist)
+
+You can build your own custom ones there too.
+- Cloud computing and HPC are missing I think.
+- Seems like math-stats-linear algebra, aka the foundation of all machine learning, have left the chat. This is only a technologies checklist?
+- Dimensionality reduction, Time series forecasting , Gradient Descent, Convex Optimization, LR schedulers, Weights initialization techniques, Semantic segmentation, diffusion,  Catboost,  dask, spark
+
+
+I've also made one such compilation, let's collaborate on this
+- Data Science : Data Collection, Data Cleaning, Feature Engineering, EDA, Machine Learning, Deep Learning, NLP, Computer Vision,  OpenCV, Tensorflow, Pytorch, Scikit-learn
+
+Gen AI : Foundational Models, AI Agents, RAG, Vector Database,  Prompt Engineering, Chatbots, AI Assistant, Langchain, Hugging Face
+
+Dev : Python, FastAPI, Flask, DBMS, MySQL, Git, Docker
+
+Good foundation on all this. And then the domain you are interested in, you need to have specialized knowledge on that. Ex for NLP you need to go more in-depth. 
+
+  
+Note: the dev skills are not "strictly" necessary but it will help you in Job Market
+- As someone who's used R way more years than Python, I'm a little bit hurt. Maybe SQL should be a core skill as well, at least?
+- Would also consider on each sheet, writing how important the skills are by-career. For example, Cloud stuff is probably less important for a data scientist but more important for a data engineer. If you want to put this sheet to use, that would be helpful so people can see what might be important to learn for their profession
+- Pca is not a feature selection per se (depending on the usage, usually it is a dimension reduction technique)
+- I would recommend Power BI over any other visualization software, particularly if you are dealing with more complicated data models. I can't begin to explain how easier my life is since swapping from Tableau. 
+
+You are also going to need to be very comfortable using SQL, a crucial skill for anyone working with data. 
+
+I'd also recommend becoming familiar with different data modeling concepts and when is best to apply them etc..
+- People will tell you you need several technologies, pythin, sql, bla bla bla, when all you need is KNIME and tell your boss youre going to rip his ass off if he not allow you to use this.
+- Hi op, will you keep updating this with suggestions from the comments? I really liked the list curated so far. Will be following it.
+- I am not sure but this looks fine for me
+- Are there any resources which talk about what model to chose in what scenaios? Things like what loss function to chose and when, what activation function to use and when?
+- Thank you for this. Nowadays, there is TOO MUCH information and, thus, to carve out an organized framework from such a load of ideas is very important.
+
+Also, I would love it if you guys checked out my latest full-scale project, done independently and to showcase my skills to prospective beginner-level Data Scientist employers:
+
+[https://medium.com/@alijrizvi/innovating-the-social-sciences-with-cutting-edge-data-science-6091350c5a81](https://medium.com/@alijrizvi/innovating-the-social-sciences-with-cutting-edge-data-science-6091350c5a81)
+
+[https://www.linkedin.com/pulse/innovating-social-sciences-cutting-edge-data-science-ali-rizvi-re2zc?trackingId=IQmB3njGTO67nGEp2AJ0XA%3D%3D&lipi=urn%3Ali%3Apage%3Ad\_flagship3\_detail\_base%3B9ZpcSJsrQG2I%2FzPbp9ubnA%3D%3D](https://www.linkedin.com/pulse/innovating-social-sciences-cutting-edge-data-science-ali-rizvi-re2zc?trackingId=IQmB3njGTO67nGEp2AJ0XA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B9ZpcSJsrQG2I%2FzPbp9ubnA%3D%3D)
+
+It was an incredible experience taking on this massive and incomparably rewarding [project](https://www.linkedin.com/pulse/innovating-social-sciences-cutting-edge-data-science-ali-rizvi-re2zc?trackingId=IQmB3njGTO67nGEp2AJ0XA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B9ZpcSJsrQG2I%2FzPbp9ubnA%3D%3D): utilizing the latest data science methodologies and tools to dissect waves of demographic, economic, and broad-ranging social science data in search of meaningful information to apply in the future.
+
+Integrating Generative AI into my Data Science skill set is something I have placed a lot of emphasis on, going into the future, and I am glad I got the chance to do so and display my work, here.
+
+Feel free to share your thoughts and feedback!
+- Having deep knowledge in all of these is a bit delusional IMO
+- Solid comment, one minor thing though: PCA isn't a feature selection technique
+- I appreciate the depth!
+- What about Time Series Analysis and Models?

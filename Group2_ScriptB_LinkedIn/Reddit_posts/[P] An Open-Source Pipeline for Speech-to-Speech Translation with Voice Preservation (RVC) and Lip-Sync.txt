@@ -1,0 +1,38 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n9wnel/p_an_opensource_pipeline_for_speechtospeech/
+Title: [P] An Open-Source Pipeline for Speech-to-Speech Translation with Voice Preservation (RVC) and Lip-Sync
+
+Content:
+Hello [r/MachineLearning](https://www.reddit.com/r/MachineLearning/),
+
+I'm a final-year undergrad exploring multimodal systems, and I wanted to share a project I've built and open-sourced. It’s an end-to-end pipeline designed to tackle video dubbing for low-resource languages, using Telugu as the initial target. The system translates speech from an English video while preserving the original speaker's vocal identity and syncing their lips to the new audio.
+
+* **GitHub Repo:** [\[GitHub\]](https://github.com/M-SRIKAR-VARDHAN/speech-to-speech-with-lipsync)
+* **Full Technical Write-up:** [\[writeup\]](https://medium.com/@srikarvardhan2005/speech-to-speech-translation-with-lip-sync-425d8bb74530)
+* **Demo Video:** [\[Demo\]](https://drive.google.com/drive/folders/1l6jZEDdmUzr9VhfYkvoVdaXJSSipN-nm?usp=sharing)
+
+The core technical challenge was achieving voice preservation without access to large, speaker-specific datasets typically required for high-fidelity voice cloning. After a dead-end attempting a direct S2S architecture inspired by Translatotron, I found that using Retrieval-based Voice Conversion (RVC) as a post-processing step on a generic TTS output was a surprisingly practical and data-efficient solution.
+
+The final pipeline is structured as follows:
+
+1. **ASR:** Whisper for robust transcription.
+2. **NMT:** Meta's NLLB for English-to-Telugu translation.
+3. **TTS:** Meta's MMS model to synthesize the base Telugu audio.
+4. **Voice Conversion:** A trained RVC model converts the timbre of the synthetic speech to match the original speaker.
+5. **Lip Sync:** Wav2Lip aligns the video frames to the new audio.
+
+My main takeaway is that RVC seems to function as a very effective "style transfer" layer for voice, making it a viable tool for projects where full voice cloning is computationally or data-prohibitive.
+
+I'm sharing this to start a discussion and get feedback from the community on this approach. I'm particularly curious about two points:
+
+1. Has anyone else experimented with using RVC in a more formal pipeline, and what were the qualitative limitations you encountered?
+2. Are there newer or more robust alternatives to Wav2Lip for lip-syncing that maintain good performance without requiring massive computational resources?
+
+Any thoughts on the architecture or suggestions for improvement would be highly appreciated. Thank you for your time.
+
+Comments:
+- This is a great example of creatively combining existing tools to solve a complex problem. The use of RVC as a style transfer layer is a really clever, practical approach. Great work.
+- Error generating reply.
+- Thanks man
+- What , I am not able to understand your question
+- u/Helpful_ruben Error generating reply.

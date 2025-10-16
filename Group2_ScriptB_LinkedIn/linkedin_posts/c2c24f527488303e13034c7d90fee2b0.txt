@@ -1,0 +1,62 @@
+URL: https://www.linkedin.com/posts/keith-mcnulty_datascience-analytics-peopleanalytics-activity-7196132180526284801-bbWU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Keith McNulty的动态
+Keith McNulty 
+Keith McNulty是领英影响力人物
+
+Mathematician, Statistician and Psychometrician | Leader in Analytics, Organizational Sciences and Technology | Author and Teacher | Evangelist for Mathematical Methods
+
+1 年  已编辑
+
+I regularly get people telling me that it's better to use linear probability models than logistic models when dealing with binary outcomes, because they are easier to understand/explain.  Here's a key reason why I don't like this point of view.  I've modeled the probability that salespeople will get promoted based on their sales and their customer satisfaction ratings, using both a linear probability and a logistic model, and then asked them both to predict what will happen to two salespeople - one low performer with very poor stats and one high performer with great stats.
+
+The linear model massively overestimates the likelihood of promotion for the low performer, and gives the high performer a probability of promotion of 236%!!!  This won't happen in logistic models.
+
+#datascience #analytics #peopleanalytics #rstats #python #data #statistics
+
+191
+22 条评论
+赞
+评论
+分享
+Rob King
+
+Analytics and Data Strategy professional
+
+1 年
+
+A logistic model is a linear model though.... i make the comment you mentioned when comparing linear to black box but I generally mean glm vs black box.
+
+赞
+回复
+2 次回应
+Jonathan Sims
+
+AI/ML Leader & Innovator
+
+1 年
+
+Not to mention the relationship between a 1 unit change in the independent variables is not linear to the predicted probability. We would intuitively expect the marginal effect of each variable to decrease as the predicted probability gets closer to 0 or 1. In other words a 1 unit increase on a performance review should have a larger impact on the person with 50% probability of promotion versus the person who already has a 98% or 2% probability of promotion.
+
+赞
+回复
+4 次回应
+Don 春沈 Li 李
+
+Founder | Creator of "LayerP" (guardrail) | AI Engineer
+
+1 年
+
+How big is the training data

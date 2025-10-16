@@ -1,0 +1,62 @@
+URL: https://www.linkedin.com/posts/paulperera_understanding-uncertainty-quantification-activity-7195727293384675329-5UFn
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Paul Perera的动态
+Paul Perera
+
+Co-Founder and Director at HyFlux, and myMaskFit | MBA | BEng | 2024 Uplink World Economic Forum Top Innovator
+
+1 年
+
+Why is Uncertainty Quantification (#UQ) Important?
+
+Uncertainty Quantification helps us gain insights into the unpredictable elements within our data and models, leading to better decision-making in product design and process improvement. It also enables more accurate predictions by considering the uncertainties that affect our current systems.
+
+Two Classifications of Uncertainty:
+
+1.	Aleatoric Uncertainty: Originates from inherent randomness in systems, like measurement errors or natural variations. This type of uncertainty is unpredictable.
+
+2.	Epistemic Uncertainty: Stems from limited knowledge or data about a system. Unlike aleatoric uncertainty, it can be reduced by gathering more data, enhancing models, or improving system understanding.
+
+Primary Sources of Uncertainty:
+
+1️⃣ Measurement Errors: Can be random or systematic.
+2️⃣ Modeling Limitations/Model Misspecification: Simplifications or inaccuracies in models.
+3️⃣ Data Scarcity or Incompleteness: When data is limited or missing.
+4️⃣ Parameter Uncertainty: Uncertainty in model parameterization.
+5️⃣ Natural Variability: Inherent variability in physical processes.
+6️⃣ Computational Errors: Errors due to numerical computation limitations.
+
+Conclusion:
+
+Understanding and managing uncertainty through UQ techniques enhances the reliability of models and decision-making processes. Platforms like #twinLab, developed by digiLab, offer advanced UQ methods, making sophisticated uncertainty management accessible to engineers, scientists, and data professionals.
+
+#AI #Uncertainty
+
+https://lnkd.in/gnpVSQX9
+
+Understanding Uncertainty Quantification: The Different Types
+digilab.co.uk
+22
+2 条评论
+赞
+评论
+分享
+Tim Dodwell
+
+Founder & CEO at digiLab | Prof. in ML
+
+1 年
+
+It was great to meet today! Pleased some of the digiLab passion for uncertainty qu

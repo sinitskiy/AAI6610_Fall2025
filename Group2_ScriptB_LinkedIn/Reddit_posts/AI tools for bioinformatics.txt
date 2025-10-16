@@ -1,0 +1,47 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1n6v7du/ai_tools_for_bioinformatics/
+Title: AI tools for bioinformatics
+
+Content:
+Hello! I know that AI in bioinformatics is a bit of a controversial topic, but I’m currently in a class that has us working on a semester long machine learning project. I wanted to learn more about bioinformatics, and I was wondering if there were any problems or concerns that current researchers in bioinformatics had that could be a potential direction I could take my project in. 
+
+Comments:
+- There is a pretty big difference between "AI" as in, LLM slop generation, and ML (machine learning). The latter is perfectly fine. I've published a paper using CNNs to classify RNA barcodes in nanopore sequencing signal data. There are plenty of machine learning and deep learning model type work around and while researchers must take great care in the creation and use of them (you still need statistics and to prove it does what you say/think it does), they are a solid part of bioinformatics.
+
+"AI" on the other hand is not trusted, and because of the pretty thin layers of data for them to train on, they generally spit out hilariously wrong information about anything that isn't cookie cutter RNAseq analysis (and even then it's pretty gnarly).
+- Surprisingly, there are a lot of small biotechs out there doing machine learning as well, mostly using random forests for "interpretability." Other than that, in deep learning, the use of LLMs in software engineering once faced backlash. But when prominent figures like Andrej Karpathy adopted and coined the term "vibe coding," suddenly everyone tore down their masks of so-called "rigor."
+- Companies are willing to pay you $300k/yr if you're able to successfully solve problems in bioinformatics using AI.
+- Utility of/extent to which pLM embeddings can be used to predict 'downstream' properties. I think its getting 'solved' now with a few papers figuring out what is captured in the embedding representations , but still a current topic imo
+
+Edit: can also look into attention maps(generate from the forward pass of your seq of interest) and their utility. in general dissecting pre-trained prot seq transformer models seems fun.
+- [https://xkcd.com/1831/](https://xkcd.com/1831/)
+- I'm not sure what you mean by "AI in bioinformatics is a bit of a controversial topic", but it is widely used in current research.
+
+For example lots of prominent bioinformatics labs in Munich, like the Theis Lab, the Rost Lab and the Gagneur Lab work with Deep Learning approaches on a daily basis.
+Notably, LLMs have also started to get established in the field in the last few years (DNA language models, protein language models, etc.)
+- I don't think "AI" is necessarily controversial - as other's have noted we are seeing plenty of autoencoders/LLMs being used with some decent success depending on the task (scGPT, C2S, geneformer, etc.). A lot of these foundation models focus primarily on cell profiling (cell labeling, classification, integrating various -omic datasets). These are genuinely wonderful tools and I don't think anyone should be so quick to dismiss them. Don't get me wrong, it's very easy to just misuse them and blindly trust bullshit results they spit out but there are responsible/cautious ways to make use of them. 
+
+For any project I would start really simple - machine learning includes basic differential expression analysis, regression modeling, deep learning (e.g. CNNs). Start with these before jumping into LLMs. Regressions/neural network tools are still very powerful and frankly more than enough depending on your research question. Want to start learning about bioinformatics? Write a simple regression model to do some differential expression analysis in some single cell RNA-seq datasets! Tools like scikit-learn or seurat make this very easy to do, and you can get a better idea of what these bioinformatic datasets look like.
+
+What kind of research questions were you interested in looking into? What kind of machine-learning are you learning about in class that you want to apply to bioinformatic datasets?
+- Due to limited computational resources at my lab, I’ve switched to using local LLMs for coding and processing Nanopore data instead of relying on Galaxy or research manpower. I’ve also been using DeepVariant for variant calling on my multi-loci sequencing data. To make this easier, I’ve created custom Python and R pipelines for data preprocessing and using LLMs.
+You could see the significance of  ML inference in non referenced based SNP caller with DeepVariant level tensor capabilities.
+Check this out preprint: https://elifesciences.org/reviewed-preprints/98300v1
+- Tbh, I feel that the word AI is being widely misused... suddenly every model out there is an AI.
+- seems a bit biased to regard your own technique as proper usage of ML in bioinformatics and disregard others.
+- It’s an odd statement that all “ML” is trustable but all “AI” is not.
+- Which ones? My husband can do anything in bioinformatics but can't find a job in this market??
+- Would you mind sharing some of the papers figuring out what embeddings truly capture? Seems useful.
+- Deep variant and others in that paper are not LLMs
+- Check out epi2me for pipelines that do all this from ONT.
+- Yep. I agree with that. Hell I was just on a paper that used AI in the title, but it's just some regular ML stuff.
+- It was an example and it's not disregarding anything. 
+
+I've had to reject papers that used LLMs to write software to plot data, which was crazy wrong, and the authors admitted they didn't know the language it was plotted in so couldn't validate it. I'm sure there are plenty of people using LLMs as an aide to do bioinformatics in an ethical way and with integrity. There's methods that use them as tools that work quite well like TCR-BERT. But exporting your thinking to an LLM chat system and trusting it wholesale is batshit. If this is somehow a hot take, then the field is in deep shit and you all need to take a good look at yourselves.
+- I didn't specifically say all. Do I need to pull out the journal language  or is this a forum of opinion?
+- Yeah, that's what I thought about myself too, until I interviewed for a Computational Biology Researcher role at Nvidia and got my ass handed to me. These are some of the most competitive jobs on the planet, and to land one, you need to be able to build and train a deep model for protein-ligand binding in 15 minutes, given only the equation that you must model, no sample data.
+- there is this preprint which i though was interesting: [https://www.biorxiv.org/content/10.1101/2024.02.05.578959v2](https://www.biorxiv.org/content/10.1101/2024.02.05.578959v2)
+
+also this paper is good (general on what is 'learned'): [https://www.pnas.org/doi/epub/10.1073/pnas.2406285121](https://www.pnas.org/doi/epub/10.1073/pnas.2406285121)
+
+but I am also not an expert on ml part in general (have no math/data science background), trying to follow it a bit, so take it with a grain of salt :)

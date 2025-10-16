@@ -1,0 +1,51 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/7zbd66/opportunities_in_techsoftware_development_i_want/
+Title: Opportunities in Tech/Software Development - I want to help you find your way if you're interested!
+
+Content:
+I know this sub is about biology, but I've seen a rising trend in concerns about futures in careers and wanted to offer some advice and an invitation to join Software Development.  I'm surrounded by Bio Degree holders who apply their Biology background in unique and powerful ways.  
+
+I worked in analytics for a while, and the smartest guy on the team - he did Forecasting and Machine Learning (a flavor of Artificial Intelligence) and he was a Chemist all his life.  Two of my coworkers are database and information architects and they are both wrapping up bio degrees.  
+
+My son was born wearing tech to monitor his heart that one of the local Doctor's developed because he couldn't find anything that did what he wanted it to do.  
+
+We need GP's, RN's, PT's, Chemists, and so many other professionals in their fields, but you have nothing to lose if you add a technical background or even go into software development. 
+
+In response to a post I said something along the lines of this, and figured you all should hear it.
+
+Software Development uses the same parts of my brain that I used for Bio, it was just a different subject matter.  If you had any interest in Chemistry, Genetics, General Bio, Kinesthetics/PT, or any science at all, you already have the mental tools to approach programming without much adjustment. 
+ 
+Computer Science is just as much about computers as Biology is about Microscopes.  It's much deeper than code and keyboards.  It's about defining a problem or a possible solution, breaking it down into smaller parts, and figuring out the best way to solve them.  Doesn't that sound like Bio jobs?  See.  Not so scary.
+
+I didn't get a degree in Computer Science.  I was actually torn between Business and Exercise Phys, but went the Business degree route with plans to do Bio Postgrad. After determining that I wanted to work in Computer Science, it took a few months before my first job, but within a little more than a year, I had a 70k job.  With your specialization, it is possible to make 6 figures relatively quickly.  Not that this is a 'get-rich-quick' scheme, but you need to know going into it that there are high payouts for hard work. I had to work extremely hard, yes, but it is possible. The industry only cares if you work hard and can actually do things.  
+
+I actually mentor people (totally free) who are trying to get tech jobs and would love to help you guys out.  I am something they call a Full-Stack Developer, which means I do all types of programming rather than just one - so I know the pitfalls and opportunities for each flavor.  
+
+If you're interested, let me know!  I have helped dozens start or continue careers in tech through mentorship and helping them find their favorite spot in software development.
+
+The company I work for (south of Salt Lake City Utah) has done pathology forecasting models to Ambulance routr planning/triage in hospice scenarios, to writing software to flag unfounded claims in holistic websites for MLM's using artificial intelligence!  I'm currently wrapping up a project that surveys and classifies medical schools by their faculty's background and training.  We could use your expertise!
+
+This isn't a job offer, but rather a demonstration to let you know that there are jobs waiting for you that need your depth and insight into biology.
+
+Respond or DM me if you would like help getting started!!
+
+Comments:
+- I'm a Biology major who's been working computer support for the last few years. Mostly because that's all I have experience in, and while I'd like to work with computers, I would like to do something a bit deeper and more relevant to biology. I also have an engineering degree but I jumped ship on that years ago, machines and hardware don't interest me. I'm open for suggestions, I just don't know what I really want to do.
+- Hey - I would be really interested to talk to you, could I PM you my email address and we take it from there?
+- Hey there, thanks for the motivational words! I'm a biology major from Germany, I will finish my Bachelor of Science in autumn this year and it will be in developmental biology. I always had a fondness for computers and information/data in general and in the last weeks/months i took some courses that made me become really interested in bioinformatics. I could very well imagine a job that has to do with data science and coding but I'd like to keep as closely to the lab bench as possible with this (I think). I will most likely do my Master after my Bachelor before I'll look for a job unless there are other opportunities to get started quicker. Any advice?
+- How good (Knowledgeable) would a person holding a bio degree need to be in Python/R to be considered for a development job in the tech industry?
+
+How would you know when you're ready/employable?
+- For sure!  Yeah, I did some hardware classes, and it was my need to pass the class that got me through some of them.  Software, for some reason, took a hold of me and hasn't let go.  
+
+One of the best ways to get started is to play with the tools that the Bio industry is using.  Python and R are some of the biggest platforms where the work happens.  I'm not affiliated with this site, but https://www.datacamp.com/ is where I got my start in R and Python.  Give that a shot and let me know what you think!  If it gets your attention, I would start toying around with it and see if you can create something from scratch.  Doing so will force you to have to ask and find answers for questions that pop up.
+- Of course!
+- I've programmed some before (I have a Comp. Sci minor so C++, used R a bit for a Stats class, and built a PHP-MySQL database for work). I have no doubt I could learn Python and more R, but my problem is motivation and direction. Do you just program and hope that you'll figure out what career you'd like from that? Or do you just learn it to gain knowledge/experience?
+- PHP/MySQL was my first stack, too!  And motivation and direction independently are the hardest part.  
+
+One thing I've been telling people is to have a project.  My first project was a Pokemon Game Clone where I tried rebuilding parts of the game.  I did it in PHP/MySQL, and then Python, Node.JS, Android and then C#.  Each time, I got better at programming in general, but each language has it's own feel.  But the drive to build my game was easier to maintain because I was able to make progress, show others my work, and the Pokemon Mechanics were heavily documented, so I was able to practice reading English and 'translate' it to code.
+
+So, I guess the next question is what kind of development are you interested in?  Different languages do a better job at certain tasks.  Python happens to do almost all of them, and so it's a good start, but not an end-all language.
+
+And let's get you started on a project!
+- I'm not really an enterprising type, so I find it hard to figure out. I tried to join a computer science research lab group at my school, but they kinda expected me to come up with a project of my own; I honestly was lost for ideas and ended up going nowhere with it because they never asked me to join any of their current projects. I could start with a game like you did, or maybe an assistance tool. I do use spreadsheets extensively for everyday stuff, I like its interface (though I realize databases do some things a lot better, hence PHP-Mysql). I even used to create "Quizzers" for my friends and me to study for biology exams.

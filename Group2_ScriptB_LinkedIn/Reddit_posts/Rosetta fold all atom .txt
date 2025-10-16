@@ -1,0 +1,8 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1dquewy/rosetta_fold_all_atom/
+Title: Rosetta fold all atom 
+
+Content:
+Hi guys, I couldn't set up RFAA on my computer, that is why, I am using tamarindbio website to test some structures on RFAA. However, it limits the length of the amino acids up to 700, so I cannot put there most of the structures that I want. I want to see if RFAA predict 8FLW ( antibody-virus envelope complex) right because alphafold3 cannot do it. Please someone help me on this, I would really appreciate it if someone does it and send me the result. Thank you in advance! Note: I am just doing it to learn!!!
+
+Comments:

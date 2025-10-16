@@ -1,0 +1,121 @@
+URL: https://www.linkedin.com/posts/davidstutz92_last-week-i-finally-defended-my-phd-at-the-activity-6958726308247805952-e3_J
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+David Stutz的动态
+David Stutz
+
+Research scientist at Google DeepMind
+
+3 年
+
+Last week I finally defended my PhD at the Max Planck Institute for Informatics and Universität des Saarlandes / Saarland Informatics Campus. Got a great hat with lots of adversarial example and DeepMind references from my colleagues.
+
+Stay tuned for the whole thesis covering my work on adversarial robustness, uncertainty estimation and OOD detection, conformal prediction and bit error robustness for deep learning accelerators. Get a slightly outdated, short overview here: https://lnkd.in/eQDg7CMY
+
+Special thanks to my advisors Bernt Schiele and Matthias Hein (University of Tuebingen) as well as my committee Pawan Kumar, Mario Fritz, Eddy Ilg and Jan Eric Lenssen.
+
+It was also a pleasure to work with great collaborators: Nandhini Chandramoorthy (IBM Research), Ali Taylan Cemgil, Arnaud Doucet, Krishnamurthy Dvijotham (all DeepMind or Google AI).
+
+272
+16 条评论
+赞
+评论
+分享
+Amanda Bower
+
+Data & machine learning scientist with a passion for responsible ML
+
+3 年
+
+This looks way more fun than our graduations! Congrats!
+
+赞
+回复
+Linnea Herman
+
+Software Engineer @ Bloomberg | Prev. @ Google, Amazon
+
+3 年
+
+Congrats on this great achievement! 😁
+Maybe we'll see each other at 6PS sometime 😄
+
+赞
+回复
+Martin Randler
+
+Co-Founder I Transform technology for the better!
+
+3 年
+
+Herzlichen Glückwunsch!
+
+赞
+回复
+John Stephenson
+
+Director at Logikk US | Deep Learning | Computer Vision
+
+3 年
+
+Congratulations David! 🍾🎓
+
+赞
+回复
+David Stutz
+
+Research scientist at Google DeepMind
+
+3 年
+
+Thanks everyone!
+
+赞
+回复
+Benedict Hadjistojanov
+
+Partner - Kastell Personalberatung
+
+3 年
+
+Stark! Alles Gute!
+
+赞
+回复
+1 次回应
+Vedika Agarwal
+
+Product @ Google | AI-researcher turned engineer turned PM | ex-Grab, TomTom
+
+3 年
+
+Congratulations David Stutz !! Onwards and Upwards :)
+
+赞
+回复
+1 次回应
+Dr. Julian Steil
+
+Projektmanager bei Robert Bosch GmbH
+
+3 年
+
+Congratulations!
+
+赞
+回复
+1 次回应
+Stephanie Manuela Winkler
+
+Program Manager @ De

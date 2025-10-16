@@ -1,0 +1,16 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/192lxi0/examples_of_active_learning_semisupervised/
+Title: Examples of Active Learning (semi-supervised learning) in the industry being useful?
+
+Content:
+[Active Learning](https://dagshub.com/blog/active-learning-your-way-to-better-models/) is an area of machine learning, semi-supervised learning in which the goal is to build a system which aims to train a model on the “most important instances” from the training set where data labeling is deemed an expensive task, or getting more data is costly. Active Learning methods aim to maximize the information gain from the dataset by selecting as few instances as problem. There are many query strategies for selecting the instances, for example, active learning can try areas in the data where it struggles to learn etc.
+
+My question is whether active learning is really useful that much in most industries. This stuff has been used in manufacturing where it is costly to sample, but not sure how it’s used in places where that’s not the case. Any of you who have examples of how you’ve used active learning?
+
+Comments:
+- fundamentally the whole idea is
+
+1. find what the model is bad at
+2. curate data to improve that area
+
+concept is fine, most methods are useless, particularly with 0 human supervision because models are generally really bad at knowing whether an example is good or not

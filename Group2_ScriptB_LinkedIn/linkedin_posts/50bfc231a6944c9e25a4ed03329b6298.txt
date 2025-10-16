@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/sarai-pahla_machinelearning-ai-cybersecurity-activity-7356989257908948994-QZQc
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sarai Pahla的动态
+Sarai Pahla
+
+Medical Doctor-Linguist AI/ML Regulator
+
+2 个月  已编辑
+
+So the FDA LLM hallucinated its balls off and Sam Altman doesn't use ChatGPT. Oh and Tea spilled everywhere. This week in #machinelearning #AI #cybersecurity #regulatoryaffairs 😁
+
+A couple of things (TRIGGER WARNING: MULTIPLE INSULTING AND SENSITIVE TOPICS IN HERE):
+
+1. Obviously the FDA LLM hallucinated - that's what probabilistic models do! 🤨 That's not even the issue - the issue is the swathes of manufacturer data that were forcefed into that immature technology, not to mention the amount of human effort required to clean up this mess in an already understaffed series of agencies will be bad for PATIENTS, people! 😤 I would expect a project of this size to have taken into account at least the rudimentary project management steps that we all learned as Accenture consultants - not live testing on PROD because "Elon sliced us up and said AI is the answer". My issue is not with the models, my issue is with the absolutely unjustified time-wasting at a time when it could not be more critical to get these types of things right. DID YOU EVEN DO BASIC RISK MANAGEMENT?! 😡😤🤬
+
+2. All the smartphone developers kept their kids away from smartphones, and most of the GenAI tech founders who actually want children who will be able to take over from them will OBVIOUSLY not use or let their children use AI. I know this might be a surprise to some of you, but keeping a lot of people stupid and unmotivated to learn is a GREAT way to ensure that you and yours will have every seat at the table. Sprinkle in some social justice issues like "Oh but he is a white and male" and now nobody feels there is any point to studying mathematics because the battle is already lost. This is legit the same stuff that The Offspring sang about in SMASH (greatest album of all time), but as Linkin Park so aptly stated: Nobody's Listening. Everyone is more interested in hedonistic overs

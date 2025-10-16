@@ -1,0 +1,31 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/10th8xn/bioinformatics_analyst_vs_developer_vs_engineer/
+Title: Bioinformatics Analyst vs Developer vs Engineer vs Software Engineer etc..
+
+Content:
+Hi, I am currently an undergraduate student majoring in Biotechnology. I am planning on getting my master's in Bioinformatics and hoping work in industry after. I am slightly confused about all of the different roles that fall under the umbrella of Bioinformatics. Are the roles relatively similar to each other, or should I aim for a specific role based on my interests? I am interested in doing more CS oriented work, things like software development, machine learning/AI, etc., and less interested in doing analysis work for a wet lab for example. Also, do starting salaries differ significantly depending on what type of role I am in?
+
+Comments:
+- There are different roles, but they might also be fluid. Meaning people with the same title might be doing different work or one person might do any of those roles over the course of their career or in a week.  
+
+
+Often the more your skills overlap with software engineering, the closer one's salary is to a software engineer's.  
+
+
+I have found that there has been enough wiggle room in all of my bioinformatics teams such that people can focus on what they like doing most, but also everyone has to chip in and do stuff they don't like as much from time to time.  
+
+
+I personally started thinking I wanted my work to be as close to the lab/biology as possible and now I am more of a back end developer and don't use my biology background 90% of the time.
+- Don't worry about the exact role titles. Sometimes these things are defined by HR who have no idea of what the position even entails. For example, even if the title was "correct" at some point, the actual position may have evolved over time, but now the person is leaving and the  replacement needs to have the same title to avoid more paperwork. The job description would be a much better indicator of what the job actually entails, but even that could be incorrect. Until you interview and talk to your hiring manager and future colleagues, you really don't know.
+- But would you recommend then for someone starting out to focus more so on acquiring cs skills to diversify themselves more/ have more options ?
+- Because there are so many ways to succeed in bioinformatics, you should focus on what interests you at the moment and then take opportunities as they come up.  
+
+
+I focused more on biology classes in college and then grew to love computer science as I started working. So when heavier computer science projects came up at work I volunteered for them and at one of my jobs asked to switch from the bioinformatics team to the software engineering team because I liked their projects more.  
+
+
+As long as you are always looking to learn new things, take opportunities as they come, and talk to your manager (or the person you are interviewing with) about the type of work you best thrive at, you will do great!  
+
+
+Quick aside: I have looked the course work, interviewed, and worked with people with bioinformatics masters. Most bioinformatics masters programs lean much heavier on the biology side and focus on running pre-made tools instead of designing your own. If you do want to focus on computer science, I caution you to choose your program carefully. Even otherwise reputable schools might leave their bioinformatics graduates ill-prepared to write software.
+- Thank you for this! ^*🙏🏻

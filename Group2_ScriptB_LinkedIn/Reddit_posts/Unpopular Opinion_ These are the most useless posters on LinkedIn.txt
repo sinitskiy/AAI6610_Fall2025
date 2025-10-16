@@ -1,0 +1,59 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1lmv5uf/unpopular_opinion_these_are_the_most_useless/
+Title: Unpopular Opinion: These are the most useless posters on LinkedIn
+
+Content:
+LinkedIn influencers love to treat the two roles as different species. In most enterprises, especially in mid to small orgs, these roles are largely overlapping. 
+
+Comments:
+- Is there even such thing as a “useful linkedin post”? Most of what I’ve seen is very surface-level and often inaccurate information.
+- "LinkedIn Influencer" is the most unemployed-sounding title I've ever heard.
+- Not so unpopular at least here
+- Tools: 
+
+- Excel, SQL, Python/R, Notebooks, Dashboards.
+
+Skills:
+
+- Data cleanup
+- Statistical analysis, maybe even some modeling
+- More fucking data cleanup
+- Presenting to various non-tech teams
+- Dealing with a series of pointless "ideas" from marketing (while keeping them on your side)
+- Deploy analysis / models, effectively deal with software engineers on this
+- Oh yeah do some ML too, on occasion
+
+Because at the end of the day nobody basically gives a f if you use Python/R/Excel if you can deliver big impact, steer company strategy and explain why they should be doing what _you_ think they should.
+- Data scientists, data engineers, machine learning engineers, analytics engineers, data science engineer, analytics analyst, etc
+
+Both companies and data people care wayyyy too much about titles and creating artificial distinctions for nothing (mostly ego). 
+
+The truth is most business functions outside data, nobody cares - data is seen mostly as a support function.
+- All posters beside job offerings are useless.
+- I don't know OP,  this post makes me think that 9 out of 10 times somebody says their looking for a data scientist they really want the data analyst.
+- I agree it's dumb but 'most useless on linkedin' has some stiff competition
+- Popular opinion: LinkedIn is a flaming heap of garbage
+- I’ve worked in 4 separate industry leading firms, including a FAANG now. I’m telling you from experience these posters really are useless. You just need the technical skills plus program management skills and you’ll go far
+- I've seen far more useless things on linkedin
+- >LinkedIn
+
+is
+
+>useless
+
+_Yep_
+- If you don't need glasses, your career ends at data analyst. If you want to be a data scientist, you're gonna have to get glasses cuz now you're nerdier and smarter.
+
+
+It's really just a post where data scientists and wannabe data scientists try and shit on other data-related careers lol.
+- Y'all pay attention to posts on LinkedIn?
+- Not unpopular at all.
+- This is useless mainly because its literally more than a decade out of date. This would've been somewhat useful...in 2010-2012
+- Just another shitty part of LinkedIn. I don't know what else to say other than I just scoff and move on.
+- Exactly the thing I want to say. Everyday I see a new guy who has just graduated and still with his looking for work badge posting something similar. Maybe they drew a new (but still crappy) radar/comparison chart. Explaining to me what are the differences between all the roles.
+- If you ask anyone outside the field theyll tell you its the same job. Plus if you do one you can also do the other one with time and research. You can learn to use R and do modeling the same way you can learn to use SQL and dashboards. 
+
+In my case i do a little bit of both.
+- Data Scientists for non-tech mid / small tier companies is overkill, so as entry job you will definitely find a lot of "data analysts" which basically requires to do some pretty excel tables within some department, f.e. logistics / supply chain / finances.
+
+Source: I just scrolled down 200 jobs on local job portal named data analyst

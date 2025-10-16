@@ -1,0 +1,30 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19eys1q/how_long_to_stay_in_unproductive_environment/
+Title: How long to stay in unproductive environment?
+
+Content:
+Looking for some career advice as to whether it’s best to stick it out or look for a different opportunity.
+
+I have four years of experience working as a data scientist and several years as a data analyst. I have worked at three different companies (large [10000+] and small [<1000]) and I left my last job because I did not find the industry exciting, but the company overall had a strong data science department. The company also did not pay very well compared to other places.
+
+I have been with my current company for over a year now. I get paid a lot more and enjoy the projects, but our company/team struggles to get models into production for various reasons. Additionally, leadership has a poor understanding of data science. We perform strongly as a business and there are a ton of opportunities to implement machine learning, experimentation, and advanced analytics but our leadership struggles to pave the way. A lot of it is because we never get buy-in from stakeholders. They just want to do the same thing they have been doing for the last 10 years. We also don't have the tech stack or resources to implement data science solutions.
+
+For example, my manager’s idea of machine learning is manually running a notebook every morning and uploading the scores. Our cloud team will not give us access to ML cloud services such as SageMaker or Vertex AI, and our single MLOps engineer is not very experienced so it has been taking them forever to get stuff into production (over a year for a single model [WTF]). The job is not stressful at all, but it is extremely disappointing to not see any of our work have a positive impact like I did at my last job.
+
+Anyway, is it worth sticking out if I don't dislike my manager or projects? Can things turn around at a place like this? I was thinking of bailing, but it is a safe place to be given the current job market.
+
+I interviewed at a startup that I would love to work at and made it to the last round, but the CEO notified me that they decided not to hire right now because they are too busy to onboard, and they will reach out later in Q1. My idea is to wait and see if they extend the offer early this year and if they don't start looking for other jobs. Thoughts?
+
+Comments:
+- [deleted]
+- I mean, it doesn't hurt to go look at what is available and see if you can find a job that you feel better about.
+
+Generally speaking, a job being easy ans comfortable is not a good enough reason to stay in it - being bored/unfilfilled is a perfectly fine reason to go look for a new job.
+
+Having said that, timing things is also important. It may very well be worth waiting a bit until the market strengthens a bit, because the last thing you want to do is leave for an exciting job and get laid off after 3 months.
+- Things aren’t going to turn around unless someone turns them around. If you want that someone to be you, and feel you can make a change then I would say go for it! Or if you can find some leader who can vouch for you and help to change things, that could work too.
+
+But otherwise, I would look for other options. It’s rare that a department or a company in general does a 180 naturally.
+
+I’m in a similar position at a small company (<250) where I am stuck maintaining an R Shiny app when I know the company could be doing so much more with BI, DS and ML. My situation is unique in that it’s only my department that has a limited vision for DS. I’ve done more meaningful side projects for other departments so I know the hunger is there and I’m taking on the challenge of trying to make a more enterprise data science team and strategy. Personally, I think I can make a difference and some leadership is on board so I’m staying for the time being. But it is definitely not easy when my department and manager don’t have a vision for real DS.
+- Can confirm. My previous place, the CEO was open to doing things, the CIO was a buffoon under whom nothing would ever get done except occasional new projects forced thru that broke everything. I got the hell out.

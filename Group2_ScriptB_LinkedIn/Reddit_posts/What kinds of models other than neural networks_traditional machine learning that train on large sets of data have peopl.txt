@@ -1,0 +1,36 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cfbde2/what_kinds_of_models_other_than_neural/
+Title: What kinds of models other than neural networks/traditional machine learning that train on large sets of data have people developed to try to mimic true intelligence?
+
+Content:
+I know generative AI is limited in capability, and is being attributed more use/potential than it really deserves.  Heck, even neural networks have been indicated to not truly approximate what the human brain is doing.  I am just wondering if anyone can point me to papers that discuss true AI development, and what direction those kinds of studies are going, what paths have been explored along that line.
+
+Comments:
+- I've been following the Cognitive Architectures approach, which tries to mimic human cognition using symbolic representations and reasoning. It's a more nuanced approach than traditional ML. There's some great work being done in this area, I'd be happy to share some papers and resources if you're interested!
+- Reinforcement learning - if you believe human intelligence is strongly guided by reward signals, which a decision neuroscience would argue "yes".
+
+Here is an example of temporal difference learning: [https://deepmind.google/discover/blog/dopamine-and-temporal-difference-learning-a-fruitful-relationship-between-neuroscience-and-ai/](https://deepmind.google/discover/blog/dopamine-and-temporal-difference-learning-a-fruitful-relationship-between-neuroscience-and-ai/)
+
+In summary, temporal difference algos are used in RL. Neuroscientists found that dopamine neurons in certain areas of the brain fire in a way that mimics the error rate of the algorithm used in RL tasks, good indication that AI research is converging with how the brain works. And more interesting - we are learning *more* about the brain through AI, rather than the other way around. We know very little about the brain.
+- bells domineering payment school quarrelsome engine arrest wise subtract violet
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- Embodied cognition, predictive coding, active inference, and the free energy principle are all sort of related concepts (predictive coding being the odd man out).
+- Be sure to include Jeff Hawkins and his work at Numenta in your search.
+- Expert systems, causal graphs, ontologies. There was another weird one I encountered years ago someone told me their friend was working in. A weird derivation from that game of life simulator where it would use time in the weight matrix and do some super weird stuff to keep those weights active. Basically trying too hard to mimic bioelectric networks.
+- There's definitely ongoing research into Artificial General Intelligence (AGI), which aims for true human-like intelligence. Beyond neural networks, some explore symbolic AI, which uses logic and reasoning similar to human thought processes. Additionally, there's work on artificial consciousness, focusing on machines exhibiting subjective experiences. It's a complex field with many open questions. While there aren't definitive answers yet, some researchers delve into biologically inspired models or explore incorporating developmental psychology principles. Finding papers on "true AI" might be tricky because the definition itself is debated. However, researching AGI, symbolic AI, or [machine learning development services](https://www.clickittech.com/machine-learning-development-services/) specialising in these areas might be a good starting point!
+- Very interested; are there any good meta analyses or similar for this approach?  Thanks in advance!
+- Please edit your post with helpful sources
+- I'm interested too, hope you don't mind me messaging you!
+- Would love to know more about these! Thanks man!
+- I'd like to subscribe to your newsletter
+- unique detail deserted physical exultant offbeat trees wild stocking offer
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- Yes plez share resources - sounds dope
+- +1 to resources
+- I'am interested too!
+- Interesting! I’ll take a look.  Thanks!
+- Is predictive coding just more neural networks?
+- Will do.
+- No

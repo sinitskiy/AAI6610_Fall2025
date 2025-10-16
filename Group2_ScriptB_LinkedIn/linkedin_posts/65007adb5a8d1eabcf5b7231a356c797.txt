@@ -1,0 +1,31 @@
+URL: https://www.linkedin.com/posts/panov_amazonlayoffs-activity-7025036391906455553-GIKw
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maxim Panov的动态
+
+Maxim Panov转发了
+
+Evgenii Tsymbalov
+
+Applied Scientist @ Amazon AGI, PhD
+
+2 年  已编辑
+
+Ladies and gentlemen, please welcome yet another #amazonlayoffs guy: me.
+
+I would not spend your focus time whining around layoff experience itself but still want to dedicate some air time to the great Alexa Acoustic Modeling team in Aachen. While I did not have much time to properly contribute to the research here (yet my model still hit the prod, yay), I was definitely astonished by the high standards and dedication involved: the amount of effort and patience invested in me over these few months made me feel special, connected, and important. Regardless of the circumstances, I am really grateful for the crew and experience.
+
+The good news is: I am open to work! I have 7 years of IT work experience, which spawns across Data Analysis, Engineering, and Machine Learning positions. The last few years were mostly dedicated to the Applied Scientist-ish roles, which revolve around complex deep learning-powered systems and pipelines: face recognition, satellite-based weather forecasting, and automated speech recognition. I have a PhD in Machine Learning and a solid umbrella-like academic record yet I still can code: I’m not only able to advance the current models and pipelines to hit your accuracy/expansion/satisfaction goals but also have experience in making things work in a production and recurring environment (this includes team communication and management). My technical stack includes, but is not limited to Python, Tensorflow/Pytorch, AWS-like services, Airflow-like pipelines, Docker, SQL, etc; I am able to orient in the recent works in Uncertainty Estimation, Computer Vision, NLP, and deep learning in general.
+
+I am open to the Applied Scientist/Researcher/ML Engineer positions with a special bias towards Germany/EU-based opportunities (including remote) since I have a working permit (which is about to expire in a few months).

@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/hanie-shojaei_phdcolloquium-dgkgeoinfo-lidar-activity-7376173288428851202-3_ge
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Hanieh Shojaei
+
+Research Assistant and PhD Candidate at Leibniz University Hannover
+
+2 周  已编辑
+
+Last week, I had the opportunity to present my research on uncertainty estimation in LiDAR scene perception at the PhD Colloquium DGK-Geoinfo 2025 in Bonn.
+
+I shared how we use Gaussian Mixture Models (GMMs) to model epistemic uncertainty and detect out-of-distribution samples. In addition, I presented our approach to quantifying aleatoric uncertainty when classifying LiDAR point clouds—gaining valuable feedback for future improvements.
+
+🎥 The short video below showcases a Bird’s Eye View (BEV) of the LiDAR scene interpretation:
+The left side shows the model's predictions, where different objects are visualized in distinct colors—for example, the street is highlighted in pink.
+The right side displays our uncertainty map, where reddish areas indicate high uncertainty.
+
+It was truly inspiring to connect with researchers at the intersection of AI, ML, and geoscience, learn from the keynotes of Prof.Jan Dirk Wegner and Dr.Jens Behley, and enjoy many insightful discussions.
+
+A big thank you to Jan-Henrik Haunert for hosting the colloquium in Bonn, and to Prof.Monika Sester and Prof. Claus Brenner for their continuous support of my research at Institut für Kartographie und Geoinformatik (IKG).
+
+#PhDColloquium #DGKGeoinfo #LiDAR #UncertaintyEstimation #MachineLearning #AI #Geoscience #epistemic #aleartoric
+
+146
+1 条评论
+赞
+评论
+分享
+Katayoon Yazdan Panah
+
+Ph.D. in Management - Computer Expert
+
+1 周
+
+⚘️⚘️⚘️⚘️
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+最相关的动态
+Jacob Hirschberg-Gautschi
+
+Senior Research Assistent at Chair of Engineering Geology, ETH Zurich
+
+1 周
+
+Excited to share our latest publication in IEEE Transactions on Geoscience and Remote Sensing!
+ 
+Deep-Learning-Based Object Detection and Tracking of Debris Flows in 3-D Through LiDAR-Camera Fusion
+ 
+Collecting high-resolution data of moving debris flows is essential for a better understanding of the physic

@@ -1,0 +1,37 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n4w3i9/r_beating_baselines_with_geometry_introducing_gmc/
+Title: [R] Beating Baselines with Geometry: Introducing GMC, a Fast and Well-Calibrated Classifier
+
+Content:
+A Technical Writer's ambition to prove.
+
+Being a Technical Writer, I yearned to learn Machine learning and prove myself. This is a try towards achieving that.  I've developed a new classifier, the **Geometric Mixture Classifier (GMC)**, and I'm seeking feedback from the community before submitting it to arXiv and conferences.
+
+**The Problem:** Linear models (LR, SVM) are interpretable but fail on multi-modal data. Non-linear models (RBF-SVM, MLPs) are effective but often operate as black boxes. We wanted a model that is **both interpretable and expressive**.
+
+**The Idea:** GMC represents each class as a **mixture of hyperplanes** (a "soft union of half-spaces"). It uses a soft-OR (log-sum-exp) within a class and softmax across classes. It's like a Mixture of Experts but without a separate gating network.
+
+* **Interpretable:** You can see which "local expert" (hyperplane) was responsible for a prediction.
+* **Performant:** Competitive with RBF-SVM, RF, and MLPs on standard benchmarks.
+* **Efficient:** CPU-friendly, µs-scale inference (faster than RBF-SVM, on par with MLP).
+* **Calibrated:** Produces reliable probabilities.
+
+[Algorithm analogy with similar baselines](https://preview.redd.it/64vyu4u87dmf1.png?width=1385&format=png&auto=webp&s=08b2014b60836edd0b28adbac68eb388a4a091fa)
+
+* **Accuracy:** Outperforms linear models, competitive with strong non-linear baselines.
+* **Speed:** \~2-40µs inference time per example (see table below).
+* **Calibration:** Low ECE, further improved with temperature scaling.
+
+We would be incredibly grateful for any feedback on:
+
+* Is the **core idea** and its **differentiation from MoE/Maxout** clear?
+* Are the **experiments** and **comparisons** fair and convincing?
+* Is there any **related work** we might have overlooked?
+* Any general feedback on **clarity** or **presentation**?
+
+You can find a detailed copy of the algorithm [here](https://drive.google.com/file/d/1vRTAucCpVqImJnojVwzAUHQ2SmbAvdsi/view?usp=sharing).
+
+Please feel free to test the algorithm: [Geometric Mixture Classifie](https://github.com/Abitsfhuusrtyt/-Geometric-Mixture-Classifier-GMC---A-Discriminative-Per-Class-Mixture-of-Hyperplanes)r
+
+Comments:
+- I didn't understand it.  Maybe a simple step by step description of the algorithm on one of the 2D dataset (e.g. moons) might help. In figure 1 of the paper there-s a nice "S"-shaped curve separating the two classes, but I don't get it where are the three hyperplanes (which I assume in 2D are straight lines) and how they generate that smooth curve boundary

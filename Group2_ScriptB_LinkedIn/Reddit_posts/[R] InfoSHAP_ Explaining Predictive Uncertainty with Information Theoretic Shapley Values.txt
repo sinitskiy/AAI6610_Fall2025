@@ -1,0 +1,22 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/18ud5zn/r_infoshap_explaining_predictive_uncertainty_with/
+Title: [R] InfoSHAP: Explaining Predictive Uncertainty with Information Theoretic Shapley Values
+
+Content:
+**Paper title**: Explaining Predictive Uncertainty with Information Theoretic Shapley Values
+
+**Presented at**: NeurIPS 2023
+
+**Link to paper**: https://arxiv.org/abs/2306.05724
+
+**Link to code**: https://github.com/facebookresearch/infoshap
+
+**tl;dr**: This paper extends SHAP in a way that it can be used to explain the uncertainty of a model prediction rather than the model prediction itself. This could have various applications, for example:
+
+  - in Active Learning applications where sampling decisions are made based on predictive uncertainty (as is the case in modern approaches like BatchBALD) to answer questions like "Why did we decide to annotate this particular instance?". 
+  - in Reinforcement Learning applications where decisions on what to explore are curiosity-driven and based on uncertainty of reward. In this setting it can be used to explain "Why did our agent explore in the way that it did?"
+  - Several other applications with regards to explanations of feature selection, active feature value acquisition, covariate shift detection, and of out-of-distribution detection are highlighted in the paper
+
+**Abstract of the paper**: Researchers in explainable artificial intelligence have developed numerous methods for helping users understand the predictions of complex supervised learning models. By contrast, explaining the uncertainty of model outputs has received relatively little attention. We adapt the popular Shapley value framework to explain various types of predictive uncertainty, quantifying each feature’s contribution to the conditional entropy of individual model outputs. We consider games with modified characteristic functions and find deep connections between the resulting Shapley values and fundamental quantities from information theory and conditional independence testing. We outline inference procedures for finite sample error rate control with provable guarantees, and implement an efficient algorithm that performs well in a range of experiments on real and simulated data. Our method has applications to covariate shift detection, active learning, feature selection, and active feature-value acquisition.
+
+Comments:

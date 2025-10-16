@@ -1,0 +1,17 @@
+URL: https://www.linkedin.com/posts/heikohotz_finally-a-tool-to-manage-llm-hallucinations-activity-7371928773363122176-m0zl
+Date: 2025-09-24
+Author: Unknown
+
+Finally a tool to manage LLM hallucinations!
+
+A single accuracy score for your LLM is b*shit (pardon my French 🙃)
+
+"Our model is 90% accurate." What does that even mean? Does it mean it's 90% right on easy questions and 0% right on hard ones? Or that it gets 90% of every answer partially right? A single number hides the truth.
+
+To build trustworthy AI, we need to understand the full spectrum of its behavior, not just one vanity metric. We need to know the trade-offs.
+
+My open-source evaluator replaces the single, misleading accuracy score with a Risk-Coverage Curve. This is the honest report card for your LLM.
+
+The curve instantly answers the critical business questions that a single number can't: Which is the best tradeoff for my particular use case?
+
+Stop making critical product decisions based on a single, incomplete number. Start making informed, data-driven trade-offs.

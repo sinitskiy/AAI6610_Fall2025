@@ -1,0 +1,52 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1lpnkj0/beta_release_minds_ai_filter_for_eeg/
+Title: Beta release: Minds AI Filter for EEG — Physics-informed preprocessing for real-time BCI (+17% gain on noisy data from commercial headsets, 0.2s latency)
+
+Content:
+We at MindsApplied specialize in the development of machine learning models for the enhancement of EEG signal quality and emotional state classification. We're excited to share our latest model—the Minds AI Filter—and would love your feedback.
+
+* [👉 Download the Python package here](https://drive.google.com/drive/folders/1_4Q9voe5j88G_EMF8YanoeEPVoUt_D2B?usp=drive_link)
+* 🔑Use key: ''REDDIT-KEY-VRG44S' to initialize
+* 📄 Includes setup instructions
+
+The Minds AI Filter is a physics-informed, real-time EEG preprocessing tool that relies on sensor fusion for low-latency noise and artifact removal. It's built to improve signal quality before feature extraction or classification, especially for online systems. To dive (very briefly) into the details, it works in part by **reducing high-frequency noise (\~40 Hz) and sharpening low-frequency activity (\~3–7 Hz)**.
+
+We tested it alongside standard bandpass filtering, using both:
+
+* Commercial EEG hardware (OpenBCI Mark IV, BrainBit Dragon)
+* The public DEAP dataset, a 32-participant benchmark for emotional state classification
+
+Here are our experimental results:
+
+* Commercial Devices (OpenBCI Mark IV, BrainBit Dragon)
+   * \+15% average improvement in balanced accuracy using only 12 trials of 60 seconds per subject per device
+   * Improvement attributed to higher baseline noise in these systems
+* DEAP Dataset
+   * \+6% average improvement across 32 subjects and 32 channels
+   * Maximum individual gain: +35%
+   * Average gain in classification accuracy was 17% for cases where the filter led to improvement.
+   * No decline in accuracy for any participant
+* Performance
+   * \~0.2 seconds to filter 60 seconds of data
+
+Note: Comparisons were made between bandpass-only and bandpass + Minds AI Filter. Filtering occurred before bandpass.
+
+Methodology:
+
+To generate these experimental results, we used 2-fold stratified cross-validation grid search to tune the filter's key hyperparameter (λ). Classification relied on balanced on balanced accuracy using logistic regression on features derived from wavelet coefficients.
+
+Why we're posting: This filter is still in beta and we'd love feedback —especially if you try it on your own datasets or devices. The current goal is to support rapid, adaptive, and physics-informed filtering for real-time systems and multi-sensor neurotech platforms.
+
+If you find it useful or want future updates (e.g., universal DLL, long-term/offline licenses), you can subscribe here:
+
+* 🔗 [https://www.minds-applied.com/contact](https://www.minds-applied.com/contact)
+
+https://preview.redd.it/o3xqckeiaeaf1.png?width=594&format=png&auto=webp&s=0fb1860d8af85fa516cb705c096427a32977a522
+
+https://preview.redd.it/95lbzd8jaeaf1.png?width=589&format=png&auto=webp&s=39984d0e8f75f27ab0a71e7e5ca09bba25f6ffb4
+
+https://preview.redd.it/x9iyc4kjaeaf1.png?width=1372&format=png&auto=webp&s=ef70703c892727318688b7472778cb5658a899ee
+
+
+
+Comments:

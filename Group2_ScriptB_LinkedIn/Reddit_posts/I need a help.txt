@@ -1,0 +1,17 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1n3bitt/i_need_a_help/
+Title: I need a help
+
+Content:
+Hello everybody, I'm new here at this sub, I'm Junior student at computer science and I have been accepted in a scholarship for machine learning. I have a graduation project to graduate, our project is about Real-Time Object Detection for Autonomous Vehicles, our group are from 4 and we have 3 months to finish it.
+
+so what we need to study in CV to finish the project I know it's a complicated track and unfortunately we don't have time we need to start from now
+
+Note: me and my friends are new in ai we just started machine learning for 2 months
+
+Comments:
+- Would you mind sharing more details, please?
+
+Would you be allowed to use a neural network for object detection (MachineLearning, DeepLearning, NOT ComputerVision), or it HAS to be ComputerVision and ComputerVision only?
+- Dude, I would just use YOLO (yeah, I know), I have a post about it where I used YOLO to beat fruit ninja, it's a good post/video to have a good idea on how to do it, but if you have more specific questions let me know
+- Fork this: [https://github.com/pixeltable/pixeltable/blob/main/docs/notebooks/use-cases/object-detection-in-videos.ipynb](https://github.com/pixeltable/pixeltable/blob/main/docs/notebooks/use-cases/object-detection-in-videos.ipynb) that should help you get started and understand video/frame inferences/bounding boxes etc..

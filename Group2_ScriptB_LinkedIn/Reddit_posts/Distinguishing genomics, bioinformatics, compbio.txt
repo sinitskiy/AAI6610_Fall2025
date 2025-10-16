@@ -1,0 +1,63 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1dbr8i0/distinguishing_genomics_bioinformatics_compbio/
+Title: Distinguishing genomics, bioinformatics, compbio
+
+Content:
+I just finished undergrad with 2 years of wet lab experience and 1 year of dry lab experience. I have experience in Python, R, UNIX, in addition to a lot of bioinformatics packages and NGS. I do not have experience in preparing RNA or ATAC samples for the sequencer, only processing the data with pipeline and then other scripts. I have some machine learning experience.
+
+I’m applying to jobs as RAs in labs doing genomics or titles such as Bioinformatics Assistant if I fit the listing. I intend on doing masters/PhD in the future, but I wanted to get a better idea of what I’m applying to. Genomics jobs often imply a lot more wet-lab than I would like to do, bioinformatics labs sometimes are too exclusively dry-lab such that I don’t have enough experience to apply, and comp bio jobs are out of the question because I don’t have enough coding experience.
+
+What I’m probably missing is the coursework and mentoring that grad school would provide. If anyone’s curious, my main goal in working in bioinformatics is to get involved with some kind of biogenome project and work on assembling genomes. Is that a particular kind of bioinformatics? Could anyone shed light on steps I could take to get involved with that career path? I’ve applied to jobs at labs doing that, hoping I can get in so that I have access to connections within that field. The biggest thing I feel I’m missing as a biologist going in that direction is a probability course.
+
+Sorry if this isn’t straightforward, I can answer any questions and I’ll take any advice
+
+
+Comments:
+- Genomics generally includes both dry-lab and wet-lab.
+
+Other people might start to distinguish bioinformatics and comp bio from one another by saying one builds methods/algo and the other uses them. But the reality in the field in this day and age is that these two terms are generally used **interchangeably**.
+- To me bioinformatics is the processing of omics data and computational biology is the broader sub field within which bioinformatics falls which also includes things like disease modelling etc etc
+- Genomics: Study of genetics at a genome scale, large data level.
+
+Computational Biology: Use of computers in Biology beyond the usual excel/powerpoint
+
+Bioinformatics: The study and analysis of large scale usually sequence/string based biological data. Ie biology data science
+
+In practice most nonspecialists use computational bio/bioinformatics interchangeably.
+
+In jobs Genomics alone typically implies a bench position although it can be indicative that some bioinformatics work is involved.
+
+Although bioinformatics is technically a subset of computational bio, there seem to be a lot more 'bioinformatics' jobs than 'comp bio' jobs. So a job listed as 'comp' bio ironically often indicates a more niche field than the usual sequence analysis/processing of bioinformatics with more specialized/niche skills like biomolecular modeling and sometimes more coding/tool development.
+- Genomics: the study of the genome. Involves wet lab and dry lab.
+
+Bioinformatics: the application of statistical analysis (using computational analysis) to biological data. Think RNA-seq or genome assembly. This is a sub-group of computational biology.
+
+Computational Biology: the application of computational analysis to biological data. Includes bioinformatics HOWEVER it also encompasses things, such as machine learning, protein structural analysis, etc
+
+\*the difference is that bioinformatics END GOAL is the conclusion drawn from a discrete statistical test/probability analysis. Computational biology END GOAL is a larger conclusion enabled by statistics: for example, protein folding does involve probability/stats in terms of the computer figuring out the likelihood of protein shape, but the end goal is training a model to independently learn to predict structure, not give p values for X shape vs Y shape.
+- I'd definitely apply to a computational lab, ideally collaboration with one or more experimental labs. I wouldn't worry too much about what people call things (e.g. mathematical / statistical analysis in one decade can be called machine learning in another decade and apparently "AI" in yet another).
+
+Rather, try to find a lab that does something you'll find interesting and motivating but is computational. It sounds to me like you already have some basic experience. Can you get in any grad programs in bioinformatics? Taking math/stats courses there sounds appropriate to me.
+- "Genomics" is a broad field of biological study, and the boundaries are as far apart as GWAS (where it intersects "genetics") and proteomics (where it intersects "biochemistry"); some of it applies bioinformatics and some doesn't. Likewise some bioinformatics deals with genomics and some doesn't.
+
+"Bioinformatics" vs. "computational biology" is a finer distinction but I still see a clear bright line in academic usage. "Bioinformatics" tends to involve processing and analyzing real-world data, such as from microarrays and sequencers - bioinformaticians are the people who set up pipelines. "Computational biology" tends to be higher-level math/physics stuff that may never touch real data at all, like modeling protein structures, modeling gene flow through populations, modeling metabolic activities in a cell - computational biologists are the people who set up models.
+
+From your background you are probably not going into "computational biology", but the people who do comp bio are so far removed from experimentalists that the latter may use the term more loosely and actually mean what we normally call "bioinformatics". What you're thinking about sounds a lot more like "bioinformatics". But don't feel weird being split between wet and dry lab; having experience in both, rather than specializing in one or the other, is actually a rare trait that's in very high demand.
+- I think you're going to get a lot of personal definitions or "head canons" in your response. I'm sure there are others that are more engaged in the semantics of it all, but, in practice, according to most funding agencies and job descriptions, these terms overlap too much to really be separate fields. Math bio often gets grouped in as well, but I'm certain the only ones who use that term are in academia.
+- I rarely see the two terms used interchangeably in a given setting: they are generally distinct. However, there’s no consensus about which one is which: bioinformatics can refer to the biological analysis, and computational biology to the methods, algorithms and implementation; and vice-versa (and in my experience there’s no clear preference: the split is around 50/50). So the distinction is completely useless in practice.
+
+What’s more, at my current place of work, “bioinformatics” is used to refer to any kind of omics analysis (as opposed to low-dimensional mathematical/disease modelling). The reasons are historical and have no good justification beyond that, but here we are.
+- biorxiv has distinct categories for genomics and bioinformatics and can browse to get a feel for the distinction
+
+[https://www.biorxiv.org/collection/genomics](https://www.biorxiv.org/collection/genomics)
+
+[https://www.biorxiv.org/collection/bioinformatics](https://www.biorxiv.org/collection/bioinformatics)
+- From \~1,500 votes, and the thread beneath is interesting 
+
+[https://x.com/nomad421/status/1542295693028737025?s=61&t=7rxYbshLJ4qzRx1Nk9EDOw](https://x.com/nomad421/status/1542295693028737025?s=61&t=7rxYbshLJ4qzRx1Nk9EDOw)
+
+  
+I think it’s almost impossible to use them distinctly in a universally understood way, and so I use them in the same way but always try to provide further details about what I am actually describing.
+- > What’s more, at my current place of work, “bioinformatics” is used to refer to any kind of omics analysis (as opposed to low-dimensional mathematical/disease modelling). The reasons are historical and have no good justification beyond that, but here we are.
+
+Similarly, I've found clinicians and wet lab scientists tend to know the word "bioinformatics," and maybe not the term "computational biology," which leads to "bioinformatics" essentially meaning "doing the analysis from the (e.g.) sequencing data I just got," where "analysis" could be anything from straightforward differential expression to making some sort of ML model to predict treatment response to creating a new method to integrate 3 different data types. I'd say it's generally fine and doesn't affect anything, except for when they think I'm *also* a statistician, which... I most certainly am not.

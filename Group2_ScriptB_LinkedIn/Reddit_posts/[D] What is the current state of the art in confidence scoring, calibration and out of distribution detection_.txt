@@ -1,0 +1,106 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/907p7a/d_what_is_the_current_state_of_the_art_in/
+Title: [D] What is the current state of the art in confidence scoring, calibration and out of distribution detection?
+
+Content:
+The work that I have been able to find (excluding Bayesian by backdrop, bayesian NNs and the dropout-MC methods...)
+
+* Chen et al. - Confidence Scoring using white box Meta-models with Linear classifier Probes, (2018)
+   * Generates a model that uses probes of the individual layers of the NN classifier to create a confidence score for the NN's output.
+* Lee et. al. - Training Confidence-calibrated classifiers for detecting out-of-distribution samples (2018)
+   * Uses a GAN to generate "borderline ood" samples and then trains the classifier to be uncertain for those samples.
+* DeVries et al. - Learning Confidence for Out-of-Distribution Detection in Neural Networks (2018)
+   * Sideloads a second output from the penultimate layer of the classifier that predicts a confidence score.  Trains it to be confident by interpolating the output of the network between the output of the softmax and the true value, scaled by the confidence score.  So a very confident score will be close to the output of the softmax, while an unconfident score will be close to the true value.
+* Mandelbaum et al. - Distance-based confidence score for neural network classifiers (2017)
+   * Essentially seems to simultaneously train a siamese network on the penultimate layer and the entropy on the softmax output in order to make distances on the penultimate layer to be meaningful.
+* Subramanya et al. - Confidence estimation in Deep Neural Networks via density modeling (2017)
+   * Finds P(y\_i|X) by assuming P(X|y\_i) = N(z|µ\_i, s\_i), where z is the output of the network, X is the training data, y is the true label, and µ and s are learned variables... though I'm not sure how they are learned...
+* Guo et al. - On Calibration of Modern Neural Networks (2017)
+   * Use temperature scaling to calibrate the confidence of the softmax outputs.
+* Liang et al. - Principled detection of Out-of-Distribution Examples in Neural Networks (2017) and Enhancing the reliability of Out-of-distribution image detection in neural networks (2017)
+   * ODIN (out of distribution detector), use temperature scaling and an inverse of adversarial training (scale the input \*towards\* a more confident result, rather than away) in order to improve separation between in distribution and out of distribution examples.
+* Lakshminarayanan et al. - Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles (2016)
+   * Ensemble a few different networks and use adversarial training to get a confidence score.
+* Hendrycks et al. - A Baseline for detecting misclassified and out of distribution examples in neural networks (2016)
+   * Mostly defined the terms and the metrics that other papers used.  Also defined an "abnormality model", which side loaded an auto-encoder off the penultimate layer, and then trained a model on the output of the softmax and the auto-encoder using an out of distribution dataset to get confidence scores.
+
+Is anyone aware of any more work in this area?  What about what seems to work best in practice?  Does anyone have any experience with these methods (what works, what doesn't work, etc).
+
+Comments:
+- Don't have anything new to add to your list. Just wanted to say props for doing your homework on the subject before asking the question.
+- [In this draft](https://drive.google.com/file/d/1jw36tIs37ZetAHk0-zzF9EHvYGsTUsnL/view?usp=sharing), we obtain state of the art to the best of my knowledge. In it we use a large, realistic database such as ImageNet-22K and train the network have low confidence on outliers supplied by the large database. A network exposed to so many outliers can more reliably detect outliers from new distributions. This could be thought loosely analogous to adversarial training, where networks are trained to cope with adversarial examples.
+
+\>  Is anyone aware of any more work in this area?
+
+Two works that spring to mind are \_Bayesian Hypernetworks\_ by Krueger et al., \_Confidence from Invariance to Image Transformations\_ by Bahat and Shakhnarovich, (updating comment) \_ A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks\_ by Lee et al., and \_Open Category Detection with PAC Guarantees\_ by Liu et al.
+
+\>  Does anyone have any experience with these methods
+
+It is difficult to replace and surpass the maximum softmax probability for ranking in- and out-of-distribution examples, so many works build on this detector. If authors allow themselves to tune hyperparameters for specific outlier distributions, as some recent works do, then it beating the maximum softmax probability is more attainable, but this is at the expense of external validity. Future work may include (1) applying this research to much larger images, segmentation, or video; (2) more reliably detecting anomalies with highly implausible local statistics (such as an input which is a pixelwise average of two images); or (3) refining the detectors to have a notion of "known unknowns" and "unknown unknowns."
+- I was fooled by the title into thinking this was more generic (I.e. not neural net centric).
+- Recent work at ICML: [Accurate Uncertainties for Deep Learning Using Calibrated Regression](http://proceedings.mlr.press/v80/kuleshov18a.html)
+- RemindMe! 2 days "Confidence estimation"
+- RemindMe! 2 days "Confidence estimation"
+- Thanks for the draft!  I'll have to look into this over the next day or so.
+
+> A network exposed to so many outliers can more reliably detect outliers from new distributions.
+
+While I agree in theory... I don't like the idea of explicitly training on outliers or out of distribution samples.  There are two problems with this that I have:
+
+* The space of out of distribution examples is far too large to even hope to span in any meaningful way.  In the image space for example, a cartoon of furries playing chess or even some abstract art is unlikely to be represented by any current dataset, and is likely to be different enough from any image *in* a current dataset that the network won't recognize it, but also won't know that it doesn't recognize it, and will likely try and classify it as something.  Lee's paper got around this by just generating from the boundary of "in distribution" -- which is a much more tractable.
+* Outside of the vision space, getting OOD datasets is hard, especially if you have to collect the data yourself, where "what you collect" is by definition *in* distribution, and "what you haven't seen yet" is the "out of distribution" data.  This makes me avoid methods that use OOD data in general.
+
+> Two works that spring to mind are _Bayesian Hypernetworks_ by Krueger et al. and _Confidence from Invariance to Image Transformations_ by Bahat and Shakhnarovich.
+
+Thanks, I just ran across the Bayesian Hypernetworks paper, but I hadn't seen the confidence from invariance paper.
+
+> If authors allow themselves to tune hyperparameters for specific outlier distributions, as some recent works do, then it beating the maximum softmax probability is more attainable, but this is at the expense of external validity.
+
+!  What recent works are tuning hyperparameters for specific ood datasets?  This is another reason I'm not a fan of training on ood samples.
+- /u/DanielHendrycks  
+What's your opinion on this paper?  
+"Reliable Uncertainty Estimates in Deep Neural Networks using Noise Contrastive Priors"  
+[https://drive.google.com/file/d/15vJI1DBPOEtwr4hCzy\_5DKlACsyiTdeJ](https://drive.google.com/file/d/15vJI1DBPOEtwr4hCzy_5DKlACsyiTdeJ/view)
+
+  
+Also, why do you think the Bayesian-inspired methods have struggled to replace and surpass your maximum softmax probability ranking?
+- Thanks!
+
+Is that a regression only work, or do they talk about classification as well?
+- I will be messaging you on [**2018-07-23 09:20:57 UTC**](http://www.wolframalpha.com/input/?i=2018-07-23 09:20:57 UTC To Local Time) to remind you of [**this link.**](https://www.reddit.com/r/MachineLearning/comments/907p7a/d_what_is_the_current_state_of_the_art_in/)
+
+[**CLICK THIS LINK**](http://np.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=[https://www.reddit.com/r/MachineLearning/comments/907p7a/d_what_is_the_current_state_of_the_art_in/]%0A%0ARemindMe!  2 days ) to send a PM to also be reminded and to reduce spam.
+
+^(Parent commenter can ) [^(delete this message to hide from others.)](http://np.reddit.com/message/compose/?to=RemindMeBot&subject=Delete Comment&message=Delete! e2rvjd4)
+
+_____
+
+|[^(FAQs)](http://np.reddit.com/r/RemindMeBot/comments/24duzp/remindmebot_info/)|[^(Custom)](http://np.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=[LINK INSIDE SQUARE BRACKETS else default to FAQs]%0A%0ANOTE: Don't forget to add the time options after the command.%0A%0ARemindMe!)|[^(Your Reminders)](http://np.reddit.com/message/compose/?to=RemindMeBot&subject=List Of Reminders&message=MyReminders!)|[^(Feedback)](http://np.reddit.com/message/compose/?to=RemindMeBotWrangler&subject=Feedback)|[^(Code)](https://github.com/SIlver--/remindmebot-reddit)|[^(Browser Extensions)](https://np.reddit.com/r/RemindMeBot/comments/4kldad/remindmebot_extensions/)
+|-|-|-|-|-|-|
+- \>  The space of out of distribution examples is far too large to even hope to span in any meaningful way.
+
+I had mixed feelings at first too, but then I saw that the outlier exposure helped the network generalize to new out distributions. In point of fact, we show that an SVHN classifier exposed only to natural images can better detect anomalies such as blobs, emojis, or street view letters.
+
+\>  getting OOD datasets is hard
+
+We also test with the 80 Million Tiny Images database which are images scraped from the web.
+
+\>  What recent works are tuning hyperparameters for specific ood datasets?
+
+See [Appendix H of this paper](https://arxiv.org/pdf/1706.02690.pdf) and [Appendix B of this paper](https://arxiv.org/pdf/1711.09325.pdf).
+- The paper looks competently executed, so I'll add it to my stack of papers to read!
+
+\>  why do you think the Bayesian-inspired methods have struggled to replace and surpass your maximum softmax probability ranking?
+
+I do not know of strong mathematical reasons, but when I've attempted to improve performance with MC Dropout a severe limitation was that many state of the art architectures such as ResNeXt do not use dropout.
+- >See Appendix H of this paper and Appendix B of this paper.
+
+Thanks, I missed those in my first read through.
+
+>I had mixed feelings at first too, but then I saw that the outlier exposure helped the network generalize to new out distributions. In point of fact, we show that an SVHN classifier exposed only to natural images can better detect anomalies such as blobs, emojis, or street view letters.
+
+This is interesting.  I wonder how the network is detecting those anomalies that it hasn't seen....
+
+> We also test with the 80 Million Tiny Images database which are images scraped from the web.
+
+Unfortunately, I can't do this kind of thing...

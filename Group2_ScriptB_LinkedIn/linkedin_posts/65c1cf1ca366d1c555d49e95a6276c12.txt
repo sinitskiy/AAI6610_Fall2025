@@ -1,0 +1,90 @@
+URL: https://www.linkedin.com/posts/owkin_our-latest-ml-research-paper-on-uncertainty-activity-7308418808547868672-9sg5
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+OWKIN的动态
+OWKIN
+
+57,260 位关注者
+
+6 个月
+
+🔬 Our latest ML research paper on Uncertainty Quantification (UQ) in machine learning has been accepted for presentation at AISTATS 2025.
+
+🤖 We developed a new uncertainty metric for binary classification and validated it along with an existing metric
+1️⃣ The first metric, UQ-AUC, identifies inputs with a higher misclassification probability
+2️⃣ The second, UQ-C-Index, detects cases where the model is strongly but incorrectly confident in its prediction
+⚙️ These metrics can be computed using standard class labels, making them practical to implement
+
+Why does this matter? As ML systems become more prevalent in healthcare applications, understanding when our models are uncertain is essential for safe deployment. However, uncertainty estimation is complex and difficult to validate. By providing theoretically grounded metrics to evaluate the utility of uncertainty estimator, our findings pave the way for broader adoption of UQ in deep learning applications.
+
+📑 Read the pre-print at: https://lnkd.in/eb5dVCB8
+
+65
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+57,260 位关注者
+
+查看档案  关注
+更多文章
+Owkinews: what happened in September?
+OWKIN  1 周
+Owkinews: what happened in August
+OWKIN  1 个月
+Owkinews: what happened in July?
+OWKIN  2 个月
+探索相关领域
+Latest Trends in Machine Learning
+How Machine Learning Impacts Healthcare
+Addressing Reliability Challenges in Medical AI
+How Quantization is Transforming Model Performance
+The Impact of Class Imbalance on Predictive Models
+Improving AI Diagnostic Accuracy
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

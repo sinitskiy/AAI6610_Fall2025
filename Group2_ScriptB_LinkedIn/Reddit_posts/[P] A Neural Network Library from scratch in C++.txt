@@ -1,0 +1,59 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lo7i8e/p_a_neural_network_library_from_scratch_in_c/
+Title: [P] A Neural Network Library from scratch in C++
+
+Content:
+Hey r/cpp and r/MachineLearning!
+
+You may have guessed from the title, but why make one when we have TensorFlow, PyTorch that provide the simplicity of Python and the speeds of C and C++ ?   
+I say well why not.   
+
+1. *The Learning* - With AI boom taking over and people going crazy on vibe coding, ML and DS jobs are focusing on how deeply people understand the basics and internal working of what they are making. So while many tutorials focusing on API's, MCP's and what not, here I am peeling the layers (literal layers of a neural network) and the process taught me more than any tutorial could.
+
+2. *The Fun* - I love C++! Building this from scratch (even with procrastination detours 😅) was really exciting. (Who doesn't love crying over why the whole model isn't working only to know you subtracted the losses instead of adding. And of course the feeling of betrayal when you ask chatGPT to add comments to the code due to your laziness and it changes the code smirking while you notice it too late and then have had to debug the whole library searching where it went wrong) 
+
+Also, it is never a bad idea (mostly) to know what happens behind the scenes of the code you are gonna write. And what better thing to understand the basics than implement them by yourself. (Though this may not be a good idea always considering my bad habit of delving too deep into small topics and going into a rabbit hole wholly different than what i was supposed to be doing).   
+
+### Current Features:
+* Dense layers + activations (ReLU, SELU, Sigmoid)
+* SGD optimizer with momentum/LR scheduling
+* CSV/binary dataset handling (though the binary loader may need some fixes)
+* Batch training 
+
+Where I got the idea ? Well I was supposed to start learning to code with PyTorch but then I thought how does this even work. I just looked at a small part of the documentation and thought let's try coding this and this led to me successfully spending about 2 weeks on this (with lots of procrastination in between). Will it be a good project ? I don't know. Did I enjoy it ? Damn well I did.   
+  
+Well it's still not complete and may have a few bugs and I plan to keep it aside for now and improve it bit by bit later on. But I thought sharing this may encourage me somewhat and get my lazy self to do some work without procrastinating. 
+
+You can check out the full source code and documentation on GitHub:
+https://github.com/CuriosityKilledTheCache/Deep-in-scratch_Maths_the_catch
+
+P.S : If you have any recommendations, do tell though it may be a passing reply comment for you, it may help me very much for correcting mistakes I may make again in the future.
+
+Comments:
+- I've written my own neural network library [tinytensor](https://github.com/tuero/tinytensor) in C++, feel free to check it out! Its a good learning experience to write things yourself, so good job on that. If you want to really scale things up, here are some of my suggestions on things to look out for:
+
+* Having each layer responsible for computing the gradient will become problematic when you want to add layers more complex then linear/dense. What I did (and what I would recommend if you want to continue working on this project) is to first design a tensor library with automatic gradient tracking. Then, writing the actual neural layer intrinsic abstraction overtop is trivial, and allows you to compose complex operations without having to worry about the gradient.
+* Having a tensor layer of indirection also allows you to 1) play around with different shape/views of the data, and 2) add additional backends down the road, if you want to learn cuda as an example
+* Taking a `const &&` as a param (in your layer methods) is incorrect. `std::move(const&&) -> const&&`, the overload rules are then `const &&` first then `const &` second. Since vector (and most objects) only have assignment/copy overloads for `const &` and `&&`, the copy constructor/assignment operator will be selected instead of your intention of moving. TLDR you shouldn't really use `const &&` except to delete (to prevent taking any rvalues) or if you have a specific use case.
+* If you are supporting iterators on your dataset loader, you should prefer to use range-based loops
+* If you want others to play around with your project, you should add CMake support such that your project builds a library object, which others can easily link to in their own CMake projects :)
+
+There are some other minor things, but its a good attempt at it! Again, I think you will hit a design wall if you want to continue with this, and it might be easier to take a step back and start working with some levels of indirection.
+- Are you accepting PRs or improvements? if yes would love to contribute
+- Thanks for such great insight and helpful response 🤠 
+
+- I also felt the need of a Tensor datatype or class while making and I am planning of making one before advancing to anything else.
+
+- The const&& is a new thing for me and I am glad I could know about it. Thank you very much for the detail.
+
+- I used the traditional for loop for the iterator as the iterator (it) is needed for returning the indices of the batch for getting labels for the batch which cannot be collected through the *it return by a range loop. I am currently confused whether I should leave it as it is or change the loader class to return both the data and it's indices without having the need to access the iterator.
+
+- I currently only have a Makefile. I will try to add the CMake soon.
+- Thank for your interest! I'd be happy to accept PR's and improvements. Feel free to take a look at any issues or suggest any changes you think could help the project.
+- I think you are hinting at this in your comment but I'll spell it out just in case. 
+
+The dereference operator on an iterator can return anything you want. For example. you can return a `std::tuple<Dataset, Indices>`. A range loop of `for (const auto &it : ...)` would have `it` as the tuple, and you can access each of the two items (dataset and indices). Because its a tuple (or pair if you use), it supports the destructuring syntax allowing you to do the following: `for (const auto &[batch, indices] : ...)`. Note that this is how the range-based loop on `std::unordered_map` works, the iterator returns a pair which you can then use the structure binding syntax to access the pair in a nice way.
+
+In terms of what is easier to use, I'll let you decide :)
+- Thanks for the clarification!
+I will see that my data loader class returns both indices and the dataset and then see how the range loop works.

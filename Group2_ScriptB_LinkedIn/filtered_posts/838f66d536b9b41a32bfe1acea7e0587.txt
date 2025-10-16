@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/vzavala_machinelearning-dynamics-datascience-activity-7350548255060946944-lCDu
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Victor M Zavala的动态
+Victor M Zavala
+
+Baldovin-DaPra Professor at University of Wisconsin-Madison
+
+2 个月  已编辑
+
+Really excited to share our new preprint reporting a physics-constrained neural ODE framework for learning dynamics of microbial communities from experimental data. 
+
+Our model, which we call Neural Species Mediator (NSM), embeds a neural network model within a physics structure/skeleton given by a consumer resource model (CRM). We also implement a variational inference framework to quantify uncertainty of model predictions. Extensive validations were conducted with experimental data.
+
+Several important things that we learned during this research are the following:
+
+- Pure neural ordinary differential equation models are difficult to train because of numerical instabilties. The addition of rather simple physics constraints helps alleviate some of these instabilities. 
+
+- The addition of physics helps obtain uncertainty information that is more consistent. This is critical for experimental design procedures. Variational inference is a powerful uncertainty quantification framework because it can be directly formulated as an optimization problem. 
+
+- It is absolutely not obvious to determine what is the best strategy to combine physics and neural ODEs; we experimented with many different variants and it ultimately boils down to a trade off between model flexibility and interpretability. 
+
+This work is based on a collaboration with the group of Prof. Ophelia Venturelli and is the result of the heroic efforts of the brilliant Jaron Thompson and Bryce Connors. 
+
+Preprint: https://lnkd.in/edgKRc8k
+
+#machinelearning #dynamics #datascience
+
+306
+11 条评论
+赞
+评论
+分享
+Moritz von Stosch
+
+Senior Scientific Advisor at DataHow
+
+2 个月
+
+Very interesting work, very much in line with all the work that has been performed on hybrid (semi-parametric) modeling and the different degrees on hybridization. Might be worth to contrast your findings to 

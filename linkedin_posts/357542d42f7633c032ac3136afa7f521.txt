@@ -1,0 +1,27 @@
+URL: https://www.linkedin.com/posts/maxime-labonne_how-to-fight-llm-hallucinations-i-often-activity-7289670347757346816-RZWv
+Date: 2025-09-24
+Author: Unknown
+
+🎭 How to fight LLM hallucinations
+
+I often get questions about hallucinations. I like to think about them in two types:
+
+1/ Factuality hallucinations: When models generate incorrect information due to knowledge gaps ("the model doesn't know")
+2/ Faithfulness Hallucinations: When models fail to accurately use available information (typically with RAG)
+
+For factuality hallucinations, the key is to enhance the model's knowledge base and verify its outputs.
+
+→ Implement RAG for adding extra context (databases) and real-time information (time-sensitive applications)
+→ Train models to acknowledge uncertainty rather than generate false information (output "I don't know")
+→ Use human experts for validating critical information, typically with medical and financial systems
+
+Faithfulness hallucinations require a different approach, focusing on improving how models process and use available information. The goal is to ensure that responses accurately reflect the provided context.
+
+→ Optimize context retrieval with better search algorithms (hybrid search)
+→ Implement strict context adherence during response generation (models can even be fine-tuned for this purpose)
+→ Use automated verification metrics to check output accuracy (always evaluate your RAG pipeline)
+→ Develop feedback loops for continuous improvement
+
+While we can significantly reduce hallucinations, they cannot be completely eliminated due to the probabilistic nature of LLMs. The focus should be on managing them effectively rather than seeking perfect accuracy.
+
+If you're interested in this topic, I recommend checking the Hallucination Leaderboard (https://lnkd.in/exwYYrrU) and its corresponding paper, made by Pasquale Minervini, PhD et al.

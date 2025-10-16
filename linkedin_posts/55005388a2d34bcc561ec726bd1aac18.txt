@@ -1,0 +1,25 @@
+URL: https://www.linkedin.com/posts/talesh_why-your-ai-application-hallucinates-activity-7223671523448930304-ym85
+Date: 2025-09-24
+Author: Unknown
+
+LLM hallucination is a problem we don't have a full solution for yet. Here is a quick summary of why they hallucinate and also a glimpse of our current best strategies for mitigating the problems associated with 
+话题标签
+#LLM 
+话题标签
+#hallucinations.
+
+The worst hallucination I have seen involved OpenAI GPT-4 spiralling wildly out of control unable to compose clear grammatically correct sentences, sometimes randomly repeating words and phrases. And this was based on a vector database of truth.
+
+What is the worst hallucination you have seen?
+
+
+话题标签
+#aisafety 
+话题标签
+#aisecurity 
+话题标签
+#llmhallucinations 
+话题标签
+#gpt4 
+话题标签
+#openai

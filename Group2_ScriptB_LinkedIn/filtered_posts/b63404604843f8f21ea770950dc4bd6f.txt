@@ -1,0 +1,43 @@
+URL: https://www.linkedin.com/posts/hugo-bowne-anderson-045939a5_michael-jordan-on-the-hidden-costs-of-imperfect-activity-7259231252312989696-u0WA
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Hugo Bowne-Anderson
+
+Data and AI scientist, consultant. writer, educator, machine learner, podcaster.
+
+11 个月
+
+Michael Jordan on the Hidden Costs of Imperfect AI Predictions and the Infrastructure We Need – High Signal Podcast 🌐
+
+In this High Signal clip, Michael Jordan (UC Berkeley) discusses the consequences of uncertainty in AI predictions and the infrastructure needed to address these challenges. 🎧
+
+🚑 A Personal Anecdote from Healthcare: Mike shares how outdated statistical models and advances in ultrasound technology led to misleading diagnoses in prenatal care, tragically resulting in the loss of unborn babies.
+
+🧩 The Need for Provenance and Relevance: He emphasizes that AI predictions must include context, such as the age and relevance of the underlying data. Without this, models like ChatGPT and other LLMs fall short, as they cannot account for data shifts over time. Mike notes that the banking industry has built systems to handle such complexities, and he argues that we need to do the same in fields like healthcare.
+
+💡 Engineering for Long-Term Viability: He calls for a new discipline in AI engineering that prepares for data uncertainty and decay, designing systems that are robust over time rather than relying on perfectly up-to-date data.
+
+Links to the full conversation and other episodes with Chiara Farronato, Andrew Gelman, and more are in the comments.
+
+Produced by Delphina, with Duncan Gilchrist and Jeremy Hermann, High Signal is committed to exploring the future of AI and data science.
+
+…展开
+19
+5 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+Something of appreciated about your line of thinking is really trying to build machine learning engineering discipline and not machine learning engineering as we usually use the term machine learning engineering. But we're really talking about principles needed to build planetary scale as you call it, inference and decision making systems. And I think to figure out where we to diagnos

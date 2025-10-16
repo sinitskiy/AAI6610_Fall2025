@@ -1,0 +1,14 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17atfvp/pricing_analysis_career_progression_to_data/
+Title: Pricing Analysis Career Progression to Data Science
+
+Content:
+I was a DS in an insurance company (essentially a pricing analyst), I was doing a lot of XGB and GLM models etc. It was enjoyable but I have a degree in DS so I always wanted to move into something which would project me into more complex/cool modelling.
+
+Anyway, my question, I moved to London and am now looking for a new job but the currently tough market is looking for much more experience than I currently have in data science related work (I have 1 year). Would taking a Pricing Analyst role (doing the same algorithms as before) hurt my progression or help it in the eventual goal of being in something machine learning related down the line.
+
+I think it would strengthen my prediction models, but at the same time I wouldn't be exercising what I did in my MSc degree. What do you think?
+
+Comments:
+- [deleted]
+- Okay thank you :)

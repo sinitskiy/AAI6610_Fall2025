@@ -1,0 +1,53 @@
+URL: https://www.linkedin.com/posts/florian-b%C3%BCttner-31149799_how-to-leverage-predictive-uncertainty-estimates-activity-7303151393232572417-Pj3u
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Florian Büttner的动态
+Florian Büttner
+
+Professor at Frankfurt University and the German Cancer Research Center (DKFZ/DKTK)
+
+7 个月
+
+Our work on how to mitigate catastrophic forgetting by leveraging predictive uncertainty has been accepted at Transactions on Machine Learning Research (TMLR)! 🎉
+
+
+🔍 In memory-based online continual learning, memory management plays a crucial role in mitigating catastrophic forgetting (CF) — but what is the best strategy for selecting samples to store in the memory? Should we store the easiest-to-forget or the easiest-to-remember samples?
+
+
+💡Under an uncertainty lens, we investigate what characteristics make samples effective in alleviating CF. Starting from the examination of the properties and behaviors of popular uncertainty estimates, we identify that they mostly capture the irreducible aleatoric uncertainty and hypothesize that a better strategy should focus on the epistemic uncertainty instead. For this, we propose to use an uncertainty estimate based on the Bregman Information (BI) which, via a general bias-variance decomposition for strictly proper scores, identifies the variance term as an estimate for the epistemic uncertainty.
+
+📊 Our results, tested across various realistic scenarios, suggest that a) storing samples with with low epistemic uncertainty is the most effective strategy to combat CF while maintaining competitive classification performance, and b) focusing on epistemic uncertainty estimates provides an advantage over aleatoric uncertainty-based approaches.
+
+🤝🏼 Work lead by Giuseppe Serra with help from talented student Ben Werner as part of his BSc thesis.
+
+📝 Read more: https://lnkd.in/ex-Ez3f6
+
+How to Leverage Predictive Uncertainty Estimates for Reducing...
+openreview.net
+38
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,418 位关注者
+
+29 则动态
+查看档案  关注
+探索相关领域
+How to Improve Memory Management in AI
+How to Manage Uncertainty in Supply Chains
+How to Include Uncertainty in Optimization
+How to Improve Predi

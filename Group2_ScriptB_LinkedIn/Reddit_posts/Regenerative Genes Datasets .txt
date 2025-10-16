@@ -1,0 +1,64 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1dp45zw/regenerative_genes_datasets/
+Title: Regenerative Genes Datasets 
+
+Content:
+I am a student in computer with network security. i am doing my final year project on the following: 
+
+The DNA (deoxynucleic acid) is consisting of genes. Genes help to produce amino acids and consequently protein by the process of transcription and translation. Protein performs various activities to keep us healthy and make each cell unique. Some diseases are also caused by certain genes for example sickle cell anemia. This project will use machine learning algorithms to investigate which specific genes are related to regeneration. The concept of Co-expression genes will be investigated to know which protein triggers the genes for regeneration. The synthesis of certain proteins and injecting them in some patients could help to accelerate regeneration. However further application of this project could be inhibiting the genes that produce cancerous cells.
+
+I didn't really start the project i could change the scope at any time 
+
+Where could I find a dataset for this specific dataset for this study? 
+
+My lecturer told me to do features extraction. 
+
+Comments:
+- Is there anyone who knows biology advising you on this project?
+
+It could be a language barrier, but you don't seem to know the correct terms for any of what you are doing.
+
+The closest I can come to something that might make sense from what you described is find a RNA-seq transcriptome dataset that deals with injury response.
+
+Something like what was done in this article: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4997251/
+
+Their dataset is available: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71453
+
+But to be honest this is not something you can easily jump into without extensive knowledge and/or someone to help guide you much beyond what reddit can provide. It requires a lot of biology knowledge to do properly.
+- Hi, as the other commenter mentioned, i would seriously review the literature. It will also help to define “regeneration”, as you worded this, no such genes exist to auto-correct sickle cell anemia, which is the reason it causes disease. 
+
+What are you regenerating? The genes exist already with mutations that are causing the disease. 
+
+Compared to all the datasets for nlp and computer vision, the number of curated, high-quality, publicly available datasets for DNA is quite small and often highly skewed. You will likely need to download raw genomic data and engineer your own for your specific model. To know what data would be appropriate for your model, you need to have an understanding of the biology and more importantly, what you are attempting to predict. 
+
+Ask youself:
+
+Biology:
+1. Do I understand the environment and system enough to know if my question makes sense?
+
+2. What is the biological information I need build a model that can make relevant predictions?
+
+Machine Learning
+
+3. Is there enough available data to be useful or informative enough to build a model to answer my question? 
+
+4. Is my model architecture the right choice to tackle this problem.
+- my supervisor have an MSc on bioinformatics and myself i have done bio sub in HSc my knowledge in biology is almost as strong as my knowledge in CS. i want to do this project because i am really interested into that and if i need to read more and work there is no problem but my biggest barriers right now is the datasets
+- Your biggest "barrier" is the serious knowledge of biology (esp. molecular biology).
+- I'm sorry, what is HSc?
+- I can't even tell what you are actually trying to do. 
+
+What papers have you found on the topic you want to study? Linking to them might at least tell people what you are trying to study so they can give relevant advice.
+- What you are trying to do would usually at best be a major final project for graduating a 4 year university with a bachelor degree and even then it would be a difficult project. More commonly it would be a masters or possibly even PHd level project.
+
+Unless you get a lot of help from your supervisor this is unlikely to work. I would like to give you a better project, but I can't think of one that would work at your level, perhaps ask your supervisor for more help on what they expect from you.
+- okay i will tried to investigate on that
+- I googled it and read the wikipedia page so I'm not an expert, but based on that HSc is a India (most likely, a few other countries use the term as well) education level. I think it is pretty much high school level in the USA, but the specialization starts earlier than in that system so the comparison isn't perfect. Either way it is a pre-requisite to university. This is the equivalent of a high schooler getting an internship in between High School and University.
+
+Anyways... the short answer is OP is trying to do something that is probably too complex for their current skill set and resources unless they get access to a lot of mentoring and guidance.
+- Cambridge certificate in uk. it just before university level
+- I mean the text they posted kinda tracks with an high school level understanding of biology... really hope at least their computer science understanding is a bit better orthey are gonna have an awful time...
+- So high school level
+
+Sorry man, I understand this may not be what you want to hear... but it really shows...
+- i am at my final year in computer science

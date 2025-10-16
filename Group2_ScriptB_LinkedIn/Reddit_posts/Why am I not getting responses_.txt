@@ -1,0 +1,105 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1nyp1uw/why_am_i_not_getting_responses/
+Title: Why am I not getting responses?
+
+Content:
+As mentioned before, I can't use the weekly transition because it doesn't allow pictures. I appreciate your help last time when I asked. I've implemented your recommendations but I'm still not getting responses. I've added a completely new ML-based project, fixed mistakes, revamped the layout and I'm still not getting anything. I appreciate your attention.
+
+https://preview.redd.it/u7bbf3q5vatf1.png?width=666&format=png&auto=webp&s=8d6983cb5e8713b1b8b736f95b916ee52fb0dc21
+
+  
+
+
+Comments:
+- If I received this CV I would trash it in seconds.  These bullets read like they are designed to trick ATSs. Too vague and does not tell a story about you as a data scientist. Your projects are all medical but your actual experience has nothing medical in nature. I get no information about your domain excellence. 
+
+A recruiter receiving this cv will think this candidate cannot pass a Role Related knowledge interview (a la Google's RRKs). 
+
+DS roles these days require you to have enough of a business acumen. This CV unfortunately does not give me that signal.
+
+These may be harsh words but my honest view. Focus on presenting yourself as knowledgeable in a small number of fields that businesses actually care about. It could be trust and safety, marketing, etc.
+- Your bullets are too vague. You need to focus more on the business problems you’re solving and less on the tech. Saving $150k through Python programs or “reducing redundancies” by 80% with Power BI doesn’t tell the recruiter/hiring manager how you can actually help the business. What did you automate to save $150k? Which redundancies did you reduce?
+
+Try to follow the [STAR method](https://www.careereducation.columbia.edu/resources/resumes-impact-creating-strong-bullet-points) in your bullets.
+- You don’t have relevant ML experience. That’s the problem. Your DS experience looks like a Data Analyst’s experience. I will only consider your resume for entry level DS/ML roles in my team. Don’t waste your time doing side ML projects. They’re worthless. Focus on real ML projects with real impact.
+
+Try to work on an ML project in your company. Skip the ‘AI integration project’ and look for projects where you can apply ML (regression, classification, clustering) to solve a critical business problem in your organization.
+- To give some perspective from someone who has hired in this economy - I get hundreds of resumes like this for every role I post. Consider the situation: shrinking economy, hundreds of applicants per role, and limited time to read resumes. I can’t spend 3 minutes reading each resume when I get 300+ in the first few hours of the post. That’s 15+ hours.
+
+So what should you do? Make sure that I see the most important work at the top. The business value of that work needs to be crystal clear. The impact of that work needs to be clear, as well. Note how I’m identifying those separately, as they are distinct. If your resume passes basic filters like visa status, location, etc., then you get about 20 seconds of my time. If your resume doesn’t grab my attention in that time, then I won’t select it.
+
+What is the most important work for you? I can’t tell you. This resume doesn’t tell me what the applicant is good at. Where do you excel? Highlight that. You need me to see, within 20 seconds, that you have skills that sets you apart.
+- The 2 column resume is very bad with ATS or any type of system companies use to parse text. Move to a 1 column resume.
+
+Your education information is incomplete. Like what degree did you get? Writing "University" and then "Data Science" or "Criminal Justice" doesn't mean anything. Is it a BA, BS, Masters?
+
+You are stretching yourself too much by claiming your are an MLE. Nothing on your resume says MLE. You should be applying more for data analytics, maybe data science related to justice since you seem to have a background (I've seen some roles for government).
+- Your resume format sucks. 
+
+And you're applying for roles where you cannot enunciate your experience.
+- Too vague. And your work experience should be at least 50% of your CV
+- Weak and vague bullet points for your top experience and barely DS related
+- Are you applying to MLE roles? It doesn't look like you have much experience in productionizing and maintaining large ML models.
+- I'd focus on improving your bullet points. They are too vague.
+
+Saved £150k through python programs. What programs? Did you own this from scratch (concept through to delivery)? Over what time period? As a recruiter I want to see your ownership come out more - at the moment this doesn't tell me either enough on the technical side (detail about "python programs"), nor about business understanding (detail about what part of the business, how you owned implementation etc). You need to do at least one, if not both, with each bullet point.
+- Bullet 1: Not DS related, no details.
+
+Bullet 2: Data analyst, no details.
+
+Bullet 3: You say "managed 15 people" but you don't have "manager" in your title. From an enterprise perspective, saying "managed" means something.
+
+Bullet 4: Video editor.
+
+Super quick glance: looks like you built some models but your projects section just lists what you did and not outcomes. Tons of skills listed in the right, no examples of skills on the left.
+
+I am now about 30 seconds in, done with the resume and it goes in the trash pile and I move to the next. Is it fair? Probably not, but this is how I'd look at this (and I've seen resumes like this for Sr/Lead positions).
+- What others have said. Would not move forward for a handful of reasons. 
+
+Your education needs the full and correct name of the degree you received. “BS Data Science”, or “MS Data Science”, if that’s actually what it was.
+- i hire data scientists on the regular and i would probably pass on your resume. expand on your experience bullet points and get rid of everything on the side except contact info, languages and education.. you can maybe keep packages but techniques, tools and frameworks and software… you knowing how to use adobe means nothing to me and you better as hell know data modeling if you’re applying for a ds position. you can add more value if you expand on your experience imo. talk about the business problems you solved, the outcomes, the impact.
+
+editing to add 1 more comment: your personal projects are half the resume. you could likely make those more concise to give you more room to expand on experience. personal projects don’t carry as much weight tbh.
+- Take the side things away.
+
+Focus on what You do, 
+
+Don't be fancy
+
+Get it keywords ready
+
+Good luck
+- job market is brutal right now, don't take it personally. your resume looks solid but maybe try tailoring it more to each specific role? also networking is huge - linkedin posts, commenting on industry content, reaching out to people at companies you want. sometimes it's not about the resume, it's about timing and getting in front of the right person. keep grinding, something will hit soon. the ML project addition def helps show you're staying current.
+- OP, sorry but reading the “suggestions” thus far further proves that this sub is full of trolls and people who want to cosplay as gatekeepers through anonymity instead of actually help folks like you to land a job in this market. You may want to leverage other subreddits like r/MachineLearning or others if you want serious answers and help. 
+
+Four things: 
+
+1 - Simplify the structure of your resume. Methods governing ATS software have been changing lately and it’s entirely possible your resume isn’t passing through that first screening.
+
+2 - Tailor your resume to each application. Whatever is in the job description, if relevant, try to include those words in your resume either via your tech skills or actually work projects you’ve completed. As someone else mentioned, using the STAR method with the “buzzwords” from the job descriptions will elevate your resume above ALOT of other applications. Although this can be tough to do since you won’t have much real estate to write UNLESS your resume structure changes in point #1. 
+
+3 - Be purposeful what you highlight in your resume. If you are applying for DS position where analytics is part of the job description then include DA stuff. Otherwise if it’s developing models then maybe don’t highlight DA stuff. If you are applying for MLE jobs then DA stuff shouldn’t really be on your resumes UNLESS the job description mentions it. Again focus on what the job description wants and make sure to highlight those relevant to experiences. 
+
+4 - This job market just sucks dude. Also “AI” is cutting a lot of the DA and “entry level” DS jobs and any  entry/mid career job postings out there are highly competitive which frankly more experience than what you have shown in your resume. That’s not to say don’t keep trying, but understand that the current economy at least in USA is quickly revealing that the demand for DA and even DS is shrinking. MLE is another story at the mid level.
+- [deleted]
+- All metrics are accuracy not business. This is not what business want. They want to know why a data scientist will actually change and make a material difference. Also sounds like a lot of lies . Please tell me how a dashboard reduced redundancy by 80%. Your experience shows no actual data science work either. Or what you actually did. Compared to the packages you list it doesn’t add up. Need to add in soft skills like did you help recruit or lead teams or something other than just generic. From the other comments other than you saying your a data scientist your cv does not really read like it is for a data scientist but a generic job
+- Yahoo email. That's a red flag only scammers use it.
+
+
+
+/s
+- The market is crap, but to me, its really to vague, to the point that is a red flag that you don't, or are not able to, articulate,what exactly you build and why. 
+
+Your cv also contains claims that would be hard to prove, even if you went the whole 9 yards, like the 'reduced pipeline incidents by 22%'  
+
+For me, this is meaningless. I don't know what a pipeline incident is, what it is 22% of as for incidents the actual number is important, or what your trend identifying algorithm exactly does. 
+
+Same for the 'savings through python programs' How is it you can put an exact and rather round number on the savings, but not tell me what exactly you did. 
+
+I know, very harsh, but if you had a positive influence, tell me about it. Spell it out. 
+
+Along similar lines, telling the R2 values for the analyzed cybersecurity incidents is not helpful for me to learn what you did. Its even a bit of a negative if you don't understand that putting that value on your cv isn't particular insightful. 
+
+For the record, I have only hired for science roles, so I hardly look at any business impact. 
+
+Anyways, major kuddos for making yourself vulnerable and putting your cv out here, hope we all have a positive influence and can help you along.

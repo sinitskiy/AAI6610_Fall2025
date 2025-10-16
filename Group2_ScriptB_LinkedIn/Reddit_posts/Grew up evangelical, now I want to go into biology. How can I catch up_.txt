@@ -1,0 +1,58 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/sr9m3y/grew_up_evangelical_now_i_want_to_go_into_biology/
+Title: Grew up evangelical, now I want to go into biology. How can I catch up?
+
+Content:
+Hey folks! This is about a friend, not me, but I wanted to see what resources there are available. A friend of mine grew up in a pretty evangelical part of the world. He wants to learn past that and start studying biology, but he's a little nervous about starting fresh in first year university with fairly minimal background knowledge. Does anyone have any information on ways to catch up on what he might lack? Books, podcasts, videos, online guides, study materials, and anything else you think would be useful are welcome.
+
+Edit: ex-evangelical - trust me, the need to unlearn stuff has been taken care of. dude is a machine for analysis and caught on to what I (bio minor completed) could teach him about the basics. I'd put his knowledge level only about a year or two behind someone going to a secular high school, if that, and even then he learned some stuff I only learned in uni. This is more about making sure all t's are crossed and all i's are dotted, you know?
+
+Comments:
+- Most college biology programs start from the ground up anyway. When I was a TA teaching first year eco/evo, we spent a good portion of the semester just explaining to a room full of students, “Look, you don’t need to believe in evolution yourself, but nothing in modern day biology is going to make any sense if you don’t at least understand how it works.” Your friend will probably be okay without any background in biology.
+
+That said, I can’t think of any comprehensive primers on the subject of biology that aren’t just textbooks. Your friend could do a Google deep dive on subjects like mitosis/meiosis, DNA>RNA>Protein (“central dogma,” that’s sometimes called), evolution by natural selection, and maybe processes like photosynthesis and cellular respiration. That would just about cover the subjects your friend would be covering in their first semester or so, and would rely upon their understanding of those concepts throughout their degree program. That said, they might also be better off going in with a clean slate and an open mind, as corny as that sounds.
+- https://courses.lumenlearning.com/vccs-bio101-17fa/
+
+This is an online biology "course" that covers a lot of ehat you would learn in like a general biology college class.
+
+It's one of my favorite online resources but you have to kind of teach yourself. But it's better than reading any biology book, at least in my opinion.
+- khanacademy.org
+- Campbell's Biology textbook. It is a first year freshmen biology resource. A great primer for base concepts.
+- Well I gotta say, if your friend never learned basics in Chemics, Physics and Biology at school, he is going to have a hard time.
+
+I mean it is not impossible, but if he has no imagination what biologists look at and how the working methods are, he is going to jump into some ice cold waters.
+- I’m sure the friend could go to the Library and take out any books on Biology and just read up
+- most colleges have biology 100 first level introductory biology course, it depends, this is usually for non biology majors, but it teaches all the basics of biology in one semester, it is equivalent to high school biology in some aspects. Then they have college biology 1 and 2 which are more detailed off that one semester course, then they have wide variety of biology, and go from there, but check with your school course offerings first.
+- They will be alright. No need to catch up, they start from scratch. Worst case scenario, tell them to do what Bobby Boucher did in the Waterboy. Take everything Momma says and reverse it.
+- Biology is so broad that I think we need more info. What in particular is he interested in? Genetics, ecology, systems biology?
+- E. O. Wilson has published a seven volume introductory biology course called “Life on Earth” for free via Apple Books. It is a great resource! Here’s a link to the first volume:
+
+https://books.apple.com/us/book/e-o-wilsons-life-on-earth-unit-1/id888107968
+- Charles Darwin had a religious background that may've resembled yours. "On the origin of species" is free via Kindle, Apple Books, and lots of other places. It remains a thoughtfully argued, accessible, and example-based presentation of many of the key ideas. It was readable by the lay public at the time and remains so; it's actually pretty amazing (to me, at least) how many groundbreaking ideas started with him.
+
+Richard Dawkins' "The selfish gene" is no longer cutting edge, but in my youth I found it to be very mind expanding and a good way to introduce a high school kid to thinking about things from a totally different perspective (DNA as ruling/directing the world as opposed to organisms).
+
+Sean Carroll's "The making of the Fittest" may be for your next tier, but it gives concrete, detailed examples of how traits like 'antifreeze' in fish blood, UV-vision in birds, color vision in humans evolved via specific mutations.
+
+Lastly, I would strongly recommend a NON-majors Intro Bio text if you want to go that route; I have often found these to be more thoughtful and explanation based (rather than detail-based) than major's texts and they often work far harder to integrate interests and ideas from everyday life.
+
+Source: 30 year Intro Bio university instructor.
+- I grew up in the background like your friend. Now I’m doing a doctorate in Evolutionary Biology. Can’t recommend Richard Dawkins’ biology books enough. Start with The Greatest Show on Earth. Then The Selfish Gene. Then he can probably pick which books to read from there. They’re great audiobooks read by Dawkins himself too (who has a great voice).
+- I'll try to find it, but I watched a video about how Western geologists slowly abandoned the Flood Myth as a foundation for their field. 
+
+The body of evidence they had built up through surveys of geological processes, the stratification of fossils, and other indisputable facts proved that the earth was far older than the Old Testament narrative.
+
+And again, I cant stress how long of a process this was, with plenty of Christian scientists trying to find ways to include diluvial explanations in their work. But eventually even this conservative field abandoned Noah's Flood as established fact.
+- Crash course, Khan Academy, etc.
+
+Understanding evolution / the mechanisms that make it possible (genetics, mitosis, meiosis etc) is a great place to start. Similar to theory of relativity in physics, when I first “understood” evolution, it was a seriously beautiful moment that completely changes how you see your surroundings.
+- A lot of this also depends on where he ends up going to university. Programs can vary  from school to school, especially when we're looking globally. What I'd really say is probably the best start is reaching out to bio professors where he may end up studying.
+
+Another possibility is looking into AP or IB Biology study references. These also come with practice tests that he could go through to make sure he understands the important concepts. These are also going to be cheaper than trying to find a full-blown biology textbook and can probably be found on Amazon no matter where he is. But, if he already has a program in mind, he really could go ahead and find out what textbook they'll be using and look into getting it earlier.
+- Big Biology Podcast is a great way to stay informed on big ideas and topics in the field. Two biologists hosting other scientists for in-depth conversations. Available wherever you get podcasts and at [www.bigbiology.org](https://www.bigbiology.org)
+- Natural selection might be a hard one to grasp at first, but framing it as progeneration of the luckiest helps explain why there are adaptations  seemingly without purpose and creatures who are poorly equipped for survival. Noah's ark is a great example of an event that would cause a genetic bottleneck. They're going to be totally fine. I found a lot of people stumble around ecological processes (succession in particular) and the rest is a breeze.
+- This is an excellent response! I would like to add that starting out on more of a broad spectrum might be slightly more beneficial. Looking more at ecosystem function and the way organisms interact with one another (food webs, biomes,  and the drivers of evolution) may be less daunting than jumping in and trying to learn at a cellular level. Given that he probably doesn’t know a whole lot, connecting ideas that he can see in the real world may make it easier. Just my two cents.
+- > Most college biology programs start from the ground up anyway
+
+Uhhh? That‘s absolutely not true, at least for the programs I was looking at in Germany and the Netherlands
+- There is definitely a knowledge base there - a little from what actual biology is in the curriculum but mostly through his own research. His curiosity and willingness to learn isn't an issue, hence catching up now.

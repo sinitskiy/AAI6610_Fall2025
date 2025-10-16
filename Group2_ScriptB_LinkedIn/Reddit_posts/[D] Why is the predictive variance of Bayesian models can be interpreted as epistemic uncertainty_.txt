@@ -1,0 +1,96 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/tj34qs/d_why_is_the_predictive_variance_of_bayesian/
+Title: [D] Why is the predictive variance of Bayesian models can be interpreted as epistemic uncertainty?
+
+Content:
+Is there a direct link or explanation on why the predictive variance of a Bayesian model can be interpreted as epistemic uncertainty?
+
+Many epistemic uncertainty quantification methods, for example, [MC-Dropout](http://proceedings.mlr.press/v48/gal16.html?ref=https://githubhelp.com), [Deep Ensemble](https://arxiv.org/abs/2106.11642), claim themselves as a Bayesian model to justify their approach for quantifying uncertainty. Let's just say their claims are valid so that the methods are truly Bayesian. But then, why are Bayesian methods supposed to estimate uncertainty well?
+
+Comments:
+- This is just true by definition. In general, probabilities in Bayesian models are interpreted as measuring epistemic uncertainty. That's what Bayesian probability means.
+- If you assume the following things:
+
+1. the underlying relationship that you’re trying to model is deterministic,
+2. your chosen model is capable of fully accurately computing that relationship, 
+3. the process of fitting the model is a dynamical system that converges to a fixed point that depends both on your data and on initial conditions (i.e. initial parameters), but which converges to a single unique fixed point in the limit of infinite data, and
+4. your data is finite
+
+then it seems like it should be true that an ensemble of different versions of your model that are all fitted with different initial parameters (distributed according to some distribution) represents the epistemic uncertainty in your available data. The key axiom is probably #3, in which there is assumed to be a unique set of fitted model parameters in the limit of infinite data. If that isn’t true then your model ensemble is actually encoding a combination of both the epistemic uncertainty in your data as well as uncertainty due to issues with model fitting.
+
+I assume you can make this more rigorous and nuanced. E.g. this perspective probably still works if the fixed point corresponding to infinite data is not unique, but the model output is invariant to the choice of fixed point, and other such nuances.
+- No. Probabilities in Bayesian modeling can be interpreted as uncertainty derived from lack of information (e.g  epistemic uncertainty) *or* as fundamental uncertainty derived from actual stochastisticity (aleatoric uncertainty) *or* as a combination of both (especially in the posterior predictive distribution) . This depends on which distribution you are looking at.
+- Let me give you a counterexample why this does not work. Say your data generation process works like this:
+
+For x in 1... N generate pairs of x, y coordinates from an infinite line in 2D which follows the equation y = 2 + 3x. 
+
+After N steps, start to return values from the equation y = 3 + 2x
+
+You have a number of datapoints smaller than N
+
+The model you have is capable of fitting these two lines and a switchpoint. It has 5 or more degrees of freedom.
+
+The fitting procedure is greedy. It tries to model the available data and minimize the error on that. It achieves an error rate of zero on the available data. The learning procedure is such that if no switchpoint is neccessary to explain the data, it will not  it's extra capacity for a switchpoint. 
+
+No matter how many ensembles of this model you create, they will all agree 100% on their predictions and will not quantify your (epistemic or aleatoric) uncertainty.
+- You are right that a Bayesian algorithm can model both uncertainties. Given that, my question is how a Bayesian algorithm gains the ability to quantify epistemic uncertainty. It feels like there might be a better explanation than "by definition."
+- >lack of information (e.g epistemic uncertainty) or as fundamental uncertainty derived from actual stochastisticity (aleatoric uncertainty) or as a combination of both (especially in the posterior predictive distribution)
+
+Can these things be distinguished? How can you ever know that uncertainty is aleatoric as opposed to epistemic?
+- Thanks, that’s a good example but I’m not sure that it discredits the fundamental idea. It suggests that you’d need another axiom that says something like “your base model should be maximally complicated/expressive”.
+
+Of course one could then still object by saying something like “ah, but what if the data happens to spuriously fit this model exactly too?”, but i don’t think that’s a compelling objection. These kinds of objections ultimately amount to something like “what if the correct model is uncomputable?”, which seems like a silly question; we might as well ask “how can we know things that are unknowable?”.
+
+To the degree that uncertainty is a meaningful concept, it seems like it should be expressible via ensembles whose entropy is a measure of the amount of the uncertainty.
+- A "full" (usually intractable) Bayesian model can do that by definition, if you can encode your prior beliefs accurately not just in parameter space but also in model space - e. g. you can somehow specify and assign prior probabilities to all models and model parametrizations you would consider not entirely impossible. This is very rarely given *and* tractable.
+
+All the bayesian models you read about only model epistemic uncertainty **given** the model choice is correct. To be fully bayesian, you would have to multiply it by the (subjective prior) probability that the model is correct and szch integrate over all models you would assign a positive prior probability to, even those you cannot even think about right now. 
+
+All of that assuming you are performing exact inference.
+
+So no, your Bayesian Neural Network likely does not *accurately* reflect your (Bayesian) epistemic uncertainty. Even if it would, it might not reflect mine, due to different prior beliefs. 
+
+Also look at PAC Learning (Probably Approximately Correct). I think Scott Aaronson wrote a few interesting things about PAC, which you might find by googling.
+
+All of that said, I am a Bayesian in principle. In practice, I am a pragmatist.
+- You can consider some processes as fundamentally stochastic, especially if they are based on quantum mechanical principles like radioactive decay, counting single photons interacting with a measuring device or white noise on a radio receiver. Some are pseudo-stochastic, like throwing a dice (possibly repeatedly). Generally speaking, aleatoric uncertainty refers to the uncertainty that is associated with the outcome of a repeatable "experiment". Some people might even claim there is no true stochasticity (Bohmian Mechanics, but that is not considered a valid approach by most Physicists )
+- I would really recommend to read up on bayesian methods here. How to deal with this in principle is well known. The problem is, it depends on your subjective priors.
+- I see okay, yes that’s what i thought but I was wondering if there was a different perspective I didn’t know about.
+
+My own opinion is that the aleatoric/epistemic distinction is essentially unscientific, because there’s no way of actually distinguishing between the two by the process of measurement or experimentation. We *can* consider some things to be fundamentally stochastic, but that’s a pragmatic distinction rather than a principled one. 
+
+People sometimes cite quantum phenomena as examples of fundamental stochasticity, but the physicists who say that usually don’t have a very sophisticated understanding of the matter; they’re mostly just half-remembering the Bell inequalities. And that’s reasonable, really. The origin of quantum stochasticity doesn’t seem to have any actionable consequences for experiments yet, so the average physicist has no reason to really care about it.
+- My understanding is that there is no solution; given any finite set of potentially-correct models, one can always imagine that the “true” model might not be present in that set, and so there is no distribution (either prior or posterior) over that set that will capture the “true” uncertainty. 
+
+The most one can ever reasonably do is to quantify uncertainty with respect to what is actually knowable, which ensembles always allow you to do. Bayesian inference is just one particular choice of update rule for the ensemble, but im not sure that the particular update rule should matter provided that you make other assumptions instead.
+- I would not agree that the physicists who say that don't have a sophisticated understanding of it. There really are just 3 kinds of main "camps" when it comes to this:
+
+1.) Copenhagen Interpretation of QM (True stochasticity exists and wave function collapse at time of measurement is where it manifests, whatever measurement actually means). 
+2.) Many Worlds interpretation of QM. *All* possible outcomes are realized in a branching multiverse. You cannot predict in which version of it your consciousness(es) will end up in, so there's your stochasticity. 
+3.) Bohmian mechanics. Just because you cannot predict something does not mean there is no deterministic principle. (to quote Einstein, "God does not roll dice") . Here, true stochasticity does not exist at all.
+
+The thing is, these three might be indistuinguishable from an experimentation point of view. Most variants of Bohmian mechanics have been refuted experimentally, though via experiments with entangled particles and quantum computational experiments.
+- I say that the average physicist doesn’t have a sophisticated understanding of it based on my conversations with them; it seems to be true, at least anecodotally. The papers I’ve read from outside the field of quantum foundations that touch on this subject seem to suggest that it’s broadly true also.
+
+The various well-known interpretations of QM largely don’t speak to the issue in a meaningful way. They’re all hobbled by the fact that they’re primarily interpretational more so than mathematical. It’s hard to even call e.g. Bohmian mechanics wrong because it’s difficult to (if im remembering correctly) make the math work for relativistic and multi particle systems. In the single particle, nonrelativistic case it is actually trivially correct, because the math is equivalent to the Schrodinger equation, as it must be. This is also the case for the many-worlds interpreration, which similarly doesn’t posit new math in a meaningful way.
+
+If you ask a professional physicist about this then they usually won’t talk about interpretations. Instead, probably 9 times out of 10, they’ll tell you that the Bell inequalities demonstrate that either the stochasticity is fundamental or that the universe is non local, and since the universe is obviously local then the stochasticity must be fundamental.
+
+That’s not quite right, though. Firstly it is presumptuous to insist that the universe must be local. More importantly, though, the Bell inequalities have additional unspoken assumptions that they often don’t touch upon in grad school classes. The Bell inequalities also assume that measurement devices are uncorrelated, and that “non-detections” either don’t exist or aren’t important. Neither of these assumptions is necessarily right.
+
+The most strictly accurate way of understanding quantum stochasticity, as far as i can tell, is that it is a more general version of probability in which the usual definition of conditional probability is false, to be replaced by a different one. Why does conditional probability take that new form? As far as i can tell no one knows, although there are some interesting ideas (e.g. certain kinds of limits on maximum information that is knowable about some systems).
+
+There is, however, no good reason to insist that quantum stochasticity is necessarily fundamental, and there’s definitely no good reason for invoking interpretational notions of consciousness or other such things to explain it.
+- I think you would enjoy reading Scott Aaronson on the subject in his (freely available) book "Quantum Computing since Democritus". He covers it all and is fun to read. If you don't know Scott Aaronson, he's a Professor specializing in Classical and Quantum Complexity Theory. 
+
+Here is a link to the book. Chapter 8 is highly recommended. 
+https://cs.famaf.unc.edu.ar/~hoffmann/md19/democritus.html
+
+The chapters most relevanr to our discussion are 7 (Randomness), 9 (Quantum),10 (Quantum Computing), 11 (Decoherence and hidden variables) and 15 (Learning, esp. PAC Learning)
+- Thanks, i took a look. I’m not a big fan of Scott Aaronson’s, though, and I think his writing here is a good example of why.
+
+On the specific subject of theoretical computer science (quantum or otherwise) I think he’s a good read, but when it comes to anything else his writing tends to take on the character of insight porn. Someone who doesn’t already understand what he’s writing about is going to feel like they’ve learned a lot from it, even if they’re actually coming away from it with mistaken impressions about what is true or important.
+
+I’ll give you an example. In lecture 11 he lists “independence from state” as a “no-go” theorem for hidden variable theories, but in doing so he implicitly assumes that certain kinds of hidden variables don’t exist. Classical mechanics itself can be written in terms of a schrodinger equation in which the unitary time evolution operator is not a function of the classical state, and this equation can (of course) be translated into a classical stochastic equation. The difference is that the quantum phase space has dimension *n* whereas the classical phase space has dimension *2n.* The whole point of hidden variables is that there may be unobserved degrees of freedom, and so it’s kind of pointless to derive no-go theorems that axiomatically rule out those degrees of freedom.
+
+I could go on with complaints about his approach to these things but hopefully that illustrates my point.

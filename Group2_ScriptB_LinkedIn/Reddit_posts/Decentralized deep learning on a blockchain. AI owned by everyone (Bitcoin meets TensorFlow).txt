@@ -1,0 +1,207 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/4bhmqb/decentralized_deep_learning_on_a_blockchain_ai/
+Title: Decentralized deep learning on a blockchain. AI owned by everyone (Bitcoin meets TensorFlow)
+
+Content:
+Is there anyone working on either a decentralized deep learning algorithm, or a consumer facing app that uses AI to help people diagnose themselves?
+
+My wife was just diagnosed with CVID a couple of weeks ago, it's like AIDS except it's not Aquired, it's part genetic and part environmental - but it's a rare primary immunodeficiency disease.
+
+She's had this her entire life. She's 33 years old, a wonderful mother to our 5 year old daughter, and beautiful singer, actor and writer. She was misdiagnosed 3 or 4 times, most recently she was eating gluten free for the last 8 years because she was diagnosed as celiac disease.
+
+She's lost most of her hair over the last 6 months and has been in the hospital 3-4 times this year. It turns out, she never had celiac, she has always had CVID.
+
+**Where Deep Learning fits in.**
+My wife should have been diagnosed in her childhood years, in fact, all it would have taken was a simple blood test to measure her antibody levels, and an Immunologist appointment.
+
+With all of her symptoms, her medications and blood test results - a deep learning algorithm would have been able to suggest a proper diagnosis in a few minutes instead of the 30 years that it took for her to get properly diagnosed by just letting doctors do their thing.
+
+
+**The problem with diagnosing rare diseases:** 
+CVID affects 1 in 25,000 - 50,000 people, it's a rare disease where patients present with a myriad of symptoms and autoimmune problems. It's hard to get a correct diagnosis because a patient typically sees many different doctors to treat the different types of symptoms, and they don’t typically share information efficiently - nor do they have an incentive to properly diagnose her.
+
+There should be a visually appealing, easily marketable app that combines machine learning and crowdsourced input from app users to give the "hot/cold" direction that will greatly improve time to diagnose these "zebra" cases.
+
+The average lag time for CVID diagnosis is 6-7 years. This is common with most rare diseases. If my wife was diagnosed even 2 years ago, she would not have lost all of her hair.
+
+The treatment for my wife’s condition is IVIG every 2-4 weeks, and it greatly improves quality of life and life expectancy. The earlier a rare disease is diagnosed, the better the quality of life.
+
+**The problem with doctor-facing AI solutions:**
+I see that there are some machine learning startups, but they are mostly targeted towards health professionals. There’s resistance from doctors to adopt AI. 
+
+The problem is that this technology needs to be available for the patient, not just doctors, and not just specialists at John Hopkins or the Mayo Clinic.
+
+Nobody is going to be as motivated and investing in someone's health as the person and their loved ones. Quite often, patients with diseases become more knowledgeable than the specialists treating them for the disease.
+
+There’s a lot of knowledge to be tapped into there from the 'zebras' themselves.
+
+**Potential barriers to a centralized organization providing this solution:**
+The FDA and drug companies are resistant to technologies that allow users to diagnose themselves. 23andme ran into issues with this. They just finally got FDA approval in October to start helping people agian (http://www.popsci.com/23andme-gets-fda-approval-for-direct-to-consumer-genetic-tests)
+
+
+**Some existing projects:**
+A friend who sold his company to Salesforce for 70 million dollars introduced me to this TED talk shortly after my wife was diagnosed, where Jeremy Howard explains how deep learning works, and it’s potential applications:
+https://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn?language=en
+
+^Jeremy's company Enlitic is using deep learning to help doctors come to a proper diagnosis faster, currently only focusing on radiology. Again, it's just doctor-facing.
+
+www.findzebra.com is a search engine that you can input your symptoms, it uses something similar to deep learning to suggest possible health issues, but it doesn’t use AI. It crawls and indexes only curated medical sources.
+
+Jeremy Gardner & the Augur guys introduced me to www.crowdmed.com which is a great solution for diagnosing rare diseases, but costly.
+
+CrowdMed is a site where you tell your story, and then it uses crowdsourced knowledge to come to diagnosis suggestions. You pay a monthly fee of $299 - $749 a month, and then “medical detectives” investigate for you, and their predictive market algorithm ranks what the detectives submit.
+
+Vitalik Buterin of Ethereum told me about www.numer.ai which is a competition that uses homomorphically encrypted machine learning to let people try to predict the stock market. It’s a way to anonymize data, to alleviate some concerns about people’s medical data being publicly available.
+
+Xprize even has a $5 million dollar prize up with IBM Watson for AI http://www.xprize.org/ai
+
+There's also openai.com, with names like Elon Musk & Sam Altman attached, it's a non-for-profit with a billion dollars committed, but they haven't yet released what their focus is.
+
+**Potential solution to being blocked by FDA etc:**
+Decentralized deep learning on a blockchain, where users are rewarded tokens for providing the hot/cold and running the network. Think ethereum, bitcoin, etc.
+
+In my limited understanding of machine learning, it seems that for a deep learning algorithm to learn, humans need to give it hot/cold inputs to the correlations it comes up with as it compares datasets (Jeremy’s ted talk video explains that)
+
+My theory is that a decentralized deep learning algorithm on a blockchain could be built where the people giving hot/cold inputs are awarded with a token for doing the mechanical turk style work. When consensus is achieved, the people who were correct get rewarded. Similar to how Augur’s reporting system works, or bitcoin’s proof of work.
+
+If users are rewarded for giving correct hot/cold inputs to help the deep learning AI learn about subjects, there’s a financial incentive to keep the network running.
+
+Companies, individuals, universities, etc could tap into the algorithm to use it for whatever purpose they want - and they would pay to use it.
+
+IE I want to build an application that uses deep learning to help diagnose rare diseases so people like my wife don’t have to suffer going undiagnosed and untreated their entire lives. I would pay to have the algorithm learn about the human body, how it works, diseases, treatments, etc. The users of the network get paid to "train it” with hot/cold inputs.
+
+Is there anyone working on anything like this, whether it’s centralized or decentralized?
+
+Comments:
+- Ok, there's a lot to be said for this post. I would just like to say that it is very obvious that this has been a hard time for you and your wife. I understand that it's tempting to try to 'fix this', but do you think there's a possibility you're intellectualizing the situation because you don't want to/can't deal with the feelings inside you?
+- Hi darbsllim, so far I've just read life tips, but let's get technical.
+
+I've distributed KNN (k nearest neighbors) with LSH (locality sentitive hashing) utilizing a DHT (distributed hash table) named kademlia over dozens of clients distributed over the internet in my bachelor thesis.
+Also I've implemented an application with ethereum, so I at least have a little bit knowledge regarding your question.
+
+So first of all, distributing machine learning is really hard.
+KNN is one of the algorithms you learn, when you start with ML.
+And believe me, just distributing that "trivial" algorithm is not an easy undertaking.
+This is an example of distributing knn: http://dl.acm.org/citation.cfm?id=2556574
+Now imagine the much more complex than knn deep learning algorithms.
+
+
+Additionally, the bottleneck is almost always the communication speed between layers in a neural net.
+In a modern GPU you have about 300 GB/s bandwidth.
+Compare that to the current internet speed and you see it almost makes no sense.
+
+So naively distributing current approaches like deep convolutional neural networks without a good approach to parallelize the algorithms makes no sense.
+
+That's an active area of research, algorithms have to be designed specifically for that use case, often approximations are needed.
+One of those approximations can be LSH, but also could be making the data need lower, e.g. using hessian free optimization.
+Some of the ICLR 2016 papers are also interesting for distributing deep learning: http://www.iclr.cc/doku.php?id=iclr2016:main#accepted_papers_conference_track
+
+Now the next hard part: Distributing it on the blockchain.
+Ethereum have their own language called solidity, which is semi turing complete and allows a full analysis of the computational need.
+Current implementations like Tensor Flow build on Cuda.
+Cuda code is not semi turing complete and not completely static analyzable.
+
+So one would need a team of several experts to just get that part, developing a deep learning framework for solidity.
+
+Of course projects like Seti@Home showed, that it can be done.
+But the software behind it, BOINC is already old, it can be done a lot better.
+
+So probably you first would have to find an algorithm that makes sense to distribute and can solve you problem.
+
+Second you either need to build the whole network infrastructure by your own, in the case you use current deep learning frameworks connected to a seti@home like system with rewards etc.
+Or you take sth. like ethereum and try to integrate CNNs in it.
+
+And if you got all that, one last interesting piece is consensus finding.
+Here the naive approach would be a first/last write policy. Who has it first, wins. On ethereum, you could also easily implement a democracy system with votes.
+Two algorithms here: Paxos and Raft. Paxos is old, not easy to understand/implement.
+Raft is a much more easy consensus algorithm, already used in practice, even if it's young.
+
+
+The question here is really: Do you need decentralization to solve that problem?
+
+One way to get good people working on it would be a kaggle challenge.
+That would probably be the easiest way.
+If you once have a good way to come to results, I'm sure you'll find a way to scale the calculations up.
+Finding e.g. a university with a lot of computing power that supports your undertaking shouldn't be impossible.
+
+That said, first Deep Learning + Blockchain may sound great, but you have a lot to consider.
+- I think the world definitely needs more machine learning in the biomed domain. Good luck!
+
+But please think twice before slapping "on the blockchain" on anything. It sounds cool, but you must realize that the blockchain technology has huge overheads to get its key benefit (decentralized security).  You need to do huge amount of computation to keep it running, and you are able to store only relatively tiny amounts of data for that computation power.  Is the overhead worth the decentralization?  In some rare cases it is (for example to pay for things).  But we haven't actually discovered many examples of where the tradeoff is good.
+
+Maybe you'd like to give way for people to be easily rewarded by bitcoins for mechanical turk style work.  That's a great idea, but can be entirely done by a fund maintained by a trusted third party that runs a website where the work is done, and people donating to this third party (or multiple third parties).  Not needing that trusted party is "nice", but is it worth the costs?
+- /u/changetip 1 internets
+- > Decentralized deep learning on a blockchain, where users are rewarded tokens for providing the hot/cold and running the network. Think ethereum, bitcoin, etc.
+
+> ...
+
+> My theory is that a decentralized deep learning algorithm on a blockchain could be built where the people giving hot/cold inputs are awarded with a token for doing the mechanical turk style work. When consensus is achieved, the people who were correct get rewarded. Similar to how Augur’s reporting system works, or bitcoin’s proof of work.
+
+Some questions:
+
+* Why would you need a block chain? What exactly would you like to store in the blocks?
+* "When consensus is achieved" ...consensus on what? 
+* What determines whether a user is "correct"?
+- we dont need more and or fancy models. we need clean, accurate, documented data.
+- Sorry to hear about your wife. My wife has a thyroid based auto-immune disorder. It is scary to wonder if the doctors are diagnosing it correctly. 
+
+
+I am working on something somewhat related to your idea. My idea is more about collaborative science and how to provide employment as AI and robotics get better, but I think medical applications could be incorporated. 
+
+
+I am currently rolling parts of the idea out in my research papers, but it is still in it's infancy and I am not even sure if it will work. On the upside though I think cheaper genetic testing will be helping to put a dent in misidentifying rare diseases in the near future.
+- Hey darbsllim, I was very excited to see this post. I've been thinking about something similar. We had a discussion in the Phoenix Rising ME/CFS forums related to this not too long ago. You can see my initial rough idea [here](http://forums.phoenixrising.me/index.php?threads/public-me-cfs-data-collection-website.42315/#post-690545). I guess it'd be like a decentralized PatientsLikeMe.com where anyone can access the data and develop algorithms. I'd be happy to brainstorm further and try to get a project off the ground.
+- Sounds like a crazy idea... but crazy in a good way.
+
+Bitcoin isn't for general computation though so I recommend checking /r/ethereum or /r/counterparty for general computations on blockchain technology (not necessary on *THE* Bitcoin blochain, arguments go both ways).
+
+You can also check out https://en.wikipedia.org/wiki/Homomorphic_encryption and overall the recent effort of doing distributed computations on untrusted platforms.
+
+That being said it all sounds really really cool but... how does it compare to you (or a group of people who can fund your project) simply renting AWS instances? I mean it's all the hype technologies bundled in one to improve the greater good so I'm all for it, I'm just insisting that it would have to be compared to existing simpler dumber solutions.
+- http://neureal.net We have been working on what you have described in your post for the last couple of years. Join us in making it a reality!
+- Doing any kind of deep learning or machine learning requires large amount of labeled data. Which is very hard to collect outside of governmentall efforts where such collection is legislated. E.g. we at 
+www.computationalHealthcare.com use data from 140 Million visits and 46 Million patients provided by a US government agency AHRQ. Even then we lack several types of data and importantly physician visit data.
+- I just came across [gridcoin](https://redd.it/4b4drk) on /r/futurology a couple days ago. It looks relevant to what you are talking about.
+- It so happens that I am working on a crowd-driven AI platform that I called the terraAI, which  matches what you described pretty well (see the BUT part below), in the sense that it is open-source and crowd-driven AI platform with distributed machine learning capabilities. It is still in its very early stage so not much to see there yet, but I did begin to lay down the goal, scope, and architecture here in my blog starting with a post "The terraAI Manifesto" (http://www.terraai.org/manifesto/). Many posts there are still pretty stubby, but I hope it will give you some ideas. A quick way to describe it is that it is kind of like Wikipedia(in spirit)+AI+MechanicalTurk(in a nice way).
+
+terraAI is designed to be be usable in many domains, BUT for it to be useful the data has to be easily available and suitable for crowd participation in helping with supervised training. Currently I thought that a kind of Intelligent Personal Assitant and Knowledge Spider hybrid is a good starting point. Another more speculative application is for building a crowd-driven and watered-down version of the Star Trek Holodeck. For these two domains we can afford to trade more noisy data for wider participation. I am less certain about the medical domain that you talked about, since good source of data could e hard to come by, and the 'crowd' will have to be restricted to medical professionals.
+- Yeah, that's part of it for sure. I'm a "solver" by nature, I want to fix things... and I can't solve the problem that my wife lost her hair and is losing her health because it took her so long to get diagnosed.
+
+I can however, try to solve that problem for other people who are suffering from rare diseases right now and are not getting proper treatment from the medical system :\
+
+Almost everything with a rare disease has the same story. Years of doctors telling them they are hypochondriacs, saying "see you in 6 months" as if that is an answer.
+
+There's awesome doctors out there who embrace AI, who are knowledgable, who are open and caring...but if you don't live near one of the best hospitals in the world, typically your doctor is overloaded, underpaid and motivated to make sure you're alive, not enjoying a normal quality of life.
+
+I'm getting obsessed with this, and that's not healthy ... my hope is that someone IS working on this, and that I can stop obsessing over it.
+- Thank you for the detailed response, this is what I need.
+
+I'm going to try to digest this, I'm sure I'll have more questions as I start learning how to understand your answer.
+- That's great advice, since I'm not yet sure how much computational power would be required.
+
+Bitcoin has a "proof of work" algorithm which makes it heavy on computational resources.
+
+However there's other cryptocurrency / blockchain companies that are doing some pretty exciting things without needing all of that computational power.
+
+Ripple is an example, as far as I understand, it's based on a "trusted node" system - it has a "ledger" instead of a blockchain.  Ripple assigns 3rd parties to be trusted nodes, and when all of the trusted nodes achieve consensus, transactions are written on the ledger in a similar way as bitcoin transactions are recorded on the blockchain.
+
+I'm not an expert, but I would love to hear what cryptocurrency experts think of putting machine learning on a blockchain.
+- *darbsllim* received a tip for 1 internets (1,003 bits/$0.42).
+
+
+
+
+--
+
+[^^what ^^is ^^ChangeTip?](https://www.reddit.com/r/changetip/wiki/tipping-on-reddit)
+- Thanks, that's my first bitcoin tip on reddit I think :)
+- I don't know how machine learning really works yet, but my assumption is that the blocks would contain the "knowledge" of the algorithm ... as consensus is achieved on correlations, it would be stored with some other data like the transaction data.
+
+I guess the nodes of the neural net would be in the blocks.
+
+re: consensus, as a basic example, lets say the algorithm is fed data on blood test results. It would learn the components of healthy blood (red blood cells, white blood cells, platelets). Users give it the yes/not or hot/cold regarding what makes up healthy human blood, and when there is consensus achieved, it's stored in the neural net/blockchain.
+
+re: determining when a user is correct, I think that would be achieved by achieving consensus. There might have to be some sort of weighting system that gives users with more authority a higher percentage of the vote.
+
+Augur is currently trying to figure this out as well.
+- [deleted]

@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/salathe_very-interesting-paper-on-llm-hallucinations-activity-7209446052679090176-Iaq4
+Date: 2025-09-24
+Author: Unknown
+
+Very interesting paper on LLM hallucinations, with an ability to detect confabulations that are due to a lack of knowledge. "The success of semantic entropy at detecting errors suggests that LLMs are even better at “knowing what they don’t know” [...] - they just don’t know they know what they don’t know. "
+
+https://lnkd.in/eEGuBCnQ

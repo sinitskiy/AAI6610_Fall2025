@@ -1,0 +1,26 @@
+URL: https://www.linkedin.com/posts/kavita-ganesan_can-llm-hallucinations-be-eliminated-our-activity-7305905487244365824-Z_K_
+Date: 2025-09-24
+Author: Unknown
+
+Hallucinations in AI are often called "bugs," but that’s not entirely accurate. They happen because LLMs are designed to generate fluent, plausible responses—not necessarily correct ones.
+
+That distinction matters.
+
+For tasks like storytelling, hallucinations aren’t an issue. But when LLMs are used for summarization, content curation, or research, factual accuracy becomes non-negotiable.
+
+This raises a fundamental question:
+
+Do all LLMs hallucinate—even when provided with accurate source data?
+Our latest deep dive reveals the answer and outlines strategies to reduce AI-generated misinformation.
+
+Key insights:
+ ✔️ Why do hallucinations occur even when data is supplied
+ ✔️ How different LLMs compare in factual accuracy
+ ✔️ Practical mitigation techniques
+
+Read the full article here:
+ 🔗 https://lnkd.in/gFKrFVFf
+
+AI is a powerful tool—but only if we understand and control its limitations.
+
+Would love to hear—what strategies have worked for you in minimizing AI hallucinations?

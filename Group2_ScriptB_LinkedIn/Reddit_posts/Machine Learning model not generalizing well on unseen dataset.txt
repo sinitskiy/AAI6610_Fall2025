@@ -1,0 +1,124 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/18sprrz/machine_learning_model_not_generalizing_well_on/
+Title: Machine Learning model not generalizing well on unseen dataset
+
+Content:
+I am new to machine learning and data science for bioinformatics, I am having trouble predicting pIC50 values using my created SVR model:
+
+\- I am using pIC50 values (response variable) gathered from ChEMBL database of a certain enzyme, basically it contains compounds that inhibit the enzyme using pIC50 as my response variable.
+
+\-  I calculated the molecular descriptors using mordred and fingerprint (only MACCS keys) using RDKit \[these are my predictors for pIC50\]
+
+\- Done pre-processing of my data on R
+
+\- Done feature engineering on descriptors: imputation, scaling and normalization, pearson correlation
+
+\- I have used svr since I fitted my descriptors and keys  (train and test sets) using lazypredict and seen that svr is the most plausible for both and train and test sets
+
+\- Done hyperparameter using both randomizedsearchcv and gridsearchcv on SVR, train score about 77% and test score about 74% on R2.
+
+Here comes the problem:
+
+\- when I predict using my svr model on an unseen data I am getting R2 of negative value and even when it is not negative it is lower than 10%
+
+Open to all your suggestions and recommendations, I have been dealing with this problem for almost a week now
+
+  
+
+&#x200B;
+
+Comments:
+- Is the distribution of the target values in the unseen data different to the training and test sets?
+- How many features and observations do you have, and what does your CV split look like?
+
+&#x200B;
+
+Your setup is only the starting point, this can get a lot more complicated. These guys use ensembling methods for instance [https://www.cell.com/cell/pdf/S0092-8674%2820%2930102-1.pdf](https://www.cell.com/cell/pdf/S0092-8674%2820%2930102-1.pdf)
+- It could be that  pIC50 values are only loosely associated with your input data, that your choice of model is garbage and you can't hyperparam search out of this, or you don't have enough data. Go down this list one by one and try to figure out if this reason is the cause. It's likely one of these will be the problem. That is, as long as your decision space is somewhat representable by whatever algorithm you are using given this size of data, since 10 example per dimension is not very many.  
+
+
+The learning curves can tell you a lot: https://en.wikipedia.org/wiki/Learning\_curve\_(machine\_learning)
+
+Finally, it could be worth it to run feature selection on your input data and get yourself in a lower dimensional space, then check those three things again.
+- I used StandardScaler on my target values (y),
+
+I separated first my entire dataset (df) (3000+ obs.) as x and y ; y being my target, then did the said feature engineering only on x.
+
+Then only used StandardScaler on y.
+
+Splitting:
+
+ train and test sets (about 2000+ obs.) from df, while the rest is the unseen data used to predict my model, so basically before it is divided as train, test, unseen, all of their x and y have already gone through the preprocessing steps I just mentioned. 
+
+Here are my performance results for more context:
+
+Model performance for Training set  
+\- MSE: 0.2594976537894998  
+\- RMSE: 0.5094091222087604  
+\- R2: 0.7587318717665392  
+\----------------------------------  
+Model performance for Test set  
+\- MSE: 0.2827096319729295  
+\- RMSE: 0.531704459237394  
+\- R2: 0.7400478423915121
+
+Model performance for Unseen set  
+\- MSE: 2.6243143308472856  
+\- RMSE: 1.6199735586876984  
+\- R2: -2.3977763204757823  
+\----------------------------------
+
+Did I do something wrong/incorrect in my approach?
+- Here is the final shape of my x  (3463, 723), though I did not include 3D descriptors only the 1613 2D one for mordred, I dont know if that would make a difference, I am still prototyping my model.
+
+I also used before stacking regression on multiple parameters gathered from both randomsearch and gridsearch of svr, same conclusion.
+
+I am going to implement concordance correlation, tried it on my true test and test pred, gave about 85% correlation, but still figuring out how to use it if I have an external purely unseen/new dataset.
+- - Standard scaling on the target variable (y) is generally not recommended for regression problems. Standard scaling is applied to input features to bring them to a similar scale, but for the target variable, it might not be necessary. You typically scale only the input features.
+
+- Make sure that the preprocessing steps applied to the unseen data are consistent with those applied to the training and test sets. Any transformations or scalings should be performed using the parameters (e.g., mean and standard deviation for StandardScaler) obtained from the training set.
+
+- Do you have any potential data leakage?
+
+- It's also possible that the unseen set has different distributions or patterns compared to the training and test sets?
+
+- The negative R2 on the unseen set kind of indicates overfitting or model complexity issues. You may need to simplify your model or use other regularization techniques to prevent overfitting.
+
+- Consider cross-validation instead of a single train-test split.
+- Ok won't be that then. 
+
+You mention you did feature engineering on train/test. Did you separately go through the same FE process for the unseen data i.e same process but not within the presence of the train/test so that you would introduce an artificial advantage.
+- This doesn't answer their question, though.
+
+Is the distribution of pIC50 values drastically different in your unseen data? Do the means & variance of the unseen vs training/test look very different?
+
+Have you tried without StandardScaler on your \`y\`s?
+- Also did you separate the test/train data further into classes and do FE on each subset separately? This would likely result in a model that underfits the unseen data as you won't be able to use the same strategy in the unseen data.
+- Here are my measurements, I did log transformation on my y values :
+
+Statistical Measurements of y\_train:  
+Mean: 1.777339841345656  
+Median: 1.791759469228055  
+Skewness: -1.327593093437221  
+Kurtosis: 6.112502006724781  
+\----------------------------------------------------------------------  
+Statistical Measurements of y\_test:  
+Mean: 1.7798548580202471  
+Median: 1.791759469228055  
+Skewness: -0.2146181090735924  
+Kurtosis: -0.2976541564702524
+
+\----------------------------------------------------------------------
+
+Statistical Measurements of y\_unseen:  
+Mean: 1.8690992500142904  
+Median: 1.9021063021344082  
+Skewness: -0.5046237168254198  
+Kurtosis: -0.0865439970641968
+- As for the performance on the unseen, I did manage to lower the MSE after log transformations, but still having a negative r2 :
+
+Model performance for Unseen set  
+\- MSE: 0.06567825471706867  
+\- RMSE: 0.25627769063472666  
+\- R2: -0.7527250883365959
+- Initially when posted I did not do any transformation of any kind on the y

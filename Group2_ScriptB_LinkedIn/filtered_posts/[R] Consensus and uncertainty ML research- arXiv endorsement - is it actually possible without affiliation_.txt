@@ -1,0 +1,55 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ldxj8t/r_consensus_and_uncertainty_ml_research_arxiv/
+Title: [R] Consensus and uncertainty ML research- arXiv endorsement - is it actually possible without affiliation?
+
+Content:
+Hey r/MachineLearning,
+
+I’m an independent researcher working in a private company on agent consensus in metrology, and I’m hitting the classic arXiv endorsement wall. Wondering about people’s  experiences here.
+
+What I’m working on:
+
+- Mathematical framework for deterministic multi-agent consensus using uncertainty metrology frameworks;
+- New LM training approach based on uncertainty quantification and routing;
+- A benchmark to evaluate basic reasoning, where SOTA models score <30%;
+- Hypothesis: AGI probability requires proper uncertainty system, not parameter scaling.
+
+My problem:
+I’ve seen posts here claiming independent researchers can get endorsed, but after reaching out to a couple of researchers, the reality seems different. I’m not affiliated with any PhD program or institution. 
+
+What are my options?
+
+1. Keep trying for arXiv endorsement (any tips on approach?)
+2. Publish on personal website + GitHub with reproducible code
+3. OpenReview / ResearchGate 
+4. Find an academic collaborator just for the affiliation
+5. All of the above?
+
+Has anyone here successfully gotten endorsed as a private independent researcher? If so, what worked?
+
+Also curious, for those who’ve published outside traditional channels, did it hurt or help your work’s visibility? I care more about the ideas reaching the right people than academic exposure.
+
+Would especially love to hear from others working on foundational ML outside academia/big labs.
+
+Thanks!
+
+
+Comments:
+- Most of us won't endorse, unless we know you personally (and obviously your work) or you share your work with us, and we feel it's some genuine research. 
+
+Otherwise yea you can just submit it to conferences (on acceptance you need to go attend those) or simply get it published at TMLR/JMLR
+- It's important who is asking. Find some acquaintance with published papers and ask him to ask for endorsement for you. I was coauthor and first author had some published papers (completely unrelated). He just send mail to author in most close research area and got endorsment first try. But work was already on the blog and code open, so it could have been checked
+- I'm in the same situation. Consequently I've been thinking about submitting to Towards Data Science. Publishing on one's LinkedIn account is also a way to timestamp the paternity of an idea I suppose.
+- Try out research square
+- Hi there! I am seeking an endorsement for [cs.AI](http://cs.AI) for a paper about an Agentic AI Operating System. Happy to discuss the paper if anyone wants prior to endorsement
+
+The paper: [https://drive.google.com/file/d/1TOPmfO1bJZ-XQ1VxC6klInWL4p10ui2K/view?usp=sharing](https://drive.google.com/file/d/1TOPmfO1bJZ-XQ1VxC6klInWL4p10ui2K/view?usp=sharing)
+
+Endorsement Link: [https://arxiv.org/auth/endorse?x=SFKR97](https://arxiv.org/auth/endorse?x=SFKR97)
+
+Thank you!
+- Definitely helpful, thank you!
+- Is JMLR or TMLR rly easy to get accepted or something? I thought it’s still has a decent standard? Or is it just easier timing for OP? Just curious about the suggestion
+- Thanks, am trying to find old colleagues that might be working in ML
+- Thanks will check it out
+- I’m checking that would and seems that it’s possible and peer reviewed, but somehow seems that Arxiv is still relevant and maybe the norm in the field ? I’m checking all possibilities at this point

@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/drjimfan_please-see-update-below-a-recent-llm-hallucination-activity-7130230516246593536-mxAY
+Date: 2025-09-24
+Author: Unknown
+
+[Please see UPDATE below] A recent LLM hallucination benchmark is making rounds. Here are my reviews:
+
+- The study only evaluates "factual consistency" of the summary against the original article, but NOT the quality of summary itself. Here's a trivial baseline that will always achieve 100% factuality: a model that simply copies a few sentences from the article. No hallucination at all.
+
+This is similar to the well-known Helpfulness vs Safety tradeoff. A model that's 100% safe will reply "sorry I cannot help" to all requests. 
+
+- The evaluation relies on using another "judge LLM" to decide whether hallucination occurs or not, but the README contains very little detail ... [UPDATED below, I missed Vectara's blog post]
+
+- In fact, the study might even penalize models that give better summary, because they tend to paraphrase and distill more. That makes the Judge's job very difficult. Bad LLMs will simply copy stuff, and are somehow much easier to score.
+
+Source: https://lnkd.in/gA8j7VRk
+
+------------
+UPDATE:
+
+I wrote this post after seeing Bindu Reddy's Twitter post, which only linked the Github README. At the time of writing, the README did not contain the link to the more detailed blog, so I missed it. I have retracted some statements due to the missing article.
+
+Thanks to Simon Hughes, PhD from Vectara for bringing the post to my attention. I apologize that I completely missed the blog, which explains in details how the judge model is constructed. It is another 184M parameters LLM, finetuned on the SummaC Dataset and the TRUE Dataset, that does binary classification. 
+
+However, I believe my critique of the trivial baseline still holds. Yes, the benchmark does filter out empty or very short answers. But having a trivial solution like copying the first few sentences will make the benchmark "hackable". A model can achieve 0% hallucination but is a much worse LLM overall on all the actual tasks that matter. This would lead to misleading claims in the future for people who intentionally abuse the benchmark, such as "my model ABC hallucinates less than GPT-4 and therefore you should adopt ABC", but it turns out that ABC is simply a bad LLM.
+
+That being said, I do recognize the importance of having a benchmark to tackle hallucination systematically. I hope to give more credit to Vectara's team for initiating this effort, but also want to put in cautionary notes. 
+
+Thanks to all who participated in the reply section.

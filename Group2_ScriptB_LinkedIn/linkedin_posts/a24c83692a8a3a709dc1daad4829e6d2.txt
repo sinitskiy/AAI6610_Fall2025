@@ -1,0 +1,44 @@
+URL: https://www.linkedin.com/posts/sam-moreland-ds_the-biggest-gap-in-healthtech-ai-isnt-poor-activity-7361036890667401216-vqDY
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sam Moreland的动态
+Sam Moreland
+
+Health-Tech Entrepreneur and Consultant
+
+1 个月
+
+The biggest gap in healthtech AI isn’t poor usability, legal hurdles, or integration headaches. It’s something more fundamental: the mismatch between healthcare data and the AI models we currently use.
+
+(Caveat: I’m talking about today’s models, not hypothetical future breakthroughs.)
+
+What makes healthcare data and patient outcomes different? They are sparse and fat-tailed.
+
+Sparse data: You might have hundreds or thousands of measurements and variables, but only a small fraction carry real prognostic weight. 
+
+Fat-tailed data: These are probability distributions where extreme outcomes happen far more often than in thin-tailed (e.g., Gaussian) worlds. For example, human height is normally distributed and it's highly unlikely to get 100 m tall humans, but wealth is fat tailed in that most people have a little but some people have huge amounts. Rare events are not noise and need to be weighted correctly.
+
+Current AI (neural network) models are poor at handling both of these things. This is especially true using self-supervised methods or if you're just going to chuck data at the model using a softmax. 
+
+And this isn’t just a theoretical nitpick, it’s a fundamental flaw. When you feed sparse, fat-tailed data into models designed for thin-tailed worlds, you get outputs that are overconfident in the wrong places and blind to rare but critical events.
+
+Bridging this gap means rethinking architecture and training methods, not just adding GPUs or wiring into the EHR. Promising directions include:
+
+Bayesian neural networks to explicitly model uncertainty, letting the AI (and you) know when it’s guessing.
+
+Heavy-tailed likelihoods and priors so the model expects rare extremes instead of dismissing them as noise.
+
+Hybrid pipelines: self-supervised learning to build broad representations, with Bayesian or heavy-tail-aware heads for final predictions.
+
+Decisi

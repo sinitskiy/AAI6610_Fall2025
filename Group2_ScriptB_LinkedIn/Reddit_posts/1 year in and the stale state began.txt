@@ -1,0 +1,50 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1aowux7/1_year_in_and_the_stale_state_began/
+Title: 1 year in and the stale state began
+
+Content:
+After my first year in the fintech startup as a machine learning engineer, I feel like I'm not learning any new thing, and the job overall started to feel stale.
+Last month, I tried to apply for jobs abroad. However, most of them ended with a rejection as I don't have much experience. 
+
+If I can't get more experience at my current job, nor can I move on to a better one. What am I supposed to do with this conundrum?
+
+Comments:
+- Welcome to work its all mostly BS from here so find some healthy hobbies to do once the clock strikes 4
+- If you're one year into the workforce and not learning then you're not trying hard enough to find things to learn. 
+
+It's not all going to be about data science. Learn about every other aspect of the business, then your industry, then your markets and then the economy on local, national and global scales. 
+
+The more you understand all that, the more useful your data science will be.
+- You're 1 year into your job so you're nowhere close to knowing much about being an MLE. I know guys who have been at it ten years and are still expanding their expertise.
+
+First step is to put out feelers at work. Talk to your manager about new work. You may be in a situation where they're giving you basic tasks because you're new and haven't realized you're ready for more.
+
+If that doesn't work, then no worries. You have an easy job so can take a decent amount of time to yourself each week. Use this time for self direct learning. Auth, deployment options, model monitoring, networking, front end engineering, cloud engineering, there's a million things an MLE can be asked to do. Go learn some of it.
+
+Then in 6-12 months you'll have 18-24 months experience as an MLE, lots of knowledge for interviews, and maybe some useful certificates if you take something like an AWS exam.
+- When I encounter this issue at work, I usually select topics I want to learn about and search for a use case within my workplace. My best work projects have originated from this scenario.
+- Some ideas:
+
+- Continue your education - online tutorials, journal articles and textbooks.
+- Ask your supervisor if you can assist with other projects in the company which are more challenging.
+- If you have time and data is available, consider working on self-assigned DS projects as practice.
+- Attend nearby data science conferences that look interesting - consider presenting your work.
+- Use spare time to learn new skills on your own. Wait for the market to get better and change
+- May I ask for an honest opinion... I am 40 and just recently explored more in data analysis.. previously had some experience wth excel like pivot tables..mostly for reportings and data and tables..(not as deep as many youngsters now do). I completed certs in SQL, Python and Power BI and I am fully aware that these are not the real measures of skill. But at least a starting point for me who has no prior background. Will there still be an opportunity for me out there?
+- Is it because the whole department doesn’t have much work ? How about your peers ? I was working at one not having much to do. In the end , I found my peers were in similar situation too
+- [deleted]
+- Try upskilling yourself and see if that helps you land a job else where.
+- Sound self-centered as hell lol, you’re either so smart that you have already learn everything you can from your job, or you’re so stupid that you don’t realize that what you know now is not all there is to know
+- Goo
+- Try upskilling yourself and see if that helps you land a job else where.
+- I won't learn anything new after 1 year? Right now I am 2 months into my first DS job and feel a bit like drowning. 
+
+The thought of being bored to death after one year seems calming to me😂
+- This is so huge.  Not everything, and I'd argue most things are NOT about learning the latest on ML or LLM processes but just understanding the core business.  Seeing the struggles and issues alot of operational folks deal with and understanding their workflows will be just as vital as any technical skill you end up trying to learn.
+- Adding, learn how the place makes money, saves people, does X goal , etc that your models help them drive. 
+
+Also speaking: learn some public speaking.
+- Really love this
+- You can do anything if you’re dedicated. A few years ago I joined a team with some new hire contractors. One had been a restaurant manager until a year before we met. He decided to learn to be a SWE. Today he is a director of a division of developers at a massive tech company and our old boss on that first team works for him.
+- That sounds cool ! The automated finance reporting was set up on excel previously ?
+- [deleted]

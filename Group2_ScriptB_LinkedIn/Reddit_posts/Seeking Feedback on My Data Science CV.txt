@@ -1,0 +1,34 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1ns18vu/seeking_feedback_on_my_data_science_cv/
+Title: Seeking Feedback on My Data Science CV
+
+Content:
+
+
+Comments:
+- You need to space it out so it’s readable.
+
+Calling yourself a data science leader coming from an IC role is jarring. Maybe data scientist with leadership experience is better?
+
+You listed ROI’s but didn’t specify what part of those projects was data science in some instances. “Solution” is too generic. How would a hiring manager know your experience transfers? List the algo or the part you specifically did. 
+
+You can cut down a lot of text by removing adjectives and being more direct on what the project was. There’s too much fluff. 
+
+Listing python packages serves no purpose.
+- Error generating reply.
+- I'd suggest adding spacing and headers. Move your lanugages to the top and break that top paragraph into chunks of readable text. Formatting goes a long way, best of luck!
+- First, space it out. Second, your summary is a bit generic corporate-speak. Cut the buzzwords and try to be genuine. Third, your impact numbers are super, but they don't pop. And also, in this market, try to highlight GenAI way more.
+
+Good luck!
+- First, space it out. Second, your summary is a bit generic corporate-speak. Cut the buzzwords and try to be genuine. Third, your impact numbers are super, but they don't pop. And also, in this market, try to highlight GenAI way more.
+
+Good luck!
+- There is nothing wrong with it.
+- Are CVs still a thing? I thought they died off
+- I disagree on the last point, since there are some times those things can be on  automated filters. I've also had recruiters specifically ask if I've sklearn before. Maybe don't keep everything, but listing a few common packages isn't a bad idea.
+
+I agree with the rest, especially the spacing. I'd probably also cut the personal statement or at least trim it way down. 
+
+Reading your resume makes me think you're more of an ML TPM. If those aren't the roles your applying for do more to highlight specific model training and validation work you've done, if that's the kind of job your interested in.
+- Good stuff! I want to get into leadership at some point and I’ve had some managerial experience. I’m trying to find a way to demonstrate that or stand out. I’ll augment the language accordingly.
+- Fair. Thats an issue with my perspective. I only see the resumes after they are thru the recruiter filter.

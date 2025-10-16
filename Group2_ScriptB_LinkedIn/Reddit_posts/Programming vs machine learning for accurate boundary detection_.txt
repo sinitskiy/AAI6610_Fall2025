@@ -1,0 +1,62 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1l6fkkp/programming_vs_machine_learning_for_accurate/
+Title: Programming vs machine learning for accurate boundary detection?
+
+Content:
+I am from mechanical domain so I have limited understanding. I have been thinking about a project that has real life applications but I dont know how to explore further. 
+
+  
+Lets says I want to scan an image which will always have two objects, one like a fiducial/reference object and one is the object I want to find exact boundary, as accurately as possible. How would you go about it? 
+
+1) Programming - Prompting this in AI (gpt, claude, gemini) gives me a working program with opencv/python but the accuracy is very limited and depends a lot on the lighting in the image. Do you keep iterating further? 
+
+  
+2) ML - Is Machine learning model approach different... like do I just generate millions of images with two objects, draw manual edge detection and let model do the job? The problem of course will be annotation, how do you simplify it? 
+
+  
+Third, hybrid approach will be to gather images with best lighting so the step 1) approach will be able to accurate define boundaries, can batch process this for million images. Then I feel that data to 2)... feasible? 
+
+I dont necessarily know in depth about what I am talking here, so correct me if needed.
+
+Comments:
+- Need photos, and clarification on deployment assumptions (what’s the use of the fiducial? What kind of object?) for any feedback
+- I love Roboflow for annotation.  There’s an AI feature to help with drawing the bounding boxes (I’m in no way associated with Roboflow, I use it for my own projects).  But yes, you’ll need to annotate a large amount of images.
+- Try a pretrained model. Don't train your own unless you uave to.
+Birefnet is awesome. If you want seed point or bounding box guidance then sam2. If you want a faster model then mobile sam.
+- Ok, first of all, you won't get precise bboxes at all, so start figuring out how you can deal with that.
+Second, as you mentioned, background will be complex. This leaves you with no choice other than deep learning.
+I would say you can start by annotating your data very carefully.
+
+After that there are lots of models to begin with.
+Ultralytics have a very straightforward api to use.
+- Even if you can’t share publicly, are you able to collect a dataset containing the “final form of object”? With the purpose of training a model. 
+
+Also, maybe there’s an issue with phrasing on your end, but what is the point of the yellow object?
+- Lets says my object is block of legos (3d, so orientation could change in each photo) different size and shapes though color is not at all relevant. I need to find exact boundary against a relatively clean white background to start with. Background will get complex later on.
+
+Fiducial will be reference object, say a 2D lego square piece I have with exact known dimensions (minimal thickness so can be assumed 2D)
+- Here are the sample images. Yellow object will always be same object, though placement, camera angle will change. The pink object will have similar shapes but size will vary a lot.
+
+[1](https://i.imgur.com/BoJkEDS.jpeg)
+
+[2](https://i.imgur.com/hlE5kTY.jpeg)
+
+[3](https://i.imgur.com/tv5RLZb.jpeg)
+- I can start training data with object on A4 printing paper. While it clean and white, shadows still cause issue. I have attached few pics in one of the comment. Deep learning I believe will need thousands images if not million and while that can be done, annotating will be a pain :(
+
+Trying to see if programming might help with early stages, generating auto-annotated images with  clean images and get some form of model first.
+- I wan to calculate dimensions (h/l/w) of the target object using known dimensions of reference object.
+- > Background will get complex later on.
+
+That right there leads me to suggest an AI method. 
+
+A combined approach might actually work best. Combine AI with some post processing. For example let’s say you know your shapes always have straight edges but the AI gives you a jagged edge. Just fit a straight line to the jagged edge.
+- Is the varying object always pink? If so I suppose you could do some color matching to get pretty decent contours (robust to shadows). This could be your solution already. 
+
+If it’s not as robust as you’d like, you can also use the color matched output as part of a semi-automated annotation pipeline (or use SAM2, that will be very quick too). Then use these to train a CNN.
+- It won't. You can achieve partial result using classic cv(the programming you mentioned) , but that won't be useful since it's way too different than the real world situations.
+- Unfortunately, colors wont be any help here and for a reason, I dont want to rely on color as final form of object wont be contrasting color like this. The images are very good reference of what I am doing though, just without color stuff. Most likely my target/reference will have same color too at times.. except their shape will be different. 
+
+Ref will be exact square and target will never be square and will be irregular.
+- Ok, so sounds like this is primarily a deep learning problem then. I will check out what is Ultralytics. Thank you.
+- Ultralytics is a company, but it has a very compact repo that contains so many good models. But Start with annotation.

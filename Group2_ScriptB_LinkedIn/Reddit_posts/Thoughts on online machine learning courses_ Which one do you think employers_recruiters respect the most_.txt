@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/q3gdnm/thoughts_on_online_machine_learning_courses_which/
+Title: Thoughts on online machine learning courses? Which one do you think employers/recruiters respect the most?
+
+Content:
+Hi, I'm currently working on my masters degree in bioinformatics. Unfortunately, my program does not offer machine learning courses that focus on bioinformatics. My only options are business and civil engineering machine learning courses, I'd have to take them as electives. 
+
+I know that machine learning is a very important skill to have as a bioinformatician, so I'm eager to learn it. I've come across many websites that offer certificates, but I'm worried about wasting my time and money by picking one that doesn't cover enough of what I'd need or isn't very respected by employers. 
+
+Which websites/courses do you think I should consider? Here are the characteristics I'm looking for: 
+
+1. Focuses on bioinformatics 
+2. Covers a lot of material that is useful/important for bioinformatics, enough for employers/recruiters to respect it 
+3.  Includes assignments that involve actual programming, not just quiz questions 
+4. Good instructor 
+5. Costs less than $100 
+6. This isn't necessary, but maybe also a course which utilizes something like Jupyter notebooks or their own interactive interface for programming. 
+
+Here are the sites that I have found so far: Coursera, edX, Datacamp, Dataquest, Codecademy, and Udemy, Udacity 
+
+BTW, I know a lot of posts have already been made asking this same question, but many of them are a couple years old. Thank you for taking the time to read this!
+
+Comments:
+- >I know that machine learning is a very important skill to have as a bioinformatician,
+
+Not really, tbh. Don't get me wrong - there are huge amount of bioinformatics machine learning and deep learning application out there. However, most of bioinformaticians are just users and only require skin-deep understanding of machine learning. For example, I can imagine there are lot of us will use Alphafold , but very few of us will actually build a  Alphafold.
+- I would say in industry, any role that would require ML either requires a phd or several years XP.  It’s not a technique utilized by a fresh masters graduate.  I would spend the time studying up on probability/statistics instead, because you’ll need them for ML if you ever wanted to learn it, but stats is much more immediately applicable to anything you’d be working on.
+- Andrew Ng's and Fast.AI's stuff are the best ones probably
+
+That said, employers and recruiters don't care about MOOCs
+- It's the same as 5 years ago. Nobody cares about ML courses you've completed online. And believe me, anything on Datacamp, Dataquest, Codecademy is too basic.  As already mentioned, Andrew Ng courses are the best out there. I'd also recommend "Grokking Deep Learning". From there on you can look at recent ML applications in bioinformatics, like [https://scnym.research.calicolabs.com](https://scnym.research.calicolabs.com) or [https://github.com/YosefLab/scvi-tools](https://github.com/YosefLab/scvi-tools) Try reproducing their results or applying the methods to novel datasets. That'll give you much more than spending $100 on an online course.
+- I would consider studying bioinformatics and machine learning separately. For ML courses, Andrew Ng's machine learning and deep learning courses on Coursera are pretty good. I also like the free Fast.ai courses. Either way, get hands-on as early as you can.
+- Wow thank you so much for everyone’s insight so far! I’m happy to know that ML isn’t as crucial of a skill I thought it was. It seems like if I do gain experience with it, it could potentially make me stand out more. I like that multiple people recommended the same instructor on Coursera, so I’ll check him out.
+- As other have said, it not really crucial to learn *now*, but it really be helpful in application to research, maybe later on. 
+Note that I’m not in bioinformatics degree but I do bioinformatics thing as my research at graduate school.
+
+Im using Datacamp for learning python and ML but for your criteria it only meet up 3, 4 (subjective opinions) and 6 (they offer quite good interface for coding learning) and maybe 5 If you doing fast enough (it is subscription-based) 
+
+For 1. it cover pretty basic thing but you can apply it later on, they also have project based learning with some biology data?, and 2 I really don’t know but it didn’t offer real certification unlike some course in coursera, Datacamp just only Statement of accomplishment or something
+- Very useful question.
+Unfortunately no answers have been posted yet 😥
+- Thank you

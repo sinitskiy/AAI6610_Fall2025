@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1i5xv29/d_uncertinity_quantificationfor_time_seriese/
+Title: [D]  Uncertinity Quantificationfor time seriese prediction (RNN)?
+
+Content:
+I have a time series that predicts one of two classes at each step (0 or 1) using RNN, so it's sequence to sequence. I'm new to the topic of Uncertainty Quantification (UQ). Can I directly apply common methods such as deep-ensemble or MC dropout and simply expect everything to work? Are there any caveats?
+
+I have checked two libraries: [torch-uncertinity](https://github.com/ENSTA-U2IS-AI/torch-uncertainty) and [UQ-BOX](https://github.com/lightning-uq-box/lightning-uq-box) but nothing is mentioned about time series.
+
+Comments:
+- Hello, developper of torch-uncertainty here. I don't see any reason why Deep Ensembles or MC Dropout could not be applied to your problem. While we do not have anything related to time series yet in our library, feel free to create an issue if you need any help.
+- Since you are actually doing classification, you have probabilities. You can just use those, but they may not be calibrated. 
+
+If you treat each prediction as an instance, you have instances of both cases, so you could do a calibration.
+- For conformal inference, you could also try using MAPIE: [https://mapie.readthedocs.io/en/stable/](https://mapie.readthedocs.io/en/stable/)

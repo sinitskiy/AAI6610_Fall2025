@@ -1,0 +1,40 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/ywlyxk/what_does_the_future_hold_in_terms_of_using/
+Title: What does the future hold in terms of using machine learning in bioinformatics?
+
+Content:
+I was wondering what the possible developments are regarding using machine learning in bioinformatics? 
+
+I’m trying to gather resources to pick up and useful skills/tools/technologies to learn now that will have use or impact in the future of bioinformatics!
+
+Comments:
+- I am a Phd in Microbiology and currently working on Bioinformatics research in the clinical field. Here are some of my thought for your reference:
+
+* Doctors don't believe in Machine Learning (at least they are mostly not convinced to use rely on Machine Learning programs to facilitate diagnostics)
+* In many cases, ML is about using a program to make things work without knowing how it actually work. In these cases, it is difficult to use these findings to create huge impact, because we can't reason the process, thus the result might not be convincing.
+* It can be a super good tool to narrow our scope when we search for new research target, such as drug discovery.
+* It will take time for the science community to accept that ML can be a reliable tool. For example, no matter how famous alpha-fold is. Many scientists still prefer Cryo-EM for structural analysis. 
+* Most of the clinicians or biologists have no idea how Machine Learning works. It is very difficult for them to incorporate ML in their daily research routine. On the other hand, many bioinformaticians are not familiar with the clinical or biological aspects of their target enough to create an useful program for biologist to use or understand.
+* We need more databases with properly formatted data in order to properly train models.
+
+I would like to stress that, ML can be a SUPER good tool in facilitating research when we have no idea where to start. For example, no matter how good are the available platforms. we can't screen for millions of chemical compounds for drug development. Machine Learning can definitely help here.
+- Idk how promising it is but in my MSc my profs were very excited by the crossover of ML and drug discovery, a relatively new field still within bioinformatics
+- I’m definitely biased since this is my research topic but I think it has to capability to completely change how biology research is performed and how medicines are developed. I think machine learning alone with the most simplistic models (DNN) aren’t that great but when you start considering statistical machine learning, information theory, and statistical mechanics, it has the power to describe systems with extremely high precision. One big challenge is generalizability though.
+- Upper level computational biologist in pharma, it has huge potential but is limited currently. The trick will be to use it in a way that clinicians are willing to adopt (e.g. using it as one of the components of a molecular tumor board). I developed my own approach to use DL to find robust gene signatures off of minimal sample input (i.e. <10 samples). This has been very popular
+- Per my current boss, everything. Per my former boss, dreadfully little.  
+
+I've seen a few rather fabulous ML use cases and a few that used machine learning to come to a conclusion that was painfully clear with linear regression. 
+
+Ymmv
+- This question is similar to asking about the importance of statistics in bioinformatics. It is going to be spread out in bits and pieces and used everywhere. One area I’ve been using is a ML information criterion instead of a p-value. Such as the importance of a gene in an RNAseq differential expression assay, or the importance of an organism in a metagenomics comparison of different samples.
+- It’s still new but obviously has high potential.
+
+You’re not going to get a more accurate answer than that.
+- Neurosymbolic programming... idk what it is, but it sounds cool.
+- I’m currently publishing a paper doing de novo design of drugs using deep learning. All validated experimentally. Worked extremely well
+- I love ur username
+- >I developed my own approach to use DL to find robust gene signatures off of minimal sample input (i.e. <10 samples).
+
+Do you have any more details on this you can share? Sounds interesting.
+- [deleted]
+- They seem like a good computational chemistry company but I wouldn’t say they are using the bleeding edge of AI for chemical design. Insilico Medicine is closer to that IMO

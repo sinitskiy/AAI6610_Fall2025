@@ -1,0 +1,16 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/f89sua/neurology_book_for_a_computer_science_guy/
+Title: Neurology book for a Computer Science guy
+
+Content:
+Hi r/biology community, a guy form r/MachineLearning here. Some of You might be familiar with the concept of Artificial Neural Networks, I am currently making some from scratch just so I comprehend things better. It poked my attention on how ANNs mimic natural neurons, so I wondered if there is a nice comprehensive Neurology book that explains how neurons of different parts of human body work and process electrical impulses and it would also be nice if the book covered the evolution of neurological systems, not too hard of course.
+
+Not trying to invent a new ANN fundamental architecture and be Elon Musk of Machine Learning but it still pokes attention. Thanks! :D
+
+Comments:
+- [Algoriths to Live By](https://www.amazon.com/Algorithms-Live-Computer-Science-Decisions/dp/1627790365) by Brian Christian and Tom Griffiths. Layman accessible yet very precise.
+
+[Vision](https://mitpress.mit.edu/books/vision) by David Marr. A must if you want to understand why the field began looking at the mind more or less like a computer. 
+
+At the basis of it all, there's the all of nothing rule of signal processing in an axon, and the strengthening of neural pathways when they get used.
+- Many thanks, will surely take a look :)

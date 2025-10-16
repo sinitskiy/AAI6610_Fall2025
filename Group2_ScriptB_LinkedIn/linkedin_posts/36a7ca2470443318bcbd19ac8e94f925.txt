@@ -1,0 +1,100 @@
+URL: https://www.linkedin.com/posts/ravi-kanth-sriwastav-phd-49212616b_earthquakeengineering-machinelearning-bayesianneuralnetworks-activity-7349705661795942400-Vozf
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ravi Kanth Sriwastav, PhD的动态
+Ravi Kanth Sriwastav, PhD
+
+Structural Engineer | Seismic Hazard & Risk Assessment Researcher
+
+2 个月
+
+Happy to share our latest publication in the 𝐉𝐨𝐮𝐫𝐧𝐚𝐥 𝐨𝐟 𝐄𝐚𝐫𝐭𝐡𝐪𝐮𝐚𝐤𝐞 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫𝐢𝐧𝐠, led by Dr. Jyothi Yedulla and co-authored by me, Anuj Choubey, Kammula Sai Tulasi, and Prof. Raghukanth STG! 
+
+📄 Title: Bayesian Neural Network-Based Ground Motion Model for Horizontal and V/H Spectral Ordinates with Epistemic Uncertainty for the European Region
+
+Artificial Neural Networks (ANNs) have revolutionized the development of non-parametric Ground Motion Models, but they often overlook epistemic uncertainty, providing only deterministic-point estimates. In this study, we have explored the power of Bayesian Neural Networks (BNNs)—probabilistic models that can predict median, aleatory, as well as epistemic uncertainty. 
+
+📊 Why does it matter?
+Better uncertainty modeling for seismic hazard analysis 🔍
+Improved reliability in ground motion predictions for performance-based design 🏗️
+A step toward probabilistic, data-driven earthquake engineering 🧩
+
+🔗https://lnkd.in/dvqXJBFz
+
+
+
+#EarthquakeEngineering #MachineLearning #BayesianNeuralNetworks #GroundMotionModels #SeismicHazard #ArtificialIntelligence #StructuralEngineering #ResearchPublication #BNN #ANN #GMM
+
+57
+1 条评论
+赞
+评论
+分享
+Dr. Bonisha Borah
+
+2 个月
+
+Congratulations 👏
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+1,944 位关注者
+
+31 则动态
+查看档案  关注
+探索相关领域
+Latest Trends in Machine Learning
+How Data Improves Hurricane Predictions
+How to Understand Neural Networks and Llms
+Updates on New AI Model Releases
+How to Optimize Machine Learning Performance
+Current Engineering Approaches and Trends
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

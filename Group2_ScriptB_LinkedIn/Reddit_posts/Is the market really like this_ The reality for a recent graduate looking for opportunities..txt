@@ -1,0 +1,89 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1n035we/is_the_market_really_like_this_the_reality_for_a/
+Title: Is the market really like this? The reality for a recent graduate looking for opportunities.
+
+Content:
+Hello . I’m a recent Master of Science in Analytics graduate from Georgia Tech (GPA 3.91, top 5% of my class). I completed a practicum with Sandia Labs and I’m currently in discussions about further research with GT and SANDIA. I’m originally from Greece and I’ve built a strong portfolio of projects, ranging from classic data analysis and machine learning to a Resume AI chatbot.
+
+I entered the job market feeling confident, but I’ve been surprised and disappointed by how tough things are here. The Greek market is crazy: I’ve seen openings that attract 100 applicants and still offer very low pay while expecting a lot. I’m applying to junior roles and have gone as far as seven interview rounds that tested pandas, PyTorch, Python, LeetCode-style problems, SQL, and a lot of behavioral and technical assessments.
+
+Remote opportunities seem rare on EUROPE or US. I may be missing something, but I can’t find many remote openings.
+
+This isn’t a complaint so much as an expression of frustration. It’s disheartening that a master’s from a top university, solid skills, hands-on projects, and a real practicum can still make landing a junior role so difficult. I’ve also noticed many job listings now list deep learning and PyTorch as mandatory, or rebrand positions as “AI engineer,” even when it doesn’t seem necessary.
+
+On a positive note, I’ve had strong contacts reach out via LinkedIn  though most ask for relocation, which I can’t manage due to family reasons.
+
+I’m staying proactive: building new projects, refining my interviewing skills, and growing my network. I’d welcome any advice, referrals, or remote-friendly opportunities. Thank you!
+
+PS. If you comment your job experience state your country to get a picture of the worldwide problem.
+
+PS2. Started as an attempt for networking and opportunities, came down to an interesting realistic discussion. Still sad to read, what's the future of this job? What will happen next? What recent grads and on university juniors should be doing? 
+
+Ps3. If anyone wants to connect send me a message 
+
+Comments:
+- Tough time for new grads
+- Remote junior roles are sort of a unicorn in my opinion. Not sure what your reasons are for not doing hybrid or in person as a junior, but I would imagine that is the only thing keeping you back from landing a role. It sounds like you are very good at what you do and have a great technical and education background. There really isn't much advice anyone can give here to be honest. I have a very good friend who has 10 years of experience as an analysts and data scientist and had to take an in person job and commute 1 hr each way.
+- Remote positions, especially in high paying countries (like the US) are highly competitive. The people that I know that managed to do it, either did it through networking (or because they worked directly in the company through a consulting firm) or they mass applied (I am talking 500+ application for several years).
+
+
+Also, online applications are even harder. Honestly I would try to check companies online, see in their website if they have openings and send an email directly. Linkedin and co are essentially useless for remote due to mass applications.
+
+
+Honestly, to start, I would recommend you to get a job in your country. It's easier. The pay won't be great but you'll get the experience and hopefully the connections. And it's easier to do remote in the same country. And if you're employed, you can keep applying but with less pressure.
+
+
+Another thing to consider is, if you really studied at a top university, in a couple of years the people you know are going to be in top positions. It doesn't seem much now, but it will be much easier to get those remote positions then, assuming you left a good impression and by then you have some experience.
+
+
+Alternatively, for countries like France and Germany, knowing the language is super important. So if you are really bent on working remotely, I would even consider learning the languages (before I worked in SAP and there were SO many job openings in Germany, but they all required fluent german).
+- Yes, the market is terrible. I have an MS in Math, 10+ years of experience, I'm finishing up a second masters in CS (also from GT), and worked as a Research Scientist in an AI lab at GT for the last year. For every 100 applications I send out, I get 2-3 callbacks, and the interviews feel like they're looking for any reason to NOT hire you rather than looking for why they should.
+- You're definitely not going to find remote jobs in the US as a recent grad and non citizen. Most of the big corporations have mandated return to office either full time or hybrid. Even for citizens with tons of experience it's basically impossible to find a remote job in this field. I have a master's and 15 years experience and had maybe 3 interviews out of a thousand applications to remote jobs earlier this year.
+- I’m a bachelors new grad from uc Berkeley. Had a previous data science internship and research experience. It still took me 900 applications to land my ds job, and it’s not even remote. 7 interviews in 100 apps is good. I don’t have a masters but I do hope my experience is able to shed some light on how terrible the market is right now
+- Do you have professional experience in analytics? You can look into data analyst/business analyst roles where there is a career track to Data Scientist role within the same company.
+- I know over-qualified newgrads who spent more than a year in this market and still hasn't landed a job. You are not alone.
+- Not trying to be a prick. But you’re looking for remote roles like the rest of the world, and guess what there are thousands of people with better credentials than you academically and coming from big tech companies. Everybody wants remote, I guarantee you could easily find an onsite job
+- You need to leave Greece
+- I’m not a new grad but recently went through a job search and things have changed a lot in the past few years. Gone are the days of “you can get an offer with 50-75% of qualifications.” Now it seems like you need 100% or more of the qualifications. The offers I got (after a *long* search) where for positions where I exceeded what was listed on the job description *and* had niche experience that made me a “unicorn” candidate. And this will trickle down to all levels meaning it will be exceptionally hard for entry level folks to get an offer, when there are folks with 2-3 YOE willing to do junior roles.
+- universities gradually becoming vocation focused has been such a disaster
+- We are banned from hiring anything other than senior data scientists. The only way into our company is by having 5-6+ years experience or being lucky enough to get into the grad program (which is mostly just nepotism)
+
+Large Australian bank
+- Sorry to say this but I feel like your post is a bit meaningless. The reason you are not finding a job is obviously that you don't want to relocate. 
+
+No offense but you don't want to leave Greece bro, you are going to be eating shit even if you have 20 PhDs and places will not hire someone without experience for a fully remote position.
+
+If your family situation is a preference rather than a hard resposability, tough it out and move. Unfortunately you are shooting yourself in the foot by not doing that.
+- Ya hella shitty
+- You’re not going to find a decent remote job as a new grad. The hard truth is you need to identify whatever is holding you back from being able to relocate and deal with it in another way. You need to find a way to be open to relocation.
+- you’re doing almost everything right  
+the issue isn’t you—it’s the market tightening, roles inflating, and remote drying up post-2022
+
+here’s the brutal truth:
+
+* junior = oversaturated
+* remote + international = even harder
+* DL-heavy roles = gatekept by PhDs or senior folks with prod exp
+
+your edge isn’t going to be more projects or higher GPA  
+it’s *distribution*  
+you need visibility in rooms where your résumé won’t get buried
+
+do this:
+
+* start posting weekly breakdowns of your projects on LinkedIn
+* reverse-engineer job descriptions into mini case studies, post them too
+* DM hiring managers *after* they engage with your posts
+* for remote, look into open-source contribution + async startup ecosystems (many don’t post jobs)
+
+you’ve got the goods  
+now you need leverage
+
+[The NoFluffWisdom Newsletter](https://NoFluffWisdom.com/Subscribe) has sharp, actionable takes on breaking into tough markets and building visibility without burning out worth a peek!
+- The market is oversaturated for junior roles and AI buzz makes everything harder. I found my job 4 years ago in a different market but my vest luck always came from career fairs. Blind applying to jobs with no networking kicked my butt and is super difficult. Career fairs (virtual or in person) where you can have an actual interaction with a recruiter is where it's at. HR may not ever look at your resume just applying online. Good soft skills having a chance to actually talk to a recruiter at an event makes things way easier and more likely you will at least get your resume under consideration
+- I finished OMSA in May: but my job search had been going on for a year and a half before that. Nightmarish. You need to apply for anything and everything that you can inject your new skills into. Do not apply to only data roles. In this market, getting into these without deep, deep domain knowledge is nearly impossible. 
+
+Also, this has been going on for a while: at least a year and a half.
+
+Also: try to limit your time on Reddit: reading these type of posts really drain your energy and increase those feelings of hopelessness.
+- Sheesh, I'm sorry to hear this. Feel for ya because I was in same program, but ended up dropping out (skill issue amongst other things) and focused on getting promotions and developing social life. Always hear stuff like this and wonder decision was right one. Hope you find a job soon!

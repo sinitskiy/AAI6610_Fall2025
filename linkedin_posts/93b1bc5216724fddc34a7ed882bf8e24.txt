@@ -1,0 +1,19 @@
+URL: https://www.linkedin.com/posts/kinjalbasu_ai-llm-hallucinations-activity-7166215680646635521-kTTW
+Date: 2025-09-24
+Author: Unknown
+
+Hallucination in LLMs is a very critical problem, especially in data-centric applications, where the accuracy of numeric computations and data interpretation is crucial.
+
+In general, as 3rd-party LLMs become better over time, some of the inaccuracies due to hallucinations will be reduced. However, in core data applications, it may not be enough to take action based on a 95% or even 99% accuracy. There is a recent paper on arXiv, https://lnkd.in/dgwDAJVD where researchers try to mathematically prove that hallucination is inevitable.
+
+It is in this context that innovative vertical-focused solutions can shine even though they are dependent on foundational models. These solutions have the potential of understanding and using domain-specific data (through Knowledge Graphs), applying specific solutions (such as code execution, symbolic logic, etc.), and orchestrating an entire workflow to solve the question.
+
+What are your thoughts on this aspect?
+
+
+话题标签
+#AI 
+话题标签
+#llm 
+话题标签
+#hallucinations

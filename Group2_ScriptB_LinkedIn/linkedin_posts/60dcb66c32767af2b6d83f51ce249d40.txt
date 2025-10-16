@@ -1,0 +1,54 @@
+URL: https://www.linkedin.com/posts/anuarpires_machinelearning-microblocking-resourceestimation-activity-7371205326269755392-n0WJ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anuar B.的动态
+Anuar B.
+
+Coordenador de Planejamento de Mina | Especialista em Lavra de Carvão | Integração Planejamento-Geotecnia-ESG | Inovação em Mineração Sustentável
+
+4 周  已编辑
+
+🚀Microblocking + Machine Learning: Block-by-Block Uncertainty
+
+A technique published in March 2025 is fundamentally transforming the way we estimate mineral resources. Microblocking powered by machine learning is not just another tool-it represents a paradigm shift that integrates data science with geology. 
+
+🔹What makes microblocking revolutionary?
+Traditionally, resource estimation has relied on geostatistical methods such as kriging. 
+
+Microblocking reframes the challenge as a machine learning problem, introducing capabilities that were previously unimaginable: 
+ - Automated Deployment: Self-updating models;
+- Remote Monitoring: Real-time operation;
+- Big Data Ready: Handles massive volumes of geodata;
+- Epistemic Uncertainty: Quantifies what we genuinely do not know.
+ 
+ 🔹The breakthrough - Uncertainty Propagation: 
+- The core innovation lies in the way this method propagates epistemic uncertainty-the uncertainty that exists simply because we lack sufficient data. In mining, drill holes reveal less than 0.001% of a deposit’s total volume. 
+
+🔹How it works in practice:
+- Ensemble Sub-Sampling: Multiple ML models trained on different data subsets;
+ 
+ - Out-of-Sample Testing: Rigorous validation grounded in ML principles;
+
+ - Block-Specific Uncertainty: Confidence levels estimated for each individual block;
+ 
+- Intelligent Sequencing: Prioritizes sampling in areas of both high uncertainty and high economic potential 
+ 
+🔹Advantages over traditional methods:
+✅ More Specific: Uncertainties calculated block by block, not only at the global scale; 
+✅ More Comprehensive: Broader scope than kriging variance; 
+✅ Real-Time: Continuous updates with new data ;
+✅ Cost-Effective: Automatically optimizes drilling campaigns.
+
+🔹Real-world application:
+-Imagine a s

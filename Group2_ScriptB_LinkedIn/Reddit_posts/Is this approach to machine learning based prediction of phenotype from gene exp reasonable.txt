@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/13i53eo/is_this_approach_to_machine_learning_based/
+Title: Is this approach to machine learning based prediction of phenotype from gene exp reasonable
+
+Content:
+I am using gene expression data to predict lipid values (continuous variable). To check if the model trained is good and the predicted values are reasonable, I am planning to run a t-test of no significant deviation from zero for the difference between the observed and predicted values in the test. Is this a reasonable approach or is there a better way of doing this?
+
+Comments:
+- You can use canonical prediction accuracy metrics like RMSE, MAE, MBE, and R2 instead of a t-test and then do multiple replicates of k-fold cross-validation.
+- I would go for R2 as others did in publications. Won't go for t-test.
+- Just to be clear, you absolutely should use these metrics. A t test is not a valid metric for evaluating regression accuracy.

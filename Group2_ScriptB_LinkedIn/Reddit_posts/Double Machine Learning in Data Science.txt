@@ -1,0 +1,65 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gezu46/double_machine_learning_in_data_science/
+Title: Double Machine Learning in Data Science
+
+Content:
+With experimentation being a major focus at a lot of tech companies, there is a demand for understanding the causal effect of interventions.
+
+Traditional causal inference techniques have been used quite a bit, propensity score matching, diff n diff, instrumental variables etc, but these generally are harder to implement in practice with modern datasets.
+
+A lot of the traditional causal inference techniques are grounded in regression, and while regression is very great, in modern datasets the functional forms are more complicated than a linear model, or even a linear model with interactions.
+
+Failing to capture the true functional form can result in bias in causal effect estimates. Hence, one would be interested in finding a way to accurately do this with more complicated machine learning algorithms which can capture the complex functional forms in large datasets.
+
+This is the exact goal of double/debiased ML
+
+https://economics.mit.edu/sites/default/files/2022-08/2017.01%20Double%20DeBiased.pdf
+
+We consider the average treatment estimate problem as a two step prediction problem. Using very flexible machine learning methods can help identify target parameters with more accuracy. 
+
+This idea has been extended to biostatistics, where there is the idea of finding causal effects of drugs. This is done using targeted maximum likelihood estimation. 
+
+
+My question is: how much has double ML gotten adoption in data science? How often are you guys using it? 
+
+Comments:
+- Not getting the functional form right is rarely the biggest problem in causal inference
+- What an oddly toxic post
+- My biggest issue with DML in business settings is that most data scientists lack the knowledge needed to utilize this and basically any other causality-related methodology, and end up with very wrong and potentially dangerous conclusions.
+
+Exhibit A, basically every line written in the OP. 
+
+* Why would traditional causal inference techniques be harder to implement with modern datasets? It's quite the opposite.
+
+* The concept of regression is not even understood. Why would a regression necessarily imply linearity?
+
+* Failing to capture the true functional form does not result in bias under the right setting (for example, when evaluating an RCT).
+
+* The exact goal of DML is not to capture the true functional form to debias causal effect estimates. The goal is to be able to do inference on a low-dimensional parameter vector in presence of a potentially high dimensional nuisance parameter. Within the regression framework, btw.
+
+* It is NOT a two step prediction problem. That part of the paper is used to illustrate the intuition behind the methodology. The estimation is not carried out that way, but yeah, most stop reading after the abstract and first chapter (the intuition part). At best you could say that DML is based on two key ingredients, but it is not two steps of prediction problems.
+- The applied scientists and data scientists I work with are vaguely aware of it. Some have maybe given it a try. The Economists I work with love it, and use it for just about everything. Seems to still exist mostly in the world of econometrics.
+- TMLE and the ideas of Debiased ML predate double ML by nearly 20 years. So I wouldn’t say this idea has been extended to biostatistics; it started in biostatistics and epidemiology. Double ML is a rediscovery of it.
+- Fundamentally the identifying assumption of DML is unconfoundedness, i.e. the exact same identifying assumption for OLS to be consistent for an ATE. While it does flexibly control for the effects of observed cofounders that’s a second order concern to selection bias, reverse causality, and omitted variable bias.
+
+It’s mostly helpful when you have a very large number of potential confounders. That all being said everybody uses DML at my work. We have lots of confounders so it gets used a lot.
+- I've noticed that DML is definitely picking up steam, especially in areas where understanding causal relationships is key it's really helpful for tackling complex datasets that traditional methods struggle with
+
+I’ve seen some people in my network start using DML for projects, particularly in tech and healthcare tools like Python’s `econml` are making it easier to implement, which is great. While it’s not mainstream yet, the interest is definitely there, and I think as more resources come out, we'll see it used more widely.
+- I'm seeing it everywhere. There are lots of ways to do quasi-experimentation. DML gets you closer to the theoretical best answer.
+- Very toxic post but odd
+- This is new!!!
+- In my experience people lack competence and interest in causal inference.
+- I've found DML to be very sensitive to hyper parameter and validation sample specs, and fitting GLM's with fixed-effects to give more reliable estimates on longitudinal data. 
+
+I think analysts would get most benefits from learning the classical techniques of causal inference. 
+
+Even colleagues with academic credentials in machine learning get to use their knowledge of linear models e.g. to fit and decompose time-series with tools like Prophet.
+- We've tried it where I'm at (medtech). We liked it. But it was shelved because there was no contracted customer use case.
+- We definitely use it ! Mostly in cases when we cannot run an experiment, either due to regulations or nature of the product. To be noted, due to the complexity of the method it is tough to defend the dml casual end results .
+- Wow! This is new.
+- Amazon seemed to have productionized a DML model recently - here is their paper on it [https://arxiv.org/html/2409.02332](https://arxiv.org/html/2409.02332)
+- Wow
+- The article was such an interesting read
+- Big issue with bias in data
+- .

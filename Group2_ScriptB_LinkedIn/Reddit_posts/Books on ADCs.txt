@@ -1,0 +1,23 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1g0itr4/books_on_adcs/
+Title: Books on ADCs
+
+Content:
+Hi Biology!
+
+I'm hoping to learn more about antibody drug conjugates, I was wondering if anyone had any book recommendations?
+
+I've had a Google around, but all I've been able to find are multi-hundred pound textbooks. Looking to read something a bit more casual, but still, you know, sciencey.
+
+I have a decent baseline understanding of both pharmacology and immunology, but far from knowledgeable! Never really operated in oncology at all and I'd like to learn more about ADCs.
+
+Sorry if this is a bit niche, any suggestions would be amazing.
+
+:)
+
+Comments:
+- You're only going to find textbooks and journal articles on something that specific and scientific in nature. At least if you want anything more than wiki
+- 1. "Antibody-Drug Conjugates: Fundamentals, Drug Development, and Clinical Outcomes to Target Cancer" by Kenneth J. Olivier and Grace Lee  
+2. "Antibody-Drug Conjugates for Cancer Therapy" by L. Nathan Tumey
+
+3. "The Chemistry of Antibody-Drug Conjugates" by Marc Damelin

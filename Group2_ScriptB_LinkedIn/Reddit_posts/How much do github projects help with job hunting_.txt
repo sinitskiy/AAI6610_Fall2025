@@ -1,0 +1,52 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1iq75fi/how_much_do_github_projects_help_with_job_hunting/
+Title: How much do github projects help with job hunting?
+
+Content:
+I am currently doing my masters in bioinformatics. I want to do a machine learning project for my thesis but my seniors have told us that it’s extremely difficult to do so in such a short time. I am learning machine learning techniques on my own in free time and planning to do some small projects and upload them on my github. I’ll be looking for jobs soon enough but I wanted to know if me uploading projects on github will help me with it.
+
+Comments:
+- [deleted]
+- When I see a GitHub on a so-so resume, I’ll look at it. Usually the GitHub’s have half baked projects, so it generally does not help the candidate. On occasion, I’ll see some industrial quality code and I’ll take the candidate to the next level. 
+
+Most HM’s won’t bother to even check the GitHub though. There’s 1000+ candidates for one of my open positions. Too many to be clicking through to GitHub’s.
+- They are important showcases of work, especially when a candidate does not have a lot of experience or switched careers. Still does not beat knowing someone though.
+- Has anyone recently landed an entry-level bioinformatics job and can share their GitHub? I’d love to see some real project examples and how you present your work.
+- Github only matters when they are really interested in you in the first place. I didn't work on my github page after one or two big projects. What got me my current job is the copy of my actual research which was relevant to my current position. My PI had done similar research on molecular biology side, and I had done from deep learning side which was perfect situation for me.
+- They help a lot - learn how to make software packages in python and/or R that can even lean on some of your old scripts. You can work with ChatGPT on it - but know that it'll also be clear if your repo isn't really solving a problem and was just a toy project. Think about what sort of functions you've created and wanted to reuse, and package it up into something that will actually increase your productivity.
+- they are certainly valuable but the rest depends on the employer
+- >I want to do a machine learning project for my thesis but my seniors have told us that it’s extremely difficult to do so in such a short time.
+
+It depends. If you are doing supervised learning and have a readily available, quality controlled, learning dataset, it is totally feasible. 
+
+BUT most of the time, the hardest part is to have a proper learning dataset, in the domain of interest and to quality control it. Believe me, I got to deal with this crap for 8 years now, most of the dataset "open" published  and that passed high impact factor peer reviewing, are often impossible to get because multiple level of committee authorization (crazy paperwork), "we lost the fastq, we only have the BAM" (yes, I got this one, paper published 2 years ago in Nature comm.), because "privacy laws" (yes, I got also this one, never got the answer about what articles in what laws, dataset used in 6 papers, requiring open datasets), because the metadata are wrong (control/treatment messed up, skipped a line in the excel file) or missing (and impossible to get it because "privacy"). 90% of my job as bioinformatician is trying to get access or cleaning the crap of other people that  "open access" published in Nature/Science/Cell/NAR/...
+- When hiring I look at GitHub repos (or gitlab if that's your thing). What I look for is "so they know what they are doing", which is scaled appropriately for the position they are applying for, and "can they solve problems". The last one is harder to figure out, but sometimes a few clicks through some commits with spicy comments gets you to the good stuff pretty quick.
+
+If they don't have GitHub, then I 100% will do a skills test if they get an interview.
+
+(Smaller number of applicants in Australia so can be a little less cut throat in hiring and find the gems)
+- I have limited experience as I am currently in my first job since my Masters but my github was positively commented on in different interviews at the time. I was straight from masters and had mostly school projects and tutorials worked through but it was better than nothing especially coming straight from a degree.
+
+Just make sure it isn’t too mish-mashy and has some structure and documentation
+- I wonder about the value of basic github projects now that it's so easy to write that sort of code with LLMs. If you are doing this, then make sure that you can explain and justify the code that you're writing.
+
+A master thesis is not too short a time to do a machine learning project in general, consider reducing the scope of your idea for the thesis to make it more feasible.
+- I won’t even consider a candidate without a github… even if they are from industry. I would expect them to be contributing to code bases
+- Good advice. Being a solid programmer makes everything better. I work in bioinformatics and I got the job without any bioinformatics experience (it was 2009 though so it was kinda fresh back then). I was just a decent programmer. To this day I’m still pleasantly surprised when I check out a code package and it’s actually commented properly. If I were hiring people I’d like to see their own code. If a coder is following good practices on their own stuff that they never intend to pass on and have someone else work on you know they know what’s up.
+- As mostly self-taught in bioinformatics but doing aPhD in microbiology, do you have any recommeded learning tools that can help me make repos that wouldnt make you want to puke haha
+- There's a problem here. A lot of employers expect their employees to keep their codebases proprietary. Are they locked into their employer then?
+- Yikes. Completely unacceptable. Why the fuck is this upvoted?
+
+Not everybody is in a position to be able to contribute their work code to the public, and not everybody (especially people with outside-of-work obligations) has the leisure to program in their spare time. Your tactic is systematically disadvantaging those people. And, let me be frank, it’s really fucked up.
+
+(I’m not saying that a GH profile should be disregarded if it exists, but disqualifying candidates for not having one is reeeeeally not okay.)
+- not microbio-specific, but check out the `scanpy` github repo & readthedocs site for an example of well-written and well-documented python code. 
+
+in general, you’ll want to 1) comment your code 2) provide well-formatted docs using e.g. markdown, quarto, etc. 3) make sure your code is tested using e.g. `pytest` for python or `testthat` for R and 4) make sure your github repo has a solid README, detailed vignettes, and github actions that run your examples, CI/CD workflow, etc. all this is what i do when i develop R packages.
+- I know what you mean and some companies are way more strict than others.  Though, the way I see it is that If someone is using scikit learn and finds a bug, I would expect them to report the bug.  If someone is using another open source package and suggests a feature request, that should be allowed if they don’t supply the data. I need to know they can code and contributing to development besides the what their ChatGPT resume says.  I’ve met people who have BSd their way to key positions that don’t actually code and it benefits no one. If I check someone’s GitHub that says they’ve been in the industry for 10 years and they have 1 repo they just made or no activity at all then I’m going with someone else.
+
+It’s just too easy to fake expertise and the field is so impacted that anything to prove you can what you say will give you a leg up.
+- How would you have gone through grad school without a single commit? Also, how else can you prove you know how to code besides having someone take your word for it? If there’s 10 applicants and 5 have very strong code bases with great experience then I’m going with those 5 before i consider the others unless they have publications i can validate.
+
+I use a lot of open source packages and contribute to them while developing new methods.  Many of those methods require copy left licenses and require the code to be open source if you make changes.
+- Well, my situation is like this: I do have a big gitLab repo for my postdoc-era code, but since my move to the industry my GitHub is mainly for raising issues. No PRs were made after, like, 2016, although in nearly all cases I will point out the offending line. I have some Notebooks that are safe enough (being based on public data) to put on to gitHub, though. Do I need to artificially clone repos to keep my account "attractive"...?

@@ -1,0 +1,25 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/i803cl/d_estimating_uncertainty_using_dropout_at/
+Title: [D] Estimating uncertainty using dropout at inference only
+
+Content:
+While learning about with different approaches to estimating uncertainty for active learning using convolutional neural networks, I have come across a few different papers using Monte Carlo dropout. This got me wondering if one should necessarily use dropout both during training and test time for estimating uncertainty well for a model or if using dropout just at inference to estimate uncertainty would suffice. A lot of papers I have read show the former but is the latter a reasonable way to approach uncertainty estimation? If not, why is that?
+
+Comments:
+- I think the two things are fundamentally different:
+
+* Uncertainty estimation asks given *all the info* we know, what is the variance of our prediction.
+* Monte Carlo dropout at inference would amount to asking, if we *bottleneck the info* that can pass, what is the variance of our prediction.
+
+
+Now, at the same time, the other interpretation of a dropout trained network is that it is an ensemble of very many networks, each with a slightly different architecture. Under this perspective, the variance of predictions is a reflection of the variety of estimates from multiple different trained models. So here, yes, you could think of it as a proxy for the uncertainty. Having said that, I *think* it is going to underestimate the uncertainty, since
+
+* these "multiple models" are trained with shared weights and are likely to have more similar predictions than if they were trained independently, and
+* the model architectures effectively represented are quite similar.
+
+As with many things in ML though, the best way to resolve this is to try it out empirically ;)
+- Independently of any discussion of uncertainty quantification, using dropout at test time on a network that wasn't trained using dropout will result in very poor performance. It's not uncommon when using vanilla dropout to see better test error than train error and that's when you're training with dropout and testing without it. Training without dropout and testing with it is going to produce nonsense as often as not. 
+
+There is some intuition within the UQ context as well though. One of the explanations for dropout is that you are training an ensemble of an enormous amount of less wide neural networks with the constraint that these networks must share some parameters. From a regularization standpoint, the idea is that this encourages robust networks since all of the sub-networks must also perform well even if they're missing features. Explicitly modeling parameter uncertainty is hard, so in MC dropout, you sample from a distribution over parameters defined by the distribution over dropout masks - aka, the ensemble you implicitly trained with train-time dropout - and produce an MC estimate of the predictive uncertainty by marginalizing out the parameter uncertainty. If your don't train with dropout, the network was not optimized for sub-network performance.
+- Adding inference time dropout to a model that did not have training time dropout essentially changes the model. Architectures with and without dropout should be treated as different models because loss function is minimized in different manners.
+- Sidenote: I think many people are forgetting that the uncertainty estimation is in the context of a specific _class or family_ of models. The uncertainty estimation changes if you keep the data the same but you change the model. This makes something like bayesian uncertainty estimation inherently subjective!

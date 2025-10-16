@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/hnifoa/d_where_to_start_learning_about_hierarchical/
+Title: [D] Where to start learning about hierarchical Bayesian models of behaviour and the hierarchical Gaussian filter?
+
+Content:
+Hi All. I'm not sure if this is the correct subreddit to post in, but I was wondering if I can have some guidance with places to start learning about the topics in the title. My background is in psychology and I have no knowledge of computational models.
+
+I would like to be able to have a general understanding of the following two papers:
+
+1. Mathys, C., Daunizeau, J., Friston, K. J. & Stephan, K. E. A Bayesian foundation for individual learning under uncertainty. *Front Hum Neurosci* **5**, (2011). [https://www.frontiersin.org/articles/10.3389/fnhum.2011.00039/full](https://www.frontiersin.org/articles/10.3389/fnhum.2011.00039/full)
+2. Mathys, C. D. *et al.* Uncertainty in perception and the Hierarchical Gaussian Filter. *Front. Hum. Neurosci.* **8**, (2014). [https://www.frontiersin.org/articles/10.3389/fnhum.2014.00825/full](https://www.frontiersin.org/articles/10.3389/fnhum.2014.00825/full)
+
+Any advice is greatly appreciated!
+
+Comments:

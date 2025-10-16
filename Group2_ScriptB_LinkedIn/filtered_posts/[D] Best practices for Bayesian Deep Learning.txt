@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/k3r4e1/d_best_practices_for_bayesian_deep_learning/
+Title: [D] Best practices for Bayesian Deep Learning
+
+Content:
+Hello r/MachineLearning. I'm currently working on an image recognition project where I am implementing a CNN followed by dense interpretation layers. I'm looking to replace my dense layers with a Bayesian neural net to better account for epistemic uncertainty and noise and was wondering of any of you have suggestions for best practices with Bayesian Deep learning. Will the model normally take the more epochs to converge with more parameters? Should I adjust the size of my layers up or down? Would appreciate any help that you could give.
+
+Comments:
+- Do you plan to use a mean-field approximation for the dense layers, or dropout? If you are doing mean-field, make sure to use the local reparameterization trick, since it helps speed up convergence a lot. You should initialize your variances to be very small. If you initialize them too large initially, then it'll basically never train because there is too much noise. I recommended parameterizing the log-variance rather than the variance itself, so you don't have to constrain it to be positive.
+
+Mean-field BNNs take longer to converge in general if you are using the same optimizer, but you don't have to worry about early stopping. The test loss goes down for a while, then goes up again, then goes down again, so you have to be a bit patient. You shouldn't have to adjust the size of your layers.
+- Check out "What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?" by Kendall and Gal. Training time should not be affected, but testing time likely will.
+- Think about how you ought to treat epistemic uncertainty. If your priors are not epistemically grounded, then your uncertainty doesn’t really mean much, just as in classic Bayes’ Rule.

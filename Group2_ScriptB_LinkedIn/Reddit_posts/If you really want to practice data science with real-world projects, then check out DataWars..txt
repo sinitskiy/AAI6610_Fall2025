@@ -1,0 +1,29 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17gum8s/if_you_really_want_to_practice_data_science_with/
+Title: If you really want to practice data science with real-world projects, then check out DataWars.
+
+Content:
+**Data science community, I'm here to tell you about a new platform that's going to revolutionize the way you learn data science: DataWars**
+
+I've been using it for a few weeks now, and I'm absolutely blown away. It's the most immersive and hands-on way to learn data science that I've ever experienced.
+
+With DataWars Live Labs, you can:
+
+* Write code in real time and get immediate feedback on your progress.
+* Validate your understanding of key concepts.
+* Check the correctness of your code.
+* Work on interactive projects that are designed to help you learn and practice.
+
+If you're serious about learning data science, I highly recommend checking out DataWars Live Labs. It's the best way to learn quickly and master the skills you need to succeed.
+
+**Here are a few specific things that I love about DataWars Live Labs:**
+
+* The projects are really well-designed and engaging. They cover a wide range of topics, from Python, data cleaning, and wrangling to machine learning and much more.
+* The feedback loop is instant. As you write code, you can see immediately whether it's working correctly. This makes it easy to learn from your mistakes and improve your skills quickly.
+* Their Discord server is great.
+
+Overall, I'm extremely impressed with DataWars. It's the best way to learn data science that I've ever used. I highly recommend it to anyone who wants to learn data science quickly and master the skills they need to succeed.
+
+Comments:
+- I am one of the founders of DataWars. I don't know who you are, but thanks a lot for your kind works. The feeling that we're helping people advance in their careers helps us put all our sacrifices into perspective.
+- Offtopic but please upvote my comment, i need to gather comment karma to make a post in this sub

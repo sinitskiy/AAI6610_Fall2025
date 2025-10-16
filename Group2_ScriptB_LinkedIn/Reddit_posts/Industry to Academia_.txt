@@ -1,0 +1,33 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/f5vqb/industry_to_academia/
+Title: Industry to Academia?
+
+Content:
+Hey reddit, this might be a more AskReddit style question, but I wanted to narrow my focus to /r/biology.
+
+**tl;dr**
+My question, do you think someone who is completely untrained in biology can make a transition into academia and provide any meaningful input?
+
+
+Some background in the reverse tl;dr format. I grew up in the south. Hmm, that should really be the tl;dr actually. Anyway, I grew up in the south, never learned much anything about evolution and everything I learned was heavily steeped with "this is what the nutso's think." I escaped the south, went to school, got a degree in a completely irrelevant field and do pretty well for myself in that field. 
+
+For the past few years I've gotten super interested in evolution, genetics, and the machines of life. I'm just curious and there's only so much you can read of distilled info before you want to go even deeper. Lately (past year or so) I've been thinking my current profession seems pretty pointless towards the grand scheme of things and it'd be really great to use my motivation towards something... larger.
+
+So yeah, thinking about going back to school to study, in a very broad sense, biology. I don't know what specific area as I haven't started studying it yet, but wanted to know if this is just a "sorry, too late" endeavor. What do you think it'd take? Would I ever be taken seriously? Am I just being naive?
+
+Thanks, sorry about the wall-o-text
+
+Comments:
+- I don't think it's ever naive to begin to study a new area of interest.  
+
+The logistics of setting up a life for yourself in that field may be more difficult though, what did you have in mind?  Would you be looking for a tech position in a basic lab to get you started?  Would you want to go back to college, perhaps to grad school? 
+
+Whether it's too late or not depends on what your final goals are.  If you're over 35, then the ~15 year route of a BS -> MS/PhD -> PostDoc -> Principle Investigator might be out of reach, but that doesn't mean there's not a lot of other options in terms of "providing meaningful input".
+
+Besides, at the end of the day, you should do what you love, and if you want to go in that direction and it will make you happy, what's stopping you?
+- what is the irrelevant field that you have experience in?  It will make the transition easier if you can bring some strengths over from your current career.  Biology is a pretty diversified field right now, and that trend is growing.  You may already have some skills that will make you valuable, and not realize it.
+- Well, in Portugal I had several people from other areas, even people in their 40s attend my classes (Biology). So if you like it, do it.
+- To list a few other areas that can directly aid you in biological research: Sciences in general, maths, computing, engineering, programming (to a lesser extent), geography, history.
+
+These last two are very ecology/ evolutionary specific but it's just to demonstrate that literally any prior field has some relevance.
+- Individuals with skills in programming, mathematics and engineering can transition for a bio or biomedical engineering field or towards bioinformatics and statistics with some background course work in basic molecular biology, chemistry and organic chemistry.

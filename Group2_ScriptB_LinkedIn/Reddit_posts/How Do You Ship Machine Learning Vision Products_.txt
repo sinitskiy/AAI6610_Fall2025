@@ -1,0 +1,54 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1h9mbw3/how_do_you_ship_machine_learning_vision_products/
+Title: How Do You Ship Machine Learning Vision Products?
+
+Content:
+Hi everyone,
+
+I’m exploring how to deploy machine learning vision products written in Python, and I have some questions about shipping them securely.
+
+Specifically:
+
+1. How do you deploy ML products to **edge embedded devices** or **desktop applications**?
+2. What are the best practices to **protect the code and models** from being easily copied or reverse-engineered?
+   * Do you use **obfuscation**, **encryption**, or some other techniques?
+   * How do you manage **decoding** and **decryption** on the client side while maintaining performance?
+
+If you have experience with securing ML products, I’d love to hear about the tools and workflows you use. Thanks!
+
+Comments:
+- What's work for us for years is develop and train using Python, deploy to embedded devices in C++, scramble / descramble the weights using a key in a USB security dongle.
+- Obfuscate and pack python code into docker image. Doesn't work for devices that do not support docker, but those can't do inference either most of the time.
+
+Alternative to obfuscation is to compile your code as a cython module.
+
+Encrypt models and decrypt into memory buffers on each run. Then load from those buffers.
+
+Not unbreakable, but good enough to deter the least prepared attacker.
+- the key of product is model， most company just convert model to bin to protect thier alg
+- Desktop applications are pretty much out of luck, anyone invested can reverse engineer it.  If you do not control the hardware you cannot prevent access to software running on it.
+
+Some embedded chips have security features that can be used to prevent people from reading data off the chip, at least without having to grind it down and probe the individual circuits for their values.  Sometimes companies just remove any leads that would allow easy access, requiring someone to at least connect wires directly to pins in order to gain access.
+- Intel's OpenVINO has the ability to encrypt the ML model and only let the specific device decrypt it (for inference): [https://docs.openvino.ai/2024/documentation/openvino-security.html](https://docs.openvino.ai/2024/documentation/openvino-security.html)
+
+In general, quantization and pruning of the model is essential for deployment. [ONNX Olive](https://github.com/microsoft/Olive) or OpenVINO are valuable frameworks for this task. I have never used the encryption feature, but it might be interesting for your use case.
+- These are good questions. Pyinstaller packages are one route for easy packaging and deployment, but you are dependent on the host machine's system libraries (as opposed to a docker image). Also I'm fairly sure code can be extracted from them. I've seen demos of model encryption here and there, but I do not get the impression that it is standard practice. It probably should be.
+- All our code is just source available lmao. The services are shipped with the SDK or built from the source. Much easier this way if you are open to this option
+- Encrypting everything. Use Qbee.io to update devices. Qbee is a big recommend.
+- These are good questions. Pyinstaller packages are one route for easy packaging and deployment, but you are dependent on the host machine's system libraries (as opposed to a docker image). Also I'm fairly sure code can be extracted from them. I've seen demos of model encryption here and there, but I do not get the impression that it is standard practice. It probably should be.
+- Well, that's easy, you only have to pull a bunch of hairs out of your skull.
+But seriously, export openvino, or tensorrt, or use libtorch.
+Write the post process and preprocess in c++ and just call your model.
+
+Also, you have to deal with normal cpp stuff such as memory management, closing open files, writing make scripts etc.
+- [deleted]
+- Interesting, seems like a lot of work given so many models are just trained on publicly available datasets anyway. And if it's competitor's that are the point of worry they will just dump the firmware and pull it apart given sufficient motivation.
+
+Then again I don't ship a whole lot of CV stuff, at least on the embedded end of things.
+- I thought about this but was not sure if it is a industry practice. So you mean making the prototype with Python, fine tuning the model, and then use C++ to load the model and perform the intended task, right?
+- Plus one to that.  
+During the image build we download the updated model + installing the required packages and other essentials.
+- Could you write some tools for model encryption?
+- OP specifically asks about edge inference, not cloud. Completely different thing
+- Basically. I don't know if it's an industrial practice, but our clients in aerospace keep buying our boxes so I guess it's good enough.
+- How is it for example in Autonomous cars? Using docker or developing the model and load them in  CUDA? or how is Tesla using ML in Vision applications?

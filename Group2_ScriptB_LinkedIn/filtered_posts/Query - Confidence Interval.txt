@@ -1,0 +1,86 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/p9ukvu/query_confidence_interval/
+Title: Query - Confidence Interval
+
+Content:
+Hey Guys!
+
+Hope everyone is doing well!
+
+I had a quick query. It would be really helpful if I can get some guidance on it.
+
+Query:
+
+I'm working on a classification problem (Dependent Variable - 0 and 1). The client is asking for a final prediction file which would have the following columns:
+
+1. "Model Name"
+
+2. 'Prediction"
+
+3. "Confidence Score"
+
+For the "Confidence Score" column, the client wants to generate an output between 0-100 where:
+
+ 1. 0 score represents a high confidence of a 0 output, 
+
+2. 100 score represents a high confidence of a 1 output,
+
+3.  and a 50 score represents uncertainty about the output  
+
+
+**My question is** if there is a way to get an output like "Confidence Score" or something similar?  
+
+
+I have used Random Forest Classifier to train and test the data and it is working with 95% accuracy. 
+
+Please let me know if I need to provide any further information.
+
+Thanks in Advance!
+
+Comments:
+- In Random Forest you have multiple trees outputting multiple predictions. The final output is the most predicted class.
+
+You could simply say that your confidence score is Amount of trees that predicted the #1 class / total amount of trees. This is not a completely theoretical sound way of computing confidence for various reasons I won't get into here, if you're interested you can ask and I'll try and explain. It *does* help you come up with a pessimistic approximation at least.
+
+Are you really set on using RF? If not try out logistic regression, it outputs probabilities. The highest probability is your prediction. The confidence is simply your probability.
+- You can use a logistic regression on the output of your RF to get a well-calibrated probability. I think scikit learn has a built in class for doing this: sklearn.calibration.CalibratedClassifierCV - worth a read.
+- Hi! Thanks for your reply.
+
+There are lots of outliers so I'm using Random Forest as it is less impacted by them. Logistic regression is not working too well here. I'm open to using any other model as well. 
+
+There is model.predict\_proba(X) in as well Random Forest, but, then again, it is not showing me confidence and just probabiliy.
+- Hi u/sniffykix,
+
+Thanks for your reply! What does it mean to used Logistic Regression on RF? Like, I have predictions generated via RF, then? What needs to be done via Logistic Regression?
+
+Thanks!
+- In the case you described confidence and probability are the same. Just multiply it by a hundred. But again, due to the nature RF is trained these probabilities are not representable. 
+
+Have you tried logistic regression even with the dataset having outliers? If so, how does it perform? Are the outliers univariate or multivariate? Maybe you should deal with the outliers are univariate maybe you should just cap the outliers and see how your model performs.
+- You must have a read of the link below.
+
+https://scikit-learn.org/stable/modules/calibration.html#calibration
+
+But essentially, random forest predictions from pred_proba are not accurate. They are bias towards 0.1 and 0.9 (roughly speaking). CalibratedClassiferCV can resolve this for you.
+
+Sorry to answer your actual question: I mean you train a logistic regression using your RF output as input, and your target variable as target. (CalibratedClassifierCV does this for you).
+- Thanks! 
+
+Sorry, I got more questions... It would be great if you can help!
+
+What does "RF is trainee" means?
+
+Can you please help me understand what is the difference between probability generated in Logistic Regression (outputs) vs RF (pred\_proba). If I understand correctly, in both the case, probability helps determine to which class the prediction belongs to. How is probability generated from LR?
+- that was a typo, RF (random forest) is trained.
+
+Ok so the probability random orest generates goes back to the core of how it works. I'm very very much oversimplyfing but random forest produces set a of trees using a procedure called 'bagging' (definitely google this) and only selecting a set of features to split in these trees. It then uses all trees it produced to predict the target variable. Some of these trees will be 'bad' by design (it splits on a subset of random features, imagine if a tree only splits on the least predictive features you have) hence why the probability estimates might be pessimistic (lower than what it actually should be). The proability estimates are probably how many trees predicted the class / total amount of trees in your model.
+
+[https://stats.stackexchange.com/questions/264129/what-is-the-difference-between-bagging-and-random-forest-if-only-one-explanatory](https://stats.stackexchange.com/questions/264129/what-is-the-difference-between-bagging-and-random-forest-if-only-one-explanatory) check this out
+
+As for Logistic regression, this straight up predicts probabilities by design and has statistically 'relevant' probabilities. Again, I'll skip the details but I highly encorage you to fgiure out how logistic regression really works. The way to intepret them is as follows: probabilties around 0.5 are very bad because you're uncertain if it's in the positive class or in the negative class. You want them to be close to 0 or 1.
+- Thanks u/the75th, that makes it clear-er.. 
+
+Thanks for taking the time to explain the answer. Really appreciate it!
+- Oh yeah the final and easiest way to explain it is that RF gives you the proportion of models that 'agree' (which isn't really a probability in the strictest sense) and logistic regression gives you a well defined and real probability.
+
+You should be fine using the output from the random forest but I think it's helpful to understand what it is you're giving him and how these models work on a high level

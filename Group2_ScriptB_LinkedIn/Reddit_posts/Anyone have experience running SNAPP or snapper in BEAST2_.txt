@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1glu97g/anyone_have_experience_running_snapp_or_snapper/
+Title: Anyone have experience running SNAPP or snapper in BEAST2?
+
+Content:
+Hey all,
+
+I'm trying to respond to reviews that I recieved for a manuscript generated from my master's thesis. I have cox1 and 2bRAD data for 8 species in a genus of flies, and one of the reviews suggested I run a SNAPP/snapper analysis to compare with the phylogeny I generated. For the life of me, I cannot get it to run, or even open my files. The only machines I have available to me are two macbooks, one with an old intel chip and one with a new M2 Max chip; I have BEAST2 installed on both and am able to open both BEAST and BEAUTi. From my 2bRAD data, I've used ipyrad to generate a phylip file that just pulls one snp per locus, which I've then converted to a nexus file. On both machines, BEAUTi just fatally freezes when I try to load my alignment. I'm really out of my depth here, does anyone have any advice? I will add that my computational skills are okay but not great, so I'm learning as I go here. And if anyone has any suggestions for user-friendly species delimitation software, I'd appreciate that too!
+
+Comments:
+- maybe you just need wait it, I spent 15 minutes last and it work.
+- I remember having this issue when trying to run BEAST+SNAPPER on an old Mac desktop. It ran fine on my new laptop with an M3 chip, though. I’m thinking if you can find a computer that has better resources then you might be fine.
+- Glad to hear it worked! Did it take a really long time to load the alignment file? And was BEAUTi somewhat frozen while it loaded? My SNP matrix is fairly large, which might explain why it's taking so long.
+- https://github.com/ForBioPhylogenomics/tutorials/tree/main/divergence_time_estimation_with_snp_data
+
+This is the tutorial I used to do my analyses. It was made by one of the creators of SNAPPER. You need to know how to use Linux for this, but it includes a Ruby script that creates XML files for you super fast. I never ended up using BEAUTi because I had ~1 million SNPs and it just would freeze instead of opening.
+- That's EXACTLY what's happening with mine!! I'm going to try this, thank you so much!

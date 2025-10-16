@@ -1,0 +1,16 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/v5912x/a_new_computer_simulation_coupled_with_machine/
+Title: A New Computer Simulation Coupled with Machine Learning Cracked the Mechanism of Cancer Drug Resistance
+
+Content:
+
+
+Comments:
+- What is the source publication for this claim?
+- Please read the full article [here](https://cbirt.net/a-new-computer-simulation-coupled-with-machine-learning-cracked-the-mechanism-of-cancer-drug-resistance/)
+- Please read the full article [here](https://cbirt.net/a-new-computer-simulation-coupled-with-machine-learning-cracked-the-mechanism-of-cancer-drug-resistance/)
+
+Paper Source: Mrinal Shekhar, Zachary Smith, Markus A. Seeliger and Pratyush Tiwary (2022). Protein Flexibility and Dissociation Pathway Differentiation Can Explain Onset of Resistance Mutations in Kinases. Angewandte Chemie. https://doi.org/10.1002/anie.202200983
+- OP: I'm confused about the information that you provided in the link. It is not to a journal in which methods/results/conclusions are reported, it appears to be a newsletter in which claims are asserted, but supportive data are not provided. Have the results been published in a refereed journal, preferably one that is indexed by the National Library of Medicine?
+- Thanks, I read it, but I think the title presented here is a little misleading. It's an article proposing a model for how mutations may occur. There are many paths that can lead to mutations and many mutations that can result in a wide array of cancer drug resistance. If the authors follow up with experiments in animals they may have revealing one pathway among many that may exist. This isn't trivial, but neither is it groundbreaking.
+- Yes, the source paper was published in a highly reputed journal of the German Chemical Society (GDCh) which is published by Wiley Online Library. The journal is indexed by the National Library of Medicine. If you scroll to the bottom of the article in the link you will find the reference to the source paper.

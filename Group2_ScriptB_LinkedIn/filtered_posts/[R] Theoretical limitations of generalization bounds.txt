@@ -1,0 +1,104 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1fwnb1r/r_theoretical_limitations_of_generalization_bounds/
+Title: [R] Theoretical limitations of generalization bounds
+
+Content:
+**tl;dr: there are fundamental limitations on how tight generalization bounds can be.**
+
+Though there have been many newly proposed generalization bounds in recent years, a common theme is that they are numerically loose (or even vacuous) when evaluated in practical settings (i.e. realistically sized models, standard datasets). This severely limits their utility as performance guarantees and their impact on practical algorithmic design.
+
+Is this observed gap between theory and practise merely an artefact of loose proof techniques, or are there also fundamental statistical limitations on how tight such bounds can be? *We find that, in many settings, the latter is the case!*
+
+**Paper 1 (published in ICLR ’24)** [**https://arxiv.org/abs/2309.13658**](https://arxiv.org/abs/2309.13658) **:**
+
+* Bounds that are not tailored to specific algorithms are necessarily loose for many algorithm-distribution combinations.
+* In rich enough learning settings, algorithm-dependent bounds are subject to an uncertainty principle: one can either learn the target distributions well, or verify the success of learning — never both!
+
+**Paper 2 (recent preprint)** [**https://arxiv.org/abs/2410.01969**](https://arxiv.org/abs/2410.01969) **:**
+
+* We show that algorithms that have certain inductive biases that cause them to be unstable do not admit tight generalization bounds.
+* Next, we show that algorithms that are sufficiently stable do have tight generalization bounds.
+
+We think that our findings could be of interest to many members of the community broadly interested in generalization.
+
+Happy to discuss — questions, feedback, and criticism are all welcome :)
+
+Comments:
+- I'm coming from the differential geometry/topology community, and haven't had that much interest generalization, but I came across some result that might have bearing on stability/robustness of gradient flow/descent to perturbations of the gradient.
+
+Can you suggest where I could read up on recent related work? Sorry for the off topic, I'll check out the linked papers later.
+- Super interesting papers! Congratulations
+- congratulations! nice work.
+
+How crucial do you think is the realizable assumption? zero Bayes risk sounds hard. E.g., you show that this works for classes of parity functions. But does it in principle also work for noisy parity? (true label is flipped with a probability alpha>0)?
+- Interesting, I think this has interesting insights that can be ported to quantum machine learning learn ability and might be more easier to extend as we can physically encode lot of assumptions you have there in the architecture quite easily.
+- This paper proved theoretically that we could achieve better generalization by compressing internal representation instead of scaling up more data. Generalization occurs when we forget, not remember.  
+[https://arxiv.org/abs/2505.08727](https://arxiv.org/abs/2505.08727)
+- does your work provide any recommendations regarding changes in architecture or other hyperparameters in order to achieve this improved stability (i.e. generalization) that is proposed?
+- Thanks for your interest. We are not familiar with results concerning the stability of GD/GF. Such results might in fact be of interest to us, since (at least intuitively) our notion of stability should be implied in cases where, on average, the perturbation incurred by removing a few samples per mini-batch does not change the batch gradient too much.
+- Thank you!
+- Thanks, and great question! On a high level, the fact that we show impossibility results for the realizable/noiseless case makes them stronger. The worse the learning algorithm (and for increasing label noise, all algorithms detereorate in performance), the easier the problem of finding a good generalization bound for it. 
+
+For the parity example, any hypothesis that a realizable ERM outputs has risk either 0 or 1/2, and the hardness comes from having to decide when to declare risk 0 or 1/2 (or possibly something inbetween) — a huge discrepancy. But as one adds more label noise, the range of possible risks (depending on the draw of the training set) will start to move more towards 1/2. In the extreme case, (flipping labels w.p. 1/2), the constant generalization bound that declares 1/2 is a perfectly accurate generalization bound. The same high level argument also applies to other function classes with label noise.
+- Our preliminary experiments (see appendix in paper 2) indicate that at least some “vanilla” neural network architectures, trained with SGD on standard vision tasks, are surprisingly stable. We think that this is rather exiting, and warrants further investigations!
+
+At present however, we do not have rigorous results that show which properties generically imply stability, and this might indeed be technically rather challenging. For example, one could try to show that for certain distributions, SGD finds local minima that are stable. We leave such investigations (and larger scale experiments) for the future.
+- Try this:
+
+https://arxiv.org/abs/2406.09241
+
+**What is the long-run distribution of stochastic gradient descent? A large deviations analysis**
+
+>In this paper, we examine the long-run distribution
+
+of stochastic gradient descent (SGD) in general,
+
+non-convex problems. Specifically, we seek to
+
+understand which regions of the problem’s state
+
+space are more likely to be visited by SGD, and
+
+by how much. Using an approach based on the
+
+theory of large deviations and randomly perturbed
+
+dynamical systems, we show that the long-run dis-
+
+tribution of SGD resembles the Boltzmann–Gibbs
+
+distribution of equilibrium thermodynamics with
+
+temperature equal to the method’s step-size and
+
+energy levels determined by the problem’s objec-
+
+tive and the statistics of the noise. In particular,
+
+we show that, in the long run, (a) the problem’s
+
+critical region is visited exponentially more often
+
+than any non-critical region; (b) the iterates of
+
+SGD are exponentially concentrated around the
+
+problem’s minimum energy state (which does not
+
+always coincide with the global minimum of the
+
+objective); (c) all other connected components of
+
+critical points are visited with frequency that is ex-
+
+ponentially proportional to their energy level; and,
+
+finally (d) any component of local maximizers or
+
+saddle points is “dominated” by a component of
+
+local minimizers which is visited exponentially
+
+more often.
+- Perhaps you'd want to discuss this elsewhere?
+- Sure, would be happy to receive a DM if you (or someone else) knows more about these kinds of optimization results -- though I myself can probably not offer much insights due to my unfamiliarity with the subject.

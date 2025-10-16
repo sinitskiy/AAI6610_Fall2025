@@ -1,0 +1,35 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/a78c78/r_master_thesis_on_bayesian_cnn_using_variational/
+Title: [R] Master Thesis on Bayesian CNN using Variational Inference and Application using PyTorch
+
+Content:
+Read the complete thesis here:  [https://github.com/kumar-shridhar/Master-Thesis-BayesianCNN/](https://github.com/kumar-shridhar/Master-Thesis-BayesianCNN/blob/master/README.md)
+
+&#x200B;
+
+Code available here: [https://github.com/kumar-shridhar/PyTorch-BayesianCNN](https://github.com/kumar-shridhar/PyTorch-BayesianCNN)
+
+&#x200B;
+
+The thesis involves proposal of a Bayesian convolutional neural network with Variational Inference and then shows the way to do the uncertainty estimate with every prediction. Model pruning is done to reduce the number of parameters and then it is finally applied to computer vision tasks of Image Recognition, Image Super-Resolution and GANs. 
+
+&#x200B;
+
+Let me know what you guys think about it. Recently similar things have been implemented in Tensorflow : [https://github.com/tensorflow/probability/blob/master/tensorflow\_probability/python/layers/conv\_variational.py#L414](https://github.com/tensorflow/probability/blob/master/tensorflow_probability/python/layers/conv_variational.py#L414)
+
+&#x200B;
+
+&#x200B;
+
+Comments:
+- On a somewhat related note, what do you guys recommend using for getting started with VI? It seems there are many options at very different levels of abstraction, and while I feel like I understand the theory (pose a variational family, optimize ELBO, use mean-field approximation with exponential family to make it nice), I still don't really know how to "do VI".
+
+Or more specifically, what's a good first step? Do I use Pyro/TFP? Or PyMC3? Stan? Roll it myself just in Python? Use some fancy probprog language?
+
+I've been reading a lot about bayesian inference, but other than dealing with special case models (gaussian processes or whenever I have a conjugate prior and just do the math on paper) I haven't found a good way to just play with this stuff that would be intuitive.
+- This looks nice, will give it a read!
+- Looks cool! May I ping you for an advice? Any good tutorial/guide to implement Bayesian NN using PyTorch?
+- Good discussions going on here: [https://www.reddit.com/r/MachineLearning/comments/a7egt8/d\_whats\_a\_good\_way\_of\_getting\_started\_with/](https://www.reddit.com/r/MachineLearning/comments/a7egt8/d_whats_a_good_way_of_getting_started_with/)
+- Sure. Feedback are welcome
+- I haven't found any. But did you check my code? Should be simple enough to get started. This is a good tutorial but in MXNet : [https://gluon.mxnet.io/chapter18\_variational-methods-and-uncertainty/bayes-by-backprop.html](https://gluon.mxnet.io/chapter18_variational-methods-and-uncertainty/bayes-by-backprop.html)
+- Yes, the code is very well written and easy to follow. But, maybe, there was a 'noob friendly' tutorial on it

@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/ehsanabb_bayesian-low-rank-learning-bella-a-practical-activity-7300408568162177024-tBQx
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ehsan A.的动态
+Ehsan A.
+
+A Leader in Artificial Intelligence & Machine Learning | Associate Professor
+
+7 个月
+
+If you are looking for a principled, efficient approach to uncertainty in neural networks, that we show correlates well with humans, checkout our recent AAAI paper #aaai2025 #ai #ml #llm
+
+Bao Gia Doan
+
+Postdoctoral Research Fellow @ UNSW | LLM, Computer Vision, AI, Security & Privacy
+
+7 个月  已编辑
+
+🎉 #AAAI2025 is in the air in Philadelphia! 🎉
+I'm thrilled to share our latest work: "Bayesian Low-Rank Learning (Bella):
+A Practical Approach to Bayesian Deep Learning" is currently presented at #AAAI2025.
+
+The computational complexity of Bayesian learning has long been a barrier to its practical adoption in large-scale tasks. While Bayesian Neural Networks (BNNs) offer exceptional robustness and resilience to unseen or out-of-distribution inputs, their high computational cost often hinders their practicality. With Bella, we introduce a novel framework that dramatically reduces the computational burden of BNNs. By applying multiple low-rank perturbations to parameters from a pre-trained neural network, Bella allows both vanilla deep ensembles and advanced techniques like Stein Variational Gradient Descent (SVGD) to scale effectively—even for large models.
+
+Key highlights of Bella:
+🚀 Reduced Computational Load: Significantly fewer trainable parameters needed for Bayesian posterior approximation.
+📈 Enhanced Performance: Maintain or surpass traditional Bayesian learning methods and non-Bayesian baselines.
+🌐 Real-World Impact: Proven effectiveness on large-scale tasks like ImageNet, CAMELYON17, DomainNet, VQA with CLIP, and LLaVA.
+A huge shoutout to my incredible collaborators Afshar Shamsi, Assoc. Prof. Ehsan A. & Assoc. Prof. Damith Ranasinghe
+
+📄 Read our paper: https://lnkd.in/gpGpzdJU
+💻 Access the code: https://lnkd.in/gHg_z6Nv
+
+Bayesian Low-Rank LeArning (Bella): A Practical Approach to Bayesian Neural Networks
+arxiv.org
+30
+赞

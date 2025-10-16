@@ -1,0 +1,117 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1npdfh1/d_is_senior_ml_engineering_just_api_calls_now/
+Title: [D] Is senior ML engineering just API calls now?
+
+Content:
+I’m a Senior ML engineer with around 9 years of experience. I work at a large government institution, implementing (integrating?) AI for cybersecurity, and I’m currently in the process of building a new team.
+
+I’ve been having some concerns about my career development, and I’m not sure if other ML engineers with similar experience feel the same way.
+
+Most of my projects these days aren’t really “machine learning” anymore. It’s mostly using existing models through APIs, setting up pipelines, etc. The actual algorithmic/experimental side of ML feels like it’s disappearing from my day-to-day work.
+
+It seems like the industry has shifted from building models to API calls and prompt engineering. I miss the kind of work I did in my earlier roles, building models from scratch, fine-tuning, experimenting…
+
+So my question is: is this just what senior ML roles eventually turn into? Has the job really shifted from “building ML” to “plugging in ML”? Curious if others are experiencing the same thing. I have been experiencing this since the generative AI boom where suddenly everything was solvable..
+
+(Disclaimer: we do use on-prem models at my organization, so I still get some hands-on time with models and fine-tuning using LoRA.)
+
+Comments:
+- Sometimes you use the API. Sometimes the API uses you.
+- this is precisely my experience. I started in ML in 2012 working with bayesian systems and later as thr hardware caught up deep learning. Logistic Regression was a constant companion for many years. 
+
+The switch over to an API call only world was pretty rapid. I remember in 2023 consulting for a startup and they needed a quick and dirty NER system. I used spacy's off the shelf library and then compared that against a 10 line func that called openai to do the same work. results werent even close-the llm did better work by a mile. That was the real lightbulb moment for me...
+- I basically envy you, to have born earlier than me to work on “cool” actual stuff. After 2021s waves, it’s all turtles of API all the way down.
+- Same here.
+I have been a dev initially but got into ML somewhere around 2012 and have moved from MATLAB and C to Python and through Theano Keras TF Pytorch.. to... calling LMMs, sending media with prompts.
+
+I haven't trained a model in 2 years.
+
+I'm not completely sad about this because honestly the last 1-2 years before the switch were really tough because it was often like one man and his little desktop GPU competing against big companies throwing tons of data into a transformer. It was frustrating and I've already seen it coming that at some point it will be over when a big player takes the market. When you're working on a single type of model for a decade.. let's say I was actually happy that our startup was bought before that and I was then moved to another topic without having to reduce my salary. Every other company at that point obviously saw my hyperfocus on this one topic only.
+
+So yes, we had separate groups for NLP, Vision and Speech and a couple other things. That's almost all gone except niches. 
+It's not only calling APIs, it's also grabbing big models like CLIP and successors, yes. 
+
+But overall, and this is my main pain point, my experience in ML and my PhD are almost not leveraged at all anymore.
+They are still because many people just seem to have a hard time grasping the concept of embeddings and prompting vs training and why RAG is not training etc. 
+But in reality that's all super superficial knowledge I use at this point.
+
+For a while I found some interest in the retrieval aspect, there's some meat... but it feels nobody got time for anything anymore. There's no time to gather data, do evaluations, optimize something.
+Customers want their stuff tomorrow and the day after tomorrow they want something else again anyways.
+
+Dumping a 50 minutes video into the Gemini API and asking it for classification or whatever you need can be done in a couple hours and it's good enough for them and astonishingly cheap to run as well. Just running the stuff ourselves through some video embedding model was already more costly for us than this, not even talking about the time spent for whatever else to put on top.
+
+Then when I see the hundreds of qualified ML people we see applying in addition to internal willingness to switch to ML, I almost lost interest at this point.
+
+Sometimes I still read an article like this one that really brought some fire back 
+https://sander.ai/2025/04/15/latents.html
+
+But then I lose it again seeing how I can't use this knowledge at all anymore anyways.
+
+I'm currently finding more joy digging back into low level stuff (my first jobs were embedded dev) but not really needing it either ;).
+I would be better off with more cloud, k8s, infra knowledge but that's absolutely not my cup of tea.
+The more people I get on the team the less I get to work on stuff myself anyways and let them jump for joy whenever there's a little, little bit of MLy work to do ;)
+- Hmmm not sure what verticals you're applying ML skills on, but the flavor of basics should largely remain around ML concepts:
+
+- curating / development strategy for high quality data
+- logging/tracing performance (uptime, tps, blind precision/recall/f1 metrics check, model drift test, data drift tests, etc)
+- cost optimizations with cheaper/hosted solutions instead of the APIs being a 100% stand-in
+- scalable software design patterns with AI being black boxes (API calls or RL optimization algorithms)
+- playbook for versioning, checkpointing and triaging repeatability concepts
+
+Should largely be the same!
+- Your job is to get the ML work done in the best way for the company.
+
+  
+Sometimes, that's using a third party via an API.
+
+Sometimes it's an LLM, sometimes it's linear regression.
+
+Sometimes it's building a local model.
+
+Sometimes it's using some hosted service to finetune some model on local data.
+
+  
+Part of your expertise is knowing which approach will solve the business needs fastest/quickest/cheapest/with the least risk.
+- This is why I think the econometrics side of data science is the future for tackling more interesting problems. You can’t just throw a causal estimation into an XGBoost or ask an LLM for an “okay” solution and expect it to hold up. You can do that, but anyone with some knowledge in the field will eat you alive. Over the last few years, I’ve been collaborating more and more with economists, and their problems seem far more compelling than trying to squeeze out 5% on some benchmark. This holds true both in industry and in academia.
+- I totally agree with you... I graduated in 2023 with a masters in AI, and I really felt the shift from what I studied and the internships I did, to what I'm doing currently at work... 
+And tbh , it's been a while since I used torch/tf. And I feel that I lost the slight knowledge/experience I have of this field.
+- Yes, I feel the same. I’ve been in AI for about 7–8 years, and I miss the days of training neural networks from scratch and designing ambitious architectures. There are still teams doing that, but a lot of the industry now is just wiring together API calls.
+- It’s not training traditional ML models that make an ML engineer an ML engineer. It’s making production level systems that use AI and ML. That is by far the most valuable skills an ML engineer can have.
+- The job of building the ML integration / piping has always been there and is unavoidable - it's just that sometimes you also need(ed) to build the component that you're plugging in, and sometimes you can get it from an external source.
+
+Also, in all the "building ML" projects I have seen, every single time building the model was the smaller part of work and code, and the majority was spent on "plugging in" that thing, building and testing all kinds of data source integrations/transformations/cleaning, interfaces, monitoring, etc.
+
+I often use this image [https://cdn.prod.website-files.com/64ee43310da86184dbc591b0/6514916e8b9021460b7babcd\_1\*vXMr4LN\_vRfRKdyhO8zeRw.png](https://cdn.prod.website-files.com/64ee43310da86184dbc591b0/6514916e8b9021460b7babcd_1*vXMr4LN_vRfRKdyhO8zeRw.png) as an illustration to manage people's expectations - and it's from a 10 year old paper (Sculley et al 2015 "Hidden Technical Debt in Machine Learning Systems") and it wasn't news even back then.
+- If it helps, I posted a thread on r/datascience regarding exactly this topic https://www.reddit.com/r/datascience/s/ZNjXrvzRrL
+
+Tldr: it's not just you, and we, as ML professionals, have to reinvent ourselves in this new era of ML.
+- ML engineer is a vague title based on my experience. Sometimes it is just research work, sometimes it is a mix of data engineering and backend engineering, depending on which organization and what is the phase of the project. I personally have never enjoy grid search for hyper-parameters so it work out for me.
+- Oh man forsure. I was doing raw computer vision before chatgpt, and ever since it feels like i do nothing but API calls and pipelines and deployments. The best news ive ever gotten recently is that I need to integrate a open source TTS engine and deploy it. Unfortunately (ha) its super easy since the code comes with ez deployment source. 
+
+Long gone are my days of training models and figuring out dense chinese computer vision codebases. Alas I shall accept my markedly higher salary, and gen AI api calls
+- I'm working in computer vision for embedded systems. The work has definitely shifted to include more of using existing libraries and calling APIs vs reading papers and implementing everything from scratch. But there is still experimenting with different model architecures, loss functions, optimizers etc., we still need to debug weird behaviors and come up with creative ways to use data.
+- It’s safe to say most of software engineering in general can be reduced to data IO.
+
+You take data from one location upstream.
+
+You do some things to the data.
+
+And you send the data onward downstream.
+
+You’re essentially a digital plumber.
+
+And a lot of the work is just finding the best ways to manage the plumbing—akin to bad vs good cable management meme.
+
+Once I accepted that fact of software engineering, it’s easier to approach most software tasks.
+
+How am I going to best plumb this data through the pipes?
+- I find it touching that so many people believe that LLMs really work to solve their problem based on the evidence of maybe 30 test cases.
+
+If you are shaking your head then that means you're probably an actual data scientist. If you are wondering "what's wrong with that" or "well we use LLM as a judge.. so" then you ain't. The point is that evaluation and validation were about 50% of the old school ML or DS roles, and data prep was the other 50%. Typing a few lines of tensor flow or model + half sensible hyperperameters was  never a big deal. Now we have all sorts of issues that the apis throw up at us, and that's where the work is.
+- That's a shame. You should still be able to get a quantifiable performance boost through fine-tuning, even using a hosted model. Lora and qlora etc are interesting, but unless you're in research your boss only cares about performance.
+- I'd bet that by far the most money is still being made with classification and regression models for ranking & pricing. That's what's driving ~all the revenue of Meta, Google, Bytedance etc and a big chunk of any retailer.
+
+Those are some form of traditional neural net based model trained on task specific data (with maybe some feature extraction using foundation models). And there are huge numbers of MLEs improving & tuning them constantly.
+- It probably depends on the company, in my job it's not too much API calls except for generating synthetic labels. But I can totally see it going more and more to simply API calls since most of the things you can build in-house will likely be worse than calling chatgpt/gemini/etc.
+
+It's kind of sad.

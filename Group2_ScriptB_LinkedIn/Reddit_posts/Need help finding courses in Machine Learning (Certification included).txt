@@ -1,0 +1,12 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/18tc1et/need_help_finding_courses_in_machine_learning/
+Title: Need help finding courses in Machine Learning (Certification included)
+
+Content:
+Hey. I want to get a quick certification in ML. This is to improve my CV and demonstrate that I have been through the knowledge. Unfortunately, I wasted 3 weeks in a course from Coursera and it was terrible in terms of teaching and bugged assignments. I know about statistics so that's no big deal but i need a ML course (preferably in Python) that goes easy to understand, and I need to develop practice in Python. If you have found a appropriate course, that would really help. Thanks very much. 
+
+Comments:
+- DataCamp has some good courses for beginners. After completing the course you get a statement of completion. You can get certificates after completing a test. Very useful if you're starting your journey in ML and Data Science
+- The introduction to statistical learning in python course for edx just started. It provides a certification. I just started it as well, but I am opting out of the certificate because I can't finance it right now. 
+
+I don't have other experience with ML courses, but everyone here has mentioned this text as a standard. Statistical learning is much involved and similar to machine learning, and there are many python examples. In the end, you could take what you've learned to apply to a self-project and add that to your GitHub, etc ...

@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/bhavishya-pandit_llm-opensource-llama-activity-7348580716000993280-S1R4
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Bhavishya Pandit的动态
+Bhavishya Pandit
+
+Sr Data Scientist @ 66degrees | Google Dev Expert - AI | 40 Million+ Views | Speaker
+
+3 个月
+
+It’s my birthday today, and even in the age of ChatGPT, if I were to start AI/ML, I would still start with mathematics. Here’s why:
+
+Learning maths transforms AI from a mere black box into a clear toolbox you can adapt and improve. Understanding linear algebra behind embeddings, the calculus driving gradient descent etc lets you diagnose failures, innovate architectures, and trust your models, whereas relying only on high-level APIs invites hidden blind spots.
+
+Today, anyone can have an LLM write code, but the real power lies in knowing why it works. That’s exactly what Mathematics of Machine Learning by Tivadar Danka and Packt delivers. Rather than copy-pasting, it shows you how to tweak loss functions, interpret singular values in recommendation engines, and build custom probabilistic layers.
+
+If you dive in, focus on these chapters:
+✅ Linear Algebra (Ch. 6–7): Grasp eigenvalues, singular value decomposition, and projections essential for PCA, embeddings, and transformer mechanics.
+
+✅ Calculus & Optimisation (Ch. 12–14, 17): Master partial derivatives and gradient descent in high dimensions so you can tune learning rates and ensure convergence in large-scale networks.
+
+✅ Probability Theory (Ch. 18–20): Learn Bayes’ theorem, expected values, and entropy to design and assess probabilistic models that handle uncertainty gracefully.
+
+By strengthening your mathematical intuition today, you’ll stay ahead of the curve tomorrow. Keep exploring, keep questioning, and let the maths guide you toward ever-more powerful and reliable AI.
+
+That's a wrap. Follow Bhavishya Pandit to stay ahead in the GenAI race! ❤️
+
+#llm #opensource #llama #huggingface #google #openai #rag #python #datascience #machinelearning #ml #ai #meta #agents #artificialintelligence #nvidia #machinelearning #genai #generativeai
+
+346
+88 条

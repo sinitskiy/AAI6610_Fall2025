@@ -1,0 +1,149 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/9i304v/hey_rbiology_if_youre_interested_i_made_an_open/
+Title: Hey /r/biology, if you're interested, I made an open source Research Paper recommender for MedLine papers, check it out. Easy to run in Google Colaboratory.
+
+Content:
+I made a research paper recommender MedLine papers, try it out! It uses embeddings to represent each paper, so you can get TSNE maps of the recommended papers, recommendations of a combo of several papers, and TSNE maps of the recommendations for that combo of several papers.
+
+###What is it?
+
+The dataset used is Semantic Scholar's corpus of research paper (https://labs.semanticscholar.org/corpus/ ), and was trained by a Word2Vec-based algorithm to develop an embedding for each paper. The database contains over 2 million papers from MedLine. You can put 1 or more (as many as you want) papers and the recommender will return the most similar papers to those papers. You can also make TSNE maps of those recommendations. 
+
+https://i.imgur.com/B4qdoCC.jpg
+
+https://i.imgur.com/OCgp0MV.jpg
+
+###Where is it?
+
+Github
+
+https://github.com/Santosh-Gupta/Research2Vec/blob/master/MedLineResearch2VecPublicPlayGroundV2.ipynb
+
+Or direct look to Google Colab
+
+https://colab.research.google.com/github/Santosh-Gupta/Research2Vec/blob/master/MedLineResearch2VecPublicPlayGroundV2.ipynb
+
+###What can you do with it ?
+
+You can input a paper, and see what are the most similar papers to it, though the first 30-80 will most likely be papers it has cited or was cited by. I've set it to return 300 papers but it ranks all 2,096,359 papers so you can set it to return whatever number of papers you want without any change in performance (except when it comes to developing the TSNE maps)
+
+Now, the fun part: utilization the embedding properties:
+
+You can see a TSNE map of how those similar papers are related to each other. The TSNE takes a while to process for 500 points (10-20 minutes). You can decrease the number of papers for a speedup, or increase the number of papers but that'll take more time.
+
+You can input several papers by adding the embeddings, and get recommendations for combined papers, just add the embeddings for all the papers (you don't have to average them since the embeddings are normalized ). 
+
+Finally, my favorite part, you can get TSNE maps of the recommendations for the combined papers are well. 
+
+**A great use case would be if you're writing a paper, or plan to do some research and would like to check if someone has already done something similar. You can input all the papers you cited or would like to cite, and look over the recommendations.** 
+
+### How important is this ?
+
+When I was in R&D, we spent a lot of time reinventing the wheel; a lot of techniques, methods, and processes that we developed were already pioneered or likely pioneered. But we weren't able to look for them, mainly due to not hitting the right keyword/phrasing in our queries.
+
+There's a lot of variation in terms which can make finding papers for a particular concept very tricky at times.
+
+I've seen a few times someone release a paper, and someone else point out someone has implemented very similar concepts in a previous paper.
+
+Even the Google Brain team has trouble looking up all instances of previous work for a particular topic. A few months ago they released a paper of Swish activation function and people pointed out others have published stuff very similar to it.
+
+> "As has been pointed out, we missed prior works that proposed the same activation function. The fault lies entirely with me for not conducting a thorough >enough literature search. My sincere apologies. We will revise our paper and give credit where credit is due."
+
+https://www.reddit.com/r/MachineLearning/comments/773epu/r_swish_a_selfgated_activation_function_google/dojjag2/
+
+So if this is something that happens to the Google Brain team, not being able to find all papers on a particular topic is something all people are prone too.
+
+Here's an example of two papers whose authors didn't know about each other until they saw each other on twitter, and they posted papers on nearly the exact same idea, which afaik are the only two papers on that concept.
+
+Word2Bits - Quantized Word Vectors
+
+https://arxiv.org/abs/1803.05651
+
+Binary Latent Representations for Efficient Ranking: Empirical Assessment
+
+https://arxiv.org/abs/1706.07479
+
+Exact same concept, but two very different ways of descriptions and terminology.
+
+###How do I use it ?
+
+Here's a quick video demonstration:
+
+https://youtu.be/Y-O0wbsg_kY
+
+I tried to make this user friendly and as fast to figure out and run as possible, but there's probably stuff I didn't take into account. Let me know of you have any questions on how to run it or any feedback. If you want, you can just give me what papers you want to analyze and I'll do it for you (look up the papers on https://www.semanticscholar.org/ first )
+
+Here's a step by step guide to help people get started
+
+**Step 1:** 
+
+Run the Section 1 of code in the Colab notebook. This will download the model and the dictionaries for the titles, Ids, and links. 
+
+https://snag.gy/rmoCXO.jpg
+
+**Step 2:**
+
+Find the papers want to find similar papers for at Semantic Scholar https://www.semanticscholar.org
+
+Get either the title or Semantic Scholar's paperID, which is the last section of numbers/letters in the link. For example, in this link
+
+https://www.semanticscholar.org/paper/Distributed-Representations-of-Sentences-and-Le-Mikolov/9abbd40510ef4b9f1b6a77701491ff4f7f0fdfb3
+
+The Semantic Scholar paper ID is '9abbd40510ef4b9f1b6a77701491ff4f7f0fdfb3'
+
+Use the title(s) and/or Semantic Scholar's paperID(s) with Section 2 and Section 3 to get the EmbedID from the model. EmbedIDs are how the model keeps track of each paper (not the paperID). 
+
+https://i.imgur.com/0yAQEZl.jpg
+
+The EmbedID is what each dictionary first returns. 
+
+**Step 3:**
+
+In Section 4, insert the EmbedID(s) as the values of paper1EmbedID, paper2EmbedID, paper3EmbedID, paper4EmbedID, etc. 
+
+https://snag.gy/AzeP91.jpg
+
+If you have less than or more than 4 papers you want to analyze, change these lines 
+
+    extracted_v = paper1 + paper2 #+ paper3 + paper4  #Don't need to average since vectors are normalized 
+    extracted_vSM = paper1SM #+ paper2SM + paper3SM + paper4SM  #Don't need to average since vectors are normalized 
+
+and create or eliminate the lines of code for vector extraction
+
+    paper1 = np.take(final_embeddings, paper1EmbedID , axis=0)   
+    paper2 = np.take(final_embeddings, paper2EmbedID , axis=0) 
+    paper3 = np.take(final_embeddings, paper3EmbedID , axis=0)   
+    paper4 = np.take(final_embeddings, paper4EmbedID , axis=0) 
+    
+    paper1SM = np.take(final_embeddingsSM, paper1EmbedID , axis=0)   
+    paper2SM = np.take(final_embeddingsSM, paper2EmbedID , axis=0) 
+    paper3SM = np.take(final_embeddingsSM, paper3EmbedID , axis=0)   
+    paper4SM = np.take(final_embeddingsSM, paper4EmbedID , axis=0) 
+
+Finally, run Section 5 to get a TSNE map of the recommendations. With 300 papers, it takes 15-18 minutes for the map to be produced. 
+
+**Ask any question you have no matter how minor, I want people to use this as quickly as possible with as little time as possible figuring out what to do.** 
+
+### Other details
+
+So it probably doesn't have any papers released in the last 5 months; I think the corpus was last updated in March 2018. Due to the limitation on my computational resources (Google Colab) I had to filter towards more papers with more connections to other papers in the database. A connection is either a citation to another paper in the database, or cited by another paper in the database. I filtered to only include papers with 50 or more connections because Colab would crash if I tried to include more. 
+
+As of right now, the recommender has 2,096,359 papers. I hope to make future versions with more many more papers, including papers from other fields. 
+
+### Feedback greatly appreciated !
+
+I am hoping to get as much feedback as possible. I am specifically looking for cases where you feel that the recommender should have given a particular paper in the top results, but didn't. I am hoping to make an evaluation toolkit that I can use to tune the hyperparameters. 
+
+
+
+
+Comments:
+- Hey there, I work in science consulting and I feel this could be an incredibly helpful tool. I am going to give it a try later on tomorrow and will provide feedback—I also enjoy coding in Python (and am still learning) so think it will be really interesting and educational to read through your code. I really appreciate you creating this and making it open source!
+- That's awesome, great job !!!!!!
+- This looks really neat! I've been thinking of trying to do something like this as well. Cool to see other people are interested. 
+
+>	The TSNE takes a while to process for 500 points (10-20 minutes). You can decrease the number of papers for a speedup, or increase the number of papers but that'll take more time.
+
+Check out [UMAP](https://github.com/lmcinnes/umap). It's another dimensionality reduction technique like tSNE but can be much faster. Visually I tend to prefer UMAP projections over tSNE.
+- Awesome, thanks!! Let me know if you have any questions running it.
+- wow thanks!!

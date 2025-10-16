@@ -1,0 +1,50 @@
+URL: https://www.linkedin.com/posts/john-kitchin-6b959038_turning-messy-data-into-insight-in-stem-activity-7362465098545651712-i8E5
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+John Kitchin
+
+Professor of Chemical Engineering
+
+1 个月
+
+🚀 Turning Messy Data into Insight
+
+In STEM, data is rarely clean. 📊 We deal with scattered points, noisy curves, and confusing patterns. The challenge is: how do we transform all that into knowledge we can use?
+
+That’s exactly what my new book, Data-driven Modeling in Python, is all about. 🐍
+
+Inside, you’ll find practical tools and examples, including:
+✔️ Linear & polynomial regression for trend discovery
+✔️ Gaussian Process Regression for uncertainty-aware predictions
+✔️ Random Forests, Neural Nets, and other ML models
+✔️ Feature engineering, dimensionality reduction, & selection
+✔️ Symbolic regression to uncover interpretable equations
+✔️ Scikit-learn pipelines, cross-validation, & custom estimators
+
+This resource is written for students, researchers, and professionals who want to move from raw data → to clear insights → to predictive models.
+
+📘 Check it out here: https://lnkd.in/ehj8T5Tt
+
+If you’re looking to strengthen your data science toolkit in a scientific or engineering context, this book was written with you in mind.
+
+💡 Let’s turn messy data into knowledge!
+
+…展开
+37
+赞
+评论
+分享
+Transcript
+Transcript
+Hello everyone, Peter Python here your friendly guide to the world of coding, science and engineering. Let me ask you something. Have you ever looked at a messy data set, points scattered everywhere, noisy measurements that don't make sense, and thought, how do I turn this into knowledge? You're not alone. That's exactly the challenge faced in science, engineering, and research every day. And that's where data-driven modeling comes in. In my new book, data-driven Modeling in Python, I'll take you on a journey through the essential tools that help us extract. Meaning from data, we'll start with the fundamentals, linear regression, polynomial fits, and interpolation. These are the building blocks, the first step in making sense of experimental results. You'll see how a s

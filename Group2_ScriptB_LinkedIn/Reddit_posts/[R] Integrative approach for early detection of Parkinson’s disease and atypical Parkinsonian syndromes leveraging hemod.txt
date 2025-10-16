@@ -1,0 +1,22 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mh455w/r_integrative_approach_for_early_detection_of/
+Title: [R] Integrative approach for early detection of Parkinson’s disease and atypical Parkinsonian syndromes leveraging hemodynamic parameters, motion data & advanced AI models
+
+Content:
+https://www.sciencedirect.com/science/article/abs/pii/S0169260725004067
+
+
+A recent study in Computer Methods and Programs in Biomedicine explores an efficient approach to early Parkinson’s detection using time-series data from low-cost sensors processed on microcontrollers. The lightweight hybrid machine learning model offers potential for accessible screening in low-resource settings.
+
+Highlights:
+
+• Parkinson’s disease (PD) is a progressive neurological disorder affecting motor and non-motor functions. Early detection of PD is essential for improving patient outcomes and quality of life
+
+• This study proposes a multimodal hardware based wearable integrated with a novel machine learning framework for early, accurate and remote diagnosis of Parkinson’s disease.
+
+• Analyses diverse data sets, including hemodynamic parameters, gait patterns, and hand tremor metrics including bradykinesia and rigidity.
+
+• Achieves high accuracy through advanced algorithms, integrating artificial intelligence and intuitive user interface, thus providing a robust diagnostic tool.
+
+
+Comments:

@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wijju3/programming_portfolio_from_online_course_projects/
+Title: Programming portfolio from online course projects only?
+
+Content:
+I'm studying biochemistry but considering bioinformatics / data science as a career. I have no prior experience with coding but I'm picking up python with some online courses right now and will probably be continuing these online courses (have plans for SQL, R, machine learning) until it's time to apply for a master's / phd. I know it's important to have a portfolio, but because I have no formal access to bioinformatics resources, it feels like the only kind of project I can tackle, at least at my level of coding for the next couple of years, will only be at the level of the projects/tutorials from these online courses. I don't feel like that would reflect well on me to future employers, but I don't know how to go one step further. I do intend on working on Rosalind but wonder if that will also be too basic? How unique should my portfolio be and how can I go about finding or creating suitable projects?
+
+Comments:
+- Not sure where you are but in the UK master’s level courses either only require having a quantitative degree at undergrad which biochemistry would be or require a bit of coding exp but that could be easily proven with your online projects. 
+
+During the master’s you’ll be able to build some good bioinformatics projects ready for PhD level study.
+- What do you mean by "no formal access to bioinformatics resources"? Aren't you at a university?
+- Yes but my course has very little focus on bioinformatics and is more molecular biology / cellular biology based. There are only two week practicals courses on R and python

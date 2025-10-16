@@ -1,0 +1,30 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1g5j8fq/ideas_for_project/
+Title: Ideas for project
+
+Content:
+Guys i need ideas for my final year project. The niche is AI. Anything related to Generative AI or Computer Vision or Machine learning etc. Can have implementation of Rag etc. im open to ideas. Please suggest something.
+
+Comments:
+- automatic PSA grading of Pokemon cards.
+- Live Streaming volumetric area into live 3d models
+- Using computer vision to identify and sort recyclable items out of bulk trash. Eg: E-waste, plastics, glass. Bonus points for using the same and quick read / error correction on barcodes for sorting recycling further into sub categories. Eg: different sub of plastic based on the bottle. Almost everything has a barcode, easier than manual sort and gives a reference for comparison in a computer vision model.
+- Take image of a cloth and image of a person. Drape that peice of clothing on the person. This has huge usecase in malls and clothing stores.
+- Chess figures real time detection and tracking application
+- Might be hard, but try physics based cloth simulation using deep learning
+- Given a video clip of someone walking, make a system that will change what they are wearing or make them carry something they were not in the original video. This would require human body tracking, full body pose recovery, integration with one of the open source virtual clothing try on repos, and then all the nonsense of ironing out the integration details, creating a useful UI, and (of course) making the thing run fast enough that you don't need some monster GPU and hours to see a result.
+- Find a pieces of clear plastic in ground meat.
+- Gaussian Splatting or NeRF related ig (image/video to 3D scene).
+- [removed]
+- 1) Using computer vision for the blind
+2) Packaging suggestor by scanning the product for wrapping/packaging industry.
+3) Helping solve rubik's cube by tracking user movement.
+- Photo editing to remove a person with a prompt.
+- Inviting you to r/Rag
+- Real time is a trend right now with avatar creation
+- 3d medical scans to 3d image and then pass that to a model for classification etc
+- House prices prediction 😎
+- As if my supervisor will say yes after hearing bout Pokemon cards.
+- For that search virtual try-on, ootdiffusion and fashn. Google also did that with best results. GL
+- Is there an open source dataset for it?
+- what models are you exploring in this space??

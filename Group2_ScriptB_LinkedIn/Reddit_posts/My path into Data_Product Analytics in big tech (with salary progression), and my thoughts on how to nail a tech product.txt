@@ -1,0 +1,87 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fhli34/my_path_into_dataproduct_analytics_in_big_tech/
+Title: My path into Data/Product Analytics in big tech (with salary progression), and my thoughts on how to nail a tech product analytics interview
+
+Content:
+Hey folks,
+
+I'm a Sr. Analytics Data Scientist at a large tech firm (not FAANG) and I conduct about \~3 interviews per week. I wanted to share my transition to data science in case it helps other folks, as well as share my advice for how to nail the product analytics interviews. I also want to raise awareness that Product Analytics is a very viable and lucrative data science path. I'm not going to get into the distinction between analytics and data science/machine learning here. Just know that I don't do any predictive modeling, and instead do primarily AB testing, causal inference, and dashboarding/reporting. I do want to make one thing clear: This advice is primarily applicable to analytics roles in tech. It is probably not applicable for ML or Applied Scientist roles, or for fields other than tech. Analytics roles can be very lucrative, and the barrier to entry is lower than that for Machine Learning roles. The bar for coding and math is relatively low (you basically only need to know SQL, undergraduate statistics, and maybe beginner/intermediate Python). For ML and Applied Scientist roles, the bar for coding and math is much higher. 
+
+Here is my path into analytics. Just FYI, I live in a HCOL city in the US.
+
+**Path to Data/Product Analytics**
+
+* 2014-2017 - Deloitte Consulting
+   * Role: Business Analyst, promoted to Consultant after 2 years
+   * Pay: Started at a base salary of $73k no bonus, ended at $89k no bonus.
+* 2017-2018: Non-FAANG tech company
+   * Role: Strategy Manager
+   * Pay: Base salary of $105k, 10% annual bonus. No equity
+* 2018-2020: Small start-up (\~300 people)
+   * Role: Data Analyst. At the previous non-FAANG tech company, I worked a lot with the data analytics team. I realized that I couldn't do my job as a "Strategy Manager" without the data team because without them, I couldn't get any data. At this point, I realized that I wanted to move into a data role.
+   * Pay: Base salary of $100k. No bonus, paper money equity. Ended at $115k.
+   * Other: To get this role, I studied SQL on the side.
+* 2020-2022: Mid-sized start-up in the logistics space (\~1000 people).
+   * Role: Business Intelligence Analyst II. Work was done using mainly SQL and Tableau
+   * Pay: Started at $100k base salary, ended at $150k through a series of one promotion to Data Scientist, Analytics and two "market rate adjustments". No bonus, paper equity.
+   * Also during this time, I completed a part time masters degree in Data Science. However, for "analytics data science" roles, in hindsight, the masters was unnecessary. The masters degree focused heavily on machine learning, but analytics roles in tech do very little ML.
+* 2022-current: Large tech company, not FAANG
+   * Role: Sr. Analytics Data Scientist
+   * Pay (RSUs numbers are based on the time I was given the RSUs): Started at $210k base salary with annual RSUs worth $110k. Total comp of $320k. Currently at $240k base salary, plus additional RSUs totaling to $270k per year. Total comp of $510k.
+   * I will mention that this comp is on the high end. I interviewed a bunch in 2022 and received 6 full-time offers for Sr. analytics roles and this was the second highest offer. The lowest was $185k base salary at a startup with paper equity.
+
+**How to pass tech analytics interviews**
+
+Unfortunately, I don’t have much advice on how to get an interview. What I’ll say is to emphasize the following skills on your resume:
+
+* SQL
+* AB testing
+* Using data to influence decisions
+* Building dashboards/reports
+
+And de-emphasize model building. I have worked with Sr. Analytics folks in big tech that don't even know what a model is. The only models I build are the occasional linear regression for inference purposes.
+
+Assuming you get the interview, here is my advice on how to pass an analytics interview in tech.
+
+* **You have to be able to pass the SQL screen**. My current company, as well as other large companies such as Meta and Amazon, literally only test SQL as for as technical coding goes. This is pass/fail. You have to pass this. We get so many candidates that look great on paper and all say they are expert in SQL, but can't pass the SQL screen. Grind SQL interview questions until you can answer easy questions in <4 minutes, medium questions in <5 minutes, and hard questions in <7 minutes. This should let you pass 95% of SQL interviews for tech analytics roles.
+* You will likely be asked some case study type questions. To pass this, you’ll likely need to know AB testing and have strong product sense, and maybe causal inference for senior/principal level roles. [This article by Interviewquery](https://www.interviewquery.com/p/data-science-case-study-interview-questions#data-analytics-case-study-questions) provides a lot of case question examples, although it doesn’t provide sample answers (I have no affiliation with Interviewquery). All of them are relevant for tech analytics role case interviews except the Modeling and Machine Learning section.
+
+**Final notes**  
+It's really that simple (although not easy). In the past 2.5 years, I passed 11 out of 12 SQL screens by grinding 10-20 SQL questions per day for 2 weeks. I also practiced a bunch of product sense case questions, brushed up on my AB testing, and learned common causal inference techniques. As a result, I landed 6 offers out of 8 final round interviews. Please note that my above advice is not necessarily what is needed to be successful in tech analytics. It is advice for how to pass the tech analytics interviews.
+
+If anybody is interested in learning more about tech product analytics, or wants help on passing the tech analytics interview, just DM me. I wrote up a guide on how to pass analytics interviews because a lot of my classmates had asked me for advice. I don't think the sub-rules allow me to link it though, so DM me and I'll send it to you. I also have a Youtube channel where I solve mock SQL interview questions live. Thanks, I hope this is helpful.
+
+  
+Edit: Too many DMs. If I didn't respond, the guide and Youtube channel are in my reddit profile. I do try and respond to everybody, sorry if I didn't respond.
+
+Comments:
+- Nice post. And nice salary too :)
+- I’m a product DS manager in big tech - just want to validate this is an excellent post for those interested in product data science. Nothing much to nitpick here at all, great job!!
+
+For product cases, I recommend checking out some product manager books. I find they help folks get the framing right and helps with some basic product sense
+- Thanks for sharing, this is really useful for someone like me trying to decide where to direct my career. One question, what is your eduction background?
+- Interesting, I am fairly sure you work at my company and in my actual division at my company. I won't say where that is exactly, but you did give some details away in case you didn't want to completely dox yourself.
+- Great write up! Where can I find you on YouTube?
+- Thanks for the great post. I’m also in a pretty similar boat. Started off my career in 2020 as a BA and worked my way up to a Sr. DA currently. I work as a Sr. Product analyst with most similar responsibilities as you mentioned (except for the AB testing part). I do want to go into the product DS space and have been heavily focusing on learning DS/ML from scratch. Salary is about $100k base. I was planning on moving into a more DS role. What do you advise in terms of what I should focus on? Want to stay in the product space. Also, what is your COL situation?
+- What do you do for causal inference? Could you tell more?
+- Besides FAANG, I’m unsure how you can get AB testing experience elsewhere. Maybe I’m wrong but it seems niche and specific. Were you doing that sort of thing in your prior role? Or are there candidates that didn’t explicitly do that in their role prior to interviewing?
+- Hell yea. I gotta imagine that comp is inflated by stock appreciation in RSUs unless you are mondo lucky or a god-tier negotiator. Base sounds about right for Big Tech but that is a GENEROUS equity grant if you're talking initial grant value.
+- Hey! Can I DM you? I'm currently preparing for a product analytics role at a tech firm
+- Congrats on the impressive TC. I work as a product analytics manager at a start up but makes peanuts in comparison. How do you like big tech vs startup, OP?
+- > practiced a bunch of product sense case questions
+
+Where did you find product sense case questions?  That's been the hardest to find info on.  All I've found is Ace The Data Science Interview, and making up my own by browsing their site and trying to think of things they could ask.
+- Awesome, I’m in product analytics role at a non-FAANG  big tech as well. Started my career at Deloitte consulting in 2014 too! I recently got promo’d from senior (level 5) to level 6. 
+
+I’m at 450k comp all in after factoring in equity loss from the stock being down. $510k is crazy for senior, I’m guessing you benefited from a lot of appreciation?
+- Great post!
+- Any advice for ML and Applied Scientist roles?
+- Great post, thank you. 
+
+I'll DM you, I would like to know more about product analytics.
+- Saving this post as I’m literally beginning a career shift change from sales to DataSci. Hardest thing I find is learning from old out dated stuff and having to rabbit hole myself to eventually find the right answers
+- What are you degrees in?
+- Thanks OP. Will be on boarded into Deloitte’s AI and data stream and was planning on taking a similar path as yours. Glad to see it’s very viable
+- Hey there! Interesting post you've got there. Mind sharing what your education background was? I've a degree in information systems but am not keen or am losing interest in building ML or DS models, in fact I'd rather become a product analyst like yourself, having tech skills of a certain level but mainly working with business.
+
+Also do you mind sharing what in your opinion is undergraduate statistics and how you're practicing your SQL weekly? Am trying to find resources for them.

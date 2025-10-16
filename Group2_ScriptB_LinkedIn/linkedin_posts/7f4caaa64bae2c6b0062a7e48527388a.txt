@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/durasovnikita_phd-done-last-month-i-successfully-activity-7338173753886982144-jgDk
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Nikita Durasov, PhD的动态
+Nikita Durasov, PhD
+
+Research Scientist, VLM & Semantic Search @ NVIDIA
+
+4 个月
+
+PhD: DONE! 🎉 🎓🔥
+
+Last month, I successfully defended my PhD and officially became Dr. Durasov, or as my diploma formally states, "𝘋𝘰𝘤𝘵𝘦𝘶𝘳 è𝘴 𝘚𝘤𝘪𝘦𝘯𝘤𝘦𝘴 𝘐𝘯𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘲𝘶𝘦𝘴 𝘦𝘵 𝘊𝘰𝘮𝘮𝘶𝘯𝘪𝘤𝘢𝘵𝘪𝘰𝘯𝘴".
+
+Huge thanks to EPFL and EPFL School of Computer and Communication Sciences, my advisor Pascal Fua, my committee, collaborators, friends, and family who supported me throughout this journey — as well as the entire CVLab team, who made the past years both intellectually stimulating and enjoyable.
+
+My thesis focused on uncertainty estimation for deep neural networks, particularly in safety-critical applications such as computer vision, robotics, and autonomous driving. I investigated how to design models that can adapt to the unknown, handle out-of-distribution data, and provide reliable predictions in complex and dynamic environments. As autonomous models become increasingly prevalent, this topic has become crucial for ensuring reliable decision-making in today's world.
+
+I'm grateful for the opportunity to have pursued my passion for research and learning at EPFL, and I'm looking forward to the new challenges and opportunities that lie ahead. Thanks to everyone who has been a part of my PhD journey!
+
+📜: https://lnkd.in/e8kAPJ-d
+
+576
+37 条评论
+赞
+评论
+分享
+Nikita Durasov, PhD
+
+Research Scientist, VLM & Semantic Search @ NVIDIA
+
+4 个月
+
+𝐏𝐚𝐩𝐞𝐫𝐬 𝐢𝐧𝐜𝐥𝐮𝐝𝐞𝐝 𝐢𝐧𝐭𝐨 𝐭𝐡𝐞 𝐭𝐡𝐞𝐬𝐢𝐬: 
+
+* Masksembles for Uncertainty Estimation, CVPR 2021: https://tinyurl.com/55wzkurh
+
+* Leveraging Self-Supervision for Cross-Domain Crowd Counting, CVPR 2022: https://tinyurl.com/3a7kd8w8
+
+* ZigZag: Universal Sampling-free Uncertainty Estimation Through Two-Step Inference, TMLR 2024: https://tinyurl.com/3nhsjma8
+
+* Enabling Uncertainty Estimation in Iterative Neural Networks, ICML 2024: https://tinyurl.com/ykh7ek9e
+
+* IT3: Idempotent Test-Time Training, ICML 2025: https://tinyurl.com/52kkt6

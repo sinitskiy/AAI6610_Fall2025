@@ -1,0 +1,35 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1iwvgga/hiring_computer_vision_architect_for_ball/
+Title: Hiring Computer Vision Architect for Ball Tracking Project - Sports Tech
+
+Content:
+# Key Responsibilities:
+
+* **Architect and Develop**: Design and implement state-of-the-art ball tracking algorithms using computer vision and deep learning techniques.
+* **Multicamera Setup & Calibration**: Develop robust multi-camera systems for real-time tracking, ensuring high accuracy and synchronization across different camera views.
+* **Hardware & Software Optimization**: Work with GPU acceleration, edge computing, and FPGA integration to optimize real-time performance.
+* **AI & Machine Learning Integration**: Leverage deep learning models for object detection, trajectory prediction, and event recognition in sports analytics.
+* **Collaboration & Integration**: Work closely with software engineers, data scientists, and sports analysts to integrate tracking solutions into live sports broadcasting and analytical platforms.
+* **Testing & Validation**: Develop benchmark tests, validate accuracy, and optimize performance under different environmental conditions.
+* **Innovation & Research**: Stay updated with the latest advancements in sports tech, AI-driven tracking, and vision-based automation.
+
+# Required Skills & Qualifications:
+
+* **6+ years** of hands-on experience in **computer vision, machine learning, and real-time object tracking**.
+* Strong proficiency in **OpenCV, TensorFlow, PyTorch, C++/Python, and CUDA**.
+* Experience with **multi-camera synchronization, calibration, and 3D reconstruction**.
+* Deep understanding of **optical tracking, SLAM, and motion estimation** in sports analytics.
+* Hands-on expertise in **hardware integration, GPU acceleration, and edge computing**.
+* Strong mathematical and analytical skills with experience in **Kalman filters, particle tracking, and trajectory modeling**.
+* Previous experience working on **sports technology, player tracking, or ball tracking solutions** is a plus.
+* Familiarity with **Hawk-Eye, TrackMan, or similar sports tracking systems** is highly desirable.
+* Bachelor's or Master’s degree in **Computer Science, AI, Robotics, or a related field**.
+
+Comments:
+- And the estimated project budget is?
+- Dm’ed you
+- Is this a full time position?
+- I would love to be involved in this project somehow. I'm currently working on a similar project doing event tine prediction based on game film. 
+
+I don't have a background directly in computer vision as most of my work has been based in deep learning and time series, though
+- Look at this user's post history.

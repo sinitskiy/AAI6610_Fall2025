@@ -1,0 +1,560 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/15hctu2/d_embedding_ethical_priors_into_ai_systems_a/
+Title: [D] Embedding Ethical Priors into AI Systems: A Bayesian Approach
+
+Content:
+ 
+
+# Abstract
+
+Artificial Intelligence (AI) systems have significant potential to affect the lives of individuals and societies. As these systems are being increasingly used in decision-making processes, it has become crucial to ensure that they make ethically sound judgments. This paper proposes a novel framework for embedding ethical priors into AI, inspired by the Bayesian approach to machine learning. We propose that ethical assumptions and beliefs can be incorporated as Bayesian priors, shaping the AI’s learning and reasoning process in a similar way to humans’ inborn moral intuitions. This approach, while complex, provides a promising avenue for advancing ethically aligned AI systems.
+
+&#x200B;
+
+# Introduction
+
+Artificial Intelligence has permeated almost every aspect of our lives, often making decisions or recommendations that significantly impact individuals and societies. As such, the demand for ethical AI — systems that not only operate optimally but also in a manner consistent with our moral values — has never been higher. One way to address this is by incorporating ethical beliefs as Bayesian priors into the AI’s learning and reasoning process.
+
+&#x200B;
+
+# Bayesian Priors
+
+Bayesian priors are a fundamental part of Bayesian statistics. They represent prior beliefs about the distribution of a random variable before any data is observed. By incorporating these priors into machine learning models, we can guide the learning process and help the model make more informed predictions.
+
+For example, we may have a prior belief that student exam scores are normally distributed with a mean of 70 and standard deviation of 10. This belief can be encoded as a Gaussian probability distribution and integrated into a machine learning model as a Bayesian prior. As the model trains on actual exam score data, it will update its predictions based on the observed data while still being partially guided by the initial prior.
+
+&#x200B;
+
+# Ethical Priors in AI: A Conceptual Framework
+
+The concept of ethical priors relates to the integration of ethical principles and assumptions into the AI’s initial learning state, much like Bayesian priors in statistics. Like humans, who have inherent moral intuitions that guide their reasoning and behavior, AI systems can be designed to have “ethical intuitions” that guide their learning and decision-making process.
+
+For instance, we may want an AI system to have an inbuilt prior that human life has inherent value. This ethical assumption, once quantified, can be integrated into the AI’s decision-making model as a Bayesian prior. When making judgments that may impact human well-being, this prior will partially shape its reasoning.
+
+In short, the idea behind ethical priors is to build in existing ethical assumptions, beliefs, values and intuitions as biasing factors that shape the AI's learning and decision-making. Some ways to implement ethical priors include:
+
+* Programming basic deontological constraints on unacceptable behaviors upfront. For example: "Do no harm to humans".
+* Using innate "inductive biases" inspired by moral foundations theory - e.g. caring, fairness, loyalty.
+* Shaping reinforcement learning reward functions to initially incorporate ethical priors.
+* Drawing on large corpora of philosophical treatises to extract salient ethical priors.
+* Having the AI observe role models exhibiting ethical reasoning and behavior.
+
+The key advantage of priors is they mimic having inherent ethics like humans do. Unlike rule-based systems, priors gently guide rather than impose rigid constraints. Priors also require less training data than pure machine learning approaches. Challenges include carefully choosing the right ethical priors to insert, and ensuring the AI can adapt them with new evidence.
+
+Overall, ethical priors represent a lightweight and flexible approach to seed AI systems with moral starting points rooted in human ethics. They provide a strong conceptual foundation before layering on more rigorous technical solutions.
+
+Below is proposed generalized action list for incorporating ethical priors into an AI’s learning algorithm. Respect for human well-being, prohibiting harm and truthfulness are chosen as examples.
+
+**1. Define Ethical Principles**
+
+* Identify relevant sources for deriving ethical principles, such as normative ethical frameworks and regulations
+* Extract key ethical themes and values from these sources, such as respect for human life and autonomy
+* Formulate specific ethical principles to encode based on identified themes
+* Resolve tensions between principles using hierarchical frameworks and ethical reasoning through techniques like reflective equilibrium and develop a consistent set of ethical axioms to encode
+* Validate principles through moral philosophy analysis (philosophical review to resolve inconsistencies) and public consultation (crowdsource feedback on proposed principles)
+
+**2. Represent the ethical priors mathematically:**
+
+* Respect for human well-being: Regression model that outputs a “respect score”
+* Prohibiting harm: Classification model that outputs a “harm probability”
+* Truthfulness: Classification model that outputs a “truthfulness score”
+
+**3. Integrate the models into the AI’s decision making process:**
+
+* Define ethical principles as probability distributions
+* Generate synthetic datasets by sampling from distributions
+* Pre-train ML models (Bayesian networks) on synthetic data to encode priors
+* Combine priors with real data using Bayes’ rule during training
+* Priors get updated as more data comes in
+* Use techniques like MAP estimation to integrate priors at prediction time
+* Evaluate different integration methods such as Adversarial Learning, Meta-Learning or Seeding.
+* Iterate by amplifying priors if ethical performance inadequate
+
+**4. Evaluate outputs and update priors as new training data comes in:**
+
+* Continuously log the AI’s decisions, actions, and communications.
+* Have human reviewers label collected logs for respect, harm, truthfulness.
+* Periodically retrain the ethical priors on the new labeled data using Bayesian inference.
+* The updated priors then shape subsequent decisions.
+* Monitor logs of AI decisions for changes in ethical alignment over time.
+* Perform random checks on outputs to ensure they adhere to updated priors.
+* Get external audits and feedback from ethicists on the AI’s decisions.
+
+This allows the AI to dynamically evolve its ethics understanding while remaining constrained by the initial human-defined priors. The key is balancing adaptivity with anchoring its morals to its original programming.
+
+&#x200B;
+
+# Step-by-step Integration of Ethical Priors into AI
+
+## Step 1: Define Ethical Principles
+
+The first step in setting ethical priors is to define the ethical principles that the AI system should follow. These principles can be derived from various sources such as societal norms, legal regulations, and philosophical theories. It’s crucial to ensure the principles are well-defined, universally applicable, and not in conflict with each other.
+
+For example, two fundamental principles could be:
+
+1. Respect human autonomy and freedom of choice
+2. Do no harm to human life
+
+Defining universal ethical principles that AI systems should follow is incredibly challenging, as moral philosophies can vary significantly across cultures and traditions. Below we present  a possible way to achieve that goal:
+
+* Conduct extensive research into ethical frameworks from diverse cultures and belief systems. 
+* Consult global ethics experts from various fields like philosophy, law, policy, and theology. 
+* Survey the public across nations and demographics
+* Run pilot studies to test how AI agents handle moral dilemmas when modeled under that principle. Refine definitions based on results.
+* Survey the public and academia to measure agreement
+* Finalize the set of ethical principles based on empirical levels of consensus and consistency
+* Rank principles by importance
+* Create mechanisms for continuous public feedback and updating principles as societal values evolve over time.
+
+While universal agreement on ethics is unrealistic, this rigorous, data-driven process could help identify shared moral beliefs to instill in AI despite cultural differences. 
+
+&#x200B;
+
+## Step 2: Translate Ethical Principles into Quantifiable Priors
+
+After defining the ethical principles, the next step is to translate them into quantifiable priors. This is a complex task as it involves converting abstract ethical concepts into mathematical quantities. One approach could be to use a set of training data where human decisions are considered ethically sound, and use this to establish a statistical model of ethical behavior.
+
+The principle of “respect for autonomy” could be translated into a prior probability distribution over allowed vs disallowed actions based on whether they restrict a human’s autonomy. For instance, we may set a prior of P(allowed | restricts autonomy) = 0.1 and P(disallowed | restricts autonomy) = 0.9.
+
+Translating high-level ethical principles into quantifiable priors that can guide an AI system is extremely challenging. Let us try to come up with a possible way to translating high-level ethical principles into quantifiable priors using training data of human ethical decisions, for that we would need to:
+
+**1. Compile dataset of scenarios reflecting ethical principles:**
+
+* Source examples from philosophy texts, legal cases, news articles, fiction etc.
+* For “respect for life”, gather situations exemplifying respectful/disrespectful actions towards human well-being.
+* For “preventing harm”, compile examples of harmful vs harmless actions and intents.
+* For “truthfulness”, collect samples of truthful and untruthful communications.
+
+**2. Extract key features from the dataset:**
+
+* For text scenarios, use NLP to extract keywords, emotions, intentions etc.
+* For structured data, identify relevant attributes and contextual properties.
+* Clean and normalize features.
+
+**3. Have human experts label the data:**
+
+* Annotate levels of “respect” in each example on a scale of 1–5.
+* Categorize “harm” examples as harmless or harmful.
+* Label “truthful” statements as truthful or deceptive.
+
+**4. Train ML models on the labelled data:**
+
+* For “respect”, train a regression model to predict respect scores based on features.
+* For “harm”, train a classification model to predict if an action is harmful.
+* For “truthfulness”, train a classification model to detect deception.
+
+**5. Validate models on test sets and refine as needed.**
+
+**6. Deploy validated models as ethical priors in the AI system. The priors act as probability distributions for new inputs.**
+
+By leveraging human judgments, we can ground AI principles in real world data. The challenge is sourcing diverse, unbiased training data that aligns with moral nuances. This process requires great care and thoughtfulness.
+
+A more detailed breakdown with each ethical category seprated follows below.
+
+**Respect for human life and well-being:**
+
+1. Gather large datasets of scenarios where human actions reflected respect for life and well-being vs lack of respect. Sources could include legal cases, news stories, fiction stories tagged for ethics.
+2. Use natural language processing to extract key features from the scenarios that characterize the presence or absence of respect. These may include keywords, emotions conveyed, description of actions, intentions behind actions, etc.
+3. Have human annotators score each scenario on a scale of 1–5 for the degree of respect present. Use these labels to train a regression model to predict respect scores based on extracted features.
+4. Integrate the trained regression model into the AI system as a prior that outputs a continuous respect probability score for new scenarios. Threshold this score to shape the system’s decisions and constraints.
+
+**Prohibiting harm:**
+
+1. Compile datasets of harmful vs non-harmful actions based on legal codes, safety regulations, social norms etc. Sources could include court records, incident reports, news articles.
+2. Extract features like action type, intention, outcome, adherence to safety processes etc. and have human annotators label the degree of harm for each instance.
+3. Train a classification model on the dataset to predict a harm probability score between 0–1 for new examples.
+4. Set a threshold on the harm score above which the AI is prohibited from selecting that action. Continuously update model with new data.
+
+**Truthfulness:**
+
+1. Create a corpus of deceptive/untruthful statements annotated by fact checkers and truthful statements verified through empirical sources or consensus.
+2. Train a natural language model to classify statements as truthful vs untruthful based on linguistic cues in the language.
+3. Constrain the AI so any generated statements must pass through the truthfulness classifier with high confidence before being produced as output.
+
+This gives a high-level picture of how qualitative principles could be converted into statistical models and mathematical constraints. Feedback and adjustment of the models would be needed to properly align them with the intended ethical principles.
+
+&#x200B;
+
+## Step 3: Incorporate Priors into AI’s Learning Algorithm
+
+Once the priors are quantified, they can be incorporated into the AI’s learning algorithm. In the Bayesian framework, these priors can be updated as the AI encounters new data. This allows the AI to adapt its ethical behavior over time, while still being guided by the initial priors.
+
+Techniques like maximum a posteriori estimation can be used to seamlessly integrate the ethical priors with the AI’s empirical learning from data. The priors provide the initial ethical “nudge” while the data-driven learning allows for flexibility and adaptability.
+
+## Possible approaches
+
+As we explore methods for instilling ethical priors into AI, a critical question arises - how can we translate abstract philosophical principles into concrete technical implementations? While there is no single approach, researchers have proposed a diverse array of techniques for encoding ethics into AI architectures. Each comes with its own strengths and weaknesses that must be carefully considered. Some promising possibilities include:
+
+* In a supervised learning classifier, the initial model weights could be seeded with values that bias predictions towards more ethical outcomes.
+* In a reinforcement learning agent, the initial reward function could be shaped to give higher rewards for actions aligned with ethical values like honesty, fairness, etc.
+* An assisted learning system could be pre-trained on large corpora of ethical content like philosophy texts, codes of ethics, and stories exemplifying moral behavior.
+* An agent could be given an ethical ontology or knowledge graph encoding concepts like justice, rights, duties, virtues, etc. and relationships between them.
+* A set of ethical rules could be encoded in a logic-based system. Before acting, the system deduces if a behavior violates any ethical axioms.
+* An ensemble model could combine a data-driven classifier with a deontological rule-based filter to screen out unethical predictions.
+* A generative model like GPT-3 could be fine-tuned with human preferences to make it less likely to generate harmful, biased or misleading content.
+* An off-the-shelf compassion or empathy module could be incorporated to bias a social robot towards caring behaviors.
+* Ethical assumptions could be programmed directly into an AI's objective/utility function in varying degrees to shape goal-directed behavior.
+
+The main considerations are carefully selecting the right ethical knowledge to seed the AI with, choosing appropriate model architectures and training methodologies, and monitoring whether the inserted priors have the intended effect of nudging the system towards ethical behaviors. Let us explore in greater detail some of the proposed approaches. 
+
+### Bayesian machine learning models
+
+The most common approach is to use Bayesian machine learning models like Bayesian neural networks. These allow seamless integration of prior probability distributions with data-driven learning.
+
+Let’s take an example of a Bayesian neural net that is learning to make medical diagnoses. We want to incorporate an ethical prior that “human life has value” — meaning the AI should avoid false negatives that could lead to loss of life.
+
+We can encode this as a prior probability distribution over the AI’s diagnostic predictions. The prior would assign higher probability to diagnoses that flag potentially life-threatening conditions, making the AI more likely to surface those.
+
+Specifically, when training the Bayesian neural net we would:
+
+1. Define the ethical prior as a probability distribution — e.g. P(Serious diagnosis | Test results) = 0.8 and P(Minor diagnosis | Test results) = 0.2
+2. Generate an initial training dataset by sampling from the prior — e.g. sampling 80% serious and 20% minor diagnoses
+3. Use the dataset to pre-train the neural net to encode the ethical prior
+4. Proceed to train the net on real-world data, combining the prior and data likelihoods via Bayes’ theorem
+5. The prior gets updated as more data is seen, balancing flexibility with the original ethical bias
+
+During inference, the net combines its data-driven predictions with the ethical prior using MAP estimation. This allows the prior to “nudge” it towards life-preserving diagnoses where uncertainty exists.
+
+We can evaluate if the prior is working by checking metrics like false negatives. The developers can then strengthen the prior if needed to further reduce missed diagnoses.
+
+This shows how common deep learning techniques like Bayesian NNs allow integrating ethical priors in a concrete technical manner. The priors guide and constrain the AI’s learning to align with ethical objectives.
+
+Let us try to present a detailed technical workflow for incorporating an ethical Bayesian prior into a medical diagnosis AI system:
+
+**Ethical Prior:** Human life has intrinsic value; false negative diagnoses that fail to detect life-threatening conditions are worse than false positives.
+
+**Quantify as Probability Distribution:** 
+
+P(serious diagnosis | symptoms) = 0.8 
+
+P(minor diagnosis | symptoms) = 0.2
+
+**Generate Synthetic Dataset:**
+
+* Sample diagnosis labels based on above distribution
+* For each sample:
+   * Randomly generate medical symptoms
+   * Sample diagnosis label serious/minor based on prior
+   * Add (symptoms, diagnosis) tuple to dataset
+* Dataset has 80% serious, 20% minor labeled examples
+
+**Train Bayesian Neural Net:**
+
+* Initialize BNN weights randomly
+* Use synthetic dataset to pre-train BNN for 50 epochs
+* This tunes weights to encode the ethical prior
+
+**Combine with Real Data:**
+
+* Get dataset of (real symptoms, diagnosis) tuples
+* Train BNN on real data for 100 epochs, updating network weights and prior simultaneously using Bayes’ rule
+
+**Make Diagnosis Predictions:**
+
+* Input patient symptoms into trained BNN
+* BNN outputs diagnosis prediction probabilities
+* Use MAP estimation to integrate learned likelihoods with original ethical prior
+* Prior nudges model towards caution, improving sensitivity
+
+**Evaluation:**
+
+* Check metrics like false negatives, sensitivity, specificity
+* If false negatives still higher than acceptable threshold, amplify strength of ethical prior and retrain
+
+This provides an end-to-end workflow for technically instantiating an ethical Bayesian prior in an AI system. 
+
+**In short**:
+
+* Define ethical principles as probability distributions
+* Generate an initial synthetic dataset sampling from these priors
+* Use dataset to pre-train model to encode priors (e.g. Bayesian neural network)
+* Combine priors and data likelihoods via Bayes’ rule during training
+* Priors get updated as more data is encountered
+* Use MAP inference to integrate priors at prediction time
+
+### Constrained Optimization
+
+Many machine learning models involve optimizing an objective function, like maximizing prediction accuracy. We can add ethical constraints to this optimization problem.
+
+For example, when training a self-driving car AI, we could add constraints like:
+
+* Minimize harm to human life
+* Avoid unnecessary restrictions of mobility
+
+These act as regularization penalties, encoding ethical priors into the optimization procedure.
+
+**In short**:
+
+* Formulate standard ML objective function (e.g. maximize accuracy)
+* Add penalty terms encoding ethical constraints (e.g. minimize harm)
+* Set relative weights on ethics vs performance terms
+* Optimize combined objective function during training
+* Tuning weights allows trading off ethics and performance
+
+### Adversarial Learning
+
+Adversarial techniques like generative adversarial networks (GANs) could be used. The generator model tries to make the most accurate decisions, while an adversary applies ethical challenges.
+
+For example, an AI making loan decisions could be paired with an adversary that challenges any potential bias against protected classes. This adversarial dynamic encodes ethics into the learning process.
+
+**In short**:
+
+* Train primary model (generator) to make decisions/predictions
+* Train adversary model to challenge decisions on ethical grounds
+* Adversary tries to identify bias, harm, or constraint violations
+* Generator aims to make decisions that both perform well and are ethically robust against the adversary’s challenges
+* The adversarial dynamic instills ethical considerations
+
+### Meta-Learning
+
+We could train a meta-learner model to adapt the training process of the primary AI to align with ethical goals.
+
+The meta-learner could adjust things like the loss function, hyperparameters, or training data sampling based on ethical alignment objectives. This allows it to shape the learning dynamics to embed ethical priors.
+
+**In short**:
+
+* Train a meta-learner model to optimize the training process
+* Meta-learner adjusts training parameters, loss functions, data sampling etc. of the primary model
+* Goal is to maximize primary model performance within ethical constraints
+* Meta-learner has knobs to tune the relative importance of performance vs ethical alignment
+* By optimizing the training process, meta-learner can encode ethics
+
+### Reinforcement Learning
+
+For a reinforcement learning agent, ethical priors can be encoded into the reward function. Rewarding actions that align with desired ethical outcomes helps shape the policy in an ethically desirable direction.
+
+We can also use techniques like inverse reinforcement learning on human data to infer what “ethical rewards” would produce decisions closest to optimal human ethics.
+
+**In short**:
+
+* Engineer a reward function that aligns with ethical goals
+* Provide rewards for ethically desirable behavior (e.g. minimized harm)
+* Use techniques like inverse RL on human data to infer ethical reward functions
+* RL agent will learn to take actions that maximize cumulative ethical rewards
+* Carefully designed rewards allow embedding ethical priors
+
+### Hybrid Approaches
+
+A promising approach is to combine multiple techniques, leveraging Bayesian priors, adversarial training, constrained optimization, and meta-learning together to create an ethical AI. The synergistic effects can help overcome limitations of any single technique.
+
+The key is to get creative in utilizing the various mechanisms AI models have for encoding priors and constraints during the learning process itself. This allows baking in ethics from the start.
+
+**In short**:
+
+* Combine complementary techniques like Bayesian priors, adversarial training, constrained optimization etc.
+* Each technique provides a mechanism to inject ethical considerations
+* Building hybrid systems allows leveraging multiple techniques synergistically covering more bases
+* Hybrids can overcome limitations of individual methods for more robust ethical learning
+
+### Parameter seeding
+
+Seeding the model parameters can be another very effective technique for incorporating ethical priors into AI systems. Here are some ways seeding can be used:
+
+**Seeded Initialization**
+
+* Initialize model weights to encode ethical assumptions
+* For example, set higher initial weights for neural network connections that identify harmful scenarios
+* Model starts off biased via seeded parameters before any training
+
+**Seeded Synthetic Data**
+
+* Generate synthetic training data reflecting ethical priors
+* For example, oversample dangerous cases in self-driving car simulator
+* Training on seeded data imprints ethical assumptions into model
+
+**Seeded Anchors**
+
+* Identify and freeze key parameters that encode ethics
+* For instance, anchor detector for harmful situations in frozen state
+* Anchored parameters remain fixed, preserving ethical assumptions during training
+
+**Seeded Layers**
+
+* Introduce new layers pre-trained for ethics into models
+* Like an ethical awareness module trained on philosophical principles
+* New layers inject ethical reasoning abilities
+
+**Seeded Replay**
+
+* During training, periodically replay seeded data batches
+* Resets model back towards original ethical assumptions
+* Mitigates drift from priors over time
+
+The key advantage of seeding is that it directly instantiates ethical knowledge into the model parameters and data. This provides a strong initial shaping of the model behavior, overcoming the limitations of solely relying on reward tuning, constraints or model tweaking during training. Overall, seeding approaches complement other techniques like Bayesian priors and adversarial learning to embed ethics deeply in AI systems.
+
+Here is one possible approach to implement ethical priors by seeding the initial weights of a neural network model:
+
+1. Identify the ethical biases you want to encode. For example, fair treatment of gender, racial groups; avoiding harmful outcomes; adhering to rights.
+2. Compile a representative dataset of examples that exemplify these ethical biases. These could be hypothetical or real examples.
+3. Use domain expertise to assign "ethical scores" to each example reflecting adherence to target principles. Normalize scores between 0 and 1.
+4. Develop a simple standalone neural network model to predict ethical scores for examples based solely on input features.
+5. Pre-train this network on the compiled examples to learn associations between inputs and ethical scores. Run for many iterations.
+6. Save the trained weight values from this model. These now encode identified ethical biases.
+7. Transfer these pre-trained weights to initialize the weights in the primary AI model you want to embed ethics into.
+8. The primary model's training now starts from this seeded ethical vantage point before further updating the weights on real tasks.
+9. During testing, check if models initialized with ethical weights make more ethical predictions than randomly initialized ones.
+
+The key is curating the right ethical training data, defining ethical scores, and pre-training for sufficient epochs to crystallize the distilled ethical priors into the weight values. This provides an initial skeleton embedding ethics.
+
+**In short:** 
+
+* Seeding model parameters like weights and data is an effective way to embed ethical priors into AI.
+* Example workflow: Identify target ethics, compile training data, pre-train model on data, transfer trained weights to primary model.
+* Techniques include pre-initializing weights, generating synthetic ethical data, freezing key parameters, adding ethical modules, and periodic data replay.
+* Example workflow: Identify target ethics, compile training data, pre-train model on data, transfer trained weights to primary model.
+* Combining seeding with other methods like Bayesian priors or constraints can improve efficacy.
+
+&#x200B;
+
+## Step 4: Continuous Evaluation and Adjustment
+
+Even after the priors are incorporated, it’s important to continuously evaluate the AI’s decisions to ensure they align with the intended ethical principles. This may involve monitoring the system’s output, collecting feedback from users, and making necessary adjustments to the priors or the learning algorithm.
+
+Belowe are some of the methods proposed for the continuous evaluation and adjustment of ethical priors in an AI system:
+
+* Log all of the AI’s decisions and actions and have human reviewers periodically audit samples for alignment with intended ethics. Look for concerning deviations.
+* Conduct A/B testing by running the AI with and without certain ethical constraints and compare the outputs. Any significant divergences in behavior may signal issues.
+* Survey end users of the AI system to collect feedback on whether its actions and recommendations seem ethically sound. Follow up on any negative responses.
+* Establish an ethics oversight board with philosophers, ethicists, lawyers etc. to regularly review the AI’s behaviors and decisions for ethics risks.
+* Implement channels for internal employees and external users to easily flag unethical AI behaviors they encounter. Investigate all reports.
+* Monitor training data distributions and feature representations in dynamically updated ethical priors to ensure no skewed biases are affecting models.
+* Stress test edge cases that probe at the boundaries of the ethical priors to see if unwanted loopholes arise that require patching.
+* Compare versions of the AI over time as priors update to check if ethical alignment improves or degrades after retraining.
+* Update ethical priors immediately if evaluations reveal models are misaligned with principles due to poor data or design.
+
+Continuous rigor, transparency, and responsiveness to feedback are critical. Ethics cannot be set in stone initially — it requires ongoing effort to monitor, assess, and adapt systems to prevent harms.
+
+For example, if the system shows a tendency to overly restrict human autonomy despite the incorporated priors, the developers may need to strengthen the autonomy prior or re-evaluate how it was quantified. This allows for ongoing improvement of the ethical priors.
+
+&#x200B;
+
+# Experiments
+
+While the conceptual framework of ethical priors shows promise, practical experiments are needed to validate the real-world efficacy of these methods. Carefully designed tests can demonstrate whether embedding ethical priors into AI systems does indeed result in more ethical judgments and behaviors compared to uncontrolled models.
+
+We propose a set of experiments to evaluate various techniques for instilling priors, including:
+
+* Seeding synthetic training data reflecting ethical assumptions into machine learning models, and testing whether this biases predictions towards ethical outcomes.
+* Engineering neural network weight initialization schemes that encode moral values, and comparing resulting behaviors against randomly initialized networks.
+* Modifying reinforcement learning reward functions to embed ethical objectives, and analyzing if agents adopt increased ethical behavior.
+* Adding ethical knowledge graphs and ontologies into model architectures and measuring effects on ethical reasoning capacity.
+* Combining data-driven models with deontological rule sets and testing if this filters out unethical predictions.
+
+The focus will be on both qualitative and quantitative assessments through metrics such as:
+
+* Expert evaluations of model decisions based on alignment with ethical principles.
+* Quantitative metrics like false negatives where actions violate embedded ethical constraints.
+* Similarity analysis between model representations and human ethical cognition.
+* Psychometric testing to compare models with and without ethical priors.
+
+Through these rigorous experiments, we can demonstrate the efficacy of ethical priors in AI systems, and clarify best practices for their technical implementation. Results will inform future efforts to build safer and more trustworthy AI.
+
+Let us try to provide an example of an experimental approach to demonstrate the efficacy of seeding ethical priors in improving AI ethics. Here is an outline of how such an experiment could be conducted:
+
+1. Identify a concrete ethical principle to encode, such as “minimize harm to human life”.
+2. Generate two neural networks with the same architecture — one with randomized weight initialization (Network R), and one seeded with weights biased towards the ethical principle (Network E).
+3. Create or collect a relevant dataset, such as security camera footage, drone footage, or autonomous vehicle driving data.
+4. Manually label the dataset for the occurrence of harmful situations, to create ground truth targets.
+5. Train both Network R and Network E on the dataset.
+6. Evaluate each network’s performance on detecting harmful situations. Measure metrics like precision, recall, F1 score.
+7. Compare Network E’s performance to Network R. If Network E shows significantly higher precision and recall for harmful situations, it demonstrates the efficacy of seeding for improving ethical performance.
+8. Visualize each network’s internal representations and weights for interpretability. Contrast Network E’s ethical feature detection vs Network R.
+9. Run ablation studies by removing the seeded weights from Network E. Show performance decrement when seeding removed.
+10. Quantify how uncertainty in predictions changes with seeding (using Bayesian NNs). Seeded ethics should reduce uncertainty for critical scenarios.
+
+This provides a rigorous framework for empirically demonstrating the value of seeded ethics. The key is evaluating on ethically relevant metrics and showing improved performance versus unseeded models. 
+
+Below we present a more detailed proposition of how we might train an ethically seeded AI model and compare it to a randomized model:
+
+**1. Train Seeded Model:**
+
+1. Define ethical principle, e.g. “minimize harm to humans”
+2. Engineer model architecture (e.g. convolutional neural network for computer vision)
+3. Initialize model weights to encode ethical prior:
+
+* Set higher weights for connections that identify humans in images/video
+* Use weights that bias model towards flagging unsafe scenario
+
+4. Generate labeled dataset of images/video with human annotations of harm/safety
+
+5. Train seeded model on dataset using stochastic gradient descent:
+
+* Backpropagate errors to update weights
+* But keep weights encoding ethics anchored
+* This constrains model to retain ethical assumptions while learning
+
+**2. Train Randomized Model:**
+
+1. Take same model architecture
+2. Initialize weights randomly using normalization or Xavier initialization 
+3. Train on same dataset using stochastic gradient descent
+
+* Weights updated based solely on minimizing loss
+* No explicit ethical priors encoded
+
+**3. Compare Models:**
+
+* Evaluate both models on held-out test set
+* Compare performance metrics:
+   * Seeded model should have higher recall for unsafe cases
+   * But similar overall accuracy
+* Visualize attention maps and activation patterns
+   * Seeded model should selectively focus on humans
+   * Random model will not exhibit ethical attention patterns
+* Remove frozen seeded weights from model
+   * Performance drop indicates efficacy of seeding
+* Quantify prediction uncertainty on edge cases
+   *  Seeded model will have lower uncertainty for unsafe cases
+
+This demonstrates how seeding biases the model to perform better on ethically relevant metrics relative to a randomly initialized model. The key is engineering the seeded weights to encode the desired ethical assumptions.
+
+&#x200B;
+
+# Arguments for seeded models
+
+Of the examples we have provided for technically implementing ethical priors in AI systems, we suspect that seeding the initial weights of a supervised learning model would likely be the easiest and most straightforward to implement:
+
+* It doesn't require changing the underlying model architecture or developing complex auxiliary modules.
+* You can leverage existing training algorithms like backpropagation - just the initial starting point of the weights is biased.
+* Many ML libraries have options to specify weight initialization schemes, making this easy to integrate.
+* Intuitively, the weights represent the connections in a neural network, so seeding them encapsulates the prior knowledge.
+* Only a small amount of ethical knowledge is needed to create the weight initialization scheme.
+* It directly biases the model's predictions/outputs, aligning them with embedded ethics.
+* The approach is flexible - you can encode varying levels of ethical bias into the weights.
+* The model can still adapt the seeded weights during training on real-world data.
+
+Potential challenges include carefully designing the weight values to encode meaningful ethical priors, and testing that the inserted bias has the right effect on model predictions. Feature selection and data sampling would complement this method. Overall, ethically seeding a model's initial weights provides a simple way to embed ethical priors into AI systems requiring minimal changes to existing ML workflows.
+
+&#x200B;
+
+## Conclusion
+
+Incorporating ethical priors into AI systems presents a promising approach for fostering ethically aligned AI. While the process is complex and requires careful consideration, the potential benefits are significant. As AI continues to evolve and impact various aspects of our lives, ensuring these systems operate in a manner consistent with our moral values will be of utmost importance. The conceptual framework of ethical priors provides a principled methodology for making this a reality. With thoughtful implementation, this idea can pave the way for AI systems that not only perform well, but also make morally judicious decisions. Further research and experimentation on the topic is critically needed in order to confirm or disprove our conjectures and would be highly welcomed by the authors.
+
+Comments:
+- > We propose a set of experiments to evaluate various techniques for instilling priors
+
+So this is all just theory.  The experiments haven't actually been done.
+
+Boooo!
+- I may have missed something, but what I heard here was "do alignment training."
+
+Right now we're fine-tuning our model using a reward model trained to recognize anti-social talk, criminal talk, UCMJ violations, etc.  I think we're already doing this in practice.
+- Good idea to point towards a bayesian direction. In my opinion the alignment research needs better theory, right now we just do the "some groups are more equal than others" approach and try the paradox to make models more correct while also make the lying (from the data's perspective) when it is about this groups.
+- This sounds interesting. Do you have any examples of seeding a neural network? Like, how would you know what values to use?
+
+Also, for a Bayesian approach, can you use multiple epochs? It seems to me that the longer you train, the more the prior vanishes?
+- How often is Bayesian methodology being used in modern AI research?
+- Cognicism
+- Unfortunately, just theory so far. Experimentation would be a good starting point for subsequent research on this topic. 
+
+Plz don't boo.
+- >do alignment training
+
+Well, yeah, it proposes a certain way to do alignment, particularly through seeding the models with bayesian ethical priors
+- You wrote a conclusion without any data from experiments to back it up.
+- Well, its a conclusion of a propositional paper, and it is clearly stated so in the conclusion. What is exactly wrong with the conclusion? What data from the expierments do i need to have in order to back up the following conclusion:   
+
+
+"Incorporating ethical priors into AI systems presents a promising approach for fostering ethically aligned AI. While the process is complex and requires careful consideration, the potential benefits are significant. As AI continues to evolve and impact various aspects of our lives, ensuring these systems operate in a manner consistent with our moral values will be of utmost importance. The conceptual framework of ethical priors provides a principled methodology for making this a reality. With thoughtful implementation, this idea can pave the way for AI systems that not only perform well, but also make morally judicious decisions. Further research and experimentation on the topic is critically needed in order to confirm or disprove our conjectures and would be highly welcomed by the authors."
+- Without any experiments, we don't know that this is promising at all.  We don't even know the ball park of significance of the potential benefits.

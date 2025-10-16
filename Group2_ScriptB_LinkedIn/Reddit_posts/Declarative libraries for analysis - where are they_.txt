@@ -1,0 +1,99 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/rxa4sh/declarative_libraries_for_analysis_where_are_they/
+Title: Declarative libraries for analysis - where are they?
+
+Content:
+Hi,
+
+As the title suggest, I find it suprisingly difficult to find libraries where analysis/modelling is done in a declarative way. Say for example I want to train and evaluate a logistic regression model - then I need to split my data in test/train, train it on the train set, predict on test and evaluate. All these steps are usually easy enough to do and have high-level functions, but I'm still manually putting the steps together; describing _how_ to do what I want, instead of just describing _what_ I want. To me this gives a huge uncertainty in my own analysis - yes, I have split my data into test/train, but there's no certainty that I'm actually using them in the correct way. In this simple case it might be easy enough, but add pre-processing, calibration and so on and suddenly the complexity explodes.
+
+This came up for me because I'm used to do this kind of work in R and now have a project in Python. In R there's [Tidymodels](https://www.tidymodels.org/), where especially the package [workflows](https://workflows.tidymodels.org/) is very close to what I want. Workflows is still a surprisingly new for something that I think is neccesary for being confident in your model evaluations and such.
+
+I'm using Scikit-learn in Python but can't find anything similar to that. I think the closest thing is big Machine Learning experiment management like Neptune, but that also seems a bit overkill.
+
+So; where are these libraries? Do they exist and I just haven't searched enough?
+
+Or am I wrong and dumb and missing something for wanting this?
+
+Or am I really just interrested in standarized and validated setups/workflows/pipelines and the "declarative" part is actually not that important?
+
+Looking forward to your comments!
+
+Comments:
+- The closest you can come to this are [sklearn's pipelines](https://scikit-learn.org/stable/modules/compose.html#pipeline) and column transfomers, which you should always use, especially the former.
+
+You can make a transformer to preprocess a few columns, stick that into your pipeline together with your model and then hit `.fit()`.  This will fit your preprocessing steps *and* your training just on your train data. If you `.predict()` with your pipeline on something else it will apply your preprocessing and predictions.
+
+This is far better than manually fitting your `StandarScaler()` then your `PCA()` and then `.fit()` on your model during training and then doing all the same during test. You only need one method call then.  You're not dumb, this is a valid point to be honest.
+
+If I'm going to evaluate a large set of models I take it a step further and just write a class or function that does the heavy lifting for me. It's trivial to write something that takes in a model as argument and then spits out the relevant metrics for you.
+- Nice! I know I've looked at the pipeline docs because, not sure why I didn't think they were useful.
+> If I'm going to evaluate a large set of models I take it a step further and just write a class or function that does the heavy lifting for me. It's trivial to write something that takes in a model as argument and then spits out the relevant metrics for you.
+
+I will probably end up with this too. I just find it interesting (and annoying) that there aren't any standard solutions for this, instead of having to write a mini "framework" for each case. Maybe I'm just underestimating the complexity and effort in generalizing and finding good abstractions for this.
+- Can you give an example how different this is than `Tidymodels`? Huge R fan but I haven't actually used it for *actual* ML (just GLM type things).
+
+>I will probably end up with this too. I just find it interesting (and annoying) that there aren't any standard solutions for this.
+
+The closest you can come to this is autoSklearn / autoML / TPOPT. Every use case is (slightly) different and these 3 will search for the optimal solution in a given time budget. 
+
+Writing a few functions or a class to do these things 'manually' is really really trivial though. StandardScaler => PCA => Classifier is a very common workflow. Whenever you use this, just remember to keep to tun it into a function and store it in a module somewhere. Your function should have at least 3 parameters: Columns, # principal components and the classifier. 
+
+I'm working on a thesis right now and I did most of this in a notebook to demo to the faculty. I'll turn the notebook into a class that takes a number of parameters and just runs my entire experiment. You can make the class hold objects like plots, cross-validation results, etc. Coding something like this takes less than a 2-3 hours from scratch for an intermediate Python user and saves you hours in the long run if you have to do a ton of experiments.
+- > Can you give an example how different this is than Tidymodels? Huge R fan but I haven't actually used it for actual ML (just GLM type things).
+
+It's not very different. I'm not an expert in Tidymodels or anything, but forexample, borrowing from [Tidymodels docs](https://www.tidymodels.org/start/case-study/), here's an example of doing logistic regression and then tuning the parameters:
+
+    lr_mod <- 
+      logistic_reg(penalty = tune(), mixture = 1) %>% 
+      set_engine("glmnet")
+    
+    lr_recipe <- 
+      recipe(children ~ ., data = hotel_other) %>% # specify predictor
+      step_dummy(all_nominal(), -all_outcomes()) %>% 
+      step_normalize(all_predictors())
+
+     lr_workflow <- 
+       workflow() %>% 
+       add_model(lr_mod) %>% 
+       add_recipe(lr_recipe)
+
+     lr_reg_grid <- # grid for tuning
+       tibble(penalty = 10^seq(-4, -1, length.out = 30))
+    
+    lr_res <- 
+      lr_workflow %>% 
+      tune_grid(val_set,
+            grid = lr_reg_grid,
+            control = control_grid(save_pred = TRUE),
+            metrics = metric_set(roc_auc)) %>% # Tune 
+     show_best("roc_auc", n = 15) # show best parameters
+
+Describe model, describe preprocess steps, make matrix of parameters to tune, tune, evaluate. This is closer to what I want, but it's still only part of a whole analysis. I would still need to manage test/train data forexample (i think)
+
+> Coding something like this takes less than a 2-3 hours from scratch for an intermediate Python user and saves you hours in the long run if you have to do a ton of experiments.
+
+I agree and I'm not opposed to it - I use python for my day job, I just haven't done much statistical work in it. To me, it's very similar to if I made my own linear regression - yes, I could make it and it wouldn't be too much work, but I would MUCH rather use an already existing implementation for any kind of serious work. Even if I myself is confident in it, I would expect my peers to be suspicious of any results I present based on it. 
+
+Maybe in the broader sense, I think that in the same way as as we require each step/function of an experiment to have been tested and proved correct, we should also require it on the framework that ties those steps together.
+- Aside from R vs Python syntax the functionality of tidymodels is nearly identical to sklearn's pipelines. Sklearn's API takes a bit of getting used to but is a real gem once you know how to.
+
+You can define column transformers => pipeline + parameter grid => gridsearch. [This is an amazing example](https://scikit-learn.org/stable/tutorial/statistical_inference/putting_together.html). This is very declarative in the sense of the name, you declare what preprcocessing steps you want to take place and put it in a pipeline. 
+
+If you want a more declarative solution than this you need to move towards something like autoML indeed because that that point it's full automation you need/want.
+- Neat! This is indeed really close and probably good enough for what I need right now. In my idea of this declarative library, this preprocess->fit->predict pipeline would be a part of the whole process, but also what kind of test/train split to use, what hypothesis is being tested and so on (which maybe isn't really reflected in the OP). Also the ability to have multiple pipelines tested together, which i just now remember that tidymodels kinda have through [workflowsets](https://workflowsets.tidymodels.org/index.html), which is... well yeah, sets of workflows, for comparing multiple workflows and such.
+
+I know that I sound R-biased, but I'm equally surprissed that R - a language made for statistics - just barely have it and not really and only recently.
+
+I still don't think that what I want is automation in the sense of automl, though yes maybe it's close.
+- Nesting pipelines is possible, but most likely achieved through something like putting a ColumnTransformer into a Pipeline. 
+
+&#x200B;
+
+>what kind of test/train split to use, what hypothesis is being tested and so on
+
+Sure, these are (still) up to you which makes sense imo. Test/train split (and how to do it) is something you only do once and not really something you want to automate in your Pipeline because you don't want to split each time you see new data. Selecting metrics etc is something you still have to do as well but isn't really the hardest thing either.
+
+>I know that I sound R-biased, but I'm equally surprissed that R - a language made for statistics - just barely have it and not really and only recently.
+
+I'm a big fan of R, if not for employability sake I'd be using it a lot more than I am now. R also has a lot of libraries that are ill-maintained or just don't exist in Python.

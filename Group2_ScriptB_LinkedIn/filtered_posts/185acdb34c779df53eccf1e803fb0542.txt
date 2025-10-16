@@ -1,0 +1,70 @@
+URL: https://www.linkedin.com/posts/skphd_bayesian-teaching-enables-probabilistic-reasoning-activity-7311107557631172609-H3yz
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dr. Sanjay Kumar的动态
+Dr. Sanjay Kumar
+6 个月
+
+Bayesian Teaching Enables Probabilistic Reasoning in Large Language Models
+
+Large Language Models (LLMs) like GPT or Gemini are increasingly deployed in real-world interactive applications such as recommendation systems. For such use cases, it's crucial that LLMs form probabilistic beliefs about users and update them over time as they gather more data—much like how humans or optimal agents would using Bayesian inference.
+
+▶️Problem Statement:
+Despite their advanced capabilities, off-the-shelf LLMs fail to perform Bayesian reasoning:
+
+◾ They do not update beliefs effectively based on user feedback.
+◾Their performance does not improve over multiple interactions.
+◾This limits their usefulness in tasks that require adapting to uncertain or evolving user preferences.
+
+▶️ Solution Provided: Bayesian Teaching 
+To address this, the authors introduce Bayesian Teaching, a method to teach LLMs how to reason probabilistically by:
+
+◾Training LLMs on interactions between users and a simulated Bayesian Assistant, which represents the optimal reasoning strategy.
+
+◾Using supervised fine-tuning to help LLMs mimic the Bayesian Assistant’s approach to belief updates—even when its guesses are imperfect.
+
+◾This teaching approach contrasts with Oracle Teaching, where the LLM is simply given the correct user choice, without learning the reasoning process behind it.
+
+LLMs trained using Bayesian Teaching adapt better over time, outperforming those trained with Oracle Teaching or not fine-tuned at all.
+
+#GenAI #AI #LLM #datascience #machinelearning #RAG #Bayesian #Google #Gemini #Gemma 
+
+Reference : https://lnkd.in/gFuVEU7V
+
+
+8
+1 条评论
+赞
+评论
+分享
+APPLIED E.R.S LTD
+
+6 个月
+
+Very interesting and enriching post, well done!
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+40,854 位关注者
+
+1,750 则动态
+ 180 篇文章
+查看档案  关注
+更多文章
+AI Product Management with Vibe Coding: Building GenAI Solutions That Truly Solve Problems
+Dr. Sanjay Kumar  2 周
+Landscape of Vibe

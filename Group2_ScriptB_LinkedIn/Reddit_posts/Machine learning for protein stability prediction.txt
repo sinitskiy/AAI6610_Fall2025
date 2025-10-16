@@ -1,0 +1,29 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cx42sv/machine_learning_for_protein_stability_prediction/
+Title: Machine learning for protein stability prediction
+
+Content:
+Hi everyone,
+
+I am a masters student of data analytics and machine learning. I wanted to write my thesis and one of my friends was doing his postdoc on bioinformatics so he suggested I can do my thesis there using machine learning. I started and almost finished it, however, I have some questions!
+
+What do these variations in amino acids do? 
+I got features extracted from external sources like aaindex, neighbourhood features, dipiptide, and thermodynamics features. Do you have any idea why do we get all these features from external sources? Properties? Almost 1483 features is what I got! Why this many are used?
+
+I got accuracy of maximum 69%. Is it common in bioinformatics to get this moderate level of accuracy how can I justify it?
+
+Thank you 
+
+Comments:
+- Not sure what you meant by "variations" in amino acid. But an educated guess you probably are working with proteins and want to know about the amino acid property. Each of the 20 common amino acids (aa) each has certain physiochemical property. Some are hydrophobic, some hydrophilic (liking water), some carry positive charges, others neutral or negative charges.
+
+The order of the AA sequence will determine the structure of the protein, and this structure will determine its function, with caveats. This is the afinsen dogma. 
+
+The features you mentioned is the information can be extracted from an protein AA sequence, not all of them are very useful. On the top of my head features such as dipeptide, tripeptide content in sequence feature along with evolutionary based feature (pssm matrices) offer the best information for machine learning, classic ML mind you. For deep learning, one hot encoded matrix and it's variants is the most commonly used feature.
+
+The accuracy is uh, not very nice. Barely touching 0.7 acc is not ideal for a model, especially when others are consistently getting >0.8, >0.85 acc. Of course, this is also subject to your training set; what is your dataset(s) and what is the size? Are there bad data and noise? Is there class imbalance? These are some points to consider.
+- Thank you. Yes there was class imbalance and the data was from experimental data from this paper https://www.biorxiv.org/content/10.1101/2022.12.31.522396v1. I had 15790 as Increasing, 199000 as decreasing and 157000 as neutral. So instead of the whole sample I took the subsample where I took Decreasing and Neutral of the same size as increasing. I also applied two layer binary classifier and there I got 79% accuracy.
+- 79% would make much more sense, especially when you are working that type of model. Provided the data is relatively clean, you may want to review your input features and test if some features may be interfering with your training. I'd recommend looking at papers from bioinformatics/nat. comm. to see commonly used machine learning features.
+- Wait so you balanced train, test and validation -sets? Aren't you supposed to only balance the train set or add weight to the classes based on the imbalance?
+- I actually took subsample of the dataset. The total observations were 380000 and I could not use them all due to resource constraints. Since I had 15790 increasing ones I selected similar number of decreasing and neutral randomly. Then I divided it between training and testing 80/20
+- Afaik isn't it best practice to use a test set that has the same distribution as the actual data, because otherwise you are giving your model an advantage by altering the distribution of the test set & giving a model estimate that won't be reflective of its performance on new data?

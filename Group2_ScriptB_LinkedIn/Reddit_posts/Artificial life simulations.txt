@@ -1,0 +1,21 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/la7u78/artificial_life_simulations/
+Title: Artificial life simulations
+
+Content:
+I do research in machine learning for drug sensitivity prediction (will this drug work for this person's cancer). My research is on a more basic level, i.e. not nearly ready for prime time. One of the questions I've been thinking about lately is, can we develop machine learning algorithms that are best-in-class at (known, i.e. computationally generated) biologically inspired datasets. By this I mean datasets that derive from boolean type expressions, the basis of how we describe biology (this drug works will work if this gene is mutated AND that gene is overexpressed OR this pathway is already shutdown etc.). 
+
+I could generate such testing datasets by coming up with random boolean phrases, but I'd rather have the datasets be closer to biology in the sense that the system that generates the data is itself life-like, i.e. the product of a computational evolution simulation.
+
+This is the type of google search I'm doing *artificial life chemical evolution simulation computation network motif hierarchical modular*  
+I'm wondering if anyone has any leads as to software programs that run for a while and result in several "species" which are related to each other but there is variation as well (almost all cancers are different at the genomic level, and hence how they respond to drugs). Ideally the software evolves genomes/lifes that contain the modular hierarchical architecture that real organisms and cells have.
+
+Comments:
+- I'm producer of [Creatura](https://store.steampowered.com/app/781130/Creatura/), it's probably quite far from what You need, but it has working robust genome simulation system (codon based, syn/nonsyn genes, mutation vectors, genetic drift, etc), if You can show me what kind of output/input You are expecting to generate, i would be happy to implement it and expose the data through some API.
+
+If that's kind of thing that might be useful to You, PM me, i'll send You key.
+- > I'm wondering if anyone has any leads as to software programs that run for a while and result in several "species" which are related to each other but there is variation as well (almost all cancers are different at the genomic level, and hence how they respond to drugs). Ideally the software evolves genomes/lifes that contain the modular hierarchical architecture that real organisms and cells have.
+
+Think that Biogenesis https://sourceforge.net/projects/biogenesis/ and my "Color Mod" for it creates virtual life forms, that fulfill these requirements at least. No idea, if it could be really useful to you.
+- Thank you I will check this out. Looks like a ton of work!!
+- Thanks I will check this out!

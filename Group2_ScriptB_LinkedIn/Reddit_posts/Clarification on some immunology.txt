@@ -1,0 +1,32 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/ggpmtx/clarification_on_some_immunology/
+Title: Clarification on some immunology
+
+Content:
+Hey guys. I am new to the subreddit and I'm assuming there are some *really* smart biology people here and I was wondering if I could get some help.
+
+So, I have 2 inquiries:
+
+1. MHC Class 1 can be made by all nucleated cells within the body, where the cells form the complex with a protein + peptide of a foreign/unusual material? And MHC Class 2 can be made only by APCs, who can phagocytose foreign material, chop it up inside, then present it to helper T cells? (i.e. Class 1: Inside -> Outside / Class 2: Outside -> Inside -> Outside)
+2. Both helper and cytotoxic T cells have TCRs that are used to bind to the MHC molecules, which can be **thought of** as like membrane bound antibodies on B cells but are actually different. But its the CD4+ and CD8+ proteins on them that causes each to go to MHC Class 2 and 1 respectively, is that correct?
+
+Please I really want to know this. I'm currently studying high school biology and they don't go in-depth into it because it is 'too much information you won't be tested on it don't worry' but i dont give a shit i wanna learn. Thank you 😊
+
+Comments:
+- This is the basis of T-cell biology, and you seem to have it covered. The way most folks think of it is as 3 signals. MHCs interact with TCRs, localised to TCRs are CD4 or CD8. CD4 are on T-helper cells, CD8 on cytotoxic T-cells. The CD interacts with the MHC and stabilizes the interaction. As cells move through the body, they're basically always bumping and interacting with each other, the CD is what's important. 
+
+The 3rd signal isn't covered early on, but it's equally important. The 3rd signal is what biases the interaction in any given context. This is what allows the T-cell to best respond to any given pathogen. Different T-cell subsets release different subsets of cytokines which coordinate the immune response.
+
+Sorry for the rambling answer, this is kind of my thing.
+- This is really beyond what I remember high school biology students learning. I’d say you have a pretty decent grasp on the basics.
+- Oh. I watched a Khan academy video on it, and Sal said that the nature of those proteins is such that they are attracted to MHC Class i and ii's respectively; do you think he was just trying to simplify it?
+- Ok thank god. 
+
+And regarding what you said about the HS stuff, yes I know I am going way too far in terms of what I need to know. My school only taught the basic nature of B and T cells. But as I mentioned in the post, I wanted to know how the whole thing worked regardless of it being in the exam or not. I can't just memorise random facts without fully understanding the concepts (unless I'm forced to; e.g. physics laws). When I actually understand how things work, when it comes to exams, its not about recalling what I memorised but rather just simply writing down what I know; writing down knowledge that is now **mine** 😂
+
+At least that's how I've been getting good grades in high school. I know you guys are laughing at me being like 'wait for college to come' haha
+- Which proteins? CD4/8?
+- It’s a good mindset to hold on to since that’s the kind of people that science needs these days. It’s better to have people who grasp concepts and can think critically than people who can memorize facts and spit them back out on command.
+
+Good luck when you get to college, especially if you pursue biology! It’s got it’s ups and down, but it’s been very rewarding to me.
+- Haha thanks. Good luck to you too!!

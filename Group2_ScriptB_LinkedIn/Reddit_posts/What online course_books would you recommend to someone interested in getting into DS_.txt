@@ -1,0 +1,26 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16udszx/what_online_coursebooks_would_you_recommend_to/
+Title: What online course/books would you recommend to someone interested in getting into DS?
+
+Content:
+As per title. I've a university degree in Information Systems but have been taking DA/ML mods, have built a couple of models myself for projects/internships which uses decision trees, random forest, logistic regression and so on.
+
+I've basic python programming knowledge along with some OOP knowledge. Self-learned matplotlib/pandas/sklearn myself so I know the basic things but still not very comfortable in using lambda to process functions what not. Also, I'm not very well versed with data algorithms (not sure if it matters :/)
+
+Have never really touched AI stuffs (took a module in uni which utilized tensorflow for image recognition and build a project to detect people with face masks on but that's about it)
+
+Am interested in eventually becoming a data scientist in the future for my career, though I'm currently a data analyst more specialized in visualizing.
+
+Looking for resources, be it on books about ML and what not so I can continue advancing my skills and eventually perhaps get a role as a data scientist. Would say that currently I'm quite rusty with my modelling skills (I still know the basic EDA/preprocessing/one-hot labelling and what not, though I would need to google for example codes and adapt to my problem at hand). Any form of other advices would be welcomed!
+
+Currently on my list:
+
+1. Python Data Science Handbook by Jake VanderPlas
+2. “Python Machine Learning” by Sebastian Raschka and Vahid Mirjalili
+3. Mastering Machine Learning Algorithms by Giuseppe Bonaccorso
+4. 100 Days of Python by Angela Yu on Udemy
+
+Comments:
+- One of the most recommended books for those starting out is the following: [An Introduction to Statistical Learning](https://hastie.su.domains/ISLP/ISLP_website.pdf) (I linked the version using Python as programming language instead of R) you can find the video lectures from the same authors on Youtube. Hope this helps, good luck on your journey!
+- Oh nice thank you! I'm aware that statistics is closely related or rather important with the field of data science when it comes to models?
+- The general recommendation is to go through a STAT 101 kind of course before reading the book (something like [this course](https://online.stat.psu.edu/stat200/) should be enough) in order to understand the terminology, another useful resource is [StatQuest](https://www.youtube.com/@statquest) to improve conceptual understanding. It will take some time, but you will develop a better understanding.

@@ -1,0 +1,52 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fy9jfq/we_are_not_only_model_builders_stop_with_that/
+Title: We are not only model builders! Stop with that!
+
+Content:
+I would like to share some thoughts I’ve been having. I’ve been looking into different industries to understand what they expect from data scientists, and I’m concerned about how many job descriptions focus solely on machine learning frameworks and model development.
+
+I started in the data science field ten years ago, and I remember when exploratory data analysis (EDA) was a critical and challenging deliverable from the "data guys." It began with a business perspective, raising hypotheses about problems, identifying variables that could explain them, and highlighting missing data that wasn’t being tracked yet—valuable input for engineering. We were bringing value to the table right from the first step.
+
+I’m part of the group that believes data scientists should be the business team's best friends. As long as we understand what kind of decision is being made, we can help. Today, data science is often treated as a purely technical function, and I’m not sure this is the right approach. We shouldn’t just receive tasks in JIRA like we're simply developing features. The business team shouldn't be the ones deciding how and when we create a model, for example. After all, do you go to the doctor and ask for surgery right away?
+
+I remember when building models was really hard, and we all agree that, in the future, it could be as simple as a drag-and-drop tool that anyone can use (isn’t it already like that?). Are we satisfied with reducing our job description to just that? To me, a data scientist is someone who helps make decisions. Data is just the type of evidence we use. This means we should emphasize EDA, causal inference, A/B testing, econometrics, operational research, and so on.
+
+During some recruitment processes, I’ve encountered people with a development background who struggle with methodology (from data leakage to selecting the right metrics to evaluate models). On the other hand, I’ve met people without a development background who have trouble with coding, limiting their ability to scale their impact. The solution I’ve found is to pair a tech-savvy person with a ‘true data scientist’ to empower both. I understand we’ll never find someone who excels at everything, but I feel we’re getting worse in this regard.
+
+Comments:
+- We should rebrand as Decision Scientists imo
+- There’s always going to be problems with the business telling DS folks what to do. I personally believe that data scientists should find and fix problems on their own. If I have free time to dig through data I can find some very useful but hidden information. In reality most businesses want to control everything and just don’t care about optimizing for proper data science. I currently have no time for EDA or true A/B testing because John Smith wants a model to support this thing and Stacey Jones wants one to support another. Rarely does the problem actually require a model.
+
+A/B testing is impossible and the only way I can really do it currently is by using PSM. I try and say we need proper A/B tests, but the response is nearly always “but if we don’t do this thing for everyone then we won’t get the full impact!” and they never listen to me when I try to explain that we won’t actually know true impact if we don’t have proper control groups. I’m pretty used to it at this point.
+- > I understand we’ll never find someone who excels at everything
+
+On the contrary, the bar is always rising. This is the standard in tech and will be in other places soon enough.
+- 100%.  Everything needs to be connected to the business outcome.
+- >I’m part of the group that believes data scientists should be the business team's best friends. As long as we understand what kind of decision is being made, we can help. Today, data science is often treated as a purely technical function, and I’m not sure this is the right approach. We shouldn’t just receive tasks in JIRA like we're simply developing features. The business team shouldn't be the ones deciding how and when we create a model, for example. After all, do you go to the doctor and ask for surgery right away?
+
+Agree with this 100%. Love the doctor analogy - patients go to the doctor and define the top level goal "I want to get better/not die", and the doctor is responsible for diagnosing the problem and performing the surgery. Similarly, I think business teams and data scientists work together best when business stakeholders define the top level objective, e.g. "we want to increase retention / engagement / revenue etc within X constraints" then work together with DS to figure it out. vs directly saying "build this model"/"cut out my liver"
+- Absolutely, it seems the the descriptions these days are really focused on the modeling and building. I've noticed that these roles are becoming more bloated even and tasking people on my team wayyyy too much in a 40 hr work week to complete miracles
+- It’s a tough balance. I’m a big tent kinda person an think all analysts, if they want and need, should use advanced stats and ML in their workflows. 
+
+But, I’m also currently refactoring a model that was created by an analyst and the notebook tossed over the fence for me to put into prod and that uh, that can be tough.
+- Best part though
+- I think many statisticians try to express this sentiment and it is met with defensive ignorance and skepticism to the detriment of everyone. Well said.
+- I still remember when being a scientist meant publishing peer reviewed research. Every quantitative field is rebranding as scientists, just waiting for accounting programs to rebrand as “ledger scientists” joining the AI folks doing “prompt engineering.” So long as the checks clear, who can complain?
+- >I’m part of the group that believes data scientists should be the business team's best friends. As long as we understand what kind of decision is being made, we can help. Today, data science is often treated as a purely technical function, and I’m not sure this is the right approach.
+
+On the other hand, I have had data scientists tell me many times "that's not part of my job". I **wish** I could find more people with this attitude. There are a ton of data scientists out there who seem to be disappointed that the real world isn't a Kaggle competition.
+- 100% agree with this. 
+
+I also have been seeing many junior data scientists fresh out of school with a specialization in data science who don't seem to understand that the word data in data science is not about feeding your model whatever you get. It's fascinating to me how much disconnect there is - people are overlooking EDA, feature engineering, modeling, problem understanding and problem framing like it's normal, and jumping right into model training.
+
+Even on the ML side of things: Something else I've been seeing is a lack of understanding of algorithms. Some spend hours training a model because it's the most used on Kaggle for example without asking themselves if that's what their data "needs" or not, or if the context they're working in is adequate or not.
+- Very good idea.
+- I treat being a data scientist kind of like being a specialized software engineer. I’m happy to work on Jira tickets and code all day. It’s easier to deliver value that way.
+
+Right now we’re studying the best way to determine a diagnosis from insurance claims. That requires a lot of analysis. Then we’re going to implement that feature in the product. I’m challenging myself to be a “Full Stack Product Data Scientist” or whatever it would be called.
+- I think the change is largely seniority based, in relation to how large the team of data scientists at a company is. If there's one or two data scientists, they play that true role where they are talking to stakeholders, understanding the business and identifying the required solutions for the business problems. When the team is larger, it's the principle data scientist or at least the more senior people doing the above, and so they hire junior people to do model building, resulting in the types of job descriptions you are seeing. When I work with junior people who come in wanting to run model.fit() or tune a bunch of parameters, I try to instil into them that that is one of the most minor parts of the job. The really good junior people you want to bring along to those stakeholder engagements and make real data scientists out of them
+- True! EDA is such an interesting part of DS.
+- nice
+- Modeling in the traditional sense in DS does not exist anymore. It's become a software eng problem.
+- Building models pays the most right now so people are quick to emphasize that part of the job.
+- Many companies (see Google) have that role. Though I’m good with any title as long as they pay me lol

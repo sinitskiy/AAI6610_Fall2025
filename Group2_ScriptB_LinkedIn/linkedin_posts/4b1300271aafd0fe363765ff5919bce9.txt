@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/weslie-henderson_googles-new-functional-generative-network-activity-7339291257149583360-7Bt4
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Wes Henderson
+
+AI/ML & High-Performance Architecture
+
+3 个月
+
+Google's new Functional Generative Network (FGN) is showing promising improvements over traditional state of the art machine learning methods for weather modeling.
+
+Per their paper, FGN is "a simple, scalable approach which models both the epistemic (uncertainty) and aleatoric uncertainty (natural randomness in predictions) in the distribution of forecasts, by expressing uncertainly through functional variability."
+
+Key findings that make FGN better than traditional models (via its superiority over GenCast, which already beat traditional models) are:
+--Superior Marginal Forecast Skill: FGN achieves better (lower) CRPS on 99.9% of targets and better RMSE on 100% of targets compared to GenCast (Avg improvements of 6.5% and 5.8% respectively).
+--Better Calibration: FGN is generally very well calibrated with spread-skill ratios close to 1, outperforming GenCast's slightly poorer calibration, especially at earlier lead times.
+--Higher Value for Extreme Weather: FGN shows as good or better Relative Economic Value (REV) for predicting extreme weather events (e.g., 99.99th percentile thresholds).
+--Better Capture of Joint Distribution Structure: FGN demonstrates better performance on metrics evaluating spatial correlations (pooled CRPS) and inter-variable dependencies (CRPS for derived quantities like 10m wind speed and z300-z500), showing it captures the structure of the joint weather distribution more skillfully.
+--Improved Tropical Cyclone Track Prediction: FGN is significantly better (p<0.05) at predicting both the ensemble mean tropical cyclone track (lower position error) and tropical cyclone track probabilities (higher REV).
+--Greater Inference Efficiency: FGN is substantially faster for inference (8 times faster for a 15-day forecast) than GenCast, despite being a larger model with a finer timestep.
+
+Pretty neat.
+
+Paper: https://lnkd.in/gRmhxSgN
+
+
+…展开
+2
+1 条评论
+赞
+评论

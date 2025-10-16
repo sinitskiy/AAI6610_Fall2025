@@ -1,0 +1,66 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1afm33o/struggling_to_mentor_junior/
+Title: Struggling to mentor junior
+
+Content:
+As a senior engineer, I'm leading a machine learning project for a client in commodity trading. Our current stage involves exploratory data analysis (EDA) to understand the client's data, create valuable features, and generate insights.
+
+During the EDA, I'm focusing on regression analysis for feature importance. Meanwhile, I've assigned a junior engineer to cluster the data based on feature characteristics. However, mentoring him is challenging due to his reluctance to explore unfamiliar concepts. For instance, he's hesitant to include metrics like stock price elasticity of demand in his analysis, despite its significance to the client and my explanation of its importance.
+
+His analytical inexperience seems overwhelming for him, leading to a dismissive attitude towards more complex concepts. How can I effectively guide him to be more open and proactive in his approach to the analysis?
+
+EDIT: Thanks everyone for suggestions. I think I just needed to make it explicitly clear to him that it is okay for him to take time to learn the theory behind clustering and give him time to think.  I think this was causing the issue because we had a bullshit deadline by the end of the week (including his analysis) to get this done, but I successfully pushed it back so.
+
+Comments:
+- You might consider switching your messaging around from “maybe you should try this” to “I want to see this.” You can do that without micromanaging or restricting him, but it does establish that he’s going to receive specific questions that he’s required to answer; and his job will be significantly easier if he learns to anticipate them rather than waiting for the inevitable mandate.
+- One thought is that part of his hesitation especially if a Junior might be that he wants to stick to what he knows for fear of trying something new, implementing it incorrectly, and getting in trouble/admonished for the mistake. It could potentially go a long way to express that part of a Junior role is learning and exploring new things and that it is expected for there to be mistakes and errors along the way. Emphasize that at this stage growth, development, and learning is the most important thing and after that bring up that metric again and encourage him to include it as part of the methodology and see if that helps
+- That’s a great attitude for a mentor to have. Your junior engineer is very lucky.
+- I have always dealt with people like this by breaking down the task assigned to them. I check on them regularly to see their progress too. I’ve been a junior too and oftentimes I get anxiety when certain projects are assigned to me. But once my senior tells me what to do and constantly gives me feedback and guidance, Im able to come up with a solution for the project.
+- When I've been in a similar position, I've seen that fear of failure can be a big driver for junior people. I think emphasising that this is really all about learning and gaining experience and that the responsibility to get this working lies on your shoulders can help.
+
+Essentially, if you try something and learn, great. If you get something that works, amazing. If you try something and it doesn't work, no problem. If this whole project doesn't work, not on you at all.
+- Some advice from research on supervision in higher education:
+
+Investing time in understanding the junior and their motivation(10-15 minutes talk + being socially attentive when you meet them). Them being comfortable and trusting you matters a lot, and often takes some work - even with an exellent attitude like yours. 
+
+Give them some projects where you make it clear that learning/attempting to do stuff is more important than the final product being polished. For example by taking responsibility for reviewing their product.
+- Speaking from personal experience, I was (and still am) hesitant to use methodologies when I don't fully understand them. Especially with statistical methods, things can get very nuanced because some paper written in the 1960s came up with a way to counteract some bias that you didn't even know existed, and now your entire methodology is wrong.
+- What about asking questions such as:  why did you do this or that? Can you me walk your through your thought process? What's the goal of this project? What do our clients want? What do we lose by remove this feature? What's the risk of dropping something that could be important?
+
+Hopefully he will realize that testing wins over assumptions and that testing hypothesis is fun.
+
+If nothing works you have one last question: Do you want to lose your job?
+- Throw him away on a mcdonalds store nearby and ask him to wait for a person that would bring his promotion to sign up
+- Subject matter expertise is really hard. We all tend to miss the “obvious” stuff when we move into new industries and new roles. I wonder if this worry is happening here. Kind of a “I don’t understand x so I’m just not going to rely on it” sort of thing.
+
+Maybe it would help to sit down and go over what in the data asset is likely to be useful to them in a general sense and what some calculated or essential fields mean as well as how they are calculated. Sometimes that just helps to remove some of the mystique around an unfamiliar concept that an individual may not know how to technically describe.
+- hire me instead
+- I wish I had a mentor like you dude. Jokes aside he's probably afraid of uncharted waters and having fear of a failure. Maybe encourage him to just try it and share back what he thinks of instead direct results.
+- Yeah this.
+
+
+I like bosses who give me space to work and discover but that sometimes requires more communication, and more direct communication about what you want done or what your priorities and expectations are.
+
+
+
+I once had a boss come to me after a couple of months about why I didn't look into a certain research project. Well, he had told me previously that "this might be worth looking into" - or some version to a similar effect. That was all. 
+
+
+Since I had a couple of other projects that I thought were a lot more promising, I said "Okay", looked into it, gave priorities to all the ideas and actively put his idea on the back burner for a later day because I judged it to be less promising. I didn't know that what he actually wanted me to do was to prioritise his idea because he phrased it so open-endedly.
+
+
+Reading OP's post, that was the first thing I noticed. OP seemingly told the junior what to do but they were reluctant to it - because they didn't want to delve into a new topic? Something doesn't fit here. The topic isn't new, they just needs to implement it. 
+
+
+So, either something is terribly wrong on the junior's side (e.g. they are completely terrified to ask questions that come with exploring new concepts) or the communication was not as clear as it could have been.
+- Yeah OP seems pretty dope wish I had worked with more ppl like him early days
+- Yeah, I am still learning how to mentor people. So I don’t think it is juniors fault here. 
+
+I think I should just change my approach on how I suggest tasks and the way I provide guidance.
+- To further elaborate and provide context, the individual in question has a year of experience and comes from a background in a different sector. Considering he's not entirely new to the workforce, it might not be very beneficial to overly simplify tasks for him at this stage. 
+
+As he transitions towards a more senior role, it's crucial for him to learn to navigate uncertainties and independently decompose tasks himself. While I'm open to guiding him through this process, I believe it's more constructive to present him with a user story like a clustering analysis, encouraging him to undertake the initial steps on his own. 
+
+This approach aligns with his progression from a junior to an associate level, where gradually assuming more responsibility and moving away from being given detailed instructions for every task is essential for his development.
+- yup helping him to think
+- Have you made it clear to him that it is okay for him to take time to research the new approach? I had a manager who would assign research tickets. I would add notes and links to resources in the comments section and then close it when I felt ready to apply it. Then the tickets lives for anyone else who could benefit from it. I have a lot more autonomy in my current position but I still follow this model if I’m going to try and approach I haven’t used recently. It’s the whole you walk and not run into a fire principle.

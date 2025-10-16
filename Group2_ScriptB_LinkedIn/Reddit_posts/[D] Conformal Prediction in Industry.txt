@@ -1,0 +1,44 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ji1s82/d_conformal_prediction_in_industry/
+Title: [D] Conformal Prediction in Industry
+
+Content:
+Hi everyone,
+
+Conformal Prediction has been very popular in the statistics/machine learning community for uncertainty quantification. I was wondering if this is only an academic popularity or are there deployed pipelines in the industry which uses conformal prediction as tool. 
+
+From my limited understanding it looks like the research groups in the industry are using it but the method still hasn't reached to production. Anyone with experience in industry can comment on this? 
+
+Comments:
+- Here's a blog post from an industry lab talking about how conformal prediction could actually be used in practice:
+
+https://layer6.ai/improving-trustworthiness-of-ai-through-uncertainty-quantification/
+- I also joined the cult of Kolmogorov and now actively repudiate Bayesian priors. I also work in industry. 
+
+Conformal Prediction got me ‘street cred’ with Data Scientists but mostly confused execs.
+- We are actually using it for anomaly detection on my team
+- The author of this book is a senior guy at Wells Fargo so I’m assuming they are using it. 
+
+https://a.co/d/2nNHm4r
+- Hundreeds of companies are using it in production from anomaly detection at Microsoft Azure for over decade, to Astra Zeneca that used it for over a decade to speed up development of new drugs (now joined by all Pharma majors) to multiple top banks from Wells Fargo to BBVA, NVDIA, DeepMind and many more.
+
+  
+[https://github.com/valeman/awesome-conformal-prediction](https://github.com/valeman/awesome-conformal-prediction)
+- Plenty of deployments across the industry from Conformal Prediction powering Microsoft Azure anomaly detection since 2016 to Astra Zeneca saving hundreeds of millions of dollars to streamline drug discovery pipeline to huge banks like BBVA using it for better customer product recommendations 
+
+  
+[https://www.bbvaaifactory.com/conformal-prediction-an-introduction-to-measuring-uncertainty/](https://www.bbvaaifactory.com/conformal-prediction-an-introduction-to-measuring-uncertainty/)
+- related: does anyone have a short intro to what conformal prediction is trying to do? i dont really feel like reading the 50 page gentle introduction for motivation
+- Same (+1). And to be fair to non-DS-oriented executives, explaining the notion of a prediction set with calibrated confidence and guaranteed coverage is a tall order, they just want to be told: "*the predicted value of Z will be between A-value and B-value, X% of the time*" so they can act on that information.
+- Real time or post hoc analysis?
+- I thought he only does consulting gigs based on his social media posting frequency
+- Use a windowing function to estimate ‘confidence intervals, then forecast; it inspired how we use a heuristic and stepwise validator to instrument deployments between stamps on ‘[AI Passports](https://github.com/rabbidave/LatentSpace.Tools)’
+
+Source: FinTech(s)
+- Prediction sets should not be used for tabular data they are for computer vision. execs understand the concet of propability very well be cause it can be combined with $ values/
+
+  
+[https://medium.com/@valeman/how-to-calibrate-your-classifier-in-an-intelligent-way-a996a2faf718](https://medium.com/@valeman/how-to-calibrate-your-classifier-in-an-intelligent-way-a996a2faf718)
+- Maybe he has time on his hands working a cushy corporate job?
+- I see your point now. The cover of the book got me—wasn’t looking at it closely enough. But from the forward by an EVP at Wells Fargo it’s clear they are using it.
+- *prediction intervals; typo on mobile

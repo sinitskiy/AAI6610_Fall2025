@@ -1,0 +1,48 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n0d12h/d_an_honest_attempt_to_implement_attention_is_all/
+Title: [D] An honest attempt to implement "Attention is all you need" paper
+
+Content:
+I have started working on implementing actual research papers in machine learning and I have started with "Attention is all you need" paper.
+
+I have implemented all the code and it is an educational attempt. I would like you to get some eyes on the repo from the members of this subreddit and get your opinion. This is still a work in progress but your reviews and PRs are really appreciated. I have written the code focusing on educational purposes and not optimisations. Please take a look below.
+
+[https://github.com/MayukhSobo/Transformer](https://github.com/MayukhSobo/Transformer)
+
+Edit: I would like to clarify that some of the code related to helper functions and all the doc strings are implemented by Claude not because they are difficult to do but they are simply boring. The core architecture is implemented by me. Also at no point I claimed that this is my own work and I haven't used AI. The part which really required me to code and not use AI, I did it on my own. If you really think that the complete code is just a result of some vibe coding, I welcome you to try that with most advanced AI tools and see if you can reproduce even 70% of what I did or not. 
+
+Comments:
+- Good job! When you try to train it, you can refer to Andrej Karpathy's GPT 2 video in which he proposes some dataset and training loop
+- > I have implemented all the code
+
+
+> at no point I claimed that this is my own work and I haven't used AI
+- nice
+- Yes!  Good work here and very much appreciate boiling it down into code.  You have my gratitude!
+- Great work! 🌟 The code is really clear and easy to follow. Thanks for sharing — I'm excited to see the training part next!
+- [deleted]
+- Thank you for the suggestion. Actually some work is still pending in the training loop. For example you shall see that there is no optimizer in the code. Also no validation dataset and no BLEU score. I shall implement these in 1 or 2 days. At that time I shall refer Andrej’s video. But I would like to explicitly tell that GPT is a decoder only model while Attention is all you need is Encoder-Decoder model. So there might be some differences. My next implementation will be GPT like models though.
+- Or you can train it on translation, which is what they wrote the paper for
+- I used to be a research scientist but now an ML engineer. But I shall see. I am planning to make tutorial series in YouTube. This is a part of it actually.
+- Yeah I was wondering about that. The original is an overcomplicated encoder-decoder model in the paper.
+- True.
+- It's not overcomplicated, it's just an architecture designed for translation
+- It’s overcomplicated from the perspective of explaining a transformer. The cross attention mechanism is supplementary to the attention heads plus FFN in layers. 
+
+Also the notion that W_Q and W_k are query and key is really just post hoc. Ultimately it’s just weights that need to be multiplied to create a square given arbitrarily long token embedding matrices. 
+
+If we stopped calling it query and key people might be less surprised by the effective context size, which should scale with the size/complexity of W_* and not the size of the token embedding matrices. 
+
+Finally they make the claim that attention is the key feature when it’s part of an ensemble that reweights predictions based on context. It really needs normalisation and some form of discretisation that softmax doesn’t quite provide.
+- No I think you need to understand the evolution of LLM. We had seq2seq and then people came up with Attention. The world was obsessed with NMT tasks. So the encoder-decoder architecture was obvious and natural transition. Even today for tasks where parallel datasets are present for tasks like summarization, style transfer, NMT most of the SOTA models are encoder-decoder models only, even in 2025. Just because ChatGPT can perform NMT or summarizations, doesn’t mean they are best for everything. So yes, although complicated, but it has benefits as well.
+- I’m aware of the evolution of LLMs. 
+
+It’s also an evolution away from LSTM and RNNs or to some an evolution of integrating context on flat network models like word2vec. 
+
+It’s still overcomplicated for the point. AIAYN is not the god paper come from on high. It’s a point on a trajectory of modelling for inference. A profoundly important one, but it ain’t perfect.
+- I think there is not need to dramatize things. It’s just a progression. I don’t understand what you mean by GOD paper! Everything has its place. For example world thought that LSTMs are gone after transformers but researchers Sapient Labs in Singapore came up with HRM which brought back LSTMs again. A tiny model could outperform big contenders in some benchmarks. I never said it’s perfect but also encoder-decoder architecture is also here to stay as well. EVERYTHING HAS ITS PLACE.
+- No I think you need to understand that when you start a comment with “no I think you need to understand” that it pivots a tone and suggests a lack of good faith. 
+
+I think it’s reasonable to have opinions on models and their explainability. 
+
+My response was in reference to a relatively absolutist position, wherein I would suggest such absolutism isn’t warranted. I also would suggest that it’s not constructive to start a response with “no”. I myself regret doing it in my own comments. This is not a competition. No one is getting graded. Trying to establish shared understanding is therefore more appealing than guarding.

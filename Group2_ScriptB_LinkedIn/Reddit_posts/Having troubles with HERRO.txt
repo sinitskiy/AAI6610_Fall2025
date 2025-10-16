@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1kjcxp2/having_troubles_with_herro/
+Title: Having troubles with HERRO
+
+Content:
+Hi! im trying to use herro, but when i download it, the model\_pt file (the machine learning model if im not wrong), results to be corrupted in some way idk why. i try to consult chatgpt and as far as i an trust it, it says that the file is 'too small' as it should be 37 mb while in my case get downloaded as a 24.1 mb file. idk how to progress what do you think???
+
+Comments:
+- You can also do dorado correct to run herro as a potentially easier way of doing it 
+
+Otherwise try downloading the model again .

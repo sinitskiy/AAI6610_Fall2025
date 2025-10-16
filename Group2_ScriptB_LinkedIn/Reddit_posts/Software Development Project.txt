@@ -1,0 +1,62 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vmkmsq/software_development_project/
+Title: Software Development Project
+
+Content:
+Hello dear redditors! 
+
+I am a phd student in bioinformatics who has experience with classical biology as well as algorithms, datastructures and CS in generel. 
+
+Nevertheless, while I love bioinformatics I have the feeling that I am stuck in Scripting hell, due to the pressure of finishing my phd ( which is going well) and publishing papers. 
+
+Well I guess most of you are familiar with the "publish or perish" environment and while I can understand that at some point one has to deliver I think it's hurting bioinformatics a lot. 
+
+By now I stumbled onto so many "bioinformatics software" which is just a folder of badly designed scripts that I am quite frustrated, especially about reproducibility. 
+
+Nevertheless, I can understand everyone who is fighting for their Job and does not have the time to develop and more importantly maintain quality software. 
+
+I really love writing software and am experimenting a lot with Go's Concurrency model and with Rust, because the cool kids use it and I kind of like too ^^. 
+
+Now my Question is, that i am in search of a meaningful project to further develop and also maintain my developer skills in my freetime. Unfortunately there is so much software in bioinformatics around that I don't know what would be something maybe someone would even use? 
+
+I personally mostly work in the field of Omics and Machine learning, so I was thinking to write something like fastqc in rust. But tbh I am not sure what is currently in need. 
+
+I am thankful for any input and ideas!
+
+Comments:
+- I’m going to make a suggestion that isn’t really in line with what you’re asking, but is worth thinking about, anyhow.  
+
+Maybe take a break from academia, and see how the other side works. Publish or perish is toxic, but isn’t the only model for how bioinformatics is done. In industry, people aren’t fixated on generating the same tools over and over, or releasing crappy collections of scripts as if that were really a complete software package.  (Although I have seen industry produce crap too, so it’s not perfect, either.)
+
+Anyhow, getting some exposure to industry practices might give you a different perspective that helps deal with some of the wasted effort that happens in academia.  It certainly helped me get through my phd and brief return to academic science, a few years afterwards.
+- Ya know, I actually like the fastqc in rust idea if you can also improve performance.
+
+Those common tools get used so much any increase in performance helps everyone. 
+
+I’ve recently switched to bwa mem2 and the speed increase is nice for what is basically a drop in replacement (after a bit of validation to make sure that was true). https://github.com/bwa-mem2/bwa-mem2
+
+Another idea is add in reading cloud data natively e.g. htslib which samtools relies on can read s3 directly. https://github.com/samtools/htslib
+
+Another option would be to do something that exists, but has a lot of licensing restrictions like blat. As a warning blat might actually have patent restrictions too.  https://kentinformatics.com/pricing
+
+Another hot area (though perhaps overdone) is hla binding prediction since it fits into machine learning fairly easily. I know I see new hla binding predictors fairly frequently on biorxiv which is why I say it may be overdone.  
+
+That said… doing something like this may not be the best for your bioinformatics career. Things like this just aren’t values as much as they should be and your free time may be better spent on the phd work (though I understand the feeling of wanting to do something else). 
+
+On the other hand if you have the ability and interest I feel like it is the type of thing that could lead to a job at a place like google. Ymmv, I’m not certain how true that statement is.
+
+Edit: the hard part if you re-make an existing tool better is getting people to use it. Expect to need to do some advertising and pushing to get it out there. The ideal case would be you get the original makers of the tool to link to or switch to your version. Ymmv on how easy/possible this would be.
+- Hi, I had recently the urge to develop a software of my own too, and I have an idea, can we connect and may be collaborate?
+- I have a proposition that is both an interesting algorithm and also would be a valuable addition to the community: An Implementation of circular binary segmentation (CBS) that integrates with cnvkit. Cnvkit is widely used for the detection of copy numbers, and the best (and default) method for segmentation is CBS based on the 
+R package PSCBS. However, it's a huge overhead to install R and many dependencies to run PSCBS. Also, a new implementation could be more performant and have a more permissive license. I think this would be much appreciated.
+- That sounds completely reasonable! Thank you for this suggestion! 
+ I am already thinking for quite some time to switch from academia to industry. Especially after I finish my phd. I just have about maybe a year left if everything works out. 
+
+Most I know from industry is computer science related. I am from germany and while there are definitely bioinformatics jobs here, most of them seem to be in academia.
+- Thank you very much for that thoughtful reply! This already helps me a lot!  I will have a look blat and i think rewriting fastqc could be a cool and fun task! Thanks!
+- Hey, that sounds nice in general. I am currently stuck in a project on work. Also I have a daughter at home who has her "training time" in kinder garden, so currently I am quite busy. I planned to start sometime in the 3 to 4 quarter of the year. 
+If this is still fine for you, you can dm me anytime :)
+- I'll have a look into that. That sounds interesting and challenging :D
+- Shouldn't [cbseg](https://pypi.org/project/cbseg/) be already compatible with cnvkit, given it is already in python?
+- That's fine with me! I can develop the software on my own, but having someone else in the team will surely help, as developing a software alone seems scary, atleast to me, as I am a fresher in bioinformatics. I am working on my master's thesis right now, so I won't be able to start anytime soon too, I was planning to start after September. 😊
+- Good question. I cannot answer why exactly cnvkit uses the R package DNAcopy instead of this python implementation. However, the cbseq package unfortunately has a restrictive GPL2 license.

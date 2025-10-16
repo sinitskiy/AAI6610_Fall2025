@@ -1,0 +1,77 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/f9pj44/modules_covered_in_1_year_masters_in/
+Title: Modules covered in 1 year Masters in Bioinformatics for Biology Graduate - Is this a good program?
+
+Content:
+Hey Everyone,
+This is the modules which will be covered in the Masters program of a university to which I am selected. I would like to know your valuable comments on this, whether it is a good program based on the modules covered ? 
+
+My background : I have a degree in Pharma
+
+Thank you so much in advance :)
+
+
+
+Stream for Biological Science Graduates
+Students take 90 credits as follows:
+
+AM6014 Mathematical Modelling for Biological and Environmental Sciences (5 credits) :
+
+Module Content: Construction of mathematical models with first order and second order ordinary difference equations. Model accuracy and validation. Consider the concepts of stability and long-term behaviour. Graphical and numerical methods of solution. Models concerned with population dynamics, contamination, harvesting, simple epidemiology and dispersive phenomena.
+
+
+CS5002 Web Development 1 (5 credits)
+Module Content: The operation of the web: client, server, HTTP. Web sites: HTML, CSS, media formats. Web site design: usability, accessibility, cross-browser compatibility, etc. Tools: WYSIWYG systems, Content Management Systems, etc.
+
+
+CS6503 Introduction to Relational Databases (5 credits)
+Module Content: Fundamentals of relational databases; the SQL database query language.
+
+CS6405 Datamining (5 credits)
+
+Module Content: Applications and principles of data mining; Knowledge Representation; Rule Learning; Statistical Modelling; Decision Tree Induction; Association Rule Mining; Linear Models; Lazy Learning; Clustering; Evaluating Hypotheses; Cost-Sensitive Learning; Input Transformations; Boosting; Using Unlabelled Data; Extensions; Applications; Tools.
+
+
+CS6501 Programming for Bioscientists I (5 credits)
+Module Content: Variables, expressions and statements; functions, conditionals and recursion; fruitful functions and iteration; strings and lists; tuples and dictionaries; files and exceptions; classes and objects.
+
+CS6502 Programming for Bioscientists II (5 credits)
+Module Content: Creating and using classes and objects; sorting and searching; trees, graphs, and associated algorithms; dynamic programming; regular expressions; elementary notions of time complexity; implementation of genomic algorithms (including those for optimal sequence alignment and random sequence generation with given element probabilities).
+
+MB6300 Computational Systems Biology (5 credits)
+Module Content: Enzymes and pathways, Protein folding and structure solution/modelling, Protein Data Base, Functional Genomics (Microarray studies; SNP's, population genetics/genomics; Proteomics), Metabolome modelling, Regulatory networks, Interactome, Epigenetics (Arabidopsis model), Anti-sense (Drosophila, C. elegans models
+
+
+MB6301 Genomic Data Analysis (5 credits)
+Module Content: Topics to be covered include: Genome Projects (Strategy/Overview; Quality/Coverage; Annotation/Gene finding and biological
+interpretation), HGP, Sequences and motifs, Sequence ontology, Sequence alignment, Phylogenetics/phylogenomics.
+
+
+MB6303 Dissertation in Bioinformatics and Computational Biology (30 credits)
+Module Content: Research-based study relevant to Computational (systems) biology and bioinformatics.
+
+
+MS6005 Discrete Mathematics (5 credits)
+Module Content: Induction, recurrence relations. Combinatorics: permutations, combinations, the pigeonhole principle. Graph theory: Euler and Hamiltonian paths and cycles, weighted graphs, applications.
+
+ST3300 Data Analysis I (5 credits)
+Module Content: ANOVA and multiple comparisons, Non-parametric and distribution free tests, Monte Carlo simulation, Resampling Techniques, Time Series and ARIMA Models.
+
+
+ST4400 Data Analysis II (5 credits)
+Module Content: Review of normal and associated distributions, simple linear regression, multiple regression, drawing conclusions, weighted least squares, regression diagnostics, model building, application of regression methods using R software.
+
+ST5005 Introduction to Probability and Statistics (5 credits)
+Module Content: Introduction to uncertainty and variability, with examples. Summarization methods for data. Concepts of probability, conditional probability, Bayes' Theorem. Random variables and probability distributions, both discrete and continuous, with applications. Populations, variability, and sampling issues. Introduction to statistical inference, including interval estimation and hypothesis testing. Introduction to statistical modeling. The third assignment will involve independent research. Students will be encouraged to present their own ideas and interpretations of concepts found in the literature and to draw conclusions
+
+
+Thank you so much for reading :) any output will be helpful
+
+Best regards!
+
+Comments:
+- Could you share what program this is? Thanks
+- This looks very comprehensive. It seems that you will gain exposure to SQL, HTML and R - which are all quite "hot" atm. 
+
+Although it doesn't seem that you would be gaining experience working on the command line or Python.
+- There are two modules, programming for bioscientist  I and II dealing with python. Isn't that ok?

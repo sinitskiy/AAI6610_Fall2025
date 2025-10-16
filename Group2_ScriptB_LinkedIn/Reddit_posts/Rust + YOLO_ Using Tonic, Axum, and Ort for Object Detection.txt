@@ -1,0 +1,39 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1j0trcu/rust_yolo_using_tonic_axum_and_ort_for_object/
+Title: Rust + YOLO: Using Tonic, Axum, and Ort for Object Detection
+
+Content:
+Hey r/computervision ! I've built a real-time YOLO prediction server using Rust, combining [Tonic](https://github.com/hyperium/tonic) for gRPC, [Axum](https://github.com/tokio-rs/axum) for HTTP, and [Ort](https://github.com/pykeio/ort) (ONNX Runtime) for inference. My goal was to explore Rust's performance in machine learning inference, particularly with gRPC. The code is available on [GitHub](https://github.com/jordandelbar/yolo-tonic). I'd love to hear your feedback and any suggestions for improvement!
+
+https://i.redd.it/xtjxtsyn21me1.gif
+
+
+
+Comments:
+- what’s your plan for benchmarking a thing?
+- What was your dev experience like? Would this have been harder with C++?
+- I recently did something similar but I had a massive problem with the models losing their labels when converting from .pt to .onnx, did you experience anything similar?
+- Which yolo did you use, what is your image size, did you use nms on it, and what is your fps?  I did yolo v4 with opencv on rust using darknet 1920 x 1088 and nms on a 2080ti, and I can get almost 20fps, maybe less with the nms if there are many objects in the scene.
+- Out of curiosity, did you look at Burn-rs at all?
+- I am not sure I understand, what do you mean by benchmarking a thing?
+- I have been coding professionally in Python for the past eight years. I started learning Rust two years ago. I tried C++ ten years ago, but it never “stuck,” so I have no idea if that would have been easier.
+- Not at all, I simply converted the ultralytics yolo v8 pytorch model to onnx and then looked at the ort [example](https://github.com/pykeio/ort/blob/main/examples/yolov8/examples/yolov8.rs), they did most of the job. I just had to tweak the example to make it work with the grpc request
+- yolo v8 with an image size of 640x640. I separated the camera FPS from the prediction FPS since I'm making predictions over gRPC and I am using the CPU. I didn't try to push it to the limit—I'm running the video stream at 50 FPS and the prediction stream at 20 FPS. I'd love to see your project if it's public!
+
+edit: I used nms yes, [here](https://github.com/jordandelbar/yolo-tonic/blob/de90dc89c04e7c1bedc858fae8a27e4f1e245cd8/yolo_prediction/src/ort_service.rs#L167)
+- I did on a previous project for the training part! However, I struggled to make it work and fell back to pytorch. At that time, I was using BentoML for inference, but I couldn’t achieve the performance I wante, that's when I stumbled upon ort and their example directory. For this project, I didn't consider Burn, but I might reconsider it for a future project.
+- you said that your goal is to explore Rust’s performance in ml inference, but I wasn’t able to find any performance related stuff on github.
+
+so I was wondering what’s your plan? would you add some performance metrics, compare it with some existing solutions, etc.?
+- Thanks for the feedback! I'm hoping to use burn in a CV project shortly so was curious since there is very little out there on computer vision with burn. 
+
+
+Guess we'll find out if it has had any improvement. But might follow in your footsteps if I can't make it work haha.
+- you're right, I did not benchmark against other solutions! I just wanted to see if rust + grpc + cpu would provide acceptable performance. I'd be happy to benchmark it against existing solution indeed, I'll take a look.
+- Good luck with your project!
+- if you accept suggestions
+I’d rather start on providing basic latency and overhead information of your solution.
+you could check nvidia triton for an inspiration of what to measure. 
+And i think with only that you’ll be able to shown a lot of valuable info.
+- Sure! I did this project as a learning exercise and I’m here to learn so I’ll definitely take a look! Thank you!
+- good luck, have fun!

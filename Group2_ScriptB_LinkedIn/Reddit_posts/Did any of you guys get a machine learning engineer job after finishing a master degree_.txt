@@ -1,0 +1,48 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mhix6p/did_any_of_you_guys_get_a_machine_learning/
+Title: Did any of you guys get a machine learning engineer job after finishing a master degree?
+
+Content:
+I would love to hear the journey of getting a machine learning engineer job in the US!
+
+Comments:
+- Got a Computer Vision Engineer job after my MS degree.
+- I got one after my bachelor's if that counts.
+- I dropped out of my physics MSc to be a CV engineer.
+
+no you can't DM me, but we can talk here
+- Yeah I got a computer vision job. I'm in Europe but working for American company
+- Yes, of course it is possible. There are enough companies in the machine vision industry looking for qualified people. At the moment the overall market situation seems a little bit challenging, but fingers crossed that the situation will change
+- Working on a computer vision project, (specifically with AR System), but my background/ major is from embedded systems software engineering..., what exactly do you need?
+
+And I am not working in US
+- Just my 2 cents as a regular software engineer, the degree isn't really the issue, it's whether you have the skills.
+
+Do you have the skills and the ability to talk about them? Then keep applying to jobs and you'll eventually get one, it's that simple. Putting more bullet points and letters on your CV certainly isn't going to hurt, but improving your communication and interview skills is both easier and immensely more helpful.
+- can I dm you?
+- same, been 1 month as CV engineer(Applied) in manufacturing.
+
+From what i know right now, The ML/DL part are like 30% of the work. The rest are system and software engineering.
+- Omg how? Can we talk?
+- can I dm you?
+- Do you think writing a thesis during my master program gives me a big advantage over not having one in terms of getting a ml/cv engineer job?
+- Are you me? Same! Although I dropped out without a plan and later got into CV after another masters in CSE.
+- Won't you regret it down the line as I just watched Elon giving emphasis on pursuing Physics along with mathematics for better future.
+- Yes
+- that is actually what you're currently doing! (I also only have a BSc but have 10 years experience as a CV engineer)
+- I mean, it's a pretty boring story, so you're not gonna get anything eye opening lol. For the sake of everyone else feel free to ask questions here. I'm sure someone else would get some use out of what you want to ask.
+- An additional degree isn't strictly necessary, it's all about increasing your chances really. Consider these points:
+
+1. Imagine there's 2 candidates - you and another person. Both have very similar soft and hard skills, but the other person has a masters and you have a bachelors. Who do you think has bigger chances (even just slightly)?
+
+2. If you can do something meaningful for your thesis, e.g. publish a paper or create something novel/interesting, that will be a big plus for you. Plus there's always networking with students or profs, internships, etc.
+
+PS what's the point of dm'ing? Just continue the discussion here in this thread, otherwise it'll die out.
+- i think only academics care about a thesis
+
+but people in industry will care about how well you can demonstrate your ability
+
+a good sized project (or other work experience) is the best way to do that
+- lol, i was technically a CPE grad student, because i was working around weird study-abroad stuff, but taking almost exclusively physics courses
+
+and CV was always my "backup" plan

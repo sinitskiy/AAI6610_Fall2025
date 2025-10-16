@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/eric-little-71b2a0b_deterministic-software-vs-probabilistic-ai-activity-7365805479144366080-9Y8V
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Eric Little的动态
+Eric Little
+
+Innovation Principal Director, Life Sciences & Head of Strategy & AI for Global Products - Harmoni at Accenture
+
+1 个月
+
+Deterministic Software vs Probabilistic AI
+
+I have been seeing this topic come up a lot. Having worked in the space where probabilities and logic intersect for most of my career, I want to talk a little about the real world and clients in regulated environments instead of CS thought experiments, research papers, and demo-level stuff. So here is my unvarnished take...
+
+Deterministic software is now sometimes couched as "old hat" stuff, whereas LLMs and Gen-AI engines are seen as the future b/c they can deal with billions of parameters and produce probabilities from textual data very quickly, meaning the potential answer set is far broader and can be much more complex. Fine - but can it be trusted when you absolutely need it to be accurate?
+
+I speak to clients all the time that are trying to get their head around how to bring in AI and get it to work at scale. They've all run multiple POCs and Pilots now, but getting this tech to the point where someone will bet their new product, their company reputation & their stock price on it - there is a lot of trepidation & for good reason. I still have yet to find the AI engineer who will bet their entire paycheck on the AI system performing well in these high stakes environments. 
+
+There are a lot of regulated environments that need deterministic answers in order to be counted as a validated system (i.e., able to produce data and answers to regulators with complete confidence in order to have your product approved for the market). Drugs, cars, food, etc. all need to be safe and you need to show regulators that your AI engine is not going to make a drug that has a disastrous side effect, food that is dangerous to eat, etc. I work with this stuff every day and the amount of erroneous info these things spit out is still way too high for peop

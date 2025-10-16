@@ -1,0 +1,66 @@
+URL: https://www.linkedin.com/posts/colin-eberhardt-1464b4a_building-ai-products-in-the-probabilistic-activity-7364657640527785985-ZTDj
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Colin Eberhardt的动态
+Colin Eberhardt
+
+CTO at Scott Logic
+
+1 个月
+
+"Building AI Products In The Probabilistic Era" - this blog post provides an engaging articulation of how building AI products requires a significant change in our overall approach to software.
+
+https://lnkd.in/eJg78ym3
+
+While I find the tone a little overenthusiastic, and am not sure about the faux mathematical representation, the key themes expressed resonate deeply.
+
+Building AI Products In The Probabilistic Era
+giansegato.com
+3
+1 条评论
+赞
+评论
+分享
+KARAN BHATT
+
+AI Security & Product Improvement | Lindy AI
+
+1 个月
+
+Interesting share—completely agree that building AI products requires a mindset shift. As a founder building in this space, I’ve realized we’re no longer designing deterministic systems but orchestrating probabilistic ones. That’s a big cultural change for teams used to traditional software.
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+最相关的动态
+Vinay Devaraja
+
+Join dociteasy.io waiting list Freelance AI Engineer | Helping businesses with AI adoption & digital transformation | Founder, Zwift Labs | LLM & Agentic AI | A Decade of experience in building digital products.
+
+1 个月
+
+Conventional software (Probabilistic) vs. LLM applications (Deterministic)  Approach!
+
+A deterministic approach always produces the same output for a given input, based on explicit, rule-based logic (e.g., a calculator). This is the foundation of traditional software development.
+
+A probabilistic approach produces a plausible, but not fixed, output based on statistical likelihood (e.g., an LLM). This is the core of generative AI.
+
+Handling Ambiguity: Human language is complex and often has multiple interpretations. A probabilistic system can weigh different possibilities to provide the most likely and relevant response.
+
+Creativity & Diversity: It can generate novel and unique content (text, images, code) by drawing from patterns in its training data, something a fixed-rule system cannot do.
+
+Adaptability:

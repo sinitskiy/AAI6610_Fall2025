@@ -1,0 +1,38 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gbwvog/price_of_train_model_on_online_computer/
+Title: Price of Train model on Online Computer
+
+Content:
+Hello Everyone,
+
+Someone has paid for Train model on Online Device. Like a U-net model or other deep architecture ? 
+
+because of buy a machine for a Deep learning project is too expensive, and I like an experience return on this type of train.
+
+Can you give your experience, the price and time of your computation, and the online computing device.
+
+
+
+Thanks a lot
+
+  
+
+
+Comments:
+- Depends on your various factors like model, dataset size, GPU type, number of epochs, and batch size, I trained a YOLOv8 model on a 50k-image dataset with a batch size of 32 on a GCP A100 GPU for about 100 epochs, which cost me approximately $24.
+- You can pay for colab pro for a month for $10. Training with the free version can be difficult but you could also try that first.
+- It's going to be a few dollars to several hundred. All depends on whether or not you get the results you want at the first trial.
+- Anywhere from $0 to $10,000+ USD. 
+
+If I had to pick a number I’ll go with $100. I say this because you must be a beginner and will probably use a platform that gives you a nice easy interface which doesn’t require a lot of coding - these aren’t always free. I also assume that if someone is paying then this is going to be used commercially which means you will be doing enough training that free options are too limited. 
+
+If you can write the code and know your way around the CLI and cloud platforms then you can do with less cost.
+- Thank you for your feedback. it's very interesting. what's the computing time of your train ?
+- Thank you for your tips, I don't know it's adapted for a deep architecture like GAN, or Deep CNN. But you're right I can try that first, and add computation after :)
+- Yeah, idk the cost computation of model. It's for a future research
+- What cloud platforms do you recommend?
+- Around 11-12 hours
+- You can try your model on colab first then estimate how many hours/minutes you gonna need. Because most of the services charge only for training minutes not for how long you spend uploading and tuning your code.
+- Whichever one your employer already works with. 
+
+I use Azure and it’s fine. I try to do as much as I can on premises though just because I can avoid the paperwork associated with getting permission to expend cloud resources.

@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/eukk8v/r_graph_node_binary_classification_training_set/
+Title: [R] Graph node binary classification: Training set labels contain false negatives
+
+Content:
+Hey all, I'm working on a graph node classification problem. Given a graph G = (V, E) where each vertex *v* has a set of features *x*, and each edge *e*  may also have a set of features, I want to predict which (binary) class  a node belongs to given a training set of nodes which are labelled.
+
+Here's  the issue - my training labels are based on experimental data which is  not totally reliable. I can be sure that the positive class labels are  correct - so the training data contains no false positives. However,  there is some uncertainty in the negative class - i.e. some fraction of  the negative class labels are incorrect.
+
+What  I want to do is come up with a way to try and filter out some of these  false negative labels as a preprocessing step and only use the negative  class labels I am more sure of (which may result in an unbalanced class  set - and that's ok) to train my model (which is a graph CNN).
+
+I  am thinking to use some unsupervised embedding/clustering algorithm to  come up with a dense representation for each node based on its  features/neighborhood and only choose negative label nodes which are far  from the positive label nodes in this space, but I don't know much  about node embedding or clustering. Also the graphs I am working with  are actually meshes, so they are highly regular - therefore an algorithm  which is only based on the graph structure probably won't be very  useful. I was wondering if anyone had an ideas/suggestions for some  approaches I could look into and try? Ideally something not too fancy,  as this is just a preprocessing step to clean the data.
+
+Comments:
+- Positive-unlabeled learning may be useful for this problem.

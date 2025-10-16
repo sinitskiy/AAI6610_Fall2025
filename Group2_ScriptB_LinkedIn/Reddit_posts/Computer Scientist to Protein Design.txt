@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/upopra/computer_scientist_to_protein_design/
+Title: Computer Scientist to Protein Design
+
+Content:
+I am currently an undergraduate junior student majoring in Computer Science and Mathematics. From my high school years, international math olympiad experiences led me to choose a double major in those realms and specialize more in the Computer Vision field later on. After several internships in CV, I decided to shoot for research labs at the university instead of industry. Once I got the chance to do undergraduate research in the Protein Design project at our university's Data Science lab, it became a bit challenging for me at the beginning without having a proper background in NLP, Graph Machine Learning, and Biology. However, after careful recalibration of my interests, I decided to embark on antibody design development and research more on the AI applications for antigen-specific.
+
+I was wondering since my knowledge is not at best on NLP, Graphs, or even sometimes fundamental Biology, what would you suggest to consider learning/improving if I aim to publish a novel paper in the antibody design area? Are there any suggestions on resources where I could constantly leverage fundamental knowledge for biology, its software (FASTA, PyMOL, ...), or crucial NLP/Graph applications?
+
+Comments:
+- I guess the question is:  what job do you want?
+
+Protein design is kinda not really a thing.  I mean, lots of people are working toward that as a goal, but you can’t just sit down and design a protein - so what is it you want to do?
+
+If you know, then go find a job posting where some one is hiring for that role.  It will clearly lay out the requirements for the job, and explain exactly what would make you the perfect candidate. 
+
+The other good thing is you get a sense of who’s hiring, what the job is worth, and whether it’s something that interests you.  What more could you ask?
+
+That also means that the best place to ask this question is on job boards - and not here on Reddit.  You probably won’t get a better answer here unless someone here is actively hiring for that role.
+
+Edit: you’re also asking about papers.  That’s something you should just straight up ask your PI, since they’re the ones who would be supervising your work and putting their name on the paper with you. Again, that’s not entirely a great question to ask on Reddit.
+- To my knowledge, protein design is being approached in two ways, chimeric protein design(mostly wet lab/ structural bio), and computational. The second is still a bit far off, and requires a better understanding of protein folding. But the research is being done. No doubt you've heard of alphafold2 from deepmind and rosettafold developed at University of Washington. I would read these papers, contact these PIs (I'm pretty sure shendure is also doing this kind of work) and look at their collaborators.
+- Thank you for your reply. I guess my post lacked some crucial thoughts. Personally, I am more oriented toward doing a master's degree after my undergraduate years. That was actually the reason why I decided to join an undergraduate lab specializing in Data Science. Since one of the interdisciplinary projects in the lab was focused on Protein Design, I became delved into this collaborative work, along with researchers from the Biology Group (including wet lab folks) and the Data Science team. 
+
+The good point is that the research is done collaboratively, and folks from both fields interact and work together on novel ideas. But, as a CS guy, I was wondering what are the usual expectations from such a biology area, especially in computational design development that is performed by AI? I feel biology is very huge, and from the CS perspective, it is usually hard to catch up with every computational design development of bioinformatics. I try to read, implement, and leverage knowledge mostly related to AI-driven research in protein design and try to apply novel ideas, but do you think doing research in such collaboration would be beneficial for my master's if I want to specialize in ML/AI subjects, not necessarily comp. bio?
+- You are right. My research is more about the computational design of proteins and what we usually do is research novel ideas regarding the structural and sequence-level design of protein-protein interactions, ligand docking, or antibody development driven by synthetic tools/AI. What was wondering me is what are the usual prerequisites or expectations from researchers in this niche area? Reading papers, analyzing data with tools like PyMol, or replicating research work is fairly manageable, but I feel there are some lacking fundamentals especially applications of NLP/Graphs in such interdisciplinary work. What do you think CS folks could benchmark on while doing novel research in this area, such as a similar course or bottom-up layered readings that one could leverage skills one step at a time.
+- >But, as a CS guy, I was wondering what are the usual expectations from such a biology area, especially in computational design development that is performed by AI?
+
+I'll try an analogy.  Let's say you want to be a kickass lawyer, with medical clients.   You could go to school to become an MD, and then go to school to become a lawyer.  Odds are, you're probably not passionate about both, if your goal is to just be a great lawyer.  Better odds are that you'd spend a lot of time learning things you don't need for your legal practice.  Do you really need to be able to do open heart surgery to be a great medical laywer?
+
+I think it's pretty clear that the MD is really unnecessary.  Opening a few medical textbooks, maybe taking a few primer courses would be sufficient to understand the medical issues at stake.    The full MD, residencies, etc, are really overkill for a lawyer - and would add a decade of mostly superfluous education.    Besides, people would be hiring you for the legal skills - not for your ability to wield a scalpel or diagnose rare diseases.
+
+Whatever field you go into, you should aim to be your best with a core set of skills, and to learn the necessary ones along the way.  Some people (like me, if I'm being honest) learn more skills than necessary, but usually for love of learning.  Others find a balance that's more towards what's strictly necessary.  It's really up to you to figure out where to draw the line.
+
+If you really want to work on biology problems and direct the biology research, you'll probably need a PhD in a biology related field.  If you just want to work on AI/ML with biology colleagues, I'm pretty sure you could get away with reading a textbook or two on the relevant biology subjects.
+
+No one can tell you what courses you'll need, or how much education you should get - those are questions you need to answer for yourself.
+
+All I can say is that you need to figure out where you're going before you can pull out the map to figure out how to get there.
+- Ah I see, haha this is not my expertise either, but I have learned a fair ammount of graph theory/nlp from youtube videos/ ML coursework. There are a surprising ammount of this stuff on youtube actually, and MIT has free lectures now. Aside from graduate courses, my guess would be to just try to learn about this stuff as you see it, coming from a mol bio undergrad who switched to computational work in his graduate career. Also maybe learn some bayesian stats, and read bioinformatic algorithms: an active learning approach.
+- Thank you very much, especially for a good analogy. I agree, that if my passion mostly aligns with AI/ML and its different applications, it would be sufficient to just read project-related problems and find necessary resources based on them.
+- Oh, that is a great idea indeed! I was just curious to know, how do you usually learn these concepts along with bio-related parts of them? For example, do you emphasize more on coding issues or do you try to learn the technical parts and analyze their analogy with the bio part? It seems I lack some fundamentals especially related to coding applications in PyTorch/Tensorflow even though I could understand the theory background.

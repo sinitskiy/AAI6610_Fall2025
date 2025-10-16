@@ -1,0 +1,84 @@
+URL: https://www.linkedin.com/posts/sunghyun-kim-9b9b792a6_hybridai-transferlearning-chiller-activity-7327179391447248898-VgTE
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sunghyun ­Kim的动态
+Sunghyun ­Kim
+
+Ph.D candidate at the department of architecture and architectural engineering, Seoul National University
+
+5 个月
+
+Hybrid AI for Better HVAC System Modeling under Uncertainty
+
+Pleased to share our another recent publication in Energy and Buildings:
+"Hybrid AI chiller model using transfer learning: Aleatoric and epistemic uncertainty"
+
+This study presents a hybrid AI framework for chiller performance prediction, integrating synthetic specification-based data with real operational data through transfer learning.
+
+Key contributions include:
+- Combining physics-based consistency with data-driven adaptability
+- Enhancing extrapolation reliability under unseen operating conditions
+- Quantifying model uncertainty (aleatoric & epistemic) via Bayesian deep learning
+
+Our results show that the proposed model achieves comparable accuracy with significantly reduced uncertainty, making it a practical solution for applications like model predictive control (MPC) and real-time operation under variable conditions.
+
+Sincere thanks to Prof. Cheol-Soo Park and all co-authors (Jinhong Kim, Youngsub Kim, Seon-young Heo) for their great collaboration.
+
+Full paper available here: https://lnkd.in/gDq3NsGY
+
+
+#HybridAI #TransferLearning #Chiller #Modeling #EnergyEfficiency #Uncertainty #HVAC #BuildingSimulation #EnergyAndBuildings
+
+25
+2 条评论
+赞
+评论
+分享
+Cheol-Soo Park
+
+a full professor at the department of architecture and architectural engineering, Seoul National University
+
+4 个月
+
+Thanks for sharing, Sunghyun
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+146 位关注者
+
+3 则动态
+查看档案  关注
+探索相关领域
+How Cooling Technology is Advancing for AI
+Importance of Liquid Cooling for AI Systems
+How AI can Improve Energy Use
+Sustainable Cooling Strategies for AI Data Centers
+The Impact of AI on Renewable Energy
+How AI Models Affect Climate Change
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式

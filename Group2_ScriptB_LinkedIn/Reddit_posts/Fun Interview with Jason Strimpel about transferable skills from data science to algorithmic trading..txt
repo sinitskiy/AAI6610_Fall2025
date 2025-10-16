@@ -1,0 +1,15 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1nvduc2/fun_interview_with_jason_strimpel_about/
+Title: Fun Interview with Jason Strimpel about transferable skills from data science to algorithmic trading.
+
+Content:
+I had the opportunity to interview Jason Strimpel.  He's been in trading and technology for 25 years as a hedge fund trader, risk quant, machine learning engineering manager, and GenAI specialist at AWS. He is now the Managing Director of AI and Advanced Analytics at a major consulting company. 
+
+I asked him all about the transferable skills, the mindset shifts, tools someone should pick up if they're just getting started, how algo trading is similar to ML, and differences in how you think about/work with the data. He had a lot of great tips if you're a data person thinking about getting into trading.
+
+Comments:
+- Great conversation, are you planning to do anotehr soon?
+- Amazing piece! When Jason talked about “linking strategy to economic reality”, did he give any examples of how he tested that connection in practice? Would love to hear more.
+- Thanks!  I host the Mavens of Data Podcast by Maven Analytics, so I interview someone every week (live) and then it goes up on the major podcast platforms..  but I probably won’t be doing any more trading related interviews for a while, we keep it very analytics and DS focused.
+- u/Acrobatic-Boot-3843 Error generating reply.
+- I’ve heard him give examples before.  I’m not sure he gave any here.  I can take a look :)

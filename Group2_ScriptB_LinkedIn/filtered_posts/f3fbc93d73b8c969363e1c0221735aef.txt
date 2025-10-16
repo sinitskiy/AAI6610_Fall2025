@@ -1,0 +1,43 @@
+URL: https://www.linkedin.com/posts/maxim-ziatdinov-651aab250_partially-bayesian-neural-networks-balancing-activity-7268709111104454657-s4vj
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maxim Ziatdinov的动态
+Maxim Ziatdinov
+
+Building AI tools for experimental materials discovery
+
+10 个月  已编辑
+
+💡 Partially Bayesian Neural Networks: Balancing Computational Costs and Uncertainty Quantification
+
+Fully Bayesian Neural Networks (BNNs) provide robust uncertainty quantification by treating all network weights as probability distributions, a feature critical for scientific and engineering applications. However, their significant computational overhead often makes them impractical. Variational inference, a common approximation method for BNNs, aims to alleviate these costs but, in my experience, often struggles with limited expressivity, underestimation of uncertainty, and sensitivity to initialization and hyperparameters, which degrades its performance on real-world tasks.
+
+Partially Bayesian neural networks emerge as an alternative solution by maintaining probabilistic weights for only a subset of the network. This approach preserves many benefits of full BNNs while substantially reducing computational costs.
+
+Our new NeuroBayes package implements Partial BNNs in two stages. First, it trains a deterministic neural network, incorporating stochastic weight averaging at the end of the training trajectory to enhance robustness against noisy training objectives. Second, the probabilistic component is introduced by selecting a subset of layers and using the corresponding pre-trained weights to initialize prior distributions for this subset, while keeping all remaining weights frozen. Hamiltonian Monte Carlo sampling is then applied to derive posterior distributions for the selected subset. Finally, predictions are made by combining both the probabilistic and deterministic components.
+
+Explore an example here and feel free to reach out if you have questions or feedback -> https://lnkd.in/gZFMk_qZ
+
+46
+3 条评论
+赞
+评论
+分享
+Maxim Ziatdinov
+
+Building AI tools for experimental materials discovery
+
+10 个月
+
+One obvious question is: how do 

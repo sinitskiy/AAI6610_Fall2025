@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/bhavsarpratik_llm-hallucinations-llama2-activity-7107354674923499520-AqXV
+Date: 2025-09-24
+Author: Unknown
+
+🚀 🚀 🚀 5 Techniques for Detecting LLM Hallucinations 
+
+LLM hallucinations remain a major hurdle to enterprise adoption. Mitigating hallucinations comes down to ensuring we work with the right prompts, data and providing the right context through a vector database. 
+
+Finding hallucination in text generation has always been challenging. In our last post, we looked into different types of hallucinations and how they affect performance across different NLP tasks. 
+
+In this article, we’ll look at five techniques, as covered in prominent research papers, for detecting and mitigating hallucinations in LLMs.
+
+Techniques
+- Log Probability
+- Sentence Similarity
+- SelfCheckGPT
+- GPT4 prompting
+- G-EVAL
+
+Find the details here 
+https://lnkd.in/dHw4km7D
+
+
+话题标签
+#llm 
+话题标签
+#hallucinations 
+话题标签
+#llama2

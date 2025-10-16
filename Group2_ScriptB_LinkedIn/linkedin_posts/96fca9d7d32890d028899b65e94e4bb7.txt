@@ -1,0 +1,37 @@
+URL: https://www.linkedin.com/posts/vrungta_going-beyond-llm-as-we-continue-to-witness-activity-7078018573712977921-Dy6w
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vikash Rungta的动态
+Vikash Rungta
+
+Product - GenAI Llama Model @Meta, Teach GenAI @Stanford Continuing Studies
+
+2 年
+
+GOING BEYOND LLM: 
+As we continue to witness the rapid evolution of AI, Large Language Models (LLMs) have become a cornerstone in the field. However, it's important to remember that LLMs are just the beginning, not the end goal. In the coming year, we can expect a shift towards multi-modal foundational models, expanding the capabilities of AI beyond just language understanding.
+
+I've recently come across a paper that provides an insightful perspective on this evolution. The authors propose a computational framework called 'rational meaning construction' that goes beyond LLMs. Here are the key takeaways:
+
+1. Integration of Models: The framework integrates LLMs with probabilistic models for rational inference. This approach maps natural language into a probabilistic language of thought, creating a unified interface for commonsense thinking from language.
+
+2. Demonstration Across Domains: The framework is demonstrated across four cognitive science domains: probabilistic reasoning, logical and relational reasoning, visual and physical reasoning, and social reasoning about agents and their plans.
+
+3. Context-Sensitive Translations: The authors show how LLMs can generate context-sensitive translations that capture linguistic meanings, while Bayesian inference supports robust commonsense reasoning.
+
+4. Extension to Symbolic Modules: The authors extend the framework to include cognitively-motivated symbolic modules like physics simulators and planning algorithms.
+
+5. Language as a Driver: The paper explores how language can drive the construction of world models.
+
+This work provides a roadmap towards AI systems that blend modern and classical computational perspectives, situating LLMs within a broader cognitive understanding of human language and intelligence. This paper is a testament to the fact that the journey of A

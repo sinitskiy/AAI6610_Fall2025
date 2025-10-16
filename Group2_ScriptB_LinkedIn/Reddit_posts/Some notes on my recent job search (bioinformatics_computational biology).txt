@@ -1,0 +1,92 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/ty9d73/some_notes_on_my_recent_job_search/
+Title: Some notes on my recent job search (bioinformatics/computational biology)
+
+Content:
+Hey folks,
+
+I’ve learned a lot from you all and enjoy this sub, so I wanted to post something about my recent job search.  Maybe the more experienced folks on here can give me feedback, and maybe the younger folks will have a better idea of what to expect (I didn't know what to expect, which is my primary motivation for posting).  In the end I found a job I’m really excited about and I’ll be starting soon.
+
+My background:
+
+-PhD in a different field, lots of publications.
+
+-3 year postdoc in comp bio, couple publications, mostly methods/theory work.
+
+-3 year staff scientist in comp bio (different area), couple publications, mostly applied work.
+
+-Applying for positions that required a PhD and maybe a bit of experience.  Typically senior scientist level jobs with names like “computational biology”, “bioinformatics”, “data scientist”, “statistical geneticist”.
+
+I applied (resume + cover letter) to industry jobs after my postdoc and got a handful of screening interviews, but only one final round and didn’t get it.  Went with an academic opportunity instead.  I think the problem was that the things I did during my postdoc were off the beaten path, so I didn’t have much experience doing the types of things industry jobs were going to actually need (but it was cool stuff so I don’t regret it).
+
+As a staff scientist I did a lot more applied data analysis (RNA seq, DNA seq, etc) than my postdoc, and I think that was a lot more relevant and palatable to the jobs I applied to.  I applied by submitting a resume only, no cover letters.  I think I applied to jobs at roughly 30 companies and ended up hearing back from maybe 1/4 to 1/5 of them, and got past the screening calls at most of them.  I was asked to do full-day interviews with a 20-60 minute talk at 6 different companies and got an offer at one (which I accepted, I’m excited, it’s gonna be awesome).
+
+Interviews were technical and non-technical.  As far as technical interviews, the coding interviews were generally easy (except the first red flag below), they mostly just want to make sure you can code.  The statistics interviews were a little more difficult depending on the position, sometimes they were really basic but other times they asked questions to find your level.  I had some machine learning interviews that were kind of difficult, but mostly because my background isn’t terribly strong.  The genetics/methods interviews were generally more difficult.  I was sometimes asked to describe some ways to solve some of the open problems in the field, and was sometimes asked to describe how methods worked if I had worked on them or talked about them.
+
+There were a few minor negative interactions:
+
+-One place was just a bad fit.  I didn't apply, they contacted me, and they wanted someone to make their pipeline go brr, but I’m not really the ideal person for that.  They asked me a lot about computing environments and details of different programming languages.
+
+-One company gave me a surprise takehome assignment, which I definitely was not happy about, but it actually contained the exact kind of work I wanted to be doing, so I thought it would be fun, and it was.  They told me I passed and wanted to schedule a full-day interview and gave me a bunch of details.  I gave them a range of dates and they never got back to me.  I already had a job offer at this point so I decided not to play games with them.
+
+-One company got back to me, and the first thing they wanted to discuss was salary and set a hard limit which seemed lowish (the offer I eventually accepted was 40% higher).  Then they asked for some personal ID (either my passport or social security number, I forget which) before my first interview.  Seemed inappropriate, might be a scam, decided to ghost them.  Sorry guys.
+
+-A couple of interviewers asked for help with problems they were having with their own work, based on what they saw on my CV.  I gave them ideas and explained how to do things, then didn’t get the job offer.  Felt a bit taken advantage of.
+
+-My girlfriend saw a picture of one of the founders of a startup I was interviewing with and she said he’d asked her out a couple months before we started dating (she said no).  Still not sure how to parse that one.
+
+Green flags:
+
+Lots of positive interactions.  Nice people.  Smart people.  Helpful when I made mistakes.  Overall a positive experience, aside from the rejections…
+
+Open questions:
+
+How do you folks schedule all the interviews?  I had to take several days off within a narrow window and my boss (a micromanager) was not happy about the time off.
+
+How many people do companies typically invite to do these all-day onsites (virtually)?  I wish I knew why I didn’t get more offers but for the ones I really wanted it was always their policy to not tell me why.
+
+Happy to discuss any of this but I'm not going to violate any NDAs.
+
+Edit: By the way it took about 5 months from start (talking with friends about how to revamp my CV) to finish (accepting a job offer).  For a single company the median time was around 2 months from application to job offer or rejection.  The larger companies moved slower than the smaller ones.
+
+Comments:
+- Thank you for sharing your experience, I'm job hunting too currently
+
+>I applied by submitting a resume only, no cover letters
+
+Any particular reason for this though?
+- Thanks a lot for sharing. What was the role that you finally accepted - bioinformatics scientist, computational biologist, data scientist, or something else? It's interesting to know that with your seemingly impressive qualifications and experience, the job search was still quite challenging.
+- What were the salary ranges for the kind of work you were applying for?
+- [deleted]
+- Someone made a good comment and then deleted it, along the lines of, "I'm intimidated that you had such a strong background and still had trouble finding a job."  I have several comments on this:
+
+First, my background isn't as strong as it seems.  Like I said, my PhD was in a different field (although a highly quantitative one), so you kind of have to subtract a few years.
+
+Second, a lot of the work I did wasn't directly applicable to the jobs I was applying for.
+
+Third, I think I was pretty successful.  6 final round interviews at great companies doing interesting things, some hot startups and some big companies you've all heard of, and I got a great job in the end.  Getting a 1 in 4 or 1 in 5 response rate seems pretty good considering I just submitted a CV on linkedin and had little to no experience working with the relevant phenotypes.
+
+Fourth, I applied to roles that were commensurate with my level.  I didn't apply to entry-level positions.  There are plenty of jobs out there for people with different qualifications.
+
+Hope this helps.
+- I assume you are in the US. Did you only apply for jobs that were in your vicinity? With all of your work experience, I assume you are older than the typical PhD graduate. Do you think that affected companies replies and decisions?
+- I appreciate you dawg. We need more people like you to post their experience especially in our industry. I just had a quick question what does bioinformatics scientist role usually entail ? Do you design the experiments usually or what else does it have ?
+- Hey OP are you living/applying in a biotech hub?
+- What was your postdoc about if you don't mind me asking?
+- Wow thanks for sharing. Your experience sounds incredible similar to mine and I forsee a similar experience when I look for new job soon.
+
+I'm also not incredibly strong in coding so I hope my knowledge and experience in genomics and biology can tide me over. 
+
+I also had bad experience applying after a postdoc in academia, and currently working as a staff scientist. hopefully this will make my transition to industry easier.
+- If I were interested in protein modeling and sequencing, would a masters in bioinformatics be good enough for this or would a masters in computational molecular biology masters degree be better for this specific niche skillset?
+- What was your PhD in?
+- Yeah there were a bunch of reasons.  The most important is that it's not really necessary where I live.  The second most important was that I was agonizing too much about it and it was preventing me from applying to places, and I got pretty good results without it.  I was worried it was just going to give people reasons to skip to the next application.
+- I would have accepted any of those given the right circumstances.  They can be synonymous or mean different things at different companies.  You have to check the job posting.  Mostly I wanted to stay away from pipeline optimization stuff.
+- I live in a HCOL area so the numbers are going to sound high.  The lowish offer had a base salary something like 4x the rent of a 1BR apartment in my area, the offer I took had a base 5x the rent of a 1BR apartment (pre-tax).
+- Thanks.  I don't know if it was real or not.  If I really wanted the job I would have sent them an email at the time, but I just decided it's not worth it.  If it was real I felt like it would have been embarrassing to send them an email, and I didn't save the initial job posting (a mistake I later corrected) so I don't even remember what the position was.  They made contact by calling me up on the phone.  I just decided to stop dealing with them.
+- Yes, only jobs in my region, but none of the interviews were in-person.
+
+Older but I don't think they care, there are standard markers like time from PhD or postdoc, and I wove it into my story.  Everyone seemed interested in my route and how I switched fields.
+- Depends on the company.  At larger companies it was usually consult on experimental design and then do the analysis and interpretation.  At smaller companies it could be anything.
+- Yes
+- Methods work mostly.  I used tools like plink occasionally but never did a GWAS for example.

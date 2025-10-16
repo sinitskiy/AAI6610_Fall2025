@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1g6llp4/positionspecific_scoring_matrix/
+Title: Position-Specific Scoring Matrix 
+
+Content:
+Hello, I have a physics and machine learning background so not super familiar with bioinformatics. I am doing a protein secondary-structure prediction project and I would like to get the **PSSM** out of some aminoacid sequences of proteins.
+
+  
+I read that this can be achieved using **PSI-BLAST**, however I have no idea how to if anyone can send me a tutorial or has any hints or advice it would be very useful.
+
+**Thank you all** 
+
+Comments:

@@ -1,0 +1,25 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1kr41wk/i_scrape_faang_data_science_jobs_from_the_last/
+Title: I Scrape FAANG Data Science Jobs from the Last 24h and Email Them to You
+
+Content:
+I built a tool that scrapes fresh data science, machine learning, and data engineering roles from FAANG and other top tech companies’ official career pages — no LinkedIn noise or recruiter spam — and emails them straight to you.
+
+What it does:
+
+* Scrapes jobs directly from sites like Google, Apple, Meta, Amazon, Microsoft, Netflix, Stripe, Uber, TikTok, Airbnb, and more
+* Sends daily emails with newly scraped jobs
+* Helps you find openings faster – before they hit job boards
+* Lets you select different countries like USA, Canada, India, European countries, and more
+
+Check it out here:  
+[https://topjobstoday.com/data-scientist-jobs](https://topjobstoday.com/data-scientist-jobs)
+
+Would love to hear your thoughts or suggestions!
+
+Comments:
+- Good project!
+- Cool tool! If you ever need to scrape LinkedIn job postings at scale, theboomerang.co's ExportLinkedInJobs service ($5.5/1k rows) could be a helpful backup.
+- This is really cool!! Thanks!
+- Guys i want to land a decent remote international job . I was considering learning data analytics then data engineering , can i learn data engineering directly ; with bit of excel and extensive sql and python? The second thing i though of was data science , please suggest me roadmap and i’ve thought to audit courses of various unislike CALIFORNA DAVIS SQL and IBM DATA courses , recommend me and i’m open to criticise as well.
+- thanks!

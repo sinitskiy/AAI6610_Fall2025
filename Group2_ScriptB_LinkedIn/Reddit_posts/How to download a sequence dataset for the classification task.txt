@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/qcwd0t/how_to_download_a_sequence_dataset_for_the/
+Title: How to download a sequence dataset for the classification task
+
+Content:
+Hi everybody, sorry my question is unprofessional. I'm a CS student and I have worked in the Machine Learning area for years now. But recently I have just entered the Bioinformatics field and everything is so new to me. I have been trying to download a couple of DNA sequence datasets for a classification project. But so far I have been unsuccessful with downloading any data. Many papers have mentioned that the data they have used comes from NCBI, I went to the website and I just can't understand how to download the mentioned datasets from there. What I'm looking for is a dataset with 2 columns, first the DNA sequence and second a label ( e.g. it has a histone or not). Can you please tell me where can I find datasets in this format? one paper has mentioned they used  COVID-19, AIDS, influenza, and hepatitis C datasets from NCBI but I couldn't find these datasets in the format that I mentioned.
+
+Comments:
+- Hi! Yeah NCBI can be a challenge to navigate. However for your dataset request, I dont believe that data is available through NCBI, or if it is, you're going to have to go deep digging into the papers that have that data (might be supplementary). Generally you can download the sequences and any additional gene annotation or protein sequences from NCBI in bulk. If you're interested in downloading the sequences for a specific set, find the Bioproject and download the information and metadata from there.
+- If its human or mouse or fly -  ENCODE has a ton of datasets you can download.
+
+If its a specific paper drop a link to the article.
+- Hey thanks, so are there any specific words I should be looking for? for example, what are the annotations?

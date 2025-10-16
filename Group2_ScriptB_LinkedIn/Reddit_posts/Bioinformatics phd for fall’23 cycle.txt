@@ -1,0 +1,50 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/w4kqgx/bioinformatics_phd_for_fall23_cycle/
+Title: Bioinformatics phd for fall’23 cycle
+
+Content:
+Hi guys, I’m a master’s student at an Ivy League and am majoring in biomedical engineering with a focus on bioinformatics and machine learning. I would like some thoughts on my profile for phd. I have a 3.5 GPA and have done an undergrad in computer science from India. I moved here right after that and have done two semesters of research at my institution (though more image processing focused) under another professor who’s well known in that field. I’m working as a summer intern at another research institution working on protein structure prediction and mutant prediction. I have one more semester of my masters left and will most likely be working at a lab during the same. I’m interested in cancer genomics/protein prediction/functional genomics/bioinformatics phd programs. 
+
+I’m interested in the following programs as of now, though if anyone has more suggestions on these I’d love to know more! 
+
+1. Cold Spring Harbor Lab PhD
+2. UConn-Jackson Labs PhD
+3. UCB-UCSF joint PhD program
+4. Sloan Memorial Kettering-Cornell Weill-Rockefeller University Tri Institutional PhD 
+5. UPenn GSB
+6. NYU Vilcek
+7. MIT or MIT-HST(there are some labs at the whitehead institute that are quite interesting!)
+8. UWash Seattle
+9. Caltech/CMU-Pittsburgh/Yale/Columbia/UCSD? 
+
+For my recommendations, the professor I worked with at my masters institution is someone I’m looking at. He did his postdoc at one of the above institutions. Apart from that, my managers and PI at my summer research lab are also good recommenders who have done their PhD at one of the above labs. During my undergrad I did more tech focused internships.
+
+Though I don’t have any publications :/
+
+I’d to know if I should be editing my list of programs or any other suggestions are more than welcome! Thank you!
+
+Comments:
+- Just FYI, a lot of profs you may want to work with may not fall within the programs listed above. For example not all computational biology/bioinformatics people in Berkeley are part of the joint PhD program, and if they aren't then it can be tougher to join their lab since it is about a year of funding they have to come up with rather than relying on training grants. It could be worth it to you to look at specific non-CompBio programs and see if they have people you like as well just to make sure you don't cut yourself off.
+- These posts about needing publications are too pessimistic. Many people apply for PhD programs straight from undergrad, where having a publication would be unlikely. Also, because publication is a (perhaps *the*) requirement for defending your thesis at most places, I always viewed pushing for publications pre-PhD as an inefficient use of your time -- i.e. other people publish and get a degree by virtue of being a grad student.
+
+FWIW I got into several top programs and was rejected by several "safety" programs. I had a fairly poor undergrad track record and a couple of years of research assistant experience, but no publications. You should definitely apply to schools that interest you regardless of prestige and aim high.
+- Yeah, if you don't have any publications, you won't get in UCSF or schools at the same rank. I mean you should apply to those, sure. But dont put all your eggs in one basket.
+I worked at UCSF for 2 years. My old PI spoke to the admission office and asked about the admission requirements. They literally use that as a filter. 
+Like I asked similar posts as yours, why are you applying to these schools? Because your list isn't quite focusing on enhancing bioinfo background but the school names.
+- >Though I don’t have any publications :/
+
+Why not? There isn't anything from your MSc thesis that you could try to publish in any journal or present at any conference?
+- Cold Spring would be a good place for structural biology, however, the institution is so small that you must make sure there are at least 2-3 PIs you'd want to work with. It is less good for cancer bio since they dont have a clinic and rely on collaborations.
+
+For Tri-I CBM (4), I believe you can list multiple WCM programs that you apply to with the same application, so definitely also apply to the other programs as well (which are less selective). 
+
+ I've heard bad things about Caltech and Columbia (toxic work environments). CMU and UCSD would be good programs. JHU? Also, consider whether you should add a few fallback schools since these are all top tier programs.
+- Ditto UW Seattle, although a lot of people have cross department affiliations (idk how that affects lab placement and direct advisement, though)
+- Gotcha! I will look into those! The approach I latched onto was to note down specific labs whose research interested me and then look at their programs however I might have to go through the list again now that you’ve mentioned the Berkeley thing.
+- thank you, two years later I really needed to hear this. :)
+- I applied to the UCSF-UCB bioeng program and didn’t get in however, I also applied to the UCSF comp bio program and got in without any publications (2021 cycle). I think OP has a great chance at getting in a lot of these schools. Just make sure your research interest aligns with a few labs within each program you apply to, and highlight the fact in your personal statements or statement of purpose.
+- I found some interesting labs at UConn/Memorial Sloan/Whitehead/NYU/CSHL that I thought I might apply to. Though like you said about UCSF, are there any more schools from my list that might fall into the same category? I think this list has a lot of tier-1 schools and I should cast my net wider given my profile cons, but for that do you have any suggestions on some schools for that?
+- Everybody’s a higher chance
+- Yeah, def do more research on back up schools. Tier one schools absolutely care about publications. Depending on how much you want to spend on application fees, I applied to around 50% tier 2 schools and 20 - 30% tier 3 schools as well. Like I said, not trying to tell you to not apply to tier 1s. But you shouldn't put all your eggs at one place. I have seen people with publications get rejected from UW or UCSF
+- I see, I’ll definitely look into that. What about CSHL and JAX labs? Do you know what type of students do they admit/how competitive my profile is for the same?
+- Not sure about those two. I went to high school on long island and didn't want to go back. So CSHL was out for me. I know JAX does some sequencing stuff. Worth doing some research I guess

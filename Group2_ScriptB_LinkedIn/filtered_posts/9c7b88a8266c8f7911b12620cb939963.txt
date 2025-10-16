@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/youngsoo-choi-0b190b9_ddps-seminar-autoencoder-activity-7191147990131118081-ueZn
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Youngsoo Choi的动态
+Youngsoo Choi
+
+Computational Scientist at Lawrence Livermore National Laboratory
+
+1 年
+
+We will host Gianluca Iaccarino from Stanford University at our data-driven physical simulations (#DDPS) #seminar, Lawrence Livermore National Laboratory, on June 21st, 2024, 10 AM in California time. He will talk about "#AutoEncoder for #Aerodynamic #Predictions." Anyone can join us at the following #webex room:
+
+https://lnkd.in/gUGYHysj
+
+We expect a wonderful talk from Gianluca Iaccarino, so please take advantage of it!
+
+Abstract: What is an autoencoder? How does it work? How can one trust its predictions? The talk will focus on recent activities centered around the development of an autoencoder, an #unsupervised #data-#driven #model, to predict the #flow past #wing #geometries. The model relies on #nonlinear #compression to construct a #low-#dimensional #latent #representation of the available data and its relation to the physical inputs. This enables the approach to generate new (unseen) cases. A careful construction of the dataset produces latent variables that can be #interpreted in terms of #aerodynamic #performance both for attached and separated flow conditions. An important thrust of the work is the investigation of effect of uncertainties due to the autoencoder architecture, the hyperparameters and the amount of the training data (#internal or #model-#form #uncertainties). Comparisons to a Gaussian Process regression and linear compression strategies illustrate the advantage of the present approach in extracting useful information on the prediction uncertainty even in the absence of data. The effect of model (internal) uncertainties is also compared to the impact of the variability induced by uncertain operating conditions (external uncertainties) showing the importance of accounting for the total uncertainty when establishing prediction confidence. A brief discussion of how to incorporate #multi-#fidelity #da

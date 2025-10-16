@@ -1,0 +1,65 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1c13q7j/how_i_made_ai_agents_engage_in_a_heated_debate_d/
+Title: How I Made AI Agents Engage in a Heated Debate [D]
+
+Content:
+ For robust decision-making and problem-solving in the corporate world, agents should debate ! 
+
+[Full Article](https://medium.com/@learn-simplified/how-i-made-ai-agents-engage-in-a-heated-debate-44e2d5193849)
+
+&#x200B;
+
+https://preview.redd.it/e50cth8yfrtc1.png?width=1171&format=png&auto=webp&s=5a5515bb934fff1d742091b150b3644eb2296cbf
+
+ What is this article about?  
+It explores how to create a system where AI agents can engage in structured debates, dissecting complex issues from multiple angles.  
+The article emphasizes that this approach can help businesses stress-test ideas, identify hidden risks, and make more well-rounded decisions.  
+
+
+Key Points  
+Robust Debates Lead to Better Decisions: Structured AI debates expose potential biases, illuminate uncertainties, and can lead to more informed decision-making.  
+
+
+AI Can Think Like Humans: By observing AI agents construct arguments and rebut opposing viewpoints, human decision-makers gain deeper insights into their own thought processes.  
+
+
+A Simple Example: The article includes a practical code example demonstrating a two-agent AI debate, making the concept tangible.  
+
+
+Why should you read this article?  
+
+
+AI Enthusiasts: Get a fascinating look into how AI language models can be used for logical reasoning and debate.  
+
+
+Developers: Find inspiration for building systems that validate ideas and surface potential pitfalls.  
+
+
+Product Managers: Consider how debate models could be used to pressure-test your product strategies or market analysis.  
+
+
+Key Technologies  
+
+
+Large Language Models (LLMs): For understanding the debate topic and generating arguments (the article likely uses Mistral from Ollama)  
+Metagpt, Ollama: Tools for managing and integrating AI models into the debate system  
+
+
+Let's Design!  
+The article provides a basic code structure for setting up the AI debate. This includes:  
+
+
+ConveyThoughts Action: A template for guiding the AI's debate responses.  
+
+
+Participants Class: Represents each debate participant and manages their actions.  
+
+
+Debate Function: Orchestrates the overall debate process.  
+
+
+See It in Action? 
+
+&#x200B;
+
+Comments:

@@ -1,0 +1,105 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/ih5aya/d_scrum_has_no_place_in_data_science/
+Title: [D] Scrum has no place in data science
+
+Content:
+I've seen more and more teams lately hopping on the Scrum bandwagon so I decided to write a [post detailing why this is a bad idea](https://towardsdatascience.com/why-scrum-is-awful-for-data-science-db3e5c1bb3b4). In summary, my objections primarily fall into four categories:
+
+1. The uncertainty in data science makes point estimates essentially worthless. 
+2. Sprints are too short to deliver meaningful results. As a result data scientists often sacrifice documentation, code quality, or model robustness to meet the arbitrary deadline.
+3. The product owner has too much direction in the determining the backlog and this often results overlooking important issues.
+4. Grooming and other sessions gradually begin to take up more and more time, due to the aforementioned issues (e.g. we need more grooming because haven't delivered stories in the last sprint).
+
+Comments:
+- I think one of the determining factors is where your data science team is in its growth cycle. If you're in a data first company, with plenty of deployed models that need periodic updates and have defined business questions, then Scrum can be a great option.
+
+That said, very few companies are in that stage of their development. 
+
+Personally my biggest concerns with scrum is lack of free form time that can be used to innovate and explore, as well as the burnout that can come from an overly aggressive sprint schedule - not sustainable for the amount of mental bandwidth data science requires. 
+
+Personally, I pick and choose components from Scrum to manage my data science teams and its worked well, but all scrum all the time would be disastrous IMO.
+- Agree but corporations are monkey see and monkey do
+- I agree that a purist vision of Scrum is an ill fit, but I think there are minor tweaks that can get you the best of both worlds:
+
+1. Allow "sizing" tasks. That is, allow an entire sprint to be dedicated to do the initial work required to get a better understanding of how long the project will take.
+
+2. Allow multi-sprint tasks. If you can't break up the task, allow it to take multiple sprints.
+
+I do agree that the PM with uncheked powers is horribly dangerous unless they have a really good grasp of the data science work they need.
+
+I also agree that project managers need to know the line between creating bureaucracy and helping move projects along.
+
+However, I also think that data scientists need to know the line between doing appropriate research and wasting time not producing the results the company needs. And I've actually seen a lot more companies suffer from the latter than the former.
+- The point of a sprint isn't to deliver the product. Software development teams don't deliver a product in 2 weeks either.
+
+The point of a sprint is to have time when you don't have meetings or have to answer to bullshit emails or spend time planning, but just work.
+
+Sprints work just fine in data science. You just should treat data science projects like you would a software project. You don't expect a product in 2 weeks so don't expect a completed analysis in 2 weeks.
+
+For example you can have a "write a web scraper to collect data" and "write an API to communicate with the database" planned for the 2 weeks. The next 2 weeks perhaps "create a bag of words model", "create a word embedding model", the next 2 weeks "make an SVM and a vanilla neural net as baseline" and so on.
+- Don't agree at all.
+
+1. Data scientists are huge wimps when it comes to committing to work. Yes, we get it, its experimental and its hard to say how long it will take. Hello DS meet timebox.
+2. Make longer sprints. Alternately, break up tasks. It turns out this is useful in both planning and preventing sprawling incomprehensible codebases written by DS.
+3. "No one tells ME what to do. Me data scientist" \*thumps chest\*
+
+Being hired as a data scientist isn't a license to do whatever research you fancy for as long as you want to. That causes way more problems - and wasted resources - than working in a reasonable delivery framework does.
+- I have a different perspective on this. Outside of academia, the work we data scientists do needs to do serves a purpose for the organization we work for. I personally have high hopes for scrum helping specifically with a couple of things:
+
+1. Getting a really good appreciation for what the customer actually cares about (not what you think they should care about) and working towards that. There have been several times that a kick-ass solution designed has not been implemented since we've cared more about the accuracy of predictions than the overall user experience
+
+2. Getting a little comfortable with being timeboxed and on the positive side, what that means is that the customer will get some initial insights early on and you get a taste of how it has delighted the customer through the rest of your build journey.
+
+The PM will also need to have some experience with how data science projects work and understand that instead of "disparate" features that will get rolled out in each release, it will need to be broken down with a different logic. It will also need to be appropriately messaged to the end customer. Some creativity needs to be displayed here on how to break the work down by sprints, even if the eventual release be in a single sprint. I think the benefits outweigh the challenges as long as the PM appreciates how data science typically operates.
+- ITT: Nobody has ever heard of Kanban, and has no idea how much tracking data can be generated from a proper Kanban ticketing system for performance and timeline estimation, let alone plain ol' keeping work organized. Oh, and it doesn't disrupt the DS team's flow, the whole system is asynchronous. Thanks for coming to my TED Talk.
+- Data science, machine learning, etc aren't pure academic pursuits. There's usually a cut off point where if you spend too much time studying a problem you won't have sufficient return on investment. Sprint planning can be helpful in ensuring you get results in a reasonable time frame. If you can't do this you are't an effective data scientist. 
+
+(2) is a culture problem in your group. Add those into your sprint estimates.
+- Yeah I think the point estimate is useless. When I told the scrum team “this spike EDA story needs 5 points”, they said “oh no, do you really think it will take the whole sprint to do it? Spike is short. Let’s split the EDA into smaller stories and put 2 points for spikes” I just feel like my team spent so much time in arguing the points, which I don’t feel any value at all.
+- I don't see how the points you made support your conclusions since those are more like symptoms of a manager that is not familiar with our domain rather than a structural failure of Scrum. These are related more to the lack of planning in a sprint, and I believe all programming areas can suffer from those errors equally.
+
+I do agree that Scrum-related sprint management is a pain in DS teams, but mainly because of the widespread scarcity of Data Product Managers/Owners together with the relative freshness of this field. People still don't have the familiarity to create and define DS-related stories and tasks. Add that to the lack of an Engineering pipeline to fit proofs-of-concept and the expectations of Data Scientists delivering scalable applications from the ground-up without some semblance of Engineering...
+
+TL;DR: Uncertainty in DS is not inherent to the field, but stems from the immaturity of management in regards to Data.
+- It sounds more like you're the problem. 
+
+>1. The uncertainty in data science makes point estimates essentially worthless. 
+
+So assign points towards exploration.
+
+> 2. Sprints are too short to deliver meaningful results. As a result data scientists often sacrifice documentation, code quality, or model robustness to meet the arbitrary deadline.
+
+So spend a sprint on documentation, another sprint on code quality, another sprint on model robustness etc
+
+> 3. The product owner has too much direction in the determining the backlog and this often results overlooking important issues.
+
+The product owner has to prioritize the backlog. If you disagree with their prioritization then take a more active role in the sprint planning process. They do have the final say because it's there job to prioritize across teams beyond just the DS team.
+
+> 4. Grooming and other sessions gradually begin to take up more and more time, due to the aforementioned issues (e.g. we need more grooming because haven't delivered stories in the last sprint). 
+
+Related to the previous point, grooming takes time because (as you've stated) the wrong things get prioritized. This is your opportunity to help fix it.
+- Kanban all the way!
+- Yeah that makes sense. I think Kanban works a bit better for that reason: no-sprint schedule and more time to explore things. I'm also not opposed to breaking down large projects (i.e. literature review, documentation, explore models, tune model, etc) and then having a long-term epic (deploy end-to-end model to prod). I think the problem is when you start to get full time scrum masters and product owners  who treat it like a religion.
+- I come from an engineering background and you hot the nail on the head. Taking the most important elements from scrum and applying them to your situation is the way to go in my experience.  We called it agile with a little a.
+- Can't believe I'm saying it, but: "this."
+Another thing I would add is that syncing sprints with other parts of the rnd team is probably the only functional way to hand over any preliminary results. e.g. your model is only .7 accurate or you only have a baseline - you still need to hand over something for, say, frontend to work with.
+- It's kind of funny, as I scrolled through these responses, I've agreed with all of them.  
+
+
+I think you're being a little harsh here, but you're not wrong. I think it depends a lot on how your scrum has been managed. Scrum and Agile were really designed for software engineering which is a bit more linear than data science. Things are broken and need fixing, feature needs to be implemented, etc. vs. explore data, build model, form hypothesis, test, etc.  
+
+
+Organized meetings and collective timeline-ing is a good thing, but if the culture is one where saying "I explored the data, haven't found much yet" is looked on as time wasted, then scrum probably won't work. DS projects are inherently more open-ended and research-y, but at the same time, data scientists are probably much more prone to trying to spend all their time on research and need to be pushed to speed up or make a decision and move on.   
+
+
+I've been in situations where I was the only Data Scientist tacked on to a team of Software Engineers, and scrum was horrible. Everybody else could show up and list all of the merges and code changes and check off TODOs, and I would be left there saying: "tried some more stuff, it still just looks like noise." But then I've also been on a team where that wasn't viewed as wasted time, but rather part of professional level data science.
+- The problem is, either the stories in your backlog are product features the PO can understand, or they are DS tasks (explore this, validate this). 
+
+The former can't be time boxed and the latter can't be prioritized by the PO
+- Big fan of kanban for everything, not just DS.
+- Indeed, which is exactly what "agile" should be all about. Do what works best in your specific situation, regardless of whether it is a named methodology or exactly follows some arbitrary set of rules.
+
+Most methodologies have at least some good elements, so it is sensible to use them if they work for you. But as soon as you are forced to use all other elements as well, simply because it is part of that methodology, you are by definition no longer agile.
+- If you document exactly what you did and the (noisy) results of "tried some more stuff, it still just looks like noise."  then you can just close that card/issue/commit and open a new one to continue research.
+
+To me it looks like an unstructured way of doing your research if that is your problem.

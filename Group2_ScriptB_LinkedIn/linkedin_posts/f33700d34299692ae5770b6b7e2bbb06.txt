@@ -1,0 +1,64 @@
+URL: https://www.linkedin.com/posts/leahdgibson_sometimes-its-one-step-forward-and-two-steps-activity-7372419091560583168-iMDB
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Leah Gibson的动态
+Leah Gibson
+
+Data Scientist | Mathematician | Atmospheric & Air Quality Research | Environmental Data Analysis
+
+3 周
+
+Sometimes it's one step forward and two steps back.
+
+Since my last update of pmf2speciate, I've taken a step back to re-evaluate how I'm categorizing and grouping the SPECIATE dataset. A number of the profiles in the database are really just different samples of the same source, but with slightly different names (ex, "Biomass Burning - Wildfire", "Wildfire", "Forest Fire").
+
+With the help of an LLM, I wrangled these 6,000 samples into more solid groups, which I'll now train the RF model on. I also built a Plotly visualization tool to view which compounds contribute >5% to different sources.
+
+Some thoughts & lessons learned along the way:
+☑️ LLMs are amazingly effective at tedious tasks like grouping similar terms. Without it, the manual review would've taken weeks (and honestly, I probably wouldn't have done it).
+☑️ If you're building datasets, think ahead to the people who will want to use them programmatically. Free-text fields make downstream use so much harder.
+☑️ A quick visualization makes it so much easier to sanity-check data and spot issues early.
+
+Follow along for more updates!
+
+🔗 Github: https://lnkd.in/gwXUYHVJ
+
+10
+1 条评论
+赞
+评论
+分享
+Ellis Robinson
+
+Assistant Professor, Chemical & Environmental Engineering
+
+3 周
+
+I saw an earlier post of yours about this project. Honestly siked to use this.
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+最相关的动态
+Priyank Sharma
+
+CISSP | Cybersecurity Governance | | Security Leadership I Security Operations | Threat Hunting | SIEM/xSOAR | Network & Endpoint Security | Data Security | Cloud Security | Vulnerability Management | AI Security | vCISO
+
+1 周
+
+New tool alert: convert-ts-bash-history.py
+
+This script processes one or more .bash_history files and outputs a pipe-separated values (PSV) list that summarizes command histories by filename and timestamp. It’s a straightforward way to

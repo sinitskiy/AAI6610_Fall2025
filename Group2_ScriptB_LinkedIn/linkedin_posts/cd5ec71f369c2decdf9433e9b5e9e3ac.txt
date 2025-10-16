@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/lasar-polimi_deep-ensemble-learning-and-error-correction-activity-7370723063363108864-z8vn
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Laboratory of Analysis of Systems for the Assessment of Reliability, Risk and Resilience (LASAR3)的动态
+Laboratory of Analysis of Systems for the Assessment of Reliability, Risk and Resilience (LASAR3)
+
+1,503 位关注者
+
+1 个月
+
+📣 New paper is out!
+
+📘 Title: Deep ensemble learning and error correction method for remaining useful life prediction of rolling bearings
+
+📚 Journal: Engineering Applications of Artificial Intelligence
+
+🌐 Authors: Wenzhe Yin, Hong Xia, Enrico Zio, Xueying Huang
+
+📖 Abstract: Rolling bearings are critical components of rotating machinery, and the prediction of their remaining useful life (RUL) is important for system reliability and operating efficiency. A novel RUL prediction method based on deep ensemble learning and error correction is here proposed. Firstly, the moving average filter (MAF) is applied to preprocess vibration signals for removing outliers and noise. Then, time-domain features are extracted from the processed vibration signals, and optimized to obtain imperative feature signals. Subsequently, a deep ensemble learning model is built with gated recurrent unit (GRU), bidirectional GRU (BiGRU), long short-term memory (LSTM) and bidirectional LSTM (BiLSTM) as base learners, and the overall performance of the prediction model is enhanced by introducing an error correction strategy. The MAF method is also used to smooth the trend of the RUL prediction outcomes. Finally, the proposed method is applied to two full-lifecycle rolling bearing datasets: the Prognostics and Health Management 2012 (PHM2012) dataset and the Intelligent Maintenance System (IMS) dataset. It is evaluated using mean square error (MSE), mean absolute error (MAE), and the R-square coefficient of determination (R2). The test results demonstrate that the method achieves highly accurate RUL predictions: on the PHM2012 dataset, the MSE, MAE, and R2 reach 0.000380, 0.013695, and 0.994716, respectively; on the IMS bearing dataset, the co

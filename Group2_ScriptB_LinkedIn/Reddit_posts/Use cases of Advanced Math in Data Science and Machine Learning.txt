@@ -1,0 +1,34 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17bg00y/use_cases_of_advanced_math_in_data_science_and/
+Title: Use cases of Advanced Math in Data Science and Machine Learning
+
+Content:
+I come from a Math background, and im fascinated by Math topics like Functional Analysis, Differential Geometry, Topology, Manifold Learning etc, Im actually looking for ways where i can apply these Math topics in my day to day Data Science/ML work. Is there any DS or ML roles which can allow me to delve deep into these Math topics? This has been my dream job. Where can i find roles that will allow me to such expertise, my main issue being that im unable to find such roles.
+
+Comments:
+- A PhD
+- You need a PhD and then a research scientist job at companies doing cutting edge research.
+
+Most work these days in model development is focused on deployment and data engineering. The model, or rather the mathematical aspects of the model, is abstracted away and is most often a few lines of code.
+- Others are saying PhD is the only place for this. I found that I could do research with an MS (Stats) at boutique R&D firms. Specifically I’ve worked in the area of applied topology.
+- While *research* in those fields would likely require a PhD, there are plenty of general use cases for techniques in fields like differential geometry and functional analysis. Functional analysis is the basis of almost all of non-parametric statistics, and beyond that functional *data* (i.e. data which are smooth functions) are very common (e.g. movement trajectory data, many kinds of time series). I work with manifold valued data all the time (though, I'm in academia), so I use techniques from differential geometry. Things like sensor array, orientation, and neuroimaging data often involve variables lying on manifolds.
+
+I would say that whether or not you can find use for those fields depends more on the *domain* than on the education level.
+- It really depends on what you mean by “apply.” If you want to use those tools heavily and rigorously, you’ll want a research role where you’re inventing new methodologies. Whether or not you do that in academia or industry, it’ll require a PhD of some sort and some damn good networking.
+
+
+If you want to use those tools more loosely and intuitively, you’ll want to find a modeling role at a company whose business is more adversarial, something like investment or fraud prevention. You wouldn’t necessarily be doing the math on a regular basis, but that knowledge would give you a notable advantage when designing and diagnosing pipelines. Those roles might also be more numerous and accessible.
+- A data scientist role at a startup — where you can have some leeway in how you do your job and demonstrate your value — could be an option. Learn the problem space and see if any of these fancypants methods are useful or applicable in solving your problem.
+- [deleted]
+- Well im looking for a Data Scientist role with a blend of Mathematical and statistical rigor.  I didnt have a PHD, just a Bachelor in Math.
+- Graph learning is full of those stuff
+- Seconded
+- This^. Pay sucks but it’s the most intellectually fulfilling “job” I’ve ever had. I work as a ML research scientist in the industry now but I miss true academic research dearly. If there existed some magical place where you could make as much money doing pure math research as you can in the industry, I’d buy a one way ticket and never look back
+- PhD nowadays is like a High School diploma 30 years ago.
+- Well im looking for a Data Scientist role with a blend of Mathematical and statistical rigor. I didnt have a PHD, just a Bachelor in Math.
+- Can I ask why you say SWE is closer to math?
+- "If there existed some magical place where you could make as much money doing pure math research as you can in the industry", the closest u can get to that is by working in some ML research labs for the govt, either that or u switch to Cryptography. I heard nowadays there are research areas focused on researching areas at the intersection of ML and Cryptography.
+- If you ever take a course in algorithms you will realise it is extremely math heavy. I can imagine there are algorithm designers/engineers that do more creative work mathematically than a lot of 'data scientists.' If I had to guess though I would say the average data scientist probably is closer to math than the average SWE, even if that just means that the average data scientist is just using stuff that uses math like gradient descent etc not actually doing any math.
+- [deleted]
+- I work as a research scientist in the ML research space in industry and it’s a great gig, and intellectually fulfilling in it’s own way, but it’s still worlds apart from true academic research. I think I’m just biased against applied work, which you can only really get away from in academia and a few prestigious industry research teams. I’ve already made peace with the fact that if I want to make good money I have to abandon my dreams of doing research for the sake of research. Don’t get me wrong, I enjoy applied research too, but there is nothing better than being able to pick some obscure problem that nobody cares about and dedicate years of your life to it
+- In Practice writing code is very different from Proving some Mathematical formula.

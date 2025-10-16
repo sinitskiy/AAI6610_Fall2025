@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/daniel-aronovich_data-science-mathematics-activity-7272901854248787968-tAL3
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Daniel A.的动态
+Daniel A.
+
+Co-Founder and CTO at Dataflint | Apache Spark Copilot | Podcast Host | Passionate about Data, Math and Leadership
+
+10 个月
+
+How to 𝐪𝐮𝐚𝐧𝐭𝐢𝐟𝐲 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 in machine learning?
+
+In this episode of the 𝐃𝐚𝐭𝐚 𝐒𝐜𝐢𝐞𝐧𝐜𝐞 𝐓𝐋𝐃𝐑, I review the paper: 
+
+Benchmarking Uncertainty Disentanglement: Specialized Uncertainties for Specialized Tasks[1] by Michael Kirchhof.
+
+Which investigates whether current machine learning methods can effectively disentangle aleatoric and epistemic uncertainties, two critical types of uncertainty in AI systems.
+
+𝐀𝐥𝐞𝐚𝐭𝐨𝐫𝐢𝐜 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 corresponds to inherent variability or ambiguity in the data itself, similar to interpolation, as it deals with situations within the known data distribution that cannot be resolved regardless of additional data or model improvements.
+
+𝐄𝐩𝐢𝐬𝐭𝐞𝐦𝐢𝐜 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲, on the other hand, arises from gaps in the model's knowledge or exposure, akin to extrapolation, as it reflects uncertainty when encountering data outside the training distribution that can potentially be reduced with more data or better modeling.
+
+The authors benchmarked 19 uncertainty quantification methods across 13 tasks, including out-of-distribution detection and predictive uncertainty calibration, using large-scale datasets like ImageNet and CIFAR-10.
+
+Traditional mathematical decompositions, such as the Information-Theoretical formula, aim to separate these uncertainties but fail in practice, with aleatoric and epistemic components showing high correlations (rank correlations above 0.78).
+
+This overlap suggests that these 𝐦𝐞𝐭𝐡𝐨𝐝𝐬 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐭𝐫𝐮𝐥𝐲 𝐝𝐢𝐬𝐞𝐧𝐭𝐚𝐧𝐠𝐥𝐢𝐧𝐠 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐢𝐞𝐬 as expected, undermining their practical utility in applications like active learning and safety-critical systems.
+
+The paper highlights that some methods, like the Mahalanobis distance, excel at specific tasks, such as detecting out-of-distribution samples, without being confounded by aleatoric uncertainty.
+
+The findings emphasiz

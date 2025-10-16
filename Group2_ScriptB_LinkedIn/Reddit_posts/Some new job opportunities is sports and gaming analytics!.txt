@@ -1,0 +1,60 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bqyh5x/some_new_job_opportunities_is_sports_and_gaming/
+Title: Some new job opportunities is sports and gaming analytics!
+
+Content:
+ 
+
+Hey guys,
+
+I'm constantly checking for jobs in the sports and gaming analytics industry. I've [posted recently in this community](https://www.reddit.com/r/datascience/comments/1b8xr3y/zelus_analytics_and_tennessee_titans_are_hiring/) and had some good comments.
+
+The job board updates daily and as we know, the market is not as dynamic as before so I wanted to share several data science positions that appeared recently.
+
+* [Senior Data Scientist - USA](https://www.sportsjobs.online/job-details/3063senior%2520data%2520scientist/r/recRuJu4maAaDfKC6?utm_source=reddit&utm_medium=post)
+* [ML Engineer/Data Scientist (Creative Research Team)](https://www.sportsjobs.online/job-details/3047ml%2520engineer%252fdata%2520scientist%2520%2528creative%2520research%2520team%2529/r/recfyjrPwuu4SXZUm?utm_source=reddit&utm_medium=post) \- USA
+* [Data Engineering Summer Intern](https://www.sportsjobs.online/job-details/3068data%2520engineering%2520summer%2520intern/r/recKlr4Fp6ZFXs3tp?utm_source=reddit&utm_medium=post) \- USA
+* [Director - Machine Learning Engineering](https://www.sportsjobs.online/job-details/3069director%2520-%2520machine%2520learning%2520engineering/r/recC9yE6ql3GxdVQN?utm_source=reddit&utm_medium=post) \- USA
+* [Data Analyst - Europe](https://www.sportsjobs.online/job-details/3041data%2520analyst/r/recpQdVPzYhMAAo0p?utm_source=reddit&utm_medium=post)
+* [Staff Computer Vision Engineer](https://www.sportsjobs.online/job-details/3060staff%2520computer%2520vision%2520engineer/r/recsru3dRyQnKXTfk?utm_source=reddit&utm_medium=post) \- USA
+
+There are multiple more jobs related to data science and hundreds of others jobs in analytics and software.
+
+I've created also a [reddit community](https://www.reddit.com/r/sports_jobs/) where I post recurrently the openings if that's easier to check for you.
+
+Disclaimer: I run the job board.
+
+I hope this helps someone!
+
+Comments:
+- cool
+- Are there any openly available case study for sports analytics? I’m interested in this domain and would like to understand the type of problems solved using f data science.
+- Thanks!!
+- Cool
+- Do you have anything entry level that does not involve being in school. I'm a recent graduate and looked at some of the internships. But all I've seen require I be in school. FML for trying to finish school quickly. Biggest mistake I think.
+- Yeah found some on GitHub. I’m also trying to create a master by scraping the pages of the ESPN or other sports website.
+- Is there a open data pool where anyone can start analyzing and get paid by it?
+- Awesome sauce!
+- For free access to sports data and types of problems which people have tried to solve, past NFL big data bowls are great sources of info.
+- You are welcome!
+- First jobs in the industry are hard to find, it's true. You need to keep an eye constantly. You can use the Junior filter, you might apply even if they say 1 year of experience and you don't have it. In that case I would recommend having something to show, like a portfolio with at least one analysis or something you've done with public data.
+
+Maybe something like this?  
+[https://www.sportsjobs.online/job-details/3097analytics%2520fellow/r/recDG5lZ5rjOyIUGc](https://www.sportsjobs.online/job-details/3097analytics%2520fellow/r/recDG5lZ5rjOyIUGc)
+- I think the best thing to do is to create your analysis and showcase it so people know what you can do and eventually get hired. Getting paid by analyzing out of nowhere I've never heard of, not even in other industries unfortunately.
+- Indeed! NFL Big data bowl is a great resource.
+
+A few weeks ago I shared this topic in the newsletter.
+
+Regularized Adjusted Plus Minus in the NBA. You can read more in the post, that links to data to do it yourself and a series of blogposts of another author that explain really well the whole topic and how it's solved.
+
+[https://www.sportsjobs.online/blog-post/16about%2520rapm%2520in%2520the%2520nba/r/recDnEoA8apI2Slub](https://www.sportsjobs.online/blog-post/16about%2520rapm%2520in%2520the%2520nba/r/recDnEoA8apI2Slub)
+- Thank you so much for the help! That's literally the nicest a professional has been to me. I've felt very ghosted and unseen.
+- Um for that job it says that I need to be pursuing a degree as one of the preferred qualifications. Even though it's not required.  But I'm graduated now. Is that going to exclude me?
+- Yeah, something like Github for Data Science!
+- Thanks so much for the comment, it made my day! I'm sorry you feel that way usually. Keep pushing, don't stop because of that
+- Sorry the delay (I'm sick, working the minimum right now). The description says.  
+" Pursuing or possessing a degree in Statistics, Mathematics, Computer Science, or related quantitative fields."   
+You possess a degree so you are good. In any case, for other jobs you might want to apply either way if you are really interested. You don't know how strict they are with that and you are more qualified, so, it's kind of a good thing haha. Good luck!
+- Thanks! I appreciate the help a lot.
+- Also I'm so sorry for not saying anything sooner. But i hope you feel better soon!

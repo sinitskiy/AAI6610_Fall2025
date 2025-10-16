@@ -1,0 +1,27 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gh7nd2/point_cloud_segmentation_help_needed/
+Title: point cloud segmentation, help needed
+
+Content:
+Hello Everyone,  
+I need to perform a point cloud segmentation, I have many scans of a rock surface and I want to segment into 3 category. I have lots of different scans in different locations labelled every point into the 3 category so I can perform a supervised deep learning. I have some experience with machine learning in TensorFlow but I am new to computer vision.
+
+My two questions are:
+
+do I need a part segmentation or semantic segmentation? the difference really confuses me sorry!
+
+I have spent a lot of time going through the examples in pointnet and pointnet++ however there are many somewhat newer projects like DGCNN, and POINTCNN. My question is should I be using these newer packages, or the older more established ones. Also many of these packages are only available in TF1 but there are some open pull requests for tf2 available in some cases. If anyone has a lot of experience could you advise me on the best place to start. I have XYZRGB data labelled.
+
+Comments:
+- If you want to assign each point of your point cloud into one of 3 categories it seems like you are interested in semantic segmentation.
+
+  
+I would start off by taking a look at Point NeXt repository and try to understand how the dataloaders work. Then either you transform your data to take the form of how S3DIS benchmark dataset is saved, or you create your custom dataloader which will be able to read your labeled point clouds.
+
+Another good alternative is KPConv. That paper is also available in Tensorflow if that is what you're most familiar with. But really most papers nowadays use only PyTorch, so it's not a bad idea to try to learn that.
+
+PointNeXt (PyTorch): [https://github.com/guochengqian/PointNeXt/tree/master](https://github.com/guochengqian/PointNeXt/tree/master)
+
+KPConv (Tensorflow): [https://github.com/HuguesTHOMAS/KPConv](https://github.com/HuguesTHOMAS/KPConv)
+- Thank you very much for the response. I'm really struggling to install PointNeXt when i try and install openpoints subdirectory. Do you have any experience with the installation? I have followed he instruction on the repo and openpoints documentation. This is what I get: [\#!/usr/bin/env bash# Command to install this environment: source install.sh - Pastebin.com](https://pastebin.com/trbgtjgb)
+- Hi, were you able to figure this out/move ahead? I have some exp with this, I can help out if you can tell me your current status with this!

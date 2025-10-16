@@ -1,0 +1,13 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16w17o0/quantify_contribution_of_component_pictures_to/
+Title: Quantify contribution of component pictures to create the final
+
+Content:
+Simple example would be chopping a square into 4, with 1 image representing each quadrant. Overlaying these 4 would each get a score of 0.25 to get back to the original picture. 
+Or we need 0.5 mountains, 0.3 clouds, and 0.2 rivers to make a Bob Ross painting. 
+
+My project will be a bit more complex, but not much. How can I score the components? I’d like to incorporate into machine learning for testing many samples
+Ideally, I’d use pictures of each clouds, rivers, etc as features in the ML model 
+Thanks for your time!
+
+Comments:

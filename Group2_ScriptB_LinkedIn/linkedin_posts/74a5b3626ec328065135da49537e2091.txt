@@ -1,0 +1,54 @@
+URL: https://www.linkedin.com/posts/amit-trivedi-1976b11b_github-nstrndrbimine-n-learn-enhancing-activity-7330404852633624578-YciL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Amit Trivedi的动态
+Amit Trivedi
+
+Associate Professor at University of Illinois at Chicago
+
+4 个月  已编辑
+
+Nastaran Darabi from AEON Lab will be presenting two papers at ICRA 2025 this week:
+🔹 Paper 1: Calibrated Evidential Quantile Regression in Deep-Q Networks (CEQR-DQN)
+ Authors: Alex Stutts, PhD, Danilo Erricolo, Theja Tulabandhula, Mohit Mittal (Meta), and Amit Trivedi
+ We propose a new statistical learning framework that combines evidential deep learning with conformal quantile calibration to separately and efficiently estimate aleatoric and epistemic uncertainty in reinforcement learning. Tested on MinAtar, CEQR-DQN improves both learning speed and decision reliability under uncertainty.
+ 📌 Application: Safer and more sample-efficient exploration in mission-critical robotics.
+
+🔹 Paper 2: Enhancing 3D Robotic Vision Robustness by Minimizing Adversarial Mutual Information
+ Authors: Nastaran Darabi, Dinithi Jayasuriya, Devashri Naik, Theja Tulabandhula, and Amit Trivedi
+ We introduce a curriculum-based adversarial training approach for 3D perception that minimizes mutual information under perturbation—without requiring adversarial samples. Our method improves generalization and robustness across point cloud models on ModelNet40 and KITTI datasets.
+ 📌 Application: Reliable 3D object detection in adversarial or noisy environments.
+ 🖥️ Code available: https://lnkd.in/gFVi97NX
+
+#ICRA2025 #DeepLearning #ReinforcementLearning #RobotSafety #3DPerception #AdversarialRobustness #UncertaintyQuantification #UIC 
+
+GitHub - nstrndrbi/Mine-N-Learn: Enhancing 3D Robotic Vision Robustness by Minimizing Adversarial Mutual Information through a Curriculum Learning Approach
+github.com
+54
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,503 位关注者
+
+19 则动态
+查看档案  关注
+探索相关领域
+Future Trends in Reinforcement Learning
+Defensive Strategies for Adversarial Machine Learning
+Deep Learning Applications in MRI Imaging
+Challenges and Benefits of Deep Learning in AI
+How to Accelerate Rob

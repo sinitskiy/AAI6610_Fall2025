@@ -1,0 +1,109 @@
+URL: https://www.linkedin.com/posts/robert-kuebler_get-uncertainty-estimates-in-regression-neural-activity-6923699565472714752-wJdc?trk=public_profile
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dr. Robert Kübler的动态
+Dr. Robert Kübler
+
+Senior Staff Data Scientist bei ALDI DX | Algorithmen, Data Science, Machine Learning
+
+3 年
+
+Get Uncertainty Estimates in Neural Networks for Free
+
+Given the right loss function, a standard neural network can output uncertainty as well
+
+#machinelearning #deeplearning #artificialintelligence #neuralnetworks 
+#bayes #uncertainty #confidence
+
+Get Uncertainty Estimates in Neural Networks for Free
+https://towardsdatascience.com
+55
+20 条评论
+赞
+评论
+分享
+Matias Valdenegro Toro
+
+Assistant Professor (Tenured) of Machine Learning at University of Groningen | Uncertainty Quantifier
+
+3 年
+
+This method is called Variance attenuation and is a standard method present in the literature, but note that it can only estimate aleatoric uncertainty in regression. In our recent paper ( http://arxiv.org/abs/2204.09308 ) you can see how aleatoric and epistemic uncertainty can be estimated using this loss and another uncertainty quantification method.
+
+赞
+回复
+8 次回应
+Airin Dutta
+
+Statistical learning for Self-sensing and State-awareness, Autonomous Vehicles, Data-driven real-time health monitoring, Urban Air Mobility, Electric vehicles
+
+3 年
+
+Great article with clever maths! 
+
+赞
+回复
+1 次回应
+Marco Huber
+
+Full Professor @ University of Stuttgart | Head of Digitalization, AI, and Machine Vision @ Fraunhofer IPA
+
+3 年
+
+Nice article. This is a version of a mixture density network, isn't it? Just estimating the parameters of a single Gaussian density instead of the parameters of an entire Gaussian mixture.
+
+赞
+回复
+2 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+5,347 位关注者
+
+302 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

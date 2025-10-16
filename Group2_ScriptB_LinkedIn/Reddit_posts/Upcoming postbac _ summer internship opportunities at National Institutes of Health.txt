@@ -1,0 +1,46 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/rsdqjy/upcoming_postbac_summer_internship_opportunities/
+Title: Upcoming postbac / summer internship opportunities at National Institutes of Health
+
+Content:
+For anyone who is looking for post-undergraduate or summer internship opportunities, NIH currently has openings.
+
+[https://www.training.nih.gov/programs/sip](https://www.training.nih.gov/programs/sip)
+
+[https://www.training.nih.gov/programs/postbac\_irta](https://www.training.nih.gov/programs/postbac_irta)
+
+There are plenty of PIs looking for students interested in developing software for bioinformatics / biostatistics.  I know this because I'm one the investigators who is recruiting students for this type of research :D -- we're looking for students interested in developing machine learning methods for microbiome / metabolomics meta-analysis.
+
+There is a zoom information session on Jan 12th 3pm ET at [https://nih.zoomgov.com/meeting/register/vJItd--pqD4rGYguRUHBzfalIOfLqegNMsM](https://nih.zoomgov.com/meeting/register/vJItd--pqD4rGYguRUHBzfalIOfLqegNMsM).  And there is another summer internship zoom information session on Jan 5th 3pm ET at [https://nih.zoomgov.com/meeting/register/vJItc-CppjIjE2\_U\_cNlbfprH3-WbgFwCMc](https://nih.zoomgov.com/meeting/register/vJItc-CppjIjE2_U_cNlbfprH3-WbgFwCMc)
+
+So if you are interested, take a look and apply! And feel free to follow up with any questions :)
+
+EDIT : this is for the summer internship / postbac program in general -- there are something like 30k scientists at NIH from a bunch of different backgrounds that look into this application pool.
+
+EDIT : there is no deadline for the postbac application.  
+
+Comments:
+- What type of experience/skills are you looking for in applicants? Should the applicants have advanced skills in developing software or are novice applicants welcome to apply as well?
+- [deleted]
+- I did an internship via SIP as an undergrad and I highly recommend it. I interned in a lab within the bioengineering division that used diffusion tensor imaging (MRI) to study certain disease's impact on the brain.
+
+It was a great experience and it's highly competitive so it looks really good on your resume.
+
+The DC metro goes right into the campus so you don't need major transportation, only a place to stay that is near a metro line.
+- I have a sub 3.0 gpa and no experience. Would it be worth applying? Any suggestions on the application?
+- Probably not worth it, unless you just want a resume builder.  
+I did machine learning software development for metabolomics, and I can tell you that most of it is a farce. It's mostly just about who is able to spit out the most unique visualization tools, regardless of their statistical suitability. I know there are some good ones out there, but most PIs simply don't care to get into the guts of it and just want pretty figures and/or webapps for justifying ongoing funding.   
+
+
+If you do go get one of these, then learn something like D3.js, gnuplot, matplotlib, or even OpenGL and just start making cool vis PI has never seen before. It's the fastest way to look "cutting edge" to people that don't know what cutting edge is.
+- Hi there, Would the summer program be something I should pursue even though I am awaiting responses for grad school which will hopefully begin in the fall?
+- Is this an internship opportunity for masters students ??
+- It depends on the PI.  For me personally, I'm looking for someone who have some programming and/or statistics background.  Summer interns typically don't require previous research experience, but again that is a good question to ask in the webinar.
+- On the links provided, it looks like it is only open to US citizens / permanent residents. But this is a great question to ask at the webinar :)
+- This is a pretty competitive program, so I'd weigh your options in terms of time commitments.  That being said, I've noticed a pretty poor correlation between grades and research ability -- so I'd highly encourage you to seek out research opportunities at your local university.
+- So this is for the general pool, there are a ton of investigators other than myself looking for applicants.
+
+Regarding the "farce" :) --- a good portion of my agenda will be focused on quality control.  And our group is a machine learning group, so we are actually more focused on developing novel neural net architectures specifically tailored for high dimensional omics data.  But while I'm personally not looking for data viz folks, I bet there are groups looking for this expertise.
+- Yes, you can always decline a summer internship/post bac offer if grad ends up working out. If it doesn't, I don't think I've ever met a post bac who hasn't gotten into grad school after being in the program.
+- See the G-SOAR and GDSSP sections in the links I provided.  This is a broad list of summer internship opportunities for high school, undergraduate and graduate students.
+- Don’t take this as an attack on you JT; I like reading some of your stuff and you care about it more than most and you’ve had a productive year. But I got really burnt out from working with low value collaborators in our field, and want to keep others from getting outright taken advantage of by these programs. It’s not an exaggeration to say there are less than 10 people on earth I would recommend working with in higher dimensional/multiblock modeling.

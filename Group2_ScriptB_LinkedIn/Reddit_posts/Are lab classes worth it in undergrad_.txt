@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/178j0k5/are_lab_classes_worth_it_in_undergrad/
+Title: Are lab classes worth it in undergrad?
+
+Content:
+I'm considering only doing strictly computational work when I enter grad school and leave to industry. I'd like to work on more biophysical modeling and simulations, but RNA-seq and machine learning stuff seems cool too. 
+
+For my biochem major, I'd have to take 8 more lab classes, and I can't help but wonder, would it be better if these classes were just CS classes, math classes, or stat classes? I'm considering majoring in CS, MATH, or STAS, but basically minoring in biochem without labs. 
+
+Is that not a good approach? Do you need lab skills to do purely computational research?
+
+Edit: I'm a bit confused. Don't most people advise majoring in CS and minoring in the other? Won't this inherently make you take less lab classes?
+
+Comments:
+- I'm someone who's from a lab background but ended up doing more bioinformatics work later on. Personally, I think the lab experience really helps you understand how the data is being collected and what the strengths and weaknesses of different methods are. This isn't always important, I guess, for some areas of bioinformatics, but overall, I think it's useful experience to have.
+- Depends where you want to go in your life. Big companies where you are going to do the same couple things most of the time? Then the lab probably won't matter. In the other hand, I lead a small flexible group at a small company and I wouldn't hire a bioinformatician with zero lab experience.
+- It's helps if you are engaged!! Sooooooo many labs suring undergrad I just felt disengaged from the lab because I didn't appreciate it's simplicity and because I hadn't yet been in a lab myself, the techniques blurred together. Then once I got into lab I was very grateful I atleast paid attention to the purpose because, yes they are worth it. 
+
+A lot of them will feel like busy work but it's because this is where you learn the fundementals for when you learn how to do "real" work.
+- Only for the fact that NOT having them is a pain in the backside barrier later for graduate studies that demand them.
+- Depends what you want to do.  Much of the time in industry acquiring the data in the first place and making sure it isn't garbage is the hard part.  If you have an inkling of what the difficulty of doing certain things in a lab is, you can suggest experimental design changes that may make your life easier, e.g. "Can you add in a synthetic control?" vs. "Can you triple the number of transgenic mice and sample each organ 5 times?"
+
+I expect everyone I hire to be able to contribute usefully to Design of Experiment discussions and help make the next experiment better.  Having worked in a lab definitely helps people have empathy for those who have to do the wet lab experiments.
+- airport shy coherent bright reminiscent crush existence violet juggle bells
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- do you mind asking me what type of bioinformatic work you're doing?
+- Agreed but as a biochemistry major turned bioinformatician also, lab classes aren't as useful for this compared to actually working in a lab.
+- Thanks for the advice. what type of bioinformatic work does your group do?
+- What work do you do?
+- I work in an academic medicine setting where I do data analysis for a lot of different projects. Mostly RNA-seq work but also WES, WGS, and other things. It's very different than working for a company building software, which I think a large number of people on this sub do. I don't have a CS background, I come from a genetic epidemiology background (that's my masters, my undergrad was in biology). I think it sets me up in a unique way to do my kind of unique job. It's not a bad job, but bioinformatics roles in industry typically make more, and I'm leaving my position soon to start a PhD.
+- We are analyzing our own experiments, i.e., metagenomics and transcriptomics plus downstream statistical analysis

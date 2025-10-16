@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/reza-abdi_defeating-nondeterminism-in-llm-inference-activity-7371781206054588416-Lrc0
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Reza Abdi的动态
+Reza Abdi
+
+AI/ML Computational Science Engineer | Ph.D., P.E. | Gen-AI Enthusiast
+
+3 周  已编辑
+
+I've been dealing with deterministic and probabilistic modeling in grad school and have always been thinking about whether we're going to get a model that addresses uncertainty properly, and if yes, when! 
+
+It's interesting to see how uncertainty sneaks into AI, even when we try to make it predictable. I think people deal with this daily: ask the same question twice, and you might get slightly different answers. That's where Thinking Machines Lab's new work aims to provide us with some insights; it tackles "nondeterminism" in LLMs, making outputs more reliable and repeatable.
+
+In simple terms, this research piece says the LLMs crunch numbers using floating-point math, which can vary subtly due to how calculations are ordered (like adding numbers in different sequences and getting tiny rounding differences). Tech folks often point to GPU "concurrency" (threads computing out of sync) as the cause. But the lab, led by Horace He (https://x.com/cHHillee), digs deeper: the real issue is "batch size." On servers, your query gets grouped with others for efficiency. Change the group size (based on who's asking what), and the math subtly shifts, altering results.
+
+Their fix? Redesign core operations: like normalization (RMSNorm), matrix multiplications, and attention mechanisms to ignore batch size.  Honeslty, not quitete clear to me (obviously! :D) but as I understand, it's like standardizing a recipe so the cake tastes the same whether you bake one or a dozen. Technically, they enforce fixed parallelization strategies, avoiding variable splits that cause inconsistencies. Tests on models like DeepSeek-V3.1 and Llama-3.1 showed identical outputs across thousands of runs, with just a 10-20% speed dip.
+
+For everyday users, it means more trustworthy AI, no flip-flopping on advice. For developers, it supercharges training (like RLHF

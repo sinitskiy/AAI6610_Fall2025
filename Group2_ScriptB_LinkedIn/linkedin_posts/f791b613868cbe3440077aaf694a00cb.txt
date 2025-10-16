@@ -1,0 +1,95 @@
+URL: https://www.linkedin.com/posts/andriyburkov_when-you-ask-an-llm-to-generate-json-you-activity-7140507967157612545-VZjw
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Andriy Burkov的动态
+Andriy Burkov 
+Andriy Burkov是领英影响力人物
+
+PhD in AI, author of 📖 The Hundred-Page Language Models Book and 📖 The Hundred-Page Machine Learning Book
+
+1 年
+
+When you ask an LLM to generate JSON, you choose the quality of the container over the quality of the content. The way LLMs are fine-tuned (binary preferences) you cannot have both.
+
+73
+15 条评论
+赞
+评论
+分享
+Ranjan Dailata
+
+1 年
+
+Generate with YAML, you will see the LLMs are able to effectively handle than with the JSON format 
+
+赞
+回复
+2 次回应
+Marijn Markus
+
+AI Lead | Managing Data Scientist | Public Speaker
+
+1 年
+
+You can't have have your JSON and eat it
+
+赞
+回复
+Paul-Luuk Profijt
+
+AI Engineer @ VIX
+
+1 年
+
+In my experience, this just isn’t true. Asking LLMs to write their output as JSON sometimes even improves the quality of the output, possibly because it has better JSON training data.
+
+In fact, ultimately the claim "you can't have both json and quality" is like saying "you can't have bulletpoints and quality": it’s just formatting, why should it negatively affect output quality?
+
+赞
+回复
+2 次回应
+Ivan Herreros
+
+Machine Learning Engineer | Applied LLM Research @ inovex GmbH PhD Computational Neuroscience | Computer Scientist
+
+1 年
+
+How would people do that? I guess you would first produce the "content" and then fit it to the "container". But even there, I would not trust an API endpoint that doesn't guarantee you syntactically correct output.
+
+赞
+回复
+Joachim Nsofini, PhD
+
+Risk Modelling | Credit Strategy
+
+1 年
+
+So you are saying to have a high quality output  just get the raw output and then ask it to format it as a json?
+
+赞
+回复
+5 次回应
+Ion Moșnoi
+
+8+y in AI / ML | increase accuracy for genAI apps | fix AI agents | RAG retrieval | continuous chatbot learning | enterprise LLM | Python | Langchain | GPT4 | AI ChatBot | B2B Contractor | Freelancer | Consultant
+
+1 年
+
+how do you define the quality of the content?
+
+赞
+回复
+Peter Jeitschko
+
+Co-Founder of JetHire.ai | Helping Companies Find Top Ta

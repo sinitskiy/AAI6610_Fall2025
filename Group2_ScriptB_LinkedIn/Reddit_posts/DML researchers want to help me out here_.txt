@@ -1,0 +1,35 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1i90imp/dml_researchers_want_to_help_me_out_here/
+Title: DML researchers want to help me out here?
+
+Content:
+
+
+Hey guys, I’m a MS statistician by background who has been doing my masters thesis in DML for about 6 months now. 
+
+One of the things that I have a question about is, does the functional form of the propensity and outcome model really not matter that much? 
+
+My advisor isn’t trained in this either, but we have just been exploring by fitting different models to the propensity and outcome model. 
+
+What we have noticed is no matter you use xgboost, lasso, or random forests, the ATE estimate is damn close to the truth most of the time, and any bias is like not that much.
+
+So I hate to say that my work thus far feels anti-climactic, but it feels kinda weird to done all this work to then just realize, ah well it seems the type of ML model doesn’t really impact the results.
+
+In statistics I have been trained to just think about the functional form of the model and how it impacts predictive accuracy. 
+
+But what I’m finding is in the case of causality, none of that even matters.
+
+
+I guess I’m kinda wondering if I’m on the right track here 
+
+
+Edit: DML = double machine learning 
+
+Comments:
+- It all depends on the data generating process. Your low bias may just be overfitting.
+- [deleted]
+- If the relationship is linear it’s not going to matter if you use lasso, OLS, or xgboost.
+- Average of propensity score should be close to the true population average, but the differences between the models are the distributions of the propensity scores. RF is known to shy away from highs and lows.
+- Gotcha. Yeah I actually read this paper and it’s one my advisor and I looked at first. We are basically doing this same thing but for binary treatment. The work these guys did was continuous treatment. So we are simulating binary treatment. 
+
+I haven’t compared predictions, I can check, but I thought what I’m noticing is probably a result of the neyman orthogonality? Since the score is neyman orthogonal, regularization bias is removed from the procedure of residual on residual regression, and thus the different models themselves aren’t really impacting the results drastically

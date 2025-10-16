@@ -1,0 +1,98 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17bf3cx/programming_language_for_machine_learning_and/
+Title: Programming language for machine learning and data analysis – Our choice
+
+Content:
+&#x200B;
+
+## Python
+
+Undoubtedly, **the uncrowned king** of machine learning and data analysis, the ubiquitous language that data scientists turn to for a bit of number crunching, **is Python**. This is down to several reasons; the three most important among them are its **maturity**, the enormous **community**, and, last but not least, a **vast array of robust third-party libraries**. But even if Python is a magnanimous sovereign that many developers love, it doesn’t mean that there can’t be contenders occasionally.
+
+## Julia
+
+Fourteen years ago, in a bold attempt to combine all the good properties of well-established programming languages while getting rid of the less favorable ones, four developers came up with the idea of a new programming language that has a **friendly syntax**, offers **efficient mathematical computations** out of the box, at a **performance on par with compiled languages**. And thus, [**Julia**](https://julialang.org/) was born (here’s a manifesto explaining [**why**](https://julialang.org/blog/2012/02/why-we-created-julia/) in more detail). Its first version was launched a bit more than eleven years ago.
+
+## Our choice
+
+Many in-depth comparisons of Python and Julia on the web (such as [**this one**](https://richardpelgrim.medium.com/julia-vs-python-for-data-science-in-2022-1f5f6f38f3ac) or [**this**](https://www.turing.com/kb/julia-vs-python)) cover both the objective and subjective benefits and drawbacks of choosing one over the other. And given Julia’s growing popularity, we are sure more will follow. In the rest of this blog post, however, let’s explore why we picked Julia for our purposes. And that’s not to say that we don’t use Python for data science. On the contrary, we **often run analyses in both ecosystems simultaneously** to help each other out where one is lacking or to reduce the chances of mistakes by comparing their results.
+
+## The advantages of Julia
+
+So what makes Julia so compelling to us?
+
+## Language features
+
+Julia has:
+
+* a friendly, easy-to-read (and write) syntax;
+*  a flexible and expressive (part static, part dynamic) type system;
+*  powerful mathematical notations, such as built-in vector and matrix operations;
+*  efficient [**multiple dispatches**](https://en.wikipedia.org/wiki/Multiple_dispatch), a form of function polymorphism working with runtime types;
+*  convenient and reliable parallel computing facilities;
+*  meta-programming with macros and generated functions.
+
+## Fast code execution
+
+Julia compiles the source code to **native binary at runtime** via LLVM. This approach combines the flexibility of interpreters, such as Python, with the performance of compiled languages, like C++ or Rust. The drawback is that code loading and the first run takes longer; **the benefits start to shine when a piece of code is run multiple times**. This unique feature makes it an excellent tool for number crunching but less than ideal for scripting.
+
+## Built-in package management
+
+Julia has a pretty good (albeit not perfect) built-in package management tool, implemented as a base library; and a general registry of open-source packages. The offering of **stable and well-designed packages** is growing steadily along with the Julia community, especially in data science. Unit testing utilities are also part of the standard library.
+
+## Interactive tools
+
+Julia offers an **advanced** [**REPL**](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) with all the goodies of an interpreted language environment. These include:
+
+* code and variable inspection,
+*  code completion,
+*  an interactive debugger,
+*  benchmarking and profiling tools,
+*  and a built-in help system.
+
+**With third-party libraries, it can also be extended** with [**syntax highlighting**](https://github.com/KristofferC/OhMyREPL.jl), [**source code lookup**](https://github.com/tkf/InteractiveCodeSearch.jl) (even for base libraries), automatic [**code reload**](https://timholy.github.io/Revise.jl/stable/), and many more exciting, modern features.
+
+All these together make Julia an **ideal environment for rapid prototyping**.
+
+## From prototyping to production code
+
+Because of the high-level interactive tools and fast code execution, **the transition from a rapid prototype to production-ready code can be as continuous as you’d like**. More often than not, we find that most of the code that implements our business logic in the research code can also be used in the final product.
+
+Thanks to its friendly syntax and built-in package management, **the road to maintainable code is well paved**. Nothing replaces good API design, coding discipline, and rigorous testing, but Julia helps you to focus on these topics.
+
+As a consequence, a computation pieced together in the REPL can easily become a piece of prototyping code in a POC module; then later, after some refactoring and unit testing, turn into a chunk of core code in an internal library, and finally, following more cleanup, find itself in a production package.
+
+## The disadvantages of Julia
+
+That said, every benefit comes at a cost, and Julia is not free from issues. Here are a few stumbling blocks worthy of mentioning:
+
+* the very powerful tool of broadcasting and vectorization can be intimidating at first;
+* [**time to first plot**](https://discourse.julialang.org/t/time-to-first-plot-clarification/58534) can be surprising, sometimes inconveniently long, although considerable effort has been put into making it shorter;
+*  many packages never reach a stable state or just become unmaintained; others are poorly designed or written;
+* [**releasing a binary package**](https://github.com/JuliaLang/PackageCompiler.jl) can be challenging, and compilation time can be unexpectedly long, not to mention obfuscation, which can also be tricky.
+
+## Summary
+
+In conclusion, the choice between programming languages for data analysis is not always clear-cut. While Python has been the go-to language for many data scientists, Julia is rapidly gaining popularity for its unique set of features that make it an attractive option. In this blog post, we explored why we chose Julia over Python for our purposes, highlighting its language features, fast code execution, built-in package management, interactive tools, and ease of transitioning from prototyping to production code. However, we also acknowledged that Julia has challenges, including overcoming some learning curves and the occasional instability of packages. Ultimately, the choice between Julia and Python (or any other programming language) will depend on specific project requirements, personal preferences, and available resources.
+
+Still, in the past years, **Julia has proved to be our reliable and faithful companion**. It has evolved, matured, and improved significantly, and we would be less happy and less successful without it. So cheers, Julia; we are excited to see what your future brings!
+
+Comments:
+- Julia is the Windows phone of data science programming languages.
+- Let me guess: your company’s solutions are based in Julia?
+- I feel like Julia has been the “next big thing” for 10 years. I’ve been hearing about it growing in popularity since graduate school.
+- It’s not about the language, it’s about the ecosystem and here Python (and R) are ahead
+- Rust will become more widely used than Julia. Julia has never taken off and never will.
+- When you have super fast libraries in Python like Polars, anything Julia offers in addition to that is kind of niche. My bet is that Polars will take off massively
+- Data analysis? R. ML? Python.
+- This is largely a matter of preference
+- As you said maturity creates huge bias. Thousands of useful packages written in Python for Python. It is not impossible that Julia can’t come forward but there must be a thing that Julia can and Python can’t. I don’t see any - yet.
+- The languages that are going to be big will be python, mojo and Rust. Python because it’s east and the ecosystem is mature, mojo because it’s basically python and you can run python and python libraries in it but  it’s way faster, and Rust for low-level control. C-based libraries will also be mature as a more established alternative to Rust.
+- Nobody asked? And no Python is the king, the OG the mean green data machine unbeaten unbent unbowed now and forever. I could literally replace you and your entire family with a 50 line Pytorch model.
+- Anybody used Mojo?
+- Thank you. The most important feature is how well does it integrate with your 20 other tech stacks.
+- Gonna throw a monkey wrench in the conversation.  the real king of data analysis would be either whatever language is used by the most analysts or the language used to run the most analytics queries.  And the answer to both is not Python, not Julia, and not R.  hands down, universally, there are more queries run in one of the many flavors of SQL.  its not even close.  In fact, if you broke it down to which specific language is used the most SQL takes the top 3 spots.
+- Analysis != data collection
+- Never said analysis = data collection, but if you want to add data collection as a third category, guess what language wins again.  Yep, good old SQL.  used by more analysts, and in my experience, data scientists than all the other languages.  SQL reigns as the most useful language because it is the most commonly used.  and all for one simple reason, most business data is structured and stored in SQL databases.
+- In most cases one can simply download all the necessary tables and smash then in R or python, with either data.table or polars. If the data is so big that you can't, then sure, knowing how to qiery with sql in a sophisticated way is necessary
+- not trying to be pedantic but that approach really depends on the company.  Many larger companies specifically throw up road blocks to users downloading data, for any reason.  for example, in the large company where I currently work, it takes over a week to get approval to download a single production table.  but I can query it a thousand times a day using SQL and no one bats an eye.

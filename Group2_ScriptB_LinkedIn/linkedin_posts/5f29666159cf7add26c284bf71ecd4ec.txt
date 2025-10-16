@@ -1,0 +1,73 @@
+URL: https://www.linkedin.com/posts/nikbearbrown_contextrot-llm-ai-activity-7356124538155200512-GpjV
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Nik Bear Brown
+2 个月
+
+Context Rot Paper: Why This Research is Poorly Framed
+https://lnkd.in/ez22K-3Q
+
+n this video, I analyze the "Context Rot" paper and explain why sophisticated methodology can't fix fundamental framing problems. Instead of diving into charts and code, we step back to examine the importance of clear thinking in research design.
+
+🔗 Paper Details:
+Title: "Context Rot: How Increasing Input Tokens Impacts LLM Performance"
+URL: https://lnkd.in/exnUDKpX
+
+🎯 Key Points Covered:
+
+Why the research setup creates unfair expectations for LLMs
+How "distractors" are actually reasonable answers humans would struggle with
+The importance of problem framing before methodology
+Why clear thinking beats sophisticated analysis
+
+📚 Example from Paper:
+Question: "What was the best writing advice I got from my college classmate?"
+Needle: "I think the best writing tip I received from my college classmate was to write every week."
+Distractor: "The best writing tip I received from my college professor was to write everyday."
+
+🤔 Critical Question: If humans would find these answers similarly plausible, why expect LLMs to magically separate them?
+No specific prompts were provided in the research for this example.
+
+🎵 Music Links:
+Humanitarians AI:
+Apple Music: https://lnkd.in/eWWFhSde
+Spotify: https://lnkd.in/eTSZDAur
+
+Nik Bear Brown:
+Apple Music: https://lnkd.in/eHVZ3ur2
+Spotify: https://lnkd.in/eDebgCGT
+
+🌐 Connect:
+Humanitarians AI:
+Website: https://lnkd.in/eWVDuGKm
+YouTube: https://lnkd.in/e_matDHK
+LinkedIn: https://lnkd.in/eTW6MQH8
+
+Nik Bear Brown:
+Website: https://lnkd.in/eHB3u-M
+YouTube: https://lnkd.in/eMR5SUDc
+LinkedIn: https://lnkd.in/g8xMjYY
+
+📖 Paper Source: https://lnkd.in/exnUDKpX
+
+#ContextRot #LLM #AI #Research #CriticalThinking #MachineLearning #ArtificialIntelligence #ResearchMethods #LongContext #HumanitariansAI #NikBearBrown #AIResearch #TechCritique #ProblemFraming #AILimitations
+
+…展开
+7
+赞
+评论
+分享
+Transcript
+Transcript
+OK,

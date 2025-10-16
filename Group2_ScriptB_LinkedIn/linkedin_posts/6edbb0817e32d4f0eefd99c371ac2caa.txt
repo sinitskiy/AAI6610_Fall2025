@@ -1,0 +1,24 @@
+URL: https://www.linkedin.com/posts/ying-li-15524119_assessing-uncertainty-in-machine-learning-activity-7344716582201212929-Jn0O
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ying Li的动态
+Ying Li
+
+Associate Professor at UW-Madison
+
+3 个月
+
+How can we trust the machine learning (ML) model predictions? To answer this question, we did a systematic uncertainty quantification (UQ) study on the polymer property prediction through various ML and UQ techniques. This work has been published in the Journal of Chemical Information and Modeling, titled "Assessing Uncertainty in Machine Learning for Polymer Property Prediction: A Benchmark Study". Kudos to my PhD students, Hao Tang and Tianle Yue, for leading this interesting study.
+
+Machine learning (ML) has emerged as a transformative tool in material science, enabling accelerated discovery and design of novel molecules while reducing experimental costs. Uncertainty quantification (UQ) is crucial for enhancing the reliability of ML predictions, particularly in high-stakes applications, such as functional polymer discovery. In this study, we present a comprehensive evaluation of nine UQ methods in ML─ensemble, Gaussian Process Regression (GPR), Monte Carlo Dropout (MCD), mean-variance estimation (MVE), Bayesian Neural Network based on Variational Inference (BNN-VI) and Markov Chain Monte Carlo (BNN-MCMC), evidential deep learning (EDL), quantile regression (QR), natural gradient boosting (NGBoost)─for predicting key polymer properties, including glass transition temperature (Tg), band gap (Eg), melting temperature (Tm) and decomposition temperature (Td). The models are assessed using three independent metrics, including prediction accuracy (R2), Spearman’s rank correlation coefficient and calibration area, offering a robust framework for evaluating both mean predictions and uncertainty estimates. Our analysis spans data sets of four properties, out-of-distribution (OOD) experimental and molecular dynamics (MD)-derived data, high-Tg polymers and diverse polymer types, providing a holistic perspective on model performance. Our findings reveal that optimal UQ met

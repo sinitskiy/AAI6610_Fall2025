@@ -1,0 +1,44 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1hcgzr6/what_is_roboflow_and_how_does_it_compare_to/
+Title: What is Roboflow, and How Does It Compare to Python/Jupyter Notebook for Video Analysis?
+
+Content:
+Hi everyone,
+
+I’ve recently come across [Roboflow](https://roboflow.com/) as a tool for video analysis, particularly in the context of machine learning and computer vision. From what I understand, it’s a platform that helps with dataset preparation, annotation, and even model training. However, I’m curious about how it compares to building a pipeline using Python and Jupyter Notebook.
+
+Here are some specific questions I’d love to hear your thoughts on:
+
+1. **Roboflow Use Cases:** How do you personally use Roboflow? Is it primarily for prototyping, or do you also use it for production-level tasks?
+2. **Python/Jupyter Notebook Alternatives:** For those who prefer Python and Jupyter Notebook, how do you handle video annotation, training, and analysis? Are there open-source tools you’d recommend for similar tasks (e.g., OpenCV, YOLO, TensorFlow)?
+3. **Integration:** Can Roboflow easily integrate with custom Python scripts or workflows, or does it tend to work best as a standalone solution?
+4. **Limitations:** Are there any limitations or downsides you’ve experienced with Roboflow, especially compared to building your own pipeline in Python?
+
+I’m trying to figure out whether Roboflow would complement or replace parts of my workflow, particularly for tasks like player tracking and statistical analysis in sports. Any insights, tips, or alternative tools you’d recommend are greatly appreciated!
+
+Thanks in advance for your help! 🙌
+
+Comments:
+- 1. I use the Roboflow web interface to label image data for deep learning model training. I also use some of the Roboflow package code to integrate with Ultralytics YOLO model training and inference pipelines. Roboflow Universe has some niche image datasets which can help with training specialised object detection type models.
+2. Labelling datasets with the Roboflow web interface is more straightforward than using other tools in my experience, which have now become a lot more degraded and in many cases are no longer easily available/maintained for continued use due. The Roboflow Devs have come up with creative usages of existing tools to enhance the labelling experience, like using prompt-guided labelling to reduce labelling effort. While not necessarily open-source, I've resorted to using the MATLAB image labelling apps for data labelling in certain instances where I felt I could not use Roboflow, as the data hosted on the free tier of Roboflow is made public.
+3. Roboflow's API makes it easy to integrate with other Python packages so it's not a blocker IMO.
+4. So far the free tier has worked out for trialling some training workflows but it's quite limiting to use. Also the model labelling assist betas built on prompt-guided language image ontologies are not robust enough for production use IMO. For commercial solution development I wouldn't be too keen on using the product due to the high operational cost.
+- It’s really hard to compare. 
+
+Roboflow is like going to a restaurant and ordering a meal. You pick from a menu and can change small details (no cheese, salad instead of soup) but that’s about it. You don’t have to worry at about buying ingredients, cooking, cleanup, insurance or anything else. It also costs 4x as much as you’d spend to eat at home. 
+
+Versus cooking at home where you have many more decisions and need to know how to cook and do everything else. If you have a big family it’s probably way cheaper than eating out. 
+
+FWIW I like using platforms like Roboflow for quick prototyping, but then I like to develop my own solution afterwards.
+- If you are interested in open source alternatives, Tator was built specifically for video analytics. It has a python API so you can dump object detection algorithm outputs to it. We have used it for video specific workflows like multi-obect tracking and activity recognition. I believe roboflow still forces frame extraction for labeling, however Tator uses video transcoding to achieve frame accuracy while still allowing playback of the full motion video. 
+
+https://tator.io
+- It’s a platform that helps you with a bunch of “bookkeeping” details, and includes a bunch of low/no code features. For example it’ll automatically keep track of data and model versions, and can train and run popular models with a few clicks. 
+
+
+
+Looks really nice but I sadly have not been able to convince the boss to pay for it, so I’m mainly going by their marketing/docs/demos. I’ve spend countless hours building my own platform instead which is super crude in comparison and definitely cost the business WAY more money (my salary, and lost opportunity cost when I could have been doing actual CV work) than if we just signed up for roboflow. But at least now I know “full stack” development lol
+- Thanks!  
+Does Roboflow replace other programming plattforms, such as Spyder or Jupyter Notebook? Or do you combine them?
+- Thanks! Great references for how its used. What packages do you use when "eating home"?
+- For access to Roboflow in a Python environment, you can install the Roboflow package using Pypi (i.e. pip install roboflow). In fact, you can use the web portal to create and label your vision dataset then download it onto your system using the API, so it's a fairly straightforward interaction.

@@ -1,0 +1,56 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/yy0hd2/how_do_you_manage_results_plots_etc/
+Title: How do you manage results, plots, etc.?
+
+Content:
+Hi r/bioinformatics!
+
+I'm a data scientist interested in learning more about the bioinformatics domain and want some feedback. In the Data Science / Machine Learning world, we have tools called "experiment trackers," which we use to store model metrics (e.g., linear regression R-squared) and plots (e.g., residuals plot). These tools (example: [MLflow](https://www.mlflow.org/docs/latest/tutorials-and-examples/tutorial.html)) allow us to go back to a previous model, review results, and compare multiple models.
+
+Is there something equivalent in the bioinformatics world? If there is no equivalent, is this something you would use?
+
+I've been talking with some bioinformaticians recently. I was surprised that they didn't know about these tools since the workflow of a data scientist and a bioinformatician share many similarities.
+
+Comments:
+- This sounds like overkill for 99% of bioinformatics workflows. I have seen similar setups at HPC centers though, built for specific research groups
+- I would start by saying "bioinformatics world" is a very broad term. Most of it does not involve managing multiple models, which is what MLflow seems to be for. Most work is cleaning the data and interpreting the results, which is highly project-specific. Something like [workflowr](https://workflowr.github.io/workflowr/) is generally more appropriate, but even that is an overkill for most people.
+- Less about management and more about reproducibility. 
+
+(1) in my python scripts, I try to print the command line prefixed with a ‘#’ sign. ‘R’ ignores those lines, and when I read in tab delimited files, I print them back out and ignore them.  This gives me a history of the scripts/commands that produced the data in the file.
+
+(2) at the bottom of my plots, I display the command line used to produce the plot.  (With an option not to do this for final publication plots)
+- I did a six-month data science bootcamp last year, and after looking at that MLflow tutorial, I forgot how much effort can go into getting a data set to produce a useful model. That is, data science/machine learning tools and approaches have all kinds of input settings and values to tinker with in order to get a "good" model out of a certain data set. It's not a bad thing - it's actually a fun thing - but sometimes I wonder how much effort can go into pulling a signal from the noise when there is none.
+
+I can't speak for everyone, but in practice for me bioinformatics has a different problem to face. There are already established algorithms out there for finding differential expression, survival, etc, and while these functions have their own collection of arguments to tweak the input, it's typically just the default arguments that are used (or some internally established function). The challenge, however, is applying those algorithms across thousands of genes under dozens of different conditions, and trying to keep *those* results organized.  
+
+And for me those are typically organized in R markdown files that have tables of results and the relevant plots of only significant results. Because at the end of the day I need to be able to share results with folks that may not know how to code. 
+
+If there's something specific to bioinformatics for this in either R or Python I would love to hear about it though!
+- Snakemake and Nextflow are commonly used for reproducing bioinformatics pipelines. I'm trying to incorporate these tools into my workflow right now myself.
+- R markdown + GitHub and notes on notion does the trick for me until it gets really busy and stop tracking 😬
+- Could you please share what tools you use in DS broadly? They sound more sophisticated than what I currently do
+- I have my Jupyter notebooks organized pretty well
+- Bioinf has a lot of biologists who have transitioned into more technical/coding focused roles, so you'll find there's not a lot of engineering workflow standards out there compared to DS or SWE. As others have said, snakemake is the most common, but thats just a pipeline managment tool, it doesn't manage data or outputs. I personally use [DVC](https://dvc.org/) for data and pipeline management (and include jupyter and papermill to make it all work), although I haven't yet gotten onboard with their experiments feature (which is what would manage different parameters and figures/results beyond versioning). 
+
+I looked into MLflow and some other options when I was getting started (I do tool development and bioinf analysis), but I wanted data versioning to ensure experiment reproducibility (kind of a critcal part of science IMO), and many of the other solutions like Airflow (common in DS industry) seemed to be overkill for smaller bioinfo projects. DVC meets the requirements and I like it in concept, although in practice there have been many updates that have been a bit of a pain to keep up with/integrate. 
+
+I've got a bioinfo/ds project template on github that roles together git, conda, DVC, jupyter and papermill to ensure experiment reproducibility, and is setup as a template that can be deployed with cookiecutter - [check it out if you like](https://github.com/michael-ford/data-science-development-project-template). 
+
+I'm probably going to ditch conda in favour of docker, may end up being easier in the long run. Conda is a pain a lot of the time (mamba is slightly better).
+- I got my masters in stats and wish I had known about experiment tracking back then. I'm not surprised that they're not tracking, I'd assume that biostats and stats programs still don't teach it. I literally copied and pasted my code a bunch of times so that I could manage my models and not lose stuff. I bet they'll get there eventually, but I expect them to lag far behind ML/DS degrees.
+
+I think the need isn't as big as it is in ML/DL/AI, but would still be super useful for making work reproducible (i.e. science).
+- What's your workflow? How do you manage the plots/experiments you run?
+- I didn't know about workflowr. Thanks for sharing it! I talked to a bioinformatician who told me about dt ([https://rstudio.github.io/DT/](https://rstudio.github.io/DT/)) - seems like it serves similar goals as workflowr. Have you used it?
+- how do you ensure you can reproduce the scripts? Do you keep the logs, input data, etc?
+- Thanks a lot! This is very helpful!
+
+It's hard for me to understand a bioinformatician's workflow, so I appreciate the explanation.  If I understood correctly, the bioinformatics workflow is more about running parallel experiments and, then organizing those outputs, right? What would you say is the hardest part of keeping results organized?
+
+I'm actually building a [Python experiment tracker](https://ploomber.io/blog/experiment-tracking/) and want to see if there's anything I can add to benefit the bioinformatics community, as it currently caters to the Data Science and Machine Learning ones.
+- Do they allow you to manage plots/reports? I'm unfamiliar with them but I thought they were more for running the scripts, and they don't manage the plots or any other generated files.
+- So sounds like tracking might not be critical since you can stop it at some point. Is this assumption correct? Sounds like you're happy with your solution.
+- My bad. Forgot to add the link. I modified the post, but here it is. MLflow is one of the most popular ones: https://www.mlflow.org/docs/latest/tutorials-and-examples/tutorial.html
+- How do you organize your notebooks and input data?
+- thanks a lot for your thoughtful response! Any reason why you haven't started tracking metrics with DVC? Is it too hard to use or perhaps not critical in your workflow?
+- Thanks for your answer! Are you currently using any experiment tracker?

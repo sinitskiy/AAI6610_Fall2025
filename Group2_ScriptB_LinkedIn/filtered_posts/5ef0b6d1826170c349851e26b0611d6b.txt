@@ -1,0 +1,88 @@
+URL: https://www.linkedin.com/posts/scikit-learn_keynote-olivier-grisel-handling-predictive-activity-7267338375664132096-zlPe
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+scikit-learn的动态
+scikit-learn
+
+121,781 位关注者
+
+10 个月
+
+PyData Paris 2024 45-minute Keynote by Olivier Grisel:
+🟠 Handling predictive uncertainty in machine learning 
+
+Machine Learning practitioners build predictive models from "noisy" data resulting in uncertain predictions. But what does "noise" mean in a machine learning context?
+
+#python #machinelearning #datascience #opensource 
+
+https://lnkd.in/ez2hn8dp
+
+…展开
+KEYNOTE: Olivier Grisel - Handling predictive uncertainty in Machine Learning | PyData Paris 2024
+https://www.youtube.com/
+104
+5 条评论
+赞
+评论
+分享
+Frits Hermans
+
+Data Scientist at ING
+
+10 个月
+
+Very interesting presentation! Nice how you show that the well tuned pipeline containing a LogisticRegression model results in well calibrated model predictions. I actually don't think this would work with all classification algorithms. For example, a RandomForestClassifier will almost never result in well calibrated probabilities, even after applying thourough hyperparameter tuning. The algorithm is unlikely to produce probabilities close to 0 and 1, because for these scores all trees in the ensemble need to predict 0 or 1 in order for the mean to be 0 or 1.
+
+赞
+回复
+Olivier Grisel
+
+Machine Learning Engineer at :probabl.
+
+10 个月
+
+BTW, we will explore those ideas and related code in more details at the Masterclass event organized :probabl.'s Paris offices on December, 11:
+
+https://www.linkedin.com/posts/probabl_datascience-machinelearningmasterclass-scikitlearn-ugcPost-7265442774743674880-2MOB?utm_source=share&utm_medium=member_desktop
+
+赞
+回复
+2 次回应
+Rémy Wehrung
+
+10 个月
+
+J’adore
+
+赞
+回复
+1 次回应
+Anderson Chaves
+
+Lead Data Scientist (Light Management & Coatings) at EssilorLuxottica
+
+10 个月
+
+I attended this one. I believe NannyML people might be interested by the topic.
+
+赞
+回复
+1 次回应
+Bagus Aji
+
+Data Scientist + Ai enthusiast | Industrial Engineer | Driving Cost Optimization & Sales Growth through Strategic Thinking & Advanced Analytics
+
+10 个月
+
+Highly re

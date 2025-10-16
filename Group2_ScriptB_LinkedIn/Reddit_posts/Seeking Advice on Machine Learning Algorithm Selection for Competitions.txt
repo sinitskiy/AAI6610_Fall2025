@@ -1,0 +1,19 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17a6t46/seeking_advice_on_machine_learning_algorithm/
+Title: Seeking Advice on Machine Learning Algorithm Selection for Competitions
+
+Content:
+ 
+
+Hello, fellow data science enthusiasts! I'm participating in some machine learning competitions and I'm looking for insights on the strengths and weaknesses of various ML algorithms, along with their ideal use cases. This will help me choose the most suitable model for my competition tasks. Your expert opinions would be highly valuable!
+
+1. Could you please share your thoughts on the strengths and weaknesses of different ML algorithms, considering factors like accuracy, interpretability, computational requirements, etc.?
+2. What are some specific use cases or scenarios where certain ML algorithms excel? For example, which algorithms are best for image classification, natural language processing, or time series forecasting?
+3. Are there any resources, articles, or books that you would recommend for a deeper understanding of ML algorithm selection?
+
+Your insights will be greatly appreciated and will aid me in making more informed decisions for my competition endeavors. Thanks in advance!"
+
+Comments:
+- It's a very wide topic and can't be answered on Reddit tbh, you need experience to decide which set of algorithms would fit your problem the most and then fit and predict and compare the results.
+Try to read source code on kaggle to take a general idea about that, for instance, classifying Tweets is an NLP problem which usually would be solved in RNN or BERT.. etc.
+Regarding competitions with usual dataset people always start with boosting AFAIK.

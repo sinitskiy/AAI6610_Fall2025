@@ -1,0 +1,81 @@
+URL: https://www.linkedin.com/posts/burgard_icra2023-activity-7021868513292115968-vRow?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Wolfram Burgard的动态
+Wolfram Burgard
+
+Professor for Robotics and Artificial Intelligence at the University of Technology Nuremberg
+
+2 年
+
+Another cool work we will present at #ICRA2023: This one is about a novel approach to LiDAR panoptic segmentation and provides and utilizes uncertainty estimates to improve robustness. Please come to London to check it out. 
+
+Kshitij Sirohi
+
+Computer Vision and Deep Learning Scientist | Autonomous driving | Uncertainty estimation
+
+2 年  已编辑
+
+I am thrilled to share that our paper "Uncertainty-aware LiDAR Panoptic Segmentation" got accepted at #ICRA2023 London.
+I greatly thank the editors, reviewers, and the wonderful co-authors, Sajad Marvi, Daniel Buescher, and Wolfram Burgard, for their constant support and collaboration to make it happen.
+
+Arxiv: https://lnkd.in/dB_d4RbJ
+Code: https://lnkd.in/e7zz-sJC
+
+#autonomousvehicles #lidar #autonomousdriving #robotics #uncertaintyestimation #computervision #artificialintelligence #segmentation #objectdetection  
+
+125
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+12,208 位关注者
+
+89 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

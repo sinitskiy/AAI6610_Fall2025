@@ -1,0 +1,64 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/yac7by/bioinformatics_master_electives_choosing/
+Title: bioinformatics master electives choosing
+
+Content:
+I got accepted into the master's program at Georgetown University. I have a bachelor's degree in dentistry. I am really confused about picking the electives I have to pick 13 credit hours, but I have no idea what to drop and what is important in the job market. These are the courses. Please, help me to pick.
+
+**INF 522: Machine Learning for Bioinformatics**  
+3 credits 
+
+**BINF 599: Next Generation Sequencing Data Analysis**  
+2 credits   
+**BINF 620: Bioinformatics Algorithms**  
+1 or 2 credits  
+**BINF 697: Databases for Bioinformatics**  
+3 credits
+
+**PBIO 504: Introductory Biostatistics**  
+3 credits 
+
+**SYSM 594: Translational Bioinformatics**  
+2 credits 
+
+**SYSM 596: Clinical Metabolomics**  
+2 credits
+
+Comments:
+- Top picks for me:
+
+**INF 522: Machine Learning for Bioinformatics** (So hot right now)  
+**BINF 599: Next Generation Sequencing Data Analysis** (depending on your industry these will likely be useful, i will be good to get an understanding of running RNA/scRNA/ChIP seq pipelines and more)  
+**PBIO 504: Introductory Biostatistics** (A solid understanding of many of the statistical tests you will do is a plus. I had a few interviews ask me more statistical test scenario questions)
+
+I would pick these over the others and it would give 13 credits:
+
+BINF 620: Bioinformatics Algorithms (If its regarding designing algorithms or understanding their design that could be really useful)  
+BINF 697: Databases for Bioinformatics (Useful depending on the industry)
+
+If the translational course is similar to my translational biotech course, it just describe the different career paths and how bioinformatics can be translated to the different careers. Clinical metabolomics seems like it would be more, if it sounds interesting to you then go for it, but not something that stands out to me.
+- Clinical metabolomics and the databases for bioinformatics seem to be the more specific niche classes unless you are really interested in those topics.  Machine learning next generation sequencing and bioinformatics algorithms and intro biostatistics would be the must haves.
+- It would be best if you could describe your interest in the field and background.  The idea is to get laid doing something you like, so would you be excited focusing on some of these more than others?  Have you read over the descriptions and prerequisites?
+- I’m currently in the bioinformatics program at Georgetown, but haven’t taken any of these courses yet. Feel free to PM me if you have any specific questions, I’ll do my best to help
+- NGS sequencing data analysis will probably be one of the more practical when it comes to getting a vanilla bioinformatics job.
+
+The remaining courses depend on how you want to specialize, if you want to do into a more data science route then the ML learning and databases sound nice.
+
+If you want a more CS heavy experience the algorithms is right up your alley
+
+If you want more exposure to medicine the transnational and clinical metabolomics 
+
+Biostatistics, would need to read the syllabus because is it more stats working with large data sets or is it more focused with a biometrics. If the prior then maybe lump with the data science route.
+
+My own opinion is that the data science route is robust since you can try to transition out of bioinformatics into a more standard data science role if you don't like the day-to-day typical work we usually do.
+- [deleted]
+- So my background is I used to work as a dentist, and I have no research work or programming experience. my master's without a thesis. I am open to all the suggestions but I don't want to do a Ph.D. after. My main goal is to pick electives that help me to land a job easily.
+- Thank you so much, I will pm you
+- Hey, Can I also DM you regarding the program?
+- hey can I dm you too?
+- Hey! Can I dm you regarding the same?
+- Hello,
+But is Georgetown University good for pursuing bioinformatics in terms of course and job ??
+- Can I dm you regarding masters in bioinformatics at Georgetown?
+- Sure, go for it
+- Sure, go for it

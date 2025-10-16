@@ -1,0 +1,68 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17aba8j/feedback_on_my_mvp_project_prerecorded/
+Title: Feedback on my MVP project - Pre-Recorded Standardized Video Interviews Job Site for Data Professionals
+
+Content:
+ 
+
+Hey!
+
+**Startup:**
+
+\- Apply Script dot com "Connect business and data professionals via pre-recorded standardized video interviews."
+
+**More details:**
+
+**Problems with Traditional Hiring**
+
+\- Outdated: The current method of conducting interviews has become overly complex and outdated.
+
+\- Time-Wasting: The process involves too many appointments, meetings, and stages, leading to communication errors.
+
+\- Expensive: The man-hours invested by HR and engineering teams are costly.
+
+\- Constraining: Interviews are fixed to specific times and locations.
+
+\- Cumbersome: The experience is challenging for both businesses and professionals.
+
+**Our Solution**
+
+\+ Talent Identification: We find top talent that matches your job post.
+
+\+ Standardized Interviews: Professionals standardized pre-record their interviews (apples to apples comparison), covering areas such as CV, personality questions, project presentations, theory questions, coding tests, and hobbies.
+
+\+ Efficiency: Businesses receive a pre-filtered batch of top applicants with their interviews ready for viewing.
+
+\+ Time-Saving: Professionals can apply and businesses can employ candidates more quickly than with traditional methods.
+
+\+ Reduced Workload: Minimize time spent reviewing applications; all interviews are pre-recorded.
+
+\+ Flexibility: Managers can watch, speed up, or rewind interviews at their convenience.
+
+\+ Transparency: Applicants receive immediate feedback on their applications to avoid being "ghosted."
+
+**Life cycle stage:**
+
+\- Validation: Currently looking to run our ***#1st pilot B2B*** with our first client.
+
+**My role:**
+
+\- Founder
+
+**Goals for this month:**
+
+\- Secure my first client for the pilot.
+
+\- Obtain feedback from both the employee and business sides.
+
+\- Optimize the product based on the feedback received.
+
+**How can I** **help?**
+
+\- I am searching for a business, that wants to streamline and accelerate the hiring of top data professionals (ex.: Data Scientist, Machine Learning Engineer, Data Engineer, Data Analyst) in the USA.
+
+\- in the USA.
+
+Thx for the feedback ;)
+
+Comments:

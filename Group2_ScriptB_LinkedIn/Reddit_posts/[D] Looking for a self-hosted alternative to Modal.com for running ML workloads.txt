@@ -1,0 +1,40 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n0q4d9/d_looking_for_a_selfhosted_alternative_to/
+Title: [D] Looking for a self-hosted alternative to Modal.com for running ML workloads
+
+Content:
+Hey folks 
+
+
+
+I've been using [Modal.com](http://Modal.com) (I am not affiliated) for a while to run machine learning workloads in the cloud, and I really like its simplicity, container-based execution, and ability to scale on demand. However, I'm starting to explore more self-hosted options due to cost reasons and to gain more control over the infrastructure while building apps.
+
+
+
+Does anyone know of good self-hosted alternatives that offer similar functionality? Ideally, something that:
+
+
+
+\- Supports containerized jobs (Docker or similar)
+
+\- Can run Python/ML workloads easily
+
+\- Has a nice API  for launching jobs (this is important) 
+
+\- Offers some kind of job orchestration or scheduling
+
+\- Bonus: GPU support and autoscaling would be amazing
+
+
+
+
+
+Thanks in advance 
+
+
+
+Comments:
+- Kubernetes on premises with plugins like OpenFaaS or Apache Airflow can provide similar scalability and containerization, with Python and ML support.
+- [Beam](https://beam.cloud) is the top open-source alternative to Modal (I'm the founder). You can self-host or connect your own hardware. If you're only looking for orchestration of GPUs \[and open to writing a bit of YAML\], I'd look into [Skypilot](https://skypilot.co/).
+- Thanks, I will take a look and appreciate it, but not a huge fan of running my own K8S cluster for prod (it's fun for non prod tho, but too much work)
+- Thanks, I will take a look and appreciate it!

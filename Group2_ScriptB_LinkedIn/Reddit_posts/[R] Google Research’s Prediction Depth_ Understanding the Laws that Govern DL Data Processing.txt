@@ -1,0 +1,19 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/o7qcsl/r_google_researchs_prediction_depth_understanding/
+Title: [R] Google Research’s Prediction Depth: Understanding the Laws that Govern DL Data Processing
+
+Content:
+A team from Google Research proposes prediction depth, a new measure of example difficulty determined from hidden embeddings. Their study reveals the surprising fact that the prediction depth of a given input has strong connections to a model’s uncertainty, confidence, accuracy and speed of learning for that data point. 
+
+Here is a quick read: [Google Research’s Prediction Depth: Understanding the Laws that Govern DL Data Processing.](https://syncedreview.com/2021/06/25/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-49/)
+
+The paper *Deep Learning Through the Lens of Example Difficulty* is on [arXiv](https://arxiv.org/abs/2106.09647).
+
+Comments:
+- This is valuable and interesting research.
+
+There are a couple of questions that I wish the authors addressed, though, that leave this paper a bit less than comprehensive.
+
+First, how does data distribution affect these metrics. As the authors allude, the distribution of samples within a class and between classes can have a significant impact on the difficulty of a particular sample. The primary mode of a class, by nature of having far more samples, tends to dominate gradient descent based training. So to what extent are "easy" samples easy simply because they are part of the primary subclass (and memorized by the network as the canonical example of the class) as opposed to being structurally distinct of other classes. It would be interesting to see the training set resampled (or weighted) to better balance between common and uncommon subclasses of data and what effect this has on their metrics. I expect there would be some interesting shifts of samples between their difficulty categories.
+
+Second, they exclusively consider supervised training. It would be interesting to compare against a network trained through unsupervised techniques (contrastive learning or similar) to understand the influence of labels on a trained network.

@@ -1,0 +1,97 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/moaujx/all_the_wrong_things_with_predicting_purchase/
+Title: All the wrong things with predicting purchase, churn and similar targets in digital marketing
+
+Content:
+Recently, I have been reading a lot about common prediction tasks in digital marketing like churn prediction and predicting the probability of purchase on a user level.   
+From the articles and books I have read so far and my own understanding as well, there are several things that make such tasks more complicated in different ways.   
+
+
+* It's pretty hard to commit the so-called Type III error when the model you build in the end doesn't answer the real business question. This can be illustrated by the now classical case of churn prediction. Even though it's not too difficult to build a binary classifier, it's not clear at all what the end users can do with those predictions. In general, it's more useful to do uplift modeling, but this creates another level of complexity because you need to conduct an experiment first to even collect the necessary data for uplift modeling.   
+
+* Trying to interpret the results to stakeholders is another challenging part of the process. One of the issues is the falsely obvious belief that correlation implies causation, and the graphs you get from \`plot\_importance\`  and SHAP values do not really answer the questions like which feature defines users' behavior.  In addition, the traditional metrics used in classification are not really useful. It's often stated that there is this well-known trade-off between precision and recall in most real situations especially when the distribution of classes is heavily skewed. What I personally encounter now is that even the business guys do not have a very clear definition of success. They just want to get "some insights" and "have a model". I usually try to put it this way: we have a value of AUC score that equals X, which is overall a measure of the classifier's ranking ability. On top of that, here is the cumulative gain/lift curve which you can use to understand how useful the model can be as opposed to a random classifier. Honestly speaking, I realize that as a data scientist I have to answer all the questions myself and suggest something meaningful, but sometimes it feels like the end-users of the models have no idea about what they really want to have in the end, which makes everything super complicated.   
+
+* To be more specific about the target misconception, I just recently found this post by Frank Harrell that emphasizes the idea that in most real-world cases what you really need to output is probabilities. This is more informative in general than just binary 0/1 answers that only appear when you make the threshold-related decision. The same applies to using improper scoring rules that are functions of the selected thresholds. It's not often taught in machine learning courses, but using accuracy as an evaluation metric might make sense for the Iris dataset, but much less frequently in real tasks.   
+
+* Currently, I am working on a task where I am expected to predict the probability of a subscription purchase. The problem can be easily boiled down to the standard binary classification problem with all the issues mentioned above. There is some level of uncertainty when it comes to how the model will be used by the marketing team. My simplistic and naive idea is that the pragmatic way around this problem is to get a decently calibrated classifier that outputs probabilities (technically speaking, not yet probabilities but after some calibration, this is hopefully something similar). The scores are sorted and top X% users (based on the "best" value according to the cumulative gains plot) are selected for some form of communication. I realize that taking any percentage of users implicitly means that we are selecting a threshold, but the focus is different and we do not even need to report the shamefully low values of precision. Algorithm-wise, this is just plain old gradient boosting in XGBoost/LightGBM/Catboost.   
+
+
+I have a feeling that a lot of us have encountered similar tasks in this field and I would highly appreciate any advice and discussion. If you have any great resources that discuss such tasks and approaches in detail, please mention them as well.   
+Here's one freely available book I like very much:  
+[https://algorithmic-marketing.online/](https://algorithmic-marketing.online/)
+
+Comments:
+- Perhaps this will be an unpopular opinion, but I think part of the problem here is that you went straight for a ML approach. 
+In my experience, when the business comes to you with a request like the ones you describe, it’s not just a model that they want, it’s insights into causal factors. And in fact the final model might be less important of those things.
+
+From my experience, it is almost always better to start building a heuristic model based on observations you make in the data. E.g. Can you identify some pain points where users are churning? A point in time, an action, a notification, a failed purchase, a crash. Can you build some sort of model using these observations? Is that model any good? What is the model still missing? 
+
+This process of “handcrafting” a model often generates exactly the insights the business guys are looking for _and_ a decent model. Plus once you have gone deep on the data this way, building the ML model is really quick and easy.
+- Alot of what you say is true. I have generally found the most difficult part about building models is to figure out how to use the output effectively.  
+
+This is generally not something that data science courses focus on. Modelling is not too difficult. Using your models to produce value is.
+What I tend to use in my role is use the predicted probabilities and to try and identify an appropriate threshold for targeting users. For instance in something like predicting conversion we would frame the problem as trying to target the users who could be persuaded to convert rather than target the users most likely to convert.
+
+The logic is that users who are very likely to pay will do so organically and targeting them with something like a sale would actually lose money since we believe they would be willing to pay anyway. When framing the problem this way there is a clear tradeoff from targeting users wirh a higher predicted probability. This approach is kind of similar to uplift modelling and naturally introduces a way for your stakeholders to pick a threshold. i.e what revenue cannibalisation tradeoff are they happy with. It is similar to uplift modelling but probably not as effective.
+
+Also on model metrics, I have never presented model metrics to stakeholders because they do not understand or care what precision and recall are. They do care about revenue though. Ultimately the true test of a model is whether using it to target users in an AB test provides uplift.
+- > It's not often taught in machine learning courses, but using accuracy as an evaluation metric might make sense for the Iris dataset, but much less frequently in real tasks.
+
+I’m concerned about what kind of courses you’ve seen. This point has been heavily hammered on in every course where I’ve seen classification discussed. 
+
+> The scores are sorted and top X% users (based on the "best" value according to the cumulative gains plot) are selected for some form of communication. I realize that **taking any percentage of users implicitly means that we are selecting a threshold**
+
+This seems backwards to me. The marketing team should have a budget amount they want to spend for targeting a certain number of customers. If they have a cost per email, then the number of selected people will just be budget/cost per email. That’s the number of people you extract, and you use the model to choose the people who are most likely to respond. So you’re not choosing a threshold, the marketing budget is.
+
+Another approach would be to decile those customers by likelihood and then target the top n deciles. 
+
+Both of these approaches will have a tangible way to measure the impact because the baseline would be randomly selecting X customers and getting your average conversion rate from those X customers, and you can build a lift chart from there like the ones seen [here](http://www2.cs.uregina.ca/~dbd/cs831/notes/lift_chart/lift_chart.html).
+- I work on these topics and what I find that stakeholders find very useful is conducting some SHAP analysis to the model and tell them which features are impacting more the churn/purchase/key metric. 
+
+Actually using the predictions to make a marketing isn’t as easy, but definitely doable.
+- I like assigning probabilities to churn because then you can define various segments based on them (low-risk, medium, high, etc.). But there has to be a program or intervention in order to be proactive around retention. This is where we can get into experimental design and doing causal analysis. To that end, predictive models are nice for defining a population of interest.
+- As noted in some of the comments, churn prediction is useless unless tied to marketing actions.  Knowledge absent action is interesting but has no impact. 
+
+Predicting churn is easy but not very helpful.  What you need to do is predict churn that can be reduced, e.g. who is likely to churn but if you make an intervention is less likely to churn.  Some people will churn regardless (or have already done so).  Leave them alone, any efforts are wasted.  Conversely, some people are loyal and won't churn, they are happy with your service.  Leave them alone.  For those in between you need to know what actions marketing is prepared to take.  Your task then is to predict who will respond to which action.  Then marketing can target the right offer to the group where it can have the most impact.
+- When you apply DS to a social science field like marketing, you have to remember that he numbers are usually only a inspiration point or a partial confirmation of your recommendations.
+
+You spoke so much about technical but not at all about your qualitative understanding of the market, your other sources of research. Did you considered competitive efforts as well when recording and analyzing the data?
+
+You are spot on about "what are you going to do with the result" that is very key question you must always ask before starting.
+
+I would strongly recommend reading this first:
+https://www.amazon.sg/Things-Someone-about-Customer-Analytics/dp/1726601064
+- Working in analytics within a marketing team, the forecast is used as benchmarks to compare the actual numbers against as we progress, do we need to do more or we are okay with the way we are. 
+
+Everyone understands that the forecast is not telling us the actual performance, but acts like guidance.
+- I haven't had the time to read all the comments or OPs complete post. But I think these two links will be able to propell you forward.
+
+
+Uplift modelling by jaroszewicz szymom
+
+https://www.google.com/url?sa=t&source=web&rct=j&url=https://pdfs.semanticscholar.org/94d4/cbc80f5fb04320ce43a3222d4ee62b376cfa.pdf&ved=2ahUKEwjwmv2awfXvAhX78LsIHTLLDBsQFjADegQIDBAC&usg=AOvVaw0vSUI5Lz4V5o75us29xERw
+
+And a article about churn that's good.
+
+https://www.google.com/amp/s/blog.griddynamics.com/customer-churn-prevention-prescriptive-solution-using-deep-learning/amp/
+
+Best of luck!
+
+Edit: after reading more I think more than just OP could benefit from some reading. First link is very easy to follow and implement.
+- Causal inference ?
+- RemindMe! One week
+- RemindMe! One week
+- RemindMe! One week
+- RemindMe! One Week
+- It's important to get to the bottom of these business questions before you start doing any of the work. If you don't know the real business problem, you don't know what you really need to optimise towards and what your success will be measured against. I know it often feels like the people making the requests / suggestions should know what they need, but it's your job to fully explore this. They won't know data (at least as well as you do) and you need to ask the right questions to understand the problem.
+
+I work in a digital advertising agency and see this all the time, but by probing with lots of questions we often end up at a different point than what they initially thought they wanted. It's all about how the model is activated and evaluated by the business unit, not the metrics themselves. The campaign managers don't care what your Brier Score is or whether AUC or accuracy is what you're telling them, they just need something to report to their bosses on - try and find a way to address this directly. I build models along with software that activates it directly in platform without needing to go through marketing (as long as we set up matrics that can check performance, and do regular health checks). I heavily consult with our internal platform experts and managers, as well as the clients marketing teams to do this. I still present on model scores and explain the different concepts, but the focus of the marketing team is now much more on the business impact of the model rather than the metrics themselves, which is how it should be - if I'm doing my job right I'll be checking these to make sure I have a good model, I don't need someone not in my field to evaluate whether it's good enough of not.
+- RemindMe! One week
+- Honestly, I am in the exact same boat. So I can totally empathize with your situation. What we do is sort the predict_proba and report the precision for decile wise outputs instead of the whole model. This way, we can target only certain set of users to run the marketing campaigns with high precision. 
+Unfortunately it doesn't always work. Today I am struggling with one such model where I am not able to go beyond 40% precision in the top decile even with ensembles of catgbm/lighgbm/xgboost.
+- By probing with lots of questions we often end up at a different point than what they initially thought they wanted. It's all about how the model is activated and examined by the business unit, not the metrics themselves.
+- We provide Digital media marketing and SEO services in Pakistan. WE focus to grow your business online. Digital S2dio is a great Marketing agency. We are focused to maximize the client's profit. Feel free to contact us 24/7 we are available at your service any time.
+- I highly recommend listening to this interview:
+https://soundcloud.com/dataframed/mckinsey-and-data-science-with-taras-gorishnyy
+
+One topic they touch upon is model prediction vs actual decision-making. In other words, predicting an outcome through a model is not the same as acting on it, and there's usually a long chain of qualitative thinking before you can act on a decision.

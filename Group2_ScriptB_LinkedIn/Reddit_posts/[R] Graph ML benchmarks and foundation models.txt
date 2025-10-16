@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n5n1v2/r_graph_ml_benchmarks_and_foundation_models/
+Title: [R] Graph ML benchmarks and foundation models
+
+Content:
+Our team has recently published two graph ML papers: one with a new realistic benchmark and the second one on graph foundation models and how they can be related to tabular foundation models.  
+  
+**GraphLand benchmark**
+
+📝 Paper:  [https://arxiv.org/abs/2409.14500](https://arxiv.org/abs/2409.14500)  
+💻 Code:  [https://github.com/yandex-research/graphland](https://github.com/yandex-research/graphland) 
+
+It is widely discussed in the community that graph machine learning suffers from the lack of realistic, meaningful, reliable, and diverse benchmarks. We agree with this and we hope that we improve this situation with our recent paper “GraphLand: Evaluating Graph Machine Learning Models on Diverse Industrial Data”. GraphLand is a benchmark of 14 diverse graph datasets for node property prediction (both classification and regression) from different industrial applications. The datasets cover realistic machine learning problems and come with rich numerical and categorical node features that are common in real-world applications. Importantly, besides standard random splits, GraphLand provides splits with temporal distributional shifts and the inductive prediction setting, which enable evaluating GNNs in more realistic and challenging scenarios.
+
+[GraphLand benchmark datasets.](https://preview.redd.it/nkl4qs9nnjmf1.png?width=2224&format=png&auto=webp&s=1819461078e34be3e98030c9e65ee61a7b98adc9)
+
+We evaluated a wide range of models on GraphLand. This includes several openly available graph foundation models (GFMs), which we found provide very weak performance compared to classical GNNs.   
+  
+Thus, we set out to develop a better GFM, which led us to the next paper...
+
+**Turning Tabular Foundation Models into Graph Foundation Models**
+
+📝 Paper: [https://arxiv.org/abs/2508.20906](https://arxiv.org/abs/2508.20906)  
+💻 Code: [https://github.com/yandex-research/G2T-FM](https://github.com/yandex-research/G2T-FM)
+
+Graphs may come from very different domains and thus may have diverse features varying across datasets. As a result, one of the key challenges for GFMs is how to deal with such diverse heterogeneous features. Prior studies did not fully address this issue, often limiting themselves to text-attributed graphs or relying on simple techniques like PCA and SVD. However, this challenge is not unique to the graph domain. The tabular domain faces exactly the same issue, and recent tabular foundation models like TabPFNv2 successfully deal with it. We’ve decided to transfer their success to graphs.
+
+[G2T-FM Framework](https://preview.redd.it/xnfsjf77ojmf1.jpg?width=1280&format=pjpg&auto=webp&s=d840e9794068202829dec2bdfa71e426198a7a15)
+
+In our framework – G2T-FM (Graph-to-Table Foundation Model) – we augment the original features with graph information by computing neighborhood feature aggregations and some structure-based encodings, essentially transforming graph tasks to tabular tasks (G2T). After that, we apply TabPFNv2 to these augmented features to get predictions.
+
+[G2T-FM Results](https://preview.redd.it/z3mz5tmaojmf1.jpg?width=1280&format=pjpg&auto=webp&s=6feb591cdd5fb1231d36c2a937ced802a27a26e7)
+
+We evaluated G2T-FM on GraphLand and several other graph datasets and found that it shows strong performance in both in-context learning and finetuning settings. In particular, G2T-FM outperforms both well-tuned classic GNNs trained from scratch and prior publicly available GFMs.   
+  
+We hope our work will help develop better GFMs and highlight for the graph community the similarities of graph and tabular domains and the prospects of utilizing tabular foundation models for graph tasks!
+
+
+
+
+
+Comments:
+- Glad there is more graphs in the world. While not being able to interpret all numbers, it seems seems LightGBM+NFA is very strong!

@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/rayuzwyshyn_ai-quantumcomputing-llms-activity-7346568177612398592-L1FP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Raymond Uzwyshyn Ph.D.的动态
+Raymond Uzwyshyn Ph.D.
+
+Research Impact, AI, Edtech, IT, Data, Digital Scholarship Libraries, Innovation
+
+3 个月  已编辑
+
+🎧 AI Meets Quantum Mechanics: A New Way to Understand Meaning in Language Models
+
+Simplified Podcast: https://lnkd.in/gt6CGc83
+
+Can we understand meaning and probabilities with words in LLM's in Artificial Intelligence the way physicists understand particles and wave dynamic probabilities in quantum mechanics?
+
+A fascinating new paper by Timo Aukusti Laine (linked below) proposes just that—treating words in Large Language Models (LLMs) as quantum-like states in a "semantic space." It introduces the idea of a semantic wave function that captures not just the strength of a word’s meaning, but also its phase—how it aligns or interferes with other meanings.
+
+🔹 In AI, neural nets generate language using probabilistic next-word prediction.
+ 🔹 In quantum mechanics, wave functions calculate probabilities of where particles might be.
+ 🔹 What if both systems share deeper mathematical patterns?
+
+The article below explores:
+LLMs as quantized semantic spaces, built from discrete tokens (like energy levels)
+
+How complex numbers (vs. real ones) better reflect subtle meaning shifts
+
+Semantic interference (why irony, ambiguity, or hallucinations emerge)
+
+And even potential "semantic landscapes" to model context and choice
+
+📘 The full paper is complex and at Ph.D's levels but available for review here:
+
+ “Semantic Wave Functions: Exploring Meaning in Large Language Models Through Quantum Formalism” https://lnkd.in/gTSxTA4N 
+
+🎙 Prefer to listen to something simpler and learn more about the topic with an easier longer introduction through a conversation between two hosts in NotebookLM breaking down the Ph.D. topic to a Masters level - not completely simplified but worth struggling through? This podcast  https://lnkd.in/gt6CGc83   walks through the key ideas in a more compelling, interdisciplinary forma

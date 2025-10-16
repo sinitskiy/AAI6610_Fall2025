@@ -1,0 +1,19 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1799oao/decoding_llm_uncertainties_for_better/
+Title: Decoding LLM Uncertainties for Better Predictability
+
+Content:
+Hi all,
+
+Building off our last research post, we wanted to figure out ways to quantify "ambiguity" and "uncertainty" in prompts/responses to LLMs. We ended up discovering two useful forms of uncertainty: "Structural" and "Conceptual" uncertainty.
+
+In a nutshell: Conceptual uncertainty is when the model isn't sure what to say, and Structural uncertainty is when the model isn't sure how to say it.
+
+You can play around with this yourself in the [demo](https://uncertainty.demos.watchful.io/) or read about it in more detail in the [blog post](https://www.watchful.io/blog/decoding-llm-uncertainties-for-better-predictability)
+
+Comments:
+- I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:
+
+- [/r/datascienceproject] [Decoding LLM Uncertainties for Better Predictability (r\/DataScience)](https://www.reddit.com/r/datascienceproject/comments/179m1s6/decoding_llm_uncertainties_for_better/)
+
+&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*

@@ -1,0 +1,56 @@
+URL: https://www.linkedin.com/posts/giovanni-bruner-22300937_i-often-hear-that-llms-are-unreliable-since-activity-7355175366715486209-jJRp
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Giovanni Bruner的动态
+Giovanni Bruner
+
+Lead Data Scientist, Head of Fraud Intelligence at Nexi Group
+
+2 个月  已编辑
+
+I often hear that LLMs are unreliable since they are not deterministic. They produce different results for the same input, as if they were built as probabilistic models.
+
+But that's not quite accurate. These models are auto-regressive sequence predictors with fixed weights after training. Given an input sequence, the model outputs a probability distribution over the next possible token, via softmax. That distribution is fully determined by the input and the model’s parameters and doesn't change.
+
+So why does the same prompt produce different outputs?
+
+Because most LLMs use sampling strategies (like top-k or nucleus sampling) over the softmax probabilities, introducing randomness for creativity and diversity.
+
+For example, if I asked Chat GPT to complete fhe following sentence : "Going to the sea with friends is..." the model might compute these probabilities for the next word:
+
+Amazing – 30%
+Funny – 20%
+Relaxing – 18%
+Terrible – 10%
+
+Rather than always choosing the most likely word, the sampler randomly selects from the top candidates. This can unfold in different completions if the sentence continues.
+
+While this variability provides creativity, it’s not always desirable in workflows or agents where reproducibility is essential.
+
+Fortunately, it's controllable. Setting temperature = 0, in most APIs (like GTP 4) , enables greedy decoding, ensuring the model always selects the most probable next token, making responses fully deterministic.
+
+✳️ In this case randomness is a feature, not a flaw—but knowing when (and how) to turn it off is key.
+
+42
+3 条评论
+赞
+评论
+分享
+Keith Hackbarth
+
+VP of Engineering at Modern Animal
+
+2 个月
+
+Great post—thanks for sharing! One nuance I’d add from experience: most leading models don’t support true determinism, even with temperature set to 0. It’s fairly well documented that OpenAI and Gemini, 

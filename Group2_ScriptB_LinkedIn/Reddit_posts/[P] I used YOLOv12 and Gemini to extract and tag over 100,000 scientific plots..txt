@@ -1,0 +1,52 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mlvl7l/p_i_used_yolov12_and_gemini_to_extract_and_tag/
+Title: [P] I used YOLOv12 and Gemini to extract and tag over 100,000 scientific plots.
+
+Content:
+For anyone who works in research, the process of designing effective data visualizations can be a significant bottleneck. I often found myself searching through numerous papers just to find inspiration for layouts and plot types, which was inefficient.
+
+To solve this problem for myself and others, I developed [**Plottie.art**](http://Plottie.art), a searchable, browser-based library of over 100,000 plots curated from scientific literature.
+
+I'm sharing it here because the machine learning pipeline behind it combines a specialized computer vision model with an LLM in a way that I thought this community would find interesting.
+
+**The ML Pipeline**
+
+The process starts with a large collection of figure images sourced from open-access papers. The goal is to make each individual plot within these figures searchable.
+
+**1. Subplot Segmentation with a Custom YOLOv12 Model**
+
+A key challenge is that many figures are multi-panel, containing several distinct subplots within a single image.
+
+* **Model Training:** To address this, I trained a custom **YOLOv12 model**. This required **manually annotating a dataset of 1,000 images** to teach the model to accurately identify and isolate the boundaries of individual subplots and their captions.
+* **Function:** The model processes each source image and outputs bounding boxes for each subplot, effectively segmenting complex figures into their constituent parts.
+
+**2. Plot Classification and Keyword Extraction with Gemini**
+
+With the subplots isolated, the next step was to classify each image by plot type (e.g., heatmap, UMAP) and extract relevant keywords for search.
+
+* **Approach:** While I considered training another dedicated classification model, the data collection and labeling requirements would have been substantial. I opted for a more efficient approach using a large multimodal model.
+* **Implementation:** I utilized the **Google Gemini API**. By providing a subplot image, I could prompt the model to perform both classification and keyword extraction. A prompt structured like, `"Analyze this scientific plot. Identify its specific type and extract key terms from its labels and content."` proved to be highly effective.
+* **Outcome:** This method was not only fast to implement but also yielded high-quality, structured metadata. It successfully bypassed the need for a separate, time-intensive training pipeline for classification.
+
+This two-stage pipeline allows the content on[**Plottie.art**](https://plottie.art)to be easily searched and explored. The tool is free, requires no login, and runs in the browser.
+
+I would be very interested to hear your feedback on the project and the technical stack. I'm especially curious about any thoughts on combining specialized vision models with general-purpose LLMs for this type of application, or suggestions for improving the pipeline.
+
+
+
+Comments:
+- This is great! We do a lot of manual annotation to train YOLO models and I use Gemini Flash 2.5 for analysis of content videos and images quite a bit.
+
+Don't have much to add but it's great to see someone taking a similar approach. What are the chances we're both wrong :)
+- Thanks, this is really interesting.  I'm prototyping some similar approaches - combining a custom YOLO model with some prompted classification from Gemini - but I keep wondering if I'd get better results by just using Gemini for both tasks.  I'm not doing image segmentation or bounding box stuff, so I've got a slightly easier job than you in that sense, although the images are a bit unusual.
+
+Did you find that Gemini stuck to the classification structures you provided it?  For keyword extraction, did you provide a list of keywords, or let the model return anything?
+- Any reason you couldn’t have just used a layout segmentation model like those trained on DocLayNet?
+- I am not sure if there is a better solution. But I bet it's hard to find one with such low cost.
+- I tried to do annotation using Gemini, o3, Claude models, and Jules/Agent/Operator/Mariner/Claude Computer Use. Tried it all. None of it works even remotely reliably. Not saying you shouldn't do it - I would love it if you did and it worked! - but manual annotation was the only path forward for us.
+- I used 2.0 flash for both image classification and tagging. It did a great job, stuck to the prompt well. For keyword extraction, i just told it return what it got.
+- Yeah, I'm not completely surprised to hear that; my hacky first attempts haven't been very encouraging either.  Obviously it's going to be very dependent on the domain; objects which are really common in public datasets are going to give better results than ones which aren't.    
+  
+I'm not totally averse to doing it the 'proper' way using manual annotation and a custom model, I just keep getting the feeling that those multimodal models are advancing in leaps and bounds so quickly, that one day they're going to work *okay* for some uses.
+- Oh, that's encouraging - so you didn't give it a list of tags, but instead you kind of got all the tags it assigned and then collated them?
+- yes.

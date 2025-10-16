@@ -1,0 +1,32 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mc2lk8/r_introducing_snacdb_a_new_opensource_resource/
+Title: [R] Introducing SNAC-DB: A New Open-Source Resource for Antibody & NANOBODY® VHH–Antigen Modeling
+
+Content:
+Predicting antibody and NANOBODY® VHH–antigen complexes remain a notable gap in current AI models, limiting their utility in drug discovery. We present **SNAC-DB**, a machine-learning-ready database and pipeline developed by structural biologists and ML researchers to address this challenge.
+
+Key features of SNAC-DB include:
+
+·       **Expanded Coverage:** 32 % more structural diversity than SAbDab, capturing overlooked assemblies such as antibodies/nanobodies as antigens, complete multi-chain epitopes, and weak CDR crystal contacts.
+
+·       **ML-Friendly Data:** Cleaned PDB/mmCIF files, atom37 NumPy arrays, and unified CSV metadata to eliminate preprocessing hurdles.
+
+·       **Transparent Redundancy Control:** Multi-threshold Foldseek clustering for principled sample weighting, ensuring every experimental structure contributes.
+
+·       **Rigorous Benchmark:** An out-of-sample test set comprising public PDB entries post–May 30, 2024 (disclosed) and confidential therapeutic complexes.
+
+Using this benchmark, we evaluated six leading models (AlphaFold2.3‐multimer, Boltz-2, Boltz-1x, Chai-1, DiffDock-PP, GeoDock) and found that success rates rarely exceed 25 %, built-in confidence metrics and ranking often misprioritize predictions, and all struggle with novel targets and binding poses.
+
+We presented this work at the Forty-Second International Conference on Machine Learning (ICML 2025) Workshop on DataWorld: Unifying Data Curation Frameworks Across Domains (https://dataworldicml2025.github.io/) in Vancouver.
+
+·       **Paper:** [https://www.researchgate.net/publication/393900649\_SNAC-DB\_The\_Hitchhiker's\_Guide\_to\_Building\_Better\_Predictive\_Models\_of\_Antibody\_NANOBODY\_R\_VHH-Antigen\_Complexes /](https://www.researchgate.net/publication/393900649_SNAC-DB_The_Hitchhiker's_Guide_to_Building_Better_Predictive_Models_of_Antibody_NANOBODY_R_VHH-Antigen_Complexes%20/) [https://openreview.net/forum?id=68DcIpDaHK](https://openreview.net/forum?id=68DcIpDaHK)
+
+·       **Dataset:** [https://zenodo.org/records/16226208](https://zenodo.org/records/16226208)
+
+·       **Code:** [https://github.com/Sanofi-Public/SNAC-DB](https://github.com/Sanofi-Public/SNAC-DB)
+
+We hope SNAC-DB will accelerate the development and evaluation of more accurate models for antibody complex prediction
+
+https://preview.redd.it/a0d42seuvqff1.png?width=3456&format=png&auto=webp&s=e38ea120357174191b8b5cbb707979cde0ff498a
+
+Comments:

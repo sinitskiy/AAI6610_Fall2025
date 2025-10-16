@@ -1,0 +1,52 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1g9jb5k/is_there_a_book_that_can_help_me_figure_out_which/
+Title: is there a book that can help me figure out which ML algorithm fits what problem ?
+
+Content:
+I am on my path to build my graduation project and as I am learning and figuring my way through I can't but realize that I can't match the problems I face with the algorithms I studied
+
+I need a book that explains the use of Machine learning algorithms through real problems, not just from the coding-math perspective
+
+if any of you can recommend me such a book I will be thankful
+
+Comments:
+- Is my problem could be answered by *yes* or *no* ? -> classification 
+
+Is my problem could be answered by *how much* or *how many* ? -> regression
+
+Is my problem could be answered by *WTF is that shit* ? -> clustering
+- I think you will have better luck learning how to define the problem, structure the analysis,  and what you are solving for. Matching the algorithm is a cake walk
+- I don't think data science works like a decision tree where you run down the plinko board until you find the algorithm behind curtain number 9. 
+
+In fact, the algorithm, unless its a very specific domain, is going to be the least of your concerns. It all starts with - can I even solve this thing and if I could, does it make sense to do so from a roi perspective? You save a lot of headache by doing some sanity checks before you even dive into this. Then comes the wonderfully messy road where lots and lots of things are not as you expect them to be.
+- https://scikit-learn.org/stable/machine_learning_map.html
+- I don't know about books but kaggle competition winner's solution can teach you.
+- Every introductory stats book, and I mean LITERALLY EVERY INTRODUCTORY STATS BOOK, contains a flow chart or logic model designed to determine the correct statistical test for a given research problem.
+
+Here: https://statsandr.com/blog/what-statistical-test-should-i-do/. This is R-specific but the concepts are the same.
+- I have been asking chatGPT which techniques could fit the problem and then use its explanation + external Googling.
+- There is no guide. Study the math. You’ll get an intuition for what’s working, what’s not, why, and how that informs your decision.
+- You are talking about problem solving
+- Is it classification
+
+Or 
+
+Regression? 
+
+Then be lazy.
+
+https://lazypredict.readthedocs.io/en/latest/
+
+JK it's a great starting point though.
+- [Modelling Mindsets](https://christophmolnar.com/books/modeling-mindsets/)
+- Depends on the problem you are working on.
+- ISLP would be a good book. Otherwise just do chatgpt
+- Sebastian Raschka is a great ML author and educator. Also recommend Josh Starmer's books and youtube series.
+- Introduction to Statistical Learning
+- Nothing beats learning more. Start with the introduction to Statistical learning book
+- Just ask ChatGPT. Really.
+
+It is 2024, learn to use digital tools.
+- Look up Pycaret. It will help you choose the most performant model amongst a list of classification and regression models.
+- [removed]
+- Winner is here 🤣🤣

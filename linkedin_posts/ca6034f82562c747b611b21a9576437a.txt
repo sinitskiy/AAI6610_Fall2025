@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/bhavishya-pandit_llm-hallucinations-opensource-activity-7272856357890904067-RnPm
+Date: 2025-09-24
+Author: Unknown
+
+Thank you Packt for sending this book on RAG, I liked it ❤️
+This book teaches you:
+
+0. How to use Pinecone and Data Lake for fast retrieval
+1. Multi-modal RAG for richer AI responses
+2. How to scale RAG pipelines to handle large datasets
+3. Incorporate human feedback in RAG pipelines to enhance performance
+4. How to apply RAG in Diverse Domains
+
+Thank you Denis Rothman for this amazing curation, I am sure it will help many people. 
+
+Follow Bhavishya Pandit to stay ahead in Generative AI! 🚀
+
+
+话题标签
+#llm 
+话题标签
+#hallucinations 
+话题标签
+#opensource 
+话题标签
+#rag 
+话题标签
+#meta 
+话题标签
+#google 
+话题标签
+#ibm 
+话题标签
+#openai 
+话题标签
+#gpt4 
+话题标签
+#ml 
+话题标签
+#machinelearning 
+话题标签
+#ai 
+话题标签
+#artificialintelligence 
+话题标签
+#datascience 
+话题标签
+#python 
+话题标签
+#genai 
+话题标签
+#generativeai

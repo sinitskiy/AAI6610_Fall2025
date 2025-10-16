@@ -1,0 +1,45 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/19eiqvx/p_lace_v060_a_bayesian_nonparametric_tabular_data/
+Title: [P] Lace v0.6.0 - A Bayesian nonparametric tabular data analysis engine for rust and python
+
+Content:
+Lace is a Bayesian tabular data inference engine (built on a hierarchical Dirichlet process) for rust and python designed to facilitate scientific discovery by learning a model of the data instead of a model of a question.
+
+Lace ingests pseudo-tabular data from which it learns a joint distribution over the table, after which users can ask any number of questions and explore the knowledge in their data with no extra modeling. Lace is both generative and discriminative, which allows users to
+
+- determine which variables are predictive of which others
+- predict quantities or compute likelihoods of any number of features conditioned on any number of other features
+- identify, quantify, and attribute uncertainty from variance in the data, epistemic uncertainty in the model, and missing features
+- generate and manipulate synthetic data
+- identify anomalies, errors, and inconsistencies within the data
+- determine which records/rows are similar to which others on the whole or given a specific context
+- edit, backfill, and append data without retraining
+
+**The v0.6.0 release of Lace focuses on the user experience around explainability.** 
+
+We've changed the way epistemic uncertainty is computed (Jensen-Shannon divergence to Total Variation distance) and added functionality to:
+
+- attribute prediction uncertainty, data anomalousness, and data inconsistency
+- determine which anomalies are attributable and which are not
+- explain which predictors are important to which predictions and why
+- visualize model states
+
+Main page: https://lace.dev
+
+Github: https://github.com/promised-ai/lace/
+
+Crates.io: https://crates.io/crates/lace/0.6.0
+
+Pypi: https://pypi.org/project/pylace/0.6.0/
+
+Comments:
+- Awesome seeing Bayesian nonparametrics in action! Some great blog posts you guys have made, too - e.g. [Infinite Mixture Model in Rust](https://redpoll.ai/blog/imm-with-rv-12/) 
+ 
+I'm curious why Rust - my (limited) understanding of hierarchical Dirichlet processes is that you're essentially growing an array (number of mixture components) as you do your Baysian magic. Was this tricky to implement with Rust?
+- Thanks man!
+
+As to why rust:
+
+I’ve implemented this in a few languages: C++, python, Haskell, and rust. Rust has been both more performant and easier to develop in than C++. Also the python interop story is better IMO with pyo3. 
+
+Growing and shrinking things isn’t an issue in rust. Graphs can be a pain but there are patterns than make it simple like the arena pattern.

@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1he6jhi/help_i_am_stuck_predicting_rnaprotein_interaction/
+Title: Help: I am stuck; Predicting RNA-protein interaction using machine learning 
+
+Content:
+I am currently working on a project involving machine learning algorithms to predict interactions between RNA and proteins. I have processed a dataset containing encoded RNA sequences and protein data. I intend to begin with Logistic Regression, as this is a valuable learning opportunity and a way to verify that my dataset is correctly formatted. However, I am encountering difficulties in fitting the model. Please help. For your reference, here is a sample of my dataset:  
+Additional details: My data is encoded RNA sequences (X) and proteins (target) with interaction (0 for no interaction, 1 for interaction). I am using Python, scikit. This table is a representation of my data where each columns contain RNA sequences and proteins. Since a single RNA interacts with multiple proteins, there are multiple columns for each protein. My goal for now is to predict the proteins interacting with RNA based on the sequence only.
+
+|protein\_1|protein\_2|protein\_n|RNA sequence|
+|:-|:-|:-|:-|
+|0|0|0|\[2, 4, 3, 2, 2, 1\]|
+|1|0|1|\[2, 1, 1, 2, 2, 1\]|
+
+Comments:
+- Needs WAY more details. What is your data exactly. What goes into the model? Transformations? Regularization? Programming language and library? What is this table, what are we looking at. What does each column mean. What do you expect anyone to tell you with essentially zero details?
+- This has been done to death. Seqweaver, RNAprot, DeepBind and many more. Don't reinvent the wheel unless you have a really good reason to.
+- Thank you for your response. Apologies. I am new to this and not familiar with all the details. My data is encoded RNA sequences (X) and proteins (target) with interaction (o for no interaction, 1 for interaction). I am using Python, scikit. This table is a representation of my data where each columns contain RNA sequences and proteins. Since a single RNA interacts with multiple proteins, there are multiple columns for each protein. My goal for now is to predict the proteins interacting with RNA based on the sequence only. Hope this makes my post more clear.
+- Thank you for your suggestion. I am doing this as a learning opportunity. Once, I understand clearly how to a build model, I will shift to some other genomic data.
+- Hey thanks for clearing some things up, but how are the RNA sequences represented? What are the features of your model?
+- Got it. A 1D CNN should do pretty well. You'd need some basic pytorch but chatgpt could write a decent outline for you.
+- I will extract RNA features and use them to model later. For now, I am using complete encoded sequences (1 for A, 2 for G, and so on). I do not expect to obtain a good model from this. I am just learning every approaches from scratch.
+- Thank you. I will try that.
+- Encoding specific nucleotide positions as the same feature is a bad idea because it implies they have magnitude (in your example G is twice the size of A for example, which makes no sense). Look into one-hot encoding instead for categorical features, but don't expect it to do much better because as you can imagine it's still just not a very realistic model unfortunately.
+- I tried one-hot encoding before but it was giving an error. So, I tried to simplify things. I will use one-hot encoding again. Thank you for your suggestion. My goal as of now is not to get a good model but to get the thing done without any error. I will slowly switch to a better approach (feature extraction, better models).
+- Okay, since the goal is learning it will be a better exercise, in my opinion, to face errors head on rather than changing to a worse approach. Let me know if you want to post your code and error to get some help there.
+- Thank you so much for agreeing to help. How do you want me to share the code?
+- Best is google colab but you can PM me whatever you want as long as it can reproduce your error + the error you are getting
+- Hi! I figured out the immediate issues.   
+1. After filtering, some RNAs were lost but the protein interacting with them stayed. This created proteins with only (0, non-interaction) values in the dataset --> Gave only 1 class error.  
+2. After splitting, since (1, interaction) is highly sparsed in the data, some of the protein columns got only 0 --> Same error.
+
+Thank you so much for your help. I will PM you with the updates.

@@ -1,0 +1,29 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/9arevb/discussion_wikistyle_bayesian_network_for_medical/
+Title: [Discussion] Wiki-style Bayesian network for medical diagnosis
+
+Content:
+Machine learning is being used everywhere, and medicine is no exception. However, despite the huge potential, it still has little to no role in the daily practice of most clinicians. One manner in which it would be useful is in diagnosis. You give an algorithm the patient's signs and symptoms and whatever lab tests are currently available, and it spits out a probability-ranked list of potential diseases (in medical jargon, a differential diagnosis) with uncertainty estimates.
+
+There have been small-scale attempts at this in the past, but a major issue is finding the requisite empirical statistics to build such an algorithm. For example, how much does the presence of left-sided chest pain increase the probability of a heart attack? We would need at least approximate statistics on the conditional influence of thousands of symptoms, lab tests, etc on thousands of different diseases, which seems intractable.
+
+However, would it be feasible to have an open wiki-style graphical model/Bayesian network where experienced clinicians from around the world could add nodes and conditional dependencies between nodes and fill in the necessary statistics using their clinical experience? For example, a single random doctor may not know P(heart attack | left-sided chest pain) precisely, but maybe the averaged estimates of thousands of doctors might get an approximately accurate value.
+
+Comments:
+- The problem I foresee is an over-representation of severe illnesses and under-representation of more common problems.
+
+99.9% of the time someone comes in with a headache, it's high blood pressure or something else trivial. But 0.1% of the time it's a brain tumour. Unless a regulatory body or something were to force physicians to enter their diagnosis every time (or worse, have a guess at how often symptoms relate each problem) then they would probably say "headaches are linked to high blood pressure" once and "headaches are linked to brain tumours" once too. This would lead to an over-representation of severe problems compared to the much more common minor problems.
+- If I understand correctly, you might want to read about "active learning". It is concerned with the design Human-in-the-loop algorithms during the learning process which I think is what you suggest.
+- I have seen some good examples in radiology. CNN's for MRI/CAT scans, for instance. 
+
+>add nodes and conditional dependencies between nodes and fill in the necessary statistics.
+
+Know that in medicine the margins for false positives and false negatives are small! FDA aproval will requires the test to be very, very reliable (don't have the exact number). 
+
+You will need an incredible database, you propose a possible solution. However, you want doctors to be a doctor and don't mess with the network by introducing nodes. That can only introduce mistakes in the technical domain. There has to be someone with both specialties (medicine+engineering) running the operation and checking the dataset provided by the doctors.
+- Yes but physicians also know this. This would be a Bayesian network, so we can make sure that common symptoms like headache will only increase the probability of brain cancer a little as opposed to other more benign reasons.  It would be a big network with nodes of symptoms and lab tests pointing to diseases. And everything has a prior probability. The prior probability of brain cancer in a random person is extremely small.
+
+The whole motivation of this is to provide a more data-driven and broad set of potential diagnoses to physicians. If you see an endocrinologist, their top diagnoses for a lot things will be, unsurprisingly, endocrine issues. Every doctor has different priors based on their own clinical experiences. However, you might have a kidney problem that they didn't think of, however, this algorithm would be able to give a probability-ranked list of diagnoses that fit the patient's symptoms and lab tests.
+- Check out the GeNie Bayesian Network Software, specifically the "Diagnostic Mode" and load in the HEPAR II example.
+
+This stuff actually works. Combining it with a Wiki sounds LIKE a good idea for Knowledge extraction.

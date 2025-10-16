@@ -1,0 +1,22 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1nstth3/need_guidance_embedded_systems_in_india_abroad/
+Title: Need Guidance: Embedded Systems in India & Abroad – Job Market, Pay & Future
+
+Content:
+Hey everyone,
+
+I’m an ECE student exploring a career in **Embedded Systems**. I’ve been hearing mixed things about the field, especially in India. Some say the job market here is already **saturated and low-paying**, which makes me a bit worried about long-term growth.
+
+I did some online research and found that adding **TinyML (Machine Learning on Microcontrollers) and Edge AI** to embedded systems is being considered the *future of this field*. Apparently, companies are moving toward smarter, AI-enabled embedded devices, so it seems like the career path could shift in that direction.
+
+I’d love to get input from people already working in the industry (both in India and abroad):
+
+* How is the **embedded systems job market** right now in India vs other countries?
+* Is it true that salaries in India are **quite low compared to the difficulty of the work**?
+* Do skills like **TinyML and Edge AI** really open better opportunities?
+* What’s the **future scope** of embedded systems if I commit to it for the next 5–10 years?
+* Would it be smarter to build my career in India first or try to move abroad early on?
+
+Any personal experiences, advice, or even roadmap suggestions would mean a lot 🙏
+
+Comments:

@@ -1,0 +1,10 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/n5irn6/d_leveraging_dropout_for_uncertainty/
+Title: [D] Leveraging Dropout for Uncertainty Quantification / Adversary Rejection
+
+Content:
+Hey all, I use uncertainty quantification a lot at work for some of our production models and risk mitigation. I made a write-up of some of the underlying ideas [here](https://www.rossidata.com/DropoutTensorFlowUncertaintyErrorMNIST) for some of the background and put a demo notebook [here](https://github.com/NicholasARossi/UQ_methods/blob/master/notebooks/05_Neural_Network_Uncertainty_Quantification_with_Dropout.ipynb). Would love some feedback as i'm the only ML engineer at my company.  Thanks!
+
+Comments:
+- Great visuals! My only suggestion is to point the curious readers to more reading, such as one of the more famous papers on this subject: https://arxiv.org/abs/1506.02142.
+- This is a great point - obviously not much here is innovative, just refactored, so giving more citations for where the ideas are from would be key. Thanks for your time!

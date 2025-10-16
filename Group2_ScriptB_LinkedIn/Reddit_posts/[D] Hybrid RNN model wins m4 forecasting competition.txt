@@ -1,0 +1,54 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/8tajvh/d_hybrid_rnn_model_wins_m4_forecasting_competition/
+Title: [D] Hybrid RNN model wins m4 forecasting competition
+
+Content:
+Saw this in [r/statistics](https://www.reddit.com/r/statistics) and thought it was pretty interesting. M4 is a pretty well regarded time series forecasting competition that has previously been very stats oriented. The github for the models is here:
+
+[https://github.com/M4Competition/M4-methods](https://github.com/M4Competition/M4-methods)
+
+First place solution here:
+
+
+https://github.com/M4Competition/M4-methods/tree/master/118%20-%20slaweks17
+
+Looks like most of it was done in c++. 
+
+
+I have taken [u/true\_unbeliever](https://www.reddit.com/user/true_unbeliever) 's post below:
+
+[https://www.m4.unic.ac.cy/the-m-competitions-and-their-far-reaching-contributions-to-the-theory-and-practice-of-forecasting/](https://www.m4.unic.ac.cy/the-m-competitions-and-their-far-reaching-contributions-to-the-theory-and-practice-of-forecasting/)
+
+* The  combination of methods was the king of the M4. Of the 17 most accurate  methods, 12 were “combinations” of mostly statistical approaches.
+* The  biggest surprise was a “hybrid” approach that utilised both statistical  and ML features. This method produced both the most accurate forecasts  and the most precise PIs, and was submitted by Slawek Smyl, a Data  Scientist at Uber Technologies. According to sMAPE, it was close to 10&#37;  more accurate than the combination benchmark.
+* The  second most accurate method was a combination of seven statistical  methods and an ML one, with the weights for the averaging calculated by  an ML algorithm that was trained to minimise the forecasting error  through holdout tests. This method was submitted jointly by Spain’s  University of A Coruña and Australia’s Monash University.
+* The  most accurate and second most accurate methods also achieved an amazing  success in specifying the 95&#37; PIs correctly. These are the first  methods we are aware of that have done so, rather than underestimating  the uncertainty considerably.
+* The  six pure ML methods that were submitted in the M4 all performed poorly,  with none of them being more accurate than Comb and only one being more  accurate than Naïve2. This supports the findings of the latest PLOS ONE  paper by Makridakis, Spiliotis and Assimakopoulos.
+
+Edit: A paper with preliminary results is now available at [https://www.sciencedirect.com/science/article/pii/S0169207018300785](https://www.sciencedirect.com/science/article/pii/S0169207018300785)
+
+Comments:
+- Thanks for a sharing!  Look like pure statistic is really powerful method for forecasting,
+- [deleted]
+- Please tell me someone will do this in Python. My boss will be so happy.
+- Any insight as to why pinball loss was used for the point forecast in that first place RNN solution?
+- The winning solution is interesting, but I am missing the hourly time series aspect, where double seasonality is usual. What would be the necessary adjustments to account for double seasonality? Another aspect that one would like to account for is "working day" or "non-working day". Incorporating these aspect I guess would require a different statistical method to correctly model the components of the input data. Any thoughts?
+- So do we have this in python now? Yes? Please?
+- It is difficult to beat statistical methods, especially their combinations,  in pure time series situations, i.e. when there are no regressors, as in M4. But a hybrid approach, where some statistical algorithm formulas become part of the NN computational graph (so a dynamic computational graph NN system is required) seems to work well.
+- I am troubled by Table 10 in this paper. How are rules "known" in Image and Speech recognition? And in Games, doesn't your action influence the future? How is environment known for, say images, where environment can be literally anything?
+- Maybe. There are some plans of making this algorithm part of a (future) Pyro Forecasting Library.
+- I working on something similar in Python, but not quite as complex. It isn't used for forecasting time series, so much as classifying them. But it can be used for prediction
+- Because the backtesting showed that the system had a positive bias, so pinball loss was just an adjustment to the originally used L1 loss.
+- There is a feature request for this at Uber's Pyro library.
+
+[https://github.com/uber/pyro/issues/1287](https://github.com/uber/pyro/issues/1287)
+- I am not an expert with LSTMs so pardon me if the question is basic. Did you have to make any adjustments in your modeling for shorter time series with less than 30 data points ?
+- So how far in the future should I set remind me bot to?
+- thank you!
+neat solution
+- Was it just a free parameter?
+- No, I did not do any adjustments. As long as the series length > input_size+output_size, I am OK. All series in M4 competition were long enough for the final forecast. E.g. for monthly series I set input_size=12 (seasonality) and output_size was required to be 18.
+But for backtesting you need to reserve (at least) last output_size as the test area, so the series needs to be larger than input_size+2*output_size, and quite a few series were too short to be included in my backtesting, which was a bit dangerous, but apparently worked at the end :-)
+- 2-3 months :-)
+- No, just manually adjusted.
+- Thanks for the explanation and congratulations on the win!

@@ -1,0 +1,58 @@
+URL: https://www.linkedin.com/posts/nadieh-khalili-bb659631_miccai2025-digitalpathology-deeplearning-activity-7377488744821604352-FDfj
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Nadieh Khalili的动态
+Nadieh Khalili
+
+Multi-modal AI
+
+1 周
+
+Excited to share our work will be presented today at 9:15 am at COMPAYL workshop, MICCAI Society 2025
+
+WSI-BayesUNet: Uncertainty-Aware Deep Learning for Histopathological Image Segmentation with Active Learning
+
+Histopathological image segmentation is key to digital pathology, supporting cancer detection and subtype classification. Manual annotation, however, is time-consuming and subjective making automation crucial.
+
+While deep learning has automated much of this process, models still make silent mistakes. We address this by proposing a Bayesian U-Net framework that provides principled probabilistic uncertainty estimation through variational inference. Combined with active learning, our model iteratively improves segmentation by prioritizing the most uncertain samples.
+
+✅ Outperforms ensemble methods on TIGER and CAMELYON17
+✅ Provides better uncertainty quantification
+✅ Achieves faster convergence and reduces annotation effort
+✅ Shows that uncertainty-based sampling > random sampling
+
+Proud of Yijun Cui, who did his master’s on a timly topic, for driving this work! While he couldn’t attend, I had the honor of presenting his poster on his behalf.
+
+
+#MICCAI2025 #DigitalPathology #DeepLearning #Uncertainty #ActiveLearning
+
+44
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Archie Tan
+
+Software Engineer (Backend & AI/ML) | Python • Java • SQL • PyTorch • TensorFlow | $25K-funded research in Generative AI
+
+1 个月  已编辑
+
+Big news I’m excited to share 🎉
+
+Our paper, “Learning to Generate Realistic Medical Images to Improve Pancreatic Cancer Segmentation,” was just accepted to the 39th CCSC Southeastern Conference this November at Mercer University. It’ll also be published in the Journal of the Consortium for Computing Sciences in Colleges and included in the ACM Digital Library.
+
+This project grew out of a simple question: what if we could generate synthetic CT scans to help train AI models whe

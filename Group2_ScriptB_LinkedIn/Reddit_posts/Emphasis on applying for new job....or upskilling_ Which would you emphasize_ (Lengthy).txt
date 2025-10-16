@@ -1,0 +1,74 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19c828o/emphasis_on_applying_for_new_jobor_upskilling/
+Title: Emphasis on applying for new job....or upskilling? Which would you emphasize? (Lengthy)
+
+Content:
+Howdy folks,
+
+Hope all is well, could use some feedback on the job market and possibly upskilling. So Im currently a Senior Data Analyst at my company, been there for about a year and 8 months. I have tons of analytics/excel/dashboard/marketing/startup experience previously, and took two courses on Udemy in SQL/Tableau and got the role in 2021 after searching for 3 months. 
+
+I've been fairly disappointed with the role/company though. I was told they'd be hiring other analysts and I'd have a team eventually but that never happened. I also get minimal support as Im the ONLY tech/data guy on the US side of the company and constantly feel left on an island. I was also taken off spearheading the major project I was on last year-for this year, and they've kept me out of the loop and not engaged for a long time. They're also a constantly REACTIVE company instead proactive, I've told them this several times and Ive yet to see a change. Im still working with the company and we're starting weekly reports now, which lasts for me until August-as well as that major project is about to start and I will be needed for it for the next couple months. I therefore think my job is somewhat safe for a bit, but always looking at my finances as a just in case to verify my runway/attaining a rainy day fund (I had to deplete what I had last year due to a major car issue). 
+
+I feel stagnant in the role and like I'm not really learning anything or really using my brain well AT ALL for what I'm doing. I'm not really doing data science/engineering much at all and thats kind of more of what I want to do (I have to do much more administrative work than Id prefer, dont mind it but whats the point of paying me to do that when there's people at lower pay than can do that?).
+
+So, here's the thing....as of December I set out to basically leave the company and started looking at jobs/applying. I essentially only wanted to last out the role through the fall/winter last year (oh yeah, the COO/my boss left the company last summer too) when hiring is down and maybe try to find something new come Q1 2024. 
+
+So I looked through jobs in December, and saw some things I should maybe learn up on-like learning more about data warehousing/ETL, etc. I was listing those things out for my own reference and then bought some courses on Udemy, like a Data Warehouse course-which I completed as of the first this year. The next major thing I saw that seemed to come up in apps was Machine Learning. 
+
+I dont have as much experience with things like Python. I can mostly read/understand the language from experience with HTML/CSS and can take Python code previously written for years past, update it for calculations for the current year of data and get it good to go-but writing from scratch I wouldn't be 100% on as of right now. 
+
+In order to skip ahead a bit and improve my marketability, Im going through a Machine Learning course on Udemy in Python. I figured while I'm not an expert in Python, I'm not an idiot either-and I'd rather just have the course explain the Python used here, and go over machine learning at the same time.
+
+Here's my concern though....where would you prioritize here? Im applying to work as of right now, maybe gotten 30-40 apps out in the last couple weeks and one interview so far-which I didnt move forward on. I also workout every day and that takes about an hour and a half-two hours. I've paused on the Machine Learning course for about the last week, as literally applying to jobs is taking MUCH longer in my mornings (having to sign up for workday/employer resume apps, going through the application, and submitting).  I'm not sure how helpful job applying is exactly longer term though compared to learning more.
+
+How would you go about this?
+
+My thoughts are well:
+
+A: If I can get another job, I might be able to learn new things anyways and better mentorship/coaching (and therefore getting the course done isn't as relevant)...so its better to focus on applying....BUT the other part of me says, 
+
+B: Well, if you get a job now, you might be frustrated its not as skilled as you'd prefer since your skills arent there 100% and you're gonna want to find another one or better paying one once you learn more....so its better to get the course done and possibly build out a portfolio (but the course will likely take two months or so to complete, while hiring is up this month/next few). 
+
+I've been applying to jobs Tues-Friday. Maybe 10 or so each day. I have the Machine Learning course listed on my resume when I apply, but list out the percent is done at so far.
+
+How would you go about the attack/emphasize here? I could also possibly try to use some of the data (that I work with) that I have/utilize to run/practice Python or something while working as well.
+
+I'm somewhat torn between, should I focus more on finding a job....or trying to upskill and then make myself more marketable longer term (and possibly make more money as well, etc)?
+
+Yes I can maybe split the days out some and attack at different times, but then you also get less done for each and that definitely takes better focus/discipline.
+
+Would anyone have an idea on which is more important to emphasize here....whether upskilling or just job searching?
+
+Comments:
+- I'm no expert but I think if you spend the time learning the course/skills it is not wasted. However if you spend the time applying without result, that time might be wasted. Maybe try to learn the skills and check for jobs and only try to apply to those that really speak to you, so it won't be too time consuming but not letting great opportunities pass. 
+
+You got a job at the moment, so this is the best time to learn, if you were to lose your job then you would probably spend the time job hunting. And settling for a job that is not interesting would not be much of an improvement of your current situation.
+
+Goodluck and I hope you will end up somewhere amazing!
+- Udemy ML course? What kind of roles are you applying to where you think that's going to be seen as an asset? Genuinely curious
+- In interviews I’ve been asked what I did with my time after leaving my prior job. Fortunately I had taken a class. Looks good on a resume and good for discussion. 
+
+I understand not being worried about finding another job if you quit. But in general the market for jobs is not good at the moment. So take a good look before you leap. 
+
+Tip, Take it or leave it.  Avoid using the word ‘quit’ in interviews. Sounds like you gave up. 
+
+And in return you will likely get probing questions about why you quit. Was the real reason: Fired/Laidoff/Quit?
+
+When asked about my reason for leaving my most recent job, I answer “I voluntarily resigned to address a family issue. Which is now resolved.” Which is all true. With minimal detail. 
+
+Most of the time the interviewer moves on to another topic. Because they have the information they need.  
+
+Good luck🍀
+- I'm on the same boat, was literally writing up a post about this, but post got rejected cause low karma, so thanks for the post haha
+- Axon.com/careers
+
+You feel like you have a mission.
+- Yeah kind of my similar thought. Upgrade the skills first and then worry about the job or at least, if push comes to shove focus on the learning over job applying.
+- The job I currently have is due in part to having two Udemy data courses under my belt. Not saying it's everything but it's a start. 23k increase. I'll gladly take that.
+
+Plus if the course gets me to a point where I can start creating a viable portfolio/projects....
+- Im not quitting the job, just been extremely disengaged with the company, see consistent mistakes that are never corrected or changed over time, and Im not learning anything new. All of which makes me want to leave. 
+
+My reason I've said I want to leave is what Ive seen just to say: I want more support. Nothing complicated and not getting bogged down with an overworded answer. Straight, pc answer and to the point.
+
+The question more so, was which do I prioritize....upskilling or the job search? (Again, I WOULDNT quit/leave my company until I have an offer in hand from another company).

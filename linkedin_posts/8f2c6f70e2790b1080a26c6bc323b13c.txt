@@ -1,0 +1,10 @@
+URL: https://www.linkedin.com/posts/samuel-colvin_new-awesome-article-on-minimising-llm-hallucinations-activity-7153805051738673152-SzAR
+Date: 2025-09-24
+Author: Unknown
+
+New awesome article on minimising LLM hallucinations with Pydantic
+ by Jason Liu.
+
+https://lnkd.in/esCVV286
+
+The coolest thing about LLMs and validation is that all the same principles, know-how and best practices from any other application development still apply!

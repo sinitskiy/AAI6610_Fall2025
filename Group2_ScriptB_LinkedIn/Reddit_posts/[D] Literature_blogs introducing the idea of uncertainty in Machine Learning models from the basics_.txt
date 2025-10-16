@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/g7f05a/d_literatureblogs_introducing_the_idea_of/
+Title: [D] Literature/blogs introducing the idea of uncertainty in Machine Learning models from the basics?
+
+Content:
+I'm having a spot of difficulty figuring out where to start. An introduction would be very helpful :)
+
+Comments:
+- Maybe this can give you some more resources: https://blog.tensorflow.org/2019/06/modeling-unknown-unknowns-with-tensorflow-probability.html?m=1.
+- Bayesian Neural Networks might be one way to do this
+- Blog:  [https://www.cs.ox.ac.uk/people/yarin.gal/website/blog\_3d801aa532c1ce.html](https://www.cs.ox.ac.uk/people/yarin.gal/website/blog_3d801aa532c1ce.html) 
+
+References:  [https://scholar.google.com/scholar?q=yarin+gal+uncertainty+in+deep+learning&hl=en&as\_sdt=0&as\_vis=1&oi=scholart](https://scholar.google.com/scholar?q=yarin+gal+uncertainty+in+deep+learning&hl=en&as_sdt=0&as_vis=1&oi=scholart)

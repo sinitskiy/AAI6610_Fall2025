@@ -1,0 +1,145 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/66x02v/d_rl_gans_as_mcts_environment_simulator_for_deep/
+Title: [D] RL: GANs as MCTS environment simulator for deep model-based planning?
+
+Content:
+Apropos of the [news on AlphaGo](https://www.youtube.com/watch?v=ZyUFy29z3Cw), ["Recurrent Environment Simulators"](https://arxiv.org/abs/1704.02254), [Guo et al 2014](http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning.pdf "Deep Learning for Real-Time Atari Game Play Using Offline Monte Carlo Tree Search [MCTS] Planning")/[Desai & Bannerjee 2017](https://nihit.github.io/resources/spaceinvaders.pdf "Deep Reinforcement Learning to play Space Invaders"), [Mathieu et al 2017](https://arxiv.org/abs/1511.05440 "Deep multi-scale video prediction beyond mean square error"), and [LeCun's talk on unsupervised learning/RL](https://simons.berkeley.edu/talks/yann-lecun-2017-3-30), I have been wondering something: has anyone proposed or done any work on using Generative Adversarial Networks for forward planning such as in a tree search method like Monte Carlo Tree Search? It seems like what people are working towards when they bring up GANs in RL-related talks, but I don't recall anyone explicitly suggesting *how* GANs would be useful or this specific approach, and [some searching](https://scholar.google.com/scholar?q=%28%22GAN%22+OR+%22generative+adversarial+network%22%29+AND+%28%22MCTS%22+OR+%22Monte+Carlo+tree+search%22%29+-gallium+-methylene+-LED+-disease+-diode+-electrophoresis+-tumor+-dental+-nanoparticle&btnG=&hl=en&as_sdt=0%2C21&as_ylo=2016) doesn't turn it up for me either. So here goes:
+
+GANs [approximate a data distribution](https://arxiv.org/abs/1701.07875 "'Wasserstein GAN', Arjovsky et al 2017"), so drawing samples from a GAN trained on data from sequential timesteps should constitute a distribution over the true environment data distribution, weighted by likelihood; with this sampling, one could combine it with MCTS to evaluate deeply the decision tree, estimate the value of each action, and choose optimal next actions. A MCTS+GAN RL agent would inherit most of the strengths of GANs and MCTS: simple implementations, able to learn from off-policy transition samples, create a deep environment model, do long-term planning, quantify its uncertainty for better exploration, provide any-time estimates, run in parallel, etc. This could be extended by using [dropout-trained](http://mlg.eng.cam.ac.uk/yarin/blog_2248.html) GANs or [bootstrapped](https://arxiv.org/abs/1703.07608 "'Deep Exploration via Randomized Value Functions', Osband et al 2017") GANs for deep exploration by training the GAN, taking actions in the true environment based on MCTS+GAN estimates, and using the newly collected samples to retrain the GAN. The MCTS+GAN value estimates could also be used to distill down into or pre-train a fast reactive deep RL agent like DQN or A3C by providing high-quality transition samples or a highly accurate advantage function.
+
+(Note: I'm not sure GAN use here is strictly necessary. PixelCNN appears to be competitive with GANs for modeling visual data distributions, so perhaps that approach would also work.)
+
+So to go back to LeCun's talk: one of his points is that for RL, we want some sort of model-based planning for look ahead. Model-free or non-planning is too sample-inefficient to get anywhere, although it tends to be very fast and have advantages; so in humans we see a fairly clear looking difference between immediate System I reflexes and intuition, and slower System II explicit planning and 'thinking through' possible futures by exploring a little model of the environment in our heads. But how do you have a deep model predict the future? He shows an example with cars. You can take a CNN and have it predict subsequent frames using something like RMSE loss and autoencoders, but this leads to blurry images immediately as it averages each pixel over all possible futures; this is not very helpful for planning since a blur doesn't tell you anything about what actions to take. The future is very multimodal, but the autoencoder will just produce the average. Then LeCun demonstrates GANs for predicting next frames - the sample is very sharp, as it picks out one possible future and depicts it as exactly as possible. But this isn't useful either: while it's probably the future with the highest likelihood, the maximum likelihood is still very unlikely, and the more steps out, the more that *exact* sequence becomes vanishingly unlikely, plus it ignores the expected value of the slightly-less-likely alternatives. What we need is planning over the entire distribution, not a single sample from it. Fortunately, a GAN does provide us the entire distribution of futures weighted by their likelihood, via the z-vector: we just create, say, 1000 unique sets of uniform deviates and feed them into the GAN and we will get an approximation of the distribution of futures, each one sharp; if in 500 futures the car continues forward, then on average 500 of the samples will have slight variants of the car moving forward, then perhaps another 250 have it turning left and another 250 have it turning right; with this, we can start doing planning and note that there's a 25% chance of it turning towards us and coming unacceptably close with potentially huge negative rewards, so we should slow down. This is not something we would get from an autoencoder (which would just show an expanding blur of grayness) or a single sample from a GAN (which would usually safely show the turn going straight or turning away from us). To account for actions changing the environment and turn it from a predictive model to a causal model, you would make the GAN conditional: in addition to the z-vector, provide an action. If there are immediate rewards rather than just terminal rewards, then the GAN prediction is both the new environment state and that state's immediate reward (which doesn't require knowledge of the total value of that state or the policy that was being followed, since the future agent's will be done by working backwards from an eventual terminal state and summing all the discounted 1-step rewards).
+
+If you have a sharp simulator of the environment, what do you do with it? Well, you plug it into a decision tree: enumerate all possible sequences of actions and stochastic outcomes, and do backwards induction to figure out the optimal action at any outcome. That's too hard? You approximate it with MCTS. The simulator provides the possible outcomes for each action, which can then be fed back into the simulator to explore another ply down, and so on until hitting the depth limit and exploring randomly until a terminal state, at which point the cumulative rewards for each node are estimated, and another rollout begins.
+
+So the whole algorithm goes:
+
+1. create a dataset of environment+reward+action samples (perhaps from following a random policy in an ALE game or from expert human trajectories)
+2. train until convergence a GAN (like [Improved WGAN](https://arxiv.org/abs/1704.00028 "'Improved Training of Wasserstein GANs', Gulrajani et al 2017")) to approximate the distribution of new environments conditional on old environment, action, and noise z-vector
+3. for _n_ games in parallel:
+   - initialize the RL agent in the environment
+   - until termination, take each action according to MCTS using the GAN as environment simulator by drawing a relatively small number such as 5-100 samples (similar to Go's branching factor), while adding all environment transitions+rewards+actions to the dataset
+4. go to #2
+
+This could probably be implemented fairly easily using Gym+Improved WGAN.
+
+This is:
+
+- parallelizable, since the agents act independently and stochastically while the GAN can be trained in parallel on the 'experience replay buffer'
+- can learn off-policy, since the GAN is focused only on the immediate state transition and reward, which doesn't depend on any successive actions following a better or worse policy - the full value is estimated only during the MCTS search by backwards induction
+- keeps maintaining sharp environment states, since each individual GAN sample represents 1 possible future, not an ensemble or average
+- capable of exploring deeply, using MCTS to prioritize promising lines of action
+- capable of handling all environments that DQN/A3C do now like the ALE, and further capable of handling sequence data given the recent work on Improved WGAN and other GANs on discrete and sequential data
+- anytime, since each rollout updates value estimates incrementally
+
+The major weakness is that I'm not sure how well the MCTS part would handle continuous actions. This hybrid algorithm seems to fall closer to DQN than A3C in the taxonomy. There is also the potential for curse of dimensionality here - many of the drawn GAN samples will be morally equivalent in that they are the GAN reflecting the same basic causal change but with slight appearance differences, which despite MCTS's usual ability to handle extremely high branching factors like in Go, might wind up killing the approach.
+
+Comments:
+- We tried something like this, using gradient descent on the latent space rather than MCTS: https://arxiv.org/abs/1702.06676
+
+Long story short, there are three things that go wrong which require technical and theoretical improvements. 
+
+One is that as noted, the model may not be properly causal; the latent space doesn't just index controllable variation, it also indexes uncontrollable variation. So something like a minimax search is needed so that the model is pessimistic about what it can't control and optimistic about what it can. Not as much of an issue in deterministic settings though.
+
+Second is, even if the environment is deterministic, the model may not distribute its errors in a uniform way throughout the latent space. In that case, search can simply find the points at which the model makes the right kind of error, rather than where the actual correct policy is. Furthermore, the types of errors made in matching distributions versus making accurate future predictions are different, which can have implications for continuous-valued control problems (for example, being slightly off on a billiard shot can make a big difference in arranging a particular outcome, but all of those errors correspond to fairly 'plausible' futures so a GAN-type setup won't penalize them as strongly)
+
+Third has to do with the training stability of GANs and other generative models when the source distribution is non-stationary. Other RL algorithms have this issue too, but the tendency of GANs to fluctuate even on stationary problems seemed to make for much worse catastrophic collapse when we tried them. As a result, we needed to use a non-adversarial generative model instead, which was more stable (but still sometimes exhibits collapse).
+- building good forward models (via GANs or otherwise) is a pretty hard challenge that many of us are tackling in order to do Model-based planning, and the most likely plan is to use MCTS based stuff. Your post is a very good write-up of the more precise and granular details on how we're all thinking about it.
+
+One can build good forward models either in input space or in state space.
+
+1. Input space: given the previous frame of pixels and actions, predict the next frame of pixels (extendable to previous n-frames + n-actions -> next m frames).
+2. State space: given previous hidden state (or some embedding) + action, predict next hidden state. This is harder to debug while prototyping as it isn't as tangible as (1).
+
+We are trying to do both (1) and (2) via GANs, but the success is not really limited to ust GANs.
+
+DeepMind showed that you can build recurrent models of prediction just with plain old pixel-wise MSE like losses + tricks in [Recurrent Environment Simulators](https://arxiv.org/abs/1704.02254) ([video1](https://drive.google.com/file/d/0B_L2b7VHvBW2NEQ1djNjU25tWUE/view) [video2](https://drive.google.com/file/d/0B_L2b7VHvBW2UWl5YUtSMXdUbnc/view) ).
+
+Folks such as Honglak Lee showed reasonably compelling results as well, but limited to 2D synthetic environments, Atari stuff: [Action-Conditional Video Prediction using Deep Networks in Atari Games](https://sites.google.com/a/umich.edu/junhyuk-oh/action-conditional-video-prediction)
+
+Lastly, there is an elevated rise in papers where they use priors about an environment to build better forward-models, rather than doing things fully unsupervised. 
+[Here's one that builds forward models on top of pixels + human pose estimates](https://sites.google.com/a/umich.edu/rubenevillegas/iclr2017).
+
+The fundamental problem in building good forward models is long-term coherency. Models catastrophically forget what happened in the past and/or subtle pixel-wise errors compound. So, the problems to tackle are similar to what we see elsewhere (like in language modeling).
+My take on this is that having explicit memory and doing fast search can go a long way, though there are no compelling published works in this direction yet.
+
+The reason you haven't seen the "whole algorithm" of someone building a forward model + using it with MCTS to do planning, yet / in a convincing or large-scale application, is because forward models dont work yet and people are still trying to make them work.
+- A relevant new paper: ["Learning Multimodal Transition Dynamics for Model-Based Reinforcement Learning"](https://arxiv.org/abs/1705.00470), Moerland et al 2017 ([repo](https://github.com/tmoer/multimodal_varinf)):
+
+> In this paper we study how to learn stochastic, multimodal transition dynamics for model-based reinforcement learning (RL) tasks. Stochasticity is a fundamental property of many task environments. However, function approximation based on mean-squared error fails at approximating multimodal stochasticity. In contrast, deep generative models can capture complex high-dimensional outcome distributions. First we discuss why, amongst such models, conditional variational inference (VI) is theoretically most appealing for sample-based planning in model-based RL. Subsequently, we study different VI models and identify their ability to learn complex stochasticity on simulated functions, as well as on a typical RL gridworld with strongly multimodal dynamics. Importantly, our simulations show that the VI network successfully uses stochastic latent network nodes to predict multimodal outcomes, but also robustly ignores these for deterministic parts of the transition dynamics. In summary, we show a robust method to learn multimodal transitions using function approximation, which is a key preliminary for model-based RL in stochastic domains.
+
+They make a number of the same points about the need for deep model-based planning and the usefulness of a generative model for forward planning, and demonstrate that VAE networks can make sharp correct rollouts over a small gridworld while learning from on-policy transitions from a model-free approach, and mention that it might go well with MCTS. They argue that VAE or PixelCNN are better than GANs for this purpose as they produce explicit likelihood functions rather than implicit sampling-based ones.
+- The question is, why are you spending time here to type this all out instead of typing code and seeing how it works?
+
+Also, while LeCun might have shown the applicability of GANs, everything else, including the use of Deep Nets is not new at all.
+- I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:
+
+- [/r/reinforcementlearning] [\[D\] GANs as MCTS environment simulator for deep model-based planning?](https://np.reddit.com/r/reinforcementlearning/comments/673p1o/d_gans_as_mcts_environment_simulator_for_deep/)
+
+[](#footer)*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*
+
+[](#bot)
+- [deleted]
+- Yeah, I saw your earlier paper, but I didn't really get what it does. Still don't.
+
+1. I'm not sure what you mean. If you sample from a GAN conditioned on a previous state and a hypothetical next action, don't the samples collectively cover the combination of the effects of your actions as well as the inherent stochascity & hidden variables of the environment?
+2. Sure, there will be optimistic and pessimistic errors, but if the GAN is overly optimistic about some poorly-modeled region of the environment dynamics, then when running, it'll tend to run into a lot of those transitions, and when retraining the GAN will learn that those states don't provide as many immediate rewards or the expected successor states as it had been predicting. This seems as self-correcting as in any RL algorithm: if you think something is valuable, you'll get more of it, but then you'll correct yourself as it proves in practice to not be so valuable.
+
+    > (for example, being slightly off on a billiard shot can make a big difference in arranging a particular outcome, but all of those errors correspond to fairly 'plausible' futures so a GAN-type setup won't penalize them as strongly)
+
+    Isn't that the right thing to do? If it's inherently hard to predict and 'sharp' and affected by small differences, you'll get a spread of plausible futures which will lead to a wide variety of outcomes and show that there's great uncertainty about what to do. Go has the same issue: long-range global board outcomes are very sensitive to slight differences in positioning of individual stones, which is why MCTS helps out AlphaGo so much by exploring precisely the lines of play.
+3. GAN stability has been an issue but it seems to be fairly solved now. With regular WGAN, I often saw it converge to not very good results while monkeying around with it, but I hardly ever if ever saw a spectacular mode collapse or divergence the way I saw daily with dcgan-torch. What GAN did you try? If it was earlier than WGAN, maybe that's just not an issue now.
+- and answering more narrowly about forward models + GANs, until WGANs, GANs saw a huge amount of mode collapse, and that was only < 3 months ago. So people are still building forward models using adversarial losses, and there is hope. And if there are good GANs, then I think sampling from them should work for MCTS.
+
+But personally I'm not sure GANs need that much emphasis as magic tools. I think [gated auto-encoders give equally sharp results](https://willwhitney.github.io/understanding-visual-concepts/) and we can even brute-force the space with explicit memory + fast search.
+- Here is another one that also uses VAEs, and GANs (for human poses in particular): https://arxiv.org/abs/1705.00053
+
+VAEs always strikes me as a bit problematic because the samples look so smooth and nobody knows why really. It's really a pity that there is nothing like and not as resource hungry as PixelCNN. Maybe Moore's law will solve it once again, but it seems there must be something sub-linear rather than sequentially sampling pixel-by-pixel. Something like a Bayesian neural network.
+- > The question is, why are you spending time here to type this all out instead of typing code and seeing how it works?
+
+I am flattered that you think I could execute this project in just a couple minutes or hours, but in reality, I am still very bad at Python/TF, while it only takes 10 or 15 minutes to type up my ideas and see if anyone has tried it before. When I say it's easy, I mean that it would only be a few weeks or months of work for one person with 1 or 2 GPUs, as compared to, say, a project like AlphaGo requiring dozens of people over 2 years and hundreds of GPU. Before spending much more time on an idea, it's good to run it past other people to see if anyone has done anything similar or if there is anything obviously wrong with it - apparently at least 2 people have been thinking along similar lines, which is useful to know.
+- why don't you kill yourself when all the DeepMinders are alive?
+- As I understand it, the kind of model you're thinking of learns p(s(t+1)|s(t),a(t)), and then chains together samples with the a(t), etc found via tree search.
+
+The difference is, we're sampling from p(s(t+n),a(t),a(t+1),...,a(t+n)) directly, rather than doing it as a series of one-step transitions. Since the benefit of GANs and generative models of that sort is to be able to match distributions in a very high dimensional space, we thought to do it all in one shot. This would basically mean that if there are certain coherent patterns of actions that do something as a whole (but are not individually very important), the model could learn to represent the entire action sequence in a compressed way. That kind of sequence has to basically be rediscovered every time when you build the future one action at a time, so that's where we hoped we would see improvements over other methods. Sort of a more natural h-DQN. 
+
+We tried on Pacman at one point, but the problem is that you have to learn a pretty good frame generator, and when we did it the GAN instabilities were killing us so we had to go to an alternate method which suffers the same sort of blur problems that pure VAEs have which makes it unsuitable for visual reconstruction. If I were to redo this research now (9 months later, I guess?), I'd shape it more like the recent Recurrent Environment Simulators paper where everything about the control policy part of things takes place in a nicely partitioned-off latent space, and encoding/decoding frames only happens at the start and end. 
+
+Anyhow, as to the specific points:
+
+1: The causal issue is very clear if you sample from the joint distribution of both actions and states (because a given latent parameterizes both the possible variations in goal and the variations in environmental noise sources). 
+
+But even if you do the 1-step conditional model, there's a related causal problem in cases where the environment is not a simple Markov process in terms of a single step. If for example past actions influence unobserved hidden variables, etc, all of that at least potentially can be problematic. It's a bit tricky to diagnose though, and certainly none of this should have applied in the Cartpole example either for the joint distribution or the conditional one. So this is more of a cautionary thing.
+
+2: The thing the generator would be optimistic about isn't a particular environmental transition, but rather a region of the latent space. If there are low-density regions of the latent space, the new observational data generated when the model thinks there's something there won't necessarily end up landing in that region of the latent space, so it may not be so self-correcting. Imposing a prior on the latent space distribution via regularizing both the model and the gradient descent helped limit this, but we saw major problems when the latent space dimension became comparable to the task's sensor dimensions. This one was particularly severe in Cartpole, which has 4 sensors and forced us to use only a 2d latent space.
+
+In terms of the question of error distributions, we actually did a billiards problem at one point to see how things worked. We found that the errors in specific future trajectories were about 10 times higher when modelling the future in a generative way rather than just regressing on the specific next state conditioned on action. This meant that the generative model could barely manage to make contact with any of the balls, whereas the regression-based model was able to more or less nudge its target towards where it was supposed to go.
+
+3: Yes, its a good time to revisit specific algorithmic choices with WGAN-GP and BEGAN in particular. This was just plain-old-GAN.
+
+Anyhow, I think pulling actions from the joint distribution was an interesting idea for capturing long-term correlations in the action patterns, but MCTS + action-conditional regression or generation is probably better in 99% of cases right now. 
+
+That said, I do think there's still something to be done with the joint distribution over actions and states stuff.
+
+Maybe the joint distribution approach would be better for cases where you have a lot of expert data, since actually if you're starting from nearly-random action policies you won't get much compression out of generating the action sequences. But if you already have a low-dimensional manifold coming from expert play, learning to index that generatively seems like it would make sense.
+
+Anyhow, thanks for having me write this all out, it clarified some of my thoughts on the matter. Became a bit long-winded though.
+- Could you elaborate on what you mean by memory+fast search? Are you thinking about some sort of associative memory where multiple states are recorded literally, indexed by the prior state/action (with many experienced states for each prior state/action, due to stochasticity), and then forward planning avoids doing an expensive & lossy (state,action) pass through the GAN/forward model in favor of a fast lookup of one of the exact literal memory samples?
+- > It's really a pity that there is nothing better and that's not as resource hungry as PixelCNN. Maybe Moore's law will solve it once again, but it seems there must be something sub-linear rather than sequentially sampling pixel-by-pixel. 
+
+You're always going to have to generate each pixel, so there's no getting around that. But you don't necessarily have to do it a single pixel at a time if you're willing to force more locality and do it multi-scale eg dilated convolutions in ["Parallel Multiscale Autoregressive Density Estimation"](https://arxiv.org/abs/1703.03664), Reed et al 2017.
+- No, I meant that this seems like a reasonable idea to pursue. Why would you go about posting it around?
+- [deleted]
+- > As I understand it, the kind of model you're thinking of learns p(s(t+1)|s(t),a(t)), and then chains together samples with the a(t), etc found via tree search.
+
+Maybe not quite that. The P() notation implies that you're calculating the likelihood or probability of a particular s(t+1), no? But for planning we just want to be able to draw samples of the full distribution of s(t+1).
+
+> But even if you do the 1-step conditional model, there's a related causal problem in cases where the environment is not a simple Markov process in terms of a single step. If for example past actions influence unobserved hidden variables, etc, all of that at least potentially can be problematic.
+
+I think most of the deep RL approaches at the moment are a bit questionable for POMDP settings without switching to RNN controllers, so nothing special here.
+- > You're always going to have to generate each pixel
+
+I'd argue that one could also take care of stochasticity using a much lower-dimensional embedding space and then condition a generator on the sampled hypothesis to produce the output. Especially for complex hidden variables like the behavior of other agents, a sparse/low-dimensional representation seems much more efficient for making predictions. Operating via pixel-space in between seems like a bottleneck.
+- Oh. Well, I wasn't planning on working on it anytime soon. (What I want to work on as an intro to getting my hands dirty with deep learning is image tagging with CNNs, which is less research and more applied.) If someone else can do MCTS+GAN before then, that would be great.
+- Something like - "I had this idea too, but it so simple, the DeepMind guys would already be working on it, so I stopped"

@@ -1,0 +1,9 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1n4esdm/uw_bothell_masters_program/
+Title: UW Bothell masters program?
+
+Content:
+I’m applying to masters programs intending to study machine learning and computer vision and I saw the curriculum breakdown was more like 50% fundamentals and 50% electives (what I want to study). Is this normal for graduate programs? It feels like that was the point of the undergraduate education. 
+
+Comments:
+- Did you learn the answer?

@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/philipobiorah_about-pydata-london-2025-three-packed-days-activity-7337983183323336704-ZUmP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Philip Obiorah的动态
+Philip Obiorah
+
+Data Scientist | Learning Development Coach in Computing | Co- Organizer PyData Milton Kenyes, Lead, GDG Cloud Port Harcourt |
+
+4 个月  已编辑
+
+About PyData London 2025 – Three packed days (June 6–8) of learning, sharing, and connecting with the global data community. From responsible AI to probabilistic modeling and LLMs, the event was full of insight , and the conversations in between were just as valuable.
+
+Chris Fonnesbeck’s tutorial on Bayesian time series with PyMC was a hands-on walkthrough of modeling uncertainty in forecasting. Elizabeth Osanyinro  delivered an insightful talk on building inclusive machine learning models, grounded in real-world impact.  👋 Luca Baggi   broke down how LLMs are served in production, demystifying prefill, decode, and caching. Salman Khan shared practical strategies for applying transfer learning to audio classification, even with limited data.
+
+Cheuk Ting Ho  reflected on the real-world usefulness of AI coding assistants, while Ian Ozsvald  facilitated an open, honest leadership roundtable. John Sandall  ran a hands-on fairness workshop, and Leanne Fitzpatrick closed with a keynote that grounded us in what it really means to be a data scientist in this fast-moving era. Ines Montani showed how to extract structure from documents using spaCy and layout models, while Jay Alammar broke down LLM evolution with clarity and great visuals. Both gave useful perspective on the direction of NLP.
+
+Equally memorable were the people I met Ali shakil, ,Andrea Melloncelli, Tamara Romero Hernandez, Anthony Ashwin  , Olga Pustovalova , Olamide Faroun  Faroun, Ufuoma Ibude , Elizabeth Osanyinro , John Sandall , John Carney, Tun Shwe, Kuna Fomboh,  Ryan Jessie, and Priyanka M.  , Fei🏄🏻♀️ Phoon  thanks for the engaging conversations and shared curiosity.
+
+With so many parallel tracks, I definitely wished I could’ve been in more than one room at a time. Big thanks to the Schoo

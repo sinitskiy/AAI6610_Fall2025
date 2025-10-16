@@ -1,0 +1,65 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jn8jx1/introducing_openocr_accurate_efficient_and_ready/
+Title: 🚀 Introducing OpenOCR: Accurate, Efficient, and Ready for Your Projects!
+
+Content:
+# 🚀 Introducing OpenOCR: Accurate, Efficient, and Ready for Your Projects!  
+
+⚡ [**Quick Start**](https://github.com/Topdu/OpenOCR?tab=readme-ov-file#quick-start) | [**Hugging Face Demo**](https://huggingface.co/spaces/topdu/OpenOCR-Demo) | [**ModelScope Demo**](https://modelscope.cn/studios/topdktu/OpenOCR-Demo)  
+
+Boost your text recognition tasks with **OpenOCR**—a cutting-edge OCR system that delivers state-of-the-art accuracy while maintaining blazing-fast inference speeds. Built by the FVL Lab at Fudan University, OpenOCR is designed to be your go-to solution for scene text detection and recognition.  
+
+## 🔥 Key Features  
+✅ **High Accuracy & Speed** – Built on **SVTRv2** ([paper](https://arxiv.org/abs/2411.15858)), a CTC-based model that beats encoder-decoder approaches, and outperforms leading OCR models like **PP-OCRv4 by 4.5% accuracy** while matching its speed!  
+✅ **Multi-Platform Ready** – Run efficiently on **CPU/GPU** with **ONNX** or **PyTorch**.  
+✅ **Customizable** – Fine-tune models on your own datasets ([Detection](https://github.com/Topdu/OpenOCR/blob/main/docs/finetune_det.md), [Recognition](https://github.com/Topdu/OpenOCR/blob/main/docs/finetune_rec.md)).  
+✅ **Demos Available** – Try it live on [Hugging Face](https://huggingface.co/spaces/topdu/OpenOCR-Demo) or [ModelScope](https://modelscope.cn/studios/topdktu/OpenOCR-Demo)!  
+✅ **Open & Flexible** – Pre-trained models, code, and benchmarks available for research and commercial use.  
+✅ **More Models** – Supports **24+ STR algorithms** (SVTRv2, SMTR, DPTR, IGTR, and more) trained on the massive **Union14M** dataset.  
+
+## 🚀 Quick Start  
+
+📝 **Note:** OpenOCR supports inference using both **ONNX** and **Torch**, with isolated dependencies. If using ONNX, no need to install Torch, and vice versa.  
+
+### Install OpenOCR and Dependencies:  
+```bash
+pip install openocr-python
+pip install onnxruntime
+```  
+
+### Inference with ONNX Backend:  
+```python
+from openocr import OpenOCR
+onnx_engine = OpenOCR(backend='onnx', device='cpu')
+img_path = '/path/img_path or /path/img_file'
+result, elapse = onnx_engine(img_path)
+```  
+
+## 🌟 Why OpenOCR?  
+🔹 Supports **Chinese & English** text  
+🔹 Choose between **server (high accuracy)** or **mobile (lightweight)** models  
+🔹 Export to **ONNX** for edge deployment  
+
+👉 **Star us on GitHub** to support open-source OCR innovation:  
+🔗 [https://github.com/Topdu/OpenOCR](https://github.com/Topdu/OpenOCR)  
+
+# OCR #AI #ComputerVision #OpenSource #MachineLearning #TechInnovation  
+
+
+Comments:
+- The most important thing with OCR as I see is multilingual support for document OCR. Sure scene text recognition is cool and all, but really most projects will probably about extracting stuff from documents to automate paperwork.
+
+For English and Chinese, there are lots of research and data publicly available so OCR isn't really a problem, but these model, even the current multilingual models (tried paddleocr) kinda suck. Granted they have the capability and will probably achieve ~99% accuracy after being finetuned for the target language, but out of the box, they aren't that great.
+
+Same story to detection model. Some languages have accents that regularly miss detected, resulting in a cropped bbox of the text. Again, simple finetuning solves the problem,but not out of the box.
+
+And really the speed improvement is great, but for many companies, it is super easy have them spending some more money on hardware to run a slower, but higher accuracy model good multilingual support will be much more appreciated than simply being faster.
+- Thanks, it was fast tho.
+- Can we get Fix JSON Structure as per requirement ?  
+Need for Invoice OCR
+- Thank you very much for your valuable feedback. Your insights align closely with our future optimization goals. We are actively working on addressing the challenges you mentioned, particularly in enhancing multilingual support and improving out-of-the-box accuracy for OCR models across diverse languages and document types. 
+
+We understand the importance of robust text detection and recognition for languages with unique characteristics, such as accents or complex scripts, and we are committed to delivering a solution that minimizes the need for extensive fine-tuning while maintaining high accuracy. 
+
+Please stay tuned for \*\*OpenOCRv2\*\*, which will bring significant improvements in multilingual support and overall performance, addressing the limitations you've highlighted. Your input is greatly appreciated and will help us shape a more reliable and versatile OCR solution.
+- I've been testing qwen for OCR from .pdf and .png files, all file I tested so far were in Italian both typed and hand-written and the model does great, I suggest you give it a try.

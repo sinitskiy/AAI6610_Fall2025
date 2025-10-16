@@ -1,0 +1,66 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c7mn25/how_much_does_the_topic_of_a_ms_stat_thesis/
+Title: How much does the topic of a MS Stat thesis matter when hiring? 
+
+Content:
+I’m going to be starting my Masters Thesis in my stats program. I have narrowed down two projects with different faculty members. One of them is entirely self guided, and that advisor doesn’t really have any expertise in this area and the other one is basically with another faculty member but the research topic is within his domain, so he can help me, but the application strays too far from what industry I want to be in.
+
+Project 1:  Causal Machine Learning, and nonparametric estimation for identifying heterogenous treatment effects in advertising/marketing data. 
+
+There’s a dataset by a company in the marketing/adtech space that they have made public, and is essentially an open dataset related to shopping transactions, and demographics of shoppers, and information on marketing campaigns that were run by the company. 
+
+Ideally this would be a causal inference project, where I get to actually learn causal inference and causal (double) machine learning on my own, and apply it to this dataset. No new methods being created, just a standalone causal inference analysis and basically I walk away with learning a new area of statistics and a way to solve causal problems. 
+
+My advisors background is nonparametric regression so he would be able to give me advice on the estimators being used (some of the methods use random forests, tree based methods, splines, kernel methods etc.) so he could be of help in that sense. But he knows nothing about causal inference. So I’d be on my own on this one.
+
+I want to take on this project despite it being quite isolated because I want to signal to my future employer that I can work on data science problems involving causal inference.
+ 
+I only have 1 year, so id have to self learn causal inference + do the analysis + the paper. 
+
+Project 2: Bayesian Dimension Reduction in gene expression data
+
+Another advisor works in the area of dimension reduction, and broadly works in genomics. The project he was proposing for me was an actual opportunity to create some new methods. So much more on the research side than doing an analysis like project 1. 
+
+It involves looking at Bayesian approaches to doing common dimension reduction techniques like PCA, Factor Analysis etc.
+
+From this paper I’d walk away with a good opporuntity to  dive deeper into Bayesian inference, and work on methods research. I’ve never done a bayes project before, despite just taking a class on it.
+
+The cons to this is I don’t really have any interest working in bioinformatics, but this research is within the realm of my advisor so he can actually help me. The other con, is I don’t want my future employer to think I’m not qualified for tasks involving causal inference because I worked on dimension reduction, and with applications to genetic data, which is not really the industry I want to be in. 
+
+
+Does anyone have any input on this? Does choosing a topic not related to causal inference lessen my chances of getting a job involving that? Do people care what my thesis topic is? Or does the MS in Stats signal that I could work on causal inference?
+
+Comments:
+- Unless you're going into a very specific field that leans more toward academia/research, probably not at all.
+- Sweet sod all for the vast majority of roles honestly, and unless it’s directly relevant I would steer away from talking about a thesis in a job interview unless you’re prepared to watch the interviewers’ eyes glaze over…
+- I am wondering that too
+- Not for companies. Maybe for schools or research idk
+- No one cares believe me. But you can talk about it if you don't have any other experiences
+- It matters more if its relevant to the work that the organization is doing. I'd still mention it during an interview when you're asked about unique and/or difficult problems that you encountered. It'll also be cool if you can take your analyses and put them into production via an application (although check if you're allowed to do this; hopefully there is no barrier to doing so). That way, you can link a visual element of your thesis on your resume (most people who do the hiring will never sit down and read your thesis. Also, the app alone won't get you hired, but it will look impressive and show you know your stuff). Pick whichever thesis topic you enjoy more and that you think you can complete well/on-time for graduation.
+- Literally not at all
+- I haven’t came across a company asking details/topic of my thesis during the interview. But it might be better to pick the topic that is more applicable in the industry or research area, depending on which side you are planning to go.
+- >Does anyone have any input on this? Does choosing a topic not related to causal inference lessen my chances of getting a job involving that?
+
+Lessen, yes. How much? Who knows.
+
+Here is what I would say - your thesis topic isn't the end all be all, but it matters in that it will allow you to explore the stuff you actually want to work on.
+
+Yes, you can choose just a whatever topic and then enter the job market as a generalist, but if you want to work in causal inference, then doing research in causal inference will make you much more likely to land a job in that specifc area.
+
+If you don't care about what area you want to work on, then your thesis doesn't matter. But if you do, it kinda does.
+- [deleted]
+- I see, so I could still work on something else in the industry and I won’t be labeled the “genomics guy” by the hiring managers
+- So it doesn’t matter? I’m sure if it’s quantitative enough it could be valuable
+- I mainly don’t want to get pigeonholed into something because of my thesis
+- Gotcha. So they wouldn’t really say, “oh you worked on genomics stuff, you probably couldn’t do causal inference” type of thing right?
+- Okay well I ended up being able to find an advisor to work on causal inference. So that’s good!
+- My thesis was in Symplectic geometry, which obviously no one cares about in industry. What interviewers did care about was how I described identifying and solving an unsolved problem in a somewhat obscure field of mathematics like Symplectic geometry.
+- Yeah, you shouldn't get pigeon holed like that. If you were going for genomics related positions, it could be very beneficial though because industry puts a lot of emphasis on domain knowledge.
+- Not sure why your responses are getting downvoted but yeah pretty much. 
+
+Like others have said, unless it’s a role where the domain knowledge is important they aren’t going to care about the topic - in any business setting the emphasis will be on your ability to show that you understand the techniques they’re interested in and how to apply them to solve the problems they care about.
+
+For example, i don’t even have a classically ‘statistical’ background (having studied building science/applied physics) and the first data role I got was in customer experience analytics, simply because I understood how and when to apply different frameworks and models to different problems.
+- Nah, not at all. If they really wanted to test whether you knew causal inference, they'll just ask you causal inference questions. Or maybe ask you to describe how you would do a business use case with causal inference or they would give you a take home assignment. As long as you're comfortable explaining causal inference and using it for work, you'll be fine. 
+
+Also, there are people who have applied causal inference to genomics problems. It's not really an either or thing.

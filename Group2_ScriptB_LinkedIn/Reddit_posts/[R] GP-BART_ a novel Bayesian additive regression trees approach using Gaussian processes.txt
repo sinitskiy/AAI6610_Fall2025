@@ -1,0 +1,26 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/txkh8m/r_gpbart_a_novel_bayesian_additive_regression/
+Title: [R] GP-BART: a novel Bayesian additive regression trees approach using Gaussian processes
+
+Content:
+(not my paper)
+
+paper: https://arxiv.org/abs/2204.02112
+
+abstract: "The Bayesian additive regression trees (BART) model is an ensemble method extensively and successfully used in regression tasks due to its consistently strong predictive performance and its ability to quantify uncertainty. BART combines "weak" tree models through a set of shrinkage priors, whereby each tree explains a small portion of the variability in the data. However, the lack of smoothness and the absence of a covariance structure over the observations in standard BART can yield poor performance in cases where such assumptions would be necessary. We propose Gaussian processes Bayesian additive regression trees (GP-BART) as an extension of BART which assumes Gaussian process (GP) priors for the predictions of each terminal node among all trees. We illustrate our model on simulated and real data and compare its performance to traditional modelling approaches, outperforming them in many scenarios. An implementation of our method is available in the \textsf{R} package \texttt{rGPBART} available at: https://github.com/MateusMaiaDS/gpbart."
+
+Comments:
+- It would be interesting if you could show if GP-BART outperforms BART on the causal effects estimation tasks that BART shines. Realistically BART is famous, not because it outperforms XGBoost and the likes on prediction tasks, but rather because it was really good at the Atlantic Causal Inference Competitions an the overall "effect heterogeneity" estimation.
+- Where is this skepticism in the comments for the papers saying “actually all you need is this slight modification to a neural network architecture to do *everything*?”
+
+The difference in criticism is shocking.
+- 3x complexity 10% improvement on a handful of datasets? Also did not read the paper in detail but I noticed a lack of confidence intervals in the scores. Is there no random factor here?
+- GP-BART looks like it increases by an order of magnitude the number of parameters compared to a standard BART model, leading to overfitting in most cases where a standard BART model would still fit the data well. Since GP-BART strictly *requires* more training data than BART models what is your argument that the GP extension is a good use of that extra data as opposed to other well known ensembles?
+- Nice
+- In bayesian statistics, intervals are frowned up on. I did not read the paper, but if it lacks such quantity, I wouldn't be surprised. In fact anything related to frequentist statistics is a major sin there
+- The confidence interval was evaluated using the prediction interval. GP-BART was sensible better on this aspect when compared to a handful of datasets.
+- The number of parameters is not a good measure of complexity for bayesian models.
+- I somehow doubt how relevant is to discuss "number of parameters" for a boosted model. With enough regularisation, effective degrees of freedom are under control, if anything the 2017 (arXiv)/2020(Bayesia Anal.) BART paper by Hahn et al. specifically aims to "*develop a regularization prior for nonlinear models*".
+- Not sure if I understood all your mentioned, but the overfitting here does not happen as well for the same reason as BART does not. We still kept a shrinkage prior to the GP itself. Therefore, here one of the main advantages is the inherent smoothness of GP, what does not happen on BART.
+- We love intervals in Bayesian stats - but they are called credible intervals. With regards to the scores, that has nothing to do with the underlying algorithm. Rather because of the stochastic nature of trees it is necessary to run the same technique over multiple seeds and identify the average improvement. You can use whatever statistical techniques you like to determine whether there is a true improvement in the algorithm's performance.
+- It's not just number of parameters but also the bases of the parameter space which, by the model's independence-of-features assumption, are orthogonal.

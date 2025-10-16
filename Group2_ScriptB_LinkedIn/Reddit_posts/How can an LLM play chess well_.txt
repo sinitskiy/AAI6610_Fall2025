@@ -1,0 +1,90 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/16twcad/how_can_an_llm_play_chess_well/
+Title: How can an LLM play chess well?
+
+Content:
+Last week, I learned about https://parrotchess.com from a LinkedIn post. I played it, and drew a number of games (I'm a chess master who's played all their life, although I'm weaker now). Being a skeptic, I replicated the code from GitHub on my machine, and the result is the same (I was sure there was some sort of custom rule-checking logic, at the very least, but no).
+
+I can't wrap my head around how it's working. Previous videos I've seen of LLMs playing chess are funny at some point, where the ChatGPT teleports and revives pieces at will. The biggest "issues" I've run into with ParrotChess is that it doesn't recognize things like three-fold repetition and will do it ad infinitum. Is it really possibly for an LLM to reason about chess in this way, or is there something special built in?
+
+Comments:
+- Someone here can correct me if I'm wrong
+
+Since you're the chess master, how well is it actually playing?  An LLM can probably play a comparatively short game of chess pretty well, because book moves/book openings are well-documented ie it's basically "stealing" moves from actual chess computers. As the length of the game goes on, I would imagine the likelihood of the LLM making a mistake would increase substantially. 
+
+One could test this by having it play a real chess computer, with the goal in mind of extending game length (if that's possible without throwing the game).  My guess is that once the game becomes original, the LLM becomes pretty bad at chess. 
+
+In other words - the LLM is effectively just playing by the book. The moment there is no book to play off of, it probably becomes bad at the game. I'm not an expert on LLMs or Chess tho
+- It uses the "instruct" brand of gpt models which are trained with human feedback https://openai.com/research/instruction-following
+
+My bet is that they have instructed gpt on what are legal moves, or limit its output to only consider legal moves.
+
+Even though the company is called openai, their models are not open source, so we don't know for sure what the human feedback is with respect to chess.
+- For anyone who believes that OpenAI is cheating by using an external chess engine, [this blog](https://nicholas.carlini.com/writing/2023/chess-llm.html) post shows behavior that is apparently not present in any chess engine:
+
+>Now let's ask the following question: how well does the model solve chess positions when when given completely implausible move sequences compared to plausible ones?  
+>  
+>As we can see at right it's only half as good! This is very interesting. To the best of my knowledge there aren't any other chess programs that have this same kind of stateful behavior, where *how* you got to this position matters.
+
+[This comment in another post](https://www.reddit.com/r/MachineLearning/comments/16oi6fb/comment/k1xx4od/) shows an example of this stateful behavior.
+
+[Here](https://twitter.com/OwariDa/status/1706823943305167077) is an example from the parrotchess developer of a purported attempt by the language model to make an illegal move.
+
+P.S. [Here](https://www.reddit.com/r/MachineLearning/comments/16oi6fb/n_openais_new_language_model_gpt35turboinstruct/) is one of my Reddit posts about playing chess with OpenAI's new GPT 3.5 language model.
+- My take is that the model is fine-tuned on a large database of master's games. If you think about it, LLMs are well suited to this kind of thing. Moves in a chess game appear in a sequence. LLMs are next token prediction algorithms with a long memory for past "words" or "moves" (tokens really) in a given sequence. This is memory analogous to memory in recurrent neural networks, but the algorithm is trainable in linear time. An LLM trained on a master's database should tend to walk down a well-trodden path through a chess game. I bet strategically, it's best to try to play novelties and avoid main lines against an AI like this.
+
+Thanks OP, for passing this along.
+- There is prior evidence that language models can learn sophisticated algorithms and/or representations. Perhaps the most famous is [this work about the board game Othello](https://arxiv.org/abs/2210.13382) ([layperson-friendly article about the paper](https://thegradient.pub/othello/) from one of the authors).
+- LLM's are a neural net. They can learn any "language" you want including language of chess, raw binary etc.
+
+Chess data is trivial to generate using existing chess engines and games of real people. You can feed it a billion games and it will learn patterns just like any neural network would.
+
+It's a stupid thing to do because there are other architectures do it better but hey why not. It's not that different from using pre-trained networks in the computer vision world which has been standard for nearly a decade now.
+
+LLM's are great because they're trained on a wide range of things and in the real world skill is transferable between domains. While GPT-3.5 or whatnot might only have a few games of chess in it's training data, it also has go games, card games, checkers etc. It's probably going to be better to fine-tune with a small-ish amount of data than starting from scratch.
+- Idk but in they source code, i can see that use stockfish at some part.
+
+Stockfish is used in lichess and chess.com to analize the movements of they chess ganes.
+- Clever prompting. It starts with a championship game as context, then manages to keep state by adding every move to the prompt, so the prompt itself is holding the game state. It’s the equivalent of typing the entire game history into the prompt each time. 
+
+https://github.com/clevcode/skynet-dev/blob/main/checkmate.py
+
+Edit: It’s also worth noting that the actual website code isn’t available, just the script I linked to, so we don’t really know what you’re playing against on that site.
+- https://youtu.be/HrCIWSUXRmo?si=q10ULOkCdJnfTdBa
+
+This ENTIRE video should answer your question quite well, HOWEVER, 8:20 is where they specifically discuss llms chess performance. Highly rec watching the beginning 8:20 though or you won't get full context.
+- For language models that learn to play chess, the prior best-performing language model in the literature that I've aware of is the one in [this 2021 work](https://cs229.stanford.edu/proj2021spr/report2/81981110.pdf) (PDF file).
+- LLMs don't reason. Presumably it is repeating patterns seen in its training set.
+- It just takes steps it found online in databases on historic games. It's not capable of actually reasoning nor does it understand causality.
+- Everybody in this thread has missed the central point which is that GPT-4 as an LLM has exceptional logical reasoning and deductive skills that do generalize.
+
+At its core, the model is trained to predict the next word given previous context. But if you stop and think about it, being able to perfectly predict the next word in a sentence requires you to be able to perfectly simulate human intelligence. 
+
+So under that perspective, it's not too surprising that GPT-4 can play chess well. 
+
+Another interesting example is that I have personally tested GPT-4 as a medical notes classifier and it is literally amazing. I worked on a project for almost 2 years and our team got our classifier to about 35% precision and 50% recall.... but in one weekend with GPT-4, I built a classifier that got over 95% precision and 95% recall.
+
+Which is insane when you think about it. Being able to build an NLP classifier with almost perfect accuracy on an extremely difficult problem without providing any training data or fine tuning. That was what really blew my mind and made me realize the real value behind GPT-4 which is not its ability to regurgitate Google facts, but to use logical reasoning on natural language data to solve new problems.
+- If you give it a bunch of master games in chess notation I imagine it can be pretty good? Did you try tricking it? Playing out of theory?
+- RemindMe! 5 Days
+- I am interested as well (have only seen ridiculous outcomes thus far)
+- They call them 'black boxes' for a reason
+- For those that want to try playing chess with ChatGPT, [this blog from last month](https://www.lesswrong.com/posts/F6vH6fr8ngo7csDdf/chess-as-a-case-study-in-hidden-capabilities-in-chatgpt) gives a prompting style that works better than other ChatGPT prompting styles that I'm familiar with. Note that ChatGPT isn't using the language model whose results the OP is referring to, and these results aren't close to being as good as the results the OP is referring to.
+- Which models do they use? I remember seeing this here https://www.youtube.com/watch?app=desktop&v=FojyYKU58cw and trying to play against ChatGPT which I had to stop after about 10 moves for the nonsense moves it tried to play.
+- So a lot of good answers here but I don't quite agree with the premise that some people are using to call this a combinatorial problem, but here is what I think is happening.
+
+1) when a LLM plays chess, it's looking at moves not as a strategic optimimal move like stockfish but as a language problem. What is "chess lingo"? Well it's of the form " pawn moves to a6" ,"queen moves to h5" etc. There are 6 unique chess pieces, 64 unique positions and phrases like "checkmate",'offer to draw" ,"win","lose"(non exhaustive)  which you can consider as punctuations int his language. So , how many phrases can you make in this language then roughly? 6*64*2^5 that's 12,228 phrases. Let's go an order of magintude higher, let's say chess has 100k possible phrases, not tokens (words , punctuations) but phrases. Suddenly you realise the scale of the problem isn't the total possible chess moves which is more than the atoms in the universe. But a language with around 100k total possible very structured phrases 
+
+
+2) now comes the question of ordering the correct sequence of these phrases so that they make sense. This is what a LLM does very nicely, and this is attributed to the attention mechanism which any LLm  incorporates to focus on relevant bits of texts ( tokens or strings of tokens) in training. For chess, an LLM probably has most books on chess strategies in its training set, but more importantly information of entire games as well, and who won the games who drew who lost etc. So once your move is vectorized by an LLM it just becomes a matter of finding another vector embedding very similar to (your move+the previous moves) in text format. 
+
+
+3) I don't play chess. But I know a lot of players use a mixture of set strategies and opening moves , gmS will probably add their own variances. But the attention mechanism will ensure that if a sequence of moves you have played is similar to, not same as, but similar to a vector embedding of a chess startegy already in the training data of the LLM ,then it will spit out a next token which is in line with making or countering the strategy.
+
+
+4) there seems to be some miscoception about LLM accuracy decreasing with increase in token size. That's a general rule, but it is not applicable to ALL sequences. If the sequence of tokens is very unique , then the probability of choosing the next token does not reduce with the length of the overall token string as massively as if you are holding a general conversation with the LLM. For example. If you choose to go to an LLM and say" continue o
+ the sequence in an alternate manner, give your output whenever I say go..1,.." the LLM will spit out the next number in the sequence (2,.go, 3,go, ..) for as long as you want. ( This is an illustration).
+Similarly in chess given the subspace of possible phrases is many orders of magnitude less than the parameters of the model , it's easier for the model to predict the next token for very long sequences. More than 40-50 moves which is the general length of a chess game I assume.
+
+
+This is all of course an illustrative example , my main gripe was with a lot of comments here focusing on the massive number of chess moves and how the LLM is doing" reasoning" to search for the best move in that massive search space. That's not the problem an LLm solves, and that's the reason you were able to beat or draw with the LLM that's because it's not making the stargeic optimal mobes that stockfish or any other chess engines would make. Of course you can always fine tune the LLM to chess moves and it will be better, but it will approach the problem in a very different way to how chess engines do

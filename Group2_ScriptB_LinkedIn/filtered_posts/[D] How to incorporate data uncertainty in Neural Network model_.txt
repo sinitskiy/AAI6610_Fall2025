@@ -1,0 +1,54 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/prycja/d_how_to_incorporate_data_uncertainty_in_neural/
+Title: [D] How to incorporate data uncertainty in Neural Network model?
+
+Content:
+I am seeking advice for the best way to incorporate data uncertainty into my neural network model given my particular application and available a priori knowledge about the uncertainty of the data.
+
+My application is a regression task in the domain of 3D modelling to estimate a scalar value f\_i at a 3D point **x**\_i given a set of training points with each having an associated scalar value f. E.g. spatial interpolation.
+
+I have a priori knowledge about the uncertainty of the position of the training points. For a point **x**\_i = (x\_i, y\_i, z\_i) the uncertainty of point the x coordinate x\_i = +/- Δx, and similarily for the y and z coordinate. Moreover, points that have larger z-coordinates have larger amounts of uncertainty.
+
+I see three options:
+
+1. Adding noise using a normal distribution to the coordinates of the training points based on the uncertainty of the coordinates. Each epoch, sample from this distribution.
+2. Using Bayesian deep learning techniques and hope that the learned posterior distribution of the weights and bias of NN parameters somehow captures the inherent data uncertainties. 
+3. Combination of 1) and 2)
+
+Wondering if anyone out there has some experience with incorporating data uncertainty and could provide some advice on this, and/or feedback on my options I noted above.
+
+Any help much appreciated.
+
+Comments:
+- Number 1 sounds like a great way to perform data augmentation for your task. I'll add that as an alternative to sampling from the distribution you could also simply provide the mean and variance of the sampling distribution as input directly to your network. In this way your 3-vector would become a 6-vector. Depending on how much data you have, one might perform better than another.
+- on mobile so only providing the term but look into Bayesian Neural Networks and BNNPriors repo (not affiliated, just found it helpful).
+
+Edit: Havent seen you already mention it. so yeah, go for it.
+- Option one was the first thing that came to mind for me. I don't know what framework you are using, but if you use a custom data generator in keras it would be trivial to add noise to your data set that varies epoch to epoch. 
+
+One drawback I see if that you would need a lot of epochs to accurately represent the distribution, but your model may be past its early stopping point by then. A way around this would be to drop the learning rate significantly and just run the model for a really long time.
+- Train on data augmented with sampling from the uncertainty distribution, use dropout during training, then estimate prediction uncertainty by making predictions on the un-augmented data with dropout still used.
+- Number 1 sounds promising. An alternative to the Bayesian NNs is Monte Carlo Dropout where you train a NN but do inference multiple times with dropout (different units get dropped out each time) to get a distribution of f_i. https://arxiv.org/abs/1506.02142. I find they’re easier to develop & train than Bayesian NNs.
+- Alternative options that you didn't mention:
+
+Gaussian process regression (easy to try since there are implementations in sklearn).
+
+Mixture density networks.
+
+Or any type of generative model that you can easily condition (e.g. conditional normalizing flows, [Pyro makes this easy](https://pyro.ai/examples/normalizing_flows_i.html#Conditional-Transforms-in-Pyro)).
+- Thank you for your suggestions. I will be trying both to see how they work in practice.
+- Cool library. In all examples I've see with Bayesian Neural Networks so far the priors are always applied to the weights and biases of the networks parameters. Do you know if the priors can be applied to the inputs (e.g. features), or is the process of having distributions over all network parameters in effect capturing the inherent uncertainties of the data?
+- I am using pytorch for my framework.
+
+>One drawback I see if that you would need a lot of epochs to accurately represent the distribution, but your model may be past its early stopping point by then. A way around this would be to drop the learning rate significantly and just run the model for a really long time.
+
+Yes I thought about this as well. Thanks for the suggestion with dropping the learning rate. I will have to test and see how in practice this works.
+- Yep, working through the Pyro tutorials now to get a handle on these types of approaches.
+- Although your assumption about the implicit learning maybe true to some extent, we cannot assume that the algorithm really learns this uncertainty. Think about the MAP as a loss function. We want to train the model such that 
+
+argmin P(theta| D) = P(D | theta) P(theta) / P(D)
+
+LHS implies that D = {X,y} are already observed and from a frequentist POV, there are thus no uncertainties in X, y. Using the Bayesian interpretation along with the Bayes Rule, RHS treats the data (thus inputs) as uncertain, although the denominator is often omitted during the training since it is assumed to be flat. If you do have a non-flat prior e.g. due to your domain knowledge, you can just include the denominator. Practically, this means we weight the samples differently according to their likelihood during the training. Thus, this is similar to using sample weights in imbalanced classification problems. Note however, this is not specific to BNN and can be applied to any other model as well, for which we can formulate a MAP, for example GP or Bayesian Regression.
+
+Edit: A more practical approach would be to augment your data with your prior distribution, which requires no MAP and may be more apropriate for models with higher capacity such as dnns.
+- No worries. Let me know how it goes. I'd be interested to hear how well it works.

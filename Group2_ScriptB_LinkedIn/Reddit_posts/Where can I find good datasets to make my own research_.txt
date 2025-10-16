@@ -1,0 +1,48 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/t8rusy/where_can_i_find_good_datasets_to_make_my_own/
+Title: Where can I find good datasets to make my own research?
+
+Content:
+I'm finishing my MSc thesis. Almost all of my experience is is in the wet lab but I would like to join a PhD project in bioinformatics.
+
+This week I had a few interviews for a PhD fellowship I got shorlisted. All the PIs were surpirised by the fact that I was pursuing for a PhD in bioinformatics (which is different from my research expericience).
+
+During these last 2 years I started to learn how to code (mainly Python, R and bash) with online courses. Also, I took several courses in machine learning (specially in deep learning). I have practiced with the typical datasets (mnist,  WordNet, iris, ...). I feel pretty confortable with my skils so far, but I would like to practice with omics data.
+
+I would do this not olny to gain experience , but also with the  intention of getting results that I can show to potential PIs. Is this too ambitious?
+
+Do you think that is possible to publish my own paper (without any affiliation) if I make a good model/software?
+
+&#x200B;
+
+Thanks!
+
+Comments:
+- >Do you think that is possible to publish my own paper (without any affiliation) if I make a good model/software?
+
+No, I don't think it is possible to publish a paper without supervision or relevant experience.
+
+You can, however, try to replicate the analysis from previously published papers to demonstrate proficiency.
+- It seems like you want to do two things:
+
+ \- Find a good genomics dataset with which to practice bioinformatics
+
+\- Produce some original research or have some results to show PIs.
+
+&#x200B;
+
+As for the first - you can find free datasets i.e. Fastq files on Gene expression omnibus and use bash to process those files into a desired dataset. Although I suspect what you are asking is "Where is a processed dataset which has some features with which to do ML or deep learning". If you want suitable datasets that require minimal data cleaning / data mining then you might have to look at the supplementary data in different scientific papers. You could always create the dataset yourself - for example by getting data from COSMIC, HPA, GEO for example. Of course - you would have to have a question worth answering and these databases may not be relevant to your question.
+
+&#x200B;
+
+As for the second part - I agree with Foradil. It is difficult to produce original contributions without having a PI to talk with / hit ideas back and forth. I would suggest you do something like the following.
+
+1) Find an area of biology you are interested in. Yes you can do bioinformatics but it helps to have a very deep understanding of a small field. Why is this? Having a deep understanding of a small field means you know where the boundaries of the field are. You know what has already been done and what has not been tested but probably should be. This takes a bit of time but is really worth it. It then becomes easier to find datasets and answer questions since you know where everyone got their data from and in what databases they stored said data. 
+
+2) When you know what should or could be done in a filed you can then start writing the necessary code to test the question you are asking. This can be extremely tedious and difficult. Don't let datasets like iris etc fool you. Mining the data yourself, looking for issues in the data and most importantly - understanding the data - are not trivial. But that's okay, so long as you persist then you will find it all becomes easier. 
+
+3) If you are going to write code that you want future PIs to see then maybe put in on Github. Github can act as a kind of code CV to show other people what you have done. 
+
+&#x200B;
+
+4) Most importantly, don't give up.

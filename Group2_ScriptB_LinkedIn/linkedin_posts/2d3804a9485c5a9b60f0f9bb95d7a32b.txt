@@ -1,0 +1,72 @@
+URL: https://www.linkedin.com/posts/vanhoucke_when-i-was-at-stanford-there-was-a-professor-activity-7370087604651819008-Co2b
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vincent Vanhoucke的动态
+Vincent Vanhoucke
+
+Distinguished Engineer, Waymo
+
+1 个月  已编辑
+
+When I was at Stanford, there was a professor of Decision Theory who famously gave multiple choice exams, but asked students to answer them using probabilities.
+The grading was then done using the KL divergence between the true answer and your chosen probability distribution.
+The consequences were brutal: if you gave 100% probability to one question, and you were wrong, you got negative infinity for that question, and failed the entire class!!
+Maybe LLMs should take a page from that playbook:
+https://lnkd.in/gqiWjzrf
+
+4,408
+110 条评论
+赞
+评论
+分享
+Firas Obeid
+
+Sr Data Scientist @ OppFi (NYSE: OPFI) | AI Instructor & Mentor
+
+1 个月
+
+I tuned an ML model lately and its predictions where clustered towards 90% confidence in each model decile. Learned that the choice of parameters caused that issues although no clear signs off overfitting where present. I think they need to focus on the choice of hyperparameters or look into what makes a model overconfident in making the next token prediction.  
+
+赞
+回复
+David Aponte
+
+Senior Research SDE, Applied Sciences Group @Microsoft
+
+4 周
+
+Brutal
+
+赞
+回复
+Behnam Mohammadi
+
+Assistant Professor of Quantitative Marketing, UT Dallas
+
+1 个月
+
+if only people would learn how LLMs work before making posts about LLMs
+
+赞
+回复
+6 次回应
+Franklin Carroll
+
+VP of Analytics and Modeling at Kukun
+
+4 周
+
+In one sense, this system is brilliant, but in another, it introduces a kind of terrible unfairness. The more I play around with it, the clearer it becomes that without a curve, it will on net produce grades that are worse than those from standard average-score grading.
+
+Consider a question with four possible answers where you are unsure. In a normal multiple-choice system, you might guess, yielding a 0.25 expected score if correct. If you have an SAT like "wrong answer" penalty than you skip and get zero points. In this KL/log scoring system, “skippi

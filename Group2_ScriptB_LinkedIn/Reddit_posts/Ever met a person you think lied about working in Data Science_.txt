@@ -1,0 +1,70 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1k4geso/ever_met_a_person_you_think_lied_about_working_in/
+Title: Ever met a person you think lied about working in Data Science?
+
+Content:
+You ever get the feeling someone online or in-person just straight up lied to you about having a Data Science job (Data Scientist, Data Analyst, Data Engineer, Machine Learning Engineer, Data Architect, etc.)?
+
+I was recently talking to someone at a technical meet-up for working professionals and one person was saying some really weird stuff. It was like they had heard of the technical terms before, but didn't actually have the experience working with the technologies/skills. For example, they mentioned that they had "All sorts of experience with Kafka" but didn't know that it is a tool that Data Engineers and related professionals could use for their workflows. They also mixed up the definitions of common machine learning models, what said models could do for a business, NoSQL & SQL, etc. It was jarring.
+
+Also, sometimes I get the impression that a minority of people on this subreddit come on and lie about ever having a Data Science job. The more obvious examples are those who post the Chat-GPT answers to post questions. No shade thrown to anyone here. I encounter many qualified people here and have learned new stuff just reading through posts.
+
+Any of you ever had an experience like that?
+
+**Edit:** Hello all. Thank you for all of the responses on this post. I have gotten some good perspective, some hilarious comments, and some cool advice. I appreciate all of you on this sub-reddit.
+
+I do want to say that I do not believe that all Data Scientists need to know Kafka (or any other specific tech. I don't know a bunch of stuff). I brought up the Kafka example because it was the most egregious (the person claimed to have all these years of experience, but didn't know a bunch of stuff including the basics). The conversation was 35 minutes, so I only wanted to bring up the outliers/notable examples.
+
+And I want to emphasize that I was talking about **all** Data Science jobs (Data Scientist, Data Analyst, Data Engineer, Machine Learning Engineer, Data Architect, etc.). Because I think that these are all valid roles and that we all have unique experiences, skills, and knowledge to bring to this field.
+
+Anyways, I appreciate all the comments and I will read through them after work.
+
+Comments:
+- It’s been my experience, that people are idiots more than they are deceitful. Do not attribute to malice, what can be attributed to incompetence and all that.
+
+What I see a real lot of, is people who were peripherally  involved in projects, claiming a much deeper involvement. This is incredibly common in interviews though is also incredibly easy to discover in the technical. It’s why our engineers and scientists cross interview.
+
+Outside of that, there will always be people overselling themselves, always be people who know less than they think and always be idiots. This is almost certainly as true in botany, plumbing and architecture as it is in data science - even if they aren’t as inundated with LinkedIn influencers right now.
+- Data Science is such a wide range of skills that despite 12 years of experience I still have imposter syndrome and when you combine that with bad social anxiety I have had my fair share of trip ups and interview bombs. I've been in awkward situations where it was clear that the other person's agenda was to measure my skills and figure out that they were better than me. This often happens with people from very academic backgrounds that are upset that less technical people can have the same job titles. One time I was talking to a PhD Economist about Two-way Fixed Effects and they flipped their shit because I hadn't read some paper that they had 5 years to read and argue about in grad school and apparently without a firm understanding of the paper's arguments there was just NO WAY I could possibly be useful in my role.
+- I feel this way whenever I hear that someone has only used neural networks.
+- Yes, I met him and that person is me.
+
+I didn’t lie per se but I tried to leverage every data science relevant bit of experience from my academic career to get a data science job haha.
+- Data Science is broad enough that it encompases a wide variety of skills and domain knowledge.
+
+I've been working with data for about a decade and I refuse to learn what Kafka is out of principle.
+- [deleted]
+- Bruh we are all faking it one way or another
+- Okay well I get paid as one and write pipelines so idgaf what kafka is or what my title is. It's just another service that you take 2 weeks to learn and implement like any other.
+- My wife met a guy at work the other night. She works at a convenience store across from a mall. The guy introduced himself as the owner of the cell phone repair store in the mall. Starts listing all his super cool skills. He codes. He's a data scientist. He does full reboots. (His words.) She tells him data science is pretty cool and her husband is an SWE who works with lots of data. He shoots back, "I'm one of the top data scientists in the country. I don't care how damaged your phone is, I can get your files back."
+
+Sir, this is a Wendy's.
+- A data scientist could know nothing about common machine learning models and still be a data scientist. They just wouldn’t be a machine learning data scientist. Now should someone like that be talking about common machine learning models and proclaiming expertise? Probably not. Does that mean they’re not a DS? No. There’s plenty of DS’s that do experimental design, sampling,  and related topics that still require statistical knowledge and math but not machines learning.
+- There was a guy in r/learnprogramming giving advice, talking about the job market etc and leaving comments talking about how he had such an amazing high paying job and that he wasn’t personally worried about the market because “no one has a resume that can stack up to mine on an application, anyway”
+
+
+About 1 min of searching his profile and it was insanely clear that he was in the second semester of a CS degree, and had been denied joining the army as active duty. 
+
+He was legit cosplaying as a programmer/ data scientist. Shit was actually hilarious, but insanely weird at the same time. And sad. But he was a dick head so roasting him was a good time. 
+
+
+The kid had not only not ever had a job in any sort of data science, but he also had never even had a real job. Not a degree, not just in CS, but in anything. It was genuinely insane and made me realize I can’t trust shit anyone says on this site about damn near anything
+- when i was working on my ML thesis i stumbled in a place no one tried before and i couldn't find any solution or anyone talking about it, not even scientific paper. After months i figure out a solution and tried to talk on kaggle or another forum, to see if other data scientists or ML engineers would agree with my solution
+
+the guys who would answer me, it felt like they just copy paste my question into GPT model and replied with GPT answers lmao
+
+i wonder what they gonna gain by faking being some ML gurus
+- I've worked with someone who claimed to be a data scientist and even director of Data analytics for some start up and couldn't manage to do merge in pandas, kept giving me incorrectly merged files.
+- I lie about working in data science
+- I've met alot of people who I know lie about their experience, even people clearly within the field. I suspect many others do as well. However, I often like to reserve judgement until it matters since often times it maybe I am the one who is ignorant.
+
+Not to be crass, but case in point with Kafka, I've never used is as a primary tool in Data Engineering for workflows. The reason is pretty standard - Kafka has always been owned by Enterprise Architecture teams as an Enterprise integration component, and I have other tools available to me. My Data Engineers use the topics as a source sure, but as a role differentiated example, my data science teams handled all deployments of models as consumable topics across event, on-demand or batch services.
+
+Im sure there were other signals like you mentioned that showed their lack of understanding. I just wanted to pick at that example on how our experiences may lead to an understandable ignorance. Especially if they have something similar in a managed service where they aren't connecting the dots like AWS Kinesis.
+
+But yeah - the lack of consistent definitions for data science, data scientists, AI/ML etc leads to a range of white lies to outright and intentional misrepresentation.
+- I'm seeing people being put in "data science" jobs who "know how to use excel" -- as in they can put stuff in a spreadsheet. I'm guessing it's because the companies don't want to pay for better, or don't know what they need, not because better isn't out there. Those people are definitely going out in the world telling people they work in data science.
+- Just because they don’t know what you know doesn’t mean they aren’t a DS. What you mentioned does not equate to core DS knowledge
+- I don't think they lied per say, DS is just all things these days. I have met data scientists who have never opened a stats book, they build power bi dashboards but they are data scientists. I consider myself a data scientist due to pure math/stats/physics background, and building ML/NLP models, but there are few things that I don't know, for example financial models, temporal stuff, but I have a lot under my belt now since when I graduated. In few cases people do lie, but as long as they have some stats/math background, and willingness to learn I always teach them, and love to watch them grow. I have trained engineers, chemists, physicists on how to become a good data scientists, and love it when they develop something new / novel and many of them are amazing at what they do now.
+- I think it’s a term thing. IT field data scientists are based on the software. Science based data scientists (epidemiology for example) are based in the math.
+- The person you met is probably a chief data officer

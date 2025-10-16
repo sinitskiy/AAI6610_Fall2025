@@ -1,0 +1,20 @@
+URL: https://www.linkedin.com/posts/treycausey_llm-hallucinations-are-likely-unsolvable-activity-7348443482274897920-INVL
+Date: 2025-09-24
+Author: Unknown
+
+LLM hallucinations are likely unsolvable, even with more model advances. But there's still hope!
+
+I've been thinking about why the conversation around hallucinations misses the mark. While most of the discourse focuses on making models technically better, the real problem is how we present AI outputs to users.
+
+Right now, every response looks identical whether it's factual, creative, or complete nonsense. A model might give you perfect legal advice followed by completely made-up citations. Users get a tiny disclaimer at the bottom and no guidance on when to be skeptical.
+
+The solution isn't zero hallucinations (probably impossible). It's better UX design:
+
+- Flag high-risk scenarios in the interface
+- Let users choose between "creative" and "fact-finding" modes
+- Train models to say "I don't know" more often
+- Give contextual clues about reliability
+
+Wikipedia went from banned in classrooms to authoritative reference through better editorial processes. Google became a verb by solving trust through PageRank. AI will follow a similar path.
+
+The winning AI products won't have perfect models. They'll have trustworthy UX.

@@ -1,0 +1,29 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1i7l902/need_some_advice_about_a_machine_learning_model/
+Title: Need some advice about a machine learning model design for 3d object detection.
+
+Content:
+I have a model that is based on DETR, and I've extended it with an additional head to predict the 3d position of the detected object. However, the 3d position precision is not that great, like having \~10 mm error, but my goal is to have 3d position precision under 1 mm.
+
+So I am considering to improve the 3d position precision by using stereo images.
+
+Now, comes the question: how do I incorporate stereo image features into current enhanced DETR model?
+
+I've read paper "PETR: Position Embedding Transformation for Multi-View 3D Object Detection", it seems to be adding 3d position as positional encoding to image features. But this approach seems a bit complicated.
+
+I do have my own idea, where I got inspired from how human eyes work. Each of our eye works independently, because even if we cover one of our eyes, we still can infer 3d positions, just not that accurate. But two of the eyes can work together, to get better 3d position predictions.
+
+So my idea is to keep the current enhanced DETR model as much as possible, but go through the model twice with the stereo images, and the head (MLP layers) will be expanded to accommodate the doubled features, and give the final prediction.
+
+What do you think?
+
+Comments:
+- Can you also tell more about the hardware (what is used as imaging source) ? What is the FOV, the acquired data and its resolution ? When you say 10mm error, hiw do you compute it ? And is the error the same in all dimensions (X, Y, Z) ? Because 10mm error might already very "good" depending on your hardware/setup  (I daily work on all means and algortihms to localize/register objects to servo polyarticulated robots)
+- Can you share some resources so I could get a basic understanding?
+- It is euclidean distance error combining x,y,z. And it is computed for data points that has distance less than 150 mm away from camera. For farther datapoints, it has larger error. 
+Camera will be using intel realsense d405. But right now I am using blender rendered synthetic data.
+For the error, x and y axis error is much lower, around 1mm, but z axis has much larger error, around 10 mm.
+The sub-millimeter performance is needed for some delicate robot operations.
+- You mean machine learning as general, or 3d object detection specifics, or DETR?
+- No just anything related to this usecase
+- DETR original paper for sure. And PETR paper for 3d object detection. In the PETR paper, you would also find a lot of citation, that would lead you to more resources. Ye, I know papers are hard to read. But the state of the art techniques are in papers…

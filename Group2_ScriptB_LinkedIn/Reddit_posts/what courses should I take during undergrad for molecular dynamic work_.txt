@@ -1,0 +1,27 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17t2vc9/what_courses_should_i_take_during_undergrad_for/
+Title: what courses should I take during undergrad for molecular dynamic work?
+
+Content:
+I'm a Freshman looking to major in CS and to pursue molecular dynamic work in grad school. The general consensus here is that you should CS major + bio minor / vice versa, but does this remain the same for molecular dynamic work? Should I not minor in bio and instead take extra courses in physics? I've been told by some of my professors that physics is a crucial part of the field (and CS if you're developing MD tools), and that the biology can be picked up on. Currently, I'm in a research lab not focused on MD but related to biophysics and machine learning.
+
+MD work doesn't seem to be the main focus here on this sub, so I wanted to clarify. 
+
+Comments:
+- it depends on what exactly you mean by "molecular dynamics work". If you are just gonna be using existing MD tools to answer biological questions, then honestly just introductory knowledge of newtonian physics / calc and the relevant molecular biology of wtv molecular you are studying will be sufficient.
+
+If you want to create a new MD software package using similar force fields as existing ones, then your focus should probably be on software development. 
+
+If you are trying to come up with more accurate force fields, that probably requires grauduate level knowledge of quantum physics/chemistry
+- * Introductory physics 
+* Go as far as you can with Newtonian physics (not just physics 101)
+* Statistical mechanics
+* Statistics
+* Quantum mechanics if you want to do mixed models or ab initio force field development
+* Vector calculus and maybe some linear algebra for all the above
+* If you want to go deep into the theory then you'll need lots of additional math
+* Sounds like you're way more on the quantitative side, so biology is the last priority. Lots if room for people like this.
+- I would think that extra courses in physics would probably be more useful for this. You can always do a few crash courses outside of your university to learn the basic biology.
+- Yeah, I think this narrows down my confusion. 
+
+What's the typical avenue in industry? Answering biological questions, creating MDF software packages, or the accurate force field stuff?

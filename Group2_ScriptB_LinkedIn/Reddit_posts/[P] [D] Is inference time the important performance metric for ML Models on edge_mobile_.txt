@@ -1,0 +1,54 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ckcn7b/p_d_is_inference_time_the_important_performance/
+Title: [P] [D] Is inference time the important performance metric for ML Models on edge/mobile?
+
+Content:
+I am currently engaged on a project that aims to give some insight to machine learning engineers about how their models perform on vast variety of mobile devices.
+
+It is starting to be a very popular practice to embed machine learning models within apps and use them without needing any api/network connection. You can see most examples especially for apps that use computer vision heavily. Passing each and every image to cloud for processing is simply unacceptable, data heavy and slow. With the latest improvements in the field, embedding ml models to apps gets easier and preferable.
+
+**This comes with another price though.** 
+
+There are 1000s of mobile devices out there that come with different chipsets like Qualcomm, Exynos, Snapdragon etc. They also come with different gpu capabilities and on top of that different OS versions.
+
+All these combinations are very likely to create some uncertainty. Does my model performs the same way it does in the office's android test phone?
+
+After working on a computer vision and machine learning startup for more than 3 years as a lead mobile engineer who embedded 10s of models inside apps, answer to that question is very clear to me. **No, my model will not perform same on a Xiaomi Android 11 phone as it performs on your office Samsung Android 13. And often you will not even know that.**
+
+ML engineers will be highly isolated from the app environment. They can measure the performance of ml model already with their tools in the cloud when it comes to accuracy, recall etc. Which are very very important metrics. But, they already measure/evaluate that. **When it comes to inference time, it heavily depends on the system it works on**. It is not feasible to have each and every mobile device in the office available.
+
+To solve this issue, we have decided to develop mobile SDK and a platform for collecting/visualising some metrics. And we have decided the most important metric, at the heart of the issue, would be the **inference time**.
+
+I would like to ask you people if this makes sense and is reasonable. Is there other vital metrics you think a ml engineer would be interested in? 
+
+The SDK we prepared collects all device related metadata( memory available, cpu usage, os, api level, battery etc.) and inference time parameter and shows charts like:
+
+- OS System vs inference time
+
+- Device model vs inference time
+
+- Memory available vs inference time in a single session etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Comments:
+- I would suggest to call “inference time” “latency” and also add a “throughput” measure.
+- Are these models used only in one scenario where they are called periodically with one input (e.g., batch size 1)? If not, I suggest looking at MLperf inference scenarios and characterizing these models based upon what mode they operate in ( single stream, multi-stream, batch). This will help determine what metrics to collect. There's a white paper that describes it in details.
+- yes
+- In this paper, they were looking at computational complexity and latencies based on number of concurrent requests, and even energy consumption: https://ieeexplore.ieee.org/abstract/document/10508580
+- It's the important metrics for ALL models.
+- Not a ML engineer, but a software engineer who worked with mobile apps at a previous job. When releasing a mobile app, you don't data from thousands of devices. In each generation Apple is releasing 1 CPU, Qualcomm a few and Mediatek a few, all other makers don't really matter in terms of market share. So you are fine with testing the midrange from Apple, Qualcomm and Mediatek. That's only three devices.
+- I agree, "latency" makes sense. Adding throughput measure is great idea. Thank you.
+- Depends on the client really. Whatever model they are using, it is on them. Adding single stream, multi-stream and batch modes is great idea. I will definitely want to add this as apps can use multiple ml models with different modes. Thanks a lot!
+- Thanks for sharing! I will look into this.
+- I don't necessarily agree with your take but, thanks for the input. AI applications are resource heavy apps where every detail of hardware&software might play a big part. Snapdragon itself has multiple generations that are heavily in use today on different devices. And if you think snapdragon is going to behave same everywhere independently from the os or other hardware in the device, this might be a recipe for disaster. I don't think testing on 3 devices would cover your market when developing any random android app let alone a resource heavy ml/ai app.

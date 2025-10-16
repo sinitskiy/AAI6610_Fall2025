@@ -1,0 +1,24 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cxzzxz/explain_protein_stability_in_a_simplified_way/
+Title: Explain protein stability in a simplified way?
+
+Content:
+Hi so I wrote my thesis on protein stability caused by amino acids variation. I am student of machine learning and I did this topic because I wanted to use supervised machine learning methods to see how well they perform on predicting protein stability. My question is what is the significance of studying protein stability or categorizing it? What is its added value? Why do we need machine learning methods here. I have defense coming up for my thesis and am seeking explanation to make the audience hooked and interested in my topic. Since this community is mainly for bioinformatics I would really appreciate your help in this regard
+
+
+
+Comments:
+- In short, the easiest thing to measure (currently) is messenger RNA mRNA, which is translated to protein. However, as proteomics studies are published, there are clear disconnects between mRNA and protein abundance, and even the change in abundance. You’d expect by increasing mRNA you’d increase protein in a cell, but often not the case.
+
+Protein stability is a major source of post-translational regulation in a cell. Basically, once you’ve made a protein, how does the cell get rid of it? (Or keep it, and for how long.)
+
+Look up ubiquitination and proteasome degradation, major processes focused on ensuring routine “turnover” of proteins in the cell. Major diseases are caused by having just one ubiquitination enzyme even partly faulty… throwing the balance of proteins in the cell way off.
+
+These issues also disproportionately affect immune related proteins, in part because those need the most control. A “danger” signaling protein needs to turn on, then needs to turn off. If it doesn’t turn back off, it can cause a myriad of chronic immune conditions.
+
+There are a ton of regulatory mechanisms. Another is “unfolded protein response” (upr), I think that’s the phrase. Basically a poorly structured protein is supposed to be degraded quickly. Viral proteins, mutant-encoded proteins, things like that. If these proteins aren’t degraded they literally “gum up the works.”
+
+Fascinating topic. I’d think that the training would be affected by test data, which may be affected by what ubiquitination enzymes are active in the cell used to generate the test set. In other words, prediction may be limited to cells with consistent set of Ub enzymes as your test set. Or train model using the cells of interest, then use for prediction.
+
+Good luck!
+- Wait you write your entire thesis on something and you have no idea about the value of it?

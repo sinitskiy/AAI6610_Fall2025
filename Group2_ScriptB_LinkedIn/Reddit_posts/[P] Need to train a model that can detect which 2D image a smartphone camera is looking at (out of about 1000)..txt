@@ -1,0 +1,21 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lnnp8u/p_need_to_train_a_model_that_can_detect_which_2d/
+Title: [P] Need to train a model that can detect which 2D image a smartphone camera is looking at (out of about 1000).
+
+Content:
+Hey everyone. I'm an AR developer and studio owner, I'm looking for someone to help us with a client project that requires training a machine learning model. Specifically I want a model that can tell me which pin (out of about 1000) a smartphone camera is looking at. Assuming there is only one pin in view, and it's fairly close to the camera. I don't need to find it's location in the image, just need to know which pin I'm looking at. 
+
+Here is a sample of a few pins:
+https://imgur.com/a/iTdWhbw
+
+They are all more or less that size. I would love some direction and even training code, happy to pay for your time. DM me for more info.
+
+Comments:
+- This sounds like a fairly simple problem if you have the design of all pins and/or can take pictures of all of them
+- Seems like this could be solved with some sort of template matching instead of ML/DL?
+- You could try fine-tuning a pre-trained ImageNet CNN. There's probably better options now but that's where I would start
+- so the question is which pin out of the 6 pins in your sample image is the camera looking at? what does the ground truth look like for this sample?
+
+or if its more like identifying out of 1000 pins, what pins are shown in a picture, that sounds way easier to do with object detection + classification.
+- Maybe but depending on the specifics you might not even need DL.
+- If it's the first, I think it's a pretty bad problem statement. The only way you could formalize which pin the camera is looking at would be some form of centrality measure of a pin wrt to the complete image.

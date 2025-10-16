@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/td6mk0/r_forecasting_theory_and_practice/
+Title: [R] Forecasting: theory and practice
+
+Content:
+Link: https://arxiv.org/abs/2012.03854
+
+Abstract: "Forecasting has always been at the forefront of decision making and planning. The uncertainty that surrounds the future is both exciting and challenging, with individuals and organisations seeking to minimise risks and maximise utilities. The large number of forecasting applications calls for a diverse set of forecasting methods to tackle real-life challenges. This article provides a non-systematic review of the theory and the practice of forecasting. We provide an overview of a wide range of theoretical, state-of-the-art models, methods, principles, and approaches to prepare, produce, organise, and evaluate forecasts. We then demonstrate how such theoretical concepts are applied in a variety of real-life contexts.
+
+We do not claim that this review is an exhaustive list of methods and applications. However, we wish that our encyclopedic presentation will offer a point of reference for the rich work that has been undertaken over the last decades, with some key insights for the future of forecasting theory and practice. Given its encyclopedic nature, the intended mode of reading is non-linear. We offer cross-references to allow the readers to navigate through the various topics. We complement the theoretical concepts and applications covered by large lists of free or open-source software implementations and publicly-available databases. "
+
+Comments:
+- While this is potentially a strong reference paper for traditional forecasting, the sections on machine learning are pretty awful. 
+
+There are 4 ML sections, each about a page long. The section describing neural networks looks like it was written in 2008 (it just describes MLPs, RBFs, and generic RNNs). A subsequent section briefly describes deepAR but is primarily focused on the general concept of probabilistic forecasts. The next section describes how to forecast with ML generally, with no focus on a particular model. The final ML section is focused on LASSO.
+- Interesting. There was a paper doing a comparison of forecasting methods posted here the other day, but the paper/methods had some problems
+- Are you aware of reviews that would cover better latest deep learning approaches for forecasting ?

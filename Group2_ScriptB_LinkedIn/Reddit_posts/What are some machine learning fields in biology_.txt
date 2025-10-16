@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/ehym4p/what_are_some_machine_learning_fields_in_biology/
+Title: What are some machine learning fields in biology?
+
+Content:
+I've only heard of diagnostics through image classification, but what are some other areas where ML is applicable? Are there other methods of diagnosis? What are some topics? Anything related to cancer? Research papers would be helpful.
+
+Comments:

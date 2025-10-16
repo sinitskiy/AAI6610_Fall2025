@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/pankaj-bhagwat_iclr2025-iclr-bayesianmodelaveraging-activity-7318742435256233985-Xy_A
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Pankaj Bhagwat的动态
+Pankaj Bhagwat
+
+Postdoctoral Research Fellow @University of Alberta | Statistician | ML Researcher | Fairness & Privacy in AI | Instructor
+
+5 个月
+
+Excited to share that I’ll be presenting our work “CBMA: Improving Conformal Prediction through Bayesian Model Averaging” at #ICLR2025 in Singapore!
+
+Our paper explores how Bayesian Model Averaging can be combined with Conformal Prediction to produce more reliable and efficient prediction sets - a step forward in uncertainty quantification of ML models.
+
+📌 If you're attending ICLR 2025, stop by my poster presentation to talk about:
+- Bayesian perspectives on model uncertainty
+- New insights in conformal prediction
+- Potential applications in trustworthy and reliable AI
+
+📍 Poster Session Info
+ 🗓️ Thursday, April 24  🕙 10:00 a.m. – 12:30 p.m. 
+📌 Hall 3 + Hall 2B, Poster #426, Singapore EXPO
+
+📝 Paper: https://lnkd.in/gwEZHsUD
+ Authors: Pankaj Bhagwat, Linglong Kong, Bei Jiang
+ Institution: University of Alberta
+
+Thanks to the #ICLR community and reviewers for the feedback and support!
+
+If you’re working on Bayesian inference, robust ML, or fairness & privacy in AI, let’s connect - I'm actively exploring applied collaborations in the space.
+
+#BayesianModelAveraging #ConformalPrediction #PosterPresentation #UncertaintyQuantification #MachineLearning #TrustworthyAI #ICLR2025 #AIResearch #MLFairness  
+
+24
+1 条评论
+赞
+评论
+分享
+Akash Nagare
+
+Data Analyst @FNF India | Ex-Intern at C-DAC | SET Qualified | MSc in Statistics, Dept. of Statistics, SPPU, Pune | INSPIRE Scholar | IIT JAM MS - AIR 258
+
+5 个月
+
+This is truly inspiring Pankaj Bhagwat  Dada... As someone like me who is passionate about Statistics, Bayesian Inference and ML your work on integrating CBMA with Conformal Prediction is fascinating and incredibly relevant... 
+Wishing you all the best for your presentation at ICLR 2025...
+Is there any way we can join or view the poster session online?
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+825 位关注者

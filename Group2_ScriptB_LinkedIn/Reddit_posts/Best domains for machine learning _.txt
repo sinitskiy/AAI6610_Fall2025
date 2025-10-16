@@ -1,0 +1,38 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hexjm9/best_domains_for_machine_learning/
+Title: Best domains for machine learning ?
+
+Content:
+What are the best domains for expertise where I can use machine learning ? I don't want to use machine learning as it is I want a domain to use it, for eg: I have read about signal processing, healthcare, finance etc. 
+
+ 
+
+Comments:
+- {x∈R:x > 0}.
+- Personally I like robotics/autonomous stuff. Whether it's best or not, I don't know. 
+
+
+I really don't like marketing/adtech stuff but that's where the money is.
+- [deleted]
+- The domain where you already have domain knowledge.
+- [removed]
+- Fraud detection
+- If you're into forecasting, the energy domain is great !
+- You don't need to do a specific master's degree (for example machine learning in finance). You just need to work to a specific domain/ industry in order to understand your data and apply your machine learning (or statistical) knowledge. It's better to do a master in Computer Science or Statistics rather AI/ML. The highest paid domains are adtech, finance, supply chain and healthcare. The best domains are the ones you would like to work to
+- Check out AI weather forecasting and Earth modelling. Loads of progress in the last couple of years and interesting/worthwhile. See Google's GenCast model among various others.
+- Definitely would back up healthcare, a lot of money and projects (computer vision, NLP/LLMs, classical ML...)
+- Always try to go for a domain that helps generate revenue like marketing and is not a cost to the organization like risk, compliance etc. You will have very limited capacity to innovate as a data scientist in a cost saving domain.
+- geospatial sector
+- I need some clarity on exactly what the scope of your inquiry is. You're asking what subject matter expertise best complements ML? In terms of marketability with respect to finding a job?
+- Figure out what applications are interesting to you. No one else can do that for you.
+- Coordination.
+- domain where has pattern and less noise
+- I don't know what you mean by the best domain. Do you wish to work on projects that pay well or projects that give you a sense of problem solving and personal fulfillment? In my experience the two are rarely aligned. 
+
+Cybersecurity and fraud detection pay well, but can be mind numbingly boring. Areas like detecting medical anomalies may not pay as much in comparison but are far more interesting in terms of the breadth of problems that you get to work on. 
+
+Additionally this field is evolving rapidly. So if constant learning is something you aren't up for then you'll have a hard time trying to remain the same in this field.
+- A principal ideal domain.
+- Finance, and Cybersecurity are my personal favorites.
+- IME , you want to be in a position where the data is the product. That makes you close to revenue and essential. Try not to join a company that is “dabbling” in data science. The business units will never take your analytics/predictions seriously and your job will not be safe if times get tough. 
+The biotech/pharma/academic worlds need machine learning and data science. If you can find one that’s actually profitable and you are helping w profit generating research, I’d guess you’d be golden. Consulting is also good bc the firm is selling you . You’re the product

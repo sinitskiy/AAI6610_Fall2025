@@ -1,0 +1,52 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1iifkr9/whats_the_best_ai_model_for_differentiating/
+Title: What’s the Best AI Model for Differentiating Jewelry Pieces with Subtle Differences?
+
+Content:
+my case is that I have a jewlry
+
+I'm working on a machine learning model to identify **fine-grained differences** between **jewelry pieces**, specifically **gold rings that look very similar** but have slight variations (e.g., different engravings, stone placements, or subtle design changes).
+
+# What I Need:
+
+* **Fine-grained classification**: The model should differentiate between similar rings, not just broad categories like "ring vs. necklace."
+* **High accuracy on subtle differences**: The goal is to recognize nearly identical pieces.
+* **Works well with limited data**: I may have around **10-20 images per SKU** for training.
+
+Comments:
+- Or if there is a different method I am open for suggestions
+- It really depends on what you want to input as to what you can do. If you've got a 3d scan of the model then you can use  shape analysis methods but if you're going off images then it's going to be more difficult
+- What’s the use case?
+- My guess would be use a generic ring detector to get a mask, then after, do some traditional cv algo. 10-20 images is tough. You could potentially try DinoV (not dinov2) as well.
+- If these - almost identical - object pairs are relatively few, when it says your query object looks very similar with e.g. two different objects in the database, signaling this case (double match)  is a good thing, it can raise an alert to be checked by a human. Bad would be to pick only one and not mention any potential confusion.
+- So funny story, I have an implementation for a jeweller doing exactly this, you need to closely understand what pieces you will be differentiating, if its rings, then train a model by getting a few thousand images of rings.
+
+Use a pre trained model like ResNet or InceptionV3, unfreeze a few layers and train on top for as many epochs that gets you closest to your result. 
+
+Then broadly categorize as much as you can on top, so gemstones vs no gemstones, train on hard negatives, and your last piece of search is vision not your first
+- Hey everyone - My company has achieved this!  
+  
+1. We have trained a ML model which has achieved 90%+ accuracy on jewellery images   
+2. Works for all categories, recognizes and differentiates b/w identical peices etc  
+3. Live with a manufacturer with 1 Million design bank. Working out great! They upload customer photos with poor lighting, blurry pics, bad angles and yet our AI search software identified exact match in top 10. 
+
+If you want more details you can check this link and contact me, happy to help out.
+
+[https://www.canva.com/design/DAGvM3dE0Fg/hnUR4Mhp-h7N2Z70ICy8mA/view?utm\_content=DAGvM3dE0Fg&utm\_campaign=designshare&utm\_medium=link2&utm\_source=uniquelinks&utlId=hc3edb8ab10#1](https://www.canva.com/design/DAGvM3dE0Fg/hnUR4Mhp-h7N2Z70ICy8mA/view?utm_content=DAGvM3dE0Fg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc3edb8ab10#1)
+
+Thanks!
+- It’s very unlikely you’ll find something that does this out of the box. Your best bet is probably something like ChatGPT with carefully designed prompting. I don’t know if chat GPT can point at locations though…but other models probably can. Basically “here are two doffeeent pieces of jerwlery. Indicate what is different between them”
+
+If you have ML development skills you could built something better, but that won’t necessarily be simple.
+- yeah I've been at it for 3 days and I still don't have good results. Am exploring other methods right now like sift which I don't know what it means but hey it might work who knows.
+- stock management. each piece has an SKU with serial numbers. I want it to bring up the sku for the piece when captured with the app that uses API
+- Hey - interested to collaborate?
+- Oh no my goal is not getting the difference between them. I want the model to know which specific piece this is. like knowing the species of birds but instead to know the product
+- Sift probably isn't the best option for this because it falls apart for shiny objects. It basically tries to describe small visual features but if those features are just the reflection instead of actually on the object then it's not going to work well
+- so you want to go from photo via app to SKU?
+
+I have built a very similar system to what it sounds like you need except for a different use case 
+
+If it’s inventory management then why computer vision - why not barcodes on swingtags or RFID?
+- Actually I just finished testing it. welll.... it suspiciously works well. too well infact.... I don't know I don't trust it that much. no training fast prediction ect. I'll look into it more and see other methods. thanks for sharing that info about reflictions and shiny objects I'll take that into considerations
+- I guess with only a couple sample pictures of an unique object for "training" this is one of the most likely way to  recognize same object in a third picture.

@@ -1,0 +1,75 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1he7ao0/read_video_game_scoreboard_screenshots/
+Title: Read video game scoreboard screenshots
+
+Content:
+Hello, I am looking for some help for a small project where I would like to read information from screenshots of a video game scoreboard. Since our tournaments validate game results with screenshots, we also use them to take some stats from the games. But doing so manually wastes a lot of time so I looked into ways to extract the data from the images.
+
+Here is a sample image.
+
+[Sample scoreboard screenshot](https://preview.redd.it/vuhnxgtjfu6e1.jpg?width=1680&format=pjpg&auto=webp&s=febb46f6ea4b9b15aef5478dab3a11da8a902108)
+
+I have tried to use OCR tools like Tesseract and EasyOCR, but the results aren't that satisfying.
+
+In my current program, I select the area of the scoreboard which then gets split into different ROIs (Region of Interest) to perform OCR on. 
+
+[Sample scoreboard with ROIs](https://preview.redd.it/ic0o2280gu6e1.png?width=1608&format=png&auto=webp&s=91fa020a3837bd348d60d5159143756dbef9dde7)
+
+This has been giving me mixed results, with Tesseract being relatively good at identifying individual digits, and EasyOCR performing better on longer sequences.
+
+    Tesseract:
+    
+    [RMS] Aesten,,4,,
+    [Wolf] Greedalicious,,6,6,
+    Ar-Pharazon,8,4,3,644
+    Royalus,4,5,5,592
+    [Wolf] Queen_Rita,2,,4,413
+    f4f_cricket,1,5,3,232
+    [Hawk] Alex,7,9,5,09
+    [TOCS] Taimic,5,6,4,644
+    Mountain Blade,,2,1,363
+    [BS] Vakarn,5,8,2,298
+    Mortex,1,4,,288
+    qusqui21,1,4,3,240
+    
+
+    EasyOCR:
+    
+    [RMS] Aesten,13,,5,1224
+    [Wolf] Greedalicious,,,,739
+    Ar-Pharazon,,,,644
+    Royalus,,5,,592
+    [Wolf] Queen_Rita,,,,413
+    f4f_cricket,,,,232
+    [Hawk] Alex,,,,985
+    [Tocs] Taimic,,,,644
+    Mountain Blade,,,,363
+    [BS] Vakarn,,,,298
+    Mortex,,,,288
+    ~qusquiz1,,,,240
+
+At this point I am even considering aggregating the results of both OCR reads, but if anyone knows how to get better results I would like to know. I did try some image transformations like upscaling/blurring on some ROIs, but with not much yield.
+
+Because I currently have to select the area of the scoreboard manually, I didn't perform OCR on other areas, but preferrably I would like to be able to completely automate the process of reading the screenshots. If I could also read the rounds (center top), factions (right and left top corners), and count the MVP badges (the small yellow-ish icons below score values), it would be very cool.
+
+Prefereably I would like to avoid training machine learning models, but if there is no other way I might give it a shot.
+
+Thanks!
+
+Comments:
+- You could use aws textract service, its paid, but provides promising results
+- Have you finetune the OCR yet or just using the pretrain model?
+- You should create a set up that just has fixed locations for everything so you know what to expect and where.  If you don't want to train a model, I'd suggest then using several different OCR tools and ensembling them.
+- Have you played around with all the settings Tesseract has ?
+
+You might also be interested in some post processing of the rois to make them more readable [https://stackoverflow.com/questions/9480013/image-processing-to-improve-tesseract-ocr-accuracy](https://stackoverflow.com/questions/9480013/image-processing-to-improve-tesseract-ocr-accuracy)  
+
+
+if it is still bad have a look at some other ocr tools ( paddleocr worked good for me)
+- It probably isn't a project that is worth spending money on, and since I might have to share it with other people, I'd prefer making something that anyone can use in a simple manner.  
+But thanks for the info, I didn't know AWS provided an OCR tool.
+- I have only used the base pretrained models. I did try some image processing techniques to try improving results, but haven't delved into the machine learning models themsleves.
+- Providing fixed locations is actually hard because the scoreboard can be scrolled up and down, that's why I was trying to figure out a way to identify it on an image with some image processing techniques. I just don't know enough about the techniques to pick a good approach.  
+I guess using multiple tools and combining outputs is the simplest approach for a reasonable effort to outcome ratio. But the text on these screenshots being relatively clear, I though any modern pretrained model would've been able to find text without much tweaking. I guess we're not quite there yet.
+- I think you should get some images and try finetune it on your specific case, the model then will work better on your images than general pretrain.
+- It's never going to be that accurate unless you can fix it in place.  I'd highly suggest trying to find some sort of fixed method to detect this stuff.

@@ -1,0 +1,57 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1ndtey6/d_having_trouble_organising_massive_csv_files_for/
+Title: [D] Having trouble organising massive CSV files for your machine learning models?
+
+Content:
+I've been fighting with CSVs from our high end power quality meter from a very reputable instrument company. 
+
+The CSV files come out from the unit immediately unusable and at 2 million samples per second its a huge dataset, and we take lots of measurements. I made some scripts go clean it but its still a mission every time that I dread to get to the good bit. 
+
+Comments:
+- Cleaning data has always been a major part of the work required in making realistic production pipelines for every data analysis domain, before machine learning it also applies to data science, business intelligence and data warehouses and whatnot. This problem has been around for literally half a century, and is as important as ever.
+- I’m not sure what you mean by organizing?
+
+Are these malformed CSV’s like with inconsistent rows and columns?
+
+Are you meaning where the files themselves are saved, like if you split them into folders? Or move them into a database?
+- For dealing with power signals, it's common to have them encoded and compressed as waveforms (e.g. in a format you might use for audio) rather than text-like files as CSVs which assists a lot with sampling and transforming. Parquet is another much better option than CSVs if you need tabular data. 
+
+Do what you can to put the CSV data into a better format *fast* \- e.g. on ingestion, make the CSV read/Parquet write program highly optimised and simple in a nice compiled language, then do the scripting/analysis/learning part with the better format IMO.
+- what makes the csvs unusable?
+- You want to convert the CSV into parquet and put it into icetables if you can do that. Snowflake would do this easily for you.
+- Sounds like these files should be in parquet format and you should be using something like databricks+pyspark
+- If you are dealing with very large datasets you should look into columnar storage like Parquet. CSVs have their limits.
+- 2 million samples per second from power quality meters creates some serious data engineering challenges before you even get to the ML part. Raw industrial data is notoriously messy - timestamps that don't align, missing values, different sampling rates across channels. power quality data often has additional issues like harmonics and transients that need special handling. For datasets this large, consider streaming preprocessing rather than batch processing entire files. libraries like dask can help with out-of-core processing when the data won't fit in memory. The cleaning scripts are worth investing time in upfront. standardized preprocessing pipelines save massive headaches later when you're training models and wondering why performance is inconsistent across different measurement sessions. Also worth considering data validation checks during the cleaning process and power quality data can have sensor drift, calibration issues, or equipment faults that create training data problems if not caught early. What specific ML tasks are you training for with the power quality data? the preprocessing approach can vary significantly depending on whether you're doing anomaly detection, classification, or forecasting.
+- Crap in crap out so its painstaking. What are you using to help. I put together some python scripts but I need a new one for each set of different data we take.
+- The data is normally compressed after running FFTs and power calculations by the unit. We take additional data streams of raw data for further analysis but the data isn't organised in a way that you can feed it into other software therefore we need to apply some deletion of columns and some addition of actual time columns rather than the data given. It's arduous and a lot of man hours given the sheer volume of data. I was really just wondering what people are doing to overcome situations like this.
+- The way they are downloaded from the unit. There may be a bit of intentional difficulty in the output CSVs as I cant see any way you could use them anywhere else off the bat. We input the raw data into other software for analysis and training hence we need them in a specific format.
+- > I need a new one for each set of different data we take
+
+this is your actual problem
+- I tend to push any tabular data into formats like parquet or databases like duckdb. Script everything so the man hours are just to double check results and hit the “run” button. 
+
+It’s unclear, are you able to write and optimize code or are you looking for out of the box tools? Nothing wrong with the later but it’s a different question.
+- Still difficult to understand what exactly is going on. Sounds like you've got the CSVs coming from the power meter + other measurements that you want to aggregate into timestamped data streams.
+
+You need to write some custom program (python for example) that can take these multiple inputs. For the csv for example you can use:  
+\`\`\`  
+df = pd.read\_csv(<csv file>, usecols=\[<list of known good columns>\])  
+\`\`\`
+
+not sure if the csv you get has timestamps per row...  
+if your other inputs are also timestamped, then you can try to find the nearest row in the original csv and append the auxiliary input as a separate row:  
+you can use \`ts = pd.to\_datetime(<string value>)\` and then \`.get\_loc(ts, 'nearest')\` etc. pandas has decent timestamping functions.
+
+Finally your program would output the cleaned and merged dataframes into new csvs \`df\_new.to\_csv(<output.csv>)\`
+
+You can then hand off that cleaned/processed csv to the downstream tasks.  
+Either way you'll need to write that processing code - so you'll have to consider any edge cases and write methods to handle them. Ideally this would be one program to handle it all.
+- I was looking for an out of the box solution. I can code but im trying to pass this on to others to work who dont code.
+- Gotcha.
+
+Sorry I can’t help. 2 millions rows a second is a lot of data to handle without knowing how to code, I will say that!
+- Honest question, since an out-of-the-box solution is basically someone else's code anyway — would it be possible for you to just code the solution and hand it off to them, with the caveat that you won't be adapting that code unless you have the time to (and you likely won't)?
+
+Is the data expected to change over time, and they will want customisations ad hoc?
+- That's where im at, Sir.
+- Is there any way you can get your bosses to hire more people who can code, or teach the ones who already work there the magic?

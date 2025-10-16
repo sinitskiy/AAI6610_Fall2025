@@ -1,0 +1,17 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1gaoccz/discussion_understanding_tensorflow_probability/
+Title: [Discussion] Understanding Tensorflow Probability 
+
+Content:
+I am trying to find good examples online where a predictive maintenance model training pipeline is built making use of the uncertainty estimation by using the tools from tensorflow probability.
+
+Let’s say I have a dataset with sensor readings and time to failure, I have a fair understanding of training a regression model to predict the time to failure, but I don’t have any means to know how certain the model is to this TTF output.
+
+Does anyone have any good references and examples of using tensorflow probability for regression with uncertainty estimation? I am looking to learn more on this, appreciate any help on this.
+
+Comments:
+- If your model outputs a probability distribution, you can use the log-probability (or log-probability density, if the model is continuous) of the observed values to define your loss function (flip the sign if you are going to minimize it). This optimization is known as [maximum likelihood estimation](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation).
+- Since the objective for me to is have let’s say the standard deviation of the distribution along with the distribution itself, does it make sense to have 2 output layers defined and concatenated to achieve this ? 
+
+How would the NLL loss handle this ?
+- I don't understand "the standard deviation of the distribution along with the distribution itself".

@@ -1,0 +1,44 @@
+URL: https://www.linkedin.com/posts/oluwaseun-alagbe_when-i-was-in-university-i-didnt-really-activity-7223996073252405248-JqTN
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Oluwaseun Alagbe的动态
+Oluwaseun Alagbe
+
+Senior AI & DevOps Engineer.
+
+1 年  已编辑
+
+When I was in University, I didn't really like Mathematics. Here in Nigeria, there's a popular phrase we say: "School na Scam." It means going to school is a scam. Most people say this because they don't understand how Mathematics is related to solving real-world problems. Some would say, "How would Matrices and dy/dx put food on my table? Abeg jhare" (Abeg jhare means "Please don't stress me"). This was the whole narrative, and it was shared by more than 70-80% of Nigerian students studying math-related courses.
+
+But I saw things differently. As someone who's been in the AI field since university, I could see how mathematics aligned with solving real-world problems. I was able to help my friends understand this too, and I taught a few more people about the relationship.
+
+I've collected some math concepts and their uses in the AI world. As I always say, "𝘈𝘐 𝘪𝘴𝘯'𝘵 𝘔𝘢𝘨𝘪𝘤𝘢𝘭, 𝘈𝘐 𝘪𝘴 𝘔𝘢𝘵𝘩𝘦𝘮𝘢𝘵𝘪𝘤𝘢𝘭."
+
+Here's a list I compiled:
+
+1. Matrices: Used in image processing and neural network computations
+2. Vectors: Represent data points and features in machine learning
+3. Linear equations: Solve optimization problems in AI
+4. Probability: Used in decision-making algorithms and prediction models
+5. Statistics: Analyze data patterns and model uncertainties
+6. Calculus: Optimize machine learning algorithms
+7. Logarithms: Used in various loss functions and information theory
+8. Exponential functions: Applied in activation functions like sigmoid
+9. Trigonometry: Used in signal processing and computer vision
+10. Set theory: Helps in data organization and logic in AI systems
+11. Graph theory: Applied in social network analysis and recommendation systems
+12. Differential equations: Model complex systems and time-series data
+13. Linear algebra: Fundamental in most machine learning algorithms
+14. Geometry: Used in computer vision and robotics
+15. Complex numbers: Applied

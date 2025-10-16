@@ -1,0 +1,38 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/soawni/should_i_start_a_phd_biochemistry_to/
+Title: Should I start a PhD? +Biochemistry to Bioinformatics transition.
+
+Content:
+Hi, I've recently finished my undergraduate studies in biochemistry and I was thinking of starting a PhD in computational biology instead (in my country I achieved a score that would allow entry). I know R code decently, although the extend of my knowledge in machine learning comes from online tutorials.
+
+What level of competency in programming should I have before making this decision? And what should I do to build these skills before I choose to start a PhD? If it matters, I'm also in my early 20s.
+
+Comments:
+- I would say being comfortable with python would be an advantage for sure, but you can pick this up from online courses. I would also look into big data/data mining tools as well. But this will be dependent on your possible PhD topic. Some are very code-heavy while others just use readily available tools/code. 
+
+I started my PhD with basic python/biopython knowledge. And by basic I mean basic. No numpy, scikit I didn’t even know about arrays. I spent about a year of my PhD attending machine learning classes and learning it.  Thankfully my supervisor was supportive and encouraged me to spend time just learning even if it did not directly lead to publications, etc. 
+
+To build your skills code and learn to read/understand the code of others. Come up with small projects/problems and try to code a solution. Look up bioinformatics papers where they linked their GitHub and see what they done/how it was coded.
+- i think it also depends on what types of bioinformatics/computational biology works you are interested in or are going to do. 
+
+i think roughly speaking, bioinformatics or computational biology could be further divided into biology-driven or computation/algorithm-driven two streams, and maybe biostatitics as the third. 
+
+for biology-driven stuffs, they are more like experimental study i would say, you come up with specific biological questions, and instead of doing experiments, you carry out computational analyses to try to solve it;
+
+while for computation/algorithm-driven stuffs, they are more like IT/CS work more or less, you aim to develop novel algorithm or softwares or methodology for analyses. 
+
+the first one is more like you would generally use what are already available, while the second one is like you would create sth. completely new, so roughly you could see how much programming or coding background, or even like mathematic knowledge etc. you would need. 
+
+i have been involved in both stream though i ended up in experimental researches, and i think for the first stream, you might not need that much "hardcore" coding skills, but rather you need to have a general idea of what is going on with codes and packages and how you are going to use them or "modify/revise" them based on your need. 
+
+hope these sorta help!
+- If you're a smart person which I'm sure you are you can pick up the coding aspect. It's a matter of immersing yourself into it. Go with what you feel would be fun and challenging. Smart people have to be challenged in their pursuits in life. Plus knowing that aspect will give you significant better career prospects; in my experience there is an abundance of people skilled in biochemistry that aren't familiar with bioinformatics which is essential for any findings.
+- I have a biochem backround too, im a year into my PhD in bioinformatics, it’s a lot of hardwork, but possible!
+- You are at the right age in your life to devote several years to earning a PhD, in either biochemistry or bioinformatics. I cannot speak about biochemistry (wet labs), but I did earn my masters with a bioinformatics specialization (dry lab experiences). What are you interested in researching and analyzing? Bioinformatics requires a lot of programming, software maintenance, and data curation/archiving to allow you to undertake in silico analysis of your interest(s). R and Python are two very popular languages now, and they each have many free modules to link. There are also many stand-alone applications, some with GUIs and others with command-line interfaces on Linux platforms  that use bash shell and regex commands. Jupyter notebooks are also being incorporated into the analysis pipeline. Lastly there are many bioinformatics websites like NCBI BLAST and EBI-EMBL that offer online bioinformatics tools. Are you comfortable behind a computer instead of being behind a lab bench? You should sit down quietly and determine what your thesis will be, and then what is the best route to get there. Many scientists become "amphibious," that is they have both wet and dry lab experience. 
+
+I hope you can afford not only the tuition but also your living expenses, and your loved ones will understand your time away from them during your studies. A PhD program is an opportunity cost - the time you spend in it takes time away from your life to work to pay your bills and to have a family life. I wish you the best of luck.
+- I'm just commenting so I get notifications, as I am in a similar situation except I am a genetics graduate with a background in Python. Best of luck!!
+- How much maths is needed for the second option? I really want to work with Algorithms and machine learning but my maths is very, very subpar
+- idk or we won't know until you really start i guess lol but you have time anyway i guess 
+
+also it might also depend on what your project/supervisor/lab are really doing ?

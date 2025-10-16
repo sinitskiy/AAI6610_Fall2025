@@ -1,0 +1,67 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/dj3jex/d_uncertainty_quantification_in_deep_learning/
+Title: [D] Uncertainty Quantification in Deep Learning
+
+Content:
+This article summarizes a few classical papers about measuring uncertainty in deep neural networks.
+
+It's an overview article, but I felt the quality of the article is much higher than the typical "getting started with ML" kind of medium blog posts, so people might appreciate it on this forum.
+
+https://www.inovex.de/blog/uncertainty-quantification-deep-learning/
+
+Comments:
+- Indeed, very well written article, thank you for sharing! I learned a lot
+- Thank you for sharing this!
+- I did a presentation few months ago about the theme as well (https://www.slideshare.net/perone/uncertainty-estimation-in-deep-learning) if someone is interested. I always prefer to call it *uncertainty estimation* instead of *uncertainty quantification*.
+- This is new to me. Is there an overlap of this area with ML Interpretability?
+- Would that explain why my individual predictions change when I recalibrate my NN with another seed ? I usually calibrate multiple NN with different random weight initialisations and take the best performing one. As a short path to individual prediction stability, would it make sense to average the top n models predictions ?
+- I wrote a post on the same topic: [https://treszkai.github.io/2019/09/26/overconfidence](https://treszkai.github.io/2019/09/26/overconfidence) (the main content is in the linked PDFs). We used calibration plots and calibration error to evaluate the uncertainty estimates, and we also found that deep ensembles and MC dropout increase both accuracy and calibration (using the CIFAR-100).
+- I don't believe 1 bit in these estimates. While the methods give some estimate for uncertainty, we don't have a measurement of true underlying certainty, this would require datapoints with pairs of labels and instead of maximum likelihood training, we would do full kl-divergence. Or very different training schemes (see below) But here a few more details:
+
+In general, we can not get uncertainty estimates in deep-learning, because it is known that we can learn random datasets exactly by heart. This kills
+
+1. Distributional parameter estimation (just set mean= labels and var->0)
+2. Quantile Regression(where do you get the true quantile information from?)
+3. all ensembles
+
+The uncertainty estimation of Bayesian methods depend on their prior distribution. We don't know what the true prior of a deep neural network or kernel-GP for the dataset is. This kills:
+
+1. Gaussian processes
+2. Dropout-based methods
+
+&#x200B;
+
+We can fix this by using hold-out data to train uncertainty estimates (e.g. use distributional parameter estimation where for some samples the mean is not trained or use the hold-out data to fit the prior of the GP). But nobody has time for that.
+- In Uncertainty Quantification, you estimate how accurate your output actually is. ML interpretability is about interpreting the model as a whole. You can have a really accurate model, without much interpretability.
+- Yes, you can usually expect some variance in the predictions depending on initialization and other sources of randomness like SGD. Combining several models is called ensembling and is a very common technique, e.g., random forests are ensembles of decision trees, but training many NNs can of course be expensive. Averaging makes sense for regression, for classification you can do majority voting.
+- Can you elaborate on how learning random datasets exactly by heart defeats the point of getting uncertainty estimates? It seems to me that the aforementioned methods do not aim to estimate the true uncertainty, but just give some metric of uncertainty that can be useful in downstream tasks.
+- While I agree current DL uncertainty estimates are pretty questionable and would cause most statisticians to cringe, your statements are not really correct. 
+
+For aleatoric uncertainty:  All you need the holdout data for is to verify the quality of your uncertainty estimates learned from the training data. It is the exact same situation as evaluating the original predictions themselves (which are just as prone to overfitting as the uncertainty estimates).
+
+For epistemic uncertainty the situation is much nastier than even you described.  The problem here is you want to be able to quantify uncertainty on inputs which might come from a completely different distribution than the one underlying the training data. Thus no amount of holdout data from the same distribution will help you truly assess the quality of epistemic uncertainty estimates, rather you need to have some application of interest and assess how useful these estimates are in the application context (particularly when encountering rare/abberrant events).
+
+The exception to this is of course Bayesian inference in the (unrealistic) setting where your model (likelihood) and prior are both correctly specified.
+- [deleted]
+- Ah right. Makes sense.
+- if your network has enough power to learn your dataset by heart, there is no information left to quantify uncertainty. I.e. you only get the information "point was in your training dataset" or not. It says nothing about how certain the model actually is. In the worst case, it is going to mislead you. e.g. ensemble methods based on models that tend to regress to the mean in absence of information will give high confidence to far away outliers. (e.g. everything based on a Gaussian kernel).
+
+maybe you can get out something based on relative variance between points, e.g. more variance->less uncertainty...but i am not sure you could actually proof that.
+- "All you need the holdout data for is to verify the quality of your uncertainty estimates"-> Counter-example: you have a regression task, true underlying variance is 2, but unknown to you. model learns all training data by heart, model selection gives that the best model returns variance 1 for hold-out data MSE is 3.What is the quality of your uncertainty estimates and what is the model-error in the mean?
+- what if your model learns the dataset by heart and returns loss 0? in this case, you will not see the different slopes of the pinball loss and there is no quantile information left over. We talk about deep models here, not linear regression.
+- If the true model is y = f(x) + e where e ~ N(0, 2) and your mean-model to predict E[Y|X] memorizes the training data, then on hold out data, this memorized model will tend to look much worse (via say MSE) than a different mean model which accurately approximates f(x).  So your base predictive model which memorized the training data would never be chosen in the first place by a proper model selection procedure.  
+I’m not sure what you mean by hold out MSE = 1, for a sufficiently large hold out set, it should basically be impossible for hold out MSE to be much less than 2, the Bayes Risk of this example. If your uncertainty estimator outputs variance = 1 and you see MSE=3 in hold out, then any reasonable model selection procedure for the uncertainty estimator will not choose this uncertainty estimator and will instead favor one which estimates variance > 2
+
+My point is everybody already uses hold out data for model selection (which is the right thing to do) whereas you seem to be claiming people are using the training data for model selection (which is clearly wrong).  But this all has nothing to do with uncertainty estimates, it is also wrong to do model selection based on training data for the original predictive model which estimates E[Y|X])
+- I am talking regression, you are talking classification. Pinball loss can be applied to an NN. Anyway, you should not allow the model to over train to this extend. Just execute validation frequently enough and then early-stop, simple.
+- no i am talking regression.
+
+you have data points (x\_i,y\_i). y\_i=g(x\_i)+\\epsilon\_i, \\epsilon\~N(0,1) model learns f(x\_i)=y\_i. pinball loss 0.
+
+learning a measure of uncertainty takes longer than learning the means. if you early stop, it is very likely you won't get proper quantile information out.
+
+&#x200B;
+
+I think this is not the time, nor the place for snarky answers.
+- In validation you can check not only the quality of the center, but also of the quantiles. You can take forecast of the center at an earlier epoch that the quantiles. Again, very much doable. 
+BTW, there is no good reason to assume that the error is normally distributed.

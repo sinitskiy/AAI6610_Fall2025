@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/kshitij-sirohi-3112k_autonomousvehicles-autonomousdriving-robotics-activity-6952269452956602368-IodS
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Kshitij Sirohi
+
+Computer Vision and Deep Learning Scientist | Autonomous driving | Uncertainty estimation
+
+3 年  已编辑
+
+We are excited to share our latest work on "Uncertainty-aware Panoptic Segmentation." In our work, we aim to enable the perception system to provide a holistic scene understanding together with an estimate of the uncertainty related to the predictions. While most methods try to optimize their performance to maximize the segmentation quality, they do not evaluate the network's uncertainty estimation quality. However, for the safe operation of a system in the real world, it is crucial to consider the uncertainty in the prediction as well.
+
+In this work, we introduce the novel task of uncertainty-aware panoptic segmentation, which aims to predict per-pixel semantic and instance segmentations, together with per-pixel uncertainty estimates. We define two novel metrics to facilitate its quantitative analysis, the uncertainty-aware Panoptic Quality (uPQ) and the panoptic Expected Calibration Error (pECE). We propose the novel top-down Evidential Panoptic Segmentation Network (EvPSNet) to solve this task. Our architecture employs a simple yet effective probabilistic fusion module that leverages the predicted uncertainties. Additionally, we propose a new Lovasz' evidential loss function to optimize the IoU for the segmentation utilizing the probabilities provided by deep evidential learning. Furthermore, we provide several strong baselines combining state-of-the-art panoptic segmentation networks with sampling-free uncertainty estimation techniques. Extensive evaluations show that our EvPSNet achieves the state-of-the-art on our uncertainty-aware panoptic metrics.
+
+w/ Mohammad Sajad Marvi, Daniel Buescher, and Wolfram Burgard
+
+paper: https://lnkd.in/e_8rtj3A
+code: https://lnkd.in/eskxJZxD
+
+#autonomousvehicles #autonomousdriving #robotics #computervision
+
+…展开
+139
+14 条评论
+赞
+评论
+分享
+Tim Schulte
+
+Software Developer | AI Spe

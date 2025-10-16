@@ -1,0 +1,44 @@
+URL: https://www.linkedin.com/posts/jahniverse_bayesians-vs-frequentists-i-didnt-come-activity-7366046002614530048-viin
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Moriba Jah的动态
+Moriba Jah
+
+Celestial Steward 🌍 | Co-Founder & Chief Scientist | Astrodynamicist | MacArthur "Genius" Fellow | TED Fellow | IntFRSE | Professor | Data Rennaiscientist | Global Speaker | views are my own not affiliated organizations
+
+1 个月
+
+Bayesians vs Frequentists:
+
+I didn’t come here to agree with others or tow the line. 
+
+Bayesian theory is useful for many things that can be modeled as random. All too many times, it’s used to model belief (or ignorance). 
+
+Freqentist theory is also very useful and powerful for processes that repeat, are cyclical, etc. 
+
+In my own experience, I’ve seen when and here these fail and understand why. 
+
+In uncertainty quantification (UQ) there is aleatory and epistemic uncertainty. Aleatory is uncertainty due to randomness (assuming that’s a thing) and epistemic is due to systematic factors or ignorance. 
+
+I posit that one cannot know something to an extent beyond its aleatory uncertainty, by definition. To wit, our knowledge ends where randomness begins. 
+
+If something is truly random, no amount or type of data can help us know more about it. 🤷🏾♂️ and yet, the bulk of Bayesian inference allows for such a thing. To me, any uncertainty that can be reduced and converted into knowledge is not aleatory but rather epistemic. 
+
+As soon as you say “that’s random” you’ve given up on learning more about it. Replacing our ignorance with randomness is giving up and it’s the easy route. 
+
+I’ll never actually know if randomness actually exists. Nobody will, but I’ll assume it doesn’t to prevent myself from getting complacent with my ignorance and keep myself always in the pursuit of greater knowledge: science defined.
+
+Do I use Bayesian models? Sure, and I do so knowing the limitations. 
+
+“Whenever a model is built, it is always proper to ponder the basic scientific question: is the model really based on the data or is an artifact displaying the prejudices of its creator?” Rudolf Emil Kalman,

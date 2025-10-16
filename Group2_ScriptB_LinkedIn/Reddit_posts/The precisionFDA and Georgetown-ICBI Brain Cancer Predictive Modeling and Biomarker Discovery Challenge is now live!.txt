@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/dtm20f/the_precisionfda_and_georgetownicbi_brain_cancer/
+Title: The precisionFDA and Georgetown-ICBI Brain Cancer Predictive Modeling and Biomarker Discovery Challenge is now live!
+
+Content:
+The goal of this challenge is to advance techniques for the prognosis and treatment of brain tumors by asking participants to develop machine learning and/or artificial intelligence models to identify biomarkers and predict patient outcomes using gene expression, DNA copy number, and clinical data. For more information and to get started, visit [https://go.usa.gov/xpD4j](https://go.usa.gov/xpD4j)!
+
+Comments:

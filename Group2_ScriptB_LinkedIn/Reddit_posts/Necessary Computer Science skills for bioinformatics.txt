@@ -1,0 +1,39 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/10jpczl/necessary_computer_science_skills_for/
+Title: Necessary Computer Science skills for bioinformatics
+
+Content:
+Hi everyone, I just started a graduate program in bioinformatics. I have some programming/coding knowledge, and I'm currently taking two classes; one based on machine learning and another on neural networks.
+
+What other computer science skills should I be proficient in for bioinformatics? I was searching up online that data structures and algorithms is a big one and its a pre-requisite for a lot of upper-level CS courses at my university.
+
+I've also read up on the importance of object oriented programming, software testing, some aspects of software engineering, knowledge of working with databases, data science, software debugging, Linux, and Github. I know this is a lot but I'd really like to know peoples' opinions on what CS skills are necessary.
+
+Any feedback is appreciated. Thanks!!!
+
+Comments:
+- All of the things listed are great and will get you most of the way there. You listed super broad fields so you'll have a fair bit of learning to do lol. A small thing you can add to your list is Docker.
+
+Once you get a good basis you can start testing your knowledge at Rosalind.info
+- Most bioinformatics is done in Python or R in my field.
+Parallel computing could be good to add.
+- Depends on what you're focused on.  It could literally be the entire computer science field.
+- I agree that testing is a fundamental skill you should, esp in a field like science that stresses correctness and reproducibility. My book, Mastering Python for Bioinformatics (O'Reilly, 2021), shows how to use tests as a you write your program, what's called "test-driven development." I also cover other best practices in software development and show many ways to code the same ideas. I actually stay away from object-oriented programming as much as possible and stress how to use ideas from purely functional programming to create smaller programs that are easier to test (IMHO).
+- And Singularity to go along with Docker. If you work in HPC environments where you don't have Docker it will make your life easier.
+- So it’s pretty much context dependent I guess? Different skills for different bioinformatics concentrations? Is there a general skill knowledge you should have?
+- I didn't know HPC couldn't use docker. Do you mind elaborating? I use it on my server, but I also have root access, which is necessary on a server.
+- For example - I use a LOT of algorithms, and a lot of math, and programming. Writing tools, etc.
+
+But there are just as many (if not more) bioinformaticists that mostly use tools created and are more developer based with pipelines. There are also just as many that run analyses with tools, and are more focused on statistics/plots that their wet lab colleagues ask them to make.
+
+Basically, you can't do it all. It's really similar to Mathematics, or CS, or Stats etc. The field is just massive, and you'll have to specialize.
+
+It never hurts to learn as much as you can, but it'll take time. I personally finished 3/4 of an undergrad in Neurobiology / Phys (basically pre-med), then swapped to Computer Science. So by the time I finished my CS degree, I also had chem, organic chem, genetics, gateway biology classes etc, and then upper levels too that I had chosen in things like population genetics, selection theory, bioinformatics. I also chose upper levels in computer science that were computational biology focused when I could.
+
+If you really want to be valuable, just get really good at coding honestly. Both in Python and R. I only use R for plotting, and all analyses are done in Python / Jupyter notebooks. It can be a bit dull to some, but grinding problems on leetcode.com is actually a very legitimate way to get good at coding. Just do Algorithms problems, and write everything in Python.
+
+But at the end of the day you'll need to decide what you *want* to do, then focus on those areas. I don't want to do wet lab stuff, so I literally just took my courses then learned all the biology on the job. Haven't stepped foot in a wet lab since, and am perfectly content to think about problems computationally for the rest of my life really. But I have a coworker that sort of just scrapes by computationally, has no real formal training in it, but really likes the biology side of things and understanding all the deep details to it all.
+- [deleted]
+- Any uses of a bio degree?
+- Yeah root access is an issue, but I wasn't sure if there was a technical reason as well. I've also used podman, which is basically docker without requiring root access.
+- If you get a bio degree and have zero dry lab skills or xp, you will need to work in the wet lab honestly.

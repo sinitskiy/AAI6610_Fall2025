@@ -1,0 +1,26 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mejly0/p_tri70bpreviewsft_open_70b_parameter_llm_for/
+Title: [P] Tri-70B-preview-SFT: Open 70B Parameter LLM for Alignment Research (No RLHF) | Trillion Labs
+
+Content:
+Hi r/MachineLearning!
+
+Our startup, Trillion Labs, just released [Tri-70B-preview-SFT](https://huggingface.co/trillionlabs/Tri-70B-preview-SFT), a 70 billion-parameter language model trained on \~1.5T tokens. Due to an unexpected compute crunch, we had to cut short on training tokens and opt for a pure supervised fine-tuning (SFT) approach—no RLHF.
+
+# Key Highlights:
+
+* **Pure SFT, zero RLHF**: Great baseline model for alignment experiments (RLHF, RLVR, GRPO, CISPO, etc.)
+* **32K token context window**, optimized for long-context tasks
+* Strong performance benchmarks (\~Qwen-2.5-72B and LLaMA-3.1-70B), but definitely raw and unaligned
+* Optimized multilingual capabilities (primarily English, Korean; Japanese support available)
+* Introduced new techniques: **FP8 mixed precision, Scalable Softmax, and iRoPE attention**
+* Fully open-source on HuggingFace under a permissive commercial license (though experimental!)
+
+We’re explicitly inviting alignment researchers and NLP enthusiasts to evaluate this model. We'd greatly appreciate feedback on strengths, weaknesses, and especially any alignment issues.
+
+👉 [Model & Details Here](https://huggingface.co/trillionlabs/Tri-70B-preview-SFT)
+
+Happy to discuss more—ask us anything below!
+
+Comments:
+- This "Tri-70B-preview-SFT" model shows promising performance, but has some limitations; I'd love to help you iron out the kinks and align its capabilities.

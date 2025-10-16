@@ -1,0 +1,20 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/12pgd2w/machine_learning_in_genomics_workshop/
+Title: Machine learning in genomics workshop
+
+Content:
+Hi all,
+Please summer is coming, what are some workshops or conferences you are attending to improve your machine learning in Bioinformatics skills.?
+
+I’m specifically interested in machine learning for genomics, I’ll appreciate your recommendations.
+
+Thanks.
+
+Comments:
+- The Canadian Bioinformatics Workshop series hosts an online Machine Learning workshop this year from [August 16 to August 17](https://bioinformatics.ca/workshops-all/2023-machine-learning/)
+- [Illiniois' AIFarms](https://aifarms.illinois.edu/) gets into this.
+- Hey, that's us! Thanks for recommending. 
+
+FYI, CBW may have "Canadian" in the name but we have international participants in every workshop. Happy to answer any questions!
+- Thank you
+- I have only heard good things about the CBW courses and I know many of the faculty members. I can't recommend them enough!

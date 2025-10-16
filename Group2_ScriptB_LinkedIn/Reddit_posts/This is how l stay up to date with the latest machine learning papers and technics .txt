@@ -1,0 +1,47 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1huz6ax/this_is_how_l_stay_up_to_date_with_the_latest/
+Title: This is how l stay up to date with the latest machine learning papers and technics 
+
+Content:
+l go for the popular papers l hear about on Twitter and machine learning subreddits(Andrew Ng suggests these as great places to get the latest ml information). It won't cover everything, but it's okay and better to have some coverage than none - just because there are too many papers.
+
+As for why l go for popular(by popular l mean a lot of technical/knowledgeable people are talking about them), well for certain things to be adopted they need some adoption, and l am sure there are great frameworks/architectures out there that just never got adopted and are not used a lot.
+
+I will not write GPU kernels just so l can make this esoteric architecture, which l found on a paper somewhere,  work. Instead, I would use the popular transformer architecture, with lots of documentation and empirical evidence to support performance.
+
+How about you all?
+
+Comments:
+- I have nothing to contribute since I haven’t even read Attention is All You Need yet. I think your way is best; there’s so much research coming out everyday and unless it’s your day job, it makes sense to just read what’s popular.
+- I just... don't.
+
+I've not kept up to date with LLMs for about a year. Now I'm about to start a new project that uses them so I'm going to refresh and research some approaches.
+
+The more you know, the easier it is to talk in general terms with stakeholders, understand what they need and the general way you'd approach it. Then it's easy to research specific approaches once you have a specific problem.
+
+You don't actually need to proactively stay up to date with all the latest ML, you just need to stay practiced at quickly picking things up.
+- Anyone who's been in this field long enough and actually does proper modeling and value driving knows that you simply do not need to do this, lol. 
+
+Sure, having a generic understanding of what technique/approaches are being used is helpful for discussions with leadership or team members, but unless you're actively working or preparing to work on a project that requires the use of the lastest and "greatest" tools/techniques, which most don't, btw, then I'd say you could spend your time being more productive in other ways.
+- I don’t keep up with papers, but I look for interesting GitHub repos of applications. If I like the project then I’ll read the paper.
+- Personally I self host FreshRSS, link up to a variety of different blogs, websites, etc...not just ML related, but for al interests. [https://freshrss.github.io/FreshRSS/en/admins/06\_LinuxInstall.html](https://freshrss.github.io/FreshRSS/en/admins/06_LinuxInstall.html)
+- nice
+- I'm terrible at actually reading the papers but I try to keep up via the [arxivx RSS feed[s]](https://info.arxiv.org/help/rss.html) and listening to updates on the abstracts there daily via [CustomPod](https://custompod.io)
+- This sounds like a solid approach. I might start doing this too!
+- hub for RSS feeds + twitter specific profiles
+- I agree! Focusing on popular papers and widely adopted frameworks like transformers makes sense—there’s solid support, plenty of documentation, and proven performance. It's not worth diving into esoteric architectures without community backing. Efficiency and practicality always come first for me.
+- PapersWithCode.com is the best site you will ever use. Papers split up by SOTA task/domain with links to GitHub code and benchmark results. The Trending feed is typically just hype GenAI stuff but still good
+- I mean there’s no one way haha
+- I think staying abreast is important for leadership roles - either through application of methods, recognizing when tech has caught up to yesterday's problems, or mentoring junior members.
+
+One thing that really benefited me in grad school and continues to today - just read abstracts.  Then read intros if you have time.  Read methods for papers that are very interesting to you.  Read the whole paper if its interesting, where challenging you would result in growth, and if you have time.
+- I dont think it matters unless youre a research scientist
+- i think your way is probably best
+- .
+- I don't know if this would work for your case but I have found that following a few experts and mainly phds on LinkedIn or X helps as they keep posting the latest frameworks and papers and provide arcxiv links to them.
+- Im writing deep learning paper reviews (5 a week) and write technical blog on different data science related issues on my substack: [https://aiwithmike.substack.com/](https://aiwithmike.substack.com/)
+
+  
+You're invited to follow
+- Thank you for this! This is helpful advice
+- [removed]

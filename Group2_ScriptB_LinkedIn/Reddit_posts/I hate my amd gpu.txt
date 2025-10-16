@@ -1,0 +1,43 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gfpgi5/i_hate_my_amd_gpu/
+Title: I hate my amd gpu
+
+Content:
+hello guys, my first post on here and I just want to say I freaking hate my amd gpu (running on windows) so damn much, I have been trying for 6 weeks now to train a simple face detection model using a public dataset, but my amd gpu refuses to elaborate! I wish I knew how bad amd was when it comes to machine learning and computer vision before I bought it 😔😔 I can’t even download linux due to other reasons, I also tried directML but that failed miserably for some reason, not really looking for help but if anyone is considering buying a build for computer vision (which I was not when I got mine) please avoid amd at all costs.
+
+Comments:
+- what exactly are you using to interface with the gpu ?? CUDA?? ZLUDA?? what exactly .. 
+
+also the error message is not really thrown by your amd gpu, its from pytorch ... basically saying that pytorch cannot see any CUDA devices..
+- Don't you think the problem is more you than your gpu? 😐
+- Do you have ROCm installed?
+- Even when you install pytorch with cuda and have a gpu, torch might say cuda is unavailable.
+
+Basically cuda version you have and the cuda version your gpu support sometimes will be different.
+
+https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with/61034368#61034368
+
+Look at the top voted answer. Might save you some trouble if you run into that!!
+- I recommend you just use online tools. There are a bunch of free colab notebooks you can use to train models
+- Why don t you use torch-directml instead? it works on any DX12 gpu
+- if you are serious in to DL, please sell your card and buy an used nvidia card, at least a RTX3060 12GB as a start, used RTX3090 would be better
+- This might help you: https://medium.com/@anvesh.jhuboo/rocm-pytorch-on-fedora-51224563e5be
+
+Try exporting the environment variable based on the architecture of your GPU
+- thing is I downloaded the cpu only version of pytorch and I am slightly undereducated when it comes to cuda, zluda and whatever that is, all I know is that cuda cores is what more recent nvidia gpus have, sorry.
+- Why this ferrari is not able to tow other cars if it has a lot of power?
+- thank you for the motivational words!
+- isn’t that only for linux?
+- wow tysm this is amazing, will use this if I get a nvidia gpu!
+- If you are uneducated about Cuda then it doesn't matter if you have Nvidia gpus or AMD gpus. Pytorch cpu will NOT detect gpus no matter its amd or nvidia
+- Bro you wrote that you have been trying for 6 weeks 
+... anyway idk much about and gpus either , so good luck ig.
+- Otherwise if you have a second slot just get a used 1080ti. For some playing around that should do it and if longer training time is no big issue.
+
+I wouldn't say it is impossible to get ROCm to work for your current GPU, but that probably needs some more tinkering on drivers.
+- Not sure, but I know Rocm needs to be installed for GPU accelerated PyTorch on AMD gpus.
+- ROCM is only available on Linux for Pytorch, yes.
+
+[https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+- You can use WSL if ur using a windows OS (note that u would have to reconfigure and download PyTorch and so on with the Linux versions if u take this route)
+- do you have any useful material I can use to learn a bit more about cuda, my professor really didn’t provide me with a good starting point, and a tight deadline.

@@ -1,0 +1,42 @@
+URL: https://www.linkedin.com/posts/shaoyuanlo_icml2025-ijcv-tmi-activity-7336571568912793600-Blvt
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Shao-Yuan Lo的动态
+Shao-Yuan Lo
+
+Assistant Professor @ National Taiwan University | PhD @ JHU | Trustworthy AI, Machine Learning, Multimodal Models
+
+4 个月
+
+🎊 Excited to share that we got 4 papers accepted recently — at #ICML2025 (Spotlight, top 2.6% of submissions!), #IJCV, #TMI, and #CVIU! Shout-out to my brilliant interns, Chunhui Zhang and Yuxiang Guo, and collaborators Shaoyan Pan and Anirudh Thatipelli!
+
+-
+
+Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning: A Scalable Bayesian Planner
+📄 Paper: arxiv.org/pdf/2506.01301
+🖥️ Code: https://lnkd.in/dsAScQQM
+- New work on scalable Theory-of-Mind (ToM) reasoning!
+- We propose a Bayesian ToM planner that decomposes social reasoning into stepwise updates, enabling small language models (7B) to specialize in ToM estimation and transfer their reasoning to larger models (405B).
+- This weak-to-strong control improves generalization across complex, multimodal environments. It achieves +4.6% over SOTA on ToM benchmarks, even in unseen settings. Let’s bring human-like mental state modeling to the next level.
+
+StimuVAR: Spatiotemporal Stimuli-aware Video Affective Reasoning with Multimodal Large Language Models
+📄 Paper: arxiv.org/pdf/2409.00304
+🖥️ Code: https://lnkd.in/dvqNGvSe (code will be released soon.)
+- Introducing the first MLLM-based framework for Video Affective Reasoning (VAR) — predicting how videos make people feel, not just what they depict!
+- We enhance emotional understanding with (1) frame-level + token-level stimuli-aware mechanisms, (2) new VAR instruction data for affective training, and (3) comprehensive evaluation with rich emotional metrics.
+- The proposed method boosts MLLMs’ ability to explain emotional reactions — a step toward socially intelligent AI.
+
+CBCT Reconstruction using Single X-ray Projection with Cycle-domain Geometry-integrated Denoising Diffusion Probabilistic Models
+📄 Paper: https://lnkd.in/dwQnzygc
+- Ultra-fast, high-fidelity CB

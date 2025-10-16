@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/12m6h07/tips_for_research_using_aiml_in_bioinformatics/
+Title: Tips for research using AI/ML in bioinformatics
+
+Content:
+Hi! I recently completed an Msc in Bioinformatics with distinction (in UK) and am currently working at a company as an intern (in India). I am very interested in the field of applying AI, specifically machine learning models on biological data (preferably omics). I am very passionate about doing a project on this and hopefully landing a PhD position soon (preferably in EU/UK), but I feel I lack experience in this field. I am trying to learn more about ML from courses online but they are mostly catered to very generic data science. Are there any other ways to improve my skillsets? Also does anyone know of institutes/universities/programmes that are specifically working and are productive in this niche? I would appreciate if anyone has any piece of advice or even just wants to discuss this topic :)
+
+P.S. Sorry if I sound absolutely naive or didn’t give enough background this is my first ever reddit post…
+
+Comments:
+- Well ML is largely data science. It’s tough to recommend something without knowing specifically what problems you’re looking at. 
+
+Broadly though, the absolute most important thing any AI/ML engineer needs to know is:
+
+1. What each algorithm is good at
+2. What each algorithm is **bad** at
+3. Why those algorithms are bad at what they are
+4. When **not** to use a particular algorithm
+
+And of those, (1) is the least important. 
+
+As for specifics, there’s a couple options. The first is to go through journal papers related to problems you’re interested in, and dissect their methods. What are they using? Why are they using that? What are the inputs and outputs? Can you get their code to work? Can you reimplement it yourself? Can you reimplement it in a different language? (The last step seems silly, but it’s really common that journals implement a solution in a language you’re not familiar with). If the problems are too complicated, go through their references for prior work—older solutions tend to be simpler. 
+
+If you’re just interested in learning about algorithms, you can check out [Google’s guide to ML](https://developers.google.com/machine-learning/guides)…I haven’t used it, but it seems pretty good.
+- Thank you so much that’s very helpful advice! Yeah, I know my problem is still vague but i think it’s hugely because of lack of enough background knowledge to think about specific problems, iykwim.

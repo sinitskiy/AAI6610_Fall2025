@@ -1,0 +1,11 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/u6zo72/p_improving_mulitclass_classification_accuracy/
+Title: [P] Improving mulitclass classification accuracy with Jain's Fairness Index
+
+Content:
+This is a light implementation of the idea in the paper [Leveraging Uncertainties in Softmax Decision-Making Models for Low-Power IoT Devices](https://www.mdpi.com/1424-8220/20/16/4603/htm). Instead of finding uncertainties I have added Jain's Fairness Index as a addition to the loss function.
+
+Gist: https://gist.github.com/Gananath/8d167384da7d3bc078650c73fab1a8dd
+
+Comments:
+- Thanks for sharing!

@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/anna-marqu%C3%A8s-i-banqu%C3%A9-9212095_artificialintelligence-machinelearning-activity-7372051248260399104-nhYV
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anna Marquès i Banqué的动态
+Anna Marquès i Banqué
+
+Lead QPPV Office Operations & Strategy, Deputy EU QPPV
+
+3 周  已编辑
+
+OpenAI recently highlighted one reason why models tend to “hallucinate”: training and evaluation procedures reward guessing over acknowledging uncertainty (OpenAI, Sep 2025). Yet this concern was articulated years ago: in 2021, Ben Kompa, Jasper Snoek, and Andrew Beam emphasized the importance of quantifying and communicating uncertainty in medical machine learning as a cornerstone for building trust. They argued that models must be able to say “I don’t know”, or ”I’m not sure”, since in healthcare contexts, guessing is unsafe.
+
+Fast forward to 2025, and the message remains the same: models must handle uncertainty transparently rather than improvising answers.
+
+The 2021 article highlights two key forms of uncertainty. Aleatoric uncertainty arises from noise or ambiguity in the data itself - variability that cannot be eliminated, no matter how much data is collected. Epistemic uncertainty, by contrast, stems from limited knowledge or insufficient data, and can be reduced as models are trained on more representative information. These distinctions underline why simple confidence scores are not enough: without understanding the type of uncertainty, users cannot judge how to act on model outputs.
+
+In my view, and building on their framework, we might also consider a third category from economics: Knightian uncertainty. Introduced by Frank Knight in 1921, it refers to situations so unfamiliar that no meaningful probability can be assigned at all. Unlike aleatoric or epistemic forms, which remain within the realm of calculable risk (the first can be measured, the latter reduced), Knightian uncertainty lies beyond risk itself. In such cases, the safest and most responsible action is abstention. This perspective adds an important layer: recognizing not just when a model is uncertain, but when it has entered truly unkno

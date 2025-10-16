@@ -1,0 +1,29 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/w5xfdz/origin_of_life_research/
+Title: origin of life research
+
+Content:
+I am new here. I have a bachelor's in general engineering ( mechatronics) , I have worked as a developer for a couple of years. I have some experience with machine learning and deep learning. I have heard about theoretical computer science playing a role in origin of life research ( like chemical evolution, assembly theory etc, ), where they try to find out what led simple chemicals and structures to form complicated molecules and eventually life. How do I go become a researcher in this field with my background. Should I do a master's in computer science and then a phd in computational biology or something. Or should I do a PhD in theoretical computer science, like algorithmic complexity. Or should I do a PhD in computational biology or just normal biology and learn the required computational tools on the side. I am completely new to this field and would appreciate it if someone could let me know what the latest research is and how do I become a part of that.
+
+Thanks.
+
+Comments:
+- So, I spent almost all my time during my education staring at computer code, but I got my Master's in Bioinformatics at Georgia Tech. I worked in the (Loren) Williams Lab at GT. In that lab, we studied the ribosome as a key tool for insight into the emergence of life. As I understand it, they were even theorizing mechanisms for evolution of the ribosome in accreting layers predating LUCA (the Last Universal Common Ancestor).
+
+If you're interested in learning more, you can visit https://cool.gatech.edu/
+- I'm not sure I have a specific field that you should target, but that kind of research is only ever going to happen in academia. So, I think the specific field/degree you chase will be less important that finding the right mentor/lab that actually DOES the work you want to do. I would suggest your first step be digging into those papers that interest you and identifying the researchers that lead, or even just exist, in that field. From there, you can consider asking them about suggested paths to doing the same research, or even identifying open opportunities in those very labs to pursue graduate education.
+- Origin of life research is very specialized.  It is not my field, but I cannot imagine more than a few dozens of research labs working in the area (NASA seems to support some of them).   Your best bet is to reach out to some of those researchers, explain your background, and ask their advice.  (to find out who to ask, you should look for appropriate journals, or look through the grants that NASA and the NSF support in the area).
+- It’s going to be in academia. Given your background, you might be able to jump into a PhD, no masters needed. Basically you’ll need to go on PubMed or Google Scholar and search for origin of life literature. The last author on the papers will be the person who runs the lab.
+
+Another commenter mentioned Georgia Tech. I saw a talk by someone who maybe was at Caltech? Not all of the origin of life literature is modeling. There is some good biochemistry work, like the finding that if you combine basic chemical building blocks like ammonium, methane, and water with electricity, you can make nucleotides and amino acids (the building blocks of DNA, RNA, and proteins). 
+
+You can also look into Astrobiology. These origin of life questions parlay very nicely into questions like “what would life need to emerge on other planets?”
+
+Dr. Foster at the University of Florida has a joint appointment with NASA’s Space Life Science Lab, and her lab does really fascinating work on this. And her students’ work includes fieldwork in the Caribbean for looking at geological features that could have catalyzed cellular emergence in the oceans. 
+
+Anyway, look for publications on these kind of questions, look for the last author, look at the PhD programs at their universities, and after you’ve put together some ideas for programs, you can email those professors, *briefly* explain your intentions and ask if they think you’re on the right track.
+- So i was teaching a workshop on bioinformatics in another country last week, and i had the very interesting experience of a first year Bsc student being - by far - the best student there, in spite of the class being full of postdocs and assistant professors. The only issue is that this student was done well before time but knew too little biology to ask any further or reasonable questions apart from the exercises I gave him to solve. The reason I'm telling you this is because you need a strong biology background to answer the questions you seek to work with here, and especially a deep understanding of the concepts and logic so far understood on the drivers of evolution. 
+
+You sound like, and correct me if im wrong, you have computational background well beyond most biologist, but probably wouldn't understand me if i started talking about red queen vs black queen hypotheses? That was my experience when i started working with actual biologists, and they thought me a lot about the basic rules i should be following before i started calculating my way out of simple problems.
+
+If you really want to work with some primordial soup stuff and how molecules became life, i think you will have to get your fingers in some chemical assays too, in which case you might be better of studying chemistry. Perhaps this can be simulated with sufficient data?

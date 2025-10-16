@@ -1,0 +1,72 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gx6sto/i_built_a_oneclick_website_which_generates_a_data/
+Title: I Built a one-click website which generates a data science presentation from any CSV file
+
+Content:
+Hi all, I've created a data science tool that I hope will be very helpful and interesting to a lot of you!
+
+[https://www.csv-ai.com/](https://www.csv-ai.com/)
+
+Its a one click tool to generate a PowerPoint/PDF presentation from a CSV file with no prompts or any other input required. Some AI is used alongside manually written logic and functions to create a presentation showing visualisations and insights with machine learning.
+
+It can carry out data transformations, like converting from long to wide, resampling the data and dealing with missing values. The logic is fairly basic for now, but I plan on improving this over time.
+
+My main target users are data scientists who want to quickly have a look at some data and get a feel for what it contains (a super version of pandas profiling), and quickly create some slides to present. Also non-technical users with datasets who want to better understand them and don't have access to a data scientist.
+
+The tool is still under development, so may have some bugs and there lots of features I want to add. But I wanted to get some initial thoughts/feedback. Is it something you would use? What features would you like to see added? Would it be useful for others in your company?
+
+It's free to use for files under 5MB (larger files will be truncated), so please give it a spin and let me know how it goes!
+
+Comments:
+- Huge data security risk
+- > Is it something you would use? What features would you like to see added?
+
+I tried this out with a dataset containing events when participant casted votes on a certain polling platform. 
+
+Key issues right away: 
+
+- "A ML model has been trained to predict [Column]" - why was this variable chosen as the target? What ML model? What was the CV/training process? Imo misleading for non-technical people, and an absurdity for data scientists
+
+- Numerical column containing only 3 distinct values was automatically considered as continuous, meaning that most visualizations don't make sense
+
+- Ran correlation analysis on multiple numeric columns, despite one being categorical, and the other 2 columns were IDs (specified in the name)
+
+- Despite the ML model absolutely failing, the model results & followup were nevertheless generated. 
+
+Actually the tool correctly identified a timestamp in UNIX format and was able to create visualizations based on this; This is fairly nice, although probably not complicated. 
+
+I'd never use this tool out of the box without understanding the data on my own (what do the columns represent, metadata, etc.). I'd write Python/R code to generate further insights that I am actually interested in instead of relying on an AI tool to do that for me.
+- Reminds me of [R's DataExplorer](https://cran.r-project.org/web/packages/DataExplorer/vignettes/dataexplorer-intro.html) and [Python's YData Profiing](https://docs.profiling.ydata.ai/latest/) libraries. You might find some inspiration for additional features (e.g. qq plots, NA by column)
+- It is like having an overenthusiastic data scientist trainee: it makes a bunch of pointless graphs, then tell me it can forecast the company's revenue from product A, it just needs the number of product A sold and the price of product A. Yea fella, but we don't know these data, when we need the forecast.
+- Thanks! I was worried we might go an entire day without another AI shovelware app.
+- What’s the link though? It sounds awesome.
+- Nice work, great quick insights
+- The mobile version is not responsive and need to fix initial zoom. (I could fix this :))
+
+Also I see potential in a human in the loop process where an experienced data scientist can make design decisions in terms of data engineering and modeling.
+- Given the comments on this thread are overwhelmingly negative, that’s a great sign this is a good idea.
+
+This is the same sub that trashed large language models for years and said ChatGPT has no value.
+
+If this sub hates it, you are onto something good
+- Late to the conversation, but this is a great product with real value. To mitigate security risks, employ good data governance practices and ensure you’re not feeding or using any personally identifiable data or any confidential highly sensitive data. 
+
+Obviously OP isn’t finished, but this is a great DS proof of concept with real business value. I’d recommend researching agentic workflows. It could be interesting to build agents specific to the dataset being ingested (marketing agent for marketing data, compliance data for soc agent, etc).
+- This is awesome! I love how easy you’ve made it to create data visualizations without any hassle. As someone who’s not super technical, this could be a game-changer for quickly understanding data. Can’t wait to see it evolve!
+- This is a really good tool !
+- So it's a website that runs a pandas profiling report?
+- Wow. May I know how did you learn and create this amazing tool? I just know the basic algorithms and the idea of how they work with an average coding knowledge.
+- groovy test familiar physical vast vase attraction placid snobbish pie
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- Ohhhh I love this! I'm going to test it out:)
+- This looks super cool, saw you having pricing etc what’s one or two VPs to using this as opposed to me simply asking ChatGPT/Claude to do it for me directly ?
+- Interesting! I just tried this out and I can definitely see this tool having a place in my analytical process, assuming that it was secure. 
+
+One big use-case IMO, might be to help freshmen data scientists accumulate a portfolio.
+- Given the comments on this thread are overwhelmingly negative, that’s a great sign this is a good idea.
+
+This is the same sub that trashed large language models for years and said ChatGPT has no value.
+
+If this sub hates it, you are onto something good
+- This is incredible. One day there will just be a single person behind a curtain doing all work for every company.

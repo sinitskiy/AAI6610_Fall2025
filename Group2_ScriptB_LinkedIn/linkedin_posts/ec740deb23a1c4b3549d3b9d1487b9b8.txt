@@ -1,0 +1,36 @@
+URL: https://www.linkedin.com/posts/barbaresco_workshop-on-cautiousness-and-imprecision-activity-7350466999916920833-_mY1
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Frédéric Barbaresco的动态
+Frédéric Barbaresco
+
+THALES "QUANTUM ALGORITHMS/COMPUTING" AND "AI/ALGO FOR SENSORS" SEGMENT LEADER
+
+2 个月
+
+Workshop on cautiousness and imprecision in machine learning 
+(October 9, Paris, Sorbonne Université)
+https://lnkd.in/eKh3bzKP
+Motivation and Focus
+The notion of uncertainty is of major importance in machine learning and constitutes a key element of modern machine learning methodology. In recent years, it has gained in importance due to the increasing relevance of machine learning for practical applications, many of which are coming with safety requirements. In this regard, new problems and challenges have been identified by machine learning scholars, which call for new methodological developments. Indeed, while uncertainty has long been perceived as almost synonymous with standard probability and probabilistic predictions, recent research has gone beyond traditional approaches and also leverages more general formalisms and uncertainty calculi. For example, estimates of so-called epistemic uncertainty can be done with genralisalition of Bayesian approaches, or with credal approaches using sets of probabilities. Other approaches will leverage geoetric considerations rather than relying on uncertainty theories. 
+Aim and Scope
+The goal of this small-scale workshop is to bring together researchers interested in the topic of uncertainty in machine learning, in particular when it involves notions of cautiousness, robustness, imprecision, missingness, etc. It is meant to provide a place for the discussion of the most recent developments in the modeling, processing, and quantification of uncertainty in machine learning problems, and the exploration of new research directions in this field. 
+Topics of interests
+The scope of the workshop covers, but is not limited to, the following topics:
+adversarial examples
+aleatoric and epistemic uncertainty
+Bayesian methods
+belief functions
+calibration
+classification

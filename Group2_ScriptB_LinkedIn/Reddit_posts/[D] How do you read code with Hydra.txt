@@ -1,0 +1,109 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n8lvz5/d_how_do_you_read_code_with_hydra/
+Title: [D] How do you read code with Hydra
+
+Content:
+[Hydra](https://hydra.cc/) has become a very popular in machine learning projects. I understand the appeal, it makes configurations modular, allows you to reuse some parts of it while changing another. It makes the code more reusable and modular too and if you understand all of it its better structured.
+
+My big problem is it makes it damn well near impossible to read someone else's code since every part of the code is now some mysterious implicit thing that gets instantiated from a string in the config file during execution. The problem would be alleviated if there was a way of quickly accessing the definition of the object that will get instantiated at runtime at least with the default values of the config. Is there a plugin that does that? If not, how do you guys do it ?
+
+Comments:
+- I’ve gone there-and-back-again with Hydra, and now I tolerate it, but I don’t love it.
+
+For experiments on our team, I like to push as much out of config, into code, as possible. Then `git tag` the branch.
+
+Hydra only for things that are changing in hyperparam sweeps. Anything that’s consistent across the experiment, push into code.
+
+I just find it much easier to figure out what’s *actually* been run when we come back to something a few months later.
+- Use Hydra-Zen! That let's you have obvious configs that are just your optimizer or your scheduler, for instance, without worrying about crafting weird custom kwargs.
+- Are there solid alternatives to Hydra? I've always disliked it from the beginning and I've been looking for a solid replacement
+- Pydantic :)
+- I use Typer instead to set up a CLI interface. I don't touch Hydra with a 10-foot pole for exactly the reasons you describe - it's unreadable to others.
+- pydantic-settings is enough for us and keeps you close to e.g fastapi validations if you use it
+- I don't understand your exact issue OP, can you make it a bit more clearer?
+
+To me this looks like:
+1. You define a config yaml, use it with hydra, can change the config parameters with hydra's cli. Every run of your program gets saved to the "outputs" dir hydra creates with the exact config (and hence cli params) that were used to launch the run.
+2. Use a simple cli tool: a second person has no idea what parameter values you used to launch the program.
+
+How is the alternative any better?
+- Hey!!!
+
+About seven years ago, before Hydra, I built my own configuration solution because I didn't love the direction these engines were headed.   
+  
+I wanted to keep things simple and keep them in Python! So ... I developed an easy way to configure Python functions directly in Python! Check out this code example below:
+
+    import config as cf
+    import data
+    import train
+    
+    cf.add({
+      data.get_data: cf.Args(
+          train_data_path="url_lists/all_train.txt",
+          val_data_path="url_lists/all_val.txt"
+      ),
+      data.dataset_reader: cf.Args(
+          type_="cnn_dm",
+          source_max_tokens=1022,
+          target_max_tokens=54,
+      ),
+      train.make_model: cf.Args(type_="bart"),
+      train.Trainer.make_optimizer: cf.Args(
+          type_="huggingface_adamw",
+          lr=3e-5,
+          correct_bias=True
+      )
+      train.Trainer.__init__: cf.Args(
+          num_epochs=3,
+          learning_rate_scheduler="polynomial_decay",
+          grad_norm=1.0,
+      )
+    })
+
+Once you are ready to use a configuration, you simply call \`cf.partial\` and a partial is created with your configuration settings!
+
+    import config as cf
+    cf.partial(data.get_data)()
+
+We've been using this for years at my company, and it works well! Internally, it's scaled out well for our large code base, which supports hundreds of variables that are organized, documented, and trusted. It's intuitive and easy for new team members! There are even advanced features to support tracing, command line, logging, distributed processing, etc ...
+
+I never got around to fully releasing the concept, but it's worked well on my teams!!!
+
+I hope it helps you all!!! Here's my repo: [https://github.com/PetrochukM/HParams](https://github.com/PetrochukM/HParams)
+- It's just that ppl are using it wrong. You should not pass a config object directly to a function or object, but instead do smt like this:
+
+
+```
+def make_optimizer(model, learning_rate, momentum, type, weight_decay):
+
+    # Optimizer creation routine 
+
+    return optimizer 
+
+
+opt = make_optimizer(model, **config.optimizer)
+
+```
+
+That way your function can still be used outside of a context where you have a config object, and can have proper documentation
+- Dont you use experiment configs? I put for every experiment a config with all the overrides in git and basically never change the default config (or change at the same time all the experiments to include the old default as override) so you can always go back and rerun stuff
+- Pushing it into code makes it very difficult to extend it. I get the appeal, but configured settings that can be compared across more than one experiment are useful. Granted, there isn't a config system that really hits this.
+
+I'm attempting with scriptconfig but I need to include ideas from jsonargparse to allow for nested configs. But if you can ensure the entire config reduces to key/value, *and* that those values can be reasonably concise, that lets you quickly add new params to generalize things previously hard coded. Hydra somewhat can do this, but it has issues: https://github.com/facebookresearch/hydra/issues/2091
+- [https://mit-ll-responsible-ai.github.io/hydra-zen/](https://mit-ll-responsible-ai.github.io/hydra-zen/)
+- I didn't know about that. I googled it. Now I am still confused but I got a nice face cream.
+- I agree. Writing config classes that are parsed to actual objects feels like a superfluous/redundant step. Hydra-zen creates the config files from your actual classes. Group stores are created in Python code, so that you don't have to maintain configs + workflow code as two separate parts.
+- Idk why this is being downvoted when it is a much more robust solution. Pydantic allows very clean load from yaml, overriding from cli, very strong validation
+- How do you use pydantic as a cfg manager? I know there is support for dataclasses with Hydra, but wondering how pydantic can completely replace hydra?
+- I would also like to mention tyro as a solid choice. Not only is it a good CLI generator based on typehints (or dataclasses, pydantic, msgspec, etc) with great subcommand chaining capabilities, but you can also override configuration files like yaml with CLI options.
+- You're pointing out very good reasons to use Hydra. My problem is with reading and understanding the code. If I'm picking up someone else's code that defines everything in config files, it makes it 10 times more tedious to read and understand and with hydra its 10 but raised to the power of the number of different config files I have to manually open and read to find the information I am looking for.
+
+For example, in code that does not use configs, I come across a function, the LSP can find me the definition of the function in an instant. No effort from me. With code integrating Hydra, I come across a line where Hydra instantiates a class, I have to figure out which of the configs contains the \_target\_,  open the config file, read the \_target\_ key, open the target file by typing the path, then search that file for the name of the class being instantiated. Many steps where I had to read, search stuff, and type stuff myself that takes a long time compared to the instant displaying of the class with explicit definitions and LSP.
+- Yes, but I find that approach gets unwieldy when you have multiple people working on a codebase simultaneously.
+
+Much easier to express experiments as code, rather than as configs-that-need-to-stay-in-sync.
+- > Pushing it into code makes it very difficult to extend it.
+
+ Respectfully, I find the opposite. I think it’s much easier to combine experiments when you can easily track the specific deviation from the mainline via git, and can potentially even just straightforwardly merge different changes.
+
+I also find that config-driven experimentation runs the risk of dragging along a bunch of legacy code in order to support previous things you’ve tried on a project. If you don’t, you break backwards compatibility.

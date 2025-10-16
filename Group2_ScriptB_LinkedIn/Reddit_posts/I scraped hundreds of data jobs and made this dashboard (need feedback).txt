@@ -1,0 +1,75 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1f03hfz/i_scraped_hundreds_of_data_jobs_and_made_this/
+Title: I scraped hundreds of data jobs and made this dashboard (need feedback)
+
+Content:
+So for the past couple of months I’ve scraped and analyzed hundreds of data job ads from LinkedIn and used the data to create this dashboard (using streamlit).
+
+I think it’s most useful feature is being able to filter job titles by experience level: Entry and mid-senior
+
+There is a lot more I would like to add to this dashboard:
+
+- Include more countries
+- Expand to other data job titles
+
+But in terms of features, this is my vision:
+
+I would like to do something similar to what “google trends” does, where you are able to compare multiple search terms (see second image). Only in this case, you’ll be able to compare job titles, so you can easily visualise how the skills for “Data Scientist” and “Data Analyst” roles compare to each other for example. 
+
+What are your thoughts? What would make this dashboard more useful?
+
+[https://datajobmarket.streamlit.app](https://datajobmarket.streamlit.app/)
+
+P.S. I recently learned about datanerd which is another great dashboard that serves a similar purpose. I thought of abandoning this project at first, but I think I could still build something really useful.
+
+Comments:
+- [deleted]
+- Couple thoughts:
+
+1. Trend of job postings over time and not just Google Trends data. I would like to see if there is seasonality in the actual job posting numbers, not search interest for terms over time.
+
+2. Work mode trends/breakout. Are data science jobs remaining remote friendly or are we seeing a decline?
+
+3. Location. Where are these jobs located? Maybe you could index for population to see what regions have relatively higher concentrations of per-capita data scientist openings?
+
+4. Salary. Even though not all postings have a reliable salary range it would be interesting to get an idea of the relative distribution of pay by position, experience level, and over time.
+- Really cool! Mind sharing what tools you used?
+- - fix the spelling error 
+
+
+Sorry for being anal;) great job doing this project.
+It would be interesting to see what changes over time. Topic modeling over Weekly descriptions and see if there are new requirements or other trends appearing?
+- I think it is very informative to add the association rules between keywords or skills.
+- This is fab. Love a good radar chart and it effectively and simply tells a story.
+- How do you deal with say fake job postings or ones where they post it to 50+ cities the same job. It could be one or more jobs but, probably isn't 50.
+- The dashboards looks pleasant to the eye and contains quite some important info, good job!
+- amazing work thanks for sharing
+- Did you clean the data from redundant job ads?
+- How do you scrap job ads from LinkedIn?
+- it's a good idea, let's say a good start.  
+There is not much of an insight for now though, and it seems to be because the question of the why is not answered:   
+what is this dashboard supposed to provide ? what are the questions it is supposed to answer ? 
+
+So it's very shallow at the moment:   
+for example "data jobs" already cover a lot of different things. and instead of having lists of skills, it would be better to have profiles (i.e. silhouette) of roles.   
+ex:   
+\* Data Scientist NLP: Python + NLP + LLM + Transformers + spacy...  
+\* Data Scientist time series: Python + R + (S)ARIMA(X) + GARCH + VAR + ...  
+\* etc ...
+
+it could be also interesting to cross this with size of company, and its sector of activity.
+
+Another idea is also to notice the rare skills and see with what they go usually.
+- [deleted]
+- Coool!
+- It actually looks good to read, like what other people says, it's clean which is most important
+
+So as long as the dashboard makes it easier for people to acquire the necessary insights, it's a good design
+- Really cool. Would it be possible to rather look at more specific requirements? such as what kind of libraries/frameworks in python? which machine learning algorithms?
+- Hey op
+I am planning on doing data science. I need to be proficient in 6 months. Is it possible??
+- Data points on the line graph would be nice.
+- I'm sorry, but there's not a lot of insights here. You need to scrape more data, plus you need to look at data science jobs that have weird names like "data wizard". You'd probably get something interesting if you look at the hiring company profile. 
+
+Regarding the trend, you need to smooth it. In the days where there are no ads, the interest doesn't die, it just has no symptoms.
+- Really nice. Thanks for sharing

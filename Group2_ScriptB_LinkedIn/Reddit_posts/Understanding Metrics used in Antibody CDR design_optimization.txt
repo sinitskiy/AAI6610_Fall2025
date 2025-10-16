@@ -1,0 +1,52 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/x0nd4y/understanding_metrics_used_in_antibody_cdr/
+Title: Understanding Metrics used in Antibody CDR design/optimization
+
+Content:
+Hi all, I am a Data Science and Artificial Intelligence student and just started my bachelors thesis on a bioinformatics topic. Generally the work is related to this paper: [https://arxiv.org/abs/2110.04624](https://arxiv.org/abs/2110.04624) 
+
+Quickly summarized, they try to generate new complementary determining regions (CDRs) of antibodys.
+
+Since I am relatively new to this field I have some questions regarding the metrics used for performance evaluation. I would really appreciate if someone can help me to understand them better.
+
+The metrics are the following:
+
+Perplexity (PPL): 
+
+\- Measurement of how well the the model predicts the probability distribution of the next residue when compared to the original sequence
+
+Root mean squared deviation (RMSD):
+
+\- Difference between the original and newly generated CDR 3D structure
+
+Amino Acid Recovery (AAR): 
+
+\- Proportion of residues (Amino Acids) in the newly generated CDR sequence that are equal to the original sequence.  (Example: original residue sequence: AGYDRA, new residue sequence: ADYDRG, AAR: 4/6)
+
+&#x200B;
+
+My questions regarding this metrics are the following:
+
+If we evaluate the model using these metrics, optimal performance is achieved when the model generates CDRs that are completely equivalent to the CDRs from the original antibody. 
+
+How does that make sense when we want to optimize the antibodys?
+
+A low RMSD is achieved when the generated CDR 3D structure is similar to the original 3D structure, but what if the optimal structure for binding is actually completely different? If we use this metric for comparison the newly generated, optimal structure would be said to be worse then a structure that is worse but more similar to the original antibody. The same goes for AAR. 
+
+&#x200B;
+
+Another question would be the how realistic the structure predictions are. 
+
+If we generate a new CDR structure with a low RMSD (great!) but a different residue sequence then the original antibody, from my understanding of protein folding it could be possible that the structure prediction is completely off because the CDR would realistically fold completely different due to the different residue sequence. Is this a valid concern?
+
+&#x200B;
+
+I would really appreciate some help, thanks in advance!
+
+Comments:
+- Your understanding of the performance metrics is correct, and your point about the "creativity" of a generative model like this is a salient one (we do not want to model to simply memorise and reproduce the training set). It is a complicated topic and the source of much discussion.
+
+In this paper the author's approach is to simplify the "degeneracy of binding" problem by using an autoregressive model. The model predicts the CDR residues one at a time, using all the previous predictions as inputs when it predicts the next amino acid. So the learning task is not "design this whole CDR" but rather "identify the optimal choice for the next residue, given all the previous residues you've chosen". If you train this model on a large set of antibodies for the same target, it will likely encounter multiple identical training data points (i.e. sets of previous residues) with different answers for the next residue. So the network is expected to do some sort of interpolation between data points to learn the correct conditional *distribution* of residues in a CDR, given the previous residues, rather than just the correct residue at each spot. 
+
+When you frame the problem probabilistically like this, it also allows you to choose different residues at different spots in the CDR and "see where they take you", i.e. how they influence the model's subsequent predictions at later positions in the sequence. So even if the model's prediction for the highest probability residue at each position is the same as the original sequence of an antibody in the training set, you can actually design a new antibody simply by picking the second-highest probability residue at any spot, and seeing how the rest of the model's predictions change.
+- Thank you for the answer!

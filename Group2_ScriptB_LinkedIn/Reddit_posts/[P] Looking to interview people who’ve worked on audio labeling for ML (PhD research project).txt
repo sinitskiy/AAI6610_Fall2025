@@ -1,0 +1,21 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nz1s2h/p_looking_to_interview_people_whove_worked_on/
+Title: [P] Looking to interview people who’ve worked on audio labeling for ML (PhD research project)
+
+Content:
+Looking to interview people who’ve worked on audio labeling for ML (PhD research project)
+
+Hi everyone,
+I’m a PhD candidate in Communication researching modern sound technologies. My dissertation is a cultural history of audio datasets used in machine learning: I’m interested in how sound is conceptualized, categorized, and organized within computational systems.
+I’m currently looking to speak with people who have done audio labeling or annotation work for ML projects (academic, industry, or open-source). These interviews are part of an oral history component of my research.
+Specifically, I’d love to hear about:
+- how particular sound categories were developed or negotiated,
+- how disagreements around classification were handled, and
+- how teams decided what counted as a “good” or “usable” data point.
+If you’ve been involved in building, maintaining, or labeling sound datasets - from environmental sounds to event ontologies - I’d be very grateful to talk. Conversations are confidential, and I can share more details about the project and consent process if you’re interested.
+You can DM me here
+Thanks so much for your time and for all the work that goes into shaping this fascinating field.
+
+Comments:
+- I was the lead on a large darpa program that involved acoustic classification.
+- DMd you

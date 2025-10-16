@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1myhj41/d_topology_and_geometry_in_deep_learning_beyond/
+Title: [D] Topology and geometry in deep learning beyond TDL/GDL
+
+Content:
+Posts here within the past 6 months have discussed both [Topological Deep Learning (TDL)](https://www.reddit.com/r/MachineLearning/comments/1ji6xlv/d_topological_deep_learning_promising_or_hype/) and [Geometric Deep Learning (GDL)](https://www.reddit.com/r/MachineLearning/comments/1jabkt8/d_geometric_deep_learning_and_its_potential/). Even though the nomenclature suggests otherwise, these two (exciting!) areas have come to represent rather specific topics in recent years. *Very crudely speaking*, "TDL" seems to focus mainly on higher-order message passing (HOMP); "GDL" to the design of neural networks mod domain symmetries.
+
+For the purposes of discussion, let's set the operational definition of TDL to be as in this paper: [Hajij, Mustafa, et al. Topological Deep Learning: Going Beyond Graph Data. Springer, 2024.](https://tdlbook.org/)
+
+and the operational definition of GDL to be as in this paper: [Bronstein, Michael M., et al. Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges. MIT Press, 2021.](https://arxiv.org/abs/2104.13478)
+
+With that in place: what are some applications of geometry and topology in deep learning that *do not properly belong to TDL and GDL as defined above* (and as have already received recent posts here)? Applications of adjacent fields are also welcome- algebra, category theory, etc.- , as are applications in the converse direction.
+
+Comments:
+- The two references you mentioned are a good start to understand of the scope of Geometric Deep Learning which encompasses Graph Neural Networks, Manifold learning, Topological Deep Learning, Information Geometry and Category Theory.

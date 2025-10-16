@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/zkybve/diseasedrug_relationship_analysis_with_multiple/
+Title: Disease-drug relationship analysis with multiple machine learning methods. Open source Github Repo.
+
+Content:
+
+
+Comments:
+- Interesting, but what kinds of relationships are you trying to explore ? What’s the hypothesis, plan etc.
+- Are you using a regression model on a classification dataset?
+- Actually, this project has a background. We examined Down syndrome disease with multiple drug datasets, the datasets are not publicly available and I cannot share them. Our main goal in this project was to determine which proteins the drug acts on in the disease.
+- Yes, because we focused on protein expression values ​​and used multiple machine learning techniques in conjunction with each other to select disease-associated proteins.
+- What is the rationale for looking at memantine in a DS model? Do you have preliminary data to suggest the drug action will be different in trisomic mice compared to wild type?
+- But why are you using a regression model to predict an integer representation of the categories?
+
+The numerical values are arbitrary.
+- Yes, it has been extensively tested. Trisomic mice injected with memantine showed learning behavior as a result of shock context.
+- In fact, we aim to find the order of protein importance with the model. Then we distinguish the groups with techniques such as PCA and clustering, by sieving the proteins. Considering the background logic of the algorithm, it would not affect the order of protein importance with the same parameters, even in the classification model.

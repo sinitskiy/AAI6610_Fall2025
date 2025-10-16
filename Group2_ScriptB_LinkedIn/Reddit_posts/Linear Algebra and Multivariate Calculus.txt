@@ -1,0 +1,62 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18rg70s/linear_algebra_and_multivariate_calculus/
+Title: Linear Algebra and Multivariate Calculus
+
+Content:
+My upcoming course is focused on programming a number of machine learning algorithms from scratch and requires a lot of demonstrated understanding of the related formulas and proofs. 
+
+I have taken both linear algebra and multivariate calculus. Although I got good marks, I don't feel fluent in either topic. 
+
+As an example, I struggle to map summations to matrix equations and vice versa. I might be able to do it if I work very slowly, but I am heavily reliant on worked examples or solutions being available. 
+
+I expect to need some fluency in converting between the different forms and gradients. 
+
+Can anyone point to resources that helped things "click" for them?   
+Any general advice? Maybe a big library of worked examples?
+
+Comments:
+- This YouTube series from 3Blue1Brown really helped me grasp what was happening behind the math of linear algebra back in college. Somewhat long videos, but highly recommend! 
+https://youtu.be/fNk_zzaMoSs?si=3g8Anp_SxsmxZg40
+- These two helped me when I was doing this kind of stuff:
+- https://atmos.washington.edu/~dennis/MatrixCalculus.pdf
+- https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf
+
+For example, a good exercise to build off of is deriving ordinary least squares in matrix form. That is, given input data X, weights b, and target y such that estimated output \hat{y}=Xb, show that `b=(X^T* X)^{-1} * X^T * y` minimizes the squared error (y - Xb)^2. Good luck!
+
+Edit: Reddit auto formatting my pseudo-LaTeX 🤦‍♂️
+- Personally, I would try and plough through slowly. If you’ve done multivariable calculus and linear algebra, then you probably have enough of a background. I suspect your lack of confidence is more down to a lack of practical experience, and that will only come with getting your hands dirty.
+
+To try and gain some confidence, break the problem up into smaller chunks. Use libraries like PyTorch/numpy/sklearn to provide benchmarks for these smaller chunks so that you can have more confidence that your implementations are correct. Then you can use these as building blocks going forwards.
+- Hubbard & Hubbard's text "Vector Calculus, Linear Algebra, and Differential Forms: A Unified Approach" tries to combine multivariable calculus with linear algebra (and largely succeeds IMO). Almost nothing related to statistics though. And it's a pretty dense book, depending on your abilities it might be too challenging. But you can check it out.
+- I'd look into some Math for Economics texts or Course Notes. Angel De La Fuenta tends to be more advance level, but I haven't personally used it. Simon Blume is more intermediate level. Economics Ph.Ds tend to start with a math refresher  course, taken the summer before the actual Ph.D program that usually odes a fairly thorough coverage Multi-variate Calculus and Linear algebra and proofs, as optimization is bed rock of econ theory and econometrics is essentially Ph.D level sequence on every which way to use a linear regression model.
+- No Bullshit Guide to Linear Algebra was pretty good.
+- Glad people linked resources, but don't worry too much.
+
+You'll probably start to think of matrices (and calculus) in two different ways depending on context.
+
+For me, matrices in a coding context doesn't feel like matrices in a math context.
+
+And I had to use linear algebra for fucking...10 semesters of math/physics.
+
+-Dr. SmashBusters, PhD
+- You can watch and read as many material as you like. There's only one way that things will click in math for any person: practicing, i.e., doing as many exercises as possible.
+
+Mathematical maturity is a skill and as for any skill, the only way to learn it is through practice.
+- "Principles of Mathematical Analysis" by Walter Rudin (aka, "Baby Rudin") is a classic text for a reason. I think it's the best text for showing the interconnectedness of the lower division university math that is typically taught in discrete courses. If you've taken a Linear Algebra course and a Multivariable Calculus course but don't see how they intersect, then Rudin is a good text. Note: it's pretty dry and straight to the point. I wouldn't recommend it as a first introduction to either subject; but if you understand the basics, then it brings it together better than most texts.
+
+If you master all the material in the book, you'll be able to handle anything any future math course throws at you whether applied or pure math. It's also a handy reference for what it covers.
+- Are you looking to be a data scientist after you graduate or are you planning to get a PhD and do research?
+
+Unless you want the latter, being able to do these proofs/calculations is low in importance IMO. I don't think I've used any non-trivial math since grad school.
+- General advice - it's important to keep in mind that for the majority of DS jobs just remembering how matrix multiplication works already exceeds the bar and all claims otherwise are mostly posturing. Learning theory can be beneficial, but unless this course is required for whatever degree you are doing (or for a graduate program you want to do) you are stressing yourself out for no reason.
+- 3blue1brown for all of it. None of it really clicked until I watched those series, especially linear algebra. Should be mandatory.
+- This is why data science are usually graduate degrees
+- Wow even the "mathy" job out there the bar is pretty low 😂
+- Out of curiosity, what is your course called? Looking to expand my knowledge in this area
+- Been there.  Even though I could do those calculations easily, I never knew when, for example, gradient was called for.  A buddy of mine on the other hand, would start everything by taking the gradients.  I was very confused for a while.
+
+It sounds like you are in the same position now with your good grades but no experience.  With time, things will surely improve.  Good luck.
+- idk if this will be helpful but when I was doing linear alg 3b1b was really helpful in explaining the linear alg concepts conceptually
+- pretty good
+- New to the field of data science, started with Vector algebra facing difficulty in solving problems, can someone suggest some books which has solved problems for reference
+- I scored the highest grades in Linear alg but didnt understand a single thing too mate

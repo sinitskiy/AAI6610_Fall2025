@@ -1,0 +1,43 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/vo8fuo/d_loss_function_uncertainty/
+Title: [D] Loss Function, Uncertainty
+
+Content:
+
+Hello members, soo my question is suppose we have a model or architecture at we have an image classifier at the end of it which is trained on mnist images. We need to train the model such that when the image is passed through the classifier it outcomes it's results with some uncertainty in its predictions. 
+We need to use that uncertainty in order to develop a loss function to train the whole model as we can't use the true labels of the images. 
+
+Any resources or ideas related to above which can be helpful pls share with me. Any suggestions will be appreciated.
+
+Thanks
+
+Comments:
+- If I understand the question correctly you want to know how to train uncertainty-aware models. In that case you can check out following works:
+
+[https://paperswithcode.com/paper/evidential-deep-learning-to-quantify](https://paperswithcode.com/paper/evidential-deep-learning-to-quantify)
+
+[https://paperswithcode.com/paper/sde-net-equipping-deep-neural-networks-with](https://paperswithcode.com/paper/sde-net-equipping-deep-neural-networks-with)
+
+[https://paperswithcode.com/paper/uncertainty-baselines-benchmarks-for](https://paperswithcode.com/paper/uncertainty-baselines-benchmarks-for)
+
+[https://paperswithcode.com/paper/a-simple-approach-to-improve-single-model](https://paperswithcode.com/paper/a-simple-approach-to-improve-single-model)
+
+Many articles have been written on the topic of uncertainty estimation suggesting newer and newer methods but I'm surprised to see how well "classic" techniques (ensambling, dropout, data augmentation) work for how easy it is to implement them. So I would probably start with ensembles and dropout and then see how it goes.
+- Or did you mean you have a pretrained model and you want to train another model w/o access to labels?
+- Yes I have a pre trained classifier on cifar-10, and I have to train or denoise another model using the predictions of this classifier. The classifier and another model are attached one after the other.
+- and there is no access to labels, is that correct?   
+what comes to my mind is this:
+
+1) [https://paperswithcode.com/paper/sde-net-equipping-deep-neural-networks-with](https://paperswithcode.com/paper/sde-net-equipping-deep-neural-networks-with)
+
+Basically guys explicitly train a model to have high entropy on out-of-distribution samples. And as a proxy for OOD samples they use original data + lots of noise. It doesn't require labels but you would have to "trust" predictions of your pretrained model for your dataset.
+
+2) [https://paperswithcode.com/paper/prioritized-training-on-points-that-are-1](https://paperswithcode.com/paper/prioritized-training-on-points-that-are-1)
+
+it's not really about uncertainty estimation, but authors show how to speed up training process for a new model if you already have another pretrained model. Basically prioritized training with loss values of pretrained model as proxy for priority. If loss is high there is a good chance data point is noisy/corrupted/etcetera hence point is skipped.
+
+Overall I would focus on data augmentation. Like if loss on augmented (basic rotations and stuff, maybe MixUp) data highly differs from the loss on original data maybe it's an indicator?
+
+If you have enough compute you could try to do unsupervised learning to train a features extractor (with triplet loss or something like that) and then train a classification head with the help of your pretrained model. This thing should be much more robust to noise than the pretrainedl model, but unsupervised learning is more challenging. Can't remember in what article I saw it though.
+
+Does any of this make sense / relate to you?

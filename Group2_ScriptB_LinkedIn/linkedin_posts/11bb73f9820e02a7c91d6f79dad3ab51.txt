@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/bryanshalloway_a-good-concept-to-be-aware-of-is-that-of-activity-7163690884289560577-coLN
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Bryan Shalloway的动态
+Bryan Shalloway
+
+Data Science at Meta
+
+1 年
+
+A good concept to be aware of is that of aleatoric vs epistemic uncertainty. Aleatoric uncertainty is in the data whereas epistemic uncertainty is in the estimation of your model. Epistemic uncertainty will go down as you increase your sample size whereas aleatoric uncertainty you're kind of stuck with (assuming you have the right type of model).
+
+Relatedly, a somewhat common mistake in the realm of prediction is a confusion between confidence intervals and prediction intervals. Broadly speaking, confidence intervals have more to do with uncertainty in the estimation of the prediction, i.e. epistemic uncertainty. However prediction intervals reflect both the uncertainty in estimation and the individual sample/observation uncertainty, i.e. both epistemic as well as aleatoric uncertainty.
+
+I wrote about this (though not using these terms) in a 2021 post on "Understanding Prediction Intervals": https://lnkd.in/e8HR93m 
+
+----
+
+22
+14 条评论
+赞
+评论
+分享
+Rahul Vishwakarma
+
+‎
+
+1 年
+
+https://github.com/valeman/awesome-conformal-prediction
+
+赞
+回复
+2 次回应
+Lynd Bacon PhD, MBA, MA
+
+Quantitative Cognitive Scientist, Data Science and Analytics Expert. @lyndbacon@masto.ai on Mastodon.
+
+1 年
+
+There can be confusion regarding outcome uncertainty and inferential uncertainty, at least for decision makers using model results.  An important decision support consideration is how to package uncertainty estimates given the intended use of them by audiences that such estimates are communicated to.  There’s empirical evidence indicating that decision makers don’t always accurately perceive  and cognitively process uncertainty estimates.  This is true even for quantitative methods experts who themselves may be confused about different kinds of uncertainty,  as well as about how their clients and colleagues understand uncertainty.  From a decision-making perspective, another distinction that can be im

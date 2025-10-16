@@ -1,0 +1,1141 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/dyjf03/d_icml_2019_machine_learning_talks/
+Title: [D] ICML 2019 Machine Learning Talks
+
+Content:
+---
+Recent Advances in Population-Based Search for Deep Neural Networks: Quality Diversity, Indirect Encodings, and Open-Ended Algorithms
+
+Presented by Jeff Clune, Joel Lehman and Kenneth Stanley
+
+https://www.facebook.com/icml.imls/videos/481758745967365/
+
+---
+Never-Ending Learning
+
+Presented by Tom Mitchell and Partha Talukdar.
+
+https://www.facebook.com/icml.imls/videos/350412952342021/
+https://www.facebook.com/icml.imls/videos/1083330081864839/
+
+---
+A Primer on PAC-Bayesian Learning
+
+Presented by Benjamin Guedj and John Shawe-Taylor
+
+https://www.facebook.com/icml.imls/videos/318683639013879/
+
+---
+Meta-Learning: from Few-Shot Learning to Rapid Reinforcement Learning
+
+Presented by Chelsea Finn and Sergey Levine
+
+https://www.facebook.com/icml.imls/videos/400619163874853/
+https://www.facebook.com/icml.imls/videos/2970931166257998/
+
+---
+Active Learning: From Theory to Practice
+
+Presented by Robert Nowak and Steve Hanneke
+
+https://www.facebook.com/icml.imls/videos/662482727539899/
+
+---
+Neural Approaches to Conversational AI
+
+Presented by Michel Galley and Jianfeng Gao
+
+https://www.facebook.com/icml.imls/videos/2375117292730871/
+
+---
+A Tutorial on Attention in Deep Learning
+
+Presented by Alex Smola and Aston Zhang
+
+https://www.facebook.com/icml.imls/videos/382464939283864/
+https://www.facebook.com/icml.imls/videos/889237771440064/
+
+---
+Active Hypothesis Testing: An Information Theoretic (re)View
+
+Presented by Tara Javidi
+
+https://www.facebook.com/icml.imls/videos/478549476247044/
+
+---
+Algorithm configuration: learning in the space of algorithm designs
+
+Presented by Kevin Leyton-Brown and Frank Hutter
+
+https://www.facebook.com/icml.imls/videos/2044426569187107/
+
+---
+"The U.S. Census Bureau Tries to be a Good Data Steward in the 21st Century"
+invited talk by John M. Abowd
+
+Best Paper Awards:
+Challenging Common Assumptions in the Unsupervised Learning of Disentangled Representations
+
+https://www.facebook.com/icml.imls/videos/446476306189465/
+
+---
+Session on Deep Learning Algorithms
+
+
+• SelectiveNet: A Deep Neural Network with an Integrated Reject Option
+
+• Manifold Mixup: Better Representations by Interpolating Hidden States
+
+• Processing Megapixel Images with Deep Attention-Sampling Models
+
+• TapNet: Neural Network Augmented with Task-Adaptive Projection for Few-Shot Learning
+
+• Online Meta-Learning
+
+• Training Neural Networks with Local Error Signals
+
+• GMNN: Graph Markov Neural Networks
+
+• Self-Attention Graph Pooling
+
+• Combating Label Noise in Deep Learning using Abstention
+
+• LGM-Net: Learning to Generate Matching Networks for Few-Shot Learning
+
+https://www.facebook.com/icml.imls/videos/336722770596090/
+
+---
+Session on Deep Reinforcement Learning
+
+• ELF OpenGo: an analysis and open reimplementation of AlphaZero
+
+• Making Deep Q-learning methods robust to time discretization
+
+• Nonlinear Distributional Gradient Temporal-Difference Learning
+
+• Composing Entropic Policies using Divergence Correction
+
+• TibGM: A Transferable and Information-Based Graphical Model Approach for Reinforcement Learning
+
+• Multi-Agent Adversarial Inverse Reinforcement Learning
+
+• Policy Consolidation for Continual Reinforcement Learning
+
+• Off-Policy Deep Reinforcement Learning without Exploration
+
+• Random Expert Distillation: Imitation Learning via Expert Policy Support Estimation
+
+• Revisiting the Softmax Bellman Operator: New Benefits and New Perspective
+
+https://www.facebook.com/icml.imls/videos/1577337105730518/
+
+---
+Session on Adversarial Examples
+
+• Adversarial Attacks on Node Embeddings via Graph Poisoning
+
+• First-Order Adversarial Vulnerability of Neural Networks and Input Dimension
+
+• On Certifying Non-Uniform Bounds against Adversarial Attacks
+
+• Improving Adversarial Robustness via Promoting Ensemble Diversity
+
+• Adversarial camera stickers: A physical camera-based attack on deep learning systems
+
+• Adversarial examples from computational constraints
+
+• POPQORN: Quantifying Robustness of Recurrent Neural Networks
+
+• Using Pre-Training Can Improve Model Robustness and Uncertainty
+
+• Generalized No Free Lunch Theorem for Adversarial Robustness
+
+• PROVEN: Verifying Robustness of Neural Networks with a Probabilistic Approach
+
+https://www.facebook.com/icml.imls/videos/689280291532883/
+
+---
+Session on Generative Adversarial Networks
+
+• Self-Attention Generative Adversarial Networks
+
+• Multivariate-Information Adversarial Ensemble for Scalable Joint Distribution Matching
+
+• High-Fidelity Image Generation With Fewer Labels
+
+• Revisiting precision recall definition for generative modeling
+
+• Wasserstein of Wasserstein Loss for Learning Generative Models
+
+• Flat Metric Minimization with Applications in Generative Modeling
+
+• Entropic GANs meet VAEs: A Statistical Approach to Compute Sample Likelihoods in GANs
+
+• Non-Parametric Priors For Generative Adversarial Networks
+
+• Lipschitz Generative Adversarial Nets
+
+• HexaGAN: Generative Adversarial Nets for Real World Classification
+
+https://www.facebook.com/icml.imls/videos/713631379054038/
+
+---
+Session on Deep Reinforcement Learning
+
+• An Investigation of Model-Free Planning
+
+• CURIOUS: Intrinsically Motivated Modular Multi-Goal Reinforcement Learning
+
+• Task-Agnostic Dynamics Priors for Deep Reinforcement Learning
+
+• Collaborative Evolutionary Reinforcement Learning
+
+• EMI: Exploration with Mutual Information
+
+• Imitation Learning from Imperfect Demonstration
+
+• Curiosity-Bottleneck: Exploration By Distilling Task-Specific Novelty
+
+• Dynamic Weights in Multi-Objective Deep Reinforcement Learning
+
+• Fingerprint Policy Optimisation for Robust Reinforcement Learning
+
+https://www.facebook.com/icml.imls/videos/298536957693171/
+
+---
+Session on Deep Learning Theory
+
+• On Learning Invariant Representations for Domain Adaptation
+
+• Lexicographic and Depth-Sensitive Margins in Homogeneous and Non-Homogeneous Deep Models
+
+• Adversarial Generation of Time-Frequency Features with application in audio synthesis
+
+• On the Universality of Invariant Networks
+
+• Fine-Grained Analysis of Optimization and Generalization for Overparameterized Two-Layer Neural Networks
+
+• Gauge Equivariant Convolutional Networks and the Icosahedral CNN
+
+• Feature-Critic Networks for Heterogeneous Domain Generalization
+
+• Learning to Convolve: A Generalized Weight-Tying Approach
+
+• On Dropout and Nuclear Norm Regularization
+
+• Gradient Descent Finds Global Minima of Deep Neural Networks
+
+https://www.facebook.com/icml.imls/videos/2339557826311186/
+
+---
+Session on Deep Learning Architectures
+
+• Graph Matching Networks for Learning the Similarity of Graph Structured Objects
+
+• BayesNAS: A Bayesian Approach for Neural Architecture Search
+
+• Set Transformer: A Framework for Attention-based Permutation-Invariant Neural Networks
+
+• Shallow-Deep Networks: Understanding and Mitigating Network Overthinking
+
+• Graph U-Nets
+
+• SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver
+
+• Area Attention
+
+• The Evolved Transformer
+
+• Jumpout : Improved Dropout for Deep Neural Networks with ReLUs
+
+• Stochastic Deep Networks
+
+https://www.facebook.com/icml.imls/videos/3253466301345987/
+
+---
+Session on Deep Learning Optimization
+
+• An Investigation into Neural Net Optimization via Hessian Eigenvalue Density
+
+• Differentiable Linearized ADMM
+
+• Adaptive Stochastic Natural Gradient Method for One-Shot Neural Architecture Search
+
+• A Quantitative Analysis of the Effect of Batch Normalization on Gradient Descent
+
+• The Effect of Network Width on Stochastic Gradient Descent and Generalization: an Empirical Study
+
+• AdaGrad stepsizes: sharp convergence over nonconvex landscapes
+
+• Beyond Backprop: Online Alternating Minimization with Auxiliary Variables
+
+• SWALP : Stochastic Weight Averaging in Low Precision Training
+
+• Efficient optimization of loops and limits with randomized telescoping sums
+
+• Self-similar Epochs: Value in arrangement
+
+https://www.facebook.com/icml.imls/videos/874988016194584/
+
+---
+Session on Large Scale Learning and Systems
+
+• Composable Core-sets for Determinant Maximization: A Simple Near-Optimal Algorithm
+
+• Sublinear Time Nearest Neighbor Search over Generalized Weighted Space
+
+• Compressing Gradient Optimizers via Count-Sketches
+
+• Scalable Fair Clustering
+
+• Conditional Gradient Methods via Stochastic Path-Integrated Differential Estimator
+
+• Fault Tolerance in Iterative-Convergent Machine Learning
+
+• Static Automatic Batching In TensorFlow
+
+• Improving Neural Network Quantization without Retraining using Outlier Channel Splitting
+
+• Memory-Optimal Direct Convolutions for Maximizing Classification Accuracy in Embedded Applications
+
+• DL2: Training and Querying Neural Networks with Logic
+
+https://www.facebook.com/icml.imls/videos/2250364101882755/
+
+---
+"Machine Learning for Robots To Think Fast"
+invited talk by Aude Billard
+
+Test of time Award
+Online dictionary learning for Sparse Coding
+
+https://www.facebook.com/icml.imls/videos/2368059266588651/
+
+---
+Session on Deep Generative Models
+
+• Sum-of-Squares Polynomial Flow
+
+• FloWaveNet : A Generative Flow for Raw Audio
+
+• Are Generative Classifiers More Robust to Adversarial Attacks?
+
+• A Gradual, Semi-Discrete Approach to Generative Network Training via Explicit Wasserstein Minimization
+
+• Disentangling Disentanglement in Variational Autoencoders
+
+• EDDI: Efficient Dynamic Discovery of High-Value Information with Partial VAE
+
+• A Wrapped Normal Distribution on Hyperbolic Space for Gradient-Based Learning
+
+• Emerging Convolutions for Generative Normalizing Flows
+
+• A Large-Scale Study on Regularization and Normalization in GANs
+
+• Variational Annealing of GANs: A Langevin Perspective
+
+https://www.facebook.com/icml.imls/videos/325725335009518/
+https://www.facebook.com/icml.imls/videos/518469445360005/
+
+---
+Session on Deep Reinforcement Learning
+
+• Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning
+
+• Maximum Entropy-Regularized Multi-Goal Reinforcement Learning
+
+• Imitating Latent Policies from Observation
+
+• SOLAR: Deep Structured Representations for Model-Based Reinforcement Learning
+
+• Dimension-Wise Importance Sampling Weight Clipping for Sample-Efficient Reinforcement Learning
+
+• Structured agents for physical construction
+
+• Learning Novel Policies For Tasks
+
+• Taming MAML: Efficient unbiased meta-reinforcement learning
+
+• Self-Supervised Exploration via Disagreement
+
+• Efficient Off-Policy Meta-Reinforcement Learning via Probabilistic Context Variables
+
+https://www.facebook.com/icml.imls/videos/355035025132741/
+
+---
+Session on Adversarial Examples
+
+• Theoretically Principled Trade-off between Robustness and Accuracy
+
+• The Odds are Odd: A Statistical Test for Detecting Adversarial Examples
+
+• ME-Net: Towards Effective Adversarial Robustness with Matrix Estimation
+
+• Certified Adversarial Robustness via Randomized Smoothing
+
+• Imperceptible, Robust, and Targeted Adversarial Examples for Automatic Speech Recognition
+
+• Parsimonious Black-Box Adversarial Attacks via Efficient Combinatorial Optimization
+
+• Wasserstein Adversarial Examples via Projected Sinkhorn Iterations
+
+• Transferable Clean-Label Poisoning Attacks on Deep Neural Nets
+
+• NATTACK: Learning the Distributions of Adversarial Examples for an Improved Black-Box Attack on Deep Neural Networks
+
+• Simple Black-box Adversarial Attacks
+
+https://www.facebook.com/icml.imls/videos/607431793098200/
+
+---
+Session on Deep Learning Architectures
+
+• Invertible Residual Networks
+
+• NAS-Bench-101: Towards Reproducible Neural Architecture Search
+
+• Approximated Oracle Filter Pruning for Destructive CNN Width Optimization
+
+• LegoNet: Efficient Convolutional Neural Networks with Lego Filters
+
+• Sorting Out Lipschitz Function Approximation
+
+• Graph Element Networks: adaptive, structured computation and memory
+
+• Training CNNs with Selective Allocation of Channels
+
+• Equivariant Transformer Networks
+
+• Overcoming Multi-model Forgetting
+
+• Bayesian Nonparametric Federated Learning of Neural Networks
+
+https://www.facebook.com/icml.imls/videos/552835701913736/
+
+---
+Session on Deep Reinforcement Learning
+
+• The Natural Language of Actions
+
+• Control Regularization for Reduced Variance Reinforcement Learning
+
+• On the Generalization Gap in Reparameterizable Reinforcement Learning
+
+• Trajectory-Based Off-Policy Deep Reinforcement Learning
+
+• A Deep Reinforcement Learning Perspective on Internet Congestion Control
+
+• Model-Based Active Exploration
+
+• Extrapolating Beyond Suboptimal Demonstrations via Inverse Reinforcement Learning from Observations
+
+• Distributional Multivariate Policy Evaluation and Exploration with the Bellman GAN
+
+• A Baseline for Any Order Gradient Estimation in Stochastic Computation Graphs
+
+• Remember and Forget for Experience Replay
+
+https://www.facebook.com/icml.imls/videos/674476986298614/
+
+---
+Session on Causality
+
+• Causal Identification under Markov Equivalence: Completeness Results
+
+• Counterfactual Off-Policy Evaluation with Gumbel-Max Structural Causal Models
+
+• Causal Discovery and Forecasting in Nonstationary Environments with State-Space Models
+
+• Classifying Treatment Responders Under Causal Effect Monotonicity
+
+• Learning Models from Data with Measurement Error: Tackling Underreporting
+
+• Adjustment Criteria for Generalizing Experimental Findings
+
+• Conditional Independence in Testing Bayesian Networks
+
+• Sensitivity Analysis of Linear Structural Causal Models
+
+• More Efficient Off-Policy Evaluation through Regularized Targeted Learning
+
+• Inferring Heterogeneous Causal Effects in Presence of Spatial Confounding
+
+https://www.facebook.com/icml.imls/videos/2188227091246504/
+
+---
+Session on Representation Learning
+
+• Adversarially Learned Representations for Information Obfuscation and Inference
+
+• Adaptive Neural Trees
+
+• Connectivity-Optimized Representation Learning via Persistent Homology
+
+• Minimal Achievable Sufficient Statistic Learning
+
+• Learning to Route in Similarity Graphs
+
+• Invariant-Equivariant Representation Learning for Multi-Class Data
+
+• Infinite Mixture Prototypes for Few-shot Learning
+
+• MixHop: Higher-Order Graph Convolutional Architectures via Sparsified Neighborhood Mixing
+
+• Learn to Grow: A Continual Structure Learning Framework for Overcoming Catastrophic Forgetting
+
+https://www.facebook.com/icml.imls/videos/307375446865883/
+
+---
+Session on Generative Models
+
+• Tensor Variable Elimination for Plated Factor Graphs
+
+• Predicate Exchange: Inference with Declarative Knowledge
+
+• Discriminative Regularization for Latent Variable Models with Applications to Electrocardiography
+
+• Hierarchical Decompositional Mixtures of Variational Autoencoders
+
+• Finding Mixed Nash Equilibria of Generative Adversarial Networks
+
+• CompILE: Compositional Imitation Learning and Execution
+
+• Sparse Multi-Channel Variational Autoencoder for the Joint Analysis of Heterogeneous Data
+
+• Deep Generative Learning via Variational Gradient Flow
+
+• Flow++: Improving Flow-Based Generative Models with Variational Dequantization and Architecture Design
+
+• Learning Neurosymbolic Generative Models via Program Synthesis
+
+https://www.facebook.com/icml.imls/videos/457663645035961/
+
+---
+Session on Deep Learning Algorithms
+
+• How does Disagreement Help Generalization against Label Corruption?
+
+• EigenDamage: Structured Pruning in the Kronecker-Factored Eigenbasis
+
+• Addressing the Loss-Metric Mismatch with Adaptive Loss Alignment
+
+• Deep Compressed Sensing
+
+• Differentiable Dynamic Normalization for Learning Deep Representation
+
+• Toward Understanding the Importance of Noise in Training Neural Networks
+
+• Cheap Orthogonal Constraints in Neural Networks: A Simple Parametrization of the Orthogonal and Unitary Group
+
+• Breaking Inter-Layer Co-Adaptation by Classifier Anonymization
+
+• Understanding the Impact of Entropy on Policy Optimization
+
+• Probability Functional Descent: A Unifying Perspective on GANs, Variational Inference, and Reinforcement Learning
+
+https://www.facebook.com/icml.imls/videos/600823507067800/
+
+---
+Session on Deep Generative Models
+
+• State-Reification Networks: Improving Generalization by Modeling the Distribution of Hidden Representations
+
+• Variational Laplace Autoencoders
+
+• Latent Normalizing Flows for Discrete Sequences
+
+• Multi-objective training of Generative Adversarial Networks with multiple discriminators
+
+• Learning Discrete and Continuous Factors of Data via Alternating Disentanglement
+
+• Bit-Swap: Recursive Bits-Back Coding for Lossless Compression with Hierarchical Latent Variables
+
+• Graphite: Iterative Generative Modeling of Graphs
+
+• Hybrid Models with Deep and Invertible Features
+
+• MIWAE: Deep Generative Modelling and Imputation of Incomplete Data Sets
+
+• On Scalable and Efficient Computation of Large Scale Optimal Transport
+
+https://www.facebook.com/icml.imls/videos/1269891676506524/
+
+---
+Session on Reinforcement Learning
+
+• Batch Policy Learning under Constraints
+
+• Quantifying Generalization in Reinforcement Learning
+
+• Learning Latent Dynamics for Planning from Pixels
+
+• Projections for Approximate Policy Iteration Algorithms
+
+• Learning Structured Decision Problems with Unawareness
+
+• Calibrated Model-Based Deep Reinforcement Learning
+
+• Reinforcement Learning in Configurable Continuous Environments
+
+• Target-Based Temporal-Difference Learning
+
+• Iterative Linearized Control: Stable Algorithms and Complexity Guarantees
+
+• Finding Options that Minimize Planning Time
+
+https://www.facebook.com/icml.imls/videos/2547484245262588/
+
+---
+Session on Interpretability 
+
+• Neural Network Attributions: A Causal Perspective
+
+• Towards a Deep and Unified Understanding of Deep Neural Models in NLP
+
+• Explaining Deep Neural Networks with a Polynomial Time Algorithm for Shapley Value Approximation
+
+• Functional Transparency for Structured Data: a Game-Theoretic Approach
+
+• Exploring interpretable LSTM neural networks over multi-variable data
+
+• TensorFuzz: Debugging Neural Networks with Coverage-Guided Fuzzing
+
+• Gaining Free or Low-Cost Interpretability with Interpretable Partial Substitute
+
+• State-Regularized Recurrent Neural Networks
+
+• Understanding Impacts of High-Order Loss Approximations and Features in Deep Learning Interpretation
+
+• On the Connection Between Adversarial Robustness and Saliency Map Interpretability
+
+https://www.facebook.com/icml.imls/videos/460378531393374/
+
+---
+Session on Deep Learning
+
+• Understanding and correcting pathologies in the training of learned optimizers
+
+• Demystifying Dropout
+
+• Ladder Capsule Network
+
+• Unreproducible Research is Reproducible
+
+• Geometric Scattering for Graph Data Analysis
+
+• Robust Inference via Generative Classifiers for Handling Noisy Labels
+
+• LIT: Learned Intermediate Representation Training for Model Compression
+
+• Analyzing and Improving Representations with the Soft Nearest Neighbor Loss
+
+• What is the Effect of Importance Weighting in Deep Learning?
+
+• Similarity of Neural Network Representations Revisited
+
+https://www.facebook.com/icml.imls/videos/308727963404001/
+
+---
+Session on Deep Sequence Models
+
+• Stochastic Beams and Where To Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement
+
+• Learning to Exploit Long-term Relational Dependencies in Knowledge Graphs
+
+• Meta-Learning Neural Bloom Filters
+
+• CoT: Cooperative Training for Generative Modeling of Discrete Data
+
+• Non-Monotonic Sequential Text Generation
+
+• Insertion Transformer: Flexible Sequence Generation via Insertion Operations
+
+• Empirical Analysis of Beam Search Performance Degradation in Neural Sequence Models
+
+• Trainable Decoding of Sets of Sequences for Neural Sequence Models
+
+• Learning to Generalize from Sparse and Underspecified Rewards
+
+• Efficient Training of BERT by Progressively Stacking
+
+https://www.facebook.com/icml.imls/videos/895968107420746/
+
+---
+Session on Deep Learning Theory
+
+• Why do Larger Models Generalize Better? A Theoretical Perspective via the XOR Problem
+
+• On the Spectral Bias of Neural Networks
+
+• Recursive Sketches for Modular Deep Learning
+
+• Zero-Shot Knowledge Distillation in Deep Networks
+
+• A Convergence Theory for Deep Learning via Over-Parameterization
+
+• A Tail-Index Analysis of Stochastic Gradient Noise in Deep Neural Networks
+
+• Approximation and non-parametric estimation of ResNet-type convolutional neural networks
+
+• Global Convergence of Block Coordinate Descent in Deep Learning
+
+• Measurements of Three-Level Hierarchical Structure in the Outliers in the Spectrum of Deepnet Hessians
+
+• On the Limitations of Representing Functions on Sets
+
+https://www.facebook.com/icml.imls/videos/606052416553010/
+
+---
+"What 4 Year Olds Can Do and AI Can't (yet)"
+
+invited talk by Alison Gopnik
+
+Best Paper Awards:
+Rates of Convergence for Sparse Variational Gaussian Process Regression
+
+https://www.facebook.com/icml.imls/videos/680801775700033/
+
+---
+Session on Representation Learning
+
+• Learning Fast Algorithms for Linear Transforms Using Butterfly Factorizations
+
+• Breaking the Softmax Bottleneck via Learnable Monotonic Pointwise Non-linearities
+
+• Multi-Object Representation Learning with Iterative Variational Inference
+
+• Cross-Domain 3D Equivariant Image Embeddings
+
+• Loss Landscapes of Regularized Linear Autoencoders
+
+• Hyperbolic Disk Embeddings for Directed Acyclic Graphs
+
+• LatentGNN: Learning Efficient Non-local Relations for Visual Recognition
+
+• Robustly Disentangled Causal Mechanisms: Validating Deep Representations for Interventional Robustness
+
+• Lorentzian Distance Learning for Hyperbolic Representations
+
+https://www.facebook.com/icml.imls/videos/321425055451434/
+
+---
+Session on Bandits and Multiagent Learning
+
+• Decentralized Exploration in Multi-Armed Bandits
+
+• Warm-starting Contextual Bandits: Robustly Combining Supervised and Bandit Feedback
+
+• Exploiting structure of uncertainty for efficient matroid semi-bandits
+
+• PAC Identification of Many Good Arms in Stochastic Multi-Armed Bandits
+
+• Contextual Multi-armed Bandit Algorithm for Semiparametric Reward Model
+
+• Bayesian Action Decoder for Deep Multi-Agent Reinforcement Learning
+
+• TarMAC: Targeted Multi-Agent Communication
+
+• QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning
+
+• Actor-Attention-Critic for Multi-Agent Reinforcement Learning
+
+• Finite-Time Analysis of Distributed TD(0) with Linear Function Approximation on Multi-Agent Reinforcement Learning
+
+https://www.facebook.com/icml.imls/videos/444326646299556/
+
+---
+Session on Bayesian Deep Learning
+
+• Probabilistic Neural Symbolic Models for Interpretable Visual Question Answering
+
+• Nonparametric Bayesian Deep Networks with Local Competition
+
+• Good Initializations of Variational Bayes for Deep Models
+
+• Dropout as a Structured Shrinkage Prior
+
+• ARSM: Augment-REINFORCE-Swap-Merge Estimator for Gradient Backpropagation Through Categorical Variables
+
+• On Variational Bounds of Mutual Information
+
+• Partially Exchangeable Networks and Architectures for Learning Summary Statistics in Approximate Bayesian Computation
+
+• Hierarchical Importance Weighted Autoencoders
+
+• Faster Attend-Infer-Repeat with Tractable Probabilistic Models
+
+• Understanding Priors in Bayesian Neural Networks at the Unit Level
+
+https://www.facebook.com/icml.imls/videos/2202320806483370/
+
+---
+Workshop on Generative Modeling and Model-Based Reasoning for Robotics and AI
+
+"Self Supervised Learning"
+invited talk by Yann LeCun 
+
+"Mental Simulation, Imagination, and Model-Based Deep RL"
+invited talk by Jessica B. Hamrick
+
+
+• Bayesian Inference to Identify the Cause of Human Errors
+
+• Data-Efficient Model-Based RL through Unsupervised Discovery and Curiosity-Driven Exploration
+
+• A Top-Down Bottom-Up Approach to Learning Hierarchical Physics Models for Manipulation
+
+• Discovering, Predicting, and Planning with Objects
+
+• FineGAN: Unsupervised Hierarchical Disentanglement for Fine-Grained Object Generation and Discovery
+
+• Generalized Hidden Parameter MDPs for Model-based Meta-reinforcement Learning
+
+• HEDGE: Hierarchical Event-Driven Generation
+
+• Improved COnditional VRNNs for Video Prediction
+
+• Improvisation through Physical Understanding: Using Novel Objects as Tools with Visual Foresight
+
+• Learning Feedback Linearization by MF RL
+
+• "Learning High Level Representations from Continous Experience"
+
+• Deep Knowledge-Based Agents
+
+https://www.facebook.com/icml.imls/videos/394896141118878/
+https://www.facebook.com/icml.imls/videos/2084133498380491/
+
+---
+Workshop on Uncertainty and Robustness in Deep Learning
+
+https://www.facebook.com/icml.imls/videos/892421577776699/
+
+---
+Workshop on Understanding and Improving Generalizing in Deep Learning
+
+Daniel Roy - Progress on Nonvacuous Generalization Bounds
+
+Chelsea Finn - Training for Generalization
+
+Spotlight Talk - A Meta-Analysis of Overfitting in Machine Learning
+
+Spotlight Talk - Uniform Convergence may be unable to explain generalization in deep learning
+
+https://www.facebook.com/icml.imls/videos/834773703576296/
+
+---
+Workshop on Understanding and Improving generalization in Deep Learning
+
+Sham Kakade - Prediction, Learning and Memory
+
+Mikhail Belkin - A Hard Look at Generalization and its Theories
+
+Spotlight Talk - Towards Task and Architecture-Indipendent Generalization Gap Predictors
+
+Spotlight Talk - Data-Dependent Sample Complexity of Deep Neural Networks Via Lipschitz Augmentation
+
+https://www.facebook.com/icml.imls/videos/2543954589165286/
+
+---
+Workshop on Generative Modeling and Model-Based Reasoning for Robotics and AI
+
+"What should be Learned?"
+Invited talk by Stefan Schaal
+
+
+• When to Trust Your Model: Model-Based Policy Optimization
+
+• Model Based Planning with Energy Based Models
+
+• A Perspective on Objects and Systematic Generalization in Model-Based RL
+
+https://www.facebook.com/icml.imls/videos/1286528018196347/
+
+---
+Workshop Session
+
+Keynote by Kilian Weinberger: On Calibration and Fairness
+
+
+• Why ReLU networks yield high-confidence predictions far away from training data and how to mitigate the problem
+
+• Detecting Extrapolation with Influence Functions
+
+• How Can We Be So Dense? The Robustness of Highly Sparse Representations
+
+Keynote by Suchi Saria: Safety Challenges with Black-Box Predictors and Novel Learning Approaches for Failure Proofing
+
+https://www.facebook.com/icml.imls/videos/474831503062000/
+
+---
+Workshop on Understanding and Improving generalization in Deep Learning
+
+Invited Speaker: Aleksander Mądry "Are All Features Created Equal?"
+Invited Speaker: Jason Lee "On the Foundations of Deep Learning: SGD, Overparametrization, and Generalization"
+Spotlight Talk: "Towards Large Scale Structure of the Loss Landscape of Neural Networks"
+Spotlight Talk: "Zero-Shot Learning from scratch: leveraging local compositional representations"
+
+https://www.facebook.com/icml.imls/videos/365029137702011/
+
+---
+Workshop Session
+
+
+• Subspace Inference for Bayesian Deep Learning
+
+• Quality of Uncertainty Quantification for Bayesian Neural Network Inference
+
+• ‘In-Between’ Uncertainty in Bayesian Neural Networks
+
+Keynote by Dawn Song: Adversarial Machine Learning: Challenges, Lessons, and Future Directions
+
+https://www.facebook.com/icml.imls/videos/320132412242165/
+
+---
+Workshop on Generative Modeling and Model-Based Reasoning for Robotics and AI
+
+Value Focused Models, Invited Talk by David Silver
+
+Manipulation by Feel: Touch-Based Control with Deep Predictive Models
+
+Model-based Policy Gradients with Entropy Exploration through Sampling
+
+Model-based Reinforcement Learning for Atari
+
+Learning to Predict Without Looking Ahead: World Models Without Forward Prediction
+
+Physics-as-Inverse-Graphics: Joint Unsupervised Learning of Objects and Physics from Video
+
+Planning to Explore Visual Environments without Rewards
+
+PRECOG: PrEdiction Conditioned On Goals in Visual Multi-Agent settings
+
+Regularizing Trajectory Optimization with Denoising Autoencoders
+
+Towards Jumpy Planning
+
+Variational Temporal Abstraction
+
+Visual Planning with Semi-Supervised Stochastic Action Representations
+
+World Programs for Model-Based Learning and Planning in Compositional State and Action Spaces
+
+Online Learning and Planning without Prior Knowledge
+
+https://www.facebook.com/icml.imls/videos/2366831430268790/
+
+---
+Workshop on Generative Modeling and Model-Based Reasoning for robotics and AI
+
+"Online Learning for Adaptive Robotic Systems" - Byron Boots
+
+
+"An inference perspective on model-based reinforcement learning"
+
+"Reducing Noise in GAN Training with Variance Reduced Extragradient"
+
+
+"Complexity without Losing Generality: The Role of Supervision and Composition" - Chelsea Finn
+
+"Self-supervised Learning for Exploration & Representation" - Abhinav Gupta
+
+Panel Discussion
+
+https://www.facebook.com/icml.imls/videos/449245405622423/
+
+---
+Workshop on Understanding and Improving generalization in Deep Learning
+
+Panel Discussion (Moderator: Nati Srebro)
+
+"Overparameterization without Overfitting: Jacobian-based Generalization Guarantees for Neural Networks"
+
+"How Learning Rate and Delay Affect Minima Selection in Asynchronous Training of Neural Networks: Toward Closing the Generalization Gap"
+
+https://www.facebook.com/icml.imls/videos/854556684898913/
+
+---
+Workshop on Self-Supervised Learning
+
+
+"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" - Jacob Devlin
+
+"Play as Self-Supervised Learning" - Alison Gopnik
+
+"Learning Latent Plans from Play" - Corey Lynch, Mohi Khansari, Ted Xiao, Vikash Kumar, Jonathan Tompson, Sergey Levine, Pierre Sermanet
+
+"Using Self-Supervised Learning Can Improve Model Robustness and Uncertainty" - Dan Hendrycks, Mantas Mazeika, Saurav Kadavath, Dawn Song
+
+https://www.facebook.com/icml.imls/videos/2479161722147572/
+
+---
+Workshop on Identify and Understanding Deep Learnign Phenomena
+
+"Optimization’s Untold Gift to Learning: Implicit Regularization" - Nati Srebro
+
+"Bad Global Minima Exist and SGD Can Reach Them "
+
+"Deconstructing Lottery Tickets: Zeros, Signs, and the Supermask"
+
+"Are all layers created equal? -- Studies on how neural networks represent functions" - Chiyuan Zhang
+
+https://www.facebook.com/icml.imls/videos/450413519084800/
+
+---
+Workshop on Exploration in Reinforcement Learning
+
+"Exploration: The Final Frontier" - Doina Precup
+
+"Overcoming Exploration with Play" - Corey Lynch
+
+"Optimistic Exploration with Pessimistic Initialisation" - Tabish Rashid
+
+"Scheduled Intrinsic Drive: A Hierarchical Take on Intrinsically Motivated Exploration" - Nicolai Dorka
+
+"Generative Exploration and Exploitation" (Missing)
+
+"The Journey is the Reward: Unsupervised Learning of Influential Trajectories" - Jonathan Binas
+
+https://www.facebook.com/icml.imls/videos/2236060723167801/
+
+---
+Workshop on Exploration in Reinforcement Learning
+
+"Sampling and exploration for control of physical systems" - Emo Todorov
+
+"Benchmarking Bonus-Based Exploration Methods on the Arcade Learning Environment" - Adrien Taiga
+
+"Simple Reget Minimzation for Contextual Bandits" - Aniket Deshmukh
+
+"Some Explorations of Exploration in Reinforcement Learning" - Pieter Abbeel
+
+https://www.facebook.com/icml.imls/videos/2265408103721327/
+
+---
+Workshop Session
+
+
+• Line attractor dynamics in recurrent networks for sentiment classiﬁcation 
+
+• Do deep neural networks learn shallow learnable examples first? 
+
+• Crowdsourcing Deep Learning Phenomena
+
+https://www.facebook.com/icml.imls/videos/855147788189057/
+
+---
+"Agents that Set Measurable Goals for Themselves" - Chelsea Finn
+
+https://www.facebook.com/icml.imls/videos/315467659393385/
+
+---
+Workshop Session
+
+"Reverse engineering neuroscience and cognitive science principles" - Aude Oliva
+
+"On Understanding the Hardness of Samples in Neural Networks"
+
+"On the Convex Behavior of Deep Neural Networks in Relation to the Layers' Width"
+
+"Intriguing phenomena in training and generalization dynamics of deep networks" - Andrew Saxe
+
+https://www.facebook.com/icml.imls/videos/2353033231653025/
+
+---
+Workshop session on Self-Supervised Learning
+
+"Self Supervised Learning" - Yann LeCun
+
+"Revisiting Self-Supervised Visual Representation Learning" - Alexander Kolesnikov, Xiaohua Zhai, Lucas Beyer
+
+"Data-Efficient Image Recognition with Contrastive Predictive Coding" - Olivier J. Henaff, Ali Razavi, Carl Doersch, S. M. Ali Eslami, Aaron van den Oord
+
+https://www.facebook.com/icml.imls/videos/378993762742156/
+
+---
+Workshop Session on Explroation in Reinforcemnt Learning
+
+"Exploration... in a dangerous world" - Raia Hadsell
+
+Lightning Talks:
+
+"Curious iLQR: Resolving Uncertainty in Model-based RL" - Sarah Bechtle
+
+"An Empirical and Conceptual Categorization of Value-based Exploration Methods" - Niko Yasui
+
+"Skew-Fit: State-Covering Self-Supervised Reinforcement Learning" - Vitchyr H. Pong
+
+"Optimistic Proximal Policy Optimization" - Takahisa Imagawa
+
+"Exploration with Unreliable Intrinsic reward in Multi-Agent reinforcement Learning" - Tabish Rashid
+
+"Parameterized Exploration" - Lili Wu
+
+"Efficient Exploration in Side-scrolling VIdeo Games with Trajectory Replay" - I-Huan Chiang
+
+"Hypothesis Driven Exploration for Deep Reinforcement Learning" - Caleb Chuck
+
+"Epistemic Risk-Sensitive Reinforcemnt Learning" - Hannes Eriksson
+
+"Near-optimal Optimistic Reinforcement Learning using Empriical Bernstein Inequalities" - Aristide Tossou
+
+"Improved Tree Search for Automatic Program Synthesis" - Lior Wolf
+
+"MuleX: Disentangling Exploration and Exploitation in Deep Reinforcement Learning" - Olivier Teboul
+
+https://www.facebook.com/icml.imls/videos/2324338441219681/
+
+---
+Workshop Session on Explroation in Reinforcemnt Learning
+
+"Adapting Behaviour via Intrinsic Rewards to Learn Predictions" - Martha White
+
+Panel Discussion: Martha White, Jeff Clune, Pulkit Agrawal, and Pieter Abbeel. Moderated by Doina Precup
+
+https://www.facebook.com/icml.imls/videos/1094687407344868/
+
+---
+Workshop Session
+
+"Stratagies for mitigating social bias in deep learning systems" - Olga Russakovsky
+Panel Discussion: Kevin Murphy, Nati Srebro, Aude Oliva, Andrew Saxe, Olga Russakovsky Moderator: Ali Rahimi
+
+https://www.facebook.com/icml.imls/videos/2374820496098856/
+
+---
+Workshop Session on Self-Supervised Learning
+
+"Self-Supervised learning from videos (with sound)" - Andrew Zisserman
+
+"SuperSizing+Empowering Self-Supervised Learning" - Abhinav Gupta
+
+"The Revolution Will Not Be Supervised!" - Alexei Efros
+
+https://www.facebook.com/icml.imls/videos/2030095370631729/
+
+---
+Workshop Session
+
+"The Deep Unknown: on Open-set and Adversarial Examples in Deep Learning" - Terrance Boult
+
+Panel Discussion (moderated by Tom Dietterich)
+
+https://www.facebook.com/icml.imls/videos/2436992626360413/
+
+---
+
+I thought I would put together a list of the machine learning talks from ICML 2019 since I found they were kind of difficult to look through on facebook, and I figured I would share it here. There may be some minor errors in the listing also. I believe they are mostly available on the ICML website too, but I was just looking through the livestreams: https://icml.cc/Conferences/2019/Videos . I already posted some of these over on /r/reinforcementlearning as well.
+
+Comments:
+- Though I understand that it might've always been like this with research in many fields but looking at this huge list of talks induces an anxiety in me because just in this list, I found a lot of new or updates on stuff I'm interested in and it just feels like a mere human like myself will never be able to catch up. 
+Also, thanks for sharing this.
+- facebook is absolutely awful for these video talks. I wonder by default why they do not end up on youtube. I am guessing there is a sponsorship clause involved.
+- The effort is neat, but these are on slideslive, and it's a much better interface: https://slideslive.com/t/icml-2019
+- Thank you for organizing this.
+- [deleted]
+- I always feel the same way. Not quite sure how to deal with that feeling
+- http://proceedings.mlr.press/v97/
+
+The pdf files are here, for those of us without facebook desires.
+- https://slideslive.com/icml/icml-2019-grand-ballroom-b-live
+- That was nice. Thank you.

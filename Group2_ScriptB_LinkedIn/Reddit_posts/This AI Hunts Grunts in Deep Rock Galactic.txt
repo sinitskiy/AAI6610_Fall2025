@@ -1,0 +1,10 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1njezfd/this_ai_hunts_grunts_in_deep_rock_galactic/
+Title: This AI Hunts Grunts in Deep Rock Galactic
+
+Content:
+I used Machine learning to train Yolov9 to Track Grunts in Deep Rock Galactic.  
+I haven't hooked up any targeting code but I had a bunch of fun making this!
+
+Comments:
+- Nice! Have more videos?

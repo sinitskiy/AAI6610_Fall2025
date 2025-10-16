@@ -1,0 +1,43 @@
+URL: https://www.linkedin.com/posts/peng-wang-7a717077_thrilled-to-announce-that-chemlex-has-just-activity-7330405797010518016-T_PS
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Peng Wang的动态
+Peng Wang
+
+Vice President and co-founder of ChemLex, an AI and automation driven small molecule CRDMO company
+
+4 个月
+
+Thrilled to announce that ChemLex has just published “Towards global reaction feasibility and robustness prediction with high throughput data and bayesian deep learning” in Nature Communications.
+
+ChemLex
+
+369 位关注者
+
+4 个月  已编辑
+
+Thrilled to announce that ChemLex has just published “Towards global reaction feasibility and robustness prediction with high throughput data and bayesian deep learning” in Nature Communications.
+
+What we built
+· Data flywheel for synthesis – We pair a high-throughput experimentation HTE platform with active learning enabled by Bayesian neural network BNN trained using NUTS sampling.
+· Active exploration + uncertainty disentanglement – The model sequentially selects the most informative acid-amine condensation experiments, accelerating discovery while disentangles aleatoric vs. epistemic uncertainties.
+· Industrial-grade insight – The model predicts reaction feasibility and quantifies reproducibility, laying a blueprint for next-gen, AI-driven automated organic chemistry lab workflows.
+
+Open resources
+· ~12 k real HTE acid-amine coupling reactions – the most extensive single HTE dataset at a volumetric scale for industrial delivery. DOI: https://lnkd.in/ghHQvifn
+· Open-source code – End-to-end pipelines for Bayesian reactivity prediction and robustness estimation. A toolbox of many widely used uncertainty quantification UQ methods, including Bayesian neural networks NUTSandSVI, Monte Carlo dropout, ensemble learning, and deep kernel learning Gaussian processes. GitHub: https://lnkd.in/gFgAr6Wx
+· Paper link – https://rdcu.be/embcW
+
+Shout-outs
+Huge thanks to our incredible team and collaborators!: co-first authors 𝗛𝗮𝗼𝘄𝗲𝗻 𝗭𝗵𝗼𝗻𝗴 and 𝗬𝗶𝗹𝗮𝗻 𝗟𝗶𝘂, our wonderful collaborator 𝗧𝗶𝗮𝗻𝘀𝗵𝘂 𝗬𝘂 于天舒 at CUHK-Shenzhen, and Singapore Experimental Drug Development Centre (EDDC) Frankie Mak and K

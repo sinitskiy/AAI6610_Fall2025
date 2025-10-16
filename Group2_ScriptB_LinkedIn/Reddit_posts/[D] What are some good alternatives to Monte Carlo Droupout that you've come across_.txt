@@ -1,0 +1,61 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1noi58v/d_what_are_some_good_alternatives_to_monte_carlo/
+Title: [D] What are some good alternatives to Monte Carlo Droupout that you've come across?
+
+Content:
+I'm looking at different methods for uncertainty estimation/quantification in deep/graph neural networks and originally i came across MC dropout. However, based on some threads in this subreddit, I've come to the conclusion that it's likely not considered a good estimate, and that it isn't exactly Bayesian either. 
+
+That leads me to the question in the title. If you're not working with something inherently probabilistic such as a Gaussian Process, how do you meaningfully get uncertainty estimates? Have you come across anything during your reading/research? What makes the methods stand out, especially in comparison to a quick estimate like MCD? 
+
+Comments:
+- I recently reviewed this topic for a journal club on deterministic uncertainty methods. Posting two recent papers that seem to benchmark well as alternatives to MC dropout.
+
+1. [Spectral-normalized Neural Gaussian Process ](https://arxiv.org/abs/2006.10108)(NeurIPS '20) - interesting approach that uses a GP as a final layer to imbue distance awareness. Spectral normalization adds Lipschitz constraint so that distance awareness is easier to achieve.
+2. [Distance aware bottleneck](https://arxiv.org/abs/2406.10775) (ICML '24) - approach based on rate distortion theory. Combines variational information bottleneck + rate distortion theory to make a set of "codebooks" + encoders from the training dataset, and then using those to compute distance-aware uncertainty estimates for test set.
+
+If you believe the various benchmarks, these seem to perform at least on par with MC dropout / deep ensemble, but require only one forward pass, so it's not as computationally intensive as MC dropout/deep ensembles.
+
+Here's a good review / benchmarking of various uncertainty quantification methods (minus Distance Aware Bottleneck): [On the Practicality of Deterministic Epistemic Uncertainty](https://arxiv.org/abs/2107.00649) that gives a broad overview of other alternative approaches to MC dropout.
+- Conformal prediction for UQ is easy to implement, model agnostic, and has nice theoretical guarantees.
+
+Also read a paper recently that showed that a single Bayesian layer as the final layer of a non-Bayesian neural net is as good for UQ as a fully Bayesian network, so you get all the nice properties of Bayes for a fraction of the compute cost.
+- Look i come from a different field, so take everything I say with a solid grain salt.
+
+
+But why not switch to something fully Bayesian? if you take sampling based estimations strategies (mcmc/smc) that should inject the noise you need. There are also reasonably performative variants of mcmc/smc samplers for large dimensional models. Constructing posterior like densities for neural networks is straightforward as well. It should also get you all the uncertainty measurements you require.
+- Dropout is by far the easiest and most common way to perform uncertainty quantification. In my opinion, the poor uncertainties you’ve encountered are likely due to the base model itself, not necessarily the method. 
+
+Dropout predictions can be a good initial source of uncertainty, which can be transformed into well-calibrated predictions. See this paper for example: [Accurate Uncertainties for Deep Learning Using Calibrated Regression](http://proceedings.mlr.press/v80/kuleshov18a/kuleshov18a.pdf)
+- In my experience, ensembling works quite well if you can afford to do it. Also couple with the other comment about estimating a mean and standard deviation to get both epistemic and aleatoric uncertainty.
+- [removed]
+- You could have your model estimate a mean and standard deviation, then sample and back propagate through the pdf. See [these docs](https://docs.pytorch.org/docs/stable/distributions.html).
+- Thank you, these seem excellent! I'll look through the articles you've linked here!
+- Ooh thank you I'll look into both! 
+
+I did briefly read up on conformal prediction though and if I understand correctly, it actually provides us with prediction intervals but not confidence intervals. Forgive me for the silly question (seriously im so new at this), but how would I know which one I want? I'd assumed confidence intervals were more important originally, but it seems prediction intervals are pretty decent for UQ as well? 
+
+Silly question number 2: by implementing a Bayesian layer, what essentially do you mean? Also interestingly there was a time when I tried to run a BNN on a different problem and its prediction abilities were... not that amazing? But ig the main benefit again would be that in would get some uncertainty estimates
+- Can you reference any usecases where Bayesian performs competitively?
+I never came across any ..
+- Hmmm yeah so that is initially what I had read about, but then as I continued looking, I found that it allegedly may not be that great, according to [a comment](https://www.reddit.com/r/MachineLearning/s/eMqDnYjWXH) (and pretty much the entire post) on reddit. I'm working on a more science focused problem so I had assumed that MCD would not be preferred in my case? I'll def take a look at what you've linked though, thanks!
+- So i definitely can do it since I have the required space and compute abilities. So by ensemble here, my mind goes to just doing something like k-fold cross validation with multiple different holdout sets and ensembling over the results of each fold? Would that be correct?
+- Already admitted that I come from a different field, so for the type of applications you’re probably thinking of, that is not something I can help with. :)
+
+OP was looking for a mechanism that can replace dropout + provides uncertainty measures. Bayesian techniques fill that hole.
+
+That aside I think Bayesian always gets a bad rep which I don’t quite understand. A lot of frequentist methods can be understood as limit cases of Bayesian methods. Also the estimations are only reallly that time consuming if you use outdated methods. Plus exploring multimodal features is interesting
+- You could but usually I just retrain with different initial seeds (weight initializations) and that’s enough to get model diversity.
+- I think the problem is scaling. I do not think there are successful bayesian deep neural networks.
+- What about a Laplace approximation? Not fully Bayesian either, but computable on a model after obtaining its parameters with SOTA techniques.
+- You’re probably right on that.
+
+I played around with some of the stochastic gradient versions of hmc that have been proposed (which was a long time ago admittedly).
+
+Worked decently enough on smaller models, If you ignore my atrocious code. That or other well designed proposal/surrogate distributions could get you close, would be my guess.
+- Do you have a suggested resource for this? I came across the name in some article but didnt read much about it at the time.
+- YMMV, but I'd look at the paper:
+
+Laplace Redux -- Effortless Bayesian Deep Learning
+
+It's the paper corresponding to an implementation of the Laplace approximation in torch. If your probability is OK it's a nice quick resource. You can also look in chapter 4 of Bishop's PRML.
+- Awesome, thank you!!

@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/pizarro-ricardo_deep-learning-data-ramping-and-uncertainty-activity-7117943043994836992-E-eH
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ricardo Pizarro的动态
+Ricardo Pizarro
+
+AI solutions for medical imaging
+
+1 年
+
+I am excited to share our Medical Image Analysis publication, from my time as a postdoctoral fellow at McGill University:
+https://lnkd.in/eq5XpSE6
+
+We developed a deep learning (DL) algorithm that can automatically detect artifacts in magnetic resonance imaging (MRI) datasets. We came up with a data ramping technique to avoid overwhelming the algorithm during training. In addition, we incorporated uncertainty metrics to provide levels of confidence in the inference. This work is extremely helpful when working with large MRI databases to reduce the time and effort, otherwise spent by technicians.
+
+This was a collaboration between professors Amir Shmuel and Douglas Arnold, with huge contributions from the talented Haz-Edine Assemlal. Check out the corresponding Github, for the nuts and bolts:
+https://lnkd.in/eK7Tskdt
+
+Thomas Jubault, PhD, MBA
+
+Advisor - Private Markets @ PSP Investments | Machine Learning and Data Analysis lecturer @ HEC Montréal
+
+2 年
+
+I'm thrilled to announce the publication of a scientific article that I had the privilege of co-authoring when I was working at NeuroRx. 
+
+The title:
+"Deep learning, data ramping, and uncertainty estimation for detecting artifacts in large, imbalanced databases of MRI images"
+
+The goal:
+Using AI (deep learning) to assist with automatic Quality Control (QC) of incoming MRI data, ensuring accuracy, consistency, and reliability of analyses performed down the line.
+
+It is a typical challenge for companies to effectively leverage the immense amount of data they have accumulated for training.  We were able to circumvent this obstacle via a fine understanding of how data was stored, and how this could be translated to tagging "de-facto".
+
+The article covers many others aspects of the development and real life implementation of this type of solution in a highly complex environment. 
+
+This achievement would not 

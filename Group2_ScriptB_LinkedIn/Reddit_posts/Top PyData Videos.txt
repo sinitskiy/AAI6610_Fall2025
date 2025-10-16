@@ -1,0 +1,228 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/14js4hn/top_pydata_videos/
+Title: Top PyData Videos
+
+Content:
+Hey all
+
+The PyData conference uploaded their 2023 videos a few days ago, and I was trying to go through them and find some good videos to watch.
+
+I realized that the youtube interface for finding popular videos doesn't really work for conferences. If you sort by most viewed, you can end up with videos from 5-10 years ago as they've had more time to accumulate views.
+
+So I scraped the video data, grouped them by conference, and sorted them by view count.
+Figured this could help other data scientists too:
+
+So here are the top 5 videos from the past few years of conferences, the list is obviously a lot longer than this, but I don't want to have a giant wall of text here. I'm open for feedback on how to improve this:
+
+EDIT: I said I didn't want a giant wall of text here, and yet even just 5 years of conferences is very long, Perhaps I could combine all the regional conferences into just a top N list per year instead. I dunno, anyway, sorry for the big long list.
+
+
+    PyConDE & PyData Berlin 2023
+    ('Thomas Bierhance: Polars - make the switch to lightning-fast dataframes', 'https://youtube.com/watch?v=CtkMzCIXOWk', 5932)
+    ('Shahriyar Rzayev: Building Hexagonal Python Services', 'https://youtube.com/watch?v=qCw0ySOeekA', 679)
+    ('Carsten Binnig: Towards Learned Database Systems', 'https://youtube.com/watch?v=VtL6Y4x10O0', 567)
+    ('Robin Raymond:  Rusty Python - A Case Study', 'https://youtube.com/watch?v=Y5XQR0wUEyM', 396)
+    ('samsja: Modern typed python - dive into a mature ecosystem from web dev to machine learning', 'https://youtube.com/watch?v=6MaCfvgqfUU', 376)
+    
+    
+    PyData Seattle 2023
+    ('Carl Kadie - A Perfect, Infinite-Precision, Game Physics in Python | PyData Seattle 2023', 'https://youtube.com/watch?v=52n2qKgwW_Q', 1945)
+    ('JIm Dowling - Build a production ML system with only Python on free serverless services', 'https://youtube.com/watch?v=dgBFShBuV4k', 994)
+    ('Jiang et al. - Automated Machine Learning & Tuning with FLAML | PyData Seattle 2023', 'https://youtube.com/watch?v=BDbGLGCVOKo', 848)
+    ('Ties de Kok - Going beyond ChatGPT: introduction to prompt engineering & LLMs | PyData Seattle 2023', 'https://youtube.com/watch?v=CG3b6D3XNOE', 619)
+    ('Leland McInnes - Data Mapping for Data Exploration | PyData Seattle 2023', 'https://youtube.com/watch?v=r8dWZX8IGw8', 435)
+    
+    
+    PyData Global 2022
+    ('Allen Downey: Bayesian Decision Analysis [Tutorial] | PyData Global 2022', 'https://youtube.com/watch?v=fsdbneHgi58', 5882)
+    ('Thomas Wiecki: The State of the Art for Probabilistic Programming | PyData Global 2022', 'https://youtube.com/watch?v=aLEkXKI_R_s', 5415)
+    ('Benjamin Vincent - What-if- Causal reasoning meets Bayesian Inference | PyData Global 2022', 'https://youtube.com/watch?v=gV6wzTk3o1U', 4494)
+    ('Cheryl Roberts - Parallelization of code in Python for beginners | PyData Global 2022', 'https://youtube.com/watch?v=bzdMHXDusOQ', 2670)
+    ('Sandy Ryza - Data pipelines != workflows: orchestrating data with Dagster | PyData Global 2022', 'https://youtube.com/watch?v=tE1H8fYQ95M', 2169)
+    
+    
+    PyData Yerevan 2022
+    ('Hossein Mortazavi - How to use Pandas Efficiently | PyData Yerevan 2022', 'https://youtube.com/watch?v=IRr3gx71rnk', 2806)
+    ('Fritz Obermeyer - Probabilistic Programming and Readable Models | PyData Yerevan 2022', 'https://youtube.com/watch?v=GBLquwA9hYc', 1556)
+    ('Dmitry Korobchenko - PyTorch Geometric for Graph Neural Nets | PyData Yerevan 2022', 'https://youtube.com/watch?v=knmPoaqCoyw', 1381)
+    ('Sona Hambaryan - A/B Testing in Production | PyData Yerevan 2022', 'https://youtube.com/watch?v=U2DtBTxRkCM', 1331)
+    ('Diyar Mohammadi - Near-Duplicate Ad Detection in Online Classified Ad Services | PyData Yerevan 2022', 'https://youtube.com/watch?v=CcsqasfszjE', 1203)
+    
+    
+    PyData NYC 2022
+    ("James Powell- Why do I need to know Python- I'm a pandas user | PyData NYC 2022", 'https://youtube.com/watch?v=iE5QLrzkGBU', 8573)
+    ('Jeff Reback: pandas at a Crossroads, the Past, Present, and Future | PyData NYC 2022', 'https://youtube.com/watch?v=85XdsWz_Q_o', 3816)
+    ('Juan Luis- Expressive and fast dataframes in Python with polars | PyData NYC 2022', 'https://youtube.com/watch?v=LGAHTp4DYZY', 3682)
+    ('NixtlaVerse, bridging the gap between statistics and deep learning for time series | PyData NYC 2022', 'https://youtube.com/watch?v=iKW-WQO1d1A', 3269)
+    ('Lara Kattan - Simulations in Python: Discrete Event Simulation with SimPy | PyData NYC 2022', 'https://youtube.com/watch?v=TALKZZV0TiU', 1619)
+    
+    
+    PyData London 2022
+    ('Kishan Manani - Feature Engineering for Time Series Forecasting | PyData London 2022', 'https://youtube.com/watch?v=9QtL7m3YS9I', 39842)
+    ('Chris Fonnesbeck - Probabilistic Python: An Introduction to Bayesian Modeling with PyMC', 'https://youtube.com/watch?v=911d4A1U0BE', 13537)
+    ('Thomas Wiecki - Solving Real-World Business Problems with Bayesian Modeling | PyData London 2022', 'https://youtube.com/watch?v=twpZhNqVExc', 10251)
+    ('Valerio Maggio - Rethinking Data Visulisation with PyScript | PyData London 2022', 'https://youtube.com/watch?v=m6UNCJESYHM', 9107)
+    ('Hanna van der Vlis - Clusterf*ck: A Practical Guide to Bayesian Hierarchical Modeling in PyMC3', 'https://youtube.com/watch?v=pbcxb9xpTBI', 8117)
+    
+    
+    PyData Eindhoven 2022
+    ('Pedro Holanda - DuckDB: Bringing analytical SQL directly to your Python shell', 'https://youtube.com/watch?v=2i2nyodhGkk', 4007)
+    ('Wesley Boelrijk - Lowering the barrier for ML monitoring', 'https://youtube.com/watch?v=uHksXhxAZpU', 2113)
+    ('Marysia Winkels - Data Storytelling through Visualization', 'https://youtube.com/watch?v=eMGF9AeO-sM', 2025)
+    ('Andrei Alekseev - Why does everyone need to develop a machine learning package?', 'https://youtube.com/watch?v=8bc0WJENcSY', 1156)
+    ('Emil Rijcken - FuzzyTM: a Python package for fuzzy topic models', 'https://youtube.com/watch?v=sD-KmuqqYPY', 1107)
+    
+    
+    PyCon DE & PyData Berlin 2022
+    ('Franz Kiraly: sktime - python toolbox for time series: advanced forecasting - probabilistic, glob...', 'https://youtube.com/watch?v=4Rf9euAhjNc', 7527)
+    ('Dr. Juan Orduz: Introduction to Uplift Modeling', 'https://youtube.com/watch?v=VWjsi-5yc3w', 4437)
+    ('Tobias Sterbak: Introduction to MLOps with MLflow', 'https://youtube.com/watch?v=IUF4s9SXnd4', 3897)
+    ('Aleksander Molak: Practical graph neural networks in Python with TensorFlow and Spektral', 'https://youtube.com/watch?v=hCY0_6etLjk', 3639)
+    ('Melissa Weber Mendonça: Beyond the basics: Contributor experience, diversity and culture in open...', 'https://youtube.com/watch?v=lQWDRg99B6w', 3373)
+    
+    
+    PyData Global 2021
+    ('So You Wanna Be a Pandas Expert? (Tutorial) - James Powell | PyData Global 2021', 'https://youtube.com/watch?v=pjq3QOxl9Ok', 17385)
+    ('sktime - A Unified Toolbox for ML with Time Series - Markus Löning | PyData Global 2021', 'https://youtube.com/watch?v=ODspi8-uWgo', 16211)
+    ('Machine Learning Lifecycle Made Easy with MLflow | PyData Global 2021', 'https://youtube.com/watch?v=WbicniUy_u0', 11741)
+    ('Document Your Scientific Project With Markdown, Sphinx, and Read the Docs | PyData Global 2021', 'https://youtube.com/watch?v=qRSb299awB0', 10260)
+    ('Polars, the Fastest Dataframe Library You Never Heard of. - Ritchie Vink | PyData Global 2021', 'https://youtube.com/watch?v=iwGIuGk5nCE', 7456)
+    
+    
+    PyData Eindhoven 2020 | 7-9 Oct. 2020
+    ('Vincent Warmerdam - Playing by the Rules-Based-Systems | PyData Eindhoven 2020', 'https://youtube.com/watch?v=nJAmN6gWdK8', 4523)
+    ('Daan de Bruin - Fighting COVID with Python | PyData Eindhoven 2021', 'https://youtube.com/watch?v=yhrPTiN7Cjw', 1880)
+    ('Matthijs Brouns - 10x smaller docker containers for Data Science | PyData Eindhoven 2020', 'https://youtube.com/watch?v=Z1Al4I4Os_A', 1785)
+    ('Koen Vossen - From notebook to production using flask and heroku | PyData Eindhoven 2020', 'https://youtube.com/watch?v=BobaHtafXm0', 1247)
+    ('Wilder Rodrigues - Applying Deep Learning for Object Detection from a Telecom Perspective', 'https://youtube.com/watch?v=I-AuUDaWw4k', 1065)
+    
+    
+    PyData Global 2020
+    ('Bogumił Kamiński - An introduction to DataFrames for pandas users| PyData GLobal 2020', 'https://youtube.com/watch?v=K2J8pwSyUMw', 5602)
+    ('Alexander Hendorf - Better Code for Data Science | PyData Global 2020', 'https://youtube.com/watch?v=68L00cvYXXQ', 4482)
+    ('Massimiliano Ungheretti- Modelling the extreme using Quantile Regression| PyData Global 2020', 'https://youtube.com/watch?v=GpRuhE04lLs', 2185)
+    ('jose berengueres - Data Visualization & Storytelling | PyData Global 2020', 'https://youtube.com/watch?v=plFPTDwk66s', 2012)
+    ('Ian Ozsvald- Skinny Pandas Riding On A Rocket| PyData Global 2020', 'https://youtube.com/watch?v=qsiUOXwexus', 1764)
+    
+    
+    PyData Warsaw 2019
+    ('Przemek Chrabka: How to structure PySpark application | PyData Warsaw 2019', 'https://youtube.com/watch?v=Bp0XvA3wIXw', 7399)
+    ('Dean Langsam: Disease Modeling with Scipy and PyMC | PyData Warsaw 2019', 'https://youtube.com/watch?v=3mRlohQLNLA', 4452)
+    ("Jarek Potiuk: What's coming in Apache Airflow 2.0 | PyData Warsaw 2019", 'https://youtube.com/watch?v=p6d3tr02exQ', 3895)
+    ('Jacek Komorowski: Football video analysis using Deep Learning | PyData Warsaw 2019', 'https://youtube.com/watch?v=rerCauAFeno', 2380)
+    ('Michał Jamroż: Posterior Collapse in Deep Generative models | PyData Warsaw 2019', 'https://youtube.com/watch?v=oHtqlRIsXcQ', 1785)
+    
+    
+    PyData NYC 2019
+    ('Michael Johns: Propensity Score Matching: A Non-experimental Approach to Causal... | PyData NYC 2019', 'https://youtube.com/watch?v=gaUgW7NWai8', 21684)
+    ('Aditya Lahiri: Dealing With Imbalanced Classes in Machine Learning | PyData New York 2019', 'https://youtube.com/watch?v=6M2d2n-QXCc', 15523)
+    ('Meghan Heintz: Launching a new warehouse with SimPy at Rent the Runway | PyData New York City 2019', 'https://youtube.com/watch?v=693UiPq6mII', 14290)
+    ('Chris Fonnesbeck: A Primer on Gaussian Processes for Regression Analysis | PyData NYC 2019', 'https://youtube.com/watch?v=j7Ruu3Yu-70', 11901)
+    ('Patrick Landreman: A Crash Course in Applied Linear Algebra | PyData New York 2019', 'https://youtube.com/watch?v=wkxgZirbCr4', 7782)
+    
+    
+    PyData Eindhoven 2019
+    ('Vincent D. Warmerdam: Untitled12.ipynb | PyData Eindhoven 2019', 'https://youtube.com/watch?v=yXGCKqo5cEY', 19192)
+    ('Sebastiaan J. van Zelst: Process Mining in Python | PyData Eindhoven 2019', 'https://youtube.com/watch?v=i6NGHvZyHXY', 17878)
+    ('Alexander Backus: Categorizing financial transactions for personal finance.. | PyData Eindhoven 2019', 'https://youtube.com/watch?v=_I_HCr-mfhM', 3624)
+    ('Gerben Oostra: Preventing churn like a bandit | PyData Eindhoven 2019', 'https://youtube.com/watch?v=n1uqeBNUlRM', 2761)
+    ('Ekhtiar Syed: Exploratory Data Analysis (EDA) and Visualization Techniques.. | PyData Eindhoven 2019', 'https://youtube.com/watch?v=YFvtZfHaPR8', 2668)
+    
+    
+    PyData Córdoba 2019
+    ('Junpeng Lao: Writing effective bayesian programs using TensorFlow and TFP | PyData Córdoba', 'https://youtube.com/watch?v=zWXTpZX4PPo', 8772)
+    ("Junpeng Lao: A Hitchhiker's Guide to designing a Bayesian library in Python | PyData Córdoba", 'https://youtube.com/watch?v=WHoS1ETYFrw', 5030)
+    ('Rodolfo Bonnin: A (Very Gentle) introduction to Quantum Computing | PyData Córdoba', 'https://youtube.com/watch?v=_kvAbcg-iBI', 2991)
+    ('Ivana Seric: The evolution of basketball with data science | PyData Córdoba', 'https://youtube.com/watch?v=exGg6J14utA', 2561)
+    ('Daniel Imberman & Gonzalo Diaz: Data Products, From 0 to data science pipeline | PyData Córdoba', 'https://youtube.com/watch?v=UZg45yRTzwo', 2551)
+    
+    
+    PyData Berlin 2019
+    ('Tutorial: Managing the end-to-end machine learning lifecycle with MLFlow', 'https://youtube.com/watch?v=6z0_n8kxh-g', 20690)
+    ('Automated Feature Engineering and Selection in Python', 'https://youtube.com/watch?v=4-4pKPv9lJ4', 13081)
+    ('Tutorial: Quantum computing with Python', 'https://youtube.com/watch?v=tjx2b-cJktE', 11075)
+    ('Jeremy Tuloup: A Tour of JupyterLab Extensions | PyData Berlin 2019', 'https://youtube.com/watch?v=3pdrzhny9Lc', 7380)
+    ('Philipp Rudiger: Panel: Turn any notebook into a deployable dashboard | PyData Berlin 2019', 'https://youtube.com/watch?v=Ohr29FJjBi0', 7200)
+    
+    
+    PyData Amsterdam 2019
+    ('Jan van der Vegt: A walk through the isolation forest | PyData Amsterdam 2019', 'https://youtube.com/watch?v=RyFQXQf4w4w', 30749)
+    ('Vincent Warmerdam: The profession of solving (the wrong problem) | PyData Amsterdam 2019', 'https://youtube.com/watch?v=kYMfE9u-lMo', 17501)
+    ("Nick Jones, Sam Barrows: Uber's Synthetic Control | PyData Amsterdam 2019", 'https://youtube.com/watch?v=j5DoJV5S2Ao', 11941)
+    ('Max Halford: Online Machine Learning with Creme | PyData Amsterdam 2019', 'https://youtube.com/watch?v=P3M6dt7bY9U', 8252)
+    ('Amit Beka: Annotating data the right way | PyData Amsterdam 2019', 'https://youtube.com/watch?v=U8qS0ZpWp0I', 7916)
+    
+    
+    PyData London 2019
+    ('Anna Veronika Dorogush: Mastering gradient boosting with CatBoost | PyData London 2019', 'https://youtube.com/watch?v=usdEWSDisS0', 41280)
+    ('Chris Fonnesbeck: An introduction to Markov Chain Monte Carlo using PyMC3  | PyData London 2019', 'https://youtube.com/watch?v=SS_pqgFziAg', 21631)
+    ('Vincent Warmerdam: How to Constrain Artificial Stupidity | PyData London 2019', 'https://youtube.com/watch?v=Z8MEFI7ZJlA', 17716)
+    ('Ian Ozsvald: A gentle introduction to Pandas timeseries and Seaborn | PyData London 2019', 'https://youtube.com/watch?v=8upGdZMlkYM', 12073)
+    ("James Powell: Because You Can Run, You Can't Hide: Some Musings on API Design | PyData London 2019", 'https://youtube.com/watch?v=S0AdB36WuAU', 10000)
+    
+    
+    PyData Miami 2019
+    ('Sergey Feldman: You Should Probably Be Doing Nested Cross-Validation | PyData Miami 2019', 'https://youtube.com/watch?v=DuDtXtKNpZs', 9100)
+    ('Alberto Cairo: How We Lie to Ourselves With Charts | PyData Miami 2019', 'https://youtube.com/watch?v=3QYsc48zzgs', 4331)
+    ('Dan Ryan: Efficient and Flexible Hyperparameter Optimization | PyData Miami 2019', 'https://youtube.com/watch?v=IqQT8se9ofQ', 4278)
+    ('Russell Burdt: Build and deploy a Python bokeh application on a Linux server | PyData Miami 2019', 'https://youtube.com/watch?v=sv53kN_B5nU', 3832)
+    ('Justin J. Nguyen: Exposing Dark Data in the enterprise with custom NLP | PyData Miami 2019', 'https://youtube.com/watch?v=iFgNcBahUAE', 3396)
+ 
+
+    PyData Warsaw 2018
+    ('Uncertainty estimation and Bayesian Neural Networks - Marcin Możejko', 'https://youtube.com/watch?v=dj-FKXxy7HQ', 14962)
+    ('High Performance Data Processing in Python - Donald Whyte', 'https://youtube.com/watch?v=NoJr08FNQeg', 13395)
+    ('PyTorch 1.0: now and in the future - Adam Paszke', 'https://youtube.com/watch?v=OkyqgWd2jBk', 10492)
+    ('Can you enhance that? Single Image Super Resolution - Katarzyna Kańska', 'https://youtube.com/watch?v=lmUxbRY7H2I', 7552)
+    ('Similarity learning using deep neural networks - Jacek Komorowski', 'https://youtube.com/watch?v=OkcS4qE4Zsg', 7458)
+
+    
+    PyData NYC 2018
+    ('HDBSCAN, Fast Density Based Clustering, the How and the Why - John Healy', 'https://youtube.com/watch?v=dGsxd67IFiU', 43241)
+    ('Open the Black Box: an Introduction to Model Interpretability with LIME and SHAP - Kevin Lemagnen', 'https://youtube.com/watch?v=C80SQe16Rao', 37481)
+    ('Unit Testing for Data Scientists - Hanna Torrence', 'https://youtube.com/watch?v=Da-FL_1i6ps', 23515)
+    ("A Bluffer's Guide to Dimension Reduction - Leland McInnes", 'https://youtube.com/watch?v=9iol3Lk6kyU', 17471)
+    ('… - James Powell', 'https://youtube.com/watch?v=65_-6kEAq58', 6099)
+    
+    
+    PyData DC 2018
+    ('Daniel Chen: Cleaning and Tidying Data in Pandas | PyData DC 2018', 'https://youtube.com/watch?v=iYie42M1ZyU', 215101)
+    ("Beautiful, Interactive, and Portable Maps using Folium and Live API Data - Ariel M'ndange-Pfupfu", 'https://youtube.com/watch?v=xN2N-p33V1k', 33777)
+    ('Dash: data exploration web apps in pure Python - Chelsea Douglas', 'https://youtube.com/watch?v=eusglTlW4OA', 27217)
+    ('End to End Machine learning pipelines for Python driven organizations - Nick Harvey', 'https://youtube.com/watch?v=DGeVRD63xZw', 17308)
+    ('Probabilistic Programming in the Real World - Zach Anglin', 'https://youtube.com/watch?v=5f-9xCuyZh4', 14408)
+    
+    
+    PyData LA 2018
+    ('Tamara Louie: Applying Statistical Modeling & Machine Learning to Perform Time-Series Forecasting', 'https://youtube.com/watch?v=JntA9XaTebs', 71063)
+    ('1D Convolutional Neural Networks for Time Series Modeling - Nathan Janos, Jeff Roach', 'https://youtube.com/watch?v=nMkqWxMjWzg', 59651)
+    ('Keynote: Judea Pearl - The New Science of Cause and Effect', 'https://youtube.com/watch?v=ZaPV1OSEpHw', 52534)
+    ('JupyterLab: The Evolution of the Jupyter Notebook - Ian Rose, Grant Nestor', 'https://youtube.com/watch?v=NSiPeoDpwuI', 34758)
+    ('Customer Lifetime Value: Models, Metrics and a Multitude of Uses - Brian Bloniarz', 'https://youtube.com/watch?v=f3ua_dDjTNU', 32865)
+    
+    
+    PyData Berlin 2018
+    ('Stefan Otte: Deep Neural Networks with PyTorch | PyData Berlin 2018', 'https://youtube.com/watch?v=_H3aw6wkCv0', 66588)
+    ('Ivan Bilan: Understanding and Applying Self-Attention for NLP | PyData Berlin 2018', 'https://youtube.com/watch?v=OYygPG4d9H0', 48226)
+    ('Building new NLP solutions with spaCy and Prodigy - Matthew Honnibal', 'https://youtube.com/watch?v=jpWqz85F_4Y', 17605)
+    ('Manifold Learning and Dimensionality Reduction for Data Visualization... - Stefan Kühn', 'https://youtube.com/watch?v=j8080l9Pvic', 16822)
+    ("Let's SQL Like It's 1992! - James Powell", 'https://youtube.com/watch?v=w5J_WrcjwR0', 15054)
+    
+    
+    PyData Amsterdam 2018
+    ('Conversational AI with Rasa Core & NLU - Tom Bocklisch', 'https://youtube.com/watch?v=zRqjH7fT0G0', 24151)
+    ('Elegant data pipelining with Apache Airflow - Bolke de Bruin', 'https://youtube.com/watch?v=neuh_2_zrt8', 18851)
+    ('Bayesian Deep learning with 10% of the weights - Rob Romijnders', 'https://youtube.com/watch?v=Z7VN7oRA6TY', 14121)
+    ('Hands-on introduction to Deep Learning with Keras and Tensorflow - Rodrigo Agundez', 'https://youtube.com/watch?v=BBIA6Wcu2j4', 10232)
+    ('Monitoring models in production - Jannes Klaas', 'https://youtube.com/watch?v=IqKunD0Bl5c', 10137)
+    
+    
+    PyData London 2018
+    ('Vincent Warmerdam: Winning with Simple, even Linear, Models | PyData London 2018', 'https://youtube.com/watch?v=68ABAU_V8qI', 90274)
+    ('Unsupervised Anomaly Detection with Isolation Forest - Elena Sharova', 'https://youtube.com/watch?v=5p8B2Ikcw-k', 81021)
+    ('CatBoost - the new generation of gradient boosting - Anna Veronika Dorogush', 'https://youtube.com/watch?v=8o0e-r0B5xQ', 32644)
+    ("Who's singing? Automatic bird sound recognition with machine learning - Dan Stowell", 'https://youtube.com/watch?v=pzmdOETnhI0', 22892)
+    ('Anomaly Detection - Nick Radcliffe', 'https://youtube.com/watch?v=B5mPqFOx09U', 22022)
+
+Comments:
+- Since these are all on Youtube, maybe you could create a playlist and we can upvote them there?

@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/pv99mt/reproducibility_standards_for_machine_learning_in/
+Title: Reproducibility standards for machine learning in the life sciences
+
+Content:
+
+
+Comments:
+- As researchers increasingly use ML, it is incredible how few are reproducible. It is almost funny how many researchers will release their code (generally full of hard-coded paths) but not any data or models. The code is useless for reproducibility then. However, at least it can be inspected to see if terrible mistakes in analysis were made.
+- The Bronze standard (code and models available) makes plenty of sense to me as a thing of value.
+
+The Silver standard (dependencies can be downloaded in a single command) will often be unobtainable in the life sciences, because, for example, hospital policies may not allow data to be public.
+
+The Gold standard (end-to-end in one click) seems to add very little value.
+- And to use them in most of you data to learn -if they are appropiate-.
+- If analysis is done the right way (i.e. with version control, data deposition to GEO/SRA, etc) bronze shouldn't be too difficult to obtain, and I see it as a reasonable target for any fully trained bioinformatician to hit.
+
+I think for any bioinformatician to realistically attain silver or gold standard in a project, there needs to be financial incentives (similar to grants for software lifecycle of popular bioinformatics tools). The fact that those don't really exist seems to agree with your assessment that the jump from bronze to gold adds very little value. At this point, they feel pie-in-the-sky to me.

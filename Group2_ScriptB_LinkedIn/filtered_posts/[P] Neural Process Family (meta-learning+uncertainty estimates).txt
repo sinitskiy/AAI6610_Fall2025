@@ -1,0 +1,55 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/j9utb1/p_neural_process_family_metalearninguncertainty/
+Title: [P] Neural Process Family (meta-learning+uncertainty estimates)
+
+Content:
+With some friends ( u/gordonjo ), we wrote an online book / series of blogs about Neural Processes (NPs) --- a very natural way to incorporate uncertainty estimates in small data regimes, by meta-learning a distribution of predictors (Stochastic Process).
+
+Online book: [yanndubs.github.io/Neural-Process-Family](https://yanndubs.github.io/Neural-Process-Family)
+
+Code: [https://github.com/YannDubs/Neural-Process-Family](https://github.com/YannDubs/Neural-Process-Family)
+
+The motivations were the following:
+
+* Have more people be interested in NPs because (we believe) they have a large potential to improve DL in small data regimes where uncertainty estimates are required (e.g. medical diagnosis).
+* Provide all the code to implement important NPs (CNP,NP,AttnNP,ConvCNP,ConvNP) as well as pretrained models.
+* Provide the code to replicate figures found in many NP papers.
+* Have a unifying framework (both mathematically and implementation-wise) to help research in NPs.
+
+**Teaser:**
+
+A \*single\* NP can adapt to samples from different Gaussian Processes:
+
+[Same ConvNP adapting to samples from different GPs](https://i.redd.it/h2utvp3m3ps51.gif)
+
+A single NP trained on CelebA 128 can:
+
+\-increase the resolution of images
+
+\-impute missing pixels in-out-of-distribution images
+
+&#x200B;
+
+[ConvCNP upscaling CelebA 8x8 images to 128x128](https://preview.redd.it/mw4hd06s3ps51.png?width=858&format=png&auto=webp&s=cd4928a5c6710c7d766adfed9530acc43c0d33a8)
+
+[ConvCNP trained on CelebA performing zero-shot interpolation of Ellen's Selfie](https://preview.redd.it/mk0qyydt3ps51.png?width=424&format=png&auto=webp&s=00f968a6e66b30b04af391024fd3bb1fb98f6293)
+
+&#x200B;
+
+Disclaimer: we are co-authors of the ConvCNP and ConvnNP paper
+
+Comments:
+- Sweet, I'll read into this. Could you relate NPs, GPs and DGPs to get me started or this this something the articles will do?
+- As we say in the article their are 2 types of neural processes, namely, those that use a latent variable (latent NPs) and those that don't (conditional NPs). Roughly speaking the latent NPs are to conditional NPs what deep GPs are to GPs, i.e., they add latent variables to be more expressive but that makes training more complex.   
+
+So I'll focus here on conditional NPs and GPs. Intuitively speaking NPs bring to GPs the major benefits of neural networks:  
+\- fast inference: O(n) or O(n\^2) for NPs instead of O(n\^3) for GPs   
+\- instead of experts having to define kernel functions, NPs use of neural networks that are trained from data. Intuitively, you can think of the kernel function being implicitly learned from the data (this is a very rough intuition as there is no such kernel function in NPs).
+
+This comes at the cost of the following disadvantages:  
+\- NPs require large datasets   
+\- NPs do not have the nice mathematical guarantees that GPs have
+
+  
+But I would suggest reading the introduction in the article to get a more accurate sense of what NPs are and why they can be useful.
+- Thank you

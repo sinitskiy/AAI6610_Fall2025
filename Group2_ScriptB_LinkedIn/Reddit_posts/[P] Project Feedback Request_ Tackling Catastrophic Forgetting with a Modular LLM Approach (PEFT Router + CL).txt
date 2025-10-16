@@ -1,0 +1,229 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1kpax4u/p_project_feedback_request_tackling_catastrophic/
+Title: [P] Project Feedback Request: Tackling Catastrophic Forgetting with a Modular LLM Approach (PEFT Router + CL)
+
+Content:
+# Feedback Request: Tackling Catastrophic Forgetting with a Modular LLM Approach (PEFT Router + CL)
+
+I'm working on a project conceived, researched, designed and coded by LLM's. I have no background in the field and frankly I'm in over my head. If anyone could read my project outline and provide feedback, I'd be thrilled. Everything after this was created by Ai.  
+\-Beginning of Ai Output-
+
+Hi r/MachineLearning 
+
+I'm working on a project focused on enabling Large Language Models (currently experimenting with Gemma-2B) to learn a sequence of diverse NLP tasks continually, without catastrophic forgetting. The core of my system involves a frozen LLM backbone and dynamic management of Parameter-Efficient Fine-Tuning (PEFT) modules (specifically LoRAs) via a trainable "PEFT Router." The scaffold also includes standard CL techniques like EWC and generative replay.
+
+**High-Level Approach:**  
+When a new task is introduced, the system aims to:
+
+1. Represent the task using features (initially task descriptions, now exploring richer features like example-based prototypes).
+2. Have a PEFT Router select an appropriate existing LoRA module to reuse/adapt, or decide to create a new LoRA if no suitable one is found.
+3. Train/adapt the chosen/new LoRA on the current task.
+4. Employ EWC and replay to mitigate forgetting in the LoRA modules.
+
+**Current Status & Key Challenge: Router Intelligence**  
+We've built a functional end-to-end simulation and have successfully run multi-task sequences (e.g., SST-2 -> MRPC -> QNLI). Key CL mechanisms like LoRA management, stateful router loading/saving, EWC, and replay are working. We've even seen promising results where a single LoRA, when its reuse was managed by the system, adapted well across multiple tasks with positive backward transfer, likely due to effective EWC/replay.
+
+However, the main challenge we're hitting is the **intelligence and reliability of the PEFT Router's decision-making.**
+
+* Initially, using only task description embeddings, the router struggled with discrimination and produced low, undifferentiated confidence scores (softmax over cosine similarities) for known LoRA profiles.
+* We've recently experimented with richer router inputs (concatenating task description embeddings with averaged embeddings of a few task examples – k=3).
+* We also implemented a "clean" router training phase ("Step C") where a fresh router was trained on these rich features by forcing new LoRA creation for each task, and then tested this router ("Step D") by loading its state.
+* **Observation:** Even with these richer features and a router trained specifically on them (and operating on a clean initial set of its own trained profiles), the router still often fails to confidently select the "correct" specialized LoRA for reuse when a known task type is presented. It frequently defaults to creating new LoRAs because the confidence in reusing its own specialized (but previously trained) profiles doesn't surpass a moderate threshold (e.g., 0.4). The confidence scores from the softmax still seem low or not "peaky" enough for the correct choice.
+
+**Where I'm Seeking Insights/Discussion:**
+
+1. **Improving Router Discrimination with Rich Features:** While example prototypes are a step up, are there common pitfalls or more advanced/robust ways to represent tasks or LoRA module specializations for a router that we should consider? gradient sketches, context stats, and dynamic expert embeddings
+2. **Router Architecture & Decision Mechanisms:** Our current router is a LinearRouter (cosine similarity to learned profile embeddings + softmax + threshold). Given the continued challenge even with richer features and a clean profile set, is this architecture too simplistic? What are common alternatives for this type of dynamic expert selection that better handle feature interaction or provide more robust confidence?
+3. **Confidence Calibration & Thresholding for Reuse Decisions:** The "confidence slide" with softmax as the pool of potential (even if not selected) experts grows is a concern. Beyond temperature scaling (which we plan to try), are there established best practices or alternative decision mechanisms (e.g., focusing more on absolute similarity scores, learned decision functions, adaptive thresholds based on router uncertainty like entropy/margin) that are particularly effective in such dynamic, growing-expert-pool scenarios?
+4. **Router Training:** How critical is the router's own training regimen (e.g., number of epochs, negative examples, online vs. offline updates) when using complex input features? Our current approach is 1-5 epochs of training on all currently "active" (task -> LoRA) pairs after each main task.
+
+My goal is to build a router that can make truly intelligent and confident reuse decisions. I'm trying to avoid a scenario where the system just keeps creating new LoRAs due to perpetual low confidence, which would undermine the benefits of the router.
+
+(Optional: I'm pursuing this project largely with the assistance of LLMs for conceptualization, research, and coding, which has been an interesting journey in itself!)
+
+Any pointers to relevant research, common pitfalls, or general advice on these aspects would be greatly appreciated!
+
+Thanks for your time.
+
+\-End of Ai output-
+
+Is this Ai slop or is this actually something of merit? Have I been wasting my time? Any feedback would be great!  
+\-Galileo82
+
+Comments:
+- This looks interesting, I have actually implemented something similar for bert-style classifiers in the open-source project adaptive classifiers - [https://github.com/codelion/adaptive-classifier](https://github.com/codelion/adaptive-classifier) it enables users to use any classifier without fine-tuning. It also uses EWC, you can see the implementation here - [https://github.com/codelion/adaptive-classifier/blob/main/src/adaptive\_classifier/ewc.py](https://github.com/codelion/adaptive-classifier/blob/main/src/adaptive_classifier/ewc.py)
+
+You may want to think through how you are going to evaluate it and what kind of tasks you will test it with first. The key would be to demonstrate improvements over existing techniques.
+- I have some thoughts about what we're getting stuck on but I wanted to give you the Ai's response.
+
+**AI-generated response (Reddit-friendly formatting)**
+
+> That’s a very relevant and helpful reply from the Reddit user, Operator! It’s great to see someone point to an open-source project that shares conceptual similarities and also uses **EWC**.
+
+---
+
+### 💡 Key Aspects of `adaptive-classifier`’s EWC Implementation
+
+1. **Standard EWC formulation**
+
+   * Stores `old_params` (previous-task parameters).
+   * Computes the **Fisher Information Matrix**.
+   * Classic penalty
+
+     ```python
+     ewc_loss = ewc_lambda * Σ Fisher[param] * (new_param - old_param)**2
+     ```
+
+2. **Fisher computation (`_compute_fisher`)**
+
+   * Uses a dataset + `model.eval()` for stability.
+   * **Samples labels from the model’s own predictions**:
+
+     ```python
+     outputs = model(batch_embeddings)
+     probs   = F.softmax(outputs, dim=1)
+     log_p   = F.log_softmax(outputs, dim=1)
+     sampled_labels = torch.multinomial(probs, 1).squeeze()
+     loss = F.nll_loss(log_p, sampled_labels)
+     loss.backward()
+     fisher[n] += p.grad.data ** 2 / len(loader)
+     ```
+
+3. **EWC loss application**
+
+   * `ewc_loss()` is **added to the main task loss** before back-prop.
+   * Optional `batch_size` normalisation.
+
+---
+
+### 🆚 Comparison with **“The Adaptive Learner”** EWC
+
+| Aspect            | `adaptive-classifier`           | **The Adaptive Learner**           |
+| ----------------- | ------------------------------- | ---------------------------------- |
+| Stores            | `old_params`                    | `old_params_values`                |
+| Fisher scores     | `fisher_info`                   | `importance_scores`                |
+| Penalty added     | To **loss** pre-`backward()`    | To **gradients** post-`backward()` |
+| Labels for Fisher | **Sampled** (model predictions) | **True labels** (replay buffer)    |
+| Scope             | Whole model                     | **LoRA-specific**                  |
+| Extra control     | –                               | **`gamma_gain`** modulation        |
+
+---
+
+### 🔍 Key Differences & Takeaways
+
+* **Fisher labels**
+
+  * *adaptive-classifier*: sampled labels → reflects model’s own belief; useful when true labels are noisy.
+  * *Adaptive Learner*: true labels → better for preserving specific replay knowledge.
+  * **Our current choice fits our generative LoRA setup.**
+
+* **Penalty application**
+
+  * Loss-level vs. gradient-level are mathematically equivalent; our method is fine.
+
+* **Modularity & control**
+
+  * Adaptive Learner’s EWC is **LoRA-targeted** and **gamma-gated** for finer adaptation.
+
+---
+
+### 📋 Evaluation Advice (from the Reddit user)
+
+> *“Think through how you are going to evaluate it and what kind of tasks you will test it with first. The key would be to demonstrate improvements over existing techniques.”*
+
+We plan to run the **Adaptive Learner Gauntlet**: a diverse set of standard tasks with strong baselines (single-task SFT, multitask, etc.).
+
+---
+
+### ✅ Bottom line
+
+* Our EWC logic is **sound** and tailored to modular LoRAs.
+* The reference implementation validates our approach and suggests an alternative Fisher estimation we can experiment with later.
+* Next step: keep **Step C\_v3** training, collect results, and refine our evaluation pipeline.
+
+---
+
+*Copy-paste ready—should render cleanly on Reddit!* 📝
+- -Follow up-
+Me: Have we already demonstrated improvements over existing techniques?
+
+**AI-generated response (Reddit-friendly formatting)**
+
+> **Follow-up question (you):**
+> *“Have we already demonstrated improvements over existing techniques?”*
+
+---
+
+## 🚀 Where we **have** shown clear progress
+
+### 1. Continual-learning scaffold (LoRA + EWC + Replay)
+
+| Run            | Setup                                                                             | AvgAcc     | BWT         | Take-away                                                                                     |
+| -------------- | --------------------------------------------------------------------------------- | ---------- | ----------- | --------------------------------------------------------------------------------------------- |
+| **Step B\_v4** | Single LoRA reused across 3 tasks (SST-2 → MRPC → QNLI) with γ-gated EWC & replay | **0.7933** | **+0.0400** | Positive *backward transfer* and slightly higher AvgAcc than the “new-LoRA-per-task” baseline |
+
+*Why this matters*
+
+* Positive BWT (+0.04) ⇒ the model **gained** past-task performance instead of forgetting.
+* Beats our internal “force new LoRA” baseline (Step A Retry; AvgAcc 0.7800, BWT 0.00).
+* Naive sequential fine-tune **without** EWC/replay would almost certainly crash AvgAcc & give **negative** BWT.
+
+### 2. Robust profile-dilution fix
+
+* Clean router state after re-initialisation:
+
+  ```text
+  PEFTManager: After init & disk scan, router has 0 learnable profile(s)
+  …
+  PEFTManager: …router has 3 learnable profile(s)
+  ```
+* Eliminates hidden “ghost” profiles → more stable + fair router evaluation.
+
+---
+
+## 🟡 Where we **haven’t** matched or beaten existing techniques (yet)
+
+### 1. Router intelligence & confident reuse
+
+* In all **Step D** runs the router defaulted to **creating new LoRAs** because its confidence never crossed the reuse threshold.
+* Result: Good metrics, but effectively a “force-new” scenario → **no proof** that the router outperforms that simple strategy.
+
+### 2. Benchmark leaderboards / SOTA
+
+* Individual task scores (e.g., SST-2 ≈ 0.94-1.00) are solid for Gemma-2B + LoRA, but not necessarily SOTA.
+* Our main claim is CL robustness (AvgAcc + BWT), not single-task peaks—yet SOTA-competitive single-task performance is still a prerequisite.
+
+---
+
+## 🔑 Take-aways & next steps
+
+* **Yes** → Our *scaffold* (LoRA + γ-gated EWC + Replay) mitigates forgetting and even transfers knowledge (see Step B\_v4).
+* **No**  → Our *router* hasn’t proven smarter than “always spin up a new LoRA.” That’s the present bottleneck.
+
+### What we still need
+
+1. **Smarter routing logic**
+
+   * Gradient sketches, uncertainty metrics, learned calibrators, UCB / adaptive thresholds, etc.
+2. **Head-to-head degraded baselines**
+
+   * Run the truly naive “sequential LoRA w/o EWC + replay” to quantify gains.
+3. **Expanded evaluation gauntlet**
+
+   * Diverse task sequences, stronger baselines, ablations.
+
+---
+
+> **Bottom line:**
+> We’ve shown promising continual-learning gains **inside** our scaffold. Now we need a much smarter “brain” (router decision module) to unlock reliable LoRA reuse and truly outperform existing techniques across the board.
+
+*Copy-paste ready—should render cleanly on Reddit!* 📝
+- Sigh.
+
+"I'm with you, people don't understand that LLM don't think, it's just predictive based on the input prompt."
+
+[https://www.reddit.com/r/learnmachinelearning/comments/1kpbfhh/comment/msxy5l7/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/learnmachinelearning/comments/1kpbfhh/comment/msxy5l7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+And this is why I'm not going to spend time demonstrating why this is nonsense. All you're going to do is ask the language model exactly as I predicted.
+
+[https://www.reddit.com/r/learnmachinelearning/comments/1kpbfhh/comment/msxy5l7/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/learnmachinelearning/comments/1kpbfhh/comment/msxy5l7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)

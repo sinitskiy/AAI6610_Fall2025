@@ -1,0 +1,29 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/14keb45/examining_uncertain_predictions_on_the_training/
+Title: Examining uncertain predictions on the training set
+
+Content:
+Let’s say I train a deep learning model with a dataset that I’m not certain has been labelled correctly in full (But let’s say 80% of it has the correct labels) for a text binary classification task by fine-tuning a pre-trained model.
+
+After training the model, I run predictions on the training dataset and compute the probabilities of each class. I then would like to check the examples that the model was not able to confidently distinguish between the 2 classes to maybe spot mistakes in the dataset.
+
+In that way, I’m investigating instances in which the model is unsure or makes mistakes to identify potential issues with the dataset. These instances may warrant further investigation to determine if there are labeling errors, ambiguous samples, or any other factors contributing to the model's uncertainty.
+
+Now let’s dive deeper in my problem. Maybe the above would work on traditional machine learning problems, but when it comes to transformer models, the output of the transformer (logits) is then fed through a sigmoid (in our case /else SoftMax if multiclass) and we get the probabilities for each class. Wouldn’t that mean that the sigmoid is forcing the values to the 2 extremes? (1 and 0 / Or does Sigmoid not do that?). So, if I’m thinking correct this wouldn’t work for my case? What if I run the predictions up to the logits and then instead of running a sigmoid function, I run SoftMax for the 2 classes instead?
+
+Essentially what I want to do is spot any mistakes in the training dataset.
+
+Does what I'm saying make sense?
+
+Comments:
+- Softmax is essentially the multi-class version of the sigmoid function. For a binary label, the sigmoid function is sufficient to get the probability of the positive class (and you can calculate q = 1-p for the probability of the negative class). For the multi-class case, the outputs of the softmax function normalizes values to sum up to 1 (e.g., [0.2, 0.3, 0.5]).
+
+The logit function maps probabilities [0, 1] to the reals. The sigmoid is the inverse which maps reals to probabilities [0, 1]. While sigmoid does push values towards the extremes under many circumstances, you'll almost certainly end up with some values in the middle.
+
+I think that you need to take a fundamental look at your data. Is there a reason why you believe 80% is correct but 20% are incorrect? Can you perform data cleaning to parse out labels which you aren't confident about? Have you considered unsupervised learning methods to capture anomalies? I read a paper a while back (can't remember author) where it only took 0.3% of incorrect labels to completely break an ML model.
+- Ah, I see, thanks for the explanation!
+Yeah I think its not entirely correct(around the 80% part) because it was not gathered by hand for a good part but was rather automated using a pipeline with chatgpt+ clustering with embeddings etc.
+
+Data cleaning by hand is a no-go, boss’ orders. (we might be losing too much time for little performance increase)
+
+Also I only know of isolation forest which works for tabular data, nothing that captures anomalies for NLP tasks though, sadly. (Maybe some sort of semantic clustering but still, this can get messy with no real solution quickly)

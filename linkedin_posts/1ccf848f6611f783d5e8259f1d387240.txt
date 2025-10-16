@@ -1,0 +1,17 @@
+URL: https://www.linkedin.com/posts/martinvechev_chatprotect-catch-and-remove-llm-hallucinations-activity-7112445912295096321-dwPN
+Date: 2025-09-24
+Author: Unknown
+
+!! Super excited to finally announce one of our latest projects in my group, ChatProtect: https://chatprotect.ai. A new approach and system to make generative models like GPT not hallucinate/hallucinate less when you talk to them. Hallucinations are a major barrier to more widespread use of these models, and this is an important step to resolving this issue. Great work by the amazing students in the group at 瑞士苏黎世联邦理工学院: Jingxuan He (Senior PhD student), Slobodan Jenko (M.Sc. student) and Niels M. (M.Sc. student). Have fun trying it :)
+
+Also expect exciting work coming out of INSAIT - Institute for Computer Science, Artificial Intelligence and Technology on Large Language Models soon :)
+
+
+话题标签
+#hallucinations 
+话题标签
+#largelanguagemodels 
+话题标签
+#LLMs 
+
+Department of Computer Science (D-INFK), ETH Zürich, 瑞士苏黎世联邦理工学院 ETH AI Center.

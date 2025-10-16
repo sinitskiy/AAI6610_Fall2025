@@ -1,0 +1,63 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/yf74dk/seeking_postdoc_columbia_university/
+Title: Seeking Postdoc: Columbia University
+
+Content:
+Hope that it is appropriate to make job postings in this subreddit, I am looking for a postdoc with computational experience interested in cancer immunotherapy research, more detail below: 
+
+
+Seeking to recruit a Postdoctoral Research Scientist in the lab of Dr. Aleksandar Obradovic at the Department of Medicine, Division of Experimental Therapeutics, Columbia University Irving Medical Center in New York, NY. 
+
+
+Looking for an enthusiastic individual experienced in computational analysis of transcriptional data and interested in cancer immunotherapy research. The lab’s over-arching research goal is to identify mechanisms of resistance to immunotherapy treatment and prioritize combination-therapy approaches to overcome these mechanisms. This work builds on multiple datasets of bulk and single-cell RNA-Sequencing as well as multi-omic studies across clinical trials of immunotherapy in kidney, prostate, head and neck, as well as other tumor types. Ongoing work is highly collaborative with senior faculty in the Department of Systems Biology as well as the Center for Translational Immunology, and the lab maintains close connections to clinical collaborators running immunotherapy trials at Columbia and elsewhere. 
+
+The ideal candidate should have a quantitative background (Bioinformatics, Computational Biology, Biostatistics, Statistics, Computer Science, or Applied Mathematics), be highly motivated to solve biological problems, and have experience analyzing large-scale transcriptomic data. Interest in or experience with wet lab tissue processing techniques is a plus (if you can code AND run a single-cell RNA-Seq experiment, you’re hired) A Ph.D. in computational biology, bioinformatics, statistics, biostatistics, computer science, or related area is preferred, but a Ph.D. in biology is also acceptable if the candidate has experience with quantitative methods. The candidate should have good knowledge of at least one programming language for implementing computational models and algorithms (R and/or python preferred), and familiarity with machine learning concepts. This position is a union position and has a starting salary of $60,000.
+
+Research Projects and Directions will include the following:
+
+— Developing and optimizing computational tools for analysis of single-nucleus and multi-modal single-cell data (scRNA-Seq, snRNA-Seq, CITE-Seq, TCR-Seq, and 10X Visium spatial transcriptomics)
+
+— Generating and expanding on a Precision Medicine database of immunogenic drug effects (transcriptional effects of large-scale drug library on sorted immune cell types, immune effects of radiation therapy)
+
+— Analysis of clinical trial data identifying shared characteristics of immunotherapy non-responders and matching resistance mechanisms to candidate drugs.
+
+Application Instructions
+
+If interested, please submit an application or inquiries by e-mail to Dr. Aleksandar Obradovic (azo2104@cumc.columbia.edu). Please include a cover letter with a CV describing previous research, research interests, and future goals.
+
+Aleksandar Obradovic, PhD
+
+Associate Research Scientist, Department of Medicine, Division of Experimental Therapeutics, Columbia University Irving Medical Center
+
+Comments:
+- $60,000 is poverty wages for a postdoc in NYC. For the expertise you’re looking for in the area you are located in, you should be paying a lot more.
+- It's sad this kind of salary is a "norm" for post docs now.
+- Posting to clarify some comments and questions that have come up in this thread: First, I am a new PI and just received appointment in the Department of Medicine starting this month as part of an early independence initiative, now seeking to recruit and build up my own lab. My prior affiliation was with Califano and Drake Labs as an MD/PhD student in the Department of Systems Biology, with whom I maintain close collaborative connections. The $60k starting salary is set by my department and coming out of my lab startup fund, and can be negotiated upward on interview, would expect an increase pending successful grant applications.
+- [deleted]
+- Hey, are you looking for grad students too?
+
+I’ve been processing tissues for scRNAseq for the past two years. I’m no computational wiz (yet) but I’ve been studying with my institution’s bioinformatics core and am pretty comfortable with R for humdrum data analysis. The higher grade trascriptomic jazz is what I want to go to grad school for anyways, and I was thinking of applying to Columbia’s SystemsBio program. 
+
+DM me if that’s at all something you might be into. Best of luck.
+- We  analyse and develop lot of algorithms for single cell and Spatial Transcriptomics. If you want collaborate to our lab, reply to this thread so I will email you the details.
+- Do you allow remote work from Europe?
+- For real. From a quick Google search:
+
+
+> The Census Bureau reports that the median salary in New York City is $67,046. If you want to spend the recommended 30% of your income on rent, you will need to earn $80,480 to live in a one-bedroom apartment in New York.
+- I’m a gradstudent in nyc and my stipend is nearly $53k. I can’t imagine completing my doc and only getting a measly $7k raise. Yikes!
+- It says "starting salary", which is likely defined by the institution (and is higher than at some other local institutions). You are welcome to ask for more.
+
+I am more concerned that Aleksandar Obradovic is an MD/PhD student (Califano Lab) and not a PI as the post suggests.
+- Out of curiosity, since I'm in Sweden and not US, would the 60k include things like healthcare, pension etc? Or would that be deducted from the 60k?
+- 1.) congratulations on your new lab
+
+2.) people here especially really like to harp on salaries, try not to take it too personally
+- Congrats on the appointment. You really should set up a lab website.
+- I have never heard of a postdoc having a salary negotiation...
+- A lot of institutions now have fast-track programs to give exceptional grad students a lab immediately after graduating without doing a postdoc. IMO this is a very positive development to get fresh ideas into the field and keep talented scientists in science without demanding they wait their half a decade or more for their "turn"
+- Sad thing is this guy isn’t stupid, he damn well knows this. And is still willing to undervalue hard work. As a PhD student, I’m getting paid less but adjusting for local cost of living I am making more as a PhD student. And I already do 90% of the things he needs, was actually looking to apply since I’ll be defending soon. Then I saw the money and I’m like, no thanks. You’d figure at a top research university you would be able to afford more.
+- It wouldn’t even be that much of a raise if your PI also pays your tuition. Granted post docs don’t have to pay tuition but as a student, your stipend + covered fees would be closer to $56K.
+- In the US, healthcare is usually subsidized by the university, but the employee would still be responsible for some part of it. I don’t know about Columbia specifically, but at my research institution, some postdocs do get retirement benefits, but some do not.
+- Most certainly healthcare, however, depending on the funding mechanism, being able to contribute to a retirement account/pension may not be legal.
+- most of the time deducted... i only get 43k as a postdoc... my healthcare is free but my wife and baby costs me $455 a month. Mandatory retirement contribution is between 6-7% and that also comes out of the paycheck

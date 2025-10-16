@@ -1,0 +1,38 @@
+URL: https://www.linkedin.com/posts/michael-kirchhof_proud-to-announce-our-neurips-spotlight-activity-7269648872845594625-MK32
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Kirchhof的动态
+Michael Kirchhof
+
+Research Scientist at Apple on Uncertainty Quantification
+
+10 个月
+
+Proud to announce our NeurIPS spotlight, which was in the works for over a year now :) We dig into why decomposing aleatoric and epistemic uncertainty is hard, and what this means for the future of uncertainty quantification.
+
+📖 https://lnkd.in/eMfBaHxS 
+
+The easy solution would of course be to use a decomposition formula like "predictive uncertainty = aleatoric uncertainty + epistemic uncertainty". However, we find that this does not work. In practice, the two components are literally the same, see the scatterplot.
+
+And this happens for any second-order distribution we've implemented. From evidential deep learning to Laplace approximations to deep ensembles, the rank correlations between the two components are always within 0.8 and 0.999 (!)
+
+So how could we estimate epistemic and aleatoric uncertainty then? For epistemic, we find that an uncertainty estimator trained explicitly on OOD data is the best in OOD detection. So maybe we should go away from general uncertainty methods, towards specialized ones.
+
+For aleatoric uncertainty, no clear winner exists yet. This seems to be a more challenging task, and also to depend on how exactly the aleatoric uncertainty ground-truth is collected on each dataset.
+
+We also test multiple predictive uncertainty metrics. AUROC, AUAC, rAULC, ECE. The best method always depends on what exactly the metric tests, and thus, what _kind_ of predictive uncertainty you need a solution for in your practical task.
+
+So what did we learn in the past year of research? We need to rethink the aleatoric/epistemic dichotomy. Uncertainty estimation is a very rich and nuanced field with a whole spectrum of types of uncertainties.
+
+If you can provide a precise description of which task you want to solve with an uncertainty estimator, then you can build an uncertainty that is specialized towards exactly th

@@ -1,0 +1,20 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/tf34qp/n_tutorial_on_conformal_prediction_and_dfuq_part/
+Title: [N] Tutorial on Conformal Prediction and DFUQ Part 2: Conditional Coverage + Diagnostics
+
+Content:
+Hey everyone!
+
+  We just posted Part 2 of our Tutorial on Conformal Prediction and Distribution-Free Uncertainty Quantification on YouTube!
+
+  [https://youtu.be/TRx4a2u-j7M](https://youtu.be/TRx4a2u-j7M)
+
+  It focuses on conditional coverage and diagnostics to make sure your conformal procedure is working properly. It's slightly more advanced than the last one, but will leave you with a strong understanding of how to implement/evaluate conformal in code.
+
+  Let us know if you have any feedback by shooting me an email :)
+
+Best,
+
+Anastasios
+
+Comments:

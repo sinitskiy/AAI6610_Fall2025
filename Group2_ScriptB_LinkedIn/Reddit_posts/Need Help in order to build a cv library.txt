@@ -1,0 +1,42 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1lo4vb2/need_help_in_order_to_build_a_cv_library/
+Title: Need Help in order to build a cv library
+
+Content:
+You, as a computer vision developer, what would you expect from this library?
+
+Asking because i don't want to develop something that's only useful for me, but i lack the experience to take some decisions.
+I Wish to focus on robotics and some machine learning, but those are not the initial steps i have to take.
+
+I need to be able to implement this in about a month for my Image Processing assignment in college, not exactly the most fancy methods but rather the basics that will allow the project to evolve properly in the future. 
+
+Comments:
+- Designing source of light in an image has lot of applications. Make sure your method is novel. Better if you can manipulate the source of light once you detect it. There are several papers on this. “Changing light sources on portraits images.”
+- Maybe dumb question, but would this let you take an ROI an determine the effective lighting acting on that area? Maybe remove it?
+- thank you, the main projetc i am trying to use it with is a walking plant pot, so it needs to be able to detect light areas and the light source so it can decide where to go from time to time. 
+
+do you know some other keywords i can use to research about it?
+- yes, the idea is to track and manipulate light in general. 
+
+my main interest is to simplify depth and surface mapping in order to train moving robots more easily, and for that i would need to be able to determine light and shadow intensity, light source and angles, etc. 
+
+removing lighting from a ROI doesn't seem that far from it.
+- I would start with something like below papers, and expand as needed. 
+
+1. Illuminant and light direction estimation using Wasserstein distance method
+2. Towards a Perceptual Evaluation Framework for Lighting Estimation
+3. A New Multi Source Light Detection Benchmark and Semi‑Supervised Focal Light Detection
+- \> Walking plant pot
+
+What is that? Like, it moves out of the shade? Or into it if it gets too hot?
+- Cool, I thought that was a DL thing though? Is this a DL library?
+- like a plant pot on top of a hexapod with some some cameras cutely attached to it. 
+
+then it communicates with a external server, wich contains information about the plant's species and how much exposure it needs. 
+
+I am still developing the remote core program and the pot's legs
+- i haven't done anything yet so it can be anything...
+- that's adorable lol
+
+might i also make a small suggestion? Elden Ring walking mausoleum [https://youtu.be/Dp\_M9azYOI4?si=Jrh-0YSLz3FpiIV\_&t=20](https://youtu.be/Dp_M9azYOI4?si=Jrh-0YSLz3FpiIV_&t=20)
+- everything souls related is just awesome holly fuck

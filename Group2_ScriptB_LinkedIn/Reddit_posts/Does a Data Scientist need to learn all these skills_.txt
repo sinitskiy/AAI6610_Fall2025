@@ -1,0 +1,73 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1mc2zaz/does_a_data_scientist_need_to_learn_all_these/
+Title: Does a Data Scientist need to learn all these skills?
+
+Content:
+* Strong knowledge of Machine Learning, Deep Learning, NLP, and LLMs.
+* Experience with Python, PyTorch, TensorFlow.
+* Familiarity with Generative AI frameworks: Hugging Face, LangChain, MLFlow, LangGraph, LangFlow.
+* Cloud platforms: AWS (SageMaker, Bedrock), Azure AI, and GCP
+* Databases: MongoDB, PostgreSQL, Pinecone, ChromaDB.
+* MLOps tools, Kubernetes, Docker, MLflow.
+
+I have been browsing many jobs and noticed they all are asking for all these skills.. is it the new norm? Looks like I need to download everything and subscribe to a platform that teaches all these lol (cries in pain).
+
+Comments:
+- No, that's excessive buzzword soup that extends beyond DS responsibilities. But they're useful domains to be familiar with.
+- I guess u have to be a data scientist, software engineer, statistician, analyst, and machine learning engineer all in one now. It is what it is gotta hop on the leetcode grind.
+- The sad reality is that this is norm. Not exactly "new" though - in my experience, companies have always wanted the unicorn data scientists/analysts that can navigate the full data life cycle. It's just that now the number of new tools has exploded.
+
+However, you don't need to know every single tech mentioned there - knowing just one or two techs in a category is enough. Make sure to put those tech names somewhere in your CV. 
+
+Most of the techs mentioned above are open-sourced and you can learn by yourself, no need to subscribe to anything. And if you are already a data scientist, I'm sure you already have some of these skills, like ML, Python, Pytorch, Hugging Face).
+
+The only thing that you need an account to use are the cloud platforms. However, GCP offers a generous free tier that should be enough for you to get used to the platform.
+- Hmm
+
+Databases: MongoDB, PostgreSQL, Pinecone, ChromaDB.
+
+So... does this company use MongoDB, PostgreSQL, Pinecone AND ChromaDB (especially the last two)?  
+Oh, and PyTorch, TensorFlow?
+
+Oh, and ALL the cloud providers...
+
+  
+Yeah, no.
+
+This looks like an attempt to hit as many keyword searches as possible.  Or an agency that has clients using anything.
+- As a self employed data scientist who work with several companies, I would say know the essential stuff such as SQL, Python, AWS (or one of the other cloud providers), a little bit of Docker and Fastapi (optional). Obviously you have to know about ML some DL, and stats. 
+
+The most important skill is to be able to pick up new techniques quickly. Need to use MLFLOW? sure read a book or watch a course and apply it. Need to use MongoDB or learn how to run Tensorflow? the client asks to use the Prophet model?   
+watch a course and apply it.
+- A lot of job postings list every tool under the sun, but most roles don’t expect you to know them all inside out. Get solid on the core DS/ML skills first, then pick up other tools as you go. For the data engineering side, especially ingestion/ELT, tools like Skyvia or Fivetran can handle the pipelines, so you can focus more on the modeling work.
+- What's your experience level vs the postings you're looking at? When hiring experienced people it's more common to have specific technologies you want.
+
+But for an earlier in your career DS, you job isn't to already know all this stuff. It's to know the foundational stuff (python, ML, DB logic, stats, experiment design) and have to ability to learn the specific technologies you need on the job.
+
+If a listing has all this stuff, they're not expecting to find candidates who are know all of these things well, because that person doesn't exist. They're basically just throwing keywords at the wall to see what sticks. They could very reasonably be hiring someone to work on AI products and put LangChain in the posting even though they don't use it, because that tells them something about your ability to understand whatever it is they do use.
+
+Also you mention some MLOps or Data Engineering things which you generally wouldn't expect a data scientist to know more than the basics of.
+- [removed]
+- I don't think it's worth paying for the cloud, database and mlops courses. These skills are best learned on the job. There are a lot of free materials online already.
+- When people say learn they mean familiarity, you can be extremely good  at maybe 3-5,  around ok on 5-7, and needing improvement in 8-10. Main point is if i ask you a question on any of these and you can come up with a acceptable answer you are fine. People like to gate keep for no reason at all, it really comes down to how well you comprehend them. Most of the time you will learn some on the job, and some are straight forward once you learn the concept you wont forget it. Don't be afraid to apply anyway.
+- [deleted]
+- No, you dont need to learn all these skills. Given these fields are also so deep today, it is somewhat impossible to be good at all of them. 
+If you see job postings like this, it tells you a lot about the company...
+Just do what you like and be good at it. Moreover, if you picked up Oracle sql it's very credible if you say that you will pick up tsql in no time and so on. 
+Also a lot of stuff is typically internship/ on the job learning like MLflow or git.
+- While having multiple tools in each category is maybe overkill (like all the cloud providers) this listing is roughly the set of tools you need to build like a basic chatbot. I don't see how it's overkill.
+
+I'd never expect a fresh grad to be exposed to all of these, but this is no longer a new field and many people are 5-10 years working as a data scientist. At that point you've hopefully seen tools in all these categories or more.
+- Job postings are developed by recruiters with little to no knowledge of the job they are screening for. It science this shows up as recruiters asking chemists microbio lab questions, in engineering mechanical and industrial will be flipped, and in tech it shows up as lists of buzzwords and software that span a dozen roles
+- They're not hiring a Data Scientist, they are building an entire Analytics Dept with a single employee.
+- [removed]
+- You have to have multiple on each bullet to be an “ideal candidate.”
+
+How likely is it they actually have three cloud platforms? It’s likely AWS with some sprinkled in Azure and they threw GCP on there since it’s fairly similar. 
+
+They’re describing what they’re doing and also listing similar things to widen the net. If a single person is covering all of these bullets I doubt they have expertise in any of them, but if they get one candidate super strong in the bottom 3 bullets and another super strong in the top 3 bullets that makes for a great team.
+- I recently interviewed at one of the company and they asked me to build dynamic ML pipelines in objected oriented fashion, asking to make use static methods. I don’t even know the hell it is. Yes, in today’s market DS needs to learn everything, from CS to ML/AI. The level of depth and breath changes from company to company but currently everyone wants very deep experience in coding, machine learning and AI.
+- Unfortunately there is no industry-standardized definition of a Data Scientist role. When the employer doesn't know exactly who they need, they just stamp the title "Data Scientist" on any combination of requirements.
+
+That said, you wouldn't find all these requirements under the title Data Scientist in big Tech, like Meta or Amazon. These are typically expectations from an Applied Scientist role or more likely an MLE role in an NLP-specific domain.
+- Yes, depends, depends, absolutely, 300% but those are weird technologies to list, depends.

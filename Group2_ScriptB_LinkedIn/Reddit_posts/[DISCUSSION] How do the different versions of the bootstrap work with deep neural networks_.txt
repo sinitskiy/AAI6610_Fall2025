@@ -1,0 +1,27 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/mri8nv/discussion_how_do_the_different_versions_of_the/
+Title: [DISCUSSION] How do the different versions of the bootstrap work with deep neural networks?
+
+Content:
+I've been looking into deep learning methods as a possible way of imputing missing data, and this has lead me to some questions about how deep neural networks interact with the various versions of the bootstrap.
+
+In a statistical missing data context, the goal is to estimate a posterior predictive distribution for the missing data conditioned on the observed data. You then "fill in" the missing data with draws from this distribution, leading to *m* versions of your dataset, where the observed data is the same, but the missing data vary. You do your analysis *m* times and use some simple formulas to combine the analyses, which gives you a nice clean picture of how much uncertainty in the missing data reduces your confidence in whatever hypothesis your testing.
+
+Ok, now the deep net part. In the statistics literature on missing data, there is this idea of "properness" which says that you want your posterior distribution for the missing data to reflect all sources of uncertainty, in the model you used to fill in the missing data. Your model for filling in the missing data either needs to be fully bayesian, or approximate a fully bayesian model if that isn't possible.
+
+The simplest way to do an approximate proper posterior in missing data world is often to use either a parameteric or nonparametric bootstrap. For parametric bootstrap, you 1) train a model (say, learning mu and sigma in a linear regression), 2) sample predicted values for the outcome variable, (ie make a new outcome variable by sampling from the learned mu and sigma) 3) retrain the model using the sampled values as the new dependent variable, and 4) make whatever predictions/inferences you want from this second model. If you do this a bunch of times you'll aproximate a bayesian posterior. Nonparametric bootstrap you resample you data with replacement and train on the resampled data. Again, repeated many times you'll get an approximate posterior.
+
+So my questions are, for a deep neural network:
+
+1) What advantages/disadvatages does a deep net using variational bayes versus a deep net using either version of the bootstrap have? Are these any known or expected biases when doing either form of bootstrapping with a deep neural network? 
+2) Will you cause a bias if you don't train the network from scratch for multiple iterations of the bootstrap? Would it be a problem if, for example, you resample the data, but carry-over the weights from a previous bootstrap iteration? 
+3) Is there a good resource on how changing to a fully bayesian deep network changes what sort of choices you should make about dropout, batch normalization, activations, etc?
+
+Comments:
+- Sorry to say I don't know the answer generally here, but I'm very curious to see what people respond.
+
+> What advantages/disadvatages does a deep net using variational bayes...
+
+Nearly all the variational work I've seen in neural networks effectively treats all the parameters as independent. For a linear model, this would mean the covariance of your posterior is constrained to be diagonal, which can be all sorts of tricky. This is generally necessary because of how many parameters there are (e.g. a linear layer transforming embeddings from M to N will be an M by N matrix and getting the covariance between them means M^2 by N^2. your 500 x 500 embedding transform is now 500 x 500 x 500 x 500 (62B parameters), and that's still "diagonalizing" inter-layer connections.
+
+I've been wanting to explore low-rank-plus-diagonal variational models (now you just need k * M * N parameters for tunable k), since the reparameterization trick works just as well for that, but never have made time :( But it's been a few years since i've really followed BNN progress, so take this all with a grain of salt.

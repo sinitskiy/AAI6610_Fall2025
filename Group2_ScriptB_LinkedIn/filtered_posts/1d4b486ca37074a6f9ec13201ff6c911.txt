@@ -1,0 +1,50 @@
+URL: https://www.linkedin.com/posts/precise-center-penn-engineering-admin_machinelearning-ai-trustworthyai-activity-7297627171789897729-jOcm
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+PRECISE Center / Penn Engineering (University of Pennsylvania)
+
+Driving Innovation Through Embedded AI & Cyber-Physical Systems
+
+7 个月
+
+We are excited to announce that our paper has been accepted in Transactions on Machine Learning Research (TMLR)!
+
+What’s it about?
+Our work tackles a fundamental challenge in Imprecise Probabilistic Machine Learning: how to empirically derive credal regions (sets of plausible probabilities) without strong assumptions. By leveraging Conformal Prediction, we introduce a new method that:
+• Provides provable coverage guarantees
+• Reduces prediction set sizes
+• Allows to disentangle different types of uncertainty (epistemic & aleatoric)
+
+Breaking new ground:
+Previous approaches required the consonance assumption, which was required to relate conformal prediction and imprecise probabilities. Our method removes this constraint and introduces:
+• A practical approach to handling ambiguous ground truth, allowing predictions even when labels are uncertain
+• A calibration property that ensures the true data-generating process is included with a high probability
+
+This breakthrough enables reliable uncertainty estimation in real-world applications!
+
+Why does it matter?
+This work is a step forward for trustworthy AI. Understanding when and how to trust model predictions is critical for deploying AI in:
+• Healthcare – Ensuring diagnostic models acknowledge uncertainty
+• Autonomous Systems – Improving decision-making in uncertain environments
+• Finance & Risk Assessment – More reliable probabilistic forecasting
+
+A true collaborative effort!
+This paper is the result of a fantastic collaboration between:
+• Michele Caprio (Former Postdoc at the PRECISE Center/Penn, now at The University of Manchester)
+• David Stutz (Google DeepMind)
+• Shuo Li (5th-year PhD Student at the PRECISE Center/Penn Engineering)
+• Arnaud Doucet (Google DeepMind)
+
+What sets our work apart:
+There’s existing research on imprecise probabil

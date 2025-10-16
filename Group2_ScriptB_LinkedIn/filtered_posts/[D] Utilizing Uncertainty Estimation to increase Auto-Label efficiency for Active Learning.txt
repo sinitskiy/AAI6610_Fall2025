@@ -1,0 +1,23 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/illv2t/d_utilizing_uncertainty_estimation_to_increase/
+Title: [D] Utilizing Uncertainty Estimation to increase Auto-Label efficiency for Active Learning
+
+Content:
+My first post! :) 
+
+From what I've read, not just on reddit but pretty much everywhere, there are many claims of “smart” or “model-assisted” labeling tools that don’t actually help you build quality datasets faster. Towards AI published an article I recently wrote on how to **improve data labeling efficiency with auto-labeling, uncertainty estimates and active learning**. I wanted to share it with the community here and would love to hear your thoughts and comments!  
+
+Quick read : [https://medium.com/towards-artificial-intelligence/improving-data-labeling-efficiency-with-auto-labeling-uncertainty-estimates-and-active-learning-5848272365be](https://medium.com/towards-artificial-intelligence/improving-data-labeling-efficiency-with-auto-labeling-uncertainty-estimates-and-active-learning-5848272365be)
+
+Comments:
+- I don't think posts like this belong in this community.
+
+This post--done on behalf of a commercial entity--is basically, "we have a patented special approach to do XYZ, use our product".
+
+This is noise and a disingenuous waste of time for readers.
+- I approved this post because even if you ignore the "Superb AI"-specific aspects, I think this post has value in providing an overview of uncertainty estimation methods.
+
+In other words, if you remove section 5+, would this still be an interesting article? I decided yes. 
+
+I do agree that it's somewhat disappointing that this blog post is structured as "here are the existing methods, which suck. Pay us to use our method instead!". However, I think that's reflected simply in the upvotes and general reaction. If the blog was instead, "here are the existing methods. Here's how you can fix the issues. If you don't want to implement it yourself, you can use our service (which also has other advantages)!", I think it would be better received.
+- Also, there is a surge of articles hosted on medium. Medium let us read a couple for free but this is essentially pay-walled. I would be glad to see less of those posts, regardless of the value of the content. Sharing knowledge free of charge has always been part of the scientific community.

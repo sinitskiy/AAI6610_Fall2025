@@ -1,0 +1,80 @@
+URL: https://www.linkedin.com/posts/michael-shields-25740921_uqpy-version-42-uncertainty-quantification-activity-7378427907175575554-ATqQ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Shields的动态
+Michael Shields
+
+Professor at The Johns Hopkins University; President and Principal Engineer at UQuant, Inc.
+
+1 周
+
+Our Software Update paper highlighting the Scientific Machine Learning (SciML) module of UQpy is now available. Check out the new features for Bayesian neural networks and neural operators. The SciML module integrates seamlessly with PyTorch and includes several new features that are plug-and-play for UQ in machine learning. 
+
+Thanks to everyone who contributed, especially Connor Krill and Ponkrshnan Thiagarajan. And, as always, UQpy would not be what it is without the sustained efforts of Dimitris Giovanis and Dimitris Tsapetis.
+
+https://lnkd.in/eWh_Epep
+
+UQpy Version 4.2: Uncertainty quantification with Python
+sciencedirect.com
+221
+2 条评论
+赞
+评论
+分享
+Pouya Zarbipour
+
+Looking for PhD position | MSc in Civil Engineering (Coastal, Port, and Marine Structures Engineering)
+
+1 周
+
+The update is very useful adding ML 👏🏻👏🏻
+
+赞
+回复
+Pankaj K Mishra
+
+PhD, Scientist, Geophysics, Geological Survey of Finland
+
+1 周
+
+This is amazing!
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+最相关的动态
+Riccardo Farris
+
+PhD in Theoretical Chemistry | Materials Modeling & Simulation | Machine Learning | Open-Source Developer
+
+2 周  已编辑
+
+🔬 New Preprint Out! 🚀
+
+I'm excited to share that our latest work is now on arXiv:
+
+📄 Bayesian Neural Networks versus deep ensembles for uncertainty quantification in machine learning interatomic potentials
+
+ 🔗 https://lnkd.in/d62D-5Gj 
+
+In this study, we explore how to quantify uncertainty in deep learning-based interatomic potentials — a critical step toward making machine learning models more reliable and deployable in materials simulations.
+
+We benchmark two major approaches:
+-Deep Ensembles (practical, scalable)
+-Variational Bayesian Neural Networks (principled, probabilistic)
+
+We introduce bayesian-aenet, an open-source framework built on aenet-PyTorch, Pyro, and TyXe, designed for rigorous UQ benchmarking on ML 

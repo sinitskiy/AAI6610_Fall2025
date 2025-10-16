@@ -1,0 +1,104 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/5910jo/discussion_xpost_from_raskacademia_choosing_which/
+Title: [discussion] [x-post from /r/askacademia ] choosing which of these 6 math classes to take next semester.
+
+Content:
+Hey there
+
+I'm trying to decide my schedule for the next semester and my main goal is to develop a toolset for self studying machine learning techniques over the summer. 
+
+
+I've already checked that these 6 classes fit into one, non-overlapping schedule and that I have all pre-reqs. I would prefer to take 4 of the 6 classes but 5 might be possible (without being too overwhelmed).
+
+here are my options:
+
+----------------------------
+
+Applied Differential Equations II
+-----
+Description of class:
+
+Wave, heat and Laplace equations. Solutions by separation of variables and expansion in Fourier Series or other appropriate orthogonal sets. Sturm-Liouville problems. Introduction to methods for solving some classical partial differential equations.Use of power series as a tool in solving ordinary differential equations.
+
+------------------
+
+
+Mathematics of Scientific Computing
+-----
+Description of class:
+
+This course will provide an overview of methods to solve quantitative problems and analyze data. The tools to be introduced are mathematical in nature and have links to Algebra, Analysis, Geometry, Graph Theory, Probability and Topology. Students will acquire an appreciation of (I) the fundamental role played by mathematics in countless applications and (II) the exciting challenges in mathematical research that lie ahead in the analysis of large data and uncertainties. Students will work on a project for each unit. While this is not a programming class, the students will do some programming through their projects. 
+
+------------------------
+
+Introduction to Modern Algebra for Mathematics Majors	
+-----
+Description of class:
+
+Elementary number theory, equivalence relations, groups, homomorphisms, cosets, Cayley's Theorem, symmetric groups, rings, polynomial rings, quotient fields, principal ideal domains, Euclidean domains. 
+
+------------
+
+Introduction to Combinatorics
+-----
+Description of class:
+
+Basic principles of counting: addition and multiplication principles, generating functions, recursive methods, inclusion-exclusion, pigeonhole principle; basic concepts of graph theory: graphs, digraphs, connectedness, trees; additional topics from:Polya theory of counting, Ramsey theory; combinatorial optimization - matching and covering, minimum spanning trees, minimum distance, maximum flow; sieves; mobius inversion; partitions; Gaussian numbers and q-analogues; bijections and involutions; partially ordered sets. 
+
+------------------------
+
+Mathematical Analysis I	
+-----
+Description of class:
+
+Real number system, functions and limits, topology on the real line, continuity, differential and integral calculus for functions of one variable. Infinite series, uniform convergence. 
+
+-----------------
+
+
+Introduction to Mathematical Statistics II	
+-----
+Description of class:
+
+Second of a two-semester sequence of mathematical statistics, primarily for undergraduate majors and graduate minors in Statistics. Random samples, point and interval estimators and their properties, methods of moments, maximum likelihood, tests ofhypotheses, elements of nonparametric statistics and elements of general linear model theory. 
+
+------------------------
+
+
+Thanks for any feedback or advice :)!
+
+Comments:
+- Applied Differential Equations II - pretty much useless
+
+Mathematics of Scientific Computing - too general, no focus
+
+Introduction to Modern Algebra for Mathematics Majors - useful if you want to pursue other pure math topics, not ML
+
+Introduction to Combinatorics - not related to mainstream ML. may be used in some niche research
+
+Mathematical Analysis I - should teach you how to read and write theorems and proofs. Serves as basis for learning more real analysis, functional analysis and other important theoretical math topics that find usage in ML and statistics theory.
+
+Introduction to Mathematical Statistics II - also a good option if you have the pre-requisites.
+
+
+None of these classes are pre-requisites to learn and understand the results you will see in machine learning books, but the best classes IMO would be 1) Mathematical Analysis I and 2) Introduction to Mathematical Statistics II. I chose mathematical analysis as #1 because it is harder to learn by yourself.
+- The less useful is Applied Differential Equations II
+
+Then I think it's a matter of choice but you have to chose Mathematical Analysis I and Introduction to Mathematical Statistics II I think
+- At my school they say Math analysis 1 is the hardest undergrad math class so I'm a little hesitant to take it with 3/4 other math classes. We'll see what my advisor says on Tuesday. 
+
+All the same, thanks for your advice!
+- I agree with this. Depending on your institution and professor Analysis can be very challenging. Take that and math stats and leave yourself plenty of time to dig into the topics.
+- > Mathematics of Scientific Computing - too general, no focus
+
+Is being general necessarily a bad thing? Being exposed to a wide variety of concepts seems useful and the course seems like it focuses on mathematical concepts that a relevant for data analysis.
+- Ah, I just did some more research on Mathematics of Scientific Computing class and it turns out that the class is entirely programming project based on the following topics:
+
+Topics: dimension reduction, classification, clustering, Monte Carlo approximations, applications of Fourier analysis
+
+So I'm thinking that is going to be a super important class for ML?
+- Math analysis I in general and the topics listed for your particular course are the basis of very many things that you will want to learn - if it's not listed as a prerequisite, then it either should be or it teaches them in a shallow/overview manner without going into detail that should require it as a prerequisite.
+
+If you're going to do anything in the area, you will have to learn the core math analysis topics one way or another - if you don't take this class because it's hard, then you'll have to learn these same hard things outside of class sometime later.
+- I have come to the conclusion that you should use your time in school to learn things that you can't by yourself. This sounds like one of those "special topics" classes designed as shallow overviews that are covered in survey papers. Maybe OP feels differently about it or has better information, but I wouldn't get my hopes high.
+- True enough, but I found a lot of value in being exposed to things I was not aware really existed. Not all fields have good survey papers and those may be hard to find.

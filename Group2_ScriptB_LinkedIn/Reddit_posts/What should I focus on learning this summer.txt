@@ -1,0 +1,41 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/uwihjs/what_should_i_focus_on_learning_this_summer/
+Title: What should I focus on learning this summer
+
+Content:
+A lot of us undergrads are starting summer research jobs/internships. Such that I imagine many of us are confused what to really learn.
+
+I am a CS major with a minor in molecular and cell biology. I've taken a number of classes on genomics, computational biology, and cell biology labs. But haven't had much of an opportunity to do hands on sequencing or typical bioinformatics tasks.
+
+To optimize my internship, what should an undergrad like me really focus on learning? 
+*  Sequencing methods: RNAseq, HiC, Nanopore? (Should I expect to see these?)
+*  Machine learning methods? 
+*  Wet lab techniques? 
+
+In other words, how should I bother researchers?  
+Obviously this depends on what lab you end up in. But I'd appreciate some ideas for learning goals, given I have no idea what to expect.
+
+Comments:
+- Does your internship mention a project/area you will be working on? Bioinformatics topics vary a lot (algorithm development, genome assembly, complex diseases), and the skills required for different areas are different. 
+
+Some general stuff:
+
+Sequencing methods + their workflow and how to analyze different types of sequencing data is useful for any bioinformatics project so definitely understand those.
+
+Wet lab techniques will vary. I’d say know what the common ones are, how they work, what type of data is produced (like PCR for example). Depending on what your project is, you might want to understand some DNA/Genetics concepts like NGS prep, cloning and gene knockouts. 
+
+Machine learning is always a plus, but make sure to understand statistical concepts such as distributions, different tests + their assumptions, p values etc.  
+
+I would also suggest taking time to understand data visualization, which is super important for communicating your data to others, especially people not directly in your project team.  
+
+Some more Computer Science related concepts like version control, high performance computing, databases, and how to use AWS or cloud platforms. 
+
+But most importantly, have fun and go in with an open mind. Internships are for learning and exploring, and your Project Lead won’t expect you to know everything. 
+
+I’m sure you will do great and good luck!
+- I'm sure you'll be okay. One thing I did was I went to the department I was in websites. I then started reading up profs bios and research projects. I sent an email to one who was doing genomic research and I got an internship. Reach out to profs, and shoot your shot! You got this.
+- I haven't been assigned a specific lab yet, since it's a larger institution.
+It sounds like you have experience with a wide variety of skills. Which is awesome. But I guess what makes this field so interesting is how interdisciplinary it is. 
+
+I definitely need to take a chill pill. Thanks for your answer, it was very helpful.
+- Appreciate it. Will do.

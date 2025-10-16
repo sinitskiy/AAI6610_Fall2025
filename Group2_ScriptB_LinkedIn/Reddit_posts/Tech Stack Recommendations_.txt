@@ -1,0 +1,51 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c1i2i6/tech_stack_recommendations/
+Title: Tech Stack Recommendations?
+
+Content:
+I'm going to start a data science group at a biotech company.  Initially it will be just me, maybe over time it would grow to include a couple more people. 
+
+What kind of tech stack would people recommend for protein/DNA centric machine learning applications in a small group. 
+
+Mostly what I've done for my own personal work has been cloning github repos, running things via command-line Linux (local or on GCP instances) and also in Jupyter notebooks. But that seems a little ad hoc for a real group. 
+
+Thanks!
+
+Comments:
+- GCP/AWS/Azure probably pretty standard. I do dev in notebooks in GCP's Vertex on most days. Vertex is... not great, aside from developing in notebooks. But, it allows scaling compute pretty effortlessly, and switching between no GPU and an A100 (or whatever I need) is a major time saver when I get past modeling on a small sample. If I need a model built or inferences run on a schedule, I just wrap it in a DAG and run it in airflow using GCP's dataproc (managed pyspark), which can easily scale and handle R and python to process 10s of TBs of data for ETL and modeling jobs nightly. Code is saved in GitHub at end of day. 
+
+Near real-time inferences via an API can be done via your cloud host or using a 3rd party edge deployment service within your cloud provider depending on your needs and budget (if you do lots of just in time inferences - like $500k worth per year or more - a 3rd party vendor can save you tons of $$). We save models in GCS buckets and outputs are saved in BigQuery. We do model and dataset/artifact tracking with a third party service that is similar to ml flow.
+- Oooh this is fun: 
+
+* **Secure Data Collection Tools**: RedCap for encrypted and secure data capture from medical devices and clinical trials.
+* **ETL/ELT Processors**: Stitch or Fivetran for HIPAA-compliant data ingestion.
+* **Data Storage**: AWS S3 or Google Cloud Storage, configured for HIPAA compliance with encryption and fine-grained access controls.
+* **Data Warehouses**: Google BigQuery or Snowflake, with strong security measures and PHI data isolation. I'd lean towards Snowflake unless my org were full of Google fans. 
+* **Data Transformation**: dbt for transforming, modeling, and ensuring the quality of data in the warehouse.
+* **Compliance Management**: Datica or ClearDATA for continuous compliance monitoring with HIPAA and SOC II.
+* **Data Visualization**: Tableau for advanced data visualizations and dashboards, configured for healthcare data regulations.
+* **Report Automation**: Rollstack for automated, compliant reports for data consumers in decks and docs 
+* **Security and Monitoring**: Vanta or Secureframe for continuous SOC 2 compliance monitoring and Keycloak or Okta for secure Identity and Access Management (IAM).
+* **Backup and Disaster Recovery**: Automated backups and a disaster recovery plan that meets HIPAA’s contingency plan requirements.
+* **Data Team and Stakeholder Engagement**:
+   * **Data Literacy Training for Stakeholders**: Implement regular training sessions for stakeholders on data literacy, ensuring they understand how to interpret data and use analytics tools effectively. This helps in making informed decisions and leveraging data insights across the organization.
+   * **Embed a Data Consultancy Knowledgeable About Biotech**: Collaborate with a data consultancy that has familiarity of biotech to provide expert advice on managing and analyzing scientific data. Basically they act as another set of eyes, and an "expert" voice to help coax stakeholders to act. 
+
+Epic project. Be sure to report back in a couple of years!
+- d
+- Awesome, this is amazing and so helpful!!
+
+My budget will be super low, so nothing even close to $500k to start with. Mostly ad hoc analysis but I want to be positioned to scale if need be.
+- I feel like this is better advice for an established team. If you’re the first person doing data science, and assuming you have data and the engineering infrastructure for that part of the process, you should focus on quick wins before doing stuff the “right” way. 
+
+If you don’t have data where you need to it and in good form, you’re first going to be a data engineering team.
+- Hey! Full disclosure: I'm the CEO of Oneleet, a Vanta/Secureframe competitor.
+
+Out of curiosity, have you ever felt doing SOC 2 through compliance platforms amounted mostly to security theater beyond a few basic cloud checks? Have they really made you more secure?
+
+Reason I'm asking is that we've heard people complain about the security theater for a long time now. We're trying to change that at Oneleet by offering security-first custom SOC 2 programs with everything you need under one roof.
+
+Would you be open to share your experiences using some of these platforms?
+- Wow, thanks so much!! And yeah, it does seem epic (and also more than a little intimidating...)
+- Can you apply to gcp, aws and azure start-up credit?
+- I dunno if this was for me, but I'm not planning on doing any PII work in this role.

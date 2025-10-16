@@ -1,0 +1,11 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tol2fn/query_data_from_the_t3db_database/
+Title: Query data from the t3db database
+
+Content:
+Beginner to bioinformatics, so please be kind.
+Can anybody point me to resources to learn how to query data (Uniprot ID for protein toxins that meet certain criteria) from the t3db database. 
+Do I need to download the entire database and do it locally in my machine? 
+Thanks
+
+Comments:

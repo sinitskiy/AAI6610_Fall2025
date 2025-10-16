@@ -1,0 +1,16 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/simfya/artificial_intelligence_model_predicts_in_seconds/
+Title: Artificial Intelligence Model Predicts in Seconds How Two Proteins Will Bind in Real-Time
+
+Content:
+Researchers from MIT have developed a machine-learning model that can predict how two proteins bind, not in hours or minutes but just in a few seconds. Scientists may be able to use this machine-learning model to speed up the development of new drugs.
+
+Comments:
+- This is really exciting if applied to desiging new kinds of therapeutic proteins to hit specific disease targets.
+- You got a paper??
+- Hope they are accurate enough for applications. Model prediction programs that we've been using so far have been somewhat lacking in academic credibility-wise.
+- It would have been interesting to see how it compares to Alphafold Multimer which came out in October
+- Super progress. We will hear more of this type of news now because all sectors are now interested in artificial intelligence. The first of these is the health sector. I'm starting to see new projects, and one of them is PULSE Network. A healthcare project focused on artificial intelligence. It has technical and comprehensive solutions for hospital operations. As these projects increase, I think our lives will become easier and safer.
+- Please find the paper and article summary [here](https://cbirt.net/2022/02/02/artificial-intelligence-model-predicts-in-seconds-how-two-proteins-will-bind-in-real-time/).
+- The authors claim that it frequently predicts protein structures closer to experimentally observed structures.
+- Yes indeed. Would like to know more about PULSE Network.

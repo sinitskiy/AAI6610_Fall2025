@@ -1,0 +1,66 @@
+URL: https://www.linkedin.com/posts/yannik-pitcan_optimization-theory-didnt-click-for-me-until-activity-7370183475473281024-Gk3L
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Yannik Pitcan, PhD的动态
+Yannik Pitcan, PhD
+1 个月
+
+Optimization theory didn’t click for me until embarrassingly late. And if I were to be fair, it still isn’t my strong suit.
+
+As a statistician, I was trained to think in terms of estimators, likelihoods, variance, and bias. Optimization was always there—but in the background. An afterthought. Something the algorithm did while I focused on “the real math.”
+
+But the more I worked in applied ML, the more I realized:
+
+➡️ Optimization isn’t just the tool we use to train models. It is the model.
+	•	MLE? Solve an optimization problem.
+	•	Ridge/Lasso? Add constraints and penalties—optimize again.
+	•	Even Bayesian inference (if you’re doing MAP)? Still optimization.
+
+And when something breaks—poor convergence, weird results, unstable metrics—it’s almost always the optimization pipeline silently screaming.
+
+These days, I find myself thinking more about geometry—curvature, convexity, saddle points—than I ever expected to. Because that’s where the story really is.
+
+And maybe that’s the quiet insight optimization teaches us:
+
+Sometimes, the model is fine. It’s the landscape we built around it that needs reshaping.
+
+⸻
+
+If you’re a statistician moving into ML—or an ML engineer who skipped the theory—I’d strongly recommend circling back to optimization. You’ll start seeing your models differently.
+
+23
+4 条评论
+赞
+评论
+分享
+Sid Meka
+
+Recent Graduate with Master's in Applied and Computational Mathematics
+
+3 周
+
+Hey, I am an aspiring mathematician who is deeply interested in Mathematical Optimization looking at this post! This is all really true and really interesting! I hope that you can accept my follow request so that we can continue chatting.
+
+Best,
+Sid
+
+赞
+回复
+Gurunadh Parinandi
+
+Senior Data Scientist
+
+1 周
+
+What are some good reading materials as a starting point? I took an optimization course years ago, but forgot a lot of things. It was mathematical optimization course, so I think the material may b

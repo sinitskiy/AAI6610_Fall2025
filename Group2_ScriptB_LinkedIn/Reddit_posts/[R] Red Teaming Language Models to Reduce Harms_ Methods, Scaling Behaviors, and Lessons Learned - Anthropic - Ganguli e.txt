@@ -1,0 +1,21 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/wyh3kk/r_red_teaming_language_models_to_reduce_harms/
+Title: [R] Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned - Anthropic - Ganguli et al 2022
+
+Content:
+Paper: [https://www.anthropic.com/red\_teaming.pdf](https://www.anthropic.com/red_teaming.pdf)
+
+Github: [https://github.com/anthropics/hh-rlhf](https://github.com/anthropics/hh-rlhf)
+
+Abstract:
+
+>We describe our early efforts to red team language models in order to simultaneously discover, measure, and attempt to reduce their potentially harmful outputs. We make three main contributions. First, we investigate scaling behaviors for red teaming across 3 model sizes (2.7B, 13B, and 52B parameters) and 4 model types: a plain language model (LM); an LM prompted to be helpful, honest, and harmless; an LM with rejection sampling; and a model trained to be helpful and harmless using reinforcement learning from human feedback (RLHF). We find that the RLHF models are increasingly difficult to red team as they scale, and we find a flat trend with scale for the other model types. Second, we release our dataset of 38,961 red team attacks for others to analyze and learn from. We provide our own analysis of the data and find a variety of harmful outputs, which range from offensive language to more subtly harmful non-violent unethical outputs. Third, we exhaustively describe our instructions, processes, statistical methodologies, and uncertainty about red teaming. We hope that this transparency accelerates our ability to work together as a community in order to develop shared norms, practices, and technical standards for how to red team language models. **Warning: this paper contains examples that may be offensive or upsetting!** 
+
+https://preview.redd.it/kubpwo64t3k91.jpg?width=1474&format=pjpg&auto=webp&s=ef3ab230250a7b5147bc589a22a5ad5b7504b217
+
+https://preview.redd.it/o3ytit64t3k91.jpg?width=1485&format=pjpg&auto=webp&s=1ce85178d8d7b77ac42d6e3b3701a8688a37c78b
+
+https://preview.redd.it/hagjlo64t3k91.jpg?width=950&format=pjpg&auto=webp&s=a799cf65ea43068db48cda9f3b3f341212474f04
+
+Comments:
+- Twitter: [https://twitter.com/AnthropicAI/status/1562828011505717248](https://twitter.com/AnthropicAI/status/1562828011505717248)

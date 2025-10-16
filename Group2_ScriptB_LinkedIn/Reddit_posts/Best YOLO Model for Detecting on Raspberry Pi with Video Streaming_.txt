@@ -1,0 +1,41 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1geybf9/best_yolo_model_for_detecting_on_raspberry_pi/
+Title: Best YOLO Model for Detecting on Raspberry Pi with Video Streaming?
+
+Content:
+Hey everyone! For my capstone project, I'm building a system to detect people in wheelchairs through video streaming, but here's the catch: it has to run on a microcontroller like a Raspberry Pi 4 or 5. I’m pretty new to machine learning and YOLO models, so I could really use some advice on a few things:
+
+1. **Best YOLO Version**: Which YOLO version is best suited for the Raspberry Pi that won’t lag or stutter?
+2. **Video Stream Compatibility**: If I train a YOLO model on a dataset of wheelchair images, will that also work effectively on a live video stream?
+3. **Dataset Annotation**: I have a 10,000-image dataset. Do I need to manually annotate every single image, or can I label a few, and the model will learn the rest on its own?
+4. **Training on Colab**: Do I need Colab Pro to train a YOLO model, or can I get by with the free version?
+5. **C++ vs Python for YOLO**: Will there be a noticeable performance difference if I run YOLO in C++ compared to Python on the Raspberry Pi?
+
+Thanks in advance for any help! Any advice or resources would be really appreciated.
+
+Comments:
+- The Pi 4/5 doesn't have enough power to run YOLO in real time.   However on a Pi 5 you can get the [AI Hat](https://www.raspberrypi.com/products/ai-kit/) with a Hailo-8L accelerator that would allow you to do that.
+
+As for your questions:
+
+1) With the AI Hat it has enough power to run any version of YOLO supported by Hailo's SDK.
+
+2) A video stream is just a series of images (frames) played back at 30 FPS, so the YOLO model processes each image frame and doesn't care where it came from (video source/camera/video file etc).
+
+3) You need to annotate enough images to train an accurate model.   You can then use your model to auto label addition images.  Some labelling platforms (paid for services) offer this feature.
+
+4) Personally don't use Colab so don't know. I just write a training script in Python/Pytorch and run locally on my workstation.
+
+5) C++ or Python doesn't matter as the Python versions are just bindings to the C++ libraries underneath.   Pick the language based on which one you know best.    However most tutorials and examples online are written in Python.
+- Radxa X4 or lattepanda boards have enough power for real-time inference
+- Have you checked executorch? It allows for runtime optimization (quantization, memory planning, etc) and finally executes inference in a compact c++ engine ideal for embedded systems. Beta was just launched few weeks ago, but it is worth having an eye on it 🤓
+- try jetson boards from nvidia they are more powerfull than raspberri pi   
+you wont be able to achieve better FPS  
+or what you can do is attach a pc or any other powerfull hardware with raspberry pi then stream frames onto that machine inference it there and then just forward the detections to raspi for future actions
+- You think alternative to running yolo on microcontroller, instead i get cheap esp32 with wifi, i run the yolo mosel on a cloud and just communicating via websocket api?
+- Also Jetson boards!
+- That is possible, but probably not ideal as the industry is moving away from inference on the cloud to doing it on the Edge so it would all depend on your use case.    
+
+The important questions are;   What resolution video do you require, how any FPS, you can then calculate the bandwidth required to push the video over wifi to the cloud for inference.   How reliable is the wifi/internet connection as if it goes down that means your product goes offline too.  Is the added latency to doing it over the cloud acceptable.
+
+You could reduce bandwidth by scaling down the camera images to 640x640 (input size of the YOLO model) and send those, but does the microcontroller have enough CPU power to handle the scaling.

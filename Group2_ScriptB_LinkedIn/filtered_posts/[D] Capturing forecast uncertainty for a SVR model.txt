@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1b1j8yl/d_capturing_forecast_uncertainty_for_a_svr_model/
+Title: [D] Capturing forecast uncertainty for a SVR model
+
+Content:
+Does anybody have any suggestions to quantify forecast uncertainty for an SVR model?
+
+In parametric models such as basic OLS - forecast intervals accounting for both parameter and observational uncertainty is fairly straightforward. Similarly with a neural network - uncertainty can be quantified by adding dropout layers and modelling the distribution of predictions - however I'm not entirely sure how best to do this using an SVR!
+
+Any ideas greatly welcome
+
+Comments:
+- You can do a bootstrap to estimate the model uncertainty (epistemic part) and add the noise to that (estimated from the RSS).

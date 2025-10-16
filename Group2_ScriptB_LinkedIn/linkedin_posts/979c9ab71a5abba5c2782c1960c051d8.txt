@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_unveiling-the-power-of-uncertainty-a-journey-activity-7311676040320303104-kSqD
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+6 个月
+
+🔍 Unveiling the Power of Uncertainty in Stellar Dating 🌌
+
+In the realm of astronomy and astrophysics, the rigorous management of uncertainties is paramount for ensuring credible outcomes. The integration of artificial intelligence presents a transformative opportunity to enhance this process.
+
+This study introduces a hierarchical Bayesian architecture that employs neural networks to model probabilistic relationships, specifically aimed at forecasting stellar attributes such as mass, radius, and age. By addressing both observational uncertainties from measurements and epistemic uncertainties inherent in predictive models, this architecture generates distributions that encapsulate potential value ranges for predictions. 
+
+The focus is on dating main sequence stars through a method known as Chemical Clocks, utilizing hierarchical architectures to optimize information extraction from datasets while accounting for correlations between stellar parameters. The versatility of Bayesian neural networks allows for effective capture of complex data relationships.
+
+Results indicate that by integrating machine learning within a Bayesian framework, error propagation has been managed effectively—yielding predictions with broader uncertainty margins and facilitating more conservative estimates in stellar dating. Remarkably, age predictions achieved a mean absolute error of less than 1 billion years for stars within the test dataset.
+
+This innovative approach underscores the importance of uncertainty quantification in astronomical research and highlights how advanced modeling techniques can enhance our understanding of stellar evolution.
+
+      🌠
+
+#AI #Algorithms #ArtificialIntelligence #Astronomy #BayesianNeuralNetworks #DL #DS #DataScience #DeepLearning #ML #MachineLearning #StellarDating #Tech #Technology #UncertaintyQuantification
+
+Unveiling the Power of Uncertainty: A Journey into Bayesian Neural Networ

@@ -1,0 +1,62 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mjsu50/d_idea_for_an_efficient_text_diffusion_model_with/
+Title: [D] Idea for an efficient text diffusion model with adaptive, token-level steps
+
+Content:
+Hi r/MachineLearning,
+
+I've been thinking about the inefficiency of using a fixed number of inference steps in text diffusion models. It seems wasteful to use the same amount of compute for a simple sentence as for a complex one.
+
+I've prototyped an alternative architecture I'm calling "Adaptive Refinement Diffusion," and I'd love your feedback on it.
+
+The core idea is:
+
+* Instead of a fixed loop, the model iteratively refines the sequence.
+* At each step, it calculates a confidence score for every token (based on a mix of its embedding stability and prediction probability).
+* If a token's score passes a certain threshold, it gets "frozen" and is excluded from future computation.
+* The entire generation process stops dynamically once all tokens in the sequence are frozen.
+
+This means the model would naturally focus compute on the more difficult or ambiguous tokens and could finish simple sentences much faster.
+
+My questions for the community are:
+
+1. Does this architecture already exist? I've searched for prior work but haven't found this specific token-level freezing mechanism.
+2. What potential flaws or failure modes do you see with this approach?
+
+Appreciate any thoughts or links to related papers. Thanks!
+
+Comments:
+- Something like this? https://arxiv.org/abs/1904.09324
+
+
+I don't think it's strictly "diffusion" but I would check follow up work on this paper since it's quite old now.
+- Are you sure the confidence score will be available and useful/accurate at earlier steps?
+- What would happen to shift operations? Think of a still noisy section of content that somehow needs more or less tokens as it gets more concrete.
+- The idea seems related to dynamic or adaptive models. Look in these surveys to see if you find anything similar:
+
+https://github.com/AIoT-MLSys-Lab/Efficient-Diffusion-Model-Survey
+
+Adapting Neural Networks at Runtime: Current Trends in At-Runtime Optimizations for Deep Learning
+
+https://www.semanticscholar.org/paper/Dynamic-Neural-Network-Structure%3A-A-Review-for-its-Guo-Chen/7226ea6fde104bd3bf94610090ca7193da4fdac4
+
+
+Also this paper is not diffusion but it stops changing tokens after a threshold:
+
+https://arxiv.org/abs/2202.04200
+- Isn’t that basically just masked diffusion? 
+
+https://arxiv.org/abs/2502.09992
+
+https://github.com/ML-GSAI/LLaDA
+
+https://github.com/HKUNLP/DiffuLLaMA
+
+Maybe I’m wrong but that sounds almost exactly the same if not worse than masked diffusion. Instead of freezing tokens masked diffusion gets rid of tokens that seem less likely after every given step and generates new ones at the same time based on confidence threshold. This doesn’t seem much different since with masked diffusion you can prune the generation process anytime you want and they don’t have a fixed number of steps anyway. 
+
+There are even quirky examples like this where you can modify the number of steps in the config to read from a text file and change it as you see fit even if the training process is different.
+
+https://github.com/nuni-neomu-areumdawo/Diffusion-Language-Model
+- No, obviously not, but as the iterations proceed, the score would get closer and closer to the threshold (which can be a learnable parameter itself) and once the threshold is crossed, only the tokens that have crossed the threshold(s) will be frozen.
+- I haven't really thought about it. Do you have any ideas?
+- Not really other than that it would be a challenge. Maybe a hybrid approach with Auto regression would be better suited. This way the model could Auto regressively predict chunks of tokens using diffusion based denoising. This would probably also have computational advantages for very long sequences. And you could do some mechanism where you predict both the chunk noise as well as the expected amount of needed steps to reach a predefined quality level. Doing this during training would probably be very hard, and I would advise you to try a two stage approach first, where the Auto regression token chunk diffusion model is trained using a normal diffusion objective and an adaptive sampler that has access to embeddings/activations from the main model is trained seperatly to predict the optimum number of steps given some complex metric including a step cost and quality score. The later sampler taining would use an RL Setup where the embedding is the observation, the number of steps for the next chunk is the action and your metric is the reward.

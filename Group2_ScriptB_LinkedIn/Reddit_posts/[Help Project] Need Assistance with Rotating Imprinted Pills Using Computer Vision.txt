@@ -1,0 +1,57 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1j9jw3i/help_project_need_assistance_with_rotating/
+Title: [Help Project] Need Assistance with Rotating Imprinted Pills Using Computer Vision
+
+Content:
+Update: I tried most of all the good proposals here but the best one was template matching using a defined area of 200x200 pixels in the center of the image.
+
+https://preview.redd.it/f1qrehcavgoe1.png?width=1062&format=png&auto=webp&s=e104a2ab43fc2b4186a44140a74b40a460f09481
+
+https://preview.redd.it/fr1ijpwbvgoe1.png?width=497&format=png&auto=webp&s=1781f23e9cebb5389da5c05a6b718eeeb4baa76f
+
+Thank you all of you
+
+# Project Goal
+
+We are trying to **automatically rotate images of pills** so that the **imprinted text is always horizontally aligned**. This is important for **machine learning preprocessing**, where all images need to have a consistent orientation.
+
+# 🔹 What We’ve Tried (Unsuccessful Attempts)
+
+We’ve experimented with multiple methods but **none have been robust enough**:
+
+1. **ORB Keypoints + PCA on CLAHE Image**
+   * ORB detects high-contrast edges, but it **mainly picks up light reflections instead of the darker imprint**.
+   * Even with adjusted parameters (`fastThreshold`, `edgeThreshold`), ORB still struggles to focus on the imprint.
+2. **Image Inversion + ORB Keypoints + PCA**
+   * We inverted the CLAHE-enhanced image so that the **imprint appears bright** while reflections become dark.
+   * ORB still prefers **reflections and outer edges**, missing the imprint.
+3. **Difference of Gaussian (DoG) + ORB Keypoints**
+   * DoG enhances edges and suppresses reflections, but ORB **still does not prioritize imprint features**.
+4. **Canny Edge Detection + PCA**
+   * Canny edges capture **too much noise** and do not consistently highlight the imprint’s dominant axis.
+5. **Contours + Min Area Rectangle for Alignment**
+   * The bounding box approach works on some pills but **fails on others** due to uneven edge detections.
+
+# 🔹 What We Need Help With
+
+✅ **How can we reliably detect the dominant angle of the imprinted text on the pill?**  
+✅ **Are there alternative feature detection methods that focus on dark imprints instead of bright reflections?**
+
+Attached is a **CLAHE-enhanced image (before rotation)** to illustrate the problem. Any advice or alternative approaches would be greatly appreciated!
+
+**Thanks in advance! 🚀**
+
+https://preview.redd.it/hc1fgtyxe9oe1.png?width=340&format=png&auto=webp&s=5f23c13a8e4975edf699880ee876ada6294b08f4
+
+Comments:
+- Thanks I will try that and slso study the paper
+- If the numbers imprinted come from a known set, and is roughly centred, you could easily do template matching on a fixed set of rotation candidates and look for the best matching rotation.
+
+Either apply it on raw (clahe) images, or on some gradients/edge preprocessed output.
+
+No deep learning training/inference required.
+- You could try retinex to get better contrast between the lightest and darkest regions.
+- Two options:
+1. Use lightglue and superpoint for feature extraction and matching. Calculate affine transform and get angle of rotation.
+2. If your final goal is pill identification, go for a solution like this: https://arxiv.org/abs/2104.11231
+- Hi I tried template matching with small shifts in x-y and it worked :)

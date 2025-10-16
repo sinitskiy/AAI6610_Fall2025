@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gvrxdq/how_to_get_up_to_speed_on_llms/
+Title: How to get up to speed on LLMs?
+
+Content:
+I currently work full time in a data analytics role, mostly doing a lot of SQL. I have a coding background, I've worked as a Java Developer in the past. I'm currently in grad school for Data Analytics, this semester is heavy on the statistics, particularly linear regression.
+
+I'm concerned my grad program isn't going to be heavy enough on the ML to keep up up-to-date in the marketplace. I know about Andrew Ng's Machine Learning course on Coursera, but I haven't completed it yet. It's also a bit old at this point.
+
+With LLMs being such a hot issue, I need to skills to train my own custom models. Does anyone have recommendations on what to read/watch to get there?
+
+Comments:
+- You will not train your own custom LLMs, unless you want to be part of a team of PhDs in a company that is willing to throw millions at such a project. Even fine-tuning is not going to be ROI positive for most use cases/companies. 
+
+If you want to have a look at LLM's, there are several LLM Engineer Handbooks on GitHub and YouTube Videos. Highly recommend 3Blue1Brown. If you want to have a deeper look at LLMs and NLP in general I can highly recommend "Speech and Language Processing" by Jurafsky and Martin https://web.stanford.edu/~jurafsky/slp3/
+
+But on another note. I'm currently working as an AI/LLM Engineer (first job after grad school) and it's soooo boring. LLM's on a theoretical level are very interesting and so is the current research, but building RAG or Agentic systems isn't. It's mostly Software Engineering with very little data or ML work. I'm currently looking for a new job in "classic" Data Science and ML.
+- LLMs are not going to solve lots of business problems that statistics and decisions trees or regression models will do at a fraction of the cost and with much more control from start to finish. I wouldn't worry about the LLM hype. If you pigeon hole yourself into LLMs only you're going to be doing some pretty boring and frustrating work in your career focusing on prompt engineering and reducing hallucinations. And again you'll probably use it in places where other models could do much better. Learn the breadth of data science knowledge. Learn how to choose what the best model is for a given business problem. learn how to build pipelines that train and deploy such models.
+- A lot of folks in this sub may disagree, but the single most important thing for understanding ML techniques is a solid understanding of linear regression. It's literally what every other technique derives from.
+- I repeat this line a million times on this sub. Watch Andrej Karpathy's YouTube videos on coding gpt from scratch. It is absolute gold
+- Huggingface.co/course
+- Duh, download more RAM dude 🫢
+- I would try to learn the classics - random forest, gradient boosting, logistic and linear regression - in Python notebooks first. The training and testing paradigm and coding required to engineer features and train/evaluate models is really the conceptual baseline you need to work with LLMs as a Data Scientist later.
+- Google just partnered with Kaggle to host a 5-day Gen AI Intensive Course. They provide a ton of awesome reading materials, Kaggle notebooks and other resources. Here is the link to the first live stream event. Check out all the other resources in the comments. 
+
+[https://www.youtube.com/watch?v=kpRyiJUUFxY&list=PLqFaTIg4myu-b1PlxitQdY0UYIbys-2es&index=1](https://www.youtube.com/watch?v=kpRyiJUUFxY&list=PLqFaTIg4myu-b1PlxitQdY0UYIbys-2es&index=1)
+
+  
+It was definitely great for an overview of a lot of things in the Gen AI space ranging from an intro to LLMs to MLOps for Gen AI.
+- You should look at Andrew’s courses on DeepLearning.AI
+- For a surface view, I'd recommend short online courses  focused on LLMs. Beyond that, doing a hobby project where you use a model like GPTs to solve a problem. Then consider fine-tuning a similar model to a specific task, on a real world problem. If you want to go beyond that, then it's probably time for a combo of Huggingface models and pytorch. 
+
+I recommend keeping the mindset (after the first few hours of looking into the field) of trying to use the tool for problems that you know about, rather than mastering the tool and looking for problems.
+- You can check out Generative AI with LLMs by Andrew Ng's DeepLearning.AI on Coursera. The course covers the fundamentals of generative AI, transformer architecture, how LLMs work, and their training, scaling, and deployment. You can complement it with DeepLearning.AI's short courses and projects on topics like fine-tuning LLMs, LangChain, and RAG.
+- You will not have the experience to roll your own. We have a PhD who was a real rarity to have a background in our field and he did his PhD in LLMs. His quote to build our own was a two digit percentage of our total revenue as a company. He does have some tricks up his sleeve to keep as much of our processing on site, as it deals with non public information, but we are not doing anything special. We are doing some things that help us sort through a bunch of documents. 
+
+I think DS is going to be to ML and LLMs about what data engineering is to IT. You need to know that it exists and a basic understanding of it, but they are two very different systems and you don’t need to know the details.
+- bigger GPU
+- There are many online available resources, and I guess it would depend on how deep of an understanding you want to get regarding to LLMs.
+
+I have done a Data Science BSc and currently in my MSc, and have taken two intro to NLP, 3 advanced seminars and most of my work revolves around LLMs.
+
+I guess I would ask what is your objective in learning LLMs?
+- Build something with it. 
+Look into langchain and other libraries.
+- Andrew Ng's DeepLearning.Ai also offers a lot of free courses in LLMs on their site or through coursera as like a proxy. I've found them very interesting. Especially the RAG stuff. I'd recommend finishing his ML specialisation first though
+- https://youtu.be/kCGZPhnTGHM?si=QDnzJbWYiXLoWmDl
+
+Well worth a watch, semantic kernel very easy to use ..
+- At Teradata we have a free learning site that has over 200 Jupyter notebooks in AI ML and advanced analytics. They’re complete with code, sample data, business scenario and step by step instructions. You can filter by generative AI or the specific LLM . 
+
+[Clearscape Analytics Experience](https://www.teradata.com/getting-started/demos/clearscape-analytics?utm_campaign=gbl-clearscape-analytics-devrel&utm_content=demo&utm_id=7016R000001n3bCQAQ)
+- For a general use in 'logic' https://    [huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct](http://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct)
+- Thanks for posting this. I’m in a similar place as you OP and have the very same question as an analyst trying to pivot to DS/ML

@@ -1,0 +1,48 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kqdoe6/computer_vision_roadmap_guidance/
+Title: Computer Vision Roadmap guidance
+
+Content:
+Hi, needed a bit of guidance from you guys. I want to learn Computer Vision but can't find a proper neat and structured Roadmap/resources in an order to do so. 
+
+Up until now I've completed/have a good grasp on topics like :
+
+1. Computer Vision Basics with OpenCV
+2. Mathematical Foundations (Optimization Techniques and Linear Algebra and Calculus)
+3. Machine Learning Foundations (Classical ML Algorithms, Model Evaluation)
+4. Deep Learning for Computer Vision (Neural Network Fundamentals, Convolutional Neural Networks, and Advanced Architectures like VIT and Transformer and Self-supervised learning)
+
+But now I want to specialize in CV, on topics like let's say :
+
+1. Object Detection
+2. Semantic & Instance Segmentation
+3. Object Tracking
+4. 3D Computer Vision
+5. etc
+
+Btw I'm comfortable with Python (Tensorflow and Pytorch).
+
+Also apart from just pure CV what else (skills) would you say I have to get good at to be able to stand out in this competitive job market ?
+
+Any sort of suggestions would be appreciated 🙏
+
+Comments:
+- Most importantly how many projects have you completed so far? Because people learn most while building something. In my experience, I feel learning/learned something only when I actually build something. With this competitive market, I think what you can do or did matters most than what you know. Other than that, I think you are in a good path. Here is what I would try to do next:
+
+* Train simple vision model from scratch and deploy them as a service. It is really hard to find roles where you do only CV tasks.
+* Try to replicate some projects people have already done.
+- Following because same
+- +1
+- for 3d computer vision Blender
+- Following
+- I've worked on models like YOLO and OCR tasks as my personal projects and during my internship projects. So up until now I've learned by trial and error, little bits and pieces here and there.   
+But I'm aware that this won't necessarily land me a good paying job if you understand what I mean.  
+So specializing in advance CV topics (theory and projects) would atleast help me stand out is what I hope.
+
+Also apart from just pure CV what else (skills) would you say I have to get good at to be able to stand out in this competitive job market ?   
+Any sort of suggestions would be appreciated 🙏
+- \+1
+- Uhhh
+- +1
+- yup !
+- \+1

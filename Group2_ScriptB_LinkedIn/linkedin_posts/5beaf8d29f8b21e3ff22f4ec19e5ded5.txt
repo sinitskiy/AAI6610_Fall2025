@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/jian-xun-wang-48503379_ai-powered-automated-model-construction-for-activity-7370118286681939968-po-C
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jian-Xun Wang的动态
+Jian-Xun Wang
+
+Associate Professor @ Cornell University
+
+1 个月
+
+🚀 Excited to share our new paper in Science Advances! - "AI-powered automated model construction for patient-specific CFD of aortic flows"
+
+Building vascular models from medical images for patient-specific CFD simulations is typically manual, slow, and inconsistent. Our work presents an end-to-end deep learning solution that generates simulation-ready models directly from images, reducing human effort while improving reproducibility. What's new:
+
+⭐ LoGB-Net: A Bayesian segmentation network that captures both the main aorta and small branches with state-of-the-art accuracy.
+⭐  GNN-LDDMM: A graph neural network for mesh deformation, aligning models seamlessly to image gradients and improving geometric fidelity for CFD.
+⭐ Uncertainty quantification: We explicitly model segmentation uncertainty and demonstrate how it propagates to CFD outputs (pressure, wall shear stress).
+
+📄 Read the open-access article: https://lnkd.in/gHm4BsXw
+
+👥 With Pan Du, Delin An, Chaoli Wang, and myself.
+
+#SciML #Hemodynamics #CoMSAIL #UQ #PatientSpecific #AI4Science
+
+AI-powered automated model construction for patient-specific CFD simulations of aortic flows
+science.org
+128
+1 条评论
+赞
+评论
+分享
+Xu-Hui Zhou
+
+Ph.D. Candidate | Fluid Dynamics | Scientific Machine Learning | Data Assimilation
+
+1 个月
+
+Congrats!
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+最相关的动态
+Pan Du
+
+PhD candidate exploring #AI4health
+
+1 个月  已编辑
+
+I’m thrilled to share that our latest paper has just been published in Science Advances:
+“AI-powered automated model construction for patient-specific CFD of aortic flows.”
+This work is a collaboration between me and Delin An, Prof. Chaoli Wang, Prof. Jian-Xun Wang. from University of Notre Dame and Cornell University. 
+
+Our model is designed to accelerate traditional manual aorta segmentation with AI, introducing several uniquely important features:
+🚀 Bayesian segmentation with UQ: We empl

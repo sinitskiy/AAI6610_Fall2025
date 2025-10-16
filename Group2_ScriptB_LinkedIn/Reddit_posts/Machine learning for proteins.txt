@@ -1,0 +1,20 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17kclfr/machine_learning_for_proteins/
+Title: Machine learning for proteins
+
+Content:
+Since AlphaFold was released a few years ago there have been bunch of other machine learning methods developed for studying proteins. I'm curious how (and if) these models are being utilized in fundamental research, drug discovery or other areas of biology. For those interested I've been keeping track of papers and models in a [spreadsheet](https://docs.google.com/spreadsheets/d/1wLwo7VLTdZfHcYXo7TIb_zfrykVU8BiPI0wdRsv1pqY/edit?usp=sharing). 
+
+I really appreciate any info you can give me, specifically it would be super helpful to get a sense of:
+
+1. **Usage Scenarios**: Can you share specific applications or use cases where you've used any of these models? Whether it's protein folding, design, language modeling, binding or property prediction, etc. If you haven't used them personally, have you at least read any good papers that used them?
+2. **Popular Models**: Are there any particular machine learning models that have gained widespread acceptance and usage within the community? If so, whose using them and for what?
+3. **Challenges**: What are the challenges and limitations that you've encountered when working with these models? If you work on proteins and aren't using machine learning, why not?
+
+For fun, I've been playing with a few models lately and consolidating them behind a [little API](https://github.com/conradry/prtm/tree/main). I'm genuinely interested if they're actually useful though.
+
+Comments:
+- https://www.science.org/doi/10.1126/science.adg7492
+- FuzDrop for liquid-liquid phase separation.
+
+https://fuzdrop.bio.unipd.it/predictor

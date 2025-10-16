@@ -1,0 +1,31 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/tsu7gr/what_is_antigen_this_doesnt_seems_right/
+Title: What is antigen? This doesn't seems right.
+
+Content:
+In the lecture today, what our professor said about antigens is so weird, and so different from what I have learned before. 
+
+They said it is a foreign substance that either combines with an antibody, or is processed and binds to T cells to stimulate immune response.
+
+As what I have taught in high school biology, antigens are substance for cell-cell recognition, that is used to recognize substance that are not "self", and initiate immune response to it. 
+
+In Wikipedia, it said "In immunology, an antigen (Ag) is a molecule or molecular structure or any foreign particulate matter or a pollen grain that can bind to a specific antibody or T-cell receptor." What does that mean? It makes me so confused now.
+
+Comments:
+- Antigen is the thing that either an antibody or T cell receptor binds to and is specific to. That thing can be a foreign molecule. The antibody or T cell recognizes it as non self, and initiates an immune response. 
+
+
+Example: a person with a peanut allergy eats a peanut. The peanut is made up of lots of little molecules any one of which could be called a peanut antigen. An antibody recognizes the peanut antigen by binding to it, and then triggers an immune response (in this case an allergic reaction).
+- Any protein can be called an antigen if there is an antibody or cell surface receptors that can specifically bind it. So all that you learned is correct. On the surface of your cells there are antigens that T-cells recognise, but do not react to, because they are recognised as your own. While the antigens produced or present on the surface of pathogens (bacteria, viruses...) are recognised and invoke an immune response. There are also other examples of antigen-antibody reactions, not necessarily linked to what happens in a body. 
+
+In summary, antigen is a very broad term not linked to any specific group of proteins nor any specific  function. It just means that other proteins can specifically bind to it.
+- [removed]
+- I think you confuse antigen (as in virus, bacteria, fungi…) with antibody
+- OP, you need to get used to most stuff learnt in high school not being accurate, that's why you go to uni
+- Agreeing with everyone else in the thread, it means it’s the foreign body of matter that can be recognized by an antibody because of antibody function
+- Long story short all the definitions you gave are right in their own way, but I tried to synthesize them into one idea.
+- Just this.  Antibodies bind to antigens. Here’s a good primer to help visualize and to get the terminology down.
+
+https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/protein-biology/elisa/antigens-epitopes-antibodies
+- people taking issue with the wrong statement that antigen = pathogen
+- Ok idk, English isn’t my first language and I didn’t know how else to translate.

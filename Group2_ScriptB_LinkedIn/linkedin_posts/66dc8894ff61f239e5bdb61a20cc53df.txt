@@ -1,0 +1,43 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_quantification-of-uncertainties-in-probabilistic-activity-7308185533204025346-_Jr3
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+6 个月
+
+🔍 Quantification of Uncertainties in Probabilistic Deep Neural Networks 
+
+Recent advancements in neural network architectures have demonstrated exceptional accuracy; however, they often exhibit a reliance on training data, resulting in challenges related to interpretability and overfitting, particularly with smaller datasets. 
+
+Probabilistic neural networks utilizing variational inference offer a solution by incorporating uncertainty estimation through weight distributions. Yet, conventional variational inference typically employs a single-density approximation that may yield suboptimal posterior estimates and compromise model performance.
+
+Introducing Boosted Bayesian Neural Networks (BBNN): this innovative approach enhances weight distribution approximations by implementing Boosting Variational Inference (BVI). By iteratively constructing a mixture of densities, BVI significantly expands the approximating family. This leads to a more expressive posterior distribution that enhances generalization and uncertainty estimation.
+
+While the BBNN approach does increase computational complexity, it results in approximately five percent higher accuracy compared to traditional neural networks while providing superior uncertainty quantification. This advancement is particularly crucial for high-stakes applications such as medical diagnostics where the implications of false negatives are severe.
+
+The findings underscore the potential of leveraging mixture-based variational families for improved posterior approximation within probabilistic deep learning frameworks. 
+
+      📊✨
+
+#AI #Algorithms #ArtificialIntelligence #DL #DS #DataScience #DeepLearning #ML #MachineLearning #NeuralNetworks #ProbabilisticModels #Tech #Technology #VariationalInference
+
+Quantification of Uncertainties in Probabilistic Deep Neural Network by Implementing Boosting of Variational Inference
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,133

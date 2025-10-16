@@ -1,0 +1,57 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/10go6u8/i_feel_like_ive_been_lied_to_regarding_this_field/
+Title: I feel like I've been lied to regarding this field when it comes to coding
+
+Content:
+I am currently 5 months in as a Data Analyst. Before this, I was self-teaching myself a bit of R, SQL, and Python. Just enough to do simple research.
+
+I originally chose this path because every resource I saw, they said something along the lines of "You don't need to know to code" or "You won't be coding much". Coding hasn't been one of my strongest skills, so these phrases attracted me. I really was hoping in this field I don't have to master any advanced coding skills, but just enough to mess around with data.
+
+At my current job, I am not using nearly all the skills I've taught myself; Most of the work consists of downloading the raw data from the source, manually extracting the needed info into csv files, and sometimes using R to do more complicated data cleaning, modeling, and visualization. It's simple and I do enjoy lots of downtimes I get, but it's what I'm doing with R that worries me. Because as much as I love to get familiar with research topics, and when I finally get the data to be cleaned the way I wanted and have them visualized, the writing of the code has been bothering me.
+
+I feel I'm always forgetting the most basic of coding skills, being stuck on why certain data aren't coming out the way I wanted, getting frustrated for several days trying different ways, and the scripts keep getting messier and messier as I write them. When I finally do find solutions I do feel satisfaction, yes, but there's also part of me that's bitter, screaming "Why didn't it work the first time?" or "Why didn't I think of that?"
+
+This is the same issue that I had when I tried going into the CS field, learning C++, which was a long time ago. The frustration and sense of failure from back then are slowly coming back to me. The only solace I take is at least I'm not coding as much as, and as intensive as a software engineer.
+
+I recently have been accepted to a grad school for a Master's in Info Management. When I first applied, they told me I could choose three of the six specializations that I feel would be best for me, and I would get into two of them. I chose, in order of preference; UX Design, Business Intelligence, and Data Science. I was accepted w/ specializations in BI and DS.
+
+I am happy that I got accepted. But I'm also terrified it's gonna be more coding both in school and in my future career.
+
+Maybe it's because I'm still a newbie, and I now only just started to use coding more regularly, but I'm scared of spending too long on a code, banging my head against the desk in frustration. Maybe I will come to enjoy the work more once I become more proficient, but it's the uncertainty and the possibility of long and grueling path that's making me second-guess this field.
+
+I plan on attending the info session for the grad program that's happening soon, or talk to one of the data professionals at my job. Hopefully, I can get a better perspective of my career from them, but I also wanted to hear what you guys think
+
+EDIT: 
+
+Thank you so much for all the inputs. Turns out I was just feeling really moody when I wrote this. I still don’t like coding, but nowhere near dramatic as I made it sound to be. I can always learn at my own pace, so I guess I can make this really hard on myself by actively hating every minute of it, or slowly learn to enjoy it.
+
+I am still very much interested in this field, and on the ideas of data exploration, cleaning, modeling, and visualization. Maybe throughout my time at grad school, I can decide if I want to focus more on coding or using tools like Tableau or Power BI for data visualization and presentations.
+
+Thankfully, the master's program that I was accepted to also offers tracks that aren’t as code-heavy, but still fall under that data science/info management umbrella. I will definitely talk to one of the advisors there to see if I can switch to them.
+
+Again, thanks your all your insights
+
+Comments:
+- Why do you keep doing things that involve coding? If you don't like it, all of the specializations that you mentioned, like BI, DS, even UX Design, involve coding. Yes, in that masters there will be coding and all of the classes will have coding.
+
+Did you think you were going to click things on a menu and magically do all of the work like that?
+
+Are you a troll?
+
+If you don't like it, find another career path. I really don't know what it can be. Being a very dumb down version of data analyst is not going to get you far in terms of career.
+- >I originally chose this path because every resource I saw, they said something along the lines of "You don't need to know to code" or "You won't be coding much"
+
+No offense, but who the *hell* told you that?
+- Point-and-click doesn't scale
+- Some people have never worked hard to learn something before. I seriously think like 80% of the population have never actually struggled and had a breakthrough. They just get to where it’s kinda hard and decide they suck at it and do something more comfortable.
+- Play your strong suit. Maybe shift your gear toward data visualization. You can play with BI, Tableau, and SQL all day.
+- Well about banging your head because of a weird bug or if the code won’t run. Or if it runs when it shouldn’t. 
+
+Welcome to the coding job. And don’t worry that’s how it is the first few years. With enough head banging comes the experience. That’s just how it is for new coders. 
+
+Just embrace it and learn from the errors and it will be and the coding skill will be an advantage for you whether in your job or grad school.
+
+Google the term “imposter syndrome” and check it out. Apparently a lot of experienced developers still feel inadequate after years in the job. So try to learn how to manage the emotion and soldier on.
+- Today I spent an hour looking at my code wondering why I couldn't merge 2 datasets. In the end it turns out I was trying to merge the wrong dataset. Didn't even have any variables in common. I've never met someone who is actually good at coding, I've only ever met people who've done things so many times it's basically muscle memory.
+- https://i.imgflip.com/78ah0n.jpg
+- Code in definitions.  Each definition should have one purpose and, in general, the whole definition should be viewable on a single screen.  This way, your code shouldn't get messy.

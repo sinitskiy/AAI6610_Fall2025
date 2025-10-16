@@ -1,0 +1,72 @@
+URL: https://www.linkedin.com/posts/zhenghao-chen-38554a96_climatechange-ai4science-compression-activity-7366486256966406145-vmzR
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Zhenghao Chen的动态
+Zhenghao Chen
+
+Faculty at The University of Newcastle & StarTrack Scientist at Microsoft
+
+1 个月  已编辑
+
+🚀 Our paper “Advancing Climate Science Data Efficiency by Dual-stage Extreme Compression with an Efficient VAEFormer” has been accepted in Nature Portfolio, Communications Earth & Environment (https://lnkd.in/gaK8_rKH, JCR Q1, IF 8.9, 5-year IF 9.5). 🎉
+
+We introduce Aeolus, a deep learning framework with Variational Auto-encoder Transformer (VAEFormer) modules that achieves extreme compression of weather data. Aeolus reduces the 400 TB ERA5 dataset to just 0.85 TB—a 470× compression ratio far beyond traditional methods such as JPEG2000—while enabling real-time throughput >1 GB/s. Despite such efficiency, Aeolus preserves high accuracy (temperature errors as low as 0.17 K) and consistent climate patterns, making massive datasets more accessible for faster, greener weather forecasting and climate research. 🌍⚡
+🔹 Our work was also highlighted in Google DeepMind’s climate research last year: https://lnkd.in/gFS8KVMs
+
+ 🔹 Preprint: https://lnkd.in/gU79mMcf
+
+ 🔹 CRA5 dataset: https://lnkd.in/gQqXXnr7
+
+Proud to contribute to the University of Newcastle’s #2 global ranking for Climate Action (Times Higher Education) and to our vision of Generative AI for tackling the climate crisis.
+
+#ClimateChange #AI4Science #Compression #DeepLearning #ClimateTech
+
+26
+2 条评论
+赞
+评论
+分享
+Zhenghao Chen
+
+Faculty at The University of Newcastle & StarTrack Scientist at Microsoft
+
+1 个月
+
+thanks Md. Saiful Islam 😐💪
+
+赞
+回复
+Md. Saiful Islam
+
+Data Science and Analytics Enthusiast, PhD, SMIEEE, FHEA
+
+1 个月
+
+Wonderful outcome Zhenghao Chen. It's gonna change how we handle climate and weather related data. Congratulations!
+
+赞
+回复
+1 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+最相关的动态
+Chibuike Chiedozie Ibebuchi
+
+Assistant Professor of Environmental Health | Editor: Theoretical and Applied Climatology
+
+1 个月
+
+Uncertainty quantification is essential in applying machine learnin

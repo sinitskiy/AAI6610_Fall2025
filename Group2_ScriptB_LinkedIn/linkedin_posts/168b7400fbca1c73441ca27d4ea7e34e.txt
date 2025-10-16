@@ -1,0 +1,43 @@
+URL: https://www.linkedin.com/posts/morris-lee-phd_ainewsclips-ai-ml-activity-7378003858654121984-o2uh
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Morris Lee的动态
+Morris Lee
+
+Computer Vision Consultant - available to help your R&D! Have 70+ patents. 40+ years experience in artificial intelligence and hitech technologies. Passionate about using the latest advancements to improve your business.
+
+1 周
+
+Towards Robust LiDAR Localization: Deep Learning-based Uncertainty Estimation
+https://lnkd.in/eGzHUq8g
+
+LiDAR-based localization and SLAM often rely on iterative matching algorithms, particularly the Iterative Closest Point (ICP) algorithm, to align sensor data with pre-existing maps or previous scans.
+
+However, ICP is prone to errors in featureless environments and dynamic scenes, leading to inaccurate pose estimation.
+
+Accurately predicting the uncertainty associated with ICP is crucial for robust state estimation but remains challenging, as existing approaches often rely on handcrafted models or simplified assumptions.
+
+Moreover, a few deep learning-based methods for localizability estimation either depend on a pre-built map, which may not always be available, or provide a binary classification of localizable versus non-localizable, which fails to properly model uncertainty.
+
+In this work, we propose a data-driven framework that leverages deep learning to estimate the registration error covariance of ICP before matching, even in the absence of a reference map.
+
+By associating each LiDAR scan with a reliable 6-DoF error covariance estimate, our method enables seamless integration of ICP within Kalman filtering, enhancing localization accuracy and robustness.
+
+Extensive experiments on the KITTI dataset demonstrate the effectiveness of our approach, showing that it accurately predicts covariance and, when applied to localization using a pre-built map or SLAM, reduces localization errors and improves robustness.
+
+---
+Newsletter https://lnkd.in/emCkRuA
+More story https://lnkd.in/enY7VpM
+LinkedIn https://lnkd.in/ehrfPYQ6
+#AINewsClips #AI #ML #ArtificialIntelligence #MachineLear

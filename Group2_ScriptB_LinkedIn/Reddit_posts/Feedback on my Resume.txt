@@ -1,0 +1,29 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17wnvlw/feedback_on_my_resume/
+Title: Feedback on my Resume
+
+Content:
+Hi all,
+
+Recently I'm just graduated my Masters and have been actively looking for jobs for 3 months but get only two interviews. I think my CV is the problem so I have tried to make it better. Could you give me some feedback on my new CV, please? I'm trying to get into the industry as well as academia such as PhD or RA. Thanks a lot for you help!
+
+https://preview.redd.it/h17yapcevp0c1.png?width=1700&format=png&auto=webp&s=76c1309f2279c7f0b772afdaea852a4adcf72a65
+
+https://preview.redd.it/57ddppcevp0c1.png?width=1700&format=png&auto=webp&s=c8ec9f9a6620f0955c22195344c7a9b4c3520263
+
+Comments:
+- Strictly speaking on your resume format as someone who was recently on the job hunt, i think one or two lines are unnecessary. As in, you can mention it in your interview to expand on a talking point instead.
+
+For example the first bullet under your MS: “got offered an exchange program…but failed due to covid.”
+- Looks pretty good, I’d probably work on the education section a bit, ie dont list “got offered xyz but didn’t go” I realize it sucks you didn’t get to go but as someone looking to hire you for skills its just wasted space you could fill with a project done in class relevant to the job you’re applying to. And check for grammar and typos the first line: “developed and improved variant calling pipeline” change to “developed an improved variant calling pipeline”
+- As a recent MS grad the feedback I’ve gotten is to make the resume 1 page and to put education at the top since it’s the most recent and relevant experience! (You can do some edits with the margins or spacing between the bullet points and the start of the text or font size or something like that to not have to cut a lot of content and still make it one page)
+- I would shorten the skill section, put it at the top, and eliminate the irrelevant skills ( like 3D printing).  Maybe Aim for top 5-10 skills that are tailored to each position you applied .
+- [deleted]
+- Thank you! I was unsure if I should include it or not. I'll revise again to remove any point that could be unnecessary
+- Thank you!
+- Thank you! Yes, I have been struggling to keep it one page but I feel most them are quite relevant and I do not know what to prioritize. I will see what I can do!
+- That makes sense! I was just thinking the more skills I put the higher chance my CV would get picked up by the ATS system. But maybe adding irrelavent skills will add nothing and just a waste of space.
+- I agree but would add that I would also bullet them and maybe separate by skill type in different columns, or play around with the formatting in a different way.  The current format is fine for an algorithm but I think is difficult for a human to digest.
+- Nice! iGEM is a long journey with lots of laughters and tears :D, people can learn a lot from it. Best of luck to you too!
+- Np! Imo, the less possible things to find fault in paints a better picture of being that “perfect” candidate. Good luck fam
+- If it’s in MS word or Google docs you can feel free to DM me a link and I’ll happily do some formatting for you to help with that! (I feel like procrastinating on my own resume editing haha)

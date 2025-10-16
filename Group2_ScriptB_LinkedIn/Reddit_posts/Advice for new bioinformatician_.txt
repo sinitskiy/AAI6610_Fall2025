@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/19cdd3x/advice_for_new_bioinformatician/
+Title: Advice for new bioinformatician?
+
+Content:
+I recently graduated with a PhD in molecular biology and have been looking for jobs. My background isn’t a traditional bioinformatics or data analytics background, though. I studied genetics in undergrad and even though my PhD is in molecular biology, due to COVID lockdowns happening early in my grad school journey, I went down the bioinformatics path so I could work from home. I’m basically self-taught, and I only have two university programming courses under my belt (currently taking several online certification courses in Python, machine learning, and AWS, though). 
+
+My thesis ended up being focused on bioinformatics; I developed a few pipelines to map DNA damage, cancer mutations, and repair activity, as well as to analyze structures of protein/DNA complexes. 
+
+After sending out dozens of job applications for months, only getting two interviews, and realizing that most bioinformatics jobs seem to be more like software engineering positions than biological research positions, I’m wondering if bioinformatics maybe isn’t right for me after all. 
+
+Did anybody else have a similar experience? Is there any advice you can give me? Am I just screwed with my weird hybrid and self-taught background? It just feels like I’m a biologist trying to get a software dev job and I feel woefully under-qualified for it.
+
+Comments:
+- The job market is terrible right now. I am also observing the same trend that the bioinformatics jobs seem to be more software engineering heavy. When the market will improve, and what the roles will look like when it does is uncertain.
+- Seems like a lot of companies are cutting back at the moment, so it’s gonna be tough. Could you try to get a post-doc while things are down, continue applying to jobs and jump ship if you get an offer?
+- Have you set up a GitHub profile with some examples of the work you can perform?  
+Background in terms of degree should be irrelevant in the majority of cases. One good thing about this field is, that employees will prefer skills over the name of degree. Are you sure you are showcasing your skills correctly? May be emphasise on bioinformatics skills.  
+Also, try to focus on research-based positions, i think thats where a good understanding of biology and coding, both are required.  
+Industry jobs are often more inclined on software/tool development, hence they prefer a software engineering background over biology-related backgrounds .
+- They’re probably trying to pick up laid off tech workers
+- I’ve been considering that. I don’t really want to continue working in academia, but that might be the smartest thing to do for now. Gain more experience until the market recovers and then switch to industry.

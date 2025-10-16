@@ -1,0 +1,20 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1031z0j/p_aws_launches_fortuna_an_opensource_library_for/
+Title: [P] 🚀 AWS launches Fortuna, an open-source library for Uncertainty Quantification
+
+Content:
+At AWS we released **Fortuna,** a library for **Uncertainty Quantification**. Fortuna supports conformal prediction, Bayesian inference methods and more.  
+Try it out! GitHub stars are very welcome!!! ⭐⭐⭐
+
+Github repo: [https://github.com/awslabs/fortuna](https://github.com/awslabs/fortuna)
+
+Comments:
+- Oooh AWS ♥️ JAX!
+- Is there any benchmark to verify how well the uncertainty is quantified? 
+
+What is the best end-to-end example showing it? [https://github.com/awslabs/fortuna/blob/main/examples/mnist\_classification.ipynb](https://github.com/awslabs/fortuna/blob/main/examples/mnist_classification.ipynb) ? It would be nice to have some visual explainer, as in [https://github.com/aangelopoulos/conformal\_classification](https://github.com/aangelopoulos/conformal_classification) .
+- Thanks a lot for the feedback. The best example may depend on what you are trying to achieve. The MNIST one is a good candidate. It shows how to get calibrated uncertainty estimates of predictions 1/ starting from an untrained neural network or 2/ starting from the output of a trained one. Furthermore, 3/ it shows how to get conformal sets.  
+
+
+Most examples include at least one image, after they are run. We are working on adding more examples in the near future. Of course, contributions are very welcome! :-)
+- Thanks. You could save the notebooks with the images already displayed, even though that would add some Mb to the source code.

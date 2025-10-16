@@ -1,0 +1,53 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1cffzq5/seeking_guidance_next_steps_in_data_analysis_for/
+Title: Seeking Guidance: next steps in data Analysis for neoantigen identification from just vcf files
+
+Content:
+Hi, I'm currently working with VCF files (from WGS, with normal and tumor samples) from the ICGC database. We aim to identify immunogenic neoantigens (of protein or DNA nature) in cohorts of pancreatic cancer patients (specifically, those from Canada and Australia) using machine learning. Following the workflow outlined in a paper ( PMID: **37816353**), I have annotated (using VEP) VCF files for each patient with snvs and indels, filtered to include only variants affecting protein-coding genes (yet, a variant may affect several non-protein condign transcripts) that are expressed.
+
+Now, I'm stuck at the next steps. We can only use the VCF files as we don't have access to FASTA files and lack the memory capacity to work with the BAM files (which are around 20TB). According to the image I posted (PMID: 36698417), I need to:
+
+1. Perform HLA typing.
+2. Obtain TCR-seq data for TCR-pMHC prediction.
+3. Generate 11-mers of the variant amino acids/nucleotides, discarding those that match the wild-type (WT) 11-mer.
+
+For the first problem, ~~I have two options. I can use bcftools (consensus chr6:28,510,120-33,480,577) to generate a FASTA sequence of the HLA region from the VCFs and then perform HLA typing. Alternatively, I can use pharmaCat to directly perform HLA typing. I'm leaning towards using pharmaCat, but I'm unsure if it will provide the necessary input for HCM-binding prediction. Additionally, if I opt for the first option, I'm not sure how to create the consensus using only the normal sample (i don't totally understand the bcftools instructions) and I haven't found a predictor that doesn't require paired reads.~~
+
+For the second problem, I was considering using bcftools consensus, but I'm not sure which region of the genome this sequence corresponds to, unlike the HLA region which I've identified. I know that the alpha and beta chains are located on chromosomes 14 and 7, respectively, but I'm uncertain if this approach would work.
+
+For the third problem, I've identified three options:
+
+* Using the ANNOVAR argument --coding\_change.
+* Utilizing FastaAlternateReferenceMaker or bcftools consensus to convert the VCF file into a FASTA file for the gene ad the gffread to extract protein sequences from FASTA + GTF files, followed by filtering and obtaining the mers.
+* the more direct approach: read the GTF and VCF simultaneously, and for each variant: + Look up the overlapping transcripts, and for each transcript: + Compute the local reading frame (for translation) + Compute the new amino acid (if synonymous, stop) + Compute each  11-mer overlapping the position in the amino acid sequence. For this one, i want to use the 3º option, but i dont feel vary confident to make such a script (currently is were I'm putting more effort of all this problems).  I´ve search for paper of the immunogenicity predicting topic , but they don't really let clear how to get the mers.
+
+My preference is the third option, but I'm not very confident in my ability to write a script for this task. That said, currently, this is where I'm putting most of my effort.
+
+So, this post is essentially a request for guidance and opinions on how to approach my three main problems. I'm relatively new to the field of bioinformatics, coming from a biotechnological background, so please pardon my ignorance if I'm asking something obvious.
+
+UPDATE:
+
+For the second problem, I discovered that predicting HLA haplotypes from SNVs and indels is called HLA imputation, and there are scripts available for that. However, the input must be in BEM, BIM, or FAM formats. Additionally, I believe that converting from VCF to FASTQ or BAM is impossible and the consensus generated produces FASTA files that are not the same as fastq.
+
+https://preview.redd.it/v4dqtl3njaxc1.png?width=799&format=png&auto=webp&s=34b73730020d656eb352ccb519ad42e3939adc91
+
+Yellow: what i have
+
+Red: what i want
+
+Comments:
+- Sounds like a challenging project. Can't speak about the HLA-peptide prediction stuff but in terms of HLA typing the most accurate one I've used was ArcasHLA, it does require BAM files though. We had the same storage issue but the BAMs were already segments by donor so you could just download one at a time and genotype. 
+
+For the TCR stuff, I don't think you can get the correct information from WSG data. TCRs are unique of each T-cell clonotype so you need to isolate T cells and sequence separately. Honestly, unless they performed some sort of single cell TCR sequencing from the same donor it's probably a waste of time.
+- Could you use an existing software? Then take a look at pvacseq, you feed in hla and VCF and get predicted neoepitopes with affinity
+- Look at cancer vaccine studies and you might find the standard practices for antigen discovery. I would start looking at publications from Bassani-Sternberg lab. You cannot meet deadlines without proper resources. Most of this work requires a lot of domain expertise. Meet with your PI or manager to ask for more help.
+- It's a good approach, but I only have 2 months left in this project. Considering the amount of time it takes to download one BAM file and then multiply that by 180 patients, it's not possible for me.
+- Yes i can, that said, I'm trying to gather as many features as possible that are used in the paper. When I look pVACtools up, I only find the NetMHCpan rank (that coincide with the software used in the paper), but I need more information (fuatures:.  
+  
+  
+MixMHCpred Rank, NetMHCpan Rank, PRIME Rank, NetStab Rank, NetTAP Score, NetChop CT Score, MixMHC Score at Mutation, Mutation at Anchor, PRIME Coeff at Mutation, NetMHCpan log\_Rank DAI, MixMHCpred log\_Rank DAI, NetStab log\_Rank DAI, MixMHCpred Score DAI, Number Binding Alleles, RNAseq Expression(TPM), RNAseq Mutation Coverage, GTEx Mean Tissue Expression, GTEx Sample Tissue Expression, TCGA Cancer Expression, ipMSDB Peptide Score, ipMSDB Peptide Overlap, ipMSDB Mutation Score, ipMSDB Peptide Count, ipMSDB Peptide Match Type, CSCAPE Score, Clonality, Cancer Cell Fraction, Intogen Same Mutation Count, Intogen Mutation Driver Statement, Gene Driver Intogen, Peptide Length  
+  
+so iĺl need the mers sequences, that said i wont lose anything for trying this one
+- Oh, yeah, sorry I forgot to explain that part. I'm currently doing an internship as part of my bioinformatics master's program, which lasts for 3 months. So, the deadline is for my master's thesis, which will be based on my work here. My tutor is very understanding.
+- It generates the sequences and writes them to a file. We also use pvacseq/ pvactools to generate them and run different algorithms downstream
+- I would suggest you start with one patient and run the whole analysis end to end. Later try to scale it up to more samples.

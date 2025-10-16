@@ -1,0 +1,42 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1b4b4w3/what_should_i_have_accomplished_by_the_end_of_my/
+Title: What should I have accomplished by the end of my PhD?
+
+Content:
+I am a third year PhD student at at r1 school hoping to go into industry. My research focuses on T cell receptors and machine learning. I am in a small lab with minimal funding. What should I have done by the time I graduate? To be an average student that is, someone employable in industry (when conditions get better), not necessarily a Nobel prize winner in the making.
+
+Comments:
+- You should have developed depression and a deep sense of having no sense about anything
+- Your thesis is the only true answer. Anything additional will give you a competitive edge. Publications will demonstrate more skills. If you develop scripts or programs or anything of tangible use. Try to publish it and get it up on github or whatever is relevant. Getting involved in committees or events is good for your cv. Go to industry engagement events. Look at the industries you want to get into. Look at job adds Look what they want. Reach out to those recruiters and get informed then go get those skills.
+- You should have made friends across plenty of departments, taken at least 2 random week days off to go to a different city last minute, and learned how to nod at non-programming PIs making suggestions for >45 min without laughing.
+- Quantitative 'production' differs enourmously between PhDs and is a main source of unfortunate and non-constructive stress. In my experience, number of papers etc has almost zero correlation with ability and much more with opportunity and supervisor.
+
+But it depends on the field. When I evaluate PhDs in my field (Northern Europe, STEM, 3 year PhD), I would be pretty happy with 1 or 2 published papers in an otherwise well-written thesis.
+
+You can do other things to be attractive for industry too, though - commitees, clubs, excellence in sports and so on.
+- You should have a Nobel prize, take it or leave it
+- One decent paper on the main work you've been doing.
+
+Other than that, it's all gravy.
+- You should have published (or have accepted) 2 papers in refereed journals. 
+
+You should feel like you know more than your advisor and committee about something in your thesis.
+- Make a github website. Look up Jekyll templates. Blog about your interests for yourself like a journal of your accomplishments. It will teach you how to sell yourself.
+- I once attended an industry panel where they stated that they expect prospective hires to be able to write papers like it’s no big deal. By that I mean, crank out a few each year, not struggle for 3 years like most of us probably did as graduate students.
+
+So if you’re interested in that route I would try to deconstruct the entire process of going from noteworthy scientific novelty to manuscript.
+- A github profile showing off your programming prowess
+- That's what I got
+
+1. A PhD degree, which is useful for job hunting.
+2. A particular way to think about complicated things. This is something I figured out a few years later. No matter which major you get your PhD from, all PhD share some similarity when they are approaching a complicated issue.
+3. Learned how to make presentations
+
+You would be very lucky if you are still working in the exact field as your PhD. Most of us are working on "similar areas" that means we benefit from some general knowledge we obtained from the graduate school.
+- You should make connections! Go to seminars, lunches with speakers, conferences. I graduated in October with my PhD. I had a great CV actually! It didn't really matter though... what mattered is that I knew someone who knew someone looking for someone with my skillset. Network!
+- Could you elaborate more about your research? How are you applying machine learning to your work on T cell receptors?
+- Then you could say I was a gifted child
+- Can confirm.
+- Something important I forgot. The most important thing.
+
+A job offer.

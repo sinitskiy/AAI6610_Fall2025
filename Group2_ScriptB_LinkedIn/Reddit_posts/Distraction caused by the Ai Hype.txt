@@ -1,0 +1,98 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c41y7n/distraction_caused_by_the_ai_hype/
+Title: Distraction caused by the Ai Hype
+
+Content:
+I noticed there's some disconnection between this recent AI Hype we constantly witness on Linkedin/Twitter, things like these new LLMs, the latest 3D models, the Cool Gen AI stuff ...  and the industry requirements that actually matter for companies. Which is a bit confusing and can be distracting especially for juniors trying to upskill and learn the things that leads to get them jobs, this leaves you with the questions: Should you follow the hype and try to stay up to date by learning all these new things? or stick to what matters and can generates actual value and be good at it even if it seems "outdated" (things like traditional machine learning)? 
+
+Comments:
+- Unfortunately this is very hard for everyone. Everyone and their boss wants to jump on the GenAI train because of FOMO when they don’t even have good quality data to begin with. Outside of tech, finance companies and a couple of others, data quality, its management and pipelines are extremely suspect. A lot of value in the field actually comes from doing simpler things. 
+
+The only method to keep up with the madness is to keep reading about it to know where the field is moving. You don’t have to be on top of it all everyday but its always good to be abreast of the various developments in the field even if you aren’t necessarily implementing it in your day to day job. You’d comes across as a genuinely curious person and even otherwise, its fun!
+- I am frankly of the opinion that being strong in the fundamental stuff and then branching out to areas that interest you is the most valuable path of any career. There may be areas that pay more and/or have more hype around them, but do you actually see yourself doing one of those hyped up things in your career? If yes, that's fine. If no, find something else you like.
+
+I've had the opportunity to work with GPT-3 before Chat-GPT came out and back then I thought "This is pretty cool but it has many limitations to overcome." I am still of the same impression when it comes to Chat-GPT and other LLM technology. Chat-GPT is like a calculator: it's useful, but to get the most of it, you need a decent-to-strong foundation in programming, math, and stats. While I like LLMs, I made the decision that they won't be the sole, new fangled toy that I would advertise my skills in to employers. I'll use them when I have to, but I'll do other things too.
+
+I personally prefer having a strong foundation in fundamental Statistics, Data Science, CS, and domain expertise. I don't mind some ML thrown in though (NLP, Regression, and Classification mostly).
+
+TLDR; get good at the basics and branch out to areas that interest you. If you like LLMs and want to learn more, definitely do so! Data Science is a wide enough field that you'll find relevant work in the areas that you'll like (with effort of course).
+- GenAI will fade, ML not.
+- Hard indeed.
+
+
+
+The biggest example is Devin.
+
+
+
+The Devin presentation, which was presented with a big noise saying "Artificial intelligence will take away the jobs of software developers", was just a fraud! If you, like me, were harassed by the Devin video sent by people who do not understand artificial intelligence and what software developers do, here are the details.
+
+
+
+Youtuber user named Internet of Bugs shared a very detailed analysis video on the subject.
+
+
+
+-A job was found on Upwork that was suitable for Devin to solve and searched as seen in the video. In other words, Devin can't solve all kinds of software problems and it seems that he can't solve the Upwork job that he allegedly solved at the end of the video.
+
+
+
+In Devin's presentation, it is said that he debugged the code and solved the problems. But in the detailed analysis video, it is seen that the bugs Devin solved are his own creations. He cannot see a real error in the code.
+
+
+
+-The work that took half an hour for the software developer who took the analysis video took 6 hours to 1 day for Devin. Devin's work lists and completed tasks, which look very impressive in his presentation, are completely irrelevant to what the customer wants.
+
+
+
+-Devin produces an answer to the problem by creating too much code and inefficiently written code. He makes mistakes that even a junior developer wouldn't make, and he can't produce any answers about the AWS part that the customer wants.
+
+
+
+-He doesn't understand the execution steps, which are already in the code repository, in the README and very clearly explained.
+
+
+
+What bothers me and the analyser here is that Devin is presented as an "AI Software Developer" with more skills than he has, with Upwork jobs, making money and negative language. I think the exaggerations about AI have raised expectations too high and created a bubble in the industry.
+
+
+
+YT Video: [https://youtu.be/tNmgmwEtoWE?si=u7EUM7fz-YMeq6Mk](https://youtu.be/tNmgmwEtoWE?si=u7EUM7fz-YMeq6Mk)
+- Funnily enough I was wondering the same thing. Even posted a question about it [here.](https://www.reddit.com/r/datascience/comments/1c25koq/whats_next_for_the_quintessential_ds_role/) The TLDR from my understanding of the responses there is that a large part of genAI being mentioned in DS job postings is due to the hype, but that doesn't necessarily mean it wont be used at all. Besides, it's always good to keep yourself up to date with new technology in this industry.
+- Unlike traditional ML which is done in house, I don’t LLM will follow this pattern. They will be built by a few companies then leveraged via API. If you want to add an AI chat bot to your product you just buy it. Building your own is a waste of time.
+- I am literally feeling this one ,I used to learn one by one like ML,Dl,NLP And then wanted to learn computer vision but because of LLM and New models,new fine-tuning methods and models , I really don't know which one to learn and which one to leave and also Now a days everyone is asking for LLM in job description.
+
+I am really confused,this got to me a waste of my most time instead of learning.
+- It will honestly help in the long term to learn about the genAI stuff ( how to leverage it into your product or use it effectively to solve problems) but my feeling is the hype will soon fade away when most people will realize the key thing is how to make the best use of it creatively to solve problems rather than just having it in everything which practically does nothing better than what already existing products offer.
+- I had to his issue as well. You’ll notice that when you go to interviews and you try to talk about these things they will usually not care cause the interviewer doesn’t know these things either. There’s a couple companies that work with these types of models, and for those I’ve been asked questions about deep learning/AI stuff but only the basics. The field is so new that it isn’t integrated into the pipeline these companies use and there’s so few people that actually understand this stuff that it’s hard to find talent that can integrate these things in a creative way. 
+
+TLDR: unless you want to go into deep learning, focus on the fundamentals (python, sql, stats (Bayesian stats is more of a helpful niche topic than DL), linear algebra, and data engineering/cloud platforms.
+- Sales will be excited for that stuff, but if you show them the price per call on some of those api’s and do the math on what that would be like at scale,  they’ll immediately back off. The tech is exciting but if your data doesn’t have the information value to make good use of it, or your engineering team doesn’t have the time/manpower to setup the infrastructure needed to deploy and use those models, then they’ll be hard to actually integrate
+- You should follow the high level of the latest trend. Don't need to spend tons of time. Just know what it can do.
+
+I have been in the tech field for a long time and found that it's not useful to just go learn stuff. There are too many stuff. I tend to find a side project that I can build, and then I find a new tech to build that project.
+
+Regarding learning by side projects, I've built enough side projects to learn that... don't just build. Have a launch plan. Understand what problem it solves. Get people to use it. Monetize it.
+
+The skill of picking up new things will never be outdated. Technology tends to be similar to each other as well. This will make you pick up new language and skills faster.
+- It is really sht. If you go to the 'AI influencers' who are somehow both ceos, masters of the world and now also AI engineers, you will find people with mbas who define themselves as AI engineers because they copy pasted an obvious linkedin post written by gpt.
+
+My previous boss kept talking about AI non stop and he has never written a line of code in his life and he doesnt even know what kind of data and problems we were trying to solve.
+
+If I started calling myself heart surgeon after watching a tiktok video on cutting meat, people probably wouldnt take me serious, why do people take those absurd mba ai engineers serious?
+- >Should you follow the hype and try to stay up to date by learning all these new things? or stick to what matters and can generates actual value and be good at it even if it seems "outdated" (things like traditional machine learning)?
+
+Personal advice - always follow the value. A project that makes the company money will always 1. be valued by the company, 2. look good on a resume, 3. exercise the muscle which is to know how to find and deliver value.
+
+The further you go in your career, the less the specific model, technology, buzz word, etc. matter - ultimately you end up figuring out a way to use DS to make money. 
+
+Now, all of that is predicated on money and career security being more important to you than the technical value of the work you do. If the technical side of things is what you love, then dive deep into every tech fad and have fun with it. Some of it may not hit, but some of it may and you will greatly enjoy it.
+- My take is both.  Have internships where you showcase  MLOps , deployment, data engineering, etc that's the industry standard 
+
+Have LLM stuff as projects .. Definitely need to know both.  And do them as well . In a competitive market like this better to be more rounded.. Dont think other than s few niche companies you are actually working on LLMs .
+- [deleted]
+- Oh
+- Hmm
+- In consulting you can get hired for the hype
+- As per my experience, just stick to basics that actually matter to the companies because that is where actual jobs are. I am not saying that there are no jobs in that field, but they are very few and most probably difficult to get. Also, as per experience, I am saying, that you cannot keep yourself upto date since there are various areas such as traditional ML, DL, RL, vision, nlp, recommender systems etc.
+- I will keep coming back to this thread when I feel shit while applying to jobs. Thank you to the people of reddit for keeping my spirits up. I shall continue to strengthen my foundations.

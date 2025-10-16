@@ -1,0 +1,72 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18c9i6l/fully_sponsored_phd_or_technical_managerial_path/
+Title: Fully sponsored PhD or technical managerial path
+
+Content:
+Hello everyone,
+
+I have currently a full sponsorship to pursue my PhD in machine learning but also I just got into a technical management position in Data science and analytics. 
+
+For who have been in a similar position of switching to academia after working in the industry for awhile, what did make you do that ? And what did make you say no for the opposite side ?
+
+Comments:
+- I recently turned down a fully funded (well funded) PhD program in artificial intelligence to be a data analytics manager. 
+3 reasons I did that:
+- money now 
+- I want to travel whenever I want pre kids 
+- my passion is teaching > research 
+
+I would have loved to get the PhD and learn everything but I value work life balance a lot and my earning potential in corporate is still high without a PhD. 
+
+If traveling wasn’t so important and I wasn’t married,  I might have picked the PhD instead and just lived on less for a while. But I value time with my spouse and traveling a lot.
+- If youre not willing to devote 4-7 years of your life working on a passion project while living on peanuts and dealing with bureaucracy and red tape bs then you likely wont finish a phd even if you start it
+- My opinion - stay in the industry. After a fully sponsored grad school, I am less desirable than before. You already have a great career, so don't lose it (I was like you by the way, had a great career and many options were open). It's a once-in-a-lifetime experience but the price is your career, at least 2 years post-graduation (and during the program).
+- Do you need a lot of money in the next 5-10 years? Which school and what’s the research topic? Are you passionate about discovery?
+
+I tried teaching undergrad on the side once but only half-heartedly and dropped the idea after one year. IMO academia is only worth it if you aim for a top tier research group and even then there are probably easier ways if you are only after money or influence. In this arms race of compute it probably sucks if your group has interesting ideas but no big daddy to provide muscle power. 
+
+OTOH management also sucks for different reasons but at least you can make up for it with career security.
+- I would personally never go back to academia. 
+
+One giant piece of advice I would give people - especially those somewhat earlier in their careers (I'm almost 40): your job/career should not be your personal identity. Academia almost forces your professional and personal persona to be one and the same.
+
+The healthiest thing you can do for yourself is treat your job as what it is - a job, a means to an income which you then use to do the things you enjoy doing in life.
+
+And while for some people, those things are literally doing data science, I *highly* advice people to revisit that thought, and really pressure test it. Is that really want you want to be? Is that what you'll be wanting to do when you're 40?
+
+I got lucky enough to have that enlightened moment in my early 30s, and that's when I started really separating who I am from where I work. I highly highly recommend people to question that.
+- Ph.D is a degree for people who want to have research careers. If your interests isn't doing a career where you main job is to  write white papers or publish peer reviewed papers, its usually not worth it to get the degree. Yes there are Ph.Ds making 250K a year post graduation, but people forget that they were making T.A. stipend through their 20s to get the degree. The lost money is a lot and you give up the best years to enjoy that money.
+- I don’t have a masters or PHD. I am a team lead for a data science team and I absolutely love it. 
+
+My team is small so I am also the system architect and I help on the data engineering side. 
+
+Previously I was considering a masters but after my promotion I realized going back to school would not get me that much.
+- Don’t go for PhD (coming from a PhD student in EE). You may (will) lose interest eventually.
+- This thread was helpful, I was really considering the same thing. I’m in the industry now with a masters and considered getting a Phd because research, teaching, and being in those circles sounds appealing to me. However, I would be giving up ALOT of money, and that doesn’t sound so great.
+- [deleted]
+- If you’re evening asking, phd is not for you unless you’re having some doubts about passing the program 
+
+Too many people are getting phds to jump the corporate ladder and I just think it makes them look embarrassing and like a Cs get degrees type person 
+
+1. Are you passionate about CS research and discovering new models? - get PhD 
+
+2. Are you not sure what to do next because you want to make sure you don’t make a bad life or financial decision but still work in the same general line of work - don’t get PhD 
+
+PhD outside of being passionate about research and wanting to be the expert in one very specific topic is just an ego or money boost 
+And if it’s a money boost, upward economic mobility, then you will cry when you realize knowing your stuff and being applied at work gives you the same results 
+
+I’ve seen too many job postings: or masters or PhD 
+Like if I have PhD and I’m sharing work duties with someone with only a bachelors and less than 4 years of work experience I’m crying lol and in the age of the internet, there is a lot
+- I’ve been toying with the idea of PhD for almost several years now. Opportunity cost keep increasing as my salary rises. I have many friends in academia dissuading me. But I guess the grass is greener on the other side. Having freedom to research and learn just sound so nice when you’re stuck in your day job.
+- Did you apply or did they simply offered you? If the latter, what would you say made them offer you (publications, networking, etc)
+
+This is a legit question, I'm just trying to figure out how one could move from industry into academia.
+- For anyone reading this and heavily weighing travel, there are some PhD positions that offer a boat load of travel depending on your advisor. While a lot of it is work, you still get to see the world and can tack on personal travel time on the ends.
+- There’s bureaucracy in the industry too lol what the fuck does that mean. I’d rather do a PhD researching an interesting project that, (actually does add value),  than make 100k per year as a data science manager where my day to day is being a “people manager” aka, getting paid to 6 figures to get a bunch of fucking ADULTS to work with each other and sort out their issues and feelings.
+
+The so called “passion” project you describe a PhD as would be pretty insulting to the people who first developed computer vision lol.
+- Well said. You really thought about that much earlier in your career. Lot of people in their late 40s still are struggling to differentiate between the two
+- Impressive! Can I ask how you built your skills and professional credibility?
+- Nice 🙌❤️
+- Impressive
+- PhD to industry? Are you a fucking idiot or what?

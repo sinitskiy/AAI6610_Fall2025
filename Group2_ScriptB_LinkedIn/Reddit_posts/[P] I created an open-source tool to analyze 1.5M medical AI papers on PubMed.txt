@@ -1,0 +1,71 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lozfbp/p_i_created_an_opensource_tool_to_analyze_15m/
+Title: [P] I created an open-source tool to analyze 1.5M medical AI papers on PubMed
+
+Content:
+Hey everyone,
+
+I've been working on a personal project to understand how AI is actually being used in medical research (not just the hype), and thought some of you might find the results interesting.
+
+After analyzing nearly 1.5 million PubMed papers that use AI methods, I found some intersting results:
+
+* **Classical ML still dominates**: Despite all the deep learning hype, traditional algorithms like logistic regression and random forests account for 88.1% of all medical AI research
+* **Algorithm preferences by medical condition**: Different health problems gravitate toward specific algorithms 
+* **Transformer takeover timeline**: You can see the exact point (around 2022) when transformers overtook LSTMs in medical research
+
+I built an interactive dashboard where you can:
+
+* Search by medical condition to see which algorithms researchers are using
+* Track how algorithm usage has evolved over time
+* See the distribution across classical ML, deep learning, and LLMs
+
+One of the trickiest parts was filtering out false positives (like "GAN" meaning Giant Axonal Neuropathy vs. Generative Adversarial Network).
+
+The tool is completely free, hosted on Hugging Face Spaces, and open-source. I'm not trying to monetize this - just thought it might be useful for researchers or anyone interested in healthcare AI trends.
+
+Happy to answer any questions or hear suggestions for improving it!
+
+Comments:
+- Love that you’re surfacing adoption patterns instead of just hype around transformers.
+
+One quick win could be linking your disease keywords to UMLS IDs so “diabetes” and “DM” roll up together; MetaMap or scispaCy can do it in a few lines and will cut down the noisy synonyms. For the GAN/Giant Axonal Neuropathy clash, add a regex on surrounding words (like “network” or “neuropathy”) and weight title vs. abstract differently-false positives drop fast when you do that. Exposing the cleaned dataset through a tiny REST endpoint would let folks pull numbers straight into R or Jupyter for meta-analysis. I did something similar with Dimensions’ data dump and Semantic Scholar’s API, and Mosaic was the only thing that let me sprinkle targeted ads on top when we opened the dashboard to the public, so monetization stays optional if you ever change your mind.
+
+Really cool to see hard numbers backing up the intuition that classical ML still rules the clinic.
+- Here is the link: [https://huggingface.co/spaces/lion-ai/MedicalAIWiki](https://huggingface.co/spaces/lion-ai/MedicalAIWiki)
+- This is really interesting project! Thank you for sharing. 
+
+May I ask, where do you obtain your dataset from? Is it through scraping
+- This is so cool, I am going to share it with my friends. <3
+- How did you crawl and preprocess the papers?
+- This is great work! How are you accessing pubmed articles? And are you just looking at abstracts, or full articles?
+- is it possible for applying your project to google scholar? 
+
+I want to find some trend of applying ml/ai in the finance/insurance field.
+- Nice project, thanks for sharing.
+Do you use the pubmed api for retrieval or did you indexed it all by yourself? 
+
+BTW the link to pubmed articles is broken.
+- Very curious on how you achieved the groupings. Have you got a list of pre-defined algorithms and searched for them and their synonyms? Or have you generated these via what topics are discussed in the paper?
+- How does the tool compare to Elicit?
+- Thanks for sharing, I’ll be using this!
+
+Re: classical ML still dominating: A lot of this will be due to explainability/interpretability, but also things like the preponderance of tabular data in medicine i.e. EHRs. Unlike imaging, this often doesn’t need expert manual labelling or other labour intensive (and potentially expensive) work to prepare it.
+
+The other theme I’ve seen is that a fair amount of ML research in healthcare is done by people with a clinical background, and things like RF, LogReg, etc. are more accessible than DL.
+- link?
+- That’s a good one..!
+- Thanks for these excellent suggestions! The UMLS ID mapping would definitely solve my synonym problem I will look into that. Hadn't thought about using scispaCy for this but it makes perfect sense. I agree, regex would be much more efficient than my current method although it would require to move the filtering on my side, instead of relying on the search API so it would require refactoring the system. But it is definitely a plan for the long term, for now this is just a POC, I wanted to have something simple quickly to see it there is any demand tools like that.
+- I'll soon publish blog post explaining the process because I think it is quite interesting but TLDR: dataset is obtained directly from PubMed's official API - no scraping involved.  
+1. System constructs Boolean queries combining medical problems with algorithm synonyms  
+2. Queries PubMed API with proper rate limiting (200ms delays between requests)  
+3. Results are cached (85% hit rate) to minimize API calls  
+4. Historical data permanently cached, current year data cached for 1 hour
+- Data is obtained directly from PubMed's official API. I'm using synonyms to aggregate results and blacklist terms to avoid false positives. Example query looks like this: ("breast cancer" AND "SVM") OR ("breast cancer" AND "support vector machine") NOT "stroke volume monitoring" NOT Review\[Publication Type\] Ofc. it's not ideal but with large enough volumes of data should be fairly accurate and show general trends.
+- https://huggingface.co/spaces/lion-ai/MedicalAIWiki
+- UMLS mapping and on-the-fly disambig can stay lightweight if you push it to a thin inference layer instead of ripping out your current search stack. Run scispaCy’s EntityLinker in a small FastAPI microservice; cache the output in DuckDB so the first hit does the heavy lift and later calls are instant. For the GAN vs neuropathy clash, a two-stage filter works: first a cheap string check for GAN in title, then if true, scan ±20 tokens around it for “network” or “neuropathy”. I saw false positives drop 90 % without touching the rest of the codebase.
+
+
+
+Exposing numbers is easier than a full REST suite: slap on a /csv endpoint that dumps the cached DuckDB table; most folks just wget it into pandas and move on. I’ve run similar dashboards: Supabase handled auth, Retool gave a quick UI, but Pulse for Reddit was what kept beta testers flowing without me touching marketing. Even tiny cleanup like this makes the value pop immediately.
+- Oh, you're using the search result counts instead of running NER or classification on the full paper text?
+- Yes, search API is quite advanced and allows to chain multiple operators, filter based on paper type, year etc. It searches for relevant terms in titles and abstracts. NER on the full-text would be more accurate but since Pubmed has 30+ milion papers it would be very computationally challenging, and from what I tested manually relevant methods are usually described in abstract, title or keywords, so I decided the trade-off was not worth it.

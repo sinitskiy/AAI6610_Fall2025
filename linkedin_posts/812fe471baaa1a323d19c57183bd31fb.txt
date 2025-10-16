@@ -1,0 +1,24 @@
+URL: https://www.linkedin.com/posts/heikohotz_%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%A0-%F0%9D%97%9B%F0%9D%97%AE%F0%9D%97%B9%F0%9D%97%B9%F0%9D%98%82%F0%9D%97%B0%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB%F0%9D%98%80-google-activity-7372285384589983744-GZWx
+Date: 2025-09-24
+Author: Unknown
+
+𝗟𝗟𝗠 𝗛𝗮𝗹𝗹𝘂𝗰𝗶𝗻𝗮𝘁𝗶𝗼𝗻𝘀? Google Cloud 𝘁𝗮𝗰𝗸𝗹𝗲𝘀 𝘁𝗵𝗲 𝗽𝗿𝗼𝗯𝗹𝗲𝗺 𝗵𝗲𝗮𝗱 𝗼𝗻!
+
+I'm happy to share Gemini Hallcheck, a new open-source toolkit for evaluating model trustworthiness!
+
+A groundbreaking paper by Kalai et al. at OpenAI and Georgia Tech explains why hallucinations are a statistically inevitable result of pre-training.
+ 
+Our work provides the first open-source implementation of their core proposal to manage this reality.
+
+Existing benchmarks measure accuracy, but often reward models for confident guessing. This hides the real-world risk of hallucinations and makes it difficult to choose the truly most reliable model for high-stakes tasks.
+
+Building on the theoretical framework from the paper, we've created a practical evaluation suite that moves beyond simple accuracy to measure Behavioural Calibration.
+
+Here are the highlights:
+🎯 Confidence-Targeted Prompting: A new evaluation method that tests if a model can follow risk/reward rules.
+⚖️ Abstention-Aware Scoring: Implements the paper's novel penalty scheme to reward honest "I don't know" answers instead of penalizing them.
+📈 Trustworthiness Curves: Generates a trade-off curve between a model's answer coverage and its conditional accuracy, revealing its true reliability.
+
+Our initial tests show that some models that look best on traditional accuracy benchmarks are not the most behaviourally calibrated. Choosing the right model for your enterprise use case just got a lot clearer 🤗 
+
+We're open-sourcing our work to help the community build and select more trustworthy AI. Feel free to explore the GitHub repo and run the evaluation on your own models, link to the code in the comments below!

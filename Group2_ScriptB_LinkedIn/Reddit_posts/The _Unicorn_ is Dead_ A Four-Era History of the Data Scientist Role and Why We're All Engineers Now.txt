@@ -1,0 +1,119 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1lmi8j8/the_unicorn_is_dead_a_fourera_history_of_the_data/
+Title: The "Unicorn" is Dead: A Four-Era History of the Data Scientist Role and Why We're All Engineers Now
+
+Content:
+Hey everyone,
+
+I’ve been in this field for a while now, starting back when "Big Data" was the big buzzword, and I've been thinking a lot about how drastically our roles have changed. It feels like the job description for a "Data Scientist" has been rewritten three or four times over. The "unicorn" we all talked about a decade ago feels like a fossil today.
+
+I wanted to map out this evolution, partly to make sense of it for myself, but also to see if it resonates with your experiences. I see it as four distinct eras.
+
+---
+
+### **Era 1: The BI & Stats Age (The "Before Times," Pre-2010)**
+
+Remember this? Before "Data Scientist" was a thing, we were all in our separate corners.
+
+*   **Who we were:** BI Analysts, Statisticians, Database Admins, Quants.
+*   **What we did:** Our world revolved around historical reporting. We lived in SQL, wrestling with relational databases and using tools like Business Objects or good old Excel to build reports. The core question was always, **"What happened last quarter?"**
+*   **The "advanced" stuff:** If you were a true statistician, maybe you were building logistic regression models in SAS, but that felt very separate from the day-to-day business analytics. It was more academic, less integrated.
+
+The mindset was purely descriptive. We were the historians of the company's data.
+
+### **Era 2: The Golden Age of the "Unicorn" (Roughly 2011-2018)**
+
+This is when everything changed. *HBR* called our job the "sexiest" of the century, and the hype was real.
+
+*   **The trigger:** Hadoop and Spark made "Big Data" accessible, and Python with Scikit-learn became an absolute powerhouse. Suddenly, you could do serious modeling on your own machine.
+*   **The mission:** The game changed from "What happened?" to **"What's *going* to happen?"** We were all building churn models, recommendation engines, and trying to predict the future. The Jupyter Notebook was our kingdom.
+*   **The "unicorn" expectation:** This was the peak of the "full-stack" ideal. One person was supposed to understand the business, wrangle the data, build the model, and then explain it all in a PowerPoint deck. The *insight* from the model was the final product. It was an incredibly fun, creative, and exploratory time.
+
+### **Era 3: The Industrial Age & The Great Bifurcation (Roughly 2019-2023)**
+
+This is where, in my opinion, the "unicorn" myth started to crack. Companies realized a model sitting in a notebook doesn't actually *do* anything for the business. The focus shifted from *building models* to *deploying systems*.
+
+*   **The trigger:** The cloud matured. AWS, GCP, and Azure became the standard, and the discipline of MLOps was born. The problem wasn't "can we predict it?" anymore. It was, **"Can we serve these predictions reliably to millions of users with low latency?"**
+*   **The splintering:** The generalist "Data Scientist" role started to fracture into specialists because no single person could master it all:
+    *   **ML Engineers:** The software engineers who actually productionized the models.
+    *   **Data Engineers:** The unsung heroes who built the reliable data pipelines with tools like Airflow and dbt.
+    *   **Analytics Engineers:** The new role that owned the data modeling layer for BI.
+*   The mindset became engineering-first. We were building factories, not just artisanal products.
+
+### **Era 4: The Autonomous Age (2023 - Today and Beyond)**
+
+And then, everything changed again. The arrival of truly powerful LLMs completely upended the landscape.
+
+*   **The trigger:** ChatGPT went public, GPT-4 was released, and frameworks like LangChain gave us the tools to build on top of this new paradigm.
+*   **The mission:** The core question has evolved again. It's not just about prediction anymore; it's about **action and orchestration**. The question is, **"How do we build a system that can understand a goal, create a plan, and execute it?"**
+*   **The new reality:**
+    *   **Prediction becomes a feature, not the product.** An AI *agent* doesn't just predict churn; it takes an *action* to prevent it.
+    *   **We are all systems architects now.** We're not just building a model; we're building an intelligent, multi-step workflow. We're integrating vector databases, multiple APIs, and complex reasoning loops.
+    *   **The engineering rigor from Era 3 is now the mandatory foundation.** You can't build a reliable agent without solid MLOps and real-time data engineering (Kafka, Flink, etc.).
+
+It feels like the "science" part of our job is now less about statistical analysis (AI can do a lot of that for us) and more about the rigorous, empirical science of architecting and evaluating these incredibly complex, often non-deterministic systems.
+
+So, that's my take. The "Data Scientist" title isn't dead, but the "unicorn" generalist ideal of 2015 certainly is. We've been pushed to become deeper specialists, and for most of us on the building side, that specialty looks a lot more like engineering than anything else.
+
+Curious to hear if this matches up with what you're all seeing in your roles. Did I miss an era? Is your experience different?
+
+EDIT: In response to comments asking if this was written by AI: The underlying ideas are based on my own experience.
+
+However, I want to be transparent that I would not have been able to articulate my vague, intuitive thoughts about the changes in this field with such precision. 
+
+I used AI specifically for the structurization and organization of the content.
+
+Comments:
+- Important to note. This only represents the peak of the industry. 
+
+A lot of roles are still stuck on the what happened stage. 
+
+I'm working in a company that is still working on a migration and I just gave a demo on the fundamentals of Spark.
+- Research data scientist roles exist. We aren't all engineers.
+- Pre 2010: data science is only possible in big enterprises because of computing
+
+Golden age: every company thought they needed shit loads of DSs
+
+2020: more and more companies discover that they need DE to support DS  and DA. Most DSs work largely as a DE, but dont have the background to program efficient and reliable production worthy programs. Also tons of ML gets standardized in python packages meaning you dont need highly trained DSs for general company needs.
+
+2025/future: with AI and cloud tons of standards reports and DS can be serviced to all companies. Youll need shitloads of DE to make it work, tons of DA to explain the data and results, validate the output. 1/2 good DS and maybe a junior team supporting them depending on the size of the company.
+- “It feels like the "science" part of our job is now less about statistical analysis (AI can do a lot of that for us)”
+
+Hard disagree with this part. Sure AI can perform a statistical test but there are a LOT of nuances in performing statistical analysis. Something AI clearly lacks to perform.
+- Sorry for the dumb question but how do you do reliable statistical analysis on tabular data with LLM? Genuine question
+- [deleted]
+- This reads as AI-generated.
+- Man… has anyone here actually used an LLM in production that has brought more value to the business than what it cost to implement?
+- This reads like a really generic AI generated essay. The structure and format are right out of chat GPT or Meta
+- [deleted]
+- The split is wrong.
+
+There are highly technical DS that don’t do ML. I am one of them. I get paid $500k per year as a mid-career data scientist to work on causal inference, optimization, simulation, and forecasting. I am not expected to be as good of a coder as programmers, but I should be able to productionize working versions of my model using tooling provided by engineering teams.   
+
+You also miss the most important transition: data science as a reactionary or service role to data science as core stakeholder in driving business strategy. This is the most important progression. As long as data scientists remain seen as numbers boys and girls, we will not mature as a field and will have limited influence in how we are integrated into the companies. This means we need focus less on the technical work as an ends and think of it as a means for driving business strategy and creating value.
+- AI slop from a lazy hack
+
+Snore
+- As Data Analyst who wanted to become Data Scientist, but somehow became Data Engineer instead I can confirm this is close to 100% truth.
+- remindme! 3 years
+- This is clearly an AI slop. But the question is what is data scientist role in the future. 
+
+The switch from generalist to specialist is natural when projects get bigger and more mature. But there are always places for generalists or specialist, even in the same team.
+
+For me, data science was always about one thing: create business value from data. It could be a statistical analysis, a ML model , a deep learning pipeline or a LLM based workflow. Those are all the tools of the trade, but the nature of the function never changed.
+
+
+With AI, my prediction is the generalist is coming back because one person can now do much more and it is much better ownership/velocity. The 1-person project is already on the rise in some company.
+- Death to AI slop!
+- While this may be AI. I think it touches on some interesting ideas. 
+
+First, I do think the industry has pivoted significantly.  The paradigm of the past where data science fought to just get a read only replica has shifted to where data is the primary focus. With that things like MLops and Platform Engineering have become ever more important as we try to give the math guys tools to be successful without throwing out out security, scaling, compliance requirements.  
+
+Second, we are starting to rethink how we architected many of our old systems. When we look at a plethora of mircoservices and start to rethink this as more if a data engineering problem. 
+
+In the past, we had “cloud native” as a driver for modernization. Now we have “data native”. While we might not be embracing Thoughtwork’s idea of a data mesh, everyone will be rethinking how to better use and manage data (including AI/ML).
+- > ⁠We are all systems architects now. We're not just building a model; we're building an intelligent, multi-step workflow. We're integrating vector databases, multiple APIs, and complex reasoning loops.
+
+Who is we?
+- A senior data scientist is still expected to be a unicorn. And that's a good thing
+- If only you just wrote this yourself but we get more AI generated garbage posts like this every day

@@ -1,0 +1,23 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ns3u6u/want_to_build_a_project_to_detect_unhealthy/
+Title: Want to build a project to detect unhealthy plants—learn OpenCV first or dive into image processing?
+
+Content:
+Hey seniors,  
+I’m a 2nd-year undergrad and planning to make a hackathon project where I detect unhealthy plants using OpenCV and image processing. I’m good with C++ and C, and I know the basics of Python. Just a bit confused—should I start with OpenCV first or directly learn image processing concepts?
+
+My bigger goal is to get into ML + finance, so I’ll have to dive into machine learning at some point anyway. I’m fine if it takes time, just want to start in the right direction and resources.
+
+Comments:
+- If you have access to a bunch of photos of healthy and unhealthy plants then use ML for this. OpenCV I think has some building (not 100% sure) otherwise it would be relegated to preprocessing mainly.
+
+You’re going to struggle to define “healthy” and “unhealthy” on your own.
+- Have a look at PlantCV and just the area of plant phenotyping
+- Before you jump into ML, there’s a lot of great work that has been done using spectral/vegetation indices to evaluate plant health. https://github.com/awesome-spectral-indices/spyndex
+- You can process images via openCV.
+- Had it been pre chatgpt/ stackoverflow era, i would advised you to learn OpenCV and then do. But one default choice is to first define what does unhealthy plants mean? how do you quantify this? Basically apply first principles and get into problem solving mindset. What should not matter whether you use opencv or not. What should matter is the quantifying the problem
+- I recommend checking out open-source datasets on Roboflow Universe as a jumping off point. Lots of great datasets to kickstart your hackathon project.
+
+Here's one for leaf disease detection: [https://universe.roboflow.com/roboflow-100/leaf-disease-nsdsr](https://universe.roboflow.com/roboflow-100/leaf-disease-nsdsr)
+
+If you're still in school and have a .edu email domain, you can automatically get +20 credits/month to build/deploy cv apps. How to redeem research credits: [https://research.roboflow.com/credits](https://research.roboflow.com/credits)

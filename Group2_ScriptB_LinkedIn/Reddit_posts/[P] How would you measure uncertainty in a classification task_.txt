@@ -1,0 +1,28 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/mz8vr4/p_how_would_you_measure_uncertainty_in_a/
+Title: [P] How would you measure uncertainty in a classification task?
+
+Content:
+Hello everybody, I've been using dropout, deep ensembles, evidence, and bayes by backprop to generate samples and then measure uncertainty.
+
+With the samples I can compute the mean and variance per class and see if the bars overlap with each other, or sum all the variances and see if it is a big number, or see if there is two or more means too high and then say the model is not reliable there. I mean, I can think of a lot of methods, but I was wondering if there is a standard, or if any of you guys have a good idea of how to measure the uncertainty of a model in classification. 
+
+Thank you very much!
+
+Comments:
+- I think the term you are looking for is model calibration (https://en.wikipedia.org/wiki/Calibration_(statistics)).  When your model is well-calibrated then the output of your model should represent the uncertainty about the model outputs, at least in the classification problem.
+- See a previous discussion [https://www.reddit.com/r/MachineLearning/comments/9wegxe/discussion\_uncertainty\_prediction\_in\_learning/](https://www.reddit.com/r/MachineLearning/comments/9wegxe/discussion_uncertainty_prediction_in_learning/)
+- I think what you are asking for is after getting the uncertainties in predictions what to do next ?
+- How are you doing your classification? In the book I am reading, *Practical Machine Learning In R* by Fred Nwanganga, Mike Chapple, they demonstrate how to use logistic regression to do classification and then they create a confusion matrix and use its values to derive the model’s  predictive accuracy.
+- Not sure if this will be any help but...Typically, you have a sample of classified data (that a human double-checked) that you may use to compare how the data was actually calibrated. It's important to keep such data separate when training the model, otherwise the data space will become diluted and will no longer represent accurately if the model is reaching expected classifications since data that is trained on can't be used to validate the model. There is also the problem with overfitting that may occur where the model is learning based solely off the images themselves and is no longer classifying generalized data transformations.
+- Not sure if I understand your post correctly, but I guess you can look at the distribution of the prediction variance in your test set and make an arbitrary threshold. Basically it's trade-off between model performance (i.e. AUC, in the classification case)  and the % of sample you refuse to make predictions at production time.
+- Great! This is probably it! I will look into it, thanks!
+- Yeah but that discussion occurs (let's say) before mine. I have a way to generate samples, the thing is what to do with those samples.
+
+Thanks for your answer!
+- Well, not exactly. I have N samples of, let's say, a classified image of a dog. How would you measure the confidence in that classification?
+- I generate N samples from one image. The mean across the samples gives a score of the image for each class. The highest score is the class the algorithm selects as correct. I do the same with the variance to get variance per class, but I guess this is not the best way to measure it, hence my question.
+- Oh thanks but I already know those things haha. The question is about the uncertainty at the moment of classification. Is more of a statistical question than a machine learning one.
+- Commonly, the output of the network is interpreted as the model confidence in its prediction. Say the softmax over 3 classes is 0.9, 0.07, 0.03. it implies the model is 90% confident in prediction that the sample belongs to first class.  This can be then evaluated using calibration metrics to understand how well the model is calibrated i.e. if it's confident with A% value it should also be A% accurate, something along this line.
+- Mmmh no, that's a common misconception, the Softmax classification is not a good indicator of the confidence, because it can give high score to a input completely outside the sample (f.e: high score to a car in a rabbit/dog classifier). Another measure of uncertainty is needed which uses statistical samples.
+- Yeah you correct and there's where calibration comes in.

@@ -1,0 +1,58 @@
+URL: https://www.linkedin.com/posts/fabio-cuzzolin_uai-horizon2020-eu-activity-7057754270770552833-S57P
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Fabio Cuzzolin的动态
+Fabio Cuzzolin
+
+Director of the AIDAS Institute @ Oxford Brookes University - President and Founder of UDrive
+
+2 年
+
+I am excited to announce that my team and I are the organisers of the upcoming #UAI 2023 workshop on "Epistemic Uncertainty in Artificial Intelligence"
+
+https://lnkd.in/ew9fUWrS
+
+as part of our #horizon2020 Epistemic AI #EU project:
+
+https://lnkd.in/grbkStWQ
+
+E-pi@UAI 2023 aims to raise awareness around the modelling of epistemic #uncertainty in #AI and #machinelearning, a rapidly emerging topic in the #artificialintelligence community represented at UAI. 
+
+As we aim for the broadest possible involvement, we invite the submission of peer-reviewed papers covering the following topics: 
+
+- Model uncertainty estimation
+- Robustness to distribution shift
+- Out-of-distribution generalisation
+- Model adaptation
+- Datasets and protocols for evaluating uncertainty and #robustness 
+- Conformal prediction
+- Distribution-free uncertainty quantification
+- #optimisation under uncertainty
+- Uncertainty estimation using deep ensembles
+- #bayesian #deeplearning (approximate inference, Bayesian deep #reinforcementlearning)
+- Deep recognition models for #variational inference
+- Epistemic learning
+- Uncertainty in real-world applications (e.g. #autonomousdriving, #healthcare, #languagemodels).
+
+The list is not exhaustive.
+
+Papers submitted to E-pi@UAI 2023 will need to follow the UAI format. Submission takes place via CMT:
+
+https://lnkd.in/ezqa4EKr
+
+We will award prizes for the best paper and the best student paper, and consider the publication of a #proceedings volume, subject to attracting a sufficient number of high-quality papers.
+
+The event features invited speaker of the calibre of Gert de Cooman (Ghent), Marco Zaffalon (IDSIA USI-SUPSI), Yarin Gal (University of Oxford) and Aaditya Ramdas (Carnegie Mellon University).
+
+Organizers:  Prof. Fabio Cuzzolin (Oxford Brookes University, Institute for Ethical A

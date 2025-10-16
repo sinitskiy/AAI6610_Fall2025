@@ -1,0 +1,36 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/4caxgf/what_are_the_best_resources_for_how_machine/
+Title: What are the best resources for how machine learning is being applied to biology research?
+
+Content:
+It appears that there are a number of applications of ML to biomedicine. 
+
+Any journals/blogs/etc. are appreciated. 
+
+Comments:
+- Here's what I consider one of the most influential papers on ML applied to a practical biology problem: [Gene Selection for Cancer Classification using
+Support Vector Machines](http://www.clopinet.com/isabelle/Papers/geneselect.pdf)
+
+As for journals you'll find ML papers scattered all over the place. You can find articles where ML is applied to health related stuff by going to [PubMed](http://www.ncbi.nlm.nih.gov/pubmed/?term=machine%20learning) and searching for Machine Learning.
+
+Some specific researchers you might be interested in looking up would be:
+
+Christina Leslie
+
+David Gifford
+
+Manolis Kellis
+
+
+
+Also, anything to do with predicting protein functions or structures from DNA or AA sequences is based on ML methods:
+
+[antiSMASH](http://antismash.secondarymetabolites.org/)
+
+[InterProScan5](http://www.ebi.ac.uk/interpro/about.html)
+
+[SMURF](http://jcvi.org/smurf/index.php)
+
+Many of the databases that get published to [Nucleic Acids Research](http://nar.oxfordjournals.org/) also implement ML as part of their features.
+- I haven't looked into it that much, but ChromHMM might be of interest, especially if you're also interested in genetics/epigenetic
+http://compbio.mit.edu/ChromHMM/

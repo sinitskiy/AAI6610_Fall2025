@@ -1,0 +1,17 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/6bm2bc/applicability_of_predictive_toxicology_methods/
+Title: Applicability of predictive toxicology methods for monoclonal antibody therapeutics: status Quo and scope
+
+Content:
+
+
+Comments:
+- Please see also:
+
+https://academic.oup.com/peds/article/25/10/507/1556627/Computer-aided-antibody-design
+
+http://www.nature.com/nchembio/journal/v5/n11/abs/nchembio.251.html
+
+https://www.researchgate.net/publication/305679346_Computational_Approaches_in_the_Design_of_Synthetic_Receptors_-_A_Review
+
+http://www.meilerlab.org/index.php/publications/showPublication/pub_id/174

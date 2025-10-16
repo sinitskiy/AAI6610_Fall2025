@@ -1,0 +1,58 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/17h1zpd/d_requesting_feedback_on_masters_in_ai_program/
+Title: [D] Requesting feedback on Master's in AI program with University of Texas at Austin
+
+Content:
+As the title says I'm asking for feedback from folks in the field of ML/AI on the MSAI program at UT@Austin.
+
+Here's the program website: [https://cdso.utexas.edu/msai](https://cdso.utexas.edu/msai)
+
+**My Skills/Experience:**
+
+* Have a BS in Comp Sci
+* Very comfortable with Math
+* Very experienced SE with >20 years in the industry
+* Very comfortable with Python, many other languages and confident I can learn any new language/framework/APIs
+* Have completed the [Fast.ai](https://fast.ai/) program
+* Have worked through Andrej Karpathy's makemore videos
+* Currently working in a leadership AI Engineering role doing work with LLMs, Vector DBs, and Computer Vision models
+* Comfortable with NNs, Backprop and have implemented from scratch several times for learning
+
+**The Program:**
+
+Required Courses:
+
+* Deep Learning
+* Ethics in AI
+* Machine Learning
+* Planning, Search and Reasoning under Uncertainty
+* Reinforcement Learning
+
+Electives:
+
+* AI in Healthcare
+* Automated Logical Reasoning
+* Case Studies in Machine Learning
+* Natural Language Processing
+* Online Learning and Optimization
+* Optimization
+
+**Program Pros/Cons**:
+
+* Pro: It's super affordable
+* Pro: It's entirely online/async which would work great with my work schedule
+* Cons: It's a new program so there are no reviews from past students to look at
+
+**My Goal**:
+
+Move from "AI Engineering" (as it's called these days) into research. I'm interested in several areas like model architecture and robotics. I'm not sure to what degree these roles would require a PhD though? If I complete this program I'd like it to be useful for pursuing a PhD if I decide to take that path.
+
+For anyone in the industry, I'd love feedback on whether this looks like a useful program that will help me move toward my goals. If you're aware of other options that might be better I'd love to hear about them.
+
+P.S. Please keep the Reddit snark to a minimum, not useful.
+
+Thank you in advance.
+
+Comments:
+- With respect only to the PhD part of your post: research experience is probably more important than classes for PhD application success. From what you posted this also looks very breadthy and not very depthy which may also not be optimal for PhD application success (but maybe good for some other metric like figuring out what you want to do!)
+- If you have no papers you won’t even be considered. But some schools have better integration across departments where you can get in any other program and essentially do the research. Ofcourse this will not have the same ‘weight’ of the department but you will be doing essentially similar research which I think is okay because for phds you are not suppose to look at school ranking etc and only do if you love research very much.

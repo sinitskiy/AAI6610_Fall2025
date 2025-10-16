@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_post-hoc-uncertainty-quantification-in-pre-trained-activity-7302362192308260864-hV6s
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+7 个月
+
+🔍 Exploring Uncertainty Quantification in Neural Networks 🔍
+
+Recent advancements in the field of neural networks have highlighted the challenges associated with uncertainty quantification methods such as Dropout, Bayesian neural networks, and Laplace approximations. These traditional approaches often face issues of underfitting or high computational demands, particularly when applied to large-scale datasets.
+
+In a groundbreaking study titled "Post-Hoc Uncertainty Quantification in Pre-Trained Neural Networks via Activation-Level Gaussian Processes," researchers propose a novel framework that shifts the focus from weight space uncertainty to activation-level uncertainty. This is achieved through the introduction of the Gaussian Process Activation function (GAPA), which effectively captures neuron-level uncertainties while preserving original mean predictions.
+
+The study presents two innovative methods:
+
+1. GAPA-Free: This method utilizes empirical kernel learning from training data for hyperparameter optimization, ensuring high efficiency during training.
+   
+2. GAPA-Variational: This approach employs gradient descent for hyperparameter learning on kernels, providing enhanced flexibility.
+
+Empirical results indicate that GAPA-Variational consistently outperforms Laplace approximation across various datasets based on multiple uncertainty quantification metrics.
+
+This research opens new avenues for practical applications of neural networks in uncertain environments and enhances their reliability in decision-making processes.
+
+     🌐📊
+
+#AI #Algorithms #ArtificialIntelligence #DL #DS #DataScience #DeepLearning #GaussianProcesses #ML #MachineLearning #NeuralNetworks #Tech #Technology #UncertaintyQuantification
+
+Post-Hoc Uncertainty Quantification in Pre-Trained Neural Networks via Activation-Level Gaussian Processes
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,134 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+Neural Net

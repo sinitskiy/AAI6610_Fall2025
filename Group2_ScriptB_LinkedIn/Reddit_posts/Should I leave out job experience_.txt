@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1h70jyq/should_i_leave_out_job_experience/
+Title: Should I leave out job experience?
+
+Content:
+I worked as a civil engineer for 5 years before getting a Hydroinformatics position (primarily data analysis with some elements of machine learning applied to wastewater) and and am looking to move into an official data science position. I haven’t gotten any hits while applying to various roles but I’ve been leaving out my engineering experience since I don’t want to work in anything related to engineering. Wondering if this is a bad idea and if I should just put the experience back on my resume? 
+
+Comments:
+- Absolutely it is. Experience has tons of value, especially scientific experience. Before DS degrees we were coming from engineering degrees, or moving from engineering jobs that paid less. 100% include it.
+- leaving out 5 years of engineering experience to get into data science is the single worst idea i've read on this subreddit.
+- Include it. You might re-explain or re-label it to better fit your resume. But you should include it as it is relevant experience.
+- The idea of not hiring a guy with your experience is risible. The HR types and recruiters who would pass on your resume are complete clowns.
+- Leaving out 5 years of engineering experience is a bad move. That experience is valuable and relevant to data science. Include it but focus on the skills and achievements that are applicable to data science when describing your engineering role.
+- I completed bachelors in mechanical engineering and then completed masters in Industrial engineering. Studied DS during my industrial engineering time and slowly gained experience within the field. I have both of the degrees completed on my resume and have gotten interviews from 3 of the FAANG companies. Albeit I haven't cracked them yet but at least having degrees from these places didn't hinder my chances of getting my resume screened.
+- As a hiring manager, I often find that the best candidates come from non-CS STEM backgrounds. Being able to understand real world problems is extremely important. Keep it on.
+
+Another hint: your best bet may be to officially change your role in your existing company, or go for a DS role in another engineering company. The market is competitive so you need to maximise your chances. I know you said you want to move away, but think of it as a stepping stone. I now work in tech but I started in engineering.
+- Current senior data scientist here who has been in some recruiting interviews.
+
+I Recently had to update my resume as well. But I feel as though you should tailor the resume to the position at hand. 
+
+If in your previous role you did conduct data analysis and incorporated some elements of machine learning, then definitely highlight that in your work experience as it is tailored to the roles you are specifically looking for. Make sure to include the impact of actually utilizing those tools and how it impacted your position as a civil engineer.
+
+“Implemented a supervised machine learning model after various feature engineering techniques to determine the likelihood that a certain sample of water is in fact wastewater, improving prediction accuracy by 22%. Ultimately, this saved the company 22 million dollars annually”
+
+Obviously this is made up, but just be able to give the problem statement, how you conducted data analysis/techniques used to clean your data and get it ready for modeling, then be able to explain how your insights led to actionable business outcomes with real value add.
+
+Data science is a fun place to be in as you really get to solve some awesome problems, and the interviews will be a lot about how you are able to think in terms of being given a business problem, properly disaggregate it into manageable chunks to solve, prioritize, and ultimately tackle the problem. 
+
+Emphasize that you are able to solve complex problems, and ultimately how you did so through your data analysis toolkit and ML toolkit!
+- Don't downplay yourself!   
+The technic might not be the same, but the logic behind is: for instance, plenty of technical knowledge that you might not know by heart, but being able to remember that it exists and apply it when necessary. Being able to frame a problem and to understand the needs of your stakeholders, and the company's constraints. Being able to share technical output and results sometimes with peers, sometimes with non technical stakeholders. Being able to handle a project for several weeks in a row without loosing yourself.   
+Put it back, and good luck in your research!
+- No one stops you from changing the job title. In many places your official title is something vague but you are hired as a data scientist, MLOps engineer or something specific. So change that to reflect your experience, and bullet point the relevant accomplishments for the jobs you seek, not the one you had.
+- In the same boat,, im including my experience in my resume,, currently building up my skills in DS
+- A lot of hiring managers will have a STEM background and will prefer candidates with the same. When a vendor is assigning staff to my projects, an engineering or computer science background is one of the first things they mention to try to build credibility with me.
+- I’d leave out working at Orange Julius in college, but I wouldn’t leave out my engineering experience
+- I wish I had that experience for my current role (ML engg not data scientist though).
+- You absolutely should not leave that out. Aside from it generally strengthening your CV by showing experience in a professional role and environment, engineering is one of the backgrounds that are seen as a strength moving into fields like Data Science. I've worked with multiple Data Scientists that came into the field from traditional engineering fields. Generally, there's overlap in terms of both fields valuing logical, mathematical, and detail-oriented thinkers. Your engineering experience adds weight to your CV by suggesting that you've already demonstrated competencies in these areas.
+- Terrible idea. 
+
+Before I landed my DS job I was an Army officer and a math professor. I didn't want to do something trusted but I 100% included it. Similar to you, my Army time included what I in interviews described as data analysis (basically dashboard manually with office). I didn't know if I should apply to entry level jobs or mid level so I applied to both. The interviewer for the job I got described how great it was that I was going to be coming in with 9 years of professional experience, even though none of it was in a data science role.
+
+If you leave out job experience they will think you're either fresh out of college or have been unemployed. That experience signals maturity to them and even if you don't have data experience they'll know you can be trusted to work independently, which is huge.
+
+Experience may vary at like FAANG or something, as a caveat.
+- Depends on who filters out the resumes. Typically, it’s a 22 year old with a sociology degree and not a thought in their head. They’ll throw it in the shredder without a second glance.
+
+If it’s someone with a brain, any engineering experience is good.
+- Definitely include your experience. Make sure you frame it in a way that’s applicable to the job you’re applying for. For example, highlight the data analysis aspect of your civil engineering experience and emphasize what impact it had on the business. The more you can focus the resume reviewer on what you did that’s related to what you’re applying to and what the output led to, the more likely they’ll overlook your title in a different field.
+
+I’ve hired many data scientists in big tech with non-traditional backgrounds (e.g. even from peace corp) that turned out amazing.
+- You should definitely not exclude it, every kind of experience is useful on your resume. Especially engineering when you go into data science.
+- Thank you for the advice! I’m definitely looking out for DS roles in my current company as I do really like it here, just none have opened yet. Granted I am getting DS experience here (same department as data science) so this was definitely a good step in the right direction

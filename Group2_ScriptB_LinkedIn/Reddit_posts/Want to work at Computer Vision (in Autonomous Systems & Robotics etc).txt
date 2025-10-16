@@ -1,0 +1,60 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kwu66m/want_to_work_at_computer_vision_in_autonomous/
+Title: Want to work at Computer Vision (in Autonomous Systems & Robotics etc)
+
+Content:
+Hi Everyone,
+
+I want to work in an organization which is at the intersection of Autonomous Systems or Robotics (Like Tesla, Zoox, or Simbe - Please do let me know others as well you know).
+
+  
+I don't have background in Robotics side, but I have understanding of CV side of things.  
+What I know currently:   
+  
+1. Python   
+2. Machine Learning   
+3. Deep Learning (Deep Neural Networks, CNNs, basics of ViTs)  
+4. Computer Vision ( I have worked on Image Classification, and very little bit of detection) 
+
+I'm currently a MS in Data Science student, and have the time of Summer free so I can dedicate my time.
+
+  
+As I want to prepare myself for full time roles in such organizations,  
+Can someone please guide me what to do and from where to do.   
+Thanks
+
+Comments:
+- I don't know how complete your MS is, but chances are you're probably imbalanced in some ways in terms of your understanding of the whole CV/image stack like all students — and to be fair a lot of professionals, especially people who have been working at big companies for a while and are super-specialized in one area. It might be useful exploring out some related areas, maybe with some toy projects? Having a grasp of the whole ecosystem and a basic idea of what the related disciplines might be and how they interact — that's very valuable, really something I'm personally looking for.
+
+For examples going out of college I was fairly strong in systems-related programming and classic CV but pretty weak relatively speaking at maths, optics, physics, statistics (that got slightly better over time — still need to work on the statistics, that one is very much out of my comfort zone). I saw a lot of candidates these last few years who had pretty strong knowledge of DL/CNN-related stuff but very weak re: data structures, systems- or algorithmic-related stuff. Conversely I saw more experienced engineers who were strong in CV, stats, analysis, you name it but never actually _acquired_ images and had no idea how to do so, what a camera pipeline is and what problems might arise in the real world (they just grabbed images other people got for them, or only worked on simulations).
+- First of all, never tell to future interviewers that you "know" computer vision and machine learning if they are on the technical side. Its sounds ridiculous when coming from a junior, you don't know 0.01% of the domain. Be humble.
+
+
+For a robot company, your best change is to do a robot project. Why would i take you for a job where you have 0 background in robotics while i have new graduates with this background? Learn about ROS and basics of control systems.
+- I would also recommend to learn reinforcement learning as well.
+- Trying to do the same, not sure how job ready it makes you but recently been going through "Underactuated" by MITOCW and it's been really mind blowing and has given me a new way to think about the topic, bridging physics, math, EC/CS and ML in a way that's never happened for me before :)
+- Hey there! Not sure where you're located geographically, which might impact this - but Visual Layer is hiring and we need dedicated folks! [https://www.linkedin.com/company/visual-layer/?viewAsMember=true](https://www.linkedin.com/company/visual-layer/?viewAsMember=true)
+- Yes, I would like to work.
+- are you currently in the US?
+- Very well said. 
+
+A decade ago my then-employer started hiring people with computer vision PhDs who straight-up did not know what the pinhole projection camera model was. Weren't even aware of the concept.
+
+I was shocked then, but the problem has gotten worse with time. 
+
+This is part of why I always, always recommend everyone at least skim through Szeliski, even if most everyone won't use most of it. Even a quick reading familiarizes you with so much material... it helps prevent you from just being out of your depth entirely. The difference between having a toehold of understanding and being entirely clueless is massive.
+- Yea that seems correct, Thanks
+- \> never tell people you "know" \[...\]
+
+Go ahead and also add C++ to that list of things to never claim understanding of! :)
+- Yea, I've researched a bit about it and learning RL is definitely important it seems
+- Thanks I'll check it out,   
+Is it helpful for the purposes I've mentioned in the post ?
+- yes
+- Of course, cpp is first on the list
+- If you wanna understand and build robots sure is useful. Just for a job , no idea. But if you say you wanna work on it it's better to already acquire atleast the language, ideas and tools that's related which is what I believe the course offers :) Then maybe you build a project which helps u get the job
+- did you finish your master? I am also in the US
+- I'm halfway done with my MS
+- actually me too. can I dm you?
+- sure
+- Please share relevant discussion topics between both of you. Where are you getting your MS?

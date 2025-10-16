@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/bas-kessels_uncertainty-quantification-in-real-time-parameter-activity-7266831772112318464-mcLU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Bas Kessels的动态
+Bas Kessels
+
+Mechanical Engineer with a PhD and special interest in Dynamics and Control (of thermal and mechanical systems)
+
+10 个月  已编辑
+
+“Quantifying the uncertainty in black-box model outputs is crucial to gain trust for their use in decision-making.”
+
+In our past two publications (https://rdcu.be/c8sOH, https://rdcu.be/dRoQs.), we developed the Inverse Mapping Parameter Updating (IMPU) method. This method updates physically interpretable parameters of nonlinear dynamics models in (near) real-time using features that are extracted from measured response data using a black-box inverse mapping model. In this way, the model stays an accurate digital twin of the physical system during its operational lifetime, and may, for instance, be used to increase the performance of model-based controllers, for structural health monitoring, and for predictive maintenance.
+ 
+In our newest publication, the IMPU method is extended to provide a quantification of the uncertainty in the updated parameter values to provide the user with valuable insight in the level of trust the user may have in these updated parameter values. Furthermore, the methodology is enhanced to allow different identification experiments to be performed without compromising on the online computational efficiency of the method. In our newest paper, our methodology is demonstrated by updating parameter values of a model for a medical mechanical ventilation setup of the company Demcon Macawi. The inferred probability distributions for the updated parameter values lie within the tolerance regions of the true parameter values, and the quantified uncertainties give a decent indication of the relative uncertainty, e.g., a high uncertainty is found for (true) parameter values near the edge of the training parameter space. 
+Does this sound interesting to you? You can find the full paper here: https://rdcu.be/d1gY5.
+
+I would like to thank NWO (Dutch Research Counc

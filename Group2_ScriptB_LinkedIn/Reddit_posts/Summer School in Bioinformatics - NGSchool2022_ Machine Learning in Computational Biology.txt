@@ -1,0 +1,43 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/u8lpfg/summer_school_in_bioinformatics_ngschool2022/
+Title: Summer School in Bioinformatics - NGSchool2022: Machine Learning in Computational Biology
+
+Content:
+# 
+
+https://preview.redd.it/lrs2h3i4dvu81.png?width=2888&format=png&auto=webp&s=d66c3e4556ba46f56e71a70122e06a468990992f
+
+# NGSchool2022: Machine Learning in Computational Biology, 15-23.09.2022
+
+Our flagship annual summer school is finally coming back! NGSchool2022: Machine Learning in Computational Biology will be held in-person, from the 15th to 23rd of September in Jabłonna palace near Warsaw, Poland.
+
+The topics we will cover during this year summer school include:
+
+* Introduction to statistics and machine learning in biology
+* Linear methods for regression and classification
+* Cross-validation and model selection
+* Clustering and tree-based methods
+* Deep learning and natural language processing
+
+# Important dates
+
+**30.05 - Registration deadline**  
+w/c 04.07 - Selection results  
+25.07 - Fee payment deadline  
+15 - 23.09 - NGSchool2022
+
+# Registration fee
+
+The registration fee for the selected participants is 200 EUR / 925 PLN for academia and 650 EUR / 3 010 PLN for industry. This fully covers the cost of accommodation and board during the summer school.
+
+More info about the school with newest updates can be found on our website: [https://ngschool.eu/ngschool2022/](https://ngschool.eu/ngschool2022/).  
+
+
+https://preview.redd.it/ykxftmehdvu81.jpg?width=2048&format=pjpg&auto=webp&s=1c18605567d2dd2687b68fc58cf7ed11d1c9e503
+
+Comments:
+- just to make it clear [NGSchool Society](http://ngschool.eu/) is a non profit organisation registered as such in Poland. Our events are non-profit and all organizers are volunteering their time. We apply for funding that allows us to subsidize the cost of the events and with current funding schemes we are unable to offer remuneration to invited speakers. We do cover their travel expenses, accommodation and board.  
+
+
+We try to make our events accessible and affordable for all, and keep the registration fees to a minimum. We understand that in some circumstances even the fees we set can be challenging. We don't want the money to be a limiting factor in anyone's participation - if you find it difficult to fund your registration fee, please still consider applying and reach out explaining your situation and we will try our best to help you with a reduced fee or a waiver.
+- We updated event website with **program and speakers**! Be sure to check it out, registration is open until 30.05 - don't miss out! https://ngschool.eu/ngschool2022/

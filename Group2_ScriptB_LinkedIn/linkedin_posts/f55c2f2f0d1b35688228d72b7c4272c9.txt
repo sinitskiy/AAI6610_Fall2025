@@ -1,0 +1,71 @@
+URL: https://www.linkedin.com/posts/pymc-labs_genai-airesearch-bayesianinference-activity-7305276432711045120-6pxt
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+PyMC Labs的动态
+PyMC Labs
+
+5,975 位关注者
+
+7 个月
+
+🤔 Most AI models make confident predictions even when they’re wrong.
+But in the real world, 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 𝐢𝐬𝐧’𝐭 𝐚 𝐛𝐮𝐠; 𝐢𝐭’𝐬 𝐚 𝐟𝐞𝐚𝐭𝐮𝐫𝐞.
+
+🎭 The difference between epistemic and aleatoric uncertainty matters.
+🔖 𝐄𝐩𝐢𝐬𝐭𝐞𝐦𝐢𝐜 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 comes from missing knowledge it can be reduced with more data. 
+🔖 𝐀𝐥𝐞𝐚𝐭𝐨𝐫𝐢𝐜 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 comes from randomness—it’s irreducible. 
+
+❌ Treating them the same leads to bad decisions.
+
+📊 Bayesian methods bring 𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞 𝐭𝐨 𝐮𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲.
+From Bayesian linear regression to Gaussian processes and Bayesian neural networks, probabilistic AI explicitly models what the system knows and doesn’t. 
+
+✅ This makes decision-making more reliable.
+
+🔄 Probabilistic AI shines in sequential decision-making.
+🔹𝐀𝐜𝐭𝐢𝐯𝐞 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 reduces data collection costs by focusing only on the most informative samples.
+🔹𝐁𝐚𝐲𝐞𝐬𝐢𝐚𝐧 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐚𝐭𝐢𝐨𝐧 balances exploration vs. exploitation, improving resource allocation.
+🔹𝐌𝐨𝐝𝐞𝐥-𝐛𝐚𝐬𝐞𝐝 𝐫𝐞𝐢𝐧𝐟𝐨𝐫𝐜𝐞𝐦𝐞𝐧𝐭 learning integrates uncertainty to guide exploration safely.
+
+📖 These aren’t just theoretical ideas. The recent ETH Zürich course on Probabilistic AI (by Andreas Krause & Jonas Hübotter) dives deep into these methods, showing how 𝐩𝐫𝐨𝐛𝐚𝐛𝐢𝐥𝐢𝐬𝐭𝐢𝐜 𝐢𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞 𝐚𝐧𝐝 𝐫𝐞𝐢𝐧𝐟𝐨𝐫𝐜𝐞𝐦𝐞𝐧𝐭 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 can complement each other.
+
+🔗 https://lnkd.in/gD426DpA
+
+🏆At 𝐏𝐲𝐌𝐂 𝐋𝐚𝐛𝐬, we’re actively working at the forefront of 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐯𝐞 𝐀𝐈 + 𝐁𝐚𝐲𝐞𝐬𝐢𝐚𝐧 𝐦𝐨𝐝𝐞𝐥𝐥𝐢𝐧𝐠, making AI not just predictive, but uncertainty-aware and interpretable.
+
+📩 If your team is working on AI that needs better uncertainty quantification, reach out at 𝐢𝐧𝐟𝐨@𝐩𝐲𝐦𝐜-𝐥𝐚𝐛𝐬.𝐜𝐨𝐦 or book a 𝐟𝐫𝐞𝐞 30 𝐦𝐢𝐧 𝐜𝐚𝐥𝐞𝐧𝐝𝐚𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 at https://lnkd.in/ggT8QSrf
+
+#GenAI #AIResearch #BayesianInference #ProbabilisticAI  
+
+157
+5 条评论
+赞
+评论
+分享
+Larry Jones
+
+7 个月
+
+Very interesting idea.
+
+赞
+回复
+1 次回应
+Mehran Bazargani Ph.D.
+
+Marie-Curie Postdoc Fellow | The Free Energy Principle & Deep Learning
+
+7 个月
+
+Very interesting distinction about different kinds of uncertainty.

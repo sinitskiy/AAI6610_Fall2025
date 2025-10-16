@@ -1,0 +1,34 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m1zukw/d_is_anyone_this_old/
+Title: [D] Is anyone this old? 🥲
+
+Content:
+[https:\/\/www.cs.cmu.edu\/\~tom\/files\/MachineLearningTomMitchell.pdf](https://preview.redd.it/sma7x3kvkddf1.png?width=1214&format=png&auto=webp&s=858a6025d48aeda1939426cf289ed24dfa46fd64)
+
+Comments:
+- This book is really good
+- Yep, I'm this old. Still have a copy lying around from my undergrad days.
+- Still foundational to understanding
+- Everyone should read this book, it's really good for fundamentals
+- Yes it is a great book. 
+
+My wife reminded me the other day that I spent a lot of money back in the lat late 1980s buying the first edition of the Encyclopedia of Artificial Intelligence. 
+
+Parallel Distributed Processing by Rumelbardt et al was a very good read too around that time. 
+
+It has been a long hard road to get to where we are not and IMHO we are still 2-3 breakthroughs away from superintelligence.
+- I defended 11 years ago and I'm pretty sure that quote is in my manuscript.
+- Started out similarly a few years back in undergrad but with Staurt Russel & Peter Norvig’s book, Artificial Intelligence: A modern approach.
+- Prof. Mitchell’s book is still a classic. It’s foundational. Fantastic teacher and startup adviser.
+- this is legent back to my 20s, 15 years ago!
+- That was a good line tho I am not that old 😂 I started doing ml recently
+- That's an insanely good book which is still a great introductory read today.
+- Ha, this book was actually fun and goos
+- Yep
+- It’s actually the textbook for ML at Georgia Tech
+- The book itself is old but was still taught when I was in uni, which was only... wait...
+- Its a great resource tbh. Had this quote on my bsc thesis and that was like 2 years ago
+- Don't have the book but remember this from the Andrew Ng Stanford MooC.
+- Classics are classics for a reason.
+- Chapter 2 should be required reading for any intro ML course
+- I defended 3 years ago and that quote is also in my manuscript. It is just a good starting point if nothing else.

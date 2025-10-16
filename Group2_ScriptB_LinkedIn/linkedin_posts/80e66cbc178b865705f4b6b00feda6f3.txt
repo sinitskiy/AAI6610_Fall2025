@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/christoph-molnar_in-machine-learning-we-often-distinguish-activity-7187070296967766017-TAQz
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christoph Molnar的动态
+Christoph Molnar
+
+Author of Interpretable Machine Learning, Modeling Mindsets, and more | christophmolnar.com
+
+1 年
+
+In machine learning, we often distinguish aleatoric and epistemic uncertainty.
+
+Aleatoric is called irreducible error because it's caused by "true" randomness, and epistemic is reducible, caused by lack of information, like model misspecification.
+
+But it's not that simple.
+
+Example: We have different dice and predict outcomes when rolling one.
+
+Our only feature: type of dice.
+
+Let's say per dice, we count the number of sites and give each site equal probability. That's our prediction model.
+
+This model would only have aleatoric uncertainty.
+
+But if we use a model that always "predicts" outcomes 1 to 6, each with probability 1/6, we would have a model that's not as good as it could be.
+
+We say that it has epistemic uncertainty.
+
+But going back to the aleatoric uncertainty model, is it really just aleatoric?
+
+Because if we knew all the physical factors of the dice roll, we might be able to predict it.
+
+It's a lack of knowledge, so don't we have to attribute some of the uncertainty to epistemic uncertainty?
+
+Like a kid asking repeated "Why" questions, further and further reducing aleatoric to epistemic uncertainty would quickly become unproductive.
+
+A better differentiation between epistemic and aleatoric: make it conditional on P(Y|X=x).
+
+When we see our model as a model of P(Y|X=x), we can define aleatoric uncertainty as the conditional variance V(Y|X=x).
+
+The epistemic uncertainty is then simply all the remaining variance.
+
+By conditioning on our features, we can pin down aleatoric and epistemic uncertainty.
+
+If you want to dive deeper into Uncertainty, I can recommend the paper Sources of Uncertainty in Machine Learning -- A Statisticians' View by Gruber et. al 2023
+
+156
+22 条评论
+赞
+评论
+分享
+Maria Moreno de Castro
+
+Researcher, Data Scientist, Teacher
+
+1 年
+
+Great post, as usual. I would like to

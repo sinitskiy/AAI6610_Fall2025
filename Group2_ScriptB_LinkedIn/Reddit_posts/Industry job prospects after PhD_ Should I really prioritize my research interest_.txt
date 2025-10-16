@@ -1,0 +1,80 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/t2170n/industry_job_prospects_after_phd_should_i_really/
+Title: Industry job prospects after PhD? Should I really prioritize my research interest?
+
+Content:
+I'm a second-year master's student in Japan (cell biology lab).
+
+I want to get some advice on choosing PhD specialty and research topic. 
+
+While I do like research, I'm unsure whether I should choose PhD research projects 
+
+solely based on my highest research interest. 
+
+I recently thought about what I can do after PhD with skills that I get by conducting projects. 
+
+I prefer to get a position in academia. But it's really competitive. I have seen people
+
+ending up with post-doc for endless years. 
+
+Realistically, I would like to get an industry job (pharmaceutical and biotech, R&D position).
+
+Well, before I thought having journal papers with high IF would be a prerequisite for pharma jobs.
+
+After searching LinkedIn job postings, it seems like technical expertise matters the most. 
+
+&#x200B;
+
+Commonly,  pharma companies were looking for someone with the skills and expertise in 
+
+Antibody / immunology / oncology / Bioinformatics / statistics 
+
+&#x200B;
+
+I got PhD offers from three different labs. Their main research projects are:
+
+(1) Mitochondrial proteostasis / Autophagy / proteomics (with mammalian cell)
+
+(2) Ageing / Cancer / DNA methylation (with mouse)
+
+(3) Epigenetics / Ageing / Stem cells (with c.elegans)
+
+&#x200B;
+
+I'm most interested in (3) academically. However, I'm afraid that skills I can learn from (3)
+
+wouldn't be transferable for industry positions. Thus, I will be unqualified for R&D jobs.
+
+ I believe that having high-impact journals wouldn't get me a position in the industry. 
+
+Till now I thought I should prioritize my research interest. 
+
+I know that if I care about how much salary I get, I shouldn't do PhD. 
+
+But what's the point if I can't find a job. I won't be able to do any research at all.
+
+From a job perspective, (2) seems like the best because I can get experience with cancer research.
+
+I don't think research experience in aging, mitochondria, autophagy, or stem cells can be possibly 
+
+utilized in the industry. Moreover, c.elegans doesn't seem to be used in the industry. 
+
+Should I give up on (3) and choose (2) because I will be able to get an employable skill set?
+
+Comments:
+- I work in industry ( Biosaftey testing). I don't have a PhD as I worked my way up from the bottom to get to the level we hire people with PhDs at. 
+
+But I do know what skills they are looking for from someone with a PhD and you are right journals dont matter. Its about technical knowledge of biology techniques (qPCR, Sanger Sequencing etc) and how the individual is able to manage projects, how they will be talking directly to clients ( communication skills) and if they want to be in industry ( it is alot more fast paced that a PhD is, and alot more targets to hit).  
+
+I think from all 3 projects you will gain these skills. 
+
+Choose what project you think will interest you the most as I think you will get the most out of it. 
+
+:)
+- Im an RA at a biotech that helps to interview incoming PhDs (just did about 5 interviews this past month) What we mainly look for is 
+1. How well can you manage a project/ multiple? 
+2. How well can you trouble shoot/ optimize very quickly as industry is very fast? 
+3. How well do you know your science? 
+ For #3 i think if you are really passionate about the field you are in you will be eager to learn more about it which will equip you to answer fast ball tricky science questions about techniques I have seen in these interviews. 
+
+so i say pick whichever you enjoy best, try to manage projects and take more leadership roles (if possible), and maybe some mentor experience as you will probably need to also train RAs in biotech too. Hope this helps!:D

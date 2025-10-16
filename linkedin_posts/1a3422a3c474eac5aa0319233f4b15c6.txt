@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/sasasavic_this-may-pose-an-interesting-issue-before-activity-7371340184342355968-Xogd
+Date: 2025-09-24
+Author: Unknown
+
+This may pose an interesting issue...
+
+
+Before you roll your eyes, throw a comment on how LLMs are a fad, a toy, a hype or an overglorified pattern matcher... please hear me out, as this is merely a philosophical thought, not a technical debate - I am well aware of their limitations and usefulness.
+
+I welcome an interesting philosophical debate.
+
+I think that LLMs’ hallucinatory behavior is a feature rather than a bug.
+
+I'd define hallucinations as a form of internal intuition, deeply embedded in the latent space, governed by the hyperdimensional connectedness that the reasoning process exhibits.
+
+Whatever you want to call it, you cannot argue that there isn't some form of emergent behavior - even if the "intelligence" is manufactured or synthesized through this "next token prediction."
+
+Call it a "leap of faith in answering," backed by internal knowledge and formulated facts (within the model's scope of understanding and rationalizing).
+
+My question is, how do you reward a system for something that it doesn't know, given the foundational model has been trained on world knowledge?
+
+On the idea of controlling hallucinations:
+
+I actually think that this will severely limit the system in bridging ideas between two or more independent domains that may have a strong or weak affinity.
+
+For example, if you try to get the system to formulate how Field A may apply in Field B, and given it may not have any a priori knowledge on those two independent fields or very weak relationship, then its answer should be "I don't know," rather than attempt to formulate a rational answer - even if the by-product of that answer is wrong (call it "hallucinated") and backed by a weak relationship.
+
+I would go as far as saying that ALL answers the LLM produces are hallucinations, it's just that some hallucinations are more accurate than others.
+
+Truthfully, let's face it - every body of known human knowledge has been "hallucinated" by every human that has produced and contributed to that body of knowledge.
+
+The accuracy and quality of world knowledge builds itself on prior bodies of knowledge, with each iteration modifying or building upon the previous. It's a recursive process.
+
+If Copernicus or Galileo, based on their observations, produced a body of knowledge that, at the time, was taken as fact - only to be fundamentally wrong from a modern-day perspective, can we say that they hallucinated their understanding of the topic at hand?
+
+All I'm saying is that limiting their behaviour by rewarding what they don't know is moot, because what doesn't "I don't know", even mean in context of a system that has world knowledge embedded as part of it's reasoning process.
+
+Perhaps consumer systems will be limited in this thinking, while research systems will remain unconstrained.
+
+Some food for thought 🤔

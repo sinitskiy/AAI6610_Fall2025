@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/170lelv/machine_learning_intro/
+Title: Machine learning intro?
+
+Content:
+I just recently finished a PhD in molecular biology, but I exclusively did bioinformatics work during grad school. Now I’m looking for bioinformatics jobs and every single one seems to require proficiency with machine learning. It’s something I’ve been wanting to learn anyway, but I’m not sure where to begin. If anyone has some advice for teaching yourself, it would be greatly appreciated! 
+
+I’m proficient in python and C, but not an expert in either. My thesis project revolved more around modeling protein and nucleic acid structures and I just did some coding to map mutations/damage/repair activity and measure distances/dihedral angles of bonds in those structures. I suspect I’ll need a more solid foundation in programming before I can move on to machine learning. Would also appreciate advice on that!
+
+Comments:
+- If you're looking for a book, 'Hands-on machine learning with scikit-learn, keras, and tensorflow' is a good starter read especially if you already know Python.
+- https://youtu.be/Z_ikDlimN6A?si=k_TJxt8hoBnWg_l_ 
+I used this to help myself learn during an internship. Doesnt go into any math really but very useful to understand how to set up models
+
+Also Statquest on youtube has great videos on learning machine learning and statistics concepts on a basic level
+- I like Introduction to Statistical Learning. There's a version now for both R and Python, and it's free. It clearly explains the math background and gives code snippets along with practice problems. It's not bio specific, but the tools are easily transferable.
+- [https://www.youtube.com/watch?v=4iP3CCdG-Xo](https://www.youtube.com/watch?v=4iP3CCdG-Xo) 
+
+I really like this guy's video on neural networks because he takes the approaching of explaining everything also through building a neural network in C which is a great skill
+- A few good books/courses, more or less in 'order':
+
+- https://www.statlearning.com/
+- http://introtodeeplearning.com/
+- https://d2l.ai/
+- https://dmol.pub/
+
+All of the major python ML packages have great tutorials and ressources: scikit-learn, torch, tensorflow
+- I recommend [https://www.deeplearning.ai/courses/](https://www.deeplearning.ai/courses/), especially Machine Learning Specialization, and Deep Learning Specialization. You can audit all the courses for free.
+- Perchance you would be interested in [kaggle](https://www.kaggle.com). They provide some intro to ML courses and host ML competitions with awards (in money). Another good feature is that people in the community share their codes (notebooks) which is a good way to learn and get inspiration.
+- I did a udacity course back in the day that was a pretty helpful kickstart.
+- That’s perfect, thank you!
+- Exactly what I was looking for, thank you!
+- no problem bro!

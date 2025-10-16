@@ -1,0 +1,76 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1841nbo/learning_how_to_genetically_modify_yeast_without/
+Title: Learning how to genetically modify yeast without a degree?
+
+Content:
+I've been quite interested in genetically modifying yeast to produce compounds ever since I watched [this video on someone modifying yeast to produce spider silk](https://www.youtube.com/watch?v=DHNPnO5UOYQ). Unfortunately, the highest bio class I've taken is AP Bio in high school, so I was wondering how feasible it is for me to learn how to design plasmids and modify yeast, and also where I could get started.
+
+Some background info on me:
+
+* BS in computer science, day job is software developer. Would definitely prefer not to quit my job.
+* Decent knowledge on fungi from being really into mushroom cultivation, familiarity w/ fungal DNA sequencing thanks to a local mycological society, can read mycology papers with the help of Google
+* Own some lab equipment like a laminar flowhood, autoclave, UV crosslinker, PCR machine, etc., but willing to buy or borrow more
+* Have a friend who is willing to go along with anything lol
+
+I guess my "dream" is to find a cheap way to produce some fancy compound (like spider silk), set up a couple bioreactors, and let 'er rip. Any ideas?
+
+Comments:
+- ...I'm sorry, you have a PCR Machine?
+
+The realization that I could HAVE one is kind of doing me in. Huh.
+- I have a PhD in yeast genetics.  I don't think having a few pieces of lab equipment is a substitute for a fully-equipped lab and AP Bio is not a substitute for a biology degree.  Most people with only a BS in biology don't have the skill set to make transgenics, either.
+- I don’t think it’s ethical to genetically modify something that you could freely release into the environment.
+- As a person from the global south i cannot even conceptualize owning these many lab equipments. I envy you so much. And here i was happy with my microscope, slides and staining kits 🥲
+- If you don’t know now, there’s a high chance AI will be able to walk you through it in a few years. Maybe you could try cultured milk or beef tallow or something. Sounds like a fun project. If you ever end up culturing a nest of ants that scavenge precious metals for you from nearby soil and landfills in exchange for food, be sure to send me a fertilized Queen, eh? Lol
+- Ayyy that guy is local to me! Awesome dude I’ve never met
+- It's not really that complicated to do something like recombinant DNA, that you would require several years of education.
+
+The fact is, they don't teach people how to modify yeast for several years. They teach them other things, and genetic modification is just one of many.
+
+Technique is kinda simple, just do some research. You might fail a few times, but that's learning.
+
+I mean they're not going to be amazing, you're not going to make your own plasmids. But if you just want to buy them and shove them inside the yeast it's not inconceivable.
+
+You can just copy a video for the technique with some different DNA.
+
+You don't state if you want to create DNA or extract it from an organism then move that to yeast, or just buy some and put it in. There's a difference in the difficulty.
+- You bought a PCR machine?!
+- Yeah, if you're patient you could find cheap used ones on eBay or surplus auction sites. The New York Mycological Society uses [miniPCR machines](https://www.minipcr.com/products/minipcr-thermal-cyclers/), which are absolutely adorable but too pricey for me.
+- Yep makes sense. I’ll have to reevaluate. 
+
+In computer science, it’s kind of split into two parts. There’s the “actual” computer science, with PhDs doing research and writing papers, developing novel computer algorithms, inventing new AI models, etc. Then there’s the software engineering side, where programmers create apps or websites (like Reddit) and all the hard underlying technology is abstracted away. I’m wondering if there’s an equivalent in yeast genetics where I’m able to apply research that’s already been done instead of creating novel transgenics and the like?
+- I also have a PhD in yeast genetics and I don't think he is asking for a substitute for a fully equipped lab.  Plus IDT and the sanger sequencing sites will sell to anyone and some URA- dropout and a smidge of 5FOA and the king of homologous recombination, who knows?
+
+As a post doc we had high school kids come to the lab and could easily do transformations.
+
+So long as he isn't trying to replicate or further this
+Wong, G., Lim, L.R., Tan, Y.Q. et al. Reconstituting the complete biosynthesis of D-lysergic acid in yeast. Nat Commun 13, 712 (2022). https://doi.org/10.1038/s41467-022-28386-6
+
+As a proof of concept I think it is doable so long as the transgene can be detected easily (which means it's almost certainly been done already).
+I wouldn't recommend this,.but I am not sure it is beyond the realm of possibility.
+
+Doesnt the Odin sell genetic modification kits for yeast?  I just checked and they do (g418- plasmid based).  I have no affiliation with them and have reservations about some of the things they do, but for less than 200 bones for an all one kit?  The other stuff needed is available on ebay, although the bioreactor would not be cheap.
+
+So formally probably doable.
+.
+- There goes thousands of years of artificial selection for most crops and animals.
+- You should see how low tech the average ivy league equivalent university bio lab is. Some equipment used at the UWaterloo labs is literally slapped together with parts they had lying around
+- AI can already walk him through it, its not exactly hard
+- And an autoclave, incubator?! Just curious what you use them for now
+- The answer is if you want to do anything other than redo things people have already done you need a bioscience education and an actual lab. If you want to biosynthesize and purify meaningful amounts of anything this project is going to get hugely expensive fast. That channel is fun but pretty half baked; he always tries to simplify things to make it “accessible ” but at that point you’re not doing anything new. You need strong bioscience background and expensive tools, reagents, lab space to actually get genuinely creative with GE, much less reliably make product. If this channel isn’t sort of “trivial” to you honestly you have a lot left to learn.
+
+Home microbiology is orders of magnitude more difficult than breaking into home chemistry. If you’re that into it, you’re going to have a much more rewarding time in an academic lab.
+- Huh! I've done PCR by hand a couple times, but not for personal stuff. 
+
+Afraid I can't answer your questions, but I think there's one company that's been working on allowing people to do custom yeast work? Check out r/mead or r/labrats maybe? Those are the two subs I frequent that might post something like that. It might just be [this kit for GFP though](https://www.the-odin.com/ge-yeast/).
+
+Anyway, let me know what you find! Definitely interested myself. I think my personal goal would be insulin or estrogen, though, becuase I crave more knowledge about the production of those.
+
+...I think estrogen is derived from a completely different source though. Hm.
+- PhDs in the US are approximately one year of classes and 5-7 years of intense, independent research.  I worked 50-75 hours a week.  It is not a part time job.  
+
+It takes years to become skilled at designing and executing experiments.  Hell, it takes a couple years just to be able to pipette accurately and reproducibly.  You say you can understand papers using google, but I can assure you, given what you've written, you don't.  There are no shortcuts to what takes thousands of hours and the support system of a PhD program.  
+
+This is like me coming to you and saying I took high school computer science and have an iPad, so could I be a developer at Microsoft.
+- Genetically modify in this context doesn’t mean artificial selection.  Do you want the yeast in your mouth to start producing spider silk because John down the street thought it would be cool?
+- There is quite a huge step from “explain molecular cloning to me”, to  “design a plasmid expressing gene X, with this kind of antibiotic resistance, this promoter, this tag, and replication origina for these species, along with protocols on what to actually reach an end product”.

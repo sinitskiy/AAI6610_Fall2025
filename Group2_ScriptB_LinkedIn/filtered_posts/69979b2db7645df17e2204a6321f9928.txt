@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/esther-gimeno-miro_ai-criticalthinking-uncertainty-activity-7374317503587536896-jfSP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Esther Gimeno Miró的动态
+Esther Gimeno Miró
+
+Lingüista computacional & Líder creativa de proyectos | IA conversacional | Cofundadora de CABE | Tendiendo puentes entre lenguaje, tecnología y cultura
+
+2 周  已编辑
+
+So… in my last post, I claimed that critical thinking rests on eternal questioning, not on certainties. I'd like to push this idea a little further, as certainty can even be a marker of madness.
+
+Whoever never doubts doesn’t just lack critical thinking; they also risk compromising their mental health. And that’s an interesting point, since we are constantly bombarded by people who claim to HAVE the answer, the method, the philosophy, the diet, the routine we ALL need to succeed.
+
+In clinical settings, absolute rigidity in beliefs (without a trace of doubt) is a red flag, often seen in delusions, paranoia, obsessive fanaticism, or psychosis. In philosophy, Popper already argued that knowledge must always be falsifiable — if it can’t be questioned, it’s not knowledge but dogma.
+
+And yet, we live in times where certainty is rewarded: hot takes, “strong opinions,” viral claims. Even our machines (LLMs, algorithms, recommender systems) reinforce what looks certain to the user; the question is WHY, and answering this question implies asking some others:
+
+1. What expectations must AIs fulfill to be profitable?
+2. Why don’t we train the models — or at least design their interfaces — not just to predict, but to show their uncertainty range?
+3. Would it be desirable to have epistemic and aleatoric uncertainty values at hand for the user to determine best course of action? (NB: epistemic uncertainty is about the limits of the model’s knowledge; aleatoric uncertainty is about the variability of the world itself)
+4. How should we balance what the user wants vs. what the user needs —like in education, healthcare, or training, where clients trust expertise and often accept to hear what they need, not just what they want.
+5. Do we trust

@@ -1,0 +1,37 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bmm1vq/contract_work_for_machine_learning_and_data/
+Title: contract work for machine learning and data science?
+
+Content:
+Where can I find contract work for machine learning and data science? I want something to complement my full-time job, 10-20 hours per week. I currently do machine learning but would like more experience and to diversify the type of problems that I solve. I have an interest predictive analytics in health care and housing. I've tried upwork/fiverr and nothing. I'll add that I do good work and everyone who has worked with me has like working with me and impressed by the work that I do. Is there such a thing as doing contract work in data science?
+
+Comments:
+- This concept sounds nice in theory but I feel like the majority of companies will either fit into two categories - 1. Company has data ready for ML and knows what they want to build (they probably don’t need you) or 2. Company has a super vague idea about wanting to use ML and their data environment is questionable (they would maybe hire you but to actually help them it would probably require full time effort from you and even then might amount to nothing). The only exception to this I could think of is if you already have deep domain expertise but just hoping to come in and get paid to play around with data in a new domain is kind of a pipe dream in my opinion…
+- I've gotten a few offers over the years from people reaching out on LinkedIn and I have done nothing special, my profile looks ordinary, and I don't have much external-facing reach / blog / publications / that kind of thing or YOE.
+
+I guess it's just from having a title beyond senior at a big company.
+
+My sense would be that there are multiple ways to gain recognition and be found for this kind of thing.
+- Try joining some Kaggle competitions and posting on some well-known blogs. You need to make your resume shine first, and then let those who are interested in you find you.
+- Consulting is the closest thing. I know some professors that do it but they have a lot of specialized knowledge.
+- Well, it hasn't worked for me. So, I tried focusing on my office work and started growing there.
+- I am getting some part time teaching offers through maybe look into that?
+- I get these kind of offers on Linkedin all the time from recruiters. If you want to dm me, we can connect and I can send them your way.
+- Following.
+- hey actually i am planning on creating a startup and need someone who is an expert in data analyst work (for guidance and also as a Co-founder)
+- This is very tough due to the level of access to data you need to have. You need very deep connections within an organization to achieve this. Good luck!
+- The best way I’ve found to complement a salary is by teaching or helping to solve small assignments of a project.
+
+- Codementor
+- Mentorcruise
+
+PS: competition is hard!
+- Hmm
+- follow
+- This is the truth. "Data consulting" will always be more of an infrastructure SaS business where you figure out how to collect their data and set up reports for them. Rarely will you drop into a ML problem at a company
+- On top of this they want to hire it for cheap so they’ll often try and pay little and maximize the hours they get out of you
+- happy cake day!
+- dm
+- Yup. As someone that does LLM/ Ml contracting jobs( I only got them because I knew the right people, im good at what I do but I got my foot in the door by who not what I know), it’s 95-99 percent data engineering. Figuring out the clients data schema, figuring out how to connect their data to what they want to do, then setting up all the permissions and functions/apis is the majority of it, and I only get to do a small amount of true DS work( setting up and building models, prompt engineering, etc). If you want contracts- learn data engineering
+- Thank you, although I'm not sure what "cake day" means either.
+- Also, people are focusing to much on the modeling, I think this part of the market is saturated. Quite common to get data scientist that cannot handle the data acquisition and cleaning (80% of the data work is there). Data engineer that work on big companies will tell you that data scientist has no job in that, I strongly disagree with that. Not every analysis service uses a big data. Even in these cases a data scientist knowing the data pipeline is really useful on the team.

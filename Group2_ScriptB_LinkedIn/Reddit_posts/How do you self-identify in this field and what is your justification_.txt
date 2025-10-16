@@ -1,0 +1,88 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hrpb9q/how_do_you_selfidentify_in_this_field_and_what_is/
+Title: How do you self-identify in this field and what is your justification?
+
+Content:
+I've been in this field for many years, holding various titles, and connecting with peers who are unfathomably dissimilar in their roles, education, and skills, despite sharing titles.
+
+I am curious to learn how folks view themselves and the various titles in this field. Assuming Data Science is the umbrella that encompasses computer science, machine learning, statistics, maths, etc., and there is a spectrum of roles within this field, how would you self-identify? The rules are:
+
+1. It doesn't have to be your actual title from your employer or degree major.
+2. It doesn't have to be a formally known identity. For example, you can identify as a "number cruncher", a "tableau manager", a "deep learning developer", make up your own, or just use a formal identity, such as "Data Scientist" or "Machine Learning Engineer".
+3. You have to also add your justification. i.e. why do you believe such identity justly represents you/your role?
+4. It should be self-explainable, technical, maturely and reasonably justified. So avoid the likes of "Ninja", "Unicorn", "Guru", unless you can maturely make a compelling argument.
+5. You must be open to criticism and being challenged. Other redditors are not compelled to agree with your self-identity.
+
+I'll also add my own response in the comments because I do not want it to be the center focus of the discussion. 
+
+Comments:
+- Remember Chandler Bing? Yeah, whatever he did for the first few seasons. Plus a few odds and ends.
+
+Anyway, the closest description is “applied mathematician and statistician.” Most of what I do is apply math and statistics to places that haven’t tried it yet.
+- Unemployed
+- I say "Data Scientist" because it's the most understood term generally and is in my actual job title. If we're talking about the more fine-grained distinctions within the field, then what I do now and have done for the majority of the last decade is develop and deploy machine learning models in industry. Maybe Machine Learning Engineer is the most accurate.
+- I often describe my job as "the logic side of product design."
+- [deleted]
+- I'm a phd scholar. That's it. Let me enjoy the simplicity for now. My academic background is going to be very confusing for my future recruiters. I started out with bachelor's in life sciences then did a masters in bioinformatics and got picked up by a professor from IT dept to work on ML for Healthcare. Turns out it's very common for bioinformaticians to get hitched into DS roles.
+
+I don't mind data science roles but I hope I don't lose touch with bioinformatics.
+- The term “data scientist” originates from the early 2000s. People cling to it because of tradition and because “scientist” has more cachet than “engineer.” In the early days, people had to make original discoveries just to get things done, so there was some justification for “scientist.” Nowadays, with all the different software packages out there (not to mention Gen AI), what most people do is far better described by “engineer.”
+- I am definitely a "Professional Data Guy Nerd that Does the Coding". It does not matter the title that I have had so far. To the average person in corporate, this is how I am seen.
+- Data science student
+
+I guess that's self explanatory
+- I have recently started identifying as a data scientist (full stack) but I've had senior analyst roles for most of my career.
+
+I came from a business direction (economics and finance degree) rather than a computer science or stats direction.
+
+The crux of my role is to find insights in data, as well as building dashboards. This is definitely Business Intelligence and Analyst territory. However, as a senior analyst I did lots of data engineering and some machine learning, as well as the usual BI tasks. 
+
+Given the dabbling in ML and data engineering I feel comfortable calling myself a data scientist but I am well aware that some would disagree with that.
+- Biomedical Engineer
+
+...I don't know why my title is Data Scientist. Our DE handles all the dashboards and whatnot while I work on control algorithms
+- Machine learning engineer/data engineer/occasionally AI engineer (mostly to people who don't understand the role nuances).  
+
+Even before I consulted full-time, I had a lot of functional roles, I do a little computer vision, a decent amount of applied work with generative AI, and a lot of ML platform work, so it depends on who I'm talking to and what my goal is with them (am I explaining/promoting my business? Am I shooting the shit with someone also in the field? Am I talking to my grandmother?).
+
+I used to be an 'actual' scientist (neuroscience), and even with the applied R&D work I do, it's all still engineering. That being said, most startups I've worked in had R&D teams of PhDs doing original research, publishing papers, and getting patents, and that work I'd consider science in the way that CS is a science (like kind of but not really).
+- ML systems engineering researcher and developer 
+
+My job has two key components 
+1. I do the technical and project management piece of existing long term projects (only one concurrently) which use ML to solve some sort of real world problem. I own the software side while a counterpart owns the hardware piece. These are early to mid stage research projects (TRL 1/2 - TRL 6/7). 
+2. I write proposals for future R&D projects typically funded by fed gov where we think AI/ML expertise our team has can solve their problem most efficiently. 
+
+My title is data scientist, but I develop and manage the entire software piece from embedded c code up through the user interface in Qt + python along with all of the ML model training/testing and data collection/field demonstration. 
+
+I’m typically not developing new model architectures (although I have as a collateral part of some projects), but I’m mostly training existing model architectures on new data.
+
+Justification:
+ML - this is my expertise and typically what I use to enable the technology we build 
+Systems - the technology we build is often comprised of multiple components including sensors, edge computers, cloud servers, etc. so I have to design and understand how the system works 
+Engineering - I’m applying research to a real world problem as opposed to being focused on developing new model architectures. Our solutions are also in the engineering domain 
+Researcher and developer - I research and develop the software piece of some of the AI/ML projects at the company.
+- I personally self-Identify as an "**Applied Machine Learning Scientist**" (AMLS). My justification is as follows:
+
+First, I believe I am truly a "scientist" in the literal meaning of the word, because my work involves making the kinds of novel discoveries that add to the body knowledge of the field, through a process of research and experimentation or experimental evaluation. As in it is very possible, either today or one day in the future, that you'd find my discovered methods or techniques a science book, scientific publication, or patent with my name in the references. They aren't merely another application of pre-discovered/vanilla methods to new/different data sets.
+
+Second, I work in the industry, with the focus of my research is not to just make a discovery for the sake of making a discovery, but to actually solve critical problems for my employer. Those problem are almost always involving machine learning, hence my role is in the "Applied Machine Learning"
+- [deleted]
+- Data Consultant.
+
+Internal people consult me regarding data and it can cover any aspect of data including extraction, transformation, aggregation, analysis, simple models, complex models, graphing, presenting, calculations, and insights. 
+
+Sometimes it’s a complex long timeline data science project developing insights on a new process or application. Sometimes it’s a real quick “did I do this right?” Sometimes it’s transforming an excel spreadsheet that’s a hot mess.
+- After multiple stints in the seat, I now reasonably accurately identify as a CTO, but would probably be "Head of Data" or "VP of Data" at a later-stage company.
+
+>So avoid the likes of "Ninja", "Unicorn", "Guru", unless you can maturely make a compelling argument.
+
+You're pointing out something that I find awkward about the industry, unless you're a specialist (Data Science, Analytics, Data Engineering), there isn't a great term for people who sit in 2-3 of those buckets who aren't in an executive role.  Data... person?  Nothing really works if you have broad Data experience but aren't senior enough to be "VP of..." or "Director of..." in the same way SWEs can call themselves "full-stack" in a similar situation.
+- "Data-wielding problem solver" is probably the most accurate. I solve problems. How I do it varies. Sometimes I use applied mathematics, or statistics or ML models; sometimes I code in Python, R, or even VBA; sometimes I just research an answer and present data from an outside source; sometimes I propose different business approaches; sometimes I create, execute and analyze surveys. 
+
+I call myself a "data scientist" because I feel that term originally referred to a jack- or jill-of-all- things-data, even though today it typically just means MLE. I see myself in that original definition space.
+- I am currently in a Data Scientist role, but I tend to view myself more like an "Analytics Solutions Engineer". My work includes a wide variety of tasks - training and serving predictive models, desigining and managing MLOps infrastructure, light-duty production data engineering, building GenAI tools, analytics dashboards, and on a really good day some modeling and causal inference. There is a huge variety of problems to solve in our domain, and as long as I'm able to translate a business question into an appropriate, useful solution I feel like I've done my job.
+- "Data strategy."
+
+I'm not that amazing at math, or coding, or stats, but I'm all about the communication and business strategy, and I can code and math just enough to put numbers behind my recommendations. 
+
+I live in SQL and Google Sheets and they still call me a data scientist. Not complaining!

@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/ioannis-papoutsis_ai-disastermanagement-explainableai-activity-7059561725578158081-vevV
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ioannis Papoutsis的动态
+Ioannis Papoutsis
+
+Assistant Professor at National Technical University of Athens & Adjunct Researcher at National Observatory of Athens. 🚀 Head of OrionLab AI4EO research group (orion-ai-lab.github.io/) of the NTUA Remote Sensing Lab.
+
+2 年  已编辑
+
+Join us next week (10/5, 14:00-17:30 CEST) for a Workshop on AI4EO for Natural Hazards Management, co-organized by @ESA Φ-lab, the National Observatory of Athens, Harokopio University of Athens and Max Planck Institute of Biogeochemistry. The workshop follows the conclusion of our SeasFire project (https://seasfire.hua.gr/), funded by European Space Agency - ESA, on earth system deep learning for seasonal fire forecasting.
+
+The workshop will address different challenges in the topic of #ai for #disastermanagement. We will cover traditional DL approaches and dig into novel methods, such as #explainableai and #causality to establish trustworthy models and services, #graphneuralnetworks for capturing long range spatio-temporal dependencies and #probabilistic machine learning for uncertainty estimation.
+
+We will present practical applications for all the three stages of the emergency management cycle: forecasting and preparedness, early warning, monitoring and impact assessment, and demonstrate the use of a variety of EO and non-EO data, including multi-spectral, synthetic aperture radar (SAR) data, interferometric SAR data along with meteorological, landscape and other geospatial data.
+
+- Agenda of the workshop: https://lnkd.in/ditZVebe 
+- Register to receive an MS Teams link to join: https://lnkd.in/dEnrdtbZ 
+
+#ai4good #deeplearning #copernicus #disasterriskreduction #emergencymanagement #earthobservation 
+
+Bertrand Le Saux, Pierre-Philippe Mathieu 🚀, Gustau Camps-Valls, Raul Ramos-Pollan, Dimitrios Michail, Ioannis Prapas, @Nuno Carvalhais, Pi School, Spyros Kondylatos, Michele Ronco, Sveinung Loekken
+
+61
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+2,165 位关注者
+
+50 则动态
+查看档案  关注
+浏览内容分

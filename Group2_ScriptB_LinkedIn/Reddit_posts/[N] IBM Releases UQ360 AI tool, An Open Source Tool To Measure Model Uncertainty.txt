@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/o26ks9/n_ibm_releases_uq360_ai_tool_an_open_source_tool/
+Title: [N] IBM Releases UQ360 AI tool, An Open Source Tool To Measure Model Uncertainty
+
+Content:
+Deep learning-based Artificial Intelligence (AI) systems have a history of generating overconfident predictions, even when they are inaccurate, which can have significant repercussions. If a self-driving car firmly misidentifies the side of a tractor as a brightly illuminated sky and refuses to brake or alert the human driver, would you prefer to travel in that? I doubt it. Self-driving cars aren’t the only issue. There is a slew of additional applications where AI’s ability to convey doubt is essential. For example, if a chatbot is uncertain when a pharmacy shuts and gives a false answer, a patient may not receive the medicines they require.
+
+Here’s where IBM’s Uncertainty Quantification 360 (UQ360) comes in to rescue the day. UQ360 allows the AI to communicate its uncertainty, making it more intellectually humble and increasing the safety of its deployment. Its goal is to provide data scientists and developers with cutting-edge algorithms for quantifying, analyzing, enhancing, and exposing the uncertainty of machine learning models.
+
+Article: [https://www.marktechpost.com/2021/06/17/ibm-releases-uq360-ai-tool-an-open-source-tool-to-measure-model-uncertainty/?\_ga=2.217770833.636390090.1623335762-488125022.1618729090](https://www.marktechpost.com/2021/06/17/ibm-releases-uq360-ai-tool-an-open-source-tool-to-measure-model-uncertainty/?_ga=2.217770833.636390090.1623335762-488125022.1618729090) 
+
+IBM Blog: [https://www.research.ibm.com/blog/uncertainty-quantification-360](https://www.research.ibm.com/blog/uncertainty-quantification-360)
+
+Comments:
+- Great work. How does this compare with the standardized Confident Learning uncertainty quantification? (Open sourced and used by thousands of folks at https://github.com/cgnorthcutt/cleanlab)

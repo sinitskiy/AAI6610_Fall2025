@@ -1,0 +1,101 @@
+URL: https://www.linkedin.com/posts/max-welling-4a783910_barnn-a-bayesian-autoregressive-and-recurrent-activity-7292555449927614464-NpNh
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Max Welling的动态
+Max Welling
+
+CTO & Co-founder @ CuspAI / Prof. @ U. Amsterdam
+
+8 个月
+
+This was a very nice collaboration with the talented Dario Coscia. BARNN adds a layer of Bayesian uncertainty quantification around sequence models like RNNs. It achieves very good SOTA performance on both sequence prediction and uncertainty quantification for a number of tasks, among which PDE solving and molecule generation.
+
+Dario Coscia
+
+PhD candidate at SISSA in collaboration with University of Amsterdam on Deep Learning
+
+8 个月  已编辑
+
+Presenting BARNN: https://lnkd.in/d2ZsSEe7. It’s a fully Bayesian, scalable, and calibrated approach to convert any Autoregressive or Recurrent Neural Network into its Bayesian counterpart with minimal training and architecture changes! 
+
+BARNN combines the advantages given by Bayesian Inference with the great performances of autoregressive and recurrent nets! We applied it for Uncertainty Quantification in Neural PDE Solvers, and molecule generation in Chemical Language Models. Working done with Max Welling, Nicola Demo and Gianluigi Rozza.
+
+Code: https://lnkd.in/dwY6-tvA
+
+BARNN: A Bayesian Autoregressive and Recurrent Neural Network
+arxiv.org
+156
+6 条评论
+赞
+评论
+分享
+Alex Perchikov
+
+8 个月
+
+BARNN sounds like a really useful tool!
+
+赞
+回复
+Dario Coscia
+
+PhD candidate at SISSA in collaboration with University of Amsterdam on Deep Learning
+
+8 个月
+
+Thanks Max, it was very nice to work with you!
+
+赞
+回复
+1 次回应
+Calina Ciuhu-Pijlman
+
+7 个月
+
+Curti Mitrofan
+
+赞
+回复
+Giuseppe Nicosia
+
+Professor of Artificial Intelligence & SynBio
+
+8 个月
+
+Dario Coscia one of best ACDL students/attendants! Kudos to Dario! Ad maiora!
+
+赞
+回复
+1 次回应
+Daniel Kapitan
+
+Data scientist, digital architect, lecturer, outdoor enthusiast, buddhist (not necessarily in that order)
+
+8 个月
+
+Alexander Teeuwen perhaps for your next iteration?
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+23,497 位关注者
+
+260 则动态
+查看档案  关注
+探索相关领域
+Latest Advances in Rna Modeling Techniques
+Latest AI Breakthroughs in 

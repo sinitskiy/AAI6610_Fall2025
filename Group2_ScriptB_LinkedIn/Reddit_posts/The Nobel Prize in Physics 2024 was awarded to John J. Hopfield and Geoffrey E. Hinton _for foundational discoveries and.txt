@@ -1,0 +1,25 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fz6o4i/the_nobel_prize_in_physics_2024_was_awarded_to/
+Title: The Nobel Prize in Physics 2024 was awarded to John J. Hopfield and Geoffrey E. Hinton "for foundational discoveries and inventions that enable machine learning with artificial neural networks"
+
+Content:
+
+
+Comments:
+- As a physicist (but now working in the ML field)...I am a bit surprised. To say the least.
+- Somewhat unexpected.
+- bit of a slap in the face to actual physicists
+- They phoned Hopfield to tell him from the actual ceremony, I think. He, too, expressed surprise.
+- Yes, surprising. Does smell rather like a political statement in support of Hinton’s views. But in fairness, ML/AI is changing the world yet does not fit in existing Nobel categories. Interesting to note that the Chemistry prize is also AI-related. It suggests we’ll be seeing more awards along these lines in the years to come.
+- suprising
+- Well that's just silly. Though you do have to appreciate the poetic but about Hinton being scared of modern deep learning winding up like Nobel's explosives
+- Same background.. this seems like a political grab... physicists trying to remind the public how certain physical models served as inspiration for early stage AI models. With the current hype and deluge of funding around AI, it could draw more funding to physics research, as this research has always been funded on the promise of leading to significant but unforeseeable technological advances in the far future (transistors, satellites / GPS, fiber optics / laser, touch screens are all examples, shoehorning deep learning into this list could only benefit).
+
+Surprising for sure, but not irrational from my perspective.
+- Same and my feelings are mixed. I do think these things are worth of praise, but why the physics Nobel? The connection is tenuous at best. Hopfield has some physics cred, but nothing worth a Nobel compared to others that have been passed over. Hinton never worked in physics, so like… not sure the justification there. It just seems like a political move to grab attention, which sounds like something the Nobel committee shouldn’t be doing…
+- I am curious as to why.  I am trained in math/econ so I am able to comment on the Fields Medal and Nobel Prize in economics but not physics.
+- Same.  I am definitely torn.
+- I'm surprised about Hopfield but not Hinton
+- As a statistician, I'm also surprised. To say the least ;-)   
+I mean physics made enormous contributions to many quantitative fields, but still... If I were a physicist I'd probably feel a bit robbed.
+- It won’t be a bad thing to see more funding go to physics.

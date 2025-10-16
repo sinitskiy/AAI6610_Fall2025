@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tinnnl/biology_to_bioinformatics/
+Title: Biology to Bioinformatics
+
+Content:
+I graduated with bachelors in biology and wanted to know more about this field. I have read that it requires programming knowledge but my question is what’s the biology side of this field. Many posts that I read are related to the computer science/machine learning and tech. How good would it be with a biology degree. I am familiar with R because I took biostatistics course in my senior year but other than that I have minimal experience with programming. Is the field only about softwares and and all the CS stuff? What’s the role of biology in this field? If I learn coding and complete masters, how lucrative would it be ?
+
+Comments:
+- In my experience bioinformatics ranges from almost completely CS to more computational biology. But really, biology is just the domain of knowledge used, programming and stats are the tools used to add to that body of knowledge. If you like biology but don't enjoy bench work, its a good field to be in. You will need to get out of your comfort zone, but bioinformatics has become pretty essential to most fields of biology.
+- My Bachelor's was in Biochem and Cell Bio and I went into a Bioinformatics Master's right after. I didn't have that much programming experience, but my programme was kinda tailored towards that expectation so it was fine and they had introductory (starting from zero) programming courses in the first year. It's definitely do-able without having much computational knowledge beforehand depending on the programme and even barring that, programming isn't too hard to self-learn with all the documentation online.
+
+The biology aspect mostly comes from the contextual hinge of bioinformatics. Bioinformatics professors will always tell you that pure CS people will lack the instinctual edge of knowing how to develop a certain algorithm or when creating a database in a way that'll be intuitive for biologists.
+- There was a really good comment on a thread a while back that I'll try to link here later, but basically someone commented that as a bioinformatician, you're part computer scientist, part statistician, and part biologist.  This field is incredibly broad and diverse, but in general, it's safe to say that you'll need to be knowledgable in each of these fields.  You'll also be able to offer a pretty rare and lucrative skill set if you can wear each of those hats I mentioned above.  
+
+Of course, everyone brings different strengths to the table-- in my current job, one of my colleagues came from a computer science background, another from biochemistry, and my graduate work was in population genetics.  In my current position, we're not developing new algorithms to process data or model systems-- we're using existing software as a tool to get at interesting biological questions.  So from that perspective, biology is still pretty central to our role as bioinformaticians.
+- Bioinformaticians come in various breeds. Some have a strong bio foundation but minimal programming or stats background. These types of people tend to use existing software/tools to answer a research question. There are others with a strong CS or stats background, who develop the tools to conduct the research.
+
+You can see theres a symbiotic relationship. Both types of scientists are highly valued in the market.
+- Im intrested in the data intepratation and computetional biology part of bioinformatics but Im scared that if I pursuit a career, I might be stuck as a glorified software engineer.
+
+&#x200B;
+
+The wet-lab part of molecular biology does not really intrest me. What does intrest me is  the interpretation and analyis part and I don't mind having to clense and massage the data in order to be able to use it. I don't know though. Are biology centred bioinformaticians really in demand? 
+
+&#x200B;
+
+Thank you
+- Could I DM you about this? I'm in a similar position to OP but I feel like most MS programs I've seen expect programming knowledge going in.
+- Did you go to grad school in the US? What school did you go to for ur Masters?
+- have you found an answer yet?
+- Sure, go ahead.
+- Nah, Sweden. Lund University
+- From this post, not really, but from my understanding, you can do a lot of biology based research if you do a doc, or a post doc, even if you’re primarily based on bioinformatics. As long as you keep on studying and climbing further and further, you’re guaranteed to strive to the direction you want to go to.

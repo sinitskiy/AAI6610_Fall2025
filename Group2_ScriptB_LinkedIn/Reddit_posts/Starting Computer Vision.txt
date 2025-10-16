@@ -1,0 +1,15 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1hxeqlk/starting_computer_vision/
+Title: Starting Computer Vision
+
+Content:
+I am a current grad student in machine learning. I am developing an interest in how computer vision works. I am a complete layman regarding CV, but it fascinates me. Can you recommend where to start on CV basics and also if there are some research papers I should go through
+
+Comments:
+- Do you know what sub-area of CV you're interested in? that could be 3D reconstruction, detection/classification, image restoration...
+- This may help: 
+
+https://github.com/subharya83/cvml-exercise
+- This series by Shree Nayar gives a nice introduction to many low-level computer vision problems, some related to robotics: https://fpcv.cs.columbia.edu/
+- I am interested in the robotics application of it (for eg motion planning) and also as you said detection/classification
+- Thanks! I did a general overview of the exercises, they look great

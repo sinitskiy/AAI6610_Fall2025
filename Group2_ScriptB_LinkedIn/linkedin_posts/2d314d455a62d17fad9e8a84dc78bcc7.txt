@@ -1,0 +1,28 @@
+URL: https://www.linkedin.com/posts/smasis_machinelearning-python-statistics-activity-7163171162707992576-wMir
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Serg Masís的动态
+Serg Masís
+
+Data Science | AI | Interpretable Machine Learning
+
+1 年
+
+💪 Robust Machine learning thrives on not only formulating precise predictions but also articulating the certainty of these predictions effectively. However, most ML models give us point estimates – a single number prediction. However, these point estimates don't tell the whole story. They lack the critical component of how confident we are in these predictions. That's where the need for 𝐔𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 𝐐𝐮𝐚𝐧𝐭𝐢𝐟𝐢𝐜𝐚𝐭𝐢𝐨𝐧 (UQ) comes into play, ensuring that machine learning applications are trustworthy. 
+
+👏 Enter 𝐂𝐨𝐧𝐟𝐨𝐫𝐦𝐚𝐥 𝐏𝐫𝐞𝐝𝐢𝐜𝐭𝐢𝐨𝐧 (CP) – a groundbreaking approach that fills this gap by providing a robust framework for quantifying uncertainty. Unlike traditional methods, CP doesn't just give you a guess; it gives you a range of possible outcomes with a guarantee on how likely the true outcome is to fall within that range. This is crucial because it allows for better decision-making by clearly outlining the risks associated with different actions based on the model's predictions.
+
+👌 Why is CP the best choice for uncertainty quantification? CP is model-agnostic, meaning it can work with any pre-trained model, including complex neural networks, to produce prediction sets that contain the ground truth with a user-specified probability. This makes CP incredibly versatile and applicable across various fields, such as computer vision, natural language processing, and more. It's easy to understand and use, and it provides explicit, non-asymptotic guarantees without needing to assume anything about the underlying data distribution.
+
+📘 Now, imagine having a comprehensive guide that not only introduces you to the world of Conformal Prediction but also expertly walks you through its application in real-world scenarios. "Practical Guide to Applied Conformal Prediction in Python" by Valery Manokhin is that guide. This book is a treasure trove of knowledge, cover

@@ -1,0 +1,31 @@
+URL: https://www.linkedin.com/posts/university-of-michigan-robotics_lucca-a-new-method-to-quantify-robot-activity-7263194411163877376-pp0l
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+LUCCa: a new method to quantify robot dynamics uncertainty
+University of Michigan Robotics Department
+
+17,709 位关注者
+
+10 个月
+
+LUCCa is a new approach that tackles an important robotics challenge: accurately quantifying the uncertainty in a robot's dynamics with provable guarantees. 
+
+The paper, “Quantifying Aleatoric and Epistemic Dynamics Uncertainty via Local Conformal Calibration,” from Luís Marques and Dmitry Berenson in the ARM Lab, describes LUCCa. It considers both aleatoric and epistemic uncertainty, providing a comprehensive understanding of the robot's behavior in environments with perturbations and changes in actual system dynamics.
+
+Aleatoric uncertainty: This refers to the inherent randomness in the system, which is already addressed by many existing methods.
+
+Epistemic uncertainty: This refers to uncertainty arising from a lack of information or data.
+
+Abstract:
+Whether learned, simulated, or analytical, approximations of a robot’s dynamics can be inaccurate when encountering novel environments. Many approaches have been proposed to quantify the aleatoric uncertainty of such methods, i.e. uncertainty resulting from stochasticity, however these estimates alone are not enough to properly estimate the uncertainty of a model in a novel environment, where the actual dynamics can change. Such changes can induce epistemic uncertainty, i.e. uncertainty due to a lack of information/data. Accounting for both epistemic and aleatoric dynamics uncertainty in a theoretically-grounded way remains an open problem. We introduce Local Uncertainty Conformal Calibration (LUCCa), a conformal prediction-based approach that calibrates the aleatoric uncertainty estimates provided by dynamics models to generate probabilistically-valid prediction regions of the system’s state. We account for both epistemic and aleatoric uncertainty non-asymptotically, without strong assumptions about the form of the true dynamics or how it changes. The c

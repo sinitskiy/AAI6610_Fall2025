@@ -1,0 +1,51 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1gu4e03/handson_workshop_realtime_video_analytics_with/
+Title: [Hands-on Workshop] Real-time Video Analytics with Nvidia DeepStream and Python
+
+Content:
+https://preview.redd.it/h9pzqlu5sn1e1.jpg?width=1280&format=pjpg&auto=webp&s=be45d9675effedfd77f53893049b50eee5c37026
+
+Excited to announce our upcoming live, hands-on workshop:"**Real-time Video Analytics with Nvidia DeepStream and Python**"
+
+CCTV setups are everywhere, providing live video feeds 24/7. However, most systems only capture video—they don’t truly understand what’s happening in it. Building a computer vision system that interprets video content can enable real-time alerts and actionable insights.
+
+Nvidia’s DeepStream, built on top of GStreamer, is a flagship software which can process multiple camera streams in real time and run deep learning models on each stream in parallel. Optimized for Nvidia GPUs using TensorRT, it’s a powerful tool for developing video analytics applications.
+
+In this hands-on online workshop, you will learn:
+
+1. The fundamentals of DeepStream
+2. How to build a working DeepStream pipeline
+3. How to run multiple deep learning models on each stream (object detection, image classification, object tracking)
+4. How to handle file input/output and process live RTSP/RTMP streams
+5. How to develop a real-world application with DeepStream (Real-time Entry/Exit Counter)
+
+🗓️ Date and Time: Nov 30, 2024 | 10:00 AM - 1:00 PM IST
+
+📜 E-certificate provided to participants
+
+This is a **live, hands-on workshop** where you can follow along, apply what you learn immediately, and build practical skills. There will also be a **live Q&A session**, so participants can ask questions and clarify doubts right then and there!
+
+**Who Should Join?**
+
+This workshop is ideal for Python programmers with basic computer vision experience. Whether you're new to video analytics or looking to enhance your skills, all levels are welcome!
+
+**Why Attend?**
+
+Gain practical experience in building real-time video analytics applications and learn directly from an expert with a decade of industry experience.
+
+**About the Instructor**
+
+**Arun Ponnusamy** holds a Bachelor’s degree in Electronics and Communication Engineering from PSG College of Technology, Coimbatore. With a decade of experience as a Computer Vision Engineer in various AI startups, he has specialized in areas such as image classification, object detection, object tracking, human activity detection, and face recognition. As the founder of Vision Geek, an AI education startup, and the creator of the open-source Python library “cvlib,” Arun is committed to making computer vision and machine learning accessible to all. He has led workshops at institutions like VIT and IIT and spoken at various community events, always aiming to simplify complex concepts.
+
+LinkedIn: [linkedin.com/in/arun-ponnusamy](https://linkedin.com/in/arun-ponnusamy)
+
+Register now and take your first step toward mastering real-time video analytics.
+
+Registration Link: [https://topmate.io/visiongeek/1301823](https://topmate.io/visiongeek/1301823) 
+
+Comments:
+- Is there a recording of the event?
+- Unfortunately, we did not record this workshop. Sorry about that. We are planning to record the workshops from this week (we are conducting hands-on workshops every week).
+
+But I can share the materials used in the session and add you to an exclusive discord server where you can post your questions if you face any issues.
+- Would that be useful ?

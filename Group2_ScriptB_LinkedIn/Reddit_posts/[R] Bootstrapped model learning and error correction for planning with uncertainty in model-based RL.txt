@@ -1,0 +1,15 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ga48yy/r_bootstrapped_model_learning_and_error/
+Title: [R] Bootstrapped model learning and error correction for planning with uncertainty in model-based RL
+
+Content:
+
+
+Comments:
+- Title:Bootstrapped model learning and error correction for planning with uncertainty in model-based RL  
+
+Authors:[Alvaro Ovalle](https://arxiv.org/search/cs?searchtype=author&query=Ovalle%2C+A), [Simon M. Lucas](https://arxiv.org/search/cs?searchtype=author&query=Lucas%2C+S+M)  
+
+> Abstract: Having access to a forward model enables the use of planning algorithms such as Monte Carlo Tree Search and Rolling Horizon Evolution. Where a model is unavailable, a natural aim is to learn a model that reflects accurately the dynamics of the environment. In many situations it might not be possible and minimal glitches in the model may lead to poor performance and failure. This paper explores the problem of model misspecification through uncertainty-aware reinforcement learning agents. We propose a bootstrapped multi-headed neural network that learns the distribution of future states and rewards. We experiment with a number of schemes to extract the most likely predictions. Moreover, we also introduce a global error correction filter that applies high-level constraints guided by the context provided through the predictive distribution. We illustrate our approach on Minipacman. The evaluation demonstrates that when dealing with imperfect models, our methods exhibit increased performance and stability, both in terms of model accuracy and in its use within a planning algorithm.  
+
+[PDF Link](https://arxiv.org/pdf/2004.07155) | [Landing Page](https://arxiv.org/abs/2004.07155) | [Read as web page on arXiv Vanity](https://www.arxiv-vanity.com/papers/2004.07155/)

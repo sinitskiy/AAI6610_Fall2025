@@ -1,0 +1,32 @@
+{
+  "total_input": 1519,
+  "total_filtered": 532,
+  "filter_rate": 35.02304147465438,
+  "threshold_used": 30.0,
+  "score_stats": {
+    "all": {
+      "mean": 27.305435180664062,
+      "median": 23.42322540283203,
+      "min": 0.0,
+      "max": 74.59207153320312
+    },
+    "filtered": {
+      "mean": 45.81063461303711,
+      "median": 45.636863708496094,
+      "min": 30.13375473022461,
+      "max": 74.59207153320312
+    }
+  },
+  "by_source": {
+    "linkedin_posts": {
+      "total": 451,
+      "kept": 344,
+      "rate": 76.27494456762749
+    },
+    "Reddit_posts": {
+      "total": 1068,
+      "kept": 188,
+      "rate": 17.60299625468165
+    }
+  }
+}

@@ -1,0 +1,28 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/u9xjd9/what_did_you_have_excellentstrong_programming/
+Title: What did " You have excellent/strong programming skills in python" exactly indicate when talking about the skill requirement of being a bioinformatics Ph.D.?
+
+Content:
+Hello, bioinformaticians! I am a postgraduate major in microbiology and planning to become a bioinformatician and then apply for a European Ph.D. program in bioinformatics. When I am browsing the PhD position DB, I found there was always a skill requirement indicating that " You have excellent/strong programming skills in python".
+
+Well, I think my Python programming skill is not bad as a non-CS major student. I have finished a couple of small projects like using the requests package to collect the subcellular location info of protein from Uniprot and then using Matplotlib and Sklearn to do some machine learning or a GUI program to calculate the concentration of protein through processing the data from microplate reader(cuz Excel is some kind of stupid).
+
+I know it is far from strong or excellent, but I would like to know what is the standard of "strong" or "excellent" stand by? Like writing some software like FastaQC by myself or something else?
+
+Thank u guys in advance!
+
+Comments:
+- I'd say it depends on the context and what you're expecting to work on. If the project description is about independently developing novel tools, then yes you probably need to have a lot of experience with python. But I'm guessing that's not the kind of position you're applying for, in which case "excellent" could just be understanding python and knowing how to use it.
+
+Compare it to "excellent communication skills in English". For some jobs, this means speaking and writing at a native level English with few to no mistakes. In biological research, it typically means being able to communicate your research clearly. Being great at writing is certainly an advantage, but it's not the most important part of the job.
+
+Also, dont focus too much on the specific skills requested. I didn't have all the skills requested for my current postdoc position, yet my PI is extremely pleased with the work I do. If the project/topic sounds like something you would enjoy and have the basic skills to get started with (under supervision), it's probably worth applying.
+- That's plenty experience. Go for it!
+- You definitely meet that requirement.
+- It's python, not kernel development with C. I'd say with your experience you have what is needed for any bioinformatics project.
+
+Of course there are more complexity/speed/scalability needs for some projects, but then it's probably the wrong language.
+- Do you know enough to accomplish your research?  Sounds like it.  That's the bar. You're good.  Don't overthink it.
+- [This stackoverflow question/answers helped me](https://stackoverflow.com/questions/2573135/python-progression-path-from-apprentice-to-guru)
+- Thank for ur reply! So trying to build a complete pipeline also helps a lot in further working.\` I m also honing my skill on Rosalind and Leetcode recently, Dose training in algorithm and data structure is necessary? (Though I will consist in practicing that even   
+ it isn't necessary)

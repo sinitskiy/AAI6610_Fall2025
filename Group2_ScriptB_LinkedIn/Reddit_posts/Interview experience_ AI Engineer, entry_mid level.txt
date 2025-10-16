@@ -1,0 +1,54 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cg7b3g/interview_experience_ai_engineer_entrymid_level/
+Title: Interview experience: AI Engineer, entry/mid level
+
+Content:
+[link to Resource repo](https://github.com/xandie985/data-scientist-roadmap2024/tree/main?tab=readme-ov-file#interviews).
+
+**Round 1: Introduction \[30min\]**
+
+The initial round was focused on discussing my resume and aligning it with the job description.
+
+**Round 2: Technical Round \[60min\]**
+
+This round delved into various technical topics:
+
+* **Statistics**: Covered random variables, convergence of series, hypothesis testing, and types of errors in hypothesis testing.
+* **Machine Learning**: Explored machine learning basics, statistical implementation of linear regression, multivariate linear regression, decision trees, random forests, and their differences.
+* **Neural Networks**: Discussed fully convolutional neural networks, dense neural networks, recurrent neural networks, their benefits, drawbacks, and alternatives like LSTM and Transformer models.
+* **Portfolio Management**: Covered concepts such as correlated and independent assets, portfolio management strategies for different scenarios, asset allocation, hedging, and portfolio optimization.
+
+*Round 3: Live coding round.(pending)*  
+*Round 4: Managerial round. (pending)*
+
+Comments:
+- Whats the company/location?
+- Can you expand on, "convergence of series"?
+
+I cant tell if this is series as infinite sums or convergence of random variables or delving into measure theory.
+- what's the most challenging question they asked? please follow up after the live coding round
+- [removed]
+- Edit: forgot to add hyperlink to the interview questions. Have fixed it now. [link](https://github.com/xandie985/data-scientist-roadmap2024/blob/main/Interviews/int1.md)
+- Was this for an AI/ML engineer interview or a data scientist interview? It sounds like a data science interview imo.
+- Any updates for rounds 3/4?
+- Seems all over the place, given that it covers portfolio mgmt, I'm guessing that it is some sort of asset mgmt company which makes me wonder someone who needs deep expertise in 1,2,3 would also need 4. Probably not a good shop, hard pass sounds like they don't know what they're doing. Honestly AI engineer is already a indicator its a bullshit job. I guarantee you cannot find someone who actually has deep expertise in all four topics for the 30k euro you stated, probably 300k euro would be lowballing. China or the US would literally kidnap you with a buckload of cash lmao.
+- If i may ask what yours years of exp are and which country are you based in?
+- Convergence of series? Super random if it is what I think it is
+- Thank you for sharing. What is the company size / market, and what is your education level?
+- Can i just piggyback on this post to ask whether getting a MS in data science is worth it at this point?
+- How long did it take you to prepare?
+- What kind of product or service in ds is this company working on
+- Great repo indeed,
+
+The amount of knowledge that you had to know is way more relevant to managerial roles, where breadth over depth is required than technical hand on jobs.
+
+The number of people whom actually know everything that is written in the repo is miniscule.
+
+Epistemic confidence: High. 
+
+I have been in the industry close to two decades in roles ranging from Data analyst, Data engineer, Senior DS, Head of Data and CTO.
+- It's in EU. I dont feel right revealing the name of the company rn.
+- You have to wonder why someone who give a fuck about this also gives a fuck about portfolio optimization and neural networks. Next thing you know they'll quiz you on abstract algebra.
+- I wasn't prepared with statistics but somehow managed it. It can be vary from person to person. For me it was 6.5/10 in terms of difficulty.
+- Thanks to your message, I realised that I forgot to add hyperlink to the interview questions. Have fixed it now. [link](https://github.com/xandie985/data-scientist-roadmap2024/blob/main/Interviews/int1.md)
+- Its around 30k euros.

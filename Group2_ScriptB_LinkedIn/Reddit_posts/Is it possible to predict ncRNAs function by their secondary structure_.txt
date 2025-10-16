@@ -1,0 +1,30 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/t23uk2/is_it_possible_to_predict_ncrnas_function_by/
+Title: Is it possible to predict ncRNAs function by their secondary structure?
+
+Content:
+Hi! I want to pursue an MSc in Bioinformatics, but I'm relatively new in the field. I thought about a thesis theme, but I don't know if it's viable, so I'm looking for some opinions. I considered doing my thesis on "ncRNA function prediction based on secondary structure analysis", and I thought about doing that by applying machine learning algorithms (yet to be decided)... The thing is: I know a lot of methods to predict secondary structures, but I don't know if it's possible to predict an ncRNA function by its secondary structure, so if you guys could offer me any information about the subject I'd appreciate it!
+
+Comments:
+- I've seen a lot of computational talks and a lot of RNA talks, and I don't think that's currently a solvable problem. Which isn't to say it's not an interesting problem, but I'd be concerned if someone were proposing to tackle it with an entire *lab* focused on that problem, nevermind trying to do it as a master's thesis. You've got too many unknowns on both sides: predicting RNA function from structure, and being confident in the functions of a large enough set of ncRNAs that you might be able to train a model.
+- I’m not an expert but I have been reading about ncRNA a bit. I can put some thoughts here.
+
+It’s probably possible in some ncRNAs. I don’t know too much about secondary structure prediction of ncRNAs, but there are ones like XIST that we have some experimental data on its secondary structures. Some of those data may be helpful in training your ML or whatever model you plan to use and see how similar your predicted ones are to known structures? 
+
+On the topic of predicting function, I know some approaches use conservation of ncRNAs. The idea is that functionally important ncRNAs are conserved in their secondary structures across species while their sequences may be more variable and less conserved. Looking at conservation also likely to tell some information about if the act of transcription of ncRNAs alone is conserved and functional or ncRNAs themselves have function. This probably only tells you very broad function. 
+
+It’s a pretty interesting question to work on and hope you figure out a way. It would be cool to be able to do this to filter through many ncRNAs that are just transcriptional noise or “junk” or those with more function!
+- Very interesting idea! I’m a beginner in bioinformatics, but I thought of this approach: it is known that one of the functions some lncRNAs have is via interacting with some key proteins, such as those from the polycomb repressive complex. So what if you picked the few lncRNAs that are known to interact with this complex, then investigate their structure and train the algorithm to learn what common RNA structure is important for their interaction with the proteins. That of course assuming that there’s only one or a few RNA structures that interact with only one or a few of the proteins sites. 
+I don’t know how feasible that is, though.
+- Short answer -- NO.
+
+Why are you trying to think of a project on your own. That is literally the job of your supervisor. Do not try to think of a project yourself, especially for a field you do not understand. 
+
+I am not trying to be harsh. I am just trying to save you time.
+
+Scientifically. You can not figure out the function of ncRNA unless you have homology with another RNA for which you know the function or have a hint from experimental data.
+- Thanks for your input!!! :D
+- thanks!! I'm definitely going to investigate it.
+- Thanks for the answer!
+
+Just to answer your question: I haven't specified but I'm Brazillian. In Brazil, the best Universities are public, so people are basically competing for scholarships and the process is very tough. In some Universities, you need to propose a project just to apply for the program, before you even have a supervisor or personally know any of the teachers... so that's why I'm trying to come up with some ideas :)

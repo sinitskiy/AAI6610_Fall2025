@@ -1,0 +1,104 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1599e23/d_autonomous_alignment_oversight_framework_aaof/
+Title: [D] Autonomous Alignment Oversight Framework (AAOF)
+
+Content:
+## Abstract:
+
+To align advanced AIs, an ensemble of diverse, transparent Overseer AIs will independently monitor the target AI and provide granular assessments on its alignment with constitution, human values, ethics, and safety. Overseer interventions will be incremental and subject to human oversight. The system will be implemented cautiously, with extensive testing to validate capabilities. Alignment will be treated as an ongoing collaborative process between humans, Overseers, and the target AI, leveraging complementary strengths through open dialog. Continuous vigilance, updating of definitions, and contingency planning will be required to address inevitable uncertainties and risks.
+
+## Introduction:  
+
+As advanced AI systems grow in capability and autonomy, ensuring their alignment with human values becomes increasingly critical. The proposed Overseer system aims to provide ongoing oversight and course-correction to optimize AI alignment. By utilizing an ensemble of diverse, transparent AIs focused on narrow domains of alignment, combined with human oversight, the system seeks to assess and enhance alignment in a measured, responsible way.
+
+## The main proposal:
+
+The Overseer system will consist of a diverse ensemble of AI modules with different architectures and training methodologies. Each module will focus on assessing a narrow domain of alignment, such as ethics or safety. The modules will provide granular confidence scores justifying their assessments, rather than binary decisions.
+
+Transparency tools will be used to monitor information flows and logic within each overseer to prevent leaks or deception. The Overseers will also monitor each other's internal states for signs of compromise.
+
+Initially, the Overseer interventions will be confined to issuing warning reports, logging concerning events, and minor parameter adjustments. Before enacting more disruptive interventions like system shutdowns, thorough testing and validation will be required.
+
+A human oversight board will audit Overseer behaviors and decisions on an ongoing basis. They will evaluate whether the AIs are applying human values appropriately and override interventions if needed.
+
+Overseers will participate in simulations and scenarios to improve robustness against edge cases. Extensive red team penetration testing will be used to find weaknesses. Contingency plans will be instituted in case Overseer malfunction is detected.
+
+Rather than a strict hierarchical system, the ensemble of Overseers will collaborate with humans in an open, dynamic dialogue about alignment assessments. This allows leveraging the complementary strengths of humans and AIs.
+
+The overall system will be implemented incrementally, starting with the most reliable alignment domains and conservative interventions. Scope will broaden slowly as capabilities improve and uncertainties are addressed.
+
+Rigorous validation protocols will be established before real-world deployment of the aligned AI with its Overseer system. The system design will assume ongoing flaws and the need for constant diligence, updating and learning.
+
+## Counterarguments:
+
+1. Defining human values, ethics, and assessing dangers is profoundly complex - can we reasonably expect AIs to master these concepts enough to Oversee other AIs? Misalignments could potentially lead to unpredictable behavior.
+2.  Isolating the Overseers as fully independent entities may be technically challenging or infeasible. Information leakage or hacking could corrupt them.
+3. Overseers with flawed reasoning or definitions could falsely label acceptable behavior as misaligned, limiting the target AI unnecessarily.
+4. If Overseers have deeper access and controls, they become a central point of failure. Hacking them could disable safety.
+5. Human oversight introduces bottlenecks and defeats rapid autonomous responses. And humans are prone to errors and manipulation.
+6. Rigid rules and shutdowns can hamper open-ended intelligence. Alignment may be better achieved collaboratively.
+7.  It may be impossible to fully predict emergent behaviors in complex AI systems. Overseers could give false confidence despite unforeseen risks.
+
+While not intractable, these concerns highlight the need to implement alignment solutions with care, epistemic humility, redundancy, and continued oversight. These challenges underscore why alignment need to be viewed as an ongoing collaborative process between humans and AI.
+
+## Rebuttal:
+
+1.  It has to be acknowledged that defining human values and ethics can be an immense challenge. However, we can make progress by having humans directly evaluate key scenarios to train Overseers initially. We can also leverage existing fields of ethics/philosophy.
+2.  We should assume that some information leakage is likely. That's why diversity and layered security is important. Imperfect isolation still has benefits.
+3. There is a risk of false alarms, we need to thoroughly test Overseers and tune sensitivity before deployment. Start conservative and escalate interventions slowly as reliability improves.
+4. The ensemble approach helps mitigate the concern of a single point of failure by avoiding a single Overseer. We should also have contingency plans and failsafes in place.
+5. Humans should mainly serve as a periodic check, Overseers can respond rapidly in most cases. But ultimately human judgement is needed at times.
+6. The incremental staged approach allows flexibility balanced with safety. We can loosen restrictions as capabilities advance.
+7. Considering unforeseen emergent behaviors we likely cannot predict every possibility, especially with general AI. But independent oversight still provides value if implemented thoughtfully.
+
+Overall, these are all legitimate concerns worthy of consideration. Prudence is warranted, and we should expect imperfections. However, with sufficient diversity, testing, iteration and responsible deployment, autonomous alignment assistance could provide meaningful risk reduction. The goal is not perfection but augmenting safety.
+
+## Possible future improvements that might be beneficial to consider and implement:
+
+* Provide more details on the training methodology and architecture for the ensemble of Overseer AIs to ensure diversity. This could involve different models, datasets, techniques, etc.
+* Elaborate on the validation protocols and testing methodology. Rigorous adversarial testing and simulations will be critical to instill confidence before real-world deployment.  
+* Explain the criteria and process for selecting the human overseers. Their expertise and impartiality will directly impact system performance. Vetting and reviews of overseers could help.
+* Describe safeguards against human oversight vulnerabilities like fatigue, distraction, emotions, bias. Term limits, required peer reviews, and AI assistance may help counteract.
+* Propose ways to facilitate transparent communication between the target AI, Overseers, and humans. Shared interfaces and visualizations could build mutual understanding.
+* Suggest incremental handed-over controls and interventions for the Overseers as they demonstrate competency - e.g. monitoring only, then warnings, then parameters, then pausing, etc.
+* Develop clear explanations for how the Overseers will interpret the complex concepts of human values, ethics, risks, etc. This is essential for reliability.
+* Describe integration of explainability tools into the target AI to help Overseers audit reasoning chains and gain insights.  
+* Propose ongoing iteration and learning, updating of the system, rules, and knowledge bases as capabilities improve over time. Maintaining agility will be important.
+* Highlight the need for extensive peer review, critiques, and improvements from the AI safety research community to stress test the proposal pre-deployment.
+* Conduct further analysis of potential failure modes, robustness evaluations, and mitigation strategies
+
+## Conclusion:
+
+In conclusion, this proposal outlines an ensemble Overseer system aimed at providing ongoing guidance and oversight to optimize AI alignment. By incorporating diverse transparent AIs focused on assessing constitution, human values, ethics and dangers, combining human oversight with initial conservative interventions, the framework offers a measured approach to enhancing safety. It leverages transparency, testing, and incremental handing-over of controls to establish confidence. While challenges remain in comprehensively defining and evaluating alignment, the system promises to augment existing techniques. It provides independent perspective and advice to align AI trajectories with widely held notions of fairness, responsibility and human preference. Through collaborative effort between humans, Overseers and target systems, we can work to ensure advanced AI realizes its potential to create an ethical, beneficial future we all desire. This proposal is offered as a step toward that goal. Continued research and peer feedback would be greatly appreciated.
+
+Comments:
+- This reads more like a Yudkowsky scifi skynet rant than Machine Learning research if I'm being honest.
+- Please do some actual work.
+- Oh, that's completely fine to be honest. And true, that is not research, more of a research proposal/conceptual proposal. I do not intend to mask it as one. 
+
+And I think Alignment and X-risk are quite important when it comes to AI field of research. Even if there's a possible 1% chance of human extinction with creation of AGI we need to adress it and focus our attention towards trying to avoid such a scenario as much as we can. I think Yudkowsky's list of lethalities provides some convincing arguments as to why thats important.
+- Can you elaborate what you mean?
+- > list of lethalities 
+
+So I started reading it and...
+
+> My lower-bound model of "how a sufficiently powerful intelligence would kill everyone, if it didn't want to not do that" is that it gets access to the Internet, emails some DNA sequences to any of the many many online firms that will take a DNA sequence in the email and ship you back proteins, and bribes/persuades some human who has no idea they're dealing with an AGI to mix proteins in a beaker, which then form a first-stage nanofactory which can build the actual nanomachinery.
+
+> ...The nanomachinery builds diamondoid bacteria, that replicate with solar power and atmospheric CHON, maybe aggregate into some miniature rockets or jets so they can ride the jetstream to spread across the Earth's atmosphere, get into human bloodstreams and hide, strike on a timer. 
+
+I think this provides a convincing argument as to why ignoring everything this man and his acolytes in the Skynet cult say if this is what he takes as one of the more likely scenario's of human extinction from a hostile future AI.
+
+There is literally nothing of value or substance to this in regards to AI ethics, and the man has no credibility in my eyes. Other than fleecing silicon valley types out of their money so he can ramble on the internet about how badly the Terminator movies have irreparably scared his psyche.
+- Anybody can be a science fiction writer. It takes effort to turn that into science fact.
+- What makes you so certain that everything would be alright?  
+
+
+There are good reason to suspect it wont, one of them is that things rarely go right when we dont fully understand what we are doing or creating. And if we were to create a system much smarter than us i do not think that there is a single reason to suspect that we would be able to restrict it, let alone control it. When less sophisticated civilization meets one that is more sophisticated, well, things dont often go the way the less sophisticated civilization expected or wanted.
+- I still dont get it. What are you implying i do? Can you be more specific, at least in some broader sense.  
+
+
+Do you want me to start implementing it? If thats what you are implying i start doing then i am afraid i would not be able to achieve that due to my limited capabilities. Im afraid that would have to be done and considered by teams with far more reach and resources.
+- Please read the passage I quoted and tell me how this is in any way a realistic threat. He isn't applying any sort of realistic analysis to things, it's just straight science fiction.
+- First of all, science fiction today is reality tomorrow. That is a very poor thinking. Just because you personally cant comprehend it being a reality today doesnt mean its not going to happen, especially if we add a superintelligent AI into the mix. 
+
+Secondly, it doesnt matter how exactly it would kill us and it matters even less that we cant predict the EXACT way it would do it to us, I cant predict the way Kasparov would beat me in chess, but I am very certain that he would, if i was able to predict the exact way he would respond to my every move and his exact strategy i would at least be as good as Kasparov. If I were to be able to guess how would a superhuman intelligent AI be able to destroy us, i would have to be at the very least as superhumanly intelligent as this AI, but as of yet i appear to be not. You may understand what outcome is more likely fairly easily based on the given parameters, and the parameters are such that we are creating an agent that is much smarter, faster than us and is currently completley incomprehensible to us. Do you think we would be able to restrict, let alone control an agent that is more intelligent to us in ways we cant even imagine due to our innate intellectual limitations?

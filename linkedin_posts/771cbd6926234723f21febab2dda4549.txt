@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/mehrzad-karami_ai-llm-hallucinations-activity-7365352580442501122-zBqZ
+Date: 2025-09-24
+Author: Unknown
+
+Same prompt. Two models. Two worlds.
+
+How often do you experience different LLMs giving contradictory, sometimes worrisome, replies? One drifts into a narrative it couldn’t substantiate; the other enforces the constraint and stays with documented events and facts.
+
+Why the split? Three forces shape LLM behavior:
+
+- Attention (how it thinks): Decoding settings (temperature/top-p), safety tuning, and phrasing helps to steer it toward fiction vs. fact.
+
+- Context (what it sees): Evidence in → evidence out. Retrieval, constraints (“non-fiction, cite sources”), and structured outputs cut hallucinations.
+
+- Intention (what you want) via the Instruction Set: Think of your system prompt + guardrails as the operating manual: roles, goals, refusal rules, tool limits, output schema, uncertainty handling.
+
+The GPT-5 “shadow-prompt” (see link in the comment) leaks are a simple reminder: your instruction set is product logic. Version it, test it, red-team it, and lock access.
+
+The playbook: 
+- Default to non-fiction mode: allow “I don’t know” or require citations.
+- Engineer context: RAG with quoted passages; tools for math/code/lookup.
+- Control decoding: lower temp/top-p; function calling + validators.
+- Publish an Instruction Set: single source of truth in version control; test it like code.
+- Monitor: hallucination/refusal KPIs, red-team tests, human-in-the-loop for high-risk flows.
+
+These models aren’t starved for 'Human Knowledge'; they’re starved for direction. What will you then tighten next: instructions, context, or decoding?
+
+
+话题标签
+#AI 
+话题标签
+#LLM 
+话题标签
+#Hallucinations 
+话题标签
+#PromptEngineering 
+话题标签
+#ContextEngineering 
+话题标签
+#AISafety 
+话题标签
+#AIProduct 
+话题标签
+#CTO 
+话题标签
+#CIO

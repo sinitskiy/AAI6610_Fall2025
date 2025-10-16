@@ -1,0 +1,82 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ntpy0v/advice_needed_for_immunogenicity_comparing/
+Title: Advice needed for immunogenicity comparing
+
+Content:
+I am working on an algorithm that calculates homogeneity and I need to know which amino acids should be considered highly similar. In my experience and my observations from Blast results, I plan to go with the following
+
+1. I = V
+
+2. F = Y
+
+3. D = E
+
+And consider every other amino acids unique. 
+
+I would like some expert advices here on whether there are other situations that different amino acids can contribute similarly to complementarity. 
+
+Please also annotate how strong do you think the similarity is between the alternatives. I plan to back test these indications on dataset from IEDB T cell and B cell reaction data to see if considering two amino acids the same would better predict the outcome as well as some commercial antibodies with known immunogen sequences and whether they cross react with other species (this is harder to gather data so I do not know if I would end up needing to do it). Do you have any other datasets I can test settings on? 
+
+  
+Thanks for the help
+
+Comments:
+- You should be looking at actual scoring matrices.  For example, BLOSUM62 (used by BLASTP by default) looks like this:
+
+    #  Matrix made by matblas from blosum62.iij
+    #  BLOSUM Clustered Scoring Matrix in 1/2 Bit Units
+    #  Blocks Database = /data/blocks_5.0/blocks.dat
+    #  Cluster Percentage: >= 62
+    #  Entropy =   0.6979, Expected =  -0.5209
+       A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V  B  Z  X
+    A  4 
+    R -1  5  
+    N -2  0  6  
+    D -2 -2  1  6 
+    C  0 -3 -3 -3  9 
+    Q -1  1  0  0 -3  5
+    E -1  0  0  2 -4  2  5
+    G  0 -2  0 -1 -3 -2 -2  6
+    H -2  0  1 -1 -3  0  0 -2  8
+    I -1 -3 -3 -3 -1 -3 -3 -4 -3  4
+    L -1 -2 -3 -4 -1 -2 -3 -4 -3  2  4
+    K -1  2  0 -1 -3  1  1 -2 -1 -3 -2  5
+    M -1 -1 -2 -3 -1  0 -2 -3 -2  1  2 -1  5
+    F -2 -3 -3 -3 -2 -3 -3 -3 -1  0  0 -3  0  6
+    P -1 -2 -2 -1 -3 -1 -1 -2 -2 -3 -3 -1 -2 -4  7
+    S  1 -1  1  0 -1  0  0  0 -1 -2 -2  0 -1 -2 -1  4
+    T  0 -1  0 -1 -1 -1 -1 -2 -2 -1 -1 -1 -1 -2 -1  1  5
+    W -3 -3 -4 -4 -2 -2 -3 -2 -2 -3 -2 -3 -1  1 -4 -3 -2 11
+    Y -2 -2 -2 -3 -2 -1 -2 -3  2 -1 -1 -2 -1  3 -3 -2 -2  2  7
+    V  0 -3 -3 -3 -1 -2 -2 -3 -3  3  1 -2  1 -1 -2 -2  0 -3 -1  4
+    B -2 -1  3  4 -3  0  1 -1  0 -3 -4  0 -3 -3 -2  0 -1 -4 -3 -3  4
+    Z -1  0  0  1 -3  3  4 -2  0 -3 -3  1 -1 -3 -1  0 -1 -3 -2 -2  1  4
+
+You are interested in the positive values.  But BLOSUM62 scores incorporate a large amount of change.  For sequences that are much more closely related (50% identical), you might try "VTML80":
+
+    # VTML_80 substitution matrix, Units = bits/2.0
+    # Expected score = -1.134601 bits; Entropy = 1.427882 bits
+    # Target fraction identity = 0.5015
+    # Lowest Score = -9, Highest Score= 11
+    #
+       A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V
+    A  5
+    R -3  7
+    N -2 -2  7
+    D -2 -5  1  7
+    C  0 -4 -4 -7 10
+    Q -2  1 -1 -1 -6  7
+    E -2 -3 -1  2 -7  2  6
+    G -1 -3 -1 -2 -3 -4 -3  7
+    H -3  0  0 -1 -3  1 -2 -3  9
+    I -3 -5 -5 -7 -2 -5 -5 -8 -5  6
+    L -3 -4 -5 -8 -5 -3 -5 -7 -3  1  5
+    K -2  3  0 -2 -6  1  0 -3 -1 -5 -4  6
+    M -2 -3 -4 -5 -1 -2 -4 -6 -5  1  2 -2  8
+    F -4 -6 -5 -9 -6 -4 -7 -6 -1 -1  0 -7  0  8
+    P -1 -3 -4 -2 -4 -2 -2 -4 -3 -6 -4 -2 -5 -5  8
+    S  1 -2  1 -1  0 -1 -1 -1 -1 -5 -4 -2 -4 -3 -1  5
+    T  0 -3 -1 -2 -2 -2 -2 -4 -2 -2 -3 -1 -1 -4 -2  1  6
+    W -5 -4 -6 -7 -8 -8 -8 -5 -2 -3 -2 -5 -6  1 -5 -4 -7 11
+    Y -4 -3 -2 -7 -1 -5 -4 -6  1 -3 -2 -4 -4  3 -7 -3 -4  1  8
+    V  0 -5 -5 -5  0 -3 -4 -5 -4  3  0 -4  0 -2 -4 -3 -1 -6 -4  5

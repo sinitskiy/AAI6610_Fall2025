@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/michael-shields-25740921_bayesian-neural-networks-for-predicting-uncertainty-activity-7259193684158464001-N2Gf
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Shields的动态
+Michael Shields
+
+Professor at The Johns Hopkins University; President and Principal Engineer at UQuant, Inc.
+
+11 个月
+
+I'm happy to share our latest paper published in Computer Methods in Applied Mechanics and Engineering entitled "Bayesian neural networks for predicting uncertainty in full-field material response." Most uncertainty quantification methods predict uncertainty in low-dimensional quantities of interest derived from a more complicated model. In this work, we use Bayesian convolutional neural networks to predict uncertainty in the full-field mechanical response of heterogeneous materials under specified loading conditions. The neural network predicts the stress in the material at each discretized point in space, along with a measure of uncertainty in the prediction at each point. 
+
+We compare three different strategies for Bayesian neural network implementation: Hamiltonian Monte Carlo (HMC), the variational Bayes by Backprop (BBB) algorithm, and Monte Carlo dropout. The results show that HMC can be computationally tractable, even for some large, high-dimensional problems while variational BBB provides robust uncertainty estimates that are largely consistent with HMC. Monte Carlo dropout, meanwhile, shows inconsistencies with the other methods and is very sensitive to its design parameters. For more details, see the paper below:
+https://lnkd.in/eh--Zh3r
+
+The credit for this work goes to our awesome postdoc, George Pasparakis, and my incredible collaborator Lori Graham-Brady. This work has been supported under the Center for High-Throughput Materials Discovery for Extreme, funded by the U.S. Army DEVCOM Army Research Laboratory. We are grateful for their support!  
+
+#bayesian #networknetwork #computationalmechanics
+Johns Hopkins Whiting School of Engineering
+Johns Hopkins Department of Civil and Systems Engineering
+Hopkins Extreme Materials Institute at Johns Hopkins University
+
+Bayesian neural 

@@ -1,0 +1,11 @@
+URL: https://www.linkedin.com/posts/aishwarya-srinivasan_what-is-llm-hallucinations-do-ai-agents-activity-7247807021888983040-3_l9
+Date: 2025-09-24
+Author: Unknown
+
+LLM's can fool you, but LLM hallucination is not always necessarily bad. 
+
+I wanted to break down LLM Hallucinations into why they happen, when they are good, when they can be harmful with misinformation, and how you can mitigate or control them for your use-cases.
+
+I have attached a ton of resources with the video, so don't miss checking it out. 
+
+Watch the detailed video here:

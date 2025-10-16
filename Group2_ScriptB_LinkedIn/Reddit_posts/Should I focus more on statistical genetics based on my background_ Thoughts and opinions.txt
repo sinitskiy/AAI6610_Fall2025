@@ -1,0 +1,19 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/vuiiu5/should_i_focus_more_on_statistical_genetics_based/
+Title: Should I focus more on statistical genetics based on my background? Thoughts and opinions
+
+Content:
+Hi,
+
+I am working as a PhD student focusing on analysis of gene expression (RNA seq + microarray) from large human cohorts and some experimental RNA seq and ChIP seq data as well. My current project focused on lot of linear modeling to see how gene expression gets affected due to certain environmental exposure variables of interest and then do these genes influence cardiovascular disease biomarkers such as cholesterol types. I have previously worked as a bioinformatics analyst analyzing mostly RNA and ChIP seq data and a lot of my coursework experience in statistics have been focused on univariate, multivariate statistics and just overall linear and non linear modeling methods.
+
+In terms of background, I have a MSc in bioinformatics and human genetics. So I did take courses on population genetics and gene mapping techniques a few years ago but I will need some brush up on that. As is visible, my work does not involve a lot of AI/ machine learning application. Based on this, would it be better for me focus on shoring up my  skillset and gear towards jobs that need statistical genetics skills post a PhD or should I make sure that I work on improving my skillset in ML as well using side projects? If so, I was wondering what would be the advice from folks here who work in statistical genetics roles in terms of skills to focus on so that I am ready for those jobs ?
+
+I am not completely null on ML and during my bioinformatics MSc, I used ensemble methods to analyze gut microbiome data to find phyla that contribute to bacterial enterotypes but I know that is not enough.
+
+Comments:
+- It depends on what you want to do.
+
+Does it require statistical genetics knowledge? What’s the opportunity cost, ie. what area are you forgoing learning more about? Does the area(s) being “neglected” affect question 1?
+
+For what it’s worth, having the experience to pick up a new package or analysis method quickly will go a long way. So as long as you are actively coding and learning something, you should be able to adapt to the twists and turns of a career. However, if you have a specific position in mind, tailoring your education to that is obviously important.

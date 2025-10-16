@@ -1,0 +1,5 @@
+URL: https://www.linkedin.com/posts/achuta-kadambi_whats-a-visual-llm-counterpart-to-the-infamous-activity-7362164256567422977-QTYu
+Date: 2025-09-24
+Author: Unknown
+
+What's a visual LLM counterpart to the infamous text LLM hallucination "how many b's are in blueberry"? To us, it's that VLMs cannot tell left from right. See Shijie Zhou's post about surprising hallucinations in VLMs. Important, because of how many token calls are made in the Physical AI revolution.

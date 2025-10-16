@@ -1,0 +1,38 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jpjov3/opensource_ocr_pipeline_optimized_for_educational/
+Title: Open-source OCR pipeline optimized for educational ML tasks (multilingual, math, tables, diagrams)
+
+Content:
+Hey everyone,
+
+I built an OCR pipeline tailored for machine learning applications, especially in the education and research domain. It focuses on extracting structured information from complex documents like test papers, academic PDFs, and textbooks — including not just plain text but also tables, figures, and mathematical content.
+
+
+
+Key Features:
+
+* Multilingual support (English, Korean, Japanese – easily customizable)
+* Math formula OCR using MathPix API (LaTeX-level precision)
+* Table and figure detection using DocLayout-YOLO + OpenCV
+* Text correction and semantic enrichment using GPT-4 or Gemini
+* Structured output in Markdown/JSON with summaries and metadata
+
+  
+Ideal for:
+
+* Creating ML datasets from real-world educational materials
+* Preprocessing scientific papers for RAG or tutoring AI systems
+* Automated tagging, summarization, and concept classification
+* Training data for educational LLMs
+
+
+
+GitHub (Open Source):
+
+  
+[GitHub Repo: Versatile-OCR-Program](https://github.com/ses4255/Versatile-OCR-Program)
+
+Would love feedback or thoughts — especially if you’re working on OCR for research/education. Feel free to try it, fork it, or reach out for suggestions.
+
+Comments:
+- This is really solid—handling math, tables, and layout makes it way more useful than basic OCR. Could be super handy for building STEM-focused datasets or powering tutoring-style agents.

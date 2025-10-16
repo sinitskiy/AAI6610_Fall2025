@@ -1,0 +1,14 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1lgtcs5/any_good_upcoming_conferences_to_submit_a_paper_to/
+Title: Any good upcoming conferences to submit a paper to?
+
+Content:
+I have a preprint related to bioinformatics/biomolecular design that I’ll be releasing soon. I believe it’s a strong paper and has the potential to be accepted at a good venue. Unfortunately, I’ve missed the deadlines for major conferences like ICML, ICLR, and NeurIPS.
+
+Are there any upcoming conferences focused on machine learning, ML for science, or computational biology that I could submit to? I’d probably prefer a biology-related workshop rather than a main conference track. Later on I would like to publish an extended version in a good journal.
+
+P.S. NeurIPS hasn’t released the list of upcoming workshops yet, I’m hoping there will be something suitable there, but I’m still exploring other options in the meantime.
+
+Comments:
+- Pacific Symposium on Biocomputing (PSB) 2026 looks like a pretty decent conference with a submission deadline of August 1st - good luck!
+- I think it's too late this year, but ISCB, RECOMB, and MLCB are some great conferences. You might also look at the [CSHL meetings](https://meetings.cshl.edu/meetings) for something that would be relevant.

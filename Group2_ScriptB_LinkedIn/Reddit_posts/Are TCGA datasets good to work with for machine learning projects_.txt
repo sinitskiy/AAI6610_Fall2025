@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tz1osy/are_tcga_datasets_good_to_work_with_for_machine/
+Title: Are TCGA datasets good to work with for machine learning projects?
+
+Content:
+Hi,
+
+I wanted to learn working with application of machine learning algorithm to omics data. I downloaded the RNA seq data available from TCGA using the UCSC Xena browser. I have not worked with these datasets before. I was wondering for people who have worked with these datasets, are they generally  good datasets to get my hands dirty on application of ML to omics projects?
+
+Thanks again!
+
+Comments:
+- I haven't worked with it extensively myself but I've helped some colleagues with projects which used it. My experience with it was that it's fine but you need to be sure to follow best practices when dealing with wide but shallow datasets (i.e. more columns than rows). 
+
+This kind of data is very easy to overfit on and that can happen in unexpected ways. For example, it's possible to completely overfit your model before you even train it just by doing basic preliminary feature selection on the whole dataset rather than just the training set.
+- ML and RNA seq data is challenging just because your samples numbers are normally a few orders of magnitude lower than the number of transcripts. Random forests are more robust to over fitting so can be better with these imbalances but it’s an imperfect solution
+- Not sure about all of them, but I’d double check them. I’ve done some basic work with the PDAC TCGA dataset, and there is a not insignificant number of entries that aren’t actually PDAC. ([here is the paper pointing this out](https://pubmed.ncbi.nlm.nih.gov/29739787/)).

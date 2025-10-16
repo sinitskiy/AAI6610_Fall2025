@@ -1,0 +1,36 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1lf8hyy/implementing_a_cnn_from_scratch/
+Title: Implementing a CNN from scratch
+
+Content:
+I built a CNN from scratch in C++ and Vulkan without any machine learning or math libraries. It was a lot of fun and I learned a lot. Here is my detailed write up. Hope it helps someone :)
+
+Comments:
+- That's actually super interesting! 
+
+I did a similar project some time ago, but I coded a multilayer perceptron rather than a CNN. 
+
+How did you implement gradient descent? Did you do it like pytorch does and make your own computational graph with automatic differentiation or did you use finite differences for gradient approximation?
+
+Like
+
+```
+f'(w) = ( f(w + epsilon) - f(w - epsilon) ) / (2 * epsilon)
+```
+
+My first implementation used finite differences, but I quickly found out that doing it this way was unreasonably slow. It's basically running 2 forward passes for each parameter just to find one gradient. Even running this on a GPU was... Not ideal. And I quickly pivoted to coding an autograd implementation like pytorch does.
+- It’s an impressive effort! Well done. The deep learning.ai courses do also cover this though they don’t use Vulkan. But choosing to do this and completing it is a real achievement
+- Neither, I derived the derivatives by hand and applied them, as described in the article :)
+- Thanks for sharing. I coded an MLP implementation based purely on numpy matrix multiplications, all with a dynamic number of layers, silu activation and weight regularizationon. It’s blazingly fast and taught me a ton about the underlying math.
+- I just finished reading the article. That's some really cool work.
+
+I wrote the comment before reading the entire article, sorry about that. The gradient descent section is neatly explained.
+
+
+>  derived the derivatives by hand and applied them
+
+I saw that. You essentially “hard-coded” the derivative formulas for each layer’s forward pass into matching backward routines.
+
+Is there a reason why you chose to do it this way instead of building an autograd graph? Because doing it this way has a pretty clear downside of having to manually figure out the derivative for each different type of layer that you want to add to your network.
+
+I suppose this is the best way to see how CNNs truly work under the hood, but do you have any plans of using automatic differentiation in the future?

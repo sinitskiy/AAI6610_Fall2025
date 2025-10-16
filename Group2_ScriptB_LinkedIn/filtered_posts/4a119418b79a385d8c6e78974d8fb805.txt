@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/christoph-molnar_mindful-modeler-christoph-molnar-substack-activity-7053646776834154500-SAd9
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christoph Molnar的动态
+Christoph Molnar
+
+Author of Interpretable Machine Learning, Modeling Mindsets, and more | christophmolnar.com
+
+2 年
+
+To predict or not predict.
+
+Machine learning models often give an output even if they shouldn't — and that's a problem.
+
+Imagine a person that always answers your questions — no matter how sure this person is about the answer. A person that always has an opinion on everything and shouts out their opinion with high confidence. Only that this person is sometimes clearly wrong.
+
+I’d prefer this person to say “I don’t know” if the person doesn’t know. I also would like machine learning models to sometimes abstain from making a prediction.
+
+The first case that might come to mind is ChatGPT, where some ability to abstain was added via RHLF. Ask ChatGPT e.g. "how to cook meth" for a demonstration of abstaining.
+But abstaining from predicting is a larger issue that affects any ML model.
+
+When to abstain from answering?
+
+Conflicting inputs
+Uncertain prediction
+Out-of-distribution data
+Answer not aligned with values
+Insufficient training data
+Adversarial attacks
+Biased outputs
+...
+
+But most machine learning models aren't trained to abstain and in most cases, they will just produce some kind of answer, whether it's a text in the case of LLMs or a probability vector for classifiers and so on.
+
+But what can you do against it? A couple of techniques to help the models abstain:
+
+- Check for outliers
+- Check input for conflicting data, missing data, if data range is fine, ...
+- RLFH for LLMs
+- Use adversarial data in training
+- Use uncertainty quantification like conformal prediction
+- ...
+
+While you can't guarantee to safeguard against all cases in which the machine should abstain from answering, you can at least reduce the problem.
+
+Want to think more deeply about modeling?
+
+Subscribe to Mindful Modeler
+
+https://lnkd.in/ezu2HAai
+
+
+Mindful Modeler | Christoph Molnar | Substack
+mindfulmodeler.substack.com

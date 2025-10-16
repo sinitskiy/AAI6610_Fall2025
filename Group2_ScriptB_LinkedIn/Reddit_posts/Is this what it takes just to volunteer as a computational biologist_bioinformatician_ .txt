@@ -1,0 +1,43 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1eznv0m/is_this_what_it_takes_just_to_volunteer_as_a/
+Title: Is this what it takes just to volunteer as a computational biologist/bioinformatician? 
+
+Content:
+
+
+Comments:
+- You should un-redact the company. Clowns need to be named and shamed.
+- Never volunteer for someone else's profit when you cash get paid for it.
+- If this is not a charity (and a really good one at that), the most impressive part of this listing is the sheer fucking audacity
+- Qualifications required: MSc or PhD. Also qualifications required: know how to use BLAST lmaooo. Didn’t realise I had a qualification in BLASTing
+- That is disgusting. Never ever let yourself fall prey to these kind of gigs that do not pay your worth.
+- LOL the qualification is minimally senior bioinformatician level.
+- Found it:
+https://jobs.praxislabs.org/companies/rare-genomics-institute/jobs/38718551-bioinformatics-scientist
+- Asking for a Phd or a Masters to volunteer, wtf.
+
+If anything this would be good for a student that's learning either programming or biology or a mix and wants some extra experience while studying , as long as it doesn't demand many hours.
+- I once came across a job post for a computational chemistry position asking for a Ph.D. with highly preferable post doc experience, +3 years of experience in industrial settings, an expert in Python and R, expertise in cheminformatics and AI in generative drug design, "profound" knowledge of free energy calculations methods, structure based drug research screening methods, ligand based drug screening methods, pharmacophore training and rational drug desig,  and preferably molecular dynamics and enhanced sampling methods. All that accompanied by expert knowledge of leading industrial packages in drug design (Maestro, MolSoft, Chemaxon).
+
+It was an entry-level position.....
+
+Surprisingly (to no one), they took the job post down 3 months after not finding the right person (aka sucker) for it.
+- r/choosingbeggars
+- This strikes me as pretty typical for an entry-level, Scientist-track bioinformatics role.  
+
+Kinda ballsy to ask someone to do it for free, though!
+- [deleted]
+- As others have said, this is ridiculous.  I don't understand why anyone, with the listen qualifications, would ever take a position like this
+- "Stay up-to-date with latest advancements in bioinformatics" 
+
+"Proficieny in programming languages such as ... Perl" lol
+- The focus should be on getting donations to pay salaries for this non-profit. That will help achieve the outcomes they want, especially if on-site is a requirement. That said, at least they aren't taking salaries now while it's in its infancy. But, getting professionals to do a professional job is more important than volunteers who aren't committed. More bang for the buck in getting donations right now, it looks like.
+
+[https://projects.propublica.org/nonprofits/organizations/453624709](https://projects.propublica.org/nonprofits/organizations/453624709)
+- At the very least the source of this is a non-profit 501(c) place.
+
+I also wonder if (hope?) this was intended to be a paid job and got posted to the volunteer side of it by accident.
+- It seems they’re still stuck in the mindset that just putting their name out there will attract people. But life is short, and no one will work for free, especially after investing so much money and time into earning those qualifications.
+- If I had to pay for me to work there, I bet I still wouldn't be offered an interview.
+- Yeah, this is ridiculous. I only ever professionally volunteer for severely underfunded folks, like some nice field zoologists studying obscure worms, who need help building a phylogenetic tree or two, because their only student-turned-bioinformatician left to the industry last year. And to be able to volunteer long term you need resources to somehow pay bills…
+- Given the benefit of doubt , I would assume they would have hired HR also on a voluntary basis who would have copied the position description from another post somewhere and left it as it is instead of using it as a template.

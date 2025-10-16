@@ -1,0 +1,69 @@
+URL: https://www.linkedin.com/posts/cristian-lazo-quispe_understanding-ddpm-activity-7369638300409675776-TiOB
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Cristian Lazo Quispe的动态
+Cristian Lazo Quispe
+
+ML researcher
+
+1 个月
+
+🧠💡 #2 Diffusion Models (DDPM) | How Noise Becomes Data
+
+Continuing my research journey, I’m diving into Denoising Diffusion Probabilistic Models (DDPMs).
+
+📊 Inspired by thermodynamics, it’s amazing how adding noise step by step and then carefully learning to reverse it can produce high-quality generative models.
+
+🔗GitHub: https://lnkd.in/eW72jGbw
+⚡ Next post: DDIM (Denoising Diffusion Implicit Models).
+
+#AI #MachineLearning #DeepLearning #GenerativeAI #DDPM #DiffusionModels #ResearchJourney
+
+57
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Utkarsh R.
+
+Ph.D. Student @ MIT CSAIL | IIT Kanpur | Prev. NVIDIA, Amazon Science
+
+2 周
+
+Checkout our recent work accepted at NeurIPS 2025 🎉
+We explore how flow-based generative models can be adopted for Scientific ML, and in general how to enforce arbitrary constraints at test time. Curious to hear thoughts from the community on bridging these areas!
+
+#NeurIPS #ai4science #SciML
+
+Pengfei Cai
+
+PhD candidate at MIT
+
+2 周
+
+🎉 Exciting news! Our paper "Physics-Constrained Flow Matching: Sampling Generative Models with Hard Constraints" has been accepted to NeurIPS 2025!
+
+Read here: https://lnkd.in/echrevsH
+
+We introduce PCFM, a framework that enforces arbitrary and multiple physical constraints in PDE settings with flow-based generative models —enabling reliable, constraint-satisfying scientific ML.
+
+🔥 Highlights:
+1. General framework: Enforces conservation laws, boundary conditions, and arbitrary nonlinear constraints as hard requirements at inference time.
+2. Zero-shot inference: Works directly on pretrained flow-based models, no retraining or constraint gradients needed.
+3. Improved performance: Outperforms PDE benchmarks while ensuring exact constraint satisfaction, especially for nonlinear constraints.
+
+Looking forward to present this at NeurIPS in San Diego this December 🚀 and advance the intersection of generative models and scientific 

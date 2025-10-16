@@ -1,0 +1,16 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/n4hns8/are_ige_antibodies_capable_of_binding_water/
+Title: Are IgE antibodies capable of binding water molecules? I heard water molecules are too small to trigger an IgE-mediated allergic reaction?
+
+Content:
+https://en.wikipedia.org/wiki/Aquagenic_urticaria
+
+Some people with this cannot drink plain water without experiencing symptoms in their mouths and throats. The drug 'Xolair' blocks IgE and is effective in people with this condition. 
+
+But I thought the water molecule is too small to bind to IgE antibodies? At least, that was what I learned in biology lessons. Now I'm kinda confused. Aren't IgE antibodies literally dissolved in/surrounded by water on a constant basis?
+
+Comments:
+- Indeed, water molecules are way too small. For nice pictures, look at [this page.](https://pdb101.rcsb.org/motm/21). In particular in [this picture](https://cdn.rcsb.org/pdb101/motm/images/hyhel-overlap.gif), you see in green the typical size of a molecule being recognized by antibodies, with around it the parts of an antibody recognizing them. In comparison, a water molecule is the size of a single one of the balls (atoms) that the proteins are made of.
+
+It wouldn’t even make sense chemically for an antibody to recognize water, since it’s a soluble protein. Its shape, the very thing that allows it to “dock” on a specific structure, hence recognizing it, is dictated by the fact that it has a layer of water molecules around it (the [hydration layer](https://www.researchgate.net/profile/Jan-Swenson/publication/24146177/figure/fig3/AS:667807788331015@1536229192136/The-hydration-shell-of-myoglobin-Mb-Diagram-of-myoglobin-blue-surface-with-1-911_W640.jpg).
+- Check out [this paper](https://www.sciencedirect.com/science/article/abs/pii/S0190962286702156), which presents some evidence that in aquagenic urticaria the water may be acting as a carrier for some sort of water-soluble antigen that is normally confined to the epidermis. They demonstrate the people with aquagenic urticaria react to an epidermal extract in the same way that they react to water. That is, the IgE antibodies are really reacting to some kind of epidermal molecule.

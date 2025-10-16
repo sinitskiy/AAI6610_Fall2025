@@ -1,0 +1,47 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/11qdsyo/europe_masters_program_suggesitions/
+Title: Europe Master's program suggesitions (Bioinfromatics with biomedicial and pharmaceutical bachelor background)
+
+Content:
+Hi Redditors, I have a joint bachelor degree in pharmaceutical sicence and biomedical science.  I have worked on two projects using machine learning for drug discovery and behavioural identification in diseased mice. I am interested in and looking forward to a career in applying machine learning and data science to the research in life sciences and pharmaceutical sciences. From my junior year onwards, my interest shifted to bioinformatics, so I applied to several bioinformatics Masters programmes in Europe this year.
+
+So far I have received the following offers and :
+
+&#x200B;
+
+Netherlands:
+
+Utrecht university: Bioinformatics and Biocomplexity
+
+UvA & VU: Bioinformatics and system biology
+
+Wageningen University & Research (WUR): Bioinformatics
+
+&#x200B;
+
+Denmark:
+
+University of Copenhagen: Bioinformatics
+
+&#x200B;
+
+I am torn between these offers and hoping that you could comment on the options above ! Feel free to talk about anything about these programs.
+
+Comments:
+- KU Leuven, in Belgium has a nice bioinformatics master's program
+- Munster technological university in Ireland has a fantastic MSc, did it myself
+
+u/Billy_Bang
+- [deleted]
+- Can you tell me a bit about it? I got into KU Leuven, as well as Ghent and UvA so trying to decide now. I’ve seen there is a LOT of coursework at the Belgian schools compared to Dutch. Are the research/internship experiences as important? I know classwork is important but I think having a good resume after graduation makes it easier to get a job
+- Hi there, 
+
+Thanks for sharing!
+
+I have considered the KU Leuven program before, but many programs have now closed and maybe I have to make a final decision between these programs :(
+- Hi there, I am really appreciate your answer.
+
+Personally, I was more impressed with the UU program and their facilities (I attended the Master's open day in science park campus on Feb). 
+
+As my background is in life sciences (although I have studied python programming and linear algebra online), I would like to take more algorithms, statistics related courses to bridge the knowledge gap. I see on the university website that students can choose courses from other faculties as long as they are approved, are you aware of this?
+- For the master thesis, most of the labs associated with ku Leuven are posting projects and you will have yours with one of it. This is one hands on experience. Also, you have some other projects along the way. I think it's a good program, you learn a lot and you have the chance to meet very nice professors, top in their fields. It is very demanding as well. I have no idea about Ghent and UvA, try to search a bit about the professors, it is important to have really good ones,  ones with high level publications in their field. Good luck!

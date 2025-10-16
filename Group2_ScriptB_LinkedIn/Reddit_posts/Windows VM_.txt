@@ -1,0 +1,26 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/194e5dg/windows_vm/
+Title: Windows VM?
+
+Content:
+I'm starting a new job and they gave me a 32gb ram laptop from the lab, with which I should do bulk/scRNAseq + DSP analysis. This laptop comes with Windows 10 pro and I'm supposed to leave it like that. I've always used Linux to do bioinformatics, should I try to install a virtual machine? I've never done it. Which software would be the best?
+
+Also later they are going to let me use also a tower pc on which I should be able to install Linux directly, since I'll be working with both should I learn to use GitHub?
+
+In my last job I was working remotely on a HPC launching R scripts, I'm thinking also I could use the tower pc remotely...
+I mean in the end all this could be summarized as: what's the best set up I should go for to work on multiple computers (one of which has Windows)?
+
+Thank you so much 🙏🏻
+
+Comments:
+- Windows subsystem for linux (WSL2) is pretty mature nowadays. I recommend using that if you *have* to do analysis on your own laptop.
+- I've been in a similar situation. I have a Ubuntu machine in the office at uni but for remote working I have a Win10 laptop. I've installed a VM in VMware (more performant than Virtualbox in my tests and it's free if you only have one VM).
+
+WSL2 did not satisfy me since I'm a full-time Linux user/nerd and even crazy into stuff like tiling window managers etc. But that's just me.
+- When I used Windows for work time ago, I preferred using WLS2 or docker, however, all code were sync to repos and deployed to run in the HPC.
+
+And yes, git is a must.
+- Thank you all, I guess I'm going to give WSL2 a try
+- Seconded. 
+
+also, docker (which uses WSL2).

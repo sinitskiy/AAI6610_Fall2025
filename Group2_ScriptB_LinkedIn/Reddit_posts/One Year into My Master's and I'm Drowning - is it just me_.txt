@@ -1,0 +1,125 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ixcnkn/one_year_into_my_masters_and_im_drowning_is_it/
+Title: One Year into My Master's and I'm Drowning - is it just me?
+
+Content:
+This will probably be too long to read but I really appreciate any advice from the veterans here.
+
+I'm one year into a 2 year bioinformatics masters program and I'm just getting demotivated every day. I come from a biology background with a successful academic record I would say. I joined the microbiology department at my university 2 years before graduation, published my first paper and completed a second one but never been published because of grant problems. Both were basic but it was a big step for me back then. That's said, I never enjoyed being in a wet lab and always felt anxious in that environment but I tried not to throw away this opportunity and learn as much as I can.
+
+After I graduated, I had a few months free before joining the military for a mandatory service so I decided to take a nanodegree in data analysis where I learned some applied statistics, python and the normal data analysis with python roadmap. I enjoyed it and thought maybe bioinformatics can be the best of both worlds and with my background it should be a smooth transition but I can't believe how naive I was!
+
+I applied for a master's abroad, got 2 acceptances and got too excited. Soon after, with my first lecture in the masters on algorithms, I felt completely lost as if I'd never been to elementary school. It didn't take long to realize that I miss the very basic skills to at least pass most of the mandatory modules. Week after week, the first semester went by with me trying to survive greedy and heuristic algorithms, dynamic programming, databases, HMMs, Linux, constraint based modelling, and I only passed 2 courses out of 5 which were a statistics with R and a python course.
+
+ I thought maybe I was just overwhelmed because of the new environment overall and decided to go for the second semester and hoped things would get better. But again, the first lecture is on graph theory and cellular networks analysis. Other courses for me were just as hard. C++, systems biology and the lists of insane math topics in every course can go on forever. I decided that I will go slow this time and take only half of the courses and take an extra year. I failed again and passed only the c++ course just because the practical exam allowed using chatgpt!
+
+I got depressed, demotivated and I fight with myself for hours just to sit down to study. A whole year wasted just to develop anxiety and a toxic relationship with self-learning. I'm not really sure if it's supposed to be that tough or is it just me who got himself into a totally new territory with zero preparation. Is the transition really that difficult or am I doing something wrong and should really consider dropping out and shift careers?
+
+I totally get that it takes time to grasp these advanced topics. Although I was truly excited when I first looked into this heavy curriculum and found all these courses on programming, machine learning and sequence analysis... but now I feel like it would take me forever and I'm most afraid that even if I somehow managed to graduate, getting a job afterwards would feel just as miraculous, especially since I'm getting older and approaching 30 by the time I graduate.
+
+I'm not sure what I want by saying all of this and I'm sorry if this brings anyone considering getting into bioinformatics down. Maybe any guidance or shared experiences from the true legends who've been through the same on how to manage this situation would help and be deeply appreciated.
+
+Comments:
+- You're not alone. Bioinformatics as a discipline and pedagogy exists at the blending of multiple extremely specialized and challenging disciplines. As you pointed out, wet lab, genomics, molecular bio, comp sci, multiple comp languages, stats, ml, dbm, multiple maths, general research and study design, etc. Because of this nearly no one enters a bioinfo masters with all the necessary background. My masters was more about exposing us to these myriad of specialties and getting some basic concepts to stick in each one. Show us how to approach problems, common pitfalls, how to get answers and how to collaborate more than making as masters of every discipline. There's a reason that a MS is required for entry level bioinfo jobs, it's because university is the beginning of your education and growth as a bioinformatician.
+  
+So the good news: It's not just you and it starts the hardest and gets easier and every student feels completely lost in at least one of the many subdisciplines. You may still learn to love it. Personally I don't love bioinfo but I love that it lets me do science, be an expert in my area and get rewarded well for my work. 
+  
+The bad news. Yes, it's a very challenging discipline and you will have to keep working hard at learning and growing your skills throughout your career, especially early on. But it does get easier. 
+  
+How's your support network? Have you talked to your advisor, mentor or professors about your challenges? It's very common, the biggest concern in the good programs is students struggling in silence and then dropping out feeling unsupported. If you haven't it's time to speak up not just with the staff but other students, friends, family etc. There are resources to help, this is a very common experience.
+- Great responses already here. Here is my 5 cents.
+
+Sorry to hear you are going through the rough part. It can be daunting. You are indeed studying one of the most complex disciplines known to mankind... so kudos for taking the challenge!. I remember struggling to keep up, and at times it felt like sweating a gallon of shit. Over time it got way easier, and nowdays most tasks seem like piece of cake. Like any other discipline: practice and repetition is everything.
+
+If you went to the military, you probably heard the phrase "let's make training a living hell, so actual war feels like children's play"... Keep that in mind, you were good enough to make it this far, and you WILL NOT have to do any of that crap in an actual job. Even if you do... you'll have weeks to check and test whetever you are doing, not hours.
+
+I started my MSc when I was 35, only months after graduating my bachelor, which I started when I was your age. One of the few great things of the mid 30's is you stop giving a fuck about "how old" you are. Trust me, companies couldn't care less as long as you can get the job done, and add value.
+
+Best advise I can give you is to stop studying because "it quilifies you for a job". Learn the things that are valuable to you, and aim to master a few skills very well. Simply put, you won't remember 80% of those lectures in 5 years time. I believe forcing oneself to understand higher levels of abstraction shapes the brain for problem solving. It makes you see, and analyze, and calibrate the world in ways others can't. And that's where the real value is.
+
+Honestly I couldn't care less if I don't remember how to rotate a b-tree, or "efficiently" reversing linked lists, or how to code the levenshtein distance recursively... I also wouldn't work for a company that asks these sorts of stupidities on an interview, like that says anything about my hability to solve a real-world problem.
+
+Good luck with your thesis and exams. You are half way there!
+- I'm amazed that people try to teach bioinformatics as a specific subject. The crossovers from different disciplines make it basically impossible to have anything approaching a general baseline that covers everything.
+
+For the stuff that most people get paid for in bioinformatics, I've found that my most useful learning was from running through the [Rosalind](https://rosalind.info) problems, and working through ["Bioinformatics Algorithms: An Active Learning Approach"](https://www.bioinformaticsalgorithms.org/) (which is referenced in some Rosalind problems). There's also [The BioStar Handbook](https://www.biostarhandbook.com/), which I haven't read, but appears to serve a similar purpose on a grander scale (810 pages!).
+
+... but that was starting from a base education in computer science, mathematics, and biology. I really have no idea how to introduce someone completely new to the subject area to bioinformatics.
+
+However, for anyone wanting bite-sized core computer skills, then Carpentries lessons are great:
+
+https://software-carpentry.org/lessons/
+- It sounds like they are trying to cram as much math/CS breadth in as possible, which would be incredibly difficult coming from a mostly biology-based background. As someone who also started out in biology, here are some thoughts:
+
+1) Struggling with topics unfamiliar to you will make you a better scientist and bioinformatician, assuming you can work through the courses. At the same time, even though you are inundated with math and CS, your bio background will be very helpful once you start working as a bioinformatician
+
+2) I've had a nice career so far in bioinformatics and I didn't study half of what you mentioned in your curriculum. Many of those topics you are struggling with are relatively niche, and not necessarily relevant to many bioinformatics jobs. They are still good to know -- I wish I had a good grasp of C++ -- but don't worry too much about every single topic. It might be useful to look at job postings and get a sense of what they're asking for to keep the medium/long-term in mind, and keep yourself grounded while trudging through algorithms
+
+3) If you can influence your training path by taking electives or choosing a thesis project close to what you feel comfortable with, that will make things easier. You might want to talk to your program advisor about finding alternatives if something is really too daunting
+
+4) The difficulty level of graduate school made jobs afterwards seem easy -- sometimes too easy. Jobs aren't demanding in the same way that school is
+
+How close are you to finishing? It sounds like you've tried to slow down the program a bit to make it more manageable, which sounds like a good idea. If you like what you are doing and if you can survive the program, you will hopefully be able to find a position compatible with your strengths and interests.
+- Very weird that they're teaching all these advanced concepts without first giving you some basic background courses. My university first forces the students to go through 1 semester of preparatory stage if they don't have the suitable background for their graduate courses... asking a biology student to suddenly learn advanced algo/db/math/stat at the same time would indeed feel overwhelming. You're certainly not alone in having trouble understanding such advanced concepts. Just put the time to watch online lectures and animated visualizations of different algorithms whenever you get stuck somewhere. That should help you slowly catch up to the concepts
+- Computer science and programming is a different type of hard. It's formalizing logic and math that all humans have innately (in my opinion). But, very few of us (not me, not you) are able to access this formalization without lots of formal training and time.
+
+
+Unfortunately there's no real shortcuts. A real rigorous program will clobber you, especially without any computer science background. You just have to suffer and make it through. 
+
+
+The feeling of drowning is a feeling all people with a BS in comp sci can probably recall. I was plunged into the deep end (0 comp sci experience) after swapping majors about 3/4 through a bsci degree. But I had a solid 7 semesters to learn it all, and I took my time. I went to a T10 computer science school, and it felt like you got strapped into a rocket day 1 and didn't stop until the very end.
+
+
+I graduated with my BS at 28 and ended up in Cambridge MA. Don't worry about your age.
+
+
+To answer your question, yes, computer science and algorithms really are that difficult. There's a lot of suffering. Succeeding at raw computer science & algorithms is about your ability to endure suffering and your ability to persevere and keep learning.
+
+
+I've done both - the bsci and the comp sci. They are hard in different ways. But the struggle people have in computer science is certainly more prominent on average than in bsci.
+- Thats totally relatable. I also felt lost and like I didnt belong for most of my MS. Now i really like Bioinformatics and my job. Things will work out for you whether you continue or decide to try something else. Good luck, and remember failing is part of the journey :)
+- If its any consolation i had the same experience, i did Microbiology for my bachelors and then i was always into programming so thought bioinformatics would be the best choice for me (it really was). Then i got into a school with a decent bioinformatics curriculum. The first few days of college was really tough for me, it was a new state and also with all the programming languages and databases to learn it was a lot for me to take up in the first week itself. So i was determined to shift into the microbiology program of that school, did all the paperwork and everything but for some reason the paperwork didn't go through and i was stuck in bioinformatics. But slowly as i tried to learn the basics and practice more, it started to get really interesting to me. I turned out to like it so much that i was the top coding guy in the class. Then i got into ML and all the sequencing tech, analysis and processing, and i can surely say now that i am very happy with the work that i do. Thank god i didn't shift into microbiology or else i wouldn't have got to experience this life. So hold on there, it will turn out to be great, nobody learns too much in their masters, its the internships and thesis work that you do that is the main learning period. For me this was the case, i got to learn more in the internships and research work than i college classes itself.
+- I appreciate everyone who tells this person very useful advice. I hope he understands that all here have gone through some process and at some point we felt like giving up.
+
+For me the hardship was transitioning to a computer science person from a biology background. What worked for me during my master is actively seeking for help from peers and a shit ton of projects to learn by doing.
+
+Remind yourself why you started every single time you start feeling weird. You got this
+
+As for me my biggest challenge now is securing a job after my masters. It’s been almost a year now and no interviews so far. 
+
+If any one who knows entry level openings , remote or onsite. Please share the links to those.
+
+Tchuss
+- I totally get you. I work 50+ hours a week, I'm trying to fit in the master's, work out, have a social life, exercise and run errands and it's very hard. Just this week the new term started and they've given us a little over a week to hand over a project with python and I'm starting from scratch, 0 knowledge.
+
+It's currently 6 am and I'm sitting here trying to scrape any spare time I can to get things done all the while thinking why the hell did I need to do this... 
+
+My advice would be to try and do things outside the master that bring you joy. It's very easy to let the burnout define you and get absorbed by the feeling of not knowing how to do something, postpone it and then feel like crap about it.
+- I'm in the exact same position. I'm trying to finish my master's but feel like I'm drowning.
+
+I got an internship at a research center and things are way different than in the master. 
+
+Keep going ✨
+- Interesting thread.  I suppose I have been fortunate to be able to learn advanced theoretical concepts and applications on an as needed basis, and was never graded on bioinformatics (full disclosure: PhD in biochemistry, 23 yrs wet lab experience, former PI).  Retraining in bioinformatics for me was stepwise: 1.) learning a scripting language (previously just had FORTRAN, Pascal, and BASIC), 2.) joining a team working on a huge fascinating project closely aligned to my previous research interests, and 3.) hands on experience data wrangling.
+
+I am not saying this is a recipe to follow, just providing context.  I will say in undergrad I took about one-quarter of my courses “self-paced” so, no lectures.
+
+Looking back, a huge amount of what I do day to day has some element of counting: number of reads aligned, number of genes expressed, number of methylated cytosine residues, number of patients responding, number of cells dying, and then of course, comparing those numbers to each other (when relevant).  Measuring is also essential because: clustering to identify similarity.
+
+So the theoretical underpinnings for graphs, and sorting algorithms, etc. Are both interesting and useful, but as far as I know are not usually directly practical day-to-day, for me.
+
+I would emphasize that asking research questions (and answering them) has kept me engaged, spurred my interest, and led me to learn about subjects besides coding, counting, measuring, and comparing.  But it sounds like these course-based Masters degrees in bioinformatics don’t have much curiosity-driven content.  I would encourage you to consider trying to leverage your previous wet lab experience and find a PhD supervisor in a program where you could build on what you already know about bioinformatics, and learn new methods and approaches as needed.  You already passed advanced courses in R and Python, which is a solid start.  Most of what we do is essentially data science (whether we label it as such, or not).
+- I needed this advice, will be reading comments too
+- I can't thank you all enough. I really appreciate your support.
+- I absolutely get where you are coming from. Transitioning from biology to bioinformatics is no easy task, and many people underestimate the amount of math, programming, and computational thinking required. It's not just you; many people struggle with this transition, particularly in their first year.Your comment reminded me of many students who have expressed similar frustrations. Biologists are taught to think differently, more conceptually and experimentally, whereas bioinformatics requires you to break down problems into algorithms, models, and code, which can feel like learning a completely new language. The first year is difficult because it throws you into the deep end with graph theory, dynamic programming, and statistical modelling, which are not generally covered in a regular biology degree. Since the majority of your difficulties appear to be with algorithms, databases, and programming-heavy courses, consider taking a structured CS50 (Harvard's free introduction to computer science) or Algorithm & Data Structure courses on Coursera or Udacity. Instead of overloading yourself with entire topics, split them down. For example, learn recursion before diving into dynamic programming, or becoming acquainted with Python before tackling C++. You mentioned extending your program for a year, which is actually a wise decision. It's worthwhile if it keeps you from burning out and allows you to develop strong fundamentals.
+
+Finally, whether you should continue or drop out depends on your ultimate aim. If bioinformatics still interests you despite the hurdles, changing your approach could make all the difference. However, if you are dreading every element of it, it is completely OK to reconsider. You are not alone in this, and believe me, many people who struggled at first achieved success after overcoming the early learning curve. I hope this helps, and I'm happy to chat if you need any other guidance!
+- I mean yeah it’s rough but that’s definitely a C++ thing. It goes way deep especially if you’re just starting off trying to learn that. I’ve had a similar experience, take care of yourself.
+- I did a master's in bioinformatics and have helped students at work through them at different universities and none of them sound as hardcore as yours. That is a very steep learning curve in maths and CS topics for someone without much background. Don't beat yourself up.
+- I’m in the same boat here. Doing a comp bio masters degree, learning C++, and diving into too many algorithms with just a biology background and high school maths. I literally only knew what a likelihood meant last semester. The comments has been super inspiring! We will be well rewarded at the end of the
+- I didn't do a masters and watching people do them, I think they are harder than PhD because they try to pack so much learning in. 
+
+Go slowly, break stuff down into manageable chunks so you can be proud with each small advance, each small step takes you nearer to your goal. Small chunks in a big list so you can see how far you've got to go, and how far along you are. It feels overwhelming all at once, I find breaking stuff down and ranking them on difficulty/how much I don't want to do them, then attacking the worst parts first and rewarding myself by going back to stuff I prefer works for me.
+
+Probably everyone else on your course is feeling the same even if they don't show it on the outside, or the comp sci people will be struggling with the biology, or the maths people will be struggling with the programming or something, and everyone also has a whole other set of problems outside of schoolwork as well, everyone has their challenges. Can you chat to someone else and ask them how their finding a specific module you're strugglng with most?
+- ChatGPT and GROK etc can literally teach you anything needed. Use it as a tool.

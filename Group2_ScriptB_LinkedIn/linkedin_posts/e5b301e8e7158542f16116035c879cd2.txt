@@ -1,0 +1,45 @@
+URL: https://www.linkedin.com/posts/leonardo-guilhoto_cse2025-uq4sciml-machinelearning-activity-7303832469999357953-uLtE
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Leonardo Ferreira Guilhoto的动态
+Leonardo Ferreira Guilhoto
+
+Final Year PhD Candidade @ UPenn | Former AI Simulation Intern @ Atomic Machines
+
+7 个月  已编辑
+
+Had a great time attending the Computational Science & Engineering conference organized by Society for Industrial and Applied Mathematics (SIAM) this week in Fort Worth, TX! 🤠
+
+Earlier this week I organized a two session mini-symposium on “Uncertainty Quantification for Scientific Machine Learning” (UQ4SciML for short). We had eight wonderful talks from researchers both from industry and academia. Topics ranged from Bayesian Optimization, data-driven solutions to PDEs, climate forecasting, ecological modeling, and more!
+
+Thank you for all the speakers for accepting the invitation and traveling to present their work! Nicholas H. Nelsen  Elizabeth Qian, Patrick Wyrod, Toryn Schafer, Maximilian Balandat, Haiwen Guan, Fernando Rochinha
+
+I also gave a talk on my recent paper “Composite Bayesian Optimization in function spaces using NEON—Neural Epistemic Operator Networks”. You can read the full paper here: https://lnkd.in/dKJVNjVf
+
+The paper’s main contributions are
+1) Formulating the Leaky Expected Improvement (L-EI) acquisition function for Bayesian optimization, which is provably similar to traditional EI, but significantly easier to optimize via gradient-based methods.
+2) Proposing Neon, a neural network architecture for operator learning that has built-in uncertainty quantification by using Epinets (originally proposed by Ian Osband). When compared to GPs and deep ensembles on popular composite BO benchmarks, Neon achieved the best performance, at times requiring ~40x less trainable parameters  than DeepONet ensembles.
+
+Now that I have that presentation ready, I might do a quick recording of it to post on YouTube later. Be on the lookout for that 🙂
+
+#CSE2025 #UQ4SciML #MachineLearning #AI4Science #AppliedMath #SIAM
+
+69
+5 条评论
+赞
+评论
+分享
+Sarah Helfert
+
+Applied Mathematics PhD Can

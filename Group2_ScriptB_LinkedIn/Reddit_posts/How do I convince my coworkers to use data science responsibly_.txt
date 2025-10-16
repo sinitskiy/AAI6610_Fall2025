@@ -1,0 +1,124 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/ch9z7p/how_do_i_convince_my_coworkers_to_use_data/
+Title: How do I convince my coworkers to use data science responsibly?
+
+Content:
+The situation: We're a small startup (3 devs, 4 'business' folks) that is developing a business-to-business web-based platform for a very niche market.  (I'm being deliberately vague on the specifics since we're the only startup in the space and it'd be pretty easy to figure out who I'm talking about). There is a lot of 'expert knowledge'/folk wisdom in our niche, and we'd like to bring some hard data to pricing trends (seasonality, holiday surge pricing, premium pricing for sub-categories, etc).
+
+&#x200B;
+
+The problem is that none of the devs have a data science background, or even a college-level statistics course.  I have a PhD in biology, but it was mostly bench science, before I made the (self-taught) transition to web development.  One of the other developers has started plugging our historic data into various price forecasting models (eg Prophet) and presenting the graphs at company meetings.  Each time, I try to point out that our data set is small and limited (\~10,000 transactions over 3 years, with each year having 2x the transactions of the previous), with lots of variables, and that none of us are able to explain how any of the models actually work.  
+
+&#x200B;
+
+From my experience in research science, I would never try to make seasonality forecasts based on, essentially, 1.5 years worth of data.  I would have been ripped to shreds in a committee meeting if I'd presented e.g. an graph of enzyme function and been unable to explain the experimental parameters, the uncertainty in the measurements, and the math behind the best-fit lines I was showing.
+
+&#x200B;
+
+Our CEO (a business major), though, is excited to see charts that vaguely confirm the 'folk wisdom' in our field.
+
+&#x200B;
+
+Am I being too pessimistic?  Too harsh in expecting that people using models should understand how they work?  Is there a resource you could point me towards that would help in explaining how non-experts can evaluate whether a forecasting model is valid or not?
+
+Comments:
+- One thing that I feel like you should focus on before you delve too much into proving people wrong is whether or not there is a "right" that you are proposing. That is, if the other people on the team are using a forecasting model incorrectly, is there a correct model that you are proposing that would show better results? Or is your stance "we don't have enough data therefore we shouldn't do anything"?
+
+The reason I ask is because of academic backgrounds, a lot of data scientists are really good at criticizing other people's work *without having to propose an alternative*. That is, when you review literature/papers/conference presentations, you get to evaluate the work in absolute: it's either good or bad, and if it's bad, you have no responsibility to propose an alternate way to address the problem.
+
+*That is not the case in business situations where an answer is necessary*. That is, if the business needs an answer to a question, then the best answer that arises, *as bad as it may be,* is the answer that will be used. You cannot just point out that the answer is bad without proposing something better - to be more precise, you *can*, but it is no way helpful to the organization and it's actually more likely damaging.
+
+Which leads me a to a core principle of being a data scientist in the business world (if you want to succeed):
+
+***Don't be the person that is really good at pointing out all the things the company can't or shouldn't do.***
+
+EDIT: I forgot to add "why?": 
+
+Because for almost every company out there, it is *much* easier to point out why they shouldn't do things than it is to find things the company should do. Every new initiative, every change, etc., is normally accompanied with tremendous uncertainty, to the point where there are very few big business decisions that don't have a very real probability of failure and/or downside. Staying pat - and dying slowly over time - is the only alternative that doesn't have a ton of uncertainty - though it does have a high probability of killing your business.
+
+Think about Netflix's decision to stream movies. I could have (and I'm sure people did) come up with dozens of reasons why that was a bad idea - cannibalization of existing business model, costs of setting up streaming infrastructure, we have no precedent to understand the size of the market/customer acquisition cost, internet speeds could lead to bad images which could kill our brand, etc, etc, etc. 
+
+I guarantee that someone at Netflix did a good degree of analysis to understand the risks, downsides, etc. and quantify them, and I'm *sure* that the uncertainty around those estimates was anywhere from "this will fail miserably" to "we will be wealthy beyond our wildest dreams". Ultimately, someone had to make a decision knowing the uncertainty with which they were making said decision.
+
+I have worked in projects where we saw expected positive results but with uncertainty values that meant there was a good, meaty probability that this was all luck and we would actually lose money. But doing nothing wasn't an option, waiting for more data wasn't an option, and so you go with your best information and set out to make it work as best you can while being prepared to mitigate risks if they show up.
+
+Being really good at saying no is a great academic skill - it is not a valuable business skill. Valuable business skills are those that help a company **actually do things**:
+
+* Be really good at pointing out ways in which something can be improved while keeping the project on track
+* Be really good at pointing out ways in which the company can make money
+* Be really good at pointing out risks and ways to mitigate them.
+- Have you looked into using a probability cone on the graph?  I've used that trick before, when you show the range of predicted values for 5%, or 2.5% if you really want to prove your point.  Ask your CEO how accurate he'd like the prediction and it will probably be something like 99%, then use that number to prove your point.  If they want 99% certainty, your cost prediction will be so wide as to be useless.  That's math.
+- Edit: Wall of text, skip to end for TL;DR
+
+Not knowing your organization or the personalities at play, your approach may vary - /u/ruggerbear suggestion may be one to consider - but I would argue (and again, not being intimate with the situation, I can't say for sure) that throwing more numbers (probability cones, prediction intervals, etc..) at your CEO isn't going to remedy the situation. 
+
+Personally - I solve these problems with communication - both in person and written. When establishing project I conduct 2 phases:
+
+First the 'charter' document. I sit down and have a meeting with the stakeholders and really drill into the question that they are trying to answer and what data they have. 
+
+This is where I find a lot of people miss the mark in DS. Your job isn't (or shouldn't be) to 'predict seasonality' because someone asked you to - it should be to ask 'what business problem are you fundamentally trying to solve by predicting seasonality'. Maybe the problem is actually that there is a lead time in ordering your product from the manufacturer and as such you need to predict future sales. Quite possibly this requires some modeling of seasonality, although it changes the way the problem is framed. Perhaps this means that you can model larger macro trends in your industry and package it with other modeling (overall growth of sales at your company) to create a holistic recommendation. This could also means that we don't care about having incredible accuracy because perhaps the manufacturer only orders materials in tiers - and you just need to get in the ballpark. 
+
+Once the problem is teased out and framed to its fullest extent, I can communicate the problem clearly in a charter document, which tees up the problem, our planned approach, other stakeholders we'll need to speak with for additional framing and context, and then finally a data caveat, which basically covers "this is the data we believe we have to solve this problem, but this data may turn out to be garbage, we will let you know after initial exploration how much potential this project has.' 
+
+I get this document signed off at a high level - usually VP/C/P - and the primary stakeholder - so that everyone is on the same page. This allows us an out if we deem the project to be infeasible based on current constraints. We dont get stuck trying to force a solution onto a problem that may not be fundamentally sound. 
+
+Next we move onto the EDA phase - which is just as it sounds - usually a 1 week sprint of uncovering every person with knowledge of the problem, every data set, every problem with the data - and we can make an accurate determination of the potential of the charter. We'll have a short meeting to present these findings and make any edits to the scope of the charter as needed - which could be none, minor, major, or even tabling the project until a later date. By having the charter in hand - that basically says - 'listen, you acknowledged that there may have to be changes in scope' - I find that people are far more receptive to being told 'this cant be done' or 'we can answer this question, but not your original' 
+
+As a caveat, I manage a DS team in a much larger organization than yours so it may not be completely applicable to a smaller startup 1 man DS environment like yours. My guess would be that in a smaller org like yours, where you get direction directly from the top level formalizing and documenting the scoping process may not be as feasible - but the communication can probably run parallel. 
+
+**TL;DR: It boils down to the following - if, despite your best efforts, you do not have the leeway and trust with your decision maker (in your case the CEO) to say 'this problem, as stated, isn't realistic based on what we have' - and they continue to insist on DS solutions to problems, I would recommend looking for a new job, because eventually you'll get bit when business is negatively impacted by a prediction that you were forced to make despite your better judgement regardless of you stating as such.**
+- I think it makes sense to evaluate a model by contrasting it with the alternative. A dodgy model based on some data might be worse than no model at all, but often it might also be better than having a business person rely on his gut feeling alone.
+If your data allows to make a better-than-random prediction then even a mediocre model might add value.
+- Your submission looks like a question. Does your post belong in the stickied "Entering & Transitioning" thread?
+
+We're working on [our wiki](https://www.reddit.com/r/datascience/wiki/index) where we've curated answers to commonly asked questions. Give it a look!  
+
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/datascience) if you have any questions or concerns.*
+- Just going to point out something specific. I think you can infer annual seasonality from 1.5 years data, *if the data is representative of the future*. So you can say to your CEO, these forecasts rely on historical data being representative of future and it won’t hold if things change. The business people will think about it and go well, historical data is all we got so we have to assume it’s representative AND we have a contract that states the customer will tell us if their usage changes significantly. The latter you might not know because you don’t work in sales. The way to work with business people (I think) is not to point out things that are wrong with your forecasts but to lay out the assumptions so they can evaluate it with their business knowledge. That way you merry the analytics and business intuition and make good decisions. 
+
+Honestly I think it’s promising that your forecasts looks in line with what the business thinks. But don’t stop there, ask them why they think intuitively that your analysis is right and you’ll get to learn the context, intuition and additional information that will help you build better models and evaluate your models.
+- Read up on data privacy - GDPR for example.
+- Absolutely, preach. I've worked with so many people from a pure stats background who are \*great\* at pointing out all the ways some experiment isn't perfectly designed or we're failing to control for assumptions we've made along the way but can't provide a better alternative. Like I'm glad your thesis could wait 6 months to refine your data collection process, but we've got a week to make this judgment call on the future of the company.
+- I really appreciate this answer.  Thank you.
+- This is really great, totally don’t be the person who always says everything is wrong, that isn’t providing value to the business.
+
+Be the person who brings value and you will do so much better in your career!
+- One thing I am wondering is how would you feel about your advice if you worked in consulting over being a data scientist in house at a company? I understand that if you are in house, often times your hand is forced and some decision has to be made and making the best decision at the time is your responsibility. However, what about shoddy practices that over estimate results when it comes to getting business from other companies? Do you think there is a difference? In one it seems like you are doing something dishonest and in the other you are making the best of a bad situation.
+- I work in finance and it's the same. 
+
+I keep trying to think of a way to explain the stuff I do all day and this is really the best way of explaining it. Nothing is really right or wrong. It's more of how you support your ideas and acknowledge the biggest risk. There is no way to actually prove something will/won't work, it's all about how you support it. 
+
+In business there is NO black and white. It's just all gray. Even in more quantitative models you are making thousands of assumptions across inputs, and try to forecast using a simplification of reality, which assumes a bunch more stuff. At the end of the day it's all one giant educated guess. This is why some of the smartest people suck. You need to make some concessions (at a minimum) to come up with anything useable, some people can't look past what they leave out. 
+
+Amazing post, I'm bookmarking this.
+- Yeah, I would hope that the coworker is providing prediction intervals for these forecasts.
+- Excellent advice.
+- To be honest, I was that guy. And for the first 3 years of my career I worked in R&D, so it reinforced that mentality of "there is value in being negative".
+
+Then I got my first job being in a line of business, and about 6 months into it my boss pulled me into a meeting and called me out of it. Not in a mean way, not in a "you're in trouble" way, but just purely as a coaching opportunity. And the message was simple: 
+
+"You are hurting your reputation because you are becoming the person that tries to shit on everything. You are clearly very good with data, you are clearly a good problem solver, but right now you're going into meetings and pointing out everything that is wrong with everything instead of actually helping solve problems. If you can change that, it will be a watershed moment in your career". 
+
+And she was right. I made the effort to change my mindset, and I very quickly realized how much more powerful it is to find ways to say "yes" vs. finding ways to say "no". It's as if all of the sudden I was using my powers for good instead of evil.
+- Sometimes you simply don't have enough information to make a claim. That's worth knowing. The next steps are then finding that information you need rather than wasting time applying another model/method, one after another, to appease people that don't know what they are talking about.
+
+There is often a huge disconnect between the means and the ends in data science at companies particularly because less numerate business people are driving decisions. If you empower the data science team and allow them to drive what is needed, and/or good enough then you'll get better results.
+- That's fine but dont call it science then.
+- Couple of thoughts:
+
+1. The consulting companies that actually deliver results tend to be the ones that stick around. So ultimately, you can promise the moon and deliver a turd, but you can only do that so many times.
+
+2. In my experience with consulting, they a) are great at using non-technical ensemble methods (i.e., estimate the same number using lots of different approaches), b) always give ranges. Those two things combined tend to protect them from overpromising.
+
+3. Ultimately they are a 3rd party and it's the customer/company's responsibility to vet the results shown to them and make sure they understand and agree with the logic used to derive them.
+
+Having said all of that - *especially* when consulting companies are brought in, it's normally because there is a question that needs an answer. Rarely do you bring a consulting company in with no problem statement - at least the general consulting types. Which means that, again, you are paying for the best answer they can produce. You can't hire them for a project and expect the answer to be "we can't do anything".
+
+But again, you should absolutely vet their work and make sure that you can defend any number they put together.
+- Make it look like a hurricane code of uncertainty.
+- Yeah I get it, you're giving good advice and I'm mostly just venting at this point but...
+
+[https://www.reddit.com/r/statistics/comments/c3vud9/my\_problem\_with\_data\_science/](https://www.reddit.com/r/statistics/comments/c3vud9/my_problem_with_data_science/)
+
+This thread is so indicative of the mindset that a ton of people with a stat background come with. I reread it just now to be sure, at no point in the \*entire\* thread does someone say "yeah, I saw someone else set up a poor experiment, and then I corrected them and showed them how to do it better!" It's all clutching of pearls and being shocked that you can't justify an absurd salary by existing solely to impede progress.

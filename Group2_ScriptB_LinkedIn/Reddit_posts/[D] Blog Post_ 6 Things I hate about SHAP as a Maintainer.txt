@@ -1,0 +1,41 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nyunr7/d_blog_post_6_things_i_hate_about_shap_as_a/
+Title: [D] Blog Post: 6 Things I hate about SHAP as a Maintainer
+
+Content:
+Hi r/MachineLearning,  
+I wrote this blog post (https://mindfulmodeler.substack.com/p/6-things-i-hate-about-shap-as-a-maintainer) to share all the things that can be improved about SHAP, to help potential newcomers see areas of improvements (though we also have "good first issues" of course) and also to get some feedback from the community.   
+Brief summary:  
+1. explainers can be slow, e.g. if relying on the ExactExplainer or PermutationExplainer  
+2. DeepExplainer does not support a lot of layers and for tensorflow the LSTM is not working anymore (for more information see the article)  
+3. TreeExplainer has a bunch of problems: it's legacy code, we discovered some memory issues and there are a couple open issues addressing bugs there  
+4. we are in dependency hell: lots of upstream packages break our pipelines regularly which is a huge maintenance burden  
+5. The plotting API is dated and not well tested, so a rewrite is hard  
+6. Other things: No JAX support, missing type annotations, etc.  
+  
+Anything you want to be fixed or improved about the project? Any reason why you don't use it anymore?   
+Very happy to talk about this here.
+
+Comments:
+- We forked SHAP in june 2023 [https://pypi.org/project/shaperone/](https://pypi.org/project/shaperone/) because it I think it stopped working with new releases of numpy and matplotlib and it was causing version upgrade roadblocks for us.
+
+But a little bit later an new group of maintainers got involved and started to fix things, and so we switched back to the original SHAP!
+
+ I guess you are part of that new team that re-ignited maintenance? But now you're saying it's a mess again? (or still?)
+- Hi, I've just read the post, and point 3 (TreeExplainer – fast but tough to change) caught my attention.  
+  
+Are there any open issues on GitHub discussing a rewrite in Rust or detailing the problems with the current C implementation? People interested in contributing could appreciate knowing where to start. Thanks!
+- Implementations of some methods seem to be all over the place, often riddled with magic numbers not observable for end user. AFAIK the issue with TreeExplainer paired with feature_perturbation="interventional" only using first 100 rows of dataset to calibrate expectation is still not addressed (https://github.com/shap/shap/issues/1810).
+- I have been using the tree explainer and the run times are atrocious with large datasets. It would be awesome if a fix for that could be introduced.
+- I joined the group of new maintainers relatively quickly and made my first contributions in October 2023. 
+
+No, I don‘t say it‘s a mess again, new features are being shipped and broken tests fixed. we also have regular releases. But as it is the natute of a large project, there are a lot of thinks that can be improved and this is what I wanted to show in this post.
+- No, there is no issue regarding this. When I talked to the author of shapiq, we came to the conclusion that Rust is a good option for this. I didn‘t file an issue for that, since I figured this is a pretty large project, that can only be merged once all tests pass. To support all features the C code provides is A LOT of work and the treeshap algorithm not trivial to implement. Therefore I started developping this on a separate repo, though it‘s nowhere near anything I would show around.
+But you‘re absolutely right, I‘ll file an issue with steps required and share it with the Rust community.
+- True! That's what I had in mind and thanks for the reminder to finally address this. There were some different opinions between maintainers about this, which halted progress on the issue.
+- Unfortunately the treeexplainer is one of the fastest (if not the fastest) way to calculate SHAP values due to an analytical formula we can run. The implementation there is already relatively optimized in terms of speed, but we could parallelize it, and/or get good support for the GPUTreeExplainer.
+- ah great!
+
+I appreciate the work you put it, and I also like this post you make. Awesome initiatives.
+
+SHAP is very widely used and an important tool. I remember that when we were struggling with issues back then, that SHAP was also part of the base Databrick environment, which has a huge use-base.

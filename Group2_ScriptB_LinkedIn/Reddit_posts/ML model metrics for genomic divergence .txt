@@ -1,0 +1,8 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1gqa0xs/ml_model_metrics_for_genomic_divergence/
+Title: ML model metrics for genomic divergence 
+
+Content:
+I am building a machine learning model for calculating genomic divergence in butterflies  and it’s a Bayesian logistic regression and the thing is I only have 8 butterflies genomes but the data is really good to train my model and so the main metrics I will be using is dXY, FST, dN/dS ratio, are there any metrics that would be nice to add to my model ? 
+
+Comments:

@@ -1,0 +1,87 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/sy6h7c/should_i_take_more_computer_science_or_math/
+Title: Should I take more computer science or math courses?
+
+Content:
+I am a biology and statistics major. I am considering doing a PhD in bioinformatics/computational biology, but am also interested in PhD'ing in biostatistics, and statistics/machine learning with a bio focus.
+
+To prepare, should I take more computer science or math courses? To let you know, I'd consider taking a real analysis course, a discrete math course, and/or an algebraic structures course for math, and for computer science, I'd consider taking a functional programming course and a computer systems courses.
+
+Note: I know that I'm basically okay with a biology and statistics major for comp bio, but want to get an opinion on what skills and/or concepts from other departments (particularly math or cs) helped them more in comp bio.
+
+&#x200B;
+
+Edit: Here are the relevant courses I have taken in cs/math/stats:
+
+Math:
+
+\- linear algebra
+
+\- 3d calculus
+
+\- an intro proof course
+
+&#x200B;
+
+Stats:
+
+\- probability
+
+\- an inference course
+
+\- two undergrad advanced stats courses notated as "modern regression" and "advanced data analysis"
+
+&#x200B;
+
+CS:
+
+\- Fundamentals of Programming
+
+\- An Imperative Programming Course
+
+\- An algorithms course (No coding. Somewhat theoretical, but proofs are not rigorous)
+
+\- An intro ML course
+
+Comments:
+- If you want to get into ML and in a stats program then real analysis is pretty important. Computer systems and so on are not directly ML related but are more software engineering. The knowledge of that could help you put ML into production but is not ML in itself, so it depends on what you are interested in.
+
+If you want to go into the theory of the models then real and functional analysis will be useful and looks good on PhD apps.
+- Math is a much better way to go.
+
+A very esteemed professor once told me, “When I hired mathematicians, they were able to learn the computer science that they needed.  But when I hired computer scientists, they couldn’t figure out the math.”
+
+You can be the best programmer in the world, but if you don’t know the math that you need to program, then it doesn’t matter.
+
+This doesn’t eliminate the need to program well.  You must be at least a somewhat proficient programmer.  You should know objects, what data structures are (linked list, tree, queue), and pointers.  You may never program with these things, but you still need to know what they are to have meaningful conversations about code with others and to read other people’s codes.
+- Kinda depends on what CS/math courses you've already taken
+- TBH it seems like you’ve already got a leg up on most bioinformaticians I know. Once you get some experience in applying those skills to actual projects you should will pretty sought after. There’s a fine line between knowing theory and knowing how to apply it.
+- All are good  but it will depend with what you aiming at...anyway get the assignments done quickly and accurately. Hit me up.
+- would you real analysis has any relevance with comp bio though? would you say that it also helps for PhD comp bio apps as well?
+- What background was the math professor in? As in, what math was he hiring people for? Part of me is skeptical, since that sounds like it has the "academic, theoretical  person thinks lowly about puny applied people with their puny brains" vibe
+- I updated my post to show relevant classes I've taken
+- Probably not for comp bio. But if you intend on getting into heavy ML research after a PhD you would need a math/stat/cs degree and often real analysis is a prereq for the former 2 while for CS often you want an analysis of algorithms proof based course.
+
+If you want to just do applied ML in comp bio then no.
+- Computer Vision.  It was Richard Hartley, who wrote the book "Multiple View Geometry" (one of the most popular books ever in computer vision).
+
+But this has been my experience as well.  I learned computer science well in school without knowing math well.  I was unable to contribute very effectively to projects, either in industry or in academia.  I went back to school to learn the math.  It took much longer; it's much harder.  It was well worth it.  I've now contributed meaningfully to many projects.  And it doesn't take much to become mathematically powerful:  linear algebra, probability, and Fourier transforms make you very powerful.
+
+Having said that, I'm sure you'll choose the path that's right for you.  And I wish you the best.
+- IMO anyone who expects to be writing programs and not just scripts should get a comp systems class in. It's good to know how the OS and hardware works even if you never leave Python land.
+
+Discrete math comes up in a lot of places and is definitely fundamental for many graduate CS topics.
+
+Functional programming is excellent IMO but in a very intangible way. I think it makes you a better programmer to understand different paradigms but most people probably won't go much further than (again, assuming Python) some lambda functions and a working understanding of lexical scope.
+
+Real analysis and algebraic structures are relatively niche even if you go into ML. I'd think the former might come up in your stats degree though.
+- Does that mean you think going into Real Analysis is overkill? Where do you feel like the bar is for both computer science and for math where you’re like “yeah, I pretty much can solve any problem, or most problems, that come my way?”
+- I loved my real analysis class, and it certainly empowered me.  So it depends on you, I guess.
+
+A great foundation in math is linear algebra (including abstract vector spaces, you should know what an inner product space is and how a function can be a vector), probability, and vector calculus (you should know what the gradient, the Jacobian, and the Hessian are).  After that I recommend a class on Fourier transforms (like the videos offered by Brad Osgood from Stanford), and a course on optimization (I’ve included a link to an intro class I like at the bottom).  A great foundation with programming is object oriented programming, data structures (linked lists, trees, queue), and an intro class on algorithms (like the series of books entitled “Algorithms Illuminated”).
+
+That gives you a very solid foundation, which you will strengthen and build upon with time.  And you will be able to make meaningful contributions to the projects you want to contribute to.  After that, it’ll be getting good experience in your chosen field and learning more about the parts of your field that interest you most.  For me, that included real analysis, geometry, computer architecture, and many more subjects.  bBut it might be different for you.
+
+https://nicholasdwork.com/teaching/si2016/session2/
+- I agree that math is nice and I should learn all the math I can, and plan on learning math on my free time. However, my question is more along the lines of “I have a limited number of free classes I can take while staying mentally sane. Should these classes be on theoretically-oriented CS or math.” So i’m less taking classes for my own reasons and more like “which courses demonstrate that I can do well in x grad school program / which courses are the most fundamental for comp bio.” Though, I don’t think your stance changes haha
+- For computational biology, you want more math classes.  The math is much more valuable than the programming.

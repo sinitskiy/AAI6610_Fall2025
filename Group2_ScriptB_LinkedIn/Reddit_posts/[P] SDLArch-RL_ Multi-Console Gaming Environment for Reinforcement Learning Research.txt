@@ -1,0 +1,31 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nn5x9t/p_sdlarchrl_multiconsole_gaming_environment_for/
+Title: [P] SDLArch-RL: Multi-Console Gaming Environment for Reinforcement Learning Research
+
+Content:
+Hey r/MachineLearning! I've been working on addressing a persistent pain point in RL gaming research - the setup complexity and limited scope of training environments.
+
+**SDLArch-RL** is a unified RL environment that integrates multiple console emulators (N64, PS2, Dreamcast, GameCube) with standard ML frameworks. Key technical features:
+
+* **Gymnasium-compliant interface** \- drop-in replacement for existing workflows
+* **Stable-Baselines3 integration** \- works out-of-the-box with PPO, SAC, TD3, etc.
+* **Efficient state management** \- leverages native emulator save states for fast episode resets
+* **Configurable observation spaces** \- raw pixels, processed features, or memory states
+* **Action space mapping** \- handles complex controller inputs to discrete/continuous actions
+
+Currently supports 4 emulator backends with plans for modern console integration (PS3, Xbox 360, Wii U). The environment abstracts away emulator-specific APIs while preserving access to low-level features when needed.
+
+**Technical implementation highlights:**
+
+* SDL-based architecture for minimal overhead
+* Memory mapping support for game-specific feature extraction
+* Reproducible training through deterministic save state handling
+* Multi-game training capabilities within single environment instance
+
+This opens up training on thousands of diverse games vs. the typical handful of custom environments. Particularly useful for transfer learning studies, multi-task RL, and curriculum learning research.
+
+Happy to discuss technical details or answer implementation questions. Thoughts on potential research applications?
+
+Git: [https://github.com/paulo101977/sdlarch-rl](https://github.com/paulo101977/sdlarch-rl)
+
+Comments:

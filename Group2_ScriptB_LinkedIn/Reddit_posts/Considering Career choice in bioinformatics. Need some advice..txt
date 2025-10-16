@@ -1,0 +1,76 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/92muhx/considering_career_choice_in_bioinformatics_need/
+Title: Considering Career choice in bioinformatics. Need some advice.
+
+Content:
+Mods feel free to remove this post if deemed too general for this sub.   
+
+
+Hello, I'm currently finishing up my bachelor's degree in Computer Science and am looking for options for further studies.  
+I am considering a Masters degree in bioinformatics.   
+I have a limited maths background however I have done units which exposed me to a good amount of Machine Learning. I have also been introduced to a little information theory applicable to bioinformatics like de bruijn graphs etc. I'm considering bioinformatics as a field of post-graduate studies because I'm interested in the real-world applications of programming and machine learning. However I am not sure how different bioinformatics is as a career choice to something traditionally more computer-science related like a software development. How much of the work include application of statistical concepts or is it just reliance on tools to model data? Do I have to commit to higher qualifications like a phd in bioinfo in order to get a job with a decent salary in the field? 
+
+Unfortunately I have had almost no biology exposure ever since Junior Highschool so it would be a stretch to catch up on it. I'd like to know if it would be possible to catch up on the bio side of things and if so what are topics I should be focusing on other than genetics?
+
+Due to the uncertainty of getting offered loans/ commonwealth support, I would also like to know if studying bioinformatics part time (over a longer period of time) would have any impact on the concepts and tools I learn (eg. languages, tools becoming outdated) . I know that this is the case in a growing field of science just like CS but would the skills I learn at the start be obsolete when I'm finished with the degree or when I find employment in the field? 
+
+I know that posts like these might be common and annoying but I would really appreciate it if someone from could give me some real advice or at least some personal experience and pointers. Thank you! 
+
+Comments:
+- Check the side bar for lots of information you asked for. 
+
+
+
+As for machine learning:
+
+I work with bacterial genomes and this topic is starting to become a thorn in my side. Are there good applications for it in the whole field of bioinformatics, absolutely. But do we really need a machine learning method for pan/core genome analysis when so many tools exist (that actually factor in for biological things), I'm not sure... It seems like one of those topics that CS people are trying to force into the field with no respect for the biological nature of the data.
+- As someone interviewing for industry positions, it's starting to feel like everyone's rushing to find nails to hit with the ML hammer, regardless of what they are trying to build.
+
+It's almost like interviewers want me to shoehorn in a ML project into my research just so that I can say I have experience with it. Have I taken a course? Yes. Have I dabbled with some ML packages in R? Sure.
+
+But I completed a computationally rigorous and satisfying PhD without formulating my problem as a classification or regression problem. And I did it with a much smaller amount of data than required to train a ML model. Somehow that seems to make me a weaker candidate than someone who published the 500th paper on subclassification of breast cancer patients using ML on TCGA data. Definitely annoying.
+- A good friend of mine and I were talking Machine Learning recently.  He works for Disney as a machine learning evangelist, and I formerly have done loads of procedural automation.
+
+So, I have several thoughts that might apply to this conversation:
+
+1: it's possible to get about %80 of the way there with procedural stuff - and often with about %20 of the effort.   There is exponential curve of "more effort" needed to get the rest of the way there the closer you get to the goal - in almost anything that needs to discriminate based on inputs.  (This insight comes from me -  I know, I've done it)
+
+2: (insight from him)  At a seminar he was at recently, he got a quote: We (as in all computer scientists) could spend the next decade just implementing the Machine Learning things we have learned in the last decade everywhere, and it would be of great benefit even if we made no new fundamental advances in Machine learning / A.I.  His arguments around varying industries made this compelling to me.
+
+So... whats my takeaway?  I think it's one of those topics where we need to balance the needs of the project against the technology.  It's like the process of selecting a nosql/document based database versus an sql / relational database, and the only real way to make that determination is to look deeply at the requirements.
+
+This implies that we all need to learn what Machine Learning can and can't do so that we CAN look at it appropriately against the requirements.  Then it can just be another tool in the toolbox.
+
+And it's clear that we need to be able to speak for it, or against it as the implementation as the requirements dictate.
+- I think this separation is unnecessary. You have to see machine learning as a 'new' tool. You wouldn't really say statistics has no place in Bioinf because they only look at p values and disregard the biological nature.  And some things, like for example enforcement of sparsity in models, just fits nicely with things like genome analysis where you have very fat and high dimensional problems.
+
+And if you honestly think that an unbalanced data set  would throw ML (your comment below) off, you seriously have no idea and are just ignorant about that area. The whole motivation is finding patterns in data sets that are not so nice. But if we just use nice data we could just use the same frequentist statistics stuff like in the last 100 years.
+- > . Somehow that seems to make me a weaker candidate than someone who published the 500th paper on subclassification of breast cancer patients using ML on TCGA data.
+
+But did your tool also increase the accuracy of classifying MNIST by another .01%?
+- The best is when they don't even realize that garbage in = garbage out. You have to have a good training set or your analysis is useless (on a practical scale). 
+
+I've had to deal with people wanting to use a training set for a ML classifier that is 47% one type of classification, the other 43% was the remaining 5 classifiers...take a wild guess what happened to the results?
+
+The biggest issue I've seen in the field is often we don't accurately know the full picture of what we're studying. If you can't feed a good representative (and balanced) training set in, your analysis is going to suffer.
+- Fully agree. 
+
+Also, if someone here would actually take a look at how applied ML groups do their work, they'd notice that they don't just throw ML algorithms at random problems. It's one of many tools
+- I didn't properly explain in my original comment apparently. For our topic it was an issue, I'm not making a broad statement (that's why I gave a bit of info on my field but oh well), I'm just speaking from my recent experiences.
+
+The unbalanced is more of an issue of not capturing the complete biological picture. Not all occurring subgroups necessary for our analysis are in the dataset I was referring. If you're trying to have a ML method for something that is a "solved" issue in bioinformatics, you should have every subgroup represented. Too often ML is being leveraged without actually thinking about the biology and what is occurring outside one or two datasets.
+- It did for the straw-man dataset I used to get my paper published! ;)
+- Dealing with an unbalanced dataset is common enough now that there are pretty routine procedures to deal with it although it's not exactly a solved problem. Oversampling with the SMOTE algorithm is the typical go-to.
+
+Anyway, to continue the theme of this chain, I agree that core bioinformatics don't really need machine learning, and especially not without adequate planning. That said, OP, if you want to find an intersection of ML and bioinformatics, there are people hiring. 
+
+Some other notes for OP I'll leave here:
+
+> How much of the work include application of statistical concepts or is it just reliance on tools to model data? 
+
+Day-to-day I typically just used tools, but understanding the output often requires understanding the stats and algorithms the software implements. When you plan out a new experiment you will definitely want to understand how they all work. Even if you're not coming up with novel algorithms yourself, you'll need to understand which software is appropriate for the data and goals you're working with.
+
+> Do I have to commit to higher qualifications like a phd in bioinfo in order to get a job with a decent salary in the field?  
+
+It helps but not necessarily. You should definitely get real experience during your masters with internships or research in a lab though. Imo that's also the best way to catch up on the bio topics if you feel you're lacking there.
+- The issue is the dataset doesn't have all the subsets represented that exist in "the real word". I should have specified a bit more in my post obviously... I'm all for using "unbalanced" data for other things, but for our topic it was not appropriate.

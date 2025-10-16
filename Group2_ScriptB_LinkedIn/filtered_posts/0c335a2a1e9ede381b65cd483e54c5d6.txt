@@ -1,0 +1,84 @@
+URL: https://www.linkedin.com/posts/mevanekanayake_pixcue-joint-uncertainty-estimation-and-activity-7270208674902532097-hAyr
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Mevan Ekanayake的动态
+Mevan Ekanayake
+
+Postdoctoral Researcher | Deep Learning | Cancer Research | Medical Imaging | Bioinformatics
+
+10 个月  已编辑
+
+Check out our latest paper in the Journal of Imaging Informatics in Medicine! 📚✨
+
+Deep learning models are incredible, but they come with uncertainties. This is especially true for MRI reconstruction, where deep learning models can struggle with certain regions of the image. Our research introduces PixCUE (Pixel Classification Uncertainty Estimation), a groundbreaking approach to uncertainty estimation in MRI reconstruction. PixCUE generates both the reconstructed image and an uncertainty map in a single forward pass through the deep learning model, significantly reducing computational costs. 🧠🔍
+
+Co-authors: Kamlesh Pawar, PhD Zhaolin Chen Zhifeng Chen Gary Egan
+
+📄 Read the full paper here: https://lnkd.in/ggaAZGAE
+
+#Research #DeepLearning #MRI #MedicalImaging #UncertaintyEstimation #PixCUE #AIinHealthcare #Innovation
+
+PixCUE: Joint Uncertainty Estimation and Image Reconstruction in MRI using Deep Pixel Classification - Journal of Imaging Informatics in Medicine
+link.springer.com
+41
+4 条评论
+赞
+评论
+分享
+Kh Tohidul Islam, PhD
+
+Lead AI Researcher – Australian Point-of-Care MRI Project | Deep Learning | Medical Imaging | PhD in AI and Computer Vision
+
+10 个月
+
+Congratulations!
+
+赞
+回复
+1 次回应
+Anthony Hannides
+
+Founder of Heal Music | NHS CEP | Award Winning Songwriter & Producer | Co-host of ‘The Life Changing Project’
+
+10 个月
+
+Interesting!
+
+赞
+回复
+2 次回应
+Sahan Dissanayake W. (EIT)
+
+Engineer - in - Training (EIT) EGBC |B.Sc. Eng.(Hons) | MBA | AMIE(SL) | A.Eng(SL) |MIEEE | MIET | Electrical & Electronic Engineering Professional
+
+9 个月
+
+Great work!
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+1,284 位关注者
+
+39 则动态
+查看档案  关注
+探索相关领域
+Deep Learning Applications in MRI Imaging
+Latest Developments in Deep Learning Applications
+Deep Learning Breakthroughs and Trends
+Emerging Innovations in Imaging AI
+How Machine Learning Impacts Hea

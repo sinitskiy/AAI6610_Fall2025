@@ -1,0 +1,69 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1n5d8fl/trouble_finding_where_to_learn_what_i_need_to/
+Title: Trouble finding where to learn what i need to make my project.
+
+Content:
+Hi, I feel a bit lost. I already built a program using TensorFlow with a convolutional model to detect and classify images into categories. For example, my previous model could identify that the cat in the picture is an orange adult cat.
+
+But now I need something more: I want a model that can detect things I can only know if the cat is **moving**,like i want to know if the cat did a backflip.
+
+For example, I’d like to know **where the cat moves within a relative space** and also its **speed**.
+
+What kind of models should I look into for this? I’ve been researching a bit and models like **ST-GCN (Graph Neural Network)** and **TimeSformer / ViViT** come up often. More importantly, how can I learn to build them? Is there any specific book, tutorial, or resource you’d recommend?
+
+I’m asking because I feel very lost on where to start. I’m also reading *Why Machines Learn* to help me understand machine learning basics, and of course going through the documentation.
+
+
+
+Comments:
+- Measuring the speed is tricky. You'd need to have a measuring stick or something that can tell you how to convert from pixels to meters. The stick also needs to be at the same "depth" as the cat; if it's too far away or too near, it's gonna look disproportionate to the cat, and your measurements will come out wrong.
+
+If you're not in a controlled environment, you could just use the cat's length as the measuring stick. Most cats are around the same size, and if your cat looks normal it can be used as a fair reference.
+
+What do you mean by "know where the cat moves within a relative space"? And what do backflips have to do with what you're trying to do?
+
+If you just want to know if the cat did a backflip or some other trick, a simple video classification model like timesformer or a 3D CNN can do that with minimal hassle.
+- Hi! I want to do a sign detection language program, i know how to detect shapes and things like hands (i already made the abecedary in sign language), but i also need to  detect for example a hand moving in a sequence, and the sequence + the handshape as a whole forms the sign.
+
+So i think that i need to have a model that can detect 3d movement because some signs use the person looking at certain direction, moving the arms in a certain pattern etc.
+
+Im never done these stuff so im confused on if just start by reading documentation haha.
+- So you want a sign language recognition model? I mean, you could've just said that in the post instead of doing the cat analogy, but ok :v
+
+The current state of the art for the phoenix2014 dataset (phoenix2014 is one of the most widely used sign language recognition datasets out there) uses a convoluted method that uses two networks at the same time to extract fast and slow movements across the video at the same time(fast movements are the hand signs and slow movements are the facial expressions).
+
+https://github.com/kaistmm/SlowFastSign
+
+It's really not beginner-level stuff, unfortunately :(
+
+However, the first methods for solving sign language recognition relied a lot on LSTMs, which are much simpler to design and understand. LSTMs are 90s technology, and there are a lot of resources out there for learning how they work and even more implementations.
+
+You could just do an LSTM implementation to see how far that gets you. I had a buddy that used LSTMs for sign language recognition for his undergrad thesis and it worked well as far as I remember. It wasn't state of the art by any means, but it worked and he could recognize signs.
+
+Try downloading phoenix2014 or some other sign language dataset and try to partner up with chatgpt to come up with an LSTM solution for the problem. I think that's a good place to start - not too hard, but not too easy either. Just beware that phoenix2014 is really large, like 30GB, so maybe start off with a smaller dataset or just randomly select like 200 videos off of phoenix to have a mini test bench.
+
+You might want to check out josh starmer's YouTube channel, he explains ML without all the complicated math so you can actually understand what's going on. He has a video on LSTMs
+
+https://youtu.be/YCzL96nL7j0
+
+Though for LSTMs, it might be good for you to check out RNNs as well, because LSTMs are essentially just RNNs with extra steps. It will do well to know what an RNN is to begin with so you know what their shortcomings are and how LSTMs solve them.
+
+https://youtu.be/AsNTP8Kwu80
+- Thankss!, i had no idea that existed haha.
+
+so basically this gives me what i need to just find the videos and train the models to recognize the new upcoming information?
+
+That is amazing, because in the country i want to make the translator the sign language is different from the rest of the world.
+
+  
+And yeahh i dont know if this is the best first project to make in machine learning but im really stubborn on the idea to make a sign language detector for my country and hopefully it will look good to find a job.
+- Yeah, you can train these models for any language if you have the proper dataset.
+- If you want something simple you could also try to do 3D convolution (by that I mean, analyze a block of frames like a volume of pixels). 
+
+This is a case where self-attention would probably work well but it is a bit more complex to set up.
+
+I have no experience with sign language, and I think /u/Chemical_Ability_817 gave good advice with RNN, see my proposal as an alternate possible route to consider in case it fails. Or if your experience is mostly on CNNs, a first try as it is just a matter of using the same logic one dimension higher.
+- Thanks, you helped me a lot, really.
+- You're welcome!
+
+Have fun with your project!

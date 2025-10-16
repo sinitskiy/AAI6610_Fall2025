@@ -1,0 +1,13 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/8j51st/dna_methylation_as_a_diagnostic_andor_prognostic/
+Title: DNA methylation as a diagnostic and/or prognostic marker for cancer?
+
+Content:
+What is the current consensus on DNA methylation as a diagnostic/prognostic marker for cancer? Alot of the research papers have a rather complicated methodology which produces seemingly good conclusions. I understand that from a logistical perspective the ability to just take just a small portion of a tissue sample and characterise it at a molecular level is of high value when the tissue yield and/or quality may be poor or insufficient for traditional histological diagnosis/characterisation. But, how valuable have DNA methylation patterns proven to be with regards to accuracy?
+
+
+Link to an example paper where machine learning was utilised with (seeimingly?) promising results. I am having trouble fully understanding the methodology of the techniques/statistics used, and am hoping someone can enlighten me. Thanks!
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5514741/
+
+Comments:

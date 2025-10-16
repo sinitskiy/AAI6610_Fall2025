@@ -1,0 +1,12 @@
+URL: https://www.linkedin.com/posts/ryan-w-gross_prevent-factual-errors-from-llm-hallucinations-activity-7273392698655444992-3Yj6
+Date: 2025-09-24
+Author: Unknown
+
+As I've been analyzing the announcements from AWS, one thing that stuck out for me was the differentiation that the AWS Formal / Automated Reasoning team provides. The new Bedrock Automated Reasoning fact checking is a really impressive achievement, and will likely remain differentiated for some time: https://lnkd.in/eXAceKAf. While this will only impact a subset of domains with clearly specified rules, these are often very-high-value use cases in regulated industries, and I'm excited to start using it soon. 
+
+For the nerds out there: this brings together 3 major branches of AI to 
+1. Transformer based machine learning that has lead to LLMs
+2. Reinforcement learning to make the LLMs follow instructions effectively
+3. Expert systems to drive automated reasoning for mathematically verifiable certainty
+
+Their work in automating the analysis of IAM policy enforcement, bug fixes & controls for S3 and other core distributed systems in the cloud, and core cryptography use cases like improving RSA efficiency has continued to differentiate AWS at the foundational level, but having that more directly exposed to business customers is an exciting turn of events.

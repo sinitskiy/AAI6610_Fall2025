@@ -1,0 +1,88 @@
+URL: https://www.linkedin.com/posts/durasovnikita_enabling-uncertainty-estimation-in-iterative-activity-7220314225598959616-mXbX
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Nikita Durasov, PhD的动态
+Nikita Durasov, PhD
+
+Research Scientist, VLM & Semantic Search @ NVIDIA
+
+1 年  已编辑
+
+Visiting Vienna for #ICML next week?
+
+Then come see our posters! We present several novel methods in the field of deep learning uncertainty estimation. Here are the details:
+
+1️⃣ 𝐄𝐧𝐚𝐛𝐥𝐢𝐧𝐠 𝐔𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 𝐄𝐬𝐭𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐢𝐧 𝐈𝐭𝐞𝐫𝐚𝐭𝐢𝐯𝐞 𝐍𝐞𝐮𝐫𝐚𝐥 𝐍𝐞𝐭𝐰𝐨𝐫𝐤𝐬
+
+	•	𝐀𝐮𝐭𝐡𝐨𝐫𝐬: Nikita Durasov, Doruk Oner, Jonathan Donier, Hieu Le, Pascal Fua
+	•	𝐃𝐚𝐭𝐞 & 𝐓𝐢𝐦𝐞: Thursday, July 25th, 1:30 - 3:00 PM CEST
+	•	𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧: Hall C 4-9, #1308
+	•	𝐏𝐨𝐬𝐭𝐞𝐫: https://lnkd.in/esA3Py7v
+
+2️⃣ 𝐙𝐢𝐠𝐙𝐚𝐠: 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐚𝐥 𝐒𝐚𝐦𝐩𝐥𝐢𝐧𝐠-𝐟𝐫𝐞𝐞 𝐔𝐧𝐜𝐞𝐫𝐭𝐚𝐢𝐧𝐭𝐲 𝐄𝐬𝐭𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐓𝐡𝐫𝐨𝐮𝐠𝐡 𝐓𝐰𝐨-𝐒𝐭𝐞𝐩 𝐈𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞
+
+	•	𝐀𝐮𝐭𝐡𝐨𝐫𝐬: Nikita Durasov, Nik Dorndorf, Hieu Le, Pascal Fua
+	•	𝐃𝐚𝐭𝐞 & 𝐓𝐢𝐦𝐞: Sunday, July 21th, 9:30 - 11:00 AM & 2:15 - 3:45 PM CEST
+	•	𝐋𝐨𝐜𝐚𝐭𝐢𝐨𝐧: 6th Symposium on Advances in Approximate Bayesian Inference
+
+We look forward to engaging conversations and insightful feedback. See you there!
+
+#ICML2024 #ICML #UncertaintyEstimation
+
+Enabling Uncertainty Estimation in Iterative Neural Networks
+icml.cc
+23
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+6,241 位关注者
+
+29 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

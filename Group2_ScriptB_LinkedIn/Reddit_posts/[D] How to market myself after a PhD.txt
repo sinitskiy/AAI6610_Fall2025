@@ -1,0 +1,70 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m01hno/d_how_to_market_myself_after_a_phd/
+Title: [D] How to market myself after a PhD
+
+Content:
+Hello all. I am doing a PhD in Computer Science at a mid tier university in Europe (not Cambridge, not ETH Zurich, but still a good one). My major will be in Data Science, the title of my dissertation will be along the lines of “Multimodal Machine Learning for Healthcare”.
+
+My background is not in computer science: I was a healthcare professional, and I took a Master in Health Informatics. My thesis was in Data Science, and after that I started a PhD at the same university.
+
+At the moment I have just finished my second year. I have two conference papers as first author and I have submitted two journal papers, still as first author. I have also submitted a few conference papers not as first author, with master students that I have supervised. None of these papers is technically innovative: they are applied papers. My planned work for the coming years is more technical (developing explainability techniques).
+
+I still have two/three years of PhD in front of me, and I am getting scared of what will happen afterwards. I have been told that IF there will be an opening to stay at my university and teach (emphasis on the if), I would be considered a good applicant.
+
+That’s great, and it would be my first choice, BUT:
+- it’s impossible to know if these positions will exist close to my graduation date
+- competition exists, and these positions are usually for a single opening. No one can guarantee that I’ll be the top applicant.
+
+I’m honestly scared of betting everything on a possibility that might not be there for me in the end.
+In the coming three semesters, I could decide to spend some time outside my department: using Erasmus to go to another university in Europe, as a student and possibly teaching some courses, to the US, where one researcher might be interested to write a paper together, or to a pharma company in my country, where my supervisor has some contacts.
+
+I also have two/three years to study more, and to study different things.
+If I will have to transition to the industry, I am scared that I would not be a good enough programmer. I would prefer positions as a project manager, possibly with some technical aspects, but not completely focused on producing code as fast as possible.
+
+Based on your experience, do you have any suggestions on what to do to try to improve my possibilities after graduation?
+
+
+
+Comments:
+- You market yourself as the perfect applicant for that job position. I tried for an evening position, and didn't get it. But if you're a competitive faculty applicant you will be competitive for many industry positions. 
+
+Is focus on the building the academic resume personally. If you can do a both university and pharma, you certainly should. If you have to pick, it's a little tougher, but I would personally do the eramus, and try to hide a professor with strong industry ties. 
+
+My experience of industry is that who you know is the most valuable tool.
+- Going into the market after a PhD, there are a some things that will help a lot:  
+- understanding that in the market, deadlines are part of the deliverable, and you must do "whatever fits the time". It is important to show that you can switch to that mode of work.  
+- having some project that you can talk about during some interviews. Maybe what you are doing in your thesis is sufficient, but if not, you better do some projects and host them on your github/gitlab/wtv.  
+- data scientists are famous for producing horrible code, don´t be that guy (also don´t go full clean code. Never go full clean code). It is expected that you can jump in a large code-base and work with a branch-like style of development. Are you ok working off a branch, dealing with some conflicts merging main back and creating a PR?  
+- You should be able to write simple SQL and read some more complex queries. Being able to work with a CTE or sub-query, and working with window functions is sufficient for most data scientists.  
+- Do some basic "storytelling with data" course, and some basic graphing good practices.  
+- Join some sort of digital community for some tooling/area that you are interested, and be active in it. If you stomach it, build a digital presence.
+- Feel free to dm me, I was in a somewhat similar situation (also Healthcare to CS) and just finished my PhD not too long ago and got quite a bit of offers
+- You a doctor. Pretty cool
+- Similar case here: Engineering graduate, did my master thesis in ML then a PhD in ML also at a mid-high tier (lower than Cambridge and ETH but within the top 110).
+
+
+Assuming you're considering moving to industry as an ML engineer/data scientist, what found helped is to acquire industry skills while you're on your PhD. Examples include cloud computing platforms (look for whatever is most common where you live: GCP, AWS, AzML), data platforms (for example Snowflake, Databricks...) among others. I can't speak for what is relevant in your field but a chat with people already in the industry will make it easier for you. You can reach out to people on LinkedIn.
+
+
+In my case, I got a certificate from AWS while doing my PhD. Not that it made the deal for me (the company is mostly focused on Azure) but it showed my interviewers that I was serious about transitioning to the industry and that I'd put some effort into it. I hope that helps :)
+- "Hello i have a doctorate on computer sciences, and i'm the best"  
+done...
+- you’re in a strong spot with a rare combo of healthcare and data science. start shaping your profile for both academia and industry by highlighting applied impact, not just papers. build a small project portfolio, improve communication skills, and document your work clearly (LinkedIn, GitHub, personal site).
+
+use Erasmus or pharma contacts to gain real-world exposure — it boosts both credibility and network. if you’re leaning toward project management, focus on being a strong technical communicator, not just a coder. you’ve got time — just be intentional with how your profile evolves from here.
+- You've already built a rare blend, domain knowledge and data science. That’s huge in healthcare ML. If you're not aiming for hardcore coding roles, focus on sharpening communication, stakeholder management, and model-to-impact translation. You'd be a strong fit for applied research or technical PM roles in healthtech, especially if you leverage those Erasmus/pharma connections early. Ever tried shaping your papers into portfolio-style case studies? They speak better than just citations in industry.
+- Anything ML is skyrocketing and I don't see that abating any time soon. Slap that on your LinkedIn and sit back as the recruiters fall over themselves.
+- I'm interested in your work - multi-modal ml things.
+
+Could you share some links to your papers please?
+- Congrats for your PhD, I am applying for similar roles, AI/Data science healthcare, I am just an engineer MS in CS, I have been going through job applications recently, I try to leverage my 14yoe experience but recruiters often asking me why companies should pick me when they can find fresh PhD with the latest tech willing to work for almost nothing and absurde overtime.
+- Thanks, I’ll try to see if I can do two shorter stays instead of a longer one! That’s something that I did not think of, honestly
+- Always this. As far as which job, you could be a coveted "researcher." The engineer roles, many are saying they're trending toward "natural language spec guru" which may come from hard knocks moreso than specialized study. 
+
+New to the field so people lmk how I'm wrong!
+- Thanks! DM incoming!
+- I’m sorry, but I don’t really feel like doxxing myself. I can point you to some relevant literature (not mine) and if you have any questions feel free to ask me anything, I’m always happy to discuss that topic
+- I’ve been working for almost nothing and with absurd overtime for a couple of years now, I’m not sure that I’d be willing to keep doing that indefinitely tbh
+- That's understandable. Please point me to works you find interesting.
+- Me too! I'm doing a Master in AI and multimodal healthcare applications is a long time goal.
+- I know that sucks but that is a trend in a current market where there are more candidates than open roles. Also it could also be a tactics from recruiters that want me to lower my salary expectations...

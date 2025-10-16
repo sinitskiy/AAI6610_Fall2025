@@ -1,0 +1,96 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kuxa7r/final_year_project_ideas_wanted_computer_vision/
+Title: Final Year Project Ideas Wanted – Computer Vision + Embedded Systems + IoT + ML
+
+Content:
+Hi everyone!
+
+I’m Ashintha, a final-year Electronic Engineering student. I’m really into combining computer vision with embedded systems and IoT, and I’ve worked a bit with microcontrollers like ESP32 and STM32. I’m also interested in running machine learning right on these small devices, especially for image and signal processing stuff.
+
+For my final-year project, I want to do something different — a new idea that hasn’t really been done before, something unique and meaningful. I’m looking for a project that’s both challenging and useful, something that could make a real difference.
+
+I’m especially interested in things like:
+
+* Real-time computer vision on embedded devices
+* Edge AI combined with IoT
+* Smart systems that solve important problems (like in agriculture, health, environment, or security)
+* Cool new ways to use image or signal processing on small devices
+
+If you have any ideas, suggestions, or even know about projects or papers that explore new ground, I’d love to hear about them. Any pointers or resources would be awesome too!
+
+Thanks so much for your help!
+
+— Ashintha
+
+Comments:
+- An automatic lighting system. One camera per room, one or more lights per room, and a multi modal language model to decide which lights should be on. For example if someone's reading in bed, turn their bed lamp on. When eating dinner turn bright overhead lights on, when watching TV dim the lights, when everyone's in bed turn all the lights off. 
+You could extend this with a dumb mode, that uses object detection to just turn on lights in rooms people are in. You'd need to find home assistant compatible smart lights, and probably raspberry pi pico + cameras for each room.
+
+
+You could build BMO from adventure time. I would 100% buy it off you after.
+
+Self driving RC cars have been done before but would be very cool. 
+
+This would be hard, but taking in dashcam footage and open maps directions, and applying forza like driving lines to the road would be awesome.
+- Make a low cost insect detector with movement tracking for 1080p camera clips.
+
+IoT to record and clip videos from multiple cameras, and also noify user devices.
+
+ML for recognition of insects over background and tracking the movement. With openCV, a pretrained vision model or even making fine tune to better accuracy.
+
+This system would notify the user if a insect was detected and would also send the user a clip with time stamps and movement markers to show the user the vulnerable entry point the insect used and where the insect went, so they can solve the issue real quick.
+
+Use cases for a system like that could be checking the sanity of the environment in kitchens on houses, restaurants, enterprises... To ensure no insects are inside critical zones for people health.
+- I once did a final year project, which involved occupancy sensing using low quality thermal cameras, and then based on the number of occupants, the lighting and other necessary appliances were controlled for saving energy.
+The whole idea lies around privacy preserving estimation through thermal cameras. U can create a whole pipeline for automation of the task and run it on low powered edge devices.
+Also you can modify this by adding more features.
+- Can I dm?
+- I would recommend looking into federated learning. A pretty underdeveloped area, but still quite interesting, so there's lots of potential for novelty. Plus it's one of the most IoT+ML topics I've heard of
+- I have done something recently for my fyp, and I got many ideas
+If you're interested  DM
+- If you need help with developing firmware with NUCLEO-WL55 drop me a message
+- ChatGPT response:
+
+# 🌱 2. Edge-AI Plant Health Monitor Using Multispectral Imaging
+
+**Tech Stack:** ESP32 + low-cost NIR sensor + TinyML + OpenMV Cam  
+**Overview:**  
+Monitor crop health by analyzing leaf reflectance in near-infrared (NIR) and visible light. Use embedded ML to detect:
+
+* Nutrient deficiencies
+* Drought stress
+* Disease symptoms
+
+Send alerts to farmers before symptoms are visible to the naked eye.
+
+# 🏠 3. Real-Time Home Intruder Detection System with Object Re-Identification
+
+**Tech Stack:** STM32 + ESP32-CAM + TFLite Micro + MQTT  
+**Overview:**  
+Detect people entering a home and identify whether they’re family or intruders using on-device re-ID models (face embedding + similarity check).
+
+* Store face embeddings on a local MCU flash or SD card.
+* Trigger alarm + send snapshot to phone if a stranger is detected.
+* Entirely local processing—no cloud dependency.
+
+# 🩺 4. Smart Fall Detection and Health Monitor for the Elderly
+
+**Tech Stack:** ESP32 + OpenMV Cam + IMU + TinyML  
+**Overview:**  
+Use computer vision + IMU (accelerometer/gyroscope) to detect unusual posture or sudden falls.
+
+* Classify fall vs. sitting/lying.
+* Notify caretakers via IoT.
+* Optionally monitor breathing rate using visual motion analysis.
+- Hey, thanks so much for sharing all these awesome ideas! I really appreciate the time and thought you put into it.
+- Hey, thanks a lot for sharing your project idea! It was super helpful and easy to understand. I really appreciate you taking the time to explain it — it actually gave me some new ideas too. Means a lot!
+- Sure, feel free to DM me!
+- Can I DM u
+- Too lazy to respond
+
+Too lazy to read
+- Thinking and never making stuff like this is how I spend most of my time tbh. Good luck with whatever you choose
+- start breaking ur project in parts, and try to achive step by step , if u r just keep looking at it , it will waste ur time like above said by my Friend.   
+Just start and u can do it
+- Sure
+- Hello, fellow dreamer!

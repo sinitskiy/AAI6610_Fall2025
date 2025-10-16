@@ -1,0 +1,101 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/15ci845/conformal_prediction_with_python_uncertainty/
+Title: Conformal Prediction with Python (Uncertainty Quantification in Time Series Analysis)
+
+Content:
+Recently I discovered Conformal Prediction which in a nutshell gives you a prediction interval instead of a single point prediction for a given input.
+
+As far as I understand it works like this (very simplified and I just started learning TS and CP so take everything I write with a grain of salt):
+
+1. Choose forecasting model for single point prediction as usual (ARIMA, ES, NBEATS, NHiTS, etc.) and train.
+2. Define significance level alpha (e.g. 0.1) so 90% of predictions lay within calculated interval.
+3. Set coverage rate and iteratively calibrate prediction intervals using validation set for n steps.
+4. Throw new data point into model and get prediction interval.
+
+I am really interested in using this method of uncertainty quantification in combination with regression (for now). My goal is to find a swiss army knife for Conformal Prediction that features all relevant TS models + CP features and is easy to use and set up.
+
+I've found these python libraries on github:
+- neuralforecast
+- mlforecasts
+- statsforecast
+- sktime
+- river
+- darts
+- tsai
+- LightAutoML
+- MAPIE
+- crepes
+- fortuna
+
+I've already researched a lot, but honestly, I feel a bit overwhelmed by the complexity of the maths, statistics and coding as well as terminology used in the documentation. So I am hoping for some experienced data scientists that could help me out with my questions below and provide a clearer picture on what approach to focus on.
+
+1. What is your general opinion about Conformal Prediction? Is it worth digging into it for business related tasks? Is it empirically more valid than classical approaches or is it just hype?
+
+2. Is there a difference between "Probabilistic Forecasting" and "Conformal Prediction"? Is Conformal Prediction a more modern approach of Probabilistic Forecasting or is it a synonym?
+
+3. Which of those above mentioned libs offer Conformal Prediction features? I've read that sktime for example "only" has probabilistic forecasting, so I'm unsure which library offers the real deal (in case that there is a difference between the two).
+
+4. What are your favorite tools/libs for Conformal Prediction that include all relevant models and are easy to use?
+
+5. What alternative approaches do you use to calculate Conformal Predictions for example when facing a regression problem?
+
+I am very excited for your answers and sorry if I messed up any lingo or anything else! Feel free to correct me.
+
+Here is the [awesome conformal prediction](https://github.com/valeman/awesome-conformal-prediction) repository for further information.
+
+[Source](https://www.semanticscholar.org/paper/Conformal-Prediction%3A-a-Unified-Review-of-Theory-Zeni-Fontana/7e8abba36e3f196cc1967957d04cf6296b3bb6d4) of the image.
+
+Comments:
+- Try stacking methods, use one of the models you defined as your base model and then re weight them according to their performance.
+- In time series forecasting prediction intervals are very common. Typically it's supported by assuming a parametric distribution (eg normal). Packages like darts and sktime support probabilist forecasting for most models.
+
+Conformal Prediction intervals are non-parametric (ie no need to assume a certain distribution). I'm not aware of any python packages that currently support it. Let me know if there are any. Some support quantile regression, which probably comes close.
+
+In any case, I would first get familiar with standard probabilist forecasting.
+- [These](https://valeman.medium.com) blog posts are also great to dive into CP.
+- This is a cool picture but where's the article?
+- You can use any library that has implemented Conformal Prediction - this includes all Nixtla ecosystem (neuralforecast, mlforecasts, statsforecast, sktime, river). Both MAPIE and Amazon Fortuna also have implementations of EnbPI model. 
+
+&#x200B;
+
+1) "Is it empirically more valid than classical approaches or is it just hype?"
+
+Which 'classical' approaches do you mean - most of classical approaches do not have theoretical guarantees of correct prediction intervals out of sample. Conformal Prediction does.
+
+2) "Is there a difference between "Probabilistic Forecasting" and "Conformal Prediction"?"
+
+Forecasting is by definition for time series, Conformal Prediction could be applied to both time series and non time series, including classification, regression and much more.
+
+3) "Which of those above mentioned libs offer Conformal Prediction features? I've read that sktime for example "only" has probabilistic forecasting, so I'm unsure which library offers the real deal (in case that there is a difference between the two)."
+
+See above - all Nixtla ecosystem (neuralforecast, mlforecasts, statsforecast, sktime, river). Both MAPIE and Amazon Fortuna also have implementations of EnbPI model. 
+
+&#x200B;
+
+[https://valeman.medium.com/conformal-prediction-forecasting-with-mapie-library-for-conformal-prediction-7aac033ae3ef](https://valeman.medium.com/conformal-prediction-forecasting-with-mapie-library-for-conformal-prediction-7aac033ae3ef)
+
+[https://valeman.medium.com/probabilistic-forecasting-with-conformal-prediction-and-neuralprophet-af9c87901d94](https://valeman.medium.com/probabilistic-forecasting-with-conformal-prediction-and-neuralprophet-af9c87901d94)
+
+[https://valeman.medium.com/multi-horizon-probabilistic-forecasting-with-conformal-prediction-and-neuralprophet-5ec5af3888c8](https://valeman.medium.com/multi-horizon-probabilistic-forecasting-with-conformal-prediction-and-neuralprophet-5ec5af3888c8)
+
+[https://valeman.medium.com/demystifying-enbpi-mastering-conformal-prediction-forecasting-d49e65532416](https://valeman.medium.com/demystifying-enbpi-mastering-conformal-prediction-forecasting-d49e65532416)
+
+[https://valeman.medium.com/conformal-prediction-forecasting-with-nixtlas-statsforecast-cc39b9e30b36](https://valeman.medium.com/conformal-prediction-forecasting-with-nixtlas-statsforecast-cc39b9e30b36)
+
+&#x200B;
+
+4) 'What are your favorite tools/libs for Conformal Prediction that include all relevant models and are easy to use?" MAPIE is #1 Conformal Prediction library. All libraries listed on [https://github.com/valeman/awesome-conformal-prediction](https://github.com/valeman/awesome-conformal-prediction) both for time series and non time series in multiple languages including Python, R and even Julia.
+
+5) 'What alternative approaches do you use to calculate Conformal Predictions for example when facing a regression problem?' There are plenty of ways to do it, in addition to Inductive Conformal Prediction some of the most popular methods include Conformalized Quantile Regression and Jacknife+
+
+[https://valeman.medium.com/jackknife-a-swiss-knife-of-conformal-prediction-for-regression-ce3b56432f4f](https://valeman.medium.com/jackknife-a-swiss-knife-of-conformal-prediction-for-regression-ce3b56432f4f)
+
+[https://medium.com/@valeman/how-to-predict-quantiles-in-a-more-intelligent-way-or-bye-bye-quantile-regression-hello-24a65e4c50f](https://medium.com/@valeman/how-to-predict-quantiles-in-a-more-intelligent-way-or-bye-bye-quantile-regression-hello-24a65e4c50f)
+
+&#x200B;
+
+My book '[Practical Guide to Applied Conformal Prediction: Learn and apply the best uncertainty frameworks to your industry applications](https://www.amazon.com/Practical-Guide-Applied-Conformal-Prediction/dp/1805122762/ref=sr_1_5)' [https://a.co/d/jk0W9Bp](https://a.co/d/jk0W9Bp) has all of it and much more covered and is available for preorder.
+- Thanks for your input. 
+
+I think I've found two dedicated conformal prediction libraries: nonconformist and puncc. Would love to hear what you think about them.
+- https://arxiv.org/pdf/2005.07972.pdf

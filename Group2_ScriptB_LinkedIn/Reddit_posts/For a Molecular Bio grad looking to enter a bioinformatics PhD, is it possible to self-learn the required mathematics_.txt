@@ -1,0 +1,68 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wytedd/for_a_molecular_bio_grad_looking_to_enter_a/
+Title: For a Molecular Bio grad looking to enter a bioinformatics PhD, is it possible to self-learn the required mathematics?
+
+Content:
+Hi everyone, 
+
+I'm a bachelor of science grad with a year of undergraduate research which was a mostly wet lab with some bioinformatic tools. I do have some experience with computer programming, but I am quite unsure about the maths required to tackle the quantitative side of a bioinformatics Ph.D. 
+
+I'm interested in working with machine learning and statistical model development, and I'm somewhat aware of the mathematics that may be necessary for this (Linear algebra, multivariate calc, probability/statistics, etc).  I have taken a first-year stats course and some stats workshops in my research year.
+
+My question was is it possible for a wet-lab grad to self-learn the necessary mathematics and begin a quantitative-science Ph.D. without completing a master's? The time period for learning this would be about 4-6 months.
+
+Thank you.
+
+Comments:
+- I’m assuming you’re talking about applied machine learning and not developing machine learning so honestly the main maths you need is linear, multivariate calc, and probability. I think this is reasonable within the time span.
+- You could also just take the foundational math classes during the bioinformatics PhD, which is what I'm doing right now. Students come from all sorts of backgrounds in bioinformatics and have at least one weak area out of bio/programming/stats. Programs will typically have specialized courses for bioinformatics students that bring them up to speed on that weak area. Although if you have a lot of time on your hands then there's nothing wrong with learning it now. Just don't feel like you absolutely *need* to.
+- Um I mean… why self teach the maths you need if you’re entertaining joining a PhD? Just take the classes you want to learn. 
+
+I took a linguistics class when I was learning about NLP. Literally classes are free and you do not have to pay for the text book just audit the classes and learn. I took like 3 classes a semester as a PhD student. All in different disciplines to get a better understanding of my field and how other fields contributed to the work. 
+
+If you need a mathematics background, go get it. It’s free as a PhD student. Seriously, in my third chapter I took a computer vision course in the physics department and a soil microbiology course in the soils and sediments department. I had a computer vision project that had mycorrhiza fungi I needed to identify and image.
+- My background is in behavioural neuroscience, and my PhD is in neuroepidemiology, working with lipidomic/metabolomic data. So I wouldn’t consider myself doing a full bioinformatics PhD. I am also doing wet lab work, which is a reason I was accepted.
+
+  
+ I do also have prior first year biophysics teaching experience, and this got my interest up in self learning maths, just refreshing highschool maths (probability, algebra) and it was attainable to match first year physics, but I’m not so confident at the PhD level. I also have some interest in coding, but not enough to be finishing my hobby projects/online courses etc. But it is enough to keep doing PhD related coding in my own time.
+
+  
+Basically, I have not been expected to really understand the maths behind the techniques I’m using, because the computer is doing the work for me. Download that package into R, read that documentation, discuss with supervisor/teams mates and lets go. We have bioinformaticians and mathematicians on the team. 
+
+  
+I’m doing linear and logistic regression, mediation analysis and Weighted Gene Correlation network Analysis (WGCNA), and I’m trying to self learn the maths behind these as much as possible but haven’t got there yet, because it’s not really expected.  A problem is I've been trying to self learn a lot and it's hard to pick a focus - computer science, more chemistry (at least I have some background in it), machine learning as well as R packages.  
+
+
+ In contrast, I did a masters level biostatistics subject last year, as well as some epidemiology subjects, and I felt I learned much better compared to self learning. I felt the difference  was due to the assignments where I learn I don’t understand something as much as I thought I did, as well as being ‘forced’ to make time for it (with supervisors considering it part of my job). Watch out for just passively watching youtube vids, you might find it all makes sense, but you can’t hold onto the information.
+- Assuming you have a good foundation in maths, this is absolutely doable.
+Just to add, one important area of maths you have missed off is numerical methods.
+Happy learning!
+- I did biochem BS to bioinformatics PhD with basically no math (freshman calculus).  Worked out fine, though math is the weakest part of my skill set to this day.  I’d say CS-style data structures and algorithms is less negotiable, math is hit or miss depending on exactly what you end up doing.
+- In my Master, around 30 people started, 10 people dropped because they couldn't handle it, and 3 were able to finish the program in 2 years. The rest took longer.
+I'm a biologist and I am among the 3. The math was challenging at first.
+
+EDIT: I'm starting a PhD in October.
+- You can do whatever you want. Most of us eat paint.
+- I am quite interested in applied machine learning, what you're saying seems like it is quite doable in the given time frame. Thanks for the help!
+- Ah, that's interesting, one of the reasons I didn't pursue my master's was mainly because many Ph.D. programs will train candidates and the time and effort towards the masters could be used elsewhere. Thank you for the input, I'll definitely consult my Ph.D. program regarding foundational classes.
+- Thanks for the reply. That's actually quite eye-opening, I was unaware that it was possible to audit university courses while completing Ph.D. studies. It could definetly help improve my maths foundation. 
+
+Did you find the coursework load to be manageable whilst completing your Ph.D. duties?
+- Thank you for your reply, you seem to be doing a lot of interesting research within your program. 
+
+One concern I definitely had was tackling Ph.D.-level mathematics with just a high school/undergrad foundation in maths. So self-learning was a must. One workaround that I found was consulting the department of science/maths at my university and asking if they recognized any Coursera/edX courses equivalent to their undergrad maths courses.
+
+Thinking about it further, auditing univeristy maths classes and taking them seriously early on in a PhD program seems like quite a viable way to build the maths foundation needed for bioinformatics.
+- Didn't know that! I'll add numerical methods to my study list, thanks for the reply :)
+- Thanks for the reply, makes sense for algorithms and ds to be necessary to do anything with computers.
+- That's interesting, do you reckon bio students usually struggle with the maths and compsci needed for bioinformatics?
+- in applied ML, the strongest weapon you have is philosophy and reasoning tbh.
+
+Both of these things are of course coupled to the math behind ML, but at the end of the day the difference between a good and bad model is how well it generalizes to the real world. And how impactful it is, I guess.
+
+Bad methodology plagues ML. Don't be one of those people that picks up an ML tool and sets out to solve a problem because it's your favorite tool or method. Find a problem first, then use ML.
+- Yes, in general we were slower making sense out of definitions, and although we didn't have many proofs in the exams, most of use were not used to the usual techniques used for mathematical proofs and we couldn't follow along (for example: if you want to prove two sets A, and B are equal, you, You prove A is a subset of B and B is a subset of A. If you are not used to this, you get confused when it's not shown in a explicit way. The same is true for proofs by contradiction, and many of the basic tools or routines used in mathematical proofs). Also coding was rough for some. Having to learn at the same time how to solve the problems in an algorithmic way, and fighting with the language-specific syntax used for doing so can be overwhelming.
+
+EDIT: Some typos.
+- Thanks for the input :), I also think critical thinking/problem-solving will be as important as the technical CS knowledge. I'll definitely consider this during my Ph.D.
+- Thanks for the detailed reply. I can see how proofs and such can be foreign for students from a bio background, I did struggle with it a little bit when it came to proofs of correctness in Algorithms and Data structures.

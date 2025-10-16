@@ -1,0 +1,61 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mzsrt2/d_too_much_of_a_good_thing_how_chasing_scale_is/
+Title: [D] Too much of a good thing: how chasing scale is stifling AI innovation
+
+Content:
+Dear [r/MachineLearning](https://www.reddit.com/r/MachineLearning/) friends,
+
+Hello everyone! I hope you are all doing well out there.
+
+I've been observing a pattern in the AI research field that I can only describe as a "Mass Amnesia." It seems we're forgetting the valuable research paths we were on before the ChatGPT moment.
+
+In my latest blog post, I argue that while scaling up LLMs was initially a courageous endeavour, the current obsession and monoculture around it is actively keeping us stuck. Instead of building on a diverse set of ideas, we're chasing a single approach, which I believe is making us amnesiacs about what came before and what's possible.
+
+I'd love for you to read my spicy takes and share your own. Let's tear my arguments and ideas apart. ;)
+
+🔗 **Full Article:**[https://pieces.app/blog/the-cost-of-ai-scaling](https://pieces.app/blog/the-cost-of-ai-scaling)
+
+I look forward to your arguments and thoughts.
+
+Regards,
+
+Antreas
+
+  
+PS. This is a repost of [https://www.reddit.com/r/MachineLearning/comments/1mu28xl/d\_too\_much\_of\_a\_good\_thing\_how\_chasing\_scale\_is/](https://www.reddit.com/r/MachineLearning/comments/1mu28xl/d_too_much_of_a_good_thing_how_chasing_scale_is/) because it was removed without any explanation and the mods never replied to my queries on what was done wrong and how I could modify the post so it would abide by whatever rule I inadvertently tripped on.  
+
+The post was starting to get some real discussion going when it was removed and wanted to give this another chance as I want to hear what everyone has to say and engage in discourse. 
+
+Comments:
+- If you want to make this point, you pretty much have to take into account and explicitly address Sutton's Bitter Lesson, and while it predates "transformer revolution", it provides some reasoning for \*why\* we abandoned most of the various NLP research paths we were on before it - because all our effort of putting in more explicit knowledge (e.g. linguistic, or symbolic reasoning) in our system architectures didn't (and IMHO couldn't) solve our NLP task problems in a way that scaling (and scalable architectures) could and did.
+
+Of course, for quite a few things the current techniques are still clearly not enough, and it indeed is inappropriate in the long term to chase a single approach - however, it doesn't drive me to ask how we can go back to the research paths we abandoned, but rather that the important question is (as the Bitter Lesson, unpleasant as it is, implies) how could we go even further away from them towards the scalability direction, go beyond the current transformer approaches? Because for text models we can scale to "all the text that we have available" with current methods, but getting to the same impact in video and robotics (and thus systems with better understanding of our physical reality instead of textual/symbolic descriptions of it) seems to require something radically more scalable than what we have now.
+- A ton of people are exploring alternatives to pure scaling - e.g. SSMs, neuro-symbolic, CoT and its variants. And there's more and more theory of DL being figured out.
+- It’s because modern society has confused the terms for science and engineering. 
+
+Modern western society is unable to fund research anymore and people are forced to prioritize gainful employment over discovery.
+- my spicy take is that your information sources dont show you what's actually going on , we're way more diverse today than before and way better at diverse application areas and methods than before. audio is doing great , under ressource languages are doing better , last month we got three world models for the first time , datasets are comming out all the time , not to mention optimizers and kernels which are probably being published at a rate 1000x more than before , everything is open source , just take a look and you'll see it
+- While the old school way of doing AI by hardcoding explicit knowledge into models has been proven to be very limited, "softcoding" knowledge into models (NN+ translation invariance ->CNN; NN + comparable sequences -> transformer), which apparently is much more successful today, is not that much different. 
+
+Scaling is not the reason recent models like CNNs and transformers worked so well IMO, the implicit regularizations/inductive biases built into models is. Softcoding inductive biases ->less variance in high-variance models -> allow for more data to train before overfitting.
+
+Here's the problem, unless we softcode exactly the right inductive biases for a given problem (say NLU), scaling will always hit a wall. That wall is the upper limit of how well current inductive biases can perform given unlimited data. All the "research" efforts around LLMs (prompt engineer, RAG, PEFT) is just accelerating us towards that wall.
+- Doesn’t this basically boil down to AlexNet? Even before Transformers. 
+
+It was the first time a DL approach significantly beat any other explicit/symbolic approach, on a generalized classification task (identifying a cat, I think)? 
+
+Like ever since 2012, has any other approach on a generalized tasks like those beaten a DL approach (ie scale) in some way?
+- Why should we assume that "scaling is everything" or "Bitter Lesson" apply at all scales? Pre-LLM it was common to hear that a Deep Learning model learned better as the number of weights scaled up, until it didn't - there would be an appropriate scale for the model.  Maybe it is better to look for the right scale for an LLM.
+
+Of course that scale might be really big. The human neocortex has about 8 times the number of synapses as a chimpanzee, so the number probably increased by at least that factor since the last common ancestor (perhaps 5 million years ago.) This suggests that evolution did a scale up to support human language and culture; maybe the same phenomenon as LLM scaling(?) Anyway synapses and weights are pretty comparable and the number of synapses in our neocortex is about 150 trillion.
+- Out of curiosity, how do you feel about LessWrong?
+- Yet so little on Spiking Neural Networks required for adaptive robotics because the economics don’t require gigabucks to be spent on inferencing infrastructure and therefore there’s no ability for investors to leverage their capital to become monopoly gatekeepers.  China is so winning the AI war simply because they aren’t hamstrung by the narrow-sightedness of markets and entrenched investor behavior.
+- you're very wrong about that , VLAs (although i personally think they are a dead end) have never been published at such a high velocity and open sourced . synthetic data generation frameworks for these neither , you can literally just find and download them if you care about it , and some open source contributors are also chinese companies
+- What do VLAs have to do with reflexive systems required for adaptive robotics?  VLAs are RL systems that can’t deal with situations outside their RL training data, unlike SNNs.
+- SNNs of which there are many more being released open source , that's the main point
+- Ah, you’re referring to Spike-VLAs.  Not the most common area of research.  Certainly not
+compared to Transformer based VLAs where all the investment is going.
+- my point is more general : everything is going at a higher volume and more open sourced including but not limited to VLAs and SNNs :-)
+- Not in the US.  It’s rapidly becoming an LLM monoculture.
+- you're completely wrong about that , probably because you're not informing yourself , of all the SNN x Robotics work in the last two years most of it (half of it ?) has come from the USA , for example NASA even published on this topic
+- The research investment is measured in hundreds of millions of dollars compared to billions of dollars for LLMs.  That’s a big gap.

@@ -1,0 +1,32 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/tt0s96/bioinformatics_or_data_science_route/
+Title: Bioinformatics or Data Science Route?
+
+Content:
+I recently read a post on here that said the MSc Bioinformaticians they hire are woefully underprepared.  I was wondering if it's because they didn't take enough omics type classes or that they don't take enough Data Science (algorithms, and machine learning) type classes? I definitely want to become a Bioinformatician, and I've been researching which online MSc programs to apply to.  There is a MSc Data Science with a concentration in Bioinformatics that looks interesting.  I was wondering if you guys suggest sticking with a complete Bioinformatics program or is having a Data Science foundation a better route?  Any insight would be greatly appreciated!  I want to make sure I'm not woefully underprepared. :)
+
+Comments:
+- If it's masters, bioinformatics will also have some ML/AL, Data mining, coding and stuff so check the syllabus of it. In extras you can do internships
+- > I recently read a post on here that said the MSc Bioinformaticians they hire are woefully underprepared. 
+
+This is a problem with the hiring manager and not the student. Do they realistically think they could run a better training program? Sounds like wishful thinking that candidates will be able to waltz in an perform exactly the "right" tasks for them with the salary expectations of a fresh grad and the work experience of a principal scientist.
+- Without knowing more information, I would personally go with the data science masters with a bioinformatics concentration. Both can get you a job in bioinformatics, but people often get jobs out outside of the field at times and a masters in data science is more generally useful.
+
+Neither will likely prepare you for your first job because most programs don't teach either enough biology or software engineering skills (in my experience) and likely won't teach the niche things you need for a specific job. But you will pick those skills up while working.
+- When they say they are underprepared, they mean they don't have actual real-life experience in a specific setting. Bioinformatics is a broad field. An MS program covers a lot of areas, so they can't cover everything in depth.
+
+For example, you may have done RNA-seq once in your MS on a perfect dataset. That's not sufficient if your employer wants you to be running RNA-seq all the time. I personally would love it if every fresh grad had taken an RNA-seq course, but that doesn't exist and probably shouldn't because that's not really the purpose of an MS.
+- Algorithms and machine learning is only part of data science though and data science is much more broad than that. I would throughly check the syllabus and curriculum to see if it’s want you want. Bioinformatics is also broad so you can also check job postings to see if your program will help you achieve your goals
+- At this point I'm clueless as to what classes are a must have.  In order to be completely prepared for Bioinformatics what are some classes that I should look to see if the program has or not?  Thanks so much for your suggestions!
+- If you want to work at a BS or MS level I highly recommend taking some CS courses. Everyone and their brother wants to do machine learning and there just aren't that many projects to go around. Folks with some CS training are very employable.
+- Thank you so much for all of the insight!  It's actually made me feel better about things.  The consensus seems to be that no matter what route I go I'll probably have to pick up some skills on the job.  I'll probably end up going the Data Science route and taking Bioinformatic electives.  I've found a very inexpensive ($10K) program, but it's at a lesser known school, NC A&T.  Is it worth spending muuuuch more money for programs at Berkley or John Hopkins?  I want to make sure that I won't have a hard time finding a job if I choose NC A&T.
+- This. Gonna go out on a limb and say that I have suffered through a lot of elitism in my career because I only have an MS.
+- Definitely this. I've found no correlation between degrees and programs and the competence of data scientists I've worked with.  
+PhDs may be the one exception, but the ones I've worked with are a bit older and often ended up being managers before I got to work much with them. Even in this case the degree area didn't seem to matter, physics, cog Sci, stats... most jobs are going to require you to adapt to their specific set of business problems quite a bit no matter your training.  
+EDIT: I should say only a couple of years of my career were in bioinformatics and I'm mostly referring to the technology industry. Forgot what sub I was browsing!
+- I will echo others: don't worry too much about the exact classes. Stack exchange and github readmes are all you need at the end of the day. 
+
+My undergrad was in mechanical engineering, and I entered the space without knowing what a pipette was, and a sum total of biological knowledge that the mitochondria was the power cow of the cell! =p
+- I'd look at job postings, then talk to profs to decide what courses cover those skills. Maybe your PI could help?
+- Internships are key. Classes can only go so far. I would not overthink this too much.
+- Haha! This makes me feel so much better.

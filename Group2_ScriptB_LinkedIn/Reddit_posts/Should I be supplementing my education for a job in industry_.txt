@@ -1,0 +1,49 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/sy2pgd/should_i_be_supplementing_my_education_for_a_job/
+Title: Should I be supplementing my education for a job in industry?
+
+Content:
+Hey guys,
+
+I'm currently getting my master's in bioinformatics. It's a 1 year program, I'm halfway through, and most of the course has been very bio-heavy. 80% of the class is learning about the genome, transcriptome, etc. I completely understand the purpose of this, but I'm a bit nervous about how prepared I'll be for a job in industry.
+
+We've learned the basics of R and Python and learned to create pipelines for GWAS, scRNA-Seq and NGS. For my dissertation, I'm trying my hand at machine learning using random forests.
+
+I'm curious as to whether or not this stuff will be applicable to a job in industry.
+
+I've read that bioinformatics is very R and Python heavy, but all of the jobs I've seen advertised say I need to know Java, C++, SQL, Linux, Unix, and a bunch of other stuff we haven't been introduced to.
+
+I come from a biochemistry background, so I couldn't even say what most of that stuff is.
+
+Would it be a good idea to take online courses as well? Or are the skills I'm learning now likely transferrable?
+
+&#x200B;
+
+Thanks!
+
+Comments:
+- Linux is an operating system, and Unix is a type of operating system (I am not a pro, so this is laymans interpretation). Both macOS and linux are unix-type systems.
+
+What those jobs that say unix/linux skills want is proficiency at the command line and probably some shell scripting. This means knowing basic CL programs like `ls`, `wc`, `head`, `cat`, `sed`, `awk`, `grep`, piping with `|`, redirects, etc. for starters.
+
+For bioinformatics, command line and basic shell scripting skills are important.
+
+Java and C languages are lower level languages and can bring huge efficiency improvements over high level languages like R and Python.
+
+So I think it depends what aspects you are interested in. No matter what, command line and shell scripting will be useful. If you want to get more into the software implementation side then skills with a faster language (like C or Rust) are good. SQL is a database language (again, laymans intepretation) and is more on the data science side of things.
+- I did biochemistry and I'm on a similar course too. I am getting the impression that 1 year masters don't have time to teach you much due to time constraints and can be quite general. I feel the same as you. Even worse I get modules that a far from what I want to specialise in.
+
+If you have the interest and know what you will be using it for in the job then there are many free resources online. I wouldn't just do it because some job ads said so unless it is the specialism you want, you'll just end up stressing and stretching yourself thin. I've seen many ads that don't require much except R or python/bash script
+
+Try to know what you want to specialise in, rather than adapting to any jobs that pop up when you search "bioinformatics jobs". Once you know your specialism, speak to people on linkedin or career events. This will help answer your question.
+- Skills sound transferable for sure. The BIO part is really important, and around here sometimes gets overlooked. The skills you’re learning now will transfer, but it never hurts to expand your repertoire.
+
+Between R, Python, and “Unix” - bash shell scripting, you’ll go a long way. I don’t do much outside of these languages, but I’m an analyst, not a dev. 
+
+Rosalind.info is an incredible free resource for practical bioinformatics programming in Python from the ground up. But you have to think your way through. I haven’t finished it, not many have, but working your way through some of these can’t hurt.
+
+For Unix/bash I like to plug http://korflab.ucdavis.edu/unix_and_perl/. It was used as course material in one of my intro courses, and I used it myself for courses I have taught.
+- Thanks! I don't know anything about shell scripting, and a lot have people have mentioned it, so I will definitely have to give it a look.
+- Solid advice. Thanks :)
+- Oh read papers too if you're lost on the specialism and watch seminars, some are on youtube.
+- Thank you!!

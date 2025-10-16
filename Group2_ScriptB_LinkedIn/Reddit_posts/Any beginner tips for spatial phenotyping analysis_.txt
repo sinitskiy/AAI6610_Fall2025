@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1emq3yq/any_beginner_tips_for_spatial_phenotyping_analysis/
+Title: Any beginner tips for spatial phenotyping analysis?
+
+Content:
+Hi all! My background is in next generation sequencing analysis (WGBS, WGS, rna-seq) and I recently was added to a project where we have slides coming off an Akoya Phenocycler. The Akoya reps suggested we either hire them to do the analysis for us (lol) or follow their own tutorials and use QuPath + Cytomap. Unfortunately no one in our office has a GPU/any windows machine access, so it seems like using Cytomap is out of the question. I googled around and found PathML is available but I'm not sure what the learning curve is gonna be like. Any spatial pros out there have some advice or suggestions? We have a mac pro in the office and a linux HPC environment with CPUs for heavy compute jobs. Thanks!
+
+Comments:
+- imcRtools is probably worth a look.
+- What kind of downstream analysis are you interested into? I recently did QuPath + StarDist for cell  segmentation and Seurat for clustering and niche analysis. Worked like a charm
+- Work with a pathologist. You should have an adjacent H&E slide which will add lots of context (in situ tumour, invasive tumour, blood vessels, TLS, relationships between structures).
+- My PI doesnt want to use Seurat for some reason, though I don't know why. We want to try and identify immune cell niches, do a nearest neighbor analysis probably to see if there are differences across our tumor cohorts. Hoping to identify TILs and quantify differences in immune cell populations between stroma and epithelium
+- You can also use scanpy in python. Check here https://www.akoyabio.com/webinar/phenoimager-data-analysis-using-qupath-and-python/

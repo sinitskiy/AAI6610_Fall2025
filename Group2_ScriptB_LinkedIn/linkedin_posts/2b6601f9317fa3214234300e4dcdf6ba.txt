@@ -1,0 +1,109 @@
+URL: https://www.linkedin.com/posts/njgroene_the-1-mistake-with-llms-using-them-as-activity-7252592236926763010-zTgh
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Niko Groeneweg的动态
+Niko Groeneweg
+
+CTO | AI • Transformation
+
+11 个月
+
+The #1 mistake with LLMs : using them as databases. Let me explain : 
+
+LLMs aren’t database, and you should never use them as such.
+
+When you ask a LLM to “retrieve” data for you, it won’t. Rather, it will answer you something that’s probable, given the data it’s been shown. 
+
+That’s because LLMs are a probabilistic model of data, not the data itself. Their answers are a set of probabilistic tuples of the tables involved in your database, not your data.
+
+This is great news though! 
+
+Probabilistic models of data are much more useful than the data itself - they are a flexible abstraction that can be used to classify, generate and do many useful things that were almost impossible not so long ago. 
+
+You just have to choose your use-case carefully. 
+ 
+In my experience the most impactful applications of LLMs are often on the backend, integrated into systems, doing data processing - without being visible to the user.
+
+8
+2 条评论
+赞
+评论
+分享
+Yann AïtBachir
+
+AI @ Google | I share Career Tips in Tech | 2k+ Newsletter Subscribers
+
+11 个月
+
+That's a nice way to see it.
+
+The "memory" part of the LLM is a probabilistic representation of the training set facts.
+
+This probabilistic representation are what we can call "wisdom", the LLM created and recognized there own pattern.
+
+With their own bias.
+Like a human.
+
+
+赞
+回复
+2 次回应
+
+要查看或添加评论，请登录
+
+11,219 位关注者
+
+842 则动态
+ 25 篇文章
+查看档案  关注
+更多文章
+Crazy multi-Billion dollar valuations in AI
+Niko Groeneweg  1 年
+We've drastically underestimated the impact of AI on the labor market.
+Niko Groeneweg  1 年
+Simulating 500 million years of evolution with a language model
+Niko Groeneweg  1 年
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户

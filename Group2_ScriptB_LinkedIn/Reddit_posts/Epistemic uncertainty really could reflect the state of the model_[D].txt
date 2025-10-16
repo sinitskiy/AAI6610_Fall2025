@@ -1,0 +1,9 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1eyeyed/epistemic_uncertainty_really_could_reflect_the/
+Title: Epistemic uncertainty really could reflect the state of the model?[D]
+
+Content:
+I try to use MC dropout or deep ensemble to get the epistemic uncertainty after each epoch (assuming that this is a regression task, I quantify the uncertainty directly by output.std()). I recorded the uncertainty after each epoch and finally plotted it as a curve. The result is that the value will have a rapid rise and then a slow decline trend (seems very intuitive(?)). But this curve will continue to fluctuate, it is not a stable curve.This makes me wonder why the uncertainty of the model (episodic uncertainty) is so unstable during the training process of increasing epochs? Is this the case when output.std() is used as the basis?
+
+Comments:
+- Fluctuations in uncertainty could be due to model's learning rate adjustments.

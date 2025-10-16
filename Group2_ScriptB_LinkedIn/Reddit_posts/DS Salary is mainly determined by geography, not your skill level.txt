@@ -1,0 +1,69 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bkum0v/ds_salary_is_mainly_determined_by_geography_not/
+Title: DS Salary is mainly determined by geography, not your skill level
+
+Content:
+I have built a model that predicts the salary of Data Scientists / ML Engineers based on 23,997 responses and 294 questions from a 2022 Kaggle Machine Learning & Data Science Survey.
+
+Below are the feature importances from LGBM.
+
+TL;DR: Country of residence is **an order of magnitude** more important than anything else (including your experience, job title or the industry you work in).
+
+Source: [https://jobs-in-data.com/salary/data-scientist-salary](https://jobs-in-data.com/salary/data-scientist-salary)
+
+
+
+https://preview.redd.it/b89q4likmupc1.png?width=1200&format=png&auto=webp&s=3e989d7cb71601e45cd3bea86802c0a8294e9e9d
+
+Comments:
+- Well, yeah.
+
+If a job exists in a country it tends to pay relative to the cost of living in that country, or at least relative to how much other jobs in that country pay.
+
+Also, no. You generally can't just work remotely for a US company and get the geographic pay difference. They'll want to pay you based on where they owe taxes on your income.
+- This applies to every job so it isn't a surprise. An accountant in the US will usually earn more than the same profession in Nigeria (to pick a random place). Also most people can't easily move countries. You might as well remove geography from the data, and maybe we get something more insightful out of this.
+- That's true for every job because cost of living and economic strength of a country determine average salary level.
+
+So what's the feature importance if we account for that and which countries do pay less/more for DS relative to their median salary?
+- This is a good example of what not to do as a data scientist. Putting data into a model and try to explain things without context.
+- You better normalize salaries by average cost of living in that geography. I bet you'll end up getting a different insight.
+- To compare US salaries with other countries’ salaries is just bad DS. Even within the US, this doesn’t mean anything until cost of living takes into account.
+- I suppose that’s true for most jobs
+- ten agonizing employ beneficial live memory memorize cough dinner continue
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- You need to adjust for the purchasing power for each country, and look at net income (after tax, ect) and likely other soft benefits with each country. For example, a DS in Finland might have a lower salary but typically have other benefits like public healthcare that a DS in other countries \*cough\* America \*cough\* have to substitute with private healthcare.  
+
+
+Also I always get suspicious when one feature has an extreme influence compared  to others. Maybe it gets explained with insight but typically means I have messed an assumption up and need to look into it more.
+- No shit Sherlock. You don't need a model to tell this 😂
+- Bad statistics as it does not consider multicollinearity or endogeneity.
+- What feature importance are we looking at? Is this some split based importance? TreeSHAP? Something else?
+
+That makes a wild difference in how we can interpret these findings.
+- Please adjust for PPP. This is "bad statistics"
+
+Edit or I'll do it. I doubt law of one price is failing that substantially, or there is arbitrage. Or both. I only hire south Americans etc because they do the same or better work for $20k a year instead of $180 + equity + complaining. As an executive, why would I spend company money that functionally is a housing investment for someone else in the bay area or NYC? I just want to build xyz feature, not buy pay someone's mortgage. That's the arb part. 
+
+Employees I hire are happy, I'm happy.
+
+Remote work was only good for Americans for a year. It turns out, remote work means substituting from nyc to talinn to improve output by 400%, not substituting nyc to Hudson for 20%.
+
+Americans are either going to need to upskill, or get used to competing with international labor markets
+- You didn’t need data science to know this.
+- Next question is. Which countries??
+- 1) Country is going to be the most relevant because you're switching currencies from local to USD without taking into account the purchasing power on each country. 
+
+2) Country would probablybe better used as a blocking variable (source of known variance, but you do not care about its weight on the data). Similar to a pseudo-experiment. 
+
+3) If you're making inference using the dependant variables, did you check if the assumptions of the model were violated? Or was it just an RMSE optimization on prediction?
+
+Last part is pretty relevant imo, if a model is claiming inference on parameters, but did not worry about model assumptions or it's doing a non-parametric regression, then it's either wrong or there's not even a parameter to estimate.
+- Americans buthurt realizing the world aint as meritocratic as they pretend it to be
+- None of your factors are particularly great proxies for “skill level” either though, I wouldn’t draw the second part of your conclusion. Having more experience is better than not but it’s very far from a guarantee of improvement.
+
+You can code for decades but if you never care about quality you’re going to be outpaced by someone who thinks a lot about the best way to do things and constantly tries to improve. 
+
+The “science” part of skill is really hard to get a handle on. Having the proper domain knowledge and being able to critically draw the correct conclusions is not something that happens automatically. Same thing for communication skills, honestly.
+- How is something this terrible being upvoted in a subreddit supposedly for data **science**. No serious attempt at standardising measurements, causal claims with no attempt at isolating the effect or examining endogeneity. Just so buzzwords, this thread is pretty much the worst stereotype of a CS person trying to do data science with a less than a 101 grasp of statistics.
+- Salaries in the US are ridiculously high. What else is new?

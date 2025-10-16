@@ -1,0 +1,33 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/4tsujg/simulating_a_single_human_neuron/
+Title: Simulating a single human neuron.
+
+Content:
+So IBM has developed a "Neurosynaptic Core" chip to facilitate building learning machines / neural nets in response to a DARPA challenge to develop "biological scale" neural networks.
+
+http://www.kurzweilai.net/ibm-simulates-530-billon-neurons-100-trillion-synapses-on-worlds-fastest-supercomputer 
+
+IBM's feat is 500 billion neurons and 100 trillion synapses.  The DARPA target is to achieve 10^10 neurons and 10^14 synapses.
+
+A human brain, as I understand it, is about 10^11 neurons and 10^15 synapses.
+
+One of my main questions is... how much "computing" can one real human neuron do?  
+
+If you wanted to simulate a real human, how much information do you need to encode in software terms to simulate how a single neuron would respond to signals across the thousands of synapses that neuron would have in a real brain?  
+
+Moreover, are there different kinds of signals that might come down a single synapse?  If so, has signal variety been enumerated in any way yet?
+
+Really, I'm asking how "smart" is a single brain cell and how complex a task is it to even simulate the behavior and versatility of just one?
+
+
+Comments:
+- Read this: https://arxiv.org/abs/1511.00083
+- In /r/neuralnetworks, /u/D1zz1 references these two articles:
+
+* http://www.human-memory.net/brain_neurons.html
+* http://journal.frontiersin.org/article/10.3389/fncom.2014.00086/full
+
+The first one points out that that there are numerous dimensions of complexity in the way that signals are processed (such as half a dozen chemical neurotransmitters which activate in different circumstances to modulate how signals are processed across a synapse.  It also hints at synapse strengths, and how synapses evolve over time).
+
+A general question about neurotransmitters -- do they tend to trigger locally (single synapse) and on the time scale of individual electrical signals or are they more of a brain-wide or region-wide expression over long time periods (like a few seconds or even minutes of time)?
+- The human brain is miraculous, God is great

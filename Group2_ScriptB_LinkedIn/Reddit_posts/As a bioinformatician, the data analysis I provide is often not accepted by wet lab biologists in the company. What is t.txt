@@ -1,0 +1,93 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/195i3ar/as_a_bioinformatician_the_data_analysis_i_provide/
+Title: As a bioinformatician, the data analysis I provide is often not accepted by wet lab biologists in the company. What is the purpose and existence value of my bioinformatics role? Is this phenomenon unique to Mainland China and what are the reasons behind it?
+
+Content:
+Claude.ai has provided some perspectives below, please share your views on this topic.
+
+>There are several reasons why bioinformaticians' data analysis is often not accepted by wet-lab biologists in companies:  
+>  
+>1. The data analysis results may conflict with experimentalists' intuition and experience. Experimental scientists tend to trust their own intuition and experience more than data analysis, especially when the results contradict their beliefs.  
+>  
+>2. The data analysis process and results lack transparency. Bioinformatics analysis is often complex and opaque to experimental scientists who don't understand the analytical approaches and theoretical foundations. Hence they lack trust.  
+>  
+>3. Ineffective communication exists between experimentalists and bioinformaticians. They use different terminology and reasoning which makes it hard to reach common ground.  
+>  
+>4. Bioinformaticians may lack depth in understanding biological problems due to their different academic background from experimental biologists. This also affects experimentalists' confidence in bioinformatics results.  
+>  
+>5. China's academic culture values frontline experimental scientists more whereas supporting scientists like bioinformaticians have lower status. This makes experimentalists pay less attention to bioinformatics analysis.  
+>  
+>This phenomenon exists not just in China but also in the US and Europe to various extents. As big data gains wider adoption in life sciences, such rifts are slowing getting bridged. The key is to enhance communication and understanding between scientists of different backgrounds and make data analysis more transparent and interpretable. Bioinformaticians also need to continuously improve their academic rigor to better dialogue with experimentalists.  
+>  
+>So the purpose and value of bioinformaticians is to uncover new discoveries using data mining, machine learning and other algorithms which are hard to obtain via experiments alone. This is the advantage and raison d'etre of bioinformatics.
+
+(I graduated from a TOP2 university in China with my Ph.D., and I feel confused and anxious about my current embarrassing situation as a bioinformatician.)
+
+&#x200B;
+
+Comments:
+- No, it happens to many of us. I work in an interdisciplinary team and the wet lab biologist call us the “bioinfor-magicians” like we just pull shit out of a hat. But will also ask if 1 sample for each condition is acceptable. Or even better will hand me poorly designed experiments and when I balk at them due to the poor design….  “we’ll get us what you can out of it”
+
+So, after a few of those BS conversations. I established the experimental design meeting. Where, if you are sequencing, imaging, or staining and the data will be analyzed by the bioinformatics team… we are in the room when the experiment is being designed. The expectations are layed out by the researchers, we lay out the details and deliverables, then the junior scientists do the work and the junior bioinformatics staff analyzes the samples and presents the analysis. As the scientists get more experience, they design and grow as do the bioinformaticians. 
+
+It’s a long arch but it has been working really well. Now we have a really fluid system that makes for achievable program milestones all having at least some bioinformatics data and the bigger milestones being packed with high quality bioinformatics analyses. It takes a while to establish this culture but it’s worth every nickel.
+- I think you have a communication problem between your two teams when you are supposed to be working together. Experimentalists should be able to understand what you've done with their data (on you to explain clearly the logic of your workflows but not the technical details).
+
+"Ineffective communication exists between experimentalists and bioinformaticians. They use different terminology and reasoning which makes it hard to reach common ground. " Your two teams need to talk to each other more so your using the same language.
+- I taught myself bioinformatics after getting frustrated by some bioinformaticians that would just vomit out a bunch of heatmaps and other plots without any real explanation or biological knowledge. Claim a lot of work done and then offer a follow up experiment plan of 7 replicates per hour for 24 hours to me as the wet lab guy. 
+Now a lot of my collaborations come from people frustrated with bioinformatic services providing poorly described data analytics and being arrogant with their responses - often turning out to be wrong. 
+
+
+I feel that a big problem bioinformaticians have is that the services set up to do bioinformatics are often crap and giving us a bad name.
+- Then why are they employing a bioinformatician in the first place? Find a job where you can learn and grow.
+- >1. The data analysis results may conflict with experimentalists' intuition and experience. Experimental scientists tend to trust their own intuition and experience more than data analysis, especially when the results contradict their beliefs. 
+
+Yeah but just tell them it is as it is and you cannot change the data.
+
+>2. The data analysis process and results lack transparency. Bioinformatics analysis is often complex and opaque to experimental scientists who don't understand the analytical approaches and theoretical foundations. Hence they lack trust. 
+
+It's your job to explain the methods for laymen so they understand it at least on a basic level. They don't have to understand the formula. But explain it on a high level using examples like you explain to a 5 year old child. Really, this is one of the most important skills as a bioinformatician.
+
+>3. Ineffective communication exists between experimentalists and bioinformaticians. They use different terminology and reasoning which makes it hard to reach common ground. 
+
+Yeah same as 2. Learn their terminology. Ask if you don't understand what they say. 
+
+>4. Bioinformaticians may lack depth in understanding biological problems due to their different academic background from experimental biologists. This also affects experimentalists' confidence in bioinformatics results. 
+
+Sure you are not that deep into biology as a biologist but you have to know the basics. Be curious, ask them when something new comes up. Read relevant literature.
+
+>5. China's academic culture values frontline experimental scientists more whereas supporting scientists like bioinformaticians have lower status. This makes experimentalists pay less attention to bioinformatics analysis. 
+
+I'm from Germany and also sometimes bioinformatics is seen as a helping science. However they would be screwed without us ;). 
+
+So in short: many of these points can be improved by yourself as a bioinformatician.
+- Biologists? Try to speak with a doctor in my country and contraddict him about the outcome of a research, data scientists, if there is any, are there only to confirm their believe
+- https://agapow.net/science/computational-biology/no-respect/
+- I don't know your exact situation. What's being ignored and why. It's not the case for me an my team - we work very closely with wet lab biologists and there's a lot of respect between the teams. 
+
+I work at a company in the US, so the perspective is different. [Claud.ai](https://Claud.ai) answers are not too bad, but let me give you some human perspective based on my own experience and observations of people on my team. 
+
+1. If method/algorithm/analysis produces inconsistent results it won't be trusted. For example, if a method gives results that are too variable on control samples in different experiments it won't be trusted. For significant discrepancies, one should have a good understanding of the root cause of variability and have data to back it up. Hand-waving explanations don't work and the data produced by the method will be ignored as unreliable.
+2. I always include a short layperson explanation for any method I use. It's a hard thing to master, and I find that figures and pictures work best. People trust methods more if they understand them, even on the very basic level.
+3. I try to make sure that my work is relevant for wet lab biologists. For example, include suggested experiments or explain the root cause for the experimental results. I find that one of the best thing is to come up with a method that generates single metric that can be used to measure improvements as experimental conditions are changed. 
+4. Graduating from top university means nothing. I have PhD from one of the top US university and I expected to earn respect with my work just like everybody else. I had someone from top US university on my team, and his results were more often wrong than right. 
+
+Good luck.
+- Well, you see the data is "trending" toward significance, so I don't know why we need to be concerned about the p-value at all.
+- This is quite common I’m afraid. I am employed in the lab of an older, more experience PI who sometimes is skeptical to say the least when I present her with the results of my analysis.
+
+EDIT: I am in the US. So, this isn’t just a problem in China.
+- I thought reddit was blocked in your country?
+- Oh I hate the “get what you can from it” line! I too did the same thing and required to be in on the experimental design. It made a huge difference. It also helps me a lot that my background is in biology so I can speak both languages.
+- No offense, but suggesting that bioinformaticians like to claim a lot of work was done and provide little makes me wonder how much bioinformatics you really do.
+
+Bioinformatics is a lot more than just copying some code out of the DESeq2 vignette and hitting go. It often looks like I don’t have a lot to report, but people also don’t see the amount of time that went into troubleshooting errors, reading about statistics, setting up this or that.
+- Well these are bad bioinformatians then. They have to explain the results, help with interpretation etc. But in my experience such services are often in high demand and maybe they're just overworked.
+- There is merit to designing studies with sufficient statistical power to test the biological hypothesis in question. 168 samples is not exactly a huge dataset either.
+- Interesting. A lot of people in this sub seem to think it's not useful to have dry *and* wet lab skills. But imo, if you only have experience doing dry lab, it's hard to understand what the bench scientists are doing and the feasibility of experiments. I was literally told by people in this sub to take the wet lab experience off my CV 😵‍💫
+- https://en.wikipedia.org/wiki/Virtual_private_network
+- This! Thank you about pointing out the bug reports, the workaround coding to get stuff done, troubleshooting. 
+I usually give out some very detailed analysis reports and explain every single step that was carried out, however, it is not my responsibility to draw biological conclusions from "your" experiments. I will often have consultations with the lead biologists of the project so they can ask questions about the analysis and how they can interpret the results but in the end no one knows the biology of their project better than they do.
+- I said some bioinformaticians... I did not say all. These people are giving us a bad name. 
+Bioinformatics is probably about 60% of my research time, and 90% of my collaborations these days. I'm well aware of the faff involved in getting to the end point on some datasets. I'm also aware of the way that wet lab people will sometimes expect complete explanations from bioinformatics, but this thread was about the relationship from the bioinformaticians side. I can go on a similar rant about pure wet labbists!
+- Yeah, bad is bad though. Doesn't matter the cause. It's a common experience and ends up with wet labbists getting frustrated with bioinformaticians - it's something the rest of us need to work to disprove.

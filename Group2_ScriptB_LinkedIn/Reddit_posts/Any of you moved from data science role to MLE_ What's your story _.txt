@@ -1,0 +1,45 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1foo5j6/any_of_you_moved_from_data_science_role_to_mle/
+Title: Any of you moved from data science role to MLE? What's your story ?
+
+Content:
+I want to change from a data science role to machine learning engineering.
+
+I think data science jobs are mostly disorganized. And it's always hard to know how the job will be. 
+
+My job as DS here is most to monitor our model. Not create experiments. 
+
+Comments:
+- >My job as DS here is most to monitor our model. Not create experiments.
+
+This is a pretty telling statement. Obviously each company is different and "data scientist" at one company could be a "SW engineer - machine learning" at another. That being said, what do you think machine learning engineer does? Like if you were an ML engineer at Meta doing friend recommendation, what do you envision the job would be and what parts of that would be exciting to you? 
+
+It is unclear to me if you are asking for feedback or just venting, but it might be easier for the community to provide feedback if you elaborate on what you're looking for - are you venting? or are you trying to get insights from other people who transitions from DS to MLE?  I think it would be helpful if you talked about the job duties you would like to be involved in and what specific duties you don't enjoy. 
+
+
+
+>I think data science jobs are mostly disorganized. And it's always hard to know how the job will be.
+
+It's worth asking if you think this is an industry wide trend, or maybe your particular company/team/manager is problematic.
+- >I think data science jobs are mostly disorganized. And it's always hard to know how the job will be.
+
+It's the exact same with MLE. The title of "machine learning engineer" really runs the gamut. It can be anywhere from someone who does everything end-to-end from data engineering to modeling to deployment/MLOps. At some companies, it's basically a data scientist job where it's mostly modeling. At other companies, it's just the MLOps part without any modeling. My current MLE job has zero modeling/experiments.
+
+I work as an MLE and this inconsistency in the job title is one of the most frustrating parts of the field, unfortunately.
+- https://www.reddit.com/r/datascience/comments/1fobve8/transitioning_to_mle/ this topic is already on the front page dog.
+- One day we went to work and our titles all changed from data scientists to MLEs...so that's how I did it
+- Dedication is the key here in shifting the job title, you should be able to absorb the knowledge of   PyTorch,Tensorflow,Keras, ELi5, NupIC , RAMp , PYBrain, Coffe, chainer as quick as possible. it's learning curve but it's worth it.
+- joining from fresher as a data analyst, then can you go for MLE?
+- u/senor_shoes As a former ML engineer, I envision the role as finding the perfect blend of experimentation and model monitoring to drive business value and user satisfaction.
+- Are more to develop ml infrastructure?
+- Yeah it's frustrating. The way I see it there is such a disparity that the titles are pretty equivalent.
+- Yeah I know that the name differs but don't you think it's more easy to develop your skills from each type of mle job ?
+- I don't want to be annoying but this topic is more like "what I need to be an MLE" and my question is about if someone has a experience in changing job from DS to MLE.  
+
+I know some say that MLE still has problem with titles. But I think its more expected to have software engineering skills in MLE thant data science. This looks something more mature to me. As we know, not all data scientists can deploy ML. 
+
+Also, the other MLE "types" for me, are more easy to identify and adapt the skills. In data science, we have a lot of jobs with too much specific skills. Like, credit, financial problems, recommendation and so on.
+- Agreed. As someone who has held the title of both data scientist and MLE, I still dont know what most people think the difference is and at this point I’m afraid to ask
+- Well how are models deployed at the company you currently work at? Starting there might help.
+
+I mentioned this story a bit in that other thread: I worked pretty extensively with the dev ops team deploying a model I created and ended up with some MLE skills by necessity. Title never changed but my responsibilities kind of naturally started to resemble that of an MLE while the actual "data science" was mostly research being done by a small team of PhDs. Before I switched jobs my day to day there was mostly scaling toy models made by that smaller research team, since I was the only one who bothered learning how to use spark, and maintaining models in production, so I guess I was an "MLE" even though that title didnt exist at that firm.

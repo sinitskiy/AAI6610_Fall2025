@@ -1,0 +1,35 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/si9xf7/questions_about_rcsb_sequence_identity_clustering/
+Title: Questions about: RCSB sequence identity clustering, and the mmcif format
+
+Content:
+I am currently in the process of downloading RCSBs protein database, with the intentions of creating a dataset for machine learning training. My background is in physics/computer science, so if some of these questions seem basic that is probably true/why.
+
+First off, https://cdn.rcsb.org/resources/sequence/clusters/bc-95.out contains a clustering list, and I believe each ID in a single line in this list contains sequences that are deemed similar, and thus each line/row are dissimilar sequences. However, I don't understand why some ID's are not present at all in this list? For instance 100d doesn't appear to be in the list at all, so what exactly is this sequence identity clustering list?
+
+Secondly the entries in the list have _A or _B or sometimes even _AAA following the id. At first I thought that this was to mean different models of that structure, but after looking at it more carefully it doesn't seem to be the case. Instead it seems to be chain ids?
+My understanding of how mmcif/proteins are built is the following:
+An entry in RCSB is given by a unique 4 ciffer/digit ID, called a structure.
+A structure can contain 1 or more models, where each model corresponds to a different configuration that the structure has been observed in during the experiment that mapped the structure.
+Each model can consist of 1 or more chains, where each chain is an unbroken peptide chain (thus some structures are really several intertwined peptide chains).
+There is furthermore something about symmetry assemblies, which I don't quite understand. I understand that some structures are built from repeating a single chain several times in some slightly translated-rotated state, but I'm not quite sure. Whether that is what I see when I see the following in the sequence identity clustering list:
+3J3Y_go 3J3Y_gp 3J3Y_gq 3J3Y_gr 3J3Y_1D 3J3Y_gs 3J3Y_gt 3J3Y_gu 3J3Y_gv 3J3Y_gw 3J3Y_gx 3J3Y_gy 3J3Y_gz 3J3Y_gA 3J3Y_gB 3J3Y_1E 3J3Y_gC 3J3Y_gD 3J3Y_gE 3J3Y_gF 3J3Y_gG
+However, since my idea of chains is that they should all be present in a structure at the same time, the clustering id, which group different chains together doesn't really seem to make much sense, at least to me?
+My idea is essentially to put each protein configuration in a separate pdb file, and use the sequence identity clusters to group all these pdb files into different sets.
+So I would end up with maybe 50000-80000 different sets, each containing 1 or more pdb files and then when doing one epoch of training, to randomly draw 1 pdb file from each set and use those during training.
+
+Thirdly, the B-factor. I have read quite a bit about it from here: 
+https://www3.cmbi.umcn.nl/bdb/theory/ and here https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2083-8
+But I'm still not completely sure how exactly I should treat this number. Essentially I want to convert the B-factor into an uncertainty measure of the coordinate, such that I can use it scale my weights when training a neural network on the coordinates.
+I understand that B = 8pi^2 * <u^2>, so I can find the mean displacement based on this, but since B seems to always be cutoff at 100 that also doesn't seem quite right?
+
+If anyone could answer any of the questions, or maybe just link me to some relevant material I would be very gratefull.
+
+Comments:
+- You ask 3 questions:
+
+1. Those are very likely protein entries only. The structure you pointed out (100d) only contains DNA. So, it is likely that some entries will be missing from that list.
+
+2. Sequence diversity and structural diversity are very different. Grouping by sequence does not ensure that all those entries are structurally similar. Often they will be, but it's not guaranteed, because proteins are flexible molecules that can adopt multiple conformations. Because of this, you can have protein A in entry 1xyz in one conformation and protein A in entry 2abc in a very different conformation. Yet, they both belong to the same cluster in terms of sequence. Separating this sequence/structure similarity is something you'll have to do on your own most likely.
+
+3. B-factors are normalized from 0 to 100 within each entry. You can't get the raw value, so you cannot compare a b-factor in protein A with a b-factor of protein B. Generally speaking, if you have a large uncertainty in coordinates, you'll have multiple alternate locations for the atom and the occupancy will be fractional. But that does not reflect solely the flexibility of that atom. It has to do, mostly I'd say, with the experimental conditions under which the structure was determined. Say, something determined at 1A resolution will have a higher chance of having alternate locations than something determined at 3A. Not sure what to recommend you here to be honest.

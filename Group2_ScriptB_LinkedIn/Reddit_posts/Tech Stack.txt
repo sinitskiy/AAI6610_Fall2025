@@ -1,0 +1,79 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17fw3zm/tech_stack/
+Title: Tech Stack
+
+Content:
+Data Scientists of Reddit, what’s the tech Stack do you use? If you are working in MAANG companies or dealing with huge huge amounts of data, does normal machine learning algorithms work? Is Big Data stack( Hadoop, Spark..) part of your daily drive ? Do you use any other programming language, except Python/R for day to day usage? Are there any tools or technologies that are very useful but major part of the data people don’t know?
+
+I’m Masters in Data Science student, I’m just wondering how real world works, all my projects/assignments just involve python, sklearn library and a famous dataset from kaggle.
+
+Comments:
+- You just said it... hadoop, spark, sklearn for preprocessing, tf or pytorch for ann, xgb/lgb for boosted trees and rapidsai for rest
+- When I left my previous employer (a big bank), we had Skype, SAS, local database that takes 1-2 hours to query 1 million rows, and some early versions of Python 3.
+- Currently I use python 3.11.5, venv, vscode (some colleagues use pycharm) as ide; private gitlab, gitlab/ci, openshift, docker, helm, kubernetes for deployment; mostly plotly for visualization; dash for dashboarding; fastapi for apis; django and react for full stack apps; postres for sql; mostly pandas for dataframe, but also experimenting polars, and also used a bit dask in the past; statsmodels, sktime, darts, nixtla for time series analytics and forecast; pytorch for deep learning; all kinds of NLP libraries for NLP products. Now I am working with pystan and orbit for bayesian time series. In my previous unit we were using Spark for big data.
+
+We don't explicitly use R, but reading lots of publications and also consider using R or reimplementing some algos in Python in case they are available only in R.
+
+I try to avoid MS Power BI as a plague, but unfortunately some clients have power bi frontend and we have to serve them, too. We also work for MicroStrategy frontends (this is the official dashboarding tool of the company). But if possible, we rather push Dash because of its flexibility and also because it is just Python.
+
+I also keep my Cython and C++ skills alive, so that I can write some fast algorithms for Python; but usually we just use Python. In case you are considering learning further languages, probably a little R doesn't hurt (so that you can understand scientific publications); JavaScript can be useful if you happen to develop some frontends for your projects; and learning some Cython and C++, or perhaps Rust with PyO3 are possible options. But they are absolutely not a necessity, you can survive solely with Python and numba in most places.
+
+TL;DR: I propose to keep focusing on Python, and learn Python really well (read books like Fluent Python, Robust Python, Fast Python by T. R. Antao; High Performance Python; Cython by Kurt W. Smith; learn proper OOP, threading etc.). Keep one eye on Mojo 🔥 because it is a possible future (of Python). Focus on ML/DL libraries, e.g. sklearn, sktime and nixtla for time series, pytorch for deep learning. Also take a look at JAX. Plotly/Dash is very important. And! Learn your IDE really well. There is a 5 hours tutorial for VSCode from FreeCodeCamp on YouTube, check that out. :)
+
+TL;DR2: also learn and practice git really well. It takes time to get used to its advanced features, and it is essential to be fluent with it. Also learn TDD, testing with pytest. Get used to virtual environments, I use venv. Previously using conda was widespread, nowadays we also experiment poetry. It seems to me that even though using docker, kubernetes, gitlab/ci etc. wouldn't be essential in the part of the work which I am doing (and we have a full dedicated data engineering team for these), but somehow it is expected to know the basics of all these.
+- Non-tech medium-large corporation with everything on prem.
+
+Python stack with all the normal data and ML libraries. Kubernetes, jupyter, spark, airflow, MLflow. Otherwise, gitlab-ci, ArgoCD, helm, Prometheus, grafana, yadda yadda yadda pretty standard stack if you're somehow unable to use Cloud still in 2023.
+- Computer, mouse, keyboard. Cloud.
+- R & Rtudio for a few optimizers and python 3.9 for a regression price model. We use a docker to run a few models, although we are moving to an Azure VM to keep all/run our models in 1 place.
+
+We use MySQL for data storage. Although that is being moved to azure sql server as well.
+
+Working in the supply chain domain (agribusiness)
+- AWS, postgres, Python 3.11, PyCharm. Prototype work can be done locally, but we also have VMs to do heavier computational work in the cloud easily. I bopped any SageMaker crap on the head so we didn't use that. I tried to eliminate any Jupyter notebook work, too, unless it is one off data source creation or analysis type work, as it can be great for documenting those things.
+
+We also used Snowflake quite a lot, which can help keep datasets manageable.
+- For coding, internal tools based on extant tools. Why we couldn’t adapt the existing tools for internal use, I don’t know. Old version of Pandas that was nearly impossible to update. A miserable system of adding 3rd party libraries to our internal systems. Oh, amd the kernel was running on a VM in our internal cloud.
+
+DBs were “on prem” Presto-type databases. Also some other homegrown stuff. 
+
+Interestingly, for DSs that have only worked for my company, they may have to relearn how to be a regular DS with a “standard” scientific computing workflow.
+- Working for a national tourism office, largely focused on Microsoft products.
+
+MS SQL Server, PowerBI, Azure cloud services (Synapse, Data Bricks, Blobs), partly still using on prem server but planning to switch to the cloud entirely.
+
+For forecasting I use mainly python with different statistical and ML methods (ARIMAX, SARMIAX, exponential smoothing, RFs and other classical regressors, experimenting with RNNs, LSTMs and Prophet).
+
+We have a data team but I'm the only DS (it's a hybrid role of DA, BI, DS, and DE... Too much to handle everything well but great for learning). Other colleagues deal with data governance and things like that.
+
+Git, CI/CD stuff is desperately necessary but among all projects I hardly find the time to deal with it. Our IT department is completely separated from us and mainly deal with network admin things.
+
+
+TL;DR: Focus on one of the big players and choose one, I like Microsoft, and definitely go for Python (I also agree to keep an eye on Mojo!) Anything else is a plus, but decent skills in one will enable you to adapt quickly to other tech stacks.
+- Python
+
+AWS
+
+Dagster
+
+Snowflake
+
+Pycharm/VS Code
+
+Docker
+- Snow/dbt/tableau/airflow/databricks
+- I work at a FAANG company. I use predominantly Scala and Java, but there's also Python, TypeScript, and SQL in there too sometimes. I use Spark (in Scala) very frequently. We use many AWS services. CDK is amazing for building actual services and pipelines. SageMaker is used for training XGBoost models (which is our main model form). Everything related to CI/CD and even GIT are internal tools.
+
+I work with "Petabytes" of data. The way to handle it is to reduce it down to mid gigabytes, or low terabytes.
+
+I haven't used sklearn in a professional setting.
+- Just learn python and SQL. You can take what you know from them and apply to other languages if needed, but you likely won't need to. I do nlp research for one of those MAANG companies and python and SQL is all I or my colleagues have ever used.
+- (Snowflake Employee here) I'm also a master's in data science adjunct Professor.  Most of my customers use VScode/Hex as the IDE, azure dev ops/GitHub/bitbucket to manage the code, Snowflake as the engine for Python/Snowpark (basically spark)/SQL.  At my university we teach AWS/Azure/Snowflake/Databricks.  I think now more than ever for real world skills pick a tool and learn how to put a model flow together in a production like way.  You can get a free 120 day trial on snowflake with $400 in credits by googling snowflake trial for students.  Try this lab out and you'll have built a full end to end pipeline the same way customers do in the real world.
+
+https://quickstarts.snowflake.com/guide/intro_to_machine_learning_with_snowpark_ml_for_python/#0
+- Big tech have their own in-house stacks. For everyone else there are cloud services if you are rich or Spark if you aren’t.
+- Databricks on AWS, python, Github for version control, integration unit tests, Jenkins for all other CI/CD.
+- I use chatgpt
+- Presto, python, R, spark, sometimes other languages for a particular project. 80% of the time presto is enough
+- BigQuery for SQL queries, Python for model training
+- true for us except we barely use sklearn anymore.

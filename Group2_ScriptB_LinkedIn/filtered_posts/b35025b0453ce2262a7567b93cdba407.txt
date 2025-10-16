@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/borchero_iclr2022-pytorch-scikit-activity-6893165466698006528-9Eid
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Oliver Borchert的动态
+Oliver Borchert
+
+Machine Learning & Data Engineering @ QuantCo
+
+3 年
+
+This week, I finally received the news that my maiden first-author paper got accepted! “Natural Posterior Network: Deep Bayesian Uncertainty for Exponential Family Distributions” will be featured as a spotlight paper at #iclr2022 🎉
+
+Of course, I could not have done this alone: I owe a huge thanks to invaluable discussions and the contributions of my co-first author Bertrand Charpentier, my co-authors Daniel Zuegner and Simon Geisler, and my supervisor Prof. Dr. Stephan Günnemann.
+
+Our work attempts to distill uncertainty awareness into deep learning models — which is crucial to develop reliable machine learning systems. Natural Posterior Network (NatPN) provides fast and high-quality uncertainty estimates and can be used for any problem where the target distribution belongs to the exponential family. Most notably, this includes classification, regression, and count prediction tasks. Importantly, NatPN requires little changes to existing architectures and produces uncertainty estimates without the need for out-of-distribution data by leveraging the properties of Normalizing Flows.
+
+Originally, I started to work on the paper during my Master’s guided research project in the summer of 2020. While two unsuccessful conference submissions in 2021 felt painful, our revisions have markedly improved the paper since then. And eventually, our tenacity has paid off!
+
+To facilitate adoption of our work, we additionally release the #pytorch implementation of NatPN. After writing the paper, we put in a serious amount of work to (hopefully) make it a delight to use: our implementation (1) provides an intuitive interface that enables using the model as easily as #scikit-learn estimators and it (2) features a modular design that allows you to customize and build upon the model at different levels of abstraction. You can find the implementation on my #git

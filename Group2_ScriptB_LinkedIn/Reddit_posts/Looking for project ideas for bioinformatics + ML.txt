@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/t4x7t5/looking_for_project_ideas_for_bioinformatics_ml/
+Title: Looking for project ideas for bioinformatics + ML
+
+Content:
+Hi everyone! I have been wanting to do a project interdisciplinary between machine learning and bioinformatics for quite some time. Where can I find viable problem statement or any way I can identify the problem statement ? My end goal is getting a publication or poster at a conference.
+
+Also I've good knowledge on WGS, Genomics, Proteomics, ML algorithms (both supervised and unsupervised), Moreover, can program in Python, Java and R.
+
+Comments:
+- Use cardiac resonances to predict cardiac diseases.  Or barin tumors. There are data in kaggle (i know cause i have just looked at it).  [https://www.kaggle.com/preetviradiya/brian-tumor-dataset](https://www.kaggle.com/preetviradiya/brian-tumor-dataset)  
+
+
+But I think you want more of the genomics-proteomics one... sooo.... What about a site-union predictor for proteins?
+- Maybe some sort of classifier for genome assemblies? There's lots of assemblies out there with lots of different types of labels, maybe just taxonomic heirarchy, (which kingdom/phylum/class does a particular assembly belong to). You could compare fixed dimensional embedding strategies (different kmer frequencies). Maybe, you could compare ML architectures, maybe even see how something like a 1D CNN performs.
+- Hey, I am working on an ML project for protein annotation, I am new to ML but I have an experimental bio background. DM me and we can chat and exchange ideas.
+- Thank you for sharing!

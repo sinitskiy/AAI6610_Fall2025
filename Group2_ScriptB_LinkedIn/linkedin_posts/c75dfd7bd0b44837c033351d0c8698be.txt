@@ -1,0 +1,37 @@
+URL: https://www.linkedin.com/posts/davidescaramuzza_cvpr2025-statespacemodels-ssms-activity-7337871101726752768-YBc2
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Davide Scaramuzza的动态
+Davide Scaramuzza
+
+Professor of Robotics and Perception at the University of Zurich
+
+4 个月
+
+Excited to share our #CVPR2025 paper, "GG-SSMs: Graph-Generating State Space Models", to be presented as a Highlight Paper in Nashville this week! 
+PDF: https://lnkd.in/dncGn_KD
+Code: https://lnkd.in/ddidbu4E
+
+While #StateSpaceModels (#SSMs) are extremely powerful for sequential data, the one-dimensional processing paradigm severely limits their ability to model non-local interactions in high-dimensional data. Even advanced models like #Mamba, #Vim, and #VMamba, though offering selective scanning, remain constrained by predetermined paths, often failing to efficiently capture the high-dimensional interactions of data dependencies. 
+
+Our new Graph-Generating State Space Models (GG-SSMs) directly address this limitation. We introduce a novel framework that dynamically constructs graphs based on inherent feature relationships, adapting to the unique structure of the data itself! By leveraging Chazelle's Minimum Spanning Tree (MST) algorithm, known for its near-linear time complexity, GG-SSMs enable robust feature propagation and efficiently model complex, long-range dependencies without prohibitive computational costs. 
+
+Our contributions are as follows: 
+* Integration of dynamic graph structures directly into the SSM framework, capturing complex spatial and temporal relationships. 
+* SOTA results across 11 diverse datasets, including ImageNet, optical flow, event-based eye tracking, and time series! 
+ - ImageNet: Sets a new benchmark with 84.9% top-1 accuracy, outperforming prior SSMs by 1%. 
+ - KITTI-15 Optical Flow: Achieves the lowest error rate ever reported at 2.77%. 
+ - Eye Tracking: Improves detection rates by up to 0.33% with fewer parameters on event-based datasets. 
+ - Time Series: Demonstrates superior forecasting accuracy across six real-world datasets. 
+* MST-based construction ensures linear computati

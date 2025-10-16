@@ -1,0 +1,35 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1i0z3xj/a_2_years_postdoc_the_genetics_of_the_silk_road/
+Title: A 2 years postdoc: The Genetics of the Silk Road
+
+Content:
+**Description**
+
+Human migration introduces new genetic variants to host populations that may be passed on and eventually reach modern populations. For millennia, the Silk Roads facilitated the exchange of genetic information between the East (China) and the West (the Roman Empire). However, we know little about WHO and WHAT traveled these roads. This is the first attempt to study the Silk Roads genetically by sequencing the first ancient DNA of the mysterious Parthians who paved the Firsk Silk Road and disappeared centuries later, almost without leaving any written evidence. 
+
+By harnessing AI and analyzing ancient genomes, we will gain insights into their ancestry, social practices, dietary habits, and more. This is a novel study that focuses on a poorly known civilization that ruled Central Asia for 500 years and a historical highway of ideas, beliefs, and genes.
+
+**Requirements**
+
+Applicants must have a Ph.D. or equivalent degree (within three years of the application deadline, with exceptions for special circumstances) in a relevant field such as machine learning, mathematics, biostatistics, or statistical genetics. Essential skills include:
+
+* Proficiency in Python, R, and bash programming.
+* Strong statistical skills and familiarity with machine learning frameworks.
+* Experience analyzing large NGS datasets.
+* Fluency in English and a proven ability to publish in peer-reviewed journals.
+* Strong organizational, collaborative, and independent research skills.
+
+The full post is here: [http://www.eranelhaiklab.org/PostdocAd.html](http://www.eranelhaiklab.org/PostdocAd.html)
+
+**Start**: The Expected start date is 1/3/25 or as soon as possible.
+
+**Questions and contact**: please contact eran dot elhaik at [biol.lu.se](http://biol.lu.se) for questions
+
+**Keywords**: #SilkRoads, #AncientDNA, #AI, #MachineLearning
+
+Comments:
+- My first question is how are you going to get data
+- >Deadline February 1st 2024
+
+ Typo I assume?
+- Would the project also cover trade routes to south Asia, specifically India? Recent research has shown that the Romans traded with India more than China to such an extent that 30% of the Roman Empire's revenue was from Indian trade which is far more than trade with China at that point.

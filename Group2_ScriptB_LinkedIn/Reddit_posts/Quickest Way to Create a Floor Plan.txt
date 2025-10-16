@@ -1,0 +1,34 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1h25mql/quickest_way_to_create_a_floor_plan/
+Title: Quickest Way to Create a Floor Plan
+
+Content:
+I am considering an application for in door navigation. And the first step is to map out the floor plan. Imagine your local walmart supercenter 180K square feet, and a regular walmart of 40K sqf.
+
+Approaches that I have explored:
+
+1. SLAM/Photogrammetry (which requires a significant amount of videos/images)
+2. Roomplan (based on ARkit) like technology requires a Lidar and seem to require someone pointing the camera to all the viewable spaces.
+
+Approaches above all seem to build from scratch. I am wondering if there is a "large model" that understands the 3D world that can translate this 2d projection back to the 3d world / 2d floorplan easily. 
+
+As a incapable human being, I feel a far-out view can almost build the whole floor map (even using a wide angle camera, the 0.5x on my iphone), if I take a photo at the corners of a store, I can probably map 90% of the floor plan.
+
+Is there any technique or machine learning that does this?
+
+Input:
+
+https://preview.redd.it/l7gbvbkcfp3e1.png?width=700&format=png&auto=webp&s=38cef65ca9645edb2dc16a5297d3f09d11c41c0e
+
+Output:
+
+1. minimally, it should generate a 2D binary map (almost a bitmap of walkable floor and not walkable floor)
+2. extra credits, it can generate a 3D knowing the shelf height, etc. and label the proper aisle number, .etc.
+
+https://preview.redd.it/uijf2zoegp3e1.png?width=1114&format=png&auto=webp&s=edef215f1f1ae92188ae923714fdc954187ee9f0
+
+Comments:
+- Depth estimation model + camera calibration can give you this to a certain extent. Essentially if you had depth information, you can get 3d points for each pixel. Then you can set the z coordinate to zero of points of certain height. 
+
+You can do this multiple times and register the pointclouds using ICP for a complete map.
+- Sensei, can you point me to some resources or libraries? Really curious how to pull it off.

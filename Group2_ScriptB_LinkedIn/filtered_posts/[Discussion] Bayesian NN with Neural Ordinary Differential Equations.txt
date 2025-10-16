@@ -1,0 +1,77 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/ib3fud/discussion_bayesian_nn_with_neural_ordinary/
+Title: [Discussion] Bayesian NN with Neural Ordinary Differential Equations
+
+Content:
+Did anyone use Bayesian Neural Nets with Neural ODE's. I want to quantify the weight uncertainty in the weights of my neural network, that tries to model the dynamics, but I'm not finding good results yet.
+
+The idea is to use variational inference to learn the posterior of the weights from a neural network that defines the dynamics of a Neural ODE.
+
+If anyone has used something like this, or has some experience with it, please let me know :)
+
+Comments:
+- I think there are two main ways to approach it:
+
+1. Being Bayesian about the weights of a standard neural ODE.  I think this should be pretty straightforward technically.  Once you write down the prior on weights and the predictive likelihood, you can presumably apply stochastic variational inference, Hamiltonian Monte Carlo, or any gradient-based approximate inference method without modification.  I disagree with [u/jiamengial](https://www.reddit.com/user/jiamengial/) \- I think you could still use a plain ODE solver once you sampled the parameters of the ODE.  In this setting you still have finitely many parameters that you're uncertain about.  I can't remember right now if anyone has tried this yet.
+2. Being Bayesian about the weights of an infinitely deep Bayesian neural network.  In this case one has infinitely many parameters to integrate over.  Depending on how you take the limit, you can end up with a stochastic differential equation describing both the prior on weights and the network activations as a function of depth, and can express the approximate posterior over all weights using SDEs.  Although the model has infinitely many parameters which we need to integrate out, the SDE that gives the approximate variational posterior has only finitely many parameters.  The more parameters you put in the posterior SDE the better it can approximate the true posterior.  Then you can do stochastic variational inference, as outlined [here](https://arxiv.org/abs/2001.01328) to fit the approximate posterior SDE.  Some students and I have started working on this idea [workshop paper](https://winniexu.ca/research/sde_bnn_icmludl2020.pdf) but it's still early days.  We're mainly planning to investigate ways to reduce gradient variance, and the power of arbitrarily-flexible approximate posteriors.
+
+There are also some papers that just add noise to the solver in a neural ODE. However, just like fixed-probably dropout, that approach is probably better thought of as a regularization strategy rather than a method for uncertainty quantification.
+
+This is a relatively unexplored area, so I don't think anyone knows what works well practically yet.
+- It's a fun thing to think about, though probably quite difficult to be done correctly.
+
+My thinking is that since the dynamics of a system is modelled by a stochastic neural net, for any initial condition at time t=0, you'd immediately get a marginal distribution of dynamics (i.e. gradients) of where to move to in the next "time step"  (if we assume discretised time), and every one of those infinitely many gradients would then need to be followed through, each of which would again induce infinitely many new gradients in the new time step. And you'd essentially marginalise over all possible paths taken to get an answer for a specific time t=1. An ODE solver might not be as useful in this case since the dynamics of any given trajectory is not "fixed".
+
+To approximate that, maybe, at every time step, you could approximate the marginal distribution of gradients with a simpler distribution, but that would probably be something like a von Mises-Fisher distribution which works on hyperspheres (though this would assume that the magnitude of the gradients are always 1, which is something you can build into your neural net).
+
+Though at this point, this whole thing begins to resemble some sort of Markov process, it'd essentially be a Markov chain in continuous time and continuous space, with trainable parameters. I guess it'd be like a continuous time (maybe you can make it discrete) MCMC algorithm with trainable parameters, where you train the parameters to maximise probability at your target label for time t=1.
+
+Not sure how you'd train that though.
+- [The Bayesian Neural Ordinary Differential Equations](https://arxiv.org/abs/2012.07244) paper addresses this topic from one point of view. There's a full set of tutorials in the DiffEqFlux.jl and Turing.jl documentations that accompanies this:
+
+- [Bayesian Neural ODEs with NUTS](https://diffeqflux.sciml.ai/dev/examples/BayesianNODE_NUTS/)
+- [Bayesian Neural ODEs with Stochastic Langevin Gradient Descent](https://diffeqflux.sciml.ai/dev/examples/BayesianNODE_SGLD/)
+- [General usage of the differential equation solvers (ODEs, SDEs, DDEs) in the Turing probabilistic programming language](https://turing.ml/dev/tutorials/10-bayesiandiffeq/)
+
+Our focus is more on the model discovery and scientific machine learning aspects. The cool thing about the model discovery portion is that it gave us a way to verify that the structural equations we were receiving were robust to noise. While the exact parameters could change, the [universal differential equation](https://arxiv.org/abs/2001.04385) way of doing symbolic regression with the embedded neural networks gives a nice way to get probabilistic statements about the percentage of neural networks that would give certain structures, and we could show from there that it was certain (in this case at least) that you'd get the same symbolic outputs even with the variations of the posterior. We're working with Sandia on testing this all out on a larger scale COVID-19 model of the US and doing a full validation of the estimates, but since we cannot share that model this gives us a way to share the method and the code associated with it so other people looking at UQ in equation discovery can pick it up and run with it.
+
+But we did throw an MNIST portion in there for good measure. The results are still early but everything is usable today and you can pick up our code and play with it. I think some hyperparameters can probably still be optimized more. The 
+
+If you're interested in more on this topic, you might want to check out the [LAFI 2021 conference](https://popl21.sigplan.org/home/lafi-2021#event-overview) or join the JuliaLang #diffeq-bridged or #turing chat channels (www.julialang.org/slack).
+- >There are also some papers that just add noise to the solver in a neural ODE. However, just like fixed-probably dropout, that approach is probably better thought of as a regularization strategy rather than a method for uncertainty quantification.  
+>  
+>This is a relatively unexplored area, so I don't think anyone knows what works well practically yet.
+
+Thank you very much for the extensive reply. The first idea you described, was also my initial idea: place some gaussian priors over to weights of the neural network(that defines the dynamics) and then with the help of ELBO and unbiased Monte Carlo gradient estimates do variational inference on the postorior of the weights. Sadly in my approach of modelling a dynamical system I didn't reach a convergence of the algorithm, like in the case of just using maximum likelihood, without an uncertainty quantifcation.  
+
+I also want to try your second idea, because I saw your videos on latent sdes and discovered the github library, which is a nice library for doing this. Before your comment I also found the workshop paper on Continous-Depth Bayesian Neural Networks which sounds theoretically very promising with what I want to achieve. I need to learn now more about SDEs, but the idea of approximating the posterior of the weights via a stochastic differential equation, sounds very promising.
+
+My plan is to be able to model dynamical systems from the field of physics, but also give an uncertainty estimate on how sure the model is about his prediction. I hope this approaches will help me doing this.
+
+Thank you once again for the mentioned papers!
+- Thank you for the interesting reply! My whole idea behind the Bayesian Neural Networks is to be able to quantify the uncertainty behind each prediction. If you have other ideas in order to quantify the uncertainty in neural ode, i will be very happy to hear :)
+- I see you've posted a GitHub link to a Jupyter Notebook! GitHub doesn't 
+render large Jupyter Notebooks, so just in case, here is an 
+[nbviewer](https://nbviewer.jupyter.org/) link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/TuringLang/TuringTutorials/blob/master/10_diffeq.ipynb
+
+Want to run the code yourself? Here is a [binder](https://mybinder.org/) 
+link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/TuringLang/TuringTutorials/master?filepath=10_diffeq.ipynb
+
+
+
+------
+
+^(I am a bot.) 
+[^(Feedback)](https://www.reddit.com/message/compose/?to=jd_paton) ^(|) 
+[^(GitHub)](https://github.com/JohnPaton/nbviewerbot) ^(|) 
+[^(Author)](https://johnpaton.net/)
+- You main goal would be to "efficiently sample" from the distribution of all possible trajectories, if such a method exists. Maybe it could help if the space dynamical system is in is discretised or finite, which might make certain sampling methods applicable.
+
+I mean, if you cared about initial conditions, then just take a specific initial position, and run your Bayesian/stochastic neural ODE at infinitesimal time steps from t=0 to t=1, many many times, and look at the distribution of the output you get. However the uncertainty for one initial condition is not gonna correlate hugely with the uncertainty you get in another initial condition.
+
+However, if you didn't care about initial conditions or what happens at time t=1, and if your space is discrete, finite, and "ordered", and if you've got discrete time, such that states could coalesce over time, and if your Neural ODE doesn't change w.r.t. time but only position (this is a lot of ifs), then maybe you could obtain samples (and therefore calculate uncertainty) from this Bayesian Neural ODE process using Exact Sampling
+- Thank you for the reply. I thought of the idea of using this discrete, finite time space when using ResNets to model dynamic systems. I will definetly think about it :)

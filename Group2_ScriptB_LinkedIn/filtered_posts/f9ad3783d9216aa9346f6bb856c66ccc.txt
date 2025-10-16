@@ -1,0 +1,97 @@
+URL: https://www.linkedin.com/posts/arthurpignet_aistats2025-activity-7328323107918684160-gLyk
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Arthur Pignet的动态
+Arthur Pignet
+
+Research Scientist at Owkin
+
+4 个月  已编辑
+
+Great to have presented our work at #AISTATS2025
+ last week! Thanks to everyone for the insightful discussions. We hope our contributions to uncertainty quantification (UQ) prove helpful.
+
+🔬 Our paper provides theoretical insights into two metrics for evaluating uncertainty in binary classifiers. We show that maximizing these metrics yields scores that allow for controlling the misclassification error and the disagreement with the Bayes optimal classifier, respectively.
+
+⚙️ Our experiments also demonstrate that these easy-to-compute metrics correlate well with more costly, annotation-heavy alternatives.
+
+Paper: https://lnkd.in/ebdZbkSQ 
+Code: https://lnkd.in/eG-QiGiq
+
+Why does this matter? As ML systems become more prevalent, especially in critical applications like healthcare, understanding when our models are uncertain is essential for safe and reliable deployment. However, uncertainty estimation is complex and challenging to validate. By providing theoretically grounded metrics to evaluate the utility of uncertainty estimators, our findings aim to pave the way for broader adoption of UQ in deep learning applications.
+
+83
+1 条评论
+赞
+评论
+分享
+Félix Balazard
+
+Statistical project leader
+
+4 个月
+
+Perfect dimensions for the poster 👌 
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+995 位关注者
+
+8 则动态
+查看档案  关注
+探索相关领域
+How Machine Learning Impacts Healthcare
+Addressing Reliability Challenges in Medical AI
+The Importance of Data Annotation in AI
+Accuracy Challenges in AI Writing Classifiers
+Evaluating the Accuracy of AI-Generated Insights
+The Impact of AI on Data Accuracy
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

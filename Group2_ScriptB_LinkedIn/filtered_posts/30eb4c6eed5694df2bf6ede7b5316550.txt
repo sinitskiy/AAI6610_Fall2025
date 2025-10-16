@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/jonsalisbury_world-modeling-with-probabilistic-structure-activity-7374059229550272512-hqwC
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jon Salisbury的动态
+Jon Salisbury
+
+CAIO - CEO @ Nexigen - Ultra Curious, Humble - Cyber Security, Cloud, Smart City, AI, Quantum, Human Centered, Psychology, Leadership. Cooperation, Patience, Encourage, Helpful, Christian, Love!
+
+3 周
+
+World Modeling with Probabilistic Structure Integration
+
+One of the longer papers.  Absolute fascinating.  
+
+Authors
+Klemen Kotar  Wanhee Lee  Rahul Shetty (Venkatesh) Honglin Chen, Daniel Bear, Jared Watrous, Simon Kim, Khai Loong Aw, Lilian Naing Chen, Stefan Stojanov, Kevin Feigelis, Imran Thobani, Alexander Durango  Khaled Jedoui, Atlas Kazemian, Daniel Yamins 
+
+We present Probabilistic Structure Integration (PSI), a system for learning richly controllable and flexibly promptable world models from data. PSI consists of a three-step cycle. The first step, Probabilistic prediction, involves building a probabilistic graphical model Psi of the data, in the form of a random-access autoregressive sequence model. Psi supports a complete set of learned conditional distributions describing the dependence of any variables in the data on any other set of variables. In step 2, Structure extraction, we show how to extract underlying low-dimensional properties in the data, corresponding to a diverse set of meaningful "intermediate structures", in a zero-shot fashion via causal inference on Psi. Step 3, Integration, completes the cycle by converting these structures into new token types that are then continually mixed back into the training diet as conditioning signals and prediction targets. Each such cycle augments the capabilities of Psi, both allowing it to model the underlying data better, and creating new control handles -- akin to an LLM-like universal prompting language. We train an instance of Psi on 1.4 trillion tokens of internet video data; we use it to perform a variety of useful video prediction and understanding inferences; we extract state-of-the-art optical flow, self-supervised depth and

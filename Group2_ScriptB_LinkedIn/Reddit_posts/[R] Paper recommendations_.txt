@@ -1,0 +1,75 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m3arzo/r_paper_recommendations/
+Title: [R] Paper recommendations?
+
+Content:
+Hello guys :)  
+Since I am through with my pile of papers to read, I wanted to ask you if there are any recent papers you liked and would recommend :)  
+I am interested in everything that you find worthwhile, however since I need to specify my personal favorites to not get this post removed, I am mostly interested in:  
+\- transformer architecture optimizations, including optimizers and losses  
+\- theoretical machine learning, including scaling laws and interpretablility  
+\- recent alternative models such as flow matching, lambda networks etc.  
+\- and anything you think is well-done research :)
+
+Thank you in advance,  
+You never disappoint me :)
+
+I wish you all a great day ;)
+
+Comments:
+- https://arxiv.org/pdf/2505.11711v1
+
+https://www.arxiv.org/pdf/2505.23735
+
+https://arxiv.org/pdf/2406.13762
+
+https://arxiv.org/abs/2501.00663
+
+https://arxiv.org/abs/2501.18593
+
+https://arxiv.org/abs/2410.23054
+
+https://arxiv.org/pdf/2303.01486
+
+https://arxiv.org/abs/2502.13189
+
+I do have more (my current reading list is >100 papers) if you'd like more. any recommendations on your side would be appreciated (not only OP)!
+- Muon is quite a nice rabbit hole imo
+- I'll pitch my own work here, as I worked very hard on this: https://pub.sakana.ai/ctm/
+
+
+That is an interactive website that mirrors the paper, which is linked within the website.
+- Great mix of interests! You might enjoy our recent work:
+
+
+
+DLBacktrace – model-agnostic explainability: [https://arxiv.org/abs/2411.12643](https://arxiv.org/abs/2411.12643)
+
+ xai\_evals – benchmarking XAI methods: [https://arxiv.org/html/2502.03014v1](https://arxiv.org/html/2502.03014v1)
+
+ Reliable Metrics in XAI: [https://arxiv.org/abs/2502.04695](https://arxiv.org/abs/2502.04695)
+
+ AI Technical Debt in FSIs: [https://hal.science/hal-04691168](https://hal.science/hal-04691168)
+- Many thanks stranger
+- 👍👍
+- Thanks a lot :)  
+I will have lots of printing to do :)
+- I'm currently working on a RAG related project. Could you recommend some good, current papers?
+- I forgot about Muon but then Kimi K2 used it
+- Very good suggestion, just found out about it recently :p
+- I also believe that coming back to the times when they were originally designed to be like human brain, instead of packed with workarounds and simplified due to computational inefficiency, is the right choice. I have a dream that once my stuff works out and I will have enough time in the world to do whatever I want, I want to learn neurology on the side.   
+
+
+Beautiful website btw
+- I used it but its not showing me a path i might be doing it wrong can you please explain
+- Thank you :)
+
+The explainability stuff is something I definitely did way too little :p
+- Thank you! It was fun work.
+- You mean the interactive maze?
+
+
+Try hitting the "new" button. I had to train a smaller model for this and it sometimes gets stuck. You can also right or left click on the maze to move the end and start locations. If you're on mobile, you can tap on the maze to do the same, hitting the red/green button on the bottom right to swap between moving the start and end locations. 
+
+
+The most fun is to hit teleport consecutively if it is not a very bad instance.

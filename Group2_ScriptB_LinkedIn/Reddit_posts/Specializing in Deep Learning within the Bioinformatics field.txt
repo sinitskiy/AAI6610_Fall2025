@@ -1,0 +1,74 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1532fvy/specializing_in_deep_learning_within_the/
+Title: Specializing in Deep Learning within the Bioinformatics field
+
+Content:
+I just finished my first year of my Master Bioinformatics. After completing courses such as machine learning and deep learning I am amazed by the possibilities of developing complex neural network (NN) architectures for solving biological problems like PPI.
+
+Next year I will start with my Master Thesis and try to develop a NN that uses SNPs as input (and more known information) and outputting a predicted phenotype trait.
+
+My question: is it a good idea to specialize in Deep Learning with Bioinformatics and maybe complete a PhD in this field? Or what specialization within Bioinformatics do you think is worth the time and effort?
+
+Comments:
+- >My question: is it a good idea to specialize in Deep Learning with Bioinformatics and maybe complete a PhD in this field? Or what specialization within Bioinformatics do you think is worth the time and effort?
+
+Well bioinformatics goes more and more in this direction, so if you are interested, go for it!
+- Very few people are doing deep learning in biology in a way that is sensible. So I'll say learn the basics of building good models (be it statistical, ML or DL). Don't fall into the hype of doing DL for the sake of doing DL rather than it being the best tool for the job. Also data leakage is a huge issue in biology - so look into that.
+- No reason not to. It certainly has become a hot topic
+- Honestly?  I think the hype is greater than the actual value.
+
+Don't get me wrong, there's a huge place for ML in bioinformatics, but like every "hot" topic, there are people trying to do things with it that it shouldn't be doing.  SNP to phenotype isn't really a project you need ML to solve, and if it is, then it would require a hell of a lot more training data than currently exists in the world to solve it.
+
+Do you remember blockchain?  Before crypto, blockchain was going to save the world, and we had blockchain currencies, blockchain ice tea, blockchain medical records, blockchain genomes.... and the list goes on and on.
+
+Right now, it's ML's turn.  My company uses ML to do high-dimensional data tuning, where it would take a huge amount of effort to manually optimize what we're working, but can be reasonably explored with ML algorithms.  But that doesn't mean ML is the right answer for everything.
+
+If you can interpolate your way to the answer, ML will probably get you there.  If you're going to extrapolate your way to the answer, you'd better find another vehicle, because ML probably won't work.
+
+In bioinformatics, the number of interpolative questions is finite.
+- a lot of companies right now are trying to use AI/ML for drug discovery and development
+
+if it's something you're interested in, it definitely makes sense
+- offbeat repeat violet fall merciful degree rob hunt grandfather tie
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- It can definitely be helpful. I’m head of compbio at a midsize biotech and one of my specialities is deep learning. I’ve used it for patient selection, gene signature discovery, drug design, off target prediction, among other things. It’s just another tool in your quiver
+- When anyone asks about what to do about data leakage my answer always is, depends
+- Data leakage is a new topic for me, so I will definitely look into that. Thanks for the suggestion!
+- Are there even that many ML jobs as the hype? Every biotech job I've had is just doing regressions on omics data and the occasional predictive model on 50 fucking samples for "proof of concept". Not much actual ML at all. I'm sick of regressions though and I want to get out of that boring stuff
+- Thanks for sharing your view and experiences about ML!
+
+With AI and technologies rapidly evolving, it's hard for me to predict what will be the 'hot' topic in bioinformatics in about 10 years. I try to prepare my bioinformatics skills in the best way possible by putting my time/resources in the right place.
+- I still think DL will play an important role in the future of bioinformatics. One of the reasons would be the growing complexity and volume of biological data being generated. As forms of biological data continue to expand in size and complexity, it will be harder for traditional analytical methods to keep up. DL has the capacity to model high-level patterns (to complex for humans) in data and learn from vast and diverse datasets, which makes it a good tool to deal with this complexity. Moreover, the improvements in computational power and data storage, are making it increasingly feasible to apply these DL models to bioinformatics problems. Thus, Deep Learning has potential to facilitate breakthrough discoveries in areas like medicine, genetic research.
+- I haven’t done that type of work in a long time - and I’d never willingly take a job that was all regressions.  It would probably kill me.  
+
+Anyhow, there are a fair number of ML jobs out there, but it’s hard to quantify.   There are probably more than there should be, but not as many as people would like you to believe.
+- I don't think that betting on your PhD being in a hot field is a good strategy. Trends come and go, and are difficult to predict. If employability is a concern, you might want to prioritize fields that show consistent growth and have long term utility.
+- That’s great rhetoric, but you have to ask what the bottleneck in bioinformatics has traditionally been, and thus why you think it would change in the future.  
+
+As a field it has never really been “this data is too complex to figure out”, which is the crux of your argument. 
+
+I’d argue that, In the past 40 years, it has always fluctuated between “the data is too noisy” and “there is not enough data.”  
+
+Both of those are significant confounders for deep learning, and no amount of automation will be able to identify signals below the level of noise, no matter how many CPUs you throw at the problem, or layers you build into your ML algorithms. 
+
+Both the genomics rush of the past decade and the current generative AI boom have massively contributed to our ability to find new patterns: the first because our data collection suddenly became much richer, and the second because we already had deep genomics data like encode, or things like TCGA to analyze, but both are just incremental steps towards a better understanding of biology. 
+
+Am I saying DL will not have an impact?  Of course not, but I am saying that the hype is overblown in our field because it doesn’t address an existing bottleneck. 
+
+In those few places where it does have an outsized impact, like protein folding, with alphafold, I expect that DL will carve out a niche for itself.  If you can predict the overlap between large volumes of clean data (Eg protein crystallography) and tough pattern recognition problems (Eg. Protein folding), then you can figure out exactly what areas to apply DL, and you’ll be ahead of the game.   Unfortunately, biology is rarely as simple as that. 
+
+TLDR: bioinformatics is complicated, and DL will have great impacts in a small number of places, and medium to low impact in a lot of places.
+- What type of work do you do now? It feels like for an MS (mine is in biostat) the only stuff out there is either the regulatory biostat jobs or this omics regression stuff (which is better than the former). No cool ML. Ive almost resigned to just doing the regression boring stuff 9-5 and calling it a day and forgetting about my career lol. And maybe doing ML just as a side hobby
+- Thank you for your insightful response. I genuinely appreciate your effort to provide well-rounded critique on the topic.  
+  
+As someone in the early stages of my bioinformatics career, I'm eager to learn and develop my understanding in this rapidly evolving field. The distinction you made between the complexity of the data and issues of noise and volume was a good point.  
+  
+I find this subreddit incredibly informative and really like the deep level of discussion that happens here. Discussion topics like this one not only enhance my understanding but also help shape my approach to bioinformatics.
+- Ah, well, I’ve bounced around a lot, but have mainly been focussed on developing algorithms and tools for analysis, from chip-seq to cancer variants to pipelines for rare disease identification.   
+
+These days, I’m not doing even much of that, as I’ve started a company doing molecular modeling, with completely rebuilt physics under the hood. These days, it’s all executive stuff, and I haven’t written code in 2 years.
+
+Right, and i forgot to mention, I do have a phd.  That does change what opportunities are available, for sure.
+- You’ve been stuck on the same thing for the last couple years. I don’t mean to offend you or anything but I’m curious have you got on a better path since ? Also asking since I don’t want to make the same mistakes
+- I'm always happy to share the little I know.  Just take it with a grain of salt - we all have our own blinders on and it can be VERY hard to predict the future.

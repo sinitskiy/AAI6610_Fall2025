@@ -1,0 +1,9 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1dtlw1b/what_is_the_best_way_to_quantify_the_trade_off/
+Title: What is the best way to quantify the trade off between model evidence and parameter uncertainty in the dynamic casual modelling ?
+
+
+Content:
+Fore example in a MRI
+
+Comments:

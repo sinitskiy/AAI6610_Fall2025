@@ -1,0 +1,70 @@
+URL: https://www.linkedin.com/posts/shweta-singh-9695a95_white-box-machine-learning-approaches-to-activity-7352359554396934146-pgr9
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Shweta Singh的动态
+Shweta Singh
+
+Associate Professor at Purdue University | Working to build Sustainable and Equitable World
+
+2 个月  已编辑
+
+In 2019, with two undergraduates interns in my group, we started exploring the idea of identifying governing equations for manufacturing systems using machine learning. Specifically, we worked on SINDy and Sym Reg (Symbolic regression) applications on widely used distillation column in chemical processes. This was fascinating to explore very early on, there were many more open questions than answers and we found some interesting results on mechanism elucidation. We published it in Machine Learning Applications as back then, journals of chemical engineering and manufacturing were skeptical about the idea and we got desk rejected. Recently, lot of other researchers have started using these techniques as well, which is a good sign for chemical engineering community  to ensure that machine learning applications are developed with domain specific knowledge and for domain applications. #UGresearch RAGHAV MOAR Renganathan Subramanian #MachineLearning #ProcessSystemsEngineering
+https://lnkd.in/gWvUcA4k
+
+White-box Machine learning approaches to identify governing equations for overall dynamics of manufacturing systems: A case study on distillation column
+sciencedirect.com
+71
+1 条评论
+赞
+评论
+分享
+Shruti Vyas
+
+Assistant Professor, AI Initiative, MSE, CS-secondary joint appointment, University of Central Florida
+
+2 个月
+
+Thanks for sharing, Shweta!
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+5,727 位关注者
+
+106 则动态
+查看档案  关注
+探索相关领域
+How to Understand AI Applications in Manufacturing
+Understanding Quantum Machine Learning Applications
+AI Applications for Improving Manufacturing Performance
+Latest AI Breakthroughs in Chemistry
+How AI is Changing Manufacturing Processes
+How Machine Learning Transforms Chemistry
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐

@@ -1,0 +1,32 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1koodqs/can_you_help_me_with_my_thesis_title/
+Title: Can you help me with my thesis title?
+
+Content:
+I am unsure about my current thesis title: Computational strategies in epilepsy genomics.
+
+[My first study](https://pubmed.ncbi.nlm.nih.gov/37834093/) was a narrative review, "Applications for Deep Learning in Epilepsy Genetic Research".
+
+My second study focused on optimising genetic sequencing in epilepsy using whole-genome sequencing data. Evaluated three variant callers and 8 structural variant callers using clinically validated variants. I increased the diagnostic yield in that study.
+
+[My third study](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5014142) focused on developing a machine learning polyvariant risk prediction model for cutaneous adverse drug reactions using whole-genome sequencing data. Improved the positive predictive value in that study.
+
+[My fourth study](https://www.medrxiv.org/content/10.1101/2025.04.24.25326321v1) focused on identifying dysregulated transcription factor activity in temporal lobe epilepsy using two gene regulatory network (regulon) detection methods (pySCENIC and hdWGCNA) and two independent single-nucleus RNA-seq datasets, a discovery and a validation dataset, each comprising epilepsy and healthy control hippocampal samples. Identified dysregulated transcription factors, which may represent potential drug targets.
+
+The fourth study might be more transcriptomics than genomics. So, just using 'genomics' in the title may not be correct.
+
+I was also thinking about alternative titles:
+
+Computational Genomics and Transcriptomics Strategies to Improve Epilepsy Management.
+
+Computational Strategies for Genomics and Transcriptomics Analysis to Improve Diagnosis and Precision Medicine in Epilepsy Management.
+
+Suggestions are much appreciated.
+
+Comments:
+- Short/concise is good.
+
+Make the title longer only if there is a clear need/benefit.
+
+Good to discuss this with PI, who has more info ad context.
+- "Computational Strategies in Epilepsy Genomics.: A Tale of Heartbreak, Mystery, and Triumph."

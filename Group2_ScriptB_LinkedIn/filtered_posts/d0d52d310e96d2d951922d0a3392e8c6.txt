@@ -1,0 +1,33 @@
+URL: https://www.linkedin.com/posts/lorenzopiu_bayesianneuralnetworks-combustion-machinelearning-activity-7313100379037097984-yWCl
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Lorenzo Piu
+
+Ph.D. Researcher @ Université Libre de Bruxelles & RWTH Aachen | Sustainable Combustion | Machine Learning
+
+6 个月
+
+Next week I’ll be at the European Combustion Meeting in Edinburgh, presenting some of our latest work on uncertainty quantification using Bayesian Neural Networks 🔥🤖
+
+We explored several approximate Bayesian inference techniques to quantify the uncertainty of deep neural networks applied to sub-filter modeling in turbulent combustion LES. Incorporating uncertainty estimates allows these models to better handle the generalizability challenges often faced by traditional deterministic architectures. In particular, well-calibrated uncertainty can serve as a reliable indicator of out-of-sample data—a common source of error in data-driven sub-filter closures.
+
+📝 The graphical abstract (top) summarizes the full pipeline: from input features to uncertainty-aware predictions.
+
+🎥 The bottom shows a demo of the Bayes by Backprop algorithm, where the model's weight are trained as a gaussian distribution, allowing to capture both mean and aleatoric uncertainty from sparse data.
+
+💻 If you’re into machine learning for physical modeling, or just want to get hands-on, I’ve made the simple code to recreate this video available on GitHub:
+🔗 https://lnkd.in/dPF9TvU5
+
+This work is the result of a collaborative effort between researchers from many institutes, including Université libre de Bruxelles, RWTH Aachen University, and University of Cambridge. I take this opportunity to thank as usual all the colleagues that supervised me and contributed throughout all the research: Arthur Péquin, Salvatore Iavarone, Rodolfo Freitas, Hongchao Chu, KISUNG JUNG; and my supervisors, Prof. Alessandro Parente and Heinz Pitsch, for their invaluable support.
+I also want to acknowledge Horizon Europe for funding my PhD through the ENCODING project, and I don't want to forget to thank and tag Patricia Domingo-Alvarez for further promotin

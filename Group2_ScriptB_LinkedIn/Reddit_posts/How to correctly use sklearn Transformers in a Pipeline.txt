@@ -1,0 +1,302 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18ngsgv/how_to_correctly_use_sklearn_transformers_in_a/
+Title: How to correctly use sklearn Transformers in a Pipeline
+
+Content:
+  This article will explain how to use [Pipeline](https://scikit-learn.org/stable/modules/compose.html?ref=dataleadsfuture.com) and [Transformers](https://scikit-learn.org/stable/data_transforms.html?ref=dataleadsfuture.com) correctly in Scikit-Learn (sklearn) projects to speed up and reuse our model training process.
+
+This piece complements and clarifies the official documentation on Pipeline examples and some common misunderstandings.
+
+I hope that after reading this, you'll be able to use the Pipeline, an excellent design, to better complete your machine learning tasks.
+
+ This article was originally published on my personal blog [Data Leads Future.](https://www.dataleadsfuture.com/ensuring-correct-use-of-transformers-in-scikit-learn-pipeline/) 
+
+### Why use a Pipeline
+
+As mentioned earlier, in a machine learning task, we often need to use various Transformers for data scaling and feature dimensionality reduction before training a model.
+
+This presents several challenges:
+
+* **Code complexity**: For each use of a Transformer, we have to go through initialization, `fit_transform`, and `transform` steps. Missing one step during a transformation could derail the entire training process.
+* **Data leakage**: As we discussed, for each Transformer, we fit with train data and then transform both train and test data. We must avoid letting the distribution of the test data leak into the train data.
+* **Code reusability**: A machine learning model includes not only the trained Estimator for prediction but also the data preprocessing steps. Therefore, a machine learning task comprising Transformers and an Estimator should be atomic and indivisible.
+* **Hyperparameter tuning**: After setting up the steps of machine learning, we need to adjust hyperparameters to find the best combination of Transformer parameter values.
+
+Scikit-Learn introduced the `Pipeline` module to solve these issues.
+
+### What is a Pipeline
+
+A `Pipeline` is a module in Scikit-Learn that implements the chain of responsibility design pattern.
+
+When creating a Pipeline, we use the `steps` parameter to chain together multiple Transformers for initialization:
+
+    from sklearn.pipeline import Pipeline
+    from sklearn.decomposition import PCA
+    from sklearn.ensemble import RandomForestClassifier
+    
+    pipeline = Pipeline(steps=[('scaler', StandardScaler()),
+                               ('pca', PCA(n_components=2, random_state=42)),
+                               ('estimator', RandomForestClassifier(n_estimators=3, max_depth=5))])
+
+The [official documentation](https://scikit-learn.org/stable/modules/compose.html?ref=dataleadsfuture.com#pipeline) points out that the last Transformer must be an Estimator.
+
+If you don't need to specify each Transformer's name, you can simplify the creation of a Pipeline with `make_pipeline`:
+
+    from sklearn.pipeline import make_pipeline
+    
+    pipeline_2 = make_pipeline(StandardScaler(),
+                               PCA(n_components=2, random_state=42),
+                               RandomForestClassifier(n_estimators=3, max_depth=5))
+
+ Understanding the Pipeline's mechanism from the source code
+
+We've mentioned the importance of not letting test data variables leak into training data when using each Transformer.
+
+This principle is relatively easy to ensure when each data preprocessing step is independent.
+
+But what if we integrate these steps using a Pipeline?
+
+If we look at the [official documentation](https://scikit-learn.org/stable/modules/compose.html?ref=dataleadsfuture.com#pipeline), we find it simply uses the fit  
+ method on the entire dataset without explaining how to handle train and test data separately.
+
+With this question in mind, I dived into the Pipeline's source code to find the answer.
+
+Reading the source code revealed that although Pipeline implements `fit`, `fit_transform`, and `predict` methods, they work differently from regular Transformers.
+
+Take the following Pipeline creation process as an example:
+
+    from sklearn.pipeline import Pipeline
+    from sklearn.decomposition import PCA
+    from sklearn.ensemble import RandomForestClassifier
+    
+    pipeline = Pipeline(steps=[('scaler', StandardScaler()),
+                               ('pca', PCA(n_components=2, random_state=42)),
+                               ('estimator', RandomForestClassifier(n_estimators=3, max_depth=5))])
+
+ The internal implementation can be represented by the following diagram: 
+
+[ Internal implementation of the fit and predict methods when called. Image by Author ](https://preview.redd.it/okhwyg75gl7c1.png?width=684&format=png&auto=webp&s=8106360fcaeb17deea2adf04fc34228dd31a9fd7)
+
+As you can see, when we call the `fit` method, Pipeline first separates Transformers from the Estimator.
+
+For each Transformer, Pipeline checks if there's a `fit_transform` method; if so, it calls it; otherwise, it calls `fit`.
+
+For the Estimator, it calls `fit` directly.
+
+For the `predict` method, Pipeline separates Transformers from the Estimator.
+
+Pipeline calls each Transformer's `transform` method in sequence, followed by the Estimator's `predict`  
+ method.
+
+Therefore, when using a Pipeline, we still need to split train and test data. Then we simply call `fit` on the train data and `predict` on the test data.
+
+There's a special case when combining Pipeline with `GridSearchCV` for hyperparameter tuning: you don't need to manually split train and test data. I'll explain this in more detail in the best practices section.
+
+## Best Practices for Using Transformers and Pipeline in Actual Applications
+
+Now that we've discussed the working principles of Transformers and Pipeline, it's time to fulfill the promise made in the title and talk about the best practices when combining Transformers with Pipeline in real projects.
+
+### Combining Pipeline with GridSearchCV for hyperparameter tuning
+
+In a machine learning project, selecting the right dataset processing and algorithm is one aspect. After debugging the initial steps, it's time for parameter optimization.
+
+Using `GridSearchCV` or `RandomizedSearchCV`, you can try different parameters for the Estimator to find the best fit:
+
+    import time
+    
+    from sklearn.model_selection import GridSearchCV
+    
+    pipeline = Pipeline(steps=[('scaler', StandardScaler()),
+                               ('pca', PCA()),
+                               ('estimator', RandomForestClassifier())])
+    param_grid = {'pca__n_components': [2, 'mle'],
+                  'estimator__n_estimators': [3, 5, 7],
+                  'estimator__max_depth': [3, 5]}
+    
+    start = time.perf_counter()
+    clf = GridSearchCV(pipeline, param_grid=param_grid, cv=5, n_jobs=4)
+    clf.fit(X, y)
+    
+    # It takes 2.39 seconds to finish the search on my laptop.
+    print(f"It takes {time.perf_counter() - start} seconds to finish the search.")
+
+ But in machine learning, hyperparameter tuning is not limited to Estimator parameters; it also involves combinations of Transformer parameters.
+
+Integrating all steps with Pipeline allows for hyperparameter tuning of every element with different parameter combinations.
+
+Note that during hyperparameter tuning, we no longer need to manually split train and test data. `GridSearchCV` will split the data into training and validation sets using [StratifiedKFold](https://scikit-learn.org/stable/modules/cross_validation.html?ref=dataleadsfuture.com#stratified-k-fold), which implemented a k-fold cross validation mechanism.
+
+[ StratifiedKFold iterative process of splitting train data and test data. Image by Author ](https://preview.redd.it/uqnuo8fpgl7c1.png?width=681&format=png&auto=webp&s=bd6b5f7edb2d4f5e71786fd6c0f45745ea2095d9)
+
+ We can also set the number of folds for cross-validation and choose how many workers to use. The tuning process is illustrated in the following diagram: 
+
+[ Internal implementation of GridSearchCV hyperparameter tuning. Image by Author ](https://preview.redd.it/piqqv9nrgl7c1.png?width=699&format=png&auto=webp&s=1bb2a2d4739e8100e71559fb9f9e0cfaa4846803)
+
+ Due to space constraints, I won't go into detail about `GridSearchCV` and `RandomizedSearchCV` here. If you're interested, I can write another article explaining them next time. 
+
+### Using the memory parameter to cache Transformer outputs
+
+Of course, hyperparameter tuning with `GridSearchCV` can be slow, but that's no worry, Pipeline provides a caching mechanism to speed up the tuning efficiency by caching the results of intermediate steps.
+
+When initializing a Pipeline, you can pass in a memory parameter, which will cache the results after the first call to `fit` and `transform` for each transformer.
+
+If subsequent calls to fit and `transform` use the same parameters, which is very likely during hyperparameter tuning, these steps will directly read the results from the cache instead of recalculating, significantly speeding up the efficiency when running the same Transformer repeatedly.
+
+The `memory` parameter can accept the following values:
+
+* The default is None: caching is not used.
+* A string: providing a path to store the cached results.
+* A `joblib.Memory` object: allows for finer-grained control, such as configuring the storage backend for the cache.
+
+Next, let's use the previous `GridSearchCV` example, this time adding `memory` to the Pipeline to see how much speed can be improved:
+
+    pipeline_m = Pipeline(steps=[('scaler', StandardScaler()),
+                               ('pca', PCA()),
+                               ('estimator', RandomForestClassifier())],
+                          memory='./cache')
+    start = time.perf_counter()
+    clf_m = GridSearchCV(pipeline_m, param_grid=param_grid, cv=5, n_jobs=4)
+    clf_m.fit(X, y)
+    
+    # It takes 0.22 seconds to finish the search with memory parameter.
+    print(f"It takes {time.perf_counter() - start} seconds to finish the search with memory.")
+
+As shown, with caching, the tuning process only takes 0.2 seconds, a significant speed increase from the previous 2.4 seconds.
+
+### How to debug Scikit-Learn Pipeline
+
+After integrating Transformers into a Pipeline, the entire preprocessing and transformation process becomes a black box. It can be difficult to understand which step the process is currently on.
+
+Fortunately, we can solve this problem by adding logging to the Pipeline.  
+We need to create custom transformers to add logging at each step of data transformation.
+
+Here's an example of adding logging with Python's standard logging library:
+
+First, you need to configure a logger:
+
+    import logging
+    
+    from sklearn.base import BaseEstimator, TransformerMixin
+    
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logger = logging.getLogger()
+
+ Next, you can create a custom Transformer and add logging within its methods: 
+
+    class LoggingTransformer(BaseEstimator, TransformerMixin):
+        def __init__(self, transformer):
+            self.transformer = transformer
+            self.real_name = self.transformer.__class__.__name__
+    
+        def fit(self, X, y=None):
+            logging.info(f"Begin fit: {self.real_name}")
+            self.transformer.fit(X, y)
+            logging.info(f"End fit: {self.real_name}")
+            return self
+    
+        def fit_transform(self, X, y=None):
+            logging.info(f"Begin fit_transform: {self.real_name}")
+            X_fit_transformed = self.transformer.fit_transform(X, y)
+            logging.info(f"End fit_transform: {self.real_name}")
+            return X_fit_transformed
+    
+        def transform(self, X):
+            logging.info(f"Begin transform: {self.real_name}")
+            X_transformed = self.transformer.transform(X)
+            logging.info(f"End transform: {self.real_name}")
+            return X_transformed
+
+ Then you can use this `LoggingTransformer` when creating your Pipeline: 
+
+    pipeline_logging = Pipeline(steps=[('scaler', LoggingTransformer(StandardScaler())),
+                                 ('pca', LoggingTransformer(PCA(n_components=2))),
+                                 ('estimator', RandomForestClassifier(n_estimators=5, max_depth=3))])
+    pipeline_logging.fit(X_train, y_train)
+
+[ The effect after adding the LoggingTransformer. Image by Author ](https://preview.redd.it/53kl3padhl7c1.png?width=664&format=png&auto=webp&s=a3e3d9dcf25f0ee8dc7234e1db9280ce1cd15b0d)
+
+When you use `pipeline.fit`, it will call the `fit` and `transform` methods for each step in turn and log the appropriate messages.
+
+### Use passthrough in Scikit-Learn Pipeline
+
+In a Pipeline, a step can be set to `'passthrough`', which means that for this specific step, the input data will pass through unchanged to the next step.
+
+This is useful when you want to selectively enable/disable certain steps in a complex pipeline.
+
+Taking the code example above, we know that when using `DecisionTree` or `RandomForest`, standardizing the data is unnecessary, so we can use `passthrough` to skip this step.
+
+An example would be as follows:
+
+    param_grid = {'scaler': ['passthrough'],
+                  'pca__n_components': [2, 'mle'],
+                  'estimator__n_estimators': [3, 5, 7],
+                  'estimator__max_depth': [3, 5]}
+    clf = GridSearchCV(pipeline, param_grid=param_grid, cv=5, n_jobs=4)
+    clf.fit(X, y)
+
+ Reusing the Pipeline
+
+After a journey of trials and tribulations, we finally have a well-performing machine learning model.
+
+Now, you might consider how to reuse this model, share it with colleagues, or deploy it in a production environment.
+
+However, the result of a model's training includes not only the model itself but also the various data processing steps, which all need to be saved.
+
+Using `joblib` and Pipeline, we can save the entire training process for later use. The following code provides a simple example:
+
+    from joblib import dump, load
+    
+    # save pipeline
+    dump(pipeline, 'model_pipeline.joblib')
+    
+    # load pipeline
+    loaded_pipeline = load('model_pipeline.joblib')
+    
+    # predict with loaded pipeline
+    loaded_predictions = loaded_pipeline.predict(X_test)
+
+ This article was originally published on my personal blog [Data Leads Future.](https://www.dataleadsfuture.com/ensuring-correct-use-of-transformers-in-scikit-learn-pipeline/) 
+
+&#x200B;
+
+Comments:
+- What is the point of pipeline in model estimation?
+Estimation is so uncertain and requires mutiple error and trial steps. 
+By the time the whole process is finalized, the model is trained. 
+
+If you have a lot of data, I can see someone training a smaller model on a sample of the data and want to pipeline it to see if it works for the whole dataset. But if down sampling is needed, sklearn + numpy probably can't handle the data volume anyways.
+
+For some of "production run", I can See pipeline being useful. But, that's after the model is trained.
+
+Can someone who has used pipelines in model training shed some light on this?
+- Thanks for the contribution. If you're looking for a more advanced followup topic, I think there is a lack of guidance on using FeatureUnion and ColumnTransformer to do heterogenous preprocessing (e.g. impute some variables, standardize some variables, OHE these ones, ordinal encode these others, etc). Actually the biggest hurdle I had recently was doing all that with specified interactions in the pipeline as well (using the PolynomialFeatures function). If I had more time I'd probably contribute examples back to the sklearn docs or a blog, but happy if someone else takes it up : )
+
+Thanks again. I love pipelines for quickly iterating in a new project.
+- Thanks
+- Thankyou
+- Thank you I will use this
+- This is great! It really helped me with optimising my code blocks especially since I'm being marked on the quality of code in uni😛
+- Bad Towards Data Science  article. Its is number 1000 of how to use sklearn Pipelines.
+
+Also gridsearch, really? It is not 2015 anymore.
+- [removed]
+- The effectiveness of a model is not solely determined by the estimator; the processing of data and the selection of features also play a significant role.  
+The purpose of the pipeline is to combine these steps and have them function as a whole.  
+As a result, you can easily debug, evaluate the overall score, or reap any other benefits you think the pipeline approach can offer.
+- Thank you for your advice; you have pointed me in the right direction for my next research.  
+Like most people, we all grow up step by step from apprenticeship, so I am very willing to share what I know in the hopes of helping newcomers avoid some detours, and at the same time, I am also eager to learn from more people.  
+Initially, it was just intended to jointly publish a piece of content, but I didn’t expect this community to be so loving. I have carefully studied all the comments and suggestions, and they have been a tremendous encouragement.
+- Thanks for the reply.
+- Gridsearch still has its uses and I'm not sure what you're adding to the conversation by being an asshole.
+- [deleted]
+- [deleted]
+- Haha, you caught me. I just wanted to syndicate my post here, if it helps newcomers that would be great.
+- This post if off topic. /r/datascience is a place for data science practitioners and professionals to discuss and debate data science career questions.
+
+Thanks.
+- Plus it helps you avoid data leaking and enables creating a reusable library of pipelines that your whole team can help maintain
+- I agree.
+
+But, you don't always know what kind of data processing technique  works. You may also need to see what the data look like after data processing to see if why things are working or not working. When the processing step is packaged in a pipeline, you don't get access to the processed data right before estimator.
+- Gridsearch only has an usecase when you need to optimize 1 hyperparameter but than it is a fancy for loop. With 2 hyperparameters it can take a while if  one of the hyperparameters is bad but you still need to train a model x times. With 3 forget it.
+- what is the more common approach people use nowadays if gridsearch is indeed outdated?

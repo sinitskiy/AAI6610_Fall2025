@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19bshlx/interview_help_sales_operations_data_scientist/
+Title: Interview Help - Sales Operations Data Scientist - Forecasting
+
+Content:
+Hello all! I have an interview for a sales operations Data Scientist (DS) position at a provider of critical infrastructure and services for data centers and related facilities. I want to nail this interview, but I have been having a hard time figuring out what to study for the technical side of things, what some good questions might be to ask, and what kinds of industry questions they might ask. They said they need someone who can do forecasting and has the ability to explain statistical models to salespeople and convince them that they are reliable and should be used (I slightly above average on the last part but I have great soft skills and an am passionate about this).
+
+Below is my schedule, an email from the recruiter, and the job description. I only have one year experience as a predictive analyst at an insurance company, I took a time series course in the spring of 2021 (plus my thesis involved change point), and I know R (really well), excel (really well), R Shiny (Kinda, it's been a few years), and Python (the absolute basics). I hit it out of the park at the first interview with the hiring manager because I showed her some projects I have been working on, including a basic ARIMA model I made in preparation for this interview.
+
+**Schedule:**
+
+1. Sales Data Manager - 30 minutes
+2. Sales Data Manager - 30 minutes
+3. Director, Demand Planning - 30 minutes
+4. 2 Analysts - 30 minutes
+5. Director, Sales Data Analytics - 45 minutes (I already interviewed with her for 30 min. I showed her some projects I had been working on and she was impressed. I suspect this will be the more technical part.)
+
+**Email:**
+
+I’ve included the job description below.  The other things we spoke about were modeling used for forecasting.  Rohit, Director Demand Planning works through what we call SIOP Sales, Inventory, Operations, and Planning.  Keep that in mind and how your experiences may be relevant to a sales operations team.
+
+**Job Description (says SDS but they would hire me in as a DS):**
+
+**POSITION SUMMARY**
+
+The Senior Data Scientist will research, develop, and deploy actionable best-in-class statistical and machine learning models and methods to measurably improve the sales force's effectiveness and overall outcomes.
+
+**RESPONSIBILITIES** 
+
+* Development of processes to support advanced analytics and data driven decision making processes. Provide consultative and direct support to assist the development of foundational analytics capabilities to accelerate and leverage advanced analyses.
+* Communicate complex topics to senior and regional leaders and build strong relationships and data/model confidence at all levels of the sales organization.
+* Uses business experience and education to recommend, develop, and implement best practices in model development, recommend appropriate models for business needs, support business review processes with effective visualizations and automate processes where needed.
+* Mentors other data scientists and sales analysts to promote a culture of collaborative growth and continuous learning and improvement
+
+**QUALIFICATIONS**
+
+* 5+ years’ analytical experience or commensurate higher education
+* Experience working with a programmatic statistical language like Python or R, Python preferred
+* Experience working with a visualization tool like Power BI or Tableau, PowerBI preferred
+* Experience working with SQL and a large data platform like Snowflake or Hadoop
+* Proficiency and application experience in data analysis, business intelligence, simulation, and optimization.
+* Exposure to and proficiency in a broad range of analytics methods and how to deploy them in real-world applications
+* Attention to detail in execution
+* Able to take high level direction and create/implement actionable plan 
+* Self-directed and confident in managing a portfolio of ongoing projects, advocating for prioritization based on relative business value.
+
+Comments:
+- BUMP (Not sure how it works here, but I am giving your post attention so that it gets more reach 😇)
+
+Also good luck to you out there
+- I guess you can split it  into 2 different areas to prepare? I highly doubt all rounds are technical though, probably a mix of vibe check/soft skills and technical
+
+For Vibe check/soft skills, probably can think of how you handle various scenarios?
+- stakeholder management/ building relationships or trust
+- requirement gathering
+- problem framing/translating biz requirements to data science problems
+- prioritisation
+- communication of results
+- how you would work with others etc.
+-maybe prev experience of how ur work has positively impacted the team?
+
+For technical, 
+- maybe forecasting related concepts? Stationarity, seasonality, pacf, acf
+- how would you approach a hypothetical forecasting problem? Walk through the steps you'd take, how you handle dirty data etc.
+- It seems like there is an emphasis on having a strong ability to explain technical concepts to a non-technical audience. My guess is that you're going to be explaining something related to forecasting to the sales people. This is a skill I've seen come up time and again throughout my DS career. A great way to practice this would be to just explain your projects to one of your friends or family members (who is not technical). See if you can get to a point where they can explain the concepts back to you.
+- You should study the company's website and see if there are any projects you can comment are that your skillset would bring a significant contribution to in a data scientist context.
+- An easy thing to do in the interview is just have a pen and paper handy and write down the questions they are asking you (like shorthand). And for the love of God make sure you ANSWER the question. 
+
+Interviewer: Can you tell me about a time ...
+
+Interviewer: blah blah blah blah and talks about everything BUT the question.
+- forecasting stuff
+- Thank you!
+- Yeah,  the forecasting stuff is tough for me because I don't know how deep in the math and stats sauce I should go
+- Thank you!
+- Good idea
+- I've got the STAR method locked and loaded

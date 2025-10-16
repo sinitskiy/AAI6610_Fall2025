@@ -1,0 +1,25 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1dwo2m5/training_llm_on_local_machines/
+Title: Training llm on local machines
+
+Content:
+I'm looking for a good tutorial on how to train a LLM locally on low to medium level machines for free, need to train it on some documents before i integrate it in my project using api or something. if any one knows a good learning source
+
+Comments:
+- Andrej Karpathy's youtube channel.
+- [removed]
+- r/localllama
+- Cfbr
+- Check this on LoRA fine-tuning: https://youtu.be/3ykNbUHRg2A?feature=shared
+- I think that will be better when you try fine-tune LLM, it faster and require less VRAM on start.
+- There is currently a zoomcamp on LLMs going on for free, it teaches How to make an LLM retreive information and answer from any source, just Google "zoomcamp LLM".
+The dude teaching that knows his stuff.
+- You're probably going to need to use a good doc to text to get the docs to something that the llm can ingest. Marker seems like it's fast and robust
+https://github.com/VikParuchuri/marker
+You'll need a decent chunker too.
+- Thanks man imma look him up
+- his videos are gold
+- Any video in particular as a good start?
+- Thanks i'll check it
+- Thank you, yeah i'm struggling in this phase now, i'll try it
+- Send me a DM and I can lend a hand

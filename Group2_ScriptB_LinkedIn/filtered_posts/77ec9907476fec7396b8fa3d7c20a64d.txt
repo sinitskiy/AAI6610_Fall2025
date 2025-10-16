@@ -1,0 +1,31 @@
+URL: https://www.linkedin.com/posts/maike-sonnewald-b911a9134_postdoctoral-position-on-sea-level-predictability-activity-7103514821203034113-X7Gx
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Maike Sonnewald的动态
+Maike Sonnewald
+
+--
+
+2 年
+
+I have an open position for a postdoctoral associate in my group at UC Davis. The focus is on sea level predictability and machine learning. I would be grateful if you could share it in your networks! Details below and here: https://lnkd.in/gZss4kia
+
+
+POSTDOCTORAL POSITION ON SEA LEVEL PREDICTABILITY AND MACHINE LEARNING
+
+The Computer Science department at the University of California (UC), Davis invites applications to research the physical ocean processes and their interactions that contribute to sea level variability on subseasonal to decadal timescales. We will apply and develop data mining and sparse data inference methodologies to sea-level data. The machine learning applied will be targeted at gaining new knowledge and harnessing a network’s potential as a universal function approximator to also learn more about emergent drivers of variability. The larger objective of this study is to improve predictions of sea level variability originating from a seasonal to multidecadal prediction system developed at GFDL (SPEAR), as well as general climate models, by providing Process Oriented Diagnostics (POD) to the MDTF framework. The PODs address both the initial value and model error components of sea level prediction uncertainty.   
+
+The position reports to Professor Maike Sonnewald at UC Davis and will collaborate with Aparna Radhakrishnan at Princeton University, John Krasting, Modeling Systems Division, and selected HPC and Scientific staff at the NOAA Geophysical Fluid Dynamics Laboratory as well as Matt Newman at the NOAA Physical Sciences Laboratory. The appointment will be through the UC Davis Computer Science Department and compensated accordingly. The appointment is for one year and may be renewed up to three years pending satisfactory performance.
+
+A Ph.D. is required in a related field, for example, oceanography, physics, data science, or computer science. Ideal applic

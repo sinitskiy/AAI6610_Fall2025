@@ -1,0 +1,219 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/164lb7s/p_build_adaptive_sparse_grids_to_accurately/
+Title: [P] Build adaptive sparse grids to accurately approximate and integrate functions of multiple variables
+
+Content:
+I'm working on a project that provides an adaptive sparse grid algorithm on Chebyshev nodes for interpolation and integration of multivariable functions on k-cells.
+
+[https://github.com/rnburn/bbai](https://github.com/rnburn/bbai)
+
+Unlike polynomial interpolants in equispaced points, interpolants in Chebyshev nodes have excellent approximation properties (see Myth 1 of \[[1](https://people.maths.ox.ac.uk/trefethen/mythspaper.pdf)\]). If a function is Lipchitz continuous, they converge; if a function is smooth with v derivatives and bounded variation for the v-th derivative, then they converge O(n\^-v); and if a function is analytic, they converge geometrically.
+
+The Chebyshev Gauss-Lobatto nodes define a sequence of nested points, X\^1, X\^2, ..., that make it possible to build Smolyak sparse grids at Chebyshev nodes (\[[2](https://www.researchgate.net/profile/Erich-Novak/publication/220390848_High_dimensional_polynomial_interpolation_on_sparse_grids/links/02e7e5280d4859a1db000000/High-dimensional-polynomial-interpolation-on-sparse-grids.pdf)\], \[3\]).
+
+![img](4cw0xi8oc2lb1 "
+")
+
+For bbai, I implemented the sparse grid algorithm from \[[4](https://arxiv.org/pdf/1110.0010.pdf)\] with Chebyshev Gauss-Lobatto nodes. \[[4](https://arxiv.org/pdf/1110.0010.pdf)\] generalizes Smolyak sparse grids to allow different dimensions and localities to have more points than others so that points can be better distributed to where they are most needed.
+
+# An Example
+
+Here's a quick demonstration for a function of two-variables. A notebook with the full source code is available [here](https://github.com/rnburn/bbai/blob/master/example/13-sparse-grid.ipynb).
+
+    import numpy as np
+    
+    # A test function
+    def f(x, y):
+        v1 = np.abs(x - 0.2)
+        v2 = 2 * np.abs(y - 0.7)
+        return np.exp(-v1 - v2)
+    
+    # Build an adapative sparse grid to interpolate f on [0, 1]^2
+    from bbai.numeric import SparseGridInterpolator
+    interp = SparseGridInterpolator()
+    interp.fit(f)
+
+Plotting out the sparse grid over the contours of the function gives
+
+![img](r1t9n55zc2lb1 "    
+")
+
+We can see more points are used used in the upper-left portion of the graph where the function varies at a faster rate.
+
+To test accuracy, we can randomly sample uniformly distributed points and compute approximation errors.
+
+    N = 10000
+    X = np.random.uniform(size=(N, 2))
+    
+    # Compute approximation errors for the sparse grid interpolation
+    f_true = f(X[:,0], X[:, 1])
+    f_approx = interp.evaluate(X[:,0], X[:,1])
+    errs = np.abs(f_true - f_approx)
+    
+    # For comparison, we'll also do the same for a cubic interpolation
+    # on a dense grid of similar size
+    from scipy.interpolate import RegularGridInterpolator
+    density = 43
+    xx = np.linspace(0, 1, density)
+    yy = np.linspace(0, 1, density)
+    xg, yg = np.meshgrid(xx, yy, indexing='ij')
+    evals = f(xg, yg)
+    interp_p = RegularGridInterpolator((xx, yy), evals, method='cubic')
+    f_approx_p = interp_p(np.array([X[:, 0], X[:, 1]]).T)
+    errs_p = np.abs(f_true - f_approx_p)
+
+These are the errors we get for the sparse grid and cubic interpolations:
+
+https://preview.redd.it/ezujk6tbd2lb1.png?width=1200&format=png&auto=webp&s=2e631bee19bb0c9813bba000ae020a548edb5998
+
+  
+We see that the mean error for the cubic interpolation is approximately 4x larger than that for the sparse grid, 2.46e-4 / 6.10e-5  ≈ 4, and the max error is approximately 17x larger, 1.66e-2 / 9.56e-4 ≈ 17.36.
+
+If we extend the test function to three dimensions, the comparison gets even better for the sparse grid.
+
+    # Extend f to another dimension
+    def f(x, y, z):
+        v1 = np.abs(x - 0.2)
+        v2 = 2 * np.abs(y - 0.7)
+        v3 = 0.75 * np.abs(z - 0.4)
+        return np.exp(-v1 - v2 - v3)
+    
+    # Fit a sparse grid
+    interp = SparseGridInterpolator()
+    interp.fit(f)
+
+Displaying the points, we get
+
+![img](fwxbxh3nd2lb1 "
+")
+
+    # Sample some random points on [0,1]^3
+    N = 10000
+    X = np.random.uniform(size=(N, 3))
+    
+    # Test the accuracy of the sparse grid interpolation at
+    # sample points
+    f_true = f(X[:,0], X[:, 1], X[:, 2])
+    f_approx = interp.evaluate(X[:,0], X[:,1], X[:,2])
+    errs = np.abs(f_true - f_approx)
+    
+    # Also, compute errors for a cubic spline interpolation
+    # on a dense grid
+    density = 20
+    xx = np.linspace(0, 1, density)
+    yy = np.linspace(0, 1, density)
+    zz = np.linspace(0, 1, density)
+    xg, yg, zg = np.meshgrid(xx, yy, zz, indexing='ij')
+    evals = f(xg, yg, zg)
+    interp_p = RegularGridInterpolator((xx, yy, zz), evals, 
+                                   method='cubic')
+    f_approx_p = interp_p(np.array([X[:, 0], X[:, 1], X[:,2]]).T)
+    errs_p = np.abs(f_true - f_approx_p)
+
+Here's what we get when we plot out the errors:
+
+![img](04ikuvh3e2lb1 "
+")
+
+Now the mean error for the cubic interpolation is about 16x than that for the sparse grid and the max error is over 40x larger.
+
+A sparse grid interpolation at Chebyshev nodes also naturally gives us a an approximation for the integral of the function over the k-cell that corresponds to Clenshaw-Curtis quadrature.
+
+And fyi - Clenshaw-Curtis qudrature is just as good as Gauss quadrature (see Myth 4 of \[[1](https://people.maths.ox.ac.uk/trefethen/mythspaper.pdf)\])
+
+    print(interp.integral)
+
+This outputs  0.36533582812121873. For comparison, doing the integral with Mathematica gives 0.365345.
+
+# More Dimensions
+
+To get a sense of how the size of the sparse grid varies with the number of dimensions, let's fit analytic functions with the dimensionality ranging from 1 to 10.
+
+    dmax = 10
+    N = 10000
+    
+    # Pick some arbitrary parameters for the functions
+    mults = np.array([0.2699884 , 0.35183688, 0.296529, 0.26805488, 0.20841667,
+           0.31774713, 0.21527071, 0.43870707, 0.47407319, 0.18863377])
+    offsets = np.array([0.79172504, 0.52889492, 0.56804456, 0.92559664, 0.07103606,
+           0.0871293, 0.0202184 , 0.83261985, 0.77815675, 0.87001215])
+    
+    # Define a function f of given dimension, fit a sparse grid to approximate f, and
+    # measure the approximation error at some random points
+    def fit_grid(d):
+        def f(*args):
+            n = len(args[0])
+            t = np.zeros(n)
+            for j, arg in enumerate(args):
+                delta = arg - offsets[j]
+                t -= mults[j] * delta * delta
+            return np.exp(t)
+        domain = [(0, 1)]*d
+        interp = SparseGridInterpolator(tolerance=1.0e-4, ranges=domain)
+        interp.fit(f)
+        X = np.random.uniform(size=(N, d))
+        args = [X[:, j] for j in range(d)]
+        f_true = f(*args)
+        f_approx = interp.evaluate(*args)
+        errs = np.abs(f_true - f_approx)
+        return interp.points.shape[1], np.mean(errs), np.max(errs)
+    
+    # Run the experiment for d = 1, ..., 10
+    num_points = []
+    mean_errs = []
+    max_errs = []
+    for d in range(1, dmax + 1):
+        npoints, mean_err, max_err = fit_grid(d)
+        num_points.append(npoints)
+        mean_errs.append(mean_err)
+        max_errs.append(max_err)
+
+Plotting out the mean and max approximation errors, we get
+
+https://preview.redd.it/5n1wbplbe2lb1.png?width=1200&format=png&auto=webp&s=b09feba0672a301b3e995385dc20aa25be1f9307
+
+# An Application
+
+One use case for sparse grids is deterministic Bayesian inference where we frequently want to fit and marginalize a posterior distribution with multiple variables.
+
+Consider, for example, a Gaussian process model for spatially correlated data with a nugget effect. \[[5](https://www.sciencedirect.com/science/article/abs/pii/S037837581200081X)\] developed a non-informative prior for the model using the reference prior approach (\[[6](https://www.uv.es/~bernardo/OBayes.pdf)\]) that performs well on frequentist coverage tests. Using a robust trust-region optimizer together with a sparse grid, we can accurately approximate the posterior and develop deterministic algorithms for prediction and inference. See \[[7](https://arxiv.org/abs/2307.08997)\] for details and examples.
+
+# References
+
+1:  Lloyd N. Trefethen.  [Six Myths of Polynomial Interpolation and Quadrature](https://people.maths.ox.ac.uk/trefethen/mythspaper.pdf)
+
+2:  Barthelmann Volker, Novak Erich, Ritter Klaus. [High dimensional polynomial interpolation on sparse grids](https://www.researchgate.net/profile/Erich-Novak/publication/220390848_High_dimensional_polynomial_interpolation_on_sparse_grids/links/02e7e5280d4859a1db000000/High-dimensional-polynomial-interpolation-on-sparse-grids.pdf)
+
+3:  Klimke Andreas. Uncertainty Modeling using Fuzzy Arithmetic and Sparse Grids
+
+4:  Jakeman John D., Roberts Stephen G. [Local and Dimension Adaptive Sparse Grid Interpolation and Quadrature](https://arxiv.org/pdf/1110.0010.pdf).
+
+5:  Ren Cuirong, Sun Dongchu, He Chong. Objective Bayesian analysis for a spatial model with nugget effects
+
+6: James Berger, Jose Bernardo, Dongchu Sun. [Objective Bayesian Inference and its Relationship to Frequentism](https://www.uv.es/~bernardo/OBayes.pdf).
+
+7: Ryan Burn.  [Deterministic Objective Bayesian Analysis for Spatial Models](https://arxiv.org/abs/2307.08997)
+
+&#x200B;
+
+Comments:
+- Some minor downsides of sparse grids: you need to evaluate the function at every grid point which can be hard in higher dimensions. Also unlike Gauss quadrature they can have negative weights. Finally, and there is a talk covering this by N. Trefethen, sparse grids make some assumptions on anisotropy that might be unfavorable to problems where the variables are unsuitably chosen. Interestingly, there is a lot suggesting that things in ML are fairly axis-aligned (e.g. the effectiveness of Adam and clipping) so sparse grids may work even better than they do in other areas if we can otherwise conquer the curse of dimensionality (that is still present, as illustrated by your plot, just to a much lesser degree than in dense cubature).
+- I see you've posted a GitHub link to a Jupyter Notebook! GitHub doesn't 
+render large Jupyter Notebooks, so just in case, here is an 
+[nbviewer](https://nbviewer.jupyter.org/) link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/rnburn/bbai/blob/master/example/13-sparse-grid.ipynb
+
+Want to run the code yourself? Here is a [binder](https://mybinder.org/) 
+link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/rnburn/bbai/master?filepath=example%2F13-sparse-grid.ipynb
+
+
+
+------
+
+^(I am a bot.) 
+[^(Feedback)](https://www.reddit.com/message/compose/?to=jd_paton) ^(|) 
+[^(GitHub)](https://github.com/JohnPaton/nbviewerbot) ^(|) 
+[^(Author)](https://johnpaton.net/)

@@ -1,0 +1,35 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b84dad/how_do_you_prepare_for_optimization_interviews/
+Title: How do you prepare for optimization interviews?
+
+Content:
+I have a job interview for a role I really want. They said i have the exact same experience and they reached out to me. 
+
+In the process they said they will cover stuff like
+Probability, machine learning, etc..
+Thats all good but they said they have two interviews were you build
+A ml algorithm on the spot
+A optimization model on the spot.
+
+For those that did those what should i do and prepare. I really want to do well.
+
+Especially optimization for mip and lp problems. 
+
+Comments:
+- There's not a ton of info, but my guess for the MIP and LP portion is you will have to do two tasks: formulate the model (define variables, objective, constraints, etc) and code the model. Do you know if there will be theoretical questions, or just practical ones? 
+
+For the first task, I strongly recommend looking for the book Model Building in Mathematical Programming by H. Paul Williams, which walks through the formulation and solution to many common MIP and LP models. Formulations can be tricky, and the only way to get good at them is to practice.
+
+The coding portion (if you end up doing one) is strongly related to the formulation- good formulations should be very easy to code. Again, I'd recommend practicing both together using the Williams book. Lastly, unless you know what solvers the company uses, I'd become familiar with an open source solver and modeling language like Google OR-Tools. 
+
+Hope that helps, and good luck!
+- Look into PuLP LP model, it's pretty good!
+- Dude thank you,
+
+This is as much as i know. But thank you i will need to look into the formulation. Most likely it will pricing related as that is the role and they looking hard into the optimization component + business + predictive model. 
+
+Most likely it will be a practical problem not a theoretical. My exposure is pretty good with gurobi but i dont know what solver they use.
+
+
+Thank you for this
+- There should be an example of pricing in the Williams book, it might be called Yield Management or Revenue Management or something like that. Those are usually the category of modes that pricing problems fall under

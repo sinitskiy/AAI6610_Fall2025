@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/ahsenkhaliq_to-believe-or-not-to-believe-your-llm-we-activity-7203974719887343616-kGEy
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ahsen Khaliq的动态
+Ahsen Khaliq
+
+ML @ Hugging Face
+
+1 年
+
+To Believe or Not to Believe Your LLM
+
+We explore uncertainty quantification in large language models (LLMs), with the goal to identify when uncertainty in responses given a query is large. We simultaneously consider both epistemic and aleatoric uncertainties, where the former comes from the lack of knowledge about the ground truth (such as about facts or the language), and the latter comes from irreducible randomness (such as multiple possible answers). In particular, we derive an information-theoretic metric that allows to reliably detect when only epistemic uncertainty is large, in which case the output of the model is unreliable. This condition can be computed based solely on the output of the model obtained simply by some special iterative prompting based on the previous responses. Such quantification, for instance, allows to detect hallucinations (cases when epistemic uncertainty is high) in both single- and multi-answer responses. This is in contrast to many standard uncertainty quantification strategies (such as thresholding the log-likelihood of a response) where hallucinations in the multi-answer case cannot be detected. We conduct a series of experiments which demonstrate the advantage of our formulation. Further, our investigations shed some light on how the probabilities assigned to a given output by an LLM can be amplified by iterative prompting, which might be of independent interest.
+
+1,393
+25 条评论
+赞
+评论
+分享
+Ahsen Khaliq
+
+ML @ Hugging Face
+
+1 年
+
+paper page: https://huggingface.co/papers/2406.02543
+
+赞
+回复
+7 次回应
+Georg Zoeller
+
+1 年
+
+How is this different from SelfCheckGPT?
+
+赞
+回复
+6 次回应
+Ameer Arsala
+
+Co-Founder @ Almata | AI Research Lead @ Cal Poly AI | 20x Hackathon Loser
+
+1 年
+
+Exactly! At this point I have just developed a feel for it
+
+赞
+回复
+Cohorte
+
+1 年
+
+RAG systems are like supercharged LLMs (Large Language Models). They take the already impressive ability of

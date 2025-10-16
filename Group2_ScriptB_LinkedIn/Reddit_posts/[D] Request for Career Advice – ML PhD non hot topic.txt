@@ -1,0 +1,58 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lphfhf/d_request_for_career_advice_ml_phd_non_hot_topic/
+Title: [D] Request for Career Advice – ML PhD non hot topic
+
+Content:
+I’m currently a PhD student in Machine Learning, working on a research topic that isn’t considered “hot” in the current academic or industrial landscape. Despite this, I’ve managed to publish as the lead author at ICML, NeurIPS. And  twice at ECML. I also have two co-authored publications at ECAI.
+
+I’ve noticed that many  PhD students in the U.S. seem to have much stronger publication records, often in trendier areas. This makes me question how competitive I really am in the current job market—especially given the wave of layoffs and increasing demand for very specialized expertise in industry.
+
+That said, I do have a strong foundation in core ML, Deep Learning, and LLMs (although LLMS aren’t the direct focus of my PhD research).
+
+Given all of this, I’m trying to realistically assess: • What are my current chances of landing a demanding, high-quality job in industry or research after my PhD? • What could I do now to improve those chances? • Goal is FANNG.
+
+I’d greatly appreciate any  feedback.
+
+Edit: My research focuses on anomaly detection, a less trendy area compared to the current popularity of large language models and reinforcement learning.
+
+Comments:
+- Imagine you are computer vision expert in ~2005 and publish a lot on the hot topic of custom made descriptors for feature matching for augmented reality. You pity those unfortunate souls trying to make convolutional networks work. Dead end previous century approach. And they are using gaming videocards, poor things...
+- I had similar credentials a few years ago with pubs in ICML, NeurIPS focusing on topics like high dimensional statistics, numerical linear algebra, and some other theory stuff. I did a short postdoc in deep learning and language models adjacent theory, and managed to get some work pulished. Fast forward to now, and I'm in a Faang working on LLM applied research. My point is, you are already competent in deeply technical stuff and research relevant to latest hot topics. You just need to find a way  to have a smooth transition using the credentials you have.
+- Intern and network. Research scientist jobs are competitive even for PhD at MIT unless you have a famous advisor with strong industry connections.
+- You're a lot more competitive than the poor sobs graduating with COLT/STOC/FOCS papers.
+
+Put out code and data for all your papers, make websites and demos (if you haven't already).
+
+For industry: start leetcoding, reach out to connections to give brownbag talks (many orgs in FAANG have these and they'd love to have you). Take pictures at your talks and tweet about them.
+
+For academia: your advisor's letter is most important. Reaching out to connections is important. Send cold emails, have less shame and be less fearful of saving face for the year you're on the market.
+
+That being said, a lot of academia is in a hiring freeze right now, including for postdocs.
+- > I’ve noticed that many PhD students in the U.S. seem to have much stronger publication records
+
+You have two lead author papers at good conferences. Were they workshop sessions? Posters? Trying to understand what you consider to be a stronger record.
+- Would be better if the author gives more details on what topic it is. AFAIK,  there is less opportunities in less trendy research
+- Is computer vision is still trendy or how does it look like in the industry right now...?
+- This may be a good or bad thing, but people have gotten into FAANG (deepmind, FAIR, etc.) for less (a lot less). For example, 2 coworkers at my lab work at deepmind, both with a grand total of 0 Neurips, ICML, ICLR papers. Your publication record is very strong, and 2 top AI conference publications vs 5 or whatever WILL NOT MATTER at all (unless, of course, one of those papers is a super well-cited/well-known paper).
+
+That being said, there are 2 big problems you are going to face. First is your research direction. Teams at FAANG (and probably everywhere else) first and foremost make sure the people they are hiring are studying the same or very similar things. They will rather have someone who has thought deeply about what they are currently exploring/researching than someone with x top AI conference publications (peer review is noisy and getting worse by the year anyways). Second, is networking. Many people who work at these companies interned there or have lab alumni working there, or have faculty well known by industry.
+
+So, I think the best advice is find a way to connect your clear expertise in anomaly detection into something more popular/current, and try to intern or publish with faculty that have the industry connections.
+- i dunno. it sounds like you're doing great
+- Really depends on what your career goals are. Applied Scientist jobs at FAANG+ companies don't have a very high bar, and working on a few projects to transition into hot areas (LLMS, RLHF, reasoning etc), would pretty much guarantee a decent job, regardless of the ML area of your PhD. Research Scientist roles in popular research teams are harder, and mostly hire experts in trending research area. A postdoc to transition might help in this case. Academic jobs are super hard. Popular universities really only hire superstars.
+- Thank you very much for the tips. I really appreciate you sharing your story.
+- By “famous” advisor, do you mean famous in the current hot topic? My interests have recently shown promising ML applications but I wouldn’t consider the professors working in the field famous in the language model space for example
+- "You're a lot more competitive than the poor sobs graduating with COLT/STOC/FOCS papers."---
+
+
+Is this sattire or do random ML people in this thread think COLT is of similar stature to STOC/FOCS?
+- Thank you very much for the tips.
+I actually started using LeetCode recently, and given the current situation, I’ve already solved around 500+ problems to stay competitive.
+- I have four first-author publications: one each at ICML and NeurIPS, and two at ECML.
+Unfortunately, ECML is generally considered a mid-tier conference.
+I’ve seen many PhD students in the U.S. with 5 or more first-author papers, all published at top-tier venues like NeurIPS, ICML, ICLR, or KDD.
+- Hi, it is anomaly detection.
+- Also, thank you for your suggestions and tips. I think what you proposed makes sense, and I’m preparing accordingly. At the moment, I don’t have a research project yet, but I’ll be working intensively over the next weeks to connect it with my research.
+- No idea what he refers to, but I think the emphasis is on these conferences being theoretical
+- Tongue in cheek, these are all solid venues, it's just that theoreticians struggle on the market despite being good.
+- ngl I think you'll do well. If you can, I'd talk to Yue Zhao at USC or Jiawei Han at UIUC.

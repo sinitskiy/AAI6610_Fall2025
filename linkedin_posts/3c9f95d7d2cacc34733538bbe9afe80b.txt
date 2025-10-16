@@ -1,0 +1,29 @@
+URL: https://www.linkedin.com/posts/alongubkin_llm-hallucinations-arent-just-about-incorrect-activity-7155952401055690753-tvnr
+Date: 2025-09-24
+Author: Unknown
+
+LLM hallucinations aren’t just about incorrect facts. To reduce hallucinations, we first need to break down this high-level term and be more specific.
+
+Here are 3 common types of hallucinations: 
+
+1) Incorrect Facts
+The most obvious type of hallucinations happen when LLMs confidently lie - text that's literally untrue and has no factual foundations.
+
+Even as LLM providers like OpenAI work to improve their models, this issue remains particularly significant in RAG chatbots. This is often due to poor retrieval, such as when the retrieved context isn't enough to correctly answer a user's question.
+
+2) Nonsensical Responses
+When LLMs respond with irrelevant or unasked details that don’t correlate to the prompt.
+ 
+Example (Zoom chatbot):
+ - User: "How can I start a new Zoom call?" 
+ - Chatbot: "You can start a new Zoom call by using the /zoom command in Slack"
+
+Even though this is true, the user didn’t ask about starting a Zoom call from Slack.
+
+3) Invalid LLM-Generated Code 
+This type of hallucination occurs when LLMs generate code that is either syntactically or semantically incorrect.
+
+A prime example is in Talk-to-your-Database applications, where LLMs generate SQL code based on user's query. If this code fails to compile, or compiles but returns invalid data, it is considered a hallucination.
+
+
+What am I missing? What other types of hallucinations have you encountered?

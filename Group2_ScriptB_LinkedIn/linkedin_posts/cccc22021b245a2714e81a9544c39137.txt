@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/lukemiller1_opensource-model-whisper-activity-7284944557216030720-YTeS
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Luke Miller
+
+Co-founder// @ SLNG
+
+8 个月
+
+When embarking into the AI/ML realm for the first time, many companies are looking for the latest and greatest AI tool set. That is what is idolised in tech in general and even more so in the AI community. 
+
+However most companies will unlock endless value and innovation, simply by taking the latest #opensource #model (e.g. #whisper Mistral AI #llama #flux from Black Forest Labs) and aligning it with their security and privacy posture. 
+
+The recent-ish models, are insanely powerful and often don't require the latest GPUs. So it can be very cost effective. Not only cheaper than the shared API of OpenAI / ChatGPT, however in an environment where you control the data, IP and security. 
+
+…展开
+15
+1 条评论
+赞
+评论
+分享
+Transcript
+Transcript
+So sharing a few other patterns that we're seeing in the market. We'll talk about how enterprises are using AI, and I previously mentioned the the Whisper is a model that people commonly use. O this is also very popular in a certain context of everyone's very focused all the time on what's the latest model, what's the newest thing out there, what's the the new activity that a a model can do, what an AI could do as such. There's those I've got the personal representative product quote on a podcast recently that said, if we stop all progress on on all models and just use all the models that we had in place today at the start of 2025, there is enormous. There's a decade of work to catch up, you know, the overall economy and Society of what the opportunities across those those models, if not more. So this is the pattern you're going to see with enterprises in 2025. So using the continued. Version of Whisper. So this is the model that takes audio, so voice to text and give you a text output that you can then simply manipulate. Put into a, then a different model like an LLM and analyze. With the the whisper model, what what people are doing right now is they're saying

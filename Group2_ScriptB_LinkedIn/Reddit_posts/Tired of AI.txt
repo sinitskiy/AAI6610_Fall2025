@@ -1,0 +1,107 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1jobolz/tired_of_ai/
+Title: Tired of AI
+
+Content:
+One of the reasons I wanted to become an AI engineer was because I wanted to do cool and artsy stuff in my free time and automate away the menial tasks. But with the continuous advancements I am finding that it is taking away the fun in doing stuff. The sense of accomplishment I once used to have by doing a task meticulously for 2 hours can now be done by AI in seconds and while it's pretty cool it is also quite demoralising. 
+
+The recent 'ghibli style photo' trend made me wanna vomit, because it's literally nothing but plagiarism and there's nothing novel about it. I used to marvel at the art created by Van Gogh or Picasso and always tried to analyse the thought process that might have gone through their minds when creating such pieces as the Starry night (so much so that it was one of the first style transfer project I did when learning Machine Learning). But the images now generated while fun seems soulless.
+
+And the hypocrisy of us using AI for such useless things. Oh my god. It boils my blood thinking about how much energy is being wasted to do some of the stupid stuff via AI, all the while there is continuously increasing energy shortage throughout the world.
+
+And the amount of job shortage we are going to have in the near future is going to be insane! Because not only is AI coming for software development, art generation, music composition, etc. It is also going to expedite the already flourishing robotics industry. Case in point look at all the agentic, MCP and self prompting techniques that have come out in the last 6 months itself.
+
+I know that no one can stop progress, and neither should we, but sometimes I dread to imagine the future for not only people like me but the next generation itself. Are we going to need a universal basic income? How is innovation going to be shaped in the future? 
+
+Apologies for the rant and being a downer but needed to share my thoughts somewhere.
+
+PS: I am learning to create MCP servers right now so I am a big hypocrite myself. 
+
+Comments:
+- [deleted]
+- This is called "the innovator's dilemma", where the tools you're building are challenging the very passion that drove you to create them.
+- “There is a moral of all human tales:
+'Tis but the same rehearsal of the past,
+First Freedom, and then Glory; when that fails,
+Wealth, Vice, Corruption, barbarism at last.
+And History, with all her volumes vast,
+Hath but one page.”
+
+— Lord Byron
+
+
+I feel you OP. I’ve been in this game for a while doing practical applied research with programming, math, and statistics. I’m also very tired of late. A big part of me feels this is a speculative hype cycle/bubble, but the cynical side of me feels this is a new (and shitty) baseline that is a net negative both on society at large and our work as data scientists specifically. We’ll see what happens. Good luck.
+
+
+Edit: also reminds me of a great tweet a saw several months ago, to the effect of “AI was supposed to do my dishes and laundry so that I had more time for music and art. But now it does music and art leaving me only my dishes and laundry”
+- Oftentimes I feel like I’m not living in the same universe as all these data science comments. Other than helping me write code just a bit faster and bounce some ideas I already have, LLMs have not replaced anything I have done. Mind you most of what I do is talking with stakeholders, gathering requirements, building domain knowledge, ideating solutions, learning about the DGP, etc. coding is like less than 10% of my time. Where does all this doom and gloom come from? And it’s been almost 2.5 years since ChatGPT came out. Are we even doing the same kind of job?
+- pick a side, any side
+- We’re all out here grinding to learn AI just to watch it make everything we do feel pointless. Spent hours on a project? GPT-4 does it in 5 seconds. Proud of your art? Here’s 10,000 ‘Ghibli-fied’ slop images that took zero thought.
+
+The worst part? We *know* it’s a waste of energy and talent, but we’re still out here building MCP servers like the hypocrites we are.
+
+Future’s gonna be wild—either we’re all on UBI playing VR Minecraft, or we’ll finally snap and start a Luddite revolution. Place your bets.
+- Tldr: Keep improving, keep learning & keep developing. You're all gud. 
+
+Long fucking rant: 
+
+Chill out . This is booming like any other tech, give it 1 or 2 years and everyone will avoid AI stuff . Let me tell you something:
+
+\- first we had the IoT / cloud whatever . Every company in the world suddenly created app for every stupid fucking thing and everything was smart ( fridge -> smart fridge, printer -> smart printer, faucet -> smart faucet ) and so on . What happened afterwards ? More and more people started to look for alternatives that were not depedent on this kind of services ( me for example I decided to go for a brother printer just because the rest of the companies tries to sell me some kind of stupid pwa app that does nothing . I want a printer, I want to plug it, power it and I expect for it to work ) . 
+
+\- then we had crypto / nft shit . Everyone suddenly became finance & stock experts. Every little product started to sell you some blockchain shit or some metaverse crap . In the end everyone forgot about this. 
+
+\- now you have this AI crap which is a parroting app. Suddenly everyone became a ceo and started to build wrappers over wrappers to sell their shitty product and buy you in some stupid subscription that it's useless .
+
+The recession is coming, everyone is desperate, every dipshit thinks that he can become programmer by using cursor / gpt or some other shit stuff but let me tell you something: This dipshits will hit a brickwall, will encounter lawsuits because they're too stupid to learn cybersecurity. In the end professionals will be hired and these dipshits will be avoided.
+
+In the end originality will win and a creative designer / developer will launch products that matter and will earn money and will be hired . The rest of crud apps senior spaghetti engineers will need to either learn this stuff or enjoy working at McDonalds. 
+
+This is coming from a fellow developer which makes fun of my leads when they tried hiring cheap devs, spent shit ton of money on AI products and still can't get close of doing half of my job . 
+
+Also I can't fucking wait for AI to replace me, I'm fucking tired of these fucking clowns who knows shit about tech . 
+
+Maybe this is the time  to do something original and raise the middle fingers to these fucking companies & noisy linkedin clowns.
+- I'm a data science manager with an academic background in computational neuroscience. I've built many successful products that automate the decision making of experts. The experts always start off worried I'm going to automate their job away, but then once they use the new tool they see that the AI product automates the routine parts and frees them up for the more interesting and challenging aspects of their work. So I'm confused about your stance and would love to understand more of your perspective. Do you really feel like AI replaces the work you'd like to do and that it will leave you with nothing to contribute? What I've seen of recent LLM and generative AI is that it results in low quality content, sometimes even outright wrong content. The AI-generated writing is really poor quality and I find it takes me more time to edit than to write in the first place. In the applications where it's actually useful, is that really the work you wanted to be doing or does it free you up to do more interesting and creative things?
+- True, AI will cause a lot of social problems for our generation, just like the Industrial Revolution did.
+
+However, would you really like to live in an alternative unvierse where the Industrial Revolution hasn't happened? That would really suck: everything is crazy expensive but low-quality, the majority of people are peasants, and the life expentancy is 50 years.
+- The Agricultural Revolution. The Industrial Revolution. The Digital Revolution. The AI Revolution. Better make your OnlyFans quick before AI takes that too.
+- TIL about MCP and cannot believe how fast things are moving so far...
+- >The recent 'ghibli style photo' trend made me wanna vomit, because it's literally nothing but plagiarism and there's nothing novel about it. 
+
+What really rustles my jimmies is when people enthusiastically defending AI generated media reduce art to an aesthetic and/or technical skill.
+- I agree with your points but I draw a different conclusion for art stuff. People are already tired of slop. Also generative AI is totally derivative at the moment. OMG it can turn any photo into Ghibli art !! Yeah but AI created nothing, and it works because the humans at Ghibli studios created that very distinct look that people appreciate.
+
+Humans can create without AI. AI cannot do shit without humans, and it’s unclear how it can create in areas humans haven’t conquered first. And a big function of art is to surprise. AI doesn’t surprise.
+
+But we may go through an initial wave of stupidity, when people make bold moves firing people, only to realise too late it was a mistake.
+- What’s worse than AI taking your job because it made you obsolete?  
+
+AI taking your job because the executives in your company and the general public *believing* AI has made you obsolete even though you know it isn’t actually that good.  
+
+It’s a lose-lose-lose at that point, but two groups think it’s a win for them.  And that’s why we can’t have nice things.
+- Yeah, I really feel you.
+
+What I find especially demoralizing is how technically fascinating it is -how much potential for good it has-...and we're still going to use it to make all of our lives worse.
+
+I chose to study AI and machine learning more closely because I found the underlying technology and it's prospects fascinating. When used right I've seen legitimate and useful applications across entire branches of physics, robotics, and even some legitimate and non-cheap usecases for artistic tasks. Hell, for programming I find it absolutely amazing at boosting productivity.
+
+But we aren't going to use the tech that way. We're going to use it to make increasingly derivative work off of the stolen work of artists, enabling companies to save a buck where they previously would have employed graphic designers and artists 
+
+We're going to use it to devalue and attack the work of engineers in so many disciplines -providing justifications for further layoffs and quality of life reductions- least of all software engineering.
+
+We're going to use it to produce inflammatory and entirely fabricated content designed to steer online viewership and promote the worst kinds of political rhetoric. Hell, I've caught my gen-X mom showing me AI content several times over, not realizing it was all fake. It's entirely invisible to so many people already.
+
+We're going to massively increase the power consumption and computationnal requirements of our online infrastructure while simultaneously walking on the edge of an energy and climate crisis.
+
+I don't want to be a Luddite. I feel like one. This tech would be amazing if everyone used it responsibly. But we won't, and it'll probably have dire consequences, and part of me wishes we'd never invented them.
+- Widespread AI is still in its infancy. The tools are helpful but far from perfect. AI is certainly not a replacement for humans. It’s more of a helper. the individuals/firms that get this will do well. It’s important to push back on the areas where AI dumbs certain tasks down like artistic expression and writing. No one wants to live in an all AI world around that stuff. So we have to promote responsible use.
+- Is this ragebait?  "The sense of accomplishment I once used to have by doing a task meticulously for 2 hours can now be done by AI in seconds"
+
+So I'm guessing you feel this way about the creation of wheelbarrows and you'd rather carry dirt by hand?
+
+I agree that the plagiarism and certain aspects are bad, but that the efficiency gains and use as a tool are very good.
+- That's because AI is scaling with hardware and data. On the other hand, methods created/discovered with human-like priors mostly do not. Check this one: [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
+- I don't think it's that deep. Complexity of tasks will always outpace AI.
+- I keep hearing this “takes so much energy” thing and yeah to train them, but in terms of using AI it’s barely anything compared to driving, using appliances, factory farmed food, I don’t get it, I keep searching that question and it seems like not that much, idk

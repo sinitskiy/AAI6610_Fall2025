@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/aishwarya-srinivasan_genai-llm-ai-activity-7166860111179718656-TEwz
+Date: 2025-09-24
+Author: Unknown
+
+How do we mitigate LLM hallucinations?
+While LLMs are being highly adopted by both B2B and B2C users, one of the challenges that still makes people hesitate about using them in high-value use cases- is 𝐡𝐚𝐥𝐥𝐮𝐜𝐢𝐧𝐚𝐭𝐢𝐨𝐧𝐬, when LLMs craft answers more fictional than factual.
+
+In the enterprise world, decisions are often backed by data and require a high degree of accuracy. A hallucination could lead to misguided strategies, incorrect financial forecasts, or even regulatory compliance issues. Imagine an LLM confidently providing incorrect regulatory advice or misinterpreting customer sentiment from data. The consequences range from embarrassing to catastrophic.
+
+Hallucination is an engineering problem, and can very well be mitigated. The 4 ways I am familiar with to curb hallucinations (or at least control it) are:
+
+1. Verification Layer: Implementing a verification layer that cross-checks LLM outputs against trusted data sources can help identify and correct hallucinations before they impact decision-making.
+
+2. Training on Domain-Specific Data: Customizing LLMs with enterprise-specific data can reduce the likelihood of hallucinations by aligning the model's knowledge base more closely with the relevant domain.
+
+3. Human-in-the-Loop (HITL): Integrating a human review process for critical outputs ensures that any hallucinations can be caught and corrected by experts familiar with the nuances of the specific enterprise context.
+
+4. Transparency and Traceability: Building systems that can trace how conclusions are reached by the LLM can help identify potential hallucinations by highlighting when the model is inferring beyond the data.
+
+If you find this space fascinating, then I highly recommend an upcoming webinar (26th Feb, 10:00 am PT) that digs deeper into advanced prompt engineering techniques, identifying and mitigating hallucinations, and insights into how this space will evolve. I will add the link in the comments below. 
+
+
+话题标签
+#genai 
+话题标签
+#llm 
+话题标签
+#ai 
+话题标签
+#hallucinations

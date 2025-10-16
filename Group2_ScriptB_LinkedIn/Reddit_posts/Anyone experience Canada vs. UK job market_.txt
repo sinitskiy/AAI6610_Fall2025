@@ -1,0 +1,22 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e6g9e3/anyone_experience_canada_vs_uk_job_market/
+Title: Anyone experience Canada vs. UK job market?
+
+Content:
+Just wondering if anyone in this field has pursued work in both countries and can comment on which country is better for data professionals, machine learning engineers etc.,
+
+Comments:
+- [removed]
+- Canada most probably given the proximity to US. Lot of US companies hire remotely in Canada too. My company just hired a canadian to work remotely.
+- The U.K. market is terrible and the pay is abysmal. Do not try to find work here, it’s a shit show of no interviews and ridiculous demands
+- Canada has hundreds to thousands of applicants for each position, just take a look on LinkedIn. Canada recently has among the highest immigration rates in the world, so the competition is incredible plus the government has a program to let in people around H1B visas in the states. Absolute pay is not bad, but the cost of living has become so horrendous that pay vs cost of living it is not very good.  Unemployment is roughly double the states and rising so unless you already have an offer I wouldn’t come here.
+- Canada market is bad .. I recently saw a post on job salary same employer same position they were paying 0.75 times less in Canada compared to US markets & keep in mind the dollar difference as well
+- Uk in general is more finance based in my experience
+- But how do you find such companies? I always hear anecdotes of how people in Canada work remotely for american companies. Never seen any concrete examples of it. I \*sometimes\* see companies hiring in both Canada and the US, but they are few and competition is immense.
+- LinkedIn clicks don't mean anything. It's just the number of people who clicked on the job page, not people who applied.
+- I saw a position that had Canada pay as 50k-70k CAD, and the US pay was 70k-90k USD. The upper end of the Canadian pay was SIGNIFICANTLY lower than the lower end of US pay, especially considering cost of living in Canada is higher on average.
+- So you think they are clicking on it because they aren't interested in applying? Also some of the positions on LinkedIn are listed multiple times for every major city in Canada when there is only one position in the country, albeit with flexibility around which city the successful candidate will be based in. People advertising DS jobs in Canada are currently getting swamped with applications and to suggest otherwise is to give a false impression. If you have an outstanding CV you will always be able to get a job, but if you are close to average, which is most people by definition, it is almost impossible to get a DS job in Canada.
+- Yes thats the harsh reality & tbh whenever I am interacting with others everyone kind of thinks is it not worth moving to US for better jobs if they have all the visa thing sorted .. its disheartening to see the salaries in Canada
+- Has nothing to do with Canada. All DS jobs get an insane number of clicks on LinkedIn and everyone is struggling to get jobs at the moment, including the US. This is the norm at the moment
+- Meanwhile I would kill for even an entry level INTERVIEW in Canada. Even with experience and end to end projects on my GitHub I get zero interviews. Career is already dead and I'm not sure what I will do in life.
+- Yeah I can totally understand .. its hard to get jobs even if you modify your resume and apply to like 100 jobs .. one needs to be lucky to get that interview call 😢

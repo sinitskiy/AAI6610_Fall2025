@@ -1,0 +1,72 @@
+URL: https://www.linkedin.com/posts/christoph-molnar_picking-an-ml-model-class-because-of-interpretability-activity-7108042090432880640-9UvD
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Christoph Molnar的动态
+Christoph Molnar
+
+Author of Interpretable Machine Learning, Modeling Mindsets, and more | christophmolnar.com
+
+2 年
+
+Picking an ML model class because of interpretability or built-in "conveniences" such as uncertainty quantification is a sure way to lose out on performance.
+
+But thanks to model-agnostic tools, you can have your cake and eat it too. Or at least have some bites. 
+
+If you aren't attached to a certain model class, but pick the "winner" from model selection, then you have to be agnostic as to which model comes out.
+
+Your only option for extras such as UQ and interpretability is model-agnostic tools.
+
+Here's a list to save for later:
+
+
+🎲 Uncertainty quantification
+
+Use conformal prediction to quantify the uncertainty of any model. CP turns "weak" uncertainty scores into rigorous prediction intervals.
+
+For example:
+
+class probabilities -> classification sets
+quantile regression -> conformalized quantile regression
+
+https://buff.ly/3PzaUwy 
+
+
+💡 Interpretation
+
+There are so many model-agnostic interpretation methods, you could write a book 😉. A selection:
+
+• SHAP  for explaining individual predictions
+• Permutation feature importance
+• Partial dependence plots for feature effects
+...
+
+
+https://buff.ly/45Lmvyd 
+
+
+🎯 Analysis of variance for ML
+
+Functions can be decomposed into lower dimensional components. Decomposition is related to interpretability but offers more advantages: An attribution of the target's variance to individual features (like ANOVA in stats)
+
+https://buff.ly/3LiSvBM 
+
+
+↣ Causality
+
+Orthogonal/double machine learning brings supervised learning to causal effect estimation. It's based on training two ML models (one for treatment, one for control).
+
+
+📉 Design your loss/evaluation metric
+
+Some tasks seemingly have a limited range of specialized models that can solve them. Like for quantile regression. But you can turn these into model-agnostic tasks if you translate the task into a l

@@ -1,0 +1,30 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1awh3zx/getting_hands_on_with_bioinformatic/
+Title: getting hands on with bioinformatic
+
+Content:
+Hi everyone, firstly I apologise if this has been asked I couldn't find the answer I was looking for.
+
+&#x200B;
+
+so I have recently finished my masters in Ai and I have a year industrial experience of working as a software engineer in R&D for a autonomous vehicle company, but since I finished my masters I want to get into the medical side of machine learning and computer vision, I have some projects I have done but nothing outside the academics side, the big interest and main goal of me doing my masters in Ai was so I can work in the medical side of machine learning. where can I start, how do I get my foot in the door in this field?
+
+&#x200B;
+
+thank you 
+
+Comments:
+- Download 1000 genomes project data, learn how to work with it using plink/vcftools/bcftools, figure out how to output raw snp data to text format, and try doing some machine learning related to ancestry or other things you may be interested in
+- I think Kaggle has quite some healthcare/medical oriented cases, not only public dataset to get the ropes in, but also some ongoing real cases in the form of hackathons and whatnot
+- Thank you so much
+- Thank you so much
+- no prob. standard practice for snp data is to run pca on reference (1000 genomes) and new samples (in your case, just subset of 1000 genomes randomly) together and then exclude new samples that fall outside of 6 std across 3 PCs. they'd be called ancestry outliers. It would be good to just check this out and see how it looks but it's kind of old-school. you'll see that certain labels have a large overlap and in this method, many samples will fall into multiple groups.
+
+a more modern method is to do predictions. something that seems to work well for fine-grain ancestry prediction is transform by pca, transform pcs with umap, train a classifier on umap components. this paper on fine-grain ancestry differentiation in Japan is the first I know of to show this: ([https://www.nature.com/articles/s41467-020-15194-z](https://www.nature.com/articles/s41467-020-15194-z))
+
+see if you can replicate that method with a classifier on top. 
+
+if you're a deep learning nut, I'd suggest trying to bypass the pca and umap and train a model directly on the genotypes with a NN. 
+
+Have fun!
+- Thank you so so much for all of this

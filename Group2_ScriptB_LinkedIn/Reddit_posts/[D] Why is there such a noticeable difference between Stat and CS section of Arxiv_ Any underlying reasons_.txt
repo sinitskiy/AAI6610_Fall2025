@@ -1,0 +1,58 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m7ubmp/d_why_is_there_such_a_noticeable_difference/
+Title: [D] Why is there such a noticeable difference between Stat and CS section of Arxiv? Any underlying reasons?
+
+Content:
+As a math major, I was interested in seeing what different fields of mathematical research looks like. I decided to just browse the Arxiv, but I can't help to notice the difference between Stat.ML and CS.LG sections.
+
+From my understanding, they are both suppose to be about Machine Learning research, but what I found was that many of the CS.LG articles applied ML to novel scenarios instead of actually researching new mathematical/statistical models. Why are these considered ML research, if they are not researching ML but using it?
+
+Does this reflect a bigger divide within the machine learning research field? Is there some fields in ML that are more suited for people interested in math research? if so, are those generally hosted in the math/stats department, or still under the CS department?
+
+Comments:
+- Those divisions on Arxiv are completely meaningless. Categories are outdated and semi-randomly made even then.
+
+Also, applied ML is absolutely ML research. As far as you are using ML and get novel insights, it's ML research. Otherwise, we would have to consider all domain-specific models of ML, suited only for relatively niche modalities, not ML, which would be absurd.
+- It's like saying everything except hardcore data structures and algorithms is not CS
+- CS is about a lot more than just ML. However, what you’re noticing is the two broad categories of ML research: applications and technical research. I don’t have any actual figures on it, but I would guess the majority of ML research published across all fields is applications research. I’d agree that really these should be published in journals relevant to the applied field most of the time, but you have to remember that Arxiv isn’t a journal. It isn’t peer reviewed. If someone wants to upload their applications research, they are probably just going to stick it on the CS section. It’s unlikely an actual peer reviewed CS journal/conference would publish most applications research I would think.
+
+There is a bit of a divide between stats and CS when it comes to ML, but it tends to be around Deep Learning. Stats people and journals tend to be (understandably) more concerned about the limitations of DL and the difficulty of providing adequate theoretical underpinnings, so most DL research is done under the umbrella of CS I would say.
+- Self-assigned categories at a place without review. While peer review is a bit busted it still keeps the largest garbage piles off the issues. Arxiv has them all, good and bad.
+- 1. Applications of ML are absolutely ML research
+
+2. ML is much broader than just new statistical models (all that, plus computation, optimization, hardware design, distributed computing... etc etc)
+
+The statisticians are only doing the one thing, which is presumably what you're looking for.
+- I don't think the premise is necessarily true. Finite sample and algorithmic methods mostly appear in CS.LG while more asymptotic stuff "tend" to show up in Stat.ML. Source: My own works on U-statistics & ensemble learning are often automatically assigned Stat.ML, while my works on computational learning - PAC, online learning, Statistical queries, etc. are all in CS.LG (I actually went back and checked :p).
+- That reasoning is very new to me.
+
+In physics, high energy physicist employ large particle accelerators to study particles. They are particle physicist, people who study particles of Standard Model, and not accelerator physicist, people who study and improve particle accelerator.
+
+Cryptographers employ combinatorial techniques to measure the security of their particular code, but that doesn’t make them combinatorics researcher
+
+So why is ML different than rest of research? Why should a paper employing ML to study biology or atmospheric sciences be considered ML and not the other fields?
+- Not really…
+
+My argument is that the use of something in research doesn’t mean it’s research about that thing. For example, in General Relativity, physicist use a lot of differential geometry, but that doesn’t make their research about differential geometry, that’s just their tool.
+
+A decent amount of CS.LG papers use ML to study other fields instead of focusing on ML, hence why I don’t understand their difference.
+- Oh, so in the actual ML papers, they would just reject those application papers? That makes sense
+- Statisticians only want one thing… and it’s disgusting
+- Because fields get born out of domain specific ml. For example, no one in NLP or social networks cares about baking equivariance into architectures, yet is extremely relevant for a lot of bio research, and it was born there.
+- Fields try hard to not be siloed, it is not a thing to celebrate.
+
+
+For example economics merged macro and micro with the DSGE and HANK models.
+- Well, what's your proposed solution? All fields of research are sort of artificial in their boundaries in the end. A biomedical study can be about nano ångström scale structures or molecules or about a clinical trial of a new drug etc. I don't see any reason why this couldn't also be similar for ML research.
+- There are absolutely some application papers worth publishing. If you say current methods don't work on their domain, such as this weird niche nuclear medicine imaging thingy but I modified things for x and y inductive biases and made these novel modifications and now it works good. That would be enough for lots of good conferences like even wacv or workshops at good venues. 
+
+Generally my consideration for publication worthiness it needs to be at least novel and either interesting or useful. You can have a novel useless interesting thing or a novel boring useful thing. Ideally you have a novel interesting and useful thing.
+- Typically unless it has some significant CS novelty, I would think most applications papers would have a hard time getting published in CS journals, yeah. Even then, really that should be two separate papers. The opposite problem does also exist, where in applications research you often see CS people trying to apply ML to areas they don’t really understand that well.
+
+It’s also just not a great strategy to try to publish applications stuff in CS venues from a researcher’s point of view either. Your intended audience really should be people in the field the application is in, not CS people. I do both technical and applications research, and the applications are in medicine/healthcare. Any of the applications stuff goes to medical journals, because that’s the readership who are going to have a professional interest in the solution to the problem, not Computer Scientists. You don’t really want to be giving that audience a ton of technical CS detail they’re not really going to be interested in, so you have to keep things a bit more high-level. I don’t bother putting the applications stuff on Arxiv. My technical research papers which the applications papers use go to CS journals/conferences and CS Arxiv.
+- Umm.. what?
+- The reason I learned group theory LOL
+
+
+Thanks biologists, baking in invariances and equivariances is great
+- Bad joke… sorry

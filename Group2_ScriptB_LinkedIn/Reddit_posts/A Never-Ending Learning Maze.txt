@@ -1,0 +1,103 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1kak30s/a_neverending_learning_maze/
+Title: A Never-Ending Learning Maze
+
+Content:
+I’m curious to know if I’m the only one who has started having second thoughts—or even outright frustration—with this field.
+
+I recently graduated in bioinformatics, coming from a biological background. While studying the individual modules was genuinely interesting, I now find myself completely lost when it comes to the actual working concepts and applications of bioinformatics. The field seems to offer very few clear prospects.
+
+Honestly, I’m a bit angry. I get the feeling that I’ll never reach a level of true confidence, because bioinformatics feels like a never-ending spiral of learning. There are barely any well-established standards, solid pillars, or best practices. It often feels like constant guessing and non-stop updates at a breakneck pace.
+
+Compared to biology—where even if wet lab protocols can be debated, there’s still a general consensus on how things are done—bioinformatics feels like a complete jungle. From a certain point of view, it’s even worse because it looks deceptively easy: read some documentation, clone a repository, fix a few issues, run the pipeline, get some results. This perceived simplicity makes it seem like it requires little mental or physical effort, which ironically lowers the perceived value of the work itself.
+
+What really drives me crazy is how much of it relies on assumptions and uncertainty. Bioinformatics today doesn’t feel like a tool; it feels like the goal in itself. I do understand and appreciate it as a tool—like using differential expression analysis to test the effect of a drug, or checking if a disease is likely to be inherited. In those cases, you’re using it to answer a specific, concrete question. That kind of approach makes sense to me. It’s purposeful.
+
+But now, it feels like people expect to get robust answers even when the basic conditions aren’t met. Have you ever seen those videos where people are asked, “What’s something you’re weirdly good at?” and someone replies, “SDS-PAGE”? Yeah. I feel the complete opposite of that. 
+
+In my opinion, there are also several technical and economic reasons why I perceive bioinformatics the way I do.
+
+If you think about it, in wet lab work—or even in fields like mechanical engineering—running experiments is expensive. That cost forces you to be extremely aware of what you’re doing. Understanding the process thoroughly is the bare minimum, unless you want to get kicked out of the lab.
+
+On the other hand, in bioinformatics, it’s often just a matter of playing with data and scripts. I’m not underestimating how complex or intellectually demanding it can be—but the accessibility comes with a major drawback: almost anyone can release software, and this is exactly what’s happening in the literature. It’s becoming increasingly messy.
+
+There are very few truly solid tools out there, and most of them rely on very specific and constrained technical setups to work well.
+
+It is for sure a personal thing. I am a very goal oriented and I do often want to understand how things are structured just to get to somewhere else not focus specifically on those. 
+I’m asking if anyone has ever felt like this and also what are in your opinion the working fields and positions that can be more tailored with this mindset. 
+
+Comments:
+- What you are describing is a nature of most coding/software engineering jobs. It is a life long learning process. Things can always be improved upon. This is also why I think coding/informatics jobs want to hire young people and there is some age bias. 
+
+Regarding your comment on it is a just a matter of playing with data and scripts, well in bioinformatics broadly either you are developing algorithms or you are applying them to data. Except for the standardised parts of omics, It is definitely not easy given that there are multitude of research questions you could ask and hence why a new method comes up regularly.
+- I disagree. You can't stop learning if you are into research. This is true to both biology and bioinformatics. In my view, a large part of the problem in bioinformatics is that people use tools and packages without understanding how they work or questioning whether they are doing the right thing. That is like a culture in bioinformatics, and software engineering in general. The result is we tend to chase the newest technologies and pile crappy methods and knowledge on top of each other. We move faster this way, but it will rapidly increase complexity and accumulate tech debt.
+
+My suggestion is to break away from this culture. Establish a solid foundation in biology, statistics and programming. Try to understand how things really work in your field. Put serious thoughts into daily work and ask "why" often. Don't just follow what you find from your colleagues or at some forums or Q&A sites. The suggestions and answers there are often wrong. You will move slower but you will feel better when you stand on a solid ground.
+- As one person mentioned, the feeling is mutual by many in the bioinformatics field. Any attempt or progress at solving issues in the field is overwhelmed by the rapid changes in technology and tools or lack thereof.
+
+My suggestion would be to set career oriented goals instead of industry or job-position oriented goals. Like one person commented, learning never ends regardless of the industry. Career oriented goals would provide you with networking targets to learn from and help set meaningful goals for expanding your knowledge base.
+
+At the end of the day, bioinformatics is simply a specialized niche. It doesn't take a formal degree for someone to say they have some bioinformatics background experience. The field is so vast that your job could simply be to run pipelines all day with little to no coding involved, or you could pave a new path like branching into law or something to set the standards and regulations for research or AI involving bioinformatics. It all depends on your career outlook.
+- I don’t agree that wet lab protocols are solid. There is lots of suboptimal data that ends up improved by optimizing what seems like established protocols. I constantly tell people to talk to someone else who has more experience even though the protocol is supposedly clearly written. There are all sorts of dumb caveats like using tubes from a different manufacturer that make noticeable difference. 
+
+On the computational side, it really depends on what you are doing. There are lots of very established clearly documented protocols. For example, RNA-seq differential expression with DESeq2 or edgeR. Just follow the vignette. If the vignette is a little overwhelming because it covers lots of use cases, there are tons of simplified tutorials. Those tools are well respected, widely used, and from the user perspective have not changed in maybe 10 years.
+- My opinion is that bioinformatics is essentially a research focused field that has industrial applications. 
+Major concerns here apply to most research fields. Endless learning, niche methodology, and so on. 
+
+Most problems are tackled for the first time such that it's impossible for a person to give a timeless pipeline or a program as better data and technology emerges it needs tinkering or alternatives. Which personally seems to be the beauty of the field. 
+
+Four months into the field, I have already been expected to learn programs that are not accepted widely yet and to write programs that someone other than me will never use.
+
+Bioinformatics is yet another way to answer biological questions.
+- I think this is a pretty negative rant, but it also expresses feelings that I think are common when you are having a hard time getting a "foothold".
+
+I have been using the term foothold a lot lately, because i am personally struggling to get a foothold with 'AI' and 'machine learning'. I have been in the bioinfo field for awhile now, but I get to (yay!) learn a new thing now.  I frequently run into silly problems trying to use these machine learning tools, with python packages not installing, outdated dependencies, and it gets in the way of what I want to do.... It hard to get a foothold...
+
+Ideally, you can get to a place in your career, where in some small way or even large way, you can impact our field. you can help change things, by focusing on problems, and finding solutions
+- Sometimes it's helpful to think that bioinformatics tools don't exist.
+
+You just have the research question you want answered, some data that's supposed to answer it, and your favorite programming languages and their standard libraries. Your job is to design a plan to analyze the data, implement it, and hopefully get some answers.
+
+Now that you have a plan, you'll notice that some parts are common enough that there are robust tools for them. You don't have to implement those tools yourself. Some parts may be unique to your task, and you have to write the code. And between the extremes, there is a long tail of repeated niche tasks. There is some code that should handle it, or at least close enough. You have to carefully consider whether you should try to reuse the existing code, possibly with some changes, or whether you should just write it yourself.
+- Ive been working in the field for 4 years now and still feel this way. The moment I get somewhat confident in a topic, the field or my team moves on from it onto the next big thing. Literally chasing a moving target. Its the nature of the beast.
+- Honestly, if you are that much goal orientated, I think you should pivot to wet lab or biostatistics and working in projects. I can give you my perspective as PhD student who is doing 70% wet lab and 30% bioinformatics. Most of the time with computer work, I'm trying to find information that I would prove or disprove with designed experiment, and the rest of the time I'm fiddling with data to see if I can do something with it, like new cool figure for the next article. Since I have a hypothesis I have a goal to prove if I'm right or not
+- I currently work as a bioinformatician and I kept reading this waiting for myself to disagree but just kept nodding along LMAO I'm sorry
+- You're right about everything. The technical constraints you talk about are the most frustrating for me. Oh, you released this amazingly powerful pipeline, but it only works on drosophila genomes and requires data generated by a particular piece of hardware built in 1997? Like really who do these people think theyre kidding when they write the resource paper for that shit. 
+
+Anyway, I have two things to add. 
+
+1) You'll get that feeling of confidence/feeling like an expert when a total n00b asks you "so I have fasta files for my RNA-seq, but I have no idea what to do next." Otherwise you're operating just like every other academic field - there's also new information and you've got to stay on top of everything. 
+
+2) You wrote all of that and didn't mention that AI is going to wipe this field clean. This year, multiple people in my lab have gone farther and quicker with their bioinformatics needs by working with chatgpt than with our department's bioinformatics group.
+
+EDIT: Y'all can hate on AI all you want, but that won't change that the job market for computer programmers has already tanked - it is the lowest since 1980. To think this won't hit other coding jobs is a mistake.
+- holy shit i just graduated from ms too and i am just cosigning
+- You're spot on from my perspective, though funnily enough that is what attracts me to this field. I also come from a bio background, and the diversity of tasks and methods to accomplish said tasks keeps me excited and engaged with bifx.
+- Due to the fact that computers allow automation, without the inherent "messiness" and custom nature of each research question, you'd already be out of a job. Namaste 🙏
+- I feel the same and since i am new to the field (like no substantial work ex yet) i feel scared about how am i ever gonna be an expert or good enough!
+- Am I the only one who wants to do undergrad in bioinformatics and then do wet lab stuff in postgrad? (I didnt really have much of a choice since its the only thing my citys uni offers that would be conducive to getting a masters in the field I want to become a researcher in, pharmacology
+- I feel so validated. I’ve been wondering this same exact thing myself. I’ve read papers where I thought I understood the technique being applied (ie RNA-seq) and be absolutely flabbergasted by the methodology employed by the paper given the standard I understood.
+
+You used Salmon for quantification for DESeq2 analysis without using tximport? I thought that wasn’t standard practice? DESeq2 takes raw read counts not the quantified reads from the direct Salmon input?
+
+You normalized your reads to RPKM? For across sample comparisons? Or for a PCA? If you were going to do that just use a variance stabilizing transformation? Whats the point of RPKM, FPKM, or even TPM if you’re not doing anything meaningful with it?
+
+You’re not including your repository in the manuscript so reviewers can see your code? How can anybody ensure the pipeline is sound and non-biased?
+
+Every time I notice something I don’t quite understand the imposter syndrome spikes through the roof as I feel I truly don’t understand anything at all. And I have to go back through and re read the docs and other pipelines just to get a better understanding of the tools and methodologies but still come up dry somehow.
+- I do understand the frustration, but I'm in a small academic lab exploring new niches. The open source, academic nature of tool development in bioinformatics is messy, sure, but it also has it's strengths. I ran into these issues plenty in engineering too. That was far more frustrating to me because unless it's heavily regulated like pharma the systems get unwieldily but to top it off knowledge is also incredibly siloed. The start of a project I'd become an archaeologist trying to figure out why things were done, by people no longer around, who left a scarce written record. 
+
+Also, by using commercialized software what you often don't see is the years of tech debt baked in and duct tape holding the Jenga tower together. With all the respect, this is what it feels like to get out of school and realize a lot of systems aren't standardized or documented. Working through that is the crux of a lot of technical work. 
+
+Document things better for the people that come behind you to lessen the chaos. Align yourself with goal driven teams and communicate clearly about projects from start to end. Don't discount the positive of what you do learn and achieve. That's basically all we have the power to control.
+- I completely agree, but I think there’s a key difference: in coding or software engineering jobs, there’s usually a specific and tangible goal. It might be an app that behaves in a predictable way or a script that produces a defined output. Because of that, the learning process becomes more enjoyable—you can directly apply what you’ve learned and clearly evaluate the outcome.
+In bioinformatics the outcome of what you’ve done is difficult to be really useful
+- I appreciate the advice—and yes, we should never stop learning. But unfortunately, you caught me at a weak spot! It’s precisely because I care so much about the why behind things that I often find myself feeling lost and exhausted.
+
+I constantly ask myself, “What’s actually going on here?” I want to understand why certain choices are made and how they’re implemented. And that’s the core of my frustration: in a field as chaotic as bioinformatics, it’s incredibly hard to make sense of things.
+
+I’d say I have a solid foundation—I’ve always done well in my courses.
+And I know this might sound naive or obvious, but the complexity of bioinformatics feels fundamentally different from other disciplines. It’s not that we’re dealing with impossible problems—it’s that the input/output balance is off. Things aren’t difficult because they’re unsolvable, but because the way we approach them is inefficient and messy.
+
+Learning is already a challenging process—it shouldn’t be made harder than it needs to be. If every step further requires an irrational amount of effort, it starts being a torture. 
+Sometimes, keeping things simple is underrated, but it makes all the difference

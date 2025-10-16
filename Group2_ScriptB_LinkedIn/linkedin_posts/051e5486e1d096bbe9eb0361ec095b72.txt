@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/manishbhatt132123_security-context-engineering-activity-7367649420848361473-IDVW
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Manish B.的动态
+Manish B.
+
+✅ Security Fixer | ✅ Mission Focused Jungle Cutter | ✅ Offensive Security w/ AI | ✅ Architect, Mentor, Advisor, Devil’s Advocate, Nerd | ✅ GenAI Security | ✅ Crisis & Performance Engineer
+
+1 个月  已编辑
+
+⏰ The Coffee Laws: Science of Context Engineering
+
+Context engineering in LLM is governed by some empirical laws apparently. Ran an experiment over past few days, paper incoming after more verification.
+
+👉 I'm calling it my "Coffee Laws of Context Engineering". Inspiration was how barista's make pretty shapes with cream in latte.
+👉 It's exciting because of the exciting parallels between fluid flow engineering, and context engineering. 
+
+The relationships suggest that:
+👉 Context sharpening (increasing Pe_ctx - context quality) reduces ambiguity at a cube-root rate
+👉 Information capacity (H) grows logarithmically with context quality
+Adding more chunks (N) has diminishing returns at the same -1/3 rate
+👉 The 2/3 factor emerges from the geometric relationship between width and entropy
+👉 Holds across mixed providers. 
+
+How do I know? I ran a large monte carlo simulation, and verified empirically using OAI/Anthropic provider/embeddings. 
+
+#security #context #engineering #LLM #AI
+
+17
+2 条评论
+赞
+评论
+分享
+Garrett Galloway, D.Sc.
+
+SecEng, Generative AI Security, Red Team, Mentor, Educator.
+
+1 个月
+
+I'm gonna need you to do that on a number of different models with different configured token window sizes across a few different attention mechanisms. I think it will hold across all models based on how I've conceptualized this, but there will likely be a multiplier for attention head configurations, a multiplier for attention head to context size ratio, a multiplier for any kind of sparse attention (fast attention, double chunk, etc.), and a multiplier for model size. It'll probably also get complex with MoE and number of active experts vs size of experts. I need a coffee-coffee laws of context engineering. It'll take a doub

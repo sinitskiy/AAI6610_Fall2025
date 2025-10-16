@@ -1,0 +1,37 @@
+URL: https://www.linkedin.com/posts/inna-krieger-22434655_update-the-more-i-think-about-it-the-more-activity-7281739050963685376-FKav
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Inna Krieger的动态
+Inna Krieger
+
+Protein biochemist and structural biologist, TB drug discovery
+
+9 个月  已编辑
+
+UPDATE: The more I think about it, the more and more examples of physiological symmetry my mind recalls where this can be an issue upon predictions. Would it be a good idea to implement an extension to oligomeric predictions to search for symmetry in the output, and if not correct, then at least add some sort of a note like "watch out for the symmetry! while the assembly scores well on the probability, the individual chain parts might be swapped!"?
+-------------------------------------------------------------------------------
+Stumbled into another potential confusion of protein folding predictors. It actually makes sense, when you think about it. I just didn't (consider it) - and instead found it staring at me from the experimental data. But when you don't have the experimental data - you'd better consider this possibility. Hence the share. Meet: The symmetry swap.
+This is a natural trimer with a natural symmetry. Below is the AF folded trimer on the left (side and top view), and Chai folded - on the right. Chains are colored by shades of orange or shades of green. Superimposed is the experimental data-based model in pink. Hopefully, you can see that AF totally swapped parts between two protomers. Chai did better (only swapped the tip). (I'd love to add Boltz to the collection, but I ran out of my credits on Neurosnap, and can't find another place to run it where it would not stop or hang indefinitely on me. Suggestions are appreciated). 
+And the funny thing is: the swapped model works fine as MR solution. Except your chain exists across sym interface (the crystal was in R3). But if your resolution is not very high - it is not trivial to notice. So, watch out for that.
+
+150
+9 条评论
+赞
+评论
+分享
+Zheng Long
+
+9 个月
+
+Run it locally. I am sure Prof Sacchettini can spare a couple thousands for a good GPU. Does your lab still have th

@@ -1,0 +1,72 @@
+URL: https://www.linkedin.com/posts/aliganji_with-mapie-uncertainties-are-back-in-machine-activity-6840417656907137024-5TOa
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ali Ganji, PhD的动态
+Ali Ganji, PhD
+
+Data Scientist | Specializing in Marketing Analytics, CLV Prediction, Machine Learning, Data Science, Deep Learning | Python, Spark, SQL
+
+4 年
+
+Prediction Intervals can be used to quantify the uncertainty around predictions made by Machine Learning models. In other words they help us quantify the confidence we should have in predictions made by any ML model. Quantile Regression, traditional resampling (Bootstrap or Jacknife) and Bayesian approach can be used to obtain these intervals. However, these methods suffer from lack of theoretical guarantee, are computationally expensive, or are very dependent on the model/problem. 
+
+MAPIE implements state-of-the-art resampling methods to provide well-calibrated prediction intervals with theoretical guarantee for any ML model trained using Sklearn package. #machinelearning #artificialintelligence #ml
+
+With MAPIE, uncertainties are back in machine learning !
+towardsdatascience.com
+17
+1 条评论
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,466 位关注者
+
+52 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

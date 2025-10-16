@@ -1,0 +1,61 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fhfkan/advice_for_becoming_a_data_analystdata_scientist/
+Title: Advice for becoming a data analyst/data scientist with an economics degree?
+
+Content:
+I'm starting my 3rd year studying for a 4 year integrated MSci in Economics in the UK.   
+I've been choosing modules/courses that lean towards econometrics and data science, like Time Series, Web Scraping and Machine Learning.  
+I've already done some statistics and econometrics in my previous years as well as coding in Jupyter Notebooks and R, and I'll be starting SQL this year. Is this a good foundation for going for data science, or would you recommend a different career path?
+
+Comments:
+- Yes absolutely. I am an Econ major/Data Science Director. IMO people over emphasis tech skills. In 99% of cases technology is the means to the end not the end itself. If it can be done easier/cheaper that is always the best solution. Critical thinking skills are far more important. I start every project by asking WHY are we doing this. Often times the answer is we don’t need to. Problem solved at zero cost and zero effort. A lot of tech focused people will immediately jump to the most fun/complex solution.
+- I say yes it’s a great foundation, but I have bias because I am a ds who studied Econ in undergrad
+- Another DS with econ undergrad here, aside from SQL and basic Python for data manipulation, the rest of the tech stack that you mentioned is secondary. Instead, get really good at understanding experimentation and the stats behind it. Get really good at solving case studies with a framework that breaks a problem down into smaller problems. Get a good understanding of classic ML, like linear/logistic regression, their assumptions, how to test accuracy, and more importantly, how to use the findings to make business decisions. All of these will put you on a good path when interviewing, and will be crucial to make sure you do well enough to get hired, everything else you can learn on the job. 
+
+In terms of hard tech skills, get really really really good at SQL, it's more important than Python. For interviews, in like 95% of the cases the Python assessments will just be Pandas data manipulation. As someone else mentioned, some people tend to focus way too much on technical skills and not enough on business skills. 
+
+With your background, you'll best fit roles within DS Analytics instead of ML engineering. So problem solving will be a much more valuable asset for companies. This is my personal experience from working at multiple companies, including multiple FAANG, and interviewing at many many more.
+- Focus more on Python and do an DS internship. Last thing missing would be to get comfortable with a tech stack, but they'll teach you that in an internship. Azure, AWS, Databricks f.e.. Maybe also take a look at Pyspark.
+
+I'd definetly put alot of effort in improving coding skills. As economist you should bring a good understanding of business logic. That in total should make you a suitable candidate.
+
+And ML, of cause....I dont think you need to know GenAI to find a Job, but it wouldnt hurt.
+- You seem to be going in the right direction education wise. The only thing missing from your post is some relevant work experience. Try to do an internship and/or relevant research. A quick side-note: economists trained in econometrics tend to make excellent Data Scientists. You got this!
+- You’re on the right track, but I’d encourage you to take as much Computer Science and Databases as possible. Knowing how to use SQL is absolutely essential, but don't stop there. A lot of people think learning Tableau or other visualization tools will land them a job—it might get you in the door, but to really succeed, you need to show you can handle data at its core. Strong SQL skills and understanding how databases work will set you apart from others who only know front-end tools. Also, try to get more hands-on coding experience in Python or R to apply data science principles in a practical way. The data you get in school is 100x cleaner than in the real world, so try to get your hands dirty on real world data as much as you can.
+- See their syllabi and see which have projects, better yet is to try to do research with some faculty or grad students. Projects not only show you have technical ability but also practical. Also, look for any courses that teach causal methods.
+- You have a great foundation to become a DS. One question you should think about is which DS path you want to go down. Unfortunately DS can mean many different things. For example some DS roles are focused on machine learning. On the other hand, DS such as myself are focused on experimentation and causal inference. These roles are more often known as "analytics DS" roles. If you are interested in this path then I would recommend learning about AB testing and causal inference. Just a heads up though that analytics roles often pay less than their equivalent ML role at the same level. But the bar for math and coding for analytics roles is lower so it's easier to pass the interview IMO, and the pay is still quite good (check my post history for my salary progression)
+- Index highly into math, mostly topics surrounding statistics, focus in being a competent speaker/communciator, be the best software engineer that you can, learn the core cs concepts. Economics concepts are good but very broad esp at the undergraduate level, but its good for pointing you in the correct direction
+- Your background in econometrics, data science, and coding looks fantastic for a career in data science! 🚀 If you’re interested in further strengthening your skills and certifications, we offer professional courses and training at very competitive prices. These programs are designed to build on your existing knowledge and provide you with additional credentials to stand out in the field.
+
+Feel free to send me a private message if you’d like more details on how our courses can complement your studies and help you achieve your career goals!
+- lookup mlcourse.ai
+- I was on the same boat.
+
+What really helped me was to make a Git page. Showcase on how you solve problems, and try out some data sets from Kaggle.
+
+At the end of the day, you will learn tech skills as you go. What is more important is that you understand how to use Python, and SQL as a means to an end. If you can identify value, that is 80% of the job.
+
+This guys youtube helped me out in making my git page.
+
+[https://www.youtube.com/watch?v=D9CLhQdLp8w](https://www.youtube.com/watch?v=D9CLhQdLp8w)
+
+  
+EDIT:
+
+LEARN GIT. Trust me having some knowledge of version control will go a long way.
+- Economist typically focus more on the causal inference both for experimentation and causal ML. Or time series.
+
+You could also try to be an RA for a professor to start getting experience. They might ask you to do some scraping, clean data, or some exploratory data analysis. Anything is useful at this point.
+- I graduated with a bs in Econ and I’m a ds. Study python and computer science basics
+- Pursuing a career in data science seems like a good fit for you. I have some recommendations for you. While R is powerful, Python is often the go-to language in data science due to its extensive libraries (like Pandas, NumPy, Scikit-Learn, TensorFlow, and Keras). Consider learning Python if you haven’t already. Also, proficiency in tools and libraries for data visualization (like Matplotlib, Seaborn, or even Tableau) can help you present your findings effectively.
+
+In addition, apply your skills to real-world projects. This could be through platforms like Kaggle and StrataScratch. Building a portfolio of projects that showcase your ability to solve real problems with data will be highly valuable.
+- Don’t waste your time and focus yourself on your goal
+- I am last semester student (5th year) in Quant Economics and I am already senior DS. Started 4y ago as Analyst then Senior Data Analyst then Senior DS. What turned out to be most helpful in my case was the deep understanding of math behind everything - both intuitive and formal (don’t stress yourself it takes years to develop). To the point that I feel kinda obsessed with math reading textbooks on bus rides etc. For example I think 210 times WHY I DO THAT before I decide on IQR vs some CoV or distance based metric for outlier detection in EDA phase. Also domain knowledge + storytelling is very important it turns out. People have to like working with you and have to feel that you know what you are doing. Don’t try to apply latest and hottest models/tech in everything. Always start with easiest, cheapest and most explainable techniques and THEN iterate over more sophisticated methods. I passed recruitment assessments by telling them that the data is white noise and it makes no sense to model it further rather than using multivariate stochastic gradient boosted neural covariance infinite dimensional transformer.
+- The MS in Economics spearheads the causal inference work at my company
+- I'm a Econ major as well. I've been working for the past 4 years as a Data Scientist and I must say that the most relevant field for DS is def statistics and what you see in econometrics. But don't get limited by that and you should keep doing what you've said you are doing and study a broad range of technologies just so you will know what you should do in case you need it. 
+
+Off topic: any kind of project you work on will depend on the theoretical foundation of what you wish to accomplish. If it's time series forecasting, you will most likely find yourself re-learning things you already knew, just to be sure it's the best way of achieving something.
+
+A pro tip: structure your studies in projects. Anytime you don't know a specific field, try to organize a way of consolidating what you don't know. eg: I don't know much about MLOps, so I'll try to teach myself how to structure a data pipeline in kedro and monitor my models using MLFlow. It's the most important thing someone with no experience whatsoever should be striving for in the early moments.
+- hola que me dicen sobre tener o no tener un titulo univercitario/teciario para poder conseguir trabajo de data analitycs?lo siento si es una pregunta tonta estoy iniciando en este mundo

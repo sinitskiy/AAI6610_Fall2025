@@ -1,0 +1,160 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18ut4si/as_a_nondatascientist_assess_my_approach_for/
+Title: As a non-data-scientist, assess my approach for finding the "most important" columns in a dataset
+
+Content:
+I'm building a product for the video game, League of Legends, that will give players 3-6 distinct things to focus on in the game, that will increase their chances of winning the most.
+
+For my technical background, I thought I wanted to be a data scientist, but transitioned to data engineering, so I have a very fundamental grasp of machine learning concepts. This is why I want input from all of you wonderfully smart people about the way I want to calculate these "important" columns.
+
+I know that the world of explanability is still uncertain, but here is my approach:
+
+1. I am given a dataset of matches of a single player, where each row represents the stats of this player at the end of the match. There are \~100 columns (of things like kills, assists, damage dealt, etc) after dropping the columns with any NULLS in it.
+   1. There is a binary WIN column that shows whether the player won the match or not. This is the column we are most interested in
+2. I train a simple tree-based model on this data, and get the list of "feature importances" using sklearn's `permutation_importance()` function.
+   1. For some reason (maybe someone can explain), there are a large number of columns that return a ZERO feature importance after computing this.
+3. This is where I do things differently: I RETRAIN the model using the same dataset, but without the columns that returned 0 importance on the last "run"
+4. I basically repeat this process until the list of feature importances doesn't contain ZERO.
+   1. The end result is that there are usually 3-20 columns left (depending on the model).
+5. I take the top N (haven't decided yet) columns and "give" them to the user to focus on in their next game
+
+Theoretically, if "feature importance" really lives up to it's name, the ending model should have only the "most important" columns when trying to achieve a win.
+
+I've tried using SHAP/LIME, but they were more complicated that using straight feature importance.
+
+Like I mentioned, I don't have classical training in ML or Statistics, so all of this is stuff I tried to learn on my own at one point. I appreciate any helpful advice on if this approach makes sense/is valid. 
+
+# The big question is: are there any problems with this approach, and are the resulting set of columns truly the "most important?"
+
+Comments:
+- I mean most metrics are going to be correlated with each other and with winning. KDA, CS, gold, turrets, vision, objectives, etc. And none are the "cause" of winning. So trying to interpret metrics like correlation and feature importance is pointless.
+
+League is won around champ select, wave management / recall time, positioning in team fights, jungler pathing, etc. All complex things that probably aren't in your dataset.
+
+Also how do you plan to make this user-specific or do you not?
+- I think a better approach would be to train a model (can be RF) on all players and then for each player compute SHAP values for their observations (games). Then for given player you can take features with most negative average SHAP values to find out important features that actually make them lose games.
+- Ok so as a leauge player and a data something or another -- first i would actually explore the data and see what models would work best 
+
+Kills always seem nice to track but 3/0/12 is alot different than 3/7/12 is alot different from 3/3/0
+So while kills may return zero -- Kill /death ratio may impact the binary value win. Time is also very important in leauge so if you have variables at time stamps, looking at those, transforming them and exploring them may be a good idea.
+
+So some of you variables may need transformation, granular variables are important to like cs (creep score) 
+
+Alot of these variables are actually just stand ins for gold -- so if you have gold at different time stamps that might be really good data. But the point is to explore the data, run some charts and see if there are linear relationships amongst some variables and note any transformations you would like. 
+
+Once you explore the data start thinking strategically about the model you want and why -- what are the core relationships and go fron there.
+
+Try something like this out and if it works give me a call to share some of that riot money (i have alot more detailed ideas but i dont want to do all your homework for you)
+- I never thought the specific knowledge born from 10 years of league of legends would be at any point relevant. Also never let their reddit sub find this post.
+
+I go at this from a value added vs time spent perspective.
+
+First, some context:
+
+League has over 100 champions, all of which a player can choose to play in a given match.
+
+Those champions have different winning strategies very roughtly categorized by role (top laner, mid laner, jungler, carry and support) and further categorized by extra details like "classes" (mage, assassin, fighter, juggernaut etc) and also by scaling capibilities, prefered encounters etc. 
+
+That being said, it makes little to no sense to go to all this work to provide generic information to a player, as it is either at least champion specific or it would be like every generic youtube ever (farm more, die less, dont lose objectives etc).
+
+If you want to give value, there are generic tips you can give without a model, and specific ones will require specific knowledge about a champion and a sample of only games from that champion.
+
+I can already predict the results of generic tips: Want to win more? Get more kills, you win more games when you have more kills! Disregarding the fact the games that led to more kills were the games where the user happened to have used defensive wards to not die to a lvl 3-4 gank and get snowballed on.
+
+Specific tips that were champion specific could be usefull, but dont come from a model: as an assassin, ambush someone using a pink ward / sweeper. That is a class specific tip and objective that could prove useful in a game and lead to a victory, and it comes from game knowledge and cant come from a model (with what seems to be your data).
+
+But I'm sure your boss will want an answer for a metric to track, so I'll give you some freebies:
+Less deaths, higher gold earned, objectives complete (neutrals, towers), vision score, damage dealt or taken /healing and shield.
+- If you’re doing inference why are you using a not easily interpretable machine learning model?
+- I think your main problem is that you are using ML tools for prediction for causal inference/statistics/inference problems.
+
+First of all; "if "feature importance" really lives up to it's name, the ending model should have only the "most important" columns when trying to achieve a win." Is not the best sentence for an MLE to write. Feature importances have a mathematical definition and that's what you should be using to interpret the results, not the name itself. Does the calculation that creates this measure lead you to information that's useful for decision making? (Technically yes, but it all lies in what that calculation is and not what it's named.)
+
+Secondly, your method is basically a form a p-hacking, even if you're not calculating p-values. The spirit is the same. You're just naively picking columns with good predictive capabilities but that doesn't mean that an intervention on those lines will cause people to play better. That "cause" is in the realm of "causal inference", which you don't touch much as an MLE.
+
+You need to step back, preferably talking to some strong LoL players (we have not one but at least two in this thread which gives you invaluable info already), and think about the stories about wins and losses for players. Ideally for each hypothesis on a column which you think is predictive of victory or loss you should think about potential confounders and try to control for them to understand if focusing on that outcome will lead to victory, what a player in this thread said is that there's a huge amount of correlation and the causal network is quite interconnected so that's where this approach is going to have a lot of difficulties.
+
+You can also take another step back and ask "how do people improve at the game"? You may find that the kinds of deliberate practice that one has to do in order to improve isn't easily captured by your dataset, in which case, what are you really doing? (And I know what you're doing because I've used this dataset before on kaggle. You're just finding some dataset and seeing how you can apply ML to it. Which is great to practice tuning a model but that doesn't mean it will have the impact you may think.)
+
+So I think the moment you turn away from using a model to simply predict victory and you turn to giving humans information to drive improvements in play, you're simply out of your domain of expertise, which is fine, but it means that you can't take your usual ML approach because your training is for helping algorithms make decisions and not humans. I'm not saying that building an ML model to predict victory isn't helpful and that this isn't a skill that you should learn. What I'm saying is that when you try to understand what \*causes\* players to play better then you're outside the realm of ML and that's where your approaches will begin to fail.
+- This is what I would do:
+
+1. Check those 100 features and remove any that I deem unhelpful (gold earned, colour of UI, etc)
+2. Check the remaining features by hand and weed out ones that are obviously colinear (e.g. kills and KD ratio). Only keep one of such columns
+3. do a lasso regression on the remaining columns to select most important ones
+4. linear regression using the top features as covariates
+
+This should give you the significance of your most important variables. 
+
+What to do with the result is another matter entirely, I would hazard a guess this will yield absolutely useless results, such as that the number of kills or the number of deaths are associated with win rate. As the game has many other dimensions apart from the ones captured by your dataset, you will likely not learn anything from this. 
+
+If you really wanted a useful ML based approach to help players improve, then you could start by recording matches and somehow extract information from them (average distance to other players, position on the map, skills used, clicks per minute, xp gain per minute, this list goes on and on). When you actually have data on the defining features of a match, then you can use  stats to find important patterns.
+- The numerical methods are only going to provide the importance for columns that are present. The most important features for a model are not always the most important for an outcome. 
+
+There is no best subset of features for a model if they deliver value. You also cannot algorithmically determine which features need to be included and removed if they're importances are not zero.
+
+Ultimately the importances are being created by the algorithm that you are training. If you train a different algorithm the result could be completely different. Importances of a feature to one algorithm will be completely different than the importances of a feature to a different algorithm. The definition of importance isn't even standardized across different algorithms so there's no way to compare them unless there is a full dropout or you try to BS it like SHAP does.
+
+What you are doing is a manual version of automated feature selection based on the feature importance of the algorithm used as a feature selector in a select from model sklearn step. I would recommend just using that instead.
+- When two columns are correlated, you can have very low permutation importance.
+Say x5 and x7 are correlated. 
+
+You permute x5, then the tree can be computed using just x7 -> 0 importance for x5.
+
+You permute x7, then the tree can be computed using just x5 -> 0 importance for x7.
+
+It does not mean that it's safe to remove both x5 and x7 even if, when you corrupt both individually they result in 0 importance.
+
+Maybe you can have a processus where you remove one at a time.
+Or a processus where you cluster highly correlated columns and add/remove those as a group. Or select the best from the cluster.
+- A wise man once said "Things should be made as simple as possible but no simpler"....
+
+1. I would not drop columns with NULLs just use imputation.
+2. Why not just use a simple multiple logistic regression model...or even easier just use Pearson (biserial) correlation coefficient??? The ones taught in high school stat classes... (Not tryna be a smartass but make life easy on yourself...)
+- 1. Rather than dropping columns with nulls, you could try imputation.
+
+2. Did you scale and center?
+
+3. Some columns may have zero importance because they're unimportant or they're linearly related to other columns.  Alternatively, some methods implement a penalty term that artificially shrinks small effect sizes to zero.  This gives better model performance in many cases.
+
+4. What is the purpose of retraining without the zeros?  Does it change the end results?  If so, why not take the top N features from the beginning before retraining on a smaller feature set?
+
+5. Rather than selecting some number of features, maybe go by proportion of variance explained?
+- To answer one of your questions the feature importance will be 0 if the feature wasn’t used in the tree at all.
+
+Like people are saying you’d have to address the correlation between your features.
+
+Instead of building a model you could use something like MrMr to just filter down to the top 5-10 features which will deal with multicollinearity.
+
+There’s a GitHub repo that makes it pretty easy to use.
+
+https://github.com/smazzanti/mrmr
+
+
+It seems like it fits your use case and you don’t really need to deal with machine learning. 
+
+Using an RF and shapely values can also be good idea but could also be more complicated
+- This may sound nitpicky but is important. 
+
+How are you using this in production? 
+
+From my understanding, both the user stats at the end of a match and whether they won are available when the match ends. So why are you predicting something that you will always know?
+
+You may experience a lot of 'data leakage' symptoms because of this.
+- You need to look for multicollinearity between your features
+- I would also be careful about introducing feature leakage. It seems that some of your variables could leak info about the outcome, so there isn’t much to predict. We obviously know that more kills increases likelihood of a win.
+- It seems like you ultimately want to understand causation. So, causal modeling or reinforcement learning might be the absolute best thing to do. This is because the system at hand is a dynamic and non linear system. In the best case scenario, you might conduct a series of experiments to determine the effect of adding or removing one of these features. If that’s out of scope, you could do causal modeling on the system with your observations. Ideally, you might train a DQN or PPO model with some sampling over the state space to determine the impact of individual features. If you combine that with model explainability, you might have the best possible explanation of why the important features are important. SHAP is a pretty good one as others have mentioned, but there are one specific to reinforcement learning you can rely on.
+
+Since you’re unlikely to do all that, a simpler approach would be some kind of multivariate time series modeling plus model explainability techniques.
+
+Since that’s also probably too complex, your current approach with appropriate scaling and such is probably fine
+- I’ve actually already done something extremely similar to what you’ve just described as a project in grad school. Mine was to predict the winner of a match based on the early stats of a game but when determining significant features you quickly find that they’re all correlated with gold bc they directly give you gold which wins games (CS, Kills, objectives, etc.). To that point, as others have said, I don’t think that makes very good advice for a player focused product as “get more gold from cs, kills, and objectives” is extremely broad and can apply to every player.
+
+Making it user specific and more niche would be really cool but I have difficulty seeing how you can gleam insightful results from a game as complex and LoL with the simple stats you can pull from the api. At least it would be hard to be significantly more useful than the stats tool they already have in the client.
+- In addition to RF and Shap, sklearn has also recursive feature elimination (RFE).
+- [removed]
+- I see some issues.
+
+1) importance doesn't tell you what that feature needs to be. Do they need to increase it? Decrease it? Keep it in a range? A set of ranges depending on other features?
+
+2) are the features ACTUALLY predictive. And important feature in this context is a feature that when randomized hurts the most. But what is the accuracy to begin with.

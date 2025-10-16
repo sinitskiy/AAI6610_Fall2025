@@ -1,0 +1,82 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1houdgh/what_are_some_of_the_most_interesting_applied_ml/
+Title: What are some of the most interesting applied ml papers/blogs you read in 2024 or projects you worked on
+
+Content:
+I am looking for some interesting successful/unsuccessful real-world machine learning applications. You are also free to share experiences building applications with machine learning that have actually had some real world impact.
+
+Something of this type: 
+
+1. LinkedIn has developed a new family of domain-adapted foundation models called Economic Opportunity Network (EON) to enhance their platform's AI capabilities.
+
+https://www.linkedin.com/blog/engineering/generative-ai/how-we-built-domain-adapted-foundation-genai-models-to-power-our-platform
+
+
+Edit: Just to encourage this conversation here is my own personal SAAS app - this is how l have been applying machine learning in the real world as a machine learning engineer. It's not much, but it's something.
+This is a side project(built during weekends and evenings) which flopped and has no users
+[Clipbard](https://clipbard.com). I mostly keep it around to enhance my resume.
+My main audience were educators would like to improve engagement with the younger 'tiktok' generation. I assumed this would be a better way of sharing things like history in a more memorable way as opposed to a wall of text. I also targeted groups like churches (Sunday school/ Children's church) who want to bring bible stories to life or tell stories with lessons or parents who want to bring bedtime stories to life every evening.
+
+
+
+
+Comments:
+- Think this might be what you’re looking for :)
+
+https://github.com/eugeneyan/applied-ml
+- I helped develop these models and published the results in peer reviewed journals:
+
+1. Soil temperature prediction model
+2. Wildfire behavior model
+3. Remote sensing object detection
+4. Air temperature forecasting
+
+There are also 3 other projects I am working on that are in the early stages.
+
+I also peer review for a number of journals in my field. There are some interesting applied ML papers in the pipeline for the geosciences!
+
+There are also A LOT of things that failed. I would say for every success there are two or three failures. I've also had the ability to show many people that just because you can use ML doesn't mean you should. Sometimes a physics-based or classical statistical model just works better than ML.
+- My favorite project recently found new risk factors for prostate cancer. It used gradient boosting among other things.
+- Hi All, I’m new to Reddit and currently don’t have enough karma to create a post. I’m working on a project to detect if a merchant’s website is engaged in banned activities (e.g., porn, selling body parts, drugs, etc.) using an unsupervised approach, as I don’t have enough data for supervised learning. I’d love to get some tips or suggestions to improve my methodology. Here’s what I’ve tried so far:
+
+# My Approach:
+
+1. **Chunking:** Split website text data into chunks of 100 words.
+2. **Hybrid Search:** Combine Exact Search and Semantic Search.
+   * **Exact Search:** Create a list of keywords for each banned category. If a chunk matches a keyword, assign the corresponding banned category to that chunk.
+   * **Semantic Search:** Convert both banned categories and chunks into embeddings, then calculate cosine similarity. If similarity exceeds a threshold (0.6), assign the category to the chunk. I’m using the Dense Passage Retriever (DPR) model for embeddings.
+3. **Combine Results:** Merge results from both searches.
+4. **LLM Validation:** Use a Large Language Model (Mistral 7B v0.3) to reduce false positives.
+5. **Prompt:** *"Answer the question based on the context below. Answer with Yes, No, or Not Sure. Provide only one response based on the context."*
+   * **Context:** {chunks here}
+   * **Question:** Is the passage discussing services related to {banned category}?
+   * **Answer:**
+
+# Challenges:
+
+1. **Semantic Search Issues:** It’s generating many false positives and matching some chunks with multiple banned categories. Raising the threshold above 0.6 results in no matches at all.
+2. **LLM Inconsistencies:** The LLM responds in varying structures for different websites, which makes standardization difficult.
+
+Looking for suggestions on improving my approach or any preprocessing techniques to address these issues. Any help would be appreciated!
+- RemindMe! 2 days
+- RemindMe! 7 days
+- !remindme 7 days
+- I really like this repo on Github for practical ML projects: [https://github.com/data-flair/machine-learning-projects](https://github.com/data-flair/machine-learning-projects)
+
+(The repo is over a year old, but I still think there is awesome stuff on it)
+- In 2024, I focused on machine learning for sentiment analysis and recommendation systems. One of my side projects was a SAAS app called Clipbard, aimed at improving engagement for educators and parents through dynamic storytelling. Although it didn’t gain users, it helped me refine my ML skills, especially in user behavior prediction.
+- How to stay updated in this data science field? We can't read all research papers recently published, so how to choose papers before reading? Could anyone please tell?
+- RemindMe! 7 days
+- Oh wow, this is really good.
+- I will be messaging you in 2 days on [**2024-12-31 12:11:03 UTC**](http://www.wolframalpha.com/input/?i=2024-12-31%2012:11:03%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/datascience/comments/1houdgh/what_are_some_of_the_most_interesting_applied_ml/m4ce4fg/?context=3)
+
+[**8 OTHERS CLICKED THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Fdatascience%2Fcomments%2F1houdgh%2Fwhat_are_some_of_the_most_interesting_applied_ml%2Fm4ce4fg%2F%5D%0A%0ARemindMe%21%202024-12-31%2012%3A11%3A03%20UTC) to send a PM to also be reminded and to reduce spam.
+
+^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201houdgh)
+
+*****
+
+|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|
+|-|-|-|-|
+- Personally l go for the popular papers l hear about on twitter and machine learning subreddits. It won't cover everything, but it's okay and better to have some coverage than none just because there are too many.
+As far as why popular(by popular l mean a lot of technical/knowledgeable people are talking about ), well for certain things to be adopted they need some adoption, and l am sure there are great frameworks/architectures out there that just never got adopted and are not used a lot.

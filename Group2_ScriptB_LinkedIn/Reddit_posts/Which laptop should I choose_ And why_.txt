@@ -1,0 +1,74 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/14hpjd8/which_laptop_should_i_choose_and_why/
+Title: Which laptop should I choose? And why?
+
+Content:
+I am engaged in bioinformatics, machine learning, the analysis of genomic data, especially WGS, which are very voluminous and requires a lot of power. I also like to play games in my free time. In accordance with these needs, which laptop configuration should I choose?
+
+1. Intel Core i9-13900HX (3.90 ghz), RAM 16 gb, 1024 SSD, NVIDIA GeForce RTX 4070 (8 gb) - Lenovo legion 7Pro 2023 (Y9000P) 2023 16' - 1908$
+
+2. Intel Core i9-13900HX (3.90 ghz), RAM 16 gb, 1024 SSD, NVIDIA GeForce RTX 4060 (8 gb) - Legion Y9000P IRX8 16' - 1609$
+
+3. Intel Core i7-13700H (2.4 ghz), RAM 16 gb, SSD 1024 gb, NVIDIA GeForce RTX 4070 (8 gb) - Gigabyte AORUS 15 15,6' - 1609$
+
+4. Intel Core i7-13700H (3.70 ghz), RAM 16 gb, SSD 512 gb, NVIDIA GeForce RTX 4060 - Lenovo LEGION Y7000P 16' - 1264 $
+
+[View Poll](https://www.reddit.com/poll/14hpjd8)
+
+Comments:
+- Ideally you would keep separate laptops for gaming and bioinformatics if this is an option, for multiple reasons:
+
+* Windows is ideal for gaming but not for data analysis. You will definitely need a Unix-based system. Some tools simply dont work on windows.
+* Not mixing your work with your play. Knowing you have all your games readily available when youre trying to work/study is tempting. Similarly you dont want to think about work while gaming.
+* Both are storage-intensive. You may find yourself short of storage space quickly if youre downloading the latest games and keeping FASTQ files.
+
+Potential workarounds if you want to keep the same laptop:
+
+* Dualbooting - Keep windows for gaming and some Linux distro for work
+* Use a cloud - Most institutions that dont have a server cluster use AWS or GC for the heavy lifting. This can get expensive quick though so do your research first.
+* Virtual machine - The disadvantage is that you would be splitting up your computational resources across two OS instances, but it worked for me while I was doing my Masters.
+
+To answer your original question: it depends what you intend to do with it. I get by on a pretty mediocre laptop for most of my bioinformatics, then connect to my institutes server for serious analysis.
+- None of the above. WGS needs lots of RAM depending on species and the best option is a university computer cluster or cloud compute.
+- If you're spending this much on a laptop for this purpose I would recommend getting one with 32gb of RAM.
+- Why not get a good desktop instead?  Laptops really don't have enough compute for bioinformatics / ML.  If you really need mobility, get a dirt cheap laptop (i.e. a Chromebook), so that you can SSH into your desktop
+- If you do not have access to a cluster, be aware that even the 1st option might not be enough for your kind of bioinformatics.
+Many tools require a lot of RAM, e.g. alignment tools, assemblers, etc.
+
+It is better you spend not much money buying the 4th option and analyze your data on the cloud or server. You can also increase the RAM on it and for instance do metabarcoding.
+
+The 4th option will let you do statistics, visualization and downstream analysis for your pipeline locally.
+
+Have fun.
+- doesn't matter because you'll be using cloud services or supercomputer clusters
+- If you won't be working on your employer's servers, then focus on RAM and CPU core count
+- Are you going to do any AI stuff? Then memory and CuDa cores are relevant.
+If not, try amd. I believe they offer better value than intel, but I could be wrong.
+Nothing else really matters. I do alignment etc in a almost 10 year.old pc.
+Slow, but things are getting done.
+If I need more HPC.
+Also, mobility.means lightweight take that into consideration.
+Regarding apple. I do not know how faster regarding bioinformatic pipelines is than traditional x64 windows or even better Linux computers.
+- Here 90+% use macbooks, the reset a few use dell xps. We have separate monitor, keyboard, mouse at home and in office.
+- Is getting a desktop not an option?
+- You may want to take a look at this thread https://www.reddit.com/r/bioinformatics/comments/14f3e9s/relevance_of_mobile_laptop/?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=share_button
+- Oh shoot change one the the 2s to a 1
+- I haven't read all of the comments and I am sorry if what I say is already suggested but I would prefer taking a similar version with Ryzen...i have Ryzen 5500H with RTX 3050 and i am very happy with it
+- You only need to run vscode also mobile grafics cards are a sham. 32 gig ram and maybe 1-4tb ssd storage. I agree with previous commenters saying most bioinformatics is best done on a cluster. You could go fancy on cpu but it always will be a limit so i5 then hold the rest for pc.
+- None of those computers.
+
+
+
+You need at least 32 to 48 Gb of RAM
+
+The storage should be at least 1 TB on the main drive and at least 3-4 TB on the secondary drive.
+
+It is useless to have a GPU this powerful.
+
+The processor is important and the cache of the RAM too.
+- i9 will be power drain, 1To is needed if game + work , 16Gb is rarher minimal, rtx4070 brings aditionnal cuda cores and better gaming graphics.
+- Also at the moment Windows has WSL2 (Windows Subsystem for Linux), which is an another workaround and my preferred method of having an Unix shell on Windows. If you need Linux GUI apps, it seems that [it's supported](https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps) too.
+- Yes, I use dualbooting. Ubuntu OS for work and windows for other things
+Currently my lab has troubles with the server and most of the time I make data analysis straight on my laptop. Currently I have Lenovo with Intel core i5 7200U, Nvidia 940 mx 2gb, 16 gb of ram and 1024 M2 SSD. Operations with genome-wide data on this laptop are performed rather slowly
+- Hi, can I ask you to share your laptop model or some specs? I'm curious what you mean by "pretty mediocre" these years
+- It will be cheaper to buy one of these laptops and install 32 gigs RAM by myself

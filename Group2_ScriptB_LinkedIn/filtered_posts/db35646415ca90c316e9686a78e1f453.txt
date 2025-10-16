@@ -1,0 +1,54 @@
+URL: https://www.linkedin.com/posts/jordan-white-page_lately-ive-been-working-with-bayesian-belief-activity-7368819588534325249--XVE
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jordan White的动态
+Jordan White
+
+Machine Learning Engineer | Computer Vision Specialist | Passionate About Real-Time Systems & AI-Driven Solutions
+
+1 个月
+
+Lately I’ve been working with Bayesian Belief Networks (BBNs).
+
+We’ve got sparse, messy data: injury records, environmental conditions, situational factors. A few things we know, and a lot we don’t. Traditional ML doesn’t like that.
+
+A BBN flips the script. It’s just a graph of variables linked by probabilistic relationships. Each node has a conditional probability table that says, “given X, here’s the likelihood of Y.” Feed in some evidence, and the whole network updates.
+
+That means even if half the data is missing, I can still reason about the rest:
+- If someone suffers X injury, how does that change the probability of Y?
+- If only part of the environment is logged, what can I still infer?
+
+I’ve been building these models in Python with pgmpy. Define the structure, fill in probabilities, run inference, and suddenly you’ve got a system that adapts when data is incomplete instead of shutting down.
+
+What I like: it feels closer to how we actually think. We rarely have perfect information, but we still need to make decisions. Sometimes the “classics” like Bayesian methods are the right fit, even in a field obsessed with the latest deep model.
+
+Curious if anyone else has leaned on probabilistic models when the data was far from perfect.
+
+22
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Ammar Elbedweihy
+
+Data Scientist | AI Engineer | Generative AI, NLP, Computer Vision | Private Tutor @ KSA w/ +5 years experience |AI researcher and Scientific modeling | Philosopher
+
+1 个月
+
+📊 “The key takeaway is that correlation is an understandable equation that relates the amount of change in x and y. If the two variables have consistent change, there will be a high correlation; otherwise, there will have a lower correlation.”
+ ― Scott Hartshorn, Linear Regression And Correlation: A Beginner's Guide
+This quo

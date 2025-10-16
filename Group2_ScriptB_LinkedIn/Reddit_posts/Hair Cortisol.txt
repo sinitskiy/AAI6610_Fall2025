@@ -1,0 +1,12 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/13iqkto/hair_cortisol/
+Title: Hair Cortisol
+
+Content:
+Hi all! I am a graduate student learning how to process hair cortisol in my PI’s wet lab. I’m having issues because the hair is very staticky. I have to cut 3cm, cut the hair with scissors into tiny pieces, then using tweezers I put them in a 2mL cryovial with ball bearings. After this the hair is ground in a machine. I can’t get the hair to stop sticking to everything and right now it takes me 30 minutes per 1 sample to try and get as much hair into the vial as possible. If anyone works with hair, I could really use some tips on how to prevent this.
+
+Comments:
+- Can you dip hair samples in liquid nitrogen?  I was assigned to isolate dna from Ixodes.  It took close to an hour to squish it in alcohol 😒. Dipped in N-took 30seconds🥳. Hair will break easier for those tiny tubes as well-only question is affect on your hormone? Cell samples are routinely deep frozen so I’m thinking it’s ok.
+
+Low tech-wipe with dryer sheet but…chemicals…or use cold, humid hair by holding in refrigerator for an hour in damp cellulose towels.  Or…try keeping samples in those electronic static free bags before prep 🤔. That taps my creatively for tonight!  Can’t wait to see the results-very interesting.
+- These are great! Thank you so much. I’m guessing Nitrogen would be okay. After the samples are ground, we add methanol and that gets dried out with Nitrogen.

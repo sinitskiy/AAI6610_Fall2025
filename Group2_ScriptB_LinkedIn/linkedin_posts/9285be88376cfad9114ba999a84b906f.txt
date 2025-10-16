@@ -1,0 +1,57 @@
+URL: https://www.linkedin.com/posts/olivierdeweck_mitaeroastro-uq-epistemic-activity-7351229218547986432-j2po
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Olivier L. de Weck的动态
+Olivier L. de Weck
+
+Apollo Program Professor of Astronautics and Engineering Systems at MIT | Associate Department Head MIT Aero Astro | Editor-in-Chief Journal of Spacecraft and Rockets
+
+2 个月
+
+Congratulations to June Stenzel  for successfully defending her PhD thesis yesterday at #MITAeroAstro. Her thesis breaks new ground in uncertainty quantification (#UQ) and management, particularly for complex space programs and instrumentation where both #epistemic and #aleatoric #uncertainty are present. The main outcome of her work is a framework for optimizing the testing plan and V&V strategy for such programs. Three case studies including CCD qualification, #LLAMAS instrument, and #JWST jitter control. It turns out that only a subset of the parameters of a system strongly influence its behavior and the quantities of interest. The #Bayesian inference approach and joint use of system performance models and experimental models is novel and can be used to optimize test plans under budgetary constraints, or vice versa, quantify testing budgets given desired levels of residual uncertainty. An additional use of her thesis is the prioritization of test facilities to those that yield the highest utility when it comes to testing and uncertainty reduction. June has interned at the Jet Propulsion Laboratory #JPL and had a great doctoral committee. This was one of the best PhD defenses I’ve seen in a while and I believe that this work will be quite influential in the field. Rebecca Masterson Youssef Marzouk David Miller Amy Braverman.
+
+191
+14 条评论
+赞
+评论
+分享
+June Stenzel
+
+NASA Space Technology Research Fellow at MIT
+
+2 个月
+
+Thank you for these words of support Oli, and thank you for all of your mentorship and guidance!
+
+赞
+回复
+1 次回应
+Mich Lin
+
+NASA PhD Candidate at MIT AeroAstro | Design for Austere Environments
+
+2 个月
+
+Congratulations June!!
+
+赞
+回复
+2 次回应
+Başak Yazgan Şenel, MSc, PMP
+
+Cryo EM Program Execution Manager
+
+1 个月
+
+Loo

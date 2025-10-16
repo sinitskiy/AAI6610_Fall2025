@@ -1,0 +1,98 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1l4dw6w/f1_steering_angle_prediction_yolov8/
+Title: F1 Steering Angle Prediction  (Yolov8 + EfficientNet-B0 + OpenCV + Streamlit)
+
+Content:
+# Project Overview
+
+Hi guys! I'm excited to share one of my first CV projects that helps to solve a problem on the F1 data analysis field, a machine learning application that predicts steering angles from F1 onboard camera footage.
+
+Took me a lot to get the results I wanted, a lot of the mistake were by my inexperience but at the I'm very happy with, I would really appreciate if you have some feedback!
+
+
+
+# Why Steering Angle Prediction Matters
+
+Steering input is one of the key fundamental insights into driving behavior, performance and style on F1. However, there is no straightforward public source, tool or API to access steering angle data. The only available source is onboard camera footage, which comes with its own limitations.
+
+
+
+# Technical Details
+
+**F1 Steering Angle Prediction Model** uses a fine-tuned EfficientNet-B0 to predict steering angles from a F1 onboard camera footage, trained with over 25,000 images (7000 manual labaled augmented to 25000) from real onboard footage  and F1 game,  also a fine-tuned YOLOv8-seg nano is used for helmets segmentation, allowing the model to be more robust by erasing helmet designs.
+
+Currentlly the model is able to predict steering angles from 180° to -180° with a 3°- 5° of error on ideal contitions.
+
+
+
+# Workflow: From Video to Prediction
+
+**Video Processing:**
+
+* From the onboard camera video, the frames selected are extracted at the FPS rate.
+
+**Image Preprocessing:**
+
+* The frames are cropeed based on selected crop type to focus on the steering wheel and driver area.
+* YOLOv8-seg nano is applied to the cropped images to segment the helmet, removing designs and logos.
+* Convert cropped images to grayscale and apply CLAHE to enhance visibility.
+* Apply adaptive Canny edge detection to extract edges, helped with preprocessing techniques like bilateralFilter and morphological transformations.
+
+**Prediction:**
+
+* EfficientNet-B0 model processes the edge image to predict the steering angle
+
+**Postprocessing**
+
+* Apply local a trend-based outlier correction algorithm to detect and correct outliers
+
+**Results Visualization**
+
+* Angles are displayed as a line chart with statistical analysis also a csv file with the frame number, time and the steering angle
+
+
+
+# Limitations
+
+* Low visibility conditions (rain, extreme shadows)
+* Low quality videos (low resolution, high compression)
+* Changed camera positions (different angle, height)
+
+
+
+# Next Steps
+
+* Implement real time processing
+* Automate image cropping with segmentation
+
+
+
+# [Github](https://github.com/danielsaed/F1-steering-angle-model)
+
+Comments:
+- Man: **builds a cool project and shares it**
+
+People in comments: "Why did you even build this? What is your accuracy compared to the million dollar team sitting there. It is useless. Just hit an API bro 😖😡😤"
+
+It's a really cool project man. Keep it up.
+- Sheesh this is really cool. It being your first CV project is awesome. Hats off to you
+- Interesting!!
+- Woah!
+- How did you know the ground truth angles when manually labeling your data?
+- Amazing! Have you considered making this somehow profitable? like, starting a business.
+- Super cool output. I always really appreciate when people take on hard personal projects like this. Thanks for sharing
+- How is helmet detection important here? Is it just for cleaning up the signal for the second model?
+- Cool project!
+- Good project in a long time posted here. Good work.
+- Nice that you thought about a new-ish/custom use case for CV! If you try to do convincing plots for the people out there, consider showing the ground truth compared to your predictions so it’s very easy to assess how your pipeline is doing
+- What is your use case for this? Just an attempt to see what's possible? This isn't a situation where the data isn't recorded, the F1 teams obviously record all of this with much more precision and detail than you can, and they even share it with the broadcast teams, although it's not readily publicly available.
+- Awesome, did you try to use the original images to classify steering angle? Curious if it would not outperform canny edges as input
+- Super cool project! I'm really intrigued by how you've approached the steering angle analysis from the on-vehicle camera – the results look incredibly promising. I am on a ambitious project, I'm curious if you ever consider working on new CV challenges for others?
+- well done
+- Looks interesting but this is an obvious AI post so fuck that
+- Thanks mate, really appreciate it! I found the question ok, everything helps to improve! Maybe I didn't define the scope of the project well.
+- Thank you!
+- 🙌
+- Hi, very good question, when I was labeling the images from real footage, even myself sometimes could not see the diference between 1° or 2°, I tried to be very careful and follow some rules when measuring to be consistant but definitely is a limitation and I should have take it into account when i was writing about the accuracy of the model, for the F1 game images, I managed to get the steering telemetry, so real footage could have an error of 2° and game footage is accurate.
+
+About 65% of the images are from real footage and the rest are from the F1 game.

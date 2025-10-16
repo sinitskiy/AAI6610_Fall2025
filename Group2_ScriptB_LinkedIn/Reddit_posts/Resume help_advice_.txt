@@ -1,0 +1,71 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/181byco/resume_helpadvice/
+Title: Resume help/advice?
+
+Content:
+Hi all would you mind helping me out and review my resume? I haven't been getting any interviews as of late and its going to be almost 2 months since I left my last job. I also want to know a few things:
+
+1. A manager a while back told me that having projects on my resume was "deceptive" but I have no prior work experience in the industry so idk what else I can do?
+2. Someone told me to to go on codemy and coursera to add skills and such but like how can I add that to my resume while I wait so it doesn't seem like I have been out of work for xyz amount of time.
+3. I started some freelancing on the side but can I add that to my resume? I saw mixed reviews.
+4. Lastly, should I update my linkedin? I haven't updated it out of embarrassment tbh, because I was so excited that I finally landed a job in the industry when I really didn't.
+5. The only good job reference I have is the latest one. I have been out of work for 2+ years due to school + COVID. But this job was absolutely toxic and I didn't leave on the best terms with my boss, the HR lady was nice enough to say that I can email/call her any time but its a very enmeshed system and I don't want my old boss to know what I am doing (also a reason why I didn't update my linkedin) so how can I navigate this?
+
+&#x200B;
+
+https://preview.redd.it/t0ee7o9t5x1c1.png?width=1028&format=png&auto=webp&s=4b3839e4cd1171ab882eb8dca1f4d1a833f98f47
+
+Comments:
+- [removed]
+- My thoughts (from a postdoc in Britain who helps hire postdoc and PhD student bioinformaticians, things might be totally different elsewhere or in industry):  
+It's not very clear where you got the project experience - were these projects you worked on as part of your MSc or in your job? And did you actually contribute something to the code base for those projects? I would move the project experience to the section corresponding to wherever you worked on the projects - so e.g. add a subsection after your MSc with "Projects including" and then list them.
+
+I wouldn't care if your LinkedIn is up to date (in academia, idk about industry) but I would ideally want to see an active GitHub. 
+
+You started a lot of sentences with different verbs - validated, leveraged, mastered etc. - but make sure they are appropriate. I'd be suspicious of anyone who "mastered" R in 3 months. And did you validate advanced Excel techniques or did you use advanced Excel techniques for validation? 
+
+  
+Add a bit more detail about your MSc - what modules did you do? Did you work on a research project and what was it? Who was your primary supervisor?  
+
+
+The skills section is a little muddled - I'd maybe split it into "Software Development" and "Data Analysis". Take out MS Office altogether. You must have more skills than you've listed to have participated in those projects  - e.g. version control, mathematical modelling, code review.   
+
+
+You have "skills and interests" but don't list any interests. I would either add some or just say "skills".
+
+Online courses I would put in an additional "training" section.
+
+Do you have anything else you could add - conferences, society memberships, teaching or supervision experience, any role you had in your undergrad (like student societies, sports teams, RA etc.) , any additional training you've taken, scholarships.  
+
+
+Typographic stuff - "DNA sequencing"  rather than "DNA sequencing techniques", database and omics shouldn't start with a capital letter, "troubleshooting of databaseS", "detected and resolveD", there's a line break missing at the bottom of the breast cancer section.
+- If you are linking to your LI, you should update your LI. Otherwise, leave it off.
+- Definitely update your linkedin and put on the "looking for work" tag if your looking at industry jobs, do some applications so you appear on recruiters algorithms. Lots of recruiters out there currently searching for candidates on linkedin, but they can't read minds.
+- qwenteen.netlify.app
+- The only thing related is your most recent work experience, but what you listed there is NOT experience, it’s just some skills you have. Viewer will have no idea what did you do there and know nothing about what you can do with your skills.
+
+Also, words like “MySQL”, “R”, “JMP” can be anything between nothing and everything. They are just tools used by everyone from intern to directors, just saying you know them won’t provide adequate information about your proficiency.
+
+Over all, the suggestion I can give is trying to elaborate how did you use your knowledge and skills in those projects with more details. Also please avoid using those very general words like “Python”, “machine learning”, “data analysis”, “genomics”, etc. To the people who have worked in this area, it suggests you don’t really know that much about it.
+- [removed]
+- I'd remove financial coordinator in work experience unless it's somehow related to the position you're applying for. To me, it's causes a disconnect between your 1st and 3rd items.
+- what font is this?
+- It was just course work based. I couldn't get in a research position during my masters. These projects I did on my own after my graduation. So bassically it's a resume sort of like how people do a DIY self taught one.
+- Thank you. That helps. The projects I did on my own. Unfortunately due to family circumstances and just how my MSc went I wasn't able to land a research position nor did i do a thesis option. I actually left an internship for this last job which I am pretty upset about. So I went on YouTube and saw the resume of those who were self taught and noticed they added a project section to their resumes to get through the system's resume screening process.
+- Okay thank you! Yeah I'll do that today
+- It's because my most recent work expirience really pulled one on me. They started me off doing some bioinformatics for the first month I was there then transitioned me completely in to wet lab and that too as a lab tech. So idk what I can say/write outside of the 1 or 2 things that I added there. I am just trying to emphasize the 1 month expirience of that but it was such a cluster fuck idk what to even write. 
+
+
+Also what would you suggest I write? I genuinely have zero experience at the moment compared to most candidates.
+- Thank you!
+- edit: The comment was removed, good work everyone!
+- But that gives me a major gap, I mean not that 2017-2021 isn't a gap (I did work but in retail) but I only have 2 somewhat relevant experiences. Is that going to affect me? Also, I did data analysis on Excel as a Financial coordinator, so I thought that's why it would be relevant since Bioinf/computational biologists do data analysis too.
+- [removed]
+- As a warning, I used their recommendation. Good for cover letter (didn’t have one) but the default resume is two pages, which everywhere else is against for entry level.
+
+Take my word with a grain of salt-haven’t received any call backs before or after using this service. Best of luck! Also might recommend the engineering resumes sub. Lots of software engineer resumes that might be helpful here
+- Banned again. Thank you for your service.
+- Hmm I see your point. Bioinformatics/computational analyses are rarely done directly on Excel, so I'm not sure if include that specific role responsibility would be a net positive. You might ask someone else closer to you or resume coach for this specific experience since I do think that is a rather large gap if you don't have any other relevant experience to replace it with.
+
+Edit:
+On another note, try to utilize some single cell data to get some experience with building analysis pipeline and etc. I would say it's one of the essential set of skills in the current climate of things.

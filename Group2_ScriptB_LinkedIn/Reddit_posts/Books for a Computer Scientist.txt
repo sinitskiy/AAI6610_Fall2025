@@ -1,0 +1,31 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/zj21ja/books_for_a_computer_scientist/
+Title: Books for a Computer Scientist
+
+Content:
+Hi everyone,
+
+I am a postdoc researcher in AI, so I have a strong background in computer science, machine learning, and deep learning. I am fascinated by science in general, and I would try to use my knowledge in Next Generation Sequencing. Since I do not have a strong background (actually, I don't have a background at all xD) in genomics and bioinformatics, would you like to suggest me some books that provide me enough biology/genomics background to start working in NGS?
+
+Thank you very much!
+
+Comments:
+- How is your biology knowledge in general? I'd start with "Molecular biology of the cell" by Bruce Alberts at al. Then get something more detailed on topics that interest you.
+- A Computer Scientist’s Guide to Cell Biology
+
+Quickstart Molecular Biology 
+
+Molecular Biology of the Cell
+- [learngenomics.dev](https://learngenomics.dev) would be a good start but not deep enough to cover everything.
+- That is a good read
+
+https://guide.staging.stjude.cloud/
+- Id recommend Introduction to Genomics by Arthur Lesk
+- https://books.google.com/books/about/Molecular\_Biology\_of\_the\_Gene.html?id=aRUtAAAAQBAJ&source=kp\_book\_description
+- Actually I have some memories from high school, so no that much. Thank you for your suggestion!
+- Thanks a lot!
+- Thanks a lot!
+- Thank you very much!
+- Thank you!
+- I would also recommend Essential Cell Biology, also by Alberts et al., which is effectively a slightly more accessible version of Mol Bio of the Cell. I'm also from a CS background and have found it extremely helpful.
+- Thank you very much for your suggestion!

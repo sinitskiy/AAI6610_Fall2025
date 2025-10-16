@@ -1,0 +1,66 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/veii3v/open_post_doc_position_at_the_university_of/
+Title: open post doc position at the University of Torino (Italy)
+
+Content:
+I would like to spread the word about the opening of a postdoctoral position at the Computational Biomedicine Unit of the University of Turin, entitled “Development of machine learning methods for prediction of risk and prognosis and in hematological diseases from clinical and genomic data.”.
+
+
+APPLICATION DEADLINE: June 22nd 2022, h 13:00
+
+
+Duration: 24 months, from Autumn (Sept.-Oct.) 2022 to Autumn 2024.
+
+Salary: 34.000 Euros/year
+
+
+Job requirements
+
+
+We are seeking to recruit a post-doctoral fellow with machine learning expertise and Bioinformatics. Good or exceptional programming skill. Applicants must have a Master Degree in Bioinformatics or in Computer Science (or equivalent). The Candidates should have matured a significant research experience in the above mentioned domains and have an interest in the development of AI-tools in Biomedicine; The Candidate must have PhD (or equivalent); Collaborative attitude; Organisational skills; Fluent English.
+
+
+How to apply
+
+1. Applications must be submitted through the website https://pica.cineca.it/unito/
+
+a. Insert “TornataIII2022” in the “Filter” box.
+
+b. Select the tab identified by “Cod: TornataIII2022”
+
+c. Click on “Manage your application”
+
+d. Register to the website
+
+e. Fill in your application
+
+​
+
+
+For any further information/help please write to piero.fariselli@unito.it
+
+Comments:
+- Why are you spamming the subreddit with like 10 posts
+- 34k € per year??? Holy shit...!
+- The salary is way out of proportion to the experience required for the position
+- Isn't your yearly salary, a bit, on the lower side of the spectrum, for a POSTDOC candidate with ML expertise? It's not like a fresh graduate, we are speaking of a postdoc, whom in normal circumstances should be at least 30 years old. After taxes, the net salary would be around 1900 euros. What can you do with it, can you tell me, while inflation is running rampart and rents nearing 1k mark? How can you live a proper, fulfilling life in order to support your academic path, which is already hugely demanding & wearing on the psychology.
+
+Delete this.
+- You will be hard pressed to find someone to work on that topic for that salary unless it is someone who only cares about the work and is happy to just scrape by.
+- Probably reddit's problem. I've been seeing lots of duplicate comments today as well.
+- The app got crazy. I posted once
+- I did not decide the salary, and i am not the pi. I just posted this here to popularize it.. And the current situation of the research in Italy is not my fault. Complain with the ministry, so we can all enjoy a better treatment :D
+ I fully agree with what you say. Also this is the reason why many Italian researchers go abroad.
+
+Nevertheless, there is this opening and someone might be interested. Similar positions are routinely filled in Italy.
+- If you’re not happy with it either, then stand up and delete this, so they can’t find a position. If they ask you why would it be the case, then you have the position to tell them about your thoughts.
+
+Also im def mailing about salary. Is the mail in the post suitable for a rant, or is that mail yours?
+- Is the mail of a friend of mine, who 1) genuinely cares about this project 2)   is victim of the system too and 3)  had zero power in picking an higher salary.
+
+ But hey, do what you want. I don't know you and i have no idea where are you from or how familiar you are with the Italian system. If you just discovered that is bad, great, i ll send you a cookie via email.
+
+ This offer is actually not that bad w/r to other situations you might find in Italy. Many friends of mine did their fucking phd FOR FREE. System is bad, but ppl still do science for passion and not as a 9-5 job. (Of course this is sad, wrong and it is also the reason why so many Italian researchers go abroad).
+
+Personally I am Also ideologically positioned left than Bakunin, so your principled discourse on good and evil comes with a certain level of annoyance TBH. One thing is the world that should be, the other is what we can get.
+With your standards, all the University in Italy should close (forever) tomorrow. Google it a bit the big picture so you get the full context :D

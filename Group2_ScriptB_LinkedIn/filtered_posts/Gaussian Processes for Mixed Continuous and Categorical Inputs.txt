@@ -1,0 +1,13 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/xihuie/gaussian_processes_for_mixed_continuous_and/
+Title: Gaussian Processes for Mixed Continuous and Categorical Inputs
+
+Content:
+I am dealing with mixed categorical/continuous inputs where uncertainty is key, thus Gaussian Processes would be a great model.
+
+Is anyone aware of a python library where I could use such mixed inputs with GPs, and potentially define my own kernels for each? Or will I have to implement it from scratch?
+
+Thank you
+
+Comments:
+- Gpytorch,

@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/ali-arsanjani_github-googlebayesnf-bayesian-neural-activity-7249403783196106753-tZB5
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Ali Arsanjani, PhD的动态
+Ali Arsanjani, PhD
+
+Director, Google Applied AI Eng| ex-AWS AI/ML Leader| ex-IBM CTO | VP AI/ML | Product Leader | Board Advisor | AI Startup Mentor | Professor | Speaker
+
+1 年
+
+🌍 Unlock the Power of Spatiotemporal Data with BAYESNF 🚀
+
+Use spatiotemporal datasets to track air pollution levels to disease patterns and cloud demand. 
+
+But how do we analyze these massive datasets with both accuracy and efficiency? 
+
+Google Research ‘s Bayesian Neural Field (BAYESNF), is a groundbreaking solution that combines deep neural networks with hierarchical Bayesian inference to:
+
+🔹 Capture complex spatiotemporal dynamics
+🔹 Provide robust uncertainty quantification
+🔹 Perform tasks like forecasting, interpolation, and variography
+
+With demonstrated improvements in climate and public health data, BAYESNF is scalable for datasets with tens to hundreds of thousands of measurements. The best part? It’s available as an open-source package running on GPU/TPU accelerators through JAX.
+
+Check it out here 👉 BAYESNF GitHub
+
+🌍 Unlock the Power of Spatiotemporal Data with BAYESNF 🚀
+
+In today’s world, spatiotemporal datasets—tracking everything from air pollution levels to disease patterns and cloud demand—are rapidly expanding in scale. But how do we analyze these massive datasets with both accuracy and efficiency? Enter Bayesian Neural Field (BAYESNF), a groundbreaking solution that combines deep neural networks with hierarchical Bayesian inference to:
+
+🔹 Capture complex spatiotemporal dynamics
+🔹 Provide robust uncertainty quantification
+🔹 Perform tasks like forecasting, interpolation, and variography
+
+With demonstrated improvements in climate and public health data, BAYESNF is scalable for datasets with tens to hundreds of thousands of measurements. The best part? It’s available as an open-source package running on GPU/TPU accelerators through JAX.
+
+Check it out here 👉 BAYESNF GitHub
+
+https://lnkd.in/gFnBGhWV
+
+#DataScience #AI

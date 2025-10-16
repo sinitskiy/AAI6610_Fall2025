@@ -1,0 +1,33 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hxplq8/best_resources_for_co2_emissions_modeling/
+Title: Best resources for CO2 emissions modeling forecasting
+
+Content:
+I'm looking for a good textbook or resource to learn about air emissions data modeling and forecasting using statistical methods and especially machine learning. Also, can you discuss your work in the field; id like tonlearn more.
+
+Comments:
+- Let me know too if you get such resources.
+- What do you want to forecast? Global emissions or emissions of your car? There are high level and low level approaches. Environmental Agencies publish emission factors such as EPA Emission Factors Hub. There are certain methodologies that companies use to make sure their calculations are correct like Greenhouse Gas Protocol but it’s mostly analytics. I don’t have much time rn to elaborate but I work in climate modelling at F100 so feel free to me ask anything.
+- I’d recommend reading the scientific literature to learn more, as I’m unsure if textbooks for a topic like this exist. A quick google scholar check for “global greenhouse gas emissions” results in a variety of approaches that have been used (with detailed descriptions of their models) and references/links to the data they use
+- The one I use (for vehicle emissions) is EPA MOVES
+- I recently used the STL time series decomposition 
+[(Cleveland,1990)](https://www.wessa.net/download/stl.pdf) for my master's thesis to analyse the development of electricity prices. The publication actually also uses CO2 emissions as an example. The method splits a time series into trend, seasonal and residual components. 
+[(Stefano et.al, 2023)](https://www.mdpi.com/1996-1073/16/3/1371) have used the components e.g. as input for the Facebook Prophet model to predict Italian energy prices. Maybe that would be a starting point.
+- At the national or regional level, most studies or institutions like IPCC use off-the-shelf models like GCAM, MESSAGE, GRAPE, BET, Poles REMIND etc. See pp. 1309 of AR5 Annex II [here](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-ii.pdf). These are models of the entire economy including household sector, different manufacturing industries, services, agriculture and land use, government etc. To simplify, these models try to replicate the entire economies through equations and interdependencies, they validate the model on historical data and then use it to make predictions for the future under possible simplified scenarios like Net Zero achieved by 2050, no policy after 2020, late action starting 2040 etc. 
+
+You can read model documentations to learn more.
+- I mean a very simple place to start is with an ARIMA and be sure to look for structural breaks. Use existing time series data on CO2 emissions to forecast.
+- Have a look into Gaussian processes - we used this for CO2 levels in my stats degree.
+- Looking for global or regional emissions. Like if I wanted to predict GHG emissions in 2030 using previous years. I saw online that CARB board is currently using machine learning but there isn't a lot of info and I was kinda hoping I could find a textbook or a formal guide to learn the approach.
+- Thanks. But is there no textbook available. Was kinda hoping for something more comprehensive
+- These climate science models fall under the field of Integrated Assessment Modeling, Computable General Equilibrium (CGE modeling) or simulation. There are many textbooks on these. 
+
+But I believe this line of inquiry is not what you are looking for, because in these models, future emissions are assumed trajectories (or scenarios of possible futures). The main outcomes of interest are other factors like temperature rise, GDP impacts, unemployment, inflation, damages from climate change etc. 
+
+If you can provide more explanation on what you're looking for, I can maybe suggest relevant stuff.
+- I've done forecasting using fundamental statistical modeling methods. But I've never had any formal training. I was looking for a course that would teach everything I'm supposed to know (don't have any specific needs)
+- In that case, ignore the national/regional emissions modeling through IAMs/CGE models. That's a small, specialized field and not relevant to you. However, ML models are useful to predict a range of climate related variables. 
+
+This SaaS company for example, predicts emission for firms. The idea is that verified emissions are only available for a few firms. But this data can be used to train a model to predict emissions based on factors like industry, sector, size of the firm, financial variables etc. They then sell the predicted emissions data to investors. Many companies have such products, but AFAIK, this is the only one with a publicly available description of their method. [Link](https://www.esgbook.com/wp-content/uploads/2025/01/Filling-in-the-Blanks-April-24-compressed_1.pdf)
+
+Perhaps a climate or sustainability course might be good for you. Learn about the field and then using your data science experience, you can figure out how to apply your skills to the relevant problems.

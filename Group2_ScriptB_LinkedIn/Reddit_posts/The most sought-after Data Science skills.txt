@@ -1,0 +1,83 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/171872q/the_most_soughtafter_data_science_skills/
+Title: The most sought-after Data Science skills
+
+Content:
+I've analyzed 9,261 job openings' descriptions in Data Science, Machine Learning and ML OPS ([https://jobs-in-data.com/blog/machine-learning-vs-data-scientist](https://jobs-in-data.com/blog/machine-learning-vs-data-scientist)) and prepared a list of the most sought-after skills. It turns out that the most desired skill is ... Communication - for all roles.
+
+https://preview.redd.it/ey54l3290ksb1.png?width=2560&format=png&auto=webp&s=7a1746fa0d9ed2293374c54fce312a237d7d2eda
+
+Communication actually surpasses Python in popularity, which I am really shocked about because it seems that for a Data Scientist, the most frequent communication should be with a computer.
+
+https://preview.redd.it/b7ozarxq0ksb1.png?width=2560&format=png&auto=webp&s=3e8fc32e864ba4b0ed0edaf4e56daee4cadc6b62
+
+About the dataset: 9,261 Job openings crawled from 1605 companies worldwide, between June-Sep 2023.
+
+Comments:
+- >for a Data Scientist, the most frequent communication is with a computer
+
+is this really true for your job? in mine, i'm a data analyst, and i would say 70% of my time is spent on eli5-ing methodologies and findings for senior management so that they can have "data-driven decisionmaking". 
+
+plus when senior management has a certain vision that the evidence contradicts, i spend even more time explaining the methodology behind the findings, to convince senior management to not just run off with a statistically flawed finding. 
+
+so yeah, communication is the bulk of my work and i'm not surprised that all the JDs want it.
+- Be careful - a lot of job descriptions are not accurate for what is actually done on the job or even what is needed in the role. Drafted by HR or a hiring manager that doesn't understand ML. "Excellent written and oral communication" is part of a template and probably included on every role posted in a company.
+- “ for a Data Scientist, the most frequent communication should be with a computer.”
+
+Maybe the most frequent communication is to a computer but the most important communication will be to humans who aren’t data scientists- the people who want a data scientist to help them and people who can help data scientists because they understand the problem the best ( sometimes the same people, sometimes not).
+- Communication is an essential skill for almost \*any\* technical job imho. Without functional communication skills, it doesn't matter how good you are in terms of "hard" skills like coding: your managers and peers won't understand what you are trying to say, and if you can't get a message across you won't get recognition or promotions or better opportunities.
+- There's a pretty glaring issue here imo (one that I'm disappointed to see given the nature of this sub):
+
+What is the base-rate for requests for communication skills? If *every* job posting (data science or otherwise) requests strong communication skills, then you're not saying anything about data science in particular. 
+
+You need a null model or control sample that accounts for the global distribution of skill requests. I'm sure you'd find that, while most DS postings call for communication skills, DS postings don't call for them at higher rates than non-DS postings.
+- [deleted]
+- How did you extract skills from postings? Topic modeling? You labeled some jobs and did supervised learning to find those skills? Regex?
+- As someone working in the field, a couple of things make me a bit cynical of this 
+
+No. 1 is the claim that 15% of ML engineer jobs care about SQL experience - in reality pretty much all commercial jobs will require you to make at least relatively advanced SQL queries yourself against DBs (that can be modern cloud based or legacy on prem) to curate a dataset for the projects you propose (unless you have a dedicated analytics engineer ready to provide these at any moment which is unlikely unless the job is very high level at a very well funded company)
+
+No. 2 Data visualisation being so low on the first slide - when you are working with stakeholders, unless you are in an extremely tech-y business, visualisation in a comprehensible manner (intuitive for people with fairly poor intuitive maths) is critical for you to get anything done in most businesses 
+
+These stats feel like they are from a ‘i work in a cutting edge tech driven company’ (in reality very few companies) perspective - I’m sure many others working in the field in normal companies would agree with me
+- but but but machine learning engineering is just deploying models that data scientists build /s
+
+It's fairly clear that the role of a data scientist moving forward is data analyst + statistician
+- “LLM” lol ok. Would put money that very few companies are able to monetize llm at this moment
+- Is it really worth putting communication on a resume? Isn't that just a filler that applies to literally any application?
+- For the first figure, how many job ads don't mention any of the topics (except for communication and statistics)?
+
+Some of those categories have to be are correlated and the figure could be deceptive. Most likely job ads mentioning deep learning or computer vision are going to mention PyTorch or TensorFlow. Thus, people might think "oh, I need to learn deep learning" because 20-30% of jobs say that, but I bet they also mention a lot of the other items in there too. So in the end, it just means that 80% of job do not include deep learning, PyTorch, tensorflow, keras, etc.
+
+Also, why would you include Scikit-Learn there when you have a separate one for programming?
+
+It's also weird "machine learning" is not there but statistics is?
+- Scratch?!
+- “Most communication is with a computer”, wtf? This isn’t even remotely true. I work in a a senior role and around 70% of my work is getting priorities straight and discussion with management. 
+
+So yeah, I think the most sought after skill should be communication.
+- Thank god I made the mistake of getting a Bachelors in Communication then lol. (And later a Masters in Data Science.)
+
+I probably spend as much time thinking about how to communicate my insights/etc to stakeholders as I spend actually finding them. Even when I’m presenting to other data scientists, they don’t always follow what I’m saying. Bringing people along on the journey in a way that makes sense for their brain is a skill.
+
+I was also listening to a podcast where Cassie Kozyrkov called soft skills “skills that can’t be automated.” Which is why you need to make sure the people you hire have them.
+- This is why I hire classically trained Roman orators for data science roles.
+- PhD is a big investment in terms of time, money and effort and people go bonkers during those 5 years. If you're young then go for it otherwise do Masters and get a job which will give higher ROI's as well.
+
+
+Python and SQL are easy to pick up but SQL takes time to master it for advance level.
+- It should not be surprising if you work as DS.
+
+
+We are the people with the most communication in the whole company. 
+
+
+Most of the hard problems can be solved with domain knowledge which can be extracted from experts in the company or outside of the company.
+
+
+We also communicate a lot to be able to determine priorities and problems to be solved, and then to find all the data to solve it.
+
+
+Yep, we are the social hubs of the company, HR is always surprised with gossips and HR info I know.
+- I've had 3 jobs since graduating and they all asked for tensorflow/pytorch with in depth knowledge of DNNs and yet I've still only used DNNs for fun personal passion projects.
+- Hey, how and where did you manage to scrape job posting data? I’m looking into doing something similar for a uni project but I get error responses (blocks) from sites like indeed

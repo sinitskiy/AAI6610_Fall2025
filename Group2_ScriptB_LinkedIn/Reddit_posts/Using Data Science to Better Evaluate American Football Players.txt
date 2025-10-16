@@ -1,0 +1,15 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c6h2e9/using_data_science_to_better_evaluate_american/
+Title: Using Data Science to Better Evaluate American Football Players
+
+Content:
+ Dive into the transformative power of data science in the world of American football with Eric Eager, PhD's "Using Data Science to Better Evaluate American Football Players." In this presentation, Dr. Neubig, an expert in machine learning and natural language processing, showcases how the sport is evolving through advanced analytics. 🏈💻 From play-by-play and charting data to the revolutionary potential of player tracking data, discover the cutting-edge techniques that are setting the stage for a new era in football analysis.   
+[https://www.youtube.com/watch?v=8lwFUO\_yj7c](https://www.youtube.com/watch?v=8lwFUO_yj7c)
+
+Comments:
+- commenting on this so I don't forget it. This looks amazing so far!
+- hmm, I have done several projects similar to this! The process like processing data, cleaning, set up env. Calculate and explore the insight always makes me eager! Good Luck
+- Oh cool
+- Incredible
+- Cool
+- same

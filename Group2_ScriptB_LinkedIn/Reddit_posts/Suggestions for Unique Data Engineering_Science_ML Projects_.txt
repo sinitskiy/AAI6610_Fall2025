@@ -1,0 +1,105 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fpwg53/suggestions_for_unique_data_engineeringscienceml/
+Title: Suggestions for Unique Data Engineering/Science/ML Projects?
+
+Content:
+Hey everyone,
+
+I'm looking for some project suggestions, but I want to avoid the typical ones like credit card fraud detection or Titanic datasets. I feel like those are super common on every DS resume, and I want to stand out a bit more.
+
+I am a B. Applied CS student (Stats Minor) and I'm especially interested in Data Engineering (DE), Data Science (DS), or Machine Learning (ML) projects, As I am targeting DS/DA roles for my co-op. Unfortunately, I haven’t found many interesting projects so far. They mention all the same projects, like customer churn, stock prediction etc.  
+  
+I’d love to explore projects that showcase tools and technologies beyond the usual suspects I’ve already worked with (numpy, pandas, pytorch, SQL, python, tensorflow, Foleum, Seaborn, Sci-kit learn, matplotlib).
+
+I’m particularly interested in working with tools like PySpark, Apache Cassandra, Snowflake, Databricks, and anything else along those lines.
+
+Edited:
+
+So after reading through many of your responses, I think you guys should know what I have already worked on so that you get an better idea.👇🏻
+
+This are my 3 projects:
+
+1. Predicting SpaceX’s Falcon 9 Stage Landings | Python, Pandas, Matplotlib, TensorFlow, Folium, Seaborn, Power BI
+
+• Developed an ML model to evaluate the success rate of SpaceX’s Falcon 9 first-stage landings, assessing its viability
+for long-duration missions, including Crew-9’s ISS return in February 2025.
+• Extracted and processed data using RESTful API and BeautifulSoup, employing Pandas and Matplotlib for
+cleaning, normalization, and exploratory data analysis (EDA).
+• Achieved 88.92% accuracy with Decision Tree and utilized Folium and Seaborn for geospatial analysis; created visualizations with Plotly Dash and showcased results via Power BI.
+
+2. Predictive Analytics for Breast Cancer Diagnosis | Python, SVM, PCA, Scikit-Learn, NumPy, Pandas
+• Developed a predictive analytics model aimed at improving early breast cancer detection, enabling timely diagnosis
+and potentially life-saving interventions.
+• Applied PCA for dimensionality reduction on a dataset with 48,842 instances and 14 features, improving
+computational efficiency by 30%; Achieved an accuracy of 92% and an AUC-ROC score of 0.96 using a SVM.
+• Final model performance: 0.944 training accuracy, 0.947 test accuracy, 95% precision, and 89% recall.
+
+3. (In progress) Developed XGBoost model on ~50000 samples of diamonds hosted on snowflake. Used snowpark for feature engineering and machine learning and hypertuned parameters with an accuracy to 93.46%. Deployed the model as UDF.
+
+
+Comments:
+- There's a saying that 90% of data science is data cleaning.  Any clean data set that is publicly available will already have been modeled a hundred times.  The only way to do something 'unique' is to create a new dataset yourself, which means the effort of finding it and cleaning it.
+- Go around the world. Find a problem that bothers you. Could be a website that asks you to fill out too many boxes and you instead want to just upload a image and let it autofill. Could be any thing. If possible classify the problem as segmentation, NLP, CV etc. 
+Identify a dataset online on kaggle or some other site with data relevant to your problem. Identify a model which will solve your particular unique problem. Compare approaches and define a criteria for evaluation.
+
+
+That's the only way to build something unique. If it's on the internet it's been done.
+- Solve something you are actually curious about knowing the answer to. The process of sourcing and cleaning the data is more realistic and unique than anything.
+- What are you passionate about.  What domain are you already a world-class subject matter expert in?
+
+For example I play go. We obviously already have alphago, but there's other less well explored areas of go, such as the assessment of how tricky a tsumego problem is.
+
+Pretty much any other DE or DS would be starting from scratch if that were handed that problem, but I've had years (decades) of studying go problems.  I also know off the top of my head what is broadly out there and where to find it.  
+
+Perhaps you are really into baking, or homebrew, or you parents own a landscaping company... If there's something you can skip the EDA of then you'll be generating interesting results immediately.
+
+Just remember to not scale difficulty the problem just because you are an expert.  Deliver something that is dead simple because you know the subject well, rather than trying to tackle it at a more advanced level.  
+
+For example in Othello you win if you have more than 32 pieces on the board at the end.  A complete beginner might approach it as minimax on the number of pieces.  Someone that has played Othello might approach it as minimax on the number of legal moves.  That flip in understanding causes you to model the problem better; which is the point of this whole exercise.
+- How about kaggle prize competitions?
+
+Last year for the NFL was metrics development to characterize tackling ability/likelihood based off of motion tracking data.
+
+The possibilities are endless on this one for a portfolio project. How about:
+
+ * Surveying the proposed results, and putting your own twist on the problem ? 
+ * Visualizing (animating) top plays to support/contradict your review and/or analyses?
+* Visualizing top plays in 3D, using pygame?
+
+Would definitely call you for an interview, seeing either of these implemented with high quality.
+- You can check out some basic NLP projects on sentiment analysis and CV projects on object detection. If you find either of them interesting, you can go deeper for more advanced problem statements/datasets on kaggle. You can also look for ML research labs that look interesting around the world and get a position as a research assistant and learn more on a specific application of these technologies. For example, if you find that you’re interested in basic object recognition, you can pick up some biomedical CV datasets on kaggle and apply to some research labs that work on MRI brain scans and try to predict the possibility of a particular disease based on the size of a particular brain region. This is just a very very specific example. DS is a very broad field with applications in just about any industry. Start from the basics and you can build on what interests you in any direction
+- Just some ideas of the top of my head. 
+
+You could create sythetic data with ML. 
+
+Use the spotify api to predict song popularity etc. 
+
+Use a web scraper to collect housing data and predict rent price. Enrich the data with distance to nearest hospital, poverty rate, criminal statistics etc. 
+
+Predict wine ratings from alcohol content, region, year etc.
+- I found one org in my town, which helps victims of domestic violence. These guys had a ton of real life data but they didn't know how to use them, except for mandatory statistic report they had to build once a year for government. I volunteered to automate that process plus provided additional stats and even some predictions using ML.
+It was not easy to get my hands on data, but eventualy, after signing some papers that I won't share any details and outcomes, I got that data (dirty as shit).
+It looks really nice in my CV.
+- kaggle
+- Data Engineering (DE), Data Science (DS), or Machine Learning (ML) - those are 3 very different fields. What is the actual role you're looking for? I assume since you mentioned resumes you are job hunting but are you wanting to be more of a data scientis or data engineer? What was your degree? Do you have experience in any of those roles?
+- Ideally I would say create your own dataset (will show DE skills) using an API, web scraping, or something else. After, do the EDA and FE yourself, define the problem, set the metric, and build the model. End it with some sort of presentation/slides and a clean notebook. This is what I did and it worked extremely well, I was able to take it to my DS interviews and present it.
+
+  
+To give an example I did this: Used the Steam API to gather users, their friends, and the games they play, then made a recommender model to suggest new games based on their previous ownership and friend's gameplay. I noted how this model would be useful, how it was different than other approaches, and discussed assumptions of the data.
+- I'm a bot, *bleep*, *bloop*. Someone has linked to this thread from another place on reddit:
+
+- [/r/datascienceproject] [Suggestions for Unique Data Engineering\/Science\/ML Projects? (r\/DataScience)](https://www.reddit.com/r/datascienceproject/comments/1fqbyiu/suggestions_for_unique_data_engineeringscienceml/)
+
+&nbsp;*^(If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.) ^\([Info](/r/TotesMessenger) ^/ ^[Contact](/message/compose?to=/r/TotesMessenger))*
+- If you are into weather forecasting, NOAA and USGS websites can give large amounts of data to play with. Log monitoring is another one - when someone has a lot of servers, monitoring, finding a pattern, predicting events that could lead to downtime.
+- Learn web scraping and go get data related to your interests to explore. This will be more beneficial than using curated datasets.
+- my masters thesis, i built a data set from scratch, used the data set, then cleaned the data as much as i could (half the time spent doing this) then used the clean set as input parameters to search, screen scrape more data to build attributes to the data set, then analyzed the output in a variety of ways - using most of the methods they taught us in school - start to finish it was 6 months of work, 25 pages, and one helluva learning experience
+
+i'm not going to elaborate on specifics because its my story to tell.
+- We've just experienced societal upheaval based on consumer products including groceries jump in price, and CEOs claiming the root case was supply chain disruption.   What shocks me is that the companies essentially ignored established principles of economics, namely price elasticity (eg, raise the price above this level and demand drops so much you get reduced revenue.)    
+It would be awesome to gather price data for relevant baskets of goods and prove how much of their statements are greed /lies and if there are any cases where the price increase was rooted in cost fundamentals, and whether the law of elasticity is broken or not.  
+Same thing for fast food --- now they're furiously reducing prices since consumer behavior seems to have tanked demand more dramatically than groceries.
+- In general, you'll find that bioinformatics tends to be fertile ground for data science projects, and CS-oriented folks often avoid it because of the perception that you need to know lots of biology to get started in it (you don't). Another general comment: high performance in terms of AUC often matters less than working on a problem that truly matters.
+- Kaggle
+- Hi mate I’m actually looking for someone to join me on a project I’m working on you might be interested in. It is in sports analytics in rugby but as there is limited data available I am trying to build a proprietary computer vision model to gather the data. This data would then be used to build a betting algorithm but the project is more for fun and any money gained is just a plus. Let me know if you are interested.
+- [deleted]

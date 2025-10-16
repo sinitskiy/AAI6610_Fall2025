@@ -1,0 +1,48 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ixt6nd/is_there_a_way_to_do_pose_estimation_without/
+Title: Is there a way to do pose estimation without using machine learning (no mediapipe, no openpose..etc)?
+
+Content:
+any ideas? even if it's gonna be limited.
+
+it's for a college project on workplace ergonomic risk assessment. i major in production engineering. a bit far from computer science.
+
+i'm a beginner , i learned as much as i can about opencv and a bit about ML in little time.  
+started on this project a week ago. i couldn't find my answer by searching, so i decided to ask.
+
+Comments:
+- I recommend checking out the opencv courses, you'll get the answer to your questions!
+- Contactless or not?
+- Check out the perspective-n-point algorithm or markers like ArUCo.
+- Why?  What's the challenge with using a pre built model?  You call it like an API.
+
+Any method that uses symbolic code will be godawful and likely present you the same challenges in terms of interpreting the output.
+- sure, put on a motion capture suit. what's the point?
+- No
+- A t-shirt with QR code 😂
+- I'm confused why you wouldn't want to use machine learning? It's like "Can anyone help me build a table, but only using techniques from before the 1500's" 
+
+Is it about compute limitations? If so, you should verify first that no ML technique will run on your compute budget.
+- Don’t know if I get it right…
+Maybe Kalman Filter?
+- I'm a beginner , i learned as much as i could in a week. that's why Im asking
+- not sure what you mean , can you elaborate?
+- will do . thx.
+- i like the idea, can you elaborate? it's for a project, but im not a cv major, so im trying my best
+- how can it be used in pose estimation? i know it can be used in tracking objects through occlusions.
+- That's a perfect place to start.
+- Contactless motion capture = you aren't really allowed to put any IMU or markers on the person who's pose is being estimated.
+
+The other should be understandable now.
+- this post seems pretty low-effort because you didn't care to specify your goals or even limitations. what is the reason you don't want to use anything ml-based? 
+
+many problems in CV can be solved with well selected sensors. cameras have the advantage that they are easy to use, cheap and are separate from the subject to measure, but interpreting images is the difficult part. if you can pick up the required signals with some other sensor that's fixed to the human you might have an easier life. motion capture suits can function in different ways, some use infrared beacons that are picked up by cameras, another option are acceleration sensors mounted to different body joints. sometimes even a phone in the subjects pocket can be enough. 
+
+think about the data you need and what limitations your use case implies.
+- Than I got it wrong sorry. Thought you want to estimate position in space. Translation flaw of me
+- contactless is preferable but both are acceptable. the purpose is **Occupational ergonomics risk assessment**.  
+so maybe we can figure a way to get the workers to wear something, or modify their work uniform
+- the reason is , the professor doesn't like it.  
+it's not "low-effort" , i try to keep it short so people would read it.   
+  
+thanks for your suggestions.

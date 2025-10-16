@@ -1,0 +1,133 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/th1ea5/r_deep_batch_active_learning_for_regression/
+Title: [R] Deep Batch Active Learning for Regression
+
+Content:
+(First author here.) Are you interested in improving the sample-efficiency of neural network regression through active learning? Then, our new paper might be all you need 🙂
+
+**Paper:** [https://arxiv.org/abs/2203.09410](https://arxiv.org/abs/2203.09410)
+
+**Code:** [https://github.com/dholzmueller/bmdal\_reg](https://github.com/dholzmueller/bmdal_reg)
+
+**Short summary:** Using random projections of NN gradients as features and running a simple clustering method on these works really well, is scalable and convenient to use through our code.
+
+**Long summary:** We study pool-based batch mode deep active learning (BMDAL) for regression: We start with a small labeled training data set and repeatedly select a batch of unlabeled data from a large pool set for labeling. We want to select large batches since NN training can be slow.
+
+&#x200B;
+
+[Deep Batch Active Learning loop](https://preview.redd.it/twms5xqh45o81.png?width=1200&format=png&auto=webp&s=2f03d9a103aa256de0b812636883e01986cd6813)
+
+We propose a benchmark with 15 large tabular data sets, available in our code, on which we achieve a new state-of-the-art performance. The plot below shows the average of the log RMSE over all data sets for (regression adaptations of) existing methods and our new method. Note that an absolute reduction by 0.01 in the arithmetic mean log RMSE corresponds to a relative reduction by \~1% in geometric mean RMSE. Hence, our method achieves an average RMSE reduction of \~20% over random selection at the end.
+
+&#x200B;
+
+https://preview.redd.it/2ldqzzvp45o81.png?width=1346&format=png&auto=webp&s=116cc905a3b93175ecf55687f98bc57d6bc6b82a
+
+All compared methods are convenient to use: They work with almost any trained NN, do not require ensembling, and scale to large pool set and batch sizes. There are also other methods based on Dropout, ensembling or auxiliary loss functions, but they are less convenient to use.
+
+We also propose a framework for building BMDAL methods for regression: First, choose a base kernel representing your NN. Second, optionally apply kernel transformations, e.g. for efficiency or to represent uncertainties. Third, use the resulting kernel with a selection method.
+
+&#x200B;
+
+https://preview.redd.it/omvypx9l55o81.png?width=919&format=png&auto=webp&s=97b5581653bd37c002997be79292fef0a83b0e23
+
+For base kernels, last-layer features of trained networks are often used. We compare these to simple baselines: input features and the infinite-width NNGP kernel. Alternatively, we propose to use a full gradient kernel (also known as finite-width Neural Tangent Kernel).
+
+&#x200B;
+
+https://preview.redd.it/sgfg4akq55o81.png?width=1152&format=png&auto=webp&s=41c13f41573569a136d7dae77339b69e58ed2cd5
+
+We consider kernel transformations corresponding to various Bayesian methods, for example computing the posterior covariance kernel of a Gaussian Process. Moreover, we propose to use random projections (sketching) for the gradient kernel to make computations more efficient.
+
+&#x200B;
+
+https://preview.redd.it/veo17lxv55o81.png?width=1561&format=png&auto=webp&s=7cd07b474b384fc386cb9424ef64818ddec8c0b8
+
+From a Bayesian perspective, some combinations of base kernels and kernel transformations are related to different Laplace approximations for Bayesian NNs, for example with last-layer or (sketched) generalized Gauss-Newton Hessian approximations.
+
+We consider iterative selection methods with two modes: In P-mode, model uncertainty has to be represented through kernel transformations. In TP-mode, the training set is considered a part of the selected batch, and diversifying the batch favors inputs with large uncertainty.
+
+&#x200B;
+
+https://preview.redd.it/geqzxvl765o81.png?width=1258&format=png&auto=webp&s=935ba8eff8a56f48b828116c48b64d8ae5b9a801
+
+We implement random selection, naive active learning (MaxDiag), two uncertainty-based methods (MaxDet and MaxDist), a distribution-based method (FrankWolfe), and two clustering-based methods (KMeansPP and LCMD). Here, LCMD is newly proposed by us.
+
+&#x200B;
+
+https://preview.redd.it/fuvqpssa65o81.png?width=1568&format=png&auto=webp&s=b77463b145d5b361e4aa1a3d85c65de7a8a20e7c
+
+LCMD (largest cluster maximum distance) selects the next point as the maximum-distance point in the cluster with the largest sum of squared distances. Unlike in the plot below, the distance measure in our experiments is derived from the given (transformed) kernel.
+
+&#x200B;
+
+https://preview.redd.it/n12ykb8e65o81.png?width=1600&format=png&auto=webp&s=b9031d1e5f0253dc962acb953d70232f85f23f7e
+
+We can represent (regression adaptations of) many existing methods in our framework. The results here and in Figure 1 above come from a three-layer fully-connected NN. We usually report results for the ReLU activation function, but here we also report results for SiLU.
+
+&#x200B;
+
+https://preview.redd.it/ax9p3o7t65o81.png?width=1558&format=png&auto=webp&s=1b7d4cb5f2317d62cba02ee2702625fa4c17c1f5
+
+Picking different kernels and modes can make a considerable difference. For this table and the plots below, we selected the best kernels and modes (in terms of average log RMSE across data sets) for each selection method, excluding slow but similar-performing configurations.
+
+&#x200B;
+
+https://preview.redd.it/rh4yctmh75o81.png?width=1584&format=png&auto=webp&s=87723e734502366e447081fbae584bf97bab71dc
+
+Averaged over our benchmark data sets, the sketched full-gradient kernel achieves better results than the last-layer kernel for all selection methods. The linear and NNGP kernels, which do not depend on the trained network, perform much worse.
+
+Note that the runtimes for selecting a batch of 256 samples from a pool set with \~100k samples with a training set size of \~2k samples are less than a second on a RTX 3090 GPU.
+
+For the logarithms of MAE, RMSE, 95% quantile, 99% quantile and maximum error (MAXE), we take the average over benchmark data sets and plot the learning curves during BMDAL. LCMD-TP wins on all metrics except MAXE, where the uncertainty-based MaxDist and MaxDet excel. The performance on MAXE could also be interesting if you expect strong distribution shift between pool and test data.
+
+&#x200B;
+
+https://preview.redd.it/5jbqrryp75o81.png?width=808&format=png&auto=webp&s=33a361b47e7c36c8b5425379a49b2a1e747ac3d7
+
+From learning curves on individual data sets, we see that the utility of BMDAL over random selection varies a lot between data sets, although the best methods (LCMD-TP and KMeansPP-P) are never much worse than random selection. Can we predict the utility of BMDAL in advance?
+
+&#x200B;
+
+https://preview.redd.it/40igtqqj85o81.png?width=824&format=png&auto=webp&s=cc6bd6d0ae11f36cdc2df5762a4ce72e79237d0c
+
+Across our benchmark, we find that on data sets with larger quotient RMSE/MAE on the initial training set, LCMD-TP typically yields a larger benefit over random selection. Intuitively, the more the errors vary between samples, the more can be gained by smart selection.
+
+&#x200B;
+
+https://preview.redd.it/ik3x5u0o85o81.png?width=1384&format=png&auto=webp&s=190da99d8f09be7e05d11d4d4ed6a9b70681159d
+
+By how much does the final accuracy of BMDAL methods deteriorate if we use fewer steps with larger batch sizes, such that we end up with the same number of points? The plot below shows that all methods except naive active learning are fairly robust to larger batch sizes.
+
+&#x200B;
+
+https://preview.redd.it/3z1vgy9s85o81.png?width=805&format=png&auto=webp&s=02a81bccd83cea62aa0403a0dead5c1329e23f65
+
+Our BMDAL framework is implemented in PyTorch and is easy to apply to custom NNs, as explained here: [https://github.com/dholzmueller/bmdal\_reg/blob/main/examples/using\_bmdal.ipynb](https://github.com/dholzmueller/bmdal_reg/blob/main/examples/using_bmdal.ipynb)
+
+&#x200B;
+
+https://preview.redd.it/lt8ns66w85o81.png?width=1071&format=png&auto=webp&s=3c41ce9789bb7eb5a4c8bcfb2431c6da492af69b
+
+This explanation has been copied from my Twitter thread: [https://twitter.com/DHolzmueller/status/1504792901657714689](https://twitter.com/DHolzmueller/status/1504792901657714689)
+
+Comments:
+- I see you've posted a GitHub link to a Jupyter Notebook! GitHub doesn't 
+render large Jupyter Notebooks, so just in case, here is an 
+[nbviewer](https://nbviewer.jupyter.org/) link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/dholzmueller/bmdal_reg/blob/main/examples/using_bmdal.ipynb
+
+Want to run the code yourself? Here is a [binder](https://mybinder.org/) 
+link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/dholzmueller/bmdal_reg/main?filepath=examples%2Fusing_bmdal.ipynb
+
+
+
+------
+
+^(I am a bot.) 
+[^(Feedback)](https://www.reddit.com/message/compose/?to=jd_paton) ^(|) 
+[^(GitHub)](https://github.com/JohnPaton/nbviewerbot) ^(|) 
+[^(Author)](https://johnpaton.net/)

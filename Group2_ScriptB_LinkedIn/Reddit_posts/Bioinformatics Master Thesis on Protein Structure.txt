@@ -1,0 +1,27 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/18i6ikt/bioinformatics_master_thesis_on_protein_structure/
+Title: Bioinformatics Master Thesis on Protein Structure
+
+Content:
+Hi everyone. At the moment I am starting my final year of my masters in Bioinformatics. I'm starting my thesis, and I'm struggling.
+
+My work aims to develop a machine learning based framework to classify proteins based on their structural features. Since there isn't much information about this topic I'm feeling very overwhelmed.
+
+I've been reading some articles of geometric-based deep learning, like dMASIF, and graph-based embeddings, but I can't really understand how to use it in my work.
+
+Any suggestions?
+
+Comments:
+- Start with Foldseek. You can also try looking at language models (ESM or ProstT5) with structural embedding.
+- Hey, I can’t help you in the specifics as I don’t know but because you said you feel overwhelmed.
+
+I think it would help a lot if you defined very clearly what is the goal for top marks. What is the output that you would be proud of. Then define what would be something acceptable ( I am not saying bad, emphasis on acceptable). And then make a timeline for the first option. Good luck! It can get frustrating but you lol get through it
+- First step would be to clearly define your research objective. You want to classify proteins in terms of what? Family? Function? Structure? Localization?
+
+Then, you want to review the state of the art. How accurate are existing models (you will want to outperform those)? What machine learning algorithms and representations are they built around?
+
+How familiar are you with deep learning?
+
+If you are not very familiar, the first step would be to familiarize yourself with core concepts: general machine learning methodology, neural networks, self-attention, graph neural nets, transformers (more relevant for sequence-based tasks, but conceptually important), etc.
+
+You will struggle reading those applied papers if you don't have a basic understanding of deep learning topics.

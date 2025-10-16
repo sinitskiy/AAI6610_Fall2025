@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1iuzgdz/researchers_have_developed_an_aipowered_web/
+Title: Researchers have developed an AI-powered web system that detects and classifies viruses in biological samples without labels or chemical markers. Using machine learning, it analyzes viral structures, providing a fast and accurate diagnostic tool for various infections.
+
+Content:
+
+
+Comments:

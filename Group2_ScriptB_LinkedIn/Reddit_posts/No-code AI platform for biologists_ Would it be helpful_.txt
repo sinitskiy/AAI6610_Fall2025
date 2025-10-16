@@ -1,0 +1,12 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/jekkto/nocode_ai_platform_for_biologists_would_it_be/
+Title: No-code AI platform for biologists? Would it be helpful?
+
+Content:
+A team of like-minded people and I are working on a no-code AI development platform. The goal is make machine learning easier by eliminating code routine.  I'm curious whether it would be helpful for biologists with no prior machine learning expertise.  At the moment we implemented auto-training of  object detection, image-classification and image tagging. Should we make "sequence-to-sequence" auto-train models? Would it be helpful to people?  
+ Any thoughts, please share
+
+Comments:
+- Sequence to sequence as in comparing DNA sequences? Can you clarify what you mean by that?
+
+Theres tons of stuff biologists would love to use machine learning for.

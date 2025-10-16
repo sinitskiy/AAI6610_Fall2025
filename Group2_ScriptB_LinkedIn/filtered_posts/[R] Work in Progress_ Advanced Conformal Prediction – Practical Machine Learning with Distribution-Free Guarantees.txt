@@ -1,0 +1,23 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1k9qg7d/r_work_in_progress_advanced_conformal_prediction/
+Title: [R] Work in Progress: Advanced Conformal Prediction – Practical Machine Learning with Distribution-Free Guarantees
+
+Content:
+Hi r/MachineLearning community!
+
+I’ve been working on a deep-dive project into modern conformal prediction techniques and wanted to share it with you. It's a hands-on, practical guide built from the ground up — aimed at making advanced uncertainty estimation accessible to everyone with just basic school math and Python skills.
+
+Some highlights:
+
+* Covers everything from classical conformal prediction to adaptive, Mondrian, and distribution-free methods for deep learning.
+* Strong focus on real-world implementation challenges: covariate shift, non-exchangeability, small data, and computational bottlenecks.
+* Practical code examples using state-of-the-art libraries like *Crepes*, *TorchCP*, and others.
+* Written with a Python-first, applied mindset — bridging theory and practice.
+
+I’d love to hear any thoughts, feedback, or questions from the community — especially from anyone working with uncertainty quantification, prediction intervals, or distribution-free ML techniques.
+
+(If anyone’s interested in an early draft of the guide or wants to chat about the methods, feel free to DM me!)
+
+Thanks so much! 🙌
+
+Comments:

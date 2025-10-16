@@ -1,0 +1,60 @@
+URL: https://www.linkedin.com/posts/pushpendra-singh-16b091261_machinelearning-deeplearning-bayesian-activity-7366544930044854274-kwhC
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+PUSHPENDRA SINGH的动态
+PUSHPENDRA SINGH
+
+Sophomore .. IIT GUWAHATI
+
+1 个月
+
+🚀 Bayesian Neural Network from Scratch (with NumPy + MCMC) 🚀
+
+Over the past few weeks, I’ve been working on building a Bayesian Neural Network (BNN) from scratch using only NumPy — no deep learning frameworks! This project gave me a chance to contrast frequentist neural networks with Bayesian approaches, and the results were very insightful.
+
+🔹 Why Bayesian Neural Networks?
+Traditional neural networks give us point estimates for weights and single-value predictions. While powerful, they don’t naturally provide uncertainty estimates.
+
+In contrast, BNNs treat weights as probability distributions, giving us:
+✅ Built-in uncertainty quantification (both epistemic & aleatoric)
+✅ Better regularization (priors on weights)
+✅ More robust decision-making in critical domains (autonomous driving, healthcare, finance, robotics, etc.)
+
+🔹 How I Built It
+
+Implemented a fully connected neural network with backpropagation and softmax/Cross-Entropy.
+
+Used Markov Chain Monte Carlo (MCMC) with a Langevin-informed Metropolis-Hastings algorithm to sample from the posterior distribution of weights.
+
+Designed functions to encode/decode parameters, evaluate proposals, and compute posterior predictive distributions.
+
+
+🔹 Results on the Iris Dataset
+
+Frequentist NN: Train Accuracy = 98.33%, Test Accuracy = 100%
+
+Bayesian NN: Train Accuracy ≈ 99.1%, Test Accuracy ≈ 96.7%
+
+
+While the frequentist NN hit perfect accuracy on the test set (likely due to the small dataset), the BNN provided richer insights:
+
+Distribution of predictions (not just a single point)
+
+Confidence intervals for classifications
+
+Built-in robustness against overfitting
+
+
+🔹 Beyond Classification
+I also extended this work to regression tasks — and here the Bayesian approach really shines. By providing prediction intervals along with mean estimates, the BNN captures uncertainty in a way standard regression models canno

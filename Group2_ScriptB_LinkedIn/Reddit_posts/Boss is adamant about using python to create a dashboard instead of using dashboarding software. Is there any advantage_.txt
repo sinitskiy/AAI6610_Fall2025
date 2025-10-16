@@ -1,0 +1,68 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1do88tl/boss_is_adamant_about_using_python_to_create_a/
+Title: Boss is adamant about using python to create a dashboard instead of using dashboarding software. Is there any advantage?
+
+Content:
+We use palantir at my job to create reports and dashboards. It also has Jupyter notebook integration. My boss had asked me if we can integrate machine learning into our processes, and instead of saying no, I messed and explained to him how machine learning works. Now he wants me to start using solely python for dashboards because “we need to start taking advantage of machine learning”. But like, our dashboards are so simple that it feels like python would be overkill and overly complex, let alone the fact we have data visualization software. What do?
+
+Comments:
+- Why wouldn't you do the ML part in Python.... then have power BI/excel  query & display the output?
+- Can you convince your boss that your dashboard software can also do machine learning?
+- Could he mean using ML for forecasting and displaying that on a dashboard?
+- I think you both are showing signs of myopathy.
+- Speaking from my own experience at my company, we don’t do any data science at all, but we have massive datasets and have used Tibco Spotfire extensively. It’s similar to Tableau. 
+
+There’s a way to explain the maintenance cost of things like python dashboards vs. “off the shelf” dashboard solutions. Any custom programmed solutions is going to be expensive in the long run. More expensive than dashboarding software? That’s a complicated answer and probably it depends more specifically on your context. For us, Spotfire is expensive in monetary terms, but relatively straightforward to maintain and low overhead personnel-wise; which seems to be the overriding concern at my company.
+- Can we switch?
+- As others have said, you can use Python and SQL as the backend under a unifying framework like Airflow or whatever. Then you can have a DAG that includes nodes that do everything from simple SQ” queries to getting inferences from ML models.
+
+Then you can use standard dashboarding software as the front end.
+
+In general you want move away from prescriptive conversations with stakeholders about implementation details to open ended conversations about the ultimate impact that they want to have.
+- Do a machine learning in Jupyter and display the results in the other thing.    
+Then go "ta-da!" And twirl in a circle.
+- You need to rephrase the request so you can articulate how you're already using machine learning by using Palantir for your dashboards. Based on what I know of Palantir (which isn't much), they already use a natural language algorithm for some of their more advanced AIP components and it should already employ machine learning in generating the most basic of EDA faster.
+
+You could still use Palantir for dashboard creation, but use their Foundry to run custom machine learning models on the data you have creating a workflow that goes data > python processing > dashboard. You wouldn't need to create dashboards from scratch, but doing more with python and Foundry integration might mean being able to create custom models and data your dashboards can work with.
+
+Your boss needs a "win" with "machine learning", at this point the request is for you to figure out how your boss can go back to his superiors with an actionable plan that puts the phrase "machine learning" front and center without completely changing your existing processes.
+
+Being able to identify this need and provide a solution for it probably one of the most difficult data science skills to learn as it has nothing to do with data science and everything to do with people skills.
+- At my job, I use Dash to built dashboards to share my ML model with my clients. The data pipeline and the model are built on the backend and the predictions are generated to be shown on Dash with filters that are dynamic. I learned Dash in two months and deployed my first app. It is customizable.
+
+[https://dash.plotly.com/](https://dash.plotly.com/)
+- How many machine learnings he wants?
+- > We use palantir 
+
+sounds expensive.
+
+Is user management an issue? Because in Python it's going to be a bigger issue than using a tool like Power BI which has out of the box if you use Azure. Maybe your boss wants to move away from expensive paid solution and wants to future proof the reporting layer?
+
+Python would allow for more customization in the graphs.
+
+Doing it in python would also allow for version control.
+
+I'd say fuck it, as long as they pay for your time, do it, as it probably will take more time to deliver things.
+- You should have said yes and then just did what you normally do.
+- There are plenty of advantages to writing your dashboards in python. I think if you want to show some kpis and analytical metrics, writing a dashboard in python is overkill but if you want to deploy models, services etc. writing an application in python is a must have skill. You will learn about constructing a rest api, a fundamental tenet of the internet, writing production grade code and deploying all the latter using many tools and platforms. There are many easy to use libraries like plotly dash and streamlit both fully written in python.
+- Python has crayons, don't eat them or you'll be picking keys out of your teeth for weeks.    
+https://pypi.org/project/crayons/
+- Just program it with chatgpt, will only take a few minutes.
+- There is a lot of info not shared here. For example: are the dashboards business relevant? If yes then they should be versioned. Can your low-code solution deliver on this? If no, well, Python can.
+
+Ease of deliver is not the sole concern, standardization is another. As is reduction of complexity through using too many tools. Without knowing more context it is hard to give advice.
+
+But my experience tells me that many junior data scientists are blissfully unaware of long-term maintainability and many clean software considerations beyond immediate fixes.
+
+Could well be your boss has reasons for asking what s/he asks - or could well be a/he has no clue.
+- You can use panel
+- You need to learn how to present ideas in a way that makes your boss think it was their idea (hint: ask questions, present technical or operational challenges with the current approach, show them multiple solutions and use the power of suggestion to lead them to your preferred option, seek guidance so they feel empowered, etc.)
+
+I’d recommend just following through with your boss’s idea in whole (do not push back on anything), make a genuine effort to complete what they want, and once you’ve done this, start pointing out the challenges and limitations.  You have to make a genuine attempt to complete what they want as an olive branch offering, and then once you’ve done this you can do the things I suggested.  
+
+Unfortunately this is a dynamic of ego and power, rather than an actual technical comparison of python vs existing dashboarding software.  You have to learn how to manage the human element of these discussions.
+
+FYI- this comes from my experience both in your position as well as my experience in directing a data science division. Personally if I were your boss I’d put my ego aside and listen to your feedback, as this is an excellent opportunity for him to give an employee a sense of direction, increased autonomy, and ownership on the project.  Unfortunately not all managers see it that way
+- 1. This is presented in "leading" way and I'm sure there's more to the story
+
+2. What language would you prefer to do the ML in? Whatever script/program/api is doing the heavy lifting should probably be in python, even if it's only to generate the output. Any other team members doing ML will want to do it in python, and choosing some other language or framework will cause them to roll their eyes.

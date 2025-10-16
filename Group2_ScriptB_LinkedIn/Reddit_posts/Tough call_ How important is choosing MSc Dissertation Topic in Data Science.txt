@@ -1,0 +1,87 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c18y1q/tough_call_how_important_is_choosing_msc/
+Title: Tough call: How important is choosing MSc Dissertation Topic in Data Science
+
+Content:
+ 
+
+I'm 22-23 years old, currently at a crossroads in choosing my dissertation placement project for my MSc in Data Science and could really use your collective wisdom. One offers **stipend (3000 pounds**) (which I really want to take), others don't. Stipend provider project is about healthcare analytics with geospatial data (idk kind of not good career potential) and there is strong supervision, it will solve real life problem and might lead to **publications**. And then there is **offer from Bank of England** which offers no stipend, no supervision, not sufficient literature review (more work should be done on modelling) but aligns with my Economics bachelors, and would look good on CV. Since I want to do phd, I also have option of doing **internal dissertation project** which I can do on my interest field which is **Machine Learning** ( Developing algorithms that enable computers to learn from data)
+
+Main: One of the options I'm considering is a project focused on "Visualizing Geospatial Trachoma Diagnostic Data and Risk Factors." This involves providing analytic and mapping support to a multi-country study on trachoma in countries like Zambia, Kenya, Ethiopia, Uganda, Cameroon, and Nigeria.
+
+Here's what I'd love to get your thoughts on:
+
+1. How easy is it to transition between sectors (e.g., from healthcare to finance, tech, etc.) in data science? Does specializing early help or hinder long-term career flexibility?
+2. Are the skills and experiences from a healthcare-focused project like this seen as valuable in other sectors within data science?
+3. Have any of you made a sector switch in your data science career? What challenges did you face, and what advice would you have for someone early in their career?
+4. For those of you who have worked on healthcare data or similar projects, what has been your experience? Would you recommend diving into such a niche, and why?
+
+Comments:
+- The dissertation you do would have a minor impact on job likelihood and usually PhD too. If you have an overall understanding of ML and do well that's usually more important.
+
+After my BSc and MSc, when applying for jobs nobody ever cared about my dissertation. Heck even after doing my PhD in biology and bioinformatics nobody ever even cares what my specific project is. Ever. They just see PhD in biology and that's it even though I am now in the data science field, the PhD itself gets me quite far.
+
+Especially as you already have an undergrad in economics, that will get you further in getting economics PhD/jobs than a specific project will. I would just do some ML problems on the side to bulk up your ML and coding ability, which you will need anyway as an MSC project will only scratch the surface
+
+
+What will make a difference to any job or PhD place you apply to, even if it is in a distinct area as fashion or aerospace is having publications. They wouldn't read it but it would be like having extra certificates to add to your qualifications. That would certainly stand you out head and shoulders above other applicants and is what I would aim for in your dissertation if I were in your shoes.
+- that geospatial data science and drone technology intersection excite me too though
+- Geospatial and healthcare are two huge industries?
+- I’d probably lean towards the healthcare topic because:
+
+* it pays you money today
+
+* It is a better posed/defined/documented problem
+
+* you’re actually improving the human condition (as opposed to banking where you’re just playing the arbitrage game sucking capital out of human life)
+- I would say that the thesis topic and publications might be relevant only in the case when applying for a phd. I had a similar case last year, where I wrote a thesis on 6D Pose estimation (computer-vision in a field of manufacturing), managed to publish a paper, but ended up working with LLM's in my full-time position :D. Of course the knowledge came in handy because the principles are somewhat similar, but the domain is different. Also, during the interview process nobody really paid much attention to my thesis work nor publication. 
+
+  
+So go with the grant and in case you want switch industries this should be no problem as you will already be familiar with ML/AI.
+- To answer your questions:
+
+**1. You can definitely transition**! Your 20's are all about exploring and understanding the type of work you find interesting, the painful / boring tasks that others dislike but you don't find that bad, and (heck) if you even want to stick with data science. Life is long and your career is just starting. Most great work happens in 40's and 50's, not in your 20's (ignore the minority of 25 year olds who are covered in the news for how young they are).
+
+**2. Absolutely.** In most DS jobs, you have to understand which data is relevant, clean the data, analyze and understand it, visualize it, then maybe do some ML or predictive modelling. Keep in mind that what you learn in your educational DS program is a very small part of the jobs in industry that actually touch and work with data. There are HUNDREDS of roles out there and MsC programs can't cover them all.
+
+**3. People switch all the time, trust me.** There's always a switching cost but it's fun to learn about new areas. If you want to switch, definitely spend a few months going deep into the next industry / area you want to learn about and pick 1-2 strong data projects to work on. You'll be fine :)
+
+4. **Healthcare data projects are interesting,** I've done them. In industry, keep in mind you'll have to spend a lot of time dealing with stakeholders and regulations than if you were working with advertising data at Meta for example. Things more move slowly. But! You can have a real, tangible impact if you care about healthcare. 
+
+Some meta-advice is that ... spend your 20's exploring and not worrying about specializing yet. Have fun, work hard, and figure out what unsexy work you don't mind doing that the world values. I like Derek Sivers' and Cal Newport's advice to focus not on what you're passionate about, but how to be useful: [https://sive.rs/career](https://sive.rs/career)
+
+Read the book Range: [https://www.amazon.com/Range-Generalists-Triumph-Specialized-World/dp/0735214484](https://www.amazon.com/Range-Generalists-Triumph-Specialized-World/dp/0735214484)
+- Not good career potential in healthcare analytics?
+- >How easy is it to transition between sectors (e.g., from healthcare to finance, tech, etc.) in data science? Does specializing early help or hinder long-term career flexibility?
+
+Relatively easy as long as you focus on the generalizability (word?) of your skills. Whether you're in healthcare, finance, tech, etc., there are some universal concepts: test/control, profits, risk, efficiency, etc. 
+
+Also, arguably the most important skillset is getting shit done in a real project with real stakeholders. That is the one negative of academic research that is self-motivated: sometimes you're solving someone no one gives a crap about and - as a result - you don't have to spend anytime working on navigating/negotiating with stakeholders. Having an actual mentor, project, deliverable and then actually delivering that thing is likely more valuable for most data science jobss than a highly theoreticaly dissertation with limited applications.
+
+Source: wrote dissertation on network optimization problems of super high complexity and basically no scalability. Never came in handy in 10 years of work.
+
+>Are the skills and experiences from a healthcare-focused project like this seen as valuable in other sectors within data science?
+
+They're fine. There are probably more "en vogue" areas of work, but healthcare is a pretty big, well established sub domain of DS. I've definitely hired people from healthcare before and been very happy with them.
+
+>Have any of you made a sector switch in your data science career? What challenges did you face, and what advice would you have for someone early in their career?
+
+I went from a DS-focused software provider, to a distributor, to a major CPG brand, to a small startup in a niche space, to peripherals, to hardware. I wouldn't say I faced any challenges - the main thing is just that changing industries (or companies) just means learning new lingo.
+
+The flip side of that is that you are often able to bring knowledge from those previous jobs that are somewhat new to that company/industry. So the challenge is that you're learning something new and the advantage is that you're learning something new.
+
+My advice, in turn, would be to just learn. Everything in the corporate world can be learned. Nothing is rocket science - mostly because even rocket science isn't "rocket science". You're going to get spooked when you walk into a new job and in the first day you hear 40 acronyms and 5 new concepts, but then 3 months down the line you'll know them and never think of it as a big thing again.
+
+Ask lots of questions, and focus on listening. The biggest mistake I see people make in new environments is to try to show off how much/what they know, instead of focusing on learning.
+- Healthcare is a solid industry to have experience in - lots of analytics jobs in that space. Also, I work in the government and geospatial is an area that senior leaders get super excited about. Sometimes the analysts know there isn't value in mapping something, but senior leaders think slapping data on a fancy map will help us see insights we've missed. I wouldn’t make a career out of it, but it won't hurt to have it on your resume.
+- [removed]
+- gosh
+- [deleted]
+- Y**o**ur dis**sert**ation w**il**l **bas**ically b**e** 8**0%** of y**ou**r sk**ills**et
+- I can’t even get executives to read a single page summary of work I’ve done to make them money. A dissertation? The average MBA doesn’t even know what that word means.
+- Thank youu so muchhh man, that is relief to know, much appreciate your wise input
+- Yeah that stuff is cool
+- Thanks very much!! that is relief to know, reall ayppreciate your input
+- haha cool input thanks, you seem like very chill guy, someone everyone would like to befriend
+- No I mean geospatial data science
+- Thank you very much for putting all these together, much appreciate your sharing your experience from the field

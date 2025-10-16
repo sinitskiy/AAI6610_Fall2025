@@ -1,0 +1,18 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/a4k3ct/heterogeneous_gene_expression/
+Title: Heterogeneous gene expression
+
+Content:
+Hi, i am hoping i am asking this in the right place
+
+i am trying to understand a paper that is talking about machine learning model to identify gene interactions
+
+I  have been trying to understand what is the meaning of heterogeneous  gene expression and why if a gene expression data set is heterogenic  then Gene-Gene Interaction does not depend on the correlation factor   that much.
+
+This is the link of the paper. Thanks
+
+And  please if you can point me some resources or books that i can  understand the concepts that would be tremendously appreciated .
+
+[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6062065/?fbclid=IwAR27DTvwFVhnL8nlVWbB79qSUpQ4XGbd7elChTxVqJGgQspUCUWlgvdU5Ig](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6062065/?fbclid=IwAR27DTvwFVhnL8nlVWbB79qSUpQ4XGbd7elChTxVqJGgQspUCUWlgvdU5Ig)
+
+Comments:

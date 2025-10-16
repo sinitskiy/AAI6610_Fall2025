@@ -1,0 +1,24 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1cy6771/d_data_augmentation_with_ambiguous_examples/
+Title: [D] Data augmentation with ambiguous examples?
+
+Content:
+I feel like I'm missing a keyword here, so maybe you guys can help me figure out what to search for.
+
+I was recently thinking about what occurs when you give a typical classifier a completely random sample that is effectively out of distribution. It will still return a label. For instance, if I train a model to classify MNIST, and I feed it vectors of Gaussian noise, the model will classify these completely random vectors as digits.
+
+Has anyone attempted to augment their training datasets with random noise (or random combinations of training examples)? In this strategy, my intuition is that you'd be injecting essentially negative counter examples - and you'd want the label vectors to have a high amount of entropy. I think these counter examples would have a high degree of aleatoric uncertainty. 
+
+Comments:
+- I believe this wouldn't work, because depending on the noise the image might indeed be a little closer to some digits than the others. If you assign equal probability to all digits for all noisy images, that would (ironically) introduce a lot of noise. Maybe I am wrong, but I don't think this would help model with positive examples at all (examples where there is indeed a digit in the image).
+- Do you mean random erase and/or cutmix with label smoothing?
+- Label smoothing could be a thing.
+
+But I also thought of specifically training the model on "out of range" images and enforce equal probabilities for all classes. I never tried in a real application.
+- Yes, the noise and the associated labels you introduce would need to depend on careful consideration of the data distribution.  Perhaps a more appropriate technique example would be convex combinations of images from different classes where the label vector is the class weights in the combination. This would at least give you some intution for how close the ambiguous data is to a real image.
+
+Though I am reminded of the fact that the Fourier spectrum of gaussian noise is uniform, whereas the spectrum of true samples almost certainly follows some meaningful distribution.
+
+A final thought would be to add a label for "I'm uncertain" to the model's outputs, and rather than forcing the model to choose a high entropy prediction from the true label dimensions, the ambiguous data would be assigned this label.
+- Thank you! I googled and cutmix and mixup are similar concepts to what I'm suggesting.
+- Adding a new label for negative samples seems like a great thing to try out!

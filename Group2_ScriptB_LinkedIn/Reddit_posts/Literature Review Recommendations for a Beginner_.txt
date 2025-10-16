@@ -1,0 +1,34 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/15ftnjz/literature_review_recommendations_for_a_beginner/
+Title: Literature Review Recommendations for a Beginner?
+
+Content:
+Hi all. I'm heading to university this fall and will be starting at a lab which uses microscopy and machine learning to study bacteria. The goal is to better understand structure of biofilm and the regulation of different biomolecules & signaling networks in order to combat antibiotic-resistant bacteria.
+
+For my own leisure and to better prepare for the lab, what are some interesting literature reviews or publications I should read besides that of the lab? 
+
+Also, my interest in biology are as follow:
+
+* biochemistry
+* biophysics
+* molecular biology
+* computational biology 
+* bioinformatics
+* stem cells
+* bacteria (antibiotic-resistant bacteria)
+* cell membrane
+
+Thanks!
+
+Comments:
+- lehninger's principle of biochem for biochem
+molecular biology of cell for mol bio
+essential cell bio by alberts for cell membrane
+and brocks biology of microorganism should cover the bacteria
+- Know about PubMed, the search engine that focuses on bio-med?
+
+You can limit output to reviews. And can sort by date, to see most recent.
+
+I am inclined to suggest focus on the lab papers, at least to start. That will lead you to related papers -- both as general background and related work.
+
+You can also generate ideas you want to look up.

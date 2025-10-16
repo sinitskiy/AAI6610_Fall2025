@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_uncertainty-aware-trajectory-prediction-via-activity-7319331471251431424-scQS
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+5 个月
+
+🚀 Uncertainty-Aware Trajectory Prediction via Rule-Regularized Heteroscedastic Deep Classification 🌐
+
+Recent advancements in deep learning-based trajectory prediction models have shown significant potential in capturing intricate interactions. However, challenges persist in out-of-distribution generalization, primarily due to imbalanced datasets and insufficient data diversity, which hinder robustness and calibration.
+
+To tackle these issues, the novel framework SHIFT (Spectral Heteroscedastic Informed Forecasting for Trajectories) has been introduced. This framework innovatively integrates well-calibrated uncertainty modeling with informative priors derived from automated rule extraction.
+
+SHIFT reformulates trajectory prediction as a classification task and utilizes heteroscedastic spectral-normalized Gaussian processes to effectively separate epistemic (model uncertainty) and aleatoric (data uncertainty) uncertainties. Informative priors are learned from training labels that are automatically generated through natural language driving rules—such as stop rules and drivability constraints—leveraging a retrieval-augmented generation framework powered by a large language model.
+
+Extensive evaluations on the nuScenes dataset reveal that SHIFT surpasses state-of-the-art methods, achieving significant improvements in both uncertainty calibration and displacement metrics. Notably, the model demonstrates exceptional performance in complex scenarios like intersections where uncertainties are inherently elevated.
+
+     📊✨
+
+#AI #Algorithms #ArtificialIntelligence #DL #DS #DataScience #DeepLearning #ML #MachineLearning #Tech #Technology #TrajectoryPrediction #UncertaintyModeling
+
+Uncertainty-Aware Trajectory Prediction via Rule-Regularized Heteroscedastic Deep Classification
+arxiv.org
+2
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,134 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+Latest Developments in Deep Learning Applications
+Chal

@@ -1,0 +1,34 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1h0ewm7/advice_needed_for_machine_learninggenerative_ai/
+Title: Advice Needed for Machine learning/Generative AI Internships 
+
+Content:
+Hi everyone,
+
+I’m looking for guidance on how to secure and excel in Machine Learning (ML) or Generative AI internships. Specifically:
+
+1. What should I include in my resume to get shortlisted?
+
+2. What skills and concepts should I focus on to ace interviews?
+
+3. How can I prepare to perform well during the internship itself?
+
+Here’s what I’ve done so far:
+
+Working on Data Structures and Algorithms (beginner, practicing on LeetCode).
+
+Covered core ML concepts: supervised, unsupervised, reinforcement learning, and deep learning.
+
+Studied Generative AI topics like autoencoders, transformers, and GANs.
+
+
+I’d really appreciate advice on areas I should improve or additional skills/resources I should explore to make myself more competitive.
+
+Thank you so much for your help!
+
+
+
+Comments:
+- I mean it sounds like you have a very good start. 
+
+Include real examples of projects so they know you’re not just listing buzzwords that you don’t actually have experience with. It’s one thing to say you know about self-supervised learning, it’s another level to have actually setup a training process that uses it, for example.

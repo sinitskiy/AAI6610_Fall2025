@@ -1,0 +1,67 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bccwnv/coupling_ml_and_statistical_analysis_for/
+Title: Coupling ML and Statistical Analysis For Completeness.
+
+Content:
+Hello all,
+
+I'm interested in gathering your thoughts on combining machine learning and statistical analysis in a single report to achieve a more comprehensive understanding.
+
+I'm considering including a comparative ML linear regression model alongside a traditional statistical linear regression analysis in a report. Specifically, I would present the estimated effect (e.g., Beta1) on my dependent variable (Y) and also demonstrate how the inclusion of this variable affects the predictive accuracy of the ML model.
+
+I believe that this approach could help construct a more compelling narrative for discussions with stakeholders and colleagues.
+
+My underlying assumption is that any feature with statistical significance should also have predictive significance, albeit probably not in the same direct - i.e Beta1 is has a positive significant effect in my statistical model but has a significant degrading effect on my predictive model. 
+
+I would greatly appreciate your thoughts and opinions on this approach.
+
+Comments:
+- What is the difference between a machine leaning linear regression model and a statistical linear regression model?
+- Why would you need 2 linear regressions here? You can measure accuracy for both models as it’s just a function of prediction and actual.
+- I think some others have pointed this fact out already, albeit indirectly, but it sounds like you don’t know what you’re talking about.
+- Might depend on the goal. If you've already done the experiment and e.g. see a significant effect via p-values, shooting additional analysis at the problem is not going to make the result any more reliable.
+- As others have said, I think you're overcomplicating this and will probably end up confusing people. These aren't 2 separate things. You have a basic functional form for your model - a linear regression model in this case. 
+
+
+Trying to conceptualize of it as "ML = prediction" and "statistical analysis = interpreting coefficients and other decomp info" and then distinguishing the 2 when you communicate to stakeholders is going to confuse the crap out of them most likely. 
+
+
+You have one model, that's it. Include any relevant info about that model you feel is appropriate when communicating insights.
+- It is crucial to understand the difference between explanation and prediction when designing a model, regardless of the methods used for specification (i.e., which variables to include?) or estimation (i.e., which weights to assign?). You intend to use different approaches to augment each other but are subtly pursuing two different goals. 
+
+See: https://projecteuclid.org/journals/statistical-science/volume-25/issue-3/To-Explain-or-to-Predict/10.1214/10-STS330.full
+- This may be a stupid question but what exactly is the difference, won't the Gauss - Markov conditions hold in both cases?
+Or are you planning to compare scikit's implementation of linear regression with statsmodel's implementation of linear regression
+- Good
+- Looks interesting any update?
+- One is predictive while one produces a decomposition of the variance explained.
+- Because I'm interested on being able to make a statement of the following kind:
+
+"We can see from Model 1 that a 1 unit increase in X1 is correlated with a 3 unit rise in our Y. While we can also see that the inclusion of out X1 term also increases model 2's predictive accuracy by 20%."
+- What fact?
+- Thank you for the reply. unfortunately, you've missed the entire point of my post. I'll assume responsibility because of my wording choices. 
+
+I wanted to know if it sounded reasonable or if it was best practices to include predictive information along side statistical information to better produce a narrative. 
+
+instead, I got several people commenting on the functional form of linear regression.
+- Thank you. I'll read through this.
+
+I think you're the first person to address my actual question.
+- kind of. 
+
+So far, I've received very useful feedback from u/somkoala concerning the differential uses of the Sklearn and Statsmodels' Implementation of linear regression. 
+
+Overall, most people missed the thrust of my question. I figure it doesn't hurt to supplement the statistical analysis with predictive analysis aswell.
+- Maybe I should have been more specific, what is the difference in the functional form of the two models and/or how they are trained
+- As mentioned, you should be able to achieve this with 1 type of model. One with X1 and one without.
+- r/woosh
+- Best of luck
+- >Overall, most people missed the thrust of my question.
+
+They aren't missing it, what they're saying doesn't seem to be registering. You want to know:
+
+>if it sounded reasonable or if it was best practices to include predictive information along side statistical information to better produce a narrative.
+
+&#x200B;
+
+I'm not sure why you think the poster missed the entire point of you post in saying that these are not two separate things and that you should include all relevant information.

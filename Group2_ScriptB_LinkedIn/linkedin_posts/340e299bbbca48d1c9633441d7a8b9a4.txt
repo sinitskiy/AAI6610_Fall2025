@@ -1,0 +1,33 @@
+URL: https://www.linkedin.com/posts/jason-busch-96075_why-traditional-analyst-ratings-wont-work-activity-7342842204643577856-eHY7
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jason Busch的动态
+Jason Busch
+3 个月  已编辑
+
+Why Traditional Analyst Ratings Won’t Work for AI + Probabilistic Systems in Procurement, Supply Chain and Finance Tech
+
+Before founding Spend Matters, A Hackett Group Company, I had analyst relations unceremoniously dumped on my plate in a past role. So it’s fair to say I’ve been in and around the analyst game for nearly three decades — and I’ve seen the sausage made from every angle.
+
+I won’t get into the mechanics of analyst ratings today (e.g., SolutionMap, Gartner Magic Quadrants, Forrester Waves, etc.). Yes, I have a bias towards one.
+
+But what’s increasingly clear is this: the era of autonomous and probabilistic systems is going to break traditional analyst ratings methodology faster than an LLM fine-tuned on procurement clauses can hallucinate parts of a master services agreement. And then redact it.
+
+Here’s why:
+
+- Probabilistic systems react and simulate. You rarely see the same task or outcome twice. Analyst firms will need to shift from static feature/function matrices to evaluating system outcomes, adaptive performance, and response quality under uncertainty. Big shift.
+
+- Benchmarks will matter more than ever. Just like comparing chipsets when buying a MacBook Pro, buyers will want to know: in my environment, how does this probabilistic engine perform? Is it optimized for negotiations? Commodity Forecasting? Category strategy? Should cost modeling? Inventory management and forecasting? Demand forecasting and planning? Master data harmonizing and cleansing? SAP / Oracle / ERP data and process mining? Execution support? Exception triage? Execution? Context,  contextual performance and domain specificity are everything! 
+
+- Cyber and security take center stage. Analysts will need to evaluate LLM containment, access controls, auditability, etc. Moreover, as these systems embed in ERPs, supplier portals, and messaging layers, the attack surface expands — prompt injection, data

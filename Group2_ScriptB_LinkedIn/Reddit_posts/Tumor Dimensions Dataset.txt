@@ -1,0 +1,16 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/186hem0/tumor_dimensions_dataset/
+Title: Tumor Dimensions Dataset
+
+Content:
+Hi all!
+
+I've been working on developing a model that classifies whether a tumor is benign or malignant. I've been using the tumor's dimensions as training features for the model.
+
+The issue I'm facing is that my current dataset contains too few instances (569). I've been using UCI's Breast Cancer Dataset ([Breast Cancer Wisconsin (Diagnostic) - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)).
+
+Is anyone familiar with a similar dataset that I can either combine on or work from? I'm hoping for a minimum thousand instances after combining (or a thousand instances from the new dataset).
+
+Any help is appreciated 😊
+
+Comments:

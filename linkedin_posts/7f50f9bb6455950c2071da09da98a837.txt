@@ -1,0 +1,39 @@
+URL: https://www.linkedin.com/posts/aantich_ai-computation-language-activity-7285618806461235202-LDlV
+Date: 2025-09-24
+Author: Unknown
+
+A scary and sobering paper on the topic which I periodically mention but feel like am largely ignored, while should be shouting. People, PLEASE, STOP SAYING "I ASKED CHAT GPT THIS OR THAT AND IT TOLD ME..." - hallucination rates in some areas are as high as 86%!
+
+The conundrum is very clear - if you are not an expert in an area you cannot judge whether the answer is correct, and if you are - you don't need to ask in the first place.
+
+The way around it is clear - AGENTS. Well designed Agents ALWAYS use RAG (retrieval augmented generation) to put relevant and correct information in the context of the LLM, which reduces hallucinations effectively to 0.
+
+Please, for the sake of humanity and your businesses, stop asking LLMs peculiar questions in areas where you are not an expert or at least don't rely on the answers to those.
+
+The below is the quick paper review thanks to Cecile G. Tamura:
+
+HALoGEN: Fantastic LLM Hallucinations and Where to Find Them
+Abhilasha Ravichander, Shrusti Ghela, David Wadden, Yejin Choi
+Google & University of Washington 2025
+https://lnkd.in/e_6jQPKX
+Exploring the “Hallucinations” of AI: How Reliable Are Large Language Models?
+Large Language Models (LLMs) like ChatGPT and GPT-4 have amazed the world with their ability to generate fluent, high-quality text. But sometimes, they produce hallucinations—statements that don't align with reality or the input context, like confidently claiming false information. These errors pose serious challenges, especially when these models are used in critical fields such as science, programming, or news summarization.
+To tackle this issue, researchers developed HALoGEN, a comprehensive benchmark designed to study and measure hallucinations in LLMs systematically. HALoGEN includes:
+1, Over 10,000 prompts covering nine different areas, such as programming, scientific attribution, and summarization.
+2. Sophisticated automatic tools that break down LLM outputs into small, testable pieces and check each one against high-quality sources of knowledge.
+By evaluating 150,000 outputs from 14 different LLMs using HALoGEN, the researchers discovered a sobering reality: even the best-performing models frequently hallucinate, with up to 86% of generated statements in some domains containing errors.
+The study goes further by categorizing hallucinations into three types:
+*Type A: Errors caused by the model misremembering its training data.
+*Type B: Errors that stem from inaccuracies in the training data itself.
+*Type C: Complete fabrications, where the model simply makes things up.
+The researchers hope HALoGEN will serve as a cornerstone for studying why these hallucinations happen and will inspire innovations in creating more trustworthy AI systems. 
+By shedding light on the hidden flaws of LLMs, this work takes an important step toward making AI more reliable and accurate.
+
+话题标签
+#AI 
+话题标签
+#computation 
+话题标签
+#language 
+话题标签
+#LLM

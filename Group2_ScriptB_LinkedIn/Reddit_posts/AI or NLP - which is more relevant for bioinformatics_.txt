@@ -1,0 +1,34 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1et9sfl/ai_or_nlp_which_is_more_relevant_for/
+Title: AI or NLP - which is more relevant for bioinformatics?
+
+Content:
+I am choosing the courses I'll take this semester, and I have to make a decision between the AI course and the NLP course at my university.
+
+I have taken a course on ML before, and two on data science. Plus, I am using lots of ML algorithms for my current internship, so I am quite familiar with general ML concepts. Since CS is my second major, I have also taken several fundamental CS courses and thus no stranger to essential algorithms for searching, sorting etc. Because I have these experiences, I am not sure how useful an AI course would be. The description for this course is the following btw: *This course is a broad technical introduction to fundamental concepts and techniques in artificial intelligence. Topics include problem solving, search, knowledge representation and reasoning, reasoning and decision making under uncertainty. Other important topics and current application areas of artificial intelligence, such as automated planning, machine learning, computer vision, robotics, natural language understanding, and intelligent agents, will be discussed.*
+
+On the other hand, I think NLP isn't extensively used in bioinformatics (at least yet) except for text mining, so I am not sure how useful it would be for me.
+
+Another thing to consider is that the AI course is given by a senior instructor with a good reputation at my university and who specialises in image recognition. The NLP course is brand new (so much so that it currently lacks a description), and it'll be given by a very young instructor who has just completed her postdoc. I skimmed her CV, and even though it looks good, this will be her first teaching experience, and I'm honestly not sure if NLP is her specialty. She seems to have dabbled in NLP during her PhD doing data mining on social media, but her postdoc work was on privacy. Her research interests are "human-computer interaction, responsible artificial intelligence, privacy, computational social science, and multi-agent systems."
+
+Given all these, for a senior double major student who plans to specialise in genomics, which one would be the wiser option?
+
+Comments:
+- IMO, neither AI or NLP is going to be very relevant as an applicant with only a masters or bachelors degree.  Both of those are only useful in methods research, which is pretty reserved for academia and high level industry positions, both situations likely requiring a PhD.
+
+So in my advice, take what sounds more interesting to you, and see if that is a path you want to pursue.  From the description you provided it sounds mostly like a survey course anyways.  I just wouldn’t expect that to be what you’re working on immediately after graduating.
+- The AI course. Machine learning is used in many bio areas and is very important for NLP. NLP is pretty limited in bio, and will have fewer transferable concepts.
+
+Also, if you know the prof is good, take advantage of that.
+- I know people are saying fir a strict Bioinformatics role this is not useful.
+
+But if you do anything with Bioinformatics Data Engineering or Data Science which are highly adjacent job markets with bigger growth then yes, it is useful.
+
+Everybody has NGS down tbh, and if your already covered in genomics courses and principles adding AI projects on your resume that are big projects is pretty valuable.
+- I know many bioinformaticians who did AI/ML projects, and eventually landed a data scientist job that is more needed and normally pays more than bioinformaticians.
+
+As to NLP, it faces challenge from LLM tools.
+- Both are irrelevant.
+- Just like your comment! 
+
+Do you know anything at all in bioinformatics?

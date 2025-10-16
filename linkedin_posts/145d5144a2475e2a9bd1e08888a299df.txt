@@ -1,0 +1,38 @@
+URL: https://www.linkedin.com/posts/vibs-abhishek_ai-llm-hallucinations-activity-7150357213247602688-d45p
+Date: 2025-09-24
+Author: Unknown
+
+32+ ways to reduce hallucinations in Large Language Models (LLMs). 
+
+This research paper talks about multiple ways to reduce AI hallucinations like:
+
+1. Real-Time Hallucination Detection and Correction: Techniques like the EVER framework are revolutionizing the way LLMs operate by detecting and rectifying hallucinations during the generation process, thereby preventing the accumulation of errors.
+
+2. Post-Generation Refinement: Approaches such as Retrofit Attribution using Research and Revision (RARR) and High Entropy Word Spotting are pivotal in aligning AI-generated content with accurate information post-generation.
+
+3. Self-Reflection and Structured Reasoning: New strategies like ChatProtect and Structured Comparative reasoning employ self-reflection methodologies and structured approaches, ensuring consistency and reducing hallucinations in specialized tasks.
+
+4. Prompt Tuning and End-to-End Training: Techniques like UPRISE and SynTra demonstrate the effectiveness of prompt tuning and end-to-end training in enhancing the truthfulness and relevance of AI-generated content.
+
+5. Decoding Strategies and Knowledge Graph Utilization: Novel decoding strategies and the use of Knowledge Graphs (KGs) are proving to be effective in guiding AI towards more authentic and context-specific generation.
+
+6. Supervised Fine-Tuning and Behavioral Approaches: Methods like Knowledge Injection and HAR leverage supervised fine-tuning and behavioral approaches, significantly improving the factuality of LLMs.
+
+Which techniques do you use to tackle LLM hallucinations? 
+Check out the research in the comments below. 
+
+
+话题标签
+#ai 
+话题标签
+#llm 
+话题标签
+#hallucinations 
+话题标签
+#researchpaper 
+话题标签
+#genai 
+话题标签
+#llmsecurity 
+话题标签
+#promptengineering

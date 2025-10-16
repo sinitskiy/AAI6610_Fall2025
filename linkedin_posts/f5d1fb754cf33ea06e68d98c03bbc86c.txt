@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/whats-ai_ai-machinelearning-llm-activity-7375159358550073344-vj__
+Date: 2025-09-24
+Author: Unknown
+
+Language models hallucinate not because they’re “broken,” but because our training and evaluation pipelines reward guessing over honesty.
+
+I’m a bit late to the party on this one (1–2 weeks after everyone already shared it), but I finally 𝘢𝘤𝘵𝘶𝘢𝘭𝘭𝘺 read 𝗪𝗵𝘆 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗠𝗼𝗱𝗲𝗹𝘀 𝗛𝗮𝗹𝗹𝘂𝗰𝗶𝗻𝗮𝘁𝗲 by the OpenAI team. And it sparked a few thoughts worth sharing.
+
+First, to provide context, the paper discusses the hallucination problem and its underlying causes.
+
+Take this example from the paper:
+
+Suppose Model A always admits “I don’t know” when uncertain.
+
+Then, we'd have model B that always guesses a possible answer.
+
+Under most benchmarks (MMLU-Pro, GPQA, SWE-bench, etc.), Model B outperforms Model A, even though it hallucinates.
+
+Why? 
+
+Because binary 0–1 grading (coming from answer is good vs. bad) gives no credit to uncertainty. It only credits the actual answer, not if it actually knows it (this is what the table attached shows).
+
+This means even if right 1% of the time, a randomly guessing model will be more successful on most evaluations than one that knows when it does not know.
+
+So today’s systems are literally trained to bluff.
+
+My takeaway:
+
+We need training signals that reward where idk == idk, true == true, and everything else gets penalized.
+
+But that’s harder than it sounds because how can we be sure whether a fact was in the pretraining corpus? How to make sure the model indeed does not know? And how do you even design a dataset of “honest IDKs”?
+
+And since pretraining is just next-token prediction, not “hallucination detection,” this problem is deeply baked into the process, even if we try to fix it in the post-training steps.
+
+The paper’s conclusion is pragmatic: we may not fix hallucinations by inventing new “hallucination benchmarks.” Instead, we need to reform the existing mainstream evaluations to stop punishing uncertainty and abstention.
+
+Until then, we’ll keep optimizing models to be good test-takers, not trustworthy systems.
+
+This is still to reduce hallucination rates and not remove them.
+
+👉 Would love to know what you think: should we focus more on fixing training data, or on fixing benchmarks?
+
+Or do like Yann LeCun and lose faith in LLMs as a whole 😅
+
+
+话题标签
+#AI 
+话题标签
+#MachineLearning 
+话题标签
+#LLM 
+话题标签
+#Hallucinations 
+话题标签
+#AIEngineering

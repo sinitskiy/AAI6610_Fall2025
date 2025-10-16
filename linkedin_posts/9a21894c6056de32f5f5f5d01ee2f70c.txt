@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/lillianpierson_5-powerful-techniques-for-mitigating-llm-activity-7126539761250430977-bfqD
+Date: 2025-09-24
+Author: Unknown
+
+Interested in learning how-to efficiently optimize LLM apps? If so, make sure to save your seat in Wednesday’s free training: https://lnkd.in/gZRyZXFV 
+
+If you’re ready for a deeper look into what you can do to overcome the LLM hallucination problem, then you’re going to love the free live training that’s coming up on Nov 8 at 10 am PT.
+
+Topic: Scoring LLM Results with UpTrain and SingleStoreDB
+
+In this 1-hour live demo and code-sharing session, you’ll get robust best practices for integrating UpTrain and SingleStoreDB to achieve real-time evaluation and optimization of LLM apps.
+
+Join us for a state-of-the-art showcasing of the powerful and little-known  synergy between UpTrain's open-source LLM evaluation tool and SingleStoreDB's real-time data infrastructure! 
+
+Within this session, you’ll get the chance to witness how effortlessly you can score, analyze, and optimize LLM applications, allowing you to turn raw data into actionable insights in real-time. 
+
+
+You’ll also learn just how top-tier companies are already harnessing the power of UpTrain to evaluate over 8 million LLM responses. 🤯
+
+Sign up for our free training today and unlock the power of real-time 
+话题标签
+#LLM evaluation and optimization. https://lnkd.in/gZRyZXFV 
+
+Hope to see you there!
+
+
+话题标签
+#GenAI 
+话题标签
+#LLMs
+
+Produced in collaboration with SingleStore 🤍

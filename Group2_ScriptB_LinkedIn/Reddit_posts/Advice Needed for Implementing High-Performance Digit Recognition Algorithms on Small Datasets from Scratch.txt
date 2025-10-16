@@ -1,0 +1,30 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1g4z85l/advice_needed_for_implementing_highperformance/
+Title: Advice Needed for Implementing High-Performance Digit Recognition Algorithms on Small Datasets from Scratch
+
+Content:
+Hello everyone,
+
+I'm currently working on a university project where I need to build a machine learning system from scratch to recognize handwritten digits. The dataset I'm using is derived from the UCI Optical Recognition of Handwritten Digits Data Set but is relatively small—about 2,800 samples with 64 features each, split into two sets.
+
+**Constraints:**
+
+* I must implement the algorithm(s) myself without using existing machine learning libraries for core functionalities.
+* The BASE goal is to surpass the baseline performance of a K-Nearest Neighbors classifier using Euclidean distance, as reported on the UCI website; my goal is to find the best algorithm out there that can deal with this kind of dataset, as I plan on using the results of this coursework for another University's application. 
+* I cannot collect or use additional data beyond what is provided.
+
+**What I'm Looking For:**
+
+* **Algorithm Suggestions:** Which algorithms perform well on small datasets and can be implemented from scratch? I'm considering SVMs, neural networks, ensemble methods, or advanced KNN techniques.
+* **Overfitting Prevention:** Best practices for preventing overfitting when working with small datasets.
+* **Feature Engineering:** Techniques for feature selection or dimensionality reduction that could enhance performance.
+* **Distance Metrics:** Recommendations for alternative distance metrics or weighting schemes to improve KNN performance.
+* **Resources:** Any tutorials, papers, or examples that could guide me in implementing these algorithms effectively.
+
+I'm aiming for high performance and would appreciate any insights or advice!
+
+Thank you!
+
+Comments:
+- I would try the easiest version like LeNet as a baseline and try variants of AlexNet
+- Thanks for the suggestion! Are there variants of the AlexNet that can work with such small dataset?

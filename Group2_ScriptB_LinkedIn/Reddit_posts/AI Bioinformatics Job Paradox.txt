@@ -1,0 +1,84 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1lomrm7/ai_bioinformatics_job_paradox/
+Title: AI Bioinformatics Job Paradox
+
+Content:
+Hi All,
+
+Here to vent. I cannot get over how two years ago when I entered my Master’s program the landscape was so different. 
+
+You used to find dozens of entry level bioinformatics positions doing normal pipeline development and data analysis. Building out Genomics pipelines, Transcriptomics pipelines, etc.
+
+Now, you see one a week if you look in five different cities. Now, all you see is “Senior Bioinformatician,” with almost exclusively mention of “four or more years of machine learning, AI integration and development.” 
+
+These people think they are going to create an AI to solve Alzheimer’s or cancer, but we still don’t even have AI that can build an end to end genomics pipeline that isn’t broken or in need of debugging. 
+
+Has anyone ever actually tried using the commercially available AI to create bioinformatics pipelines? It’s always broken, it’s always in need of actual debugging, they almost always produce nonsense results that require further investigation.
+
+I am sorry, but these companies are going to discourage an entire generation of bioinformaticians to give up with this Hail Mary approach to software development. It’s disgusting. 
+
+Comments:
+- Genuinely so scared about my future. Thought id be happy doing biology on a computer, now it doesn’t seem like i will get to do anything…
+- I am not saying the generative AI available cannot create pipelines that work, but just the arrogance to think that normal development is no longer important or valuable is infuriating. 
+
+Yes over many iterations you can get there, but you cannot just be a non-programmer and say “build me a genomics pipeline” and trust the results.
+- As someone desperately trying to leave my current company to find a new job, this has been very frustrating to encounter. I have a Masters and 3 years of dry lab industry experience (and several years of industry wet lab before that). When I finished my masters 3 years ago, there were plenty of open positions, but I didn't quite have industry experience with dry lab yet. Now that I have the experience, I only ever come across senior positions (too high of requirements and maybe AI is one of them) or entry level (way too low of a salary even though I'm already underpaid by about 20k-30k in my position).
+
+
+I always question if the postings with AI requirements are actually written by the department manager or someone who doesn't know what the job entails. 
+
+
+My current position is more focused on running the pipelines for analysis than developing them. The development projects I work on are for more niche requests. Regardless, I have no reason to use AI for pipeline development. Management doesn't want us putting anything proprietary into something like chat GPT, so I really have no purpose for it. Plus, I much prefer to know how things work at this stage in my career. Leaning on AI will make it harder to distinguish how good a pipeline is and if it follows best practices. I would feel compelled to double check everything the AI wrote as opposed to checking the subset of things I'm unsure of during developing a pipeline on my own. 
+
+
+That said, I don't think the development team in my department uses AI either and there are only senior people there. 
+
+
+This next part will be my own little rant on AI. I think that AI in this field is the equivalent of a child crawling while the suits expect it to sprint like Usain Bolt. We're quite a bit away from that. It also feels like we're pushing toward a scene from Guardians of the Galaxy 3. The High Evolutionary (main villain) was upset at children who were "smart" because they solved a complicated problem through memorization of the steps. However, they didn't understand any of the steps, how they related, how to apply them to a novel situation, or how to make improvements. I'm concerned people are leaning too much on AI and no one will know how to create something novel or problem solve.
+- A lot of this is that the biotech market was a loooot hotter two years ago. Almost all investment money has completely dried up in biotech, shrinking the number of postings drastically. And the only investment money going out is from VCs that are focusing on AI, which means that the few job openings out there are going to have to talk about AI as part of it, since they are hiring towards that AI spin that brought in the money. (Large corps are different but similar here...)
+
+> I am sorry, but these companies are going to discourage an entire generation of bioinformaticians to give up with this Hail Mary approach to software development. It’s disgusting.
+
+Everyone is struggling, but it's going to hit the newest entrants to the job market the hardest. I think a lot of people are looking at the future of the field and thinking that with the massive shrinking of the NIH, tons of senior people desperate for jobs, and the massive shrinking of investment in the biotech field, there's going to be a massive contraction. The bad news started with the high interest rates and the end of ZIRP. But *now* the Republican destruction of science means that they want you to work in a factory, assembling iPhones or something like that, at least nothing that involves a keyboard. As far as these actual job postings, I don't think anybody actually believes that AI will write the pipelines fully, it's just that everyone is eating a shit sandwich right now and the only way to get money to do anything is to have an AI spin.
+- Please, if you are both an expert in AI development and a senior level Bioinformatician with reputable publications and you peruse this, raise your hand.
+
+And please, realize you deserve so much more money for your skills than any of these positions offer. $120k-145k a year for that level of expertise is robbing you.
+- The problem is many-fold.
+
+First of all, there's too many bioinformaticians. It's a super niche tiny field but we were told it was the future of biology. In reality, it's code monkeying in a different wrapper most of the time. 
+
+Second, the economic climate is much harder nowadays, hiring has slowed down everywhere for most sectors.
+
+And third is AI. While AI can certainly do some things and a lot of the hype has died down and become more realistic a lot of people are still huffing the snakeoil and expect AI to magically transform productivity without having to hire.
+
+Honestly it's probably going to get worse.
+- AI should not be considered a skill. It is rather a tool set and a framework. Bioinformatics in my opinion has two major areas. Pipeline work and research work. Most jobs have overlap of both to varying extents. Pipeline is low risk and research is high risk. So you find research mostly in academia and others in industry. 
+
+AI you see or hear in Bioinformatics is mostly pipelining things and adding ML to solve some objective function.
+
+When you put it that way, mostly jobs are software development with strong algorithm background or biological background.
+- I’m confused why everyone is talking about LLMs for writing code/pipeline creation here. To me the job as excerpt from OP is pretty clearly about developing and applying AI tools to data produced by bioinformatics pipelines, which is a totally different skillset—still not available at that pay grade though
+- Now entry levels are not rare but inexistent...... They think we were born with 5 years of experience or what? The field is becoming so stupid despite being made of scientists who supposedly represent human rationality.
+- AI is powerful, but it’s only useful when you have sufficient solid data. 
+
+If you’re a molecular biologist in academia, you’re often working on the bleeding edge of science; you’re generating the data that will one day be used to train an ML model. There will always be a need for great dry lab and wet lab researchers.
+- Just popping in here to share an entry-level (bachelors required, no experience) bioinformatics analyst I job listing - NOT remote.
+
+[https://explore.jobs.ufl.edu/en-us/job/536268/bioinformatics-analyst-i](https://explore.jobs.ufl.edu/en-us/job/536268/bioinformatics-analyst-i)
+- Now that Elisabeth Holmes is out jail this issue will be sorted out promptly.
+- I can tell you that Bioinformatics *can* successfully integrate Natural Language Processing into its workflows, however commercially available LLMs are *not* going to allow it to be done easily.
+
+You need a model that's been trained on the data you're working with specifically, and at that point it's more of a shortcut than a new paradigm imho
+- Ooh I'm loving the codes these AIs wrote me so much. Sure, they're often broken, but I'd much prefer editing & debugging based on their scaffold than starting from scratch myself---it's not like I wouldn't need to edit + debug my own codes anyways.  Also, I wouldn't entertain the idea of letting them put together an entire pipeline from scratch anyways---too many environmental variables are needed (your platform, experiment set-up, env dependencies, etc.) to make things right, not to mention that you'd need to unit test every segment of this pipeline before putting them together anyways.  Advice from these bots helps a lot in drawing a clearer picture of the roadmap, though.
+
+Speaking of coding, VSCode integrates AI in their tab-autocomplete, and it. is. amazing.! You could write the your intention in a comment and let it autocomplete the actual code, or initiate a comment around your code and let it autocomplete the documentation. It's just amazing for someone like me who always dreaded the programming side of science.
+
+On the science side they blew my mind too. One labmate once asked a technical question about troubleshooting his codec-seq experiments in our lab meeting ("why R2s always have worse QC than R1s?"), and I threw the question to ChatGPT and Claude out of curiosity. Their answers are incredibly comprehensive and logical, from explanations about the biochem mechanisms to citations to legit sources, so much so that an unknowing person would easily believe those are comments from an experienced postdoc (at least I would).
+- Our company went on a hiring spree for machine learning bioinformaticians; most could not explain their results. We would have been better off investing in better tooling and pipeline automation.
+- So is there a future in AI bioinfo? Or should i drop this field?
+- There are quite a few companies out there that are actively trying to put bioinformaticians out of work by making things easier for wet lab people to do in house. E.g analysis platforms. I worked for a company that did this and it was kind of hilariously bad (the software sucked, they actually hadn’t consulted any bioinformaticians on it until they brought me on and even then I wasn’t the right fit for that type of analysis), I think the end result of this is going to be a lot more shitty science and people using the wrong techniques.
+- My spouse actually checks a lot of the boxes for “AI/ML” + bioinformatics, but won’t apply for many of these jobs because it’s clear there’s no real understanding by people hiring of what “AI” would be used for- he expects a lot of these jobs will wind up cut eventually because they won’t actually deliver useful products/profits.
+- Interestingly, Apple recently published something on the capacity of AI to be useful in a logical setting:
+
+https://arxiv.org/pdf/2410.05229
+- Thank you! This is exactly how I feel as well. I don't understand what they are thinking with these job listings. I don't understand how they are expecting to find this many "seniors" with the level of AI/ML knowledge. And what's more unreasonable is they cannot differentiate between a bioinformatician and a data engineer. Honestly every other job description I look through merges these two totally different but equally important jobs together.

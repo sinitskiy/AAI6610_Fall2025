@@ -1,0 +1,26 @@
+URL: https://www.linkedin.com/posts/nathan-anecone_the-case-for-the-principle-of-maximum-entropy-activity-7285760178832965632-tuK7
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Nathan Anecone的动态
+Nathan Anecone
+
+Co-Founder, CTO - Semantic Reach
+
+8 个月
+
+If you study machine learning in any detail, you’ll discover that it’s kind of a mess. Nobody knows why anything works, only that it does, and there are countless heuristics and tricks for niche use cases that come up once or twice and never show up again. Machine learning is very much a “results-driven” pragmatic field, but not quite yet a science. It’s a shame, because a more scientifically principled theoretical understanding of machine learning could lead to more directed and informed practice and improved outcomes overall. 
+
+Not that long ago I came across the work of E.T Jaynes (1922-1998), a physicist who also made several significant contributions to probability and statistics. A good deal of Jaynes work dating as far back as the 1950s bears a striking resemblance to modern machine learning, and indeed much of machine learning emerged from the on-paper probabilistic and statistical modeling of previous decades Jaynes participated in developing. One of Jaynes’ best known contributions is the “principle of maximum entropy”, which essentially states that the least biased probability distribution is the one that has the highest uncertainty relative to what is known. 
+
+It turns out this fairly common sense axiom of “don’t rule out anything that’s not inconsistent with your present knowledge” appears almost ubiquitously throughout machine learning, and plays an implicit or explicit role in such techniques as regularization, bias mitigation, stochastic gradient descent, weight initialization, Bayesian reasoning, deep learning generalization, reinforcement learning, diffusion modeling, rotational invariance for convolutional neural networks, and more besides. It’s the closest thing to a “law of gravity” we have in machine learning. In recent years various cutting edge maximum entropy algorithms have been published, such as maximum entropy regularizat

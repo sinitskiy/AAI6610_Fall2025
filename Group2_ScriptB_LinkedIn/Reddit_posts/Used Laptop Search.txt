@@ -1,0 +1,16 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/wfk9uv/used_laptop_search/
+Title: Used Laptop Search
+
+Content:
+I am a current college student searching for a used laptop because my current machine has run into memory limitations when studying machine learning. What advice would you give me for making sure I avoid scams and make a safe decision? Any specific sites/sellers you would recommend I look at or avoid?
+
+Comments:
+- I wouldnt buy a laptop - check out google colab or paper space.
+- Do you have access to an HPC through your University? I can run massive operations through a terminal app on my phone since I've pushed everything to a supercomputer.
+If not, consider Amazon cloud computing. Maybe your uni would pay for that?
+
+A new laptop is probably not the answer, sorry to say
+- A laptop is not going to have a powerful enough cpu or gpu to do machine learning. Even if you get more memory you will run into other limits. 
+
+Stick with the current laptop and farm it out as others here suggest.

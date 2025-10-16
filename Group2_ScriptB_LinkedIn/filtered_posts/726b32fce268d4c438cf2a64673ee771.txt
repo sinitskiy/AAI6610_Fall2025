@@ -1,0 +1,63 @@
+URL: https://www.linkedin.com/posts/sfi-visual-intelligence_new-sfi-visual-intelligence-paper-featured-activity-7364944497157324801-hGC9
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+SFI Visual Intelligence的动态
+SFI Visual Intelligence
+
+2,023 位关注者
+
+1 个月
+
+New SFI Visual Intelligence paper featured in EurekAlert!: AI matches human experts in classifying microscopic organisms 🤖 🐚
+
+A recent study shows how deep learning can achieve human-level performance in estimating uncertainty when classifying foraminifera—marine organisms typically found in marine environments
+
+The study is authored by by PhD Candidate Iver Martinsen and colleagues at Visual Intelligence, UiT- The Arctic University of Norway, Nofima and Norwegian Centre for E-health Research
+
+Past research has attempted to automate these classification tasks—a usually laborious and time-consuming manual process—with deep learning methods. Though several studies show significant promise, few have focused on the uncertainty of the methods’ classifications
+
+“Uncertainty estimation is crucial to avoid misclassifications that could overlook rare and ecologically significant species. It is important to develop deep learning methods which accurately calculate how uncertain their predictions are”, says Martinsen
+
+🔗 Read more about the study in EurekAlert!: https://lnkd.in/difZNqVg
+
+📸 : Petter Bjørklund / SFI Visual Intelligence / EurekAlert!
+
+Robert Jenssen, Line Eikvil, Anne Solberg, Inger Solheim, Petter Bjørklund, UiT- The Arctic University of Norway, University of Oslo, Norsk Regnesentral, Fred Godtliebsen, Steffen Aagaard Sørensen, Eirik Myrvoll-Nilsen, Miguel Ángel Tejedor Hernández, Samuel Ortega  Sarmiento
+
+11
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+environment coastal & offshore (eco) magazine
+
+6,317 位关注者
+
+1 个月
+
+In a recently published study, researchers show how deep learning can achieve human-level performance in estimating uncertainty when classifying forams. More:
+
+https://lnkd.in/dqbpDxRg
+
+#appliedmarinescience #oceanresearch #AI
+
+AI Matches Human Experts in Classifying Microscopic Organisms - environment coastal & offshore
+https://ecomagazine.com
+赞
+评论
+分享
+

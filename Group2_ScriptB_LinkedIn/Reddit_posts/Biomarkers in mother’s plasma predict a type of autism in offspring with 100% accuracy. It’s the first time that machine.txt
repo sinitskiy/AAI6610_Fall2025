@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/l5nbsj/biomarkers_in_mothers_plasma_predict_a_type_of/
+Title: Biomarkers in mother’s plasma predict a type of autism in offspring with 100% accuracy. It’s the first time that machine learning has been used to identify with 100% accuracy maternal autoantibody-related autism spectrum disorder-specific patterns as potential biomarkers of ASD risk.
+
+Content:
+
+
+Comments:

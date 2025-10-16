@@ -1,0 +1,5 @@
+URL: https://www.linkedin.com/posts/hantswilliams_predicting-llm-hallucinations-before-they-activity-7368663537671495684-4lWf
+Date: 2025-09-24
+Author: Unknown
+
+Predicting LLM hallucinations before they happen within a open-ai workflow ------> for those that know a little python, demo code here: https://lnkd.in/deS_gWvw

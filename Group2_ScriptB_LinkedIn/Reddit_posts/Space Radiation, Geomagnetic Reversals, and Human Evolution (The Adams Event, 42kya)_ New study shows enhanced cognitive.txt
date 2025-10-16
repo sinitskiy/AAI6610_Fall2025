@@ -1,0 +1,118 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/ls6izy/space_radiation_geomagnetic_reversals_and_human/
+Title: Space Radiation, Geomagnetic Reversals, and Human Evolution (The Adams Event, 42kya): New study shows enhanced cognitive effects from space radiation exposure in mice
+
+Content:
+This paper is reposted in light of a colleague's recent article published in Nature. It begins to answer this question:  
+
+What were the effects of 1000 years of space radiation exposure to humans during the Laschamp Geomagnetic Reversal, the "Adams Event", ~42,000 years ago?
+
+https://www.nature.com/articles/s41598-021-83447-y
+
+"By six months post-exposure, deficits in spatial learning were absent in irradiated mice, and synaptic potentiation was enhanced. Enhanced performance in spatial learning and facilitation of synaptic plasticity in irradiated mice persisted 12 months post-exposure, concomitant with a dramatic rebound in adult-born neurons. Synaptic plasticity and spatial learning remained enhanced 20 months post-exposure, indicating a life-long influence on plasticity and cognition from a single exposure to HZE (high-ionizing energy) in young adulthood."
+
+----------------------------------------------------------------------------------
+Authors' Note:
+This paper was originally written in December of 2018 by myself and a colleague. It attempts to outline the hypothesis that space radiation caused humans to evolve, both behaviorally and linguistically. The catalyst appears to have been the Laschamp geomagnetic excursion, ~42kya.
+
+Recent articles by NPR and The Guardian rekindled our interest:
+
+https://www.npr.org/2021/02/18/969063568/ancient-trees-show-when-the-earths-magnetic-field-last-flipped-out?t=1614174355757
+
+https://www.theguardian.com/science/2021/feb/18/end-of-neanderthals-linked-to-flip-of-earths-magnetic-poles-study-suggests
+
+Please let us know what you think and share this with anyone who might be interested. We acknowledge and appreciate what this community is able to do for our collective scientific process and hope to get feedback to further our research.
+
+Thank you for reading...
+
+
+Space Radiation and Human Evolution:
+The uncertainty surrounding the origins of Homo sapiens behavioral modernity and linguistic capacity has generated multiple theories regarding the root cause and exact timeline of our species’ development. This paper describes a process and outlines experiments by which a single catalyst, space radiation, could induce modern human traits.
+
+Timeline of Behavioral Modernity and Language:
+The why, when, and where of the emergence of behavioral modernity and language has been considered “the hardest problem in science” due to the lack of empirical evidence^1. A prominent theory explaining the behavioral breakthrough in humans, often called the Late Upper Paleolithic Model, describes a “revolution” that occurred 40-50,000 years ago and allowed for the expansion of Homo sapiens into Europe and Asia^2-4. Many attributes of modern humans emerged during this time period, including a substantial growth in artifact diversity, the shaping of materials into formal tools, the first appearance of incontrovertible art, spatial organizations of camp floors, elaborate graves, and many other archeologically-proven behaviors^2. A key component of this theory is the relatively short period of time, a few thousand years, over which these behavioral traits grew exponentially^2-4. Alternatively, competing theories argue that a slower, more gradual development of human behavior is most consistent with hominid evolution, and posit an earlier timeline of 300-400 thousand years ago during which behaviorally modern humans slowly emerged and developed^5-8.
+
+Similarly, the scientific debate on the origins of language offers several theories that fit into two general frameworks: a relatively sudden, single-step ‘discontinuous’ model, and a more gradual ‘continuous’ prototype. Single-step discontinuous theories, like those put forth by Noam Chomsky and Ferdinand de Saussure, argue that a relatively rapid progression of language development occurred sometime between 200,000 to 60,000 years ago^9. Alternative continuous hypotheses vary in their specifics but support a gradual formation of language over hundreds of thousands of years^10-12.
+
+The hypothesis of this paper aligns with the sudden, single-step theories of human development in behavior and language, and posits a single origin for this great leap forward: space radiation. Furthermore, our proposed experiments will help corroborate or refute this catalyst of behavioral and linguistic transformation.
+
+Geomagnetic Reversals & the Laschamp Excursion:
+When cross-referencing H. sapiens anthropologic timeline from 40-50,000 years ago with Earth’s geologic history, a global natural phenomenon stands out in its proximity and magnitude to humans’ behavioral and linguistic single-step milestone: our planet was experiencing a geomagnetic reversal. Based on argon dating techniques, the Laschamp Excursion transpired 40-42 thousand years ago^13, and while it was relatively brief in duration, lasting 250-1000 years, the magnetic field’s strength dropped precipitously to about 5% of its current level^14. This increased the amount of space radiation that reached the Earth’s surface, and can be measured in the amounts of cosmogenic isotopes, specifically beryllium 10 and carbon 14, in ice sheets and rocks from Greenland, France, North America, and New Zealand^15,16. Throughout Earth’s history, geomagnetic reversals have periodically switched the planet’s magnetic poles, dramatically reducing the strength of our magnetic field. This field, which shields all life from space radiation, has changed 183 times in the last 83 million years. 
+
+It is unclear why modern humans did not emerge from earlier geomagnetic reversals or why H. sapiens were so uniquely positioned above other species to develop such linguistic and behavioral complexities. We do know, however, that hominids survived several geomagnetic reversals and that Homo sapiens rapidly developed immediately after the Laschamp Excursion. Following this, we ask: what are the effects of long-term exposure (250-1000 years) to low-dose space radiation on human biology and behavior? 
+
+Space Radiation and Hormesis:
+A majority of scientific research describes a negative effect of radiation on animal biology. In fact, the medical community’s consensus is that no amount of radiation is healthy for any bodily organ and is described by the linear no-threshold (LNT) model. This posits that the negative effect of radiation is additive at any dose, i.e. that all exposure to radiation is harmful. Recent studies on the effects of radiation at low doses, however, have given credence to alternative theories. The hormesis model is one of them, and it predicts biological and functional benefits from low doses of radiation. Figure 1. shows the concept of hormesis from an oncological standpoint, demonstrating a reduced risk of cancer at low doses of radiation, and is specific to the type of radiation administered^17-21. Known as radiation hormesis, it characterizes low-dose radiation as a physiological stimulus that contributes to cell damage control and overall improved health.
+
+Fig 1.: https://www2.lbl.gov/abc/wallchart/chapters/appendix/appendixf.html
+
+Low-dose radiation may improve biological health through several mechanisms: mitigation of reactive oxygen species, apoptosis of oncogenic cells, activation of DNA repair enzymes, and immunosuppression^22,23. While most scientific work looking at the effects of ionizing radiation on the brain demonstrates biological and cognitive impairments^24-28, the studies often look at only high doses of radiation and observe only short-term effects. 
+
+Hypothesis:
+The increased amount of space radiation that reached the Earth’s surface during the Laschamp Excursion may have caused changes in human brain function, architecture, and cell biology that precipitated the exponential progression of behavioral modernity and the development of language. Even though space radiation is known to have increased during this time, the exposure to radiation was likely to have been in the low-dose range and may have consequently acted within a hormesis model. We can infer the radiation dosage during this period from the exposure astronauts face during space missions (50-2000 mSV over a 6 month period)^29,30. Our hypothesis largely relies on the chronological correlation of the Laschamp Excursion, the development of human behavioral modernity, and the advent of sophisticated language, all occurring approximately 40-50 thousand years ago. Our hypothesis is in need of further scientific evidence to determine if this association is more than just a geologic coincidence. Additionally, because hominids survived several geomagnetic reversals with corresponding increases of exposure to space radiation over millions of years, it is possible that the timeline of our hypothesis is not broad enough and should include the cumulative effects of space radiation on the entire history of hominid development. We believe that the Laschamp Excursion, however, is a good place to start. 
+
+Proposed Experiments and Further Research:
+Investigate the effects of low-dose space radiation (specifically heavy ions and high-energy protons) on cognitive and social-cooperative functions in animals after acute and chronic exposure at different post-exposure time points, especially tracking long-term time points and hereditary effects on subsequent generations.
+
+Investigate the effects of low-dose space radiation on biological substrates in the brain, like neurogenesis, synaptic functioning, and gene expression to see if changes are inherited by offspring.
+
+Investigate genomic data from animal, human, and plant samples prior to, during, and after the Laschamp Excursion in order to possibly highlight any differences in mutation rates, demonstrating a possible effect of increased exposure to space radiation.
+
+Investigate the nature of magnetic field degeneration during a pole reversal, using dipole and multi-pole models to discern where the magnetic field would be weakest and strongest, indicating possible geographic areas most affected by space radiation.
+
+Investigate the relationship between geomagnetic reversals, climate change, and mass extinction events, especially in relation to increased volcanism. This includes the possibly Laschamp Excursion-induced Campanian Ignimbrite super volcano eruption in Italy, the largest in the last 100,000 years, which deposited ash across Europe, cooled the planet by 1-2 degrees Celsius, and coincided with Neanderthal extinction and the transition between the Middle and Upper Paleolithic eras.
+
+References:
+
+1.    Christiansen, M. H. & Kirby, S. in Language Evolution 1–15 (Oxford University Press, 2003). doi:10.1093/acprof:oso/9780199244843.003.0001
+2.    Klein, R. G. Anatomy, behavior, and modern human origins. J World Prehist 9, 167–198 (1995).
+3.    Tattersall, I. Out of Africa: modern human origins special feature: human origins: out of Africa. Proc. Natl. Acad. Sci. U.S.A. 106, 16018–16021 (2009).
+4.    Hoffecker, J. F. Out of Africa: modern human origins special feature: the spread of modern humans in Europe. Proc. Natl. Acad. Sci. U.S.A. 106, 16040–16045 (2009).
+5.    Mcbrearty, S. & Brooks, A. S. The revolution that wasn't: a new interpretation of the origin of modern human behavior. J. Hum. Evol. 39, 453–563 (2000).
+6.    Henshilwood, C. S. & Marean, C. W. The Origin of Modern Human Behavior. Current Anthropology 44, 627–651 (2003).
+7.    D'Errico, F., Zilhão, J., Julien, M., Baffier, D. & Pelegrin, J. Neanderthal Acculturation in Western Europe? A Critical Review of the Evidence and Its Interpretation. Current Anthropology 39, S1–S44 (1998).
+8.    D'Errico, F. The invisible frontier. A multiple species model for the origin of behavioral modernity. Evolutionary Anthropology: Issues, News, and Reviews 12, 188–202 (2003).
+9.    Powers and Prospects: Reflections on Human Nature and the Social Order, Noam Chomsky, 1996. South End, Boston. 272 pages. ISBN: 0-89608-536-8 hardcover; 0-89608-535-X paperback. $40.00 hardcover; $16.00 paperback. Bulletin of Science, Technology & Society 18, 295–295 (2016).
+10.    Pinker, S. & Bloom, P. Natural language and natural selection. Behavioral and Brain Sciences 13, 707–727 (2011).
+11.    Meier, R. P. & Pinker, S. The Language Instinct: How the Mind Creates Language. Language 71, 610 (1995).
+12.    Ulbaek, I. B. in Language Origin: A Multidisciplinary Approach 265–278 (Springer Netherlands, 1992). doi:10.1007/978-94-017-2039-7_15
+13.    Bonhommet, N. & Za hringer, J. Paleomagnetism and potassium argon age determinations of the Laschamp geomagnetic polarity event. Earth and Planetary Science Letters 6, 43–46 (1969).
+14.    LEONHARDT, R. et al. Geomagnetic field evolution during the Laschamp excursion. Earth and Planetary Science Letters 278, 87–95 (2009).
+15.    Nowaczyk, N. R., Arz, H. W., Frank, U., Kind, J. & Plessen, B. Dynamics of the Laschamp geomagnetic excursion from Black Sea sediments. Earth and Planetary Science Letters 351-352, 54–69 (2012).
+16.    Lascu, I., Feinberg, J. M., Dorale, J. A., Cheng, H. & Edwards, R. L. Age of the Laschamp excursion determined by U-Th dating of a speleothem geomagnetic record from North America. Geology 44, 139–142 (2016).
+17.    Scott, B. R. It's Time for a New Low-Dose-Radiation Risk Assessment Paradigm—One that Acknowledges Hormesis. Dose-Response 6, dose–response.0 (2008).
+18.    Sakamoto, K., Miyamoto, M., Watabe, N. & Takai, Y. [Fundamental and clinical studies of low-dose total body irradiation in tumor control]. Gan No Rinsho 33, 1633–1638 (1987).
+19.    Sakamoto, K. Radiobiological basis for cancer therapy by total or half-body irradiation. Nonlinearity Biol Toxicol Med 2, 293–316 (2004).
+20.    Cohen, B. L. Test of the linear-no threshold theory of radiation carcinogenesis for inhaled radon decay products. Health Phys 68, 157–174 (1995).
+21.    Luckey, T. D. Radiation hormesis: the good, the bad, and the ugly. Dose-Response 4, 169–190 (2006).
+22.    Tubiana, M. Dose–effect relationship and estimation of the carcinogenic effects of low doses of ionizing radiation: The joint report of the Académie des Sciences (Paris) and of the Académie Nationale de Médecine. International Journal of Radiation Oncology*Biology*Physics 63, 317–319 (2005).
+23.    Tubiana, M., Feinendegen, L. E., Yang, C. & Kaminski, J. M. The linear no-threshold relationship is inconsistent with radiation biologic and experimental data. Radiology 251, 13–22 (2009).
+24.    Fishman, K. et al. Radiation-induced reductions in neurogenesis are ameliorated in mice deficient in CuZnSOD or MnSOD. Free Radic. Biol. Med. 47, 1459–1467 (2009).
+25.    Rola, R. et al. Hippocampal Neurogenesis and Neuroinflammation after Cranial Irradiation with 56Fe Particles. Radiation Research 169, 626–632 (2008).
+26.    Ji, S. et al. Radiation-Induced Hippocampal Neurogenesis Impairment and Cognitive Deficits Is Associated With Inhibition of BDNF-Trk-B Signaling. International Journal of Radiation Oncology*Biology*Physics 87, S628 (2013).
+27.    Ang, K. K. in Radiation Injury 32, 145–154 (KARGER, 1999).
+28.    Greene-Schloesser, D. & Robbins, M. E. Radiation-induced cognitive impairment-from bench to bedside. Neuro-Oncology 14, iv37–iv44 (2012).
+29.    Cucinotta, F. A. & Durante, M. Cancer risk from exposure to galactic cosmic rays: implications for space exploration by human beings. The Lancet Oncology 7, 431–435 (2006).
+30.    Cucinotta, F. A., Kim, M.-H. Y., Willingham, V. & George, K. A. Physical and biological organ dosimetry analysis for international space station astronauts. Radiation Research 170, 127–138 (2008).
+
+Fig 1. was taken from: https://www2.lbl.gov/abc/wallchart/chapters/appendix/appendixf.html
+
+Comments:
+- This is a fascinating proposal, and the results from the study on nice are intriguing. However I feel like the idea that anatomically modern humans were somehow intellectually inferior for 160k years of their existence is an aberrant observation. We know neanderthals were capable of the range of hearing for which we have evolved, strongly suggesting important vocal faculties, but we have no fossil evidence for language because that only happens with written language. Written language itself must be older than we have evidence of, since most materials other than stone or clay will also not leave remnants. We have again and again had to push back our notion of the origins of things such as art. Naturally, archaeology is a conservative science but to claim the absence of a process or phenomenon from the absence of evidence is a big logic flaw. Thanks for the link - I'll keep tuned.
+- Thank you so much!
+
+I absolutely agree, the process of our evolution (cognitive, spatial, and linguistic) happened over millions of years, not a few millennia.
+
+I, personally, find language, even complex language, abilities in other species on Earth now, so theorizing that Neanderthals, Denisovans, and generations of early Hominids had at least oral language capacity has a lot of veracity.
+
+I think it may benefit our research to separate the biological/cellular/cognitive effects from space radiation and the linguistic implications of those effects. Proving language development is inherently more difficult than demonstrating physical changes (we can track mouse genome/behavior changes more quantifiably than we can understand the development of their "squeaks"). 
+
+The fact that we survived 1000 years of space radiation and then within 40,000 years left a larger archaeological footprint on Earth than we did in the previous 1.5 million is intriguing. 
+
+During our hominid lifetime though, we've survived over a hundred geomagnetic reversals, so maybe the Adams Event is just the beginning of this mystery and the answer is "yes" space radiation caused/contributed to these changes over millions of years, not just a single millenium-long event.
+
+The study on mice published this week really helped begin this idea 2 years ago, when the experiment was still in research phase. At the time, I was talking to my colleague about an interesting geologic/anthropologic chronological conicidence I found (the Laschamp Geomagnetic Excursion, space radiation, and a human evolutionary milestone at 42kya) and he told me of a friend's experiment for NASA on mice...2 years later, here we are...
+
+The fact that space radiation has beneficial long term effects is fascinating to me...the next step in this mystery is seeing if those enhancements are heritable. 
+
+It would be interesting to check our hominid DNA record from 30-50kya and look for anomalies/changes/mutations...the Human Genome Project in Washington, DC, probably already has this information.  The same could be done with plant and animal fossils from museums around the world...the impact of space radiation will either be there in our DNA or it won't...

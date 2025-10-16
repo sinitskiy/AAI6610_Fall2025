@@ -1,0 +1,46 @@
+URL: https://www.linkedin.com/posts/adlvdl_i-liked-a-lot-this-post-i-have-been-found-activity-7364572904979587073-zq6Q
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Antonio de la Vega de León的动态
+Antonio de la Vega de León
+
+AI/ML expert for drug discovery
+
+1 个月
+
+I liked a lot this post. I have been found myself in this situation, first as junior and then as senior. And while I think this is a lesson that is quickly assimilated, it made me thought of a similar experience that I have not heard discussed as much.
+
+That is when you see a new model and its performance is claimed to be better (or its uncertainty to be lower) than experimental techniques. What sounds like a huge milestone for AI, to me raises red flags. I think one example was when Alphafold was reported to predict protein structure with better resolution than Xray crystallography.
+
+Why the red flag? Because the uncertainty associated with the results of experimental techniques define the certainty we can have of what the ground truth is. If a machine learning model has lower uncertainty, in opinion, you run the risk of the model overfitting uncertainty that are specific to that experimental assay, but may not be relevant to the biological event that is being measured. In other words, the model is learning noise we don't really care about.
+
+What can you do about it? I think the best you can do is model together (maybe as a multitask model) results from two or more orthogonal assays that measure the biological event you are interested in. Sadly, this is not always available or easy to obtain.
+
+Do you agree this is an issue to account for? If so, how would you adapt your ML modelling strategy? It would be great to hear what people think.
+
+Brandyn Ewanek
+
+Data Science Teacher
+
+1 个月
+
+Why "perfect accuracy" is the biggest red flag in machine learning.
+.
+The junior data scientist sees 99.9% accuracy and celebrates.
+.
+The senior sees the same thing and gets worried.
+.
+Why? Because perfection is the biggest red flag in machine learning.
+.
+It’s a classic case of overfitting. The model didn't learn the patterns, it memorized the traini

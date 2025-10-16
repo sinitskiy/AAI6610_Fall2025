@@ -1,0 +1,68 @@
+URL: https://www.linkedin.com/posts/deeplearnirdta_deeplearn2024-machinelearning-deeplearning-activity-7213209682595762177-TRBL
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+DeepLearn的动态
+DeepLearn
+
+913 位关注者
+
+1 年
+
+🚀 Exciting times at DeepLearn 2024! 🚀
+
+Professor: Sergei V. Gleyzer
+University: The University of Alabama
+Course: Machine Learning Fundamentals and Their Applications to Very Large Scientific Data: Rare Signal and Feature Extraction, End-to-End Deep Learning, Uncertainty Estimation and Realtime Machine Learning Applications in Software and Hardware
+Level: Introductory/Intermediate
+Dates: 15th - 19th of July
+Location: Universidade da Maia - UMAIA
+
+📅 Course Highlights:
+
+Machine Learning Basics: Get introduced to the fundamentals of machine learning and classification theory based on statistical learning.
+
+Popular Algorithms: Delve into two classes of popular algorithms: decision and rule-based methods (decision trees, bagging and boosting random forests) and deep neural network-based models (fully-connected, convolutional, recurrent/LSTM, graph neural networks, transformers).
+
+Practical Applications: Focus on practical applications in analyzing large scientific data, ensuring interpretability, and estimating uncertainty.
+
+Feature Extraction: Learn how to best extract meaningful features from large datasets.
+
+Realtime Deep Learning: Explore the implementation of real-time deep learning algorithms in both software and hardware.
+
+No Prior Experience Needed: This course is designed for beginners; no previous machine learning background is required.
+
+Join us to gain a comprehensive introduction to machine learning and its applications in analyzing very large scientific data, and enhance your skills in this rapidly evolving field.
+
+For more details, visit: https://lnkd.in/dU4c7vZU
+
+#DeepLearn2024 #MachineLearning #DeepLearning #DataScience #FeatureExtraction #UncertaintyEstimation #RealtimeML #AI #ScientificData #TechInnovation
+
+93
+1 条评论
+赞
+评论
+分享
+Angela Howell-Moneta
+
+1 年
+
+That looks like such an interesting and important course.You will be great explaining this. 
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+91

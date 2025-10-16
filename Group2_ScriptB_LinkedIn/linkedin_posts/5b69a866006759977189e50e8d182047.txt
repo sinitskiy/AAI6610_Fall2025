@@ -1,0 +1,49 @@
+URL: https://www.linkedin.com/posts/fabricebernhard_have-llms-read-all-the-books-in-the-world-activity-7316758241470832642-Lxtx
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Fabrice Bernhard的动态
+Fabrice Bernhard
+
+Cofounder of Theodo, Coauthor of The Lean Tech Manifesto - Writing on scaling Agile with Lean Tech and AI to modernise legacy IT
+
+5 个月
+
+Have LLMs read all the books in the world?
+
+I recently shared one of my mental models about how GenAI and LLMs work: "Imagine the LLM has read every book in existence. When you prompt it, it generates an answer by averaging all the content from books that are relevant to your prompt."
+
+The person challenged me on that assumption: Have LLMs actually been trained on all the books out there?
+
+It certainly feels like it—but copyright restrictions should theoretically prevent AI companies from accessing all that content.
+
+Now we have an answer: The Atlantic revealed that Meta had decided to train its LLaMA model on millions of books sourced illegally from Libgen, a pirate website.
+
+Unfortunately, this means that the AI race is run at the expense of authors' rights.
+
+I'm torn on this. On one hand, I love the easy access to vast amounts of knowledge that LLMs provide. On the other, if these models undermine authors' ability to benefit from their work, what incentive remains for creators to produce new, original content—the exact kind of content LLMs depend upon?
+
+Is there a risk of the rise of AI slowing down global knowledge creation?
+
+46
+35 条评论
+赞
+评论
+分享
+Dr Eliza Mik
+
+IT Lawyer, Academic
+
+5 个月
+
+Great post but, technically, LLMs have not read books during training but learned (oops, another anthropomorphism) the word distributions "of" those books. Reading involves engaging with substance... As probabilistic models of word distributions encountered during training, LLMs do not acquire knowledge. The copyright aspects of the problem are a bit beyond me but  I am sure that LLMs cannot create or store knowledge - just "high-probability word strings"... I recommend McCoy's paper on "Embers of Autoregression" on this point. Also, knowledge cannot be brute forced fr

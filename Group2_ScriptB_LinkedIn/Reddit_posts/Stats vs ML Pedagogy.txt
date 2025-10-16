@@ -1,0 +1,59 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cqo30n/stats_vs_ml_pedagogy/
+Title: Stats vs ML Pedagogy
+
+Content:
+I enjoy auditing university courses on data science topics. At least in my experience, the stats courses tend to explain-- or even prove-- theoretical properties of different methods (e.g., "This estimator is consistent and asymptotically normal because ...").
+
+On the other hand, the machine learning courses I see tend to focus on intuitions and implementation mechanics. And they get a bit hand-wavy when it comes to justifying an approach (e.g., "The models in the ensemble balance each other out, leading to better predictive performance").
+
+Have you observed this difference? Any thoughts why it occurs?
+
+Comments:
+- The difference is based on who takes the classes. If the professor of a DS class starts explaining what goes on behind a model, they will basically never advance unless the class is full of PhD students or if it's a grad class for a full-time masters that is pretty hard to get into.
+- I will hazard a guess that it's a difference in goals.  Statistics tends to be much more concerned in *how* and *why*, with a rigorous emphasis on causality.  Machine learning tends to be much more concerned with usefulness and predictive accuracy, with no concern for looking into the black box if it seems to work.
+
+Because machine learning embraces the black box, they adopt extremely complicated models.  Because statisticians shun the black box, they tend to over-simplify their models to the point that they can explain them.
+- just think as applied computational statistics.
+- Ensembles are great but they work even better when they’re properly selected. 
+
+I see a lot of this divide and to me it’s too bad, because to be a really good data scientist you need to walk the line between both. If you’re hung up on doing everything *correctly* your work will suffer. (And be boring.) Likewise if you think understanding what you’re doing doesn’t matter, you’re not modeling as well as you could and you have responsibility issues.
+- My quick answer when people ask me this is that stats is akin to top down and ML is bottom up. You use math in one and data in the other as your proof that it works. One is practical the other is theoretical.
+- I want to extract table in  map image
+- depends, we had stats courses with stats majors... but gladfully we were graded differntly :D
+- Great feedback. Two big themes emerge.
+
+I think u/Single_Vacation427 probably best explains the difference I observed. Indeed, the ML classes tend to be undergrad CS courses. And while the audiences probably include many strong math backgrounds, the courses understandably tend toward application.
+
+That said I think u/Key_Addition1818  launched the most interesting thread! Don't miss the accessible paper that u/pacific_plywood  and u/iamevpo highlight. Although the "black box" discussion helps me appreciate a philosophical difference between traditional stats and ML communities (i.e. the strength of assumptions about the structure of underlying distributions), the "new school" still clearly powers their methods with mathematical theory. 
+
+For example, all that averaging you see in loss functions? Yes, it *feels* like the right thing to do. But more importantly the Law of Large Numbers tells us those averages converge to the true expected losses.
+
+Let me know if you've seen a class that really explores those foundations.
+- Guys I need minimum 10 karma to post in this sub reddit, I want to make a post please upvote me so that I can post here! Thanks guys
+- id say its the opposite - its the students
+
+i feel that computer science students dont have the requisite maths background.
+
+i find this strange, when engineering students do get taught the relevant maths ( without getting bogged down on proofs)
+- Nice way of explaining! Statistics / econometrics solves inference problem of finding the law of data generating process from the sample of observarions, while machine learning solves a task of generalisation - based of data that we have how we can predict the outcome when new data arrives. I could only add there may also be different departments teaching these courses, stats or cs.
+- This is the best answer i have ever read.
+- Perfect answer… as an economist turned data scientist I cannot stress enough how well your description captures the subtle differences.
+- With new legislation and focus on explainability, I don’t think that black box approach is long for this world.
+- That’s an interesting point- ML scientists tend to fear bias more while Statisticians fear variance.
+- Adding to your summary, not a class but two articles: 
+
+Athey and Imbens summary article Machine Learning Methods Economists Should Know About
+
+Recently saw someone recommended
+Statistics and Causal Inference by Paul Holland
+- They do actually, all the basics thats needed from linear algebra, calculus, probability theory and statistics to understand ml
+- See also “two cultures of statistics”
+- It is true that statisticians like to have models with low variance.
+
+However, I believe your statement is quite incorrect. Statistics is often concerned with obtaining unbiased estimates of parameters.
+
+In contrast, machine learning techniques often introduce bias in order to decrease variance. They do this to minimize MSE (which is the squared bias + variance) in order to obtain better predictions.
+
+Therefore, it is more accurate to say that statisticians fear bias the most and ML-scientist optimize predictive performance
+- Weird, I would've said that it's the opposite.

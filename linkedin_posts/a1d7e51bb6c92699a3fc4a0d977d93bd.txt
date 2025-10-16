@@ -1,0 +1,5 @@
+URL: https://www.linkedin.com/posts/joedevon_theres-a-ton-of-talk-about-llm-hallucinations-activity-7130294157633273856-2lhg
+Date: 2025-09-24
+Author: Unknown
+
+There’s a ton of talk about LLM hallucinations and not nearly enough talk about how they will be solved. Knowledge Graphs in the stack. Some great work by and Juan Sequeda and Dean Allemang.

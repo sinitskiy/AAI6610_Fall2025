@@ -1,0 +1,49 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/170loiv/do_most_companies_use_awsazure/
+Title: Do most companies use AWS/Azure?
+
+Content:
+I understand these cloud computings as essentially borrowing "highly efficient computers" from amazon, microsoft, etc so I can do things more efficiently without worrying too much about hardware level logistics.
+
+I'm trying to build some long term meaningful portfolio.
+
+Is it realistic to build my own website and deploy the machine learning model (or statistical, whatever)  that has some regular updates? (hopefully it is useful as well)
+
+I'm relatively proficient at anything related to math/stats but not so much on cloud computing.
+
+Is this how things are done in the industry?
+
+Would most jobs I apply in the States use cloud computing?
+
+How much would this cost if I want to do this?
+
+Any insight is appreciated!!
+
+&#x200B;
+
+(I'm on my way to get cert for AWS practitioner, but I'm also wanting to get some other ones too if it will be useful for this project. )
+
+Comments:
+- \- Yes, all big companies use the cloud for some things
+
+  \- They might still use some on-prem servers for others
+
+  \- Azure has a specific tool for deploying web apps called Azure App Service.  You can use this to deploy a JavaScript app without additional tools.  If you want to deploy an R or Python app, you probably will have to Dockerize it.
+
+  \- You can scale down your cloud resources to a low level if it's not doing expensive calculations
+
+  \- If your purpose is only the app and not the other software development stuff (databases, repos, CI/CD, devops), you should look into shinyapps.io.
+- Really depends on the company. I’ve used AWS before at a much smaller company, and now at a large oil company you’ve heard of, we use Azure. Honestly, you’re probably better making sure you understand docker in and out, because regardless of the cloud platform used, you’ll likely be doing most of your work in Docker
+- Most companies have/are shifted to the cloud but it’s insanely expensive so I’m not sure how sustainable it is.
+- Almost every f500 company uses azure AWS or Gcloud by now
+- Yep
+- Depends on who your leadership are in bed with.
+- AWS is #1 in cloud market share, followed by AWS, followed by GCP. Followed way behind by IBM and Oracle. Nobody wants to manage their own hardware these days. Best case if you’re successful in your business and need up scale your infrastructure 5-50x, worst case you’re not so you want the flexibility to reduce your spend. So it’s better to start with cloud or use cloud for any new apps.
+- [deleted]
+- AWS equivalent is probably Amplify
+- For most people most of the time, cloud is cheaper since you only pay for what you use and don’t have to pay for undifferentiated heavy lifting (devops, sys admin, etc) so you save on labor costs.
+- nice to hear that. Thanks.
+- you could also run it in Azure Functions.
+- Is it possible to also use a database in the background? I guess so?  
+Which Azure Service is used for the database?
+- Yes in theory, but I’ve seen too many mistakes.

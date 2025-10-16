@@ -1,0 +1,18 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/xulohc/project_library_for_offline_modelbased/
+Title: [Project] Library for offline model-based reinforcement learning
+
+Content:
+About a year and a half ago I finished my master's thesis on uncertainty estimation in offline model-based reinforcement learning. I revisited the code over the past couple of weeks and turned it into a simple but high-quality (by ML standards) baseline for playing around with model-free and model-based reinforcement learning approaches in both online and  offline settings. It is mostly tested, type-hinted, and documented. Here is the link to the repo:
+
+[https://github.com/Mr-Pepe/offline-model-based-rl](https://github.com/Mr-Pepe/offline-model-based-rl)
+
+I have removed some stuff like hyperparameter tuning with `ray.tune` but it should be fairly easy to implement different training schemes, environment models, or agents on top of the existing code. Feel free to leave some feedback here or as issues in the repository :)
+
+Comments:
+- Great project!!
+
+Could you reproduce the results for MOPO and MOReL? I couldn't find any repo which could reproduce MOReL results from scratch. I read somewhere that it is very unstable wrt hyperparameters.
+
+In any case, it would be great if you add your best hyperparameter configuration for each environment/algorithm and the results obtained, either in the README or the docs (irrespective of whether they match the results of the original papers).
+- Yes, I got both approaches to work. I have added [a figure](https://offline-model-based-rl.readthedocs.io/en/latest/get_started.html#overview) showing the training results and I have also added [a section](https://offline-model-based-rl.readthedocs.io/en/latest/get_started.html#hyperparameters) on hyperparameter tuning. I still have all the stuff lying around, but it was produced against a previous version of the code (tag 1.0.0). PM me and I can send you my thesis if you are interested.

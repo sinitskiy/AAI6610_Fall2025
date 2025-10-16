@@ -1,0 +1,30 @@
+URL: https://www.linkedin.com/posts/michael-shields-25740921_physics-uncertainty-machinelearning-activity-7096838727800426496-Ww00
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Shields的动态
+Michael Shields
+
+Professor at The Johns Hopkins University; President and Principal Engineer at UQuant, Inc.
+
+2 年
+
+Postdoc Opening in Uncertainty Quantification & Scientific Machine Learning
+
+We currently have two open positions for postdocs at the intersection of uncertainty quantification (UQ) and scientific machine learning (SciML) at The Johns Hopkins University. The project is a collaboration among Professors Michael Shields, yannis Kevrekidis, Lori Graham-Brady, Tamer Zaki, Dimitris Giovanis, and Somdatta Goswami, Ph.D. Goswami spanning multiple scientific disciplines. The work will focus on the development of novel #physics and #uncertainty informed operator learning methods that are at the cutting edge of #machinelearning  for physical systems. Recent graduates with an expertise in the following areas are highly encouraged to apply:
+·       Any branch of SciML including, but not limited to physics informed #neuralnetworks and neural operators
+·       #uq for complex, high-dimensional systems
+·       #bayesian #neuralnetworks, Variational Inference, and other #inference methods on high-dimensional systems
+·       Dimension reduction, including latent space or manifold learning
+
+The postdoc will work in a highly #collaborative environment and will be expected to work well with a team that includes mentoring PhD students, collaborating with other #postdocs, and working with multiple faculty members. The successful candidates must be highly self-motivated, with the ability to work both within the team and independently. Each successful candidate will be assigned a primary and secondary mentor from the list of faculty above based on their expertise, interests, and skill set. A Ph.D. in a related #engineering field, #physics, #appliedmathematics, or #computerscience is required. The positions are open effective immediately. Women and members of under-represented groups in STEM fields are strongly encou

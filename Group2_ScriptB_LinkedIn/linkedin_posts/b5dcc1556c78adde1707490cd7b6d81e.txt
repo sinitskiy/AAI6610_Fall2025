@@ -1,0 +1,76 @@
+URL: https://www.linkedin.com/posts/anuragsinghshahi_ever-wonder-how-machine-learning-models-quantify-activity-7247837808919244800-PRHT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anurag Singh的动态
+Anurag Singh
+
+GenAI | NLP | CV | Backend
+
+1 年
+
+Ever wonder how machine learning models quantify uncertainty in predictions? In high-stakes scenarios like healthcare and finance, knowing how confident your model is can be just as important as the prediction itself.
+
+Day 15: Machine Learning Interview Questions
+What is the difference between Softmax and Sigmoid functions, and when would you use each?
+
+Answer:
+Both Softmax and Sigmoid functions are activation functions used to transform the output of a model into probabilities, but they are applied in different scenarios.
+
+
+Sigmoid Function:
+    Range: Outputs a value between 0 and 1.
+    Formula:   Sigmoid(z) = 1 / (1 + exp(-z))
+
+Use Case:
+The sigmoid function is typically used in binary classification problems, where the output needs to be interpreted as a probability for one of two classes (e.g., 0 or 1). It maps the output of the model to a probability score, making it ideal for logistic regression or binary classification tasks.
+
+
+Softmax Function:
+    Range: Outputs values between 0 and 1 for each class, and the sum of all output probabilities equals 1.
+    Formula:
+Softmax(z)_i = exp(z_i) / Σ(exp(z_j)) for each class i
+
+Use Case:
+Softmax is used in multi-class classification problems, where you want to assign probabilities to multiple classes. It’s often used as the final activation function in models like neural networks for problems with more than two classes. It ensures that the predicted probabilities for all classes sum to 1.
+
+3
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+16,441 位关注者
+
+42 则动态
+查看档案  关注
+探索相关领域
+How Machine Learning is Applied in Cardiology
+Tips for Machine Learning Success
+How to Optimize Machine Learning Performance
+Best Use Cases for AI Models
+Evaluating AI Models for Medical Applications
+How to Address Overfitting in Machine Learning
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于

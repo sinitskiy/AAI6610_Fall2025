@@ -1,0 +1,137 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/shfli3/do_data_scientists_use_a_lot_of_probability/
+Title: Do data scientists use a lot of probability (theory and application) on the job? Probability and stats classes need to be taught differently (using real life examples instead of dices and playing cards).
+
+Content:
+I'm learning data science after working as an engineer for 10+ years. I used to take probability in college and struggled through it. So happy I didn't have to use probability or stats for my previous jobs... until I learn you need quite a bite of stats and probability to be a data scientist.
+
+I'm re-learning probability now and found that most of the examples were of dice or cards drawing; same thing that caused me to struggle in college then. I never played any dice game and seldom played card games. I know of them but it does take me a minute to map the scenarios in my brain. I would have to imagine 'what does this mean?', 'is it possible?', 'what if it's not?', and had to try to see other cases if it's not true (iterations & calculate success rate of each). By the time the first scenario made sense to me, the lecture had gone through 5 more examples of just (or majority of) dice or card games. Ugh!! 
+
+The irony of this is: data science look at real life events and make prediction/correlations of every day situation... aka NON dice or card games (unless you work for a casino 'house' or to create slot machine, IDK...) My point is everyone struggled through stats class having to make sense of something they don't do or use daily. THEN, flip around trying to make sense of the world using concepts they have a hard time understanding because the examples are not correlate well with real life (dice game vs chances of finding someone you really click with on a dating app). 
+
+We grow up and see lots of events happening and the chances of something succeed or fail given something else (like the chance of you getting into a car accident if you had a bad argument with your spouse right before you left the house). Not many of us grow up playing card games days after days so our brain don't get used to see these examples being given in prob/stats classes. Yet for professors, they had to probably struggle through the same thing through 4 yrs undergrad, researched and explain in these dice or card games through  4 more years in PhD; so they teach what they are familiar with. That's not the same for the rest of us, especially non card/dice players. 
+
+One upside of using cards and dices is that you have concrete numbers to calculate with. From my limited data science exposure, all models have a certain degree of uncertainty / error. Then why teach something 'absolute' (like chance of getting 2 heads in 6 coin flips where inputs are known and you can calculate them) in class, when real life scenarios involves many unknown factors that contribute to the error rate of the model (chances of you getting cancers could depend on gene, environment, stress, food, etc.). 
+
+My request is if you teach others how to learn concepts in prob/stats or data science, please use daily examples that, say, someone who has gone through at least 10+ years of life could relate too. The brain learns best if it can connect new concepts with what it already  knows (chances of you tripping is increased if you don't tie your shoe laces AND start running). Yes you might have to really think through what examples make sense for the theory you want to teach. Please don't regurgitate what was taught to you before if you yourself had a hard time initially. 
+
+Teaching is an art and a special skill. Many thanks to those who can turn on the light bulbs in others instead of completely break that fragile light bulbs from young minds.
+
+Comments:
+- After skimming through: probability and statistics are different things, they're just taught together. You seem to be struggling with specifically the former. 
+
+A lot of the 'boring' stuff is actually quite fundamental but not necesarily things you'll use. All these stupid dice examples are 'necessary' to understand what probability theory is really about.
+- Probability and counting are prerequisites before you move onto mathematical statistics, which itself a prerequisite before you move on to further topics in statistics (GLMs, time-series, bayesian stats, simulation, stochastic processes, survival analysis, etc).
+
+Probability and counting alone is there to make sure you understand basic concepts i.e discrete probability before you move onto learning probability distributions and hypothesis testing. You won't really be pulling colorful balls from sacks IRL, but it is pertinent that you understand simple counting concepts and Venn diagrams before you can touch ANOVA, type I/II errors, autocorrelation, etc.
+
+I personally know stats majors that just knows "if p<0.05 then there is evidence of xxxx", when they don't even understand the underlying concepts of type I/II errors that define hypothesis testing with p-values.
+
+You don't have to be a master in deriving counting/discrete probability, just understand them so you know the fundamentals of statistics that make up the rest.
+- Probability theory (coin toss, die roll, card draw) —> Distributions (Binomial, Uniform) —> generalize to real life examples (clicked on a link or not, different subscription rates, purchased after clicking on coupon, etc.). 
+
+Now expand your knowledge from discrete distribution like Uniform to continuous distribution like Normal. Go to wikipedia and learn how to compute their Expected value and Variance. 
+
+These things are interconnected. You need to develop your imagination how they tie intricately with each other and how one thing leads to other.
+
+The other day I took an online class showing example of rainfall distribution. I am not sure if it lighted bulbs or cracked them!
+- Nah. Cards and dice are analogs for discrete uniform distributions where each outcome is labeled as 1, 2, ... , n. There is literally **nothing** wrong with using them. I mean, what's next? You don't like coin flips and urns, too?
+
+&#x200B;
+
+The real issue here is that you are conflating data science with purely mathematical probability  / statistics. It looks like you are struggling with the later, and the reason as to why that is surely isn't the fact that examples are based on dice and whatnot. Sorry not sorry.
+- that's kinda how maths and ultimately statistics works though.. you have an ~impossible problem and decompose it into something more simple. 
+
+if you want to know if a drug is successful at treating a disease, that's tough, there are so many factors. 
+
+so let's model it using coin flips - heads for cured, tails for not) 
+
+in a control group (without the drug) you see 
+HHTTHTHTTTTT 
+
+what's the likelihood you recover from the disease without intervention? 
+
+and in the experiment group you see 
+HHTTHTHHHHH 
+
+what's the likelihood the drug main has an impact if we model it like this? 
+
+a model is always based on assumptions about the world, which usually aren't 100% true. 
+
+I use 'coin flips' in my job all the time... basically all of stats is just analysing a series of coin flips... it's just the properties of the coin might change..  more sides (eg. dice) or infinite sides and weighted dice (eg. a continuous distribution) 
+
+being able to decompose the problem into something easier to model is 100% critical to the job 
+
+I guess my point is that these simple examples are how you model real life examples.
+- I think you have hit the nail on the head when you say "real life scenarios involves many unknown factors".  
+
+What's the chance of me rolling a 6 on a dice? What's the chance of tossing heads? These are very 'pure' questions, where everyone can agree on the answer. 
+
+What's the chance of getting in a car accident after a bad argument with your spouse? How bad? What's the weather? Is it night time? Where do you live? Is your car well maintained?
+
+What's the chance of finding someone on a dating app? How old are you? What do you look like? What's the app? Are you male or female?
+
+Whenever we're analysing real data, we don't know the right answer. We get a result, but is that correct? We don't know. But if we generate data from a situation with a known solution, we can test our answer against the 'golden' answer. To do this without dice or cards or coins we'd need to get even more abstract - We could say that we have sampled from a chi-square(4) distribution, say, but that seems worse.
+
+Statistics and probability are difficult to think about anyway. Ask people which is more likely when you toss a coin 10 times:
+
+HTHTHTHTHT
+
+or 
+
+HHTHTTTHTT
+
+Now persuade them what the right answer is using car crashes.  
+
+You need some way of saying "There are X possibilities, all equally likely, and Y events occur which satisfy some criterion". Cards, dice, etc aren't ideal, my old boss liked to ask people about colors of M&Ms "You pull 10 red M&M from a bag of 30 M&Ms". Is that better? I don't think I've seen anything better - I'd be interested to hear examples where we could know the truth. 
+
+I've never pulled a marble from an urn, but [urn problems](https://en.wikipedia.org/wiki/Urn_problem)  are pretty common too.
+- Dice is the plural term, dog.
+- It depends what function you work in.. supply chain, inventory management, sales order management, etc
+- Like they don’t know what type I or type II error is? Or how they are connected to alpha levels?
+- Thanks for explaining how probability fits into the data science picture. I probably will have to come back to some of these posts, including yours, to read when I struggle to see past a concept or feel like quitting. Thank you for the encouragement. It means a lot after me quitting my job in 2020, living on my savings, and struggling to learn something new on my own and NOT getting it at times...
+- are you instructor ?
+- Thanks for the explanation and the flow chart-ish. Thanks for laying out how these things are connected. I know that there are a lot out there to learn. I just wasn't sure if investing in REALLY understanding probability is a major requirement for one to be a decent data scientist.
+- Thanks for the clarification of how using coin flips could help real life models. In a way THIS is the answer I was looking for. It does seem like dice/card problems are the simplest and more concrete way to teaching a theory and for practitioners to model complicated scenarios. 
+
+It also dawn on me that the traditional teaching of something starts with a presentation of the theory/idea/equation, then shows examples on its application... then move on to the next concept. My learning mode has always been "why this?", "how does dice problem fit into a big picture to explain my chance of 'blah blah blah'".
+
+After writing this post, I realized that I need to know the big picture of how does this apply to, say, a recommendation system algorithm (which I haven't gotten to get on this learning journey). If the answer makes sense then my brain seems to be in a quiet, studious mode... Now, after reading all the posts, I do feel so much better on my struggle and the 'why this nonsense...'
+- Thank you so much. It seems like you understand my struggle to make sense in the dice or card problems. My brain does go into asking that many questions in all of the problems and examples seen in probability. The M&M example does seem to be a good one.
+
+Because I am curious (asking too many, possibly unnecessary, questions) I want to switch my career to become a data scientist so I could potentially answer some hard questions like, given 1000 depressed patients, what factors would influence what cluster of patients to commit suicide (self termination) vs. starting a mass shooting (others termination) vs. converting to Buddhism to find peace (personal values and views termination). Maybe no one could really answer it. If learning dice and card is the ONLY way to help me view, structure, and answer the problems better then so be it. I just have a hard time answering to myself why cards/dice/marble? Seems like most of other posts answered this one question easily.
+
+Like if you could go back in time and be responsible to teach your old self probability, would you use the same example or can you give better example that you can relate to and understand it better? (sorry another question to make a point...). 
+
+It seems that most scenarios tend to be a play on words that could trip up an innocent/unsuspecting audience. English is not my primary language so that adds to the struggle. Thanks again though!
+- This is a great answer.
+- I teach other people probability type things now, and I use dice or coin examples most of the time, because I don't know any other way.
+
+Let's say I have 1000 depressed patients, and I find none of them commit suicide. What can I say about the probability of a depressed person committing suicide? 
+
+How do I know that that is true? Well, I could take some other event where I knew the probability and see what happened. E.g. I could roll 4 dice and see if I got 4 sxzes.
+
+The probability of that is 1 / (6\^4) = 1 / 1296.
+
+If I roll 4 dice 1000 times, should I be surprised to never see 4 sixes?
+
+What if I roll 3 dice 1000 times. Should I be surprised if I never get 3 sixes?
+
+Dice / cards / coins / urns /M&Ms are all examples of sampling things where we know the underlying distribution, so we know if we got the right answer.  I don't know a simpler way to do it. 
+
+They are also very clearly defined events. What is suicide? Can you always determine if a person died from suicide, or accident? You can't (and the same event would be labelled differently in different countries - regardless of the circumstances, it's very rare for a death to be labelled suicide in the UK  if there is no noted).  How do you know if I converted to Buddhism? If you ask people, I imagine somewhere between 0.1% and 1% of people will say yes, to troll you. So how do you define converted to buddhism?
+- Those questions are really good! They help address hidden contribution factors to something that's hard to measure. It also shows how prior knowledge or experience could be a huge bonus to conducting a good study.
+
+Also, if you can't ask people questions, or get stumps on collecting meaningful data, does that mean you can't do the study, like this depressed patients cluster?
+
+Thanks for putting more fuel into my tank to help me stay the course. I think it would be really rewarding (personally) if one day I can explain social or health issues through data.
+- >Also, if you can't ask people questions, or get stumps on collecting meaningful data, does that mean you can't do the study, like this depressed patients cluster?
+
+No. It means that in real life things are complicated, and you need additional knowledge before you consider the meaning of any statistic.
+
+When I'm teaching, I need simple examples with clear definitions - I can't spend time explaining what is being measured, because some people will not, and some people won't. I'm teaching statistics, not clinical psychology (or clinical assessment, or health policy, or whatever). When you do the study, you'll need domain knowledge or (more commonly) to work with people who have domain knowledge.
+
+When I've written teaching materials, I try quite hard to find real data, but real data that everyone can understand quickly and easily are hard to find, and sometimes I just give up and make up some data to match. 
+
+As soon as you have real data that has any sort of issue people start saying "Why don't you ..." or "How do you ...". The answer is, it's complicated. Today, we're learning about probability and none of that matters and we need to focus on one thing, not everything at the same time.
+- Wow. I'm so glad you responded to my 'rant'. This is exactly what I needed. You gave me lots of golden nuggets. Thanks again! And thanks for turning on the light bulbs in others!

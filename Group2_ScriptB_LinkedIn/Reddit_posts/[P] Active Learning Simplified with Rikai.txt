@@ -1,0 +1,32 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/six83x/p_active_learning_simplified_with_rikai/
+Title: [P] Active Learning Simplified with Rikai
+
+Content:
+[Active Learning Simplified with Rikai](https://blog.eto.ai/active-learning-made-simple-c274f5d053e)
+
+Hey, there, 
+
+We ([Eto.ai](https://Eto.ai)) are building an open-source unstructured ML data (image, video, sensor) framework, called [Rikai](https://github.com/eto-ai/rikai), which features:
+
+* SQL-ML capability (Bring your own model, BYOM)
+   * Support Pytorch / Tensorflow / Sklearn model inference via SQL
+   * Large scale feature engineering and GPU inference via Spark SQL backend
+* Native tensor / numpy SerDe in the dataset
+   * Native Pytorch / Tensorflow / Pandas readers
+* Semantic types for CV tasks
+   * 2d/3d bounding box, segmentations and etc
+* Jupyter integration for visualization and JDBC integration
+   * Semantic types (Image, Video, Bounding box) can be directly rendered in Jupyter notebooks
+   * Use Looker / Mode Analytics to visualize the stats of your image and sensor dataset (via JDBC)
+
+The goal of this project is to empower everyone to analyze machine learning data at scale.
+
+Here is a demo: [Active Learning Simplified with Rikai](https://blog.eto.ai/active-learning-made-simple-c274f5d053e) . It demonstrates how ***simple*** it is to use uncertainty sampling to achieve equivalent model accuracy while significantly reducing labeling cost.
+
+Github repo: [https://github.com/eto-ai/rikai](https://github.com/eto-ai/rikai)  
+
+
+Would appreciate your feedbacks!
+
+Comments:

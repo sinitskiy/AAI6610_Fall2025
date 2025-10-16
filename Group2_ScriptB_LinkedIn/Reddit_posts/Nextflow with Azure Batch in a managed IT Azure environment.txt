@@ -1,0 +1,20 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ap2rre/nextflow_with_azure_batch_in_a_managed_it_azure/
+Title: Nextflow with Azure Batch in a managed IT Azure environment
+
+Content:
+I was brought on at a startup to build their genomics capabilities. Most of my experience in running bioinformatics pipelines is either (a) on a university HPC (PBS/SLURM), or (b) on my personal machine. I have primarily built pipelines using bash to connect different tools. The startup utilizes Azure (administered by a managed IT company) for all of our compute needs. I experimented a bit with Nextflow on my own machine, and am quite impressed with its integration with Azure, and so I am focusing on building around Nextflow. From others' experiences (forums, etc.) with Nextflow on Azure, it seems to work smoothly.
+
+My first goal is to get the nf-core 'Bacass' pipeline running.  However I have not been able to get setup the pipeline to run with anything beyond 1 D2\_v3 family. The reason for this is that our batch account has a low (less than 10 dedicated vCPU quota). When I request a quota increase Azure informs me that I need to go through our cloud provider to have the quota increased, so that compute resources are attached specifically to the Azure Batch account. I have contacted the managed IT company, and it seems that increasing the quota is going to require more work than I expected, and may have an associated cost. Azure provides another solution in which I can link the Azure Batch resources to our 'User Subscription', however the associated [Microsoft learn page](https://learn.microsoft.com/en-us/azure/batch/best-practices#pool-configuration-and-naming) says that the 'User Subscription' allocation mode is really 'to enable a small but important subset of scenarios'. I looked into the documentation for this type of setup and it seems a bit more complicated.
+
+So, r/bioinformatics community, have any of you either (i) setup nextflow in a managed IT adminstered Azure environment, or (ii) setup nextflow using an Azure Batch account set to 'User Subscription' allocation mode? If so, how do you recommend I proceed?
+
+Edit: Realized a bit later that this really is a devops/Azure specific question. Thanks to those in the community who answered. I've decided to cowboy it, enable 'User Subscription' allocation mode, and cross my fingers that it doesn't lead to some unexpected behavior/charges.
+
+Comments:
+- What work did the IT company say it would take? Increasing a quota should be incredibly trivial. Their job is to manage the account not limit your ability to work by unnecessarily restricting resources.
+- It isn't work that the IT company would be doing. They rely on a third party provider for managing licenses, and the quote would be coming from them. The quote will be free to generate, so I will definitely explore that option, and paying to have this done is something that we will do if necessary. However, because this seems needlessly complex (I agree with you, quota increases should be trivial), I thought I would see what others in a similar situation have done first. My hunch is that most startups are in simpler situation with no managed IT involved.
+- A license for what?
+- Setting up cloud infrastructure is all about adjusting the red tape and permissions for these sorts of things. No way around it. Seems like your bogged down by bureaucracy here.
+- Great question... As far as I know this doesn't require any modification outside of Azure provided services.
+- I agree with your assessment of being bogged down by bureaucracy. I've decided to try the 'User Subscription' allocation mode and see what happens.

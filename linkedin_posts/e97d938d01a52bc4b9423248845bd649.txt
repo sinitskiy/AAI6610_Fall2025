@@ -1,0 +1,11 @@
+URL: https://www.linkedin.com/posts/pasnyder_behind-the-scenes-using-oci-generative-ai-activity-7214282896243576833-09jM
+Date: 2025-09-24
+Author: Unknown
+
+Greatly reduce 
+话题标签
+#LLM hallucinations with 
+话题标签
+#OCI Generative AI Agents. Learn how Agents uses a 
+话题标签
+#RAG solution to retrieve real-time, accurate information from your custom data stores for top business agility. https://lnkd.in/gt6FxVh7

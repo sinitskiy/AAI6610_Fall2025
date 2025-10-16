@@ -1,0 +1,47 @@
+URL: https://www.linkedin.com/posts/herbert-turner-iii_the-next-time-a-elementary-middle-or-high-activity-7365425482810441728-AmmA
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Herbert Turner的动态
+Herbert Turner
+
+President and Principal Scientist, ANALYTICA, Inc.
+
+1 个月
+
+The next time a elementary, middle, or high school student ask, what will i use math for in real life, show them this diagram. Furthermore, there are other career pursuits such as Economics, Operations Research, and the like that can be substituted for "Machine Learning and Deep Learning" at the top.
+
+Virendra Giram
+
+Java | Python | SQL | Mathematics
+
+1 个月  已编辑
+
+Four Mathematical Pillars of Artificial Intelligence 🧠🤖
+But no one tell about the basics mathematics understanding or brush up also important in all four sunsets of mathematics.
+
+1. Linear Algebra ➕
+Everyone says “learn linear algebra for ML”, and that’s true — but the foundation is actually basic algebra ✏️ and precalculus 📘. Without them, linear algebra can feel abstract. Not every single concept of linear algebra is equally necessary, but all the basics of algebra are essential to understand it.
+👉 After mastering the basics, moving into vector calculus 🔢 (which combines vectors + calculus) makes the transition to ML concepts smoother.
+
+
+2. Calculus ∫
+Calculus is another cornerstone of ML and DL. To master it, you must first strengthen precalculus 🔑. You don’t need to become a mathematician who knows every complex theorem — instead, focus on differentiation (slopes, gradients) 📉 and integration (areas, accumulation) 📈. These are the ideas that power optimization and neural networks.
+
+
+3. Probability 🎲
+Probability plays a vital role in ML models (Bayesian methods, uncertainty, distributions, etc.). It connects directly with permutations and combinations 🔄, which provide the groundwork for understanding outcomes and events. While probability is sometimes introduced in precalculus, it’s worth treating it as its own pillar because of its importance in AI.
+
+
+4. Statistics 📊
+Statistics is another field was basics are some algebra and more adavaced topics needs calculus.combines 

@@ -1,0 +1,50 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fal7kr/using_machine_learning_to_identify_top_5_key/
+Title: Using Machine Learning to Identify top 5 Key Features for NFL Players to Get Drafted
+
+Content:
+Hello ! I'd like to get some feedback on my latest project, where I use an XGBoost model to identify the key features that determine whether an NFL player will get drafted, specific to each position. This project includes comprehensive data cleaning, exploratory data analysis (EDA), the creation of relative performance metrics for skills, and the model's implementation to uncover the top 5 athletic traits by position. [Here is the link to the project](https://github.com/Gregcrooks75/NFL_analysis/tree/main)
+
+Comments:
+- This used to be called statistics
+- So: after skimming through your project:
+
+Feedback on your overall goal:  Can you define what it means to be “key features”. If your goal is to fine casual estimates; then we need to go back to the drawing board and you need to motivate a Dag or the like and build the model there. Some of the feedback below is relaxed if your goal isn’t causal in nature (ie if you don’t care about inference you can just select good features that make good predictions; just don’t use in sample filtering methods) 
+
+Imputation feedback:  This is going to sound like the prior point; but if you want to use imputation you should have an imputation model. Throwing linear regression at the problem, or any out of box imputation scheme is going to hurt model generalization, period.
+
+Treatment of outliers:  why would you remove them?  Unless transcription related-don’t remove outliers. These are often the most important points otherwise you’re modeling something else that won’t approximate your true data generating process. 
+
+EDA:  I think this point has been beaten to death on this sub:  but if you’re doing EDA you should have some prior knowledge for feature selection not in sample measures of association for filtering. Again- in general this hurts generalized error if you have a large amount of data (and by large I mean a large data set that represent the dgp you want, not just a massive observational data set that combines different eras of football which would be useless because things like the pistol didn’t even exist in popularity at the pro level twenty years ago)
+
+The best advice I can give you if this sounds new is to read regression modeling strategies, Harrell. There’s an online version.
+- This is about as interesting as predicting titanic survivors. If we pretend otherwise, this project is full of poor coding practices that I didn’t bother to digest the insights (if any):
+1. You have zero documentation—no env.yaml, no requirements.txt, not even a quick note on the Python version in the README—regarding the dependencies.
+2. You hard-coded the data file as an absolute path in the notebook, yet it’s in the same directory as the notebook if someone clones this repo.
+3. You kept copying/pasting the same code for the visualizations, rather than parameterizing it. Regarding the few functions you wrote, where are the type hints?
+4. During EDA or data exploration (whatever you wanna call it), you don’t need to literally show your entire workflow. For example, in what I assume is your finished product, you printed out the columns of your table; then you typed it up again and grouped them into numeric and categorical.
+
+In the *very* rare chance that someone clones this repo and tries to run it, they won’t get very far due to #1. Notebooks are no excuse for these poor practices.
+
+
+I guess this is solid if you’re an undergrad starting out, not when you’re 2 years out of school from your MS Data Science degree. I don’t mean to pry, but you did ask for feedback and your LinkedIn is on your GitHub.
+- Xgboost isn’t very good for feature importance.
+I like doing a wide & shallow random forest. Shapley plots from a logistic regression would be good as well.
+- [deleted]
+- I have a question. Why go through the trouble of using XGBoost, and other highly sophisticated methods when you can just use a linear model? If your task isn't focused on prediction, why would anyone use XGBoost?
+- You can use light GBM model and Shap for better explainability
+- How much time does it take to do an project like this one
+- Cool project, love the use of XGBoost to identify key features for NFL draft predictions, what do you think are the most surprising findings?
+- Interesting
+- statistics, famously unrelated to machine learning
+- And also I am pretty sure most of the gathered data like 40 times are overrated
+- Whats that
+- Thank you very much ! Will pay close attention to these details in any upcoming project
+- Found a pdf version of the book so will read it. I actually didn’t remove the outliers, but did mention as example, the removal of absurdly low or high outliers (like 5000 225lbs bench press), but this was a hypothetical example. None of the outliers in my dataset had need to be removed
+- Can I get 10 upvotes so this person can shit all over my project with constructive feedback too 🙏
+- Just out of curiosity, what would be considered an interesting project / why wasn't this an interesting project?
+- Damn I got cooked
+- [deleted]
+- I’m gonna piggy back at this post Feature importance doesn’t mean “causal”
+
+If you’re looking for “the most predictive” features that’s one thing. But associative measures of predictive utility doesn’t imply these are the most important.

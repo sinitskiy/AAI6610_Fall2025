@@ -1,0 +1,48 @@
+URL: https://www.linkedin.com/posts/shekhar-khandelwal-05310130_datascience-bayesian-uncertainty-activity-7088918972485525504-o8Uy
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Shekhar Khandelwal的动态
+Shekhar Khandelwal
+
+Applied AI & Data Scientist | Applied Bayesian ML | GenAI | Author
+
+2 年  已编辑
+
+Recently, I delved deep into Bayesian regression and its uncertainty intervals. 
+
+First of all, having a single point prediction (Frequentist approach) can be limiting. It's like predicting tomorrow's temperature to be exactly 72°F. But what if it's 68°F or 76°F? A point prediction doesn't give us the full story.
+
+Enter Bayesian models! 🌟
+Instead of a single prediction, Bayesian models offer a range, saying something like, "I'm 95% sure the temperature will be between 68°F and 76°F." This is powerful because it captures the inherent uncertainty and variability.
+
+Now about uncertainty interval, initially, I thought:
+"The shaded region in a Bayesian regression plot indicates where 95% of the data lies."
+
+But, here's the twist:
+The shaded region represents the model's uncertainty about its predictions, not the spread of the observed data.
+
+🔍 Insight:
+* Linear Regression Fit (on the left): This shows the fit of the linear regression model to the observed data.
+* Less Confident Bayesian Regression Fit (in the middle): This model acknowledges more uncertainty in its predictions, and the credible interval better captures the variability in the data.
+* More Confident Bayesian Regression Fit (on the right): A model with a narrower shaded region (credible interval) is more "confident" in its predictions. But beware! Confidence doesn't equate to correctness. A model can be confidently wrong!
+
+
+🚀 Takeaway:
+Always validate a model's confidence against actual outcomes. Confidence is valuable, but only if it's well-calibrated. In the world of modeling, being "confidently correct" is the ultimate goal, not just being "confident".
+
+Read up my article on - Why Bayesian modelling is valuable for building Marketing Mix Models (MMM) here - https://lnkd.in/ePRtpkDd
+
+#DataScience #Bayesian #Uncertainty #ModelingInsights #MMM
+
+

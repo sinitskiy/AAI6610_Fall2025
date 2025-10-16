@@ -1,0 +1,28 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/5dhxjm/discussion_multistep_prediction_using_lstm_based/
+Title: [Discussion] Multi-step prediction using LSTM based RNNs
+
+Content:
+In several applications using LSTMs/RNNs (such as char-rnn or Alex Graves handwriting generation), at training time we learn a recurrent network that predicts the next input as the output of the previous time-step. At prediction time, to do multi-step prediction we feed the last input and the output we obtain is considered to be the input at the next time-step. This process is continued until we get predictions for as many steps as we need.
+I understand that since the LSTM is trained to do one-step prediction very accurately, this model still ends up with good predictions for multiple steps after the last input. But, as is bound to happen, the uncertainty/error in the predictions grows at each step and we could end up with very inaccurate predictions after 2-3 steps.
+I am currently trying the model introduced by Graves for a sequence prediction and I observe that my one-step prediction is quite accurate but the error blows up after 2 steps.
+I was wondering, is there a better way to do this, that has been explored in the past? Note that the problem is not to generate new text or handwriting, but conditioned on a part of the sequence, predict the next few time-steps.
+
+Comments:
+- Relevant papers I think:
+Professor forcing: https://arxiv.org/abs/1610.09038
+Incremental Sequence Prediction: https://arxiv.org/abs/1611.03068
+- Iterating next-step prediction doesn't actually give you a good sample for the multi-step sequence as a whole. You can use beam search to improve quality of your prediction, with the drawback that beam search is more computationally intensive depending on the 'width' of your beam.
+- I have a question. Say I wish to forecast a continuous value that depends on historical data. And that historical data has many features like in case of regular machine learning algorithms. How would we use LSTM/RNN in that case? All I've seen is single sequences in RNN. No features/labels etc.
+- Probably one of the simplest things to try in terms of lines of code (~2):
+
+https://arxiv.org/abs/1506.03099
+- And with the other drawback that in an admittedly handwavy sense it makes the sampling smarter than the training, so it will noticeably become more conservative in its output as it always tries to maneuver back toward long sequences of highly predictable output. Extremely noticeable as you increase the beam size.
+
+Fascinating paper out this year about [integrating beam search into training](https://arxiv.org/abs/1606.02960) -- unfortunately they haven't released code and I haven't nearly the expertise needed to implement it myself.
+- Pseudo code TL;DR?
+- Thanks. This paper seems to be super helpful!
+- if coin==heads:
+  next_input = sample_softmax(current_output)
+
+(implied: else: next_input = ground_trut_next_input)

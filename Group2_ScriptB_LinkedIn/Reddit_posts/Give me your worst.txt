@@ -1,0 +1,110 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19anbhy/give_me_your_worst/
+Title: Give me your worst
+
+Content:
+I read that it’s good to quantify your impact/savings in your resume, so I tried that. Is it too much? And yes these are all real savings(and not that much for an insurance company). 
+
+Thanks!
+
+Comments:
+- [removed]
+- April 2019- April 
+2020
+
+This disturbs me. Make sure the year is on the same line.
+- comapny
+- I haven’t done interviewing in a few years so I can’t speak to current job market. But compared to what I saw in 2019-2020 your resume would be in the upper quartile of applicants just by attaching business value to your projects. I think your bullets are descriptive enough to make it clear what you did while leaving enough curiosity for the interviewer to dig deeper into the specifics.
+- Apart from spelling, formatting, etc.. that others have pointed out. 
+
+Your accomplishments are completely hollow. "Saved $840k with mAcHiNe LeArNiNg using sKlEaRn"...
+
+"Saved $840k by (insert how you changed the business process here) using various ML techniques."
+
+I dont hire a data scientist because they can use xgboost or whatever, I hire a data scientist because they can change the business/affect business metrics. 
+
+How do you:
+
+* Identify problems/opportunities
+
+* Go about ensuring that you can build a robust solution
+
+* Capitalize on the product you build to change the business
+- Need a little more substance on how your efforts lead to the results you’re claiming.
+
+Machine learn on algorithm that lead to $800k in savings means little to me.
+
+Was it a classification problem? What did you classify that lead to such savings and why was it necessary
+- Need Karma to post my career question, please help!
+- I liked it. I like the focus on what you actually did and impact. The details on how you did it and why you decided to do what you did are for the interview stage. But if I was looking through CVs for a position for your level of experience, you'd definitely pass the initial sift for interview consideration.
+
+Some of the comments around formatting are fair, but generally, it was a clear and easy read, so you get a lot of points for that.
+- I think we need a lot more context to be able to give constructive feedback. 
+
+If you are applying to data science roles and didn't come from a target/feeder school this resume is probably going to be insufficient in some companies eyes to grant an interview for a DS role given the current applicants on the market right now. This is very much a prisoner of the moment statement, but I think its true from what I have seen. There are a lot of applicants right now with legitimate MS Stats and CS degrees with 3 to 5 years of experience applying for roles right now due to the funding slow down in tech. 
+
+Additionally, depending on what roles you are applying to, tech companies may look at your non Stats/CS background and work at an insurance company and be concerned that you are doing really basic things and lack the more advanced machine learning and statistical foundations. This is further evidence by listing Sckit Learn in your opening point to your current job. If you have, I would list things you have built from the ground up, or built something novel to help accomplish your tasks. The direct connection to dollars is excellent and it worth keeping. But you need to draw a connection between why your unique skills are doing that, not the basic Sckit Learn.
+
+If you are applying to roles like a data engineer, I think your resume has good prior information that you could probably do that role well and would probably get some interviews outside of established tech companies. Companies for whatever reason see the engineering fields closer to CS and thus traditional software engineers than a Stats degree and data science. Again this is just what I have experienced and heard, not saying this is going to be true everywhere. In the current market, this wouldn't be a bad route to take and you will probably get more interviews and higher total comp as a data engineer than as a DS right now.
+
+I think this is a pretty good resume IMO, obviously just fix the spelling errors others have mentioned, and the bizarre date formatting. But no amount of resume tweaking is going to change the economic head winds pushing against you.
+
+Again added context would be awesome here, if you are bored and want a change of pace, I would recommend doing an MS Stats/CS online right now, leveling up your skills and resume during an economic downturn is going to be much more feasible than switching jobs.
+
+Hope this helps! Good luck!
+- Experience above education.
+- >> Python - …, Git
+- Your experience is good but the biggest red flag to me is attention to detail and consistency. Things like random typos, unintended line breaks, and inconsistent formatting (do you end titles with ":" or not?) makes me worry that if you can't even put in the effort into making sure your resume (one of the most important work products to get you in the door, let alone only a single page) is perfect, how can I trust you to handle projects that could span thousands of lines of code and millions of dollars of impact?
+
+With that said, I applaud you sharing your resume publicly for critique. Feedback will only make it better!
+
+Also, more nitpicky: here are my thoughts on your "relevant skills" section
+
+* I'd like to see 4 general categories in the skills section:
+   * Databases: Can they access raw data (usually some kind of SQL, NoSQL, ORMs are extra credit)
+   * Analysis: Can they clean up/prep data and create models (things like Excel, R, SAS, Stata, Python, and corresponding relevant libraries)
+   * Concepts: Do they understand the statistics and math behind what they're doing (so your "Data Science" category + common business concepts like A/B testing, data tracking/instrumentation, funnels, etc.)
+   * Visualization: Can they present their results to non-technical folks (we're talking charts and dashboards so things like PowerBI, Tableau, Looker, even Excel here)
+   * Bonus! Engineering: Can they productionalize the concepts and models they've designed (so more like data engineering work with building data pipelines. Things like AWS, and other frontend/backend programming like javascript/swift/obj-c/java/kotlin/go/rust/etc.)
+* "MySQL" is a type of SQL. The section should be called "Databases" or just "SQL".
+* "Statistical modeling" (and to a lesser degree "supervised learning") are so broad. Can you go into detail? Buzzwords are your friend here (which will help you get through the automated ATS recruiters use).
+* "Feature engineering" is not data science. Have you done A/B testing? Tracking instrumentation, etc.?
+- > constructed complex SQL queries 
+
+I think they call it ‘Fraud Strategies’ in this particular domain. 
+
+> Optimised model performance with Keras. 
+
+Seems too bland and without any metrics. Especially looking at two lines above it. 
+Pretty sure you can mention what metric you improved and by what percentage ( or absolute change) 
+
+4th point is also too worded and not that impactful. Fine if you cannot quantify but should be succinct.
+- Why are Snowflake, Oracle, PowerBI under MySQL?
+- Really good resume overall, can see you have a good set of experience. If I’m giving suggestions (which will actually help) then:
+- Inconsistent month format (Aug, August, etc).
+- Latin should be italicized. 
+- PowerBI under MySQL? Maybe put it in brackets with via or something).
+- Keep job start and end month year on same line
+- If you use an acronym and then immediately spell it out after you're wasting space, for example: SIU (Special Investigations Unit) & NLP (Natural Language Processing). 
+
+The only way this doesn't waste space is if you use those acronyms again within the document. (You don't.) If you do the long format word comes first, followed by the acronym. 
+
+Axe the GPA & Deans List, no one cares. Put the month & year you graduated like you do your work history, then put University Name, Cum Laude - it says enough. If it matters I'll ask or see it on your transcript if necessary. 
+
+Axe the DEI bullet it's not helping you. If you want to keep it you need to productize it. Look at resumes for sorority and fraternity presidents to get an idea of how they productize their work. (Specifically look at members of southern university sororities, those women word things for fundraising amazingly.) You need to show tangible impact otherwise it looks like you threw parties or rallies. The former is a who cares and the later could be seen as problematic. Everything in that section should focus on the outcomes. The bullets should be able to clearly answer the question "Why do I care?" and leave very little room for questioning its existence on the page. 
+
+I've read 60 plus resumes at work this past week. The resumes that have worked did leave me thinking "I don't care, how is this even relevant?" And most of these were new grads. I don't care about your experience as a lifeguard or cashier or anything not relevant to this field. Yeah you need to put career history down, but if it's light you should focus on projects and relevant applications of the work you're doing. This doesn't apply to you so only keep things that really make you shine. I'd rather you axe the projects and leadership section and flesh out your experience more. The experience and so what gets you in the door, the passion projects and DEI stuff is what sets you apart in interviews.
+- Whenever I write a resume, I use different action verbs to start  each bullet. So, when you go down and read the first 1-3 words of each bullet you will see a very diverse range of skills exhibited, and are not repeated. 
+
+For example, you have 13 bullets, but repeat “increased” and “optimized”. However, in one of the bullets where you start with “optimized”, you discuss collaboration.  Reword that bullet so it starts with “collaborating”.
+- You’re just trying way too hard man.
+
+No one will believe you that your super unique rf model from sklearn has an annual impact of $840k. There must’ve been other factors heavily influencing that number or you’re just pulling that number out of your ass with some unrealistic calculation. Most likely both.
+- Start building a github repository with examples of your code, projects etc. Include videos describing what you did, how you solved a problem, mistakes you made, etc
+
+The CV is fine along with the changes others have suggested.
+- Rather than tell you what to do I'll just tell you what I think as a hiring manager.
+
+1. Man this guy has a lot of bullet points with no way to verify he did this stuff correctly. Doesn't really tell me what his role was or what he brings to the table.
+2. Feels like he learned how to use sklearn to overfit stuff. Why does he think making SQL queries complex is a good thing? What the fuck is lift and shift?
+3. What does skiing and diversity have to do with anything?

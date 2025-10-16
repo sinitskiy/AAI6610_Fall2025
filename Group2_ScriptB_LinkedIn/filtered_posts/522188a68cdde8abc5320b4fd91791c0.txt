@@ -1,0 +1,66 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_disentangling-uncertainties-by-learning-compressed-activity-7309083949492826113-MwxM
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+6 个月
+
+🔍 Disentangling Uncertainties in System Dynamics 🔍
+
+Recent advancements in uncertainty estimation have led to the development of the Compressed Data Representation Model (CDRM), which effectively distinguishes between aleatoric uncertainty (inherent randomness) and epistemic uncertainty (data scarcity) within learned regressive system dynamics models. 
+
+This innovative framework leverages a neural network to encode data distributions, facilitating direct sampling from output distributions without being limited to Gaussian priors. 
+
+Key highlights of CDRM include:
+
+- Novel Inference Procedure: Utilizes Langevin dynamics sampling for enhanced prediction capabilities.
+  
+- Theoretical Advantages: Demonstrates improved memory and computational efficiency compared to traditional bin-based compression methods.
+
+- Empirical Success: Achieves Area Under Receiver Operating Characteristic curves (AUROCs) of 0.8876 for aleatoric and 0.9981 for epistemic uncertainties, showcasing its superior performance on complex datasets with multimodal output distributions.
+
+This research significantly contributes to risk-aware control, reinforcement learning, efficient exploration, and robust policy transfer in dynamic systems.
+
+     📊✨
+
+#AI #Algorithms #ArtificialIntelligence #DL #DS #DataScience #DeepLearning #ML #MachineLearning #NeuralNetworks #ReinforcementLearning #Tech #Technology #UncertaintyEstimation
+
+Disentangling Uncertainties by Learning Compressed Data Representation
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,133 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+Future Trends in Reinforcement Learning
+Understanding Dynamic Memory Systems in AI
+Tips for Learning and Growing Through Uncertainty
+How to Understand Neural Networks and Llms
+Diverse Datasets for Equitable AI Models
+Challenges and Benefits of Deep Learning in AI
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展

@@ -1,0 +1,8 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/zo1ocx/researchers_develop_a_machine_learning_model_to/
+Title: Researchers Develop a Machine Learning Model to Predict Whether a COVID-19 Test Might be Positive or Not
+
+Content:
+
+
+Comments:

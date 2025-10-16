@@ -1,0 +1,10 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/qdiijf/advice_for_applying_to_phd_programs_as/
+Title: Advice for applying to PhD programs as international students
+
+Content:
+Hi all, I am an international student looking to apply for PhD programs this upcoming cycle. I took my undergraduate study in UC and graduated with a GPA of 3.9. My major was biochem with minor in bioinfo. I had 3 years of undergrad research experience in wet/dry lab projects, and had three manuscripts submitted for publication: one first-author and two co-authors. The first-author paper was a machine learning project related to cancer, and also had been presented in a conference previously. I am looking to apply for schools such as Cornell and Harvard, but not sure whether these schools are a "reach" for me. Would anybody kindly offer me some advice? Thank you very much!
+
+Comments:
+- The biggest thing for PhD admission is previous research experience - which it seems like you have - so great! From your statistics - those programs are likely not a super reach, but if you do apply to those programs, apply to others since it can be a crap-shoot at best. In addition, it may be helpful to learn about the funding models at the schools and look through their sites and see if there are international students. Some schools have a hard time funding international students - so can’t accept as many.
+- Thank you very much for your reply!

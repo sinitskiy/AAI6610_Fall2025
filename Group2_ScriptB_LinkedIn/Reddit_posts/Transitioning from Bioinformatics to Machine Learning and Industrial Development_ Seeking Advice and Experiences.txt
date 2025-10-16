@@ -1,0 +1,36 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/17l00oy/transitioning_from_bioinformatics_to_machine/
+Title: Transitioning from Bioinformatics to Machine Learning and Industrial Development: Seeking Advice and Experiences
+
+Content:
+ Hello everyone! 
+
+I am a bioinformatician with a strong background in Python and its machine learning and data science libraries. I've applied to over 20 internships in the fields of machine learning and industrial development, but I haven't been successful in securing one yet. Despite my experience in research projects and national/international awards, I feel like I'm struggling to make the transition to the industrial sector.
+
+I would love to hear from those who have made a similar transition. Here are some specific questions I have:
+
+1. How did you successfully transition from bioinformatics to areas like machine learning or industrial development?
+2. What additional tools or technologies did you learn to become more competitive in these fields?
+3. What tips do you have for finding internship or job opportunities in the industry?
+4. What online resources, courses, or certifications do you recommend to strengthen my skills?
+5. What strategies did you use to stand out in your applications and interviews?
+6. How did you balance your research experience with industry needs?
+
+Any advice, success stories, or recommendations would be greatly appreciated. I'm eager to learn from your experiences and apply them to my own transition. Thank you in advance for sharing your wisdom!
+
+Comments:
+- I’m curious what specifically is your background, as in education, previous jobs, etc
+ 
+But I don’t have a great answer for you other than n = 20 seems pretty low based on what I typically read here, and cold applying is always much more difficult than getting a referral. maybe focus on networking, informational interviews, etc in order to get referrals and your resume to the top of the stack.
+ 
+also, from my lurking the data science sub, I think these jobs are hard to come by even for those with high experience. it really seems like the job market is tight right now for everyone tech and adjacent - biotech, bioinformatics, data science, even just swe
+- Hello,
+
+Biotech Engineer here, I dont really know how good of an advice I'm really going to give, it is all based on my experience. To give you some context, I switched careers to work in tech a year or so after graduating, I did this mainly for professional development, as in my country job opportunities in biotech are scarce and poorly paid. That said, I have now almost 2 yrs of experience as a Data Analyst and Data Engineer (my current job is kind a blend between the two). As I have seen during my experience in the tech industry, I think what makes a candidate stand out are two main things:
+
+&#x200B;
+
+1. You should understand the focus or main business objectives of the company you are applying to. Try to reflect this in your CV and also try to align your previous experiences to the requirements of the specific job you are applying to ( in this case may state how in bioinf you have maybe implemented some ML concepts in past projects).
+2. Secondly, I would recommend getting some certifications in cloud services (azure, aws) that are used for AI, DS, or ML purposes. This is a thing that many candidates lack, so it could be a relevant way to stand out.
+
+As I said, i dunno how good of an advice im giving, but i really hope it helps. And most importantly, dont get discouraged and be patient.

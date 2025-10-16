@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/belagiannis_trajectory-confidence-robotics-activity-7094540253738225665-gmSg
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vasileios Belagiannis的动态
+Vasileios Belagiannis
+
+Machine learning, Deep Learning and Computer Vision @ FAU
+
+2 年
+
+We designed a #trajectory predictor with measures of #confidence. Read our brand new work on joint uncertainty estimation and out-of-distribution detection. #robotics #machinelearning #deeplearning
+#IROS2023 #FAU FAU Erlangen-Nürnberg
+
+Julian Wiederer
+
+PhD Candidate | Mercedes-Benz AG & Friedrich-Alexander University Erlangen
+
+2 年
+
+Failures in trajectory prediction can have severe consequences for automated vehicles 🤖 🚗 
+--> An open research question is, how we can detect the prediction failures in complex or unseen scenarios? 
+
+🔉 In our recent paper we propose a solution to this question - to be presented at IROS 2023 in Detroit  🚀 
+
+📃 Paper? Pre-print on ArXiv: https://lnkd.in/eyS2JEdb
+
+💡 How? We jointly estimate the uncertainty in the prediction and recognize novel scenarios. On the shared latent space of an encoder-decoder network for trajectory prediction, our uncertainty module estimates the current prediction error and, simultanously, a Gaussian Mixture model recognizes out-of-distribution scenarios. 
+
+🖼 Result? For the experiments, we use a state-of-the-art trajectory prediction model. In the figure, apparently the model prediction is wrong. It predicts a straight maneuver (red), while the actual future maneuver is a right turn (green). Our uncertainty module correctly identifies the prediction error. On the other hand side, the OOD score is low since the scenario is not new with respect to the training data.
+
+🙏 Thanks a lot to all who contributed to the project, especially Julian Schmidt, Ulrich Kreßel and Klaus Dietmayer. A special thanks to my professor Vasileios Belagiannis for always beeing supportive. I am looking forward to our up-coming collaborations!
+
+#automateddriving #robotic #machinelearning #deeplearning #research #mercedesbenz  #opensource #FAU #uniulm
+
+13
+1 条评论
+赞
+评论
+分享
+Mahdi Torabi Rad, Ph

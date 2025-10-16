@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/orzs8a/r_deepminds_epistemic_neural_networks_open_new/
+Title: [R] DeepMind’s Epistemic Neural Networks Open New Avenues for Uncertainty Modelling in Large and Complex DL Systems
+
+Content:
+A research team from DeepMind presents epistemic neural networks (ENNs) as an interface for uncertainty modelling in deep learning, and proposes the KL divergence from a target distribution as a precise metric to evaluate ENNs. 
+
+Here is a quick read: [DeepMind’s Epistemic Neural Networks Open New Avenues for Uncertainty Modelling in Large and Complex DL Systems.](https://syncedreview.com/2021/07/26/deepmind-podracer-tpu-based-rl-frameworks-deliver-exceptional-performance-at-low-cost-69/)
+
+The code has been open-sourced on the project [Github](https://github.com/deepmind/enn). The paper *Epistemic Neural Networks* is on [arXiv](https://arxiv.org/abs/2107.08924).
+
+Comments:
+- flag planting

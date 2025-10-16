@@ -1,0 +1,43 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17vaypt/online_ms_in_machine_learning/
+Title: Online MS in Machine Learning?
+
+Content:
+Hey everyone!
+
+My work has given us the clear to have some amount of tuition reimbursed for continuing education. I currently have an MS in Statistics, but it's largely focused on traditional statistics with a bit of ML. I think it makes sense to pursue an MS in ML to further my understanding, but since I'm employed full-time, in-person classes are not an option. Does the community have an opinions on which programs may be more or less worth looking into for a respectable credential and a strong learning experience?
+
+&#x200B;
+
+Comments:
+- Georgia Tech's online Ms in computer science with a machine learning specialization is pretty well respected.  Their CS program is ranked 8th in the country, yet the degree is only $6,600.  I am starting this program next spring.
+https://omscs.gatech.edu/specialization-machine-learning
+
+UT Austin just recently started an online MS in Artificial Intelligence for $10,000, which you may be interested in also. Coincidentally, UT Austin was tied with Georgia Tech for their 8th place ranking among computer science programs in the US.
+https://cdso.utexas.edu/msai
+
+While there are other good CS programs out there, these are the schools that are high quality and still allow you to take mostly ML courses.
+- Look into GaTech OMSCS or OMSA programs that will cost you <$10K
+- I think the component you're missing is Computer Science.
+- Id you do not want to lose time for application prep you can directly start University of Colorado Boulder's Online MSDS.
+- Georgia tech has a good course
+- Is it possible
+- Woah, that Ms in Comp Sci seems pretty good for the price. Might have to take that one on
+- What about in Europe, Germany ?
+- I feel GT OMSA maybe redundant. OMSCS may be a better route with their ML specialization.
+
+UT Austin is another great choice!
+
+I'd also look into Upenns master in data science program too
+- Can you expand upon that for me?
+- What's the cost and how well does it look on a resume?
+- OMSA would definitely be redundant for someone who has an MS in statistics. I would say that UPenn's Masters in data science might be redundant too, because there's so much overlap for stats. 
+
+My personal opinion is that a masters in data science is a solid degree for someone who doesn't have a degree in computer science or statistics already, especially not a master's in statistics. You learn just enough stats and just enough CS to do the job, but you're not necessarily an SME in either field.
+
+I got a masters in data science 2 years ago and it allowed me to transition from a data analyst position to a data scientist position, so it was quite valuable for me. However, now in my career I realize I want to go even deeper into the cs/ml aspects of the field so I'm starting in the omscs program.
+- 15.5K. The degree is as normal as the on-campus one
+- How far into the OMCS program are you?
+
+Thank you for sharing your ideas - I didn't think about CS as a route in ML.
+- I start next January.

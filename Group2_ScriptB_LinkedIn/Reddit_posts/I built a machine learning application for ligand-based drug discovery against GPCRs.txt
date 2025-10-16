@@ -1,0 +1,45 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/142szaq/i_built_a_machine_learning_application_for/
+Title: I built a machine learning application for ligand-based drug discovery against GPCRs
+
+Content:
+Hi guys,
+
+I reproduced a study (https://doi.org/10.1038/s41598-021-88939-5) to create a neural network that is capable of predicting the GPCR target of a compound given a SMILES string. I initially reproduced the entire study to determine which model would be most suitable for a small web-based application and integrated it into a Streamlit front-end.
+
+I'm currently looking for jobs in bioinformatics/machine learning and I built this application to support my CV. I wanted to know the community's thoughts on this project and how useful tools like these are in drug discovery pipelines. 
+
+You can access the application at [https://gpcr-targetseeker.streamlit.app/](https://gpcr-targetseeker.streamlit.app/).
+
+Let me know what you guys think, thanks for reading! :)
+
+Comments:
+- I'm just a grad student, so I have no idea for jobs and actually I'd love to know if this kind of thing helps. But to me this isn't impressive for the ML side of things but the app and all the other work is impressive to me!
+Just using sklearn for a neural network isn't very practical, even for my research I still need GPUs. Also even for my classes I've improved on papers rather than recreating them. For example for a paper that utilized GCNs, I added attention to the loss function and utilized a different GNN. 
+
+Could be helpful but I would definitely get familiar with Pytorch or Tensorflow for NNs.
+- Any prototype and/or working apps help a bunch. For ML jobs, I think this would be a helpful line on CV.
+
+Bioinformatics side, I would say you may want to look at single-cell studies to match the current landscape of the job market. I recall seeing deep learning approaches being employed in the multi-modal analyses, so maybe you can start there.
+
+Good luck.
+- Nice try, I don't put SMILES strings into web applications though :)
+- For simple classification tasks such as this, would it be necessary to develop more complex architectures? One flaw in the current model is that it is scaled down in terms training data through resampling when compared to the original paper. This was done to abide by Streamlit community cloud resource limits. Would a different architecture (e.g., a GNN) allow me to keep the same scope of data as the original paper while also retaining high accuracy and low resources (e.g., <1 GB of space)?
+
+Reproducing this study was actually the first machine learning project I had ever done (approx. 8 months ago), so I understand why the actual ML architecture is not as impressive. I learned a lot about how machine learning models are developed in terms of data collection/processing and model evaluations through this project. I've done a few projects using TensorFlow neural networks but I am reserving those for later publications. 
+
+I appreciate the feedback!
+- That sounds like a great idea! Would a multi-modal machine model that uses e.g., DNA methylation data and gene expression data from single-cell experiments to predict cell types be a strong project in this space?
+- My apologies but I'm not sure what you mean by that
+- >s, would it be necessary to develop more complex architectures? One flaw
+
+Honestly I haven't read the paper in detail or looked at the data to answer your questions properly. I'm not an expert but if you're resampling for NNs are you introducing noise or information loss? If you make sure each set of samples reach convergence with different epochs does that work? 
+
+GNNs usually work better if you have a natural graph like protein structures or social networks. But I could be wrong....
+
+I'm keeping my eye on this post. I might decide to copy you and formalize one of my side projects if people think this is a good idea.
+- I would say it would at the very least prep you for future interviews. It's an active field of research with growing interest in single-cell multi-omics studies. I would be careful though, with accumulating datasets from different studies (e.g., methylation from study A and gene expression from study B).
+- It may be referring to confidentiality. Industry people aren't keen on putting their protein and ligand into the same tool. A github repo for running locally is our preferred method.
+- Hey I built out a project using your suggestion! Do you mind if I DM you about it?
+- Ohhh that's good to know. I noticed that many machine learning models for drug discovery are only available on github repos and I was wondering why there wasn't any easy to use GUIs like this one. Maybe a tool like this would be more valuable for researchers who aren't as well versed on the computational side of things and can't be arsed to download and run Python scripts locally.
+- Exactly as the previous commenter noted. It's for confidentiality. Our ligands/chemical libraries are highly proprietary - entering the SMILES string into your web application is giving you (a stranger, and potentially a competitor posing as a bioinformatician-in-training) confidential and very valuable information.

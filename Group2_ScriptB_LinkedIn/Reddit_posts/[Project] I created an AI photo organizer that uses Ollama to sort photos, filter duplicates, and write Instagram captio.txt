@@ -1,0 +1,27 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nl8ik3/project_i_created_an_ai_photo_organizer_that_uses/
+Title: [Project] I created an AI photo organizer that uses Ollama to sort photos, filter duplicates, and write Instagram captions.
+
+Content:
+Hey everyone at r/MachineLearning,
+
+I wanted to share a Python project I've been working on called the **AI Instagram Organizer**.
+
+**The Problem:** I had thousands of photos from a recent trip, and the thought of manually sorting them, finding the best ones, and thinking of captions was overwhelming. I wanted a way to automate this using local LLMs.
+
+**The Solution:** I built a script that uses a multimodal model via Ollama (like LLaVA, Gemma, or Llama 3.2 Vision) to do all the heavy lifting.
+
+**Key Features:**
+
+* **Chronological Sorting:** It reads EXIF data to organize posts by the date they were taken.
+* **Advanced Duplicate Filtering:** It uses multiple perceptual hashes and a dynamic threshold to remove repetitive shots.
+* **AI Caption & Hashtag Generation:** For each post folder it creates, it writes several descriptive caption options and a list of hashtags.
+* **Handles HEIC Files:** It automatically converts Apple's HEIC format to JPG.
+
+It’s been a really fun project and a great way to explore what's possible with local vision models. I'd love to get your feedback and see if it's useful to anyone else!
+
+**GitHub Repo:** [https://github.com/summitsingh/ai-instagram-organizer](https://github.com/summitsingh/ai-instagram-organizer)
+
+Since this is my first time building an open-source AI project, any feedback is welcome. And if you like it, a star on GitHub would really make my day! ⭐
+
+Comments:

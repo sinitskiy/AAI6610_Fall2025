@@ -1,0 +1,13 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/jjtkz6/discussion_batch_active_learning_with_deep_neural/
+Title: [Discussion] Batch active learning with Deep Neural Networks for regression
+
+Content:
+I am working on a graph based regression task that could benefit from active learning. Currently I have been looking at a greedy strategy of selecting just the points predicted to be near the Pareto front but I believe that leveraging uncertainty estimation could further improve the efficiency of my search process.
+
+However, unlike kernel based models we cannot set virtual labels and perform rank-1 updates on a GNN nor can I afford to retrain the model for each point queried. I have not been able to find many resources of batch active learning for regression using deep models. I imagine that such literature must exist but that I am looking in the wrong places. My literature search so far has returned several batch active learning for deep models that are only applicable for classification tasks. 
+
+Can I get some suggestions for relevant works to look at please?
+
+Comments:
+- I checked some of my Active Learning literature (I might the outdated for the last months) and you are right, all the examples I saw are about Classification problems. However, independently from the task they test their Active Learning methods, isn't it kind of cross-problem? I mean, couldn't the same methods be applied to regression, detection, or whatever the problem? Most of them work directly with the loss, which can be treated blindly as a single number .

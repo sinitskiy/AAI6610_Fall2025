@@ -1,0 +1,47 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1g51rff/is_python_appropriate_for_parking_machine_software/
+Title: Is Python appropriate for parking machine software?
+
+Content:
+I'm sorry if this is not the appropriate sub for this.
+
+I am a junior developer assigned to a project(my first ever) where I have to create a parking machine software.  
+  
+[https://youtu.be/u40r1tlHFsg?feature=shared](https://youtu.be/u40r1tlHFsg?feature=shared)
+
+Something like this, one which is present in most malls, where it prints a receipt and prints out your ticket or charge. It would need to detect number plates, have data about the car, timings etc available to the owner.
+
+There is existing software for this, it's in java and they want me to improve this software. They have asked me to use java again due to it being much faster than python and better in real time tasks. I do know Java is faster and used more in hardware-software communication but could the work be done in Python?
+
+For starters I have to create a license plate detection system, which is quite easier in python but they said that python will be slower. If anyone does have any experience on this and/or could guide me to at least learning the theoretical aspect so I can at least understand the language to use for my overall project, I'd be really grateful.
+
+
+
+Comments:
+- Anything running license plate detection in python is going to be running the bulk of its processing in C. It'll be just as fast in python as anything else. 
+
+But I would imagine that they want to run it in an embedded device that may have difficulty installing/running Python without significant overhead
+
+FWIW Opencv has a Java implementation that would probably be a better choice
+- I wouldn’t advise you to implement a new feature in a language that isn’t actually used in the system they have at the moment. This would just lead them to think that they wasted their time on you by allowing you to work on this project. It’s fine if you want to just learn but if you want a real impact, I’d use Java like the rest of the system is.
+
+If the device is running Java as a glorified web cam to send data to the server to read and analyze the data, yea sure you could probably run python on a server to do all that, but again, you’d be developing a whole new work flow for the company that I’d guess that they wouldn’t like. (Added cost & complexity) Maybe I’m getting old but try and adapt to the environment you put yourself in rather than reinventing the wheel.
+- Firstly you need the requirements for the project. What exactly need to be done, how fast should the system operate, how bif is the throughput. According to to the requirements you choose a appropriate language.
+
+Some the requirements can be: it works with the present system or it expand the present system without influencing the current features. Or even write it in java. 
+
+With such requirements it get more difficult to you any language you want.
+
+Python being slower then java would not matter if the application is slow anyway or if the throughput is really low. If you have minutes for your algorithm, why should you hurry?
+- Python is totally fast enough, no worry.
+The python library to do the image professing and machine learning parts are just wrappers for C code. So it will pretty much run as fast as C code, as far as the image processing parts are concerned, which are likely to be the only parts that take time (probably 99% or the execution time will be that) at all in such a system.
+- I can’t think of a good reason not to use Python unless this entire system needs to be self contained in a small embedded device, which doesn’t make a lot of sense given the system will be taking payments. What happens if someone steals the embedded device, will they be obtaining sensitive data and avoiding paying their fee? Instead I would use simple software on the ended dead end, maybe not using Python, and then have a separate system that runs the CV tasks remotely. This portion can run Pyrhon. 
+
+Some of the world’s largest software systems run on Python. It’s plenty fast. https://www.reddit.com/r/Python/comments/rzr0z2/is_python_suitable_for_enterprise_applications/
+- [removed]
+- Thank you for your response. Do you think it'd be good enough for machine reading, creating an application, taking the cctv camera stream and then getting the data from it?
+- Yes, but actually I can if it's the better choice, the option is with me, it's a single client and i'm more like a freelancer here.
+- i3 3rd gen, 4gb ram
+- Sure
+- [removed]
+- plenty of repos you can use as a starting point for license plate segmentation / reading. Important part is a good enough camera / camera angle / lighting conditions. As far as hardware and software tools & requirements, that depends on the latency / cost requirements. Is it okay to send the image to cloud for processing? etc..

@@ -1,0 +1,62 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1gba1vy/why_did_java_dominate_over_python_in_enterprise/
+Title: Why Did Java Dominate Over Python in Enterprise Before the AI Boom?
+
+Content:
+Python was released in 1991, while Java and R both came out in 1995. Despite Python’s earlier launch and its reputation for being succinct & powerful, Java managed to gain significant traction in enterprise environments for many years until the recent AI boom reignited interest in Python for machine learning and AI applications.
+
+1. If Python is simple and powerful, then what factors contributed to Java’s dominance over Python in enterprise settings until recently?
+2. If Java has such level of performance and scalability, then why are many now returning to Python? especially with the rise of AI and machine learning?
+
+While Java is still widely used, the gap in popularity has narrowed significantly in the enterprise space, with many large enterprises now developing comprehensive packages in Python for a wide range of applications.
+
+Comments:
+- People forget that write once, run anywhere used to be a major selling point before docker/containerization became a thing
+- In the late nineties, the industry adopted Java as the new C++. SUN Microsystems, which was then the company behind it, put a lot of effort into promoting the language and introducing it into the corporate world.
+
+It also coincided with the Internet boom, where C++ was not a good choice due to its inherent security issues. Although there were other alternatives like Perl, PHP, Python, and a bit later Ruby, which also filled that niche, there was always a more conservative corporate audience that preferred to stick with something from Sun, instead of those Free/Open Source languages created by a bunch of nerds.
+
+Also, many programmers coming from C++ never looked favorably upon dynamic languages.
+
+Finally, Java also did some things better than the alternatives, for instance: being compiled and faster, proper garbage collector, proper exceptions handling, static typing, threads, unicode, the write-once-run-everywhere-tm, etc. (and I know, some of those things are debatable, but my point is that a lot of people actually believed them).
+- Python is slower than Java. 30 years ago this mattered a lot more. Nowadays computers go brrrr so programs run instantly either way.
+- Were you around for the megahertz wars? Clock speed used to matter so much. Java was simply faster.
+- Python in the 90s was mostly the purview of Sysadmins as an alternative to Bash scripts. Most of the scripts looked horrendous and were of the "change this magic number and run this on your system to enable some oddball permissions" ilk rather than being serious software. Once numpy and Pandas came along, it became less of a scripting language and something you could actually write software/pipelines in, and then with Flask/Django, you could actually make a decent website in it that could serve your apps in the "cloud."
+- [deleted]
+- Java was based on C and C++, which people had much more experience in back in the 90s. It was a natural transition to use a language very much like the ones you already liked, but with better memory management.
+
+Java has a really amazing API that makes GUIs and threading very accessible. 
+
+The 90s was seeing the rise of the web, and Java was designed specifically as a platform-independent, web-enabled language, so the development efforts of the time were going to use Java. So by the early 2000s, you had a very solid foundation of Java developers and applications being written in Java.
+- You 100% cannot discount the fact that Java was the first and last programming language to have a [marketing campaign much bigger than most Hollywood movies](https://www.theregister.com/2003/06/09/sun_preps_500m_java_brand/).
+- python is still a nightmare for really large /enterprise-scale projects and Java has some advantages over it there. that hasn't changed.
+- Python is not made for enterprise development. Slow, typing, GIL, OS support, reproductible envs jus to name a few points. BTW: I love Python it's my favorite language, it's just not made for large enterprise projects and this is still true
+- Solid api, elegant language, widespread adoption, big community, many libraries
+- Java is static typing. It's a crusial thing for big codebase  
+Java runs anywhere because of JVM - that was very convenient  
+Java OOP first  
+Java developed like an enterprise language
+- Because C++ is faster than Java, and the only reason to use Python for ML/AI is that it makes it easier to glue together C++ libraries.
+- Python was rising in popularity throughout the 2010s and became the dominant language by 2019. Machine learning hype really started off in 2016 and exploded with LLMs (specifically ChatGPT) in December 2021. There could be some relationship between the two, but it’s a loose one at best. Did Python become more popular because that’s what the most popular ML libraries used, or did the most popular ML libraries choose Python because it was becoming more popular? We’ll probably never know
+- Python is slower .. Therefore enterprises who wanted to run faster code naturally preferred Java. 
+
+But it's not like Python was gone entirely. Many enterprises still used python in some parts. 
+
+Now with the startups emerging, they want to ship code fast and not reliable code per se. So they turned to JavaScript and Python etc since the development times are very low as compared to Java
+- Besides the many good answers I want to add that when we started with Java 1.3 back then, I think almost nobody even knew of python.
+And many of my colleagues from that time are even still in that weird scripting language vs real language thinking and to this day do not believe anybody is using Python etc. for anything else than little scripts, unlike the real languages like Java.
+
+ Besides all the factually great answers we see here so I just wanted to add that this wasn't even in the brains of people. Even 15 years later when I got into ML everything was still a wild mess of C with perl Scripts and lots of MATLAB and tons of different shell languages  and things like Tcl or Scheme... until Python finally became popular and untangled this mess a little bit.
+- 1) when Java launched, the world ran on C
+2) Java devs knew this and created a C clone with the features missing from C while keeping it close enough everybody felt at home
+- Python is a terrible language for software at scale (I'm talking size of code base and team here). It's only popular in ML because it's an acceptable glue language and most ML code used to be notebooks or one off scripts written by a grad student.
+- Well, for one thing, most people don't do actual data science in native python, they do it using Numpy, Scipy, and Matplotlib. None of those libraries existed in the 90s. I'm not sure what the python environment was like back then, but I assume it was much different.
+- Java was supposed to be the new internet language because it would run on a virtual machine and be hardware independent. 
+
+Before JavaScript became popular the hype was to write Java-Applets which are compiled Javacode apps and could be run within a web browser. Eventually browser based JavaScript killed those applets. 
+
+Java itself survived as a C++ competitor due to the garbage collection stuff and again the platform independence. 
+
+Back then, like around the 2000, computers were still slowish and Python was not competitive as an interpreted language compared to  compiled code. I think Python became popular with the introduction of notebooks and the data science hype …
+
+Please, please, can anyone come up with a better language than Python for data science …

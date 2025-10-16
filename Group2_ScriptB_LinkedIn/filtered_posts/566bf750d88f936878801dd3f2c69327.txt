@@ -1,0 +1,34 @@
+URL: https://www.linkedin.com/posts/nirakar-padhy_applied-conformal-prediction-by-valeriy-manokhin-activity-7241831101529264128-u2e_
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Nirakar Padhy的动态
+Nirakar Padhy
+
+Lead Data Scientist | Machine Learning | AI | Python | AWS | MLOps | Mathematics | Statistics
+
+1 年  已编辑
+
+𝗜’𝗺 𝘁𝗵𝗿𝗼𝘄𝗶𝗻𝗴 𝗺𝘆 𝗵𝗮𝘁 𝗶𝗻 𝘁𝗵𝗲 𝗿𝗶𝗻𝗴 𝗳𝗼𝗿 𝗮 𝘀𝗽𝗼𝘁 𝗶𝗻 𝘁𝗵𝗲 𝘂𝗽𝗰𝗼𝗺𝗶𝗻𝗴 𝗔𝗽𝗽𝗹𝗶𝗲𝗱 𝗖𝗼𝗻𝗳𝗼𝗿𝗺𝗮𝗹 𝗣𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻 𝗰𝗼𝘂𝗿𝘀𝗲 𝗯𝘆 Valeriy Manokhin, PhD, MBA, CQF! 
+
+For the past five years as a data scientist, I've worked relentlessly to improve the accuracy and reliability of my machine-learning models. Even though I’ve optimized error metrics and used multiple explainable AI (#XAI) methods to make my ML models more reliable and make non-technical people understand the model predictions, I used to often wonder: How can I truly guarantee that my model predictions are accurate with a certain degree of confidence?
+
+While probability calibration methods offered some help by giving probabilities instead of class scores. But I always wanted more certainty about prediction accuracy. That’s when I discovered conformal prediction in 2024. It’s an amazing technique that provides calibrated probability ranges and confidence levels instead of point predictions, ensuring that predictions are backed by a statistical guarantee. 
+
+𝗖𝗼𝗻𝗳𝗼𝗿𝗺𝗮𝗹 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻 𝗯𝗮𝘀𝗶𝗰𝗮𝗹𝗹𝘆 𝗴𝘂𝗮𝗿𝗮𝗻𝘁𝗲𝗲𝘀 𝘁𝗵𝗮𝘁 𝗮 𝟵𝟱% 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻 𝗶𝗻𝘁𝗲𝗿𝘃𝗮𝗹 𝘄𝗶𝗹𝗹 𝗰𝗼𝗻𝘁𝗮𝗶𝗻 𝗮𝗽𝗽𝗿𝗼𝘅𝗶𝗺𝗮𝘁𝗲𝗹𝘆 𝟵𝟱% 𝗼𝗳 𝘁𝗵𝗲 𝗽𝗼𝗶𝗻𝘁𝘀 𝗼𝗻 𝗮𝗻𝘆 𝘂𝗻𝘀𝗲𝗲𝗻 𝘁𝗲𝘀𝘁 𝗱𝗮𝘁𝗮𝘀𝗲𝘁, 𝗿𝗲𝗴𝗮𝗿𝗱𝗹𝗲𝘀𝘀 𝗼𝗳 𝘁𝗵𝗲 𝘂𝗻𝗱𝗲𝗿𝗹𝘆𝗶𝗻𝗴 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗶𝗼𝗻 𝗺𝗼𝗱𝗲𝗹, 𝗱𝗮𝘁𝗮 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗶𝗼𝗻, 𝗼𝗿 𝗱𝗮𝘁𝗮 𝘀𝗶𝘇𝗲.
+
+Conformal prediction could really change how I approach predictive modelling tasks by giving me reliable and calibrated prediction intervals. This course is a fantastic opportunity to dive deep into these methods and integrate them with my current models, making them even better.
+
+Winning a spot in this course would not only improve my skills but also help me deliver more reliable insights in my work. I’m excited to explore these techniques and apply them to my projects for better decision-making.
+
+Thank you for considering my entry. I’m looking forward to the chance to learn conformal

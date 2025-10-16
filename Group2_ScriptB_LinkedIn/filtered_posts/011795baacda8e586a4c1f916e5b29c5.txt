@@ -1,0 +1,87 @@
+URL: https://www.linkedin.com/posts/luispintoc_the-ai-alliance-%3F%3F-%3F%3F%3F-%3F%3F%3F%3F-activity-7322640771239604224-Fp-r
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Luis Pinto的动态
+Luis Pinto
+
+AI for Science
+
+5 个月  已编辑
+
+🧪 [The AI Alliance] 𝐀𝐈 𝐟𝐨𝐫 𝐌𝐚𝐭𝐞𝐫𝐢𝐚𝐥𝐬 & 𝐂𝐡𝐞𝐦𝐢𝐬𝐭𝐫𝐲 𝐰𝐞𝐛𝐢𝐧𝐚𝐫
+Active and Transfer Learning with Partially Bayesian Neural Networks for Materials and Chemicals by Maxim Ziatdinov
+
+📅 𝐓𝐡𝐮𝐫𝐬𝐝𝐚𝐲, 𝐌𝐚𝐲 𝟏𝐬𝐭 𝐚𝐭 𝟏𝟎 𝐀𝐌 𝐄𝐓
+
+𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫 𝐡𝐞𝐫𝐞: https://lnkd.in/eFDU2m5U
+𝑃.𝑆. 𝐷𝑜𝑛’𝑡 𝑓𝑜𝑟𝑔𝑒𝑡 𝑡𝑜 𝑐ℎ𝑒𝑐𝑘 𝑦𝑜𝑢𝑟 𝑠𝑝𝑎𝑚 𝑓𝑜𝑙𝑑𝑒𝑟 𝑓𝑜𝑟 𝑡ℎ𝑒 𝑐𝑜𝑛𝑓𝑖𝑟𝑚𝑎𝑡𝑖𝑜𝑛 𝑒𝑚𝑎𝑖𝑙!
+
+𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: We demonstrate that Partially Bayesian Neural Networks (PBNNs), which incorporate probabilistic weights selectively within layers, yield accuracy and uncertainty estimations comparable to Fully Bayesian Networks on active learning tasks across molecular and materials science, while significantly reducing computational expense. Additionally, we show how initializing prior distributions with weights pre-trained in theoretical ("digital twin") space enables PBNNs to effectively leverage computational predictions to accelerate active learning in experiments.
+
+𝐏𝐚𝐩𝐞𝐫 𝐥𝐢𝐧𝐤: https://lnkd.in/enxmiwja
+
+𝐘𝐨𝐮 𝐜𝐚𝐧 𝐟𝐢𝐧𝐝 𝐩𝐫𝐞𝐯𝐢𝐨𝐮𝐬 𝐭𝐚𝐥𝐤𝐬 𝐡𝐞𝐫𝐞: https://lnkd.in/e2JMFTEc
+
+30
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+2,618 位关注者
+
+124 则动态
+查看档案  关注
+探索相关领域
+Latest AI Breakthroughs in Chemistry
+AI-Driven Material Science Research
+How AI is Changing Materials Design
+How Machine Learning Transforms Chemistry
+Neural Network Training Methods
+How Machine Learning Improves Molecular Predictions
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

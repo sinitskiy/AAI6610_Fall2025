@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/belagiannis_iccvw2025-fau-deeplearning-activity-7362699687193120790-yQ7G
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vasileios Belagiannis的动态
+Vasileios Belagiannis
+
+Machine learning, Deep Learning and Computer Vision @ FAU
+
+1 个月
+
+Teaching neural networks to say "I don't know". We have designed an uncertainty-aware likelihood ratio estimation method to detect unknown object categories at the pixel level. You should meet Marc Hölle in Honolulu in a few weeks to discuss the paper!
+
+Made in FAU Erlangen-Nürnberg.
+
+#ICCVW2025 #FAU #DeepLearning #AutomatedDriving #NeuralNetworks
+
+Marc Hölle
+
+Teaching machines to know what they don’t know.
+
+1 个月
+
+🚗 Teaching AI to Say “I Don’t Know” and Why That Matters for Autonomous Driving 🛑
+
+In real-world autonomous driving, perception systems don’t just need to be accurate, they need to know when they don’t know. Standard semantic segmentation models often misclassify unknown objects with alarming confidence, creating serious safety risks.
+
+In our latest research, we introduce uncertainty-aware likelihood ratio estimation, a method that can reliably detect unknown objects at the pixel level, even in complex, cluttered driving scenes, where “I don’t know” can be life-saving.
+
+🔍 What’s new?
+ Instead of relying on single-point predictions, our approach leverages evidential deep learning to explicitly model uncertainty. This enables it to:
+ • Reduce confusion between rare known objects and truly unknown ones;
+ • Increase robustness to distributional shifts;
+ • Leverage synthetic outlier exposure more effectively.
+
+⭐ Key results across five benchmark datasets:
+ • Lowest average false detection rate: 2.5% (state-of-the-art);
+ • High average precision: 90.91%;
+ • Negligible computational overhead;
+ • No drop in in-distribution segmentation accuracy.
+
+💡 Why is this important?
+Beyond these immediate results, our work lays the foundation for a general framework for statistical hypothesis testing with likelihood ratios under distributional uncertainty, a promising path toward safer and more trustworthy AI systems.
+
+A 

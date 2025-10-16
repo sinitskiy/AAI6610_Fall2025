@@ -1,0 +1,85 @@
+URL: https://www.linkedin.com/posts/mariodeflorio_cardiovascular-physiology-physicsinformed-activity-7230311095092064256-q3vd
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Mario De Florio的动态
+Mario De Florio
+
+Postdoctoral Researcher | NREL | Hybrid Energy Systems Research
+
+1 年  已编辑
+
+🫀
+
+Understanding and quantifying uncertainty in simulations of physical phenomena is a critical challenge, especially when the data is sparse, noisy, or the models are incomplete.
+
+To address this, we developed a Monte Carlo ensemble physics-informed machine learning method. This framework allows us to accurately estimate the states and parameters of complex differential systems under total uncertainty, including aleatoric, epistemic, and model-form uncertainties. Our focus was on applying this to the CVSim-6 model in cardiovascular physiology, demonstrating robustness even with limited data.
+
+Thank you to the co-authors, Zongren Zou, Daniele Schiavazzi, and George Karniadakis, for their invaluable contributions.
+
+Check out the preprint on arXiv at https://lnkd.in/eJ5K_844
+
+Brown University, University of Notre Dame
+
+#cardiovascular #physiology #physicsinformed #neuralnetworks #totaluncertainityquantification #UQ #timeseries
+
+212
+7 条评论
+赞
+评论
+分享
+William Craig
+
+Experience through the years
+
+1 年
+
+You have shown wonderful growth in your time at Brown Dr. DeFlorio.  Best wishes in your move to Colorado. I hope you like to ski.
+
+赞
+回复
+1 次回应
+Raj Saini, PhD
+
+Technology Specialist at R.K.S. Technology & Services® | Customized Solutions & Services | Energy Technology | R&D | CFD: AI-ML integrations | Alma Mater-IITB & IITM | Financial Modelling
+
+1 年
+
+Congrats Team for this work! 
+
+Can we do have a another study by using #openfoam.? If you share the CAD model (.step/.stl) then we can look into it.
+
+赞
+回复
+Abolhassan Mohammadi Fathabad
+
+● PhD ● Operations Research Analyst
+
+1 年
+
+Cheers to you!
+
+赞
+回复
+Nancy Gaucher-Thomas
+
+Artist, Educator, Arts Administrator and Arts Advocate. Founder of Art League RI. Former President Providence Art Club.
+
+1 年
+
+You are amazing Mario. Both sides of your brain working in harmony ❤️ 
+
+赞
+回复
+1 次回应
+Mahd

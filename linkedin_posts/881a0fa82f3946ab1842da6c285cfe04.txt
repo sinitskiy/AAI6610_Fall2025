@@ -1,0 +1,13 @@
+URL: https://www.linkedin.com/posts/heikohotz_tired-of-llm-hallucinations-in-production-activity-7371632850800123905-xx9G
+Date: 2025-09-24
+Author: Unknown
+
+Tired of LLM hallucinations in production? Standard evals fail you by rewarding models for guessing.
+
+I built an open-source tool based on the "Why Language Models Hallucinate" paper to quantify this risk.
+
+Stop hoping your model is accurate. Start knowing its precise reliability.
+
+Check out the GitHub repo (link below) and take control.
+
+Feel free to reach out if you have any questions or feedback 🤗

@@ -1,0 +1,31 @@
+URL: https://www.linkedin.com/posts/dokyun_take-caution-in-using-llms-as-human-surrogates-activity-7339360824613888001-_5ry
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dokyun Lee的动态
+Dokyun Lee
+
+Kelli Questrom Associate Professor in Management at Questrom School of Business, Boston University
+
+3 个月
+
+Take Caution in Using LLMs as Human Surrogates: Scylla Ex Machina
+With my student Yuan Gao and also with Gordon and Sina
+Published at PNAS 
+https://lnkd.in/eXHS_J-a
+
+Current LLMs represent a fundamentally different form of intelligence compared to that of humans. Without meaningful, nontrivial "grounding" in human cognition—a capability that remains elusive—their use as human surrogates to simulate and study human behavior warrants caution, except in cases of simple function fitting with quality data. Many working papers in this area assume LLMs can impute human behavior from internet data, despite the noise and lack of epistemic filters. Yet, we don’t understand how LLMs “think,” nor how they achieve even basic combinational creativity (“interpolation”).
+
+This is an empirical case study, situated within AI philosophy, illustrating how such assumptions could fail despite various attempts. Are LLMs good for ideation? Of course, YES! But using LLMs to generate human behavioral theories scalably is challenging without a way to validate epistemic alignment. No such function exists yet. If it did, we could rapidly improve LLMs using it. Consequently, the commonly suggested approach of "ideate with LLMs, filter with LLMs, then test with humans" faces significant scalability constraints. In contrast, broader Gen AI, including LLMs, shows promise in the hard sciences, where curated data and equations reflect objective laws in physics, chem, etc, enabling reality-grounded modeling. 
+
+Will there be future papers claiming to have discovered new human behaviors by probing LLMs? Probably, but likely through non-scalable brute force or as part of the human-AI system to inspire expert scholars. Besides the "approximate retrieval", evidences show LLMs can perform combinational/exploratory creativity in ideati

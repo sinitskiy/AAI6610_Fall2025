@@ -1,0 +1,31 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/ysafay/a_single_cell_machine_learning_project_thoughts/
+Title: A single cell machine learning project - Thoughts please
+
+Content:
+I am thinking of a fairly simple machine learning project that I will do in R with a combination of Seurat and machine learning packages in R. I will do the basic QC of the data using Seurat and then use two datasets that already have annotated with cell types (making sure they are the same tissue). I will use one for training and the other for testing and I will try a bunch of different algorithms to do this and compare their performances. I definitely want to combine single cell analysis and machine learning. I have done two projects using single cell data and are fairly familiar with Seurat but I thought I will take the opinion of the people working on these two fields to see if this sounds a reasonable project.
+
+Thanks for the inputs. :)
+
+Comments:
+- As a learning exercise, sure. There are dozens of papers out there which has done this. Here is one that came to mind: https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1795-z, but there are many more.
+- I think you need to flesh out your goal a bit more. Are you trying to predict cell types from gene expression? Then yes, that sounds reasonable.
+
+However, if there is a class imbalance between cell types, that can throw a wrench into things. For example in some datasets you have one extremely common cell type, a couple extremely rare ones, and many in between. Dealing with this kind of situation should inform your modeling approach.
+- Please make sure you add a non-machine-learning approach as something akin to a placebo control. If you can't demonstrate that machine learning is better than LDA (or whatever other low-computation approach you can find), it's better to use the simpler approach.
+- Seurat already provides options that can lead to the same outcome:
+
+https://satijalab.org/seurat/articles/integration_mapping.html
+
+Do you expect any improvements using your approach or why do you want to use machine learning instead of already existing methods?
+- I’m not very familiar with machine learning, but I believe you want your training and testing data to be fairly similar. A big issue that comes up again and again in RNA sequencing is that different studies produce slightly different results, even when following the exact same growth conditions. It’s not uncommon to see cells from the same study to be more similar to one another than the same cell type from another study. You’d basically be teaching your algorithm what gene expression looks like under those very very very specific circumstances, and may not be able to be generalized to other studies.  
+
+I would recommend that you either:  
+
+1. Combine the 2 datasets and randomly divide cells into training/testing sets.  
+2. Use several more datasets as part of your training data and see if it works at predicting a novel dataset.
+- I appreciate this link, thank you
+- I am planning for the first one but yes you raise a very relevant point. Was thinking of using standard analysis and use the transfer learning approach and look at the concordance between the two.
+- Integration is not at all the same thing and wouldn't lead to the same outcome. What OP is suggesting is more similar to a program like cell typist which automatically labels cell types. Machine learning can actually work for this kind of thing especially if your data are relatively homogenous.
+- And train on 10% of your data, then test on the remaining 90%.
+- I am talking about the reference mapping / label transfer part of the link.

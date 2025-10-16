@@ -1,0 +1,65 @@
+URL: https://www.linkedin.com/posts/swarnendu-stat_bayesian-neural-network-with-stan-activity-7284768902755074049-Ntv9
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+swarnendu chatterjee的动态
+swarnendu chatterjee
+
+Statistics Manager at GSK | Biostatistics Expert | Advanced in R-Shiny | Formerly at Novartis
+
+8 个月
+
+🚀 Exciting News: bnns is now officially on CRAN! 🎉
+
+I'm thrilled to announce that my R package, bnns (Bayesian Neural Networks with Stan), has been accepted and is now available on CRAN! 📦✨
+
+🌟 What is bnns?
+ bnns provides a flexible, formula-based interface for building and training Bayesian Neural Networks (BNNs) using Stan. It empowers users to model complex relationships while quantifying uncertainty—a critical feature in high-stakes fields like clinical trials, finance, and more.
+
+🌟 Why Use bnns?
+ ✅ Easy-to-use formula interface
+ ✅ Leverages the power of Bayesian inference for robust predictions
+ ✅ Supports custom prior distributions for weights and other parameters
+ ✅ Provides posterior distributions for uncertainty quantification
+ ✅ Suitable for regression, binary classification, and multi-class classification problems
+ ✅ Benchmark performance tested against popular datasets
+
+🌟 Applications
+ Whether you're working on a small dataset with limited observations or need interpretable, probabilistic predictions in your domain, bnns is designed to deliver powerful results.
+
+🌟 Get Started
+ Install bnns directly from CRAN with:
+     install.packages("bnns")  
+
+🌟 Learn More
+ Explore the package documentation and examples to see how bnns can fit into your data science workflows. 
+    https://lnkd.in/gCiT5QeN
+    https://lnkd.in/g8T-RkdC
+    https://lnkd.in/gG3VQiHW
+
+👉 I would love to hear your thoughts and feedback if you try out bnns. Together, let's build a community of Bayesian enthusiasts and push the boundaries of data science!
+
+💡 Feel free to share this post with your network—let's spread the word about bnns!
+
+#bnns #RStats #BayesianNeuralNetworks #DataScience #MachineLearning #CRAN
+
+Bayesian Neural Network with Stan
+swarnendu-stat.github.io
+117
+10 条评论
+赞
+评论
+分享
+Mayur Kharche
+
+P

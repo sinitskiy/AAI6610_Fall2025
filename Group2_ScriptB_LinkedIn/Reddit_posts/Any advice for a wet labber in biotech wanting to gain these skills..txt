@@ -1,0 +1,30 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/gdjr4z/any_advice_for_a_wet_labber_in_biotech_wanting_to/
+Title: Any advice for a wet labber in biotech wanting to gain these skills.
+
+Content:
+Hi Bioinformaticians
+
+I'm in the UK and I work at a UK based immunotherapy company. I really want to up skill in computation biology and bioinformatics.  I know you must get these sort of questions quite often.
+
+Some of the things I'd like to learn
+
+1)  design/optimise antibodies based on the structure of my antigen.
+
+2) predict peptides presented by  HLA1/2
+
+3) protein-protein interaction
+
+4) Structure prediction from aa seqeunce (i know I-TASSER can be used for this.)  
+   
+So generally protein work, but maybe RNAseq too.   
+I was thinking of learning Python as I've heard its the easiest code for biologists to learn. Or would getting a grips of the specific programs help more? I'm currently working my way through an MIT computation biology course on Youtube- to pick up bits of information.   
+Any recommendations/resources/tutorials/courses are welcome. Ideally free ones, but I'm open to paying if I need to.
+
+Thanks
+
+Comments:
+- I teach basic bioinformatics skills starting with Python. I've written a bunch of exercises and tests to help you learn how the language itself works -- things like strings, numbers, lists, dictionaries, then reading/writing files, dealing w/stdin, stdout, stderr, and ideas like regular expressions as well as how to run and write tests for your programs and functions. You can find all the programs and tests at [https://github.com/kyclark/tiny\_python\_projects](https://github.com/kyclark/tiny_python_projects). The main programs are generic, having nothing to do with bioinformatics, but in the "extras" directory you can find how I extend these ideas to biology. HTH!
+- Not sure with protein work but with rnaseq I would recommend to learn bash/Unix and R. As a bioinformatician who uses programs and software others make it is what I primarily use.
+I think if your not going to be making your own software their is no great need to learn python.
+- PyMol is the standard protein visualization tool and it has a Python API. I mostly work with sequencing data as well, but my colleagues who do protein structure work all use Python.

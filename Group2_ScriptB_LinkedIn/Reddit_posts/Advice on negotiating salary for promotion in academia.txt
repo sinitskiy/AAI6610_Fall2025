@@ -1,0 +1,68 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/rqmpdn/advice_on_negotiating_salary_for_promotion_in/
+Title: Advice on negotiating salary for promotion in academia
+
+Content:
+I've been at my institute for almost 6 years and I started as a Bioinformatics Analyst making $50k in San Diego, CA with a Master's degree in Bioinformatics. I've gotten yearly 3% raises and one side step raise where they changed my title to Bioinformatics Engineer to a pay bump of ~$62k. During this time, I've also been pursuing a PhD and the projects overlap with my duties at my institute so it's been a lot of algorithm development, data processing, writing papers, and contributing to grants. I'm in a unique position right now where 2 people have left the institute, one of those people I will be taking on all of their projects and the other (in an entirely different group) I will take on at least one of their projects. I just finished my dissertation, still need to defend, and expect this to be finished in the next few months. My advisor informed me that he wants to give me a promotion to a Staff Scientist position before that with a slight pay raise and then a larger raise after I get my PhD. They offered me $66k which, on GlassDoor, is the very extreme low end of this position. 
+
+I understand it is difficult to give to pay raises in one calendar year and that I should be receiving a larger pay raise once I get my PhD but this is frustrating and I'd like some advice on how to negotiate this. 
+
+A few points to consider: 
+* I'm skipping a post doc position and going straight into a Staff Scientist position 
+* I now have an intern
+* My responsibilities for the past few years have essentially been what a Staff Scientist does with leading the analysis on research projects and writing the papers
+* I'm getting another raise after I get my PhD but I'm worried they will try to low ball me twice in row. 
+* I will be picking up all the projects from my colleague in Microbial Informatics and at least one project in Immunology. The latter of which, I know the PI has been looking for some time to hire someone to work on this project but hasn't found a suitable candidate. 
+* If I left, it would be very difficult for them to find someone who can work on the diverse types of projects they put me on and if they do find one they would have to pay them a lot more than what they are paying me with this raise. Finding someone who can do machine learning, microbial ecology, epigenetics, and pipeline development isn’t easy in academia. 
+
+How can I negotiate a salary increase with this promotion? Can I do this through e-mail or would I have to schedule a meeting about this?
+
+Comments:
+- There are plenty of companies near San Diego that are looking for people with your skills. Based on your resume, you could earn two to 2.5 times more than you are earning now.
+
+You probably won't get a substantial raise without a competitive offer in hand.
+- >If I left, it would be very difficult for them to find someone who can work on the diverse types of projects they put me on and if they do find one they would have to pay them a lot more than what they are paying me with this raise.
+
+This is 100% not your problem.
+
+There's a massive need for bioinformatics in industry. Consider the lost earnings of this post-phd position if your not fully committed to academia. It will grow substantially every year you stay.
+
+Like any salary negotiation you will need to consider what you are worth, what you are willing to commit to, and what you are willing to walk away from. If you aren't comfortable having a frank discussion in person then email is fine. State your case - be clear about your salary expectations. Show similar position salaries. Talk about what you bring to the table. Your accomplishments. Qualifications. But academia doesn't pay well in general so you may find yourself talking to a wall.
+- I’m not saying you have to leave, but the only way to know is to apply to a few external jobs.  You’re likely to get offers that are in the $100k+ range, which would set the bar for you.  You can then decide if it’s worth taking a 40% pay cut to keep working there or not. 
+
+Alternatively, you can always bring your offer to them to show them your worth on the open job market. If they match, it’s a win-win.  If not, you know how much they value you. 
+
+Otherwise, post-docs are utterly worthless unless you plan to become a prof.  No other job requires them.
+- 50k? bruh you're worth way more than this
+- You'll never get a nice salary staying in academia as a researcher. Once you get your PhD you may be required to write grants to help fund your position. If you are in San Diego just get a sweet job at Illumina.
+- I am all for salary transparency. I made 88k as a staff scientist 2 at a major cancer center a low cost of living state after a short post doc. When I was promoted to senior scientist less than three years later I was bumped to 115k (this was before I transitioned to faculty). You could do much better and still stay in academia.
+- This will depend on the promotion/ salary increase rules at your institution. You would bring this request to your PI, and they would jump through whatever hoops are necessary to get you an approporate raise, and HR will help make it happen if you are critical. What are your peers at this institution making with similar education/experience? Whether there are retention packages is something that HR will know. My institution has them, since so many have fled academia for industry, and academia will likely never recover. The first thing to do is talk to the PI. Be frank about it, get the facts on funding, etc.. You have to earn a living.
+- Not having serious money to offer towards salary, academia is excellent at cultivating a culture of perpetual scarcity where peanuts are offered up as a king’s ransom. It only makes sense if you indulge the cultishness. I’m looking into postdocs at one of the most prestigious private institutes for my research area and it astounds me that the pay is only slightly better than what you’re quoting. It’s, of course, in a massively HCOL location during the worst inflationary period I’ve ever experienced. 
+
+It doesn’t make sense to me and I fear that the luxury of trying to make it so won’t be in the cards for younger graduates. We’re currently at a juncture where there is no longer a real choice, assuming one has the skills industry wants. I see 28-35 yr old postdoc peers trying to craft these ornate, painfully narrow research programs to appease NIH and it looks like a cargo cult. Most wouldn’t have a path forward if money dried up or their mentorship soured. 
+
+I take a lot of comfort knowing bioinformatics is such a portable skillset. The time has just not yet come for me to bail on my specific research interests and seek my best market value. If this shite economy keeps up, that may come sooner than later.
+- Good fucking luck.  It’s dying.
+- Unless you plan to become a PI. RUN don’t walk from academia. Never stay on as a staff scientist. Industry work can be just as exciting and you can easily make >10x more after only a few years. 
+
+ps I had a similar arrangement as you. After graduating I was offered 130-ish to stay in academia as a staff scientist. They had to jump through so many hoops to make that happen that it felt borderline dirty. I opted for industry for a better paying role that would “start the clock” on my industry experience. Don’t forget, academia experience != industry experience.  Plenty of roles out there that can be exciting and pay >3x what your PI makes. Good luck!
+- Exactly.  After PhD, I turned down an offer of 150k.  I'm also hearing that even 175k + options offers are no longer competitive when hiring bioinformaticians.
+
+The bioinformatics shortage in industry is real and there is astronomical demand -- OP would be foolish not to look around.
+- \+1 on this. I got a 1.5x higher offer for an academic position because I had an offer from industry.
+- That's always an option but I'm not ready to leave academia just quite yet. I have plans to work on some interesting climate change and rare microbiome studies in the very near future. Most job listings I've seen in academia are optimizing instruments which doesn't interest me much. I'm sure there are other opportunities and I will absolutely be looking deeper into these especially if the low balling continues.
+- Work is not only about salary. OP obviously wants the best salary they can get while staying in Academia. 
+
+If OP wants a bit of both, stay in academia but occasionally consult for industry. Best of both worlds.
+- Not everyone has the desire to work in industry. Many of us prefer academia. Money isn't everything. I work in academia and have a nice salary. Slightly less than industry, but the benefits are far better. It's also nice to speak with others in completely different fields on a regular basis.
+- You mean the Illumina that is pushing groovy for bioinformatics cuz it is convenient for them and fuck the customers who are using python?
+
+or the Illumina that cannot debug a PPTP connection even if their lives depended on them, cuz, and I quote "Illumina is not an IT company"?
+- Thank you, yea I feel like it’s really important to be transparent about salary especially since as a scientist we are so used to getting the bare minimum for a maximum amount of work.
+
+Have you ever had to negotiate a raise?
+- Thank you. I’m strongly considering going into industry in the next year or so. I have a contract binding me to 2 years but for the right opportunity I would break it and pay the difference. 
+
+I’m mostly trying to figure out how to negotiate with my boss in the interim.
+- I'm looking around, I just want to find a position that works on something interesting that also pays decent.
+- 100% spot on. OP, if your experience is as you describe, with a PhD expect to get 2-3x your offer in industry, at least in CA.

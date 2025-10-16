@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1j2zbtu/looking_for_guidance_on_structuring_a_graph/
+Title: Looking for guidance on structuring a Graph Neural Network (GNN) for a multi-modal dataset – Need help with architecture selection!
+
+Content:
+Hey everyone,
+
+I’m working on a machine learning project that involves multi-modal biological data and I believe a Graph Neural Network (GNN) could be a good approach. However, I have limited experience with GNNs and need help with:
+
+Choosing the right GNN architecture (GCN, GAT, GraphSAGE, etc.)
+Handling multi-modal data within a graph-based approach
+Understanding the best way to structure my dataset as a graph
+Finding useful resources or example implementations
+I have experience with deep learning and data processing but need guidance specifically in applying GNNs to real-world problems. If anyone has experience with biological networks or multi-modal ML problems and is willing to help, please dm me for more details about what exactly I need help with!
+
+Thanks in advance!
+
+Comments:
+- In my experience, data is vastly more important than a network. Start by thinking on what inputs you have and what predictions you want to make. Do you want link prediction? Node classification? Regression of some kind? Once you have that, lots of questions will answer themselves. Next, write the simplest model that predicts what you want, and iterate from there.
+- Here's a question I'll pose to you that I pose to everyone starting out trying to use ML: why are you using ML? What benefit does using a GNN give you over other approaches? 
+
+Essentially I'm asking if you're just trying to use a GNN for the sake of using it, or if you're using it because it's appropriate to solve the question you're trying to answer.
+- Hi! Does your data has inherent properties that can be modeled as a Graph? Also, may I ask you more specific info about the data you plan to use? (I work with GNNs)
+- It wont matter much. Just use a GCN because it is the fastest, and most refined.
+
+If you need it to be inductive use GAT.
+
+I've never really used graphsage.
+
+The most important thing is feature extraction, and how you set up the network.
+- Since you work with GNN, are you willing to help me out on this project, if you are, I would then share specific info about the data and the project with you, but your dms are closed
+- Hi, I am close to my final year of PhD so I'm too busy currently to help directly, but you can ask me questions.
+- I won’t be able to ask random questions you need to understand first of all the data I am working with specifically so you can answer, but I understand that you won’t be able to do this. Do you know anyone who would help me with the same thing ?

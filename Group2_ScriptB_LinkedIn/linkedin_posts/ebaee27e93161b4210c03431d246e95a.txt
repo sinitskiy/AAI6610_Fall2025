@@ -1,0 +1,50 @@
+URL: https://www.linkedin.com/posts/yimingxiao_focalerrornet-uncertainty-aware-focal-modulation-activity-7115794332288180224-H1-v?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Yiming Xiao的动态
+Yiming Xiao
+
+Associate Professor, Department of Computer Science and Software Engineering at Concordia University | Concordia University Research Chair in Intelligent and Intuitive Surgical Technology | FRQS J1 Research Scholar
+
+2 年  已编辑
+
+This year, our Health-X lab (healthx-lab.ca) will have a number of presentations on various perspectives of medical AI research at MICCAI 2023 and the satellite events. Our trainees and I look forward to discussing our works with you in the next one week in Vancouver!
+
+*Main conference:
+In Oral Session 4 (M-01-047)on October 9th, PhD trainee Soorena Salari will present: 
+FocalErrorNet: Uncertainty-aware focal modulation network for inter-modal registration error estimation in ultrasound-guided neurosurgery
+https://lnkd.in/eBZ-sjiZ
+
+In Poster Session (M-01-131) on October 9th, PhD trainee Soorena Salari will present: 
+Towards multi-modal anatomical landmark detection for ultrasound-guided brain tumor resection with contrastive learning
+https://lnkd.in/e-TnmHX9
+
+* MICCAI Machine Learning in Clinical Neuroimaging (MLCN) workshop:
+During the oral session on Oct 8, PhD trainee Mumu Aktar will present:  
+VesselShot: Few-shot learning for cerebral blood vessel segmentation
+https://lnkd.in/e9NYtmTV
+
+* MICCAI Machine Learning in Medical Imaging (MLMI) workshop:
+During the poster session on Oct 8, MSc trainee Zirui Qiu will present:
+Is visual explanation with Grad-CAM more reliability for deeper neural networks? a case study with automatic pneumothorax diagnosis
+https://lnkd.in/exifsS9T
+
+* MICCAI UNSURE workshop:
+During the oral session on Oct 12, MSc trainee Parinaz Roshanzamir will present:
+How inter-rater variability relates to aleatoric and epistemic uncertainty: a case study with deep learning-based paraspinal muscle segmentation
+https://lnkd.in/eQMdZdkQ
+
+We thank all the collaborators for their contributions to these works!
+Hassan Rivaz Marta Kersten-Oertel Maryse Fortin
+Gina C

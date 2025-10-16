@@ -1,0 +1,61 @@
+URL: https://www.linkedin.com/posts/allen-roush-27721011b_i-am-super-proud-to-have-been-cited-by-this-activity-7072984634246000640-HGVQ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Allen Roush的动态
+Allen Roush
+
+Lead AI Researcher - Specialize in LLM, NLP, Argument Mining, and Generative Art
+
+2 年  已编辑
+
+I am super proud to have been cited by this recent paper on Constrained Text Generation: "Sequential Monte Carlo Steering of Large Language Models using Probabilistic Programs"
+
+In particular, their method seems to solve a nagging issue that I ultimately struggled with solving myself, namely the issues that come from LLMs when operating with greedy token level constraints. Quoting the authors from page 2: 
+
+"One heuristic, lightweight approach to constrained generation from LLMs is to use masking or logit biases to—just before sampling each token—zero out the probabilities of any tokens that would violate a constraint. Unfortunately, this local or greedy decoding policy can get stuck, yielding unnatural completions:
+
+PROMPT: “The Fed says”
+CONSTRAINT: No word with more than five letters
+TOKEN MASKING: “ the cost of a 30-yr fixed mortg...”, “ US infl- ation is back. Are they right?”, “ it will take at least 12 more meet... (read more)”
+
+The tokens “ mortg”, “ infl” and “ meet” are sampled because they do not yet violate the 5-letter constraint: the algorithm cannot see that they make future violations hard to avoid. By contrast, conditioning the LLM on the constraint causes global reallocation of probability mass, yielding a posterior that upweights early tokens which make it easier to satisfy the constraint later. By targeting this posterior, SMC steering avoids greedy dead ends..."
+
+Paper is here: https://lnkd.in/gEHVBR2U
+
+59
+4 条评论
+赞
+评论
+分享
+Cole Short
+
+Strategy Professor | Advisor | Language as Data
+
+2 年
+
+Very interesting work! I like the idea of the cache to reduce costs--seems especially useful when using a template-based approach.
+
+赞
+回复
+Enam Hoque
+
+2 年
+
+thanks for sharing - this is very interesting. Selali Adobor what do you think?
+
+赞
+回复
+Leonard Park
+
+Experienced LegalTech Product Manager and Attorney 

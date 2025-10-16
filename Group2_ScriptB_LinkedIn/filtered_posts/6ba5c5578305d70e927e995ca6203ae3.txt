@@ -1,0 +1,104 @@
+URL: https://www.linkedin.com/posts/richard-riley-r%C2%B2-300227291_uncertainty-of-risk-estimates-from-clinical-activity-7295762084397481984-1_NT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Richard Riley (R²)的动态
+Richard Riley (R²)
+
+Prof of Biostatistics at University of Birmingham
+
+7 个月
+
+**NEW BMJ PAPER**
+"Uncertainty of risk estimates from clinical prediction models: rationale, challenges, and approaches"
+- most models provide just a risk estimate
+- we argue for presenting associated uncertainty too
+- includes pros, cons, PPIE & methods
+Hope helpful!
+https://lnkd.in/euWuhM9m 
+
+Uncertainty of risk estimates from clinical prediction models: rationale, challenges, and approaches
+bmj.com
+255
+7 条评论
+赞
+评论
+分享
+Amel Murrani
+
+Software Development & Genomics Professional | Driving Quality in Health Tech
+
+7 个月
+
+In the evolving landscape of AI in healthcare, it's important that clinical prediction models not only provide predictions but also transparently quantify their uncertainty. This approach mirrors the real-world decision-making process of clinicians, who routinely assess probabilities and uncertainties in patient care. Embracing uncertainty reflects healthcare complexities and a step toward more reliable, human-centered AI applications in medicine.
+
+赞
+回复
+2 次回应
+Matthew Dunn
+
+Trustee at the Institute of Physics and Engineering in Medicine (IPEM)
+
+7 个月
+
+It’s so true as a patient that you don’t get the full information.  Would be really interesting to look at GP data on risk score and then outcome.  To see if the model is right and if we can identify cohorts that differ from the model.
+
+赞
+回复
+2 次回应
+查看更多评论
+
+要查看或添加评论，请登录
+
+2,295 位关注者
+
+80 则动态
+查看档案  关注
+探索相关领域
+The Impact of Uncertainty on Innovation
+How to Include Uncertainty in Optimization
+Predictive Modeling Applications in Medicine
+Understanding Risks of Attribution Models
+How to Predict Cardiac Risks
+Recent Developments in Disease Modeling
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+

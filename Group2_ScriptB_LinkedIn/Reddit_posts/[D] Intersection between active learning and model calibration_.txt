@@ -1,0 +1,18 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/12h1anq/d_intersection_between_active_learning_and_model/
+Title: [D] Intersection between active learning and model calibration?
+
+Content:
+Hi, I'm currently working on model calibration methods and active learning. But I'm having a hard time nailing down a solid problem statement for my research. I had a couple of questions
+
+1. What are the important research questions in the intersection between active learning and model calibration? 
+2. Have any papers established if models trained using pool-based active learning strategies like uncertainty sampling result in well calibrated models? (I haven't been able to find any literature on this)
+3. Many times calibration is done post-hoc, requiring label budget to be devoted towards a hold out calibration dataset. Would it be worthwhile to devote research effort towards an active sampling scheme that results in a calibrated model without needing to allocate label budget to an additional calibration set?
+
+So far I've mainly been working on pool-based active learning.
+
+ I'm familiar with the background literature (On the Calibration of Modern NNs, Revisiting the Calibration of NNs, Beta Calibration), but I'd appreciate any relevant papers you suggest
+
+Comments:
+- Hi. I'm actually very recently started asking myself some of these questions in my own research. Yous is the first post I found about it. Were you able to find any good sources that delve into these questions?
+- Seconding this u/PK_thundr, I'd be interested in discussing these questions further!

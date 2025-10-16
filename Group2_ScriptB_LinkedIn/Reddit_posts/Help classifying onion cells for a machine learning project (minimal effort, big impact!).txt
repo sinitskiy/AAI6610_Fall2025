@@ -1,0 +1,30 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1l8uvvn/help_classifying_onion_cells_for_a_machine/
+Title: Help classifying onion cells for a machine learning project (minimal effort, big impact!)
+
+Content:
+Hi everyone,
+I’m an engineering student from Argentina and part of a research group working on an exciting project in collaboration with the INA (National Water Institute). We’re developing a machine learning model to detect and classify Allium cepa (onion) cells in the different phases of the cell cycle.
+
+The challenge? We have very limited resources, and currently only one person is manually classifying the images — purely out of goodwill. As you might imagine, this is extremely time-consuming and slows down our progress significantly.
+
+That’s why I’m reaching out to the biology community: if you have even a little free time, helping us label just a few images would make a huge difference. You don’t need to commit to a large workload — even 10–20 images labeled would already be incredibly helpful for us, since our dataset is small and every contribution counts.
+
+We’ve already developed a simple web-based app that works on both desktop and mobile. It’s very easy to use and doesn’t require any setup — just open the link and start classifying.
+
+If you’re familiar with the different stages of the cell cycle (interphase, prophase, metaphase, anaphase, telophase), you’re already qualified!
+
+Please let me know if you’d be willing to help — or tag someone who might. We’d be deeply grateful for any support.
+
+TL;DR:
+We’re training a model to classify Allium cepa cell cycle stages but have very few labeled images. We built a simple, mobile-friendly web app to make labeling easy. If you’re a biologist and could label even a few images, we’d really appreciate your help.
+
+Comments:
+- What's the pay per hour?
+- Just do it yourself? If it takes a few seconds per image, 1k images is only a few hours of annotating and really you probably won't need all that much data
+- Are you going to put us on the paper if we train your data for you lol
+- Pretty cool ! But I wonder what's the connection between the cell division phases and the National Water Institute (that is supposed to do water management, flood prevention etc. as I understand it) ? And where is the link to the app ? 
+Also you might want to look for platforms for hosting participatory science projects. It might make you research more easily accessible and more legit than a link on a reddit post. As for the skills needed to do that basically anyone that looked at as a simple introductory video on how to classify each stages (im sure there is plenty on YouTube already and there's really good curated and explained by experts content on [iBiology](https://www.ibiology.org/) if you need to understand concepts better) with exemples and a few already annotated pictures to test if the participant understood the tutorial should be enough to help you annotate the pictures. Or you could go to your local university biology department and Im sure that a professor will be happy to find you a few students from a lab somewhere willing to give it a go between an autoclave and a PCR run !
+I hope this will help and for your project to be successful !
+- I wish i could, im not a biologist. We asked our guy if we could get some training to do it ourselves and he said that its not that easy
+- I think your guy is bullshitting you so he can stay the "expert" if the only knowledge you need is how to identify cell stages. Pull up any diagram of the cell division process and you'd probably be able to teach yourself.

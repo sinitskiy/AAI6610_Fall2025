@@ -1,0 +1,88 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1h1ggk7/math_question_on_logistic_regression_and_boundary/
+Title: Math Question on logistic regression and boundary classification from Andrew Ngs Coursera course
+
+Content:
+I'm following Andrew Ngs Machine Learning specialisation on Coursera, FYI.
+
+If the value of the sigmoid function is greater than 0.5, the classification model would predict y\_hat = 1 or "true".
+
+However, when using more complex functions inside of the sigmoid function, e.g. an ellipse:
+
+1 / (1 + e^(-z)) where z = x1^(2)/a^(2)   \+   x2^(2)/b^(2)   \-1
+
+in order to define the classification boundary, Andrew says that the model would predict y\_hat = 1 for points inside of the boundary. However, based on my understanding of the lecture, as long as the threshold is 0.5, and you're predicting y\_hat = 1 for any points where the sigmoid function evaluates to >= 0.5 then it should be points **outside** the boundary.
+
+More specifically, it's proven that g(z) >= 0.5 when z >= 0, therefore if z is an ellipse, g(z) >= 0.5 would imply that x1^(2)/a^(2)   \+   x2^(2)/b^(2) \>= 1, i.e. outside the boundary
+
+  
+... At least by my understanding. Can anyboydy shed some light on what I may have missed, or if this is just a mistake in the lecture? Thank you
+
+Comments:
+- Not to be *too* snarky, but sometimes mistakes are made.  It seems to me this is a trivially easy thing to test (ie, pick points inside, on, and outside the ellipse, plug 'em in, see what result you get).  
+
+If you don't have it already, I highly suggest getting into the habit of writing "toy" solutions (or simulations) to problems to quickly check your intuition.  They don't have to be complex, just the bare minimum to convince you either way.  That habit has been *extremely* valuable in my career!
+- Unrelated question to your post OP but, how is the course? Im thinking of taking it myself. Having a masters in stats i know some math but my course wasnt focused on DS but rather classical stats more. What do u think about the course, its mathematical aspects, etc?
+- Your choice of spline function (a sigmoid over two quantities x1 and x2) doesn't make sense as a spline function. The sigmoid function on one variable has a range of (0,1) over the domain of real numbers. It has the nice property that lower numbers get you closer to 0 and higher numbers get you closer to 1. That is what you need the spline to do.
+
+With your spline both high and low numbers give a value of 1. Or at least get close to 1.
+
+The spline is a theoretical construct that only kinda-sorta represents how close the number from an arithmetical addition (the regression) gets us to in-the-classification (a 1 result) or not (a 0 result). There also isn't supposed to be a boundary on the spline at all; you can always get larger and larger coefficients on the variables which will explode the result from the additive regression bit. If you run a dataset with a perfect correlation between a variable and the classification through a logistic regression the coefficients will tend towards infinity.
+
+Keep in mind that is what is going on: this is an estimator that you use on an existing dataset that has both the explanatory variables and the target variable of interest (in this case a 0-1 classification). You're minimizing the error of the prediction *when run through the spline function* (1/1+e^-z ).
+
+____
+
+Ok, I think I see what is going on. You have data constrained to an elipse in two dimensions.
+
+What a logistic regression will do is take the *existing data* and run it through a linear transformation (B1x1 + B2x2) to get a number *z* to plug into the spline function. The boundary condition *doesn't enter into it at all*. The data is already sampled. You have a set of x1 and x2 and *true* y (classification). The constraint on the data is already applied in the sampling.
+
+The logistic regression uses gradient descent to determine B1 hat and B2 hat (hat is usual notation for estimated value). There are no bounds on B1 and B2 usually, which are just coefficients on x1 and x2.
+- I am relatively new to the field so take what i say with a grain of salt. Here are my 2 cents:
+
+It all depends on how z is defined in the sigmoid function. If z is constructed so that:
+- Points INSIDE the elliptical boundary produce z < 0
+- Points OUTSIDE the elliptical boundary produce z ≥ 0
+
+Then:
+- When z < 0, sigmoid(z) < 0.5 → y_hat = 0
+- When z ≥ 0, sigmoid(z) ≥ 0.5 → y_hat = 1
+
+So Andrew Ng’s explanation is correct. The crucial part is the specific construction of z that maps the elliptical region’s interior to negative values, thus predicting y_hat = 1 for points inside the boundary.
+
+The definition of z determines the classification region, not just the 0.5 threshold of the sigmoid function.​​​​​​​​​​​​​​​​
+- It seems like the boundary is set where z = 0, which means g(z) = 0.5. From what I understand, when you’re inside the ellipse, z is less than 0, so g(z) would be less than 0.5. Outside the ellipse, z is greater than or equal to 0, so g(z) would be 0.5 or more.
+
+I think Andrew Ng was just saying that y_hat = 1 happens when g(z) >= 0.5, which applies outside the ellipse, not inside. Hopefully, that clears it up!
+
+
+I could totally be wrong on this though.
+- Do you think it has been worth it to learn things like this from Coursera? I want to get into ds but am afraid it wont be beginner friendly.
+- I understand sometimes mistakes are made, which is why I'm asking the question.
+
+My rationale is in this line: if z is an ellipse, g(z) >= 0.5 would imply that x1^(2)/a^(2) \+ x2^(2)/b^(2) \>= 1.
+
+Choosing large values for x1 and x2 (outside of the ellipse) would result in a large z value, leading g(z) to tend towards 1, i.e. y\_pred would be 1 outside of the ellipse rather than inside.
+
+I'm just looking for a bit of clarification from people more experienced as, in my experience, though mistakes do happen, if I disagree with a teacher it's normally because there's something I don't understand rather than me being correct.
+- The specialisation is 3 courses rolled into one 'program'. I should finish the first course within this free-trial week.
+
+So far, I think the concepts and the code could be followed by anybody who has a rudamentary understanding of linear algebra, as long as they have a good intuition and can take things at face value.
+
+The mathematics isn't too exhausting. The core concept of the first course, mathematically, is defining cost functions and finding their minimum.
+
+I.e., when fitting a straight line, the error can be calculated by taking the absolute difference between the predicted value and the true value. The "cost" of this line, then, is the average of all of the errors. This is generally 1/2m times the sum of (y\_pred - y) squared, or referred to as the Mean Square Error function, which you've probably heard of.
+
+The course then expands on this concept to define a different cost function for logistic regression, which is explained very well step by step.
+
+After each cost function is explored, an algorithm, gradient descent, is explained and applied in order to find the minimum of the cost function. In the linear example I gave above with the MSE, you can imagine fitting a line y = wx + b (where w and b are weights and bias), then the cost function is a function of both weight and bias. Due to the squared nature of the formula, (y\_pred - y) squared, this cost function has a bowl shape in 3D, which therefore has one global minimum. Gradient descent is an algorithm that can start at initial values of w and b and converge on the global minimum.
+
+When dealing with logistic regression, proving that the cost function that's used has a global minimum before applying the gradient descent algorithm is out of scope of the course, but can be done with a bit of calculus. I had to relearn the chain rule and how to test for convexity, but it was a fun exercise given it's 8 years since I graduated lol.
+
+The actual coding is very light, in my opinion, but it does a very good job of explaining core **concepts**. I recommend you take this course, and also buy one of the Udemy courses at the same time which just contain vast amounts of practical projects, since they're like 80% off right now and don't require a subscription. I got this one [https://www.udemy.com/course/real-world-data-science-projects-practically](https://www.udemy.com/course/real-world-data-science-projects-practically) purely for the volume of projects it provides. I'm sure you could just find data from Kaggle to apply the learning to but I like having the structure.
+- It’s an amazing course for anyone who want do deep dive on the fundamentals, it teaches you about how everything works, and you code it from scratch, you barely even use sk learn for example, and the notebooks they offer is amazing if you really wanna learn and is curious, you can make multiple tests there and see how it changes results
+- I think Andrew Ng was just saying that y\_hat = 1 happens when g(z) >= 0.5, which applies outside the ellipse
+
+  
+Yes, I think the same, just that he wrote it as **inside** the ellipse, which I think is a typo. I wanted to check I was correct in thinking this was a mistake and that I hadn't missed something fundamental, thank you.
+- I'd give the first two courses in the ML specialisation a good score for being beginner friendly. The third course can still be followed and passed, but you probably won't take in all the detail. Highly recommend if you can get it done in one payment!

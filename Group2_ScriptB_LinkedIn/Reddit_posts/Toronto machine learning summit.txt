@@ -1,0 +1,18 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e0rq0i/toronto_machine_learning_summit/
+Title: Toronto machine learning summit
+
+Content:
+How to get free tickets? 
+
+Is it worth going ? 
+
+Is it a networking event?
+
+Comments:
+- Looking at: https://www.torontomachinelearning.com/
+
+It appears that there is networking and workshops that take place in-person (at RBC WaterPark Place in Toronto) and online within different platforms. For example, some networking takes place on Whova and some workshops are virtual on Google Meet.
+
+As for free tickets, I see no sign of that.
+- Is something similar happening in Ottawa if you know ?

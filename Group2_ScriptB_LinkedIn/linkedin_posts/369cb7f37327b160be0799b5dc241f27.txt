@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/belagiannis_230806072pdf-activity-7100431947830579203-ZIMw?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vasileios Belagiannis的动态
+Vasileios Belagiannis
+
+Machine learning, Deep Learning and Computer Vision @ FAU
+
+2 年  已编辑
+
+What if pixel-wise depth predictions are not #reliable? Check out our new #ICCV2023 paper (https://lnkd.in/eSnDQ5q8) on post-hoc out-of-distribution detection! Follow-up work from Julia H. after last year's #ECCV2022 paper (https://lnkd.in/eGP7SbuV) on uncertainty estimation for monocular depth estimation. Code and models will be released soon! #deeplearning #machinelearning #computervision 
+
+#FAU #UULM  FAU Erlangen-Nürnberg Faculty of Sciences FAU Erlangen-Nürnberg Ulm University.
+
+Julia H.
+2 年
+
+I am happy to share that our paper titled “Out-of-Distribution Detection for Monocular Depth Estimation” got accepted to the #ICCV2023 conference! 🎉 
+
+📖 Link to the pre-print on arXiv: https://lnkd.in/esVHY9zB
+
+🔍 Unknown objects and environments, so-called out-of-distribution (OOD) data, impact the reliability of neural network predictions. OOD data is part of the model uncertainty due to missing knowledge. For classification, this is an active research area. However, it must still be explored for complex tasks such as monocular depth estimation.
+
+💡  Therefore, we introduce a post hoc OOD detection approach for already trained depth estimation models. We train an image decoder using the features of the trained depth encoder only on in-distribution data! Inspired by anomaly detection, the OOD data is detected using image reconstruction.
+
+📈 While current approaches only address the data uncertainty in their evaluation, we build an extensive evaluation protocol for OOD detection on the standard depth estimation benchmarks KITTI and NYU Depth V2 as in-distribution data with various OOD datasets. Our approach demonstrates astonishing performance compared to other uncertainty estimation methods.
+
+Thanks to my co-authors Adrian H. and Vasileios Belagiannis for the support! 
+
+27
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,912 位关注者
+
+32 则动态
+查看

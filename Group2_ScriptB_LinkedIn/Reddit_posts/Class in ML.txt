@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1fnryx7/class_in_ml/
+Title: Class in ML
+
+Content:
+Hello, I don't really post on reddit that much, but I like looking around in this subreddit. I'm in a four year-program for bioinformatics and I'm taking this class that's fully based in machine learning. I wanted to know any tips for learning how to configure data sets within bioinformatics as a machine learning project. Does anyone have experience or projects with google collab, matrixes, and jupyter notebook? For the project I'm thinking of using kaggle or pubmed to help find a dataset. Thanks.
+
+Comments:
+- Machine learning is super broad. But if it’s your first time interacting with it, you’ll likely start with basic logistic regression models.
+
+A good dataset to work with is PBMC single cell data. (Used in many vignettes as an example data set)  
+
+Split it into some partition, and de-label the cell types. See if you can apply a regression model to try and accurately label non-labeled cell types based on the labeled training data. And here you’ll have some rugged version of most popular automated cell annotation methods. 
+
+Your class will likely help you with things like feature selection, precision/accuracy measures, and preprocessing methods. 
+
+I also encourage you to look at literature and check out the many tools implementing ML of some sort. Check out their source code (if available) and see the overlap in packages/methods used.

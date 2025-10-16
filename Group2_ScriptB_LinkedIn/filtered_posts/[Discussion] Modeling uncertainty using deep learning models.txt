@@ -1,0 +1,75 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/56q6pq/discussion_modeling_uncertainty_using_deep/
+Title: [Discussion] Modeling uncertainty using deep learning models
+
+Content:
+In the existing literature of deep learning, is there any work that deals with capturing uncertainty like Bayesian models do? Like, for example, can they result in a predictive distribution that has low variance if the test point is similar to training data and has high variance if the test point differs greatly from the training data (think of being far in the input data space)
+
+Comments:
+- [Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning](https://arxiv.org/abs/1506.02142).  
+
+Doing a Google search with your post's title--verbatim--returns the paper as the first result.
+- There are quite a few ways to do this. The literature explores
+
+ - approximate expectation propagation,
+ - variational inference,
+ - sampling based method,
+ - Laplacian approximations,
+ - Bagging like approaches.
+
+You will get most out of reading these two papers [1, 2].
+
+The bagging approach is explored in [3], but it is not the main contribution.
+
+[1] https://arxiv.org/abs/1502.05336
+[2] https://arxiv.org/abs/1505.05424
+[3] https://arxiv.org/abs/1602.04621
+- David MacKay has some not new works in [Bayesian methods for neural networks](http://www.inference.phy.cam.ac.uk/mackay/BayesNets.html).
+- Check out the [Edward](http://edwardlib.org) library, and also [BayesFlow Variational Inference](https://www.tensorflow.org/versions/master/api_docs/python/contrib.bayesflow.variational_inference.html).
+- Well you can always make a Bayesian neural net. That would be the gold standard way of doing it.
+- not really, but cross valiadtion still works
+- Also this [Weight Uncertainty in Neural Networks](https://arxiv.org/abs/1505.05424)
+- Here's a very simple bootstrap approach to get uncertainty estimates:  https://arxiv.org/abs/1602.04621
+
+In that paper, they show the Dropout method produces poor results on basic underlying functions.
+
+Another very simple (but somewhat ad hoc) approach proposed in: https://arxiv.org/abs/1502.05700 
+is to simply lop-off the output layer (after training the whole network) and replace it with a Bayesian regression model
+
+In general, I agree this is an interesting problem which still remains fairly open (in particular, there's a lack of frequentist approaches in the literature which are computationally efficient).
+- Isn't dropout inherently going to underestimate uncertainty? Since units are zero'ed out during the forward process, the actual ranges the hidden activations can take upstream will be bounded.
+- What does "not really" mean? There is tons of work.
+- Yes, despite its popularity (probably since it's so simple), I don't think dropout is a proper method to get predictive uncertainty.  The variational argument appears to be a pretty tenuous connection (and the family of approximating distributions is seriously limited), I think Hinton's model-averaging perspective is a much more reasonable view of dropout.  Numerous works (cf: https://arxiv.org/abs/1602.04621) have empirically shown the dropout approach can lead to degenerate behavior (which is especially worrisome when your initial goal is to estimate uncertainty!)
+- as it is equivalent to a variational inference approach, yes it will.
+- correct me if i'm wrong, but i haven't seen a serious effort to model anything like confidence intervals for deep neural net predictions. there's some research and ideas thrown about but nothing major. point me in the right direction if im mistaken
+- that is because confidence intervals are a special case of predictive distributions, which Bayesian approaches result in. a bnn will have a very complicated predictive distribution, for which a confidence interval is not a sufficient statistic.
+
+also, these ideas are more than 25 years old. bnns have received less attention before alex graves nips 2011 paper because gaussian processes were the more attractive alternative. interest has resurged, because bnns scale to large data more easily.
+
+also, the absense of a consensus is hardly an argument against the applicability of competing methods. it is just an area of active research. Bnns are a common benchmark for many approximate inference methods.
+- could you point me to a few significant papers on BNNs? Thanks
+- I think this one started it:
+
+ * Wray L Buntine and Andreas S Weigend. Bayesian back-propagation. Complex systems, 5(6):603–643, 1991. (Cited on page 28.)
+
+This one is important, but I don't know if the connection between variational inference and MDL was clear at that point:
+
+ * Hinton, Geoffrey E., and Drew Van Camp. "Keeping the neural networks simple by minimizing the description length of the weights." Proceedings of the sixth annual conference on Computational learning theory. ACM, 1993. http://www.cs.toronto.edu/~fritz/absps/colt93.pdf
+
+MacKay also did quite few things on that, especially the Laplace thingy:
+
+* MacKay, David JC. "A practical Bayesian framework for backpropagation networks." Neural computation 4.3 (1992): 448-472.
+
+The gotterdammerung of BNN's return was probably this one:
+
+ * Graves, Alex. "Practical variational inference for neural networks." Advances in Neural Information Processing Systems. 2011.
+
+And then suddenly:
+
+ * Kingma, Diederik P., Tim Salimans, and Max Welling. "Variational dropout and the local reparameterization trick." arXiv preprint arXiv:1506.02557 (2015).
+ * Hernández-Lobato, José Miguel, and Ryan P. Adams. "Probabilistic backpropagation for scalable learning of bayesian neural networks." arXiv preprint arXiv:1502.05336 (2015).
+ * Gal, Yarin, and Zoubin Ghahramani. "Dropout as a Bayesian approximation: Representing model uncertainty in deep learning." arXiv preprint arXiv:1506.02142 (2015).
+ * Blundell, Charles, et al. "Weight uncertainty in neural networks." arXiv preprint arXiv:1505.05424 (2015).
+- thank you!
+- And most recently: [Structured and Efficient Variational Deep Learning with Matrix Gaussian Posteriors](https://arxiv.org/abs/1603.04733)
+- I think that is not for integrating out parameters of the model, but latent variables. Same methods, but slightly different goal.

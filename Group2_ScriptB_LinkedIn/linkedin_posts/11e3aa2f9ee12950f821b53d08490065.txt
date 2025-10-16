@@ -1,0 +1,52 @@
+URL: https://www.linkedin.com/posts/sarat-chandra-vallabhaneni-544479a5_are-large-language-models-llms-deterministic-activity-7320352863262507009-Qsyp
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sarat Chandra Vallabhaneni的动态
+Sarat Chandra Vallabhaneni
+
+Manager @ Deloitte | Gen AI, Machine Learning, Analytics
+
+5 个月
+
+Are Large Language Models (LLMs) Deterministic or Probabilistic?
+
+Large Language Models (LLMs) are mathematically deterministic at their core but functionally probabilistic due to the way they are implemented. Let us break this down further.
+
+LLM Determinism:
+The output of an LLM's neural network is fixed for a given prompt and set of parameters. This means that the model will always generate the same probability distribution of tokens for a given input.
+For example, if we input "The sky is" to the LLM, the model might assign a 90% probability to "blue" and a 5% probability to "red" as the next token. This probability distribution will be consistent every time the same input is provided under identical conditions.
+
+LLM Probabilism:
+The probabilistic behaviour of LLMs arises during the token sampling process used while generating text. 
+Continuing with the same example, if you input "The sky is" 100 times, the model might predict the next token as "blue" in about 90 cases and "red" in about 5 cases due to the sampling process.
+This token sampling during inference is what makes the output of LLMs appear probabilistic.
+
+So, to answer the question, LLMs generate a deterministic probability distribution but the actual token prediction is probabilistic due to the sampling process.
+
+
+163
+19 条评论
+赞
+评论
+分享
+Chandranshu Jain
+
+Asst. Risk Consulting Associate| Moody's Analytics | Statistics Major | Gold Medallist|GenAI| RAG, Agents| R,SQL,Excel
+
+5 个月
+
+Sarat Chandra Vallabhaneni Agree. Given same prompt, the contextual embedding will be same, hence the softmax gives the same distribution.
+The decoding techinques like greedy decode, exhaustive decode, beam search are deterministic decoding. 
+The stochastic decoding techniques like top p, top n or temperature sampling add randomness to decoding process.
+Feel free to add/

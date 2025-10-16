@@ -1,0 +1,85 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1adt52s/which_path_is_better_data_science_or_software/
+Title: Which path is better: Data Science or Software Engineering?
+
+Content:
+Okay, so I'm in need of some career advice, because honestly I'm at a point where I don't really know how to proceed in the future.
+
+For some background info:
+- I've completed my Bachelor's degree in Computer Science (3 years degree), took a year of pause (during that time I just focused on work), and at the moment I'm in my first year (out of 2) of my Masters's degree in Data Science.
+
+- As for work experience, I started working during my second year of Bachelor's as a Software Engineer. I've completed two internships, and I've been a Junior Software Engineer for more than a year and a half (currently I'm still working, trying to manage both my job and the university lectures and assignments in parallel). The languages/frameworks that I've worked with the most are Python - Django/FatsAPI, Ruby - Ruby on Rails, TypeScript - React (even if my perspective for this field is that I shouldn't be fixed on just some languages/standards, as the industry is evolving at such a rate, that from a month to the other we might find a new tool that's 100 times more efficient).
+
+- Up until recently I didn't ever interact that much with the concepts of Machine Learning, but since starting the Data Science degree I've realised that I like this field a lot and I take every Uni project as a challenge that I love solving.
+
+Now let's get to the actual issue at hand: in the next few months I would like to look for another workplace, since I've realized that the environment that I'm currently in is affecting me negatively and unfortunately I don't consider that this is a place where I can grow (both as an employee/software engineer as well as a person in general). If you'd like more info about the reasons, I can edit this post and add them, but I don't want to make this too long.
+
+At this point, I don't really know what path to take: continue with the Software Engineering career or switch to Data Science / ML / NLP?
+
+I'm asking this from 2 distinct perspectives:
+1. which one of the two is better for my future? I've been reading different posts lately about some data scientists / ml engineers saying that this field is really volatile and a lot of companies switch strategies from one day to another and many find themselves unemployed out of the blue, besides the fact that some people say that there are already too many data scientists / ml engineers for the few jobs required. But thinking about all of the advances in AI that have been happening lately, I was under the impression that this field is going to thrive in the future.
+2. I have always believed that salaries in both fields are good, but as a data scientist / ml engineer you can reach a higher max salary compared to what the max salary of a software engineer can be (even if I've also read posts that stated the contrary).
+
+If I want to be completely honest, I think that I already have the answer, since I like a lot what I'm studying and everything related to this field is just sooo captivating. 
+
+But my problem right now is that I've ve been able to get to a point where I'm competent enough as a software engineer to make enough money to support myself, so finding another job in the same field would be easier. Since my parents are not helping me financially anymore, I don't think I would be able to get by with the paycheck of an intern (around 800 Euros/month where I live), if I were to switch fields.
+And I don't think anyone would take me in this field for anything more than an internship, because I'm aware of the fact that I do not have enough experience in Machine Learning and Statistics for any other role.
+
+As for some additional information that might be helpful, I'm in my early twenties and I live in Eastern Europe, where prices are not as high as in other places, but it's still not easy to get by by yourself.
+I've been also looking around for various opportunities in other countries in this field, in order to be able to work remotely or maybe do an internship there, but I haven't been able to find much.
+
+PS: I know that a lot of people might say that I'm young and that this is the best time to take risks, but going to an intern's salary would just expose me to the risk of being homeless, and that's not such a good option :D
+
+PS 2.0: I have also mentioned the NLP sector because it sparked my interest and I’ve been taking some extra classes in order to gain some more knowledge about it.
+
+TLDR: which is the best career option between Software Engineering and Data Science/ML/NLP?
+
+Comments:
+- Become a Software Engineer, it is definitely more stable and you'll have more breath room with what you want to work on or who you want to work with.
+- just my 2 cents from my boss re: data science. choose one of two: 
+
+1. heavy prob/stats with deep math knowledge. 
+2. basically dev with DS knowledge. be able to fully deploy ML models from start to finish. 
+
+anyone in between (fit-transform/notebook ds) are getting shaken out of the market.
+- [deleted]
+- Swe more jobs but they are different paths, you may love one and hate the other. I find SWE kinda dull.
+- I'm a software engineer, but I worked heavily on data science stuff, I guess it doesn't really matter as long as you choose what you are interested in.
+- Sr data scientist here with 4 YOE as SWE, 4 as MLE and 1 as senior DS. 100% go with the software engineering role. DS will come and go, SWE will always be around. 
+
+I have led teams full of DS people and nothing got done. SWE teams understand stuff like unit testing and writing modulair code.
+- I moved from data science (senior and team lead level)to being a software engineer. It's an infinitely better career. I wouldn't recommend going the other way (obviously).
+- I recommend Software Engineering. 
+
+It is a more stable job with a well-developed career path (clear path from entry-level software engineer to CTO). Data Science in most company (even in large companies) does not have a clear career path and it rolls up into one of the core functions (engineering, product, marketing) at high levels. This is because DS is often seen as a supporting function.
+
+As for salaries, software engineering pays more than data science on average. If you’re an MLE, you may be on similar pay with software engineering. The good news is: you can start as a software engineer, get 3 years of experience in SE and then switch to MLE. If you like MLE after the switch, you can stay there. Otherwise, you can move back to SE. A lot of MLEs in the industry started from software engineering. 
+
+There is also a lot of gate-keeping in data science and ML, especially from PhD folks. So if you’re not a PhD, you may face some rejections just because you don’t have a PhD ( not because you’re not good). If you want to work in research, then I recommend doing a PhD.
+- Since u r pursuing an MS in data science, I’d suggest that u try out a data science/ml internship and see how much u like it. If u like it, then stay, otherwise u can always go back to software engineering since u already have a background there. 
+Nothing is “better” than the other. U just need to figure out what’s better for u.
+- Pick software engineering, the market for DS is oversaturated and thanks to all the chatgpt hype the job requirements can get absurd (not that they were reasonable to start with). I have a very similar path and back in 2021 when I got hired for DS the application process was gruesome but I saw myself landing a job in DS, not it is borderline absurd with how many people you compete with for every spot.
+- DS is basically becoming an engineering speciality anyway. The days of doing some nice things in notebooks and presenting your results to the business IMO are coming to an end. This sort of work will be more of a data analysis speciality. 
+
+What firms want is DS to drive value and the only way this is possible is to productionise models which work. This requires a lot of engineering skills.
+- Software Engineering or Data engineering path is more stable and satisfying. Most of the data science projects will not see the end of the tunnel. Data science is more about understanding business by spending lot of time through the messy data and then if required, make a predictive model to solve a particular problem. 
+
+Even if you get the chance to make a predictive model, chances are you won’t get the satisfaction because training a model on a data is not that big of a deal; there are endless libraries that will automate the job for you. Majority of your time will end up in cleaning the data and deploying the model, if it works. 
+
+On the other hand, software engineering skills will take you long way in your career. Most of the data science people I know are in reality software engineers. The people who call themselves data scientists are more closer to business than technology.
+- As someone who does a bit of both, DS is better for younger people.
+
+SE might be more stable and less risky, but at this point it's a dead end job if management is not your end goal. If it is, why not immediately study management?
+
+The only reason when I would advise against it is if you're not capable enough for DS. If Andrew Ng and such courses are the extent of your abilities, and you have no particular curiosity in the field, you might be better suited for SE. Not because SE is better, but because DS is a death sentence if you're mediocre, and best case scenario is you end up managing a team due to seniority and every capable person leaving your company eventually. On average a mediocre DS practitioner will be maintaining existing DS solutions, which is analogous to low-end SE jobs anyways.
+- Go the dev route to start. Can always transition to data science later and your dev skills will make you a better candidate/DS. Could also ho into Data Engineereing where you could use some if your dev skills
+- Just try something
+- Engineering is financially better, stabler, and it's easier to get a job.  If you want to do ML related work like NLP consider looking at Machine Learning Engineer roles.  They pay better than data science and are ML heavy.  A lot of DS roles use not that much ML and are more analytics focused like looking over data, plotting it, and presenting what's going on to management.
+
+You go into data science because you love looking at data and researching information.  You got into engineering for the money and the stability, or for the love of building things.
+- [deleted]
+- MLE
+- It's easier to get the foot in the door as a SWE and transistion to MLE/DS than directly go to DS. The DS job market being saturated is an understatement. Without a PhD your chances of succeeding are very low.
+- Software engineer. We're about to hit a trough of disillusionment in the data science/ML game once the business school suits figure out that LLMs don't solve any problems. Hard to say what the future is for this field. I'm working on my software engineering and system design skills so I can survive the winter. I think eventually people will find ML useful and extract value, but they'll go about it in a more pragmatic way and treat it as a software specialization.
+
+I'm 40 and have a PhD in math and decent software skills but not elite. Hopefully I'm not too wrong about this.

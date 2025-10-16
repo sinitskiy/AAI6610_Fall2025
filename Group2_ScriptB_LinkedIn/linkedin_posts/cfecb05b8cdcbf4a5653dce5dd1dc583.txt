@@ -1,0 +1,38 @@
+URL: https://www.linkedin.com/posts/evansgeoffreyb_im-so-excited-to-see-the-llm-bubbles-bursting-activity-7366938326215360512-60-V
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Geoffrey Evans的动态
+Geoffrey Evans
+
+Program management expert making the thousand small things and six big things that annoy us better. I work at the intersection of solid data and well-honed intuition to decrease downtime and implement AI solutions
+
+1 个月
+
+I'm so excited to see the LLM bubbles bursting. I still want to see mainstream conversations stop referring to them as AI.  There's no I. I'm not being glib or even ahead of the curve here. Téa Smith and Ingrid Johnson (and MANY others) have been rightfully crowing about how massively misrepresented AI is in the public perception. 
+
+As with most tools, used correctly LLMs and their ilk are fantastic force multipliers. I do a lot of woodworking and a bit over a year ago I joined the surprise amputee club (it's pretty minor but still missing a couple phalanges) because my absolute favorite power tool is incredibly dangerous if used carelessly. AI is exactly the same. Use it for something it isn't designed for, use it carelessly, fail to understand its implications and limitations, and it will destroy all sorts of things.
+
+We could be using LLMs and machine learning to make things SO much better if we stopped trying to force them into places they don't belong and leaned in hard where they shine.  Check out the story about the bakery image recognition program that is fighting cancer! So as you are building product lines, support models, marketing language, etc or working implementation and M&A streams, take the time to fully understand what the tools can and can't do. Know the safety and security features and their limits. And know your worst case impacts and risks. I've never seen an AI with a SawStop style brake.
+
+184
+48 条评论
+赞
+评论
+分享
+Rachel Beck, MPA, MSc Data Science
+
+Strategic Product and Analytics Leader | Building AI powered products and analytics solutions to drive strategic growth | Global Leader in Business Intelligence, AI, Advanced Analytics, & Social Impact.
+
+1 个月
+

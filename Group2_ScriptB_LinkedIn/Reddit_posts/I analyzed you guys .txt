@@ -1,0 +1,50 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hn0k9f/i_analyzed_you_guys/
+Title: I analyzed you guys 
+
+Content:
+In my quest for finding an internship and figuring what I want to do with my life workwise I decided to analyze how y'all feel about jobs in data science. One of the fields I am interested in is machine learning/data science so I decided to do a project that would help me see what other people think about this field. 
+
+The project is available here: [Sentiment analysis part 1 | Ted’s cave](https://tedthecaver.github.io/2024/11/29/sentiment_analysis.html)
+
+I would really appreciate any advice on the project itself if anyone bothers to read through it or on the problem of how I'm supposed to figure out what my passions are, and how do i commit to one thing (and how do i land an internship lol). 
+
+Anyways I thought I would share with my dataset the project I did. Thanks y'all. 
+
+Comments:
+- And a thought about finding your passion: I feel pretty strongly that if you can’t muster up any interest in the data you’re analyzing, you’re going to have a bad time. Choosing the domain/field you’ll do data in is pretty important, maybe more important than the other ways you might narrow down. Also it seems like it is hard to get interviews in other fields once you’ve worked with data in one field. Maybe that could be counter balanced if you don’t stay in your first job a super long time. Idk. 
+
+Think about how hard this analysis would have been if you weren’t a Reddit user already knowing how Reddit behaves and how people use Reddit. That’s how it feels when you are working with data in an unfamiliar business. You have to develop business knowledge and instincts and it takes time, which is why people who have worked in the domain will often edge you out if you’re new to it. I’m talking about later on a few years into your career, not right now, but I feel like that’s what you should have in mind right now—the long game. Right now you just need to find a hiring manager who wants to give you a shot based on your background, portfolio, and personality 🙂
+- I'm also on the same phase.
+- This is pretty cool. I think the main way to improve it is probably to tinker with your word filtering but I had one thought while reading. I wonder if you need to adjust for the timing or recency of comments on posts? I am thinking that low upvotes  could indicate when the comment was posted and not the actual sentiment of readers. Think about how comments get totally buried if you show up too late to a post. Doesn’t mean much, just the comment wasn’t read. 
+
+I’m afraid if I go back to your site I’m going to lose this comment on my phone, but one other thought is were you filtering on top 100 posts or top 100 comments to pull the data? And what if you pulled comments that may or may not have your selected job key words but the post they reply to does?? That would let you expand into more interesting words/sentiments in the comments themselves and you’d know they are theoretically on topic if you had filtered the main posts themselves to include the key words. 
+
+Sorry if my second bit there addresses something you did in fact already do.
+- Cool stuff! Two points 
+1) The plots are very vanilla
+2) For your own edification, try other sentiment extraction techniques. Use a finetuned BERT, finetune your own BERT, have an LLM label a subset of the data and use those as training labels for the rest. 
+Good luck!
+- Some thoughts - the foundation is good and a very nice beginner project so well done. 
+
+Constructive criticism - word clouds are almost always useless, I would highly advise against including multiple. 
+The commentary/presentation (while I see why you presented it this way) is clunky and does not read well. This is not how projects are discussed in a work environment and I would always model your project writeup on the way it would be done at work.
+- Nice initiative
+- Could you also use the Gensim LDA model to find out the most frequent topics from the data? 
+
+Asking as a student, is it possible? Just started learning NLP
+- Same
+- That’s interesting!
+- Just started looking into machine learning and this was impressive man.
+- This reminds me of sentiment analysis project I did when I was a student. I glimpsed over the project and I don’t think you used any LLM. Considering the ease of LLM access and the current hype for LLM, I would recommend adding an LLM component will make this a great interest generator for hiring managers.
+- I really enjoyed this and learned a lot thanks for sharing!
+- The project is really great, ngl
+- This is a cool project
+- ,z al l
+- [removed]
+- Thanks for sharing
+- Very smart
+- Wow that point hits hard. If I wasn't familiar with reddit this project would be much less intuitive to do, part of the reason I didn't choose to fetch data from twitter or any other site I'm not familiar with. I guess the 2 applicable domains I would be interested in is cybersecurity or something geo or space related. 
+
+Thank you for the insight.
+- I disagree, and have made a career out of my point of view. Sometimes being dispassionate about data makes you a more well rounded analyst or scientist. I have worked in healthcare, telecom, fintech, and soon SaaS. I have a masters degree in business analytics specializing in big data, ML, and AI. Not being a subject matter expert in the field has never stopped me from being the best analyst on any team I’ve belonged to. I have been a director leading a team of employees and a sole contributor alike. I know the systems. I know how they work. I know the math or more appropriately the statistics of the data. I know visualization tools and the most appropriate way to tell the story without editorializing. You don’t need to fall in love with the company or the industry in order to be passionate about the work you do, if success is what you’re passionate about.

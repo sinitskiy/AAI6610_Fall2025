@@ -1,0 +1,65 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1hpo7iq/indian_sign_language_model_feedback_wanted/
+Title: Indian Sign Language Model: Feedback Wanted
+
+Content:
+Hi everyone,
+
+My friend and I are working on a machine learning project focused on recognizing Indian Sign Language (ISL) gestures using deep learning. We’re seeking feedback and suggestions from computer vision experts to help improve our approach and results.
+
+# Project Overview
+
+Our goal is to develop a robust model for recognizing ISL gestures. We’ve used a 50-word subset of the INCLUDE dataset, which is a video dataset. Each word has an average of 21 videos, and we performed an 80:20 train-test split.
+
+# Dataset Preprocessing
+
+1. **Video to Frames:** We created a custom dataset loader to extract frames from videos.
+2. **Landmark Extraction:** Frames were passed through Mediapipe to extract body pose and hand landmarks.
+3. **Handling Missing Data:** Linear interpolation was applied to handle missing landmark points in frames.
+4. **Data Augmentation:**
+   * **Random Horizontal Flip:** Applied with a 30% probability.
+
+# Model Training and Results
+
+We trained two models on the preprocessed dataset:
+
+1. **ResNet18 + GRU:** Achieved 88.74% test accuracy with a test loss of 0.2813.
+2. **r3d18:** Achieved 89.18% test accuracy with a test loss of 0.7433.
+
+# Challenges Faced
+
+We experimented with additional augmentations like random rotations (-7.5° to 7.5°) and random cropping, but these significantly reduced test accuracy for both models.
+
+# What We’re Looking For
+
+We’d appreciate feedback on:
+
+1. **Model Architectures:** Suggestions for improving performance or alternative architectures to try.
+2. **Augmentation Techniques:** Guidance on augmentations that could help improve model robustness.
+3. **Overfitting Mitigation:** Strategies to prevent overfitting while maintaining high test accuracy.
+4. **Evaluation Metrics:** Are we missing any key metrics or evaluations to validate our models better?
+
+You can find our code and implementation details in the GitHub repository:  
+GitHub Repository: [SignLink-ISL](https://github.com/Naneet/SignLink-ISL)
+
+Thank you for your time and insights. We’re eager to hear your suggestions to take our project to the next level!
+
+Comments:
+- Assuming you haven't used these, here are my thoughts.  
+**Here are few things to try to prevent overfitting:**  
+\* Early Stopping : stop training once the validation performance reaches a certain level.  
+\* Dropout : Regularly drop connections in your model to prevent over-reliance on specific neurons.  
+\* Batch Normalization : Improve convergence and reduce overfitting by normalizing activations.  
+\* Cross-Validation : Validate your model on different subsets of the data to ensure robustness.
+
+**Some of the evaluation metrics apart from accuracy:**  
+\* Precision  
+\* Recall  
+\* F1-score  
+\* AUC-ROC  
+\* Confusion matrix  
+If your models are used for regression (predicting continuous values like timestamps, video ratings etc.), use these metrics :  
+\* MAE (mean absolute error)  
+\* MSE (mean squared error)  
+\* RMSE (root MSE)  
+\* R-squared (coefficient of determination)

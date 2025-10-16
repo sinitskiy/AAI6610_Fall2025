@@ -1,0 +1,84 @@
+URL: https://www.linkedin.com/posts/agnimitrasengupta_a-bayesian-approach-to-quantifying-uncertainties-activity-7189757781082537984-CFco
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Agnimitra Sengupta的动态
+Agnimitra Sengupta
+
+Assistant Professor of Civil Engineering
+
+1 年  已编辑
+
+Announcing our latest publication in Transportation Research Part C: Emerging Technologies journal. Thanks to the amazing collaborators from Penn State University Transportation Engineering Lab - Dr. Ilgin Guler, Adway Das, and Dr. Sudeepta Mondal for their contributions! 
+
+Traffic prediction models often struggle to adapt to out-of-distribution datasets due to limited generalizability. Our recent paper introduces a Bayesian recurrent neural network framework for uncertainty quantification in traffic prediction with enhanced generalizability by introducing spectral normalization to its hidden layers. By controlling complexity and mitigating overfitting, our method improves performance even with limited training data. Additionally, prediction intervals empower traffic management systems to make real-time informed decisions and address congestion effectively. Our innovation presents a significant advancement in traffic prediction, offering practical solutions for real-world mobility challenges. 
+
+
+A Bayesian approach to quantifying uncertainties and improving generalizability in traffic prediction models
+sciencedirect.com
+64
+1 条评论
+赞
+评论
+分享
+Subir Ghosh
+
+Doctoral student at Penn State University
+
+1 年
+
+Congratulations bhai
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+880 位关注者
+
+52 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

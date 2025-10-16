@@ -1,0 +1,18 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/shk1kp/germline_editing_of_b_cell_receptors/
+Title: Germline editing of B cell receptors
+
+Content:
+Hi Folks, I am excited to share my latest video with you!
+
+This is a summary of the paper:  Multiplexed CRISPR/CAS9-mediated engineering of pre-clinical mouse models bearing native human B cell receptors. 
+
+In this video, I outline steps used to create broadly neutralizing HIV antibodies by utilizing a single-step CRISPR/Cas9 approach to genetically edit B cell receptors. These data show the functional responses of the edited B cells in a live animal model. 
+
+Any thoughts on the video are greatly appreciated. I hope that you enjoy learning about this interesting topic!
+
+This is a video from my YouTube series summarizing scientific papers. These are meant to be easier to digest for non-specialist audiences to help make primary scientific articles more accessible to everyone.
+
+[https://youtu.be/KY2DpGyL6Bg](https://youtu.be/KY2DpGyL6Bg)
+
+Comments:

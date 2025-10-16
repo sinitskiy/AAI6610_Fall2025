@@ -1,0 +1,15 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1bz4t98/variation_of_mse_loss_for_regression_tasks/
+Title: Variation of MSE loss for regression tasks
+
+Content:
+A while back, I was listening to a talk by Erroll Wood on [this paper](https://microsoft.github.io/FaceSynthetics/) (I think it was at CVPR 2022). Even though it is not in the paper, he mentioned that they used a specific loss function for their landmark regression. I.e. for each landmark, they regressed the coordinates `y_pred` as well as a scalar uncertainty `sigma`. Their loss was
+
+        loss(y_true,y_pred) = (y_true - y_pred)**2 / sigma**2 + log(sigma**2)
+
+I thought this was a pretty neat idea, since it automatically forces the model to balance the uncertainty `sigma` with its actual deviation from the ground truth. Since then, I have tried it in a few cases where having an estimate for uncertainty would have been of help, but I didn't get great results.   
+I have read quite a few ML/CV papers but haven't come across this loss in any other paper. It was not even in the paper I cited above, I only found it on the presentation.  
+Has anyone seen this being used? Do you have any experience with it? Does it have a name?
+
+Comments:
+- If you represent the landmark position as a probability distribution, you can use the negative log-likelihood (nll) loss function. The loss contains two parameters, the mean of the distribution which is the position itself and the variance which is the uncertainty.

@@ -1,0 +1,8 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1l4ka6n/mediapipe_holistic_model/
+Title: Mediapipe Holistic Model
+
+Content:
+Does the Mediapipe Holistic Model can run smoothly on android studio. I am new at computer vision and I have capstone project for sign language recognition. I am bombarded if this will run smoothly via Java/Kotlin in Android Studio. 
+
+Comments:

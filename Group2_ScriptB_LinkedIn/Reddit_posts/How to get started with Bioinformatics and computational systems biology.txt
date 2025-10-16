@@ -1,0 +1,22 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/qtpkyz/how_to_get_started_with_bioinformatics_and/
+Title: How to get started with Bioinformatics and computational systems biology
+
+Content:
+Hello,
+I am an undergraduate student in Bioengineering and I am currently in the 3rd year of my 4 year program in Turkey. Since the past 18months, I have been developing an interest in computer programming. I took several programming courses online, ranging from python programming, Matlab , excel, machine learning and deep learning, etc. However, I still have a deep interest in biology(biomedical research and all the like). And, Bioinformatics and systems biology seem to be a good suit for me. Let me not avoid mentioning that I precisely liked the cell biology , molecular biology and Genetics courses I have taken so far . 
+
+As an undergraduate student, how do I get started in these fields(Bioinformatics and systems biology
+) and eventually specialize in one of them by the time I do my masters ? I will really appreciate answers with specific details .
+
+Thanks
+
+Comments:
+- [deleted]
+- Depends entirely on what your instructor can offer.
+- You can get started with computational protocols like molecular docking and dynamics. Also you can try ouy different RNA sequence analysis using python or R. Resources to learn these are abundantly present online and you dont need a professor to get started. Also if you have interest in ML you can look into medical image diagnosis. I personally want to learn ML and do something with it but havn't really got a good grasp on it yet.
+- Do you want to discover new biology or develop new algorithms?
+This is really a major dividing line. 
+The appropriate advice depends on your answer to this.
+- Also, you should see if they'll let you work in their lab. Typically this is unpaid and you get the grunt jobs, but you'll get a chance to interact with all of their trainees and learn about the paths to get there, as well as gain the necessary experience to be competitive for grad school.
+- Thanks for your advice!

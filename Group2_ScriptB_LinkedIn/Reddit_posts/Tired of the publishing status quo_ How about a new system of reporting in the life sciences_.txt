@@ -1,0 +1,217 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/3s969v/tired_of_the_publishing_status_quo_how_about_a/
+Title: Tired of the publishing status quo? How about a new system of reporting in the life sciences?
+
+Content:
+A friend of a friend (Andre-F) published this. I've had many many conversations along these lines so it resonates with me, and I think makes a lot of sense:
+
+  #KillScientificPublishing
+ 
+We live in an age of easy, fast, real-time content sharing and communication. Waves of social media communication and trends travel and cover the entire globe in minutes to hours. Companies work 24/7 by outsourcing to offices all over the world. We can find out what our friends in a different continent are listening to at this exact moment in time and follow news that are happening as we speak through twitter hashtags. Grassroots movements have formed politically-significant parties and exposed social and financial wrongdoings. We live in the age of Wikileaks and Wikipedia, and we take this all for granted.
+ 
+Consider now in this light how we produce, publish and communicate science. We do experiments for years, isolated in the confines of our own research group or institute. When the research is far enough down the line, if it’s promising and solid, we fly it to high-profile conferences and present it. At this point, most of the work has been done, because we’re afraid a competitor would steal the idea, run with it, and publish in Nature before we’re able to finish the same experiment. After we’ve done all the experiments, we painstakingly put all the beautiful figures together, tick off all the formatting guidelines, wrestle the online submission system and send it to a high-impact journal. And we pay for this. A week later if we’re lucky, the editor lets us know the manuscript (manuscript!!! Really??? Are we in a Gregorian monastery or what????) is deemed worthy to be sent out for review. From there on it sits at the desk of 3 fellow scientists, who likely pass it down to a postdoc or student to review critically. Perhaps 3-4 weeks later you hear back. If you’re lucky, there’s a mix of positive comments and negative ones. Sometimes the positive comments add something to the manuscript that you hadn’t ever thought about during the many years in which you were doing experiments for it (irony here fully intended). Some negative comments you can address; for others, it is too late. They would require reworking entire sections of the paper and often come down to matters of opinion, not scientific fact.
+ 
+Eventually after all this (again, if you’re fortunate) your manuscript (really????) is published in the Sanctum Sanctorum.
+ 
+It is November 2015 as I write this. I have browser tabs open with facebook and twitter and I’m listening to spotify. This weekend I am skyping my parents. So why the hell are we conducting, communicating and publishing science like we were a bunch of paranoid Victorian old farts from the Learned Society of Stick-in-the-Muds??? The current state of affairs is glaringly ridiculous.
+ 
+We have all had discussions about the topic of publishing with colleagues and no one is happy. Changes are fortunately being effected in open access and peer review, but I for one believe these reforms aren’t nearly drastic enough. Publishing needs a major overhaul. In fact, I think the current form of scientific publishing needs to die and that we must replace it with something of our time.
+ 
+I’ve outlined below a few disorganized thoughts I have on how scientific publishing would look like, had it been invented in the 2010s and why I think these are good ideas. I’m sure they echo the views of others; I have no claim to any originality whatsoever in this. I meant to write up a neater document with a clear strategy, but I thought it would be best to put these ideas out there and crowdsource their development from the very beginning.
+ 
+Please read, share, and insert comments/edit this document. Perhaps we could be the start of something.
+ 
+ 
+·      Journals? No, hashtags.
+
+o   You assign to your paper a macro-tag from a pre-selected group of general tags (neuroscience, material science, etc)
+
+o   You additionally specify whichever micro-tags you’d like -#interneurons, #plasticity – in addition, machine-learning text recognition pattern classifying algorithms continuously extract, add and suggest new tags based on the content of the paper
+
+o   No need to subscribe to tables of contents and email alerts from 1,000 journals and miss out on interesting findings published in smaller journals – you will be able to follow tags and specific labs or scientists (handles, like twitter). There will be no such thing as a small journal.
+
+o   We could use machine learning recommendation algorithms (similar to Spotify discover or Pandora) to suggest papers tags or labs you might be interested in following.
+
+·      Scientific research is an on-going fluid process, not a static photograph. Publications should reflect this and be wikis, not pdfs.
+
+o   Authors will be able to continuously edit the manuscript but changes will be tracked so readers can see historical versions of the paper. [[would anyone go back and look? maybe a wikipedia like timelinesummary of major events?]]
+
+o   You should be able to add data after getting feedback from readers.
+
+o   Wikification of the publication allows cross-referencing. This creates an encyclopedic network of live wikis that are continuously updated. Scientific publishing finally reflects the scientific process itself as a living, breathing, continuously improving entity.
+
+o   This also prevents wrong experimental decisions. If you experiment as you publish the results, the community itself can inform you what to do next. You’re crowdsourcing creativity and brain power. This will present great opportunities for collaboration as well.
+
+o   It is deeply frustrating to sit on 2-year old results that no one else in the community knows about. Equally, it is utterly nonsensical that the science we read was done 1-3 years ago. We are living through an embargo of knowledge explained by vicious and selfish competition for high-profile publications to the benefit of the few and detriment of the many. The whole community, in fact. This is not what science is about. The community needs real-time feedback from individual labs, just as they need this feedback from the community.
+
+·      Data presentation & formatting should not straight-jacket authors’ creativity and willingness to show data
+
+o   Authors can share data in any format and presentation that they like. We leave hosting it up to them.
+
+o   Formatting is free, within the constraints allowed by the wiki. This offer some degree of standardisation whilst saving authors the huge trouble of following straight-jacketed guidelines.
+
+·      Where you publish stops being a factor, so the system of quality assessment will be majorly overhauled
+
+o   Peer review is the defining quality of social media. The quality/popularity of content is defined by the consumers of that content. Popular papers will be visited more, downloaded more, shared more, referenced more, cited more. An algorithm, similar to Google’s ranking system for search results, could be devised as a way of creating a composite measure of the quality and impact of a paper. The above-mentioned measures essentially index the instant popularity of a paper, not necessarily its quality, much in the same way that a piece of social media going viral does not ensure its quality. It would be entirely possible to devise a rating system that would also factor into the algorithm.
+
+o   Traditional peer review functions by having “guardians of the gates of knowledge” into the sacred temples of Nature and Science. Modern social media works based on two principles: 1) community review by sharing and “liking” content; and 2) content curation. Point 1 is hugely important for separating good and bad research and is a vast improvement on the opinion of 3 people. Some referees often overlook real issues with scientific work, and other referees are obstructionists who cant see the forest for the trees and are determined to stand in the way of progress. Post-publication peer review in the form of reactions and feedback from the community largely addresses this issue. Point 2, content curation, is also important. How do you find the things you want online? There is too much media on offer, way more than we can consume. We therefore rely on word-of-mouth and individual recommendations (trendsetters) or curation centrals, hubs that look over and recommend content so we don’t have to. On a social scientific platform you could easily recommend collected readings to others – scientific mixtapes/playlists. The way social media is “peer-reviewed” is more democratic.
+
+·      Despite having the ability to be a largely grassroots movement, the system described so far will have running costs and likely require employing a team to implement and maintain. Funds could be gathered from unobtrusive advertisements organized in a similar way to facebook or twitter. Profits would be reinvested in infrastructure and development, and any surplus would be compounded into a fund for a grant. This grant could be split and awarded in the form of funding prizes to groups writing the assessment algorithm’s top Y-rated papers of the year.
+
+
+Comments:
+- The internet is the place where people tell us mars will be as big as the moon in the night sky and that measles is a right of passage kids don't get to go through these days. I would be deeply skeptical of any science presented solely on a social media platform and very scared that the result would be the dumbing down of science. Especially if the review process now has people who are not scientists. It would encourage sensationalism for the "likes" more than a Nature submission ever could.
+- There's a lot of nice ideas in here, many of which resonate very closely with my own thoughts, however I think many of the same problems apply. (I do not mean to dismiss here, just present some of the major obstacles as I see them).
+
+The first and major problem is that we have a system in place in which the majority of scientists - particularly the upper echelons, who have the largest clout - are heavily invested. 
+
+The people with lots of papers in high ranking journals won't suddenly want to overturn the rankings which place them at the tops of their fields. Early career researchers won't want to publish years of work in an untested system for which they cannot know whether they will get appropriate recognition, which is so vital for getting the grants they require to continue along and up the ladder. Universities and funding bodies won't want to throw away the metrics by which they judge academics. Publishers - who effectively currently own the cumulative record of all of our scientific progress to date - will certainly not want to just turn all that over for nothing as their industry hypothetically gets dismantled. 
+
+Essentially, there are large and vested interests which maintain the status quo, and large barriers which prevent researchers from trying to operate outside the standard publication paradigm. 
+
+There are a couple of other minor points that trouble me with the ideas above. One is the reliance on both web 2.0-style editing/suggestions/rankings and machine learning algorithms, both of which would be open to mistakes and manipulation. For the former, it's the same with altmetrics that are in use now - it becomes possible to 'game' the system to make something look more popular than it is. Similarly, what's to stop competitors trying to suggest you do inappropriate experiments, or downvoting you etc. As for the algorithms, how often has facebook or google or science direct suggested wildly inappropriate options for you? The system described above would require a hugely significant investment of developer time to even get going and and maintain, as you say, but think about how big companies like Google and Facebook are - are you suggesting we build one like that to run this? Is concentrating our scientific output in the hands of one hopefully-benevolent system better than distributing it around various publishers as we do now?
+
+I honestly doubt a change such as you envisage could ever come about. However some aspects certainly are coming about, which is great - open access and open peer review is a good start, as would be a shift towards the normalisation of pre-print services and data deposition services. However I think the huge resistance these things have faced (and still do) demonstrates that it will have to be a case of slow and steady winning the race.
+- I have picked up on two themes in your post:
+
+1. Publishing does not do a good job of rapidly disseminating new findings in a egalitarian manner.
+
+Response: You can publish your results in your own blog, and self promote through social media. If you are consistent and interesting, perhaps you will be at the forefront of the new institutions of scientific publishing.  This can occur in parallel with the old publishing system, and the winner will be decided by where people choose to spend their attention.
+
+2. You seem quite cynical about the peer review process.
+
+Response: I do think that science is complicated enough that you want experts reviewing work anonymously in good faith. I think many of your objections would be solved if reviewers had as much invested as manuscript authors (incentives), or if the process was designed to be collaborative rather than be adversarial. 
+
+Journals are experimenting with different peer review systems, hopefully more productive review systems will become available as transaction costs of communication are lowered.
+- Once you start live editing and feedback is when it becomes a problem, there are people who will steal ideas and it's like giving them access to your lab and all your data. There will be struggles over whether people who contribute ideas should be cited or acknowledged, ideas being tested can be heckled or worse, and it'd be an all around shits how in all likelihood. Quantity would be given priority over quality. That's just my opinion. If it does work as intended that'd be great but I would not be an initial user of such a system.
+- Blegh.
+
+Okay so a few things.
+
+1. Data do not stand alone. Data exist in context of the experiment run and data collection protocol of the researcher(s) collecting them. This, in turn, exists only in context of the overarching research approach and methodology of the scientist(s) designing and conducting the experiment. The format of a scientific paper allows you to establish this research approach and methodology to justify the experiments selected, and to contextualize the data collected.
+
+2. There isn't the time, money, nor the IRB approval to do every experiment possible.  We do a small subset of experiments because they are clever ways of testing a problem. Explaining how this specific experiment actually tests the complicated mechanism that is otherwise difficult to access is necessary.
+
+3. ALL of this requires permanence of the record. This includes both permanence of the rationale, permanence, of the analyses, and permanence of the interpretations of results. 
+
+4. Quality and impact are different things. There are a lot of very high quality papers that are really of relevance to no more than a half-dozen specialists. Studies with high levels of novelty either in approach or in results, however, may have wide-ranging implications that affect the approaches or datasets of hundreds to thousands of other workers. One paper of high novelty may not indicate anything about the quality of a researcher, but multiple papers of high novelty may indicate that a scientist is better at seeing where the greatest work needs to be done to improve knowledge, where the greatest impact will be, and what sorts of bigger implications a new piece of data might have. In other words, some scientists do have better intuition than others.
+
+5. Say what you want about glossies, but the editorial staff of these journals are generally pretty good at identifying studies that have high novelty and thus are likely to impact the most researchers. I don't read Nature because I think Nature papers are necessarily higher quality than others, but because I know that many of the papers in Nature are going to be relevant to my understanding of bigger issues in my field.
+
+6. Fuck ads. The problem with advertising is that it ultimately creates a pressure to host only content which will generate clicks which will generate ad revenue. This is completely opposite of the goals of academic publishing, which is to be an unbiased record of completed research. Ads will destroy the entire endeavor.
+- It is true that academic communication is basically a broken system.  However designing a better system will do nothing.  Because we're not sticking with the current broken system because people think it works, we're sticking with it because of the systemic rewards for doing so and the high cost of changing.
+
+I can't put in my annual review that I edited Wikipedia.  Well, I can. But at best, it will be regarded as neutral, and some may see it as a negative.  Yet far more people read an article on Wikipedia than most journal articles.  
+
+I can post my current work and experiment details on my personal webpage.  However I run the risk of someone else publishing in the old journals first, and then they get the credit for my work.
+
+What we need to do is change the system for rewarding scholarship, and the changes to publishing will follow.
+- This is great in the bubble of sharing science, but what about funding?  You need to be secretive because funding is so scarce.  You ned to protect your IP.
+- So you would prefer a hashtag-driven popularity contest for publications rather than our current process by which results are vetted by experts in the field??
+
+some point-by-point comments
+
+-journal identity/quality absolutely matters: not all results are created equal.  some data is of higher quality, some results are of broader/greater impact.  the tiered journal system we currently have captures that, albeit imperfectly.  what's the first thing that I look at when I am assessing a scientist's productivity: the number and quality of their publications
+
+-we don't need hashtags in our articles, we already have them: they're called keywords.  some of us don't have such short attention spans that we need things encapsulated in 120 chars or less
+
+-no to editing on the fly.  it's already a big enough pain working on a report/manuscript with 2-3 people simultaneously with tracking changes.  when something goes to peer review and gets published, it should be a static record of the best interpretation of the data at the time.  does that mean it's always right?  No.  But it doesn't negate the data that's presented, nor should it be changed.  If you aren't sure of a particular statement or interpretation of your data, you really should not be making it in a paper.  it's fair game to speculate openly however, which is what the discussion section is for.
+
+-formatting and data limits are less of an issue than they ever were.  when I started in academia we actually had to print out hard copies of everything pre-formatted to the specified guidelines of the respective journals, with very tight constraints.  today, you can include a huge amount of supplementary data in just about every journal.  if you cannot distill your results into a succinct and coherent story in 4-7 figures and results/discussion, I would say the problem lies with you, not the publisher.
+
+-how to find stuff online:  seriously??  Pubmed?!  I have to wonder how long you have even been in the field if you cannot navigate finding relevant materials by pubmed searching.
+
+yes, our publication system and peer review system has its flaws, but there's a reason it exists as it has for decades - it's still very effective at getting the bulk of the best research out into public space, while awarding merit based credit
+- I agree scientific publishing has huge issues but don't know if I would want the same changes. I am very bothered by the level of secrecy in some fields but don't know what the easy solution to that is.
+
+The thing that pisses me off the most is the lack of fitting publication data into formal data structures. If I want to find a paper in which someone has done X experiment with Y protein and came to Z conclusion I usually have to spend hours looking up a variety of keywords on google scholar, wading through hundreds of pages and graphs, looking through references and references of references just to find the one piece of data. I know there are resources like NCBI and Uniprot that can help narrow things down but I rarely have much luck with them. I don't work on an obscure subject either. I honestly think it's quite embarrassing that we have produced such amazing technology as CRISP/Cas, electron microscopy, PCR, but we can't enforce a simple indexing systems that requires all published articles to index data on what proteins, genes, DNA fragments, molecules, methods, organisms, etc. were used, and what data resulted.
+
+end rant.
+- Wow, it seems like a lot of you really haven't properly read the text I posted. It is not implied that absolutely everyone would be free to contribute to such a platform, it would obviously have to be tiered based on whether you actually work as a scientist or not. And nowhere was it implied that the fundamental unit of reported science had to be a single experiment, or that there couldn't still be write-ups and reviews. It is a given that there needs to be interpretation, but the current level of 'interpretation' encouraged by standard scientific reporting is bordering on scientific fraud in some cases. Most of you are touting the benefits of journal publication and completely ignoring the negatives, how about some balance? I would like to see the publication records of everyone here. I bet there would be a strong positive correlation between those that publish high and have favourable attitudes towards the current system. Use your imagination people. This is not a hard problem to solve, the current system of scientific reporting is not ideal, can be improved, and should be improved. The difficulty comes when trying to change attitudes, as evidenced by many people's very superficial, and often incorrect, reading of what Andre-F wrote in the text I posted.
+- Totally great idea! It's long overdue and probably the root of many problems in modern science. Funding should probably not be from advertising imho but university/grant funded and archived long term much in the way that pubmed/pub central is though. Such a resource should be completely free from financial bias.
+- automatic depend plants office direction axiomatic liquid far-flung normal wasteful
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev)*
+- It wasn't implied anywhere in my post that such a system would be a typical open social network! Of course that wouldn't suffice! It would only be accessible for working scientists. There could perhaps be a section that was accessible to the public where lay texts could be published. The challenge is to develop a system that is as open as possible to create a new broader scientific community, but not one that is necessarily exposed to the whims of general population. I would have though that would be obvious.
+- You have completely ignored many of the very valid points the author (not me) makes. Why even keep the old style of publishing if the system as a whole can be improved? And if blogging your results is a valid method of reporting why not centralise it and improve the scientific community as a whole? You need to elaborate your points if you want them to actually stand up. 
+
+You say: "I think many of your objections would be solved if reviewers had as much invested as manuscript authors (incentives), or if the process was designed to be collaborative rather than be adversarial." But you suggest no way of remedying this, which is precisely what the point is of the text I posted.
+- 1) Of course. Why would a dynamic more open system be any less capable of supporting an aggregated interpretive data flow than a magazine article? The useful elements of the magazine format could easily be retained and incorporated into the system proposed in the text.
+
+2) Where does the text say anything about experimental data being reported out of context and devoid of interpretation? The whole point is to make the process more fluid. Of course context it important and sufficient semantic frameworks have to be used to make clear what a piece of data potentially shows. The criticism of the current system is that it requires too polished a final story, that forces interpretation where there shouldn't be any. I think this is clear if you have ever been though the publishing process. 
+
+3) I fail to see how a web based system can not achieve that? We are talking about a centralisation of reporting, note keeping, and interpretation. How does that not amount to permanence? Why do you think our dependence on print is reducing? Besides, do you really think journal articles are an accurate record of scientific data and methodology? Surely not.
+
+4) This is a matter of opinion, and I disagree. Those scientists you claim are simply good at understanding where their efforts are best spent can easily be seen as just being good as understanding trends in readership. The lay public reads sensational science > scientific journalists sensationalise scientific papers to feed the lay public > the journals (Nature, Science, Cell) are businesses and want the exposure the journalists give them, which inevitably has an impact on what they choose to publish > scientists must publish high or perish so they tailor their work to what they think is more likely to get published high. Being able to read this status quo does not make you a good scientist at all, it makes you a good at business. If your priorities are with survival and prestige, they are not necessarily with rigorous science and this is demonstrably true. This situation is only worsening as generation after generation of scientist gives more ground. 
+
+5) I'm sorry, but no one not working directly in a field should have such a critical a say on what is important or not to that field. They are ultimately not scientists and are not invested in the work, and that lack of investment leaves room for bias and whim. They publish what they think will maintain the profile of their journal is this artificial climate of sensational science. Nature has one of the highest retraction rates of any journal, that is because editors their care more about how sexy a story is than whether the claims made are evident from the data. That is a broken system if ever I saw one. 
+
+6) I agree, fuck ads, a system of scientific reporting should be publicly funded.
+- I think that is the biggest thing missing from this model: how do we assign credit to discoveries, and how to we evaluate scientists for grant funding? It is great to have experiments published in real time, but we already prohibit cameras at major conferences to try to reduce the rate at which people are stealing progress and trying to build on it further. There isn't a way to prevent that in this system. If I start a line of experiments that eventually leads to a cure for cancer in some innovative way, but my tiny lab gets outpaced by someone with the funding to have an army of post-docs cranking out data then who gets the credit?
+- 1. The issue here in time to dissemination is the time it takes to run the experiments, collect the data, write the paper, establish the rationale, and etc. Quite a few "traditional" open access publications otherwise have a 4 month submission-to-publication timeframe, and you can release preprints upon submission to any journal on preprint servers like arXiv. The actual time to dissemination then is not actually affected here at all. An open digital lab notebook is not going to actually improve anything and will not in fact actually present useful data to anyone.
+
+2. Again, what do you mean by "more fluid"?  Peer review is not the main issue here. The main issue is that contextualizing the research and establishing research rationale takes effort. Reporting the data without that is meaningless. So, you have to write the paper, more or less, regardless of the publishing platform. That's the big time sink.
+
+3. By permanence I mean that you need to preserve a single published version. Post-hoc modification of analyses and interpretation is dangerous to the integrity of the data and the analysis, so a wiki-style format is actually going to cause huge problems. We need to know what the original study design was, what the results of that study were, and whether that study itself was statistically meaningful. We can't then go back and say "okay, we're going to apply new models to that original study post hoc and then try to make it meaningful" because that sort of p-hacking is not acceptable scientific practice. We need permanence and immutability of the record so that we can preserve the integrity of the studies reported in it.
+
+4. No offense, but this "well science, nature, cell, etc pubs just mean you follow a fad" crap is sour grapes and should be treated as such. Yes, sometimes bad papers turn up in Nature, Science, Cell, etc., but mostly you're looking at papers which present new data or approaches that change how we have to look at research in a broad range of subfields.  Again, we're not talking about "quality" of work. We're talking about impact. In other words, are we talking about a finding or method of use to 3 labs or 3000? A finding relevant to 3000 labs is more important than a finding relevant to 3. Not just because of prestige, but also because a finding that affects the approach of 3000 labs is more likely to have an important affect on overall resource allocation and use in science more generally than a finding that affects 3 labs. CRISPR-based transgenic approaches, for example, are a huge resource saver compared to homologous recombination approaches, and thus have a major impact on the amount of money you need to spend in order to do certain kinds of experiments. Period. In cases like that, these sorts of results/methods need to be disseminated as broadly as possible, and hiding them away in the Polish Occasional Journal of Bacterial Enzymology is directly harmful to the field. Journals like Nature, Science, Cell, etc do a very good job of getting their papers into the hands of everyone who needs to read them, and of making sure the key take-home messages of the research are as clear as possible. 
+
+5. A few things.
+
+* Nature, Science, Cell, etc are *cross-disciplinary*, so we're not looking at studies that are relevant to only a single sub-discipline, but rather of broad significance. I don't need someone from a narrow subdiscipline to say whether it's important to them. I need someone with a broader view to look and say "hey, this is something everyone needs to see." The editors of these journals have a good sense of that.
+
+* Retraction rate depends not only on percentage of papers in which inappropriate methods are used, but also on percentage of papers in which inappropriate methods are caught. The number of readers of a Nature/Science/Cell paper are probably in the tens of thousands in the first week. For a small trade journal, we might be talking about a couple dozen in the first year. So you can't directly interpret retraction% in a N/S/C type journal to retraction% in a small scale journal because there's this important confounding variable (#readers). The interpretation that higher retraction% in N/S/C etc indicates that the quality is *lower* is inappropriate (and unscientific) application of statistics.
+
+6. Okay, so we're going to place the burden of archiving all science labor on a single body....which government funds that? Does the choice of government body then affect the language of journals which are archived? Do some countries then shirk their responsibility to fund the system? Does the hosting country then use this system to favor papers published by their own people? There's a ton of nationalism in science publication, and turning this all over to a governmental organization could be dangerous.
+- Some of what you say is certainly fair, and I advocate a significant development rather than a complete change. But many of your points are simply assertions and opinion, and in many cases you are just being naive to the amount of wastage of human resources the current system generates. I guess by your flippant and frankly ignorant accusation of 'sour grapes' to anyone who criticises Nature, Science, and Cell, that you have a healthy publication record in at least a couple of those journals, or are on your way to achieving them. Based on your rhetoric I'd guess you have experience in established labs where the pressure to publish is significantly reduced and where less time needs to be spent on technical development, if that's true then you are in the minority, and you should try being a bit more objective. Many PIs are in desperate need of publications, and struggling to find a niche in increasingly crowded fields. This impacts negatively and demonstrably on the quality of science in a way not necessarily detectable by standard reporting. In my experience I have met many uncritical people working all across the research sciences who by default value the publication above the science and don't even question publishing a questionable narrative. Often these people don't even see that what they are doing is damaging. Particularly in the life sciences, real scientists are in decline as more and more people focus solely on capitalising on whatever data they have to get a publication, rather than a publication developing from a self-supporting dataset. There are vast numbers of scientists who perceive the system in the same way, and many journal editors if you ask them about it, also see the growing discontent; this is the main reason for the surge in open access journals. Just trying to justify the current system of reporting as it stands, which is precisely what your arguments try to do, isn't going to solve its glaring inherent problems. 
+
+As a side note, I just found this :http://www.theonion.com/article/seek-funding-step-added-scientific-method-51837?utm_source=Facebook&utm_medium=SocialMarketing&utm_campaign=LinkPreview:1:Default
+
+The homogenisation of basic research with goal-driven science selected for by its degree of sensationalism and commercial viability is being parodied for the obvious corruption of the scientific method that it causes.
+- >and in many cases you are just being naive to the amount of wastage of human resources the current system generates
+
+Let's cut to real talk here. Academia is a career track with high social prestige, decent pay, and high job security. There are a lot of people who want these jobs because of those tangible and intangible benefits. There are not enough jobs for all the people who want them, and many people who want those jobs are simply not good at one or more important aspects of those jobs. 
+
+The "wastage of human resources" you're talking about is basically representative of the mismatch between people who have the skillsets to be successful in a research-intensive field and the people who want to pursue a career in research science. I can tell you right now that I personally know a lot of people who are pursuing PhDs with the intent of going into academic research who simply lack the skills to succeed in the field and who will never develop those skills for any of a variety of reasons. These are people who I would in no circumstances trust to run a research lab or supervise trainees. Period. Scientific research does not lose out when these people trickle out of the pipeline.
+
+Other fields have a similar issue but they filter out hopefuls much earlier in their career.  Medicine, for example, has good pay and benefits and immense social prestige, and a lot of people want to go into medicine. Medicals schools filter these people out very aggressively through both assessment of academic achievement AND through assessment of personality in face-to-face interviews. In academia, we filter people out at the job search stage, after hopefuls have invested a lot of time and effort. This is, in my mind, where the big problem in the academic pipeline is. The other problem, and this is not the system's problem, is that a lot of people look at their records of scholastic achievement as proof that they're good enough when they have little to no record of actual research achievement, and when the latter is really all that grant agencies and academic employers really care about.
+
+>I guess by your flippant and frankly ignorant accusation of 'sour grapes' to anyone who criticises Nature, Science, and Cell, that you have a healthy publication record in at least a couple of those journals, or are on your way to achieving them.
+
+Correct, but I've also got a healthy publication record in trade journals as well, because there's a degree of basic research that you simply have to do in order to build up data to support larger synthetic studies of broader interest. 
+
+>Based on your rhetoric I'd guess you have experience in established labs where the pressure to publish is significantly reduced and where less time needs to be spent on technical development, if that's true then you are in the minority, and you should try being a bit more objective.
+
+I've been in both well-funded well-established labs and poorly-funded new labs, and the difference between these is not really time spent in technical development, but rather in how well-networked the PIs are and how they go about seeking outside assistance in troubleshooting.
+
+>Many PIs are in desperate need of publications, and struggling to find a niche in increasingly crowded fields. This impacts negatively and demonstrably on the quality of science in a way not necessarily detectable by standard reporting.
+
+I don't think the field is particularly crowded. I think there are a lot of people who simply don't have a good sense of where to put their efforts so either they keep doing what their advisors were doing in the 80s and 90s, or they try to replicate what's been done in Nature papers from 3-5 years ago. 
+
+As far as quality of publication goes, I haven't noticed that at all. I think, in general, we're seeing an increase in quality of publication as a result of increased access to published materials and increased communication between scientists. Better equipment. Better statistical tools and greater collaboration between trained statisticians/programmers/bioinformaticians and bench scientists. It's a much improved field.
+
+>Particularly in the life sciences, real scientists are in decline as more and more people focus solely on capitalising on whatever data they have to get a publication, rather than a publication developing from a self-supporting dataset.
+
+I don't know what world you live in, but my lab generates more data than we know what to do with. In fact, I know very, very few PIs or PhDs who are twiddling their thumbs hoping to get enough data to write a paper. Mostly they're stuck prioritizing which studies to put their efforts towards completing.
+
+Maybe the lab(s) you're familiar with are underfunded and are thus trying to scrape by without generating their own data. Sounds parasitic.
+
+> There are vast numbers of scientists who perceive the system in the same way, and many journal editors if you ask them about it, also see the growing discontent; this is the main reason for the surge in open access journals.
+
+There are two major forces pushing the open access movement. One is an ideological "everyone deserves science" mentality, but that's really quite minor.  The other is that open access does increase readership, which means that it's probably better to publish a minor result in a journal like PLoS One than in a small society journal because it will be read by more people, especially people in smaller institutions without full journal database access. It is not in either case a statement about "quality" of science.
+
+>Just trying to justify the current system of reporting as it stands, which is precisely what your arguments try to do, isn't going to solve its glaring inherent problems.
+
+Arguments don't try to do anything, but what *I'm* doing is saying that the solutions you're presenting do not in actuality improve the research paper in any meaningful way and, in some ways, actually remove important features of the current system that are indispensable for the scientific process. There are definitely ways in which we could improve the publishing process, mostly by way of finding ways of standardizing certain forms of data collection and archiving, but what you're suggesting does not actually improve anything.
+
+I've had a lot of the same opinions as you in terms of being upset that Nature/Science/Cell papers do not necessarily indicate quality of the papers, but rather the impact. However, that was a long time ago and I've matured as a researcher. IF is not supposed to indicate quality of work. It is supposed to indicate importance of work. Not all important work is impeccable, but complaining that a research group didn't dot all their Is and cross all their Ts when publishing important results is missing the point of research papers in general and the point of general interest journals in specific.
+
+>The homogenisation of basic research with goal-driven science
+
+If you don't have a research objective, why should anyone throw money at you? Because you're smart? Because you got good grades in high school? Why should the government give you millions of dollars of taxpayer money?
+
+"Just because" is not a good enough reason.
+
+>selected for by its degree of sensationalism and commercial viability is being parodied for the obvious corruption of the scientific method that it causes.
+
+Frankly I see more sensational interpretation of results published in minor trade journals, often because those scientists then try to do science-by-press-release, weaving in interpretations that did not pass peer review. This is often not the case for press coverage of glossy pubs. How strange.

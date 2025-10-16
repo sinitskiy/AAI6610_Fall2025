@@ -1,0 +1,33 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/zhm3i1/phd_student_feeling_motivated_but_a_little/
+Title: PhD student, feeling motivated but a little confused
+
+Content:
+I’m a 25yo male, 2nd year PhD student. I come from a pure biology background and learnt everything on the go. So far I’ve been a sort of jack of all trades in my research lab. I’m developing and maintaining genomic databases and web apps with analysis and visualisation tools, working with Machine Learning classifiers, working on genome assembly and annotation followed by subsequent statistical analysis; and just writing code for data wrangling. This is mainly because my PhD supervisor wants me to be a “complete bioinformatician”.  I’ve got one publication and there are some more on the pipeline. While I really enjoy working on so many projects and side projects, I feel that I need to know what lies at the end of the road and what prospects there are for someone like me. I personally like both the data scientist as well as the developer route, where I’m part of a team which develops bioinformatics tools.
+
+Comments:
+- You are only in your second year. The amount of learning you have left is immense during your PhD. Keep learning new things and make sure to work toward a direction of interest such as academia or industry. Your skills can be used in either direction. 
+
+The more important thing is making sure you enjoy the career path and that it provides enough training to reach your goals.
+- Sounds like you're primed to go into industry and kill it, make a ton of money, and see your work translate to an actual product.  Your skillset is very valuable already, don't worry my dude. A lot of people don't have these engineering or data skills.
+- I do single cell sequencing with clinical trial human patient data in industry. I’m at a pharmaceutical company. However, I didn’t come from a bioinformatics Ph.D.  I self taught R/Bash/Python during my Ph.D.
+- Congrats on already having a publication! I’m working towards my first but I’m in my third year. It sounds like you have a great advisor that’s training you well—you don’t always realize how much you’ve learned and how applicable it is while you’re still learning. Training like this means that when you get to the end, you’ll likely be well positioned to jump into anything from running a wet lab to working for a software firm. 
+
+Keep at it, and if youre feeling the need for encouragement that you’re making progress (and you have the time), see if you can take on an undergrad intern or TA a class. Mentorship can be really helpful to your personal growth as well as put into perspective all the things you’ve accomplished!
+- Sounds like you’re living your best PhD student life, keep at it.  Lots of opportunities after the PhD, should be a solid background for something like a Scientist I at $130 or so if you choose to go into industry.  Do make sure to publish as much as you can.
+- You're doing it right. Your PI is just trying to push you towards your own goals, it sounds like to me at least. Focus on what gets you a PhD with the best/most pubs reasonably possible. You still have to learn new skills for every job, but the experience you have learning and building on your skills will be plenty to make you a top candidate for whatever data science, programming or whatever job you go for. Maybe not experimental Physicist, but almost anything else.
+- Go to very large conferences to see what is going on in the field and to get ideas. I would recommend American Society of Cell Biology meeting (next year) or something is such variety and size.
+- Thanks for your comment! I guess I am slightly inclined towards industry atm. I immensely enjoy working on new projects and am surely willing to keep learning new stuff. What field of bioinformatics are you in currently, if you don’t mind me asking?
+- Thanks a lot, my man! And I am by no means an expert, I just do what needs to be done😅 
+Anyway, which field are you in ?
+- Do you think getting a PhD helped you excel a lot in your current role in industry?
+- That’s awesome, good for you !
+- Hey thanks a lot for your advice! Which field are you doing your PhD in?
+- Yes I’ll try, thanks! What are you working on currently?
+- Thanks a lot for your words of encouragement! What are you currently working on??
+- That’s a great idea, thanks for the suggestion!
+- Also, which field are you in?
+- With your skills you’re HIGHLY desirable in industry
+- I've worked in a range of fields but currently in biotech. been able to work in genomics, cancer immunotherapies, IVF/genetic testing, and now biotech/cosmetics ingredients/microbiome stuff
+- I work on large scale microbial phylogenomics! I’m basically using big data to predict protein function and find novel antibiotics. We do a lot of development in R, my advisor maintains the [DECIPHER](http://bioconductor.org/packages/release/bioc/html/DECIPHER.html) package and I maintain the [SynExtend](http://bioconductor.org/packages/release/bioc/html/SynExtend.html) package with someone else in my lab :D
+- ML models for antibody optimization.  It’s fun work!

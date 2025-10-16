@@ -1,0 +1,78 @@
+URL: https://www.linkedin.com/posts/marco-adriano-magno_418-pages-of-probabilistic-ai-gold-just-dropped-activity-7302614323254759425-2jrl
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Marco Adriano Magno的动态
+Marco Adriano Magno
+
+CTO at Mecas | ETH Zurich Robotics Alumnus
+
+7 个月  已编辑
+
+418 pages of Probabilistic AI gold just dropped!
+
+Easily one of the best courses I've attended at ETH, taught by Andreas Krause. 
+These notes cover all the essentials: aleatoric vs epistemic uncertainty, Gaussian Processes, MCMC methods, Active Learning, Bayesian Optimization, Reinforcement Learning, and more.
+
+Truly grateful this amazing resource is now available to the community!
+
+👉 Link to the article: https://lnkd.in/drZXn4ps
+
+4,440
+86 条评论
+赞
+评论
+分享
+Jonathan Capriola
+
+Inventor of A2SPA Protocol | Co-Founder, AImodularity.com | Bestselling Author: ‘Addicted to Silence’ | 2x Exited Founder | AI + Blockchain Builder | Federal Vendor
+
+7 个月
+
+•	Epistemic Uncertainty: Stemming from limited data or knowledge, this uncertainty can be reduced by acquiring more information.
+	•	Aleatoric Uncertainty: Inherent variability or noise in observations and outcomes, which remains irreducible regardless of additional data.
+
+Data is key to outputs of AI and game changer is agentic AI with correct data
+
+赞
+回复
+1 次回应
+Ankush Chakrabarty
+
+Principal Research Scientist @ MERL | ML, Time-Series, Decision-Making
+
+7 个月
+
+More than just the technical matter, this is a great resource for younger researchers to learn how to write things well, and clearly. Andreas is, and always has been, a beautiful, beautiful technical writer.
+
+赞
+回复
+4 次回应
+Besnik Sulmataj
+
+Customer Experience Leader | Building Practical AI Systems that Solve Problems
+
+7 个月
+
+The integration of Bayesian optimization in AI systems, as highlighted in this manuscript, exemplifies a sophisticated approach to handling uncertainty, thereby enhancing decision-making capabilities in sequential tasks.
+
+赞
+回复
+1 次回应
+Dalila K.
+
+💡 PhD Student | Computer Science Lecturer | AI Explorer | Content Creator
+
+7 个月
+
+Thanks for sharing this! When I first started my research journey, I struggled with probabilities whi

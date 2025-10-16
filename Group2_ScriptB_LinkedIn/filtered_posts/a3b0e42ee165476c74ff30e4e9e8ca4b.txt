@@ -1,0 +1,33 @@
+URL: https://www.linkedin.com/posts/hollisargeant_from-estimation-to-discrimination-algorithmic-activity-7338127821736759296-eHIn
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Holli Sargeant的动态
+Holli Sargeant
+4 个月  已编辑
+
+📢 New Paper Alert! My latest research, "From Estimation to Discrimination: Algorithmic Bias, Predictive Uncertainty, and Anti-Discrimination Law," is now available.
+
+This paper dives into the complex interplay between machine learning systems, predictive uncertainty, and UK anti-discrimination law. It provides the first comprehensive legal analysis of how uncertainties in ML predictions can lead to discriminatory outcomes and how anti-discrimination law engages with these probabilistic harms.
+
+I distinguish between aleatoric uncertainty (irreducible randomness) and epistemic uncertainty (reducible due to incomplete knowledge or design choices) and explain how it is crucial for assessing algorithmic discrimination. I also define "legally-conditioned epistemic uncertainty," which occurs when, despite data potentially reducing uncertainty, certain predictive variables remain perpetually legally or normatively inaccessible for model development (e.g., due to data protection regulations or anti-discrimination law itself).
+
+The paper argues that predictive uncertainty in algorithmic decisions can trigger both direct and indirect discrimination under UK law. Given the reducible nature of epistemic uncertainty, it is more likely to trigger legal responsibility than aleatoric uncertainty, which stems from inherent randomness. Instead of treating ML as a black box, the paper emphasises the critical legal importance of policy and design choices embedded within these systems.
+
+This research is essential for legal practitioners, policymakers, regulators, and ML scientists grappling with discrimination and AI. I invite you to read, share, and would be grateful for any feedback or discussion.
+
+🔗 Read the full paper here: https://lnkd.in/er6hAQi8 
+
+#MachineLearning #AI #AlgorithmicBias #AntiDiscriminationLaw #AILaw #PredictiveUncertainty #ResponsibleAI 
+
+From Estimation to Discrimination: Algori

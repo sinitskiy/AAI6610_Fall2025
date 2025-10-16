@@ -1,0 +1,73 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cin2fr/if_you_are_a_data_scientist_and_does_not_work_on/
+Title: If you are a data scientist and does not work on Machine Learning part, then how does your work differentiate from a Data Analyst?
+
+Content:
+Hi, 
+So i am curious that if you are not working on ML part in your work and you are a data scientist, how does your work differentiate from a data analyst? What statistics methods do you use if not modelling for insights? Because i recently had an interview and they mentioned they do not work on ML part and usually its about getting insight from data. Then wouldn’t it be same as data analyst? 
+
+Also, for data insights how do you gather insights if you are not doing ML models? Like use just basic descriptive stats, or basic regessions, and think about questions, or cleaning and feature engineering is what you do? 
+
+Becaus, i alway thought when you want to get insights you need to do PCA, some regression models other than just basic stats. I would love to know more if you are a “data scientist” but doesn’t work on ML
+
+Comments:
+- I do a large number of experiment designs/casual inference work, and conceive and implement my own research hypotheses. The scientific rigour of the former and the ambiguity of the latter are hugely important for product strategy and insight if done correctly. 
+
+To be honest, I prefer this. I feel closer to the user and am building based on insights from their actions and behaviours
+- In theory the "science" part is supposed to mean you're applying the scientific method to answer questions about what the company should do:
+
+1. Precisely define your question (translate business needs to a data problem)
+2. Gather all the relevant data you can (factoring in level of effort, quality, and so on)
+3. Form one or more hypotheses (after learning more from business context and EDA)
+4. Perform the "experiment" (e.g. A/B test a marketing thing, create/deploy a microservice, etc)
+5. Analyze the results (pay special attention to statistical rigor, scope, etc)
+6. Report conclusions (business comms to lay management and technical stakeholders)
+
+Analysts aren't really expected to do that whole process. You give an analyst a specific question, point them at the specific place where the relevant data lives, and the next day they send you an email that says "hi bob, see the attached spreadsheet, the thing you were asking about is up 5% since last month". DS isn't different because it uses fancier statistical models in steps 4 and 5, anyone with basic coding skills can spin up an instance of \[insert cutting edge ML model\] these days. DS is different because the job is to independently formulate questions about what drives business value, answer them, and implement what discovered to capture that value. Tinkering around with a cool ML model in a notebook is fun but it's like 10% of your time.
+- Maybe what the interviewer was trying to say, in a clumsy sort of way, is that in most companies outside of tech, hard core ML is not often called for, it would be cracking walnuts with a sledgehammer. What’s mostly done is “getting insights from data.” But it is not as trivial as just pulling numbers out of a database. Real insight requires the steps wintermute93 laid out above. Also, it’s not like the numbers you need are just sitting there, you will need to do some hard core data wrangling, just as if you were doing regular data science. And, as was pointed out, statistical testing is also necessary. In this scenario modeling, including ML, could be employed as a kind of hypothesis test. Finally, don’t forget that DS, DA, DE, MLE, SWE can have wildly different meanings from one company to another.
+- I'm a pretty senior IC at a FAANG. Sometimes we need to do some more technical work, but most of the time something simple solves the problem well enough. Sometimes its as simple as a 10 minute univariate cut. Find the right questions to answer and how confident you need to be in your estimate first, then figure out the tools that get you there. I really don't care what a "real" data scientist is, and neither does anyone else, the only thing anyone really cares about is impact.
+- There is a lot of business value to be had around statistical inference still, which is beyond the scope of what a typical data analyst would be prepared to tackle. I would consider it a distinct branch of data science from "ML" that is focused more on predictive accuracy, but has a lot of valuable applications for businesses outside of tech and to inform various heuristics and optimization problems. Data analysts tackling those problems may fall into the trap of either applying an approach that is less suitable to the task (not knowing all the tools in the toolbox) or mis-applying a more advanced approach.
+- lol that causal inference is the province not of scientists but analysts
+- There’s 100 different definitions of data science now. It’s a very convoluted term and market. Moreover, the advent of “AI” and “Machine Learning” to describe everything from a Deep Learning model to a Simple Regression has made it more confusing.
+
+At the end of the day, they probably advertise as doing less ML because they don’t want people looking to do advanced model building. I think it’s more accurate to bucket the job roles into Data Governance, Data Analysis and Data Visualization. From there, we can further dive into predictive, prescriptive, descriptive or diagnostic analysis.
+
+In short, tell me the difference between a data analyst and a data scientist and I’ll show you 1000 job roles that disagree. I’m not saying either is right. At the end of the day, you really have to assess the job on its functions and merits.
+- Although the profession is ill defined, I believe there are three requirements of being a data scientist 
+1. Business/Domain Understanding
+2. Math/Stats/Modeling
+3. CS/programming
+
+And analyst usually is weaker at #2 and #3
+A statistician is usually poor at #3 but very strong at #2
+A ML engineer is usually great at #3  and at #2
+A programmer specializes in #3
+A business analyst specializes in #1 but can talk to #2 and #3
+
+A data scientist should be well rounded in all three.  Excelling at designing and prototyping solutions that answer questions from the business/domain using the best data available. They should avoid statistical traps by nature.  They should be able to gather requirements effectively.  They can apply the scientific method to the data efficiently.
+- Data Analyst generally do Descriptive Analytics..
+Data Scientists generally do Data pipeline and production level coding stuff..what you described is that company doing statistician stuff..
+Statisticians work on inferential statistics and predictive analytics.
+- Sometimes the title doesn’t match the work. 
+
+To me, a scientist is *anyone* who is practicing the scientific method. If you aren’t doing controlled experiments, using theory to guide experimental design, testing falsifiable hypotheses, forcing stakeholders to verbalize a quantifiable outcome, etc. then you aren’t any kind of scientist. There are *many* machine learning engineers without an ounce of scientist in their blood and there are data analysts who would make research professors look like high school dropouts. The ML engineer is not at all guaranteed to be skilled in scientific approaches. Engineers are often people who are merely implementing something that was developed by a data scientist.
+
+(And yes of course the line between engineer and scientist is blurry blah blah blah)
+
+In short, if you already know what needs to be done, you want an engineer. If you aren’t quite sure what you need to solve your problem, you want a scientist/researcher.
+- It’s more about the level of complexity of the questions you are looking into and how you approach these questions - analysts take facts and do quick analyses; scientists take vague questions and approach it with rigorous frameworks and lots of critical thinking.
+- Mines more of a data engineer’s with the scientist title.
+- We must not miss the fact that many data scientists don't always work on complex machine learning models. Business needs, data quality, or specialized fields sometimes make deep insights the primary goal rather than predictive modeling. Even without ML, data scientists differentiate themselves from data analysts through advanced statistical, framing, and coding abilities.
+- Wouldn’t just being very proficient with Python for data wrangling, automation, and EDA put you at a higher tier than a Data Analyst who aren’t required to know a scripting language for their role?
+
+Lot of Data Analysts primarily work out of Excel, SQL, Power BI, and/or Tableau. Python is a bonus but not a requirement while it is a requirement for a Data Scientist.
+- Job titles are completely arbitrary these days so it’s impossible to answer the question.
+- HELPFUL QUESTION AND THE CONTENT
+- Yeah, that's a data analyst position, that they named data scientist.
+
+If the job is about "insights", then it *will* be an analyst/analytics/Business intelligence role, named scientist to attract the poor sucker that will get into it thinking they get into AI.
+
+Not saying that you can't be truly a data scientist if working in analytics, you definitely can. But *you* won't. Nowadays, if they are a team focused on insights, it's going to be descriptive analytics 85% of the time, and 15% of the time it will involve some predictive or prescriptive modeling, in addition to the descriptive analytics.
+- ----
+- Remember that ‘science’ is not just prediction, it’s also testing and cognition, and more. In your specific case, make sure to ask about tooling and experimentation culture to understand the day-to-day in more detail
+- I know its not common in the DS discipline to think of it this way, but causal inference and all the different types of regression modeling are ML algorithms too. They're just parametric, and a lot people seem to think that only non-parametric stuff is "ML"

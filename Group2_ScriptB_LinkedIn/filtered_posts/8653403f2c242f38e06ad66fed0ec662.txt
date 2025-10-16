@@ -1,0 +1,45 @@
+URL: https://www.linkedin.com/posts/jaapvink_llms-and-chess-probabilistic-in-a-deterministic-activity-7364168978748870658-ci3w
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jaap Vink的动态
+Jaap Vink
+
+Driving the widespread responsible use of data in decision making
+
+1 个月  已编辑
+
+⁉️ The "Probabilistic Trap": 
+Why even the 'smartest' AI-systems struggle with deterministic rules and what we can do about it? ⁉️
+
+The recent Kaggle "AI Exhibition Chess Tournament" between several LLM's and Levy Rozman 's new video on OpenAI GPT5 vs Stockfish, see (https://lnkd.in/eUW2CDue)
+https://lnkd.in/e_iEH77D, triggered me to put some thoughts together on the limitations of current LLMs in deterministic rules contexts like law and public policy & administration.
+
+As we push LLMs into domains where precision and reliability are non-negotiable, like law, regulation, and even something as seemingly simple as chess, we’re confronting a fundamental limitation: 
+
+🚨LLMs don’t reason; they predict.
+
+My latest draft analysis dives into a critical, often overlooked flaw at the heart of today’s AI: 
+
+the inability to guarantee adherence to deterministic rules.
+
+Even the most advanced models can’t play a game of chess without occasionally making illegal moves. Why? Because their architecture is built on probability, not logic. Next-token prediction, the engine behind their impressive outputs, is also the reason they can’t be fully trusted in high-stakes environments.
+
+This isn’t just about chess. In fields like law and governance, the same probabilistic core leads to “legal hallucinations” and advice that can undermine justice, public safety, and institutional trust. Emergent reasoning, while fascinating, doesn’t solve the problem—it only makes the mimicry more convincing.
+
+As usual I'm asking for your thoughts, feedback, critique, ...
+
+❓️Are we asking too much of pure probabilistic models?
+❓️How can we accelerate the development of hybrid systems that deliver both relevant content and reliability?
+
+Arnoud💻 Engelfriet Jos van der Wijst IP/data lawyer Bart de Visser Monika Milanović Jasper Kars Elja Daae Martijn Wiertz Aleksand

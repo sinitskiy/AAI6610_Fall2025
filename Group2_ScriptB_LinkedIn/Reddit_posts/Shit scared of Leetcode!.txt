@@ -1,0 +1,90 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17ajqwd/shit_scared_of_leetcode/
+Title: Shit scared of Leetcode!
+
+Content:
+I am currently a CS grad major and I really love this field! I have a major interest, work experience and projects in Data Science(majorly Deep Learning and Machine Learning). I am currently looking for summer internships in Data Science, ML, AI etc. I am being told that you'll probably be asked leetcode questions in your technical interviews and I am shit scared of it. I can't do anything beyond Leetcode easy, my mind just doesn't accept unseen medium questions. If I remember a solution to one of the medium problem, I might be able to solve it but that also fades away if I don't practice that problem in every few days. 
+
+Someone please shed light on whether my targeted jobs require Leetcode or not, and if they do then what level of questions?
+
+Comments:
+- Post a question that scares you here. 
+
+I will walk you through how to counter your inner fear.
+
+Nothing too hard, just that you are not used to it, haven’t seen enough, and it’s mainly caused by the way the question is framed and phrased.
+- This is advice for how to get good at leetcode, whether you truly need it or not. 
+
+Check out the YouTube Chabnel neetcode, and look at his recommendations on how to learn. Leetcode is about learning the tricks and algorithms associated with different types of problems. If you don’t know these strategies going in, you won’t be able to solve the problems. 
+
+For example, if you don’t know how to code Breadth First Search or Depth First Search, you won’t be able to solve a lot of tree or graph problems. If you don’t know two-pointers or sliding window, you won’t be able to solve a lot of array problems. And no one expects you to just figure this stuff on your own - you need exposure to these algos before you’ll be able to solve them on your own. 
+
+Go through the blind 75. For each problem, spend 10 min thinking of a white-board solution, and if you don’t know how to solve it conceptually, go to YouTube and watch a tutorial on how to solve it. Whenever you are solving a problem, make sure you know what “strategy” you’re using. For example: “ah, this is a graph problem, and they solved it using a hash map and depth first search.” 
+
+Good luck!
+- [removed]
+- I think you already have your answer. Practice more. There are a million things you could try and predict will come up in an interview, but you’ll never be fully prepared. 
+
+They could ask you to do easy Leetcode but only pass candidates who get perfects. 
+
+Or they could ask you to do medium Leetcode but care more about your thought process and how you handle pressure. 
+
+You just never know. If you want a summer internship, just do the things that give you the best possible chances. just put in a little bit of time everyday. 
+
+I am currently in 2nd and 3rd rounds for a couple summer internships. All vastly different. I am more likely going to get a less technical role because my Leetcode is not super strong but my soft skills/work history are stronger. 
+
+I applied to a bunch of different internships, 
+
+1. To increase my chances. 
+
+2. To get interview practice. 
+
+3. To possibly get into the company under a different role with less technical requirements, then eventually transition internally into more DS related roles.
+- Just do SICP in python: https://inst.eecs.berkeley.edu/%7Ecs61a/fa18/
+
+
+
+This is a really nice course that takes you step by step and makes a solid foundation for understanding leetcode type of assignments.
+
+
+I would add it is quite useful in a pure data science role, it will help you solve real world problems easier and faster.
+
+
+
+And obligatory "It is practice" comic:  https://www.gocomics.com/sarahs-scribbles/2017/12/20
+- IMO it makes no sense asking DS doing leetcode. However, it makes sense to ask an engineer. Some DS roles are actually ML engineering. If you are not comfortable with SWE, you won't be happy in such roles.
+- You don't need to practice leetcode questions for machine learning or deep learning. Its better to know how to apply these techniques, feature engineering and business application. I rarely have been asked anything outside of SQL for tech interviews. But where most fuck up  during the nterviews process is final rounds which management want to see how you are going to solve their problems, save money or demonstrate ROI for hiring you.
+- Just practice. Do one or two problems every few days. And practice speaking out loud while you do them. 
+
+The fear will dissipate with familiarity.
+- I'll write down a comment that it's even my current situation, and could be yours aswell.  
+  
+Don't be a afraid of things that seem hard right now and failing to do them. Nobody just magically knows what they know, it takes time, patience and practice.  
+  
+Now, I don't think that every job interview will be a leetcode question, could only be a general case to know your flow of thinking and communicating. But, could be beneficial to practice them aswell.  
+  
+With that being said, just to summarize.
+Practice, have patience, be kind to yourself and to your progress.
+- Leetcode is annoying due to the phrasing of the questions. It's about as annoying as reading a stack overflow answer that is going over the top. Especially, when you see a solution and notice it's overly basic. Tangent over...
+
+I typically write things down and break the question into parts without the filler/buzz words. This does me pretty well. 
+If I still cannot figure it out I walk through the solutions and find one with an explanation and then walk through the solution either handwritten or via debugger. 
+Practice is the only thing that will get me to remember something permanently if I stop for a few months I forget.
+- Keep going, you will eventually start to see the patterns behind the problems. Don't even bother with the hard ones btw, keep trying to get the medium ones right.
+
+Even though you have no idea, make an effort and try whatever solution you can come up with. If you read the solution afterwards I guarantee you'll remember it. Dust off your data structures notes, that helps too.
+- Start with 75 blind. Start with paper pen, write solution in simple english and human logic - always solve the problem first using simple logic/ math, that leaves you with just converting english and logic to code. Once you develop this intuition and practice, start focussing on accuracy and time. I have done less than 100/150 leetcode problems and every interview/test question has been a variation of them.
+- Data science interviews will rarely ask coding questions beyond easy. It's actually software or data engineering where they will
+- I’ve been in this field for almost a decade and have worked as a data scientist, quant trader/researcher, applied scientist, AI/ML research scientist, etc. and I’m yet to see a LeetCode question in an interview. To be fair, I’ve never had much desire to work at FAANG, and I heard that they love their leetcode so your mileage might wary depending on the specific company. Same goes for MLE jobs, which I’ve never pursued either
+- Just do one easy per day until you stop hating it. Once you’re comfortable with those repeat that process with mediums then hards.
+- Hey i think its around 75 days for new year. Start with blind75 / neetcode 75. A problem a day.
+- Im unable to solve even easy questions. Its really overwhelming
+- Sort of a tangent here but I’ve hit several leetcode problems in Python that I was able to work out solutions for, but that ended up still failing due to performance issues.  The only way around that in most cases was to delve into “dirty tricks” to increase performance.  I mean obviously they don’t want you brute forcing your way with a ton of for loops, but I feel like some of these tricks are pretty obscure.  I was just curious if it was the same situation for languages that run faster like C etc?
+- Take a DS&A course from a top university. They're online for free. Most universities don't have a rigorous DS&A course because 90% of people would switch majors. Like old school pen & paper exams with weekly programming assignments with C++ implementations.
+
+The only way to learn is by doing so do all the exercises and practice some leetcode on top of it. Master that shit.
+
+You learn it once and even leetcode hards will be piss easy for the rest of your life.
+
+There are realistically like 10 patterns you need to master. They're the basic lego blocks of the computer world.
+- To get good at leetcode you must do more leetcode. I prefer take home assignments for interviews. In reality your day to day you will have access to a good IDE google or ChatGPT and team leads to steer projects. A company that purely assess based on your memorization skills in leetcode either is looking to shell out tech bro salaries and RSUs and your working your ass off or they are some shitty startup that doesn’t have a clue what they are doing.

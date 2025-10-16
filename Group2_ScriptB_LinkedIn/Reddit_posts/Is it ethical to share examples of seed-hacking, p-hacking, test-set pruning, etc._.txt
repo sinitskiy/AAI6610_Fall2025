@@ -1,0 +1,60 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hcw1o5/is_it_ethical_to_share_examples_of_seedhacking/
+Title: Is it ethical to share examples of seed-hacking, p-hacking, test-set pruning, etc.?
+
+Content:
+I can't tell you the number of times I've been asked "what random number seed should I use for my model" and later discover that the questioner has grid searched it like a hyperparameter.
+
+Or worse: grid searched the seed for the train/test split or CV folds that "gives the best result".
+
+At best, the results are fragile and optimistically biased. At worst, they know what they're doing and it's intentional fraud. Especially when the project has real stakes/stakeholders.
+
+I was chatting to a colleague about this last week and shared a few examples of "random seed hacking" and related ideas of test-set pruning, p-hacking, leader board hacking, train/test split ratio gaming, and so on.
+
+He said I should write a tutorial or something, e.g. to educate managers/stakeholders/reviewers, etc. 
+
+I put a few examples in a github repository (I called it "[Machine Learning Mischief](https://github.com/Jason2Brownlee/MachineLearningMischief)", because it feels naughty/playful) but now I'm thinking it reads more like a "how-to-cheat instruction guide" for students, rather than a "how to spot garbage results" for teachers/managers/etc.
+
+What's the right answer here? 
+
+Do I delete (make private) the repo or push it for wider consideration (e.g. expand as a handbook on how to spot rubbish ml/ds results)? Or perhaps no one cares because it's common knowledge and super obvious?
+
+Comments:
+- People will always want to cut a corner. I like having good teaching resources. I would keep it up with the appropriate disclaimers (for educational purposes only, DO NOT DO THIS in production, etc). 
+
+LGTM!
+- > What seed should I use for random number generation?
+
+Haha what a dumb question, obviously you use 42
+- So, there’s a pretty popular blog, [Data Colada](https://datacolada.org/), that basically describes how they determine if the results of a published paper are bullshit. I find it REALLY educational. I’m not that strong at statistics, and it’s such an interesting and memorable way of describing real world statistical tools. 
+
+Which is to say, I think this is a great idea, and there’s evidence of similar topic blogs getting a lot of readership :)
+- I’d be very interested in this. Maybe you can change narrative to the latter - how to spot garbage models/results and how to convince stakeholders to do whats right (i.e. when data doesn’t support their intuition). Our job as DS is to help them make an informed decision- the decision is theirs after all. They can chose to ignore the findings but we shouldn’t manufacture results to contradict or support any intuition.
+- Ethical hacking is still hacking. You cannot defend against something if you don’t know what you are defending against. 
+
+The same logic applies to this situation. 
+
+Make it clear what the appropriate ethics are. After that it’s up to the learner to use what they learn ethically.
+- I think while the idea of creating a guide for managers/executive stakeholders is a good idea, it doesn't really hit at the main issue of improper methodological approach. I would imagine being able to "spot garbage results" goes hand-in-hand with being able to stop producing garbage results. Inevitably, the top brass only really care about how the outputs factor into the business context of the problem and want the analysts/data scientists to condense the results into insights. 
+
+I think a ML Mischief repo is super interesting! I'd say check out datacolada.org - they're a group dedicated to transparent peer review of publications and have really great write-ups on quantitative methods/evaluation. This could be a helpful starting point to understand the different "flavors" in which there may be flaws in methodological approach that take away the credibility of a project.
+- Wow, grid searching the seed? That's something I've never seen before. That's wild.
+- I think it's a good idea, just make sure to emphasize how and why ethics are important in data science
+- First of all, thanks for putting this together, it's awesome! I'm very much in favour of this being kept public and built upon.
+
+I think people who want to skirt around properly evaluating their models will always be able to find out how, it's good to have this resource that both educates responsible data scientists and expresses clearly the severity of these practices. I might add to that section of the README the point that not only are these "techniques" unethical, but also if you takes these habits with you into industry your models will run into the brick wall of real data once they're put in production - and the consequences for that will be much worse than for failing to achieve some target F1 score in dev.
+- How else are they supposed to learn?
+- I really like the resources and think you should keep it up. Someone could add a section what people can do if there tests do not produce the results they are looking for. Like how can they argue with the stakeholders or what can they else try...
+- Thank the gods - the king has returned
+- I really like the idea, I’d definitely check it out
+- Yeah true
+- Thank you for helping out with my school project. Just kidding ;)
+
+LGTM!
+- Mostly at the end of the day, if it is a decision based, business wants a number which he likes. Many times data scientists are just a medium. For true figure, true seeds, you need to analyze
+- Thank you kindly. I'll beef up the disclaimers as you suggest.
+- I use 42 a lot :)
+
+Defensible? Yep, 100%! It's specified before I get/analyze a result, not after.
+- I feel like this is so many of us it’s just predictable at this point…
+- I go for 420

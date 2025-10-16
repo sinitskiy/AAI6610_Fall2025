@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/12spmrc/what_happened_to_the_networkin_kinase_database/
+Title: What happened to the NetworKIN kinase database?
+
+Content:
+Hi all,
+
+About a year ago I downloaded a database with predicted kinase-substrate relationships from networkin ([https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2238868/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2238868/), [https://pubmed.ncbi.nlm.nih.gov/24874572/](https://pubmed.ncbi.nlm.nih.gov/24874572/)). I remember that it was difficult to find it then, and of course I did not write down/bookmark the site. [https://networkin.info/](https://networkin.info/) is mentioned in the original publication, but that leads me to some antibody vendor. 
+
+So the question is: does anybody know where I can find this database? I've searched a lot, but I just cannot find it back!
+
+Comments:
+- Looks like they’re not maintaining it anymore, likely whatever grad student that was in charge of this graduated and moved on to other stuff. The domain they linked isn’t registered anymore. 
+
+You could email the corresponding author for access to the data if they still have it, I’ve done that in the past for repositories that have been taken down.
+- Is it in enrichr or other place maybe? This was how i solved similar issues with dbs that were discontinued
+- Bummer. Looks like they sold out or lost the domain? I would also be interested in a copy of the data.

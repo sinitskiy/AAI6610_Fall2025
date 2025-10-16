@@ -1,0 +1,23 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1nqgy0w/automating_abandoned_object_detection_alerts_with/
+Title: 🚀 Automating Abandoned Object Detection Alerts with n8n + WhatsApp – Version 3.0 🚀
+
+Content:
+🚨 **No More Manual CCTV Monitoring!** 🚨
+
+I’ve built a **fully automated abandoned object detection system** using **YOLOv11 + ByteTrack**, seamlessly integrated with **n8n** and **Twilio WhatsApp API**.
+
+Key highlights of Version 3.0:  
+✅ **Real-time detection** of abandoned objects in video streams.  
+✅ **Instant WhatsApp notifications** — no human monitoring required.  
+✅ **Detected frames saved to Google Drive** for demo or record-keeping purposes.  
+✅ **n8n workflow** connects Google Colab detection to Twilio for automated alerts.  
+✅ Alerts include optional **image snapshots** to see exactly what was detected.
+
+This pipeline demonstrates how **AI + automation** can make public spaces, offices, and retail safer while reducing human overhead.
+
+💡 Imagine deploying this in airports, malls, or offices — instantly notifying staff when a suspicious object is left unattended.
+
+\#Automation #AI #MachineLearning #ObjectDetection #YOLOv11 #n8n #Twilio #WhatsAppAPI #SmartSecurity #RealTimeAlerts
+
+Comments:

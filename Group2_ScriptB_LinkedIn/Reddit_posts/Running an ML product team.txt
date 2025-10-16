@@ -1,0 +1,88 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/4uncbo/running_an_ml_product_team/
+Title: Running an ML product team
+
+Content:
+Hi. I'm an ML engineering / team lead and I have a conundrum I hope you can help me with. If you work in a team that builds machine learning based product, I'd like to know how you do it?
+How do you trade off research time vs getting a model out there?
+How do you deal with estimation, project planning, sprints and timelines?
+How do you deal with the uncertainty that a model will even work in production?
+
+Proper applied ML research to me doesn't seem  to fit into standard agile methodology. Any thoughts, insights or learnings much appreciated :-)
+
+Comments:
+- I run a team doing this. 
+
+We have multiple university teams building models on 3 month release cycles. We try to make sure we have post-docs and PhD students co-located with us, at least a few days a week. 
+
+We have an engineering team working on a traditional 2 weekly sprint cycle. Our engineering team does modelling work too. Much of this is implementing models from papers, perhaps with incremental improvements. We find we can do this quite well using normal agile development. 
+
+We've built out a data science platform, which lets researchers build their models directly on production data, using the same architecture we use in production. 
+
+It's a pretty interesting and challenging area.
+- [removed]
+- I am a tech lead in such a team. We have regular sprints for the engineering team, and regular updates from the research team. Depending on the stage of the project, researchers are either exploring the possibilities, full-time productionalizing (or helping engineers to do so), or part-time helping, part-time researching.
+
+Regarding your question of uncertainty, there are two types of models: those which probably will go to production (feature improvements, small model changes, single simple models), and those which are more risky. Research team doesn't do risky projects all the time, their load is balanced between risky ones and those which are more down-to-earth. 
+
+You can also find senior researchers doing risky projects more often, and junior ones doing less risky ones more often: this maximizes positive outcomes. Everybody is getting involved in some risky ones at some point though
+- > How do you deal with the uncertainty that a model will even work in production?  
+
+This one is not specific to ML products. Even consulting companies selling ML missions will face this issue. Actually, there are 2 of them :  
+- Is the problem "enough solvable". I mean, if you know beforehand that the business case resolves around 0.64 AUC, you can't tell your client that you will be able to deliver 0.64 before you actually do.  
+- Is the model that solves the problem general enough to also work in production. Here, the statistical part is not an issue if the best practices are used. The technical one, though, is still there; will our technology in production let us do what a statistician did on his own "custom" computer?  
+
+And I now wonder why I wrote all this...
+- Great reply. Thanks very much
+- How did you get the uni collaborations setup?
+- Can you elaborate more on how your data science platform work? In particular the part that lets researchers build their models on production data?
+- > in Production the difference between a model that gets 95% accuracy and one that gets 97% accuracy (for example) is non-significant to selling the product (except in some cases).
+
+This is very true, and can be a good reason to actually use much simpler algorithms if you can get to your 95% with a simple SVM rather than a crazily large neural net.
+
+And for something that's often missed is that in production, pure precision/recall can often mislead.
+
+I could make some changes and get a few percent improvement in both where I lose a few true positives but gain lots, and maybe a few but not many false positives. However, if those false positives have a bigger impact on the business (perhaps they look particularly bad, like when google tagged a black couple as gorillas) then you might not want to go down that route.
+
+Overall, it's really worth working closely with people who understand the business well to get good requirements, learn the cost of certain types of mistakes, etc.
+- Very cool. That sounds quite similar to how we approach it
+- No problem - very happy to chat more (and not just because I want to hear how you solve the many, many problems trying align the two!)
+- What does a normal day/week look like? How do you integrate research into production given that the time periods are not coincident except every 3 months?
+- We do three month long rough road maps for what the engineering team will do. That's very subject to change, but it lets us have some idea of what priorities we have coming up. 
+
+Apart from that, we have:
+
+  * Two week-long Scrum sprints
+  * In the first week we do demo/retro/planning Scrum ceremony
+  * In the second week we have a research update, where we get the principle researchers to come and give an update. We use Kanban to track their progress and a combination of asking them to keep it updated and updating it ourselves during these meetings work ok to track progress
+  * We have members of the research teams on site (and in HipChat), so we have some idea of how they are tracking
+
+All this means that we have reasonable notice as to when new research features will drop, and how much effort they will be to integrate. I can either plan for that in advance during a sprint, or schedule it for the next sprint. 
+
+Generally the research 3-monthly cycle doesn't coincide with features dropping. We might get new models 2 weeks in, and then another 6 weeks before we see anything else. This is fine, provided we aren't *surprised*.
+- If you don't mind me asking a few questions, what libraries/languages/environment do you develop in? How much of it is home brewed code? What does bringing a model online look like?
+
+I've been working at an internship doing CNN based video recognition tasks on signal from a Microsoft Kinect and been having a hell of a time getting something ready to actually deploy. Part of that is switching from Theano/Keras to Caffe (they don't want Python in the pipeline) and fighting with Windows. More of it is that my experience has been almost entirely academic (when it comes to ML) and I haven't found much on bridging the gap to production.
+- Thanks for the detail, much appreciated.
+- Soo many questions :-) how closely aligned are your research and engineering teams? Do you do joint scrum processes (standup, groom / plan, etc) or do you separate out at this level? and do you form a project team of engineering + research to deliver on a specific project? also, does your engineering team also handle the devops type work, setting up the platforms, tools, services needed by the research and engineering teams?
+- We build in (deep breath) Hadoop/Spark/Scala/Java/Python/R. We also have some ElasticSearch and Postgres in there. React/SpringBoot for UI. Python Flask for various utility web apps. Jupyter Notebooks for access (or Spark-submit if needed). Ubuntu for servers. 
+
+It keeps it interesting.
+
+Bringing a new model online means making it output data in the format we need. The continual communication makes that not too bad - we show them that if they output like *this* instead of *that* then it takes a week of our work, and everyone is happy.
+
+We made a couple of attempts at Windows support for researchers, but it's too hard. Now we just give them a VM or tell them to use a Mac. I have better things to do than patch Spark path separators. 
+
+We aren't doing deep learning (although another team I work closely with does). I'm a little surprised that people are wary of using Python (for performance reasons?) in a deep learning pipeline, when pretty much all the time will be in running your model. But I'm not surprised you are fighting windows....
+
+If I were you I'd stick a Flask web service around your Keras code, stick it on a Linux VM on Virtual Box, and say *Look - we should try this until we can get the "proper" system working*. That's like an hour's work (I have a 100 line version for Flask+Caffe, and I'd imagine Keras would be easier), and they can only say "no". 
+
+Of course, if you are expecting to have huge load at launch, then scaling will be a challenge. But scaling running those models under huge load is going to be a challenge anyway.
+- Oh man, thanks so much for the answer. I was feeling pretty bad about having so much trouble getting things done in Windows, so it's good to hear it's not just me.
+
+Yeah, the wariness surrounding Python was for performance reasons-- the code will be ran on mobile stations. So, deep learning may be too expensive in general, but that's part of what I'm looking in to. They've also mostly built their own machine learning algorithms in C++/C# to this point and don't really have need for Python otherwise.
+
+I actually have made (very rudimentary) Flask servers for both the Caffe and Keras implementations, which I was able to integrate with the rest of their solution on my personal machine. Unfortunately, they weren't willing to install python on all of the cluster nodes to run a full scale test. Which may have been wise, since my server seemed to slow down the longer it was running... I was about to start looking into zeromq using local tcp for the interprocess communication when they decided to nix Python altogether. Now I'm left trying to figure out how to use Caffe's C++ interface in Windows, and it seems to be a real doozy.
+
+Anyway, thanks again! It was very informative/helpful.
+- we found similar slowdown problems when serving our models and it seem to be related to GC calls growing at each predict call on the model. Hack work around was to disable GC and call it manually :-/

@@ -1,0 +1,7 @@
+URL: https://www.linkedin.com/posts/guyernest_learn-the-intuition-behind-llm-hallucination-activity-7272669239101001730-dTJj
+Date: 2025-09-24
+Author: Unknown
+
+After being asked the same question a few times, it is time to publish an answer. 
+
+You don't need to know what SoftMax is to correctly use the fantastic tools of AI and, specifically, LLM. However, it would help if you had intuition about their inner work and weaknesses. So, with a few simple examples and some diagrams, here is my answer to "Why does LLM hallucinate and how to fix it?".

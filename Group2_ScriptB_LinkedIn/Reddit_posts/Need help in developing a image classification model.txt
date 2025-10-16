@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1fdqoc3/need_help_in_developing_a_image_classification/
+Title: Need help in developing a image classification model
+
+Content:
+Hello everyone!
+
+I’m currently working with a dataset of two different bee species, trying to build a machine learning model that can differentiate between them based on their wing venation patterns (landmarks). But I’m facing a challenge: the venation patterns are very similar, and despite properly annotating the images, the model is not able to distinguish between the species. 
+
+I’m new to this image classification domain.
+I would appreciate any suggestions or assistance on how to improve the model's performance. Thank you!
+
+Comments:

@@ -1,0 +1,56 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/19abxl3/what_is_the_most_versatile_regression_method/
+Title: What is the most versatile regression method?
+
+Content:
+TLDR: I worked as a data scientist a couple of years back, for most things throwing XGBoost at it was a simple and good enough solution. Is that still the case, or have there emerged new methods that are similarly "universal" (with a massive asterisk)?
+
+To give background to the question, let's start with me. I am a software/ML engineer in Python, R, and Rust and have some data science experience from a couple of years back. Furthermore, I did my undergrad in Econometrics and a graduate degree in Statistics, so I am very familiar with most concepts. I am currently interviewing to switch jobs and the math round and coding round went really well, now I am invited over for a final "data challenge" in which I will have roughly 1h and a synthetic dataset with the goal of achieving some sort of prediction.
+
+&#x200B;
+
+My problem is: I am not fluent in data analysis anymore and have not really kept up with recent advancements. Back when was doing DS work, for most use cases using XGBoost was totally fine and received good enough results. This would have definitely been my go-to choice in 2019 to solve the challenge at hand. My question is: In general, is this still a good strategy, or should I have another go-to model?  
+
+
+Disclaimer: Yes, I am absolutely, 100% aware that different models and machine learning techniques serve different use cases. I have experience as an MLE, but I am not going to build a custom Net for this task given the small scope. I am just looking for something that should handle most reasonable use cases well enough.
+
+&#x200B;
+
+I appreciate any and all insights as well as general tips. The reason why I believe this question is appropriate, is because I want to start a general discussion about which basic model is best for rather standard predictive tasks (regression and classification).
+
+Comments:
+- General Additive Model.  Like OLS, but with non-linear functions.
+- As my former econometrics professor used to say, it's really hard to beat a good OLS regression.
+- Depends on the criteria.
+
+In terms of predictive power it is still the case that XGBoost (or LightGBM) can be thrown at most predictive problems and outperform other methods.
+It has even become more versatile in its usage in that it is now also often applied to time series.
+
+If you are concerned with interpretability as well as predictive power then OLS , GAM etc would be more versatile.
+Using explainable AI such as SHAP, LIME etc is messy, so XGBoost falls short here imo.
+- A lot of people giving good answers but seem to not address a big point imo. This is an interview, and for that it works for you to play to your strengths. A tool and model you are familiar with allows you to establish good performance and discussion with the interviewer, after which you can discuss shortcomings or alternate methods and maybe implement some that you are less familiar with.
+
+If you go in out of the box with an unfamiliar tool you’re likely to shout yourself in the foot if you run into an odd issue.
+- From our experience (model explanation, trained on small datasets), XGBOOST always performed second to good old Random Forest
+- Multivariate Adaptive Regression Splines (MARS) using the “earth” package in R. Can get close to XGBoost but with much better interpretability
+- For predictive accuracy, probably still XGBoost. For interpretability, linear/logistic regression (with interactions, regularization, scaling, feature transformations, etc).
+- You're overthinking it - you're extremely well qualified. Just do XGBoost. Maybe start with linear/logistic regression first.
+- Not answering your question, just feeling annoyed that with your education and experience, they're insisting on multiple rounds of aptitude testing. It's kind of bullshit. You aren't a recent graduate from some 3 month bootcamp.
+- Use the right tool for the job.  XGBoost is more for classification than for regression.
+
+XGBoost maintains its popularity to today like when it came out in 2014.  Before XGBoost you had more overfitting, reduced accuracy, and you usually had to normalize the data before throwing it at the ML algo.  XGBoost isn't just good, you don't have to do anything to the data, just throw it into the ML algo and get results.
+
+These days there are better boosted tree libraries like cat boost or neo boost or similar, but the advance is so minimal you might as well stick to XGBoost.  XGBoost is good enough to drop in and get immediate results.  This aids learning so better feature engineering can be constructed.  After that if XGBoost isn't good enough it can be replaced with something better suited.
+- Irrelevant question(apologies) but how did you branch into software/ML from Econometrics and Stats? Struggling to do the same from masters in Econometrics. Thanks
+- F
+- Good ol fashioned LinearRegression() can't beat it ;)
+- If your in any online, steaming setting, kernel smoothers (ch6 ESL) are great because they essentially require minimal training. Everything is done at evaluation time. They basically work like this, at any giving new test point, you cast a neighborhood of points that are “local” around the test point, and apply a kernel, which means many different things, but a kernel is weighting each observation in that neighborhood around the test point based on its distance from the test point. The prediction you get at the x* point is the weighted combination of the ys in the neighborhood around x*. The only issue is choosing the bandwidth for the neighborhood and the mass amounts of kernel choices you have. Also in high dimensions the notion of a distance becomes difficult, so you would have to be creative in the kernel function.
+
+
+Basis expansion methods are great too, because you can control the complexity based on the amount of basis functions you want using a penalty term on the curvature. The choice of basis here can yield many different levels of flexibility. Basically you decompose your function of x to instead a  function of v where {v} is some basis representation of your original data. Off the shelf basis for example include the monomial basis, which is just polynomial regression and is a special case. If you use a Fourier basis that is good for any cyclical patterns you want to capture.
+- I tend to use either XGBoost Hist, or HistGBM. I find the former has better predictive power (so an overall better loss function result), but can create more outliers, whilst HistGBM creates an overall slightly worse model, but the outliers are not as wide. Depending on what is important to my client informs the choice. If the budget is large enough I will even ensemble the result with an outlier prediction model weighting between them.
+- AutoML is the way
+- LightGBM with Optuna for hyperparameter optimization. The smaller your dimensions the faster it'll work, too.
+- Gotta ask yourself if you care about inference or prediction first ;)
+- As an aside, it might be interesting to see if there is a methodology of testing that allows for the objective ranking of the most versatile regression method. Although, I suspect that would require rigorously defining 'versatile' in this context.
+- XGBoost is still quite powerful

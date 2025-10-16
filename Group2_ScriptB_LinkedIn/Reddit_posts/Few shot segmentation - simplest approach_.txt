@@ -1,0 +1,36 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1l6gs38/few_shot_segmentation_simplest_approach/
+Title: Few shot segmentation - simplest approach?
+
+Content:
+Few-shot image detection represents a fascinating frontier in the realm of artificial intelligence, specifically within the confines of computer vision. This technique leverages the power of machine learning algorithms to discern and classify objects in images with minimal training data, typically only a few examples per category. The core challenge here lies in designing models that can generalize well from such scant information, a task that traditional deep learning approaches struggle with due to their reliance on large datasets. Innovations in this area often utilize sophisticated strategies like meta-learning, where the model learns to learn from small data, and transfer learning, which adapts knowledge from related tasks. The potential applications of few-shot image detection are vast, ranging from enhancing surveillance systems to improving medical diagnostics, where acquiring extensive labeled data can be costly or impractical.
+
+Comments:
+- Hey!
+
+Just wanted to say I think this is an interesting problem and I have started a POC implementation.  
+Will post back later this week with my results. 
+
+A little context: I'm part of a team developing a data-centric ML analysis tool called 3LC, and I am in the process of updating our "working with segmentation data" tutorials. Came across this and thought it would be fun and relevant to implement. Currently I have run the sam autosegmenter and collected the predictions. Next will be to compute per-segmentation embeddings, run dimensionality reduction and analyze in the dashboard. My hope is that we will have nicely seperated embeddings clusters, which we can then batch assign as ground truth labels :) 
+
+Screenshot from our Dashboard: [https://imgur.com/a/LcJrSIk](https://imgur.com/a/LcJrSIk)
+- Awesome! Thank you so much!
+- I'm considering a few different approaches to the actual labelling.
+
+Usually, I would fine-tune a embedding model, (which is possible here, but a bit harder without any labels), but to start off I'm collecting from a pretrained timm model (efficientnet\_b0). First, I'll look at only the unseen images and look for patterns. If necessary, I can embed the "known" objects in the same space to compare / select nearest instances. 
+
+Made some progress today, but still not quite done. Was able to collect per-segment embeddings, screenshot here: https://imgur.com/a/TCKiH7b. 
+
+Tomorrow I will try with a more interesting dataset and see if your procedure for assigning labels works)
+- Update. 
+
+Ran the workflow on a Fire & Smoke dataset I found on Roboflow.   
+(This dataset has ground truth labels, but I did not use them when computing the embeddings): 
+
+[https://imgur.com/a/mgfXY8J](https://imgur.com/a/mgfXY8J)
+
+The embeddings are generated with a pretrained efficientnet model, and show a clear separation between the two classes. In principle I could just auto-assign all segments on the left part of the embedding space to "fire" and on the right side to "smoke". 
+
+It's a simple example that works well because the classes are relatively easy to separate. Not sure how it will work on your data, but it's a good start. Do you have any data you could share? 
+
+Next up is wrapping it all together; sam autogenerate, embeddings generation, auto-labelling, iterating.. Hope to push by the end of the week. Let me know if you are interested in more info.

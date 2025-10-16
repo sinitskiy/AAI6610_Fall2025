@@ -1,0 +1,107 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1h4qr80/is_any_of_you_doing_actual_ml_work_here/
+Title: Is any of you doing actual ML work here?
+
+Content:
+I'm really passionate and i love the mathematics of machine learning, especially the one in deep learning. I do have experience with training DL models, genetic algo hyperparameter tuning, distribution based models/clustering (KL div, EM), combining models or building them from scratch, implementing complex ones in C from zero, signal analysis, visualizations, and other things.
+
+I work in a FAANG, but most of the work is actually data engineering and statistics. At first I was given the chance to work on a bit of ML, but that was just for me to have the motivation to learn the already existing systems, because no one in the entire department does any ML, and now I'm only getting engineering/statistics projects.
+
+I had jobs in the past at startups where the CEO would tell me to hard code IFs instead of training a decision tree for different tasks.
+
+They all just want "the simplest solution", and I fully agree with the approach, except that the simplest possible approach is not an actual solution some of the time. We may need to add in some complexity to solve different tasks, but most managers/bosses I've encountered have been terrified by any actual ML/mathematics. I agree that explainable and low risk high reward are the best approaches, but not if your "low risk" solution is hardcoding hundred of if statements instead of a decision tree, man.
+
+Is it because I'm from Europe and not US? I've been told by HR that we're inferior and that ideas only come from the US and to keep my head down more instead of proposing projects before.
+
+I'm a very tryhard and hard working person, but I just can't perform in a job where the task is to put together two SQL software pieces built 10 years ago in a rush and with zero documentation...... And my bosses refuse to understand that. Sure, I can do some of it, the job does not need to be perfect. But not if that is 100% of the job.
+
+Are labs like OpenAI/Anthropic/Deepmind the only places on earth that do actual ML and not API calls + statistics/engineering + if statements?
+
+Comments:
+- I worked for a large financial institution in the insurance domain. The data scientists I collaborated with definitely did data science including descriptive and predictive modeling. But for 60% of problems nothing fancy was needed other than some data aggregation and a dashboard, and that is the norm in every industry.
+- I work for a mid-sized company and do a lot of hands-on work (e.g. CV model fine-tuning/train from scratch, novel model architectures, quite a bit of MLOps, etc).
+
+I guess that's what I enjoy about the job, and what makes me skeptical to ever go to a larger organization.
+- I work in applied ML. Based on your explanation, it seems you’re not proposing your solutions in a convincing way. 
+
+Show your manager or your stakeholders the estimated impact of implementing your ML solution vs their proposed solution. If they doubt it, run an A/B test with both recommendations and show them the actual impact. If your solution generates higher impact than their proposed version, they will accept yours. 
+
+In applied ML, the impact of your work is the most important metric to validate its relevance. Stakeholders rarely reject impactful work because everyone wants to increase the KPIs of the business. If you are not proposing your ideas based on their impact to the business KPI, you will not get alignment to implement them.
+- Even there you would do the same job. You should switch to Researcher/Research Engineer and you would do what you like 🥰
+- Apparently, my true calling in ML is hardcoding if statements while HR reminds me Europe is the discount aisle of innovation
+- Some examples of my projects from different jobs:
+
+* medical chat-bot (several years ago): collecting and labeling data, training LSTMs for NER
+* video super-resolution: using pre-trained models
+* image generating: training stylegan2-ada-diffaug on collected data
+* real-time anti-fraud: training gradient boosting
+* face recognition: using pre-trained model for embedding extraction, then FAISS for similarity search
+* chat-bot: langchain + openai API
+* recommendation system: training a custom two-tower model for retrieval and gradient boosting for ranking
+- Yep. Supervised gradient boosting models, text analysis using transformers, time-series models, etc. 
+
+A lot of my time in the last half-year or so is spent on model interpretation with SHAP and LIME and engineering features that aid with interpretation rather than just maximizing model performance.
+
+My title is MLE now, but when I first started, it was DS. I am doing the same work. Title change was with a promotion.
+- I recently started as a DS a month ago and my first task was text classification using NLP and training classification models. Im now starting my second project where they want me to create a PINN model to predict structural analysis
+- There are lots of DSs doing ML, but it seems like you're not in the right role or department. In organisations or departments where simple algorithms are enough you shouldn't expect to do complex ML. If you do believe in your case more ML would be beneficial, build a case, show the expected value in a simulated example or whatever.
+- Well it’s similar story to mine. Before I was a quant in finance and I was building a lot of time series models most of them were written in simple Jupyter notebook then we dumped xgboost model into SQL so business. Now I am working in Europe for huge company in NA, my main job is operation of the algorithm, most of the time it’s require reading spaghetti code, there is very little people in the company who actually do research and develop algorithm from the scratch. Most of my responsibilies are adding new features and scaling the solution for the new markets
+- I have not worked at BigCo in any of these types of jobs, but have worked in startups and freelanced at mid-tier companies. In my opinion, why nobody really is doing any ML work anymore is because the ROI is hardly ever there. F.e. for a startup we hired a bunch of ML people who built custom models for our means, but 6 months later GPT-3 hit the market and basically dwarfed our own efforts through a generalized model. This is true in almost every field. I think the solution is to work for a company where the product is (a) model(s), not a company that uses ML to perform some business goal. The make vs buy decision is just always buy in the latter case (some exceptions obviously). So yes, apply at OpenAI/Anthropic or maybe a company that does something similar in a more specialized field. You are not going to find it elsewhere.
+- > I’ve been told by HR that were inferior snd the ideas only come from the US 
+
+Excuse me, what the fuck? I can’t believe this is a real quote and if it is you need to gtfo of that company before your career stagnates entirely
+- I was hired as an AI engineer, expecting it to be some LLM and simple ML BS but it turned out to be AI for science for publishable research which is really fun to work with.
+
+I’m guessing that research is the only way to avoid SQL and bsing to stakeholders
+- I do, but you need to adjust your expectations about "actual ML work".
+90% of the job is spent on things most people wouldn't consider ML work, like:
+- Talking to users/clients/annotators/managers
+- Discussing expectations, limitations and resources
+- Handling data (most of the technical work is here)
+- Testing the existing solutions, including API models like gpt-4 and Claude
+- Reporting and communicating results
+- Figuring out the hardware and setting up the infra (this is mostly for big models)
+
+This is how I usually spend my time as an ML Engineer developing state-of-the-art custom models for an early stage startup. In bigger companies, there are other people who pick up some of these tasks like talking to clients and setting up infra etc.
+- It’s all about the problem space. Are you sure that what you’re working on will benefit from anything “complicated”? Or enough to justify the unexplainable uncertainty baked into the solution?
+
+Typically in a FAANG type thing - either you’re putting out little fires or you’re part of the kindle in a conflagration that’s triggered by someone else being paid an order of magnitude more.
+- Ye I work at a consultant type company so I build models for our clients. I build about 30-50 models per year.  
+
+I know most people rarely ever get to build that amount of models so im very lucky haha  
+
+in my spare time, I have freedom to create new datasets, test new modeling techniques, etc.
+- A few thoughts. One: most businesses don't have problems that are improved by applying complex machine learning algorithms. Most of my career in DS was using pretty simple math (k-means, GLM, etc). I worked one place where they had fit a ton of complex neural nets to solve a problem. Later, one of the DSs went back and realized they could have had nearly identical performance in a fraction of the time using logistic regression. The point is that business value isn't always aligned with mathematical complexity.
+
+> Scientists come in wanting to build cutting edge models, and most of the time we have to crush their dreams, and tell them to start by solving the problem with SQL, and if absolutely necessary, a linear regression. If we do end up using more complex ML, the hard part is going to be constructing the surrounding software system, and the actual model implementation will be a by-the-book approach, and constitutes 2-5% of our codebase by lines.
+
+> Most scientific problems I’ve worked on could be solved by a correct representation of an empirical distribution in a histogram. The next largest group needed a linear regression. The final group needed a statistical model from the first chapter of a PhD textbook. When the scale of the project grew, it was never because the statistics got too difficult. It was because the scale of the software, the data intensiveness, the edge-case handling, ramped up.
+
+https://shakoist.substack.com/p/why-business-data-science-irritates
+
+Two: the larger the organization, the more narrow and focused the job duties become. As you've found out, at FAANG companies a lot of data scientists just use basic stats, often mostly on A/B tests. In those companies, if you are not in a role that does specifically advanced ML, you probably won't do any advanced ML. At smaller organizations, DSs tend to need to be more jack of all trades, which can result in more opportunities to do different things. 
+
+I don't think being European has anything to do with it. I just think at the core, most businesses and most problems don't need anything as complex as the cutting edge, but that isn't sexy and it's not what brings people into DS. One reason I'm a DE now. 
+
+https://ryxcommar.com/2022/11/27/goodbye-data-science/
+- I work at a university and would say we're not there yet. Once example problem here would be we'd like to see what characteristics would cause a kid to not return by their second year of college. Alas...
+
+* The files establishing the cohorts of kids are kept in one SPSS file per year, which don't necessarily have the same data conventions between each of them (unshared column names, useful columns just not being filled out one year etc). So to get 12 years back I had to standardize the naming conventions of 12 of these files, backfill missing information and then stack them together.
+* Grades would be helpful info here, but there's 4 or 5 different reports on our report server on grades with different counts. I couldn't check the SQL code to determine why they're different because IT thought a person doing research using SQL is too weird. It took 2 years + a regime change for me to get SQL access.
+* Withdrawals would be useful here but the report is too much of a disaster to make sense of what's going on and it's the last thought on everyone's minds to fix the thing.
+
+Etc etc etc. In short, there was (and still is) a mountain of data engineering to do, to address even simple questions.
+- yes i do
+- Remember one thing, FAANG or any big institution has already applied the ML techniques that you learn right now. They are far ahead of the game. What I mean is, in big institution, the things taught in school/university are already present in the most efficient way. 
+
+You need to be in a core research department than works on upcoming technologies and methods.
+
+"Data Science" is just a fancy name for statistics. 
+
+It's just popular right now but institutions have been doing it way before it was.
+
+When a thing gets popular, the management tries to push it more and more just to say that the company uses that thing. What I mean is, there is this software Altryx. We had created a report that worked flawlessly in Ms Excel. Now since other banks/teams were using Altryx, the Risk Head told our team to do the same. 
+
+No one knew shit about it. The analyst who created a report in Altryx literally coded the whole report in python and just showed the output in Altryx.
+
+So, if you want to work on ground level things, you need to go to small companies who are solving the same problem from scratch. Who's systems are not as efficient as the big institution's are.

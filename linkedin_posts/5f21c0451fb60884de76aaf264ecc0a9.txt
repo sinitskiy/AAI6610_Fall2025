@@ -1,0 +1,33 @@
+URL: https://www.linkedin.com/posts/jasongorman_i-was-trying-to-explain-llm-hallucinations-activity-7359498332714504193-PGC6
+Date: 2025-09-24
+Author: Unknown
+
+I was trying to explain LLM "hallucinations" to my non-techie friend, and, well, here goes.
+
+You've seen Who Wants To Be A Millionaire? Contestants are asked a question and shown 4 possible answers, one of which is the correct one.
+
+If they don't know the answer, they can use a "lifeline". They can phone a friend. They can eliminate 2 of the wrong answers. And they can ask the audience. The audience votes for the answer they believe is correct, and the contestant can see which answer was the most popular.
+
+Now, if the question's something like "What is the capital of Canada?", chances are that quite a few of them know it's Ottawa. So the vote might come out something like:
+
+A - Ottawa - 54%
+B - Toronto - 23%
+C - St Johns - 7%
+D - Vancouver - 16%
+
+This might give you high confidence that A is the correct answer.
+
+But if the question was something like "What microscopic mechanism gives rise to superconductivity in semiconductors?", chances are pretty much everyone in the audience will be taking a wild guess. So the vote might go something like:
+
+A - Diamagnetism - 25%
+B - Cooper pairs - 23%
+C - Two Fluid model - 26%
+D - Vapour-phase Epitaxy - 27%
+
+In this instance, it would be a mistake to choose the "most popular" answer, because they're all selected with similarly low confidence, suggesting that THE AUDIENCE DOESN'T KNOW.
+
+But there is no "Don't Know" option available. The audience must vote for one of the answers. So they do. And if the contestant was an LLM, they'd pick the one with the most votes - the one with the highest confidence.
+
+When LLMs are presented with prompts (and contexts) that wander into niches in their training data (e.g., computational physics implemented in Fortran), we see a similar effect. They're sampling from barely-represented patterns and responding confidently with guesses. But *they* don't know these are guesses, and *we* don't know these are guesses until we check with an external source of information.
+
+I'm told that some LLM researchers are working on ways to flag up the confidence of generated tokens, so we might at least see when the model is probably guessing. This could lead us towards regions of generated text where confidence was low, or trigger the model to provide multiple possible responses and let us choose, or some other mechanism to triage the output.

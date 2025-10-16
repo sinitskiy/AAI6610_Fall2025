@@ -1,0 +1,50 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n2rvvh/r_technical_skills_analysis_of_machine_learning/
+Title: [R] Technical Skills Analysis of Machine Learning Professionals in Canada
+
+Content:
+I manage a slack community of a couple hundred ML devs in Canada. I got curious and ran some numbers on our members to see if any interesting insights emerged. Here's what I found:
+
+**The "Pandemic ML Boom" Effect**:  
+Nearly 40% of members started an ML specific role between 2020-2022. 
+
+**RAG and Vector Database Expertise**:  
+Over 30% of members have hands-on experience with Retrieval-Augmented Generation systems and vector databases (Pinecone, Weaviate, ChromaDB), representing one of the hottest areas in enterprise AI.
+
+‍**Multi-modal AI Pioneers**:  
+A significant portion of members work across modalities (vision + text, audio + text).
+
+**Most Common Job Titles**:
+
+15% of members hold senior leadership roles (Principal, Staff, Director, CTO level), demonstrating strong senior representation within the community.
+
+**ML-Engineering Bridge Roles**:
+
+Over 35% of members hold hybrid titles that combine ML with other disciplines: "MLOps Engineer," "Software Engineer, ML," "AI & Automation Engineer," "Conversational AI Architect," and "Technical Lead, NLP".
+
+You can see the full breakdown here: [https://revela.io/the-collective](https://revela.io/the-collective)
+
+Comments:
+- any reason why deep learning is so less? I thought it is a very popular domain even today.
+- Do you mind sharing the invite link of the Slack community? Im Interested in joining:)))
+- Does MLOPs mean running a vllm command? :)
+- How much of the reinforcement learning percentage is RLHF? I don't imagine it being so popular outside of that context.
+- this is not at all representative of machine learning talent in Canada like the title suggests.... there's a significant and nontrivial sampling bias
+- Wow I'm genuinely surprised that Reinforcement Learning is so high !
+- So basically the majority are charlatans?
+- I thought that was interesting as well. May be because deep learning/training neural networks is a much less common skill than being able to deploy it and do statistical analysis.
+- This data was taken from Linkedin profiles. Some possible explanations: 
+
+While Deep Learning is "Sexier", fewer people feel confident enough (or have enough real-world exposure) to list it as a skill on their profile.
+
+Mid to senior ML engineers often have broad responsibilities that go beyond deep learning. Their roles typically encompass the full ML lifecycle.  
+  
+Traditional ML remains dominant in many industries, especially those dealing with structured data (e.g., finance, supply chain, manufacturing). You'll see the majority of this community are in regulated industries.  
+  
+Plus, interpretability and regulatory requirements in those same industries often favour traditional ML over deep learning, as the latter is seen as a "black box".
+- You can apply to join in the footer of the post: [revela.io/the-collective](https://revela.io/the-collective)
+- You're absolutely right, its an N of \~250.
+- Does this reflect job market well? I feel confident in building deep models from scratch more than the deployment pipelines currently, would like to explore roles that offer me just that - focus on building models more than deployment. Perhaps some applied research roles but most of the data scientist roles still end up asking too much of DE side of the lifecycles, it seems.
+- Also saw your comment (thats now deleted?) about word clouds. That a good idea! For version 2.0. I might include one from job post "requirements".
+- sample size is not the problem...
+- it was deleted due to some weird glitch.. dunno why

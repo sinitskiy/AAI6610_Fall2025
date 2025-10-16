@@ -1,0 +1,44 @@
+URL: https://www.linkedin.com/posts/josephlbreeden_pdf-how-understanding-forecast-uncertainty-activity-7364750595158675456-ng9K
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Joseph Breeden的动态
+Joseph Breeden
+1 个月  已编辑
+
+I was recently asked by someone formerly in a senior position in bank supervision, "How do we solve the explanability problem in machine learning?"
+
+I shared some thoughts, but honestly, this was never a problem that I felt I owned. Still, a few days of downtime due to illness gave me time to ponder and I realized the simple answer. "There is no explainability problem in machine learning."
+
+The problem is that we expect every forecast to be explainable. But explanatory instability occurs in high curvature regions of the model, or at segment boundaries. The real issue is that the forecast uncertainty explodes in those regions. You cannot explain a forecast that does not exist. Instead, your business rules need to change to first measure forecast uncertainty. When it is "too high", you need a simple model fallback.
+
+Said differently, the industry is still using machine learning models with a linear model mindset. Machine learning models are great at finding pockets of predictability, which implicitly means that there will be much less predictive regions in between. When forecast uncertainty is highly dynamic, so too will the explanatory instability vary widely.
+
+Note that supposedly explainable ML models that are piecewise linear everywhere, do not have any more explanatory stability than continuous nonlinear models. The linear model appears to give explainability, but the forecast near a boundary is highly uncertain, so the explanatory power is purely illusory. Don't believe the explaination of an uncertain forecast.
+
+So, I ran some simulations, did some math, and put the whole thing in a paper. I hope someone finds it interesting. 
+
+https://lnkd.in/gRdR29nw
+
+(PDF) How Understanding Forecast Uncertainty Solves the Explainability Problem in Machine Learning Models
+researchgate.net
+84
+11 条评论
+赞
+评论
+分享
+Eddy Abraham
+
+1 个月
+
+Joe, perhaps the answer is more transparency in which model is a

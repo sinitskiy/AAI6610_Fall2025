@@ -1,0 +1,74 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/14xozdc/r_crossentropy_is_all_you_need_or_is_it/
+Title: [R] Cross-Entropy is All You Need… Or is It?
+
+Content:
+Hey [r/machinelearning](https://www.reddit.com/r/machinelearning/)! I recently wrote an article titled "[Cross-Entropy is All You Need… Or is It?](https://medium.com/ntropy-network/is-cross-entropy-all-you-need-lets-discuss-an-alternative-ac0df6ff5691)"  where I discuss extensions to the Cross-Entropy loss to make it better when used in noisy production datasets. I've had great results on my end using this loss, so I wanted to share it with you all and get your opinions and insights!
+
+➡️ [Article link](https://medium.com/ntropy-network/is-cross-entropy-all-you-need-lets-discuss-an-alternative-ac0df6ff5691)
+
+➡️ [Code & Colab link](https://colab.research.google.com/drive/1AU0FUXXvptPDg1gxWQ-kTjbUFPCmBVsL?usp=sharing)
+
+**Summary:** This article introduces the **Smooth Generalized Cross-Entropy** (SGCE) loss function, a way to address training classification models with noisy labels while still calibrating your model's confidence scores. The article demonstrates the  application of SGCE on the task of Named Entity Recognition (NER), but it is applicable to many other tasks. The loss function combines the **Cross-Entropy** (CE) and **Mean Absolute Error** (MAE) functions, and incorporates label smoothing for further regularization and reliable uncertainty estimation. We train a `distilbert-based` model that on the `CoNLL-2003` dataset, and include a [Colab notebook with the complete code implementation](https://colab.research.google.com/drive/1AU0FUXXvptPDg1gxWQ-kTjbUFPCmBVsL?usp=sharing).
+
+**Key Points and Highlights:**
+
+* The **Generalized Cross-Entropy** (GCE) loss is a **generalization of both the Cross-Entropy** (CE) loss and the **Mean Absolute Error** (MAE)
+* The loss has a tunable parameter called **q** that can be interpreted as **“How much noise suppression do I want during training?”**
+* **Confidence calibration** is **very important** for real-world production scenarios
+* The **Smooth Generalized Cross-Entropy** (SGCE) is an extension of the GCE loss that **enables even better calibration** out of the box (without tricks like [temperature scaling](https://arxiv.org/abs/1706.04599)) using a **smoothing parameter** **between 0 and 1**
+* **Smoothing** is a **similar principle to the MAE property** that operates at the sample level but **at the token level**
+* The **Cross-Entropy** (CE) loss, which is **equivalent to the Smooth Generalized Cross-Entropy** (SGCE) **with** the parameter **q=0**, is still a **good choice for clean datasets**
+* The **Mean Absolute Error** (MAE) loss is a **bad choice for most real-world datasets**
+* *Distillation after smoothing is still a research topic* 😀
+
+***Side Open Discussion***: The last key point above is interesting and open to discussion because at the end of the article I show that [previous research](https://arxiv.org/abs/1906.02629) has observed **smoothing might harm distillation**. I suggest that the general usage of the forward Kullback–Leibler (KL) divergence for distillation might not help and that using the reverse KL divergence could work better here. Another way could be to alternate between the forward and reverse KL divergence.
+
+Let me know what you think!
+
+Comments:
+- Have you tried comparing this to focal Cross-Entropy loss and/or combining it with that?
+- The code / colab link points to the article.
+- I have only read your post here and not the article, but what about label smoothing of the cross entropy loss?
+- It would be better to clean the dataset of mislabeled examples than hack the loss function. How can you filter out noisy training examples while keeping the good hard examples?  I have used ensemble agreement and ranking by averaged loss per example during training, but these methods confuse hard examples with noisy ones. So far the best trick was to simply generate examples with GPT-4 to  "fill up" the insufficient parts of the dataset, hoping the model would start  being able to filter out noise.
+- Hi, I was  late for the party. Can anyone explain why "The **Mean Absolute Error** (MAE) loss is a **bad choice for most real-world datasets**"?
+
+Except for the fact that MAE is not differentiable around 0, which could be addressed by using Huber/Log-cosh loss. So what is the case here?
+- I actually did try the focal loss before starting work on the SGCE loss, not on the `CoNLL-2003` dataset but on a private production dataset and got worse results.
+
+The idea of the focal loss is that it'll try to give more weight to harder examples while easy examples will be heavily down-weighted. This is tunable with a focusing parameter γ in their loss.
+
+Unfortunately, this doesn't work well in noisy scenarios either, because **what are noisy or badly labeled examples in a dataset? They are hard examples!** In our case we definitely don't want to focus on these depending on the noise amount of the dataset.
+
+Now, I was rereading a bit their paper just now and they also propose using an α factor in the CE (which they rename as the α-balanced CE loss) and Focal loss to help with class imbalance which could actually be useful. To add to that, it could be interesting to try merging, like you said, the Focal loss and the MAE loss instead of just the CE and MAE loss like I was doing above.
+
+**So, in the end, a loss that combines the Focal loss and the MAE loss could have:**
+
+* a parameter to balance the importance of positive/negative examples (like the α parameter in the balanced focal loss)
+* a parameter to balance the importance of easy/hard examples (like the γ parameter in the focal loss)
+* a parameter to estimate the noise in the dataset (like the q parameter in the SGCE loss)
+* a parameter to smooth the labels for better uncertainty estimation (like the s parameter in the SGCE)
+
+That's starting to be quite a lot of parameters, so tuning the hyperparameters might take a while, but it also makes the loss more flexible.
+
+That's definitely worth trying, good idea!
+- Good catch!
+
+Fixed it, thanks!
+- I actually discuss that in the article, and it works well to calibrate the confidence of your model **when you don't have much noise in your dataset**. But since there's often many sources of noise in datasets the Cross-Entropy (CE) loss will actually result in a badly confidence calibrated model. Thus, using the Smooth Generalized Cross-Entropy (SGCE) loss which is a generalization of the CE loss (meaning at the noise factor q=0 it is equivalent to the Cross-Entropy loss) is preferred and your model will converge faster and be much better calibrated given the same training conditions compared to the CE.
+
+Confidence calibration is a topic that isn't often discussed but is very important for production models. Modern neural networks are often badly calibrated, that's why there has been attempts at improving things with methods like temperature scaling, etc. In the end, you don't want your model to have high accuracy but always doubt its own output, it'll be hard to trust the model in production then.
+
+Hope this helps :)
+- Absolutely, a better loss function will never replace dataset cleaning. Cleaning the dataset to remove mislabeled examples isn't always feasible though. When you're working with large scale datasets (>1M examples) in complex domains (containing a lot of hard examples), it becomes very resource intensive to clean the dataset, requiring more expert annotators to do manual work. Sometimes it can even be hard for an average annotator to spot a hard mislabeled example, meaning you need more experts that are harder to find and can cost more money.
+
+You are also using side methods (ensembling, etc) to help compensate for noisy samples. In the article I simply discuss a side method which isn't always considered for noisy data, the loss function. It is also a generalization of the Cross-Entropy, so it's not made to replace it, but to extend it. So it's mostly another tool to help your trainings, it won't replace what you already have.
+
+Using GPT-4 or any other LLM to generate synthetic examples is a good augmentation method, but you shouldn't rely solely on LLMs to gather data. In the end, if this is your best method and you rely too much on it, then you're simply distilling GPT-4 into your model and it means you won't be able to get better than GPT-4, a general foundational model which is nice for a baseline but not always best for a great model. It should only be a subset of your dataset since multiple quality data sources is better.
+
+To answer your question about selecting good hard examples, the loss I introduce in the article helps you to calibrate the confidence of your model, enabling you to have a better idea of which examples your model considers easy or hard. This enables you to use active learning methods that rely on your model's confidence to filter or even find noisy examples to relabel. That's one approach you can add to your pipeline to help.
+
+In the end, combining multiple approaches is always the best since they have their own pros and cons that can help in different situations.
+- I'm sorry if I'm missing something. 
+But what about directly comparing with label smoothing?
+- No worries! If you mean the Cross-Entropy with label smoothing, I already do a comparison in the article. I might have misunderstood your question though, let me know if so :)

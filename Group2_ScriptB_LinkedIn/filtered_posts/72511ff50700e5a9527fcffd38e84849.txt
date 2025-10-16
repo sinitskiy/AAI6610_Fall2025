@@ -1,0 +1,36 @@
+URL: https://www.linkedin.com/posts/divyanshu-vyas_my-favorite-research-papers-on-physics-informed-activity-7106174614338240512-qLWu
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Divyanshu Vyas
+
+High Performance Computing/AI @ Shell | Founder @ Petroleum From Scratch | GenAI for Science & Energy
+
+2 年
+
+My favorite research papers on Physics-informed Machine Learning, the problems they are solving, and their summaries:
+
+1. "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations" by Raissi, Perdikaris, and Karniadakis (2017)
+- PINNs are a type of machine learning model that can be used to solve partial differential equations (PDEs). The PINNs framework combines the expressive power of neural networks with the physical constraints imposed by the PDE.
+- The paper demonstrates the effectiveness of PINNs by solving a variety of PDEs, including the Navier-Stokes equations, the heat equation, and the Schrödinger equation.
+
+2. "Physics-constrained deep learning for inverse problems" by Zhang, O'Malley, and McMahan (2019)
+- This paper proposes a physics-constrained deep learning framework for solving inverse problems. The framework uses a Bayesian optimization approach to search for the parameters of a neural network that satisfy the known physical constraints and the observed data.
+- The paper demonstrates the effectiveness of the framework by solving a variety of inverse problems, including the problem of estimating the parameters of a PDE from noisy data.
+
+3. "Physics-informed machine learning for uncertainty quantification" by Raissi, Perdikaris, and Karniadakis (2020)
+- This paper presents a framework for using physics-informed neural networks to quantify the uncertainty in the solution of PDEs. The framework uses a Bayesian approach to propagate the uncertainty in the input data through the neural network.
+- The paper demonstrates the effectiveness of the framework by quantifying the uncertainty in the solution of the Navier-Stokes equations.
+
+
+4. "Physics-informed machine learning for data-driven discovery 

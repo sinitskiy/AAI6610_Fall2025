@@ -1,0 +1,273 @@
+URL: https://www.linkedin.com/posts/yogeshmalhotra_llm-hallucinations-how-to-detect-them-in-activity-7077694658310504448-QhTD
+Date: 2025-09-24
+Author: Unknown
+
+How to Advance LLM Models Beyond Hallucination to Non-Trivial Real World Applications: Beyond Large Language Models-LLM Hallucinations: Our AI R&D enabling global R&D communities advance LLMs: https://lnkd.in/ggJ5Z9AC: 
+
+AWS-Quantum Valley Building Quantum Minds For Quantum Uncertainty
+• AI Automation -> AI Augmentation-Model Risk Management
+• AI Cyber Controls -> Counter-Adversarial Command-Control
+• Data Management -> Quantum Uncertainty-Complexity
+• Data-Driven Architectures -> Event-Driven Architectures
+
+• 
+话题标签
+#AI 
+话题标签
+#Automation -> 
+话题标签
+#AI 
+话题标签
+#Augmentation-
+话题标签
+#ModelRiskManagement
+
+话题标签
+#Adversarial 
+话题标签
+#AI-
+话题标签
+#Cyber-
+话题标签
+#Attacks 
+话题标签
+#Models 
+话题标签
+#RiskManagement
+https://lnkd.in/edcG8gB
+
+• 
+话题标签
+#AI 
+话题标签
+#Cyber 
+话题标签
+#Controls -> 
+话题标签
+#Counter-
+话题标签
+#Adversarial 
+话题标签
+#Command-
+话题标签
+#Control
+The Joint Staff 
+话题标签
+#Pentagon 
+话题标签
+#ABMS-
+话题标签
+#JADC2-> 
+话题标签
+#ABMS2-
+话题标签
+#JADAC2-
+话题标签
+#JADCAC2
+https://lnkd.in/eidSUPE
+
+• 
+话题标签
+#Data 
+话题标签
+#Management -> 
+话题标签
+#Quantum 
+话题标签
+#Uncertainty-
+话题标签
+#Complexity
+
+话题标签
+#AI 
+话题标签
+#ML 
+话题标签
+#Security 
+话题标签
+#CyberOps 
+话题标签
+#MLOps 
+话题标签
+#DevSecOps 
+话题标签
+#Infrastructure 
+话题标签
+#Code
+https://lnkd.in/gdsNMJ2b
+
+• 
+话题标签
+#DataDriven 
+话题标签
+#Architectures -> 
+话题标签
+#Event 
+话题标签
+#Driven 
+话题标签
+#Architectures
+
+话题标签
+#AI 
+话题标签
+#ML 
+话题标签
+#MLOps 
+话题标签
+#AIOps 
+话题标签
+#GAI 
+话题标签
+#LLM 
+话题标签
+#LLMOps 
+话题标签
+#ChatGPT 
+话题标签
+#OpenAI
+https://lnkd.in/gYCJv_tD 
+
+"Hallucinations are one of the biggest challenges in running LLM-based applications as they can significantly undermine the 
+话题标签
+#trustworthiness of your 
+话题标签
+#application."- Thomas Stadelmann, deepset: Superb Q&A 
+话题标签
+#Dialog ['context' in Comments*] by Parixit N.:
+
+Excellent insights from deepset team: fascinating Q&A on where much needed critical progress for such models in handling the most critical 
+话题标签
+#dynamic 
+话题标签
+#adversarial 
+话题标签
+#uncertainty 
+话题标签
+#AI issues is needed*.
+
+Listed below are our AI R&D contributions enabling global R&D communities advancing LLMs: https://lnkd.in/eR37Y89U .
+
+LLMs In Search of 
+话题标签
+#Meaning: 
+话题标签
+#Models-
+话题标签
+#Algorithms-
+话题标签
+#Data: 
+话题标签
+#MAD : 
+
+话题标签
+#ArtificialIntelligence 
+话题标签
+#GenAI Beyond 
+话题标签
+#ChatGPT 
+话题标签
+#NLP 
+话题标签
+#NLU 
+话题标签
+#LLM-s
+
+话题标签
+#LargeLanguageModel 
+话题标签
+#Hallucination 
+话题标签
+#Retrieval 
+话题标签
+#Augmented 
+话题标签
+#Generative 
+话题标签
+#RAG 
+话题标签
+#QA 
+话题标签
+#Cyber-
+话题标签
+#Finance-
+话题标签
+#Trust 
+话题标签
+#Dynamic 
+话题标签
+#Adversarial 
+话题标签
+#Uncertainty 
+话题标签
+#QuantumUncertainty - 
+话题标签
+#QuantumMinds - 
+话题标签
+#AWS 
+话题标签
+#QuantumValley
+
+
+话题标签
+#Foundational 
+话题标签
+#Papers:
+
+话题标签
+#AI https://lnkd.in/eetCEAz 
+
+话题标签
+#KM https://lnkd.in/dZUt-EG
+
+
+话题标签
+#Building
+
+话题标签
+#QuantumMinds 4 
+话题标签
+#QuantumUncertainty
+2023: Latest Conference Presentation: https://lnkd.in/gYCJv_tD 
+2023: Latest Journal Paper: https://lnkd.in/gBVxc62j
+
+MIT Computer Science and Artificial Intelligence Laboratory (CSAIL)
+美国麻省理工学院 - 斯隆管理学院
+
+话题标签
+#MIT 
+话题标签
+#Computer 
+话题标签
+#Science & 
+话题标签
+#AI 
+话题标签
+#Lab 
+话题标签
+#Faculty-
+话题标签
+#SME 
+话题标签
+#AI Guide:
+https://lnkd.in/eknKzm5
+
+美国普林斯顿大学 - Princeton Bendheim Center for Finance - Operations Research & Financial Engineering Department, Princeton University
+
+话题标签
+#Princeton 
+话题标签
+#Presentations: 
+话题标签
+#Model 
+话题标签
+#RiskManagement 
+话题标签
+#ModelRiskArbitrage
+https://lnkd.in/gcp_yHe : ModelRiskArbitrage.com:
+
+30-Year Global Post AI-Quantum Finance & Trading Networks Pioneer Global Risk Management Network LLC
+
+30-Years Pioneering Silicon Valley's Next Big Thing™: Post AI-Quantum Know-Build-Monetize™ Networks
+
+30-Years Building Quantum Minds for Quantum Uncertainty: Decades Ahead of 'Backward' GenAI-LLMs-RLHF

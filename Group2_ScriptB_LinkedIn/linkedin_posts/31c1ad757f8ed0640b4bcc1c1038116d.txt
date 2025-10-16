@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/abdullah-kasri_conformalized-generative-bayesian-imaging-activity-7316651308290113536-zn0V
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Abdullah K.的动态
+Abdullah K.
+5 个月
+
+📊 Conformalized Generative Bayesian Imaging: An Uncertainty Quantification Framework for Computational Imaging 🖼️
+
+Uncertainty quantification is pivotal for establishing trust in learning-based computational imaging methodologies. Recent innovations in generative modeling and Bayesian neural networks have paved the way for advanced uncertainty-aware image reconstruction techniques.
+
+This study introduces a scalable framework that adeptly quantifies both aleatoric (inherent) and epistemic (model-related) uncertainties. By integrating a generative model-based posterior sampling method with Bayesian neural networks, the framework enhances uncertainty quantification through latent variables and deep ensembling.
+
+Moreover, the incorporation of conformal prediction methodology ensures rigorous calibration, enabling reliable uncertainty assessments. Evaluations across magnetic resonance imaging, computed tomography, and image inpainting demonstrate that this framework effectively captures true characteristics of both types of uncertainties.
+
+The findings also reveal that applying conformal prediction yields marginal coverage guarantees aligned with frequentist principles. 
+
+This advancement represents a significant step towards more reliable computational imaging solutions! 
+
+     📈
+
+#AI #Algorithms #ArtificialIntelligence #BayesianModeling #ComputationalImaging #DL #DS #DataScience #DeepLearning #GenerativeModels #ML #MachineLearning #Tech #Technology #UncertaintyQuantification
+
+Conformalized Generative Bayesian Imaging: An Uncertainty Quantification Framework for Computational Imaging
+arxiv.org
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,133 位关注者
+
+3000+ 则动态
+查看档案  关注
+探索相关领域
+Generative AI Model Updates and Trends
+Latest Trends in 3d Reconstruction
+Emerging Innovations in Imaging AI
+Assessing the Reliability of Generative AI
+How Generative AI Impacts Risk Assessment
+Enterprise-Ready Generative AI Solutions
+展开 
+浏览内容分类

@@ -1,0 +1,47 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1bu4caw/plink_formats_conversion_into_python_readable/
+Title: Plink formats conversion into python readable formats
+
+Content:
+Hi everyone ! So I have a problem and I can't find the solution anywhere on the internet.
+I want to convert .bed or ped or any similar plink format into csv for a machine learning project, I reviewed many articles that had similar ideas as what I want to do and (in the ones where the code was available) the data was already in csv or txt form, I tried to open my data (ped file) with pandas as a table but instead of 346 rows ~190k columns it reads it as 345rows and 2 columns . I tried using pyplink and it reads my .bed file just fine but I can't really do anything with it (if you know how to use it effectively please tell me) . I am absolutely desperate this is the most basic step and I am failing miserably to do it please please please help
+(my supervisor never worked with gwas data before so I can't even ask him I really am on my own here)
+
+Comments:
+- As far as i remeber the ped file should also be associated with a .fam file, right? I remeber that it wad possible to read them with pandas. Did you set the correct seperators?
+
+What kind of format do you need at the end? And are you familiar with programming? Doing ML requires quite a solid skill of data wrangling.
+- None of those files should have 190k columns... how did you generate the .bed or .ped files you have? You should be familiar with the content of each file and each file format before trying to manipulate them. Look at the plink manual pages for info about the .ped format, and UCSC has resources describing the bed format.  Both .ped and .bed are tab delimited text files, so you should be able to easily swap the tabs for commas with a sed command if you absolutely need them to be csvs.
+- Are you able to run plink directly? The `--recode` command can convert the data into text files with different formats. I would look through this page and pick the format that you are the most comfortable working with: https://www.cog-genomics.org/plink/1.9/data#recode
+- I haven't tried to read the .fam file but the .map file opens perfectly normally with pandas read_table, I assumed since the map file opened correctly with that command without me setting any parameters the ped file would be the same because it's similarly formatted I believe, and I also tried setting the separator as /t and it gave me 345 rows and 2 columns for some reason. I need each sample's SNPs and phenotype in the same file which is why I'm trying with ped files and not the other formats.
+I would like csv ideally just because it's easier to work with (there are a lot of resources available to correct my mistakes as it's the most used in ML).
+I have the python basics but it's the first time I do ML.
+- Just to clarify, bed files can refer to both [Browser Extensible Data](https://genome.ucsc.edu/FAQ/FAQformat.html#format1) and [binary PED files](https://zzz.bwh.harvard.edu/plink/binary.shtml), which are used by PLINK. Given that OP is talking about using pyplink, I'm guessing that they're talking about the latter, in which case your suggestions probably aren't applicable.
+
+/u/waterlover3, it'll probably be easier to convert your plink files to vcfs, then use something like pysam to parse it.
+- The ped file can have 190k columns though because of the SNPs, it goes FID then individuals ID, parental something (mine are all zeroes) then sex and phenotype then 500k SNPs as sequenced by an affymetrix chip (I am using the Webster et al. 2009 data on late onset alzheimer's disease) and after QC there are around 190k SNPs left thus the number of columns and the rows are the samples, what do you mean by sed command if you don't mind explaining ? (I'm not really that proficient at programming or English for that matter)
+- I did recode it this morning to .raw file with --recode A , and it worked better (it recognized the correct number of rows and columns but all the columns contain NAn except the first one which contains all the information ) I'll still try with more RAM as was suggested and hopefully it'll work this time, thanks for the suggestion!
+- Understood. Mind sharing a link to the data, especially the ped file? I can have a look tommorow morning (10pm. Here)
+- I thought vcf files contained only information about the SNPs but after seeing your comment I checked and it does have info about the samples I'll try and see how to work it out if the .raw with bigger RAM option doesn't work out, I wasn't going to consider vcfs at all thanks a lot for your comment!
+- Sorry I'm less familiar with .ped but work with .bed files all the time. sed is a basic unix command, which stands for stream editor. Get more info about it by reading the manual page here: [https://www.gnu.org/software/sed/manual/sed.html](https://www.gnu.org/software/sed/manual/sed.html) . You can use it like this in the command line to change a bed file to a csv: 
+
+    sed 's/\t/,/g' input_file.bed > output_file.csv
+- I can send you the original data before QC, I haven't put my data online yet, is that okay ? The also have a ped file it's just bigger than mine (double size mine is ~250mb ) but it should be the same principle
+- Okay I'm on windows but I'll try and see if there's an equivalent for it, thank you for taking the time to answer !
+- Sure, a link is fine. I think the webster et al data was open sourced? I somwhen made a tutorial for students with that data, i believe at least xD
+- You can use re.sub() in python
+- Yes it's where I got the data in the first place lol, here's the link : https://drive.google.com/drive/u/0/mobile/folders/1ud5F9WN9Xx3oXIkb5xIg1b_zz1nzp3IR 
+And I haven't said it but thanks for taking the time to answer me
+- I'll try that yes thank you so much (whether it works or not it's very nice of you )
+- pd.read_csv('adgwas.ped',sep='\t')
+
+works perfectly fine for me. I guess your bigger problem will be RAM requirements. It took more than 30GB to read that file in memory. You can process it chunkwise, if that is a problem for you.
+- This doesn't address the plink output directly, but you certainly don't need to change tabs to commas to read a bed in with pandas.
+
+Import pandas as pd
+
+df = pd.read_csv("path/to/file.bed", sep="\t", header=None)
+
+You can also use pyranges or pybedtools, each of which have built-in bed parsers
+- Currently I'm working on a recoded file .raw because I thought the problem might be the absence of header line in ped files, but since it worked for you then it's not the problem, I'm working in Google collab right now with 12Gb of RAM but the file is only 130 ish Mb,  I'll try with another laptop and see. Thank you so much for your help I appreciate it immensely
+- It can't decode it, I'm not sure it can read this type of binary files :(

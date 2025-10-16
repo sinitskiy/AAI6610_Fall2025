@@ -1,0 +1,25 @@
+URL: https://www.linkedin.com/posts/afcastelletti_downscaling-bias-correction-and-spatial-activity-7250126356120780800-1tLc
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Andrea Castelletti的动态
+Andrea Castelletti
+
+Professor at Politecnico di Milano - TCT Director @EIEE-CMCC - Chair of the PhD programme in Science, Technology, and Policy for Sustainable Change - Head of Environmental Intelligence for Global Change
+
+12 个月  已编辑
+
+We just published a paper on using AI/ML to correct ERA5 extreme rainfall data. led by Guido Ascenso with Andrea Ficchì Matteo Giuliani and Enrico Scoccimarro as part of CLINT - Climate Intelligence 
+
+Abstract
+Hydrological models that are used to analyse flood risk induced by tropical cyclones often input ERA5 reanalysis data. However, ERA5 precipitation has large systematic biases, especially over heavy precipitation events like Tropical Cyclones, compromising its usefulness in such scenarios. Few studies to date have performed bias correction of ERA5 precipitation and none of them for extreme rainfall induced by tropical cyclones. Additionally, most existing works on bias adjustment focus on adjusting pixel-wise metrics of bias, such as the Mean Squared Error (MSE). However, it is equally important to ensure that the rainfall peaks are correctly located within the rainfall maps, especially if these maps are then used as input to hydrological models. In this paper, we describe a novel machine learning model that addresses both gaps, RA-U, based on the popular U-Net model. The key novelty of RA-U is its loss function, the compound loss, which optimizes both a pixel-wise bias metric (the MSE) and a spatial verification metric (a modified version of the Fractions Skill Score). Our results show how RA-U improves ERA5 in almost all metrics by 3-28%—more than the other models we used for comparison which actually worsen the total rainfall bias of ERA5—at the cost of a slightly increased (3%) error on the magnitude of the peak. We analyse the behaviour of RA-U by visualizing accumulated maps of four particularly wet tropical cyclones and by dividing our data according to the 

@@ -1,0 +1,10 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/9qq57i/r_safe_reinforcement_learning_with_model/
+Title: [R] Safe Reinforcement Learning with Model Uncertainty Estimates
+
+Content:
+
+
+Comments:
+- This is very interesting. Are you able to share the code?
+- Thanks, the code is not publicly released yet. But feel free to email me and we will figure something out.

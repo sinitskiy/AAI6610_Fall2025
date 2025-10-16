@@ -1,0 +1,27 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1menj0v/best_ml_algorithm_for_detecting_insects_in_camera/
+Title: Best ML algorithm for detecting insects in camera trap images?
+
+Content:
+Hi friends,
+
+What is the best machine learning algorithm for detecting insects (like crickets) from camera trap imagery with the highest accuracy? Ideally, the model should also be able to detect count, sex, and size class from the images. 
+
+Any recommendations on algorithms, training approaches and softwares would be greatly appreciated!
+
+Comments:
+- Start by getting training data
+- As someone who uses CV almost exclusively for wildlife detection, unless you very high resolution high contrast images, that will be tough. Especially for something like the sex of various insects. You’ll have to tackle size class separately. Normal object detection models can just give relative size, you’ll have to convert relative to actual
+- Are your pictures already zoomed in like this on the insects?
+- Before you go down the rabbit hole of fine-tuning, i’d throw your images into [coreviz](https://coreviz.io/) and try to apply one of the public models that other people already trained (select Custom Roboflow Model) and see if it identifies things correctly.
+- I have the dataset! 
+Which software/ algorithm will be best to start with ?
+- Then background subtraction to get the candidate spots in the image
+- [YOLO ](https://www.ultralytics.com/) is your best bet. Fast to train and very decent results
+- I would suggest using SAM2 to label the data you need. That way you get boxes and masks in one go. For inference, I would use maskrcnn with a chonky backbone like resnet50 or 101 because of the level of detail here. Note that YOLO requires a license to use commercially but is easier to train and run inference with.
+- Which software/ algorithm will be best to start with ?
+- There's license free YOLO's out there.  Ultralytics can suck it.
+- I don't think this is a strength with SAM2 on its own?
+- I mean when using a fixed camera, by subtracting a frame taken a minute ago from the current frame, will highlight the places in the image where anything changed. There in the frame might be a bug.  With candidate patches is easier to focus your image recognition/classification only on small, relevant patches of a potentially high resolution images.
+
+Google's AI /search gives a reasonable summary for "background subtraction"

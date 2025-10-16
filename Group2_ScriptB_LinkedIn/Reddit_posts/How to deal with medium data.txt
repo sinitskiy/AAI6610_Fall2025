@@ -1,0 +1,109 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1js1sgj/how_to_deal_with_medium_data/
+Title: How to deal with medium data
+
+Content:
+I recently had a problem at work that dealt with what I’m coining as “medium” data which is not big data where traditional machine learning greatly helps and it wasn’t small data where you can really only do basic counts and means and medians. What I’m referring to is data that likely has a relationship that can be studied based on expertise but falls short in any sort of regression due to overfitting and not having the true variability based on the understood data.
+
+The way I addressed this was I used elasticity as a predictor. Where I divided the percentage change of each of my inputs by my percentage change of my output which allowed me to calculate this elasticity constant then used that constant to somewhat predict what I would predict the change in output would be since I know what the changes in input would be. I make it very clear to stakeholders that this method should be used with a heavy grain of salt and to understand that this approach is more about seeing the impact across the entire dataset and changing inputs in specific places will have larger effects because a large effect was observed in the past.
+
+So I ask what are some other methods to deal with medium sized data where there is likely a relationship but your ML methods result in overfitting and not being robust enough?
+
+Edit: The main question I am asking is how have you all used basic statistics to incorporate them into a useful model/product that stakeholders can use for data backed decisions?
+
+Comments:
+- By ML what do you mean? Have you tried linear regressions?
+
+How well is the domain understood? You could build a Bayesian model and help the low data size with a properly specified prior.
+- How do you define "medium" data?
+
+
+I used xgboost on datasets that had only a few thousand rows and it worked just fine..
+
+
+Just make sure you do k-fold cross validation to check for potential overfittig...
+
+
+Plus: have a look at regularization if you're afraid of overfitting
+- If you are not trying to build a model to forecast, why not go for a simple linear regression model? 
+
+Your model doesn't have to fit the data perfectly to have statistically significant coefficients. If you want to calculate elasticity just take the log of your independant and dependant variable.
+- I can’t answer your actual question, but what you’ve done sounds sensible and pragmatic in the circumstances. The best model is usually no model!
+- Data augmentation? Synthetic data? Also what do you mean by traditional ml models? The data that you are talking about is good enough for most ml classification and regression models? Are you talking about training a dl model on this data?
+- I work in manufacturing where data is hard to get and sample sizes are arbitrarily small. 
+
+I recently needed to get descriptive stats of historical data (n=400) and compare a small batch run (n=72) for process validation to the historical. 
+
+I’ve had to build my historical data over the past several months, and even n=400 is small relative to the volume of production. It follows a beta distribution. Small batch runs for this product characteristic, however, are often left skewed. 
+
+The company I’m currently with will calculate an average, min, and max for every attribute and make big process and product design decisions from it. They don’t understand what a distribution is. 
+
+Anyway, when I have enough data, I go with transformations or nonparametric methods…I’ll report descriptive stats appropriate to whatever method I use and state it in my reports and presentations. In this case, I couldn’t use either option. I went with modeling using MCMC. I modeled both the historical and small batch run, then ran a comparison (suspected my small batch run was statistically different). 
+
+Most people in my industry have never seen Bayesian methods, so they don’t trust it. Educating stakeholders isn’t an option. I translate the Bayesian terms into frequentist terms for their benefit. For example, I don’t say “credible interval,” I just say “interval” and let everyone understand it as a confidence interval. 
+
+I also don’t bother reporting on my MCMC model diagnostics. R-hat, energy change, and convergence means nothing to the stakeholders. But they understand a p-value = 1.000 is meaningful, so I reported that along with the descriptive stats of the small batch run after MCMC. 
+
+Not sure if MCMC is a viable option for you, but it’s something in my statistics toolbox I use often for small and medium sized datasets. Even if the stakeholders don’t understand what I’m doing, I present it in terms they understand and it makes me feel more confident when they make decisions based on the information. Too many times I’ve watched an engineer calculate an average, min, and max on n=30 to establish product and process specifications, only to find they produce garbage a third of the time.
+- I think you are safe. If you use XGBoost with 4 variables and 200 records, you are generally safe from the curse of dimensionality, but you should still perform cross-validation to ensure that the model generalizes well. Not sure what you are defining as medium data. Big data to most means terabytes or more.
+- I deal with ‘medium’ data a decent amount in biotech where samples are expensive so you make them count as best as possible. Is generating more data an option, ideally with DOE methodology? If there really is some trend that’s being missed, it could just not be in the dataset and it won’t show up no matter how you tune the model.
+
+If you think the dataset represents the trend already and the algorithms just haven’t caught it then keep tuning hyper parameters. With that amount of data, you can keep iterating on your model often
+- The best way IMO is to inject bias in your model with your intuition/ domain knowledge.
+
+For example select the variables manually, or do some feature engineering. Or force some variable to have positive coefficient.
+
+This will help regulate your model.
+
+Some problem you can also try semi supervised method.
+- I believe someone else has posted this, but using regression would be a good approach to determine which factors can predict a particular outcome. During my PhD, I had a dataset that wasn’t too large. Using regression is good. It’s much simpler than using other supervised or unsupervised ML models.
+
+Good luck!
+- Augment your dataset with synthetic or proxy data from comparable industries or public datasets. Especially when you’re missing variability in your real data, bringing in well-matched external data can help you simulate more realistic behavior or at least test your assumptions across a wider range.
+- What was the objective of the analysis? Was it to build a predictive model or can just showing basic stats work in driving  a data based decision making?
+
+That will be a helpful context to have before answering this question.
+- Before you jump into linear regression (or another model) it's important to understand your data and if your data fits the assumptions of linear modeling.  I apologize if this information isn't new to you, but I don't see anyone else here commenting on this so I want to point it out.
+
+Are the observations in your dataset independent?  If not, linear regression isn't appropriate.  If your data is a time series you will probably want to use a time series.  If your data has groups of observations that might not be independent, you might want to use a linear mixed model.
+Does your response variable follow a normal distribution?  If not, linear regression isn't appropriate.  Generalized linear models work well for these.
+Does all of your observations have equal "weight"?  If not, there are techniques to address this.
+
+Once you've answered these questions there are other considerations.
+Many ML models require that all of the predictors are on roughly the same scale (tree based models are the only exceptions that I'm aware of to this rule).
+Categorical variables need to be transformed into dummy variables and these should not be scaled.
+If you're doing classification on a highly imbalanced data set you can use different sampling techniques to improve recall.
+
+
+Linear regression really doesn't need "big data" to perform decently.  Sure, having more data will increase the confidence in your predictions.  But it probably won't change the predictions all that much.  You said in another comment that the predictions from your regression model didn't make much sense.  I really don't see any reason why adding more data would suddenly make the predictions make sense.  It's more likely another issue.
+- Yes, by ML I mean machine learning, the assumption that the data is linear was not realistic, I tried random forest, ols, gradient boosted, etc. the main issue is that as an expert on this data the predictions were no where near realistic, because there wasn’t enough data to capture true variability, it was kind of like the idea of building a classification model and if your data shows that 90% should be classified into group A, then a model that assumes everything should be classified into group A will be 90% correct however that is not realistic.
+- Oh few thousand is way over my definition, I’m talking like 100-500. I tried regularization methods which showed marginal improvement but it still just didn’t make sense because of my data. This mostly happens at organizations that are building their data science capabilities but still hire data scientists who need to produce actionable insights and “your data is shit and there isn’t much to do here” isn’t a good answer.
+
+Edit to add context: I am mainly talking about how you can give refined statistics to stakeholders calculating distribution, standard deviation and all of that but then there eyes glaze over, if they ask for a product that actually helps them make data based decisions how do you use some of these basic statistics and incorporate them into a simple model when the relationship may not be linear or well defined.
+- I am trying to forecast but couldn’t because the model was making errant predictions which I know are errant because of my background with the data.
+- They are past measurements so generating new data is not much of an option, it’s not necessarily trying to identify a trend it is more trying to understand how the inputs I have lead to the outputs which may not be linear.
+- The linear in lineal regression is referring to the parameter, not the variables. You could transform the variables.
+- I think they got that, it's just that machine learning is a really broad concept by now.
+
+You could look into k-fold-cross-validation to avoid over fitting, if that's the issue.
+
+Are you trying to make a classifier for events that are rare in your dataset?
+- You can actually estimate elasticities using OLS by fitting a log-log model. Just take the natural log of your dependent and independent variables:
+
+
+log(y) = β0 + β1*log(x1) + β2*log(x2) + ... + ε
+
+
+The coefficients (β1, β2, ...) are the elasticities. They show the % change in output for a 1% change in each input.
+
+
+This is a more robust way to get at what you were doing manually with percent changes. Just make sure all variables are positive before applying the log.
+
+
+If you have a lot of columns you can use lasso or ridge regression for regularization. With lasso the coefficients are easier to interpret tho.
+
+
+All of this also works with cross validation.
+
+
+Plus: OLS is perfect for the medium sized data you are talking about

@@ -1,0 +1,134 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cjdhdz/put_my_foot_down_and_refused_to_go_ahead_with/
+Title: Put my foot down and refused to go ahead with what would amount to almost 8 hours of interviews for a senior data scientist position.
+
+Content:
+I initially was  going to have a quick call (20 minutes) with a recruiter that ended up taking almost 45 minutes where I feel I was grilled enough on my background, it wasn't just do you know, x,y and z? They delved much deeper, which is fine, I suppose it helps figuring out right away if the candidate has at least the specific knowledge before they try to test it. But after that the recruiter stated that the interview process was over several days, as they like to go quick:
+
+ - 1.5 hours long interview with the HM
+ - 1.5 hours long interview focusing on coding + general data science.
+ - 1.5 hours long interview focusing on machine learning.
+ - 1.5 hour long interview with the entire team, general aspect questions.
+ - 1 hour long interview with the VP of data science.
+
+
+So between the 7 hours and the initial 45 minutes, I am expected to miss the equivalent of an entire day of work, so they can ask me unclear questions or on issues unrelated to work.
+
+
+I told the recruiter, I need to bow out and this is too much. It would feel like I insulted the entire lineage of the company after I said that. They started talking about how that's their process, and it is the same for all companies to require this sort of vetting. Which to be clear, there is no managing people, I am still an individual recruiter. I just told them that's unreasonable, and good luck finding a candidate.
+
+
+The recruiter wasn't unprofessional, but they were definitely surprised that someone said no to this hiring process.
+
+Comments:
+- I've also said no to an organization's extensive interview process and they were similarly baffled.
+
+If it is a position I am very interested in due to the work, pay, etc... I will jump through some hoops... But there IS a limit.
+
+Edit:
+
+To be fair, for my most recent role, I probably spent around 9 hours in total during the interview process across a few weeks.
+
+- Screening call with recruiter ~ 20 mins
+- Live coding + general DS topics interview ~ 40 mins
+- Take-home Case Study ~ 4 hours
+- Case Study review ~ 1 hour
+- Informal Dinner with management ~ 2 hours
+- Informal introduction to second C-suite exec ~ 20 mins
+- Multiple short touch bases with recruiter throughout process ~ 20 mins total
+
+The only reason I was willing to jump through these hoops was because the position genuinely seemed like a fantastic fit for me and the pay was a significant increase from my last job (which I was growing more discontented with every day). And so far... I love my new position and am very happy I was willing to put in the effort.
+- I just did:
+
+0.5 hour initial interview
+
+Take home project that probably took 2-3 hours
+
+4 back-to-back 0.5 hour interviews
+
+1 hour in person interview to review take home project
+
+So 6ish hours for senior/lead position. Was told they’d have a decision today so I guess we’ll see 😬
+
+EDIT: Didn’t get the job but did get an offer for a position I did 1 30 minute interview for 🥴 so I guess the moral of the story is be more like OP.
+
+EDIT 2: Appreciate everyone’s support ❤️
+- I recall a Bloomberg recruiter asking me if I could commit to an interview process with 7 rounds. Not sure if their process is the same, but I was honest and said I didn't have that kinda time. For me, the problem is not so much the time/meetings as it is the maintained stress of the whole ordeal.
+- flowery aloof ad hoc narrow crowd chief gold tan chunky caption
+
+ *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*
+- i mean this seems pretty typical now, the amount of time spent on take home tests as well. i was asked to spend around 5 hours on the challenge alone. It's bullshit when we're considered to have online portfolios and be data blogging as well. Let's unionize!! haha
+- It is too much. Interviews firstly should be done in a day or two at the most and not more than 4-5 hours. Its silly to expect people to be sharp for longer. If they have you giving interviews over and over again, its just that they aren’t super confident themselves.
+- We’ve hired a lot of Data Scientists, and it’s typically 4 rounds, 5 at most if it’s a very senior role.
+
+1. Recruiter - 30 mins
+2. Live coding round - 30 mins - 1hr
+3. Data Science/ML concepts - 1 hr
+4. Team fit assessment - 1 hr 
+
+Based on a candidate’s experience and these conversations, a good manager should be able to determine if the person is a good fit for their role. 
+
+It’s more important to understand if a candidate has the willingness to learn something and can take constructive feedback, rather than testing their knowledge on every single concept under the sun!
+- 1.5 hours for an individual interview is a lot, but all of the positions I apply for (as a PhD scientist) require about 8 hours total (this is in biotech).  I usually have 1-2 hours of screening interviews, a 1-hour presentation, and 4-6 hours of onsite interviews (technical/culture/other).
+- If you’re a good data scientist and know your domain well, you can pick out who can do the job  in the first 30 minutes of all call and you can see how good their skills are with a take home then you can let the team interview them to get other opinions. 
+
+Anything more tells me one thing: leadership got to that point by schmoozing instead of working to understand their product.
+
+Too many ML oriented companies have higher ups who just don’t understand ML and Adv stats, like at all. So when they hire, they lack a true understanding of what’s needed for the job and put you through stupid hoops and throw buzzwords around.
+- What was the company?
+- My general rule is that I don’t invest in you if you don’t invest in me. I’m okay with 8 hours of interviews if they are with me. I’ll do LC problems all day long if there is someone online with me. What I won’t do is one way interviews or “take home” coding tests.
+- All of my jobs have been either half day or full day interviews. As long as they don't drag it into multiple days with multiple stages, I tolerate it. 
+
+Are full day interviews really that uncommon for senior roles? How long were your interviews for prior jobs?
+- Meta’s final interview round—the onsite—is around 6ish hours. The interviews are back to back too with only a small break in between.
+- Kudos for doing that. Takes some courage.
+
+To be honest, this approach of theirs also tells you a lot about the internal company dynamics. Apparently, this is an organisation which is extremely risk averse as a whole. So, to accommodate for their own psychological anxiety to possibly hire the wrong candidate they are willing to sacrifice so many hours not only of yours but also of their time.
+
+Just think about it like this: If an entire team of only 4 people (might have been more) is interviewing you for 1.5 hours, then this equates to already 6 work hours spent. If you sum up all the other hours, then you end up at a lot more hours not only on your side but also on their side. So, the only way to explain their willingness to put so much effort into interviewing you is that they are not just a little but extremely afraid collectively that they could catch the wrong candidate. In psychodynamic organisational studies lingo this would be probably be called a "paranoid-schizoid organisation" that is a fancy term for: dysfunctional.
+
+Another view - which could be even worse - they do not at all put any value in their own hours of work time. Which would imply that you'd end up in an extremely stressful organisation that demands constant overtime from you because a single work hour of any employee is essentially valued at close to zero.
+
+Meaning: You probably would not have wanted to work there even if they made you a job offer.
+
+(Once you studied organisational dynamics you cannot help unsee the dysfunctionalities in so many organisations.)
+- Of course I don’t have much experience so I have to be a pushover. This recently happened to me when I was under consideration for a senior data scientist role. I dropped everything for weeks to get ready each stage of this giant interview process and I didn’t get the job. I just ended up falling severely behind on all my schoolwork and outside responsibilities.
+
+Good for you. I look forward to the day where I can take charge in the hiring situation.
+- Good on you.
+
+
+Some place wanted to give me a take home assignment, and I wasn't quite able to say an outright no, instead it was "okay fine, but give me a heads up when you're planning to send it because I have a life and am busy"
+- I declined to schedule a 6th round interview for a tech job. I get that you need to be thorough, but if you haven't figured it out by now you're too dumb/inept/indecisive to work for.
+- I think some people in this post are vastly overestimating the importance of hours spent in an interview.
+
+Breakdown of interview time for various positions I’ve held:
+
+First DS position: one hour with HM. One hour with another director. 30 minutes with a peer. 15 minutes with the CEO. Another hour with the HM, super casual.
+
+Total time: 3.75 hours 
+
+First senior DS job: an hour with the HM one day and then in person interview with them plus a sr DS for an hour. Another panel interview either a director and sr analyst for an hour. 
+
+Total time: 3 hours
+
+First lead DS job: an hour with the HM. Another hour round table. 30 minutes with the VP of the department. 30 minutes wrap up with the HM, super casual.
+
+Take home test included: two hours spent in pandas with a dataset that is completely relevant to my field. An hour to put together a presentation of several slides.
+
+Total time: 6 hours (3 spent doing the take homework).
+
+Director level position: hour with the HM. Two 45 minutes with executives. One hour with a peer director. 30 minute wrap up with the HM, super casual.
+
+Total time: 4 hours.
+
+Too many hours spread across too many stakeholders is usually a bad signal in my opinion. And there’s many reasons why some teams will want to drag out the process (probably were burnt before). But in my experience, I don’t believe it should be standard as after a certain point it’s all diminishing returns and wasted time (on both sides).
+ 
+As a HM now, I’ve implemented the same interview process as I’ve gone through and it still works. Obviously mileage will vary for everyone but I implore some of you to rethink your own processes.
+- Been there, done that. Feels like crap if you don't get the job, only feels a little better if you do. However, I do think about two hours of interviews and about 2 hours of take home work is understandable.
+- Don't get me wrong, that is A LOT. But if they were doing it all in one day, pay for food and travel, and acknowledgement that this 
+was the final set of interviews before an offer and not an entry level position... this wouldn't seem off for me. I've been in these types of interview processes and involved with interviewing others with this process and is pretty standard for when you are hiring for a high salary position you expect that person to be in for the next 5/10/15+ years.  From an institutional background, some positions are too big of an investment and too influential to the outcome of your day-to-day that they require much more intensive interview processes.
+
+Now granted I don't know anything about the company, the position, or your personal ambitions. But this type of entire day interview process is more common for higher end positions than you may realize. And typically an indicator that the company is invested in getting the right fit.  It also gives you an opportunity to see if you feel it is a good fit for you as well.
+
+To each their own. Just wanted to provide a devils advocate that as much as it sucks, sometimes to find a good position you like, you'll have to deal with hiring processes like this.

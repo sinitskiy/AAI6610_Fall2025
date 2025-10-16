@@ -1,0 +1,56 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/140pz2s/help_on_installation_of_gemini/
+Title: Help on installation of GEMINi
+
+Content:
+Hi there,
+I am trying to install GEMINI for genetic variation on my local machine but even after multiple attempt to solve it I am unable resolve it. Dow anyone have any idea?
+
+it initially says:
+The environment is inconsistent, please check the package plan carefully
+The following packages are causing the inconsistency:
+/
+  - conda-forge/noarch::flask==2.3.2=pyhd8ed1ab_0
+  - conda-forge/noarch::huggingface_hub==0.15.1=pyhd8ed1ab_0
+  - conda-forge/noarch::ipython==8.14.0=pyh41d4057_0
+  - defaults/linux-64::conda-build==3.24.0=py310h06a4308_0
+  - conda-forge/noarch::requests-toolbelt==1.0.0=pyhd8ed1ab_0
+  - defaults/linux-64::transformers==4.24.0=py310h06a4308_0
+  - conda-forge/noarch::ipykernel==6.23.1=pyh210e3f2_0
+  - conda-forge/noarch::panel==0.14.0=pyhd8ed1ab_0
+  - defaults/noarch::conda-token==0.4.0=pyhd3eb1b0_0
+  - conda-forge/linux-64::matplotlib==3.7.1=py310hff52083_0
+  - defaults/linux-64::anaconda-navigator==2.4.1=py310h06a4308_0
+  - conda-forge/noarch::urllib3==2.0.2=pyhd8ed1ab_0
+  - defaults/linux-64::anaconda==custom=py310_1
+  - defaults/linux-64::scipy==1.10.1=py310hd5efca6_0
+  - conda-forge/noarch::imbalanced-learn==0.10.1=pyhd8ed1ab_0
+  - defaults/linux-64::qt-webengine==5.15.9=hd2b0992_4
+  - conda-forge/noarch::cookiecutter==2.1.1=pyh6c4a22f_0
+  - defaults/linux-64::_anaconda_depends==2023.03=py310_0
+  - conda-forge/linux-64::scikit-image==0.20.0=py310h9b08913_1
+
+ and give a long list after that gets stuck on
+
+failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: / 
+
+and ends with some error
+
+Comments:
+- Jus use conda?
+
+https://anaconda.org/bioconda/gemini
+- GEMINI might not be compatible with the tools you already have installed in your current conda env. Probably you should try making a new env and installing the GEMINI in there. See [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for details on creating envs and installing tools in them
+- What's your error? We'll need more information to help at all.
+- Thank you for reply. I have done this, but the error still persists. I have updated my post with more details please give it a look.
+- Thank you. I have tried that too but still error continued.
+- Thank you for your reply. I have uploaded the post with more details about error please give it a look.
+- Looks like they’ve broken the install at some point. If you check the GitHub for Gemini it recommends you replace it with slivar https://github.com/brentp/slivar
+
+Don’t know if it will do what you needed Gemini for though. I largely work with bacteria and sys admin stuff lol
+- As another user mentioned, creating a new conda env is likely a workaround, however have you tried other stack overflow answers like [this](https://stackoverflow.com/questions/55527354/the-environment-is-inconsistent-please-check-the-package-plan-carefully)?
+- Thank you so much. I am new to this I will try to work around with slivar and hopefully everything goes perfectly.

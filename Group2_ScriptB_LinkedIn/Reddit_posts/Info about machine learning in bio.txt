@@ -1,0 +1,9 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/mlnawl/info_about_machine_learning_in_bio/
+Title: Info about machine learning in bio
+
+Content:
+Hello! I want to start learning basic stuff about machine learning in biology. Any article or book you recommend? Or any other source of information?
+
+Comments:
+- read all the posts in r/bioinformatics, this quesiton gets asked a lot there

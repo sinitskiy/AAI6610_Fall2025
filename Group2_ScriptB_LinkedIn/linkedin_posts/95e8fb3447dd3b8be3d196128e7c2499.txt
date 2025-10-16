@@ -1,0 +1,86 @@
+URL: https://www.linkedin.com/posts/javier-antoran_neuralnetworks-data-research-activity-6894066087239987201-CSUP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Javier Antorán的动态
+Javier Antorán
+
+Co-founder and CEO at Angstrom AI
+
+3 年
+
+Imagine a world where all of your neural network hyperparameters are set automatically to the values that generalise best, without the need for held-out cross-validation data! 
+
+You can keep using a held-out set to tune hyperparameters or you can take the Bayesian pill and see how deep the rabbit hole goes. Watch my talk on model selection by adapting the linearised Laplace model evidence for modern neural networks at the symposium for advances in approximate Bayesian inference tomorrow Feb 1st at 18:40 GMT (https://lnkd.in/eKBhAhux).
+
+The full paper, titled "Linearised Laplace Inference in Networks with Normalisation Layers and the Neural g-Prior" is available at https://lnkd.in/eEJ2Q_Bs.
+
+
+
+#neuralnetworks #data #research #bayesian #statistics #deeplearning #ai #artificialintelligence #uncertainty
+
+93
+1 条评论
+赞
+评论
+分享
+Prayag Tiwari
+
+Associate Professor in Machine Learning
+
+3 年
+
+Very interesting paper Javier Antorán
+
+赞
+回复
+
+要查看或添加评论，请登录
+
+3,491 位关注者
+
+44 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

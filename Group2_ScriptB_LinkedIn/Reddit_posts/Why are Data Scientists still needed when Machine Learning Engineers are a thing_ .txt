@@ -1,0 +1,65 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1c50iuu/why_are_data_scientists_still_needed_when_machine/
+Title: Why are Data Scientists still needed when Machine Learning Engineers are a thing? 
+
+Content:
+I've worked in a company in which there were different teams for DS and MLE with very distinct responsibilities. DS were responsible for talking with business stakeholders, understanding the project goals, talking with data engineers and analysts to assess data availability, do the whole data science project cycle and then deploying the model as a flask API using infrastructure built by the MLE team.
+
+However, I have seen more and more MLE jobs in which their responsibilities are much broader than that. Some of them expect MLEs to actually build the model themselves. 
+
+I might be wrong here but it seems like the average ML Engineer could do everything that is expected from an average data science position, but an average data Scientist would really struggle at an average ML Engineer position. 
+
+Comments:
+- I think the answer is that "data scientist" and " machine learning engineer" do not have specific definitions. They are simply labels that companies can use how they want. There will always be variation in job title as it relates to specific job duties across different companies.
+- you're gonna catch a lot of shit for this post, but in some ways, it (what is in your title) is a question worth asking. i'm going to post my thoughts.
+
+1. mles are, first and foremost, \*software engineers\*; they are not necessarily trained to have specific statistical or analytic backgrounds that are typical pre-requisites for data scientists. organizations do not necessarily need more engineers but may have a need for data scientists. note that this somewhat presupposes a pay discrepancy between the two (which i think does exist)
+
+  
+2. related to the above: not all data science questions involve machine learning. in fact, most do not, at least any machine learning problem that would benefit from the expertise of an mle. at my prior job, i would say 80% of my time was spent with logistic regression as the typical model.
+
+  
+3. you're right, there is definitely some blending of roles. but it's always been like that. i've definitely had to build my share of data pipelines and monitoring s/w that would be outside of what the typical ds from way back would have had to do.
+- I know a guy who was hired as a data analyst and the company expected him to build and maintain machine learning pipelines. Titles are goofy.
+- Data scientists speced into math and being able to talk to people. If a MLE can do that on top of normal MLE stuff you don’t need a DS.  But that’s easier said than done so it makes sense to split the jobs.
+- The definition of Data Scientist has always been loose and the introduction of the term Machine Learning Engineer hasn’t lead to more clarity. You basically need to create job descriptions one by one and match people’s skills and experience to those jobs- knowing someone is/ was a data scientist or MLE just doesn’t tell you anything useful.
+- Job titles are made up. They aren't an expression of some kind of fundamental reality of how people and processes relate.
+
+In reality every company is a loose collection of an enormous number of decisions, processes, and systems, including those that define all of the former. If we could, we would just do everything as one person and not coordinate and split the pot in so many ways.
+
+But the reality is that no one has the mental bandwidth to understand, let alone do, all of the tasks, even if they have the aptitude to be able to do so. So we invented these concepts of delegation, problem decomposition, and accountability for specific deliverables.
+
+The person running the company looks at everything that needs to be done, splits it up, and delegates ownership of that scope to someone. They can split it however they want as long as the end result is that all of the things *they* are accountable for get done. Then each of those people can do the same, also splitting however they want, and with the same sole requirement that in doing so they deliver everything they are accountable for.
+
+We call those basically ad-hoc collections of tasks "jobs", and we loosely coordinate on what we call certain kinds of collections of tasks, as a "job title",  because labor is a market and it's useful in the same sense that product categories help businesses and consumers coordinate. But really every business is unique, as is every org structure, team, and job.
+
+If a company thinks they can combine more responsibilities together without too much additional cost then they will. In doing so, they make the supply of suitable labor that can do all of the tasks smaller and make the role more stressful and thus less desirable reducing demand for that role. That makes it harder than fill and maintain those seats. They can try to balance that with increased comp, cutting out other responsibilities, etc, or they might find that that equation doesn't balance out and it creates more friction in staffing than it is worth, and split the tasks into multiple job functions. Every company navigates this for themselves.
+
+Generally, the difference you're describing is going to be a loose split based on how well the person understands stats, business, production software, experimentation, etc. Getting someone that can do everything is hard.
+- I’m sure coming here and proclaiming that MLEs can do everything a DS does and more will prompt a well reasoned and rational discussion. This certainly won’t result in several comments getting downvoted into oblivion right?
+- A Machine Learning Engineer does exactly that. They are SWE who deploy ML. Depending on the task that may be all you need. DS is more analytical. How do we solve this problem? Maybe the answer is ML. Maybe the answer is something completely different. Should we release a new product? Should we expand our business to new locations? Answering these questions isn’t as simple as pushing data to an ML algo.
+- Data science is an umbrella term. I’m a data scientist but very little of my work is cranking out predictive models. I use lots of advanced techniques to clean my companies data and get insight that’s actually useful to solve a problem at hand. MLE’s are hyper focused on building and deploying models. There’s more to DS than building models, so it still deserves its own title.
+- The differentiation is the day to day responsibilities: data scientists tend to work directly with the data/ETL/analysis, machine learning engineers tend to work with the model training/deployment.
+
+**There is significant overlap in both of those tasks**, which is why "you don't need to know DS to be a MLE" is inaccurate, and knowing both makes you a better engineer. Of course, a lot of startups would prefer that one person does both to save on costs lolololol.
+- The field may evolve, doesn’t mean it’ll disappear
+- There are a million flavors of data scientist and many involve specialization in a topic that most MLEs wouldn’t know much about. So, for example, I work a lot on Operations Research problems and I’ve yet to meet an MLE who can interpret let alone define a proper and novel formulation for a math program for an OR problem. It’s not my specialty but I imagine it’s similar for experimentation, time series modeling, etc.
+- MLE typically don’t have a strong background in analysis and statistics. They also typically don’t like liaisoning with non-technical people on a daily basis.
+- I have known data scientists who handle the entire lifecycle including deployment, scaling, and maintenance. I've also known others who barely touched code.... Bottom line id don't think too much about it. DS and MLE are often used interchangeably and both definitions are too broad without any consistency amongst employers.
+- At my company DS are concerned with human understanding and decision making through causal inference, experimentation, statistical modelling and sizing. 
+
+MLEs don’t have this skill, they’re concerned with machine decisions which makes their role more narrow if more technical. MLEs are usually thinking in terms of their models and sometimes struggle to think how it connects to the bigger picture.
+- Data scientists are vital because they are specialists in understanding data from a broader perspective, including data cleansing, research, and interpretation. They are quite good at creating hypotheses and making perceptive observations. On the other hand, machine learning engineers focus more on using machine learning models in an efficient manner. ML engineers can expand upon the foundation laid by data scientists in their complementary responsibilities.
+- Why do we have accountants and finance
+- Because Data Scientists usually don't do machine learning. It's more about statistics.
+- In my experience, an average mid-career big-tech MLE will be expected to:
+
+  
+a) be able to program in Python, and ideally one other language, on-grade for software engineering roles in that org (ie, they should be hirable in a software engineering role at the same banding);
+
+b) be able to implement, train, and deploy a model from scratch direct from the literature in any major NN framework (with recourse to the documentation).
+
+c) be deeply knowledgeable in one other area (might be a scientific domain, might be deployment, might be CUDA debugging, web services, but *something*).
+
+This is a lot more of a programming role than I ever see advertised as "data science". Pure play DS roles tend to be either business support or data-collection/annotation/curation.
+- The travel agents stuck around as long as they could too.

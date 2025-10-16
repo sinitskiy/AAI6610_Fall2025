@@ -1,0 +1,51 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/18tlxjl/mlops_data_camp_course_thoughts/
+Title: MLOps data camp course thoughts?
+
+Content:
+New to MLOps. Was looking for a course which gives a good overview of machine learning engineering and the things I’d need to know on the software side. MLEs, What do you guys think about this data camp course as a good first start?
+
+https://www.datacamp.com/tracks/machine-learning-engineer
+
+Comments:
+- I have not taken the ML Engineer track, but I did take the Data Engineer track and it was laughably basic. It covered maybe 5% of what you'd need to know to do data engineering in the real world and didn't even cover material on their own "job-ready" Data Engineering cert exam. I'm assuming it would be the same for MLE. 
+
+I had a much better experience doing the Data Engineering Zoomcamp, which is free and they have a MLOps Zoomcamp. 
+
+https://github.com/DataTalksClub/mlops-zoomcamp
+- I don't think it's worth paying for any of these, you'll learn more by trying to implement a dummy project.
+- From my understanding, it’s a good starting point but in order for you to get a job, you need to be able to show you can do it with some projects under your belt. Even personal projects could work
+- I appreciate DataCamp for its dynamic approach to learning and practice, a method I haven't found anywhere else.
+- All of these courses and camps are worth pretty close to $0 (maybe less) if you are looking for them to help you find a job.
+
+If you already have a job in the field and are looking to skill up on something relevant, they might be more valuable.
+
+tl;dr MOOCs and camps are generally predatory and prey on the desperation of job seekers
+- Google Cloud Cerufication with Machine Learning Track is good
+- If its cheap id take it and apply to personal projects
+- Looks like it’s on sale till the end of the year, could be a good time to pick it up. What’s your existing experience with programming/python?
+- Why don’t you try to build an ml ops platform. Or an extension to a current platform. ML ops is not like linear algebra you don’t need someone to teach you
+- What about doing BSc in analytics?
+- I need 10 comment karma to post help !!!
+- as a fresh start, I will argue to be self-taught. There is a bunch of resources on the internet on MLOps. It's indeed a growing field and hasn't matured yet IMO.
+
+However, if you think the price is not an issue, go ahead. But, if you have high expectations, consider my advice. :)
+- Building an end to end project of your interest(doesn’t matter if it’s a simple project ) I feel is the best way to learn or getting started with MLOps
+- I have gotten great value out of watching end-to-end implementations of ML projects such as Krish Naiks videos (e.g. https://youtu.be/p1bfK8ZJgkE?si=aV-fOWeDvO8CLfpW). They follow good code quality and touches upon key ML engineering principles such as versioning, experiment tracking, reproducibility, CI/CD, etc.
+
+Would also recommend this one on Udemy:
+https://www.udemy.com/course/sustainable-and-scalable-machine-learning-project-development/
+
+Follow along these projects and implement everything yourself, but dont use the exact same dataset and use-case as they do to force yourself to think for yourself and make custom components.
+- It's trash
+- In my opinion, the biggest problem with DataCamp is they show you only the minimum of "How" to reach the following practicegoal. But way to little information on the "why / where and when" and the courses lacks of simple Backgroundinformation, e. g. what is a t-test, why is significance important and so on... 
+
+In my experience there are only a few courses on DC with a little more useful Backgroundinformation.
+
+Edit conclusion: without a proper formal education in a related field you can't compete with a real DS/MLE/SE only with DataCamp Certificates.
+- Thanks I’ll check this out.
+- Seconded. You should take something you trained or even something off the shelf & deploy it on a streamlit app or similar. From there you can implement CI/CD, migrate to FastAPI and a simple front end app that calls it, and start getting better at logging and reporting.
+
+FWIW, I did a bootcamp for DS and work as an MLE. My company (big) has software devs for our dev ops teams, which is not super uncommon and leaves the MLE to design solutions, build evaluations, train the model, implement endpoints, write tests, and do test deploys. I did not touch anything truly MLOps until I built my own platform for a smaller company, but with how robust GCP docs are anything is possible.
+- So what is useful  in preparing you for a job in data science?
+- Python/R for DS. Never done MLops before.

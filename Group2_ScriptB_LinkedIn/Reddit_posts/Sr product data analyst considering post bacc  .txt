@@ -1,0 +1,21 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1az574f/sr_product_data_analyst_considering_post_bacc/
+Title: Sr product data analyst considering post bacc  
+
+Content:
+Hi all. I am a product data analyst for an F100 with background in finance (studied economics and had +8 years of experience in financial roles), and after one year in my current role, I want to feel more well rounded and be ready for more challenging projects.
+I am considering a Data post bacc that the company would pay, but I have 2 options/tracks.
+One is mostly math oriented (Analysis, advanced calculus, advanced algebra, algorithms I-II and 3 applied courses that could be from the CS track) vs the other one that’s mostly pure core CS subjects.
+Would it be a better option long term, if I want to work on logistics/optimization/Operations research projects, to go with the first option and take the elective courses from the CS ones? Thinking Databases, Computer systems and distributed systems. I feel it may prepare me better for learning optimization and machine learning topics, but I am concerned it may be an overkill that costed me 2 years. 
+
+
+Comments:
+- For sure, masters is the way to fo
+- IMO for operations research work, you don’t need a lot of either of these. I did math undergrad and two years of a PhD before switching to materials science engineering. I took some CS and ML oriented courses throughout. My first job out of grad school was in operations research at a large chemical and specialty materials company.
+
+Most operations research problems in practice require you to be good at modeling, but you are rarely doing anything which is mathematically complex. There was a significant object oriented programming requirement to manage creating all the supply chain and manufacturing components which went into the optimization problems.
+
+I’d say CS with a program that specifically hits on data science, and if you really want to do OR specifically, try to take a class or two in the industrial engineering department related to optimization or simulation. But two years of experience just doing those problems would be way more beneficial than the school if you can self direct your study.
+- I think post baccs are less ideal. Check out Penn's MCIT / MSE-DS programs.
+- Why do you think that? MCIT Looks like a nice option, but it costs +30K, when this way I would be 100% covered.
+- Because a masters degree > a bachelor's degree. I didn't start getting interviews for staff level roles until I added a masters to my resume.

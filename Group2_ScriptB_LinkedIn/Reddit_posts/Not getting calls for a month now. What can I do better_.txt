@@ -1,0 +1,79 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1jl6otm/not_getting_calls_for_a_month_now_what_can_i_do/
+Title: Not getting calls for a month now. What can I do better?
+
+Content:
+What can I do better in this resume? I’ve also worked on more projects but I have only listed high impact projects in my experience. 
+
+Comments:
+- - Bullet points are too long in my opinion. Try to keep it 2 lines max and avoid having multiple sentences in one bullet. First bullet in Accenture is going to the fourth line which is wayyy too long.
+- I don’t see any use of summary section in resumes. Recruiters barely have time for this (I think)
+- Don’t see any use of technical skills or domain expertise section. One can tell your expertise through your bullet points. These sections just makes the resume dense.
+
+Again, this is what has worked for me.
+- Thank god you formatted it in a way that an ATS can read. I can’t tell from your resume where it’s blacked out but did you go to a foreign university? And if so are you on a visa? If that’s it you can bet you probably will be last on the list in this market irrelevant of anything else
+- Using “90% accuracy (MAPE = 0.1)” for a time series model like Prophet is misleading.
+
+Since I have seen someone actually using accuracy as a metric for regression/forecasting tasks this is a red flag for me.
+- You mentioned healthcare as one of your domain expertise but you didn’t include any language that a healthcare professional would understand… If a recruiter could understand everything you wrote then that recruiter would be working as a data scientist already. You should demonstrate strong communication and presentation skills instead of being too technical.
+- I’m a Senior DS at FAANG who reviews resumes and interviews candidates regularly and in my 60 second scan I had a hard time finding the relevant info. Greatly reduce the text and make the focus of each bullet the result of your actions, not the technical approach you used to solve the problem
+- Honestly, this person has 2 YoE at Accenture and isn't getting calls back I think people are delusional by nitpicking your resume. In a normal world you should be getting interviews on that fact alone. Have you tried working your professional network or asking former colleagues?
+- Some points here, hopefully you find them constructive:
+
+1. Check your capitalization, you have words mid sentence that shouldn't be capitalized and some whole things (client value creation, and leadership) which should have caps are missing it. This shows poor attention to detail, which would immediately make me pass on this - especially in today's market.  
+2. Someone mentioned before that this is dry. I agree. Your resume reads more like you just pasted your job description. It needs more of the "so what?" factor.  
+3. Continuing from previous points, you kind of just list tasks/projects and your have skills section have random buzzwords. Part of me is suspicious that you change that section, and only that section depending on the job you are applying for, or you don't tailor your resume to the job you are applying for based on the skill section alone.  
+4. You aren't entry level anymore, your experience should come first, skills should be after experience and education.  
+5. With 6 years of experience, you barely have 1 field of domain expertise. As a hiring manager, I'd call BS on that immediately. Ex. looks like you were on 1 pharma project w/ Accenture, but you have healthcare as a domain expertise.  First of all, pharma and healthcare aren't the same industry. More importantly, a single project doesn't give you domain expertise. Nix that section, it does more harm than good here.  
+6. Don't mention specific techniques (ex. Kaplan-Meier) unless they are on the JD - the first person to read your resume is hr. Even if it gets through hr, as a tech manager, this signals you might struggle communicating outside of the tech team.
+- \- Don't list statistics as a technical skill. It's a field of study, not a skill. It'd be like listing physics or computer science.
+
+\- Get rid of the entire section above Technical Skills. Nobody cares that you're passionate about building solutions with AI.
+
+\- You don't need to quantify everything just because that's what generic resume advice says. Nobody cares how accurate your model was. What did you model and why? That's what matters
+- You don't have anything related to collaboration, working with non technical stakeholders, business value, or how you resolved pain points for either internal or external stakeholders. 
+
+I read this as a super technical nerdy guy that hardly works to understand his stakeholders and is too above bread/butter data problems. 
+
+You sound like someone who tries to be clever rather than practical. 
+
+I wouldn't want you on my team based on this resume.
+- [https://www.manager-tools.com/2005/10/your-resume-stinks](https://www.manager-tools.com/2005/10/your-resume-stinks)
+
+Listen to this podcast episode, and then look at their resume template.
+- Take Mallows engineer off - doesn’t help. MLops needs good SWE skillset that you don’t have the experience for
+- Omg that looks dry.
+- Only one issue. In your opening line in your first experience block you mention that you mention that you worked on a legacy system. This is information no one needs to know and paints you as someone working on outdated tech whereas nothing could be further from the truth.
+- Which country are you in? If you are in the US, I don't think the issue is you resume(It looks fine to me). Nearly every employer is panicking about the future due to the behavior of the current admiration(trying to not get political here). Hopefully things will resolve themselves soon.
+- As I hiring manager I like to see numbers , both $ impact and value. This looks a bit generic , when hiring a data scientist or anyone I want to see if that person can understand the need, ask the right questions, not just code a model. Anyone can do that. What did the product achieved for the business?.l what was the gap?  From X to Y. Also, red flag for me is you move every 2-3 years so why should I hire you?
+- I'm going to be harsh here to be helpful.
+
+It looks like you have failed in every job you have done. Job hopping at 18 months with 2 lots of 2 year stints is not a great look, but you can sell it as being a positive thing if you are showing rapid advancement. But look at your job titles. You're 6 years in and your title is Data Scientist. It sounds like a junior position. And when people job hop for sideways moves it is usually because they jump before they are pushed.
+
+I'm not saying that this is what you are doing, but 3 jobs with junior looking titles and a CV that doesn't have anything business or commercially focused on it makes you sound like a waste of time.
+
+And again - not saying that is you, just saying how that's what your CV makes you come across as. Say why you did things more, and what you did less. Try to think of better job titles or an explanation of why you moved and why you are looking to move again. Good luck!
+- It’s a paper not a cv
+- Pretty much mostly lacking the soft skills section right after technical ones. You don't have any (or enough) magical keywords "creative thinking, collaboration, communication, blablablabla" so any automated HR system just  trashes your cv before any living being looks at it. Literally just keywords, not even justifications in cases from experience are needed for it.
+
+After you get past that stage, no HR drone is going to read so much text in experience section, bullet points only 🤷‍♂️. Unless you somehow bypass them and reach the tech lead, then maybe someone competent will actually read it.
+- This is my opinion, so take it as you wish. 
+1. Generally the “experience” section should come before the “skills” section
+2. Someone other commenters mentioned this already, but the points in your **experience section** are hard to read. I would reduce it to 2 lines max.
+3. Again, in your **experience section**, I think your resume would be more engaging if you boldened key achievements within each bullet point.
+4. I see that you have used some metrics in your **experience section**, make sure that these are always in numeric form (ie. millions in USD, could be ~ $5M+) — by using the $ symbol it would most likely be taken as USD if you are applying to jobs in the US, if not then convert to local currency so recruiters can understand.
+5. In the **education section** I see that you listed something along side your bachelors, if this is high school related, I suggest you remove it, and it is a more advanced degree would place it above the bachelors degree.
+6. In the **achievements section** I am unsure how impressive those achievements are, if they are something that you think a recruiter would care about, then leave it, otherwise remove it. Imo, if you have advanced AWS or Azure certifications these would be relevant, and I would create a **certifications section**, which would be above the **achievements section**.
+7. Since you’ve only worked as a data scientist and there’s no explicit mention of MLOps anywhere else in your resume other than the title, a recruiter may not see how your skillset is relevant to that job title, so I would remove this from your **header section**.
+8. I would consider revamping **summary section** to highlight key takeaways from your resume. What’s your goal? What are your skills? What have you done so far? The length is good but I would try to make it more readable.
+- This is an absolute chore to read with the formatting and length of dot points. Nonetheless, I persevered.
+
+From what I can gather, they key takeaways are that you can use and understand XGBoost and logistic regression, you know how to use Databricks Spark, you've had some experience in feature selection from a wide selection of features and you've just begun taking on more key roles in projects at this stage in your career.
+
+Things that can help:
+
+1. Reformat your CV, have a column on the right or left to highlight your skills clearly. Have a summary section at the top. Use of bold and larger font to highlight position title, company and dates.
+
+2. Shorten your dot points and remove waffle. Quality over quantity. Get straight to the point. You can exaggerate achievements still within reason (it's a cv; everyone does this and has to in a competitive job market) but make it less obviously waffle. Simple, strong language.
+
+3. Just a thought from me, may not be relevant. But if you're applying for senior data scientist positions rather than data scientist, that's probably a big reason why. You may have the number of years but this reads like you lack  experience required for senior data science positions. Could just be the way you've communicated though

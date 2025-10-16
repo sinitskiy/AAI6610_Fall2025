@@ -1,0 +1,78 @@
+URL: https://www.linkedin.com/posts/forecasting-mdpi_new-publication-activity-7372267780638658562-awza
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Forecasting MDPI的动态
+Forecasting MDPI
+
+175 位关注者
+
+3 周
+
+📢 New Publication in #Forecasting
+
+📖 Comparative Analysis of Physics-Guided Bayesian Neural Networks for Uncertainty Quantification in Dynamic Systems
+✍️ By Xinyue Xu & Julian Wang
+
+🔎 This paper explores how physics-guided Bayesian neural networks enhance uncertainty quantification in dynamic systems, leading to more robust forecasting.
+
+🔗 Read the full article here: https://brnw.ch/21wVHNv
+
+#BayesianNeuralNetworks #AI #UncertaintyQuantification #DynamicSystems
+
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Vibralytics
+
+304 位关注者
+
+4 周  已编辑
+
+🔍 Understanding #CNN Decisions in #Spectroscopy with #Grad-CAM
+
+In deep learning, especially when working with spectral data, models like Convolutional Neural Networks  can achieve impressive predictions. But how do we know what the model is really looking at? 
+
+One powerful tool is Grad-CAM (Gradient-weighted Class Activation Mapping). Grad-CAM allows us to visualize which wavelengths contribute most to a prediction. 
+
+💡 In practice, we can:
+Generate Grad-CAM for each Conv1D layer to see how feature importance evolves.
+
+Average heatmaps across samples to get class-level insights.
+
+Compare early vs late layers to understand hierarchical feature extraction.
+
+Grad-CAM helps build trust in models and guides better model design and spectral interpretation.
+
+#MachineLearning #DeepLearning #AI #ExplainableAI #XAI #GradCAM #ModelInterpretability #DataScience #AIInsights #NeuralNetworks #AIExplainability #FeatureImportance #MLResearch #AITransparency
+
+2
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+Mercedes Bertotto
+
+Doctor of Engineering- NIR Specialist, Chemometrician
+
+4 周
+
+On our page, we share insights and reflections on the analyses we routinely perform at Vibralytics. We focus on delivering reliable, data-driven insights using advanced spectroscopic and chemometric techniques.
+
+Through our posts, you’ll find examples, tips, and learnings from our work that highlight the power

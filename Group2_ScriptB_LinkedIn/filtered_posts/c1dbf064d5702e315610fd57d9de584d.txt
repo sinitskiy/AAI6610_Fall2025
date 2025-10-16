@@ -1,0 +1,63 @@
+URL: https://www.linkedin.com/posts/som-dhulipala-ph-d-73594189_ml-aided-uncertainty-quantification-for-complex-activity-7087639567628996608-90Gz
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Som Dhulipala, Ph.D.的动态
+Som Dhulipala, Ph.D.
+
+Computational Scientist
+
+2 年
+
+Very excited for the 17th US National Congress on Computational Mechanics which is set to begin next week in Albuquerque. There are a plenty of exciting special sessions on Data-Driven Modeling and Uncertainty Quantification for Computational Modeling and Simulations. Looking forward to hosting two of these sessions with our team at Idaho National Laboratory and our external collaborators. The details of our special sessions and research presentations are provided below.
+
+Mini-symposia:
+MS 404: ML-Aided Uncertainty Quantification for Complex Systems Analysis (https://17.usnccm.org/404) with Michael Shields Xu Wu Audrey Olivier Jarek Knap (U.S. Army DEVCOM Army Research Laboratory) Ting Wang (Booz Allen Hamilton)
+
+MS 421: Software Tools for Uncertainty Quantification and Machine Learning with Applications to Computational Science (https://17.usnccm.org/421) with Zachary Prince Péter German Dewen Yushu Yifeng Che 
+
+Research presentations:
+"Bayesian Inference with Latent Hamiltonian Neural Networks (L-HNNs)" presented by myself. Arxiv preprint: https://lnkd.in/giyJUT_4
+
+"Adaptive, Active Learning, and Multifidelity Monte Carlo Methods in the MOOSE Stochastic Tools Module" presented by Zachary Prince
+
+"Efficient Rare Event Simulation Using an Explainable Active Learning and Multifidelity Surrogate Modeling Framework" presented by Promit Chakroborty. Arxiv preprint which is recently accepted for publication in the Journal of Engineering Mechanics: https://lnkd.in/ghkH9YFs
+
+Do check these out if you're attending!
+
+#machinelearning #modelingandsimulation #computational #uncertainty #bayesian #nuclearenergy 
+
+ML-Aided Uncertainty Quantification for Complex Systems Analysis
+17.usnccm.org
+40
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,675 位关注者
+
+27 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于

@@ -1,0 +1,56 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1n1wm8n/n_unprecedented_number_of_submissions_at_aaai_2026/
+Title: [N] Unprecedented number of submissions at AAAI 2026
+
+Content:
+And 20K out of 29K submissions are from China (clearly dominating AI research now, well done to my Chinese friends). The review process at AI conferences isn't just broken - it's nuked. We need change, fast.
+
+https://preview.redd.it/ih3vliracnlf1.png?width=1938&format=png&auto=webp&s=b7112a3e5e78ec7bcd0e6b100b5887a880fb82be
+
+Comments:
+- I think this is due to location.
+
+Students from China (although for everyone now) find it quite hard to get to US/Canada for conference.
+
+Even EMNLP says registration for in-person is not guaranteed (after long time top-conference in mainland China).
+
+\---
+
+There is lot of noise in the quality of those submissions. The 4 papers assigned to me are complete garbage. One of the paper reduced a seminal baseline model performance to show 12% gains 💀
+- There is a workaround to this - make more conferences, and make them more specific. COLM is a great example - we need more of these highly specific conferences.
+
+In general, once a conference attracts submissions greater than a threshold, it should just split.
+- The sheer volume of submissions from China is baffling. AAAI 2025 saw around 13,000 submissions. Nearly tripling in a single year is unprecedented. Is it explained by the fact most conferences are being held in locations with visa restrictions and delays impacting Chinese nationals, and hosting Singapore means that it is easier to get a visa?
+
+I have noticed a lot of really low quality papers in my stack, so it's possible that we're entering into an era where LLM assistances is making it easier to turn a bad idea into a paper.
+- Let’s be real for a moment, do we really have 20k+ great advances worth of publishing? Or is it just barely incremental stuff not worth reading?
+
+The system needs to be redesigned to lower this number. One idea is I think capping number of submissions per person and per group (that person can be on) can force people to put only their best quality work.
+- What is the % of submissions with reproducible code.
+
+What is the % of submissions that involve some sort of statistical hypothesis testing.
+- is this the beginning of the end of top tier huge ML conferences holding so much importance for any one person's career?
+- I would really like to see post-review how many % of those Chinese papers are garbage with average scores 4 or below, compared to overall rate and other countries.
+
+I got 4 papers to review. All were absolute garbage, with scores 1,1,2,3. Code was absent from one (which also made a bunch of critical mistakes), one had bare-bones code with a lot of parts missing. Two others were completely unrunnable, not reproducible, and yeah, comments in Chinese definitely didn't help with comprehending them.
+
+Honestly, I see why AAAI has Phase 1 rejections separately. And probably large conferences will require at least 1 separate review round for filtering out garbage papers in the future, maybe even an LLM-assisted round. Many of the mistakes that I've seen are trivial to spot by any reasonable model right now (e.g. RMSE being lower than MAE).
+- looks like you are going to need ai to review ai….
+- It's not just engagement bait - it's GPT generated engagement bait.
+- Spamming garbage submissions doesn’t mean they’re “dominating” AI research. The major AI models and companies are American. The only Chinese one is DeepSeek and it’s mid.
+- it's not x -- it's y
+
+bro became one with the machine
+- [deleted]
+- Any numbers for the AI Alignment track?
+- Is anyone planning to submit to the student program of AAAI? 
+I’m just curious what’s the acceptance rate there might be.
+- thats what happens when their superior economic system focuses on funding ai instead of funding propaganda against ai.
+- How are 29K submissions a problem for the review process? Everybody reviews 3-4 papers and it’s done.
+- Use a councel of LLMs for a first round of review. Human reviewers just double check the reasoning for initial rejection. Rebuttal recourse is of course afforded to authors (but has to go through LLMs again with re-submission & rebuttal notes).  
+Human reviewers only need read the entire paper once LLMs clear it.
+- They’re full of fraud too. I was studying a particular niche once (domain adaptation in dialogue state tracking) and there were a whole set of papers from Chinese labs - around 15 that I personally encountered - all of which had cited each other and were all published in ACL main conferences. All of them had garbage results that were 20% below the actual state of the art - a paper from Google from 3 years prior, which none of these papers cited or mentioned. In fact there were a couple papers prior to that Google paper that had accuracies in the 60’s that all these papers had completely ignored, and these papers were publishing accuracies in the 30s and 40s. And again, all were main conference ACL/EMNLP/NAACL acceptances. 
+
+Massive fraud is happening at these conferences. This field is completely bogus right now.
+- It's not only for the location, IJCAI was in canada and had 87% of papers from China. I think it really marks how much more china is investing in academic AI research than the US (I remember when I was student it was ~40% US, 40% china, now the US has similar numbers to much smaller countries like south korea)
+- I have at least one paper in my stack that has clearly lied about their results. It's a poorly presented paper with an extremely simply method that somehow substantially beats the SOTA, when the last few years have seen modest performance gains from increasingly sophisticated techniques.

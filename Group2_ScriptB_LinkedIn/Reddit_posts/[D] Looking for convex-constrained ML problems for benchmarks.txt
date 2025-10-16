@@ -1,0 +1,64 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mkxewf/d_looking_for_convexconstrained_ml_problems_for/
+Title: [D] Looking for convex-constrained ML problems for benchmarks
+
+Content:
+Hello,
+  
+I am looking for Machine Learning (ML) use cases to try out a class of optimization algorithms, namely Frank Wolfe (FW) algorithms. Those are *gradient-based* and *projection-free* algorithms for optimizing a cost function (convex or non-convex) over a *convex* set of constraints. Usually, such problems are tackled by Projected Gradient Descent (PGD), where each iteration consists of a descent in the direction of the gradient, then a projection onto the set of constraints to ensure that the new solution is feasible. However, depending on the set of constraints, this projection step can be very costly and thus prohibitive. FW algorithms avoid this projection step, which leads to less compute-intensive iterations.
+  
+I am turning toward r/machinelearning communities for ideas of problems that satisfy those conditions: optimization over a convex set of constraints (original or relaxed version of a problem), ideally that can be large-scale so I can push the FW algorithms to their limits.
+
+For the moment, I found those following problems:
+
+  * **Adversarial attack** : modifying an image in a imperceptible way for a human so that a classifier misclassifies it. The modification 𝛿 can be constrained in the 𝜀-ball so that it remains small, which is a convex set so it fits the description.
+
+  * **Polynomial Regression**/**Compressed Sensing**: when we need a sparse represention, we can set the constraint that the coefficients live in the L1-norm ball that is sparsity-inducing.
+
+  * **Matrix Completion**: not the original formulation that constrain that the rank of the matrix *X* denoted rank(*X*) is low, but setting a constraint of the nuclear-norm value of the matrix *X*, which is a convex constraint.
+
+I am also looking for optimization over the set of Doubly Stochastic Matrices (also called the Birkhoff polytope, which is the convex hull of permutation matrices), but I've been looking for a few hours on Google and I haven't found any concrete application, so if you have any ideas I will gladly take them. I've heard that they are useful in matching/assignment problems.
+
+Thanks for reading
+
+Comments:
+- A lot of papers with optimization algorithms usually deal with a benchmark suite of well tested problems. Any reason you aren't starting with those? Is the issue the that they lack large-scale, and large-scale is where your method is best?
+
+I don't like to only offer questions so here is my contribution. Have you checked out optimal transport? Often uses doubly stochastic matrices.
+
+You can also try optimizing SVM training using your algorithm. FW should work with the dual form but i am not sure.
+
+
+It might also help to know why you are doing this. Are you practicing to build intuition on when to use FW vs other methods?
+
+
+Btw I really like this line you wrote:
+
+> However, depending on the set of constraints, this projection step can be very costly and thus prohibitive. FW algorithms avoid this projection step, which leads to less compute-intensive iterations.
+
+Very concise summary of your pros and cons.
+- How about Problem (5) here: https://arxiv.org/pdf/2206.01131
+
+Given a baseline model (e.g. logistic regrsssion), we find an adversarial best fit model that is forced to assign an adversarial prediction to a specific training example. 
+
+We treat the difference between the predictions of the adversarial model and the baseline model as a parameter (which represents the gap in the probability). We then solve this problem for all possible parameters. 
+
+This would make an interesting benchmark. Right now, we can solve each instance relatively quickly in cvxpy for tabular datasets. However we solve it for many diffeeent parameter values and many different points so even a small improvement can make a large difference.
+- You might find the problems considered in the following paper interesting: [https://www.jmlr.org/papers/volume25/22-1137/22-1137.pdf](https://www.jmlr.org/papers/volume25/22-1137/22-1137.pdf)
+
+The metrics and constraints considered are essentially convex functions of the classifier's confusion matrix - turns out the breadth of constraints captured is quite rich (group fairness, coverage, churn, F1, precision, weighted means etc.). There's also a Frank-Wolfe based procedure proposed that might be relevant to your search.
+- multi-class SVMs have a ton of relevant cnvex constraint optimisation problems:
+
+  
+[https://www.jmlr.org/papers/volume17/11-229/11-229.pdf](https://www.jmlr.org/papers/volume17/11-229/11-229.pdf)
+- I did some work on diet optimization software once. The problem was like "choose a set of k foods such that if you eat x={x1>0, x2>0, ...xk>0} grams of each food you get enough nutrients." I'm not familiar with FW algorithms, but it seems related
+- Thanks for the answer!
+
+The papers I read do offer some problems, but they remain quite theoretical. To give more background, my goal is to showcase to non (or rather less)-technical people if those algorithms can be useful to tackle some ML problems. They wouldn't care a lot if the algorithm can solve an optimisation problem over (for instance) the Birkhoff polytope if it does not have any real use case for them.
+
+I do know about optimal transport as I worked with it during a 6-month internship, but I kind of forgot about it! Thanks for reminding me, I'll look into the litterature I've already read about it.
+
+EDIT: is your username related to HxH?
+- u/TserriednichThe4th Great point about benchmark suites, but we aim to tackle large-scale real-world problems with unique constraints, making existing benchmarks less relevant.
+- I'll admit I don't understand quite well atm, but I'll look into that thanks! If I work with it, I'll let you know :)
+- thanks a lot for the reference, I'll look into that

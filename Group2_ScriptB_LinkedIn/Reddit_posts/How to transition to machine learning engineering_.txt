@@ -1,0 +1,77 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1cht1xs/how_to_transition_to_machine_learning_engineering/
+Title: How to transition to machine learning engineering?
+
+Content:
+Im currently at a small tech consulting company. I have a master’s in data science but not much hard engineering experience.
+
+ I’ve built 1 production system but it was still ‘low tech’. I was using excel files and then an AutoML tool and running time series forecasting offline at a regular cadence. But that project is done and it looks like clients I work with are all low tech and having to deploy anything with them seems like a pain. I work on POCs for ML modeling nowadays
+
+I want to transition to a company where I can be on a better path and eventually try to be a software engineer in ML or an MLE. Finding opportunities to advance my skills are hard. I am currently interviewing at a company but the role seems more client focused and POC focused with maybe some opportunities to deploy / monitor ML systems. I am a little nervous that switching into a role that is not advertised as engineering heavy could be the wrong move
+
+However, any company that works at large scale is probably better than what I do now. Any proper tech company where I can use proper tools like pyspark, databricks, etc seem like would put me in the path to do more engineering or ML at scale. 
+
+I am curious what people think. What is the best way to break into MLE if you dont have large scale software experience and if your current best new role opportunities are not exactly engineering heavy but could have chances to build internal tools and deploy things sometimes? 
+
+Personally I think I’ll try to do as much engineering work as possible in any new tech company that operates at sufficient scale. And maybe even gunning for an internal transfer to SWE / MLE if that ever shows up could be a move (and this has a chance of happening at new company not current one). And I’ll build some ML apps for personal projects as well. It seems like staying at a small consulting company will continue to hurt my long term skillsets since I don’t have exposure to proper tools and large scaled problems
+
+I have 1.25 YOE plus I moonlit and did some NLP work on the side for many months last year. I effectively have 2.5 YOE including internships. Would love opinions. Even opinions that would argue against wanting to be an MLE
+
+Comments:
+- Why not first try to do more engineering where you are? You have models, you have freedom to choose your stack, try a few things out and see how they go. I’d recommend reading Machine Learning with Python by Andrew McMahon for an overview and quick starts on a lot of good options for deployment. Before then, you might be able to deploy using AWS Lambda, which is a relatively easy to use way to deploy models.
+- Define how you envision "MLE". The role can vary so much from team to team that, sometimes, what you are looking for might be under a different title
+- I would like to see some advice on this too
+- RemindMe! 5 days
+- Currently learning ML and data science in my undergrad and seeing your post and the fact that nothing made sense to me is making me mad like if i know anything about the field i have chosen to study
+But still best of luck maybe one day i will be able to understand your post😂😂
+- look at mle roles for companies you want to work at, see what they're looking for, then try to get experience in those 
+
+job hopping also helps give wider exposure to problems and build the skills you want
+- I would also recommend looking into startups - you may be able to tack on a startup project as a side hustle, and get a good title. Wellfound is a great site to find early-stage startups that need talent but don't have a lot to pay (and some that do pay very well). You can do projects for them, and since the companies are small, the titles they give at the early stage are probably above where you're actually at, but you can beef up your skills and your resume at the same time.
+- Bro just change your title from data scientist to machine learning engineer. They re practically the same
+- -----
+- Try to get certification for example [https://www.databricks.com/learn/certification/machine-learning-professional](https://www.databricks.com/learn/certification/machine-learning-professional) since you mentioned Databricks. 
+
+Course contents covers MLE/ mlOps is what you're looking for.  
+
+1. Model Lifecycle Management - 30%
+2. Model Deployment - 25%
+
+Separately if you don't feel your have a good handle and experience on devOps - consider adding this under your belt 
+
+[https://aws.amazon.com/certification/certified-devops-engineer-professional/](https://aws.amazon.com/certification/certified-devops-engineer-professional/)
+
+As MLE in a way is ML/DS + devOps (I know MLOps has additional / separate concepts specific for the ML/DS domain but I yet to see a strong MLE without understanding devOps ideas very well). 
+
+One side note "I have 1.25 YOE" and " I effectively have 2.5 YOE including internships" -- if you change your job now, would it be your 3rd job in 2.5 years? If yes, and you try to change your job now, it may look like you're a "job hopper" for some recruiters. I know some companies that have hiring principles and instruct to pass candidates like that. I recommend waiting for at least 2 full years on your current company to increase chances.
+- RemindMe! 5 days
+- Yes so that is my plan. However, i dont have much faith in my current company to bring in new clients who have sophisticated infrastructure. 
+
+Right now I could map out how we could in theory build an ML system for this client after I got the POC done but it’s a big if on whether they’d be open to us asking them to create an ML system to run training and inference via the cloud
+
+My desire to change companies is focused on being in an environment where someone motivated like me can find chances to work on larger scale ML engineering problems. It seems difficult or weird to convince a client to install pyspark or use AWS / build out ML infrastructure since we’re a ML consultant for them, not an internal engineering team
+- I'm a trained Mathematician first and also a data scientist second. Recently I've been looking to combine my research in both math and data science. Is there any use cases and carrer where I can combine both my work in math to that in data science. Any advice will be helpful.
+- I want to be primarily a software engineer who deploys, optimizes, and works with large scale ML systems. If i can work for computer vision or robotics companies that would be great
+
+However im very far from this right now and also dont know if im fantasizing about this too much. I want to work somewhere where I can learn highly valuable skills, get great pay, work on interesting things, be insulated from automation and also i want to be insulated from client facing work where im forced to make line go up and tell ‘narratives’
+
+All of those traits might be difficult to achieve but its my gold star. If i can get a high paying swe ML career where i build and deploy ML modes and manage infrastructure, that may also be a good end goal from what i see. It would likely hit 3/5 or 4/5 of the traits i mentioned above
+- It was pretty annoying to see how much academia was divorced from industry. 
+
+Most of ML from what ive seen so far is really figuring out how to do the engineering to create features and make the system reasonable in production. None of that is really taught in school but you can get glimpses of it if you do more CS classes
+
+Huge shock for me when i saw that engineering is of critical importance and understanding businesses and KPIs is critical. Data science master’s only teaches the math and statistics behind algorithms for the most part but its on you to get practical experience. You will see in time, dont be scared
+- I will be messaging you in 5 days on [**2024-05-06 19:50:21 UTC**](http://www.wolframalpha.com/input/?i=2024-05-06%2019:50:21%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/datascience/comments/1cht1xs/how_to_transition_to_machine_learning_engineering/l252cr1/?context=3)
+
+[**4 OTHERS CLICKED THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Fdatascience%2Fcomments%2F1cht1xs%2Fhow_to_transition_to_machine_learning_engineering%2Fl252cr1%2F%5D%0A%0ARemindMe%21%202024-05-06%2019%3A50%3A21%20UTC) to send a PM to also be reminded and to reduce spam.
+
+^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201cht1xs)
+
+*****
+
+|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|
+|-|-|-|-|
+- Oh, I didn’t understand that you simply want to work on engineering at a larger scale. In that case, you “just” have to go to a company that does that. How you get in the door there is you first show you can do that work. To show you can do the work, you typically have to work on much smaller scale data like where you are now. Most companies simply don’t need PySpark. I’ve been a DS/MLE for 7 years and have yet to need it. A lot of processing is typically handled in batch with pure Python and Pandas/Polars, and then by the database as a workhorse for simple transforms in DBT. Polars makes the need for PySpark even smaller. You should start by deploying with small data. Honestly, it’s much easier work that way
+- All of data science is basically math and programming. Depending on what your skillset and interests are, you can pretty much do anything you want
+- Do you want to build ML models? A lot of software engineers on ML teams do just what you described but do zero modeling. That modeling part might be left to the data/applied scientists. I think increasingly, the roles will separate ML modeling and ML Infra/Platform engineering, with each role specializing in their respective task
+- I don't really touch much math in my DS work though which is frustrating. That's why I'm looking for a career/Job that will actually allow me to use more math.

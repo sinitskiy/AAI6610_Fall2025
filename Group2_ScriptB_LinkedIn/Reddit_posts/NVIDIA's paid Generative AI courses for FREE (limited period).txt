@@ -1,0 +1,42 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1iby5om/nvidias_paid_generative_ai_courses_for_free/
+Title: NVIDIA's paid Generative AI courses for FREE (limited period)
+
+Content:
+NVIDIA has announced free access (for a limited time) to its premium courses, each typically valued between $30-$90, covering advanced topics in Generative AI and related areas.
+
+The major courses made free for now are :
+
+* **Retrieval-Augmented Generation (RAG) for Production:** Learn how to deploy scalable RAG pipelines for enterprise applications.
+* **Techniques to Improve RAG Systems:** Optimize RAG systems for practical, real-world use cases.
+* **CUDA Programming:** Gain expertise in parallel computing for AI and machine learning applications.
+* **Understanding Transformers:** Deepen your understanding of the architecture behind large language models.
+* **Diffusion Models:** Explore generative models powering image synthesis and other applications.
+* **LLM Deployment:** Learn how to scale and deploy large language models for production effectively.
+
+**Note:** There are redemption limits to these courses. A user can enroll into any one specific course.
+
+**Platform Link**: [NVIDIA TRAININGS](https://nvda.ws/4jtHiOf)
+
+Comments:
+- I think i am gonna sign up multiple courses with multiple google accounts
+- Thanks, I’m good though. Waiting for the DeepSeek courses to drop.
+- just to restate, you only get one. I didn't read the full post, still super cool though
+- You can only claim 1, choose wisely!!!!
+- I just see a blank list, is the offer expired?
+- Anybody facing an issue with the link?  
+It opens with the logo and outline but doesn't show the content.
+- Thanks OP, much appreciated.
+- Thanks! Which one would you recommend for a beginner?
+- Thanks for sharing. Which courses would you recommend for fresh CS student? I just started my journey in data science.
+- Hi thanks for this. I am a beginner and i wanna be a data scientist. Which course should i take as i am not able to choose even after reading the descriptions. Right now i am working on my logic building through Dsa in python and SQL as i heard these are crucial for a data science role. Thanks
+- does anyone know how advanced this course is? is it more coding based or general knowledge?
+- Any suggestions for which course could be good for someone just starting out in the field of ML? Have no prior experience. Do all of these require intermediate to advanced skills?
+- Anyone done these and can comment? I'm all for continuing development but there are so many pointless certificates around that I'd rather stick to something that's been recommended.
+- Thanks for sharing
+- I see the 6 month access, but any idea how long the free promotion will last?
+- How do i redeem it,is the link expired ?
+- It doesn't let me sign up
+- are the certificates also available for free?
+- I have good knowledge about how the standard algorithms work but i am not so fluent with the coding part of it. Which one should i explore?
+- Thanks for this man! I really appreciate it.

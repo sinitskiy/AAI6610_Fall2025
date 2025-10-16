@@ -1,0 +1,53 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1h7h1qu/i_need_advice_on_what_type_of_capstone_project_i/
+Title: I need advice on what type of "capstone project" I can work on to demonstrate my self-taught knowledge
+
+Content:
+This is normally the kind of thing I'd go to GPT for since it has endless patience, however, it can often come up with wonderful ideas and no way to actually fulfill them (no available data).
+
+
+One thing I've considered is using my spotify listening history to find myself new songs.
+
+
+On the one hand, I would love to do a data vis project on my listening history as I'm the type who has music on constantly.
+
+
+On the other hand, when it comes to the actual data science aspect of the project, I would need information on songs that I haven't listened to, in order to classify them. Does anybody know how I could get my hands on a list of spotify URIs in order to fetch data from their API?
+
+
+----
+
+Moreover, does anybody know of any open source datasets that would lend themselves well to this kind of project?  Kaggle data often seems too perfect and can't be used for a real-time project / tool, which is the bar nowadays.
+
+
+Some ideas I've had include 
+
+1. Classifying crop diseases, but I'm not sure if there is open data, and labelled data on that?
+
+2. Predicting probability your roof is suitable for solar panel installation based on address and Google satellite API combined with an LLM and prompt engineering - I don't think I could use a logistics regression for this since there isn't labelled data I'm aware of
+
+Any other ideas that can use some element of machine learning? I'm comfortable with things like logistic regression and getting to grips with neural networks.
+
+
+Starting to ramble so I'll leave it there!
+
+
+
+
+Comments:
+- These kind of projects I always recommend they need to be personal to you and something useful to a wide audience. I also think creating your own dataset is a huge plus if you can do that, even if it means just stitching together a few public data sets. You want to be able to tell a story about where the data is from and any cleaning and preparation challenges that you resolved before or along with modeling. Also try your best to produce a live working webapp in the end to show you can productionize a data project. Doesn't need to be fancy just proof you got there. Sorry I don't have specific ideas to suggest but hope this helps
+- I created some sample projects here if you need some inspiration: https://www.datasciencehive.com/projects
+- Spotify actually released a dataset of playlists, so your Spotify idea might be plausible, but I don't see it working with logistic regression or as a classification problem in general 
+https://research.atspotify.com/2020/09/the-million-playlist-dataset-remastered/
+
+If you want to show your regression analysis skills, I personally would scrape used car listing websites and maybe find under/over valued cars, maybe find the value of your car if you have one, etc.. you can also look at housing, airbnbs, or whatever you're interested in. In my opinion if you scrape your own data, it shows that you didn't just copy someone else's project.
+- I had a similar idea for my little data science project, but it came to a halt when I realized that Spotify API terms are restricted with respect to training ML/AI models: [https://developer.spotify.com/terms#section-iv-restrictions](https://developer.spotify.com/terms#section-iv-restrictions) . Do you think a little blog post on one own's listening habits would be ok? Or how are you dealing with this?
+- Forecast day and hour at which gas station (with proper loss metric for driving there) you would tank your car for the best price, before your car runs our if gas (another forecast)
+- You can almost track my life stage by my side projects: house price prediction dashboard, baby name trends dashboard, and now working on whether I can forecast future school performance! Totally agree with this answer.
+- Read the other comments in this thread.
+
+
+"Update for 2020:In Sept 2020, Spotify released an identical challenge and dataset named The Million Playlist Dataset Challenge. The dataset is available for non-commercial research use"
+
+
+Based on this, I think it should be perfectly okay.

@@ -1,0 +1,60 @@
+URL: https://www.linkedin.com/posts/mohamed-noureldin-08672a92_ai-based-framework-for-concrete-durability-activity-7320433810053996545-n3F0
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Mohamed Noureldin的动态
+Mohamed Noureldin
+
+Professor of Structural Engineering (AI Applications)
+
+5 个月
+
+🔬 New Publication on AI-Driven Modeling for Concrete Durability 🧱
+Predicting the long-term durability of concrete structures remains a key challenge in civil engineering, particularly due to the complex and uncertain nature of aggressive ion ingress (e.g., chlorides and sulfates). From both an AI modeling and materials science perspective, accounting for such uncertainty—while maintaining reliability—has been a persistent gap in current methods.
+Our recent study, now published in Construction and Building Materials, presents a data-driven framework that addresses this challenge by integrating Generative Adversarial Networks (GANs) for dataset augmentation and Bayesian Neural Networks (BNNs) for uncertainty-aware prediction.
+
+🔗 Read the full article here:
+ https://lnkd.in/dcWarsPv
+We hope this work contributes to the growing field of AI in infrastructure resilience and opens further opportunities for integrating generative and probabilistic AI models into material durability research.
+#ConcreteDurability #AIinEngineering #GenerativeAI #BayesianNeuralNetworks #CivilEngineering #InfrastructureMonitoring #MLforMaterials #StructuralHealthMonitoring #UncertaintyQuantification
+
+AI-based framework for concrete durability assessment using generative adversarial networks and bayesian neural networks
+sciencedirect.com
+73
+6 条评论
+赞
+评论
+分享
+Engr. Irfan Ullah
+
+Meticulous Civil Engineer 🏗️ | Researcher 📚 | Reviewer 📝 | Machine Learning 🤖 | Deep Learning 🧠 | Generative AI 🚀 | Bridges 🌉 | Structural Health Monitoring 📊
+
+5 个月
+
+Congratulations, #Professor!
+
+赞
+回复
+Khaled Allam, PMP, RMP, VMA,6SIGMA,TQM
+
+PMP®, RMP® |Value Engineering| Structural Engineering Consultant | Project Manager | Design Manager at Khatib & Alami
+
+5 个月
+
+بالتوفيق دكتور محمد
+
+赞
+回复
+Musitefa Adem Yimer
+
+Senior Structural Engineer | Researcher | P.E. | M.ACI | S.M.ASCE | M.Sc., B.

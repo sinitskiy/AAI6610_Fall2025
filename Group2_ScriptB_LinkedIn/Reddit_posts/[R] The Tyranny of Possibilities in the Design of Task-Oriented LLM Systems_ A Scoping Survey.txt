@@ -1,0 +1,30 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/18w09hn/r_the_tyranny_of_possibilities_in_the_design_of/
+Title: [R] The Tyranny of Possibilities in the Design of Task-Oriented LLM Systems: A Scoping Survey
+
+Content:
+*Paper*: [[2312.17601] The Tyranny of Possibilities in the Design of Task-Oriented LLM Systems: A Scoping Survey (arxiv.org)](https://arxiv.org/abs/2312.17601)
+
+*Abstract*:
+> This scoping survey focuses on our current understanding of the design space for task-oriented LLM systems and elaborates on definitions and relationships among the available design parameters. The paper begins by defining a minimal task-oriented LLM system and exploring the design space of such systems through a thought experiment contemplating the performance of diverse LLM system configurations (involving single LLMs, single LLM-based agents, and multiple LLM-based agent systems) on a complex software development task and hypothesizes the results. We discuss a pattern in our results and formulate them into three conjectures. While these conjectures may be partly based on faulty assumptions, they provide a starting point for future research. The paper then surveys a select few design parameters: covering and organizing research in LLM augmentation, prompting techniques, and uncertainty estimation, and discussing their significance. The paper notes the lack of focus on computational and energy efficiency in evaluating research in these areas. Our survey findings provide a basis for developing the concept of linear and non-linear contexts, which we define and use to enable an agent-centric projection of prompting techniques providing a lens through which prompting techniques can be viewed as multi-agent systems. The paper discusses the implications of this lens, for the cross-pollination of research between LLM prompting and LLM-based multi-agent systems; and also, for the generation of synthetic training data based on existing prompting techniques in research. In all, the scoping survey presents seven conjectures that can help guide future research efforts.
+
+It includes a thought experiment as we're [GPU poor](https://www.semianalysis.com/p/google-gemini-eats-the-world-gemini)!
+
+The seven conjectures the paper presents are as listed below. If you find yourself intuitively agreeing with the conjectures, you might find the arguments and the limited support the paper presents helpful in reinforcing your intuition; and if you disagree intuitively with these you might have interesting comments to share once you read the arguments in the paper.
+
+1. Autonomous, multi-agent collaboration allows less capable tool-augmented language models to surpass more capable tool-augmented language models, as the number of collaborating agents increases; given these less capable tool-augmented LMs have a threshold level of capabilities.
+2. Multiple LLM-based agents working together should be more capable than current research suggests, and their relative lack of success warrants investigation.
+3. Even if we never discover an architecture better than current LLMs, or better training algorithms, or it turns out that scaling up LLMs and their training data does not lead to any new emergent abilities; we can still be able to achieve useful autonomous AI agents through - 
+	1. larger context sizes and better context utilization.
+	2. ensuring extensive collaboration between LLM agents and extensive tool-use is "in-distribution", i.e., well represented in its training data.
+	3. sampling/decoding strategies that work well for large context lengths.
+4. Results from prompting techniques involving non-sequential context, can predict similar results from multi-agent systems designed to replicate the same behavior.
+5. Any result that utilizes multi-agent systems can predict similar results using prompting techniques (such as self-collaboration) designed to replicate the multi-agent interaction pattern within a sequential context.
+6. Synthetically generated "self-collaboration" traces or transcripts from successful attempts at solving tasks using prompting techniques involving non-sequential context or multi-agent collaboration, is high-quality training data for LLMs, especially for downstream use in multi-LLM agent systems and with prompting techniques involving non-linear context.
+7. Taking existing problems and associated real-world deliverables (intermediate and final) and interpolating interaction artifacts between collaborators as a transcript or trace can create high-quality synthetic training data, specifically for downstream use in multi-LLM agent systems.
+
+We try to define terms such as "extensive tool-use and collaboration", "linear and non-linear context" in the paper. The current version is our first draft, and we're hoping to gather feedback for a final version that is hopefully comprehensive, includes taxonomy charts, discusses more design parameters and gives special attention to the task-decomposition and planning, and to multi-agent interaction paradigms.
+
+Thank you for reading!
+
+Comments:

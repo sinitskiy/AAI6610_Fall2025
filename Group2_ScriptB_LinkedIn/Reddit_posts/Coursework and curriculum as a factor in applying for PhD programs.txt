@@ -1,0 +1,51 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/y42rka/coursework_and_curriculum_as_a_factor_in_applying/
+Title: Coursework and curriculum as a factor in applying for PhD programs
+
+Content:
+How big of a factor should coursework and curriculum be in applying and ultimately choosing a PhD program ? I know that main factor should be advisor and research interest which is developing statistical methods and working on applying and developing machine learning applicable to biology. I think I have a situation that may merit me in considering coursework more of a factor than other people. 
+
+
+However, I come from a bio background so while I do have some maths and stats, I feel like my background is still a bit lacking for what I want to do in grad school and many people who are in this sub field are cs and stats majors.That’s why I want to develop my background in coursework to catch up with the field and as my research interest is pretty heavy in stats and cs, I feel like I need more stats and cs courses. Many of the curriculum and coursework at many schools don’t really align with my interests although there’s a decent amount of faculty members that do have research that interest me. 
+
+A school that I found with a program that suits my interests is UW Madison biomedical data science and Michigan to a certain extent but other than that there aren’t too many schools with curriculums that align with my goal. 
+
+
+
+Are most schools flexible in choosing substituting required courses and how much should I really care about coursework in my specific situation in choosing and applying to a PhD??
+
+Comments:
+- Coursework is the busy work of a graduate education.  During my masters, I picked a broad range of courses, which ranged from complete wastes of time to awesome with a paper that came out of it.  I wouldn’t put more than 10 minutes of thought into it.   
+
+At best, you might learn something new, but no one is expecting you to walk away from a course as an expert in whatever subject it was.  They are expecting you to walk away from your phd research as a world expert, or at least highly competent in the skills you set out to master.  
+
+Thus, focussing in your research will ultimately be where the payoff lies.  
+
+For my phd, I got them to waive all of the course requirements because I already had a masters.  It was one of the reasons I accepted the offer in that lab. Getting out of course work shaved 6-8 months off my phd.
+- I have a different perspective about coursework for a bioinformatics grad student coming from a biology background.  Remember that graduate school is the last time you will have a chance to take courses or spend any time learning things not directly related to your project.  For someone with your background, I would be asking the graduate programs how hard it would be to take CS or stats courses.  At some institutions, it may be tricky, because you may not get credit for undergrad classes even though you are not prepared for graduate CS or stats.  At other places, it may be easier.  Biology to Bioinformatics is a big change - you need both intermediate stats and CS, which may require some intro courses as well. 
+
+But remember, this is your last chance to learn in a classroom.  Take advantage of it.
+- I think papers matter more. Most of hints you can bumble through as in learning new programs, packages, and pipelines. And to be honest, that’s all anyone does. You get more efficient as you go along. Don’t ever make the mistake of thinking there’s a “right” way to do everything or you’ll never get anything done. Nothing is perfect, and I think this the biggest failing of courses and class work. A “real” lab will care less about that than whether you can think and just follow tutorials online. Just my humble opinion.
+- Hey thanks for your insightful response as always. I agree that for most people coursework probably doesn’t matter especially in a experimental PhD.
+
+
+But I’m wondering if that same logic applies for me here too because I feel like you need to understand certain prereqs and fundamentals that are crucial in ml that I think are taught in a classroom. Example is being really good at linear algebra and multivariate calculus so that you have solid fundamentals in knowing what’s behind the hood or being solid in probability theory and linear optimisation.  
+
+
+
+I talked to one professor professor already and he actually cared what math and stats classes I’ve taken to see that I had a strong background. So I was wondering what’s your thoughts on my situation if you still think coursework shouldn’t be a factor at all in my situation.
+- I always curious on how people made the transition because like you said bioinformatics requires pretty advanced stats and cs with good knowledge needed in linear algebra, calculus, and algorithms. And these courses in bioinformatics are usually part of a core courses too so I have a hard time seeing how biology students can make that massive of a job without knowing any prereqs. 
+
+
+
+A good example is bioinformatics algorithms by pavel pevzner. The course assumes a good understanding of data structures and algorithms something that most biology students usually have no experience as well as intermediate knowledge in statistics with things like HMM.
+- If you have specific weaknesses, sure, you can use classroom knowledge to get there, but what stops you from picking up a textbook and learning it on your own?
+
+Grad school courses are very different from undergrad courses.  They don't spoon feed you a specific topic - by the time you get to grad school, you should know how to crack open a text and learn something from it.  Instead, most grad courses focus on analyzing papers, generating original research ideas or exploring a lot of broad topics or having you get mentored by experts in the field.  
+
+Thus, if you're lacking pre-reqs, I'd say that you should probably aim to clear those up on your own time before starting your PhD.  Is there any reason why you couldn't spend the summer before taking up a position learning multivariate calculus?  A class would be 3 hours a week of someone reading the textbook to you, followed by 4 hours a week doing homework.  Why not just do that yourself?  You wouldn't get a grade, but you'd be able to answer any question that the prof asks you.
+- Yea I still think I’m in the mindset of grad school courses being the same as undergrad when that’s not the case. I do have most prereqs including multivariate calc so perhaps I’m being too paranoid. 
+
+
+I asked this question because I have heard from some people that coursework is important for ms especially but less so for PhD.
+- Course work makes up about a year of a masters, and about a year of a phd, which are respectively 2 and 4-5 years long.  It’s all relative.

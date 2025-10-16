@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/juanitorduz_cohort-revenue-retention-analysis-a-bayesian-activity-7325903400443768832-Te6C
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dr. Juan Camilo Orduz的动态
+Dr. Juan Camilo Orduz
+
+Applied Scientist | Ph.D. Math | Open Source
+
+5 个月
+
+Here is the pre-print of the Bayesian approach to cohort revenue and retention modeling 🙂
+
+https://lnkd.in/dtgAywWD
+
+“We present a Bayesian approach to model cohort-level retention rates and revenue over time. We use Bayesian additive regression trees (BART) to model the retention component which we couple with a linear model for the revenue component. This method is flexible enough to allow adding additional covariates to both model components. This Bayesian framework allows us to quantify uncertainty in the estimation, understand the effect of covariates on retention through partial dependence plots (PDP) and individual conditional expectation (ICE) plots, and most importantly, forecast future revenue and retention rates with well-calibrated uncertainty through highest density intervals. We also provide alternative approaches to model the retention component using neural networks and inference through stochastic variational inference.”
+
+#cohort #retention #clv #bayes
+
+Cohort Revenue & Retention Analysis: A Bayesian Approach
+arxiv.org
+188
+13 条评论
+赞
+评论
+分享
+Andrés Acosta
+
+Marketing Science & AI Executive | Business Growth, P&L Impact & Scalable Analytics
+
+4 个月
+
+Strong emphasis on uncertainty quantification through HDIs, essential for strategic planning.
+
+This framework bridges advanced statistical modeling with real marketing, product and financial decisions.
+
+Good integration of Bayesian Additive Regression Trees for retention modeling with a gamma linear model for revenue and coupling them via the number of active users is both mathematically sound and business relevant.
+
+I appreciated the emphasis on partial pooling and interpretability with ICE/PDP plots, especially since many real world applications lack both scalability and explainability.
+
+Will future work explore hierarchical priors across geographies or causal modeling

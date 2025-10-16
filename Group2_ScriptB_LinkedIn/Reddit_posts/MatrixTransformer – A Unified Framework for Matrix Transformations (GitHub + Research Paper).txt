@@ -1,0 +1,103 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1lyufxo/matrixtransformer_a_unified_framework_for_matrix/
+Title: MatrixTransformer – A Unified Framework for Matrix Transformations (GitHub + Research Paper)
+
+Content:
+Hi everyone,
+
+Over the past few months, I’ve been working on a new library and research paper that unify structure-preserving matrix transformations within a high-dimensional framework (hypersphere and hypercubes).
+
+Today I’m excited to share: MatrixTransformer—a Python library and paper built around a 16-dimensional decision hypercube that enables smooth, interpretable transitions between matrix types like
+
+* Symmetric
+* Hermitian
+* Toeplitz
+* Positive Definite
+* Diagonal
+* Sparse
+* ...and many more
+
+It is a lightweight, structure-preserving transformer designed to operate directly in 2D and nD matrix space, focusing on:
+
+* Symbolic & geometric planning
+* Matrix-space transitions (like high-dimensional grid reasoning)
+* Reversible transformation logic
+* Compatible with standard Python + NumPy
+
+It simulates transformations without traditional training—more akin to procedural cognition than deep nets.
+
+# What’s Inside:
+
+* A unified interface for transforming matrices while preserving structure
+* Interpolation paths between matrix classes (balancing energy & structure)
+* Benchmark scripts from the paper
+* Extensible design—add your own matrix rules/types
+* Use cases in ML regularization and quantum-inspired computation
+
+# Links:
+
+**Paper**: [https://zenodo.org/records/15867279](https://zenodo.org/records/15867279)  
+**Code**: [https://github.com/fikayoAy/MatrixTransformer](https://github.com/fikayoAy/MatrixTransformer)  
+**Related**: \[quantum\_accel\]—a quantum-inspired framework evolved with the MatrixTransformer framework link: [fikayoAy/quantum\_accel](https://github.com/fikayoAy/quantum_accel)
+
+If you’re working in machine learning, numerical methods, symbolic AI, or quantum simulation, I’d love your feedback.  
+Feel free to open issues, contribute, or share ideas.
+
+Thanks for reading!
+
+Comments:
+- What a fascinating idea - could you describe the underlying libraries you used for the implementation while rhyming?
+- You’re right, temporal coherence is where these tools break down. Pollo’s sequences felt more stable than Genmo’s in my tests, possibly due to its design-focused customization, but still not reliable for raw tracking datasets.
+- Yeah his paper isn’t any clearer, and his code doesn’t make any sense either. I don’t know who needs this or why? Most all it does is perform a trivial transformation (like zeroing all non diagonal elements) then rescale elements so the Frobenius norm / matrix energy is conserved. 
+
+Okay? Why? When do you need this? And why not say that’s what you’re doing?
+
+Half the library should be a one or two liner you write if you ever need it, not whatever that 7k line monstrosity is.
+
+Instead his description is this insanely pompous rambling nonsense that leaves me with no idea what he’s actually doing or why.
+
+What’s crazy is I don’t think this is ai, ai is usually much more coherent. I think he actually just doesn’t make any sense.
+- you should read this paper i wrote on a specific functionalites of the library  method for lossless, structure-preserving connection discovery
+
+[https://doi.org/10.5281/zenodo.16051260](https://doi.org/10.5281/zenodo.16051260)
+
+  
+and if you do classify it as son joke it again, then all jokes on you
+- and to you.. i hope your humous does not make you lose your sight
+
+To further validate myself and show you how extremely wrong you are, check my response to this post: [https://www.reddit.com/r/learnmachinelearning/comments/1m2mtt6/comment/n3qlnon/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/learnmachinelearning/comments/1m2mtt6/comment/n3qlnon/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+- wdym while rhyming bro? im not a bot
+- Hey to clarify, MatrixTransformer isnt a generative ai like Pollo/Genmo It’s a It’s a symbolic transformation framework for structured matrices, built around a high-dimensional decision logic.
+
+It doesn’t do sequence generation or video synthesis; it works more like a cognitive matrix planner for symbolic math, ML regularization, and quantum structure embeddings.
+
+Just wanted to clear that up in case others were reading and thinking the same!
+- you should read this paper i wrote on a specific functionalites of the library method for lossless, structure-preserving connection discovery
+
+[https://doi.org/10.5281/zenodo.16051260](https://doi.org/10.5281/zenodo.16051260)
+
+and i didnt just wanted to jump into specific details because that library/ paper is some general framework just like any other scientific libary that actually needs or require people to use them to see for real their benefits because who have time to start stating one by one it's usecases when the usecases are enormous?
+
+and so i already plannedto write focused papers on each functilties of the libary which i already stated and i have published for someone like you who thing all great things are scam 
+
+>What’s crazy is I don’t think this is ai, ai is usually much more coherent. I think he actually just doesn’t make any sense.
+
+and all jokes will be on you forthis comment when time comes  and you see how increadly ignorant and insanly wrong you are!
+
+**you are the group of people who thinks Ai will take thier jobs or think they can produce an Ai that superceeds Humans which is a lie.**
+
+**you are one of them that perfers to create sex robots instead of actually doing groundbearking things that helps humanity**
+
+**you are an hyporite that is never happy with him self and hates his life and so it the same for the rest of people like you!**
+
+**i hope you change your ways and avoid staying in darkness**
+- Oh okay so you’re just crazy, got it
+- that is what it takes my bro.. i am tired of not been crazy enough many people like you takes people who are not crazy for granted
+- How old are you? Late onset schizophrenia has different symptoms depending upon how old out are. You should get yourself screened.
+- lol maybe you are right i have seen alot of fucked up things that has changed my perception of the world immensely. but  still  i am right not because i think i am better but rather i have seen the world for how it is and to be honest i am just as tired of it as much as you are and this is why i am keen to making life a better place for our kids and we ourselves
+- However i refuse to be labelled as such
+- just to clear you doubts you can check my comments on this reddit section [https://www.reddit.com/r/learnmachinelearning/comments/1m2mtt6/comment/n3qlnon/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/learnmachinelearning/comments/1m2mtt6/comment/n3qlnon/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+  
+i am not dumb i know excatly what i am doing!
+- The guy with no post history, yeah, sure

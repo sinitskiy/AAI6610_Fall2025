@@ -1,0 +1,63 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1kapczj/what_is_the_best_way_to_parse_and_order_a_pdf/
+Title: What is the best way to parse and order a PDF from forum screenshots that includes a lot of cached text, quotes, random order and overall a mess.
+
+Content:
+Hello dear people! Been dealing with this very interesting problem that I'm not 100% sure how to tackle. A local forum went down some time ago and they lost a few hours worth of data since backups aren't hourly. Quite a few topics were lost, as well as some of them apparently became corrupted and also got lost. One of them included a very nice discussion about local mountaineering and beautiful locations which a lot of people are saddened to lost since we discussed many trails. Somehow, people managed to collect data from various cached sources, computers, some screenshots, but mostly old google, bing caches while they worked and webarchive. 
+
+Now it's all properly ordered in pdf document but the thing is the layouts often change and so does resolution but the general idea of how data is represented is the same. There's also some artifacts in data from webarchive for example - they have an element hovering over text and you can't see it, but if you ctrl-f to search for it it's there somehow, hidden under the image haha. No javascript in PDF, something else, probably  colored, no idea.
+
+The ideas I had were (btw PDF is OCR'd already):
+
+&nbsp;
+
+- PDF to text and try to regex + LLM process it all somehow?
+
+- Somehow "train" (if train is a proper word here?) machine vision / machine learning for each separate layout so that it knows how to extract data
+
+&nbsp;
+
+But I also face issue that some posts are for example screenshoted in "half", e.g. page 360 has the text cut out and continue on page 361 with random stuff on top from the archival's page (e.g. webarchive or bing cache info). I would need to also truncate this, but that should be easy.
+
+&nbsp;
+
+- Or option 3 with those new LLMs that can somehow recognize images or work with PDF (idk how they do it) I could maybe have the LLM do the whole heavy load of processing? I could pick up one of better new models with big context length and remembrance, I just checked total character count, it's 8.588.362 characters or 2.147.090 tokens approximately, but I believe the data could be split and later manually combined or something? I'm not sure I'm really new to this. The main goal is to have a nice json output with all data properly curated.
+
+&nbsp;
+
+Many thanks! Much appreciated.
+
+Comments:
+- A free and easy option would be to use Google AI Studio and Gemini 2.5 to just give it a shot.
+
+It has a 1M token limit, and it’s hard to tell from your post how your PDF would be counted in terms of tokens, but I’d suggest you start with 5 or 10 or 50 pages or something.
+
+Use your post here as a prompt and upload the file. See how close that gets you.
+
+You may decide it’s better to crowd source the effort, within your community, of re-obtaining the web archive data as that may work better than a PDF. You could dump html etc into an LLM and have it clean up the tags.
+- [removed]
+- Unstract might be of help. Refer this [guide](https://unstract.com/blog/ocr-to-extract-text-from-pdf-scans-and-images/) and this [guide](https://unstract.com/blog/guide-to-extracting-data-from-pdf-form-with-unstract/)
+- Try combining OCR'd text with machine learning-based layout normalization to extract clean data.
+- One approach is to get the raw text out of the PDF and then rebuild the thread with some simple rules. Libraries like pdfplumber or PDFMiner will extract text along with positional metadata so you can write a script to group lines by user or timestamp and discard the repeated quote blocks. If your PDF is image‑based you’ll need to OCR it first (Tesseract can handle this).
+
+
+
+Another option is to treat each layout separately. Tools like layout‑parser or Camelot can detect columns/tables in scanned pages and give you structured output for Pandas. That lets you programmatically order the posts instead of hand‑copying. A full‑blown machine learning model might be overkill—sometimes a regex to strip off quoted text and a bit of manual review gets you 90% there.
+
+
+
+Full disclose: I’m building a small Windows utility that intercepts Ctrl+V, previews what you’re about to paste and lets you accept/undo. It’s helped me clean up messy PDF text when transferring into Excel. It won’t solve your forum reconstruction problem, but if you end up copying data manually I can show how it works.
+
+
+
+If you go the Python route, pdfplumber + pandas is a good starting point, and layout‑parser is worth a look for more complex page layouts.
+- Thank you! I love the approach. Unfortunately html is gone, since this was collected a few months back while cached websites still existed haha. Thank you very much
+- Hi, I'm dealing with a simillar problem, but I can't really use one of the big LLMs because of privacy concerns. Do you think the smaller, local LLMs you can run on a computer are up to the task now?
+- Machine learning for layout recognition is 100% What I think is needed. Thank you so much for the reply, I 100% appreciate it. Do you have any tips or names to just guide me towards sources or content from which I could find examples and learn how to do that? Machine learning for layout recognition is hundred percent the solution here. I will go through the PDF manually and I will see all kinds of layouts, I will have the PDF extract current image + previous and forward one so that it forms one "stitched" image (since sometimes there's missing/halfway crossed out data that is included in the next image, and from there I will have the machine learning "cut out" the post (thankfully there is a nice distinct white line in CSS whoever wrote the site so that's visually visible in the PDF and that can work as the guideline for machine learning layout for individual posts. The quotes are also specific color (light brown background), and that is unique as well. So is the position of username, date and user image, so I would love to teach it how to get all that out from each individual image. I can't use fixed coordinates for each image since resolution, text size, position and whatnot might move a bit, but overall proportions and positions should stay. I also don't want to extract user images, only text. I merely mentioned them since they are included in pdf screenshots and they can help the layout recognition since it works by looking for "landmarks", right?
+- My experience is that it’s more of a hardware bottleneck. 
+
+Effectiveness of local vision models will vary based on the data you’re trying to convert - although they exist.
+
+We’re developing an unrelated tool for consumer machines/CPUs and I’ve seen this type of model take 1 hour per page with unacceptable quality. Cheaper/better/faster for a human to do it if you can’t use GPUs.
+
+Would be very interested to learn more in a DM if you’d like to chat. Wondering if there’s a business opportunity.

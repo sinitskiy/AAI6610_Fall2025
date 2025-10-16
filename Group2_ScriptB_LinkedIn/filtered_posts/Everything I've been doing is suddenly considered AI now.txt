@@ -1,0 +1,40 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1b7ano8/everything_ive_been_doing_is_suddenly_considered/
+Title: Everything I've been doing is suddenly considered AI now
+
+Content:
+Anyone else experience this where your company, PR, website, marketing, now says their analytics and DS offerings are all AI or AI driven now?
+
+All of a sudden, all these Machine Learning methods such as OLS regression (or associated regression techniques), Logistic Regression, Neural Nets, Decision Trees, etc...All the stuff that's been around for decades underpinning these projects and/or front end solutions are now considered AI by senior management and the people who sell/buy them. I realize it's on larger datasets, more data, more server power etc, now, but still.
+
+Personally I don't care whether it's called AI one way or another, and to me it's all technically intelligence which is artificial (so is a basic calculator in my view); I just find it funny that everything is AI now.
+
+Comments:
+- Ride the wave 🌊 just make sure to have savings when it crashes
+- IMO, the greatest achievement of AI is companies convincing others that everything is the product of AI.
+- 10+ years ago it was all "Big Data".
+
+Most of it still is.
+
+And much it was also AI at the time.  The technical definition of AI is pretty broad.
+- I remember being a Statistician and everything I did was considered Data Science all of a sudden
+- In 5 years everything you did will be called “quantum”
+- It’s like teenagers sex.  Everyone brags about it; not many is actually doing it
+- Pre 1994 they called it statistics. In 2004 they called it big data analytics. In 2014 they called it Machine Learning. 2024 They called call it AI. Whatever buzz word is needed to get those venture capital dollars baby.
+- All of those things were considered AI when they were invented. So were finite state machines and Prolog. They don’t stop being AI/ML just because they’re no longer state of the art.
+- We called it AI 15 years ago, then iz was DS, now back to AI. But the reason is different. Back then it was AI because it was like magic. Once you looked under the hood you realized it's just math and the magic was gone. Now they call it AI for PR reasons. If you say your company has an AI division today it's in line with the trend, just like it was if you said it has a DS division 8 years ago...
+- [removed]
+- AI is the marketing term for data science. 
+
+Data science is the marketing term for statistics.
+- Riding the wave 🏄‍♂️
+- Because they are AI. They were considered AI back then, they still are. Because of the hype of AI it just will be marketed that way. So nothing special
+- We have the same thing, and in all honesty I think it is quite worrisome. The LLM bubble is going to burst somewhere in the future, possibly giving AI a bad name. If good data science by then is considered AI it could very well be that our jobs are on the line as well.
+- Seems like it is on course to be basically everywhere. Anything that automatically detects something and reacts, that's AI now. Robo customer service phone system, AI. Image search, AI. Clothes dryer detects when your laundry is dry, AI. Thermostat in your house, AI.
+- Seen people go in and change slide decks so that the word “AI” is in there lol
+- [deleted]
+- Did you write it before or after receiving your 6 digit paycheck?
+
+Just get advantage of the hype and leave semantics to the (other type of) nerds lol
+- It's just the latest buzzword used by the same people that didn't realize that "The Cloud™" wasn't new concept, it's just someone else's computer.
+- Executives love two things: buzzwords and obscurantism. This combination produces awe in people that can’t see through the fluff. While most claims of use of AI aren’t technically incorrect, the whole point is to exaggerate how advanced an organization is in its capabilities. Many of the supervised and unsupervised ML techniques have been standard statistical analysis techniques for a long time. Users just weren’t claiming the AI label until it caught on in industry.

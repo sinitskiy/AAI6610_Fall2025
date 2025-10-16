@@ -1,0 +1,28 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m3shn7/p_retinanet_mobilenetv2_for_edge_tpu_deployment/
+Title: [P] RetinaNet + MobileNetV2 for Edge TPU Deployment
+
+Content:
+Hey everyone! I’m currently working on a machine learning project and wanted to get some insights from the community.
+
+I’m building a seed classification and detection system using RetinaNet. While its default backbone is ResNet50, I plan to deploy the model on a Raspberry Pi 5 with a USB Coral Edge TPU. Due to hardware limitations, I’m looking into switching the backbone to MobileNetV2, which is more lightweight and compatible with Edge TPU deployment.
+
+I’ve found that RetinaNet does allow custom backbones, and MobileNetV2 is supported (according to Keras), but I haven’t come across any pretrained RetinaNet + MobileNetV2 models or solid implementation references so far.
+
+The project doesn’t require real-time detection—just image-by-image inference—so I’m hoping this setup will work well. Has anyone tried this approach? Are there any tips or resources you can recommend?
+
+Thanks in advance!
+
+
+Comments:
+- I haven't tried the coral edge TPU, but I am interested in it, especially where it might plug into existing devices. However, I've wondered if in applications where it needs a Pi, if that's any better than a Jetson nano.
+- What I have found with CNN-based image classification and regression is that for each different task or domain the performance characteristics of each of the model architectures are very different. However it is very hard to work out in advance what would be good without spamming experiments.
+
+
+This may well not actually be true for people who know the vision literature much better than I do.
+- Do you need an already working implementation? As far as I understand you can just switch the backbone to mnv2 which will have image et weights and then you can train on your dataset.
+
+I've tried a similar approach but it wasn't exactly the same. A Mask Rcnn model for instance segmentation with MNV2 as a backbone on detectron2.
+- I successfully used MobileNetV2 with different detectors like SSD etc and it worked pretty well for my (uncommon) obiect detection tasks. It is blazingly fast compared to other backbones.
+
+Also, I have been experimenting with MobileNetV3 lately and can only recommend it (especially the small version!)

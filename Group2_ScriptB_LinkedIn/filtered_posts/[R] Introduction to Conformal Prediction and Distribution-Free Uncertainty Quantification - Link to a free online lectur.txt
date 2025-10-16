@@ -1,0 +1,53 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/t7yrbd/r_introduction_to_conformal_prediction_and/
+Title: [R] Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification - Link to a free online lecture by the author in comments
+
+Content:
+
+
+Comments:
+- Hi all,
+
+We do free zoom lectures for the reddit community.
+
+​In this lecture, we will discuss quantifying an ML algorithm's uncertainty for a particular test-time instance while rigorously guaranteeing that consequential errors don't happen too frequently.
+
+&#x200B;
+
+**Link to event (April 18):**
+
+[https://www.reddit.com/r/2D3DAI/comments/t2ti2y/introduction\_to\_conformal\_prediction\_and/](https://www.reddit.com/r/2D3DAI/comments/t2ti2y/introduction_to_conformal_prediction_and/)
+
+&#x200B;
+
+**Talk Abstract**
+
+​In deep learning and computer vision, it is common for data to present certain. As we begin deploying machine learning models in consequential settings like medical diagnostics or self-driving vehicles, knowing a model's accuracy is not enough. We need a way of quantifying an algorithm's uncertainty for a particular test-time instance while rigorously guaranteeing that consequential errors don't happen too frequently (for example, that the car doesn't hit a human). I'll be discussing how to generate rigorous, finite-sample confidence intervals for any prediction task, any model, and any dataset, for free. This will be a chalk talk where I begin with a short tutorial on a method called conformal prediction and tease a more flexible method that works for a larger class of prediction problems including those with high-dimensional, structured outputs (e.g. instance segmentation, multiclass or hierarchical classification, protein folding, and so on).
+
+&#x200B;
+
+**Talk is based on the speaker's paper:**
+
+* A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification  
+[http://people.eecs.berkeley.edu/\~angelopoulos/blog/posts/gentle-intro/](http://people.eecs.berkeley.edu/~angelopoulos/blog/posts/gentle-intro/)
+* ​Uncertainty Sets for Image Classifiers using Conformal Prediction  
+[https://arxiv.org/abs/2009.14193](https://arxiv.org/abs/2009.14193)  
+[https://github.com/aangelopoulos/conformal\_classification](https://github.com/aangelopoulos/conformal_classification)
+* ​Distribution-Free, Risk-Controlling Prediction Sets  
+[https://arxiv.org/abs/2101.02703](https://arxiv.org/abs/2101.02703)  
+[https://github.com/aangelopoulos/rcps](https://github.com/aangelopoulos/rcps)
+* ​Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control  
+[https://arxiv.org/abs/2110.01052](https://arxiv.org/abs/2110.01052)  
+[https://github.com/aangelopoulos/ltt](https://github.com/aangelopoulos/ltt)
+
+&#x200B;
+
+**Presenter BIO**
+
+Anastasios Nikolas Angelopoulos, a a third-year Ph.D. student at the University of California, Berkeley, advised by Michael I. Jordan and Jitendra Malik. From 2016 to 2019, he was an electrical engineering student at Stanford University advised by Gordon Wetzstein and Stephen P. Boyd.
+
+​His homepage: [http://people.eecs.berkeley.edu/\~angelopoulos/](http://people.eecs.berkeley.edu/~angelopoulos/)
+
+&#x200B;
+
+(Talk will be recorded and uploaded to youtube, you can see all past lectures and recordings in r/2D3DAI)

@@ -1,0 +1,102 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1n6llyh/tried_building_an_explainable_visionlanguage/
+Title: Tried building an explainable Vision-Language Model with CLIP to spot and explain product defects!
+
+Content:
+Hi all!
+
+After quite a bit of work, I’ve finally completed my **Vision-Language Model** — building something this complex in a multimodal context has been one of the most rewarding experiences I’ve ever had. This model is part of my Master’s thesis and is designed to **detect product defects and explain them in real-time**. The project aims to **address a Supply Chain challenge**, where the end user needs to clearly **understand** ***why*** **and** ***where*** a product is defective, in an **explainable and transparent** way.
+
+[A gradcam map activation for the associated predicted caption with his probability: \\"A fruit with Green Mold\\"](https://preview.redd.it/z4jrpe9slsmf1.png?width=1200&format=png&auto=webp&s=7396bc1716634623a9e4f3b52208a120a7e63c39)
+
+I took inspiration from the amazing work of [ClipCap: CLIP Prefix for Image Captioning](https://arxiv.org/abs/2111.09734), a paper worth a reading, and modified some of his structure to adapt it to my case scenario.
+
+For a brief explanation, basically what it does is that the image is first **transformed into an embedding using CLIP**, which captures its semantic content. This **embedding is then used to guide GPT-2** (or any other LLM really, i opted for **OPT-125** \- pun intended) **via an auxiliar mapper** (a simple transformer that can be extended to more complex projection structure based on the needs) that **aligns the visual embeddings to the text one**, catching the meaning of the image. If you want to know more about the method, this is the [original author post](https://www.reddit.com/r/MachineLearning/comments/q3xon8/p_fast_and_simple_image_captioning_model_using/), super interesting.
+
+Basically, It **combines CLIP** (for visual understanding) **with a language model** to generate a short description and overlays showing exactly where the model “looked”, and the **method itself it's super fast to train and evaluate,** because nothing it's trained aside a small mapper (an MLP, a Transformer) which rely on the concept of the **Prefix Tuning** (A Parameter Efficient Fine Tuning technique).
+
+What i've extended on my work actually, is the following:
+
+* **Auto-labels images using CLIP** (no manual labels), then trains a captioner for your domain. This was one of the coolest discovery i've made and will definitely use Contrastive Learning methods to auto label my data in the future.
+* Using **another LLM** (OPT-125) to generate better, intuitive caption
+* Generates a **plain-language defect description**.
+* A **custom Grad-CAM** from scratch based on the ViT-B32 layers, to create **heatmaps** that justify the decision—per prompt and combined, giving transparent and explainable choice visual cues.
+* Runs in a simple **Gradio Web App** for quick trials.
+* Much more in regard of the entire **project structure/architecture**.
+
+Why it matters? In my Master Thesis scenario, i had those goals:
+
+* **Rapid bootstrapping without hand labels**: I had the "exquisite" job to collect and label the data. Luckily enough, i've found a super interesting way to automate the process.
+* **Visual and textual explanations for the operator**: The ultimate goal was to provide visual and textual cues about why the product was defective.
+* **Designed for supply chains** setting (defect finding, identification, justification), and may be **extended to every domain** with the appropriate data (in my case, it regards the rotten fruit detection).
+
+The model itself was trained on around **15k of images**, taken from [Fresh and Rotten Fruits Dataset for Machine-Based Evaluation of Fruit Quality](https://data.mendeley.com/datasets/bdd69gyhv8/1), which presents around \~3200 unique images and **12335 augmented** one. Nonentheless the small amount of image the model presents a surprising accuracy.
+
+**For anyone interested, this is the Code repository:** [https://github.com/Asynchronousx/CLIPCap-XAI](https://github.com/Asynchronousx/CLIPCap-XAI) with more in-depth explanations.
+
+Hopefully, this could help someone with their researches, hobby or whatever else! I'm also happy to answer questions or hear suggestions for improving the model or any sort of feedback.
+
+Following a little demo video for anyone interested (could be also find on the github page if reddit somehow doesn't load it!)
+
+[Demo Video for the Gradio Web-App](https://reddit.com/link/1n6llyh/video/zflqjc6qlsmf1/player)
+
+Thank you so much
+
+Comments:
+- Really cool! Will be checking out your GitHub when I get a chance.
+
+Do you have an online demo?
+- Cool!
+- That's awesome! I'm actually implementing a very similar workflow for a defect detection use case in my work and this seems to be quite relevant to experiment with. Thanks for the share!
+- Damn this is cool. Also good to know I still need to learn so much, as a decent chunk of your explanation went over my head. But wow, great work!
+- did you retrain the transformermapper module?
+- Hey i am kinda new to training model in general I had a doubt regarding the training from what i am aware of CLIP cannot generate data for new images it performs zero classification based on some description given so did u freeze existing text encoder in the CLIP model and use the LLM for the generation and  ViT for learning the image? cause i am trying to work on a similar project which involves medical images(X-ray,CT scan etc..) and essential  i want the model to generate description of the uploaded Medical image along with Grad CAM.
+- Thanks man!! this cleared a bunch of doubts i guess i will probably start by freezing the text layer and work on training the ViT layers first and figure out from there.The reason i decided to with CLIP in the first place is becuz my dataset is ROCO and image caption pair medical dataset link to the [ROCO](https://huggingface.co/datasets/mdwiratathya/ROCO-radiology)
+- Thats cool! Would be fun to add personalization. Lets say, for example, that I'm an insect. In that case that fruit does look edible to me
+- Thank you so much! As things turned out, i've enjoyed a lot learning how to actually build something so contextually rich and complex such as this model. I do not have any online demo but if you're interested i can upload the weight for the model for you to try, since this was hosted on my local university server!
+
+All you have to do it's literally launch the [launch.py](http://launch.py) script and point at the weight. KISS always! ;D
+- Literally what i was thinking the entire time while understanding how to manipulate embeddings through projection to different spaces for achieving such things. Turns out this project was a total blast and had a lot more fun than expected!
+- Glad that helps! For further information, this is kinda a "blank" model in which you can literally plug whatever data you have. The way it works is simply by having a dataset of your images, products (even unlabeled) - and then construct a knowledge base pool in terms of caption and let CLIP decide which one is suited best for your image, select the top K maybe and then summarize them into a single, descriptive caption.
+
+This is how i trained my model and it works amazing on this dataset!
+- Thanks a lot for the appreciation! To be honest, much of this was obscure to me aswell before diving into it for this project so don't worry, there is always something cool to learn. You'll get there super fast! :)
+- Yeah! Actually, **it was literally the only module that was trained from scratch.** As CLIP presents a lot of complexity in his backbone (ViT, their Transformer for the Text Encoding), the scope of this work was to demonstrate that without any need of fine tuning on models trained with a lot of data (400M image-text pairs) we can utilize a PEFT technique (In our case, the Prefix Tuning) to obtain same if not better results as frozing last layers of the architecture to fine tune it. 
+
+Indeed, with this we also avoid the Knowledge Disruption that often come with fine tuning huge models with low amount of data.
+- Hello there!
+
+So, if my understanding is right, you're trying to adapt a similar architecture to solve the problem of generating image captioning of medical images.
+
+Let me break it quickly: As we know, CLIP is a wonderful model for Zero-Shot classification due to his huge latent space full of image-text pair learnt by contrastive loss.
+
+Now, let me clarify what i did to achieve the captioning for my case: Using the CLIP's capability of Zero-Shot inference was useful only for the training phase. Why may ask? Because i had this dataset where K amount of different fruits (Apples, Oranges, Bananas) were divided into two subsequent class: rotten and fresh.
+
+Obviously, rotten and fresh don't say much about the fruit, isn't it? So what i did basically regards using CLIP to generate some caption for each image from a base-knowledge (basically a file containing a finite number of possible caption for a given image: An image of a fruit with mold, An image of a fruit with soft rot, An image of a fruit with dark spots.. and so on): This is because CLIP align the given text and the given image and generate a probability based on the similarity between them.
+
+If the image contains a fruit (i.e: an orange) and traces of mold, it will say that the caption "An image of a FRUIT with MOLD" have an high probability.
+
+So i used this method to sort the first few caption with the highest probability and summarized them in a short, descriptive caption.
+
+Now, what i did, was to LABEL EACH IMAGE of my dataset with the auto-labeled caption generated by this method.
+
+After that, i had a fully labeled dataset ready to be used; I froze both CLIP's layer of text/visual backbone and basically only used the CLIP VITs to extract the image embeddings.
+
+Now, i used those image embeddings and concatenated them to the tokenized caption to take advantage of the Prefix Tuning technique (it's explained in the paper). With this, i trained my Transformer Mapper (a simple transformer, equal to the paper Attention is all you need) using the loss generated by the LLM (in my case, OPT125) that took the concatenated caption+embeddings as input and the caption as ground truth.
+
+With enough training, the mapper learned to make meaningful visual-to-text mapping to pass to the LLM to obtain a meaningful description of the image without the need of the label itself.
+
+With this method i generate the caption for my image!
+
+In your case i'm not sure if CLIP it's good enough to understand what's in the actual medical image, because i don't know if in the 400M image-text pairs w some sort of medical data.
+
+In your case what i'd do is to first fine tune directly the last layers of the ViT and the Text Transformer of CLIP with your medical data (since most of the time it's sensible and need a specific domain train) and then use the method of the mapper to generate the caption.
+
+If the question of "why should i use an LLM for captioning if CLIP already produces some caption?" dances in your head, here's the answer: because CLIP align an image with SOME short text. The more complex the text is, the more fall of the space in which it should be. For example, if you associate an image of an apple to "An apple" as caption, it falls into the apple's latent space group, but if you associate to the image a caption "An image of an apple that presents mold on its surface and signs of dark spots and soft roft" it falls literally in some strange places and you don't want that. With CLIP you should keep things simple.
+
+You can also try to generate some caption for your image without fine tuning with your medical data but i dont think that CLIP is specialized enough in medical context without a fine tune. Instead, fruits are commonly found across images so it's an easier task.
+
+Hope that helps!
+- Actually the personalization comes from the pool of base knowledge you give to the model. The model itself doesn't decide what's good or not, it only provide explanation about what it actually sees! I think that with a little bit of simple reasoning methods (that would also be easy to plug in) we could achieve that! ahah
+- yeah, by the way how did you come up with that module? I meant the transformermapper.
+- It was explained in the paper that the projection mapper could have been either an MLP or a Transformer. For research purposes i've used the latter! :)

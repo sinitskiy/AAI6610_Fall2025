@@ -1,0 +1,34 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/u5hvre/career_plan_guideline/
+Title: Career Plan Guideline
+
+Content:
+Hello all,
+I am trying to create sort of a loose blueprint of my career. Please let me  know if this actually sounds realistic as obviously I don't have a lot of experience.
+
+I'm currently in my third year of BSc Double Major CS and Bio. I have been working at a lab at my uni for a few months and will be working here till I graduate next year. I have already been working on a project that is supposed to get published next year around July and I will hopefully pick up another project at the lab in the meantime. So if all goes well, I will hopefully have two publications under my belt by the end of next year. 
+
+The lab I'm working at currently has a great PI. They have a good impression of me so far. The lab is pretty well funded (one of the most well funded ones at the uni). There are a bunch of staff employed specifically for running Bioinformatics related tasks, along with a wet lab of chemists and biologists. I am planning to work my way through the lab till I graduate next year so that they feel comfortable to hire me as a full time employee then (there are a few staff who only have BSc degrees so it's possible I believe). Does this seem realistic tho?
+
+I hope to work there for 2 or 3 years and then move into a MSc programme, perhaps even in the same lab if the right opportunity comes up. However, my grades right now aren't that great, I'd say JUST above average. Do you think I could be considered as a good candidate for MSc at the lab given my prior experience with the lab when I apply in 3 or 4 years? The other thing I want to mention is that I am trying to specialize in the Data Science and ML aspect of Bioinformatics. Mainly because the skills would be widely applicable and I won't have to stay within Bioinformatics later if I wish to pivot. And I mean I also enjoy ML a lot. So the MSc programme would be related to that as well (Statistical Machine Learning is a name of a programme that comes to my mind which would align to my interests and something the uni offers). 
+
+After my MSc, I hope to move into industry from academia but I'm not sure how exactly people do this shift. Would a PhD be required at this point? 
+
+I know this sounds a little far fetched but I like to have a mental path carved out just so I have a sense of direction. Things most likely won't be the same in 3 or 4 years but it helps.
+
+Comments:
+- I can give you two suggestions:
+
+It's good to move around when you are young. It opens your eyes to different subjects and ways of working, and also can help you reframe how successful you want yourself to be in your career. I would not stay where you are working now once you have graduated! (Caveat - a partner or caring responsibilities can be important and are a very good reason not to move).
+
+I would do a PhD, not a masters, straight away, if you can. It opens doors to doing self-led research rather than work more directed by others. This is true in and out of academia. And in any case, what would you learn with a (very expensive) masters degree that you wouldn't learn in a PhD? You could be quite competitive with your lab experience, particularly outside of the US (it sounds like you are there) where PhD recruitment is much more directly into a research environment than the grad school system is.
+- I understand your point about moving to a different place after graduation. However, I do have other responsibilities and obligations which would require me to get a somewhat stable job after I graduate. Given the competitive nature of the job market, I feel like working at the lab I have already been working at and know the people could give me a huge advantage over other potential candidates for the job. 
+
+And yes I would like to do a PhD directly but the way it works where I am is first you need to get into a MSc which can then be converted into a PhD based on the scope of the project. I would definitely try to do this but it's not guaranteed. That's also another reason why I would do the MSc in a more ML based program rather than Bioinfo since I think a MSc is ML would make me more competitive rather than in Bioinfo (although I may be completely wrong about this). However, it of course depends on the impact of the thesis work and what I learn during the course, but on face value, ML based sounds more competitive I think.
+
+What did you mean by this tho? "where PhD recruitment is much more directly into a research environment than the grad school system is."
+- ML PhD programmes would certainly be harder to get into than Comp Bio ones.
+
+>What did you mean by this tho? "where PhD recruitment is much more directly into a research environment than the grad school system is."
+
+You say your grades are average. I imagine this would be more of an impediment to getting into a US PhD program than in other countries, where your research experience would be valued.

@@ -1,0 +1,142 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/117u3rw/deciding_what_phd_program_to_persue/
+Title: Deciding what PhD program to persue
+
+Content:
+Hi! I usually don't post, but I feel like I need some guidance from the community.
+
+I am a first gen student and I recently applied to several PhD Programs revolving around bioinformatics:
+
+* \[Accepted\]  Yale: Computational Biology and Bioinformatics
+* \[Accepted\] Duke: Computational Biology and Bioinformatics
+* \[Accepted\] University of Washington at St. Louis: ​Biomedical Informatics and Data Science
+* \[Waitlisted\] UCLA: Bioinformatics
+* \[Interviewed and waiting for a response\] Stanford: Biomedical Informatics
+
+I am beyond blessed to have some offers on the table, however, I don't know what to consider. I am mostly interested in population health, clinical informatics, and not really cellular biology level informatics.
+
+A lot of these schools have a focus on the cellular level (at least with the coursework), however, it doesn't really matter when it comes to the PhD as you can rotate with any PI \*at least that is what I've heard\*.
+
+However, by looking at the coursework some are less enticing than others. My background is in Statistics and Data Science and I would like to continue that path around health, for example with the usage of EHR's and Machine Learning to predict a patients trajectory/outcome.
+
+Long-term goal is to go into industry, however, I heard that the bioinformatics field can be a little elitist. 
+
+What are some things you would consider when selecting a school? Do you attend any of these schools? If so, what are your experiences and would you suggest it?
+
+Comments:
+- It’s hard to give recs on such great programs. You’ll be setup very well at any of these so it’s really splitting hairs. 
+
+Priority 1: Research. If any of these have only a couple of PIs whose labs you could see yourself joining it’s probably best to look elsewhere. 
+
+Priority 2: Coursework. If the courses are mostly just a rehash of what you already know you should look for somewhere that will better expand your core knowledge. 
+
+My biggest recommendation is to go somewhere where you’ll be happy. PhDs in The States are very long, and if you end up in New Haven and find out you hate the cold and don’t like being in a small city that’s a couple hours from New York you’re probably going to have a bad personal life and probably do worse science.
+- This post might be useful
+
+https://www.linkedin.com/pulse/how-pick-lab-graduate-school-dino-di-carlo/?trackingId=8%2B6zorsSQkuZ1t7wKRtEjw%3D%3D
+- Any of those schools will be great, congrats! If you want to focus on rwd, those degree titles don't scream it so check the curricula and find one with several faculty using EHRs or doing epidemiology.
+- Can I ask what was your profile like? I will be applying this year to bioinfo programs as well and I am super anxious about not being a good enough candidate :(
+- If your goal is industry a PhD may not be the best path, but I assume you’ve thought this through and have considered masters programs as well. If you’re set on a PhD and have an industry end game, chose a school based on location (close to opportunities for internships). If you were still applying, I’d recommend including schools in Boston for this reason. Do some digging on the biotech companies around each school and factor this into your decision.
+- You might want to refer to the WU program as Washington University at St Louis, as the University of Washington (the Seattle one) has a equally strong Biomedical Informatics doctoral program, with (as an alumni) a strong health focus.  Of the ones you list I'd say that Stanford and WU probably have the strongest out of the box health application alignments, but all of them have their own hospitals/SOM programs so I'd look at specific researcher at each institution for whether you'd like to work with them.  You might also want to look at the CTSA's at each as they often are close collaborators with these programs in translational health research (less so with pure bioinformatics, in my experience).
+- hey, any chance we could connect on linkedin?
+- For sure! I'll give you a lot of perspectives as I did not belive I was an exceptional candidate. I think what matters the most is Who you are, your unique story, your interests, and what you can bring to the table: 
+
+### Education 
+
+School: The University of Texas at San Antonio (Began Fall 2019)
+
+Graduated: Spring of 2023
+
+GPA: 3.95 / 4
+
+It is a small texas public school that is not really known for anything, aside from maybe Cyber Security. I chose to go there because it had a strong First Gen Program, and as a Mexican American, I found that to be really important to me, and it was something that I could not find at A&M, or UT Austin. 
+
+### Degree 
+
+I changed my major 4 different times: Chemical Engineering --> Cyber Security --> Enviromental Science --> Statistics and Data Science. 
+
+### Internships
+
+My first internship was the summer of Covid going into my Sophomore year. I worked with the Rocky Mountain Conservation Corps working on Trail Maintenance ( it had 0 to do with what I do now). Summer of 2020
+
+* Here is where I realized that I did not want to do construction type work anymore, as I could continue doing that with my dad, and get paid more (prob along more the lines of civil engineering which I was not interest in) 
+
+Summer of 2021: Acceptance to the Stanford Summer Research Program: Worked on Omics ML Algorithms (So mostly data science and model building) on Low Middle Income Countries.
+
+Summer of 2022: Acceptance into the Yale Amgen Summer Research Program: 
+Worked on the applications of Cancer Effect sizes in Colorectal Cancer through Exome Sequences (Not my fav project, but I got to learn a lot about cancer research). 
+
+* These are flashy places, but what matters most, no matter the research, is explaining why your research is important. 
+
+### Leadership
+
+* ACM-Minorities Chapter President at UTSA (2021-2022)
+* Created the first and only Marginalized Gender Hackathon in San Antonio Tx (2021-2023, * still an ongoing hackathon with ) 
+* Residential Assistant (2021-2023)
+* United Nations Millennium Fellowship (2020)
+
+### Hackathons
+* 1st place RowdyHacks General Track (2022)
+* 1st Place Hardware Hack (2022)
+** My team and I created an automated hydroponics system that sent data over to our website, and used ML models to calculate the genus of the plant
+
+* 1st Place UNT Hacks - Created a mini mars rover controlled through Computer Vision and the American Sign Language
+* 2nd Place NSA Data thon - Forecasted future trends of Births in the US
+* 2nd Place Regional Steel Bridge Competiton * I really like to weld and its more of a hobby now
+
+### My weaknesses 
+
+* I've never taken a formal CS Class, as all that I have learned has been self taught and not offered in my degree plan. 
+* I am very weak when it comes to Algorithms. Sure, building an AI Algo is one thing (and tbh, Idk if it counts), but making one from scratch is another thing
+* I have never taken a bioinformatics course, and tbh, I still don't know a lot of things. I have worked minimally with genome sequence, and omics data, but aside from that, my work has been very multivariate and statistical. 
+* If I could describe my programming experience it is: 50% R, 45% SAS, 5% Python. All is data science oriented
+* The only real bio class I've taken is 1 Genetics course
+* I do not have any publications
+
+### Strengths
+* I feel like my research interests are unique: I am interested in Utilizing human health and environmental data to gain insights into climate-related health impacts and developing sustainable health interventions for addressing the challenges posed by climate change on human well-being. 
+** This had a lot to do mainly with my background of living in Mexico City and seeing how air pollution affected my city and family. So once again, I had a strong story to tell, which links to why I want to do research. 
+* I had really strong letters of rec. I can not stress this enough!!! For all of my apps I needed 3 letters, and they all came from past PI's from summer research programs, and a professor from my school who all knew me really well both academically, and with my involment throughout college in my student orgs. 
+* I want to say that I have strong analytical skills with my degree in Statistics, but when it comes to DL areas I tend to dwindle ( i need more experience in that area ). 
+* I have a lot of experience presenting. From creating intro to python workshops, to presenting my research at university conferences. I feel like I have a calling to teach/inform students/general public. 
+
+Please don't let any flashy titles discourage you from applying. Everyone has a unique path, and as long as you show your unique path, and how you contribute/want to contribute to your community, and passion for research, they will notice. 
+
+Also, if you have any publications, it will help you out tremendously.
+- Wow!!!! Thank you so much for such a detailed answer!!! It is really helpful for me!! Did you contact professors before applying? Also, congratulations!!!!
+- I think my professional experience is really similar to yours.
+
+ I studied civil engineering in China for my undergraduate degree, but I found that I have no passion for architecture. However, I cannot change my major after my sophomore year in a Chinese university, but I successfully applied for the bioinf master in umich. 
+
+Do you have any suggestions for choosing a school and writing in Photoshop? Because I am afraid that the admissions officers of top universities will reject me because they think that my undergraduate major is completely irrelevant to my current content.
+- Fascinating. I don't get why Bioinformatics instead of entering a Public Health PhD program? At the time you wrote this, it seems you were VERY new to what bioinformatics and molecular biology are actually doing computationally as well as wet lab-wise. Which one did you end up choosing and what was the experience like of having to learn basically ALL of molecular biology just to be at a basic level understanding of what you were doing on the data side? Were you able to get thru that hurdle? What happened? I need the rest of the story.
+- It's a realy impressing story, I feel like one day some  director would film a movie about you.
+- Hey! Its been a while since I have checked this! 
+
+  
+I ended up going to Stanford and persuing my PhD in Biomedical informatics. Part of the reason for this is that, while it sounded more like bioinformatics at the time, internally the department was quite vast. They are primarly working in these vast areas: 
+
+* Translational Bioinformatics moves developments in our understanding of disease from basic research to clinical care.
+* Clinical Informatics develops methods and tools directly applied to patient care.
+* Public Health Informatics works on challenging problems from health systems and populations.
+* Imaging Informatics addresses intelligent management, interpretation, and annotation of biomedical images.
+
+  
+At the time when I wrote this, my background was just in the applications of statistics and classical machine learning into omics data. However, I knew that I wanted to get a breadth of understanding in different areas. I was very surprised when I got the offer from Stanford and knew that I wanted to go there as all other programs (with the exception of WASHU) appeared to be more core bioinformatics. 
+
+  
+As of a year ago the program changed names to Biomedical Data Science, and this is now the name of the PhD that I am persuing. I am about to start on my 2nd year here! Just last week I joined a lab where I work with the California Dept of Public Health and use satellite data and statistical modeling to probabilistically forecast West Nile Virus Cases in California! So far, I have enjoyed it so far! It has been very busy, but at the same time, also rewarding. 
+
+  
+As I look back at this reddit post, I remember being very nervous.  I don't want to lie... but I still continue to be nervous, however, I think picking Stanford was the right school for me as it satisfies my goals and aspirations!
+
+To answer your questions: 
+
+**What was the experience like of having to learn basically ALL of molecular biology just to be at a basic level understanding of what you were doing on the data side?**
+
+To be quite honest with you, I did not learn all the molecular biology. Aside from being a Stats major in undergrad, I took Zoology, Botany, and a genetics course. A lot of the bio I have learned has been through research (prior experience with Omics and Cancer research). I think the hardest part is learning the math/stats/cs. Once you know this, its really just applying the techniques into biology and learning it. However, its important to know both. 
+
+ **Were you able to get thru that hurdle? What happened?** 
+
+I've taken a handfull of classes here during my first year, however, none have been biological. Our program is quite technical so there is a big emphasis on the math behind Stats and Machine learning. The biggest hurdle here is the technical math courses here. You can take whatever Bio course you want. Most people hold off on this until they have found a lab, and then they begin to take the bio courses (which is just 1 or 2 classes).
+- Biomedical Informatics. That's great to hear. I think it fits the macro-level work you described as your desired field and it seems like it is a good fit for you. You will master the math I'm sure and since you're not doing Bioinformatics, you can pick whatever bio classes you want. Congratulations. I wish you well on the rest of your journey.

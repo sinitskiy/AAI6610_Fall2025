@@ -1,0 +1,41 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kj59j7/need_suggestions_for_a_2025_day_mldl_project_nlp/
+Title: Need Suggestions for a 20–25 Day ML/DL Project (NLP or Computer Vision) – My Skills Included
+
+Content:
+Hey everyone!
+
+I’m looking to build a project based on Machine Learning or Deep Learning – specifically in the areas of Natural Language Processing (NLP) or Computer Vision – and I’d love some suggestions from the community. I plan to complete the project within 20 to 25 days, so ideally it should be moderately scoped but still impactful.
+
+Here’s a quick overview of my skills and experience:
+Programming Languages: Python, Java
+ML/DL Frameworks: TensorFlow, Keras, PyTorch, Scikit-learn
+NLP: NLTK, SpaCy, Hugging Face Transformers (BERT, GPT), Text preprocessing, Named Entity Recognition, Text Classification
+Computer Vision: OpenCV, CNNs, Image Classification, Object Detection (YOLO, SSD), Image Segmentation
+Other Tools/Skills: Pandas, NumPy, Matplotlib, Git, Jupyter, REST APIs, Flask, basic deployment
+Basic knowledge of cloud platforms (like Google Colab, AWS) for training and hosting models
+
+I want the project to be something that:
+     1. Can be finished in ~3 weeks with focused effort
+     2. Solves a real-world problem or is impressive           enough to add to a portfolio
+     3. Involves either NLP or Computer Vision, or both.
+
+If you've worked on or come across any interesting project ideas, please share them! Bonus points for something that has the potential for expansion later.
+Also, if anyone has interesting hackathon-style ideas or challenges, feel free to suggest those too! I’m open to fast-paced and creative project ideas that could simulate a hackathon environment.
+
+Thanks in advance for your ideas!
+
+Comments:
+- > Here's a quick overview of my skills and
+experience: Programming Languages: Python, Java ML/DL Frameworks: TensorFlow, Keras, PyTorch, Scikit-learn NLP: NLTK, SpaCy, Hugging Face Transformers (BERT, GPT), Text preprocessing, Named Entity Recognition, Text Classification Computer Vision: OpenCV, CNNs, Image Classification, Object Detection (YOLO, SSD), Image Segmentation Other Tools/Skills: Pandas, NumPy, Matplotlib, Git, Jupyter, REST APIs, Flask, basic deployment Basic knowledge of cloud platforms (like Google Colab, AWS) for training and hosting models
+
+Everytime I see something like this, I automatically assume that this person either barely know anything or has 10 years of experience.
+- It is not huge but back in 2020,  I did bunch of fun CV projects.  Below is the link and it might give some ideas to you.
+
+https://github.com/q-viper/7-Days-Of-Computer-Vision-Projects
+- choose some  unlabeled dataset on roboflow and then setup label studio and start labeling images first batch can be 1k then train model, then  setup autolabeling of unlabeled data and annotate data only where model is not confident enough and then retrain and  continue the process and log how your model perform on new labeled data, I think that would be a good project. For this project you would need to setup label studio with storage then deploy your trained model , and setup label studio to call your model to annotate data.
+- LLM if you are interested: [https://comfyai.app/about](https://comfyai.app/about)
+
+There is some hands-on practice about RAG and fine-tuning LLM stuff
+- At 10 years of experience or 100 years of experience, does anyone need to be putting SpaCy, Jupyter, Matplotlib, Numpy, half this other word salad of terms?
+- These look good. Nice job!

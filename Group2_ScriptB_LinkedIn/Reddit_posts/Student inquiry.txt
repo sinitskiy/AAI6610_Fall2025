@@ -1,0 +1,9 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1apww20/student_inquiry/
+Title: Student inquiry
+
+Content:
+Hello good morning! My name is Santiago and I am a final year student of biological sciences in Argentina. I would like to ask you if you know of research groups focused on gene therapy, in my country there is not much research aimed at that and perhaps I will have to look abroad. Any ideas on what groups/universities/companies working on that? I have knowledge of machine learning and bioinformatics bases, so I would like to apply that knowledge in precision therapies. Thanks a lot!
+
+Comments:
+- You can try University of Minas Gerais(UFMG) in Brazil.

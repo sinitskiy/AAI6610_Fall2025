@@ -1,0 +1,12 @@
+Title: AptaDiff: de novo design and optimization of aptamers based on diffusion models
+
+Abstract: Aptamers are single-stranded nucleic acid ligands, featuring high affinity and specificity to target molecules. Traditionally they are identified from large DNA/RNA libraries using in vitro methods, like Systematic Evolution of Ligands by Exponential Enrichment (SELEX). However, these libraries capture only a small fraction of theoretical sequence space, and various aptamer candidates are constrained by actual sequencing capabilities from the experiment. Addressing this, we proposed AptaDiff, the first in silico aptamer design and optimization method based on the diffusion model. Our Aptadiff can generate aptamers beyond the constraints of high-throughput sequencing data, leveraging motif-dependent latent embeddings from variational autoencoder, and can optimize aptamers by affinity-guided aptamer generation according to Bayesian optimization. Comparative evaluations revealed AptaDiffs superiority over existing aptamer generation methods in terms of quality and fidelity across four high-throughput screening data targeting distinct proteins. Moreover, Surface Plasmon Resonance (SPR) experiments were conducted to validate the binding affinity of aptamers generated through Bayesian optimization for two target proteins. The results unveiled a significant boost of 87.9% and 60.2% in RU values, along with a 3.6-fold and 2.4-fold decrease in KD values for the respective target proteins. Notably, the optimized aptamers demonstrated superior binding affinity compared to top experimental candidates selected through SELEX, underscoring the promising outcomes of our AptaDiff in accelerating the discovery of superior aptamers.
+
+Key PointsO_LIWe proposed AptaDiff, the first in silico aptamer design method based on the diffusion model. Aptadiff can generate aptamers beyond the constraints of high-throughput sequencing data.
+C_LIO_LIAptadiff can optimize aptamers through affinity-guided generation via Bayesian optimization within a motif-dependent latent space, and the affinity of the optimized aptamers to the target protein is better than the best experimental candidate from traditional SELEX screening.
+C_LIO_LIAptadiff consistently outperforms the current state-of-the-art method in terms of quality and fidelity across high-throughput screening data targeting distinct proteins.
+C_LI
+
+Date: 2024-10-02
+
+DOI: 10.1101/2023.11.25.568693

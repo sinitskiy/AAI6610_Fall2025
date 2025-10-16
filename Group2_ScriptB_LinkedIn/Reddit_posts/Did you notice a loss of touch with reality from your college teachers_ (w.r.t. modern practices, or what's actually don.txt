@@ -1,0 +1,92 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17pw6fx/did_you_notice_a_loss_of_touch_with_reality_from/
+Title: Did you notice a loss of touch with reality from your college teachers? (w.r.t. modern practices, or what's actually done in the real world)
+
+Content:
+Hey folks, 
+
+Background story: This semester I'm taking a machine learning class and noticed some aspects of the course were a bit odd.
+
+1. Roughly a third of the class is about logic-based AI, problog, and some niche techniques that are either seldom used or just outright outdated.
+2. The teacher made a lot of bold assumptions (not taking into account potential distribution shifts, assuming computational resources are for free \[e.g. **Leave One Out Cross-Validation**\])
+3. There was no mention of MLOps or what actually matters for machine learning in production.
+4. Deep Learning models were outdated and presented as if though they were SOTA.
+5. A lot of evaluation methods or techniques seem to make sense within a research or academic setting but are rather hard to use in the real world or are seldom asked by stakeholders.
+
+(This is a biased opinion based off of 4 internships at various companies)
+
+This is just one class but I'm just wondering if it's common for professors to have a biased opinion while teaching (favouring academic techniques and topics rather than what would be done in the industry)
+
+Also, have you noticed a positive trend towards more down-to-earth topics and classes over the years?
+
+Cheers, 
+
+&#x200B;
+
+&#x200B;
+
+Comments:
+- Obviously this varies massively by field, instructor, and scope of the class. For example, in an intro machine learning course I wouldn't expect any issues related to production, it's introducing the methods and applications, to move models to production requires different skills and a different course, that may or may not be required for your program. Much of machine learning is done on a small scale and is not indended to do any more than provide a one time insight. Obviously this varies by employer, but that's the point, this class has to cater to everyone.
+
+Your professor certainly has their biases, but so do you, and I wouldn't say internships gives you great insight into what all firms are doing in different industries.
+- [deleted]
+- I think you need to understand the basics before delving into the SOTA. It's a (introductory, i think) course, not a conference, and while the stuff feels outdated, they are important if you want to understand the arguments and logic of the SOTA (what was improved, what issues are targeted, what can be improved and what's not improvable...). I think if you'd just skipped to the SOTA stuff you would take a ton of things for granted and memorized them like axioms. At this point it depends on the lecturer's goal -- do they want to teach you commands and names to learn, or give you a broader education that would allow you to proceed with the SOTA methods individually in the future.
+- Other people have mentioned that it largely depends on the level of courses. 
+
+Even at graduate level courses like this [one](https://courses.cs.washington.edu/courses/cse546/), many courses are about laying down foundation for future study and research. It's not about the methods or tools it self but the principle behind it. That's why I expect any decent programs and classes have heavy emphasis on topics linear regression etc.  Many of the state of the art methods are natural evolution of the basics. The college should focus on teaching the basics so that the students can learn new methods and concepts on their own later. 
+
+A good instructor will emphasize on the basics and touch on how things evolves. For Ph.D. students, the department often have those reading classes which just let students read the newest paper and present.
+
+It sounds that you are more interested in a class which just allows to start using tools right away. Not saying it's not important, but different classes have different emphasis.
+- It probably varies a lot by field, by department, even by professor, whether they make any effort at all regarding what they teach to keep up to date or industry- relevant. I could imagine somebody teaching the same syllabus year after year without updating it. They have tenure, after all. Actually, this is partly the endless debate about education vs training. What they should be doing is giving people a firm foundation in the subject. On the job training should be done on the job. Also don’t forget accreditation. In STEM, the accrediting bodies dictate much of the curriculum, and they aren’t always up to date either. For example, the Chem E curriculum seems to be almost exactly what it was when I was an undergraduate nearly half a century ago.
+- I’ve noticed more so that OP is out of touch with academics and why one attends college.
+- Yeah, that's the thing about college. It's not always meant to teach. It's meant to stimulate critical thinking that you wouldn't really get in high school. It's a lot of ancient concepts.
+- The Masters program I did was pretty rigorous and had an industry practicum that lasted 8 months which was basically like a mini team based internship. They kept in touch with whatever was happening in industry and try to teach what’s relevant.
+
+Even in these conditions we were a little bit behind. I think that’s totally ok as long as foundations are good.
+
+Also most people graduating with just a Masters don’t often work in hardcore ML roles (or at least that’s been my experience)
+- “A lot of evaluation methods or techniques seem to make sense within a research or academic setting but … are seldom asked by stakeholders.”
+
+You wouldn’t expect business stakeholders to care deeply about evaluation - it’s up to ML practitioners to evaluate models prior to implementation and to convince the stakeholders it’s a necessary step.
+
+EDIT: I also wouldn’t expect MLOps to be taught in an ML class but learned on the job.
+- I graduated from UC Berkeley with a degree in Data Science, but was never taught what an API was. So when it came time to deploy models, I was in the dark. I had to learn that on my own. 
+
+So I was taught all the tools to build and optimize a model, but never taught the tools of how to make my models usable by others. 
+
+So I agree with your sentiment. 
+
+I hope to see colleges start teaching a machine learning engineering course or even have it as a major or specialization.
+- The online academic courses give you foundational knowledge of how everything works, but at the end of the day, you need to be the mechanic. I have never met a professor who was actually well trained at being the mechanic except for computer science professors. The applied math, math, and physics profs rarely had any idea of productionalization or even dealing with merge conflicts.
+
+The down to earth stuff is online, but also, outside of academia, deep learning models ARE state of the art. It’s difficult to not only build a reliable full stack DL model with logging and modular OOP style and containerized deployment, but then selling to the business stakeholders (why they should trust it) is just as difficult.
+
+Learning and actually implementing the basics like stratified sampling and different kinds of cross validation (e.g. how do you perform CV on time series data?) is much more important that using tools on the bleeding edge. Also, you need to boldly make assumptions about distributions and which statistical techniques to use. Make the most compelling argument you can, but if someone else has a good idea, then code it up and compare the performance to learn from it. Distribution transforms and data smoothing are arbitrary, but also necessary and commonly used.
+
+Classes in college are never down to earth, even the senior project ones. If you want to get the most out of this course, I would recommend making every project into a functional CLI app that follows OOP style and has a README.md. Post those to your GitHub and when you graduate at 22, if you have 5-10, that’s high chance of a full time associate position at 100k despite no experience. Good luck man, I was taking a shit and this was an interesting read. Peace ✌️
+- [deleted]
+- Generally speaking, very few schools will teach MLOps. It’s not on the curriculum and quite frankly a lot of lecturers don’t even know what it is. As for state-of-the-art DL models, I think a lot of people can’t keep up, and in any case, the students need to be able to follow the course, which limits how deep they can go into it.
+- Yes.  My tenured CS prof that teaches a course in Python had never heard of Pandas
+- I did my MSc in Data Science part time when I had around 5 years industry experience. It became very quickly apparent that while the instructors were very clever and good at what they did, they didn't have industry experience (beyond a few doing some consultant work). I strongly suspect that a lot of their views about how things are done in industry were lifted directly from medium posts or this subreddit, and since they were the lecturer they then had to confidently assert that this is how it's done.
+- For all college CS courses, I wouldn't worry about the lack of practical knowledge you need for industry -- you'll go into industry and learn it there. The niche academic concepts you're getting won't come up super often, but it'll provide a deeper base of understanding and intuition when you're making decisions. Plus, industry changes so quickly, there's no way to keep a full college course up to date with the state of the art.
+
+You can learn practical ML yourself online. The uni courses are there to teach you the other subtler stuff and prove you've done some projects before. Plus some credentialism. Don't worry that it feels impractical -- you'll get the practical knowledge once you're practicing.
+- Hey there,
+
+It's not uncommon for academic courses to emphasize foundational theories and methodologies, some of which may seem outdated or less practical in the industry setting. Professors often have a research background and might prioritize academic rigor over industry applicability. This can lead to a focus on logic-based AI and classic techniques which are crucial for understanding underlying principles but may not align with current industry best practices like MLOps or state-of-the-art (SOTA) deep learning models.
+
+However, the gap you've noticed between academic instruction and industry needs is a well-recognized issue. The good news is that there is indeed a positive trend where more curricula are starting to include practical, industry-relevant topics. The introduction of courses that focus on the practical deployment of machine learning models, including aspects like MLOps, is a testament to this shift.
+
+It's important to balance the theoretical underpinnings with practical skills. Internships, as you've experienced, are an excellent way to gain industry-relevant experience. It might also be valuable to bring this feedback to your department, as constructive student input can be a powerful catalyst for curricular changes.
+
+Cheers!
+- Maths and stats grad here: the only thing that really carried over was an awareness of different probability distributions and where they arise in the world, basic programming in R and linear algebra. Probably some soft skills too.
+- I mean, education has always been hyper political and disconnected from real business processes. Teachers teach what's generally accepted, easy to teach and what's interesting. [Revenue is based on butts in seats, medical sales, returns from endowments (borderline hedge funds) and tuition](https://nces.ed.gov/programs/coe/indicator/cud/postsecondary-institution-revenue#:~:text=In%202020%E2%80%9321%2C%20total%20revenues,constant%202021%E2%80%9322%20dollars\).&text=Overall%2C%20total%20revenues%20for%20postsecondary,%24745%20billion\).) -- not student success in the labor market.
+
+Naturally this will vary by field.
+
+-- Former teacher of 5 years and RA in grad school (economics)
+- i think all but #4 are alright. they should definitely leave the industrial stuff to industry, and focus on teaching you the academic and theoretical stuff. because you may want to go straight to industry, but the next bengio or lecum might be sitting next to and it would be a shame if they got bogged down in implementation detials rather the research aspect of machine learning
+
+4 is bad though because they really should update their course to include the latest and greatest stuff like representation learning and foundation models and language modelling and attention and stuff, even at an intro level. i get why it might be tough for them to update it, but they really should

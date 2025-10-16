@@ -1,0 +1,17 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/yftgxy/any_studies_or_methods_that_determine_the/
+Title: Any studies (or methods) that determine the appropriate sample/cohort size for a regression or classification task?
+
+Content:
+My advisor asked what a good sample/cohort size for our microbiome project.  We usually end up with between 100k-1M features but will use some qc, feature engineering, and feature selection methods to get between 100-5000 features.  We have both continuous (e.g., clinical measurement) and categorical data (e.g., diseased/healthy).  
+
+**Are there any studies or methods that discuss how many samples would be required to model certain types of data/hypothesis?**
+
+I'm sure this is dependent on each dataset and the variables but it's loop b/c you have to gather the data to determine.  In machine learning, I've always been under the assumption that more data is better but have never been able to answer the question of how much data is enough before getting the data.
+
+Comments:
+- You can fit up to sqrt(n) features (betas) using basic ML (maximum likelihood) regression, REML regression would allow somewhere up to n-20 features to be estimated. Given that n (your samples) are truely independent biological replicates.
+
+[Rant] However, no one cares about degrees of freedom and overfitted machine learning models anymore. Reviewers tend to know nothing about statistics, and as long as your results mention a famous gene doing a t-test on non normal distributed data will get you published in Nature [/Rant]
+- Power analysis?
+- Power analysis will tell you the sample size needed for detecting an effect given the effect-size and variance in the distributions. It doesn't help you with determining how many covariates or you can fit in your model, which is dependant on the regression approach taken.

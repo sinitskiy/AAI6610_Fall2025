@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1g1j4os/complete_machine_learning_examples_in_bioinfo/
+Title: Complete Machine learning examples in Bioinfo
+
+Content:
+Hi, I’m looking for complete machine learning projects with code that utilize basic algorithms like regression, decision trees, and SVMs, specifically in the bioinformatics field (but not LLMs). During my university studies, we covered machine learning topics in isolation—for example, one week on regression, another on hyperparameter optimization, then classification, deep learning, etc. However, we didn’t cover full projects that bring everything together or focus on deploying models.
+
+Could you recommend any comprehensive examples, with code, that cover the entire process—data preprocessing, testing multiple models, hyperparameter tuning, and deployment?
+
+  
+Again. Code would be nice. ideally a published paper as well (optional) or it could be your private project.
+
+Thanks!
+
+Comments:
+- read this book [https://compgenomr.github.io/book/](https://compgenomr.github.io/book/)
+- https://topepo.github.io/caret/index.html
+
+It goes through whole caret package with code snippets, explanations and examples from bio field.
+- DeepVariant from Google is a good example. Take a look at BioNemo and Clara from Nvidia there are a bunch of models there
+- You could check some tools in github that are used for genomics. My favorite is deepBGC
+- following
+Although the ones that I know are proprietary
+- My favorite example is one that I did. Google boosting LASSOING new prostate cancer risk factors selenium David. This has a copyright so DO NOT PLAGIARIZE
+- I am sorry, I dont understand.

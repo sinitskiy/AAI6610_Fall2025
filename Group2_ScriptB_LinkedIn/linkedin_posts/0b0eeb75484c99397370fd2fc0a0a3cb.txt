@@ -1,0 +1,38 @@
+URL: https://www.linkedin.com/posts/sergei-kalinin-5bb44b18_the-goal-for-machine-learning-in-physical-activity-7326668261075427328-2vGP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sergei Kalinin的动态
+Sergei Kalinin
+
+Weston Fulton chair professor, University of Tennessee, Knoxville
+
+5 个月
+
+🎯 The Goal for Machine Learning in Physical Sciences: Decision Making
+
+Over the past two decades, I’ve worked across unsupervised and supervised learning, applied ML models trained on theory to guide experiments, and contributed to developing autonomous scientific workflows. One key conclusion has emerged from this experience: the real value of machine learning in the physical sciences lies not in analyzing data, but in making decisions.
+
+Yes, ML can help analyze data—when the governing physics is unknown, too complex to model, or computationally prohibitive. In these cases, ML serves as a valuable approximation tool. But when physical models exist or can be constructed, they remain the gold standard.
+
+The real opportunity for ML is to guide decisions under uncertainty—choosing the next experiment, designing optimal materials, or planning efficient synthesis. ML becomes most powerful when embedded in decision loops, orchestrating experiments in real time, integrating data, prior knowledge, and physical constraints.
+
+We’ve already seen promising directions:
+- Physics-informed neural networks (PINNs) and neural operators that accelerate simulations when the PDEs are known.
+- Symbolic regression for extracting governing relationships from data.
+- Unsupervised methods to uncover latent structures in noisy, high-dimensional measurements.
+Yet these advances must serve a larger purpose: advancing discovery through well-structured decision processes. And they do - often prediction and uncertainty in these methods can be used to guide exploration of new spaces.
+
+In this view, ML is not a substitute for physics—it is an enabler of autonomous reasoning, making experimental and theoretical workflows faster, more adaptive, and more reproducible.
+
+The challenge before us is not just better models—but better integration of ML into t

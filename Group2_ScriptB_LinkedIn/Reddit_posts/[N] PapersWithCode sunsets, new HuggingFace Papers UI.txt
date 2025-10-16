@@ -1,0 +1,28 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1m8z9zk/n_paperswithcode_sunsets_new_huggingface_papers_ui/
+Title: [N] PapersWithCode sunsets, new HuggingFace Papers UI
+
+Content:
+After a month of discussions here about [problems](https://www.reddit.com/r/MachineLearning/comments/1lkedb8/d_paperswithcode_has_been_compromised/) [with](https://www.reddit.com/r/MachineLearning/comments/1lqedrt/d_paper_with_code_is_completely_down/) the PapersWithCode site staying online and hosting spam, the [PapersWithCode.com](http://PapersWithCode.com) URL now redirects to their GitHub
+
+According to Julien Chaumond of HF, they have "partnered with PapersWithCode and Meta to build a successor" on  [https://huggingface.co/papers/trending](https://huggingface.co/papers/trending) . There have been links to browse papers and associated models and datasets on HF for some time, but potentially they are going to give it some additional attention in the coming weeks.
+
+Comments:
+- Sad to see PapersWithCode gone. I'm a bit skeptical about everything being consolidated on Hugging Face, it feels like we might be heading toward a monopoly around open source deep learning
+- Sad to see it going :( I remember the first days of the project. It was a game changer in the space.
+
+For those who built it, Thank you for all the great efforts
+- Sad to see. Hugging face is definitely moving towards a monopoly. If you see how they have calculated the WER for the NVIDIA ASR model, you will realise its entirely gamified which is concerning. Ties back to when will this AI bubble burst since it's been taken over by big tech.
+- The good thing on PapersWithCode was also the different tag and benchmark charts, it seems now a bit difficult to found paper on a specific subject and compare the different methods.. Hope they will get paperswithcode back
+- A more basic alternative(?) with community-driven papers of interest [https://www.thejournal.club/c/pulse/](https://www.thejournal.club/c/pulse/) Not as elaborate as paperswithcode.
+- The HF one does not have a leaderboard, you cannot search paper from dataset or from paper to dataset. It is just a collection of papers
+- Huggingface monopoly here we go
+- Papers with code is an emotion..
+- Preservation effort and a call for an open-source reimplementation of the site:
+https://github.com/paperswithcode/paperswithcode/issues/6#issue-3281557923
+- What a bummer.  i looked at one paper and when i searched for another "We had to rate limit you. To continue using our service, create a HF account or login to your existing account, and make sure you pass a HF\_TOKEN if you're using the API."
+- I miss the option to search papers by tags and tasks. If I were to research about action recognition, for example, I could easily get papers and benchmarks for it in papers with code. I can't seem to do that on hugging face replacement. I hope they add this feature.
+- Yeah, me too.. especially when they label it as "trending". 😐
+
+What happens to the entries after a few months.. do they just disappear?
+- I think this might be why there isn't a major announcement and the domain name and GitHub are still independent. Maybe they will bring it back someday.

@@ -1,0 +1,41 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1mzwpqh/inexpensive_outdoor_stereo_array/
+Title: Inexpensive Outdoor Stereo Array
+
+Content:
+I'm working on an outdoor agricultural project on the side to learn more about CV. I started the project with a cheap rolling shutter stereo camera from [AliExpress](https://www.aliexpress.us/item/3256805541822136.html?spm=a2g0o.order_list.order_list_main.4.337b1802xZn7S5&gatewayAdapt=glo2usa). I was having issues with stuttering etc. when the vehicle the camera is moving, especially when it hits a bump. This is causing issues with my NN which is detecting fruit and go/no-go zones for motion.
+
+I moved on and purchased a [global shutter stereo camera](https://www.aliexpress.us/item/3256809197339653.html?spm=a2g0o.productlist.main.59.56f6ewkSewkS8c&algo_pvid=a6bbf9e4-9725-48ad-a638-63df2a9570a8&algo_exp_id=a6bbf9e4-9725-48ad-a638-63df2a9570a8-58&pdp_ext_f=%7B%22order%22%3A%22-1%22%2C%22eval%22%3A%221%22%7D&pdp_npi=6%40dis%21USD%21131.45%21113.05%21%21%21131.45%21113.05%21%40210308a417561420413948607eaf49%2112000048940073120%21sea%21US%21732383337%21X%211%210%21n_tag%3A-29919%3Bd%3A1fd82372%3Bm03_new_user%3A-29895&curPageLogUid=PDXRFuWSDWIE&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005009383654405%7C_p_origin_prod%3A) from a company named ELP. Testing indoors indicated this camera would be a better fit for my use case, however when I moved testing out doors I discovered the auto-exposure is absolute garbage. I'm having to tune the exposure/gain manually which I won't be able to do when the machine is fully autonomous. 
+
+I'm at a point where I'm not sure what to do and would like to hear recommendations from the community.
+
+1. Does anyone have a recommendation for a similarly priced stereo pair that they have used successfully outdoors? I'm especially interested in depth and RGB data.
+
+2. Does anyone have a recommendation for a similarly priced pair of individual cameras, which can be synchronized, that have been used successfully outdoors? 
+
+3. Should I build my own auto-exposure algorithm? 
+
+4. Do I just need to bite the bullet and spend more money?
+
+Thanks in advance.
+
+
+
+Comments:
+- https://www.stereolabs.com/products/zed-x
+Or
+https://realsenseai.com/
+- What distance range do you need?
+
+Look for color “machine vision” cameras. Put a color target similar to a Macbeth color checker in view of the cameras for continuous adjustment.
+
+Color adjustment, white balance, and similar algorithms aren’t as easy to implement robustly as they first appear.
+
+To reduce blur due to bumps, you’ll need to reduce the exposure time of an image capture. That can necessitate the use of an external light of an appropriate color temperature.
+
+In general, I’d suggest trying to create fewer elements of your system at first. Put a camera on a tripod and work on the image processing. Try that under a variety of conditions. Then incrementally add one feature or component after the next. 
+
+Rather than implement autonomous motion or path planning at the beginning, walk around with the camera in hand. Then you can quickly test different conditions: shaking, moving between rows of vegetables, etc.
+- One could alleviate the issue by using a gyro (IMU) to detect bumps and just skip the frames during the most aggressive ones. Or they could cherry pick frames where minimum camera rotation is detected.
+- Yeah I'm pretty sure I'll have to go that way. Or Orbbec.
+- Fantastic ideas, thanks!

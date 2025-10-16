@@ -1,0 +1,15 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1m13fab/need_help_with_action_recognition_question/
+Title: Need help with action recognition [Question]
+
+Content:
+thanks for reading.
+
+I'm seeking some help. I'm a computer science student from Costa Rica, and I'm trying to learn about machine learning and computer vision. I decided to build a project based on a YouTube tutorial related to action recognition, specifically, this one: [https://github.com/nicknochnack/ActionDetectionforSignLanguage](https://github.com/nicknochnack/ActionDetectionforSignLanguage) by Nicholas Renotte. The code is really good, and the tutorial is pretty easy to follow. But here’s my main problem: since I didn’t want to use a Jupyter Notebook, I decided to build the project using object-oriented programming directly, creating classes, methods, and so on. Now, in the tutorial, Nick uses 30 videos per action and takes 30 frames from each video. From those frames, we extract keypoints, which are the data used to train the model. In his case, he captures the frames directly using his camera. However, since I'm aiming for something a bit more ambitious, recognizing 1,027 actions instead of just 3 (In the future, right now I'm testing with just 6), I recorded videos of each action and then passed them into the project to extract the keypoints. So far, so good. When I trained the model, it showed pretty high accuracy (around 96%) and a low loss (about 0.10). But after saving the weights and trying to run real-time recognition, it just doesn’t work, it doesn't recognize any actions. I’m guessing it might be due to the data I used. I recorded 15 different videos for each action from different angles and with different people. I passed each video twice, once as-is, and once flipped, for basic data augmentation. Since the model is failing at real-time recognition, I asked an AI what the issue might be. It told me that it could be because the model is seeing data from different people and angles, and might be learning the absolute position of the keypoints instead of their movement. It suggested something called keypoint standardization, where the model learns the position of keypoints relative to a reference point (like the hips or shoulders), instead of their raw X and Y coordinates. Has anyone here faced something similar or has any idea what could be going wrong? I haven’t tried the standardization yet, just in case.
+
+Thanks again!
+
+Comments:
+- My first take would be that the model' fine; either the preprocessing of your real time test (input the same scaling, etc like you did at training), or the processing of the results is a problem. 
+To troubleshoot it, you could run your weights on the notebooks, see if that works. And if not: try your training data on the notebooks and retrain: can give a clue on where its going wrong.
+- Update, after applying some normalization to the keypoints the model performs way better and it is able to do recognition, if someone has followed the tutorial I truly recommend to increase the dataset to at least 50 vids per action and apply some sort of transformation too!

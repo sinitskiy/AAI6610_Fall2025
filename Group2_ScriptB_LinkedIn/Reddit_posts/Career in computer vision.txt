@@ -1,0 +1,63 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1kagwk7/career_in_computer_vision/
+Title: Career in computer vision
+
+Content:
+Hey guys 26M  CSE  bachelor's graduate here,
+I have worked in a HealthCare startup for about 2 years as a machine learning engineer with focus on medical images . Even after 2 years I still feel lost in this field and I'm not able to forge a path ahead plus I wasn't getting any time after my office hours as the ceo kept pinging even after work hours and the office culture had a bad effect on my mental health so I left the company.I don't have any publications in the field .What do you guys think would be the right approach to make a career in computer vision domain? Also what are the base minimum skills/certifications that is needed ?  
+
+
+Comments:
+- Hey man, totally hear you.
+
+You’re not alone a lot of people feel the same way, especially in computer vision (CV) right now. The truth is, CV jobs have slowed down quite a bit, especially compared to the crazy demand for LLMs, LangChain, RAG, vector DBs, and that whole generative AI stack. Most companies are just riding the hype train and want people who’ve already worked with those tools.
+
+CV roles still exist especially in defense, manufacturing, retail, or medical imaging but they’re fewer, more competitive, and often need strong domain experience or research.
+
+Here are some suggestions 
+
+1. Switch to Data Science
+It’s honestly simpler to pick up than CV.
+Tons of jobs across industries.
+You can show off your CV background as a bonus (e.g., image data + tabular).
+
+2. Try ML Ops / AI Infra roles
+If you’re a bit more into engineering / pipelines, this is solid.
+There’s growing demand for people who can deploy models, manage infra, automate retraining, monitoring, etc.
+
+Tools: Docker, FastAPI, MLflow, DVC, Airflow, AWS/GCP.
+Many companies are struggling to maintain ML in production, so this is a good niche
+
+3. LLM & RAG stuff (if you’re curious)
+Learn the basics of LangChain, how to use OpenAI APIs, build chatbots, and store docs in vector DBs (like FAISS, Chroma, Pinecone).
+You don’t need to train LLMs just learn how to use them smartly. But it's a plus if you train open source models and evaluate it.
+There are many side projects you can do quickly here.
+- Having worked for more than 14 years in the field, I don’t think you must have publications to build a career in CV. 
+1) You should stick to the field if you want to grow, but accept the fact that field will always be ahead of you.
+2) The prospects are huge just startups are doing more cutting edge CV than big companies. 
+3) Best way to learn is by working on one core problem at a time. Pick 1 problem, one architecture, 1 dataset and build from there.
+4) Use GPT the right way. Ask it to breakdown the problem into basics or ELI5. 
+5) Try to work at a place where you get more ownership. Search may be hard but at least I know in India there are quite a few startups looking for CV folks
+6) CV is too vast for you to learn everything. That’s never going to happen. So pick one subdomain initially.
+Document Understanding
+Surveillance
+Edge-computer vision
+Autonomous Driving
+Sport analytics etc
+which really interests you and then since you are looking for long term, grow in that domain.
+- Computer vision is much more than machine learning. 
+
+You can be a productive computer vision engineer without using machine learning at all.
+- I'm kind of in the same boat, PhD in biomedical engineering, focusing on medical imaging. I work at a startup focusing on image segmentation problems, but feel stuck at the moment. I'm the only person in the team working on such problems, others in the team hardly have any DL experience, so guidance is limited.
+
+  
+Considering if I should abandon this career trajectory and look for a data science roles at larger companies like FAANG. Has anyone here done something like this? Are there professional services (I've heard of rora and levels.fyi), that help with such a transition? I'm not from a CS background, so ML ops / AI infra don't seem appealing to me.
+- I’m outside US, I’m in Africa. Although I have a job in CV my salary per month is barely up to a 100$ and the company makes us work  twice or even 3x the whole number of annotation done daily in other parts of the world, so I have searching the net for months now ,trying to find a better paying remote CV job , but to no avail and extremely difficult at this point …please if anyone knows a start up company who employs remote workers from Africa,I need help here. Thank you
+- I am also working as Data Scientist and working on computer vision.
+What I noticed in lot of organisations is that they just want a quick deployable solution , in this term already pre built solutions. Where CV requires RnD whenever we try to do something new and creative , which also increases the cost. Most Organisations don’t wanna spend on RnDs.
+What do you think…
+- Thanks man ! really appreciate it . Makes a lot of sense .
+- Thanks for this ! Since I'm on a break a part of me still feel giving myself one more chance in CV . The pressure on me  is making me indecisive. Will you be open to a 1 on 1 ?
+- Yep Agree with the first line . My problem tho is with figuring out how to make a career out of it given my background (in the description) .
+- Yes, absolutely. The amount of data preparation required in computer vision is massive.On top of that, the experimentation cycles, time, and compute requirements are significant. For the field to really scale or become more accessible, we likely need a breakthrough as transformative as what transformers were for NLP.
+- Yup. DM me for details.

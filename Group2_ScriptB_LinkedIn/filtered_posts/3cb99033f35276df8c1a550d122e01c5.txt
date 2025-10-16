@@ -1,0 +1,36 @@
+URL: https://www.linkedin.com/posts/eddy-ilg_phd-phdposition-phdstudent-activity-6972165821364113408-83mT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Eddy Ilg的动态
+Eddy Ilg
+
+ex. Meta, Professor at the University of Technology Nuremberg
+
+3 年  已编辑
+
+𝐅𝐮𝐥𝐥𝐲-𝐅𝐮𝐧𝐝𝐞𝐝 𝐎𝐩𝐞𝐧 𝐏𝐡𝐃 𝐏𝐨𝐬𝐢𝐭𝐢𝐨𝐧 𝐢𝐧 3𝐃 𝐂𝐨𝐦𝐩𝐮𝐭𝐞𝐫 𝐕𝐢𝐬𝐢𝐨𝐧 𝐚𝐧𝐝 𝐂𝐨𝐧𝐭𝐢𝐧𝐮𝐚𝐥 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠
+
+See https://lnkd.in/eeXMsJUv 
+
+Saarland University is one of the leading locations for computer science in Germany and Europe. The Computer Vision and Machine Perception research lab is headed by Eddy Ilg with close ties to MPI Saarbrücken and to Meta and has an open PhD position for 3D computer vision and continual learning. 
+
+Although deep learning has conquered the field of perception algorithms and is today omnipresent, strong limitations of conventional systems are that they operate in 2D and use a fixed training dataset. 
+
+The goal of your project will be to advance state-of-the-art machine perception algorithms by lifting the representation to 3D and enabling the systems to increase their knowledge from continuously incoming unlabeled data. To this end, you will be developing deep learning-based models that can reason about their own knowledge and combining those models with state-of-the-art 3D reconstruction techniques. Your work will involve 3D reconstruction, physical light transport models, uncertainty estimation and continual learning and connect to natural language processing, reinforcement learning and fundamental research. 
+
+The positions target publications on CVPR, ECCV, ICCV and NeurIPS and will set you up for an outstanding career in academia or industry. The research is highly relevant for the future of AI and the practical use of your research will be for 3D scene understanding, contextual AI, virtual shopping and visual search. You will be working in an interdisciplinary setting embedded in the environment of Saarland Informatics Campus with leading researchers in the field and building international relationships.   
+
+Requirements for the PhD position: 
+* An outstanding Master’s degree 
+* Coursework in computer vision and machine l

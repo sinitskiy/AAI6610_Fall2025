@@ -1,0 +1,50 @@
+URL: https://www.linkedin.com/posts/ftmguney_iccv2023-uncertaintyquantification-computervision-activity-7114997282566995969-nRPh
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Fatma Güney的动态
+Fatma Güney
+
+Assistant Professor at Koç University
+
+2 年
+Arno Solin
+
+Associate Professor in Machine Learning at Aalto University
+
+2 年
+
+📢 Wrapping up a fantastic day at the #ICCV2023 Workshop on Uncertainty Quantification for Computer Vision in Paris!
+
+Firstly, a huge thanks you to all our esteemed invited speakers:
+🎙 Eric Nalisnick, University of Amsterdam
+🎙 Fatma Güney, University of Koc
+🎙 Janis Postels, ETH Zurich
+🎙 Dan Hendrycks, University of California, Berkeley
+🎙 Zeynep Akata, University of Tuebingen
+
+The insights on the different facets of uncertainty, ranging from anomaly detection to the interplay of assumptions in self-driving technologies, have truly enriched the discourse. We were assigned the largest hall at the convention centre, which tells about interest in uncertainty quantification in the computer vision community.
+
+Thanks also to all the contributors for their innovative research and thought-provoking presentations. Special mentions to the contributed talks: 
+
+🔹 "Probabilistic MIMO U-Net: Efficient and Accurate Uncertainty Estimation for Pixel-wise Regression"
+🔹 "Far Away in the Deep Space: Dense Nearest-Neighbor-Based Out-of-Distribution Detection"
+🔹 "Calibrated Out-of-Distribution Detection with a Generic Representation"
+🔹 "Gaussian Latent Representations for Uncertainty Estimation using Mahalanobis Distance in Deep Classifiers"
+🔹 "Probabilistic MIMO U-Net: Efficient and Accurate Uncertainty Estimation for Pixel-wise Regression"
+
+The MUAD Uncertainty Estimation for Semantic Segmentation Challenge was another highlight!
+
+Deep appreciation to fellow organizers for making this a seamless experience. This workshop has truly underscored the importance of integrating uncertainty quantification in vision systems, promoting safer and more reliable applications.
+
+Thanks to everyone who joined us today at the Paris Convention Center. Looking forward to seeing you all in future events. Let's continu

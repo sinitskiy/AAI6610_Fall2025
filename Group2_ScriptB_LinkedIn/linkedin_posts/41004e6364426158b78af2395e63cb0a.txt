@@ -1,0 +1,57 @@
+URL: https://www.linkedin.com/posts/johnnycosgrove_machinelearning-ai-genai-activity-7370252076859322368-Pgk-
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+John (JC) Cosgrove
+
+Partner @ Cloudwerx || Founder and former CEO Lightfold || Advisor, Speaker, Strategist and Practitioner for Applied Generative and Agentic AI + Data || Total Lunatic
+
+1 个月
+
+Are you certain you know what uncertainty is?
+
+There are two kinds.
+
+The first, and the most common, is epistemic uncertainty. That is the uncertainty that comes from us. Our lack of knowledge, our inability to measure properly, or our failure to fully understand the system. Weather forecasting is the classic case. The physics is deterministic, but a few gaps in the data become big gaps in prediction.
+
+The second is aleatoric uncertainty. That is randomness inside the system itself. Like rolling dice. No matter how much you know, you cannot get past probabilities because the randomness is baked in.
+
+Why does this matter? Because when we talk about AI, most of the uncertainty we see is epistemic. It can be reduced with better data, better measures, better context. But some of it may be aleatoric, especially if we introduce it. And we do. The use of pseudo-random number generators to simplify sampling in LLMs effectively injects aleatoric uncertainty into systems that are otherwise deterministic.
+
+If we want to place LLMs in their proper scientific and philosophical context, we have to start here. Not all unpredictability is the same. 
+
+#machinelearning #ai #genai #agent #agentic #llm #artificiallife #contextengineering #promptengineering
+
+…展开
+7
+2 条评论
+赞
+评论
+分享
+John (JC) Cosgrove
+
+Partner @ Cloudwerx || Founder and former CEO Lightfold || Advisor, Speaker, Strategist and Practitioner for Applied Generative and Agentic AI + Data || Total Lunatic
+
+1 个月
+
+Check out the full video! https://www.youtube.com/watch?v=ZPhYAufGUvc&list=PLBffy-Jy5VRSmesEF4rSRDjm9smb-N-k_
+
+赞
+回复
+Justin Tauber
+
+Agentic AI, Innovation, Ethical Technology & Business Culture | AAICD
+
+1 个月
+
+Can I sell you a data pill called SimplicityTM to cure you of that recurring aleat

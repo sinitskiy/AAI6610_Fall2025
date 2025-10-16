@@ -1,0 +1,12 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e5qknn/a_game_to_visually_understand_active_learning_in/
+Title: A Game to Visually Understand Active Learning in Machine Learning
+
+Content:
+
+
+Comments:
+- Thanks for the resource! I'll be using it with some colleagues.
+- This is cool, thanks for sharing!
+- very cool!
+- Thanks!

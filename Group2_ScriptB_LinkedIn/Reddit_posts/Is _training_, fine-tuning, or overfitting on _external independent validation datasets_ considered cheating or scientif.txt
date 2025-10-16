@@ -1,0 +1,57 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1etnv7q/is_training_finetuning_or_overfitting_on_external/
+Title: Is "training", fine-tuning, or overfitting on "external independent validation datasets" considered cheating or scientific misconduct?
+
+Content:
+Several computational biology/bioinformatics papers publish their methods in this case machine learning models as tools. To validate how accurate their tools generalize on other datasets, most papers are claiming some great numbers on "external independent validation datasets", when they have "tuned" their parameters based on this dataset. Therefore, what they claim is usually the best-case scenario that won't generalize on new data especially when they claim their methods as a tool. Someone can claim that they have a better metric compared to the state of the art just by overfitting on the  "external independent validation datasets".
+
+Let's say the same model gets AUC=0.73 on independent validation data and the best method now has AUC=0.8. So, the author of the paper will "tune" the model on the independent validation data to get AUC=0.85 to be published. Essentially the test dataset is not an "independent external validation set" since you need to change the hyperparameter for the model to work well on that data. If someone publishes this model as a tool, then the end user won't be able to change the hyperparameter to get a better performance. So, what they are doing is essentially only a proof of concept in the best-case scenario and should not be published as a tool.
+
+Would this be considered "cheating" or "scientific misconduct"?
+
+If it is not cheating, the easiest way to beat the best method is to have our own "interdependent external validation set", tune our model based on that and compare it with another method that is only tested without fine-tuning on that dataset. This way, we can always beat the best method.
+
+I know that in ML papers, overfitting is common, but ML papers rarely claim their method as a tool that can generalize and that is tested on  "external independent validation datasets".
+
+Comments:
+- I've seen some novel methods benchmarked against the others, and it's usually been done using the same dataset. That is, you don't compare your method's performance on your dataset of choice to a metric published in an earlier paper. Instead, you run your method alongside other algorithms on the same dataset. This makes comparison more fair.
+- Good practice is to have a train/validate/test split, where you train the model in the training set, evaluate and tweak the model using the validation set, then once you have your final model you use the external test set to estimate the generalisability (i.e. likely real-world performance). Tweaking on your test set is bad practice. Tweaking on your test set then publishing a paper where you claim it is a true external test set is lying, publishing false results and is academic misconduct. Unfortunately it is rampant and often goes unchecked because few academics have the time to check, usually the model isn't so important that it gets intense scrutiny by the community and because even if you could show that the model choice or metaparameters surrounding the chosen model looks like they were tweaked on the external test set, then perhaps the authors just got lucky. It's a difficult type of misconduct to prove.
+- Are you a trainee? If so congrats because you leveled up by recognizing this as a potential issue. It is not considered cheating, but it can definitely be perceived as a weakness. You can certainly bring this up when you are asked to peer review papers and proposals in the future.
+- Training the model on the validation dataset is, to say the least, a big no no. I would consider it cheating because they are essentially validating their model on its own training data, which of course, will perform well on.
+
+I have seen papers where they validate models using multiple public datasets and compare the benchmarks with other published models. If they would use an "independent validation dataset", it very well should be 1. Published alongside the manuscript if it is not already available 2. Not be used in model training.
+
+That being said, i believe that in bioinformatics (depending on your field of study) we do not necessarily strive for the best model. I have seen papers where performance is important, but it highlights a novel idea and the authors utilize the performance to demonstrate its usefulness. An example would be emerging gene signatures to predict patient outcome. Different signatures will highlight different aspects that cancer cells depend on.
+- This probably would fall under the category of "cherry picking" if you consider the entire methodology. By using the "external independent validation dataset", the authors are incorporating extra data into the validation split. This is fine, but the data selection in the methodology section would be messy and would raise some eyebrows, assuming no data leakage.
+
+Of course, if you are feeling miffed about the paper, you could always implement and reiterate their methodology and data, improve on it and (potentially) get another paper published. Those models, if overfitted, would fall apart and show their lack of generalizability when you test more samples on the models.
+- That is for ML papers, for bioinformatics papers, there are a lot of "external independent validation sets" which are datasets that they use for the specific paper and not a benchmark dataset. ML papers have a lot of clear and standardized benchmark datasets. So, bioinformatics people benchmark their method against another method on their dataset that can be fine-tuned or "trained", and then they can always beat the state of the art this way...
+- Yes, at least ML papers at top conferences never claim that their method works on external dataset and never claim that it is a "tool" that people can use. In bioinformatics, people publish their methods as a tool. It is not that difficult to prove though, the reviewer just need to run the methods on their own data. If the method doesn't work as well as they claim to be, then there is something amiss, especially when it is marketed as a "tool".
+- The poster above say it is misconduct, but you say it is not cheating.. I feel that this is a gray area. is p hacking considered cheating?
+- Not exactly training, but "training" or fine-tuned - picked the hyperparameter based on an external independent validation set, which is not the same as the validation set, in bioinformatics paper, this is the true test set to measure how well the model generalizes.
+
+Yes, it can be published along with the manuscript, but no one will know whether it is fine-tuned on this dataset right? So, the easiest way to beat the best method is to have our own "interdependent external validation set", tune our model based on that and compare it with another method that is only tested without fine-tuning on that dataset. This way, we can always beat the best method.
+- Also, while we don't always strive for the best model, it's gonna be hard to publish something that doesn't beat the current best method.. so people need to "fine tune" their method somehow to be better than the others. This is often done in ML papers, but ML papers never claim that they publish a "tool" instead. Some bioinformatics paper claims that they publish a "tool" that people can use on their own data. Then, this will be disingenuous when they claim the performance is generalized when they "fine tune" based on the independent validation set. "Fine-tuning" means the best-case scenario, whereas when people use their tools on their own data, they won't be able to change their parameters.
+- If it's an external independent validation set then it's not in-house is it? I'm not sure what you're trying to say, that some people don't properly validate their data?   
+I mean, ok I guess.
+- > for bioinformatics papers, there are a lot of
+
+Ok, show five papers. I don't know what you're talking about.
+- I am not sure why I am downvoted.. there is not many benchmark dataset for bioinformatics paper as there is no "true ground truth".
+- Right, but this is biology and every lab has its own experimental protocols, data nuisances, etc... and even so, the reviewer is usually a computational persone that doesn't have "their own data".
+- Yes I think p hacking is scientific misconduct, but inadvertently or naively using an optimal dataset to boost numbers may not be. Definitely a gray area, but I would err on the side of caution and ask someone to change this if I were the peer reviewer.
+- Sorry, what you said was right. I mean by in-house is the dataset that you have that other paper don't use. So, you just run it on the dataset and fine tuned it but using the other best method to just test it. Then it is not a fair comparison. Then, you can always have your papers to be the state of the art by doing this..
+- [https://www.nature.com/articles/s41467-023-42453-6](https://www.nature.com/articles/s41467-023-42453-6)
+
+[https://www.nature.com/articles/s41587-024-02182-7](https://www.nature.com/articles/s41587-024-02182-7)
+
+[https://www.nature.com/articles/s43018-020-0085-8#Sec26](https://www.nature.com/articles/s43018-020-0085-8#Sec26)
+
+Actually, these may not be exactly what I wanted to show (because I am afraid of giving away my group), but you can see that most bio papers don't have the same benchmark dataset that you said. Most use a new dataset to benchmark that can be fine-tuned...
+
+These three papers are not marketed as a "tool" though..
+- Right.. but if you market it s a "tool", then it should be general enough to take into account the experimental protocols, data nuisances, etc.. otherwise it is not even a tool right? it is just a proof of concept like ML papers..
+- Yes, but if you change the dataset and compare it fairly apple to apple then they wont beat the state of the art, that's why they use their own dataset in the first place. How do a reviewer know about this if you are the peer reviewer? Also, in this case, they claim their method as a "tool", if it is just a proof of concept like most ML papers then it is different.
+
+Most bio dataset is not that large, most have fewer than 100 samples or 200 samples per cohort and can be overfitted fairly easily.
+- Usually the bigger journals will ask for validation across a wide range of organs, multiple species, etc.

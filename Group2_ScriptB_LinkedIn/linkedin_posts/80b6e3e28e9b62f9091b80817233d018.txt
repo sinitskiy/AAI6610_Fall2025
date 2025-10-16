@@ -1,0 +1,86 @@
+URL: https://www.linkedin.com/posts/gan-zhang-24641845_hurricane-activity-7325365154169217024-GeYP
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Gan Zhang的动态
+Gan Zhang
+
+Assistant Professor | Weather & Climate Predictions | Quantitative Research | Renewable Energy | Commodities
+
+5 个月
+
+Can AI models help predict #hurricane season activity months in advance? Our latest research (https://lnkd.in/eGUPNZrz) suggests YES!
+
+Collaborating with Megha Rao (Illinois/GS1), Janni Yuval (Google Research), and Ming Zhao (NOAA/GFDL), we used NeuralGCM, a hybrid AI-physics model, to make seasonal predictions (July-Nov) with simplified boundary forcings.
+
+Key results:
+- NeuralGCM successfully predicted year-to-year variations in tropical cyclone activity, especially for the Atlantic and East Pacific basins.
+- The skill achieved is comparable to some traditional, computationally intensive climate models.
+- This shows promise for using AI to build faster, more affordable, seamless forecasting systems.
+
+I'm excited about how well NeuralGCM can simulate TC activity (see plot below) and make subseasonal-to-seasonal predictions. It is remarkable for a brand-new model with a novel architecture.
+
+This work provides a baseline for model development and other research endeavors. There obviously is more to do. Looking forward to great progress in the coming months!
+
+120
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+1,038 位关注者
+
+115 则动态
+查看档案  关注
+探索相关领域
+AI Innovations in Weather Forecasting Models
+How Data Improves Hurricane Predictions
+Benefits of AI for Climate Predictions
+Latest Techniques in Hurricane Forecasting
+Updates on New AI Model Releases
+How AI Models Affect Climate Change
+展开 
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

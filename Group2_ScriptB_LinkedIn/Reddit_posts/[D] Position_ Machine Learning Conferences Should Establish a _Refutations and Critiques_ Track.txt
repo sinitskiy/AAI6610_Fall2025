@@ -1,0 +1,111 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1lqxnie/d_position_machine_learning_conferences_should/
+Title: [D] Position: Machine Learning Conferences Should Establish a "Refutations and Critiques" Track
+
+Content:
+We recently released a preprint calling for ML conferences to establish a "Refutations and Critiques" track. I'd be curious to hear people's thoughts on this, specifically (1) whether this R&C track could improve ML research and (2) what would be necessary to "do it right".
+
+Comments:
+- Curious about your thoughts on the 'who polices the police' dilemma here. While ideally what happens is you have strong, meaningful, and accurate critiques of work with over-claimed and/or cherry-picked results, how do you defend against bad actors making spurious submissions against good work due to personal or political reasons?
+- Note [the previous discussion on this paper](https://www.reddit.com/r/MachineLearning/comments/1lne9e0/d_position_machine_learning_conferences_should/) four days ago.
+- This was a good paper, read it a few days ago.
+- Couldn't agree more. I love the idea. Having a track at least gives some incentive.
+
+Unlike in old day where most empirical experiments are backed by theory, most paper are using purely inductive reasoning with empirical experiment. Deductive reasoning is either valid or invalid, but inductive reasoning is a matter of degree, which is affected by no of tested models, test data, and the statistical significance of the test result (unfortunately most papers do no report stand error). The inductive strength is judgmental and relative to other works.
+
+While peer review can provide a lot of insight, the review is based on what was reported - but there is no guarantee that all metrics can be reproduced. Challenge of reproducibility includes:
+
+(1) Low incentive to reproduce - rather than reproduce a paper's result, why wouldn't researcher just write a new paper?  
+(2) Compute requirement is high for most pretraining and postraining data mix and algo change paper.
+
+(3) The huge volume of papers and the speed of innovation
+
+(4) LLM generation is non-deterministic due to finite precision even when temperature=0.0, the stochastic nature increases with length. Standard error could help mitigate it.
+- Academia: Where the pursuit of truth is overshadowed by the pursuit of publication.
+- [deleted]
+- What we need are "fully reproducible papers".
+
+    make paper-from-scratch --fast || echo "Rejected."
+
+This should:
+
+- Install packages.
+- Download datasets.
+- Train. (If `--fast` is disabled, download model weights instead.)
+- Evaluate.
+- Generate plots and fill in the "% improvement" metrics into the PDF. (Or at least output a metadata file that can be easily verified to see that the paper performance meets the claimed amount.)
+
+Everything else deserves instant rejection because it can't even satisfy the bare minimum.
+
+---
+
+Prescient FAQ:
+
+- Q: But my code may not run!  
+  A: You are allowed to run the `make paper-from-scratch --fast` command on the conference's servers until it builds and outputs the desired PDF.
+- Q: It's harder to meet the deadline!  
+  A: Too bad. Git gud.
+- Q: I dont know how 2 codez lul xD  
+  A: Too bad. Learn to code before making grand unverifiable claims.
+- Q: Unethical researchers can get around this by doing unethical things.  
+  A: Ban them.  
+  Ban unethical people. Retroactively retract papers that future researchers could not reproduce. Done.
+- Q: Why ML? Why not other fields?
+  A: Because it's a field that is very prone to all sorts of data hackery and researcher quackery.
+- Q: But training from scratch requires resources!  
+  A: That's fine. Your paper will be marked as "PARTLY VERIFIED". If you need stronger verification, just pay for the training compute costs. The verification servers can be hosted on GCP or whatever.  
+- Q: But who's going to do all this?  
+  A: Presumably someone who cares about academic integrity and actual science. Here's their optimization objective:  
+
+         max (integrity + good_science)
+
+  It may not match the optimization objective of certain so-called "researchers" these days:  
+
+         max (
+           citations
+          + paper_count
+          + top_conferences
+          + $$$
+          + 0.000000000000000001 * good_science
+         )
+
+  That's OK. They don't have to publish to the "Journal of Actually Cares About Science".
+
+---
+
+Related alternatives:
+
+- Papers-with-code-as-pull-requests.  
+  Think about it. Linux Kernel devs solved this long ago. If your paper code cannot pass a pull request, it should not be accepted into a giant repository of paper code. Training code is gold star. Inference code is silver star.
+- I can't figure out how to edit the body of the post, so to clarify here, by "do it right", I mean: Ensure submissions are strong net positives for ML research.
+- In Section 2.4, why is submission to traditional publication venues not considered as an option? It's an odd structuring choice to place the consideration of main track publication in Section 3.3 as opposed to with all the other alternatives in Section 2.4.
+
+Another alternative that I think should be considered is to arxiv the refutation/critique and then submit it to a workshop that is most relevant to the topic of the original paper. This way, the refutation gets visibility to the right people, moreso than I think we can expect from a general R&C track that would go out to the whole ML community.
+
+The proposed track is also weird scientifically in that it privileges only one possible outcome of an attempt to reproduce a work. If I run a study to reproduce or check the results of a paper, and it fails to reproduce or check out, then I can publish in R&C—but if the paper does reproduce, then I can't.
+- I think this is a core question and I'm not sure we have a foolproof answer. I see two ways to try to minimize such possibility, but I'd be curious to hear thoughts from the community
+
+\- the reviewers should have some sort of "unproductive/nonsubstantive/harmful/vengeful" button to immediately alert the AC/SAC if the submission is non-substantive and vindictive
+
+  
+\- the authors of the work(s) being critiqued should be invited to serve as a special kind of reviewer, where they can optionally argue against the submission. Neutral (standard) reviewers could then weigh the submission's claims against the authors' rebuttals
+- I'm not sure the possibility of spurious critiques would open up specific problems that other conference tracks do not already need to solve -- what sort of threat model do you have in mind? 
+
+I.e. if the problems are of the type "someone from Big GAN selectively accuses every diffusion model result of being faked", it's hard for me to imagine a solution that won't require case-by-case judgment
+- Evaluate the refutations? Don't just accept any and all of them.
+- I think the bigger question is who has the resources and spare time to do it? There's so many promising techniques and research projects which never get explored further because there's simply not enough people and time to do it already, and that's with people enthusiastic about trying it who would if they could.
+
+Maybe a few of the groups currently flush with money like OpenAI could afford the people and resources to evaluate every thing, but I doubt they'd share and be open about it.
+- Who polices whom police the police now? No one essentially
+- If you can't defend against that via regular review how do you ensure submissions ever have any quality?
+- Thank you for sharing! I don't check reddit daily and didn't see this
+- I agree with you technically about what statistical conclusions one can draw from overlapping intervals, but I think "overlapping" is used in a different context in our paper; specifically, we used "overlapping" in the loose context on commenting on results as they appear visually.
+
+We perform more formal statistical hypothesis testing in the subsequent paragraph, where we don't mention "overlapping"
+- As /u/transformer_ML points out it is rare for people to make deductive arguments you can verify computationally, people make inductive arguments - "based on these experiments, we believe technique A generally works better for X" - and you have to make sure the experiment design supports them, even a plain hypothesis test can be gamed if you're not doing hyperparameter tuning on the baseline etc.
+
+At best this means you're treating the code as an implementation of a specification set out by the paper and trying to demonstrate they are equivalent, and the entire history of formal verification methods demonstrates that this is - to put it mildly - a nonstarter
+
+That being said, a Makefile/script with "here is how you get the key results" and packaging with uv are incredibly nice to have, and more projects should absolutely have them
+- I mean this is a nice vision, but thinking this is at all reasonable realistically just shows that you have absolutely no idea how research works in the real world.
+- to your last point: sure you can do it. As an application paper, strong baseline,... when a method claims to be SOTA and actually performs well, it will be used in many works.  However, there is currently almost no incentive to refute work, because it takes quite careful experiments to get from "it did not work in my case" to "i have evidence that it cannot work well in the general case".

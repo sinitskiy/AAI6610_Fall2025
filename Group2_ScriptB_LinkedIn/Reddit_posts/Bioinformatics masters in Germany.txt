@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/qcupbb/bioinformatics_masters_in_germany/
+Title: Bioinformatics masters in Germany
+
+Content:
+I have an undergraduate degree in Physics. I have one publication (applying machine learning to therapeutics development of a genetic disorder). I want to switch to bioinformatics, translational bioinformatics, computational biology or systems biology for my masters and I am considering applying to German graduate schools. What advice would you give me and which schools I should consider or which schools offer the best programs in these fields?
+
+PS. I am not sure if I want to do a PhD but I want to maintain an academic record that would allow me to be in a position to make the decision after completing masters.
+
+Comments:
+- Can't do a PhD in Germany without a masters. Few masters programs allow people without a bioinformatics BSc degree. Look at the Tübingen one which does
+- Firstly, I would disagree with the other poster that said you need a bioinformatics BSc to do a bioinformatics masters in Germany. To my knowledge this is not true. Your background in physics and experience applying ML in the context of genetic disorders means that you should be more than capable of getting into these masters programs, especially with the increased relevance of ML in bioinformatics recently.
+
+I have heard good things about the masters in TUM, so maybe that's something to look into. If you would consider living elsewhere but nearby, the MSc in bioinformatics at KU Leuven In Belgium is a well regarded course internationally and gives you good opportunities to work with top labs in the VIB institute. So perhaps that's an option to consider.
+
+If you have any more questions please ask. I made a similar transition and just graduated from my masters, so I might be able to give some advice. Good luck!! :)
+- Not sure how consistent it is, but in my experience, you didn't need a masters per se, you needed 9 semesters of relevant study by the end. I had a 4 year BSc, do needed to roll an extra semester of courses into the PhD window before graduation
+- Hi, Thanks for the suggestions. Yes I was seriously considering TUM at one point but it seems they ask for a lot of previous coursework as application requirement. I got most of the knowledge for my master project from internet (From sources like Kaggle, Coursera, Towards data science, Medium and countless YouTube tutorials). But I will look more carefully now. Thank you very much for the reassurance. I might bother you with a DM if I get stuck on something :)

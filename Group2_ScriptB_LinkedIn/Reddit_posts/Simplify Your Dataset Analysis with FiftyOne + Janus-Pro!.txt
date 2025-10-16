@@ -1,0 +1,42 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1icbxtz/simplify_your_dataset_analysis_with_fiftyone/
+Title: Simplify Your Dataset Analysis with FiftyOne + Janus-Pro!
+
+Content:
+The AI community is buzzing about **DeepSeek's Janus-Pro**, and we’re excited to announce that FiftyOne now integrates with it! 🎉
+
+🔥 **What’s new?**  
+Our plugin allows you to ask natural language questions about your visual datasets and get instant insights. No more writing complex scripts. Type questions like:
+
+* *"How many images contain cars?"*
+* *"Show images where objects are larger than 50% of the frame."*
+
+👨‍💻 Backed by Janus-Pro’s question-answering power and FiftyOne’s dataset management tools, exploring your data has never been easier.
+
+👉 Try it now: [Plugin Details](https://github.com/harpreetsahota204/janus-vqa-fiftyone)  
+👉 Learn more about FiftyOne: [FiftyOne Notebook](https://github.com/paularamo/awesome-fiftyone/blob/main/DeepSeek/quickstart_janus-pro.ipynb)
+
+Ask smarter questions. Get faster answers. Revolutionize your workflow. 🚀
+
+\#AI #DeepSeek #JanusPro #MachineLearning #FiftyOne #OpenSource
+
+Comments:
+- I see you've posted a GitHub link to a Jupyter Notebook! GitHub doesn't 
+render large Jupyter Notebooks, so just in case, here is an 
+[nbviewer](https://nbviewer.jupyter.org/) link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/paularamo/awesome-fiftyone/blob/main/DeepSeek/quickstart_janus-pro.ipynb
+
+Want to run the code yourself? Here is a [binder](https://mybinder.org/) 
+link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/paularamo/awesome-fiftyone/main?filepath=DeepSeek%2Fquickstart_janus-pro.ipynb
+
+
+
+------
+
+^(I am a bot.) 
+[^(Feedback)](https://www.reddit.com/message/compose/?to=jd_paton) ^(|) 
+[^(GitHub)](https://github.com/JohnPaton/nbviewerbot) ^(|) 
+[^(Author)](https://johnpaton.net/)

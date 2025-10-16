@@ -1,0 +1,67 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/195byia/what_kind_of_data_scientist_is_in_demand_for_2024/
+Title: What kind of Data Scientist is in demand for 2024?
+
+Content:
+Looking for some insights into what skills should I learn in order to become a Data Scientist in demand. 
+About me - I have almost 4 YOE in analytics. My skills are -
+1. SQL
+2. Python
+3. Power BI and Tableau
+4. Developing Machine learning (Supervised and Unsupervised models). But not in production, have a little to almost no experience in deploying them
+5. Creating business presentations to explain model results and advising on marketing campaign strategy
+
+Comments:
+- Learn to deploy models to production.
+- [removed]
+- Hopefully roles involving bandits, active learning, and Bayesian optimization for experimentation
+- domain knowledge
+- What I see in my industry and conferring with colleagues is: 
+
+The market is way too saturated with Data Scientists, anyone with a 14 day bootcamp calls themselves data scientists. If you didn’t see this coming…not sure what to say.
+
+That said, MLOps is the next push. Good MLOps and ML Engineers are hard to come by.
+
+
+Curious to when you say Develop Machine Learning, do you mean taking statistical packages and modules to write custom ML Models or taking existing ML Models and tuning hyper-parameters?
+- Having good fundamentals in ML mathematics and software engineering, is getting more and more important. The writing code part is getting easier and easier because of chatGPT.
+- This is just my perspective based on what I'm seeing but Data Science seems to be becoming more of an engineering specialty as time goes by. This therefore puts a much greater premium on software engineering skills. What companies want is Data Science to deliver value and this means putting models in production to drive real impact. The Data Scientist is increasing expected to able to do a lot of this work. The other type of Data Scientist role is R&D focused, pushing the boundaries from a technique perspective and turning this into tools/ libraries for other Data Scientists to use.
+
+I see the sort of work that just dies in a notebook and a ppt as becoming more of a data analyst specialty. 
+
+So going forward, the Data Scientists in demand are the ones who can write production grade code and be able to deploy models into production. The Data Scientists who cannot go beyond notebooks and ppts are the ones who will be struggling for work.
+- Tbh, there is no rhyme or reason in this market. 
+
+I've 7+ years of experience in ds and analytics. I am finishing a masters from a top program in DS and I'm not hearing back from most companies 
+
+I've applied to roles that I'm over qualified for, correctly qualified for and even for entry level grad roles
+
+I've applied to roles where I was the first or the first 15 applicants on LinkedIn 
+
+I've applied to roles with referrals from people high up in the hierarchy 
+
+Hell, I've applied to companies who were my clients earlier 
+
+I'm hearing back from no one. Not even basic screening calls.
+
+A lot of roles seem to be ghost roles 
+
+You just got to keep applying and hoping you get your foot in. DS does as the title says .
+- Guys any suggestions for picking up mlops without a software engineering background? I used to be in analytics and am well versed in Python and ML models
+- Learn the Azure ecosystem
+- For Data Science, SQL is gold, and Python is the next best thing, although not a substitute. So good for you!
+
+With those 2 skills alone, you already qualify for most Data Science jobs. Add Pytorch or TensorFlow, and you qualify for almost 3/4 of the jobs.
+
+If you want to join the elites, then you should follow others' suggestions and go after some software engineering skills; Learn how to package, version control, CI/CD, and ultimately deploy. Although at this stage, you would be placed on the path of an MLE as opposed to a DS, which is honestly a more stable path.
+
+If you do however wish to avoid engineering and become an elitest DS, then you'd need to get a whole lot more advanced at design and theory! I am talking PhD education level. i.e. you'd need to gain the knowledge to be able to answer complicated statistics and probability questions by hand, or explain the inner works of ML & DL models with mathematical notation. You gain that knowledge, and you end up qualifying for even Quant Jobs, who are basically Data Scientists but with 4x the compensation.
+- What value can you bring to a company?
+- MLOps is becoming increasingly important and on demand these days
+- Bs through PowerPoint presentation
+- i think that when u talk about the machine learning try to learn the mathematcs side because that's what company search
+- I would recommend learning about Data Governance
+- How can i improve my python, numpy and pandas skill? Now i am just solving hackerrank and leetcode questions. Is there any advico for me?
+- [deleted]
+- Add MLOps to your list!
+- Remind me ! 8 hours

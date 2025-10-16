@@ -1,0 +1,91 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1i99xpw/jobsskills_that_will_likely_be_automated_or/
+Title: Jobs/skills that will likely be automated or obsolete due to AI
+
+Content:
+Apologies if this topic was talked about before but I thought I wanted to post this since I don't think I saw this topic talked about much at all. With the increase of Ai integration for jobs, I personally feel like a lot of the simpler tasks such as basic visualization, simple machine learning tasks, and perhaps pipeline development may get automated. What are some skills that people believe will take longer or perhaps may never be automated. My opinion is that multiomics data both the analysis and the development of analysis of these tools will take significantly longer to automate because of how noisy these datasets are.
+
+These are just some of my opinions for the future of the field and I am just a recent graduate of this field. I am curious to see what experts of the field like u/apfejes and people with much more experience think and also where the trend of the overall field where go.
+
+Comments:
+- The things that LLMs "excel" at doing currently are things that are already solved problems, because the LLM has stolen and regurgitated existing code from public code repositories. In another comment someone mentions end-to-end analysis of RNA-seq data as example of something LLMs have made obsolete. The process of taking raw FASTQ reads through to a draft GSEA analysis has been largely "automated" through pipelines for quite some time, so it shouldn't be surprising that LLMs have lifted this code. This is literally the first thing we train students to do to introduce them to bioinformatics analysis, largely using pipeline languages like Nextflow and Snakemake. So to the extent that this is a scientific contribution an LLM is making, it is the equivalent of an undergraduate with a two-day bootcamp under their belt, for context.
+
+The things that LLMs struggle with are things for which there isn't a trivial off-the-shelf solution that can be stolen. I suppose as more complicated tasks like single-cell and spatial transcriptomics, multiomics, IMC, etc., mature and the community coalesces around polished end-to-end workflows the LLMs will make those "obsolete" too by stealing the solutions. But this may be limited if the wholesale theft of code and immiseration of the working and living conditions of people actually innovating in these spaces leads to a shift away from an open source model of code sharing.
+
+Many people in my network are also using LLMs to help them with the interpretation of results, and I think this is totally baffling. I'm an academic, and to me this is literally our job! When you have a polished set of results you're confident in, all the remains is to use your expertise to interpret those results and synthesize them with your understanding of the literature and then publish them. Trying to use an LLM for this is, to me, at best plagiarism and at worst fraud. In every situation where a colleague has shared with me the results of their interactions with both general and science-specific LLMs they have been superficially correct, but subtly full of errors that took a lot of time to figure out. I think every one of these people is one hugely embarrassing error, correction, or claim of plagiarism away from never trusting these tools again.
+
+People really like to say things like "this is the worst the LLMs will ever be! they're constantly improving" but this is an assumption. How much better is Google search today than it was 6 years ago?
+
+I do think that things are bad right now, and I think it is going to especially affect early-career researchers interested in bioinformatics work. But I don't think this is because "AI" is making our work obsolete, it's just a modern manifestation of the fact that many biologists see bioinformatics as something of a nuisance task, and not a true scientific contribution, and so see these shortcuts as an cost saving measure to avoid having to pay trainee salaries. Even if the outcome is the same, I think it's really important to be clear about what's happening.
+- The question is rhetorical. Everything and everyone will be obsolete at some point. As I’m approaching my 40s and have been in the industry for some time. Here is my 2 cents
+
+Nobody, including those who operate the GPU clusters, hardware vendors and even big contractors have a complete picture of the parameters of this game. You dont have to believe anyone, just see what China just did with deepseek. Everyone is running as fast as they can with the tailwind of the hype. Step back a little.
+
+My work a decade ago involved neuronal migration and understanding how mutations impacted brain development. What I learned from those years is that it is much easier to perform correct migration from the start rather than remigrate those neurons to correct configuration. This is inline with how our universe  is built, breaking and encryption is easier than building or decryption. You might wonder why im telling you this, here is why:
+
+Get an ai agent, any agent and ask how to start and give you config files to start a database, it will. Show it a figma design and ask it to give you similar css, it will. Ask it how to produce some bar graphs it will. Ask it to rotate a geodesic projection and it will. Ask it how to use seqtk or samtools and it will quickly give you a code block. Because these have been solved a thousand times in a thousand different flavours. The mess up will be evident as your project grows. It is much more costly to fix a project that has already grown with slop than to build the project with better design from start. Entropy compounds fast, and this is not evident to the untrained eye. Grifters downplay it all the time.
+
+At this point, ai agents are great to collate several google searches and ambient info into a concise output, they give you a starting boilerplate and thats it. “Reasoning” is at its infancy stages and designing a bioinformatics pipeline is not just getting the work done. It is also about longevity and flexibility and resilience. 10 years from now your colleagues should be able to run the same pipeline with reproducibility. Even if things break, they should be able to figure out easily how to make it work again. This is hard, because it is more of a design problem rather than execution problem. And ai agents are not about design (yet), they are about execution.
+
+Make no mistake we are entering war, both in metaphorical sense and literal sense. At the thick of things, if you go 100% oldschool and not lean on ai, you might find yourself in a tight spot and grow resentment. Similary, if you go 100% ai hype and think hard skills are completely gonna be commodified, you might end up regretting the atrophy you developed due to neglect.
+
+The key is balance. It is a cliche but a brutally honest reality of life: it is much preferable to be a warrior in a garden than to be a gardener in a war. You dont want to become someone who cant move a pencil without ai. Thats like putting a leash around your neck and giving the handle to whomever controls the model.
+
+TLDR: do not look down on hard-skills. Some will be commodified, some will stay.
+- None. Even job as simple as tech support proven to be too complex for current gen AI as they are easy to manipulate and cannot reliably execute instructions. Maybe after another couple decades iterations, but as of right now we have stagnated
+- I was reading all things 
+I just got some think in my head that , I am planing to do master in  bioinformatics. Should I do or not ?
+- I’ve been doing bioinformatics for about 10 years and focusing on practical applications of AI (I.e.,LLMs) for the last 3. We haven’t hit into any hard limits as to what LLMs can do.  We’ve run into issues where Agents that were based on earlier models (GPT-3) were unable to effectively and consistently automate a process but newer models handle most of the things we’ve tested.  They are still not 100% effective and do occasionally run into issues but many of those were solved with extra steps, additional agent oversight, or improving prompts and context.
+
+More complicated things like multiomics data are certainly more difficult but it’s more of a bump in degree of difficulty rather than something that’s an order of magnitude more difficult.
+
+TLDR: I haven’t come across anything that leads me to believe there is a limit to what LLMs can do as it relates to bioinformatics. For the simpler tasks properly configured systems (traditional scripting + LLMs) it outperforms PhDs almost always (including myself), for the most complex tasks it often runs into issues and requires oversight/correction, however, if my experience is any indication of how this plays out, the next generation of models fixes most if not all the issues we’re seeing at this stage.
+- I got kicked out of a job partly because my boss thought that AI could do a better job than I could.
+
+My usual response to other people who present tools to solve complex problems is that bioinformaticians are still needed to interpret the results and work out where they got things wrong. Tools can reduce the workload and speed up workflows, but I don't think they'll eliminate a bioinformatician's work entirely because there are always other deeper questions to ask when things get faster. It's more likely to me that bioinformaticians will end up having to do more complex work for more / different jobs at the same time.
+
+In the case with my boss, that response fell on deaf ears because my boss had too much confidence in AI - and too little knowledge of biology - to see where problems were cropping up.
+
+.... That written, I do want to make a slight, but significant change in emphasis here:
+
+> It's more likely to me that *the surviving* bioinformaticians will end up having to do more complex work for more / different jobs at the
+same time.
+
+AI [is already being exploited by powerful white men](https://www.technologyreview.com/2020/12/10/1013617/racism-data-science-artificial-intelligence-ai-opinion/) to get rid of people who they don't like, for whatever reason. In other words, the
+increasing use of AI in software development toolkits is *absolutely* going to lead to [survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias). The post-GPT world of bioinformatics will lead to a loss of bioinformaticians, but not necessarily due to a reduction in workload, and some of the ones that drop out will be more talented than the ones that remain.
+- I think that the only jobs made obsolete by current LLMs are the ones that were possible to automate anyway by a good junior software engineer. I have not seen a single bioinformatics employee at my current company doing work so trivial that it could be replaced by an LLM.
+
+Even though they're error prone, LLMs definitely have their uses, like summarizing text, doing some NLP, and code assistants like a personal stackoverflow support (with all its flaws). Simple visualizations and ML tasks can be pretty well by just well... scripting, creating internal libraries, templates, etc. and deployed as dashboard on whatever infrastructure. 
+
+In my experience, the tech jobs that can be automated by an LLM in near future are the ones that are have a very low entry barrier - that can be purely solved through googling and stackoverflow.
+- I arrived late to the discussion, but the last week I had a meeting with a person that is trying to create a company where the main product is to create a LLM to be used as bioinformatician due the lack of bioinformatician to do analysis. We talked and was interesting to see how easily is to create plots using a matrix of scRNAseq. Nevertheless I think that the value of any bioinformatician will be not the knowledge of coding, stats, ML nor biology. If not the capacity to treat people across different multidisciplinary setting. For example, helping the PI to try to pick the best analysis to answer a biological question and also develop a in house analysis to resolve the question. And also we able to persuade the wetlab team to improve the quality any experiment fine tuning the wetlab process (for example, if the are isolating a cell population and the yield is low, try to find another marker using scRNA-seq. ) and also communicating in a clear manner the results of analysis. And also the experience is more valuable than ever.
+- AI agents are more advanced than most people realize
+- I bet even for the simplest end-to-end RNAseq analysis, AI will make mistakes. Because every experiment is unique, one has to integrate the biology background to understand the dataset. Do some EDA analysis, is there a batch effect? when you have 100 vs 100 population scale dataset, is it simply DESeq2? any confounding factors in the dataset? of course, it can speed up the code generation, but I feel a deep understanding of the biology is the key not to make mistakes.
+- If you synthesize a complex murder mystery and feed it to a state of the art LLM and ask it to determine who the killer was, all state of the art LLMs are able to do it.
+
+What is it regurgitating in this case?
+- This is not correct. As I mentioned in my post earlier - we're already automating most of our workflows. What remains out of our grasp is some of the more complicated things that currently exceed the context window or are simply too complex for LLMs to reason through. 
+
+Anyone telling you that nothing can be automated wrt bioinformatics simply isn't aware of the state of the art.
+- That is a truly tremendous amount of cope to fit in 1 reddit comment.
+- Could you give an example of what you refer to as a complicated task? OP was asking what specific skills will become automated. I am a scientist who does multiomics research. Mostly spatial and various long read based data. I’m just having trouble understanding how a LLM can do things like make complex decisions based on spatial contexts, as well as make informed scientific decisions, which is most of my job really. Coding is the slog that gets us there. I will say that although I have limited knowledge of AI application for image analysis, I am far from equipped for algorithm development.
+- Dang man that’s a pretty depressing thought that our field can get automated like that. Do you have any idea on what skills will likely not get automated or is it likely that everything will be ?
+- "AI is already being exploited by powerful white men to get rid of people who they don't like"
+
+What a wildly racist comment. Imagine saying this about any other race. Wild. 
+
+And not just explicity racist (attacking white males) but perhaps also implicitly racist against the minorities who are by far the biggest names in the field:
+
+Demis Hassabis (from Cypriot and Chinese Singaporean descent), Jensen Huang (Asian- Taiwanese), Satya Nadella is South Asian (Indian), Liang Wenfeng is Asian (Chinese), etc, etc.
+- I'll believe it when I see it
+- [removed]
+- Statistically similar text that it was trained on, either a published summary of that same murder mystery or something that is sufficiently similar that it is able to correctly report the killer despite its inability to reason as a human would. Many of the "hallucinations" will arise where the actual story has not been summarized but text that is superficially similar to it has been, leading to the model incorrectly (but very confidently) reporting the wrong killer.
+- "Could you give an example of what you refer to as a complicated task?"
+
+Anything that requires analyzing complicated images, many samples, lots of metrics generally fails to one degree or another or, at the very least, is very inconsistent. What you're describing ("...make complex decisions based on spatial contexts") is along the lines of where we're finding things often fall apart. 
+
+If you're able to decompose your complicated tasks into smaller steps and allow the LLM to call tools as it sees fit, you can turn a complicated task that works 0.0% of the time to one that works 99.9% of the time - the complicated tasks I'm referring to are those for which you can't do that (because for example the tool doesn't exist).
+
+To give you a more concrete example, lets say you have FASTQ files (RNA-Seq) and want to gain some insight into what signatures are dysregulated between Treatment and Control. LLMs can handle this end to end (fully 100% automated). But the key is that in order for this to work, prior to getting them to start interpreting your results, the LLM needs to call a tool (e.g., GSEA), and once the tools has performed the enrichment, an LLM can interpret the output reliably and provide insights that would take a PhD days of work to manually uncover. *However*, if you try to skip the GSEA step and instead simply give it the list of DE genes and ask if for signatures/interpretation you will get something less than useless (the LLM will fail and miss important signatures or hallucinate signatures that seem plausible but aren't actually present).
+
+The problems we're running into are those for which there is no equivalent tool like GSEA (that can give us an output that we can then hand off to the LLM) and the LLMs (even state of the art) are simply unable to reason through the data and draw conclusions themselves.

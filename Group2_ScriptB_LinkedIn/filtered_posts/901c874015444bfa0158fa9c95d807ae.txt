@@ -1,0 +1,107 @@
+URL: https://www.linkedin.com/posts/belagiannis_machinelearning-collas-tmlr-activity-7201662907204411393-0_Vb
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vasileios Belagiannis的动态
+Vasileios Belagiannis
+
+Machine learning, Deep Learning and Computer Vision @ FAU
+
+1 年  已编辑
+
+Our recent research in #machinelearning and systems is also the motivation behind our teaching activities. At FAU Erlangen-Nürnberg, we are currently building our new lab course that will teach our students how to bring machine learning algorithms to resource-constrained agents, including topics such as uncertainty estimation, neural architecture design, and domain adaptation. 
+
+Related recent publications on the above topics:
+
+https://lnkd.in/eYrduccw (Consistency Regularisation for Unsupervised Domain Adaptation in Monocular Depth Estimation, #CoLLAs 2024)
+https://lnkd.in/eUZAYDAJ (Multi-conditioned Graph Diffusion for Neural Architecture Search, #TMLR 2024)
+https://lnkd.in/e4QHweke (Joint Out-of-Distribution Detection and Uncertainty Estimation for Trajectory Prediction, #IROS 2023)
+
+Pictures taken from the group research discussions with Amir El-Ghoussani Marc Hölle Rohan Asthana Michele De Vita. #FAU
+
+90
+3 条评论
+赞
+评论
+分享
+Neel Thakkar
+
+Automotive Engineer
+
+1 年
+
+Really Great and Inspiring 
+
+赞
+回复
+Vipul Patil
+
+Senior AI Engineer @ WAIYS | Ex- Allianz, Boeing, ACL Digital | MS Computational Engineering | DL | NLP | GenAI | LLMs | Agentic AI | Automation | Chatbots | MLOps
+
+1 年
+
+Interesting!
+
+赞
+回复
+Sheraz Ahmad
+
+Siemens Healthineers
+
+1 年
+
+Interesting 
+
+赞
+回复
+查看更多评论
+
+要查看或添加评论，请登录
+
+1,912 位关注者
+
+32 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策
+《加利福尼亚隐私选择》
+Cookie 政策
+版权政策
+品牌政策
+访客设置
+社区准则
+语言
+登录查看更多内容
+
+创建帐号或登录后继续搜索
+
+登录帐号: 思齐
+S*****@163.com
+
+或
+
+没有领英帐号？立即加入
+
+点击“继续加入或登录”，即表示您同意遵守领英的《用户协议》、《隐私政策》及《Cookie 政策》。

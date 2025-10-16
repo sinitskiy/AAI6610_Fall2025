@@ -1,0 +1,42 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bba0bd/hitmiss_binary_in_deal_forecasting/
+Title: Hit/Miss (binary) in deal forecasting ?
+
+Content:
+hi data scientists
+
+not sure whether anyone has seen this kind of business question in the past. 
+
+**Context**: My department typically forecasts Sales in the monthly closing.  our deals are often million dollar level ;  in the closing there're often 40-50 deals in play 1 week ahead of the final day of closing. we usually call best/worst/forecast scenario for the final sales. 
+
+**Deal forecast / deal quality:** For each deal, it's  in one of the 3 categories best/worst/forecast; Looking from the "forecast" scenario , it's either "Forecast" or "Not in forecast", i.e. Hit or miss. We don't use probability or expectation for the final number. We use a set of criteria to qualify such deal forecasting, e.g. whether customer's procurement has approved, whether customers' Board has approved this deal etc. Depending on that status , a deal could be under worst / forecast / or best scenario. 
+
+**Business question:**  often such forecast isn't very scientific from my view. E.g.  deal A and deal B could be on the lower end of probability and very high probability , although both A and B are in "forecast" . Anyone has used a more sophisticated method to do such forecasting? Given the quantity of deals , it wouldn't be anything worth doing  machine learning I guess. But is it worth using probability and deal value weighted by probability based on the deal quality?
+
+I've got very little education on data science. Hence like to tap into your experiences :) 
+
+Comments:
+- Definitely worth estimating probabilities for each event.
+
+Then conduct simulations that considers all deals over a certain time period.
+
+In each simulation you draw random numbers for each deal that determine whether or not each deal occurs.
+
+This will give you the distribution of sales over that time period. You can calculate different measures of that distribution e.g, 10th, percentile, median, average, 90th percentile.
+ 
+This gives you a more accurate estimate for the likely outcome as well as the range of potential sales that could occur
+- It sounds like your current forecasting method could use some fine-tuning to make it more accurate and scientific. One approach you could try is to use probabilities based on historical data and deal quality criteria. By assigning probabilities to each deal and calculating expected deal values, you can create a more nuanced forecast.
+- Thanks so much ! I think I’ll need to collect real world data points by listening in the meeting of forecast and those data points of each event probably would take a while to collect . 
+
+What’re  your thoughts about „definitely worth it“? Have u seen similar case happened in the past ?
+- Im afraid historic data isn’t there in any system . Historic data eg , whether a customer has an approved budget , whether their procurement has approved or not , is usually only communicated in forecast calls . Sales people has their own forecast judgement input in the sales pipeline but those are often with poor poor judgement .
+
+In that sense , I’ll have to eventually collect data like criteria met or not manually 🤷🏻‍♀️
+- Yes I have, it’s very common to not properly consider random processes/ probabilities when you look across different areas and fields.
+
+Your problem is a common one as well.
+
+An easy method to obtain probabilities is to obtain history on deals your company has gone for, including those with hat were won, lost and withdrawn.
+
+You can then estimate the probabilities from that data
+- Im afraid historic data isn’t there in any system . Historic data eg , whether a customer has an approved budget , whether their procurement has approved or not , is usually only communicated in forecast calls . Sales people has their own forecast judgement input in the sales pipeline but those are often with poor poor judgement .

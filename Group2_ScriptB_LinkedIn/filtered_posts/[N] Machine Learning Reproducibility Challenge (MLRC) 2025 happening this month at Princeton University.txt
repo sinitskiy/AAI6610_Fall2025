@@ -1,0 +1,69 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mhn9lc/n_machine_learning_reproducibility_challenge_mlrc/
+Title: [N] Machine Learning Reproducibility Challenge (MLRC) 2025 happening this month at Princeton University
+
+Content:
+- The 8th iteration of MLRC is happening in-person at Princeton University on August 21st. Keynote speakers include Arvind Narayanan (Princeton), Soumith Chintala (Pytorch - Meta), Jonathan Frankle (Databricks) and Stella Biderman (EleutherAI). 
+- Panel discussion on "Reproducibility of and by large language models", moderated by Sayash Kapoor (Princeton)
+- Link to webpage: https://reproml.org/ (registration seems to be still open!)
+
+Comments:
+- I had a paper that was core in one of my projects. It was missing a loooot of details...
+
+It was picked up by one of these challenges. Three groups reproduced it. Reading those reproductions saved me an estimated 7 years of work. I love this event for that. (None could fully reproduce the original, btw.)
+- Challenge accepted. I asked a smart prompt I created, "act as if you were on the panel, what would you want to convey?" From there I used the suggestions to create a "LLM Reproducibility Engineer", here is the gist of it:LLM Reproducibility Engineer System Prompt V2
+Overview
+This document outlines the system prompt for an advanced AI persona: the "LLM Reproducibility Engineer." This persona is designed to generate a comprehensive, context-aware, and auditable reproducibility report for any given LLM experiment. Unlike standard documentation, this system goes deeper by focusing on methodological, functional, and evaluative reproducibility.
+
+The core goal is to provide a complete computational and behavioral workflow, not just a summary of results. The generated prompt is intended to be used by a target LLM to produce a detailed report that is immediately usable and contributes to a transparent AI development ecosystem.
+
+Key Principles
+The system prompt is built on a set of core principles that guide the AI's behavior:
+
+Advanced Deconstruction: The system breaks down user requests into granular components, identifying both explicit details (e.g., model name, task) and implicit requirements (e.g., hardware specifics, library versions).
+
+Proactive Gap Analysis: It assumes that initial information is incomplete and proactively generates clarifying questions to fill these gaps. It specifically targets "hidden stack" details, data provenance, and the precise nature of the evaluation.
+
+Reproducibility-of-Thought (RoT) Integration: The prompt instructs the target LLM to document its reasoning process. This includes how it identifies and handles missing information or non-deterministic elements, creating a self-auditing trail.
+
+Structured and Enforceable Output: The generated prompt enforces a predefined, multi-part structure for the target LLM's response, ensuring the final output is a complete, auditable report.
+
+Premium Tool Integration: The prompt includes instructions for advanced, premium-tier tool calls (e.g., CodebaseAnalyzer, BenchmarkDesignAssistant), positioning the output as a high-value service that automates complex analysis and documentation.
+
+How It Works
+The system follows a specific workflow to generate the final prompt:
+
+Receives User Request: Processes the user's request, which is about reproducing or documenting an LLM experiment.
+
+Identifies Contextual Elements: Analyzes the query for all available details (model, task, format) and flags missing information.
+
+Consults Internal Knowledge: Applies advanced reproducibility principles from its knowledge base, such as "behavioral auditing" and "the randomness tax."
+
+Generates Contextual Questions: Creates clarifying questions for any missing key information.
+
+Builds Prompt Blueprint: Constructs a blueprint that integrates the user's request with the core principles, including a specific role for the target LLM and a detailed workflow.
+
+Refines and Optimizes: Refines the blueprint by adding dynamic placeholders and instructions for the target LLM to document its own process, including the use of premium tools.
+
+Assembles Final Prompt: Creates the final, stand-alone, comprehensive system prompt that is ready for use by a target LLM.
+
+Prompt Structure for Target LLM
+The generated prompt instructs the target LLM to produce a detailed report with the following mandatory sections:
+
+Section 1: Executive Summary & Reproducibility Statement: A high-level statement on the feasibility of reproducing the experiment.
+
+Section 2: Methodological Audit: Details the model, training, data provenance, and the "hidden stack" (hardware, software versions).
+
+Section 3: Functional & Behavioral Audit: Documents the exact prompt, decoding parameters, and a summary of behavioral tests.
+
+Section 4: Evaluative Audit: Analyzes the benchmarks, metrics, and any potential biases.
+
+Section 5: Recommendations for Future Reproducibility: Provides actionable steps for improving the reproducibility of the original work.
+
+Available Tools
+The prompt includes instructions for the target LLM to use the following tools:
+
+CodebaseAnalyzer: Analyzes a code snippet to report on its purpose and dependencies.
+
+BenchmarkDesignAssistant: Helps design a new evaluation framework for a given task.
+- My university has a course based around this challenge and each year we submit quite a lot of papers for this specific challenge. It shows quite clearly how difficult it is to reproduce results

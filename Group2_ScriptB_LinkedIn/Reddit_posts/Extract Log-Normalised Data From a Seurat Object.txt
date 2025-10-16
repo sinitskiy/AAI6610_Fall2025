@@ -1,0 +1,18 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/sltdua/extract_lognormalised_data_from_a_seurat_object/
+Title: Extract Log-Normalised Data From a Seurat Object
+
+Content:
+I am working in R and I have een given a Seurat pipeline for processing some 10x scRNA-seq data. As a part of the Seurat pipeline the \`NormalizeData\` command was run, with the option \`normalization.method = "LogNormalize"\`. 
+
+I want to perform machine learning on the counts data and want to access the log normalised counts after all the processing in the Seurat object. I tried running \`GetAssayData()\` but this doesn't seem to be log-normalised (or maybe it is and I'm confused, but most of the entries are still 0). How can I get this processed counts matrix out?
+
+Thanks
+
+Comments:
+- check the max of your matrix, if it's an integer in the 100s or 1000s you have the raw counts, if it's like 13.6374657 you have lognorm.
+
+lognorm is log(norm counts + 1) so has the same number of zeros as the raw counts matrix.
+- For log normalised counts it’s the data slot of your assay.
+- There is a good wiki of the Seurat data object and information about the slots and objects can be found here: https://github.com/satijalab/seurat/wiki
+- You have been given good advice here. I just wanted to ask which version of Seurat are you using? If I am remembering correctly accessing the log normalized counts may have changed slightly over revisions. If you are using a pipeline that was given to you and is using an older version of Seurat make sure you look up documentation for the correct version. [https://www.rdocumentation.org/packages/Seurat/](https://www.rdocumentation.org/packages/Seurat/) is what I use.

@@ -1,0 +1,71 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1k4bq31/exam_omr_grading/
+Title: Exam OMR Grading
+
+Content:
+I recently developed a computer-vision-based marking tool to help teachers at a community school that’s severely understaffed and has limited computer literacy. They needed a fast, low-cost way to score multiple-choice (objective) tests without buying expensive optical mark recognition (OMR) machines or learning complex software.
+
+# Project Overview
+
+* **Use case**: Scan and grade 20-question, 5-option multiple-choice sheets in real time using a webcam or pre-printed form.
+* **Motivation**: Address teacher shortage and lack of technical training by providing a straightforward, Python-based solution.
+* **Key features**:
+   * **Automatic sheet detection**: Finds and warps the answer area and score box using contour analysis.
+   * **Bubble segmentation**: Splits the answer area into a 20x5 grid of cells.
+   * **Answer detection**: Counts non-zero pixels (filled-in bubbles) per cell to determine the marked answer.
+   * **Grading**: Compares detected answers against an answer key and computes a percentage score.
+   * **Visual feedback**: Overlays green/red marks on correct/incorrect answers and displays the final score directly on the sheet.
+   * **Saving**: Press **s** to save scored images for record-keeping.
+
+# Challenges & Learnings
+
+* **Robustness**: Varying lighting conditions can affect thresholding. I used Otsu’s method but plan to explore better thresholding methods.
+* **Sheet alignment**: Misplaced or skewed sheets sometimes fail contour detection.
+* **Scalability**: Currently fixed to 20 questions and 5 choices—could generalize grid size or read QR codes for dynamic layouts.
+
+# Applications & Next Steps
+
+* **Community deployment**: Tested in a rural school using a low-end smartphone and old laptops—worked reliably for dozens of sheets.
+* **Feature ideas**:
+   * Machine-learning-based bubble detection for partially filled marks or erasures.
+
+# Feedback & Discussion
+
+I’d love to hear from the community:
+
+* Suggestions for improving detection accuracy under poor lighting.
+* Ideas for extending to subjective questions (e.g., handwriting recognition).
+* Thoughts on integrating this into a mobile/web app.
+
+Thanks for reading—happy to share more code or data samples on request!
+
+Comments:
+- Damn, that's super fast. Is this open source?
+- This is such a clean example of building with real constraints in mind. No unnecessary complexity, just straight utility for people who actually need it. Out of curiosity, have you thought about ways to share or distribute this more broadly? Seems like a lot of under-resourced schools could benefit, even beyond where you’ve tested.
+- Hey this is awesome, thank you for sharing. We were working on a similar problem but our OMR sheet's structure was very varying. So the contour detection was not that great. We had a loop to go from biggest contours to smaller sized ones, but it wasn't super effective. I'd like to know your thoughts on this.
+
+Here's an example [image](https://www.google.com/search?client=ms-android-samsung-rvo1&sca_esv=a2fccd0347a25b28&sxsrf=AHTn8zqjKS7waz1BRzUokL6v0SxUInkJqg:1745417007598&q=omr+sheet+examples&udm=2&fbs=ABzOT_A-D3gqhGpKey3m541in_a4evouXlxf0ztaDDubgyT0ES35hj4GhQ5f9qJAc4Wc86cxsjqtI5wdbHKWMwlUFjLyHsrA2RYYZMJHIFnyW1DsPeDlM2SfYDZSKYdeZZTocWRF-0RZPbborRhh1IHvYYSF35GuUnyMVuISXp0u6zzDGb4FDI4fh_go_KhMUmw_iIe3_0GrpS6AQQjZOd1gpSZuV9w134XfFdD5KGMxihhwmyWNCdY&sa=X&ved=2ahUKEwjA-OOFqe6MAxWDXGwGHVs9J5MQtKgLegQIERAB&biw=384&bih=731&dpr=2.81#sv=CAMSgwUa3QQKjgIKuQEStgEKd0FBLUtUaGRLNjZNQmhHVHdFMER3ODdzQUY0cVNyazFmVE5LcWN4ZFZfaVRuZjZIZlVaeEFCamZycVF0ZXZOdlZvZGV6WUo5ZkkzazJSV05Nam5uejVGbkNGZ3FDa2RKUnV5SkQtOENkdHBUaC1oeGdBWElpX2NNEhdNZk1JYU1yOUM3eWZuZXNQckxDR21BOBoiQUNEWEw0azJsT09YNjdRMUFtQy1IWTNPVmFVR2ZQNkVpdxIDODQ5GgEzIhcKAXESEm9tciBzaGVldCBleGFtcGxlcyIHCgN0YnMSACImCgRlcWxkEh5DZ0lJQUJBQU9nUUlBUkFBVlp4N0dqOXRQNnNQUHcStgIKzwESzAEKjAFBQS1LVGhlMUszZUZTSndOZHU1U0pkVXgwT0hJY0xJMFNBZ0ljc01SckpuMkpIV2pZVGE4QVdpclVqM3lBM202NXlQNmZ2c3V2LThNYWFTaFA4SGRITzd5SU9GbHVBc3ZZMnpoSUVUV0p2c1dWYU1jdXh6ZGUxY201Z0Mwejc2NWM5OEV3R2o5WWU4SRIXTWZNSWFNcjlDN3lmbmVzUHJMQ0dtQTgaIkFDRFhMNG5lSHYtZnFzRU9hck1zWEJyTWQycmlJRXl4dWcSBDQ2OTgaATMiGAoGaW1nZGlpEg56cFktV2tJYU5YT0dwTSIXCgVkb2NpZBIONWcweEV1bkp4UnI2ek0iJgoEZXFsZBIeQ2dJSUFCQUFPZ1FJQVJBQVZaeDdHajl0UDZzUFB3GhFzdl96cFktV2tJYU5YT0dwTSAEKh0KBm1vc2FpYxITZS1zdl96cFktV2tJYU5YT0dwTTABGAcggdnu1QIwAQ) with varying box sizes.
+
+Thanks!
+- GitHub repo: https://github.com/donsolo-khalifa/OMRGrading
+- Hi u/Willing-Arugula3238 , thanks for sharing your project and the motivation behind it.
+
+I'm the creator of OMRChecker and I'm currently exploring new ideas for making it more generic and robust under different lighting and curvature. 
+
+Feel free to join my project's discord(link in readme) to find existing issues faced by other folks and potential solutions as well as to discuss new ideas.
+
+[https://github.com/Udayraj123/OMRChecker](https://github.com/Udayraj123/OMRChecker)
+- This is swesome
+- Yes I'll push it to GitHub and link the repo. I don't know how to open source software but I'll check and add the license text.
+- No I have only tested this with a few local schools in Ilorin, Nigeria. Nothing global yet. I would be opened to any suggestions. The repo is open sourced though.
+- With the complexity of the answer sheet I would suggest using a trained CNN to get bounding boxes around the required subject and category boxes. 
+Even with that you would need custom segmentation before evaluating the non zero pixels after thresholding( what is answered and not answered).
+A simple loop to get the countours will not suffice because of lightning conditions and camera distortion and movement. 
+I would advise to use maybe a yolo model trained on Identifying what box is for which subject then proceed from there.
+- I appreciate you sharing your project with the world. I have joined the discord. I'll will most definitely be tinkering with the project.
+- I appreciate it. Thanks
+- Cool man, just make it a MIT license and we are all good.
+- Really solid work. The fact that it’s already being used in real classrooms says a lot. You built it to solve a real problem, and it shows. Since you’re open to suggestions, something that might help is a short demo video that explains what it solves and why it matters. If the schools you worked with are open to it, even a few words from them could go a long way in helping others see the value.
+- Repo: [https://github.com/donsolo-khalifa/OMRGrading](https://github.com/donsolo-khalifa/OMRGrading)  
+Delivered
+- That's a good idea. I was also told to post more on other social media platforms. Hence why I'm here. Thanks for the advice

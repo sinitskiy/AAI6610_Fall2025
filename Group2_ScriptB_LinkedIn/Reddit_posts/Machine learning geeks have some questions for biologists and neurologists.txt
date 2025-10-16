@@ -1,0 +1,110 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/9vs6en/machine_learning_geeks_have_some_questions_for/
+Title: Machine learning geeks have some questions for biologists and neurologists
+
+Content:
+As machine learning evolves in the pursuit of AI, one of the conversations we should ramp up is between ML engineers/researchers (software/hardware) and biologists/neurologists/biochemists (wetware). Such exchange for information could drive both fields of study, each domain serving questions, challenges and working models to the other.
+
+&#x200B;
+
+\[ the original list of questions has [been published here](https://bogdanbocse.com/2018/11/a-solution-architects-questions-about-the-biological-brain/)\]
+
+&#x200B;
+
+What is the throughput of one synapse, in signals / second?
+
+How can we model one signal? How many bits would it minimally take to represent?
+
+What is the throughput of one synapse, in bits/second?
+
+How can the real activation function be measured on an actual neuron?
+
+* Assuming synapses have weights, how are weights increased or modified? What is the signalling or transmission mechanism for enforcing and respectively dissolving synapses?
+* Are there several types of weight functions, depending on the type of neuron?
+* Are the weight functions symmetrical on all input (albeit with different weights)?
+
+What is the latency of firing a synapse?
+
+* Time needed for internal firing of source neuron
+* Travelling time on axon
+* Travelling time in dendrite
+* Time needed for internal firing of destination neuron
+
+How do neurons handle the asynchronicity between inputs? Does each input have a expiration (fade off) time?
+
+Does firing of one synapse have side-effects (i.e. short term, long term)? For how long? Examples of side-effects may include:
+
+* Saturation – making it harder for the synapse to fire a (k+1)th time after it fired (k) times
+
+Does firing of one neuron have side-effects? For how long?
+
+What is the distribution (histogram) of the working frequencies for neurons? (measured in Hz or operations per second)
+
+What is the distribution (histogram) of axons by number of outbound neurons/dendrites?
+
+What is the distribution (histogram) of distances travelled by dendrites?
+
+What is the distribution (histrogram) of distance\*throughput (outbound) of axons?
+
+What is the distribution (histogram) of distance\*throughput (inbound) of dendrites?
+
+What is the distribution (histogram) of number of neurons per brain region?
+
+What is the distribution (histogram) of number of synapses per brain region?
+
+What is the throughput of the human brain? (input-output operations/second)
+
+* Breakdown per activity
+* Breakdown per time of day
+* Breakdown by area of the brain
+
+What is the processing capacity of the human brain? (computations-operations per second, such as the activation functions)
+
+&#x200B;
+
+&#x200B;
+
+https://preview.redd.it/otmc86c75gx11.jpg?width=2714&format=pjpg&auto=webp&s=698e2bf68a71b030dc2812abc7c170b47ef4a146
+
+Comments:
+- You are going about this all wrong. Basically every question is best answered as "it depends" or saying it doesn't apply.
+
+Neurons and people in general are not made on an assembly line. The amount of variation from one to the next can hardly be understated. What's the traveling time? On which neuron? Some are microscopic and others are several feet long. How fast is it firing? That's gonna depend on how hungy or scared you are. 
+
+The brain is not a computer. Neurons are not independent circuits. They are not binary on-off but a gradient of strength of activation which can be further boosted by multiple neurons signaling together. The brain is not just a processor. It filters and ignores more data than it actually every does anything with. It's also a storage media of sorts. And a metronome. And a thermometer. And a lot of other things.
+
+The brain is a biological organ which cannot be functionally understood well by reductionism, but needs to be looked at as a whole.  Biology functions primarily on emergent functions based on physics and chemistry, not information processing. For example, there are many feedback mechanisms where disruptions of homeostasis activate genes which produce chemicals to counteract the disruption based on millions of years of evolutionary experience "hard coded" into DNA without any "thought"/processing needed. At the cell level, this can be simplier, but at the organism level, a neuroendocrine system starts to become necessary for signaling pathway logistics. 
+
+The neurons of the brain play complex songs with sections firing together in harmonic balance. You can't grasp what the brain is doing by looking at a single neuron any more than you could understand what the heart is doing by looking at a smooth muscle cell. You can't figure out heart rate by asking how many times a smooth muscle cell can contract in a second.
+- The other answer is biology is complicated.
+- I'd recommend something like "Neurobiology for dummies" or any other basic textbook. Basically even what kind of signal will activate the neuron depends on stuff like time or distance between two synapses on dendrites of a single cell as the signal is electric current caused by ion flows between the outside and inside of the cell. So there is no "activation function" as it depends on local voltages between two sides of the cell membrane which are created by exchanging sodium, potassium and chlorine ions between the inside and outside of the cell through ion channels and pumps, amount of which can be regulated. The membrane itself can have different lipids which changes its insulating properties and there may be myelin sheaths on axons that insulate it more. Everything else is also regulated and varies both locally and globally: the amount and spacing of synapses, to the precise concentrations of ions, the shape of dendrites, amount of channels, the amount of neurotransmitter needed to open/close them, the kinds of neurotransmitters themselves, the precise voltage needed to send an output signal... Everything, that's why it's so damn hard to quantitavely describe and model anything in biology.
+- Neural networks are *not* a model of the human brain, or even a small subset thereof. Just because you understand them doesn't mean that shoehorning reality into your grossly simplified model is going to produce any useful results.
+- This is the random ranting of someone wanting to seem like they understand neural nets. All of these questions are thoroughly explored in even an undergrad course on neural nets.
+
+Like "how are synapse weights modified?" There's a fucking pneumonic, I'm sure you all know it: "Neurons that fire together wire together" It's the fundamental principle behind every neural net and if this random blogger doesn't know that, they've like never even built a net.
+
+I mean, it's not like these are bad questions, but it shows a basic laziness to just post the questions and hope for answers. Just go torrent a beginner textbook on this stuff.
+- These are great questions that we need to get answered.
+- I really struggled with computer models at the beginning of my PhD for all of the same reasons. But really, you can almost make the same argument for any model system or any experiment. All of science is reducing very large complex systems into very simple reductionist questions. So while neural networks are by no means going to elucidate every detail about how the brain works, their models can certainly help create new questions for wet lab researchers and vice versa.
+- This sounds more like someone who knows machine learning trying to fit real brains into their toy model.
+- That sentence was probably a little poorly worded as I didn't intend to knock reductionism is science or biology as a whole, just emphasize that the primary functions of the brain all occur at higher organization levels that require spatial integration. You gotta know if a neuron is firing in phase with it's neighbors and if, say, the waves produced in the left hemisphere is in phase with the right. Asking about information throughput of a neuron is just missing the point as that is kinda structurally unrelated to any possible higher level information processing the brain is doing. 
+
+Most (all?) cells in the body use electrochemical gradients to do things. Sometimes they are just built up in membrances and maintained to drive processes, but  Many times they can pulse semi-regularly. Sometimes, they are adapted to pulse quickly in response to particular stimuli. A particular category of cells, called neurons, also transmits those pulses over longer distances. Neurons existed evolutionary long before central nervous systems. Neurons can do their thing completely outside of a "brain:" see, like reflexes, that just jump to the nearest ganglia and return. 
+
+The brain is an organ made up of many cell types. It's functions are certainly based primarily on interconnected neurons, but it's not and in and out processing system. It's a pulsating hydraulic instrument whose organ-level functions cannot be separated from it's overal physical shape producing metawaves which bounce around inside the skull. 
+
+People who want to understand how the brain works do it best with sensors and imaging of whole/region-level activity. Hook someone up to an EEG (brain wave analyzer) and you can immediately tell if they are conscious, have their eyes open, asleep, etc. Put then in a fMRI and you can really start to see where things are happening. 
+
+If I wanted to compare the brain to a computer, each of the tens of billions of cells would be considered it's own processor connected to a buzzer and the internet. Deciding if they buzz, how loud, and a what pitch is pretty much the only thing they do; but their buzzing-algorithm is extremely complex and energy intensive. Activity, expressed as sounds, would be achieved in the network only when huge swaths of processors in the same area synced up to do the same thing at the same time. A concert of cell-sized speakers. So you take those systems and carefully arrange them in an audiotorium, turn the power on, and they start playing Concerto Gosso No. 8 in G minor with each orchestral chair emulated by a population of processors.
+- I mean, actual neural nets exist and model a lot of these things by design. These systems have rates that describe excitability and loss due to leak and inhibition, etc. 
+
+If OP actually wanted the answer to the questions, the answer is go check in a textbook. If OP just wanted to seem smart, feel free to do that.
+- The point of this post is not to treat the brain as a computer, but that people are using computers to understand how the brain works. 
+
+“People who want to understand how the brain works do it best with sensors and imaging of whole/region-level activity. Hook someone up to an EEG (brain wave analyzer) and you can immediately tell if they are conscious, have their eyes open, asleep, etc. Put then in a fMRI and you can really start to see where things are happening.”
+
+That is not true, that is just one small aspect of neuroscience. Machine learning includes giving a a computer a ton of data and letting it make sense of it. The mechanics of how individual neurons function along with data on how the whole brain responds to stimuli can be very useful. If a computer has the rules for how individual neutrons work, and then examples of how the brain responds in real life, it can go through the iterative processes to try to fill in some of how the brain might be functioning. Hypothesis can be developed from machine learning and tested in the wet lab. 
+
+“You gotta know if a neuron is firing in phase with it's neighbors and if, say, the waves produced in the left hemisphere is in phase with the right. Asking about information throughput of a neuron is just missing the point as that is kinda structurally unrelated to any possible higher level information processing the brain is doing.”
+
+But you have to know the rules of how individual neurons function to then build and look at how the can work together. The limitations of individual neurons is definitely going to impact how all of the neurons are going to work together.

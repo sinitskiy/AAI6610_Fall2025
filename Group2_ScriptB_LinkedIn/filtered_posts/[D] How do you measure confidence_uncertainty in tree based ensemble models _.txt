@@ -1,0 +1,22 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/81wqws/d_how_do_you_measure_confidenceuncertainty_in/
+Title: [D] How do you measure confidence/uncertainty in tree based ensemble models ?
+
+Content:
+By tree based ensemble models I mean mainly Random Forests and Gradient boosting. 
+
+I know that for Random Forest, for classification, you can have an idea by averaging the fraction of the majority class in the different leafs of the different trees. Having an idea of the distribution of those confidence scores could also give interesting information. 
+
+So my questions are : 
+
+* 1/ How about regression in random forests (regression forests), can you do kind of the same ? 
+
+* 2/ How about both (classification and regression) in gradient boosting models. Do you just introduce the weights of the different tree classifiers ?
+
+Thank you all,
+
+Comments:
+- For random forest regression, similar to averaging the fraction of the majority class, you can just take the values in the leaf and record the sample variance of the data points. 
+
+For boosted trees - you could try Quantile Regression (in sklearn, GradientBoostingRegressor with loss='quantile'). Along with your least squared model (which predicts the mean), you can train two additional models which predict 5% and 95%.
+- 1./ yes you do exactly the same, for any metric you can think of you have an OoB bootstrap estimate that naturally arises from the forest.

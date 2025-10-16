@@ -1,0 +1,25 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/y79xov/grad_student_in_multicellular_evolution/
+Title: Grad student in multicellular evolution
+
+Content:
+I'm recruiting a bioinformatics related PhD student (MS may be possible too) for the Fall 2022 application cycle. My lab works in multicellular evolution in the volvocine algae using a multi-omics approach ([https://multicellular.org/](https://multicellular.org/)). We are transitioning this research toward projects involved machine learning combined with single cell sequencing and mathematical modeling. We do a lot of wet lab experiments to confirm lab findings. We are also working on the origin to tumor suppressors using a combination of wet lab experiments and multi-omics combined with machine learning. I am the associate director of bioinformatics and have substantial collaborations within my university and internationally on a diverse array of projects. If you are interested in bioinformatics, data science and machine learning while working on a "big problem" in biology, then we should talk about admissions. We have lots of new and interesting projects and my trainees are given a lot of freedom to develop projects that interest them.
+
+&#x200B;
+
+1. You don't need bioinformatics experience, just a willingness to learn. I have trained numerous students with no experience in bioinformatics (nor even programming experience). We have both formal courses and numerous informal ways to learn. Past trainees have been very successful in developing both academic and industry careers with bioinformatics and/or data science with no prior experience. If you are interested in industry, I support trainee networking and internship in industry to gain needed experience.
+2. You are more than welcome to reach out to me on reddit or by email to chat about the application process. I always feel it is best to chat before application.
+3. PhD students in our department are guaranteed full funding and benefits to complete their degrees. This includes tuition waiver.
+4. Mentorship matters to me and my laboratory ([https://multicellular.org/mentorship/](https://multicellular.org/mentorship/)).
+5. Our admissions does require some biology background, so if you come from a computer science or statistics background we should chat before you apply to make sure you get a few courses completed for admissions purposes.
+6. GRE is no longer required! You don't need a perfect GPA either. Desire to learn, do research and earn your PhD is the most important factor. MS students are also welcome, but we definitely need to chat before admission as our department has a lower priority for MS admissions.
+
+Let me know if there are questions.
+
+Comments:
+- 7. Salary numbers are for me to know and you to find out, tee hee hee
+- These are set by our department and are set to increase for 2022/2023 so I don't know exactly what it will be and also depends on if a student qualifies for various fellowship programs. It is approximately $28k salary/stipend in a low cost of living area, full tuition waiver, benefits depend on a lot of factors.
+- My apologies, I saw “Job Posting” and thought this posting was for a position for a post doc or a post masters. I see now that you are recruiting new PhD  students within your program and hopefully within your lab (the idea that they wouldn’t go into an umbrella program where the student would rotate and maybe end up in your lab is a little strange for biology to me). $28K of stipend/living expenses (it’s not a salary, it’s a stipend) is par for the course. It’s minimum wage, but at the same time you are not taking on debt while getting an education. In general, in addition to selling your lab and research, it is worth focusing on the program, school, and area of living. From our recruitment work and many interview weekends, the prospective students are more interested in having options of research, being part of a functional, friendly department, and living in a place that is affordable (battle of stipend vs rent/mortgage) and dynamic. Sorry for my confusion, I was falling asleep when I first saw this last night. Hope the recruitment goes well and all the best with your science
+- Not a problem. Yes, our experience is that quality of program mentorship is a key factor. We are trying to get stipends up but it has cascading effects when we have parity in stipends in the department (tuition and overhead on grants is the big one). We have similar issues with NIH scale on post-doc salaries and our parity program.
+
+I should also mention, that admitted students can rotate if they want.

@@ -1,0 +1,44 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1gs86bd/why_is_it_standard_practice_on_aws_omics_to/
+Title: Why is it standard practice on AWS Omics to convert genomic assembly fasta formats to fastq?
+
+Content:
+> The initial step in our machine learning workflow focuses on preparing the data. We start by uploading the genomic sequences into a HealthOmics sequence store. Although FASTA files are the standard format for storing reference sequences, we convert these to FASTQ format. This conversion is carried out to better reflect the format expected to store the assembled data of a sequenced sample.
+
+https://aws.amazon.com/blogs/machine-learning/pre-training-genomic-language-models-using-aws-healthomics-and-amazon-sagemaker/
+
+https://github.com/aws-samples/genomic-language-model-pretraining-with-healthomics-seq-store/blob/70c9d37b57476897b71cb5c6977dbc43d0626304/load-genome-to-sequence-store.ipynb
+
+This makes no sense to me why someone would do this. Are they trying to fit a round peg into a square hole?
+
+Comments:
+- They only know how to parse 4-line FASTQs but don't know how to parse multi-line FASTAs.
+- I'm a bit confused - how are they deriving sequencing level information from a fasta input for the said conversion?
+- [deleted]
+- AWS Health Omics in general has never made sense to me. You already need to know some AWS, then get familiar enough with their abstractions to be able to write your own custom integrations on top of it. At that point, why wouldn't you just implement your own data store on S3? It seems like a pretty narrow happy path.
+- I tried aws omics 2 years ago, and it was terrible. It had permissions loop everywhere, and setting up the roles and services was way more cumbersome than to set a barch queue for nextflow
+
+Omics lives in this weird place where it is too hard for non-cloudOps people, but too opaque to developers. Ah that's the other thing, getting logs and iterating over workflow design is a nightmare there. Zero out of ten, do not recommend
+- Why waste those bits? You could use them to store valuable cat photos
+- AWS's business has always been to take open source software and make a SaaS out of it, just with a fancier name. (this is the case for all of their "cloud products", which mainly consist of servers running stuff that they didn't invent)
+
+I was offered a position there when they were starting to set up the Omics services. I started my PhD instead. My impression is they have VERY good computer scientists integrating their tools. The problem is CS  don't know DICK about biology, so they don't really understand how unique these formats are or how they came to be. Much less how things are done in our field.
+
+I'd say it is mostly due to a preference of the consultants they hired to assemble their systems. For whatever reason.
+- [deleted]
+- If they want easy they could have stuck to using the old qseq file format!
+- Source code has a bunch of # for quality
+- The one where they assemble assembly fastqs and sell it to you lol
+- This is exactly my view. Most of us know very well the underlying tools behind their Omics platfom. At the end of the day you are in for computing power and memory. All else is decoration.
+- [deleted]
+- Yea that makes sense but the applications don't seem to use any quality information so I'm wondering if they would be better off just having a layer the stream in sequence chunks instead of doubling the filesize w/ pseudo-quality info?
+
+Skimming the source code: https://github.com/aws-samples/genomic-language-model-pretraining-with-healthomics-seq-store/blob/70c9d37b57476897b71cb5c6977dbc43d0626304/utilities.py#L83
+
+It looks like the sequences are still full length in the output.
+- How useful can it be to take a model trained on sequencing reads and ask it to analyze full assembled contigs the same way?
+- I would strongly doubt they are actually storing the underlying data in FASTQ, it's probably just that it's easier for whatever reason to get it loaded in their sequence data store. I'd assume they are using Parquet or similar under the hood
+- They don't know the qseq format, either 💀
+- Fastq contains quality scores and fasta doesnt. Fasta can still contain unassembled reads.
+- [deleted]
+- [deleted]

@@ -1,0 +1,36 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bzzal7/what_kind_of_challenges_are_remaining_in_machine/
+Title: What kind of challenges are remaining in machine learning??
+
+Content:
+To rephrase, I mean to ask that there are pretrained models for all the tasks like Computer Vision and Natural Language processing. With the advent of Generative AI I feel like most of the automation tasks have been solved. What other innovative uses cases can you guys think of? 
+
+Maybe some help with some product combining these ML models?
+
+Comments:
+- What has Generative AI “solved”? The outputs from all these models are generally “close” to something reasonable for their use case but often still flawed. These models are much more heavy on the “Generative” than “Intelligence”.
+- I don't think the solutions are the greatest, tho. Take medical claims data, for instance. There is still a lot of fraud that occurs.
+
+I was reading a few weeks ago that nearly 2 billion dollars worth of claims are fraudulent in the US. There is still a lot of systems that need to be built and fixed.
+- Nothing is even close to being solved. Plus the tiny fraction that is “solved” we’re still in the dark for interpretability. Any context in industry where one wants to implement theory or canonical tools requires an immense amount of finicky engineering. Everyone is still stuck on the most basic shit around connectivity and so on. And not a single inch has been gained in AGI.  Not one discovery. ML is in its infancy. If you want to know where to focus, learn pure math.
+- I saw a thing a while ago where people are trying to use unsupervised language models to decipher whale language from sonar recordings. If I had a choice in what to work on it would probably be something like that, but I think the biggest hurdle there is getting hold of the data
+- Hard to think of broad use models outside of comp vision, natural language processing, and audio recognition. Comp vision and audio recognition are two of the five senses lol.
+
+Maybe train a model to detect odors? Lol, not sure if there are sensors for that
+- only in r/datascience
+- [deleted]
+- Most relevant data is private. Therefore, it is not public knowledge. To some extent, we could say that companies live within their own "world model", where generalist models cannot help at all or very little.
+
+No amount of Foundation Models can solve/help with any of that. That's why OpenAI is literally paying millions to get access to private medical data (among other industries). Still, they cannot pay for every single company's "world".
+- Heh guys check this out… this guy thinks we can just “from transformers import ____” our way through our projects.
+- I guess that annotating that kind of data must be even more difficult.
+- Doubly robust machine learning
+- Machine Learning Interpretability
+- This. Especially for NLPs we get a whole lot of plausible language production that is still garbage. Like for production we have only solved how to not produce ungrammatical sentences, but that's like a bare minimum viable product.
+- Its solved my problem of having to go through stack overflow everyday
+- I see, thanks for the response.
+- [deleted]
+- Don't worry, Sam Altman and friends are going to solve this for only a few trillion dollars.
+- Makes sense, thanks for the response.
+- Yes, there are sensors for detecting volatile substances. And there are people trying to use so-called electronic noses for diagnosing illnesses..
+- Lol makes sense

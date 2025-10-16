@@ -1,0 +1,39 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/15l9uyi/d_should_i_learn_probabilistic_programming_if_im/
+Title: [D] Should I learn Probabilistic Programming if I'm an prospective Data Scientist
+
+Content:
+I'm currently on my journey to becoming a Data Scientist, and I've been contemplating whether or not to invest my time in learning probabilistic programming. As a prospective Data Scientist, I am aware of the importance of statistical analysis and machine learning techniques, but I'm curious about the relevance and benefits of probabilistic programming in this field.
+
+My understanding is that probabilistic programming allows us to model uncertainty more effectively, which can be crucial in scenarios where data is noisy or incomplete. By incorporating probabilistic models, we can make more informed decisions, quantify uncertainties, and develop more robust predictive models.
+
+I would love to hear your insights and experiences on the matter. Have you found probabilistic programming to be a valuable skill in your Data Science endeavors? Does it significantly enhance the quality of your analysis and predictions? If you've learned it, what resources or courses would you recommend to someone who's just starting out? And perhaps, most importantly of all, does the industry indeed seek the merits of this skill?
+
+Comments:
+- Probably shouldn't be too high on your list of things to study. There are more basic and important things.
+- If you’re looking to build ML based systems, probabilistic programming is a good skill to have in your arsenal. I use it at work to quantify uncertainty associated with a model’s predictions.
+
+This was a useful book for me to learn about the space:
+
+https://www.manning.com/books/probabilistic-deep-learning
+- I have no idea what you're talking about, I have never heard of probabilistic programming.
+- I've been doing probabilistic programming for a decade now. My TL will ask if I'm going to have a bug fixed by the end of sprint and I'll say "probably"
+- Here's another good reference: [https://probml.github.io/pml-book/book1.html](https://probml.github.io/pml-book/book1.html)
+
+There's a second book, but that's more advanced. Check if the course has some of the same topics. If yes, then it might be worth taking.
+
+(I know this is Probabilistic Machine Learning and you asked for Probabilistic programming, but I assumed they're the same. If not, someone let me know).
+- It is an entire field of employment...
+- Same haha
+
+There is a big new course which is an optional part of my masters degree and I'm currently undecided weather or not to attend it. 
+
+It seems to be quite a niche thing, telling from what I saw online
+- Do you mean like programming quantum computers? That's the only thing I can think of since that is based in probabilities, and if it is that, then no it won't help with a career in Data Science other than being an interesting conversation starter.
+- Did you decide to take the course? I hope you did!
+
+But then I hope they teach when it's useful and when to stick with simpler methods. It is an excellent tool to have in your arsenal, especially if you're helping leaders on high-stakes company policy decisions.
+
+Even if you don't directly use the methods, if they teach it starting from the basics with Bayes Theorem, you'll get a firmer grasp on so many other important areas you're working with.
+
+tl;dr: yes take the course because it adds important tools to your arsenal while fortifying your stats skills overall

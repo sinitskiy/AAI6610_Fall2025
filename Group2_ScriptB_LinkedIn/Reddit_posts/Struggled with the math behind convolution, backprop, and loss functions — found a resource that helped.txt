@@ -1,0 +1,38 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1ksiyx7/struggled_with_the_math_behind_convolution/
+Title: Struggled with the math behind convolution, backprop, and loss functions — found a resource that helped
+
+Content:
+I've been working with ML/CV for a bit, but always felt like I was **relying on intuition** or tutorials when it came to the math — especially:
+
+* How gradients really work in convolution layers
+* What backprop is doing during updates
+* Why Jacobians and multivariable calculus actually matter
+* How matrix decompositions (like SVD) show up in computer vision tasks
+
+Recently, I worked on a book project called ***Mathematics of Machine Learning*** **by Tivadar Danka**, which was written for people like me who want to deeply understand the math **without needing a PhD**.
+
+It starts from scratch with **linear algebra, calculus, and probability**, and walks all the way up to how these concepts power real ML models — including the kinds used in vision systems.
+
+It’s helped me and a bunch of our readers make sense of the math behind the code. Curious if anyone else here has go-to resources that helped bridge this gap?
+
+Happy to share a free math primer we made alongside the book if anyone’s interested.
+
+
+
+Comments:
+- Of course the obscure book that no one knows is published by the same publisher op works at lmao.
+
+For the record, newbies can get away with this [https://mml-book.github.io/book/mml-book.pdf](https://mml-book.github.io/book/mml-book.pdf) which is freely available, or [d2l.ai](http://d2l.ai) .
+- I’d also recommend the Intro to Deep Learning course at CMU taught by prof Bhiksa Raj, whose slides are freely available online. The course does actually tell you how to get the gradient updates for CNNs, and is generally quite mathematically rigorous. I think you can even find the lecture videos on YouTube.
+- Highly recommend this book for folks who want to understand deep learning without getting into the nitty-gritty math details:
+
+[https://udlbook.github.io/udlbook/](https://udlbook.github.io/udlbook/)
+
+But also, you don't need to know how the math works to do ML!  You need to understand what the math is DOING and how parameters change behavior/learning, but almost no one is coming up with new gradient descent algorithms or whatever.
+- [A guide to convolution arithmetic for deep learning](https://arxiv.org/abs/1603.07285)
+
+Paper that explain conv using LA,
+
+If you understand how gradient works in regular nn, this could help to understand it for CNN
+- Gracias

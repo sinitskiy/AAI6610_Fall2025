@@ -1,0 +1,55 @@
+URL: https://www.linkedin.com/posts/jarango_figma-in-talks-with-bankers-to-explore-an-activity-7304573338243190785-wfeR
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jorge Arango的动态
+Jorge Arango
+
+Architecture for Intelligence | Designing Clearer, Smarter Digital Experiences
+
+7 个月  已编辑
+
+Whenever I tell students that Figma isn’t where things are going, I’m met with disbelief. It’s understandable: they’ve honed their “drawing rectangles” game. Alas, it’s a game apt for a world that’s waning. 👀👇
+
+Georg Zoeller
+7 个月  已编辑
+
+This is probably contentious but by my observations in the ecosystem Figma is dead man walking unless they pivot aggressively. 
+
+Their excellent product enables designers to craft UI/UX which makes sense in traditional product development processes. 
+
+Those processes however are built around 40+ year old premises:
+
+- Software development, especially engineering time is expensive 
+
+-  Iteration cycles are long and changes are costly 
+
+- Only subject matter expert can plan software products. 
+
+But in this new world, there’s transformer technology. 
+
+In this new world, a medical worker, with an increasingly automated helping hand can prompt the interface for the product they are the end user for into existence. 
+
+A model which has been fed with every book, github project and stack overflow conversation in existence, which has seen the deployed website source code of every Fortune 500 company and hip unicorn.  Has eaten the documentation for every framework and watched the youtube video for every design course. 
+
+This prototype is not the product and this code does not unemploy the software engineer. 
+
+But it solves the problem Figma built their business on: The need for low loss context transfer between end user requirements and SWE. 
+
+A functional prototype enables iteration in UX issues independently from backend, a massive gain. 
+
+What we have here is a typical first order vs second order effect problem:
+
+First everyone thought with Figma offering interface generation Designers will unemploy software engineers. 
+
+But with the design profession codified into the weights of 

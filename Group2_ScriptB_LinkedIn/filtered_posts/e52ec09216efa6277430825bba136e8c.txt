@@ -1,0 +1,92 @@
+URL: https://www.linkedin.com/posts/vincent-fortuin-42426b134_this-was-a-really-fun-chat-with-alexandre-activity-7313810958341070848-xOen
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Vincent Fortuin的动态
+Vincent Fortuin
+
+PI @Helmholtz AI, Faculty @TUM
+
+6 个月  已编辑
+
+This was a really fun chat with Alexandre Andorra, thanks for having me on the podcast!
+
+Learning Bayesian Statistics
+
+3,622 位关注者
+
+6 个月
+
+🤖 AI in science is full of promise—but 𝐧𝐨𝐭 𝐚𝐥𝐥 𝐨𝐟 𝐢𝐭 𝐭𝐫𝐚𝐧𝐬𝐥𝐚𝐭𝐞𝐬 𝐢𝐧𝐭𝐨 𝐫𝐞𝐚𝐥-𝐰𝐨𝐫𝐥𝐝 𝐢𝐦𝐩𝐚𝐜𝐭.
+
+🎙️ In our latest episode, Alexandre Andorra sat down with Vincent Fortuin to explore where 𝐁𝐚𝐲𝐞𝐬𝐢𝐚𝐧 𝐝𝐞𝐞𝐩 𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐝𝐞𝐥𝐢𝐯𝐞𝐫𝐬 𝐫𝐞𝐚𝐥 𝐯𝐚𝐥𝐮𝐞—and where there’s still work to do.
+
+𝐇𝐞𝐫𝐞 𝐚𝐫𝐞 𝐬𝐨𝐦𝐞 𝐤𝐞𝐲 𝐭𝐚𝐤𝐞𝐚𝐰𝐚𝐲𝐬 𝐟𝐫𝐨𝐦 𝐭𝐡𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐚𝐭𝐢𝐨𝐧:
+
+🔁 𝐁𝐚𝐲𝐞𝐬𝐢𝐚𝐧 + 𝐃𝐞𝐞𝐩 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠: Combining uncertainty estimation with powerful models improves reliability—especially in critical domains.
+
+📊 𝐂𝐚𝐥𝐢𝐛𝐫𝐚𝐭𝐞𝐝 𝐩𝐫𝐞𝐝𝐢𝐜𝐭𝐢𝐨𝐧𝐬: Fine-tuning LLMs with Bayesian methods results in more trustworthy outputs.
+
+🧰 𝐓𝐨𝐨𝐥𝐢𝐧𝐠 𝐬𝐭𝐢𝐥𝐥 𝐞𝐯𝐨𝐥𝐯𝐢𝐧𝐠: No dominant library for Bayesian DL yet, but the momentum is growing.
+
+🧪 𝐑𝐞𝐚𝐥-𝐰𝐨𝐫𝐥𝐝 𝐢𝐦𝐩𝐚𝐜𝐭: Applications in healthcare, physics, and beyond are already emerging.
+
+🧠 𝐏𝐫𝐢𝐨𝐫 𝐤𝐧𝐨𝐰𝐥𝐞𝐝𝐠𝐞 = 𝐝𝐚𝐭𝐚 𝐞𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲: Incorporating domain expertise leads to smarter, more efficient models.
+
+📢 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐜𝐚𝐭𝐢𝐨𝐧 𝐦𝐚𝐭𝐭𝐞𝐫𝐬: Understanding uncertainty is one thing—explaining it clearly is just as important.
+
+⚙️ 𝐓𝐞𝐜𝐡 𝐡𝐢𝐠𝐡𝐥𝐢𝐠𝐡𝐭𝐬: 𝐌𝐞𝐭𝐚-𝐥𝐞𝐚𝐫𝐧𝐢𝐧𝐠, 𝐏𝐀𝐂-𝐁𝐚𝐲𝐞𝐬, 𝐋𝐚𝐩𝐥𝐚𝐜𝐞 𝐢𝐧𝐟𝐞𝐫𝐞𝐧𝐜𝐞, and subspace methods are pushing the field forward.
+
+📈 The road ahead: Progress requires 𝐛𝐞𝐭𝐭𝐞𝐫 𝐛𝐞𝐧𝐜𝐡𝐦𝐚𝐫𝐤𝐬, 𝐜𝐥𝐞𝐚𝐫𝐞𝐫 𝐞𝐯𝐚𝐥𝐮𝐚𝐭𝐢𝐨𝐧, 𝐚𝐧𝐝 𝐜𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧 across the AI community.
+
+If you’re focused on 𝐛𝐮𝐢𝐥𝐝𝐢𝐧𝐠 𝐀𝐈 that’s not just 𝐩𝐨𝐰𝐞𝐫𝐟𝐮𝐥 𝐛𝐮𝐭 𝐫𝐞𝐥𝐢𝐚𝐛𝐥𝐞, this episode is well worth listening to.
+
+🎧 𝐓𝐮𝐧𝐞 𝐢𝐧 𝐡𝐞𝐫𝐞: https://lnkd.in/gAeg-Ma4
+
+#BayesianDeepLearning #AIForScience #MachineLearning #DeepLearning #BayesianInference
+
+44
+1 条评论
+赞
+评论
+分享
+Learning Bayesian Statistics
+
+6 个月
+
+A pleasure to host you Vincent Fortuin, come back anytime!
+
+赞
+回复
+1 次回应
+
+要查看或添加评论，请登录
+
+1,951 位关注者
+
+20 则动态
+查看档案  关注
+浏览内容分类
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+展开 
+领英
+© 2025
+关于
+无障碍模式
+用户协议
+隐私政策

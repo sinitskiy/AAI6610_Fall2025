@@ -1,0 +1,36 @@
+URL: https://www.linkedin.com/posts/michael-malyuk_has-the-term-active-evaluation-been-activity-7206709488425299969-gBjU
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Malyuk的动态
+Michael Malyuk
+
+CEO & Co-Founder at HumanSignal
+
+1 年
+
+📚 Has the term "active evaluation" been coined yet, similar to "active learning"?  I'm okay to volunteer here. What would it mean?
+
+🔍 Similar to active learning, active evaluation would select the most “informative” outputs to evaluate based on an uncertainty score. In active learning, we aim to identify the items that would most benefit the model if labeled and added to the training dataset. In active evaluation, we focus on finding the most incorrect or hallucinated examples so we can address them first.
+
+🚧 One of the challenges in implementing more "active" approaches for evaluating LLMs lies in defining uncertainty scores to prioritize tasks. Imagine having a score that indicates a high probability of hallucinations; you could use that to identify outputs that need correction. By setting a threshold, you can easily implement human-in-the-loop approaches for LLMs. Any output with a likelihood of hallucinations above the threshold would be reviewed by a human first.
+
+📄 A recent paper from DeepMind introduces a method to computing this metric using Information Theory (which gives me a bit of PTSD from studying a great MacKay’s book). Here's how they approach it:
+
+📊 They establish two types of uncertainty:
+– Epistemic: The lack of knowledge about the ground truth (such as facts or language). When this value is low, the prediction is closest to the ground truth (i.e., fewer hallucinations).
+– Aleatoric: Irreducible randomness (such as multiple possible answers).
+
+🔍 Identifying when either of these uncertainties is small is difficult because there are not many guarantees around the model "learning" the ground truth. There are some heuristics to quantify epistemic uncertainty, but only in cases where there is a single correct answer (i.e., no aleatoric uncertainty present).
+
+🛠️ To address this, they developed an information-theoretic method to reliably de

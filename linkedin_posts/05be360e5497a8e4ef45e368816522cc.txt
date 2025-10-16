@@ -1,0 +1,35 @@
+URL: https://www.linkedin.com/posts/wadelicupmd_why-language-models-hallucinate-activity-7371558950837706752-N0vZ
+Date: 2025-09-24
+Author: Unknown
+
+On Reducing LLM Hallucinations and Parallels to Clinical Decision Making
+
+We all have seen (or at least heard) that the large language models (e.g. ChatGPT, Claude, Grok, Gemini) "hallucinate", meaning they say false things with confidence. This obviously makes us wary with complete deployment of generative AI models in real world contexts, especially those with high stakes like medicine, law, and finance. Still, the promises of the technology is overwhelming and is not going anywhere. 
+
+OpenAI published a new paper called "Why Language Models Hallucinate" (September 4, 2025; link to the paper below). In retrospect, the origins of hallucination feel rather intuitive, as well as how to reduce them. 
+
+The TL;DR is that the hallucinations are "features" as part of the statistical training process. They are optimized and rewarded for making predictions, not for saying "I don't know." 
+
+And really, in our culture, it is easy to think that an admission of uncertainty is a sign of weakness. 
+
+I instantly thought of clinical medicine, where we actually *prefer* our doctors to admit when they *don't* know the answer, instead of making high stakes decisions with blind confidence. Because, in reality... it is *impossible* to know everything. (It's also arguable that AI *cannot* know everything, due to the ever-changing landscape of knowledge and truth, though this is a different topic!)
+
+It's more helpful and thoughtful to admit uncertainty, and then pivot to trying to help determine the right answer. Or, at least help the patient get closer to the right answer. 
+
+Instead of the onus of burden always having to essentially "verify" the output of these models, it may be interesting to see if they can flag "confidence thresholds" or percentages, or grade the strength of evidence of their output. 
+
+I actually have a custom system prompt for Grok that frames all of its output in such a manner (sometimes it does so unnecessarily, but it is still noteworthy). 
+
+This research paper and its implications are promising, as "hallucinations" are a stickler for many and real high-stakes decision making is essentially, high-level risk management and Bayesian probabalistic decision making. Clinical medicine especially so.
+
+Interested in hearing anyone's thoughts and feedback!
+
+Link to the paper in comments for a deep dive: https://lnkd.in/dHcfVRuw. Let's discuss! 
+话题标签
+#AI 
+话题标签
+#Healthcare 
+话题标签
+#MachineLearning 
+话题标签
+#ClinicalDecisionMaking

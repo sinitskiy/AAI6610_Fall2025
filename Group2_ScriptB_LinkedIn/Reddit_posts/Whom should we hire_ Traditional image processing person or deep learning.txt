@@ -1,0 +1,56 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1nux45k/whom_should_we_hire_traditional_image_processing/
+Title: Whom should we hire? Traditional image processing person or deep learning
+
+Content:
+I am part of a company that deals in automation of data pipelines for Vision AI. Now we need to bring in a mindset to improve  benchmark in the current product engineering team where there is already someone who has worked at the intersection of Vision and machine learning but relatively lesser experience . He is more of a software engineering person than someone who brings new algos or improvements to automation on the table. He can code things but he is not able to move the real needle. He needs someone who can fill this gap with experience in vision but I see that there are 2 types of folks in the market. One who are quite senior and done traditional vision processing and others relatively younger who has been using neural networks as the key component and less of vision AI.
+
+May be my search is limited but it seems like ideal is to hire both types of folks and have them work together but it’s hard to afford that budget.
+
+Guide me pls!
+
+Comments:
+- Neural networks are not new for image processing. Traditional cv is still done by young people.  I think you are type casting people based on age.  Most computer vision people , young or old, have familiarity with learned and hand crafted algorithms
+- Most people with a masters is CV will have experience with traditional image processing techniques and ML based approaches.
+- DM me. I’m curious; I’ve worked in CV for 20+ years and visual AI for the last 5.
+- How old is that person. We’ve been using neural nets in computer vision for decades.
+- Neural networks are vision AI? I don't understand what you're trying to say.
+- If ur SWE guy is good with algo, I feel the deep learning guy could relate more?
+
+But then again u can rely on the SWE guy for image algos and the traditional CV guy for more output. Again depending on their in person skills and ect. u better check out.
+
+Maybe do a coffee interview with ur SWE guy and the new potential CV guy to see if they sync and come up with good plans?
+- I've got experience in both approaches. Two are needed and complementary, even in the same pipeline. 
+I think a CV engineer need to master core CV concepts and deep learning models applied to vision. CVops, MLops are needed too.
+- Depends a lot on what your product really needs right now. traditional cv folks can be amazing at squeezing performance out of preprocessing, feature engineering, and edge cases where dl models don’t shine. younger dl-heavy folks can push state-of-the-art with transformers, detr variants, etc., but may miss the low-level vision tricks that still matter in production.
+
+if budget only allows one, i’d look at what’s blocking you most: is it *model performance* or *pipeline/engineering robustness*? that usually points to who adds the most value.
+
+btw, curious, what are you currently building?
+- it depends on your company business and the scope of works.   
+1. Fields like factory automation don't need fancy ML/DL. Forks who worked with Halon/Keyence and has experience in crafting industry camera, light, mount, ... are best fit.   
+2. otherwise, fields like robotics, autonomous driving need people with more software engineering and DL skills. Because in these fields, you have to deal with a lot of sensor inputs at once. Personally, I think software engineering skills are even more important than ML/DL skill.
+- What is your usecase? Traditional vision models are still decent for many usecasew and have power computer requirements.
+- I've sent you a DM. I'll try to help you with more specific guidance
+- deep learning person that who worked on traditional image processing for many years in the background
+- Why not use a DL/CV consultant to understand the possible gaps in your solution and/or recommend modern approaches?
+That way you won't have to gamble or make a wrong hiring decision, because it sounds like you're afraid of betting on someone who might be expensive and will be too classical or someone who is relatively cheap/inexperienced but has kaggle/data-science and no real CV background.
+
+Once you have a recommendation + working demo, with your benchmarks improved, use the consultant to understand his solution and how it could be implemented in your production setting (frameworks, theoretical assumptions, pre-trained/fine-tuned models,  gpus if needed, api calls to llms/vlms if needed, agentic ai if used, etc). Now you have a workplan and the ability to post specific job requirements or use your existing staff.
+
+I am a CV/DL consultant and this is pretty standard practice for mid-sized companies looking to modernize their offerings.
+
+Best of luck
+- I see where your problem is. You hire specialists for their domain knowledge and experience. However, your business or creative processes are not necessarily within their knowledge domain. I will give you a simple example.
+
+Typically, I2V models operate based on creating something new from a prompt and a reference image to create a video sequence. However, as an artist who can create various keyframes, I need a different process where injecting various keyframes and interpolating between them are necessary. In such a case, I have no choice but to refactor and modify the model repo so that this can be implemented.
+
+But that is highly specific to my work process and doesn't necessarily translate to the general usage case. I am no ML specialist or coder, but I can get them done using AI because I have a clear understanding of my image sequence creation processes and can define what I need to get done in detail for AI. In essence, I am using AI for its coding ability since I don't have it, but I am the one providing the processes and context to be coded.
+
+It is the same with any specialists. For example, if you ask a lawyer to draft a contract, a generic contract will be delivered. You need to think in this way: you are the one drafting the contract and using a lawyer for his/her knowledge of legal terms and related laws to complete it, not the other way around.
+- me
+- Hi. We haven't been speaking of images processing since '12 now.
+- I am not type casting but it’s just the sample that I have received. So that’s why I am looking for guidance.
+- Someone doing masters is the bare min criteria you mean?
+- u/sid_276 decades?
+- I am saying there are people who have used transitional image processing to solve problems of image recognition and then there are people who know more neural networks but they have not just focused on vision modality but their experience is spread across multiple modalities and not primary on vision. Who is the most appropriate person to solve image recognition automation

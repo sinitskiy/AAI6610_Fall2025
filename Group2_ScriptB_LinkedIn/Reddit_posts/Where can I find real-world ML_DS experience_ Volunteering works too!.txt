@@ -1,0 +1,37 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hlz38v/where_can_i_find_realworld_mlds_experience/
+Title: Where can I find real-world ML/DS experience? Volunteering works too!
+
+Content:
+Hey everyone,
+
+So, I’m trying to get some hands-on experience in machine learning and data science—not just the “do more projects” advice (I’ve already done a bunch), but actual real-world stuff where I can work on meaningful problems. Paid or unpaid, doesn’t really matter to me—I’d even love to volunteer if it means I get to learn and grow.
+
+I recently applied for an Omdena project, and I’m wondering if anyone here has done something with them? What’s it like? Did it actually help you gain valuable experience, or was it just another “group project” kind of thing?
+
+Also, are there other platforms or places where I could jump into something similar? I’m trying to avoid the whole “chasing certifications” rabbit hole. I just want to get better at solving real problems, not stacking credentials.
+
+Would love to hear your thoughts or any experiences you’ve had. Thanks in advance!
+
+bit about me: I’m a 3rd-year undergrad in Computer Science with a minor in Statistics, and I just got an internship for a data role at a pretty big company. Super excited about it, but I want to keep building my skills and exploring different opportunities in ML/DS.
+
+Comments:
+- You said you got an internship at a pretty big company? Well... You are in luck! Industry is the only legitimate place to find real-world ML/DS experience.
+- I would suggest you have a look at [Challenge Data](https://challengedata.ens.fr). You can find data science challenges based on public data.
+I am sorry the language is French, but you might translate the pages quite easily.
+- Academia. If you’re willing to volunteer I’d find a lab near you and just start emailing. Academic labs always have interesting projects.
+- I am in my last year in my BSc in Data science and ML, and I am too, trying to do some proper projects for my portfolio
+
+IDK, maybe we can a big project together or integrate our ideas ?
+- Datakind (Google them), or Kaggle competitions?
+- Truth is for some real-world experience with low stakes, the only places are Big-Tech firms with mature programs that have the data and problem statements, teams & leaders to help you out! Separately, you can reach to small startups but majority of their problems will be problem solving and not necessarily Data Science though Data will be a key part of it!
+- Hey friends, just wondering if a postgraduate certificate in AI and ML is really worth pursuing at this time? I have a bachelors in finance with work experience in the financial sector and worked with AI/ML a little bit in my work, Would a program like this be sufficient to get my feet wet as an analyst or data scientist? Starting out salary wouldn't be much of a consideration, I'm much more concerned with the feasibility of landing an entry level job. Please let me know your thoughts or experiences with such a program.
+- Try to search for industry based problems that isn't AI/ML integrated yet, believe me it is the best approach to actually face challenges and have an impact
+- Get a haircut and get a real job
+- Try YCombinator. I wish I had done this when I was in school. Now is the time when you should be dreaming up crazy startups and pitching them to get funded. Later, once you have *real* bills to pay (mortgage, family expenses etc) you won't have the flexibility. Also, you can find founders who are more experienced and might be able to guide you a bit with a"  meaningful " MVP - just don't get taken advantage of, make sure you're getting equal equity. Read the Y Combinator docs. There's plenty of videos and podcasts.
+
+Edit to add: do this even if your grades suffer a little bit. After you have experience no one cares about your grades (maybe FAANG?). You get the degree so you can get experience, if you get experience in another way then it's ok for your grades to suffer. If you get funded, drop out of college. Seriously.
+- already got an job and an haircut yesterday! Thx!
+- Is this a platform for startups?
+- Nice!
+- OP didn't ask for real world experience at FAANG. I seriously don't understand why the down votes.

@@ -1,0 +1,51 @@
+URL: https://www.linkedin.com/posts/anton-baumann_glad-to-have-published-my-first-paper-probabilistic-activity-7116101556847955968-OomT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Anton Baumann的动态
+Anton Baumann
+
+Master Student, Machine Learning
+
+2 年
+
+Glad to have published my first paper, "Probabilistic MIMO U-Net: Efficient and Accurate Uncertainty Estimation for Pixel-wise Regression" coauthored by Thomas Roßberg and Michael Schmitt, and to have had the opportunity to present it at the workshop on Uncertainty Quantification for Computer Vision at ICCV in Paris. It was a pleasure meeting so many great researchers I had only known through their work in person for the first time!
+
+Thank you to the organisers for making it all happen!
+
+The paper and code can be found here: https://lnkd.in/ebfP7DNm
+
+Arno Solin
+
+Associate Professor in Machine Learning at Aalto University
+
+2 年
+
+📢 Wrapping up a fantastic day at the #ICCV2023 Workshop on Uncertainty Quantification for Computer Vision in Paris!
+
+Firstly, a huge thanks you to all our esteemed invited speakers:
+🎙 Eric Nalisnick, University of Amsterdam
+🎙 Fatma Güney, University of Koc
+🎙 Janis Postels, ETH Zurich
+🎙 Dan Hendrycks, University of California, Berkeley
+🎙 Zeynep Akata, University of Tuebingen
+
+The insights on the different facets of uncertainty, ranging from anomaly detection to the interplay of assumptions in self-driving technologies, have truly enriched the discourse. We were assigned the largest hall at the convention centre, which tells about interest in uncertainty quantification in the computer vision community.
+
+Thanks also to all the contributors for their innovative research and thought-provoking presentations. Special mentions to the contributed talks: 
+
+🔹 "Probabilistic MIMO U-Net: Efficient and Accurate Uncertainty Estimation for Pixel-wise Regression"
+🔹 "Far Away in the Deep Space: Dense Nearest-Neighbor-Based Out-of-Distribution Detection"
+🔹 "Calibrated Out-of-Distribution Detection with a Generic Representation"
+🔹 "Gaussian Latent Representations for Uncertainty Estimation using Mahalanobis Distance in Deep Classifiers"
+🔹 "Probabilis

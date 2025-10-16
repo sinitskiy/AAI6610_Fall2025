@@ -1,0 +1,13 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/yrwpkp/research_paper_on_bioinformatics_for_drug/
+Title: Research Paper on Bioinformatics for Drug Discovery
+
+Content:
+I am a sophomore in college, writing a research ABOUT bioinformatics and it's use in drug discovery. I am a novice and would like some input to have a solid final product. My paper needs to contain 4-6 sub-topics, I was wondering what you think are the most important and impactful topics to discuss. 
+
+(So far I have thought of Open-source databases, multi-Omics, cost of research, Machine learning/RNN...) Note that these are just my initial ideas, I am looking for a communities perspective. 
+
+No actual personal research is involved, I am simply researching the topic itself. I look forward to hearing your suggestions.
+
+Comments:
+- You could discuss a few different methods of gathering the information needed to suggest novel targets (RNA sequencing vs tissue microarray vs quantifying immunohistochemical slides vs something like a Sleeping Beauty forward genetic screen) and what they will and won’t tell you in terms of suggesting genetic vulnerabilities. You could also discuss advantages and disadvantages between using cell lines as opposed to patient tumor tissue and why you might want to use one over the other (for example, if you were able to analyze patient tumor tissue you could potentially correlate gene expression with prognostic markers like overall survival, time to relapse, etc).

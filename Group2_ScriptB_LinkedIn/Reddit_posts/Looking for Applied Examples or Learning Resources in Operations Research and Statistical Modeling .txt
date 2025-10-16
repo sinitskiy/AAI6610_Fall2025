@@ -1,0 +1,162 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hhs47t/looking_for_applied_examples_or_learning/
+Title: Looking for Applied Examples or Learning Resources in Operations Research and Statistical Modeling 
+
+Content:
+Hi all, 
+
+I'm a working data scientist and I want to study Operations Research and Statistical Modeling, with a focus on chemical manufacturing. 
+
+I’m looking for learning resources that include applied examples as part of the learning path. Alternatively, a simple, beginner-friendly use case (with a solution pathway) would work as well - I can always pick up the theory on my own (in fact, most of what I found was theory without any practice examples - or several months long courses with way too many other topics included).
+
+I'm limited in the time I can spend, so each topic should fit into a half-day (max. 1 day) of learning. The goal here is not to become an expert but to get a foundational skill-level where I can confidently find and conduct use cases without too much external handholding. Upskilling for the future senior title, basically. 😄
+
+Topics are:
+
+ - Linear Programming (LP): e.g. Resource allocation, cost minimization.
+
+ - Integer Programming (IP): e.g. Scheduling, batch production.
+
+- Bayesian Statistics
+    
+- Monte Carlo Simulation: e.g. Risk and uncertainty analysis.
+    
+- Stochastic Optimization: Decision-making under uncertainty.
+    
+- Markov Decision Processes (MDPs): Sequential decision-making (e.g., maintenance strategies).
+
+- Time Series Analysis: e.g. forecasting demand for chemical products.
+
+- Game Theory: e.g. Pricing strategies, competitive dynamics.
+
+Examples or datasets related to chemical production or operations are a plus, but not strictly necessary.
+
+Thanks for any suggestions!
+
+Comments:
+- I had time to do some more research and came up with a first draft for my learning path. I'm sharing it in case it is of use to someone else:
+
+- Linear Programming (LP): e.g. Resource allocation, cost minimization. (13 h)
+
+- Integer Programming (IP): e.g. Scheduling, batch production. (12 h)
+
+https://www.coursera.org/learn/linear-programming-and-approximation-algorithms
+
+More theoretical lecture:
+https://www.coursera.org/learn/operations-research-modeling
+
+Somewhat shorter courses:
+https://github.com/benalexkeen/Introduction-to-linear-programming
+https://github.com/cochoa0x1/integer-programming-with-python?tab=readme-ov-file
+
+
+
+- Bayesian Statistics:
+
+https://www.statology.org/python-for-bayesian-data-analysis/
+
+https://medium.com/@ryassminh/practical-bayesian-inference-for-data-scientists-b48aaca9395a
+
+    
+- Monte Carlo Simulation:
+
+https://towardsdatascience.com/monte-carlo-simulation-a-practical-guide-85da45597f0e
+
+https://github.com/smahala02/Monte-Carlo-Simulation
+
+
+    
+- Stochastic Optimization:
+
+https://machinelearningmastery.com/stochastic-optimization-for-machine-learning/ (Intro)
+
+https://pypsa.readthedocs.io/en/stable/examples/stochastic-problem.html (Example windpower)
+
+https://medium.com/@vigamogh/stochastic-modeling-and-simulation-with-python-stochpy-c5fa2a13a023
+ 
+https://hadigheha.github.io/teaching/Stochastic/Stoc1.pdf
+
+    
+- Markov Decision Processes (MDPs):
+
+https://github.com/sudharsan13296/Deep-Reinforcement-Learning-With-Python/blob/master/01.%20Fundamentals%20of%20Reinforcement%20Learning/1.06.%20Markov%20Decision%20Processes.ipynb
+(Theory, Intro)
+ 
+https://python.plainenglish.io/understanding-markov-decision-processes-17e852cd9981
+(Theory)  
+ 
+https://www.datacamp.com/tutorial/markov-chains-python-tutorial
+(Example)
+
+- Time Series Analysis:
+
+https://www.33rdsquare.com/time-series-forecasting-using-python/
+ 
+https://github.com/jiwidi/time-series-forecasting-with-python
+
+https://www.statology.org/how-to-perform-time-series-forecasting-in-python/
+
+https://www.slingacademy.com/article/advanced-time-series-forecasting-with-numpy/
+
+
+- Game Theory:
+
+https://www.researchgate.net/publication/351827103_Game_Theory_and_Python_An_educational_tutorial_to_game_theory_and_repeated_games_using_Python#fullTextFileContent
+
+https://github.com/Nikoleta-v3/Game-Theory-and-Python@@@@
+- I can recommend two books I learned a lot from.  These are specifically for OR and business & supply chain applications of statistics and optimization.
+
+\- Operations Research: An Introduction - Hamdy Taha - Great overview of LP, MIP, and applications
+
+\- Operations Management for Competitive Advantage - Chase, Jacobs, Acquilano - Higher level MBA-type text, but the best and most mathematical of its type
+
+For forecasting, the best text is "FPP2" by Hyndman.  It's free online.  Beware - I've seen a lot of people at my company waste their time with advanced forecasting.  There must be something about forecasting that some people can't resist.  In my experience, an auto-exponential smoothing model is good enough and anything more is like committing hundreds of hours to a 1% improvement.  This opinion is specific to monthly time series.
+
+I'm not aware of any Bayesian statistics textbooks that are specific to chemical industry or manufacturing.  That may be a little too specific.
+
+I also recommend you don't spend too much time on Wikipedia or free pdfs online.  I've found that they're a poor substitute for a good textbook.
+- Ohh... It's helping me too
+- Might want to look at udemy or coursera for OR courses.  Can also look at MIT Open courseware
+- Following
+- It will help many, thanks for sharing
+- Thanks for sharing!
+- Nice
+- I see you've posted a GitHub link to a Jupyter Notebook! GitHub doesn't 
+render large Jupyter Notebooks, so just in case, here is an 
+[nbviewer](https://nbviewer.jupyter.org/) link to the notebook:
+
+https://nbviewer.jupyter.org/url/github.com/sudharsan13296/Deep-Reinforcement-Learning-With-Python/blob/master/01.%20Fundamentals%20of%20Reinforcement%20Learning/1.06.%20Markov%20Decision%20Processes.ipynb
+
+Want to run the code yourself? Here is a [binder](https://mybinder.org/) 
+link to start your own Jupyter server and try it out!
+
+https://mybinder.org/v2/gh/sudharsan13296/Deep-Reinforcement-Learning-With-Python/master?filepath=01.%20Fundamentals%20of%20Reinforcement%20Learning%2F1.06.%20Markov%20Decision%20Processes.ipynb
+
+
+
+------
+
+^(I am a bot.) 
+[^(Feedback)](https://www.reddit.com/message/compose/?to=jd_paton) ^(|) 
+[^(GitHub)](https://github.com/JohnPaton/nbviewerbot) ^(|) 
+[^(Author)](https://johnpaton.net/)
+- That's really helpful advice, thank you.
+
+
+I think I'll look into the Taha book. That seems like a great fit. Maybe I'll put the forecasting on a lower priority, too. That usually is limited by fragmented, siloed and low-quality data anyhow. After I'm done with cleaning, I'm usually not so eager for forecasts anymore, anyhow. 😄
+
+
+
+Thanks again. 🙂
+- Thanks for the idea. 
+I already had had a look at Coursera and didn't find anything that aligned with my requirements. Udemy does have more granular courses but the ones I found weren't of particularly good quality - or lacking on exercises. But thanks, I'm generally fond of udemy, just forgot to check them, too.
+
+I have started piecing separate materials together. 🙂
+- You're welcome! Hope it's useful.
+- I don't think you will find all those in just one course.  It is 1-2 years of undergrad that would actually cover a lot of those courses.  
+
+Might also want to take a look at a number of OR textbooks
+- That's fair, thanks.
+
+
+After doing some more research, I realised how specialised my situation might be. I found a number of resources, I'll post them in a separate comment.

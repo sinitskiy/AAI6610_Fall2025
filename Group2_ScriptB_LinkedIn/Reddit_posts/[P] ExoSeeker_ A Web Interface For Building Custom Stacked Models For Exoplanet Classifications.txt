@@ -1,0 +1,14 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1nzd4xn/p_exoseeker_a_web_interface_for_building_custom/
+Title: [P] ExoSeeker: A Web Interface For Building Custom Stacked Models For Exoplanet Classifications
+
+Content:
+Hi everyone! I just want to share ExoSeeker, a machine learning web interface, I created for the NASA Space Apps Challenge this year. It allows anyone to upload data of potential exoplanets, planets outside the Solar System, from the Kelper mission, a space telescope designed to hunt for Earth-sized planets orbiting stars in the Milky Way, and train a custom machine learning model, select classifiers and tweak their main hyperparameters, on it. 
+
+You can freely build their own model by selecting from multiple estimators (random forest, gradient boosting, and multi-layer perceptron) and adjust each one's primary hyperparameters. After model training, you upload a new dataset without the exoplanet disposition, with only the feature to run predictions on it using the saved model.
+
+Github Repository: [https://github.com/gospacedev/exoseeker](https://github.com/gospacedev/exoseeker)
+
+NASA Space Apps Challenge ExoSeeker Project Description: [https://www.spaceappschallenge.org/2025/find-a-team/exoseeker/?tab=project](https://www.spaceappschallenge.org/2025/find-a-team/exoseeker/?tab=project)
+
+Comments:

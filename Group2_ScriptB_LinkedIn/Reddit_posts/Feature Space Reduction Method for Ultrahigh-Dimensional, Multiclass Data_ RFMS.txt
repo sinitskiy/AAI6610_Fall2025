@@ -1,0 +1,20 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/17fgcnd/feature_space_reduction_method_for/
+Title: Feature Space Reduction Method for Ultrahigh-Dimensional, Multiclass Data: RFMS
+
+Content:
+ We are excited to announce the publication of our groundbreaking scientific paper in [***Machine Learning: Science and Technology***](https://ioppublishing.org/news/machine-learning-science-and-technology-a-new-open-access-journal-from-iop-publishing-2/) titled “Feature Space Reduction Method for Ultrahigh-Dimensional, Multiclass Data: Random Forest-Based Multiround Screening (RFMS)” by Gergely Hanczar, Marcell Stippinger, David Hanak, Marcell T Kurbucz, Oliver M Torteli, Agnes Chripko, and Zoltan Somogyvari.
+
+https://preview.redd.it/a9fyhyszb6wb1.png?width=739&format=png&auto=webp&s=061f22d229c0b1d5f731adb62fdad601c5a384dc
+
+**Published on:** 19 October 2023 **DOI:** 10.1088/2632-2153/ad020e **Volume 4, Number 4**
+
+In recent years, several screening methods have been published for ultrahigh-dimensional data that contain hundreds of thousands of features, many of which are irrelevant or redundant. However, most of these methods cannot handle data with thousands of classes. Prediction models built to authenticate users based on multichannel biometric data result in this type of problem. In this study, we present a novel method known as random forest-based multiround screening (RFMS) that can be effectively applied under such circumstances. The proposed algorithm divides the feature space into small subsets and executes a series of partial model builds. These partial models are used to implement tournament-based sorting and the selection of features based on their importance. This algorithm successfully filters irrelevant features and discovers binary and higher-order feature interactions. To benchmark RFMS, a synthetic biometric feature space generator known as BiometricBlender is employed. Based on the results, the RFMS is on par with industry-standard feature screening methods while possessing many advantages.
+
+[r/IAMA](https://www.reddit.com/r/IAMA/) **- Oct 26** with the founders of Cursor Insight.
+
+[https://bit.ly/AMAwithCursorInsight-GoogleCalendar](https://bit.ly/AMAwithCursorInsight-GoogleCalendar)
+
+[r\/IAMA - Oct 26 with the founders of Cursor Insight.](https://preview.redd.it/bb68zcv2c6wb1.png?width=1600&format=png&auto=webp&s=c57dedc2fb5308573c56b20ce920890ee8f25c60)
+
+Comments:

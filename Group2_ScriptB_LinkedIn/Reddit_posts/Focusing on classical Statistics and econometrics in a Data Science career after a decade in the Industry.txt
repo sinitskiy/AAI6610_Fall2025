@@ -1,0 +1,67 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1e26czy/focusing_on_classical_statistics_and_econometrics/
+Title: Focusing on classical Statistics and econometrics in a Data Science career after a decade in the Industry
+
+Content:
+Hello everyone,
+
+I've been a data scientist for the past  10 years, with a background in computer science. In recent years, I've found myself spending more time studying, learning, and applying concepts from classical statistics and econometrics, such as synthetic control, multi-level mixed models, experimental design methodologies, and so on. On the other hand, I probably haven't opened a machine learning book in years.
+
+Do any of you have a similar experience? I think that unless you are working at an LLM or computer vision startup, this might be an expected career path. Can you share your experiences?
+
+At the end of the day, I think that most business and research questions fall on the "why" side of things, which a straightforward prediction framework can't answer.
+
+
+Comments:
+- We have withdrawn your submission. 
+Kindly proceed to submit your query within the designated weekly 'Entering & Transitioning' thread where we’ll be able to provide more help. 
+Thank you.
+- I find myself kind in the opposite path. My master is in statistic and now I’m feeling that the most important part of my job is making reliable and easy to maintain software. 
+
+So learning how to improve my code, and technologies like docker, k8s and bit of frontend
+- [removed]
+- I find myself in the same path. I started out on analytics, got excited with programming and went to some DS, and further into programming to DE. But I'm forcing my way back into the stat / econometrics oriented path.
+
+In my experience businesses will want some sort of causal inference the econometrics and classical stat gives. But they usually won't have the data/surveys/experiments to really implement causal inference, so we'd usually just do some modelling for prediction or description.
+
+The book Business Data Science by Matt Taddy might be useful. It's at the intersection of your usual data science and some econometric / causal analysis. It also has some discussion on the intersection between ML and econometrics if you're interested in that.
+- In my experience advance statistics isn't necessary and stakeholders/senior leadership often push back on using advanced statistics because they don't trust it or understand it themselves.
+- I have a master's in statistics and work making economic statistics. I mostly just write code and don't really use any real stats or econometrics. Nothing more complicated than interpolation and seasonal adjustment, and that mostly in canned functions that abstract away all the nuance.
+- [deleted]
+- I think I agree with you, but it varies dramatically across industry and individual companies. 
+
+In my experience I’ve found the inferential side of things to be far more interesting, challenging, and ultimately valuable to an organization. Like you said, knowing the ‘why’ is ultimately what businesses are actually trying to understand in most cases.
+- That was the way for me. Depends largely on the industry you are, but I think this is a must to survive on the industry, in the end we are data crunchers knowing well stabilished quantitative method would never be a bad thing. I have a lot of example that econometrics save my company a ton of money, simple models on 2 GB worth of data that runs in a fraction of the time compared to any ML will save you a lot of time in computing.
+- This is interesting as I feel the job responsibilities are transitioning from stats to CS. It’s all about production!
+- At my job (long-term energy forecasting), we use a ton of classical statistics and econometrics models. I am repeatedly told that we want to try to stick to keeping the models as explainable as possible. Some of the newer black box models aren’t so well received by management, even if they do perform well. Turns out in the real world, people really do want you to be able to explain how you got to your answer.
+- 5 years in Data Science I have realised how immensely useful econometrics and classical statistics is and have enrolled in a year long Econometrics PG Cert. I think the hype to usefulness of classical stats and regression analysis is tooo verryyyy low.
+- Yes! I think it's so much fun, and it's scratching my learning itch going way back. I am in a role now where it also helps, and honestly it's a nice fresh view on data modelling coming from years of machine learning.
+- I am an econometrician at a public tech firm. We have general-purpose causal inference people who work on experiments, and I'll slot in whenever there are causality questions that can't be addressed via simpler models. Basically anything that's harder than garden-variety demand estimation comes to me. A lot of my background is in methodological improvements to GMMs and SMMs, so my job is pretty close to the papers I write.
+
+I do think that companies are increasingly beginning to understand the need for a dedicated decision/inference org. ML is important but not understanding causality leads to bad business decisions. The biggest firms can probably afford to retain a PhD economist corps, but there's not really enough supply there (in that the U.S. literally only produces 1,500 econ PhD's a year from the top 100-ish programs). 
+
+I also agree that there are a lot of companies that could benefit a lot from inference that aren't doing any these days. Generally anyone who sells anything to individual consumers need to run experiments, and anyone who's products are sort of expensive probably want a way of figuring out demand without jittering price. That's a big fraction of the S&P 500. 
+
+It's a young field, though. Amazon really only made the realization around 2015-16. Google reorg'd their economists a little while ago to put more people on the pricing side, but even in 2020-2021 they were staffed like a litigation consulting company.
+- I’m a MS stat working in ad tech/marketing space. We do lots of causal inference work to understand effectiveness of campaigns, coupons, and other promotions. We even have a biweekly reading group that meets to talk about causal inference. The ad tech space is where you should focus
+- I totally agree with you as a PhD candidate in quantitative marketing. I did take the same doctoral coursework with Econ PhD students.
+
+I think understanding some economic concepts helps managers make decisions and give proper work to the DS/economist. For example, when a marketing manager wants to allocate next year's ad budget proportional to this year's sales, people would not understand what is wrong here without the simple concept of endogeneity.
+
+Understanding causality is important and I believe that this would enhance the manager's decision if done properly.  Running a good experiment is probably costly, so people would ask if the benefit we get from the results of the experiment is bigger than the cost of the experiment. Smaller companies would say no, but big tech companies would say yes because the amount of money that they earn/lose based on certain decision-making is huge. Also, when it comes to the quality of the data, the companies owning diverse types of real-time data would get more precise results from the experiments. 
+
+In conclusion, 
+
+1. Understanding some statistical/econometric concepts helps. Not everyone needs to have rigorous knowledge of mathematical modeling.
+
+2. Understanding causality def helps, but getting the right result is costly. The experiment itself is expensive, but hiring the person who would run the experiment is also an additional cost. Companies that could not afford this would probably rely on simple analysis or manager's conjecture with insights and experience. 
+
+3. I hope more companies can afford this though, because it will make my future better :p
+- >At the end of the day, I think that most business and research questions fall on the "why" side of things
+
+I mean... In an ideal world, sure. But most businesses care mostly about making money. If it makes them money or saves money, that alone is a good enough answer. The company is here to do business, not to research with statistical rigor. Most won't care about the stats beyond the very basics.
+- Sounds about right, if you are not working on predictive modeling you work on casual  and descriptive statistics
+- Initially, my focus was on presenting myself as a data scientist who can also code. But as time went on, I began to notice that it was more important to focus my attention on the business side of things and less on the “technology” side. I mean, there are a ton of developers who know Docker, but there are very few data scientists who can talk to the DevOps team and also build a statistical model for the C-level.
+- Every big tech firm has a full economist org doing causal inference at a minimum.
+
+Structural orgs depend on use case, the best examples being Amazon and Uber. Even Walmart has great BLP people.

@@ -1,0 +1,13 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/116vvgi/question_related_to_a_future_protien_folding/
+Title: Question related to a future protien folding career
+
+Content:
+I want to maybe do something in the future regarding the folding of protiens and things like that, I think It would be a focus that would be nice for me.
+
+I did get to thinking that from what I've been reading, knowing how to use AI and Machine Learning and whatnot will probably be an essential skill for this sort of thing, but RN such skills are not part of the biology major in my school and I really don't know where to start.
+
+Would anyone know what i should be doing/learning for this, and what sort of classes I should look out for, what sort of skills i should be wanting to Self-teach?
+
+Comments:
+- It sounds like you want to do bioinformatics so you’ll need to do a bioinformatics masters or PhD. You can look into bioinformatics PhD programs and see what they want in applicants. Knowing how to code is huge, so taking coding courses along with your bio classes is a gimme. I don’t think the language is crazy important. While a lot of biology coding happens in python, if you know how to code then learning a new language isn’t a massive barrier. You should also know linear algebra.

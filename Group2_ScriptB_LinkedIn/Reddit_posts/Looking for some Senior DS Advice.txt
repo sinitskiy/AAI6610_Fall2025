@@ -1,0 +1,99 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1hpaa3c/looking_for_some_senior_ds_advice/
+Title: Looking for some Senior DS Advice
+
+Content:
+Hello everyone,
+
+I think this is okay to be a post since it's not about entering/transitioning, but if I need to repost in the weekly threads please let me know! 
+
+TLDR:
+
+* I started working as a Data Scientist at a medium to large company almost 3 years ago.
+* I spent the majority of my time doing more Software Engineering/Data Engineering related tasks with DS projects sprinkled in.
+* A reorg changed the entire landscape of my company and potential growth at the company.
+* I don't know what to do because I don't know if I got solid enough experience to leave for another DS job, but my current situation is very uncomfortable.
+* Looking for any seasoned perspective/advice on the situation to help anchor me since I'm in a bit of a doom spiral. 
+
+
+
+I am looking for some career advice. I don't want to write a novel about my journey to this point, but it was a hell of a lot of work. A snippet of my relevant work experience is I worked at various tech startups doing Data Analyst/Engineering work before I found my way to DS. I graduated with my MS in Data Science back in 2021, and I landed a job at a medium/large global business in the retail space. To my surprise, it was the common meme situation where they had no infrastructure put in place for DS work, and on top of that, a former IBM DS had built a Python "application" being used by an internal team that was barely hanging on.
+
+**Year 1** 
+
+My boss asked if I'd be able to modernize the application, and since I have a bit of a programming background, I told them I'd be happy to do that to get my feet wet with the org. I am going to way oversimplify the work I did for the sake of time. The important part is this project took around 6 months as the org had everything on-prem, so I had to go through approvals to get the more "modern" tech. I refactored a large portion of it, containerized it, and deployed it via an OpenShift (RedHat's Kubernetes product) cluster. The bulk of the program was a massive Jupyter Notebook (5000 lines of code with some custom-built math libraries) that an analyst would execute each cell after a request was made. This notebook housed all the business logic, so I just wrapped all that up to be executed automatically when the internal team interacted with the new app. By the end of it, I had a firm grasp on various business processes and was already talking to my boss about possibilities. Additionally, I found out that I was the only "Data Scientist" on staff, and I was a little bummed because I had chosen to work for a larger org in hopes of getting some sort of mentor/learn-by-osmosis going on. However, since my background is in startups I wasn't overly concerned because I knew I could utilize this environment to grow by trailblazing.
+
+The conversation then shifted to the logic in the notebook, and the fact that no one really knew what was happening inside it. This notebook was driving a fairly important piece of the business by analyzing various datapoints, applying business rules, and spitting out results to be used day to day. They asked if I could dissect it, and I readily agreed – really wish LLMs were as commercialized as they are now. I spent the next 2-3 months working out bugs in the newly deployed app, and flow charting out all the business logic inside the notebook into nice Confluence pages. It was fairly spaghettified, so making changes to it was going to prove challenging. I put my "Product Manager" hat on and asked what their goals were with this application, the logic, measuring success, etc. I was asked to start a rewrite so that the laundry list of changes they had wanted to make could be done. It was also at this time my boss was super happy with the ideas/work I had done (I had several other smaller projects I did during this time), so they began speaking to me about being promoted up. How we'd get an actual software engineer on my team so I could focus on more of the "Data Science" stuff. I was super excited/anxious because I was hoping to get more hands-on DS experience before leading a team. However, once again, I come from startups so sort of par for the course.
+
+
+
+**Year 2** 
+
+The IT department announces a "reorg" a month before my promotion. By this point I had job descriptions for a few new positions, and we had made plans for who would be shifting to my team. All of this gets put on hold, and there's tons of uncertainty. I spend the next year doing the rewrite by myself. I build a few classification models in the process to help a few other internal teams operate more efficiently.
+
+Basically they come through with a domain-driven design philosophy so that the Software teams can build more efficiently by having more autonomy. They establish practices across the domains, and they had a Data/ML practice initially. That gave me some confidence that I'd at least have "peers" when it was all said and done.
+
+
+
+**Year 3 – Current year** 
+
+I get moved into a domain, and they establish a separate BI & Analytics domain. They decentralized everything else but anything to do with "Data Work". I am given a promotion to DS Manager with a single employee – a Data Engineer. It has been super confusing all year with things taking much longer as the org adjusts for the new bureaucratic processes that have been introduced – tooling now has to be approved, Business analyst, delivery leads, PMO offices, etc. I meet with the head of engineering to ask how I go about getting tools approved (Sage Maker endpoints), and to get a sense of our overall data strategy. I'm basically told there isn't one in place, but they hope to get one together soonish. A lot has happened and it all feels very confusing. Basically no one is empowered to make decisions, the BI domain is leading the charge for their stuff, and me and my team are sort of this island that exists outside of everything else going on.
+
+
+
+I tried to keep that as short as possible, and happy to give further detail if you believe it'd help.
+
+
+
+**Here's my main issue:** I spent these years doing what needed to be done, but there really isn't a path of "growth" because they aren't really accounting for Data Scientists yet – though they say they hope to hire them. It was clear in the first year what the path would probably look like, but with everything becoming more corporate it feels like I could easily get shafted in one way or another. However, because I spent these years being the "good employee" and doing what needed to be done instead of what was best for my own experience I think it may be hard for me to get a DS job at another org. I'm hoping to get some perspective from all of you more seasoned professionals.
+
+Comments:
+- Sounds like you did alot and they werent/ are not ready for a data scientist /want you to do the job of getting them reqdy. The truth is this sounds like 85% of situations i hear of including my own, you get hired to do data science and your job becomes to stand up an old data system. I actually know incredibly few data scientist that do data science whether they are phds , at banks, at tech companies , most people i see are either glorified analysts or ad hoc data engineers. Its not the employees fault thats just what most orgs (that i see at least) have the capacity for. I dont know your situation so i cant speak to it specifically but this is 100% not uncommon. Again sounds like you are killing it tho!
+- You were just promoted. You've also built up some relationships with higher ups. To me it sounds like things are moving in the right direction! If you like managing, then I'd stick around for another year and see if things improve organizationally. Some corporate dysfunction is normal. If there's no progress, then you can try to shop your new manager title around at other places.
+- Start leetcoding and reading your favorite ML textbook a little everyday. At work, build prototypes that kick ass before asking for permission to build them. Let your DE take the grunt work and make your BIs do the dashboards. Build cool models with a subset of the real data and make pretty pictures. Keep doing this, and you’ll get clout.
+
+Companies like to squabble over the best area of the company to apply AI, having meetings for days, when they don’t even have basic scikit learn regressions down. Pump out those simpler models first. If your company is asking you to build an entire RAG architecture with one data engineer, then do it will a collection of 10 documents first, then ask for 4 more DEs or stand by your assertion that doing it at scale isn’t possible.
+
+Sounds like you’re somewhere with 1k - 10k employees. Don’t get lulled to sleep. You need to be a shark if you want to win the highly competitive interviews these days. If your company is aren’t growing and you know you want out, make sure not to burn any bridges, but focus more on what is going to help you thrive in the direction you want. Sacrificing your time, mental health, and intellect for some BS exec that got an MBA and thinks they are hot shit… you’ll end up regretting it.
+- Sounds like my situation! I basically do some occasional data analysis and model training. However, most of my time is dedicated to pure software engineering, mentoring junior members, and even supporting non-technical staff!
+
+The only thing I can do to keep motivated is to do some DS-related side-projects and keep myself updated by reading books, articles, reddit posts on DS and ML topics (what I am doing now!). 
+
+I cannot give you advice, since I'm also stuck in this situation. But, I recently decided to move forward and look for more relevant opportunities in other companies. I am basically in the process of sending applications and doing interviews.
+
+I am not fully aware of your situation. However, I believe sometimes you just need to make a big risky decision and get out of your comfort zone. For me, it is to leave my current job (I have a family and I'm payed well) for something that I truly enjoy doing, although some risks may lie ahead.
+
+Hope this helps.
+- Yeah, if you ignore year 2 for a second, it sounds like really good progress.
+
+
+OP, you took on data engineering problems for your company that drive a lot of value. Now, you're in a centralised position with the data engineer that you wanted and have the time to refocus.
+
+
+I get the frustration but there will always something in the way. My (non-senior) approach to it would be too network with all these teams, see where you can work together. Data Science is a service to the company to create them more value, reach out to different departments and see how you can support them. Then with the newfound mental space of having the engineering resources around, go scouting for the more scienc-y projects. More likely than not you'll find them with the other departments.
+
+
+To me, that's a solid growth perspective, you could branch out into engineering, ad hoc analysis support, user enablement/teaching, set yourself up more long-term for strategic support by supplying the key departments with forecasts, creating/leading a data network (presentations, meetups, talks,  invited guest speakers etc.) from your central position, bringing the different departments in exchange with one another. You're not the only one suffering from the reorg, maybe others will be happy for the structure if you offer it.
+
+
+
+And if you keep bringing on the big moneys for the business, it will hopefully be seen and enable you to grow your team steadily. 
+
+
+There are a lot of directions you could go towards. I hope this helps somewhat. Don't give up, from what I'm reading, you're doing exceptionally well - especially given the circumstances! 🧡
+
+[Edit: autocorrect errors]
+- Thank you very much for the encouragement. I think the isolation has made me feel like I've somehow ruined my career. It's good to hear that even if I am in a sinking ship that I'm not in it alone :)
+- I appreciate you taking the time to respond! I think that's something that's sort of a mental blocker. I feel incredibly intimidated at the thought of taking my title somewhere else where those that I'd manage have more "pure DS" experience. I suppose that's just something I need to really focus on getting over the course of the next year in case things don't take a turn for the better.
+- Thank you for this response! It really is motivating to hear that I need to keep grinding. 
+
+Keeping in line with this thinking I have been considering going back to school in some capacity to either deepen my understanding of our discipline via a MS in Math or Statistics, or going to the next level with a Ph.D. program. Do you have any thoughts on this?
+- Glad to hear I'm not the only one! I'm strongly considering the jump as well, which is what led to this post. As I prepare my resume for jobs I start feeling insecure about my relevant "pure DS" experience. 
+
+I also have a new family, so that kind of move feels very scary. Good luck to you though! I wish you all the best! 
+
+I appreciate you taking the time to respond!
+- Thank you very much for the encouragement! It's good to hear others outside of my job see that I've provided value, and that I haven't taken a massive setback in my career. Really appreciate you taking the time to respond.
+- Np! You could also just apply to more senior IC jobs, where often mentoring more junior people is a requirement. A year as a manager should make you a stronger candidate.
+- Honestly school is best for people that need a drill sergeant. If you are someone who is self motivated, like you go to the gym every day on your own, then I’d say skip it. If you need to have money and skin in the game to learn, then go ahead. Everything they will teach you, you can find online. It costs 80k/yr to get a MS is data science from Berkeley. Not worth it imo, even if you do end up in FAANG after grad (which is unlikely as they want someone with PhD). Getting a PhD is a whole separate thing but just not my cup of tea to be hazed for a few years eating beans for a vague promise of better job prospects
+- 👍👍👍

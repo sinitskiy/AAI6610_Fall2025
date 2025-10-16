@@ -1,0 +1,57 @@
+URL: https://www.linkedin.com/posts/digitalsreeni_machinelearning-deeplearning-ai-activity-7379182745824157696-_YXZ
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Sreenivas B.的动态
+Sreenivas B.
+
+Director / Head of Digital Solutions at Zeiss
+
+6 天前  已编辑
+
+Your deep learning model says it's 99% confident. Should you trust it?
+
+Not always. High confidence doesn't mean reliable prediction. In production systems, we need to quantify two types of uncertainty:
+
+Aleatoric uncertainty - measures noise and ambiguity in the input data. Epistemic uncertainty - measures whether the input is outside the model's training distribution
+
+The plot shows aleatoric uncertainty distributions for clean versus noisy data. Notice the clear separation that standard accuracy metrics completely miss.
+
+In real deployments, knowing when to trust your model is just as critical as knowing what it predicts. These uncertainty estimates drive decision rules: auto-accept, flag for human review, or reject outright.
+
+Detailed tutorial with implementation coming soon.
+
+#MachineLearning #DeepLearning #AI #UncertaintyQuantification
+
+81
+9 条评论
+赞
+评论
+分享
+Marius van den Hombergh
+
+Enterprise Search | RAG | Deep Research @ Zeta Alpha | Architecting secure AI Agents & Neural Discovery Platforms for Knowledge‑Intensive Enterprises
+
+4 天前
+
+Looking forward to the detailed tutorial, Sreenivas. You note that uncertainty estimates drive accept, review, or reject policies. In our work on RAG evaluation, we have run into the same tension, but noisy vs. out-of-distribution errors often need different responses. Do you think similar distinctions apply outside supervised prediction, such as retrieval or generation workflows?
+
+赞
+回复
+Kannan Rama
+
+Technical Advisor at Snowface Co., Ltd
+
+6 天前
+
+Looking forward to this Ajarn.... Remember your Unet series and it was almost 4 years before... Working on a use case of Image Regression and used your Keras-Unet models, and subsequently changed to Torch-Unet, and facing exactly the "uncertainty" what you are talking about... In your forthcoming posts on this topic, request you to rewind back your Unet series an

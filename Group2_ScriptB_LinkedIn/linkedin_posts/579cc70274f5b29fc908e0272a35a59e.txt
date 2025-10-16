@@ -1,0 +1,32 @@
+URL: https://www.linkedin.com/posts/william-marcellino-ph-d-41982a19_llm-note-1-training-fine-tuning-instruct-activity-7104475975760891905-IC_e
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+William Marcellino, Ph.D.的动态
+William Marcellino, Ph.D.
+
+Senior Behavioral & Social Scientist at RAND Corporation
+
+2 年
+
+LLM Note #1: Training, Fine-Tuning, Instruct Training, & Alignment Training (that’s a lot of training!)
+
+What’s the difference between training a model and fine tuning one?  What’s instruct vs alignment training? Basically, they are all version of “training”: building or refining a probabilistic model of what the next word in a sequence likely is. Here’s a breakdown:
+
+• Training/Pre-training. Building the model from the ground up by showing it input sequences of text, usually chunks of 2k or 4k words culled from sources like the internet. The input sequence is shown one word at a time (“Not...”  “Not all...” “Not all heroes...”  “Not all heroes wear…”) and the model learns to guess what the next word will be, in context with every other word in the sequence.  That’s a lot of math at a time, each time, hence the massive compute time & expense for foundational models.
+
+• Fine Tuning.  Pre-training is usually very general, so if you want to get your model suited for a specific discourse (e.g. medical, military) you can adjust the model weights by retraining/updating on text from that new discourse, or on a specific task.  Usually done via parameter efficient fine tuning (PEFT), a way to save computational time/costs (I’ll cover PEFT another time).
+
+• Instruct Training.  Pre-trained foundational models don’t do much—they have the probabilities of language, but they haven’t been taught to do specific tasks yet, so they have to be trained to follow instructions.  For example, if you want an AI assistant that answers questions, you might (in essence) build a really big spreadsheet, with column “A” being questions, and column “B” with corresponding answers, and tune the model weights on that spreadsheet.  Voila! You have a smart AI assistant.
+
+• Alignment Training. This last kind of training/tuning is about tweaki

@@ -1,0 +1,45 @@
+URL: https://www.linkedin.com/posts/michael-kirchhof_benchmarking-uncertainty-disentanglement-activity-7169622569954848768-DFGT
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Michael Kirchhof的动态
+Michael Kirchhof
+
+Research Scientist at Apple on Uncertainty Quantification
+
+1 年
+
+Another new paper, this time from my master's student. 🥳 We tested the whole uncertainty quantification literature on ImageNet and find: Uncertainty Estimators often don't do what they claim. 🧐 Instead, test them on your specific task of interest.
+
+Bálint Mucsányi
+
+ELLIS & IMPRS-IS PhD Student
+
+1 年
+
+Have you ever wondered what all those different uncertainty estimators in computer vision do? 🤔 I mean, what they _really_ do? 🤔 🤔 
+
+We reimplement and benchmark popular methods on ImageNet in our new preprint.
+
+📖 https://lnkd.in/dFibZRvw
+💻 https://lnkd.in/dEsXTApk
+
+First, we benchmark uncertainty decompositions that break down the total uncertainty into distinct components, like aleatoric and epistemic uncertainty. We find that uncertainty disentanglement fails: on 6/7 methods on ImageNet, these components are severely correlated. On the last one, the epistemic component performs randomly.
+
+But we have good news, too. Even though there is no one-fits-all uncertainty method, one can use well-performing estimators for specialized tasks. For predictive uncertainty tasks, nearly all benchmarked methods are ready for deployment. Moreover, they are also quite robust! As we perturb the ImageNet validation inputs with ImageNet-C perturbations of increasing severity, the correctness prediction performance of methods stays roughly constant.
+
+On specialized epistemic and aleatoric benchmarks, specialized estimators perform best. One follow-up idea would be to mix and match them to get more independent uncertainties.
+
+One last word of caution: small-scale CIFAR-10 results do not transfer to ImageNet. The rankings of methods and their behavior change considerably. It is better to scale earlier if one's goal is large-scale applicability and take small-scale intuitions with a grain of salt.
+
+Many thanks to my amazing co-authors and advisors,

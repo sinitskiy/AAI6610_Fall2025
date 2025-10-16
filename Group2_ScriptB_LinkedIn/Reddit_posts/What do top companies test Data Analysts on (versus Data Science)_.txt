@@ -1,0 +1,42 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bv02xw/what_do_top_companies_test_data_analysts_on/
+Title: What do top companies test Data Analysts on (versus Data Science)?
+
+Content:
+Unlike data scientist interviews full of stats and possibly machine learning, I feel like I don't know how to prep for data analyst interviews. Before moving on to DS prep (I'm on the verge of what some firms would accept as DS, and what most would be just DA), I wanted to make sure I'm absolutely golden in all aspects of a DA interview.
+
+Database wise, I've for the R in CRUD down from every day work. I can work on the C, U, D but not really sure where to focus my efforts. I've also got normalization and keys on my list, but besides that, is there anything more to do here?
+
+Then, I'll do some leetcode as a show of general programming ability. I use Python somewhat frequently, but don't have any major projects under my belt.
+
+Besides those two, what else do top data analysts get tested on during interviews? It's hard to test dashboarding skills so not sure what I need to do in regards to that.
+
+Comments:
+- Depends wildly on the company/role, so base your prep on the JD as much as possible. But for analyst roles, I’ve usually been tested on SQL, how would you join these tables, how would you visualize this data, various group by / ranking questions, binning and building histograms, design and evaluate an AB test, that kind of thing.
+- Come good points already mentioned. Know your advanced SQL, Python etc. What people often forget is the use case of analytics. Analytics helps a business understand how to maximize value and alleviate pain points. One thing to focus on is how does the data relate to the business. I do quite a bit of testing including A/B, MAB MVT etc so depending on the role I’d be sure you’re comfortable with stats and making recommendations based on experiments.
+- Give u several datasets to merge and manipulate / clean/transform. You are to create new columns based off of the transformation. 
+
+I.e  you’ll be given a sample output of what the new columns will look like.
+
+House buyers (population) dataset, house prices dataset, house sales dataset.
+
+It prolly tests all the basic syntaxes + writing your own functions in python and then applying it to dataframe.
+
+You have 1-2hr + to do it live.
+
+I.e it’s just like leetcode, where you have the input and sample output, and u just have to code them out
+- Depends on the job but usually some form of HR screen, hiring manager screen, SQL / python test, or take home assignment (some data munging, build a dashboard or viz) and then an onsite. If the role overlaps with DS analysts, throw some a/b testing and case studies in there related to analytical thinking
+- Focus on SQL and ask to see some of their projects
+- .
+- SQL mainly! Some excel/power BI. But there were a lot of process/theoretical questions too.
+- SQL/PowerBI
+- By far the most common are asking for projects on your resume that demonstrate your data analysis. And why you want to work there
+- SQL is at the top of the list. Back when I was applying for data analyst positions I only got SQL questions. I got some questions about my programming background, but that's it.
+
+Also, the SQL questions were always focused on the query portion.  I was never asked to design a database or create a database or even perform updates, because that just wasn't something that I did as an analyst.
+- Interesting, you've been asked what an appropriate bin size is for a certain analysis? I'll note that one
+- Looks like we've identify something I need to study; what's MAB? I assume MVT is mean value theorem but how would you test it? Just straight "what is MVT?"
+- Can you given example of process? Haven't heard that one before. "Theoretical" I assume just means a hypothetical business problem relevant to the company interviewing like Uber: "how would you try to encourage more drivers to drive during off peak hours" or something
+- Had that experience as well, wasn't sure if that was the norm. Slightly disappointing, because I wish I could develop those skills more lol.
+- I’m guessing they’re talking about multi-armed bandit and multi-variate testing
+- Referring to multi armed bandit and multi variate testing

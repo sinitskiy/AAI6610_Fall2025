@@ -1,0 +1,21 @@
+Source: Reddit/bioinformatics
+URL: https://reddit.com/r/bioinformatics/comments/1ceb847/transition_advice_from_industrial_phd_to_data/
+Title: Transition Advice: From Industrial PhD to Data Science Career
+
+Content:
+Hi everyone,
+
+I'm an industrial PhD student from Europe, currently working on computational methods in Single-Cell transcriptomics. My project primarily focuses on method development rather than on biological questions. Over the past three years, I've completed two main sub-projects, a pipeline and an R-package, and have been able to publish one article.
+
+**A bit about my situation:** The company I'm working with typically hire natives and barely manages to stay afloat. I suspect my hiring was mainly to secure fellowship funding. Furthermore, my academic PI shows little interest in my project, leaving a lot of uncertainty about when I will defend. 
+
+I am contemplating a significant shift towards a data science or development role within the industry (preferably in the bioinformatics/health domain), as the fellowship will expire in the coming months, and the company doesn't have enough resources to hire me. Based on the history of students in the PIs' lab, most finish their Ph.D. living on unemployed wages. There is some added pressure as I am an immigrant. Thus, I have decided to transition to support myself and put my thesis second on the priority list (I wonder if this is a good idea).
+
+I enjoy developing tools and have a good grasp of statistical modelling, Shiny apps, Snakemake workflows, and containers. As far as I know, Python is more prevalent in industry roles. Thus, I am also considering refreshing my Python skills. The company I'm part of uses a development stack that includes Java, a language I assume is not widely recognized in modern bioinformatics. Thus, I am also considering picking up some web development with JS, as Shiny apps are quite a niche. 
+
+In summary, I'm at a crossroads regarding whether to learn new skills or continue focusing solely on the PhD project. I am eager to hear from anyone who has navigated a similar transition. What skills should I prioritize? Is it worthwhile to focus on specific libraries or a broader understanding of data structures in Python? How can I effectively leverage my current knowledge and new skills to secure a job in the industry? Also, I understand that the goal of learning substantial web dev in 6 months is quite unrealistic, but it would be worthwhile to explore something that can complement my skills. 
+
+Any advice on manoeuvring through these challenges and securing a job in the industry would be constructive.
+
+Comments:
+- Hey there! While I might not have the perfect answer to your question, I'm really curious about your journey pursuing a PhD in the industry. I'm thinking about diving into a similar path, focusing on computational biology or bioinformatics, but I'm a bit lost without knowing anyone already in the field. Mind sharing your thoughts or pointing me in the right direction? I'd love to chat with you!

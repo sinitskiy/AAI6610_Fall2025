@@ -1,0 +1,61 @@
+URL: https://www.linkedin.com/posts/msearitraghosh_llm-hallucinations-aitrust-activity-7346744059522138112-JN8f
+Date: 2025-09-24
+Author: Unknown
+
+𝗪𝗵𝗮𝘁 𝗶𝘀 𝗔𝗜 𝗛𝗮𝗹𝗹𝘂𝗰𝗶𝗻𝗮𝘁𝗶𝗼𝗻?
+
+I used 𝗟𝗟𝗠 𝘁𝗼 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗲 𝗮 𝗦𝗤𝗟 𝗾𝘂𝗲𝗿𝘆, and it confidently provided me with a query containing 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗹𝘆 𝗳𝗮𝗯𝗿𝗶𝗰𝗮𝘁𝗲𝗱 tables and columns!
+
+That's precisely what an LLM "𝗵𝗮𝗹𝗹𝘂𝗰𝗶𝗻𝗮𝘁𝗶𝗼𝗻" is—when the model confidently generates convincing yet entirely incorrect information not backed by any real data.
+
+Hallucinations from Large Language Models (LLMs) can silently mislead users with convincing yet entirely false information.
+
+This issue, while subtle, can severely damage trust in AI-driven applications, especially in business-critical environments.
+
+So how do we mitigate hallucinations when using frameworks like LangChain and LangGraph AI?
+
+With LangChain, grounding the LLM response by incorporating Retrieval-Augmented Generation (RAG) is crucial.
+
+This approach retrieves relevant documents or context from trusted sources, ensuring the LLM's output is anchored in verified data.
+
+LangGraph further enhances this process by structuring complex workflows, making it easier to dynamically verify and correct LLM outputs at multiple stages.
+
+Additionally, implementing guardrails—such as confidence scoring and source attribution—helps quickly identify and flag potentially unreliable responses.
+
+By strategically leveraging these techniques in LangChain and LangGraph, we can significantly reduce hallucinations, making LLM-powered tools more reliable and trustworthy.
+
+Have you experienced hallucinations in your LLM-driven applications? 
+
+I'd love to hear your insights or strategies to tackle this!
+
+
+话题标签
+#LLM 
+话题标签
+#Hallucinations 
+话题标签
+#AITrust 
+话题标签
+#LangChain 
+话题标签
+#LangGraph 
+话题标签
+#GenerativeAI 
+话题标签
+#SQL 
+话题标签
+#AIinBusiness 
+话题标签
+#PromptEngineering 
+话题标签
+#DataQuality 
+话题标签
+#AIChallenges 
+话题标签
+#ResponsibleAI 
+话题标签
+#DataScience 
+话题标签
+#AIEngineering 
+话题标签
+#AIBestPractices

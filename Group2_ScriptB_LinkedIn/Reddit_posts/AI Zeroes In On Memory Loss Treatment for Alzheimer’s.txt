@@ -1,0 +1,10 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/scmt4x/ai_zeroes_in_on_memory_loss_treatment_for/
+Title: AI Zeroes In On Memory Loss Treatment for Alzheimer’s
+
+Content:
+Hello! I just read an [article](https://www.nad.com/news/ai-zeroes-in-on-memory-loss-treatment-for-alzheimers) that shows AI being used to find mitophagy-inducing compounds to treat Alzheimer’s disease. So as AI and machine learning advance, I wonder if we’ll eventually be able to identify therapeutic compounds in the blink of an eye with advanced computations. Does anyone know of any other groundbreaking studies that use AI or machine learning to treat harmful diseases? 
+
+\#AI #Alzheimersdisease #biology #therapuetics
+
+Comments:

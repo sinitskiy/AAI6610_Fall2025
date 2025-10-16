@@ -1,0 +1,15 @@
+標題: Natural selection shapes and regulates the population dynamics of birds and mammals
+
+摘要: I analyse for a natural selection component in the population dynamic regulation of birds and mammals. By fitting species-specific age-structured population dynamic models to 3,369 and 483 abundance timeseries for 900 and 208 species of birds and mammals, AIC model-selection includes natural selection in 79% to 92% of the accepted models, explaining 80% of the population dynamics variance, with median selection regulation being 1.2 (se:0.11) times stronger than density regulation. The selected life history changes produce damped to stable population cycles with median periods of seven and eight generations given stable cycles. These predictions solve several population cycle enigmas, highlighting the population dynamic implications of a natural selection that predicts also the life histories and abundancies of animals. All selection regulated models are available for online simulations at https://mrLife.org.
+
+發布日期: 2025-05-22
+
+DOI: 10.1101/2021.11.27.470201
+
+作者: W, i, t, t, i, n, g, ,,  , L, .
+
+類別: ecology
+
+PDF路徑: downloaded
+
+下載時間: 2025-09-24 13:24:16

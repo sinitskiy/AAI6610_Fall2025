@@ -1,0 +1,50 @@
+URL: https://www.linkedin.com/posts/natalie-memarsadeghi-689881180_hybrid-modeling-for-streamflow-prediction-activity-7370822075625783297-n-PY
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Natalie Memarsadeghi的动态
+Natalie Memarsadeghi
+
+Research Physical Scientist
+
+1 个月  已编辑
+
+Excited to share our latest publication in the Journal of Hydroinformatics!
+
+Our team developed a hybrid machine learning and physics-based modeling framework to improve streamflow prediction in ungauged rivers, integrating uncertainty quantification to better inform risk-based decision-making. Applied to a river basin in Colorado, this approach reduced prediction error by approximately 40% compared to purely data driven models, while also providing credible uncertainty bounds essential for flood management and water resource planning.
+
+This work is the result of a multi-year collaborative effort between Hottinger Bruel & Kjaer Solutions, the University of Michigan, the University of California San Diego, and ERDC-CHL, building on our previous research in hydrologic modeling and ML approaches. 
+
+https://lnkd.in/eZM-KJFr
+
+Hybrid modeling for streamflow prediction in ungauged rivers with uncertainty quantification: a comparative analysis Open Access
+iwaponline.com
+55
+赞
+评论
+分享
+
+要查看或添加评论，请登录
+
+最相关的动态
+Klohn Crippen Berger
+
+38,338 位关注者
+
+2 周  已编辑
+
+Today, we are presenting our final #KCB sessions at the 52nd Congress of the International Association of Hydrogeologists. Lead Hydrogeologist Damian Lee will be discussing "Leveraging Down-Hole Geophysical Data for Hydrogeologic Characterization." 
+
+Following this session, Senior Hydrogeologist Claire Kent will be presenting on "Embracing a Digital Hydrogeology Future: Practical Applications of Business Intelligence (BI) Software and Python for Efficient Analysis and Visualisation of Groundwater Monitoring Data co-authored by Hydrogeological Engineer Emily Mee.
+
+Lastly, Hydrogeologist Kevin de Bruin will be showcasing his poster presentation "Navigating Hydrogeological Challenges on a Remote, Geothermally Active Tropical Island" today and tomorrow at the 52nd Congress of the International Association of

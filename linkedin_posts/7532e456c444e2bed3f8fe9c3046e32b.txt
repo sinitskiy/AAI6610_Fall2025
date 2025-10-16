@@ -1,0 +1,26 @@
+URL: https://www.linkedin.com/posts/bhavsarpratik_datascience-activity-7087055205623635968-EaGG
+Date: 2025-09-24
+Author: Unknown
+
+💥 💥 💥 Folks I am excited to share I have joined Galileo to contribute on data centric ML for all applications - LLM, NLP & CV.
+
+Having worked in the industry for a while I strongly believe great data unlocks great capabilities in a model. Galileo works exclusively on this and has solutions for varied NLP and CV tasks.
+
+And, I have a great news for 𝐆𝐞𝐧𝐀𝐈 builders 👾 ...
+
+We are working on 𝐋𝐋𝐌 𝐬𝐭𝐮𝐝𝐢𝐨 which will help 𝐆𝐞𝐧𝐀𝐈 builders take control of building LLM applications by helping them:
+- optimise prompts 
+- compare model performance 
+- detect hallucinations
+- debug training data
+- monitor LLMs
+
+Sign up for early access next month - https://lnkd.in/dBzU4fx2
+
+
+话题标签
+#llm 
+话题标签
+#hallucinations 
+话题标签
+#datascience

@@ -1,0 +1,70 @@
+URL: https://www.linkedin.com/posts/shantanuladhwe_stop-using-llms-for-everything-traditional-activity-7315382358323412992-PjSz
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Shantanu Ladhwe的动态
+Shantanu Ladhwe
+
+Head of AI/ML - AI Agents, RAG, NLP, Recommenders, Search & MLOps
+
+6 个月
+
+Stop using LLMs for everything!
+
+Traditional NLP Algorithms that still WORKS 👇 
+
+✅ 𝗥𝗲𝗴𝘂𝗹𝗮𝗿 𝗘𝘅𝗽𝗿𝗲𝘀𝘀𝗶𝗼𝗻𝘀 (𝗥𝗲𝗴𝗲𝘅): Effective for pattern matching and simple text manipulations. You can do Vibe Regex with strong unit testing 😅 
+
+✅ 𝗕𝗮𝗴 𝗼𝗳 𝗪𝗼𝗿𝗱𝘀 (𝗕𝗼𝗪): Represents text data by word frequency, useful for straightforward text classification tasks. 
+
+✅ 𝗧𝗲𝗿𝗺 𝗙𝗿𝗲𝗾𝘂𝗲𝗻𝗰𝘆-𝗜𝗻𝘃𝗲𝗿𝘀𝗲 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁 𝗙𝗿𝗲𝗾𝘂𝗲𝗻𝗰𝘆 (𝗧𝗙-𝗜𝗗𝗙): Highlights important words in documents, aiding in information retrieval and text mining.
+
+✅ 𝗻-𝗴𝗿𝗮𝗺𝘀: Use all these algorithms with or without n-grams.
+
+✅ 𝗕𝗠𝟮𝟱: A probabilistic model used for document ranking in search engines.
+
+✅ 𝗪𝗼𝗿𝗱𝟮𝗩𝗲𝗰: Captures semantic relationships between words by representing them as vectors.
+
+✅ 𝗙𝗮𝘀𝘁𝗧𝗲𝘅𝘁: An extension of Word2Vec that considers subword information, beneficial for morphologically rich languages.
+
+✅ 𝗟𝗮𝘁𝗲𝗻𝘁 𝗦𝗲𝗺𝗮𝗻𝘁𝗶𝗰 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀 (𝗟𝗦𝗔): Uncovers hidden relationships between words in documents.
+
+✅ 𝗟𝗮𝘁𝗲𝗻𝘁 𝗗𝗶𝗿𝗶𝗰𝗵𝗹𝗲𝘁 𝗔𝗹𝗹𝗼𝗰𝗮𝘁𝗶𝗼𝗻 (𝗟𝗗𝗔): A generative model that discovers topics within a collection of documents.
+
+Be reasonable!
+Question a bit more!
+Research a bit more!
+Find efficiency!
+Dont overcomplicate!
+Dont oversimplify!
+
+Do you agree? What did I miss?
+
+--
+Found it insightful?
+♻️ Repost
+➕ Follow me - Shantanu for AI - ML - MLOps content and Career tips!
+
+
+494
+69 条评论
+赞
+评论
+分享
+Ashwin Gupta
+
+I use arch btw | Full-Stack AI Engineer | GenAI, LLMs, NLP | From Paper to Production
+
+6 个月
+
+A 10/10 agree I think we should also pay a lot more attention to traditional vocabulary graphs like WordNet and ConceptNet especially for tasks like generating MCQs’ distractor and Similarity indexes for stuff like profanity filters and redactor, here’s a sample of me implenting part 1 of the use cases using, BERT for extractive summarisation and then generating MCQ distractors using ConceptNet and WordNet, wayy before GP

@@ -1,0 +1,35 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/3bh1f8/whats_happening_on_the_cutting_edge_of_biology/
+Title: What's happening on the cutting edge of biology?
+
+Content:
+I recently listened to the [Radiolab episode on CRISPR](http://www.radiolab.org/story/antibodies-part-1-crispr/) and was blown away that this is happening right now. It seems like something  out of science fiction to me. 
+
+I'm interested in learning about any other 'cutting edge' areas of biology research. Hell, CRISPR might not even be the cutting edge for all I know. What does the future of biology look like?
+
+Comments:
+- As far as the whole field of biology goes, that's a pretty broad question and every specialty will have a different answer. 
+
+I thought the Radiolab episode was very well done and did a great job of introducing the concept of the CRISPR/Cas9 system to the general public. I would say that in the field of genome engineering, making advancements with different Cas9 enzymes is pretty cutting edge. On the tail end of that episode, Jad and Robert bring up [the paper in which Chinese scientists edited tripronuclear embryos](http://link.springer.com/article/10.1007%2Fs13238-015-0153-5). They also talked about how other labs in China were working on this as well, dispute the [current halt of germline editing in the States](http://www.nature.com/news/don-t-edit-the-human-germ-line-1.17111#/b1). 
+
+The main problem with the Chinese paper is that the Cas9 enzyme is inefficient for use in something like editing embryonic cell, in which every cell counts and the chance of generating an insertion/deletion mutation or an off target cut could lead to unintended deleterious effects. Current work involves [maximizing homology-directed repair](http://elifesciences.org/content/early/2014/12/15/eLife.04766) (the type of cellular repair that leads to introducing new genes into the genome), [discovering new Cas9 enzymes that work better than current technologies](http://www.ncbi.nlm.nih.gov/pubmed/25830891), as well as other advances in the method itself. 
+
+Because CRISPR/Cas9 is cheep and fairly easy (compared to TALENs or other genome editing methods) it will be exciting to see how the face of biology changes as genome editing inefficiencies improve. Genome editing is tied heavily to many areas of biology including disease modeling and stem cell research, among others.
+- Synthetic life is something that people are consistently surprised at how advanced the tech is and what is possible. 
+
+I would encourage you to read about Craig Venter if your not already familiar with him. 
+
+I was going to say CRISPR/Cas9 but I see you have that covered.
+- Epigenetics is developing incredibly quickly, as we learn more about how methylation changes expression and how it's regulated.
+- Thanks for the detailed reply! In reading the abstract from the paper by Chinese scientists and the Nature article, it seems fortuitous that their experiments were not a success so as not to raise a backlash and unduly stop this kind of research with somatic cells.
+
+And in reading the other two abstracts you sent, it seems like there is research happening to advance both "steps" in the process, the sequence targeting/breaking step and the repair/injection of new information step, which means that the may advance at different rates. Do I have that about right?
+
+And this may be a silly question, but what does the delivery system for CRISPR/Cas9 look like? Is it a simple needle with a solution in it? I would imagine the injection needs to be pretty accurate if the target was a specific organ or a tumor.
+- Add me to the list of those people. This seems so unreal. I just did a quick scan of Craig's wiki page and will definitely be coming back to click around.
+- I just read the wiki pages on epigenetics, methylation, and reprogramming. Woah. 
+
+So if I'm understanding your comment and the wiki articles well enough, as we develop our understanding of how/why methylation happens, we could--in theory--begin to manipulate gene expression and control it to produce more desirable traits or reduce undesirable traits? (so basically Gattica's coming)
+- Controlling methylation is already possible using CRISPR ;)
+
+http://www.nature.com/nmeth/journal/v11/n1/full/nmeth.2775.html

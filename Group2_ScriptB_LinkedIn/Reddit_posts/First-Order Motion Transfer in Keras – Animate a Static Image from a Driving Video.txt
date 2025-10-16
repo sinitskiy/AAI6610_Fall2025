@@ -1,0 +1,49 @@
+Source: Reddit/computervision
+URL: https://reddit.com/r/computervision/comments/1jui7xo/firstorder_motion_transfer_in_keras_animate_a/
+Title: First-Order Motion Transfer in Keras – Animate a Static Image from a Driving Video
+
+Content:
+**TL;DR:**  
+Implemented first-order motion transfer in Keras (Siarohin et al., NeurIPS 2019) to animate static images using driving videos. Built a custom flow map warping module since Keras lacks native support for normalized flow-based deformation. Works well on TensorFlow. Code, docs, and demo here:
+
+🔗 [https://github.com/abhaskumarsinha/KMT](https://github.com/abhaskumarsinha/KMT)  
+📘 [https://abhaskumarsinha.github.io/KMT/src.html](https://abhaskumarsinha.github.io/KMT/src.html)
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Hey folks! 👋
+
+I’ve been working on implementing motion transfer in Keras, inspired by the **First Order Motion Model for Image Animation** (Siarohin et al., NeurIPS 2019). The idea is simple but powerful: take a static image and animate it using motion extracted from a reference video.
+
+💡 The tricky part?  
+Keras doesn’t really have support for deforming images using **normalized flow maps** (like PyTorch’s `grid_sample`). The closest is `keras.ops.image.map_coordinates()` — but it doesn’t work well inside models (no batching, absolute coordinates, CPU only).
+
+🔧 So I built a custom flow warping module for Keras:
+
+* Supports batching
+* Works with normalized coordinates (\[-1, 1\])
+* GPU-compatible
+* Can be used as part of a DL model to learn flow maps and deform images in parallel
+
+📦 Project includes:
+
+* Keypoint detection and motion estimation
+* Generator with first-order motion approximation
+* GAN-based training pipeline
+* Example notebook to get started
+
+🧪 Still experimental, but works well on TensorFlow backend.
+
+👉 Repo: [https://github.com/abhaskumarsinha/KMT](https://github.com/abhaskumarsinha/KMT)  
+📘 Docs: [https://abhaskumarsinha.github.io/KMT/src.html](https://abhaskumarsinha.github.io/KMT/src.html)  
+🧪 Try: `example.ipyn`b for a quick demo
+
+Would love feedback, ideas, or contributions — and happy to collab if anyone’s working on similar stuff!
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+
+Cross posted from: [https://www.reddit.com/r/MachineLearning/comments/1jui4w2/firstorder\_motion\_transfer\_in\_keras\_animate\_a/](https://www.reddit.com/r/MachineLearning/comments/1jui4w2/firstorder_motion_transfer_in_keras_animate_a/)
+
+Comments:

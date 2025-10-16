@@ -1,0 +1,66 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1bc83ua/career_paths_at_the_intersection_of_data_science/
+Title: Career Paths at the Intersection of Data Science, Healthcare, and Strategy for a PhD Graduate?
+
+Content:
+**Quick background:** Close to being done with my PhD in statistics studying causal inference and machine learning in healthcare settings. 2-3 years of experience in industry + academic data science roles. Looking to see what kind of career I want to have post-grad that is a bit non-traditional for graduates of my type (usually I would go straight to research scientist, data scientist, or biostatistician roles). Wanted to get this subreddit’s opinion on what the field looks like for more high-level strategic roles.
+
+My ideal goals are the following:
+
+1. Applying data analysis, statistics, and ML skills to healthcare/biotech/healthtech to drive strategy and business development.
+2. Interpreting the scientific literature and gathering expert opinions to build different use cases.
+3. Focusing more on business problems than technical problems. Building and technical work is fine but not 100% of the time. Writing and presentations on viewpoints/strategies to non-technical people would be good.
+4. Orienting myself toward strategic management roles as opposed to individual contributor/technical lead.
+
+Some ideas:
+
+* *Management consulting*: this would be somewhat of a “post-doc” in that I would stay only for a few years and use it to get back to (different) industry roles. I don’t know what kind of data scientist/statistician roles exist in these types of organizations. It’s also difficult to find healthcare-specific practices.
+* *Health economics and outcomes research (HEOR)*: I have expertise in real-world evidence/data (RWE/RWD) so it would a be good fit. Problem is that I don’t have experience in health economics and reimbursement, which might count against me.
+* *Technical product manager*: these really only appear in tech companies but I can imagine for healthtech/biotech something like this exists.
+
+…or maybe this is all what a data scientist should be doing anyway and I've just been looking in the wrong place. Any thoughts or suggestions?
+
+Comments:
+- Consider government service? State health policy is where the rubber meets the road. Most jobs don't specifically envision or mention "data science" in the skillset, but being able to integrate those in a policy role is pretty satisfying.
+- Data analysis of mfg & outcomes for pharmaceutical/ med devices/ nutraceuticals company? They’re dropping data into data lakes but need analysis & strategies for product improvement/ re-development.
+- Consulting and then back. That’s what I did after my PhD. Now doing product strategy - all the 4 bullet points you wrote actually. 
+
+FYI: Strategy is all about politics. It’s a lot of fun if you like to play politics. It’s miserable if you don’t. The second that you accept that consulting/strat job, that days the last day you’ll ever do anything that resembles science. After that, you’re a political staffer first, and a data analytics person second.
+
+It’s great though. More $$$, less work.
+- But of a complicated issue since you want to dive into strategic management, which is hard to do as a new-ish grad (even with a couple years of prior experience, only some and industry and unclear if any in management).
+
+If you don’t have management experience it’ll be hard to break into unless you’re already in a role of that type at a present company. For real strategic change you would need to aim for either a patient approach to build your network and career, or aim for smaller companies that might be a bit more thirsty for talent and willing to take a chance.
+
+The big question you might face from a hiring manager, without prior management experience is how you will be able to not just suggest changes but be able to push them through to the finish line. What in your experience or skill set allows one to see that if I put you in charge of a team you can deliver the project to completion, on time, on budget, and with a relatively satisfied team?
+
+This stands regardless of the particular industry. Also remember that the bigger the company the harder it is to drive change, the slower things are, and the greater the political games.
+- >Applying data analysis, statistics, and ML skills to healthcare/biotech/healthtech to drive strategy and business development.
+
+I'm going to ask because sometime academic people don't quite use corporate lingo in the same way:
+
+What do you mean by strategy and business development?
+- With your experience I can see you entering a healthcare organization as a solidly mid level Data Scientist. I've worked with other PhDs in a similar field as you enter and kill it technically. I think you sho0uld look for an org that needs that technical knowledge but also has opprtunity to present and focus more on business problems. Granted as DS we have to interact with the business side pretty often
+- There is quite a lot of interest in applying predictive modelling for patient health data to help hospitals. But I don't know how much it is being actually used in industry
+- *Technical product manager* in biotech is a tough combination
+- Hey I’m wanting to go into a somewhat similar position I have offers to do either an Economics & Data science degree or an Artificial Intelligence degree at university but l'm not sure which one would provide me a competitive advantage in a data science job? I want to work in Health Data and ML for predictive models... I will also persue a masters degree in either data science or health data.
+Thanks :)
+- Data science consultant with healthcare industry client
+- Unfortunately, you'll be dropping into the worst job market for data scientists & statisticians I've seen in 20 years after the mass layoffs. :-(
+- I think some sort of technical product manager or engineering manager role is what you’re looking for.
+- You could get any job!
+- [deleted]
+- Government service is a good option because private sector healthcare doesn’t care about strategy, they care about revenue cycle.
+- This is interesting to me -- are there significant limitations on salary with this route compared to working in the private sector?
+- This sounds fun
+- Appreciate the response. How did you break into data science roles in consulting? Also, what's the job title of your product strategy role?
+- I think you've honed in on the sticking point. It does look like the most likely strategy will be to enter as an IC and try to take the initiative from there. I'm good at originating useful projects from scratch but always there needs to be buy-in from above.
+
+Probably then it's about choosing a company with the right conditions for upward mobility. You mentioned small companies but what attributes should my manager have? What type of product/team should I be working on? Would help narrow down positions, I think.
+- Fair question. Since there are a lot of different parts of healthcare I can't offer total clarification but here's a few examples:
+
+1. Expanding indications and access using RWE. Seeing which kind of patients would be best for a new trial.
+2. If the product is some type of ML-driven diagnostic (e.g. GRAIL Galleri), then it would be standard product management.
+3. Dealing with different vendors that offer services to optimize operations like trial recruitment (there are many).
+4. Evidence-generation strategy as it relates to regulatory and commercialization
+5. Integrating ML/analytics into healthcare practice. There are some private equity/VC firms that focus on essentially flipping practices.

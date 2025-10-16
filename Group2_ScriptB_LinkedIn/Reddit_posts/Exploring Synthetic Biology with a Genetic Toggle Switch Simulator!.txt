@@ -1,0 +1,10 @@
+Source: Reddit/biology
+URL: https://reddit.com/r/biology/comments/1jc0s7m/exploring_synthetic_biology_with_a_genetic_toggle/
+Title: Exploring Synthetic Biology with a Genetic Toggle Switch Simulator!
+
+Content:
+🚀 Exploring Synthetic Biology with a Genetic Toggle Switch Simulator! 🧬I built a simple interactive app to simulate and visualize the behavior of a synthetic genetic toggle switch, a key component in synthetic biology and genetic engineering.Using a mathematical model based on Ordinary Differential Equations (ODEs), this app allows users to: ✅ Adjust protein production rates ✅ Modify repression strength ✅ Set initial protein concentrations ✅ Control the total simulation timeWhether you're a researcher, student, or just curious about synthetic biology, feel free to experiment with it and explore how gene regulation works! 🔬✨💡 If you're interested, check it out and let me know your thoughts![hashtag#SyntheticBiology](https://www.linkedin.com/search/results/all/?keywords=%23syntheticbiology&origin=HASH_TAG_FROM_FEED) [hashtag#GeneticCircuits](https://www.linkedin.com/search/results/all/?keywords=%23geneticcircuits&origin=HASH_TAG_FROM_FEED) [hashtag#Bioengineering](https://www.linkedin.com/search/results/all/?keywords=%23bioengineering&origin=HASH_TAG_FROM_FEED) [hashtag#ComputationalBiology](https://www.linkedin.com/search/results/all/?keywords=%23computationalbiology&origin=HASH_TAG_FROM_FEED) [hashtag#Biotech](https://www.linkedin.com/search/results/all/?keywords=%23biotech&origin=HASH_TAG_FROM_FEED) [hashtag#Simulation](https://www.linkedin.com/search/results/all/?keywords=%23simulation&origin=HASH_TAG_FROM_FEED) [hashtag#MachineLearning](https://www.linkedin.com/search/results/all/?keywords=%23machinelearning&origin=HASH_TAG_FROM_FEED) [hashtag#ScienceTech](https://www.linkedin.com/search/results/all/?keywords=%23sciencetech&origin=HASH_TAG_FROM_FEED)
+
+[https://toggleswitchapp-zpmbglvfzpl52wjuzdv8he.streamlit.app/](https://toggleswitchapp-zpmbglvfzpl52wjuzdv8he.streamlit.app/)
+
+Comments:

@@ -1,0 +1,62 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mjnrmg/d_have_any_bayesian_deep_learning_methods/
+Title: [D] Have any Bayesian deep learning methods achieved SOTA performance in...anything?
+
+Content:
+If so, link the paper and the result. Very curious about this. Not even just metrics like accuracy, have BDL methods actually achieved better results in calibration or uncertainty quantification vs say, deep ensembles?
+
+Comments:
+- My understanding of the field is that BDL is currently still much too stymied by challenges in training. Actually fitting the posterior even in relatively shallow/less complex models becomes expensive very quickly, so implementations end up relying on methods like variational inference that introduce accuracy costs (eg, via oversimplification of the form of the posterior).
+
+Currently, really good implementations of BDL I’m seeing aren’t Bayesian at all, but are rather “Bayesifying” non-Bayesian models, like applying Monte Carlo dropout to a non-Bayesian transformer model, or propagating a Gaussian process through the final model weights.
+
+If BDL ever gets anywhere, it will have to come through some form of VI with lower accuracy tradeoff, or some kind of trick to make MCMC based methods to work faster.
+- I’m not aware of Bayesian Deep Learning methods being SOTA on anything since Radford Neal won some variable importance competition in like the early 2000’s, which he won using a combination of shallow neural networks fit with HMC and Dirichlet diffusion trees (another pretty cool idea that doesn’t scale and was abandoned a long time ago). Since then I think the issue is that Bayesian approaches are just always going to be behind the Pareto frontier at any given point in time because they are computationally very intensive and unreliable, and there are better ways to spend the FLOPs than trying to force it to work.
+
+That’s not to say Bayesian thinking is not useful. There are a lot of Bayesians working at the bleeding edge of deep learning, they just don’t apply it directly to training neural networks.
+- Generative models learned with variational inference are essentially a kind of posterior.
+- A lot of SOTA models/algorithms can be thought of as instances of Bayes' rule. For example, there's a link between diffusion models and variational inference^1, where diffusion models can be thought of as an infinitely deep VAE. Making this connection more exact leads to better performance^2. Another example is the connection between all learning rules and (Bayesian) natural gradient descent^(3). 
+
+Also there's a more nuanced point, which is that marginalization (the key property of Bayesian DL) is important when the neural network is underspecified by the data, which is almost all the time. Here, specifying uncertainty becomes important, and marginalizing over possible hypotheses that explain your data leads to better performance compared to models that do not account for the uncertainty over all possible hypotheses. This is better articulated by Andrew Gordon Wilson^(4).
+
+---
+^(1) A Variational Perspective on Diffusion-Based
+Generative Models and Score Matching. Huang et al. 2021
+
+^(2) Variational Diffusion Models. Kingma et al. 2023
+
+^3 The Bayesian Learning Rule. Khan et al. 2021
+
+^4 https://cims.nyu.edu/~andrewgw/caseforbdl/
+- Are we counting energy-based models as bayesian deep learning ?
+- Yes, if you use the uniform prior and do MAP estimation, it works pretty well with deep neural nets and lots of data ;)
+- All priors are wrong but some are useful.
+- >anything
+
+Not sure about recent years but they sure work decently when it comes to uncertainty estimation.
+
+And tbh just a search at any top conference like NIPS/AAAI/CVPR/etc 2025 for the word 'bayesian' shows quite a few bayesian deep learning papers. They're most likely breaking some SOTA benchmarks since there are papers are published at top conferences.
+
+Edit: and yeah I agree with the other comments. VI is basically a subset of bayesian methods, so any SOTA method that deals with VI (e.g., VAEs) also has some relation with Bayesian DL. Same for SOTA models that use a type of MCMC.
+- Tencent has some papers on using it for ad click prediction. Posterior simulation/ estimations lets you do some more sophisticated explore / exploit trade offs which make a lot of sense with ads, rec sys and other online systems.
+- Around uncertainty estimation and learning under distribution shifts.
+- Let’s see what comes out of [IWAI 2025](https://iwaiworkshop.github.io/)
+- I guess it's also a semantic discussion around what is actually "Bayesian" or not. For me, simply ensembling a bunch of NNs isn't really Bayesian. Fitting Laplace approximation to weights learned via standard methods is also dubiously Bayesian imo.
+- > or some kind of trick to make MCMC based methods to work faster
+
+My intuition, as somebody who's dabbled in trying to get these things to perform better in the past, is that the path forward (assuming there exists one) is probably *not* through MCMC, but an entirely separate approach that fundamentally outperforms it.
+
+MCMC is a cute trick, but ultimately that's all it is. It feels like the (hopefully local) minimum down that path has more or less already been reached, and while I'm sure some further improvement is still possible, it's not going to be of the breakthrough, "many orders of magnitude" type that would be necessary here.
+
+But I could be entirely wrong, of course. A hunch isn't worth much.
+- > There are a lot of Bayesians working at the bleeding edge of deep learning, they just don’t apply it directly to training neural networks.
+
+Would you mind linking one of them whose research you like? I, too, am a Bayesian slowly looking toward machine learning trying to figure out what works and what doesn't.
+- Not Bayesian, despite the name.
+- Hmmm - I have never used energy based models but maybe they’re more akin to post Bayesian methods where your likelihood is not necessarily a well defined probability distribution although, as mentioned I have never used energy based models so this is more of a guess
+- When you say uncertainty estimation - this has always confused me. I’m unconvinced you can specify a prior over each parameter of a Bayesian deep model and it be meaningful to obtain meaningful uncertainty estimates
+- > For me, simply ensembling a bunch of NNs isn't really Bayesian.
+
+What about ["What Are Bayesian Neural Network Posteriors Really Like?"](https://arxiv.org/abs/2104.14421#google), Izmailov et al 2021, which is comparing the deep ensembles to the HMC and finding they aren't *that* bad?
+- Can you recommend me any papers that you think are "Bayesian", or at least heading in a good direction?
+- To me this isn't just about semantics. It's bayesian if it follows probability theory and bayes theorem. Else it's not. It's that easy. Learn more about it here [https://sites.stat.columbia.edu/gelman/book/](https://sites.stat.columbia.edu/gelman/book/)

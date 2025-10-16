@@ -1,0 +1,33 @@
+Source: Reddit/MachineLearning
+URL: https://reddit.com/r/MachineLearning/comments/1mvn89s/simple_multiple_choice_questions_about_machine/
+Title: Simple Multiple Choice Questions about Machine Learning [D]
+
+Content:
+The following statements are either True or False:
+
+1. You can use any differentiable function f: R->R in a neural network as activation function.
+2. You can always know whether the perceptron algorithm will converge for any given dataset.
+
+What do you guys think? I got both of them wrong in my exam.
+
+Comments:
+- 1) f(x) = 0 destroys input data so the model won't converge, so I would say no
+
+2) Depends if the dataset is shuffled randomly. If it is, I imagine there exist degenerate orderings where the model oscillates without improving, however other orderings may be fine. If it isn't shuffled randomly, then yes you can tell, literally just run the algorithm and see if it converges (this is a computable operation so I would count as you being able to "know")
+- For 1, it has to be non-linear. As far as I recall, the universal function approximation theorem demands that the activation be non-polynomial, but I am not sure about the relevance of that fact for practical applications.
+- I would’ve said 1 is true, 2 is false. What were the actual answers?
+- 1) Yeah, obviously it won't work, but we can still do backpropagation. That's why I thought it's technically true, even tho practically speaking, not every function makes sense. 
+
+2) I thought that we can decide whether the dataset is linearly separable using linear programming, and using the Perceptron theorem, decide whether it converges or not based on that.
+- Technically, it can be linear, though you get a linear function of the inputs at the output. It can't be constant, though they are everywhere differentiable (=0), because there is no gradient to train the neural network (so statement 1. is false). It can be polynomial, you just don't get the universal approximation theorem.
+- Both false, according to the prof
+- I think the counter example would more likely be a linear layer, which would break non-linearity, and possibly break some definition of a NN.
+- If it is linear,  we basically have linear regression with a lot of computational overhead. I doubt anybody would call it a neural network.
+- Interesting that 1 is false - but you should still be able to backprop with any differentiable function, even if it’s something dumb like the identity right?
+- Yeah makes sense, you need non-linearity of course. Both statements are false according to my professor, so better don't overthink it and just pick the obvious answer... Just wanted to see if other people would also come to similar conclusions or if I am just stupid haha
+- This is why I had "technically" in there.
+- Maybe they mean "and have it work as an activation function", because activation functions need non-linearities to emulated more complex functions. 
+
+
+A constant function is even worse though.
+- Question 1 is purely worded, which leads to the understandable confusion here. You might want to give feedback that it should be clarified what is meant by "you can use". As others have stated, you can technically do it, but it might not lead to a practically usable network.

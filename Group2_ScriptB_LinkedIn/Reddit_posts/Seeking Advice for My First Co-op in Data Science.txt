@@ -1,0 +1,86 @@
+Source: Reddit/datascience
+URL: https://reddit.com/r/datascience/comments/1fbapkh/seeking_advice_for_my_first_coop_in_data_science/
+Title: Seeking Advice for My First Co-op in Data Science
+
+Content:
+Hi everyone,
+
+I'm about to start my first co-op in data science/analytics, and I'm feeling pretty nervous. I see many students with strong personal projects, and I'm worried they might have an edge over me. I would greatly appreciate any advice or recommendations you can offer, especially from DS/DA professionals.
+
+1. **Resume Help:** Could anyone review my resume or provide suggestions on how to improve it? I'd love to know what stands out to recruiters and what might be missing.
+2. **Cover Letter Tips:** Should I focus on how my experiences and skills from past projects align with the company or the specific position I’m applying for? Or is there a different approach I should consider to make my cover letter stand out?
+3. **Skills and Projects Focus:** Are there any specific skills, certifications, or types of projects that I should prioritize? I’m aiming for positions in Data Science, Data Analytics, or Machine Learning.
+
+Thanks in advance for your help!
+
+https://preview.redd.it/2u0spazyxend1.png?width=1030&format=png&auto=webp&s=e256a5f064c15258ff793de6b053b546b5de9af1
+
+
+
+Comments:
+- Idk about others, but I'm not a fan of all the intermittent bolding. 
+
+Other than that, I think having an internship with a project you can speak to very well goes a long way.
+- descriptions are slightly lengthy, perhaps you can get chatgpt to shorten them for you. other than that, looks great! Good luck!
+- Just out of curiosity, how comfortable are you with all of those programming languages and libraries you listed?
+
+I ask because I personally tend not to list something on my resume (edit: directly, under the skills section) unless I know it well enough to field questions about it. Like I've used Java and Go professionally a bit, but I don't list them as skills on my resume because I don't want to open myself up to a line of questioning like "It says you know Java. What's the difference between final, finally, finalize, and the final exam in your linear algebra course?". Maybe I am selling myself short.
+- Is the breast cancer project working with the standard Wisconsin scikit learn dataset?
+- One other thought: generally, non-citizens are at a bit of a disadvantage getting jobs in a country, at least that is my experience in the US. If you have US citizenship and are looking for US jobs (or EU citizenship and are looking for EU jobs, etc), you need to make that ABUNDANTLY clear at the top of your resume to offset the bullet point about the International Students Representative extracurricular.
+
+(I don't mean to dissuade you if you are indeed an international student. But you don't want a company to pass on your resume because they can't sponsor you, if that's actually not an issue at all!)
+- It’s great that you're preparing ahead of time and seeking advice! Nervousness is totally normal, but you're on the right track by focusing on what you can improve. Here's some feedback to help you feel more confident:
+
+
+
+### Resume:
+
+- \*\*What Stands Out:\*\* Your technical skills are strong, especially your experience with TensorFlow, PyTorch, and handling data pipelines. Your work with predictive analytics for SpaceX and the cancer diagnostics project is impressive and shows you're already tackling important industry problems.
+
+  
+
+- \*\*Improvements:\*\*
+
+  - \*\*Consistency\*\*: The "Certifications" section lists a mix of completed and in-progress certs. It might look cleaner to separate them, so recruiters can quickly see what you’ve already achieved.
+
+  - \*\*Quantify More\*\*: You've already done a good job of including numbers (e.g., accuracy rates, latency reduction), but keep this mindset for all your bullet points. Employers love to see the impact of your work in numbers!
+
+  - \*\*Technical Tools\*\*: It's good to mention your tools, but consider specifying \*\*why\*\* you used certain tools in projects. Recruiters like to know you chose the right tools for the job, not just that you used them.
+
+
+
+### Cover Letter Tips:
+
+- \*\*Align With the Role\*\*: Tailor each cover letter to the specific role you’re applying for. Focus on how your skills and past projects directly relate to the company’s needs. Show that you’ve researched the company and explain why you’re excited about this specific opportunity.
+
+  
+
+- \*\*Be Results-Oriented\*\*: Highlight \*\*results\*\* from your past projects and how they could help the company solve its problems. Companies want to see how you’ll make an impact.
+
+
+
+### Skills and Projects Focus:
+
+- \*\*Certifications\*\*: Your certs are solid. If you’re interested in Data Science/Analytics, an AWS ML Specialty or GCP Data Engineer certification could give you an edge, especially if the job involves cloud work.
+
+  
+
+- \*\*Projects\*\*: You’re already working on high-level projects, but if you want to stand out, focus on adding projects that showcase end-to-end ownership—show you can take a project from data collection to modeling and deployment. More real-world examples where you demonstrate business impact would be great.
+
+
+
+Good luck on your co-op! You’ve already got a strong base, and a few tweaks will make you stand out even more. Keep pushing forward confidently!
+- .
+- .
+- Remove the bolding and try to condense it more. Less is more
+- True, i agree, too much bolding and i would suggest to put the projects and work above education.
+- Try summarizing using GPTs for your projects and try adding other project in that reduced space.
+- I agree that there is too much bolding. I bold key words in my resume too, but I think there needs to be a theme or consistency with the bolding. In your resume the things you’ve bolded vary between tools, main ideas, specific numerical results and even people’s names. I would choose one or two categories that you will apply the bold font to. If you think it’s most important to highlight the diversity in tools you’ve used, then bold those words (TensorFlow, Keras, PCA, etc) and remove the bold on statements not about tools used (468 facial landmarks in real time, Butch Wilmore, etc). Just having a clear trend makes it less confusing.
+- I totally understand, but I heard that the hiring person only spends about 10 seconds on a resume.
+- If I shorten those description, what do you suggest should I include in that space, summary, my Team leader experience in one of the restaurant chain or any other things?
+- Thanks for the input! I understand where you’re coming from. I wouldn’t say I have in-depth expertise in all of the programming languages and libraries I listed, but I have used them in some of my projects, which is why I included them on my resume.
+- Good call. This always slips under my radar as one of the "data science 101" datasets, where putting a project involving it on your resume is an amateurish signal -- but it totally is one. (See also Titanic, MNIST, petals.)
+- No, It's based on the university of California.
+- I am an international student, also should I put an line of experience mentioning that I am a Team Leader at one of the restaurant chain?
+- This is very fair. For sure what was bothering me is kind of that there was no general pattern to what was drawing my attention, just whatever OP thought was important
+- Suit yourself

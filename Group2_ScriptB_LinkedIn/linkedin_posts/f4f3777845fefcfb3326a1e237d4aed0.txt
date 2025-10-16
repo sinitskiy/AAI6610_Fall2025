@@ -1,0 +1,36 @@
+URL: https://www.linkedin.com/posts/martyna-trojgo_heres-a-sneak-peek-at-what-my-main-focus-activity-6975070271703502848-Jtbs?trk=public_profile_like_view
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Martyna Trojgo的动态
+Martyna Trojgo
+
+Data Scientist | Human Rights, Responsible AI | Neurodivergent
+
+3 年
+
+Here's a sneak peek at what my main focus in Desupervised is. I don't know about you but I'm already excited about our next step!
+
+Desupervised
+
+757 位关注者
+
+3 年  已编辑
+
+Predicting how potential drug-like molecule interacts with a target protein is one of the main challenges within Drug Discovery. Currently available methods are computationally expensive and usually require the knowledge of the target site, which can be problematic when dealing with novel proteins.
+
+Together with RED GLEAD DISCOVERY, on our way to building AIchemy, a platform for Bayesian Deep Virtual Screening,  we investigate the potential of Equivariant Graph Neural Network (EGNN) which predicts not only the receptor binding site (without any prior knowledge), but also the bound pose and orientation of the ligand. We compare the results to Qvina-W, a classical tool for blind docking - predicting the receptor-ligand binding without prior knowledge.
+
+As our test case, we perform docking of an inhibitor drug for leukemia and gastroinestinal stromal tumors from Novartis, Imatinib, against the Tyrosin Kinase 6HD6. We compare the performance of the EGNN (left) with Qvina-W (right). Models' predictions are shown in green, while the ground truth is shown in red. In blue we show another ligand available in the 6HD6 crystal structure from PDB. We use Qvina-W with default settings, generating 10 poses with previously centered receptor and the searching space of 50x50x50. The centroid distance is a measure of how well the model predicted the binding pocket, for Qvina-W it is calculated for the predicted pose closest to the ground truth.
+
+As you can see the EGNN completed over 7 times faster than Qvina-W, while detecting the binding site better! Not only was Qvina-W's closest prediction further from the ground truth than EGNN's but Qvina-W also favored the wrong binding

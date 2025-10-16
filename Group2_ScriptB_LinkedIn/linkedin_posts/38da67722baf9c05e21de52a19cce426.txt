@@ -1,0 +1,25 @@
+URL: https://www.linkedin.com/posts/krider2010_gpt-5-prompting-guide-openai-cookbook-activity-7359622731971059712-_4L-
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Dr Claire Knight的动态
+Dr Claire Knight
+2 个月
+
+You can't treat LLM Models like APIs. While it's tempting, and you do make calls to them via an API, they don't provide you with a contract beyond the communication layer. What happens is that you call the API, and you get back 200 and vibes! (Or sometimes a 429 because tokens and $$$$$ 🤪)
+
+Engineers quite rightly love contracts. Interfaces, schemas, return types, status codes. Stuff you can rely on. Build around. Deterministic things. LLMs? None of that, beyond the 200 OK response. The same prompt might give you a solid result at 2pm and nonsense at 2:03pm. Or maybe it hallucinated a button label for a feature you don't have. Or answered in German because it saw a stray “Guten Tag” in the context window.
+
+Even worse, things can change underneath you. I think many people are finding that out the hard way today. Yesterday OpenAI released their latest model GPT-5. You probably didn't change your code. You likely didn't even redeploy, unless you were smart enough to pin to a model. But behaviours could be shifting: a summarisation endpoint is now “more concise” (aka drops key details), your chatbot is faster but more literal, or your extraction prompt starts returning subtly different formats. That carefully crafted prompt is no longer the best one. I mean even the model creators posted about how to get the best out of the new model with a change in prompting (https://lnkd.in/eWWbAFN2). And I'm seeing a lot of "going back to 4 or claude or ..." - and that's in the tech savvy space.
+
+Your users will think you broke it. You may think nothing has changed. But the harsh reality is that the ground moved under both sides. Users are not going to care. It's just a dependency in your system so in their eyes it's your fault. Welcome to the world of probabilistic systems. Where you can’t reliably reproduce so can’t debug in the ways you are used to. And can’t even say with certainty what went w

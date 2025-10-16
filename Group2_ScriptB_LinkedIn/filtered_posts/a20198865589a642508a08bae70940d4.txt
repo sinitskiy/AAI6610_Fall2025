@@ -1,0 +1,40 @@
+URL: https://www.linkedin.com/posts/jean-carron-32383a68_the-most-well-written-description-of-the-activity-7352933497885343744-_wo9
+Date: 2025-10-08
+Author: Unknown
+
+跳到主要内容
+领英
+热门内容
+会员
+领英学习
+职位
+游戏
+下载 APP
+马上加入
+登录
+Jean Carron的动态
+Jean Carron
+
+Chef de projet chez Sollertia SA
+
+2 个月  已编辑
+
+The most well written description of the limitations of AI/LLM models when it comes to extrapolation that I have seen so far (spoiler alert, the limitation is that they can't, by design).
+
+LLMs are awesome tools with real use cases but creative thinkers, they are not.
+
+Denis O.
+
+Fintech Professional | AI Solution Architect | Real Time Data, Ontologies & Knowledge Graphs | Exploring AI Beyond LLMs
+
+2 个月  已编辑
+
+Not sure why we needed a whole Harvard and MIT study to tell us the sky is blue and the water is wet..
+
+Transformer based LLM/LRMs are interpolative by design. That is not some side effect.. it is their entire architecture. Same goes for most of deep learning today, maybe 99.9% of the AI field is navigating probability spaces carved out by past data.
+
+The LLMs/LRMs shift embeddings through an existing latent space. They are built to fit curves across known data points. The training process is just compression and pattern fitting. Once trained, the model navigates and maps those compressed patterns to produce responses that seem plausible and approximate. But plausible and approximate is not the same as correct, or insightful, or new.
+
+You can dress it all up with alignment layers, guardrails, prompt engineering and context stitching, but it does not change the fact these models are not reasoning. They are running highdimensional cooccurrence token karaoke, layered with reinforcement from human feedback and compliance filters. The result feels smart because the form is smooth.. but it is still all surface.
+
+The stochastic variance built into these systems also does not create anything new.. it only wiggles around within the boundaries of the latent space defined by training. If it was not in the data, it is not in the model. What you get instead are occasional hallucinated outputs. fragments stitched together through token level variance.. creature
