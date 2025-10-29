@@ -44,3 +44,12 @@ Gaussian Processes (GPs) are a versatile method that enables...
 [And so on...]
 
 clustering\outputs\cluster_output\HDBSCAN_representatives.txt.
+## Group 3: Fetch + Clustering
+### Quick start
+python3 multisearchfinal.py
+# Follow prompts:
+#  - Topics: machine learning antibody; drug discovery
+#  - SerpAPI key: <optional, press Enter to skip LinkedIn>
+#  - Clustering: 1 (K-Means), auto clusters: Y
+Outputs go to ./clustered_research_YYYYMMDD_HHMMSS/
+
