@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 API Key Update Solution for Scraper Scripts
-Change hard-coded keys to load from environment variables/configuration
 """
 
 # ============================================================================
@@ -10,13 +9,6 @@ Change hard-coded keys to load from environment variables/configuration
 # ============================================================================
 
 # ========== scraper_linkedin.py Update ==========
-"""
-Original code:
-GOOGLE_API_KEY = "AIzaSyChu1dkW1nB4ZVc0MsQIC2D2akpB772Gm8"
-SEARCH_ENGINE_ID = "c78859e23e54344a3"
-
-Updated to:
-"""
 import os
 
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", "")
@@ -29,14 +21,6 @@ if not GOOGLE_API_KEY or not SEARCH_ENGINE_ID:
 
 
 # ========== scraper_reddit.py Update ==========
-"""
-Original code:
-REDDIT_CLIENT_ID="NJl1oqWfoXySI0LtxZqfLw"
-REDDIT_CLIENT_SECRET="e1HUShZV-RSnNi90ncnJAidfX7d2LA"
-REDDIT_USER_AGENT = "python:ml_post_scraper:v1.0 (by u/Ok-Mobile-2410)"
-
-Updated to:
-"""
 import os
 
 REDDIT_CLIENT_ID = os.environ.get("REDDIT_CLIENT_ID", "")
@@ -50,17 +34,6 @@ if not REDDIT_CLIENT_ID or not REDDIT_CLIENT_SECRET:
 
 
 # ========== scraper_openalex.py Update ==========
-"""
-Original code:
-UNPAYWALL_EMAIL = os.environ.get("UNPAYWALL_EMAIL", "xiang.siq@northeastern.edu").strip()
-OPENREVIEW_MAILTO = os.environ.get("OPENREVIEW_MAILTO", "").strip()
-OPENALEX_BASE = "https://api.openalex.org"
-UNPAYWALL_BASE = "https://api.unpaywall.org/v2"
-OPENREVIEW_BASE = "https://api.openreview.net"
-DEFAULT_USER_AGENT = "AAI6610-Pipeline/1.0 (mailto:xiang.siq@northeastern.edu)"
-
-Updated to:
-"""
 import os
 
 # Read from environment variables
@@ -82,12 +55,6 @@ if not UNPAYWALL_EMAIL or UNPAYWALL_EMAIL == "xiang.siq@northeastern.edu":
 
 
 # ========== cluster_engine.py Update ==========
-"""
-Original code:
-openai.api_key = "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"
-
-Updated to:
-"""
 import os
 import openai
 
