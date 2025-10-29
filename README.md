@@ -8,7 +8,7 @@ To run this project:
 pip install -r requirements.txt
 
 ```
-2) Run the primary script (gui.py).
+2) Change the file name from .env.example to .env and replace all variables with its keys respectively.Run the primary script (gui.py).
 ```bash
 python ./main_control/gui.py
 
