@@ -1,0 +1,116 @@
+advanced:
+  checkpoint_interval: 100
+  clean_intermediate_files: false
+  retry_attempts: 3
+  retry_failed_stages: true
+api_keys:
+  google:
+    api_key: ${GOOGLE_API_KEY}
+    search_engine_id: ${GOOGLE_SEARCH_ENGINE_ID}
+  openai:
+    key: ${OPENAI_API_KEY}
+    model: text-embedding-3-large
+  openalex:
+    base_url: https://api.openalex.org
+    user_agent: ${OPENALEX_USER_AGENT}
+  openreview:
+    base_url: https://api.openreview.net
+    mailto: ${OPENREVIEW_MAILTO}
+  reddit:
+    client_id: ${REDDIT_CLIENT_ID}
+    client_secret: ${REDDIT_CLIENT_SECRET}
+    user_agent: ${REDDIT_USER_AGENT}
+  unpaywall:
+    base_url: https://api.unpaywall.org/v2
+    email: ${UNPAYWALL_EMAIL}
+clustering:
+  max_k: 20
+  max_words_per_text: 500
+  min_cluster_size: 10
+  min_dist: 0.1
+  min_k: 5
+  min_samples: 3
+  n_components: 50
+  n_neighbors: 15
+  top_keywords: 10
+logging:
+  level: INFO
+  log_dir: logs
+  max_log_files: 10
+  save_logs: true
+output:
+  base_dir: final_output
+  include_metadata: true
+  include_visualizations: true
+  report_format: markdown
+pdf_conversion:
+  fallback_methods:
+  - pypdf
+  - pdfminer
+  max_pages: 20
+performance:
+  chunk_size: 100
+  max_workers: 4
+  memory_limit: 8GB
+scrapers:
+  arxiv:
+    description: arXiv preprints on ML uncertainty
+    enabled: false
+    output_folder: arxiv_papers
+    script: scraper_arxiv.py
+    timeout: 1800
+  biorxiv:
+    description: bioRxiv papers on uncertainty quantification
+    enabled: false
+    output_folder: biorxiv_papers
+    script: scraper_biorxiv.py
+    timeout: 2400
+  linkedin:
+    description: LinkedIn posts about ML uncertainty
+    enabled: false
+    output_folder: linkedin_posts
+    script: scraper_linkedin.py
+    timeout: 1200
+  news:
+    description: News articles about ML and uncertainty
+    enabled: false
+    output_folder: news_articles
+    script: scraper_news.py
+    timeout: 900
+  openalex:
+    description: Peer-reviewed papers from multiple sources
+    enabled: false
+    output_folder: openalex_openreview_papers
+    script: scraper_openalex.py
+    timeout: 2400
+  reddit:
+    description: Reddit and StackExchange discussions
+    enabled: false
+    output_folder: reddit_posts
+    script: scraper_reddit.py
+    timeout: 1200
+semantic_filter:
+  batch_size: 32
+  model: all-MiniLM-L6-v2
+  queries:
+  - uncertainty estimation in deep learning models
+  - Bayesian neural networks for uncertainty quantification
+  - epistemic and aleatoric uncertainty in machine learning
+  - confidence calibration in neural networks
+  - probabilistic predictions and uncertainty measures
+  - out-of-distribution detection using uncertainty
+  - predictive uncertainty in AI systems
+  - uncertainty-aware deep learning methods
+  - Monte Carlo dropout for uncertainty estimation
+  - ensemble methods for uncertainty quantification
+  threshold: 30.0
+topic: applied to uncertainty prediction in ML models
+visualization:
+  dpi: 300
+  figure_size:
+  - 12
+  - 10
+  methods:
+  - pca
+  - tsne
+  - umap
