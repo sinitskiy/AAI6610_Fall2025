@@ -11,3 +11,5 @@ matplotlib>=3.7.1
 seaborn>=0.13.0
 wordcloud>=1.9.2
 pillow>=10.0.0
+flask>=3.0.0
+flask-cors>=4.0.0
