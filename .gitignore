@@ -208,3 +208,44 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================
+# Project-specific ignores for Pipeline 2
+# ============================================
+
+# Output directories and data files
+pipeline2/scrapers/outputs/
+pipeline2/clustering/outputs/
+pipeline2/final_output/
+pipeline2/logs/
+**/outputs/
+**/final_output/
+
+# Generated data files
+*.json
+!package.json
+!package-lock.json
+*.csv
+*.pkl
+*.pickle
+*.parquet
+
+# Large binaries
+chromedriver*
+geckodriver*
+
+# API credentials (beyond .env)
+**/secrets.py
+**/credentials.py
+**/api_keys.py
+config.local.yaml
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Downloaded content
+**/downloaded_papers/
+**/downloaded_pdfs/
