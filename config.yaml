@@ -1,0 +1,220 @@
+# ============================================
+# ML Uncertainty Pipeline Configuration v2.0
+# ============================================
+
+# Research Topic
+topic: "uncertainty quantification in machine learning models"
+
+# ============================================
+# API Keys (loaded from .env file)
+# ============================================
+api_keys:
+  google:
+    api_key: ${GOOGLE_API_KEY}
+    search_engine_id: ${GOOGLE_SEARCH_ENGINE_ID}
+  
+  # OpenAI - OPTIONAL (no longer required for clustering)
+  openai:
+    key: ${OPENAI_API_KEY}
+    model: gpt-4o-mini  # Only used if LLM summarization enabled
+  
+  openalex:
+    base_url: https://api.openalex.org
+    user_agent: ${OPENALEX_USER_AGENT}
+  
+  openreview:
+    base_url: https://api2.openreview.net
+    mailto: ${OPENREVIEW_MAILTO}
+  
+  reddit:
+    client_id: ${REDDIT_CLIENT_ID}
+    client_secret: ${REDDIT_CLIENT_SECRET}
+    user_agent: ${REDDIT_USER_AGENT}
+  
+  unpaywall:
+    base_url: https://api.unpaywall.org/v2
+    email: ${UNPAYWALL_EMAIL}
+
+# ============================================
+# Scrapers Configuration
+# ============================================
+scrapers:
+  arxiv:
+    enabled: true
+    description: "arXiv preprints on ML uncertainty"
+    script: scraper_arxiv.py
+    output_folder: arxiv_papers
+    timeout: 1800
+    # Scraper-specific settings
+    target_papers: 1000
+    max_results_per_query: 200
+    date_range_years: 3
+    batch_size: 100
+    rate_limit_delay: 3.0
+    download_pdfs: true
+  
+  openalex:
+    enabled: true
+    description: "Peer-reviewed papers from OpenAlex, OpenReview, Unpaywall"
+    script: scraper_openalex.py
+    output_folder: openalex_openreview_papers
+    timeout: 3600
+    # Targets for each source
+    target_openalex: 800
+    target_openreview: 500
+    target_unpaywall: 600
+  
+  biorxiv:
+    enabled: false
+    description: "bioRxiv papers on uncertainty quantification"
+    script: scraper_biorxiv.py
+    output_folder: biorxiv_papers
+    timeout: 2400
+  
+  news:
+    enabled: true
+    description: "News articles about ML and uncertainty"
+    script: scraper_news.py
+    output_folder: news_articles
+    timeout: 900
+  
+  reddit:
+    enabled: true
+    description: "Reddit discussions on ML uncertainty"
+    script: scraper_reddit.py
+    output_folder: reddit_posts
+    timeout: 1200
+    subreddits:
+      - MachineLearning
+      - deeplearning
+      - artificial
+      - statistics
+    max_posts: 500
+  
+  linkedin:
+    enabled: false  # Requires authentication
+    description: "LinkedIn posts about ML uncertainty"
+    script: scraper_linkedin.py
+    output_folder: linkedin_posts
+    timeout: 1200
+
+# ============================================
+# Semantic Filter Configuration
+# ============================================
+semantic_filter:
+  model: all-MiniLM-L6-v2  # Fast, good for filtering
+  threshold: 30.0  # 20=loose, 30=balanced, 40=strict
+  batch_size: 32
+  
+  # Uncertainty-related queries for filtering
+  queries:
+    - "uncertainty estimation in deep learning models"
+    - "Bayesian neural networks for uncertainty quantification"
+    - "epistemic and aleatoric uncertainty in machine learning"
+    - "confidence calibration in neural networks"
+    - "probabilistic predictions and uncertainty measures"
+    - "out-of-distribution detection using uncertainty"
+    - "predictive uncertainty in AI systems"
+    - "uncertainty-aware deep learning methods"
+    - "Monte Carlo dropout for uncertainty estimation"
+    - "ensemble methods for uncertainty quantification"
+    - "conformal prediction for uncertainty"
+    - "calibration error in neural networks"
+
+# ============================================
+# Clustering Configuration
+# ============================================
+clustering:
+  # Embedding model (open-source, no API needed)
+  model: all-mpnet-base-v2  # Best accuracy for clustering
+  # Alternative: all-MiniLM-L6-v2 (faster but less accurate)
+  
+  batch_size: 32
+  use_gpu: false  # Set true if CUDA available
+  
+  # UMAP parameters
+  n_components: 50
+  n_neighbors: 15
+  min_dist: 0.1
+  
+  # HDBSCAN parameters
+  min_cluster_size: 10
+  min_samples: 3
+  
+  # KMeans parameters
+  min_k: 5
+  max_k: 20
+  
+  # Text processing
+  max_words_per_text: 500
+  top_keywords: 10
+  
+  # Optional: Use LLM for cluster summarization
+  use_llm_summary: false  # Set true to use OpenAI for summaries
+  llm_model: gpt-4o-mini
+
+# ============================================
+# Visualization Configuration
+# ============================================
+visualization:
+  dpi: 300
+  figure_size: [12, 10]
+  methods:
+    - umap
+    - pca
+    - tsne
+  color_palette: tab20
+  save_formats:
+    - png
+    - pdf
+
+# ============================================
+# Output Configuration
+# ============================================
+output:
+  # All outputs go under pipeline1/
+  base_dir: outputs
+  include_metadata: true
+  include_visualizations: true
+  report_format: markdown
+  
+  # Subdirectories (relative to pipeline1/)
+  scraper_output: scrapers/outputs
+  filter_output: clustering/outputs/filtered_posts_all_sources
+  cluster_output: clustering/outputs/cluster_output
+  viz_output: clustering/outputs/cluster_visualizations
+
+# ============================================
+# Performance Settings
+# ============================================
+performance:
+  max_workers: 4
+  chunk_size: 100
+  memory_limit: 8GB
+
+# ============================================
+# PDF Conversion Settings
+# ============================================
+pdf_conversion:
+  max_pages: 20
+  fallback_methods:
+    - pypdf
+    - pdfminer
+
+# ============================================
+# Logging Configuration
+# ============================================
+logging:
+  level: INFO
+  log_dir: logs
+  save_logs: true
+  max_log_files: 10
+
+# ============================================
+# Advanced Settings
+# ============================================
+advanced:
+  retry_attempts: 3
+  retry_failed_stages: true
+  checkpoint_interval: 100
+  clean_intermediate_files: false
